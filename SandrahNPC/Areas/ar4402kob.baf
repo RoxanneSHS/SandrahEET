@@ -1,0 +1,16 @@
+IF
+Global("Reinforce","BG5402",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Reinforce","BG5402",1)
+CreateCreature("kobcap01",[3681.2351],9)
+CreateCreature("kobsha01",[3628.2514],7)
+CreateCreature("kobwit02",[3681.2351],4)
+CreateCreature("spidgi",[3628.2514],4)
+CreateCreature("spidgi",[3628.2514],6)
+CreateCreature("spidgi",[3681.2351],6)
+CreateCreature("kobwit02",[3628.2514],4)
+Continue()
+END
+

@@ -1,0 +1,8 @@
+IF
+IsOverMe([PC])
+GlobalLT("SanHintFactory","GLOBAL",26)
+Global("SeeLake","CVSH22",0)
+THEN
+RESPONSE #100
+SetGlobal("SeeLake","CVSH22",1)
+END

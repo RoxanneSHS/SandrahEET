@@ -1,0 +1,7 @@
+IF
+Global("manInChest","cm3376",0)
+THEN
+RESPONSE #100
+SetGlobal("manInChest","cm3376",1)
+ActionOverride("Book$helf 1",CreateItem("CVgolman",0,0,0))
+END

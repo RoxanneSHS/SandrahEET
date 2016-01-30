@@ -1,0 +1,39 @@
+IF
+GlobalGT("Chapter","GLOBAL",3)
+InMyArea("teven")
+THEN
+RESPONSE #100
+ActionOverride("Teven",DestroySelf())
+END
+
+IF
+GlobalGT("Chapter","GLOBAL",3)
+InMyArea("Raiken")
+THEN
+RESPONSE #100
+ActionOverride("Raiken",DestroySelf())
+END
+
+IF
+Global("Santazpatrl","GLOBAL",3)
+Dead("Tazok")
+Global("Chapter","Global",3)
+InParty("CVSandr")
+Global("SanTazDead","BG1900",0)
+THEN
+RESPONSE #100
+SetGlobal("SanTazDead","BG1900",1)
+RealSetGlobalTimer("SanTazDeadT","BG1900",900)
+END
+
+IF
+Global("SanTazDead","BG1900",1)
+RealGlobalTimerExpired("SanTazDeadT","BG1900")
+Global("Chapter","Global",3)
+!Dead("Ardenor")
+THEN
+RESPONSE #100
+SetGlobal("SanTazDead","BG1900",2)
+ActionOverride("Ardenor",MoveToObject(Player1))
+ActionOverride("Ardenor",Dialogue(Nearest([PC])))
+END

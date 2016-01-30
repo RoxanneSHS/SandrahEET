@@ -1,0 +1,147 @@
+IF
+	BreakingPoint()
+	StateCheck(Myself,STATE_PANIC)
+THEN
+	RESPONSE #100
+		Calm(Myself)
+		Continue()
+END
+
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_SLOW_POISON)
+	See([PC])
+	StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_SLOW_POISON)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_NEUTRALIZE_POISON)
+	See([PC])
+	StateCheck(LastSeenBy(Myself),STATE_POISONED)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_NEUTRALIZE_POISON)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	HaveSpell(CLERIC_MASS_CURE)
+	See([PC])
+	OR(2)
+		HPPercentLT(Player1,60)
+		HPPercentLT(Player3,60)
+	OR(2)
+		HPPercentLT(Player2,60)
+		HPPercentLT(Player5,60)
+	OR(2)
+		HPPercentLT(Player4,60)
+		HPPercentLT(Player6,60)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_MASS_CURE)
+END
+
+IF
+	ActionListEmpty()
+	See([PC])
+	HPPercentLT(LastSeenBy(Myself),30)
+	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
+	HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_HEAL)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(MostDamagedOf(Myself),60)
+	!StateCheck(MostDamagedOf(Myself),STATE_INVISIBLE)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+THEN
+	RESPONSE #100
+		Spell(MostDamagedOf(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(MostDamagedOf(Myself),50)
+	!StateCheck(MostDamagedOf(Myself),STATE_INVISIBLE)
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+THEN
+	RESPONSE #100
+		Spell(MostDamagedOf(Myself),CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,30)
+	HaveSpell(CLERIC_HEAL)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_HEAL)
+END
+
+IF
+	ActionListEmpty()
+	HPPercentLT(Myself,60)
+	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_SERIOUS_WOUNDS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	HPPercentLT(Myself,75)
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+THEN
+	RESPONSE #100
+		Spell(Myself,CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Range(LastSeenBy(Myself),10)
+	HPPercentLT("Haiass",60)
+	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
+THEN
+	RESPONSE #100
+		Spell("Haiass",CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+	See([0.0.VAMPIRE])
+	!CombatCounter(0)
+	HaveSpell(CLERIC_NEGATIVE_PLANE_PROTECTION)
+	See([PC])
+	CheckStat(LastSeenBy(Myself),0,SCRIPTINGSTATE3)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),CLERIC_NEGATIVE_PLANE_PROTECTION)
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		AttackOneRound(LastAttackerOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END

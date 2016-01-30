@@ -1,0 +1,23 @@
+//CVFiry2
+
+IF
+Global("Init","CVSH21",9)
+RealGlobalTimerExpired("NewEnergy","CVSH21")
+Global("FillBox2","CVSH21",0)
+THEN
+RESPONSE #100
+CreateVisualEffectObject("AMCALL",Myself)
+SetGlobal("NewEnergy2","LOCALS",1)
+RealSetGlobalTimer("NewEnergy2T","LOCALS",25)
+END
+
+IF
+Global("NewEnergy2","LOCALS",1)
+RealGlobalTimerExpired("NewEnergy2T","LOCALS")
+Global("FillBox2","CVSH21",0)
+THEN
+RESPONSE #100
+CreateVisualEffectObject("AMCALL",Myself)
+SetGlobal("NewEnergy2","LOCALS",1)
+RealSetGlobalTimer("NewEnergy2T","LOCALS",25)
+END

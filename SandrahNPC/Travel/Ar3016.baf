@@ -1,0 +1,47 @@
+IF
+Global("CVAR3016","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR3016","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("ItemhornR","GLOBAL",0)
+PartyHasItem("Compon13")
+THEN
+RESPONSE #100
+SetGlobal("ItemhornR","GLOBAL",1)
+END
+
+IF
+Global("ItemhornL","GLOBAL",0)
+PartyHasItem("Compon12")
+THEN
+RESPONSE #100
+SetGlobal("ItemhornL","GLOBAL",1)
+END
+
+IF
+Global("Itemheroc","GLOBAL",0)
+PartyHasItem("Helm31")
+THEN
+RESPONSE #100
+SetGlobal("Itemheroc","GLOBAL",1)
+END
+
+IF
+Global("Itemcirn","GLOBAL",0) 
+PartyHasItem("Compon17")
+THEN
+RESPONSE #100
+SetGlobal("Itemcirn","GLOBAL",1)
+END
+
+IF
+Global("Itemixil","GLOBAL",0)
+PartyHasItem("dagg23")
+THEN
+RESPONSE #100
+SetGlobal("Itemixil","GLOBAL",1)
+END

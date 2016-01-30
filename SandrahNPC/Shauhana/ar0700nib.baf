@@ -1,0 +1,8 @@
+IF
+Global("KnowStorm","GLOBAL",4)
+Global("NibShop","ar0700",0)
+THEN
+RESPONSE #100
+SetGlobal("NibShop","ar0700",1)
+CreateCreature("F_NIB",[1804.3224],9)
+END

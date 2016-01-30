@@ -1,0 +1,24 @@
+//DaWeav1
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+FadeFromColor([30.0],0)
+Wait(4)
+MoveViewPoint([448.549],INSTANT)
+CreateVisualEffectObject("AMCALL","CVFiry1")
+Wait(6)
+MoveViewPoint([1036.557],INSTANT)
+CreateVisualEffectObject("AMCALL","CVFiry2")
+Wait(6)
+MoveViewPoint([732.1299],INSTANT)
+CreateVisualEffect("AMCALL",[732.1299])
+Wait(4)
+CreateVisualEffectObject("SSHELLC","CVSzass")
+CreateVisualEffectObject("AMCALL","CVSzass")
+EndCutSceneMode()
+IncrementGlobal("Init","CVSH21",1)
+END

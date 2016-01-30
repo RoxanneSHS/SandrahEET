@@ -1,0 +1,13 @@
+IF
+Global("SanCasBre","arac03",0)
+InParty("CVSandr")
+InParty("ACBre")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck("ACBre",CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanCasBre","arac03",1)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

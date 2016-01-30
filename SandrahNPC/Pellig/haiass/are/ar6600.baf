@@ -1,0 +1,6 @@
+IF
+  Global("HaiassFueraCandelero","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("HaiassFueraCandelero","GLOBAL",1)
+END

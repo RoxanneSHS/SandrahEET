@@ -1,0 +1,12 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+InMyArea("CVSandr")
+Global("NarWatcher","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("NarWatcher","GLOBAL",2)
+MoveToObject("CVSandr")
+StartDialogueNoSet("CVDESK")
+END
+

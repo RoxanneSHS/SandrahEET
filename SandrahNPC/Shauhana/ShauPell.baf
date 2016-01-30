@@ -1,0 +1,19 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("CVDre3","",[1082.944],8)
+LeaveAreaLUA("CVDre3","",[1082.944],8)
+ActionOverride("Pellig",LeaveAreaLUA("CVDre3","",[484.543],8))
+Explore()
+Wait(1)
+FadeFromColor([20.0],0)
+ActionOverride("Pellig",Dialogue("Pellig"))
+EndCutSceneMode()
+END
+
+

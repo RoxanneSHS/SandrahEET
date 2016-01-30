@@ -1,0 +1,10 @@
+IF
+Global("Kidopersonalquest","GLOBAL",4)
+PartyHasItem("CVChSacr")
+See("MWKido")
+See(Player1)
+THEN
+RESPONSE #100
+FaceObject(Player1)
+Dialog(Player1)
+END

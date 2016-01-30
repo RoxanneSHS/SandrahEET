@@ -1,0 +1,6 @@
+IF
+Global("HaiassExists","BG2616",0)
+THEN
+RESPONSE #100
+SetGlobal("HaiassExists","BG2616",2)
+END

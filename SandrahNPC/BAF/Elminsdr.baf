@@ -1,0 +1,17 @@
+IF
+Global("Mothdream1","GLOBAL",2)
+See("Sanpre2")
+THEN
+RESPONSE #100 
+MoveToObject("Sanpre2")
+StartDialogNoSet("Elminsdr")
+END
+
+IF
+Global("Mothdream2","GLOBAL",2)
+See("Sanpre2")
+THEN
+RESPONSE #100 
+MoveToObject("Sanpre2")
+StartDialogNoSet("Elminsdr")
+END

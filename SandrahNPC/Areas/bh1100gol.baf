@@ -1,0 +1,11 @@
+IF
+InParty("CVSandr")
+Global("cvstooges","BH1100",0)
+THEN
+RESPONSE #100
+SetGlobal("cvstooges","BH1100",1)
+CreateCreature("icbone01",[3795.644],0)
+CreateCreature("ORC03",[3795.644],0)
+CreateCreature("ORC05",[3795.644],0)
+CreateCreature("orc05",[3695.624],0) 
+END

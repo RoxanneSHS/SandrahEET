@@ -1,0 +1,66 @@
+IF
+Global("VP_MyFlirt","LOCALS",3)
+InParty("CVSandr")
+Global("SansimeB","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SansimeB","LOCALS",1)
+RealSetGlobalTimer("SanSimeOff","LOCALS",300)
+END
+
+IF
+RealGlobalTimerExpired("SanSimeOff","LOCALS")
+OR(2)
+Global("SansimeB","LOCALS",1)
+Global("SansimeB","LOCALS",3)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SansimeB","LOCALS",1)
+END
+
+IF
+RealGlobalTimerExpired("SanSimeOff","LOCALS")
+AreaType(FOREST)
+Global("SansimeB","LOCALS",5)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SansimeB","LOCALS",1)
+END
+
+IF
+Global("VP_SimeDefeatedSols","GLOBAL",2)
+Global("SanSimeSol","LOCALS",0)
+PartyRested()
+THEN
+RESPONSE #100
+SetGlobal("SanSimeSol","LOCALS",1)
+END
+
+IF
+OR(4)
+Global("SansimeB","LOCALS",2)
+Global("SansimeB","LOCALS",4)
+Global("SansimeB","LOCALS",6)
+Global("SanSimeSol","LOCALS",1)
+InParty("CVSandr")
+See("CVSandr")
+!See([ENEMY])
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact([PC])
+END
+
+IF
+Global("SanSimeSol","LOCALS",2)
+GlobalGT("SansimeB","LOCALS",6)
+THEN
+RESPONSE #100
+SetGlobal("SanSimeSol","LOCALS",3)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag9"))
+END

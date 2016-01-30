@@ -1,0 +1,19 @@
+IF
+Global("CVAR5203","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR5203","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("Saradushsacked","GLOBAL",1)
+InParty("CVSandr")
+!InMyArea("Mel01")
+Global("Talos25R","GLOBAL",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Talos25R","GLOBAL",1)
+CreateCreatureObjectOffScreen("CVTalos","CVSandr",0,0,0)
+END 

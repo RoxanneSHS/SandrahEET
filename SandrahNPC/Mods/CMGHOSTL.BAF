@@ -1,0 +1,29 @@
+IF
+	Allegiance(Myself,ENEMY)
+	Global("UCMGABEHOSTILE","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UCMGABEHOSTILE","GLOBAL",1)
+END
+
+IF
+	Global("UCMGABEHOSTILE","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	OR(2)
+		!Allegiance(Myself,ENEMY)
+		Global("UCMGABEHOSTILE","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UCMGABEHOSTILE","GLOBAL",1)
+		Enemy()
+		Continue()
+END
+
+

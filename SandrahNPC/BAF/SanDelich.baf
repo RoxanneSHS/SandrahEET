@@ -1,0 +1,15 @@
+IF
+InMyArea("CVSandr")
+!GlobalTimerNotExpired("DemiTS","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("DemiTS","LOCALS",TWO_MINUTES)
+END
+
+IF
+InMyArea("CVSandr")
+!GlobalTimerNotExpired("DEMI","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("DEMI","LOCALS",2)
+END

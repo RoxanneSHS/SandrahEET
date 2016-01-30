@@ -1,0 +1,15 @@
+IF
+NumTimesTalkedTo(0)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("San25ChiQuest","GLOBAL",13)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

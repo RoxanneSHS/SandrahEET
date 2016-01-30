@@ -1,0 +1,8 @@
+IF
+Global("SanKey","dsc014",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanKey","dsc014",1)
+ActionOverride("Container 3",CreateItem("ds15key",0,0,0))
+END

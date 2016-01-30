@@ -1,0 +1,8 @@
+IF
+Global("SanRabb","BG4600",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG4600",1)
+CreateCreature("rabbit01",[3801.2214],8)
+CreateCreature("rabbit",[2325.2195],8)
+END

@@ -1,0 +1,19 @@
+IF
+InMyArea("CVSandr")
+Global("SanDrow","BG5403",0)
+Dead("JC_DRW06")
+THEN
+RESPONSE #100
+SetGlobal("SanDrow","BG5403",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVViSpi"))
+END
+
+IF
+Global("SanDrow","BG5403",1)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanDrow","BG5403",2)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END

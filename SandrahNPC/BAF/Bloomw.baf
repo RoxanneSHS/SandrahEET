@@ -1,0 +1,42 @@
+IF
+InParty("CVSandr")
+InParty("Sufinch")
+Global("Bloomw","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Bloomw","GLOBAL",1)
+END
+
+IF
+Global("Bloomw","GLOBAL",0)	
+InParty("CVSandr")
+!InParty("Sufinch")
+OR(2)
+Global("SUSanKnowsFinch","GLOBAL",1)
+Global("SUPCKnowsFinch","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("Bloomw","GLOBAL",2)
+END
+
+IF
+Global("Bloomw","GLOBAL",0)
+InParty("CVSandr")
+!InParty("Sufinch")
+!Global("SUSanKnowsFinch","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("Bloomw","GLOBAL",3)
+END
+
+IF
+See([PC])
+OR(3)
+Global("Bloomw","GLOBAL",1)
+Global("Bloomw","GLOBAL",2)
+Global("Bloomw","GLOBAL",3)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogNoSet("Bloomw")
+END

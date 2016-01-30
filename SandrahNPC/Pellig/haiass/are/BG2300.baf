@@ -1,0 +1,6 @@
+IF
+  Global("HaiassMesonAmigo","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("HaiassMesonAmigo","GLOBAL",1)
+END

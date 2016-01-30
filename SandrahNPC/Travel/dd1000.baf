@@ -1,0 +1,7 @@
+IF
+Global("CVdd1000","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVdd1000","GLOBAL",1)
+Continue()
+END

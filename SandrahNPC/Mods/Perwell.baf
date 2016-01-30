@@ -1,0 +1,25 @@
+IF
+Global("Protect","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Protect","LOCALS",1)
+CreateItem("ImoSlHP1",0,0,0)
+FillSlot(SLOT_AMULET)
+END
+
+IF
+Global("SeePellig","LOCALS",0)
+OR(2)
+Global("ACQ6","GLOBAL",6)
+Global("ACQ15","GLOBAL",4)
+InParty("CVSandr")
+See("Pellig")
+See("CVSandr")
+!See([ENEMY])
+!AreaCheck("BG1800")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SeePellig","LOCALS",1)
+StartDialogueNoSet(Player1)
+END

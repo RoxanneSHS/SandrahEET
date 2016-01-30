@@ -1,0 +1,89 @@
+IF
+!Allegiance(Myself,ENEMY)
+Global("CVUMHostile","GLOBAL",1)
+OR(2)
+AreaCheck("CVUM04")
+AreaCheck("CVUM05")
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+InMyArea("Pellig")
+OR(2)
+AreaCheck("CVUM04")
+AreaCheck("CVUM05")
+THEN
+RESPONSE #100
+ActionOverride("Pellig",EscapeArea())
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+InMyArea("Pellig")
+OR(2)
+AreaCheck("CVUM04")
+AreaCheck("CVUM05")
+THEN
+RESPONSE #100
+ActionOverride("Haiass",EscapeArea())
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See(NearestEnemyOf(Myself))
+HPPercentLT(Myself,100)
+Global("SpellSequencer2","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SpellSequencer2","LOCALS",1)
+ReallyForceSpell(Myself,WIZARD_HASTE)
+ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ReallyForceSpell(Myself,WIZARD_SPIRIT_ARMOR)
+END
+
+IF
+HPPercentLT(Myself,40)
+!HPLT(Myself,20)
+!Range(NearestEnemyOf(Myself),8)
+HaveSpell(CLERIC_HEAL)
+GlobalLT("BigHeal","LOCALS",3)
+!GlobalTimerNotExpired("SHeal","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("SHeal","LOCALS",THREE_ROUNDS)
+IncrementGlobal("BigHeal","LOCALS",1)
+ForceSpell(Myself,CLERIC_HEAL)
+END
+
+IF
+Allegiance(Myself,ENEMY)
+CheckStatLT(Myself,40,RESISTMAGIC)
+RandomNum(2,1)
+!Range(NearestEnemyOf(Myself),8)
+!HPLT(Myself,20)
+THEN
+RESPONSE #100
+ApplySpell(Myself,CLERIC_MAGIC_RESISTANCE)
+END
+
+IF
+See(Player1)
+THEN
+RESPONSE #100
+Attack(Player1)
+RealSetGlobalTimer("Sanend","LOCALS",360)
+END
+
+IF
+RealGlobalTimerExpired("Sanend","LOCALS")
+See(Player1)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("CVMysan",Player1)
+Wait(6)
+Kill(Player1)
+END
+

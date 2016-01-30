@@ -1,0 +1,20 @@
+IF
+Global("SanXephRet","GLOBAL",10)
+THEN
+RESPONSE #100
+CreateCreature("cvxep3",[595.901],14)
+CreateCreature("F_Deathk",[795.748],1)
+CreateCreature("F_Deathk",[833.561],1)
+CreateCreature("F_Deathk",[1143.437],0)
+CreateCreature("F_Deathk",[890.1114],1)
+CreateCreature("F_Deathk",[840.864],0)
+CreateCreature("F_Deathk",[424.700],1)
+CreateCreature("golada01",[764.1005],1)
+CreateCreature("basilg",[901.1099],14)
+CreateCreature("basilnad",[984.1041],14)
+CreateCreature("obsfir05",[273.863],14)
+CreateCreature("cvzlord",[1137.766],4)
+ChangeEnemyAlly("obsfir05",ENEMY)
+SetGlobal("SanXephRet","GLOBAL",11)
+END
+

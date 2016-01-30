@@ -1,0 +1,34 @@
+IF
+Clicked([ANYONE])
+Range(LastTrigger,20)
+Global("SanSecrt","BG0300",4)
+THEN
+RESPONSE #100
+SetGlobal("SanSecrt","BG0300",5)
+DisplayStringWait(Player1,@692)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,20)
+Global("SanSecrt","BG0300",5)
+THEN
+RESPONSE #100
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+SmallWait(10)
+FadeToColor([30.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride(Player2,LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride(Player3,LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride(Player4,LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride("Pellig",LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride("Haiass",LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride(Player5,LeaveAreaLUA("BG0300","",[962.2550],4))
+ActionOverride(Player6,LeaveAreaLUA("BG0300","",[962.2550],4))
+FadeFromColor([30.0],0)
+EndCutSceneMode()
+SetGlobal("SanSecrt","BG0300",4)
+END

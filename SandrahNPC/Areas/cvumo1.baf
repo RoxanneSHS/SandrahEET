@@ -1,0 +1,7 @@
+IF
+Global("CVUmo1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVUmo1","GLOBAL",1)
+Continue()
+END

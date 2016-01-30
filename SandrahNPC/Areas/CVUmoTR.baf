@@ -1,0 +1,9 @@
+IF
+OR(3)
+Entered([ANYONE])
+Clicked([ANYONE])
+Opened([ANYONE])
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("shbones",LastTrigger,[25.-25])
+END

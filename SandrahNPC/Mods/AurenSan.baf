@@ -1,0 +1,37 @@
+IF
+InParty("K#Auren")
+Global("SanAurenB","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanAurenB","GLOBAL",1)
+RealSetGlobalTimer("SanAurenint","LOCALS",455)
+END
+
+IF
+OR(2)
+Global("SanAurenB","GLOBAL",1)
+Global("SanAurenB","GLOBAL",3)
+RealGlobalTimerExpired("SanAurenint","LOCALS")
+InParty("K#Auren")
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+IncrementGlobal("SanAurenB","GLOBAL",1)
+END
+
+IF
+OR(2)
+Global("SanAurenB","GLOBAL",2)
+Global("SanAurenB","GLOBAL",4)
+InParty("K#Auren")
+!See([ENEMY])
+See("K#Auren")
+!StateCheck("K#Auren",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("SanAurenint","LOCALS",2000)
+MoveToObject("K#Auren")
+Interact("CVSandr")
+END

@@ -1,0 +1,7 @@
+IF
+IsOverMe([GOODCUTOFF])
+Global("Orcalert","CVROA5",0)
+THEN
+RESPONSE #100
+SetGlobal("Orcalert","CVROA5",1)
+END

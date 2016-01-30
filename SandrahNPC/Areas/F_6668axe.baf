@@ -1,0 +1,7 @@
+IF
+Global("Itemice5","GLOBAL",0)
+PartyHasItem("F_Iceax5")
+THEN
+RESPONSE #100
+SetGlobal("Itemice5","GLOBAL",1)
+END

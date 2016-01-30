@@ -1,0 +1,8 @@
+IF
+Global("BHBoneHillQuest","GLOBAL",2)
+Global("Shieldsan","BH1000",0)
+THEN
+RESPONSE #100
+SetGlobal("Shieldsan","BH1000",1)
+CreateCreature("CVOLDSH",[885.1881],10)
+END

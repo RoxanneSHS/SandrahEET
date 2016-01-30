@@ -1,0 +1,2915 @@
+IF
+OR(5)
+Global("CVJenTOBRet","GLOBAL",3)
+Global("CVJenTOBRet","GLOBAL",4)
+Global("SanJenship","GLOBAL",2)
+Global("SanJenship","GLOBAL",6)
+Global("SendaiCutScene3","ar6106",1)
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogNoSet("CVJenlig")
+END
+
+IF
+OR(5)
+Global("CVJenTOBRet","GLOBAL",8)
+Global("CVJenTOBRet","GLOBAL",10)
+Global("CVJenTOBRet","GLOBAL",12)
+Global("CVJenSarRom","GLOBAL",1)
+Global("CVJenSarRom","GLOBAL",3)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+Interact("CVJenlig")
+END
+
+IF
+Global("CVJenTOBRet","GLOBAL",6)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("CVJenTOBRet","GLOBAL",7)
+RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)
+END
+
+IF
+OR(2)
+Global("CVJenTOBRet","GLOBAL",7)
+Global("CVJenTOBRet","GLOBAL",9)
+RealGlobalTimerExpired("CVJen25Intvl","GLOBAL")
+See("CVSandr")
+CombatCounter(0)
+!See([ENEMY])
+!AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+IncrementGlobal("CVJenTOBRet","GLOBAL",1)
+END
+
+IF
+InParty("Sarevok")
+Global("CVJenSarRom","GLOBAL",0)
+OR(3)
+Dead("Sarvam01")
+Dead("Sarkis01")
+Dead("Gromnir")
+!StateCheck("Sarevok",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("CVJenSarRom","GLOBAL",1)
+END
+
+IF
+Global("CVJenSarRom","GLOBAL",2)
+InParty("Sarevok")
+Dead("Elemimix")
+!StateCheck("Sarevok",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("CVJenSarRom","GLOBAL",3)
+END
+
+IF
+Global("SendaiCutScene3","GLOBAL",3)
+AreaCheck("ar6106") 
+Global("SendaiCutScene3","ar6106",0)
+THEN
+RESPONSE #100
+SetGlobal("SendaiCutScene3","ar6106",1)
+END
+
+IF
+Global("CVJenTOBRet","GLOBAL",11)
+PartyHasItem("CVJenGl2")
+!AreaCheck("AR6004")
+See("CVSandr")
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("CVJenTOBRet","GLOBAL",12)
+END
+
+IF
+StateCheck(Myself,STATE_PANIC)
+THEN
+RESPONSE #100
+ApplySpellRES("CVJen01",Myself)
+END
+
+IF
+!Allegiance(Myself,ENEMY)
+OR(5)
+AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+AttackedBy([PC],DEFAULT)
+AttackedBy([FAMILIAR],DEFAULT)
+AttackedBy([ALLY],DEFAULT)
+AttackedBy([CONTROLLED],DEFAULT)
+THEN
+RESPONSE #100
+Enemy()
+Continue()
+END
+
+IF
+AreaCheck("ar6200")
+Global("JenAtFinal","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("JenAtFinal","LOCALS",1)
+CreateItem("ImoSlHP1",0,0,0)
+FillSlot(SLOT_AMULET)
+END
+
+IF
+AreaCheck("ar6200")
+Global("CVJenTOBRet","GLOBAL",14)
+Global("IllaseraDead","AR6200",1)
+Global("AbazigalDead","AR6200",1)
+Global("YagaDead","AR6200",1)
+Global("SendaiDead","AR6200",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+Wait(2)
+StartCutSceneMode()
+StartCutScene("CVJenTOL")
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("rest","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobalTimer("rtime","LOCALS",2000)
+SetGlobal("rest","LOCALS",1)
+Continue()
+END
+
+IF
+Global("rest","LOCALS",1)
+!GlobalTimerNotExpired("rtime","LOCALS")
+!See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+SetGlobal("rest","LOCALS",0)
+ApplySpell(Myself,RESTORE_FULL_HEALTH)
+END
+
+IF
+!HasItem("CVJensw",Myself)
+OR(6)
+HasItem("CVJensw",Player1)
+HasItem("CVJensw",Player2)
+HasItem("CVJensw",Player3)
+HasItem("CVJensw",Player4)
+HasItem("CVJensw",Player5)
+HasItem("CVJensw",Player6)
+THEN
+RESPONSE #100
+ActionOverride(Player1,GiveItem("CVJensw","CVJenlig"))
+ActionOverride(Player2,GiveItem("CVJensw","CVJenlig"))
+ActionOverride(Player3,GiveItem("CVJensw","CVJenlig"))
+ActionOverride(Player4,GiveItem("CVJensw","CVJenlig"))
+ActionOverride(Player5,GiveItem("CVJensw","CVJenlig"))
+ActionOverride(Player6,GiveItem("CVJensw","CVJenlig"))
+DisplayStringHead(Myself,@826)
+END
+
+IF
+!HasItem("CVJensw",Myself)
+!HasItem("CVJensw",Player1)
+!HasItem("CVJensw",Player2)
+!HasItem("CVJensw",Player3)
+!HasItem("CVJensw",Player4)
+!HasItem("CVJensw",Player5)
+!HasItem("CVJensw",Player6)
+THEN
+RESPONSE #100
+ActionOverride(Player1,PickUpItem("CVJensw"))
+ActionOverride(Player2,PickUpItem("CVJensw"))
+ActionOverride(Player3,PickUpItem("CVJensw"))
+ActionOverride(Player4,PickUpItem("CVJensw"))
+ActionOverride(Player5,PickUpItem("CVJensw"))
+ActionOverride(Player6,PickUpItem("CVJensw"))
+END
+
+IF
+!HasItemEquiped("CVJensw",Myself)
+!See(NearestEnemyOf(Myself))
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+EquipItem("CVJensw")
+END
+
+IF
+LevelGT(Myself,2)
+Global("HasInvis","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",1)
+AddSpecialAbility("CVJen01")
+END
+
+IF
+LevelGT(Myself,3)
+Global("HasInvis","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",2)
+AddSpecialAbility("CVJen01")
+AddSpecialAbility("CVJen06")
+END
+
+IF
+LevelGT(Myself,4)
+Global("HasInvis","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",3)
+AddSpecialAbility("CVJen02")
+AddSpecialAbility("CVJen06")
+END
+
+IF
+LevelGT(Myself,5)
+Global("HasInvis","LOCALS",3)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",4)
+AddSpecialAbility("CVJen03")
+END
+
+IF
+LevelGT(Myself,6)
+Global("HasInvis","LOCALS",4)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",5)
+AddSpecialAbility("CVJen04")
+END
+
+IF
+LevelGT(Myself,7)
+Global("HasInvis","LOCALS",5)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",6)
+AddSpecialAbility("CVJen05")
+AddSpecialAbility("CVJen02")
+END
+
+IF
+LevelGT(Myself,8)
+Global("HasInvis","LOCALS",6)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",7)
+AddSpecialAbility("spin727")
+AddSpecialAbility("spin834")
+END
+
+IF
+LevelGT(Myself,12)
+Global("HasInvis","LOCALS",7)
+THEN
+RESPONSE #100
+SetGlobal("HasInvis","LOCALS",8)
+AddSpecialAbility("spin727")
+AddSpecialAbility("spin834")
+AddSpecialAbility("CVJen05")
+AddSpecialAbility("CVJen02")
+AddSpecialAbility("CVJen04")
+END
+
+IF
+!GlobalTimerNotExpired("castspell","LOCALS")
+HaveSpell(WARRIOR_HARDINESS)
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),5)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+ReallyForceSpell(Myself,WARRIOR_HARDINESS)
+Continue()
+END
+
+IF
+!GlobalTimerNotExpired("castspell","LOCALS")
+HaveSpell(WARRIOR_GREATER_WHIRLWIND)
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),5)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+ReallyForceSpell(Myself,WARRIOR_GREATER_WHIRLWIND)
+Continue()
+END
+
+IF
+!GlobalTimerNotExpired("castspell","LOCALS")
+HaveSpell(WARRIOR_CRITICAL_STRIKE)
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),5)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+ReallyForceSpell(Myself,WARRIOR_CRITICAL_STRIKE)
+Continue()
+END
+
+IF
+!GlobalTimerNotExpired("castspell","LOCALS")
+!GlobalTimerNotExpired("lifedrain","LOCALS")
+!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+!StateCheck(Myself,STATE_DISABLED)
+See([ENEMY])
+Allegiance(LastSeenBy(Myself),ENEMY)
+HPPercentLT(Myself,60)
+Range(LastSeenBy(Myself),10)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+SetGlobalTimer("lifedrain","LOCALS",TWO_ROUNDS)
+FaceObject(Nearest([ENEMY]))
+ReallyForceSpell(NearestEnemyOf(Myself),PSIONIC_LIFE_DRAIN)
+Continue()
+END
+
+IF
+!GlobalTimerNotExpired("castspell","LOCALS")
+!GlobalTimerNotExpired("projectforce","LOCALS")
+!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+!StateCheck(Myself,STATE_DISABLED)
+Allegiance(LastSeenBy(Myself),ENEMY)
+!StateCheck(LastSeenBy(Myself),STATE_DISABLED)
+!CheckStatGT(LastSeenBy(Myself),0,HELD)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+SetGlobalTimer("projectforce","LOCALS",TWO_ROUNDS)
+FaceObject(Nearest([ENEMY]))
+ReallyForceSpell(NearestEnemyOf(Myself),PSIONIC_PROJECT_FORCE)
+Continue()
+END
+
+IF
+HasItem("potn17",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+!General(Myself,ANIMAL)
+!General(Myself,MONSTER)
+StateCheck(Myself,STATE_POISONED)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("potn17",Myself)
+END
+
+IF
+HasItem("dw#ptn20",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+!General(Myself,ANIMAL)
+!General(Myself,MONSTER)
+StateCheck(Myself,STATE_POISONED)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("dw#ptn20",Myself)
+END
+
+IF
+HasItem("potn20",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+StateCheck(Myself,STATE_POISONED)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("potn20",Myself)
+END
+
+IF
+HasItem("dw#ptn55",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+HPLT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("dw#ptn55",Myself)
+END
+
+IF
+HasItem("potn55",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+HPLT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("potn55",Myself)
+END
+
+IF
+HasItem("dw#ptn52",Myself)
+!GlobalTimerNotExpired("castspell","LOCALS")
+HPLT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("dw#ptn52",Myself)
+END
+
+IF
+HasItem("potn52",Myself)
+HPLT(Myself,30)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("potn52",Myself)
+END
+
+IF
+HasItem("dw#ptn14",Myself)
+See(NearestEnemyOf(Myself))
+!StateCheck(Myself,STATE_INVISIBLE)
+!StateCheck(Myself,STATE_HASTED)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+UseItem("dw#ptn14",Myself)
+END
+
+IF
+	HasItem("potn14",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_HASTED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	        UseItem("potn14",Myself)
+END
+
+IF
+	HasItem("dw#ptn07",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,24,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn07",Myself)
+END
+
+IF
+	HasItem("potn07",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,24,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn07",Myself)
+END
+
+IF
+	HasItem("dw#ptn06",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,23,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn06",Myself)
+END
+
+IF
+	HasItem("potn06",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,23,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn06",Myself)
+END
+
+IF
+	HasItem("dw#ptn05",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,22,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn05",Myself)
+END
+
+IF
+	HasItem("potn05",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,22,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn05",Myself)
+END
+
+IF
+	HasItem("dw#ptn04",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,21,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn04",Myself)
+END
+
+IF
+	HasItem("potn04",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,21,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn04",Myself)
+END
+
+IF
+	HasItem("dw#ptn12",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,20,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn12",Myself)
+END
+
+IF
+	HasItem("potn12",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,20,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn12",Myself)
+END
+
+IF
+	HasItem("dw#ptn03",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,19,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn03",Myself)
+END
+
+IF
+	HasItem("potn03",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,19,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn03",Myself)
+END
+
+IF
+	HasItem("dw#ptn34",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	        UseItem("dw#ptn34",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn35",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn35",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn21",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn21",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn45",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn45",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn34",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn34",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn35",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn35",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn21",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn21",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn45",Myself)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn45",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn41",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn41",Myself)
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("potn41",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn41",Myself)
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn09",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn09",Myself)
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("potn09",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn09",Myself)
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn24",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatGT(Myself,0,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn24",Myself)
+END
+
+IF
+	HasItem("potn24",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatGT(Myself,0,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn24",Myself)
+END
+
+IF
+	HasItem("dw#ptn28",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,15,CON)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn28",Myself)
+END
+
+IF
+	HasItem("potn28",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	CheckStatLT(Myself,15,CON)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	UseItem("potn28",Myself)
+END
+
+IF
+	HasItem("dw#ptn42",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn42",Myself)
+END
+
+IF
+	HasItem("potn42",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn42",Myself)
+END
+
+IF
+	HasItem("dw#ptn08",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HPPercentLT(Myself,75)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn08",Myself)
+END
+
+IF
+	HasItem("potn08",Myself)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HPPercentLT(Myself,75)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn08",Myself) 
+END
+
+
+IF
+        LevelGT(Myself,6)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),20)
+THEN
+	RESPONSE #40
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	See(LastTargetedBy(Myself))
+	CheckStat(Myself,0,0)
+	Global("validtarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	See(LastTargetedBy(Myself))
+	CheckStatLT(Myself,3,0)
+	Global("validtarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	See(LastTargetedBy(Myself))
+	CheckStat(Myself,3,0)
+	Global("validtarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	See(LastTargetedBy(Myself))
+	CheckStat(Myself,4,0)
+	Global("validtarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	See(LastTargetedBy(Myself))
+	!CheckStat(Myself,0,0)
+	Global("validtarget","LOCALS",1)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	See([ENEMY.0.0.MAGE])
+	Global("backstabplan","LOCALS",1)
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE])
+	!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.MAGE],20)
+	Range([ENEMY.0.0.MAGE],4)
+THEN
+	RESPONSE #60
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE])
+END
+
+IF
+	See([ENEMY.0.0.MAGE_THIEF])
+	Global("backstabplan","LOCALS",1)
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF])
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.MAGE_THIEF],20)
+	Range([ENEMY.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #50
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	See([ENEMY.0.0.LONG_BOW])
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW])
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.LONG_BOW],20)
+	Range([ENEMY.0.0.LONG_BOW],4)
+THEN
+	RESPONSE #40
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	See([ENEMY.0.0.THIEF])
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF])
+	!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.THIEF],20)
+	Range([ENEMY.0.0.THIEF],4)
+THEN
+	RESPONSE #50
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF])
+END
+
+IF
+	See([ENEMY.0.0.BARD])
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD])
+	!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.BARD],20)
+	Range([ENEMY.0.0.BARD],4)
+THEN
+	RESPONSE #20
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.BARD])
+END
+
+IF
+	See([ENEMY.0.0.THIEF_ALL])
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL])
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.THIEF_ALL],20)
+	Range([ENEMY.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #80
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	See([ENEMY.0.0.CLERIC])
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(2)
+		CheckStatGT(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStat(Myself,0,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,2,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,3,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	OR(2)
+		CheckStatGT(Myself,4,0)
+		GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC])
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.CLERIC],20)
+	Range([ENEMY.0.0.CLERIC],4)
+THEN
+	RESPONSE #40
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.CLERIC])
+END
+
+IF
+	See([ENEMY])
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY])
+	!CheckStatGT([ENEMY],0,STONESKINS)
+	!HPPercentGT([ENEMY],20)
+	Range([ENEMY],4)
+THEN
+	RESPONSE #80
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY])
+END
+
+IF
+	See(SecondNearest([ENEMY]))
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY])) 
+	!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+	!HPPercentGT(SecondNearest([ENEMY]),20)
+	Range(SecondNearest([ENEMY]),4)
+THEN
+	RESPONSE #70
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(SecondNearest([ENEMY]))
+END
+
+IF
+	See(ThirdNearest([ENEMY]))
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY])) 
+	!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+	!HPPercentGT(ThirdNearest([ENEMY]),20)
+	Range(ThirdNearest([ENEMY]),4)
+THEN
+	RESPONSE #70
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(ThirdNearest([ENEMY]))
+END
+
+IF
+	See([ENEMY.0.0.MAGE])
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE]) 
+	!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.MAGE],50)
+	Range([ENEMY.0.0.MAGE],4)
+THEN
+	RESPONSE #70
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE])
+END
+
+IF
+	See([ENEMY.0.0.MAGE_THIEF])
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF]) 
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.MAGE_THIEF],50)
+	Range([ENEMY.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #70
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	See([ENEMY.0.0.LONG_BOW])
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW])
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.LONG_BOW],50)
+	Range([ENEMY.0.0.LONG_BOW],4)
+THEN
+	RESPONSE #60
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	See([ENEMY.0.0.THIEF])
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF]) 
+	!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.THIEF],50)
+	Range([ENEMY.0.0.THIEF],4)
+THEN
+	RESPONSE #40
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF])
+END
+
+IF
+	See([ENEMY.0.0.BARD])
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD]) 
+	!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.BARD],50)
+	Range([ENEMY.0.0.BARD],4)
+THEN
+	RESPONSE #30
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.BARD])
+END
+
+IF
+	See([ENEMY.0.0.THIEF_ALL])
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL]) 
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.THIEF_ALL],50)
+	Range([ENEMY.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #30
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	See([ENEMY.0.0.CLERIC])
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC])
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+	!HPPercentGT([ENEMY.0.0.CLERIC],50)
+	Range([ENEMY.0.0.CLERIC],4)
+THEN
+	RESPONSE #50
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.CLERIC])
+END
+
+IF
+	See([ENEMY])
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY]) 
+	!CheckStatGT([ENEMY],0,STONESKINS)
+	!HPPercentGT([ENEMY],50)
+	Range([ENEMY],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY])
+END
+
+IF
+	See(SecondNearest([ENEMY]))
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY]))
+	!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+	!HPPercentGT(SecondNearest([ENEMY]),50)
+	Range(SecondNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(SecondNearest([ENEMY]))
+END
+
+IF
+	See(ThirdNearest([ENEMY]))
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY])) 
+	!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+	!HPPercentGT(ThirdNearest([ENEMY]),50)
+	Range(ThirdNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(ThirdNearest([ENEMY]))
+END
+
+IF
+	See([ENEMY.0.0.MAGE])
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE])
+	!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+	Range([ENEMY.0.0.MAGE],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE])
+END
+
+IF
+	See([ENEMY.0.0.MAGE_THIEF])
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF]) 
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+	Range([ENEMY.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	See([ENEMY.0.0.LONG_BOW])
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW]) 
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+	Range([ENEMY.0.0.LONG_BOW],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	See([ENEMY.0.0.THIEF])
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF]) 
+	!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+	Range([ENEMY.0.0.THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF])
+END
+
+IF
+	See([ENEMY.0.0.BARD])
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD]) 
+	!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+	Range([ENEMY.0.0.BARD],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.BARD])
+END
+
+IF
+	See([ENEMY.0.0.THIEF_ALL])
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL]) 
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+	Range([ENEMY.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	See([ENEMY.0.0.CLERIC])
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC])
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+	Range([ENEMY.0.0.CLERIC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.CLERIC])
+END
+
+IF
+	See([ENEMY])
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY]) 
+	!CheckStatGT([ENEMY],0,STONESKINS)
+	Range([ENEMY],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY])
+END
+
+IF
+	See(SecondNearest([ENEMY]))
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY])) 
+	!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+	Range(SecondNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(SecondNearest([ENEMY]))
+END
+
+IF
+	See(ThirdNearest([ENEMY]))
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY])) 
+	!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+	Range(ThirdNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(ThirdNearest([ENEMY]))
+END
+
+IF
+	See([ENEMY.0.0.MAGE])
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE]) 
+	Range([ENEMY.0.0.MAGE],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE])
+END
+
+IF
+	See([ENEMY.0.0.MAGE_THIEF])
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF])
+	Range([ENEMY.0.0.MAGE_THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	See([ENEMY.0.0.LONG_BOW])
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW])
+	Range([ENEMY.0.0.LONG_BOW],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	See([ENEMY.0.0.THIEF])
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF])
+	Range([ENEMY.0.0.THIEF],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF])
+END
+
+IF
+	See([ENEMY.0.0.BARD])
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD])
+	Range([ENEMY.0.0.BARD],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.BARD])
+END
+
+IF
+	See([ENEMY.0.0.THIEF_ALL])
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL]) 
+	Range([ENEMY.0.0.THIEF_ALL],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	See([ENEMY.0.0.CLERIC])
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC]) 
+	Range([ENEMY.0.0.CLERIC],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY.0.0.CLERIC])
+END
+
+IF
+	See([ENEMY])
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY]) 
+	Range([ENEMY],4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound([ENEMY])
+END
+
+IF
+	See(SecondNearest([ENEMY]))
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY]))
+	Range(SecondNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(SecondNearest([ENEMY]))
+END
+
+IF
+	See(ThirdNearest([ENEMY]))
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY])) 
+	Range(ThirdNearest([ENEMY]),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(ThirdNearest([ENEMY]))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(NearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",NearestEnemyOf(Myself)) 
+	Range(NearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	See(SecondNearestEnemyOf(Myself))
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearestEnemyOf(Myself)) 
+	Range(SecondNearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(SecondNearestEnemyOf(Myself))
+END
+
+IF
+	See(ThirdNearestEnemyOf(Myself))
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearestEnemyOf(Myself))
+	Range(ThirdNearestEnemyOf(Myself),4)
+THEN
+	RESPONSE #100
+		SetGlobal("validtarget","LOCALS",1)
+		SetGlobal("melee","LOCALS",1)
+		EquipMostDamagingMelee()
+		AttackOneRound(ThirdNearestEnemyOf(Myself))
+END
+
+IF
+	HasItem("dw#move0",Myself) 
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!General(Myself,HUMANOID)
+	OR(2)
+		!General(Myself,GIANTHUMANOID)
+		Race(Myself,GOLEM)
+	OR(2)
+		!General(Myself,UNDEAD)
+		Race(Myself,ZOMBIE)
+	!Race(Myself,LYCANTHROPE)
+	!Race(Myself,DEMONIC)
+	!Class(Myself,WOLF_VAMPIRIC)
+	!Race(Myself,DRAGON)
+	!Race(Myself,DOPPLEGANGER)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.MAGE])
+	!HPPercentGT([ENEMY.0.0.MAGE],40)
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.MAGE])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.MAGE_THIEF])
+	!HPPercentGT([ENEMY.0.0.MAGE_THIEF],40)
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.LONG_BOW])
+	!HPPercentGT([ENEMY.0.0.LONG_BOW],40)
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.THIEF])
+	!HPPercentGT([ENEMY.0.0.THIEF],40)
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.THIEF])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.BARD])
+	!HPPercentGT([ENEMY.0.0.BARD],40)
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.BARD])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.THIEF_ALL])
+	!HPPercentGT([ENEMY.0.0.THIEF_ALL],40)
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.CLERIC])
+	!HPPercentGT([ENEMY.0.0.CLERIC],40)
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.CLERIC])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY])
+	!HPPercentGT([ENEMY],40)
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY])
+END
+
+IF
+	ActionListEmpty()
+	See(SecondNearest([ENEMY]))
+	!HPPercentGT(SecondNearest([ENEMY]),40)
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY]))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(SecondNearest([ENEMY]))
+END
+
+IF
+	ActionListEmpty()
+	See(ThirdNearest([ENEMY]))
+	!HPPercentGT(ThirdNearest([ENEMY]),40)
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY]))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(ThirdNearest([ENEMY]))
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.MAGE])
+	!StateCheck([ENEMY.0.0.MAGE],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE])
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.MAGE])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.MAGE_THIEF])
+	!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.MAGE_THIEF]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.MAGE_THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.MAGE_THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.MAGE_THIEF])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.LONG_BOW])
+	!StateCheck([ENEMY.0.0.LONG_BOW],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.LONG_BOW],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.LONG_BOW])
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.LONG_BOW],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.LONG_BOW],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.LONG_BOW])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.THIEF])
+	!StateCheck([ENEMY.0.0.THIEF],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.THIEF])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.BARD])
+	!StateCheck([ENEMY.0.0.BARD],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.BARD],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.BARD])
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.BARD],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.BARD],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.BARD])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.THIEF_ALL])
+	!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.THIEF_ALL]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.THIEF_ALL],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.THIEF_ALL],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.THIEF_ALL])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY.0.0.CLERIC])
+	!StateCheck([ENEMY.0.0.CLERIC],STATE_DISABLED)
+	!CheckStatGT([ENEMY.0.0.CLERIC],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY.0.0.CLERIC]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY.0.0.CLERIC],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY.0.0.CLERIC],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY.0.0.CLERIC])
+END
+
+IF
+	ActionListEmpty()
+	See([ENEMY])
+	!StateCheck([ENEMY],STATE_DISABLED)
+	!CheckStatGT([ENEMY],0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",[ENEMY]) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY],0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck([ENEMY],STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT([ENEMY],0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject([ENEMY])
+END
+
+IF
+	ActionListEmpty()
+	See(SecondNearest([ENEMY]))
+	!StateCheck(SecondNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(SecondNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearest([ENEMY]))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearest([ENEMY]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(SecondNearest([ENEMY]))
+END
+
+IF
+	ActionListEmpty()
+	See(ThirdNearest([ENEMY]))
+	!StateCheck(ThirdNearest([ENEMY]),STATE_DISABLED)
+	!CheckStatGT(ThirdNearest([ENEMY]),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearest([ENEMY])) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearest([ENEMY]),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearest([ENEMY]),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(ThirdNearest([ENEMY]))
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(NearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",NearestEnemyOf(Myself))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(NearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(NearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(SecondNearestEnemyOf(Myself))
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SecondNearestEnemyOf(Myself))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(SecondNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(ThirdNearestEnemyOf(Myself))
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",ThirdNearestEnemyOf(Myself))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(ThirdNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(FourthNearestEnemyOf(Myself))
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",FourthNearestEnemyOf(Myself)) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(FourthNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(FifthNearestEnemyOf(Myself))
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",FifthNearestEnemyOf(Myself))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(FifthNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(SixthNearestEnemyOf(Myself))
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SixthNearestEnemyOf(Myself))
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(SixthNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(SeventhNearestEnemyOf(Myself))
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",SeventhNearestEnemyOf(Myself)) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(SeventhNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(EighthNearestEnemyOf(Myself))
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_DISABLED)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,HELD)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",EighthNearestEnemyOf(Myself)) 
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!StateCheck(Myself,STATE_INVISIBLE)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,STONESKINS)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(3)
+		!CheckStat(Myself,4,SCRIPTINGSTATE4)
+		!Class(Myself,THIEF_ALL)
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,STONESKINS)
+THEN
+	RESPONSE #100
+		MoveToObject(EighthNearestEnemyOf(Myself))
+END
+
+IF
+	ActionListEmpty()
+	See(Player4)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",Player4) 
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player4)
+END
+
+IF
+	ActionListEmpty()
+	See(Player5)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",Player5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player5)
+END
+
+IF
+	ActionListEmpty()
+	See(Player6)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",Player6) 
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player6)
+END
+
+IF
+	ActionListEmpty()
+	See(Player3)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",Player3)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player3)
+END
+
+IF
+	ActionListEmpty()
+	See(Player2)
+	Allegiance(Myself,ENEMY)
+	!HasItem("MORSWORD",Player2)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player2)
+END
+
+IF
+	ActionListEmpty()
+	See(Player1)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",Player1) 
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(Player1)
+END
+
+IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	GlobalTimerNotExpired("seedefences","LOCALS")
+	!HasItem("MORSWORD",NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		SetGlobal("melee","LOCALS",1)
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+IF
+	!GlobalTimerNotExpired("setmeleetarget","LOCALS")
+	See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	!Global("chaseENEMY","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("chaseENEMY","LOCALS",0)
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chaseENEMY","LOCALS",0)
+	InParty(Player2)
+	!StateCheck(Player2,STATE_REALLY_DEAD)
+	InParty(Player3)
+	!StateCheck(Player3,STATE_REALLY_DEAD)
+	InParty(Player4)
+	!StateCheck(Player4,STATE_REALLY_DEAD)
+	InParty(Player5)
+	!StateCheck(Player5,STATE_REALLY_DEAD)
+	InParty(Player6)
+	!StateCheck(Player6,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",1)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",2)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",3)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",4)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",5)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",6)
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chaseENEMY","LOCALS",0)
+	InParty(Player2)
+	!StateCheck(Player2,STATE_REALLY_DEAD)
+	InParty(Player3)
+	!StateCheck(Player3,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",1)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",2)
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",3)
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chaseENEMY","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chaseENEMY","LOCALS",1)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!Global("inafight","LOCALS",0)
+	!Global("chaseENEMY","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",0)
+		SetGlobal("chaseENEMY","LOCALS",0)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chaseENEMY","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chaseENEMY","LOCALS",2)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chaseENEMY","LOCALS",3)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chaseENEMY","LOCALS",4)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chaseENEMY","LOCALS",5)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+GlobalTimerNotExpired("chasetimer","LOCALS")
+Global("chaseENEMY","LOCALS",6)
+!See(NearestEnemyOf(Myself))
+!Detect(Player6)
+THEN
+RESPONSE #100
+MoveToObject(Player6)
+END
+
+IF
+See([ENEMY])
+!See(NearestEnemyOf(Myself))
+Class(Myself,THIEF_ALL)
+!StateCheck(Myself,STATE_INVISIBLE)
+HPLT(Myself,10)
+THEN
+RESPONSE #100
+ApplySpellRES("CVJen01",Myself)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+!GlobalTimerNotExpired("castspell","LOCALS")
+LevelGT(Myself,9)
+CheckStatGT(LastSeenBy(Myself),7,LEVEL)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",TWO_ROUNDS)
+FaceObject(NearestEnemyOf(Myself))
+ReallyForceSpell(NearestEnemyOf(Myself),BEHOLDER_ANTIMAGIC_RAY)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+!GlobalTimerNotExpired("castspell","LOCALS")
+LevelGT(Myself,10)
+CheckStatGT(LastSeenBy(Myself),9,LEVEL)
+THEN
+RESPONSE #100
+SetGlobalTimer("castspell","LOCALS",TWO_ROUNDS)
+FaceObject(NearestEnemyOf(Myself))
+ReallyForceSpell(NearestEnemyOf(Myself),BEHOLDER_DISINTEGRATE)
+END
+
+IF
+Global("JenBantRun","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("JenBantRun","LOCALS",1)
+RealSetGlobalTimer("JenBant","LOCALS",3200)
+END
+
+IF
+RealGlobalTimerExpired("JenBant","LOCALS")
+Global("JenOneBanter","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("JenOneBanter","LOCALS",0)
+RealSetGlobalTimer("JenBant","LOCALS",3200)
+END
+
+IF
+RealGlobalTimerExpired("JenBant","LOCALS")
+Global("JenOneBanter","LOCALS",0)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("JenOneBanter","LOCALS",1)
+Interact("CVJenlig")
+END

@@ -1,0 +1,39 @@
+IF
+Detect([PC])
+Range(LastSeenBy(Myself),40)
+OR(2)
+Global("SanCerndLT","GLOBAL",1)
+Global("SanMeetArath","GLOBAL",8)
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+Global("SanMeetArath","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("SanMeetArath","GLOBAL",10)
+GiveItemCreate("CVCatCe","Arath",0,0,0)
+Wait(2)
+DestroySelf()
+END
+
+IF
+Global("SanCerndLT","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanCerndLT","GLOBAL",3)
+GiveItemCreate("CVCatCe","Cernd",0,0,0)
+Wait(2)
+DestroySelf()
+END
+
+IF
+OR(2)
+Global("SanCerndLT","GLOBAL",5)
+Global("SanMeetArath","GLOBAL",12)
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END

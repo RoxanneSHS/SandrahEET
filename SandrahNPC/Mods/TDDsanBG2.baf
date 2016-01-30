@@ -1,0 +1,69 @@
+IF
+AreaCheck("dd7002")
+PartyHasItem("orgoheal")
+Global("SanOrgotrp","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanOrgotrp","LOCALS",1)
+END
+
+IF
+Global("SanOrgotrp","LOCALS",2)
+PartyHasItem("orgobody")
+!AreaCheck("dd7001")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanOrgotrp","LOCALS",3)
+END
+
+IF
+Global("caliprisonspawn","GLOBAL",1)
+!AreaCheck("dd9x06")
+Global("SanTDDCali","LOCALS",0)
+Delay(8)
+THEN
+RESPONSE #100
+SetGlobal("SanTDDCali","LOCALS",1)
+END
+
+IF
+Global("artyinfz","GLOBAL",2)
+Global("SanTDDjarlhunt","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanTDDjarlhunt","LOCALS",1)
+END
+
+IF
+Global("SanTDDjarlhunt","LOCALS",2)
+GlobalGT("githleev","GLOBAL",1)
+AreaCheck("dd8000")
+THEN
+RESPONSE #100
+SetGlobal("SanTDDjarlhunt","LOCALS",3)
+END
+
+IF
+Global("SanTDDjarlhunt","LOCALS",4)
+GlobalGT("artraise","GLOBAL",0)
+Dead("Jarlcave")
+THEN
+RESPONSE #100
+SetGlobal("SanTDDjarlhunt","LOCALS",5)
+END
+
+IF
+Global("SanTDDCoward","LOCALS",0)
+Dead("draggld1")
+AreaCheck("dd8000b")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanTDDCoward","LOCALS",1)
+END
+
+
+

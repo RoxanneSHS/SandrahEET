@@ -1,0 +1,20 @@
+IF
+InMyArea("CVSandr")
+Allegiance("demlord",ENEMY)
+Global("SanMysHelp","ar2807",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMysHelp","ar2807",1)
+RealSetGlobalTimer("SanMysInt","ar2807",180)
+END
+
+IF
+Global("SanMysHelp","ar2807",1)
+RealGlobalTimerExpired("SanMysInt","ar2807")
+THEN
+RESPONSE #100
+ActionOverride("demlord",DestroyItem("immune3"))
+ActionOverride("demlord",DestroyItem("ringdemn"))
+ActionOverride("demlord",DropInventory())
+SetGlobal("SanMysHelp","ar2807",2)
+END

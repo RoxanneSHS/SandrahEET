@@ -1,0 +1,7 @@
+IF
+!HasItem("SW2VAL",Myself)
+!HasItem("Valiant",Myself)
+THEN
+RESPONSE #100
+GiveItemCreate("Valiant",Myself,0,0,0)
+END

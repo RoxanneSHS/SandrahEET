@@ -1,0 +1,36 @@
+IF
+InParty("CVSandr")
+PartyHasItem("Misc13")
+!GlobalTimerExpired("Samuel","GLOBAL")
+THEN
+RESPONSE #100
+TakePartyItem("Misc13")
+GiveItemCreate("Misc13L","CVSandr",0,0,0)
+END
+
+IF
+InParty("CVSandr")
+OR(2)
+PartyHasItem("Misc13L")
+PartyHasItem("Misc13")
+Global("SanSamSp","BG5500",0)
+THEN
+RESPONSE #100
+CreateCreature("CVBandf3",[3053.1813],0)
+CreateCreature("CVBandf4",[3208.1722],3)
+SetGlobal("SanSamSp","BG5500",1)
+END
+
+IF
+Global("SanSamSp","BG5500",1)
+Dead("CVBandf3")
+Dead("CVBandf4")
+CombatCounter(0)
+InParty("CVSandr")
+OR(2)
+PartyHasItem("Misc13")
+PartyHasItem("Misc13L")
+THEN
+RESPONSE #100
+SetGlobal("SanSamSp","BG5500",2)
+END

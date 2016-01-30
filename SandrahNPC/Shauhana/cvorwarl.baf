@@ -1,0 +1,94 @@
+IF
+Global("shauorcboy","GLOBAL",0)
+See("CVShau")
+!See([Enemy])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("shauorcboy","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",3)
+ReallyForceSpellRES("Cvorunve",Myself)
+ActionOverride("CVorwarl",Polymorph(FIGHTER_MALE_HALFORC))
+END
+
+IF
+Global("shauorcboy","GLOBAL",3)
+See("CVShau")
+!See([Enemy])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("shauorcboy","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",5)
+EscapeAreaMove("ar0400",3600,1756,2)
+END
+
+IF
+Global("shauorcboy","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",7)
+AddJournalEntry(@469,QUEST)
+ActionOverride("CVGhatle",EscapeAreaMove("cvsha3",817,827,12))
+ActionOverride("CVorwarl",EscapeAreaMove("cvsha3",781,875,12))
+END
+
+IF
+AreaCheck("CVSha3")
+See("CVShau")
+InParty("CVSandr")
+Global("ShauOrcWar","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("ShauOrcWar","GLOBAL",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("CVSha3")
+See("CVShau")
+InParty("CVSandr")
+Global("ShauOrcWar","GLOBAL",3)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("ShauOrcWar","GLOBAL",4)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("ShauOrcWar","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("ShauOrcWar","GLOBAL",6)
+ActionOverride("CVGhatle",EscapeAreaMove("cvsh10",2048,1581,0))
+ActionOverride("CVorwarl",EscapeAreaMove("cvsh10",2012,1570,2))
+END
+
+IF
+Global("ShauOrcWar","GLOBAL",6)
+AreaCheck("cvsh10")
+See("CVShau")
+!See([Enemy])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck("CVShau",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("ShauOrcWar","GLOBAL",7)
+ActionOverride("CVGhatle",StartDialogueNoSet([PC]))
+END

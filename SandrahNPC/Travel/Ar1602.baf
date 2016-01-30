@@ -1,0 +1,20 @@
+IF
+Global("CVAR1602","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1602","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanKimTalks","GLOBAL",8)
+GlobalLT("SanHealFaren","GLOBAL",11)
+Global("SanKimFar","AR1602",0)
+InParty("CVSandr")
+!InParty("Kim")
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("CVFar"))
+SetGlobal("SanKimFar","AR1602",1)
+END

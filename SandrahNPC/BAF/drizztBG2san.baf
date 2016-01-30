@@ -1,0 +1,244 @@
+//Drizzt in BG2
+IF
+Global("SanDrizzt2","GLOBAL",0)
+InParty("Driz2")
+THEN
+RESPONSE #100
+SetGlobal("SanDrizzt2","GLOBAL",1)
+END
+
+IF
+Global("SanDrizzt2","GLOBAL",2)
+InParty("Driz2")
+RealGlobalTimerExpired("SanDrizztInterv","GLOBAL")
+!AreaType(DUNGEON)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("SanDrizzt2","GLOBAL",3)
+END
+
+IF
+InParty("Driz2")
+RealGlobalTimerExpired("SanDrizztInterv","GLOBAL")
+OR(3)
+Global("SanDrizzt2","GLOBAL",4)
+Global("SanDrizzt2","GLOBAL",9)
+Global("SanDrizzt2","GLOBAL",11)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDrizzt2","GLOBAL",1)
+END
+
+IF
+Global("SanDrizzt2","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizzt2","GLOBAL",9)
+AddSpecialAbility("CVDrag9")
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+InParty("Driz2")
+Global("Chapter","GLOBAL",16)
+GlobalGT("SanDrizzt2","GLOBAL",7)
+Global("SanDrizBG2","LOCALS",0)
+!AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",1)
+END
+
+IF
+InParty("Driz2")
+AreaCheck("rr3100")
+Global("Ttcmal","GLOBAL",1)
+OR(2)
+Global("SanDrizBG2","LOCALS",0)
+Global("SanDrizBG2","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",3)
+END
+
+IF
+GlobalGT("AfterMes","RR3150",0)
+AreaCheck("RR3150")
+InParty("Driz2")
+Global("SanDrizBG2","LOCALS",4)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",5)
+END
+
+IF
+InParty("Driz2")
+Global("SanDrizBG2","LOCALS",6)
+!AreaCheck("rr3220")
+GlobalGT("Firster","GLOBAL",0)
+GlobalGT("Secer","GLOBAL",0)
+GlobalGT("Thirer","GLOBAL",0)
+!AreaType(DUNGEON)
+!AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",7)
+END
+
+IF
+InParty("Driz2")
+Global("FDlGu","GLOBAL",2)
+Global("SanDrizBG2","LOCALS",8)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",9)
+RealSetGlobalTimer("SanDrizztInterv","GLOBAL",122)
+END
+
+IF
+InParty("Driz2")
+RealGlobalTimerExpired("SanDrizztInterv","GLOBAL")
+Global("SanDrizBG2","LOCALS",9)
+THEN
+RESPONSE #100
+SetGlobal("SanDrizBG2","LOCALS",10)
+END
+
+IF
+InParty("Driz2")
+AreaCheck("ra5600")
+CombatCounter(0)
+!See([ENEMY])
+Global("SanDrBremen","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDrBremen","LOCALS",1)
+END
+
+IF
+Global("CreMar2","GLOBAL",2)
+InParty("Driz2")
+AreaCheck("ar1600")
+Global("DlgWmar","GLOBAL",0)
+Global("SanDrBryn","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDrBryn","LOCALS",1)
+RealSetGlobalTimer("SanDrBrynDel","LOCALS",600)
+END
+
+IF
+Global("DlgWmar","GLOBAL",0)
+Global("SanDrBryn","LOCALS",1)
+InParty("Driz2")
+RealGlobalTimerExpired("SanDrBrynDel","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("SanDrBryn","LOCALS",2)
+END
+
+//RoT Quest
+IF
+Global("CQuestActive","GLOBAL",1)
+GlobalTimerExpired("StartCQuest","GLOBAL")
+!InParty("Driz2")
+CombatCounter(0)
+AreaType(CITY)
+!AreaCheck("AR2200")
+!AreaCheck("AR1600")
+!AreaCheck("BG5900")
+THEN
+RESPONSE #100
+CreateCreatureObject("Chaunti",Player1,0,0,0)
+SetGlobal("CQuestActive","GLOBAL",2)
+END
+
+IF
+Global("CreeDji3","GLOBAL",1)
+AreaCheck("ar1500")
+THEN
+RESPONSE #100
+SetGlobal("CreeDji3","GLOBAL",2)
+CreateCreature("EntDjin3",[590.2960],3)
+END
+
+IF
+InParty("Driz2")
+Global("clobsson","GLOBAL",5)
+AreaCheck("ar0500")
+Global("SanDrClob","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDrClob","LOCALS",1)
+END
+
+IF
+Global("SanDrClob","LOCALS",3)
+Global("clobsson","GLOBAL",8)
+InParty("Driz2")
+THEN
+RESPONSE #100
+SetGlobal("SanDrClob","LOCALS",4)
+END
+
+IF
+AreaCheck("RR4002")
+Global("EntandDri","GLOBAL",4)
+!InMyArea("Driz2")
+THEN
+RESPONSE #100
+LeaveAreaLUA("RR4005","",[657.248],14)
+END
+
+IF
+GlobalGT("TheEndisNear","GLOBAL",3)
+GlobalLT("Chapter","GLOBAL",19)
+InParty("Driz2")
+!AreaCheck("RR3950")
+Global("SanDriLeaveWD","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDriLeaveWD","GLOBAL",1)
+END
+
+IF
+GlobalLT("SanSharInt","GLOBAL",25)
+Global("SanDriLeaveWD","GLOBAL",2)
+Global("SanTravDriWD","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanTravDriWD","LOCALS",1)
+AddSpecialAbility("sanWDHo")
+AddSpecialAbility("sanWDRe")
+END
+
+IF
+InParty("Driz2")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck("Driz2",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(16)
+Global("SanDrizzt2","GLOBAL",3)
+Global("SanDrizzt2","GLOBAL",5)
+Global("SanDrizzt2","GLOBAL",7)
+Global("SanDrizzt2","GLOBAL",10)
+Global("SanDrizzt2","GLOBAL",12)
+Global("SanHealDriz2","GLOBAL",5)
+Global("SanDrizBG2","LOCALS",1)
+Global("SanDrizBG2","LOCALS",3)
+Global("SanDrizBG2","LOCALS",5)
+Global("SanDrizBG2","LOCALS",7)
+Global("SanDrizBG2","LOCALS",10)
+Global("SanDrBremen","LOCALS",1)
+Global("SanDrBryn","LOCALS",2)
+Global("SanDrClob","LOCALS",1)
+Global("SanDrClob","LOCALS",4)
+Global("SanDriLeaveWD","GLOBAL",1)
+THEN
+RESPONSE #100
+MoveToObject("Driz2")
+Interact("CVSandr")
+END

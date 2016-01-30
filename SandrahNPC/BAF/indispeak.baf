@@ -1,0 +1,13 @@
+IF
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!See([ENEMY])
+NumTimesTalkedTo(0)
+OR(2)
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+Dialogue([PC])
+END

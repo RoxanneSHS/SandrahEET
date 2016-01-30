@@ -1,0 +1,917 @@
+//XAN
+IF
+	!Global("endofbg1","GLOBAL",2)
+	RealGlobalTimerExpired("X#XaReactionTime","GLOBAL")
+	Global("X#XASTRE","GLOBAL",0)
+	OR(2)
+		Global("X#XanFlirtEarly","GLOBAL",3)
+		Global("X#XanFlirtLate","GLOBAL",3)
+	InParty(Myself)
+	InParty("xan")
+	See("xan")
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck("xan",CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!Global("X#XARomanceInactive","GLOBAL",1)
+	OR(2)
+		Global("X#XARomanceActive","GLOBAL",2)
+		Global("X#XARomanceActive","GLOBAL",1)
+THEN
+	RESPONSE #100
+		IncrementGlobal("X#XASTRE","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#XASTRE","GLOBAL",1)
+	InParty(Myself)
+	InParty("xan")
+	!StateCheck("xan",CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet(Player1)
+END	
+
+/* Interest talks */
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharMatch","GLOBAL",0)
+CheckStatGT(Player1,10,CHR)
+CheckStatGT(Player1,10,STR)
+Gender(Player1,MALE)
+!Race(Player1,HALFLING)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#SharInterestTime","GLOBAL",100)
+SetGlobal("X#SharMatch","GLOBAL",1)
+END
+
+/* Small snippet  from IntTalk 11 */
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharBunk","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharBunk","GLOBAL",1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharBunk","GLOBAL",2)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* First part of talks, 2 through 11 */
+IF 
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+InParty(Myself)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+OR(14)
+Global("X#SharInterestTalk","GLOBAL",3)
+Global("X#SharInterestTalk","GLOBAL",5)
+Global("X#SharInterestTalk","GLOBAL",7)
+Global("X#SharInterestTalk","GLOBAL",11)
+Global("X#SharInterestTalk","GLOBAL",15)
+Global("X#SharInterestTalk","GLOBAL",17)
+Global("X#SharInterestTalk","GLOBAL",19)
+Global("X#SharInterestTalk","GLOBAL",21)
+Global("X#SharInterestTalk","GLOBAL",23)
+Global("X#SharInterestTalk","GLOBAL",27)
+Global("X#SharInterestTalk","GLOBAL",29)
+Global("X#SharInterestTalk","GLOBAL",31)
+Global("X#SharInterestTalk","GLOBAL",33)
+Global("X#SharInterestTalk","GLOBAL",41)
+OR(2)
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",2)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharInterestTalk","GLOBAL",1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(18)
+Global("X#SharInterestTalk","GLOBAL",4)
+Global("X#SharInterestTalk","GLOBAL",6)
+Global("X#SharInterestTalk","GLOBAL",8)
+Global("X#SharInterestTalk","GLOBAL",12)
+Global("X#SharInterestTalk","GLOBAL",14)
+Global("X#SharInterestTalk","GLOBAL",16)
+Global("X#SharInterestTalk","GLOBAL",18)
+Global("X#SharInterestTalk","GLOBAL",20)
+Global("X#SharInterestTalk","GLOBAL",22)
+Global("X#SharInterestTalk","GLOBAL",24)
+Global("X#SharInterestTalk","GLOBAL",26)
+Global("X#SharInterestTalk","GLOBAL",28)
+Global("X#SharInterestTalk","GLOBAL",30)
+Global("X#SharInterestTalk","GLOBAL",32)
+Global("X#SharInterestTalk","GLOBAL",34)
+Global("X#SharInterestTalk","GLOBAL",40)
+Global("X#SharInterestTalk","GLOBAL",42)
+Global("SanSharInt","GLOBAL",20)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* Interest Talk 7 */
+IF 
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+InParty(Myself)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("X#SharInterestTalk","GLOBAL",13)
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharMatch","GLOBAL",1)
+HPPercentLT(Player1,95)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharInterestTalk","GLOBAL",1)
+END
+
+/* Interest Talk 20 */
+IF 
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharInterestTalk","GLOBAL",39)
+InParty(Myself)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("X#SharInterest","GLOBAL",2)
+OR(4)
+AreaCheck("BG2613")
+AreaCheck("BG2615")
+AreaCheck("BG2619")
+AreaCheck("BG5506")
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharInterestTalk","GLOBAL",1)
+END
+
+/* Set Shar Interest = 2 */
+IF  
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+GlobalGT("X#SharInterestTalk","GLOBAL",32)
+Global("X#SharInterest","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("X#SharInterest","GLOBAL",2)
+END
+
+/* Floaters */
+/* Angelo Talk */
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+Global("X#SharFloater1","GLOBAL",0)
+Global("X#SharInterest","GLOBAL",2)
+Global("X#SharAngelo1","GLOBAL",1)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharFloater1","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharFloater1","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+IF  
+InParty(Myself)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+Global("X#SharFloater2","GLOBAL",0)
+Global("X#SharInterest","GLOBAL",2)
+AreaCheck("%Undercity%")
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharFloater2","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharFloater2","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* For Ring Talk */
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+Global("X#SharRing","GLOBAL",3)
+Global("X#SharDestroyRing","GLOBAL",0)
+PartyHasItem("RING15")
+THEN
+RESPONSE #100
+SetGlobal("X#SharDestroyRing","GLOBAL",1)
+TakePartyItem("RING15")
+DestroyItem("RING15")
+END
+
+
+/* NPC-Initiated Flirts */
+/* Early in Romance */
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharCheckFlirtEarly","GLOBAL",0)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#SharFlirtEarlyTime","GLOBAL",300)
+SetGlobal("X#SharCheckFlirtEarly","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+!Global("X#SharDisableFlirts","GLOBAL",1)
+RealGlobalTimerExpired("X#SharFlirtEarlyTime","GLOBAL")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharFlirtEarly","GLOBAL",0)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("X#SharFlirtEarly","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharFlirtEarly","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* kind/non-kind */
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+!Global("X#SharDisableFlirts","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",2)
+GlobalLT("X#SharKind","GLOBAL",6)
+!Global("X#SharFlirtKind","GLOBAL",2)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#SharFlirtLateTime","GLOBAL",1000)
+SetGlobal("X#SharFlirtLate","GLOBAL",0)
+SetGlobal("X#SharFlirtKind","GLOBAL",2)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+!Global("X#SharDisableFlirts","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",2)
+GlobalGT("X#SharKind","GLOBAL",5)
+!Global("X#SharFlirtLate","GLOBAL",2)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#SharFlirtKindTime","GLOBAL",1000)
+SetGlobal("X#SharFlirtLate","GLOBAL",2)
+SetGlobal("X#SharFlirtKind","GLOBAL",0)
+END
+
+/* Late in Romance, non-'kind' flirts */
+IF
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharFlirtLateTime","GLOBAL")
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!Global("X#SharDisableFlirts","GLOBAL",1)
+CombatCounter(0)
+!See([ENEMY])
+See(Player1)
+Global("X#SharInterest","GLOBAL",2)
+Global("X#SharFlirtLate","GLOBAL",0)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("X#SharFlirtLate","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharFlirtLate","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* Late in romance, 'kind' flirts */
+IF  
+InParty(Myself)
+RealGlobalTimerExpired("X#SharFlirtKindTime","GLOBAL")
+!Global("X#SharDisableFlirts","GLOBAL",1)
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+Global("X#SharInterest","GLOBAL",2)
+Global("X#SharFlirtKind","GLOBAL",0)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("X#SharFlirtKind","GLOBAL",1)
+END
+
+IF  
+Global("X#SharFlirtKind","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+/* Shar Knows that a Player is a Paladin or Ranger */
+IF
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself)
+Global("X#SharGoodCheck","GLOBAL",0)
+Gender(Player1,MALE)
+CheckStatGT(Player1,10,CHR)
+CheckStatGT(Player1,10,STR)
+OR(2)
+Class(Player1,PALADIN_ALL)
+Class(Player1,RANGER_ALL)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharGoodCheck","GLOBAL",1)
+END
+
+/* Shar-Teel Reacts when the appropriate guy Falls */
+IF
+!Global("endofbg1","GLOBAL",2)
+InParty(Myself) 
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+See(Player1)
+Global("X#SharGoodCheck","GLOBAL",1)
+CheckStatGT(Player1,11,CHR)
+CheckStatGT(Player1,11,STR)
+OR(2)
+Class(Player1,PALADIN_ALL)
+Class(Player1,RANGER_ALL)
+Global("X#SharFallenTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+IncrementGlobal("X#SharGoodCheck","GLOBAL",1)
+RealSetGlobalTimer("X#SharInterestTime","GLOBAL",SHROM_TIMER)
+SetGlobal("X#SharMatch","GLOBAL",1)
+SetGlobal("X#SharFallenTalk","GLOBAL",1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharFallenTalk","GLOBAL",1)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("shrar")
+StartDialogueNoSet(Player1)
+END
+
+//Other NPCs
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("P#CRSH1","GLOBAL",0)
+	RealGlobalTimerExpired("P#CRoReactionTime","GLOBAL")
+	Global("P#CoranRomanceInactive","GLOBAL",1)
+	Global("P#CoranMatch","GLOBAL",1)
+	Global("P#CoRomReaction","GLOBAL",1)
+	OR(2)
+		Global("P#CoranRomancePath","GLOBAL",2)
+		Global("P#CoranRomancePath","GLOBAL",4)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	InParty("coran")
+	!StateCheck("coran",CD_STATE_NOTVALID)
+	See(Player1)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("P#CRSH1","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("P#CRSH1","GLOBAL",1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	InParty("coran")
+	!StateCheck("coran",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		Interact(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	AreaCheck("BG3800")
+	Global("X#SharMirianneLetter","GLOBAL",0)
+	PartyHasItem("SCRL3I") // Brief
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	!See([ENEMY])
+THEN
+	RESPONSE #100
+		SetGlobal("X#SharMirianneLetter","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharMirianneLetter","GLOBAL",1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("shart99")
+		Dialogue(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Gender("sharteel",MALE)
+	Global("X#SharMale","GLOBAL",0)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SharMale","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharMale","GLOBAL",1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("shart99")
+		Dialogue(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	InParty(Myself)
+	Global("X#DreamTimerStarted","GLOBAL",0)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+		SetGlobal("X#DreamTimerStarted","GLOBAL",1)
+END
+
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#ShartSex","GLOBAL",1)
+	Global("X#SharMorning1","GLOBAL",0)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SharMorning1","GLOBAL",1)
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharMorning1","GLOBAL",1)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("shart99")
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharLoveFight","GLOBAL",1)
+	InParty(Myself)
+	HPPercentGT(Player1,80)
+	HPPercentGT("sharteel",80)
+THEN
+	RESPONSE #100
+		AttackOneRound(Player1)
+		Continue()
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharLoveFight","GLOBAL",1)
+	HPPercentLT(Player1,96)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SharLoveFight","GLOBAL",2)
+		ActionOverride("sharteel",ChangeEnemyAlly("sharteel",ALLY))
+		ActionOverride("sharteel",StartDialogueNoSet(Player1))
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharLoveFight","GLOBAL",1)
+	HPPercentGT(Player1,95)
+	HPPercentLT("sharteel",96)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SharLoveFight","GLOBAL",4)
+		ActionOverride("sharteel",ChangeEnemyAlly("sharteel",ALLY))
+		ActionOverride("sharteel",StartDialogueNoSet(Player1))
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	ReputationGT(Player1,19)
+	Global("X#SharPissed","GLOBAL",1)
+	Global("X#PissedTimerStarted","GLOBAL",0)
+	InParty(Myself)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("X#SHAR63","GLOBAL",14000)
+		SetGlobal("X#PissedTimerStarted","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	GlobalTimerExpired("X#SHAR63","GLOBAL")
+	Global("X#SharPissed","GLOBAL",1)
+	ReputationGT(Player1,19)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		IncrementGlobal("X#SharPissed","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SharPissed","GLOBAL",2)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	See(Player1)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("shart99")
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	PartyRested()
+	InParty("kivan")
+	Global("X#SHKI1","LOCALS",0)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+	See("kivan")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("kivan",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SHKI1","LOCALS",1)
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	InParty("kivan")
+	Global("X#SHKI1","LOCALS",1)
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	See("kivan")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("kivan",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+		StartDialogueNoSet("kivan")
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SHSK1","GLOBAL",0)
+	InParty("skie")
+	InParty("eldoth")
+	InParty(Myself)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("X#SharSk","GLOBAL",2000)
+		SetGlobal("X#SHSK1","GLOBAL",1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	RealGlobalTimerExpired("X#SharSk","GLOBAL")
+	Global("X#SHSK1","GLOBAL",1)
+	Global("X#SKSH1","GLOBAL",1)
+	Global("X#ELSH1","GLOBAL",1)
+	InParty("skie")
+	InParty("eldoth")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("skie",CD_STATE_NOTVALID)
+	!StateCheck("eldoth",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("X#SHSK1","GLOBAL",2)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SHSK1","GLOBAL",2)
+	InParty("skie")
+	InParty("eldoth")
+	InParty(Myself)
+	CombatCounter(0)
+	!See([ENEMY])
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("skie",CD_STATE_NOTVALID)
+	!StateCheck("eldoth",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		PlaySong(0)
+		PlaySound("shart99")
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	StateCheck(Myself,STATE_STONE_DEATH)
+	Global("IWasKickedOut","LOCALS",0)
+	!NumTimesTalkedTo(0)
+	GlobalLT("ENDOFBG1","GLOBAL",2)
+THEN
+	RESPONSE #100
+		SetGlobal("IWasKickedOut","LOCALS",1)
+		Continue()
+END
+
+IF
+	!UnselectableVariable(0)
+	Global("Eldothfight","GLOBAL",0)
+THEN
+	RESPONSE #100
+		MakeUnselectable(0)
+END
+
+IF
+	UnselectableVariable(0)
+	See("Eldoth")
+	Global("Eldothfight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		MakeUnselectable(5000)
+END
+
+IF
+	!UnselectableVariable(0)
+	Dead("Eldoth") // Eldoth
+	Global("Eldothfight","GLOBAL",1)
+THEN
+	RESPONSE #100
+		SetGlobal("Eldothfight","GLOBAL",0)
+		MakeUnselectable(0)
+END
+
+IF
+	!UnselectableVariable(0)
+	!See("Eldoth")
+THEN
+	RESPONSE #100
+		MakeUnselectable(0)
+END
+
+IF
+	Global("Eldothfight","GLOBAL",1)
+	See("Eldoth")
+THEN
+	RESPONSE #100
+		EquipRanged()
+		Attack("Eldoth")
+END
+
+IF
+	AttackedBy([GOODCUTOFF],DEFAULT)
+	Allegiance(Myself,ALLY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	GlobalGT("B!GavinFinger","GLOBAL",0)
+	GlobalLT("B!GavinFinger","GLOBAL",3)
+	Global("B!SharTeelFinger","GLOBAL",0)
+	InParty(Myself)
+	InParty("B!GAVIN")
+	InMyArea("B!GAVIN")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("B!GAVIN",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		SetGlobal("B!SharTeelFinger","GLOBAL",1)
+END
+
+IF
+	Global("B!SharTeelFinger","GLOBAL",1)
+	InParty(Myself)
+	InParty("B!GAVIN")
+	InMyArea("B!GAVIN")
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	!StateCheck("B!GAVIN",CD_STATE_NOTVALID)
+THEN
+	RESPONSE #100
+		StartDialogueNoSet("B!GAVIN")
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealshar","GLOBAL",5)
+OR(6)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealshar","GLOBAL",1)
+END
+
+IF
+Global("SanHealshar","GLOBAL",5)
+GlobalGT("SanSharInt","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("SanHealshar","GLOBAL",6)
+END
+
+IF
+Global("SanHealshar","GLOBAL",5)
+GlobalLT("SanSharInt","GLOBAL",10)
+THEN
+RESPONSE #100
+SetGlobal("SanHealshar","GLOBAL",7)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+OR(2)
+Global("SanHealshar","GLOBAL",6)
+Global("SanHealshar","GLOBAL",7)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+Global("SanSharInt","GLOBAL",19)
+RealGlobalTimerExpired("SanSharPreg","GLOBAL")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",20)
+END
+
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("SanSharInt","GLOBAL",23)
+AreaCheck("CVSans")
+!Global("IWasKickedOut","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("IWasKickedOut","LOCALS",2)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("SanSharInt","GLOBAL",23)
+AreaCheck("CVSans")
+!Global("KickedOut","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("KickedOut","LOCALS",3)
+END

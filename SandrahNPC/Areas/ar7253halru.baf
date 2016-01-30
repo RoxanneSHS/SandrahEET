@@ -1,0 +1,46 @@
+IF
+InParty("CVSandr")
+Global("HalItems","bg0153",0)
+PartyHasItem("MISC69")
+PartyHasItem("MISC70")
+PartyHasItem("MISC71")
+THEN
+RESPONSE #100
+SetGlobal("HalItems","bg0153",1)
+END
+
+IF
+InParty("CVSandr")
+Global("HalItems","bg0153",1)
+Global("HelpAlatos","GLOBAL",2)
+Dead("Resar")
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("HalItems","bg0153",2)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+Global("EndOfBG1","GLOBAL",1)
+InParty("CVSandr")
+Global("CyricVis","bg0153",0)
+THEN
+RESPONSE #100
+SetGlobal("CyricVis","bg0153",1)
+CreateCreature("CVCyr01",[864.440],14)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",32)
+Global("InactiveDoor","bg0153",0)
+THEN
+RESPONSE #100
+TriggerActivation("Door7248",TRUE)
+TriggerActivation("Door7248",FALSE)
+TriggerActivation("Door7250",FALSE)
+TriggerActivation("Door7251",FALSE)
+TriggerActivation("Door7252",FALSE)
+SetGlobal("InactiveDoor","bg0153",1)
+END

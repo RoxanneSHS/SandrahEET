@@ -1,0 +1,20 @@
+IF
+GlobalLT("SanHaerRel1","GLOBAL",34)
+Global("haerpos","CVHEL1",0)
+THEN
+RESPONSE #100
+MoveToPoint([2794.2868])
+SetGlobal("haerpos","CVHEL1",1)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",34)
+InParty("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!InParty(Myself)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogNoSet(Player1)
+END

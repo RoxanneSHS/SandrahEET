@@ -1,0 +1,23 @@
+IF
+Global("NoReturn","CVcrxw",0)
+THEN
+RESPONSE #100
+TriggerActivation("Trademeet",FALSE)
+TriggerActivation("Trademeet2",FALSE)
+TriggerActivation("CityGates",FALSE)
+TriggerActivation("Forest",FALSE)
+SetGlobal("NoReturn","CVcrxw",1)
+END
+
+IF
+Global("NoReturn","CVcrxw",1)
+Dead("CVSlaw")
+THEN
+RESPONSE #100
+TriggerActivation("Trademeet",TRUE)
+TriggerActivation("Trademeet2",TRUE)
+TriggerActivation("CityGates",TRUE)
+TriggerActivation("Forest",TRUE)
+SetGlobal("NoReturn","CVcrxw",2)
+END
+

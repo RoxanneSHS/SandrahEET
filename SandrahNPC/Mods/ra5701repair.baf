@@ -1,0 +1,26 @@
+IF
+Global("Razlast","ra5701",0)
+OR(2)
+Global("Razorbattle","GLOBAL",1)
+Global("Razorbattle","GLOBAL",2)
+Dead("Rannec7")
+Dead("Rannec8") 
+InParty("Randall")
+InMyArea("Randall")
+!StateCheck("Randall",CD_STATE_NOTVALID)
+HPLT("Razor",2)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("Razlast","ra5701",1)
+DialogInterrupt(TRUE)
+ActionOverride("Razor",Dialogue([PC]))
+END
+
+IF
+Global("adslkjdfkjl","RA5701",0)
+Global("Razlast","ra5701",2)
+THEN
+RESPONSE #100
+SetGlobal("adslkjdfkjl","RA5701",1)
+END

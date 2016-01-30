@@ -1,0 +1,83 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		SetGlobal("wolfbattlestarted","LOCALS",0)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	Global("wolfhowls","LOCALS",0)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@383)
+		PlaySound("VWOLF03")
+		DisplayString(Myself,@384)
+		ReallyForceSpell(Myself,WIZARD_HORROR)
+		SetGlobal("wolfhowls","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("wolfhowls","LOCALS",1)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@383)
+		DisplayString(Myself,@385)
+		PlaySound("VWOLF03")
+		SetGlobalTimer("wolfhowls","LOCALS",ONE_ROUND)
+		CreateCreature("mm75hog",[-1.-1],0)
+		SetGlobal("wolfhowls","LOCALS",2)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("wolfhowls","LOCALS",2)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@383)
+		PlaySound("VWOLF03")
+		DisplayString(Myself,@386)
+		ReallyForceSpell(Myself,WIZARD_TRUE_DISPEL_MAGIC)
+		SetGlobal("wolfhowls","LOCALS",3)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("wolfhowls","LOCALS",3)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@383)
+		PlaySound("VWOLF03")
+		DisplayString(Myself,@387)
+		ReallyForceSpell(Myself,WIZARD_GREATER_MALISON)
+		SetGlobal("wolfhowls","LOCALS",4)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	GlobalGT("wolfhowls","LOCALS",3)
+	!GlobalTimerNotExpired("castspell","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		DisplayStringHead(Myself,@383)
+		PlaySound("VWOLF03")
+		DisplayString(Myself,@384) 
+		ReallyForceSpell(Myself,WIZARD_HORROR)
+END
+
+
+
+
+
+

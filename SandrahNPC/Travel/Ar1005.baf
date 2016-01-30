@@ -1,0 +1,62 @@
+IF
+Global("CVAR1005","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1005","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanVicArrst","GLOBAL",3)
+Global("VicInJail","ar1005",0)
+THEN
+RESPONSE #100
+SetGlobal("VicInJail","ar1005",1)
+CloseDoor("Door04")
+Lock("Door04")
+END
+
+IF
+Global("SanVicArrst","GLOBAL",9)
+Global("VicInJail","ar1005",1)
+THEN
+RESPONSE #100
+SetGlobal("VicInJail","ar1005",2)
+Unlock("Door04")
+OpenDoor("Door04")
+END
+
+IF
+GlobalGT("SanSharInt","GLOBAL",10)
+Global("SharTeel","GLOBAL",1)
+!InParty("Sharteel")
+Global("SharteelPartyBG1","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SharteelPartyBG1","GLOBAL",1)
+END
+
+IF
+Global("SharteelPartyBG1","GLOBAL",1)
+Global("BP_SharteelBG1Check","GLOBAL",0)
+GlobalGT("SanSharInt","GLOBAL",10)
+THEN
+RESPONSE #100
+SetGlobal("BP_SharteelBG1Check","GLOBAL",1)
+SetGlobal("SharTeel","GLOBAL",1)
+ActionOverride("Sharteel",SetDialog("SHARTEDD"))
+ActionOverride("Sharteel",ChangeAIScript("SHARTDD",OVERRIDE))
+ActionOverride("Sharteel",SetNumTimesTalkedTo(0))
+AddXPObject("Sharteel",50000)
+GiveItemCreate("HELM01","Sharteel",1,0,0)
+GiveItemCreate("CVSHAR20","Sharteel",1,0,0)
+GiveItemCreate("SW1H06","Sharteel",1,0,0)
+GiveItemCreate("POTN52","Sharteel",3,0,0)
+GiveItemCreate("POTN46","Sharteel",4,0,0)
+GiveItemCreate("POTN05","Sharteel",2,0,0)
+SmallWait(10)
+ActionOverride("Sharteel",EquipMostDamagingMelee())
+END
+
+

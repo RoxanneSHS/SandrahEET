@@ -1,0 +1,12 @@
+IF
+Global("X#RAGEFA6","GLOBAL",1)
+PartyHasItem("misc51")
+InMyArea("CVSandr")
+InMyArea("Kagain")
+Global("SanKagAbe","bg0126",0)
+THEN
+RESPONSE #100
+SetGlobal("SanKagAbe","bg0126",1)
+ActionOverride("CVSandr",MoveToObject("Kagain"))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

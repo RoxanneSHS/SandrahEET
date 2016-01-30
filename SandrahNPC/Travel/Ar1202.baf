@@ -1,0 +1,29 @@
+IF
+Global("CVAR1202","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1202","GLOBAL",1)
+Continue()
+END
+
+IF
+!Contains("misc3h","Container4")
+GlobalLT("SanMaze","ar1202",1)
+THEN
+RESPONSE #100
+ActionOverride("Container4",CreateItem("misc3h",0,0,0))
+Continue()
+END
+
+IF
+InMyArea("CVSandr")
+Global("SanMaze","ar1202",0)
+OR(4)
+PartyHasItem("misc3h")
+Dead("firorc03")
+Dead("firwlf01")
+Dead("firtrl01")
+THEN
+RESPONSE #100
+SetGlobal("SanMaze","ar1202",1)
+END

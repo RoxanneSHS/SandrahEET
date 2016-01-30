@@ -1,0 +1,45 @@
+IF
+GlobalLT("SanHealJet","GLOBAL",2)
+InParty(Myself)
+InParty("CVSandr")
+OR(6)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealJet","GLOBAL",1)
+END
+
+IF
+Global("SanHealJet","GLOBAL",2)
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanHealJet","GLOBAL",3)
+MoveToObject("CVSandr")
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("SanHealJet","GLOBAL",4)
+!Global("LichDead","GLOBAL",0)
+PartyHasItem("DSAMUL02")
+!AreaCheck("DSC002")
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanHealJet","GLOBAL",5)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag11"))
+END
+

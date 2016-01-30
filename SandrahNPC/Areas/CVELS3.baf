@@ -1,0 +1,28 @@
+IF
+Global("Entered","CVELS3",0)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVELS3",1)
+RealSetGlobalTimer("Spawns","CVELS3",35)
+END
+
+
+IF
+RealGlobalTimerExpired("Spawns","CVELS3")
+Global("SanVampWDQuest","GLOBAL",13)
+NumCreatureVsPartyLT([ENEMY],1)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",14)
+CreateCreature("CVvamsh1",[355.293],12)
+CreateCreature("CVvamsh2",[333.300],18)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",14)
+Dead("CVvamsh1")
+Dead("CVvamsh2") 
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",15)
+END

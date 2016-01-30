@@ -1,0 +1,10 @@
+IF
+Global("Formedcloth","GLOBAL",24)
+InParty("Imoen2")
+!InMyArea("Elminsa")
+Global("ElmexistsImoBh","CVstud",0)
+THEN
+RESPONSE #100
+SetGlobal("ElmexistsImoBh","CVstud",1)
+CreateCreature("elminsa",[387.244],5)
+END

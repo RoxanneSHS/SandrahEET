@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+Wait(1)
+LeaveAreaLUAPanic("CVELM2","",[1556.1365],2) 
+LeaveAreaLUA("CVELM2","",[1556.1365],2)
+Wait(4)
+EndCutSceneMode()
+END
+

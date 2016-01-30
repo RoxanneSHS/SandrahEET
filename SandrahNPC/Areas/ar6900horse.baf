@@ -1,0 +1,44 @@
+IF
+Global("HorseExists","bg2800",0)
+THEN
+RESPONSE #100
+SetGlobal("HorseExists","bg2800",1)
+CreateCreature("horsesa",[1276.1341],9)
+HideAreaOnMap("bg2200")
+END
+
+IF
+Global("SanBeltGen","GLOBAL",0)
+InParty("CVSandr")
+OR(2)
+PartyHasItem("Belt05")
+PartyHasItem("CBelt05")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanBeltGen","GLOBAL",1)
+END
+
+IF
+Global("ItemFibSil","GLOBAL",0)
+PartyHasItem("X#SILSH")
+THEN
+RESPONSE #100
+SetGlobal("ItemFibSil","GLOBAL",1)
+END
+
+IF
+Global("SanBeltGen","GLOBAL",0)
+Global("Needcurse","bg2800",0)
+InParty("CVSandr")
+Dead("ogre")
+!PartyHasItem("Belt05")
+!PartyHasItem("CBelt05")
+OR(2)
+PartyHasItem("FLRBelt1")
+PartyHasItem("Belt04")
+Delay(6)
+THEN
+RESPONSE #100
+GiveItemCreate("Belt05",Player1,1,0,0)
+END

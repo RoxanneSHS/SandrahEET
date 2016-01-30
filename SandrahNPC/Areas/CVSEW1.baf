@@ -1,0 +1,12 @@
+IF
+Global("KatsewDe","CVSEW1",0)
+Dead("Kattah")
+Dead("Karmag1")
+THEN
+RESPONSE #100
+SetGlobal("KatsewDe","CVSEW1",1)
+EraseJournalEntry(@104)
+AddJournalEntry(@117,QUEST_DONE)
+SetGlobal("KatDef","GLOBAL",2)
+END
+

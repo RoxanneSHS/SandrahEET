@@ -1,0 +1,34 @@
+IF
+Global("C#Q06_TalkedToPaladin","GLOBAL",4)
+Global("SanDauroQ","GLOBAL",0)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("cvdauro",[1462.1716],4)
+SetGlobal("SanDauroQ","GLOBAL",1)
+END
+
+IF
+Global("SanDauroQ","GLOBAL",2)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("cvdaudem",[4500.150],4)
+SetGlobal("SanDauroQ","GLOBAL",3)
+END
+
+IF
+Global("SanDauroQ","GLOBAL",4)
+Dead("CVDaudem")
+THEN
+RESPONSE #100
+SetGlobal("SanDauroQ","GLOBAL",5)
+END
+
+IF
+Global("SanDauroQ","GLOBAL",5)
+Dead("CVDauro")
+THEN
+RESPONSE #100
+SetGlobal("SanDauroQ","GLOBAL",6)
+END

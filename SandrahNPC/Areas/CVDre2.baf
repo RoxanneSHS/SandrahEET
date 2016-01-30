@@ -1,0 +1,92 @@
+IF
+OnCreation()
+Global("Mapnotes","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("Mapnotes","CVDRE2",1)
+AddMapNote([1063.608],@205)
+AddMapNote([359.997],@206)
+AddMapNote([400.589],@207)
+AddMapNote([987.980],@208)
+Continue()
+END
+
+IF
+Global("SANVISITEDWD","GLOBAL",1)
+!InMyArea("narqmes")
+Global("LandrelExists","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("LandrelExists","CVDRE2",1)
+CreateCreature("narqmes",[834.886],3)
+Continue()
+END
+
+IF
+Global("SanVisitedWD","GLOBAL",1)
+Global("WD1Heal","CVDRE2",0)
+THEN
+RESPONSE #100
+ActionOverride(Player1,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player2,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player3,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player4,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player5,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player6,ForceSpell(Myself,CLERIC_HEAL))
+SetGlobal("WD1Heal","CVDRE2",1)
+END
+
+IF
+Global("SanAcadMission","GLOBAL",3)
+!InMyArea("Elminsa")
+Global("ElmexistsAca","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("ElmexistsAca","CVDRE2",1)
+CreateCreature("elminsa",[832.798],13)
+END
+
+IF
+Global("SanMoniAka","GLOBAL",2)
+Dead("bw05moni")
+Global("TergiusExists","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("TergiusExists","CVDRE2",1)
+CreateCreature("bw05terg",[656.786],3)
+CreateCreature("elminsa",[834.775],3)
+END
+
+IF
+Global("Formedcloth","GLOBAL",3)
+GlobalGT("SanVisitedWD","GLOBAL",1)
+!InMyArea("Elminsa")
+Global("Elmexists","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("Elmexists","CVDRE2",1)
+CreateCreature("elminsa",[656.786],0)
+END
+
+IF
+Global("HennHeal","CVDRE2",0)
+GlobalGT("OrcPrison","GLOBAL",15)
+OR(2)
+Global("Formedcloth","GLOBAL",3)
+GlobalGT("SanImoRetWD","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("HennHeal","CVDRE2",1)
+CreateCreature("cvhenni",[686.746],0)
+END
+
+IF
+Global("SanImoRetWD","GLOBAL",7)
+Global("HennHeal","CVDRE2",1)
+THEN
+RESPONSE #100
+SetGlobal("HennHeal","CVDRE2",2)
+ActionOverride("Henning2",EscapeAreaMove("CVEBS1",324,315,5))
+END
+
+

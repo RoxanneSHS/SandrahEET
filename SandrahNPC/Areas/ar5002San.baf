@@ -1,0 +1,10 @@
+IF
+InParty("CVSandr")
+OR(2)
+Global("Melissanjob","GLOBAL",2)
+Dead("Gromnir")
+Global("SanMystApToB","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMystApToB","GLOBAL",1)
+END

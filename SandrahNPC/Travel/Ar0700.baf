@@ -1,0 +1,35 @@
+IF
+Global("CVAR0700","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0700","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("waukleofree","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateVisualEffectObject("SPDIMNDR","Pellig")
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("waukleo")
+END
+
+IF
+Global("waukleofree","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("waukleofree","GLOBAL",4)
+ActionOverride("waukleo",EscapeArea())
+END
+
+IF
+Global("TellArenn","GLOBAL",1)
+InMyArea("Tellare4")
+Global("Stopcrier","ar0700",0)
+THEN
+RESPONSE #100
+SetGlobal("Stopcrier","ar0700",1)
+ActionOverride("Tellare4",SetGlobal("Tellofthear","LOCALS",2))
+END

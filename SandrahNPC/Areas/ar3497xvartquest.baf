@@ -1,0 +1,27 @@
+IF
+GlobalLT("SanXvarVil","GLOBAL",5)
+Global("SanSecret","BG4701",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSecret","BG4701",1)
+TriggerActivation("SanDruid",FALSE)
+END
+
+IF
+Global("SanXvarVil","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanXvarVil","GLOBAL",2)
+END
+
+IF
+Global("SanXvarVil","GLOBAL",5)
+InParty("CVSandr")
+Global("SanSecret","BG4701",1)
+THEN
+RESPONSE #100
+SetGlobal("SanXvarVil","GLOBAL",6)
+SetGlobal("SanSecret","BG4701",2)
+TriggerActivation("SanDruid",TRUE)
+END

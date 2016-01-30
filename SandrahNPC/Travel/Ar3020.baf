@@ -1,0 +1,43 @@
+IF
+Global("CVAR3020","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR3020","GLOBAL",1)
+Continue()
+END
+
+IF
+  Global("OdrenRitualDone","GLOBAL",1)
+  Global("DemoGorgonIsDead","GLOBAL",0)
+  Global("zGorDemoJob","GLOBAL",0)
+  Global("RZNotAllowTeleport","GLOBAL",0)
+THEN
+     RESPONSE #100
+              SetGlobal("RZNotAllowTeleport","GLOBAL",1)
+              Continue()
+END
+
+IF
+   Global("DemoGorgonIsDead","GLOBAL",1)
+   Global("RZNotAllowTeleport","GLOBAL",1)
+THEN
+     RESPONSE #100
+              SetGlobal("RZNotAllowTeleport","GLOBAL",0)
+              Continue()
+END
+
+IF
+   Global("zGorDemoJob","GLOBAL",1)
+   Global("RZNotAllowTeleport","GLOBAL",1)
+THEN
+     RESPONSE #100
+              SetGlobal("RZNotAllowTeleport","GLOBAL",0)
+              Continue()
+END
+
+
+
+
+
+
+

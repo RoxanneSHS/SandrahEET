@@ -1,0 +1,7 @@
+IF
+Global("CVAR0313","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0313","GLOBAL",1)
+Continue()
+END

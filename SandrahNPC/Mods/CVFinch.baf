@@ -1,0 +1,56 @@
+//CVFinch BAF
+
+IF
+AreaCheck("BG2600")
+OR(2)
+GlobalGT("Chapter","GLOBAL",0)
+NumTimesTalkedToGT(0) 
+THEN
+RESPONSE #100
+MoveBetweenAreas("BG3357",[515.405],0)
+END
+
+IF
+AreaCheck("BG3357")
+Dead("Karlat")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+Global("SURedSheafMeet","GLOBAL",1)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+AreaCheck("BG3357")
+!Dead("Karlat")
+Allegiance(Myself,NEUTRAL)
+Allegiance("Karlat",ENEMY)
+Global("SURedSheafMeet","GLOBAL",0)
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+SetGlobal("SURedSheafMeet","GLOBAL",1)
+Attack("Karlat")
+END
+
+IF
+AreaCheck("BG3357")
+!Dead("Karlat")
+Allegiance(Myself,NEUTRAL)
+HPPercentLT(Player1,50)
+THEN
+RESPONSE #100
+ForceSpell(Player1,CLERIC_CURE_LIGHT_WOUNDS)
+END
+
+IF
+AreaCheck("BG3357")
+!Dead("Karlat")
+Allegiance(Myself,NEUTRAL)
+Global("SUFinchKarl","GLOBAL",1)
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackReevaluate("Karlat",30)
+END

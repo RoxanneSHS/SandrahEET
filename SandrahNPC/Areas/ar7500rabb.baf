@@ -1,0 +1,35 @@
+IF
+Global("SanRabb","BG0400",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG0400",1)
+CreateCreature("rabbit01",[1765.3535],8)
+CreateCreature("rabbit",[1725.3505],8)
+END
+
+IF
+Global("ZombiesDead","GLOBAL",21)
+Global("NTotSCSpawn","BG0400",0)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreature("NTDXTER",[1273.3414],7)
+CreateCreature("NTDXTER",[1264.3256],4)
+CreateCreature("NTDXTER",[1707.3056],5)
+CreateCreature("NTDXTER",[1555.2830],9)
+CreateCreature("NTDXTER",[1202.3062],0)
+CreateCreature("NTDXTER",[1614.3263],3)
+SetGlobal("NTotSCSpawn","BG0400",1)
+END
+
+IF
+Global("HelpWenric","GLOBAL",1)
+InParty("CVSandr")
+Global("Zlord","BG0400",0)
+THEN
+RESPONSE #100
+CreateCreature("CVZLord",[1955.121],7)
+SetGlobal("Zlord","BG0400",1)
+END
+
+

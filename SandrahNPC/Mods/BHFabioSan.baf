@@ -1,0 +1,96 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanFabioBH","GLOBAL",0)
+CombatCounter(0)
+!AreaCheck("BH0500")
+!AreaCheck("BH0107")
+!AreaCheck("BG2626")
+THEN
+RESPONSE #100
+SetGlobal("SanFabioBH","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanFabioBH","GLOBAL",2)
+AreaType(FOREST)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanFabioBH","GLOBAL",3)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanFabioBH","GLOBAL",4)
+AreaType(OUTDOOR)
+PartyRested()
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanFabioBH","GLOBAL",5)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanFabioBH","GLOBAL",7)
+!AreaCheck("bh2020")
+PartyRested()
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanFabioBH","GLOBAL",8)
+END
+
+IF
+Global("BHFabioAndrella","GLOBAL",1)
+InParty(Myself)
+InParty("CVSandr")
+GlobalGT("SanFabioBH","GLOBAL",5)
+!See("BHandre")
+Global("SanFabioAndrella","LOCALS",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanFabioAndrella","LOCALS",1)
+END
+
+IF
+See("CVSandr")
+!See([ENEMY])
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(6)
+Global("SanFabioBH","GLOBAL",1)
+Global("SanFabioBH","GLOBAL",3)
+Global("SanFabioBH","GLOBAL",5)
+Global("SanFabioBH","GLOBAL",8)
+Global("SanFabioAndrella","LOCALS",1)
+Global("SanFabioBH","GLOBAL",10)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialog("BFabio",[PC])
+END
+
+IF
+Global("SanFabioBH","GLOBAL",6)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("CVSanBS","CVSandr")
+SetGlobal("SanFabioBH","GLOBAL",7)
+END
+
+IF
+GlobalGT("BHAllDone","GLOBAL",0)
+InParty(Myself)
+THEN
+RESPONSE #100
+LeaveParty()
+EscapeArea()
+END
+

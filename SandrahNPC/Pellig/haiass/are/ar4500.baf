@@ -1,0 +1,26 @@
+IF
+Global("HaiassSummoned","GLOBAL",1)
+Global("HaiassSpawnPlane","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateVisualEffect("SPPORTAL",[1999.1218])
+Wait(2)
+CreateCreature("haiass5",[1999.1218],0)
+SetGlobal("HaiassSpawnPlane","GLOBAL",1)
+SetGlobal("HaiassFueraCandelero","GLOBAL",1)
+SetGlobal("HaiassSoa","GLOBAL",2)
+SetGlobal("HaiassLevel","GLOBAL",5)
+END
+
+IF
+!Global("HaiassSoA","GLOBAL",2)
+InMyArea("Haiass")
+THEN
+RESPONSE #100
+SetGlobal("HaiassSpawnPlane","GLOBAL",1)
+SetGlobal("HaiassFueraCandelero","GLOBAL",1)
+SetGlobal("HaiassSoa","GLOBAL",2)
+SetGlobal("HaiassLevel","GLOBAL",5)
+SetGlobal("HaiassJumpOn","GLOBAL",1)
+SetGlobal("HaiassSeUne","GLOBAL",1)  
+END

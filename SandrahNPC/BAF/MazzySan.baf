@@ -1,0 +1,43 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanPalad1","LOCALS",3)
+OR(6)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanPalad1","LOCALS",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanPalad1","LOCALS",3)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("SandrahTalkMazzyTimer","LOCALS",2750)
+Interact(Player1)
+END
+
+IF
+RealGlobalTimerExpired("SandrahTalkMazzyTimer","LOCALS")
+InParty(Myself)
+InParty("CVSandr")
+See("CVSandr")
+!Dead("CVSandr")
+CombatCounter(0)
+Global("SanPalad1","LOCALS",4)
+THEN
+RESPONSE #100
+SetGlobal("SanPalad1","LOCALS",5)
+RealSetGlobalTimer("SandrahTalkMazzyTimer","LOCALS",3300)
+Interact(Player1)
+END

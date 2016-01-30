@@ -1,0 +1,34 @@
+IF
+Global("Jenseen","LOCALS",2)
+RealGlobalTimerExpired("Jengithfight","LOCALS")
+LevelLT(Player1,14)
+THEN
+RESPONSE #100
+SetGlobal("Jenseen","LOCALS",3)
+DestroyItem("ImoSlHP1")
+Kill(Player1)
+Continue()
+END
+
+IF
+Global("Jenseen","LOCALS",2)
+RealGlobalTimerExpired("Jengithfight","LOCALS")
+LevelGT(Player1,13)
+THEN
+RESPONSE #100
+SetGlobal("Jenseen","LOCALS",3)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+Continue()
+END
+
+IF
+Global("Jenseen","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("Jenseen","LOCALS",2)
+CreateItem("ImoSlHP1",0,0,0)
+FillSlot(SLOT_AMULET)
+ReallyForceSpell(Myself,SLAYER_IMMUNE_TO_DAMAGE)
+RealSetGlobalTimer("Jengithfight","LOCALS",48)
+END
+

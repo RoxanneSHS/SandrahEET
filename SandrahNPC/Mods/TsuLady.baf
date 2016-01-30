@@ -1,0 +1,10 @@
+IF
+See("CVSandr")
+See("Tsujath")
+Global("SanFlirtTalk","LOCALS",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanFlirtTalk","LOCALS",1)
+Dialogue(Player1)
+END

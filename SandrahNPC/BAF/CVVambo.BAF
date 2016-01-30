@@ -1,0 +1,1511 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+		ReallyForceSpellDead(Myself,DACE_MIST_FORM_CHANGE)
+END
+
+IF
+	OR(10)
+		See(Nearest([GOODCUTOFF]))
+		See(SecondNearest([GOODCUTOFF]))
+		See(ThirdNearest([GOODCUTOFF]))
+		See(FourthNearest([GOODCUTOFF]))
+		See(FifthNearest([GOODCUTOFF]))
+		See(SixthNearest([GOODCUTOFF]))
+		See(SeventhNearest([GOODCUTOFF]))
+		See(EighthNearest([GOODCUTOFF]))
+		See(NinthNearest([GOODCUTOFF]))
+		See(TenthNearest([GOODCUTOFF]))
+	Allegiance(Myself,ENEMY)
+	Global("Seen","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("IL","LOCALS",SIX_MINUTES)
+		SetGlobalTimer("IS","LOCALS",TWO_ROUNDS)
+		SetGlobal("Seen","LOCALS",1)
+		Continue()
+END
+
+IF
+	OR(11)
+		See(TenthNearestEnemyOf(Myself))
+		See(NinthNearestEnemyOf(Myself))
+		See(EighthNearestEnemyOf(Myself))
+		See(SeventhNearestEnemyOf(Myself))
+		See(SixthNearestEnemyOf(Myself))
+		See(FifthNearestEnemyOf(Myself))
+		See(FourthNearestEnemyOf(Myself))
+		See(ThirdNearestEnemyOf(Myself))
+		See(SecondNearestEnemyOf(Myself))
+		See(NearestEnemyOf(Myself))
+		See(LastAttackerOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(TenthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(TenthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",TenthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(TenthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(TenthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(TenthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(TenthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(TenthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(TenthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",TenthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",TenthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",TenthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",TenthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",TenthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",TenthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",TenthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",TenthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",TenthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",TenthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(TenthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(TenthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(NinthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(NinthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",NinthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(NinthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(NinthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(NinthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(NinthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(NinthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(NinthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",NinthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",NinthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",NinthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",NinthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",NinthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",NinthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",NinthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",NinthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",NinthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",NinthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(NinthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(NinthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(NinthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(EighthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",EighthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(EighthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(EighthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(EighthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(EighthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(EighthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",EighthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",EighthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",EighthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",EighthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",EighthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",EighthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",EighthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",EighthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",EighthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",EighthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(EighthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(EighthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(EighthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(SeventhNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",SeventhNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(SeventhNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(SeventhNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(SeventhNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(SeventhNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",SeventhNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",SeventhNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",SeventhNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",SeventhNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",SeventhNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",SeventhNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",SeventhNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",SeventhNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",SeventhNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",SeventhNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(SeventhNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SeventhNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(SeventhNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(SixthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",SixthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SixthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(SixthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(SixthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(SixthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(SixthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",SixthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",SixthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",SixthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",SixthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",SixthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",SixthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",SixthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",SixthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",SixthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",SixthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(SixthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SixthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(FifthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",FifthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(FifthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(FifthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(FifthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(FifthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(FifthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",FifthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",FifthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",FifthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",FifthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",FifthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",FifthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",FifthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",FifthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",FifthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",FifthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(FifthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(FifthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(FourthNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",FourthNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(FourthNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(FourthNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(FourthNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(FourthNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(FourthNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",FourthNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",FourthNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",FourthNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",FourthNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",FourthNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",FourthNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",FourthNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",FourthNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",FourthNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",FourthNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(FourthNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(FourthNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",ThirdNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(ThirdNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(ThirdNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(ThirdNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(ThirdNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",ThirdNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",ThirdNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",ThirdNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",ThirdNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",ThirdNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",ThirdNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",ThirdNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",ThirdNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",ThirdNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",ThirdNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(ThirdNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(ThirdNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",SecondNearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(SecondNearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(SecondNearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(SecondNearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(SecondNearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(SecondNearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",SecondNearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",SecondNearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",SecondNearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",SecondNearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",SecondNearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",SecondNearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",SecondNearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",SecondNearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",SecondNearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",SecondNearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(SecondNearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SecondNearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(NearestEnemyOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(NearestEnemyOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",NearestEnemyOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(NearestEnemyOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(NearestEnemyOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(NearestEnemyOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(NearestEnemyOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(NearestEnemyOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(NearestEnemyOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",NearestEnemyOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",NearestEnemyOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",NearestEnemyOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",NearestEnemyOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",NearestEnemyOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",NearestEnemyOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",NearestEnemyOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",NearestEnemyOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",NearestEnemyOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",NearestEnemyOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(NearestEnemyOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(NearestEnemyOf(Myself),35,RESISTMAGIC)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	!StateCheck(LastAttackerOf(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(LastAttackerOf(Myself),0,SANCTUARY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",LastAttackerOf(Myself)) // Cloak of Cheesing
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(LastAttackerOf(Myself),0,MINORGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStatGT(LastAttackerOf(Myself),0,SHIELDGLOBE)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!CheckStat(LastAttackerOf(Myself),1,SCRIPTINGSTATE3)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!StateCheck(LastAttackerOf(Myself),STATE_BERSERK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Class(LastAttackerOf(Myself),MONK)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!Kit(LastAttackerOf(Myself),INQUISITOR)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("HELM06",LastAttackerOf(Myself)) // Helm of Charm Protection
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("NPCHAN",LastAttackerOf(Myself)) // Corthala Family Armor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquiped("SHLD25",LastAttackerOf(Myself)) // Shield of Harmony +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("REAVER",LastAttackerOf(Myself)) // Unholy Reaver Reaver +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SPER07",LastAttackerOf(Myself)) // Spear of the Unicorn +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("STAF11",LastAttackerOf(Myself)) // Staff of the Magi +5
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H35",LastAttackerOf(Myself)) // Adjatha The Drinker +2
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW1H54",LastAttackerOf(Myself)) // The Equalizer +4
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("SW2H14",LastAttackerOf(Myself)) // Lilarcor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		!HasItemEquipedReal("MISCBC",LastAttackerOf(Myself)) // Blackrazor +3
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatGT(LastAttackerOf(Myself),2,SAVEVSSPELL)
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(LastAttackerOf(Myself),35,RESISTMAGIC)
+	See(LastAttackerOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("Cast","LOCALS")
+	!GlobalTimerNotExpired("A2","LOCALS")
+	See(LastSeenBy(Myself))
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	Allegiance(Myself,ENEMY)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("clck26",LastSeenBy(Myself)) // Cloak of Cheesing
+	!StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
+	!CheckStatGT(LastSeenBy(Myself),0,SANCTUARY)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SetGlobalTimer("A2","LOCALS",FOUR_ROUNDS)
+		ReallyForceSpell(LastSeenBy(Myself),VAMPIRE_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SetGlobalTimer("A2","LOCALS",28)
+		ReallyForceSpell(LastSeenBy(Myself),VAMPIRE_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SetGlobalTimer("A2","LOCALS",32)
+		ReallyForceSpell(LastSeenBy(Myself),VAMPIRE_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("A2","LOCALS",ONE_ROUND)
+END
+
+IF
+	!Range([PC],10)
+	Global("deadJoye","AR1513",2)
+THEN
+	RESPONSE #100
+		OpenDoor("Door08")
+		OpenDoor("Door09")
+		MoveToObject([PC])
+END
+
+IF
+	OR(11)
+		See(TenthNearestEnemyOf(Myself))
+		See(NinthNearestEnemyOf(Myself))
+		See(EighthNearestEnemyOf(Myself))
+		See(SeventhNearestEnemyOf(Myself))
+		See(SixthNearestEnemyOf(Myself))
+		See(FifthNearestEnemyOf(Myself))
+		See(FourthNearestEnemyOf(Myself))
+		See(ThirdNearestEnemyOf(Myself))
+		See(SecondNearestEnemyOf(Myself))
+		See(NearestEnemyOf(Myself))
+		See(LastAttackerOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(TenthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(TenthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(NinthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(NinthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(NinthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(EighthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(EighthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(EighthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(SeventhNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SeventhNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SixthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(SixthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(FifthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(FifthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(FourthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(FourthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SecondNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(NearestEnemyOf(Myself),99,RESISTCRUSHING)
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(TenthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(TenthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(TenthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",TenthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",TenthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",TenthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",TenthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",TenthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",TenthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",TenthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(TenthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(TenthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(NinthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(NinthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(NinthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",NinthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",NinthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",NinthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",NinthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",NinthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",NinthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",NinthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(NinthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(NinthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(EighthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(EighthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(EighthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",EighthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",EighthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",EighthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",EighthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",EighthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",EighthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",EighthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(EighthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(EighthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SeventhNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(SeventhNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SeventhNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",SeventhNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",SeventhNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",SeventhNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",SeventhNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",SeventhNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",SeventhNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",SeventhNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(SeventhNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SeventhNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SixthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(SixthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SixthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",SixthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",SixthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",SixthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",SixthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",SixthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",SixthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",SixthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(SixthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SixthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(FifthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(FifthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(FifthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",FifthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",FifthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",FifthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",FifthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",FifthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",FifthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",FifthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(FifthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(FifthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(FourthNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(FourthNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(FourthNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",FourthNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",FourthNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",FourthNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",FourthNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",FourthNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",FourthNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",FourthNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(FourthNearestEnemyOf(Myself),0,SANCTUARY)
+	See(FourthNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(ThirdNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(ThirdNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(ThirdNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",ThirdNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",ThirdNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",ThirdNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",ThirdNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",ThirdNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",ThirdNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",ThirdNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(ThirdNearestEnemyOf(Myself),0,SANCTUARY)
+	See(ThirdNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(SecondNearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(SecondNearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(SecondNearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",SecondNearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",SecondNearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",SecondNearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",SecondNearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",SecondNearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",SecondNearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",SecondNearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(SecondNearestEnemyOf(Myself),0,SANCTUARY)
+	See(SecondNearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	OR(2)
+		GlobalTimerNotExpired("IL","LOCALS")
+		CheckStatLT(NearestEnemyOf(Myself),-5,ARMORCLASS)
+	!StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(NearestEnemyOf(Myself),99,RESISTCRUSHING)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquiped("AMUL21",NearestEnemyOf(Myself)) // Amulet of Power
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN12",NearestEnemyOf(Myself)) // Mace of Disruption +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("BLUN25",NearestEnemyOf(Myself)) // Mace of Disruption +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM10",NearestEnemyOf(Myself)) // Runehammer +3
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("HAMM11",NearestEnemyOf(Myself)) // Runehammer +4
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H61",NearestEnemyOf(Myself)) // Angurvadal +5
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!HasItemEquipedReal("SW1H69",NearestEnemyOf(Myself)) // Spectral Brand +4
+	CheckStat(NearestEnemyOf(Myself),0,SANCTUARY)
+	See(NearestEnemyOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	HitBy([ANYONE],CRUSHING)
+	Range(LastAttackerOf(Myself),5)
+	OR(2)
+		GlobalTimerNotExpired("IS","LOCALS")
+		!CheckStatGT(LastAttackerOf(Myself),99,RESISTCRUSHING)
+	See(LastAttackerOf(Myself))
+	False()
+THEN
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	!Allegiance(LastSeenBy(Myself),ENEMY)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackOneRound(LastSeenBy(Myself))
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player1,STATE_INVISIBLE)
+	CheckStat(Player1,0,SANCTUARY)
+	Exists(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player2,STATE_INVISIBLE)
+	CheckStat(Player2,0,SANCTUARY)
+	Exists(Player2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player3,STATE_INVISIBLE)
+	CheckStat(Player3,0,SANCTUARY)
+	Exists(Player3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player4,STATE_INVISIBLE)
+	CheckStat(Player4,0,SANCTUARY)
+	Exists(Player4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player5,STATE_INVISIBLE)
+	CheckStat(Player5,0,SANCTUARY)
+	Exists(Player5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!See(SecondNearestEnemyOf(Myself))
+	!See(ThirdNearestEnemyOf(Myself))
+	!See(FourthNearestEnemyOf(Myself))
+	!See(FifthNearestEnemyOf(Myself))
+	!See(SixthNearestEnemyOf(Myself))
+	!See(SeventhNearestEnemyOf(Myself))
+	!See(EighthNearestEnemyOf(Myself))
+	!See(NinthNearestEnemyOf(Myself))
+	!See(TenthNearestEnemyOf(Myself))
+	!StateCheck(Player6,STATE_INVISIBLE)
+	CheckStat(Player6,0,SANCTUARY)
+	Exists(Player6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+	ActionListEmpty()
+	Global("Seen","LOCALS",1)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+

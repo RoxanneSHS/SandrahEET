@@ -1,0 +1,237 @@
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psRedWizardDefenseToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_SPELL_TURNING)
+		ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+		ApplySpell(Myself,WIZARD_PROTECTION_FROM_ENERGY)
+		ApplySpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+		SetGlobal("psRedWizardDefenseToggle","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+	HaveSpell(WIZARD_SUMMON_HAKEASHAR)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_SUMMON_HAKEASHAR)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STONE_SKIN)
+	Global("skin","LOCALS",0)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONE_SKIN)
+		SetGlobal("skin","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!See(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_TRUE_SIGHT)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	StateCheck(Myself,STATE_SILENCED)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,WIZARD_VOCALIZE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STONE_SKIN)
+	CheckStatLT(Myself,1,STONESKINS)
+	TookDamage()
+	Global("Sequencer","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_STONE_SKIN)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!HasBounceEffects(Myself)
+	Global("Contingency","LOCALS",0)
+THEN
+	RESPONSE #100
+		ApplySpell(Myself,WIZARD_INVISIBLE_STALKER)
+		ApplySpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+		SetGlobal("Contingency","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+	HaveSpell(WIZARD_POWER_WORD_SILENCE)
+	!HasBounceEffects(LastSeenBy(Myself))
+	!HasImmunityEffects(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_POWER_WORD_SILENCE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_METEOR_SWARM)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psSomeSpellToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("psSomeSpellToggle","LOCALS",1)
+		ForceSpellRES("psSomeSpellToggle",NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("psCometToggle","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpellRES("SPWI925",SecondNearestEnemyOf(Myself)) // Komet
+		SetGlobal("psCometToggle","LOCALS",1)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_CONE_OF_COLD)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_CONE_OF_COLD)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_SYMBOL_STUN)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_SYMBOL_STUN)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FLAME_ARROW)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_STONE_SKIN)
+	CheckStatLT(Myself,1,STONESKINS)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_STONE_SKIN)
+		ApplySpell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+	See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+	HaveSpell(WIZARD_MAZE)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_MAZE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Class(LastSeenBy(Myself),LONG_BOW)
+	HaveSpell(WIZARD_DOMINATION)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_DOMINATION)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Class(LastSeenBy(Myself),LONG_BOW)
+	HaveSpell(WIZARD_CHAOS)
+THEN
+	RESPONSE #100
+		Spell(LastSeenBy(Myself),WIZARD_CHAOS)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MAGIC_MISSILE)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_LIGHTNING_BOLT)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_MIRROR_IMAGE)
+THEN
+	RESPONSE #100
+		Spell(Myself,WIZARD_MIRROR_IMAGE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	HaveSpell(WIZARD_FIREBALL)
+THEN
+	RESPONSE #100
+		Spell(NearestEnemyOf(Myself),WIZARD_FIREBALL)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #30
+		ForceSpell(LastSeenBy(Myself),WIZARD_MAGIC_MISSILE)
+	RESPONSE #30
+		ForceSpell(LastSeenBy(Myself),WIZARD_CHROMATIC_ORB)
+	RESPONSE #30
+		ForceSpell(LastSeenBy(Myself),WIZARD_LARLOCH_MINOR_DRAIN)
+	RESPONSE #30
+		ForceSpell(LastSeenBy(Myself),WIZARD_BURNING_HANDS)
+	RESPONSE #30
+		EquipMostDamagingMelee()
+		AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		RandomWalk()
+END
+
+

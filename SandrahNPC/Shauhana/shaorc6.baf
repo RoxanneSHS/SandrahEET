@@ -1,0 +1,17 @@
+IF
+Global("SanHintFactory","GLOBAL",6)
+See(Player1)
+THEN
+RESPONSE #100
+SetGlobal("SanHintFactory","GLOBAL",7)
+Dialogue([PC])
+END
+
+IF
+Global("MooseLoose","CVSH14",0)
+See(Player1)
+THEN
+RESPONSE #100
+SetGlobal("MooseLoose","CVSH14",1)
+Dialogue([PC])
+END

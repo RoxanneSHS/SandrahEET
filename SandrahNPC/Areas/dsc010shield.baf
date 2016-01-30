@@ -1,0 +1,31 @@
+IF
+Global("Copersan","dsc010",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Copersan","dsc010",1)
+CreateCreature("CVZLord",[792.390],5)
+END
+
+IF
+Global("Shieldsan","dsc010",0)
+THEN
+RESPONSE #100
+SetGlobal("Shieldsan","dsc010",1)
+CreateCreature("CVOLDSH",[2505.974],13)
+END
+
+IF
+Global("CuChoinneach","GLOBAL",1)
+Global("PellBubba","GLOBAL",0)
+InMyArea("Bubba")
+InMyArea("Haiass")
+InMyArea("Pellig")
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("Bubba",MoveToObject("Pellig")
+ActionOverride("Haiass",MoveToObject("Pellig")
+SetGlobal("PellBubba","GLOBAL",1)
+ActionOverride("Bubba",StartDialogueNoSet([PC]))
+END

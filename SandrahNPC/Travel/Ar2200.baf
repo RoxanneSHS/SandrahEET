@@ -1,0 +1,50 @@
+IF
+Global("CVAR2200","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2200","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("PhaereJob","GLOBAL",9)
+InMyArea("CVSandr")
+Global("SanSola","GLOBAL",4)
+Delay(8)
+THEN
+RESPONSE #100
+SetGlobal("SanSola","GLOBAL",5)
+END
+
+IF
+Global("SanFLead","ar2200",0)
+Gender(Player1,MALE)
+THEN
+RESPONSE #100
+SetGlobal("SanFLead","ar2200",1)
+END
+
+IF
+GlobalGT("Matronjob","GLOBAL",0)
+Global("MoveSlavesFromCage","AR2200",0)
+InParty("CVSandr")
+Global("SanUsePrevi","AR2200",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanUsePrevi","AR2200",1)
+END
+
+IF
+GlobalGT("DrowSlavesFree","GLOBAL",0)
+Global("MoveSlavesFromCage","AR2200",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("CVCutSLE")
+END
+
+
+

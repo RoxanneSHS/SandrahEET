@@ -1,0 +1,8 @@
+IF
+Global("SanSuBH","GLOBAL",33)
+PartyHasItem("SANNAV1")
+PartyHasItem("SANNAV2")
+THEN
+RESPONSE #100
+SetGlobal("SanSuBH","GLOBAL",34)
+END

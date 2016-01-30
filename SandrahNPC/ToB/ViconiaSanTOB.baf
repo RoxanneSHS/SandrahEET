@@ -1,0 +1,23 @@
+IF
+GlobalGT("TalkedToSolar","GLOBAL",1)
+Global("SanVicPCAss","LOCALS",0)
+!AreaCheck("Ar4500")
+!AreaCheck("ar5203")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanVicPCAss","LOCALS",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanVicPCAss","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END

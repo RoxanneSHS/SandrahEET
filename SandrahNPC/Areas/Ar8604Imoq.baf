@@ -1,0 +1,43 @@
+IF
+OnCreation()
+Global("OrcPrison","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",1)
+TriggerActivation("OrcPrison",FALSE)
+END
+
+IF
+Global("SandrahJoined","GLOBAL",15)
+Global("Sansafe","BG1804",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(2)
+SetGlobal("Sansafe","BG1804",1)
+SaveGame(0)
+Wait(2)
+EndCutSceneMode()
+END
+
+IF
+InMyArea("Imoen2")
+InMyArea("CVSandr")
+GlobalGT("SANIMONASHINT","GLOBAL",17)
+Global("OrcPrison","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",2)
+CreateCreature("CVORW1",[664.366],12)
+CreateCreature("CVORW2",[252.657],12)
+CreateCreature("CVORW4",[727.258],12)
+END
+
+
+IF
+Global("OrcPrison","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",4)
+TriggerActivation("OrcPrison",TRUE)
+END

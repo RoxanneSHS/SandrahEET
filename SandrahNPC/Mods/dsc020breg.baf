@@ -1,0 +1,9 @@
+IF
+Global("ACDSCGUIDE","GLOBAL",1)
+InParty("CVSandr")
+Global("ThankBreg","dsc020",0)
+THEN
+RESPONSE #100
+SetGlobal("ThankBreg","dsc020",1)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END

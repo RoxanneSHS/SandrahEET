@@ -1,0 +1,86 @@
+IF
+See([ENEMY])
+Global("EnergyScythe","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("EnergyScythe","LOCALS",1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+SmallWait(1)
+ReallyForceSpell(LastSeenBy(Myself),4663)
+END
+
+IF
+HPLT(Myself,40)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,4664)
+CreateVisualEffectObject("SPCCMDSI",Myself)
+SmallWait(1)
+DestroySelf()
+END
+
+IF
+SpellCastOnMe([ANYONE],0)
+THEN
+RESPONSE #100
+ReallyForceSpell(LastSeenBy(Myself),WIZARD_CHAIN_LIGHTNING)
+END
+
+IF
+See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+THEN
+RESPONSE #100
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+See(NearestEnemyOfType([0.0.0.BARD_ALL]))
+THEN
+RESPONSE #100
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+RESPONSE #100
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+THEN
+RESPONSE #100
+AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+

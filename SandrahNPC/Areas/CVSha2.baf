@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanSharkta","GLOBAL",15)
+InParty("CVSandr")
+Global("SanOtherWorld","GLOBAL",0)
+Delay(5)
+THEN
+RESPONSE #100
+SetGlobal("SanOtherWorld","GLOBAL",1)
+END

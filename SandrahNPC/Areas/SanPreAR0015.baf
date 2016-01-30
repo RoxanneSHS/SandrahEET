@@ -1,0 +1,39 @@
+IF
+  AreaCheck("bg2600")
+  Global("SanpreExists","bg2600",0)
+THEN
+  RESPONSE #100
+        SetGlobal("SanpreExists","bg2600",1)
+        CreateCreature("Sanpre",[2737.1770],9)
+        Continue()
+END
+
+IF
+  AreaCheck("bg2600")
+  Global("SanpreExists","bg2600",1)
+  GlobalGT("CHAPTER","GLOBAL",1)
+THEN
+RESPONSE #100
+  ActionOverride("Sanpre",DestroySelf())
+  Continue()
+END
+
+//Watcher
+IF
+  AreaCheck("bg2600")
+  Global("WatchMysExists","bg2600",0)
+THEN
+  RESPONSE #100
+        SetGlobal("WatchMysExists","bg2600",1)
+        CreateCreature("WatchMys",[1612.340],3)
+        Continue()
+END
+
+IF
+  AreaCheck("bg2600")
+  Global("WatchMysExists","bg2600",1)
+  GlobalGT("CHAPTER","GLOBAL",1)
+THEN
+RESPONSE #100
+  ActionOverride("WatchMys",DestroySelf())
+END

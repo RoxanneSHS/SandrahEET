@@ -1,0 +1,15 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("SAHPR4")
+CreateVisualEffectObject("SPDIMNDR","CVSandr")
+CreateVisualEffectObject("SPDIMNDR","SAHPR4")
+Wait(3)
+SetGlobal("SanJump","AR2300",1)
+ActionOverride("CVSandr",JumpToPoint([4538.2851]))
+ActionOverride("SAHPR4",JumpToPoint([4557.2770]))
+MoveViewPoint([4557.2770],INSTANT)
+EndCutSceneMode()
+END
+

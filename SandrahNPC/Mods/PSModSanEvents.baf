@@ -1,0 +1,40 @@
+IF
+Global("SanPsMysPlot","GLOBAL",1)
+Global("psTeosRetrieveArtifactQuest","GLOBAL",1)
+!AreaCheck("ar0411")
+THEN
+RESPONSE #100
+SetGlobal("SanPsMysPlot","GLOBAL",2)
+END
+
+IF
+Global("SanPsMysPlot","GLOBAL",3)
+PartyHasItem("psArti")
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("pselmin",Myself,[200.200])
+SetGlobal("SanPsMysPlot","GLOBAL",4)
+END
+
+IF
+Global("psElminsterFoughtMelCounter","GLOBAL",2)
+Global("psMystrasInTrouble","GLOBAL",2)
+Global("SanPsMysPlot","GLOBAL",5)
+AreaCheck("Ar0308")
+See("psMystra")
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanPsMysPlot","GLOBAL",6)
+StartDialogNoSet("CVSandr")
+END
+

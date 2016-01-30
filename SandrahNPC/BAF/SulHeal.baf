@@ -1,0 +1,15 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+MoveViewPoint([2535.1038],INSTANT)
+MoveToObject("Suelf11")
+Wait(4)
+ReallyForceSpell("Suelf11",CLERIC_CURE_SERIOUS_WOUNDS)
+Wait(4)
+ActionOverride("Suelf11",DestroySelf())
+CreateCreature("CVSuelf",[2535.1038],0)
+SetGlobal("SanSuElfHeal","GLOBAL",2)
+EndCutSceneMode()
+END

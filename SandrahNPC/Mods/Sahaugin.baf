@@ -1,0 +1,28 @@
+IF
+InParty("CVSandr")
+Global("SanProph","GLOBAL",0)
+Global("villynatyjob","GLOBAL",1)
+Global("RebelsHostile","AR2300",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanProph","GLOBAL",1)
+END
+
+IF
+Global("SanProph","GLOBAL",1)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Dialog([PC])
+END
+
+IF
+Global("SanProph","GLOBAL",2)
+Global("SanJump","AR2300",1)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Dialog([PC])
+END
+

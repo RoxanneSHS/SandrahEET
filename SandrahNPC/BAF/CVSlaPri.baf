@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVCiv1")
+MoveToObject("CVSlat2")
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVCiv1")
+Wait(4)
+MoveToPoint([564.980])
+ActionOverride("CVSlat2",MoveToObjectFollow("CVCiv1"))
+Wait(4)
+ActionOverride("CVCiv1",EscapeArea())
+ActionOverride("CVSlat2",EscapeArea())
+EndCutSceneMode()
+SetGlobal("SanQuedPris","GLOBAL",5)
+END

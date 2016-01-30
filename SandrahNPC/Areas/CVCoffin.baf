@@ -1,0 +1,57 @@
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("Coffin1","CVELS4",0)
+Global("Bossdead","CVELS4",0)
+THEN
+RESPONSE #100
+DisplayString(Myself,@530)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("Coffin1","CVELS4",0)
+GlobalGT("Bossdead","CVELS4",0)
+THEN
+RESPONSE #100
+DisplayString(Myself,@531)
+SetGlobal("Coffin1","CVELS4",1)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("Coffin1","CVELS4",1)
+PartyHasItem("MISC6W")
+GlobalGT("Bossdead","CVELS4",1)
+THEN
+RESPONSE #100
+DisplayString(Myself,@532)
+SetGlobal("Coffin1","CVELS4",2)
+AddexperienceParty(9000)
+TakePartyItem("misc6w")
+DestroyItem("misc6w")
+PlaySound("VAMPP07")
+GiveItemCreate("CVvacry",[PC],0,0,0)
+CreateVisualEffectObject("SPDEATH3",Myself)
+Wait(1)
+CreateVisualEffectObject("SPFLESH2",Myself)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("Coffin1","CVELS4",2)
+THEN
+RESPONSE #100
+DisplayString(Myself,@533)
+END
+
+IF	
+Clicked([ANYONE])	
+!Range(LastTrigger,12)
+THEN
+RESPONSE #100
+DisplayString(Myself,@534)
+END

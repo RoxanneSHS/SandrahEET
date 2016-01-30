@@ -1,0 +1,3563 @@
+IF
+Global("SanArenIde","RA4300",2)
+InParty("CVSandr")
+InParty("CVShau")
+GlobalLT("Chapter","GLOBAL",19)
+THEN
+RESPONSE #100
+SetGlobal("SanArenIde","RA4300",3)
+ActionOverride("CVShau",Interact("CVShau"))
+END
+
+IF
+Global("AbaSan","GLOBAL",2)
+THEN
+RESPONSE #100
+SmallWait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("ra4300","",[234.671],14))
+ActionOverride(Player2,LeaveAreaLUA("ra4300","",[196.691],14))
+ActionOverride(Player3,LeaveAreaLUA("ra4300","",[154.713],13))
+ActionOverride(Player4,LeaveAreaLUA("ra4300","",[116.733],13))
+ActionOverride(Player5,LeaveAreaLUA("ra4300","",[54.803],13))
+ActionOverride(Player6,LeaveAreaLUA("ra4300","",[42.843],12))
+SmallWait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi11",[308.858],0)
+CreateCreature("AuFi1",[42.875],12)
+CreateCreature("AuFi2",[526.1023],6)
+CreateCreature("AuFi3",[48.919],12)
+CreateCreature("AuFi4",[413.683],1)
+CreateCreature("AuPe1",[593.918],5)
+CreateCreature("AuPe2",[122.1023],10)
+CreateCreature("AuPe3",[470.1049],7)
+CreateCreature("AuPe4",[589.821],4)
+CreateCreature("AuPe5",[457.703],2)
+CreateCreature("AuNo1",[154.1043],10)
+CreateCreature("AuNo2",[198.1059],9)
+CreateCreature("AuNo3",[386.1079],8)
+CreateCreature("AuNo4",[507.733],3)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+ActionOverride(Player1,EquipMostDamagingMelee())
+ActionOverride(Player2,EquipMostDamagingMelee())
+ActionOverride(Player3,EquipMostDamagingMelee())
+ActionOverride(Player4,EquipMostDamagingMelee())
+ActionOverride(Player5,EquipMostDamagingMelee())
+ActionOverride(Player6,EquipMostDamagingMelee())
+ActionOverride("StaffM8",FaceObject("CVSandr"))
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",0)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6488))
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6496))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6490))
+Wait(6)
+SetGlobal("Arshout1","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",1)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6504))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6500))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+Wait(6)
+SetGlobal("Arshout1","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",2)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6499))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6517))
+Wait(1)
+SetGlobal("Arshout1","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",3)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6487))
+ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+Wait(5)
+SetGlobal("Arshout1","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",4)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6493))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6494))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(8)
+SetGlobal("Arshout1","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",5)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6502))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+Wait(3)
+SetGlobal("Arshout1","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Global("Arshout1","RA4300",6)
+!Dead("ArFi11")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6496))
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6490))
+SetGlobal("Arshout1","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",3)
+Dead("ArFi11")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi12",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",0)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6491))
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6497))
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6490))
+Wait(6)
+SetGlobal("Arshout2","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",1)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6498))
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6501))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+Wait(6)
+SetGlobal("Arshout2","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",2)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6504))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+Wait(1)
+SetGlobal("Arshout2","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",3)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+Wait(5)
+SetGlobal("Arshout2","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",4)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6494))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+Wait(8)
+SetGlobal("Arshout2","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",5)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6503))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+Wait(3)
+SetGlobal("Arshout2","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Global("Arshout2","RA4300",6)
+!Dead("ArFi12")
+THEN
+RESPONSE #100
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6497))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6490))
+SetGlobal("Arshout2","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",4)
+Dead("ArFi12")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi13",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",0)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6493))
+ActionOverride("Jan",DisplayStringHead(Myself,@6528))
+Wait(3)
+SetGlobal("Arshout3","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",1)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6498))
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6504))
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6494))
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+Wait(8)
+SetGlobal("Arshout3","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",2)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6495))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(1)
+SetGlobal("Arshout3","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",3)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6491))
+ActionOverride("Viconia",DisplayStringHead(Myself,@6532))
+Wait(4)
+SetGlobal("Arshout3","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",4)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6493))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(5)
+SetGlobal("Arshout3","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",5)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6503))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+Wait(3)
+SetGlobal("Arshout3","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Global("Arshout3","RA4300",6)
+!Dead("ArFi13")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6503))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6497))
+SetGlobal("Arshout3","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",5)
+Dead("ArFi13")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi14",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",0)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6488))
+ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+Wait(3)
+SetGlobal("Arshout4","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",1)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6500))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+Wait(8)
+SetGlobal("Arshout4","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",2)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6489))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+Wait(1)
+SetGlobal("Arshout4","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",3)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6495))
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6504))
+ActionOverride("Viconia",DisplayStringHead(Myself,@6533))
+Wait(4)
+SetGlobal("Arshout4","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",4)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6499))
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6494))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+Wait(5)
+SetGlobal("Arshout4","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",5)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6500))
+ActionOverride("Jan",DisplayStringHead(Myself,@6529))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+Wait(3)
+SetGlobal("Arshout4","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Global("Arshout4","RA4300",6)
+!Dead("ArFi14")
+THEN
+RESPONSE #100
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6531))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6493))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6496))
+SetGlobal("Arshout4","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",6)
+Dead("ArFi14")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@6537))
+Wait(6)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi15",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",0)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+Wait(5)
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6489))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(2)
+SetGlobal("Arshout5","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",1)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6502))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6490))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+Wait(5)
+SetGlobal("Arshout5","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",2)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6495))
+Wait(4)
+SetGlobal("Arshout5","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",3)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6494))
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6498))
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+Wait(3)
+SetGlobal("Arshout5","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",4)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6499))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6487))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6500))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6520))
+Wait(6)
+SetGlobal("Arshout5","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",5)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6493))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(2)
+SetGlobal("Arshout5","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Global("Arshout5","RA4300",6)
+!Dead("ArFi15")
+THEN
+RESPONSE #100
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6496))
+SetGlobal("Arshout5","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",7)
+Dead("ArFi15")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@578))
+Wait(6)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(6)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+SmallWait(1)
+ActionOverride("AuPe1",DestroySelf())
+ActionOverride("AuPe2",DestroySelf())
+ActionOverride("AuPe3",DestroySelf())
+ActionOverride("AuPe4",DestroySelf())
+ActionOverride("AuPe5",DestroySelf())
+ActionOverride("AuNo1",DestroySelf())
+ActionOverride("AuNo2",DestroySelf())
+ActionOverride("AuNo3",DestroySelf())
+ActionOverride("AuNo4",DestroySelf())
+ActionOverride("AuFi1",DestroySelf())
+ActionOverride("AuFi2",DestroySelf())
+ActionOverride("AuFi3",DestroySelf())
+ActionOverride("AuFi4",DestroySelf())
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("Registr","GLOBAL",0)
+SetGlobal("Ardaeffects","GLOBAL",1)
+SetGlobal("ArenaRews","GLOBAL",1)
+SetGlobal("AbaSan","GLOBAL",8)
+END
+
+IF
+Dead("CVSandr")
+OR(5)
+Global("AbaSan","GLOBAL",3)
+Global("AbaSan","GLOBAL",4)
+Global("AbaSan","GLOBAL",5)
+Global("AbaSan","GLOBAL",6)
+Global("AbaSan","GLOBAL",7)
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("AuPe1",DestroySelf())
+ActionOverride("AuPe2",DestroySelf())
+ActionOverride("AuPe3",DestroySelf())
+ActionOverride("AuPe4",DestroySelf())
+ActionOverride("AuPe5",DestroySelf())
+ActionOverride("AuNo1",DestroySelf())
+ActionOverride("AuNo2",DestroySelf())
+ActionOverride("AuNo3",DestroySelf())
+ActionOverride("AuNo4",DestroySelf())
+ActionOverride("AuFi1",DestroySelf())
+ActionOverride("AuFi2",DestroySelf())
+ActionOverride("AuFi3",DestroySelf())
+ActionOverride("AuFi4",DestroySelf())
+ActionOverride("ArFi11",DestroySelf())
+ActionOverride("ArFi12",DestroySelf())
+ActionOverride("ArFi13",DestroySelf())
+ActionOverride("ArFi14",DestroySelf())
+ActionOverride("ArFi15",DestroySelf())
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_RESURRECTION))
+Wait(8)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@6552))
+Wait(5)
+UnhideGUI()
+EndCutSceneMode()
+Wait(15)
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("Registr","GLOBAL",0)
+SetGlobal("Ardaeffects","GLOBAL",1)
+SetGlobal("AbaSan","GLOBAL",8)
+END
+
+IF
+Global("AbaSan","GLOBAL",10)
+THEN
+RESPONSE #100
+SmallWait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("ra4300","",[234.671],14))
+ActionOverride(Player2,LeaveAreaLUA("ra4300","",[196.691],14))
+ActionOverride(Player3,LeaveAreaLUA("ra4300","",[154.713],13))
+ActionOverride(Player4,LeaveAreaLUA("ra4300","",[116.733],13))
+ActionOverride(Player5,LeaveAreaLUA("ra4300","",[54.803],13))
+ActionOverride(Player6,LeaveAreaLUA("ra4300","",[42.843],12))
+SmallWait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi21",[308.858],0)
+CreateCreature("AuFi4",[42.875],12)
+CreateCreature("AuPe1",[526.1023],6)
+CreateCreature("AuFi1",[48.919],12)
+CreateCreature("AuFi3",[413.683],1)
+CreateCreature("AuFi2",[593.918],5)
+CreateCreature("AuNo2",[122.1023],10)
+CreateCreature("AuPe2",[470.1049],7)
+CreateCreature("AuPe5",[589.821],4)
+CreateCreature("AuPe4",[457.703],2)
+CreateCreature("AuNo4",[154.1043],10)
+CreateCreature("AuNo3",[198.1059],9)
+CreateCreature("AuPe3",[386.1079],8)
+CreateCreature("AuNo1",[507.733],3)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+ActionOverride(Player1,EquipMostDamagingMelee())
+ActionOverride(Player2,EquipMostDamagingMelee())
+ActionOverride(Player3,EquipMostDamagingMelee())
+ActionOverride(Player4,EquipMostDamagingMelee())
+ActionOverride(Player5,EquipMostDamagingMelee())
+ActionOverride(Player6,EquipMostDamagingMelee())
+ActionOverride("StaffM8",FaceObject("CVSandr"))
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",11)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",0)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6602))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6616))
+Wait(6)
+SetGlobal("Arshout6","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",1)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6606))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6614))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+Wait(6)
+SetGlobal("Arshout6","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",2)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6607))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+Wait(1)
+SetGlobal("Arshout6","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",3)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(5)
+SetGlobal("Arshout6","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",4)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6618))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6617))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(8)
+SetGlobal("Arshout6","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",5)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6605))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+Wait(3)
+SetGlobal("Arshout6","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Global("Arshout6","RA4300",6)
+!Dead("ArFi21")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6617))
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6615))
+SetGlobal("Arshout6","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",11)
+Dead("ArFi21")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi22",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",12)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",0)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6618))
+Wait(6)
+SetGlobal("Arshout7","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",1)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6608))
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6616))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+Wait(6)
+SetGlobal("Arshout7","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",2)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6607))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+Wait(1)
+SetGlobal("Arshout7","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",3)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6614))
+Wait(5)
+SetGlobal("Arshout7","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",4)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6616))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+Wait(8)
+SetGlobal("Arshout7","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",5)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6603))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+Wait(3)
+SetGlobal("Arshout7","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Global("Arshout7","RA4300",6)
+!Dead("ArFi22")
+THEN
+RESPONSE #100
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6615))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6612))
+SetGlobal("Arshout7","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",12)
+Dead("ArFi22")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi23",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",13)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",0)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6616))
+ActionOverride("Jan",DisplayStringHead(Myself,@6528))
+Wait(3)
+SetGlobal("Arshout8","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",1)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6606))
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6618))
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+Wait(8)
+SetGlobal("Arshout8","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",2)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6617))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(1)
+SetGlobal("Arshout8","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",3)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6604))
+ActionOverride("Viconia",DisplayStringHead(Myself,@6532))
+Wait(4)
+SetGlobal("Arshout8","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",4)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6615))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(5)
+SetGlobal("Arshout8","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",5)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6602))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+Wait(3)
+SetGlobal("Arshout8","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Global("Arshout8","RA4300",6)
+!Dead("ArFi23")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6606))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6617))
+SetGlobal("Arshout8","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",13)
+Dead("ArFi23")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi24",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",14)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",0)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6609))
+ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+Wait(3)
+SetGlobal("Arshout9","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",1)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6619))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+Wait(8)
+SetGlobal("Arshout9","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",2)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6621))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+Wait(1)
+SetGlobal("Arshout9","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",3)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6620))
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6610))
+ActionOverride("Viconia",DisplayStringHead(Myself,@6533))
+Wait(4)
+SetGlobal("Arshout9","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",4)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6611))
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6615))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+Wait(5)
+SetGlobal("Arshout9","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",5)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6621))
+ActionOverride("Jan",DisplayStringHead(Myself,@6529))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+Wait(3)
+SetGlobal("Arshout9","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Global("Arshout9","RA4300",6)
+!Dead("ArFi24")
+THEN
+RESPONSE #100
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6531))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6613))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6614))
+SetGlobal("Arshout9","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",14)
+Dead("ArFi24")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@6601))
+Wait(6)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi25",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",15)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",0)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+Wait(5)
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6620))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(2)
+SetGlobal("Arshout10","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",1)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6610))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6615))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+Wait(5)
+SetGlobal("Arshout10","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",2)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6619))
+Wait(4)
+SetGlobal("Arshout10","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",3)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6621))
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6611))
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+Wait(3)
+SetGlobal("Arshout10","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",4)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6605))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6613))
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6612))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6520))
+Wait(6)
+SetGlobal("Arshout10","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",5)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6621))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(2)
+SetGlobal("Arshout10","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Global("Arshout10","RA4300",6)
+!Dead("ArFi25")
+THEN
+RESPONSE #100
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6612))
+SetGlobal("Arshout10","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",15)
+Dead("ArFi25")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@578))
+Wait(6)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(6)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+SmallWait(1)
+ActionOverride("AuPe1",DestroySelf())
+ActionOverride("AuPe2",DestroySelf())
+ActionOverride("AuPe3",DestroySelf())
+ActionOverride("AuPe4",DestroySelf())
+ActionOverride("AuPe5",DestroySelf())
+ActionOverride("AuNo1",DestroySelf())
+ActionOverride("AuNo2",DestroySelf())
+ActionOverride("AuNo3",DestroySelf())
+ActionOverride("AuNo4",DestroySelf())
+ActionOverride("AuFi1",DestroySelf())
+ActionOverride("AuFi2",DestroySelf())
+ActionOverride("AuFi3",DestroySelf())
+ActionOverride("AuFi4",DestroySelf())
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("Registr","GLOBAL",0)
+SetGlobal("Ardaeffects","GLOBAL",2)
+SetGlobal("ArenaRews","GLOBAL",6)
+SetGlobal("AbaSan","GLOBAL",16)
+END
+
+IF
+Dead("CVSandr")
+OR(5)
+Global("AbaSan","GLOBAL",11)
+Global("AbaSan","GLOBAL",12)
+Global("AbaSan","GLOBAL",13)
+Global("AbaSan","GLOBAL",14)
+Global("AbaSan","GLOBAL",15)
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("AuPe1",DestroySelf())
+ActionOverride("AuPe2",DestroySelf())
+ActionOverride("AuPe3",DestroySelf())
+ActionOverride("AuPe4",DestroySelf())
+ActionOverride("AuPe5",DestroySelf())
+ActionOverride("AuNo1",DestroySelf())
+ActionOverride("AuNo2",DestroySelf())
+ActionOverride("AuNo3",DestroySelf())
+ActionOverride("AuNo4",DestroySelf())
+ActionOverride("AuFi1",DestroySelf())
+ActionOverride("AuFi2",DestroySelf())
+ActionOverride("AuFi3",DestroySelf())
+ActionOverride("AuFi4",DestroySelf())
+ActionOverride("ArFi21",DestroySelf())
+ActionOverride("ArFi22",DestroySelf())
+ActionOverride("ArFi23",DestroySelf())
+ActionOverride("ArFi24",DestroySelf())
+ActionOverride("ArFi25",DestroySelf())
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_RESURRECTION))
+Wait(8)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@6552))
+Wait(5)
+UnhideGUI()
+EndCutSceneMode()
+Wait(15)
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("Registr","GLOBAL",0)
+SetGlobal("Ardaeffects","GLOBAL",2)
+SetGlobal("AbaSan","GLOBAL",16)
+END
+
+IF
+Global("AbaSan","GLOBAL",18)
+THEN
+RESPONSE #100
+SmallWait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("ra4300","",[234.671],14))
+ActionOverride(Player2,LeaveAreaLUA("ra4300","",[196.691],14))
+ActionOverride(Player3,LeaveAreaLUA("ra4300","",[154.713],13))
+ActionOverride(Player4,LeaveAreaLUA("ra4300","",[116.733],13))
+ActionOverride(Player5,LeaveAreaLUA("ra4300","",[54.803],13))
+ActionOverride(Player6,LeaveAreaLUA("ra4300","",[42.843],12))
+SmallWait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi31",[308.858],0)
+CreateCreature("AuFi4",[42.875],12)
+CreateCreature("AuFi3",[526.1023],6)
+CreateCreature("AuFi2",[48.919],12)
+CreateCreature("AuFi1",[413.683],1)
+CreateCreature("AuPe5",[593.918],5)
+CreateCreature("AuPe3",[122.1023],10)
+CreateCreature("AuPe4",[470.1049],7)
+CreateCreature("AuPe2",[589.821],4)
+CreateCreature("AuPe1",[457.703],2)
+CreateCreature("AuNo4",[154.1043],10)
+CreateCreature("AuNo3",[198.1059],9)
+CreateCreature("AuNo2",[386.1079],8)
+CreateCreature("AuNo1",[507.733],3)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+ActionOverride(Player1,EquipMostDamagingMelee())
+ActionOverride(Player2,EquipMostDamagingMelee())
+ActionOverride(Player3,EquipMostDamagingMelee())
+ActionOverride(Player4,EquipMostDamagingMelee())
+ActionOverride(Player5,EquipMostDamagingMelee())
+ActionOverride(Player6,EquipMostDamagingMelee())
+ActionOverride("StaffM8",FaceObject("CVSandr"))
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",19)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",0)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6488))
+Wait(6)
+SetGlobal("Arshout11","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",1)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6504))
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6500))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+Wait(6)
+SetGlobal("Arshout11","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",2)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6499))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+ActionOverride("Valygar",DisplayStringHead(Myself,@6517))
+Wait(1)
+SetGlobal("Arshout11","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",3)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6487))
+ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+Wait(5)
+SetGlobal("Arshout11","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",4)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6493))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6494))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(8)
+SetGlobal("Arshout11","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",5)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6502))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+Wait(3)
+SetGlobal("Arshout11","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Global("Arshout11","RA4300",6)
+!Dead("ArFi31")
+THEN
+RESPONSE #100
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6496))
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6490))
+SetGlobal("Arshout11","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",19)
+Dead("ArFi31")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi32",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",20)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",0)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6491))
+ActionOverride("AuPe3",DisplayStringHead(Myself,@6497))
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6490))
+Wait(6)
+SetGlobal("Arshout12","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",1)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuNo1",DisplayStringHead(Myself,@6498))
+ActionOverride("AuPe5",DisplayStringHead(Myself,@6501))
+ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+Wait(6)
+SetGlobal("Arshout12","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",2)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6504))
+ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+Wait(1)
+SetGlobal("Arshout12","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",3)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+Wait(5)
+SetGlobal("Arshout12","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",4)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6494))
+ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+Wait(8)
+SetGlobal("Arshout12","RA4300",5)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",5)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6503))
+ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+Wait(3)
+SetGlobal("Arshout12","RA4300",6)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Global("Arshout12","RA4300",6)
+!Dead("ArFi32")
+THEN
+RESPONSE #100
+ActionOverride("AuPe2",DisplayStringHead(Myself,@6497))
+ActionOverride("AuFi3",DisplayStringHead(Myself,@6490))
+SetGlobal("Arshout12","RA4300",7)
+END
+
+IF
+Global("AbaSan","GLOBAL",20)
+Dead("ArFi32")
+THEN
+RESPONSE #100
+Wait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+Wait(4)
+ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+Wait(5)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+CreateCreature("ArFi33",[308.858],0)
+MoveViewPoint([332.1004],INSTANT)
+SmallWait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("AbaSan","GLOBAL",21)
+END
+
+IF
+Global("AbaSan","GLOBAL",21)
+Global("Arshout13","RA4300",0)
+!Dead("ArFi33")
+THEN
+RESPONSE #100
+Wait(3)
+ActionOverride("AuFi4",DisplayStringHead(Myself,@6493))
+ActionOverride("Jan",DisplayStringHead(Myself,@6528))
+Wait(3)
+SetGlobal("Arshout13","RA4300",1)
+END
+
+IF
+Global("AbaSan","GLOBAL",21)
+Global("Arshout13","RA4300",1)
+!Dead("ArFi33")
+THEN
+RESPONSE #100
+ActionOverride("AuNo2",DisplayStringHead(Myself,@6498))
+ActionOverride("AuNo4",DisplayStringHead(Myself,@6504))
+ActionOverride("AuPe1",DisplayStringHead(Myself,@6494))
+ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+Wait(8)
+SetGlobal("Arshout13","RA4300",2)
+END
+
+IF
+Global("AbaSan","GLOBAL",21)
+Global("Arshout13","RA4300",2)
+!Dead("ArFi33")
+THEN
+RESPONSE #100
+ActionOverride("AuFi1",DisplayStringHead(Myself,@6495))
+ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+Wait(1)
+SetGlobal("Arshout13","RA4300",3)
+END
+
+IF
+Global("AbaSan","GLOBAL",21)
+Global("Arshout13","RA4300",3)
+!Dead("ArFi33")
+THEN
+RESPONSE #100
+ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+ActionOverride("AuNo3",DisplayStringHead(Myself,@6491))
+ActionOverride("Viconia",DisplayStringHead(Myself,@6532))
+Wait(4)
+SetGlobal("Arshout13","RA4300",4)
+END
+
+IF
+Global("AbaSan","GLOBAL",21)
+Global("Arshout13","RA4300",4)
+!Dead("ArFi33")
+THEN
+RESPONSE #100
+ActionOverride("AuFi2",DisplayStringHead(Myself,@6493))
+ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+Wait(5)
+SetGlobal("Arshout13","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",21)
+	Global("Arshout13","RA4300",5)
+	!Dead("ArFi33")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6503))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout13","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",21)
+	Global("Arshout13","RA4300",6)
+	!Dead("ArFi33")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6503))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6497))
+		SetGlobal("Arshout13","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",21)
+	Dead("ArFi33")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi34",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",22)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",0)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6503))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+		Wait(3)
+		SetGlobal("Arshout14","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",1)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6501))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+		Wait(8)
+		SetGlobal("Arshout14","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",2)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6487))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6492))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+		Wait(1)
+		SetGlobal("Arshout14","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",3)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6495))
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6504))
+		ActionOverride("Viconia",DisplayStringHead(Myself,@6533))
+		Wait(4)
+		SetGlobal("Arshout14","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",4)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6499))
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6494))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+		Wait(5)
+		SetGlobal("Arshout14","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",5)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6497))
+		ActionOverride("Jan",DisplayStringHead(Myself,@6529))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout14","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Global("Arshout14","RA4300",6)
+	!Dead("ArFi34")
+THEN
+	RESPONSE #100
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6531))
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6493)) 
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6501))
+		SetGlobal("Arshout14","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",22)
+	Dead("ArFi34")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@6628))
+		Wait(6)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi35",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",23)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",0)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		Wait(5)
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6489))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(2)
+		SetGlobal("Arshout15","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",1)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6502))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6490))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+		Wait(5)
+		SetGlobal("Arshout15","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",2)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6495))
+		Wait(4)
+		SetGlobal("Arshout15","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",3)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe1",DisplayStringHead(Myself,@6494))
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6498))
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+		Wait(3)
+		SetGlobal("Arshout15","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",4)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6499)) 
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6487)) 
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6500))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6520))
+		Wait(6)
+		SetGlobal("Arshout15","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",5)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6493))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(2)
+		SetGlobal("Arshout15","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Global("Arshout15","RA4300",6)
+	!Dead("ArFi35")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6496))
+		SetGlobal("Arshout15","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",23)
+	Dead("ArFi35")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@578))
+		Wait(6)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(6)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+		SmallWait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",3)
+		SetGlobal("ArenaRews","GLOBAL",11)
+		SetGlobal("AbaSan","GLOBAL",24)
+END
+
+IF
+	Dead("CVSandr")
+	OR(5)
+		Global("AbaSan","GLOBAL",19)
+		Global("AbaSan","GLOBAL",20)
+		Global("AbaSan","GLOBAL",21)
+		Global("AbaSan","GLOBAL",22)
+		Global("AbaSan","GLOBAL",23)
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		ActionOverride("ArFi31",DestroySelf())
+		ActionOverride("ArFi32",DestroySelf())
+		ActionOverride("ArFi33",DestroySelf())
+		ActionOverride("ArFi34",DestroySelf())
+		ActionOverride("ArFi35",DestroySelf())
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_RESURRECTION))
+		Wait(8)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@6552))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		Wait(15)
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",3)
+		SetGlobal("AbaSan","GLOBAL",24)
+END
+
+IF
+	Global("AbaSan","GLOBAL",26)
+THEN
+	RESPONSE #100
+		SmallWait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		FadeToColor([20.0],0)
+		// ActionOverride(Player1,MakeUnselectable(999999))
+		// ActionOverride(Player2,MakeUnselectable(999999))
+		// ActionOverride(Player3,MakeUnselectable(999999))
+		// ActionOverride(Player4,MakeUnselectable(999999))
+		// ActionOverride(Player5,MakeUnselectable(999999))
+		// ActionOverride(Player6,MakeUnselectable(999999))
+		Wait(1)
+		ActionOverride(Player1,LeaveAreaLUA("ra4300","",[234.671],14))
+		ActionOverride(Player2,LeaveAreaLUA("ra4300","",[196.691],14))
+		ActionOverride(Player3,LeaveAreaLUA("ra4300","",[154.713],13))
+		ActionOverride(Player4,LeaveAreaLUA("ra4300","",[116.733],13))
+		ActionOverride(Player5,LeaveAreaLUA("ra4300","",[54.803],13))
+		ActionOverride(Player6,LeaveAreaLUA("ra4300","",[42.843],12))
+		SmallWait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi41",[308.858],0)
+		CreateCreature("AuFi1",[42.875],12)
+		CreateCreature("AuPe5",[526.1023],6)
+		CreateCreature("AuFi3",[48.919],12)
+		CreateCreature("AuFi4",[413.683],1)
+		CreateCreature("AuFi2",[593.918],5)
+		CreateCreature("AuNo3",[122.1023],10)
+		CreateCreature("AuPe2",[470.1049],7)
+		CreateCreature("AuPe1",[589.821],4)
+		CreateCreature("AuNo4",[457.703],2)
+		CreateCreature("AuPe4",[154.1043],10)
+		CreateCreature("AuNo2",[198.1059],9)
+		CreateCreature("AuPe3",[386.1079],8)
+		CreateCreature("AuNo5",[507.733],3)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		ActionOverride(Player1,EquipMostDamagingMelee())
+		ActionOverride(Player2,EquipMostDamagingMelee())
+		ActionOverride(Player3,EquipMostDamagingMelee())
+		ActionOverride(Player4,EquipMostDamagingMelee())
+		ActionOverride(Player5,EquipMostDamagingMelee())
+		ActionOverride(Player6,EquipMostDamagingMelee())
+		ActionOverride("StaffM8",FaceObject("CVSandr"))
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",27)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",0)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6602))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6619))
+		Wait(6)
+		SetGlobal("Arshout16","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",1)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6609))
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6620))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+		Wait(6)
+		SetGlobal("Arshout16","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",2)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6610))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(1)
+		SetGlobal("Arshout16","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",3)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(5)
+		SetGlobal("Arshout16","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",4)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6620))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6621))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(8)
+		SetGlobal("Arshout16","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",5)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6605))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+		Wait(3)
+		SetGlobal("Arshout16","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Global("Arshout16","RA4300",6)
+	!Dead("ArFi41")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6614))
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6615))
+		SetGlobal("Arshout16","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",27)
+	Dead("ArFi41")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi42",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",28)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",0)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+		ActionOverride("AuFi2",DisplayStringHead(Myself,@6618))
+		Wait(6)
+		SetGlobal("Arshout17","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",1)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6608))
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6616))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+		Wait(6)
+		SetGlobal("Arshout17","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",2)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6607))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+		Wait(1)
+		SetGlobal("Arshout17","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",3)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6614))
+		Wait(5)
+		SetGlobal("Arshout17","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",4)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6616))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+		Wait(8)
+		SetGlobal("Arshout17","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",5)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6603))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+		Wait(3)
+		SetGlobal("Arshout17","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Global("Arshout17","RA4300",6)
+	!Dead("ArFi42")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6615))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6612))
+		SetGlobal("Arshout17","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",28)
+	Dead("ArFi42")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi43",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",29)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",0)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6616))
+		ActionOverride("Jan",DisplayStringHead(Myself,@6528))
+		Wait(3)
+		SetGlobal("Arshout18","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",1)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6606))
+		ActionOverride("AuPe1",DisplayStringHead(Myself,@6618))
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+		Wait(8)
+		SetGlobal("Arshout18","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",2)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6617))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(1)
+		SetGlobal("Arshout18","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",3)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6604))
+		ActionOverride("Viconia",DisplayStringHead(Myself,@6532))
+		Wait(4)
+		SetGlobal("Arshout18","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",4)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi2",DisplayStringHead(Myself,@6615))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(5)
+		SetGlobal("Arshout18","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",5)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6602))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout18","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Global("Arshout18","RA4300",6)
+	!Dead("ArFi43")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6606))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6617))
+		SetGlobal("Arshout18","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",29)
+	Dead("ArFi43")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi44",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",30)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",0)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6606))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+		Wait(3)
+		SetGlobal("Arshout19","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",1)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6616))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+		Wait(8)
+		SetGlobal("Arshout19","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",2)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6618))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+		Wait(1)
+		SetGlobal("Arshout19","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",3)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6617))
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6607))
+		ActionOverride("Viconia",DisplayStringHead(Myself,@6533))
+		Wait(4)
+		SetGlobal("Arshout19","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",4)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6608))
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6615))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+		Wait(5)
+		SetGlobal("Arshout19","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",5)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6618))
+		ActionOverride("Jan",DisplayStringHead(Myself,@6529))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout19","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Global("Arshout19","RA4300",6)
+	!Dead("ArFi44")
+THEN
+	RESPONSE #100
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6531))
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6613)) 
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6614))
+		SetGlobal("Arshout19","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",30)
+	Dead("ArFi44")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@6629))
+		Wait(6)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		CreateCreature("ArFi45",[308.858],0)
+		MoveViewPoint([332.1004],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",31)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",0)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		Wait(5)
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6617))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(2)
+		SetGlobal("Arshout20","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",1)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6607))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6615))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+		Wait(5)
+		SetGlobal("Arshout20","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",2)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6616))
+		Wait(4)
+		SetGlobal("Arshout20","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",3)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe1",DisplayStringHead(Myself,@6618))
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6608))
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+		Wait(3)
+		SetGlobal("Arshout20","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",4)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6605)) 
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6613)) 
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6612))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6520))
+		Wait(6)
+		SetGlobal("Arshout20","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",5)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6618))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(2)
+		SetGlobal("Arshout20","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Global("Arshout20","RA4300",6)
+	!Dead("ArFi45")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6615))
+		SetGlobal("Arshout20","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",31)
+	Dead("ArFi45")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@578))
+		Wait(6)
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(6)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+		SmallWait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuNo5",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",4)
+		SetGlobal("ArenaRews","GLOBAL",16)
+		SetGlobal("AbaSan","GLOBAL",32)
+END
+
+IF
+	Dead("CVSandr")
+	OR(5)
+		Global("AbaSan","GLOBAL",27)
+		Global("AbaSan","GLOBAL",28)
+		Global("AbaSan","GLOBAL",29)
+		Global("AbaSan","GLOBAL",30)
+		Global("AbaSan","GLOBAL",31)
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuNo5",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		ActionOverride("ArFi41",DestroySelf())
+		ActionOverride("ArFi42",DestroySelf())
+		ActionOverride("ArFi43",DestroySelf())
+		ActionOverride("ArFi44",DestroySelf())
+		ActionOverride("ArFi45",DestroySelf())
+		ActionOverride("StaffM8",ForceSpell("CVSandr",CLERIC_RESURRECTION))
+		Wait(8)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[332.1004],8))
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM8",DisplayStringHead(Myself,@6552))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		Wait(15)
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[166.631],11))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",4)
+		SetGlobal("AbaSan","GLOBAL",32)
+END
+
+IF
+	Global("AbaSan","GLOBAL",34)
+THEN
+	RESPONSE #100
+		SmallWait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		FadeToColor([20.0],0)
+		// ActionOverride(Player1,MakeUnselectable(999999))
+		// ActionOverride(Player2,MakeUnselectable(999999))
+		// ActionOverride(Player3,MakeUnselectable(999999))
+		// ActionOverride(Player4,MakeUnselectable(999999))
+		// ActionOverride(Player5,MakeUnselectable(999999))
+		// ActionOverride(Player6,MakeUnselectable(999999))
+		Wait(1)
+		ActionOverride(Player1,LeaveAreaLUA("ra4300","",[1537.253],5))
+		ActionOverride(Player2,LeaveAreaLUA("ra4300","",[1386.75],2))
+		ActionOverride(Player3,LeaveAreaLUA("ra4300","",[1432.91],3))
+		ActionOverride(Player4,LeaveAreaLUA("ra4300","",[1532.211],4))
+		ActionOverride(Player5,LeaveAreaLUA("ra4300","",[1534.291],5))
+		ActionOverride(Player6,LeaveAreaLUA("ra4300","",[1438.405],6))
+		SmallWait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		CreateCreature("ArFi51",[1250.234],0)
+		CreateCreature("AuFi1",[1229.455],8)
+		CreateCreature("AuPe5",[1136.63],14)
+		CreateCreature("AuFi3",[1102.81],13)
+		CreateCreature("AuFi4",[1066.101],13)
+		CreateCreature("AuFi2",[985.189],13)
+		CreateCreature("AuNo3",[975.221],12)
+		CreateCreature("AuPe2",[977.251],12)
+		CreateCreature("AuPe1",[985.299],11)
+		CreateCreature("AuNo4",[1063.393],10)
+		CreateCreature("AuPe4",[1111.419],10)
+		CreateCreature("AuNo2",[1173.443],9)
+		CreateCreature("AuPe3",[1323.447],8)
+		CreateCreature("AuNo5",[1375.429],7)
+		MoveViewPoint([1260.372],INSTANT)
+		SmallWait(1)
+		ActionOverride(Player1,FaceObject("CVSandr"))
+		ActionOverride(Player2,FaceObject("CVSandr"))
+		ActionOverride(Player3,FaceObject("CVSandr"))
+		ActionOverride(Player4,FaceObject("CVSandr"))
+		ActionOverride(Player5,FaceObject("CVSandr"))
+		ActionOverride(Player6,FaceObject("CVSandr"))
+		SmallWait(1)
+		ActionOverride(Player1,EquipMostDamagingMelee())
+		ActionOverride(Player2,EquipMostDamagingMelee())
+		ActionOverride(Player3,EquipMostDamagingMelee())
+		ActionOverride(Player4,EquipMostDamagingMelee())
+		ActionOverride(Player5,EquipMostDamagingMelee())
+		ActionOverride(Player6,EquipMostDamagingMelee())
+		ActionOverride("CVSandr",FaceObject("ArFi51"))
+		ActionOverride("StaffM9",FaceObject("CVSandr"))
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6651))
+		Wait(8)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",35)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",0)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6602))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6489))
+		Wait(6)
+		SetGlobal("Arshout21","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",1)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6488))
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6616))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+		Wait(6)
+		SetGlobal("Arshout21","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",2)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6502))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(1)
+		SetGlobal("Arshout21","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",3)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(5)
+		SetGlobal("Arshout21","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",4)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6617))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6500))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(8)
+		SetGlobal("Arshout21","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",5)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6605))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+		Wait(3)
+		SetGlobal("Arshout21","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Global("Arshout21","RA4300",6)
+	!Dead("ArFi51")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6614))
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6615))
+		SetGlobal("Arshout21","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",35)
+	Dead("ArFi51")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		CreateCreature("ArFi52",[1250.234],0)
+		MoveViewPoint([1260.372],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6652))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",36)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",0)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6613))
+		ActionOverride("AuFi2",DisplayStringHead(Myself,@6492))
+		Wait(6)
+		SetGlobal("Arshout22","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",1)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6608))
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6619))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6505))
+		Wait(6)
+		SetGlobal("Arshout22","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",2)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6503))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6513))
+		Wait(1)
+		SetGlobal("Arshout22","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",3)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6614))
+		Wait(5)
+		SetGlobal("Arshout22","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",4)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6501))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+		Wait(8)
+		SetGlobal("Arshout22","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",5)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6603))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6507))
+		Wait(3)
+		SetGlobal("Arshout22","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Global("Arshout22","RA4300",6)
+	!Dead("ArFi52")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6615))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6612))
+		SetGlobal("Arshout22","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",36)
+	Dead("ArFi52")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		CreateCreature("ArFi53",[1250.234],0)
+		MoveViewPoint([1260.372],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6653))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",37)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",0)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6616))
+		ActionOverride("Jan",DisplayStringHead(Myself,@6528))
+		Wait(3)
+		SetGlobal("Arshout23","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",1)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6604))
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6606))
+		ActionOverride("AuPe1",DisplayStringHead(Myself,@6618))
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+		Wait(8)
+		SetGlobal("Arshout23","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",2)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6617))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(1)
+		SetGlobal("Arshout23","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",3)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6604))
+		ActionOverride("Viconia",DisplayStringHead(Myself,@6532))
+		Wait(4)
+		SetGlobal("Arshout23","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",4)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi2",DisplayStringHead(Myself,@6615))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(5)
+		SetGlobal("Arshout23","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",5)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6602))
+		ActionOverride("Tapio",DisplayStringHead(Myself,@6508))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout23","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Global("Arshout23","RA4300",6)
+	!Dead("ArFi53")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6606))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6617))
+		SetGlobal("Arshout23","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",37)
+	Dead("ArFi53")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		CreateCreature("ArFi54",[1250.234],0)
+		MoveViewPoint([1260.372],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6654))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",38)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",0)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		Wait(3)
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6606))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6511))
+		Wait(3)
+		SetGlobal("Arshout24","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",1)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe5",DisplayStringHead(Myself,@6616))
+		ActionOverride("Minsc",DisplayStringHead(Myself,@6506))
+		Wait(8)
+		SetGlobal("Arshout24","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",2)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6612))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6618))
+		ActionOverride("Edwin",DisplayStringHead(Myself,@6514))
+		Wait(1)
+		SetGlobal("Arshout24","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",3)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6617))
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6607))
+		ActionOverride("Viconia",DisplayStringHead(Myself,@6533))
+		Wait(4)
+		SetGlobal("Arshout24","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",4)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo2",DisplayStringHead(Myself,@6608))
+		ActionOverride("AuPe3",DisplayStringHead(Myself,@6615))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6520))
+		Wait(5)
+		SetGlobal("Arshout24","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",5)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6618))
+		ActionOverride("Jan",DisplayStringHead(Myself,@6529))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6518))
+		Wait(3)
+		SetGlobal("Arshout24","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Global("Arshout24","RA4300",6)
+	!Dead("ArFi54")
+THEN
+	RESPONSE #100
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6531))
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6613))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6614))
+		SetGlobal("Arshout24","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",38)
+	Dead("ArFi54")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@577))
+		Wait(4)
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(5)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		CreateCreature("ArFi55",[1250.234],0)
+		MoveViewPoint([1260.372],INSTANT)
+		SmallWait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6655))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("AbaSan","GLOBAL",39)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",0)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		Wait(5)
+		ActionOverride("AuPe4",DisplayStringHead(Myself,@6617))
+		ActionOverride("Yoshimo",DisplayStringHead(Myself,@6516))
+		Wait(2)
+		SetGlobal("Arshout25","RA4300",1)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",1)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo4",DisplayStringHead(Myself,@6607))
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6615))
+		ActionOverride("Brue2",DisplayStringHead(Myself,@6519))
+		Wait(5)
+		SetGlobal("Arshout25","RA4300",2)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",2)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6616))
+		Wait(4)
+		SetGlobal("Arshout25","RA4300",3)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",3)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuPe1",DisplayStringHead(Myself,@6618))
+		ActionOverride("AuNo1",DisplayStringHead(Myself,@6608)) 
+		ActionOverride("Wulfg2",DisplayStringHead(Myself,@6530))
+		Wait(3)
+		SetGlobal("Arshout25","RA4300",4)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",4)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuNo3",DisplayStringHead(Myself,@6605)) 
+		ActionOverride("AuPe2",DisplayStringHead(Myself,@6613))
+		ActionOverride("AuFi1",DisplayStringHead(Myself,@6612))
+		ActionOverride("Valygar",DisplayStringHead(Myself,@6520))
+		Wait(6)
+		SetGlobal("Arshout25","RA4300",5)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",5)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi4",DisplayStringHead(Myself,@6618))
+		ActionOverride(Player1,DisplayStringHead(Myself,@6512))
+		Wait(2)
+		SetGlobal("Arshout25","RA4300",6)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Global("Arshout25","RA4300",6)
+	!Dead("ArFi55")
+THEN
+	RESPONSE #100
+		ActionOverride("AuFi3",DisplayStringHead(Myself,@6615))
+		SetGlobal("Arshout25","RA4300",7)
+END
+
+IF
+	Global("AbaSan","GLOBAL",39)
+	Dead("ArFi55")
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@579))
+		Wait(8)
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_HEAL))
+		Wait(6)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1500.34],0))
+		SmallWait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuNo5",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",5)
+		SetGlobal("ArenaRews","GLOBAL",21)
+		SetGlobal("AbaSan","GLOBAL",40)
+END
+
+IF
+	Dead("CVSandr")
+	OR(5)
+		Global("AbaSan","GLOBAL",35)
+		Global("AbaSan","GLOBAL",36)
+		Global("AbaSan","GLOBAL",37)
+		Global("AbaSan","GLOBAL",38)
+		Global("AbaSan","GLOBAL",39)
+THEN
+	RESPONSE #100
+		Wait(1)
+		ClearAllActions()
+		HideGUI()
+		StartCutSceneMode()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("AuPe1",DestroySelf())
+		ActionOverride("AuPe2",DestroySelf())
+		ActionOverride("AuPe3",DestroySelf())
+		ActionOverride("AuPe4",DestroySelf())
+		ActionOverride("AuPe5",DestroySelf())
+		ActionOverride("AuNo1",DestroySelf())
+		ActionOverride("AuNo2",DestroySelf())
+		ActionOverride("AuNo3",DestroySelf())
+		ActionOverride("AuNo4",DestroySelf())
+		ActionOverride("AuNo5",DestroySelf())
+		ActionOverride("AuFi1",DestroySelf())
+		ActionOverride("AuFi2",DestroySelf())
+		ActionOverride("AuFi3",DestroySelf())
+		ActionOverride("AuFi4",DestroySelf())
+		ActionOverride("ArFi51",DestroySelf())
+		ActionOverride("ArFi52",DestroySelf())
+		ActionOverride("ArFi53",DestroySelf())
+		ActionOverride("ArFi54",DestroySelf())
+		ActionOverride("ArFi55",DestroySelf())
+		ActionOverride("StaffM9",ForceSpell("CVSandr",CLERIC_RESURRECTION))
+		Wait(8)
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1260.372],8))
+		FadeFromColor([20.0],0)
+		Wait(1)
+		ActionOverride("StaffM9",DisplayStringHead(Myself,@6552))
+		Wait(5)
+		UnhideGUI()
+		EndCutSceneMode()
+		Wait(15)
+		HideGUI()
+		StartCutSceneMode()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		// ActionOverride(Player1,MakeUnselectable(1))
+		// ActionOverride(Player2,MakeUnselectable(1))
+		// ActionOverride(Player3,MakeUnselectable(1))
+		// ActionOverride(Player4,MakeUnselectable(1))
+		// ActionOverride(Player5,MakeUnselectable(1))
+		// ActionOverride(Player6,MakeUnselectable(1))
+		ActionOverride("CVSandr",LeaveAreaLUA("ra4300","",[1500.34],0))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("Registr","GLOBAL",0)
+		SetGlobal("Ardaeffects","GLOBAL",5)
+		SetGlobal("AbaSan","GLOBAL",40)
+END

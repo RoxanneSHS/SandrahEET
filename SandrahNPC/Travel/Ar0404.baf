@@ -1,0 +1,17 @@
+IF
+Global("CVAR0404","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0404","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("UcmgSeThief","AR0404",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("UcmgSeThief","AR0404",2)
+CreateCreature("UCMGTH03",[2120.2264],0)
+ActionOverride("cmbl",EscapeArea())
+END

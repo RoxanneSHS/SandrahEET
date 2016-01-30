@@ -1,0 +1,17 @@
+IF
+Global("Sharopens","CVElm7",0)
+THEN
+RESPONSE #100
+SetGlobal("Sharopens","CVElm7",1)
+TriggerActivation("WarRoom",FALSE)
+END
+
+IF
+Global("Sharopens","CVElm7",2)
+THEN
+RESPONSE #100
+SetGlobal("Sharopens","CVElm7",3)
+TriggerActivation("WarRoom",TRUE)
+DisplayStringWait("Sharteel",@776)
+END
+

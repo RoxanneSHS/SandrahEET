@@ -1,0 +1,8 @@
+IF
+InMyArea("CVSandr")
+Dead("pirsea01")
+Global("SanPirThumb","ar0310",0)
+THEN
+RESPONSE #100
+SetGlobal("SanPirThumb","ar0310",1)
+END

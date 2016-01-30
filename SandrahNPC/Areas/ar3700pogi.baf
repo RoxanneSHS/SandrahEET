@@ -1,0 +1,9 @@
+IF
+Global("Sanpogi","BG4800",0)
+Global("SanDoPotn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Sanpogi","BG4800",1)
+CreateCreature("cvpotngi",[214.1588],9)
+Continue()
+END

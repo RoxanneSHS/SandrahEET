@@ -1,0 +1,15 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+CreateVisualEffectObject("SPDIMNDR","CVSandr")
+CreateVisualEffectObject("SPDIMNDR","UDSimyaz")
+Wait(3)
+ActionOverride("CVSandr",JumpToPoint([2672.1404]))
+ActionOverride("UDSimyaz",JumpToPoint([2501.1551]))
+MoveViewPoint([2501.1551],INSTANT)
+SetGlobal("SanProph","GLOBAL",7)
+EndCutSceneMode()
+END
+

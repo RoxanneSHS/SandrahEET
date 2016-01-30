@@ -1,0 +1,8 @@
+IF
+Global("SUFinchIExists","bg2600",0)
+THEN
+RESPONSE #100
+SetGlobal("SUFinchIExists","bg2600",1)
+CreateCreature("CVFinch",[1575.1945],8)
+Continue()
+END

@@ -1,0 +1,20 @@
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+Global("SanKelorHeal","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanKelorHeal","GLOBAL",2)
+CreateCreature("ntkeelor",[1265.1557],7)
+ActionOverride("NTKeelor",Polymorph(FIGHTER_MALE_DWARF))
+Continue()
+END
+
+IF
+Global("SanKelorHeal","GLOBAL",2)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("NTKeelor",MoveToObject("CVSandr"))
+END
+

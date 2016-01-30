@@ -1,0 +1,9 @@
+IF
+InParty("CVSandr")
+InParty("CVJenlig")
+Global("JenHallw","ar7230",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("JenHallw","ar7230",1)
+END

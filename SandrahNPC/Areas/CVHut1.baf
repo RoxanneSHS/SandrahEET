@@ -1,0 +1,41 @@
+IF
+GlobalGT("SANVISITEDWD","GLOBAL",0)
+Global("Resting","CVHUT1",0)
+THEN
+RESPONSE #100
+SetAreaRestFlag(1)
+SetGlobal("Resting","CVHUT1",1)
+Continue()
+END
+
+IF
+Global("Katcut","GLOBAL",3)
+Dead("Kattah")
+THEN
+RESPONSE #60
+GiveItemCreate("HIBABD",Player1,0,0,0)
+SetGlobal("Katcut","GLOBAL",4)
+RESPONSE #40
+GiveItemCreate("HIBABA",Player1,0,0,0)
+SetGlobal("Katcut","GLOBAL",4)
+END
+
+IF
+Global("WDFishermen","GLOBAL",3)
+!PartyHasItem("CVWDFi2")
+Global("Fishsc","CVHUT1",0)
+THEN
+RESPONSE #100
+ActionOverride("Chest1",CreateItem("CVWDFi2",0,0,0))
+SetGlobal("Fishsc","CVHUT1",1)
+END
+
+IF
+GlobalLT("WDFishermen","GLOBAL",5)
+PartyHasItem("CVWDFi2")
+PartyHasItem("CVWDFi1")
+THEN
+RESPONSE #100
+SetGlobal("WDFishermen","GLOBAL",5)
+END
+

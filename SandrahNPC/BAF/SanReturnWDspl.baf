@@ -1,0 +1,47 @@
+IF
+Global("SanSharInt","GLOBAL",29)
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",30)
+AddSpecialAbility("sanWDHo")
+AddSpecialAbility("sanWDRe")
+END
+
+
+IF
+Global("SANWDho","GLOBAL",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+ClearAllActions()
+StorePartyLocations()
+FadeToColor([30.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("CVDRE1","",[1059.468],1))
+ActionOverride(Player2,LeaveAreaLUA("CVDRE1","",[1123.423],1))
+ActionOverride(Player3,LeaveAreaLUA("CVDRE1","",[1198.354],4))
+ActionOverride(Player4,LeaveAreaLUA("CVDRE1","",[845.492],8))
+ActionOverride(Player5,LeaveAreaLUA("CVDRE1","",[885.582],8))
+ActionOverride(Player6,LeaveAreaLUA("CVDRE1","",[1127.556],8))
+ActionOverride("Haiass",LeaveAreaLUA("CVDRE1","",[781.689],8))
+ActionOverride("Pellig",LeaveAreaLUA("CVDRE1","",[1329.877],8))
+FadeFromColor([30.0],0)
+SetGlobal("SANWDho","GLOBAL",0)
+END
+
+IF
+Global("SANWDre","GLOBAL",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+FadeToColor([30.0],0)
+CutSceneId(Player1)
+RestorePartyLocations()
+EndCutSceneMode()
+FadeFromColor([30.0],0)
+SetGlobal("SANWDre","GLOBAL",0)
+END
+
+
+

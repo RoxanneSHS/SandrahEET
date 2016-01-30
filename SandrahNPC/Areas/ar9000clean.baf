@@ -1,0 +1,29 @@
+IF
+GlobalGT("Chapter","GLOBAL",3)
+InMyArea("teven")
+THEN
+RESPONSE #100
+ActionOverride("Teven",DestroySelf())
+END
+
+IF
+Global("TevenSpawn","GLOBAL",1)
+GlobalGT("SanImoNashInt","GLOBAL",8)
+GlobalLT("SANIMONASHINT","GLOBAL",19)
+!Global("SanImoNashInt","GLOBAL",15)
+InParty("Imoen2")
+Global("TevToggl","BG2900",0)
+THEN
+RESPONSE #100
+SetGlobal("TevToggl","BG2900",1)
+ActionOverride("Teven",Deactivate(Myself))
+END
+
+IF
+Global("TevToggl","BG2900",1)
+GlobalGT("SanImoNashInt","GLOBAL",18)
+THEN
+RESPONSE #100
+SetGlobal("TevToggl","BG2900",2)
+ActionOverride("Teven",Activate(Myself))
+END

@@ -1,0 +1,65 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealEde","GLOBAL",5)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealEde","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+OR(3)
+Global("SanNetScrl","LOCALS",1)
+Global("SanNetScrl","LOCALS",3)
+Global("SanHealEde","GLOBAL",5)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+HasItem("myscurs",Myself)
+THEN
+RESPONSE #100
+ChangeAIScript("BGEDWI2",OVERRIDE)
+UseItem("myscurs",Myself)
+END
+
+IF
+Global("FoundScroll","LOCALS",1)
+InParty("CVSandr")
+HasItem("SCRLNet",Myself)
+Global("SanNetScrl","LOCALS",0)
+!AreaCheck("ar0802")
+!Gender(Myself,FEMALE)
+THEN
+RESPONSE #100
+SetGlobal("SanNetScrl","LOCALS",1)
+END
+
+IF
+Global("SanNetScrl","LOCALS",2)
+Global("AfterChange","LOCALS",2)
+InParty("CVSandr")
+Gender(Myself,FEMALE)
+AreaType(CITY)
+!AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("SanNetScrl","LOCALS",3)
+END

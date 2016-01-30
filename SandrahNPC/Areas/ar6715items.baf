@@ -1,0 +1,10 @@
+IF
+Global("ItemLandri","GLOBAL",0)
+OR(3)
+PartyHasItem("Boot06")
+PartyHasItem("Misc60")
+PartyHasItem("Misc61")
+THEN
+RESPONSE #100
+SetGlobal("ItemLandri","GLOBAL",1)
+END

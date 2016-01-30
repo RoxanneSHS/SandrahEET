@@ -1,0 +1,9 @@
+IF
+InParty("Sufinch")
+InParty("CVSandr")
+Global("SuFiPel","GLOBAL",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SuFiPel","GLOBAL",1)
+END

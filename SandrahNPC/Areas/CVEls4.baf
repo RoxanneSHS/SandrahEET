@@ -1,0 +1,57 @@
+IF
+Global("NoReturn","CVELS4",0)
+!PartyHasItem("CVvacry")
+THEN
+RESPONSE #100
+SetGlobal("NoReturn","CVELS4",1)
+TriggerActivation("WDReturn",FALSE)
+END
+
+IF
+Global("NoReturn","CVELS4",1)
+PartyHasItem("CVvacry")
+THEN
+RESPONSE #100
+SetGlobal("NoReturn","CVELS4",2)
+TriggerActivation("WDReturn",TRUE)
+END
+
+IF
+Global("Bossdead","CVELS4",0)
+Dead("CVVambo")
+THEN
+RESPONSE #100
+CreateCreature("CVVambo2",[2700.1750],8)
+ActionOverride("CVVambo",SetNumTimesTalkedTo(1))
+SetGlobal("Bossdead","CVELS4",1)
+END
+
+IF
+Global("Bossdead","CVELS4",1)
+Dead("CVVambo")
+GlobalLT("Coffin1","CVELS4",2)
+THEN
+RESPONSE #100
+SetGlobal("Bossdead","CVELS4",2)
+RealSetGlobalTimer("Bossreturn","CVELS4",120)
+END
+
+IF
+Global("Bossdead","CVELS4",2)
+RealGlobalTimerExpired("Bossreturn","CVELS4")
+GlobalLT("Coffin1","CVELS4",2)
+THEN
+RESPONSE #100
+CreateCreature("CVVambo2",[2700.1750],8)
+ActionOverride("CVVambo",SetNumTimesTalkedTo(1))
+SetGlobal("Bossdead","CVELS4",3)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",19)
+Global("NoReturn","CVELS4",2)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",20)
+END
+

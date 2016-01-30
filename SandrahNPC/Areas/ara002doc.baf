@@ -1,0 +1,9 @@
+IF
+GlobalLT("SanDoctor","GLOBAL",10)
+Global("DocWasHere","bg0002",0)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDoctor","GLOBAL",1)
+ActionOverride("CVSandr",AddSpecialAbility("SpHeal2"))
+SetGlobal("DocWasHere","bg0002",1)
+END

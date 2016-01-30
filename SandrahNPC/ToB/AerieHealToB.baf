@@ -1,0 +1,58 @@
+IF
+Global("SanAerJon","LOCALS",0)
+InParty("CVSandr")
+InParty("lrirenic")
+!AreaCheck("4500")
+THEN
+RESPONSE #100
+SetGlobal("SanAerJon","LOCALS",1)
+RealSetGlobalTimer("SanAerieToBT","LOCALS",1800)
+END
+
+IF
+Global("SanAerJon","LOCALS",1)
+RealGlobalTimerExpired("SanAerieToBT","LOCALS")
+AreaType(DUNGEON)
+InParty("CVSandr")
+InParty("lrirenic")
+!AreaCheck("4500")
+THEN
+RESPONSE #100
+SetGlobal("SanAerJon","LOCALS",2)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+OR(2)
+Global("SanAerJon","LOCALS",2)
+Global("SanAerPre","LOCALS",2)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+GlobalGT("ExpLoveTalk","LOCALS",12)
+InParty("CVSandr")
+Global("SanAerPre","LOCALS",0)
+RealGlobalTimerExpired("SanAerieToBT","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("SanAerPre","LOCALS",1)
+RealSetGlobalTimer("SanAerieToBT","LOCALS",900)
+END
+
+IF
+Global("SanAerPre","LOCALS",1)
+RealGlobalTimerExpired("SanAerieToBT","LOCALS")
+InParty("CVSandr")
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanAerPre","LOCALS",2)
+END

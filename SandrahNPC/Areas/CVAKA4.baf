@@ -1,0 +1,53 @@
+IF
+!Dead("bw05moni")
+Global("LeaveAka","CVAKA4",0)
+THEN
+RESPONSE #100
+SetGlobal("LeaveAka","CVAKA4",1)
+TriggerActivation("HomeWD",FALSE)
+END
+
+IF
+Global("LeaveAka","CVAKA4",1)
+Delay(4)
+THEN
+RESPONSE #100
+SetGlobal("LeaveAka","CVAKA4",2)
+DisplayStringWait("HomeWD",@492)
+END
+
+IF
+Dead("bw05moni")
+Global("LeaveAka","CVAKA4",0)
+THEN
+RESPONSE #100
+SetGlobal("LeaveAka","CVAKA4",3)
+TriggerActivation("HomeWD",TRUE)
+END
+
+IF
+Dead("bw05moni")
+Global("LeaveAka","CVAKA4",2)
+THEN
+RESPONSE #100
+SetGlobal("LeaveAka","CVAKA4",3)
+TriggerActivation("HomeWD",TRUE)
+END
+
+IF
+Global("SanXephRet","GLOBAL",15)
+GlobalLT("LeaveAka","CVAKA4",3)
+THEN
+RESPONSE #100
+SetGlobal("LeaveAka","CVAKA4",3)
+TriggerActivation("HomeWD",TRUE)
+END
+
+IF
+Global("SanXephRet","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("SanXephRet","GLOBAL",12)
+StartCutSceneMode()
+StartCutScene("CVcut211")
+END

@@ -1,0 +1,33 @@
+IF
+InParty("CVSandr")
+OR(2)
+Global("Evilsh","GLOBAL",1)
+Global("Goodsh","GLOBAL",1)
+Dead("oulam")
+Dead("wheber")
+Dead("william")
+Dead("niemain")
+Global("Shandret","BG0704",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Shandret","BG0704",1)
+CreateCreatureObjectDoor("shandalS","CVSandr",0,0,0)
+END
+
+IF
+InParty("CVSandr")
+OR(2)
+Global("Evilsh","GLOBAL",1)
+Global("Goodsh","GLOBAL",1)
+!InMyArea("oulam")
+!InMyArea("wheber")
+!InMyArea("william")
+!InMyArea("niemain")
+Global("Shandret","BG0704",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Shandret","BG0704",1)
+CreateCreatureObjectDoor("shandalS","CVSandr",0,0,0)
+END

@@ -1,0 +1,32 @@
+IF
+Global("SanJaheirBG2","GLOBAL",7)
+Global("LoveTalk","LOCALS",65)
+InParty(Myself)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanJaheirBG2","GLOBAL",8)
+END
+
+IF
+Global("LoveTalk","LOCALS",71)
+Global("SanJaheirBG2","GLOBAL",10)
+RealGlobalTimerExpired("JaheiraRomance","GLOBAL")
+InParty(Myself)
+InParty("CVSandr")
+!AreaType(DUNGEON)
+!See([ENEMY])
+See(Player1)
+See("CVSandr")
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanJaheirBG2","GLOBAL",11)
+Interact(Player1)
+END
+
+
+

@@ -1,0 +1,77 @@
+IF
+Contains("CVShaJwl","Altar")
+PartyHasItem("SHAUMENT")
+OR(2)
+Global("SanSharkta","GLOBAL",9)
+Global("SanSharkta","GLOBAL",30)
+THEN
+RESPONSE #100
+DestroyItem("CVShaJwl")
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+                SmallWait(4)
+                FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player2,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player3,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player4,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player5,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player6,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+		SetGlobal("SanSharkta","GLOBAL",10)
+END
+
+IF
+Contains("CVShaJwl","Altar")
+!PartyHasItem("SHAUMENT")
+OR(2)
+Global("SanSharkta","GLOBAL",9)
+Global("SanSharkta","GLOBAL",30)
+THEN
+RESPONSE #100
+DestroyItem("CVShaJwl")
+DisplayStringWait("Altar",@320)
+Wait(6)
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+                SmallWait(4)
+                FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player2,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player3,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player4,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player5,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player6,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+		GiveItemCreate("CVShaJwl",Player1,0,0,0)
+		SetGlobal("SanSharkta","GLOBAL",30)
+
+END
+
+IF
+Global("SanHintFactory","GLOBAL",12)
+PartyHasItem("Shamyrk")
+THEN
+RESPONSE #100
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+                SmallWait(4)
+                FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player2,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player3,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player4,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player5,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		ActionOverride(Player6,LeaveAreaLUA("CVSHA7","",[836.901],4))
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+		SetGlobal("SanHintFactory","GLOBAL",13)
+END

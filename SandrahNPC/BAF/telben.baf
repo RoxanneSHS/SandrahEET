@@ -1,0 +1,33 @@
+IF
+AreaCheck("BG4000")
+See(Player1)
+Global("Telhelpcry","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Telhelpcry","GLOBAL",1)
+DisplayStringWait(Myself,@198)
+END
+
+IF
+AreaCheck("BG4000")
+HPGT(Myself,20)
+Global("Telhelpcry","GLOBAL",2) 
+Global("GullCave","GLOBAL",0) 
+Global("Telbenlie","GLOBAL",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+SmallWait(4)
+Polymorph(FIGHTER_MALE_HALFLING)
+SmallWait(3)
+EndCutSceneMode()
+SetGlobal("Telbenlie","GLOBAL",1)
+END
+
+IF
+AreaCheck("BG4000")
+Global("Telbenlie","GLOBAL",1)
+THEN
+RESPONSE #100
+StartDialogNoSet("telben")
+END

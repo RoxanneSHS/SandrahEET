@@ -1,0 +1,17 @@
+IF
+!PartyHasItem("ACQLET03")
+HasItem("ACQLET03",Myself)
+OR(6)
+Race(Player1,DWARF)
+Race(Player2,DWARF)
+Race(Player3,DWARF)
+Race(Player4,DWARF)
+Race(Player5,DWARF)
+Race(Player6,DWARF)
+THEN
+RESPONSE #100
+Wait(2)
+ActionOverride("ACQX0005",DisplayStringHead(Myself,@450))
+ActionOverride("ACQX0005",DropItem("ACQLET03",[-1.-1]))
+ActionOverride("ACQX0005",EscapeAreaDestroy(10))
+END

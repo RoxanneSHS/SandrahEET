@@ -1,0 +1,87 @@
+IF
+Global("LK#IylosViekang","GLOBAL",1)
+InParty("Iylos")
+Global("SanIylos","GLOBAL",0)
+!AreaCheck("ar5003")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanIylos","GLOBAL",1)
+END
+
+IF
+GlobalGT("LK#IylosTalks","GLOBAL",7)
+InParty("Iylos")
+GlobalLT("SanIylos","GLOBAL",3)
+RealGlobalTimerExpired("SanIylBT","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("SanIylos","GLOBAL",3)
+END
+
+IF
+InParty("Iylos")
+OR(4)
+Global("SanIylos","GLOBAL",4)
+Global("SanIylos","GLOBAL",6)
+Global("SanIylos","GLOBAL",8)
+Global("SanIylos","GLOBAL",10)
+RealGlobalTimerExpired("SanIylBT","GLOBAL")
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+IncrementGlobal("SanIylos","GLOBAL",1)
+END
+
+IF
+Global("SanBaltMelis","GLOBAL",1)
+GlobalGT("SanIylos","GLOBAL",6)
+InParty("Iylos")
+THEN
+RESPONSE #100
+SetGlobal("SanBaltMelis","GLOBAL",2)
+END
+
+IF
+Global("LK#IylosBalth","GLOBAL",1)
+Global("SanBaltInt","GLOBAL",0)
+!AreaCheck("ar5500")
+InParty("Iylos")
+THEN
+RESPONSE #100
+SetGlobal("SanBaltInt","GLOBAL",1)
+END
+
+IF
+InParty("Iylos")
+OR(10)
+Global("SanIylos","GLOBAL",1)
+Global("SanIylos","GLOBAL",3)
+Global("SanIylos","GLOBAL",5)
+Global("SanIylos","GLOBAL",7)
+Global("SanIylos","GLOBAL",9)
+Global("SanIylos","GLOBAL",11)
+Global("SanIylos","GLOBAL",13)
+Global("SanIylos","GLOBAL",20)
+Global("SanBaltMelis","GLOBAL",2)
+Global("SanBaltInt","GLOBAL",1)
+!See([ENEMY])
+See("Iylos")
+!StateCheck("Iylos",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("SanIylBT","GLOBAL",2000)
+MoveToObject("Iylos")
+Interact("CVSandr")
+END
+
+IF
+Global("SanIylos","GLOBAL",14)
+THEN
+RESPONSE #100
+AddSpecialAbility("CVTiger")
+DisplayStringWait("CVSandr",@559)
+SetGlobal("SanIylos","GLOBAL",15)
+END

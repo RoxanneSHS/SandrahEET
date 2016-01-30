@@ -1,0 +1,32 @@
+IF
+Global("CVAR2500","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2500","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",2500)
+InParty("CVSandr")
+Global("CVDrag","ar2500",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag","ar2500",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag5"))
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag11"))
+END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+OR(2)
+Global("RTLouPlot","GLOBAL",11)
+Global("RTLouPlot","GLOBAL",12)
+Global("NotDown","ar2500",0)
+THEN
+RESPONSE #100
+SetGlobal("NotDown","ar2500",1)
+SetGlobal("RTLouPlot","GLOBAL",13)
+TriggerActivation("Tran2401",FALSE)
+END

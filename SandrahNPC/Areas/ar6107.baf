@@ -1,0 +1,14 @@
+IF
+Global("SanToBFixes","ar6107",0)
+THEN
+RESPONSE #100
+SetGlobal("SanToBFixes","ar6107",1)
+SetGlobal("T#RaiseXzar","GLOBAL",90)
+SetGlobal("LK#Nephele_FinSol","GLOBAL",1)
+SetGlobal("T#RaiseAlianna","GLOBAL",90)
+SetGlobal("T#RaiseTiax","GLOBAL",90)
+SetGlobal("T#RaiseDynaheir","GLOBAL",90)
+SetGlobal("T#RaiseKhalid","GLOBAL",90)
+SetGlobal("T#RaiseGorion","GLOBAL",90)
+SetGlobal("T#RaiseYoshimo","GLOBAL",90)
+END

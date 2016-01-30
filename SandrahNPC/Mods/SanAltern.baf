@@ -1,0 +1,31 @@
+IF
+GlobalGT("SpawnBrus","GLOBAL",1)
+Global("Chapter","GLOBAL",16)
+GlobalGT("BodiAppear","GLOBAL",0)
+Global("SanBrynAltern","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanBrynAltern","LOCALS",1)
+END
+
+IF
+Global("b!alternatives","GLOBAL",4)
+GlobalGT("SanBrynAltern","LOCALS",1)
+GlobalLT("SanBrynAltern","LOCALS",4)
+THEN
+RESPONSE #100
+SetGlobal("SanBrynAltern","LOCALS",4)
+END
+
+IF
+Global("B!Tourist","GLOBAL",1)
+Global("SanBrynAltern2","LOCALS",0)
+Global("B!TouristFirstClass","GLOBAL",0)
+GlobalGT("SanBrynAltern","LOCALS",1)
+GlobalLT("SanBrynAltern","LOCALS",4)
+THEN
+RESPONSE #100
+SetGlobal("SanBrynAltern2","LOCALS",1)
+END
+
+

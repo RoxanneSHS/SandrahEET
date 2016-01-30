@@ -1,0 +1,39 @@
+IF
+InParty("CVSandr")
+See(Player1)
+Global("SharFoundBG2","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SharFoundBG2","LOCALS",1)
+AddexperienceParty(10000)
+DestroyItem("Chain04")
+END
+
+IF
+HasItem("Shar20",Myself)
+Global("Shar20","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Shar20","LOCALS",1)
+DestroyItem("Shar20")
+CreateItem("CVShar20",0,0,0)
+FillSlot(SLOT_ARMOR)
+END
+
+IF
+AreaCheck("ar0400")
+GlobalLT("sharplot","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("sharplot","GLOBAL",2)
+END
+
+IF
+!InParty("CVSandr")
+InParty(Myself)
+ReputationGT(Player1,17)
+THEN
+RESPONSE #100
+SetGlobal("KickedOut","LOCALS",2)
+LeaveParty()
+END

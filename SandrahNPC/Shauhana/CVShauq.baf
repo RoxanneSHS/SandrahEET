@@ -1,0 +1,30 @@
+//CVShauq.baf
+
+IF
+Global("SeeLake","CVSH22",1)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SeeLake","CVSH22",2)
+StartDialogNoSet([PC])
+END
+
+IF
+Global("SanHintFactory","GLOBAL",26)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanHintFactory","GLOBAL",27)
+MoveToObject(Player1)
+ActionOverride("CVMinsc",MoveToObject(Player1))
+ActionOverride("sanboy1",MoveToObject(Player1))
+StartDialogNoSet([PC])
+END

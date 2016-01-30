@@ -1,0 +1,38 @@
+IF
+Global("SanSarev","GLOBAL",11)
+InParty("Sarevok")
+!See([ENEMY])
+See("Sarevok")
+!StateCheck("Sarevok",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanSarev","GLOBAL",12)
+RealSetGlobalTimer("SanSarevBT","GLOBAL",2200)
+Interact("CVSandr")
+END
+
+IF
+AreaCheck("ar4500")
+GlobalGT("SanMystApToB","GLOBAL",3)
+Global("SanDream25","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDream25","LOCALS",1)
+MoveToObject(Player1)
+StartDialogueNoSet("CVSandr")
+END
+
+IF
+InParty("Iylos")
+Global("SanIylos","GLOBAL",12)
+RealGlobalTimerExpired("SanIylBT","GLOBAL")
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("SanIylos","GLOBAL",13)
+RealSetGlobalTimer("SanIylBT","GLOBAL",2000)
+MoveToObject("Iylos")
+Interact("CVSandr")
+END

@@ -1,0 +1,7 @@
+IF
+Global("Itemfflar","GLOBAL",0)
+PartyHasItem("compon03")
+THEN
+RESPONSE #100
+SetGlobal("Itemfflar","GLOBAL",1)
+END

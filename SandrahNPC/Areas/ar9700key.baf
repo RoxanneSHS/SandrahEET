@@ -1,0 +1,15 @@
+IF
+Global("Itemntk4","GLOBAL",0)
+PartyHasItem("ntkeypb4")
+THEN
+RESPONSE #100
+SetGlobal("Itemntk4","GLOBAL",1)
+END
+
+IF
+Global("Itemmirilet","GLOBAL",0)
+PartyHasItem("SCRL3I")
+THEN
+RESPONSE #100
+SetGlobal("Itemmirilet","GLOBAL",1)
+END

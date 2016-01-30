@@ -1,0 +1,26 @@
+IF
+Global("CVAR1201","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1201","GLOBAL",1)
+Continue()
+END
+
+IF
+InMyArea("CVSandr")
+Global("SanFierk","ar1201",0)
+Dead("Firrak02")
+THEN
+RESPONSE #100
+SetGlobal("SanFierk","ar1201",1)
+END
+
+IF
+InMyArea("CVSandr")
+InMyArea("K#Sheena")
+Global("SheenaJoined","GLOBAL",1)
+Global("SanSheena","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSheena","GLOBAL",1)
+END

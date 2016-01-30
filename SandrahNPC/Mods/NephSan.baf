@@ -1,0 +1,55 @@
+IF
+GlobalLT("SanNeph","LOCALS",3)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanNeph","LOCALS",1)
+END
+
+IF
+PartyRested()
+OR(2)
+Global("SanNeph","LOCALS",4)
+Global("SanNeph","LOCALS",6)
+InParty("CVSandr")
+See("CVSandr")
+!See([ENEMY])
+AreaType(OUTDOOR)
+Delay(12)
+THEN
+RESPONSE #100
+IncrementGlobal("SanNeph","LOCALS",1)
+END
+
+IF
+OR(3)
+Global("SanNeph","LOCALS",3)
+Global("SanNeph","LOCALS",5)
+Global("SanNeph","LOCALS",7)
+InParty("CVSandr")
+See("CVSandr")
+!See([ENEMY])
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact([PC])
+END
+
+IF
+Global("SanNeph","LOCALS",8)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("CVDra27"))
+IncrementGlobal("SanNeph","LOCALS",1)
+END

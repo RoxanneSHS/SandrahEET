@@ -1,0 +1,7 @@
+IF
+Global("CVCult_O_D_Items","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("CVCult_O_D_Items","LOCALS",1)
+GiveItemCreate("scrl9z",Myself,1,1,0) 
+END

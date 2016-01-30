@@ -1,0 +1,13 @@
+IF
+InMyArea("CVSandr")
+HasItemEquiped("Erturing",Player1)
+Global("Sanprick","dd9400",0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("Sanprick","dd9400",1)
+ActionOverride("CVSandr",MoveToObject(Player1))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

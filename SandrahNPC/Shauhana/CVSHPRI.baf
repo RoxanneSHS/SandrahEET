@@ -1,0 +1,41 @@
+IF
+NumTimesTalkedTo(0)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SanShauOrcStaff","GLOBAL",5)
+THEN
+RESPONSE #100
+ChangeEnemyAlly(Myself,ENEMY)
+END
+
+IF
+Global("SanShauOrcStaff","GLOBAL",13)
+HasItem("Imoenhp1",Myself)
+THEN
+RESPONSE #100
+DestroyItem("Imoenhp1")
+Continue()
+END
+
+IF
+Global("SanShauOrcStaff","GLOBAL",13)
+THEN
+RESPONSE #100
+ChangeEnemyAlly(Myself,ENEMY)
+Attack("CVShau")
+END
+
+IF
+Global("SanGothSwFound","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("SanGothSwFound","GLOBAL",7)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+

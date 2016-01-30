@@ -1,0 +1,50 @@
+IF
+InParty(Myself)
+RealGlobalTimerExpired("P#DeherTrial","GLOBAL")
+InParty("CVSandr")
+Global("P#DeherianaLives","GLOBAL",2)
+GlobalGT("P#SanSupport","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("P#DeherianaLives","GLOBAL",4)
+StartDialogueNoSet(Player1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("P#DeherianaLives","GLOBAL",2)
+Global("P#SanSupport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("P#SanSupport","GLOBAL",1)
+RealSetGlobalTimer("P#DeherSanTalks","LOCALS",600)
+END
+
+IF
+InParty(Myself)
+RealGlobalTimerExpired("P#DeherSanTalks","LOCALS")
+Global("P#DeherianaLives","GLOBAL",2)
+OR(2)
+Global("P#SanSupport","GLOBAL",1)
+Global("P#SanSupport","GLOBAL",3)
+THEN
+RESPONSE #100
+IncrementGlobal("P#SanSupport","GLOBAL",1)
+END
+
+IF
+OR(2)
+Global("P#SanSupport","GLOBAL",2)
+Global("P#SanSupport","GLOBAL",4)
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+

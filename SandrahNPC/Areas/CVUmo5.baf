@@ -1,0 +1,66 @@
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("Doors","CVUMO5",0)
+THEN
+RESPONSE #100
+TriggerActivation("Shortcut",FALSE)
+SetGlobal("Doors","CVUMO5",1)
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("SandrahJoined","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SandrahJoined","GLOBAL",26)
+ActionOverride("CVSandr",ChangeAIScript("CVSanUM",OVERRIDE))
+ActionOverride("CVSandr",Enemy())
+ActionOverride("CVSandr",LeaveParty())
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("Friendgone","CVUMO5",0)
+THEN
+RESPONSE #100
+ActionOverride("Pellig",DestroySelf())
+SetGlobal("Friendgone","CVUMO5",1)
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("Friendgone","CVUMO5",1)
+THEN
+RESPONSE #100
+ActionOverride("Haiass",DestroySelf())
+SetGlobal("Friendgone","CVUMO5",2)
+END
+
+IF
+Global("SandrahJoined","GLOBAL",26)
+!InParty("CVSandr")
+Global("ElmApp","CVUMO5",0)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("SanElmK",Player1,0,0,0)
+SetGlobal("ElmApp","CVUMO5",1)
+END
+
+IF
+Global("VicVis","CVUMO5",0)
+InParty("Viconia")
+THEN
+RESPONSE #100
+SetGlobal("VicVis","CVUMO5",1)
+ActionOverride("Viconia",SetGlobal("ViccyUmo5","LOCALS",1))
+END
+
+IF
+Global("YasVis","CVUMO5",0)
+InParty("Yasraena")
+THEN
+RESPONSE #100
+SetGlobal("YasVis","CVUMO5",1)
+ActionOverride("Yasraena",SetGlobal("YasUmo5","LOCALS",1))
+END

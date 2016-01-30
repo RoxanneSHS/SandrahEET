@@ -1,0 +1,49 @@
+IF
+OnCreation()
+Global("CVReag","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("CVReag","LOCALS",1)
+MakeGlobal()
+Continue()
+END
+
+IF
+Global("CVReagWITHYOU","GLOBAL",1)
+See([ENEMY])
+THEN
+RESPONSE #100
+RunAwayFrom([ENEMY],75)
+END
+
+IF
+Global("CVReagWITHYOU","GLOBAL",1)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObjectFollow(Player1)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",20)
+See([PC])
+THEN
+RESPONSE #100
+Polymorph(SAILOR_MAN)
+SetGlobal("SanVampWDQuest","GLOBAL",21)
+Wait(2)
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",22)
+Global("CVReagWITHYOU","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVReagWITHYOU","GLOBAL",1)
+ChangeEnemyAlly(Myself,GOODBUTBLUE)
+MoveGlobalObject("CVReag",Player1)
+END
+
+
+

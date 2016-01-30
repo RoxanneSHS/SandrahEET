@@ -1,0 +1,9 @@
+IF
+InParty("CVJenlig")
+Global("Jenshe","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Jenshe","LOCALS",1)
+CreateItem("CVheath",0,0,0)
+Continue()
+END

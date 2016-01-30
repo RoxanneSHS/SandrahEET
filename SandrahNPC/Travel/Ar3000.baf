@@ -1,0 +1,151 @@
+IF
+Global("IllaseraSpawn","GLOBAL",0)
+Global("StartTOB","ar3000",0)
+GlobalGT("TearDoor","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("StartTOB","ar3000",1)
+ClearAllActions()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("AR4000","",[1300.1840],10)
+ActionOverride(Player1,LeaveAreaLUA("AR4000","",[1300.1840],10))
+ActionOverride(Player2,LeaveAreaLUA("AR4000","",[1300.1890],10))
+ActionOverride(Player3,LeaveAreaLUA("AR4000","",[1240.1840],8))
+ActionOverride(Player4,LeaveAreaLUA("AR4000","",[1240.1890],8))
+ActionOverride(Player5,LeaveAreaLUA("AR4000","",[1180.1840],4))
+ActionOverride(Player6,LeaveAreaLUA("AR4000","",[1180.1890],4))
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+END
+
+IF
+Global("CVAR3000","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("CVAR3000","GLOBAL",1)
+SetGlobal("HelmRitualDone","GLOBAL",25)
+Continue()
+END
+
+IF
+Global("HelmRitualDone","GLOBAL",25)
+OR(2)
+Global("DemoGorgonIsDead","GLOBAL",1)
+Global("DestroyHelmScroll","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("HelmRitualDone","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("ItemWKscrl","GLOBAL",0)
+PartyHasItem("plot01a")
+PartyHasItem("plot01b")
+THEN
+RESPONSE #100
+SetGlobal("ItemWKscrl","GLOBAL",1)
+END
+
+IF
+Global("OpenDungeonDoor2","GLOBAL",1)
+OpenState("DOOR03",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+AmbientActivate("DoorMist03",TRUE)
+OpenDoor("DOOR03")
+SetGlobal("OpenDungeonDoor2","GLOBAL",2)
+END
+
+IF
+Global("OpenDungeonDoor2","GLOBAL",2)
+OpenState("DOOR03",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+OpenDoor("DOOR03")
+END
+
+IF
+Global("OpenDungeonDoor1","GLOBAL",1)
+OpenState("DOOR04",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+AmbientActivate("DoorMist04",TRUE)
+OpenDoor("DOOR04")
+SetGlobal("OpenDungeonDoor1","GLOBAL",2)
+END
+
+IF
+Global("OpenDungeonDoor1","GLOBAL",2)
+OpenState("DOOR04",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+OpenDoor("DOOR04")
+END
+
+IF
+Global("OpenDungeonDoor3","GLOBAL",1)
+OpenState("DOOR05",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+AmbientActivate("DoorMist05",TRUE)
+OpenDoor("DOOR05")
+SetGlobal("OpenDungeonDoor3","GLOBAL",2)
+END
+
+IF
+Global("OpenDungeonDoor3","GLOBAL",2)
+OpenState("DOOR05",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+OpenDoor("DOOR05")
+END
+
+IF
+Global("OpenDungeonDoor4","GLOBAL",1)
+OpenState("DOOR01",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+AmbientActivate("DoorMist01",TRUE)
+OpenDoor("DOOR01")
+SetGlobal("OpenDungeonDoor4","GLOBAL",2)
+END
+
+IF
+Global("OpenDungeonDoor4","GLOBAL",2)
+OpenState("DOOR01",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+OpenDoor("DOOR01")
+END
+
+IF
+Global("OpenDungeonDoor5","GLOBAL",1)
+OpenState("DOOR02",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+AmbientActivate("DoorMist02",TRUE)
+OpenDoor("DOOR02")
+SetGlobal("OpenDungeonDoor5","GLOBAL",2)
+END
+
+IF
+Global("OpenDungeonDoor5","GLOBAL",2)
+OpenState("DOOR02",FALSE)
+Global("HelmRitualDone","GLOBAL",25)
+THEN
+RESPONSE #100
+OpenDoor("DOOR02")
+END

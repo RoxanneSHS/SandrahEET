@@ -1,0 +1,48 @@
+IF
+OR(2)
+Global("SanHealNiki","GLOBAL",8)
+Global("CMOversightEndGame","GLOBAL",5)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode() 
+Wait(2)
+CreateCreature("CMOSEC02",[1216.921],4)
+ActionOverride("CMOSEC02",Enemy())
+CreateCreature("CMOSEC02",[650.1029],2)
+CreateCreature("CMOSEC02",[582.978],6)
+ActionOverride("CMOSEC02",Enemy())
+CreateCreature("CMOSEC02",[920.579],2)
+ActionOverride("CMOSEC02",Enemy())
+CreateCreature("CMOSEC03",[795.592],6)
+ActionOverride("CMOSEC03",Enemy())
+CreateCreature("CMOSEC06",[717.788],3)
+ActionOverride("CMOSEC06",Enemy())
+CreateCreature("CMOSEC10",[979.616],4)
+ActionOverride("CMOSEC10",Enemy())
+CreateCreature("CMOSEC11",[635.730],6)
+ActionOverride("CMOSE11",Enemy())
+CreateCreature("CMOSEC04",[675.665],6)
+ActionOverride("CMOSEC04",Enemy())
+CreateCreature("CMOSEC02",[1044.666],8)
+ActionOverride("CMOSEC02",Enemy())
+CreateCreature("CMOSEC02",[525.566],6)
+ActionOverride("CMOSEC02",Enemy())
+CreateCreature("CMOSEC02",[668.465],5)
+ActionOverride("CMOSEC02",Enemy())
+EndCutSceneMode()
+SetGlobal("SanHealNiki","GLOBAL",9)
+SetGlobal("CMOversightEndGame","GLOBAL",6)
+END
+
+IF
+HPLT("CVWetler",60)
+Global("CMAddMoreSkels","cm0754",0)
+THEN
+RESPONSE #100
+CreateCreature("CMSKEL01",[413.559],6) // Skeleton Warrior
+CreateCreature("CMSKEL01",[712.422],6) // Skeleton Warrior
+CreateCreature("SKELICE",[1161.771],2) // Skeleton
+CreateCreature("SKELFIRE",[819.948],6) // Skeleton
+SetGlobal("CMAddMoreSkels","cm0754",1)
+END

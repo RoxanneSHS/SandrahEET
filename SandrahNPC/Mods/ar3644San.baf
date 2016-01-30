@@ -1,0 +1,14 @@
+IF
+InMyArea("CVSandr")
+Global("CbRynnsQuest","GLOBAL",8)
+Global("CVcb3661","GLOBAL",0)
+Global("SanRecc","ar3644",0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+InMyArea(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanRecc","ar3644",1)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END

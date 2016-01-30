@@ -1,0 +1,9 @@
+IF
+Global("SanVampInvas","GLOBAL",2)
+Delay(4)
+THEN
+RESPONSE #100
+SetGlobal("SanVampInvas","GLOBAL",3)
+ActionOverride(Player1,LeaveAreaLUAPanic("CVELS4","",[1830.1900],12))
+ActionOverride(Player1,LeaveAreaLUA("CVELS4","",[1830.1900],12))
+END

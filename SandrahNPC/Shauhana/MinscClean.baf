@@ -1,0 +1,10 @@
+IF
+AreaCheck("ar0406")
+Global("CleanMinscM","AR0406",0)
+InParty("CVShau")
+!InParty(Myself)
+THEN
+RESPONSE #100
+SetGlobal("CleanMinscM","AR0406",1)
+DestroySelf()
+END

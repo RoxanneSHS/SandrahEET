@@ -1,0 +1,46 @@
+IF
+Global("ShauOrcWar","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("ShauOrcWar","GLOBAL",9)
+ActionOverride("CVShau",EscapeArea())
+ActionOverride("Minsc",EscapeArea())
+ActionOverride("CVGhatle",EscapeAreaMove("cvsh15",2797,617,0))
+ActionOverride("CVorwarl",EscapeAreaMove("cvsh15",1857,1689,5))
+END
+
+IF
+Global("OpenWays","cvsh10",0)
+GlobalLT("ShauOrcWar","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("OpenWays","cvsh10",1)
+TriggerActivation("Spare",FALSE)
+TriggerActivation("Spare2",FALSE)
+Continue()
+END
+
+IF
+GlobalGT("ShauOrcWar","GLOBAL",7)
+Global("OpenWays","cvsh10",1)
+THEN
+RESPONSE #100
+SetGlobal("OpenWays","cvsh10",2)
+TriggerActivation("Spare2",TRUE)
+TriggerActivation("Spare",TRUE)
+Continue()
+END
+
+IF
+Global("OpenWays","cvsh10",2)
+THEN
+RESPONSE #100
+SetGlobal("OpenWays","cvsh10",3)
+SpawnPtDeactivate("goblins")
+SpawnPtDeactivate("werewolfs")
+SpawnPtDeactivate("Spawn Point 1")
+SpawnPtDeactivate("Spawn Point 3")
+SpawnPtDeactivate("Spawn Point 9")
+Continue()
+END
+

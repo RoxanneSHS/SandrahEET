@@ -1,0 +1,15 @@
+IF
+Global("CVAR2800","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2800","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanSuElfHeal","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SanSuElfHeal","GLOBAL",4)
+ActionOverride("CVSandr",AddSpecialAbility("CVDra20"))
+END

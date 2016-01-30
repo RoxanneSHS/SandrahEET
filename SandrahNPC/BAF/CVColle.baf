@@ -1,0 +1,31 @@
+IF
+See("CVSandr")
+See(Player1)
+OR(3)
+Global("CVColleEnc","GLOBAL",2)
+Global("CVColleEnc","GLOBAL",5)
+Global("CVColleEnc","GLOBAL",8)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+OR(3)
+Global("CVColleEnc","GLOBAL",3)
+Global("CVColleEnc","GLOBAL",6)
+Global("CVColleEnc","GLOBAL",9)
+THEN
+RESPONSE #100
+IncrementGlobal("CVColleEnc","GLOBAL",1)
+RealSetGlobalTimer("CVColleAgain","GLOBAL",3600)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END
+
+IF
+Global("GaveKey","CVROA7",2)
+THEN
+RESPONSE #100
+SetGlobal("GaveKey","CVROA7",3)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+END

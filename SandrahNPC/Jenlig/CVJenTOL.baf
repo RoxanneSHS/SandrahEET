@@ -1,0 +1,26 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+MoveViewObject("CVJenlig",INSTANT)
+Wait(2)
+ActionOverride("CVJenlig",LeaveParty())
+Wait(2)
+CreateVisualEffectObject("SPUNHOLY","CVJenlig")
+ActionOverride("CVJenlig",TakePartyItem("CVJengl2"))
+ActionOverride("CVJenlig",DisplayStringWait(Myself,@856))
+Wait(8)
+ActionOverride("CVJenlig",DisplayStringWait(Myself,@857))
+Wait(8)
+CreateVisualEffectObject("SPUNHOLY","CVJenlig")
+ActionOverride("CVJenlig",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+Wait(2) 
+ActionOverride("CVJenlig",DestroySelf())
+SetGlobal("CVJenTOBRet","GLOBAL",15)
+EndCutSceneMode()
+AddexperienceParty(60000)
+END
+
+
+

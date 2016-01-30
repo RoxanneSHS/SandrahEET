@@ -1,0 +1,8 @@
+IF
+Global("SanBassil","BG3700",0)
+InParty("CVSandr")
+Dead("Bassilus")
+THEN
+RESPONSE #100                                   
+SetGlobal("SanBassil","BG3700",1)
+END

@@ -1,0 +1,23 @@
+IF
+	Global("ACQ4","GLOBAL",1)
+	Global("ACQ4shout","LOCALS",0)
+	See([PC])
+THEN
+	RESPONSE #50
+		SetGlobal("ACQ4shout","LOCALS",1)
+		Wait(1)
+		DisplayStringHead(Myself,@832)
+	RESPONSE #50
+		SetGlobal("ACQ4shout","LOCALS",1)
+		Wait(1)
+		DisplayStringHead(Myself,@833)
+END
+
+IF
+	Global("ACQ4","GLOBAL",1)
+	Global("ACQ4shout","LOCALS",1)
+	!See([PC])
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ4shout","LOCALS",0)
+END

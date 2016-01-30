@@ -1,0 +1,8 @@
+IF
+Global("eightdead","GLOBAL",2)
+THEN
+RESPONSE #100
+CutSceneId("Pellig")
+Wait(1)
+LeaveAreaLUA("DD2001","GTRSK002",[203.178],12)
+END

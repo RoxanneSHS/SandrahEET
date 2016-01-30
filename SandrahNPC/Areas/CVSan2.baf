@@ -1,0 +1,66 @@
+IF
+GlobalGT("SanSharInt","GLOBAL",28)
+Global("Gorbab","CVSan2",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("Gorbab","CVSan2",1)
+END
+
+IF
+Global("SanSharInt","GLOBAL",33)
+Global("Gorbab","CVSan2",1)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSan2",2)
+CreateCreature("sangori",[316.293],8) // Gorion
+END
+
+IF
+Global("Gorbab","CVSan2",2)
+Global("SanSharInt","GLOBAL",34)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSan2",3)
+ActionOverride("sangori",EscapeArea())
+END
+
+IF
+Global("Gorbab","CVSan2",3)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSan2",4)
+AddexperienceParty(120000)
+ActionOverride("CVShabab",SetDialog("ShartJ"))
+END
+
+IF
+Global("Gorbab","CVSan2",4)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSan2",5)
+ClearAllActions()
+SmallWait(2)
+SetInterrupt(FALSE)
+TextScreen("SharBa2")
+AddJournalEntry(@466,QUEST)
+END
+
+IF
+Global("Gorbab","CVSan2",5)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSan2",6)
+ClearAllActions()
+FadeToColor([30.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("CVDRE1","",[1059.468],1))
+ActionOverride(Player2,LeaveAreaLUA("CVDRE1","",[1123.423],1))
+ActionOverride(Player3,LeaveAreaLUA("CVDRE1","",[1198.354],4))
+ActionOverride(Player4,LeaveAreaLUA("CVDRE1","",[845.492],8))
+ActionOverride(Player5,LeaveAreaLUA("CVDRE1","",[885.582],8))
+ActionOverride(Player6,LeaveAreaLUA("CVDRE1","",[1127.556],8))
+ActionOverride("Haiass",LeaveAreaLUA("CVDRE1","",[781.689],8))
+ActionOverride("Pellig",LeaveAreaLUA("CVDRE1","",[1329.877],8))
+FadeFromColor([30.0],0)
+END

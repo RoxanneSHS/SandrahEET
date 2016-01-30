@@ -1,0 +1,14 @@
+IF
+Clicked([ANYONE])
+Global("SantalosDec","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride(Player1,LeaveAreaLUAPanic("CVSPLA","",[299.542],0))
+ActionOverride(Player1,LeaveAreaLUA("CVSPLA","",[299.542],0))
+ActionOverride(Player2,LeaveAreaLUA("CVSPLA","",[400.581],0))
+ActionOverride(Player3,LeaveAreaLUA("CVSPLA","",[496.565],0))
+ActionOverride(Player4,LeaveAreaLUA("CVSPLA","",[665.452],0))
+ActionOverride(Player5,LeaveAreaLUA("CVSPLA","",[742.445],0))
+ActionOverride(Player6,LeaveAreaLUA("CVSPLA","",[474.388],0))
+SetGlobal("SantalosDec","GLOBAL",5)
+END

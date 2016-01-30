@@ -1,0 +1,8 @@
+IF
+Global("SanAlust","DD6001",1)
+GlobalGT("SanKhalBlood","GLOBAL",10)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanAlust","DD6001",2)
+END

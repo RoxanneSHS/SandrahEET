@@ -1,0 +1,98 @@
+IF
+Global("Mothdream1","GLOBAL",2)
+Global("ElExists1","CVDRE1",0)
+THEN
+RESPONSE #100
+SetGlobal("ElExists1","CVDRE1",1)
+CreateCreature("Elminsdr",[457.633],12)
+CreateCreature("Sanpre2",[626.661],5)
+END
+
+IF
+Global("Mothdream2","GLOBAL",2)
+Global("ElExists2","CVDRE1",0)
+THEN
+RESPONSE #100
+SetGlobal("ElExists2","CVDRE1",1)
+CreateCreature("Elminsdr",[1893.1383],10)
+CreateCreature("Sanpre2",[1933.1383],4)
+END
+
+IF
+Global("SanVisitedWD","GLOBAL",1)
+Global("PelligExists","CVDRE1",0)
+THEN
+RESPONSE #100
+SetGlobal("PelligExists","CVDRE1",1)
+CreateCreature("Pellig",[927.933],12)
+END
+
+IF
+Global("Sanpre3Ex","CVDRE1",0)
+Global("SanPCGoodMys","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("Sanpre3Ex","CVDRE1",1)
+CreateCreature("Sanpre3",[927.933],9)
+END
+
+/*IF
+Global("Mothdream1","GLOBAL",3)
+AreaCheck("cvdre1")
+InMyArea("elminsdr")
+THEN
+RESPONSE #100
+  ActionOverride("elminsdr",DestroySelf())
+END
+  
+IF
+Global("SanVisitedWD","GLOBAL",1)
+AreaCheck("cvdre1")
+InMyArea("sanpre2")
+THEN
+RESPONSE #100
+  ActionOverride("sanpre2",DestroySelf())
+END */
+  
+  
+IF
+Global("SanVisitedWD","GLOBAL",1)
+AreaCheck("cvdre1")
+InMyArea("sanpre3")
+THEN
+RESPONSE #100
+ActionOverride("sanpre3",DestroySelf())
+END
+
+IF
+InMyArea("CVSandr")
+OR(2)
+Global("San25ChiQuest","GLOBAL",4)
+Global("San25ChiQuest","GLOBAL",6)
+!InMyArea("Elm25San")
+THEN
+RESPONSE #100
+CreateCreature("Elm25San",[1500.1380],9)
+SetGlobal("San25ChiQuest","GLOBAL",7)
+END
+
+IF
+Global("SanSharInt","GLOBAL",34)
+InParty("CVSandr")
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",35)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+GlobalLT("JarKhalBant1","GLOBAL",4)
+InParty("CVSandr")
+InParty("Jaheira")
+Global("JahSanMama","CVDre1",0)
+THEN
+RESPONSE #100
+SetGlobal("JahSanMama","CVDre1",1)
+END
+

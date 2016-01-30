@@ -1,0 +1,1637 @@
+//Excluded Areas
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",0)
+OR(64)
+AreaCheck("AR0011")
+AreaCheck("AR0012")
+AreaCheck("AR0013")
+AreaCheck("AR0014")
+AreaCheck("BG2600")
+AreaCheck("AR0016")
+AreaCheck("AR0017")
+AreaCheck("AR0018")
+AreaCheck("AR0028")
+AreaCheck("AR0084")
+AreaCheck("AR0414")
+AreaCheck("AR0516")
+AreaCheck("AR0517")
+AreaCheck("AR0518")
+AreaCheck("AR0519")
+AreaCheck("AR0520")
+AreaCheck("AR0521")
+AreaCheck("AR0601")
+AreaCheck("AR0602")
+AreaCheck("AR0603")
+AreaCheck("AR1607")
+AreaCheck("AR2900")
+AreaCheck("AR2901")
+AreaCheck("AR2902")
+AreaCheck("AR2903")
+AreaCheck("AR2904")
+AreaCheck("AR2905")
+AreaCheck("AR2906")
+AreaCheck("AR6200")
+AreaCheck("AR1501")
+AreaCheck("AR1502")
+AreaCheck("AR1503")
+AreaCheck("AR1504")
+AreaCheck("AR1505")
+AreaCheck("AR1506")
+AreaCheck("AR1507")
+AreaCheck("AR1508")
+AreaCheck("AR1509")
+AreaCheck("AR1510")
+AreaCheck("AR1511")
+AreaCheck("AR1512")
+AreaCheck("AR1513")
+AreaCheck("AR1514")
+AreaCheck("AR1515")
+AreaCheck("AR1516")
+AreaCheck("AR4000")
+AreaCheck("AR5000")
+AreaCheck("AR5001")
+AreaCheck("AR5002")
+AreaCheck("AR5003")
+AreaCheck("AR5004")
+AreaCheck("AR5005")
+AreaCheck("AR5006")
+AreaCheck("AR5007")
+AreaCheck("AR5008")
+AreaCheck("AR5009")
+AreaCheck("AR5010")
+AreaCheck("AR5011")
+AreaCheck("AR5012")
+AreaCheck("AR5013")
+AreaCheck("AR5014")
+AreaCheck("AR5015")
+AreaCheck("AR5016")
+AreaCheck("CVRTF2")
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",2)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",2)
+!AreaCheck("CVRTF2")
+!AreaCheck("AR0011")
+!AreaCheck("AR0012")
+!AreaCheck("AR0013")
+!AreaCheck("AR0014")
+!AreaCheck("BG2600")
+!AreaCheck("AR0016")
+!AreaCheck("AR0017")
+!AreaCheck("AR0018")
+!AreaCheck("AR0028")
+!AreaCheck("AR0084")
+!AreaCheck("AR0414")
+!AreaCheck("AR0516")
+!AreaCheck("AR0517")
+!AreaCheck("AR0518")
+!AreaCheck("AR0519")
+!AreaCheck("AR0520")
+!AreaCheck("AR0521")
+!AreaCheck("AR0601")
+!AreaCheck("AR0602")
+!AreaCheck("AR0603")
+!AreaCheck("AR1607")
+!AreaCheck("AR2900")
+!AreaCheck("AR2901")
+!AreaCheck("AR2902")
+!AreaCheck("AR2903")
+!AreaCheck("AR2904")
+!AreaCheck("AR2905")
+!AreaCheck("AR2906")
+!AreaCheck("AR6200")
+!AreaCheck("AR4500")
+!AreaCheck("AR1501")
+!AreaCheck("AR1502")
+!AreaCheck("AR1503")
+!AreaCheck("AR1504")
+!AreaCheck("AR1505")
+!AreaCheck("AR1506")
+!AreaCheck("AR1507")
+!AreaCheck("AR1508")
+!AreaCheck("AR1509")
+!AreaCheck("AR1510")
+!AreaCheck("AR1511")
+!AreaCheck("AR1512")
+!AreaCheck("AR1513")
+!AreaCheck("AR1514")
+!AreaCheck("AR1515")
+!AreaCheck("AR1516")
+!AreaCheck("AR4000")
+!AreaCheck("AR5000")
+!AreaCheck("AR5001")
+!AreaCheck("AR5002")
+!AreaCheck("AR5003")
+!AreaCheck("AR5004")
+!AreaCheck("AR5005")
+!AreaCheck("AR5006")
+!AreaCheck("AR5007")
+!AreaCheck("AR5008")
+!AreaCheck("AR5009")
+!AreaCheck("AR5010")
+!AreaCheck("AR5011")
+!AreaCheck("AR5012")
+!AreaCheck("AR5013")
+!AreaCheck("AR5014")
+!AreaCheck("AR5015")
+!AreaCheck("AR5016")
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+END
+
+//Conditional Areas
+
+IF
+AreaCheck("AR2400")
+!Dead("udmaster")
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",4)
+END
+
+IF
+AreaCheck("AR2400")
+Dead("udmaster")
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+END
+
+IF
+AreaCheck("AR4500")
+Global("LeavingPocketPlane","AR4500",0)
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",4)
+END
+
+IF
+AreaCheck("AR4500")
+GlobalGT("LeavingPocketPlane","AR4500",0)
+Global("SanCanTravel","GLOBAL",2)
+Global("SanNotTeleport","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SanNotTeleport","GLOBAL",0)
+END
+
+//Teleports
+
+IF
+Global("SanTravel","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut01")
+END
+
+IF
+Global("SanTravel","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut02")
+END
+
+IF
+Global("SanTravel","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut03")
+END
+
+IF
+Global("SanTravel","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut04")
+END
+
+IF
+Global("SanTravel","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut05")
+END
+
+IF
+Global("SanTravel","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut06")
+END
+
+IF
+Global("SanTravel","GLOBAL",7)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut07")
+END
+
+IF
+Global("SanTravel","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut08")
+END
+
+IF
+Global("SanTravel","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut09")
+END
+
+IF
+Global("SanTravel","GLOBAL",10)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut10")
+END
+
+IF
+Global("SanTravel","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut11")
+END
+
+IF
+Global("SanTravel","GLOBAL",12)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut12")
+END
+
+IF
+Global("SanTravel","GLOBAL",13)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut13")
+END
+
+IF
+Global("SanTravel","GLOBAL",14)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut14")
+END
+
+IF
+Global("SanTravel","GLOBAL",15)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut15")
+END
+
+IF
+Global("SanTravel","GLOBAL",16)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut16")
+END
+
+IF
+Global("SanTravel","GLOBAL",17)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut17")
+END
+
+IF
+Global("SanTravel","GLOBAL",18)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut18")
+END
+
+IF
+Global("SanTravel","GLOBAL",19)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut19")
+END
+
+IF
+Global("SanTravel","GLOBAL",20)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut20")
+END
+
+IF
+Global("SanTravel","GLOBAL",21)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut21")
+END
+
+IF
+Global("SanTravel","GLOBAL",22)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut22")
+END
+
+IF
+Global("SanTravel","GLOBAL",23)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut23")
+END
+
+IF
+Global("SanTravel","GLOBAL",24)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut24")
+END
+
+IF
+Global("SanTravel","GLOBAL",25)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut25")
+END
+
+IF
+Global("SanTravel","GLOBAL",26)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut26")
+END
+
+IF
+Global("SanTravel","GLOBAL",27)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut27")
+END
+
+IF
+Global("SanTravel","GLOBAL",28)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut28")
+END
+
+IF
+Global("SanTravel","GLOBAL",29)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut29")
+END
+
+IF
+Global("SanTravel","GLOBAL",30)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut30")
+END
+
+IF
+Global("SanTravel","GLOBAL",31)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut31")
+END
+
+IF
+Global("SanTravel","GLOBAL",32)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut32")
+END
+
+IF
+Global("SanTravel","GLOBAL",33)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut33")
+END
+
+IF
+Global("SanTravel","GLOBAL",34)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut34")
+END
+
+IF
+Global("SanTravel","GLOBAL",35)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut35")
+END
+
+IF
+Global("SanTravel","GLOBAL",36)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut36")
+END
+
+IF
+Global("SanTravel","GLOBAL",37)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut37")
+END
+
+IF
+Global("SanTravel","GLOBAL",38)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut38")
+END
+
+IF
+Global("SanTravel","GLOBAL",39)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut39")
+END
+
+IF
+Global("SanTravel","GLOBAL",40)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut40")
+END
+
+IF
+Global("SanTravel","GLOBAL",41)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut41")
+END
+
+IF
+Global("SanTravel","GLOBAL",42)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut42")
+END
+
+IF
+Global("SanTravel","GLOBAL",43)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut43")
+END
+
+IF
+Global("SanTravel","GLOBAL",44)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut44")
+END
+
+IF
+Global("SanTravel","GLOBAL",45)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut45")
+END
+
+IF
+Global("SanTravel","GLOBAL",46)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut46")
+END
+
+IF
+Global("SanTravel","GLOBAL",47)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut47")
+END
+
+IF
+Global("SanTravel","GLOBAL",48)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut48")
+END
+
+IF
+Global("SanTravel","GLOBAL",49)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut49")
+END
+
+IF
+Global("SanTravel","GLOBAL",50)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut50")
+END
+
+IF
+Global("SanTravel","GLOBAL",51)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut51")
+END
+
+IF
+Global("SanTravel","GLOBAL",52)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut52")
+END
+
+IF
+Global("SanTravel","GLOBAL",53)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut53")
+END
+
+IF
+Global("SanTravel","GLOBAL",54)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut54")
+END
+
+IF
+Global("SanTravel","GLOBAL",55)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut55")
+END
+
+IF
+Global("SanTravel","GLOBAL",56)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut56")
+END
+
+IF
+Global("SanTravel","GLOBAL",57)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut57")
+END
+
+IF
+Global("SanTravel","GLOBAL",58)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut58")
+END
+
+IF
+Global("SanTravel","GLOBAL",59)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut59")
+END
+
+IF
+Global("SanTravel","GLOBAL",60)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut60")
+END
+
+IF
+Global("SanTravel","GLOBAL",61)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut61")
+END
+
+IF
+Global("SanTravel","GLOBAL",62)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut62")
+END
+
+IF
+Global("SanTravel","GLOBAL",63)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut63")
+END
+
+IF
+Global("SanTravel","GLOBAL",64)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut64")
+END
+
+IF
+Global("SanTravel","GLOBAL",65)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut65")
+END
+
+IF
+Global("SanTravel","GLOBAL",66)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut66")
+END
+
+IF
+Global("SanTravel","GLOBAL",67)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut67")
+END
+
+IF
+Global("SanTravel","GLOBAL",68)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut68")
+END
+
+IF
+Global("SanTravel","GLOBAL",69)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut69")
+END
+
+IF
+Global("SanTravel","GLOBAL",70)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut70")
+END
+
+IF
+Global("SanTravel","GLOBAL",71)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut71")
+END
+
+IF
+Global("SanTravel","GLOBAL",72)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut72")
+END
+
+IF
+Global("SanTravel","GLOBAL",73)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut73")
+END
+
+IF
+Global("SanTravel","GLOBAL",74)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut74")
+END
+
+IF
+Global("SanTravel","GLOBAL",75)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut75")
+END
+
+IF
+Global("SanTravel","GLOBAL",76)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut76")
+END
+
+IF
+Global("SanTravel","GLOBAL",77)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut77")
+END
+
+IF
+Global("SanTravel","GLOBAL",78)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut78")
+END
+
+IF
+Global("SanTravel","GLOBAL",79)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut79")
+END
+
+IF
+Global("SanTravel","GLOBAL",80)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut81")
+END
+
+IF
+Global("SanTravel","GLOBAL",82)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut82")
+END
+
+IF
+Global("SanTravel","GLOBAL",83)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut83")
+END
+
+IF
+Global("SanTravel","GLOBAL",84)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut84")
+END
+
+IF
+Global("SanTravel","GLOBAL",85)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut85")
+END
+
+IF
+Global("SanTravel","GLOBAL",86)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut86")
+END
+
+IF
+Global("SanTravel","GLOBAL",87)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut87")
+END
+
+IF
+Global("SanTravel","GLOBAL",88)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut88")
+END
+
+IF
+Global("SanTravel","GLOBAL",89)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut89")
+END
+
+IF
+Global("SanTravel","GLOBAL",90)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut90")
+END
+
+IF
+Global("SanTravel","GLOBAL",91)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut91")
+END
+
+IF
+Global("SanTravel","GLOBAL",92)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut92")
+END
+
+IF
+Global("SanTravel","GLOBAL",93)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut93")
+END
+
+IF
+Global("SanTravel","GLOBAL",94)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut94")
+END
+
+IF
+Global("SanTravel","GLOBAL",95)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut95")
+END
+
+IF
+Global("SanTravel","GLOBAL",96)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut96")
+END
+
+IF
+Global("SanTravel","GLOBAL",97)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut97")
+END
+
+IF
+Global("SanTravel","GLOBAL",98)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut98")
+END
+
+IF
+Global("SanTravel","GLOBAL",99)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut99")
+END
+
+IF
+Global("SanTravel","GLOBAL",100)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut100")
+END
+
+IF
+Global("SanTravel","GLOBAL",101)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut101")
+END
+
+IF
+Global("SanTravel","GLOBAL",102)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut102")
+END
+
+IF
+Global("SanTravel","GLOBAL",103)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut103")
+END
+
+IF
+Global("SanTravel","GLOBAL",104)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut104")
+END
+
+IF
+Global("SanTravel","GLOBAL",105)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut105")
+END
+
+IF
+Global("SanTravel","GLOBAL",106)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut106")
+END
+
+IF
+Global("SanTravel","GLOBAL",107)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut107")
+END
+
+IF
+Global("SanTravel","GLOBAL",108)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut108")
+END
+
+IF
+Global("SanTravel","GLOBAL",109)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut109")
+END
+
+IF
+Global("SanTravel","GLOBAL",110)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut110")
+END
+
+IF
+Global("SanTravel","GLOBAL",111)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut111")
+END
+
+IF
+Global("SanTravel","GLOBAL",112)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut112")
+END
+
+IF
+Global("SanTravel","GLOBAL",113)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut113")
+END
+
+IF
+Global("SanTravel","GLOBAL",114)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut114")
+END
+
+IF
+Global("SanTravel","GLOBAL",115)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut115")
+END
+
+IF
+Global("SanTravel","GLOBAL",116)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut116")
+END
+
+IF
+Global("SanTravel","GLOBAL",117)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut117")
+END
+
+IF
+Global("SanTravel","GLOBAL",118)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut118")
+END
+
+IF
+Global("SanTravel","GLOBAL",119)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut119")
+END
+
+IF
+Global("SanTravel","GLOBAL",121)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut121")
+END
+
+IF
+Global("SanTravel","GLOBAL",126)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut126")
+END
+
+IF
+Global("SanTravel","GLOBAL",127)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut127")
+END
+
+IF
+Global("SanTravel","GLOBAL",128)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut128")
+END
+
+IF
+Global("SanTravel","GLOBAL",129)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut129")
+END
+
+IF
+Global("SanTravel","GLOBAL",130)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut130")
+END
+
+IF
+Global("SanTravel","GLOBAL",131)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut131")
+END
+
+IF
+Global("SanTravel","GLOBAL",132)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut132")
+END
+
+IF
+Global("SanTravel","GLOBAL",133)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut133")
+END
+
+IF
+Global("SanTravel","GLOBAL",134)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut134")
+END
+
+IF
+Global("SanTravel","GLOBAL",135)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut135")
+END
+
+IF
+Global("SanTravel","GLOBAL",136)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut136")
+END
+
+IF
+Global("SanTravel","GLOBAL",137)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut137")
+END
+
+IF
+Global("SanTravel","GLOBAL",138)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut138")
+END
+
+IF
+Global("SanTravel","GLOBAL",139)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut139")
+END
+
+IF
+Global("SanTravel","GLOBAL",140)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut140")
+END
+
+IF
+Global("SanTravel","GLOBAL",141)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut141")
+END
+
+IF
+Global("SanTravel","GLOBAL",142)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut142")
+END
+
+IF
+Global("SanTravel","GLOBAL",143)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut143")
+END
+
+IF
+Global("SanTravel","GLOBAL",144)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut144")
+END
+
+IF
+Global("SanTravel","GLOBAL",145)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut145")
+END
+
+IF
+Global("SanTravel","GLOBAL",146)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut146")
+END
+
+IF
+Global("SanTravel","GLOBAL",147)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVCut147")
+END
+
+IF
+Global("SanTravel","GLOBAL",200)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut200")
+END
+
+IF
+Global("SanTravel","GLOBAL",201)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut201")
+END
+
+IF
+Global("SanTravel","GLOBAL",202)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut202")
+END
+
+IF
+Global("SanTravel","GLOBAL",203)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut203")
+END
+
+IF
+Global("SanTravel","GLOBAL",204)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut204")
+END
+
+IF
+Global("SanTravel","GLOBAL",205)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut205")
+END
+
+IF
+Global("SanTravel","GLOBAL",206)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut206")
+END
+
+IF
+Global("riatavinblitz","GLOBAL",3)
+Global("maprinvisee","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("maprinvisee","GLOBAL",2)
+StartCutSceneMode()
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+Wait(2)
+StartCutScene("riatcutd")
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",12)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",13)
+StartCutSceneMode()
+StartCutScene("CVcut207")
+END
+
+IF
+Global("SanTravel","GLOBAL",212)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut212")
+END
+
+IF
+Global("SanTravel","GLOBAL",213)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut213")
+END
+
+IF
+Global("SanTravel","GLOBAL",220)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut220")
+END
+
+IF
+Global("SanTravel","GLOBAL",223)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut223")
+END
+
+IF
+Global("SanTravel","GLOBAL",302)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut302")
+END
+
+IF
+Global("SanTravel","GLOBAL",303)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut303")
+END
+
+IF
+Global("SanTravel","GLOBAL",400)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut400")
+END
+
+IF
+Global("SanTravel","GLOBAL",401)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut401")
+END
+
+IF
+Global("SanTravel","GLOBAL",405)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut405")
+END
+
+IF
+Global("SanTravel","GLOBAL",403)
+THEN
+RESPONSE #100
+SetGlobal("SanTravel","GLOBAL",0)
+StartCutSceneMode()
+StartCutScene("CVcut403")
+END

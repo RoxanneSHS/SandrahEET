@@ -1,0 +1,60 @@
+IF
+Global("CVAR0400","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0400","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("EntDjin55","AR0400",1)
+!InParty("Driz2")
+THEN
+RESPONSE #100
+SetGlobal("EntDjin55","AR0400",2)
+END
+
+IF
+Global("EntDjin55","AR0400",2)
+!InParty("Driz2")
+THEN
+RESPONSE #100
+Wait(3)
+SetGlobal("EntDjin55","AR0400",3)
+SmallWait(2)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+GlobalTimerExpired("EntDjin15","AR0400")
+Global("JarDjin65","AR0400",0)
+!InParty("Driz2")
+THEN
+RESPONSE #100
+SetGlobal("JarDjin65","AR0400",2)
+END
+
+IF
+Global("SanCyricAng","ar0400",1)
+THEN
+RESPONSE #100
+CreateCreature("cvcyr01",[2319.2066],6)
+SetGlobal("SanCyricAng","ar0400",2)
+END
+
+IF
+Global("Kidopersonalquest","GLOBAL",20)
+InParty("CVSandr")
+Delay(12)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+ActionOverride("CVSandr",ForceSpell(Myself,CLERIC_RESURRECTION))
+Wait(2)
+CreateCreature("MWKIquc",[966.1796],6)
+Wait(2)
+SetGlobal("Kidopersonalquest","GLOBAL",21)
+EndCutSceneMode()
+ActionOverride("MWKIquc",MoveToObject("CVSandr"))
+ActionOverride("MWKIquc",Dialogue(Player1))
+END

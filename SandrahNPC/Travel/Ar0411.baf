@@ -1,0 +1,19 @@
+IF
+Global("CVAR0411","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0411","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("RE_TeosSex","GLOBAL",1)
+InParty("CVSandr")
+Global("SanFemTeosHad","ar0411",0)
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("SanFemTeosHad","ar0411",1)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+

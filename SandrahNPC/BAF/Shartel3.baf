@@ -1,0 +1,35 @@
+
+//Shartel3.baf
+IF
+	HPPercentLT(Myself,50)
+	Global("Sharhit","GLOBAL",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("BeatSharteel","GLOBAL",4)
+		Dialogue([PC])
+END
+
+IF
+	HPPercentLT("CVSandr",50)
+	Global("Sharhit","GLOBAL",0)
+	Allegiance(Myself,NEUTRAL)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SetGlobal("BeatSharteel","GLOBAL",1)
+		Dialogue([PC])
+END
+
+IF
+	AttackedBy("CVSandr",DEFAULT)
+THEN
+	RESPONSE #100
+		AttackReevaluate("CVSandr",30)
+END
+
+
+
+
+

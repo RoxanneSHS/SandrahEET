@@ -1,0 +1,58 @@
+IF
+Global("CVAR0900","GLOBAL",0)
+Global("TempleShout0902","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("TempleShout0902","GLOBAL",2)
+Continue()
+END
+
+IF
+Global("CVAR0900","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0900","GLOBAL",1)
+Continue()
+END
+
+IF
+InParty("CVSandr")
+Global("SanSacroll","GLOBAL",3)
+THEN
+RESPONSE #100
+CreateCreature("cat",[4195.1956],8)
+SetGlobal("SanSacroll","GLOBAL",4)
+END
+
+IF
+Global("SaeWait","Ar0900",1)
+RealGlobalTimerExpired("AR0900SaerRetry","GLOBAL")
+GlobalLT("Chapter","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SaeWait","Ar0900",2)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+GlobalGT("ACBrePlot","GLOBAL",18)
+InParty("ACBre")
+InParty("CVSandr")
+Global("Pimopen","AR0900",0)
+THEN
+RESPONSE #100
+SetGlobal("Pimopen","AR0900",1)
+Unlock("Door0905")
+END
+
+IF
+GlobalLT("SanHelmDogmas","GLOBAL",21)
+Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("Chapter","GLOBAL",6)
+Global("DBleed","ar0900",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("DBleed","ar0900",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag"))
+END

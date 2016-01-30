@@ -1,0 +1,8 @@
+IF
+Global("SanRomPath","GLOBAL",1)
+Global("C#_REBjorninExists","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("C#BJORNI",[1246.1566],8) 
+SetGlobal("C#_REBjorninExists","GLOBAL",1)
+END

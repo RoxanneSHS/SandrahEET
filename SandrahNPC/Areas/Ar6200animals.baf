@@ -1,0 +1,7 @@
+IF
+OnCreation()
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+MoveGlobalObject("haiass",Protagonist)
+END

@@ -1,0 +1,9 @@
+IF
+OR(3)
+SpellCastOnMeRES("Spwi625",[ANYONE])
+SpellCastOnMeRES("Sppr648",[ANYONE])
+!StateCheck(Myself,STATE_STONE_DEATH)
+THEN
+RESPONSE #100
+Kill(Myself)
+END

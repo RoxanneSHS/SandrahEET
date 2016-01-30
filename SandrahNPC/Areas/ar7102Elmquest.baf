@@ -1,0 +1,11 @@
+IF
+Global("ElminGaveNarQ","GLOBAL",2)
+Global("ElmThalSp","BG3202",0)
+THEN
+RESPONSE #100
+SetGlobal("ElmThalSp","BG3202",1)
+CreateCreature("Elminsa",[362.235],2)
+CreateCreature("narqmes",[392.265],2)
+END
+
+

@@ -1,0 +1,97 @@
+IF
+  See("Haiass")
+  Global("HaiassLevel","GLOBAL",1)
+  AreaCheck("BG4800")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai2")
+    SetGlobal("HaiassLevel","GLOBAL",2)
+    EscapeAreaNoSee()
+END
+
+IF
+  See("Haiass")
+  OR(2)
+    Global("HaiassLevel","GLOBAL",1)
+    Global("HaiassLevel","GLOBAL",2)
+  AreaCheck("BG0900")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai3")
+    SetGlobal("HaiassLevel","GLOBAL",3)
+    EscapeAreaNoSee()
+END
+
+IF
+  See("Haiass")
+  OR(3)
+    Global("HaiassLevel","GLOBAL",1)
+    Global("HaiassLevel","GLOBAL",2)
+    Global("HaiassLevel","GLOBAL",3)
+  AreaCheck("AR1100")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai4")
+    SetGlobal("HaiassLevel","GLOBAL",4)
+    EscapeAreaNoSee()
+END
+
+IF
+  See("Haiass")
+  OR(4)
+    Global("HaiassLevel","GLOBAL",1)
+    Global("HaiassLevel","GLOBAL",2)
+    Global("HaiassLevel","GLOBAL",3)
+    Global("HaiassLevel","GLOBAL",4)
+  AreaCheck("AR2800")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai5")
+    SetGlobal("HaiassLevel","GLOBAL",5)
+    EscapeAreaNoSee()
+END
+
+IF
+  See("Haiass")
+  OR(5)
+    Global("HaiassLevel","GLOBAL",1)
+    Global("HaiassLevel","GLOBAL",2)
+    Global("HaiassLevel","GLOBAL",3)
+    Global("HaiassLevel","GLOBAL",4)
+    Global("HaiassLevel","GLOBAL",5)
+  AreaCheck("AR5202")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai6")
+    SetGlobal("HaiassLevel","GLOBAL",6)
+    EscapeAreaNoSee()
+END
+
+IF
+  See("Haiass")
+  OR(6)
+    Global("HaiassLevel","GLOBAL",1)
+    Global("HaiassLevel","GLOBAL",2)
+    Global("HaiassLevel","GLOBAL",3)
+    Global("HaiassLevel","GLOBAL",4)
+    Global("HaiassLevel","GLOBAL",5)
+    Global("HaiassLevel","GLOBAL",6)
+  AreaCheck("AR5500")
+THEN
+  RESPONSE #100
+    ClearAllActions()
+    StartCutSceneMode()
+    StartCutScene("hai7")
+    SetGlobal("HaiassLevel","GLOBAL",7)
+    EscapeAreaNoSee()
+END

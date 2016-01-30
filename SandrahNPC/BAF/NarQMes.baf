@@ -1,0 +1,55 @@
+IF
+Global("NarQMessApp","GLOBAL",1)
+!See("CVSandr")
+InParty("CVSandr")
+Global("NarQMessMoves","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("NarQMessMoves","LOCALS",1)
+MoveToObject("CVSandr")
+END
+
+IF
+See("CVSandr")
+See(Player1)
+InParty("CVSandr")
+Global("NarQMessSees","GLOBAL",0)
+Global("NarQMessApp","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("NarQMessSees","GLOBAL",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("NarQMessApp","GLOBAL",4)
+See("CVSandr")
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogueNoSet([PC])
+END
+
+IF
+AreaCheck("CVDre2")
+See("Edwin")
+Global("CowElmVis","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("CowElmVis","LOCALS",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+OR(4)
+Global("SanSharInt","GLOBAL",28)
+Global("SanSharInt","GLOBAL",30)
+Global("SanVampWDQuest","GLOBAL",3)
+Global("SanXephRet","GLOBAL",1)
+OR(2)
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

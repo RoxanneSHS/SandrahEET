@@ -1,0 +1,74 @@
+IF
+Global("DeKnExists","BG5300",0)
+Global("SanNarQ","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("DeKnExists","BG5300",1)
+CreateCreature("CVDEKN1",[3744.1668],0)
+END
+
+IF
+Global("SanNarQ","GLOBAL",4) 
+Global("CVDESKExists","BG5300",0)
+THEN
+RESPONSE #100
+SetGlobal("CVDESKExists","BG5300",1)
+CreateCreature("CVDESK",[3740.1669],0)
+END
+
+IF
+Global("SanNarQ","GLOBAL",5)
+Global("CVDESKExists","BG5300",1)
+InMyArea("CVDesk")
+THEN
+RESPONSE #100
+ActionOverride("CVDESK",DestroySelf())
+Continue()
+END
+
+IF
+Global("ImopeltHunt","GLOBAL",1)
+Global("Wiwo","BG5300",0)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG5300",1)
+CreateCreature("wolfwi",[2956.2729],8)
+END
+
+IF
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+!InActiveArea("pellig")
+!See("pellig")
+!Dead("pellig")
+THEN
+RESPONSE #100
+MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+!Allegiance("Pellig",CONTROLLED)
+Delay(10)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+Global("HaiassJumpOn","GLOBAL",1)
+Global("HaiassSeUne","GLOBAL",1)
+!InActiveArea("haiass")
+!See("haiass")
+!Dead("haiass")
+THEN
+RESPONSE #100
+MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+!Allegiance("haiass",CONTROLLED)
+Delay(12)
+THEN
+RESPONSE #100
+ChangeEnemyAlly("haiass",CONTROLLED)
+END

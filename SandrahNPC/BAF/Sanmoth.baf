@@ -1,0 +1,27 @@
+//Dream of Sandrah 1  Sanmoth.baf
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+FadeToColor([20.0],0)
+StorePartyLocations()
+Wait(2)
+LeaveAreaLUA("CVDRE1","",[280.965],10)
+FadeFromColor([20.0],0)
+Wait(2)
+MoveToPoint([393.679])
+MoveViewPoint([393.679],STANDARD)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+ActionOverride("Elminsdr",StartDialogueNoSet("Elminsdr"))
+Wait(2)
+EndCutSceneMode()
+END
+

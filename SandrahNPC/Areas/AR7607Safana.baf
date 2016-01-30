@@ -1,0 +1,8 @@
+IF
+Global("SanSafaBan","GLOBAL",10)
+THEN
+RESPONSE #100
+ActionOverride("CVSafgua",EscapeArea())
+ActionOverride("CVSafcit",EscapeArea())
+SetGlobal("SanSafaBan","GLOBAL",11)
+END

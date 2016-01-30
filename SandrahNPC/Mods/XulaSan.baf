@@ -1,0 +1,62 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanHealXul","GLOBAL",0)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanHealXul","GLOBAL",1)
+END
+
+IF
+InParty("CVSandr")
+InParty(Myself)
+Global("LK#XulSandrah","LOCALS",0)
+GlobalGT("udDrowPlot","GLOBAL",5) 
+Range("CVSandr",30)
+!StateCheck("CVSandr",CD_STATE_NOTVALID) 
+!StateCheck("Xulaye",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("LK#XulSandrah","LOCALS",1)
+END
+
+IF
+Global("LK#XulDialogues","GLOBAL",6)
+Global("LK#XulSandrah","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("LK#XulSandrah","LOCALS",3)
+RealSetGlobalTimer("SanDelayt","LOCALS",300)
+END
+
+IF
+Global("LK#XulSandrah","LOCALS",3)
+RealGlobalTimerExpired("SanDelayt","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("LK#XulSandrah","LOCALS",4)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+OR(3)
+Global("SanHealXul","GLOBAL",1)
+Global("LK#XulSandrah","LOCALS",1)
+Global("LK#XulSandrah","LOCALS",4)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END

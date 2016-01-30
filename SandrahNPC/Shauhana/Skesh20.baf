@@ -1,0 +1,16 @@
+IF
+AreaCheck("CVSH20")
+See([PC])
+THEN
+RESPONSE #100
+Attack(LastSeenBy(Myself))
+END
+
+IF
+AreaCheck("CVSH20")
+!See([PC])
+THEN
+RESPONSE #100
+MoveToPointNoInterrupt([3100.1922])
+END
+

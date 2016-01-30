@@ -1,0 +1,7 @@
+IF
+Global("Hint","CVUMO6",0)
+THEN
+RESPONSE #100
+SetGlobal("Hint","CVUMO6",1)
+DisplayStringWait(Player1,@774)
+END

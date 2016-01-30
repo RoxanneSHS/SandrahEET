@@ -1,0 +1,107 @@
+IF
+Global("TalOnIsl","ar90pb",1)
+AreaCheck("ar90pb")
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SantalosRang","GLOBAL",4)
+OR(2)
+See("CVSandr")
+See(Player1)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("Talos25R","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("Talos25R","GLOBAL",2)
+MoveToObject("CVSandr")
+END
+
+IF
+HPPercentLT(Myself,40)
+Global("SantalosDec","GLOBAL",11)
+THEN
+RESPONSE #100
+DisplayStringWait("CVTALOS",@701)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
+SetGlobal("SantalosDec","GLOBAL",12)
+AddexperienceParty(30000)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Global("Talosfi","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Talosfi","LOCALS",1)
+ReallyForceSpellPointRES("SPPR425",[739.845])
+RealSetGlobalTimer("TalosSeq","LOCALS",20)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Global("Talosfi","LOCALS",1)
+RealGlobalTimerExpired("TalosSeq","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("Talosfi","LOCALS",2)
+ReallyForceSpellRES("Spin932",Player3)
+RealSetGlobalTimer("TalosSeq","LOCALS",20)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Global("Talosfi","LOCALS",2)
+RealGlobalTimerExpired("TalosSeq","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("Talosfi","LOCALS",3)
+ReallyForceSpellRES("Spwi615",Player2)
+RealSetGlobalTimer("TalosSeq","LOCALS",20)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Global("Talosfi","LOCALS",3)
+RealGlobalTimerExpired("TalosSeq","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("Talosfi","LOCALS",4)
+ReallyForceSpellRES("Spwi938",Player6)
+RealSetGlobalTimer("TalosSeq","LOCALS",20)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Global("Talosfi","LOCALS",4)
+RealGlobalTimerExpired("TalosSeq","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("Talosfi","LOCALS",5)
+ReallyForceSpellRES("Spwi615",Player1)
+RealSetGlobalTimer("TalosSeq","LOCALS",20)
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),8)
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackOneRound(NearestEnemyOf(Myself))
+Continue()
+END

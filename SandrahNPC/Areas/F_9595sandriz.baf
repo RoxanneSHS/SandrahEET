@@ -1,0 +1,9 @@
+IF
+InMyArea("F_Drizzt")
+InMyArea("CVSandr")
+Dead("F_Drowmag")
+Global("SanDriDrowAmb","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDriDrowAmb","GLOBAL",1)
+END

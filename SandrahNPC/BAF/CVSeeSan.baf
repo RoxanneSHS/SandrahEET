@@ -1,0 +1,12 @@
+IF
+See("CVSandr")
+OR(2)
+Allegiance(Myself,GOODBUTBLUE)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+DisplayStringWait(Myself,@686)
+Wait(2)
+ChangeAIScript("cvsltrma",OVERRIDE)
+Enemy()
+END

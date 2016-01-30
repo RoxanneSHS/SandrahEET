@@ -1,0 +1,28 @@
+IF
+IsOverMe([GOODCUTOFF])
+Global("Orcalert","CVSH12",0)
+THEN
+RESPONSE #100
+ActionOverride(Player1,DisplayStringHead(Myself,@654))
+SetGlobal("Orcalert","CVSH12",1)
+END
+
+IF
+Global("Orcalert","CVSH12",1)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("0rc03",Player1,[100.100])
+CreateCreatureObjectOffset("0rc03",Player2,[-100.-100])
+CreateCreatureObjectOffset("0rc02",Player3,[100.-100])
+CreateCreatureObjectOffset("sanclaho",Player4,[-100.100])
+CreateCreatureObjectOffset("0rc03",Player5,[0.0])
+CreateCreatureObjectOffset("icegl2",Player3,[40.40])
+CreateCreatureObjectOffset("0rc03",Player6,[100.100])
+CreateCreatureObjectOffset("sanclaho",Player1,[-100.-100])
+CreateCreatureObjectOffset("0rc02",Player1,[100.-100])
+CreateCreatureObjectOffset("0rc03",Player1,[-100.100])
+CreateCreatureObjectOffset("icegl2",Player6,[40.40])
+CreateCreatureObjectOffset("sanclaho",Player1,[0.0])
+SetGlobal("Orcalert","CVSH12",2)
+END

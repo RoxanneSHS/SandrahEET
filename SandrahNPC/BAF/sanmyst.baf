@@ -1,0 +1,24 @@
+IF
+See("CVSandr")
+OR(6)
+Global("SanLive","GLOBAL",2)
+Global("SanEndBG1Plot","GLOBAL",3)
+Global("SanMystApp","arpo31",1)
+Global("SanRaiseMys","GLOBAL",2)
+Global("SandrahSummoned","GLOBAL",3)
+Global("SanHintFactory","GLOBAL",33)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+IF
+See("CVSandr")
+OR(2)
+Global("SanHaerRel1","GLOBAL",16)
+Global("SanMystApToB","GLOBAL",2)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogueNoSet(Player1)
+END

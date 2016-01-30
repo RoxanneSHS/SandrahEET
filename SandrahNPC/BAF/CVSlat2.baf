@@ -1,0 +1,10 @@
+IF
+Global("SanQuedPris","GLOBAL",2)
+AreaCheck("ar1002")
+Range([PC],6)
+THEN
+RESPONSE #100
+MoveToObject("Habrega")
+SetGlobal("SanQuedPris","GLOBAL",3)
+StartDialogueNoSet([PC])
+END

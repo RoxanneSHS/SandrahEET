@@ -1,0 +1,7 @@
+IF
+Global("Shieldsan","BG0500",0)
+THEN
+RESPONSE #100
+SetGlobal("Shieldsan","BG0500",1)
+CreateCreature("CVOLDSH",[2505.974],13)
+END

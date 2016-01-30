@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+LeaveAreaLUAPanic("CVELS5","",[942.619],12)
+LeaveAreaLUA("CVELS5","",[942.619],12)
+Wait(4)
+ActionOverride("CVVambo",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END

@@ -1,0 +1,43 @@
+IF
+Global("SanSuBH","GLOBAL",1)
+!See(Player1)
+InParty("CVSandr")
+Global("SanSuBHMoves","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSuBHMoves","LOCALS",1)
+MoveToObject(Player1)
+ActionOverride("SanSuwi",MoveToObjectFollow("SanSuwl"))
+ActionOverride("SanSuw2",MoveToObjectFollow("SanSuwl"))
+ActionOverride("SanSuw3",MoveToObjectFollow("SanSuwl"))
+END
+
+IF
+See("CVSandr")
+See(Player1)
+InParty("CVSandr")
+OR(3)
+Global("SanSuBH","GLOBAL",1)
+Global("SanSuBH","GLOBAL",6)
+Global("SanHealChlo","GLOBAL",10)
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SanSuBH","GLOBAL",2)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+ActionOverride("SanSuWL",ChangeEnemyAlly(Myself,ENEMY))
+ActionOverride("SanSuWi",ChangeEnemyAlly(Myself,ENEMY))
+ActionOverride("SanSuW2",ChangeEnemyAlly(Myself,ENEMY))
+ActionOverride("SanSuW3",ChangeEnemyAlly(Myself,ENEMY))
+ActionOverride("SanSuWL",Attack(Player1))
+ActionOverride("SanSuWi",Attack(Player2))
+ActionOverride("SanSuW2",Attack(Player3))
+ActionOverride("SanSuW3",Attack(Player4))
+EndCutSceneMode()
+SetGlobal("SanSuBH","GLOBAL",3)
+END

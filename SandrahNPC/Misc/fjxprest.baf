@@ -1,0 +1,7 @@
+IF 
+  HotKey(R) 
+THEN 
+  RESPONSE #100 
+    ChangeAIScript("",AREA) 
+    Rest() 
+END

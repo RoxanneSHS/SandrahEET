@@ -1,0 +1,19 @@
+IF
+Global("CVAR0413","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0413","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanValgyR","GLOBAL",13)
+GlobalGT("Chapter","GLOBAL",20)
+Global("CVSpGol","ar0413",0)
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVSpGol","ar0413",1)
+AddSpecialAbility("CVSphGol")
+END

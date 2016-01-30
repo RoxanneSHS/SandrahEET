@@ -1,0 +1,13 @@
+IF
+Global("HaiassSoA","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("HaiassSoA","GLOBAL",0)
+END
+
+IF
+Global("CVar4000","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVar4000","GLOBAL",1)
+END

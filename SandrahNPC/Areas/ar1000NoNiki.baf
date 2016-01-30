@@ -1,0 +1,9 @@
+IF
+GlobalGT("CHAPTER","GLOBAL",3)
+Global("CMOversightEndGame","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("cmsec03",[3346.1581],5)
+SetGlobal("CMOversightEndGame","GLOBAL",2)
+END

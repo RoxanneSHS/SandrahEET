@@ -1,0 +1,49 @@
+IF
+Global("SanSharCom","GLOBAL",2)
+AreaCheck("CVElm5")
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+Dialog([PC])
+END
+
+IF
+AreaCheck("CVRoa1")
+OR(2)
+Global("SanSharCom","GLOBAL",3)
+Global("SanSharCom","GLOBAL",7)
+See(Player1)
+InParty("CVSandr")
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+Dialog([PC])
+END
+
+IF
+Global("ShaFollow","CVRoa1",1)
+See([ENEMY])
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackReevaluate(LastSeenBy(Myself),15)
+END
+
+IF
+Global("ShaFollow","CVRoa1",1)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObjectFollow(Player1)
+END
+
+IF
+Global("ShaFollow","CVRoa1",2)
+THEN
+RESPONSE #100
+EscapeArea()
+END
+

@@ -1,0 +1,37 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealShena","GLOBAL",3)
+OR(6)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("Spin109","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealShena","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("SanHealShena","GLOBAL",3)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+Global("SheenaTalk","LOCALS",21)
+Global("SanSheena","GLOBAL",8)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSheena","GLOBAL",9)
+END

@@ -1,0 +1,15 @@
+IF
+	InParty("CVShau")
+	GlobalGT("SanShauMeet","GLOBAL",2)
+	IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+		ActionOverride(Player1,JumpToPoint([1063.314]))
+		ActionOverride(Player2,JumpToPoint([1063.314]))
+		ActionOverride(Player3,JumpToPoint([1063.314]))
+		ActionOverride(Player4,JumpToPoint([1063.314]))
+		ActionOverride(Player5,JumpToPoint([1063.314]))
+		ActionOverride(Player6,JumpToPoint([1063.314]))
+		ActionOverride("Haiass",JumpToPoint([1063.314]))
+		ActionOverride("Pellig",JumpToPoint([1063.314]))
+END

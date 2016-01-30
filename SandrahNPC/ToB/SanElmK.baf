@@ -1,0 +1,39 @@
+IF
+Global("Appear","LOCALS",0)
+Delay(6)
+THEN
+RESPONSE #100
+DisplayStringWait(Myself,@775)
+SetGlobal("Appear","LOCALS",1)
+RealSetGlobalTimer("DoIt","LOCALS",SIX_MINUTES)
+END
+
+IF
+Global("Appear","LOCALS",1)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Appear","LOCALS",2)
+CreateVisualEffectObject("Bishop",Player4)
+CreateVisualEffectObject("Bishop",Player6)
+END
+
+IF
+Global("Appear","LOCALS",2)
+RealGlobalTimerExpired("DoIt","LOCALS")
+THEN
+RESPONSE #100
+CreateVisualEffectObject("Blueca",Player1)
+SetGlobal("Appear","LOCALS",3)
+END
+
+IF
+Global("Appear","LOCALS",3)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,WIZARD_TIME_STOP)
+Kill(Player1)
+SetGlobal("Appear","LOCALS",4)
+END
+
+

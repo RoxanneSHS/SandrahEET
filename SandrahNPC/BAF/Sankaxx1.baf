@@ -1,0 +1,27 @@
+//Sankaxx1.baf
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("CVSandr")
+MoveToPoint([640.414])
+Wait(6)
+DisplayStringHead("CVSandr",@477)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("CVSandr")
+Wait(12)
+DisplayStringHead("CVSandr",@478)
+SetGlobal("UsedCrypt","AR0526",2)
+SetGlobal("SankangTors","GLOBAL",4)
+CreateVisualEffect("SPRAISED",[426.701])
+Wait(12)
+CreateCreature("HLLICH",[426.701],10)
+EndCutSceneMode()
+END
+

@@ -1,0 +1,7 @@
+IF
+GlobalGT("SanKhalBlood","GLOBAL",8)
+AttackedBy([ANYTHING],DEFAULT)
+THEN
+RESPONSE #100
+Kill(Player1)
+END

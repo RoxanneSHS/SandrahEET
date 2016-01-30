@@ -1,0 +1,57 @@
+IF
+Global("ShauVeil","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("ShauVeil","GLOBAL",1)
+ReallyForceSpellRES("Shauveil",Myself)
+SetGlobal("ShauGN","GLOBAL",1)
+Wait(3)
+RestParty()
+END
+
+IF
+Global("ShauGN","GLOBAL",1)
+Global("ShauGN1","GLOBAL",0)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+Interact(Player1)
+END
+
+IF
+Global("SanShauMeet","GLOBAL",7)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanShauMeet","GLOBAL",8)
+END
+
+IF
+Global("SanShauMeet","GLOBAL",8)
+THEN
+RESPONSE #100
+Interact(Player1)
+END
+
+IF
+Global("SanShauMinsc","GLOBAL",13)
+RealGlobalTimerExpired("SanShauMinTi","GLOBAL")
+InParty("Minsc")
+InMyArea("Pellig")
+THEN
+RESPONSE #100
+SetGlobal("SanShauMinsc","GLOBAL",14)
+CreateCreatureObjectOffset("CVbootlk","Pellig",[25.25])
+END
+
+IF
+Global("SanShauMinsc","GLOBAL",27)
+InParty("Minsc")
+InMyArea("Pellig")
+THEN
+RESPONSE #100
+SetGlobal("SanShauMinsc","GLOBAL",28)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("ShauPell")
+END

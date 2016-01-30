@@ -1,0 +1,28 @@
+IF
+Global("JoinBandtR","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Tazoksays","GLOBAL",11)
+SetGlobal("JoinBandtR","GLOBAL",2)
+CreateCreature("Raiken",[4401.2308],0)
+END
+
+IF
+Global("JoinBandtT","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Tazoksays","GLOBAL",11)
+SetGlobal("JoinBandtT","GLOBAL",2)
+CreateCreature("Teven",[4401.2308],0)
+END
+
+IF
+Global("JoinBandtR","GLOBAL",0)
+Global("JoinBandtT","GLOBAL",0)
+GlobalLT("Tazoksays","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("Tazoksays","GLOBAL",11)
+END

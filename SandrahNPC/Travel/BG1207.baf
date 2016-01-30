@@ -1,0 +1,11 @@
+IF
+GlobalLT("SanSafaBan","GLOBAL",13)
+InParty("CVSandr")
+!InParty("Safana")
+Global("SanSafa","BG1207",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanSafa","BG1207",1)
+AddSpecialAbility("CVDRA14")
+END

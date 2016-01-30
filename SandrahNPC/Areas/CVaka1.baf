@@ -1,0 +1,68 @@
+IF
+OnCreation()
+Global("SanstatExists","CVAKA1",0)
+THEN
+RESPONSE #100
+SetGlobal("SanstatExists","CVAKA1",1)
+CreateCreature("sanstat",[1368.681],13)
+TriggerActivation("ToAKA2",FALSE)
+END
+
+IF
+Global("SanstatExists","CVAKA1",1)
+Dead("sanstat")
+THEN
+RESPONSE #100
+SetGlobal("SanstatExists","CVAKA1",2)
+TriggerActivation("ToAKA2",TRUE)
+DisplayStringHeadDead("sanstat",@218)
+END
+
+IF
+InActiveArea("CVSandr")
+Global("SanAttSpawn","CVAKA1",0)
+THEN
+RESPONSE #100
+DisplayStringWait("sanstat",@215)
+CreateCreature("Orc01",[1155.721],14)
+CreateCreature("Orc02",[1145.711],14)
+CreateCreature("Orc01",[1402.806],1)
+CreateCreature("Orc02",[1412.816],1)
+SetGlobal("SanAttSpawn","CVAKA1",1)
+RealSetGlobalTimer("SanAttSpawnT","CVAKA1",50)
+END
+
+IF
+GlobalGT("SanAttSpawn","CVAKA1",0)
+RealGlobalTimerExpired("SanAttSpawnT","CVAKA1")
+InActiveArea("CVSandr")
+!Dead("sanstat")
+GlobalLT("SanAttSpawn","CVAKA1",10)
+THEN
+RESPONSE #100
+IncrementGlobal("SanAttSpawn","CVAKA1",1)
+DisplayStringWait("sanstat",@215)
+CreateCreature("Orc01",[1155.721],14)
+CreateCreature("Orc02",[1145.711],14)
+CreateCreature("Orc01",[1402.806],1)
+CreateCreature("Orc02",[1412.816],1)
+RealSetGlobalTimer("SanAttSpawnT","CVAKA1",45)
+END
+
+IF
+Global("SanAttSpawn","CVAKA1",2)
+Global("SanAttSpawnW","CVAKA1",0)
+THEN
+RESPONSE #100
+SetGlobal("SanAttSpawnW","CVAKA1",1)
+DisplayStringWait("CVSandr",@216)
+END
+
+IF
+Global("SanXephRet","GLOBAL",9)
+THEN
+RESPONSE #100
+CreateCreature("cvxep2",[1140.1056],4)
+CreateCreature("cvzlord",[1208.513],0)
+SetGlobal("SanXephRet","GLOBAL",10)
+END

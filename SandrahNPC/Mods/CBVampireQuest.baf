@@ -1,0 +1,16 @@
+//Vampires in Amn
+IF
+Global("CbVampireSubQuestStart","GLOBAL",1)
+AreaType(OUTDOOR)
+Global("SanVSQHint","LOCALS",0)
+Delay(12)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanVSQHint","LOCALS",1)
+StartDialogNoSet("CVSandr")
+END
+

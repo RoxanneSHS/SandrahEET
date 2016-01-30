@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+Wait(1)
+JumpToPoint([961.706])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("m#amber")
+Wait(1)
+JumpToPoint([954.735])
+Wait(1) 
+EndCutSceneMode()
+SetGlobal("SanHealAmber","GLOBAL",10)
+END
+
+ 

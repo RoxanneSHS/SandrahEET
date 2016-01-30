@@ -1,0 +1,57 @@
+IF
+Global("CVAR1000","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1000","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanRabb","ar1000",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","ar1000",1)
+CreateCreature("rabbit01",[2634.1043],8)
+CreateCreature("rabbit",[2630.1000],8)
+END
+
+IF
+Global("TellArenn","GLOBAL",1)
+InMyArea("Tellare1")
+Global("Stopcrier","ar1000",0)
+THEN
+RESPONSE #100
+SetGlobal("Stopcrier","ar1000",1)
+ActionOverride("Tellare1",SetGlobal("Tellofthear","LOCALS",2))
+END
+
+IF
+InParty("CVSandr")
+Global("LockedDoor1001b","AR1000",1)
+THEN
+RESPONSE #100
+SetGlobal("LockedDoor1001b","AR1000",0)
+RealSetGlobalTimer("1001Open","AR1000",1200)
+Unlock("DOOR1001b")
+OpenDoor("DOOR1001b")
+END
+
+IF
+Global("LockedDoor1001b","AR1000",0)
+RealGlobalTimerExpired("1001Open","AR1000")
+THEN
+RESPONSE #100
+SetGlobal("LockedDoor1001b","AR1000",2)
+CloseDoor("DOOR1001b")
+Lock("DOOR1001b")
+END
+
+IF
+InMyArea("Kiyone")
+!InParty("Kiyone")
+Global("KiOutWay","AR1000",0)
+THEN
+RESPONSE #100
+SetGlobal("KiOutWay","AR1000",1)
+ActionOverride("Kiyone",JumpToPoint([2237.1424]))
+END

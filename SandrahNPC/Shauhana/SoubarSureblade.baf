@@ -1,0 +1,14 @@
+IF
+HPPercentLT(Myself,25)
+InParty("CVSandr")
+InParty("CVShau")
+!Dead("CVShau")
+AreaCheck("AR4313")
+Global("SanShauRSure","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanShauRSure","GLOBAL",1)
+ClearAllActions()
+DialogInterrupt(TRUE)
+StartDialogueNoSet([PC])
+END

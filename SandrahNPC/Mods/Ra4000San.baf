@@ -1,0 +1,22 @@
+IF
+Global("SanRecDriz","RA4000",0)
+OR(3)
+PartyHasItem("NewHe01")
+PartyHasItem("NewPo02")
+PartyHasItem("Newshp3")
+InParty("CVSandr")
+!InParty("Driz2")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanRecDriz","RA4000",1)
+END
+
+IF
+Global("SanRecDriz","RA4000",1)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",MoveToObject(Player1))
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END

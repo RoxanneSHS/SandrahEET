@@ -1,0 +1,11 @@
+IF
+Global("HaiassExists","AR0700",0)
+THEN
+RESPONSE #100
+SetGlobal("HaiassExists","AR0700",1)
+SetGlobal("HaiassSoA","GLOBAL",1)
+SetGlobal("HaiassFueraCandelero","GLOBAL",1)
+SetGlobal("HaiassLevel","GLOBAL",3)
+SetGlobal("HaiassSeUne","GLOBAL",1)
+CreateCreature("haiass3",[3208.798],1)
+END

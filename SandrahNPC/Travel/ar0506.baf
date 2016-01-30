@@ -1,0 +1,10 @@
+IF
+GlobalGT("O#UBHaerDalisInnocentBadGuy","GLOBAL",0)
+GlobalGT("SanVicArrst","GLOBAL",1)
+!InMyArea("HAPIP")
+Global("Pipmiss","ar0506",0)
+THEN
+RESPONSE #100
+SetGlobal("Pipmiss","ar0506",1)
+CreateCreature("HAPIP",[629.484],14)
+END

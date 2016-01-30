@@ -1,0 +1,20 @@
+IF
+Global("Sanitems","BG2615",0)
+THEN
+RESPONSE #100
+ActionOverride("Container 5",CreateItem("CVAlau",0,0,0))
+ActionOverride("Container 5",CreateItem("CVNARVBO",0,0,0))
+CreateCreature("CVZLord",[699.1829],13)
+SetGlobal("Sanitems","BG2615",1)
+Continue()
+END
+
+IF
+Global("Sanitems","BG2615",1)
+InParty("CVSandr")
+PartyHasItem("CVAlau")
+THEN
+RESPONSE #100
+SetGlobal("Sanitems","BG2615",2)
+END
+

@@ -1,0 +1,26 @@
+IF
+Global("Helpers","LOCALS",0)
+AreaCheck("BG5500")
+THEN
+RESPONSE #100
+CreateCreature("CVBanDE2",[3003.1810],0)
+CreateCreature("CVBanDE2",[2953.1800],0)
+CreateCreature("CVBanDE2",[2900.1770],0)
+CreateCreature("CVBanDE2",[2870.1750],0)
+CreateCreature("CVBanDE2",[2840.1710],0)
+CreateCreature("CVBanDE2",[2800.1700],0)
+CreateCreature("CVBanDE2",[2765.1680],0)
+CreateCreature("CVBanDE2",[2750.1650],0)
+SetGlobal("Helpers","LOCALS",1)
+END
+
+IF
+NumTimesTalkedTo(0)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+
+

@@ -1,0 +1,35 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealDriz","GLOBAL",5)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealDriz","GLOBAL",1)
+END
+
+IF
+AreaCheck("BG1001")
+Global("MeetDrizztInBeard","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride("F_DRIZZT",SetNumTimesTalkedTo(1))
+SetGlobal("MeetDrizztInBeard","GLOBAL",2)
+END
+
+IF
+InParty(Myself)
+Global("MeetDrizztInBeard","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("MeetDrizztInBeard","GLOBAL",2)
+END
+
+

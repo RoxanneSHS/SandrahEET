@@ -1,0 +1,8 @@
+IF
+IsOverMe([GOODCUTOFF])
+Global("Ambient","CVSH20",0)
+THEN
+RESPONSE #100
+ActionOverride(Player1,DisplayStringHead(Myself,@670))
+SetGlobal("Ambient","CVSH20",1)
+END

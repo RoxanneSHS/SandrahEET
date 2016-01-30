@@ -1,0 +1,11 @@
+IF
+Global("SanMonkD","ar6002",0)
+Dead("Bazmonk")
+OR(2)
+PartyHasItem("Bazplo05")
+PartyHasItem("tome02a")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanMonkD","ar6002",1)
+END

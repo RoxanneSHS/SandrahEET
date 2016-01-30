@@ -1,0 +1,8 @@
+IF
+Global("SanBHTalos","GLOBAL",7)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+RevealAreaOnMap("BH2300")
+SetGlobal("SanBHTalos","GLOBAL",8)
+END

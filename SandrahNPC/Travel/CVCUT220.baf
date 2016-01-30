@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("ys0390","",[1520.862],0)
+LeaveAreaLUA("ys0390","",[1520.862],0)
+ActionOverride(Player2,LeaveAreaLUA("ys0390","",[1520.862],0))
+ActionOverride(Player3,LeaveAreaLUA("ys0390","",[1520.862],0))
+ActionOverride(Player4,LeaveAreaLUA("ys0390","",[1520.862],0))
+ActionOverride(Player5,LeaveAreaLUA("ys0390","",[1520.862],0))
+ActionOverride(Player6,LeaveAreaLUA("ys0390","",[1520.862],0))
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(3)
+EndCutSceneMode()
+END
+
+

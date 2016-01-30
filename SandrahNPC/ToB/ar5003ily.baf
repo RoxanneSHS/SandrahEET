@@ -1,0 +1,10 @@
+IF
+InParty("Iylos")
+Global("SanIylos","GLOBAL",0)
+Global("LK#IylosViekang","GLOBAL",0)
+Global("SanMissedViek","ar5003",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMissedViek","ar5003",1)
+RealSetGlobalTimer("SanIylBT","GLOBAL",2200)
+END

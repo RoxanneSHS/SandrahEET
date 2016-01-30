@@ -1,0 +1,16 @@
+IF
+See([PC])
+THEN
+RESPONSE #20
+Attack(Player1)
+RESPONSE #20
+Attack(Player3)
+RESPONSE #20
+Attack(Player2)
+RESPONSE #20
+Attack(Player4)
+RESPONSE #20
+Attack(Player6)
+RESPONSE #20
+Attack(Player5)
+END

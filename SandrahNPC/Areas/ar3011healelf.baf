@@ -1,0 +1,16 @@
+IF
+InMyArea("CVSandr")
+InMyArea("Gormad1")
+Global("SanHealElf","ar3011",0)
+THEN
+RESPONSE #100
+SetGlobal("SanHealElf","ar3011",1)
+StartCutSceneMode()
+DisplayStringWait("CVSandr",@556)
+Wait(2)
+ActionOverride("CVSandr",MoveToObject("Gormad1")
+Wait(2)
+ActionOverride("CVSandr",ReallyForceSpell("Gormad1",CLERIC_HEAL))
+EndCutSceneMode()
+AddexperienceParty(5000)
+END

@@ -1,0 +1,20 @@
+//Free Waukleo
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("waukleo")
+MoveViewPoint([2309.2325],INSTANT)
+Wait(5)
+CreateVisualEffectObject("SPDIMNDR","waukleo")
+Wait(3)
+JumpToPoint([2480.2437])
+Wait(3)
+MoveToPoint([1368.3018])
+SetGlobal("waukleofree","GLOBAL",3)
+Wait(2)
+EndCutSceneMode()
+END
+
+

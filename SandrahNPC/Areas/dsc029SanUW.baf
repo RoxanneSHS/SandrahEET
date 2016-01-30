@@ -1,0 +1,8 @@
+IF
+InActiveArea("CVSandr")
+NumDeadGT("IronElit",2)
+Global("SanDSOTSCUW","GLOBAL",7)
+THEN
+RESPONSE #100
+SetGlobal("SanDSOTSCUW","GLOBAL",8)
+END

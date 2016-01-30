@@ -1,0 +1,17 @@
+//  CVTwrLo.baf
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+FadeToColor([20.0],0)
+StorePartyLocations()
+Wait(2)
+ActionOverride("CVSandr",LeaveAreaLUA("CVDRE1","",[283.952],1))
+ActionOverride(Player1,LeaveAreaLUA("CVDRE1","",[268.1000],9))
+FadeFromColor([20.0],0)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+EndCutSceneMode()
+END
+

@@ -1,0 +1,20 @@
+IF
+Global("CVAR0306","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0306","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("Cowscroll","GLOBAL",19)
+Global("MaeVarExposed","GLOBAL",1)
+InParty("CVSandr")
+!InParty("Edwin")
+Global("CVants","ar0306",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVants","ar0306",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVRant"))
+END

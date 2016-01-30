@@ -1,0 +1,25 @@
+IF
+NumTimesTalkedTo(0)
+!AreaCheck("CVElm6")
+!AreaCheck("ars002")
+!AreaCheck("BG1200")
+!AreaCheck("ar9pba")
+!AreaCheck("CVSpla")
+!AreaCheck("ar1107")
+!AreaCheck("BG0200")
+!AreaCheck("BG0900")
+Detect([PC])
+THEN
+RESPONSE #100
+Enemy()
+DisplayStringWait("CVTALOP1",@699)
+Continue()
+END
+
+IF
+NumTimesTalkedTo(0)
+Detect([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END

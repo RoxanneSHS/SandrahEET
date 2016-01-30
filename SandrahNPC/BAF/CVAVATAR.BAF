@@ -1,0 +1,12 @@
+IF
+See([ENEMY])
+THEN
+RESPONSE #30
+ReallyForceSpell(LastSeenBy(Myself),FLASHY_DEATH_1)
+RESPONSE #30
+ReallyForceSpell(LastSeenBy(Myself),FLASHY_DEATH_2)
+RESPONSE #30
+ReallyForceSpell(LastSeenBy(Myself),FLASHY_DEATH_3)
+END
+
+

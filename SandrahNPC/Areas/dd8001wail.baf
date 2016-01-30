@@ -1,0 +1,10 @@
+IF
+Global("Sanbonus","dd8001",0)
+InParty("CVSandr")
+Dead("Banshee1")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Sanbonus","dd8001",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVWail"))
+END

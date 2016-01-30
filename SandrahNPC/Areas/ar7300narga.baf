@@ -1,0 +1,39 @@
+IF
+Global("Swieca","GLOBAL",1)
+InParty("CVSandr")
+Dead("NTSARQ")
+PartyHasItem("MISC74")
+Global("Narga","BG0200",0)
+THEN
+RESPONSE #100
+CreateCreature("CVNarga",[4043.1445],7)
+SetGlobal("Narga","BG0200",1)
+END
+
+IF
+Global("Narga","BG0200",2)
+THEN
+RESPONSE #100
+CreateCreature("skesh201",[3953.1580],8)
+CreateCreature("skesh202",[4064.1561],6)
+SetGlobal("Narga","BG0200",3)
+END
+
+IF
+Global("Narga","BG0200",3)
+HPLT("CVNarga",65)
+THEN
+RESPONSE #100
+SetGlobal("Narga","BG0200",4)
+ActionOverride("CVNarga",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",1)
+Global("SanNWTalV","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("CVTalop1",[1962.2834],0)
+SetGlobal("SanNWTalV","GLOBAL",1)
+END

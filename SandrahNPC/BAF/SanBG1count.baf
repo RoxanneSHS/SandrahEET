@@ -1,0 +1,492 @@
+IF
+!Global("endofbg1","GLOBAL",2)
+Killed([0.0.HUMAN])
+THEN
+RESPONSE #100
+IncrementGlobal("SanKillBG1","GLOBAL",1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("SanKillSarev","GLOBAL",0)
+Killed("Sarevok")
+THEN
+RESPONSE #100
+SetGlobal("SanKillSarev","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Killed([0.0.ELF])
+THEN
+RESPONSE #100
+IncrementGlobal("SanKillBG1","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Killed([0.0.HALF_ELF])
+THEN
+RESPONSE #100
+IncrementGlobal("SanKillBG1","GLOBAL",1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DWARF])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.HALFLING])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GNOME])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.HALFORC])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ANKHEG])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.BASILISK])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.BEAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.CARRIONCRAWLER])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DOPPLEGANGER])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ETTERCAP])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GHOUL])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GIBBERLING])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GNOLL])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.HOBGOBLIN])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.KOBOLD])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.OGRE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SKELETON])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SPIDER])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.WOLF])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.WYVERN])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SLIME])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.FAIRY])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DEMONIC])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",4)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.LYCANTHROPE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.BEHOLDER])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",3)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.MIND_FLAYER])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",3)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  OR(2)
+    Killed([0.0.VAMPIRE])
+    Killed([0.0.VAMPYRE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.OTYUGH])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.RAKSHASA])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.TROLL])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.UMBERHULK])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SAHUAGIN])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SHADOW])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+   END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SPECTRE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.WRAITH])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.KUO-TOA])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.MIST])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.MIMIC])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.IMP])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GIANT])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ORC])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GOLEM])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",2)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ELEMENTAL])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+Killed([0.0.DRAGON])
+  OR(3)
+  Global("SanDragonCheck","GLOBAL",0)
+  Global("SanDragonCheck","GLOBAL",2)
+  Global("SanDragonCheck","GLOBAL",4)
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",5)
+    IncrementGlobal("SanDragonCheck","GLOBAL",1)
+END
+
+IF
+OR(2)
+Global("SanDragonCheck","GLOBAL",1)
+Global("SanDragonCheck","GLOBAL",3)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDragonCheck","GLOBAL",1)
+AddSpecialAbility("CVDra12")
+DisplayStringWait(Myself,@411)
+END
+
+IF
+Global("SanDragonCheck","GLOBAL",5)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDragonCheck","GLOBAL",1)
+AddSpecialAbility("CVDra11")
+DisplayStringWait(Myself,@411)
+END
+
+
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GENIE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ZOMBIE])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.LICH])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",5)
+    END
+
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.GITHYANKI])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.TIEFLING])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.YUANTI])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DEMILICH])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",6)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.SOLAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",4)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.ANTISOLAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",4)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.PLANATAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",5)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DARKPLANATAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",5)
+    END
+
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.DUERGAR])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+
+IF !Global("endofbg1","GLOBAL",2)
+  Killed([0.0.MEPHIT])
+THEN
+  RESPONSE #100
+    IncrementGlobal("SanKillBG1","GLOBAL",1)
+    END
+

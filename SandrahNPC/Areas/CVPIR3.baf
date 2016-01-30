@@ -1,0 +1,18 @@
+IF
+GlobalLT("SanSuBH","GLOBAL",28)
+Global("PirCave","CVpir3",0)
+THEN
+RESPONSE #100
+SetGlobal("PirCave","CVpir3",1)
+TriggerActivation("Cave",FALSE)
+END
+
+IF
+Global("SanSuBH","GLOBAL",28)
+Global("PirCave","CVpir3",1)
+THEN
+RESPONSE #100
+SetGlobal("PirCave","CVpir3",2)
+TriggerActivation("Cave",TRUE)
+END
+

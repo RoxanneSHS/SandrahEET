@@ -1,0 +1,33 @@
+IF
+Clicked([ANYONE])
+Range(LastTrigger,20)
+Global("WDTrav","cvels1",0)
+THEN
+RESPONSE #100
+SetGlobal("WDTrav","cvels1",1)
+DisplayStringWait(Player1,@523)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,20)
+Global("WDTrav","cvels1",1)
+!InMyArea("CVReag")
+THEN
+RESPONSE #100
+SetGlobal("WDTrav","cvels1",0)
+StartCutSceneMode()
+StartCutScene("CVcut208")
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,20)
+Global("WDTrav","cvels1",1)
+InMyArea("CVReag")
+THEN
+RESPONSE #100
+SetGlobal("WDTrav","cvels1",0)
+StartCutSceneMode()
+StartCutScene("CVcut210")
+END

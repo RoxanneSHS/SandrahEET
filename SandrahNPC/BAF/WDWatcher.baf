@@ -1,0 +1,9 @@
+IF
+Global("SanSharCom","GLOBAL",1)
+AreaCheck("CVElm1")
+InParty("CVSandr")
+See([PC])
+THEN
+RESPONSE #100
+Dialogue([PC])
+END

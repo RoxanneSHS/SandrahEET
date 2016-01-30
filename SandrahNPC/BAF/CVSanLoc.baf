@@ -1,0 +1,27 @@
+//CVSanLoc
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+CreateCreatureObjectOffset("CVColle","CVSandr",[-45.35])
+Wait(6)
+ActionOverride("Pellig",DisplayStringHead(Myself,@687))
+Wait(6)
+FadeToColor([40.0],0)
+ActionOverride("Pellig",MoveToObject("CVColle"))
+Wait(3)
+ActionOverride("CVColle",DisplayStringHead(Myself,@688))
+Wait(3)
+FadeFromColor([40.0],0)
+ActionOverride("CVColle",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+Wait(3)
+EndCutSceneMode()
+SetGlobal("CVColleEnc","GLOBAL",12)
+END
+
+

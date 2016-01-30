@@ -1,0 +1,31 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+InMyArea("CVSandr")
+Global("Katcut","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("Katcut","GLOBAL",5)
+MoveToObject(Player1)
+StartDialogueNoSet("maitrede")
+END
+
+IF
+Global("Maitre1","GlOBAL",1)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Maitre1","GlOBAL",2)
+MoveToObject(Player1)
+StartDialogueNoSet("maitrede")
+END
+
+IF
+See([PC])
+Global("Katcut","GLOBAL",6)
+Delay(6)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet("maitrede")
+END

@@ -1,0 +1,21 @@
+IF
+Global("Orcalert","CVROA5",3)
+THEN
+RESPONSE #100
+SetGlobal("Orcalert","CVROA5",4)
+CreateCreature("repthf2",[1207.1152],13)
+CreateCreature("repthf3",[1349.937],15)
+CreateCreature("repthf2",[1787.889],2)
+CreateCreature("repthf3",[1556.1495],8)
+CreateCreature("repthf2",[1693.1539],9)
+END
+
+IF
+Global("Orcalert","CVROA5",4)
+CombatCounter(0)
+InMyArea("CVSandr")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Orcalert","CVROA5",5)
+END

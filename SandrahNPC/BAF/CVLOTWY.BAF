@@ -1,0 +1,52 @@
+IF
+Detect(NearestEnemyOf(Myself))
+Global("LWYVPREP","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("LWYVPREP","LOCALS",1)
+SetGlobalTimer("WYVTIME","LOCALS",120)
+SetGlobalTimer("WYBREATH","LOCALS",SIX_MINUTES)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+ReallyForceSpell(Myself,DRAGON_STONE_SKIN)
+ReallyForceSpellRES("Spin940",NearestEnemyOf(Myself))
+END
+
+IF
+Detect(NearestEnemyOf(Myself))
+GlobalTimerExpired("WYVTIME","LOCALS")
+Global("LWYVPREP","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("LWYVPREP","LOCALS",0)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+GlobalTimerExpired("WYBREATH","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("WYBREATH","LOCALS",SIX_MINUTES)
+ReallyForceSpellRES("Spin940",NearestEnemyOf(Myself))
+RESPONSE #100
+SetGlobalTimer("WYBREATH","LOCALS",SIX_MINUTES)
+ReallyForceSpellRES("Spin940",FourthNearestEnemyOf(Myself))
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("WYVDISP","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("WYVDISP","LOCALS",1)
+ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_REMOVE_MAGIC)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+ActionListEmpty()
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),12)
+END
+
+

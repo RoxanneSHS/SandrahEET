@@ -1,0 +1,9 @@
+IF
+AreaCheck("BG3320")
+Global("OrcPrison","GLOBAL",31)
+See("Imoen2")
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet(Player1)
+END

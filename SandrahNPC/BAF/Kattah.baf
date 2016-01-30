@@ -1,0 +1,99 @@
+//khattark script Kattah.baf
+
+IF
+See([PC])
+InMyArea("CVSandr")
+Global("Katcut","GLOBAL",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+MoveViewPoint([694.903],FAST)
+Kill("Hilhus")
+DisplayStringWait("Hilath",@103)
+SmallWait(8)
+EndCutSceneMode() 
+SetGlobal("Katcut","GLOBAL",1)
+EscapeAreaMove("CVHUT1",480,319,4)
+END
+
+IF
+AreaCheck("CVSEW1")
+GlobalGT("Katcut","GLOBAL",3)
+Allegiance(Myself,NEUTRAL)
+See([PC])
+THEN
+RESPONSE #100
+ChangeEnemyAlly("kattah",ENEMY)
+END
+
+IF
+Global("Fireballet","LOCALS",4)
+AreaCheck("CVSEW1")
+Global("Reset","CVSEW1",0)
+THEN
+RESPONSE #100
+SetGlobal("Reset","CVSEW1",1)
+SetGlobal("Fireballet","LOCALS",0)
+Continue()
+END
+
+IF
+See([PC])
+Allegiance(Myself,ENEMY)
+Global("Fireballet","LOCALS",0)
+THEN
+RESPONSE #100
+ReallyForceSpell([PC],WIZARD_TRUE_DISPEL_MAGIC)
+Wait(2)
+ReallyForceSpell([PC],RED_FIREBALL)
+SetGlobal("Fireballet","LOCALS",1)
+END
+
+IF
+Global("Fireballet","LOCALS",1)
+See([PC])
+THEN
+RESPONSE #100
+ReallyForceSpell([PC],POWERWORD_STUN)
+Wait(2)
+AttackOneRound(NearestEnemyOf(Myself))
+SetGlobal("Fireballet","LOCALS",2)
+END
+
+IF
+Global("Fireballet","LOCALS",2)
+See([PC])
+Delay(6)
+THEN
+RESPONSE #100
+ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)
+Wait(2)
+ReallyForceSpell([PC],RED_FIREBALL)
+AttackOneRound(NearestEnemyOf(Myself))
+AttackOneRound(NearestEnemyOf(Myself))
+Wait(1)
+SetGlobal("Fireballet","LOCALS",3)
+END
+
+IF
+Global("Fireballet","LOCALS",3)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+ReallyForceSpell([PC],POWERWORD_BLIND)
+Wait(2)
+AttackOneRound(NearestEnemyOf(Myself))
+AttackOneRound(NearestEnemyOf(Myself))
+SetGlobal("Fireballet","LOCALS",4)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+

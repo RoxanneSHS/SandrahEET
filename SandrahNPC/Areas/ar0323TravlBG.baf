@@ -1,0 +1,25 @@
+IF
+Global("SanToBGTH","LOCALS",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+TextScreen("CVHaerd")
+AddJournalEntry(@740,QUEST)
+SetGlobal("SanToBGTH","LOCALS",2)
+Continue()
+END
+
+IF
+Global("SanToBGTH","LOCALS",2)
+THEN
+RESPONSE #100
+SetGlobal("SanToBGTH","LOCALS",3)
+ActionOverride(Player1,LeaveAreaLUAPanic("BG0153","",[793.364],12))
+ActionOverride(Player1,LeaveAreaLUA("BG0153","",[793.364],12))
+ActionOverride(Player1,SetMasterArea("BG0800"))
+ActionOverride(Player2,LeaveAreaLUA("BG0153","",[799.418],12))
+ActionOverride(Player3,LeaveAreaLUA("BG0153","",[804.470],12))
+ActionOverride(Player4,LeaveAreaLUA("BG0153","",[884.384],12))
+ActionOverride(Player5,LeaveAreaLUA("BG0153","",[908.422],12))
+ActionOverride(Player6,LeaveAreaLUA("BG0153","",[936.473],12))
+END

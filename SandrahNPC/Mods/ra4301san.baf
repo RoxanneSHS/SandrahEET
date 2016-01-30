@@ -1,0 +1,33 @@
+IF
+Global("Startmd","GLOBAL",1)
+Global("FigSan","GLOBAL",1)
+THEN
+RESPONSE #100
+SmallWait(1)
+ClearAllActions()
+HideGUI()
+StartCutSceneMode()
+Wait(1)
+FadeToColor([20.0],0)
+ActionOverride(Player1,MakeUnselectable(999999))
+ActionOverride(Player2,MakeUnselectable(999999))
+ActionOverride(Player3,MakeUnselectable(999999))
+ActionOverride(Player4,MakeUnselectable(999999))
+ActionOverride(Player5,MakeUnselectable(999999))
+ActionOverride(Player6,MakeUnselectable(999999))
+Wait(1)
+SetGlobal("FigSan","GLOBAL",2)
+SmallWait(1)
+FadeFromColor([20.0],0)
+UnhideGUI()
+EndCutSceneMode()
+ActionOverride("CVSandr",LeaveAreaLUA("ra4302","",[1028.2046],8))
+END
+
+IF
+Global("FigSan","GLOBAL",15)
+THEN
+RESPONSE #100
+SetGlobal("FigSan","GLOBAL",16)
+ActionOverride("Staffm2",StartDialogueNoSet(Player1))
+END

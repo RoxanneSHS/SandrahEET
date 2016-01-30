@@ -1,0 +1,48 @@
+IF
+Global("ImoTrav","BG3321",0)
+GlobalGT("OrcPrison","GLOBAL",16)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3321",1)
+CreateCreature("Orc01",[409.129],2)
+CreateCreature("orc03",[536.189],2)
+CreateCreature("orc05",[207.298],2)
+CreateCreature("orc02",[720.426],5)
+CreateCreature("orc04",[354.284],2)
+CreateCreature("travmag",[762.371],5)
+END
+
+IF
+GlobalGT("OrcPrison","GLOBAL",20)
+Global("ImoTrav","BG3321",1)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3321",2)
+CreateCreature("CVTravi",[587.571],7)
+ActionOverride("Container 14",CreateItem("CVTraDoc",0,0,0))
+END
+
+IF
+GlobalGT("OrcPrison","GLOBAL",27)
+Global("ImoTrav","BG3321",2)
+THEN
+RESPONSE #100
+CreateCreature("Girbax_c",[242.523],8)
+CreateCreature("Girl01",[856.466],11)
+CreateCreature("boyba1",[491.388],8)
+CreateCreature("boybax",[397.500],0)
+CreateCreature("monktu20",[541.595],0)
+SetGlobal("ImoTrav","BG3321",3)
+END
+
+IF
+Global("ImoTrav","BG3321",3)
+THEN
+RESPONSE #100
+ActionOverride("Girbax_c",RandomWalk())
+ActionOverride("Girl01",RandomWalk())
+ActionOverride("boyba1",RandomWalk())
+ActionOverride("boybax",RandomWalk())
+SetGlobal("ImoTrav","BG3321",4)
+END
+

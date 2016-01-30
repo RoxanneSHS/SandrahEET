@@ -1,0 +1,44 @@
+IF
+Global("SanJenship","GLOBAL",0)
+InParty("CVJenlig")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetMasterArea("ar6300")
+ActionOverride(Player1,LeaveAreaLUA("CVJens","",[1421.1084],4))
+ActionOverride(Player2,LeaveAreaLUA("CVJens","",[1421.1084],4))
+ActionOverride(Player3,LeaveAreaLUA("CVJens","",[1421.1084],4))
+ActionOverride(Player4,LeaveAreaLUA("CVJens","",[1421.1084],4))
+ActionOverride(Player5,LeaveAreaLUA("CVJens","",[1421.1084],4))
+ActionOverride(Player6,LeaveAreaLUA("CVJens","",[1421.1084],4))
+SetGlobal("SanJenship","GLOBAL",1)
+END
+
+IF
+Global("CVAR5500","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR5500","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("LK#IylosViekang","GLOBAL",0)
+Global("SanIylos","GLOBAL",0)
+InParty("Iylos")
+InParty("CVSandr")
+Global("SanIlStart","ar5500",0)
+THEN
+RESPONSE #100
+SetGlobal("SanIlStart","ar5500",1)
+RealSetGlobalTimer("SanIylBT","GLOBAL",300)
+END
+
+IF
+Global("SanIlStart","ar5500",1)
+RealGlobalTimerExpired("SanIylBT","GLOBAL")
+Global("SanIylos","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanIylos","GLOBAL",20)
+END

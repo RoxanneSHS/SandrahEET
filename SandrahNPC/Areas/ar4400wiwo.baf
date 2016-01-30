@@ -1,0 +1,36 @@
+IF
+Global("Wiwo","BG5400",0)
+OR(2)
+Global("ImopeltHunt","GLOBAL",1)
+Global("ImopeltHunt","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG5400",1)
+CreateCreature("wolfwi",[2556.2649],8)
+END
+
+IF
+HPPercentLT("cmzargos",65)
+Global("Reinforce","BG5400",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Reinforce","BG5400",1)
+CreateCreature("cvzar01",[2772.427],4)
+CreateCreature("cvzar01",[2772.427],4)
+CreateCreature("cvzar01",[2772.427],4)
+CreateCreature("cvzar01",[2772.427],4)
+END
+
+IF
+InMyArea("Greywolf")
+InParty("CVSandr")
+!Dead("prism")
+Global("ReinforceG","BG5400",0)
+THEN
+RESPONSE #100
+SetGlobal("ReinforceG","BG5400",1)
+CreateCreature("cvwdarch",[933.2386],1)
+CreateCreature("cvwdarch",[1151.2763],4)
+CreateCreature("cvwdarch",[1158.2521],3)
+END

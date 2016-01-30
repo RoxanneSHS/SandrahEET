@@ -1,0 +1,16 @@
+IF
+Global("F_Usesarco","MYAREA",1)
+InParty("CVSandr")
+Global("San50Ways","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("San50Ways","GLOBAL",1)
+END
+
+
+
+
+
+
+
+

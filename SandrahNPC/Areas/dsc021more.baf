@@ -1,0 +1,11 @@
+IF
+InParty("CVSandr")
+Global("addsan","dsc021",0)
+THEN
+RESPONSE #100
+CreateCreature("DSduerg2",[1667.284],8)
+CreateCreature("DSduerg2",[1647.264],6)
+CreateCreature("DSduerg2",[1627.264],4)
+CreateCreature("DSduerg2",[1617.244],0)
+SetGlobal("addsan","dsc021",1)
+END

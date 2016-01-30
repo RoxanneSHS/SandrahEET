@@ -1,0 +1,27 @@
+IF
+Global("DSduegskel","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("DSduegskel","GLOBAL",1)
+END
+
+IF
+Global("WDFishermen","GLOBAL",3)
+!PartyHasItem("CVWDFi2")
+Global("Fishsc","CVEBS1",0)
+THEN
+RESPONSE #100
+ActionOverride("Shelf4",CreateItem("CVWDFi2",0,0,0))
+SetGlobal("Fishsc","CVEBS1",1)
+END
+
+IF
+GlobalLT("WDFishermen","GLOBAL",5)
+PartyHasItem("CVWDFi2")
+PartyHasItem("CVWDFi1")
+THEN
+RESPONSE #100
+SetGlobal("WDFishermen","GLOBAL",5)
+END
+

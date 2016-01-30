@@ -1,0 +1,52 @@
+IF
+Global("SanEndBG1Plot","GLOBAL",2)
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+CreateCreature("SanMyst",[4586.1026],8)
+CreateCreature("CVDYPROT",[4546.1006],8)
+CreateCreature("solar",[4506.1066],8)
+CreateCreature("CVasstem",[4626.1106],8)
+SetGlobal("SanEndBG1Plot","GLOBAL",3)
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride("SanMyst",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVDYPROT",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("solar",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVasstem",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanEndBG1Plot","GLOBAL",5)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",32)
+Global("HaerResc","bg0123",0)
+THEN
+RESPONSE #100
+CreateCreature("DEATHKNI",[3273.1212],10)
+CreateCreature("Caddem2",[3290.1281],12)
+CreateCreature("Caddem11",[3323.1347],14)
+CreateCreature("Caddem16",[3193.1309],10)
+CreateCreature("Caddem6",[3185.1254],10)
+CreateCreature("DEATHKNI",[1717.1575],14)
+CreateCreature("DEATHKNI",[1815.1559],14)
+SetGlobal("HaerResc","bg0123",1)
+END
+
+IF
+InParty("CVJenlig")
+Global("JenEBHide","bg0123",0)
+THEN
+RESPONSE #100
+SetGlobal("JenEBHide","bg0123",1)
+END
+
+
+
+
+
+

@@ -1,0 +1,7 @@
+IF
+   Global("AzScrlInChest","BG3334",0)
+THEN
+   RESPONSE #100
+         SetGlobal("AzScrlInChest","BG3334",1)
+         ActionOverride("Container1",CreateItem("SCRLALZ",0,0,0))
+END

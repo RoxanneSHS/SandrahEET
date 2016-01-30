@@ -1,0 +1,41 @@
+IF
+AreaCheck("BG4000")
+Global("SANIMONASHINT","GLOBAL",17)
+InParty("Imoen2")
+Global("telbenexists","BG4000",0)
+THEN
+RESPONSE #100
+SetGlobal("telbenexists","BG4000",1)
+CreateCreature("telben",[938.3462],8)
+END
+
+
+IF
+Global("GullCave","GLOBAL",0)
+Global("GullCaveD","BG4000",0)
+THEN
+RESPONSE #100
+SetGlobal("GullCaveD","BG4000",1)
+TriggerActivation("Sancave",FALSE)
+END
+
+IF
+Global("GullCave","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("GullCave","GLOBAL",2)
+TriggerActivation("Sancave",TRUE)
+AddMapNote([3889.2987],@193)
+DisplayStringWait(Player1,@199)
+END
+
+IF
+Dead("Dick")
+Global("GullyOgre","GLOBAL",0)
+Global("ValiantKN","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("GullyOgre","GLOBAL",1)
+END
+
+

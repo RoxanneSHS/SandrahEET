@@ -1,0 +1,29 @@
+IF
+Global("Helpers","LOCALS",0)
+THEN
+RESPONSE #100
+CreateCreature("CVBanDE2",[3250.1725],0)
+CreateCreature("CVBanDE2",[3200.1700],0)
+CreateCreature("CVBanDE2",[3700.1678],0)
+CreateCreature("CVBanDE2",[3100.1650],0)
+CreateCreature("CVBanDE2",[3700.1633],0)
+CreateCreature("CVBanDE2",[3000.1615],0)
+CreateCreature("CVBanDE2",[2970.1600],0)
+CreateCreature("CVBanDE2",[2950.1588],0)
+SetGlobal("Helpers","LOCALS",1)
+END
+
+
+IF
+AreaCheck("BG0900")
+Global("imanel","BG0900",0)
+THEN
+RESPONSE #100
+SetGlobal("imanel","BG0900",1)
+CreateCreature("CVBanDE2",[1266.681],5)
+CreateCreature("CVBanDE2",[1191.520],4) 
+CreateCreature("CVBanDE2",[844.321],0)
+CreateCreature("CVBanDE2",[697.391],0)
+END
+
+

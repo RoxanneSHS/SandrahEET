@@ -1,0 +1,27 @@
+IF
+GlobalLT("PSanKivTaz","GLOBAL",5)
+GlobalLT("SanKivBow","GLOBAL",3)
+Global("PSanKivDrag","ar2601",0)
+InParty("CVSandr")
+!InParty("P#Kivan")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("PSanKivDrag","ar2601",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag4"))
+Continue()
+END
+
+
+IF
+GlobalLT("SanCloeRom","GLOBAL",12)
+Global("SanDra16","ar2601",0)
+InParty("CVSandr")
+!InParty("RChloe")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanDra16","ar2601",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDra16"))
+Continue()
+END

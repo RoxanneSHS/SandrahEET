@@ -1,0 +1,47 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanQualHeal","GLOBAL",3)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanQualHeal","GLOBAL",1)
+END
+
+IF
+RealGlobalTimerExpired("QuaySanInt","LOCALS")
+OR(2)
+Global("SanQualHeal","GLOBAL",4)
+Global("SanQualHeal","GLOBAL",6)
+InParty(Myself)
+InParty("CVSandr")
+TimeOfDay(DAY)
+AreaType(OUTDOOR)
+!AreaType(CITY)
+THEN
+RESPONSE #100
+IncrementGlobal("SanQualHeal","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+OR(3)
+Global("SanQualHeal","GLOBAL",3)
+Global("SanQualHeal","GLOBAL",5)
+Global("SanQualHeal","GLOBAL",7)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END

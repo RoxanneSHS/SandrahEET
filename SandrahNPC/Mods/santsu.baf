@@ -1,0 +1,25 @@
+IF
+Global("SanTsu","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SanTsu","GLOBAL",2)
+ReallyForceSpellRES("SPIN105",ThirdNearestEnemyOf(Myself))
+END
+
+IF
+Global("SanTsu","GLOBAL",2)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanTsu","GLOBAL",3)
+ReallyForceSpellRES("SPWI616",SecondNearestEnemyOf(Myself))
+END
+
+IF
+Global("SanTsu","GLOBAL",3)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanTsu","GLOBAL",0)
+ReallyForceSpellRES("SPIN788",StrongestOf([GOODCUTOFF]))
+END

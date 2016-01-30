@@ -1,0 +1,27 @@
+IF
+Global("CbKilledAllRanchVampires","GLOBAL",1)
+InParty("CVSandr")
+LevelGT("CVSandr",25)
+Global("Sanspawns","ar3601",0)
+THEN
+RESPONSE #100
+CreateCreature("mistva01",[463.180],0)
+CreateCreature("mistva01",[593.257],0)
+CreateCreature("cvvambo3",[325.199],0)
+SetGlobal("Sanspawns","ar3601",1)
+END
+
+IF
+Global("Sanspawns","ar3601",1)
+Dead("cvvambo3")
+InParty("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+InMyArea(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Sanspawns","ar3601",2)
+ActionOverride("CVSandr",SetGlobal("SanCBVampsQ","LOCALS",3))
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END

@@ -1,0 +1,110 @@
+IF
+Global("Seeall","CVSH21",0)
+THEN
+RESPONSE #100
+Explore()
+SetGlobal("Seeall","CVSH21",1)
+Continue()
+END
+
+IF
+Global("Init","CVSH21",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Init","CVSH21",1)
+CreateVisualEffectObject("AMCALL","CVFiry1")
+CreateVisualEffectObject("AMCALL","CVFiry2")
+CreateVisualEffectObject("AMCALL","CVFiry3")
+CreateVisualEffectObject("SSHELLC","CVSzass")
+END
+
+IF
+Global("SanHintFactory","GLOBAL",16)
+Global("Init","CVSH21",1)
+Delay(6)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(1)
+ActionOverride(Player4,JumpToPoint([903.590]))
+ActionOverride(Player6,JumpToPoint([925.1244]))
+SetGlobal("Init","CVSH21",2)
+MoveViewPoint([453.806],SLOW)
+ActionOverride(Player3,JumpToPoint([450.800]))
+EndCutSceneMode()
+END
+
+IF
+Global("Init","CVSH21",7)
+THEN
+RESPONSE #100
+SetGlobal("Init","CVSH21",8)
+SetGlobal("SanHintFactory","GLOBAL",20)
+ActionOverride(Player3,JumpToPoint([270.727]))
+END
+
+IF
+Global("Init","CVSH21",8)
+Global("SzassFight","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("Init","CVSH21",9)
+RealSetGlobalTimer("NewEnergy","CVSH21",45)
+END
+
+IF
+Global("SzassFight","Global",1)
+Global("SzasOut","CVSH21",0)
+THEN
+RESPONSE #100
+SetGlobal("SzasOut","CVSH21",1)
+ActionOverride("CVSzass",JumpToPoint([1170.907]))
+END
+
+IF
+Global("FillBox3","CVSH21",0)
+NumItemsGT("Boulder","Box3",1)
+Contains("Boulder","Box3")
+THEN
+RESPONSE #100
+SetGlobal("FillBox3","CVSH21",1)
+DisplayStringWait(Player1,@672)
+END
+
+IF
+Global("FillBox2","CVSH21",0)
+NumItemsGT("Boulder","Box2",1)
+Contains("Boulder","Box2")
+THEN
+RESPONSE #100
+SetGlobal("FillBox2","CVSH21",1)
+DisplayStringWait(Player1,@672)
+END
+
+IF
+Global("FillBox1","CVSH21",0)
+NumItemsGT("Boulder","Box1",1)
+Contains("Boulder","Box1")
+THEN
+RESPONSE #100
+SetGlobal("FillBox1","CVSH21",1)
+DisplayStringWait(Player1,@672)
+END
+
+IF
+Global("FillBox1","CVSH21",1)
+Global("FillBox2","CVSH21",1)
+Global("FillBox3","CVSH21",1)
+InMyArea("CVSandr")
+GlobalLT("SanHintFactory","GLOBAL",22)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanHintFactory","GLOBAL",22)
+SetGlobal("SzassLeaveEarly","CVSH21",1)
+UnDoExplore()
+ActionOverride("CVSzass",JumpToPoint([1170.907]))
+ActionOverride("CVSzass",MoveToObject(Player1))
+END

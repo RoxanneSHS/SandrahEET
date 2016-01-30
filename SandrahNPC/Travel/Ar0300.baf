@@ -1,0 +1,94 @@
+IF
+Global("CVAR0300","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0300","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("TellArenn","GLOBAL",1)
+InMyArea("Tellare2")
+Global("Stopcrier","ar0300",0)
+THEN
+RESPONSE #100
+SetGlobal("Stopcrier","ar0300",1)
+ActionOverride("Tellare2",SetGlobal("Tellofthear","LOCALS",2))
+END
+
+IF
+Global("Tsuguild","GLOBAL",1)
+InParty("CVSandr")
+InParty("Tsujath")
+!InParty("Saerileth")
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("Tsuguild","GLOBAL",2)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",30)
+THEN
+RESPONSE #100
+CreateCreature("Blackl",[1148.1438],12)
+SetGlobal("SanHaerRel1","GLOBAL",31)
+END
+
+IF
+GlobalGT("SanHaerRel1","GLOBAL",33)
+InMyArea("Blackl")
+THEN
+RESPONSE #100
+ActionOverride("Blackl",DestroySelf())
+END
+
+IF
+Global("SanToBGTH","AR0300",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+TextScreen("CVHaerd")
+AddJournalEntry(@740,QUEST)
+SetGlobal("SanToBGTH","AR0300",2)
+Continue()
+END
+
+IF
+Global("SanToBGTH","AR0300",2)
+THEN
+RESPONSE #100
+SetGlobal("SanToBGTH","AR0300",3)
+ActionOverride(Player1,LeaveAreaLUAPanic("BG0153","",[793.364],12))
+ActionOverride(Player1,LeaveAreaLUA("BG0153","",[793.364],12))
+ActionOverride(Player1,SetMasterArea("BG0800"))
+ActionOverride(Player2,LeaveAreaLUA("BG0153","",[799.418],12))
+ActionOverride(Player3,LeaveAreaLUA("BG0153","",[804.470],12))
+ActionOverride(Player4,LeaveAreaLUA("BG0153","",[884.384],12))
+ActionOverride(Player5,LeaveAreaLUA("BG0153","",[908.422],12))
+ActionOverride(Player6,LeaveAreaLUA("BG0153","",[936.473],12))
+END
+
+IF
+Global("CVMaeDidKN","ar0300",0)
+InParty("CVSandr")
+GlobalGT("MaeVarWork","GLOBAL",0)
+CombatCounter(0)
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("CVMaeDidKN","ar0300",1)
+END
+
+IF
+Global("PlayerThiefGuild","GLOBAL",1)
+GlobalGT("b!alternatives","GLOBAL",4)
+Global("JosterSilence","GLOBAL",1) 
+Global("JosterLeave","GLOBAL",1)
+InParty("CVSandr")
+!Global("PGFailed","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("PGFailed","GLOBAL",0)
+SetGlobalTimer("JosterPaid","GLOBAL",900000)
+END

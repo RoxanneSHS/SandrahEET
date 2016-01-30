@@ -1,0 +1,14 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("kesheel")
+Wait(2)
+CreateCreatureObjectOffset("Pirat1",Myself,[100.100])
+CreateCreatureObjectOffset("Pirat2",Myself,[-100.-100])
+CreateCreatureObjectOffset("Pirat3",Myself,[100.-100])
+CreateCreatureObjectOffset("Pirat4",Myself,[20.20])
+Wait(4)
+Kill(Myself)
+EndCutSceneMode()
+END

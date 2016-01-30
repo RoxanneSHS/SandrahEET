@@ -1,0 +1,30 @@
+IF
+Global("ys_SetVampChild","GLOBAL",2)
+InParty("CVSandr")
+PartyHasItem("YSVMPBLD")
+GlobalLT("Chapter","GLOBAL",16)
+Global("Chavamjump","ar0801",0)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("yschvam",DestroySelf())
+SetGlobal("Chavamjump","ar0801",1)
+END
+
+IF
+Global("Chavamjump","ar0801",1)
+THEN
+RESPONSE #100
+CreateCreature("yschvam",[1303.1085],10) 
+SetGlobal("Chavamjump","ar0801",2)
+END
+
+IF
+GlobalGT("Chapter","GLOBAL",15)
+Global("Chavamjump","ar0801",2)
+GlobalGT("ys_VampChildIsDead","GLOBAL",0)
+THEN
+RESPONSE #100
+ActionOverride("yschvam",DestroySelf())
+SetGlobal("Chavamjump","ar0801",3)
+END

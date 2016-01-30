@@ -1,0 +1,11 @@
+IF
+	Clicked([ANYONE])
+	InParty("CVSandr")
+	Global("PelligFollow","GLOBAL",1)
+THEN
+	RESPONSE #100
+		ActionOverride("Pellig",JumpToPoint([1032.914]))
+		ActionOverride("Haiass",JumpToPoint([1034.917]))
+END
+
+

@@ -1,0 +1,35 @@
+IF
+NumTimesTalkedTo(0)
+Global("Katcut","GLOBAL",1)
+See(Player1)
+InParty("CVSandr")
+CombatCounter(0)
+!See([Enemy])
+THEN
+RESPONSE #100
+SetGlobal("Katcut","GLOBAL",2)
+MoveToObject(Player1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("KatDef","GLOBAL",2)
+See(Player1)
+InParty("CVSandr")
+CombatCounter(0)
+!See([Enemy])
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+GlobalGT("Katcut","GLOBAL",6)
+Global("GetOut","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("GetOut","LOCALS",1)
+LeaveAreaLUA("CVELM1","",[1246.650],5)
+END
+

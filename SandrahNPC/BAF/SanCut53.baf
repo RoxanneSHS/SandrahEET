@@ -1,0 +1,19 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+FadeToColor([20.0],0)
+Wait(2)
+JumpToPoint([666.226])
+Wait(2)
+MoveViewPoint([660.220],INSTANT)
+FadeFromColor([20.0],0)
+SmallWait(5)
+CreateVisualEffectObject("SPDISPMA",Myself)
+EndCutSceneMode()
+END
+
+
+
+

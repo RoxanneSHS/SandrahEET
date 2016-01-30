@@ -1,0 +1,40 @@
+IF
+Global("SanSuBH","GLOBAL",25)
+Global("CapShip","CVPIR2",0)
+THEN
+RESPONSE #100
+SetGlobal("CapShip","CVPIR2",1)
+CreateCreature("capholg",[420.1274],5)
+END
+
+IF
+Global("SanSuBH","GLOBAL",31)
+Global("CapShip","CVPIR2",1)
+THEN
+RESPONSE #100
+SetGlobal("CapShip","CVPIR2",2)
+CreateCreature("cvpirc",[134.1283],15)
+CreateCreature("cvpirz",[97.1242],12)
+CreateCreature("sanseac",[222.1225],12)
+END
+
+
+IF
+Global("CapShip","CVPIR2",2)
+THEN
+RESPONSE #100
+ActionOverride("sanseac",Attack("capholg"))
+ActionOverride("cvpirz",Attack("capholg"))
+ActionOverride("cvpirc",Attack("capholg"))
+SetGlobal("CapShip","CVPIR2",3)
+RealSetGlobalTimer("capfight","CVPIR2",TWO_ROUNDS)
+END
+
+IF
+Global("CapShip","CVPIR2",3)
+RealGlobalTimerExpired("capfight","CVPIR2")
+!Dead("capholg") //  Captain Holghorn
+THEN
+RESPONSE #100
+Kill("capholg")
+END

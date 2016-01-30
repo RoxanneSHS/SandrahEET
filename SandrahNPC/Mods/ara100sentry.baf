@@ -1,0 +1,10 @@
+IF
+Global("TheVaultVamp","GLOBAL",1)
+InParty("CVSandr")
+PartyHasItem("SW1H19")
+CombatCounter(0)
+THEN
+RESPONSE #100
+DisplayStringWait("CVSandr",@705)
+SetGlobal("TheVaultVamp","GLOBAL",2)
+END

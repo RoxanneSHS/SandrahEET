@@ -1,0 +1,5 @@
+//SandrahNPC New Area Table
+SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
+
+CVELM1      CVELM1   CVELM1     0      12       713    1470   @San_001    @San_001         N
+CVDRE1      CVDRE1   CVDRE1     0      9        645    1467   @San_002    @San_002         N

@@ -1,0 +1,8 @@
+IF
+Global("NTSpawn","bg0020",1)
+THEN
+RESPONSE #100
+ActionOverride("Container 1",CreateItem("scrl9z",2,0,0))
+ActionOverride("Container 1",CreateItem("CVNARVBO",1,0,0))
+SetGlobal("NTSpawn","bg0020",2)
+END

@@ -1,0 +1,15 @@
+IF
+InMyArea("CVSandr")
+Global("SanNecro","ar3531",0)
+OR(2)
+Dead("CBC8ctl2")
+Dead("CBC8ctl3")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanNecro","ar3531",1)
+ActionOverride("CVSandr",MoveToObject(Player1))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

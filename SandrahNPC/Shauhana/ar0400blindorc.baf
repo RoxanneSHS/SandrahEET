@@ -1,0 +1,7 @@
+IF
+Global("GhatExists","AR0400",0)
+THEN
+RESPONSE #100
+SetGlobal("GhatExists","AR0400",1)
+CreateCreature("CVGhatle",[3554.1735],0)
+END

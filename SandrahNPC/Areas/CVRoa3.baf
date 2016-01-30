@@ -1,0 +1,28 @@
+IF
+Global("WDFishermen","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("WDFish1",[2242.284],0)
+CreateCreature("WDFish2",[2335.269],5)
+SetGlobal("WDFishermen","GLOBAL",1)
+END
+
+IF
+Global("WDFishermen","GLOBAL",6)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+MoveViewPoint([2232.274],INSTANT)
+ForceSpell("CVSandr",WIZARD_CHAOS_VISUALS_ONLY)
+Wait(2)
+CreateVisualEffect("icwrati",[2252.294])
+CreateVisualEffect("icwrati",[2212.254])
+Wait(6)
+CreateVisualEffect("spanisum",[2219.116])
+Wait(8)
+CreateCreature("WDFish3",[2219.116],0)
+EndCutSceneMode()
+SetGlobal("WDFishermen","GLOBAL",7)
+END

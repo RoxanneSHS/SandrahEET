@@ -1,0 +1,65 @@
+IF
+See(NearestEnemyOf(Myself))
+!StateCheck(LastSeenBy(Myself),STATE_PANIC)
+!GlobalTimerNotExpired("DemonFear","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("DemonFear","LOCALS",TWO_ROUNDS)
+ForceSpell(NearestEnemyOf(Myself),DEMON_FEAR)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+!StateCheck(Myself,STATE_IMPROVEDINVISIBILITY)
+!GlobalTimerNotExpired("DemonInvisibility","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("DemonInvisibility","LOCALS",ONE_ROUND)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+!GlobalTimerNotExpired("PitSpell","LOCALS")
+!AreaCheck("AR3004")
+THEN
+RESPONSE #60
+IncrementGlobal("Prep","LOCALS",1)
+SetGlobalTimer("PitSpell","LOCALS",ONE_ROUND)
+ForceSpell(NearestEnemyOf(Myself),DEATHKNIGHT_FIREBALL)
+RESPONSE #20
+IncrementGlobal("Prep","LOCALS",1)
+SetGlobalTimer("PitSpell","LOCALS",ONE_ROUND)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_HOLD_PERSON)
+RESPONSE #20
+IncrementGlobal("Prep","LOCALS",1)
+SetGlobalTimer("PitSpell","LOCALS",ONE_ROUND)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_FLAME_ARROW)
+END
+
+IF
+See([0.0.0.TANARI])
+THEN
+RESPONSE #100
+AttackReevaluate([0.0.0.TANARI],30)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+OR(3)
+GlobalGT("Prep","LOCALS",3)
+Range(NearestEnemyOf(Myself),10)
+HPPercentLT(Myself,50)
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+

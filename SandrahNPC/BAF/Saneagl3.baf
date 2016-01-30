@@ -1,0 +1,17 @@
+IF
+OnCreation()
+NumCreatureLT("Saneagl3",4)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("Saneagl3",Myself,[40.40])
+Continue()
+END
+
+IF
+ActionListEmpty()
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+MoveToObject(NearestEnemyOf(Myself))
+AttackReevaluate(NearestEnemyOf(Myself),60)
+END

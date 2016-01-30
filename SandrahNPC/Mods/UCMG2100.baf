@@ -1,0 +1,16 @@
+IF
+	Global("UcmMatronDrow","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("UCMGMATR",[615.3337],10) 
+		CreateCreature("UCMGDP02",[620.3372],9) 
+		CreateCreature("UCMGMA01",[764.3269],6) 
+		CreateCreature("UCMGMA02",[900.3236],6) 
+		CreateCreature("UCMGWA03",[520.3226],5) 
+		CreateCreature("UCMGWA04",[724.3340],6) 
+		CreateCreature("UCMGWA05",[710.3356],0) 
+		CreateCreature("UCMGDW03",[454.3333],6) 
+		SetGlobal("UcmMatronDrow","GLOBAL",1)
+END
+
+

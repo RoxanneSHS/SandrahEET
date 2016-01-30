@@ -1,0 +1,18 @@
+IF
+Global("CVAR0704","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0704","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("SanHealTsuja","GLOBAL",13)
+InParty("CVSandr")
+Global("ArlluviaExists","AR0704",0)
+InParty("Tsujath")
+THEN
+RESPONSE #100
+SetGlobal("ArlluviaExists","AR0704",1)
+CreateCreature("TSJFLIRT",[380.470],9)
+END

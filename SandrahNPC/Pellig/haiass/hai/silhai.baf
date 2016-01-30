@@ -1,0 +1,30 @@
+IF
+  Detect("Haiass")
+THEN
+  RESPONSE #100
+    DisplayStringNoName(Protagonist,@2)
+    EscapeAreaNoSee()
+END
+
+IF
+  !Dead("Haiass")
+  !Detect("Haiass")
+  InMyArea("Haiass")
+  Global("HaiassSeUne","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayString(Protagonist,@0)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassMove","GLOBAL",1)
+    MoveGlobalObjectOffScreen("haiass",Protagonist)
+    EscapeAreaNoSee()
+END
+
+IF
+  !InMyArea("Haiass")
+THEN
+  RESPONSE #100
+    DisplayStringNoName(Protagonist,@1)
+    EscapeAreaNoSee()
+END

@@ -1,0 +1,14 @@
+IF
+InMyArea("CVSandr")
+Global("FinCult","ra5500",0)
+Dead("Cultbeh")
+OR(4)
+PartyHasItem("Cultwep1")
+PartyHasItem("Cultwep2")
+PartyHasItem("Cultwep3")
+PartyHasItem("Cultwep4")
+THEN
+RESPONSE #100
+SetGlobal("FinCult","ra5500",1)
+ActionOverride("CVSandr",SetGlobal("SanFinCult","LOCALS",1))
+END

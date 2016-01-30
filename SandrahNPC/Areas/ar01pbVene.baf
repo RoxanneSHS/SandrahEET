@@ -1,0 +1,7 @@
+IF
+Global("SanGothSwFound","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SanGothSwFound","GLOBAL",5)
+CreateCreature("CVShPri",[508.3058],10)
+END

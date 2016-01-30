@@ -1,0 +1,21 @@
+IF
+Global("CVAR1402","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1402","GLOBAL",1)
+Continue()
+END
+
+IF
+InParty("CVSandr")
+Global("SanArch","ar1402",0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(24)
+THEN
+RESPONSE #100
+SetGlobal("SanArch","ar1402",1)
+ActionOverride("CVSandr",MoveToObject(Player1))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

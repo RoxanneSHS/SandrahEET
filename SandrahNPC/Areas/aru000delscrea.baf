@@ -1,0 +1,20 @@
+IF
+GlobalGT("SanSuBH","GLOBAL",18)
+InParty("CVSandr")
+!InMyArea("Delsvir")
+Global("PirHuntHint","BG1000",0)
+THEN
+RESPONSE #100
+SetGlobal("PirHuntHint","BG1000",1)
+CreateCreature("delsvir",[1574.1186],10)
+END
+
+IF
+Global("SandrahJoined","GLOBAL",16)
+!InParty("CVSandr")
+Global("SanJoin","BG1000",0)
+THEN
+RESPONSE #100
+SetGlobal("SanJoin","BG1000",1)
+ActionOverride("CVSandr",MoveToObject(Player1))
+END

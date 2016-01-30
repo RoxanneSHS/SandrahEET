@@ -1,0 +1,40 @@
+IF
+GlobalGT("LoveTalk","LOCALS",32)
+!Global("KiaraRomanceActive","GLOBAL",3)
+Global("SanInterKiara","LOCALS",0)
+InParty("CVSandr")
+!AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100 
+SetGlobal("SanInterKiara","LOCALS",1)
+END
+
+IF
+Global("Kiararomanceactive","GLOBAL",3)
+Global("LoveTalk","LOCALS",43)
+Global("Chapter","GLOBAL",20)
+Global("SanRepaKiara","LOCALS",0)
+OR(2)
+Global("Jerliaquest","GLOBAL",2)
+Global("Jerliaquest","GLOBAL",3)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Jerliaquest","GLOBAL",2)
+SetGlobal("SanRepaKiara","LOCALS",1)
+END
+
+IF
+OR(2)
+Global("SanInterKiara","LOCALS",1)
+Global("SanRepaKiara","LOCALS",1)
+!See([ENEMY])
+See("CVSandr")
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+Interact(Player1)
+END

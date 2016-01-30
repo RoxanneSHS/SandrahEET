@@ -1,0 +1,33 @@
+IF
+Global("Talosangr","BG1200",0)
+Global("SanUmberbowl","GLOBAL",1)
+OR(2)
+PartyHasItem("SCRLJALA")
+PartyHasItem("Misc54")
+THEN
+RESPONSE #100
+SetGlobal("Talosangr","BG1200",1)
+RealSetGlobalTimer("Talosappear","BG1200",45)
+END
+         
+IF
+Global("Talosangr","BG1200",1)
+RealGlobalTimerExpired("Talosappear","BG1200")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("CVTALOP1",Player1,[100.100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[-100.-100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[125.-100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[-130.-125])
+SetGlobal("Talosangr","BG1200",2)
+END
+
+IF
+Global("SanVsTalos","GLOBAL",0)
+Global("Talosangr","BG1200",3)
+THEN
+RESPONSE #100
+SetGlobal("SanVsTalos","GLOBAL",1)
+END

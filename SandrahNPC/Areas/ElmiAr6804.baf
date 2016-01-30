@@ -1,0 +1,33 @@
+IF
+GlobalLT("SanDoctor","GLOBAL",10)
+Global("DocWasHere","BG2304",0)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDoctor","GLOBAL",1)
+ActionOverride("CVSandr",AddSpecialAbility("SpHeal2"))
+SetGlobal("DocWasHere","BG2304",1)
+END
+
+IF
+Global("ElminsaExists","BG2304",0)
+Global("SanNarQ","GLOBAL",0)
+OR(2)
+Global("NarQMessApp","GLOBAL",2)
+Global("NarQMessApp","GLOBAL",5)
+THEN 
+RESPONSE #100
+SetGlobal("ElminsaExists","BG2304",1)
+CreateCreature("ELMINSA",[479.242],1)
+CreateCreature("NarQMes",[436.381],4)
+END
+
+IF
+InParty("CVSandr")
+PartyHasItem("Misc13L")
+THEN
+RESPONSE #100
+TakePartyItem("Misc13L")
+DestroyItem("Misc13L")
+GiveItemCreate("Misc13","CVSandr",0,0,0)
+END
+

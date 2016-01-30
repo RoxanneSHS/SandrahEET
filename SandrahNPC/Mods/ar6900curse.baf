@@ -1,0 +1,7 @@
+IF
+Global("Needcurse","bg2800",0)
+THEN
+RESPONSE #100
+SetGlobal("Needcurse","bg2800",1)
+ActionOverride("Container2",CreateItem("Belt05",0,0,0))
+END

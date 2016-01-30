@@ -1,0 +1,29 @@
+IF
+GlobalLT("SanRTFPlot4","GLOBAL",5)
+!InParty("CVSandr")
+IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+DisplayString(LastTrigger,@163)
+ActionOverride(Player1,JumpToPoint([1117.2078]))
+ActionOverride(Player2,JumpToPoint([1117.2078]))
+ActionOverride(Player3,JumpToPoint([1117.2078]))
+ActionOverride(Player4,JumpToPoint([1117.2078]))
+ActionOverride(Player5,JumpToPoint([1117.2078]))
+ActionOverride(Player6,JumpToPoint([1117.2078]))
+ActionOverride("Haiass",JumpToPoint([1117.2078]))
+END
+
+IF
+GlobalLT("Katcut","GLOBAL",4)
+InParty("CVSandr")
+IsOverMe([GOODCUTOFF])
+THEN
+RESPONSE #100
+ActionOverride(Player1,JumpToPoint([806.1020]))
+ActionOverride(Player2,JumpToPoint([806.1020]))
+ActionOverride(Player3,JumpToPoint([806.1020]))
+ActionOverride(Player4,JumpToPoint([806.1020]))
+ActionOverride(Player5,JumpToPoint([806.1020]))
+ActionOverride(Player6,JumpToPoint([806.1020]))
+END

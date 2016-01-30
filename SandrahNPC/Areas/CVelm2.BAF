@@ -1,0 +1,35 @@
+IF
+Global("SanXephRet","GLOBAL",3)
+Global("mages","CVElm2",0)
+THEN
+RESPONSE #100
+CreateCreature("elminsa",[1297.1536],9)
+CreateCreature("Sankhelb",[1319.1601],10)
+CreateCreature("wardmaga",[1397.1629],8)
+CreateCreature("wardmagb",[1386.1486],9)
+SetGlobal("mages","CVElm2",1)
+END
+
+IF
+Global("mages","CVElm2",1)
+InMyArea(Player1)
+THEN
+RESPONSE #100
+ActionOverride("elminsa",StartDialogueNoSet([PC]))
+SetGlobal("mages","CVElm2",2)
+END
+
+IF
+GlobalGT("SanXephRet","GLOBAL",6)
+Global("mages","CVElm2",2)
+THEN
+RESPONSE #100
+ActionOverride("elminsa",EscapeAreaDestroy(25))
+Wait(1)
+ActionOverride("Sankhelb",EscapeAreaDestroy(25))
+Wait(1)
+ActionOverride("wardmaga",EscapeAreaDestroy(25))
+Wait(1)
+ActionOverride("wardmagb",EscapeAreaDestroy(25))
+SetGlobal("mages","CVElm2",3)
+END

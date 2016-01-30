@@ -1,0 +1,27 @@
+IF
+Global("CVAR6100","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR6100","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SendaiDoorXP","AR6100",2)
+InParty("CVSandr")
+InParty("LRirenic")
+PartyHasItem("CVQCall")
+THEN
+RESPONSE #100
+SetGlobal("SendaiDoorXP","AR6100",3)
+END
+
+IF
+Dead("sendai")
+Global("LouaftSend","ar6100",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("Loureeg",Player1,0,0,0)
+SetGlobal("LouaftSend","ar6100",1)
+END

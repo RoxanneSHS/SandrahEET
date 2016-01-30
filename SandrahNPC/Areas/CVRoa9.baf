@@ -1,0 +1,17 @@
+IF
+Global("WDFishermen","GLOBAL",3)
+Global("Fishsc","CVROA9",0)
+THEN
+RESPONSE #100
+ActionOverride("Chest02",CreateItem("CVWDFi1",0,0,0))
+SetGlobal("Fishsc","CVROA9",1)
+END
+
+IF
+GlobalLT("WDFishermen","GLOBAL",5)
+PartyHasItem("CVWDFi2")
+PartyHasItem("CVWDFi1")
+THEN
+RESPONSE #100
+SetGlobal("WDFishermen","GLOBAL",5)
+END

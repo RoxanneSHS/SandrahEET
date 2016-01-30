@@ -1,0 +1,40 @@
+IF
+Global("SanVsTalos","GLOBAL",1)
+OR(2)
+Global("MeandarNeedHelp","GLOBAL",2)
+Global("MeandarGivesCultQuest","GLOBAL",1)
+InParty("CVSandr")
+Global("TalOnIsl","ar90pb",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOS",[413.163],0)
+CreateCreature("CVVenne2",[308.227],4)
+SetGlobal("TalOnIsl","ar90pb",1)
+END
+
+IF
+Global("TalOnIsl","ar90pb",2)
+THEN
+RESPONSE #100
+ActionOverride("CVVenne2",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("TalOnIsl","ar90pb",3)
+END
+
+IF
+HPPercentLT("CVTALOS",40)
+Global("TalOnIsl","ar90pb",3)
+THEN
+RESPONSE #100
+DisplayStringWait("CVTALOS",@701)
+ActionOverride("CVTalos",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("TalOnIsl","ar90pb",4)
+CreateCreature("CVTALOA",[57.125],12)
+END
+
+IF
+Global("TalOnIsl","ar90pb",4)
+THEN
+RESPONSE #100
+ActionOverride("CVTALOA",Enemy())
+SetGlobal("TalOnIsl","ar90pb",5)
+END

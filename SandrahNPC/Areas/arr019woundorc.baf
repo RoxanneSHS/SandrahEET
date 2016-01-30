@@ -1,0 +1,10 @@
+// Wounded Orc Arr019
+
+IF
+Global("ImorcExists","arr019",0)
+Global("SANIMONASHINT","GLOBAL",19)
+THEN
+RESPONSE #100
+SetGlobal("ImorcExists","arr019",1)
+CreateCreature("orcimo1",[957.352],6)
+END

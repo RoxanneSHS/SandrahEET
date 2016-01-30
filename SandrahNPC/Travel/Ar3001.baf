@@ -1,0 +1,23 @@
+IF
+Global("CVAR3001","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR3001","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("ItembluWK","GLOBAL",0)
+PartyHasItem("Plot01j")
+THEN
+RESPONSE #100
+SetGlobal("ItembluWK","GLOBAL",1)
+END
+
+IF
+Global("ItemgreWK","GLOBAL",0)
+PartyHasItem("Plot01k")
+THEN
+RESPONSE #100
+SetGlobal("ItemgreWK","GLOBAL",1)
+END

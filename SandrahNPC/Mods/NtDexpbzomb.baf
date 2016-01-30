@@ -1,0 +1,26 @@
+IF
+AreaCheck("BG0400")
+Detect([PC])
+Range(LastSeenBy(Myself),20)
+Global("NTotSCSpawn","BG0400",1)
+THEN
+RESPONSE #100
+StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+IF
+GlobalGT("DexterWrong","GLOBAL",0)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+ActionOverride("NTDXTER",Enemy())
+Continue()
+END
+
+IF
+Global("NTotSCSpawn","BG0400",2)
+THEN
+RESPONSE #100
+SetGlobal("NTotSCSpawn","BG0400",3)
+Enemy()
+END

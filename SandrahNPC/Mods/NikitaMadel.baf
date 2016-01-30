@@ -1,0 +1,35 @@
+IF
+Global("SanHealNiki","GLOBAL",5)
+AreaCheck("ar1000")
+See("CMNikita") 
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SanHealNiki","GLOBAL",7)
+AreaCheck("cm0754")
+See("CMNikita") 
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("CMOversightEndGame","GLOBAL",2)
+AreaCheck("ar1000")
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("CMOversightEndGame","GLOBAL",4)
+AreaCheck("cm0754")
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

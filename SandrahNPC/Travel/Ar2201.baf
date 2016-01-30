@@ -1,0 +1,19 @@
+IF
+Global("CVAR2201","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2201","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanHealXul","GLOBAL",3)
+!Global("summonTheDemon","AR2201",0)
+InParty("CVSandr")
+Global("CVVispi","ar2201",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("CVVispi"))
+SetGlobal("CVVispi","ar2201",1)
+END

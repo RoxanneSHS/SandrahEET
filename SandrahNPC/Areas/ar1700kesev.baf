@@ -1,0 +1,42 @@
+IF
+InParty("CVSandr")
+InParty("Saerileth")
+Global("KesevarExists","AR1700",0)
+GlobalGT("FoundKesevar","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("KesevarExists","AR1700",1)
+CreateCreature("KESEVAR",[2474.1637],11)
+CreateCreature("NSCLERIC",[2938.1568],0)
+END
+
+IF
+Global("KesevarRedeemed","GLOBAL",1)
+Global("SaerilethVamped","GLOBAL",2)
+Global("Kesevar1Exists","AR1700",0)
+THEN
+RESPONSE #100
+SetGlobal("Kesevar1Exists","AR1700",1)
+SetGlobal("SaerilethVamped","GLOBAL",3)
+CreateCreature("KESEVAR1",[2474.1637],11)
+END
+
+IF
+InParty("Saerileth")
+Global("GunshainExists","AR1700",0)
+Global("FoundGunshain","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("GunshainExists","AR1700",1)
+CreateCreature("GUNSHAIN",[571.1074],1)
+END
+
+IF
+InParty("Saerileth")
+GlobalLT("NSGOONSSpawned","AR1700",5)
+Global("FoundGunshain","GLOBAL",1)
+THEN
+RESPONSE #100
+CreateCreature("NSGOON",[693.1152],3)
+IncrementGlobal("NSGOONSSpawned","AR1700",1)
+END

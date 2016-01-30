@@ -1,0 +1,63 @@
+IF
+GlobalLT("SanHealyesl","GLOBAL",3)
+InParty(Myself)
+InParty("CVSandr")
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealyesl","GLOBAL",1)
+END
+
+IF 
+OR(2)
+Global("SanHealyesl","GLOBAL",3)
+Global("SanYeslElmi","GLOBAL",2)  
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+GlobalGT("SanYesl","GLOBAL",4)
+InParty(Myself)
+InParty("CVSandr")
+See("Elminsa")
+Global("SanYeslElmi","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanYeslElmi","GLOBAL",1)
+END
+
+IF
+Global("SanYeslElmi","GLOBAL",1)
+!AreaCheck("CVDre2")
+THEN
+RESPONSE #100
+SetGlobal("SanYeslElmi","GLOBAL",2)
+END
+
+IF
+Global("SanYesl","GLOBAL",5)
+Global("SanYeslElmi","GLOBAL",3)
+AreaType(OUTDOOR)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanYeslElmi","GLOBAL",4)
+ActionOverride("CVSandr",AddSpecialAbility("CVDra21"))
+END

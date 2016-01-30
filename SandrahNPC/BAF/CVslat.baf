@@ -1,0 +1,31 @@
+IF
+Global("Surrender","LOCALS",0)
+HPLT(Myself,50)
+Dead("CVSlaw")
+Dead("CVslam")
+Dead("CVslap")
+Dead("CVslao")
+THEN
+RESPONSE #100
+SetGlobal("Surrender","LOCALS",1)
+END
+
+IF
+Global("Surrender","LOCALS",1)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+OR(4)
+See(Player1)
+See("CVSandr")
+See("Keldorn")
+See("Anomen")
+THEN
+RESPONSE #100
+SetGlobal("Surrender","LOCALS",2)
+ChangeEnemyAlly(Myself,NEUTRAL)
+DropInventory()
+StartDialogueNoSet([PC])
+END
+
+

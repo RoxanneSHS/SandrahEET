@@ -1,0 +1,66 @@
+IF
+Global("CVAR0406","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0406","GLOBAL",1)
+Continue()
+END
+
+IF
+InMyArea("CVSandr")
+Global("SanPelligFreeTab","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride("Tabitha",EscapeArea())
+SetGlobal("SanPelligFreeTab","GLOBAL",2)
+DisplayStringHead("Beast",@457)
+END
+
+IF
+InMyArea("CVSandr")
+!Dead("Lehtinan")
+Global("SanHendak","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",Attack("Lehtinan"))
+END
+
+IF
+InMyArea("CVSandr")
+Global("SanHendAff","GLOBAL",2)
+RealGlobalTimerExpired("SanHendAffT","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("SanHendAff","GLOBAL",3)
+END
+
+IF
+Global("Itemsoulet","GLOBAL",0)
+PartyHasItem("cbltcnt1")
+PartyHasItem("cbltcnt2")
+THEN
+RESPONSE #100
+SetGlobal("Itemsoulet","GLOBAL",1)
+END
+
+IF
+Global("CleanMinsc","AR0406",0)
+InParty("CVShau")
+!InParty("Minsc")
+THEN
+RESPONSE #100
+ActionOverride("Minsc",DestroySelf())
+SetGlobal("CleanMinsc","AR0406",1)
+END
+
+IF
+Global("CleanMinsc","AR0406",1)
+THEN
+RESPONSE #100
+SetGlobal("CleanMinsc","AR0406",2)
+SetGlobal("SPRITE_IS_DEADMINSC","GLOBAL",0)
+CreateCreature("Minsc12",[1178.1386],6)
+ActionOverride("Minsc",SetGlobal("IWasKickedOut","LOCALS",1))
+ActionOverride("Minsc",SetNumTimesTalkedTo(1))
+ActionOverride("Minsc",SetDialog("MINSCP_"))
+END

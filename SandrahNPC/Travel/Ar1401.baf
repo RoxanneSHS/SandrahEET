@@ -1,0 +1,8 @@
+IF
+Global("CVAR1401","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1401","GLOBAL",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVFreed"))
+Continue()
+END

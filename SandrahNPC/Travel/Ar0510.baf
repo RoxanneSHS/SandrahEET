@@ -1,0 +1,21 @@
+IF
+Global("CVAR0510","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0510","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanHaerRel1","GLOBAL",36)
+GlobalGT("Chapter","GLOBAL",21)
+Global("HAerSwa","ar0510",0)
+InParty("CVSandr")
+!InParty("Haerdalis")
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("HaePris"))
+ActionOverride("CVSandr",AddSpecialAbility("CVSuccu"))
+SetGlobal("HAerSwa","ar0510",1)
+END

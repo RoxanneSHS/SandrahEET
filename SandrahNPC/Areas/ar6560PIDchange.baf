@@ -1,0 +1,9 @@
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+Global("EnteredKeep","GLOBAL",1)
+Global("SanPidPack","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("SanPidPack","GLOBAL",12)
+Continue()
+END

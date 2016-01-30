@@ -1,0 +1,30 @@
+// Elminster Revenge
+
+IF
+Dead("CVSandr")
+Global("ElmRevDau","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("ElmRevDau","GLOBAL",1)
+DisplayStringWait(Myself,@158)
+RealSetGlobalTimer("ElmRevDauT","GLOBAL",TWO_DAYS)
+END
+
+IF
+RealGlobalTimerExpired("ElmRevDauT","GLOBAL")
+Global("ElmRevDau","GLOBAL",1)
+!Dead("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("ElmRevDau","GLOBAL",0)
+END
+
+IF
+RealGlobalTimerExpired("ElmRevDauT","GLOBAL")
+Global("ElmRevDau","GLOBAL",1)
+Dead("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("ElmRevDau","GLOBAL",2)
+CreateCreatureObjectDoor("Elminsa",Player1,0,0,0)
+END

@@ -1,0 +1,21 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+Dialogue([PC])
+END
+
+
+IF
+Global("SanNarQ","GLOBAL",7)
+Global("SanWDHi","GLOBAL",0)
+InParty("CVSandr") 
+See(Player1)
+THEN
+RESPONSE #100
+SetGlobal("SanWDHi","GLOBAL",1)
+MoveToObject(Player1)
+Dialogue([PC])
+END
+

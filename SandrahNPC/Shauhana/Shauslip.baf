@@ -1,0 +1,12 @@
+IF
+IsOverMe(Player1)
+Global("SanShauMeet","GLOBAL",5)
+InParty("CVSandr")
+InParty("CVShau")
+THEN
+RESPONSE #100
+ForceSpell(Player1,WIZARD_GREASE)
+SetGlobal("SanShauMeet","GLOBAL",6)
+END
+
+

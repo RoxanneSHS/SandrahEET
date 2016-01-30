@@ -1,0 +1,14 @@
+IF
+GlobalGT("Katcut","GLOBAL",3)    
+Global("MaitreExists","CVWDRE",0)
+THEN
+RESPONSE #100
+SetGlobal("MaitreExists","CVWDRE",1)
+CreateCreature("maitrde",[558.485],4)
+CreateCreature("CVRes3",[1028.837],4)
+CreateCreature("CVRes4",[937.941],4)
+CreateCreature("CVRes1",[1161.714],4)
+CreateCreature("CVRes1",[812.433],0)
+CreateCreature("CVRes2",[855.506],8)
+END
+

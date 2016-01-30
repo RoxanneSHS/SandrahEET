@@ -1,0 +1,8 @@
+IF
+Dead("tazok")
+Global("Restore","BG0700",0)
+THEN
+RESPONSE #100
+SetGlobal("SPRITE_IS_DEADTAZOK","GLOBAL",0)
+SetGlobal("Restore","BG0700",1)
+END

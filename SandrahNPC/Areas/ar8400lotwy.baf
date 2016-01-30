@@ -1,0 +1,37 @@
+IF
+Global("CVLotPlot","GLOBAL",7)
+THEN
+RESPONSE #100
+SetGlobal("CVLotPlot","GLOBAL",8)
+CreateCreature("CvLotWy",[1950.528],8)
+END
+
+IF
+Global("CVLotPlot","GLOBAL",8)
+Dead("CVLotwy")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("CVLotPlot","GLOBAL",9)
+ClearAllActions()
+StartCutSceneMode()
+Wait(2)
+ActionOverride("CVSandr",MoveToObject("CVLotWy"))
+ActionOverride(Player1,MoveToObject("CVLotWy"))
+SmallWait(8)
+DisplayStringWait("CVSandr",@845)
+SmallWait(8)
+ActionOverride("CVSandr",ForceSpell(Myself,CLERIC_SPIRITUAL_HAMMER))
+SmallWait(8)
+ActionOverride("CVSandr",TakePartyItemNum("CVHeherb",1))
+ActionOverride("CVSandr",TakePartyItemNum("dspotn01",1))
+GiveItemCreate("potn47",Player1,1,0,0)
+Wait(2)
+ActionOverride("CVSandr",DestroyItem("CVHeherb"))
+ActionOverride("CVSandr",DestroyItem("dspotn01"))
+EndCutSceneMode()
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+

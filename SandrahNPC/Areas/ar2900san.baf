@@ -1,0 +1,10 @@
+IF
+Global("SanhellComm","ar2900",0)
+InMyArea("CVSandr")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanhellComm","ar2900",1)
+END
+
+

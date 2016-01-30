@@ -1,0 +1,46 @@
+IF
+Global("CVAR1404","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1404","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",20)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("narong2",[4333.368],11)
+CreateCreature("alzalig",[4355.452],4)
+SetGlobal("SanHaerRel1","GLOBAL",21)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",21)
+CombatCounter(0)
+Delay(6)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride("CVSandr",JumpToPoint([4109.697]))
+StartCutSceneMode()
+MoveViewPoint([4345.400],INSTANT)
+EndCutSceneMode()
+ActionOverride("alzalig",StartDialogNoSet("Alzalig"))
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",22)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+ActionOverride("CVSandr",JumpToPoint([65.673]))
+Wait(6)
+CreateCreature("DEATHKNI",[4280.529],4)
+CreateCreature("DEATHKNI",[4058.450],14)
+CreateCreature("DEATHKNS",[4109.697],7)
+EndCutSceneMode()
+SetGlobal("SanHaerRel1","GLOBAL",23)
+END
+

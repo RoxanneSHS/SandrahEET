@@ -1,0 +1,17 @@
+IF
+Global("CVAR0500","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0500","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("TellArenn","GLOBAL",1)
+InMyArea("Tellare3")
+Global("Stopcrier","ar0500",0)
+THEN
+RESPONSE #100
+SetGlobal("Stopcrier","ar0500",1)
+ActionOverride("Tellare3",SetGlobal("Tellofthear","LOCALS",2))
+END

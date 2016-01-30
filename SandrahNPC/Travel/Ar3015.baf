@@ -1,0 +1,16 @@
+IF
+Global("CVAR3015","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR3015","GLOBAL",1)
+Continue()
+END
+
+IF
+InParty("CVSandr")
+InParty("Lrirenic")
+GlobalLT("Jonredemptioncounter","GLOBAL",0)
+THEN
+RESPONSE #100
+IncrementGlobal("Jonredemptioncounter","GLOBAL",1000)
+END

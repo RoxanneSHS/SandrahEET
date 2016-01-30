@@ -1,0 +1,8 @@
+IF
+Global("SanLoveHut","GLOBAL",3)
+Global("saogmaExists","CVWOHA",0)
+THEN
+RESPONSE #100
+SetGlobal("saogmaExists","CVWOHA",1)
+CreateCreature("saogma",[610.529],4)
+END

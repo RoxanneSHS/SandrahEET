@@ -1,0 +1,9 @@
+IF
+Name("udsimyaz",Myself)
+Global("SanProph","GLOBAL",5)
+See("CVSandr")
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogueNoSet(LastSeenBy(Myself))
+END

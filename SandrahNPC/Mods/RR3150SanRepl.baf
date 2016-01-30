@@ -1,0 +1,9 @@
+IF
+Global("SanRotRepl","GLOBAL",2)
+!InParty("Driz2")
+InParty("CVSandr")
+Global("Ttcmal","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Ttcmal","GLOBAL",1)
+END

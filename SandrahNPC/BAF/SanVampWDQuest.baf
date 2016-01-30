@@ -1,0 +1,88 @@
+IF
+Global("ENDOFBG1","GLOBAL",2) 
+Global("SanVampWDQuest","GLOBAL",0)
+GlobalLT("SanSharInt","GLOBAL",25)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",1)
+RealSetGlobalTimer("SanVampWDTrig","LOCALS",38000)
+END
+
+IF
+RealGlobalTimerExpired("SanVampWDTrig","LOCALS")
+Global("SanVampWDQuest","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",2)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+Global("Chapter","GLOBAL",19)
+Global("SanVampWDQuest","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",2)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",2)
+AreaType(OUTDOOR)
+!AreaType(CITY)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",3)
+CreateCreatureObjectOffset("NarQMes",Myself,[100.-100])
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",4)
+GlobalLT("SanSharInt","GLOBAL",29)
+THEN
+RESPONSE #100
+AddSpecialAbility("SanWDHo")
+AddSpecialAbility("SanWDRE")
+SetGlobal("SanVampWDQuest","GLOBAL",5)
+RealSetGlobalTimer("SanVampWDTrig","LOCALS",3600)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",4)
+GlobalGT("SanSharInt","GLOBAL",29)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",5)
+RealSetGlobalTimer("SanVampWDTrig","LOCALS",3600)
+END
+
+IF
+RealGlobalTimerExpired("SanVampWDTrig","LOCALS")
+Global("SanVampWDQuest","GLOBAL",5)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",6)
+END
+
+
+IF
+GlobalGT("SanVampWDQuest","GLOBAL",4)
+GlobalLT("SanVampWDQuest","GLOBAL",8)
+AreaCheck("CVDRE1")
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",8)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",17)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",18)
+StartCutSceneMode()
+StartCutScene("CVcut209")
+END

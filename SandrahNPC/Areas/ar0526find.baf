@@ -1,0 +1,26 @@
+IF
+InMyArea("CVSandr")
+Global("SankangTors","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SankangTors","GLOBAL",1)
+END
+
+IF
+Global("SankangTors","GLOBAL",3)
+Global("UsedCrypt","AR0526",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+StartCutScene("Sankaxx1")
+END
+
+IF
+Global("SankangTors","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("SankangTors","GLOBAL",5)
+ActionOverride("CVSandr",Attack("HLLICH"))
+END

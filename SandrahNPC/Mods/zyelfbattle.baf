@@ -1,0 +1,18 @@
+IF
+GlobalLT("SetBalrogDialog","Zy1800",11)
+InParty("CVSandr")
+OR(10)
+NumDead("zy18bald",3)
+NumDead("zy18bale",3)
+NumDead("zy18balf",3)
+NumDead("zy18balg",3)
+NumDead("zy18balh",3)
+NumDead("zy18bali",3)
+NumDead("zy18balj",3)
+NumDead("zy18balk",3)
+NumDead("zy18ball",3)
+NumDead("zy18balm",3)
+THEN
+RESPONSE #100
+SetGlobal("SetBalrogDialog","Zy1800",11)
+END

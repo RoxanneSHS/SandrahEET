@@ -1,0 +1,10 @@
+IF
+See(Player1)
+OR(3)
+Global("SanInOne","GLOBAL",0)
+Global("SanInOne","GLOBAL",1)
+Global("SanInTwo","GLOBAL",0)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END

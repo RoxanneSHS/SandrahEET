@@ -1,0 +1,21 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+Wait(1)
+StorePartyLocations()
+Wait(3)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("AR2900","",[1869.581],9)
+LeaveAreaLUA("AR2900","",[1869.581],9)
+Wait(1)
+CreateCreature("Bhaal01",[2019.488],0)
+Wait(1)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+SetGlobal("SanAfterJon","GLOBAL",5)
+ActionOverride("Bhaal01",StartDialogueNoSet([PC]))
+END
+

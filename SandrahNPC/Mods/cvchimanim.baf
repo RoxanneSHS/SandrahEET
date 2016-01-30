@@ -1,0 +1,7 @@
+IF
+Global("Mylook","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Mylook","LOCALS",1)
+Polymorph(CHIMERA)
+END

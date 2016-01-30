@@ -1,0 +1,72 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+InMyArea("CVSandr")
+Global("NarongM","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("NarongM","GLOBAL",1)
+MoveToObject(Player1)
+StartDialogueNoSet("Narongu")
+END
+
+IF
+	Global("SanNarQ","GLOBAL",2)
+THEN
+	RESPONSE #100
+		ClearAllActions()
+		SaveGame(0)
+		SmallWait(2)
+		StartCutSceneMode()
+		FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,LeaveAreaLUA("BG5300","",[3800.1600],4))
+		ActionOverride(Player1,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		ActionOverride(Player2,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		ActionOverride(Player3,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		ActionOverride(Player4,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		ActionOverride(Player5,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		ActionOverride(Player6,LeaveAreaLUA("BG5300","",[3800.1600],0))
+		FadeFromColor([30.0],0)
+                EndCutSceneMode()
+END
+
+IF
+See([PC])
+Global("SanNarQ","GLOBAL",9)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet("Narongu")
+END
+
+IF
+See([PC])
+Global("SanDriDrowAmb","GLOBAL",3)
+InMyArea("CVSandr")
+AreaCheck("F_8889")
+THEN
+RESPONSE #100
+StartDialogueNoSet("Narongu")
+END
+
+IF
+See("CVSandr")
+Global("SanHaerRel1","GLOBAL",33)
+Global("NarFinal","CVHel1",0)
+AreaCheck("CVHel1")
+THEN
+RESPONSE #100
+StartDialogueNoSet("Narongu")
+END
+
+IF
+AttackedBy([GOODCUTOFF],DEFAULT)
+Allegiance(Myself,ANYTHING)
+THEN
+RESPONSE #100
+Enemy()
+Attack(NearestEnemyOf(Myself))
+END
+

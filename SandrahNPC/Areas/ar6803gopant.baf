@@ -1,0 +1,29 @@
+IF
+Global("ItemGopant","GLOBAL",0)
+PartyHasItem("Misc47")
+THEN
+RESPONSE #100
+SetGlobal("ItemGopant","GLOBAL",1)
+END
+
+IF
+GlobalLT("Chapter","GLOBAL",2)
+InParty("CVSandr")
+Global("Jenexists","bg2303",0)
+THEN
+RESPONSE #100
+SetGlobal("Jenexists","bg2303",1)
+CreateCreature("CVJenlig",[1157.755],13)
+CreateCreature("CVJenDe",[1221.766],5) 
+END
+
+IF
+GlobalGT("Chapter","GLOBAL",1)
+Global("Jenexists","bg2303",1)
+!InParty("CVJenlig")
+THEN
+RESPONSE #100
+ActionOverride("CVJenlig",DestroySelf())
+SetGlobal("Jenexists","bg2303",2)
+Continue()
+END

@@ -1,0 +1,25 @@
+//Dream of Mystra SanmysG
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+FadeToColor([20.0],0)
+StorePartyLocations()
+Wait(2)
+LeaveAreaLUA("CVDRE1","",[1005.1160],7)
+FadeFromColor([20.0],0)
+Wait(2)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+ActionOverride("Sanpre3",StartDialogueNoSet("Sanpre2"))
+Wait(2)
+EndCutSceneMode()
+END
+

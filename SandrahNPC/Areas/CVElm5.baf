@@ -1,0 +1,42 @@
+IF
+Global("LiveHere","CVElm5",0)
+THEN
+RESPONSE #100
+SetGlobal("LiveHere","CVElm5",1)
+TriggerActivation("ToHouse",FALSE)
+END
+
+IF
+Global("RTFOn","CVElm5",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","CVElm5",1)
+TriggerActivation("ToRTF",FALSE)
+END
+
+IF
+OR(2)
+Global("SanSharCom","GLOBAL",8)
+Global("SanSharNewHome","GLOBAL",1) 
+Global("LiveHere","CVElm5",1)
+THEN
+RESPONSE #100
+SetGlobal("LiveHere","CVElm5",2)
+END
+
+IF
+Global("LiveHere","CVElm5",2)
+THEN
+RESPONSE #100
+SetGlobal("LiveHere","CVElm5",3)
+TriggerActivation("ToHouse",TRUE)
+END
+
+IF
+Global("SanSharCom","GLOBAL",2)
+Global("SharQ","CVElm5",0)
+THEN
+RESPONSE #100
+SetGlobal("SharQ","CVElm5",1)
+CreateCreature("CVShacom",[525.1188],13)
+END

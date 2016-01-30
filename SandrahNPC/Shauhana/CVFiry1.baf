@@ -1,0 +1,79 @@
+//CVFiry1
+
+IF
+Global("Init","CVSH21",9)
+RealGlobalTimerExpired("NewEnergy","CVSH21")
+Global("FillBox1","CVSH21",0)
+THEN
+RESPONSE #100
+CreateVisualEffectObject("AMCALL",Myself)
+SetGlobal("NewEnergy1","LOCALS",1)
+RealSetGlobalTimer("NewEnergy1T","LOCALS",25)
+END
+
+IF
+Global("NewEnergy1","LOCALS",1)
+RealGlobalTimerExpired("NewEnergy1T","LOCALS")
+Global("FillBox1","CVSH21",0)
+THEN
+RESPONSE #100
+CreateVisualEffectObject("AMCALL",Myself)
+SetGlobal("NewEnergy1","LOCALS",1)
+RealSetGlobalTimer("NewEnergy1T","LOCALS",25)
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(6)
+THEN
+RESPONSE #100
+ActionOverride("skesh201",Attack("CVFiry1"))
+Continue()
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("skesh202",Attack("CVFiry1"))
+Continue()
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("skesh203",Attack("CVFiry1"))
+Continue()
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("skego203",Attack("CVFiry1"))
+Continue()
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("skego205",Attack("CVFiry1"))
+Continue()
+END
+
+IF
+Global("SeeLake","CVSH22",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("skego205",Attack("CVFiry1"))
+Continue()
+END
+
+

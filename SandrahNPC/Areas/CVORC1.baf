@@ -1,0 +1,30 @@
+IF
+GlobalLT("OrcPrison","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",5)
+TriggerActivation("CVORC2",FALSE)
+TriggerActivation("CVORC2Info",TRUE)
+CreateCreature("CVORW3",[1443.802],5)
+END
+
+IF
+PartyHasItem("OrcPrk1")
+PartyHasItem("OrcPrk2")
+Global("OrcPrison","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",6)
+TriggerActivation("CVORC2",TRUE)
+TriggerActivation("CVORC2Info",FALSE)
+END  
+
+IF
+Dead("CVORW3")
+CombatCounter(0)
+Global("HaynEx","CVORC1",0)
+THEN
+RESPONSE #100
+SetGlobal("HaynEx","CVORC1",1)
+CreateCreature("CVHayn",[1495.845],5)
+END

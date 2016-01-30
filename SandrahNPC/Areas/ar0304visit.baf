@@ -1,0 +1,18 @@
+IF
+InMyArea("CVSandr")
+Global("CyrDisg","ar0304",0)
+THEN
+RESPONSE #100
+CreateCreature("CVCyr01",[619.787],4)
+SetGlobal("CyrDisg","ar0304",1)
+END
+
+IF
+InParty("CVSandr")
+Global("CyrDisg","ar0304",2)
+Delay(24)
+THEN
+RESPONSE #100
+SetGlobal("CyrDisg","ar0304",3)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

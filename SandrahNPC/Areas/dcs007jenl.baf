@@ -1,0 +1,21 @@
+IF
+Global("BansheeMap3","GLOBAL",3)
+InParty("CVJenlig")
+InParty("CVSandr")
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100 
+SetGlobal("BansheeMap3","GLOBAL",4)
+CreateCreature("CVJenill",[2049.629],10)
+CreateCreature("Mindfl01",[2453.580],5)
+END
+
+IF
+Global("BansheeMap3","GLOBAL",5)
+Dead("CVJenill")
+THEN
+RESPONSE #100 
+SetGlobal("BansheeMap3","GLOBAL",6)
+ActionOverride("CVSandr",AddSpecialAbility("CVJen03"))
+END

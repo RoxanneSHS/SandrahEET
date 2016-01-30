@@ -1,0 +1,104 @@
+IF
+Global("Produce","CVSH20",4)
+Global("CVWinsSh20","CVSH20",0)
+THEN
+RESPONSE #100
+CreateCreature("cvnarga",[2349.1628],10)
+CreateCreature("sanwins2",[2305.1476],11)
+SetGlobal("CVWinsSh20","CVSH20",1)
+END
+
+IF
+Global("ExitSets","CVSH20",0)
+THEN
+RESPONSE #100
+SetGlobal("ExitSets","CVSH20",1)
+TriggerActivation("Graveyard",FALSE)
+TriggerActivation("UpstairsInfo",TRUE)
+TriggerActivation("Door1",FALSE)
+TriggerActivation("Door2",FALSE)
+TriggerActivation("Door1Info",TRUE)
+TriggerActivation("Door2Info",TRUE)
+END
+
+IF
+Global("ExitSets","CVSH20",1)
+PartyHasItem("CVDaWard")
+THEN
+RESPONSE #100
+SetGlobal("ExitSets","CVSH20",2)
+TriggerActivation("Door1",TRUE)
+TriggerActivation("Door2",TRUE)
+TriggerActivation("Door1Info",FALSE)
+TriggerActivation("Door2Info",FALSE)
+END
+
+IF
+Global("Produce","CVSH20",3)
+THEN
+RESPONSE #100
+SetGlobal("Produce","CVSH20",4)
+TriggerActivation("Graveyard",TRUE)
+TriggerActivation("UpstairsInfo",FALSE)
+END
+
+IF
+GlobalLT("Produce","CVSH20",3)
+GlobalGT("SanHintFactory","GLOBAL",22)
+THEN
+RESPONSE #100
+SetGlobal("Produce","CVSH20",3)
+END
+
+IF
+Global("Produce","CVSH20",0)
+THEN
+RESPONSE #100
+SetGlobal("Produce","CVSH20",1)
+SetGlobalTimer("ProduceT","CVSH20",120)
+END
+
+IF
+Global("Produce","CVSH20",1)
+GlobalTimerExpired("ProduceT","CVSH20")
+RandomNum(3,1)
+THEN
+RESPONSE #100
+CreateCreature("skesh20",[2060.331],4)
+SetGlobal("Produce","CVSH20",2)
+Continue()
+END
+
+IF
+Global("Produce","CVSH20",1)
+GlobalTimerExpired("ProduceT","CVSH20")
+RandomNum(3,2)
+THEN
+RESPONSE #100
+CreateCreature("skesh20",[1588.603],0)
+SetGlobal("Produce","CVSH20",2)
+Continue()
+END
+
+IF
+Global("Produce","CVSH20",1)
+GlobalTimerExpired("ProduceT","CVSH20")
+RandomNum(3,3)
+THEN
+RESPONSE #100
+CreateCreature("skesh20",[2253.2062],2)
+SetGlobal("Produce","CVSH20",2)
+Continue()
+END
+
+IF
+Global("Produce","CVSH20",2)
+THEN
+RESPONSE #100
+SetGlobal("Produce","CVSH20",1)
+SetGlobalTimer("ProduceT","CVSH20",120)
+END
+
+
+
+

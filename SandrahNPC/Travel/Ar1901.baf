@@ -1,0 +1,22 @@
+IF
+Global("CVAR1901","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1901","GLOBAL",1)
+TriggerActivation("THESOURCE",TRUE)
+SetGlobal("NonEvilPath","AR1901",1)
+Continue()
+END
+
+IF
+GlobalLT("SanHealkal","GLOBAL",15)
+GlobalGT("DruidQuest2","GLOBAL",1)
+Global("DWere","ar1901",0)
+InParty("CVSandr")
+!InParty("Jaheira")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("DWere","ar1901",1)
+ActionOverride("CVSandr",AddSpecialAbility("cvdra15"))
+END

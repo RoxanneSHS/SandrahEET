@@ -1,0 +1,47 @@
+IF
+Global("Bridge","CVSH12",0)
+THEN
+RESPONSE #100
+SetGlobal("Bridge","CVSH12",1)
+TriggerActivation("ToBridge",FALSE)
+Continue()
+END
+
+IF
+Global("SanHintFactory","GLOBAL",25)
+Global("BattleTrans","CVSH12",0)
+THEN
+RESPONSE #100
+SetGlobal("BattleTrans","CVSH12",1)
+ClearAllActions()
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride(Player1,LeaveAreaLUA("cvsh22","",[3747.1085],4))
+ActionOverride(Player2,LeaveAreaLUA("cvsh22","",[3747.1085],3))
+ActionOverride(Player3,LeaveAreaLUA("cvsh22","",[3747.1085],6))
+ActionOverride(Player4,LeaveAreaLUA("cvsh22","",[3747.1085],7))
+ActionOverride(Player5,LeaveAreaLUA("cvsh22","",[3747.1085],3))
+ActionOverride(Player6,LeaveAreaLUA("cvsh22","",[3747.1085],5))
+Wait(1)
+FadeFromColor([20.0],0)
+END
+
+IF
+Global("SanHintFactory","GLOBAL",30)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanHintFactory","GLOBAL",31)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+GlobalLT("SanRantSp","LOCALS",3)
+GlobalGT("SanHintFactory","GLOBAL",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanRantSp","LOCALS",3)
+AddSpecialAbility("CVRant")
+END

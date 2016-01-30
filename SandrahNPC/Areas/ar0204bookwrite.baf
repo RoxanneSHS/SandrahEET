@@ -1,0 +1,56 @@
+IF
+OnCreation()
+Global("OpenArcive","ar0204",0)
+GlobalLT("SanKhalBlood","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("OpenArcive","ar0204",1)
+TriggerActivation("Archive",FALSE)
+Continue()
+END
+
+IF
+Global("CVAR0204","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0204","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("SanKhalBlood","GLOBAL",7)
+OR(2)
+Global("OpenArcive","ar0204",1)
+Global("OpenArcive","ar0204",0)
+THEN
+RESPONSE #100
+SetGlobal("OpenArcive","ar0204",2)
+TriggerActivation("Archive",TRUE)
+TriggerActivation("InfoBuilding",FALSE)
+Continue()
+END
+
+IF
+Global("SanKhalBlood","GLOBAL",10)
+InParty("CVSandr")
+Delay(16)
+THEN
+RESPONSE #100
+SetGlobal("SanKhalBlood","GLOBAL",11)
+END
+
+IF
+InParty("CVSandr")
+Global("SK#NehtExists","AR0204",0)
+Global("SanNoNeht","ar0204",0)
+PartyHasItem("Misc5a")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+Delay(16)
+THEN
+RESPONSE #100
+SetGlobal("SanNoNeht","ar0204",1)
+ActionOverride("CVSandr",MoveToObject(Player1))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

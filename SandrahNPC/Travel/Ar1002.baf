@@ -1,0 +1,32 @@
+IF
+Global("CVAR1002","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1002","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanQuedPris","GLOBAL",1)
+InMyArea("CVSandr")
+InMyArea("HaBrega")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",ReallyForceSpellRES("cvfreed",Myself))
+Wait(1)
+CreateVisualEffectObject("SPCLOUD1","CVSandr")
+DisplayStringHead("CVSandr",@278)
+Wait(3)
+CreateCreature("CVCiv1",[960.700],2)
+CreateCreature("CVSlat2",[874.637],8)
+SetGlobal("SanQuedPris","GLOBAL",2)
+END
+
+IF
+GlobalGT("SanVicArrst","GLOBAL",2)
+!InMyArea("Corgeig")
+THEN
+RESPONSE #100
+CreateCreature("Corgeig",[517.732],12)
+End
+ 

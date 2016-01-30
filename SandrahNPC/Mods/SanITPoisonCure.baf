@@ -1,0 +1,42 @@
+IF
+GlobalTimerExpired("PoisonParty","GLOBAL")
+GlobalLT("PoisonWarning","GLOBAL",9)
+Global("PartyCured","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobalTimer("PoisonParty","GLOBAL",ONE_DAY)
+IncrementGlobal("PoisonWarning","GLOBAL",1)
+DisplayString(Player1,11833)
+END
+
+IF
+Global("PoisonWarning","GLOBAL",1)
+Global("CVLotPlot","GLOBAL",0)
+CombatCounter(0)
+!See([ENEMY])
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CVLotPlot","GLOBAL",1)
+MoveToObject(Player4)
+Interact("CVSandr")
+END
+
+IF
+Global("CVLotPlot","GLOBAL",5)
+PartyHasItem("cvheherb")
+THEN
+RESPONSE #100
+SetGlobal("CVLotPlot","GLOBAL",6)
+DisplayStringWait("CVSandr",@844)
+SetGlobalTimer("PoisonParty2","GLOBAL",TEN_DAYS)
+END
+
+IF
+Global("CVLotPlot","GLOBAL",6)
+PartyHasItem("dspotn01")
+THEN
+RESPONSE #100
+SetGlobal("CVLotPlot","GLOBAL",7)
+DisplayStringWait("CVSandr",@844)
+END

@@ -1,0 +1,10 @@
+IF
+Global("TransformedChicken","GLOBAL",1)
+!Dead("Melicamp")
+InParty("CVSandr")
+Global("NewFace","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("NewFace","LOCALS",1)
+ReallyForceSpellRES("Meliface",Myself)
+END

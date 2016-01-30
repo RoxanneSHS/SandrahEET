@@ -1,0 +1,9 @@
+IF
+Allegiance(Myself,ENEMY)
+Global("Enforce","LOCALS",0)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("F_Ettin",Myself,[-100.100])
+CreateCreatureObjectOffset("F_Ettin",Myself,[100.-100])
+SetGlobal("Enforce","LOCALS",1)
+END

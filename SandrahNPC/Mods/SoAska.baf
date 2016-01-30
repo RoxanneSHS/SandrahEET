@@ -1,0 +1,11 @@
+IF
+Global("SpokeToLizzy","GLOBAL",2)
+PartyHasItem("SOAITM31")
+THEN
+RESPONSE #100
+ForceSpell(Myself,WIZARD_CHAOS_VISUALS_ONLY)
+ActionOverride("Lizzy",ReallyForceSpellRES("sppr429",Myself))
+SetGlobal("SpokeToLizzy","GLOBAL",3)
+SetGlobal("Itemtalfre","GLOBAL",1)
+DisplayStringWait(Player1,@137)
+END

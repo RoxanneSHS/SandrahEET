@@ -1,0 +1,7 @@
+//SandrahNPC and RTF New Area Table
+SHORT_NAME  CONTENT  LONG_NAME  FLAGS  BAM_ANIM  X_POS  Y_POS  NAME         TOOLTIP      LOAD_IM
+
+CVROA1      CVROA1   CVROA1     0      40       1333    1502   @San1        @San1        N
+RTF030      RTF030   RTF030     0      80       2442    2013   @San2        @San2        N
+RTF038      RTF038   RTF038     0      26       3185    2534   @San3        @San3        N
+RTF050      RTF050   RTF050     0      25       7838    2614   @San4        @San4        N

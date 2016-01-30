@@ -1,0 +1,75 @@
+IF
+Global("Itemdays4","GLOBAL",0)
+PartyHasItem("sw1h31")
+THEN
+RESPONSE #100
+SetGlobal("Itemdays4","GLOBAL",1)
+END
+
+IF
+Global("SanGithVS","GLOBAL",5)
+PartyHasItem("Sw2h15")
+THEN
+RESPONSE #100
+CreateCreature("sangith",[4263.3379],12)
+SetGlobal("SanGithVS","GLOBAL",6)
+END
+
+IF
+Global("SanGithVS","GLOBAL",7)
+THEN
+RESPONSE #100
+AddexperienceParty(2500)
+ActionOverride("sangith",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanGithVS","GLOBAL",8)
+END
+
+IF
+Global("SanRabb","BG0900",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG0900",1)
+CreateCreature("rabbit01",[3887.1886],8)
+CreateCreature("rabbit",[3857.1856],8)
+END
+
+IF
+Global("Umberbowl","GLOBAL",2)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOW1",[3802.2036],0)
+CreateCreature("CVTALOP1",[4242.2116],1)
+CreateCreature("CVTALOW1",[4168.1924],2)
+CreateCreature("CVTALOW1",[4112.2095],0)
+SetGlobal("Umberbowl","GLOBAL",3)
+END
+
+IF
+Global("CVTalos","BG0900",0)
+OR(3)
+Global("SanUmberbowl","GLOBAL",1)
+Global("HostileFishermen","GLOBAL",1)
+Dead("Sonner")
+THEN
+RESPONSE #100
+SetGlobal("CVTalos","BG0900",1)
+SetGlobal("Umberbowl","GLOBAL",2)
+END
+
+IF
+Global("SanVsTalos","GLOBAL",0)
+GlobalGT("Umberbowl","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanVsTalos","GLOBAL",1)
+END
+
+IF
+Global("Umberbowl","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("Umberbowl","GLOBAL",5)
+ActionOverride("CVTALOP1",Enemy())
+END

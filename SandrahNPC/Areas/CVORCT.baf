@@ -1,0 +1,15 @@
+IF 
+Global("Demsspawn","CVUMO6",0)
+OR(3)
+Entered([ANYONE])
+Opened([ANYONE])
+Clicked([ANYONE])
+THEN
+RESPONSE #100
+CreateCreature("DEMGLASU",[4077.2722],4)
+CreateCreature("DEMNABSU",[3655.2102],7)
+CreateCreature("DEMNABSU",[3888.2351],8)
+CreateCreature("DEMGLASU",[3943.2544],2)
+CreateCreature("DEMPITSU",[4290.2514],9)
+SetGlobal("Demsspawn","CVUMO6",1)
+END

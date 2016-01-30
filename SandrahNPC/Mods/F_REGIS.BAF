@@ -1,0 +1,50 @@
+IF
+See("F_DRIZZT")
+Global("Cult1","GLOBAL",1)
+Global("Cultactive","LOCALS",0)
+!Global("Daemoncultfinish","GLOBAL",1)
+THEN
+RESPONSE #100
+Dialogue([PC])
+END
+
+IF
+See("F_DRIZZT")
+Global("Cult1","GLOBAL",1)
+Global("Daemoncultfinish","GLOBAL",1)
+THEN
+RESPONSE #100
+Dialogue([PC])
+END
+
+IF
+See("F_DRIZZT")
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+Dialogue([PC])
+END
+
+IF
+AttackedBy([PC],DEFAULT)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Attack([PC])
+END
+
+IF
+Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+AttackReevaluate([GOODCUTOFF],15)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+AttackReevaluate(NearestEnemyOf(Myself),15)
+END
+
+

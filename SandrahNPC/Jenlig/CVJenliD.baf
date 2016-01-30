@@ -1,0 +1,41 @@
+IF
+Global("Goodfight","LOCALS",5)
+RealGlobalTimerExpired("JenligT","LOCALS")
+!AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("Goodfight","LOCALS",8)
+StartDialogNoSet("CVJenlig")
+END
+
+IF
+Global("Goodfight","LOCALS",4)
+RealGlobalTimerExpired("JenligT","LOCALS")
+!AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("Goodfight","LOCALS",6)
+StartDialogNoSet("CVJenlig")
+END
+
+IF
+Global("Goodfight","LOCALS",9)
+RealGlobalTimerExpired("JenligT","LOCALS")
+AreaType(OUTDOOR)
+TimeOfDay(NIGHT)
+THEN
+RESPONSE #100
+SetGlobal("Goodfight","LOCALS",10)
+StartDialogNoSet("CVJenlig")
+END
+
+IF
+Global("SuninMeetJen","GLOBAL",2)
+InParty("CVSandr")
+!AreaType(OUTDOOR)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SuninMeetJen","GLOBAL",3)
+Interact("CVJenlig")
+END

@@ -1,0 +1,7 @@
+IF
+Global("CVcb3661","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVcb3661","GLOBAL",1)
+Continue()
+END

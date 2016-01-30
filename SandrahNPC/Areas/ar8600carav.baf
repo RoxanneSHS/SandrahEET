@@ -1,0 +1,55 @@
+IF
+InParty("CVSandr")
+CombatCounter(0)
+Global("Minslve","BG1800",0)
+THEN
+RESPONSE #100
+CreateCreature("albert",[551.2762],7)
+SetGlobal("Minslve","BG1800",1)
+END
+
+IF
+Global("Minslve","BG1800",1)
+THEN
+RESPONSE #100
+CreateCreature("cvsltrma",[4613.3526],5)
+CreateCreature("irongu",[4377.3514],4)
+CreateCreature("irongu",[4777.3357],14)
+CreateCreature("cmirone",[4577.3534],6)
+CreateCreature("horse",[4967.3444],2)
+CreateCreature("horse",[4837.3634],2)
+CreateCreature("slboy",[4637.3697],3)
+CreateCreature("slboy",[4237.3397],5)
+CreateCreature("slboy",[4367.3497],8)
+CreateCreature("slboy",[4669.3789],0)
+CreateCreature("slgirl",[4291.3767],2)
+CreateCreature("irongu",[4521.3727],14)
+CreateCreature("slboy",[4697.3597],3)
+CreateCreature("slgirl",[4657.3647],4)
+CreateCreature("slguard1",[4637.3597],7)
+SetGlobal("Minslve","BG1800",2)
+END
+
+IF
+Global("Altalk","BG1800",2)
+Dead("cvsltrma")
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Altalk","BG1800",3)
+RealSetGlobalTimer("CVClkCaraT","BG1800",140)
+END
+
+IF
+Global("Altalk","BG1800",3)
+RealGlobalTimerExpired("CVClkCaraT","BG1800")
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("Altalk","BG1800",4)
+END
+
+
+

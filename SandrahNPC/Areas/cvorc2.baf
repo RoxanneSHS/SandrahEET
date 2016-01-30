@@ -1,0 +1,17 @@
+IF
+Global("OrcPrison","GLOBAL",6)
+Global("RazzokEx","CVORC2",0)
+THEN
+RESPONSE #100
+SetGlobal("RazzokEx","CVORC2",1)
+CreateCreature("CVORW1",[747.943],4)
+END
+
+IF
+Global("OrcPrison","GLOBAL",8)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",9)
+CreateCreature("CVKNAW",[1165.194],4)
+CreateCreature("Shopknhu",[1135.255],4)
+END

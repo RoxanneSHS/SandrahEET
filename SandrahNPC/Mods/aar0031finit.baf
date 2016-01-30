@@ -1,0 +1,18 @@
+IF
+Global("ItemRune","aar031",0)
+PartyHasItem("AAITM029")
+THEN
+RESPONSE #100
+SetGlobal("ItemRune","aar031",1)
+END
+
+IF
+Global("ItemRune","aar031",1)
+Global("ShangCrypt","AAR031",4)
+Global("SanSpell","aar031",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSpell","aar031",1)
+ActionOverride("CVSandr",IncrementGlobal("SanDra25","LOCALS",1))
+END

@@ -1,0 +1,44 @@
+IF
+Global("CVAR1200","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1200","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanKeldorn","GLOBAL",5)
+InParty("Keldorn")
+InParty("CVSandr")
+InMyArea("CVSandr")
+!Dead("CVSlaw")
+THEN
+RESPONSE #100
+SetMasterArea("CVCrxw")
+ActionOverride(Player1,LeaveAreaLUA("CVCrxw","",[2306.2296],4))
+ActionOverride(Player2,LeaveAreaLUA("CVCrxw","",[2314.2212],4))
+ActionOverride(Player3,LeaveAreaLUA("CVCrxw","",[2300.2200],4))
+ActionOverride(Player4,LeaveAreaLUA("CVCrxw","",[2339.2300],4))
+ActionOverride(Player5,LeaveAreaLUA("CVCrxw","",[2344.2600],4))
+ActionOverride(Player6,LeaveAreaLUA("CVCrxw","",[2266.2222],4))
+SetGlobal("SanKeldorn","GLOBAL",6)
+END
+
+IF
+Global("SanHealanom","GLOBAL",7)
+InParty("Anomen")
+InParty("CVSandr")
+InMyArea("CVSandr")
+!Dead("CVSlaw")
+THEN
+RESPONSE #100
+SetMasterArea("CVCrxw")
+ActionOverride(Player1,LeaveAreaLUA("CVCrxw","",[2306.2296],4))
+ActionOverride(Player2,LeaveAreaLUA("CVCrxw","",[2314.2212],4))
+ActionOverride(Player3,LeaveAreaLUA("CVCrxw","",[2300.2200],4))
+ActionOverride(Player4,LeaveAreaLUA("CVCrxw","",[2339.2300],4))
+ActionOverride(Player5,LeaveAreaLUA("CVCrxw","",[2344.2600],4))
+ActionOverride(Player6,LeaveAreaLUA("CVCrxw","",[2266.2222],4))
+SetGlobal("SanHealanom","GLOBAL",8)
+END
+

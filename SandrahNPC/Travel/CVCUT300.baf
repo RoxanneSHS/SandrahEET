@@ -1,0 +1,22 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateVisualEffectObject("SPDIMNDR",Player1)
+		CreateVisualEffectObject("SPDIMNDR","CVSandr")
+		Wait(3)
+		FadeToColor([20.0],0)
+		Wait(1)
+		LeaveAreaLUAPanic("CVRTF2","",[826.498],4)
+		LeaveAreaLUA("CVRTF2","",[826.498],4)
+		ActionOverride("CVSandr",LeaveAreaLUA("CVRTF2","",[689.529],12))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		ActionOverride("CVSandr",CreateVisualEffectObject("SPDIMNDR",Myself))
+		Wait(3)
+		EndCutSceneMode()
+END
+
+

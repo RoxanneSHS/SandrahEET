@@ -1,0 +1,76 @@
+IF
+Global("NibHere","CVSH13",0)
+THEN
+RESPONSE #100
+SetGlobal("NibHere","CVSH13",1)
+TriggerActivation("ToPalaceR",FALSE)
+TriggerActivation("ToPalaceL",FALSE)
+TriggerActivation("InfoL",TRUE)
+TriggerActivation("InfoR",TRUE)
+END
+
+IF
+Global("NibHere","CVSH13",1)
+CombatCounter(0)
+Delay(18)
+THEN
+RESPONSE #100
+ActionOverride("F_Nib",Dialogue([PC]))
+END
+
+IF
+Global("RtfDoor","CVSH13",0)
+GlobalGT("SanBeginRtF","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("RtfDoor","CVSH13",1)
+TriggerActivation("ToPalaceR",TRUE)
+TriggerActivation("ToPalaceL",TRUE)
+TriggerActivation("InfoL",FALSE)
+TriggerActivation("InfoR",FALSE)
+END
+
+IF
+InMyArea("CVShauQ")
+InMyArea("CVSandr")
+InMyArea(Player1)
+Global("ShauPalHis","CVSH13",0)
+THEN
+RESPONSE #100
+SetGlobal("ShauPalHis","CVSH13",1)
+ActionOverride("CVShauQ",MoveToObject(Player1))
+ActionOverride("CVShauQ",Dialogue([PC]))
+END
+
+IF
+Global("ShauPalHis","CVSH13",2)
+THEN
+RESPONSE #100
+SetGlobal("ShauPalHis","CVSH13",3)
+ActionOverride("CVShauQ",EscapeArea())
+ActionOverride("CVMinsc",EscapeArea())
+ActionOverride("Sanboy1",EscapeArea())
+ActionOverride("CVGhatle",EscapeArea())
+Wait(1)
+SaveGame(0)
+TextScreen("Shaubye")
+END
+
+IF
+Global("ShauPalHis","CVSH13",3)
+THEN
+RESPONSE #100
+AddJournalEntry(@682,QUEST_DONE)
+EraseJournalEntry(@469)
+SetGlobal("ShauPalHis","CVSH13",4)
+END
+
+IF
+Global("SanHintFactory","GLOBAL",35)
+PartyHasItem("shaubo2")
+THEN
+RESPONSE #100
+ActionOverride(Player1,TakePartyItem("shaubo2"))
+ActionOverride(Player1,DestroyItem("shaubo2"))
+END
+

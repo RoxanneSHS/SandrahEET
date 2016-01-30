@@ -1,0 +1,102 @@
+//Starting the Quest
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("Chapter","GLOBAL",4)
+GlobalLT("BW05_TGC1","GLOBAL",0)
+GlobalLT("SanGCE","GLOBAL",1)
+!AreaCheck("BG0200")
+Global("SanJey","LOCALS",0)
+Delay(10)
+THEN
+RESPONSE #100
+SetGlobal("SanJey","LOCALS",1)
+END
+
+
+// Academy Visit
+IF
+AreaCheck("BW0501")
+Dead("BW05Vlai")
+!See([ENEMY])
+CombatCounter(0)
+Global("SanGCE","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanGCE","GLOBAL",1)
+END
+
+IF
+Global("BW05_SeenXeph","GLOBAL",2)
+Global("SanGCE","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanGCE","GLOBAL",3)
+END
+
+
+IF
+AreaCheck("BW0506")
+Global("SanHasFib","LOCALS",0)
+Dead("BW05Petr")
+THEN
+RESPONSE #100
+SetGlobal("SanHasFib","LOCALS",1)
+GiveItemCreate("sanakak",Player1,0,0,0)
+END
+
+IF
+Global("SanAcad","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanAcad","GLOBAL",2)
+ClearAllActions()
+SmallWait(2) 
+StartCutSceneMode()
+FadeToColor([30.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("CVAKA1","",[648.1406],12))
+ActionOverride(Player2,LeaveAreaLUA("CVAKA1","",[694.1377],10))
+ActionOverride(Player3,LeaveAreaLUA("CVAKA1","",[598.1446],11))
+ActionOverride(Player4,LeaveAreaLUA("CVAKA1","",[546.1471],12))
+ActionOverride(Player5,LeaveAreaLUA("CVAKA1","",[498.1506],11))
+ActionOverride(Player6,LeaveAreaLUA("CVAKA1","",[761.1326],10))
+FadeFromColor([30.0],0)
+EndCutSceneMode()
+END
+
+IF
+Global("SanAcadMission","GLOBAL",2)
+InParty("CVSandr")
+PartyHasItem("SANAKAK")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!See([ENEMY])
+CombatCounter(0)
+OR(2)
+AreaCheck("CVDRE2")
+RealGlobalTimerExpired("SanAcadMissionT","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("SanAcadMission","GLOBAL",3)
+CreateCreatureObjectOffset("Elminsa",Myself,[100.100])
+END
+
+IF
+Global("SanAkadMistake","GLOBAL",1)
+AreaCheck("CVAKA1")
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet("CVSandr")
+END
+
+IF
+AreaCheck("CVAKA2")
+See("bw05moni")
+InParty("CVSandr")
+!Dead("bw05moni")
+Global("SanMoniAka","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMoniAka","GLOBAL",1)
+END

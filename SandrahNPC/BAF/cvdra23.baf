@@ -1,0 +1,54 @@
+IF
+Global("CVDra23","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("CVDra23","GLOBAL",2)
+Continue()
+END
+
+IF
+RandomNum(4,1)
+Global("CVDra23","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("CVVispi",Myself,[-100.-100])
+CreateCreatureObjectOffset("CVVispi",Myself,[-135.-135])
+CreateCreatureObjectOffset("CVVispi",Myself,[-65.-65])
+Continue()
+END
+
+IF
+RandomNum(4,2)
+Global("CVDra23","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("sanclotr",Myself,[-100.-100])
+Continue()
+END
+
+IF
+RandomNum(4,3)
+Global("CVDra23","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("cvdrubea",Myself,[-100.-100])
+CreateCreatureObjectOffset("cvdrubea",Myself,[-135.-140])
+Continue()
+END
+
+IF
+RandomNum(4,4)
+Global("CVDra23","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("cvsnip1",Myself,[-100.-100])
+CreateCreatureObjectOffset("cvsnip1",Myself,[-135.-140])
+Continue()
+END
+
+IF
+Global("CVDra23","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("CVDra23","GLOBAL",0)
+END

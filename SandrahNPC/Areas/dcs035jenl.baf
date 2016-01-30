@@ -1,0 +1,30 @@
+IF
+Global("JenPad","Dsc035",0)
+InParty("CVJenlig")
+InParty("CVSandr")
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100 
+SetGlobal("JenPad","Dsc035",1)
+CreateCreature("CVJenPad",[1620.660],5)
+END
+
+IF
+Global("JenPad","Dsc035",5)
+THEN
+RESPONSE #100 
+SetGlobal("JenPad","Dsc035",6)
+ActionOverride("CVSandr",AddSpecialAbility("spin727"))
+Addexperienceparty(6600)
+END
+
+IF
+InParty("CVJenlig")
+Global("JenSilvwr","GLOBAL",0)
+PartyHasItem("SW2H15")
+THEN
+RESPONSE #100
+SetGlobal("JenSilvwr","GLOBAL",1)
+END
+

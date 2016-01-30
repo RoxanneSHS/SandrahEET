@@ -1,0 +1,20 @@
+IF
+Global("CVAR0308","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0308","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("DYBant","GLOBAL",23)
+InParty("CVSandr")
+Global("CVDrag6","ar0308",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag6","ar0308",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag6"))
+END
+
+

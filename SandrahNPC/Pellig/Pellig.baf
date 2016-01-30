@@ -1,0 +1,125 @@
+IF
+AreaCheck("CVDre1")
+See("CVSandr")
+Global("SanVisitedWD","GLOBAL",1)
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+SetGlobal("PelligBeh","GLOBAL",1)
+SetGlobal("PelligFollow","GLOBAL",1)
+MoveToObject("CVSandr")
+Dialogue("Pellig")
+END
+
+IF
+Global("PelligSave","LOCAlS",0)
+THEN
+RESPONSE #100
+MakeGlobal()
+SetGlobal("PelligSave","LOCALS",1)
+END
+
+IF
+SpellCastOnMeRES("DW#Curse",[ANYONE])
+THEN
+RESPONSE #100
+DestroySelf()
+END
+
+IF
+AttackedBy([ANYONE],DEFAULT)
+Global("PelligBeh","GLOBAL",1)
+THEN
+RESPONSE #100
+AttackReevaluate(LastAttackerOf(Myself),10)
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+Continue()
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOfType([0.0.0.LONG_BOW]))
+Continue()
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+Continue()
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOfType([0.0.0.LONG_BOW]))
+Continue()
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+Attack(NearestEnemyOf(Myself))
+END
+
+IF
+Global("PelligBeh","GLOBAL",1)
+CombatCounter(0)
+!See([ENEMY])
+Delay(10)
+THEN
+RESPONSE #100
+MoveToObjectFollow("CVSandr")
+END
+
+IF
+Global("PelligWait","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("PelligFollow","GLOBAL",0)
+SetGlobal("PelligBeh","GLOBAL",0)
+END
+
+IF
+Global("PelligWait","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("PelligFollow","GLOBAL",1)
+SetGlobal("PelligBeh","GLOBAL",1)
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+OR(2)
+AreaCheck("CVUM04")
+AreaCheck("CVUM05")
+THEN
+RESPONSE #100
+EscapeArea()
+END
+
+IF
+GlobalGT("Haiasslevel","GLOBAL",3)
+HPLT(Myself,25)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("CVdexin",Myself)
+ReallyForceSpell(Myself,CLERIC_HEAL)
+Continue()
+END

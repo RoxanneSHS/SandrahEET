@@ -1,0 +1,38 @@
+IF
+Global("Wiwo","BG5200",0)
+OR(2)
+Global("ImopeltHunt","GLOBAL",1)
+Global("ImopeltHunt","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG5200",1)
+CreateCreature("wolfwi",[4586.209],0)
+END
+
+IF
+GlobalLT("PixieHint","GLOBAL",3)
+InParty("CVSandr")
+Global("NarQCav","BG5200",0)
+THEN
+RESPONSE #100
+SetGlobal("NarQCav","BG5200",1)
+TriggerActivation("Door5202",FALSE)
+END
+
+IF
+Global("PixieHint","GLOBAL",3)
+Global("NarQCav","BG5200",1)
+THEN
+RESPONSE #100
+SetGlobal("NarQCav","BG5200",2)
+TriggerActivation("Door5202",TRUE)
+END
+
+IF
+Global("SanRabb","BG5200",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG5200",1)
+CreateCreature("rabbit01",[1977.1659],8)
+CreateCreature("rabbit",[1947.1689],8)
+END

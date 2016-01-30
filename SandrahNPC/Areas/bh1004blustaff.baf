@@ -1,0 +1,7 @@
+IF
+Global("ItemBluDrag","GLOBAL",0)
+AreaCheck("bh1004")
+THEN
+RESPONSE #100
+SetGlobal("ItemBluDrag","GLOBAL",1) 
+END

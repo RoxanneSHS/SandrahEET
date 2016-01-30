@@ -1,0 +1,14 @@
+IF
+GlobalLT("SanTazPatrl","Global",2)
+InParty("CVJenlig")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanTazPatrl","Global",2)
+CreateCreature("TAZOK_",[400.200],13)
+Wait(2)
+ActionOverride("Tazok",SetNumTimesTalkedTo(1))
+ActionOverride("Tazok",StartDialogueNoSet(LastSeenBy(Myself)))
+END
+
+

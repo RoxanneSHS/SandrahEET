@@ -1,0 +1,17 @@
+IF
+Global("SanKey","dsc015",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanKey","dsc015",1)
+Lock("Door0511")
+END
+
+IF
+Global("SanKey","dsc015",1)
+PartyHasItem("ds15key")
+THEN
+RESPONSE #100
+SetGlobal("SanKey","dsc015",2)
+Unlock("Door0511")
+END

@@ -1,0 +1,32 @@
+IF
+NumTimesTalkedTo(0)
+InParty("Imoen2")
+See(Player1)
+Global("Orcseeimo","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Orcseeimo","LOCALS",1)
+DisplayStringWait(Myself,@237)
+END
+
+IF
+HPGT(Myself,40)
+Global("OrcimoTalk","GLOBAL",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+SmallWait(4)
+Polymorph(ORC_MELEE1)
+SmallWait(3)
+EndCutSceneMode()
+SetGlobal("OrcimoTalk","GLOBAL",1)
+END
+
+IF
+Global("OrcimoTalk","GLOBAL",1)
+InParty("Imoen2")
+See("Imoen2")
+THEN
+RESPONSE #100
+StartDialogNoSet("orcimo1")
+END

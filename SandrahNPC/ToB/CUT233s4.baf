@@ -1,0 +1,35 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("CVSandr")
+		ActionOverride("CVQidr",Enemy())
+                ActionOverride("Sanmyst",Enemy())
+                ActionOverride("Elminsa",Enemy())
+                ActionOverride("cvasstem",Enemy())
+                ActionOverride("cvdyprot",Enemy())
+                ActionOverride("Solar",Enemy())
+                ActionOverride("Pellig",Enemy())
+                ActionOverride("CVSandr",Enemy())
+                ActionOverride(Player2,DestroySelf())
+                Wait(2)
+                ActionOverride(Player3,DestroySelf())
+                Wait(2)
+                ActionOverride(Player4,DestroySelf())
+                Wait(2)
+                ActionOverride(Player5,DestroySelf())
+                Wait(2)
+                ActionOverride(Player6,DestroySelf())
+                Wait(2)
+                ActionOverride("CVQidr",Attack(Player1))
+                ActionOverride("CVSandr",Attack(Player1))
+                ActionOverride("solar",Attack(Player1))
+                ActionOverride("Pellig",Attack(Player1))
+                ActionOverride("Sanmyst",Attack(Player1))
+                ActionOverride("CVasstem",Attack(Player1))
+                ActionOverride("CVdyprot",Attack(Player1))
+                ActionOverride("Elminsa",Attack(Player1))
+		EndCutSceneMode()
+END
+
+

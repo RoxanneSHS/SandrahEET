@@ -1,0 +1,38 @@
+IF
+Global("SanRabb","BG2400",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG2400",1)
+CreateCreature("rabbit01",[2316.2435],8)
+CreateCreature("rabbit",[2346.2475],8)
+END
+
+IF
+GlobalGT("Chapter","GLOBAL",3)
+InMyArea("Raiken")
+THEN
+RESPONSE #100
+ActionOverride("Raiken",DestroySelf())
+END
+
+IF
+Global("RaikenSpawn","GLOBAL",1)
+GlobalGT("SanImoNashInt","GLOBAL",8)
+GlobalLT("SANIMONASHINT","GLOBAL",19)
+!Global("SanImoNashInt","GLOBAL",15)
+InParty("Imoen2")
+Global("RaiToggl","BG2400",0)
+THEN
+RESPONSE #100
+SetGlobal("RaiToggl","BG2400",1)
+ActionOverride("Raiken",Deactivate(Myself))
+END
+
+IF
+Global("RaiToggl","BG2400",1)
+GlobalGT("SanImoNashInt","GLOBAL",18)
+THEN
+RESPONSE #100
+SetGlobal("RaiToggl","BG2400",2)
+ActionOverride("Raiken",Activate(Myself))
+END

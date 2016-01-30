@@ -1,0 +1,209 @@
+IF
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+HPPercentGT(Player1,95)
+HPPercentGT("sharteel",95)
+Global("X#SharInterestTalk","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",1)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+SetGlobal("X#SharInterestTalk","GLOBAL",2)
+StartDialogueNoSet(Player1)
+END
+
+IF 
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+Global("X#SharInterestTalk","GLOBAL",9)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+Global("X#SharInterest","GLOBAL",1)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+SetGlobal("X#SharInterestTalk","GLOBAL",10)
+StartDialogueNoSet(Player1)
+END
+
+IF  
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharInterestTalk","GLOBAL",25)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+TimeOfDay(DAY)
+OR(14)
+AreaCheck("BG4801")
+AreaCheck("BG2616")
+AreaCheck("BG3351")
+AreaCheck("BG3304")
+AreaCheck("BG2301")
+AreaCheck("BG0105")
+AreaCheck("BG0116")
+AreaCheck("BG0119")
+AreaCheck("BG0706")
+AreaCheck("BG4003")
+AreaCheck("BG1001")
+AreaCheck("bh0115")
+AreaCheck("bh0107")
+AreaCheck("BG3357")
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+IncrementGlobal("X#SharInterestTalk","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+Gender(Player1,MALE)
+Global("X#ShMale","GLOBAL",0)
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+InParty(Myself)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+InMyArea(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+AreaType(FOREST)
+THEN
+RESPONSE #100
+SetGlobal("X#ShMale","GLOBAL",1)
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+StartDialogueNoSet(Player1)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+RealGlobalTimerExpired("X#SharInterestTime","GLOBAL")
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+OR(2)
+Global("X#SharInterestTalk","GLOBAL",35)
+Global("X#SharInterestTalk","GLOBAL",37)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+InParty(Player4)
+Global("X#SharMatch","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",2)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+IncrementGlobal("X#SharInterestTalk","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END
+
+/* Ring Talk */
+IF 
+!Global("endofbg1","GLOBAL",2)
+PartyHasItem("RING15")
+Global("X#SharRing","GLOBAL",0)
+Global("X#SharMatch","GLOBAL",1)
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+OR(2)
+Global("X#SharInterest","GLOBAL",1)
+Global("X#SharInterest","GLOBAL",2)
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+IncrementGlobal("X#SharRing","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END
+
+/* Books Talk */
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#SharBook","GLOBAL",0)
+Global("X#SharInterest","GLOBAL",2)
+RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+OR(4)
+PartyHasItem("BOOK35")
+PartyHasItem("BOOK36")
+PartyHasItem("BOOK40")
+PartyHasItem("BOOK41")
+InParty(Myself)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("X#DreamTalk","GLOBAL",180)
+PlaySong(0)
+PlaySound("shrar")
+IncrementGlobal("X#SharBook","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#ShMale","GLOBAL",1)
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InMyArea(Player1)
+	!StateCheck(Player1,CD_STATE_NOTVALID)
+	CombatCounter(0)
+	!See([ENEMY])
+	AreaType(FOREST)
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+		StartDialogueNoSet(Player1)
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SHXZ2","LOCALS",0)
+	RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InParty("xzar")
+	!StateCheck("xzar",CD_STATE_NOTVALID)
+	CombatCounter(0)
+	!See([ENEMY])
+	InMyArea("xzar")
+THEN
+	RESPONSE #100
+		SetGlobal("X#SHXZ2","LOCALS",1)
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+		StartDialogueNoSet("xzar")
+END
+
+IF
+	!Global("endofbg1","GLOBAL",2)
+	Global("X#SHXZ2","LOCALS",1)
+	RealGlobalTimerExpired("X#DreamTalk","GLOBAL")
+	InParty(Myself)
+	!StateCheck(Myself,CD_STATE_NOTVALID)
+	InParty("xzar")
+	!StateCheck("xzar",CD_STATE_NOTVALID)
+	CombatCounter(0)
+	!See([ENEMY])
+	InMyArea("xzar")
+THEN
+	RESPONSE #100
+		RealSetGlobalTimer("X#DreamTalk","GLOBAL",THREE_TURNS)
+		StartDialogueNoSet("xzar")
+END
+

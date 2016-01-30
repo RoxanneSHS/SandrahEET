@@ -1,0 +1,103 @@
+IF
+Global("SanBeginRTF","GLOBAL",0)
+Global("NoGrave","bg2700",0)
+THEN
+RESPONSE #100
+SetGlobal("NoGrave","bg2700",1)
+AmbientActivate("Gorgrave",FALSE)
+Continue()
+END
+
+IF
+Global("SanImoMake","bg2700",0)
+OR(2)
+Global("Imoenclasschoice","GLOBAL",2)
+Global("Imoenclasschoice","GLOBAL",3)
+THEN
+RESPONSE #100
+ActionOverride("IMOEN2",DestroySelf())
+SetGlobal("SanImoMake","bg2700",1)
+Continue()
+END
+
+IF
+Global("CVSandrExists","bg2700",0)
+THEN
+RESPONSE #100
+SetGlobal("CVSandrExists","bg2700",1)
+CreateCreature("Sandrah",[3130.1403],0)
+AddXPObject("CVSandr",5600)
+SetGlobalTimer("SanbookT","GLOBAL",300)
+Continue()
+END
+
+IF
+Global("SanImoMake","bg2700",1)
+Global("Imoenclasschoice","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanImoMake","bg2700",2)
+CreateCreature("IMOENM",[3140.3681],12)
+END
+
+IF
+Global("SanImoMake","bg2700",1)
+Global("Imoenclasschoice","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SanImoMake","bg2700",2)
+CreateCreature("IMOEND",[3140.3681],12)
+END
+
+IF
+Global("ItemGS","GLOBAL",0)
+PartyHasItem("Scrl3z")
+THEN
+RESPONSE #100
+SetGlobal("ItemGS","GLOBAL",1)
+END
+
+IF
+Global("SandrahJoined","GLOBAL",0)
+OR(2)
+GlobalGT("Chapter","GLOBAL",1)
+Global("EnteredArmInn","GLOBAL",1)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",DestroySelf())
+END
+
+IF
+Global("SanRomPath","GLOBAL",0)
+Gender(Player1,MALE)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanRomPath","GLOBAL",1)
+RealSetGlobalTimer("SanDreamTalkTime","GLOBAL",TWENTY_MINUTES)
+RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)
+END
+
+IF
+Global("SanRomPath","GLOBAL",0)
+Gender(Player1,FEMALE)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanRomPath","GLOBAL",2)
+RealSetGlobalTimer("SanDreamTalkTime","GLOBAL",TWENTY_MINUTES)
+RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)
+END
+
+IF
+Global("CVGodag","GLOBAL",0)
+PartyHasItem("Godag01")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("CVGodag","GLOBAL",1)
+DisplayStringWait(Player1,@905)
+AddJournalEntry(@904,QUEST)
+END
+

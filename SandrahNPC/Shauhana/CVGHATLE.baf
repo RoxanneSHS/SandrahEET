@@ -1,0 +1,30 @@
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+Global("SanBG1ShauPrev","GLOBAL",3)
+See(Player1)
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanBG1ShauPrev","GLOBAL",4)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("shauprev")
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+AreaCheck("ar0400")
+NumTimesTalkedTo(0)
+See(Player1)
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("SeeShau","LOCALS",0)
+See("CVShau")
+THEN
+RESPONSE #100
+StartDialogueNoSet(Player1)
+END

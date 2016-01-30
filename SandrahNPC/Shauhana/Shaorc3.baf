@@ -1,0 +1,50 @@
+IF
+Global("HinteE","CVSh11",1)
+InParty("CVSandr")
+See([PC])
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("HinteE","CVSh11",2)
+Polymorph(SLEEPING_MAN_HUMAN)
+DisplayStringWait(Myself,@198)
+END
+
+IF
+Global("HinteE","CVSh11",3)
+THEN
+RESPONSE #100
+SetGlobal("HinteE","CVSh11",4)
+Polymorph(ORC_SHAMAN)
+SmallWait(2)
+MoveToPointNoInterrupt([2281.1305])
+EscapeArea()
+END
+
+IF
+AttackedBy([GOODCUTOFF],DEFAULT)
+OR(2)
+!Allegiance(Myself,ENEMY)
+Global("shauorcHostile","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("shauorcHostile","GLOBAL",1)
+Enemy()
+Continue()
+END
+
+IF
+Allegiance(Myself,ENEMY)
+Global("shauorcHostile","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("shauorcHostile","GLOBAL",1)
+END
+
+IF
+Global("shauorcHostile","GLOBAL",1)
+!Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+Enemy()
+END

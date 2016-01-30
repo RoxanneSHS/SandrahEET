@@ -1,0 +1,8 @@
+IF
+NumCreatureGT("DDGame03",1)
+See("CVSandr")
+THEN
+RESPONSE #100
+DestroySelf()
+DisplayStringWait(Player1,@772)
+END

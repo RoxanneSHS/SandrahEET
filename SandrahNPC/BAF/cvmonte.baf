@@ -1,0 +1,96 @@
+IF
+See([PC])
+!Allegiance(Myself,ENEMY)
+Global("monteedebut","LOCALS",0)
+Detect("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("monteedebut","LOCALS",1)
+Dialogue(Player1)
+END
+
+IF
+See([PC])
+!Allegiance(Myself,ENEMY)
+Global("monteedebut","LOCALS",3)
+THEN
+RESPONSE #100
+CreateCreature("pirat1",[-1.-1],0)
+CreateCreature("pirat2",[-1.-1],0)
+CreateCreature("pirat3",[-1.-1],0)
+CreateCreature("pirat4",[-1.-1],0)
+ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_HASTE)
+EscapeArea()
+END
+
+IF
+See([PC])
+!Allegiance(Myself,ENEMY)
+Global("monteedebut","LOCALS",2)
+THEN
+RESPONSE #100
+CreateCreature("pirat1",[-1.-1],0)
+CreateCreature("pirat2",[-1.-1],0)
+CreateCreature("pirat3",[-1.-1],0)
+CreateCreature("pirat4",[-1.-1],0)
+EquipMostDamagingMelee()
+Enemy()
+END
+
+IF
+Allegiance(Myself,ENEMY)
+Global("prep","LOCALS",0)
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,WIZARD_HASTE)
+SetGlobal("prep","LOCALS",1)
+END
+
+IF
+HPPercentLT(Myself,5)
+Global("monmorph","LOCALS",0)
+THEN
+RESPONSE #100
+ClearAllActions()
+ReallyForceSpell(Myself,WIZARD_FIREBALL)		
+SetGlobal("monmorph","LOCALS",1)
+CreateCreature("cvmonte2",[-1.-1],0)
+DestroyAllEquipment()
+DestroySelf()
+END
+
+IF
+Allegiance(Myself,ENEMY)
+HPPercentLT(Myself,50)
+GlobalLT("nbstone","LOCALS",4)
+!GlobalTimerNotExpired("stone","LOCALS")
+THEN
+RESPONSE #100
+ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
+SetGlobalTimer("nbstone","LOCALS",8)
+IncrementGlobal("stone","LOCALS",1)
+Continue()
+END
+
+IF
+!GlobalTimerNotExpired("time","LOCALS")
+HPPercentLT(Myself,50)
+HasItem("Potn52",Myself)
+THEN
+RESPONSE #100
+UseItem("Potn52",Myself)
+SetGlobalTimer("time","LOCALS",8)
+END
+
+IF
+Allegiance(Myself,ENEMY)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+Attack(NearestEnemyOf(Myself))
+END
+
+

@@ -1,0 +1,11 @@
+IF
+Global("Formedcloth","GLOBAL",7)
+InParty("CVSandr")
+Global("Elmexists","CVSANT",0)
+THEN
+RESPONSE #100
+SetGlobal("Elmexists","CVSANT",1)
+CreateCreature("elminsdr",[356.491],4)
+CreateCreature("gorion",[229.478],10)
+CreateCreature("sanwinth",[256.418],0)
+END

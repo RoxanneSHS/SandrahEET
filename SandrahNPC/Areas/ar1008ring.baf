@@ -1,0 +1,18 @@
+IF
+Global("ItemRune","GLOBAL",0)
+PartyHasItem("aarering")
+THEN
+RESPONSE #100
+SetGlobal("ItemRune","GLOBAL",1)
+Continue()
+END
+
+IF
+InParty("CVSandr")
+Global("CVDra25","ar1008",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDra25","ar1008",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDra25"))
+END

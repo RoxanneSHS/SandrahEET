@@ -1,0 +1,52 @@
+IF
+InParty("Jetlaya")
+Global("Sandark","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Sandark","GLOBAL",1)
+RealSetGlobalTimer("SandarkSp","dsc001",200)
+Continue()
+END
+
+IF
+Global("Sandark","GLOBAL",1)
+InParty("Jetlaya")
+RealGlobalTimerExpired("SandarkSp","dsc001")
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100 
+SetGlobal("Sandark","GLOBAL",2)
+CreateCreatureObjectOffset("sandark","CVSandr",[125.125])
+CreateCreatureObjectOffset("skellord","CVSandr",[75.75])
+CreateCreatureObjectOffset("skellord","CVSandr",[-75.-75])
+END
+
+IF
+Global("Sandark","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride("Sandark",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("Skellord",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("Sandark","GLOBAL",5)
+END
+
+IF
+Global("Sandark","GLOBAL",3)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("skellord","CVSandr",[-125.-100])
+ActionOverride("Sandark",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("Sandark","GLOBAL",5)
+END
+
+IF
+Global("Sandark","GLOBAL",5)
+Global("FiDrakes","dsc001",0)
+THEN
+RESPONSE #100
+CreateCreature("F_Dragon",[4653.3166],5)
+CreateCreature("F_Dragon",[4717.3115],7)
+SetGlobal("FiDrakes","dsc001",1)
+END

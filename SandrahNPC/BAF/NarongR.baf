@@ -1,0 +1,23 @@
+//NarongR.baf
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+FadeToColor([20.0],0)
+SmallWait(3)
+FadeFromColor([20.0],0)
+SmallWait(3)
+ActionOverride("Narongu",CreateVisualEffectObject("spfirepi",myself))
+SmallWait(9)
+ActionOverride("Narongu",ForceSpell("Narongu",WIZARD_DELAYED_BLAST_FIREBALL))
+SmallWait(9)
+ActionOverride("Narongu",CreateVisualEffectObject("spwhirl",myself))
+SmallWait(9)
+Kill("Narongu")
+SmallWait(4)
+EndCutSceneMode()
+DisplayStringWait(Player1,@131)
+SetGlobal("NarSlipFa","CVRoa1",3)
+END

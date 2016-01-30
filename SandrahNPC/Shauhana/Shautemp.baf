@@ -1,0 +1,10 @@
+IF
+IsOverMe("CVShau")
+Global("SanSharkta","GLOBAL",7)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSharkta","GLOBAL",8)
+END
+
+

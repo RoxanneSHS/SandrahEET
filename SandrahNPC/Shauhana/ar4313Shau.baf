@@ -1,0 +1,21 @@
+IF
+Global("SanShauRSure","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanShauRSure","GLOBAL",3)
+ClearAllActions()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(1)
+SetGlobal("SanShauRSure","GLOBAL",3)
+SetGlobal("CbRolfCreatedHere","AR4313",2)
+SetGlobal("CbTextScreenPlayed","AR4313",1)
+SetGlobal("CbPartyHasKilledAllBandits","GLOBAL",3)
+EndCutSceneMode()
+TextScreen("CBRSDEAS")
+SmallWait(1)
+END
+
+
+
+

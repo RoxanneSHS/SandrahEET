@@ -1,0 +1,23 @@
+IF
+Global("NewTempl","CVRoa6",0)
+GlobalGT("KatDef","GLOBAL",1)
+OR(2)
+!Global("ENDOFBG1","GLOBAL",0)
+GlobalGT("Chapter","GLOBAL",5)
+THEN
+RESPONSE #100
+SetGlobal("NewTempl","CVRoa6",1)
+END
+
+IF
+Global("NewTempl","CVRoa6",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+ActionOverride(Player2,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+ActionOverride(Player3,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+ActionOverride(Player4,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+ActionOverride(Player5,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+ActionOverride(Player6,LeaveAreaLUA("CVRoaN","",[1139.1041],6))
+END

@@ -1,0 +1,35 @@
+IF
+Global("CVAR0903","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0903","GLOBAL",1)
+Continue()
+END
+
+IF
+OR(2)
+Global("C#AjantisRitterSuche","GLOBAL",1)
+Global("C#AjantisRitterSuche","GLOBAL",2)
+GlobalGT("SanHelmDogmas","GLOBAL",10)
+!InParty("c#Ajantis")
+InParty("CVSandr")
+Global("SanMissAjan","ar0903",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMissAjan","ar0903",1)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+
+IF
+GlobalGT("PaladinPlot","GLOBAL",29)
+GlobalLT("SanKeldorn","GLOBAL",11)
+!Global("PaladinPlot","GLOBAL",99)
+Global("CVDra18","AR0903",0)
+InParty("CVSandr")
+!InParty("Keldorn")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDra18","AR0903",1)
+ActionOverride("CVSandr",AddSpecialAbility("cvdra18"))
+END

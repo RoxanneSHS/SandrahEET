@@ -1,0 +1,77 @@
+IF
+AreaCheck("CVUmo2")
+See([PC])
+Delay(6)
+Global("Scouting","CVUmo2",0)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo2",1)
+DisplayStringWait(Myself,@565)
+SmallWait(2) 
+MoveToPoint([1592.501])
+END
+
+IF
+AreaCheck("CVUmo2")
+See([PC])
+Delay(6)
+Global("Scouting","CVUmo2",1)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo2",2)
+DisplayStringWait(Myself,@565)
+SmallWait(2) 
+MoveToPoint([1360.1435])
+END
+
+IF
+AreaCheck("CVUmo2")
+See([PC])
+Delay(6)
+Global("Scouting","CVUmo2",2)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo2",3)
+DisplayStringWait(Myself,@565)
+SmallWait(2) 
+MoveToPoint([604.2208])
+END
+
+IF
+AreaCheck("CVUmo2")
+See([PC])
+Delay(6)
+Global("Scouting","CVUmo2",3)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo2",4)
+DisplayStringWait(Myself,@566)
+SmallWait(2) 
+EscapeArea()
+END
+
+IF
+AreaCheck("CVUmo3")
+See([PC])
+Delay(6)
+Global("Scouting","CVUmo3",0)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo3",1)
+DisplayStringWait(Myself,@566)
+SmallWait(2) 
+MoveToPoint([696.1464])
+END
+
+IF
+AreaCheck("CVUmo3")
+See([PC])
+Global("Scouting","CVUmo3",1)
+THEN
+RESPONSE #100
+SetGlobal("Scouting","CVUmo3",2)
+SmallWait(2) 
+EscapeArea()
+END
+
+

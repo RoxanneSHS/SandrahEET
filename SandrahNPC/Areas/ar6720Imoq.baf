@@ -1,0 +1,93 @@
+IF
+GlobalGT("OrcPrison","GLOBAL",16)
+Global("ImoTrav","BG3320",0)
+THEN
+RESPONSE #100
+ActionOverride("Nobl10",DestroySelf())
+ActionOverride("housg1",DestroySelf())
+ActionOverride("housg2",DestroySelf())
+TriggerActivation("Stairs6721",FALSE)
+SetGlobal("ImoTrav","BG3320",1)
+END
+
+IF
+Global("ImoTrav","BG3320",1)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3320",2)
+CreateCreature("CVHousg1",[460.468],6)
+CreateCreature("CVHousg2",[419.438],0)
+END
+
+IF
+Global("OrcPrison","GLOBAL",20)
+Global("ImoTrav","BG3320",2)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3320",3)
+CreateCreature("CVTravi",[306.232],8)
+END
+
+IF
+Global("OrcPrison","GLOBAL",20)
+Dead("CVHousg1")
+Dead("CVHousg2")
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",21)
+END
+
+IF
+Global("OrcPrison","GLOBAL",21)
+Global("ImoTrav","BG3320",3)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3320",4)
+ActionOverride("CVTravi",CreateItem("ImoSlHP1",0,0,0))
+ActionOverride("CVTravi",FillSlot(SLOT_AMULET))
+ActionOverride("CVTravi",MoveToPointNoInterrupt([295.381]))
+ActionOverride("CVTravi",EscapeArea())
+END
+
+IF
+Global("ImoTrav","BG3320",4)
+THEN
+RESPONSE #100
+CreateCreature("Orc01",[567.551],12)
+CreateCreature("orc03",[536.521],12)
+SetGlobal("ImoTrav","BG3320",5)
+END
+
+IF
+Global("ImoTrav","BG3320",5)
+THEN
+RESPONSE #100
+SetGlobal("ImoTrav","BG3320",6)
+TriggerActivation("Stairs6721",TRUE)
+END
+
+IF
+GlobalGT("OrcPrison","GLOBAL",27)
+Global("ImoTrav","BG3320",6)
+THEN
+RESPONSE #100
+CreateCreature("CVIzzy",[581.313],3)
+CreateCreature("CVrevi",[454.136],13)
+CreateCreature("Girbax_c",[837.473],8)
+CreateCreature("Girl01",[212.366],11)
+CreateCreature("boyba1",[607.440],8)
+CreateCreature("boybax",[427.160],0)
+CreateCreature("monktu20",[528.571],0)
+SetGlobal("ImoTrav","BG3320",7)
+END
+
+IF
+Global("ImoTrav","BG3320",7)
+THEN
+RESPONSE #100
+ActionOverride("Girbax_c",RandomWalk())
+ActionOverride("Girl01",RandomWalk())
+ActionOverride("boyba1",RandomWalk())
+ActionOverride("boybax",RandomWalk())
+SetGlobal("ImoTrav","BG3320",8)
+END

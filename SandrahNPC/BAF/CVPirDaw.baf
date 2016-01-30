@@ -1,0 +1,23 @@
+IF
+Global("SanSuBH","GLOBAL",25)
+Entered([GOODCUTOFF])
+AreaCheck("CVPIR2")
+THEN
+RESPONSE #100
+SetGlobal("SanSuBH","GLOBAL",26)
+DayNight(DUSK_END)
+END
+
+IF
+Global("SanSuBH","GLOBAL",27)
+Entered([GOODCUTOFF])
+AreaCheck("CVPIR3")
+THEN
+RESPONSE #100
+SetGlobal("SanSuBH","GLOBAL",28)
+DayNight(DAWN_END)
+END
+
+
+
+

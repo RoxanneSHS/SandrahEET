@@ -1,0 +1,7 @@
+IF
+Global("Itemtalcol","GLOBAL",0)
+PartyHasItem("soaitm35")
+THEN
+RESPONSE #100
+SetGlobal("Itemtalcol","GLOBAL",1)
+END

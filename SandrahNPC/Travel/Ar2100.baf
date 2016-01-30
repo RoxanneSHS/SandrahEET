@@ -1,0 +1,84 @@
+IF
+Global("CVAR2100","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2100","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("YasraenaSvirfObjection","GLOBAL",2)
+InMyArea("Yasraena")
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("YasraenaSvirfObjection","GLOBAL",3)
+END
+
+IF
+Global("ItemFisam","GLOBAL",0)
+PartyHasItem("b!amace")
+THEN
+RESPONSE #100
+SetGlobal("ItemFisam","GLOBAL",1)
+END
+
+IF
+Global("udMind","GLOBAL",51)
+Dead("udsimyaz")
+GlobalLT("SanProph","GLOBAL",9)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanProph","GLOBAL",9)
+END
+
+IF
+Global("UcmMatronDrow","GLOBAL",1)
+Dead("UCMGMAT")
+Dead("umatwa03")
+THEN
+RESPONSE #100
+SetGlobal("UcmMatronDrow","GLOBAL",2)
+END
+
+IF
+Global("UcmMatronDrow","GLOBAL",3)
+OR(2)
+GlobalLT("SanYasfr","GLOBAL",12)
+!InParty("Yasraena")
+THEN
+RESPONSE #100
+SetGlobal("UcmMatronDrow","GLOBAL",4)
+ActionOverride("CVSandr",AddSpecialAbility("cvfreed"))
+END
+
+IF
+GlobalGT("Phaerejob","GLOBAL",9)
+Global("CVAR2400","GLOBAL",0)
+Global("SanMFambu","ar2100",0)
+THEN
+RESPONSE #100
+CreateCreature("CVUDMind",[4198.1499],9)
+SetGlobal("SanMFambu","ar2100",1)
+END
+
+IF
+Global("spawnDrow1","AR2100",1)
+InParty("CVSandr")
+InParty("Viconia")
+Dead("uddrow27")
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("spawnDrow1","AR2100",2)
+END
+
+IF
+Global("EggsDie","GLOBAL",1)
+PartyHasItem("misc9t")
+THEN
+RESPONSE #100
+SetGlobal("EggsDie","GLOBAL",0)
+END

@@ -1,0 +1,7 @@
+IF
+AreaCheck("CVUmo5")
+Global("SolaUmo5","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SolaUmo5","LOCALS",1)
+END

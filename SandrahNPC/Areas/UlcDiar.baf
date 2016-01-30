@@ -1,0 +1,8 @@
+IF
+	Global("SanOrDi","BG3901",0)
+THEN
+	RESPONSE #100
+		SetGlobal("SanOrDi","BG3901",1)
+		ActionOverride("Body1",CreateItem("SanOrDi",0,0,0))
+		Continue()
+END

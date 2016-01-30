@@ -1,0 +1,28 @@
+IF
+Global("SanBHTalos","GLOBAL",3)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("CVTalos",[4082.1131],7)
+SetGlobal("SanBHTalos","GLOBAL",4)
+END
+
+IF
+Global("SanBHTalos","GLOBAL",5)
+THEN
+RESPONSE #100
+CreateCreature("dsfordrg",[4357.1536],3)
+CreateCreature("ssnake01",[3963.1250],4)
+CreateCreature("ssnake01",[4286.1247],5)
+SetGlobal("SanBHTalos","GLOBAL",6)
+END
+
+IF
+Global("SanBHTalos","GLOBAL",6)
+Delay(30)
+THEN
+RESPONSE #100
+ActionOverride("CVTalos",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanBHTalos","GLOBAL",7)
+END
+

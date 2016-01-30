@@ -1,0 +1,17 @@
+IF
+IsOverMe("CVShau")
+Global("SanSharkta","GLOBAL",10)
+PartyHasItem("SHAUMENT")
+THEN
+RESPONSE #100
+TakePartyItem("SHAUMENT")
+SetGlobal("SanSharkta","GLOBAL",11)
+END
+
+IF
+IsOverMe("CVShau")
+PartyHasItem("CVShaJwl")
+THEN
+RESPONSE #100
+TakePartyItem("CVShaJwl")
+END

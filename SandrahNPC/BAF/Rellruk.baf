@@ -1,0 +1,11 @@
+IF
+See("Imoen2")
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet("Rellruk")
+END
+
+
+

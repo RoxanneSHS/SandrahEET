@@ -1,0 +1,10 @@
+IF
+Global("PsiEntry","DD5000",1)
+Dead("Psidark1")
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("CVPsis")) 
+SetGlobal("PsiEntry","DD5000",2)
+END

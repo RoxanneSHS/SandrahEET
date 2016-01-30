@@ -1,0 +1,51 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealcor","GLOBAL",4)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealcor","GLOBAL",1)
+END
+
+IF 
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+Global("SanHealcor","GLOBAL",4)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+Global("SanCorbabe","GLOBAL",11)
+AreaCheck("BG0103")
+InParty("CVSandr")
+Global("P#CoranMoves","GLOBAL",1)
+!Global("KickedOut","LOCALS",3)
+THEN
+RESPONSE #100
+SetGlobal("KickedOut","LOCALS",3)
+SetGlobal("SanCorbabe","GLOBAL",12)
+END
+
+IF
+!Global("P#CNRBabeBack","GLOBAL",2)
+InParty("CVSandr")
+GlobalGT("SanCorbabe","GLOBAL",1)
+GlobalLT("SanCorbabe","GLOBAL",11)
+THEN
+RESPONSE #100
+SetGlobal("P#CNRBabeBack","GLOBAL",2)
+END

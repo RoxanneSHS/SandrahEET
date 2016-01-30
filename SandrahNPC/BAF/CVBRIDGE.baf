@@ -1,0 +1,9 @@
+IF
+Contains("SANNAV1",Myself) 
+Contains("SANNAV2",Myself)
+Global("PlacedBook","CVPIR4",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSuBH","GLOBAL",36)
+SetGlobal("PlacedBook","CVPIR4",1)
+END

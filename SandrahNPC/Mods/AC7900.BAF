@@ -1,0 +1,8 @@
+IF
+	Global("ACQ4","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQ4","GLOBAL",1)
+		CreateCreature("ACQ40001",[4515.3332],0)
+		Continue()
+END

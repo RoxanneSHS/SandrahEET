@@ -1,0 +1,12 @@
+IF
+Global("nvklje","LOCALS",1)
+Global("SanArenIde","RA4300",0)
+InParty("CVSandr")
+!InParty("Imoen2")
+See("CVSandr")
+GlobalLT("Chapter","GLOBAL",19)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanArenIde","RA4300",1)
+END

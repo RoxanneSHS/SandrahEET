@@ -1,0 +1,102 @@
+IF
+NumTimesTalkedTo(0)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",0)
+THEN
+RESPONSE #100
+ForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+SetGlobal("ShandalarBehavior","LOCALS",1)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",1)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+SetGlobal("ShandalarBehavior","LOCALS",2)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+	Global("ShandalarBehavior","LOCALS",2)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),RED_FIREBALL)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+SetGlobal("ShandalarBehavior","LOCALS",3)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",3)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),WIZARD_FLESH_TO_STONE)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+SetGlobal("ShandalarBehavior","LOCALS",4)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",4)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+SetGlobal("ShandalarBehavior","LOCALS",5)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",5)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),WIZARD_FLESH_TO_STONE)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+SetGlobal("ShandalarBehavior","LOCALS",6)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",6)
+THEN
+RESPONSE #50
+ForceSpell(NearestEnemyOf(Myself),RED_FIREBALL)
+SetGlobal("ShandalarBehavior","LOCALS",7)
+RESPONSE #50
+ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+SetGlobal("ShandalarBehavior","LOCALS",7)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("ShandalarBehavior","LOCALS",7)
+THEN
+RESPONSE #100
+ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_LIGHTNING_BOLT)
+SetGlobal("ShandalarBehavior","LOCALS",8)
+END
+
+IF
+HPPercentLT(Myself,35)
+Global("ShandalarBehavior","LOCALS",8)
+THEN
+RESPONSE #100
+SetGlobal("ShandalarBehavior","LOCALS",9)
+CreateCreatureObjectDoor("Ogrema01",Myself,0,0,0)
+CreateCreatureObjectDoor("ogrema_a",Myself,0,0,0)
+ForceSpell(Myself,DRYAD_TELEPORT)
+ActionOverride("ShandalS",DestroySelf())
+AddexperienceParty(21000)
+END
+
+

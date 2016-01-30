@@ -1,0 +1,17 @@
+IF
+Global("CVAR6000","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR6000","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("CVTiamal","AR6000",0)
+Dead("abazigal")
+THEN
+RESPONSE #100
+SetGlobal("CVTiamal","AR6000",1)
+CreateCreature("CVTiamal",[780.870],6)
+Continue()
+END

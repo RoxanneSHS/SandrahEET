@@ -1,0 +1,13 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("SanPCGoodMys","GLOBAL",6)
+FadeToColor([20.0],0)
+Wait(3)
+RestorePartyLocations()
+Wait(2)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+END

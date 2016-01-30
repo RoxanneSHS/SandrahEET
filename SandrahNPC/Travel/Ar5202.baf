@@ -1,0 +1,33 @@
+IF
+Global("CVAR5202","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR5202","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalGT("TalkedToNyalee","GLOBAL",0)
+InParty("CVSandr")
+Global("SanTempGard","ar5202",0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanTempGard","ar5202",1)
+END
+
+IF
+InParty("Yasraena")
+InParty("CVSandr")
+Dead("YSMom")
+Global("SanYasArk","ar5202",0)
+!StateCheck("Yasraena",CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanYasArk","ar5202",1)
+ActionOverride("CVSandr",MoveToObject("Yasraena"))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

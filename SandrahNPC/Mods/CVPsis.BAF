@@ -1,0 +1,213 @@
+IF
+	!GlobalTimerNotExpired("Mebusy","LOCALS")
+	Detect([ENEMY])
+THEN
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #200
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),MIND_FLAYER_PSIONIC_BLAST)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),MIND_FLAYER_DOMINATION)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_MAZE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_DISINTEGRATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_INFLICT_PAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_EMOTION_KILL)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_LIFE_DRAIN)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_PROJECT_FORCE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_EGOWHIP)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_BALLISTIC)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell([PC],PSIONIC_DETONATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SecondNearest([PC]),PSIONIC_DETONATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(ThirdNearest([PC]),PSIONIC_DETONATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FourthNearest([PC]),PSIONIC_DETONATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(FifthNearest([PC]),PSIONIC_DETONATE)
+	RESPONSE #100
+		SetGlobalTimer("Mebusy","LOCALS",ONE_ROUND)
+		ReallyForceSpell(SixthNearest([PC]),PSIONIC_DETONATE)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackOneRound(NearestEnemyOf(Myself))
+END
+
+

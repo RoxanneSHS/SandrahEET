@@ -1,0 +1,32 @@
+IF
+GlobalGT("SanSharInt","GLOBAL",28)
+Global("Sharmove","CVSans",0)
+THEN
+RESPONSE #100
+ActionOverride("Sharteel",DestroySelf())
+SetGlobal("Sharmove","CVSans",1)
+END
+
+IF
+GlobalGT("SanSharInt","GLOBAL",28)
+Global("Gorbab","CVSans",0)
+THEN
+RESPONSE #100
+SetGlobal("Gorbab","CVSans",1)
+ClearAllActions()
+FadeToColor([30.0],0)
+Wait(2)
+ActionOverride(Player1,LeaveAreaLUA("CVSan2","",[223.371],11))
+ActionOverride(Player2,LeaveAreaLUA("CVSan2","",[259.361],9))
+ActionOverride(Player3,LeaveAreaLUA("CVSan2","",[359.296],4))
+ActionOverride(Player4,LeaveAreaLUA("CVSan2","",[300.345],8))
+ActionOverride(Player5,LeaveAreaLUA("CVSan2","",[356.319],8))
+ActionOverride(Player6,LeaveAreaLUA("CVSan2","",[329.336],8))
+ActionOverride("Haiass",LeaveAreaLUA("CVSan2","",[190.361],8))
+ActionOverride("Pellig",LeaveAreaLUA("CVSan2","",[436.429],4))
+FadeFromColor([30.0],0)
+END
+
+
+
+

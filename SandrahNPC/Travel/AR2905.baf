@@ -1,0 +1,44 @@
+IF
+GlobalLT("XanDecide","GLOBAL",9)
+InParty("CVSandr")
+!InParty("xan")
+!InParty("o#xan")
+Global("CVDrag3","ar2905",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag3","ar2905",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag3"))
+END
+
+IF
+GlobalLT("SanSharInt","GLOBAL",26)
+InParty("CVSandr")
+Global("CVDrag7","ar2905",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag7","ar2905",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag7"))
+END
+
+IF
+GlobalLT("HealworkIndi","GLOBAL",5)
+InParty("CVSandr")
+Global("CVDrag13","ar2905",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag13","ar2905",1)
+ActionOverride("CVSandr",AddSpecialAbility("cvdra13"))
+END
+
+IF
+GlobalLT("CVGodag","GLOBAL",11)
+PartyHasItem("Godag03")
+THEN
+RESPONSE #100
+SetGlobal("CVGodag","GLOBAL",11)
+AddexperienceParty(7000)
+EraseJournalEntry(@907)
+END

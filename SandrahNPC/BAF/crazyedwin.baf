@@ -1,0 +1,32 @@
+IF
+See(NearestEnemyOf(Myself))
+HasItem("scrl95",Myself)
+THEN
+RESPONSE #100
+UseItem("scrl95",Myself)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+HaveSpell(WIZARD_HORROR)
+THEN
+RESPONSE #100
+Spell(Myself,WIZARD_HORROR)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+HasItem("scrx9",Myself)
+THEN
+RESPONSE #100
+UseItem("scrx9",Myself)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+HaveSpell(WIZARD_ABI_DALZIMS_HORRID_WILTING)
+THEN
+RESPONSE #100
+Spell(Myself,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+END
+

@@ -1,0 +1,15 @@
+IF
+Global("CVAR0334","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0334","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("ItemDupC","GLOBAL",0)
+PartyHasItem("CBMaldup")
+THEN
+RESPONSE #100
+SetGlobal("ItemDupC","GLOBAL",1)
+END

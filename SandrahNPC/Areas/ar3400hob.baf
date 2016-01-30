@@ -1,0 +1,31 @@
+IF
+Global("hobExists","BG4500",0)
+THEN
+RESPONSE #100
+CreateCreature("hobwiz01",[4363.3512],4)
+SetGlobal("hobExists","BG4500",1)
+END
+
+IF
+Global("hobExists","BG4500",1)
+THEN
+RESPONSE #100
+CreateCreature("sahobwiz",[4443.3502],4)
+SetGlobal("hobExists","BG4500",2)
+END
+
+IF
+Global("hobExists","BG4500",2)
+THEN
+RESPONSE #100
+CreateCreature("trolde01",[4728.3546],4)
+SetGlobal("hobExists","BG4500",3)
+END
+
+IF
+Global("hobExists","BG4500",3)
+THEN
+RESPONSE #100
+CreateCreature("trolde02",[4683.3569],4)
+SetGlobal("hobExists","BG4500",4)
+END

@@ -1,0 +1,85 @@
+IF
+OnCreation()
+GlobalLT("SanShauOrcStaff","GLOBAL",2)
+Global("Shauexit","CVSHA1",0)
+THEN
+RESPONSE #100
+SetGlobal("Shauexit","CVSHA1",1)
+TriggerActivation("ToAmn",FALSE)
+TriggerActivation("OrcRune",TRUE)
+TriggerActivation("InClan",FALSE)
+END
+
+IF
+Global("SanShauOrcStaff","GLOBAL",2)
+Global("Shauexit","CVSHA1",1)
+THEN
+RESPONSE #100
+SetGlobal("Shauexit","CVSHA1",2)
+TriggerActivation("InClan",TRUE)
+END
+
+
+IF
+PartyHasItem("CVORSTA")
+Global("Shauexit","CVSHA1",2)
+THEN
+RESPONSE #100
+SetGlobal("Shauexit","CVSHA1",3)
+TriggerActivation("ToAmn",TRUE)
+END
+
+IF
+Global("shauorcboy","GLOBAL",7)
+Global("Shauexit","CVSHA1",3)
+OR(2)
+!GlobalTimerExpired("ShauToClan","GLOBAL")
+!InParty("Minsc")
+THEN
+RESPONSE #100
+SetGlobal("Shauexit","CVSHA1",4)
+TriggerActivation("InClan",FALSE)
+END
+
+IF
+Global("shauorcboy","GLOBAL",7)
+OR(2)
+Global("Shauexit","CVSHA1",3)
+Global("Shauexit","CVSHA1",4)
+GlobalTimerExpired("ShauToClan","GLOBAL")
+InParty("Minsc")
+THEN
+RESPONSE #100
+SetGlobal("Shauexit","CVSHA1",5)
+TriggerActivation("InClan",TRUE)
+END
+
+IF
+Global("Shauexit","CVSHA1",4)
+!InParty("Minsc")
+Global("MissMinsc","CVSHA1",0)
+THEN
+RESPONSE #100
+SetGlobal("MissMinsc","CVSHA1",1)
+ActionOverride(Player1,DisplayStringHead(Myself,@645))
+END
+
+IF
+Global("Shauexit","CVSHA1",4)
+!GlobalTimerExpired("ShauToClan","GLOBAL")
+Global("MissTime","CVSHA1",0)
+THEN
+RESPONSE #100
+SetGlobal("MissTime","CVSHA1",1)
+ActionOverride(Player1,DisplayStringHead(Myself,@646))
+END
+
+IF
+Global("Shauexit","CVSHA1",5)
+Global("ZLord","CVSHA1",0)
+THEN
+RESPONSE #100
+SetGlobal("ZLord","CVSHA1",1)
+CreateCreature("CVZLord",[962.2283],8)
+CreateCreature("CVZLord",[1183.1493],0)
+END

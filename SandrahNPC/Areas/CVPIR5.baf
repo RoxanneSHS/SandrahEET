@@ -1,0 +1,10 @@
+IF
+Global("Itemfarkpa","GLOBAL",0)
+PartyHasItem("CVFarkpa")
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("Itemfarkpa","GLOBAL",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVbookw"))
+END

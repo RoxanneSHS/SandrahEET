@@ -1,0 +1,16 @@
+IF
+Global("TalkedToHgkar01","GLOBAL",1)
+Global("CVAR6400","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR6400","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanChoices","ar6400",1)
+Global("CVAR3001","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanChoices","ar6400",2)
+END

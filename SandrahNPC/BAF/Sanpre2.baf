@@ -1,0 +1,7 @@
+IF
+AreaCheck("ar3513")
+Global("CbSarevokCutsceneStart","AR3513",1)
+THEN
+RESPONSE #100
+Attack("CBSRVDED")
+END

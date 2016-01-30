@@ -1,0 +1,49 @@
+IF
+Global("CVAR2400","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2400","GLOBAL",1)
+Continue()
+END
+
+IF
+Dead("udmaster")
+Global("RZNotAllowTeleport","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("RZNotAllowTeleport","GLOBAL",1)
+Continue()
+END
+
+IF
+Dead("udmaster")
+Global("RZNotAllowTeleport","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RZNotAllowTeleport","GLOBAL",0)
+EraseJournalEntry(@810)
+Continue()
+END
+
+IF
+InParty("CVSandr")
+Global("Pelljump","ar2400",0)
+THEN
+RESPONSE #100
+ActionOverride("Pellig",JumpToPoint([2913.1682]))
+ActionOverride("Haiass",JumpToPoint([2803.1724]))
+SetGlobal("Pelljump","ar2400",1)
+SetGlobal("SanRepMF","ar2400",1)
+END
+
+IF
+Global("OutJail","ar2400",0)
+Dead("UDogre")
+THEN
+RESPONSE #100
+SetGlobal("OutJail","ar2400",1)
+Unlock("Door16")
+OpenDoor("Door16")
+END
+
+

@@ -1,0 +1,69 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		FadeToColor([30.0],0)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[579.1521],7)
+		Wait(1)
+		FadeFromColor([30.0],0)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player2)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[621.1551],7)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player3)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[668.1563],7)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player4)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[720.1563],7)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player5)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[764.1553],7)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player6)
+		Wait(1)
+		LeaveAreaLUA("AR1900","",[1006.1581],3)
+END
+
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId("CLFCER")
+		Wait(1)
+		MoveBetweenAreas("AR1900",[1008.1491],4)
+SetCutSceneLite(FALSE)
+END
+
+
+

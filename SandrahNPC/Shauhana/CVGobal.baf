@@ -1,0 +1,14 @@
+IF
+TimeOfDay(DAY)
+Global("SanDaywatch","GLOBAL",1)
+OR(2)
+See(Player1)
+See(Player3)
+OR(2)
+See(Player2)
+See(Player4)
+THEN
+RESPONSE #100
+SetGlobal("SanDaywatch","GLOBAL",2)
+DisplayStringWait(Myself,@215)
+END

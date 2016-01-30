@@ -1,0 +1,39 @@
+//Dream of Mystra Sanmyarm
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+FadeToColor([20.0],0)
+StorePartyLocations()
+Wait(2)
+LeaveAreaLUA("CVDRE1","",[986.1011],7)
+FadeFromColor([20.0],0)
+Wait(2)
+CreateCreatureObjectOffset("SanMyst",Myself,[-100.-50])
+CreateCreatureObjectOffset("sanpre4",Myself,[-50.-100])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+ActionOverride("Sanpre4",StartDialogueNoSet("Sanpre2"))
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("SanPre4")
+CreateVisualEffectObject("SPCLOUD1","SanPre4") 
+Wait(2) 
+ActionOverride("Sanmyst",EscapeArea()) 
+Wait(2)
+ActionOverride("Sanpre4",EscapeArea())
+Wait(2)
+EndCutSceneMode()
+END
+

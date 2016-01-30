@@ -1,0 +1,58 @@
+IF
+Global("Sanpogi","BG4900",0)
+Global("SanDoPotn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("Sanpogi","BG4900",1)
+CreateCreature("cvpotngi",[3930.490],6)
+Continue()
+END
+
+IF
+LevelPartyGT(4)
+InParty("CVSandr")
+Global("DruidCar","BG4900",0)
+THEN
+RESPONSE #100
+CreateCreature("CVDrud3",[1387.1314],10)
+CreateCreature("CVDrud1",[1439.1365],4)
+SetGlobal("DruidCar","BG4900",1)
+Continue()
+END
+
+IF
+Global("DruidCar","BG4900",3)
+THEN
+RESPONSE #100
+CreateCreature("KobCom02",[1586.1433],0)
+CreateCreature("KobCom02",[1644.1420],4)
+CreateCreature("kobwit01",[1712.1423],7)
+CreateCreature("cmkob03",[1748.1416],11)
+CreateCreature("elekob01",[1848.1421],14)
+SetGlobal("DruidCar","BG4900",4)
+END
+
+IF
+Global("SanBranSearchRem","Global",5)
+InParty("CVSandr")
+!InParty("Branwen")
+!StateCheck("branwen",CD_STATE_NOTVALID)
+Global("Branfree","BG4900",0)
+THEN
+RESPONSE #100
+SetGlobal("Branfree","BG4900",1)
+EraseJournalEntry(@11)
+END
+
+IF
+Global("Oopahfun","BG4900",0)
+InParty("CVSandr")
+Dead("Oopah")
+OR(2)
+ReputationLT(Player1,9)
+Alignment(Player1,MASK_EVIL)
+THEN
+RESPONSE #100
+SetGlobal("Oopahfun","BG4900",1)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

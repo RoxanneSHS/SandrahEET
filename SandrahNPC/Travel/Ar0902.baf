@@ -1,0 +1,16 @@
+IF
+Global("CVAR0902","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0902","GLOBAL",1)
+Continue()
+END
+
+IF
+HasItem("DDRAVE05","CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",DestroyItem("DDRAVE05"))
+ActionOverride("CVSandr",UseItem("DDrave04",Myself))
+ChangeEnemyAlly("CVSandr",PC)
+END

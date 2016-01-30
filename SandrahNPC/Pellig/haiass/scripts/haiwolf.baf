@@ -1,0 +1,96 @@
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  GlobalLT("HaiassLevel","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  Global("HaiassLevel","GLOBAL",2)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  Global("HaiassLevel","GLOBAL",3)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  Global("HaiassLevel","GLOBAL",4)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  Global("HaiassLevel","GLOBAL",5)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  Global("HaiassLevel","GLOBAL",6)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+    END
+
+IF
+  See(Protagonist)
+  NumTimesTalkedTo(0)
+  GlobalGT("HaiassLevel","GLOBAL",6)
+THEN
+  RESPONSE #100
+    MakeGlobal()
+    SetGlobal("HaiassSeUne","GLOBAL",1)
+    SetGlobal("HaiassQuieto","GLOBAL",0)
+    SetGlobal("HaiassJumpOn","GLOBAL",1)
+    SetGlobal("HaiassDesdeBg","GLOBAL",0)
+    Dialogue(Protagonist)
+   END

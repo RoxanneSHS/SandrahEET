@@ -1,0 +1,23 @@
+IF
+Global("SanDestBeastCult","GLOBAL",3)
+See(Player1)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet([PC])
+END
+
+IF
+GlobalLT("SanBeginRTF","GLOBAL",1)
+OR(2)
+Global("SanHealanom","GLOBAL",11)
+Global("SanKeldorn","GLOBAL",9)
+Global("PaladQ","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("PaladQ","LOCALS",1)
+MoveToObject(Player1)
+StartDialogueNoSet([PC])
+END
+
+

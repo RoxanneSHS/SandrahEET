@@ -1,0 +1,76 @@
+IF
+Global("San25ChiQuest","GLOBAL",14)
+THEN
+RESPONSE #100
+CreateCreature("SAMYSTP1",[1559.615],3)
+SetGlobal("San25ChiQuest","GLOBAL",15)
+END
+
+IF
+InParty("Yasraena")
+InParty("CVSandr")
+Global("SanYasSeeUM","cvumo4",0)
+Delay(16)
+THEN
+RESPONSE #100
+SetGlobal("SanYasSeeUM","cvumo4",1)
+ActionOverride("CVSandr",MoveToObject("Yasraena"))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+
+IF
+Global("San25ChiQuest","GLOBAL",90)
+THEN
+RESPONSE #100
+SetGlobal("San25ChiQuest","GLOBAL",99)
+ClearAllActions()
+StartCutSceneMode()
+Wait(2) 
+FadeToColor([30.0],0) 
+Wait(4) 
+FadeFromColor([30.0],0) 
+Wait(2) 
+EndCutSceneMode()
+TextScreen("SanUmo")
+AddJournalEntry(@576,QUEST_DONE)
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("SandrahJoined","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SandrahJoined","GLOBAL",26)
+ActionOverride("CVSandr",ChangeAIScript("CVSanUM",OVERRIDE))
+ActionOverride("CVSandr",Enemy())
+ActionOverride("CVSandr",LeaveParty())
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("Friendgone","CVUMO4",0)
+THEN
+RESPONSE #100
+ActionOverride("Pellig",DestroySelf())
+SetGlobal("Friendgone","CVUMO4",1)
+END
+
+IF
+Global("CVUMHostile","GLOBAL",1)
+Global("Friendgone","CVUMO4",1)
+THEN
+RESPONSE #100
+ActionOverride("Haiass",DestroySelf())
+SetGlobal("Friendgone","CVUMO4",2)
+END
+
+IF
+Global("SandrahJoined","GLOBAL",26)
+!InParty("CVSandr")
+Global("ElmApp","CVUMO4",0)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("SanElmK",Player1,0,0,0)
+SetGlobal("ElmApp","CVUMO4",1)
+END

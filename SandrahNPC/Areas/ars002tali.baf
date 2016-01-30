@@ -1,0 +1,71 @@
+IF
+Global("Itemtalfir","GLOBAL",0)
+PartyHasItem("soaitm34")
+THEN
+RESPONSE #100
+SetGlobal("Itemtalfir","GLOBAL",1)
+END
+
+IF
+Global("Mecorima","ars002",0)
+PartyHasItem("soaitm01")
+THEN
+RESPONSE #100
+SetGlobal("Mecorima","ars002",1)
+END
+
+IF
+InParty("CVSandr")
+Global("Mecorima","ars002",1)
+PartyHasItem("soaitm01")
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Mecorima","ars002",2)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+RealSetGlobalTimer("Talosappear","ars002",125)
+END
+
+IF
+Global("Mecorima","ars002",3)
+RealGlobalTimerExpired("Talosappear","ars002")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("CVTALOP1",Player1,[100.100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[-100.-100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[125.-100])
+CreateCreatureObjectOffset("CVTALOW1",Player1,[-130.-125])
+SetGlobal("Mecorima","ars002",4)
+END
+
+IF
+Global("Mecorima","ars002",5)
+THEN
+RESPONSE #100
+SetGlobal("Mecorima","ars002",7)
+DisplayStringWait("CVTALOP1",@698)
+ActionOverride("CVTALOP1",TakePartyItem("soaitm01"))
+ActionOverride("CVTALOP1",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("Mecorima","ars002",6)
+THEN
+RESPONSE #100
+SetGlobal("Mecorima","ars002",7)
+ActionOverride("CVTALOP1",Enemy())
+END
+
+IF
+Global("SanVsTalos","GLOBAL",0)
+Global("Mecorima","ars002",7)
+THEN
+RESPONSE #100
+SetGlobal("SanVsTalos","GLOBAL",1)
+END

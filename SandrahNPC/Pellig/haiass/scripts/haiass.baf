@@ -1,0 +1,184 @@
+IF
+  Global("HaiassQuieto","GLOBAL",0)
+  CombatCounter(0)
+  Delay(6)
+THEN
+  RESPONSE #100
+    MoveToObjectFollow(Protagonist)
+END
+
+IF
+SpellCastOnMeRES("DW#Curse",[ANYONE])
+THEN
+RESPONSE #100
+DestroySelf()
+END
+
+IF
+  Global("HaissHuye","GLOBAL",1)
+THEN
+  RESPONSE #100
+    RunAwayFrom(NearestEnemyOf(Myself),45)
+    DisplayStringHead(Myself,@51)
+    ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+    SetGlobal("HaissHuye","GLOBAL",0)
+END
+
+IF
+  Global("HaiassQuieto","GLOBAL",0)
+  !StateCheck(Myself,STATE_INVISIBLE)
+  See(NearestEnemyOf(Protagonist))
+  Global("HaiassTactica","GLOBAL",1)
+
+THEN
+  RESPONSE #100
+    ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+    DisplayStringHead(Myself,@52) 
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  AttackedBy([0],DEFAULT)
+  Global("HaiassTactica","GLOBAL",2)
+
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+StateCheck(Myself,STATE_POISONED)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("Spin102",Myself)
+END
+
+IF
+GlobalGT("Haiasslevel","GLOBAL",3)
+HPLT(Myself,25)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("CVdexin",Myself)
+ReallyForceSpell(Myself,CLERIC_HEAL)
+Continue()
+END
+
+IF
+  Global("HaiassTactica","GLOBAL",3)
+  Global("HaiassQuieto","GLOBAL",0)
+  OR(4)
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.MAGE_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.CLERIC_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.DRUID_ALL]))
+    See(NearestEnemyOfType([0.GENERAL_ITEM.0.BARD_ALL]))
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
+  See(NearestEnemyOf(Myself))
+  Global("HaiassTactica","GLOBAL",3)
+THEN
+  RESPONSE #100
+    AttackReevaluate(Nearestenemyof(Myself),30)
+END
+
+IF
+  SEE(Protagonist)
+  Exists(LastAttackerOf(Protagonist))
+  Global("HaiassTactica","GLOBAL",4)
+  Global("HaiassQuieto","GLOBAL",0)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Protagonist),60)
+END
+
+IF
+  AttackedBy([0],DEFAULT)
+  Global("HaiassTactica","GLOBAL",4)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+  AttackedBy([0],DEFAULT)
+  !Global("HaiassTactica","GLOBAL",4)
+  !Global("HaiassTactica","GLOBAL",3)
+  !Global("HaiassTactica","GLOBAL",2)
+  !Global("HaiassTactica","GLOBAL",1)
+THEN
+  RESPONSE #100
+    AttackReevaluate(LastAttackerOf(Myself),30)
+END
+
+IF
+  Global("HaiassQuieto","GLOBAL",0)
+  See(NearestEnemyOf(Protagonist))
+  !Global("HaiassTactica","GLOBAL",4)
+  !Global("HaiassTactica","GLOBAL",3)
+  !Global("HaiassTactica","GLOBAL",2)
+  !Global("HaiassTactica","GLOBAL",1)
+THEN
+  RESPONSE #100
+    AttackReevaluate(NearestEnemyOf(Protagonist),30)
+END
+
+IF
+  Global("HaiassSeUne","GLOBAL",0)
+  !Global("HaiassDesdeBg","GLOBAL",1)
+THEN
+  RESPONSE #100
+    DisplayStringHead(Myself,@53) 
+    EscapeArea()
+END
+
+
+IF
+Global("HaiassQuieto","GLOBAL",1)
+!Global("HaiassMove","GLOBAL",0)
+THEN
+RESPONSE #100
+DisplayStringHead(Myself,@54)
+SetGlobal("HaiassMove","GLOBAL",0)
+END
+
+IF
+Global("HaiassQuieto","GLOBAL",0)
+!Global("HaiassMove","GLOBAL",0)
+THEN
+RESPONSE #100
+DisplayStringHead(Myself,@55)
+SetGlobal("HaiassMove","GLOBAL",0)
+END
+
+
+IF 
+HPGT(Myself,0)
+Global("SPRITE_IS_DEADhaiass","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("SPRITE_IS_DEADhaiass","GLOBAL",0)
+END
+
+
+IF
+Global("SanBeginRTF","GLOBAL",0)
+OR(2)
+AreaCheck("XR0602")
+AreaCheck("AR0602")
+THEN
+RESPONSE #100
+SetGlobal("HaiassSeUne","GLOBAL",0)
+SetGlobal("HaiassDesdeBg","GLOBAL",1)
+DestroySelf()
+END
+

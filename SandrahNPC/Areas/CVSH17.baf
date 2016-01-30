@@ -1,0 +1,8 @@
+IF
+Global("Entered","CVSH17",0)
+InMyArea(Player1)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVSH17",1)
+DisplayStringWait(Player1,@656)
+END

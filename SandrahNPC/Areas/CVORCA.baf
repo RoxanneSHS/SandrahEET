@@ -1,0 +1,26 @@
+IF
+NumDeadGT("ORC02",4)
+NumDeadGT("ORCPRIEST",3)
+NumDeadGT("ORCMAGE",2)
+NumDeadGT("ORC05",2)
+Global("SANIMONASHINT","GLOBAL",17)
+InParty("Imoen2")
+Global("RellrukExists","CVORCA",0)
+THEN
+RESPONSE #100
+SetGlobal("RellrukExists","CVORCA",1)
+CreateCreature("Rellruk",[528.283],0)
+END
+
+IF
+Global("SANIMONASHINT","GLOBAL",17)
+InParty("Imoen2")
+Global("RellrukExists","CVORCA",0)
+PartyHasItem("CVORCA")
+THEN
+RESPONSE #100
+SetGlobal("RellrukExists","CVORCA",1)
+CreateCreature("Rellruk",[528.283],0) 
+END
+
+

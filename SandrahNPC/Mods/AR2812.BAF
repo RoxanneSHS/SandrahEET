@@ -1,0 +1,107 @@
+IF
+	Global("Z#Leave2800","ar2812",0)
+	InParty("Kiyone")
+	InParty("Kova")
+	GlobalGT("KKRomance","GLOBAL",1)
+	GlobalGT("Z#TrialClear","GLOBAL",2)
+	Global("Z#Proposal","GLOBAL",2)
+THEN
+	RESPONSE #100
+		ActionOverride("Suelle2",SetNumTimesTalkedTo(5))
+		ActionOverride("Kiyone",SetSequence(SEQ_SLEEP))
+		ActionOverride("Kiyone",LeaveAreaLUA("Z#2803","",[600.470],6))
+		SetGlobal("Z#Leave2800","ar2812",1)
+END
+
+IF
+	GlobalGT("KKRomance","GLOBAL",1)
+	GlobalGT("Z#TrialClear","GLOBAL",2)
+	InMyArea("Kiyone")
+	InMyArea("Kova")
+	Global("Z#Proposal","GLOBAL",3)
+	Global("Z#Proposallocal","AR2812",0)
+THEN
+	RESPONSE #100
+		FadeToColor([10.0],0)
+		SetGlobal("Z#Proposallocal","AR2812",1)
+		ActionOverride(Player1,LeaveAreaLUA("AR2812","",[467.264],8))
+		ActionOverride(Player2,LeaveAreaLUA("AR2812","",[519.262],7))
+		ActionOverride(Player3,LeaveAreaLUA("AR2812","",[420.274],9))
+		ActionOverride(Player4,LeaveAreaLUA("AR2812","",[569.275],7))
+		ActionOverride(Player5,LeaveAreaLUA("AR2812","",[365.290],9))
+		ActionOverride(Player6,LeaveAreaLUA("AR2812","",[616.295],7))
+		Wait(1)
+		FadeFromColor([10.0],0)
+		ActionOverride("Suelle2",SetNumTimesTalkedTo(0))
+END
+
+IF
+	InParty("K#Auren")
+	InParty("Imoen")
+	!StateCheck("Imoen",STATE_SLEEPING)
+	Global("Chapter","GLOBAL",19)
+	Global("AurenImoenBanter2","AR2812",0)
+THEN
+	RESPONSE #100
+		SetGlobal("AurenImoenBanter2","AR2812",1)
+		ActionOverride("K#Auren",Interact("Imoen"))
+END
+
+IF
+	Global("LK#NindeRestoration","GLOBAL",1)
+	Global("LK#NindeRestored","GLOBAL",0)
+THEN
+	RESPONSE #100
+		SetGlobal("LK#NindeRestored","GLOBAL",1)
+		ActionOverride("Ninde",StartDialogueNoSet(Player1))
+END
+
+IF
+	Global("DefeatedJon","GLOBAL",2)
+	GlobalGT("TalkEllesime","GLOBAL",1)
+	Global("SanAfterJon","GLOBAL",0)
+	InMyArea("CVSandr")
+THEN
+	RESPONSE #100
+		SetGlobal("SanAfterJon","GLOBAL",1)
+END
+
+IF
+	InParty("CVSandr")
+	Global("PelligFollow","GLOBAL",1)
+	!InActiveArea("pellig")
+	!See("pellig")
+	!Dead("pellig") // Pelligram
+THEN
+	RESPONSE #100
+		MoveGlobalObject("Pellig","CVSandr")
+END
+
+IF
+	!Allegiance("Pellig",CONTROLLED)
+	Delay(10)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("Pellig",CONTROLLED)
+END
+
+IF
+	Global("HaiassJumpOn","GLOBAL",1)
+	Global("HaiassSeUne","GLOBAL",1)
+	!InActiveArea("haiass")
+	!See("haiass")
+	!Dead("haiass")
+THEN
+	RESPONSE #100
+		MoveGlobalObject("haiass",Protagonist)
+END
+
+IF
+	!Allegiance("haiass",CONTROLLED)
+	Delay(12)
+THEN
+	RESPONSE #100
+		ChangeEnemyAlly("haiass",CONTROLLED)
+END
+
+

@@ -1,0 +1,7 @@
+IF
+Global("SanLogLT","GLOBAL",1)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogueNoSet([PC])
+END

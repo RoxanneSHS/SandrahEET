@@ -1,0 +1,54 @@
+IF
+OnCreation()
+Exists("CVSandr")
+OR(2)
+Global("SandrahJoined","GLOBAL",52)
+Global("SandrahJoined","GLOBAL",6)
+Global("SanItmBG2","GLOBAL",0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",CreateItem("Belt08",1,0,0))
+ActionOverride("CVSandr",CreateItem("clck02",1,0,0))
+ActionOverride("CVSandr",CreateItem("scrl56",11,0,0))
+ActionOverride("CVSandr",CreateItem("CMHelm04",1,0,0))
+SetGlobal("SanItmBG2","GLOBAL",3)
+SetGlobal("EntJar1","AR0602",2)
+Continue()
+END
+
+IF
+Global("NamedCaptor","AR0602",1)
+InParty("CVSandr")
+Global("SanItmBG2","GLOBAL",3)
+Global("SanHeardIren","GLOBAL",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanHeardIren","GLOBAL",1)
+END
+
+IF
+Global("EntJar1","AR0602",2)
+PartyHasItem("Misc4b")
+THEN
+RESPONSE #100
+SetGlobal("EntJar1","AR0602",0)
+END
+
+IF
+Global("Itempomml","GLOBAL",0)
+PartyHasItem("SW1H54C")
+THEN
+RESPONSE #100
+SetGlobal("Itempomml","GLOBAL",1)
+END
+
+IF
+Global("Itemacorn","GLOBAL",0)
+PartyHasItem("Misc4n")
+THEN
+RESPONSE #100
+SetGlobal("Itemacorn","GLOBAL",1)
+END
+
+

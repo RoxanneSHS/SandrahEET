@@ -1,0 +1,10 @@
+IF
+Global("TSPlot","GLOBAL",9)
+Global("TSPlot5Door","AR0300",0)
+THEN
+RESPONSE #100
+SetGlobal("TSPlot5Door","AR0300",1)
+Unlock("Door0332")
+OpenDoor("Door0332")
+TriggerActivation("Tran0332",TRUE)
+END

@@ -1,0 +1,53 @@
+IF
+Global("SanSola","GLOBAL",16)
+RealGlobalTimerExpired("SanSolaT","LOCALS")
+GlobalGT("Solatalk","GLOBAL",5)
+InParty("Sola")
+THEN
+RESPONSE #100
+SetGlobal("SanSola","GLOBAL",17)
+END
+
+IF
+InParty("Sola")
+Global("SanSola","GLOBAL",18)
+RealGlobalTimerExpired("SanSolaT","LOCALS")
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+IncrementGlobal("SanSola","GLOBAL",1)
+END
+
+IF
+Global("SanSolUM1","GLOBAL",1)
+AreaCheck("CVElm1")
+THEN
+RESPONSE #100
+SetGlobal("SanSolUM1","GLOBAL",2)
+END
+
+IF
+InParty("Sola")
+!AreaCheck("ar4500")
+OR(3)
+Global("SanSola","GLOBAL",17)
+Global("SanSola","GLOBAL",19)
+Global("SanSolUM1","GLOBAL",2)
+!See([ENEMY])
+See("Sola")
+!StateCheck("Sola",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("Sola")
+Interact("CVSandr")
+END
+
+IF
+Global("SanSola","GLOBAL",20)
+THEN
+RESPONSE #100
+AddSpecialAbility("CVSuns")
+SetGlobal("SanSola","GLOBAL",21)
+END

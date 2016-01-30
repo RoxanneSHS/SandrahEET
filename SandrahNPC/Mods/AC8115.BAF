@@ -1,0 +1,9 @@
+IF
+	Global("ACQXZAH1","BG1215",0)
+THEN
+	RESPONSE #100
+		SetGlobal("ACQXZAH1","BG1215",1)
+		CreateCreature("ACQXZAH1",[655.259],13)
+
+END
+

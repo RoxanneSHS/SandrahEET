@@ -1,0 +1,33 @@
+IF
+Global("SanMurhurt","LOCALS",0)
+HPPercentLT(Myself,50)
+InParty(Myself)
+InParty("CVSandr")
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanMurhurt","LOCALS",1)
+END
+
+IF
+GlobalGT("A#MurnPC1","LOCALS",0)
+Global("SanJenFear","LOCALS",0)
+InParty("CVJenlig")
+See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("SanJenFear","LOCALS",1)
+END
+
+IF
+OR(2)
+Global("SanJenFear","LOCALS",1)
+Global("SanMurhurt","LOCALS",1)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+Interact("a#murn")
+END

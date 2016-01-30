@@ -1,0 +1,16 @@
+// Carsa.bcs
+
+IF
+Global("SanKahrk","GLOBAL",0)
+InParty("CVSandr")
+OR(6)
+See(Player1)
+See(Player2)
+See(Player4)
+See(Player3)
+See(Player5)
+See(Player6)
+THEN
+RESPONSE #100
+SetGlobal("SanKahrk","GLOBAL",1)
+END

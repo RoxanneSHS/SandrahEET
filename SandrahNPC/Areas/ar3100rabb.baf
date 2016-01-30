@@ -1,0 +1,17 @@
+IF
+Global("SanRabb","BG4200",0)
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG4200",1)
+CreateCreature("rabbit01",[2134.814],8)
+CreateCreature("rabbit",[2174.854],8)
+END
+
+IF
+Global("SanRabb","BG4200",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","BG4200",2)
+TriggerActivation("InfoHouse",FALSE)
+END

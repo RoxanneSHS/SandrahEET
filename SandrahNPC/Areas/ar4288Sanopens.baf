@@ -1,0 +1,9 @@
+IF
+InParty("CVSandr")
+OR(2)
+Global("CbPartyIsInSoubarMilitia","GLOBAL",7)
+Global("CbPartyHuntsSpy","GLOBAL",2)
+THEN
+RESPONSE #100
+TriggerActivation("Tran5000",TRUE)
+END

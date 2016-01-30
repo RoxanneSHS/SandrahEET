@@ -1,0 +1,22 @@
+IF
+Global("shauorcboy","GLOBAL",0)
+See("CVShau")
+!See([Enemy])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("shauorcboy","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("shauorcboy","GLOBAL",3)
+ReallyForceSpellRES("Cvorunve",Myself)
+ActionOverride("CVorwarl",Polymorph(FIGHTER_MALE_HALFORC))
+END
+
+
+

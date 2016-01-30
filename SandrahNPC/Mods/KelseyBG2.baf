@@ -1,0 +1,10 @@
+IF
+Global("SanHealklsy","GLOBAL",6)
+InParty("J#Kelsey")
+RealGlobalTimerExpired("SanKelseyT","LOCALS")
+!AreaType(OUTDOOR)
+!AreaType(DUNGEON)
+THEN
+RESPONSE #100
+SetGlobal("SanHealklsy","GLOBAL",7)
+END

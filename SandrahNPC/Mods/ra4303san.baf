@@ -1,0 +1,217 @@
+IF
+Global("figsan","GLOBAL",4)
+Dead("ArenaGo1") // Goblin
+Dead("ArenaGo2") // Goblin
+Dead("ArenaGo3") // Goblin
+Dead("ArenaGo4") // Goblin
+Dead("ArenaGo5") // Goblin
+Dead("ArenaGo6") // Goblin
+Dead("ArenaGo7") // Goblin
+Dead("ArenaGo8") // Goblin
+Dead("ArenaGo9") // Goblin
+Dead("ArenaHo1") // Hobgoblin-Krieger
+Dead("ArenaHo2") // Hobgoblin-Krieger
+Dead("ArenaHo3") // Hobgoblin-Krieger
+Dead("ArenaHo4") // Hobgoblin-Krieger
+Dead("ArenaHo5") // Hobgoblin-Hauptmann
+Dead("ArenaHo6") // Hobgoblin-Magier
+Dead("ArenaHo7") // Hobgoblin-Magier
+Dead("ArenaHo8") // Hobgoblin-Magier
+Dead("ArenaHo9") // Hobgoblin-Schamane
+Dead("ArenaOr1") // Ork
+Dead("ArenaOr2") // Ork
+Dead("ArenaOr3") // Ork
+Dead("ArenaOr4") // Ork
+Dead("ArenGo10") // Goblin
+Dead("ArenGo11") // Goblin
+Dead("ArenGo12") // Goblin
+Dead("ArenGo13") // Goblin
+Dead("ArenGo14") // Goblin
+Dead("ArenGo15") // Goblin
+Dead("ArenHo10") // Hobgoblin-Schamane
+Dead("ArenHo11") // Hobgoblin-Hauptmann
+Dead("ArenHo12") // Hobgoblin-Magier
+Dead("ArenHo13") // Hobgoblin-Magier
+THEN
+RESPONSE #100
+SetGlobal("figsan","GLOBAL",5)
+END
+
+IF
+Global("figsan","GLOBAL",6)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+HideGUI()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1133.1295],12))
+MoveViewPoint([1133.1295],INSTANT)
+Wait(1)
+CreateCreature("ArenaMa1",[2727.891],3)
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("figsan","GLOBAL",7)
+END
+
+IF
+Global("figsan","GLOBAL",7)
+Dead("ArenaMa1")
+THEN
+RESPONSE #100
+Wait(2)
+StartCutSceneMode()
+HideGUI()
+Wait(1)
+FadeToColor([20.0],0)
+Wait(1)
+ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1133.1295],12))
+MoveViewPoint([1133.1295],INSTANT)
+Wait(1)
+CreateCreature("ArenaMa2",[2727.891],3)
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(1)
+UnhideGUI()
+EndCutSceneMode()
+SetGlobal("figsan","GLOBAL",8)
+END
+
+IF
+Global("figsan","GLOBAL",8)
+Dead("ArenaMa2")
+THEN
+	RESPONSE #100
+		Wait(2)
+		StartCutSceneMode()
+		HideGUI()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1133.1295],12))
+		MoveViewPoint([1133.1295],INSTANT)
+		Wait(1)
+		CreateCreature("ArenaMa3",[2727.891],3)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("figsan","GLOBAL",9)
+END
+
+IF
+Global("figsan","GLOBAL",9)
+Dead("ArenaMa3")
+THEN
+	RESPONSE #100
+		Wait(2)
+		StartCutSceneMode()
+		HideGUI()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1133.1295],12))
+		MoveViewPoint([1133.1295],INSTANT)
+		Wait(1)
+		CreateCreature("ArenaMa4",[2727.891],3)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("figsan","GLOBAL",10)
+END
+
+IF
+Global("figsan","GLOBAL",10)
+Dead("ArenaMa4")
+THEN
+	RESPONSE #100
+		Wait(2)
+		StartCutSceneMode()
+		HideGUI()
+		Wait(1)
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1133.1295],12))
+		MoveViewPoint([1133.1295],INSTANT)
+		Wait(1)
+		CreateCreature("ArenaMa5",[2727.891],3)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("figsan","GLOBAL",11)
+END
+
+IF
+	Global("Goodbed","GLOBAL",1)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		HideGUI()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride(Player1,MakeUnselectable(1))
+		ActionOverride(Player2,MakeUnselectable(1))
+		ActionOverride(Player3,MakeUnselectable(1))
+		ActionOverride(Player4,MakeUnselectable(1))
+		ActionOverride(Player5,MakeUnselectable(1))
+		ActionOverride(Player6,MakeUnselectable(1))
+		Wait(1)
+		SmallWait(1)
+		SetGlobal("Goodbed","GLOBAL",2)
+		EndCutSceneMode()
+		UnhideGUI()
+		FadeFromColor([20.0],0)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4301","",[386.226],10))
+END
+
+IF
+	Global("figsan","GLOBAL",11)
+	Dead("ArenaMa5")
+THEN
+	RESPONSE #100
+		Wait(2)
+		StartCutSceneMode()
+		HideGUI()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4302","",[1020.2070],8))
+		MoveViewPoint([1020.2070],INSTANT)
+		Wait(1)
+		FadeFromColor([20.0],0)
+		Wait(1)
+		UnhideGUI()
+		EndCutSceneMode()
+		SetGlobal("figsan","GLOBAL",12)
+END
+
+IF
+	Global("figsan","GLOBAL",14)
+THEN
+	RESPONSE #100
+		StartCutSceneMode()
+		HideGUI()
+		FadeToColor([20.0],0)
+		Wait(1)
+		ActionOverride(Player1,MakeUnselectable(1))
+		ActionOverride(Player2,MakeUnselectable(1))
+		ActionOverride(Player3,MakeUnselectable(1))
+		ActionOverride(Player4,MakeUnselectable(1))
+		ActionOverride(Player5,MakeUnselectable(1))
+		ActionOverride(Player6,MakeUnselectable(1))
+		Wait(1)
+		SmallWait(1)
+		SetGlobal("figsan","GLOBAL",15)
+		EndCutSceneMode()
+		UnhideGUI()
+		FadeFromColor([20.0],0)
+		ActionOverride("cvsandr",LeaveAreaLUA("RA4301","",[386.226],10))
+END

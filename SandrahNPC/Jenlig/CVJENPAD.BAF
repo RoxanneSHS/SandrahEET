@@ -1,0 +1,213 @@
+IF
+	See("CVJenlig")
+	NumTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		Dialogue([PC])
+END
+
+IF
+	Global("JenPad","Dsc035",2)
+THEN
+	RESPONSE #100
+		SetGlobal("JenPad","Dsc035",3)
+		ClearAllActions()
+		StartCutSceneMode()
+		Wait(2)
+		Polymorph(DRAGON_RED)
+		Wait(2)
+		EndCutSceneMode()
+		Dialogue([PC])
+END
+
+IF
+	Global("FirkraagScoff","LOCALS",0)
+	Detect([GOODCUTOFF.0.0.0.0.20])
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("FirkraagScoff","LOCALS",1)
+		Continue()
+END
+
+IF
+	CheckStatLT(Myself,1,STONESKINS)
+	!GlobalTimerNotExpired("FirkraagStone","LOCALS")
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,DRAGON_STONE_SKIN)
+		SetGlobalTimer("FirkraagStone","LOCALS",TEN_TURNS)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!GlobalTimerNotExpired("REDDRAGONBREATH","LOCALS")
+	See(StrongestOf)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("REDDRAGONBREATH","LOCALS",THREE_ROUNDS)
+		ReallyForceSpell(LastSeenBy(Myself),RED_DRAGON_BREATH)
+		ReallyForceSpell(LastSeenBy(Myself),RED_DRAGON_HIT)
+		SetGlobal("FirkraagTaunt","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("FirkraagTaunt","LOCALS",1)
+THEN
+	RESPONSE #20
+		SetGlobal("FirkraagTaunt","LOCALS",0)
+		Continue()
+	RESPONSE #20
+		SetGlobal("FirkraagTaunt","LOCALS",0)
+		Continue()
+	RESPONSE #20
+		SetGlobal("FirkraagTaunt","LOCALS",0)
+		Continue()
+	RESPONSE #20
+		SetGlobal("FirkraagTaunt","LOCALS",0)
+		Continue()
+	RESPONSE #20
+		SetGlobal("FirkraagTaunt","LOCALS",0)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Range(NearestEnemyOf(Myself),25)
+THEN
+	RESPONSE #100
+		ForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+		Continue()
+END
+
+IF
+	Detect(Player1)
+	Global("FirkraagRemove","LOCALS",0)
+	Allegiance(Myself,ENEMY)
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,MAGE)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SpellNoDec(Player1,WIZARD_REMOVE_MAGIC)
+		SetGlobal("FirkraagRemove","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect(StrongestOf)
+	Global("FirkraagGreater","LOCALS",0)
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,MAGE)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SpellNoDec(StrongestOf,WIZARD_GREATER_MALISON)
+		SetGlobal("FirkraagGreater","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect(Player1)
+	Global("FirkraagLower","LOCALS",0)
+THEN
+	RESPONSE #100
+		ReallyForceSpell(Player1,DRAGON_FEAR)
+		ReallyForceSpell(Player1,DRAGON_LOWER_FIRE)
+		SetGlobal("FirkraagLower","LOCALS",1)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("FirkraagSilence","LOCALS",0)
+	Detect(WeakestOf)
+	GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,CLERIC)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SpellNoDec(WeakestOf,CLERIC_SILENCE_15_FOOT)
+		SetGlobal("FirkraagSilence","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Global("FirkraagHaste","LOCALS",0)
+	GlobalTimerExpired("Cast","LOCALS")
+	!StateCheck(Myself,STATE_HASTED)
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,MAGE)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SpellNoDec(Myself,WIZARD_HASTE)
+		SetGlobal("FirkraagHaste","LOCALS",1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!GlobalTimerNotExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		ChangeClass(Myself,MAGE)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		SpellNoDec(LastSeenBy(Myself),WIZARD_MELF_ACID_ARROW)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	Detect([PC])
+	!GlobalTimerExpired("Cast","LOCALS")
+THEN
+	RESPONSE #100
+		AttackOneRound(Player1)
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	CombatCounter(0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,CLERIC_HEAL)
+		SetGlobal("FirkraagLower","LOCALS",0)
+		SetGlobal("FirkraagGreater","LOCALS",0)
+		SetGlobal("FirkraagHaste","LOCALS",0)
+		SetGlobal("FirkraagSilence","LOCALS",0)
+		SetGlobal("FirkraagRemove","LOCALS",0)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		AttackOneRound(Player1)
+		AttackOneRound(Player1)
+		Continue()
+END
+
+IF
+	Allegiance(Myself,NEUTRAL)
+	AttackedBy([GOODCUTOFF],DEFAULT)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+
+IF
+	Global("FirkraagInit","LOCALS",0)
+THEN
+	RESPONSE #100
+		ForceSpell(Myself,DRAGON_STONE_SKIN)
+		SetGlobalTimer("FirkraagStone","LOCALS",TEN_TURNS)
+		SetGlobalTimer("REDDRAGONBREATH","LOCALS",THREE_ROUNDS)
+		SetGlobalTimer("Cast","LOCALS",ONE_ROUND)
+		EquipMostDamagingMelee()
+		SetGlobal("FirkraagInit","LOCALS",1)
+END
+
+

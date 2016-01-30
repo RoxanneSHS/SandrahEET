@@ -1,0 +1,31 @@
+IF
+GlobalGT("SanShauOrcStaff","GLOBAL",2)
+Global("CVSHPRIEx","CVSHA8",0)
+THEN
+RESPONSE #100
+SetGlobal("CVSHPRIEx","CVSHA8",1)
+CreateCreature("CVSHPRI",[685.211],5)
+END
+
+IF
+Global("SanShauOrcStaff","GLOBAL",5)
+Global("CVSHPRIEsc","CVSHA8",0)
+THEN
+RESPONSE #100
+SetGlobal("CVSHPRIEsc","CVSHA8",1)
+RealSetGlobalTimer("CVSHPRIEscT","CVSHA8",16)
+END
+
+IF
+RealGlobalTimerExpired("CVSHPRIEscT","CVSHA8")
+Global("CVSHPRIEsc","CVSHA8",1)
+THEN
+RESPONSE #100
+SetGlobal("CVSHPRIEsc","CVSHA8",2)
+DisplayStringWait("CVSHPRI",@311) 
+SmallWait(3)
+CreateVisualEffectObject("SPDIMNDR","CVSHPRI")
+SmallWait(2)
+ForceSpell("CVSHPRI",DRYAD_TELEPORT)
+END
+

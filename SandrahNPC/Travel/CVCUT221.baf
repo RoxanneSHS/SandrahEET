@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+LeaveAreaLUAPanic("CVdre3","",[138.692],15)
+LeaveAreaLUA("CVdre3","",[138.692],15)
+ActionOverride(Player2,LeaveAreaLUA("CVdre3","",[130.743],14))
+ActionOverride(Player3,LeaveAreaLUA("CVdre3","",[77.714],10))
+ActionOverride(Player4,LeaveAreaLUA("CVdre3","",[44.722],13))
+ActionOverride(Player5,LeaveAreaLUA("CVdre3","",[81.773],12))
+ActionOverride(Player6,LeaveAreaLUA("CVdre3","",[235.561],15))
+Wait(1)
+StartCutScene("CVCut222")
+END
+

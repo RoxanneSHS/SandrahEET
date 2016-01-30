@@ -1,0 +1,13 @@
+IF
+GlobalGT("SanFabioBH","GLOBAL",5)
+InParty("Fabio")
+InParty("CVSandr")
+InParty("Edwin")
+Global("SanFabEdBH","bh0500",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanFabEdBH","bh0500",1)
+ActionOverride("Edwin",MoveToObject("CVSandr"))
+ActionOverride("Edwin",Interact(Player1)
+END

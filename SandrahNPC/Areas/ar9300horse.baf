@@ -1,0 +1,15 @@
+IF
+Global("HorseExists","BG3400",0)
+THEN
+RESPONSE #100
+SetGlobal("HorseExists","BG3400",1)
+CreateCreature("horsesa",[2634.3382],13)
+END
+
+IF
+Global("Itemlatin","GLOBAL",0)
+PartyHasItem("hammlat")
+THEN
+RESPONSE #100
+SetGlobal("Itemlatin","GLOBAL",1)
+END

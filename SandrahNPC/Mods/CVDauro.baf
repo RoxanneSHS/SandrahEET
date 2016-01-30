@@ -1,0 +1,37 @@
+IF
+OR(2)
+Global("SanDauroQ","GLOBAL",1)
+Global("SanDauroQ","GLOBAL",5)
+InParty("CVSandr")
+See([PC])
+CombatCounter(0)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet([PC])
+END
+
+IF
+Global("SanDauroQ","GLOBAL",4)
+Range("CVDaudem",55)
+THEN
+RESPONSE #100
+Attack("CVDaudem")
+END
+
+IF
+GlobalGT("SanDauroQ","GLOBAL",2)
+See([ENEMY])
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+Attack(NearestEnemyOf(Myself))
+END
+
+IF
+Global("SanDauroQ","GLOBAL",3)
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToObjectFollow("CVSandr")
+END

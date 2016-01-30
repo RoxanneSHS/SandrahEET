@@ -1,0 +1,17 @@
+IF
+   Global("RZAR1603","GLOBAL",0)
+   AreaCheck("AR1603")
+THEN
+    RESPONSE #100
+             SetGlobal("RZAR1603","GLOBAL",1)
+             Continue()
+END
+
+IF
+   Global("RZAR2001","GLOBAL",0)
+   AreaCheck("AR2001")
+THEN
+    RESPONSE #100
+             SetGlobal("RZAR2001","GLOBAL",1)
+             Continue()
+END

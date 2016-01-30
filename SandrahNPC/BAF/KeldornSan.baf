@@ -1,0 +1,94 @@
+IF
+Global("ENDOFBG1","GLOBAL",2)
+InParty("Keldorn")
+Global("SanKeldorn","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanKeldorn","GLOBAL",1)
+RealSetGlobalTimer("SanKeldornT","LOCALS",1000)
+END
+
+IF
+OR(2)
+Global("SanKeldorn","GLOBAL",1)
+Global("SanKeldorn","GLOBAL",3)
+RealGlobalTimerExpired("SanKeldornT","LOCALS")
+InParty("Keldorn")
+!AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+IncrementGlobal("SanKeldorn","GLOBAL",1)
+END
+
+IF
+Global("SanKeldorn","GLOBAL",6)
+See("F_Deadbo")
+InParty("Keldorn")
+!See([ENEMY])
+THEN
+RESPONSE #100
+MoveToPoint([2220.2150])
+SetGlobal("SanKeldorn","GLOBAL",7)
+END
+
+IF
+Global("SanQuedPris","GLOBAL",5)
+Global("SanKeldorn","GLOBAL",9)
+!AreaCheck("ar1002")
+Delay(12)
+InParty("Keldorn")
+THEN
+RESPONSE #100
+IncrementGlobal("SanKeldorn","GLOBAL",1)
+END
+
+IF
+OR(3)
+Global("SanKeldorn","GLOBAL",2)
+Global("SanKeldorn","GLOBAL",4)
+Global("SanKeldorn","GLOBAL",10)
+InParty("Keldorn")
+CombatCounter(0)
+!StateCheck("Keldorn",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!See([ENEMY])
+See("Keldorn")
+THEN
+RESPONSE #100
+RealSetGlobalTimer("SanKeldornT","LOCALS",1700)
+MoveToObject("Keldorn")
+Interact("CVSandr")
+END
+
+IF
+Global("Ladymaria","GLOBAL",2)
+InParty("Keldorn")
+!AreaCheck("ar1003")
+Global("SanKelMaria","LOCALS",0)
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+!See([ENEMY])
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanKelMaria","LOCALS",1)
+Interact("CVSandr")
+END
+
+IF
+Global("SanKeldorn","GLOBAL",11)
+THEN
+RESPONSE #100
+AddSpecialAbility("cvdra18")
+SetGlobal("SanKeldorn","GLOBAL",12)
+RealSetGlobalTimer("SanKeldornT","LOCALS",1700)
+END
+
+IF
+Global("SanKeldorn","GLOBAL",5)
+Global("SanHealanom","GLOBAL",14)
+THEN
+RESPONSE #100
+SetGlobal("SanKeldorn","GLOBAL",12)
+END

@@ -1,0 +1,13 @@
+IF
+InParty("Kari")
+AreaType(CITY)
+InMyArea("Pellig")
+Global("SanKariPell","GLOBAL",0)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("Kari",CD_STATE_NOTVALID)
+THEN 
+RESPONSE #100
+SetGlobal("SanKariPell","GLOBAL",1)
+ActionOverride("Pellig",Dialogue("Pellig"))
+END

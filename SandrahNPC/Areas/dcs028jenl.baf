@@ -1,0 +1,9 @@
+IF
+Global("JenDead","Dsc028",0)
+THEN
+RESPONSE #100 
+SetGlobal("JenDead","Dsc028",1)
+CreateCreature("CVJendg",[1141.1428],15)
+END
+
+

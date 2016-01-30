@@ -1,0 +1,101 @@
+IF
+PartyHasItem("ESHARD") 
+InParty("CVSandr")
+GlobalGT("SanNarQ","GLOBAL",5)
+Global("DBLExist","bg2300",0)
+Global("SanDblEnc","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("DBLExist","bg2300",1)
+CreateCreature("sandbl1",[1078.3411],0)
+CreateCreature("sandbl2",[996.3424],0)
+END
+
+IF
+Global("RoadFound","GLOBAL",1)
+Global("HorseExists","bg2300",5)
+THEN
+RESPONSE #100
+AddMapNote([280.1206],@91)
+SetGlobal("HorseExists","bg2300",6)
+END
+
+IF
+Global("HorseExists","bg2300",0)
+THEN
+RESPONSE #100
+CreateCreature("horsesa",[3042.3541],4)
+CreateCreature("hobwiz01",[4463.3512],4)
+CreateCreature("sahobwiz",[4443.3502],4)
+SetGlobal("HorseExists","bg2300",1)
+Continue()
+END
+
+IF
+Global("HorseExists","bg2300",1)
+THEN
+RESPONSE #100
+CreateCreature("hobwiz02",[4413.3512],4)
+CreateCreature("sahobwiz",[4743.1052],14)
+CreateCreature("Duearc01",[280.1202],0)
+CreateCreature("Duearc02",[256.1212],0)
+ActionOverride("Duearc01",ChangeEnemyAlly(Myself,ENEMY))
+ActionOverride("Duearc02",ChangeEnemyAlly(Myself,ENEMY))
+SetGlobal("HorseExists","bg2300",2)
+Continue()
+END
+
+IF
+Global("HorseExists","bg2300",2)
+THEN
+RESPONSE #100
+CreateCreature("sahobwiz",[4788.1092],14)
+CreateCreature("hobgod",[4788.1062],14)
+CreateCreature("hobsha01",[4758.1052],14)
+SetGlobal("HorseExists","bg2300",3)
+Continue()
+END
+
+IF
+Global("HorseExists","bg2300",3)
+THEN
+RESPONSE #100
+CreateCreature("hobwiz01",[4483.3532],4)
+SetGlobal("HorseExists","bg2300",4)
+Continue()
+END
+
+IF
+Global("HorseExists","bg2300",4)
+THEN
+RESPONSE #100
+CreateCreature("hobwiz01",[4788.1041],14)
+SetGlobal("HorseExists","bg2300",5)
+Continue()
+END
+
+IF
+GlobalLT("HaiassJoinSan","GLOBAL",3)
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("HaiassJoinSan","GLOBAL",4)
+CreateCreatureObject("Haiass1",Player1,0,0,0)
+Continue()
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+PartyHasItem("SCRLTAR")
+Dead("tarnesh")
+Global("X#IMPC8","GLOBAL",0)
+InParty("Imoen2")
+CombatCounter(0)
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("X#IMPC8","GLOBAL",1)
+ActionOverride("Imoen2",StartDialogueNoSet(Player1))
+END

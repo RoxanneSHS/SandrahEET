@@ -1,0 +1,16 @@
+//SanmothR when Global("Mothdream1","GLOBAL",4)
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("Mothdream1","GLOBAL",5)
+FadeToColor([20.0],0)
+Wait(3)
+RestorePartyLocations()
+Wait(2)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+END
+

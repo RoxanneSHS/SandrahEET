@@ -1,0 +1,12 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+Wait(2)
+ActionOverride("CVSandr",JumpToPoint([818.240]))
+ActionOverride("Celogan",JumpToPoint([901.312]))
+MoveViewPoint([818.260],INSTANT)
+EndCutSceneMode()
+END
+

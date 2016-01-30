@@ -1,0 +1,18 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("CVSandr")
+ActionOverride("Maitrde",MoveToPoint([528.578]))
+ActionOverride("Haiass",MoveToPoint([782.804]))
+MoveViewPoint([528.578],STANDARD)
+Wait(2)
+ActionOverride(Player1,MoveToPoint([657.748]))
+ActionOverride(Player2,MoveToPoint([756.664]))
+ActionOverride(Player3,MoveToPoint([699.630]))
+ActionOverride(Player4,MoveToPoint([600.708]))
+ActionOverride(Player5,MoveToPoint([543.665]))
+ActionOverride(Player6,MoveToPoint([645.596]))
+EndCutSceneMode()
+SetGlobal("Maitre1","GLOBAL",1)
+END

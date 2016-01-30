@@ -1,0 +1,22 @@
+IF
+Global("FoughtTazok","GLOBAL",0)
+HPPercentLT(Myself,50)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+ChangeEnemyAlly("Tazok",ENEMY)
+Attack("CVSandr")
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+Global("X#CanKillTazok","GLOBAL",0)
+HasItem("mihp1","tazok")
+OR(2)
+InParty("kivan")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("X#CanKillTazok","GLOBAL",1)
+ActionOverride("tazok",DestroyItem("mihp1"))
+END

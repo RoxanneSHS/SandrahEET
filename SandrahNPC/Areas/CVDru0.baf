@@ -1,0 +1,60 @@
+IF
+Global("SanDruids","cvdru0",0)
+Dead("CVdruD1")
+Dead("CVdruD2")
+THEN
+RESPONSE #100
+SetGlobal("SanDruids","cvdru0",1)
+END
+
+IF
+Global("StrangeVap","CVdru0",0)
+InMyArea(Player1)
+THEN
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player2)
+RealSetGlobalTimer("VapTi","CVdru0",45)
+SetGlobal("StrangeVap","CVdru0",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player1)
+RealSetGlobalTimer("VapTi","CVdru0",45)
+SetGlobal("StrangeVap","CVdru0",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player3)
+RealSetGlobalTimer("VapTi","CVdru0",45)
+SetGlobal("StrangeVap","CVdru0",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player4)
+RealSetGlobalTimer("VapTi","CVdru0",45)
+SetGlobal("StrangeVap","CVdru0",1)
+RESPONSE #20
+ApplySpellRES("CVSLEEP",Player6)
+RealSetGlobalTimer("VapTi","CVdru0",45)
+SetGlobal("StrangeVap","CVdru0",1)
+END
+
+IF
+Global("StrangeVap","CVdru0",1)
+Global("SanDruids","cvdru0",0)
+RealGlobalTimerExpired("VapTi","CVdru0")
+THEN
+RESPONSE #100
+SetGlobal("StrangeVap","CVdru0",0)
+END
+
+IF
+Global("SanDruids","cvdru0",1)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Player2,CD_STATE_NOTVALID)
+!StateCheck(Player3,CD_STATE_NOTVALID)
+!StateCheck(Player4,CD_STATE_NOTVALID)
+!StateCheck(Player5,CD_STATE_NOTVALID)
+!StateCheck(Player6,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanDruids","cvdru0",2)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

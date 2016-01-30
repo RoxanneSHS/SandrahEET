@@ -1,0 +1,95 @@
+IF
+Global("SantalosDec","GLOBAL",12)
+CombatCounter(0)
+Delay(48)
+THEN
+RESPONSE #100
+ActionOverride(Player1,LeaveAreaLUAPanic("ar9pba","",[4515.2465],7))
+ActionOverride(Player1,LeaveAreaLUA("ar9pba","",[4515.2465],7))
+ActionOverride(Player2,LeaveAreaLUA("ar9pba","",[4501.2495],5))
+ActionOverride(Player3,LeaveAreaLUA("ar9pba","",[4397.2525],8))
+ActionOverride(Player4,LeaveAreaLUA("ar9pba","",[4379.2588],9))
+ActionOverride(Player5,LeaveAreaLUA("ar9pba","",[4342.2630],12))
+ActionOverride(Player6,LeaveAreaLUA("ar9pba","",[4295.2667],12))
+SetGlobal("SantalosDec","GLOBAL",13)
+END
+
+IF
+Global("SantalosDec","GLOBAL",11)
+Global("Enforce","cvtal1",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOW1",[961.439],0)
+CreateCreature("CVTALOW1",[1222.597],4)
+CreateCreature("CVTALOW1",[1197.826],3)
+CreateCreature("CVTALOW1",[1161.836],2)
+SetGlobal("Enforce","cvtal1",1)
+END
+
+IF
+Global("SantalIdl","GLOBAL",1)
+!InMyArea("CVTalos")
+Global("Talosneeded","cvtal1",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOS",[577.451],13)
+SetGlobal("Talosneeded","cvtal1",1)
+END
+
+IF
+Global("SantalIdl","GLOBAL",2)
+CombatCounter(0)
+Delay(48)
+THEN
+RESPONSE #100
+RestorePartyLocations()
+SetGlobal("SantalIdl","GLOBAL",3)
+END
+
+IF
+Global("SantalosDec","GLOBAL",21)
+Delay(12)
+THEN
+RESPONSE #100
+RestorePartyLocations()
+SetGlobal("SantalosDec","GLOBAL",22)
+END
+
+IF
+Global("SantalosDec","GLOBAL",8)
+!InMyArea("CVTalos")
+Global("Talosneeded2","cvtal1",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOS",[577.451],13)
+SetGlobal("Talosneeded2","cvtal1",1)
+END
+
+IF
+Global("SantalosDec","GLOBAL",20)
+!InMyArea("CVTalos")
+Global("Talosneeded3","cvtal1",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOS",[577.451],13)
+SetGlobal("Talosneeded3","cvtal1",1)
+END
+
+IF
+Global("SanTalWar","GLOBAL",2)
+!InMyArea("CVTalos")
+Global("Talosneeded4","cvtal1",0)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOS",[577.451],13)
+SetGlobal("Talosneeded4","cvtal1",1)
+END
+
+IF
+Global("SanTalWar","GLOBAL",3)
+Delay(12)
+THEN
+RESPONSE #100
+RestorePartyLocations()
+SetGlobal("SanTalWar","GLOBAL",4)
+END

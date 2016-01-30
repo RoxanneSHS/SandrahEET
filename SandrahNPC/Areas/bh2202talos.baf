@@ -1,0 +1,19 @@
+IF
+Global("SanBHTalos","GLOBAL",0)
+THEN
+RESPONSE #100
+ActionOverride("Snake Idol",CreateItem("Belt14",0,0,0))
+SetGlobal("SanBHTalos","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("SanBHTalos","GLOBAL",1)
+Global("SanVsTalos","GLOBAL",1)
+InParty("CVSandr")
+PartyHasItem("Belt14")
+THEN
+RESPONSE #100
+SetGlobal("SanBHTalos","GLOBAL",2)
+END
+

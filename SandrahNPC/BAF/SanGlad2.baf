@@ -1,0 +1,13 @@
+IF
+InParty("CVSandr")
+GlobalGT("HendakReleased","AR0406",1)
+THEN
+RESPONSE #100
+JumpToPoint([2772.690])
+Wait(2)
+ActionOverride("Madam",EscapeArea())
+Wait(2)
+ActionOverride("Copgreet",EscapeArea())
+Wait(2)
+ActionOverride("escort4",EscapeArea())
+END

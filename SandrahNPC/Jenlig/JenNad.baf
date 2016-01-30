@@ -1,0 +1,9 @@
+IF
+InParty("CVJenlig")
+Global("Jenswo","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Jenswo","LOCALS",1)
+GiveItemCreate("sw2h15",Myself,0,0,0)
+Continue()
+END

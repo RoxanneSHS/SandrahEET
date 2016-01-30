@@ -1,0 +1,15 @@
+IF
+InMyArea("CVSandr")
+Global("CbRynnsQuest","GLOBAL",8)
+Global("SanAstinar","ar3611",0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+InMyArea(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+CreateCreature("CVGONAST",[855.675],12)
+SetGlobal("SanAstinar","ar3611",1)
+Wait(1)
+ActionOverride("CVGONAST",MoveToObject("CVSandr"))
+END

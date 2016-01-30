@@ -1,0 +1,43 @@
+IF
+Global("CVAR6108","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR6108","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("CVShar","AR6108",0)
+InParty("CVSandr")
+Global("DeactivatePortal","AR6108",2)
+THEN
+RESPONSE #100
+SetGlobal("CVShar","AR6108",1)
+CreateCreatureDoor("CVSharg",[451.629],0)
+END
+
+IF
+Global("CVShar","AR6108",2)
+THEN
+RESPONSE #100
+SetGlobal("CVShar","AR6108",9)
+ActionOverride("CVSharg",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END
+
+IF
+Global("CVShar","AR6108",3)
+THEN
+RESPONSE #100
+SetGlobal("CVShar","AR6108",4)
+ActionOverride("CVSharg",Enemy())
+ActionOverride("CVSharg",Attack(Player1))
+END
+
+IF
+Global("CVShar","AR6108",4)
+HPPercentLT("CVSharg",60)
+THEN
+RESPONSE #100
+SetGlobal("CVShar","AR6108",9)
+ActionOverride("CVSharg",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+END

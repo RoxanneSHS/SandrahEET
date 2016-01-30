@@ -1,0 +1,63 @@
+IF
+Global("CVAR1900","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1900","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("Forest","ar1900",0)
+OR(2)
+Global("DruidStronghold","GLOBAL",1)
+Dead("CeFald01")
+THEN
+RESPONSE #100
+SetGlobal("Forest","ar1900",1)
+AddAreaType(FOREST)
+END
+
+IF
+Global("SanKeldorn","GLOBAL",5)
+Global("CVAR1900","GLOBAL",1)
+InParty("Keldorn")
+!Dead("CVSlaw")
+THEN
+RESPONSE #100
+SetMasterArea("CVCrxw")
+ActionOverride(Player1,LeaveAreaLUA("CVCrxw","",[2306.2296],4))
+ActionOverride(Player2,LeaveAreaLUA("CVCrxw","",[2314.2212],4))
+ActionOverride(Player3,LeaveAreaLUA("CVCrxw","",[2300.2200],4))
+ActionOverride(Player4,LeaveAreaLUA("CVCrxw","",[2339.2300],4))
+ActionOverride(Player5,LeaveAreaLUA("CVCrxw","",[2344.2600],4))
+ActionOverride(Player6,LeaveAreaLUA("CVCrxw","",[2266.2222],4))
+SetGlobal("SanKeldorn","GLOBAL",6)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",24)
+THEN
+RESPONSE #100
+CreateCreature("DEATHKNI",[4042.1072],4)
+CreateCreature("DEATHKNI",[4133.1131],2)
+CreateCreature("DEATHKNI",[4197.1005],4)
+CreateCreature("DEATHKNI",[4561.949],14)
+CreateCreature("DEATHKNR",[3918.1201],3)
+SetGlobal("SanHaerRel1","GLOBAL",25)
+END
+
+IF
+Global("SanHealanom","GLOBAL",7)
+InParty("Anomen")
+!Dead("CVSlaw")
+THEN
+RESPONSE #100
+SetMasterArea("CVCrxw")
+ActionOverride(Player1,LeaveAreaLUA("CVCrxw","",[2306.2296],4))
+ActionOverride(Player2,LeaveAreaLUA("CVCrxw","",[2314.2212],4))
+ActionOverride(Player3,LeaveAreaLUA("CVCrxw","",[2300.2200],4))
+ActionOverride(Player4,LeaveAreaLUA("CVCrxw","",[2339.2300],4))
+ActionOverride(Player5,LeaveAreaLUA("CVCrxw","",[2344.2600],4))
+ActionOverride(Player6,LeaveAreaLUA("CVCrxw","",[2266.2222],4))
+SetGlobal("SanHealanom","GLOBAL",8)
+END

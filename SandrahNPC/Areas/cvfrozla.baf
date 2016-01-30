@@ -1,0 +1,278 @@
+IF
+IsOverMe(Player1)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe("Pellig")
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride("Pellig",JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe("Haiass")
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride("Haiass",JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe(Player2)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player2,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe(Player3)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player3,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe(Player4)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player4,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe(Player5)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player5,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe(Player6)
+GlobalLT("SanHintFactory","GLOBAL",26)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player6,JumpToPoint([3380.1125]))
+Continue()
+END
+
+IF
+IsOverMe("CVVenne2")
+THEN
+RESPONSE #100
+Kill("CVVenne2")
+SetGlobal("Vengone","CVSH22",1)
+CreateVisualEffectObject("icblesai","CVvenne2")
+Continue()
+END
+
+IF
+IsOverMe("skesh201")
+!Dead("skesh201")
+THEN
+RESPONSE #100
+Kill("skesh201")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh202")
+!Dead("skesh202")
+THEN
+RESPONSE #100
+Kill("skesh202")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh203")
+!Dead("skesh203")
+THEN
+RESPONSE #100
+Kill("skesh203")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh204")
+!Dead("skesh204")
+THEN
+RESPONSE #100
+Kill("skesh204")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh205")
+!Dead("skesh205")
+THEN
+RESPONSE #100
+Kill("skesh205")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh206")
+!Dead("skesh206")
+THEN
+RESPONSE #100
+Kill("skesh207")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh207")
+!Dead("skesh207")
+THEN
+RESPONSE #100
+Kill("skesh207")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh208")
+!Dead("skesh208")
+THEN
+RESPONSE #100
+Kill("skesh208")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh209")
+!Dead("skesh209")
+THEN
+RESPONSE #100
+Kill("skesh209")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skesh210")
+!Dead("skesh210")
+THEN
+RESPONSE #100
+Kill("skesh210")
+IncrementGlobal("skelgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skego201")
+!Dead("skego201")
+THEN
+RESPONSE #100
+Kill("skego201")
+CreateVisualEffect("icblesai",[2642.1282])
+IncrementGlobal("golgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skego202")
+!Dead("skego202")
+THEN
+RESPONSE #100
+Kill("skego202")
+CreateVisualEffect("icblesai",[2542.1382])
+IncrementGlobal("golgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skego203")
+!Dead("skego203")
+THEN
+RESPONSE #100
+Kill("skego203")
+CreateVisualEffect("icblesai",[2442.1282])
+IncrementGlobal("golgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skego204")
+!Dead("skego204")
+THEN
+RESPONSE #100
+Kill("skego204")
+CreateVisualEffect("icblesai",[2642.1382])
+IncrementGlobal("golgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("skego205")
+!Dead("skego205")
+THEN
+RESPONSE #100
+Kill("skego205")
+CreateVisualEffect("icblesai",[2642.1282])
+IncrementGlobal("golgone","CVSH22",1)
+Continue()
+END
+
+IF
+IsOverMe("sanorcgh")
+THEN
+RESPONSE #100
+Kill("sanorcgh")
+Continue()
+END
+
+IF
+IsOverMe("sandorc6")
+THEN
+RESPONSE #100
+Kill("sandorc6")
+Continue()
+END
+
+IF
+IsOverMe("sandorc5")
+THEN
+RESPONSE #100
+Kill("sandorc5")
+Continue()
+END
+
+IF
+IsOverMe("sandorc4")
+THEN
+RESPONSE #100
+Kill("sandorc4")
+Continue()
+END
+
+

@@ -1,0 +1,57 @@
+IF
+RealGlobalTimerExpired("SantsuInt","GLOBAL")
+InParty("Tsujath")
+OR(4)
+Global("SanHealTsuja","GLOBAL",6)
+Global("SanHealTsuja","GLOBAL",8)
+Global("SanHealTsuja","GLOBAL",12)
+Global("SanHealTsuja","GLOBAL",14)
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealTsuja","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+!See([ENEMY])
+See("Tsujath")
+!StateCheck("Tsujath",CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+OR(7)
+Global("SanHealTsuja","GLOBAL",7)
+Global("SanHealTsuja","GLOBAL",9)
+Global("SanHealTsuja","GLOBAL",11)
+Global("SanHealTsuja","GLOBAL",13)
+Global("SanHealTsuja","GLOBAL",15)
+Global("SanHealTsuja","GLOBAL",17)
+Global("Tsuguild","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride("Tsujath",MoveToObject("CVSandr"))
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+
+IF
+Global("SanHealTsuja","GLOBAL",10)
+RealGlobalTimerExpired("SantsuInt","GLOBAL")
+OR(2)
+Global("TsujathaRomanceActive","GLOBAL",0)
+Global("TsujathaRomanceActive","GLOBAL",3)
+InParty("Tsujath")
+AreaType(OUTDOOR)
+!TimeOfDay(DAY)
+THEN
+RESPONSE #100
+SetGlobal("SanHealTsuja","GLOBAL",11)
+END
+
+IF
+Global("SanHealTsuja","GLOBAL",18)
+THEN
+RESPONSE #100
+SetGlobal("SanHealTsuja","GLOBAL",19)
+AddSpecialAbility("SanTsu")
+END
+
+

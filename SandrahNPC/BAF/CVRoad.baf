@@ -1,0 +1,59 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+SmallWait(2)
+MoveViewPoint([1369.3292],VERY_FAST)
+MoveToPoint([1369.3292])
+MoveViewPoint([280.1206],VERY_FAST)
+MoveToPoint([280.1206])
+UnhideGUI()
+SetGlobal("RoadFound","GLOBAL",4)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player2)
+MoveToPoint([1369.3292])
+MoveToPoint([280.1206])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player3)
+MoveToPoint([1369.3292])
+MoveToPoint([280.1206])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player4)
+MoveToPoint([1369.3292])
+MoveToPoint([280.1206])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player5)
+MoveToPoint([1369.3292])
+MoveToPoint([280.1206])
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player6)
+MoveToPoint([1369.3292])
+MoveToPoint([280.1206])
+END
+

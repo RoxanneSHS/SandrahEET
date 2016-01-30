@@ -1,0 +1,1677 @@
+IF
+Global("CVWinsSh20","CVSH20",1)
+AreaCheck("CVSH20")
+Detect([PC])
+Range(LastSeenBy(Myself),20)
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+SetGlobal("CVWinsSh20","CVSH20",2)
+StartDialogueNoSet(LastSeenBy(Myself))
+END
+
+
+IF
+	AttackedBy([ENEMY.UNDEAD],DEFAULT)
+	Allegiance(LastAttackerOf(Myself),ENEMY)
+	General(LastAttackerOf(Myself),UNDEAD)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		ClearActions(LastAttackerOf(Myself))
+		Continue()
+END
+
+IF
+	StateCheck(Myself,STATE_PANIC)
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+IF
+!See(NearestEnemyOf(Myself))
+Class(Myself,THIEF_ALL)
+!StateCheck(Myself,STATE_INVISIBLE)
+Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+ApplySpellRES("dw#thinv",Myself)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Class(Myself,THIEF_ALL)
+!StateCheck(Myself,STATE_INVISIBLE)
+Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+		ApplySpellRES("dw#thinv",Myself) // Unsichtbarkeit (cast previously)
+		SetGlobal("backstabplan","LOCALS",1)
+		SetGlobal("backstabtimer","LOCALS",6)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+	Class(Myself,THIEF_ALL)
+	StateCheck(Myself,STATE_INVISIBLE)
+	Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		SetGlobal("backstabplan","LOCALS",1)
+		SetGlobalTimer("backstabtimer","LOCALS",ONE_ROUND)
+END
+
+IF
+	Class(Myself,THIEF_ALL)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Allegiance(Myself,ENEMY)
+	!Detect(NearestEnemyOf(Myself))
+	!Detect(Player1)
+	!Detect(Player2)
+	!Detect(Player3)
+	!Detect(Player4)
+	!Detect(Player5)
+	!Detect(Player6)
+THEN
+	RESPONSE #100
+		ApplySpellRES("dw#thinv",Myself) // Unsichtbarkeit (cast previously)
+END
+
+IF
+	!Global("inafight","LOCALS",1)
+	!Gender(Myself,SUMMONED)
+	!Gender(Myself,20)
+	OR(7)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+THEN
+	RESPONSE #100
+		Enemy()
+		SetGlobal("inafight","LOCALS",1)
+		SetGlobalTimer("stayontarget","LOCALS",TWO_ROUNDS)
+		SetGlobalTimer("seedefences","LOCALS",ONE_ROUND)
+		Continue()
+END
+
+IF
+!Allegiance(Myself,ENEMY)
+OR(7)
+AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+AttackedBy([PC],DEFAULT)
+AttackedBy([FAMILIAR],DEFAULT)
+AttackedBy([ALLY],DEFAULT)
+AttackedBy([CONTROLLED],DEFAULT)
+AttackedBy([CHARMED],DEFAULT)
+SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+THEN
+RESPONSE #100
+Enemy()
+Continue()
+END
+
+IF
+	!Global("inafight","LOCALS",1)
+	OR(9)
+		See(NearestEnemyOf(Myself))
+		Heard([ANYONE],404)
+		Heard([ANYONE],405)
+		Heard([ANYONE],406)
+		Heard([ANYONE],407)
+		Heard([ANYONE],408)
+		Heard([ANYONE],409)
+		Heard([ANYONE],410)
+		Heard([ANYONE],411)
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",1)
+		SetGlobalTimer("stayontarget","LOCALS",TWO_ROUNDS)
+		SetGlobalTimer("seedefences","LOCALS",ONE_ROUND)
+		Continue()
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("rest","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("rtime","LOCALS",2000)
+		SetGlobal("rest","LOCALS",1)
+		Continue()
+END
+
+IF
+	Global("rest","LOCALS",1)
+	!GlobalTimerNotExpired("rtime","LOCALS")
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("rest","LOCALS",0)
+		ApplySpell(Myself,RESTORE_FULL_HEALTH)
+		Rest()
+END
+
+IF
+	Allegiance(Myself,ENEMY)
+	OR(12)
+		AttackedBy([GOODCUTOFF.0.0.0.0.SUMMONED],DEFAULT)
+		AttackedBy([PC],DEFAULT)
+		AttackedBy([FAMILIAR],DEFAULT)
+		AttackedBy([ALLY],DEFAULT)
+		AttackedBy([CONTROLLED],DEFAULT)
+		AttackedBy([CHARMED],DEFAULT)
+		SpellCastOnMe([GOODCUTOFF.0.0.0.0.SUMMONED],0)
+		SpellCastOnMe([PC],0)
+		SpellCastOnMe([FAMILIAR],0)
+		SpellCastOnMe([ALLY],0)
+		SpellCastOnMe([CONTROLLED],0)
+		SpellCastOnMe([CHARMED],0)
+	!GlobalTimerNotExpired("whatthe","LOCALS")
+	!See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("whatthe","LOCALS",TWO_ROUNDS)
+		Continue()
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("seencloud","LOCALS")
+	GlobalTimerNotExpired("whatthe","LOCALS")
+THEN
+	RESPONSE #100
+		RandomWalkContinuous()
+END
+
+
+IF
+	See(NearestEnemyOf(Myself))
+	!Global("chasing","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("chasing","LOCALS",0)
+		ClearActions(Myself)
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player1)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",1)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player2)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",2)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player3)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",3)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",4)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",5)
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("chasetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(Player6)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetarget","LOCALS",ONE_HOUR)
+		SetGlobal("chasePC","LOCALS",6)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",1)
+	StateCheck(Player1,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",2)
+	StateCheck(Player2,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",3)
+	StateCheck(Player3,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",4)
+	StateCheck(Player4,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",5)
+	StateCheck(Player5,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	Global("chasePC","LOCALS",6)
+	StateCheck(Player6,STATE_REALLY_DEAD)
+THEN
+	RESPONSE #100
+		SetGlobal("chasePC","LOCALS",0)
+		Continue()
+END
+
+IF
+	CheckStatGT(Myself,19,LEVEL)
+	!HasItem("dw#nohla",Myself) // Winterwolfspelz
+	OR(2)
+		GlobalGT("Chapter","GLOBAL",6)
+		AmIInWatchersKeepPleaseIgnoreTheLackOfApostophe()
+	!GlobalTimerNotExpired("HLAInitialize","LOCALS")
+	OR(3)
+		Class(Myself,FIGHTER_ALL)
+		Class(Myself,RANGER_ALL)
+		Class(Myself,PALADIN_ALL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("HLAInitialize","LOCALS",1000)
+		SetGlobal("FighterAbility","LOCALS",2)
+		Continue()
+END
+
+IF
+	HasItem("dw#ptn34",Myself) // Magiewiderstandstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn34",Myself) // Magiewiderstandstrank
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn35",Myself) // Trank des Magieschildes
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn35",Myself) // Trank des Magieschildes
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn21",Myself) // Trank der Klarheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn21",Myself) // Trank der Klarheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn45",Myself) // Trank der Freiheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	        UseItem("dw#ptn45",Myself)
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn34",Myself) // Magiewiderstandstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn34",Myself) // Magiewiderstandstrank
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn35",Myself) // Trank des Magieschildes
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn35",Myself) // Trank des Magieschildes
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn21",Myself) // Trank der Klarheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn21",Myself) // Trank der Klarheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn45",Myself) // Trank der Freiheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	!CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn45",Myself) // Trank der Freiheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_HARDINESS)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),30)
+	OR(2)
+		!CheckStatGT(Myself,39,RESISTCRUSHING)
+		!CheckStatGT(Myself,39,RESISTSLASHING)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_HARDINESS)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_GREATER_WHIRLWIND)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,5,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_GREATER_WHIRLWIND)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_SMITE)
+	AreaType(OUTDOOR)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,5,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_SMITE)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_CRITICAL_STRIKE)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,3,SCRIPTINGSTATE4)
+	!CheckStat(Myself,5,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_CRITICAL_STRIKE)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(ROGUE_ASSASINATION)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,4,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,ROGUE_ASSASINATION)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_WHIRLWIND)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStatGT(Myself,3,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_WHIRLWIND)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(WARRIOR_POWER_ATTACK)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,2,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,WARRIOR_POWER_ATTACK)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	GlobalGT("FighterAbility","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,3,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SpellNoDec(Myself,WARRIOR_CRITICAL_STRIKE)
+		IncrementGlobal("FighterAbility","LOCALS",-1)
+	RESPONSE #200
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	See(NearestEnemyOf(Myself))
+	GlobalGT("FighterAbility","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,5,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SpellNoDec(Myself,WARRIOR_GREATER_WHIRLWIND)
+		IncrementGlobal("FighterAbility","LOCALS",-1)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	AreaType(OUTDOOR)
+	See(NearestEnemyOf(Myself))
+	GlobalGT("FighterAbility","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,5,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		SpellNoDec(Myself,WARRIOR_SMITE)
+		IncrementGlobal("FighterAbility","LOCALS",-1)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(BERSERKER_RAGE)
+	See(NearestEnemyOf(Myself))
+	!CheckStat(Myself,1,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,BERSERKER_RAGE)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(BARBARIAN_RAGE)
+	See(NearestEnemyOf(Myself))
+	!CheckStat(Myself,1,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,BARBARIAN_RAGE)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(KENSAI_KIA)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,2,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,KENSAI_KIA)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(ASSASSIN_POISON)
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),5)
+	!CheckStat(Myself,4,SCRIPTINGSTATE4)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,ASSASSIN_POISON)
+END
+
+IF
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	HaveSpell(ARCHER_CALL_SHOT)
+	See(NearestEnemyOf(Myself))
+	!GlobalTimerNotExpired("calledshot","LOCALS")
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		Spell(Myself,ARCHER_CALL_SHOT)
+		SetGlobalTimer("calledshot","LOCALS",TWO_ROUNDS)
+END
+
+IF
+	HasItem("dw#ptn10",Myself) // Unsichtbarkeitstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	Class(Myself,THIEF_ALL)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn10",Myself) // Unsichtbarkeitstrank
+		Wait(1)
+		SetGlobal("backstabplan","LOCALS",1)
+		SetGlobalTimer("backstabtimer","LOCALS",ONE_ROUND)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	HasItem("potn10",Myself) // Unsichtbarkeitstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	Class(Myself,THIEF_ALL)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #200
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn10",Myself) // Unsichtbarkeitstrank
+		Wait(1)
+		SetGlobal("backstabplan","LOCALS",1)
+		SetGlobalTimer("backstabtimer","LOCALS",ONE_ROUND)
+	RESPONSE #100
+		Continue()
+END
+
+IF
+	HasItem("dw#ptn10",Myself) // Unsichtbarkeitstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	Class(Myself,THIEF_ALL)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn10",Myself) // Unsichtbarkeitstrank
+		SetGlobal("backstabplan","LOCALS",2)
+END
+
+IF
+	HasItem("potn10",Myself) // Unsichtbarkeitstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	Class(Myself,THIEF_ALL)
+	!StateCheck(Myself,STATE_INVISIBLE)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn10",Myself) // Unsichtbarkeitstrank
+		SetGlobal("backstabplan","LOCALS",2)
+END
+
+IF
+	GlobalGT("backstabplan","LOCALS",0)
+	!HasItem("dw#ptn10",Myself) // Unsichtbarkeitstrank
+	!HasItem("potn10",Myself) // Unsichtbarkeitstrank
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobal("backstabplan","LOCALS",0)
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Global("backstabplan","LOCALS",0)
+	StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobal("backstabplan","LOCALS",1)
+		SetGlobalTimer("backstabtimer","LOCALS",ONE_ROUND)
+END
+
+IF
+	HasItem("dw#ptn17",Myself) // Heilungselixier
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn17",Myself) // Heilungselixier
+END
+
+IF
+	HasItem("potn17",Myself) // Heilungselixier
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn17",Myself) // Heilungselixier
+END
+
+IF
+	HasItem("dw#ptn20",Myself) // Gegengift
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn20",Myself) // Gegengift
+END
+
+IF
+	HasItem("potn20",Myself) // Gegengift
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	StateCheck(Myself,STATE_POISONED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn20",Myself) // Gegengift
+END
+
+IF
+	HasItem("dw#ptn55",Myself) // Extrastarker Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	HPPercentLT(Myself,50)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn55",Myself) // Extrastarker Heiltrank
+END
+
+IF
+	HasItem("potn55",Myself) // Extrastarker Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	HPPercentLT(Myself,50)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn55",Myself) // Extrastarker Heiltrank
+END
+
+IF
+	HasItem("dw#ptn52",Myself) // Konzentrierter Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	!GlobalGT("Chapter","GLOBAL",6)
+	HPPercentLT(Myself,50)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn52",Myself) // Konzentrierter Heiltrank
+END
+
+IF
+	HasItem("potn52",Myself) // Konzentrierter Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	!GlobalGT("Chapter","GLOBAL",6)
+	HPPercentLT(Myself,50)
+	!General(Myself,UNDEAD)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn52",Myself) // Konzentrierter Heiltrank
+END
+
+IF
+	HasItem("dw#ptn14",Myself) // Schnelligkeitsöl
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_HASTED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn14",Myself) // Schnelligkeitsöl
+END
+
+IF
+	HasItem("potn14",Myself) // Schnelligkeitsöl
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!StateCheck(Myself,STATE_HASTED)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn14",Myself) // Schnelligkeitsöl
+END
+
+IF
+	HasItem("dw#ptn07",Myself) // Trank der Sturmriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,24,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn07",Myself) // Trank der Sturmriesenstärke
+END
+
+IF
+	HasItem("potn07",Myself) // Trank der Sturmriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,24,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn07",Myself) // Trank der Sturmriesenstärke
+END
+
+IF
+	HasItem("dw#ptn06",Myself) // Trank der Wolkenriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,23,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn06",Myself) // Trank der Wolkenriesenstärke
+END
+
+IF
+	HasItem("potn06",Myself) // Trank der Wolkenriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,23,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn06",Myself) // Trank der Wolkenriesenstärke
+END
+
+IF
+	HasItem("dw#ptn05",Myself) // Trank der Feuerriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,22,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn05",Myself) // Trank der Feuerriesenstärke
+END
+
+IF
+	HasItem("potn05",Myself) // Trank der Feuerriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,22,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn05",Myself) // Trank der Feuerriesenstärke
+END
+
+IF
+	HasItem("dw#ptn04",Myself) // Trank der Frostriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,21,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn04",Myself) // Trank der Frostriesenstärke
+END
+
+IF
+	HasItem("potn04",Myself) // Trank der Frostriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,21,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn04",Myself) // Trank der Frostriesenstärke
+END
+
+IF
+	HasItem("dw#ptn12",Myself) // Trank der Steinriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,20,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn12",Myself) // Trank der Steinriesenstärke
+END
+
+IF
+	HasItem("potn12",Myself) // Trank der Steinriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,20,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn12",Myself) // Trank der Steinriesenstärke
+END
+
+IF
+	HasItem("dw#ptn03",Myself) // Trank der Hügelriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,19,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn03",Myself) // Trank der Hügelriesenstärke
+END
+
+IF
+	HasItem("potn03",Myself) // Trank der Hügelriesenstärke
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,19,STR)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn03",Myself) // Trank der Hügelriesenstärke
+END
+
+IF
+	HasItem("dw#ptn34",Myself) // Magiewiderstandstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn34",Myself) // Magiewiderstandstrank
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn35",Myself) // Trank des Magieschildes
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn35",Myself) // Trank des Magieschildes
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn21",Myself) // Trank der Klarheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn21",Myself) // Trank der Klarheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn45",Myself) // Trank der Freiheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn45",Myself) // Trank der Freiheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn34",Myself) // Magiewiderstandstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn34",Myself) // Magiewiderstandstrank
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn35",Myself) // Trank des Magieschildes
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn35",Myself) // Trank des Magieschildes
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn21",Myself) // Trank der Klarheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn21",Myself) // Trank der Klarheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("potn45",Myself) // Trank der Freiheit
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	!Global("takendefence","LOCALS",1)
+	CheckStatGT(Myself,13,LEVEL)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn45",Myself) // Trank der Freiheit
+		SetGlobal("takendefence","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn41",Myself) // Trank der Macht
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	        UseItem("dw#ptn41",Myself)
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("potn41",Myself) // Trank der Macht
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn41",Myself) // Trank der Macht
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn09",Myself) // Heldentrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn09",Myself) // Heldentrank
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("potn09",Myself) // Heldentrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+	Global("heroptn","LOCALS",0)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn09",Myself) // Heldentrank
+		SetGlobal("heroptn","LOCALS",1)
+END
+
+IF
+	HasItem("dw#ptn24",Myself) // Abwehrtrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatGT(Myself,0,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+	        UseItem("dw#ptn24",Myself)
+END
+
+IF
+	HasItem("potn24",Myself) // Abwehrtrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatGT(Myself,0,ARMORCLASS)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn24",Myself) // Abwehrtrank
+END
+
+IF
+	HasItem("dw#ptn28",Myself) // Trank der Lebenskraft
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,15,CON)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn28",Myself) // Trank der Lebenskraft
+END
+
+IF
+	HasItem("potn28",Myself) // Trank der Lebenskraft
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	CheckStatLT(Myself,15,CON)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn28",Myself) // Trank der Lebenskraft
+END
+
+IF
+	HasItem("dw#ptn42",Myself) // Regenerationstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn42",Myself) // Regenerationstrank
+END
+
+IF
+	HasItem("potn42",Myself) // Regenerationstrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(Myself,STATE_INVISIBLE)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn42",Myself) // Regenerationstrank
+END
+
+IF
+	HasItem("dw#ptn08",Myself) // Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,75)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("dw#ptn08",Myself) // Heiltrank
+END
+
+IF
+	HasItem("potn08",Myself) // Heiltrank
+	!GlobalTimerNotExpired("castspell","LOCALS")
+	!General(Myself,ANIMAL)
+	!General(Myself,MONSTER)
+	!General(Myself,UNDEAD)
+	HPPercentLT(Myself,75)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("castspell","LOCALS",ONE_ROUND)
+		UseItem("potn08",Myself) // Heiltrank
+END
+
+IF
+	OR(2)
+		Heard([ANYONE],405)
+		Heard([ANYONE],409)
+	Range(LastHeardBy(Myself),20)
+	!CheckStatGT(Myself,99,RESISTFIRE)
+	OR(2)
+		!CheckStatGT(Myself,80,RESISTMAGIC)
+		!See(NearestEnemyOf(Myself))
+	See([PC])
+	!Range([PC],8)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("seencloud","LOCALS",FOUR_MINUTES)
+		MoveToObject([PC])
+END
+
+IF
+	Heard([ANYONE],408)
+	Range(LastHeardBy(Myself),20)
+	!CheckStatGT(Myself,99,RESISTACID)
+	OR(2)
+		!CheckStatGT(Myself,80,RESISTMAGIC)
+		!See(NearestEnemyOf(Myself))
+	See([PC])
+	!Range([PC],8)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("seencloud","LOCALS",FOUR_MINUTES)
+		MoveToObject([PC])
+END
+
+IF
+	Heard([ANYONE],404)
+	Range(LastHeardBy(Myself),20)
+	!General(Myself,UNDEAD)
+	!Race(Myself,RAKSHASA)
+	!Race(Myself,DEMONIC)
+	OR(2)
+		!CheckStatGT(Myself,80,RESISTMAGIC)
+		!See(NearestEnemyOf(Myself))
+	See([PC])
+	!Range([PC],8)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("seencloud","LOCALS",FOUR_MINUTES)
+		MoveToObject([PC])
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	OR(8)
+		Heard([ANYONE],404)
+		Heard([ANYONE],405)
+		Heard([ANYONE],406)
+		Heard([ANYONE],407)
+		Heard([ANYONE],408)
+		Heard([ANYONE],409)
+		Heard([ANYONE],410)
+		Heard([ANYONE],411)
+THEN
+	RESPONSE #100
+		NoAction()
+END
+
+IF
+	!Global("chasing","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("chasing","LOCALS",0)
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chasing","LOCALS",0)
+	!Global("chasePC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasing","LOCALS",1)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!Global("inafight","LOCALS",0)
+	!Global("chasePC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",0)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",2)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",3)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",4)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",5)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",6)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+IF
+	StateCheck(Myself,STATE_CHARMED)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	!Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipRanged()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	StateCheck(Myself,STATE_CHARMED)
+	See(NearestEnemyOf(Myself))
+	!StateCheck(NearestEnemyOf(Myself),STATE_INVISIBLE)
+	Range(NearestEnemyOf(Myself),5)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		Attack(NearestEnemyOf(Myself))
+END
+
+IF
+	See(NearestEnemyOf(Myself))
+	Allegiance(Myself,ENEMY)
+	!Allegiance(NearestEnemyOf(Myself),ENEMY)
+	!General(Myself,HUMANOID)
+	OR(2)
+		!General(Myself,GIANTHUMANOID)
+		Race(Myself,GOLEM)
+	OR(2)
+		!General(Myself,UNDEAD)
+		Race(Myself,ZOMBIE)
+	!Race(Myself,LYCANTHROPE)
+	!Race(Myself,DEMONIC)
+	!Class(Myself,WOLF_VAMPIRIC)
+	!Race(Myself,DRAGON)
+	!Race(Myself,DOPPLEGANGER)
+	Range(NearestEnemyOf(Myself),10)
+THEN
+	RESPONSE #100
+		EquipMostDamagingMelee()
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!GlobalTimerNotExpired("setmeleetarget","LOCALS")
+	Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+	ActionListEmpty()
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+	!Allegiance(Myself,ENEMY)
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		Attack(LastAttackerOf(Myself))
+END
+
+IF
+	!Global("chasing","LOCALS",0)
+	See(NearestEnemyOf(Myself))
+THEN
+	RESPONSE #100
+		SetGlobal("chasing","LOCALS",0)
+		Continue()
+END
+
+IF
+	ActionListEmpty()
+	Global("inafight","LOCALS",1)
+	Allegiance(Myself,ENEMY)
+	!See(NearestEnemyOf(Myself))
+	Global("chasing","LOCALS",0)
+	!Global("chasePC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobalTimer("chasetimer","LOCALS",8)
+		SetGlobal("chasing","LOCALS",1)
+END
+
+IF
+	!See(NearestEnemyOf(Myself))
+	GlobalTimerExpired("chasetimer","LOCALS")
+	!Global("inafight","LOCALS",0)
+	!Global("chasePC","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("inafight","LOCALS",0)
+		SetGlobal("chasePC","LOCALS",0)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",1)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player1)
+THEN
+	RESPONSE #100
+		MoveToObject(Player1)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",2)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player2)
+THEN
+	RESPONSE #100
+		MoveToObject(Player2)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",3)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player3)
+THEN
+	RESPONSE #100
+		MoveToObject(Player3)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",4)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player4)
+THEN
+	RESPONSE #100
+		MoveToObject(Player4)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",5)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player5)
+THEN
+	RESPONSE #100
+		MoveToObject(Player5)
+END
+
+IF
+	GlobalTimerNotExpired("chasetimer","LOCALS")
+	Global("chasePC","LOCALS",6)
+	!See(NearestEnemyOf(Myself))
+	!Detect(Player6)
+THEN
+	RESPONSE #100
+		MoveToObject(Player6)
+END
+
+

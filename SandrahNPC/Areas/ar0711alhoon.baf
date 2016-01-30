@@ -1,0 +1,11 @@
+IF
+InMyArea("CVSandr")
+Global("SanKillAlh","ar0711",0)
+Dead("Mindal01")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanKillAlh","ar0711",1)
+END

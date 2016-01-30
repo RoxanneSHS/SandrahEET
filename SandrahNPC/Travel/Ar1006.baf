@@ -1,0 +1,19 @@
+IF
+Global("CVAR1006","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1006","GLOBAL",1)
+Continue()
+END
+
+IF
+RealGlobalTimerExpired("CVColleAgain","GLOBAL")
+OR(3)
+Global("CVColleEnc","GLOBAL",1)
+Global("CVColleEnc","GLOBAL",4)
+Global("CVColleEnc","GLOBAL",7)
+THEN
+RESPONSE #100
+IncrementGlobal("CVColleEnc","GLOBAL",1)
+CreateCreatureObjectOffset("CVColle",Player1,[-45.35])
+END

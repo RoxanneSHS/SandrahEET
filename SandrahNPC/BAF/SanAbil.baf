@@ -1,0 +1,1605 @@
+//Set PID
+
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("SanVisitedWD","GLOBAL",0)
+GlobalGT("Chapter","GLOBAL",3)
+Global("SanPidPack","GLOBAL",10)
+THEN
+RESPONSE #100
+SetGlobal("SanPidPack","GLOBAL",11)
+END
+
+// Sandrah Gains Mystra Blessings
+IF
+XPGT(Myself,350000)
+Global("SanshProf","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanshProf","LOCALS",1)
+ReallyForceSpellRES("spin760",Myself)
+ReallyForceSpellRES("CVProf4",Myself)
+END
+
+IF
+XPGT(Myself,400000)
+Global("SanpriProf","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanpriProf","LOCALS",1)
+ReallyForceSpellRES("CVPriex",Myself)
+END
+
+IF
+GlobalGT("Sanpoints","GLOBAL",24)
+Global("Sancharm","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Sancharm","LOCALS",1)
+ReallyForceSpellRES("spin759",Myself)
+AddSpecialAbility("cvcharm")
+END
+
+IF
+LevelGT(Myself,21)
+Global("SanpriProfL","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanpriProfL","LOCALS",1)
+ReallyForceSpellRES("CVPriex3",Myself)
+END
+
+IF
+LevelGT(Myself,22)
+Global("SanpriProfL","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanpriProfL","LOCALS",2)
+ReallyForceSpellRES("CVPriex3",Myself)
+END
+
+IF
+LevelGT(Myself,23)
+Global("SanpriProfL","LOCALS",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanpriProfL","LOCALS",3)
+ReallyForceSpellRES("CVPriex3",Myself)
+END
+
+IF
+XPGT(Myself,350000)
+Global("SanpriProf","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanpriProf","LOCALS",2)
+ReallyForceSpellRES("CVPriex2",Myself)
+END
+
+IF
+XPGT(Myself,500000)
+Global("SanhamProf","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanhamProf","LOCALS",1)
+ReallyForceSpellRES("CVProf1",Myself)
+END
+
+IF
+XPGT(Myself,750000)
+Global("SanhamProf","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanhamProf","LOCALS",2)
+ReallyForceSpellRES("CVProf2",Myself)
+END
+
+IF
+XPGT(Myself,1250000)
+Global("SanhamProf","LOCALS",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanhamProf","LOCALS",3)
+ReallyForceSpellRES("CVProf3",Myself)
+ReallyForceSpellRES("CVPro10",Myself)
+END
+
+IF
+AreaCheck("ar0700")
+Global("SanpellProf","GLOBAL",0)
+!See([ENEMY])
+CombatCounter(0)
+InMyArea("Pellig")
+OR(2)
+See("Cat01")
+See("noblem3")
+THEN
+RESPONSE #100
+SetGlobal("SanpellProf","GLOBAL",1)
+ReallyForceSpellRES("CVProf9","Pellig")
+DisplayStringWait(Myself,@461)
+END
+
+IF
+XPGT(Myself,80000)
+Global("MystrBless","GLOBAL",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",1)
+AddSpecialAbility("sanhand")
+AddSpecialAbility("spin101")
+AddSpecialAbility("spin101")
+END
+
+IF
+XPGT(Myself,100000)
+Global("MystrBless","GLOBAL",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",2)
+AddSpecialAbility("SPIN142")
+AddSpecialAbility("Amul25")
+AddSpecialAbility("spin101")
+END
+
+IF
+XPGT(Myself,150000)
+Global("MystrBless","GLOBAL",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",3)
+GiveItemCreate("sanmys1","CVSandr",0,0,0) 
+UseItem("sanmys1","CVSandr")
+ReallyForceSpellRES("spin760",Myself)
+AddSpecialAbility("SPIN143")
+AddSpecialAbility("sanhand")
+END
+
+
+IF
+XPGT(Myself,220000)
+Global("MystrBless","GLOBAL",3)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",4)
+DisplayStringWait(Myself,@157)
+ReallyForceSpellRES("sanmys2",Myself)
+AddSpecialAbility("SanLIVE")
+AddSpecialAbility("SPIN101")
+AddSpecialAbility("spin101")
+END
+
+IF
+XPGT(Myself,322000)
+Global("MystrBless","GLOBAL",4)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",5)
+ReallyForceSpellRES("sanmys2",Myself)
+UseItem("sanmys2","CVSandr")
+AddSpecialAbility("SanLIVE")
+AddSpecialAbility("SPIN101")
+END
+
+
+IF
+XPGT(Myself,450000)
+Global("MystrBless","GLOBAL",5)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",6)
+ReallyForceSpellRES("sanmys3",Myself)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("BHAAL1A")
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+Global("CVDrag2","LOCALS",0)
+XPGT(Myself,500000)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag2","LOCALS",1)
+AddSpecialAbility("CVDrag2")
+END
+
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+XPGT(Myself,600000)
+Global("San600","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("San600","LOCALS",1)
+ReallyForceSpellRES("CVTHACB",Myself)
+ReallyForceSpellRES("SPSam1",Myself)
+END
+
+
+IF
+XPGT(Myself,720000)
+Global("MystrBless","GLOBAL",6)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",7)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("cvdeath")
+AddSpecialAbility("rtt045")
+AddSpecialAbility("rtt045")
+END
+
+IF
+Global("CVDrag2","LOCALS",1)
+XPGT(Myself,795000)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDrag2","LOCALS",2)
+AddSpecialAbility("CVDrag2")
+END
+
+IF
+XPGT(Myself,1000000)
+Global("MystrBless","GLOBAL",7)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",8)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("CVSUNS")
+AddSpecialAbility("CVSUNS")
+END
+
+IF
+XPGT(Myself,1250000)
+Global("MystrBless","GLOBAL",8)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",9)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("cvresto")
+ReallyForceSpellRES("SPCL915",Myself)
+END
+
+IF
+XPGT(Myself,1450000)
+Global("MystrBless","GLOBAL",9)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",10)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("MYST10")
+AddSpecialAbility("SOLAREPU")
+END
+
+IF
+XPGT(Myself,1750000)
+Global("SanDef","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanDef","LOCALS",1)
+ReallyForceSpellRES("CVProf6",Myself)
+END
+
+IF
+XPGT(Myself,2000000)
+Global("MystrBless","GLOBAL",10)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("MystrBless","GLOBAL",11)
+DisplayStringWait(Myself,@157)
+AddSpecialAbility("sppr514")
+AddSpecialAbility("bhaal1a")
+END
+
+IF
+XPGT(Myself,2250000)
+Global("SanDef","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanDef","LOCALS",2)
+ReallyForceSpellRES("CVProf7",Myself)
+END
+
+IF
+XPGT(Myself,2500000)
+Global("SanDef","LOCALS",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanDef","LOCALS",3)
+AddSpecialAbility("CVResis")
+AddSpecialAbility("CVDraBre")
+END
+
+IF
+XPGT(Myself,3000000)
+Global("SanDef","LOCALS",3)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanDef","LOCALS",4)
+ReallyForceSpellRES("BGdex16",Myself)
+END
+
+IF
+XPGT(Myself,4009000)
+Global("SanLive","GLOBAL",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanLive","GLOBAL",1)
+ReallyForceSpellRES("CVdexin",Myself)
+ReallyForceSpellRES("BGdex17",Myself)
+END
+
+IF
+XPGT(Myself,4750000) 
+Global("IrGolAbb","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("IrGolAbb","LOCALS",1)
+END
+
+IF
+GlobalGT("SanKillBG1","GLOBAL",100)
+Global("SanKillBonus","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",1)
+ReallyForceSpellRES("spin760",Myself)
+AddSpecialAbility("CVHeal")
+ReallyForceSpellRES("CVProf5",Myself)
+END
+
+IF
+GlobalGT("SanKillBG1","GLOBAL",270)
+Global("SanKillBonus","LOCALS",1)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",2)
+ReallyForceSpellRES("spin760",Myself)
+ReallyForceSpellRES("CVProf5",Myself)
+END
+
+IF
+GlobalGT("SanKillBG1","GLOBAL",500)
+Global("SanKillBonus","LOCALS",2)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",3)
+AddSpecialAbility("SPIN103")
+AddSpecialAbility("SPIN147")
+ReallyForceSpellRES("spin761",Myself)
+AddXPObject("CVSandr",25000)
+DisplayStringWait(Myself,@357)
+END
+
+IF
+GlobalGT("SanKillBG1","GLOBAL",700)
+Global("SanKillBonus","LOCALS",3)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",4)
+AddSpecialAbility("SPIN112")
+AddSpecialAbility("SPIN477")
+AddXPObject("CVSandr",50000)
+DisplayStringWait(Myself,@357)
+END
+
+IF
+Global("SanKillBonus","LOCALS",4)
+OR(2)
+GlobalGT("SanKillBG1","GLOBAL",1070)
+GlobalGT("Formedcloth","GLOBAL",21)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",5)
+ReallyForceSpellRES("CVProf5",Myself)
+ReallyForceSpellRES("spin761",Myself)
+END
+
+IF
+Global("SanKillBonus","LOCALS",5)
+OR(2)
+GlobalGT("SanKillBG1","GLOBAL",1550)
+Global("Formedcloth","GLOBAL",24)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",6)
+AddSpecialAbility("CVInvis")
+AddSpecialAbility("CVInvis")
+END
+
+IF
+Global("SanMystApp","arpo31",3)
+GlobalLT("CQuestActive","GLOBAL",18)
+Global("Sanhasveto","LOCALS",0)
+THEN
+RESPONSE #100
+AddSpecialAbility("CVVeto")
+SetGlobal("SanMystApp","arpo31",4)
+SetGlobal("Sanhasveto","LOCALS",1)
+END
+
+IF
+Global("PaladinPlot","GLOBAL",20)
+Global("SanSeePepl","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSeePepl","LOCALS",1)
+AddSpecialAbility("CVevil")
+AddSpecialAbility("CValgn")
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",5)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+AddSpecialAbility("SPIN147")
+AddSpecialAbility("SPIN142")
+AddSpecialAbility("Sanlive")
+AddSpecialAbility("CVDeath")
+SetGlobal("SanEndBG1Plot","GLOBAL",6)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+GlobalLT("SanKillBonus","LOCALS",6)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",6)
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",250)
+Global("SanKillBonus","LOCALS",6)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",7)
+AddSpecialAbility("SanGaz1")
+ReallyForceSpellRES("CVProf8",Myself)
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",400)
+Global("SanKillBonus","LOCALS",7)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",8)
+AddXPObject("CVSandr",25000)
+DisplayStringWait(Myself,@357)
+AddSpecialAbility("CVDrag5")
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",750)
+Global("SanKillBonus","LOCALS",8)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",9)
+AddXPObject("CVSandr",30000)
+DisplayStringWait(Myself,@357)
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",1000)
+Global("SanKillBonus","LOCALS",9)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",10)
+AddSpecialAbility("CVChao")
+GiveItemCreate("cvmybl","CVSandr",3,3,3)
+END
+
+IF
+GlobalGT("SanKillBG2","GLOBAL",1600)
+Global("SanKillBonus","LOCALS",10)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanKillBonus","LOCALS",11)
+SetGlobal("SanGrHeal","LOCALS",1)
+AddSpecialAbility("CVDrag5")
+END
+
+IF
+GlobalGT("Cowscroll","GLOBAL",19)
+Global("SanRantSp","LOCALS",0)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanRantSp","LOCALS",1)
+AddSpecialAbility("CVRant")
+END
+
+// Lost Items Store
+
+IF
+Global("Itembashj","GLOBAL",0)
+PartyHasItem("ACQBOOK0")
+THEN
+RESPONSE #100
+SetGlobal("Itembashj","GLOBAL",1)
+END
+
+IF
+Global("ItemFinkb","GLOBAL",0)
+PartyHasItem("SUFBOOK2")
+THEN
+RESPONSE #100
+SetGlobal("ItemFinkb","GLOBAL",1)
+END
+
+IF
+Global("Itembo1n","GLOBAL",0)
+PartyHasItem("sufbook1")
+THEN
+RESPONSE #100
+SetGlobal("Itembo1n","GLOBAL",1)
+END
+
+IF
+Global("ItemTSkey","GLOBAL",0)
+PartyHasItem("Tskey")
+THEN
+RESPONSE #100
+SetGlobal("ItemTSkey","GLOBAL",1)
+END
+
+IF
+Global("Itembreir","GLOBAL",0)
+PartyHasItem("aciron")
+THEN
+RESPONSE #100
+SetGlobal("Itembreir","GLOBAL",1)
+END
+
+IF
+Global("Itemulcbo","GLOBAL",0)
+PartyHasItem("BOOK54")
+THEN
+RESPONSE #100
+SetGlobal("Itemulcbo","GLOBAL",1)
+END
+
+IF
+Global("Itempiclo1","GLOBAL",0)
+PartyHasItem("SANwi1")
+THEN
+RESPONSE #100
+SetGlobal("Itempiclo1","GLOBAL",1)
+END
+
+IF
+Global("Itempiclo2","GLOBAL",0)
+PartyHasItem("SANwi2")
+THEN
+RESPONSE #100
+SetGlobal("Itempiclo2","GLOBAL",1)
+END
+
+IF
+Global("Itempiclo3","GLOBAL",0)
+PartyHasItem("SANwi3")
+THEN
+RESPONSE #100
+SetGlobal("Itempiclo3","GLOBAL",1)
+END
+
+IF
+Global("ItemFinka","GLOBAL",0)
+PartyHasItem("SUFBOOKA")
+THEN
+RESPONSE #100
+SetGlobal("ItemFinka","GLOBAL",1)
+END
+
+IF
+Global("ItemFink4","GLOBAL",0)
+PartyHasItem("SUFBOOK4")
+THEN
+RESPONSE #100
+SetGlobal("ItemFink4","GLOBAL",1)
+END
+
+IF
+Global("Itemradia","GLOBAL",0)
+PartyHasItem("SANORDI")
+THEN
+RESPONSE #100
+SetGlobal("Itemradia","GLOBAL",1)
+END
+
+IF
+Global("ItemYagoB","GLOBAL",0)
+PartyHasItem("book70")
+THEN
+RESPONSE #100
+SetGlobal("ItemYagoB","GLOBAL",1)
+END
+
+IF
+Global("Itemskul","GLOBAL",0)
+PartyHasItem("MISC50")
+THEN
+RESPONSE #100
+SetGlobal("Itemskul","GLOBAL",1)
+END
+
+IF
+Global("Itemasri","GLOBAL",0)
+PartyHasItem("ring16")
+THEN
+RESPONSE #100
+SetGlobal("Itemasri","GLOBAL",1)
+END
+
+IF
+Global("Itemtoid","GLOBAL",0)
+PartyHasItem("MISC48")
+THEN
+RESPONSE #100
+SetGlobal("Itemtoid","GLOBAL",1)
+END
+
+IF
+Global("Itemnesdag","GLOBAL",0)
+PartyHasItem("dagg06")
+THEN
+RESPONSE #100
+SetGlobal("Itemnesdag","GLOBAL",1)
+END
+
+IF
+Global("ItemHskin","GLOBAL",0)
+PartyHasItem("leat22")
+THEN
+RESPONSE #100
+SetGlobal("ItemHskin","GLOBAL",1)
+END
+
+IF
+Global("Itemperdsw","GLOBAL",0)
+PartyHasItem("SW1H17")
+THEN
+RESPONSE #100
+SetGlobal("Itemperdsw","GLOBAL",1)
+END
+
+IF
+Global("Itemanca","GLOBAL",0)
+PartyHasItem("misc82")
+THEN
+RESPONSE #100
+SetGlobal("Itemanca","GLOBAL",1)
+END
+
+IF
+Global("Itembowl","GLOBAL",0)
+PartyHasItem("misc53")
+THEN
+RESPONSE #100
+SetGlobal("Itembowl","GLOBAL",1)
+END
+
+IF
+Global("Itemval","GLOBAL",0)
+OR(2)
+PartyHasItemIdentified("SW2VAL")
+PartyHasItemIdentified("Valiant")
+THEN
+RESPONSE #100
+SetGlobal("Itemval","GLOBAL",1)
+END
+
+IF
+Global("Itemarte","GLOBAL",0)
+PartyHasItem("X#TOME")
+THEN
+RESPONSE #100
+SetGlobal("Itemarte","GLOBAL",1)
+END
+
+IF
+Global("Itembash","GLOBAL",0)
+PartyHasItem("ACQBOOK0")
+THEN
+RESPONSE #100
+SetGlobal("Itembash","GLOBAL",1)
+END
+
+IF
+Global("Itemport","GLOBAL",0)
+PartyHasItem("Sanport")
+THEN
+RESPONSE #100
+SetGlobal("Itemport","GLOBAL",1)
+END
+
+IF
+Global("ItemAu","GLOBAL",0)
+PartyHasItem("Scrlauto")
+THEN
+RESPONSE #100
+SetGlobal("ItemAu","GLOBAL",1)
+END
+
+IF
+Global("ItemFinkp","GLOBAL",0)
+PartyHasItem("SUFBOOKb")
+THEN
+RESPONSE #100
+SetGlobal("ItemFinkp","GLOBAL",1)
+END
+
+IF
+Global("Itemnibscrl","GLOBAL",0)
+PartyHasItem("NTPBLET1")
+THEN
+RESPONSE #100
+SetGlobal("Itemnibscrl","GLOBAL",1)
+END
+
+IF
+Global("Itemd3book","GLOBAL",0)
+PartyHasItem("book36")
+THEN
+RESPONSE #100
+SetGlobal("Itemd3book","GLOBAL",1)
+END
+
+IF
+Global("Itemrosto","GLOBAL",0)
+PartyHasItem("misc45")
+THEN
+RESPONSE #100
+SetGlobal("Itemrosto","GLOBAL",1)
+END
+
+IF
+Global("Itemwafro","GLOBAL",0)
+PartyHasItem("wand06")
+THEN
+RESPONSE #100
+SetGlobal("Itemwafro","GLOBAL",1)
+END
+
+IF
+Global("Itembospi","GLOBAL",0)
+PartyHasItem("boot02")
+THEN
+RESPONSE #100
+SetGlobal("Itembospi","GLOBAL",1)
+END
+
+IF
+Global("Itempearl","GLOBAL",0)
+PartyHasItem("Misc36")
+THEN
+RESPONSE #100
+SetGlobal("Itempearl","GLOBAL",1)
+END
+
+IF
+Global("Itemvamprev","GLOBAL",0)
+OR(2)
+PartyHasItem("sw1hvam")
+PartyHasItem("sw1h19")
+THEN
+RESPONSE #100
+SetGlobal("Itemvamprev","GLOBAL",1)
+END
+
+IF
+Global("Itemspiba","GLOBAL",0)
+PartyHasItem("sw2h06")
+THEN
+RESPONSE #100
+SetGlobal("Itemspiba","GLOBAL",1)
+END
+
+IF
+Global("ItemfwShi","GLOBAL",0)
+PartyHasItem("ntshld02")
+THEN
+RESPONSE #100
+SetGlobal("ItemfwShi","GLOBAL",1)
+END
+
+IF
+Global("ItemImoFur","GLOBAL",0)
+PartyHasItem("imofurc")
+THEN
+RESPONSE #100
+SetGlobal("ItemImoFur","GLOBAL",1)
+END
+
+IF
+Global("ItemWerDag","GLOBAL",0)
+OR(3)
+PartyHasItem("dagg09")
+PartyHasItem("cbxtshaa")
+PartyHasItem("sw1h18")
+THEN
+RESPONSE #100
+SetGlobal("ItemWerDag","GLOBAL",1)
+END
+
+IF
+Global("Itemntk3","GLOBAL",0)
+PartyHasItem("ntkeypb3")
+THEN
+RESPONSE #100
+SetGlobal("Itemntk3","GLOBAL",1)
+END
+
+IF
+Global("Itemntk2","GLOBAL",0)
+PartyHasItem("ntkeypb2")
+THEN
+RESPONSE #100
+SetGlobal("Itemntk2","GLOBAL",1)
+END
+
+IF
+Global("Itemntk1","GLOBAL",0)
+PartyHasItem("ntmisc08")
+THEN
+RESPONSE #100
+SetGlobal("Itemntk1","GLOBAL",1)
+END
+
+IF
+Global("ItemDuInv","GLOBAL",0)
+PartyHasItem("misc78")
+THEN
+RESPONSE #100
+SetGlobal("ItemDuInv","GLOBAL",1)
+END
+
+IF
+Global("ItemUnRun","GLOBAL",0)
+PartyHasItem("book55")
+THEN
+RESPONSE #100
+SetGlobal("ItemUnRun","GLOBAL",1)
+END
+
+IF
+Global("ItemPetScr","GLOBAL",0)
+PartyHasItem("scrlpet")
+THEN
+RESPONSE #100
+SetGlobal("ItemPetScr","GLOBAL",1)
+END
+
+IF
+Global("ItemPtnFre","GLOBAL",0)
+PartyHasItem("potn45")
+THEN
+RESPONSE #100
+SetGlobal("ItemPtnFre","GLOBAL",1)
+END
+
+IF
+Global("ItemSumTan","GLOBAL",0)
+PartyHasItem("f_sumtan")
+THEN
+RESPONSE #100
+SetGlobal("ItemSumTan","GLOBAL",1)
+END
+
+IF
+Global("ItemHenri","GLOBAL",0)
+PartyHasItem("sanhenri")
+THEN
+RESPONSE #100
+SetGlobal("ItemHenri","GLOBAL",1)
+END
+
+IF
+Global("Itemrodref","GLOBAL",0)
+OR(2)
+PartyHasItem("K0ROD01")
+PartyHasItem("K0ROD02")
+THEN
+RESPONSE #100
+SetGlobal("Itemrodref","GLOBAL",1)
+END
+
+IF
+Global("ItemSwFi","GLOBAL",0)
+PartyHasItem("SW1H53")
+THEN
+RESPONSE #100
+SetGlobal("ItemSwFi","GLOBAL",1)
+END
+
+IF
+Global("Itemsewkey","GLOBAL",0) 
+PartyHasItem("key29")
+THEN
+RESPONSE #100
+SetGlobal("Itemsewkey","GLOBAL",1) 
+END
+
+IF
+Global("Itemtalpoi","GLOBAL",0)
+PartyHasItem("soaitm32")
+THEN
+RESPONSE #100
+SetGlobal("Itemtalpoi","GLOBAL",1)
+END
+
+IF
+Global("Itemdemh","GLOBAL",0)
+PartyHasItem("misc6m")
+THEN
+RESPONSE #100
+SetGlobal("Itemdemh","GLOBAL",1)
+END
+
+IF
+Global("ItemSeaCh","GLOBAL",0)
+PartyHasItem("Misc1C")
+THEN
+RESPONSE #100
+SetGlobal("ItemSeaCh","GLOBAL",1)
+END
+
+IF
+Global("Itemcandl","GLOBAL",0)
+PartyHasItem("Misc74")
+THEN
+RESPONSE #100
+SetGlobal("Itemcandl","GLOBAL",1)
+END
+
+IF
+Global("ItemNibtrvl","GLOBAL",0)
+PartyHasItem("CVSkyS")
+THEN
+RESPONSE #100
+SetGlobal("ItemNibtrvl","GLOBAL",1)
+END
+
+IF
+Global("ItemTormlet","GLOBAL",0)
+PartyHasItem("YsLetel")
+THEN
+RESPONSE #100
+SetGlobal("ItemTormlet","GLOBAL",1)
+END
+
+IF
+Global("ItemSlime","GLOBAL",0)
+PartyHasItem("Iceslime")
+THEN
+RESPONSE #100
+SetGlobal("ItemSlime","GLOBAL",1)
+END
+
+IF
+Global("Itemgesbs","GLOBAL",0)
+PartyHasItem("Bow19a")
+THEN
+RESPONSE #100
+SetGlobal("Itemgesbs","GLOBAL",1)
+END
+
+IF
+Global("Itemespmap","GLOBAL",0)
+PartyHasItem("ddmap01")
+THEN
+RESPONSE #100
+SetGlobal("Itemespmap","GLOBAL",1)
+END
+
+IF
+Global("Itemletsk","GLOBAL",0)
+PartyHasItem("misc6a")
+THEN
+RESPONSE #100
+SetGlobal("Itemletsk","GLOBAL",1)
+END
+
+IF
+Global("Itemkangtor","GLOBAL",0)
+PartyHasItem("miscay")
+THEN
+RESPONSE #100
+SetGlobal("Itemkangtor","GLOBAL",1)
+END
+
+IF
+Global("Itemkangleg","GLOBAL",0)
+PartyHasItem("miscaw")
+THEN
+RESPONSE #100
+SetGlobal("Itemkangleg","GLOBAL",1)
+END
+
+IF
+Global("ItemRavSpll","GLOBAL",0)
+PartyHasItem("cmbook01")
+THEN
+RESPONSE #100
+SetGlobal("ItemRavSpll","GLOBAL",1)
+END
+
+IF
+Global("ItemFormStb","GLOBAL",0)
+PartyHasItem("amul24")
+THEN
+RESPONSE #100
+SetGlobal("ItemFormStb","GLOBAL",1)
+END
+
+IF
+Global("ItemHaerJwl","GLOBAL",0)
+PartyHasItem("misc6x")
+THEN
+RESPONSE #100
+SetGlobal("ItemHaerJwl","GLOBAL",1)
+END
+
+IF
+Global("ItemSunSt","GLOBAL",0) 
+PartyHasItem("misc18")
+THEN
+RESPONSE #100
+SetGlobal("ItemSunSt","GLOBAL",1)
+END
+
+IF
+Global("ItemMekMir","GLOBAL",0)
+PartyHasItem("misc6h")
+THEN
+RESPONSE #100
+SetGlobal("ItemMekMir","GLOBAL",1)
+END
+
+IF
+Global("ItemMystBust","GLOBAL",0)
+PartyHasItem("cmmisc03")
+THEN
+RESPONSE #100
+SetGlobal("ItemMystBust","GLOBAL",1)
+END
+
+IF
+Global("ItemDragCp","GLOBAL",0)
+PartyHasItem("Dragcap2")
+THEN
+RESPONSE #100
+SetGlobal("ItemDragCp","GLOBAL",1)
+END
+
+IF
+Global("Itemcromf","GLOBAL",0)
+PartyHasItem("scrlag")
+THEN
+RESPONSE #100
+SetGlobal("Itemcromf","GLOBAL",1)
+END
+
+IF
+Global("ItemGensstr","GLOBAL",0)
+PartyHasItem("Bow19b")
+THEN
+RESPONSE #100
+SetGlobal("ItemGensstr","GLOBAL",1)
+END
+
+IF
+Global("Itemeqbl","GLOBAL",0)
+PartyHasItem("sw1h54b")
+THEN
+RESPONSE #100
+SetGlobal("Itemeqbl","GLOBAL",1)
+END
+
+IF
+Global("Itemrayle","GLOBAL",0)
+PartyHasItem("raynote")
+THEN
+RESPONSE #100
+SetGlobal("Itemrayle","GLOBAL",1)
+END
+
+// Rescue Fallen
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("Imoen2")
+InPartyAllowDead("Imoen2")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("CVJenlig")
+InPartyAllowDead("CVJenlig")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("dynaheir")
+InPartyAllowDead("dynaheir")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("sharteel")
+InPartyAllowDead("sharteel")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("branwen")
+InPartyAllowDead("branwen")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("acbre")
+InPartyAllowDead("acbre")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("viconia")
+InPartyAllowDead("viconia")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("ajantis")
+InPartyAllowDead("ajantis")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("neera")
+InPartyAllowDead("neera")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("jaheira")
+InPartyAllowDead("jaheira")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("khalid")
+InPartyAllowDead("khalid")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("coran")
+InPartyAllowDead("coran")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("kivan")
+InPartyAllowDead("kivan")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("rasaad")
+InPartyAllowDead("rasaad")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("p#kivan")
+InPartyAllowDead("p#kivan")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("garrick")
+InPartyAllowDead("garrick")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("xan")
+InPartyAllowDead("xan")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("rh#isra")
+InPartyAllowDead("rh#isra")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("j#indi")
+InPartyAllowDead("j#indi")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("minsc")
+InPartyAllowDead("minsc")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("kagain")
+InPartyAllowDead("kagain")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("Eldoth")
+InPartyAllowDead("Eldoth")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("faldorn")
+InPartyAllowDead("faldorn")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("sufinch")
+InPartyAllowDead("sufinch")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("b!gavin")
+InPartyAllowDead("b!gavin")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("k-rose")
+InPartyAllowDead("k-rose")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("edwin")
+InPartyAllowDead("edwin")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("rchloe")
+InPartyAllowDead("rchloe")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("F_Drizzt")
+InPartyAllowDead("F_Drizzt")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("Driz2")
+InPartyAllowDead("Driz2")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("Yasraena")
+InPartyAllowDead("Yasraena")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("CVShau")
+InPartyAllowDead("CVShau")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+Dead("Saerileth")
+InPartyAllowDead("Saerileth")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
+Dead("Safana")
+InPartyAllowDead("Safana")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+Dead("Nalia")
+InPartyAllowDead("Nalia")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+Dead("t2val")
+InPartyAllowDead("t2val")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",1)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogNoSet("CVSandr")
+END
+
+IF
+Global("SanResurAva","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",3)
+IncrementGlobal("SanKillBG1","GLOBAL",15)
+ApplyDamagePercent("CVSandr",70,CRUSHING)
+ApplySpell("CVSandr",CLERIC_HOLD_PERSON)
+END
+
+IF
+Global("SanResurAva","GLOBAL",3)
+RealGlobalTimerExpired("SanResurAvaInterv","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",0)
+END
+
+IF
+OR(2)
+HasItemEquiped("SUMIKA1",Player1)
+HasItemEquiped("SUMIKA2",Player1)
+Global("Vampkissed","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Vampkissed","LOCALS",1)
+Enemy()
+Attack(Player1)
+END
+
+//Repairs
+
+IF
+!Global("endofbg1","GLOBAL",2)
+GlobalLT("Chapter","GLOBAL",2)
+Global("KiyoOut","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("KiyoOut","GLOBAL",999)
+END
+
+IF
+!Global("endofbg1","GLOBAL",2)
+GlobalGT("Chapter","GLOBAL",1)
+Global("KiyoOut","GLOBAL",999)
+THEN
+RESPONSE #100
+SetGlobal("KiyoOut","GLOBAL",0)
+END

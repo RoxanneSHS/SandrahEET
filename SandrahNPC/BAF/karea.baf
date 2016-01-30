@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanImoNashInt","GLOBAL",16)
+AreaCheck("BG4800")
+GlobalLT("ENDOFBG1","GLOBAL",2)
+THEN
+RESPONSE #100
+EscapeAreaMove("BG4803",181,268,14)
+SetGlobal("ag_karbg","GLOBAL",1)
+END

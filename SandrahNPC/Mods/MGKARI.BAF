@@ -1,0 +1,28 @@
+IF
+Global("MGKariPCTalk","GLOBAL",0)
+!AreaType(OUTDOOR)
+InParty(Myself)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("KariTalkT","LOCALS",1200)
+Wait(1)
+Interact(Player1)
+END
+
+IF
+RealGlobalTimerExpired("KariTalkT","LOCALS")
+InParty(Myself)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+RealSetGlobalTimer("KariTalkT","LOCALS",1200)
+Wait(1)
+Interact(Player1)
+END
+
+

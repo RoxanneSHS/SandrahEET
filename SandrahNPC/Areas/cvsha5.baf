@@ -1,0 +1,32 @@
+IF
+Global("SanHintFactory","GLOBAL",10)
+THEN
+RESPONSE #100
+CreateCreature("cvghatle",[3430.2320],0)
+SetGlobal("SanHintFactory","GLOBAL",11)
+ActionOverride("cvghatle",SetGlobal("NoShau","LOCALS",2))
+END
+
+IF
+GlobalGT("SanHintFactory","GLOBAL",9)
+Global("NewOnes","CVSHA5",0)
+THEN
+RESPONSE #100
+CreateCreature("shaskel2",[2687.1011],11)
+CreateCreature("shaskel2",[2813.1013],8)
+CreateCreature("sanorcgh",[2872.871],6)
+CreateCreature("cvshlic3",[937.1336],6)
+SetGlobal("NewOnes","CVSHA5",1)
+END
+
+IF
+Global("NewOnes","CVSHA5",1)
+THEN
+RESPONSE #100
+CreateCreature("sanorcgh",[501.1891],11)
+CreateCreature("sanorcgh",[282.1854],8)
+CreateCreature("sanorcgh",[767.1899],6)
+SetGlobal("NewOnes","CVSHA5",2)
+END
+
+

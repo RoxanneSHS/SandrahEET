@@ -1,0 +1,34 @@
+IF
+InParty("CVSandr")
+Global("EnteredArea","BG3301",0)
+Global("SanHadTae","GLOBAL",0)
+InMyArea("Taerom")
+THEN
+RESPONSE #100
+IncrementGlobal("EnteredArea","BG3301",1)
+SetGlobalTimer("SanTaeT","GLOBAL",600)
+END
+
+IF
+InParty("CVSandr")
+Global("EnteredArea","BG3301",1)
+GlobalTimerExpired("SanTaeT","GLOBAL")
+Global("SanHadTae","GLOBAL",0)
+InMyArea("Taerom")
+THEN
+RESPONSE #100
+IncrementGlobal("EnteredArea","BG3301",1)
+SetGlobalTimer("SanTaeT","GLOBAL",600)
+END
+
+IF
+InParty("CVSandr")
+GlobalGT("EnteredArea","BG3301",1)
+Global("SanHadTae","GLOBAL",0)
+GlobalTimerExpired("SanTaeT","GLOBAL")
+InMyArea("Taerom")
+THEN
+RESPONSE #100
+SetGlobal("SanHadTae","GLOBAL",1)
+END
+

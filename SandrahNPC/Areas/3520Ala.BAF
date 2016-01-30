@@ -1,0 +1,12 @@
+IF
+	OR(2)
+		IsOverMe([GOODCUTOFF])
+		Entered([GOODCUTOFF])
+THEN
+	RESPONSE #100
+			DisplayString(LastTrigger,@960) 
+		Wait(4)
+		DisplayStringNoName(Myself,@961) 		TriggerActivation(Myself,FALSE)
+END
+
+

@@ -1,0 +1,30 @@
+IF
+InMyArea("Yoshimo")
+InMyArea("CVSandr")
+AreaCheck("ar0603")
+Global("SanPCYoshTake","ar0603",0)
+THEN
+RESPONSE #100
+SetGlobal("SanPCYoshTake","ar0603",1)
+RealSetGlobalTimer("SanPCYoshTakeT","ar0603",120)
+END
+
+IF
+Global("SanPCYoshTake","ar0603",1)
+RealGlobalTimerExpired("SanPCYoshTakeT","ar0603")
+Global("SanYoshDun","GLOBAL",0)
+Global("SanYoshDunImo","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanPCYoshTake","ar0603",2)
+SetGlobal("SanYoshDun","GLOBAL",2)
+SetGlobal("SanYoshDunImo","GLOBAL",2)
+END
+
+IF
+Global("Itemacorn","GLOBAL",0)
+PartyHasItem("Misc4n")
+THEN
+RESPONSE #100
+SetGlobal("Itemacorn","GLOBAL",1)
+END

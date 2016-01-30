@@ -1,0 +1,20 @@
+IF
+GlobalLT("SanXephRet","GLOBAL",15)
+Global("Outclosed","CVAKA5",0)
+THEN
+RESPONSE #100
+SetGlobal("Outclosed","CVAKA5",1)
+TriggerActivation("Out",FALSE)
+ActionOverride("Sanmysx",ReallyForceSpellRES("sppr429",Myself))
+END
+
+IF
+Global("Outclosed","CVAKA5",1)
+Global("SanXephRet","GLOBAL",15)
+PartyHasItem("CVMybust")
+THEN
+RESPONSE #100
+SetGlobal("Outclosed","CVAKA5",2)
+TriggerActivation("Out",TRUE)
+END
+

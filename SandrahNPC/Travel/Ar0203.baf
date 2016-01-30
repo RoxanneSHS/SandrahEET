@@ -1,0 +1,17 @@
+IF
+Global("CVAR0203","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR0203","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanDoctor","GLOBAL",10)
+Global("DocWasHere","ar0203",0)
+THEN
+RESPONSE #100
+IncrementGlobal("SanDoctor","GLOBAL",1)
+ActionOverride("CVSandr",AddSpecialAbility("SpHeal2"))
+SetGlobal("DocWasHere","ar0203",1)
+END

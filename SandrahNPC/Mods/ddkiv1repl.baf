@@ -1,0 +1,19 @@
+IF
+Global("ogresnuff","GLOBAL",0)
+Dead("kivogre")
+InParty("P#Kivan")
+THEN
+RESPONSE #100
+SetGlobal("ogresnuff","GLOBAL",1)
+AddXPObject("P#Kivan",45000)
+END
+
+IF
+Global("ogresnuff","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("ogresnuff","GLOBAL",2)
+Wait(3)
+ActionOverride("P#Kivan",StartDialog("kivogrex",Player1))
+END
+

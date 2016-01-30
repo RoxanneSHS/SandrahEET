@@ -1,0 +1,14 @@
+IF
+Range("Pellig",20)
+Allegiance(Myself,ENEMY)
+THEN        
+RESPONSE #100
+ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+Range("Pellig",10)
+THEN
+RESPONSE #100
+RunAwayFromNoInterrupt("Pellig",30)
+END

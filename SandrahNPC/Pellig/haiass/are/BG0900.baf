@@ -1,0 +1,6 @@
+IF
+  Global("HaiassPuertaBaldur","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("HaiassPuertaBaldur","GLOBAL",1)
+END

@@ -1,0 +1,20 @@
+IF
+Global("CVAR2802","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR2802","GLOBAL",1)
+Continue()
+END
+
+IF
+GlobalLT("SanBranDec","GLOBAL",5)
+Global("SanBranDecF","GLOBAL",0)
+!InParty("Branwen")
+InParty("CVSandr")
+Global("CVDra5","ar28202",0)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("CVDra5","ar28202",1)
+ActionOverride("CVSandr",AddSpecialAbility("CVDrag5"))
+END

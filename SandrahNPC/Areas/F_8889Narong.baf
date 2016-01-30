@@ -1,0 +1,10 @@
+IF
+Global("SanDriDrowAmb","GLOBAL",2)
+Dead("F_Errtu")
+InMyArea("CVSandr")
+InMyArea("F_Drizzt")
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("Narong2","CVSandr",[200.200])
+SetGlobal("SanDriDrowAmb","GLOBAL",3)
+END    

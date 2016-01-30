@@ -1,0 +1,16 @@
+IF
+InMyArea("CVSandr")
+Global("WDFishermen","GLOBAL",9)
+Delay(6)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ClearAllActions()
+Wait(2)
+StartCutSceneMode()
+Wait(1)
+ActionOverride("CVSandr",MoveToObject("Crystal"))
+Wait(6)
+EndCutSceneMode()
+SetGlobal("WDFishermen","GLOBAL",10)
+END

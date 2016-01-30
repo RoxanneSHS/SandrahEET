@@ -1,0 +1,74 @@
+IF
+Global("ZDreamSzene1","GLOBAL",3)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("ZDreamSzene1","GLOBAL",4)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",5)
+AreaCheck("zgefe")
+PartyHasItem("z_pkey")
+THEN
+RESPONSE #100
+SetGlobal("ZDreamSzene1","GLOBAL",6)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",7)
+AreaCheck("zpala2")
+Dead("z_numa")
+THEN
+RESPONSE #100
+SetGlobal("ZDreamSzene1","GLOBAL",8)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",9)
+AreaCheck("zpala3")
+Dead("z_nomora")
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(16)
+THEN
+RESPONSE #100
+CreateCreature("SanMyst",[1156.997],1)
+CreateCreature("CVDYPROT",[1186.1107],1)
+CreateCreature("solar",[1196.997],1)
+CreateCreature("CVasstem",[1056.999],1)
+SetGlobal("ZDreamSzene1","GLOBAL",10)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",11)
+THEN
+RESPONSE #100
+ActionOverride("SanMyst",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVDYPROT",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("solar",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVasstem",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("ZDreamSzene1","GLOBAL",12)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",12)
+GlobalLT("CQuestActive","GLOBAL",18)
+Global("Sanhasveto","LOCALS",0)
+THEN
+RESPONSE #100
+AddSpecialAbility("CVVeto")
+SetGlobal("ZDreamSzene1","GLOBAL",13)
+SetGlobal("Sanhasveto","LOCALS",1)
+END
+
+IF
+Global("ZDreamSzene1","GLOBAL",11)
+GlobalLT("SanKhalBlood","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("SanKhalBlood","GLOBAL",3)
+END

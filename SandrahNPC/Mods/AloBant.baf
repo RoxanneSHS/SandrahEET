@@ -1,0 +1,58 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("AlorPel","GLOBAL",4)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("AlorPel","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+Global("AlorPel","GLOBAL",4)
+See("CVSandr")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+Interact(Player1)
+END
+ 
+IF
+Global("AloBantRun","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("AloBantRun","LOCALS",1)
+RealSetGlobalTimer("AloBant","LOCALS",3200)
+END
+
+IF
+RealGlobalTimerExpired("AloBant","LOCALS")
+Global("AloOneBanter","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("AloOneBanter","LOCALS",0)
+RealSetGlobalTimer("AloBant","LOCALS",3200)
+END
+
+IF
+RealGlobalTimerExpired("AloBant","LOCALS")
+Global("AloOneBanter","LOCALS",0)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("AloOneBanter","LOCALS",1)
+Interact(Player1)
+END

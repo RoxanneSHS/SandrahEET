@@ -1,0 +1,8 @@
+IF
+InMyArea("CVSandr")
+Global("SanDGHere","BG2627",1)
+CombatCounter(0)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

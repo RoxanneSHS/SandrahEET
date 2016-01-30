@@ -1,0 +1,7 @@
+IF
+Global("SanSafaBan","GLOBAL",6)
+See([PC])
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END

@@ -1,0 +1,19 @@
+IF
+Global("SanJenship","GLOBAL",1)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanJenship","GLOBAL",2)
+END
+
+IF
+Global("SanJenship","GLOBAL",5)
+Dead("CvJenhu1")
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVJenlig",CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+SetGlobal("SanJenship","GLOBAL",6)
+END

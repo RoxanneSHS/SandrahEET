@@ -1,0 +1,9 @@
+IF
+InParty("CVJenlig")
+Global("Jenlet","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Jenlet","LOCALS",1)
+TakeItemReplace("CVJenlet","SLNG04",Myself)
+Continue()
+END

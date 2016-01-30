@@ -1,0 +1,19 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+StorePartyLocations()
+SmallWait(5)
+LeaveAreaLUAPanic("RR4005","",[0.0],0)
+LeaveAreaLUA("RR4005","",[0.0],0)
+ActionOverride("CVSandr",LeaveAreaLUA("RR4005","",[657.248],14))
+Wait(1)
+MoveViewPoint([600.419],INSTANT)
+Wait(1)
+FadeFromColor([20.0],0)
+EndCutSceneMode()
+SetGlobal("Secndcutfiof","GLOBAL",1)
+ChangeEnemyAlly("Driz2",CONTROLLED)
+ActionOverride("Driz2",StartDialogueNoSet("Enteri"))
+END

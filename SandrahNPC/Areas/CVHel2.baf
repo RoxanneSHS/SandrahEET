@@ -1,0 +1,20 @@
+IF
+GlobalGT("SanHaerRel1","GLOBAL",33)
+InParty("Haerdalis")
+PartyHasItem("CVBloMa3")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",TakePartyItem("CVBloMa3"))
+ActionOverride("CVSandr",DestroyItem("CVBloMa3"))
+Continue()
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",34)
+Global("Cleanup","CVHEL2",0)
+THEN
+RESPONSE #100
+EraseJournalEntry(@739)
+EraseJournalEntry(@740)
+SetGlobal("Cleanup","CVHEL2",1)
+END

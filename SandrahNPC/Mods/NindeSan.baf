@@ -1,0 +1,44 @@
+IF
+InParty(Myself)
+InParty("CVSandr")
+GlobalLT("SanHealNinde","GLOBAL",3)
+OR(7)
+SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_MEDIUM_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_CURE_CRITICAL_WOUNDS)
+SpellCastOnMe("CVSandr",CLERIC_HEAL)
+SpellCastOnMeRES("SanHand","CVSandr")
+SpellCastOnMeRES("Spin109","CVSandr")
+SpellCastOnMeRES("cvwoun","CVSandr")
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealNinde","GLOBAL",1)
+END
+
+IF
+Global("SanHealNinde","GLOBAL",4)
+RealGlobalTimerExpired("SanNindeT","LOCALS")
+InParty(Myself)
+InParty("CVSandr")
+TimeLT(18)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+IncrementGlobal("SanHealNinde","GLOBAL",1)
+END
+
+IF
+OR(2)
+Global("SanHealNinde","GLOBAL",3)
+Global("SanHealNinde","GLOBAL",5)
+InParty(Myself)
+InParty("CVSandr")
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END

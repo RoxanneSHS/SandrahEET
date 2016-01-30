@@ -1,0 +1,10 @@
+IF
+  AreaCheck("BG4400")
+  Global("SaOgmaIn","GLOBAL",1)
+  !InActiveArea("saogma")
+  !See("saogma")
+  !Dead("saogma")
+THEN
+RESPONSE #100
+    MoveGlobalObject("saogma",Player1)
+END

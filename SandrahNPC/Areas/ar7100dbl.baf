@@ -1,0 +1,12 @@
+IF
+PartyHasItem("ESHARD") 
+InParty("CVSandr")
+GlobalGT("SanNarQ","GLOBAL",5)
+Global("DBLExist","BG3200",0)
+Global("SanDblEnc","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("DBLExist","BG3200",1)
+CreateCreature("sandbl1",[2578.2729],5)
+CreateCreature("sandbl2",[2743.2687],0)
+END

@@ -1,0 +1,44 @@
+IF
+Die()
+THEN
+RESPONSE #100
+ReallyForceSpellDead(Myself,WIZARD_CLOUDKILL)
+END
+
+IF
+OnCreation()
+THEN
+RESPONSE #100
+SetGlobalTimer("CVZombieLord","LOCALS",1)
+END
+
+IF
+See(NearestEnemyOf(Myself))
+GlobalTimerExpired("CVZombieLord","LOCALS")
+THEN
+RESPONSE #100
+ForceSpell(LastSeenBy(Myself),ZOMBIE_LEVEL_DRAIN)
+SetGlobalTimer("CVZombieLord","LOCALS",TWO_MINUTES)
+END
+
+IF
+NumTimesTalkedTo(0)
+See([PC])
+AreaCheck("BG0400")
+THEN
+RESPONSE #100
+StartDialogueNoSet([PC])
+END
+
+IF
+OR(2)
+Global("HelpWenric","GLOBAL",1)
+!AreaCheck("BG0400")
+Delay(18)
+!See([PC])
+THEN
+RESPONSE #100
+ForceSpellRES("SPIN460",Myself)
+END
+
+

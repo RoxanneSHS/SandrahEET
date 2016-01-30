@@ -1,0 +1,112 @@
+IF
+Global("ENDOFBG1","GLOBAL",2)
+!Global("SanSharCom","GLOBAL",3)
+Global("Roadon","CVELM1",1)
+THEN
+RESPONSE #100
+SetGlobal("Roadon","CVELM1",0)
+SetGlobal("Criminal","GLOBAL",2)
+TriggerActivation("ToRoad",FALSE)
+Continue()
+END
+
+IF
+!Global("ENDOFBG1","GLOBAL",2)
+Global("Roadon","CVELM1",0)
+THEN
+RESPONSE #100
+SetGlobal("Roadon","CVELM1",1)
+TriggerActivation("ToRoad",TRUE)
+Continue()
+END
+
+IF
+Global("SanSharCom","GLOBAL",3)
+Global("Roadon","CVELM1",0)
+THEN
+RESPONSE #100
+SetGlobal("Roadon","CVELM1",1)
+TriggerActivation("ToRoad",TRUE)
+Continue()
+END
+
+IF
+GlobalGT("Katcut","GLOBAL",3)
+Global("BloomwExists","cvelm1",0)
+THEN
+RESPONSE #100
+SetGlobal("BloomwExists","cvelm1",1)
+CreateCreature("bloomw",[495.1315],6)
+END
+
+IF
+InParty("Sufinch")
+Global("Bloomw","GLOBAL",8)
+GlobalGT("Santlove","GLOBAL",6)
+!Global("Bloomw","GLOBAL",9)
+!Global("Bloomw","GLOBAL",7)
+Global("SanSUFiCLREV","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSUFiCLREV","GLOBAL",1)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+Global("SanWDTemplWi","GLOBAL",10)
+THEN
+RESPONSE #100
+SetGlobal("SanWDTemplWi","GLOBAL",11)
+CreateCreature("CVLeyG",[983.698],10)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("SanVampWDQuest","GLOBAL",10)
+CreateCreature("CVharbor",[1585.1182],10)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",23)
+Global("GoDrinking","CVELM1",0)
+THEN
+RESPONSE #100
+ActionOverride("CVHarbor",MoveToPointNoInterrupt([339.842]))
+ActionOverride("CVHarbor",EscapeArea())
+Wait(1)
+ActionOverride("CVReag",MoveToPointNoInterrupt([339.842]))
+ActionOverride("CVReag",EscapeArea()) 
+SetGlobal("GoDrinking","CVELM1",1)
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",22)
+Global("CVReagWITHYOU","GLOBAL",1)
+InMyArea("CVReag")
+THEN
+RESPONSE #100
+SetGlobal("CVReagWITHYOU","GLOBAL",2)
+ActionOverride("CVReag",MoveToObject("CVHarbor"))
+ActionOverride("CVReag",StartDialogueNoSet(Player1))
+END
+
+IF
+Global("SanVampWDQuest","GLOBAL",25)
+Global("GoDrinking","CVELM1",1)
+THEN
+RESPONSE #100
+SetGlobal("GoDrinking","CVELM1",2)
+CreateCreature("CVRingo2",[1585.1182],9)
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2) 
+GlobalGT("SanVampWDQuest","GLOBAL",17)
+GlobalLT("SanSharInt","GLOBAL",25)
+Global("SanSharCom","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSharCom","GLOBAL",1)
+END

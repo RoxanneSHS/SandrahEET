@@ -1,0 +1,15 @@
+IF
+Global("Helpers","LOCALS",0)
+AreaCheck("BG2200")
+THEN
+RESPONSE #100
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+CreateCreature("CVBanDE1",[4000.2300],0)
+SetGlobal("Helpers","LOCALS",1)
+END

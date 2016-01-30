@@ -1,0 +1,33 @@
+IF
+ActionListEmpty()
+AttackedBy([ANYONE],DEFAULT)
+THEN
+RESPONSE #100
+AttackOneRound(LastAttackerOf(Myself))
+END
+
+IF
+AreaCheck("CVDre3")
+Global("SanHaerRel1","GLOBAL",12)
+See("CVSandr")
+THEN
+RESPONSE #100
+StartDialogueNoSet("Alzalig")
+END
+
+IF
+AreaCheck("CVNar2")
+HPPercentLT(Myself,90)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END
+
+IF
+AttackedBy([GOODCUTOFF],DEFAULT)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+Enemy()
+END

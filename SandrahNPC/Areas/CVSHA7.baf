@@ -1,0 +1,94 @@
+IF
+Global("SanSharkta","GLOBAL",13)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("SHAUGUA","CVShau",0,0,0)
+ActionOverride(Player1,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player2,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player3,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player4,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player5,ForceSpell(Myself,CLERIC_HEAL))
+ActionOverride(Player6,ForceSpell(Myself,CLERIC_HEAL))
+SetGlobal("SanSharkta","GLOBAL",14)
+END
+
+IF
+Global("SanSharkta","GLOBAL",15)
+PartyHasItem("Shamyrk")
+Delay(14)
+THEN
+RESPONSE #100
+ClearAllActions()
+SmallWait(2)
+StartCutSceneMode()
+                SmallWait(4)
+                FadeToColor([30.0],0)
+		Wait(2)
+		ActionOverride(Player1,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player2,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player3,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player4,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player5,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		ActionOverride(Player6,LeaveAreaLUA("CVSHA5","",[3238.2687],0))
+		FadeFromColor([30.0],0)
+		EndCutSceneMode()
+		SetGlobal("SanSharkta","GLOBAL",16)
+END
+
+IF
+GlobalGT("SanSharkta","GLOBAL",15)
+InMyArea("Shaugua")
+Global("cleanup","CVSha7",0)
+THEN
+RESPONSE #100
+ActionOverride("Shaugua",DestroySelf())
+SetGlobal("cleanup","CVSha7",1)
+TriggerActivation("Shaupool",FALSE)
+END
+
+IF
+GlobalGT("SanHintFactory","GLOBAL",9)
+Global("PoolHealT","CVSHA7",0)
+Delay(6)
+THEN
+RESPONSE #100
+StartCutsceneMode()
+ActionOverride("CVSandr",MoveToObject("Pool"))
+ActionOverride(Player1,MoveToObject("Pool"))
+MoveViewPoint([648.585],INSTANT)
+Wait(6)
+EndCutsceneMode()
+SetGlobal("PoolHealT","CVSHA7",1)
+END
+
+IF
+Global("PoolHealT","CVSHA7",2)
+RealGlobalTimerExpired("Entershar","CVSha7")
+THEN
+RESPONSE #100
+SetGlobal("PoolHealT","CVSHA7",3)
+END
+
+IF
+Global("PoolHealT","CVSHA7",5)
+Global("SanHintFactory","GLOBAL",13)
+THEN
+RESPONSE #100
+SetGlobal("SanHintFactory","GLOBAL",14)
+ClearAllActions()
+StartCutSceneMode()
+ActionOverride(Player1,MoveToObject("Pool"))
+ActionOverride(Player2,MoveToObject("Pool"))
+ActionOverride(Player3,MoveToObject("Pool"))
+ActionOverride(Player4,MoveToObject("Pool"))
+ActionOverride(Player5,MoveToObject("Pool"))
+ActionOverride(Player6,MoveToObject("Pool"))
+SaveGame(0)
+Wait(1)
+CreateVisualEffectObject("SPHOLY","CVSandr")
+Wait(6)
+FadeToColor([30.0],0) 
+Wait(4)
+StartCutScene("CVCut214")
+END
+

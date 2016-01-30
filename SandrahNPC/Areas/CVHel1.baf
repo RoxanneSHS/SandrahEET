@@ -1,0 +1,23 @@
+IF
+GlobalLT("SanHaerRel1","GLOBAL",34)
+Global("Wayout","CVHEL1",0)
+THEN
+RESPONSE #100
+TriggerActivation("Out",FALSE)
+Deactivate("Haerdalis")
+SetGlobal("Wayout","CVHEL1",1)
+END
+
+IF
+GlobalGT("SanHaerRel1","GLOBAL",33)
+Global("Wayout","CVHEL1",1)  
+THEN
+RESPONSE #100
+TriggerActivation("Out",TRUE)
+SetGlobal("Wayout","CVHEL1",2)
+END
+
+
+
+
+

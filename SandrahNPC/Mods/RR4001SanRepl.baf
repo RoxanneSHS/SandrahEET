@@ -1,0 +1,36 @@
+IF
+GlobalGT("SanROTRepl","GLOBAL",0)
+HPLT("Grean",70)
+Global("NewDriz","rr4001",0)
+!InParty("Driz2")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("CVDrizR",[2715.546],11)
+SetGlobal("NewDriz","rr4001",1)
+END
+
+IF
+GlobalGT("SanROTRepl","GLOBAL",0)
+Global("BruenorOut","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BruenorOut","GLOBAL",3)
+END
+
+IF
+GlobalGT("SanROTRepl","GLOBAL",0)
+Global("RegisOut","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("RegisOut","GLOBAL",3)
+END
+
+IF
+GlobalGT("SanROTRepl","GLOBAL",0)
+!Global("affihdr","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("affihdr","GLOBAL",2)
+END
+

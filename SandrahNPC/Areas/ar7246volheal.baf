@@ -1,0 +1,40 @@
+IF
+Global("SanVolHeal","bg0146",1)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+ActionOverride("CVSandr",MoveToObject("Voleta"))
+Wait(4)
+ActionOverride("CVSandr",ReallyForceSpell("Voleta",CLERIC_HEAL))
+Wait(4)
+ActionOverride("Voleta",Polymorph(THIEF_FEMALE_HUMAN))
+SetGlobal("SanVolHeal","bg0146",2)
+EndCutSceneMode()
+AddexperienceParty(750)
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",6) 
+Global("JenGoHome","bg0146",0)
+InParty("CVJenlig")
+PartyHasItem("CVyensw2")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("JenGoHome","bg0146",1)
+END
+
+IF
+Global("SanHaerRel1","GLOBAL",32)
+Global("HaerResc","bg0146",0)
+THEN
+RESPONSE #100
+CreateCreature("DEATHKNI",[1424.2226],6)
+CreateCreature("Caddem2",[3458.1207],2)
+CreateCreature("Caddem11",[1917.2164],14)
+CreateCreature("Caddem16",[1733.1595],1)
+CreateCreature("Caddem6",[568.1186],10)
+CreateCreature("DEATHKNI",[1248.1431],4)
+CreateCreature("DEATHKNI",[2528.1367],14)
+SetGlobal("HaerResc","bg0146",1)
+END

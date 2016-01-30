@@ -1,0 +1,73 @@
+IF
+Global("CVAR1600","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVAR1600","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("B!Alternatives","GLOBAL",10)
+Global("ThiefGroup","GLOBAL",0)
+!InParty("Sime")
+THEN
+RESPONSE #100
+SetGlobal("ThiefGroup","GLOBAL",1)
+Continue()
+END
+
+IF
+Allegiance("pirpir05",ENEMY)
+InParty("CVSandr")
+Global("SanCheAtt","ar1600",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+Wait(3)
+CreateCreature("CVBanDE1",[1941.1487],2)
+CreateCreature("CVBanDE1",[1727.1474],10)
+CreateCreature("CVBanDE1",[1927.1744],10)
+CreateCreature("CVBanDE1",[2081.1686],0)
+CreateCreature("CVBanDE1",[1686.1199],12)
+CreateCreature("CVBanDE1",[1803.1336],0)
+SetGlobal("SanCheAtt","ar1600",1)
+EndCutSceneMode()
+END
+
+IF
+InParty("CVSandr")
+Global("PirateRefused","GLOBAL",0)
+!InParty("Imoen2")
+OR(5)
+InParty("Driz2")
+InParty("Saerileth")
+InParty("RChloe")
+InParty("Yasraena")
+PartyHasItem("Misc8v")
+THEN
+RESPONSE #100
+SetGlobal("PirateRefused","GLOBAL",1)
+END
+
+IF
+Global("CreMar2","GLOBAL",2)
+!InParty("Driz2")
+InParty("CVSandr")
+Global("DlgWmar","GLOBAL",0)
+Global("SanDrBryn","ar1600",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDrBryn","ar1600",1)
+RealSetGlobalTimer("SanDrBrynDel","ar1600",TWO_HOURS)
+END
+
+IF
+Global("DlgWmar","GLOBAL",0)
+Global("SanDrBryn","ar1600",1)
+!InParty("Driz2")
+RealGlobalTimerExpired("SanDrBrynDel","ar1600")
+THEN
+RESPONSE #100
+SetGlobal("SanDrBryn","ar1600",2)
+END
+

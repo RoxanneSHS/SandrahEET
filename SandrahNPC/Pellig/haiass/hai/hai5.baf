@@ -1,0 +1,28 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneID("haiass")
+    Wait(2)
+    DestroySelf()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneID(Protagonist)
+    FadeToColor([20.0],0)
+    MoveToPoint([3800.3036])
+    Wait(2)
+    CreateCreature("haiass5",[3918.2964],1)
+    EndCutSceneMode()
+END
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    ActionOverride("haiass",StartDialogueNoSet(Protagonist))
+    DisplayString("haiass",@0)
+END

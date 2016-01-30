@@ -1,0 +1,8 @@
+IF
+Global("Sanharpers","ar0309",0)
+!InParty("Jaheira")
+PartyHasItem("Misc5e")
+THEN
+RESPONSE #100
+SetGlobal("Sanharpers","ar0309",1)
+END

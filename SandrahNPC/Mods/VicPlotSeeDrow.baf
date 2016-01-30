@@ -1,0 +1,15 @@
+IF
+Global("SanVicArrst","GLOBAL",6)
+OR(2)
+IsOverMe("CVSandr")
+IsOverMe(Player1)
+InParty("CVSandr")
+OR(2)
+Global("SanSeesDrow","ar0801",0)
+Global("SanSeesDrow","ar0808",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSeesDrow","ar0801",1)
+SetGlobal("SanSeesDrow","ar0808",1)
+ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
+END

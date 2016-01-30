@@ -1,0 +1,61 @@
+IF
+GlobalGT("K#SarahPreTalk","GLOBAL", 4)
+InParty("CVSandr")
+OR(2)
+Global("SanSarahR","GLOBAL",0)
+Global("SanSarahR","GLOBAL",8)
+AreaType(FOREST)
+Delay(12)
+THEN
+RESPONSE #100
+IncrementGlobal("SanSarahR","GLOBAL",1)
+END
+
+IF
+Global("SanSarahR","GLOBAL",2)
+RealGlobalTimerExpired("SanSarT","LOCALS")
+InParty("CVSandr")
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+IncrementGlobal("SanSarahR","GLOBAL",1)
+END
+
+IF
+OR(2)
+Global("SanSarahR","GLOBAL",4)
+Global("SanSarahR","GLOBAL",6)
+InParty("CVSandr")
+Global("SanRomPath","GLOBAL",1)
+RealGlobalTimerExpired("SanSarT","LOCALS")
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+IncrementGlobal("SanSarahR","GLOBAL",1)
+END
+
+IF
+InParty(Myself)
+InParty("CVSandr")
+OR(5)
+Global("SanSarahR","GLOBAL",1)
+Global("SanSarahR","GLOBAL",3)
+Global("SanSarahR","GLOBAL",5)
+Global("SanSarahR","GLOBAL",7)
+Global("SanSarahR","GLOBAL",9)
+!See([ENEMY])
+CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+Interact(Player1)
+END
+
+IF
+Global("SanSarahR","GLOBAL",10)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",AddSpecialAbility("CVDra15"))
+SetGlobal("SanSarahR","GLOBAL",11)
+END

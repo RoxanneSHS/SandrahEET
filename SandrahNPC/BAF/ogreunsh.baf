@@ -1,0 +1,7 @@
+IF
+!HasItem("Belt05",Myself)
+!HasItem("cbelt05",Myself)
+THEN
+RESPONSE #100
+GiveItemCreate("CBelt05",Myself,0,0,0)
+END

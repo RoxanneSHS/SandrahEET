@@ -1,0 +1,10 @@
+IF
+Clicked([ANYONE])
+!GlobalTimerNotExpired("Triggered","MYAREA")
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobalTimer("Triggered","MYAREA",TWO_MINUTES)
+CreateCreature("CVLeavMC",[1109.1308],0)
+END
+

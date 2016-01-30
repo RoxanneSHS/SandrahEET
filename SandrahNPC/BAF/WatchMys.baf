@@ -1,0 +1,11 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+!InMyArea("DW#SKCAN")
+Global("WatchMys","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("WatchMys","GLOBAL",1)
+MoveToObject(Player1)
+StartDialogueNoSet("WatchMys")
+END

@@ -1,0 +1,29 @@
+IF
+Global("SanMystApp","arpo31",0)
+Global("Dead_Cyric","GLOBAL",1)
+PartyHasItem("DDrelic1")
+InMyArea("CVSandr")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(16)
+THEN
+RESPONSE #100
+CreateCreature("SanMyst",[1715.1223],6)
+CreateCreature("CVDYPROT",[1799.1207],5)
+CreateCreature("solar",[1926.1334],7)
+CreateCreature("CVasstem",[1736.1343],7)
+SetGlobal("SanMystApp","arpo31",1)
+END
+
+IF
+Global("SanMystApp","arpo31",2)
+THEN
+RESPONSE #100
+ActionOverride("SanMyst",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVDYPROT",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("solar",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVasstem",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanMystApp","arpo31",3)
+END
+

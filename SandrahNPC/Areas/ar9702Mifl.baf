@@ -1,0 +1,11 @@
+IF
+Global("MiFlExists","BG3802",0)
+InParty("CVJenlig")
+THEN
+RESPONSE #100
+SetGlobal("MiFlExists","BG3802",1)
+CreateCreature("CVJenMiH",[400.162],13)
+ActionOverride("acq13002",MoveBetweenAreas("BG3800",[1313.2111],4))
+ActionOverride("acq13003",MoveBetweenAreas("BG3800",[1216.2103],12))
+END
+

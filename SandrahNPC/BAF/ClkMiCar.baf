@@ -1,0 +1,18 @@
+//ClkMiCar
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+ActionOverride(Player6,JumpToPoint([4213.3526]))
+Wait(1)
+MoveViewPoint([4613.3526],INSTANT)
+Wait(6)
+DisplayStringWait("CVSLTRMA",@685)
+Wait(6)
+MoveViewPoint([551.2762],INSTANT)
+EndCutSceneMode()
+SetGlobal("Altalk","BG1800",2)
+ActionOverride(Player6,JumpToPoint([551.2762]))
+END

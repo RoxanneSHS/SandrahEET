@@ -1,0 +1,7 @@
+IF
+Global("Entered","CVSH16",0)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVSH16",1)
+Continue()
+END

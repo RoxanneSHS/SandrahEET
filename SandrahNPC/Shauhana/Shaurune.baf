@@ -1,0 +1,12 @@
+IF
+IsOverMe([GOODCUTOFF])
+!PartyHasItem("CVORSTA")
+Global("SanShauOrcStaff","GLOBAL",0)
+InParty("CVSandr")
+InParty("CVShau")
+THEN
+RESPONSE #100
+SetGlobal("SanShauOrcStaff","GLOBAL",1)
+END
+
+

@@ -1,0 +1,42 @@
+IF
+Global("SanVisitedWD","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanVisitedWD","GLOBAL",1)
+TakePartyItem("SanMap")
+StartMovie("Palace")
+Continue()
+END
+
+IF
+Global("RTFOn","CVROA2",0)
+THEN
+RESPONSE #100
+SetGlobal("RTFOn","CVROA2",1)
+SetGlobal("ToMag1","CVROA2",1)
+TriggerActivation("ToRTF",FALSE)
+TriggerActivation("ToMag1",FALSE)
+TriggerActivation("NEInfo1",TRUE)
+TriggerActivation("NEInfo2",TRUE)
+END
+
+IF
+Global("ToMag1","CVROA2",1)
+Global("WDFishermen","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("ToMag1","CVROA2",2)
+TriggerActivation("ToMag1",TRUE)
+TriggerActivation("Watchdog2",FALSE)
+END
+
+IF
+Global("Infomap","CVRoa2",1)
+THEN
+RESPONSE #100
+SetGlobal("Infomap","CVRoa2",2)
+AddMapNote([3889.1154],@919)
+AddMapNote([4770.2883],@521)
+AddMapNote([4558.112],@920)
+AddMapNote([3361.2159],@921)
+END

@@ -1,0 +1,46 @@
+IF
+GlobalLT("SanRaiseMys","GLOBAL",8)
+Global("Graveyard","CVELM4",0)
+THEN
+RESPONSE #100
+SetGlobal("Graveyard","CVELM4",1)
+TriggerActivation("Graveyard",FALSE)
+END
+
+IF
+Global("SanRaiseMys","GLOBAL",8)
+THEN
+RESPONSE #100
+CreateCreatureObjectDoor("solar",Player1,0,0,0)
+Wait(6)
+SetGlobal("SanRaiseMys","GLOBAL",9)
+ActionOverride("Solar",StartDialogueNoSet([PC]))
+END
+
+IF
+GlobalGT("SanRaiseMys","GLOBAL",9)
+Global("RTFOldFriends","GLOBAL",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("RTFOldFriends","GLOBAL",1)
+END
+
+IF
+GlobalGT("SanRTFPlot1","GLOBAL",5)
+Global("Graveyard","CVELM4",1)
+THEN
+RESPONSE #100
+SetGlobal("Graveyard","CVELM4",2)
+TriggerActivation("Graveyard",TRUE)
+END
+
+IF
+InParty("CVSandr")
+Global("SanWDTemplWi","GLOBAL",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanWDTemplWi","GLOBAL",1)
+ActionOverride("CVSandr",Interact("CVSandr"))
+END

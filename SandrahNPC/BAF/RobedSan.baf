@@ -1,0 +1,8 @@
+IF
+InParty("CVSandr")
+Global("#robedatk","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("#robedatk","LOCALS",4)
+Kill("Wailin")
+END

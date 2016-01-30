@@ -1,0 +1,7 @@
+IF
+Global("SantalosDec","GLOBAL",5)
+THEN
+RESPONSE #100
+CreateCreature("CVTALOP1",[206.77],14)
+SetGlobal("SantalosDec","GLOBAL",6)
+END

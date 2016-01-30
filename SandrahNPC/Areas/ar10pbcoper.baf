@@ -1,0 +1,8 @@
+IF
+Global("Copersan","ar10pb",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("Copersan","ar10pb",1)
+CreateCreature("CVCoper",[2732.3090],5)
+END

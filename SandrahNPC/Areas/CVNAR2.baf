@@ -1,0 +1,16 @@
+IF
+Global("AzItmInChest","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("AzItmInChest","GLOBAL",1)
+TriggerActivation("DoorCVNAR2",FALSE)
+END
+
+IF
+Global("SanNarQ","GLOBAL",4)
+Global("AzItmInChest","GLOBAL",1)
+THEN
+RESPONSE #100
+TriggerActivation("DoorCVNAR2",TRUE)
+SetGlobal("AzItmInChest","GLOBAL",2)
+END

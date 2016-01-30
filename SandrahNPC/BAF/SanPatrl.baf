@@ -1,0 +1,42 @@
+// SanPatrl
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("Tazok")
+Explore()
+MoveToPoint([185.1456])
+ActionOverride("CampHobgoblin",ChangeEnemyAlly(Myself,NEUTRAL))
+ActionOverride("BanditCR",ChangeEnemyAlly(Myself,NEUTRAL))
+SmallWait(2)
+ActionOverride(Player1,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride(Player2,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride(Player3,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride(Player4,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride(Player5,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride(Player6,MoveToObjectFollow("Tazok"))
+SmallWait(2)
+ActionOverride("Haiass",JumpToPoint([125.1456]))
+ActionOverride("Pellig",JumpToPoint([125.1456]))
+MoveViewPoint([185.1456],VERY_FAST)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("Tazok")
+Wait(12)
+StartDialogueNoSet([PC])
+Wait(2)
+EndCutSceneMode()
+END
+
+
+

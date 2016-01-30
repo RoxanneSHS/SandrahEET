@@ -1,0 +1,9 @@
+IF
+Global("CVGodag","GLOBAL",6)
+See([PC])
+InParty("CVSandr")
+PartyHasItem("GODAG02")
+THEN
+RESPONSE #100
+Dialogue([PC])
+END

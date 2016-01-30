@@ -1,0 +1,67 @@
+IF
+GlobalGT("ReturnNashQuest","GLOBAL",7)
+InParty("CVSandr")
+Global("SanQuiNash","BG5404",0)
+THEN
+RESPONSE #100
+CreateCreature("CVQidrn",[1398.1225],5)
+CreateCreature("CVUmdrom",[1370.1200],4)
+CreateCreature("CVUMelff",[1432.1290],5)
+SetGlobal("SanQuiNash","BG5404",1)
+END
+
+IF
+Global("SanQuiNash","BG5404",2)
+THEN
+RESPONSE #100
+ActionOverride("CVQidrn",EscapeArea())
+ActionOverride("CVUmdrom",EscapeArea())
+ActionOverride("CVUMelff",EscapeArea())
+SetGlobal("SanQuiNash","BG5404",3)
+END
+
+IF
+Global("SanQuiNash","BG5404",3)
+!InMyArea("CVQidrn")
+CombatCounter(0)
+Delay(6)
+THEN
+RESPONSE #100  
+TriggerActivation("Door4405",FALSE)
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+SetGlobal("SanQuiNash","BG5404",4)
+END
+
+IF
+Global("SanQuiNash","BG5404",4)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanQuiNash","BG5404",5)
+DisplayStringWait(Player1,@706)
+END
+
+IF
+Global("CHAPTER","GLOBAL",2)
+Global("CVSpid","BG5404",0)
+THEN
+RESPONSE #100
+SetGlobal("CVSpid","BG5404",1)
+CreateCreature("spidsw",[737.1497],4)
+CreateCreature("spidsw",[737.1497],4)
+CreateCreature("kobsha01",[717.1477],3)
+END
+
+IF
+Global("CHAPTER","GLOBAL",3)
+Global("CVSpid","BG5404",1)
+THEN
+RESPONSE #100
+SetGlobal("CVSpid","BG5404",2)
+CreateCreature("hobcap01",[1336.562],3)
+CreateCreature("hobelite",[1336.582],4)
+CreateCreature("hobelite",[1336.542],2)
+CreateCreature("hobcap01",[1336.582],4)
+CreateCreature("hobelite",[1336.582],4)
+CreateCreature("hobcap01",[1336.582],4)
+END

@@ -1,0 +1,36 @@
+IF
+Global("Entered","CVSH14",0)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVSH14",1)
+Continue()
+END
+
+IF
+Global("MooseLoose","CVSH14",2)
+Delay(6)
+THEN
+RESPONSE #100
+CreateCreature("CVMoose",[1743.1315],6)
+SetGlobal("MooseLoose","CVSH14",3)
+END
+
+IF
+Global("MooseLoose","CVSH14",3)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreature("CVMoose",[1557.1496],6)
+CreateCreature("CVMoose",[1736.1511],6)
+SetGlobal("MooseLoose","CVSH14",4)
+END
+
+IF
+Global("MooseLoose","CVSH14",4)
+Delay(12)
+THEN
+RESPONSE #100
+CreateCreature("CVMoose",[1750.1400],6)
+CreateCreature("CVMoose",[1780.1426],6)
+SetGlobal("MooseLoose","CVSH14",5)
+END

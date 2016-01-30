@@ -1,0 +1,7 @@
+IF
+Global("Itembenhe","GLOBAL",0)
+PartyHasItem("newbeh1")
+THEN
+RESPONSE #100
+SetGlobal("Itembenhe","GLOBAL",1)
+END

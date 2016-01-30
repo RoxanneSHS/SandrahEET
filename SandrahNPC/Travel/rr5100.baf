@@ -1,0 +1,7 @@
+IF
+   Global("CVRR5100","GLOBAL",0)
+THEN
+    RESPONSE #100
+             SetGlobal("CVRR5100","GLOBAL",1)
+             Continue()
+END

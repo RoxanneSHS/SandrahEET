@@ -1,0 +1,8 @@
+IF
+Global("SanWDTemplWi","GLOBAL",11)
+See("CVSandr")
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogueNoSet([PC])
+END

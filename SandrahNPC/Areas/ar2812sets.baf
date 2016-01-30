@@ -1,0 +1,9 @@
+IF
+Global("DefeatedJon","GLOBAL",2)
+GlobalGT("TalkEllesime","GLOBAL",1)
+Global("SanAfterJon","GLOBAL",0)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanAfterJon","GLOBAL",1)
+END

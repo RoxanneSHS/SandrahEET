@@ -1,0 +1,16 @@
+IF
+Global("SanSecrt","BG0300",0)
+THEN
+RESPONSE #100
+TriggerActivation("Passage",FALSE)
+SetGlobal("SanSecrt","BG0300",1)
+END
+
+IF
+InParty("CVSandr")
+Global("SanSecrt","BG0300",3)
+THEN
+RESPONSE #100
+TriggerActivation("Passage",TRUE)
+SetGlobal("SanSecrt","BG0300",4)
+END

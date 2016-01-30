@@ -1,0 +1,9 @@
+IF
+GlobalGT("SanHintFactory","GLOBAL",25)
+AreaCheck("CVSH22")
+See([PC])
+THEN
+RESPONSE #100
+Kill(Myself)
+Continue()
+END

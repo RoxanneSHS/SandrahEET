@@ -1,0 +1,47 @@
+IF
+Global("WDFishermen","GLOBAL",11)
+Dead("WDFish5")
+THEN
+RESPONSE #100
+ReputationInc(-1)
+SetGlobal("WDFishermen","GLOBAL",23)
+END
+
+IF
+Global("WDFishermen","GLOBAL",22)
+THEN
+RESPONSE #100
+Wait(6)
+Kill("WDFish5") 
+ReputationInc(-5)
+SetGlobal("WDFishermen","GLOBAL",23)
+END
+
+IF
+Global("WDFishermen","GLOBAL",32)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetInterrupt(FALSE)
+StartCutSceneMode()
+DestroyAllEquipment()
+ActionOverride(Player1,DropInventory())
+Wait(5)
+ActionOverride(Player2,EscapeArea())
+ActionOverride(Player3,EscapeArea())
+ActionOverride(Player4,EscapeArea())
+ActionOverride(Player5,EscapeArea())
+ActionOverride(Player6,EscapeArea())
+ActionOverride("haiass",EscapeArea())
+ActionOverride("Pellig",EscapeArea())
+ActionOverride(Player2,LeaveParty())
+ActionOverride(Player3,LeaveParty())
+ActionOverride(Player4,LeaveParty())
+ActionOverride(Player5,LeaveParty())
+ActionOverride(Player6,LeaveParty())
+ActionOverride(Player1,LeaveAreaLUA("BG3100","",[1203.1141],2))
+EndCutSceneMode()
+ActionOverride(Player1,DisplayString(Myself,@435))
+SetGlobal("SanWDTemplWi","GLOBAL",31)
+SetGlobal("WDFishermen","GLOBAL",33)
+END

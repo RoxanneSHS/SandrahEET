@@ -1,0 +1,37 @@
+// Tiax
+
+IF
+InParty("O#Tiax")
+!AreaCheck("ar1516")
+!AreaCheck("ar1515")
+Global("Sanotiax","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Sanotiax","LOCALS",1)
+END
+
+IF
+Global("Sanotiax","LOCALS",2) 
+RealGlobalTimerExpired("SanotiaxTa","LOCALS")
+InParty("O#Tiax")
+!TimeOfDay(DAY)
+THEN
+RESPONSE #100
+SetGlobal("Sanotiax","LOCALS",3)
+END
+
+IF
+See("O#Tiax")
+!StateCheck("O#Tiax",CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+OR(2)
+Global("Sanotiax","LOCALS",1)
+Global("Sanotiax","LOCALS",3)
+THEN
+RESPONSE #100
+MoveToObject("O#Tiax")
+Interact("CVSandr")
+END

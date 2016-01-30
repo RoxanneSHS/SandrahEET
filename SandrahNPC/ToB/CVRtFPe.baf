@@ -1,0 +1,13 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("Pellig")
+Polymorph(CLERIC_FEMALE_HUMAN)
+DisplayStringHead(Myself,@597)
+Wait(1)
+CreateCreatureObjectDoor("solar",Player1,0,0,0)
+Wait(6)
+SetGlobal("SanBeginRtF","GLOBAL",2)
+ActionOverride("Pellig",StartDialogueNoSet([PC]))
+END

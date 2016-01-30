@@ -1,0 +1,14 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID(Player1)
+ClearAllActions()
+Wait(1)
+ActionOverride("CVMinsc",DisplayStringHead(Myself,@660))
+Wait(10)
+ActionOverride("cvstoye",DestroySelf())
+ActionOverride("CVMinsc",DisplayStringHead(Myself,@661))
+EndCutSceneMode()
+SetGlobal("Orcshow","CVSH15",2)
+END

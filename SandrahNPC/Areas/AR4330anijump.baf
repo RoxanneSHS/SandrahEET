@@ -1,0 +1,20 @@
+IF
+Global("CbRopeBridgeMade","AR4330",3)
+InMyArea("Pellig")
+Delay(10)
+THEN
+RESPONSE #100
+ActionOverride("Pellig",JumpToPoint([249.428]))
+SetGlobal("CbRopeBridgeMade","AR4330",4)
+END
+
+
+IF
+Global("CbRopeBridgeMade","AR4330",4)
+InMyArea("Haiass")
+Delay(6)
+THEN
+RESPONSE #100
+ActionOverride("Haiass",JumpToPoint([276.68]))
+SetGlobal("CbRopeBridgeMade","AR4330",5)
+END

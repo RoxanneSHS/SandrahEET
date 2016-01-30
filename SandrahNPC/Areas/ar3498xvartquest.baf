@@ -1,0 +1,28 @@
+IF
+InParty("CVSandr")
+Global("SanXvarVil","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanXvarVil","GLOBAL",1)
+END
+
+IF
+InParty("CVSandr")
+Global("SanXvarVil","GLOBAL",2)
+Dead("Nexlit")
+THEN
+RESPONSE #100
+SetGlobal("SanXvarVil","GLOBAL",3)
+END
+
+IF
+InParty("CVSandr")
+AreaCheck("BG4700")
+Global("SanXvarVil","GLOBAL",3)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+Delay(10)
+THEN
+RESPONSE #100
+SetGlobal("SanXvarVil","GLOBAL",4)
+END

@@ -1,0 +1,11 @@
+IF
+See("CVSandr")
+Global("Spawns","LOCALS",0)
+THEN
+RESPONSE #100
+CreateCreatureObjectOffset("cvratsh2",Myself,[10.-10])
+CreateCreatureObjectOffset("cvratsh2",Myself,[-15.-15])
+CreateCreatureObjectOffset("cvratsh2",Myself,[20.-20])
+CreateCreatureObjectOffset("cvratsh2",Myself,[40.-50])
+SetGlobal("Spawns","LOCALS",1)
+END

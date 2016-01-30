@@ -1,0 +1,18 @@
+IF
+Global("Figsan","GLOBAL",2)
+THEN
+RESPONSE #100
+Wait(2)
+SetGlobal("Figsan","GLOBAL",3)
+ActionOverride("CVSandr",MakeUnselectable(0))
+StartDialog("StaffM11","CVSandr")
+END
+
+IF
+Global("Figsan","GLOBAL",12)
+THEN
+RESPONSE #100
+Wait(1)
+SetGlobal("Figsan","GLOBAL",13)
+StartDialog("StaffM11","CVSandr")
+END

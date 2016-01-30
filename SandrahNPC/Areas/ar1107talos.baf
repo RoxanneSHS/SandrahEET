@@ -1,0 +1,50 @@
+IF
+!Global("RangerProtector","GLOBAL",0)
+InParty("CVSandr")
+Global("SanVsTalos","GLOBAL",1)
+Global("SantalosRang","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SantalosRang","GLOBAL",1)
+CreateCreature("CVTALOP1",[594.467],14)
+CreateCreature("CVTALOW1",[626.619],8)
+CreateCreature("CVTALOW1",[418.613],10)
+END
+
+IF
+Global("SantalosRang","GLOBAL",2)
+THEN
+RESPONSE #100
+ActionOverride("CVTALOP1",Enemy())
+SetGlobal("SantalosRang","GLOBAL",3)
+RealSetGlobalTimer("SantalosRangSelf","GLOBAL",70)
+END
+
+IF
+Global("SantalosRang","GLOBAL",3)
+RealGlobalTimerExpired("SantalosRangSelf","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("SantalosRang","GLOBAL",4)
+CreateCreatureObjectDoor("CVTalos",Player1,0,0,0)
+END
+
+IF
+HPPercentLT("CVTalos",40)
+Global("SantalosRang","GLOBAL",5)
+THEN
+RESPONSE #100
+DisplayStringWait("CVTALOS",@701)
+ActionOverride("CVTalos",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SantalosRang","GLOBAL",6)
+AddexperienceParty(30000)
+CreateCreature("CVTALOA",[1141.537],6)
+END
+
+IF
+Global("SantalosRang","GLOBAL",6)
+THEN
+RESPONSE #100
+ActionOverride("CVTALOA",Enemy())
+SetGlobal("SantalosRang","GLOBAL",7)
+END

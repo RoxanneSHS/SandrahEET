@@ -1,0 +1,16 @@
+IF
+	Global("UcmgMatronHostile","GLOBAL",1)
+	Global("UcmGabDrow","GLOBAL",0)
+THEN
+	RESPONSE #100
+		CreateCreature("UCMGDP01",[1817.1822],10) 
+		CreateCreature("UCMGMA03",[2002.1854],9) 
+		CreateCreature("UCMGMM01",[1905.1903],6) 
+		CreateCreature("UCMGWA01",[1933.1986],6) 
+		CreateCreature("UCMGWA02",[1820.1984],5) 
+		CreateCreature("UCMGDW01",[1848.1836],6) 
+		CreateCreature("UCMGDW02",[1909.1934],0) 
+		SetGlobal("UcmGabDrow","GLOBAL",1)
+END
+
+

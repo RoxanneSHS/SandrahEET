@@ -1,0 +1,12 @@
+IF
+Global("santem","LOCALS",0)
+THEN
+RESPONSE #25
+SetGlobal("santem","LOCALS",1)
+GiveItemCreate("scrl56",Myself,0,0,0)
+RESPONSE #25
+SetGlobal("santem","LOCALS",1)
+GiveItemCreate("scrls56",Myself,0,0,0)
+RESPONSE #60
+SetGlobal("santem","LOCALS",1)
+END

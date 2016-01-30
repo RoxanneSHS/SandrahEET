@@ -1,0 +1,21 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		LeaveAreaLUAPanic("cvsh20","",[488.302],2)
+		LeaveAreaLUA("cvsh20","",[488.302],2)
+		ActionOverride(Player2,LeaveAreaLUA("cvsh20","",[488.302],2))
+		ActionOverride(Player3,LeaveAreaLUA("cvsh20","",[488.302],2))
+		ActionOverride(Player4,LeaveAreaLUA("cvsh20","",[488.302],2))
+		ActionOverride(Player5,LeaveAreaLUA("cvsh20","",[488.302],2))
+		ActionOverride(Player6,LeaveAreaLUA("cvsh20","",[488.302],2))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		SetGlobal("SanHintFactory","GLOBAL",15)
+		EndCutSceneMode()
+		TextScreen("ShauFac")
+END
+
+

@@ -1,0 +1,14 @@
+//Shauhana Preview in BG1
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneID("CVGhatle")
+MoveViewPoint([513.474],STANDARD)
+Wait(6)
+StartDialogueNoSet([PC])
+Wait(2)
+EndCutSceneMode()
+END
+

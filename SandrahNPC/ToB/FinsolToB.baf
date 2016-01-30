@@ -1,0 +1,14 @@
+IF
+AreaCheck("CVRTF1")
+Global("StartEndBios","cvrtf1",0)
+GlobalGT("lrFinale","GLOBAL",1)
+Global("PlayerChoseEssence","GLOBAL",0)
+InMyArea("CVSandr")
+Global("Restart","LOCALS",0)
+THEN
+RESPONSE #100
+Explore()
+SetGlobal("Restart","LOCALS",1)
+MoveToObject(Player1)
+StartDialogueNoSet([PC])
+END

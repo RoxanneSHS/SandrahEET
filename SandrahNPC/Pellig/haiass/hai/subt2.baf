@@ -1,0 +1,7 @@
+IF
+  Global("HaiExists","FW4800",0)
+THEN
+  RESPONSE #100
+    SetGlobal("HaiExists","FW4800",1)
+    CreateCreature("hai1",[874.411],1)
+END

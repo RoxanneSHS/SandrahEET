@@ -1,0 +1,16 @@
+IF
+AreaCheck("CVEBS1")
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+SetNumTimesTalkedTo(1)
+END
+
+IF
+GlobalGT("SanImoRetWD","GLOBAL",3)
+AreaCheck("CVEBS1")
+Global("HennStoWD","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("HennStoWD","LOCALS",1)
+END

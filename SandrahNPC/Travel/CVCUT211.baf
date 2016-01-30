@@ -1,0 +1,34 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		CreateVisualEffectObject("SPDIMNDR",Player1)
+		CreateVisualEffectObject("SPDIMNDR",Player2)
+		CreateVisualEffectObject("SPDIMNDR",Player3)
+		CreateVisualEffectObject("SPDIMNDR",Player4)
+		CreateVisualEffectObject("SPDIMNDR",Player5)
+		CreateVisualEffectObject("SPDIMNDR",Player6)
+		Wait(3)
+		FadeToColor([20.0],0)
+		Wait(1)
+		LeaveAreaLUAPanic("cvaka5","",[684.1343],8)
+		LeaveAreaLUA("cvaka5","",[684.1343],8)
+		ActionOverride(Player2,LeaveAreaLUA("cvaka5","",[700.1136],9))
+		ActionOverride(Player3,LeaveAreaLUA("cvaka5","",[828.1066],8))
+		ActionOverride(Player4,LeaveAreaLUA("cvaka5","",[960.1364],8))
+		ActionOverride(Player5,LeaveAreaLUA("cvaka5","",[932.1209],9))
+		ActionOverride(Player6,LeaveAreaLUA("cvaka5","",[820.1346],9))
+		Wait(1)
+		FadeFromColor([20.0],0)
+		CreateVisualEffectObject("SPDIMNDR",Myself)
+		ActionOverride(Player2,CreateVisualEffectObject("SPDIMNDR",Myself))
+		ActionOverride(Player3,CreateVisualEffectObject("SPDIMNDR",Myself))
+		ActionOverride(Player4,CreateVisualEffectObject("SPDIMNDR",Myself))
+		ActionOverride(Player5,CreateVisualEffectObject("SPDIMNDR",Myself))
+		ActionOverride(Player6,CreateVisualEffectObject("SPDIMNDR",Myself))
+		Wait(3)
+		EndCutSceneMode()
+END
+
+

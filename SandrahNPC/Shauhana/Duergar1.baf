@@ -1,0 +1,44 @@
+IF
+AreaCheck("CVSH20")
+NumTimesTalkedTo(0)
+See([PC])
+Global("DuergarTalk","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("DuergarTalk","LOCALS",2)
+Enemy()
+END
+
+IF
+Global("DuergarTalk","LOCALS",2)
+ActionListEmpty()
+See([PC])
+!GlobalTimerNotExpired("DUE2","LOCALS")
+GlobalLT("GROW","LOCALS",3)
+Global("GIANT","LOCALS",0)
+HPPercentGT(Myself,50)
+RandomNumLT(101,41)
+THEN
+RESPONSE #100
+SetGlobalTimer("DUE2","LOCALS",FOUR_ROUNDS)
+IncrementGlobal("GROW","LOCALS",1)
+ReallyForceSpellRES("BPDUEGIS",Myself)
+SetGlobal("GIANT","LOCALS",1)
+SetGlobal("BOW","LOCALS",2)
+SetGlobal("MM","LOCALS",1)
+END
+
+IF
+OR(2)
+HPPercentLT(Myself,25)
+GlobalTimerExpired("DUE2","LOCALS")
+Global("GIANT","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobalTimer("DUE2","LOCALS",FOUR_ROUNDS)
+ReallyForceSpellRES("BPDUEGAR",Myself)
+SetGlobal("GIANT","LOCALS",0)
+SetGlobal("BOLD","LOCALS",0)
+SetGlobal("BOW","LOCALS",0)
+SetGlobal("MM","LOCALS",0)
+END

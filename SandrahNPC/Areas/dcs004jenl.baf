@@ -1,0 +1,10 @@
+IF
+Global("BansheeMap3","GLOBAL",1)
+InParty("CVJenlig")
+InParty("CVSandr")
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100 
+SetGlobal("BansheeMap3","GLOBAL",2)
+END

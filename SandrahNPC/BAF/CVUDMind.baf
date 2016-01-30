@@ -1,0 +1,20 @@
+IF
+AreaCheck("ar2100")
+OR(2)
+See(Player1)
+See("CVSandr")
+Global("SanMFambu","ar2100",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+SetGlobal("SanMFambu","ar2100",2)
+Wait(2)
+DisplayStringWait(Myself,@809)
+SmallWait(10)
+AddJournalEntry(@810,QUEST)
+Wait(2)
+StartCutScene("CVCut99")
+DestroySelf()
+END
+

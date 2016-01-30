@@ -1,0 +1,8 @@
+IF
+GlobalGT("TalkedToHlsion","GLOBAL",0)
+InMyArea("hlsion")
+!Global("EnteredAR0907","GLOBAL",1)
+THEN
+RESPONSE #100
+ActionOverride("hlsion",ForceSpell(Myself,DRYAD_TELEPORT))
+END

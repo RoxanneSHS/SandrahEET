@@ -1,0 +1,56 @@
+IF
+Global("Entered","CVSH15",0)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVSH15",1)
+END
+
+IF
+GlobalGT("ShauOrcWar","GLOBAL",8)
+Global("KingQueen","CVSH15",0)
+THEN
+RESPONSE #100
+SetGlobal("KingQueen","CVSH15",1)
+CreateCreature("CVShauQ",[2661.617],0)
+CreateCreature("cvminsc",[1629.1501],6)
+END
+
+IF
+Global("Entered","CVSH15",3)
+THEN
+RESPONSE #100
+SetGlobal("Entered","CVSH15",4)
+CreateCreature("shaorc9",[1639.1347],0)
+CreateCreature("shaorc10",[1397.1661],14)
+CreateCreature("shaorc7",[1619.1706],6)
+CreateCreature("shaorc11",[1684.1716],4)
+CreateCreature("shaorc8",[1744.1480],2)
+END
+
+IF
+Global("Orcshow","CVSH15",2)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Orcshow","CVSH15",3)
+CreateCreature("CVStoye",[1659.1531],0)
+Continue()
+END
+
+IF
+Global("Orcshow","CVSH15",3)
+Delay(6)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",Interact("CVSandr"))
+END
+
+IF
+Global("MWleaveShau","GLOBAL",0)
+InParty("MWAriena")
+THEN
+RESPONSE #100
+CreateCreature("CVRugg",[779.1031],7)
+SetGlobal("MWleaveShau","GLOBAL",1)
+END
+

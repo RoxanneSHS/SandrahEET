@@ -1,0 +1,27 @@
+IF
+Global("SanBG1ShauPrev","GLOBAL",2)
+THEN
+RESPONSE #100
+CreateCreature("CVGhatle",[510.452],14)
+CreateCreature("CVORWarl",[461.504],14)
+SetGlobal("SanBG1ShauPrev","GLOBAL",3)
+END
+
+IF
+Global("SanBG1ShauPrev","GLOBAL",5)
+Global("Orcleave","BG1201",0)
+THEN
+RESPONSE #100
+ActionOverride("CVGhatle",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVORWarl",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("Orcleave","BG1201",1)
+END
+
+IF
+Global("Orcleave","BG1201",1)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Orcleave","BG1201",2)
+SetGlobal("SanBG1ShauPrev","GLOBAL",6)
+END
