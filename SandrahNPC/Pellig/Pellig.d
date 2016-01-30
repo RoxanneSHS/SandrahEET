@@ -16,9 +16,12 @@ IF ~NumTimesTalkedTo(0)~ THEN  Pellig Pellini
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, strong and proud, a fighter at first sight. ~
 ==IF_FILE_EXISTS ~BB!GAVIN~ IF~InParty("b!gavin") ~ THEN  ~This is her pet? A simple cat won't do for her...I wonder what that says about her choice in companions?~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~A manifestation of beauty, a creature of Sune? Ah no, probably a creature of Mystra...~
+==BNeera IF~InParty("Neera")~THEN~I had once wished for a kitten but was afraid I might turn it into a frog or so -or into something dangerous...like this.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ So if I die by the claw of a terrible beast that is fine. At least it is all over quickly then for me. ~
 == EDWIN IF ~ InParty("Edwin") ~ THEN ~ (Oh, could I only master that magnificent girl the way she masters her large cat - gosh, I'd even go as far as being content with being that cat myself...She drives me mad...)~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ A watchdog for the treasures of this house. Uh, bad news indeed. ~
+==Pellig IF~InParty("Dorn")~THEN~Grrowl!!~
+==BDorn IF~InParty("Dorn")~THEN~Aarg, breathe not at me, hellish creature!~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~Not a red dragon you tame, priestess, but has power more than pets of manlings usually have.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Graceful and scaring. I sense a creature of the Shining Plains.~
 == BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ You live in balance with nature and the beasts, Sandrah, just like your mother once did.~
