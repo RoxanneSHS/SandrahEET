@@ -19,10 +19,10 @@ END
 
 IF~~ THEN BEGIN 2
 SAY~ As you wish, God <CHARNAME>.~
-IF~~THEN DO~SetGlobal("#GBhaalHP1","GLOBAL",22) ClearAllActions()StartCutSceneMode() StartCutScene("CVcut303")~ EXIT
+IF~~THEN DO~SetGlobal("K#STATE_REALLY_DEAD","GLOBAL",1) ClearAllActions()StartCutSceneMode() StartCutScene("CVcut303")~ EXIT
 END
 
 IF~~ THEN BEGIN 3
 SAY~ As you wish, God <CHARNAME>.~
-IF~~THEN DO~SetGlobal("#GBhaalHP1","GLOBAL",22) ClearAllActions()StartCutSceneMode() StartCutScene("CVcut302")~ EXIT
+IF~~THEN DO~SetGlobal("K#STATE_REALLY_DEAD","GLOBAL",1) ClearAllActions()StartCutSceneMode() StartCutScene("CVcut302")~ EXIT
 END

@@ -10,6 +10,10 @@ LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/setup-Sandr.tra~
 BEGIN
 ~SandrahNPC Check for required Installation~
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~k#telbgt.bcs~ THEN BEGIN
+  FAIL  @962
+END
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~F_9999.are~ THEN BEGIN
   FAIL  @405
 END
