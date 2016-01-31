@@ -1,0 +1,14 @@
+VERSION 2.01
+----------------
+
+Re-created for EET
+
+New BG1 to BG2 transition
+Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
+Revised dependecies on other mega mods
+
+Removed Ajantis Crossmod
+Removed RE Crossmod
+
+Added Neera, Dorn, Rasaad Crossmod
+

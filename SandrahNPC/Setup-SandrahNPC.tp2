@@ -4219,8 +4219,8 @@ COPY ~SandrahNPC/Misc/CRChloeM.bmp~ ~override/CRChloeM.bmp~
 COPY ~SandrahNPC/Misc/CRChloeS.bmp~ ~override/CRChloeS.bmp~
 COPY ~SandrahNPC/Misc/sarahs.bmp~ ~override/sarahs.bmp~
 COPY ~SandrahNPC/Misc/sarahm.bmp~ ~override/sarahm.bmp~
-COPY ~SandrahNPC/Misc/drtsu05m.bmp~ ~override/drtsu05m.bmp~
-COPY ~SandrahNPC/Misc/drtsu05s.bmp~ ~override/drtsu05s.bmp~
+COPY ~SandrahNPC/Misc/drizztl.bmp~ ~override/drizztl.bmp~
+COPY ~SandrahNPC/Misc/drizzts.bmp~ ~override/drizzts.bmp~
 COPY ~SandrahNPC/Misc/CoranM.bmp~ ~override/CoranM.bmp~
 COPY ~SandrahNPC/Misc/CoranS.bmp~ ~override/CoranS.bmp~
 COPY ~SandrahNPC/Misc/AAITM010.BAM~ ~override/AAITM010.BAM~
@@ -4470,22 +4470,22 @@ END
 COPY_EXISTING ~kivan.CRE~ ~override/kivan.CRE~
               ~kivan4.CRE~ ~override/kivan4.CRE~
               ~kivan6.CRE~ ~override/kivan6.CRE~
- WRITE_ASCII 0x34 ~kivans~
- WRITE_ASCII 0x3c ~kivanm~ 
+ WRITE_ASCII 0x34 ~kivans~  #8
+ WRITE_ASCII 0x3c ~kivanm~  #8
  WRITE_ASCII 0x260 ~RTFGone~
 
 ACTION_IF FILE_EXISTS ~p#kivan.CRE~ THEN BEGIN
 COPY_EXISTING ~p#kivan.CRE~ ~override/p#kivan.CRE~
- WRITE_ASCII 0x34 ~kivans~
- WRITE_ASCII 0x3c ~kivanm~
+ WRITE_ASCII 0x34 ~kivans~ #8
+ WRITE_ASCII 0x3c ~kivanm~ #8
 END
 
 ACTION_IF FILE_EXISTS ~kivan10.CRE~ THEN BEGIN
 COPY_EXISTING ~kivan10.CRE~ ~override/kivan10.CRE~
               ~kivan12.CRE~ ~override/kivan12.CRE~
               ~kivan13.CRE~ ~override/kivan13.CRE~
- WRITE_ASCII 0x34 ~kivans~
- WRITE_ASCII 0x3c ~kivanm~ 
+ WRITE_ASCII 0x34 ~kivans~ #8
+ WRITE_ASCII 0x3c ~kivanm~ #8
  WRITE_ASCII 0x260 ~RTFGone~
 END
  
@@ -4494,33 +4494,33 @@ COPY_EXISTING ~mazzy8.CRE~ ~override/mazzy8.CRE~
               ~mazzy11.CRE~ ~override/mazzy11.CRE~
               ~mazzy12.CRE~ ~override/mazzy12.CRE~
               ~mazzy15.CRE~ ~override/mazzy15.CRE~
- WRITE_ASCII 0x34 ~NMazzys~
- WRITE_ASCII 0x3c ~NMazzym~
+ WRITE_ASCII 0x34 ~NMazzys~ #8
+ WRITE_ASCII 0x3c ~NMazzym~ #8
  
 COPY_EXISTING ~F_Drizzt.CRE~ ~override/F_Drizzt.CRE~
               ~c6drizz.CRE~ ~override/c6drizz.CRE~
               ~c6drizz2.CRE~ ~override/c6drizz2.CRE~
               ~c6drizz3.CRE~ ~override/c6drizz3.CRE~
               ~drizzt.CRE~ ~override/drizzt.cre~
- WRITE_ASCII 0x34 ~drtsu05s~
- WRITE_ASCII 0x3c ~drtsu05m~
+ WRITE_ASCII 0x34 ~Drizzts~ #8
+ WRITE_ASCII 0x3c ~Drizztl~ #8
 
 ACTION_IF FILE_EXISTS ~x#drizzt.CRE~ THEN BEGIN
 COPY_EXISTING ~x#drizzt.CRE~ ~override/x#drizzt.CRE~
- WRITE_ASCII 0x34 ~drtsu05s~
- WRITE_ASCII 0x3c ~drtsu05m~
+ WRITE_ASCII 0x34 ~Drizzts~ #8
+ WRITE_ASCII 0x3c ~Drizztl~ #8
 END
 
 ACTION_IF FILE_EXISTS ~drizi2.CRE~ THEN BEGIN
 COPY_EXISTING ~drizi2.CRE~ ~override/drizi2.CRE~
               ~driz21.CRE~ ~override/driz21.CRE~
- WRITE_ASCII 0x34 ~drtsu05s~
- WRITE_ASCII 0x3c ~drtsu05m~
+ WRITE_ASCII 0x34 ~Drizzts~ #8
+ WRITE_ASCII 0x3c ~Drizztl~ #8
 END
  
 COPY_EXISTING_REGEXP GLOB ~^_?nalia[0-20]*.*\.cre$~ ~override~ 
- WRITE_ASCII 0x34 ~Naliass~
- WRITE_ASCII 0x3c ~Naliamm~
+ WRITE_ASCII 0x34 ~Naliass~  #8
+ WRITE_ASCII 0x3c ~Naliamm~  #8
  WRITE_ASCII 0x260 ~RTFGone~
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~ // Imoen animation adjustments
@@ -8086,3 +8086,10 @@ LPF fj_are_structure
     fj_name           = Exit4201
   END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~Valiant.itm~ THEN BEGIN
+COPY ~SandrahNPC/ITM/Valiant.itm~ ~override/Valiant.itm~
+SAY NAME1 @964
+SAY NAME2 @964
+SAY UNIDENTIFIED_DESC @964
+SAY DESC @965
+END

@@ -1719,3 +1719,23 @@ The trail had at first pointed to the uncharted Cloakwood Forest. But meanwhile 
 @961 =~You suddenly have a sense of imminent danger.  The noise you just made alerted anyone within miles of these mountains.~
 @962 =~This version of the mod is for EET only!!~
 @963 =~Your installation has removed required files from the original game. This may be resulting from another mod you have selected.~
+@964 =~Valiant~
+@965 =~This legendary blade was wielded for a short time by the warrior Ilban of Elturel.  It is from his exploits in Calimshan that the weapon gained its name.  Before Ilban, however, Valiant was in the possession of a holy slayer from distant Zakhara.  According to sages, the light sword was crafted to serve an order of assassins.  Valiant's owners survived through many incredible ordeals, mostly because of the magic of the weapon.  The weapon was lost in Calimshan when a holy slayer pursued a pasha's blasphemous agents to Calimport.  The scimitar remained in the hands of Baris Cabal for about a dozen years before the band was broken up by Ilban and his companions.  Ilban's exploits took Valiant into battle against sandmen, giant scorpions, desert raiders, evil sorcerers and the demonic servants of Celan Harad.
+
+STATISTICS:
+
+Damage:  1D8 + 2
+THAC0:  +3
+Special:  
+  Extra Attack Per Round
+Damage Type:  Slashing
+Weight:  4
+Proficiency Type: Scimitar
+Speed Factor:  0
+Type:  1-handed
+Requires: 8 Strength
+
+Not Usable By:
+  Mage
+  Cleric
+  Beast Master  ~
