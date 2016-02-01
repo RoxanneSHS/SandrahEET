@@ -72,7 +72,7 @@ IF~Global("SanHealJen","GLOBAL",6)~THEN BJenli SanthiefJen1
 ~You interest to talk with Jen'lig, Sandrah? ~
 ==BSandr~Sure. Last time you told me that Githyanki have no thieves, it is a new concept as you called it?~
 ==BJenli~None of my race steals from other or from society. But outsiders steal from Githyanki. Like sword Jen'lig is sent to find.~
-=~Jen'Lig thought of best way to find thieves. Best way is to think like thief. To think like thief must learn to act and behave like thief. (Hiss) steal from outsiders also good for Githyanki - they steal - Jen'lig steal back.~
+=~Jen'lig thought of best way to find thieves. Best way is to think like thief. To think like thief must learn to act and behave like thief. (Hiss) steal from outsiders also good for Githyanki - they steal - Jen'lig steal back.~
 ==BSandr~It was your own invention then? Impressive. After all I had read about your kin I was not expecting one to take so much initiative.~
 ==BJenli~A Githyanki Primewalker-Captain must decide often on mission. Must have capability for own thinking. (Hiss) Even...too much thinking great danger.~
 ==BSandr~So you really are a high ranking officer.~

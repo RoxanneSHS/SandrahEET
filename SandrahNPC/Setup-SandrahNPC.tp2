@@ -7971,20 +7971,6 @@ APPEND ~racetext.2da~
 ~GITHYANKI  152        34273      -1         72732         -1~
 UNLESS ~GITHYANKI~
 
-<<<<<<<< .../setjdialog.baf
-IF
-	OnCreation()
-	THEN
-		RESPONSE #100
-		SetGlobal("K#PDIALOG","LOCALS",0)
-		Continue()
-END
->>>>>>>>
-
-ACTION_FOR_EACH script IN ~DORN_~ ~DORN~ ~EDWIN_~ ~EDWIN~ ~IMOEN_~ ~IMOEN~ ~IMOEN2~ ~JAHEIRA_~ ~JAHEIRA~ ~MINSC_~ ~MINSC~ ~NEERA_~ ~NEERA~ ~RASAAD_~ ~RASAAD~ ~VICONIA_~ ~VICONIA~ BEGIN
-EXTEND_TOP ~%script%.BCS~ ~.../setjdialog.baf~
-END
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/BPDemon.baf~
 END
@@ -8092,4 +8078,8 @@ SAY NAME1 @964
 SAY NAME2 @964
 SAY UNIDENTIFIED_DESC @964
 SAY DESC @965
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~acq17003.cre~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/Karlini.d~
 END
