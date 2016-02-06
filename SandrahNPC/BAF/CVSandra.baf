@@ -5225,7 +5225,7 @@ Interact("CVSandr")
 END
 
 IF
-Global("SanDSOTSCUW","GLOBAL",9)
+GlobalLT("SanDSOTSCUW","GLOBAL",10)
 AreaCheck("Dsc034")
 Dead("Grunk")
 Dead("Jabbress")
@@ -5277,13 +5277,12 @@ RESPONSE #100
 SetGlobal("SanGithVSDel","LOCALS",2)
 StartCutSceneMode()
 CreateCreatureObjectOffset("sangith",Myself,[125.125])
-CreateCreatureObjectOffset("ppgith90",Myself,[-125.-125])
-CreateCreatureObjectOffset("ppgith91",Myself,[225.-125])
-CreateCreatureObjectOffset("ppgith92",Myself,[-225.225])
-CreateCreatureObjectOffset("ppgith93",Myself,[-325.-225])
-CreateCreatureObjectOffset("ppgith97",Myself,[325.225])
-CreateCreatureObjectOffset("ppgith98",Myself,[425.-325])
-CreateCreatureObjectOffset("ppgith99",Myself,[425.-125])
+CreateCreatureObjectOffset("ppgithgi",Myself,[-125.-125])
+CreateCreatureObjectOffset("ppgithg1",Myself,[225.-125])
+CreateCreatureObjectOffset("ppgithma",Myself,[-225.225])
+CreateCreatureObjectOffset("ppgithwa",Myself,[-325.-225])
+CreateCreatureObjectOffset("ppgithm1",Myself,[425.-325])
+CreateCreatureObjectOffset("ppgithw1",Myself,[425.-125])
 EndCutSceneMode()
 SetGlobal("SanGithVS","GLOBAL",1)
 END
@@ -8137,9 +8136,8 @@ Global("SanOrDiId","GLOBAL",7)
 RealGlobalTimerExpired("SanWinskAtt2","LOCALS")
 THEN
 RESPONSE #100
-CreateCreatureObjectOffset("ABYDEM01",Player1,[-150.100])
 CreateCreatureObjectOffset("ICBONE01",Player1,[100.100])
-CreateCreatureObjectOffset("X#MEPHT4",Player1,[100.50])
+CreateCreatureObjectOffset("X#MEPHT4",Player1,[100.-50])
 CreateCreatureObjectOffset("GolemF",Player1,[60.60])
 SetGlobal("SanOrDiId","GLOBAL",8)
 END

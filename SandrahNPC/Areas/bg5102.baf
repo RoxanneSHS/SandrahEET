@@ -1,0 +1,8 @@
+IF
+Global("Sanzom","BG5102",0)
+THEN
+RESPONSE #100
+SetGlobal("Sanzom","BG5102",1)
+CreateCreature("cvzlord",[202.191],8)
+CreateCreature("shadfi01",[186.103],8)
+END

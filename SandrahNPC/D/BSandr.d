@@ -2263,7 +2263,7 @@ CHAIN
 IF~ Global("OrcPrison","GLOBAL",17)~ THEN BSANDR BeregOrph1
 ~ That large mansion in the north of the town is Travenhurst's.~
 == BIMOEN2 ~ UUUHH, that nasty *NOBLEMAN*! I suggest Imoen the Magnificent will pay that guy a visit today to deliver greeting from Henning. Greetings he won't forget ever and ever...~
-== BSANDR ~ Right, Imoen. That fiend cannot get away scott free for what he has done. And also he may have some valuable information about the Iron Throne and such.~
+== BSANDR ~ Right, Imoen. That fiend cannot get away scot free for what he has done. And also he may have some valuable information about the Iron Throne and such.~
 == BIMOEN2 ~ Yipee! I will squeeze everything outa him, maybe with some nice little tattoo work with this knife, or lemme think, how about roasting his feet in his own mighty splendid fireplace, or...~
 == BSANDR ~ Oh, Imoen, you sound almost like an orc when you have these fantasies.~
 == BIMOEN2 ~ Hey, ya know me besta friend, I could tear him apart in midair for what he did to Henning but me ain't no bloody orc.~
@@ -3184,7 +3184,7 @@ DO ~ SetGlobal("SanYesl","GLOBAL",3) RealSetGlobalTimer("SanYeslTa","LOCALS",300
 == BYESLI ~ By Clangeddin, an' isn't that Madman's blood flowing in ya veins?~
 == BSANDR ~ Like it does in my father Elminster as well. And would you hold any accusation against the mighty mage himself, tell me?~
 == BYESLI ~ Ya got it right, gal. I'm blamin' yours father of nothin' and I observe ya own deeds...'n ya still alive an' not slain by my hammer - for now.~
-== BSANDR ~ Fair enough, Yeslick. Just one thing for you to think about - my grandfather Cyric was a good-hearted and fearless human before Ao made him the mad god you despise. My father was sired by the human not be the god that he became later. This is the blood I have in me.~
+== BSANDR ~ Fair enough, Yeslick. Just one thing for you to think about - my grandfather Cyric was a good-hearted and fearless human before Ao made him the mad god you despise. My father was sired by the human not by the god that he became later. This is the blood I have in me.~
 == BYESLI ~ Mmmh, the blood of those who slay even Gods...the blood of those who raise to the Weave...We'll see what comes out of such roots...~
 EXIT
 

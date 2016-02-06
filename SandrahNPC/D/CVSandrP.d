@@ -12,19 +12,19 @@ END
 
 IF~~THEN BEGIN PT13
 SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away apruptly.)~
-IF~~THEN REPLY~ But...~ DO ~SetGlobal("SandrahJoined","GLOBAL",52) ActionOverride("CVSandr",MoveBetweenAreas("AR0602",[3057.657],0)) SetGlobal("SanToBG2","ARAM00",3)~ EXIT
+IF~~THEN REPLY~ But...~ DO ~SetGlobal("SandrahJoined","GLOBAL",52) ActionOverride("CVSandr",MoveBetweenAreas("AR0602",[3057.657],0))~ EXIT
 END
 
 IF ~~ THEN BEGIN PT11
-SAY ~Mm, be sure to get back soon! ~
-IF ~~ THEN DO ~SetGlobal("SandrahJoined","GLOBAL",2)~
-EXIT
+SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away apruptly.)~
+IF~~THEN REPLY~ But...~ DO~ SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaDestroy(90)~ EXIT
+IF~~THEN REPLY~ Wait...~ DO~ SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaDestroy(90)~ EXIT
 END
 
 IF ~~ THEN BEGIN PT12
 SAY ~Yes, <CHARNAME>, You will find me at a friendly temple nearby.~
 IF ~!Global("ENDOFBG1","GLOBAL",2) GlobalLT("CHAPTER","GLOBAL",4)~ THEN DO ~SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaMove("BG3402",270,497,0)~ EXIT
-IF ~ !Global("ENDOFBG1","GLOBAL",2) OR(2) GlobalGT("CHAPTER","GLOBAL",4)Global("CHAPTER","GLOBAL",4)~ THEN DO ~SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaMove("BG0705",829,665,0)~ EXIT
+IF ~ !Global("ENDOFBG1","GLOBAL",2) GlobalGT("CHAPTER","GLOBAL",3)~ THEN DO ~SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaMove("BG0705",794,489,0)~ EXIT
 IF ~ Global("ENDOFBG1","GLOBAL",2) ~ THEN DO ~ SetGlobal("SandrahJoined","GLOBAL",7)EscapeAreaMove("AR0319",522,312,3)~ EXIT
 END
 

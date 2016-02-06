@@ -24,6 +24,23 @@ DO~SetGlobal("SanNeeraBG1B","GLOBAL",4)~
 ==CVSandrJ~It is no penalty, least of all one by Mystra, it is the natural consequence of the natural use you proclaim. You use more of a power than you can handle and the power plays its own tricks on you.~EXIT
 
 CHAIN
+IF WEIGHT #-2~Global("SanNeeraBG1B","GLOBAL",6)~THEN BNeera SanNeera2
+~You really use your magical skills to cook our dinner?~
+DO~SetGlobal("SanNeeraBG1B","GLOBAL",7)~
+==CVSandrJ~Why not? Do not try to tell me that you never tried the same yourself.~
+==BNeera~Yes, I confess I did. Just my attempts with fire...I'd rather not talk about it.~
+==CVSandrJ~Fire does not seem to be your friend, Neera, at least not magical fire. Since your early experience in High Forest it seems to haunt you.~
+==BNeera~You can surely say that, I burned my friends and after that...you know the story already, I guess.~
+==CVSandrJ~This probably is the source of the problem. Your fear to cause something like that again comes in your way when you start to concentrate on your spell - the fear to fail becomes self-fulfilling.~
+==BNeera~And...?~
+==CVSandrJ~Come here...yes, right...now those sticks...~
+==BNeera~I feel it - hm - yes...but...~
+==CVSandrJ~No *but*, keep your mind on it, see how it builds, yes...you have it under control now...slowly...do not loose it there...yes, yes...~
+==BNeera~YES!~
+END
+++~*While you wait for some explosion or meteor crashing down on you, you observe instead a well-lit campfire heating the pot with your dinner. Neera smiles brightly.*~EXIT
+
+CHAIN
 IF WEIGHT #-2~Global("SanNeeraR","LOCALS",1)~THEN BNeera Redwi
 ~For some reason you seem to despise the red wizards more than your goddess herself would allow.~
 DO~SetGlobal("SanNeeraR","LOCALS",2)~

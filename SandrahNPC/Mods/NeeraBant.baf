@@ -41,12 +41,26 @@ SetGlobal("SanNeeraA","LOCALS",1)
 END
 
 IF
+Global("SanNeeraBG1B","GLOBAL",5)
+InParty("CVSandr")
+AreaType(FOREST)
+TimeGT(19)
+GlobalGT("Chapter","GLOBAL",3)
+Delay(12)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanNeeraBG1B","GLOBAL",6)
+END
+
+IF
 InParty("CVSandr")
 InParty(Myself)
-OR(3)
+OR(4)
 Global("SanNeeraBG1B","GLOBAL",3)
 Global("SanNeeraR","LOCALS",1)
 Global("SanNeeraA","LOCALS",1)
+Global("SanNeeraBG1B","GLOBAL",6)
 See("CVSandr")
 !StateCheck(Player1,CD_STATE_NOTVALID)
 !StateCheck(Myself,CD_STATE_NOTVALID)

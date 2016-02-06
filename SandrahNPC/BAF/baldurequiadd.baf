@@ -1,25 +1,15 @@
 IF
 OnCreation()
+Global("Sannamnew","Global",0)
 THEN
 RESPONSE #100
+SetGlobal("Sannamnew","Global",1)
 ActionOverride("CVSandr",ReallyForceSpellRES("CVSanam",Myself))
 END
 
 IF
 PartyHasItem("Sanbook")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanbook") 
@@ -27,19 +17,7 @@ END
 
 IF
 PartyHasItem("Sanparc")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanparc") 
@@ -47,19 +25,7 @@ END
 
 IF
 PartyHasItem("Sanamul")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanamul")
@@ -67,19 +33,7 @@ END
 
 IF
 PartyHasItem("Sanhamm")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanhamm")
@@ -87,19 +41,7 @@ END
 
 IF
 PartyHasItem("Sanarmm")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanarmm")
@@ -107,19 +49,7 @@ END
 
 IF
 PartyHasItem("Sanarmb")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanarmb")
@@ -127,19 +57,7 @@ END
 
 IF
 PartyHasItem("Sanring")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanring")
@@ -147,19 +65,7 @@ END
 
 IF
 PartyHasItem("Sanrin2")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanrin2")
@@ -167,19 +73,7 @@ END
 
 IF
 PartyHasItem("CVMysclk")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("CVMysclk")
@@ -187,19 +81,7 @@ END
 
 IF
 InMyArea("Pellig")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 ActionOverride("Pellig",EscapeArea())
@@ -208,19 +90,7 @@ END
 
 IF
 PartyHasItem("Sanhamy")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("Sanhamy")
@@ -228,19 +98,7 @@ END
 
 IF
 PartyHasItem("CVMidshi")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("CVMidshi")
@@ -248,19 +106,7 @@ END
 
 IF
 PartyHasItem("CVMybelt")
-OR(12)
-Global("SandrahJoined","GLOBAL",2)
-Global("SandrahJoined","GLOBAL",3)
-Global("SandrahJoined","GLOBAL",4)
-Global("SandrahJoined","GLOBAL",44)
-Global("SandrahJoined","GLOBAL",5)
-Global("SandrahJoined","GLOBAL",7)
-Global("SandrahJoined","GLOBAL",15)
-Global("SandrahJoined","GLOBAL",16)
-Global("SandrahJoined","GLOBAL",20)
-Global("SandrahJoined","GLOBAL",52)
-Global("SandrahJoined","GLOBAL",25)
-Global("SandrahJoined","GLOBAL",60)
+!Global("SandrahJoined","GLOBAL",1)
 THEN
 RESPONSE #100
 TakePartyItem("CVMybelt")
@@ -301,14 +147,4 @@ RESPONSE #100
 ChangeEnemyAlly("CVJenlig",PC)
 SetGlobal("JenMadEnemy","GLOBAL",0)
 END
-
-//Drizzt Repair
-
-IF
-HasItem("F_Empty",Player1)
-THEN
-RESPONSE #100
-ActionOverride(Player1,DestroyItem("F_Empty"))
-END
-
 

@@ -561,6 +561,14 @@ DO~SetGlobal("JenWhiteB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli~(Hiss) Concepts of Prime creatures offen differ from Astral Plane, Jen'lig learn difference every day.~
 ==IF_FILE_EXISTS V#1whib~Naga want to guard and protect - whatever may be their subject. Githyanki seem to be a little more manlike, they protect their own and fight the alien. Anyway, time to move on.~EXIT
 
+CHAIN
+IF~Global("JenBaeloB","LOCALS",0) InParty("Baeloth")~THEN BJenli WhiteB
+~(Hiss), not look like this, darkling. ~
+DO~SetGlobal("JenBaeloB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
+==BaelothJ~You would have made an interesting addition to the Black Pits, githyanki.~
+==BJenli~Children of Gith long have freed themselves from slavery - darkling not even has power of mindflayer.~
+==BaelothJ~Fine, fine, thus is the spirit that makes fights sooo interesting. Who needs unspirited slaves, we need true fighters...~
+==BJenli~You want true fighter (Hiss). May get what you want faster than desire.~DO~ReallyForceSpell("Baeloth",PSIONIC_PROJECT_FORCE) ~EXIT
 
 CHAIN
 IF~RandomNum(6,1)~THEN  BJenli Random1

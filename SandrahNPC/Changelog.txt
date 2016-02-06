@@ -10,5 +10,6 @@ Revised dependecies on other mega mods
 Removed Ajantis Crossmod
 Removed RE Crossmod
 
-Added Neera, Dorn, Rasaad Crossmod
+Added Neera, Dorn, Rasaad, Baeloth Crossmod
 Added Karlini rescue
+Improved Jen'lig

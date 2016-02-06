@@ -287,7 +287,7 @@ END
 
 IF~~THEN BEGIN Jeneggs3
 SAY~HISS!!~
-=~*As she turns you see that those eggs are of a kind you have never seen before on Toril. They are as large as a human skull and encrusted with yellow streaks in the same colour as Jen'lig's scales.~
+=~*As she turns you see that those eggs are of a kind you have never seen before on Toril. They are as large as a human skull and encrusted with yellow streaks in the same colour as Jen'lig's scales.*~
 IF~~THEN REPLY~What sort of eggs are those anyway...you do not consume them but just destroy?~DO~SetGlobal("Goodfight","LOCALS",13)~ GOTO Jeneggs4
 END
 
@@ -299,7 +299,7 @@ IF~~THEN REPLY~You are destroying our...eh...children...eh...our eggs...?~GOTO J
 END
 
 IF~~THEN BEGIN Jeneggs5
-SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy misbreed if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg. Jen'lig and commander not do for breeding.~
+SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy misbreed if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg.  Jen'lig and commander not do for breeding.~
 =~*With an experienced hit of the silver sword she splits the second egg's sturdy shell.*~
 IF~~THEN REPLY~It would have been interesting to see what result we may have produced. Anyway, it probably is better not to know. ~GOTO Jeneggs6
 IF~~THEN REPLY~That is probably the best. ~GOTO Jeneggs6
@@ -372,7 +372,7 @@ IF~Global("SanTazPatrl","GLOBAL",6) ~THEN BEGIN Daelet1
 SAY~(Hiss) One less needle in haystack, Davaeorn.~
 =~And now two needles in haystack have names - Jardak, Sunin. Commander's needle is Sarevok.~
 IF~~THEN REPLY~Sarevok seems somehow be connected to that Iron Throne. Maybe it's where your *needles* can be found as well.~GOTO Daelet2
-IF~~THEN REPLY~We still should be careful, Jen'lig, our foes seem to be quite powerful and influential in Baldur's Gate.~GOTO Daelet2
+IF~~THEN REPLY~We still should be careful, Jen'lig, our foe seem to be quite powerful and influential in Baldur's Gate.~GOTO Daelet2
 END
 
 IF~Global("JenStone","BG3500",1) ~THEN BEGIN StoneGods1
@@ -583,7 +583,7 @@ INTERJECT_COPY_TRANS Husam 0 JenHintJard
 
 INTERJECT SUNIN 0 SuninMeetJen
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~You were with murderers of Kastya, the wounded sword bearer. You tell where sword is.~
-==Sunin IF~InParty("CVJenlig")~THEN~Damned, you never give up! I warned Semaj not to mingle with a kin who are fearsome and tireless foes who don’t know when to quit.~
+==Sunin IF~InParty("CVJenlig")~THEN~Damned, you never give up! I warned Semaj not to mingle with a kin who are fearsome and tireless foe who don’t know when to quit.~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~That name of thief? Semaj. Where is that man? Speak your last word, mammal.~
 ==Sunin IF~InParty("CVJenlig")~THEN~Ha, he's chosen his company well, that conjurer. Even you will not be able to touch Sarevok's adjutant. You will not even survive the current encounter, lizard woman.~
 END SUNIN 1
