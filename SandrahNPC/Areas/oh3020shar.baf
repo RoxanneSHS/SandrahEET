@@ -1,0 +1,8 @@
+IF
+Global("SanRabb","oh3020",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanRabb","oh3020",1)
+CreateCreature("cvshar1",[825.2100],8)
+END

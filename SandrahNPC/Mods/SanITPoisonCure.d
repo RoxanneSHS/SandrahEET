@@ -1,4 +1,4 @@
-EXTEND_TOP Lothan 1 #2
+EXTEND_TOP Lothan 1 #1
 IF~ Global("CVLotPlot","GLOBAL",0)InParty("CVSandr")~ THEN REPLY ~ I have the Sword Coast's most experienced healer in my party, scum. Your little intrigues cannot threated me.~GOTO 3
 END
 
@@ -37,6 +37,10 @@ END
 ++~As long as there is a solid chance to avoid the blackmail we should take it. Let's consult Thalantyr immediately.~DO~ SetGlobal("CVLotPlot","GLOBAL",3)~  EXIT
 
 EXTEND_TOP Thalan 35 #3
+IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr")~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
+END
+
+EXTEND_TOP Thalan 1 #3
 IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr")~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
 END
 

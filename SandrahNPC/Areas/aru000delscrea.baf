@@ -18,3 +18,12 @@ RESPONSE #100
 SetGlobal("SanJoin","BG1000",1)
 ActionOverride("CVSandr",MoveToObject(Player1))
 END
+
+IF
+Global("GoShand","BG1000",1)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("GoShand","BG1000",2)
+ActionOverride("shandal2",EscapeAreaDestroy(55))
+END

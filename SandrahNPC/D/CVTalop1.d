@@ -146,6 +146,7 @@ END
 CHAIN
 IF~Global("SantalosDec","GLOBAL",2)~ THEN CVTalop1 IslVis1
 ~ One who quarrels with the Storm Lord is ill advised to go far out to sea, my silly little Mystra priestress!!~
+DO~SetGlobal("SantalosDec2","ar9pba",1)~
 ==CVSandrJ~Always a pleasure to meet Talos' disciples. It is  a good training for me and my friends to fight your stupid hordes time and time again.~
 ==CVTalop1~You have underestimated and angered the Lord of Destruction before. You were idiotic enough to come out here where Umberlee and Talos are strong and the servant of the Weave is weak.~
 ==CVSandrJ~Mystra is as strong out here as are those who follow her. Before you go on threatening us endlessly tell us if your visit has any purpose other than to receive a bloody nose for you and your croonies?~

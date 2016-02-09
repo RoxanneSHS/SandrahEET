@@ -5355,15 +5355,14 @@ IF WEIGHT #-999 ~ InParty("CVSandr")
         Global("Evilsh","GLOBAL",1)
         Global("Goodsh","GLOBAL",1)~ THEN BEGIN Punish
 SAY ~It is an odd place, to be sure. Teleportations are affected most drastically in effect trapping the occasional passing mage. Those that are there will find their way off in time. Those that are not there anymore have found their own way off. I think you will agree that the ones that you met were not inclined to work together and effect their own release. An excellent judge of character in a supposedly natural phenomenon, wouldn't you say? I must be off. Fare ye well. ~
-IF ~~ THEN DO ~
-        	TakePartyItem("CLCK22")
+IF ~~ THEN DO ~ TakePartyItem("CLCK22")
                 TakePartyItem("MISC2H")
                 AddexperienceParty(900)
                 ForceSpell(Myself,WIZARD_FLAME_ARROW)
+                DisplayStringWait(Myself,@137)
                 ForceSpell(Myself,WIZARD_AGANNAZAR_SCORCHER)
-		ForceSpell(Myself,WIZARD_LIGHTNING_BOLT)
-		DisplayStringWait(Myself,@137)
-               ~EXIT
+                SetGlobal("GoShand","BG1000",1)
+		ForceSpell(Myself,WIZARD_LIGHTNING_BOLT) ~EXIT
 
 END
 END

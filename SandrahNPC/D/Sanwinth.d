@@ -12,7 +12,7 @@ DO~ SetGlobal("Formedcloth","GLOBAL",8)~
 == SANWINTH ~ We had to expect that. Your involvement and poor Khalindra's fate were too prominent to hide it very long. The assault on the Bhaal temple could not remain unnoticed.~
 == GORION ~ None of the spawns we have will suffer the fate foreseen by those hunters. Just look at them and know that the dead villain will not succeed as long as we three can prevent it.~
 == SANWINTH ~ Sure. But let Elminster brief us with his news now. Who is it that is after us?~
-== ELMINSDR~ foe are various and of different types and graveness in danger.~
+== ELMINSDR~ Foe are various and of different types and graveness in danger.~
 == GORION ~ Of course the fanatics that want to destroy any trace of the fallen god in fear of his prophesized return. ~
 == SANWINTH ~ And his followers, as they have not seized to exist. They want to preserve his spawns, but we all do not want to imagine the terrible aim they have. To ressurect the god of murder.~
 == ELMINSDR~ Right thou art both. And we kneweth those foe already and they are obvious. I talk today of more dangerous powers. There are those who want to get hold of a spawn because of the inherit power he or she will be able to reach when grown. Those persuers do not care for Bhaal at all, they want to create a mighty weapon that will act on their will and command.~

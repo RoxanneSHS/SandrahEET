@@ -3576,6 +3576,7 @@ THEN
 RESPONSE #100
 SetGlobal("OrcPrison","GLOBAL",13)
 EraseJournalEntry(@186)
+EraseJournalEntry(@955)
 END
 
 IF
@@ -3994,7 +3995,7 @@ END
 // Return to Candlekeep
 IF
 Global("SanCandlOgr","LOCALS",0)
-PartyHasItem("DW#OGscr")
+PartyHasItem("CVOGscr")
 !AreaCheck("ar12pb")
 THEN
 RESPONSE #100

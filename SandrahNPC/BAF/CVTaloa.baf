@@ -8,26 +8,27 @@ ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
 ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
 ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
 ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)
-SetGlobalTimer("poisoner","GLOBAL",FOUR_MINUTES)
-SetGlobalTimer("fearme","GLOBAL",14)
-SetGlobalTimer("prismatic","GLOBAL",SIX_MINUTES)
+SetGlobalTimer("poisoner","LOCALS",FOUR_MINUTES)
+SetGlobalTimer("fearme","LOCALS",14)
+SetGlobalTimer("prismatic","LOCALS",SIX_MINUTES)
 SetGlobal("preptime","LOCALS",1)
 END
 
 IF
-Global("daudeath","GLOBAL",0)
+Global("daudeath","LOCALS",0)
 HPLT(Myself,50)
 THEN
 RESPONSE #100
 ReallyForceSpell(Myself,CLERIC_CURE_CRITICAL_WOUNDS)
 ReallyForceSpell(Myself,WIZARD_STONE_SKIN)
 ReallyForceSpell(Myself,WIZARD_SUN_FIRE)
-SetGlobal("daudeath","GLOBAL",1)
+SetGlobal("daudeath","LOCALS",1)
 END
 
 IF
 Global("fear","LOCALS",0)
-GlobalTimerExpired("fearme","GLOBAL")
+GlobalTimerExpired("fearme","LOCALS")
+See(NearestEnemyOf(Myself))
 THEN
 RESPONSE #100
 ForceSpell(NearestEnemyOf(Myself),WIZARD_NPC_SYMBOL_FEAR)
@@ -37,7 +38,8 @@ END
 
 IF
 Global("prison","LOCALS",0)
-GlobalTimerExpired("poisoner","GLOBAL")
+GlobalTimerExpired("poisoner","LOCALS")
+See(NearestEnemyOf(Myself))
 THEN
 RESPONSE #100
 ReallyForceSpell(NearestEnemyOf(Myself),CLERIC_POISON)
@@ -48,23 +50,24 @@ END
 
 IF
 Global("sphere","LOCALS",0)
-GlobalTimerExpired("prismatic","GLOBAL")
+GlobalTimerExpired("prismatic","LOCALS")
 Range(NearestEnemyOf(Myself),6)
 THEN
 RESPONSE #100
 ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
-SetGlobalTimer("prismatic2","GLOBAL",TWO_ROUNDS)
+SetGlobalTimer("prismatic2","LOCALS",TWO_ROUNDS)
 SetGlobal("sphere","LOCALS",1)
 END
 
 IF
-Global("sphere2","GLOBAL",0)
-GlobalTimerExpired("prismatic2","GLOBAL")
+Global("sphere2","LOCALS",0)
+GlobalTimerExpired("prismatic2","LOCALS")
+See(NearestEnemyOf(Myself))
 THEN
 RESPONSE #100
 ReallyForceSpell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
 ReallyForceSpell(Myself,WIZARD_SUN_FIRE)
-SetGlobal("sphere2","GLOBAL",1)
+SetGlobal("sphere2","LOCALS",1)
 END
 
 IF

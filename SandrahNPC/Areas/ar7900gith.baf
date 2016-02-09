@@ -39,11 +39,19 @@ Global("Umberbowl","GLOBAL",2)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
-CreateCreature("CVTALOW1",[3802.2036],0)
 CreateCreature("CVTALOP1",[4242.2116],1)
+SetGlobal("Umberbowl","GLOBAL",3)
+END
+
+IF
+Global("Umberbowl","GLOBAL",4)
+Global("MoreTalos","BG0900",0)
+THEN
+RESPONSE #100
+SetGlobal("MoreTalos","BG0900",1)
+CreateCreature("CVTALOW1",[3802.2036],0)  
 CreateCreature("CVTALOW1",[4168.1924],2)
 CreateCreature("CVTALOW1",[4112.2095],0)
-SetGlobal("Umberbowl","GLOBAL",3)
 END
 
 IF

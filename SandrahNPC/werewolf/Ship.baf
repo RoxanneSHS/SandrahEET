@@ -1,0 +1,40 @@
+IF
+Clicked([ANYONE])
+Global("DMWWNoKillKaishas","GLOBAL",1)
+PartyHasItem("MISC1C") // Sea Charts
+THEN
+RESPONSE #100
+ActionOverride(Player1,LeaveAreaLUAPanic("AR9PBA","",[2652.777],S))
+ActionOverride(Player1,LeaveAreaLUA("AR9PBA","",[2652.777],S))
+ActionOverride(Player2,LeaveAreaLUA("AR9PBA","",[2673.721],S))
+ActionOverride(Player3,LeaveAreaLUA("AR9PBA","",[2596.665],S))
+ActionOverride(Player4,LeaveAreaLUA("AR9PBA","",[2648.691],S))
+ActionOverride(Player5,LeaveAreaLUA("AR9PBA","",[2660.630],S))
+ActionOverride(Player6,LeaveAreaLUA("AR9PBA","",[2707.656],S))
+SetGlobal("IslandTravel","GLOBAL",1)
+END
+
+IF
+Clicked([ANYONE])
+Dead("KAISHWLF")
+PartyHasItem("MISC1C") // Sea Charts
+THEN
+RESPONSE #100
+ActionOverride(Player1,LeaveAreaLUAPanic("AR9PBA","",[2652.777],S))
+ActionOverride(Player1,LeaveAreaLUA("AR9PBA","",[2652.777],S))
+ActionOverride(Player2,LeaveAreaLUA("AR9PBA","",[2673.721],S))
+ActionOverride(Player3,LeaveAreaLUA("AR9PBA","",[2596.665],S))
+ActionOverride(Player4,LeaveAreaLUA("AR9PBA","",[2648.691],S))
+ActionOverride(Player5,LeaveAreaLUA("AR9PBA","",[2660.630],S))
+ActionOverride(Player6,LeaveAreaLUA("AR9PBA","",[2707.656],S))
+SetGlobal("IslandTravel","GLOBAL",1)
+END
+
+IF
+Clicked([ANYONE])
+!PartyHasItem("MISC1C") // Sea Charts
+THEN
+RESPONSE #100
+DisplayString(Myself,@01) 
+END
+

@@ -1814,6 +1814,10 @@ SAY NAME1 Setta
 SAY NAME2 Setta
 END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dw#cut1.bcs~ THEN BEGIN
+COMPILE ~SandrahNPC/werewolf~   USING  ~SandrahNPC/werewolf/english.tra~
+END
+
 COMPILE 
 ~SandrahNPC/Mods/CVSafgua.d~
 ~SandrahNPC/Mods/shout.baf~
@@ -3359,159 +3363,74 @@ SAY NAME1 Yeti
 SAY NAME2 Yeti
 END
 
-COPY ~SandrahNPC/Misc/Sangoris.bmp~ ~override/Sangoris.bmp ~
-COPY ~SandrahNPC/Misc/B7S.bmp~ ~override/B7S.bmp ~
-COPY ~SandrahNPC/Misc/CVentar.bmp~ ~override/CVentar.bmp ~
-COPY ~SandrahNPC/Misc/CVsandL.bmp~ ~override/CVsandL.bmp ~
-COPY ~SandrahNPC/Misc/CVsands.bmp~ ~override/CVsands.bmp ~
-COPY ~SandrahNPC/Misc/CVsandE.bmp~ ~override/CVsandE.bmp ~
-COPY ~SandrahNPC/Misc/CVSilv.bmp~ ~override/CVSilv.bmp ~
-COPY ~SandrahNPC/Misc/CVArch.bmp~ ~override/CVArch.bmp ~
-COPY ~SandrahNPC/Misc/R6S.bmp~ ~override/R6S.bmp ~
-COPY ~SandrahNPC/Misc/sukiaS.bmp~ ~override/sukiaS.bmp~
-COPY ~SandrahNPC/Misc/CVTHACB.SPL~ ~override/CVTHACB.SPL~
-COPY ~SandrahNPC/Misc/SanHamCl.SPL~ ~override/SanHamCl.SPL~
-COPY ~SandrahNPC/Misc/CVresto.SPL~ ~override/CVresto.SPL~
-COPY ~SandrahNPC/Misc/CVHaynS.bmp~ ~override/CVHaynS.bmp~
-COPY ~SandrahNPC/Misc/lobos.bmp~ ~override/lobos.bmp~
-COPY ~SandrahNPC/Misc/Mother.bam~ ~override/Mother.bam ~
-COPY ~SandrahNPC/Misc/MotherL.bam~ ~override/MotherL.bam ~
-COPY ~SandrahNPC/Misc/sanwi1.bam~ ~override/sanwi1.bam ~
-COPY ~SandrahNPC/Misc/sanwi2.bam~ ~override/sanwi2.bam ~
-COPY ~SandrahNPC/Misc/sanwi3.bam~ ~override/sanwi3.bam ~
-COPY ~SandrahNPC/Misc/SKELKS.BMP~ ~override/SKELKS.BMP ~
-COPY ~SandrahNPC/Misc/ihamm03.bam~ ~override/ihamm03.bam ~
-COPY ~SandrahNPC/Misc/ghamm01.bam~ ~override/ghamm01.bam ~
-COPY ~SandrahNPC/Misc/chamm03.bam~ ~override/chamm03.bam ~
-COPY ~SandrahNPC/Misc/ichan09.bam~ ~override/ichan09.bam ~
-COPY ~SandrahNPC/Misc/cdgchan.bam~ ~override/cdgchan.bam ~
-COPY ~SandrahNPC/Misc/cvhelbeh.bam~ ~override/cvhelbeh.bam ~
-COPY ~SandrahNPC/Misc/cvtorbeh.bam~ ~override/cvtorbeh.bam ~
-COPY ~SandrahNPC/Misc/WDFish1.bmp~ ~override/WDFish1.bmp~
-COPY ~SandrahNPC/Misc/WDFish2.bmp~ ~override/WDFish2.bmp~
-COPY ~SandrahNPC/Misc/WDFish5.bmp~ ~override/WDFish5.bmp~
-COPY ~SandrahNPC/Misc/cchan09.bam~ ~override/cchan09.bam ~
-COPY ~SandrahNPC/Misc/csanwi1.bam~ ~override/csanwi1.bam ~
-COPY ~SandrahNPC/Misc/csanwi2.bam~ ~override/csanwi2.bam ~
-COPY ~SandrahNPC/Misc/csanwi3.bam~ ~override/csanwi3.bam ~
-COPY ~SandrahNPC/Misc/cvheher1.BAM~ ~override/cvheher1.BAM ~
-COPY ~SandrahNPC/Misc/cvheher2.BAM~ ~override/cvheher2.BAM ~
-COPY ~SandrahNPC/Misc/CVDRA14.BAM~ ~override/CVDRA14.BAM ~
-COPY ~SandrahNPC/Misc/CVBlomap.BAM~ ~override/CVBlomap.BAM ~
-COPY ~SandrahNPC/Misc/CVDRA26.BAM~ ~override/CVDRA26.BAM ~
-COPY ~SandrahNPC/baf/ORC2TR.BCS~ ~override/ORC2TR.BCS~
-COPY ~SandrahNPC/Misc/sanwif.bam~ ~override/sanwif.bam ~
-COPY ~SandrahNPC/Misc/sanakii.BAM~ ~override/sanakii.BAM ~
-COPY ~SandrahNPC/Misc/STDown.BAM~ ~override/STDown.BAM~
-COPY ~SandrahNPC/Misc/sanakak.BAM~ ~override/sanakak.BAM~
-COPY ~SandrahNPC/Misc/cvcatce.BAM~ ~override/cvcatce.BAM~
-COPY ~SandrahNPC/Misc/akagais.bmp~ ~override/akagais.bmp ~
-COPY ~SandrahNPC/Misc/mystp.bmp~ ~override/mystp.bmp~
-COPY ~SandrahNPC/Misc/henniS.bmp~ ~override/henniS.bmp~
-COPY ~SandrahNPC/Misc/TSBLACKL.BMP~ ~override/TSBLACKL.BMP~
-COPY ~SandrahNPC/Misc/Rhant.bmp~ ~override/Rhant.bmp~
-COPY ~SandrahNPC/Misc/hfem10S.BMP~ ~override/hfem10S.bmp~
-COPY ~SandrahNPC/Misc/HlidWS.bmp~ ~override/HlidWS.bmp~
-COPY ~SandrahNPC/Misc/SW1HCM03.BAM~ ~override/SW1HCM03.BAM~
-COPY ~SandrahNPC/Misc/hfem6S.BMP~ ~override/hfem6S.BMP~ 
-COPY ~SandrahNPC/Misc/cvslat.BMP~ ~override/cvslat.BMP~
-COPY ~SandrahNPC/Misc/cvsafgua.BMP~ ~override/cvsafgua.BMP~
-COPY ~SandrahNPC/Misc/cvsafcit.BMP~ ~override/cvsafcit.BMP~
-COPY ~SandrahNPC/Misc/giran.bmp~ ~override/giran.bmp~
-COPY ~SandrahNPC/Misc/CVColle.bmp~ ~override/CVColle.bmp~
-COPY ~SandrahNPC/Misc/coper.bmp~ ~override/coper.bmp~
-COPY ~SandrahNPC/Misc/cvleyg.BMP~ ~override/cvleyg.BMP~
-COPY ~SandrahNPC/Misc/CVXEPHS.BMP~ ~override/CVXEPHS.BMP~
-COPY ~SandrahNPC/Misc/RellrukS.bmp~ ~override/RellrukS.bmp~
-COPY ~SandrahNPC/Misc/SanOrWi.bmp~ ~override/SanOrWi.bmp~
-COPY ~SandrahNPC/Misc/RTShars.bmp~ ~override/RTShars.bmp~
-COPY ~SandrahNPC/Misc/RTMelis.bmp~ ~override/RTMelis.bmp~
-COPY ~SandrahNPC/Misc/CVWDBar7.bmp~ ~override/CVWDBar7.bmp~
-COPY ~SandrahNPC/Misc/CVWDBar4.bmp~ ~override/CVWDBar4.bmp~
-COPY ~SandrahNPC/Misc/Drow1ud.bmp~ ~override/TF053s.bmp~
-COPY ~SandrahNPC/Misc/Drow2ud.bmp~ ~override/ucmgmat.bmp~
-COPY ~SandrahNPC/Jenlig/JenligL.BMP~ ~override/JenligL.bmp~
-COPY ~SandrahNPC/Jenlig/JenligS.BMP~ ~override/JenligS.bmp~
-COPY ~SandrahNPC/Jenlig/JenligE.BMP~ ~override/JenligE.bmp~
-COPY ~SandrahNPC/Jenlig/Mindfl.BMP~ ~override/Mindfl.BMP~
-COPY ~SandrahNPC/Jenlig/CVJenHu1.BMP~ ~override/CVJenHu1.BMP~
-COPY ~SandrahNPC/Jenlig/CVJenpad.BMP~ ~override/CVJenpad.BMP~
+COPY ~SandrahNPC/Misc~ ~override~
 
-COPY ~SandrahNPC/Misc/SANELM.2DA~ ~override/SANELM.2DA~
+COPY ~SandrahNPC/Misc2/Drow1ud.bmp~ ~override/TF053s.bmp~
+COPY ~SandrahNPC/Misc2/Drow2ud.bmp~ ~override/ucmgmat.bmp~
+
+COPY ~SandrahNPC/Misc2/SANELM.2DA~ ~override/SANELM.2DA~
 REPLACE ~99990~ @134
 REPLACE ~99991~ @133
 
-COPY ~SandrahNPC/Misc/Beach3.2DA~ ~override/Beach3.2DA~
+COPY ~SandrahNPC/Misc2/Beach3.2DA~ ~override/Beach3.2DA~
 REPLACE ~ 99992~ @135
 REPLACE ~ 99993~ @136
 
-COPY ~SandrahNPC/Misc/SanTiTr.2DA~ ~override/SanTiTr.2DA~
+COPY ~SandrahNPC/Misc2/SanTiTr.2DA~ ~override/SanTiTr.2DA~
 REPLACE ~ 99996~ @155
 REPLACE ~ 99996~ @155
 
-COPY ~SandrahNPC/Misc/SantowM.2DA~ ~override/SantowM.2DA~
+COPY ~SandrahNPC/Misc2/SantowM.2DA~ ~override/SantowM.2DA~
 REPLACE ~ 99992~ @187
 REPLACE ~ 99993~ @187
 
-COPY ~SandrahNPC/Misc/SanBhl.2DA~ ~override/SanBhl.2DA~
+COPY ~SandrahNPC/Misc2/SanBhl.2DA~ ~override/SanBhl.2DA~
 REPLACE ~ 99992~ @358
 REPLACE ~ 99993~ @358
 
-COPY ~SandrahNPC/Misc/SantowF.2DA~ ~override/SantowF.2DA~
+COPY ~SandrahNPC/Misc2/SantowF.2DA~ ~override/SantowF.2DA~
 REPLACE ~ 99992~ @188
 REPLACE ~ 99993~ @188
 
-COPY ~SandrahNPC/Misc/SANCLO.2DA~ ~override/SANCLO.2DA~
+COPY ~SandrahNPC/Misc2/SANCLO.2DA~ ~override/SANCLO.2DA~
 REPLACE ~99990~ @213
 REPLACE ~99991~ @213
 
-COPY ~SandrahNPC/Misc/ZomHom.2DA~ ~override/ZomHom.2DA~
+COPY ~SandrahNPC/Misc2/ZomHom.2DA~ ~override/ZomHom.2DA~
 REPLACE ~ 99992~ @338
 REPLACE ~ 99993~ @338
 
-COPY ~SandrahNPC/Misc/BG2Nite.2DA~ ~override/BG2Nite.2DA~
+COPY ~SandrahNPC/Misc2/BG2Nite.2DA~ ~override/BG2Nite.2DA~
 REPLACE ~ 99992~ @456
 REPLACE ~ 99993~ @456
 
-COPY ~SandrahNPC/Misc/SharBa.2DA~ ~override/Sharba.2DA~
+COPY ~SandrahNPC/Misc2/SharBa.2DA~ ~override/Sharba.2DA~
 REPLACE ~ 99992~ @350
 REPLACE ~ 99993~ @350
 
-COPY ~SandrahNPC/Misc/Sangift.2DA~ ~override/Sangift.2DA~
+COPY ~SandrahNPC/Misc2/Sangift.2DA~ ~override/Sangift.2DA~
 REPLACE ~ 99992~ @416
 REPLACE ~ 99993~ @416
 
-COPY ~SandrahNPC/Misc/SanMB2.2DA~ ~override/SanMB2.2DA~
+COPY ~SandrahNPC/Misc2/SanMB2.2DA~ ~override/SanMB2.2DA~
 REPLACE ~ 99992~ @520
 REPLACE ~ 99993~ @520
 
-COPY ~SandrahNPC/Misc/VampVis.2DA~ ~override/VampVis.2DA~
+COPY ~SandrahNPC/Misc2/VampVis.2DA~ ~override/VampVis.2DA~
 REPLACE ~ 99992~ @525
 REPLACE ~ 99993~ @525
 
-COPY ~SandrahNPC/Misc/SanUmo.2DA~ ~override/SanUmo.2DA~
+COPY ~SandrahNPC/Misc2/SanUmo.2DA~ ~override/SanUmo.2DA~
 REPLACE ~ 99992~ @576
 REPLACE ~ 99993~ @576
 
-COPY ~SandrahNPC/Misc/CVHaerd.2DA~ ~override/CVHaerd.2DA~
+COPY ~SandrahNPC/Misc2/CVHaerd.2DA~ ~override/CVHaerd.2DA~
 REPLACE ~ 99992~ @740
 REPLACE ~ 99993~ @740
 
 COPY ~SandrahNPC/Jenlig/JenliN1.2DA~ ~override/JenliN1.2DA~
 REPLACE ~ 71020~ @834
 REPLACE ~ 361480~ @834
-
-COPY ~SandrahNPC/Misc/SANTOFE.MOS~ ~override/SANTOFE.MOS~
-COPY ~SandrahNPC/Misc/SANTOMA.MOS~ ~override/SANTOMA.MOS~
-COPY ~SandrahNPC/Misc/SANSCR.MOS~ ~override/SANSCR.MOS~
-COPY ~SandrahNPC/Misc/beach3.MOS~ ~override/beach3.MOS~
-COPY ~SandrahNPC/Misc/ZOMHOM.MOS~ ~override/ZOMHOM.MOS~
-COPY ~SandrahNPC/Misc/SHARBA.MOS~ ~override/SHARBA.MOS~
-COPY ~SandrahNPC/Misc/SANBHL.MOS~ ~override/SANBHL.MOS~
-COPY ~SandrahNPC/Misc/Sangift.MOS~ ~override/Sangift.MOS~
-COPY ~SandrahNPC/Misc/BG2Nite.MOS~ ~override/BG2Nite.MOS~
-COPY ~SandrahNPC/Misc/sanumo.MOS~ ~override/sanumo.MOS~
-COPY ~SandrahNPC/Misc/CVHaerd.MOS~ ~override/CVHaerd.MOS~
 
 COPY ~SandrahNPC/ITM/SanRing.itm~ ~override/SanRing.itm~
 SAY NAME1 @01
@@ -4107,157 +4026,13 @@ COPY ~SandrahNPC/ITM/Elmpin.itm~ ~override/Elmpin.itm~
 COPY ~SandrahNPC/ITM/sanmys1.itm~ ~override/sanmys1.itm~
 COPY ~SandrahNPC/ITM/sanmys2.itm~ ~override/sanmys2.itm~
 COPY ~SandrahNPC/ITM/sanmys3.itm~ ~override/sanmys3.itm~
-COPY ~SandrahNPC/Misc/CVProf1.SPL~ ~override/CVProf1.SPL~
-COPY ~SandrahNPC/Misc/CVProf2.SPL~ ~override/CVProf2.SPL~
-COPY ~SandrahNPC/Misc/CVProf3.SPL~ ~override/CVProf3.SPL~  
-COPY ~SandrahNPC/Misc/CVProf4.SPL~ ~override/CVProf4.SPL~
-COPY ~SandrahNPC/Misc/CVProf5.SPL~ ~override/CVProf5.SPL~
-COPY ~SandrahNPC/Misc/CVProf6.SPL~ ~override/CVProf6.SPL~
-COPY ~SandrahNPC/Misc/CVProf7.SPL~ ~override/CVProf7.SPL~
-COPY ~SandrahNPC/Misc/CVProf8.SPL~ ~override/CVProf8.SPL~
-COPY ~SandrahNPC/Misc/CVProf9.SPL~ ~override/CVProf9.SPL~
-COPY ~SandrahNPC/Misc/CVPro10.SPL~ ~override/CVPro10.SPL~
-COPY ~SandrahNPC/Misc/CVPro11.SPL~ ~override/CVPro11.SPL~
-COPY ~SandrahNPC/Misc/CVdexin.SPL~ ~override/CVdexin.SPL~
-COPY ~SandrahNPC/Misc/CVSUNS.SPL~ ~override/CVSUNS.SPL~
-COPY ~SandrahNPC/Misc/CVPRIEX2.SPL~ ~override/CVPRIEX2.SPL~
-COPY ~SandrahNPC/Misc/CVPRIEX3.SPL~ ~override/CVPRIEX3.SPL~
-COPY ~SandrahNPC/Misc/CVPRIEX.SPL~ ~override/CVPRIEX.SPL~
-COPY ~SandrahNPC/Misc/sanmys1.spl~ ~override/sanmys1.spl~
-COPY ~SandrahNPC/Misc/sanmys2.spl~ ~override/sanmys2.spl~
-COPY ~SandrahNPC/Misc/sanmys3.spl~ ~override/sanmys3.spl~
-COPY ~SandrahNPC/Misc/sanlive.spl~ ~override/sanlive.spl~
-COPY ~SandrahNPC/Misc/SPPR712C.BAM~ ~override/SPPR712C.BAM~
-COPY ~SandrahNPC/Misc/sanhand.spl~ ~override/sanhand.spl~
-COPY ~SandrahNPC/Misc/SPPR103C.BAM~ ~override/SPPR103C.BAM~
-COPY ~SandrahNPC/Misc/sanbook.bam~ ~override/sanbook.bam~
-COPY ~SandrahNPC/Misc/cebook.bam~ ~override/cebook.bam~
-COPY ~SandrahNPC/Misc/sangaz1.bam~ ~override/sangaz1.bam~
-COPY ~SandrahNPC/ITM/SanParc.bam~ ~override/SanParc.bam~
-COPY ~SandrahNPC/ITM/cvfarkpa.bam~ ~override/cvfarkpa.bam~
-COPY ~SandrahNPC/ITM/AGIBTS02.bam~ ~override/AGIBTS02.bam~
-COPY ~SandrahNPC/ITM/AGGBTS01.bam~ ~override/AGGBTS01.bam~
-COPY ~SandrahNPC/ITM/AGDBTS02.bam~ ~override/AGDBTS02.bam~
-COPY ~SandrahNPC/Misc/ImoenL.bmp~ ~override/ImoenL.bmp~
-COPY ~SandrahNPC/Misc/ImoenS.bmp~ ~override/ImoenS.bmp~
-COPY ~SandrahNPC/Misc/ImoenM.bmp~ ~override/ImoenM.bmp~
-COPY ~SandrahNPC/Misc/NImoenL.bmp~ ~override/NImoenL.bmp~
-COPY ~SandrahNPC/Misc/NImoenM.bmp~ ~override/NImoenM.bmp~
-COPY ~SandrahNPC/Misc/NImoenS.bmp~ ~override/NImoenS.bmp~
-COPY ~SandrahNPC/Misc/Jaheirs.BMP~ ~override/Jaheirs.bmp~
-COPY ~SandrahNPC/Misc/JaheirL.BMP~ ~override/JaheirL.bmp~
-COPY ~SandrahNPC/Misc/JaheirM.BMP~ ~override/JaheirM.bmp~
-COPY ~SandrahNPC/Misc/NJaheirL.BMP~ ~override/NJaheirL.bmp~
-COPY ~SandrahNPC/Misc/NJaheirm.BMP~ ~override/NJaheirm.bmp~
-COPY ~SandrahNPC/Misc/NJaheirs.BMP~ ~override/NJaheirs.bmp~
-COPY ~SandrahNPC/Misc/SUFinchM.BMP~ ~override/SUFinchM.bmp~
-COPY ~SandrahNPC/Misc/SUFinchS.BMP~ ~override/SUFinchS.bmp~
-COPY ~SandrahNPC/Misc/BranweM.bmp~ ~override/BranweM.bmp~
-COPY ~SandrahNPC/Misc/BranweS.bmp~ ~override/BranweS.bmp~
-COPY ~SandrahNPC/Misc/NedwicM.bmp~ ~override/NedwicM.bmp~
-COPY ~SandrahNPC/Misc/Nedwics.bmp~ ~override/Nedwics.bmp~
-COPY ~SandrahNPC/Misc/capholg.BMP~ ~override/capholg.BMP~
-COPY ~SandrahNPC/Misc/traviS.bmp~ ~override/traviS.bmp~
-COPY ~SandrahNPC/Misc/ShartelM.bmp~ ~override/ShartelM.bmp~
-COPY ~SandrahNPC/Misc/ShartelS.bmp~ ~override/ShartelS.bmp~
-COPY ~SandrahNPC/Misc/sangith.bmp~ ~override/sangith.bmp~
-COPY ~SandrahNPC/Misc/cvtalos.bmp~ ~override/cvtalos.bmp~
-COPY ~SandrahNPC/Misc/imofurc.bam~ ~override/imofurc.bam~
-COPY ~SandrahNPC/Misc/sanheal.BAM~ ~override/sanheal.BAM~
-COPY ~SandrahNPC/Misc/Dynaheil.bmp~ ~override/Dynaheil.bmp~
-COPY ~SandrahNPC/Misc/orcgeneS.bmp~ ~override/orcgeneS.bmp~
-COPY ~SandrahNPC/Misc/Dynaheis.bmp~ ~override/Dynaheis.bmp~
-COPY ~SandrahNPC/Misc/telbens.bmp~ ~override/telbens.bmp~
-COPY ~SandrahNPC/Misc/Naliass.bmp~ ~override/Naliass.bmp~
-COPY ~SandrahNPC/Misc/NMazzys.bmp~ ~override/tb#mazps.bmp~
-COPY ~SandrahNPC/Misc/NMazzym.bmp~ ~override/tb#mazpl.bmp~
-COPY ~SandrahNPC/Misc/orcboy.bmp~ ~override/orcboy.bmp~
-COPY ~SandrahNPC/Misc/sansuwls.bmp~ ~override/sansuwls.bmp~
-COPY ~SandrahNPC/Misc/MYSTS.BMP~ ~override/MYSTS.BMP~
-COPY ~SandrahNPC/Misc/Sanhenri.BAM~ ~override/Sanhenri.BAM~
-COPY ~SandrahNPC/Misc/Sanwd3i.BAM~ ~override/Sanwd3i.BAM~
-COPY ~SandrahNPC/Misc/Sanwd4i.BAM~ ~override/Sanwd4i.BAM~
-COPY ~SandrahNPC/Misc/cvdra13.BAM~ ~override/cvdra13.BAM~
-COPY ~SandrahNPC/Misc/Sanwd5i.BAM~ ~override/Sanwd5i.BAM~
-COPY ~SandrahNPC/Misc/Sanwd3.BAM~ ~override/Sanwd3.BAM~
-COPY ~SandrahNPC/Misc/Sanwd4.BAM~ ~override/Sanwd4.BAM~
-COPY ~SandrahNPC/Misc/Sanwd5.BAM~ ~override/Sanwd5.BAM~
-COPY ~SandrahNPC/Misc/wdclk1.BAM~ ~override/wdclk1.BAM~
-COPY ~SandrahNPC/Misc/AGIWNG01.BAM~ ~override/AGIWNG01.BAM~
-COPY ~SandrahNPC/Misc/wdclk1i.BAM~ ~override/wdclk1i.BAM~
-COPY ~SandrahNPC/Misc/wdclk2.BAM~ ~override/wdclk2.BAM~
-COPY ~SandrahNPC/Misc/wdclk2i.BAM~ ~override/wdclk2i.BAM~
-COPY ~SandrahNPC/Misc/sanakji.BAM~ ~override/sanakji.BAM~
-COPY ~SandrahNPC/Misc/sanakjo.BAM~ ~override/sanakjo.BAM~
-COPY ~SandrahNPC/Misc/montees.BMP~ ~override/montees.BMP~
-COPY ~SandrahNPC/Misc/CSHLD23.BAM~ ~override/CSHLD23.BAM~
-COPY ~SandrahNPC/Misc/CVPOTNGI.bmp~ ~override/CVPOTNGI.bmp~
-COPY ~SandrahNPC/Misc/PLANGARD.BAM~ ~override/PLANGARD.BAM~
-COPY ~SandrahNPC/Misc/sanakj1.BAM~ ~override/sanakj1.BAM~
-COPY ~SandrahNPC/Misc/sanakj2.BAM~ ~override/sanakj2.BAM~
-COPY ~SandrahNPC/Misc/SanSuWPs.bmp~ ~override/SanSuWPs.bmp~
-COPY ~SandrahNPC/Misc/shaorc1.bmp~ ~override/shaorc1.bmp~
-COPY ~SandrahNPC/Misc/CVRingo.bmp~ ~override/CVRingo.bmp~
-COPY ~SandrahNPC/Misc/cvizzyS.BMP~ ~override/cvizzyS.bmp~
-COPY ~SandrahNPC/Misc/OrcPrk1.BAM~ ~override/OrcPrk1.BAM~
-COPY ~SandrahNPC/Misc/OrcPrk2.BAM~ ~override/OrcPrk2.BAM~
-COPY ~SandrahNPC/Misc/CVTRAVMO.BAM~ ~override/CVTRAVMO.BAM~
-COPY ~SandrahNPC/Misc/IBOOK93.BAM~ ~override/IBOOK93.BAM~
-COPY ~SandrahNPC/Misc/AAITM003.BAM~ ~override/AAITM003.BAM~
-COPY ~SandrahNPC/Misc/ISTAFM5.BAM~ ~override/ISTAFM5.BAM~
-COPY ~SandrahNPC/Misc/NYMPB.BAM~ ~override/NYMPB.BAM~
-COPY ~SandrahNPC/Misc/ALCHRAS.bmp~ ~override/ALCHRAS.BMP~
-COPY ~SandrahNPC/Misc/cvshajwl.BAM~ ~override/cvshajwl.BAM~
-COPY ~SandrahNPC/Misc/shaugua.BMP~ ~override/shaugua.BMP~
-COPY ~SandrahNPC/Misc/TEVENS.BMP~ ~override/TEVENS.BMP~
-COPY ~SandrahNPC/Misc/ISHLDL01.BAM~ ~override/ISHLDL01.BAM~
-COPY ~SandrahNPC/Misc/IMISC84.BAM~ ~override/IMISC84.BAM~
-COPY ~SandrahNPC/Misc/SanNaWi.BMP~ ~override/SanNaWi.BMP~
-COPY ~SandrahNPC/Misc/ajams.BMP~ ~override/ajams.BMP~
-COPY ~SandrahNPC/Misc/ajabs.BMP~ ~override/ajabs.BMP~
-COPY ~SandrahNPC/Misc/CRChloeM.bmp~ ~override/CRChloeM.bmp~
-COPY ~SandrahNPC/Misc/CRChloeS.bmp~ ~override/CRChloeS.bmp~
-COPY ~SandrahNPC/Misc/sarahs.bmp~ ~override/sarahs.bmp~
-COPY ~SandrahNPC/Misc/sarahm.bmp~ ~override/sarahm.bmp~
-COPY ~SandrahNPC/Misc/drizztl.bmp~ ~override/drizztl.bmp~
-COPY ~SandrahNPC/Misc/drizzts.bmp~ ~override/drizzts.bmp~
-COPY ~SandrahNPC/Misc/CoranL.bmp~ ~override/CoranL.bmp~
-COPY ~SandrahNPC/Misc/CoranS.bmp~ ~override/CoranS.bmp~
-COPY ~SandrahNPC/Misc/AAITM010.BAM~ ~override/AAITM010.BAM~
-COPY ~SandrahNPC/Misc/gararch.bmp~ ~override/gararch.bmp~
-COPY ~SandrahNPC/Misc/NEWRUMO.BAM~ ~override/NEWRUMO.BAM~
-COPY ~SandrahNPC/Misc/NEWSS02.BAM~ ~override/NEWSS02.BAM~
-COPY ~SandrahNPC/Misc/cvdrag.BAM~ ~override/cvdrag.BAM~
-COPY ~SandrahNPC/Misc/cvdrag2.BAM~ ~override/cvdrag2.BAM~
-COPY ~SandrahNPC/Misc/cvdra15.BAM~ ~override/cvdra15.BAM~
-COPY ~SandrahNPC/Misc/cvdra16.BAM~ ~override/cvdra16.BAM~
-COPY ~SandrahNPC/Misc/cvdra17.BAM~ ~override/cvdra17.BAM~
-COPY ~SandrahNPC/Misc/idagg01.BAM~ ~override/idagg01.BAM~
-COPY ~SandrahNPC/Misc/cvdrag11.BAM~ ~override/cvdrag11.BAM~
-COPY ~SandrahNPC/Misc/CVPIRBAG.BAM~ ~override/CVPIRBAG.BAM~
-COPY ~SandrahNPC/Misc/DRECALLC.BAM~ ~override/DRECALLC.BAM~
-COPY ~SandrahNPC/Jenlig/MGITINV.BAM~ ~override/MGITINV.BAM~
-COPY ~SandrahNPC/Misc/CVCoin.BAM~ ~override/CVCoin.BAM~
-COPY ~SandrahNPC/Misc/cvvispi.BAM~ ~override/cvvispi.BAM~
-COPY ~SandrahNPC/Misc/cvdrabre.BAM~ ~override/cvdrabre.BAM~
-COPY ~SandrahNPC/Misc/ShartelM.bmp~ ~override/ShartelM.bmp~
-COPY ~SandrahNPC/Misc/ShartelS.bmp~ ~override/ShartelS.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/ElminS.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/ElmS.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/yselm01.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/ElminS.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/ElmS.bmp~
-COPY ~SandrahNPC/Misc/ElminS.bmp~ ~override/yselm01.bmp~
-COPY ~SandrahNPC/Misc/naerieS.bmp~ ~override/naerieS.bmp~
-COPY ~SandrahNPC/Misc/naerieL.bmp~ ~override/naerieL.bmp~
-COPY ~SandrahNPC/Misc/naerieM.bmp~ ~override/naerieM.bmp~
-COPY ~SandrahNPC/Misc/CVDrud3.bmp~ ~override/CVDrud3.bmp~
-COPY ~SandrahNPC/Misc/CVWDSiam.bmp~ ~override/CVWDSiam.bmp~
-COPY ~SandrahNPC/Misc/IMISC6G.BAM~ ~override/IMISC6G.BAM~
-COPY ~SandrahNPC/Misc/CMISC6G.BAM~ ~override/CMISC6G.BAM~
-COPY ~SandrahNPC/Misc/Fire_3GS.BAM~ ~override/Fire_3GS.BAM~
-COPY ~SandrahNPC/Misc/Firo_4GS.BAM~ ~override/Firo_4GS.BAM~
-COPY ~SandrahNPC/Misc/iwdrock.BAM~ ~override/iwdrock.BAM~
+
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/ElminS.bmp~
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/ElmS.bmp~
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/yselm01.bmp~
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/ElminS.bmp~
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/ElmS.bmp~
+COPY ~SandrahNPC/Misc2/ElminS.bmp~ ~override/yselm01.bmp~
 
 COPY_EXISTING ~dryadha.cre~ ~override/dryadha.cre~
               WRITE_ASCII 0x280 ~hama~
@@ -4601,12 +4376,12 @@ END
 COMPILE ~SandrahNPC/BAF/SHARTEEL.baf~
 COMPILE ~SandrahNPC/BAF/shartd.baf~
 
-COPY ~SandrahNPC/Misc/1xSkieS.bmp~ ~override/1xSkieS.bmp~
-COPY ~SandrahNPC/Misc/1xSkieS.bmp~ ~override/SkieS.bmp~
-COPY ~SandrahNPC/Misc/1xSkieM.bmp~ ~override/1xSkieM.bmp~
-COPY ~SandrahNPC/Misc/1xSkieM.bmp~ ~override/SkieM.bmp~
-COPY ~SandrahNPC/Misc/1xSkieL.bmp~ ~override/1xSkieL.bmp~
-COPY ~SandrahNPC/Misc/1xSkieL.bmp~ ~override/SkieL.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieS.bmp~ ~override/1xSkieS.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieS.bmp~ ~override/SkieS.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieM.bmp~ ~override/1xSkieM.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieM.bmp~ ~override/SkieM.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieL.bmp~ ~override/1xSkieL.bmp~
+COPY ~SandrahNPC/Misc2/1xSkieL.bmp~ ~override/SkieL.bmp~
 
 APPEND
 ~Animate.ids~ ~0xE800 ORC_MELEE1~
@@ -5148,8 +4923,6 @@ SAY NAME2 Pelligram
 COPY ~SandrahNPC/Pellig/pellig2.cre~ ~override/pellig2.cre~
 SAY NAME1 Pelligram
 SAY NAME2 Pelligram
-COPY ~SandrahNPC/Misc/F0749L.bmp~ ~override/F0749L.bmp~
-COPY ~SandrahNPC/Misc/F0749s.bmp~ ~override/F0749s.bmp~
 
 COPY ~SandrahNPC/Pellig/saneagl.cre~ ~override/saneagl.cre~
 SAY NAME1 Araxias
@@ -5805,7 +5578,6 @@ COPY_EXISTING ~ar1005.are~ ~override/ar1005.are~
 COPY ~SandrahNPC\CRE/CVVicSis.CRE~ ~override\CVVicSis.CRE~
 SAY NAME1 @813
 SAY NAME2 @813
-COPY ~SandrahNPC/Misc/CVVicSis.bmp~ ~override/CVVicSis.bmp~
 COPY ~SandrahNPC/ITM/CVVicSis.ITM~ ~override/CVVicSis.ITM~
 SAY NAME1 @814
 SAY NAME2 @814
@@ -5823,10 +5595,10 @@ EXTEND_TOP
 EXTEND_TOP
 ~Barcut01.bcs~ ~SandrahNPC/BAF/Barbcutpell.baf~
 
-COPY ~SandrahNPC/Misc/SharBa2.2DA~ ~override/Sharba2.2DA~
+COPY ~SandrahNPC/Misc2/SharBa2.2DA~ ~override/Sharba2.2DA~
 REPLACE ~ 99992~ @465
 REPLACE ~ 99993~ @465
-COPY ~SandrahNPC/Misc/SHARBA.MOS~ ~override/SHARBA2.MOS~
+COPY ~SandrahNPC/Misc2/SHARBA.MOS~ ~override/SHARBA2.MOS~
 
 COPY_EXISTING ~Sahpr4.cre~ ~override/Sahpr4.cre~
               WRITE_ASCII 0x268 ~None~
@@ -5867,7 +5639,6 @@ COPY ~SandrahNPC/CRE/CVTALOW1.CRE~ ~override/CVTALOW1.CRE~
 COPY ~SandrahNPC/CRE/CVTALOP1.CRE~ ~override/CVTALOP1.CRE~
      SAY NAME1 @697
      SAY NAME2 @697
-COPY ~SandrahNPC/Misc/TALOP1s.bmp~ ~override/TALOP1s.bmp~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BSufinch.DLG~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/BSufinch.d~
@@ -5967,7 +5738,6 @@ SAY NAME2 Dauron
 COMPILE ~SandrahNPC/Mods/CVDauro.d~
 COMPILE ~SandrahNPC/Mods/CVDauro.baf~
 COMPILE ~SandrahNPC/Mods/CVDauroDem.d~
-COPY ~SandrahNPC/Misc/CVdauros.bmp~ ~override/CVdauros.bmp~
 EXTEND_TOP ~ar30pb.bcs~ ~SandrahNPC/Mods/ar30pbdauro.baf~
 PRINT ~ BGQE Quest pack detected - Dauros demon hunt added~
 END ELSE BEGIN
@@ -6115,11 +5885,10 @@ EXTEND_TOP ~CVSandra.bcs~ ~SandrahNPC/Mods/PSModSanEvents.baf~
 COPY ~SandrahNPC/CRE/CVMyMe.CRE~ ~override/CVMyMe.CRE~
      SAY NAME1 @717
      SAY NAME2 @717
-COPY ~SandrahNPC/Misc/cvMyMe.spl~ ~override/cvMyMe.spl~
+COPY ~SandrahNPC/Misc2/cvMyMe.spl~ ~override/cvMyMe.spl~
      SAY 0xc  @717
      SAY 0x8  @717
      SAY 0x50 @717
-COPY ~SandrahNPC/Misc/cvMyMe.eff~ ~override/cvMyMe.eff~
 COPY_EXISTING ~PSMeli.cre~ ~override/PSMeli.cre~
               WRITE_ASCII 0x34 ~RTMelis~
 PRINT ~ Planar Sphere Mod detected - Sandrah's Mystra part added~
@@ -6434,7 +6203,6 @@ END
 COPY ~SandrahNPC\CRE/CVCultGi.cre~ ~override\CVCultGi.cre~
 SAY NAME1 Renata
 SAY NAME2 Renata
-COPY ~SandrahNPC/Misc/CVCultGi.bmp~ ~override/CVCultGi.bmp~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Sdnpcsw3.itm~ THEN BEGIN
 COPY ~SandrahNPC/ITM/Sdnpcsw3.itm~ ~override/Sdnpcsw3.itm~
@@ -6460,8 +6228,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~Sola12.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/SolaufSan.d~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Mods/SolaufSan.baf~
-COPY ~SandrahNPC/Misc/DM041S.bmp~ ~override/DM041S.bmp~
-COPY ~SandrahNPC/Misc/DM041L.bmp~ ~override/DM041L.bmp~
 COPY_EXISTING ~UDSola01.CRE~ ~override/UDSola01.CRE~
               ~UDSola02.CRE~ ~override/UDSola02.CRE~
               ~Sola10.CRE~ ~override/Sola10.CRE~
@@ -7047,7 +6813,6 @@ COMPILE  ~SandrahNPC/Mods/cvpsis.baf~
 COPY ~SandrahNPC/Cre/cvpsis.cre~ ~override/cvpsis.cre~
 SAY NAME1 @868
 SAY NAME2 @868
-COPY ~SandrahNPC/Misc/deadbook.bam~ ~override/deadbook.bam~
 COPY ~SandrahNPC/Kit/cvpsis.eff~ ~override/cvpsis.eff~
 COPY ~SandrahNPC/Kit/cvpsis.spl~ ~override/cvpsis.spl~
      SAY 0xc  @868
@@ -7750,7 +7515,7 @@ SAY NAME1 @574
 SAY NAME2 @574
 SAY DESC @575
 
-COPY ~SandrahNPC/Misc/SharBa3.2DA~ ~override/Sharba3.2DA~
+COPY ~SandrahNPC/Misc2/SharBa3.2DA~ ~override/Sharba3.2DA~
 REPLACE ~ 99992~ @781
 REPLACE ~ 99993~ @781
 
@@ -7860,7 +7625,7 @@ COMPILE
 ~SandrahNPC/ToB/CVRtFPe.baf~
 ~SandrahNPC/ToB/RTFGone.baf~
 
-COPY ~SandrahNPC/Misc/CVRtf.2DA~ ~override/CVRtf.2DA~
+COPY ~SandrahNPC/Misc2/CVRtf.2DA~ ~override/CVRtf.2DA~
 REPLACE ~ 99992~ @590
 REPLACE ~ 99993~ @590
 
@@ -7901,6 +7666,7 @@ COMPILE
 ~SandrahNPC/Mods/NeeraSanBG1.d~
 ~SandrahNPC/Mods/RasaadSanBG1.d~
 ~SandrahNPC/Mods/DornSan.d~
+~SandrahNPC/d/Cvshar1.d~
 
 EXTEND_TOP
 ~Neera_.bcs~ ~SandrahNPC/Mods/NeeraBant.baf~
@@ -7989,6 +7755,16 @@ COPY_EXISTING ~ppgithwa.cre~ ~override/ppgithw1.cre~
 WRITE_ASCII 0x280 ~ppgithw1~
 COPY_EXISTING ~ppgithma.cre~ ~override/ppgithm1.cre~
 WRITE_ASCII 0x280 ~ppgithm1~
+COPY_EXISTING ~ogrema.cre~ ~override~
+WRITE_ASCII 0x280 ~ogrema~
+COPY_EXISTING ~ogrema_a.cre~ ~override~
+WRITE_ASCII 0x280 ~ogrema_a~
+COPY_EXISTING ~ogrema_b.cre~ ~override~
+WRITE_ASCII 0x280 ~ogrema_b~
+COPY_EXISTING ~ogrema_c.cre~ ~override~
+WRITE_ASCII 0x280 ~ogrema_c~
+COPY_EXISTING ~ogrema_d.cre~ ~override~
+WRITE_ASCII 0x280 ~ogrema_d~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar3520.ARE~ THEN BEGIN
 COPY_EXISTING ~dragpurp.cre~ ~override/dragpur2.cre~
@@ -8080,6 +7856,9 @@ LPF fj_are_structure
     fj_structure_type = entrance
     fj_name           = Exit4201
   END
+  
+COPY_EXISTING ~bg0020.are~ ~override~
+WRITE_ASCII 0x4cc ~none~ #8
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Valiant.itm~ THEN BEGIN
 COPY ~SandrahNPC/ITM/Valiant.itm~ ~override/Valiant.itm~
@@ -8093,5 +7872,16 @@ ACTION_IF FILE_EXISTS_IN_GAME ~acq17003.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/Karlini.d~
 END
 
+COPY ~SandrahNPC\CRE/cvshar1.cre~ ~override~
+SAY NAME1 Sharlene
+SAY NAME2 Sharlene
+
+COPY ~SandrahNPC/ITM/CVOGscr.itm~ ~override~
+SAY NAME1 Letter
+SAY NAME2 Letter
+SAY DESC @966
+
 EXTEND_TOP
 ~BG5102.bcs~ ~SandrahNPC/Areas/bg5102.baf~
+EXTEND_TOP
+~OH3020.bcs~ ~SandrahNPC/Areas/oh3020shar.baf~

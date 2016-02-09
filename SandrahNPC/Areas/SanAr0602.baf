@@ -7,10 +7,7 @@ Global("SandrahJoined","GLOBAL",6)
 Global("SanItmBG2","GLOBAL",0)
 THEN
 RESPONSE #100
-ActionOverride("CVSandr",CreateItem("Belt08",1,0,0))
 ActionOverride("CVSandr",CreateItem("clck02",1,0,0))
-ActionOverride("CVSandr",CreateItem("scrl56",11,0,0))
-ActionOverride("CVSandr",CreateItem("CMHelm04",1,0,0))
 SetGlobal("SanItmBG2","GLOBAL",3)
 SetGlobal("EntJar1","AR0602",2)
 Continue()

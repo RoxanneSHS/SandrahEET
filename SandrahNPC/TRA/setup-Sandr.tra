@@ -4,9 +4,7 @@
 @03 = ~Sandrah's Ring
 
 This ring was given to Sandrah on her fifteenth birthday by her father in Waterdeep. It has a nearly unreadable inscription that could say: From your loving father E. to Sandrah, my daughter.
-Sandrah will never part from this gift.
-
- Only usable by Sandrah ~
+Sandrah will never part from this gift. ~
 @04 = ~Sandrah's Amulet ~
 @05 = ~Sandrah's Amulet ~
 @06 = ~Sandrah's Amulet
@@ -14,8 +12,7 @@ Sandrah will never part from this gift.
 The amulet belonged to Sandrah's mother who died giving birth to another child. It seems to have great powers granted from Mystra herself.
    STATISTICS: unknown
 
-Equipped Abilities: unknown
-Only usable by Sandrah ~
+Equipped Abilities: unknown~
 @07 = ~Sandrah was born in Waterdeep as the daughter of one of the most famous mages in Faerun. Her mother died when she was one year old when giving birth to another child, whom she never got to know. Her father taught her many of the secrets of Mystra and the lore of the realms when he was at home - which was not often the case. Sandrah has inherited the wandering ways of her father. Currently she follows a vision she saw when secretly looking into her father's crystal shard - and also a mysterious dream that urges her to search for her mother's second child of whom nobody around her dared to speak. ~
 @08 = ~History of Faerun ~
 @09 = ~History of Faerun ~
@@ -479,7 +476,7 @@ A comprehensive plan restored from the notes and orders of the High Sorceresses 
 @235 = ~ There is no possibility to go back this way.~
 @236 = ~ Wounded Orc~
 @237 = ~ UUUAAAH!~
-@238 = ~ Sandrah's Heritage - The second child
+@238 = ~Sandrah's Heritage - The second child
 
 I am convinced by now that Sandrah's and my own stories are entwined. There is a Bhaalspawn in her past, and it looks like my heritage is somehow connected to Bhaal as well. Elminster has been following us around all the time since I had to leave Candlekeep and it was not to oversee his daughter's activities. We will go to Waterdeep and his time I will get some answers from him.~
 @239 = ~ Mystra's Altar~
@@ -703,7 +700,7 @@ Nib Jansen's scroll will guide you to his sky ship that allows you to travel to 
 The famous heroine Midnight was one of the adventurers chosen by Ao to retrieve the stolen tablets of fate. For her heroic deeds the Overgod raised her to godhood herself replacing the slain goddess Mystra whose name she adopted. 
 While still a human woman, Midnight gave birth to a son, the famous mage Elminster, whose daughter - thus Midnight's grand daughter - is your companion and lover Sandrah. The white mythril shield is one of the artifacts from Midnight's human adventuring days.~
 @357 = ~ Tempus Blesses Sandrah~
-@358 = ~ Sandrah's Heritage - The second child
+@358 = ~Sandrah's Heritage - The second child
 
 Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
 
@@ -714,7 +711,7 @@ To save my life from all kinds of persuers, Elminster, Winthrop and Gorion have 
 Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast. 
 
 I am not alone in my task. With Sandrah by my side and with my *sister* Imoen we will succeed to stop Sarevok to become the next God of Murder.~
-@359 = ~ Sandrah's Heritage - The second child
+@359 = ~Sandrah's Heritage - The second child
 
 Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
 It must be me!
@@ -758,36 +755,24 @@ This paper contains dates, shipnames, notes about possible cargo and other detai
 @392 = ~ This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
 
 Statistics:
-Fireflower's true power lies in its ability to do greater damage to creatures susceptible to fire, such as regenerating monsters, cold-based creatures, and undead. It is of +1 enchantment against normal foes.
-
-Usable by:
-Yasraena~
+Fireflower's true power lies in its ability to do greater damage to creatures susceptible to fire, such as regenerating monsters, cold-based creatures, and undead. It is of +1 enchantment against normal foes.~
 @393 = ~ Ironkiss~
 @394 = ~This is Yasraena's enchanted short sword which she calls Ironkiss. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
 
 Statistics:
-The bite of Ironkiss is deep and continues to bleed long after the initial wound is received. It is of +2 enchantment.
-
-Usable by:
-Yasraena~
+The bite of Ironkiss is deep and continues to bleed long after the initial wound is received. It is of +2 enchantment.~
 @395 = ~Yasraena's Necklace~
 @396 = ~This necklace is of delicately carved gold, set with the largest, most perfect ruby you have ever seen.  Yasraena never removes it, and, despite its lack of magical qualities, she seems as attached to it as she is to her swords.~
 @397 = ~Ironkiss +5~
 @398 = ~This is Yasraena's enchanted short sword which she calls Ironkiss. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them. While Yasraena was in Suldanessellar, Divalir upgraded Ironkiss to better equip her for the challenges ahead.
 
 Statistics:
-Ironkiss has become much more deadly while simultaneously defending her life more effectively. Divalir's strong enchantments continually renew Yasraena's life as long as she wields this blade.
-
-Usable by:
-Yasraena~
+Ironkiss has become much more deadly while simultaneously defending her life more effectively. Divalir's strong enchantments continually renew Yasraena's life as long as she wields this blade.~
 @399 = ~Fireflower +5~
 @400 = ~This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them. While Yasraena was in Suldanessellar, Divalir upgraded Fireflower to better equip her for the challenges ahead.
 
 Statistics:
-Fireflower continues to seek the destruction of undead, but it has also been enchanted to deal harshly with demons.  Like Ironkiss, Fireflower guards Yasraena's life.
-
-Usable by:
-Yasraena~
+Fireflower continues to seek the destruction of undead, but it has also been enchanted to deal harshly with demons.  Like Ironkiss, Fireflower guards Yasraena's life.~
 @401 = ~ Knock~
 @402 = ~ Sandrah has gained the ability to knock open locks during her intermezzo with the thief Coran~
 @403 = ~ Captain Resach~
@@ -905,14 +890,14 @@ But that is not true for you. As much as you love your family and your little ho
 Once again in your life the unexpected has happened! You are now the proud father of a little son. Of all the companions you have met on your travels so far, the mother is the one who appeared farthest from such a possibility when you first met her - the wildcat fighter Shar-Teel.
 You know she will be a wonderful mother avoiding all the misdeeds she had suffered from her own childhood for your little boy. According to your agreement you have named the boy *Gorion*. He may not be a lone child for long. ~
 @467 = ~ The cult symbol vibrates~
-@468 = ~ Shauhana's Mysterious Heritage
+@468 = ~Shauhana's Mysterious Heritage
 We have already found several hints that Shauhana's half-orc heritage is complicated. On several occasions now she has been identified as a *Godchild*, just like myself. However neither Bhaal - like in my case - nor Myrkul - the godly father of her own grandfather Ghotal - are responsible here. Who else and how has fathered our companion then?~
-@469 = ~ Shauhana's Mysterious Heritage
+@469 = ~Shauhana's Mysterious Heritage
 
 We have met the blind orcish seer Ghatlenk today and his son Wallrick, who was one of General Ghotal's adjutants. Shauhana has indeed inherited a mighty task from her grandfather - no less than to unite the Clan Orcs once again and to establish a balance of power between them and the southern nations to guarantee peace in the Realms. Her godly blood and our companionship are her instruments for this task.
 We need to travel again into Clan's Land and reunite with Ghatlenk and Wallrick at the crossroad that leads to Sharkta Fai.
 Wallrick reminded Shauhana of Minsc and asked her to make sure he would accompany her to clan's land.~
-@470 = ~ Shauhana's Mysterious Heritage Unveiled
+@470 = ~Shauhana's Mysterious Heritage Unveiled
 Shauhana is the daughter of the warrior god, Arvoreen, named also The Defender because he defends all that is right and good and destroys those who are evil. The orcs know this god by the name of Ilneval.
 Arvoreen and Mystra have been tasked by Ao to re-establish the balance between the major racial nations on Toril. The united Clan Orc's in the northern territories would be a power to ward against the humans of the Sword Coast and of Anm to spread out further and occupying the realms of the elves and orcs any further.~
 @471 = ~ Banelich Death~
@@ -1513,11 +1498,7 @@ Weight: 15
 Speed Factor: 4
 Proficiency Type: Flail/Morningstar
 Type: 1-handed
-Requires: 13 Strength
-Not Usable By:
- Druid
- Mage 
- Thief~
+Requires: 13 Strength~
 @878= ~Bracers of Disintegration~
 @879= ~The simple appearance of these leather gloves belies its power. Once per day the spell disintegrate can be cast by the wearer.
 
@@ -1535,11 +1516,7 @@ Abilities: +5 Magic Resistance
            -1 to casting time of all spells
 Armor Class: 2
 Weight: 12
-Requires: 5 Strength
-Not Usable By:
- Druid 
- Mage
- Kensai~
+Requires: 5 Strength~
 @881= ~Drow Admantine Chain +5
 
 The sturdy craftsmanship of the Drow allows them to design many beautiful yet utilitarian goods. Among these is Drow chain mail, which is so finely wrought that it can be worn under normal clothing without revealing its presence. This and its lightness allow it to be worn by thieves and fighter/mages with few restrictions.
@@ -1550,11 +1527,7 @@ STATISTICS:
 20% Magic Resistance
 Armor Class: 0
 Weight: 12
-Requires: 5 Strength
-Not Usable By:
- Mages
- Druid
- Kensai~
+Requires: 5 Strength~
 @882= ~House Maelither Piwafwi Cloak~
 @883= ~Drow Halberd +3~
 @884= ~Sea Summoning Scroll~
@@ -1733,9 +1706,10 @@ Weight:  4
 Proficiency Type: Scimitar
 Speed Factor:  0
 Type:  1-handed
-Requires: 8 Strength
+Requires: 8 Strength~
+@966 =~Mahrok,
+High though your price is, I will meet it. You will have earned it, though. <CHARNAME> and <PRO_HISHER> allies have proven remarkably able and have survived much already. But you, I am sure, they will not survive.
 
-Not Usable By:
-  Mage
-  Cleric
-  Beast Master  ~
+If you can bring <PRO_HISHER> head to me, the 10,000 gold are yours. And much more besides, perhaps - as you know, I am destined for great things, and I will remember those who have aided me in mortal life.
+
+S. ~

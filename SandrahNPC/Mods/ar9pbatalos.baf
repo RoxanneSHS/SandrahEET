@@ -5,12 +5,19 @@ ReputationGT(Player1,12)
 THEN
 RESPONSE #100
 CreateCreature("CVTALOP1",[3150.1774],4)
+SetGlobal("SantalosDec","GLOBAL",2)
+END
+
+IF
+Global("SantalosDec2","ar9pba",1)
+THEN
+RESPONSE #100
 CreateCreature("CVTALOW1",[3203.1715],5)
 CreateCreature("CVTALOW1",[3160.1607],1)
 CreateCreature("CVTALOW1",[2940.1676],14)
 CreateCreature("CVTALOW1",[2917.1528],15)
 CreateCreature("CVTALOW1",[3079.1459],0)
-SetGlobal("SantalosDec","GLOBAL",2)
+SetGlobal("SantalosDec2","ar9pba",2)
 END
 
 IF

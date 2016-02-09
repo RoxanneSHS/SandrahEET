@@ -1,4 +1,16 @@
 IF
+Global("DMWWOgreAmbush","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("DMWWOgreAmbush","GLOBAL",1)
+ActionOverride("ogrema",MoveBetweenAreas("BG2626",[4743.2930],15))
+ActionOverride("ogrema_a",MoveBetweenAreas("BG2626",[5044.3060],4)
+ActionOverride("ogrema_b",MoveBetweenAreas("BG2626",[4933.2925],2)
+ActionOverride("ogrema_c",MoveBetweenAreas("BG2626",[4602.3194],12)
+ActionOverride("ogrema_d",MoveBetweenAreas("BG2626",[4860.3374],10)
+END
+
+IF
 Global("SanBG1ShauPrev","GLOBAL",2)
 THEN
 RESPONSE #100
