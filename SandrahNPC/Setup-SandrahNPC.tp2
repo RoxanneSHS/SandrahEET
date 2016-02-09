@@ -5599,6 +5599,7 @@ COPY ~SandrahNPC/Misc2/SharBa2.2DA~ ~override/Sharba2.2DA~
 REPLACE ~ 99992~ @465
 REPLACE ~ 99993~ @465
 COPY ~SandrahNPC/Misc2/SHARBA.MOS~ ~override/SHARBA2.MOS~
+COPY ~SandrahNPC/Misc2/SHARBA.MOS~ ~override/SHARBA.MOS~
 
 COPY_EXISTING ~Sahpr4.cre~ ~override/Sahpr4.cre~
               WRITE_ASCII 0x268 ~None~
