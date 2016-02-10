@@ -1,0 +1,47 @@
+IF
+!Allegiance(Myself,ENEMY)
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+Enemy()
+Continue()
+END
+
+IF
+See(NearestEnemyOf(Myself))
+Global("begin","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("begin","LOCALS",1)
+SetGlobalTimer("time2","LOCALS",28)
+ReallyForceSpell(NearestEnemyOf(Myself),LICH_FEAR)
+END
+
+IF
+!GlobalTimerNotExpired("time","LOCALS")
+HPPercentLT(Myself,50)
+HasItem("Potn52",Myself)
+THEN
+RESPONSE #100
+UseItem("Potn52",Myself)
+SetGlobalTimer("time","LOCALS",8)
+END
+
+IF
+Global("begin","LOCALS",1)
+!GlobalTimerNotExpired("time2","LOCALS")
+THEN
+RESPONSE #100
+SetGlobalTimer("time2","LOCALS",28)
+ReallyForceSpell(NearestEnemyOf(Myself),LICH_FEAR)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+EquipMostDamagingMelee()
+Attack(LastSeenBy(Myself))
+END
+
+

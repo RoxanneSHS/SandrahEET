@@ -247,7 +247,6 @@ THEN
 		ActionOverride(LastSeenBy(Myself),RemoveSpell(WIZARD_SIMULACRUM))
 		ActionOverride(LastSeenBy(Myself),RemoveSpell(WIZARD_PROJECT_IMAGE))
 		ActionOverride(LastSeenBy(Myself),RemoveSpell(WIZARD_MISLEAD))
-		ChangeSpecifics(LastSeenBy(Myself),SIMULACRUM)
 		ChangeGender(LastSeenBy(Myself),EXTRA3)
 		ActionOverride(LastSeenBy(Myself),ChangeAIScript("GPMAGE1",CLASS))
 		SpellNoDecRES("SPMISLED",Myself)

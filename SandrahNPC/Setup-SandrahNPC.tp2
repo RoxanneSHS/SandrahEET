@@ -2314,6 +2314,8 @@ END
 
 APPEND ~state.ids~ ~0x8010202D STATE_DISABLED~ UNLESS ~STATE_DISABLED~
 APPEND ~state.ids~ ~0x00000029 STATE_IMMOBILE~ UNLESS ~STATE_IMMOBILE~
+APPEND ~state.ids~ ~0x00400010 STATE_NOT_VISIBLE ~ UNLESS ~STATE_NOT_VISIBLE~
+
 
 ADD_KIT ~CVMystra~
 ~CVMystra               1           1           1           1           0           1           1           1~
@@ -4197,7 +4199,14 @@ REPLACE_CRE_ITEM ~dagg01~ #0 #0 #0 ~NONE~ ~WEAPON2~
 REPLACE_CRE_ITEM ~bull01~ #20 #0 #0 ~NONE~ ~QUIVER1~
 REPLACE_CRE_ITEM ~bull01~ #20 #0 #0 ~NONE~ ~QUIVER2~
 ADD_CRE_ITEM ~scrl77~ #0 #0 #0 ~NONE~ ~inv10~
-BUT_ONLY_IF_IT_CHANGES
+LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
+BUT_ONLY
 
 COPY_EXISTING ~Imoen2.CRE~ ~override/ImoenD.CRE~
 WRITE_SHORT 0x10 0
@@ -4208,7 +4217,14 @@ REPLACE_CRE_ITEM ~dagg01~ #0 #0 #0 ~NONE~ ~WEAPON2~
 REPLACE_CRE_ITEM ~bull01~ #20 #0 #0 ~NONE~ ~QUIVER1~
 REPLACE_CRE_ITEM ~bull01~ #20 #0 #0 ~NONE~ ~QUIVER2~
 ADD_CRE_ITEM ~scrl77~ #0 #0 #0 ~NONE~ ~inv10~
-BUT_ONLY_IF_IT_CHANGES
+LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
+BUT_ONLY
 
 COPY_EXISTING ~Gorion.CRE~ ~override/Gorion.CRE~
 REPLACE_CRE_ITEM ~Godag01~ #0 #0 #0 ~NONE~ ~WEAPON1~
@@ -4263,14 +4279,6 @@ COPY_EXISTING ~kivan10.CRE~ ~override/kivan10.CRE~
  WRITE_ASCII 0x3c ~kivanm~ #8
  WRITE_ASCII 0x260 ~RTFGone~
 END
- 
-COPY_EXISTING ~mazzy8.CRE~ ~override/mazzy8.CRE~
-              ~mazzy9.CRE~ ~override/mazzy9.CRE~
-              ~mazzy11.CRE~ ~override/mazzy11.CRE~
-              ~mazzy12.CRE~ ~override/mazzy12.CRE~
-              ~mazzy15.CRE~ ~override/mazzy15.CRE~
- WRITE_ASCII 0x34 ~NMazzys~ #8
- WRITE_ASCII 0x3c ~NMazzym~ #8
  
 COPY_EXISTING ~F_Drizzt.CRE~ ~override/F_Drizzt.CRE~
               ~c6drizz.CRE~ ~override/c6drizz.CRE~
@@ -4333,15 +4341,7 @@ COPY_EXISTING ~dl#bwn.CRE~ ~override/dl#bwn.CRE~
   BUT_ONLY_IF_IT_CHANGES
 END
 
-ACTION_IF FILE_EXISTS ~B!Gavin.CRE~ THEN BEGIN
-COPY_EXISTING ~B!Gavin.CRE~ ~override/B!Gavin.CRE~
-             ~B!Gav08.CRE~ ~override/B!Gav08.CRE~
-             ~B!Gav13.CRE~ ~override/B!Gav13.CRE~
-   SAY NAME1 Gavin
-   SAY NAME2 Gavin
-   BUT_ONLY_IF_IT_CHANGES
-END
-  
+
 COPY_EXISTING ~Sharte.CRE~ ~override/Sharte.CRE~
               ~Sharte4.CRE~ ~override/Sharte4.CRE~
               ~Sharte6.CRE~ ~override/Sharte6.CRE~
@@ -4351,7 +4351,15 @@ COPY_EXISTING ~Sharte.CRE~ ~override/Sharte.CRE~
  WRITE_BYTE 0x23d 15 //CON
  WRITE_ASCII 0x280 ~Sharteel~
  WRITE_ASCII 0x34 ~shartels~
- WRITE_ASCII 0x3c ~shartelm~
+ WRITE_ASCII 0x3c ~shartell~
+ LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
+BUT_ONLY
 
 ACTION_IF FILE_EXISTS ~ADShar.CRE~ THEN BEGIN
 COPY_EXISTING ~ADShar.CRE~ ~override/ADShar.CRE~
@@ -4360,7 +4368,15 @@ COPY_EXISTING ~ADShar.CRE~ ~override/ADShar.CRE~
  WRITE_BYTE 0x23b 14 // 14 Wis
  WRITE_BYTE 0x23d 15 //CON
  WRITE_ASCII 0x34 ~shartels~
- WRITE_ASCII 0x3c ~shartelm~
+ WRITE_ASCII 0x3c ~shartell~
+  LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
+BUT_ONLY
 END
  
 ACTION_IF FILE_EXISTS ~Sharte12.CRE~ THEN BEGIN
@@ -4370,7 +4386,15 @@ COPY_EXISTING ~Sharte12.CRE~ ~override/Sharte12.CRE~
  WRITE_BYTE 0x23b 14 // 14 Wis
  WRITE_BYTE 0x23d 15 //CON
  WRITE_ASCII 0x34 ~shartels~
- WRITE_ASCII 0x3c ~shartelm~
+ WRITE_ASCII 0x3c ~shartell~
+  LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
+BUT_ONLY
 END
 
 COMPILE ~SandrahNPC/BAF/SHARTEEL.baf~
@@ -4714,7 +4738,7 @@ COMPILE
 ~SandrahNPC/BAF/CVZLord.baf~
 ~SandrahNPC/BAF/CVlotwy.baf~
 ~SandrahNPC/BAF/WDFish4.baf~
-~SandrahNPC/BAF/pirate.baf~
+~SandrahNPC/BAF/cvpirate.baf~
 ~SandrahNPC/Baf/CVDruid1.baf~
 ~SandrahNPC/Jenlig/CVJenlig.baf~  
 ~SandrahNPC/Jenlig/Githcap2.baf~
@@ -5745,7 +5769,7 @@ END ELSE BEGIN
     PRINT ~ BGQE Quest pack not detected - Dauros demon hunt skipped~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~NTPRIHEL.dlg ~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~NTPRIHEL.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/NTPrieheldauro.d~
 END
 
@@ -7886,3 +7910,5 @@ EXTEND_TOP
 ~BG5102.bcs~ ~SandrahNPC/Areas/bg5102.baf~
 EXTEND_TOP
 ~OH3020.bcs~ ~SandrahNPC/Areas/oh3020shar.baf~
+
+

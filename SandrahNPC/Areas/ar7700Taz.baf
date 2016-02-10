@@ -1,4 +1,15 @@
 IF
+Global("PartyCured","GLOBAL",1)
+InMyArea("Lothander")
+GlobalLT("LothanderMove","GLOBAL",31)
+THEN
+RESPONSE #100
+ActionOverride("Lothander",DestroySelf())
+SetGlobal("LothanderMove","GLOBAL",31)
+Continue()
+END
+
+IF
 Dead("tazok")
 Global("Restore","BG0700",0)
 THEN

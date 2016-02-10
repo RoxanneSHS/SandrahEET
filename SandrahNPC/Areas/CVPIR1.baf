@@ -1,7 +1,7 @@
 IF
-Global("GetSwill","GLOBAL",4)
+Global("SanGetSwill","GLOBAL",4)
 THEN
 RESPONSE #100
-SetGlobal("GetSwill","GLOBAL",5)
+SetGlobal("SanGetSwill","GLOBAL",5)
 CreateCreature("capholg",[548.656],0)
 END

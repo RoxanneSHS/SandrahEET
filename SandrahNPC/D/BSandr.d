@@ -539,7 +539,7 @@ IF ~~ THEN REPLY ~ Then this murdered Bashrik must have worked for the good side
 END
 
 IF ~~ THEN BEGIN SanFindWost3
-SAY ~ If we want to get involved, we may try to contact the clerics Bashrik was working with, this Wostok, who must be here in Beregost somewhere.~
+SAY ~ If we want to get involved, we may try to contact the clerics Bashrik was working with, this Wostok, who must be here in Baldur's Gate somewhere.~
 IF ~~ THEN REPLY ~ There was something in this journal, I recall. We should ask for Wostok in a temple.~ DO~ SetGlobal("SanAbbat","LOCALS",2)~ EXIT
 END
 

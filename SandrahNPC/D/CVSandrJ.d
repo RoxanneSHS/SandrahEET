@@ -4701,7 +4701,6 @@ FillSlot(SLOT_AMULET)~
 END
 
 INTERJECT_COPY_TRANS SHARTE 12  SanFight12
-
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ If men are so pathetic, why did you choose only them for your game. Are you afraid to get into a real fight with a strong oponent. ~
 == SHARTE IF ~ InParty("CVSandr") ~THEN ~ Like whom, like you little weekend warrior princess - with your playtoy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ Which means any hobgoblin would scare me more than you do. At least my silk panties are currently as dry as the Calimsha Desert.~
@@ -4714,6 +4713,9 @@ ActionOverride("CVSandr",Attack("Sharteel"))
 SetGlobal("SanShartDuel","GLOBAL",1)
 FillSlot(SLOT_AMULET)~
 END
+
+ADD_STATE_TRIGGER ShartJ 2
+~!InParty("CVSandr")~
 
 //   Firebead     
 INTERJECT_COPY_TRANS FIREBE 1 StrangeScroll1

@@ -5309,6 +5309,7 @@ InParty("SHARTEEL")
 THEN
 RESPONSE #100
 SetGlobal("SanSharInt","GLOBAL",1)
+SetGlobal("X#SharPissed","GLOBAL",12)
 RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)
 END
 
@@ -6693,7 +6694,7 @@ AreaCheck("CVPIR3")
 CombatCounter(0)
 THEN
 RESPONSE #100
-ReallyForceSpellPointRES("spin517r",[340.465])
+ReallyForceSpellPointRES("spin689",[340.465])
 Interact("CVSandr")
 END
 

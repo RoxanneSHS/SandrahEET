@@ -1,6 +1,6 @@
 IF
 GlobalGT("SanSuBH","GLOBAL",18)
-GlobalLT("GetSwill","GLOBAL",4)
+GlobalLT("SanGetSwill","GLOBAL",4)
 Global("CapShip","bg0114",0)
 THEN
 RESPONSE #100
@@ -10,7 +10,7 @@ END
 
 IF
 Global("CapShip","bg0114",1)
-GlobalGT("GetSwill","GLOBAL",3)
+GlobalGT("SanGetSwill","GLOBAL",3)
 THEN
 RESPONSE #100
 SetGlobal("CapShip","bg0114",2)

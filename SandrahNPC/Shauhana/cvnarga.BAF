@@ -473,8 +473,6 @@ IF
 		StateCheck(NearestEnemyOf(Myself),STATE_ILLUSIONS)
 		StateCheck(NearestEnemyOf(Myself),STATE_BLUR)
 		Gender(NearestEnemyOf(Myself),ILLUSIONARY)
-		Specifics(NearestEnemyOf(Myself),SIMULACRUM)
-		Specifics(NearestEnemyOf(Myself),NEEDS_BREACH)
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)

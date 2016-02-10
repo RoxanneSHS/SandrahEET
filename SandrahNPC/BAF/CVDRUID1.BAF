@@ -39,26 +39,16 @@ THEN
 	RESPONSE #30
 		SetGlobal("BPCHASER","LOCALS",0)
 		AttackReevaluate(LastSeenBy(Myself),15)
-	RESPONSE #15
+	RESPONSE #30
 		SetGlobal("BPCHASER","LOCALS",0)
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		ForceSpell(LastSeenBy(Myself),CLERIC_INSECT_PLAGUE) // SPPR517.SPL (Insect Plague)
 		RemoveSpell(CLERIC_INSECT_PLAGUE) // SPPR517.SPL (Insect Plague)
-	RESPONSE #15
-		SetGlobal("BPCHASER","LOCALS",0)
-		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		ForceSpell(LastSeenBy(Myself),CLERIC_ANIMATE_TREE) // SPPR770.SPL (Animate Tree)
-		RemoveSpell(CLERIC_ANIMATE_TREE) // SPPR770.SPL (Animate Tree)
-	RESPONSE #15
+	RESPONSE #30
 		SetGlobal("BPCHASER","LOCALS",0)
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
 		ForceSpell(LastSeenBy(Myself),CLERIC_DOLOROUS_DECAY) // SPPR610.SPL (Dolorous Decay)
 		RemoveSpell(CLERIC_DOLOROUS_DECAY) // SPPR610.SPL (Dolorous Decay)
-	RESPONSE #15
-		SetGlobal("BPCHASER","LOCALS",0)
-		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		ForceSpell(LastSeenBy(Myself),COM_DRUID_ANIMATE_ROCKS) // SPPR615.SPL (Animate Rocks)
-		RemoveSpell(COM_DRUID_ANIMATE_ROCKS) // SPPR615.SPL (Animate Rocks)
 	RESPONSE #10
 		SetGlobal("BPCHASER","LOCALS",0)
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
@@ -455,8 +445,6 @@ IF
 		StateCheck([GOODCUTOFF],STATE_ILLUSIONS)
 		StateCheck([GOODCUTOFF],STATE_BLUR)
 		Gender([GOODCUTOFF],ILLUSIONARY)
-		Specifics([GOODCUTOFF],SIMULACRUM)
-		Specifics([GOODCUTOFF],NEEDS_BREACH)
 	THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
@@ -689,46 +677,6 @@ THEN
 	RESPONSE #100
 		SetGlobal("BPT","LOCALS",6)
 		Spell(LastSeenBy(Myself),CLERIC_INSECT_PLAGUE) // SPPR517.SPL (Insect Plague)
-END
-
-IF
-	ActionListEmpty()
-	HaveSpell(CLERIC_ANIMATE_TREE) // SPPR770.SPL (Animate Tree)
-	!GlobalTimerNotExpired("BPT","LOCALS")
-	!AreaType(DUNGEON)
-	!AreaType(CITY)
-	RandomNumLT(39,29)
-	NumCreatureLT([EVILCUTOFF.0.0.0.0.20],6)
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(LastSeenBy(Myself),CLERIC_ANIMATE_TREE) // SPPR770.SPL (Animate Tree)
-END
-
-IF
-	ActionListEmpty()
-	HaveSpell(COM_DRUID_ANIMATE_ROCKS) // SPPR615.SPL (Animate Rocks)
-	!GlobalTimerNotExpired("BPT","LOCALS")
-	RandomNumLT(40,25)
-	NumCreatureLT([EVILCUTOFF.0.0.0.0.20],6)
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(LastSeenBy(Myself),COM_DRUID_ANIMATE_ROCKS) // SPPR615.SPL (Animate Rocks)
-END
-
-IF
-	ActionListEmpty()
-	HaveSpell(TREANT_SUMMON_TREE) // SPIN462.SPL (Animate Tree)
-	!GlobalTimerNotExpired("BPT","LOCALS")
-	!AreaType(DUNGEON)
-	!AreaType(CITY)
-	RandomNumLT(41,28)
-	NumCreatureLT([EVILCUTOFF.0.0.0.0.20],6)
-THEN
-	RESPONSE #100
-		SetGlobalTimer("BPT","LOCALS",ONE_ROUND)
-		Spell(LastSeenBy(Myself),TREANT_SUMMON_TREE) // SPIN462.SPL (Animate Tree)
 END
 
 IF
