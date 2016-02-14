@@ -3257,7 +3257,7 @@ IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fal
 IF ~ AreaType(CITY) GlobalLT("SanBuySweet1","LOCALS",2) ~THEN REPLY ~ Wait here, a minute, I need to get us something quickly. (You rush into a nearby shop.) ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanBuySweet11
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
 IF~ AreaType(OUTDOOR) Global("Sanhairdo","LOCALS",0)~ THEN REPLY~ (Sandrah has taken off all the scarfs and diadems she normally wears in her stylish hairdo and lets her auburn locks fly free in the wind. As usual you have to stop, stunned by her beauty.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Sanhairdo1
-IF ~ Global("Formedcloth","GLOBAL",9)~ THEN REPLY ~ I am a Bhaalspawn then. Hence my dreams, my powers, the mysterious foe and assassins, Elminster's interest in me - your interest in me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO PidBhaal10
+IF ~ Global("Formedcloth","GLOBAL",9) ~ THEN REPLY ~ I am a Bhaalspawn then. Hence my dreams, my powers, the mysterious foe and assassins, Elminster's interest in me - your interest in me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO PidBhaal10
 IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~ GOTO PidBhaal13
 IF ~ Global("XanDecide","GLOBAL",3) InParty("Xan")~ THEN REPLY ~ Sandrah, my love, we must talk about Xan urgently.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~ Global("rainbFav","LOCALS",0) ~ THEN REPLY ~ Sandrah, what is your favourite colour?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
@@ -3585,7 +3585,7 @@ IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq
 IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fall and we have time for a rest. I long for you, Sandrah.~ GOTO SanNight2Inv
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanPCGavT1
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
-IF ~ Global("Formedcloth","GLOBAL",9)~ THEN REPLY ~ I am a Bhaalspawn then. Hence my dreams, my powers, the mysterious foe and assassins, Elminster's interest in me - your interest in me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO PidBhaal10
+IF ~ Global("Formedcloth","GLOBAL",9) ~ THEN REPLY ~ I am a Bhaalspawn then. Hence my dreams, my powers, the mysterious foe and assassins, Elminster's interest in me - your interest in me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO PidBhaal10
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
 IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~ GOTO PidBhaal13
@@ -4354,9 +4354,6 @@ IF~~THEN BEGIN  SanTiaHel5
 SAY~NO! Have you still not understood. The mad God of Lies is neither my grandfather nor was he the man loved by Midnight. It was Cyric the thief and adventurer who is in my bloodline, not the god he was transformed to.~
 IF~~THEN REPLY~ Yes, sorry. You make that an important point all the time.~EXIT
 END
-
-
-
 
 // Khalindra's Child
 

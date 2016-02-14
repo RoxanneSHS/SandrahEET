@@ -1,65 +1,103 @@
 IF
-	AttackedBy([GOODCUTOFF],DEFAULT)
-	Allegiance(Myself,NEUTRAL)
+  OR(2)
+    StateCheck(Myself,STATE_STONE_DEATH)
+    StateCheck(Myself,STATE_FROZEN_DEATH)
 THEN
-	RESPONSE #100
-		Shout(99)
-		Enemy()
+  RESPONSE #100
+    SmallWait(5)
 END
 
 IF
-	HitBy([GOODCUTOFF],CRUSHING)
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  !GlobalTimerNotExpired("shouted","LOCALS")
 THEN
-	RESPONSE #100
-		Shout(99)
-		Continue()
+  RESPONSE #100
+    Shout(99)
+    SetGlobalTimer("shouted","LOCALS",ONE_ROUND)
+    SmallWait(5)
+    Enemy()
 END
 
 IF
-	Heard([ANYONE],99)
-	Allegiance(Myself,NEUTRAL)
-	!Class(Myself,INNOCENT)
+  HitBy([GOODCUTOFF],CRUSHING)
+  !GlobalTimerNotExpired("shouted","LOCALS")
 THEN
-	RESPONSE #100
-		Shout(57)
-		Enemy()
-		MoveToObject(LastHeardBy(Myself))
+  RESPONSE #100
+    Shout(99)
+    SetGlobalTimer("shouted","LOCALS",ONE_ROUND)
+    Continue()
 END
 
 IF
-	Heard([ANYONE],99)
-	Allegiance(Myself,NEUTRAL)
+  !Class(Myself,INNOCENT)
+  Heard([NOTEVIL],99)
+  !Detect(NearestEnemyOf(Myself))
+  OR(6)
+    Alignment(Myself,LAWFUL_GOOD)
+    Alignment(Myself,CHAOTIC_GOOD)
+    Alignment(Myself,NEUTRAL_GOOD)
+    Alignment(Myself,LAWFUL_NEUTRAL)
+    Alignment(Myself,CHAOTIC_NEUTRAL)
+    Alignment(Myself,NEUTRAL)
 THEN
-	RESPONSE #100
-		Enemy()
+  RESPONSE #100
+    Enemy()
+    MoveToObject(LastHeardBy(Myself))
 END
 
 IF
-	Heard([ANYONE],57)
-	Allegiance(Myself,NEUTRAL)
+  !Class(Myself,INNOCENT)
+  Heard([NOTGOOD],99)
+  !Detect(NearestEnemyOf(Myself))
+  OR(3)
+    Alignment(Myself,CHAOTIC_EVIL)
+    Alignment(Myself,NEUTRAL_EVIL)
+    Alignment(Myself,LAWFUL_EVIL)
 THEN
-	RESPONSE #100
-		Enemy()
+  RESPONSE #100
+    Enemy()
+    MoveToObject(LastHeardBy(Myself))
 END
 
 IF
-	Heard([ANYONE],99)
-	!Class(Myself,INNOCENT)
-	!See(NearestEnemyOf(Myself))
+  Class(Myself,INNOCENT)
+  Heard([NOTEVIL],99)
+  OR(6)
+    Alignment(Myself,LAWFUL_GOOD)
+    Alignment(Myself,CHAOTIC_GOOD)
+    Alignment(Myself,NEUTRAL_GOOD)
+    Alignment(Myself,LAWFUL_NEUTRAL)
+    Alignment(Myself,CHAOTIC_NEUTRAL)
+    Alignment(Myself,NEUTRAL)
 THEN
-	RESPONSE #100
-		MoveToObject(LastHeardBy(Myself))
-		Continue()
+  RESPONSE #100
+    Enemy()
 END
 
 IF
-	Heard([ANYONE],57)
-	!Class(Myself,INNOCENT)
-	!See(NearestEnemyOf(Myself))
+  Class(Myself,INNOCENT)
+  Heard([NOTGOOD],99)
+  OR(3)
+    Alignment(Myself,CHAOTIC_EVIL)
+    Alignment(Myself,NEUTRAL_EVIL)
+    Alignment(Myself,LAWFUL_EVIL)
 THEN
-	RESPONSE #100
-		MoveToObject(LastHeardBy(Myself))
-		Continue()
+  RESPONSE #100
+    Enemy()
 END
 
+IF
+  Class(Myself,INNOCENT)
+  Heard([ANYONE],99)
+THEN
+  RESPONSE #100
+    RunAwayFromNoLeaveArea(LastHeardBy(Myself),180)
+END
 
+IF
+  Heard(NearestMyGroupOfType,99)
+  Allegiance(Myself,NEUTRAL)
+THEN
+  RESPONSE #100
+    Enemy()
+END

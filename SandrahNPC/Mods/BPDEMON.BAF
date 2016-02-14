@@ -270,19 +270,6 @@ THEN
 END
 
 IF
-	Range(NearestEnemyOf(Myself),2)
-	OR(2)
-		CheckStatGT(NearestEnemyOf(Myself),0,CLERIC_BLADE_BARRIER)
-		CheckStatGT(NearestEnemyOf(Myself),0,WIZARD_FIRE_SHIELD)
-THEN
-	RESPONSE #80
-		RunAwayFrom(NearestEnemyOf(Myself),4)
-		ReallyForceSpell(NearestEnemyOf(Myself),DEMON_REPULSION) // SPIN482.SPL (Telekinesis)
-	RESPONSE #20
-		Continue()
-END
-
-IF
 	HPPercentLT(Myself,50)
 	!GlobalTimerNotExpired("POT","LOCALS")
 	HasItem("POTN55",Myself) // Potion of Superior Healing
@@ -451,7 +438,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",3)
-		ReallyForceSpell(LastSeenBy(Myself),SPECTATOR_SUGGESTION) // SPIN473.SPL (Emotion)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 END
 
 IF
@@ -462,7 +449,7 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobalTimer("BPT","LOCALS",4)
-		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR) // SPIN890.SPL (Demon Fear)
+		ReallyForceSpell(LastSeenBy(Myself),DEMON_FEAR)
 END
 
 IF

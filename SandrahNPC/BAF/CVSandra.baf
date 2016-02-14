@@ -550,6 +550,7 @@ IF
 InMyArea("Pellig")
 InParty("Minsc")
 !AreaCheck("BG4800")
+!AreaType(DUNGEON)
 GlobalGT("SanVisitedWD","GLOBAL",1)
 Global("SanBooPel","GLOBAL",0)
 THEN
@@ -5527,8 +5528,11 @@ END
 
 IF
 Global("SanSharInt","GLOBAL",19)
+OR(2)
+PartyHasItem("Misc78")
 RealGlobalTimerExpired("SanSharPreg","GLOBAL")
 InParty("SHARTEEL")
+!AreaCheck("BG0112")
 THEN
 RESPONSE #100
 SetGlobal("SanSharInt","GLOBAL",20)

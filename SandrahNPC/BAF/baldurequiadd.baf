@@ -1,13 +1,4 @@
 IF
-OnCreation()
-Global("Sannamnew","Global",0)
-THEN
-RESPONSE #100
-SetGlobal("Sannamnew","Global",1)
-ActionOverride("CVSandr",ReallyForceSpellRES("CVSanam",Myself))
-END
-
-IF
 PartyHasItem("Sanbook")
 !Global("SandrahJoined","GLOBAL",1)
 THEN

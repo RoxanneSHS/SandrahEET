@@ -10,17 +10,6 @@ CreateCreatureDoor("galdor",[965.482],0)
 END
 
 IF
-Global("SarevokBehavior","GLOBAL",3)
-InParty("CVSandr")
-HPLT("Sarevok",35)
-!Dead("diarmi")
-!InMyArea("diarmi")
-THEN
-RESPONSE #100
-CreateCreatureDoor("dw#diarm",[362.631],0)
-END
-
-IF
 Global("SanHaerRel1","GLOBAL",32)
 Global("HaerResc","bg0125",0)
 InParty("CVSandr")

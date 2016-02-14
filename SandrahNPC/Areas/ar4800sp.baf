@@ -9,7 +9,7 @@ SetGlobal("CVSpawn","LOCALS",1)
 CreateCreature("stonegol",[200.72],14)
 RESPONSE #30
 SetGlobal("CVSpawn","LOCALS",1)
-CreateCreature("tanarixa",[345.247],12)
+CreateCreature("tanari01",[345.247],12)
 RESPONSE #30
 SetGlobal("CVSpawn","LOCALS",1)
 CreateCreature("cvzlord",[214.296],10)
@@ -31,7 +31,7 @@ CreateCreature("cvzlord",[214.296],10)
 CreateCreature("ghast",[345.247],12)
 RESPONSE #30
 SetGlobal("CVSpawn2","LOCALS",1)
-CreateCreature("tanarixa",[345.247],12)
+CreateCreature("tanari01",[345.247],12)
 CreateCreature("cvzlord",[214.296],10)
 CreateCreature("cvzlord",[200.72],14)
 RESPONSE #30
@@ -42,5 +42,5 @@ SetGlobal("CVSpawn2","LOCALS",1)
 CreateCreature("ghast",[214.296],10)
 CreateCreature("ghast",[345.247],12)
 CreateCreature("ghast",[200.72],14)
-CreateCreature("tanarixa",[315.247],12)
+CreateCreature("tanari01",[315.247],12)
 END

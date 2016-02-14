@@ -6757,7 +6757,7 @@ DO~ReallyForceSpellRES("fjxpmooc",Myself) JoinParty()~EXIT
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",3)~ THEN BSANDR SanDriBG1In
 ~ Somehow I have always hoped the day would come when I could join you in one of your missions.~
-DO ~ SetGlobal("SanDrizzt","GLOBAL",4) SetGlobal("SanDrizzt2","GLOBAL",4) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200)~
+DO ~ SetGlobal("SanDrizzt","GLOBAL",4) SetGlobal("SanDrizzt2","GLOBAL",4) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600)~
 == F_DRIZTJ~ (Smiles down at his former student) I was always sure that day would come, having had the opportunity to to form your skills and to see you grow and develop yourself over the time since we first met. It is not a blatant compliment if I say that you have exceeded even the most optimistic expectation.~
 == BSANDR~ Be aware, my friend, that the rest of <CHARNAME>'s companions including <PRO_HIMHER> are a competent team in which I am but one of the parts.~
 == F_DRIZTJ~ Granted. Still you will always remain someone special to me, my girl. But let us move now and talk at another occasion. ~
@@ -6766,7 +6766,7 @@ EXIT
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",5)~ THEN BSANDR SanDriBG1Olddays
 ~ Recently I had to confess to <CHARNAME> my feelings for you while I was your student, Drizzt.~
-DO ~ SetGlobal("SanDrizzt","GLOBAL",6) SetGlobal("SanDrizzt2","GLOBAL",6) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200)~
+DO ~ SetGlobal("SanDrizzt","GLOBAL",6) SetGlobal("SanDrizzt2","GLOBAL",6) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600)~
 == F_DRIZTJ~ Well...you were young and a romantic girl...it was to be expected and I understood from your father's advice that it was quite normal for a human teenager. As irritating as this time might have been for you, I am content we managed to get through it well.~
 == BSANDR~ I was not aware that you really noticed it - and even talked to my father about it. It would make me ashamed, but, I think you are right, it was totally normal in my development.~
 == F_DRIZTJ~ Things are different now, Sandrah, you have really become the woman who was visible back then in the blooming young girl. Comparison to your mother is unavoidable for anyone who has known her.~
@@ -6782,7 +6782,7 @@ EXIT
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",7)~ THEN BSANDR SanDriMat
 ~ (Sandrah has sat down near Drizzt in her usual leasure dress that looks so innocent and so seductive at the same time.)~
-DO ~ SetGlobal("SanDrizzt","GLOBAL",8) SetGlobal("SanDrizzt2","GLOBAL",8) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200)~
+DO ~ SetGlobal("SanDrizzt","GLOBAL",8) SetGlobal("SanDrizzt2","GLOBAL",8) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600)~
 == F_DRIZTJ~ I have to admit, Sandrah, that you have quite advanced from the student I had the pleasure to educate. How time flies when the little kitten suddenly emerges into a graceful but dangerous felidae.~
 == BSANDR~ (Smiles) You have known Pelligram since her early days...~
 == F_DRIZTJ~ You know well I was not referring to THAT cat, Sandrah.~
@@ -6800,7 +6800,7 @@ DO ~ SetGlobal("SanDrizzt","GLOBAL",8) SetGlobal("SanDrizzt2","GLOBAL",8) RealSe
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",10)~ THEN BSANDR SanDriMid
 ~ Come and sit down by my side, Drizzt, I want to share some of your older memories with you.~
-DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200) ~
+DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600) ~
 == F_DRIZTJ~ (Again you observe how Drizzt's face lightens up as he willingly sits down beside Sandrah and takes her hand.) I imagine my knowledge of Midnight interests you some, my dear.~
 == BSANDR~ You are the only one I know who can give me some insight into her more private aspects - I mean except my father, but his perspective is that of a son who rarely had his mother at home.~
 == F_DRIZTJ~ She was independent and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Times of Trouble to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
@@ -6815,7 +6815,7 @@ DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealS
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",12)~ THEN BSANDR SanDriCyr
 ~ Drizzt, as you have known Midnight in her time, and maybe even Cyric in his human form, you can surely help me solve a question that long has worried me. ~
-DO~ SetGlobal("SanDrizzt","GLOBAL",13) SetGlobal("SanDrizzt2","GLOBAL",13) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200) ~
+DO~ SetGlobal("SanDrizzt","GLOBAL",13) SetGlobal("SanDrizzt2","GLOBAL",13) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600) ~
 == F_DRIZTJ~ (Laughs) I am sure I can - Midnight and the half-mad Prince of Lies - that makes no sense, right Sandrah?~
 == BSANDR~ It would not, if this were the story. Obviously our today's perception of past events lacks some details.~
 == F_DRIZTJ~ You are a wise person, to judge thus, knowing your own limits. So here is the eye witnesses' report.~

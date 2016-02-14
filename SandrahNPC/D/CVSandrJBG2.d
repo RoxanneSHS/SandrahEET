@@ -663,7 +663,7 @@ END
 IF~~ THEN BEGIN SanNotCapt3
 SAY ~ When your capturers had vanished into this lair, I decided that you were not in immediate danger, as obviously they had no intention to kill you - at least not right away. I also thought, that a direct assault from me alone against an unknown enemy would not only be dangerous for myself but also for you, who seemed to be still unconcious and helpless.~
 = ~ I thus spent the next days with cautiously trying to acquire informations about the situation and your possible capturer. I soon found that this was not so easy, as the Shadow Thieves are extremely secretive in their moves - and I soon found they were even more alert, because they found themselves under a kind of siege from some unknown enemy within the city limits.~
-IF~~ THEN REPLY~ Looks to me we have come into the middle of some epic struggle that is just starting in this town. Probably the thing Duke Belt has sent us to investigate.~ GOTO SanNotCapt4
+IF~~ THEN REPLY~ Looks to me we have come into the middle of some epic struggle that is just starting in this town. ~ GOTO SanNotCapt4
 END
 
 IF~~ THEN BEGIN SanNotCapt4
@@ -960,17 +960,17 @@ END
 
 IF~~THEN BEGIN BG2Reunion3
 SAY ~ (Sandrah takes Imoen in her arms.) My besta friend, what have they done to you? We will find the monster who did that and he will pay for it. I am so glad to see you again.~
-IF~~ THEN EXTERN  IMOEN2_  BG2ReunionImo
+IF~~ THEN EXTERN  IMOENJ  BG2ReunionImo
 END
 
 IF~~THEN BEGIN BG2Reunion4
 SAY~ (Sandrah's face is very grave as she faces Jaheira. You see how she struggles to find the right words for the druid.) Jaheira, at least you are well...I am so...(She dearly embraces the older woman and hides her face in her hair. Only you can see that Sandrah's eyes are full of tears.)~
-IF~~ THEN EXTERN  JAHEIJ  BG2ReunionJah
+IF~~ THEN EXTERN  JAHEIRAJ  BG2ReunionJah
 END
 
 IF~~THEN BEGIN BG2Reunion5
 SAY~ My fearless guardian, I see you have rescued Boo as well. Pelligram and me have missed you, too. But where is our beloved witch?~
-IF~~ THEN EXTERN  MINSCJ_  BG2ReunionMinsc
+IF~~ THEN EXTERN  MINSCJ  BG2ReunionMinsc
 END
 
 IF~~THEN BEGIN BG2Reunion6
@@ -3493,7 +3493,7 @@ DO~SetGlobal("SanRiva","LOCALS",1)~
 //========================================================================
 // APPEND Below
 //========================================================================
-APPEND IMOEN2_
+APPEND IMOENJ
 
 IF ~~ THEN BEGIN BG2ReunionImo
 SAY ~This monster man will pay for all, besta friend Sandrah, he'll feel your hammer and my fireball, I swear and swear it. But it's good that nothing could part us after all. ~
@@ -3501,14 +3501,14 @@ IF ~~ THEN EXTERN CVSANDRJ BG2Reunion10
 END
 END
 
-APPEND JAHEIJ
+APPEND JAHEIRAJ
 IF ~~ THEN BEGIN BG2ReunionJah
 SAY ~ Have you met Khalid already on the way you have come, my dearest friend? We were separated and I heard screams but we have not found a trace of him yet.~
 IF ~~ THEN EXTERN CVSANDRJ BG2Reunion11
 END
 END
 
-APPEND MINSCJ_  
+APPEND MINSCJ
 IF~~ THEN BEGIN BG2ReunionMinsc
 SAY ~ Uuuuaah! Sandrah, they have killed her! Minsc and Boo had to watch and could do nothing when that monster cut our witch with his knifes. Who could do such a thing and why? Uuuuaaah! We must find him and stop him. We owe this to Dynaheir.~
 IF ~~ THEN EXTERN CVSANDRJ BG2Reunion12

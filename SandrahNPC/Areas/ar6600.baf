@@ -32,6 +32,15 @@ Continue()
 END
 
 IF
+Global("Sannamnew","bg2700",0)
+THEN
+RESPONSE #100
+SetGlobal("Sannamnew","bg2700",1)
+ActionOverride("CVSandr",ReallyForceSpellRES("CVSanam",Myself))
+Continue()
+END
+
+IF
 Global("SanImoMake","bg2700",1)
 Global("Imoenclasschoice","GLOBAL",2)
 THEN
