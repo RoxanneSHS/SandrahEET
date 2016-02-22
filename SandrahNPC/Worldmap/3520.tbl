@@ -12,4 +12,4 @@ AR3520    E         BG2300      N           28        1          AR0043   AR0042
 AR3520    E         AR1304      N           28        1          AR0043   AR0042   N        N        N        40
 AR3520    E         AR1400      ExitW       27        1          AR0042   AR0044   N        N        N        30
 AR3520    E         AR1404      ExitW       27        1          AR0042   AR0044   N        N        N        30
-
+AR0020    N         AR3520      ExitSW      30        2          AR0042   AR0043   N        N        N        60

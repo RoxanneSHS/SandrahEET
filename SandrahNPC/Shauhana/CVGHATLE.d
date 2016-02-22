@@ -77,7 +77,7 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6)SetGlobalTimer("ShauToClan","GLOBAL",TEN_D
 ==BSANDR~ I see. But then the Time of Troubles started, gods were fighting among themselves for more power...the Dead Three were slain, one of them being Myrkul.~
 == CVorwarl~ (Looks at his father again) She is indeed clever and knowing. She understands a lot of our history.~
 == CVGHATLE ~ So Myrkul was no more when the final hour for his son's battle had come. The traitors from his own ranks did their part to make the already doomed operation a failure.~
-== CVorwarl~ Shauhana, your grandfather was a strong fighter and a strong personality even without the support of his father. He may have succeeded against the open opponents, but not against the hidden foes.~
+== CVorwarl~ Shauhana, your grandfather was a strong fighter and a strong personality even without the support of his father. He may have succeeded against the open opponents, but not against the hidden foe.~
 ==BSHAUHA~ And now it is up to me to finish what he was tasked to do?~
 == CVGHATLE ~ In some way, yes.~
 =~ With the Times of Trouble ended, new gods were established and took their reign. Once again they cast their gaze over the Realms and found that the situation for the orcs had even worsened meanwhile. In their next council the Gods decided that the operation had to be done again. One of them was to spawn a child again to the mortals. But this time not just a single one of them was to supervise the task but to make sure there are two this time.~
@@ -107,7 +107,7 @@ DO~SetGlobal("ShauOrcWar","GLOBAL",8)~
 ==BSHAUHA~ So I see several tasks before us, Ghatlenk, and I count on yours and Wallrick's advice in that.~
 == CVorwarl~Yes, my queen.~
 ==BSHAUHA~ We must organise and train our fighters, (she looks at Minsc and Wallrick). The next attack will probably not be just a test anymore. And we must fortify the village.~
-=~ Additionally we need reconnaissance about our foes, especially where that supply of undead is coming from and how it can be stopped. (She nods in Sandrah's direction.) You seem to have some ideas, my friend.~
+=~ Additionally we need reconnaissance about our foe, especially where that supply of undead is coming from and how it can be stopped. (She nods in Sandrah's direction.) You seem to have some ideas, my friend.~
 ==BSandr~ It sounds like we need to split our forces for a while, <CHARNAME>. While Shauhana, Minsc and Wallrick prepare the orcs and the village for the next assault, we do what a small group can do best - espionage.~
 == CVGHATLE ~We have not erred, my son. With these new friends and with Shauhana there rises new hope for Ghotal's vision. Know, <CHARNAME>, once the war of orc against orc is ended, a strong leader may want to negotiate terms for orc and your kin in the south to live in peace.~
 == CVorwarl~I have a useful bit of information for you, <CHARNAME>. Before you and the remainder of your group go west from here to search for Vennegrat's lair you may go a bit east into the mountains to find an old acquaintance - blown in by the wind.~

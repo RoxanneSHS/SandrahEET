@@ -8,7 +8,7 @@ END
 IF
 Global("ENDOFBG1","GLOBAL",2)
 InParty("Jaheira")
-Global("Chapter","GLOBAL",1)
+Global("Chapter","GLOBAL",15)
 Global("SanJaheirPCBG2","LOCALS",0)
 GlobalLT("SanJaheirBG2","GLOBAL",4) 
 AreaType(OUTDOOR)

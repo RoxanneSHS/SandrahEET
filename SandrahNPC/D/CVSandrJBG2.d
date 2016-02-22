@@ -528,7 +528,7 @@ END
 IF~ ~ THEN BEGIN SanHendls2
 SAY ~ Are you shocked by my reaction, my love, or by the deeds that even our worst fantasies may not be capable of imagining?~
 IF~~THEN REPLY ~ I think you are right...yes...those people have known no scruples to misuse the helpless and defenseless victims to suffer for their so-called entertainment. They deserve no mercy as they had none for their slaves.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanHendls3
-IF~~THEN REPLY ~ I hate slavery just as much as you do, Sandrah. It is just...in all the time we are together now, with the hundreds of foes I have seen you kill, this is the first time I have ever seen you being satisfied by taking another one's life.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanHendls3
+IF~~THEN REPLY ~ I hate slavery just as much as you do, Sandrah. It is just...in all the time we are together now, with the hundreds of foe I have seen you kill, this is the first time I have ever seen you being satisfied by taking another one's life.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanHendls3
 END
 
 IF~ ~ THEN BEGIN SanHendls3
@@ -569,7 +569,7 @@ END
 IF~ ~ THEN BEGIN SanHendls9
 SAY ~ ...all of a sudden everything was quiet around me - too quiet. As I looked around, the ground was covered by human bodies as far as I could see in the dimming light. Then one of the bodies next to me began to stir - my father slowly got up to his feet, unhurt but pale as a ghost and trembling like an old man. Blood was dripping from my hammer onto the face of the girl I had tried to rescue, mixing with her own blood there. But - she slowly began to move and her hand swept the blood from her eyes to look around.~
 = ~ More and more of the bodies around us began to move and creep and get up to their feet. But many did not...~
-=~ (She sighs heavily.) We rescued seven hundred children that eve but more than a hundred and all of the slavers were killed. My father told me later that I reaped most of that bloody harvest among our foes...It was the first time I ever had to take another ones life.~
+=~ (She sighs heavily.) We rescued seven hundred children that eve but more than a hundred and all of the slavers were killed. My father told me later that I reaped most of that bloody harvest among our foe...It was the first time I ever had to take another ones life.~
 IF~~THEN REPLY ~ And you found Pelligram there.~ GOTO SanHendls10
 END
 
@@ -1049,13 +1049,13 @@ END
 IF ~~THEN BEGIN SanremIren2
 SAY~ The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
 IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
-IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. Foes are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
+IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
 END
                      
 IF ~~THEN BEGIN SanremIren3
 SAY~ Yes, we heard that name there. The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
 IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
-IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. Foes are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
+IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
 END
 
 IF ~ Global("SanYoshDun","GLOBAL",2) ~ THEN BEGIN SanYoshDunNoYosh1
@@ -1971,7 +1971,7 @@ END
 
 IF~~THEN BEGIN UDWelcome2
 SAY~A common interest, <CHARNAME>, one that make the worst of oponents to allies all of a sudden.~
-=~We have learned already that our foes are most likely elves who have committed a crime against Suldanessalar and its queen Ellesime. They have been exiled from their former home and been punished with the loss of their elven longivity.~
+=~We have learned already that our foe are most likely elves who have committed a crime against Suldanessalar and its queen Ellesime. They have been exiled from their former home and been punished with the loss of their elven longivity.~
 IF~~THEN REPLY~They have stolen Imoen's and my souls to compensate for that.~DO~SetGlobal("UcmMatronDrow","GLOBAL",3)~ GOTO UDWelcome3
 END
 

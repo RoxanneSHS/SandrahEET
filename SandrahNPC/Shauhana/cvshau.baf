@@ -192,7 +192,6 @@ END
 
 IF
 Global("SanSharkta","GLOBAL",3) 
-PartyHasItem("Shaubo2")
 InParty("CVSandr")
 AreaCheck("CVSh10")
 PartyHasItem("CVSHAJWL")

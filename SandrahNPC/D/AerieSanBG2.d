@@ -23,7 +23,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",6)RealSetGlobalTimer("SanAeriInt","GLOBAL",1
 CHAIN
 IF~Global("SanHealaeri","GLOBAL",7)~THEN BSandr  SanAeriT1
 ~I have once visited what has remained of the Avariel in Faenya-Dale with my father.~ 
-DO~SetGlobal("SanHealaeri","GLOBAL",8) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanHealaeri","GLOBAL",8) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ You have been to my wonderful home, Sandrah!!?? (While her face expresses joyful expectations her eyes are nevertheless immediately filling with tears.)~ 
 ==BSandr ~It was sad and beautiful at the same time - just like you are, Aerie.~
 ==BAERIE~ What do you mean by that?~
@@ -39,7 +39,7 @@ EXIT
 CHAIN
 IF~Global("SanHealaeri","GLOBAL",9)~THEN BSandr  SanAeriT2
 ~That was a beautiful and hauting melody you were just singing, Aerie. Is it one from your folk?~
-DO~SetGlobal("SanHealaeri","GLOBAL",10) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanHealaeri","GLOBAL",10) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ You liked it...uncle Quayle always sang it to me when I was sad or my stumps were hurting again. It always made me feel better. The melodies of my kin are different, they are all in praise of beauty and goodness.~
 ==BSandr ~They would transmit their message to everybody listening even if we do not understand the tongue of your people. Your voice tells directly to the heart all it needs to know.~
 ==BAERIE~ Everyone in the circus always told me my singing was wonderful. Is it really? What about you, sing something for me, will you?~
@@ -50,7 +50,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",10) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 CHAIN
 IF~ Global("SanHealaeri","GLOBAL",11)~THEN BSandr  SanAeriT3
 ~(Sandrah and Aerie have dressed both in the most delicate light skirts for the evening. Their combined beauty is sheer breathtaking.)~
-DO~SetGlobal("SanHealaeri","GLOBAL",12) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanHealaeri","GLOBAL",12) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ Must you stare at my stumps in that impertinent way, Sandrah??!!!~
 ==BSandr ~I did not...well, yes I did. You know that I am a healer by profession and calling, Aerie. It was not curiosity that made me inspect them but my instinct to heal and to help.~
 ==BAERIE~ (Tears well up in Aerie's eyes) I-I am sorry I was so harsh - but I am really edgy when it comes to my lost white wings...~
@@ -67,7 +67,7 @@ EXIT
 CHAIN
 IF~ Global("SanHealaeri","GLOBAL",13)~THEN BSandr  SanAeriT4
 ~ You are quite a powerful spellcaster, Aerie. Did you learn such things at the circus?~
-DO~SetGlobal("SanHealaeri","GLOBAL",14) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanHealaeri","GLOBAL",14) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ Such a compliment means s-so much from one who really knows about the art.~
 =~Even as my heart sings at the thoughts of Baervan it is actually Aerdrie Faenya who grants me my priest spells. And you are right, my s-studies in magic have started at the circus. I h-hope I can be useful for the group with it.~
 ==BSandr ~You definitely are *useful*. But company and friendship do not stop at this, Aerie. You can give us so much more than mere contribution to our success.~
@@ -87,7 +87,7 @@ EXIT
 CHAIN
 IF~ Global("SanHealaeri","GLOBAL",15)~THEN BSandr  SanAeriT5
 ~ Aerie, is all well?~
-DO~SetGlobal("SanHealaeri","GLOBAL",16) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanHealaeri","GLOBAL",16) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ (Sighs) I will not have a chance to r-return to Faenya-Dale ever again, I have to face this fact, I guess.~
 ==BSandr~ I have a home at my father's place in Waterdeep. It is a place that welcomes all my friends and you would not be the first one to find a shelter and new perspectives there, Aerie.~
 =~ <CHARNAME> has lost Candlekeep and found comfort at Elminster's place as well.~
@@ -99,7 +99,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",16) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 CHAIN
 IF WEIGHT #-1~Global("SanAerSharkt","LOCALS",1)~ THEN BSandr SanAerShakt
 ~(Sandrah's expression is sad as she sees Aerie approaching her. She seems to anticipate the elf's question to her.)~
-DO~SetGlobal("SanAerSharkt","LOCALS",2) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanAerSharkt","LOCALS",2) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ S-Sandrah, w-what you have told Shauhana about that magic pool...~
 ==BSandr~ (Sandrah takes Aerie in her arms.) Whatever it can do if we really get access to it - it will not give you back your wings.~
 ==BAERIE~ H-how can you be so sure - you said you know only little and must study much more...if there is hope for her why are you saying such cruel things to me?~
@@ -127,7 +127,7 @@ EXIT
 CHAIN
 IF ~Global("SanAerSharkt","LOCALS",4)~ THEN BSandr SanAerShakt2
 ~(Sandrah has motioned you and the rest of the party out of sight while she applied her treatment on Aerie's shoulder.)~
-DO~SetGlobal("SanAerSharkt","LOCALS",5) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+DO~SetGlobal("SanAerSharkt","LOCALS",5) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ Uuuh, that was nasty!~
 ==BSandr~All is fine...that was the last bit of hurt, relax, Aerie, we are done.~
 ==BAERIE~ I-i-is it...?~
@@ -139,8 +139,8 @@ DO~SetGlobal("SanAerSharkt","LOCALS",5) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 
 CHAIN
 IF~ Global("SanHealaeri","GLOBAL",17)~THEN BSandr  SanAeriT6
-~ (Sandrah has sat down with her toom to study during the rest you have ordered for the group.)?~
-DO~SetGlobal("SanHealaeri","GLOBAL",18) RealSetGlobalTimer("SanAeriInt","GLOBAL",2800)~
+~ (Sandrah has sat down with her tome to study during the rest you have ordered for the group.)?~
+DO~SetGlobal("SanHealaeri","GLOBAL",18) RealSetGlobalTimer("SanAeriInt","GLOBAL",3800)~
 ==BAERIE~ Are you learning once again, Sandrah. When do you know it all?~
 ==BSandr~ (Laughs) Learning never ends, Aerie, or do you think so?~
 ==BAERIE~ Oh, I have discovered so many things already since I left the circus and ventured with <CHARNAME> and you. I sometimes wonder if my little head can contain all I learn every day.~
@@ -149,4 +149,4 @@ DO~SetGlobal("SanHealaeri","GLOBAL",18) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 ==BSandr~We cannot change anymore what has passed, my avariel, but we can shape what is still to come. <CHARNAME> and me are determined to do this - will you become a part of it, Aerie?~
 ==BAERIE~ You are the first person, Sandrah, that has ever made me feel like I was i-important in some way...you know, someone who could ac-acomplish something.~
 ==BSandr~Sure you can. Even more can be achieved if not one does it alone but we work together on it.~
-==BAERIE~ I-I happily accept this invitation. (Aerie slides to Sandrah's side embracing the young priestess. With her head leaned against Sandrah's shoulder she starts to study the page of the toom your lover was reading - or at least she pretends to study.)~EXIT
+==BAERIE~ I-I happily accept this invitation. (Aerie slides to Sandrah's side embracing the young priestess. With her head leaned against Sandrah's shoulder she starts to study the page of the tome your lover was reading - or at least she pretends to study.)~EXIT

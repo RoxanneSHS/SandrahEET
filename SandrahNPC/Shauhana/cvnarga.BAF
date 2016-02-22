@@ -68,6 +68,7 @@ END
 IF
 	Global("BP_BOMB","LOCALS",2)
 	See([PC])
+	!Allegiance(Myself,NEUTRAL)
 THEN
 	RESPONSE #100
 		SetGlobal("BP_BOMB","LOCALS",0)
@@ -87,7 +88,8 @@ THEN
 END
 
 IF
-	GlobalTimerNotExpired("BPCHASE","LOCALS")
+	!Allegiance(Myself,NEUTRAL)
+        GlobalTimerNotExpired("BPCHASE","LOCALS")
 	Global("BPCHASER","LOCALS",1)
 	OR(2)
 		See([GOODCUTOFF])
@@ -126,7 +128,8 @@ THEN
 END
 
 IF
-	GlobalTimerExpired("BPCHASE","LOCALS")
+	!Allegiance(Myself,NEUTRAL)
+        GlobalTimerExpired("BPCHASE","LOCALS")
 	Global("BPCHASER","LOCALS",1)
 	!See([GOODCUTOFF])
 	!See(LastHitter(Myself))
@@ -164,7 +167,8 @@ THEN
 END
 
  IF
-	Global("BP_BOMB","LOCALS",2)
+	!Allegiance(Myself,NEUTRAL)
+        Global("BP_BOMB","LOCALS",2)
 	GlobalTimerExpired("BP_BOMBER","LOCALS")
 THEN
 	RESPONSE #100
@@ -243,7 +247,8 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,5,INT)
+	!Allegiance(Myself,NEUTRAL)
+        CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(LastAttackerOf(Myself))
 		See(LastHitter(Myself))
@@ -257,7 +262,8 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,5,INT)
+	!Allegiance(Myself,NEUTRAL)
+        CheckStatGT(Myself,5,INT)
 	OR(2)
 		See(TenthNearest([GOODCUTOFF]))
 		See(TenthNearest([PC]))
@@ -271,7 +277,8 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,5,INT)
+	!Allegiance(Myself,NEUTRAL)
+        CheckStatGT(Myself,5,INT)
 	See(TenthNearest)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 THEN
@@ -281,7 +288,8 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,5,INT)
+	!Allegiance(Myself,NEUTRAL)
+        CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	See([ANYONE])
 THEN
@@ -291,7 +299,8 @@ THEN
 END
 
 IF
-	CheckStatGT(Myself,5,INT)
+	!Allegiance(Myself,NEUTRAL)
+        CheckStatGT(Myself,5,INT)
 	!GlobalTimerNotExpired("BPCHASE","LOCALS")
 	!See([GOODCUTOFF])
 THEN
@@ -466,7 +475,7 @@ IF
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	Global("SNAFU","LOCALS",0)
 	Exists(LastAttackerOf(Myself))
-	OR(8)
+	OR(6)
 		!See([GOODCUTOFF])
 		!See(LastAttackerOf(Myself))
 		StateCheck(NearestEnemyOf(Myself),STATE_MIRRORIMAGE)

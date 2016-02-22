@@ -122,9 +122,9 @@ DO ~  SetGlobal("SanSharkta","GLOBAL",3) ~
 == BSHAUHA ~ Oh, Sandrah, it is so wonderful, these new feelings I now have. Receiving friendliness is so new for me. Yes, I want to learn happily, but this time I have another thing to ask you.~
 == BSandr ~ Just ask and we will see if I can help you.~
 == BSHAUHA ~ It is about Brage's book. The one he used to teach me the signs. Look here, it has the signs I know that speak human language. And it has the other signs speaking some language he has not known.~
-== BSandr ~ (Sandrah studies the worn and torn toom for some time, jumping backwards and forwards through the pages. She reads some words, then goes to another part of the books to read some other words. Her concentrated look suddenly turns into a smile.)~
+== BSandr ~ (Sandrah studies the worn and torn tome for some time, jumping backwards and forwards through the pages. She reads some words, then goes to another part of the books to read some other words. Her concentrated look suddenly turns into a smile.)~
 == BSHAUHA ~ Have you found something, Sandrah.~
-== BSandr ~ Yes, it is a very strange toom indeed and a very rare and and powerful item. Did Brage ever mention where he got it from?~
+== BSandr ~ Yes, it is a very strange tome indeed and a very rare and and powerful item. Did Brage ever mention where he got it from?~
 == BSHAUHA ~ He used strange words. What is an ocean?~
 == BSandr ~ A very, very large water, like a sea you can journey on for many, many days. When you go to the Sword Coast, it is bounded in the west by an ocean that goes for weeks of travel, all water.~
 == BSHAUHA ~ (Laughs harsh) Those bloody foolish orcs! They want to rule Toril and have not even heard of the *ocean*. Brage said he found the book on a prat that came from the ocean and he killed him in a fight.~
@@ -161,7 +161,7 @@ CHAIN
 IF ~ Global("SanSharkta","GLOBAL",6) ~ THEN BSHAUHA Sharkta3
 ~ At this crossroad the way to Sharkta Fai begins. We need to go north from here.~
 DO ~ SetGlobal("SanSharkta","GLOBAL",7) ~
-== BSandr ~ The jewel we have gathered from Vennegrat is the key to the pool. I have made some progress with the translation of Brage's toom.~
+== BSandr ~ The jewel we have gathered from Vennegrat is the key to the pool. I have made some progress with the translation of Brage's tome.~
 == BSHAUHA ~ (The good side of her face seems to glow with hope and joy) I knew you would, Sandrah, I trust you so much. Is there help to be expected from Sharkta Fai?~
 == BSandr ~ The ritual seems to be easy. Once we are at the temple, we need to open the altar and put the jewel inside. It will then reveal and open a cave. Inside the cave is supposed to be the Sharkta Fai Pool and the entrance to the Other World.~
 == BSHAUHA ~ We have the jewel and I can lead us to the temple - but, <CHARNAME>, it is not an easy road.~
@@ -225,7 +225,7 @@ IF ~~ THEN BSHAUHA MyrkamSt1
 == BSandr ~ So he really went to Sharkta Fai - but why did he not take his amulet with him?~
 == BSHAUHA ~ He was brought to Sharkta Fai of course, as he died gloriously in battle, having slain hundreds of humans and elves himself on that battle day. But some rumours say he did not pass the portal. They say he left the pool restored and even dared to battle the Guardian. There are orcs who believe he returned to the Fields of Dead to continue the battle.~
 == BSandr ~ Shauhana, so it is Ghotal's blood that is in you and that makes you so strong?~
-== BSHAUHA ~ My all-knowing friend, it should have guessed you have heard about my grandfather. Sure. You know so much, so you must know about General Ghotal as well.~
+== BSHAUHA ~ My all-knowing friend, I should have guessed you have heard about my grandfather. Sure. You know so much, so you must know about General Ghotal as well.~
 == BSandr ~ Then know, Shauhana, that those rumours about him were true. There was a sect of orc priest that had ressurected your grandfather.~
 == BSHAUHA ~ You defeated them, right? Only you and <CHARNAME> are strong and courageous enough for such a deed.~
 == BSandr ~ We laid him to his final rest, yes. The battle on the Fields of Dead is over.~
@@ -327,7 +327,7 @@ IF ~~ THEN REPLY  ~Oh no, sorry, that was a mistake!~ DO ~JoinParty()~ EXIT
 IF ~~ THEN REPLY  ~All the best to you both, we will see each other again.~ DO~ 
 SetGlobal("ShauhanaJoined","GLOBAL",4)
 ActionOverride("Minsc",LeaveParty())
-ActionOverride("Minsc",SetDialog("MINSCP_"))
+ActionOverride("Minsc",SetDialog("MINSCP"))
 ActionOverride("Minsc",EscapeAreaMove("CVSHA8",578,721,13))
 EscapeAreaMove("CVSHA8",478,748,13)~EXIT
  

@@ -82,3 +82,14 @@ END
 ++~I could not leave you in the clutches of these savages.~EXTERN Neadoy 2
 ++~I had a feeling you might not be enjoying the goblin hospitality.~EXTERN Neadoy 2
 IF~!Dead("Neera")~THEN REPLY~I am looking for a wild mage named Adoy.~EXTERN Neadoy 2
+
+CHAIN
+IF WEIGHT #-2~Global("SanNeeraBG2B","GLOBAL",1)~THEN BNeera SanNeera22
+~Why are you looking so depressed after our victory over the Red Wizards? I thought you hate them just as much as I do.~
+DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
+==CVSandrJ~Even more than before, now after this experience. Yes, we have defeated them, but it is not a victory to celebrate.~
+==BNeera~I think I see what you mean, we have lost a lot, and *I* have lost the enclave I had so much hope set into.~
+==CVSandrJ~I had this experience every time with the red scum. We always pay a high prize, victory is always overshadowed by the losses we had to take in return.~
+==BNeera~Still, I am glad it is all over - at least for now.~
+==CVSandrJ~The Thayans always leave their destruction behind them, regardless of how quickly we act. We keep them at bay but we do not win. I was just remembering Dynaheir, our old comrad. Her folk have a sad and simple history, just centuries of battle after battle against their neighbours from Thay - and no perspective to end it, just the small gain of a short period of peace in between.~
+==BNeera~Where is the enthusiastic cheerful Sandrah I know? Let us move on before we all get too gloomy.~EXIT

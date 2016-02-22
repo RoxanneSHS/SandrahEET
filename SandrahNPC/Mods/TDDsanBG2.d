@@ -140,30 +140,6 @@ IF~~THEN REPLY~Even if he's a coward we should not underestimate his dangerous p
 END
 END
 
-CHAIN
-IF~Global("SanMystApp","arpo31",1)~ THEN SanMyst SanMysCyric
-~ <CHARNAME>, granddaughter, you have done well to destroy this deadly threat to our Realms.~
-DO~SetGlobal("SanMystApp","arpo31",2)~
-==CVSANDRJ ~ The threat was from the Realms to the celestials as well, was it not?~
-==SANMYST~ Cyric has remembered the ancient truth how to gain strength from the mortals to aid to his powers. It is you and <CHARNAME> who deserve the thanks of the gods for what you did.~
-==CVSANDRJ ~ So the attempt of your former lover was a real danger for you, Mystra?~
-==SANMYST~ You know well by now that we need the aid and the faith of the mortals to aid us in all that happens on the Prime Plane, Sandrah. I am no longer Midnight, I need you and your father, as well as <CHARNAME> when a danger arises from Toril. ~
-==CVSANDRJ ~He would have turned against you next, Mystra, the power who stands in his way. Then we have slain a god today?~
-==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her dispair.The cunning weaseling Cyric had left his prime shell when it became apparent to him whom he was facing.~
-==CVSANDRJ ~The mighty Bhaalspawn <CHARNAME>!~
-==SANMYST~ No, I was referring to you, Sandrah.~
-==CVSANDRJ ~Really....?~
-==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ If such is our deed, may I humbly ask for a favour from my goddess then.~
-==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ You may ask. Whether it is mine to give will be seen.~
-==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~You know that I seek answers...I always do and will continue to do. So, what would have happened if we had failed? If Cyric had succeeded to gain the power he was after by destroying you?~
-==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ This question had to come sooner or later, child. You know the answer, AO would have inthroned the next incarnation of Mystra, as the Weave requires a guardian.~
-==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~Yes, and it will be one of your human bloodline, the female line I mean.~
-==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~This is correct.~
-==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~Can you tell me what would be my role in this case?~
-==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ Your role is the most crucial - for all of us, the Realms and the Weave. A moment ago you called yourself a seeker, Sandrah. That is your role.~
-==SANMYST ~ Farewell, Sandrah.~
-EXIT
-
 
 EXTEND_BOTTOM 3336TAV 7
 IF~ InParty("CVSandr")~ THEN REPLY ~But Entreri is dead, we have killed him ourselves!~ EXTERN CVSANDRJ SanEntAgain
@@ -223,6 +199,30 @@ END
 
 ADD_TRANS_ACTION Bendalis BEGIN 0 END BEGIN 0 1  END
  ~SetGlobal("SanAlust","DD6001",1)~
+ 
+ CHAIN
+IF~Global("SanMystApp","arpo31",1)~ THEN SanMyst SanMysCyric
+~ <CHARNAME>, granddaughter, you have done well to destroy this deadly threat to our Realms.~
+DO~SetGlobal("SanMystApp","arpo31",2)~
+==CVSANDRJ ~ The threat was from the Realms to the celestials as well, was it not?~
+==SANMYST~ Cyric has remembered the ancient truth how to gain strength from the mortals to aid to his powers. It is you and <CHARNAME> who deserve the thanks of the gods for what you did.~
+==CVSANDRJ ~ So the attempt of your former lover was a real danger for you, Mystra?~
+==SANMYST~ You know well by now that we need the aid and the faith of the mortals to aid us in all that happens on the Prime Plane, Sandrah. I am no longer Midnight, I need you and your father, as well as <CHARNAME> when a danger arises from Toril. ~
+==CVSANDRJ ~He would have turned against you next, Mystra, the power who stands in his way. Then we have slain a god today?~
+==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her dispair.The cunning weaseling Cyric had left his prime shell when it became apparent to him whom he was facing.~
+==CVSANDRJ ~The mighty Bhaalspawn <CHARNAME>!~
+==SANMYST~ No, I was referring to you, Sandrah.~
+==CVSANDRJ ~Really....?~
+==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ If such is our deed, may I humbly ask for a favour from my goddess then.~
+==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ You may ask. Whether it is mine to give will be seen.~
+==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~You know that I seek answers...I always do and will continue to do. So, what would have happened if we had failed? If Cyric had succeeded to gain the power he was after by destroying you?~
+==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ This question had to come sooner or later, child. You know the answer, AO would have inthroned the next incarnation of Mystra, as the Weave requires a guardian.~
+==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~Yes, and it will be one of your human bloodline, the female line I mean.~
+==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~This is correct.~
+==CVSANDRJ IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~Can you tell me what would be my role in this case?~
+==SANMYST IF~GlobalLT("SanKhalBlood","GLOBAL",3)~THEN~ Your role is the most crucial - for all of us, the Realms and the Weave. A moment ago you called yourself a seeker, Sandrah. That is your role.~
+==SANMYST ~ Farewell, Sandrah.~
+EXIT
  
 
 

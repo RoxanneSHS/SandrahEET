@@ -63,7 +63,7 @@ DO~SetGlobal("SeeLake","CVSH22",3) RealSetGlobalTimer("WaveTwo","CVSH22",125) ~
 ==CVSandrJ~(Mumbles) Our invasion...~
 ==CVShauQ~The army of his opponent Murantku had gathered on the other side of the lake...~
 ==Sanboy1~...just like nasty Vennegrat right now.~
-==CVShauQ~Right, my little one. Ghotal with his mighty sword started to attack the ice of the lake rather than his foes while Murantku's men foolishly attacked my grandfather and the handful of men he had brought along.~
+==CVShauQ~Right, my little one. Ghotal with his mighty sword started to attack the ice of the lake rather than his foe while Murantku's men foolishly attacked my grandfather and the handful of men he had brought along.~
 ==CVMinsc~Very similar to what we have here today.~
 ==CVSandrJ~I see - the ice would start to crack and under the weight of the many heavy opponents finally break and the lake would swallow them.~
 ==CVShauQ~No one can survive in the fathomless icy depth of the lake and the ice will very soon seal the grave again.~

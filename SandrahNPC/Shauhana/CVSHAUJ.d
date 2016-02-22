@@ -114,12 +114,12 @@ IF ~~ THEN REPLY ~ Barbaric. I am glad to help you leave all of this behind.~ DO
 END
 
 
-IF ~ IsGabber(Player1) Global("ShauPid","GLOBAL",1) ~ THEN BEGIN ShauPID1
+IF ~ IsGabber(Player1) Global("ShauPid","GLOBAL",1)~ THEN BEGIN ShauPID1
 SAY~ You want to continue our talk about my past, <CHARNAME>?~
 IF~ Global("Shausc","LOCALS",0) InParty("CVSandr") ~ THEN REPLY ~ Yes. I anticipate that the wound you received during the fight with your father was not taken care of by your priests? ~ GOTO Shauscheal
-IF~ Global("ShauBrag","LOCALS",0) ~ THEN REPLY ~ Yes. You mentioned your isolated youth, Shauhana, but also a human that you met not long ago. And you speak our language very well.~ GOTO Shaubrag1
+IF~ Global("ShauBrag","LOCALS",0)GlobalLT("Sansharkta","GLOBAL",1) ~ THEN REPLY ~ Yes. You mentioned your isolated youth, Shauhana, but also a human that you met not long ago. And you speak our language very well.~ GOTO Shaubrag1
 IF ~ Global("HoundTro","LOCALS",0) ~ THEN REPLY ~ I am wondering what kind of creatures your Clan Hounds really are.~ GOTO HoundTro1
-IF~ Global("ShauBrag","LOCALS",0) ~ THEN REPLY ~ Yes. How did you manage to escape the pits that enslaved you for so long, Shauhana?~ GOTO Shaubrag1
+IF~ Global("ShauBrag","LOCALS",0)GlobalLT("Sansharkta","GLOBAL",1) ~ THEN REPLY ~ Yes. How did you manage to escape the pits that enslaved you for so long, Shauhana?~ GOTO Shaubrag1
 IF ~~ THEN REPLY ~ Maybe another time, Shauhana.~ EXIT
 END
 
@@ -142,7 +142,7 @@ END
 
 IF~~THEN BEGIN Shaubrag4
 SAY ~ He came in search of Sharkta Fai. Either to be cured from the stars or to be taken to the Other World.~
-IF~~THEN REPLY ~ Sharkta Fai? ~ DO ~ SetGlobal("SanSharkta","GLOBAL",1)~ GOTO Shaubrag5
+IF~~THEN REPLY ~ Sharkta Fai? ~  GOTO Shaubrag5
 END
 
 IF~~THEN BEGIN Shaubrag5
@@ -153,7 +153,7 @@ END
 IF~~THEN BEGIN Shaubrag6
 SAY ~ He is now in the Other World of your people. On the day of my escape he was in the stars again but he did not return that time. He killed the pit priests and the overseers and most of the gladiators before they brought him down in a rainfall of arrows. There was nothing I could do for him anymore - but I took his last gift to me and escaped in the uproar he had caused.~
 = ~ I went to the hut of the old orc shaman who once was my teacher before I killed my father. He gave me his bow and reminded me of the tunnels out of the Clan's land. Soon my escape was recognised and they sent the hunters after me. That is how we met then.~
-IF~~THEN DO ~ SetGlobal("ShauBrag","LOCALS",1)~ EXIT
+IF~~THEN DO ~ SetGlobal("ShauBrag","LOCALS",1) SetGlobal("SanSharkta","GLOBAL",1)~ EXIT
 END
 
 IF~~THEN BEGIN  Shauscheal

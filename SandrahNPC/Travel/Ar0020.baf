@@ -3,6 +3,7 @@ Global("CVAR0020","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("CVAR0020","GLOBAL",1)
+HideAreaOnMap("ar3000")
 Continue()
 END
 
@@ -12,15 +13,7 @@ GlobalLT("KnowStorm","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("KnowStorm","GLOBAL",1)
-END
-
-IF
-InMyArea("CVSandr")
-Global("CbPartyGotThisFar","AR0020",1)
-THEN
-RESPONSE #100
-HideAreaOnMap("ar3000")
-SetGlobal("CbPartyGotThisFar","AR0020",2)
+RevealAreaOnMap("ar3520")
 END
 
 IF

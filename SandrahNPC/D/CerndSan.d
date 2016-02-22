@@ -23,7 +23,7 @@ DO~ SetGlobal("SanCerndLT","GLOBAL",8)~
 ==BCERND~ Life and nature are an endless cicle of things that come and things that go...~
 ==BSANDR~Just like the women in your life, my friend?~
 ==BCERND~ It is not what you may think...I made my mistakes and wrong choices like anybody else. Wisdom comes not from age but from experiences you make.~
-==BSANDR~You say a lot with avoiding to say anything, Cernd. But I will not embarass you with my curiosity, as you have already told me that no fair maiden is the reason for your wish to return to Tethir.~
+==BSANDR~You say a lot with avoiding to say anything, Cernd. But I will not embarrass you with my curiosity, as you have already told me that no fair maiden is the reason for your wish to return to Tethir.~
 ==BCERND~ (Bows to Sandrah) Fair and interesting maidens are not only to be found in my home. With the open eyes of a druid beauty can be found anywhere.~
 ==BSANDR~With open eyes and an open mind much more than just the beauty on the surface can be found.~
 ==BCERND~(Smiles) I do not even have to turn my head to see the obvious truth of that statement.~EXIT
@@ -37,7 +37,7 @@ DO~ SetGlobal("SanCerndBabe","LOCALS",3)~
 ==BCERND~You already have encouraged me with your kindness, my girl. In case something has really gone bad, I dearly hope we can correct it somehow.~
 ==BSANDR~Hopefully <CHARNAME> supports that attempt as well.~
 END
-++~Sure, my counsellor, Cernd is our comrad and has our support as he needs it.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~EXIT
+++~Sure, my counselor, Cernd is our comrad and has our support as he needs it.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~EXIT
 ++~ Each party member has a spot in the past - I am not a mother hen to look after mature comrads and their little problems.~DO~IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
 ++~The promenade is not at the other end of Toril, we will pass it soon enough anyway.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 

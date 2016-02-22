@@ -1820,7 +1820,6 @@ END
 
 COMPILE 
 ~SandrahNPC/Mods/CVSafgua.d~
-~SandrahNPC/Mods/shout.baf~
 
 COPY ~SandrahNPC/Mods/NTHUMBAB.BCS~ ~override/NTHUMBAB.BCS ~
 
@@ -4169,11 +4168,6 @@ END
               
 COPY_EXISTING ~Duearc02.cre~ ~override/Duearc02.cre~
               WRITE_ASCII 0x280 ~Duearc02~
-
-COPY_EXISTING ~lehtin.cre~ ~override/lehtin.cre~
-              WRITE_ASCII 0x258 ~none~ #8
-COPY_EXISTING ~wolfch.cre~ ~override/lehtin.cre~
-              WRITE_ASCII 0x258 ~none~ #8
 
 COPY_EXISTING ~Imoen1.CRE~ ~override/Imoen1.CRE~
               ~Imoen.CRE~ ~override/Imoen.CRE~
@@ -7691,14 +7685,19 @@ COMPILE
 ~SandrahNPC/Mods/NeeraSanBG1.d~
 ~SandrahNPC/Mods/RasaadSanBG1.d~
 ~SandrahNPC/Mods/DornSan.d~
+~SandrahNPC/Mods/HexxatSan.d~
 ~SandrahNPC/d/Cvshar1.d~
 
 EXTEND_TOP
 ~Neera_.bcs~ ~SandrahNPC/Mods/NeeraBant.baf~
+EXTEND_TOP
+~Neera.bcs~ ~SandrahNPC/Mods/NeeraBant2.baf~
 EXTEND_TOP 
 ~Rasaad_.bcs~ ~SandrahNPC/Mods/RasaadBant.baf~
 EXTEND_TOP
 ~Dorn_.bcs~ ~SandrahNPC/Mods/DornBant.baf~
+EXTEND_TOP
+~Hexxat.bcs~ ~SandrahNPC/Mods/HexxatBant.baf~
 
 COPY_EXISTING ~kit.ids~ ~override~ //Kit fixes 
   REPLACE_TEXTUALLY ~0x0000 BARBARIAN~			  ~0x40000000 BARBARIAN~
@@ -7895,6 +7894,10 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~acq17003.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/Karlini.d~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~dw2mc3ge.bcs~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/dw2mc3ge.baf~
 END
 
 COPY ~SandrahNPC\CRE/cvshar1.cre~ ~override~

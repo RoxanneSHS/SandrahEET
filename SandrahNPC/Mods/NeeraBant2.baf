@@ -1,0 +1,28 @@
+IF
+Global("OHN_Plot","Global",6)
+Global("SanNeeraBG2B","GLOBAL",0)
+Dead("OhnLanne")
+InParty("CVSandr")
+InParty(Myself)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanNeeraBG2B","GLOBAL",1)
+END
+
+IF
+InParty("CVSandr")
+InParty(Myself)
+OR(2)
+Global("SanNeeraBG2B","GLOBAL",1)
+Global("SanNeeraBG2B","GLOBAL",3)
+See("CVSandr")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+Interact(Player1)
+END
+ 
