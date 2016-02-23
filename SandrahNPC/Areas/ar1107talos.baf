@@ -1,4 +1,6 @@
 IF
+OR(2)
+Global("VillageSaved","GLOBAL",1)
 !Global("RangerProtector","GLOBAL",0)
 InParty("CVSandr")
 Global("SanVsTalos","GLOBAL",1)
@@ -7,8 +9,6 @@ THEN
 RESPONSE #100
 SetGlobal("SantalosRang","GLOBAL",1)
 CreateCreature("CVTALOP1",[594.467],14)
-CreateCreature("CVTALOW1",[626.619],8)
-CreateCreature("CVTALOW1",[418.613],10)
 END
 
 IF
@@ -18,6 +18,8 @@ RESPONSE #100
 ActionOverride("CVTALOP1",Enemy())
 SetGlobal("SantalosRang","GLOBAL",3)
 RealSetGlobalTimer("SantalosRangSelf","GLOBAL",70)
+CreateCreature("CVTALOW1",[626.619],8)
+CreateCreature("CVTALOW1",[418.613],10)
 END
 
 IF

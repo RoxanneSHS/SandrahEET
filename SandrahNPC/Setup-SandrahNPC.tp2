@@ -4312,6 +4312,13 @@ COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~ // Imoen animation adjustments
 COPY_EXISTING_REGEXP GLOB ~^_?viconi[0-20]*.*\.cre$~ ~override~
   WRITE_BYTE 0x23d 17 // constitution
   WRITE_BYTE 0x238 18 // 18 STR
+   LAUNCH_PATCH_FUNCTION ADD_CRE_EFFECT
+    INT_VAR
+    opcode = 360 //Ignore reputation
+    timing = 9 //Permanent
+    target = 1 //Self
+    resist_dispel = 0 //Not dispellable + bypass resistance
+  END
   BUT_ONLY_IF_IT_CHANGES
   
 

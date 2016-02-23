@@ -4,15 +4,15 @@ CHAIN
 IF~Global("SanVicArrst","GLOBAL",1)~ THEN CVSafgua VicHold1
 ~ Stand, citizens, deliver the drow!~
 DO~SetGlobal("SanVicArrst","GLOBAL",2)~
-==VICONJ~What, damned rivvil? Not again!~
+==Viconij~What, damned rivvil? Not again!~
 ==CVSafgua~ In the name of the Council, Viconia De'Vir, you are under arrest.~
 ==CVSandrJ~You must have VERY good reasons for this action, officer.~
 ==CVSafgua~ Do not try to intervene, lady, you might get in trouble yourself for accompanying an accused murderer.~
 ==CVSandrJ~What is the accusation against her?~
 ==CVSafgua~ Viconia De'Vir, you are accused of murdering Lorena Balthis...~
-==VICONJ~Acton Balthis' wife?~
+==Viconij~Acton Balthis' wife?~
 ==CVSafgua~So you know your victim well...~
-==VICONJ~Baah, I never met that woman and wouldn't know her on the street if I met her. The husband is all I had relations to.~
+==Viconij~Baah, I never met that woman and wouldn't know her on the street if I met her. The husband is all I had relations to.~
 ==CVSafgua~It is known you were his mistress - that is why you murdered her.~
 ==CVSandrJ~This is nonsense, officer, that relationship is long in the past. When did the murder occur?~
 ==CVSafgua~Two nights ago.~

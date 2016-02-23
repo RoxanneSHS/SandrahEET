@@ -568,7 +568,7 @@ END
 //Shadowtemple
 IF~Global("SanArch","ar1402",1)~THEN BEGIN SanArchloss1
 SAY~ I once read that each Amaunator temple had an area only accesible to the priests that was called *The Archive*. Sounds like a place were records and such are kept, a place to store immense knowledge.~
-IF ~~THEN REPLY~ It must hurt a scholar and seeker like yourself deeply that all that now seems to be lost due to the dragon's destruction~ DO~IncrementGlobal("Sanpoints","GLOBAL",2) SetGlobal("SanArch","ar1402",2) ~ GOTO SanArchloss2
+IF ~~THEN REPLY~ It must hurt a scholar and seeker like yourself deeply that all that now seems to be lost due to the dragon's destruction.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2) SetGlobal("SanArch","ar1402",2) ~ GOTO SanArchloss2
 IF ~~THEN REPLY~ Stupid dragon!~ DO~SetGlobal("SanArch","ar1402",2) ~ EXIT
 IF ~~THEN REPLY~ Probably heaps of dusty parchments never to be read by anyone. No great loss, I guess.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-2) SetGlobal("SanArch","ar1402",2) ~GOTO SanArchloss3
 END
