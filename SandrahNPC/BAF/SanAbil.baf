@@ -587,6 +587,15 @@ SetGlobal("SanRantSp","LOCALS",1)
 AddSpecialAbility("CVRant")
 END
 
+IF
+PartyRested()
+!Kit(Myself,CVMystra)
+THEN
+RESPONSE #100
+AddKit(CVMystra)
+Continue()
+END
+
 // Lost Items Store
 
 IF

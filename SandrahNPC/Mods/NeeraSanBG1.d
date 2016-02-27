@@ -93,3 +93,15 @@ DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
 ==BNeera~Still, I am glad it is all over - at least for now.~
 ==CVSandrJ~The Thayans always leave their destruction behind them, regardless of how quickly we act. We keep them at bay but we do not win. I was just remembering Dynaheir, our old comrad. Her folk have a sad and simple history, just centuries of battle after battle against their neighbours from Thay - and no perspective to end it, just the small gain of a short period of peace in between.~
 ==BNeera~Where is the enthusiastic cheerful Sandrah I know? Let us move on before we all get too gloomy.~EXIT
+
+CHAIN
+IF WEIGHT #-6~Global("LavokOutside","GLOBAL",1) InParty("Neera") OR(2)Global("PlayerHasStronghold","GLOBAL",1) !Class(Player1,LONG_BOW)~ THEN Lavok Neerasphere
+~Ah, it is the sky after all. I had forgotten how it looked after so long. I thank you... and I wish to repay you for your kindness...~
+DO~DestroyItem("MINHP1") SetGlobal("PCSphere","GLOBAL",1) AddXPObject(Player1,11375)
+AddXPObject(Player2,11375) AddXPObject(Player3,11375) AddXPObject(Player4,11375) AddXPObject(Player5,11375) AddXPObject(Player6,11375)~
+=~(His trembling finger points at Neera.) ...I sense within you a power and ability similar to my own, yes? You are a wizardess. Yes, I am correct.~
+==BNeera~I'm a wild mage, but I'm rarely as wild as you are - I hope.~
+==Lavok~Take the planar sphere, my girl. I grant it to you, in payment for my release. Use it... use it far more wisely than I ever did... ~
+==BNeera~With <CHARNAME>'s help I should be capable of this.~
+==BNEERA IF~InParty("CVSandr")~THEN~...and with some of Mystra's guidance when needed.~
+==Lavok~Yes, you will...~DO~Kill(Myself)~EXIT

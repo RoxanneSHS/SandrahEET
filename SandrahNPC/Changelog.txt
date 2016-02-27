@@ -2,14 +2,20 @@ VERSION 2.01
 ----------------
 
 Completely re-created for EET
+Adapted to new journal and worldmap capabilities
+Optimised use of new game resources
+Sandrah's personal items restricted
 
 New BG1 to BG2 transition
 Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
 Revised dependecies on other mega mods
+Kit implementation refined
+Improved Jen'lig
 
 Removed Ajantis Crossmod
 Removed RE Crossmod
 
-Added Neera, Dorn, Rasaad, Baeloth Crossmod
+Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
 Added Karlini rescue
-Improved Jen'lig
+Neera can get planar sphere if PC not mage
+Hexxat can get thieves guild if PC not thief

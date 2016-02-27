@@ -27,15 +27,15 @@ END
 IF~Global("SanEdwinBG2","GLOBAL",2)~THEN BEGIN SanBG2EdMeet1
 SAY~ (Sigh.)~
 IF~~THEN REPLY~ (Ignore her.)~ DO~SetGlobal("SanEdwinBG2","GLOBAL",3)~ GOTO  SanBG2EdMeet2
-IF~~THEN REPLY~ I really envy you for your self-discipline, Sandrah. You did not even blink when you saw the red Wizard.~ DO~SetGlobal("SanEdwinBG2","GLOBAL",3)~ GOTO  SanBG2EdMeet2
+IF~~THEN REPLY~ I really envy you for your self-discipline, Sandrah. You did not even blink when you saw the red wizard.~ DO~SetGlobal("SanEdwinBG2","GLOBAL",3)~ GOTO  SanBG2EdMeet2
 IF~~THEN REPLY~ (Look at her questioningly.)~ DO~SetGlobal("SanEdwinBG2","GLOBAL",3)~ GOTO  SanBG2EdMeet2
 END
 
 IF~~ THEN BEGIN SanBG2EdMeet2
-SAY~ I would lie if I would say I did not expect to meet such scum if we descended just low enough into the bowels of this dreadful town. It looks like we have accomplished to find one of the lowest companies Athkatla has to offer. And consequently a red Wizard is there - just where he belongs, it is his logical and natural environment.~
+SAY~ I would lie if I would say I did not expect to meet such scum if we descended just low enough into the bowels of this dreadful town. It looks like we have accomplished to find one of the lowest companies Athkatla has to offer. And consequently a red wizard is there - just where he belongs, it is his logical and natural environment.~
 IF~~THEN REPLY~ Like him or not, he has surely found his way around this town and already established some useful connections. Maybe I can find the right arguments later to make him join us.~ GOTO  SanBG2EdMeet4
 IF~~THEN REPLY~ Your disgust is noted, my love. We will get this job done as fast as possible and then leave him to go down with that master he has chosen.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~EXIT
-IF~~THEN REPLY~ I see this job as a good opportunity to remove some of the worst individuals from this town. As long as we reduce the ranks of the criminals I have no problem to accept that red Wizard's presence momentarily.~GOTO  SanBG2EdMeet3
+IF~~THEN REPLY~ I see this job as a good opportunity to remove some of the worst individuals from this town. As long as we reduce the ranks of the criminals I have no problem to accept that red wizard's presence momentarily.~GOTO  SanBG2EdMeet3
 END
 
 IF~~ THEN BEGIN SanBG2EdMeet3
@@ -49,7 +49,7 @@ IF~~THEN DO~ IncrementGlobal("Sanpoints","GLOBAL",-2)~ EXIT
 END
 
 IF~Global("SanEdPaper","LOCALS",1)~THEN BEGIN EdPaper1
-SAY~ <CHARNAME>, do you mind if I inspect those papers for a few minutes? It would be wise to know what this red Wizard is involved in right now.~
+SAY~ <CHARNAME>, do you mind if I inspect those papers for a few minutes? It would be wise to know what this red wizard is involved in right now.~
 IF~~THEN REPLY~ Why should we care, sweetheart. Let's just do this job and then forget about the guy. Our target is Mae'Var. ~ GOTO EdPaper2
 IF~~THEN REPLY~ The papers are sealed. But maybe your magic allows you to bypass that somehow.~ GOTO EdPaper3
 IF~~THEN REPLY~ A brilliant idea, there is surely some benefit for us to know the ones we deal with better than they know us. Can we do it without Edwin recognising it?~ GOTO EdPaper4

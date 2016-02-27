@@ -2330,9 +2330,15 @@ ADD_KIT ~CVMystra~
 ~0x00004000     3~
 ~FC0~
 ~* * * * * * * * * * * * * * * * * * * *~
-SAY @765
+SAY @967
 SAY @765
 SAY @766
+
+INCLUDE ~SandrahNPC/Kit/fl#add_kit_ee.tpa~
+LAF fl#add_kit_ee 
+STR_VAR 
+kit_name = CVMystra
+END
 
 PRINT ~Installed Sandrah Kit~
 
@@ -7920,5 +7926,6 @@ EXTEND_TOP
 ~BG5102.bcs~ ~SandrahNPC/Areas/bg5102.baf~
 EXTEND_TOP
 ~OH3020.bcs~ ~SandrahNPC/Areas/oh3020shar.baf~
+
 
 

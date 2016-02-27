@@ -824,7 +824,7 @@ IF~ Global("CVColleEnc","GLOBAL",13)~THEN BSandr CollNightVis
 DO~SetGlobal("CVColleEnc","GLOBAL",14)~
 ==Pellig~ (The large cat drops a piece of red cloth in front of Sandrah's feet. Obviously a piece torn from the robe of the nightly visitor.)~
 ==BSandr~ (Sandrah just touches the piece with the tip of her boot without picking it up.)~
-=~ The red of a rare sort of snail, extracted to colour clothing in specific circles of Thayvian society.~
+=~ The red of a rare sort of snail, extracted to colour clothing in specific circles of Thayan society.~
 ==Pellig~ Growl.~
 ==BSandr~ The last ones we have encountered of that type - except for Edwin whom I personally declare innocent this time - were Szass Tam and...this strange *Collector*.~
 ==Pellig~GROWL!!!~
@@ -843,7 +843,7 @@ END
 
 CHAIN
 IF~~THEN BSandr CollNightVis3
-~ I am afraid we may not get a chance to inquire it from him. Now that he has what he always was after he will give up his visits under his collector disguise. There are many things a Thayvian mage may do with a lock of hair from a person, prepare a curse or a specific spell designed for just that one victim...~
+~ I am afraid we may not get a chance to inquire it from him. Now that he has what he always was after he will give up his visits under his collector disguise. There are many things a Thayan mage may do with a lock of hair from a person, prepare a curse or a specific spell designed for just that one victim...~
 END
 ++~Whatever the use may be it is surely not to be a pleasant surprise.~ + CollNightVis4
 ++~And you have no idea of what he may plan or why?~ + CollNightVis4

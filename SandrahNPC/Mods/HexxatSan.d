@@ -47,3 +47,23 @@ DO~SetGlobal("Sanhealhex","GLOBAL",10)~
 ==Bsandr~The method I know to accomplish this would be by driving a wooden stake through your heart. I am not sure this is the solution we both wish for.~
 ==BHexxat~If one day I would ask you for that *cure*, would you deny it to me? Would you do it out of...love?~
 ==Bsandr~I would do it - out of mercy.~EXIT
+
+REPLACE_ACTION_TEXT  ~renal~ ~SetGlobal("PlayerHasStronghold","GLOBAL",1)~ ~~
+
+EXTEND_BOTTOM Renal 48
+IF~InParty("Hexxat") OR(2) Global("PlayerHasStronghold","GLOBAL",1) !Class(Player1,THIEF_ALL) ~THEN DO~AddXPObject(Player1,11375)
+AddXPObject(Player2,11375)
+AddXPObject(Player3,11375)
+AddXPObject(Player4,11375)
+AddXPObject(Player5,11375)
+AddXPObject(Player6,11375) SetGlobal("RenalJob","GLOBAL",4)~GOTO RenalHex1
+END
+
+CHAIN
+IF~~THEN Renal RenalHex1
+~You may find the reward I am about to offer to be as much a blessing as a curse. I know that I have felt as such on occasion. Listen to what I am about to say.~
+=~I require someone to take the position left vacant by Mae'Var. It must be someone I can trust, so they cannot be too mired in the politics of the region.~
+=~Your companion Hexxat is qualifying in all ways for such a position and with your guiding hand in the background, she will make our guild prosper.~
+==BHexxat~This is a good chance to raise the money we need and get the influence we deserve, <CHARNAME>. I am willing to take on this job if you agree.~
+END
+++~I will consider your words, Hexxat.~EXTERN Renal 64

@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN SanOrgo2
 SAY~ We were warned of Orgoth's faible for contigency plans. I suspect the elf is one of those. Give him the cure and he will surely reveal himself as this tower's owner. Knowing this, I still propose we will play his little game as only by this we will find out about his plan and the demons he summoned.~
-=~Our party is strong enough to cope with any demonic foes and it is the only way I see how we can remove the threat on Riativin permanently.~
+=~Our party is strong enough to cope with any demonic foe and it is the only way I see how we can remove the threat on Riativin permanently.~
 IF~~THEN REPLY~Thanks for the advice but I'd rather not unbottle this djinn, if you know what I mean.~ EXIT
 IF~~THEN REPLY~Fine, we will be well prepared when he attempts to escape.~EXIT
 IF~~THEN REPLY~I hate unsolved problems...we started this quest and we will finish it.~EXIT
