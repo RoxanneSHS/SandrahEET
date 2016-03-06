@@ -1289,6 +1289,8 @@ EXTEND_BOTTOM
 ~ar2812.bcs~ ~SandrahNPC/Areas/ar2812sets.baf~
 EXTEND_BOTTOM
 ~ar0711.bcs~ ~SandrahNPC/Areas/ar0711alhoon.baf~
+EXTEND_BOTTOM
+~ar0330.bcs~ ~SandrahNPC/Areas/ar0330fill.baf~
 EXTEND_TOP
 ~ar2401.bcs~ ~SandrahNPC/Areas/ar2401journ.baf~
 EXTEND_BOTTOM
@@ -7927,5 +7929,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~OH3020.bcs~ ~SandrahNPC/Areas/oh3020shar.baf~
 
-
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~TS5Bad.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/ThiefstrongSanOrg.d~
+END
 

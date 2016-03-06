@@ -990,6 +990,24 @@ SetGlobal("SanNaza","LOCALS",1)
 END
 
 IF
+!Global("PlayerLooksLikeDrow","GLOBAL",1)
+!Global("SanDPortrait","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanDPortrait","LOCALS",0)
+ApplySpellRES("Sandro0",Myself)
+END
+
+IF
+Global("PlayerLooksLikeDrow","GLOBAL",1)
+!Global("SanDPortrait","LOCALS",1)
+THEN
+RESPONSE #100
+SetGlobal("SanDPortrait","LOCALS",1)
+ApplySpellRES("Sandro1",Myself)
+END
+
+IF
 Global("SanDrowSleep","LOCALS",2)
 PartyRested()
 THEN

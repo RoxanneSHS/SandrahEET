@@ -64,6 +64,7 @@ END
 IF
 Global("SanArmb","GLOBAL",0)
 Global("ENDOFBG1","GLOBAL",2)
+LevelGT(Myself,14)
 OR(2)
 Global("Chapter","GLOBAL",18)
 XPGT(Myself,5000000)

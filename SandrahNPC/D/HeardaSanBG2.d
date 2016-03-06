@@ -87,7 +87,7 @@ DO~ SetGlobal("SanHaerRel1","GLOBAL",4)RealSetGlobalTimer("SanHaerRelT","LOCALS"
 ==BHAERDA~You are not one to lie, morning dove. Then how can my senses betray me so. I have felt it in you so very strongly when my eyes regained their sight freed from that wizard's spell whom you sent to the Nine Hells yourself...Only a powerful being can do such things, not a poor clayborne creature.~
 == BSANDR~ I am a priestess of Mystra, my goddess grants me some access to the Weave in her service. It is probably that connection that you have sensed.~
 ==BHAERDA~Maybe or maybe not. Are you under a spell not knowing who you are? But there is no spell that I can sense. Is it your goddess? If so, you are closer to her than any priest I have ever known is to his god.~
-== BSANDR~ I am Mystra's granddaughter, my friend.~
+== BSANDR~ I am Midnight's granddaughter, my friend.~
 ==BHAERDA~ Is it that or is it more? I must flutter now from your side to find it out.~
 EXIT
 

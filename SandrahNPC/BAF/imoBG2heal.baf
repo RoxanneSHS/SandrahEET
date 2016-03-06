@@ -1,12 +1,3 @@
-IF  
-AreaCheck("Ar1512")
-InParty("CVSandr")
-!Global("hf_Modify_Imoen","LOCALS",2)
-THEN
-RESPONSE #100
-SetGlobal("hf_Modify_Imoen","LOCALS",2)
-END
-
 IF
 InParty(Myself)
 InParty("CVSandr")
@@ -21,7 +12,7 @@ Interact(Player1)
 END
 
 IF
-Global("ImoenSpawned","GLOBAL",1)
+GlobalGT("Asylumplot","GLOBAL",40)
 Global("SanHealImo","GLOBAL",6)
 OR(7)
 SpellCastOnMe("CVSandr",CLERIC_CURE_LIGHT_WOUNDS)

@@ -30,11 +30,20 @@ Global("HaerResc","bg0146",0)
 THEN
 RESPONSE #100
 CreateCreature("DEATHKNI",[1424.2226],6)
-CreateCreature("Caddem2",[3458.1207],2)
-CreateCreature("Caddem11",[1917.2164],14)
-CreateCreature("Caddem16",[1733.1595],1)
-CreateCreature("Caddem6",[568.1186],10)
+CreateCreature("demgla01",[3458.1207],2)
+CreateCreature("dempit",[1917.2164],14)
+CreateCreature("balor01",[1733.1595],1)
+CreateCreature("ohbdem03",[568.1186],10)
 CreateCreature("DEATHKNI",[1248.1431],4)
 CreateCreature("DEATHKNI",[2528.1367],14)
 SetGlobal("HaerResc","bg0146",1)
+END
+
+IF
+Global("EndofBG1","Global",2)
+InMyArea("winski2")
+THEN
+RESPONSE #100
+ActionOverride("Winski2",DestroySelf())
+Continue()
 END

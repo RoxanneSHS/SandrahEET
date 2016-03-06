@@ -1,0 +1,8 @@
+IF
+Global("Sanfill","ar0330",0)
+THEN
+RESPONSE #100
+SetGlobal("Sanfill","ar0330",1)
+ActionOverride("Container 2",CreateItem("scrl07",0,0,0))
+Continue()
+END
