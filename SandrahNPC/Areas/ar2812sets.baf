@@ -7,3 +7,24 @@ THEN
 RESPONSE #100
 SetGlobal("SanAfterJon","GLOBAL",1)
 END
+
+IF
+Global("SanAfterJon","GLOBAL",3)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanElleInt","Ar2812",1)
+SetGlobal("SanAfterJon","GLOBAL",4)
+RestParty()
+END
+
+IF
+Global("SanAfterJon","GLOBAL",7)
+Global("SanElleInt","Ar2812",1)
+THEN
+RESPONSE #100
+SetGlobal("SanElleInt","Ar2812",2)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("cut59b")
+END

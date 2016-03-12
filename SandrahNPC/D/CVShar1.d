@@ -10,3 +10,12 @@ IF~AreaCheck("oh3020")~THEN CVshar1 MettMys
 
 ADD_TRANS_ACTION Ogrelead BEGIN 0 END BEGIN 0 END ~ GiveItemCreate("CVOGscr",Myself,0,0,0) ~
 
+CHAIN
+IF~Global("SanTalSeek","ar0204",1)~THEN CVTalop1 ArchSeek
+~A little seeker and a disturber of the peace.~
+DO~SetGlobal("SanTalSeek","ar0204",2)~
+==CVSandrJ~Disturber of peace? Is that not the description you would apply to yourself and your friends?~
+=~However, calling me a seeker in this place may be the indication that what I seek may be very close.~
+==CVTalop1~If you seek annihilation you have come to the right place, my dear.~DO~Enemy()~EXIT
+
+

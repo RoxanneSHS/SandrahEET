@@ -1,36 +1,4 @@
 IF
-Global("ENDOFBG1","GLOBAL",2)
-!Global("SanSharCom","GLOBAL",3)
-Global("Roadon","CVELM1",1)
-THEN
-RESPONSE #100
-SetGlobal("Roadon","CVELM1",0)
-SetGlobal("Criminal","GLOBAL",2)
-TriggerActivation("ToRoad",FALSE)
-Continue()
-END
-
-IF
-!Global("ENDOFBG1","GLOBAL",2)
-Global("Roadon","CVELM1",0)
-THEN
-RESPONSE #100
-SetGlobal("Roadon","CVELM1",1)
-TriggerActivation("ToRoad",TRUE)
-Continue()
-END
-
-IF
-Global("SanSharCom","GLOBAL",3)
-Global("Roadon","CVELM1",0)
-THEN
-RESPONSE #100
-SetGlobal("Roadon","CVELM1",1)
-TriggerActivation("ToRoad",TRUE)
-Continue()
-END
-
-IF
 GlobalGT("Katcut","GLOBAL",3)
 Global("BloomwExists","cvelm1",0)
 THEN

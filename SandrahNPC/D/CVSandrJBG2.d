@@ -200,7 +200,7 @@ IF~~THEN REPLY~ That would be Oghma's priests - the temple in the dock area of A
 END
 
 IF~~THEN BEGIN SanBabeHave1
-SAY ~ (Smiles) No I have not. I do not have many ideas about how life will really be for me when...if we ever finish the last of our quests. Many changes are yet to come, dear.~
+SAY ~ (Smiles) No, I have not. I do not have many ideas about how life will really be for me when...if we ever finish the last of our quests. Many changes are yet to come, dear.~
 IF~~ THEN REPLY~ You sound like you think this lifestyle will endure for a significant time for us?~ DO~ SetGlobal("SanBabeToo","LOCALS",1)~ GOTO SanBabeHave2
 END
 
@@ -2094,9 +2094,9 @@ SAY~Solaufein mentioned Eilistraee when we saved him. I am sure there are follow
 IF~~THEN REPLY~If it is just that...I trust you know what you are doing.~EXIT
 END
 
-IF~Global("SanProph","GLOBAL",9)~THEN BEGIN SanErrGith
+IF~Global("SanProph2","ar2100",1)~THEN BEGIN SanErrGith
 SAY~I am sorry for my error, <CHARNAME>, I have endangered you and our comrades unnecessarily.~
-IF~~THEN REPLY~ A strange reaction, Sandrah, you could not have foreseen that they would attack so senselessly.~ DO~SetGlobal("SanProph","GLOBAL",10)~GOTO SanErrGith2
+IF~~THEN REPLY~ A strange reaction, Sandrah, you could not have foreseen that they would attack so senselessly.~ DO~SetGlobal("SanProph2","ar2100",2)~GOTO SanErrGith2
 END
 
 IF~~THEN BEGIN SanErrGith2
@@ -2647,7 +2647,7 @@ IF~~THEN DO~ SetGlobal("SanTwrLo","GLOBAL",2) ClearAllActions() StartCutSceneMod
 END
 
 IF~~THEN BEGIN SanQuilBef1
-SAY~ Qilué Veladorn, or Eresseae Qilué Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar is drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
+SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar is drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
 IF~~THEN REPLY~ I see. I thought by mistake that she may be more closely related to you.~ DO~ SetGlobal("SanIntEllesInt1","GLOBAL",2)  SetGlobal("SanIntEllesInt2","GLOBAL",2)~GOTO SanQuilBef2
 END
 
@@ -2659,7 +2659,7 @@ IF~~THEN REPLY~ You chose your heroines quite well and without restrictions to r
 END
 
 IF~~THEN BEGIN SanQuilBef11
-SAY~ Qilué Veladorn, or Eresseae Qilué Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar was drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
+SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar was drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
 IF~~THEN REPLY~ I see. That means that your mother as well was a descendant of Mystra, not only your father.~ DO~ SetGlobal("SanIntEllesInt1","GLOBAL",2)  SetGlobal("SanIntEllesInt2","GLOBAL",2)~GOTO SanQuilBef2
 END
 
@@ -2813,6 +2813,7 @@ END
 IF~~THEN BEGIN SanHeriMyst11
 SAY~ A fact that destroyed my mother as it was known to another god as well - Bhaal.~
 IF~~THEN REPLY~ You already allured to the fact that I was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
+IF~~THEN REPLY~ You already allured to the fact that the bhaalspawn was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
 IF~~THEN REPLY~ His plan was more than mere revenge - but in which way?~  GOTO SanHeriMyst12
 END
 
@@ -3305,7 +3306,7 @@ INTERJECT_COPY_TRANS UDSOLA01 79 SanMeetsPhaere
 END
 
 INTERJECT_COPY_TRANS UDSOLA01 104 SanSolSnif
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ Whoever you are in Ched Nasad and why you came to our city, you impress me each time anew. You risk a lot but you are not foolish, you seem to have the power to back up your plan. But I will not wiggle free of one bondage to exchange it with the next one, mind that. For the case at hand - all you are required to do is bring back some artefact to the witch that makes her believe you did the deed.~

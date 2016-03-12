@@ -1,5 +1,7 @@
 IF
 Global("SanMystApp","arpo31",0)
+OR(2)
+Global("tz_Dead_Cyric","GLOBAL",1)
 Global("Dead_Cyric","GLOBAL",1)
 PartyHasItem("DDrelic1")
 InMyArea("CVSandr")

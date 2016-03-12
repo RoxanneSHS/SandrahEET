@@ -17,7 +17,7 @@ END
 
 IF~~THEN BEGIN reag2
 SAY ~ Name's Reagan - or rather was...when I was alive, b'fore they got me.~
-IF~~ THEN REPLY~ You are the fisherman from Waterdeep that is suspected to have gone too close to the ship, aren't you?~ DO~SetGlobal("SanVampWDQuest","GLOBAL",19)~GOTO reag3
+IF~~ THEN REPLY~ You are the fisherman from Waterdeep who is suspected to have gone too close to the ship, aren't you?~ DO~SetGlobal("SanVampWDQuest","GLOBAL",19)~GOTO reag3
 END
 
 IF~~THEN BEGIN reag3

@@ -6230,9 +6230,10 @@ EXTEND_TOP
 ~Ra5501.bcs~ ~SandrahNPC/Areas/Ra5501endcult.baf~
 EXTEND_TOP
 ~Ra5500.bcs~ ~SandrahNPC/Mods/Ra5500end.baf~
+END
+
 COMPILE ~SandrahNPC/D/Cultsa7.d~
 COMPILE ~SandrahNPC/BAF/Cultsa7.baf~
-END
 
 COPY ~SandrahNPC\CRE/CVCultGi.cre~ ~override\CVCultGi.cre~
 SAY NAME1 Renata
@@ -6892,7 +6893,7 @@ END ELSE BEGIN
   PRINT ~Adrian NPC not detected - skipped Sandrah addition~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~C-Aran.cre~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~C-Aran7.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/AranWhitSanBG2.d~
 EXTEND_TOP
 ~C-Aran.bcs~ ~SandrahNPC/Mods/AranWhiSan.baf~
@@ -7701,7 +7702,8 @@ COMPILE
 ~SandrahNPC/Mods/RasaadSanBG1.d~
 ~SandrahNPC/Mods/DornSan.d~
 ~SandrahNPC/Mods/HexxatSan.d~
-~SandrahNPC/d/Cvshar1.d~
+~SandrahNPC/D/Cvshar1.d~
+~SandrahNPC/Mods/SuelleTDD.d~
 
 EXTEND_TOP
 ~Neera_.bcs~ ~SandrahNPC/Mods/NeeraBant.baf~
@@ -7932,4 +7934,7 @@ EXTEND_TOP
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~TS5Bad.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/ThiefstrongSanOrg.d~
 END
+
+
+
 

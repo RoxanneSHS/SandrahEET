@@ -1,5 +1,5 @@
-BEGIN CVXEP2
 BEGIN Sankhelb
+BEGIN CVXEP2
 
 IF~ NumTimesTalkedTo(0)~ THEN BEGIN 1
 SAY~ This must be a joke! Not even Elminster himself takes the time to come and rescue his goddess but this ragged band of adventurers.~

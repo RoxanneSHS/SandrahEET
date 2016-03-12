@@ -26,11 +26,11 @@ END
 IF
 Global("udMind","GLOBAL",51)
 Dead("udsimyaz")
-GlobalLT("SanProph","GLOBAL",9)
+Global("SanProph2","ar2100",0)
 InMyArea("CVSandr")
 THEN
 RESPONSE #100
-SetGlobal("SanProph","GLOBAL",9)
+SetGlobal("SanProph2","ar2100",1)
 END
 
 IF

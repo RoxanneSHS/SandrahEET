@@ -1,7 +1,7 @@
 BEGIN CVRingo
 
 CHAIN
-IF~ NumTimesTalkedTo(0)~ THEN CVRingo WDret1
+IF~ NumTimesTalkedTo(0) !AreaCheck("CVElm1")~ THEN CVRingo WDret1
 ~ Sandrah! What a splendid surprise to see you at your temple, my child.~
 == BSANDR~ Ringhontal, dear, it is nice to be here once more and see you all again.~
 == CVRingo ~ As far as we hear out here, you are faring well in your missions of Mystra on the Sword Coast. And, let your old tutor add this, you have become a really wonderful young woman.~
@@ -176,7 +176,7 @@ DO~SetGlobal("SanVampWDQuest","GLOBAL",25)~
 == BSANDR~ You read me well, my friend. (Sandrah and you report of your investigation and the destruction of the portal.)~
 == CVRingo ~And even ol' Reagan is back again. I just pity the poor crew of the Harare and the families they left behind.~
 == BSANDR~ Take this donation from my own purse, Ringhontal, and make sure they will receive the support of our Temple in any way.~
-== CVRingo ~Well done, my girl. If you care to see a bit of a spectacle, <CHARNAME>, come to the harbour when you are ready. The destruction of the the ship and the portal by Mystra's powers will be a symbol for the people of Waterdeep that the threat on the town is over.~ DO~ AddexperienceParty(120000)~EXIT
+== CVRingo ~Well done, my girl. If you care to see a bit of a spectacle, <CHARNAME>, come to the harbour when you are ready. The destruction of the the ship and the portal by Mystra's powers will be a symbol for the people of Waterdeep that the threat on the town is over.~ DO~ AddexperienceParty(12000)~EXIT
 
 CHAIN
 IF~ GlobalGT("SanWDTemplWi","GLOBAL",9) ~ THEN CVRingo WDTempHealDoneF

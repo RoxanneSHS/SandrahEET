@@ -5562,6 +5562,7 @@ Global("SanSharInt","GLOBAL",27)
 !See([ENEMY])
 CombatCounter(0)
 !AreaType(DUNGEON)
+!Global("Chapter","Global",19)
 InParty("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 THEN

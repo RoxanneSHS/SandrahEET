@@ -53,13 +53,23 @@ SetGlobal("Sanhealhex","GLOBAL",9)
 END
 
 IF
+AreaCheck("CVEls3")
+Global("SANVAMPWDQUEST","Global",16)
+Global("SanVampHex","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanVampHex","LOCALS",1)
+END
+
+IF
 InParty("CVSandr")
 InParty(Myself)
-OR(4)
+OR(5)
 Global("Sanhealhex","GLOBAL",3)
 Global("Sanhealhex","GLOBAL",5)
 Global("Sanhealhex","GLOBAL",7)
 Global("Sanhealhex","GLOBAL",9)
+Global("SanVampHex","LOCALS",1)
 See("CVSandr")
 !StateCheck(Player1,CD_STATE_NOTVALID)
 !StateCheck(Myself,CD_STATE_NOTVALID)

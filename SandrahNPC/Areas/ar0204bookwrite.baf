@@ -54,3 +54,22 @@ SetGlobal("SanNoNeht","ar0204",1)
 ActionOverride("CVSandr",MoveToObject(Player1))
 ActionOverride("CVSandr",Interact("CVSandr"))
 END
+
+IF
+Global("OpenArcive","ar0204",2)
+Global("SanTalSeek","ar0204",0)
+THEN
+RESPONSE #100
+SetGlobal("SanTalSeek","ar0204",1)
+CreateCreature("CVTALOP1",[3225.2567],4)
+END
+
+IF
+Global("SanTalSeek","ar0204",2)
+THEN
+RESPONSE #100
+SetGlobal("SanTalSeek","ar0204",3)
+CreateCreature("CVTALOW1",[3289.2739],5)
+CreateCreature("CVTALOW1",[3303.2802],7)
+CreateCreature("udumb02",[3041.2572],7)
+END

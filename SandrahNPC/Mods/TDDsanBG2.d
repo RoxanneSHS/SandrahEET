@@ -103,7 +103,7 @@ IF~~THEN REPLY~A kind of family meeting in a remote sense, isn't it.~ GOTO Alus2
 END
 
 IF~~THEN BEGIN Alus2
-SAY~Being one of the seven sisters, the daughters of Mystra, she is indeed sibling of Qilué Veladorn in my anchestory. She is the Defender of Silverymoon and also became the protector of Drizzt when he came to the surface.~
+SAY~Being one of the seven sisters, the daughters of Mystra, she is indeed sibling of Qilue Veladorn in my anchestory. She is the Defender of Silverymoon and also became the protector of Drizzt when he came to the surface.~
 =~I am afraid much more of my so-called *family* may be involved in here according to those words we have heard.~
 IF~~THEN REPLY~...some grandfather you are not particularly fond of...~DO ~SetGlobal("SanAlust","DD6001",3) ~EXIT
 END

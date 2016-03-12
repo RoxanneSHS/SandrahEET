@@ -9,6 +9,7 @@ NumTimesTalkedTo(0)
 !AreaCheck("ar1102")
 !AreaCheck("BG0200")
 !AreaCheck("BG0900")
+!AreaCheck("ar0204")
 Detect([PC])
 THEN
 RESPONSE #100

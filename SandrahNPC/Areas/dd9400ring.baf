@@ -8,6 +8,4 @@ CombatCounter(0)
 THEN
 RESPONSE #100
 SetGlobal("Sanprick","dd9400",1)
-ActionOverride("CVSandr",MoveToObject(Player1))
-ActionOverride("CVSandr",Interact("CVSandr"))
 END

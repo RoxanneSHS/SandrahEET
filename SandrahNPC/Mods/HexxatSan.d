@@ -48,6 +48,17 @@ DO~SetGlobal("Sanhealhex","GLOBAL",10)~
 ==BHexxat~If one day I would ask you for that *cure*, would you deny it to me? Would you do it out of...love?~
 ==Bsandr~I would do it - out of mercy.~EXIT
 
+CHAIN
+IF WEIGHT #-2~Global("SanVampHex","LOCALS",1) ~THEN BHexxat Vamphwd
+~They are not like us...I mean not like me...not natural.~
+DO~ SetGlobal("SanVampHex","LOCALS",2)~
+==Bsandr~With *natural* you mean those vampires are of a different type than you and others we have met.~
+==BHexxat~(Sigh) I know you think of us as being unnatural beings, Sandrah. These creatures here are nothing I recognise of being related to my state.~
+==Bsandr~A different *breed* of vampires. This gets interesting.~
+==BHexxat~(Sigh) Too bad the vampire next to you never triggered this interest in you.~
+==Bsandr~The woman who once was may have done so. To restore her would be a challenge - but I would not do that against her will.~
+==BHexxat~Let us solve this riddle at hand. Maybe we can come back to this other topic sometime.~EXIT
+
 REPLACE_ACTION_TEXT  ~renal~ ~SetGlobal("PlayerHasStronghold","GLOBAL",1)~ ~~
 
 EXTEND_BOTTOM Renal 48
