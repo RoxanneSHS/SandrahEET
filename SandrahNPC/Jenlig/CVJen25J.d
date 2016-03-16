@@ -89,7 +89,7 @@ END
 
 CHAIN
 IF~~THEN CVJen25J Ship2
-~Enforcer ship is to battle the mightiest foes of githyanki, the renegade Githzerai.~
+~Enforcer ship is to battle the mightiest foe of githyanki, the renegade Githzerai.~
 ==BSandr25~It is no coincidence that it appears on our plane right now, right Jen'lig?~
 ==CVJen25J~There is no single Githzerai on the Prime. Planewalker commander would know. (Hiss) Is force send after other *foe*.~
 ==BSandr25~They chase another renegade this time - you.~

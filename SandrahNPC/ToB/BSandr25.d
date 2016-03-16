@@ -69,14 +69,14 @@ END
 
 IF~~ THEN BEGIN AmaSanBalt3
 SAY~...and even <CHARNAME> is manipulated by her, as we follow more or less a plan provided by her.~
-IF~~THEN REPLY~The main difference may be that this <CHARNAME> you speak of is aware of it - or at least the ever watchful consellor is.~ GOTO AmaSanBalt4
+IF~~THEN REPLY~The main difference may be that this <CHARNAME> you speak of is aware of it - or at least the ever watchful counselor is.~ GOTO AmaSanBalt4
 IF~~THEN REPLY~Can you provide any alternative?~ GOTO AmaSanBalt4
 END
 
 IF~~ THEN BEGIN AmaSanBalt4
 SAY~We are used and we know it, only I see no other method to get to the heart of this matter other than by this way - our recent visit to my father and my sister have confirmed that. We must get inside of this conspiracy or we will become victims ourself.~
 IF~~THEN REPLY~ This method is one we do not use for the first time. I count on you to notify me when we should let our masks fall.~EXIT
-IF~~THEN REPLY~ We successfully acted like that before. The surprise of our foes has always delighted me.~ EXIT
+IF~~THEN REPLY~ We successfully acted like that before. The surprise of our foe has always delighted me.~ EXIT
 IF~~THEN REPLY~ You can trust the mightiest and cleverest of the Bhaalspawns to use the situation to our advantage.~EXIT
 END
 

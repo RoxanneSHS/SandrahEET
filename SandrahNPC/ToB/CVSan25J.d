@@ -74,12 +74,25 @@ IF~~THEN BEGIN SanOpenLum1
 SAY~I have made notes of all the scribbled madness we found in this Keep, let me look at Carson's book again...Hmm, yes,....I see...~
 =~She starts to manipilate the different devices of the machine while the humming and vibration increases steadily.~
 IF~~THEN REPLY~ STOP - stop it before you blow us all to the abyss.~EXIT
-IF~~THEN REPLY~(Let her continue.)~DO~CreateCreature("GORLUM",[3269.2159],0)~GOTO SanOpenLum2
+IF~~THEN REPLY~(Let her continue.)~GOTO SanOpenLum2
 END
 
 IF~~THEN BEGIN SanOpenLum2
 SAY~(She pulls the last lever and steps back a bit.) That should be it.~
-IF~~THEN EXTERN Gorlum2 15
+=~You hear the crackle of energy and the pop of power from the formerly inactive magical gate in the northeast corner of the room. The way down to the next level is now open.~
+IF~~THEN DO~EraseJournalEntry(63824)
+SetGlobal("StairButton","GLOBAL",1)
+SetGlobal("circle","GLOBAL",0)
+SetGlobal("square","GLOBAL",0)
+SetGlobal("triangle","GLOBAL",0)
+SetGlobal("red","GLOBAL",0)
+SetGlobal("blue","GLOBAL",0)
+SetGlobal("green","GLOBAL",0)
+SetGlobal("short","GLOBAL",0)
+SetGlobal("medium","GLOBAL",0)
+SetGlobal("long","GLOBAL",0)
+SetGlobal("counter","GLOBAL",0)
+AddXP2DA("PLOT6D")~ EXIT
 END
 
 IF~~THEN BEGIN SanOpenLum3
@@ -150,7 +163,7 @@ END
 
 IF~~THEN BEGIN SanCyricwar1
 SAY~ Is that not apparent, my love? Ao appointed Bhaal's role as the god of murder to my grandfather, among his other tasks. Any form of restoration of his predessesor means a stab at Cyric's domain.~
-IF~~THEN REPLY~ In this case he must be an opponent to our foes - and a possible ally for us.~ GOTO SanCyricwar2
+IF~~THEN REPLY~ In this case he must be an opponent to our foe - and a possible ally for us.~ GOTO SanCyricwar2
 IF~~THEN REPLY~ I will never NEVER cooperate with the mad God of Lies!~ GOTO SanCyricwar2
 END
 
@@ -294,8 +307,8 @@ END
 
 IF~~THEN BEGIN SanPoPla12
 SAY~ Even if they work together on a temporary basis, in the end it will be only one who can become the rising god. Once they have reached their initial goal the fight among them will start. You - you are the common enemy. On the one hand you possess much of what they need - hence the single attempt of Illasera on you, on the other hand only their combined power may be able to defeat you.~
-IF~~THEN REPLY~ All of this seems to make sense, lovely counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
-IF~~THEN REPLY~ It seems our goal will be to meet them one by one but never face them together, lovely counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
+IF~~THEN REPLY~ All of this seems to make sense, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
+IF~~THEN REPLY~ It seems our goal will be to meet them one by one but never face them together, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 IF~~THEN REPLY~ You were right long ago, my love, when you told me that there is no way to escape my destiny.~ DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 END
 
@@ -462,6 +475,19 @@ SAY~ You still dare to compare me with that drow slut. Grrr, wait until tonight,
 IF~~THEN DO ~ SetGlobal("SanDream25","LOCALS",3)~EXIT
 END
 
+//Gorion Wraith
+IF ~Global("SanGoriWraith","Global",2) ~ THEN BEGIN Sangoriwr1
+SAY~He was correct, I still seek revenge for the murder of my mother Khalindra.~
+IF~~THEN REPLY~I cannot believe what you say!~ GOTO Sangoriwr2
+IF~~THEN REPLY~You do not accuse me, you can't!~ GOTO Sangoriwr2
+IF~~THEN REPLY~You sound as crazy as this crazy whatever-it-was!~ GOTO Sangoriwr2
+END
+
+IF~~THEN BEGIN Sangoriwr2
+SAY~I seek revenge and I seek justice and I know I will be able to claim it. Not from you, my love, but from the one who really did it. I will be by your side when he faces his verdict.~
+IF~~ THEN REPLY~Now I understand. You talk of Bhaal...~DO~SetGlobal("SanGoriWraith","Global",3) ~EXIT
+END
+
 //Nyalee
 IF~Global("SanTempGard","ar5202",1)~ THEN BEGIN SanGarWD1
 SAY~This must once have been a lovely forest with a sacred temple before evil took possession of it.~
@@ -532,7 +558,7 @@ END
 
 IF~~THEN BEGIN SanWronassumpt7
 SAY~ You are a genius once again, <CHARNAME>. How could we have missed that?~
-IF~~THEN REPLY~ Your father replied *Do not worry about the little one, the Realm of Undermountain is not accessible to our foes.*~ GOTO SanWronassumpt8
+IF~~THEN REPLY~ Your father replied *Do not worry about the little one, the Realm of Undermountain is not accessible to our foe.*~ GOTO SanWronassumpt8
 END
 
 IF~~THEN BEGIN SanWronassumpt8
@@ -811,3 +837,11 @@ CHAIN
 IF~~THEN CVSan25J AloundoToB11
 ~Bhaal may have had another ending of the story in mind when he revealed the vision to Alaundo - but until now all of Alaundo's other prophesies have come true - why not this one as well. ~
 =~*In turning she mumbles*:(Even if it may require some extra effort from our side to come to that end.)~EXIT
+
+I_C_T Hgwra01 18 SanGoriWraith
+==HGwra01 IF~InParty("CVSandr")~ THEN ~I turned YOU away! (His finger darts out to Sandrah.) I tried to keep Cyric's poison from my ward, the deceiver Mystra, the false helper. All combined in the blood that you let into your heart and your bed, <CHARNAME>.~
+==CVSan25J IF~InParty("CVSandr")~ THEN ~If you were really Gorion, you would mention your friend Elminster, his beloved Khalindra - my parents whom you knew - instead of spitting out such insults. Who are you really, imposter?~
+==HGwra01 IF~InParty("CVSandr")~ THEN ~Yes, Khalindra...You are a fool, <CHARNAME>, to think a spawn of Cyric and Mystra would ever forgive or even love a Bhaalspawn. Revenge is all she ever thinks about.~
+==CVSan25J IF~InParty("CVSandr")~ THEN ~Were it true, we surely would not stand here today side by side - to face you and afterwards face the one who sent you...and defeat both.~
+END
+

@@ -1,0 +1,16 @@
+IF
+Global("Entered1","CVUMO2",0)
+THEN
+RESPONSE #100
+SetGlobal("Entered1","CVUMO2",1)
+CreateCreature("jelmus01",[824.2305],4)
+CreateCreature("jelgre01",[735.2178],6)
+CreateCreature("jelmus01",[385.2358],4)
+CreateCreature("jeloch01",[301.2446],6)
+CreateCreature("jelgra01",[594.2067],4)
+CreateCreature("jelgre01",[710.1953],6)
+CreateCreature("jelgre01",[501.2347],4)
+CreateCreature("jelmus01",[221.2493],6)
+CreateCreature("jeloch01",[770.2287],4)
+CreateCreature("jelgra01",[715.2235],6)
+END

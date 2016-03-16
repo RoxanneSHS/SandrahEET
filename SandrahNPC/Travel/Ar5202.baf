@@ -18,6 +18,18 @@ SetGlobal("SanTempGard","ar5202",1)
 END
 
 IF
+Global("SanGoriWraith","Global",1)
+InParty("CVSandr")
+Dead("HGwra01")
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanGoriWraith","Global",2)
+END
+
+IF
 InParty("Yasraena")
 InParty("CVSandr")
 Dead("YSMom")

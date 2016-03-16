@@ -1,0 +1,127 @@
+IF
+  Name("amtgen01",Myself)
+  NumTimesTalkedTo(0)
+  Global("D0Spawn6300","GLOBAL",1)
+THEN
+  RESPONSE #100
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Global("TethyrBattleStart","GLOBAL",0)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+  Name("amtgen01",Myself)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  OR(2)
+    Global("D0Attacked","LOCALS",1)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+  GlobalGT("D0Virtue","GLOBAL",15)
+THEN
+  RESPONSE #100
+    SetGlobal("TethyrBattleStart","GLOBAL",1)
+    DisplayStringHead(Myself,@148)
+    IncrementGlobal("D0Change","GLOBAL",-4)
+    Shout(125)
+    Enemy()
+END
+
+IF
+  Name("amtgen01",Myself)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  OR(2)
+    Global("D0Attacked","LOCALS",1)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+  GlobalGT("D0Virtue","GLOBAL",5)
+  GlobalLT("D0Virtue","GLOBAL",16)
+THEN
+  RESPONSE #100
+    SetGlobal("TethyrBattleStart","GLOBAL",1)
+    DisplayStringHead(Myself,@148)
+    IncrementGlobal("D0Change","GLOBAL",-3)
+    Shout(125)
+    Enemy()
+END
+
+IF
+  Name("amtgen01",Myself)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  OR(2)
+    Global("D0Attacked","LOCALS",1)
+    AttackedBy([GOODCUTOFF],DEFAULT)
+  GlobalLT("D0Virtue","GLOBAL",6)
+THEN
+  RESPONSE #100
+    SetGlobal("TethyrBattleStart","GLOBAL",1)
+    DisplayStringHead(Myself,@148)
+    IncrementGlobal("D0Change","GLOBAL",-2)
+    Shout(125)
+    Enemy()
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  !Name("amtgen01",Myself)
+  !Dead("amtgen01")
+THEN
+  RESPONSE #100
+    ActionOverride("amtgen01",SetGlobal("D0Attacked","LOCALS",1))
+    Shout(125)
+    Enemy()
+END
+
+IF
+  AttackedBy([GOODCUTOFF],DEFAULT)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  Dead("amtgen01")
+THEN
+  RESPONSE #100
+    SetGlobal("TethyrBattleStart","GLOBAL",1)
+    Shout(125)
+    Enemy()
+END
+
+IF
+  Allegiance(Myself,NEUTRAL)
+  Global("TethyrBattleStart","GLOBAL",1)
+THEN
+  RESPONSE #100
+    Enemy()
+END
+
+IF
+  AreaCheck("ar6300")
+  Name("amtgen01",Myself)
+  Global("TethyrBattleStart","GLOBAL",2)
+THEN
+  RESPONSE #100
+    SetGlobal("TethyrBattleStart","GLOBAL",3)
+    DisplayStringHead(Myself,@147)
+    ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
+  AreaCheck("ar6300")
+  !Name("amtgen01",Myself)
+  GlobalGT("TethyrBattleStart","GLOBAL",1)
+  Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetDialog("d0army")
+    FaceObject("amtgen01")
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetDialog("d0army")
+    FaceObject(Player1)
+  RESPONSE #100
+    ChangeEnemyAlly(Myself,NEUTRAL)
+    SetDialog("d0army")
+    FaceObject(NearestMyGroupOfType)
+END

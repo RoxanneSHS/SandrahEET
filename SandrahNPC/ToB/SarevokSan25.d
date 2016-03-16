@@ -2,7 +2,7 @@ CHAIN
 IF~Global("SanSarev","GLOBAL",2)~ THEN BSandr25 FirstSarev
 ~It is a slightly irritating feeling to walk as comrad with one who has once been our *enemy number one*.~
 DO~SetGlobal("SanSarev","GLOBAL",3)~
-==BSAREV25 ~ If that is irritating for you then you can imagine how it is to walk beside the one whose gleaming deadly hammer was the last consious vision I had before I ended my first mortal life.~
+==BSAREV25 ~ If that is irritating for you then you can imagine how it is to walk beside the one whose gleaming deadly hammer was the last conscious vision I had before I ended my first mortal life.~
 ==BSandr25~In some way we had to meet way back on the Sword Coast, even if it was a long process to reveal why I was searching you.~
 ==BSAREV25 ~ You were searching me? That explains a lot and on the other hand opens a stream of new questions. It explains the persistent power I felt opposing me, the destructive results that I had trouble attributing to my staggering sibling - before I learned about the counselor that was on my trail with <PRO_HIMHER>.~
 ==BSandr25~You must know that I left Waterdeep for the Sword Coast in search of a Bhaalspawn. The one that was insaminated to my mother and resulted in her early death. I did not know whom I may find and which alignment he or she would have...I found <CHARNAME>...~

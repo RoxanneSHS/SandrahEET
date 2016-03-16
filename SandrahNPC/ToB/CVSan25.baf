@@ -19,7 +19,7 @@ Interact("CVSandr")
 END
 
 IF  
-OR(17)
+OR(18)
 Global("SanSerBha","GLOBAL",3)
 Global("SanChoices","ar6400",2)
 Global("SanDream25","LOCALS",1)
@@ -37,6 +37,7 @@ Global("SanSidedBalt","LOCALS",1)
 Global("SanDoubtKhalTOB","LOCALS",1)
 Global("SanAfterJon","GLOBAL",8)
 Global("SanWhichWay","ar4500",1)
+Global("SanGoriWraith","Global",2)
 See(Player1)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)

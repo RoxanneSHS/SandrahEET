@@ -979,6 +979,7 @@ COPY ~SandrahNPC\Areas/cvumo1LM.bmp~ ~override\cvumo1LM.bmp~
 COPY ~SandrahNPC\Areas/cvumo1SR.bmp~ ~override\cvumo1SR.bmp~
 
 COPY ~SandrahNPC\Areas/cvumo2.ARE~ ~override\cvumo2.ARE~
+     COMPILE     ~SandrahNPC/Areas/cvumo2.baf~
 COPY ~SandrahNPC\Areas/cvumo2.mos~ ~override\cvumo2.mos~
 COPY ~SandrahNPC\Areas/cvumo2.tiz~ ~override\cvumo2.tiz~
 COPY ~SandrahNPC\Areas/cvumo2.wed~ ~override\cvumo2.wed~
@@ -1761,15 +1762,15 @@ COPY ~SandrahNPC/ITM/acqxemer.itm~ ~override/acqxemer.itm ~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BGDEX16.SPL~ THEN BEGIN
-COPY ~SandrahNPC/Misc/BGDEX16.SPL~ ~override/BGDEX16.SPL ~
+COPY ~SandrahNPC/Misc2/BGDEX16.SPL~ ~override/BGDEX16.SPL ~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BGDEX17.SPL~ THEN BEGIN
-COPY ~SandrahNPC/Misc/BGDEX17.SPL~ ~override/BGDEX17.SPL ~
+COPY ~SandrahNPC/Misc2/BGDEX17.SPL~ ~override/BGDEX17.SPL ~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ACREVIS.BMP~ THEN BEGIN
-COPY ~SandrahNPC/Misc/ACREVIS.BMP~ ~override/ACREVIS.BMP ~
+COPY ~SandrahNPC/Misc2/ACREVIS.BMP~ ~override/ACREVIS.BMP ~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Gauthsu.cre~ THEN BEGIN
@@ -2825,7 +2826,6 @@ SAY NAME2 Shar
 COPY ~SandrahNPC/Cre/CVQidrn.CRE~ ~override/CVQidrn.CRE~
 SAY NAME1 @563
 SAY NAME2 @563
-COPY ~SandrahNPC/Misc/CVQidr.bmp~ ~override/CVQidr.bmp~
 
 COPY ~SandrahNPC\CRE/WatchMys.cre~ ~override\WatchMys.cre~
 
@@ -7935,6 +7935,20 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~TS5Bad.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/ThiefstrongSanOrg.d~
 END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~NTDeathk.bcs~ THEN BEGIN
+COPY_EXISTING ~Deathknr.bcs~ ~override/NTDeathk.bcs~
+COPY_EXISTING ~Deathknr.bcs~ ~override/NTDeath1.bcs~
+COPY_EXISTING ~NTDeathk.cre~ ~override/NTDeathk.cre~
+              WRITE_ASCII 0x248 ~NTDeathk~
+COPY_EXISTING ~NTDeath1.cre~ ~override/NTDeath1.cre~
+              WRITE_ASCII 0x248 ~NTDeath1~
+END
 
-
-
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~d0oasis9.spl~ THEN BEGIN
+COMPILE ~SandrahNPC/oasis/amtgen01.d~ USING   ~SandrahNPC/oasis/oasis.tra~
+COMPILE ~SandrahNPC/oasis/d0hosti.baf~
+COPY_EXISTING ~AR6300.ARE~ ~override~
+   REPLACE_TEXTUALLY ~HOSTILE~ ~D0HOSTI~ (8)
+COPY ~SandrahNPC/oasis/d0amtgen.wav~ ~override~
+COPY ~SandrahNPC/oasis/d0oasis9.spl~ ~override~
+END
