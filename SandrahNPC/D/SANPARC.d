@@ -560,7 +560,7 @@ IF ~~ THEN BEGIN Choice24
 SAY ~State specifics.~
 IF ~Global("CVAR6100","GLOBAL",1)~ THEN REPLY ~Sendai's Enclave~ DO ~SetGlobal("SanTravel","GLOBAL",140)~ EXIT
 IF ~Global("RZAR6101","GLOBAL",1)~ THEN REPLY ~Entrance in Sendai´s enclave~ DO ~SetGlobal("SanTravel","GLOBAL",141)~ EXIT
-IF ~Global("RZAR6104","GLOBAL",1)~ THEN REPLY ~Crossroads~ DO ~SetGlobal("SanTravel","GLOBAL",142)~ EXIT
+IF ~Global("CVAR6104","GLOBAL",1)~ THEN REPLY ~Crossroads~ DO ~SetGlobal("SanTravel","GLOBAL",142)~ EXIT
 IF ~Global("RZAR6106","GLOBAL",1)~ THEN REPLY ~Beholder~ DO ~SetGlobal("SanTravel","GLOBAL",143)~ EXIT
 IF ~Global("CVAR6108","GLOBAL",1)~ THEN REPLY ~Sendai´s inner sanctum~ DO ~SetGlobal("SanTravel","GLOBAL",144)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice3

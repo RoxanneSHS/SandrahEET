@@ -1,0 +1,22 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(3)
+SetGlobal("StartEndBios","cvrtf1",52)
+FadeToColor([20.0],0)
+Wait(1)
+LeaveAreaLUAPanic("AR6200","",[1233.1207],0)
+LeaveAreaLUA("AR6200","",[1233.1207],0)
+ActionOverride(Player2,LeaveAreaLUA("AR6200","",[1227.1254],2))
+ActionOverride(Player3,LeaveAreaLUA("AR6200","",[1357.1261],4))
+ActionOverride(Player4,LeaveAreaLUA("AR6200","",[1294.1296],6))
+ActionOverride(Player5,LeaveAreaLUA("AR6200","",[1155.1258],7))
+ActionOverride(Player6,LeaveAreaLUA("AR6200","",[1436.1278],10))
+Wait(1)
+FadeFromColor([20.0],0)
+Wait(3)
+EndCutSceneMode()
+SetGlobal("StartEndBios","AR6200",1)
+END

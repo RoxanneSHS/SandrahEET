@@ -138,7 +138,6 @@ ADD_TRANS_TRIGGER Finmel01 6
 ~!InParty("CVJenlig")~
 
 EXTEND_BOTTOM Finmel01 6
-IF ~InParty("CVJenlig")~ THEN DO ~SetGlobal("ShesInIt","LOCALS",1)
-ActionOverride("cutspy",DestroySelf()) Enemy()SetGlobal("CVJenTOBRet","GLOBAL",14)
+IF ~InParty("CVJenlig")~ THEN DO ~SetGlobal("CVJenTOBRet","GLOBAL",14) SetGlobal("ShesInIt","LOCALS",1) ActionOverride("cutspy",DestroySelf()) Enemy()
 ~ EXIT
 END

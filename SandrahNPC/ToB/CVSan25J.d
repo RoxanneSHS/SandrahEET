@@ -708,7 +708,8 @@ END
 IF~~THEN BEGIN EvilPrincFin3
 SAY~I say, it is us - no, in this final case it will be you, you alone - that will be the final obstacle for anyone to use the essence that Bhaal left behind.~
 =~Which ultimately will mean, this essence will be in your hands, should we succeed. It will be at your disposal.~
-IF~~THEN REPLY~Are you implying that I...that I will have the choice to raise Bhaal or to replace him?~DO~SetGlobal("SanWhichWay","ar4500",2)~GOTO EvilPrincFin4
+IF~Alignment(Player1,MASK_EVIL)~THEN REPLY~Are you implying that I...that I will have the choice to raise Bhaal or to replace him?~DO~SetGlobal("SanWhichWay","ar4500",2)~GOTO EvilPrincFin4
+IF~!Alignment(Player1,MASK_EVIL)~THEN REPLY~Are you implying that I...that I will have the choice to raise Bhaal or to replace him?~DO~SetGlobal("SanWhichWay","ar4500",2)~GOTO EvilPrincFin8
 END
 
 IF~~THEN BEGIN EvilPrincFin4
@@ -720,9 +721,23 @@ IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighma
 IF~~THEN REPLY~And become a power of the Realms myself, different from the heritage that has haunted me for so long?~GOTO EvilPrincFin6
 END
 
+IF~~THEN BEGIN EvilPrincFin8
+SAY~We knew that for a long time already, did we not?~
+=~No, what I pointed out is that you have more options than just those two.~
+=~You could destroy the essence and prevent any ursurper of Bhaal's Throne to succeed, including your dead *father* himself...~
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful with you?~ GOTO EvilPrincFin9
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful?~ GOTO EvilPrincFin9
+IF~~THEN REPLY~And become a power of the Realms myself, different from the heritage that has haunted me for so long?~GOTO EvilPrincFin10
+END
+
 IF~~THEN BEGIN EvilPrincFin5
 SAY~This may be an option, but would it satisfy you? Would you not wish forever for the power to change the Realms to your liking?~
 IF~~THEN GOTO EvilPrincFin6
+END
+
+IF~~THEN BEGIN EvilPrincFin9
+SAY~This may be an option, but would it satisfy you? Would you not wish forever for the power to change the Realms to your liking?~
+IF~~THEN GOTO EvilPrincFin10
 END
 
 IF~~THEN BEGIN EvilPrincFin6
@@ -730,9 +745,19 @@ SAY~What the Prime needs is Love and Hope - murder and war will exist without th
 =~Who could be a better symbol for Love and Hope than one who is condemned as *Evil* by those who consider themselves superior and *Good*!!~
 IF~~THEN REPLY~Oh, no, you're not really asking me to become some Illmater type deity with the power I may gain!~EXIT
 IF~~THEN REPLY~Oh, no, I'm surely fed up with all this celestial circus - all I want is a peaceful life for my own.~EXIT
-IF~~THEN REPLY~Become a deity of Love and Hope. Hm, I am afraid it will not be so easy. I can think of many that will oppose to that.~DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) ~EXIT
+IF~~THEN REPLY~Become a deity of Love and Hope. Hm, I am afraid it will not be so easy. I can think of many that will oppose to that.~DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) SetGlobal("ConvinceBalth","GLOBAL",4) ~EXIT
 IF~~THEN REPLY~Sounds like you want to talk me out of the oportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
-IF~~THEN REPLY~I count on my counselor to help me find the adequate solution should any of these options really be within my reach.~ DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) ~EXIT
+IF~~THEN REPLY~I count on my counselor to help me find the adequate solution should any of these options really be within my reach.~ DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) SetGlobal("ConvinceBalth","GLOBAL",4) ~EXIT
+END
+
+IF~~THEN BEGIN EvilPrincFin10
+SAY~What the Prime needs is Love and Hope - murder and war will exist without the aid of a God.~
+=~Who could be a better symbol for Love and Hope than one who is condemned as *Evil* by those who consider themselves superior and *Good*!!~
+IF~~THEN REPLY~Oh, no, you're not really asking me to become some Illmater type deity with the power I may gain!~EXIT
+IF~~THEN REPLY~Oh, no, I'm surely fed up with all this celestial circus - all I want is a peaceful life for my own.~EXIT
+IF~~THEN REPLY~Become a deity of Love and Hope. Hm, I am afraid it will not be so easy. I can think of many that will oppose to that.~DO~SetGlobal("ConvinceBalth","GLOBAL",4)~EXIT
+IF~~THEN REPLY~Sounds like you want to talk me out of the oportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
+IF~~THEN REPLY~I count on my counselor to help me find the adequate solution should any of these options really be within my reach.~ DO~SetGlobal("ConvinceBalth","GLOBAL",4)~EXIT
 END
 
 //Sided with Balthasar

@@ -111,7 +111,6 @@ SetGlobal("CVJenTOBRet","GLOBAL",3)
 END
 
 IF
-GlobalGT("PPEvilChoices","GLOBAL",2)
 Global("SanWhichWay","ar4500",0)
 Global("BeginChallenge4","GLOBAL",6)
 GlobalGT("Sanpoints","GLOBAL",90)
