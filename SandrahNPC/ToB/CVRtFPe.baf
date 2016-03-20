@@ -2,12 +2,17 @@ IF
 True()
 THEN
 RESPONSE #100
-CutSceneId("Pellig")
-Polymorph(CLERIC_FEMALE_HUMAN)
-DisplayStringHead(Myself,@597)
+CutSceneId("CVSandr")
+Wait(1)
+CreateCreatureObjectOffset("Pellig3","CVsandr",[25.25])
+Deactivate("Pellig")
+Wait(1)
+DisplayStringHead("Pellig",@597)
 Wait(1)
 CreateCreatureObjectDoor("solar",Player1,0,0,0)
 Wait(6)
+ActionOverride("Pellig3",SetNumTimesTalkedTo(1))
+SetGlobal("Pellswitch","cvrtf2",1)
 SetGlobal("SanBeginRtF","GLOBAL",2)
 ActionOverride("Pellig",StartDialogueNoSet([PC]))
 END

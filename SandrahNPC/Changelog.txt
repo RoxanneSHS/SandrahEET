@@ -11,8 +11,6 @@ Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
 Revised dependecies on other mega mods
 Kit implementation refined
 Improved Jen'lig
-Bio endscreens enabled if no transition to RtF
-Fluent RtF transition
 
 Removed Ajantis Crossmod
 Removed RE Crossmod

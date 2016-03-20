@@ -116,6 +116,17 @@ Continue()
 END
 
 IF
+Global("SanBeginRtF","GLOBAL",3)
+Global("Pellswitch","cvrtf2",1)
+THEN
+RESPONSE #100
+SetGlobal("Pellswitch","cvrtf2",2)
+ActionOverride("Pellig3",DestroySelf())
+Wait(1)
+Activate("Pellig")
+END
+
+IF
 RealGlobalTimerExpired("RtFWaitDel","cvrtf2")
 Global("SanBeginRtF","GLOBAL",0)
 THEN
@@ -153,7 +164,7 @@ Global("SanRaiseMys","GLOBAL",7)
 THEN
 RESPONSE #100
 SetGlobal("SanRaiseMys","GLOBAL",8)
-IncrementChapter("")
+SetGlobal("Chapter","Global",25)
 AddJournalEntry(@591,QUEST)
 END
 

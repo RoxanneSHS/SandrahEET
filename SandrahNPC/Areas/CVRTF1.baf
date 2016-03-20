@@ -65,11 +65,27 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+Global("PlayerChoseEssence","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("StartEndBios","cvrtf1",2)
+FadeToColor([30.0],0)
+Wait(4)
+FadeFromColor([30.0],0)
+ClearAllActions()
+Wait(2)
+StartCutSceneMode()
+StartCutScene("CVNoRtF")
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("Sarevok")
 Global("SarevokBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("SarevokBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Sarevok",LeaveParty())
 ActionOverride("Sarevok",DestroySelf())
 Continue()
@@ -82,6 +98,7 @@ Global("AnomenBio","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("AnomenBio","GLOBAL",1)
+SmallWait(1)
 ActionOverride("Anomen",LeaveParty())
 ActionOverride("Anomen",DestroySelf())
 Continue()
@@ -95,6 +112,7 @@ THEN
 RESPONSE #100
 SetGlobal("ViconiaBio","cvrtf1",1)
 SetGlobal("RTFVicMove","GLOBAL",1)
+SmallWait(1)
 ActionOverride("Viconia",LeaveParty())
 ActionOverride("Viconia",EscapeAreaMove("CVUMO5",1395,1058,7))
 Continue()
@@ -107,6 +125,7 @@ Global("JaheiraBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("JaheiraBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Jaheira",LeaveParty())
 ActionOverride("Jaheira",EscapeAreaMove("ar0308",530,670,14))
 Continue()
@@ -119,6 +138,7 @@ Global("HexxatBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("HexxatBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Hexxat",LeaveParty())
 ActionOverride("Hexxat",EscapeAreaMove("ar0800",1460,1970,10))
 Continue()
@@ -133,6 +153,7 @@ RESPONSE #100
 SetGlobal("NeeraBio","cvrtf1",1)
 ActionOverride("Neera",LeaveParty())
 ActionOverride("Neera",EscapeAreaMove("OH6200",1402,1151,7)
+Continue()
 END
 
 IF
@@ -142,6 +163,7 @@ Global("RasaadBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("RasaadBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Rasaad",LeaveParty())
 ActionOverride("Rasaad",DestroySelf())
 Continue()
@@ -154,6 +176,7 @@ Global("DornBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("DornBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Dorn",LeaveParty())
 ActionOverride("Dorn",DestroySelf())
 Continue()
@@ -166,6 +189,7 @@ Global("AerieBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("AerieBio","cvrtf1",1)
+SmallWait(1)
 ActionOverride("Aerie",LeaveParty())
 ActionOverride("Aerie",DestroySelf())
 Continue()
@@ -415,6 +439,7 @@ SmallWait(1)
 SetGlobal("RTFYasMove","GLOBAL",1)
 ActionOverride("Yasraena",LeaveParty())
 ActionOverride("Yasraena",EscapeAreaMove("CVUMO5",1355,1018,11))
+Continue()
 END
 
 IF
@@ -434,12 +459,10 @@ END
 IF
 Global("StartEndBios","cvrtf1",1)
 Global("BalthazarFights","GLOBAL",1)
-Gender(Player1,FEMALE)
 Global("BalthazarBio","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("BalthazarBio","GLOBAL",1)
-TextScreen("BALTHFND")
 SmallWait(1)
 ActionOverride("Balth2",DestroySelf())
 Continue()
@@ -452,6 +475,7 @@ THEN
 RESPONSE #100
 SmallWait(1)
 SetGlobal("RTFBreMove","GLOBAL",1)
+SmallWait(1)
 ActionOverride("ACBre",LeaveParty())
 ActionOverride("ACBre",EscapeAreaMove("BG2626",4299,1920,6))
 Continue()
@@ -904,19 +928,6 @@ Continue()
 END
 
 IF
-Global("StartEndBios","cvrtf1",1)
-Global("PlayerChoseEssence","GLOBAL",0)
-THEN
-RESPONSE #100
-SetGlobal("StartEndBios","cvrtf1",2)
-SetCursorState(FALSE)
-ClearAllActions()
-Wait(2)
-StartCutSceneMode()
-StartCutScene("CVNoRtF")
-END
-
-IF
 Global("SanRaiseMys","GLOBAL",5)
 THEN
 RESPONSE #100
@@ -925,7 +936,14 @@ ActionOverride(Player1,DropInventory())
 Wait(2)
 SetGlobal("SanTravel","GLOBAL",0)
 SetGlobal("SanRaiseMys","GLOBAL",6)
+FadeToColor([30.0],0)
+Wait(4)
+FadeFromColor([30.0],0)
+ClearAllActions()
+Wait(2)
 StartCutSceneMode()
 StartCutScene("CVcut300")
 END
+
+
 

@@ -6413,6 +6413,8 @@ END ELSE BEGIN
   PRINT ~Saerilet not detected - skipped ~
 END
 
+COMPILE ~SandrahNPC/Mods/CVDrizR.d~
+
 ACTION_IF FILE_EXISTS_IN_GAME ~driz21.cre~ THEN BEGIN
 EXTEND_TOP
 ~CVsandra.bcs~ ~SandrahNPC/BAF/drizztbg2san.baf~    
@@ -6431,7 +6433,6 @@ COMPILE
 ~SandrahNPC/Mods/CVEndisn.baf~
 ~SandrahNPC/Mods/drireplace.d~
 ~SandrahNPC/Mods/SanALROR.d~
-~SandrahNPC/Mods/CVDrizR.d~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Mods/SanRotRepl.baf~
 EXTEND_TOP
