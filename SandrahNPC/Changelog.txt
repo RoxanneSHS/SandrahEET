@@ -19,3 +19,12 @@ Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
 Added Karlini rescue
 Neera can get planar sphere if PC not mage
 Hexxat can get thieves guild if PC not thief
+Dark Horizon Extension adapted
+
+____________________________________________
+RtF
+
+Transition from ToB to RtF renewed
+Restored all NPC bios if game ends at ToB by player choice
+Adapted travelling system to new worldmap capabilities 
+Added journal entries for *new generation* NPC personal quests

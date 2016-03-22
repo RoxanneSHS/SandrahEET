@@ -5863,8 +5863,7 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~CMGEORG1.DLG~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/DarkHorSan.d~
 EXTEND_TOP ~cm3376.bcs~ ~SandrahNPC/Areas/cm3376golman.baf~
-COPY_EXISTING ~ar1000.ARE~ ~override~
-   WRITE_ASCII 0x4eb0 ~cm0754~
+EXTEND_TOP ~ar1001.bcs~ ~SandrahNPC/Mods/ar1001.baf~
 COPY_EXISTING ~cmsec08.cre~ ~override/cvwetler.cre~
               SAY NAME1 Wetler
               SAY NAME2 Wetler
@@ -5931,10 +5930,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~F_Ettin.CRE~ THEN BEGIN
 EXTEND_BOTTOM ~Zargal.bcs~ ~SandrahNPC/Mods/Zargal.baf~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~psteos.cre~ THEN BEGIN   
-COMPILE ~SandrahNPC/Mods/PSModtalk.d~
-COMPILE ~SandrahNPC/Mods/CVMyMe.baf~
-EXTEND_TOP ~CVSandra.bcs~ ~SandrahNPC/Mods/PSModSanEvents.baf~
 COPY ~SandrahNPC/CRE/CVMyMe.CRE~ ~override/CVMyMe.CRE~
      SAY NAME1 @717
      SAY NAME2 @717
@@ -5942,6 +5937,11 @@ COPY ~SandrahNPC/Misc2/cvMyMe.spl~ ~override/cvMyMe.spl~
      SAY 0xc  @717
      SAY 0x8  @717
      SAY 0x50 @717
+ COMPILE ~SandrahNPC/Mods/CVMyMe.baf~    
+
+ACTION_IF FILE_EXISTS_IN_GAME ~psteos.cre~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/PSModtalk.d~
+EXTEND_TOP ~CVSandra.bcs~ ~SandrahNPC/Mods/PSModSanEvents.baf~
 COPY_EXISTING ~PSMeli.cre~ ~override/PSMeli.cre~
               WRITE_ASCII 0x34 ~RTMelis~
 PRINT ~ Planar Sphere Mod detected - Sandrah's Mystra part added~
@@ -6414,6 +6414,9 @@ END ELSE BEGIN
 END
 
 COMPILE ~SandrahNPC/Mods/CVDrizR.d~
+COPY ~SandrahNPC/Mods/CVDRIZR.CRE~ ~override/CVDRIZR.CRE~
+     SAY NAME1 @758
+     SAY NAME2 @758
 
 ACTION_IF FILE_EXISTS_IN_GAME ~driz21.cre~ THEN BEGIN
 EXTEND_TOP
@@ -6449,9 +6452,6 @@ EXTEND_TOP
 ~alror.bcs~ ~SandrahNPC/Mods/SanAlror.baf~
 EXTEND_TOP
 ~entdjin.bcs~ ~SandrahNPC/Mods/sandjin.baf~
-COPY ~SandrahNPC/Mods/CVDRIZR.CRE~ ~override/CVDRIZR.CRE~
-     SAY NAME1 @758
-     SAY NAME2 @758
 COPY ~SandrahNPC/Kit/cvdra28.spl~ ~override/cvdra28.spl~
      SAY 0xc  @866
      SAY 0x8  @866

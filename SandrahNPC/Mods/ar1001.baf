@@ -1,0 +1,12 @@
+IF
+Global("CMOversightEndGame","GLOBAL",4)
+THEN
+RESPONSE #100
+ClearAllActions()
+ActionOverride(Player1,LeaveAreaLUA("cm0754","",[903.947],0))
+ActionOverride(Player2,LeaveAreaLUA("cm0754","",[903.947],0))
+ActionOverride(Player3,LeaveAreaLUA("cm0754","",[903.947],0))
+ActionOverride(Player4,LeaveAreaLUA("cm0754","",[903.947],0))
+ActionOverride(Player5,LeaveAreaLUA("cm0754","",[903.947],0))
+ActionOverride(Player6,LeaveAreaLUA("cm0754","",[903.947],0))
+END
