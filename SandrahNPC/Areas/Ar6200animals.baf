@@ -5,3 +5,70 @@ RESPONSE #100
 MoveGlobalObject("Pellig","CVSandr")
 MoveGlobalObject("haiass",Protagonist)
 END
+
+IF
+Dead("Finilla")
+Global("IllaseraDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("IllaseraDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",2)
+END
+
+IF
+Dead("finabaz")
+Global("AbazigalDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("AbazigalDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",1)
+END
+
+IF
+Dead("finyaga")
+Global("YagaDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("YagaDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",1)
+END
+
+IF
+Dead("finsend")
+Global("SendaiDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("SendaiDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",2)
+END
+
+IF
+Dead("finbalth")
+Global("BalthazarFights","GLOBAL",0)
+Global("BalthDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("BalthDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",2)
+END
+
+IF
+Dead("fingrom")
+Global("BalthazarFights","GLOBAL",1)
+DifficultyGT(EASY)
+Global("GromnirDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("GromnirDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",1)
+END
+
+IF
+Dead("finsarev")
+Global("SarevokFights","GLOBAL",1)
+Global("SarevokDead","AR6200",0)
+THEN
+RESPONSE #100
+SetGlobal("SarevokDead","AR6200",1)
+IncrementGlobal("FiveDead","AR6200",1)
+END

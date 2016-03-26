@@ -4073,6 +4073,8 @@ COPY_EXISTING ~F_Deadbo.cre~ ~override/F_Deadbo.cre~
               WRITE_ASCII 0x280 ~F_Deadbo~
 COPY_EXISTING ~Taerom.cre~ ~override/Taerom.cre~
               WRITE_ASCII 0x280 ~Taerom~
+COPY_EXISTING ~Amaran.cre~ ~override/Amaran.cre~
+              WRITE_ASCII 0x280 ~Amaran~
 
 ACTION_IF FILE_EXISTS ~shobsl01.cre~ THEN BEGIN
 COPY_EXISTING ~shobsl01.cre~ ~override/shobsl01.cre~

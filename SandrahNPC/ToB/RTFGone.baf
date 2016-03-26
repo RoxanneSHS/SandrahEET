@@ -1,6 +1,6 @@
 IF
 GlobalGT("SanBeginRTF","GLOBAL",1)
-OR(7)
+OR(8)
 AreaCheck("ar0602")
 AreaCheck("ar0603")
 Name("Jaheira",Myself)
@@ -8,6 +8,7 @@ Name("Kivan",Myself)
 Name("Edwin",Myself)
 Name("Nalia",Myself)
 Name("Branwen",Myself)
+Name("DeadKhalid",Myself)
 THEN
 RESPONSE #100
 DestroySelf()

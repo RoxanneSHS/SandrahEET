@@ -11,8 +11,10 @@ NumTimesTalkedTo(0)
 !AreaCheck("BG0900")
 !AreaCheck("ar0204")
 Detect([PC])
+Global("ChangeHos","LOCALS",0)
 THEN
 RESPONSE #100
+SetGlobal("ChangeHos","LOCALS",1)
 Enemy()
 DisplayStringWait("CVTALOP1",@699)
 Continue()

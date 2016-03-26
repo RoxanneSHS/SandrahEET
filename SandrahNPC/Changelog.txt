@@ -1,5 +1,6 @@
 VERSION 2.01
 ----------------
+NPC Trilogy
 
 Completely re-created for EET
 Adapted to new journal and worldmap capabilities
@@ -28,3 +29,7 @@ Transition from ToB to RtF renewed
 Restored all NPC bios if game ends at ToB by player choice
 Adapted travelling system to new worldmap capabilities 
 Added journal entries for *new generation* NPC personal quests
+Constant removal of Bhaal abilities from PC (slayer and pocket plane)
+
+Refined Cloakwood episode with Cynthaya and Faldorn
+Added Cespenar to Waterdeep
