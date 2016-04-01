@@ -2,7 +2,7 @@ IF
 Global("ys_SetVampChild","GLOBAL",2)
 InParty("CVSandr")
 PartyHasItem("YSVMPBLD")
-GlobalLT("Chapter","GLOBAL",16)
+GlobalLT("Chapter","GLOBAL",14)
 Global("Chavamjump","ar0801",0)
 Delay(12)
 THEN
@@ -20,7 +20,7 @@ SetGlobal("Chavamjump","ar0801",2)
 END
 
 IF
-GlobalGT("Chapter","GLOBAL",15)
+GlobalGT("Chapter","GLOBAL",13)
 Global("Chavamjump","ar0801",2)
 GlobalGT("ys_VampChildIsDead","GLOBAL",0)
 THEN

@@ -8,7 +8,7 @@ END
 
 IF
 GlobalLT("SanHaerRel1","GLOBAL",36)
-GlobalGT("Chapter","GLOBAL",21)
+GlobalGT("Chapter","GLOBAL",19)
 Global("HAerSwa","ar0510",0)
 InParty("CVSandr")
 !InParty("Haerdalis")

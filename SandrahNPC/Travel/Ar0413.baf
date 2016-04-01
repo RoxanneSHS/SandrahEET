@@ -8,7 +8,7 @@ END
 
 IF
 GlobalLT("SanValgyR","GLOBAL",13)
-GlobalGT("Chapter","GLOBAL",20)
+GlobalGT("Chapter","GLOBAL",18)
 Global("CVSpGol","ar0413",0)
 InParty("CVSandr")
 CombatCounter(0)

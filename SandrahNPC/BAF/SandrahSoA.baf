@@ -209,7 +209,7 @@ END
 IF
 Global("SanPidPack","GLOBAL",13)
 Global("ENDOFBG1","GLOBAL",2)
-Global("Chapter","GLOBAL",18)
+Global("Chapter","GLOBAL",16)
 THEN
 RESPONSE #100
 SetGlobal("SanPidPack","GLOBAL",14)
@@ -218,7 +218,7 @@ END
 IF
 Global("SanPidPack","GLOBAL",14)
 Global("ENDOFBG1","GLOBAL",2)
-Global("Chapter","GLOBAL",20)
+Global("Chapter","GLOBAL",18)
 THEN
 RESPONSE #100
 SetGlobal("SanPidPack","GLOBAL",15)
@@ -902,7 +902,7 @@ SetGlobal("SanSHtiax","LOCALS",1)
 END
 
 IF
-Global("Chapter","GLOBAL",18)
+Global("Chapter","GLOBAL",16)
 OR(2)
 GlobalGT("change","AR1514",0)
 GlobalGT("B!HalSlayer","GLOBAL",0)
@@ -919,7 +919,7 @@ SetGlobal("SanSlayHelp","LOCALS",1)
 END
 
 IF
-Global("Chapter","GLOBAL",18)
+Global("Chapter","GLOBAL",16)
 OR(2)
 GlobalGT("change","AR1514",0)
 GlobalGT("B!HalSlayer","GLOBAL",0)
@@ -1365,7 +1365,7 @@ END
 
 //Suldanessar
 IF
-Global("Chapter","GLOBAL",21)
+Global("Chapter","GLOBAL",19)
 AreaCheck("ar2800")
 See("Suelf11")
 Global("SanSuElfHeal","GLOBAL",0)
@@ -1399,9 +1399,8 @@ AddSpecialAbility("CVDra25")
 END
 
 IF
-Global("Chapter","GLOBAL",21)
+Global("Chapter","GLOBAL",19)
 Global("SanDra25","LOCALS",0)
-Global("ENDOFBG1","GLOBAL",2)
 THEN
 RESPONSE #100
 SetGlobal("SanDra25","LOCALS",2)

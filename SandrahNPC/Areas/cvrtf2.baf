@@ -164,7 +164,7 @@ Global("SanRaiseMys","GLOBAL",7)
 THEN
 RESPONSE #100
 SetGlobal("SanRaiseMys","GLOBAL",8)
-SetGlobal("Chapter","Global",25)
+SetGlobal("Chapter","Global",23)
 AddJournalEntry(@591,QUEST)
 END
 

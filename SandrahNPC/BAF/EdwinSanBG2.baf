@@ -1,11 +1,4 @@
 IF
-GlobalGT("SanBeginRTF","GLOBAL",1)
-THEN
-RESPONSE #100
-DestroySelf()
-END
-
-IF
 Global("ENDOFBG1","GLOBAL",2)
 GlobalGT("Cowscroll","GLOBAL",2)
 Global("EdwinJob","GLOBAL",1)

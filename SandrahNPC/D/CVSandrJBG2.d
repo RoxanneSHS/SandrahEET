@@ -51,7 +51,7 @@ IF~!AreaCheck("ar0602") Global("SanNotCapt","LOCALS",0)Global("SanSentBelt","GLO
 IF ~Global("SanNotCapt","LOCALS",1)~ THEN REPLY~ Please continue with your report about our kidnapping and your finding us.~ GOTO SanNotCapt3
 IF ~Global("SanMysRise","GLOBAL",2)~ THEN REPLY ~ Sandrah, are you familiar with the studies of Narvantial of Soubar?~ GOTO SanMysSucc11
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ GOTO SanBLine11
-IF~Global("Chapter","GLOBAL",16) Global("SanAmnAdv1","LOCALS",0) ~ THEN REPLY ~ You have already taken a look around town, beloved counselor. Where do we start our search for our *besta friend*, you think?~ GOTO SanAmnAdvA
+IF~Global("Chapter","GLOBAL",14) Global("SanAmnAdv1","LOCALS",0) ~ THEN REPLY ~ You have already taken a look around town, beloved counselor. Where do we start our search for our *besta friend*, you think?~ GOTO SanAmnAdvA
 IF ~Global("SanHendak","GLOBAL",2) !AreaCheck("ar0406")~ THEN REPLY~ Those slavers in the Copper Coronet have angered you deeply, Sandrah, especially what they did to the children.~ GOTO SanHendls1
 IF~GlobalGT("SanAdrianL","Global",5) Global("SanAskAdrian","LOCALS",0)InParty("RH#Adrian")~ THEN REPLY ~Adrian?~DO~SetGlobal("SanAskAdrian","LOCALS",1)~GOTO SanAdri1
 IF~GlobalGT("SanAranH","GLOBAL",9) Global("SanAskAran","LOCALS",0)InParty("C-Aran")~ THEN REPLY ~Aran?~DO~SetGlobal("SanAskAran","LOCALS",1)~GOTO SanAranL1
@@ -61,10 +61,10 @@ IF~ Global("FreeSlaves","GLOBAL",1) Global("SanHendak","GLOBAL",3)~ THEN REPLY ~
 IF~ Global("ys_FindElminster","GLOBAL",1) Global("SanAskLief","LOCALS",0) ~ THEN REPLY ~ Sandrah, have you ever heard or met this mage Lief. Is he to be trusted or may this be another trap misusing your father's name?~ GOTO SanAskLief1
 IF~GlobalGT("GettingApprentices","GLOBAL",0) Global("SanPCHassphere","GLOBAL",0) ~ THEN REPLY~ Sandrah, as a priestess of Mystra you are probably the best suitable counselor in matters of this planar sphere.~ GOTO SanSphereAdv1
 IF~ Global("KangaxxQuest","GLOBAL",1) Global("SanKangAdv","LOCALS",0)~ THEN REPLY ~ This talking skull, Kangaxx, he's a lich, right, Sandrah?~ GOTO SanKanAdv1
-IF~ GlobalGT("SanDrizBG2","LOCALS",10) GlobalLT("Chapter","GLOBAL",18) Global("SanPCvsDriz","LOCALS",0) InParty("Driz2")~ THEN REPLY ~ Sandrah, I have thought long about your relationship to Drizzt and your will to help him in his quest.~ GOTO SanPCvsDriz1
+IF~ GlobalGT("SanDrizBG2","LOCALS",10) GlobalLT("Chapter","GLOBAL",16) Global("SanPCvsDriz","LOCALS",0) InParty("Driz2")~ THEN REPLY ~ Sandrah, I have thought long about your relationship to Drizzt and your will to help him in his quest.~ GOTO SanPCvsDriz1
 IF~ GlobalGT("waukleofree","GLOBAL",3) InMyArea("Pellig") Global("SanPelltru","LOCALS",0)~THEN REPLY~ Who - or what - do you think Pelligram really is?~ GOTO SanPelltru1
 IF ~ Global("SanPelltru","LOCALS",1)~ THEN REPLY~We talked about Pelligram recently and I remember we made the assumption that your Goddess Mystra arranged for the two of you to meet.~ GOTO SanPelltru4
-IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",15) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
+IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",13) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
 IF~ Global("PurskInf","LOCALS",0) OR(2) PartyHasItem("DDPkMap") AreaCheck("dd1900") ~ THEN REPLY~ My counselor, can you tell me something about Purskal?~GOTO SanPurskTalk1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF2
 IF~ Global("SanBrynAltern","LOCALS",2) GlobalLT("B!alternatives","GLOBAL",3)~THEN REPLY~ So murderous thieves or deadly vampires, those are the two choices we have to deal with to help Imoen. What do you think is the better one, counselor?~ GOTO TrySthNew2
@@ -804,7 +804,7 @@ IF~ GlobalGT("C#AjantisRitterSuche","GLOBAL",0) Global("SanGoldBall","LOCALS",0)
 IF~GlobalGT("SanAdrianL","Global",5) Global("SanAskAdrian","LOCALS",0)InParty("RH#Adrian")~ THEN REPLY ~Adrian?~DO~SetGlobal("SanAskAdrian","LOCALS",1)~GOTO SanAdri1
 IF~GlobalGT("SanAranH","GLOBAL",9) Global("SanAskAran","LOCALS",0)InParty("C-Aran")~ THEN REPLY ~Aran?~DO~SetGlobal("SanAskAran","LOCALS",1)~GOTO SanAranL1
 IF~Global("CVGodag","GLOBAL",9) Global("CVGodagJon","GLOBAL",1)~THEN REPLY~I still try to understand your talk with Irenicus concerning Gorion's dagger. ~DO~SetGlobal("CVGodag","GLOBAL",10)~GOTO GodagBG22
-IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",15) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
+IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",13) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
 IF~ Global("PurskInf","LOCALS",0) OR(2) PartyHasItem("DDPkMap") AreaCheck("dd1900") ~ THEN REPLY~ My counselor, can you tell me something about Purskal?~GOTO SanPurskTalk1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF2
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF2
@@ -2314,7 +2314,7 @@ IF~ Global("KangaxxQuest","GLOBAL",1) Global("SanKangAdv","LOCALS",0)~ THEN REPL
 IF ~ Global("SanPelltru","LOCALS",1)~ THEN REPLY~We talked about Pelligram recently and I remember we made the assumption that your Goddess mystra arranged for the two of you to meet.~ GOTO SanPelltru4
 IF~GlobalGT("GettingApprentices","GLOBAL",0) Global("SanPCHassphere","GLOBAL",0) ~ THEN REPLY~ Sandrah, as a priestess of Mystra you are probably the best suitable counselor in matters of this planar sphere.~ GOTO SanSphereAdv1
 IF~Global("SanVampWDQuest","GLOBAL",16)~ THEN REPLY~ Let us now enter that portal.~ GOTO DoWDVampQ6
-IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",15) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
+IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",13) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
 IF~ Global("PurskInf","LOCALS",0) OR(2) PartyHasItem("DDPkMap") AreaCheck("dd1900") ~ THEN REPLY~ Say, my counselor, can you tell me something about Purskal?~GOTO SanPurskTalk1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF2
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF2
