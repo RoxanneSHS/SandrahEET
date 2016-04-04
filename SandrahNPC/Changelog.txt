@@ -6,6 +6,7 @@ Completely re-created for EET
 Adapted to new journal and worldmap capabilities
 Optimised use of new game resources
 Sandrah's personal items restricted
+Items adjusted to EET
 
 New BG1 to BG2 transition
 Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod

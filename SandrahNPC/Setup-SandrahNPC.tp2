@@ -4131,6 +4131,8 @@ COPY_EXISTING ~gromg13.cre~ ~override/gromg13.cre~
               WRITE_ASCII 0x280 ~gromg13~
 COPY_EXISTING ~Raiken.cre~ ~override/Raiken.cre~
               WRITE_ASCII 0x34 ~Tevens~
+COPY_EXISTING ~chalcy01.cre~ ~override~
+              WRITE_ASCII 0x34 ~cyrics~
 COPY_EXISTING ~BlackL.cre~ ~override/BlackL.cre~
               WRITE_ASCII 0x34 ~TSBlackL~
               WRITE_ASCII 0x280 ~BlackL~
@@ -4474,7 +4476,8 @@ COPY_EXISTING ~magnus01.sto~ ~override/magnus01.sto~
 ADD_STORE_ITEM + ~mcmbow01~ #1 #0 #0 ~IDENTIFIED~ #1
 COPY ~SandrahNPC/Itm/mcmbow01.itm~ ~override/mcmbow01.itm~
 SAY NAME1 @952
-SAY NAME2 @952 
+SAY NAME2 @952
+SAY DESC @952
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~shop01.sto~ THEN BEGIN

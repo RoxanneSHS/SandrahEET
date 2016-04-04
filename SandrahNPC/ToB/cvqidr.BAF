@@ -534,6 +534,7 @@ Spell(LastSeenBy(Myself),CLERIC_IMPLOSION)
 END
 
 IF
+See(NearestEnemyOf(Myself))
 HaveSpell(ENEMY_CLERIC_HARM)
 RandomNum(3,1)
 Range(LastSeenBy(Myself),10)
@@ -595,6 +596,7 @@ Spell(LastSeenBy(Myself),WIZARD_PIERCE_MAGIC)
 END
 
 IF
+See(NearestEnemyOf(Myself))
 !HPLT(Myself,20)
 RandomNum(3,1)
 !StateCheck(LastSeenBy(Myself),STATE_IMPROVEDINVISIBILITY)
@@ -686,6 +688,7 @@ Spell(LastSeenBy(Myself),CLERIC_INSECT_PLAGUE)
 END
 
 IF
+See(NearestEnemyOf(Myself))
 HaveSpell(CLERIC_SILENCE_15_FOOT)
 OR(4)
 Class(LastSeenBy(Myself),BARD_ALL)
@@ -755,6 +758,7 @@ RunAwayFrom(NearestEnemyOf(Myself),45)
 END
 
 IF
+See(NearestEnemyOf(Myself))
 Range(LastSeenBy,10)
 HPPercentLT(Myself,40)
 !HPLT(Myself,20)
