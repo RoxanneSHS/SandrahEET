@@ -12,6 +12,9 @@ BG2300    S         RTF038      EntryN       19        1         BG5700   N     
 BG2300    N         RTF038      EntryN       19        1         BG5700   N        N        N        N        50
 BG2300    W         RTF038      EntryN       19        1         BG5700   N        N        N        N        50
 AR0020    E         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR0020    W         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR0020    N         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR0020    S         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
 RTF050    W         AR0020      ExitNE       46        1         ar0044   N        N        N        N        50
 RTF050    W         BG2300      Exit2300     56        1         ar0044   N        N        N        N        50
 RTF050    W         RTF038      EntryN       30        1         ar0044   N        N        N        N        50
@@ -20,6 +23,14 @@ AR0020    N         CVROA1      Exit2300     30        1         BG5700   AR0043
 AR0020    W         CVROA1      Exit2300     30        1         BG5700   AR0043   N        N        N        60
 AR0020    E         CVROA1      Exit2300     30        1         BG5700   AR0043   N        N        N        60
 AR0020    S         CVROA1      Exit2300     30        1         BG5700   AR0043   N        N        N        60
+AR5500    E         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR5500    W         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR5500    N         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR5500    S         RTF050      EntryE       46        1         RTF037   N        N        N        N        90
+AR5500    W         CVROA1      Exit2300     4         1         BG5700   N        N        N        N        50
+AR5500    N         CVROA1      Exit2300     4         1         BG5700   N        N        N        N        50
+AR5500    E         CVROA1      Exit2300     4         1         BG5700   N        N        N        N        50
+AR5500    S         CVROA1      Exit2300     4         1         BG5700   N        N        N        N        50
 
 
 

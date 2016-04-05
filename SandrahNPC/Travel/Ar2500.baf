@@ -28,5 +28,6 @@ THEN
 RESPONSE #100
 SetGlobal("NotDown","ar2500",1)
 SetGlobal("RTLouPlot","GLOBAL",13)
+SetGlobal("StartDrowElvenFight","GLOBAL",3)
 TriggerActivation("Tran2401",FALSE)
 END
