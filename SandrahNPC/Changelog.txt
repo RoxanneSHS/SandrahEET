@@ -7,6 +7,7 @@ Adapted to new journal and worldmap capabilities
 Optimised use of new game resources
 Sandrah's personal items restricted
 Items adjusted to EET
+Sandrah's spells revised
 
 New BG1 to BG2 transition
 Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
@@ -34,3 +35,5 @@ Constant removal of Bhaal abilities from PC (slayer and pocket plane)
 
 Refined Cloakwood episode with Cynthaya and Faldorn
 Added Cespenar to Waterdeep
+
+Option to continue with Times of Trouble Revisited
