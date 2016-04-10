@@ -7920,6 +7920,18 @@ LPF fj_are_structure
     fj_structure_type = entrance
     fj_name           = Exit4201
   END
+
+//bg4600 new entrance from rtf123
+COPY_EXISTING ~bg4600.ARE~ ~override~
+LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 2398
+    fj_loc_y       = 3808
+    fj_orientation = 8
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = EXIT5100
+  END
   
 COPY_EXISTING ~bg0020.are~ ~override~
 WRITE_ASCII 0x4cc ~none~ #8
