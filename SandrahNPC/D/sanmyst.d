@@ -4,16 +4,16 @@ CHAIN
 IF ~ Global("SanEndBG1Plot","GLOBAL",3)~ THEN sanmyst Undercity1
 ~ (Looks around pensively) A location chosen well for the occasion. It has seen many sacrificed in the name of the God of Murder.~
 DO ~ SetGlobal("SanEndBG1Plot","GLOBAL",4)~
-== BSANDR ~ You have been here before during the ages, Mystra? Or shall address you as Midnight?~
+== CVSandrJ ~ You have been here before during the ages, Mystra? Or shall address you as Midnight?~
 == sanmyst~ Sandrah, Elminster's daughter, you have done well to be here on this day. A very good sign.~
-= ~ Midnight has never been here, although she has seen many places similar to this during her exploring days. Mystra has the knowledge of all places and all events that those who wore her mantle throughout the ages have encountered. By this I have seen this place and the deeds done here before.~
-== BSANDR ~ I have sensed your hand in the events that have led us here today. I have followed them but mostly I have followed what my heart told me to do.~
+= ~ Midnight has been here, she led Cyric to this place where Murder was defeated. Mystra has the knowledge of all places and all events that those who wore her mantle throughout the ages have encountered. By this I have seen this place and the deeds done here before.~
+== CVSandrJ ~ I have sensed your hand in the events that have led us here today. I have followed them but mostly I have followed what my heart told me to do.~
 == sanmyst~ This is the way your grandmother Midnight would have done it herself. ~
-== BSANDR ~ I confess that often I seek her paragon to guide me, instead of consulting my goddess.~
+== CVSandrJ ~ I confess that often I seek her paragon to guide me, instead of consulting my goddess.~
 == sanmyst~ (Laughs gently) You do well in that, as it will lead you to the same result anyway. Finding the way through the mortal example that was before you makes you see the path of Mystra just the same, Sandrah.~
-== BSANDR ~ Why have you come? Is it to confirm what I guess already - the story does not end today?~
-== sanmyst~ You are right, today is the closing of one chapter and the beginning of the next. It is for you and <CHARNAME> to continue what you have begun. ~
-== BSANDR ~ To finish what was not granted to yourself - or to Midnight - to provide the final end for the god of murder.~
+== CVSandrJ ~ Why have you come? Is it to confirm what I guess already - the story has not ended with Sarevok?~
+== sanmyst~ You are right, Sarevok's defeat was the closing of one chapter and the beginning of the next. It is for you and <CHARNAME> to continue what you have begun. ~
+== CVSandrJ ~ To finish what was not granted to yourself - or to Midnight - to provide the final end for the god of murder.~
 == sanmyst~ I see the expectations put on you by so many are not in vain. Yes, you may phrase your mission as such, and today you have experienced what this might mean. As the love for <CHARNAME> has grown in your heart, your motivation and your chances have largely grown, a circumstance that was not foreseen but is very much for the good. Continue together. Go with my blessing.~ DO~ AddexperienceParty(27500)AddXPObject("CVSandr",20000)~
 EXIT
 

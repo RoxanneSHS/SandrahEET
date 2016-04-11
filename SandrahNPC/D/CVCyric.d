@@ -1,6 +1,21 @@
 BEGIN CVCyr01
 
 CHAIN
+IF~AreaCheck("bd7230") Global("CyricVis","bd7230",1)~THEN CVCyr01 AftSare1s
+~Since you're HERE today I might as well take the opportunity to meet you, my friend.~
+DO~SetGlobal("CyricVis","bd7230",2)~
+=~I thank you, my friend, I really thank you for your help today.~
+=~ But most of all I thank you for your great deed at Baldur' Gate.~
+==CVSandrJ~A thief who has an interest in Sarevok's death?~
+==CVCyr01~Anyone who works against that former God of Murder's return does me a personal favour.~
+==CVSandrJ~I can think of only one creature to say such a thing...~
+==CVCyr01~I was paying my respect to <CHARNAME> not to some over-eager follower of that silly goddess.~
+END
+++~I don't like the way you call me *friend*.~+ AftSare2
+++~You warned me about the interest I would now attract, Sandrah. Do you know this new *friend*?~+ AftSare2
+++~Who the hell are you to know things that just happened in a secret place mere minutes ago?~+ AftSare2
+
+CHAIN
 IF~AreaCheck("BG0153") Global("CyricVis","BG0153",1)~THEN CVCyr01 AftSare1
 ~I thank you, my friend, I really thank you for your great deed.~
 DO~SetGlobal("CyricVis","BG0153",2)~

@@ -10,6 +10,6 @@ ActionOverride("CVJenlig",TakePartyItem("CVJensw2"))
 Wait(4) 
 CreateVisualEffectObject("SPUNHOLY","CVJenlig")
 ActionOverride("CVJenlig",ReallyForceSpell(Myself,DRYAD_TELEPORT))
-SetGlobal("JenGoHome","BG0146",3)
+SetGlobal("JenGoHome","bd0130",3)
 EndCutSceneMode() 
 END

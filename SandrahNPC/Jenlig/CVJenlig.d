@@ -25,9 +25,9 @@ SAY~(Hiss) Here is sword Jen'lig set out to find. Here is end of Sarevok from co
 IF~~THEN REPLY~You deserve it...you are a most persistent creature.~DO~StartCutSceneMode() SetGlobal("JenFouSem","BG0125",7) AddXPObject(Player1,1700)ActionOverride("CVJenlig",TakePartyItem("CVyensw2")) Wait(2) StartCutScene("JenLePl")~EXIT
 END
 
-IF~!InParty(Myself)AreaCheck("BG0146")GlobalGT("JenGoHome","BG0146",1) ~ THEN BEGIN HissL
+IF~!InParty(Myself)AreaCheck("bd0130")GlobalGT("JenGoHome","bd0130",1) ~ THEN BEGIN HissL
 SAY~Sandrah - my friend - live long and prosperous.~
-IF~~THEN DO~SetGlobal("JenGoHome","BG0146",4)~EXIT
+IF~~THEN DO~SetGlobal("JenGoHome","bd0130",4)~EXIT
 END
 
 IF~!InParty(Myself)!AreaCheck("BG0125")~ THEN BEGIN HissK

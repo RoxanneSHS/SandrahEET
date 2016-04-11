@@ -5054,6 +5054,8 @@ END
 
 IF
 Global("ENDOFBG1","GLOBAL",1)
+OR(2)
+AreaCheck("bd0120")
 AreaCheck("BG0123")
 Global("SanEndBG1Plot","GLOBAL",0)
 THEN

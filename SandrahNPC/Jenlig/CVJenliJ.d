@@ -477,7 +477,7 @@ SAY~(Hiss) Here is sword Jen'lig set out to find. Here is end of Sarevok from co
 IF~~THEN REPLY~You deserve it...my githyanki friend.~DO~SetGlobal("JenFouSem","BG0125",7) AddXPObject("CVJenlig",17000) AddXPObject(Player1,17000)ActionOverride("CVJenlig",TakePartyItem("CVyensw2"))~EXIT
 END
 
-IF~Global("JenGoHome","BG0146",1)~THEN BEGIN JenLeavePr1
+IF~Global("JenGoHome","bd0130",1)~THEN BEGIN JenLeavePr1
 SAY~Time is to deliver sword to my kin.~
 IF~~THEN REPLY~	What will you do?~GOTO JenLeavePr2
 IF~~THEN REPLY~	Will you leave us now? ~GOTO JenLeavePr2
@@ -503,7 +503,7 @@ END
 
 IF~~THEN BEGIN JenLeavePr4
 SAY~Was good time with commander. Jen'lig will not forget.~
-IF~~THEN DO~SetGlobal("JenGoHome","BG0146",2) EraseJournalEntry(@927) SetGlobal("CVJenTOBRet","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("JenLePl")~EXIT
+IF~~THEN DO~SetGlobal("JenGoHome","bd0130",2) EraseJournalEntry(@927) SetGlobal("CVJenTOBRet","GLOBAL",1) ClearAllActions() StartCutSceneMode() StartCutScene("JenLePl")~EXIT
 END
 
 IF ~Global("SanPCIdiot","LOCALS",1)~THEN BEGIN HereCity
