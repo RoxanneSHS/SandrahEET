@@ -1,0 +1,15 @@
+IF
+Global("BD_DISCOVERED","BD6000",2)
+Global("Pelligjump","BD6000",0)
+InParty("CVSandr")
+InMyArea("Pellig")
+THEN
+RESPONSE #100
+SetGlobal("Pelligjump","BD6000",1)
+ActionOverride("Pellig",ClearAllActions())
+StartCutSceneMode()
+Wait(1)
+ActionOverride("Pellig",JumpToPoint([4321.3104]))
+Wait(2)
+EndCutSceneMode()
+END

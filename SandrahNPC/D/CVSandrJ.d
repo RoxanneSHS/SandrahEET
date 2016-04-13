@@ -4097,6 +4097,10 @@ IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselv
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanWinskApp20
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanBLine1
+IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~Do you still think Caelar Argent may be a bhaalspawn?~DO~SetGlobal("SanDBdoubt","LOCALS",1)~GOTO SanDBIsShe1
+IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
+IF~Global("SanMadele","Global",1)~THEN REPLY~I am contemplating Madele's words about that Harper's raid and the stolen children.~GOTO SanMadel1
+IF~GlobalGT("bd_explosives_plot","Global",1) Global("SanLanciedb","Locals",0)~THEN REPLY~I could see that you had to restrain yourself quite a bit not to strike that Torsin de Lancie down with your hammer.~DO~SetGlobal("SanLanciedb","Locals",1)~ GOTO Lancie1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
@@ -4502,6 +4506,72 @@ END
 IF~~THEN BEGIN  WDShaThDis2
 SAY~I heard already rumours about the Commander when I left Waterdeep to come to the Sword Coast. The Open Lord seems to near retirement.~
 IF~~THEN REPLY~We should keep that in mind...maybe they will have a vacancy for a competent <PRO_RACE> in the future.~DO~SetGlobal("Orcalert","CVROA5",6) ~ EXIT
+END
+
+IF~~THEN BEGIN SanDBIsShe1
+SAY~What I can say for sure at this moment is that the Shining Lady really is eloquent. An aasimar she called herself - possible and an explanation for her so-called crusade. It does not exclude her from being bhaalspawn as well.~
+IF~~THEN REPLY~How that? ~GOTO SanDBIsShe2
+IF~~THEN REPLY~Can you explain what aasimars are?~GOTO SanDBIsShe2
+END
+
+IF~~THEN BEGIN SanDBIsShe2
+SAY~Aasimar are descendants of the celestials and thus oppose the fiendish. This may have happened in her case generations ago and does not mean her direct *father* cannot be Bhaal.~
+=~Anyway, there is a direct interest in you, my dear, an interest in your heritage. And - for our own situation it does not change the fact that the authorities in Baldur's Gate think that she is a bhaalspawn. The latter may be source for trouble regardless whether it is true or not.~
+IF~~THEN REPLY~When we left Baldur's Gate, I was sure we were doing a right thing - the assault, the panic of the people in the streets...Now that I met her, things get a second perspective.~ GOTO SanDBIsShe3
+END
+
+IF~~THEN BEGIN SanDBIsShe3
+SAY~Let us not be too quick in our judgement, my love. We have been used and misused before, fed with lies or half truth to act for one party or other. We will learn more soon and make our own decisions.~
+IF~~THEN REPLY~Just as usual, yes.~EXIT
+IF~~THEN REPLY~I can count on my counselor, so much is assured.~EXIT
+END
+
+IF~~THEN BEGIN SanDBIsShe4
+SAY~I do not fully agree with you, even if I wish it were otherwise. The reason not to use her own blood may be another...~
+IF~~THEN REPLY~I...I think I understand - some drops will not be sufficient for the ritual!~EXIT
+END
+
+IF~~THEN BEGIN SanMadel1
+SAY~You think Gorion may have been one of them?~
+IF~~THEN REPLY~One of those stolen children may have been me, don't you think?~ GOTO SanMadel2
+IF~~THEN REPLY~One of those stolen children may have been Sarevok, don't you think?~GOTO SanMadel2
+IF~~THEN REPLY~One of those stolen children may have been Caelar Argent, don't you think?~GOTO SanMadel2
+END
+
+IF~~THEN BEGIN SanMadel2
+SAY~The Bhaal priestess was mad from all she had to endure but even in madness she did not invent such an event. Fact is the raid happened. Bhaal children were *stolen* or rather rescued by the Harpers. These children survived the attempted sacrifice and early attempt to ressurect the God of Murder.~
+IF~~THEN REPLY~Thank you for staying analytic here. These children, bhaalspawns, may be alive today.~ GOTO SanMadel3
+IF~~THEN REPLY~The harper and the priestess in love fit quite well to what Gorion wrote in his letter.~GOTO SanMadel4
+END
+
+IF~~THEN BEGIN SanMadel3
+SAY~As it were Harpers who rescued them, we cannot exclude that Gorion was one of them. If so, those children we know about might have been among them or maybe this was just one operation of a series of attempts by the Harpers to rescue bhaal children from their early fate.~
+=~My love, I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
+IF~~THEN DO~SetGlobal("SanMadele","Global",2)~ EXIT
+END
+
+IF~~THEN BEGIN SanMadel4
+SAY~It does and we also have the *A* from Gorion's dagger as a further hint.~
+=~My love, I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
+IF~~THEN DO~SetGlobal("SanMadele","Global",2)~ EXIT
+END
+
+IF~~THEN BEGIN Lancie1
+SAY~I never liked that man in Waterdeep and this has not improved today.~
+IF~~THEN REPLY~Was he one of your former...~ GOTO Lancie2
+IF~~THEN REPLY~So you crossed each other's path in your hometown already.~ GOTO Lancie3
+END
+
+IF~~THEN BEGIN Lancie2
+SAY~NO, he was not one of my...oh, <CHARNAME>, do not insult my good taste.~
+IF~~THEN GOTO Lancie3
+END
+
+IF~~THEN BEGIN Lancie3
+SAY~He is a good example for the fact that Waterdeep's commander needs to retire in near future. Promoting men like Lancie...I propose you make up your own mind.~
+IF~~THEN REPLY~Sometimes your emotions get in the way of your counselling, let's drop the topic.~ EXIT
+IF~~THEN REPLY~I'm not happy with his attitude myself - on the other hand, he has the responsibility for many lives entrusted to him.~ EXIT
+IF~~THEN REPLY~Yes, he is Waterhavian arrogance condensed in a nut sized brain.~ EXIT
 END
 
 

@@ -1,0 +1,8 @@
+IF
+PartyHasItem("BDSilk01")
+Global("MakeBrage","BD7300",0)
+THEN
+RESPONSE #100
+SetGlobal("MakeBrage","BD7300",1)
+CreateCreature("cvbrage",[4608.1474],6)
+END

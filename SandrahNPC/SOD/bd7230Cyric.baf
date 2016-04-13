@@ -1,0 +1,10 @@
+IF
+Global("EndOfBG1","GLOBAL",1)
+InParty("CVSandr")
+Dead("BDDARSKH")
+Global("CyricVis","bd7230",0)
+THEN
+RESPONSE #100
+SetGlobal("CyricVis","bd7230",1)
+CreateCreature("CVCyr01",[1957.624],12)
+END

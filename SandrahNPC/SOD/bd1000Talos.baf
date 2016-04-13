@@ -1,0 +1,46 @@
+IF
+Global("ENDOFBG1","GLOBAL",1)
+Global("SanNWTalV","GLOBAL",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+CreateCreature("CVTalop1",[1379.2913],4)
+SetGlobal("SanNWTalV","GLOBAL",1)
+END
+
+IF
+Global("SanNWTalV","GLOBAL",3)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
+
+IF
+Global("SanNWTalV","GLOBAL",4)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+ClearAllActions()
+StartCutsceneMode()
+Wait(6)
+CreateCreatureObjectDoor("CVTalos","CVSandr",0,0,0)
+Wait(6)
+ActionOverride("CVTalos",CreateCreatureObjectOffset("CVTalow1",Myself,[125.125]))
+ActionOverride("CVTalos",CreateCreatureObjectOffset("CVTalow1",Myself,[-125.125]))
+ActionOverride("CVTalos",CreateCreatureObjectOffset("CVTalow1",Myself,[145.-125]))
+ActionOverride("CVTalos",CreateCreatureObjectOffset("CVTalow1",Myself,[-125.-145]))
+ActionOverride("CVTalos",CreateCreatureObjectOffset("CVTalow1",Myself,[-75.125]))
+SetGlobal("SanNWTalV","GLOBAL",5)
+Wait(2)
+EndCutSceneMode()
+END
+
+IF
+Global("SanNWTalV","GLOBAL",6)
+Delay(30)
+THEN
+RESPONSE #100
+ActionOverride("CVTalos",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanNWTalV","GLOBAL",7)
+END

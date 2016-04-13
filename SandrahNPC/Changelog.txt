@@ -9,7 +9,9 @@ Sandrah's personal items restricted
 Items adjusted to EET
 Sandrah's spells revised
 
+Added Sandrah Siege of Dragonspear contents
 New BG1 to BG2 transition
+
 Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
 Revised dependecies on other mega mods
 Kit implementation refined

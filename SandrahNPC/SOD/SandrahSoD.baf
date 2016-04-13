@@ -1,0 +1,130 @@
+IF
+AreaCheck("bd0130")
+OR(2)
+PartyHasItem("bdshpam1")
+PartyHasItem("bdshpam2")
+Dead("BDKorme1")
+Global("SanSodPamp","BD0130",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSodPamp","BD0130",1)
+END
+
+IF
+Global("bd_plot_003","bd0102",2)
+Global("Sansusp","bd0102",0)
+THEN
+RESPONSE #100
+SetGlobal("Sansusp","bd0102",1)
+END
+
+IF
+Global("SanSodQuest","Global",0)
+AreaCheck("bd1000")
+THEN
+RESPONSE #100
+SetGlobal("SanSodQuest","Global",1)
+END
+
+IF
+Global("bd_ddd","global",1)
+Global("SanSodQuest","Global",2)
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanSodQuest","Global",3)
+END
+
+IF
+Global("SanHeph","LOCALS",0)
+PartyHasItem("BDMisc63")
+THEN
+RESPONSE #100
+SetGlobal("SanHeph","LOCALS",1)
+END
+
+IF
+Global("SanHeph","LOCALS",1)
+Global("SanDBdoubt","LOCALS",1)
+Global("SanSodQuest","Global",4)
+THEN
+RESPONSE #100
+SetGlobal("SanSodQuest","Global",5)
+END
+
+IF
+Global("SanSoDBook","LOCALS",0)
+OR(2)
+PartyHasItem("BDBook11")
+Global("Chapter","Global",10)
+OR(2)
+AreaCheck("db2000")
+AreaCheck("db3000")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanSoDBook","LOCALS",1)
+END
+
+IF
+AreaCheck("bd2000")
+Global("SanBhaal","bd2000",1)
+See("Bdfists1")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanBhaal","bd2000",2)
+END
+
+IF
+Global("bd_ddd","global",3)
+GlobalGT("SanSodQuest","Global",5)
+Global("SanBDdream2","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanBDdream2","LOCALS",1)
+END
+
+IF
+Global("Chapter","Global",11)
+AreaCheck("bd4300")
+GlobalLT("SanSodQuest","Global",7)
+THEN
+RESPONSE #100
+SetGlobal("SanSodQuest","Global",7)
+END
+
+IF
+Global("bd_plot","global",621)
+AreaCheck("bd0104")
+InParty(Myself)
+Global("SanSodQuest","Global",8)
+THEN
+RESPONSE #100
+SetGlobal("SanSodQuest","Global",9)
+END
+
+IF
+OR(11)
+Global("SanSodPamp","BD0130",1)
+Global("Sansusp","bd0102",1)
+Global("SanSodQuest","Global",1)
+Global("SanSodQuest","Global",3)
+Global("SanSodQuest","Global",5)
+Global("SanSodQuest","Global",7)
+Global("SanSodQuest","Global",9)
+Global("SanSoDBook","LOCALS",1)
+Global("SanBhaal","bd2000",2)
+Global("SanBDdream2","LOCALS",1)
+Global("SanBdInfiltrate","Global",1)
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogNoSet("CVSandr")
+END

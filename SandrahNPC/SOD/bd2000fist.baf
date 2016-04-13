@@ -1,0 +1,36 @@
+IF
+InParty("CVSandr")
+OR(2)
+Global("bd_plot","global",295)
+GlobalGT("bd_plot","global",295)
+Global("SanBhaal","bd2000",0)
+THEN
+RESPONSE #100
+CreateCreature("bdfists1",[540.1334],8)
+SetGlobal("SanBhaal","bd2000",1)
+END
+
+IF
+Global("SanBhaal","bd2000",3)
+Global("SanEndBG1Plot","GLOBAL",2)
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+CreateCreature("SanMyst",[552.1164],10)
+CreateCreature("CVDYPROT",[595.1090],8)
+CreateCreature("solar",[446.1116],8)
+CreateCreature("CVasstem",[492.1045],8)
+SetGlobal("SanEndBG1Plot","GLOBAL",3)
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride("SanMyst",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVDYPROT",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("solar",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+ActionOverride("CVasstem",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("SanEndBG1Plot","GLOBAL",5)
+END

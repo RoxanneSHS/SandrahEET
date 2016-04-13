@@ -1,0 +1,12 @@
+IF
+OR(2)
+Dead("bdkorlas")
+Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
+Global("JenGoHome","bd0130",0)
+InParty("CVJenlig")
+PartyHasItem("CVyensw2")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("JenGoHome","bd0130",1)
+END

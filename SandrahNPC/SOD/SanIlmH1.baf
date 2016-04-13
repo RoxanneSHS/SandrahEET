@@ -1,0 +1,21 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+ActionOverride("CVSandr",MoveToObject("BDHYRETH"))
+ActionOverride("CVSandr",DisplayStringWait(Myself,@969)
+Wait(8)
+ActionOverride("CVSandr",MoveToObject("BDINFEC4"))
+ActionOverride("CVSandr",DisplayStringWait(Myself,@969)
+Wait(8)
+ActionOverride("CVSandr",MoveToObject("BDINFEC6"))
+ActionOverride("CVSandr",DisplayStringWait(Myself,@969)
+Wait(8)
+SetGlobal("SanHelpIlm","bd3000",2)
+ActionOverride("CVSandr",MoveToObject("BDDOsia"))
+Wait(6)
+EndCutSceneMode()
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+END
