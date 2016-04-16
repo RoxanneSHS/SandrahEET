@@ -5,6 +5,7 @@ RESPONSE #100
 SetGlobal("HorseExists","bg2800",1)
 CreateCreature("horsesa",[1276.1341],9)
 HideAreaOnMap("bg2200")
+HideAreaOnMap("id1000")
 END
 
 IF

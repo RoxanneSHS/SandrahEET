@@ -32,4 +32,12 @@ CreateCreature("CVZLord",[1955.121],7)
 SetGlobal("Zlord","BG0400",1)
 END
 
+IF
+Global("SanShowIWD","bg0400",0)
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanShowIWD","bg0400",1)
+RevealAreaOnMap("id1000")
+END
 
