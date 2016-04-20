@@ -1690,10 +1690,12 @@ SAY ~ You have proven yourself a competent leader for our group so far. Even if 
 = ~ (She does not turn away quick enough - you still get a glimpse of the sadness on her face and the tears welling up in her eyes...) ~
 IF ~~ THEN DO ~
    CreateVisualEffectObject("SPDIMNDR","CVSandr")
-   ActionOverride("CVSandr",EscapeAreaObjectMove("BG3402","Tran3001a",270,497,0))
-   SetGlobal("SandrahJoined","GLOBAL",5) LeaveParty()
+   SetGlobal("SanNarQnotElm","GLOBAL",2)
+   SetGlobal("SandrahJoined","GLOBAL",5) 
+   LeaveParty()
    SetGlobal("ElminGaveNarQ","GLOBAL",4)
-   AddJournalEntry(@72,INFO) ~
+   AddJournalEntry(@72,INFO) 
+   ActionOverride("CVSandr",EscapeAreaObjectMove("BG3402","Tran3001a",270,497,0))~
 EXIT
 END
 

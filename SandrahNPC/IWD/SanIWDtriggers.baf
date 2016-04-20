@@ -1,0 +1,137 @@
+IF
+Global("SanIDW1","Global",0)
+AreaCheck("id0106")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",1)
+END
+
+IF
+AreaCheck("id3501")
+Global("SanIDW1","Global",2)
+PartyHasItem("holysym")
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",3)
+END
+
+IF
+AreaCheck("id3601")
+Global("SanIDW1","Global",4)
+OR(3)
+See("Container 11")
+See("Container 10")
+See("Container 12")
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",5)
+END
+
+IF
+GlobalGT("SPRITE_IS_DEADTalonite","GLOBAL",4)
+AreaCheck("id4002")
+Global("SanIDW1","Global",6)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",7)
+END
+
+IF
+Global("ULt_Talk","GLOBAL",2)
+Global("SanIDW1","Global",8)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",9)
+END
+
+IF
+Global("D5_Girl_Move_Loc","GLOBAL",1)
+Global("SanIDW1","Global",10)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",11)
+END
+
+IF
+Global("#spawn_group_1","ar2100",1)
+See("Ghast") 
+Global("SanIDW1","Global",12)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",13)
+END
+
+IF
+GlobalLT("SanIDW1","Global",15)
+AreaCheck("id5000")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",15)
+END
+
+IF
+GlobalLT("SanIDW1","Global",17)
+AreaCheck("id6002")
+OR(3)
+See("drowspe")
+See("drowvan")
+See("Symbol Table")
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",17)
+END
+
+IF
+Global("SanIWDRWiz","Global",1)
+PartyHasItem("Notekri")
+!Global("Saablic_Quest","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("SanIWDRWiz","Global",2)
+END
+
+IF
+GlobalLT("SanIDW1","Global",19)
+AreaCheck("id8008")
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",19)
+END
+
+IF
+GlobalLT("SanIDW1","Global",21)
+AreaCheck("ar1100")
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("SanIDW1","Global",21)
+END
+
+IF
+OR(12)
+Global("SanIDW1","Global",1)
+Global("SanIDW1","Global",3)
+Global("SanIDW1","Global",5)
+Global("SanIDW1","Global",7)
+Global("SanIDW1","Global",9)
+Global("SanIDW1","Global",11)
+Global("SanIDW1","Global",13)
+Global("SanIDW1","Global",15)
+Global("SanIDW1","Global",17)
+Global("SanIWDRWiz","Global",2)
+Global("SanIDW1","Global",19)
+Global("SanIDW1","Global",21)
+InParty(Myself)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+MoveToObject(Player1)
+StartDialogueNoSet("CVSandr")
+END
+

@@ -1,0 +1,9 @@
+IF
+Global("Brage","bg2300",0)
+InParty("CVSandr")
+Dead("Tarnesh")
+THEN
+RESPONSE #100
+SetGlobal("Brage","bg2300",1)
+CreateCreature("CViwdguy",[2255.2344],14)
+END

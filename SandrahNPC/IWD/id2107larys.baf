@@ -1,0 +1,8 @@
+IF
+Global("SanIWDBrage","Global",1)
+Global("Brage","ar2107",0)
+THEN
+RESPONSE #100
+SetGlobal("Brage","ar2107",1)
+CreateCreature("laryss",[270.479],14)
+END

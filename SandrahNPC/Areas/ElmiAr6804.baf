@@ -9,6 +9,7 @@ SetGlobal("DocWasHere","BG2304",1)
 END
 
 IF
+InParty("CVSandr")
 Global("ElminsaExists","BG2304",0)
 Global("SanNarQ","GLOBAL",0)
 OR(2)

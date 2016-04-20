@@ -2027,6 +2027,15 @@ GiveItemCreate("cvgolman",Player1,0,0,0)
 END
 
 IF
+Global("SanGolman","LOCALS",0)
+PartyHasItemIdentified("cdmgolem")
+Delay(22)
+THEN
+RESPONSE #100
+SetGlobal("SanGolman","LOCALS",2)
+END
+
+IF
 Global("SanGolman","LOCALS",1)
 PartyHasItemIdentified("cvgolman")
 Delay(22)

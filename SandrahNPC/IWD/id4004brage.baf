@@ -1,0 +1,9 @@
+IF
+Global("Brage","ar4004",0)
+InParty("CVSandr")
+Global("YXUNOMEI_SLAIN","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("Brage","ar4004",1)
+CreateCreature("CVBrage",[449.1884],12)
+END

@@ -1,0 +1,21 @@
+IF
+Global("Get_Key","GLOBAL",4)
+!InMyArea("Gareth")
+InParty("CVSandr")
+Global("Koveras","id7003",0)
+Delay(20)
+THEN
+RESPONSE #100
+SetGlobal("Koveras","id7003",1)
+CreateCreature("Kovera",[857.284],7)
+END
+
+IF
+Global("Koveras","id7003",1)
+THEN
+RESPONSE #100
+SetGlobal("Koveras","id7003",2)
+ActionOverride("Kovera",MoveToPoint([1098.187]))
+Wait(6)
+ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
+END

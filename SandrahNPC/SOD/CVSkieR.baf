@@ -1,0 +1,26 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+CreateVisualEffectObject("SPFLESHS",Player1) 
+Wait(6)
+CreateVisualEffectObject("SPUNHOLY","CVSandr")
+Wait(6)
+ActionOverride("CVSandr",ForceSpell(Player1,SAREVOK_SOULSTEAL))
+ApplySpellRES("CVSLEEP",Player1)
+AddexperienceParty(13000)
+Wait(6)
+CreateVisualEffectObject("SPFLESHS",Player1) 
+Wait(6)
+CreateCreatureObjectDoor("CVSkie",Player1,0,0,0)
+Wait(2)
+ActionOverride("Skie",TakePartyItem("CVskida"))
+Wait(2)
+ActionOverride("Skie",DestroyItem("CVskida"))
+Wait(6)
+SetGlobal("SanSoDSkie","Global",5)
+Wait(2)
+EndCutSceneMode()
+ActionOverride("Skie",Dialogue(Player1)
+END

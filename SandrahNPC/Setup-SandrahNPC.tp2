@@ -3540,7 +3540,6 @@ SAY NAME1 @345
 SAY NAME2 @345
 SAY DESC @346
 
-
 COPY ~SandrahNPC/ITM/Sanboul.itm~ ~override/Sanboul.itm~
 SAY NAME1 @56
 SAY NAME2 @57
@@ -4079,6 +4078,8 @@ COPY_EXISTING ~Taerom.cre~ ~override/Taerom.cre~
               WRITE_ASCII 0x280 ~Taerom~
 COPY_EXISTING ~Amaran.cre~ ~override/Amaran.cre~
               WRITE_ASCII 0x280 ~Amaran~
+COPY_EXISTING ~Kovera.cre~ ~override/Kovera.cre~
+              WRITE_ASCII 0x280 ~Kovera~
 
 ACTION_IF FILE_EXISTS ~shobsl01.cre~ THEN BEGIN
 COPY_EXISTING ~shobsl01.cre~ ~override/shobsl01.cre~
@@ -7733,10 +7734,12 @@ COMPILE
 ~SandrahNPC/Mods/SuelleTDD.d~
 ~SandrahNPC/Sod/SandrahSoDTalk.d~
 ~SandrahNPC/Sod/CVBrage.d~
+~SandrahNPC/Sod/BG1ResolveSkie.d~
 
 COMPILE
 ~SandrahNPC/Travel/CVNoRtF.baf~
 ~SandrahNPC/Sod/SanIlmH1.baf~
+~SandrahNPC/Sod/CVSkieR.baf~
 
 EXTEND_TOP
 ~Neera_.bcs~ ~SandrahNPC/Mods/NeeraBant.baf~
@@ -7799,6 +7802,8 @@ WRITE_ASCII 0x280 ~bdfists1~
 COPY ~SandrahNPC\sod/CVBrage.CRE~ ~override~
 SAY NAME1 Brage
 SAY NAME2 Brage
+
+COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
 
 //_________________
 
@@ -7993,6 +7998,11 @@ SAY NAME1 Letter
 SAY NAME2 Letter
 SAY DESC @966
 
+COPY ~SandrahNPC/SoD/CVSkiDa.itm~ ~override~
+SAY NAME1 @974
+SAY NAME2 @974
+SAY DESC @975
+
 EXTEND_TOP
 ~BG5102.bcs~ ~SandrahNPC/Areas/bg5102.baf~
 EXTEND_TOP
@@ -8018,5 +8028,27 @@ COPY_EXISTING ~AR6300.ARE~ ~override~
    REPLACE_TEXTUALLY ~HOSTILE~ ~D0HOSTI~ (8)
 COPY ~SandrahNPC/oasis/d0amtgen.wav~ ~override~
 COPY ~SandrahNPC/oasis/d0oasis9.spl~ ~override~
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
+COMPILE
+~SandrahNPC\IWD/SanIWD_Dialogues.d~
+~SandrahNPC\IWD/SanIWDGuy.d~
+EXTEND_TOP
+~CVSandra.bcs~ ~SandrahNPC\IWD/SanIWDtriggers.baf~
+EXTEND_TOP
+~id2107.bcs~ ~SandrahNPC\IWD/id2107larys.baf~
+EXTEND_TOP
+~bg2300.BCS~ ~SandrahNPC/IWD/bg2300Iwd.baf~
+EXTEND_TOP
+~id4004.BCS~ ~SandrahNPC/IWD/id4004brage.baf~
+EXTEND_TOP
+~id7003.BCS~ ~SandrahNPC/IWD/id7003koveras.baf~
+COPY ~SandrahNPC\IWD/CViwdguy.cre~ ~override~
+SAY NAME1 Churin
+SAY NAME2 Churin
+PRINT ~ IWD detected - Sandrah in IWD contents added~
+END ELSE BEGIN
+  PRINT ~IWD not detected - skipped ~
 END
 
