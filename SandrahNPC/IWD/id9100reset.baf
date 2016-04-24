@@ -1,0 +1,48 @@
+IF
+Global("HOW_COMPLETED","GLOBAL",9)
+THEN
+RESPONSE #100
+SetGlobal("HOW_COMPLETED","GLOBAL",0)
+END
+
+IF
+Global("SanHOWScar","Global",2)
+InParty("CVSandr")
+GlobalLT("Chapter","Global",7)
+THEN
+RESPONSE #100
+SetGlobal("SanHOWScar","Global",3)
+END
+
+IF
+Global("SanHOWScar","Global",3)
+Global("SanHowPlot","Global",0)
+Global("Hjollder_Quest","GLOBAL",4)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanHowPlot","Global",1)
+END
+
+IF
+Global("SanIWDIronSearch","Global",4)
+Global("SanHowPlot","Global",3)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanIWDIronSearch","Global",5)
+CreateCreature("Slythe",[630.1841],5)
+CreateCreature("Krysti",[645.1894],5)
+CreateCreature("Brunos",[662.1943],5)
+ActionOverride("Krystin",DestroyItem("mage01"))
+END
+
+IF
+Global("SanIWDIronSearch","Global",6)
+THEN
+RESPONSE #100
+SetGlobal("SanIWDIronSearch","Global",7)
+CreateCreature("travmag",[711.1913],5)
+CreateCreature("uhl8009b",[711.1943],7)
+CreateCreature("uhl8009b",[711.1883],9)
+END

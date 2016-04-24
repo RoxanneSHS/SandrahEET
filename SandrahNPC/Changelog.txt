@@ -1,6 +1,6 @@
 VERSION 2.01
 ----------------
-NPC Trilogy
+Bhaalspawn Trilogy
 
 Completely re-created for EET
 Adapted to new journal and worldmap capabilities
@@ -9,8 +9,9 @@ Sandrah's personal items restricted
 Items adjusted to EET
 Sandrah's spells revised
 
-Added Sandrah Siege of Dragonspear contents
+Added Sandrah Siege of Dragonspear content
 New BG1 to BG2 transition
+Solve SoD murder case and re-open Baldur's Gate City in BG2
 
 Consistent Drizzt portrait for all Sandrah/Drizzt(s) crossmod
 Revised dependecies on other mega mods
@@ -21,13 +22,15 @@ Removed Ajantis Crossmod
 Removed RE Crossmod
 
 Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
-Added Karlini rescue
+Added Karlini rescue case
 Neera can get planar sphere if PC not mage
 Hexxat can get thieves guild if PC not thief
 Dark Horizon Extension adapted
+IWD I Sandrah content added
+IWD HoW additional quest and content
 
 ____________________________________________
-RtF
+Return to Faerun
 
 Transition from ToB to RtF renewed
 Restored all NPC bios if game ends at ToB by player choice

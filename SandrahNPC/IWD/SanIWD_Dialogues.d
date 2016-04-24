@@ -216,6 +216,148 @@ END
 ++~I see. We must prevent the demon to re-open that portal. Who else is left to do the job... ~  EXIT
 ++~One demon is a challenge, but a horde entering through a portal from Baator will be total destruction, we cannot let that happen.~ EXIT
 
+//Heart of Winter
+//_____________________________________________________________________
+
+CHAIN
+IF WEIGHT #-3~Global("IwdHWPlot","LOCALS",1)~THEN CVSandrJ IWDassa1
+~This Baldemar let us run into the open trap - he knew of the assassin when we talked to him.~
+DO~SetGlobal("IwdHWPlot","LOCALS",2)~
+=~The only explanation is that he wanted us out of the way and be able to blame it on the *savages*.~
+END
+++~The tip of my sword will let him talk to us about his motifs, be sure.~+ IWDassa2
+++~What is worse, a protector like that or the so-called enemy outside?~+ IWDassa2
+
+CHAIN
+IF ~~THEN CVSandrJ IWDassa2
+~I am still trying to comprehend how many different parties are acting in this plot and what their goals are.~
+=~The tribes are at odds internally because of Wylfdene's abnormal nature. The ten towns are at odds internally as well, some seeking peace, some sending assassins. On top of that we have the Iron Throne trying to put fuel to the several fires for some reason.~
+END
+++~A talk with Baldemar may enlighten us.~EXIT
+++~We need to find a way to visit Burial Island.~EXIT
+++~The Iron Throne's presence here is strange, all hints we have seem to imply there is not even ore to be found around this area.~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("SanHOWScar","Global",1) ~THEN Scar IWDIron1
+~On a word please, mylady Sandrah.~
+DO~SetGlobal("SanHOWScar","Global",2) ~
+==CVSandrJ~Scar, we did not expect to see you so soon again.~
+==Scar~You will understand in a minute, I am sure.~
+=~First, I recognised you at first glance earlier at Wyrm's Crossing, the resemblance to your mother is unmistakeable. I chose not to address it in public, as you will soon understand.~
+==CVSandrJ~Let us settle over here, this table cannot be overheard by those ears you obviously want to avoid.~
+==Scar~You understand well, just like I had hoped. So, there is a little issue aside from the obvious trouble we have in town in which I require some outside help.~
+==CVSandrJ~Go on, Scar, be assured we will try to help if we can - if we cannot, you have at least out words that nobody will get to know about this conversation.~
+==Scar~Good. The iron crisis has forced my superior, Duke Eltan Silvershield to explore all possible alternatives to gain ore for the town - all in good faith to serve the city. One of those possibilities seems to lie in some resources further up north, wild territories around the Spine of the World.~
+==CVSandrJ~Hm, those *wild territories* are not unoccupied. The tribes and folks living up there call it their home.~
+==Scar~This is a valid concern and one I share with an old friend of mine, a shaman named Hjollder, who lives there. Even worse however is the fact that Eltan trusted the operation into the hand of a merchant organisation which may use methods neither he nor me nor you may tolerate.~
+==CVSandrJ~Are we talking about the Iron Throne here, we had our bit of experience with them already?~
+==Scar~Exactly. The fact is that they sent out a expedition to Lonelywood, one of the Ten Towns up there. It has not yet returned and seems to be overdue - in addition I have received a rather cryptic call for help from Hjollder.~
+=~I cannot leave town and I cannot send any own men behind Eltar's back without compromising him and creating tension with the Iron Throne. In short, I need some secret agents to look into the matter. I need you and <CHARNAME>.~
+=~What I told you right now is all I know myself, which is little. Go to Lonelywood and find out what goes on up there.~ DO~RevealAreaOnMap("id9100")~
+END
+++ ~I always dreamed of seeing those wild lands. You have me interested.~ + IWDIron2
+++ ~If it goes against the Iron Throne, I am all for it. Count on me, Scar.~ + IWDIron2
+++ ~Not now, I have enough of my own business to care about.~ + IWDIron2
+
+CHAIN
+IF ~~THEN Scar IWDIron2
+~I gave you the facts and I will mark Lonelywood on your map. I can offer you no richess but the experience you may gain on that mission. Think about it and make your decision well. This is all I ask of you this time. ~DO~ EscapeArea()~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("SanHOWScar","Global",4) InParty("CVSandr") ~THEN Scar IWDRetu1
+~Yes, <CHARNAME>. mylady Sandrah?~
+DO~SetGlobal("SanHOWScar","Global",5) ~
+==CVSandrJ~Scar, we have been to Lonelywood and beyond. (Sandrah gives a detailed report about your mission to Icewind Dale - except...she does not mention your discovery of the ore on Burial Island at all.)~
+==Scar~Another example of those criminal Iron Throne activities. Duke Eltan will not be delighted to hear that. Had there really been iron up there in the region, they would have prevented its digging, even on the price of a bloody local conflict, just to keep up the crisis.~
+END
+++~But there is o...ooooh. (The pain of Sandrah's heel on your toe is unbearable.~ + IWDRetu1
+++~Now they have only what they grabbed before our action on the Cloakwood mine cut their supplies.~ + IWDRetu1
+
+CHAIN
+IF~~THEN Scar IWDRetu2
+~I can only thank you for your support, even if in the end the situation remains as it was before.~
+=~I will eagerly await your report on our other issues, my friends.~DO~AddexperienceParty(7000)~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("SanHowPlot","Global",1)~THEN CVSandrJ IWDIronM1
+~It appears there is more going on in this lonely town than just visitors of the Iron Throne and their intrigues.~
+DO~SetGlobal("SanHowPlot","Global",2)~
+END
+++~If not one has to do with the other. What now?~ + IWDIronM2
+++~Good we have come, sounds like an interesting time here about. Where do we begin our research?~ + IWDIronM2
+
+CHAIN
+IF~~ THEN CVSandrJ IWDIronM2
+~(Laughs) Experienced adventurers? We are in a new town - find an inn for gossip, inquire the major, check for supplies - once done, we need to find the babarian camp that Hjollder mentioned.~
+END
+++~(Grin) I'm lucky to have such a competent counselor.~EXIT
+++~The daily adventurer routine, hope it was worth the journey.~EXIT
+
+CHAIN
+IF WEIGHT #-3~Global("SanIWDIronSearch","Global",3) ~ THEN CVSandrJ IWDIronC1
+~A small surprise, I confess, I was not expecting to find this.~
+DO~SetGlobal("SanIWDIronSearch","Global",4) ~
+=~(When she strikes her hammer against the gleaming wall near Wylfdene's Tomb, a metallic sound echoes through the caves.)~
+END
+++~So there really is iron ore to be found in this area.~ + IWDIronC2
+++~So Wylfdene lied to us about the iron resources of his clan.~+ IWDIronC2
+++~This ore will be hard to gain in a place like this.~+ IWDIronC2
+
+CHAIN
+IF~~THEN CVSandrJ IWDIronC2
+~The interesting question is, who knows about the ore's existence in this place except for those dwarves who cannot talk anymore.~
+=~I believe what Wylfdene told us, his tribes are no diggers and the shaman's and the dead are the only ones who enter here. None of them values this material other than because of its magnetic attributes that probably were the reason to chose this place for the holy burial grounds.~
+=~The people of Lonelywood have no idea as well, the ghosts and watchers keep them away.~
+END
+++~Somehow the Iron Throne must have got the message?~ + IWDIronC3
+++~Most likely the dwarves who found it want to sell it - to the Iron Throne.~ + IWDIronC3
+
+CHAIN
+IF~~THEN CVSandrJ IWDIronC3
+~I agree, those Iron Throne bastards somehow got knowledge about it. But it seems, they neither know where exactly to find it nor do they have an interest to dig for it.~
+END
+++~I understand the first of your assumptions - but the second?~+ IWDIronC4
+
+CHAIN
+IF~~THEN CVSandrJ IWDIronC4
+~Remenber our first meeting with them at the inn. One of them said, they were there to prevent iron to leave Lonelywood or something in that sense. Those assassins left Baldur's Gate already some time ago. They have no idea about what has happened to the Cloakwood mines.~
+END
+++~I see. Their mission is to keep up the iron shortage so that their organisation keeps the monopoly for supply to the parties on the Sword Coast. That's why they send assassins but no workers to dig the ore.~ DO~AddexperienceParty(2000)~EXIT
+++~Fuelling the conflict between the Ten Towns and the babarians makes sure that no mining will take place and no ore goes south. The assassination attempt now makes sense to me.~ DO~AddexperienceParty(2000)~EXIT
+
+BEGIN Bruno
+
+CHAIN
+IF WEIGHT #-4~Global("SanIWDIronSearch","Global",5)~THEN Bruno RetIsl
+~Making little trips into the landscape, spying around - for whom?~
+DO~SetGlobal("SanIWDIronSearch","Global",6)~
+==CVSandrJ~Are you afraid that we might find something that you want to hide?~
+==Slythe~Maybe it's a good idea to search 'em for iron this time, hey Brunos, wouldn't that be fun.~
+==Krysti~Slythie-baby, just imagine they try to resist...~
+==CVSandrJ~Why do you talk about iron all the time? This is no mining town and there was no ore ever found in those mountains up here.~
+==Slythe~That bloody dwarf lied? Rieltar should've allowed me to interrogate the guy in my own special way.~DO~EscapeArea()~
+==Krysti~No one can resist your methods for long...~ DO~EscapeArea()~
+==BRUNO~SHUT UP, YOU DUMB BLOODHOUNDS, you blabber out top secrets just for fun or what? Now we must kill 'em for know too much. GET OUTTA MY SIGHT!!!~DO~EscapeArea()~EXIT
+
+CHAIN 
+IF WEIGHT #-4~Global("SanIwdThrone","ar9101",1)~THEN Slythe IWDIron3
+~Hey Krystin. What have we here... blade fodder? Greenhorns from the south.~
+DO~SetGlobal("SanIwdThrone","ar9101",2) SetGlobal("SanHowPlot","Global",3)~
+==Krysti~Slythie-baby, we're not here for those, forgot?~
+==Slythe~Ooh, she's got a tongue of steel and a heart of gold, my Krystin does...yeah, we don't wanna do too much disturbance, even my blade lusts for them.~
+==Krysti~They don't look like they wanna dig for ore. The only iron they care to carry are their weapons.~
+==CVSandrJ~So it looks your purpose here is to prevent that iron from here finds its way to the Sword Coast.~
+==Slythe~Ouch, don't say nothin' wrong now to them wisecracks.~
+==Krysti~Psst, otherwise we needa kill'em after all for knowin' toooo much.~ DO~
+EscapeArea()~
+==Slythe~Brunos wouldn't like it, no not at all. ~ DO~
+EscapeArea()~
+==CVSandrJ~And this Brunos would by any chance be the Iron Throne representative in Lonelywood? ~
+==Bruno~Brunos is by any chance the guy to end this palaver now and here. Slythe! Krystin! Get outta here or I'll get me boys to rib-roast ya! ~
+=~An' you chimps, better stick ya noses elsewhere unless you want'em bruised badly.~DO~
+EscapeArea()~EXIT
+
+
 //___________________________________________________
 
 CHAIN
@@ -245,7 +387,6 @@ END
 ++~Bhaal?~EXIT
 ++~A strange guy. Those yellow eyes...~EXIT
 
-
 I_C_T DHroth 10 SanIWDBrage
 ==DHroth IF~InParty("CVSandr")~THEN~My last candidate, Brage, was just to eager to move further and would not waste time with this adventure.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Brage? Brage from Nashkel?~
@@ -263,3 +404,94 @@ I_C_T DSaablic 2 SanIWDRWiz
 ==CVSandrJ IF~InParty("CVsandr")~THEN~A red wizard not even trying to hide his evil face, how refreshing. Or is that the true appearance of your order and you just disguise as humans on other occasions.~
 ==DSaablic IF~InParty("CVsandr")~THEN~My situation here...it is so desperate that I'd even ask a priestess of (spit) Mystra (cough) for assistance.~
 ==CVSandrJ IF~InParty("CVsandr")~THEN~I am afraid, our good-hearted <CHARNAME> may even continue to listen to you.~END
+
+EXTEND_BOTTOM DKieran2 1
+IF~InParty("CVSandr") Global("SanHowPlot","Global",3) Global("SanAsked","LOCALS",0)~THEN REPLY~ What can you tell about those three southerners who just left.~DO~SetGlobal("SanAsked","LOCALS",1) ~GOTO IronT
+END
+
+CHAIN
+IF~~THEN DKieran2 IronT
+~Scum, they hang around here since days, glad the one-eyed guy left some days ago.~
+==CVSandrJ~Any idea where he went to?~
+==DKieran2~After he talked to Baldemar, he left town it seems.~ DO~SetGlobal("Know_Assassin","GLOBAL",1)~
+==CVSandrJ~Hm - and those others, are they waiting for him to return?~
+==DKieran2~As innkeeper you get an eye for some types, I can tell you. No, I think they observe...the talkative guy, the one who's with the girl, he mentioned that no ore's supposed to leave town for the south. ~
+==CVSandrJ~Where would that ore come from, Lonelywood is no mining town?~
+==DKieran2~A valid observation, mylady. No idea what ore they talk about.~
+END
+IF~~THEN REPLY~I see. Let me ask you something else.~GOTO 1
+
+EXTEND_BOTTOM DBaldemr 8
+IF~InParty("CVSandr") Global("SanHowPlot","Global",3) Global("SanAsked","LOCALS",0)~THEN REPLY~ Alone? What about his companions over at the Whistling Gallows?~DO~SetGlobal("SanAsked","LOCALS",1) ~GOTO IronTB
+END
+
+CHAIN
+IF~~THEN DBaldemr IronTB
+~Eeh...companions? He told me he came alone, I had no reason to doubt that. I do not frequent the inn, I have no idea who may stay there.~
+END
+IF~~THEN REPLY~Is it true that you sit on the council of the Ten Towns?~GOTO 2
+IF~~THEN REPLY~What connection does Lonelywood have with the Iron Throne?~GOTO  IronTB2
+
+CHAIN
+IF~~THEN DBaldemr IronTB2
+~We have no dealings with those merchants.~
+==CVSandrJ~But you know that the Iron Throne is a merchant organisation?~
+==DBaldemr~Eeh...the name seems to imply that.~
+==CVSandrJ~Does it really?~
+=~The people over in the Whistling Gallows belong to that organisation, did you know that?~
+==DBaldemr~Listen...I told you I never met them, I did not even know of them before. Your questions start to get impertinent. Now, would you please leave.~EXIT
+
+EXTEND_BOTTOM DTybald 30
+IF~InParty("CVSandr") Global("SanHowPlot","Global",3) Global("SanAsked","LOCALS",0)~THEN REPLY~ He stayed with Baldemar while his companions lodge over at the Whistling Gallows?~DO~SetGlobal("SanAsked","LOCALS",1) ~GOTO IronTT
+END
+
+CHAIN
+IF~~THEN DTybald IronTT
+~Strange or maybe not? He may be the boss and stay with the mayor while his servants are at the inn. Maybe that's how those fine people handle it.~
+==CVSandrJ~But you are sure they belong together?~
+==DTybald~A lonely man, a noble man, coming all alone at this time of year through inpenetrable hostile land from the south and a bunch of bodyguards or whatever they are coming same day on same route? I may not be a genius, but whom do they try to fool with pretending they are different groups.~
+END
+++~Makes sense to me. If he spoke to none of you, then how do you know he was from the Ten Towns?~+ 31
+
+I_C_T DWylf 6 SanIWDIronSearch
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~There may be some who search the iron ore but we are not in league with them.~
+==DWylf IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Iron? That is foolish, the ore is underground where the dwarves dwell. We trade it for weapons but no tribesman will dig the dirt.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~(mumbles) Interesting.~END
+
+INTERJECT DBaldemr 14 SanIWDIronSearchB
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~ *They* are in this case the Iron Throne roughnecks?~
+==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~(Sigh) Decide for yourself when you heard my story.~
+==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Last month, the council met to discuss reports of a new barbarian king who was rallying the tribes to make war on the Ten Towns. As usual, none of the towns could agree on a course of action.~
+==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~As a matter of fact, the meeting had to be adjourned prematurely to prevent arguments from escalating into fisticuffs.~
+==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~That same night, several of the council members, myself included, met in secret to discuss the matter further. It was during this meeting that the assassination plot was proposed. Of course, I was naturally opposed to such a dishonorable solution, but the others told me I had no choice. They threatened to use their influence to remove me from the council if I didn't go along with the plan.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Was an Iron Throne member part of that discussion?~
+==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Hm, not in person - it is difficult to put the finger on it, but I had the feeling that some members of the meeting actually acted under some influence, like someone had been giving them some specific ideas and solutions prior to our meeting.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~This impression my be very close to the truth, <CHARNAME>.~
+END  DBaldemr 20
+
+CHAIN
+IF WEIGHT #-7~PartyHasItem("Mirror") GlobalGT("Found_Seer","GLOBAL",0) InParty("CVSandr") Global("SanHOWScar","Global",3) Global("SanIWDIronSearch","Global",7)~THEN Dangaar SanIWDIronSearchF
+~Why have you come yet again, outlanders? I cannot allow you entry here. I know you were away but others were not.~
+DO~SetGlobal("SanIWDIronSearch","Global",8)~
+==CVSandrJ~What has happened?~
+==Dangaar~More assassins sneaked into our camp at night. They killed a shaman and fighters of my own tribe.~
+==CVSandrJ~Did you catch them? Are they dead?~
+==Dangaar~They escaped, a man and a woman, but they will pay. We are ready to march for the settlement and get them.~
+==CVSandrJ~A man and a woman, Slythe and Krystin.~
+==Dangaar~You are in league with them, you die first, then we march for them.~
+==CVSandrJ~Listen, listen very carefully before blood flows like some want it to flow. This man and this woman are not of the Ten Towns, they are criminals trying to force tension between the tribes and Lonelywood. They will pay pretty soon.~
+=~We have discovered far more important things on the Gloomfrost and from your old seer. We now must act together and we must act wisely.~
+==Dangaar~Little woman, you know much and maybe what you know is truth.~
+END
+++~It is very important that we see Wylfdene. ~ EXTERN Dangaar 31
+
+I_C_T DPurvis 17 SanIWDIronSearchP
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~What is your connection to the Iron Throne?~
+==DPurvis IF ~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~None of your concern lady...even, why not tell you, there is nothing lost, now that the project has been cancelled.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~You mean, now after it is clear there is no iron ever to be shipped from Lonelywood?~
+==DPurvis IF ~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~You got it right, it was all about ore not leaving here while they still though there was ore here. Those bloody amateurs...bah, and then they even tried to do MY job as well. Good they're gone.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~They left Lonelywood?~
+==DPurvis IF ~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Yeah, something must have changed over at Balder's Town, they were much in a hurry to go home.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~(Smiles) There is not only no ore around here - even some other source has been lost for them.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~If you were as clever as you think, you best not go there and try to collect a fee for a job you did not do.~
+==DPurvis IF ~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Lady, you have a problem - YOU are too clever. Knowing too much can be really deadly.~END

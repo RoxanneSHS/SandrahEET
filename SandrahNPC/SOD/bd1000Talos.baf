@@ -1,5 +1,5 @@
 IF
-Global("ENDOFBG1","GLOBAL",1)
+GlobalLT("Chapter","GLOBAL",14)
 Global("SanNWTalV","GLOBAL",0)
 InParty("CVSandr")
 THEN

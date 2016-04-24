@@ -8044,10 +8044,21 @@ EXTEND_TOP
 ~id4004.BCS~ ~SandrahNPC/IWD/id4004brage.baf~
 EXTEND_TOP
 ~id7003.BCS~ ~SandrahNPC/IWD/id7003koveras.baf~
+EXTEND_TOP
+~id9100.BCS~ ~SandrahNPC/IWD/id9100reset.baf~
 COPY ~SandrahNPC\IWD/CViwdguy.cre~ ~override~
 SAY NAME1 Churin
 SAY NAME2 Churin
-PRINT ~ IWD detected - Sandrah in IWD contents added~
+EXTEND_TOP
+~id9101.BCS~ ~SandrahNPC/IWD/id9101Iront.baf~
+EXTEND_TOP
+~id9100.BCS~ ~SandrahNPC/IWD/id9100reset.baf~
+EXTEND_TOP
+~id9400.BCS~ ~SandrahNPC/IWD/id9400dwarf.baf~
+COPY_EXISTING ~bedd1.cre~ ~override/CVdedwa.cre~
+SAY NAME1 ~Dead Dwarf~
+SAY NAME2 ~Dead Dwarf~
+PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT ~IWD not detected - skipped ~
 END

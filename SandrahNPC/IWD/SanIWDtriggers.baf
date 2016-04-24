@@ -5,6 +5,7 @@ Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("SanIDW1","Global",1)
+SetGlobal("HOW_COMPLETED","GLOBAL",9)
 END
 
 IF
@@ -111,7 +112,7 @@ SetGlobal("SanIDW1","Global",21)
 END
 
 IF
-OR(12)
+OR(15)
 Global("SanIDW1","Global",1)
 Global("SanIDW1","Global",3)
 Global("SanIDW1","Global",5)
@@ -124,6 +125,9 @@ Global("SanIDW1","Global",17)
 Global("SanIWDRWiz","Global",2)
 Global("SanIDW1","Global",19)
 Global("SanIDW1","Global",21)
+Global("IwdHWPlot","LOCALS",1)
+Global("SanHowPlot","Global",1)
+Global("SanIWDIronSearch","Global",3)
 InParty(Myself)
 !See([ENEMY])
 See(Player1)
@@ -135,3 +139,64 @@ MoveToObject(Player1)
 StartDialogueNoSet("CVSandr")
 END
 
+//Heart of Winter
+IF
+GlobalGT("ScarMission","GLOBAL",0)
+InParty("CVSandr")
+Global("SanHOWScar","Global",0)
+OR(2)
+Global("HOW_COMPLETED","GLOBAL",9)
+Global("HOW_COMPLETED","GLOBAL",0)
+OR(8)
+AreaCheck("BG0105")
+AreaCheck("BG0102")
+AreaCheck("BG0103")
+AreaCheck("BG0116")
+AreaCheck("BG0119")
+AreaCheck("BG0706")
+AreaCheck("BG0114")
+AreaCheck("BG0165")
+THEN
+RESPONSE #100
+SetGlobal("SanHOWScar","Global",1)
+CreateCreatureObjectOffset("Scar",Myself,[100.100])
+Wait(2)
+ActionOverride("Scar",MoveToObject("CVSandr"))
+ActionOverride("Scar",Dialog("Scar"))
+END
+
+IF
+Global("Know_Assassin","GLOBAL",2)
+Global("Know_Baldemar","GLOBAL",1)
+AreaCheck("ar9100")
+Global("IwdHWPlot","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("IwdHWPlot","LOCALS",1)
+END
+
+IF
+Global("SanIWDIronSearch","Global",2)
+AreaCheck("id9400")
+OR(2)
+PartyHasItem("wylfins")
+See("Wylfdene's Tomb")
+!See("WVirgin")
+CombatCounter(0)
+!See([ENEMY])
+THEN
+RESPONSE #100
+SetGlobal("SanIWDIronSearch","Global",3)
+END
+
+IF
+Global("SanHOWScar","Global",3)
+AreaCheck("BG1100")
+OR(2)
+Global("SanIWDIronSearch","Global",8)
+Global("SanIWDIronSearchP","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("SanHOWScar","Global",4)
+END

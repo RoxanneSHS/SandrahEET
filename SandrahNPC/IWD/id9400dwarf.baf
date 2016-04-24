@@ -1,0 +1,16 @@
+IF
+Global("SanHOWScar","Global",3)
+InParty("CVSandr")
+Global("SanIWDIronSearch","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("SanIWDIronSearch","Global",2)
+CreateCreature("CVdedwa",[570.2008],0)
+CreateCreature("CVdedwa",[660.2005],3)
+CreateCreature("CVdedwa",[699.1937],6)
+CreateCreature("CVdedwa",[600.1850],9)
+CreateCreature("CVdedwa",[259.1945],12)
+CreateCreature("CVdedwa",[291.2009],15)
+CreateCreature("CVdedwa",[770.1973],7)
+CreateCreature("CVdedwa",[412.1901],11)
+END

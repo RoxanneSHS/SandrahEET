@@ -81,3 +81,11 @@ RESPONSE #100
 SetGlobal("Umberbowl","GLOBAL",5)
 ActionOverride("CVTALOP1",Enemy())
 END
+
+IF
+Global("SanSoDSkie","Global",6)
+THEN
+RESPONSE #100
+SetGlobal("SanSoDSkie","Global",7)
+CloseDoor("DoorDraw")
+END

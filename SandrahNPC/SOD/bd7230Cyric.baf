@@ -1,5 +1,5 @@
 IF
-Global("EndOfBG1","GLOBAL",1)
+GlobalLT("Chapter","GLOBAL",14)
 InParty("CVSandr")
 Dead("BDDARSKH")
 Global("CyricVis","bd7230",0)
