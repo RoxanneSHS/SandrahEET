@@ -83,7 +83,6 @@ END
 //****************************** Tactica  ***********************************
 IF ~~ THEN BEGIN Tactica
   SAY @29
-  IF ~~ THEN REPLY @30 DO ~SetGlobal("HaiassTactica","GLOBAL",1)~ EXIT
   IF ~~ THEN REPLY @31 DO ~SetGlobal("HaiassTactica","GLOBAL",0)~ EXIT
   IF ~~ THEN REPLY @32 DO ~SetGlobal("HaiassTactica","GLOBAL",2)~ EXIT
   IF ~~ THEN REPLY @33 DO ~SetGlobal("HaiassTactica","GLOBAL",3)~ EXIT
