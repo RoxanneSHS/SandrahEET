@@ -89,19 +89,10 @@ MoveToObjectFollow("CVSandr")
 END
 
 IF
-Global("PelligWait","GLOBAL",1)
+HPLT(Myself,25)
 THEN
 RESPONSE #100
-SetGlobal("PelligFollow","GLOBAL",0)
-SetGlobal("PelligBeh","GLOBAL",0)
-END
-
-IF
-Global("PelligWait","GLOBAL",2)
-THEN
-RESPONSE #100
-SetGlobal("PelligFollow","GLOBAL",1)
-SetGlobal("PelligBeh","GLOBAL",1)
+RunAwayFrom(NearestEnemyOf(Myself),30)
 END
 
 IF

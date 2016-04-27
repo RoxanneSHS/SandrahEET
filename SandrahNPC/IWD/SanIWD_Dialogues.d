@@ -325,8 +325,6 @@ END
 ++~I see. Their mission is to keep up the iron shortage so that their organisation keeps the monopoly for supply to the parties on the Sword Coast. That's why they send assassins but no workers to dig the ore.~ DO~AddexperienceParty(2000)~EXIT
 ++~Fuelling the conflict between the Ten Towns and the babarians makes sure that no mining will take place and no ore goes south. The assassination attempt now makes sense to me.~ DO~AddexperienceParty(2000)~EXIT
 
-BEGIN Bruno
-
 CHAIN
 IF WEIGHT #-4~Global("SanIWDIronSearch","Global",5)~THEN Bruno RetIsl
 ~Making little trips into the landscape, spying around - for whom?~
@@ -495,3 +493,9 @@ I_C_T DPurvis 17 SanIWDIronSearchP
 ==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~(Smiles) There is not only no ore around here - even some other source has been lost for them.~
 ==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~If you were as clever as you think, you best not go there and try to collect a fee for a job you did not do.~
 ==DPurvis IF ~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Lady, you have a problem - YOU are too clever. Knowing too much can be really deadly.~END
+
+CHAIN
+IF WEIGHT #-8 ~Global("End_Portal","GLOBAL",1)~ THEN Deverard Orlex
+~[Slightly in awe, almost ignoring Orlex and the party] Jerrod's Stone. I have never seen it.~
+END
+++~Everard? How did you get here?~EXTERN Deverard 37

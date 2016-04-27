@@ -20,7 +20,7 @@ THEN
 RESPONSE #100
 RunAwayFrom(NearestEnemyOf(Myself),45)
 DisplayStringHead(Myself,@51)
-ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+ReallyForceSpellRES("SPIN118",Myself)
 SetGlobal("HaissHuye","GLOBAL",0)
 END
 
@@ -31,7 +31,7 @@ See(NearestEnemyOf(Protagonist))
 Global("HaiassTactica","GLOBAL",1)
 THEN
 RESPONSE #100
-ReallyForceSpell(Myself,WIZARD_INVISIBILITY)
+ReallyForceSpellRES("SPIN118",Myself)
 DisplayStringHead(Myself,@52)
 END
 
@@ -56,6 +56,13 @@ StateCheck(Myself,STATE_POISONED)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("Spin102",Myself)
+END
+
+IF
+HPLT(Myself,25)
+THEN
+RESPONSE #100
+RunAwayFrom(NearestEnemyOf(Myself),30)
 END
 
 IF
