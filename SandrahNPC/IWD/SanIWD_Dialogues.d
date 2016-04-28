@@ -499,3 +499,10 @@ IF WEIGHT #-8 ~Global("End_Portal","GLOBAL",1)~ THEN Deverard Orlex
 ~[Slightly in awe, almost ignoring Orlex and the party] Jerrod's Stone. I have never seen it.~
 END
 ++~Everard? How did you get here?~EXTERN Deverard 37
+
+I_C_T Dkressel 6 SanKressGhot
+==DKressel IF~InParty("CVSandr")~THEN~And then the armies started to march against mighty Ghotal, the unvanquished leader.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~General Ghotal you mean, who united the orc clans against the southern invaders?~
+==DKressel IF~InParty("CVSandr")~THEN~It is strange to hear one of your origin talk about General Ghotal with such words, for you he was the monster, the aggressor, the wraith of Myrkul.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~History is written by the winners. The truth often is another thing.~
+==DKressel IF~InParty("CVSandr")~THEN~Ghotal tried to unify and protect his people but he was defeated. Orcs did not trust Orcs and Orcs were Orcs' greatest enemies. His downfall made me see the probability of my own end.~END
