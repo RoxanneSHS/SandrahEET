@@ -437,7 +437,7 @@ IF
 	!GlobalTimerNotExpired("BPT","LOCALS")
 	Global("SNAFU","LOCALS",0)
 	Detect(NearestEnemyOf(Myself))
-	OR(9)
+	OR(7)
 		!See(NearestEnemyOf(Myself))
 		StateCheck([GOODCUTOFF],STATE_MIRRORIMAGE)
 		StateCheck([GOODCUTOFF],STATE_INVISIBLE)

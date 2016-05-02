@@ -4478,8 +4478,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~magnus01.sto~ THEN BEGIN
 COPY_EXISTING ~magnus01.sto~ ~override/magnus01.sto~
-ADD_STORE_ITEM + ~mcmbow01~ #1 #0 #0 ~IDENTIFIED~ #1
-COPY ~SandrahNPC/Itm/mcmbow01.itm~ ~override/mcmbow01.itm~
+ADD_STORE_ITEM + ~dagg09~ #1 #0 #0 ~IDENTIFIED~ #1
 SAY NAME1 @952
 SAY NAME2 @952
 SAY DESC @952
