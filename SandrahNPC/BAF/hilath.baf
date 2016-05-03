@@ -33,3 +33,11 @@ SetGlobal("GetOut","LOCALS",1)
 LeaveAreaLUA("CVELM1","",[1246.650],5)
 END
 
+IF
+Global("SanTotStart","Global",1)
+THEN
+RESPONSE #100
+DestroySelf()
+END
+
+

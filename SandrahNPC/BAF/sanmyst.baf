@@ -1,6 +1,7 @@
 IF
 See("CVSandr")
-OR(6)
+OR(7)
+Global("ToTablet1","Global",1)
 Global("SanLive","GLOBAL",2)
 Global("SanEndBG1Plot","GLOBAL",3)
 Global("SanMystApp","arpo31",1)

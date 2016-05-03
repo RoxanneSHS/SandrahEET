@@ -14,3 +14,10 @@ THEN
 RESPONSE #100
 SetGlobal("HennStoWD","LOCALS",1)
 END
+
+IF
+Global("SanTotStart","Global",1)
+THEN
+RESPONSE #100
+DestroySelf()
+END
