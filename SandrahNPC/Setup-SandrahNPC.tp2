@@ -4145,6 +4145,12 @@ COPY_EXISTING ~Teven.cre~ ~override/Teven.cre~
               WRITE_ASCII 0x34 ~Tevens~
 COPY_EXISTING ~F_Wailin.cre~ ~override/F_Wailin.cre~
               WRITE_ASCII 0x280 ~Wailin~
+COPY_EXISTING ~prihel.cre~ ~override~
+              WRITE_ASCII 0x280 ~prihel~
+COPY_EXISTING ~Winthr2.cre~ ~override~
+              WRITE_ASCII 0x280 ~Winthr2~
+COPY_EXISTING ~orc04.cre~ ~override~
+              WRITE_ASCII 0x2cc ~Orc04~
 
 ACTION_IF FILE_EXISTS ~X#GARAR.cre~ THEN BEGIN
 COPY_EXISTING ~X#GARAR.CRE~ ~override/X#GARAR.CRE~
