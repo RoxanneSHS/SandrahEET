@@ -4153,6 +4153,11 @@ COPY_EXISTING ~gatewa2.cre~ ~override~
               WRITE_ASCII 0x280 ~gatewa2~
 COPY_EXISTING ~orc04.cre~ ~override~
               WRITE_ASCII 0x2cc ~Orc04~
+COPY_EXISTING ~sbutler.cre~ ~override~
+              WRITE_ASCII 0x280 ~sbutler~
+COPY_EXISTING ~scook.cre~ ~override~
+              WRITE_ASCII 0x280 ~scook~
+
 
 ACTION_IF FILE_EXISTS ~X#GARAR.cre~ THEN BEGIN
 COPY_EXISTING ~X#GARAR.CRE~ ~override/X#GARAR.CRE~
