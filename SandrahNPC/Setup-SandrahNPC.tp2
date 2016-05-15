@@ -138,6 +138,17 @@ LAF sc#addWmpAre
     strDesc = "Bezantur in Thay"
 END
 
+LAF sc#addWmpAre
+  INT_VAR
+    mapIcon = 108
+    xCoord = 4897
+    yCoord = 1674
+  STR_VAR
+    areName = ~TOT006~
+    strName = "Tantras"
+    strDesc = "Tantras"
+END
+
 BEGIN
 ~SandrahNPC for EET Core~
 
