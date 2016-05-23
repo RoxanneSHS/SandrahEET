@@ -362,10 +362,10 @@ CHAIN
 IF WEIGHT #-5~Global("SanIWDBrage","Global",1)~THEN Laryss IWDBrag1
 ~Kind strangers, so we meet again far away from the Sword Coast.~
 DO~SetGlobal("SanIWDBrage","Global",2)~
-==CVSandrJ~Laryssa, I remember you, Brage's sister. We heard a rumour in Easthaven already that Brage went up north in search of his sanity.~
+==CVSandrJ~Laryssa, I remember you, Brage's cousin. We heard a rumour in Easthaven already that Brage went up north in search of his sanity.~
 ==Laryss~That idea he found when he hunted that pirate, it seems to possess him still. He thinks there is a cure for him...he left Nashkel because he thinks his destiny is in the far Stormhorns. ~
 ==CVSandrJ~You are following him? Do you try to bring him back to the temple?~
-==Laryss~Not anymore. The situation up here prevents my further venture. I need to return to the south. But you - I heard you investigate the proceedings up here, you may find Brage by chance.~
+==Laryss~Not anymore. The situation up here prevents my further venture. I need to return to the south. But you - I heard you investigate the proceedings in Icewind Dale, you may find Brage by chance.~
 ==CVSandrJ~If we do, we will help him - either to return south or in his mission to the Stormhorns, it will depend on the circumstances.~
 ==Laryss~More I cannot ask for. Farewell, adventurers.~DO~AddJournalEntry(@972,QUEST) EscapeArea()~EXIT
 
@@ -394,7 +394,7 @@ I_C_T DHroth 10 SanIWDBrage
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Maybe we will see him again if we follow your invitation.~END
 
 INTERJECT DArundel 89  SanIWDOldEnemy
-==CVSandrJ IF~InParty("CVsandr")~THEN~So Yxunomei's *Old Enemy* has been observing us all the time. With her being tanar'ri you then must be the baatezu in this vendetta. But with her out of the way, why are you still here?~
+==CVSandrJ IF~InParty("CVsandr")~THEN~So Yxunomei's *Old Enemy* has been observing us all the time. With her being tanar'ri, you then must be the baatezu in this vendetta. But with her out of the way, why are you still here?~
 ==Darundel IF~InParty("CVsandr")~THEN~Mortal girl, you nearly outsmarted me - but I will not tell you what you want to know. No.~
 END DArundel 90
 
@@ -464,7 +464,7 @@ INTERJECT DBaldemr 14 SanIWDIronSearchB
 ==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~That same night, several of the council members, myself included, met in secret to discuss the matter further. It was during this meeting that the assassination plot was proposed. Of course, I was naturally opposed to such a dishonorable solution, but the others told me I had no choice. They threatened to use their influence to remove me from the council if I didn't go along with the plan.~
 ==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Was an Iron Throne member part of that discussion?~
 ==DBaldemr IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~Hm, not in person - it is difficult to put the finger on it, but I had the feeling that some members of the meeting actually acted under some influence, like someone had been giving them some specific ideas and solutions prior to our meeting.~
-==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~This impression my be very close to the truth, <CHARNAME>.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanHOWScar","Global",3)~THEN~This impression may be very close to the truth, <CHARNAME>.~
 END  DBaldemr 20
 
 CHAIN
