@@ -5062,10 +5062,10 @@ SetGlobal("SanTamoko","LOCALS",5)
 END
 
 IF
-Global("ENDOFBG1","GLOBAL",1)
 OR(2)
+Dead("bdkorlas")
+Global("BD_KORLASZ_SURRENDER","GLOBAL",1)
 AreaCheck("bd0120")
-AreaCheck("BG0123")
 Global("SanEndBG1Plot","GLOBAL",0)
 THEN
 RESPONSE #100
