@@ -7757,6 +7757,7 @@ COMPILE
 ~SandrahNPC/Mods/SuelleTDD.d~
 ~SandrahNPC/Sod/SandrahSoDTalk.d~
 ~SandrahNPC/Sod/CVBrage.d~
+~SandrahNPC/Sod/Corwinsan.d~
 ~SandrahNPC/Sod/BG1ResolveSkie.d~
 
 COMPILE
@@ -7774,6 +7775,8 @@ EXTEND_TOP
 ~Dorn_.bcs~ ~SandrahNPC/Mods/DornBant.baf~
 EXTEND_TOP
 ~Hexxat.bcs~ ~SandrahNPC/Mods/HexxatBant.baf~
+EXTEND_TOP
+~BDCorwin.bcs~ ~SandrahNPC/Sod/Corwinsan.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Sod/SandrahSoD.baf~
 
