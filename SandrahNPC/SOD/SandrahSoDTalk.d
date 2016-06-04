@@ -46,7 +46,7 @@ IF WEIGHT #-2~Global("SanSodQuest","Global",1)~THEN CVSandrJ SodImoMiss1
 ~(Sigh) I am at the same time happy and sad that Imoen is not with us this time.~
 DO~SetGlobal("SanSodQuest","Global",2)~
 END
-++~*Sad* I understand, given she's your *bestest* friend, but *happy*~+ SodImoMiss2
+++~*Sad* I understand, given she's your *bestest* friend, but *happy*?~+ SodImoMiss2
 ++~I think I understand well, somehow I feel the same.~+ SodImoMiss2
 
 CHAIN

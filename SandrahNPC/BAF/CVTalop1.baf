@@ -10,6 +10,7 @@ NumTimesTalkedTo(0)
 !AreaCheck("BG0200")
 !AreaCheck("BG0900")
 !AreaCheck("ar0204")
+!AreaCheck("bd1000")
 Detect([PC])
 Global("ChangeHos","LOCALS",0)
 THEN
