@@ -103,6 +103,22 @@ IF~~THEN CVSandrJ SodDreams6
 ~Good if I do - to protect you and Imoen from him, we must start to THINK like him. If we find out what he wants, we may prevent it.~EXIT
 
 CHAIN
+IF~ Global("SanPilRidl","BD1200",1)~THEN CVSandrJ Pillrid1
+~"Sometimes it is wise to think backwards."~
+DO~SetGlobal("SanPilRidl","BD1200",2)~
+=~It is a quote from that Tome of Ancient Knowledge that we found in the library earlier on this level.~
+END
+++~(Ironic) Very helpful, thank you.~DO~ IncrementGlobal("Sanpoints","Global",-1)~EXIT
+++~You see a connection to this pillar riddle here?~ DO~ IncrementGlobal("Sanpoints","Global",1)~ + Pillrid2
+
+CHAIN
+IF~~THEN CVSandrJ Pillrid2
+~These carvings on the pillars describe the progress of seasons - the first leaf in spring, the sun of summer, a cracked leaf in autumn, a snowflake...~
+END
+++~...and now we activate them in reverse order, good idea.~EXIT
+++~...and now we think backwards, I see.~EXIT
+
+CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",5)~THEN CVSandrJ SodHeph1
 ~*Sandrah studies the annotated crusader tract you found on a dead woman.*~
 DO~SetGlobal("SanSodQuest","Global",6)~
