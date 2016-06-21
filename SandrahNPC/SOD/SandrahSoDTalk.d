@@ -249,7 +249,7 @@ END
 CHAIN
 IF~~THEN CVSandrJ BDInfil4
 ~I am talking of her advisor, this Hephernaan. He does not want you and her to meet.~
-=~I mean, we already assume he has his own plans and he manipulates her. He needs your blood but he does not need you, especially he has no need for her and you to come to close.~
+=~I mean, we already assume he has his own plans and he manipulates her. He needs your blood but he does not need you, especially he has no need for her and you to come too close to each other.~
 END
 ++~Means, that is what we need to achieve, now even more than before. Hope we get another chance to do it.~EXIT
 ++~An interesting analysis, only there is nothing we can do at this moment to spoil his plan.~EXIT
