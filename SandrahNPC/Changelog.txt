@@ -41,4 +41,9 @@ Constant removal of Bhaal abilities from PC (slayer and pocket plane)
 Refined Cloakwood episode with Cynthaya and Faldorn
 Added Cespenar to Waterdeep
 
-Option to continue with Time of Trouble Revisited
+Option to continue with Time of Troubles Revisited
+
+_____________________________________________
+Time of Troubles Revisited
+
+Basic contents developped
