@@ -1,7 +1,9 @@
+// Sandrah Saga for EET, Part One, The Bhaalspawns Story
+
 BACKUP ~SandrahNPC/backup~
 AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
 
-VERSION ~v2.01.b~
+VERSION ~v2.02.b~
 
 AUTO_TRA ~SandrahNPC/TRA/%s~
 

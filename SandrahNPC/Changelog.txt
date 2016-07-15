@@ -1,4 +1,4 @@
-VERSION 2.01
+VERSION 2.02
 ----------------
 Bhaalspawn Trilogy
 
@@ -46,4 +46,4 @@ Option to continue with Time of Troubles Revisited
 _____________________________________________
 Time of Troubles Revisited
 
-Basic contents developped
+Main story contents developped
