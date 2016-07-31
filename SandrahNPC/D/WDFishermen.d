@@ -183,7 +183,7 @@ CHAIN
 IF~~ THEN WDFish5 Sirine3
 ~I will not live much longer in this dry place without Whyrtman's art to create an ambient for me, I'm fading with every minute. Will you help me return to the water or will you sentence me for the deed that happened?~
 ==CVSandrJ~Whyrtman was aware of the risk he took. The fact that he perished from your act has nothing to do with murder. This is not a case for justice but for mercy.~
-==Bimoen2 IF~InParty("Imoen2")~THEN~Life can be sooo unfair!! Sure we take you back home, right, <CHARNAME>? ~
+==Bimoen IF~InParty("Imoen2")~THEN~Life can be sooo unfair!! Sure we take you back home, right, <CHARNAME>? ~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Trust a male to handle critical stuff and you end in a mess. She deserves the fate she faces due to her own stupidity.  ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ Just let her perish, she isn't even worth to soil our blades with her blood. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Her kin is the threat of my sea elf brothers but her fate touches my heart. Let us take her to the sea and her home. ~

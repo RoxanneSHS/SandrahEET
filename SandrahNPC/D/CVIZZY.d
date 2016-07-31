@@ -4,11 +4,11 @@ CHAIN
 IF ~ Global("OrcPrison","GLOBAL",30) ~THEN CVIZZY  BereIzzy1
 ~Heya, how'd ya like my new dress. It's so pinky pink, just got it today.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",31) ~
-== BIMOEN2 ~ Great, pink is just the colour for you.~
+== BIMOEN ~ Great, pink is just the colour for you.~
 == CVIZZY ~ You say it! You musta know, you're all pretty pink yourself.~
-== BIMOEN2 ~ Pink is the bestest of all colours, I say it all the time.~
+== BIMOEN ~ Pink is the bestest of all colours, I say it all the time.~
 == CVIZZY ~ I like you lady, hey, my name's Izzy. Mmh, well, the sisters here say I should't say that 'cos really it's Isobel, like my poor mama. But mama died and Izzy now is here.~
-== BIMOEN2 ~ You like it here? Well, my name is...~
+== BIMOEN ~ You like it here? Well, my name is...~
 == CVIZZY ~ Heya, now listen to this. You know who the greatest great of all pink women is on this Sword Coast? Nay, listen, you slowpokes, never heard of Imoen the Magnificent, what?~
 == BSANDR ~ Of course we know her, every bard sings of the famous heroine in every inn.~
 == CVIZZY ~ She's the mostest fearless of all heroes, killing all the nasty orc like ones that killed mama, and kills bandits and kills dragons...~

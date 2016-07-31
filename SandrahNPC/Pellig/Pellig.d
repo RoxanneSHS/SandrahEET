@@ -5,7 +5,7 @@ IF ~NumTimesTalkedTo(0)~ THEN  Pellig Pellini
 ~(Pelligram comes up to Sandrah and quietly caresses her mistress' leg with her snout.) A deep satisfied purring comes from her dangerously looking mouth.~
 == BSANDR ~Oh, Pelligram! Good to see you, my beautiful pussycat .~
 == PELLIG ~ (Rolls onto her back and offers Sandrah her spotted belly to caress.)~
-== BIMOEN2 IF ~ InParty("Imoen2") ~ THEN ~ Huh, nice little pussycat, just had a few mice too many, I guess. By the way, what is it really, never seen such kind.~
+== BIMOEN IF ~ InParty("Imoen2") ~ THEN ~ Huh, nice little pussycat, just had a few mice too many, I guess. By the way, what is it really, never seen such kind.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ What a proud female. It is a pleasure to see such power and grace move. She is deadly for any male that tries to stand in her way. ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ As beautiful as a deadly spiderqueen. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ An animal of utmost grace and danger at the same time. Where did you find it and how could you befriend such a terrific beast? ~

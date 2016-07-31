@@ -34,9 +34,9 @@ CHAIN
 IF~~THEN  HENNING2 HennImoRit1
 ~  How have you fared, my love?~
 DO ~ SetGlobal("HennImoRit","LOCALS",1) RealSetGlobalTimer("HennImoRitInt","LOCALS",180)~
-==Bimoen2 ~ Oh, listen and listen, besta loverboy...(Imoen breathlessly reports what has happened since they have parted.)~
+==Bimoen ~ Oh, listen and listen, besta loverboy...(Imoen breathlessly reports what has happened since they have parted.)~
 ==HENNING2~ Oh, my wonderfull, courageous heroine, mmpf...~
-==Bimoen2 ~ (Kisses Henning over and over) Hey, enough talking for now, there is something I needa show ya quickest, this garter belt I bought in Beregost...~
+==Bimoen ~ (Kisses Henning over and over) Hey, enough talking for now, there is something I needa show ya quickest, this garter belt I bought in Beregost...~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -44,19 +44,19 @@ CHAIN
 IF~~THEN  HENNING2 HennImoRit2
 ~  Imoen, my love, I have to tell you so much.~
 DO ~ SetGlobal("HennImoRit","LOCALS",2)RealSetGlobalTimer("HennImoRitInt","LOCALS",180)~
-==Bimoen2 ~ Tell me quickest and quickest before I explode! But first take this kiss (Mmpf) and this one(Mmpf).~
+==Bimoen ~ Tell me quickest and quickest before I explode! But first take this kiss (Mmpf) and this one(Mmpf).~
 ==HENNING2~ Business with Clarissa and me is starting to move quite well. I do her bookkeeping and on the side I have started to sell and buy my own goods as well. The interest for the things you bring from your journeys is building and I have already quite a reputation here in town.~
-==Bimoen2 ~ Hey, means you wanna stay here in the big city 'stead of goin' back to Nashkel. FANTASTIC! I love and love it.~
+==Bimoen ~ Hey, means you wanna stay here in the big city 'stead of goin' back to Nashkel. FANTASTIC! I love and love it.~
 ==HENNING2~ Wonderful, so you agree. I will sell the shop in Nashkel - and next time you come to Waterdeep we may go and look at some of the vacant houses I have found around town for your approval.~
-==Bimoen2 ~ Oh, wonderfullest of all men, yes and yes and yes - But for now let us get to our rooms quickest, I need you so much and much...~
+==Bimoen ~ Oh, wonderfullest of all men, yes and yes and yes - But for now let us get to our rooms quickest, I need you so much and much...~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
 IF~~THEN  HENNING2 HennImoRit3
 ~  Imoen!~
-==Bimoen2 ~ Henning! (Kiss.) Mmpf.~
+==Bimoen ~ Henning! (Kiss.) Mmpf.~
 ==HENNING2~ (Kiss.) Mmpf.~
-==Bimoen2 ~ (Kiss.) Mmpf.~
+==Bimoen ~ (Kiss.) Mmpf.~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT

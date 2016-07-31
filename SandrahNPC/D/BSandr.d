@@ -1918,7 +1918,7 @@ IF~~ THEN BSANDR HaiassJoinSan
 DO~ SetGlobal("HaiassJoinSan","GLOBAL",2)~
 ==HAIASS ~ (The wolf eagerly chews the piece of dried meat Sandrah has offered him. He seems to be very hungry and thankful for Sandrah's attention.)~
 ==BSANDR~ He is used to humans, it seems. Another lost orphan out here in the wilderness.~
-== BIMOEN2 IF ~ InParty("Imoen2")~ THEN ~ Heya, I'd be damned if that ain't Haiass, <CHARNAME>'s ol' pal, that fleabag <PRO_HESHE> loves so much.~
+== Bimoen IF ~ InParty("Imoen2")~ THEN ~ Heya, I'd be damned if that ain't Haiass, <CHARNAME>'s ol' pal, that fleabag <PRO_HESHE> loves so much.~
 END
 ++ ~ That is Haiass, my wolf. He is really an orphan. I found him beside his slain mother four years ago. He grew up with me and is my friend. I left him at Candlekeep but it looks like he found a way to me anyway. So be it. Come here, Haiass, my old wolf, All is good now. ~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~+ HaiassJoinSan2
 ++~ Oh, no, it is really Haiass, my old mongrel wolf. Seems like I cannot get rid of him. He is really an orphan. I found him beside his slain mother four years ago. He grew up with me and follows me whereever I go.~ + HaiassJoinSan2
@@ -1992,11 +1992,11 @@ CHAIN
 IF ~ Global("SanImoElm1","GLOBAL",1) ~ THEN BSANDR SanImoElm1
 ~ Yes, Imoen?~
 DO ~SetGlobal("SanImoElm1","GLOBAL",2)~
-== BIMOEN2  ~Mmmh, this old mage had a strange way with ya. And don't try to fool me none, but ya were not jumping for joy to see him, he!~
+== Bimoen  ~Mmmh, this old mage had a strange way with ya. And don't try to fool me none, but ya were not jumping for joy to see him, he!~
 == BSANDR   ~The ever watchful Imoen. I am not that eager at the moment to meet followers of Mystra, you know. But keep that as our little secret, will you.~
-== BIMOEN2   ~Hoy, a secret, just between you and me. I'm Imoen the Silent, just in case ya doubt it. So, you are on the run from the mighty goddess Mystra herself. What a thrill, I love this adventures life already.~
+== Bimoen   ~Hoy, a secret, just between you and me. I'm Imoen the Silent, just in case ya doubt it. So, you are on the run from the mighty goddess Mystra herself. What a thrill, I love this adventures life already.~
 == BSANDR   ~No no, I am no runaway priest - I am a follower of Mystra with heart and soul. It is just...all those mages probably know my father too well.~
-== BIMOEN2   ~I see, hey girl, we have so much in common. Me ran away from old Winthrop and you ran away from this strange everpresent father of yours. Great!~
+== Bimoen   ~I see, hey girl, we have so much in common. Me ran away from old Winthrop and you ran away from this strange everpresent father of yours. Great!~
 EXIT
 
 // Imoen on PC to Sandrah Relationship
@@ -2005,45 +2005,45 @@ CHAIN
 IF ~ Global("SanImoPCInterest","GLOBAL",1)~ THEN BSANDR SanImoPCInterest
   ~ Ouch, Imoen, why do you throw these nuts at me?~
 DO ~SetGlobal("SanImoPCInterest","GLOBAL",2)~
-== BIMOEN2  ~Mmmh, come aside with me, will you.~
+== Bimoen  ~Mmmh, come aside with me, will you.~
 =   ~Say, you have some interest in <CHARNAME>, dontcha?.~
 == BSANDR   ~I am a bit obvious with that. I do not interfere with anything there, or do I? I mean you and <CHARNAME> knowing each other for so long.~
-== BIMOEN2   ~NAY, you fool, you. I just kinda need to look a bit after <CHARNAME> in a way, you know with Gorion gone and me as <PRO_HISHER> kinda older sister and so.~
+== Bimoen   ~NAY, you fool, you. I just kinda need to look a bit after <CHARNAME> in a way, you know with Gorion gone and me as <PRO_HISHER> kinda older sister and so.~
 == BSANDR   ~(laughs) Then older sister Imoen, I confess everything. (Lowers her voice to a secretive whisper:) I think I am really in love with <CHARNAME>.~
-== BIMOEN2  ~WOW, YOU ARE A LOVESICK CITY BABE FALLEN FOR MY LITTLE <CHARNAME>!!! WOW.~
+== Bimoen  ~WOW, YOU ARE A LOVESICK CITY BABE FALLEN FOR MY LITTLE <CHARNAME>!!! WOW.~
 == BSANDR   ~I might as well have given the news to the Beregost town crier, could I?~
 =   ~(Sigh) If I ever need some older sister's advice in matters of the heart I will confide with you.~
-== BIMOEN2  ~HEY ISN'T THAT GRAND. I'm Imoen, the Counselor Of Love, for my little ward's big city sweetie. Hey, we're besta friends now, Sandrah, are we.~
+== Bimoen  ~HEY ISN'T THAT GRAND. I'm Imoen, the Counselor Of Love, for my little ward's big city sweetie. Hey, we're besta friends now, Sandrah, are we.~
 == BSANDR   ~(sigh)~
-== BIMOEN2   ~ Now, here's just one thing, darling Sandrah. You cannot borrow any of my PINK underware to tease  <CHARNAME>. (Starts to roll in the grass laughing like mad.)~
+== Bimoen   ~ Now, here's just one thing, darling Sandrah. You cannot borrow any of my PINK underware to tease  <CHARNAME>. (Starts to roll in the grass laughing like mad.)~
 == BSANDR  ~ (Picks up some nuts in revenge and starts throwing them at Imoen.)~
-== BIMOEN2   ~ Ouch, hahaha, ouch, he....~
+== Bimoen   ~ Ouch, hahaha, ouch, he....~
 EXIT
 
 CHAIN
 IF ~ Global("ImoHousew","GLOBAL",1) ~THEN BSANDR ImoHousew1
 ~  * Dusk settles over the landscape.*~
 DO ~SetGlobal("ImoHousew","GLOBAL",2)~
-== BIMOEN2 ~ Heja. Sandrah, hope <CHARNAME> will call us to camp pretty soon. All this roaming the land and adventuring makes me sooo tired. 'n' hungry. ~
+== Bimoen ~ Heja. Sandrah, hope <CHARNAME> will call us to camp pretty soon. All this roaming the land and adventuring makes me sooo tired. 'n' hungry. ~
 = ~ Hey, guess it's your turn tonight to do the housework thing.~
 == BSANDR ~ If you say so. At least we do not have to scratch the bottoms of burned pots for the rest of the night because someone had to do about everything except watching the meal.~
-== BIMOEN2 ~ I have NO idea whatcha talking 'bout. Anyways, are you good at cookin' and so, Miss Wisecrack?~
+== Bimoen ~ I have NO idea whatcha talking 'bout. Anyways, are you good at cookin' and so, Miss Wisecrack?~
 == BSANDR ~ I will tell you a secret, my *besta friend*. I use simply my magic to do it.~
-== BIMOEN2 ~ Ay, foolish me, why didn't I guess. Of course, you do it same way like you do your cleaning clothes, just little mumbojumbo, PUFF, and the fine lady is all dressed up like for a ball.~
+== Bimoen ~ Ay, foolish me, why didn't I guess. Of course, you do it same way like you do your cleaning clothes, just little mumbojumbo, PUFF, and the fine lady is all dressed up like for a ball.~
 == BSANDR ~ Sure. This was about the only reason I started following Mystra. A little spell, and my father's household was up and running.~
-== BIMOEN2 IF~!Global("Imoenclasschoice","GLOBAL",1)~THEN~ Gosh, wish I had that when running ol' man Winthrop's scores all day long. Of course you needa show me the trick now that I'm your fellow mage-adventurer-friend, he.~
-== BIMOEN2 IF~Global("Imoenclasschoice","GLOBAL",1)~THEN~ Gosh, wish I had that when running ol' man Winthrop's scores all day long. But they didn't let me study the scrolls I stole back at Candlekeep, he.~
+== Bimoen IF~!Global("Imoenclasschoice","GLOBAL",1)~THEN~ Gosh, wish I had that when running ol' man Winthrop's scores all day long. Of course you needa show me the trick now that I'm your fellow mage-adventurer-friend, he.~
+== Bimoen IF~Global("Imoenclasschoice","GLOBAL",1)~THEN~ Gosh, wish I had that when running ol' man Winthrop's scores all day long. But they didn't let me study the scrolls I stole back at Candlekeep, he.~
 EXIT
 
 CHAIN
 IF ~ Global("SanImoGrMa","GLOBAL",1)~ THEN BSANDR Greenpink1
 ~ ..what do you mean by unfair, my best friend Imo?~
 DO~ SetGlobal("SanImoGrMa","GLOBAL",2)~
-== BIMOEN2 ~ Ha, best friend, you..you. You want them all for yourself, the nice injured paladin and the handsome young smith, and...~
+== Bimoen ~ Ha, best friend, you..you. You want them all for yourself, the nice injured paladin and the handsome young smith, and...~
 == BSANDR ~ Hey, stop it, Imoen, you start to get unfair yourself now..~
-== BIMOEN2 ~ I did see that lovely bard first, mind that, but it didn't stop ya.~
+== Bimoen ~ I did see that lovely bard first, mind that, but it didn't stop ya.~
 == BSANDR ~ There are enough left for you, if you could only once make up your mind. Here is a deal, my best friend, the next one we meet is all yours. My word of honor on that.~
-== BIMOEN2 ~ Really, no bad trick in that? I trust ya, Sandrah...else...just wait I will find some revenge, if ya try 'n trick me, believe it!~
+== Bimoen ~ Really, no bad trick in that? I trust ya, Sandrah...else...just wait I will find some revenge, if ya try 'n trick me, believe it!~
 == BSANDR ~ All for you, I swear.~
 EXIT
 
@@ -2051,28 +2051,28 @@ CHAIN
 IF ~ Global("ImoTravGlimps","GLOBAL",2)~ THEN BSANDR TravGlimp
 ~ A stately estate.~
 DO ~ SetGlobal("ImoTravGlimps","GLOBAL",3) ~
-== BIMOEN2 ~ Whatcha think, Sandrah, will we maybe one day own a place like that after our adventuring days are done. Can ya imagine that - oh bloody me, where's ma brain, YOU have already such a thing, right?~
+== Bimoen ~ Whatcha think, Sandrah, will we maybe one day own a place like that after our adventuring days are done. Can ya imagine that - oh bloody me, where's ma brain, YOU have already such a thing, right?~
 == BSANDR ~ My father's place at Waterdeep is truely a large and rich mansion. But, Imoen, there is a difference for me. That house was and is my home. I love it for the warmth and the memories rather than for its splendor. And such can be found in a less stately place as well.~
-== BIMOEN2 ~ Guess ya right and you must know. I was always sooo happy at Puffguts, yeah, well most of the time at least. And now looka that grumbler here in his big empty hall all alone. He ain't happy with all his wealth, he even has to stand these two golem-types all day to feel safe. You got it right, we're much and much better off.~
+== Bimoen ~ Guess ya right and you must know. I was always sooo happy at Puffguts, yeah, well most of the time at least. And now looka that grumbler here in his big empty hall all alone. He ain't happy with all his wealth, he even has to stand these two golem-types all day to feel safe. You got it right, we're much and much better off.~
 == BSANDR ~ Are you dreaming sometimes of a nice home of your own - with a loving husband by your side...~
-== BIMOEN2 ~ ...and lotsa and more happy squirming children 'round us. Little girls in pink and little boys in blue and singing and laughing and listening to the great tales of Imoen the Magnificent.~
+== Bimoen ~ ...and lotsa and more happy squirming children 'round us. Little girls in pink and little boys in blue and singing and laughing and listening to the great tales of Imoen the Magnificent.~
 == BSANDR ~ So we have a new mission at hand. Find this magnificent husband for all of that.~
-== BIMOEN2 ~NOO PROBLEM.~
+== Bimoen ~NOO PROBLEM.~
 EXIT
 
 CHAIN
 IF ~ Global("PallonTalk","GLOBAL",1) ~ THEN BSANDR Pallon
 ~ You do not really believe in prophesies and fortune tellers and such, besta friend?~
 DO ~ SetGlobal("PallonTalk","GLOBAL",2) ~
-== BIMOEN2 ~ (Takes Sandrah's hand and turns the palm upwards.) OOOH, UUUH, there! You will meet a stranger when you come into a big town.~
+== Bimoen ~ (Takes Sandrah's hand and turns the palm upwards.) OOOH, UUUH, there! You will meet a stranger when you come into a big town.~
 == BSANDR ~ Sure, probably even more than one.~
-== BIMOEN2 ~ When you hear a cock crow in the morning the weather will either change or stay the same.~
+== Bimoen ~ When you hear a cock crow in the morning the weather will either change or stay the same.~
 == BSANDR ~ Or maybe not?~
-== BIMOEN2 ~ Hey, know what. Walk through Candlekeep at any time of day and you hear them great prophesies chanted like they meant something to somebody. This God of Murder will get us all or maybe not, or a hero will stop him or the hero will become the god or whatever. I tried to listen time after time and it could mean something important or just mad babbling. Make out of it what you want.~
+== Bimoen ~ Hey, know what. Walk through Candlekeep at any time of day and you hear them great prophesies chanted like they meant something to somebody. This God of Murder will get us all or maybe not, or a hero will stop him or the hero will become the god or whatever. I tried to listen time after time and it could mean something important or just mad babbling. Make out of it what you want.~
 == BSANDR ~ So what do you think yourself?~
-== BIMOEN2 ~ About that Bhaal guy, you mean? If he was a god who cares and if he is dead who cares even less. Problem is people who believe such stuff and think it tells them to act really weird, see? You know best with your Mystra goddess, Sandrah. It is what you do in her name, no matter if she really exists or not.~
+== Bimoen ~ About that Bhaal guy, you mean? If he was a god who cares and if he is dead who cares even less. Problem is people who believe such stuff and think it tells them to act really weird, see? You know best with your Mystra goddess, Sandrah. It is what you do in her name, no matter if she really exists or not.~
 == BSANDR ~ You are right, Imoen, you are a clever philosopher. It is good you are not in Candlekeep anymore, they would have kicked you out sooner or later for your free thinking.~
-== BIMOEN2 ~ Guess your Mystra coulda taken me then, she doesn't seem to care for such as long as your heart is in the right place.~
+== Bimoen ~ Guess your Mystra coulda taken me then, she doesn't seem to care for such as long as your heart is in the right place.~
 == BSANDR ~ (Smiles) Your heart surely is, besta friend.~
 EXIT
 
@@ -2081,11 +2081,11 @@ CHAIN
 IF~~THEN  BSANDR ImoHealedProf
 ~ It is my profession, if I could call anything I do by that name. ~
 DO~ SetGlobal("SanHealImo","GLOBAL",6)~
-==BIMOEN2 ~ So what *profession* do I have then? Or <CHARNAME>? ~
+==Bimoen ~ So what *profession* do I have then? Or <CHARNAME>? ~
 ==BSANDR ~ Yours could be chambermaid, if you had not outgrown that by now. Or do you prefer *ambassador*? ~
-==BIMOEN2 ~ Ambassador sounds great. Listen, Imoen of Candlekeep, Ambassador of...~
+==Bimoen ~ Ambassador sounds great. Listen, Imoen of Candlekeep, Ambassador of...~
 ==BSANDR ~ How about Ambassador of Pink.~
-==BIMOEN2 ~ Great. (Grins) Back at Candlekeep I's dreaming to become a legendary thief - but I always got myself caught on my attempts...ooh, I had to be SOOO inventive everytime to shift the blame to <CHARNAME>.~
+==Bimoen ~ Great. (Grins) Back at Candlekeep I's dreaming to become a legendary thief - but I always got myself caught on my attempts...ooh, I had to be SOOO inventive everytime to shift the blame to <CHARNAME>.~
 =~So what about <CHARNAME>'s profession? ~
 ==BSANDR IF ~ Class(Player1,PALADIN_ALL)~ THEN~ Paladin is a well respected profession, I guess. A living example of the virtues of <PRO_HISHER> god. Thus your view may depend in a way on how you estimate the God <PRO_HESHE> represents. ~
 ==BSANDR IF ~ Class(Player1,RANGER_ALL)~ THEN~ A ranger, a protector of nature, mh, it is a calling and a duty, but do you call it a profession? But then the hunter that brings meat for the clan to eat and survive is among the oldest professions on Toril. ~
@@ -2103,17 +2103,17 @@ CHAIN
 IF~ Global("SanImoEd","LOCALS",1)~ THEN BSANDR SanImoEd1
 ~ A little secret to share between besta friends?~
 DO ~ SetGlobal("SanImoEd","LOCALS",2)~
-== BIMOEN2 ~ Guess it's about time ya shared your little secret with Imoen, the secret agent of love and romance, he?~
+== Bimoen ~ Guess it's about time ya shared your little secret with Imoen, the secret agent of love and romance, he?~
 == BSANDR ~ Is it time? And whom of my loverboy collection are you referring to exactly?~
-== BIMOEN2 ~ Ya think mages like me cant see when other mages are miscasting their spells in a lovesick manner, hey I's never dumb, sweetheart.~
+== Bimoen ~ Ya think mages like me cant see when other mages are miscasting their spells in a lovesick manner, hey I's never dumb, sweetheart.~
 == BSANDR ~ (Laughs) No, Imoen, you cannot mean that in earnest. That red robed bastard and me? Let me get out my *bestest* cure for you immediately.~
-== BIMOEN2 ~ Haha yourself, that's exactly the reaction one shows when caught with her fingers in the pudding. So no more fooling Imoen, the secret agent number one. You can only save your hide by confessing the hole truth now. ~
+== Bimoen ~ Haha yourself, that's exactly the reaction one shows when caught with her fingers in the pudding. So no more fooling Imoen, the secret agent number one. You can only save your hide by confessing the hole truth now. ~
 == BSANDR ~ Fine. Here is the truth and nothing but the truth. If all the demons from hell escape and slaughter mankind, and Edwin and me are the last two remaining humans on Toril that could make our race survive, I would not consider for a second to let him come near me.~
-== BIMOEN2 ~ Huuh. That sound like sooo much *no* that it is almost *yes* again.~
+== Bimoen ~ Huuh. That sound like sooo much *no* that it is almost *yes* again.~
 == BSANDR ~ Imoen, that is the weirdest interpretation I have ever heard.~
-== BIMOEN2 ~ Besta friend, just wait and see. Seems like I know you better than yourself. You cant in no way imagine it, so it's almost sure gonna happen - that's what life has taught me all the time.~
+== Bimoen ~ Besta friend, just wait and see. Seems like I know you better than yourself. You cant in no way imagine it, so it's almost sure gonna happen - that's what life has taught me all the time.~
 == BSANDR ~ And I tell you, never in a million years!~
-== BIMOEN2 ~ Bet we don't have ta wait that long, hahaha...~
+== Bimoen ~ Bet we don't have ta wait that long, hahaha...~
 EXIT
 
 // Lord Foreshadow
@@ -2122,9 +2122,9 @@ CHAIN
 IF ~ Global("X#IMForeshadow","GLOBAL",3) ~ THEN BSANDR Foreshad
 ~ Better get yourself a warm pink fur coat for that, Imoen.~
 DO~ SetGlobal("X#IMForeshadow","GLOBAL",4)~
-== BIMOEN2 ~ Guess ya been up there, my wordly besta friend, yep?~
+== Bimoen ~ Guess ya been up there, my wordly besta friend, yep?~
 == BSANDR ~ Despite its name it can be *real winter* in that town. You would not like it anyway, nothing really going on there, except you are out for a goblin boyfriend.~
-== BIMOEN2 ~ Glad ya warned me, let's go to Last Haven then. If they give town names by that method, then it must be THE place, hahaha.~
+== Bimoen ~ Glad ya warned me, let's go to Last Haven then. If they give town names by that method, then it must be THE place, hahaha.~
 EXIT
 
 //Beregost Arrival
@@ -2133,46 +2133,46 @@ CHAIN
 IF ~ Global("X#ImoenBereg","GLOBAL",3) ~ THEN BSANDR PinkTunic
 ~ Oh, Imoen, what a great idea. Do you mind if I would give you a bit of advice when we go shopping? ~
 DO~ SetGlobal("X#ImoenBereg","GLOBAL",4)~
-== BIMOEN2 ~ Wow, great, I wont mind at all, just to look as great as ya, Waterdeep Belle...of course just in pink - Mind it, no pink for anyone but me, hands off from pink!!~
+== Bimoen ~ Wow, great, I wont mind at all, just to look as great as ya, Waterdeep Belle...of course just in pink - Mind it, no pink for anyone but me, hands off from pink!!~
 EXIT
 
 CHAIN
-IF ~Global("ImoHousew","GLOBAL",3)~THEN Bimoen2 PCEvil1
+IF ~Global("ImoHousew","GLOBAL",3)~THEN Bimoen PCEvil1
 ~You really look so thinquishly thinkin', Sandrah, dontcha fear you'll get all wrinklish that way?~
 DO~SetGlobal("ImoHousew","GLOBAL",4)~
 ==BSANDR~(Sigh) Oh, I wish I could stop my thoughts - if only to not become some wrinkled old hag.~
-==BIMOEN2~But you cant and the more you try not to, the more it creeps into ya brain...~
+==Bimoen~But you cant and the more you try not to, the more it creeps into ya brain...~
 =~I know that...only way is to talk with some besta friend about it, that's what I'd do...by the way, I'm all ears.~
 ==BSANDR~Imoen, the counselor?~
-==BIMOEN2~You bet.~
+==Bimoen~You bet.~
 ==BSANDR~I was thinking about something as trivial as good and evil...~
-==BIMOEN2~That's not trivial...and it means ya thinking 'bout <CHARNAME>, and that they all think <PRO_HESHE>'s evil and such, right?~
+==Bimoen~That's not trivial...and it means ya thinking 'bout <CHARNAME>, and that they all think <PRO_HESHE>'s evil and such, right?~
 ==BSANDR~But you know better, you know better than anyone?~
-==BIMOEN2~And you do as well or you wouldn't be here. Listen and listen what counselor Imoen tells you.~
+==Bimoen~And you do as well or you wouldn't be here. Listen and listen what counselor Imoen tells you.~
 =~<CHARNAME>'s as evil as any <PRO_GIRLBOY> can be, teasing <PRO_HISHER> nice little red haired sister all day...and killing for money, of course.~
 ==BSANDR~You are joking! Killing for money?~
-==BIMOEN2~I swear and swear it! See, <PRO_HESHE> took 5gp from Reevor to kill the rats in the warehouse, that's how evil <PRO_HESHE> is.~
+==Bimoen~I swear and swear it! See, <PRO_HESHE> took 5gp from Reevor to kill the rats in the warehouse, that's how evil <PRO_HESHE> is.~
 ==BSANDR~(Laughs) I bet the evil part of that is that <PRO_HESHE> did not give you half of it afterwards.~
-==BIMOEN2~You got it. I only told you what your heart was knowin' already, so why torture that brain of yours and get wrinkles like Auntie Jaheira.~
+==Bimoen~You got it. I only told you what your heart was knowin' already, so why torture that brain of yours and get wrinkles like Auntie Jaheira.~
 ==BSANDR~Counselor Imoen, that was a really good advice.~
-==BIMOEN2~No wonder, I had the chance to learn it from the bestest counselor on the Sword Coast.~EXIT
+==Bimoen~No wonder, I had the chance to learn it from the bestest counselor on the Sword Coast.~EXIT
 
 CHAIN
 IF ~ Global("SanImoNashInt","GLOBAL",1) ~ THEN BSANDR SanImoNashInt1
 ~ A handsome and well mannered man, this Henning of Nashkel.~
 DO~ SetGlobal("SanImoNashInt","GLOBAL",2) RealSetGlobalTimer("SanImoNashIntT","GLOBAL",1000) ~
-== BIMOEN2 ~  Sure, Sandrah, wow he's so cute and...you, I WARN YA ONLY ONCE, Henning is completely off limits for you - understood?~
+== Bimoen ~  Sure, Sandrah, wow he's so cute and...you, I WARN YA ONLY ONCE, Henning is completely off limits for you - understood?~
 == BSANDR ~ You can bet on that, my best friend, I would never dare to interfere with Imoen the Magnificent. Also he seems to have only eyes for you.~
-== BIMOEN2 ~ Hey, don't joke at my cost - I mean, eh, do you really think...~
+== Bimoen ~ Hey, don't joke at my cost - I mean, eh, do you really think...~
 == BSANDR ~ Imoen, trust a woman of the world. From the moment you came into his shop, he had eyes only for you. He took me aside and asked me to introduce you.~
-== BIMOEN2 ~ Oh my. I am so nervous. I hope <CHARNAME> will feel the need to refresh our supplies shortly. Ah, when will we go back there? I can hardly wait.~
+== Bimoen ~ Oh my. I am so nervous. I hope <CHARNAME> will feel the need to refresh our supplies shortly. Ah, when will we go back there? I can hardly wait.~
 EXIT
 
 CHAIN
 IF ~ Global("SanImoNashInt","GLOBAL",3) ~ THEN BSANDR SanImoNashInt3
 ~ What do I need to tell <CHARNAME>? Can you not talk a bit louder, Imoen.~
 DO~ SetGlobal("SanImoNashInt","GLOBAL",4) ~
-== BIMOEN2 ~ Don't play dumb, Sandrah. Tell <PRO_HIMHER> we have run out of salt and arrows and you need some whatever...Need I tell you everything...My, use your imagination.~
+== Bimoen ~ Don't play dumb, Sandrah. Tell <PRO_HIMHER> we have run out of salt and arrows and you need some whatever...Need I tell you everything...My, use your imagination.~
 == BSANDR ~ Sure.~
 = ~<CHARNAME>, I just went through our inventory of supplies. There are quite a few things amiss at the moment. We should use our stay here in Nashkel to fill up our packs.~
 END
@@ -2183,41 +2183,41 @@ CHAIN
 IF ~ Global("ImopeltHunt","GLOBAL",1) ~ THEN BSANDR Pelthu1
 ~  Are you trying to read those animal tracks, Imoen?~
 DO ~ SetGlobal("ImopeltHunt","GLOBAL",2) ~
-== BIMOEN2 ~ Yeah, kinda try to. Say, ya think these are a wolf's ones. No, too small, I guess, only a war dog.~
+== Bimoen ~ Yeah, kinda try to. Say, ya think these are a wolf's ones. No, too small, I guess, only a war dog.~
 == BSANDR ~ You want to hunt wolves? But we do that all the time - or rather they hunt us and we fight them off.~
-== BIMOEN2 ~ MY, SANDRAH. D' ya ever use that pretty head of yours for others than your pretty hairdo? Haven't you listened at all in Nashkel? 'course we need to find and find a winterwolf and its pelt.~
+== Bimoen ~ MY, SANDRAH. D' ya ever use that pretty head of yours for others than your pretty hairdo? Haven't you listened at all in Nashkel? 'course we need to find and find a winterwolf and its pelt.~
 == BSANDR ~ You want a fur coat?~
-== BIMOEN2 ~ Silly cutie! Gotcha, you play the fool. You darn know that Henning asked for one. Once we hunt one we needa dash to the shop and get our reward.~
+== Bimoen ~ Silly cutie! Gotcha, you play the fool. You darn know that Henning asked for one. Once we hunt one we needa dash to the shop and get our reward.~
 == BSANDR ~ Now I see what you mean. And what kind of reward do you plan to ask him for the pelt?~
-== BIMOEN2 ~ C'mon, slowpoke. Do I really need to tell *YOU*?~ DO~AddJournalEntry(@931,QUEST)~
+== Bimoen ~ C'mon, slowpoke. Do I really need to tell *YOU*?~ DO~AddJournalEntry(@931,QUEST)~
 EXIT
 
 CHAIN
 IF ~ Global("SanImoNashInt","GLOBAL",9)~ THEN BSANDR SanImoNashInt9
 ~ Imoen, it is so wonderful, may I touch it?~
 DO ~ SetGlobal("SanImoNashInt","GLOBAL",10)~
-== BIMOEN2 ~ Now you look, heh? But just 'cause your my besta friend, you may touch it for a second.~
+== Bimoen ~ Now you look, heh? But just 'cause your my besta friend, you may touch it for a second.~
 == BSANDR ~ It is so smooth, fantastic. This is a girl's dream come true. Congratulation, Imoen, my friend. Look, it is warm when it is cold outside and it is refreshing when the outside is hot. And it has loads of protective enchantments. Your lover really cares much for you.~
-== BIMOEN2 ~ Yeah, he is wonderful - in any respect. I will never envy my big city friend ever again - now you can envy me. Only wonder how a shopkeep can afford such a gift for his gal?~
+== Bimoen ~ Yeah, he is wonderful - in any respect. I will never envy my big city friend ever again - now you can envy me. Only wonder how a shopkeep can afford such a gift for his gal?~
 == BSANDR ~ Mh, it must be worth a real fortune. But then, he is not just a shopkeep, but the owner of the shop, and he has a good business with the road between Anm and Baldur's Gate.~
-== BIMOEN2 ~ You are right. Old Puffguts made loads of coin with his business at Candlekeep, and that is not even as frequented as Nashkel. But...Sandrah, one thing comes to my mind...you as my besta friend...~
+== Bimoen ~ You are right. Old Puffguts made loads of coin with his business at Candlekeep, and that is not even as frequented as Nashkel. But...Sandrah, one thing comes to my mind...you as my besta friend...~
 == BSANDR ~ What is it, Imoen, you seem disturbed?~
-== BIMOEN2 ~ Hm, I mean I love Henning much and much and all, but...I wanted a shining knight, a highriding paladin...not a shopkeeper.~
+== Bimoen ~ Hm, I mean I love Henning much and much and all, but...I wanted a shining knight, a highriding paladin...not a shopkeeper.~
 == BSANDR ~ Hey, you must be joking. He is the best looking shopkeeper on the Sword Coast and I bet he will wield a gruelsome sword when it comes to protecting his damsel.~
-== BIMOEN2 ~ Yeees but...See, I was with a shopkeeper all my life already, now I am Imoen the Magnificent. I sweared I will never wear an apron in a shop ever in my life, get it?~
+== Bimoen ~ Yeees but...See, I was with a shopkeeper all my life already, now I am Imoen the Magnificent. I sweared I will never wear an apron in a shop ever in my life, get it?~
 == BSANDR ~ I see your point. But did Henning actually ask you to stop your adventurer's life and become a part of his shop?~
-== BIMOEN2 ~ Actually no. No he did not. Fact is, he said he loved my being so independent and heroic and such stuff, cant recall all his words.~
+== Bimoen ~ Actually no. No he did not. Fact is, he said he loved my being so independent and heroic and such stuff, cant recall all his words.~
 == BSANDR ~ You see, it looks like he accepts you for what you are and does not want to change you into a shopgirl. Look at it this way, with your hero reputation and the exotic goods you gather during our adventures, you add quite a bit to the Nashkel shop's possibilities already.~
-== BIMOEN2 ~ Haha, that's good. See the advertisements on the Sword Coast roads everywhere: *Come to Nashkel - Buy where the heroes buy!* - and we could say *All weapons certified by Imoen the Magnificent and her followers!" Huh, I'm dying to see Henning again and tell him my business ideas...~DO~EraseJournalEntry(@931)~
+== Bimoen ~ Haha, that's good. See the advertisements on the Sword Coast roads everywhere: *Come to Nashkel - Buy where the heroes buy!* - and we could say *All weapons certified by Imoen the Magnificent and her followers!" Huh, I'm dying to see Henning again and tell him my business ideas...~DO~EraseJournalEntry(@931)~
 EXIT
 
 CHAIN
 IF ~ Global("SanImoLoveLet","GLOBAL",1) ~THEN BSANDR ImoLoveLet
 ~ Imoen, you have read this piece of paper now for the fifth time since we woke up. And your face gets so dreamingly each time. Confess, my best friend, it must be a love letter.~
 DO ~ SetGlobal("SanImoLoveLet","GLOBAL",2)~
-== BIMOEN2 ~ Clever as always. Yeah 'tis. Can you imagine, my first love letter in all my life, wow, it's just wonderful.~
+== Bimoen ~ Clever as always. Yeah 'tis. Can you imagine, my first love letter in all my life, wow, it's just wonderful.~
 == BSANDR ~ Henning really cares a lot for you. This wonderful coat, finding you with letters. I wish my lover would be so inventive (Blows you a secret kiss behind Imoen's back.)~
-== BIMOEN2 ~ I'm so happiest when I just think of him. Oh, if we can only make it to Nashkel more often.~
+== Bimoen ~ I'm so happiest when I just think of him. Oh, if we can only make it to Nashkel more often.~
 END
 IF ~ !PartyHasItem("Sanwi2") ~ THEN REPLY ~ I have heard that, my friend. There is still the rescue in the Gnoll Citadel awaiting our solution. That will bring our way through Nashkel.~ +ImoLoveLet2
 ++ ~ The temple in Nashkel has this special ring I wanted to purchase for the group. We need to get to the town pretty soon for that.~ +ImoLoveLet2
@@ -2227,14 +2227,14 @@ IF ~ !PartyHasItem("Sanwi2") ~ THEN REPLY ~ I have heard that, my friend. There 
 CHAIN
 IF~~ THEN BSANDR ImoLoveLet2
 ~ What do you think, Imoen, should we look out for a nice gift here in town to bring along for Henning?~
-== BIMOEN2 ~ Great idea, besta counselor. I've seen this reaaaaly rare expensive dark Calimsham chocolate in that shop a minute ago. He loves such sweet things, I know.~
+== Bimoen ~ Great idea, besta counselor. I've seen this reaaaaly rare expensive dark Calimsham chocolate in that shop a minute ago. He loves such sweet things, I know.~
 == BSANDR ~ (Laughs) I do not think he will have the slightest chance to taste it as long as you are around. His mouth will be totally occupied with kissing you.~
-== BIMOEN2 ~ You bet. Come let's get it quickest. Nashkel, here we come!~ EXIT
+== Bimoen ~ You bet. Come let's get it quickest. Nashkel, here we come!~ EXIT
 
 CHAIN
 IF~~ THEN BSANDR ImoLoveLet3
 ~ I guess <CHARNAME> has heard your words quite well. Just look at <PRO_HIMHER>. Have you ever sensed an interest in farm tools in <PRO_HIMHER> before?~
-== BIMOEN2 ~ Oh, <CHARNAME>, you are a beast! Just 'cos you have your loved one always handy by your side, you think you can ignore other people's needs. Bah, bah and bah!~
+== Bimoen ~ Oh, <CHARNAME>, you are a beast! Just 'cos you have your loved one always handy by your side, you think you can ignore other people's needs. Bah, bah and bah!~
 END
 ++ ~ Hey okay, you two, you have won. I'd rather face armies of hobgoblins than to face my two best friends in anger. We will go to Nashkel as soon as our quests give us the slightest excuse.~ +ImoLoveLet2
 
@@ -2243,9 +2243,9 @@ CHAIN
 IF~ Global("SanImoNashInt","GLOBAL",14) ~ THEN BSANDR HenGone1
 ~ <CHARNAME>! Quick, lead Imoen away, let her not see this.~
 DO ~ SetGlobal("SanImoNashInt","GLOBAL",16)~
-== BIMOEN2 ~ (Imoen wriggles herself free like an eel and escapes your attempt to hold her back.) Blood all over! Where is Henning..? HENNING?~
+== Bimoen ~ (Imoen wriggles herself free like an eel and escapes your attempt to hold her back.) Blood all over! Where is Henning..? HENNING?~
 == BSANDR ~ Psst, Imoen, calm down, this is not Henning's blood.~
-== BIMOEN2 ~ What, not his? Sure, Sandrah?~
+== Bimoen ~ What, not his? Sure, Sandrah?~
 == BSANDR ~ Pretty sure. Unless he lied to you about his heritage and he is an orc or half-orc, this is clearly not his blood. But there was a fight nonetheless.~
 END
 ++ ~ I searched upstairs, Henning is missing.~ + HenGone2
@@ -2253,7 +2253,7 @@ END
 CHAIN
 IF ~~  THEN BSANDR HenGone2
 ~ Imoen, Henning is surely alive. He is probably even unhurt, as there is none of his blood around. From the evidence around, he must have fought bravely...~
-== BIMOEN2 ~ Oh, my poor heroic boy. Just y'all wait and see. The magnificent Imoen and her troupe rides to the rescue.~
+== Bimoen ~ Oh, my poor heroic boy. Just y'all wait and see. The magnificent Imoen and her troupe rides to the rescue.~
 == BSANDR ~ That is the true spirit of the heroine, Imoen. I guess we cannot learn anymore in here. I suggest somebody must have heard or seen what has happened. This must have been quite a fight. I propose to ask the major Berrun Ghastkill for information.~
 EXIT
 
@@ -2262,13 +2262,13 @@ EXIT
 CHAIN
 IF~ Global("OrcPrison","GLOBAL",17)~ THEN BSANDR BeregOrph1
 ~ That large mansion in the north of the town is Travenhurst's.~
-== BIMOEN2 ~ UUUHH, that nasty *NOBLEMAN*! I suggest Imoen the Magnificent will pay that guy a visit today to deliver greeting from Henning. Greetings he won't forget ever and ever...~
+== Bimoen ~ UUUHH, that nasty *NOBLEMAN*! I suggest Imoen the Magnificent will pay that guy a visit today to deliver greeting from Henning. Greetings he won't forget ever and ever...~
 == BSANDR ~ Right, Imoen. That fiend cannot get away scot free for what he has done. And also he may have some valuable information about the Iron Throne and such.~
-== BIMOEN2 ~ Yipee! I will squeeze everything outa him, maybe with some nice little tattoo work with this knife, or lemme think, how about roasting his feet in his own mighty splendid fireplace, or...~
+== Bimoen ~ Yipee! I will squeeze everything outa him, maybe with some nice little tattoo work with this knife, or lemme think, how about roasting his feet in his own mighty splendid fireplace, or...~
 == BSANDR ~ Oh, Imoen, you sound almost like an orc when you have these fantasies.~
-== BIMOEN2 ~ Hey, ya know me besta friend, I could tear him apart in midair for what he did to Henning but me ain't no bloody orc.~
+== Bimoen ~ Hey, ya know me besta friend, I could tear him apart in midair for what he did to Henning but me ain't no bloody orc.~
 == BSANDR ~ Oh, I am not really objecting you, Imoen. Your little scenarios might work on this *noble* to squeeze him for information. I mean, you do not need to execute them really, but just your lively telling of them will scare him just enough.~
-== BIMOEN2 ~ Ha ha ha, he will wet his trousers when he sees me, and he will soil them worse when I tell him what I'll do to him.~
+== Bimoen ~ Ha ha ha, he will wet his trousers when he sees me, and he will soil them worse when I tell him what I'll do to him.~
 == BSANDR ~ I suggest we should pay him a visit, but we should make a bit of a plan before that. To the citizens of this town he is still a well-respected man. They would not easily like a band of adventurers to enter a council members house in full armour with violent intentions.~
 END
 ++ ~ We should consult the major Keldath Ormlyr at the temple first. We have Travenhurst's purse with the bloodmoney and we have Haynalt's statements on the involvement in the Iron Crisis.~ + BeregOrph2
@@ -2278,7 +2278,7 @@ CHAIN
 IF ~~ THEN BSANDR BeregOrph2
 ~ That is one possibility, although I doubt that the evidence we can provide to one not involved like we are, will be enough for the authorities to act against a noble.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",18)~
-== BIMOEN2 ~ My idea to produce a statement from the Travi-man himself can solve that. When we make him spit out his story, they oughta believe us, right?~
+== Bimoen ~ My idea to produce a statement from the Travi-man himself can solve that. When we make him spit out his story, they oughta believe us, right?~
 == BSANDR ~ I agree with Imoen. Going to Keldath first may result in Travenhurst to receive a warning. It will give him time to destroy any evidence or eventually escape.~
 END
 ++ ~ You two are right. Yes, Keldath will not act on our words alone and our bird may have flewn if we hesitate any longer. Let us pay the mansion our visit.~ DO ~SetGlobal("OrcPrison","GLOBAL",20) ~ EXIT
@@ -2289,7 +2289,7 @@ CHAIN
 IF ~~ THEN BSANDR BeregOrph3
 ~ I agree with you, we are on shaky ground here. Going to Keldath first may result in Travenhurst to receive a warning. It will give him time to destroy any evidence or eventually escape.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",20)~
-== BIMOEN2 ~ My ideas to produce a statement from the Travi-man himself can solve that. When we make him spit out his story, they oughta believe us, right?~
+== Bimoen ~ My ideas to produce a statement from the Travi-man himself can solve that. When we make him spit out his story, they oughta believe us, right?~
 END
 ++ ~ Let us see how his facade will break down when he sees his unexpected visitors.~ EXIT
 
@@ -2297,11 +2297,11 @@ CHAIN
 IF ~ Global("SanClkWo","GLOBAL",1) ~ THEN BSANDR Clkwospi
 ~ Do not become hopeless just now, my poor besta friend. We are coming nearer to Henning with every step.~
 DO ~ SetGlobal("SanClkWo","GLOBAL",2) ~ 
-== BIMOEN2 ~Yeah, guess you're right in a way. But this terrible wood seems to be endless. See this poor boy, an it's bad I know, but I'm somehow glad it's him and not Henning. See how the grief can twist you to abnormal.~
+== Bimoen ~Yeah, guess you're right in a way. But this terrible wood seems to be endless. See this poor boy, an it's bad I know, but I'm somehow glad it's him and not Henning. See how the grief can twist you to abnormal.~
 == BSANDR ~ Yes, this is not my good hearted cheerful friend speaking. But I cannot blame you really, you already live with this fear for so long - such a thing can eat you up.~
-== BIMOEN2 ~ I hate myself for being so, but you understand, that's good. My, I see all these dangers around here and then him bound and helpless and unable even to defend himself. It's so cruel and unjust. And I can't even blow these damned orcs up with my fireballs.~
+== Bimoen ~ I hate myself for being so, but you understand, that's good. My, I see all these dangers around here and then him bound and helpless and unable even to defend himself. It's so cruel and unjust. And I can't even blow these damned orcs up with my fireballs.~
 == BSANDR ~ Imoen, close your eyes for a moment. Hold your breath. Psst. Listen to your heart, listen. It tells you he is alive, do you hear it? He is awaiting you, do you hear it?~
-== BIMOEN2 ~ Psst. Yes, I hear it. I hear it.~
+== Bimoen ~ Psst. Yes, I hear it. I hear it.~
 = ~ Please let me open my eyes again, Sandrah, we must move on, Henning is waiting.~
 == BSANDR ~ Right, open your eyes, let us move on.~
 END
@@ -2320,9 +2320,9 @@ IF ~ Global("KeldPriTrav","LOCALS",1)~ THEN BSANDR BeregOrph20
 ~ We come on a grave case with one of your citizens, major Ormlyr.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",20) SetGlobal("KeldPriTrav","LOCALS",2)~
 == KELDDA ~ Welcome once again, heroes of Beregost. You have been of valuable help to our town on a number of occasions already. Whatever it is, I am willing to hear you out and assist you in any way that can be justified.~
-== BIMOEN2 ~ Heya, you better do that. We fight lotsa times for you, major man, now this Traviman needs to be punished badly for all he done to my darling and to everybody on the coast...~
+== Bimoen ~ Heya, you better do that. We fight lotsa times for you, major man, now this Traviman needs to be punished badly for all he done to my darling and to everybody on the coast...~
 == KELDDA ~ Please, mylady, you seem to be very excited...~
-== BIMOEN2 ~ Excited? I AM EXPLODING!~
+== Bimoen ~ Excited? I AM EXPLODING!~
 == BSANDR ~ Please, Imoen. Psst. Let me explain it to the major piece by piece. I am sure he will understand why you are so angry.~
 == KELDDA ~ So there is trouble between you and Lord Travenhurst, I sense. That may indeed not be an easy case. The man is a loyal council member and a benefactor of Beregost. But then, you have proven your righteousness as well in the past. Mylady?~
 == BSANDR ~ Travenhurst has a splendid facade, as you rightly claim, Keldath. However his business transactions and secrets speak a different language. You surely have heard about our action on the Nashkel mines recently.~
@@ -2335,7 +2335,7 @@ DO ~ SetGlobal("OrcPrison","GLOBAL",20) SetGlobal("KeldPriTrav","LOCALS",2)~
 == KELDDA ~ I see, yes, this is Travenhurst's seal and all. Hmhmhm.~
 =~ (remains in deep thought for a time.)~
 =~ Yes, mylady, I believe you. You have no reason to accuse a well-respected citizen of this town, if it were not true. But--~
-== BIMOEN2 ~ BUT? What but can there be other than the butt of Travi that I'm now gonna kick...~
+== Bimoen ~ BUT? What but can there be other than the butt of Travi that I'm now gonna kick...~
 == BSANDR ~ Psst.~
 == KELDDA ~ I really hate to say it, mylady, but my hands are bound in this matter by the law. Unless you are able to produce some more evidence that would stand a court's scrutiny. Believe me, my sympathy is with you in this but my hands as the local authority are bound at the moment.~
 END
@@ -2353,7 +2353,7 @@ CHAIN
 IF~ Global("OrcPrison","GLOBAL",24)~ THEN BSANDR BeregOrph30
 ~ I am very proud to call Imoen the Magnificent my besta friend. Deeds like that make the true hero, not the number of dead bodies left behind.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",25)~
-== BIMOEN2 ~ Feels kinda good I guess. I am exploding to tell Henning all the news and my plans - (makes a vague gesture at the immense mansion which is now hers) - with that.~
+== Bimoen ~ Feels kinda good I guess. I am exploding to tell Henning all the news and my plans - (makes a vague gesture at the immense mansion which is now hers) - with that.~
 END
 ++ ~ Are you planning to settle down here with Henning? Tell me, I think your <PRO_BROTHERSISTER> has a right to know it first.~ + BeregOrph31
 ++ ~ You will not forget your <PRO_BROTHERSISTER>, who is as homeless as you are.~ + BeregOrph31
@@ -2361,18 +2361,18 @@ END
 CHAIN
 IF ~ ~ THEN BSANDR  BeregOrph31
 ~ (Imoen looks very calm and pensive and makes several attempts to speak.)~
-== BIMOEN2 ~ Oh, slowpoke, ya really thought I wanted all of this for me? For me 'n' Henning? No, this house has only dirty memories for me, myself and I. But I'll make it a place of joy for others...~
+== Bimoen ~ Oh, slowpoke, ya really thought I wanted all of this for me? For me 'n' Henning? No, this house has only dirty memories for me, myself and I. But I'll make it a place of joy for others...~
 == BSANDR ~ You never wanted it for yourself, Imoen. We should have known it all the times. So what is your plan then? *Tell us quickest*.~
-== BIMOEN2 ~ You know, me and <CHARNAME> are orphans, even if we were lucky ones. But look around you as we move over the Sword Coast. So many have been killed, so many mothers and fathers. Whereever we go we see those lost children. There's not a Puffguts or a Gorion for each of them, see it? They have nowhere to go, no one to care. Breaks your heart if you have one.~
+== Bimoen ~ You know, me and <CHARNAME> are orphans, even if we were lucky ones. But look around you as we move over the Sword Coast. So many have been killed, so many mothers and fathers. Whereever we go we see those lost children. There's not a Puffguts or a Gorion for each of them, see it? They have nowhere to go, no one to care. Breaks your heart if you have one.~
 = ~ So - this will be their home. This house can hold much many of them and the sack of gold for bloody Knawlod buys them food and clothes.~
 == BSANDR ~ That is wonderful, Imoen. I was proud to call you my friend a minute ago, now I am glowing in the dark like a lighhouse for the whole Sword Coast.~
-== BIMOEN2 ~ Really. You not call me mad?~
+== Bimoen ~ Really. You not call me mad?~
 == BSANDR ~ Not at all. You are so clever and so wonderful, just... just magnificent. Listen, how about telling Keldath about it. We need to see him anyway to have your ownership registered with the town. Now, he and Lathander's brothers and sisters will surely be the right people to run and organise your orphanage.~
-== BIMOEN2 ~ Hey say that slowly again? Orphn ass?~
+== Bimoen ~ Hey say that slowly again? Orphn ass?~
 == BSANDR ~ Orphanage.~
-== BIMOEN2 ~ *Imoen's Orphanage* ? How's that sounds?~
+== Bimoen ~ *Imoen's Orphanage* ? How's that sounds?~
 == BSANDR ~ And Henning?~
-== BIMOEN2 ~Oh, bloody foolish me..'f course he needa be in that name, too. Mmh. Can't think it now, I will find a name with him TOGETHER. Oh, how wonderful - together. And then think of it, the little girls will all get pink dresses - and.. blue for the boys?~
+== Bimoen ~Oh, bloody foolish me..'f course he needa be in that name, too. Mmh. Can't think it now, I will find a name with him TOGETHER. Oh, how wonderful - together. And then think of it, the little girls will all get pink dresses - and.. blue for the boys?~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Beware! The whole Sword Coast crowded with silly babbling pink brats. Let the road and the gutter educate them for life. Oh, gosh, no - hate to say it, but it's the first decent idea you ever had, Imoen. Anything is better than how I grew up. I make a deal with you. You get part of my booty for the project if you forget about the pink dresses, how about? ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ None of those would survive a day in the Underdark. How I have mellowed already, by Shar, but I really have sympathy for that plan. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Two hundred and fourty years to learn how a true hero looks like. I am glad elves are granted that long time to learn.~
@@ -2400,9 +2400,9 @@ IF ~ Global("OrcPrison","GLOBAL",26)~ THEN BSANDR  BeregOrph40
 ~ (As soon as she sees the Beregost major, Imoen starts to run to him, waving her document.)~
 DO~ SetGlobal("OrcPrison","GLOBAL",27)~
 == KELDDA ~ Attention, lady, it's wet and slippery just cleaned a minute...oooh~
-==BIMOEN2 ~ Uuuuh, nooo....(Imoen slides directly into the major's strong arms which prevent her from a hurting fall.) Ooops, thank you kindly, sir.~
+==Bimoen ~ Uuuuh, nooo....(Imoen slides directly into the major's strong arms which prevent her from a hurting fall.) Ooops, thank you kindly, sir.~
 == KELDDA ~ By Lathander, no harm done. By your enthusiasm I anticipate you are in a far better mood than last time, mylady?~
-==BIMOEN2 ~ (Imoen still in the major's arms) Oh, yes and yes. (Gives the perplexed man a smashing kiss.) I could embrace all the world.~
+==Bimoen ~ (Imoen still in the major's arms) Oh, yes and yes. (Gives the perplexed man a smashing kiss.) I could embrace all the world.~
 == KELDDA ~ Well, yes, so here you are with both feet on the ground again. Yes, eh, nice to see that all is well.~
 END
 ++ ~ We came to give you a report on Travenhurst - but also on some official business for Imoen.~ + BeregOrph41
@@ -2411,7 +2411,7 @@ CHAIN
 IF~~ THEN BSANDR BeregOrph41
 ~ (The major still looks puzzled.)~
 == KELDDA ~ Imoen, do I know her?~
-==BIMOEN2 ~ You are not old enough to be senile, sir. You just held me in your arms a heartbeat ago!~
+==Bimoen ~ You are not old enough to be senile, sir. You just held me in your arms a heartbeat ago!~
 == KELDDA ~ Oh, I see, eh, I take this as a kind of introduction then. So, well, Travenhurst?~
 END
 ++ ~ He has left town, even the Sword Coast. We have found evidence of his deeds but we prefer to keep it for the moment as it also includes details about the intrigue that is still ongoing. It goes far beyond local affairs and we will report in details to the Dukes at Baldur's Gate.~ +  BeregOrph42
@@ -2421,7 +2421,7 @@ CHAIN
 IF~~ THEN BSANDR BeregOrph42
 ~ From the view of Beregost there will be no further actions required - except to elect probably a new council member, as Travenhurst is not to be expected back. ~  
 == KELDDA ~ So he was indeed involved as you had indicated already. I hope we will receive some more details about what has been going on on our very doorstep when this is all over. I can understand that you will not make this information public by now. There is a good chance that you will get all the conspirators if you keep your operations hidden.~
-==BIMOEN2 ~ So now that we are more or less properly introduced, lemme tell you 'bout something more nicer. But look at this first. (Hands him the parchment.)~ 
+==Bimoen ~ So now that we are more or less properly introduced, lemme tell you 'bout something more nicer. But look at this first. (Hands him the parchment.)~ 
 == KELDDA ~ It is no forgery, I can attest that. May I ask nevertheless why he gave that all up - and why to you. You did not eventually use some force to get this? ~
 END
 ++ ~ Not at all. He could not take it with him to his new life outside the Sword Coast. And it is meant as a kind of compensation for what he did to Imoen and Henning.~ + BeregOrph44
@@ -2430,9 +2430,9 @@ CHAIN
 IF~~ THEN BSANDR BeregOrph43
 ~ It is for the compensation part, we have come to you today. Or rather Imoen an behalf of herself and Henning.~
 == KELDDA ~ I see. So where is Henning?~
-==BIMOEN2 ~ He is taken care off in Waterdeep, just guess, by the famous Elminster himself. He will be good as new, I tell you.~
+==Bimoen ~ He is taken care off in Waterdeep, just guess, by the famous Elminster himself. He will be good as new, I tell you.~
 == KELDDA ~ Well, I see where your good mood comes from, lady Imoen.~
-==BIMOEN2 ~ So now that we are more or less properly introduced, lemme tell you 'bout something more nicer. But look at this first. (Hands him the parchment.)~
+==Bimoen ~ So now that we are more or less properly introduced, lemme tell you 'bout something more nicer. But look at this first. (Hands him the parchment.)~
 == KELDDA ~ It is no forgery, I can attest that. So we lost one well-respected citizen, although he did not deserve our respect as it now lies, and gained two new ones.~
 END
 ++~ The new ones you expect have another plan. But let Imoen explain it herself.~ + BeregOrph44
@@ -2441,11 +2441,11 @@ CHAIN
 IF~~ THEN BSANDR BeregOrph44
 ~ They do not plan to use it for themselves but rather give it to the town and the temple for a specific reason...~
 DO ~ReputationInc(1) RealSetGlobalTimer("BeregOrphOpen","GLOBAL",3600)~
-==BIMOEN2 ~ It will become the home for many that need one. An orph-an-age, you see.~
+==Bimoen ~ It will become the home for many that need one. An orph-an-age, you see.~
 == KELDDA ~ Mylady! Lathander may bless your every day. That is a blazing light in this time of darkness. I could think of no better use for the enourmous estate. But...Have you thought about that really carefully?~
-==BIMOEN2 ~ Sure. You said it yourself just now, it's too big for just two. Don't expect me to keep that clean, I worked at an inn all my life, I know what I'm talking about. And mind you, I'm losing nothing that I ain't had before anyway - or so. Just think of all the happy children.~
+==Bimoen ~ Sure. You said it yourself just now, it's too big for just two. Don't expect me to keep that clean, I worked at an inn all my life, I know what I'm talking about. And mind you, I'm losing nothing that I ain't had before anyway - or so. Just think of all the happy children.~
 == KELDDA ~ I do - and I tell you, their laughter will be worth more than any gold can buy. The temple will gladly assist you in that. Our sisters were already mourning more than once that we ourselves could not care about the orphans this crisis produces adequately with the means we had until now. ~
-==BIMOEN2 ~ That changes now. And there is also this bag of lotsa gold. The orc that had it for stealing my boy away does not need a coin of it anymore. It's enough for a lotta clothes and food for a lotsa boys 'n' girls for a long and long time.~ 
+==Bimoen ~ That changes now. And there is also this bag of lotsa gold. The orc that had it for stealing my boy away does not need a coin of it anymore. It's enough for a lotta clothes and food for a lotsa boys 'n' girls for a long and long time.~ 
 == KELDDA ~ All of that is in good hands with us, lady Imoen. I see that you and your friends cannot stay yourself to see us go to work right away. You have already done much and I can see that you are determined to put this intrigue to a final end. The next time you pass Beregost you will be able to see the first results of the project, I assure you.~
 END
 ++ ~ And I assure you, that we will have good news about the destruction of the ones behind all of this trouble when we see each other next time. Farewell. ~ DO ~ AddexperienceParty(11200)~
@@ -2455,7 +2455,7 @@ CHAIN
 IF ~ Global("SanImoRetWD","GLOBAL",2)~ THEN BSANDR SeeHenNoOrph
 ~ Before we go to Waterdeep to look for Henning, we should probably decide what to do about this man Travenhurst in Beregost who caused all of that trouble.~
 DO~ SetGlobal("SanImoRetWD","GLOBAL",4)~
-==BIMOEN2 ~ And we could maybe do something good with the blood money we found. he? ~
+==Bimoen ~ And we could maybe do something good with the blood money we found. he? ~
 END
 ++ ~ Hm, yes, guess we owe that to Imoen. I try to arrange that with our mission as quickly as possible.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 ++ ~ Well, we rescued your loverboy and he is safe where he is. The rest of the business will have to wait until our mission allows us to go to Beregost eventually. No discussion, move on.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~ EXIT
@@ -2464,7 +2464,7 @@ CHAIN
 IF ~ Global("SanImoRetWD","GLOBAL",3) ~ THEN BSANDR SeeHenOrph
 ~ Now with the Travenhurst business settled and the good end Imoen has set for the whole affair, the time has come to visit Henning at Waterdeep. He should be well by now.~
 DO~ SetGlobal("SanImoRetWD","GLOBAL",4)~
-==BIMOEN2 ~ OH YEAH! <CHARNAME>! PLEASE bestest, bestest hero or the Sword Coast, let's go there quickest.~
+==Bimoen ~ OH YEAH! <CHARNAME>! PLEASE bestest, bestest hero or the Sword Coast, let's go there quickest.~
 END
 ++ ~ Hm, yes, guess we owe that to Imoen. I try to arrange that with our mission as quickly as possible.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
 ++ ~ Well, we rescued you loverboy and he is safe where he is. The rest of the business will have to wait until our mission allows us to go to Waterdeep eventually. No discussion, move on.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~EXIT
@@ -2473,7 +2473,7 @@ CHAIN
 IF ~ Global("OrcPrison","GLOBAL",29)~ THEN BSANDR BeregOrph50
 ~ The orphanage should be set up at the mansion by now.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",30)~
-==BIMOEN2 ~ Heya, let's run there quickest! Let's enjoy those happy children. Say yes and yes, <CHARNAME>.~
+==Bimoen ~ Heya, let's run there quickest! Let's enjoy those happy children. Say yes and yes, <CHARNAME>.~
 END
 ++ ~ Sure, Imoen, we will go there right away. I cannot wait to see it myself. We are all so proud of you.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 ++ ~ Are you dreaming again, Imoen. We have a task at hand. The orphanage must wait until we find the time. Now move.~ DO ~ ReputationInc(-1)~EXIT
@@ -2482,35 +2482,35 @@ CHAIN
 IF ~ Global("SanImoRetWD","GLOBAL",6)~ THEN BSANDR ImoHenWD1
 ~ Hello, Henning.~
 DO ~ SetGlobal("SanImoRetWD","GLOBAL",7) ~
-==BIMOEN2 ~ HENNING! MY LOVE!~
+==Bimoen ~ HENNING! MY LOVE!~
 == Henning2 ~ MY RED HEAD, Sweetest Imoen, mmmpf...~
-==BIMOEN2 ~ Oh, let me kiss you and kiss you, and then start again and kiss you...mmmpf...~
+==Bimoen ~ Oh, let me kiss you and kiss you, and then start again and kiss you...mmmpf...~
 == Henning2 ~ It is so good to hold you, my magnificent heroine. How bravely you have fought for me - you and your friends.~
-==BIMOEN2 ~ How are you, my sweetest man? Has all healed and so, quickest tell me all.~
+==Bimoen ~ How are you, my sweetest man? Has all healed and so, quickest tell me all.~
 == Narqmes ~ The master and the goddess Mystra have done everything for the brave man to completely restore him for you.~
 == Henning2 ~ And of course you, Landrel, with your kind nightwatches and never ceasing care for me.~
 = ~ Imoen, allow me to embrace your friend Sandrah and thank her. After all it was her and her quick first aid and transport to here that have saved my life.~
 == BSANDR ~ Nevermind, Henning. Imoen or you would have done the same for me, if you had possesed those abilities.~
-==BIMOEN2 IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ *Imoen starts to report everything that had happened, including her opening the orphanage in Beregost.*~
-==BIMOEN2 IF ~ GlobalLT("OrcPrison","GLOBAL",27)~ THEN ~* Imoen starts to report everything that had happened in rescuing Henning and afterwards.*~
+==Bimoen IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ *Imoen starts to report everything that had happened, including her opening the orphanage in Beregost.*~
+==Bimoen IF ~ GlobalLT("OrcPrison","GLOBAL",27)~ THEN ~* Imoen starts to report everything that had happened in rescuing Henning and afterwards.*~
 == Henning2  IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ You deserve to be loved like no other woman, my wonderful Red Head with the golden heart.~
-==BIMOEN2 IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ So you are not angry with me for giving that mansion and the money away for the poor children.~
+==Bimoen IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ So you are not angry with me for giving that mansion and the money away for the poor children.~
 == Henning2  IF ~ GlobalGT("OrcPrison","GLOBAL",26)~ THEN ~ Of course not. If my love for you and my pride in you could grow still, they would. I already dream of visiting the house by your side and take a look at those happy children's faces myself.~
 == Henning2  IF ~ GlobalLT("OrcPrison","GLOBAL",27)~ THEN ~You deserve to be loved like no other woman, my wonderful Red Head.~
 == BSANDR ~ Henning, did you have time to make some plans for the near future already. With Sarevok still being a threat to your life, I would not recommend for you to return to the Sword Coast yet.~
 == Henning2 ~ Through your father's channels I already have been in contact with Karaea in Nashkel, so she will run the business down there for the time. And I have met with Clarissa, the local bookmerchant. Her business is flourishing, but her abilities in organisation and bookkeeping are a bit chaotic, to say the least. So we already have agreed that I will start to organise that part of her business for a while.~
 == Narqmes ~ Your father has given a suite of unused rooms in the west wing to the young couple for their free use, Miss Sandrah.~
 == Henning2 ~ If your friends do not mind, I would like to show this nest to my sweetest girl...~
-==BIMOEN2 ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(22000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+==Bimoen ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(22000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
 IF ~ Global("Formedcloth","GLOBAL",15)~ THEN BSANDR SanImoBhCh1
 ~ Imoen, you have been a bit silent to me since we learned about Gorion and Winthrop and the two babies.~ 
 DO ~ SetGlobal("Formedcloth","GLOBAL",16)~ 
-==BIMOEN2 ~ Huh, it's quite puzzling to think of the *new* Puffguts, Sandrah. Guess how he fooled everyone with his disguise, fooled me when I was always so close all the time.~
+==Bimoen ~ Huh, it's quite puzzling to think of the *new* Puffguts, Sandrah. Guess how he fooled everyone with his disguise, fooled me when I was always so close all the time.~
 == BSANDR ~ I guess he had to in order to protect you, just as Gorion had protected <CHARNAME>.~
-==BIMOEN2 ~ Protected me? My, I can figure all being hunting for <CHARNAME> with <PRO_HISHER> blood in 'im, but who should care for me? Yeah, well, maybe I would get hurt in the instant while being always so close to <PRO_HERHIM>. Jus' like I'm here now fighting together.~
+==Bimoen ~ Protected me? My, I can figure all being hunting for <CHARNAME> with <PRO_HISHER> blood in 'im, but who should care for me? Yeah, well, maybe I would get hurt in the instant while being always so close to <PRO_HERHIM>. Jus' like I'm here now fighting together.~
 END
 IF ~ GlobalGT("OrcPrison","GLOBAL",8)~ THEN REPLY~ Poor one, even been turned into this slayer beast by being too close to me.~ + SanImoBhCh2
 IF ~ GlobalLT("OrcPrison","GLOBAL",8)~ THEN REPLY~ And being in such danger for it.~ + SanImoBhCh3
@@ -2518,7 +2518,7 @@ IF ~ GlobalLT("OrcPrison","GLOBAL",8)~ THEN REPLY~ And being in such danger for 
 CHAIN
 IF ~~ THEN BSANDR SanImoBhCh2
 ~ (Mumbles) A strange interpretation. ~
-==BIMOEN2 ~ Means it wasn't my miscasting spells. Am I reliefed now or worried, dunno?~
+==Bimoen ~ Means it wasn't my miscasting spells. Am I reliefed now or worried, dunno?~
 END
 IF~!AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have some thoughts about that myself now. Winthrop called the child *Immi*. Let us continue and talk about it another day.~ EXIT
 IF~AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have some thoughts about that myself now. Winthrop called the child *Immi*...~+ SanImoBhCh4
@@ -2526,7 +2526,7 @@ IF~AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have s
 CHAIN
 IF ~~ THEN BSANDR SanImoBhCh3
 ~ (Mumbles) Winthrop's girl, surely not the one taken by the Orloth as that one was a boy.~
-==BIMOEN2 ~ That's nice isn't it the good men have the good childs and that naughty wizard needed to find him another one.~
+==Bimoen ~ That's nice isn't it the good men have the good childs and that naughty wizard needed to find him another one.~
 END
 IF~!AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have some thoughts about that myself now. Winthrop called the child *Immi*. Let us continue and talk about it another day.~ EXIT
 IF~AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have some thoughts about that myself now. Winthrop called the child *Immi*...~+ SanImoBhCh4
@@ -2534,15 +2534,15 @@ IF~AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have s
 CHAIN
 IF ~~ THEN BSANDR SanImoBhCh4
 ~ <CHARNAME>, we have missed an important detail. I urge you to ask my father about it again. It may be crucial to know the whole story before we enter your former home again.~
-==BIMOEN2 ~ Yes and yes, bestest of the bestest leaders!! I must know and you must know before we can face old Puff...dad...I don't know anymore...but please let's ask Elminster.~
+==Bimoen ~ Yes and yes, bestest of the bestest leaders!! I must know and you must know before we can face old Puff...dad...I don't know anymore...but please let's ask Elminster.~
 == BSANDR ~ I know it must be hard to turn from the gate of Candlekeep at this moment - but Sarevok will not start his show without us. Let him just boil there a bit more while we gain more insight and are prepared better than he might expect us to be.~
-==BIMOEN2 ~ Our old walls may wait...let's go to Waterdeep quickest - I mean, of course, after we have rested our poor tired bones a bit~ DO~RestParty()~EXIT
+==Bimoen ~ Our old walls may wait...let's go to Waterdeep quickest - I mean, of course, after we have rested our poor tired bones a bit~ DO~RestParty()~EXIT
 
 CHAIN
 IF ~Global("SanImoRetCK","LOCALS",1)~ THEN BSANDR SanImoRetCK1
 ~ So here you two are back at your old home, even if not under the circumstances that make it a happy return.~
 DO ~ SetGlobal("SanImoRetCK","LOCALS",2)~ 
-==BIMOEN2 ~ PLEASE, <CHARNAME>, let's go run see DADDY quickest! There is oh so much to tell my good good man.~
+==Bimoen ~ PLEASE, <CHARNAME>, let's go run see DADDY quickest! There is oh so much to tell my good good man.~
 == BSANDR ~ Please, <CHARNAME>, let us go see Winthrop, he may even have some useful information on our quest or maybe even from Gorion.~
 END
 ++~ Oh, yes, Imoen, at least for one of us it is a happy return. Let's go see old Puffg...I mean, eh your dad..I mean, eh Master Winthrop right away.~ DO ~ AddexperienceParty(1000) ~ EXIT
@@ -3720,15 +3720,15 @@ CHAIN
 IF~Global("SanImohelmKill","LOCALS",1)~ THEN BSANDR AjanMystkill
 ~...what do you mean by that, besta friend, I am blue-eyed?~
 DO~SetGlobal("SanImohelmKill","LOCALS",2)~
-==BIMOEN2~Aye, I guess I needa help ya out with some wisdom b'fore ya get too deep into trouble with that handsome helmit, yeah.~
+==Bimoen~Aye, I guess I needa help ya out with some wisdom b'fore ya get too deep into trouble with that handsome helmit, yeah.~
 == BSANDR ~You try to warn me about Ajantis, Imoen? Thank you, but I think I know him a bit longer than you do.~
-==BIMOEN2~Same problem always, Sandrah, if ya standin' too close you cant see the global picture. I wasn't sleepin' in my Candlekeep hist'ry lessons all the time, you oughta know, I always listened to the interestin' parts.~
+==Bimoen~Same problem always, Sandrah, if ya standin' too close you cant see the global picture. I wasn't sleepin' in my Candlekeep hist'ry lessons all the time, you oughta know, I always listened to the interestin' parts.~
 == BSANDR ~Like what for example?~
-==BIMOEN2~Like those Times of Trouble - an' ol' Helm killing your Mystra!~
+==Bimoen~Like those Times of Trouble - an' ol' Helm killing your Mystra!~
 == BSANDR ~I see what you mean, my learned besta friend. Are you aware of the fact that the incarnation of Mystra slain by Helm was not the one that I serve. My grandmother Midnight was elevated to replace the fallen Mystra and to take her cloak and name.~
-==BIMOEN2~You have no grudge against the helmites then - hihi. He might've done your granny a favour by removing the old one...~
+==Bimoen~You have no grudge against the helmites then - hihi. He might've done your granny a favour by removing the old one...~
 == BSANDR ~Oh, Imoen, stop your wild analysis before it gets out of hand. Our view on what has happened way back then surely must take more historical facts into account. Helm is no murderer and my grandmother was not appointed to her task as the result of an intrigue.~
-==BIMOEN2~Like I said...blue-eyed! Beware - one false move and your handsome lover will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~EXIT
+==Bimoen~Like I said...blue-eyed! Beware - one false move and your handsome lover will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~EXIT
 
 
 CHAIN
@@ -6251,7 +6251,7 @@ IF ~ Global("Santlove","GLOBAL",2) ~ THEN BSANDR SantLove21
 ~ My friends, please feel at home in this place. Go downstairs, where Landrel will be able to fulfill your every wish and need. If necessary with the help of his own knowledge in the magic arts.~
 = ~<CHARNAME>, please, please come with me down these stairs to my own quarter, my love.~
 DO ~ SetGlobal("Santlove","GLOBAL",3) ~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Huuh, don't need to tell lil' ol' Imoen what those two are up to...~
+== Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, don't need to tell lil' ol' Imoen what those two are up to...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ All this love stuff only makes me go sick, ah let's test this Landrel guy, even though he's just a male. ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ I hope she still remembers some of my lessons. I bet she does, she's a real good learner. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Pst, do not disturb this precious moment. ~
@@ -6287,7 +6287,7 @@ CHAIN
 IF ~ Global("Santlove","GLOBAL",7) ~ THEN BSANDR SantLove71
 ~ My friends, I hope you all had a good night.~
 DO ~ SetGlobal("Santlove","GLOBAL",8) ~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Huuh, what a place. <CHARNAME>, one day we will have a home like this, just wait and see.~
+== Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, what a place. <CHARNAME>, one day we will have a home like this, just wait and see.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Hey, Landrel, loverboy, you've got quite some stamina - for a male. ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ These surfacer mages are cunning. Disguised as old man with the fire of a young stallion under those mysterious robes. (Bites Landrels earlobe until some blood starts dripping. Landrel quickly casts a healing spell.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ It is good to have these precious moments of peace once in a while. ~
@@ -6319,9 +6319,9 @@ CHAIN
 IF ~ Global("SanSuBH","GLOBAL",30)InParty("Imoen2") GlobalLT("OrcPrison","GLOBAL",24)~ THEN BSANDR BloodyMoney2
 ~  The papers seem to be the real treasure here. I will need to take them along and study why so many had to die for them. All this other treasures here are soiled with blood.~
 DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
-== BIMOEN2~ Scary to think of all the many and many people dead or zombied for this. Dontcha think we can make something good from it? Take this loot and distribute it to ones who had suffered from the pirates and such?~
+== Bimoen~ Scary to think of all the many and many people dead or zombied for this. Dontcha think we can make something good from it? Take this loot and distribute it to ones who had suffered from the pirates and such?~
 == BSANDR ~ You have a golden heart, Imoen, my friend. You are right. We should take it and try to repair some damages done by the villains. I would have nothing from it myself.~
-== BIMOEN2~ Me's thinking, see as me and <CHARNAME> are orphans but had it good nonetheless, but there's other poor kids that've lost the parents to those pirates - can't we do something about it with this gold, maybe?~
+== Bimoen~ Me's thinking, see as me and <CHARNAME> are orphans but had it good nonetheless, but there's other poor kids that've lost the parents to those pirates - can't we do something about it with this gold, maybe?~
 == BSANDR ~ You are wonderful, Imoen. We will find a possibility to do this. Right, <CHARNAME>?~
 END
 ++ ~ Anyway, let us take as much as we can. We will have use for it and the dead will not live again if we just let it rot here.~ EXIT
@@ -6331,9 +6331,9 @@ CHAIN
 IF ~ Global("SanSuBH","GLOBAL",30)InParty("Imoen2") GlobalGT("OrcPrison","GLOBAL",25)~ THEN BSANDR BloodyMoney3
 ~  The papers seem to be the real treasure here. I will need to take them along and study why so many had to die for them. All this other treasures here are soiled with blood.~
 DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
-== BIMOEN2~ Scary to think of all the many and many people dead or zombied for this. Dontcha think we can make something good from it. Take this loot and distribute it to ones who had suffered from the pirates and such.~
+== Bimoen~ Scary to think of all the many and many people dead or zombied for this. Dontcha think we can make something good from it. Take this loot and distribute it to ones who had suffered from the pirates and such.~
 == BSANDR ~ Are there not some among your children in Beregost who lost their parents to the pirates, my friend?~
-== BIMOEN2~ Yeah, little Yanni's dad was a sailor slaughtered, 'n' Annie-Sue lost both parents who were fishermen... and also.. oh there are so many - Let's grab what we can carry and take it to the temple in Beregost, will you. (Looks around at her comrades.)~
+== Bimoen~ Yeah, little Yanni's dad was a sailor slaughtered, 'n' Annie-Sue lost both parents who were fishermen... and also.. oh there are so many - Let's grab what we can carry and take it to the temple in Beregost, will you. (Looks around at her comrades.)~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ HA, before your whining never ends I will carry a sack myself to the glibbering priests. (Her eyes betray Shar-Teel, her harsh words are nothing but a masquerade. It is clear that she fully agrees with Imoen's intention.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ If always blood and death could finally lead to an acceptable end, Imoen, Toril could be a much better place for all. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ The deeds of Imoen the Magnificent go on and on. A new chapter will be written today in her book. ~
@@ -6362,7 +6362,7 @@ CHAIN
 IF~ Global("SanSuBH","GLOBAL",32)~ THEN BSANDR ZombStr
 ~ We were too late, poor captain. Let us take him on board and later bury him at sea, like is the custom for a seaman.~
 DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
-== BIMOEN2 IF ~ InParty("Imoen2")~ THEN~ Yeah, this island is no place for a good man. He might get a zombie here, huuh. But aye, wisecracks, hope you know how to run a ship.~
+== Bimoen IF ~ InParty("Imoen2")~ THEN~ Yeah, this island is no place for a good man. He might get a zombie here, huuh. But aye, wisecracks, hope you know how to run a ship.~
 == BSANDR IF ~ !InParty("Imoen2")~ THEN~ This island is no place for a good man. The question is now, how do we get away from here without him.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ What? You have no plan for that? Gosh. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Bad luck, but I am a woodelf. We have seafaring brothers, but this island is deserted. ~
@@ -6890,13 +6890,13 @@ CHAIN
 IF ~ Global("Formedcloth","GLOBAL",8) ~ THEN BSANDR ImoWinBabe
 ~ Gorion and Winthrop were the ones then, and that Orloth was hunting them.~
 DO ~ SetGlobal("Formedcloth","GLOBAL",9)~
-== BIMOEN2 IF  ~ InParty("Imoen2")~ THEN ~Puffguts? That was my ol' Puffguts with that other little baby girl. My-o! Now I see... ~
+== Bimoen IF  ~ InParty("Imoen2")~ THEN ~Puffguts? That was my ol' Puffguts with that other little baby girl. My-o! Now I see... ~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ See what, Imoen?~
-== BIMOEN2 IF  ~ InParty("Imoen2")~ THEN ~ Oh the poor man, the good man. ~
+== Bimoen IF  ~ InParty("Imoen2")~ THEN ~ Oh the poor man, the good man. ~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ You mean that he adopted a Bhaalspawn? ~
-== BIMOEN2 IF  ~ InParty("Imoen2")~ THEN ~ Yes - no - I mean that he took me and was always so good to me after he had lost her. ~
+== Bimoen IF  ~ InParty("Imoen2")~ THEN ~ Yes - no - I mean that he took me and was always so good to me after he had lost her. ~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ Now I am lost, Imoen.~
-== BIMOEN2 IF  ~ InParty("Imoen2")~ THEN ~ Don't you see how it all fits. He was the clever disguised Harper. Ev'rybody goes through the shop and the inn when at Candlekeep. The shopkeeper sees and hears everything. He takes the poor Bhaalspawn girl and knows he can protect her as nobody can come near without his seeing.~
+== Bimoen IF  ~ InParty("Imoen2")~ THEN ~ Don't you see how it all fits. He was the clever disguised Harper. Ev'rybody goes through the shop and the inn when at Candlekeep. The shopkeeper sees and hears everything. He takes the poor Bhaalspawn girl and knows he can protect her as nobody can come near without his seeing.~
 =~ Just remember, they told us we did not come together to Candlekeep, Puffguts 'n' me come later. It is true, later after he lost the baby in those raids or to that nasty Orloth. But with his good heart he found another orphan girl that needed his help. Poor lil' Imoen.~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ That would explain some things, Imoen. Especially why there was no second Bhaalspawn at Candlekeep. Hm, and the Orloth's remark once about the cloth being some evidence. Maybe evidence that in the end he got one of the babies. But was it Khalindra's one? We do not know.~
 END
@@ -6907,13 +6907,13 @@ CHAIN
 IF ~ Global("Formedcloth","GLOBAL",23)~ THEN BSANDR ImoBhaalSp4
 ~ My besta friend, how do you feel after all these occurances? You spend a lot of time with thinking by yourself these days. Remember what friends are for, Imoen.~
 DO~ SetGlobal("Formedcloth","GLOBAL",24)~ 
-== BIMOEN2 ~ Alright and yes. I cant keep it inside me for much longer or it starts eating me. Besta friend, let us sit down, you must and must listen to me and give your learned advice.~
+== Bimoen ~ Alright and yes. I cant keep it inside me for much longer or it starts eating me. Besta friend, let us sit down, you must and must listen to me and give your learned advice.~
 == BSANDR ~ Sure, Imoen, let us sit right here. Looks like we have quite some time to talk at the moment.~
-== BIMOEN2 ~ Methinks, looka here, Sandrah, there was Puffguts, eah, I mean the wonderful Harper Winthrop, who took care of a little girl name Immi.~
+== Bimoen ~ Methinks, looka here, Sandrah, there was Puffguts, eah, I mean the wonderful Harper Winthrop, who took care of a little girl name Immi.~
 == BSANDR ~ Right.~
-== BIMOEN2 ~ Immi is as innocent as any little baby can ever be and Puff...Winthrop knows that and his friends know, too. Gorion and Elminster.~
+== Bimoen ~ Immi is as innocent as any little baby can ever be and Puff...Winthrop knows that and his friends know, too. Gorion and Elminster.~
 == BSANDR ~ Right. (Sandrah has taken Imoen's hand which is slightly trembling.)~
-== BIMOEN2 ~ Other people, bad people dont think of Immi like that - they think the little baby is really a monster and really bad 'cause of blood of an evil dead god in her veins.~
+== Bimoen ~ Other people, bad people dont think of Immi like that - they think the little baby is really a monster and really bad 'cause of blood of an evil dead god in her veins.~
 END
 ++ ~(You silently sit down beside Imoen and gently take her other hand in yours.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ ImoBhaalSp5
 ++ ~(You step behind Sandrah and lay a hand on her shoulder while you continue to listen to their talk.) ~ + ImoBhaalSp5
@@ -6921,11 +6921,11 @@ END
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp5
 ~ Yes, Immi.~
-== BIMOEN2 ~ So Winthrop runs away with the girl and with him comes Gorion with a <PRO_GIRLBOY> with the same black blood in <PRO_HIMHER>.~
+== Bimoen ~ So Winthrop runs away with the girl and with him comes Gorion with a <PRO_GIRLBOY> with the same black blood in <PRO_HIMHER>.~
 == BSANDR ~ They make a long journey criss and cross the Sword Coast to hide their trail from those who hunt them. They are attacked by bandits and spies from a mighty foreign mage. They tear apart the cloth in which the children were wrapped to trick their hunters into believing the children have been destroyed. ~
-== BIMOEN2 ~ Yeah, they are cleverest and more clever than the hunters. In the end they make it safely to Candlekeep. Vrooooom - years and years pass and the little babies become little children and they live happy and are friends and know nothing of what was before in the dark time.~
+== Bimoen ~ Yeah, they are cleverest and more clever than the hunters. In the end they make it safely to Candlekeep. Vrooooom - years and years pass and the little babies become little children and they live happy and are friends and know nothing of what was before in the dark time.~
 == BSANDR ~ They learned from their foster fathers and from the monks. They grew up and were to each other like <PRO_BROTHERSISTER> to sister. Nothing and no one could tear them apart.~
-== BIMOEN2 ~ Nothing and no one could tear them apart and nothing and no one ever will, I swear!~
+== Bimoen ~ Nothing and no one could tear them apart and nothing and no one ever will, I swear!~
 == BSANDR ~ But their innocent life ended one dark day. Another child with the same blood in him had also grown up in another part of the Realms. This one, a boychild named Sarevok, had not the care of Winthrop or Gorion, but was raised and taught in the way to feed the evil power within him.~
 END
 ++ ~ Sarevok and his teacher studied the lore and the prophecies of the seer Alaundo. They found that the rising of Sarevok to eventually follow his *father* would require to eliminate others of the same blood first.~ + ImoBhaalSp6
@@ -6933,13 +6933,13 @@ END
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp6
 ~ Only a Bhaalspawn can prevent Sarevok from rising to become Bhaal's successor. With divination and cunning they found out about <CHARNAME>.~
-== BIMOEN2 ~ But Elminster ever watchful over Faerun sensed their plan and sent a warning letter to Gorion.~
+== Bimoen ~ But Elminster ever watchful over Faerun sensed their plan and sent a warning letter to Gorion.~
 == BSANDR ~ A letter that was secretly read by the tricky and alway curious Immi even before Gorion laid his eyes on it.~
-== BIMOEN2 ~ Well, good she did, remember *Nothing and no one could tear them apart*.~
+== Bimoen ~ Well, good she did, remember *Nothing and no one could tear them apart*.~
 == BSANDR ~ At the same moment also Elminster's only daughter found out about a child of that heritage being at Candlekeep and in imminent danger.~
-== BIMOEN2 ~ Elminster's daughter was looking out for such children 'cause her mother had died from birthing one of them and died from it. Sandrah guessed that one of the babies that were brought to Candlekeep was her mother's one.~
+== Bimoen ~ Elminster's daughter was looking out for such children 'cause her mother had died from birthing one of them and died from it. Sandrah guessed that one of the babies that were brought to Candlekeep was her mother's one.~
 == BSANDR ~ But she did not know who it was, and she did not know there were actually two of them.~
-== BIMOEN2 ~ So she stayed with those two she found at Gorion's corpse and helped them discover who they are and why they are being hunted.~
+== Bimoen ~ So she stayed with those two she found at Gorion's corpse and helped them discover who they are and why they are being hunted.~
 == BSANDR ~ And she became the besta friend with Immi and the lover of <CHARNAME>, which was not written down in any scroll or prophecy ever.~
 END
 ++ ~ And this way and with some other friends they found along their path a force was forged on the Sword Coast to smite evil and to bring down Sarevok before he can finish his plan.~+ ImoBhaalSp7
@@ -6947,16 +6947,16 @@ END
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp7
 ~  But one question remains for Imoen.~
-== BIMOEN2 ~ I am not <CHARNAME>'s sister, Sandrah, I have understood that well, even if we are spawns of the same god that is not really a *Father*. If we think of a father ever, his name will be Winthrop or Gorion respectively.~
+== Bimoen ~ I am not <CHARNAME>'s sister, Sandrah, I have understood that well, even if we are spawns of the same god that is not really a *Father*. If we think of a father ever, his name will be Winthrop or Gorion respectively.~
 == BSANDR ~ Absolutely, Imoen.~
-== BIMOEN2 ~ Then, Sandrah, why is that blood recognised in <CHARNAME> and not in me. I have no such dreams and strange powers and all that mumbojumbo. No assassins, no fanatics. But it must be all like we said?~
+== Bimoen ~ Then, Sandrah, why is that blood recognised in <CHARNAME> and not in me. I have no such dreams and strange powers and all that mumbojumbo. No assassins, no fanatics. But it must be all like we said?~
 END
 ++ ~ Sandrah, that is indeed the question I have considered as well ever since I had the first suspicion about Imoen. What makes us so different?~ + ImoBhaalSp8
 
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp8
 ~ The soil the seed of Bhaal needs to grow in. Like any flower seed, the seed of that god needs the right ground to nurish from. And Imoen in that respect is as dry as the Calimshan Desert for him. It is her lack of ambition to rule and to execute power.~
-== BIMOEN2 ~ Hey, I wanna rule Toril and make it all pink!~
+== Bimoen ~ Hey, I wanna rule Toril and make it all pink!~
 == BSANDR ~ Exactly, Imoen. This is exactly your relation to power. With <CHARNAME>, this is different, <PRO_HESHE> has become our leader in a natural way, the makings of a strong ruler are visible in <PRO_HISHER> actions all the time. Even if contrary to the way Bhaal would need those abilities to develop.~
 END
 IF ~GlobalGT("OrcPrison","GLOBAL",8) ~ THEN REPLY ~ Thus my dreams, where two ways were offered to me and later two powers were fighting to gain control.~ + ImoBhaalSp9
@@ -6965,18 +6965,18 @@ IF ~GlobalLT("OrcPrison","GLOBAL",8) ~ THEN REPLY ~ Thus my dreams, where two wa
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp9
 ~  Yes, my love, and I am happy for which side has won.~
-== BIMOEN2 ~ But then once I turned into this nasty slayer creature without me wanting and having control, that was nightmarish, uuh.~
+== Bimoen ~ But then once I turned into this nasty slayer creature without me wanting and having control, that was nightmarish, uuh.~
 == BSANDR ~ I was thinking about that for a long time and I think I can explain it now. Only that once you have really had the desperate wish to have all the power in the world and to slay any foe that would stand in your way - to rescue the one you so dearly love and for whom you would give everything.~
-== BIMOEN2 ~ Sure 'n' yes, you bet. Sandrah, I will make sure this damned god will not get a drop of water in my desert garden. May his seed be eaten by the ants and the snails. Bhaal begone!~ EXIT
+== Bimoen ~ Sure 'n' yes, you bet. Sandrah, I will make sure this damned god will not get a drop of water in my desert garden. May his seed be eaten by the ants and the snails. Bhaal begone!~ EXIT
 
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp10
 ~  Yes, my love, and I am happy for which side has won.~
-== BIMOEN2 ~ I will make sure this damned god will not get a drop of water in my desert garden. May his seed be eaten by the ants and the snails. Bhaal begone!~ 
+== Bimoen ~ I will make sure this damned god will not get a drop of water in my desert garden. May his seed be eaten by the ants and the snails. Bhaal begone!~ 
 =~Please, <CHARNAME>, Sandrah, can we go and see and talk to Elminster quickest, please.~EXIT
 
 CHAIN
-IF WEIGHT #-12~Global("SanPCIdiot","LOCALS",1) ~THEN BIMOEN2 Idi1
+IF WEIGHT #-12~Global("SanPCIdiot","LOCALS",1) ~THEN Bimoen Idi1
 ~Idiotish Idiot...you are the mostest stupish idiot stumblin' through the Realms. I was asking and asking myself already again and again why my besta friend stayed with you still.~
 =~If I had only been quickest enough to follow her (sigh)...now I'm here sticked like glue on the idiotishest Idiot you can find!~
 DO~SetGlobal("SanPCIdiot","LOCALS",2) ReputationInc(-1)~EXIT
@@ -7067,9 +7067,9 @@ IF ~~ THEN BSANDR SanEndBG1Plot3
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Mayhaps we have not changed the fate I saw for me, Sandrah. 'tis still to come in another battle for <CHARNAME>.~ 
 == BSANDR IF~ InParty("Dynaheir") ~ THEN ~As is the fate for every Hathran to live and to die in duty for what is the dearest to her heart.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Thou art wise once again, Sandrah. Then the vision I had was to tell me that my duty is not with Rashemen but to protect <CHARNAME>. And by this I will do my duty to my land and kin, as the forthcoming struggle of Bhaalspawns will threaten even countries as far away as mine.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Such should really be my *family*, gosh. I prefer my good old puffing daddy. And for a sibling, <CHARNAME> is all I ever would look for, if I should feel the need for it.~
+== Bimoen IF~ InParty("Imoen2") ~ THEN ~ Such should really be my *family*, gosh. I prefer my good old puffing daddy. And for a sibling, <CHARNAME> is all I ever would look for, if I should feel the need for it.~
 == BSANDR IF~ InParty("Imoen2") ~ THEN ~ You are right Imoen, trying to apply the notion of family, brother, sister or father for those tainted with Bhaal's blood is one of the many errors Sarevok made. You are in no way related to him.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Pooh, more of them empty headed fools trying to become dead gods. As for idiocy I'm sure we haven't seen it all yet. Let's get it on and never forget to have some fun aside.~
+== Bimoen IF~ InParty("Imoen2") ~ THEN ~ Pooh, more of them empty headed fools trying to become dead gods. As for idiocy I'm sure we haven't seen it all yet. Let's get it on and never forget to have some fun aside.~
 == BSHART IF~ InParty("Sharteel") GlobalLT("SanSharInt","GLOBAL",21)~ THEN ~ Uh, once those pathetic men among the spawns will be eliminated, the real fun can begin. When his female siblings start the final battle that is. Good to know we will have a special invitation to that challenge. ~
 == BSHART IF~ InParty("Sharteel") GlobalGT("SanSharInt","GLOBAL",20)~ THEN ~ A pathetic male Bhaalspawn. Tell me Sandrah, is there a way we can avoid such a fate for our child. I don't want any of that kind to happen to it. We have all hands full with <CHARNAME> and his drive already. ~
 == BSANDR IF ~InParty("Sharteel") GlobalGT("SanSharInt","GLOBAL",20)~ THEN ~ You need not to worry, wildcat. The children of a Godchild inherit nothing of the seed that was given to one of their parents. Your child will be like any born to normal human parents, haha, normal in that sense at least. The seed of a God is given directly to his child, the demi-god, but not spread further - unless you were a godchild yourself.~
@@ -7559,7 +7559,7 @@ END
 END
 
 
-APPEND BIMOEN2
+APPEND Bimoen
 IF WEIGHT #-9 ~ Global("SanHealImo","GLOBAL",5)~ THEN BEGIN SanHealImo
 SAY ~ Heya, thanks for yours mumbojumbo on me. That injury did hurted quite a bit. You're kinda really good at that.~
 IF~~ THEN EXTERN BSANDR ImoHealedProf

@@ -39,7 +39,7 @@ END
 
 IF ~~ IntroImo2b
 SAY ~ Well...~
-IF ~ InParty("imoen2")~ THEN EXTERN BIMOEN2 IntroImoS
+IF ~ InParty("imoen2")~ THEN EXTERN BIMOEN IntroImoS
 IF ~ !InParty("imoen2")~ THEN EXIT
 END
 
@@ -50,7 +50,7 @@ IF ~~ THEN REPLY ~ I could not reject her help, she has been with me as long as 
 END
 
 IF ~~ IntroImo3
-SAY ~ You are loyal to your friends, <CHARNAME>. We will stand to you when you need help and care. And you NEED help! ~ IF ~~ THEN DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXTERN BIMOEN2 IntroImoN
+SAY ~ You are loyal to your friends, <CHARNAME>. We will stand to you when you need help and care. And you NEED help! ~ IF ~~ THEN DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXTERN BIMOEN IntroImoN
 END
 
 IF ~~ WhereIsImo
@@ -85,7 +85,7 @@ SAY ~I see you have returned, <CHARNAME>. (Suddenly you start to feel a comfort 
 IF ~~ THEN REPLY ~ Well, I think I must trust someone or I'm lost. Something tells me you are sent to help me, Sandrah, come with me.~ GOTO SanJoin
 END
 
-APPEND BIMOEN2
+APPEND BIMOEN
 
 IF ~~ THEN BEGIN IntroImoS
 SAY ~(Imoen shakes Sandrah's hand with a bright grin on her face.) Nice to meet you, Sandrah, wow, what a nice robe, bad it's not pink at all. ~ 

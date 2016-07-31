@@ -3,7 +3,7 @@ BEGIN CVCoper
 CHAIN
 IF~Global("Copersan","ar10pb",2)~THEN CVSandrJ SargazD1
 ~Look, <CHARNAME>, another of those stargazers. The Sword Coast attracts them in masses these days.~
-==BIMOEN2 IF~InParty("Imoen2")~THEN~Yes, like a dead squirrel attracts green flies.~
+==BIMOEN IF~InParty("Imoen2")~THEN~Yes, like a dead squirrel attracts green flies.~
 END
 ++~They rarely have something of relevance to report.~+ SargazD2
 

@@ -166,7 +166,7 @@ IF ~ Global("SanNarQ","GLOBAL",6) PartyHasItem("EShard")~ THEN Elminsa SharRetI
 ~ Sandrah, mine pride and joy, thou really have found Her, Mystra's Shard.~
 = ~ And of course thou as well, good young friend <CHARNAME> and thy fearless company. Sandrah , thou hast done well in choice of thine friends, hoho.~
 == CVSandrJ ~ Yes, father.~
-== BIMOEN2  IF ~ InParty("Imoen2")~ THEN ~ And you shoulda see her do it, peanut style an all shoutin'...~
+== BIMOEN  IF ~ InParty("Imoen2")~ THEN ~ And you shoulda see her do it, peanut style an all shoutin'...~
 == BBRANW IF~ InParty("Branwen") ~ THEN ~ A doubtful victory Tempus would not approve.~
 == Elminsa ~ Does that mean the demons are destroyed?~
 END
@@ -239,7 +239,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == Elminsa ~  I am still investigating the matter, but it seems that this demon thee sent back down to hell has discovered his mistake of leaving some items when he made his retreat. He is probably searching now for the missing things. I have to retreat to the shard now, to find out some more details.~
 = ~ I recommend to thee to visit me in my study when thou art ready to leave Waterdeep. I will fill thee in with the latest information then.~
 == CVSandrJ ~ We will do that, father.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Wow, adventuring is just my thing. The halls of the mighty Elminster visited by Imoen the Magnificent herself!~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Wow, adventuring is just my thing. The halls of the mighty Elminster visited by Imoen the Magnificent herself!~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Gosh, the only decent man on Faerun must be an old mage still moaning his long dead wife. What a waste. I must dwell on with those pathetic fools that are left.  ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ The drow do well to avoid mingling with this mighty man. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Cities of the humans normally make me feel the loss of Shilmista even more. But this place is different. Sandrah, your father has more insight into things than anyone I have met before. ~
@@ -290,7 +290,7 @@ CHAIN
 IF ~~ THEN Elminsa FalSlip2
 ~ Mine heroic friends, I will not let thou go without providing some assistance, for sure.~
 = ~ Harken! An item the demon wouldst miss from his possession art his silver slippers.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Hoops, what comes now? More silly demon defense strategies?~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Hoops, what comes now? More silly demon defense strategies?~
 == Elminsa IF~ InParty("Imoen2") ~ THEN~ Laugh not, little bright redhead, thou art right indeed.~
 == BSANDR ~ Those slippers have betrayed him once already?~
 == Elminsa ~ But art he aware of this? That demon is stupid enough to lust for his slippers again and thus his downfall can once more be accomplished by the fearless.~
@@ -326,7 +326,7 @@ END
 CHAIN
 IF~~THEN  Elminsa SendAcad2
 ~ <CHARNAME>, once again thou reveal the makings of a real leader and competent captain. Mine daughter hath done well to follow thee. 'tis also the burdon of a leader to make such decisions where the life of some may be endangered for the sake of many.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Mr. E, hey man, don't doubt my <CHARNAME>. 'jus send us off and we'll be back with their heads in less time than ya need to recite the names of cities along the coast from north to south.~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Mr. E, hey man, don't doubt my <CHARNAME>. 'jus send us off and we'll be back with their heads in less time than ya need to recite the names of cities along the coast from north to south.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Even an academy led by a female can be bashed. Just let the right group do the job and you'll see. <CHARNAME>, we are wasting time, blood could already be flowing - and not ours. ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ That witch is more cunning than a spiderqueen. But she is no match at all for our joined forces. On, <CHARNAME>, for Shar! ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ I have my arrows ready to strike down these magelings. They have no right to threaten the Realms with magic for sale. ~
@@ -388,23 +388,23 @@ CHAIN
 IF ~ Global("Formedcloth","GLOBAL",24) AreaCheck("CVStud") ~ THEN  Elminsa SanImoMoth
 ~ Thou hath come far in thine search for the old times. Are thou content with the answers thee hath found?~
 DO ~ SetGlobal("Formedcloth","GLOBAL",25)~
-== BIMOEN2 ~ Dearest old mage. Thee, Thou or whatever, have done so much for us, and for a little girl you may remember, one called Immi.~
+== BIMOEN ~ Dearest old mage. Thee, Thou or whatever, have done so much for us, and for a little girl you may remember, one called Immi.~
 == Elminsa ~ Imoen, do not think thine way hath not been taken care of, innocent child. Thou hath been the truest of companion to <CHARNAME> so far and thou willst continue with <PRO_HIMHER> for what is still to be done. Old friend Winthrop hath raised thee well.~
-== BIMOEN2 ~ Oh, yes, he sure done that. Even if I'm late to thank him, I see it now. But - greatest master mage, it's not the one I call *father* when I think of the good ol' man, why I come to inquire. You musta known who my mama was?~
+== BIMOEN ~ Oh, yes, he sure done that. Even if I'm late to thank him, I see it now. But - greatest master mage, it's not the one I call *father* when I think of the good ol' man, why I come to inquire. You musta known who my mama was?~
 == Elminsa ~ Well, yes, thou deserve to know even if it will grieve thee and me and all who listen.~
 = ~ Your mother's name was Ismanelda. Red haired, quick witted, ever cheerful young Ismanelda.~
-== BIMOEN2 ~ Hey, now tell me her bestest colour was pink and I know she's really the one.~
+== BIMOEN ~ Hey, now tell me her bestest colour was pink and I know she's really the one.~
 == Elminsa ~ (The old mage seems perplexed for a second.) Well, however thee gained that knowledge - but yes, she often wore pink garnments around the house.~
-== BIMOEN2 ~ She lived here, in Waterdeep, in this house? Slowpoke be quicker, man, tell me and tell me.~
+== BIMOEN ~ She lived here, in Waterdeep, in this house? Slowpoke be quicker, man, tell me and tell me.~
 == Elminsa ~ I would if thou let me. Yes, she lived here as she was working in mine and Khalindra's household. She was a Waterdeep girl who worked in our kitchen. She was just - by coincidence...well..~
-== BIMOEN2 ~ PLEASE, mighty mage. If I can stand it you should as well, be no baby.~
+== BIMOEN ~ PLEASE, mighty mage. If I can stand it you should as well, be no baby.~
 == Elminsa ~ Bhaal had sneaked into the house to insaminate Khalindra at night when I was away. For some reason Ismanelda was still awake and he sensed her presence in the house. With his evil instinct he searched and found her. He raped her for no other cause than that she was there at that moment.~
-== BIMOEN2 ~ Bloody bastard. I'd kill him if he would still be alive. Ha, I will kill that Sarevok of his instead. But...~
+== BIMOEN ~ Bloody bastard. I'd kill him if he would still be alive. Ha, I will kill that Sarevok of his instead. But...~
 = ~ ...hey, did Winthrop know her? I mean did he...~
 == Elminsa ~ Good Winthrop. Well. He is a Harper, thou know that by now and thus came to my house regularly. He came more often once Ismanelda was in the household and he never left the house without paying a visit to the kitchen or the kitchen garden. All in the house sensed that some romance was afoot there. And then came the black day.~
-== BIMOEN2 ~ Is that why he took me as his child?~
+== BIMOEN ~ Is that why he took me as his child?~
 == Elminsa ~ When the truth was found about Khalindra and Ismanelda and the spawns they were growing, Winthrop wanted to marry her to be the child's father, yet she refused him to become husband and widower at the same time, knowing she had to perish with childbirth.~
-== BIMOEN2 ~ And he became my father anyhow, stubborn wonderful man. Thank you, Elminster for giving me a mother now I can think of. Feels good. Hope it feels good for you, too, for the sharing, he?~
+== BIMOEN ~ And he became my father anyhow, stubborn wonderful man. Thank you, Elminster for giving me a mother now I can think of. Feels good. Hope it feels good for you, too, for the sharing, he?~
 == Elminsa ~ Indeed, young Imoen. It hath felt good to share with thee, even if it is a sad tale and so unjust to ones as innocent as Ismanelda and thineself.~ DO ~ EscapeArea()~
 EXIT
 

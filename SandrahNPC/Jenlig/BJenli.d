@@ -44,26 +44,26 @@ CHAIN
 IF~Global("Jenimo2","LOCALS",1)~THEN BJenli PinkImo
 ~This nice embroidery, pink girl. Jen'lig likes good style.~
 DO~SetGlobal("Jenimo2","LOCALS",2)RealSetGlobalTimer("JenligT","LOCALS",1000)~
-==BImoen2~You hide most of yourself under that veil and gloves and stuff, maybe you're quite remarkable underneath.~
+==BImoen~You hide most of yourself under that veil and gloves and stuff, maybe you're quite remarkable underneath.~
 ==BJenli~Jen'lig must disguise for cannot show true style too open on Prime. Thief not need attention of eyes, Githyanki need not be known by all.~
-==BImoen2~Your style is excessive with lotsa ornaments and such, I like it. Of course you can't not very well wear any pink with that yellow hide of yours.~
+==BImoen~Your style is excessive with lotsa ornaments and such, I like it. Of course you can't not very well wear any pink with that yellow hide of yours.~
 ==BJenli~(Sigh) Not good having to hide so much of self.~
-==BImoen2~Sounds like you're a bit homesick.~
+==BImoen~Sounds like you're a bit homesick.~
 ==BJenli~First Jen'lig fighter with duty, Jen'lig is sentinel - last Jen'lig is female breed with homesickness and want for nice clothes.~EXIT
 
 CHAIN
 IF~Global("Jenimo2","LOCALS",3)~THEN BJenli CookImo
 ~Why give this pan to Jen'lig, pink girl?~
 DO~SetGlobal("Jenimo2","LOCALS",4)RealSetGlobalTimer("JenligT","LOCALS",1000)~
-==BImoen2~According to our schedule it's your turn to cook for us tonight. Heya, I'd be most and more interested what you folks eat for dinner. ~
+==BImoen~According to our schedule it's your turn to cook for us tonight. Heya, I'd be most and more interested what you folks eat for dinner. ~
 ==BJenli~Cooking is infant work not for soldier.~
-==BImoen2~Hey, We're all hungry and tired and each of us has to do it in turn. No exceptions, right?~
+==BImoen~Hey, We're all hungry and tired and each of us has to do it in turn. No exceptions, right?~
 ==BJenli~(Hiss) Is manling habbit, so Jen'lig travels with manlings, fights with manlings - now cooks with manlings.~
-==BImoen2~That's the spirit, gal. So tell me quickest, what's on the menu?~
+==BImoen~That's the spirit, gal. So tell me quickest, what's on the menu?~
 ==BJenli~(Looks around the vicinity of the camp) Fungus grows there on tree, squirrels hop there or maybe is rat? What else...all put in pan and cook some hours. Will not know what was before when cooked. ~
-==BImoen2~Eeeh...very efficient and maybe very healthy for Githyanki but maybe not very much my taste...~
+==BImoen~Eeeh...very efficient and maybe very healthy for Githyanki but maybe not very much my taste...~
 ==BJenli~Put lot spice with it if you want taste, no problem.~
-==BImoen2~Oye, I just see - I made a mistake with the schedule, see...it's really MY turn tonight for cooking. Thanks for the talk anyway, quite interesting (gulp).~
+==BImoen~Oye, I just see - I made a mistake with the schedule, see...it's really MY turn tonight for cooking. Thanks for the talk anyway, quite interesting (gulp).~
 ==BJenli~Cooking is infant work, pink girl good with it.~
 EXIT
 
@@ -141,7 +141,7 @@ CHAIN
 IF~Global("JenSeatalk","BG3100",2)~ THEN BJenli Seaside
 ~(Hiss) Much different sea on Prime from sea on Astral Plane.~
 DO~SetGlobal("JenSeatalk","BG3100",3)~ 
-==BIMOEN2 IF ~ InParty("Imoen2")~ THEN ~You have oceans over there? Guess they must be as strange as anything else in that world.~
+==BIMOEN IF ~ InParty("Imoen2")~ THEN ~You have oceans over there? Guess they must be as strange as anything else in that world.~
 ==BSandr~I read there is even travel and trade between the God Isles of your plane.~
 ==BJenli~Unpenetrable fog lies between God isles. Needs much knowledge to venture out and find way.~
 ==BSandr~This is common to the Sea of Swords you see before you, Jen'lig. To sail out there beyond the sight of the shore is not for the faint hearted.~
@@ -149,7 +149,7 @@ DO~SetGlobal("JenSeatalk","BG3100",3)~
 ==BJenli~Counselor did?~
 ==BSandr~(Laughs) No, not yet. Even if my mother came on a long journey from a far away land to the Sword Coast, I have not yet been beyond the calm waters near the shoreline. However, everything is possible in the journey we have embarked to.~
 ==BJenli~Young Jen'lig did duty on Githyanki carrack for a time. (Hiss) Maybe story for other day.~
-==BIMOEN2 IF ~ InParty("Imoen2")~ THEN ~(Thoughtful) Young Jen'lig? Wonder how old she really is - and maybe she was even captain of that ship, I wouldn't be astonished...~ EXIT
+==BIMOEN IF ~ InParty("Imoen2")~ THEN ~(Thoughtful) Young Jen'lig? Wonder how old she really is - and maybe she was even captain of that ship, I wouldn't be astonished...~ EXIT
 
 CHAIN
 IF~Global("JenDurl","LOCALS",1)~ THEN BJenli Bastion
@@ -212,7 +212,7 @@ CHAIN
 IF~Global("JenWyEat","LOCALS",1)~ THEN BJenli Wyvernmeal
 ~(Hiss) Good hunting, good prey, many food for commander's company.~
 DO~SetGlobal("JenWyEat","LOCALS",2) ~
-==BIMOEN2 IF~InParty("Imoen2")~THEN~Iiigh, you wanna have us eat those beasts?~
+==BIMOEN IF~InParty("Imoen2")~THEN~Iiigh, you wanna have us eat those beasts?~
 ==BSandr IF~ InParty("CVSandr") ~ THEN  ~There is never a dull moment with the company you choose, <CHARNAME>.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~If more people could develop this taste, Wyvern hunting will become a great business opportunity.~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ I can't imagine any of our surfacers is interested in the delicious liver of the beast, so I claim it for myself, githyanki. ~

@@ -49,6 +49,6 @@ DO~ SetGlobal("SanPellQ0","LOCALS",2) ~
 == BHPELL  ~ Sandrah? Sandrah of Waterdeep? What are you doing here on the Sword Coast?~
 == CVSandrJ ~ I was about to ask you the same. I travel with <CHARNAME> of Candlekeep.~
 == BHPELL  ~ What a coincidence! <CHARNAME> was exactly the person that was recommended to me to seek out for the purpose for which I came to the Sword Coast. I seek the help of a competent party such as yours.~
-== BIMOEN2 IF ~ InParty("Imoen2") ~ THEN ~ Great, <CHARNAME>, we are famous even in places like Lendore...where is that, by the way?~
+== BIMOEN IF ~ InParty("Imoen2") ~ THEN ~ Great, <CHARNAME>, we are famous even in places like Lendore...where is that, by the way?~
 END
 ++ ~ Sounds like we have gained ourself a name already.~ EXTERN BHPELL 1

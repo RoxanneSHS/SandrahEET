@@ -3,7 +3,7 @@ BEGIN CVNarga
 CHAIN
 IF~Global("Narga","BG0200",1) ~ THEN CVNarga InBGTown1
 ~You sssere!! Ssstand and give me a talk.~
-==BIMOEN2 IF~InParty("Imoen2")~ THEN~ Oooh, I washed myself this very morn, no use to shower me with spittle!~
+==BIMOEN IF~InParty("Imoen2")~ THEN~ Oooh, I washed myself this very morn, no use to shower me with spittle!~
 ==CVSandrJ IF~!InParty("Imoen2")~ THEN~ A very unwelcome shower of spittle...who may you be?~
 ==CVSandrJ IF~InParty("Imoen2")~ THEN~ Who may you be - another red wizard it seems?~
 ==CVNarga~ Ssssweet, so sssweet - and ssstill ssso deadly...Have you met the man Ve'xelt inside sssere?~

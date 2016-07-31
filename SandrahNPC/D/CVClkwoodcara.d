@@ -2,7 +2,7 @@ CHAIN
 IF ~Global("Altalk","BG1800",4)~ THEN CVSandrJ Clakwoodcara
 ~ Children to slave in the mines! <CHARNAME>, the vileness of our opponents shocks me time and time again.~
 DO~SetGlobal("Altalk","BG1800",5)~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Nobody will search for them...We could have had such a fate if not ol' Puffguts 'n' Gorion had taken care.~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Nobody will search for them...We could have had such a fate if not ol' Puffguts 'n' Gorion had taken care.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ A good training ground for the fittest to survive. ~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ Strange surfacer's attitude - who else but slaves are supposed to be larbouring here?~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ My heart bursts at such injustice. Let us end this at all cost. ~

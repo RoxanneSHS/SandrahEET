@@ -16,7 +16,7 @@ CHAIN
 IF ~~ THEN  maitrde WDresto2
 ~ <PRO_SIRMAAM>, may there be a misunderstanding? Pardon, I did not get your name? ~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! A cool nice beer - but PRESTO or however that is in your language, QUICK. ~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Huh, funny man, bring us something pink and creamy.~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Huh, funny man, bring us something pink and creamy.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ What a pathetic male. If food is not on the table instantly, it will be you skewered on the grill tonight! ~
 == BVICONI IF~ InParty("Viconia") ~ THEN ~ Looks like a decent place. They should really have fresh gragrk.~
 == BKIVAN IF~ InParty("Kivan") ~ THEN ~ This place tries to smell like the forests of Shilmista but it is not the real thing. ~
@@ -70,7 +70,7 @@ IF ~Global("Maitre1","GLOBAL",2)~ THEN  maitrde WDresto5
 ~ <PRO_SIRMAAM>, I would like to bring to your attention today's specials on the menu.~
 = ~ We have the freshest rose quayles from the Shinig Plains. And exquisite giant trouts from The Lake of Steam...~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Those fishes are really delicious, <CHARNAME>.~
-== BIMOEN2 IF~ InParty("Imoen2") ~ THEN ~ Rose quayles? What about pink ones? ~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Rose quayles? What about pink ones? ~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Fine, I take a dozend of those trouts...~
 == MAITRDE IF~ InParty("ACBre") ~ THEN  ~ But, Sir, we were extremely lucky to acquire just five for the whole restaurant, the cost is immense.~ 
 ==BDorn IF~ InParty("Dorn") ~ THEN ~ Meat!~

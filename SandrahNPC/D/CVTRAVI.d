@@ -10,7 +10,7 @@ IF ~ Global("OrcPrison","GLOBAL",21)~ THEN CVTRAVI sd1
 ~ (Travenhurst looks at all the slain bodies surrounding him and then desperately at you.)~
 = ~ This is how it ends then?~
 DO ~ SetGlobal("OrcPrison","GLOBAL",22)~
-== BIMOEN2 ~ Better look at me, you Traviman, it's Imoen you have to fear. It's MY BOY you took and dragged 'cross the Sword Coast without mercy. MY BOY was almost killed by your blasted orc bastards and only my besta friend's love and skill saved his life.~
+== Bimoen ~ Better look at me, you Traviman, it's Imoen you have to fear. It's MY BOY you took and dragged 'cross the Sword Coast without mercy. MY BOY was almost killed by your blasted orc bastards and only my besta friend's love and skill saved his life.~
 ==CVTRAVI ~ All of that was never intended, believe me. This whole thing is running completely out of hands...~
 END
 ++ ~ That is usually the case with large scale conspiracies where one man is not trusting the other and one hand does not know what the other does.~ + sd2
@@ -18,11 +18,11 @@ END
 CHAIN
 IF ~~ THEN CVTRAVI sd2
 ~ You are an intelligent <PRO_MANWOMAN>. You have been underestimated by all. You and your friend Imoen's persistance.~
-== BIMOEN2 ~ Imoen the Magnificent gotcha in the end. We always do, <CHARNAME> and I.~
+== Bimoen ~ Imoen the Magnificent gotcha in the end. We always do, <CHARNAME> and I.~
 ==CVTRAVI ~ Nobody wanted to hurt Henning. All I wanted was to have him out of the way until the end of the operation. He would have put you on our trail too early. In some ten-days it will not matter anymore, but now-~
 == BSANDR~ What is it that will happen on the big day. Sarevok's taking of the Iron Throne leadership?~
 ==CVTRAVI ~ Oh, my. It was all useless. You know it anyhow already. All this blood on my hands - in vain - all the dead...~
-== BIMOEN2 ~ Hey, Traviman, don't gimme none of them lil' girl tears, hear me. Stand like a man for what you did do. You'd never shown mercy to anyone on your bloody trail.~
+== Bimoen ~ Hey, Traviman, don't gimme none of them lil' girl tears, hear me. Stand like a man for what you did do. You'd never shown mercy to anyone on your bloody trail.~
 END
 ++ ~ Imoen, please, you are right in every way. (You take her aside a bit). Listen, my sister, he is singing us this story like a nice little bird, hey, just keep on threatening a little bit whenever needed, but let him talk and talk. Yes? He knows much we need to know to get behind all of this.~ +sd3
 
@@ -49,7 +49,7 @@ IF~~ THEN CVTRAVI sd4
 == BSANDR~ But Sarevok pushes this way more and more. Unwisely as you claim.~
 == CVTRAVI ~ He was the one for the secret and illegal operations from the beginnings. He did the dirty work no one else wanted to deal with. He was trusted because of Rieltar's influence but not liked. And nobody had controlled him really well.~
 == BSANDR~ And now it is probably too late. Who can stop him now?~
-== BIMOEN2 ~ We can, just you wait and see.~
+== Bimoen ~ We can, just you wait and see.~
 == CVTRAVI ~ In a way I would hope you could. But I have my doubts. I saw him one night returning to the Iron Throne from a dark mission in that terrible black armour of his, looking nearly twice as big as human...~
 END
 ++ ~ WHAT? That black armoured figure!!! Gorion's killer...~+sd5
@@ -59,17 +59,17 @@ IF~~ THEN CVTRAVI sd5
 ~ Gorion. The mage of Candlekeep? What has he to do with that?~
 == BSANDR~ (Sandrah has taken your trembling hand.) Darling, yes. You are right. But this man knows nothing about that part of the plot. It looks like Sarevok has played his own game with them from the very beginning. And I think I see it now. Let us talk about it later when we finished with this guy.~
 == CVTRAVI ~ What will you do with me now? There is not much more I can tell you that you do not know already. The rest lies with the Iron Throne and its leaders.~
-== BIMOEN2 ~ I am in a mercyful mood today, Traviman, you have this last wish free from me. Choose which way I shall kill you.~
+== Bimoen ~ I am in a mercyful mood today, Traviman, you have this last wish free from me. Choose which way I shall kill you.~
 == CVTRAVI ~ Red Head, it does not matter, any death will be merciful now, compared with what would await me now out there from my former allies.~
-== BIMOEN2 ~ Hey, that's the nicest of ideas, we just deliver you to that Throne and let them do the dirty work, hm. They are really skilled.~
+== Bimoen ~ Hey, that's the nicest of ideas, we just deliver you to that Throne and let them do the dirty work, hm. They are really skilled.~
 == CVTRAVI ~ You, you are no murderers, although you may have a right to kill me. But I never wanted to harm your Henning and even paid those orcs a lot of gold for his life - not for his death.~
-== BIMOEN2 ~ Hmmm - that is true. That was the last words from that Knawlod orc, hmm.~
+== Bimoen ~ Hmmm - that is true. That was the last words from that Knawlod orc, hmm.~
 == CVTRAVI ~ If I get out of here I will be dead anyway. They will hunt me everywhere on the Sword Coast soon.~
-== BIMOEN2 ~ You could go south, to Amn where no one knows you, start anew as an honest man. How's that?~
+== Bimoen ~ You could go south, to Amn where no one knows you, start anew as an honest man. How's that?~
 == CVTRAVI ~ Kill me quick please but do not make jokes about a broken man.~
-== BIMOEN2 ~ I ain't jokin' none. Not today. You spared Henning. The most important thing in all this bloody stinking mess. I owe you that. Lemme think. You run south 'cross the border. I give you this excellent sword and this bag of jewels from my part of our booty to start a business far from here. You compensate to Henning giving him what you have to leave behind.~
+== Bimoen ~ I ain't jokin' none. Not today. You spared Henning. The most important thing in all this bloody stinking mess. I owe you that. Lemme think. You run south 'cross the border. I give you this excellent sword and this bag of jewels from my part of our booty to start a business far from here. You compensate to Henning giving him what you have to leave behind.~
 == CVTRAVI ~ That would be this house and what's in it. And the ground it stands upon. The rest of my funds is invested in the Iron Throne business and I can consider it lost forever.~
-== BIMOEN2 ~ Get out of here quickly, Traviman, as long as I can hold the rest of this angry group back...~
+== Bimoen ~ Get out of here quickly, Traviman, as long as I can hold the rest of this angry group back...~
 == CVTRAVI ~ Wait a minute, you will need this. (He walks to his writing desk and starts to scribble a parchment. He pours some wax from a candle onto the bottom of the paper and imprints it with his ring. Next he hands the quill to Sandrah.) Mylady, you need to sign it here below my signature as my witness.~
 == BSANDR~ (Sandrah reads and signs the sheet and hands the quill and the parchment to you.) It needs a second signature to make it valid, <CHARNAME>. One of the things I had to learn having to run my father's business affairs.~
 == CVTRAVI ~ You may believe me or not, but I feel relieved. I really wish you will succeed. This enemy is more than you may imagine. ~ DO~

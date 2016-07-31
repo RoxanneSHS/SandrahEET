@@ -5,9 +5,9 @@ IF ~ Global("SanImoNashRaid","GLOBAL",1)~ THEN SanNaWi SanNaWi1
 ~ Have you heard about the raid on Nashkel? The bandit forces strike back.~
 DO ~ SetGlobal("SanImoNashRaid","GLOBAL",2)~
 == BSANDR~ A raid on the town. What has happened? ~
-==BIMOEN2~ Oh gosh, let's go there quickest, let's check if we can help. Say me, good man, has anything happened to the shopkeeper there in Nashkel?~
+==BIMOEN~ Oh gosh, let's go there quickest, let's check if we can help. Say me, good man, has anything happened to the shopkeeper there in Nashkel?~
 ==SanNaWi ~ Dunno, m'lady, they came at night. Looks like they targeted the store especially. Seemed to be no casualties elsewhere in town.~
-==BIMOEN2~ HENNING! Whatcha stand there open mouthed, <CHARNAME>. We gotta move to Nashkel quickest, you dumb nut.~
+==BIMOEN~ HENNING! Whatcha stand there open mouthed, <CHARNAME>. We gotta move to Nashkel quickest, you dumb nut.~
 END
 ++ ~ Calm down, Imoen, of course we need to look into this quickly. Sandrah has warned us already that our activities with the mines might stir up something.~ + SanNaWi2
 
