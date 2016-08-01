@@ -255,7 +255,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ What riches may be here to loot. I can only imagine what a curious and able thief may lift out of here. ~
 == Elminsa  IF~ InParty("Coran") ~ THEN  ~ I wouldst advise thou better not try your luck, elf. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Many paths did I travel but nothing alike did I encounter until present days. The old scripts werst correct when it cometh to Elminster.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ I enjoy the balance that is present in this place wherever I cast my eyes. ~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ I enjoy the balance that is present in this place wherever I cast my eyes. ~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ This place has connection to the planes itself. It's an isle of different matter and time, almost like our towns on the Astral Plane. Wonderous.~
 ==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~ My cöwled teachers would tremble when facing this legendary master. In company other than my present one, I would tremble too, I guess.~
 == Elminsa IF~ InParty("CVJenlig") ~ THEN ~It is rare that a creature like thee comes to our Prime. My best wish for thine mission, githling.~
@@ -346,7 +346,7 @@ can be held by no decent bard.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis this hero who can do the deed at hand. No other. Doubt remains none.~
 == BYESLI IF~ InParty("Yeslick") ~ THEN ~ The son and the granddaughter of Cyric demand it, ' still the deed is a heroic one. Yeah, I may be puzzled but I am d'termined.~ 
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood flows in the name of CYRIC as the great hero TIAX crushes another mighty opponent who tries to rule without OUR blessing!~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust his decisions by now with all my heart ~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust his decisions by now with all my heart ~
 == BSAFAN IF~ InParty("Safana") ~ THEN~Apart from the fighting - done by my hero companions - this place is full of jewelry. My, and I've seen those fashionable robes on the sorceresses we defeated earlier!~
 ==BJenli IF~ InParty("CVJenlig") ~ THEN ~Jen'lig follow commander to battle worth joint ability. (Hiss) Fall down will Legencase fortress.~ 
 == BSANDR ~ (Sandrah has taken your hand and squeezes it lightly but reassuring. You know this time she will follow you, whatever decision you may make.) ~

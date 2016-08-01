@@ -7,7 +7,7 @@ IF ~NumTimesTalkedTo(0)~ THEN  Pellig Pellini
 == PELLIG ~ (Rolls onto her back and offers Sandrah her spotted belly to caress.)~
 == BIMOEN IF ~ InParty("Imoen2") ~ THEN ~ Huh, nice little pussycat, just had a few mice too many, I guess. By the way, what is it really, never seen such kind.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ What a proud female. It is a pleasure to see such power and grace move. She is deadly for any male that tries to stand in her way. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ As beautiful as a deadly spiderqueen. ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ As beautiful as a deadly spiderqueen. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ An animal of utmost grace and danger at the same time. Where did you find it and how could you befriend such a terrific beast? ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~  (Scribble, scribble) The most dangerous animal I had ever seen came to her side like a tamed pet... ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ You still pet this cat, Sandrah, oh keep your claws away from me, Pelligram, I know what they can do.~
@@ -24,7 +24,7 @@ IF ~NumTimesTalkedTo(0)~ THEN  Pellig Pellini
 ==BDorn IF~InParty("Dorn")~THEN~Aarg, breathe not at me, hellish creature!~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~Not a red dragon you tame, priestess, but has power more than pets of manlings usually have.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Graceful and scaring. I sense a creature of the Shining Plains.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ You live in balance with nature and the beasts, Sandrah, just like your mother once did.~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ You live in balance with nature and the beasts, Sandrah, just like your mother once did.~
 == BSANDR ~ Let me introduce you to Pelligram, my Black Plainscat, a panther from the Shining Plains of Ormoth. I rescued her as a baby from some hunters who wanted to train and sell her to the fighting pits of Amn. She has become my friend when we grew up together. ~
 == HAIASS IF~ InMyArea("Haiass") ~ THEN ~ (Haiass slowly moves up to the large cat and starts to sniff on her.)~
 == PELLIG IF~ InMyArea("Haiass") ~ THEN ~ (Turns her face to Haiass all grace and beauty and starts to inspect the wolf in return.) Gentle purr.~

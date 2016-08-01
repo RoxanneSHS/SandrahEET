@@ -5474,7 +5474,7 @@ IF~ Global("NarHellAfter","GLOBAL",2)~ THEN CVSANDRJ NarGoneComm
 DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Demon hunting is the funnest of funs. Let's get out and do some more. Watch out, demons I will get me a peanut sling...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ A male demon, how pathetic. Even down there in hell males are nothing but stupid scum. ~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ A male, no doubt. But even unusable as a slave. What a waste. ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ A male, no doubt. But even unusable as a slave. What a waste. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Just to think that such creatures are considered the threat of Shilmista - one never finishes learning. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) Oh no, I have no idea how I can put this into words. The heroic deed reads just like a joke, oh my. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Once again evil has been smashed! Well, *smashed* may not be the right word. But then, even a peanut can smite evil when thrown by the hand of the righteous. ~
@@ -5496,7 +5496,7 @@ Defeated the demon with a yell,
 Telling him to GO TO HELL.~
 == IF_FILE_EXISTS BRasaad IF~ InParty("Rasaad") ~ THEN  ~An unconventional way to solve problems, you are full of surprises, Sandrah. ~ 
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ There has been nothing alike this deed in the happenings from the times of Raumathar and Narfell until present days.~ 
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ The balance is restored again that was disturbed by this presence on the surface. Let us move, <CHARNAME>. ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ The balance is restored again that was disturbed by this presence on the surface. Let us move, <CHARNAME>. ~
 ==BDorn IF~InParty("Dorn")~THEN~(Fiercely) You are fool to think you can fool a demon, woman.~
 == BSANDR ~ I wonder if he will come back? ~
 EXIT
@@ -5507,7 +5507,7 @@ IF ~~ THEN CVSANDRJ BaldMaekt15
 DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Let us go buy some pink balloons and some ribbons for the girls, and then we could...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ There sure is some arena around here where we can train on some male scum. Ha, all aboard for funtime! ~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ Another strange surfacer habit, these carnevals. But there seem to be a lot of willing males in the crowd. Excuse me, I think I spied a really decent prey...~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ Another strange surfacer habit, these carnevals. But there seem to be a lot of willing males in the crowd. Excuse me, I think I spied a really decent prey...~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ My heart bursts in remembering the Daoine Teague Feer, the great celebration of Shilmista. ~
 == BSANDR IF~ InParty("Kivan") ~ THEN ~ This is not as sacred as the Feer, but maybe you will remember it once as well with joy - as a moment you have spent with one you loved.~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ (Kivan wordlessly kisses Sandrah. He has a small tear in his eye.)~
@@ -5528,7 +5528,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BMINSC IF ~InParty("Minsc") ~ THEN~ Boo has reminded Minsc about the good tradition for us fighters of Rashemen to celebrate with mead our victories.~
 == BDynah  IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Oh, I fear the worst, Minsc always gets drunk heavily on such occasions and will be unusable the next day. But he never learns.~
 == BSANDR IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Do not worry, Dynaheir. I will gladly celebrate with our courageous protector and my healing skills will help us avoid the consequences afterwards. Let everybody enjoy the day.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Blind citizens. I pity them for the arificial joys they need to install, never getting the chance of dwelling in nature's endless celebration and beauty. ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Blind citizens. I pity them for the arificial joys they need to install, never getting the chance of dwelling in nature's endless celebration and beauty. ~
 == BSANDR ~ Look at that merchant, <CHARNAME>. On an occassion like this your girl should receive a nice ribbon for her hair.~
 END
 ++ ~ Do not be too selfish, Sandrah, I will buy one for each girl in the party.~
@@ -5541,7 +5541,7 @@ IF~Global("Pid9AnklCmt","LOCALS",1) ~ THEN CVSANDRJ Pid9AnklComnts
 DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, Huh, lovee dovees, watcha doing while all of us are waiting. Oh healer, please, I need help, hahaha...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ How pathetic. Can you not even be decent enough to go beneath the blankets. Think I must throw up.. ~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ Which of my sisters taught you in these arts, Sandrah? <CHARNAME>, remember you have another healer in your group if it REALLY hurts. (Licks her lips seductively.) ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ Which of my sisters taught you in these arts, Sandrah? <CHARNAME>, remember you have another healer in your group if it REALLY hurts. (Licks her lips seductively.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ What a lovely scene, oh how I yearn for the forests of Shilmista and my beloved Deheriana to do the same. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) Hups, I have not misplaced my notepad around here, no probably not. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not recognise you were behind that tree. (The color of his face could be named as *purple*.)~
@@ -5553,7 +5553,7 @@ DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Oh, this young love on the eve of doom. Keep on with it while you still can. Too sad there is no tomorrow for you and all of us. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Want me to join. I learned the Thay type of massage from a lady I met in...ah, no, I think it was...nevermind. ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou are not aware of the presence of danger, but thou shouldst.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competend couselor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competend couselor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
 ==BGARRI IF~InParty("Garrick")~THEN~A few lines to add to my heroine's epos...the aspects of  romance in between the great deeds.~ 
 ==Bedwin IF~InParty("Edwin")~THEN~(I hope she'll recognise my limping tomorrow - I must arrange a similar scene for us.)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair can be worshipped in many ways (Smile).~
@@ -5566,7 +5566,7 @@ IF ~ Global("SanSplash","GLOBAL",3) AreaCheck("CVSPLA") ~ THEN CVSANDRJ Sunsplas
 DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Hooray, lets's run - loser gets dunked.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Uh, those pathetic men. In armour they can hide at least some of it! ~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ If that sunlight will not kill me then the water surely will. If it is Shar's will however, I will survive all these trials. ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ If that sunlight will not kill me then the water surely will. If it is Shar's will however, I will survive all these trials. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, little elf-at-heart, I feel like a firefly dancing on the lake in the midday sun. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ No, no I will not write anything down about this scene. ~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair must have arranged this scene for us. ~
@@ -5585,7 +5585,7 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Ladies, out of the way. Let me show you my swandive! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou art never too old for a bit of healthy fun.~
 == BDorn  IF~ InParty("Dorn") ~ THEN ~Water? I don't even drink it, ever!~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Let us encompass nature like nature made us to be. ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Let us encompass nature like nature made us to be. ~
 EXIT
 
 // Diary and Cloth Pieces
@@ -5594,7 +5594,7 @@ CHAIN
 IF~ Global("SanChildH","GLOBAL",1)~ THEN CVSANDRJ ChiHin10
 ~ This piece of cloth and that scouts diary seem to be somehow connected.~
 DO ~ SetGlobal("SanChildH","GLOBAL",2)~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ So that was the scene I witnessed way back then, the ambush on the travellers. The occasion where I found the piece I gave you. I was the drow that as usual was considered to be anyone's enemy just because I was there.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ So that was the scene I witnessed way back then, the ambush on the travellers. The occasion where I found the piece I gave you. I was the drow that as usual was considered to be anyone's enemy just because I was there.~
 ==CVSandrJ IF~ InParty("Viconia") ~ THEN ~ But you are also our witness that the children with the travellers could escape.~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN~ 'tis that mine assumption was right with this cloth piece, it was lost here way back then. The children that were so much sought after and cared for, they musta been special ones.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Whenever I read about those Time of Troubles, it scares me a lot. I am glad we live in lighter times now.~
@@ -5623,7 +5623,7 @@ DO~SetGlobal("SanChildH","GLOBAL",4)~
 == IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Are you well, Sandrah. You look like you have seen a ghost.~
 ==CVSandrJ IF ~InParty("B!GAVIN")~ THEN ~ A ghost indeed. Maybe worse.~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ <CHARNAME>, we gotta listen. I don't like how my besta friends looks now. Gloomy.~
-== Bviconi  IF~ InParty("Viconia") ~ THEN ~ I know this feeling of the past trying its prying fingers into present life, like the Spiderqueen trying to hunt the renegade on the surface.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ I know this feeling of the past trying its prying fingers into present life, like the Spiderqueen trying to hunt the renegade on the surface.~
 == Bajant  IF~ InParty("Ajantis") ~ THEN ~ Helm's everwatching eye will keep safe those that do not follow false gods.~
 ==CVSandrJ ~ Those two children with the travellers were Bhaalspawns.~
 END
@@ -5648,7 +5648,7 @@ IF~~ THEN CVSANDRJ ChiHin22
 ==CVSandrJ IF~ InParty("Sufinch") ~ THEN ~ True, but Alaundo says nowhere that the fight for power is because they all have the same aim - the Throne of Bhaal. Maybe one of them uses his powers for a better aim.~
 == BDynah  IF~ InParty("Dynaheir")!InParty("Sufinch") ~ THEN ~ The prophesy of Alaundo says that all Bhaalspawns aim at power and that there will come a time of war between them for power.~
 ==CVSandrJ IF~ InParty("Dynaheir")!InParty("Sufinch") ~ THEN ~ True, but Alaundo says nowhere that the fight for power is because they all have the same aim - the Throne of Bhaal. Maybe one of them uses his powers for a better aim.~
-== Bjaheir  IF~ InParty("Jaheira") !InParty("Dynaheir")!InParty("Sufinch")~ THEN ~ The prophesy of Alaundo says that all Bhaalspawns aim at power and that there will come a time of war between them for power.~
+== BJahei  IF~ InParty("Jaheira") !InParty("Dynaheir")!InParty("Sufinch")~ THEN ~ The prophesy of Alaundo says that all Bhaalspawns aim at power and that there will come a time of war between them for power.~
 ==CVSandrJ  IF~ InParty("Jaheira") !InParty("Dynaheir")!InParty("Sufinch")~ THEN ~True, but Alaundo says nowhere that the fight for power is because they all have the same aim - the Throne of Bhaal. Maybe one of them uses his powers for a better aim.~
 END
 ++~ Elminster would try to save a Bhaalspawn to use its power to fight those spawns trying to raise to power in their father's wake. Or maybe two of them, in order to make sure. One of them being of his own beloved wife Khalindra, thus giving her death a special meaning - the god of murder in the end defeated by his own cunning plan.~
@@ -5721,7 +5721,7 @@ DO ~ SetGlobal("WinskApp1","GLOBAL",8) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Dying Gods...Rising Gods..uuh scary.~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ In the Times of Trouble Gods had been slain. Thus says the wise Alaundo, that dead not all may remain. Bhaal may rise again and maybe others.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Had I only been granted access to the inner parts of Candlekeep to study Alaundo's writings. The prophesy of the dead God that will rise again. Bhaal.~
-== Bjaheir  IF~ InParty("Jaheira") ~ THEN ~ Those like me who remember the Times of Trouble still tremble when they hear words like these. Ao has restored the balance when the revolting gods were slain. The rising of one of them or the rising of a new one on their behalf will mean the destruction of that tiny balance and a catastrophe for Faerun.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Those like me who remember the Times of Trouble still tremble when they hear words like these. Ao has restored the balance when the revolting gods were slain. The rising of one of them or the rising of a new one on their behalf will mean the destruction of that tiny balance and a catastrophe for Faerun.~
 == BSANDR ~ The peace after the Times of Trouble may be a tiny flower, easily to be trampled by those who lust for power. I do not believe in rising gods, but I fear those corrupt mortals and their deeds who follow such ideas.~
 END
 ++ ~ The Times of Trouble, the slain gods, the prophecies of Alaundo concerning the spawn of the dead god Bhaal - my head is spinning. What does all of that have to do with us? I need fresh air, let us move on.~

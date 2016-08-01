@@ -43,7 +43,7 @@ DO~SetGlobal("MetOnce","LOCALS",1)~
 ==Imoen2_ IF~InParty("Imoen2")~THEN~I saw a picture of one alike ya in a Candlekeep tome. Hey, you come from VERY far away!!~
 ==CVJenlig~You know my kin, you know the Githyanki. Then you know why I here.~
 ==CVSandrJ~A githyanki. <CHARNAME>, this is not a creature of our plane, the Prime. The Children of Gith come from the god-isles of the Astral Plane and they come for only one reason, the retrieval of a stolen artefact.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~I would not judge her for murder for what she did - even if her own kind would not treat an outsider with fairness.~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~I would not judge her for murder for what she did - even if her own kind would not treat an outsider with fairness.~
 ==CVJenlig~You speak with knowledge, manling. A most sacred sword is stolen and this man was involved. But he has it not. One other has it, in the City that now has closed its gates.~
 ==CVSandrJ IF~Global("CmElf900","GLOBAL",0)~THEN~I heard that the Grand Dukes of Baldur's Gate have closed the city against the bandit threats of the iron crisis.~
 ==CVSandrJ IF~Global("CmElf900","GLOBAL",1)~THEN~ You talk of Baldur's Gate, I guess.~

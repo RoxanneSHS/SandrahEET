@@ -215,7 +215,7 @@ DO~SetGlobal("JenWyEat","LOCALS",2) ~
 ==BIMOEN IF~InParty("Imoen2")~THEN~Iiigh, you wanna have us eat those beasts?~
 ==BSandr IF~ InParty("CVSandr") ~ THEN  ~There is never a dull moment with the company you choose, <CHARNAME>.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~If more people could develop this taste, Wyvern hunting will become a great business opportunity.~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ I can't imagine any of our surfacers is interested in the delicious liver of the beast, so I claim it for myself, githyanki. ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ I can't imagine any of our surfacers is interested in the delicious liver of the beast, so I claim it for myself, githyanki. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Back to the roots, our anchestors would have taken any opportunity for meat.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble) I'll file this under *cuisine of the astral plane*, I guess. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ She is a beast, however she tries to disguise it. ~
@@ -224,7 +224,7 @@ DO~SetGlobal("JenWyEat","LOCALS",2) ~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clangeddin's Axe, we surely must slay them but leave the rubbish to the wolves, buzzurk!~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ Not in the worst time of hunger in Norheim we'd go to fill our bellies with such stuff.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Whether we poison ourselves with its meat or fall under the beast's claws - where is the difference? ~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~It's nature's gift, no doubt, but at the same time there are other gifts around for us as well.~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~It's nature's gift, no doubt, but at the same time there are other gifts around for us as well.~
 ==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~Ooops, I have the feeling I've eaten them before, at least some of the food we received as apprentices could have been of such origin.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ Aye, the meat isn't poisonous - and in Crimmor it is considered such a highly priced delicacy that I never had the chance to taste it.~
 END
@@ -373,9 +373,9 @@ CHAIN
 IF~Global("JenVicB","LOCALS",0) InParty("Viconia") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Vicbant
 ~As hatchlings in Underdark the Varsh let us fight and kill dark elves for combat training. Jen'lig kill many drow.~
 DO~SetGlobal("JenVicB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
-== BVICONI ~As young drow in the Underdark I was trained on raids against githyanki hatcheries. I killed many of them.~
+== BVICON ~As young drow in the Underdark I was trained on raids against githyanki hatcheries. I killed many of them.~
 ==BJenli~Killed young fledgling ones, no great deed.~
-== BVICONI ~Well, they were not that easy prey, I have to admit. Your kin knows how to fight - and you have a cruelty in killing that equals the drow.~
+== BVICON ~Well, they were not that easy prey, I have to admit. Your kin knows how to fight - and you have a cruelty in killing that equals the drow.~
 ==BJenli~This time fight side by side for mission and commander. Our foe will learn to fear combined forces soon.~EXIT
 
 CHAIN
@@ -524,12 +524,12 @@ CHAIN
 IF~Global("JenJaheB","LOCALS",0) InParty("Jaheira") InParty("Khalid") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Jaheirabant
 ~Jen'lig puzzled by concept of marriage on prime. Is ownership of female to enslave best male for breeding?~
 DO~SetGlobal("JenJaheB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
-==BJAHEIR~I give you credit that you come from a formerly enslaved race, Jen'lig, but I definitely not enslave Khalid.~
+==BJAHEI~I give you credit that you come from a formerly enslaved race, Jen'lig, but I definitely not enslave Khalid.~
 ==BKHALI~I hear your w-words, beloved. ~
-==BJAHEIR~We are bound by more than just the need to maintain the race by breeding.~
+==BJAHEI~We are bound by more than just the need to maintain the race by breeding.~
 ==BKHALI~The act itself m-may be performed with an experienced druid w-w-without needing to fear the consequences. N-now and then, I mean.~
 ==BJenli~Jen'lig maybe understand. Khalid-male not even best choice for breeding anyway.~
-==BJAHEIR~Beast...maybe an intelligent beast, but still a beast!~ DO~RunAwayFrom("CVJenlig",30)~
+==BJAHEI~Beast...maybe an intelligent beast, but still a beast!~ DO~RunAwayFrom("CVJenlig",30)~
 ==BKHALI~M-maybe it's just difference in *concepts*...~EXIT
 
 CHAIN

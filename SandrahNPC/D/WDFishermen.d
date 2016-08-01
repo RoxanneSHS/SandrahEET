@@ -185,7 +185,7 @@ IF~~ THEN WDFish5 Sirine3
 ==CVSandrJ~Whyrtman was aware of the risk he took. The fact that he perished from your act has nothing to do with murder. This is not a case for justice but for mercy.~
 ==Bimoen IF~InParty("Imoen2")~THEN~Life can be sooo unfair!! Sure we take you back home, right, <CHARNAME>? ~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Trust a male to handle critical stuff and you end in a mess. She deserves the fate she faces due to her own stupidity.  ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ Just let her perish, she isn't even worth to soil our blades with her blood. ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ Just let her perish, she isn't even worth to soil our blades with her blood. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Her kin is the threat of my sea elf brothers but her fate touches my heart. Let us take her to the sea and her home. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ To rescue the damsel and help the fishermen would be another heroic deed on the pages of the famous hero <CHARNAME>. Anything else my quill will not report. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Justice needs to be done. If only Helm would give us a sign what justice looks like in this case. ~
@@ -202,7 +202,7 @@ IF~~ THEN WDFish5 Sirine3
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ (Mumbles to herself) Will it be the god of murder who leads thy hand or the voice of reason, <CHARNAME>.~
 == BYESLI IF~ InParty("Yeslick") ~ THEN ~ Damned creature should stay in their water and not mingle with men. Throw the fish back in the pool and be done with the mess.~
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
 ==BDorn IF~ InParty("Dorn") ~ THEN ~ Be *mercyful* and kill her, mercyful towards all she may entangle next.~
 == BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendor, let's enjoy our stay and leave this damp hole, I say.~
 ==BJenli IF~ InParty("CVJenlig") ~ THEN ~Go to sleep with a mind flayer and wake up with your brain devoured. (Hiss) Only you will not wake up again. Manling too stupid for easy reasoning. Throw fish back to water, commander.~

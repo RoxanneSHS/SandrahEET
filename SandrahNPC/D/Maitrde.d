@@ -35,7 +35,7 @@ IF ~~ THEN  maitrde WDresto2
 ==BNeera IF~InParty("Neera")~THEN ~A decent meal, I already gave up hope I'd ever get one.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Do you have any Broumenard from the year... or even better... ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Thou art not aware of the presence of a mighty hero of your town, but thou shouldst recognize her.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ This whole place makes me nervous. It is completely out of balance with its fineries and luxury, but no natural beauty at all. ~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ This whole place makes me nervous. It is completely out of balance with its fineries and luxury, but no natural beauty at all. ~
 == BSANDR ~ (Sigh). Maitre de, your arrogance has not improved a bit. ~
 END
 ++ ~ Sandrah, do you think there is another place around. This thing starts to get boring.~ + WDresto3
@@ -75,9 +75,9 @@ IF ~Global("Maitre1","GLOBAL",2)~ THEN  maitrde WDresto5
 == MAITRDE IF~ InParty("ACBre") ~ THEN  ~ But, Sir, we were extremely lucky to acquire just five for the whole restaurant, the cost is immense.~ 
 ==BDorn IF~ InParty("Dorn") ~ THEN ~ Meat!~
 == MAITRDE IF~ InParty("Dorn") ~ THEN ~ Always a good choice, sir.~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ Now, what about fresh gragrk, rivvil.~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ Now, what about fresh gragrk, rivvil.~
 == MAITRDE IF~ InParty("Viconia") ~ THEN ~  And how would you like that cooked, medium, well done...~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ By Shar, incredible male...~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ By Shar, incredible male...~
 == MAITRDE IF~ InParty("Viconia") ~ THEN ~ I see, madame, a real connaisseur, of course we will serve it raw, slaughtered at the table.~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ Cook long and spice well, manling, Jen'lig not must know what dead creature was before.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Just a bit of rice and vegetables. Not too much effort for those who are doomed anyhow.~

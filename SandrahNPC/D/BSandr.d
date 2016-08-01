@@ -2374,7 +2374,7 @@ IF ~ ~ THEN BSANDR  BeregOrph31
 == BSANDR ~ And Henning?~
 == Bimoen ~Oh, bloody foolish me..'f course he needa be in that name, too. Mmh. Can't think it now, I will find a name with him TOGETHER. Oh, how wonderful - together. And then think of it, the little girls will all get pink dresses - and.. blue for the boys?~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Beware! The whole Sword Coast crowded with silly babbling pink brats. Let the road and the gutter educate them for life. Oh, gosh, no - hate to say it, but it's the first decent idea you ever had, Imoen. Anything is better than how I grew up. I make a deal with you. You get part of my booty for the project if you forget about the pink dresses, how about? ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ None of those would survive a day in the Underdark. How I have mellowed already, by Shar, but I really have sympathy for that plan. ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ None of those would survive a day in the Underdark. How I have mellowed already, by Shar, but I really have sympathy for that plan. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Two hundred and fourty years to learn how a true hero looks like. I am glad elves are granted that long time to learn.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Imoen, did you see all the books in the house. I will soon start to make an orderly list of them, you know, which ones are suitable for the different age. Your children will leave your home with an education that opens the doors of the world for them. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Helm smiles upon you, Imoen. Such is the real greatness to be sung through the Realms. ~
@@ -2390,7 +2390,7 @@ IF ~ ~ THEN BSANDR  BeregOrph31
 ==Bjenli IF~InParty("CVJenlig")~THEN~(Hiss) Hatchery for pink babbling manling girls - good training ground for drow raid. Teach warfare early to survive.~
 ==BYESLI IF~InParty("yeslick")~THEN~ No dwarfen kid would e'vr be orphaned long as one of its clan be alive. Shame for humans but 'tis best you can do to help, I like ya deed, Imoen.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis a deed seldom found in the scrolls and history book but still more important than many a battle that hath been fought.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ The balance will be restored between the lives and hopes destroyed by this crisis and the new one brought through this mansion. ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ The balance will be restored between the lives and hopes destroyed by this crisis and the new one brought through this mansion. ~
 END
 ++ ~ There goes my dream of a room in a stately mansion. At least for now. But there will be a little boy who has almost lost hope who will find it again in that house. A soothing thought.~ EXIT
 ++ ~ Just to think what a great woman has walked beside me all this time. I love you, Imoen. (Kiss her dearly.) Hm, don't tell Henning I did this, haha.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
@@ -4423,15 +4423,15 @@ IF ~ Global("JarKhalBant1","GLOBAL",1) Global("SanRomPath","GLOBAL",1)
 ~ THEN BSANDR JarBant1m
 ~ (Jaheira has chosen a quiet moment to approach Sandrah.)~
 DO ~SetGlobal("JarKhalBant1","GLOBAL",2)~
-== BJAHEIR ~ On a word please, Sandrah.~
+== BJahei ~ On a word please, Sandrah.~
 == BSANDR ~ Sure, Jaheira. By the way, it is good that you are with us now.~
-== BJAHEIR ~ Thank you, but I am not looking for compliments at the moment. Your words at the Inn and the way you avoided the topic of your father have unsettled me a bit.~
+== BJahei ~ Thank you, but I am not looking for compliments at the moment. Your words at the Inn and the way you avoided the topic of your father have unsettled me a bit.~
 == BSANDR ~ I can imagine that. But believe me, I am not trying to hide anything - just I am not confronting <CHARNAME> with everything at once. I think he has to gain some insight on his own before any of us should reveal more than necessary.~
-== BJAHEIR ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interference here? ~
+== BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interference here? ~
 == BSANDR ~ He did not send me himself, but he has surely found out by now. I can only hope he has as much trust in me as I can ask you to trust me.~
-== BJAHEIR ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
+== BJahei ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little anymore, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
-== BJAHEIR IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
+== BJahei IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ Mmmh.~
 EXIT
 
@@ -4440,15 +4440,15 @@ IF ~ Global("JarKhalBant1","GLOBAL",1) Global("SanRomPath","GLOBAL",2)
 ~ THEN BSANDR JarBant1f
 ~ (Jaheira has chosen a quiet moment to approach Sandrah.)~
 DO ~SetGlobal("JarKhalBant1","GLOBAL",2)~
-== BJAHEIR ~ On a word please, Sandrah.~
+== BJahei ~ On a word please, Sandrah.~
 == BSANDR ~ Sure, Jaheira. By the way, it is good that you are with us now.~
-== BJAHEIR ~ Thank you, but I am not looking for compliments at the moment. Your words at the Inn and the way you avoided the topic of your father have unsettled me a bit.~
+== BJahei ~ Thank you, but I am not looking for compliments at the moment. Your words at the Inn and the way you avoided the topic of your father have unsettled me a bit.~
 == BSANDR ~ I can imagine that. But believe me, I am not trying to hide anything - just I am not confronting <CHARNAME> with everything at once. I think she has to gain some insight on her own before any of us should reveal more than necessary.~
-== BJAHEIR ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interferance here? ~
+== BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interferance here? ~
 == BSANDR ~ He did not send me himself, but he has surely found out by now. I can only hope he has as much trust in me as I can ask you to trust me.~
-== BJAHEIR ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
+== BJahei ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little anymore, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
-== BJAHEIR IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
+== BJahei IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ Mmmh.~
 EXIT
 
@@ -4466,9 +4466,9 @@ DO ~SetGlobal("JarKhalBant1","GLOBAL",4)~
 == BKhali ~ True, and you yourself are the best proof of his capabilities and also the love between your parents.~
 == BSANDR ~ Not even the devilish plan of the murderous God has ever lessened father's love for my mother, he still adores her every single day. But how was she in her daily life?~
 == BKhali ~ She loved all living things, plants and animals, not like a druid does, more from her heart, if you know what I mean. And she loved to sing. Your garden at Waterdeep was always resounding with her songs. We all have lost so much with losing her...~
-== BJAHEIR IF~ InParty("Jaheira")~ THEN~ Now, you two, what are you sticking your heads together for?~
+== BJahei IF~ InParty("Jaheira")~ THEN~ Now, you two, what are you sticking your heads together for?~
 == BKhali IF~ InParty("Jaheira")~ THEN~ Oh, Jaheira, I-I-I was telling Sandrah about her m-mother.~
-== BJAHEIR IF~ InParty("Jaheira")~ THEN~ Ah, what do you know, blind romantic fool. Lovely fool.~
+== BJahei IF~ InParty("Jaheira")~ THEN~ Ah, what do you know, blind romantic fool. Lovely fool.~
 EXIT
 
 CHAIN
@@ -4493,35 +4493,35 @@ CHAIN
 IF~~THEN  BSANDR SanJAHHea1
 ~ Thank you, Jaheira, for correcting my actions. In the heat of the battle I tend to cast my healing spells almost instinctively on those I see in need. You are right, I should learn to focus my resources on those who do not have the possibilities themself.~
 DO~  SetGlobal("SanHealjah","GLOBAL",4)~
-== BJAHEIR ~ Oh, Sandrah, like so often you misunderstand me. It was not my intention to critise you at all. Although I now would agree with your self-analysis.~
+== BJahei ~ Oh, Sandrah, like so often you misunderstand me. It was not my intention to critise you at all. Although I now would agree with your self-analysis.~
 == BSANDR ~ And you mistake me as well. I have not felt critisized at all. I know I am not yet at the end of my education and I have understood your words as those of a tutor, not those of a critic. You have the experience I still lack and I am willing to learn.~
-== BJAHEIR ~ Mmh, if that is so, then well, yes. I will continue to give you my advice when I see need for it.~
+== BJahei ~ Mmh, if that is so, then well, yes. I will continue to give you my advice when I see need for it.~
 == BSANDR ~ I am not so unexperienced as not to hear the lingering mistrust in between your words, Jaheira. How did I raise your suspicion this time?~
-== BJAHEIR ~ I admit, I have not made up my mind on you yet. You are not an easy person - I mean you do so many contradicting things, some wise, some foolish from my point of view, I just cannot come to any conclusion.~
+== BJahei ~ I admit, I have not made up my mind on you yet. You are not an easy person - I mean you do so many contradicting things, some wise, some foolish from my point of view, I just cannot come to any conclusion.~
 == BSANDR ~ Like what, Jaheira?~
-== BJAHEIR ~ Please, do not insist on an answer right now. Let us move on. We should delay this talk to another day.~
+== BJahei ~ Please, do not insist on an answer right now. Let us move on. We should delay this talk to another day.~
 EXIT
 
 CHAIN
 IF ~ Global("SanJahKiv","GLOBAL",1)~ THEN BSANDR SanjahKiv
 ~ ...both of you are the result of such relationships, Jaheira. ~
 DO ~ SetGlobal("SanJahKiv","GLOBAL",2)~
-== BJAHEIR ~ True, but irrelevant for our topic. You are intelligent enough to recognise that you will never take the place of his mela en'coiamin. So what are you trying to do? And what about <CHARNAME>?~
+== BJahei ~ True, but irrelevant for our topic. You are intelligent enough to recognise that you will never take the place of his mela en'coiamin. So what are you trying to do? And what about <CHARNAME>?~
 == BSANDR ~ If there was ever a Harper than it is you, Jaheira. Always with the nose and fingers in other people's business. Listen, I do not want to insult you, I know you are the self-appointed warden of <CHARNAME>. But I care for <PRO_HIMHER> from the depth of my heart as well.~
-== BJAHEIR ~ That is not so clear from this situation you have created!~
+== BJahei ~ That is not so clear from this situation you have created!~
 == BSANDR ~ You mean to say, it is not so clear to you. And that is disturbing you. You still do not trust me.~
-== BJAHEIR ~ Mh. I was about to. But your actions seem to shift so rapidly, I cannot see clearly anymore.~
+== BJahei ~ Mh. I was about to. But your actions seem to shift so rapidly, I cannot see clearly anymore.~
 == BSANDR ~ But you think you must in order to protect <CHARNAME> and so we can run around in circles for a long time. So I think the only means to avoid that is to endure your scrutiny.~
-== BJAHEIR ~ Good. So what about Kivan?~
+== BJahei ~ Good. So what about Kivan?~
 == BSANDR ~ You are absolutely right, I will never become his mela en'coiamin. But I can be his reason to continue on this plane, as he calls it, and to make his days worth living.~
-== BJAHEIR ~ Why do you want to keep him here? Let him travel on to Arvanaith and Deheriana. A healer like you cannot really be so selfish to let him suffer on this plane just for a few nightly pleasures.~
+== BJahei ~ Why do you want to keep him here? Let him travel on to Arvanaith and Deheriana. A healer like you cannot really be so selfish to let him suffer on this plane just for a few nightly pleasures.~
 == BSANDR ~ (You can see that Sandrah is fighting very hard with herself for a moment. Jaheira instinctively has taken two steps back and grabbed her stick with both hands.)~
-== BJAHEIR ~ So?~
+== BJahei ~ So?~
 == BSANDR ~ Well, as you do not care for other people' feelings and beliefs, I will not care for yours now! I do not care if you believe in Arvanaith for yourself or not! ~
 = ~ I will not let this man go blindly into his death and self-distruction! This wonderful man who has so much more to give in his life. Forget about the legends and myths of your Arvanaith! It does not exist! The only place where he will ever see his beloved Deheriana is in his dreams. I will not let him throw his life away and go into the dark void which is all there is after death. Life is here and now - not in the afterworld whatever name you give to it.~
-== BJAHEIR ~ A-a-a-and <CHARNAME>?~
+== BJahei ~ A-a-a-and <CHARNAME>?~
 == BSANDR ~ <CHARNAME> is my mela en'coiamin, if you grant us humans such, and <PRO_HESHE> is much more understanding and knowing than you can ever imagine. Stick your chauvinistic thoughts of jealousy where you want them, but <CHARNAME> knows that I am true to <PRO_HIMHER>, even if I am trying to save the life of an elf who deserves it.~
-== BJAHEIR ~ But, Sandrah...~
+== BJahei ~ But, Sandrah...~
 == BSANDR ~ Enough! If you do not understand it by now, you never will.~
 EXIT
 
@@ -4544,30 +4544,30 @@ CHAIN
 IF ~ Global("SanHealkal","GLOBAL",9)~ THEN BSANDR SanKhaInt2
 ~ Jaheira, this look again? Just talk to me if there is some problem you have with me.~
 DO ~ SetGlobal("SanHealkal","GLOBAL",10)~
-== BJAHEIR ~ Well, hm, so what is going on there between you and my husband, Sandrah?~
+== BJahei ~ Well, hm, so what is going on there between you and my husband, Sandrah?~
 == BSANDR ~ Going on? I do not like the tone of that question at all. Jaheira, you have a wonderful and loving husband and there is nothing *going on*. I like him very much and I enjoy talking with him whenever he has some time for me.~
-== BJAHEIR ~ That is all, young one? Are you really so innocent or just so cunning?~
+== BJahei ~ That is all, young one? Are you really so innocent or just so cunning?~
 == BSANDR ~ He is your husband and he loves you exquisitly. What is so wrong if he spends a moment now and then with a young girl, even if she is charming and beautiful. Do you trust him so little?~
-== BJAHEIR ~ Hm, Sandrah, probably it is really like you say - in your eyes. But I know my husband's weaknesses well. I beg of you as a friend, please do not encourage him to think he is more than a comrade to you. ~
+== BJahei ~ Hm, Sandrah, probably it is really like you say - in your eyes. But I know my husband's weaknesses well. I beg of you as a friend, please do not encourage him to think he is more than a comrade to you. ~
 == BSANDR ~ I have done and will do nothing that may come between you and the man who loves you more than anything on Toril. I can assure you, it is not just gratitude that binds him to you. You really have not the least reason to doubt him.~
-== BJAHEIR ~ Is that really so, Sandrah? ~
+== BJahei ~ Is that really so, Sandrah? ~
 == BSANDR ~ It is - and it makes me a bit sad that you really doubt such an honest man. I have enjoyed every moment I spent with him in friendship, but now this has become bitter for me.~
 = ~ I promise you one thing, Jaheira - (Sandrah has a tear in her eye.) - I will not tell Khalid about this conversation and your mistrust in him.~
-== BJAHEIR ~ Thank you.~
+== BJahei ~ Thank you.~
 EXIT
 
 CHAIN
 IF~ Global("SanFrJah","LOCALS",1)~ THEN  BSANDR SanJAHTut
 ~ (Jaheira and Sandrah march side by side in front of you.)~
 DO~ SetGlobal("SanFrJah","LOCALS",2)~
-== BJAHEIR ~ Elminster's daughter.~
+== BJahei ~ Elminster's daughter.~
 == BSANDR ~ Sandrah is my name. Or do you still think I have not earned to be called by my own name by now, Jaheira?~
-== BJAHEIR ~ Sure, Sandrah, I had no intention to belittle you. Your name in the Realms is starting to get famous already, you may even outgrow you father's reputation in just a while.~
+== BJahei ~ Sure, Sandrah, I had no intention to belittle you. Your name in the Realms is starting to get famous already, you may even outgrow you father's reputation in just a while.~
 =~ I called you his daughter just because of that growth. The little girl I knew is on her way to something, whatever it is. And <CHARNAME>'s fate is related to you. Consequently your companions like me are involved as well.~
 == BSANDR ~ Are you concerned about that, Jaheira.~
-== BJAHEIR ~ I ought to be, don't you agree, Sandrah? It was Gorion's wish for Khalid and me to take care of his ward. Even if I must admit that <PRO_HESHE> has probably outgrown our care already.~
+== BJahei ~ I ought to be, don't you agree, Sandrah? It was Gorion's wish for Khalid and me to take care of his ward. Even if I must admit that <PRO_HESHE> has probably outgrown our care already.~
 == BSANDR ~ That would not change the fact that you are trusted and valuable companions still. And neither <PRO_HIMHER> nor me will ever be so capable as not to have need for your experienced tutalage.~
-== BJAHEIR ~ I appreciate your careful considerations, Sandrah, in an older person such would be anticipated as *wisdom*. Hm, and I appreciate your friendship, if I may call it such.~
+== BJahei ~ I appreciate your careful considerations, Sandrah, in an older person such would be anticipated as *wisdom*. Hm, and I appreciate your friendship, if I may call it such.~
 == BSANDR ~ You may call it that, Jaheira.~
 EXIT
 
@@ -4579,7 +4579,7 @@ DO ~ SetGlobal("SanHealkal","GLOBAL",12) ~
 == BSANDR ~ Then let us join our forces to persuade Jaheira to come with us and be our druid guide in the matter.~
 == BKhali ~ Well,eh...if you think so...~
 == BSANDR ~ Jaheira! Come with us, we like to walk over to the old druids place with you.~
-== BJAHEIR ~ Yes, sure.~
+== BJahei ~ Yes, sure.~
 == BSANDR ~ (Sandrah links her arms left and right with Jaheira and Khalid and the three disappear into the near trees...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
@@ -4590,9 +4590,9 @@ DO ~ SetGlobal("SanHealkal","GLOBAL",14) ~
 == BKhali ~ That was quite interesting, especially in the company of such two wonderful guides.~
 == BSANDR ~ Amazing how different things appear when seen with a druid's view. Thank you so much! (She kisses first Jaheira and then Khalid on the cheek before she twirls away.)~
 == BKhali ~ Oh, my love, I wish we could have a daughter like this...~
-== BJAHEIR ~ My lovely husband, *IF* we had a daughter one day, I agree, she should become like Sandrah...~
+== BJahei ~ My lovely husband, *IF* we had a daughter one day, I agree, she should become like Sandrah...~
 == BKhali ~ (Khalid lifts Jaheira up easily and swings her around in his strong arms.) There will be no escape and no excuse for you tonight, my sweetheart. I will assure you of my husband's duties.~
-== BJAHEIR ~ Lovely fool. (Her attemted protest is drenched in a series of kisses.) ~
+== BJahei ~ Lovely fool. (Her attemted protest is drenched in a series of kisses.) ~
 EXIT
 
 // Viconia on Male PC
@@ -4603,13 +4603,13 @@ Global("VicBant1","GLOBAL",1)
  ~ THEN BSANDR VicBant1
 ~ (Viconia puts her hand on Sandrah's shoulder causing her to stop.)~
 DO ~SetGlobal("VicBant1","GLOBAL",2) RealSetGlobalTimer("VicBantT","GLOBAL",1200)~
-== BVICONI ~ I think in your surfacer's manner I have to thank you for directing your male to take me into the group.~
+== BVicon ~ I think in your surfacer's manner I have to thank you for directing your male to take me into the group.~
 == BSANDR ~ What? Oh, I see. You are mistaken, Viconia, but he is not...I mean he is the leader of this group and I do not order him to do things. But, I councelled our leader in the question.~
-== BVICONI ~ Is that the method of you surface women to rule? Not by open commands but hidden by your undenieable charm. Clever, cunning, almost drowlike.~
+== BVicon ~ Is that the method of you surface women to rule? Not by open commands but hidden by your undenieable charm. Clever, cunning, almost drowlike.~
 == BSANDR ~ Viconia, I'm not ruling him and he is not ruling me although he is the leader of this group. We all follow him in our own free will, just like you do yourself.~
-== BVICONI ~ Ah, he is not yours - maybe I will use him then. I will have to adjust my poor brain to your twisted way of thinking or I will perish up here in the sun. But it is not easy.~
+== BVicon ~ Ah, he is not yours - maybe I will use him then. I will have to adjust my poor brain to your twisted way of thinking or I will perish up here in the sun. But it is not easy.~
 == BSANDR ~ You are welcome to ask me whenever you feel like that, Viconia.~
-== BVICONI ~ (Viconia walks on, shaking her head and mumbling in her language, obviously in deep disbelief of what she encountered.)~ EXIT
+== BVicon ~ (Viconia walks on, shaking her head and mumbling in her language, obviously in deep disbelief of what she encountered.)~ EXIT
 
 // Viconia on Female PC
 CHAIN
@@ -4618,13 +4618,13 @@ Global("VicBant2","GLOBAL",1)
  ~ THEN BSANDR VicBant2
 ~ (Viconia puts her hand on Sandrah's shoulder causing her to stop.)~
 DO ~SetGlobal("VicBant2","GLOBAL",2) RealSetGlobalTimer("VicBantT","GLOBAL",1200)~
-== BVICONI ~ I think in your surfacer's manner I have to thank you for directing <CHARNAME> to take me into the group.~
+== BVicon ~ I think in your surfacer's manner I have to thank you for directing <CHARNAME> to take me into the group.~
 == BSANDR ~ What? Oh, I see. You are mistaken, Viconia, she is the leader of this group and I do not order her to do things. But, I councelled our leader in the question.~
-== BVICONI ~ Is that the method of you surface women to climb up to rule? Not by open rivalry but hidden by your undenieable charm. Clever, cunning, almost drowlike.~
+== BVicon ~ Is that the method of you surface women to climb up to rule? Not by open rivalry but hidden by your undenieable charm. Clever, cunning, almost drowlike.~
 == BSANDR ~ Viconia, I'm not aiming to rule her and she is not ruling me although she is the leader of this group. We all follow her in our own free will, just like you do yourself.~
-== BVICONI ~ And she will not kill you for mating with her males?~
+== BVicon ~ And she will not kill you for mating with her males?~
 == BSANDR ~ Her males? They are not hers here on the surface, they have their own right to decide whom they want to love.~
-== BVICONI ~ I will have to adjust my poor brain to your twisted way of thinking or I will perish up here in the sun. But it is not easy. At least I understand that I can take one of the males for my pleasure if I want to.~
+== BVicon ~ I will have to adjust my poor brain to your twisted way of thinking or I will perish up here in the sun. But it is not easy. At least I understand that I can take one of the males for my pleasure if I want to.~
 = ~ (Viconia walks on, shaking her head and mumbling in her language, obviously in deep disbelief of what she has heard.)~ EXIT
 
 // Viconia's Piece
@@ -4634,40 +4634,40 @@ Global("VicBant3","GLOBAL",1)
  ~ THEN BSANDR VicBant3
  ~ What is that, Viconia? It stirs something in my memory, but I cannot locate it.~
 DO ~SetGlobal("VicBant3","GLOBAL",2) GiveItemCreate("Sanwi1","CVSandr",0,0,0) AddJournalEntry(@148,QUEST) RealSetGlobalTimer("VicBantT","GLOBAL",1200)~
-== BVICONI ~ Rivvin, I had hoped you could tell me what it is. My goddess made it important to me that you would get it. (Viconia hands a small piece of decorated cloth to Sandrah.)~
+== BVicon ~ Rivvin, I had hoped you could tell me what it is. My goddess made it important to me that you would get it. (Viconia hands a small piece of decorated cloth to Sandrah.)~
 == BSANDR ~ It is too small to make out much. It has a part of an ornament on it but I cannot say what it may be. It is more the pattern and the colouring in general that makes it look strangely familiar to me. Can you tell me more about it?~
-== BVICONI ~ I have it for a long time already as I found it on my first day on the surface when I escaped Menzoberranzan. A small group of travellers was attacked by bandits at nightfall. The travellers killed the bandits and hastily escaped protecting the baby children they carried.~
+== BVicon ~ I have it for a long time already as I found it on my first day on the surface when I escaped Menzoberranzan. A small group of travellers was attacked by bandits at nightfall. The travellers killed the bandits and hastily escaped protecting the baby children they carried.~
 = ~ I crept to the bandit corpses to search them for food and anything valuable as I had escaped the Underdark with just what I had on my body and was very hungry and defenseless. I somehow got this clothpiece in between the other things I took as booty.~
 = ~ I had not recognised what I had taken from the bodies out there in the dark. But when I made my camp for the night later and examined my grab I found it.~
 == BSANDR ~ What made you keep such a strange piece of cloth for such a long time? It must have been meaningless to you.~
-== BVICONI ~ Right. I first threw it away with the rest of the unuasable items I had taken from the bandits. But that very night I had a strange dream, a vision from Shar herself I believe. She told me that I would meet another priestess one day that would recognise and need the piece I have found.~
+== BVicon ~ Right. I first threw it away with the rest of the unuasable items I had taken from the bandits. But that very night I had a strange dream, a vision from Shar herself I believe. She told me that I would meet another priestess one day that would recognise and need the piece I have found.~
 == BSANDR ~ And you now believe that this priestess is me?~
-== BVICONI ~ I think so. Even though you do not know now the nature of this item, it has some resemblance for you, you feel something on it.~
+== BVicon ~ I think so. Even though you do not know now the nature of this item, it has some resemblance for you, you feel something on it.~
 == BSANDR ~ Yes, I do. But what is it. It does not look like anything a robber or bandit would carry.~
-== BVICONI ~ I was always thinking it had belonged to the travellers with the babies rather than the bandits. It was torn off during the fight and then I found it.~
+== BVicon ~ I was always thinking it had belonged to the travellers with the babies rather than the bandits. It was torn off during the fight and then I found it.~
 == BSANDR ~ Thank you, Viconia. We will find out what it is, somehow. There must be other pieces like that. And there must be a deeper reason, why some goddess thinks that I will need them.~
-== BVICONI ~ (There is a smile and a look of content on the strange but beautiful face of the drow.)~
+== BVicon ~ (There is a smile and a look of content on the strange but beautiful face of the drow.)~
 EXIT
 
 CHAIN
 IF ~ Global("VicBant3","GLOBAL",3)~  THEN BSANDR VicBant4
 ~ Viconia, one question has been on my mind for some time.~
 DO ~ SetGlobal("VicBant3","GLOBAL",4)RealSetGlobalTimer("VicBantT","GLOBAL",ONE_DAY)~
-== BVICONI ~ You always are willing to help me with my questions, abbil. I will help you with yours, if I can.~
+== BVicon ~ You always are willing to help me with my questions, abbil. I will help you with yours, if I can.~
 == BSANDR ~ We rescued you from the rage of the Flaming Fist. I believe that the ones hunting you were not really holding any evidence for the accusation against you. But were they simply after you because of your race?~
-== BVICONI ~ (Viconia is silent for a while. It is obvious that she is not sure to come to terms with her own instincts.) Sandrah, to trust another woman in Menzoberranzan would most likely be asking for your own death. With you, however it is different.~
+== BVicon ~ (Viconia is silent for a while. It is obvious that she is not sure to come to terms with her own instincts.) Sandrah, to trust another woman in Menzoberranzan would most likely be asking for your own death. With you, however it is different.~
 = ~ Yes, I kill when I must, and when I kill it is in an artful and painful way. But I am no murderer. Do I not see you do that all the time, to kill because you must?~
 == BSANDR ~ You are right, except I neither take it as an art nor do I get any satisfaction from it.~
 = ~ I understand, you had to kill, and those Fist mercenaries took the opportunity to call it murder?~
-== BVICONI ~ You are right, Sandrah. The law up here on the surface is for protection of the noble and the righteous. A drow could not even dream to receive justice from any of your courts.~
+== BVicon ~ You are right, Sandrah. The law up here on the surface is for protection of the noble and the righteous. A drow could not even dream to receive justice from any of your courts.~
 == BSANDR ~ As much as I hate to say it, Viconia, but I must admit that you are probably right. Any of our courts would sentence you to death for killing even the most depictable surfacer without giving you any chance to justify your deed. The surface has its dark sides as well, and you are an outsider and an outcast from the beginning - at least for most of those who think of themselves as good and righteous citizens. ~
-== BVICONI ~ But you do not, and <CHARNAME> does not.~
+== BVicon ~ But you do not, and <CHARNAME> does not.~
 == BSANDR ~ Maybe, because <CHARNAME> has something of an outlaw in <PRO_HIMHER>, and all that follow <PRO_HIMHER> as well. We do good to look at things in more depth and come to our own unprejudiced conclusions.~
-== BVICONI ~ I killed a man and his son who had taken me in for some time. I was desperate from my long time of running away and hiding on the surface, and I was foolish enough to believe they did not despise me for my race. But I was wrong and I blame my own weakness for it. They took me in on a remote farm but their intentions were not good. They had heard the stories of the pleasures the women of my race can provide to the males, and they just wanted me as the slave for their sick perverted lust. When they tried it - both together - these cowardly bastards - I killed them with my bare hands.~
+== BVicon ~ I killed a man and his son who had taken me in for some time. I was desperate from my long time of running away and hiding on the surface, and I was foolish enough to believe they did not despise me for my race. But I was wrong and I blame my own weakness for it. They took me in on a remote farm but their intentions were not good. They had heard the stories of the pleasures the women of my race can provide to the males, and they just wanted me as the slave for their sick perverted lust. When they tried it - both together - these cowardly bastards - I killed them with my bare hands.~
 == BSANDR ~ So it was self defense, not murder. I have to agree that none of our courts would share my personal view on it.~
-== BVICONI ~ Even worse, as the other son of the man I killed was in the Flaming Fist, and it was him who took after me for revenge for his father and brother in the name of the law.~
+== BVicon ~ Even worse, as the other son of the man I killed was in the Flaming Fist, and it was him who took after me for revenge for his father and brother in the name of the law.~
 == BSANDR ~ So he was not hunting you with the knowledge of his superiors but for a personal revenge disguised as the law. Good to know. So you are not a hunted criminal and we are not outlaws that shelter you.~
-== BVICONI ~ Sandrah, in a strange way it has felt good to tell you. I feel free now. I can be a member of our group like any other?~
+== BVicon ~ Sandrah, in a strange way it has felt good to tell you. I feel free now. I can be a member of our group like any other?~
 == BSANDR ~ Sure.~
 EXIT
 
@@ -4675,22 +4675,22 @@ CHAIN
 IF  ~Global("VicBant3","GLOBAL",5)~ THEN BSANDR VicBant5
 ~ Viconia, I have a strange sounding request for you, please do not laugh at me, my friend.~
 DO ~ SetGlobal("VicBant3","GLOBAL",6)RealSetGlobalTimer("VicBantT","GLOBAL",ONE_DAY) ~
-== BVICONI ~ Hm, calling me friend is something strange already, as are all the rest of your habbits, still. But I agree, if I am not willing to learn, I will perish on the surface. And you are someone who is worth learning from.~
+== BVicon ~ Hm, calling me friend is something strange already, as are all the rest of your habbits, still. But I agree, if I am not willing to learn, I will perish on the surface. And you are someone who is worth learning from.~
 == BSANDR ~ Viconia, this is not easy for me and I must ask you to keep it as a secret between you and me, especially to <CHARNAME>.~
-== BVICONI ~ What? Once I think I have learned something about your ways, it turns out I completely must have misunderstood it. You cunning little witch, so you are indeed starting to intrigue against <CHARNAME> and you want me on your side!~
+== BVicon ~ What? Once I think I have learned something about your ways, it turns out I completely must have misunderstood it. You cunning little witch, so you are indeed starting to intrigue against <CHARNAME> and you want me on your side!~
 == BSANDR ~ (Sandrah starts to laugh.) Viconia, I should have known I phrased it all wrong for your ears. I want to hide it from <CHARNAME>, but I intend a positive and pleasant surprise for <PRO_HIMHER>, not an intrigue for power or such.~
-== BVICONI ~ (The strange throaty noises that Viconia makes must be her version of a laughter.) Why do I feel relieved now instead of being disappointed? Looks like I am getting soft and weak already from your influence.~
+== BVicon ~ (The strange throaty noises that Viconia makes must be her version of a laughter.) Why do I feel relieved now instead of being disappointed? Looks like I am getting soft and weak already from your influence.~
 == BSANDR ~ (You swear you see Sandrah getting a bit rosy on her cheeks like a little girl.) Mmh, Viconia, I like to ask you to give me some instructions...in your art...I mean... I am not very experienced in the art of making love. I want to give <CHARNAME> a bit more of pleasure, if you know what I mean...~
-== BVICONI ~ (The last you hear is Viconia's deep throaty laughter, as she takes Sandrah some distance away from the group for her first lesson. You start to get a bit excited about what those two may do - but then - probably you will find out soon, maybe this night already?)~
+== BVicon ~ (The last you hear is Viconia's deep throaty laughter, as she takes Sandrah some distance away from the group for her first lesson. You start to get a bit excited about what those two may do - but then - probably you will find out soon, maybe this night already?)~
 EXIT
 
 CHAIN
 IF ~ Global("SanDSOTSCUW","GLOBAL",6)~ THEN BSANDR VicJarl1
 ~ Viconia, I see this rings some alarms with you.~
 DO ~ SetGlobal("SanDSOTSCUW","GLOBAL",7)~
-== BVICONI ~ This would indeed be disturbing news. The matron mothers themselves would not dare to openly or secretly act against the Bregan D'aerthe. ~
+== BVicon ~ This would indeed be disturbing news. The matron mothers themselves would not dare to openly or secretly act against the Bregan D'aerthe. ~
 == BSANDR ~ The question is, what they do here, so close to the surface of the Sword Coast and at a time where we have this crisis up there.~
-== BVICONI ~ Jarlaxle is known to take any chance for large scale bloodshed and expansion of his power he can smell. His cunning mind exceeds the fantasies of the drow females themselves.~
+== BVicon ~ Jarlaxle is known to take any chance for large scale bloodshed and expansion of his power he can smell. His cunning mind exceeds the fantasies of the drow females themselves.~
 == BSANDR ~ We can only hope that he is not in league with the Iron Throne and its leaders then.~ DO ~ AddexperienceParty(3100) ~
 EXIT
 
@@ -4699,9 +4699,9 @@ CHAIN
 IF ~ Global("SanVicInnLov","LOCALS",1)~ THEN BSANDR SanVicInn1
 ~ (Having finished your negotiations with the innkeeper, you look around the public room for your companions.)~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",2)~
-== BVICONI ~ (You see your dark elf cleric and Sandrah chat at a table at the far end of the room. You also observe that a number of males of all ages stroll nervously around your two wonderful companions like a pack of hungry wolves, giving the females glances of hardly disguised lust.)~
+== BVicon ~ (You see your dark elf cleric and Sandrah chat at a table at the far end of the room. You also observe that a number of males of all ages stroll nervously around your two wonderful companions like a pack of hungry wolves, giving the females glances of hardly disguised lust.)~
 == BSANDR ~ (You know Sandrah's expression well enough by now to know that she is fully aware of the impact that she and her drow friend have on the men in this room.)~
-== BVICONI ~ (The partly vicious, partly amused smile around Viconia's lips reveals that she has her fun from the situation as well.)~
+== BVicon ~ (The partly vicious, partly amused smile around Viconia's lips reveals that she has her fun from the situation as well.)~
 END
 ++ ~ (You stay where you are, knowing that the two are perfectly capable to handle the situation alone.) ~ + SanVicInnNo
 IF~Global("SanRompath","GLOBAL",1)~THEN REPLY ~ (You leasurely stroll over to the table feeling the envious glances of the other males as you take your seat next to the beauties.) ~ + SanVicInnYes
@@ -4711,41 +4711,41 @@ CHAIN
 IF ~~ THEN BSANDR SanVicInnNo
 ~ (After some time Sandrah looks over to you and shakes her head. She and Viconia rise and come towards you.)~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",4)~
-== BVICONI ~ A room full of male fools up to their knees in their own drooling lust and still two beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
+== BVicon ~ A room full of male fools up to their knees in their own drooling lust and still two beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
 == BSANDR ~ We can still make our choice, Viconia, I guess a wink from you will make any of them jump to your command.~
-== BVICONI ~ No, thank you, my friend. (Giving you a disappointed glance, she adds) There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
+== BVicon ~ No, thank you, my friend. (Giving you a disappointed glance, she adds) There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
 == BSANDR ~ You are right, let them have their beers and exchange their exaggerated stories of all the girls they have loved - in their fantasy.~
-== BVICONI ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
+== BVicon ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
 EXIT
 
 CHAIN
 IF ~~ THEN BSANDR SanVicInnFem
 ~ (After some time Sandrah looks over to you two and shakes her head.)~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",4)~
-== BVICONI ~ A room full of male fools up to their knees in their own drooling lust and still three beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
+== BVicon ~ A room full of male fools up to their knees in their own drooling lust and still three beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
 == BSANDR ~ We can still make our choice, Viconia, I guess a wink from you will make any of them jump to your command.~
-== BVICONI ~ No, thank you, my friend. There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
+== BVicon ~ No, thank you, my friend. There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
 == BSANDR ~ You are right, let them have their beers and exchange their exaggerated stories of all the girls they have loved - in their fantasy.~
-== BVICONI ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
+== BVicon ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
 EXIT
 
 CHAIN
 IF ~~ THEN BSANDR SanVicInnYes
 ~ Hmm, see our hero is coming to rescue his poor girls from this whole male onset.~
-== BVICONI ~ Do you think he assumes we are too weak to handle this without his boyish and pathetic attempts at heroism?~
+== BVicon ~ Do you think he assumes we are too weak to handle this without his boyish and pathetic attempts at heroism?~
 == BSANDR ~ Vicky, give him a point for at least trying it, even if his abilities are limited.~
-== BVICONI ~ Fine, I agree, he is the most acceptable tonight, even if the contest is not too hard to be the winner here.~
+== BVicon ~ Fine, I agree, he is the most acceptable tonight, even if the contest is not too hard to be the winner here.~
 END
 ++ ~ Are you two trying to mock me? Is that the way to greet your leader and protector?~ + SanVicInnYes2
 
 CHAIN
 IF ~~ THEN BSANDR SanVicInnYes2
 ~ (Sandrah gives you a most inviting smile and blows you a kiss.)~
-== BVICONI ~ (Viconia's face turns to the colour of an Avocado as her harsh rough laughter fills the room) My leader and protector...pfff. You have really won the prize, <CHARNAME>.~
+== BVicon ~ (Viconia's face turns to the colour of an Avocado as her harsh rough laughter fills the room) My leader and protector...pfff. You have really won the prize, <CHARNAME>.~
 == BSANDR ~ Gallant, charming and - funny. What a great mixture.~
-== BVICONI ~ Oh, yes, really amusing, I have to give you that. Are there maybe other qualities in this one that are worth exploring?~
+== BVicon ~ Oh, yes, really amusing, I have to give you that. Are there maybe other qualities in this one that are worth exploring?~
 == BSANDR ~ We will not find out by sitting at this table and giving these onlookers a good show...~
-== BVICONI ~ Right, come on, yalluk, you deserve the chance to show us that you can stand up to the promise you have made us with your grand entry.~
+== BVicon ~ Right, come on, yalluk, you deserve the chance to show us that you can stand up to the promise you have made us with your grand entry.~
 == BSANDR ~ (Before you realise what is going on, you have received a kiss from the left and the right while two strong and determined girls motion you in the direction of the stairs that lead to the bedrooms.) ~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
 EXIT
@@ -4754,9 +4754,9 @@ CHAIN
 IF ~Global("SanVicInnLov","LOCALS",3)~ THEN BSANDR SanVicInnYes3
 ~ Good morning, my wonderful lover.~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",6)~
-== BVICONI ~ Not too bad, rivvil, mmh, not too bad. You have earned yourself a chance to ask for my pleasures again and - maybe, just maybe, I may agree to endure your clumsy attempts once again. Choices are not too many up here on the surface.~
+== BVicon ~ Not too bad, rivvil, mmh, not too bad. You have earned yourself a chance to ask for my pleasures again and - maybe, just maybe, I may agree to endure your clumsy attempts once again. Choices are not too many up here on the surface.~
 == BSANDR ~ (Laughs and gives Viconia a kiss before she kisses you.) You must really have impressed Vicky. I have never heard her issue such a heartfelt compliment to any male before.~
-== BVICONI ~ Enough! Let's all get moving before this scene gets too silly.~
+== BVicon ~ Enough! Let's all get moving before this scene gets too silly.~
 = ~(Her agile tongue that slips into your mouth while she gives you a final kiss betrays her words. This was probably not the last night you spent with her...)~
 == BSANDR ~ Yes, let us follow our 'leader and protector' to new heroic adventures.~
 EXIT
@@ -4765,10 +4765,10 @@ CHAIN
 IF ~Global("SanVicInnLov","LOCALS",5)~ THEN BSANDR SanVicInnNo3
 ~ (Sandrah smiles at you and shakes her head as she joins you hand in hand with Viconia) A good night it was - but something was still missing.~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",6)~
-== BVICONI ~ Something or someone? (She gives you a questioning glance.)~
+== BVicon ~ Something or someone? (She gives you a questioning glance.)~
 == BSANDR IF ~Global("SanRompath","GLOBAL",1)~THEN~ (Laughs and gives Viconia a kiss before she kisses you.) You must really have impressed Vicky. I have never seen her indicating to any male before that she might have missed him.~
 == BSANDR IF ~Global("SanRompath","GLOBAL",2)~THEN~ (Laughs and gives Viconia a kiss before she kisses you.) There is much to learn from a drow if one is willing, maybe next time you will give it a try yourself?~
-== BVICONI ~ Enough! Let's all get moving before this scene gets too silly.~
+== BVicon ~ Enough! Let's all get moving before this scene gets too silly.~
 = ~(Her agile tongue that slips into your mouth while she gives you a good morning kiss betrays her words. This was probably not the last chance for you to spend a night with her...)~
 == BSANDR ~ Yes, let us follow our 'leader and protector' to new heroic adventures.~
 EXIT
@@ -4777,18 +4777,18 @@ CHAIN
 IF ~Global("SanVicInnLov","LOCALS",7)~ THEN BSANDR SanVicInnD1
 ~ (As soon as you have entered the tavern, Sandrah smiles at you in a fashion that leaves little doubt to her intend with you - right here and right now.)~
 DO ~ SetGlobal("SanVicInnLov","LOCALS",8)~
-== BVICONI ~ (A sudden pain in your earlobe makes you turn around abruptly - to look into your drow companion's grinning teeth.)~
+== BVicon ~ (A sudden pain in your earlobe makes you turn around abruptly - to look into your drow companion's grinning teeth.)~
 == BSANDR ~ A short glance at the crowd gathered in this place, especially the male part of it, has made one thing clear to us, right Vicky?~
-== BVICONI ~ (Viconia blows softly into your still hurting ear.) There is just one who is acceptable to be allowed the attempt to humour me this evening.~
+== BVicon ~ (Viconia blows softly into your still hurting ear.) There is just one who is acceptable to be allowed the attempt to humour me this evening.~
 == BSANDR ~ He is a bit better than a mere apprentice by now, Vicky, even if not yet a perfect lover.~
-== BVICONI ~ Oh, my poor surfacer friend! The choices you have are so thin up here that you settle for almost anything that is not completely unacceptable. So what - you cannot get any better, so what is there needs to serve the purpose.~
+== BVicon ~ Oh, my poor surfacer friend! The choices you have are so thin up here that you settle for almost anything that is not completely unacceptable. So what - you cannot get any better, so what is there needs to serve the purpose.~
 END
 ++ ~ Stop that immediately, you two. I AM NOT YOUR PLAYTOY! If you want a single kiss from me tonight stop treating me like that!~ + SanVicInnD2
 
 CHAIN
 IF ~~ THEN BSANDR SanVicInnD2
 ~ Vicky, you were right, anger can be a real motivation for a tired warrior like <CHARNAME>. I surrender to your will and charm to be your willing *playtoy*, take me! (She lets herself fall into your arm, purring in joy and anticipation.)~
-== BVICONI ~ I tremble before your strength, oh <CHARNAME>, hahaha. I am yours tonight but beware - better prove yourself worthy of it. (She sneaks into your other arm like the dangerous but fascinating carnivor she really is.) ~
+== BVicon ~ I tremble before your strength, oh <CHARNAME>, hahaha. I am yours tonight but beware - better prove yourself worthy of it. (She sneaks into your other arm like the dangerous but fascinating carnivor she really is.) ~
 == BSANDR ~ (With the two overwhelming beauties having seized you again in this way you are not sure about who really is in control of this situation - but then, who cares?)~
 DO ~ RestParty() ~
 EXIT
@@ -6253,7 +6253,7 @@ IF ~ Global("Santlove","GLOBAL",2) ~ THEN BSANDR SantLove21
 DO ~ SetGlobal("Santlove","GLOBAL",3) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, don't need to tell lil' ol' Imoen what those two are up to...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ All this love stuff only makes me go sick, ah let's test this Landrel guy, even though he's just a male. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ I hope she still remembers some of my lessons. I bet she does, she's a real good learner. ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ I hope she still remembers some of my lessons. I bet she does, she's a real good learner. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Pst, do not disturb this precious moment. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Closes her book of novels) Oh, when will I ever find one of those romantic heroes. Just only reading about it is not the same. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Just to think I could have gone to that room once...~
@@ -6266,7 +6266,7 @@ DO ~ SetGlobal("Santlove","GLOBAL",3) ~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~May Sune reign over this place tonight for thee to feel her spirit.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hey, ladies, there is sure another bedroom in this house to have some fun in. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ The prophesy surely spared out some intersting parts. Or mayhap some prude monks have made the respective scrolls disappear.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ And we thought we had still a child given to our care. The wheel of nature never stands still.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ And we thought we had still a child given to our care. The wheel of nature never stands still.~
 == BSANDR ~ Goodnight all, goodnight.~ DO~
 StartCutSceneMode()
                 SmallWait(4)
@@ -6289,7 +6289,7 @@ IF ~ Global("Santlove","GLOBAL",7) ~ THEN BSANDR SantLove71
 DO ~ SetGlobal("Santlove","GLOBAL",8) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, what a place. <CHARNAME>, one day we will have a home like this, just wait and see.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Hey, Landrel, loverboy, you've got quite some stamina - for a male. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ These surfacer mages are cunning. Disguised as old man with the fire of a young stallion under those mysterious robes. (Bites Landrels earlobe until some blood starts dripping. Landrel quickly casts a healing spell.) ~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ These surfacer mages are cunning. Disguised as old man with the fire of a young stallion under those mysterious robes. (Bites Landrels earlobe until some blood starts dripping. Landrel quickly casts a healing spell.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ It is good to have these precious moments of peace once in a while. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Do we have to leave already. I am not finished to read even all the titles from these tomes. There are so many I have not even found time to open at least one. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ It was good, I took the time to pay a visit to my family at the other end of town. I would introduce you to them, but they had to leave for Amn already earlier this morning.~
@@ -6302,7 +6302,7 @@ DO ~ SetGlobal("Santlove","GLOBAL",8) ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis a place filled with knowledge and wisdom in ev'ry corner. The old scrolls do not lie about your father, Sandrah.~
 ==BEDWIN  IF~ InParty("Edwin") ~ THEN ~ (The sooner we leave this cage the better...how can such a place be the home of a lovebird like her?)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~I can see that my goddess gave thee a taste of her pleasures (giggles and blushes lightly).~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ I despise the perversion of human cities. Why can people not take the example of this house to see how a symbiosis with nature can be achieved?~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ I despise the perversion of human cities. Why can people not take the example of this house to see how a symbiosis with nature can be achieved?~
 == Bjenli IF~InParty("CVJenlig")~THEN~ Jen'lig senses power that will be helpful for her mission. Manlings here are more than they show open.~
 == BSANDR ~ Let us see what my father may have found out meanwhile.~
 EXIT
@@ -6340,7 +6340,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BEDWIN IF ~InParty("Edwin") ~THEN ~ (Uh, that pink incarnation of nitwit! The gold, the power, yes, give it to a horde of babbling brats...) My leader, you will surely be wiser than to do such.~
 == BMINSC IF ~InParty("Minsc") ~THEN ~ Boo says he loves the pink little lady. You don't need to be strong as Minsc to do heroic deeds.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
 ==Bskie IF~ InParty("Skie") ~ THEN ~What a great idea!!...I mean, after we put some aside to purchase some stylish replacement for our torn wardrobe, right?~
 ==Bjenli IF ~ InParty("CVJenlig") ~ THEN ~(Hiss) Jen'lig will carry some for pink girl plan. Counselor Sandrah know real worth of treasure found here.~
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Sing a song of joy with me at the end of this long and dreadful night. With the morning and with our heroine Imoen comes hope. ~
@@ -6351,7 +6351,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Oh to bring a bit of light and hope to these poor children once more. After all, our perils make some sense this way, the moonblade is not wielded in vain. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Money not for our own bags and I stand here and fully agree to that? Some people have a way to bring out the best in us. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis an intention of the truely pure at heart. I am grateful to have found such company in perilious times. No god of murder stands a chance against a golden heart as thine, Imoen.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Imoen, be careful. As good as your intentions are, do not imbalance nature too much. Ah, forget what I just said, give me my part of the load to carry.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Imoen, be careful. As good as your intentions are, do not imbalance nature too much. Ah, forget what I just said, give me my part of the load to carry.~
 == BSANDR ~ You are wonderful, Imoen. We will find a possibility to do this. Right, <CHARNAME>?~
 END
 ++ ~ Anyway, let us take as much as we can. We will have use for it and the dead will not live again if we just let it rot here.~ EXIT
@@ -6369,7 +6369,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ We should look for books, maybe. We may find something on the ship. An instruction or so.~
 == BSANDR IF ~ !InParty("Sufinch")~ THEN~ This adventure started with a book, perhaps the ending will be found from books as well. What about that one from our poor captain? There may be others that help around that ship.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ We have smit all the evil on this island. And now we are stuck? Helm will help.~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ I should never have gone out to sea, I knew it. So here is the end of our journey. No, by Shar. We find a way, we always do.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ I should never have gone out to sea, I knew it. So here is the end of our journey. No, by Shar. We find a way, we always do.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! You foolish <PRO_RACE> never listened to me. The sea is not a friend to any dwarf. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Lathander will not forsake us, he will see our pure hearts in need.~
 == BEDWIN  IF~ InParty("Edwin") ~ THEN ~ Imbeciles! Have you taken me to this island without any return plans...(But my little clever heroine will surely find a way out of here...if she would only find a way to my bedroll as well...). What are you waiting on, <PRO_RACE>, do something!~
@@ -6379,7 +6379,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Sails and ropes. What a jungle of ropes and more ropes. All of them strong enough to hold the weight of a man, if he decides to hang himself. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hey, we are no sailors, but we have learned a bit on the way over. Someone of you must remember it still - as I do not. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis a long journey I have taken from Rashemen to this place. I know mine fate is not to end here. I will look at mine scrolls for aid.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Sandrah, a practical girl like you from a harbour town, do you not know how to sail?~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Sandrah, a practical girl like you from a harbour town, do you not know how to sail?~
 == BMINSC IF~ InParty("Minsc") ~ THEN ~ Have no fear, Boo, we will find a way to return without your fur getting wet. Our lovely Sandrah and our clever <CHARNAME> have enough knowledge for that.~
 == BSANDR ~ I know a bit about small craft with one sail. I did a trip or two as a child. But this one with all its sails and ropes is something different. Let us not be hasty, we are far out on the sea, not near the coast. It will take us three days back to the Sword Coast. ~
 END
@@ -6391,7 +6391,7 @@ IF~Global("SanDruids","cvdru0",2)~THEN BSANDR XvartSecret
 ~ The epitome of blind bigotry - if these shadow druids really love and protect nature chances are poor for the environment I love.~
 DO~SetGlobal("SanDruids","cvdru0",3)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Those are blind, misled fools who cause destruction everywhere they appear, especially to mother nature they pretend to defend.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Balance cannot be achieved by violently enforcing the one side only. Sandrah, my friend from the City of Splendor, you understand nature much better than any of those fanatics.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Balance cannot be achieved by violently enforcing the one side only. Sandrah, my friend from the City of Splendor, you understand nature much better than any of those fanatics.~
 == BMINSC IF~ InParty("Minsc") ~ THEN ~ The stench of this evil hole makes Minsc swoon and Boo has even overthrown his breakfast. Good we kicked their butts and they leave the little blue people alone now.~
 == Bfaldo IF~ InParty("Faldorn") ~ THEN ~ We have soiled this place with blood and the earth moans. They might have been mislead by those strange vapours in these caves, but are we so much better than them in what we did? ~
 END
@@ -7003,11 +7003,11 @@ CHAIN
 IF ~~ THEN BSANDR SanHealVic
 ~ But you have healers in Menzoberranzan and you yourself are one of them.~
 DO ~ SetGlobal("SanHealVic","GLOBAL",6)~
-== BVICONI ~ This is for the purpose of the battle only. To keep up the fighting power of the group you are in. Never would one use these skills to raise or heal those that were to weak to stand the battle's assault. Your selfless way is something else.~
+== BVicon ~ This is for the purpose of the battle only. To keep up the fighting power of the group you are in. Never would one use these skills to raise or heal those that were to weak to stand the battle's assault. Your selfless way is something else.~
 == BSANDR ~ You are a valuable fighter and cleric in this group and I keep you going. You are sometimes neglecting your own health in a way.~
-== BVICONI ~ Ha, some ten-days ago I would have believed you. But now I get a notion of your surfacer's ideas of comraderie and - friendship. Even if they still seem strange to me.~
+== BVicon ~ Ha, some ten-days ago I would have believed you. But now I get a notion of your surfacer's ideas of comraderie and - friendship. Even if they still seem strange to me.~
 == BSANDR ~ But you no longer reject them right away, right.~
-== BVICONI ~ It feels different, but it somehow...yes, it feels good in some twisted way. I sense you do all that without some hidden intentions that I should be cautious about. Well, let us move on, Sandrah - - (whispers) my friend?~  EXIT
+== BVicon ~ It feels different, but it somehow...yes, it feels good in some twisted way. I sense you do all that without some hidden intentions that I should be cautious about. Well, let us move on, Sandrah - - (whispers) my friend?~  EXIT
 
 // Heal Khalid
 
@@ -7077,7 +7077,7 @@ IF ~~ THEN BSANDR SanEndBG1Plot3
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ You are an amazing person and I am proud to be at your side. Today I have seen what your heritage really means. You have not just overcome it, but you have turned the power it provides you with in one used against its own evil aspects. ~
 == BSANDR IF ~InParty("B!GAVIN")~ THEN ~ These words mean a lot, Gavin. It is the support and presence of friends and loved ones that make us act this way and provide us with the confidence needed for it.~
 == Bjenli  IF~ InParty("CVJenlig") ~ THEN ~ (Hiss) Try to become weak manling god must end like this. Commander wise not to choose such path, <CHARNAME> made to destroy gods rather than become useless one.~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ It is Shar's will that I survive all these trials. I really have doubts if the drow in me would have rejected the offer of such powers so easily, still I must admit I feel relief that <CHARNAME> was able to do it.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ It is Shar's will that I survive all these trials. I really have doubts if the drow in me would have rejected the offer of such powers so easily, still I must admit I feel relief that <CHARNAME> was able to do it.~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, my fate is connected to this plane now through my love for you. I have paid my dues to <CHARNAME> and Shevarash by Tazok's death. You two take my vow today that I will follow your course whereever it will lead us. Khalreshaar be my witness. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ It sounds like history will be written where you go <CHARNAME>. The need for a witness to document all this is inevitable. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ There was no doubt to the righteousness of your path until now. You are the one to be followed to destroy any remaining threats from the evil god that has spawned you.~
@@ -7085,7 +7085,7 @@ IF ~~ THEN BSANDR SanEndBG1Plot3
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ Tempus has once more blessed our weapons against evil. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Do you see it now, <CHARNAME>? Your life will become and endless series of attempts to survive while everyone expects you to righten any wrongs in your path. Your way equals the way of a moonblade wielder, so let us continue to walk it together. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Are we sure we have taken all the valuables to make this battle profitable. ~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Gorion would be proud of you today, <CHARNAME>, as would Khalindra. (Jaheira embraces and kisses you with tears in her eyes.) ~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Gorion would be proud of you today, <CHARNAME>, as would Khalindra. (Jaheira embraces and kisses you with tears in her eyes.) ~
 EXIT
 
 //OoPah
@@ -7303,7 +7303,7 @@ END
 END
 
 
-APPEND BVICONI
+APPEND BVicon
 
 IF WEIGHT #-9 ~Global("SanHealVic","GLOBAL",5)~ THEN BEGIN VicHealed
 SAY ~ Once again you have used your remarkable skills on me, Sandrah. Again this is something that puzzles me in the usual way, rivvil. Never would such be done in the Underdark.~
@@ -7483,7 +7483,7 @@ IF~~THEN REPLY ~ Yes, that proves your condition is really bad. Sandrah! Please 
 END
 END
 
-APPEND  BJAHEIR
+APPEND  BJahei
 
 IF WEIGHT #-9  ~ Global("SanHealjah","GLOBAL",3)~ THEN BEGIN SanHealJah
 SAY ~ Thank you, Sandrah, although I guess you are well aware of the fact that I have sufficient healing skills myself. But the care for your companions and the sense of duty that is expressed through your healing acts is admirable.~
