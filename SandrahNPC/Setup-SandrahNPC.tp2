@@ -4618,6 +4618,8 @@ BEGIN
 
 EXTEND_TOP
 ~baldur.bcs~ ~SandrahNPC/BAF/baldurequiadd.baf~
+EXTEND_TOP
+~bdbaldur.bcs~ ~SandrahNPC/BAF/baldurequiadd.baf~
 
 COPY_EXISTING ~BDynah.dlg~ ~override/BDYNAH.dlg~
 COPY_EXISTING ~edwin.bcs~ ~override/edwin2.bcs~
@@ -4654,7 +4656,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~yeslick.bcs~ ~SandrahNPC/BAF/yeslickheal.baf~
 EXTEND_TOP
-~bgedwi2.bcs~ ~SandrahNPC/BAF/edwinheal.baf~
+~edwin_.bcs~ ~SandrahNPC/BAF/edwinheal.baf~
 EXTEND_TOP
 ~edwin.bcs~ ~SandrahNPC/BAF/edwinheal.baf~
 EXTEND_TOP
@@ -7831,7 +7833,7 @@ COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
 
 //_________________
 
-    COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
+/*    COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
         REPLACE_EVALUATE CASE_INSENSITIVE ~^\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)~ BEGIN
             PATCH_FOR_EACH var IN MATCH7 MATCH8 MATCH9 MATCH10 MATCH11 BEGIN
                 PATCH_IF ~%var%~ STRING_EQUAL_CASE ~N~ BEGIN
@@ -7858,7 +7860,7 @@ COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
                     END
                 BUT_ONLY
             END
-        END ~~
+        END ~~*/
         
 APPEND ~racetext.2da~
 ~GITHYANKI  152        34273      -1         72732         -1~
@@ -7918,7 +7920,7 @@ LAF sc#addWmpAre
 END
 //_________________
 
-    COPY - ~SandrahNPC/Worldmap/3520.tbl~ ~SandrahNPC/Worldmap~
+/*    COPY - ~SandrahNPC/Worldmap/3520.tbl~ ~SandrahNPC/Worldmap~
         REPLACE_EVALUATE CASE_INSENSITIVE ~^\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)~ BEGIN
             PATCH_FOR_EACH var IN MATCH7 MATCH8 MATCH9 MATCH10 MATCH11 BEGIN
                 PATCH_IF ~%var%~ STRING_EQUAL_CASE ~N~ BEGIN
@@ -7945,7 +7947,7 @@ END
                     END
                 BUT_ONLY
             END
-        END ~~
+        END ~~ */
 END
 
 //bg4200 new travel region and new entrance for bg4201
