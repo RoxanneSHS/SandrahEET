@@ -440,10 +440,10 @@ CHAIN
 IF~Global("JenMinsB","LOCALS",0) InParty("Minsc") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Minscbant
 ~More in head of rat than in head of mighty manling. Fight good but not with brain.~
 DO~ SetGlobal("JenMinsB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
-== BMINSC ~Boo is NO rat, lizard girl, he's a giant space hamster!~
+== BMINSC_ ~Boo is NO rat, lizard girl, he's a giant space hamster!~
 ==BJenli~(Hiss) Jen'lig is NO lizard, is githyanki. Githyanki planewalker travel many planes but nowhere lives *giant space hamster*. ~
 =~When say fight with your head, not mean use skull to hit enemy, mean use what inside of head - if something there.~
-== BMINSC ~We kick evil butts our way, right Boo?~
+== BMINSC_ ~We kick evil butts our way, right Boo?~
 =~Boo says, we don't yet know if Jen'lig is evil or not. We will not kick her githyanki ass...no, Boo, I will not say that, she is a githyanki GIRL after all, whatever that means.~
 ==BJenli~(Hiss) Best talk to hamster, not to man. Put hamster brain to man body and maybe good for breeding.~EXIT
 

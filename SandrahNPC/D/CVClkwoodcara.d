@@ -4,7 +4,7 @@ IF ~Global("Altalk","BG1800",4)~ THEN CVSandrJ Clakwoodcara
 DO~SetGlobal("Altalk","BG1800",5)~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Nobody will search for them...We could have had such a fate if not ol' Puffguts 'n' Gorion had taken care.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ A good training ground for the fittest to survive. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ Strange surfacer's attitude - who else but slaves are supposed to be larbouring here?~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ Strange surfacer's attitude - who else but slaves are supposed to be larbouring here?~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ My heart bursts at such injustice. Let us end this at all cost. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Even such dark facts must be recorded by true chronologer. People must know in order to prevent it from happening again. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Helm has led us here just at the right moment. Let us not stop until we have uprooted this whole place. ~
@@ -20,5 +20,5 @@ DO~SetGlobal("Altalk","BG1800",5)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ Now we are seeing the dark side of the sword coast and of thine opponents. ~
 ==CVSandrJ IF~ InParty("RH#ISRA") ~ THEN  ~ I am afraid this is just the beginning of our journey into much darker terrain (sigh).~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ I travelled land after land just to find that Thay canst be around the next corner. (Sigh).~
-== BMINSC IF ~InParty("Minsc") ~ THEN~ Grrrrh. Children as slaves - anyone as a slave. Butts will be kicked and heads will roll.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ The utmost perversion of *civilization*. I will not rest until we have destroyed this place finally. ~EXIT
+== BMINSC_ IF ~InParty("Minsc") ~ THEN~ Grrrrh. Children as slaves - anyone as a slave. Butts will be kicked and heads will roll.~
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ The utmost perversion of *civilization*. I will not rest until we have destroyed this place finally. ~EXIT

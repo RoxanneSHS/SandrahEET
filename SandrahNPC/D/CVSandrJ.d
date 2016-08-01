@@ -4845,16 +4845,16 @@ END AJANTI 5
 // Ribbons from Setta
 
 INTERJECT_COPY_TRANS X#Setta 0 SanSetRibbs
-== BMINSC IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~ I do not know about others in this party, but I will not let this opportunity pass. I'd buy one for my girl surely, good lady.~
+== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~ I do not know about others in this party, but I will not let this opportunity pass. I'd buy one for my girl surely, good lady.~
 == BDynah IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~Minsc, Minsc, you know what wouldst be said about you at home for that...~
-== BMINSC IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~They would joke about it with no end trying to bethrot me to my sweet Sandrah right away.~
+== BMINSC_ IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~They would joke about it with no end trying to bethrot me to my sweet Sandrah right away.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~So you would buy one for me then, Minsc?~
-== BMINSC IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~You know so much, Sandrah, but maybe you know not all about Rashemen customs. It is for all loved girls at the Midsummer Festival in Rashemen to wear such a ribbon in their hair, given to them by their boy. Boo would be ashamed if our girl would be seen there without our colour in her hair.~
+== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~You know so much, Sandrah, but maybe you know not all about Rashemen customs. It is for all loved girls at the Midsummer Festival in Rashemen to wear such a ribbon in their hair, given to them by their boy. Boo would be ashamed if our girl would be seen there without our colour in her hair.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~A lovely custom, even if it is neither Midsummer nor we are near Rashemen. But one needs to be prepared. So which colour do I get from my Minsc?~
-== BMINSC IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Oh, my...hm. What do you say Boo? Red, as her mouth and the colour of a rose that she is? Too blantant?~
+== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Oh, my...hm. What do you say Boo? Red, as her mouth and the colour of a rose that she is? Too blantant?~
 = ~ Yellow, like the morning sun that lights everything just like she lights our day? Or maybe green like s spring day, fresh and new like herself.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Minsc, I will only wear one, otherwise all people would think I got multiple lovers, so you have to make up your mind.~
-== BMINSC IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~There is a good reason for any of her colours. Setta, I buy that rainbow coloured one as my lady appears in a different way to me each time I look at her.~
+== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~There is a good reason for any of her colours. Setta, I buy that rainbow coloured one as my lady appears in a different way to me each time I look at her.~
 == X#SETTA IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~And each aspect is a lovely as the other, you lucky hero. Such a girl is worth to spend even the 150 Gold this rare ribbon will cost you. A rainbow ribbon is as rare as the girl you want to buy it for.~ DO ~ TakePartyGold(150)~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Thank you, my cavalier. I look ahead to the day I wear it for you at the Midsummer Festival in Rashemen jumping over the bonfire hand in hand with you. (She gives the happy warrior a kiss.)~
 ==BKIVAN IF~ InParty("Kivan")InParty("CVSandr") GlobalGT("Kivshil","GLOBAL",7) ~ THEN~I will buy a blue one for a very special girl~
@@ -5525,7 +5525,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Purses and more purses. Women and girls and more girls and more women. Where to start... ~
 == BGARRI IF~ InParty("Garrick") ~ THEN  ~ My, there is a bard's competition over there on the stage just starting. I expect you all to cheer for me! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ A welcome change from our usual life on the road. A tradition only too rare in my suffering homeland. But we canst enjoy a day if the chance appears.~
-== BMINSC IF ~InParty("Minsc") ~ THEN~ Boo has reminded Minsc about the good tradition for us fighters of Rashemen to celebrate with mead our victories.~
+== BMINSC_ IF ~InParty("Minsc") ~ THEN~ Boo has reminded Minsc about the good tradition for us fighters of Rashemen to celebrate with mead our victories.~
 == BDynah  IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Oh, I fear the worst, Minsc always gets drunk heavily on such occasions and will be unusable the next day. But he never learns.~
 == BSANDR IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Do not worry, Dynaheir. I will gladly celebrate with our courageous protector and my healing skills will help us avoid the consequences afterwards. Let everybody enjoy the day.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Blind citizens. I pity them for the arificial joys they need to install, never getting the chance of dwelling in nature's endless celebration and beauty. ~
@@ -5572,7 +5572,7 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair must have arranged this scene for us. ~
 == IF_FILE_EXISTS Bneera  IF~ InParty("Neera") ~ THEN ~ If this isn't the wildest of wild magic, I don't know.~
 == Bedwin IF~ InParty("Edwin") ~ THEN ~ (What a chance to show the princess what is really to be explored beneath the red robe - if she would once just look in my direction. A bit of splashing might help...)~
-== BMINSC IF~ InParty("Minsc") ~ THEN ~ No, Boo stays on the beach, your fur will get all wet and ruffled and you complain afterwards. And get out of the sun, It's too hot for you. What? - Yes, I command you. I do in matters I know best and you do where you have more insight, right?~
+== BMINSC_ IF~ InParty("Minsc") ~ THEN ~ No, Boo stays on the beach, your fur will get all wet and ruffled and you complain afterwards. And get out of the sun, It's too hot for you. What? - Yes, I command you. I do in matters I know best and you do where you have more insight, right?~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~Jen'Lig likes be out of disguise clothes. Water caress scales like lover should.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not look your way, eeh, and not yours of course. (Dives under water.)~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Starts to sing *In the summertime, when the weather is fine.... ~

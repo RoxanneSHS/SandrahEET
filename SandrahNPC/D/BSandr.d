@@ -2565,12 +2565,12 @@ IF ~ Global("SanBooPel","GLOBAL",1) ~ THEN BSANDR SanBoo7
 ~ Look at this.~
 DO ~ SetGlobal("SanBooPel","GLOBAL",2)~
 == Pellig ~ (Pelligram sits on her hindlegs beside Minsc and stares at Boo who is sitting on the big warrior's shoulder.)~
-== BMINSC ~ Boo likes the big cat very much, you know, Sandrah.~
+== BMinsc_ ~ Boo likes the big cat very much, you know, Sandrah.~
 == BSANDR ~ Maybe. It seems to be rather interest than hunger I sense in her.~
-== BMINSC ~ Big cat would never eat Boo. Do you not see, they are both of the same warrior spirit. They understand each other without need for words.~
+== BMinsc_ ~ Big cat would never eat Boo. Do you not see, they are both of the same warrior spirit. They understand each other without need for words.~
 == BSANDR ~ (Sandrah has moved next to Pelligram and strokes the pantheress' head gently.)~
 == Pellig ~ Purr.~
-== BMINSC ~ Boo likes Sandrah also very much. Boo says, Sandrah has a great warrior spirit herself, just like her big cat. We are all friends.~
+== BMinsc_ ~ Boo likes Sandrah also very much. Boo says, Sandrah has a great warrior spirit herself, just like her big cat. We are all friends.~
 == BSANDR ~ Yes, we are. (Sandrah gently touches Boo without Minsc objecting to it.)~
 EXIT
 
@@ -2578,33 +2578,33 @@ CHAIN
 IF ~ Global("SanBooTlk","GLOBAL",1) ~ THEN BSANDR SanBoo1
 ~ Minsc, are you on dajemma as well?~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",2)~
-== BMINSC ~ We are, Minsc and Boo. I must prove my manhood to be accepted to my berserker's lodge at home. Boo must prove nothing, he is a great warrior already.~
+== BMinsc_ ~ We are, Minsc and Boo. I must prove my manhood to be accepted to my berserker's lodge at home. Boo must prove nothing, he is a great warrior already.~
 == BSANDR ~ You are as well, Minsc. Word will get to Rashemen soon about that.~
-== BMINSC ~ Sandrah, tell us, how did you accomplish your own dajemma?~
+== BMinsc_ ~ Sandrah, tell us, how did you accomplish your own dajemma?~
 == BSANDR ~ I have not yet. Maybe being here today at <CHARNAME>'s side could be seen as my dajemma, in a way.~
-== BMINSC ~ Boo is puzzled by your words. Such a mighty fighter and great healer must have gained her approval long ago.~
+== BMinsc_ ~ Boo is puzzled by your words. Such a mighty fighter and great healer must have gained her approval long ago.~
 == BSANDR ~ In my country we do not have this habit, Minsc. It is only my own self that is on a journey to find - myself.~
-== BMINSC ~ Boo says he understands well. Boo hopes that Minsc will find the same one day - find myself.~
+== BMinsc_ ~ Boo says he understands well. Boo hopes that Minsc will find the same one day - find myself.~
 == BSANDR ~ (Sandrah has taken Minsc's hand in hers. Boo jumps from Minsc's shoulder to Sandrah's lap and back again, summersaulting with joy.) You will find yourself surely, Minsc, yourself and your way. It will not be easy, but it is never for any of us.~
-== BMINSC ~ It is not for one like you, Sandrah? Boo has heard something like that from Dynaheir as well. All pretty damsels need protection.~
+== BMinsc_ ~ It is not for one like you, Sandrah? Boo has heard something like that from Dynaheir as well. All pretty damsels need protection.~
 == BSANDR ~ I will gladly accept yours, my paladin, whenever your duty for your witch allows it.~
-== BMINSC ~ Boo says we have four eyes for two witches. That fits.~
+== BMinsc_ ~ Boo says we have four eyes for two witches. That fits.~
 == BSANDR ~ (Laughs and places a small kiss on Boo's nose.)~
-== BMINSC ~ Boo likes that.~
+== BMinsc_ ~ Boo likes that.~
 EXIT
 
 CHAIN
 IF ~ Global("SanBooTlk","GLOBAL",3) ~ THEN BSANDR SanBoo5
 ~ Minsc, my courageous warrior, hold still for a moment and let me see to your wound.~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",4) RealSetGlobalTimer("SanMinskInt","GLOBAL",1200) ~
-== BMINSC ~ Sandrah, you are always looking to help your comrades, that is nice. But it is not right to care so much for Minsc.~
+== BMinsc_ ~ Sandrah, you are always looking to help your comrades, that is nice. But it is not right to care so much for Minsc.~
 == BSANDR ~ You are hurt and I heal you, what is wrong with that?~
-== BMINSC ~ Minsc and Boo must defend the brave hearted Sandrah, not Sandrah must protect Minsc.~
+== BMinsc_ ~ Minsc and Boo must defend the brave hearted Sandrah, not Sandrah must protect Minsc.~
 == BSANDR ~ We are comrades and friends, Minsc, each of us will look and care for the other one. Each of us will provide to the other what he can best, according to his or her talents.~
-== BMINSC ~ Boo says these are wise words. Minsc and Boo will provide shield and sword for Sandrah.~
+== BMinsc_ ~ Boo says these are wise words. Minsc and Boo will provide shield and sword for Sandrah.~
 == BSANDR ~ Minsc, you already have a witch to protect. I know I can rely on you, but I do not need a guardian.~
-== BMINSC IF~!InParty("CVShau")~THEN~ Boo says you are right, I am Dynaheir's guardian by oath. But I am your protecting friend by heart's command.~
-== BMINSC IF~InParty("CVShau")~THEN~Boo says you are right, I am Shauhana's guardian now by heart as once I was Dynaheir's guardian by oath. ~
+== BMinsc_ IF~!InParty("CVShau")~THEN~ Boo says you are right, I am Dynaheir's guardian by oath. But I am your protecting friend by heart's command.~
+== BMinsc_ IF~InParty("CVShau")~THEN~Boo says you are right, I am Shauhana's guardian now by heart as once I was Dynaheir's guardian by oath. ~
 == BSANDR ~ So be it. (Sandrah places a small kiss on Boo's nose. She stand on her tiptoes and just reaches the tip of Minsc's chin for a kiss there.)~  DO ~ ForceSpell("Minsc",CLERIC_HEAL)~
 EXIT
 
@@ -2612,13 +2612,13 @@ CHAIN
 IF ~ Global("SanBooTlk","GLOBAL",5) ~ THEN BSANDR SanBoo4
 ~ Minsc, how wonderful. I will put one here in my hair.~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",6) RealSetGlobalTimer("SanMinskInt","GLOBAL",1200) ~
-== BMINSC ~ Boo says you like to wear flowers and be happy. You look even more wonderful when adorned by a nice flower.~
+== BMinsc_ ~ Boo says you like to wear flowers and be happy. You look even more wonderful when adorned by a nice flower.~
 == BSANDR ~ It is always nice for a girl to receive flowers from someone who cares for her.~
-== BMINSC ~ These are the same words that Boo has said. Boo is not only a mighty warrior but also quite a lady's man among the female space hamsters.~
+== BMinsc_ ~ These are the same words that Boo has said. Boo is not only a mighty warrior but also quite a lady's man among the female space hamsters.~
 == BSANDR ~ That is obvious, but does he have a chance to meet many of them?~
-== BMINSC ~ Uuh, Sandrah, he would not tell me of course. Gentlemen like us do not boast about the pretty damsels they rescue nor about the galant adventures we have.~
+== BMinsc_ ~ Uuh, Sandrah, he would not tell me of course. Gentlemen like us do not boast about the pretty damsels they rescue nor about the galant adventures we have.~
 == BSANDR ~ Surely not, how could I have been so dumb, my stately gentleman.~
-== BMINSC ~ I am very proud that my lady wears my flower but it is between her and me and not for display to envious people.~
+== BMinsc_ ~ I am very proud that my lady wears my flower but it is between her and me and not for display to envious people.~
 == BSANDR ~ A wonderful private secret for us to enjoy. And Boo can be trusted by us, I know.~
 EXIT
 
@@ -2626,19 +2626,19 @@ CHAIN
 IF ~ Global("SanBooTlk","GLOBAL",7) ~ THEN BSANDR SanBoo2
 ~ Is something wrong, Minsc?~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",8) RealSetGlobalTimer("SanMinskInt","GLOBAL",1200) ~
-== BMINSC ~ Sandrah, I need a healer even if I am not bleeding visibly.~
+== BMinsc_ ~ Sandrah, I need a healer even if I am not bleeding visibly.~
 == BSANDR ~ What is it? Tell me the symptoms and I am sure we can do something about it.~
-== BMINSC ~ It is ants.~
+== BMinsc_ ~ It is ants.~
 == BSANDR ~ Ants? A kind of phobia, maybe - I heard of people fearing spiders or such. Ants.~
-== BMINSC ~ Oh, no Sandrah, they are in me, in my stomach and in my head, I feel their cribbling around within me. It is very strange.~
+== BMinsc_ ~ Oh, no Sandrah, they are in me, in my stomach and in my head, I feel their cribbling around within me. It is very strange.~
 == BSANDR ~ Are they there always, Minsc, or just at special moments?~
-== BMINSC ~ They are very busy now, Sandrah, and also when I try to sleep and try to dream.~
+== BMinsc_ ~ They are very busy now, Sandrah, and also when I try to sleep and try to dream.~
 == BSANDR ~ I see, hm. Do they awake when you come near to a special person or think of that person or even when you do not see that person but miss her.~
-== BMINSC ~ Boo was right, you can help, you know the disease well - so you know the cure.~
+== BMinsc_ ~ Boo was right, you can help, you know the disease well - so you know the cure.~
 == BSANDR ~ I know the *disease*, Minsc, and I have to tell you there is no cure for it and there is no healing required, you lucky man.~
-== BMINSC ~ Then the ants will not eat me from inside?~
+== BMinsc_ ~ Then the ants will not eat me from inside?~
 == BSANDR ~ No, they will not. Enjoy the feeling, Minsc, like all people should. And ask your *lady's man* advisor Boo about it.~
-== BMINSC ~ (Blushes) I have. He told me the same just with other words. And he insisted that only you could help.~
+== BMinsc_ ~ (Blushes) I have. He told me the same just with other words. And he insisted that only you could help.~
 == BSANDR ~ Clever hamster. (She slings her arm around Minsc's neck and pulls him down to her height before kissing him.) Try this medicine, it either helps or makes things worse...~
 EXIT
 
@@ -2646,13 +2646,13 @@ CHAIN
 IF ~ Global("SanBooTlk","GLOBAL",9) ~ THEN BSANDR SanBoo3
 ~ Do we want to tell Minsc a goodnight story this time, what do you think, Boo?~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",10) RealSetGlobalTimer("SanMinskInt","GLOBAL",1200) ~
-== BMINSC ~ Boo likes to listen to your voice, Sandrah, regardless of what you tell him.~
+== BMinsc_ ~ Boo likes to listen to your voice, Sandrah, regardless of what you tell him.~
 == BSANDR ~ Is the same true for Minsc?~
-== BMINSC ~ Very much, just to be near you and to listen to you. It is not important that I often do not understand you whole.~
+== BMinsc_ ~ Very much, just to be near you and to listen to you. It is not important that I often do not understand you whole.~
 == BSANDR ~ But then you can consult Boo and maybe he knows to explain.~
-== BMINSC ~ 'tis true but it makes conversations very slow with Minsc.~
+== BMinsc_ ~ 'tis true but it makes conversations very slow with Minsc.~
 == BSANDR ~ My friend, we have a lot of time, as this venture will take long. We need not to hurry. You will find me a very patient listener.~
-== BMINSC ~ Boo says that we have noticed that already. We will make up a nice talk for our lady Sandrah to enjoy tomorrow.~
+== BMinsc_ ~ Boo says that we have noticed that already. We will make up a nice talk for our lady Sandrah to enjoy tomorrow.~
 == BSANDR ~ That sounds very nice. Goodnight, Minsc, goodnight, Boo.~
 == BDYNAH IF~ InParty("Dynaheir")~ THEN ~ Hath thou started to talk to Boo now as well, Sandrah?~
 == BSANDR IF~ InParty("Dynaheir")~ THEN ~ Dynaheir, are you aware that talking to Boo means talking to Minsc nevertheless?~
@@ -2669,39 +2669,39 @@ CHAIN
 IF~ Global("SanBooTlk","GLOBAL",11)~  THEN BSANDR SanBoo6
 ~ You seem to be more relaxed out here in nature again, my friend Minsc, even though you put on quite a good fight with the city ways.~
 DO ~ SetGlobal("SanBooTlk","GLOBAL",12) RealSetGlobalTimer("SanMinskInt","GLOBAL",900)~
-== BMINSC  ~ It must have been your soothing presence that made me stand it, Sandrah. A big city normally puts me more to unease.~
+== BMinsc_  ~ It must have been your soothing presence that made me stand it, Sandrah. A big city normally puts me more to unease.~
 == BSANDR ~ Still there is a significant difference, something to be considered for the future.~
-== BMINSC  ~ You do not need to set your trips to the city aside because of me, Sandrah. As you have seen, with you and Boo by my side I can manage everything.~
+== BMinsc_  ~ You do not need to set your trips to the city aside because of me, Sandrah. As you have seen, with you and Boo by my side I can manage everything.~
 == BSANDR ~ That is good to know. I care about how you feel as well, Minsc.~
-== BMINSC  ~ Sandrah, you are so fearless regardless of where we are. And you like it in all places. ~
+== BMinsc_  ~ Sandrah, you are so fearless regardless of where we are. And you like it in all places. ~
 == BSANDR ~ I have wonderful friends who make me feel at home and loved whereever I am. And their strong shields and swords guarantee for my safety along with my own skills. ~
-== BMINSC ~ Are Boo and Minsc also meant by this, your friends and your guardians?~
+== BMinsc_ ~ Are Boo and Minsc also meant by this, your friends and your guardians?~
 == BSANDR ~ Of course you are, at the very top of the list. (She strokes Boo gently, then her fingers move on to caress Minsc's brawny naked arm.)~
-== BMINSC ~ Hmmm. (The hamster and the fighter purr in unisono.)~
+== BMinsc_ ~ Hmmm. (The hamster and the fighter purr in unisono.)~
 EXIT
 
 CHAIN
 IF ~ Global("SanMinsDung","LOCALS",1) ~ THEN BSANDR SanBooDung
 ~ Hello, Boo?~
 DO ~ SetGlobal("SanMinsDung","LOCALS",2) RealSetGlobalTimer("SanMinskInt","GLOBAL",500) ~
-== BMINSC ~ Boo says that you are the greatest fighter we have ever seen. Fearless and beautiful. Minsc almost forgot to fight himself from all the watching.~
+== BMinsc_ ~ Boo says that you are the greatest fighter we have ever seen. Fearless and beautiful. Minsc almost forgot to fight himself from all the watching.~
 == BSANDR ~ Thank you for the compliment. I means much from the greatest space hamster warrior I know.~
-== BMINSC ~ (Laughs) Boo likes to know how many other space hamster warriors you have ever met.~
+== BMinsc_ ~ (Laughs) Boo likes to know how many other space hamster warriors you have ever met.~
 == BSANDR ~ Enough to know who is the best of them. Minsc, we make a good team together, but please do not look at me too much during the fight or I must heal all your nasty wounds afterwards.~
-== BMINSC ~ Not too bad for me, I love your healing. But you are right, I can spend all the time after the fight to admire your beauty and grace. Minsc has learned to concentrate on fighting alone when it is need to fight. Our enemies always take advantage if me and Boo do not concentrate enough.~
+== BMinsc_ ~ Not too bad for me, I love your healing. But you are right, I can spend all the time after the fight to admire your beauty and grace. Minsc has learned to concentrate on fighting alone when it is need to fight. Our enemies always take advantage if me and Boo do not concentrate enough.~
 == BSANDR ~ Fine. You do not need to bleed from your wounds if you want my company after a fight. You are always welcome, Minsc.~
-== BMINSC ~ Boo says he thinks we have just made a rendezvous with a very fine special lady.~
+== BMinsc_ ~ Boo says he thinks we have just made a rendezvous with a very fine special lady.~
 EXIT
 
 CHAIN
 IF ~ Global("SanMinsHur2","LOCALS",1) ~ THEN BSANDR SanBooHur2
 ~ Hold still, my fearless berserker, you were much too careless once again.~
 DO ~ SetGlobal("SanMinsHur2","LOCALS",2) ~
-== BMINSC ~ It hurts just a bit, but I know it will soon be good when my Sandrah starts her healing on me.~
+== BMinsc_ ~ It hurts just a bit, but I know it will soon be good when my Sandrah starts her healing on me.~
 == BSANDR ~ That is no reason to fight in such a careless way, Minsc. Do you want Boo to become an orphan?~
-== BMINSC ~ I have thought about that already. Please, Sandrah, you are my best friend and - you are my lady, aren't you. You must promise to care for Boo if really something bad ever happens to to me.~
+== BMinsc_ ~ I have thought about that already. Please, Sandrah, you are my best friend and - you are my lady, aren't you. You must promise to care for Boo if really something bad ever happens to to me.~
 == BSANDR ~ You have my word for it - but I wish dearly it will not be ever necessary. So many need you Minsc, Dynaheir, Boo, <CHARNAME>...~
-== BMINSC ~ ...and you?~
+== BMinsc_ ~ ...and you?~
 == BSANDR ~ And me! (Sandrah kisses Minsc before she busies herself with the large fighters wounds.)~ DO ~ ForceSpell("Minsc",CLERIC_HEAL)~
 EXIT
 
@@ -2709,9 +2709,9 @@ CHAIN
 IF ~ Global("SanMinsParty","LOCALS",1)~ THEN BSANDR SanBooparty
 ~ You are so jolly, Minsc, please tell me why?~
 DO ~  SetGlobal("SanMinsParty","LOCALS",2)~
-== BMINSC ~ There is a big battle ahead, Sandrah, good.~
+== BMinsc_ ~ There is a big battle ahead, Sandrah, good.~
 == BSANDR ~ Do you enjoy fighting so much, my berserker?~
-== BMINSC ~ A big battle means a big victory. And a big victory means a big celebration. And that is what Minsc and Boo look forward to tonight.~
+== BMinsc_ ~ A big battle means a big victory. And a big victory means a big celebration. And that is what Minsc and Boo look forward to tonight.~
 == BSANDR ~ But first the battle needs to be won. (In a soft voice) Try not to get hurt too much, my friend, I would like to join your happy celebration.~
 EXIT
 
@@ -2719,34 +2719,34 @@ CHAIN
 IF ~ Global("SanMinsParty","LOCALS",3)~ THEN BSANDR SanBooparty
 ~ Yes, Minsc?~
 DO ~  SetGlobal("SanMinsParty","LOCALS",4)~
-== BMINSC ~ It is not easy to say, Sandrah, but - mmh - we are so far from Rashemen and the Lodge. It would be normal to celebrate such a victory with the boys.~
+== BMinsc_ ~ It is not easy to say, Sandrah, but - mmh - we are so far from Rashemen and the Lodge. It would be normal to celebrate such a victory with the boys.~
 == BSANDR ~ Are you feeling homesick, Minsc?~
-== BMINSC ~ Not very much, I just miss the celebrations a bit. A real fighter must have some fun now and then.~
+== BMinsc_ ~ Not very much, I just miss the celebrations a bit. A real fighter must have some fun now and then.~
 == BSANDR ~ That is true. What do you propose?~
-== BMINSC ~ I am not sure. In the Lodge it is only the boys who drink and sing and tell about their deeds. But here...Sandrah you are the strongest fighter I know, but...~
+== BMinsc_ ~ I am not sure. In the Lodge it is only the boys who drink and sing and tell about their deeds. But here...Sandrah you are the strongest fighter I know, but...~
 == BSANDR ~ ...but I am a girl. That is a problem.~
-== BMINSC ~ Not a problem, no, it is wonderful. But for berserker celebration I don't know, even if the boys are far away, I don't know if it is right.~
+== BMinsc_ ~ Not a problem, no, it is wonderful. But for berserker celebration I don't know, even if the boys are far away, I don't know if it is right.~
 == BSANDR ~ (Sandrah retrieves a keg of beer from her magic parcel.) Minsc, we will solve this problem by inventing our own personal celebration ritual right now.~
-== BMINSC ~ I knew you would find a solution, you are so clever - and so brave...and so lovely.~
+== BMinsc_ ~ I knew you would find a solution, you are so clever - and so brave...and so lovely.~
 == BSANDR ~ (Lifts the keg.) To all our victories, past and future!~
-== BMINSC ~ To all our victories! (Empties the keg with one swallowing.) Do we have more, for Boo.~
+== BMinsc_ ~ To all our victories! (Empties the keg with one swallowing.) Do we have more, for Boo.~
 == BSANDR ~ Here it is. (Another keg appears.) To our brave comrades!~
-== BMINSC ~ To Boo and the heroic Sandrah! (Empties the keg with one swallowing.) The lovelelelely Sandrah...~  DO ~CreateItem("Misc97",2,0,0) DropItem("Misc97",[-1.-1]) DropItem("Misc97",[1.1]) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+== BMinsc_ ~ To Boo and the heroic Sandrah! (Empties the keg with one swallowing.) The lovelelelely Sandrah...~  DO ~CreateItem("Misc97",2,0,0) DropItem("Misc97",[-1.-1]) DropItem("Misc97",[1.1]) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
 IF ~ Global("X#MinscBoo","GLOBAL",2)~ THEN BSANDR SanBooMysHel
 ~ Yes, Boo, I did not tell our secret to Minsc even if he is my friend. A promise is a promise.~
 DO ~ SetGlobal("X#MinscBoo","GLOBAL",3) RealSetGlobalTimer("SanMinskInt","GLOBAL",500) ~
-== BMINSC ~ Sandrah, you have always known about Boo and that he is not just any hamster? And you never told me?~
+== BMinsc_ ~ Sandrah, you have always known about Boo and that he is not just any hamster? And you never told me?~
 == BSANDR ~ But, Minsc, you have always known that yourself, did you not.~
-== BMINSC ~ Hm. yes...but you know more about him, don't you?~
+== BMinsc_ ~ Hm. yes...but you know more about him, don't you?~
 == BSANDR ~ Minsc, his presence with you means that Mystra, my goddess, has great plans for you. She wants to keep you safe and sane and has sent you one of her companions to assure that.~
-== BMINSC ~ Maybe great plans with me for one of her priestesses? She wants Minsc to be with Sandrah.~
+== BMinsc_ ~ Maybe great plans with me for one of her priestesses? She wants Minsc to be with Sandrah.~
 == BSANDR ~ That may be true, at least for the time being. But maybe there is more waiting for you in the future, as I already have my own companion of Mystra with me?~
-== BMINSC ~ Pelligram? That is why Boo and the cat like each other so much, right?~
+== BMinsc_ ~ Pelligram? That is why Boo and the cat like each other so much, right?~
 == BSANDR ~ Right, Minsc, they are both companions of Mystra given to us - we care for them and they care for us on behalf of the goddess.~
-== BMINSC ~ (Minsc strokes Boo's fur softly.) Sweet little deceiver.~
+== BMinsc_ ~ (Minsc strokes Boo's fur softly.) Sweet little deceiver.~
 = ~ (He turns to Sandrah and gently touches her cheek.) Sweet little deceiver. (He leans down and kisses Sandrah's mouth.) ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -6338,7 +6338,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ If always blood and death could finally lead to an acceptable end, Imoen, Toril could be a much better place for all. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ The deeds of Imoen the Magnificent go on and on. A new chapter will be written today in her book. ~
 == BEDWIN IF ~InParty("Edwin") ~THEN ~ (Uh, that pink incarnation of nitwit! The gold, the power, yes, give it to a horde of babbling brats...) My leader, you will surely be wiser than to do such.~
-== BMINSC IF ~InParty("Minsc") ~THEN ~ Boo says he loves the pink little lady. You don't need to be strong as Minsc to do heroic deeds.~
+== BMinsc_ IF ~InParty("Minsc") ~THEN ~ Boo says he loves the pink little lady. You don't need to be strong as Minsc to do heroic deeds.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
 ==Bskie IF~ InParty("Skie") ~ THEN ~What a great idea!!...I mean, after we put some aside to purchase some stylish replacement for our torn wardrobe, right?~
@@ -6380,7 +6380,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hey, we are no sailors, but we have learned a bit on the way over. Someone of you must remember it still - as I do not. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis a long journey I have taken from Rashemen to this place. I know mine fate is not to end here. I will look at mine scrolls for aid.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Sandrah, a practical girl like you from a harbour town, do you not know how to sail?~
-== BMINSC IF~ InParty("Minsc") ~ THEN ~ Have no fear, Boo, we will find a way to return without your fur getting wet. Our lovely Sandrah and our clever <CHARNAME> have enough knowledge for that.~
+== BMinsc_ IF~ InParty("Minsc") ~ THEN ~ Have no fear, Boo, we will find a way to return without your fur getting wet. Our lovely Sandrah and our clever <CHARNAME> have enough knowledge for that.~
 == BSANDR ~ I know a bit about small craft with one sail. I did a trip or two as a child. But this one with all its sails and ropes is something different. Let us not be hasty, we are far out on the sea, not near the coast. It will take us three days back to the Sword Coast. ~
 END
 ++ ~ Let us take a look at what we find on the ship and inside and then let us reconvene a bit later, to discuss our plans.~ EXIT
@@ -6392,7 +6392,7 @@ IF~Global("SanDruids","cvdru0",2)~THEN BSANDR XvartSecret
 DO~SetGlobal("SanDruids","cvdru0",3)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Those are blind, misled fools who cause destruction everywhere they appear, especially to mother nature they pretend to defend.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Balance cannot be achieved by violently enforcing the one side only. Sandrah, my friend from the City of Splendor, you understand nature much better than any of those fanatics.~
-== BMINSC IF~ InParty("Minsc") ~ THEN ~ The stench of this evil hole makes Minsc swoon and Boo has even overthrown his breakfast. Good we kicked their butts and they leave the little blue people alone now.~
+== BMinsc_ IF~ InParty("Minsc") ~ THEN ~ The stench of this evil hole makes Minsc swoon and Boo has even overthrown his breakfast. Good we kicked their butts and they leave the little blue people alone now.~
 == Bfaldo IF~ InParty("Faldorn") ~ THEN ~ We have soiled this place with blood and the earth moans. They might have been mislead by those strange vapours in these caves, but are we so much better than them in what we did? ~
 END
 ++~ It was good to return, Sandrah. We cannot bring back the innocent ones we were forced to kill, but we have at least put an end to it.~DO~AddexperienceParty(3000)~EXIT
@@ -6612,7 +6612,7 @@ CHAIN
 IF ~Global("SanMinDyStat","LOCALS",1)~ THEN BSANDR  SanMinDyStat1
 ~ Thank you, Boo, you are a true cavalier, I hope Minsc is willing to learn well from you.~
 DO ~ SetGlobal("SanMinDyStat","LOCALS",2)~
-==BMINSC ~ Minsc learns a lot and also learns from Sandrah.~
+==BMinsc_ ~ Minsc learns a lot and also learns from Sandrah.~
 == BDYNAH ~ Sandrah, wouldst thou mind a friendly talk with me a bit aside, please.~
 == BSANDR ~ You are welcome, hathran. See you later, Minsc. (Dynaheir and Sandrah sit down some distance apart from the rest of the party.)~
 == BDYNAH ~ We have talked about thine healing skills already, my friend, and mine lack of those. Thou probably hath understood by now that I am concerned about Minsc's state and mine lacking ability to do much for him that far away from Rashemen.~
@@ -7188,7 +7188,7 @@ CHAIN
 IF ~~ THEN BSANDR SanHealboo
 ~ Dynaheir's fate is the fate of Rashemen. It is to defend her homeland and her kin in battle. She is not blessed with the skills to heal the outer wounds. But she can still heal your spirit, Minsc.~
 DO~ SetGlobal("SanHealBoo","GLOBAL",6)~
-== BMINSC~ My spirit feels the healing you give the same as my body does. You are a very good friend to Boo - and to me.~
+== BMinsc_~ My spirit feels the healing you give the same as my body does. You are a very good friend to Boo - and to me.~
 == BSANDR ~ Thank you for your gentle words, my friend.~
 EXIT
 
@@ -7319,7 +7319,7 @@ IF~~ THEN EXTERN BSANDR SanHealkal
 END
 END
 
-APPEND BMINSC
+APPEND BMinsc_
 IF WEIGHT #-9 ~Global("SanHealBoo","GLOBAL",5) ~THEN BEGIN Boohealed
 SAY ~ Thank you, Sandrah. Boo says thank you, too. You are beautiful like our witch but you can heal better.~
 IF~~ THEN EXTERN BSANDR SanHealboo
