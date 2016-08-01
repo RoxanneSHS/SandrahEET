@@ -82,11 +82,13 @@ COPY ~SandrahNPC/Shauhana/trollhe.cre~ ~override/trollhe.cre~
 APPEND
 ~gtimes.ids~ ~100 TWENTY_MINUTES~
 
-PRINT ~Check for required Installation sucessful - Can install SandrahNPC mod~
 
+PRINT ~Check for required Installation sucessful - Can install SandrahNPC mod~
   
 BEGIN
 ~Sandrah Worldmap Entries~
+
+COPY ~EET/base/worldmap.wmp~ ~override~
 
 LAF sc#addWmpAre
   INT_VAR

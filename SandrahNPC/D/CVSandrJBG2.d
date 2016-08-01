@@ -960,7 +960,7 @@ END
 
 IF~~THEN BEGIN BG2Reunion3
 SAY ~ (Sandrah takes Imoen in her arms.) My besta friend, what have they done to you? We will find the monster who did that and he will pay for it. I am so glad to see you again.~
-IF~~ THEN EXTERN  IMOENJ  BG2ReunionImo
+IF~~ THEN EXTERN  IMOEN2J  BG2ReunionImo
 END
 
 IF~~THEN BEGIN BG2Reunion4
@@ -3494,7 +3494,7 @@ DO~SetGlobal("SanRiva","LOCALS",1)~
 //========================================================================
 // APPEND Below
 //========================================================================
-APPEND IMOENJ
+APPEND IMOEN2J
 
 IF ~~ THEN BEGIN BG2ReunionImo
 SAY ~This monster man will pay for all, besta friend Sandrah, he'll feel your hammer and my fireball, I swear and swear it. But it's good that nothing could part us after all. ~
