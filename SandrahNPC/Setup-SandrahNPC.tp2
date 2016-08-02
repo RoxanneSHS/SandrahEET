@@ -7866,6 +7866,14 @@ APPEND ~racetext.2da~
 ~GITHYANKI  152        34273      -1         72732         -1~
 UNLESS ~GITHYANKI~
 
+COPY_EXISTING ~CVJenlig.CRE~ ~override~
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 53 /*Animation change*/ 
+    target = 1 /*Self*/ 
+    parameter1 = 32532 /*GITHYANKI*/ 
+    parameter2 = 2 /*Permanent change*/ 
+    timing = 9 /*Instant/Permanent*/ END
+BUT_ONLY
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/BPDemon.baf~
 END

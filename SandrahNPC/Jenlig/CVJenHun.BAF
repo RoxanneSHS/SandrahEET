@@ -369,7 +369,6 @@ IF
 THEN
 	RESPONSE #100
 		SetGlobal("CVJenSee_Enemy","LOCALS",1)
-		Shout(HELP100)
 END
 
 IF
@@ -382,8 +381,7 @@ IF
 	!Allegiance(LastSeenBy(Myself),ENEMY)
 THEN
 	RESPONSE #100
-		SetGlobalTimer("CVJenCall_For_Help","LOCALS",THREE_ROUNDS)
-		Shout(HELP101)
+	SetGlobalTimer("CVJenCall_For_Help","LOCALS",THREE_ROUNDS)
 END
 
 IF
@@ -415,21 +413,6 @@ THEN
 	RESPONSE #100
 		SetGlobal("CVJenMove_To_PC","LOCALS",0)
 		ClearActions(Myself)
-END
-
-IF
-	Global("CVJenMove_To_PC","LOCALS",0)
-	Global("CVJenSee_Enemy","LOCALS",0)
-	OR(2)
-		Heard([ENEMY],HELP100)
-		Heard([ENEMY],HELP101)
-	!Range(LastHeardBy(Myself),0)
-	!Detect(NearestEnemyOf(Myself))
-THEN
-	RESPONSE #100
-		SetGlobal("CVJenMove_To_PC","LOCALS",1)
-		SetGlobalTimer("CVJenChase_Timer","LOCALS",SIX_MINUTES)
-		MoveToObject(LastHeardBy(Myself))
 END
 
 IF

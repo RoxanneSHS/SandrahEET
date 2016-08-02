@@ -1,4 +1,42 @@
 IF
+InParty("CVSandr")
+!Dead("Sarevok")
+Global("EndOfBG1","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("EndOfBG1","GLOBAL",-1)
+END
+
+IF
+InParty("CVSandr")
+Dead("Sarevok")
+Global("EndOfBG1","GLOBAL",-1)
+Global("SanEndBG1Plot","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanEndBG1Plot","GLOBAL",1)
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",2)
+Global("EndOfBG1","GLOBAL",-1)
+!InParty("CVJenlig")
+THEN
+RESPONSE #100
+SetGlobal("EndOfBG1","GLOBAL",0)
+END
+
+IF
+Global("SanEndBG1Plot","GLOBAL",2)
+Global("EndOfBG1","GLOBAL",-1)
+InParty("CVJenlig")
+PartyHasItem("cvyensw2")
+THEN
+RESPONSE #100
+SetGlobal("EndOfBG1","GLOBAL",0)
+END
+
+IF
 Global("SarevokBehavior","GLOBAL",3)
 InParty("CVSandr")
 HPLT("Sarevok",35)
