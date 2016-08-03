@@ -88,7 +88,7 @@ PRINT ~Check for required Installation sucessful - Can install SandrahNPC mod~
 BEGIN
 ~Sandrah Worldmap Entries~
 
-COPY ~EET/base/worldmap.wmp~ ~override~
+//COPY ~EET/base/worldmap.wmp~ ~override~
 
 LAF sc#addWmpAre
   INT_VAR
@@ -7833,7 +7833,7 @@ COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
 
 //_________________
 
-/*    COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
+COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
         REPLACE_EVALUATE CASE_INSENSITIVE ~^\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)~ BEGIN
             PATCH_FOR_EACH var IN MATCH7 MATCH8 MATCH9 MATCH10 MATCH11 BEGIN
                 PATCH_IF ~%var%~ STRING_EQUAL_CASE ~N~ BEGIN
@@ -7860,18 +7860,19 @@ COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
                     END
                 BUT_ONLY
             END
-        END ~~*/
+        END ~~
         
 APPEND ~racetext.2da~
 ~GITHYANKI  152        34273      -1         72732         -1~
 UNLESS ~GITHYANKI~
 
 COPY_EXISTING ~CVJenlig.CRE~ ~override~
-    LPF ADD_CRE_EFFECT INT_VAR opcode = 53 /*Animation change*/ 
-    target = 1 /*Self*/ 
-    parameter1 = 32532 /*GITHYANKI*/ 
-    parameter2 = 2 /*Permanent change*/ 
-    timing = 9 /*Instant/Permanent*/ END
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 53 
+    target = 1 
+    parameter1 = 32532  
+    parameter2 = 2 
+    timing = 9
+END
 BUT_ONLY
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
@@ -7928,7 +7929,7 @@ LAF sc#addWmpAre
 END
 //_________________
 
-/*    COPY - ~SandrahNPC/Worldmap/3520.tbl~ ~SandrahNPC/Worldmap~
+COPY - ~SandrahNPC/Worldmap/3520.tbl~ ~SandrahNPC/Worldmap~
         REPLACE_EVALUATE CASE_INSENSITIVE ~^\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([0-9]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([A-Z0-9#_]+\)[ %TAB%]+\([0-9]+\)~ BEGIN
             PATCH_FOR_EACH var IN MATCH7 MATCH8 MATCH9 MATCH10 MATCH11 BEGIN
                 PATCH_IF ~%var%~ STRING_EQUAL_CASE ~N~ BEGIN
@@ -7955,7 +7956,7 @@ END
                     END
                 BUT_ONLY
             END
-        END ~~ */
+        END ~~ 
 END
 
 //bg4200 new travel region and new entrance for bg4201
