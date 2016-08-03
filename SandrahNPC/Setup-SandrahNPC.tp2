@@ -44,10 +44,6 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~bw0501.are~ THEN BEGIN
   FAIL  @897
 END
 
-/*ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar0086.are~ THEN BEGIN
-  FAIL  @715
-END */
-
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~C#Q05001.cre~ THEN BEGIN
   PRINT @898
 END
@@ -7874,6 +7870,18 @@ COPY_EXISTING ~CVJenlig.CRE~ ~override~
     timing = 9
 END
 BUT_ONLY
+
+COPY_EXISTING ~Imoenm.cre~ ~override~
+  ADD_KNOWN_SPELL ~SPWI104~ #0 ~wizard~
+
+COPY_EXISTING ~Imoenm.cre~ ~override~
+  ADD_MEMORIZED_SPELL ~SPWI104~ #0 ~wizard~ ( 1 )
+
+COPY_EXISTING ~Imoend.cre~ ~override~
+  ADD_KNOWN_SPELL ~SPWI104~ #0 ~wizard~
+
+COPY_EXISTING ~Imoend.cre~ ~override~
+  ADD_MEMORIZED_SPELL ~SPWI104~ #0 ~wizard~ ( 1 )
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/BPDemon.baf~
