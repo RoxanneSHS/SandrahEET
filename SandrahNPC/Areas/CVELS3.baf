@@ -15,7 +15,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanVampWDQuest","GLOBAL",14)
 CreateCreature("CVvamsh1",[355.293],12)
-CreateCreature("CVvamsh2",[333.300],18)
+CreateCreature("CVvamsh2",[333.300],10)
 END
 
 IF
