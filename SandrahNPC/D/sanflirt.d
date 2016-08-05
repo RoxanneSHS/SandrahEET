@@ -4,7 +4,7 @@ IF ~ Global("SanFlirt","GLOBAL",1)~ THEN BEGIN SanFlr10
 SAY ~ Sandrah walks beside you, lowly humming a melody you have never heard before. ~
 IF ~~ THEN REPLY~ Do you like music much, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanFlr11
 IF ~~ THEN REPLY~ I have never heard this tune before.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanFlr12
-IF ~OR(2) AreaType(DUNGEON) AreaType(OUTDOOR) ~ THEN REPLY~ Psst, Sandrah, our foes may be attracted by your tune just like I am.~ GOTO SanFlr13
+IF ~OR(2) AreaType(DUNGEON) AreaType(OUTDOOR) ~ THEN REPLY~ Psst, Sandrah, our foe may be attracted by your tune just like I am.~ GOTO SanFlr13
 END
 
 IF ~~ THEN BEGIN SanFlr11

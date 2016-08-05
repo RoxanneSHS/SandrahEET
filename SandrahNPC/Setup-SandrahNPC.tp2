@@ -7871,6 +7871,14 @@ COPY_EXISTING ~CVJenlig.CRE~ ~override~
 END
 BUT_ONLY
 
+APPEND ~PARTYAI.2DA~
+~CVSandr   NONE
+CVJenlig  NONE
+CVShau    NONE
+CVGiran   NONE
+Pellig3   NONE~
+UNLESS ~CVSandr~
+
 COPY_EXISTING ~Imoenm.cre~ ~override~
   ADD_KNOWN_SPELL ~SPWI104~ #0 ~wizard~
 
