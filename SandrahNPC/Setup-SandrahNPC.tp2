@@ -6965,6 +6965,13 @@ END ELSE BEGIN
   PRINT ~Thael not detected - skipped Sandrah addition~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~C0Sirene.cre~ THEN BEGIN
+COMPILE ~SandrahNPC/mods/C0SireneSan.d~
+PRINT ~ Sirene NPC detected - added Sandrah relationship~
+END ELSE BEGIN
+    PRINT ~ Sirene NPC not detected - skipped Sandrah relationship~
+END
+
 BEGIN
 ~Shauhana for Shadow of Amn EET~
 

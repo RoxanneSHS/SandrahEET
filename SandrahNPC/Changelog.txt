@@ -22,6 +22,7 @@ Removed Ajantis Crossmod
 Removed RE Crossmod
 
 Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
+Added Sirene NPC Crossmod
 Added Karlini rescue case
 Neera can get planar sphere if PC not mage
 Hexxat can get thieves guild if PC not thief
