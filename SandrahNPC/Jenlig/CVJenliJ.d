@@ -77,7 +77,7 @@ IF~~THEN REPLY~Surely a rare artefact but still you take pretty much effort to r
 END
 
 IF~~THEN BEGIN Murd4
-SAY~Thief disgraced my clan and city. Thief will use sword to do harm in your world, <CHARNAME>. Any misdeed of the thief stains our honor. Every astral travelers’ silver cord cut by the thief will be my failure.~
+SAY~Thief disgraced my clan and city. Thief will use sword to do harm in your world, <CHARNAME>. Any misdeed of the thief stains our honor. Every astral traveler's silver cord cut by the thief will be my failure.~
 IF~~THEN REPLY~So the sergeant involved was from Baldur's Gate. It is a big city to search for such an item.~ GOTO Murd5
 IF~~THEN REPLY~Looks like you search for a needle in a haystack. But maybe we find some clues together.~ GOTO Murd5
 END
