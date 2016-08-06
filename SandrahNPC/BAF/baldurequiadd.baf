@@ -139,3 +139,15 @@ ChangeEnemyAlly("CVJenlig",PC)
 SetGlobal("JenMadEnemy","GLOBAL",0)
 END
 
+IF
+Global("OHSMODE","GLOBAL",1)
+InParty("CVSandr")
+GlobalGT("Chapter","Global",3)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("OHSMODE","GLOBAL",7)
+ReallyForceSpellDeadRES("OHSMODE2",Player1) 
+SetInterrupt(TRUE)
+END
+

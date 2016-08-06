@@ -4616,6 +4616,8 @@ EXTEND_TOP
 ~baldur.bcs~ ~SandrahNPC/BAF/baldurequiadd.baf~
 EXTEND_TOP
 ~bdbaldur.bcs~ ~SandrahNPC/BAF/baldurequiadd.baf~
+EXTEND_TOP
+~baldur25.bcs~ ~SandrahNPC/BAF/baldurequiadd.baf~
 
 COPY_EXISTING ~BDynah.dlg~ ~override/BDYNAH.dlg~
 COPY_EXISTING ~edwin.bcs~ ~override/edwin2.bcs~
