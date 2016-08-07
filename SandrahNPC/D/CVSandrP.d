@@ -152,7 +152,7 @@ IF ~Global("SandrahJoined","GLOBAL",6)~ THEN BEGIN BG2Rejoin1
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
 =~ (She rushes into your arms and kisses you desperately.)~
 = ~ Oh, I was so afraid and terrified. Are you hurt, darling, let me heal you?~
-IF~~THEN REPLY ~ Sandrah, my sweet thing, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ GOTO BG2Rejoin2
+IF~~THEN REPLY ~ Sandrah, my sweet thing, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() SetGlobal("San0602Reunite","LOCALS",1) RealSetGlobalTimer("San0602Int","LOCALS",EIGHT_MINUTES)~ GOTO BG2Rejoin2
 END
 
 IF~~ THEN BEGIN BG2Rejoin2

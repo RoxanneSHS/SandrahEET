@@ -1,4 +1,5 @@
 IF
+Global("bd_finale","bd6100",4)
 Global("SanToBG2","GLOBAL",0)
 InParty("CVSandr")
 THEN
