@@ -31,8 +31,8 @@ IF ~~ THEN  maitrde WDresto2
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, will this discussion last forever before I can squeeze my teeth into a large hunk of cheese and bread. ~
 == BEDWIN IF~ InParty("Edwin") ~ THEN ~ (That damned stubborn cleric girl really has it all, the ways of a woman of world and taste and wealth. I have to make her my pet, damn it, she needs to be under my thumb soon.)~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Sir, with our lifestyle this may be very well our last meal ever. Even if we do not live long enough to digest it, you may start to serve now.~
-==BDorn IF~ InParty("Dorn") ~ THEN ~ Meat!~
-==BNeera IF~InParty("Neera")~THEN ~A decent meal, I already gave up hope I'd ever get one.~
+==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Meat!~
+==BNeera_ IF~InParty("Neera")~THEN ~A decent meal, I already gave up hope I'd ever get one.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Do you have any Broumenard from the year... or even better... ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Thou art not aware of the presence of a mighty hero of your town, but thou shouldst recognize her.~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ This whole place makes me nervous. It is completely out of balance with its fineries and luxury, but no natural beauty at all. ~

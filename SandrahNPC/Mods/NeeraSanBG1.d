@@ -11,58 +11,58 @@ INTERJECT_COPY_TRANS Neera_ 8 SanNeeraRW2
 END 
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraBG1B","GLOBAL",3)~THEN BNeera SanNeera1
+IF WEIGHT #-2~Global("SanNeeraBG1B","GLOBAL",3)~THEN BNeera_ SanNeera1
 ~Your goddess, Mystra, she's not a friend of the wild mages, I can imagine?~
 DO~SetGlobal("SanNeeraBG1B","GLOBAL",4)~
 ==CVSandrJ~Why? Mystra, or rather Mystril who was before her, surely was the very first wild mage herself. That was before she learned about the many side effects of such an approach and learned about methods to focus and control the energies.~
-==BNeera~Focussing and controlling as well implies the reduction of the true impact.~
+==BNeera_~Focussing and controlling as well implies the reduction of the true impact.~
 ==CVSandrJ~Yes and no - fact is, a wild mage does not really understand what the *true impact* is at all times.~
 =~It is the limited view of most people to think of the Weave only as a means to cast spells.~
 =~The Weave is in everything and around everything, it is the many energies and forces that exist around the planes.~
 =~Casting a spell is equivalent to telling the Weave to rearrange itself to create a specific effect. As a wild mage does not strictly specify the effect a randomness is created where the energy of the Weave arranges itself in some unexpected form.  ~
-==BNeera~A wild mage is channeling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
+==BNeera_~A wild mage is channeling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
 ==CVSandrJ~It is no penalty, least of all one by Mystra, it is the natural consequence of the natural use you proclaim. You use more of a power than you can handle and the power plays its own tricks on you.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraBG1B","GLOBAL",6)~THEN BNeera SanNeera2
+IF WEIGHT #-2~Global("SanNeeraBG1B","GLOBAL",6)~THEN BNeera_ SanNeera2
 ~You really use your magical skills to cook our dinner?~
 DO~SetGlobal("SanNeeraBG1B","GLOBAL",7)~
 ==CVSandrJ~Why not? Do not try to tell me that you never tried the same yourself.~
-==BNeera~Yes, I confess I did. Just my attempts with fire...I'd rather not talk about it.~
+==BNeera_~Yes, I confess I did. Just my attempts with fire...I'd rather not talk about it.~
 ==CVSandrJ~Fire does not seem to be your friend, Neera, at least not magical fire. Since your early experience in High Forest it seems to haunt you.~
-==BNeera~You can surely say that, I burned my friends and after that...you know the story already, I guess.~
+==BNeera_~You can surely say that, I burned my friends and after that...you know the story already, I guess.~
 ==CVSandrJ~This probably is the source of the problem. Your fear to cause something like that again comes in your way when you start to concentrate on your spell - the fear to fail becomes self-fulfilling.~
-==BNeera~And...?~
+==BNeera_~And...?~
 ==CVSandrJ~Come here...yes, right...now those sticks...~
-==BNeera~I feel it - hm - yes...but...~
+==BNeera_~I feel it - hm - yes...but...~
 ==CVSandrJ~No *but*, keep your mind on it, see how it builds, yes...you have it under control now...slowly...do not loose it there...yes, yes...~
-==BNeera~YES!~
+==BNeera_~YES!~
 END
 ++~*While you wait for some explosion or meteor crashing down on you, you observe instead a well-lit campfire heating the pot with your dinner. Neera smiles brightly.*~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraR","LOCALS",1)~THEN BNeera Redwi
+IF WEIGHT #-2~Global("SanNeeraR","LOCALS",1)~THEN BNeera_ Redwi
 ~For some reason you seem to despise the red wizards more than your goddess herself would allow.~
 DO~SetGlobal("SanNeeraR","LOCALS",2)~
 ==BSandr~Yes.~
-==BNeera~Willing to reveal your reason for that?~
+==BNeera_~Willing to reveal your reason for that?~
 ==BSandr~You do not love them either, willing to reveal your reason for that?~
-==BNeera~I asked first.~
+==BNeera_~I asked first.~
 ==BSandr~But you are unwilling to pay the price of admission yourself.~
-==BNeera~Maybe I wasn't *that* interested...~DO~IncrementGlobal("SanNeeraBG1B","Global",1)~
+==BNeera_~Maybe I wasn't *that* interested...~DO~IncrementGlobal("SanNeeraBG1B","Global",1)~
 ==BSandr~They obviously were at your heels when we met. Was it more than just interest in your wildmage talents?~
-==BNeera~Do you always answer questions with questions, mh, who's the one here trying to hide something?~EXIT
+==BNeera_~Do you always answer questions with questions, mh, who's the one here trying to hide something?~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraA","LOCALS",1)~THEN BNeera RedwiA
+IF WEIGHT #-2~Global("SanNeeraA","LOCALS",1)~THEN BNeera_ RedwiA
 ~You were somehow anticipating the trap of the red wizards, didn't you?~
 DO~SetGlobal("SanNeeraA","LOCALS",2)~
 ==BSandr~You want to know why I did not warn you before?~
-==BNeera~Not such an absurd thing to ask, won't you agree?~
+==BNeera_~Not such an absurd thing to ask, won't you agree?~
 ==BSandr~Setting up a trap rather than facing you open is the method of the red scum. And you did not expect them to have given up the hunt for you, right?~
-==BNeera~That is not the full answer yet.~
+==BNeera_~That is not the full answer yet.~
 ==BSandr~It is better to face them than to run away, at least this is my method of dealing with them. To run away means to give them a chance to stab your back - to face them means they need to face my hammer as well.~
-==BNeera~Yours and <CHARNAME>'s company become more valuable for me each new day.~
+==BNeera_~Yours and <CHARNAME>'s company become more valuable for me each new day.~
 =~Maybe I should say *thank you*.~EXIT
 
 EXTEND_BOTTOM Neadoy 0
@@ -84,7 +84,7 @@ END
 IF~!Dead("Neera")~THEN REPLY~I am looking for a wild mage named Adoy.~EXTERN Neadoy 2
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraBG2B","GLOBAL",1)~THEN BNeera SanNeera22
+IF WEIGHT #-2~Global("SanNeeraBG2B","GLOBAL",1)~THEN BNeera_ SanNeera22
 ~Why are you looking so depressed after our victory over the Red Wizards? I thought you hate them just as much as I do.~
 DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
 ==CVSandrJ~Even more than before, now after this experience. Yes, we have defeated them, but it is not a victory to celebrate.~
@@ -103,5 +103,5 @@ AddXPObject(Player2,11375) AddXPObject(Player3,11375) AddXPObject(Player4,11375)
 ==BNeera~I'm a wild mage, but I'm rarely as wild as you are - I hope.~
 ==Lavok~Take the planar sphere, my girl. I grant it to you, in payment for my release. Use it... use it far more wisely than I ever did... ~
 ==BNeera~With <CHARNAME>'s help I should be capable of this.~
-==BNEERA IF~InParty("CVSandr")~THEN~...and with some of Mystra's guidance when needed.~
+==BNeera IF~InParty("CVSandr")~THEN~...and with some of Mystra's guidance when needed.~
 ==Lavok~Yes, you will...~DO~Kill(Myself)~EXIT

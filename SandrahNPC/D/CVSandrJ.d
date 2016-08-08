@@ -5483,7 +5483,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Oh, mylady, if I only once had the courage and energy to act out with such strength for the good, instead of faltering in indecision.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~Sandrah, thou arest the strangest kind of paladin one can imagine - but 'tis said that your goddess is different from others as well.~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! How many beers did I have last night? Hit me with Clangeddin's Axe, I need to wake up. ~
-== IF_FILE_EXISTS BNeera IF~ InParty("Neera") ~ THEN  ~ Are you sure you're not a wild mage at heart, Sandrah?~ 
+== BNeera_ IF~ InParty("Neera") ~ THEN  ~ Are you sure you're not a wild mage at heart, Sandrah?~ 
 == BSandr IF~ InParty("Neera") ~ THEN  ~Not a wild mage but a woman, who can get wild at times.~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ What? No honest fight, no bloodshed? By Tempus, those are demons for babies. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ This victory is glorious but still just an illusion. He will come back and we all are doomed. ~
@@ -5494,10 +5494,10 @@ The mighty mage's courageous daughter,
 Trying to avoid a slaughter,
 Defeated the demon with a yell,
 Telling him to GO TO HELL.~
-== IF_FILE_EXISTS BRasaad IF~ InParty("Rasaad") ~ THEN  ~An unconventional way to solve problems, you are full of surprises, Sandrah. ~ 
+== BRasaad_ IF~ InParty("Rasaad") ~ THEN  ~An unconventional way to solve problems, you are full of surprises, Sandrah. ~ 
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ There has been nothing alike this deed in the happenings from the times of Raumathar and Narfell until present days.~ 
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ The balance is restored again that was disturbed by this presence on the surface. Let us move, <CHARNAME>. ~
-==BDorn IF~InParty("Dorn")~THEN~(Fiercely) You are fool to think you can fool a demon, woman.~
+==BDorn_ IF~InParty("Dorn")~THEN~(Fiercely) You are fool to think you can fool a demon, woman.~
 == BSANDR ~ I wonder if he will come back? ~
 EXIT
 
@@ -5570,13 +5570,13 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, little elf-at-heart, I feel like a firefly dancing on the lake in the midday sun. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ No, no I will not write anything down about this scene. ~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair must have arranged this scene for us. ~
-== IF_FILE_EXISTS Bneera  IF~ InParty("Neera") ~ THEN ~ If this isn't the wildest of wild magic, I don't know.~
+== Bneera_  IF~ InParty("Neera") ~ THEN ~ If this isn't the wildest of wild magic, I don't know.~
 == Bedwin IF~ InParty("Edwin") ~ THEN ~ (What a chance to show the princess what is really to be explored beneath the red robe - if she would once just look in my direction. A bit of splashing might help...)~
 == BMINSC_ IF~ InParty("Minsc") ~ THEN ~ No, Boo stays on the beach, your fur will get all wet and ruffled and you complain afterwards. And get out of the sun, It's too hot for you. What? - Yes, I command you. I do in matters I know best and you do where you have more insight, right?~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~Jen'Lig likes be out of disguise clothes. Water caress scales like lover should.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not look your way, eeh, and not yours of course. (Dives under water.)~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Starts to sing *In the summertime, when the weather is fine.... ~
-== IF_FILE_EXISTS Brasaad  IF~ InParty("Rasaad") ~ THEN ~ I'd prefer bathing in Selune's light but it's better than not bathing at all.~
+== Brasaad_  IF~ InParty("Rasaad") ~ THEN ~ I'd prefer bathing in Selune's light but it's better than not bathing at all.~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ What are you staring at, he! Did you think I have a fur on my skin or what. Buzzurk! ~
 == IF_FILE_EXISTS ~BB!GAVIN~ IF~ InParty("B!Gavin") ~THEN~ Just like in the good old days on the beach in Ulgoth's Beard, with Jolun and the rest. What a wonderful idea, Sandrah!~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ My, is that water warm. Try to do that in Norheim, you will be an iceblock even in summertime. ~
@@ -5584,7 +5584,7 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ The pleasure and the priviledge is mine to die by your side. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Ladies, out of the way. Let me show you my swandive! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou art never too old for a bit of healthy fun.~
-== BDorn  IF~ InParty("Dorn") ~ THEN ~Water? I don't even drink it, ever!~
+== BDorn_  IF~ InParty("Dorn") ~ THEN ~Water? I don't even drink it, ever!~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Let us encompass nature like nature made us to be. ~
 EXIT
 
@@ -5712,7 +5712,7 @@ END
 IF~~THEN REPLY~A lot of things to see and visit, I admit.~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~EXIT
 
 
-//Winski Firts Appearance
+//Winski First Appearance
 
 CHAIN
 IF ~~ THEN CVSANDRJ Winsk1Dis7

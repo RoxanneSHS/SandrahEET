@@ -1,13 +1,13 @@
 CHAIN
-IF~Global("Sanhealdorn","GLOBAL",3)~THEN BDorn  Hidmast1
+IF~Global("Sanhealdorn","GLOBAL",3)~THEN BDorn_  Hidmast1
 ~The servitude to your mistress grants you impressive powers, woman.~
 DO~SetGlobal("Sanhealdorn","GLOBAL",4)~
 ==BSandr~Servitude? Is that how you are bound to your *master*?~
-==BDorn~Bah, do your task and stop babbling.~
+==BDorn_~Bah, do your task and stop babbling.~
 ==BSandr~I would not compare my relationship to Mystra with that of a slave to her master.~
-==BDorn~We follow <CHARNAME> while serving someone else at the same time.~
+==BDorn_~We follow <CHARNAME> while serving someone else at the same time.~
 ==BSandr~If so - my alliance is revealed while yours stays hidden.~
-==BDorn~*He stares at the blade of his sword but remains silent.*~EXIT
+==BDorn_~*He stares at the blade of his sword but remains silent.*~EXIT
 
 I_C_T DornJ_ 87 SanMistDorn1
 ==CVSandrJ IF~ InParty("CVSandr")~THEN~This may reveal more about the one who suggested the question than the one he may accuse.~
