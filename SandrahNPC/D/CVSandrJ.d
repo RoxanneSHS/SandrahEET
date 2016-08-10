@@ -3439,7 +3439,7 @@ END
 IF~~THEN BEGIN SanGodtalk2
 SAY ~ Remember your history lessons in Candlekeep, <CHARNAME>, what did you learn about my goddess?~
 IF~~THEN REPLY~ Actually she was just an adventurer who slayed the former goddess during the period when the avatars walked on Toril. She took the slain one's name and cloak and was made her successor by the Overgod Ao.~ GOTO SanGodtalk3
-IF~~THEN REPLY~ She was human in the beginning. Midnight was one of the adventurers who were called by the Overgod Ao to pursue the renegade gods' avatars on Toril during the Time of Troubles. She and her partner Cyric traced Bhaal and Mystra, and in a fight of several days finally slayed them. The adventurers were later granted godhood themselves.~ GOTO SanGodtalk3
+IF~~THEN REPLY~ She was human in the beginning. Midnight was one of the adventurers who were called by the Overgod Ao to pursue the renegade gods' avatars on Toril during the Time of Troubles. She and her partner Cyric traced Bhaal and Myrkul, and in a fight of several days finally slayed them. The adventurers were later granted godhood themselves.~ GOTO SanGodtalk3
 END
 
 IF~~THEN BEGIN SanGodtalk3
