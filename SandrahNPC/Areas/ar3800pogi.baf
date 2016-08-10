@@ -24,8 +24,8 @@ IF
 Global("DruidCar","BG4900",3)
 THEN
 RESPONSE #100
-CreateCreature("KobCom02",[1586.1433],0)
-CreateCreature("KobCom02",[1644.1420],4)
+CreateCreature("KobCom01",[1586.1433],0)
+CreateCreature("KobCom01",[1644.1420],4)
 CreateCreature("kobwit01",[1712.1423],7)
 CreateCreature("cmkob03",[1748.1416],11)
 CreateCreature("elekob01",[1848.1421],14)
