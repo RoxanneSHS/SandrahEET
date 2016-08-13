@@ -7928,6 +7928,15 @@ COPY_EXISTING ~ogrema_d.cre~ ~override~
 WRITE_ASCII 0x280 ~ogrema_d~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar3520.ARE~ THEN BEGIN
+    COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~
+     APPEND_FILE ~SandrahNPC/Worldmap/3520areas.tbl~
+    COPY ~Worldmap/map_mods_links.tbl~  ~Worldmap~
+    APPEND_FILE ~SandrahNPC/Worldmap/3520.tbl~
+     COPY ~Worldmap/map_mods_trans.tra~  ~Worldmap~
+     APPEND_FILE_EVALUATE ~SandrahNPC/Worldmap/%LANGUAGE%/3520.tra~
+END
+
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar3520.ARE~ THEN BEGIN
 COPY_EXISTING ~dragpurp.cre~ ~override/dragpur2.cre~
 WRITE_ASCII 0x280 ~Dragpur2~
 COPY ~SandrahNPC\Areas/ar3520.ARE~ ~override\ar3520.ARE~

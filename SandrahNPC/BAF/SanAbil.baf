@@ -1552,6 +1552,15 @@ SetGlobal("SanResurAva","GLOBAL",1)
 END
 
 IF
+Global("SanResurAva","GLOBAL",0)
+Dead("C0Sirene")
+InPartyAllowDead("C0Sirene")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
 Global("SanResurAva","GLOBAL",1)
 !See([ENEMY])
 CombatCounter(0)

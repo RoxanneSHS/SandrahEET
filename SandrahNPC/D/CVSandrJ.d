@@ -81,13 +81,20 @@ IF~ Dead("t2val")InPartyAllowDead("t2val")~ THEN REPLY ~ I will take care of tha
 IF~ Dead("v#1whi")InPartyAllowDead("v#1whi")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our strange barbarian that is possible!~ GOTO WhitRess
 IF~ Dead("rh#isra")InPartyAllowDead("rh#isra")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sunite paladin that is possible!~ GOTO IsraRess
 IF~ Dead("neera")InPartyAllowDead("neera")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our confused wildmage that is possible!~ GOTO NeeraRess
-IF~ Dead("Rasaad")InPartyAllowDead("neera")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sun Soul monk that is possible!~ GOTO RasaadRess
+IF~ Dead("Rasaad")InPartyAllowDead("rasaad")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sun Soul monk that is possible!~ GOTO RasaadRess
+IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") Random(2,1)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO SirenRess
+IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") Random(2,2)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO RescNoPoss
 IF~~THEN REPLY ~ Please, Sandrah, we must do all for the fallen that is possible!~GOTO RescNoPoss
 END
 
 IF~~THEN BEGIN  RescNoPoss
 SAY ~I am sorry, <CHARNAME>, my examination has revealed that this one is damaged too much for Mystra's rescue here on the field. If help is still possibel we need to take the body to a temple quickly.~
 IF~~THEN DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
+END
+
+IF~~THEN BEGIN SirenRess
+SAY ~(Sandrah takes a long time to examine the tiefling before she decides on a method to apply.) This should work...~
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("C0Sirene",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ValeRess
@@ -5581,6 +5588,7 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == IF_FILE_EXISTS ~BB!GAVIN~ IF~ InParty("B!Gavin") ~THEN~ Just like in the good old days on the beach in Ulgoth's Beard, with Jolun and the rest. What a wonderful idea, Sandrah!~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ My, is that water warm. Try to do that in Norheim, you will be an iceblock even in summertime. ~
 == IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~THEN~I have not had such simple innocent pleasure since I was a little girl, yipee.~ 
+== IF_FILE_EXISTS C0SirenJ IF~ InParty("C0Sirene") ~THEN~Thank you, Lord Ilmater, I was feeling sooo dirty already. And you - look the other way...MEN!~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ The pleasure and the priviledge is mine to die by your side. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Ladies, out of the way. Let me show you my swandive! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou art never too old for a bit of healthy fun.~
