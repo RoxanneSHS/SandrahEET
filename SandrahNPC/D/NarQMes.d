@@ -77,7 +77,7 @@ IF ~ Global("SanVisitedWD","GLOBAL",1) AreaCheck("CVDRE2") Global("SanWDWelc","L
 ~ Welcome home, Misses Sandrah, this house will become alive once again, now the lady and her friends have arrived.~
 DO~SetGlobal("SanWDWelc","LOCALS",1)~
 == CVSandrJ ~ Thank you for this warm welcome, Landrel. We will be ready for one of your delicious meals in a short while. I will show my friends around a bit in the meantime.~
-== NarQMes ~ I propose to go for the garden first, (up the stairs to the left, he adds to you) as there is somebody desperately expecting your return. ~
+== NarQMes ~ I propose to go for the garden first, (up the stairs to the left, he adds to you) as there is somebody eagerly expecting your return. ~
 == CVSandrJ ~ Pelligram!~
 == NarQMes ~ Yes, Misses, the same.~
 END
@@ -87,7 +87,7 @@ END
 CHAIN
 IF ~~ THEN NarQMes WelWDPel2
 ~ It is actually a *She*, <PRO_SIRMAAM>.~
-== CVSandrJ ~ Let us go out to the garden, <CHARNAME>, I hope desperately that you will like her. I wish so much that she can come with us when we leave this time. I was not sure what I would meet, when I set out for my little adventure, so I left her at home. But now things are so much different...~
+== CVSandrJ ~ Let us go out to the garden, <CHARNAME>, I truely hope that you will like her. I wish so much that she can come with us when we leave this time. I was not sure what I would meet, when I set out for my little adventure, so I left her at home. But now things are so much different...~
 END
 ++ ~ You and your secrets. Something new is waiting for me every minute with you. (Give her a kiss.) So let us see Pelligram then.~ 
 EXIT
