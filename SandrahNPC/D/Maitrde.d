@@ -81,7 +81,7 @@ IF ~Global("Maitre1","GLOBAL",2)~ THEN  maitrde WDresto5
 == MAITRDE IF~ InParty("Viconia") ~ THEN ~ I see, madame, a real connaisseur, of course we will serve it raw, slaughtered at the table.~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ Cook long and spice well, manling, Jen'lig not must know what dead creature was before.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Just a bit of rice and vegetables. Not too much effort for those who are doomed anyhow.~
-==BNeera IF~InParty("Neera")~THEN ~(Sigh) I order something and get something else, it always happens to me - wild magic everywhere.~
+==BNeera_ IF~InParty("Neera")~THEN ~(Sigh) I order something and get something else, it always happens to me - wild magic everywhere.~
 == BSandr ~ I will try the Waterdeep Fishsoup, <CHARNAME>, I recommend it to you, this place is famous for it.~
 END
 ++ ~ And a good wine for everyone to go along with the meal.~ DO ~ SetGlobal("Katcut","GLOBAL",6) SetGlobal("Maitre1","GLOBAL",3) StartMovie("DAYNITE")~
