@@ -202,7 +202,7 @@ IF~~THEN BEGIN JenCommLu2
 SAY~Good to kill without weapon, good to eat without cutlery. (Hiss) Heritage from illithid breeding of useful slaves.~
 =~*She comes closer to show you the talon of her forefinger. You can see that it is richly ornamented with inset gold pieces and unknown small jewels.*~
 =~Also is good for showing affection to her mate. Jen'lig misses much. (Hiss)~
-IF~~THEN DO~SetGlobal("Goodfight","LOCALS",7)~EXIT
+IF~~THEN DO~SetGlobal("Goodfight","LOCALS",7) RestParty()~EXIT
 END
 
 IF~Global("Goodfight","LOCALS",8) ~THEN BEGIN JenCommLu3

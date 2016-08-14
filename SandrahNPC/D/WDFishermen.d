@@ -192,7 +192,7 @@ IF~~ THEN WDFish5 Sirine3
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ The fishermen should pay us a bit more for dealing with a sirine. To let her die would not be profitable. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ In love you sometimes must take a risk or you will regret it all your life. We must think of the fishermen and help their case.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Magic is to be mistrusted in itself. She already received her punishment. The fishermen will gain nothing if we do not bring her to the shore.~
-==BNeera IF~ InParty("Neera") ~ THEN ~All magic can go wild under certain circumstances, somebody always will have to suffer the consequences - the mage did already, no need for her to suffer as well.~ 
+==BNeera_ IF~ InParty("Neera") ~ THEN ~All magic can go wild under certain circumstances, somebody always will have to suffer the consequences - the mage did already, no need for her to suffer as well.~ 
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ The Water Queen is an angry goddess, any islander can tell you that. 'tis foolish not to bring her lost child back to her.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Any road we may chose has as little promise as the other. Does it really matter how we persue this case further... ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Nobody gains anything if we kill this sirine. And my, she has such beautiful eyes.  ~
@@ -203,7 +203,7 @@ IF~~ THEN WDFish5 Sirine3
 == BYESLI IF~ InParty("Yeslick") ~ THEN ~ Damned creature should stay in their water and not mingle with men. Throw the fish back in the pool and be done with the mess.~
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
-==BDorn IF~ InParty("Dorn") ~ THEN ~ Be *mercyful* and kill her, mercyful towards all she may entangle next.~
+==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Be *mercyful* and kill her, mercyful towards all she may entangle next.~
 == BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendor, let's enjoy our stay and leave this damp hole, I say.~
 ==BJenli IF~ InParty("CVJenlig") ~ THEN ~Go to sleep with a mind flayer and wake up with your brain devoured. (Hiss) Only you will not wake up again. Manling too stupid for easy reasoning. Throw fish back to water, commander.~
 == BSANDR~ The lovers' fate is one thing but let me remind you that my hometown will suffer from a wrong decision in this case. ~
