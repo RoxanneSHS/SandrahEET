@@ -840,7 +840,7 @@ END
 IF ~ Global("SANIMONASHINT","GLOBAL",18)~ THEN BEGIN SanMinBo1
 SAY ~ (Sandrah has taken a short halt of the group to search through the pages of her all-knowing book.)~
 IF~~THEN REPLY ~ My, why haven't we thought of that before. The book will know about the mines, of course.~ GOTO SanMinBo2
-IF~~THEN REPLY ~ We have maps and knowledge of the Sword Coast. Sometimes one is too blind to see. You have a map of the cloakwood there!~ GOTO SanMinBo2
+IF~~THEN REPLY ~ We have maps and knowledge of the Sword Coast. Sometimes one is too blind to see. You have a map of the Cloakwood there!~ GOTO SanMinBo2
 END
 
 IF~~ THEN BEGIN SanMinBo2

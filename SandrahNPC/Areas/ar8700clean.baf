@@ -1,4 +1,14 @@
 IF
+Global("Chapter","Global",3)
+GlobalLT("SANIMONASHINT","GLOBAL",19)
+InParty("Imoen2")
+Dead("Tazok")
+THEN
+RESPONSE #100
+SetGlobal("SANIMONASHINT","GLOBAL",19)
+END
+
+IF
 GlobalGT("Chapter","GLOBAL",3)
 InMyArea("teven")
 THEN
