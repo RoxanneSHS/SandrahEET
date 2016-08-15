@@ -10,6 +10,7 @@ RESPONSE #100
 ActionOverride("CVSandr",CreateItem("sanparc",0,0,0))
 ActionOverride("CVSandr",CreateItem("sanbook",0,0,0))
 SetGlobal("SanItmBG2","GLOBAL",3)
+SetGlobal("A7-Cutscene","ar0602",11)
 SetGlobal("EntJar1","AR0602",2)
 Continue()
 END
