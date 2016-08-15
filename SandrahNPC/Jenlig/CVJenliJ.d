@@ -115,7 +115,7 @@ END
 
 IF~~THEN BEGIN MulShe5
 SAY~Horvok story says that six robbed and killed wounded marshall for sword he carried. Men is cadre in large organisation in Baldur town. Detection cannot scrutinize them, hidden by mighty dark shielding, same shielding as Mulahey cave.~
-=~<CHARNAME> commander follow trail of foes, Jen'lig follows commander. We hunt same cadre.~
+=~<CHARNAME> commander follow trail of foe, Jen'lig follows commander. We hunt same cadre.~
 IF~~THEN REPLY~So far you have proven yourself loyal and useful, so let's continue.~ EXIT
 IF~~THEN REPLY~Looks like this is a valid thing to do, we're more efficient in union than separate.~ EXIT
 IF~~THEN REPLY~You use me - I use you. Githyanki friendship defined in a  nutshell.~EXIT
