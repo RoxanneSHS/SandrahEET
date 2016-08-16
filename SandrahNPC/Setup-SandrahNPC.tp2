@@ -6967,6 +6967,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~C0Sirene.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/mods/C0SireneSan.d~
+EXTEND_TOP ~C0Sirene.bcs~ ~SandrahNPC/mods/C0SireneSan.baf~
 PRINT ~ Sirene NPC detected - added Sandrah relationship~
 END ELSE BEGIN
     PRINT ~ Sirene NPC not detected - skipped Sandrah relationship~

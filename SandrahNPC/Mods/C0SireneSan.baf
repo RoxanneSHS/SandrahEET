@@ -1,0 +1,33 @@
+IF
+Global("SanC0SirB","Global",1) 
+AreaCheck("CVNar2")
+See("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanC0SirB","Global",2)
+END
+
+IF
+Global("SanC0SirB","Global",3)
+Global("Chapter","Global",4)
+!AreaCheck("bg1900")
+AreaType(OUTDOOR)
+THEN
+RESPONSE #100
+SetGlobal("SanC0SirB","Global",4)
+END
+
+IF
+OR(2)
+Global("SanC0SirB","Global",2)
+Global("SanC0SirB","Global",4)
+!See([ENEMY])
+See("CVSandr")
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+CombatCounter(0)
+THEN
+RESPONSE #100
+MoveToObject("CVSandr")
+StartDialogNoSet("C0Sirene")
+END
