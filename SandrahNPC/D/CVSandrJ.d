@@ -1290,7 +1290,7 @@ END
 IF ~~ THEN BEGIN SanOrDiId3
 SAY ~ Very good, <CHARNAME>.~
 = ~ The scout who carried and wrote this journal was from Rashemen. He mentions his master, an Orloth. (You bite on your lips not to interrupt Sandrah.)~
-= ~ The death of this man and the last entries into his diary date to the time roughly around our birth, at the end of the Times of Trouble.~
+= ~ The death of this man and the last entries into his diary date to the time roughly around our birth, at the end of the Time of Troubles.~
 = ~ In the mission from the Orloth, the man was following a group of travellers across the Sword Coast. Those travellers where trying to cover their path because of something they were carrying.~
 IF~GlobalGT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ I will be damned if this Orloth is not the same one that made his strange assault on us!~ GOTO SanOrDiId4
 IF~GlobalLT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ An Orloth, a male Rashemen mage? How does he fit into the picture? ~ GOTO SanOrDiId4
@@ -3361,7 +3361,7 @@ IF~ !Global("ItemWerDag","GLOBAL",1)~THEN REPLY ~ If we could only find such a t
 END
 
 IF~~THEN BEGIN SanBhaalRev1
-SAY ~ You know the lore of the Times of Trouble well, <CHARNAME>, as it is preserved at Candlekeep where you grew up with it. When talking of the Gods that stole the Tablets of Fate from Ao you have to free yourself of our mortal views of time and space, which did not exist for them outside of their mortal avatar.
+SAY ~ You know the lore of the Time of Troubles well, <CHARNAME>, as it is preserved at Candlekeep where you grew up with it. When talking of the Gods that stole the Tablets of Fate from Ao you have to free yourself of our mortal views of time and space, which did not exist for them outside of their mortal avatar.
 It is thus that Bhaal was aware of his coming death and he took his preparation in putting his seed into women of various races and at different times for them to be awakened from beyond his grave and rise again in his name. This part you know well from Alaundo's writings. ~
 =~ But for the moment let us concentrate on those four adventurers sent out by AO.~
 IF ~~ THEN REPLY ~ Adon, a cleric of Sune, Cyric, Kelemvor, and Midnight were successful in finding the Tablets and returning them to Ao. Three of that company, excepting only Adon, were raised to godhood in place of the slain gods - Bane, Bhaal, Myrkul and Mystra.
@@ -3873,7 +3873,7 @@ IF ~~ THEN REPLY ~ And this Sarevok was one of them?~ GOTO BSHunt3
 END
 
 IF ~~ THEN BEGIN BSHunt3
-SAY ~ Yes. A young man, about your own age, so born at the Times of Trouble when Bhaal spread his seed over Faerun. He showed enourmous physical and mental powers early on. But then all of a sudden he disappeared without a trace. My suspicion is now, that this Orloth we encountered finally found him.~
+SAY ~ Yes. A young man, about your own age, so born at the Time of Troubles when Bhaal spread his seed over Faerun. He showed enourmous physical and mental powers early on. But then all of a sudden he disappeared without a trace. My suspicion is now, that this Orloth we encountered finally found him.~
 IF ~~ THEN REPLY ~ So like you told earlier, this Sarevok and his Bhaal powers are misused by this strange Rashemen wizard - but how does that fit to Gorion's death, his hunting us and finally the whole iron crisis?~ GOTO BSHunt4
 END
 
@@ -4299,7 +4299,7 @@ IF ~~ THEN REPLY ~ Why should Ao do such - I mean if anyone can guess at all why
 END
 
 IF ~~ THEN BEGIN SanMysSucc3
-SAY ~ Hm. Remember that Ao chose humans during the Times of Trouble to aid him against the renegade gods. With Mystra's role to rule over the Weave while all the gods in one way or another require access to that source of power at the same time, Ao might have followed a similar concept. Instead of giving one of the other celestials that advantage over all the others, he tasked a *mere* human with it, trusting her more than any other god.~
+SAY ~ Hm. Remember that Ao chose humans during the Time of Troubles to aid him against the renegade gods. With Mystra's role to rule over the Weave while all the gods in one way or another require access to that source of power at the same time, Ao might have followed a similar concept. Instead of giving one of the other celestials that advantage over all the others, he tasked a *mere* human with it, trusting her more than any other god.~
 IF ~~ THEN REPLY ~ But why?~ GOTO SanMysSucc4
 END
 
@@ -4326,7 +4326,7 @@ END
 
 IF ~~ THEN BEGIN SanMysSucc8
 SAY ~ (This time Sandrah does not hesitate to answer.) To be honest, I do not know.~
-= ~ See, Narvantial's original studies and papers have not been seen since the Times of Trouble. Nothing of the evidence he may have had for his theory is known. All that is left is the fact that in conclusion from his findings he could foresay that my grandmother Midnight would be the next incarnation of Mystra. Why and how he came to that conclusion is unknown, as well as it remains unknown if the same thing had in deed ever happened in previous times. Which of course means that we have no evidence that it will happen again in the future.~
+= ~ See, Narvantial's original studies and papers have not been seen since the Time of Troubles. Nothing of the evidence he may have had for his theory is known. All that is left is the fact that in conclusion from his findings he could foresay that my grandmother Midnight would be the next incarnation of Mystra. Why and how he came to that conclusion is unknown, as well as it remains unknown if the same thing had in deed ever happened in previous times. Which of course means that we have no evidence that it will happen again in the future.~
 IF ~~ THEN REPLY ~ What about your father or the priests of Mystra's temple? Would they hide such things from you for some reason?~ GOTO SanMysSucc9
 END
 
@@ -5727,12 +5727,12 @@ IF ~~ THEN CVSANDRJ Winsk1Dis7
 ~ Those were the Othlor's words. ~
 DO ~ SetGlobal("WinskApp1","GLOBAL",8) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Dying Gods...Rising Gods..uuh scary.~
-== BDynah  IF~ InParty("Dynaheir") ~ THEN ~ In the Times of Trouble Gods had been slain. Thus says the wise Alaundo, that dead not all may remain. Bhaal may rise again and maybe others.~
+== BDynah  IF~ InParty("Dynaheir") ~ THEN ~ In the Time of Troubles Gods had been slain. Thus says the wise Alaundo, that dead not all may remain. Bhaal may rise again and maybe others.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Had I only been granted access to the inner parts of Candlekeep to study Alaundo's writings. The prophesy of the dead God that will rise again. Bhaal.~
-== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Those like me who remember the Times of Trouble still tremble when they hear words like these. Ao has restored the balance when the revolting gods were slain. The rising of one of them or the rising of a new one on their behalf will mean the destruction of that tiny balance and a catastrophe for Faerun.~
-== BSANDR ~ The peace after the Times of Trouble may be a tiny flower, easily to be trampled by those who lust for power. I do not believe in rising gods, but I fear those corrupt mortals and their deeds who follow such ideas.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Those like me who remember the Time of Troubles still tremble when they hear words like these. Ao has restored the balance when the revolting gods were slain. The rising of one of them or the rising of a new one on their behalf will mean the destruction of that tiny balance and a catastrophe for Faerun.~
+== BSANDR ~ The peace after the Time of Troubles may be a tiny flower, easily to be trampled by those who lust for power. I do not believe in rising gods, but I fear those corrupt mortals and their deeds who follow such ideas.~
 END
-++ ~ The Times of Trouble, the slain gods, the prophecies of Alaundo concerning the spawn of the dead god Bhaal - my head is spinning. What does all of that have to do with us? I need fresh air, let us move on.~
+++ ~ The Time of Troubles, the slain gods, the prophecies of Alaundo concerning the spawn of the dead god Bhaal - my head is spinning. What does all of that have to do with us? I need fresh air, let us move on.~
 EXIT
 
 CHAIN
