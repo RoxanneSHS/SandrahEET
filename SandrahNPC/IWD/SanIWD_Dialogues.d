@@ -270,7 +270,7 @@ DO~SetGlobal("SanHOWScar","Global",5) ~
 ==CVSandrJ~Scar, we have been to Lonelywood and beyond. (Sandrah gives a detailed report about your mission to Icewind Dale - except...she does not mention your discovery of the ore on Burial Island at all.)~
 ==Scar~Another example of those criminal Iron Throne activities. Duke Eltan will not be delighted to hear that. Had there really been iron up there in the region, they would have prevented its digging, even on the price of a bloody local conflict, just to keep up the crisis.~
 END
-++~But there is o...ooooh. (The pain of Sandrah's heel on your toe is unbearable.~ + IWDRetu1
+++~But there is o...ooooh. (The pain of Sandrah's heel on your toe is unbearable.)~ + IWDRetu1
 ++~Now they have only what they grabbed before our action on the Cloakwood mine cut their supplies.~ + IWDRetu1
 
 CHAIN
@@ -338,9 +338,9 @@ DO~SetGlobal("SanIWDIronSearch","Global",6)~
 ==BRUNO~SHUT UP, YOU DUMB BLOODHOUNDS, you blabber out top secrets just for fun or what? Now we must kill 'em for know too much. GET OUTTA MY SIGHT!!!~DO~EscapeArea()~EXIT
 
 CHAIN 
-IF WEIGHT #-4~Global("SanIwdThrone","ar9101",1)~THEN Slythe IWDIron3
+IF WEIGHT #-4~Global("SanIwdThrone","id9101",1)~THEN Slythe IWDIron3
 ~Hey Krystin. What have we here... blade fodder? Greenhorns from the south.~
-DO~SetGlobal("SanIwdThrone","ar9101",2) SetGlobal("SanHowPlot","Global",3)~
+DO~SetGlobal("SanIwdThrone","id9101",2) SetGlobal("SanHowPlot","Global",3)~
 ==Krysti~Slythie-baby, we're not here for those, forgot?~
 ==Slythe~Ooh, she's got a tongue of steel and a heart of gold, my Krystin does...yeah, we don't wanna do too much disturbance, even my blade lusts for them.~
 ==Krysti~They don't look like they wanna dig for ore. The only iron they care to carry are their weapons.~

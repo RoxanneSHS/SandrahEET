@@ -17,9 +17,9 @@ EXIT
 
 CHAIN
 IF~Global("SanC0SirB","Global",4) ~THEN C0SirenJ Siri2
-~Sandrah, you seem to have more insight into out quest and the foe we soon face than anyone else among us.~
+~Sandrah, you seem to have more insight into our quest and the foe we soon face than anyone else among us.~
 DO~ SetGlobal("SanC0SirB","Global",5) ~
-==CVSandrJ ~We all share the same knowledge, I would say. I just try to summarise the facts from time to time to see if a change of perspective maybe reveals something we have overlooked so far.~
+==CVSandrJ ~We all share the same knowledge, I would say. I just try to summarise the facts from time to time to see if a change of perspective maybe reveals something we have overlooked so far. My education and knowledge of lore help me to integrate what we find out into a larger picture.~
 ==C0SirenJ ~Still you impress me with those analytic skills. I wish I could counsel <CHARNAME> just as well as you do.~
 ==CVSandrJ ~Each of us plays an important role in this group, yours is no less than mine.~
 ==C0SirenJ ~(Smiles) I learn to trust my skills more and more while I travel with you and <CHARNAME>. I am afraid we soon need much of that confidence to succeed.~  EXIT

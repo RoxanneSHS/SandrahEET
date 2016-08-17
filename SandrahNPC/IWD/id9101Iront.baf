@@ -1,9 +1,9 @@
 IF
 Global("SanHOWScar","Global",3)
-Global("SanIwdThrone","ar9101",0)
+Global("SanIwdThrone","id9101",0)
 THEN
 RESPONSE #100
-SetGlobal("SanIwdThrone","ar9101",1)
+SetGlobal("SanIwdThrone","id9101",1)
 CreateCreature("Slythe",[933.356],14)
 CreateCreature("Krysti",[1045.295],6)
 CreateCreature("Brunos",[890.605],8)

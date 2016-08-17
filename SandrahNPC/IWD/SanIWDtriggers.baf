@@ -104,7 +104,7 @@ END
 
 IF
 GlobalLT("SanIDW1","Global",21)
-AreaCheck("ar1100")
+AreaCheck("id1100")
 Delay(18)
 THEN
 RESPONSE #100
@@ -168,7 +168,7 @@ END
 IF
 Global("Know_Assassin","GLOBAL",2)
 Global("Know_Baldemar","GLOBAL",1)
-AreaCheck("ar9100")
+AreaCheck("id9100")
 Global("IwdHWPlot","LOCALS",0)
 Delay(12)
 THEN

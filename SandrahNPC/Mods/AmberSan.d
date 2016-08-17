@@ -24,7 +24,7 @@ DO~SetGlobal("SanHealAmber","GLOBAL",4)RealSetGlobalTimer("AmbSanInt","LOCALS",2
 =~The line of your errors is so long that I hardly now where to begin to correct them.~
 ==BM#Amber~Your kind action has given you some credit. Of course, I am not saying that all aasimar are like that.~
 ==BSandr~Fine, let us start with that error then - I am not aasimar.~
-==BM#Amber~Aasimar are descendants of the celestials and thus oppose the fiendish. I hail from Waterdeep, even if it's just from the dock ward, so I know who you are. daughter of Elminster.~
+==BM#Amber~Aasimar are descendants of the celestials and thus oppose the fiendish. I hail from Waterdeep, even if it's just from the dock ward, so I know who you are, daughter of Elminster.~
 ==BSandr~(Laughs) I remember you, Amber, the red haired wildcat that set the ward on fire one night - even though you were not really to blame for it. My father did a lot to rebuild it afterwards and gave me a chance to help in it. I hope we made it a better place even if you were not there anymore to see the improvements.~
 ==BM#Amber~Ha, any change to the rotten place would be an improvement. But why do you deny your origin - anyone knows about your father's birth to Mystra.~
 ==BSandr~My father was born to the human Midnight before her ascencion and by that is human just like me. None of us are aasimar and none of us oppose your kin just by race - even though we have a number of enemies among your kin...~
