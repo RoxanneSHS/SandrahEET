@@ -48,8 +48,8 @@ END
 
 IF~~THEN BEGIN IWD24
 SAY~You need to go further north, follow the Upper Chionthar and still continue north.~
-=~Here, I will mark it on your map. Good luck, adventurers.~
-IF~~THEN DO~ RevealAreaOnMap("id1000") EscapeAreaDestroy(40)~ EXIT
+=~To travel there it is best to contact my friend, Captain Ulysses up in Ulgoth's Beard. Good luck, adventurers.~
+IF~~THEN DO~ SetGlobal("SanBGForIWD","Global",1) RevealAreaOnMap("id1000") EscapeAreaDestroy(40)~ EXIT
 END
 
 IF~GlobalLT("Chapter","Global",3)!NumTimesTalkedTo(0)~THEN BEGIN IWD30

@@ -27,3 +27,25 @@ RESPONSE #100
 SetGlobal("GoShand","BG1000",2)
 ActionOverride("shandal2",EscapeAreaDestroy(55))
 END
+
+IF
+Global("K#UlyssesSpawn","BG1000",1)
+!Global("SanBGForIWD","Global",1)
+Global("UlyWait","BG1000",0)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("UlyWait","BG1000",1)
+Deactivate("K#ULYSSE")
+END
+
+IF
+Global("UlyWait","BG1000",1)
+OR(2)
+Global("SanBGForIWD","Global",1)
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("UlyWait","BG1000",2)
+Activate("K#ULYSSE")
+END

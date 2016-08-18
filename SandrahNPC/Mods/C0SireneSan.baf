@@ -12,15 +12,27 @@ Global("SanC0SirB","Global",3)
 Global("Chapter","Global",4)
 !AreaCheck("bg1900")
 AreaType(OUTDOOR)
+See("CVSandr")
 THEN
 RESPONSE #100
 SetGlobal("SanC0SirB","Global",4)
 END
 
 IF
-OR(2)
+Global("SanC0SirB","Global",5)
+AreaCheck("BG1800")
+See("CVSandr")
+Global("Altalk","BG1800",5)
+THEN
+RESPONSE #100
+SetGlobal("SanC0SirB","Global",6)
+END
+
+IF
+OR(3)
 Global("SanC0SirB","Global",2)
 Global("SanC0SirB","Global",4)
+Global("SanC0SirB","Global",6)
 !See([ENEMY])
 See("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
