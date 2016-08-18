@@ -3365,7 +3365,7 @@ SAY ~ You know the lore of the Time of Troubles well, <CHARNAME>, as it is prese
 It is thus that Bhaal was aware of his coming death and he took his preparation in putting his seed into women of various races and at different times for them to be awakened from beyond his grave and rise again in his name. This part you know well from Alaundo's writings. ~
 =~ But for the moment let us concentrate on those four adventurers sent out by AO.~
 IF ~~ THEN REPLY ~ Adon, a cleric of Sune, Cyric, Kelemvor, and Midnight were successful in finding the Tablets and returning them to Ao. Three of that company, excepting only Adon, were raised to godhood in place of the slain gods - Bane, Bhaal, Myrkul and Mystra.
-Bane went to the City of Tantras where He was slain in battle with Torm, but Torm had perished as well. Bhaal was slain by Cyric, who wielded the magical sword Godsbane at Boareskyr Bridge. Myrkul was destroyed atop Mount Waterdeep by Midnight, who had the power of Mystra. Mystra herself was dead by Helm's hand, but Midnight chose to keep the mantle and name when she ascended.~ DO~ SetGlobal("SanBhaalRev","LOCALS",1) ~GOTO SanBhaalRev2
+Bane went to the City of Tantras where He was slain in battle with Torm, but Torm had perished as well. Bhaal was slain by Cyric, who wielded the magical sword Godsbane at Boareskyr Bridge. Myrkul was destroyed atop Blackstaff Tower by Midnight, who had the power of Mystra. Mystra herself was dead by Helm's hand, but Midnight chose to keep the mantle and name when she ascended.~ DO~ SetGlobal("SanBhaalRev","LOCALS",1) ~GOTO SanBhaalRev2
 END
 
 IF~~THEN BEGIN SanBhaalRev2
