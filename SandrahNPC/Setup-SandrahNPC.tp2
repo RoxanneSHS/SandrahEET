@@ -5800,6 +5800,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~b!gavin.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/bgavinsan.d~
+EXTEND_BOTTOM ~CVSandra.bcs~ ~SandrahNPC/Mods/GavinSanNo.baf~
 PRINT ~ Gavin detected - Sandrah part added~
 END ELSE BEGIN
     PRINT ~ Gavin not detected - Sandrah part skipped~
