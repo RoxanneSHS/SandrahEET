@@ -64,7 +64,7 @@ Global("JenThHonor","LOCALS",1)
 Global("SanHealJen","GLOBAL",8)
 Global("JenDurl","LOCALS",1)
 Global("SanJenDriz","LOCALS",1)
-Global("NorbySpawn","GLOBAL",2)
+Global("NorbySpawn","BG3300",2)
 Global("JenEdwinR","LOCALS",1)
 Global("JenEdwinR","LOCALS",3)
 Global("JenEdwinR","LOCALS",5)
@@ -535,7 +535,7 @@ SetGlobal("JenDeadR","LOCALS",1)
 END
 
 IF
-Global("NorbySpawn","GLOBAL",1)
+Global("NorbySpawn","BG3300",1)
 !See("DSNorby")
 Global("JenHuntDrag","LOCALS",0)
 InParty("CVSandr")
@@ -544,7 +544,7 @@ See("CVSandr")
 Delay(12)
 THEN
 RESPONSE #100
-SetGlobal("NorbySpawn","GLOBAL",2)
+SetGlobal("NorbySpawn","BG3300",2)
 END
 
 IF

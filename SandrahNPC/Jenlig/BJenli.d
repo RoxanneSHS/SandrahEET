@@ -92,9 +92,9 @@ DO~SetGlobal("SanHealJen","GLOBAL",9)ActionOverride("CVSandr",AddSpecialAbility(
 ==BJenli~(Hiss) Jen'lig had to come to prime and distance from Astral Plane to understand. Must teach others by example. Githyanki ignorance is maybe more dangerous enemy for own minds than even mind flayer tentacles.~ EXIT
 
 CHAIN
-IF~Global("NorbySpawn","GLOBAL",2) ~ THEN BJenli Dragpact1
+IF~Global("NorbySpawn","bg3300",2) ~ THEN BJenli Dragpact1
 ~(Hiss) Now hunt with manlings for dragon. Few manlings face old creatures - commander one who does without hesitation. See if wise.~
-DO~ SetGlobal("NorbySpawn","GLOBAL",3)~
+DO~ SetGlobal("NorbySpawn","bg3300",3)~
 ==BSandr~I see you are concerned - and the reason is not the power of the beast we are after.~
 ==BJenli~Always Sandrah see more than other creatures of Prime. Jen'lig sure Sandrah also know reason for concern.~
 ==BSandr~I assume it is the legendary old pact of the githyanki with Tiamat, queen and goddess of dragons.~

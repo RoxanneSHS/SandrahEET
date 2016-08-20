@@ -8184,17 +8184,6 @@ END
 
 //Repairs
 IF
-Global("DragonDead","GLOBAL",1)
-Global("DSOTSC","GLOBAL",1)
-Global("FindRelic","GLOBAL",1)
-Global("SanDSOTSC","LOCALS",0)
-THEN
-RESPONSE #100
-SetGlobal("SanDSOTSC","LOCALS",1)
-SetGlobal("DragonDead","GLOBAL",0)
-END
-
-IF
 !Global("ENDOFBG1","GLOBAL",2)
 AreaCheck("BG2900")
 Global("Chapter","GLOBAL",3)
