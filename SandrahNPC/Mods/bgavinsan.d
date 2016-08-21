@@ -326,7 +326,8 @@ DO ~ SetGlobal("SanGavLA","GLOBAL",9) RealSetGlobalTimer("SanGavLATime","GLOBAL"
 ==~BB!GAVIN~ ~ What do you mean?~
 ==BSANDR ~ There needs to be a *but*, in the way you started this conversation.~
 ==~BB!GAVIN~ ~ It is so hard to express my feelings of it, I am not even sure I completely understand myself.~
-==BSANDR ~ (She kisses Gavin dearly.) I sure understand you. A young adventuress in love with you and loving another man as well is not really what a family man like you really ever dreamed of. I cannot help it, those things can never be planned.~
+==BSANDR IF~Global("SanRomPath","Global",1)~THEN~ (She kisses Gavin dearly.) I sure understand you. A young adventuress in love with you and loving another man as well is not really what a family man like you really ever dreamed of. I cannot help it, those things can never be planned.~
+==BSANDR IF~Global("SanRomPath","Global",2)~THEN~ (She kisses Gavin dearly.) I sure understand you. A young adventuress in love with you and loving another woman as well is not really what a family man like you really ever dreamed of. I cannot help it, those things can never be planned.~
 ==~BB!GAVIN~ ~ Still your own grandmother, the heroine Midnight you estimate so high, did the same thing with Cyric...~
 ==BSANDR ~ Even if they never settled down and started a family. But that is a different story. They sure never planned what would become of themselves, they just lived their life and their love.~
 ==~BB!GAVIN~ ~ And you propose the same for us, Sandrah, to just...hm...accept it and let it happen?~
