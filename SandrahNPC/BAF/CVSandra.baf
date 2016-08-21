@@ -5336,12 +5336,22 @@ END
 
 IF
 Global("SanShartDuel","GLOBAL",0)
-Global("SanRomPath","GLOBAL",1)
 InParty("Sharteel")
 HPPercentGT("SHARTEEL",95)
 THEN
 RESPONSE #100
 SetGlobal("SanShartDuel","GLOBAL",4)
+END
+
+IF
+GlobalGT("SanShartDuel","GLOBAL",2)
+Global("x#sharmatch","GLOBAL",0)
+Global("SanSharInt","GLOBAL",0)
+InParty("SHARTEEL")
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",1)
+RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)
 END
 
 IF
