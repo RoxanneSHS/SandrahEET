@@ -1,6 +1,17 @@
 IF
+Global("SanDSOTSCUW","GLOBAL",7)
+Global("Elites","DSC029",0)
+THEN
+RESPONSE #100
+SetGlobal("Elites","DSC029",1)
+CreateCreature("btelite2",[1069.1565],7)
+CreateCreature("btelite2",[1173.1711],7)
+CreateCreature("btelite2",[1039.715],7)
+END
+
+IF
 InActiveArea("CVSandr")
-NumDeadGT("IronElit",2)
+NumDeadGT("btelite2",2)
 Global("SanDSOTSCUW","GLOBAL",7)
 THEN
 RESPONSE #100

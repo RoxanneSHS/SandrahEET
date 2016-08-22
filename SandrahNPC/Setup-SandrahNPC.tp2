@@ -8092,6 +8092,9 @@ COPY_EXISTING ~NTDeath1.cre~ ~override/NTDeath1.cre~
               WRITE_ASCII 0x248 ~NTDeath1~
 END
 
+COPY_EXISTING btelite.cre~ ~override/btelite2.cre~
+              WRITE_ASCII 0x280 ~btelite2~
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d0oasis9.spl~ THEN BEGIN
 COMPILE ~SandrahNPC/oasis/amtgen01.d~ USING   ~SandrahNPC/oasis/oasis.tra~
 COMPILE ~SandrahNPC/oasis/d0hosti.baf~
