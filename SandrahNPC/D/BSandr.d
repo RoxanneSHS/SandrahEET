@@ -5759,7 +5759,7 @@ CHAIN
 IF ~ Global("SanSharInt","GLOBAL",6) ~ THEN BSANDR SanShart2m
 ~ We have a common interest, Shar-Teel, am I right?~
 DO ~ SetGlobal("SanSharInt","GLOBAL",8) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
-== BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean.~
+== BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean?~
 == BSANDR ~ I appreciate your openess on this topic. So you are not denying that <CHARNAME> is a bit of an exception from his gender even for your standards.~
 == BSHART~ I would agree to that. (Slowly her hands wander towards her weapons, her shoulders straighten.)~
 == BSANDR ~ Relax, Shar-Teel, it is not my intention to fight over him with you. We are no cats in heat, my friend.~
@@ -5778,11 +5778,11 @@ EXIT
 
 CHAIN
 IF ~ Global("SanSharInt","GLOBAL",7)~ THEN BSANDR SanShart2f
-~ We have a common interest, Shar-Teel, am I right~
+~ We have a common interest, Shar-Teel, am I right?~
 DO ~ SetGlobal("SanSharInt","GLOBAL",8) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
-== BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean. Are you trying to quarrel with me on behalf of such lesser beings like men are.~
+== BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean? Are you trying to quarrel with me on behalf of such lesser beings like men are?~
 == BSANDR ~ I appreciate your openess on this topic. You seem to be both lured to men like a moth to a flames and in the same moment you hate and despise them.~
-== BSHART~ I would agree to that. But that would be nothing a rich young playgirl like you would understand. (Shar-Teel's hand has now gripped the handle of her weapon.)You may be the stronger fighter, Sandrah, but I doubt that you had already all the experience in the carnal area that I had, good or bad.~
+== BSHART~ I would agree to that. But that would be nothing a rich young playgirl like you would understand. (Shar-Teel's hand has now gripped the handle of her weapon.) You may be the stronger fighter, Sandrah, but I doubt that you had already all the experience in the carnal area that I had, good or bad.~
 == BSANDR ~ Sure the bad ones are missing in my repertoire. I do not envy you for them. Life has let you get your full share of unpleasantness up to now, right?~
 == BSHART~ (Shar-Teel's hands have dropped from her weapon and she has sat down with her knees up to her chin. It almost looks like she would burst into tears any moment.]~
 == BSANDR ~ (Sandrah has settled down beside her and puts her arm around her shoulder.) You really had the worst of experiences, my dear, right? I am sorry, it had to come up in you again, when you rather should be happier. Ssssh. It will not happen again. Not as long as you are with me and <CHARNAME>.~

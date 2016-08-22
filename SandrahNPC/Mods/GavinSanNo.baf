@@ -280,6 +280,7 @@ END
 IF
 Global("SangavNoHurt","GLOBAL",0)
 Global("SanRomPath","GLOBAL",2)
+GlobalLT("SanGavLA","GLOBAL",10)
 !Global("B!GavinRomCutByOther","GLOBAL",1)
 !Global("B!GavinRomanceMatch","GLOBAL",0)
 OR(2)
@@ -295,6 +296,7 @@ END
 
 IF
 Global("SangavNoHurtM","GLOBAL",0)
+GlobalLT("SanGavLA","GLOBAL",10)
 OR(2)
 Global("BGavinBorland1","GLOBAL",1)
 Global("B!GAVINWHICHHOUSE","GLOBAL",4)
