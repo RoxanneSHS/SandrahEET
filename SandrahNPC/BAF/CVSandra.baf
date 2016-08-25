@@ -5491,6 +5491,20 @@ Interact("CVSandr")
 END
 
 IF
+Global("SanSharInt","GLOBAL",10)
+RealGlobalTimerExpired("SanSharIntT","GLOBAL")
+Global("SanRompath","Global",2)
+AreaType(OUTDOOR)
+!AreaType(CITY)
+!StateCheck("Sharteel",CD_STATE_NOTVALID)
+!See([ENEMY])
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",13)
+END
+
+IF
 Global("SanSharInt","GLOBAL",12)
 RealGlobalTimerExpired("SanSharIntT","GLOBAL")
 !Global("X#SHARINTEREST","GLOBAL",3)

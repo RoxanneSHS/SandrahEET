@@ -583,7 +583,7 @@ INTERJECT_COPY_TRANS Husam 0 JenHintJard
 
 INTERJECT SUNIN 0 SuninMeetJen
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~You were with murderers of Kastya, the wounded sword bearer. You tell where sword is.~
-==Sunin IF~InParty("CVJenlig")~THEN~Damned, you never give up! I warned Semaj not to mingle with a kin who are fearsome and tireless foe who don’t know when to quit.~
+==Sunin IF~InParty("CVJenlig")~THEN~Damned, you never give up! I warned Semaj not to mingle with a kin who are fearsome and tireless foe who don't know when to quit.~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~That name of thief? Semaj. Where is that man? Speak your last word, mammal.~
 ==Sunin IF~InParty("CVJenlig")~THEN~Ha, he's chosen his company well, that conjurer. Even you will not be able to touch Sarevok's adjutant. You will not even survive the current encounter, lizard woman.~
 END SUNIN 1

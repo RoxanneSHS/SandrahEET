@@ -5909,7 +5909,7 @@ DO~ SetGlobal("SanSharInt","GLOBAL",14)~
 EXIT
 
 CHAIN
-IF ~ Global("SanSharInt","GLOBAL",15) ~THEN BSANDR SanShart6
+IF ~ Global("SanSharInt","GLOBAL",15) Global("Sanrompath","Global",1)~THEN BSANDR SanShart6M
 ~ (Sandrah and Shar-Teel come up from the small pond where they had taken a bath. They are barefoot and just dressed in light short skirts that cling to their still wet bodies. The sight of your two beauties in the sunlight like this arouses you immediately.)~
 DO ~ SetGlobal("SanSharInt","GLOBAL",16)~
 ==BSHART ~ Hey, that's mine, pussycat! (Shar-Teel tries to grab a towel from Sandrah, who was drying her locks while walking.)~
@@ -5920,6 +5920,19 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",16)~
 ==BSANDR ~ (None of Shar-Teel's heavy blows seems to have any affect on Sandrah. With light playful movements she twitches out of reach of the pounding fists always in the last instant. You wonder how her almost fragile body is able to use her hammer in fight like you have seen - cutting down orcs with a single strike. Everything with her seems to depend on technique and body control. Her fighting style reminds you of a sophisticated dance rather than a killing job.)~
 ==BSHART ~ Hey, pussycat, let's stop it. See <CHARNAME> is already so excited about us, he will have no reserves to pleasure us later.~
 ==BSANDR ~ Uh, yes, (looking at the bulge beneath your girdle) he is obviously ready for us right now, wildcat.~
+EXIT
+
+CHAIN
+IF ~ Global("SanSharInt","GLOBAL",15) Global("Sanrompath","Global",2)~THEN BSANDR SanShart6F
+~ (Sandrah and Shar-Teel come up from the small pond where they had taken a bath. They are barefoot and just dressed in light short skirts that cling to their still wet bodies.)~
+DO ~ SetGlobal("SanSharInt","GLOBAL",16)~
+==BSHART ~ Hey, that's mine, pussycat! (Shar-Teel tries to grab a towel from Sandrah, who was drying her locks while walking.)~
+==BSANDR ~ You could have asked me nicely and I might have given it to you. Although it is mine - you never even owned a towel before.~
+==BSHART ~ (Before you can realise it, the two girls start to fight with each other in a way that you are not sure if it is still fun.) Ha, take this.~
+==BSANDR ~ Beginner! (Still you are much too fascinated to intervene, instead you study the near perfect view of those beautiful fighters in their action.) ~
+==BSHART ~ (Shar-Teel attacks Sandrah with heavy blows from her fists. Her body is all strength and grace. You admire the play of her muscles beneath her skin, which is by now smooth and gleaming from Sandrah's permanent care applied on her friend. She really reminds you of a mighty wildcat.)~
+==BSANDR ~ (None of Shar-Teel's heavy blows seems to have any affect on Sandrah. With light playful movements she twitches out of reach of the pounding fists always in the last instant. You wonder how her almost fragile body is able to use her hammer in fight like you have seen - cutting down orcs with a single strike. Everything with her seems to depend on technique and body control. Her fighting style reminds you of a sophisticated dance rather than a killing job.)~
+==BSHART ~ Hey, pussycat, let's stop it. See <CHARNAME> enjoys our display just too much.
 EXIT
 
 CHAIN
