@@ -5431,7 +5431,7 @@ COMPILE ~SandrahNPC/Areas/cvpass.baf~
 // Correct exit from Oversight Headquarters 
 ACTION_IF FILE_EXISTS_IN_GAME ~cm0750.ARE~ THEN BEGIN
 COPY_EXISTING ~cm0750.ARE~ ~override~
-   WRITE_ASCII 0xf24 ~AR7700~
+   WRITE_ASCII 0xf24 ~bg0700~
 END
    
 ACTION_IF FILE_EXISTS ~Worldmap/map_mods_areas.tbl~ THEN BEGIN
