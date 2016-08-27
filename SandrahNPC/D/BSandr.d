@@ -2510,7 +2510,7 @@ IF ~ Global("Formedcloth","GLOBAL",15)~ THEN BSANDR SanImoBhCh1
 DO ~ SetGlobal("Formedcloth","GLOBAL",16)~ 
 ==Bimoen ~ Huh, it's quite puzzling to think of the *new* Puffguts, Sandrah. Guess how he fooled everyone with his disguise, fooled me when I was always so close all the time.~
 == BSANDR ~ I guess he had to in order to protect you, just as Gorion had protected <CHARNAME>.~
-==Bimoen ~ Protected me? My, I can figure all being hunting for <CHARNAME> with <PRO_HISHER> blood in 'im, but who should care for me? Yeah, well, maybe I would get hurt in the instant while being always so close to <PRO_HERHIM>. Jus' like I'm here now fighting together.~
+==Bimoen ~ Protected me? My, I can figure all being hunting for <CHARNAME> with <PRO_HISHER> blood in <PRO_HIMHER>, but who should care for me? Yeah, well, maybe I would get hurt in the instant while being always so close to <PRO_HIMHER>. Jus' like I'm here now fighting together.~
 END
 IF ~ GlobalGT("OrcPrison","GLOBAL",8)~ THEN REPLY~ Poor one, even been turned into this slayer beast by being too close to me.~ + SanImoBhCh2
 IF ~ GlobalLT("OrcPrison","GLOBAL",8)~ THEN REPLY~ And being in such danger for it.~ + SanImoBhCh3
@@ -6562,7 +6562,7 @@ DO~ SetGlobal("DYBant","GLOBAL",15) RealSetGlobalTimer("DynBantT","GLOBAL",1000)
 == BSANDR~ It is as if you knew what I wanted to talk about. I have come to recognise that you believe much in fate and destiny and that what happens follows some higher design.~
 == BDYNAH~ Thou hath surely observed as well that 'tis my believe we are not mere puppets in somebody's game.~
 == BSANDR~ Have you come to the Sword Coast to change the destiny that you assume is yours?~
-== BDYNAH~ (Smiles) If it were mine to alter destiny than it wouldn't be my destiny but what I made of it instead. 'tis true, I have seen my future would be in this land far from Rashemen and I needed to come here as fate is unavoidable.~
+== BDYNAH~ (Smiles) If it were mine to alter destiny then it wouldn't be my destiny but what I made of it instead. 'tis true, I have seen that my future would be in this land far from Rashemen and I needed to come here as fate is unavoidable.~
 == BSANDR~ And it is connected with <CHARNAME> and who he is. But what was not revealed by your forsight is that love would be part of it.~
 == BDYNAH~ And maybe love will make the change from destiny to destination here. Thou understand much, young friend. Do not try to mingle with what is dealt to us.~
 == BSANDR~ If just that would be my fate? If I followed a calling just like you did, to find <CHARNAME> and play my part here just like you thought you need to do? And what if love is the power that is changing it for me as well.~

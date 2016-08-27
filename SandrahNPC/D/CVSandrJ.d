@@ -4430,12 +4430,12 @@ END
 
 IF~~ THEN BEGIN SanImoBhaCon4
 SAY ~ A girl nicknamed 'Immi'. A girl with significant courage and growing powers. ~
-IF ~~ THEN REPLY ~ A girl that grew up in Candlekeep at my side all those years. A girl named Imoen!~ GOTO SanImoBhaCon6
+IF ~~ THEN REPLY ~ A girl who grew up in Candlekeep at my side all those years. A girl named Imoen!~ GOTO SanImoBhaCon6
 END
 
 IF~~ THEN BEGIN SanImoBhaCon5
-SAY ~ A girl nicknamed 'Immi'. A girl with significant courage and growing powers. A girl that turns into the Bhaal avatar before our own eyes.~
-IF ~~ THEN REPLY ~ A girl that grew up in Candlekeep at my side all those years. A girl named Imoen!~ GOTO SanImoBhaCon6
+SAY ~ A girl nicknamed 'Immi'. A girl with significant courage and growing powers. A girl who turns into the Bhaal avatar before our own eyes.~
+IF ~~ THEN REPLY ~ A girl who grew up in Candlekeep at my side all those years. A girl named Imoen!~ GOTO SanImoBhaCon6
 END
 
 IF ~~ THEN BEGIN SanImoBhaCon6
