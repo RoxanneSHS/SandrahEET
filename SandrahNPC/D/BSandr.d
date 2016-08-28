@@ -6201,21 +6201,33 @@ IF ~~ THEN BSANDR SharPregN3
 EXIT
 
 CHAIN
-IF ~Global("SanSharAngD","LOCALS",1)~ THEN BSANDR SanSharAngDead
+IF ~Global("SanSharAngD","LOCALS",1) Global("SanRompath","Global",1)~ THEN BSANDR SanSharAngDeadM
 ~ Shar-Teel?.~
 DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
-== BSHART ~ So now he is finally dead. Died because of his own male stupidity. YOU BASTARD, YOU SCUM! I was sure we would find him down here in his greedy lust for power, but to stupid to see he was just used as a tool once again.~
+== BSHART ~ So now he is finally dead. Died because of his own male stupidity. YOU BASTARD, YOU SCUM! I was sure we would find him down here in his greedy lust for power, but too stupid to see he was just used as a tool once again.~
 == BSANDR ~ Something must have been in him after all. He made it far - but not as far as his daughter.~
 == BSHART ~ He made the wrong choices, that idiot, again and again in his life. I made the right one, thanks to you and to <CHARNAME>.~
 == BSANDR ~ Do you pity him?~
 == BSHART ~ No...I am just glad this episode is over now. Angelo Dorsan no longer looms over me, I am free from that ghost now.~
 == BSANDR ~ A new life is ahead of you, wildcat, the one you have already begun for some time.~
 == BSHART ~ You say it, pussycat, this is exactly how I feel about it.~
-=~ Loverboy, move your ass over here, your wife is in need of you, just in case you haven't noticed yet, you dolt.~
+=~BSHART ~ Loverboy, move your ass over here, your wife is in need of you, just in case you haven't noticed yet, you dolt.~
 END
 ++~ (Move to Shar-Teel and silently lay your arms around her shoulder.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~ EXIT
 ++~ (Clean your weapon and ignore Shar-Teel and Sandrah.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-6) ~EXIT
 ++~ I cannot say I'm sorry for his death - nor do I think you should be. It's good you are now free of him forever.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
+
+CHAIN
+IF ~Global("SanSharAngD","LOCALS",1) Global("SanRompath","Global",2)~ THEN BSANDR SanSharAngDeadF
+~ Shar-Teel?.~
+DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
+== BSHART ~ So now he is finally dead. Died because of his own male stupidity. YOU BASTARD, YOU SCUM! I was sure we would find him down here in his greedy lust for power, but too stupid to see he was just used as a tool once again.~
+== BSANDR ~ Something must have been in him after all. He made it far - but not as far as his daughter.~
+== BSHART ~ He made the wrong choices, that idiot, again and again in his life. I made the right one, thanks to you and to <CHARNAME>.~
+== BSANDR ~ Do you pity him?~
+== BSHART ~ No...I am just glad this episode is over now. Angelo Dorsan no longer looms over me, I am free from that ghost now.~
+== BSANDR ~ A new life is ahead of you, wildcat, the one you have already begun for some time.~
+== BSHART ~ You say it, pussycat, this is exactly how I feel about it.~EXIT
 
 CHAIN
 IF ~Global("SanSharInt","GLOBAL",24)~ THEN BSANDR SanSharGoWDBaby1
