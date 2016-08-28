@@ -450,7 +450,7 @@ END
 IF~~THEN BEGIN Bhaal2
 SAY~Is spawn from own hatchery that hunts commander the most. If from same breed may be as strong as <CHARNAME>.~
 =~Is counselor Sandrah who always say that commander is much stronger than any because has true fearless cadre to follow. Other spawn may not have such companions.~
-IF~~THEN REPLY~(Laugh) Sureley he has no Githyanki in his *cadre*.~ GOTO Bhaal3
+IF~~THEN REPLY~(Laugh) Surely he has no Githyanki in his *cadre*.~ GOTO Bhaal3
 IF~~THEN REPLY~So far we have only seen hirelings and lesser followers of Sarevok. Still, he may have some inner circle of more powerful associates when we come closer.~ GOTO Bhaal3
 END
 

@@ -4813,9 +4813,7 @@ EXIT
 
 // Bjornin 2nd visit
 CHAIN
-IF ~
-Global("SanHadBjor","GLOBAL",6)~
-THEN BSANDR BjorRev
+IF ~Global("SanHadBjor","GLOBAL",6)~THEN BSANDR BjorRev
 ~ Bjornin, good to see you again. You are looking quite well already. How do you feel, dear? ~
 DO ~SetGlobal("SanHadBjor","GLOBAL",7)~
 == Bjorni ~ Oh, Sandrah , your last *prescription* has done me so good. Only...~
@@ -6066,11 +6064,15 @@ DO ~ SetGlobal("SanSharGoM","LOCALS",2)~
 == BSANDR ~ Are you interested to share your thoughts with me?~
 == BSHART~ Sometimes you're really slow for one who always tries to be so clever. Why did you think I made my thoughtfulness so obvious.~
 == BSANDR ~ You have me listening, darling.~
-== BSHART~ Gosh, just think of it - some weeks ago I would've been so proud and all to have the Son of the God of Murder walk by my side...and in my bedroll at nights.~
-== BSANDR ~ And now? Are you not proud to be his she-bear?~
-== BSHART~ That's it, exactly, pussycat, fuck this murdergod, I am proud to be <CHARNAME>'s girl, do you see it.~
+== BSHART IF~Global("Sanrompath","Global",1)~THEN~ Gosh, just think of it - some weeks ago I would've been so proud and all to have the son of the God of Murder walk by my side...and in my bedroll at nights.~
+== BSHART IF~Global("Sanrompath","Global",2)~THEN~ Gosh, just think of it - some weeks ago I would've been so proud and all to have the daughter of the God of Murder walk by my side...and you in my bedroll at nights.~
+== BSANDR IF~Global("Sanrompath","Global",1)~THEN~ And now? Are you not proud to be his she-bear?~
+== BSHART IF~Global("Sanrompath","Global",1)~THEN~~ That's it, exactly, pussycat, fuck this murdergod, I am proud to be <CHARNAME>'s girl, do you see it.~
+== BSANDR IF~Global("Sanrompath","Global",2)~THEN~ And now? Are you not proud to be with us?~
+== BSHART IF~Global("Sanrompath","Global",2)~THEN~That's it, exactly, pussycat, fuck this murdergod, I am proud to be your *friends*, do you see it.~
 == BSANDR ~ Yes, I do. It is quite a difference.~
-== BSHART~ Yeah, you and him and all that love-crap thing. Damn it, but it feels just good. I am no longer who I am...~
+== BSHART IF~Global("Sanrompath","Global",1)~THEN~ Yeah, you and him and all that love-crap thing. Damn it, but it feels just good. I am no longer who I am...~
+== BSHART IF~Global("Sanrompath","Global",2)~THEN~ Yeah, you and her and all that love-crap and friendship things. Damn it, but it feels just good. I am no longer who I am...~
 == BSANDR ~ You are more yourself than you ever were, Shar-Teel, a proud and upright fighter, stronger than anyone, including the male population of the Sword Coast. And you know what you are fighting for by now.~
 == BSHART~ Sure I do. I just had a victory over one of my worst fears ever.~
 == BSANDR ~ Do you tell me about it?~

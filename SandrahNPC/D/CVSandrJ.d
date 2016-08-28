@@ -5958,7 +5958,7 @@ ADD_TRANS_TRIGGER Elmins4 1
 EXTEND_BOTTOM Elmins4 1
 IF ~InParty("CVSandr")~ THEN REPLY ~I know you, mirrorkin, and you be no more an Elminster than I'm Drizzt the Drow!~ GOTO 2
 IF ~InParty("CVSandr")~ THEN REPLY ~You said that these walls were soaked with innocent blood. Then who was it that chased me down these wretched halls, calling my name in voices I once knew, only to close and attack in trait'rous form?~GOTO 3
-IF ~InParty("CVSandr")~ THEN REPLY ~What more proof do I need than you not knowing your own only daughter - doppelganger.~GOTO 5
+IF ~InParty("CVSandr")~ THEN REPLY ~What more proof do I need then you not knowing your own only daughter - doppelganger.~GOTO 5
 END
 
 ADD_TRANS_ACTION Voleta BEGIN 0 END BEGIN 0 1 2 END ~ SetGlobal("SanVolHeal","BG0146",1)~
