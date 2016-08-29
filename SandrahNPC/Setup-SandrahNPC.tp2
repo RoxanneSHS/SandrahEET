@@ -8104,6 +8104,16 @@ COPY ~SandrahNPC/oasis/d0amtgen.wav~ ~override~
 COPY ~SandrahNPC/oasis/d0oasis9.spl~ ~override~
 END
 
+
+COPY_EXISTING ~BDBanter.2da~ ~override~
+REPLACE_TEXTUALLY ~SAFANA       ***~ ~SAFANA       BSAFAN    ~
+
+COPY_EXISTING ~BDBanter.2da~ ~override~
+REPLACE_TEXTUALLY ~EDWIN        ***~ ~EDWIN        Bedwin    ~
+
+COPY_EXISTING ~BDBanter.2da~ ~override~
+REPLACE_TEXTUALLY ~VICONIA      ***~ ~VICONIA      BVicon    ~
+
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
 ~SandrahNPC\IWD/SanIWD_Dialogues.d~

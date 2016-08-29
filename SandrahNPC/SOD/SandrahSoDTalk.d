@@ -301,7 +301,7 @@ IF~InParty("CVSandr")~THEN REPLY~Duke Jannath, what is all this about?~ DO~SetGl
 END
 
 I_C_T BDLiia 1 BDImoenSanHurt
-==CVSandrJ IF~InParty("CVSandr")~THEN~*Sandrah has already knelt down inspecting Imoen's body. Her face shows a desperate expression due to the condition of her *bestest* friend.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~*Sandrah has already knelt down inspecting Imoen's body. Her face shows a desperate expression due to the condition of her *bestest* friend.*~
 ==BDLiia IF~InParty("CVSandr")~THEN~You are a healer of some renown, I am aware, but those are not easy cases.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Poisoned weapons as far as I can say.~ END
 
