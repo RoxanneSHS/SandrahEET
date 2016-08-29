@@ -1,0 +1,9 @@
+IF
+Global("bd_spawn_cultist","bd7220",1)
+!InMyArea("bdcultx2")
+InParty("CVSandr")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("bd_spawn_cultist","bd7220",2)
+END

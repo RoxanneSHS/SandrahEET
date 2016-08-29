@@ -119,6 +119,28 @@ END
 ++~...and now we think backwards, I see.~EXIT
 
 CHAIN
+IF WEIGHT #-2~Global("bd_spawn_cultist","bd7220",2)~THEN CVSandrJ Fountemp1
+~Coincidence? A temple of Cyric close to the bridge where your so-called father was defeated...~
+DO~SetGlobal("bd_spawn_cultist","bd7220",3)~
+END
+++~Killed by your grandfather, who was accompanied by your grandmother.~ + Fountemp2
+++~The mad god needed a place to celebrate his victory.~+ Fountemp2
+++~This place looks much older than the relatively short reign of Cyric so far. He became a god only after the Time of Troubles.~+ Fountemp2
+
+CHAIN
+IF~~THEN CVSandrJ Fountemp2
+~The best method for Cyric to establish his temple would have been to occupy the ones his *predecessor* left for him. This is an old place, already in use before Cyric became the new god of murder.~
+END
+++~You mean that this was originally a Bhaal temple?~+ Fountemp3
+
+CHAIN
+IF~~THEN CVSandrJ Fountemp3
+~I am pretty sure about it. And maybe it was the last refuge of Bhaal before the mortal heroes finally defeated him at the nearby Boareskyre Bridge.~
+END
+++~You are the historian here. I don't feel like this is part of my family history.~EXIT
+++~Shadows of the past...wherever we go, it seems we can't escape them.~EXIT
+
+CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",5)~THEN CVSandrJ SodHeph1
 ~*Sandrah studies the annotated crusader tract you found on a dead woman.*~
 DO~SetGlobal("SanSodQuest","Global",6)~

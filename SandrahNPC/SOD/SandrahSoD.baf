@@ -116,7 +116,7 @@ SetGlobal("SanSodQuest","Global",9)
 END
 
 IF
-OR(12)
+OR(13)
 Global("SanPilRidl","BD1200",1)
 Global("SanSodPamp","BD0130",1)
 Global("Sansusp","bd0102",1)
@@ -129,6 +129,7 @@ Global("SanSoDBook","LOCALS",1)
 Global("SanBhaal","bd2000",2)
 Global("SanBDdream2","LOCALS",1)
 Global("SanBdInfiltrate","Global",1)
+Global("bd_spawn_cultist","bd7220",2)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])

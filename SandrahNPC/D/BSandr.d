@@ -4807,8 +4807,7 @@ DO ~ SetGlobal("SanHadBjor","GLOBAL",2) ~
 ==  BSANDR ~ I have quite some healing skills myself. Please hold still while I take a closer look at your wounds. (Sandrah is now standing very close to Bjornin and starts to unbutton his shirt.)~
 == Bjorni ~ Mylady, maybe it is better to get out of this public area for your examination. (His breathing is excited.).~
 = ~ I have a room upstairs in this inn, where you may continue your...healing.~
-==  BSANDR ~ (Sandrah takes Bjornin's hand) Lead on then, brave warrior, let us not allow you to suffer any longer. ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
-EXIT
+==  BSANDR ~ (Sandrah takes Bjornin's hand) Lead on then, brave warrior, let us not allow you to suffer any longer. ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 
 // Bjornin 2nd visit
@@ -4820,8 +4819,8 @@ DO ~SetGlobal("SanHadBjor","GLOBAL",7)~
 == BSANDR ~ Please tell me, what is on your mind?~
 == Bjorni ~ Your healing makes me feel so whole again, but I am still not completely restored. Would it be too much for me to ask you to give me another kind treatment?~
 == BSANDR ~ Of course not. It is my duty and my pleasure to help an *experienced warrior* to recover his full strength. Have you still rented that cosy little room upstairs? ~
-== Bjorni ~ Not only that, I have in addition a bottle of Calimshan wine to accompany the *medication*. ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
-EXIT
+== Bjorni ~ Not only that, I have in addition a bottle of Calimshan wine to accompany the *medication*. ~ 
+== BSANDR ~ Lead on, my paladin.~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 //Edwin Warning
 

@@ -7788,6 +7788,8 @@ EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Sod/SandrahSoD.baf~
 
 EXTEND_TOP
+~BD7220.bcs~ ~SandrahNPC/Sod/bd7220warn.baf~
+EXTEND_TOP
 ~BD7230.bcs~ ~SandrahNPC/Sod/bd7230Cyric.baf~
 EXTEND_TOP
 ~BD0130.bcs~ ~SandrahNPC/Sod/bd0130Jenleave.baf~
