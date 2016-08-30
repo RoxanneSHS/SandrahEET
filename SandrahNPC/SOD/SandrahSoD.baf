@@ -69,8 +69,8 @@ OR(2)
 PartyHasItem("BDBook11")
 Global("Chapter","Global",10)
 OR(2)
-AreaCheck("db2000")
-AreaCheck("db3000")
+AreaCheck("bd2000")
+AreaCheck("bd3000")
 Delay(12)
 THEN
 RESPONSE #100

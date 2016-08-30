@@ -202,8 +202,8 @@ DO~SetGlobal("SanBhaal","bd2000",3)~
 ==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~Here we are, Cyric's granddaughter and a son of Bhaal...~
 ==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~Here we are, Cyric's granddaughter and a daughter of Bhaal...~
 END
-++~Here it all begun - or ended.~ + BhalBri2
-++~Here it all begun - or ended. And we are holding each other's hand where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
+++~Here it all began - or ended.~ + BhalBri2
+++~Here it all began - or ended. And we are holding each other's hand where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
 
 CHAIN
 IF ~~THEN CVSandrJ BhalBri2
