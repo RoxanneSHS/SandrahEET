@@ -8309,3 +8309,23 @@ RESPONSE #100
 SetGlobal("SanRetKarli","LOCALS",1)
 END
 
+IF
+GlobalLT("Chapter","Global",14)
+Dead("Brage")
+Global("PCKilledBrage","LOCALS",0)
+THEN
+RESPONSE #100
+StartCutSceneMode()
+DisplayStringWait(Myself,23379) // Murderer! You will pay for this!
+LeaveParty()
+SetGlobal("PCKilledBrage","LOCALS",1)
+ChangeAIScript("RTSancop",OVERRIDE)
+ChangeAIScript("Fighter3",CLASS)
+ChangeAIScript("Pries10b",DEFAULT)
+ActionOverride("Pellig",Enemy())
+SetGlobal("HaiassJumpOn","GLOBAL",0)
+ActionOverride("Haiass",EscapeArea())
+Enemy()
+AttackOneRound(Player1)
+EndCutSceneMode()
+END
