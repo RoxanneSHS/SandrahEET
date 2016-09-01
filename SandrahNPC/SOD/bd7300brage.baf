@@ -1,5 +1,8 @@
 IF
+OR(3)
 PartyHasItem("BDSilk01")
+PartyHasItem("BDamul01")
+OpenState("Door01",TRUE)
 Global("MakeBrage","BD7300",0)
 THEN
 RESPONSE #100
