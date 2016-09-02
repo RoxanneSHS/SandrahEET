@@ -55,7 +55,15 @@ SetGlobal("SanHeph","LOCALS",1)
 END
 
 IF
-Global("SanHeph","LOCALS",1)
+Global("SanHeph","LOCALS",0)
+PartyHasItem("BDMisc21")
+THEN
+RESPONSE #100
+SetGlobal("SanHeph","LOCALS",2)
+END
+
+IF
+!Global("SanHeph","LOCALS",0)
 Global("SanDBdoubt","LOCALS",1)
 Global("SanSodQuest","Global",4)
 THEN

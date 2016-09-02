@@ -141,7 +141,7 @@ END
 ++~Shadows of the past...wherever we go, it seems we can't escape them.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanSodQuest","Global",5)~THEN CVSandrJ SodHeph1
+IF WEIGHT #-2~Global("SanSodQuest","Global",5) Global("SanHeph","LOCALS",1)~THEN CVSandrJ SodHeph1
 ~*Sandrah studies the annotated crusader tract you found on a dead woman.*~
 DO~SetGlobal("SanSodQuest","Global",6)~
 END
@@ -160,6 +160,31 @@ CHAIN
 IF~~THEN CVSandrJ  SodHeph3
 ~The only one we have seen until now to have some influence on her seems to be this Hephernaan who is also mentioned here in the pamphlet.~
 =~If what is written here is true, he has triggered a large part of the events we see unravel. And he may have his own agenda...~
+END
+++~I will try to remember the name.~EXIT
+++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~We neither know enough about any of our opponents yet, it seems.~EXIT
+
+CHAIN
+IF WEIGHT #-2~Global("SanSodQuest","Global",5) Global("SanHeph","LOCALS",2)~THEN CVSandrJ SodHeph11
+~*Sandrah studies the ritual notes you found on a dead cultist.*~
+DO~SetGlobal("SanSodQuest","Global",6)~
+END
+++~What do you make out of that?~ + SodHeph12
+++~You see something that I have missed?~ + SodHeph12
+
+CHAIN
+IF~~THEN CVSandrJ  SodHeph12
+~Just like the mighty bhaalspawn from Baldur's Gate is not alone, this is true for the Shining Lady as well. We should not ignore those close to her. Even if she shines, there is darkness close to her-~
+END
+++~The Hooded Man?~ + SodHeph13
+++~That mage who seemed to be her advisor?~ + SodHeph13
+++~Whom do you talk of?~ + SodHeph13
+
+CHAIN
+IF~~THEN CVSandrJ  SodHeph13
+~The only one we have seen until now to have some influence on her seems to be this Hephernaan who is also author of this scroll dealing with how to raise an army of undead.~
+=~If what I think is true, he has triggered a large part of the events we see unravel. And he may have his own agenda...~
 END
 ++~I will try to remember the name.~EXIT
 ++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
