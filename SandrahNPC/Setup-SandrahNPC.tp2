@@ -7801,6 +7801,8 @@ EXTEND_TOP
 ~BD7300.bcs~ ~SandrahNPC/Sod/bd7300brage.baf~
 EXTEND_TOP
 ~BD6000.bcs~ ~SandrahNPC/Sod/bd6000peljump.baf~
+EXTEND_TOP
+~BD0104.bcs~ ~SandrahNPC/Sod/bd0104join.baf~
 
 COPY_EXISTING ~kit.ids~ ~override~ //Kit fixes 
   REPLACE_TEXTUALLY ~0x0000 BARBARIAN~			  ~0x40000000 BARBARIAN~

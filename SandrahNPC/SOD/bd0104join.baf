@@ -1,0 +1,13 @@
+IF
+Global("chapter","global",13)
+Global("bd_plot","Global",621)
+Global("SanSodQuest","Global",8)
+Global("SanInJail","bd0104",0)
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanInJail","bd0104",1)
+MoveGlobal("bd0104","CVSandr",[1141.864])
+Wait(1)
+ActionOverride("CVSandr",JoinParty())
+END

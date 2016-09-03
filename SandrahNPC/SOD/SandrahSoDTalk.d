@@ -331,9 +331,10 @@ IF~~THEN CVSandrJ BDFin4
 CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",9)~THEN CVSandrJ BDJail1
 ~My besta friend Imoen - there are still friends you can always count on.~
+=~Without her help I could not made to you in time.~
 DO~ SetGlobal("SanSodQuest","Global",10)~
 END
-++~Yes, there are. Imoen - and you.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~Yes, there are such friends. Imoen - and you.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
 ++~I never doubted her loyalty, my *sister* will always be there for me.~EXIT
 ++~I never doubted her loyalty, hers and yours.~ DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
 
