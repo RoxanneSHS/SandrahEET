@@ -57,6 +57,7 @@ END
 IF
 Global("SanHeph","LOCALS",0)
 PartyHasItem("BDMisc21")
+!AreaCheck("BD5300")
 THEN
 RESPONSE #100
 SetGlobal("SanHeph","LOCALS",2)
@@ -124,6 +125,14 @@ SetGlobal("SanSodQuest","Global",9)
 END
 
 IF
+Global("SanSodEntrap","Global",0)
+PartyHasItem("BDBook01")
+THEN
+RESPONSE #100
+SetGlobal("SanSodEntrap","Global",1)
+END
+
+IF
 OR(13)
 Global("SanPilRidl","BD1200",1)
 Global("SanSodPamp","BD0130",1)
@@ -175,9 +184,10 @@ SetGlobal("SanSoDSkie","Global",3)
 END
 
 IF
-OR(2)
+OR(3)
 Global("SanSoDSkie","Global",1)
 Global("SanSoDSkie","Global",3)
+Global("SanSodEntrap","Global",1)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])

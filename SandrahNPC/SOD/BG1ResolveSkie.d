@@ -5,14 +5,34 @@ I_C_T Boanaste 4 SanSoDSkie
 ==CVSandrJ IF~InParty("CVSandr")~THEN~(Whispers) Skie...Skie Silvershield.~END
 
 CHAIN
+IF WEIGHT #-4~Global("SanSodEntrap","Global",1)~THEN BSandr Entrap1
+~An expertise on magical entrapments - my love, we should keep this book for me to study when this battle is over.~ 
+DO~SetGlobal("SanSodEntrap","Global",2)~
+END
+++~Anything of imminent help for the tasks at hand?~+ Entrap2
+++~Your hunger for wisdom lets you forget what is going on right in front of you.~+ Entrap2
+++~Who knows when we need some knowledge like that...better be prepared, just in case.~+ Entrap2
+
+CHAIN
+IF~~THEN BSandr Entrap2
+~There is no imminent use for this knowledge, but it seems our foe care about the subject and thus we should be prepared.~
+=~We found some captured souls already during our travels, Carsa's jar or some souldagger, if I may remind you. Knowledge has often helped us in the past.~
+END
+++~Maybe that is why I still drag you along.~EXIT
+++~(Wink) And maybe that is why I still drag you along.~EXIT
+
+CHAIN
 IF WEIGHT #-4~Global("SanSoDSkie","Global",1)~THEN BSandr Backlive1
 ~She gives us the soul of Skie Silvershield, quite some invitation.~
 DO~SetGlobal("SanSoDSkie","Global",2)~
 =~Whatever you decide to do with the strange mistresses' offer - we must restore Entar Silvershield's daughter. Be it for her own sake or to clean our names from the accusation of being her murderers.~
 END
-++~Are you able to do this, my healer?~ + Backlive2
-++~How are we going to do that, some dark ritual or such?~  + Backlive2
-++~Will it be possible to restore a version of Skie with some less *words per minute*?~ + Backlive2
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~ + Backlive2
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~  + Backlive2
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~ + Backlive2
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~ + Backlive3
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~  + Backlive3
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~ + Backlive3
 
 CHAIN
 IF~~THEN BSandr Backlive2
@@ -22,13 +42,21 @@ END
 ++~I will keep that in mind, counselor. We may do that some time.~EXIT
 
 CHAIN
-IF WEIGHT #-4~Global("SanSoDSkie","Global",3)~THEN BSandr Backlive1
+IF~~THEN BSandr Backlive3
+~Remember that book we once found at Dragonspeare Castle...actually very close to where Skie's soul was entrapped. I have studied it and know what to do.~
+=~We cannot do it right here in the road, but any nearby temple of a good deity would do, where the dagger would be destroyed and the captive soul set free.~
+END
+++~Fine, let's go to a temple right now.~EXIT
+++~I will keep that in mind, counselor. We may do that some time.~EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("SanSoDSkie","Global",3)~THEN BSandr Backlive7
 ~This is the right place to free poor Skie from her soul prison. We shall not prolong her suffering.~
 =~You are present, the one who's hand was made to hold the dagger when her soul was taken, so we have all we need for the ritual.~
 DO~SetGlobal("SanSoDSkie","Global",4) ClearAllActions() StartCutSceneMode() Wait(2)StartCutScene("CVSkieR")~ EXIT
 
 CHAIN
-IF WEIGHT #-4~Global("SanSoDSkie","Global",5)~THEN Skie Backlive3
+IF WEIGHT #-4~Global("SanSoDSkie","Global",5)~THEN Skie Backlive8
 ~Who are you? What are you doing here? What AM I DOING HERE? Where is *here* anyway? Help! Help!~
 DO~SetGlobal("SanSoDSkie","Global",6) AddexperienceParty(10500)~
 ==CVSandrJ~Skie Silvershield, calm down. You need not to worry, we have just helped you. Look around, this is a temple, a safe place.~
