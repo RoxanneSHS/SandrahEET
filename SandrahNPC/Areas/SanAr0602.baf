@@ -1,6 +1,14 @@
 IF
-OnCreation()
-Exists("CVSandr")
+InParty("CVSandr")
+Global("Sancleanslot","ar0602",0)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("Sancleanslot","ar0602",1)
+ActionOverride("CVSandr",ReallyForceSpellRES("SanHamCL",Myself))
+END
+
+IF
 OR(2)
 Global("SandrahJoined","GLOBAL",52)
 Global("SandrahJoined","GLOBAL",6)
@@ -8,7 +16,9 @@ Global("SanItmBG2","GLOBAL",0)
 THEN
 RESPONSE #100
 ActionOverride("CVSandr",CreateItem("sanparc",0,0,0))
+Wait(2)
 ActionOverride("CVSandr",CreateItem("sanbook",0,0,0))
+Wait(2)
 SetGlobal("SanItmBG2","GLOBAL",3)
 SetGlobal("A7-Cutscene","ar0602",11)
 SetGlobal("EntJar1","AR0602",2)
