@@ -1,4 +1,16 @@
 IF
+AreaCheck("ar0602")
+OR(2)
+Global("SandrahJoined","GLOBAL",52)
+Global("SandrahJoined","GLOBAL",6)
+Global("SanstartAI","ar0602",0)
+THEN
+RESPONSE #100
+SetGlobal("SanstartAI","ar0602",1)
+ChangeAIScript("Sanact",DEFAULT)
+END
+
+IF
 AreaCheck("bd0130")
 OR(2)
 PartyHasItem("bdshpam1")

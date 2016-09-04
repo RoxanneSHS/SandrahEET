@@ -1,4 +1,18 @@
 IF
+	AreaCheck("ar0602")
+	See(Player1)
+	OR(2)
+		Global("SandrahJoined","GLOBAL",52)
+		Global("SandrahJoined","GLOBAL",6)
+	Global("SanstartAI","ar0602",1)
+THEN
+	RESPONSE #100
+		SetGlobal("SanstartAI","ar0602",2)
+		MoveToObject(Player1)
+		Dialogue(Player1)
+END
+
+IF
 	BreakingPoint()
 	StateCheck(Myself,STATE_PANIC)
 THEN
