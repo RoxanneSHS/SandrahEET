@@ -1048,15 +1048,20 @@ END
 
 IF ~~THEN BEGIN SanremIren2
 SAY~ The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
-IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
-IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
+IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ GOTO SanremIren4
+IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. Foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ GOTO SanremIren4
 END
                      
 IF ~~THEN BEGIN SanremIren3
 SAY~ Yes, we heard that name there. The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
-IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
-IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ EXIT
+IF~ Global("SanIreHint","LOCALS",2)~ THEN REPLY~ Do you remember that scroll we found in the Doom Mountain when we fought that mysterious hooded creature. It was signed "I." - like Irenicus.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ GOTO SanremIren4
+IF~ !Global("SanIreHint","LOCALS",2)~ THEN REPLY~ It really must be someone of great potential and resources to build up a complex like this below a capital city. foe are getting mightier since we defeated Sarevok, just like you warned me.~ DO ~ SetGlobal("SanHeardIren","GLOBAL",2)~ GOTO SanremIren4
 END
+
+IF ~~THEN BEGIN SanremIren4
+SAY~I would not be astonished if we find out that we already met this man a couple of times.~
+IF~~THEN REPLY~The hooded man...~EXIT
+IF~~THEN REPLY~I owe him a lot already and if he is that hooded man I have double reasons to get a hand on him.~EXIT 
 
 IF ~ Global("SanYoshDun","GLOBAL",2) ~ THEN BEGIN SanYoshDunNoYosh1
 SAY ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the center of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~

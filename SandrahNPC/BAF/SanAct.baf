@@ -1,6 +1,16 @@
 IF
+	ActionListEmpty()
+	Class(LastSeenBy(Myself),HOBGOBLIN)
+	InWeaponRange(LastSeenBy(Myself))
+THEN
+	RESPONSE #100
+		AttackReevaluate(LastSeenBy(Myself),30)
+END
+
+IF
 	AreaCheck("ar0602")
 	See(Player1)
+	CombatCounter(0)
 	OR(2)
 		Global("SandrahJoined","GLOBAL",52)
 		Global("SandrahJoined","GLOBAL",6)
