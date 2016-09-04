@@ -22,6 +22,19 @@ END
 ++~(Wink) And maybe that is why I still drag you along.~EXIT
 
 CHAIN
+IF WEIGHT #-4~Global("bd_sandrah_ot","bd4100",1)~THEN CVSandrJ Killskie1
+~(Sandrah's face is pale as she turns to you after having inspected Skie's corpse.)~
+DO~SetGlobal("bd_sandrah_ot","bd4100",2)~
+END
+++~Can you do nothing for her?~+ Killskie2
+++~What has happened here...is there anything to prove that things are not what they seem?~+ Killskie2
+
+CHAIN
+IF~~THEN CVSandrJ Killskie2
+~I know you did not kill her, even if you are unsure about yourself. The fact that bothers me is that the killer took Skie's soul. We will have a hard time to prove your innocence since we cannot restore the only witness we have.~
+=~The killer used something like a soultaker weapon, without the weapon that holds Skie's soul, I can do nothing for her.~EXIT
+
+CHAIN
 IF WEIGHT #-4~Global("SanSoDSkie","Global",1)~THEN BSandr Backlive1
 ~She gives us the soul of Skie Silvershield, quite some invitation.~
 DO~SetGlobal("SanSoDSkie","Global",2)~

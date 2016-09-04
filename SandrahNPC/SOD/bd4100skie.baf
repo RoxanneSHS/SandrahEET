@@ -1,0 +1,8 @@
+IF
+Global("bd_plot","global",591)
+Global("bd_sandrah_ot","bd4100",0)
+IfValidForPartyDialog("CVsandr")
+THEN
+RESPONSE #100
+SetGlobal("bd_sandrah_ot","bd4100",1)
+END

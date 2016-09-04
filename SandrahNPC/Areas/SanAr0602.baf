@@ -50,4 +50,14 @@ RESPONSE #100
 SetGlobal("Itemacorn","GLOBAL",1)
 END
 
-
+IF
+Global("K#MinscImport","AR0602",1)
+InParty("Minsc")
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("K#MinscImport","AR0602",2)
+ActionOverride("Minsc",CreateItem("IMOENHP1",1,0,0)) 
+ActionOverride("Minsc",FillSlot(SLOT_BELT))
+Continue()
+END

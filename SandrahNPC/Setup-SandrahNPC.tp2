@@ -7802,6 +7802,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~BD6000.bcs~ ~SandrahNPC/Sod/bd6000peljump.baf~
 EXTEND_TOP
+~BD4100.bcs~ ~SandrahNPC/Sod/bd4100skie.baf~
+EXTEND_TOP
 ~BD0104.bcs~ ~SandrahNPC/Sod/bd0104join.baf~
 
 COPY_EXISTING ~kit.ids~ ~override~ //Kit fixes 

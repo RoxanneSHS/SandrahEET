@@ -331,7 +331,7 @@ IF~~THEN CVSandrJ BDFin4
 CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",9)~THEN CVSandrJ BDJail1
 ~My besta friend Imoen - there are still friends you can always count on.~
-=~Without her help I could not made to you in time.~
+=~Without her help I could not have made it to you in time.~
 DO~ SetGlobal("SanSodQuest","Global",10)~
 END
 ++~Yes, there are such friends. Imoen - and you.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
@@ -402,7 +402,7 @@ I_C_T BDCaelar 39 SanBdInfiltrate
 ==BDDelanc IF~InParty("CVSandr")~THEN~Your arrogance shall be your downfall but my men and me will stay alive.~
 END
 
-I_C_T BDImoen 93 SanBDImoReunite
+I_C_T BDImoen 92 SanBDImoReunite
 ==BDImoen IF~InParty("CVSandr")~THEN~At least you got my besta friend to take some care of ya. Oh, Sandrah, soooo good to see you again - and the big ol' pussycat.~
 ==Pellig IF~InMyArea("Pellig")~THEN~Purr.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~We have a lot of tales to tell, but now is not the time. You know better than we do, how bad things are.~
