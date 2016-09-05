@@ -547,6 +547,7 @@ END
 
 //  Boo and Pelligram
 IF
+!Global("EndofBG1","Global",2)
 InMyArea("Pellig")
 InParty("Minsc")
 !AreaCheck("BG4800")
@@ -556,6 +557,18 @@ Global("SanBooPel","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("SanBooPel","GLOBAL",1)
+END
+
+IF
+Global("EndofBG1","Global",2)
+InMyArea("Pellig")
+InParty("Minsc")
+Global("HaiassJumpOn","GLOBAL",1)
+!AreaType(DUNGEON)
+Global("SanBooPel","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanBooPel","GLOBAL",11)
 END
 
 IF
@@ -697,7 +710,7 @@ See("Minsc")
 !See([ENEMY])
 CombatCounter(0)
 !StateCheck("Minsc",CD_STATE_NOTVALID)
-OR(11)
+OR(12)
 Global("SanBooPel","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",3)
@@ -709,6 +722,7 @@ Global("SanMinsHur2","LOCALS",1)
 Global("SanMinsParty","LOCALS",1)
 Global("SanMinsParty","LOCALS",3)
 Global("X#MinscBoo","GLOBAL",2)
+Global("SanBooPel","GLOBAL",11)
 THEN
 RESPONSE #100
 Interact("CVSandr")
@@ -4615,6 +4629,7 @@ SetGlobal("JarKhalBant1","GLOBAL",1)
 END
 
 IF
+!Global("ENDOFBG1","GLOBAL",2)
 Global("SanFrJah","LOCALS",0)
 GlobalGT("Chapter","GLOBAL",3)
 InParty("Jaheira")

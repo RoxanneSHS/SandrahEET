@@ -851,3 +851,17 @@ END
 CHAIN 
 IF~~THEN BSandr CollNightVis4
 ~No.~EXIT
+
+CHAIN
+IF ~ Global("SanBooPel","GLOBAL",11) ~ THEN BSANDR SanBoo17
+~ Look at this.~
+DO ~ SetGlobal("SanBooPel","GLOBAL",2)~
+== Pellig ~ (Pelligram sits on her hindlegs beside Minsc and stares at Boo who is sitting on the big warrior's shoulder.)~
+== BMinsc ~ Boo likes the big cat very much, you know, Sandrah.~
+== BSANDR ~ Maybe. It seems to be rather interest than hunger I sense in her.~
+== BMinsc ~ Big cat would never eat Boo. Do you not see, they are both of the same warrior spirit. They understand each other without need for words.~
+== BSANDR ~ (Sandrah has moved next to Pelligram and strokes the pantheress' head gently.)~
+== Pellig ~ Purr.~
+== BMinsc ~ Boo likes Sandrah also very much. Boo says, Sandrah has a great warrior spirit herself, just like her big cat. We are all friends.~
+== BSANDR ~ Yes, we are. (Sandrah gently touches Boo without Minsc objecting to it.)~
+EXIT
