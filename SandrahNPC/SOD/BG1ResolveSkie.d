@@ -31,7 +31,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ Killskie2
-~I know you did not kill her, even if you are unsure about yourself. The fact that bothers me is that the killer took Skie's soul. We will have a hard time to prove your innocence since we cannot restore the only witness we have.~
+~I know you did not kill her, even if you are unsure about yourself. The fact that bothers me is that the killer took Skie's soul. We will have a hard time to prove your innocense since we cannot restore the only witness we have.~
 =~The killer used something like a soultaker weapon, without the weapon that holds Skie's soul, I can do nothing for her.~EXIT
 
 CHAIN
@@ -89,3 +89,22 @@ DO~SetGlobal("SanSoDSkie","Global",6) AddexperienceParty(10500)~
 END
 ++~Well done, counselor. I hope she will remember to restore our reputation when she gets to Baldur's Gate.~EXIT
 ++~Her appearance in Baldur's Gate will remove all accusations of murder - even if I doubt we would be celebrated heroes again, at least we are no longer criminals.~ EXIT
+
+I_C_T Imoen2J 142 SanCloneElle
+==CVSandrJ IF~InParty("CVSandr")~THEN~Another piece of the puzzle, Ellesime...~
+==Imoen2J IF~InParty("CVSandr")~THEN~That beautiful elven queen for which Prism died to make her sculpture...your knowledge is confusing as so often, besta friend.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~An elven queen indeed, Imoen. Another hint to some events in a hidden city of the elves.~
+==Imoen2J IF~InParty("CVSandr")~THEN~If ya would've asked me, besta friend, that Irenicus has nothing elvish on 'im, no and no.~DO~SetGlobal("SanCloneElle","Global",2)~END
+
+CHAIN
+IF~Global("SanCloneElle","Global",1)~THEN CVSandrJ SanCloneEllePC
+~Another piece of the puzzle, Ellesime...~
+DO~SetGlobal("SanCloneElle","Global",2)~
+END
+++~That beautiful elven queen for which Prism died to make her sculpture...your knowledge is confusing as so often, Sandrah.~+ SanCloneEllePC2
+++~That Irenicus has nothing elvish on him, if you ask me. From the little I got to see of him, at least not.~+ SanCloneEllePC2
+
+CHAIN
+IF~~THEN CVSandrJ SanCloneEllePC2
+~An elven queen indeed, <CHARNAME>. Another hint to some events in a hidden city of the elves.~
+=~*She says no more, obviously lost in her thoughts.*~EXIT

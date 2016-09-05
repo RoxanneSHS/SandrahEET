@@ -22,6 +22,16 @@ SetGlobal("SanYoshDunImo","GLOBAL",2)
 END
 
 IF
+InParty("CVSandr")
+!InParty("Imoen2")
+Global("SanCloneElle","Global",0)
+Dead("Clone1")
+THEN
+RESPONSE #100
+SetGlobal("SanCloneElle","Global",1)
+END
+
+IF
 Global("Itemacorn","GLOBAL",0)
 PartyHasItem("Misc4n")
 THEN
