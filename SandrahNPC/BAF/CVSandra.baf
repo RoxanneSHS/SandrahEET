@@ -572,6 +572,7 @@ SetGlobal("SanBooPel","GLOBAL",11)
 END
 
 IF
+!Global("EndofBG1","Global",2)
 InParty("Minsc")
 AreaType(CITY)
 !AreaCheck("BG4800")
@@ -583,12 +584,33 @@ SetGlobal("SanBooTlk","GLOBAL",1)
 END
 
 IF
+Global("EndofBG1","Global",2)
+InParty("Minsc")
+AreaType(CITY)
+!AreaCheck("ar0700")
+TimeOfDay(NIGHT)
+Global("SanBooTlk","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanBooTlk","GLOBAL",21)
+END
+
+IF
 Global("SanBooTlk","GLOBAL",2)
 InParty("Minsc")
 HPPercentLT("Minsc",70)
 THEN
 RESPONSE #100
 SetGlobal("SanBooTlk","GLOBAL",3)
+END
+
+IF
+Global("SanBooTlk","GLOBAL",22)
+InParty("Minsc")
+HPPercentLT("Minsc",70)
+THEN
+RESPONSE #100
+SetGlobal("SanBooTlk","GLOBAL",23)
 END
 
 IF
@@ -625,6 +647,7 @@ SetGlobal("SanBooTlk","GLOBAL",11)
 END
 
 IF
+!Global("EndofBG1","Global",2)
 GlobalGT("SanBooTlk","GLOBAL",3)
 AreaType(DUNGEON)
 InParty("Minsc")
@@ -710,7 +733,7 @@ See("Minsc")
 !See([ENEMY])
 CombatCounter(0)
 !StateCheck("Minsc",CD_STATE_NOTVALID)
-OR(12)
+OR(14)
 Global("SanBooPel","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",3)
@@ -723,6 +746,8 @@ Global("SanMinsParty","LOCALS",1)
 Global("SanMinsParty","LOCALS",3)
 Global("X#MinscBoo","GLOBAL",2)
 Global("SanBooPel","GLOBAL",11)
+Global("SanBooTlk","GLOBAL",21)
+Global("SanBooTlk","GLOBAL",23)
 THEN
 RESPONSE #100
 Interact("CVSandr")

@@ -87,5 +87,6 @@ Global("SanSoDSkie","Global",6)
 THEN
 RESPONSE #100
 SetGlobal("SanSoDSkie","Global",7)
+SetGlobal("K#Drawbridge","BG0900",2)
 CloseDoor("DoorDraw")
 END
