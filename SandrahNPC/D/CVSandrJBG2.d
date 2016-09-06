@@ -3163,22 +3163,21 @@ INTERJECT HENDAK 33 SanHendR1
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ It is so wonderful to see you and your companions free once again. Have you made plans for the future already?~
 ==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ Mylady, you have played a very important role in our release. My heartfelt thanks go to the <CHARNAME>'s whole group but to you and your courage especially.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ I will fight slavery with all my might wherever I encounter it, Hendak.~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ This is good to hear from a friend as powerful as you are, beautiful lady. You are a strong, courageous, and very impressive person...As to our plans...well, you will find myself here whenever your path leads you to the *New* Copper Coronet. We are about to convert the arena into something better. The Copper Coronet is a nest of inhuman slave drivers no longer!~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ This is good to hear from a friend as powerful as you are, mylady. The new Copper Coronet is no longer a place of such cruelty to humans or beasts.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ Then I hope that <CHARNAME> will steer our ways to here frequently, my friend.~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ I dearly hope he will, so that I may show my fearless heroine my gratitude for her intervention. Maybe you would be interested to get to know the one you have freed a bit closer.~
-== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ I am sure that I will reveal quite some qualities in the man who is now free to develop according to his formerly subdued talents.~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ I dearly hope <PRO_HESHE> will, so that I may show my fearless heroine my gratitude for her intervention. ~
+== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ Gratitude is not a good basis for a relationship among people who are equal. Be a proud man once again, Hendak, proud enough to venture for any woman he desires.~
 END HENDAK 210
 
 INTERJECT HENDAK 33 SanHendR2
-== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ Hendak, I have really anticipated seeing you again - and well restored as the man you have a right to be.~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I was, for many years, a slave in the hands of those wretched barbarians, and the only people I encountered were either scared fellow slaves or brutal torturers...  ~
+== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ Hendak, I have really longed for seeing you again - and as the man you have a right to be.~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I was a slave steered by the hands and will of others. You gave me hope - including the strength to no longer hide my feelings. ~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ (Sandrah has moved close to the aging fighter and has gently taken his hand in the comforting way you know so well.)~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ And now you stand before me... in all your beauty, the heroine who freed the slaves, and gave me back my own life. I...~
-= ~ Oh, hells! Forgive this tired, stammering soldier! I feel your gentle caring eyes upon me, and I cannot find the right words. Now, since I already betrayed myself, let me put my feelings into words. ~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ You are a tough fighter but it seems you know just too well when to let down your defenses...~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ (Sandrah's smile is inviting the former slave to continue.)~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ Sandrah, I have dreamed of being close to you... to lie with you, a strong, beautiful woman in my arms... as a man, and to forget for a while the terrible visions of the past.~
-== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ To be a man once again and with woman...~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ ...and to serve her as well as this maltreated body can. A voluntary slave to the heart of the woman who deserves such commitment.~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I have gained back a life but in love I am a lonely man.~
+== CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ You are aware that I am just a passing wanderer, seeking rest and shelter for a night every now and then...~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ ...and I am an innkeeper to serve her as best as I can. A voluntary slave to the heart of the woman who deserves such commitment.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I will not be a mistress to command anyone, Hendak, but willing to a partner who is my equal.~
 END HENDAK 211
 

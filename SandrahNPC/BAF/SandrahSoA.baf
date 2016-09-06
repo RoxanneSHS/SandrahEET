@@ -554,7 +554,6 @@ END
 IF
 AreaCheck("ar0406")
 See("Hendak")
-Global("SanRomPath","GLOBAL",1)
 Global("SanHendAff","GLOBAL",0)
 OR(2)
 Global("HendakReleased","AR0406",3)
