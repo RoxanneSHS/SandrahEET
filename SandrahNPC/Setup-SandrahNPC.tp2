@@ -6296,6 +6296,15 @@ SAY UNIDENTIFIED_DESC Katana
 SAY DESC @913
 END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~sacroll.itm~ THEN BEGIN
+COPY ~SandrahNPC/mods/sacroll.itm~ ~override~
+SAY NAME1 @976
+SAY NAME2 @976
+SAY DESC @977
+COPY_EXISTING ~haegan.cre~ ~override~
+ADD_CRE_ITEM ~sacroll~ #0 #0 #0 ~IDENTIFIED~ ~inv12~
+END
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~c2sw1h02.itm~ THEN BEGIN
 COPY_EXISTING ~Sdnpcsw3.itm~ ~override/c2sw1h02.itm~
 END

@@ -899,3 +899,16 @@ DO ~ SetGlobal("SanBooTlk","GLOBAL",24) RealSetGlobalTimer("SanMinskInt","GLOBAL
 == BMinsc IF~InParty("CVShau")~THEN~Boo says you are right, I am Shauhana's guardian now by heart as once I was Dynaheir's guardian by oath. ~
 == BSANDR ~ So be it. (Sandrah places a small kiss on Boo's nose. She stand on her tiptoes and just reaches the tip of Minsc's chin for a kiss there.)~  DO ~ ForceSpell("Minsc",CLERIC_HEAL)~
 EXIT
+
+CHAIN
+IF ~ Global("SanMinsDung","LOCALS",11) ~ THEN BSANDR SanBooDung
+~ Hello, Boo?~
+DO ~ SetGlobal("SanMinsDung","LOCALS",12) RealSetGlobalTimer("SanMinskInt","GLOBAL",500) ~
+== BMinsc ~ Boo says that you are the greatest fighter we have ever seen. Fearless and beautiful. Minsc almost forgot to fight himself from all the watching.~
+== BSANDR ~ Thank you for the compliment. I means much from the greatest space hamster warrior I know.~
+== BMinsc ~ (Laughs) Boo likes to know how many other space hamster warriors you have ever met.~
+== BSANDR ~ Enough to know who is the best of them. Minsc, we make a good team together, but please do not look at me too much during the fight or I must heal all your nasty wounds afterwards.~
+== BMinsc ~ Not too bad for me, I love your healing. But you are right, I can spend all the time after the fight to admire your beauty and grace. Minsc has learned to concentrate on fighting alone when it is need to fight. Our enemies always take advantage if me and Boo do not concentrate enough.~
+== BSANDR ~ Fine. You do not need to bleed from your wounds if you want my company after a fight. You are always welcome, Minsc.~
+== BMinsc ~ Boo says he thinks we have just made a rendezvous with a very fine special lady.~
+EXIT

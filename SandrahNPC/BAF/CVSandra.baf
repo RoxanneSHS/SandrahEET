@@ -658,6 +658,17 @@ SetGlobal("SanMinsDung","LOCALS",1)
 END
 
 IF
+Global("EndofBG1","Global",2)
+GlobalGT("SanBooTlk","GLOBAL",3)
+AreaType(DUNGEON)
+InParty("Minsc")
+Global("SanMinsDung","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanMinsDung","LOCALS",11)
+END
+
+IF
 InParty("Minsc")
 GlobalGT("SanBooTlk","GLOBAL",6)
 HPPercentLT("Minsc",60)
@@ -733,7 +744,7 @@ See("Minsc")
 !See([ENEMY])
 CombatCounter(0)
 !StateCheck("Minsc",CD_STATE_NOTVALID)
-OR(14)
+OR(15)
 Global("SanBooPel","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",1)
 Global("SanBooTlk","GLOBAL",3)
@@ -748,6 +759,7 @@ Global("X#MinscBoo","GLOBAL",2)
 Global("SanBooPel","GLOBAL",11)
 Global("SanBooTlk","GLOBAL",21)
 Global("SanBooTlk","GLOBAL",23)
+Global("SanMinsDung","LOCALS",11)
 THEN
 RESPONSE #100
 Interact("CVSandr")
