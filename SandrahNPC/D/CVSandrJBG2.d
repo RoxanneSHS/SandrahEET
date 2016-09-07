@@ -3722,12 +3722,13 @@ CHAIN
 IF WEIGHT #-2~  Global("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
  ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaelan told me to give you a bit o' help to find some work. Listen up, eh!~ 
 DO~SetGlobal("HigherPrice","LOCALS",1)~
-=~Uncle's not told you da full price you gotta pay fa his service.~
+==CVSandrJ~You are a clever boy, Brus. You see and hear a lot, right?~
+=~Like uncle's not told you da full price you gotta pay fa his service?~
 ==CVSandrJ~We should have guessed as much, <CHARNAME>, the shadow thieves give nothing for cheap - except murder.~
 ==Brus2~Now, now, calm yaself, lady. Uncle would've told you of the increase bit by bit like another 20,000 on each visit.~
 ==CVSandrJ~Until which sum would be reached, do you have an idea, boy?~
 ==Brus2~I overheard him and da boss ment'n 150,000, lady...~DO~AddJournalEntry(@978,QUEST)~
-==CVSandrJ~This will be quite some work to gather it, even in a region like Amn.~
+==CVSandrJ~150,000 gold - this will be quite some work to gather it, even in a region like Amn.~
 ==Brus2~Don't despair, I have somethin' for ya.~
 END
   IF ~~ THEN GOTO 13
@@ -3751,3 +3752,28 @@ Kit(Player1,Blackguard)
   IF ~  Class(Player1,DRUID_ALL)
 !Class(Player1,SHAMAN)
 ~ THEN GOTO 12
+
+CHAIN
+IF WEIGHT #-9~ Global("BodiAppear","GLOBAL",7) Global("Linvail","GLOBAL",0) Global("ShadowWork","GLOBAL",1) PartyGoldGT(14999) PartyGoldLT(130000) Global("BodiWork","GLOBAL",0) ~ THEN Gaelan highprice1
+~Coo! Ye be already above 15,000 and think you're fine. But my masters changed their hearts, you were found to be a much more dangerous client than expected.~ 
+==CVSandrJ IF~InParty("CVSandr")~THEN~We know already about the final sum you and your masters were planning to charge us.~
+==Gaelan IF~InParty("CVSandr")~THEN~Coo! I should've known you're none to be fooled, lady. You should be on your way to get the 150,000.~
+END
+IF ~InParty("CVSandr")~ THEN REPLY ~Weasel.~EXIT
+IF ~InParty("CVSandr")~ THEN REPLY ~You will get nothing out of your greed. We will find another way.~EXIT
+IF~!InParty("CVSandr")~ THEN REPLY ~We know already about the final sum you and your masters were planning to charge us.~+ highprice2
+
+CHAIN
+IF~~THEN Gaelan highprice2
+~Coo! I should've known you're none to be fooled, <PRO_LADYLORD>. You should be on your way to get the 150,000.~EXIT
+
+CHAIN
+IF WEIGHT #8 ~  Global("Linvail","GLOBAL",0) Global("ShadowWork","GLOBAL",1) !Global("BodiAppear","GLOBAL",7) PartyGoldGT(129999) Global("BodiWork","GLOBAL",0) ~ THEN Gaelan hashigh
+ ~Coo! Ye be already above 130,000 and need go no further. My masters changed their hearts, and they will accept that sum. It is a competitive rate, I think.~ 
+END
+  IF ~~ THEN REPLY ~Yes, I'm ready to pay your price.~ GOTO 86
+  IF ~~ THEN REPLY ~No, I'm not ready to go just yet. I'll be back.~ GOTO 52
+  IF ~  Global("ImTooSexyForThisBrus","GLOBAL",1)~ THEN REPLY ~Brus mentioned a new deal. Is that the change he spoke of? ~ GOTO 84
+
+
+

@@ -1,6 +1,6 @@
 IF
 GlobalGT("SpawnBrus","GLOBAL",1)
-Global("Chapter","GLOBAL",16)
+Global("Chapter","GLOBAL",14)
 GlobalGT("BodiAppear","GLOBAL",0)
 Global("SanBrynAltern","LOCALS",0)
 THEN

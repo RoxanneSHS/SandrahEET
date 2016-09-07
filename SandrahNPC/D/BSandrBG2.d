@@ -894,8 +894,8 @@ DO ~ SetGlobal("SanBooTlk","GLOBAL",24) RealSetGlobalTimer("SanMinskInt","GLOBAL
 == BMinsc ~ Minsc and Boo must defend the brave hearted Sandrah, not Sandrah must protect Minsc.~
 == BSANDR ~ We are comrades and friends, Minsc, each of us will look and care for the other one. Each of us will provide to the other what he can best, according to his or her talents.~
 == BMinsc ~ Boo says these are wise words. Minsc and Boo will provide shield and sword for Sandrah.~
-== BSANDR ~ Minsc, you already have a witch to protect. I know I can rely on you, but I do not need a guardian.~
-== BMinsc IF~!InParty("CVShau")~THEN~ Boo says you are right, I am Dynaheir's guardian by oath. But I am your protecting friend by heart's command.~
+== BSANDR ~ Minsc, I know I can rely on you, but I do not need a guardian.~
+== BMinsc IF~!InParty("CVShau")~THEN~ Boo says you are right, I was Dynaheir's guardian by oath. But I am your protecting friend by heart's command.~
 == BMinsc IF~InParty("CVShau")~THEN~Boo says you are right, I am Shauhana's guardian now by heart as once I was Dynaheir's guardian by oath. ~
 == BSANDR ~ So be it. (Sandrah places a small kiss on Boo's nose. She stand on her tiptoes and just reaches the tip of Minsc's chin for a kiss there.)~  DO ~ ForceSpell("Minsc",CLERIC_HEAL)~
 EXIT
