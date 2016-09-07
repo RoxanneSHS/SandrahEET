@@ -151,3 +151,12 @@ ReallyForceSpellDeadRES("OHSMODE2",Player1)
 SetInterrupt(TRUE)
 END
 
+IF
+PartyGoldGT(129999)
+Global("BodiAppear","GLOBAL",7) 
+THEN
+RESPONSE #100
+SetGlobal("BodiAppear","GLOBAL",0) 
+Continue()
+END
+

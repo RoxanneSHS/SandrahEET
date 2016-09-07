@@ -13,3 +13,11 @@ ActionOverride("Pellig",JumpToPoint([4321.3104]))
 Wait(2)
 EndCutSceneMode()
 END
+
+IF
+Global("BodiAppear","GLOBAL",0) 
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("BodiAppear","GLOBAL",7) 
+END

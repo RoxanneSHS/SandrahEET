@@ -3698,3 +3698,56 @@ IF~~THEN TRGyp02 GypSanFortn
 ==CVSandrJ~We always have a choice, mylady, it is us who shape our own fate in the end.~
 ==TRGyp02~(Kveroslava has suddenly calmed down again.) We must be strong to withstand fate. Maybe it is such a strength why your future escapes my sight... keep your coins, please. I... don't have the power to discern the path of one such as you.~ DO ~GiveGoldForce(10)
 ActionOverride(Player1,SetDialogue("Player1"))~EXIT
+
+I_C_T Imoen2J 142 SanCloneElle
+==CVSandrJ IF~InParty("CVSandr")~THEN~Another piece of the puzzle, Ellesime...~
+==Imoen2J IF~InParty("CVSandr")~THEN~That beautiful elven queen for which Prism died to make her sculpture...your knowledge is confusing as so often, besta friend.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~An elven queen indeed, Imoen. Another hint to some events in a hidden city of the elves.~
+==Imoen2J IF~InParty("CVSandr")~THEN~If ya would've asked me, besta friend, that Irenicus has nothing elvish on 'im, no and no.~DO~SetGlobal("SanCloneElle","Global",2)~END
+
+CHAIN
+IF~Global("SanCloneElle","Global",1)~THEN CVSandrJ SanCloneEllePC
+~Another piece of the puzzle, Ellesime...~
+DO~SetGlobal("SanCloneElle","Global",2)~
+END
+++~That beautiful elven queen for which Prism died to make her sculpture...your knowledge is confusing as so often, Sandrah.~+ SanCloneEllePC2
+++~That Irenicus has nothing elvish on him, if you ask me. From the little I got to see of him, at least not.~+ SanCloneEllePC2
+
+CHAIN
+IF~~THEN CVSandrJ SanCloneEllePC2
+~An elven queen indeed, <CHARNAME>. Another hint to some events in a hidden city of the elves.~
+=~*She says no more, obviously lost in her thoughts.*~EXIT
+
+CHAIN 
+IF WEIGHT #-2~  Global("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
+ ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaelan told me to give you a bit o' help to find some work. Listen up, eh!~ 
+DO~SetGlobal("HigherPrice","LOCALS",1)~
+=~Uncle's not told you da full price you gotta pay fa his service.~
+==CVSandrJ~We should have guessed as much, <CHARNAME>, the shadow thieves give nothing for cheap - except murder.~
+==Brus2~Now, now, calm yaself, lady. Uncle would've told you of the increase bit by bit like another 20,000 on each visit.~
+==CVSandrJ~Until which sum would be reached, do you have an idea, boy?~
+==Brus2~I overheard him and da boss ment'n 150,000, lady...~DO~AddJournalEntry(@978,QUEST)~
+==CVSandrJ~This will be quite some work to gather it, even in a region like Amn.~
+==Brus2~Don't despair, I have somethin' for ya.~
+END
+  IF ~~ THEN GOTO 13
+  IF ~  OR(2)
+Class(Player1,FIGHTER_ALL)
+Kit(Player1,Blackguard)
+~ THEN GOTO 4
+  IF ~  Class(Player1,BARD_ALL)
+~ THEN GOTO 5
+  IF ~  Class(Player1,CLERIC_ALL)
+~ THEN GOTO 7
+  IF ~  Class(Player1,THIEF_ALL)
+~ THEN GOTO 8
+  IF ~  Class(Player1,RANGER_ALL)
+~ THEN GOTO 9
+  IF ~  Class(Player1,PALADIN_ALL)
+!Kit(Player1,Blackguard)
+~ THEN GOTO 10
+  IF ~  Class(Player1,MAGE_ALL)
+~ THEN GOTO 11
+  IF ~  Class(Player1,DRUID_ALL)
+!Class(Player1,SHAMAN)
+~ THEN GOTO 12
