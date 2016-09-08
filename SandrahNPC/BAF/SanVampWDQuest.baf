@@ -17,9 +17,8 @@ SetGlobal("SanVampWDQuest","GLOBAL",2)
 END
 
 IF
-Global("ENDOFBG1","GLOBAL",2)
 Global("Chapter","GLOBAL",19)
-Global("SanVampWDQuest","GLOBAL",0)
+GlobalLT("SanVampWDQuest","GLOBAL",2)
 THEN
 RESPONSE #100
 SetGlobal("SanVampWDQuest","GLOBAL",2)

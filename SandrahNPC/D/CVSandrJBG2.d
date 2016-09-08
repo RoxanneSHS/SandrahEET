@@ -995,7 +995,7 @@ IF ~~ THEN GOTO BG2Reunion16
 END
 
 IF ~~THEN BEGIN BG2Reunion10
-SAY~ When you see the city outside, I am sure all will be forgotten, Imoen.~
+SAY~ When you see the city outside, I am sure all will be forgotten, Imoen. We will also find the time to look into your lost magic skills with Mystra's help.~
 IF ~ InParty("Jaheira") ~ GOTO BG2Reunion4
 IF~ !InParty("Jaheira") InParty("Minsc") ~ THEN GOTO BG2Reunion5
 IF~ !InParty("Jaheira") !InParty("Minsc") InParty("ACBre")~ THEN GOTO BG2Reunion6
@@ -3502,6 +3502,7 @@ APPEND IMOEN2J
 
 IF ~~ THEN BEGIN BG2ReunionImo
 SAY ~This monster man will pay for all, besta friend Sandrah, he'll feel your hammer and my fireball, I swear and swear it. But it's good that nothing could part us after all. ~
+=~Fireballs...? He also did something to my magic skills somehow.~
 IF ~~ THEN EXTERN CVSANDRJ BG2Reunion10
 END
 END
@@ -3771,7 +3772,7 @@ CHAIN
 IF WEIGHT #8 ~  Global("Linvail","GLOBAL",0) Global("ShadowWork","GLOBAL",1) !Global("BodiAppear","GLOBAL",7) PartyGoldGT(129999) Global("BodiWork","GLOBAL",0) ~ THEN Gaelan hashigh
  ~Coo! Ye be already above 130,000 and need go no further. My masters changed their hearts, and they will accept that sum. It is a competitive rate, I think.~ 
 END
-  IF ~~ THEN REPLY ~Yes, I'm ready to pay your price.~ GOTO 86
+  IF ~~ THEN REPLY ~Yes, I'm ready to pay your price.~ DO~TakePartyGold(100000)~GOTO 86
   IF ~~ THEN REPLY ~No, I'm not ready to go just yet. I'll be back.~ GOTO 52
   IF ~  Global("ImTooSexyForThisBrus","GLOBAL",1)~ THEN REPLY ~Brus mentioned a new deal. Is that the change he spoke of? ~ GOTO 84
 

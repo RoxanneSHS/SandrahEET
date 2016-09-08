@@ -1,6 +1,5 @@
 IF
-Global("ENDOFBG1","GLOBAL",2)
-Global("Chapter","GLOBAL",20)
+Global("Chapter","GLOBAL",18)
 Global("SanXephRet","GLOBAL",0)
 GlobalGT("SanVampWDQuest","GLOBAL",17)
 OR(9)
