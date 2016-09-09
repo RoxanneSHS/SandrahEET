@@ -202,7 +202,8 @@ DO~ SetGlobal("SanVampWDQuest","GLOBAL",4)~
 ==NarQMes ~ Thank you, my good girl. This time it is neither good nor bad news, but a request from your temple to assist in a challenge worth your presence.~
 == CVSandrJ ~One of those missions that require both my fighting skills and my priest skills for Mystra?~
 ==NarQMes ~ Exactly - and of course your well known courage and that of <CHARNAME> and your companions. To learn more, the Chosen Ringhontal asks you to consult him at the Temple within two days.~
-==NarQMes IF~GlobalLT("SanSharInt","GLOBAL",29)~THEN~ I will bless you in the name of Mystra with this spell that enables you to travel to Waterdeep and back at your will.~ ==NarQMes ~ Danger is lurking on the whole town of Waterdeep.~
+==NarQMes IF~GlobalLT("SanSharInt","GLOBAL",29)~THEN~ I will bless you in the name of Mystra with this spell that enables you to travel to Waterdeep and back at your will.~ 
+==NarQMes ~ Danger is lurking on the whole town of Waterdeep.~
 DO~ EscapeArea()~EXIT
 
 CHAIN

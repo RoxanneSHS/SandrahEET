@@ -531,7 +531,10 @@ END
 IF
 Global("SanSacroll","GLOBAL",4)
 AreaCheck("ar0900")
+OR(3)
 See("Cat01")
+See("Cat")
+See("Prophet3")
 THEN
 RESPONSE #100
 SetGlobal("SanSacroll","GLOBAL",5)

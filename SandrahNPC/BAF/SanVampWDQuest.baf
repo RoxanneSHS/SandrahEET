@@ -71,7 +71,9 @@ END
 IF
 GlobalGT("SanVampWDQuest","GLOBAL",4)
 GlobalLT("SanVampWDQuest","GLOBAL",8)
+OR(2)
 AreaCheck("CVDRE1")
+AreaCheck("CVElm2")
 THEN
 RESPONSE #100
 SetGlobal("SanVampWDQuest","GLOBAL",8)

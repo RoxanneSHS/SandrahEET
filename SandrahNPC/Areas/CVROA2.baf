@@ -40,3 +40,12 @@ AddMapNote([4770.2883],@521)
 AddMapNote([4558.112],@920)
 AddMapNote([3361.2159],@921)
 END
+
+IF
+Global("SanSharInt","GLOBAL",34)
+InParty("CVSandr")
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSharInt","GLOBAL",35)
+END
