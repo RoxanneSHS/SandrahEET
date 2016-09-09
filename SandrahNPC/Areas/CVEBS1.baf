@@ -25,3 +25,13 @@ RESPONSE #100
 SetGlobal("WDFishermen","GLOBAL",5)
 END
 
+IF
+GlobalGT("SanImoRetWD","GLOBAL",6)
+Global("SanTotStart","Global",0)
+!InMyArea("Henning2")
+!Dead("Henning2")
+THEN
+RESPONSE #100
+CreateCreature("cvhenni",[383.311],S)
+END
+

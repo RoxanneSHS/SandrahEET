@@ -86,7 +86,7 @@ Global("HennHeal","CVDRE2",1)
 THEN
 RESPONSE #100
 SetGlobal("HennHeal","CVDRE2",2)
-ActionOverride("Henning2",EscapeAreaMove("CVEBS1",324,315,5))
+ActionOverride("Henning2",EscapeAreaMove("CVEBS1",383,311,5))
 END
 
 

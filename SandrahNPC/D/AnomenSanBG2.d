@@ -68,7 +68,7 @@ CHAIN
 IF WEIGHT #-16~Global("SanAnomenDecide","GLOBAL",1) ~THEN Banomen SanSaerAdv
 ~(Sigh, almost to himself) I hope I will do the right thing...~
 DO~SetGlobal("SanAnomenDecide","GLOBAL",2) ~
-==BSandr~We have not found common views very often in the past, Anomen, but maybe it would still help to listen to some neutral consellor's advice in this case.~
+==BSandr~We have not found common views very often in the past, Anomen, but maybe it would still help to listen to some neutral counselor's advice in this case.~
 ==Banomen~You are right, we mostly disagree...Still it may be a good test for my own decision to compare it against yours.~
 ==BSandr~I will not decide for you, Anomen, I just ask you to consider the facts.~
 =~All we have at the moment are your father's words that accuse Saerk of Moira's death. You know well those are words fuelled by bitterness, hatred and ...alcohol. Do we really kill a man on basis of such evidence.~

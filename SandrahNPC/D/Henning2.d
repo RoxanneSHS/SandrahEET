@@ -14,7 +14,7 @@ IF ~ !InParty("Imoen2") Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, H
 IF ~ InParty("Imoen2") GlobalGT("HennImoRit","LOCALS",0 ) Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, Henning, let us take a look at your wares.~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
 IF ~ InParty("Imoen2") Global("HennImoRit","LOCALS",1 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit2
 IF ~ InParty("Imoen2") Global("HennImoRit","LOCALS",2 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit3
-IF~ Global("ENDOFBG1","GLOBAL",2) GlobalLT("Chapter","GLOBAL",3) !InParty("Imoen2") Global("HenMissImo","LOCALS",0) ~ THEN REPLY~ Henning, it is not with happy news we appear here today.~ GOTO ImmiJonMiss1
+IF~ Global("ENDOFBG1","GLOBAL",2) GlobalLT("Chapter","GLOBAL",16) !InParty("Imoen2") Global("HenMissImo","LOCALS",0) ~ THEN REPLY~ Henning, it is not with happy news we appear here today.~ GOTO ImmiJonMiss1
 END
 
 IF~~THEN BEGIN ImmiJonMiss1

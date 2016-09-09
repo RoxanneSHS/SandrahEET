@@ -119,6 +119,7 @@ END
 
 IF
 Global("Saerkplot","GLOBAL",1)
+Global("TalkedCor","GLOBAL",1)
 InParty("CVSandr")
 AreaCheck("ar1000")
 Global("SanAnomenDecide","GLOBAL",0)
