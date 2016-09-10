@@ -15,7 +15,7 @@ IF ~~ THEN REPLY ~ Those five intelligent companions then, guess I can count as 
 END
 
 IF ~~ THEN BEGIN Skyscroll3
-SAY ~ Haha, sorry the ships manual says otherwise. But..hm,hm, yes, the big cat and the wolf can go, three semi-intelligent creatures are allowed but only five intelligent ones. The price for a trip will be 2500GP for you all plus 500GP for the menagerie.~
+SAY ~ Haha, sorry the ship's manual says otherwise. But..hm,hm, yes, the big cat and the wolf can go, three semi-intelligent creatures are allowed but only five intelligent ones. The price for a trip will be 2500GP for you all plus 500GP for the menagerie.~
 IF ~~ THEN REPLY ~ Fine, understood. So we will find you with the map should we decide to travel at your conditions. ~ GOTO Skyscroll6
 END
 
@@ -25,7 +25,7 @@ IF ~~ THEN REPLY ~ And what about our animal friends.~ GOTO Skyscroll5
 END
 
 IF ~~ THEN BEGIN Skyscroll5
-SAY ~ One second, I will consult the ships manual. But..hm,hm, yes, the big car and the wolf can go, three semi-intelligent creatures are allowed but only five intelligent ones. The price for a trip will be 2500GP for you all plus 500GP for the menagerie.~
+SAY ~ One second, I will consult the ship's manual. But..hm,hm, yes, the big car and the wolf can go, three semi-intelligent creatures are allowed but only five intelligent ones. The price for a trip will be 2500GP for you all plus 500GP for the menagerie.~
 IF ~~ THEN REPLY ~ Fine, understood. So we will find you with the map should we decide to travel at your conditions. ~ GOTO Skyscroll6
 END
 
