@@ -412,7 +412,7 @@ DO~ SetGlobal("SanShauMinsc","GLOBAL",15) RealSetGlobalTimer("SanShauMinTi","GLO
 == Boo ~ You may be able to understand that, Pelligram, as it may be the same to you. After such a long time I feel like I cannot or want not to leave my entrusted. Do you think the Goddess will insist on my return? Can she not easily replace one such as me?~
 == Pellig~  Purr!! One like you is hard to replace, my friend. Nevertheless she may grant you your wish in return for your excellent service. But you must be aware of the price for it. ~
 == Boo ~You mean I will become mortal and end when Minsc ends? Sigh. If that is so, it is acceptable. Tell me, Pelligram, would your choice not be the same with Sandrah?~ DO~DestroySelf()~
-== Pellig~  Mmmh. You know, Boolerion, I will not need to make that choice. I either fail my mission and perish - or I succeed, which means I return with her to the Goddess anyway.~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
+== Pellig~  Mmmh. You know, Boolerion, I will not need to make that choice. I either fail my mission and perish - or I succeed, which means I return with her to the Goddess anyway.~ DO ~  RestParty()~ EXIT
 
 CHAIN
 IF ~ Global("SanShauMinsc","GLOBAL",16)~ THEN BSHAUHA ShauMinscLT2
