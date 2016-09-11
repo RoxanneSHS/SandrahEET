@@ -45,7 +45,7 @@ CHAIN
 IF~~ THEN CVGHATLE ShauFo2
 ~ The young <PRO_RACE> speaks wise, orc girl. You yourself may or may not be following the one that has spawned you. We can only hope for the best. Use your powers but use them well. You have found the example by your side. Heed the words of Ghatlenk.~
 ==BSHAUHA~ Tell me then who has spawned me. I am not my father's child and somehow that makes me happy. But who am I then?~
-== CVGHATLE ~ Ask your companion, he will tell you that you have to find that out by yourself. Find your way and find your answers, more I cannot reveal to you today.~
+== CVGHATLE ~ Ask your companion, <PRO_HESHE> will tell you that you have to find that out by yourself. Find your way and find your answers, more I cannot reveal to you today.~
 ==BSHAUHA~ You cannot leave me like that, Ghatlenk, I have a right to know who I really am!~
 == CVGHATLE ~ You have the right to find out by yourself, Shauhana. The seers and prophets can make out only schemes and shadows. Too often their visions mislead them or are misunderstood. Only you can see the true plan when your time has come.~
 END

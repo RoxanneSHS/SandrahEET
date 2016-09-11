@@ -6984,6 +6984,14 @@ END ELSE BEGIN
     PRINT ~ Sirene NPC not detected - skipped Sandrah relationship~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~L#Fou.cre~ THEN BEGIN
+COMPILE ~SandrahNPC/mods/FoundlingSan.d~
+EXTEND_TOP ~L#Fou.bcs~ ~SandrahNPC/mods/FoundlingSan.baf~
+PRINT ~ Foundling detected - added Two Weaves content~
+END ELSE BEGIN
+    PRINT ~ Foundling not detected - skipped Two Weaves content~
+END
+
 BEGIN
 ~Shauhana for Shadow of Amn EET~
 

@@ -23,10 +23,12 @@ Removed RE Crossmod
 
 Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
 Added Sirene NPC Crossmod
+Added Foundling Crossmod
 Added Karlini rescue case
 Neera can get planar sphere if PC not mage
 Hexxat can get thieves guild if PC not thief
 Dark Horizon Extension adapted
+
 IWD I Sandrah content added
 IWD HoW additional quest and content
 

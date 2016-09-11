@@ -14,7 +14,6 @@ Global("ShauGN","GLOBAL",1)
 Global("ShauGN1","GLOBAL",0)
 THEN
 RESPONSE #100
-MoveToObject(Player1)
 Interact(Player1)
 END
 
