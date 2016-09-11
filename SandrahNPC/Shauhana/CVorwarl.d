@@ -18,7 +18,7 @@ EXIT
 
 CHAIN
 IF ~ Global("shauorcboy","GLOBAL",3)~ THEN CVorwarl CVorwarl2
-~ Shauhana, I am not representing the ones that hunt you. Those traitors that already have betrayed your grandfather and are the real source of the current problems we like to present to you.~
+~ Shauhana, I am not representing the ones that hunt you. Those traitors who already have betrayed your grandfather and are the real source of the current problems we like to present to you.~
 DO~ SetGlobal("shauorcboy","GLOBAL",4)~
 == BSHAUHA ~ Who are you really, and do you have a name *boy*?~
 == CVorwarl~ I am Wallrick.~
@@ -61,7 +61,7 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6) SetGlobalTimer("ShauToClan","GLOBAL",TEN_
 == CVorwarl~ Shauhana, your grandfather was a strong fighter and a strong personality even without the support of his father. He may have succeeded against the open opponents, but not against the hidden foe.~
 ==BSHAUHA~ And now it is up to me to finish what he was tasked to do?~
 == CVGHATLE ~ In some way, yes.~
-=~ With the Times of Trouble ended, new gods were established and took their reign. Once again they cast their gaze over the Realms and found that the situation for the orcs had even worsened meanwhile. In their next council the Gods decided that the operation had to be done again. One of them was to spawn a child again to the mortals. But this time not just a single one of them was to supervise the task but to make sure there are two this time.~
+=~ With the Time of Troubles ended, new gods were established and took their reign. Once again they cast their gaze over the Realms and found that the situation for the orcs had even worsened meanwhile. In their next council the Gods decided that the operation had to be done again. One of them was to spawn a child again to the mortals. But this time not just a single one of them was to supervise the task but to make sure there are two this time.~
 ==BSANDR~ That explains it! Oh, Mystra, how blind can one be while having all the pieces of knowledge at hand...~
 ==BSHAUHA~ Sandrah? You mean your own goddess is involved in this?~
 ==BSANDR~ Yes. She and the other one who is your father.~
