@@ -21,3 +21,7 @@ ADD_TRANS_TRIGGER L#FouJ 148
 EXTEND_BOTTOM L#FouJ 148
 IF~InParty("CVSandr")~THEN REPLY~Our expert for this kind of discussion would be Sandrah. You two should talk about it some time. For now let us move.~ DO~SetGlobal("SanFouBH","Global",2)~GOTO 149
 END
+
+EXTEND_BOTTOM L#FouJ 127
+IF~InParty("CVSandr")~THEN REPLY~You should team up with Sandrah. Her counselling goes into the same direction. *Know more about your enemy than he knows about you.* And I listen to her so that we won't lose our fight and we all stay alive.~ GOTO 130
+END

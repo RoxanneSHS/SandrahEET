@@ -591,7 +591,6 @@ END
 IF
 Global("TalonWar","GLOBAL",2)
 Global("SanVsTalos","GLOBAL",1)
-GlobalGT("SantalosDec","GLOBAL",11)
 Global("SanTalWar","GLOBAL",0)
 OR(2)
 Dead("Talmiss")
@@ -629,7 +628,6 @@ END
 IF
 Global("MaeVarWork","GLOBAL",3)
 Global("SanVsTalos","GLOBAL",1)
-GlobalGT("SantalosDec","GLOBAL",11)
 GlobalLT("SantalosDec","GLOBAL",20)
 PartyHasItem("Misc4y")
 AreaType(CITY)

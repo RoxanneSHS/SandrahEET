@@ -74,6 +74,7 @@ Global("CVMaeDidKN","ar0300",0)
 InParty("CVSandr")
 GlobalGT("MaeVarWork","GLOBAL",0)
 CombatCounter(0)
+AreaCheck(OUTDOOR)
 Delay(18)
 THEN
 RESPONSE #100
