@@ -15,6 +15,16 @@ DO~SetGlobal("SanFouB","LOCALS",2) SetGlobal("SanFouBH","Global",3)~
 ==L#FouB~Who is that? I heard my dead master issue the name but I know not what it meant.~
 ==BSandr~(Nods) We should delay this talk to a quiet time. There will be much to say. We should know each other better before we handle such topics.~EXIT
 
+CHAIN
+IF WEIGHT #-3~Global("SanFouBH","Global",4)~THEN L#FouB Sanweave2
+~Sandrah, I have to confess I know nothing about the source of my magic. It is there, my dead masters gave me some limited knowledge of how to use it, but this is all.~
+DO~SetGlobal("SanFouBH","Global",5)~
+==BSandr~I was already sure that you do not have access to the Shadow Weave because you are an adept of Shar. Your words confirm it.~
+==L#FouB~I'm sorry I'm not of much help in this current quest.~
+==BSandr~I am relieved that you are not, Foundling. Having to deal with a servant of the Shadow Weave in this case would really put me into a dilemma.~
+=~Once this quest is dealt with we may find a chance sooner or later to find out more about your origins and what your connection to the various shadow powers may truely be.~
+==L#FouB~It is good to travel in your and <CHARNAME>'s company.~EXIT
+
 ADD_TRANS_TRIGGER L#FouJ 148 
 ~!InParty("CVSandr")~
 
