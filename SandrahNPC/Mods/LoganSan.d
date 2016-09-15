@@ -32,25 +32,25 @@ CHAIN
 IF~~THEN CELOGAN SanLog1
 ~(Logan Coprith's face visibly brightens as he sees Sandrah in your company)~
 DO~SetGlobal("SanLogLT","GLOBAL",1)~
-==CELOGAN~Greetings, Mylady Sandrah. I had...mh...hoped you would find a way to come to Trademeet again. Might I impose a moment... in private?~
+==CELOGAN~Greetings, Mylady Sandrah. I had...mh...hoped you would find a way to come to Trademeet again. Might I ask for a moment of your time... in private?~
 ==BSANDR~Greetings, Lord Logan. Why should I refuse the request of a respectable gentleman?~
 ==CELOGAN~Let me lead on, mylady.~ DO~ StartCutSceneMode() StartCutScene("SanLogan")~EXIT
 
 CHAIN
 IF WEIGHT #-9~Global("SanLogLT","GLOBAL",1)~THEN CELOGAN SanLog2
-~ Very well, I am glad you are here even as we are little more than passing strangers. Ah no, I scarcely know where to begin but I feel I must take my chance. Should I say you are lovely? Surely, many have said the same.~
+~ It is not my way to open easily to a passing stranger. With you however I feel I must take my chance or regret it. You are lovely and strong at the same time. I am sure you hear compliments like this every day.~
 DO~SetGlobal("SanLogLT","GLOBAL",2)~
 ==BSANDR~You can be charming when you try. And words heard before may get a different meaning any time they are spoken depending on who says them and for what intend.~
-=~ But are we just passing strangers, Lord Logan, or are we able to break out of the harness of daily responsibilities for a moment that may be a very precious one? ~
-==CELOGAN~I am but a humble soldier, madam, doing only that which is my duty and nothing more.~
+=~ Be assured I grab a moment that may be a very precious one rather than regret my hesitation when it is passed. ~
+==CELOGAN~Since I came to Trademeat I became a man of routine doing only what is my duty day in day out...~
 ==BSANDR~Nothing more? (Her smile seems to encourage him.) I very much doubt that. ~
-==CELOGAN~What more could I say? Words could not contain my meaning nor the fairness of your face surely. ~
+==CELOGAN~I feel that drowning you in compliments will waste both our time. You are well aware of your impact on men. ~
 ==BSANDR~You are of noble family and handsome, you must be used to such attention yourself. ~
-==CELOGAN~I feign nothing and, if you are sincere in your implication, then yes, I am used to the attention.~
-==BSANDR~You mentioned you are a man of deeds rather than a wielder of words... Logan? ~
+==CELOGAN~(Smiles) Why hide from one like you, yes, I am used to the attention.~
+==BSANDR~You are more a soldier than a merchant and as such a man of deeds rather than a wielder of words, right? ~
 ==CELOGAN~Sandrah? ~
-==BSANDR~Less words and a finer meaning. ~
-==CELOGAN~I have a decent red that I've been saving against the day I met a woman who saved my hearth and home. I would be happy to share it with you and lift a glass in your honor.~
-==BSANDR~Or maybe a walk? If it does not rain, it might be nice to get out and see the stars and take in the night air. ~
+==BSANDR~Time for a frontal attack. ~
+==CELOGAN~(Nods) You will have no problem to explain the next hour to your companions outside..?~
+==BSANDR~Or may I propose a less rushed rendezvous tonight? ~
 ==CELOGAN~Yes, milady, I mean..Sandrah - this evening. I shall look forward to it. ~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
