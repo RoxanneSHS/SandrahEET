@@ -72,7 +72,7 @@ IF~Global("SanHintFactory","GLOBAL",31)~THEN CVSandrJ ShauHornDone1
 ~From this icy grave he may not return to disturb the peace again.~
 DO~SetGlobal("SanHintFactory","GLOBAL",32)AddexperienceParty(72000) AddXPObject("CVSandr",105000)~
 END
-++~A quest that has brought us many new insights - and new friends as well as foes.~+ ShauHornDone2
+++~A quest that has brought us many new insights - and new friends as well as foe.~+ ShauHornDone2
 
 CHAIN
 IF~~ THEN CVSandrJ ShauHornDone2

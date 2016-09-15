@@ -21,6 +21,15 @@ SetGlobal("SanFouBH","Global",4)
 END
 
 IF
+GlobalGT("SanHintFactory","GLOBAL",33)
+GlobalGT("SanFouBH","Global",2)
+GlobalLT("SanFouBH","Global",5)
+THEN
+RESPONSE #100
+SetGlobal("SanFouBH","Global",5)
+END
+
+IF
 See("CVSandr")
 OR(2)
 Global("SanFouBH","Global",4)

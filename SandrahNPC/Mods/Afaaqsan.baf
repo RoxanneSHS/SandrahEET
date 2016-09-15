@@ -1,0 +1,44 @@
+IF
+Global("BanterIntroNPC2","LOCALS",0)
+Name("CVSandr",Player2)
+THEN
+RESPONSE #100
+SetGlobal("BanterIntroNPC2","LOCALS",1)
+Continue()
+END
+
+IF
+Global("BanterIntroNPC3","LOCALS",0)
+Name("CVSandr",Player3)
+THEN
+RESPONSE #100
+SetGlobal("BanterIntroNPC3","LOCALS",1)
+Continue()
+END
+
+IF
+Global("BanterIntroNPC4","LOCALS",0)
+Name("CVSandr",Player4)
+THEN
+RESPONSE #100
+SetGlobal("BanterIntroNPC4","LOCALS",1)
+Continue()
+END
+
+IF
+Global("BanterIntroNPC5","LOCALS",0)
+Name("CVSandr",Player5)
+THEN
+RESPONSE #100
+SetGlobal("BanterIntroNPC5","LOCALS",1)
+Continue()
+END
+
+IF
+Global("BanterIntroNPC6","LOCALS",0)
+Name("CVSandr",Player6)
+THEN
+RESPONSE #100
+SetGlobal("BanterIntroNPC6","LOCALS",1)
+Continue()
+END
