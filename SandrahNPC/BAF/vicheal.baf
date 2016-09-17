@@ -44,8 +44,9 @@ END
 
 IF
 Global("ENDOFBG1","GLOBAL",2)
-Global("CheckViconiaMatch","GLOBAL",1)
+!AreaCheck("Ar1000")
 InParty("CVSandr")
+InParty(Myself)
 Global("Vicstake","LOCALS",0)
 THEN
 RESPONSE #100

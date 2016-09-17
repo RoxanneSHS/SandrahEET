@@ -4196,14 +4196,13 @@ RESPONSE #100
 SetGlobal("VicBant3","GLOBAL",5)
 END
 
-
 IF 
 See("Viconia")
 !StateCheck("Viconia",CD_STATE_NOTVALID)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 !See([ENEMY])
 CombatCounter(0)
-OR(10)
+OR(14)
 Global("VicBant1","GLOBAL",1)
 Global("VicBant2","GLOBAL",1)
 Global("VicBant3","GLOBAL",1)
@@ -4213,6 +4212,10 @@ Global("SanVicInnLov","LOCALS",1)
 Global("SanVicInnLov","LOCALS",3)
 Global("SanVicInnLov","LOCALS",5)
 Global("SanVicInnLov","LOCALS",7)
+Global("SanVicInnLov","LOCALS",11)
+Global("SanVicInnLov","LOCALS",13)
+Global("SanVicInnLov","LOCALS",15)
+Global("SanVicInnLov","LOCALS",17)
 Global("spawnDrow1","AR2100",2)
 THEN
 RESPONSE #100
@@ -4272,23 +4275,27 @@ Global("SanVicInnLov","LOCALS",0)
 Delay(8)
 THEN
 RESPONSE #100
-SetGlobal("SanVicInnLov","LOCALS",1)
+SetGlobal("SanVicInnLov","LOCALS",11)
 RealSetGlobalTimer("SanVicinnT","LOCALS",3600)
 END
 
 IF
 PartyRested()
 InParty("Viconia")
-OR(2)
+OR(4)
 Global("SanVicInnLov","LOCALS",2)
 Global("SanVicInnLov","LOCALS",4)
+Global("SanVicInnLov","LOCALS",12)
+Global("SanVicInnLov","LOCALS",14)
 THEN
 RESPONSE #100
 IncrementGlobal("SanVicInnLov","LOCALS",1)
 END
 
 IF
+OR(2)
 Global("SanVicInnLov","LOCALS",6) 
+Global("SanVicInnLov","LOCALS",16)
 RealGlobalTimerExpired("SanVicinnT","LOCALS")
 InParty("Viconia")
 OR(26)
@@ -4320,14 +4327,16 @@ AreaCheck("BG3200")
 AreaCheck("ys0396")
 THEN
 RESPONSE #100
-SetGlobal("SanVicInnLov","LOCALS",7)
+IncrementGlobal("SanVicInnLov","LOCALS",1)
 END
 
 IF
+OR(2)
 Global("SanVicInnLov","LOCALS",8)
+Global("SanVicInnLov","LOCALS",18)
 THEN
 RESPONSE #100
-SetGlobal("SanVicInnLov","LOCALS",9)
+IncrementGlobal("SanVicInnLov","LOCALS",1)
 AddSpecialAbility("CVViSpi")
 END
 

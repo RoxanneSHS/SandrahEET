@@ -912,3 +912,102 @@ DO ~ SetGlobal("SanMinsDung","LOCALS",12) RealSetGlobalTimer("SanMinskInt","GLOB
 == BSANDR ~ Fine. You do not need to bleed from your wounds if you want my company after a fight. You are always welcome, Minsc.~
 == BMinsc ~ Boo says he thinks we have just made a rendezvous with a very fine special lady.~
 EXIT
+
+// Two Cleric Lovers at Inn BG2
+CHAIN
+IF ~ Global("SanVicInnLov","LOCALS",11)~ THEN BSANDR SanVicInn1
+~ (Having finished your negotiations with the innkeeper, you look around the public room for your companions.)~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",12)~
+== BViconi ~ (You see your dark elf cleric and Sandrah chat at a table at the far end of the room. You also observe that a number of males of all ages stroll nervously around your two wonderful companions like a pack of hungry wolves, giving the females glances of hardly disguised lust.)~
+== BSANDR ~ (You know Sandrah's expression well enough by now to know that she is fully aware of the impact that she and her drow friend have on the men in this room.)~
+== BViconi ~ (The partly vicious, partly amused smile around Viconia's lips reveals that she has her fun from the situation as well.)~
+END
+++ ~ (You stay where you are, knowing that the two are perfectly capable to handle the situation alone.) ~ + SanVicInnNo
+IF~Global("SanRompath","GLOBAL",1)~THEN REPLY ~ (You leasurely stroll over to the table feeling the envious glances of the other males as you take your seat next to the beauties.)~ + SanVicInnYes
+IF~Global("SanRompath","GLOBAL",2)~THEN REPLY ~ (You leasurely stroll over to the table swinging your hips and opening an extra button on your blouse to add to the tease as you take your seat next to the other beauties.)~ + SanVicInnFem
+
+CHAIN
+IF ~~ THEN BSANDR SanVicInnNo
+~ (After some time Sandrah looks over to you and shakes her head. She and Viconia rise and come towards you.)~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",14)~
+== BViconi ~ A room full of male fools up to their knees in their own drooling lust and still two beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
+== BSANDR ~ We can still make our choice, Viconia, I guess a wink from you will make any of them jump to your command.~
+== BViconi ~ No, thank you, my friend. (Giving you a disappointed glance, she adds) There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
+== BSANDR ~ You are right, let them have their beers and exchange their exaggerated stories of all the girls they have loved - in their fantasy.~
+== BViconi ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
+EXIT
+
+CHAIN
+IF ~~ THEN BSANDR SanVicInnFem
+~ (After some time Sandrah looks over to you two and shakes her head.)~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",14)~
+== BViconi ~ A room full of male fools up to their knees in their own drooling lust and still three beautiful women must go to bed alone. You surfacers always are an unpleasant surprise.~
+== BSANDR ~ We can still make our choice, Viconia, I guess a wink from you will make any of them jump to your command.~
+== BViconi ~ No, thank you, my friend. There is not a single one that would interest me. A weak assembly of the weak gender. Goodnight.~
+== BSANDR ~ You are right, let them have their beers and exchange their exaggerated stories of all the girls they have loved - in their fantasy.~
+== BViconi ~ (Hand in hand they move up the stairs to the bedrooms...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
+EXIT
+
+CHAIN
+IF ~~ THEN BSANDR SanVicInnYes
+~ Hmm, see our hero is coming to rescue his poor girls from this whole male onset.~
+== BViconi ~ Do you think he assumes we are too weak to handle this without his boyish and pathetic attempts at heroism?~
+== BSANDR ~ Vicky, give him a point for at least trying it, even if his abilities are limited.~
+== BViconi ~ Fine, I agree, he is the most acceptable tonight, even if the contest is not too hard to be the winner here.~
+END
+++ ~ Are you two trying to mock me? Is that the way to greet your leader and protector?~ + SanVicInnYes2
+
+CHAIN
+IF ~~ THEN BSANDR SanVicInnYes2
+~ (Sandrah gives you a most inviting smile and blows you a kiss.)~
+== BViconi ~ (Viconia's face turns to the colour of an Avocado as her harsh rough laughter fills the room) My leader and protector...pfff. You have really won the prize, <CHARNAME>.~
+== BSANDR ~ Gallant, charming and - funny. What a great mixture.~
+== BViconi ~ Oh, yes, really amusing, I have to give you that. Are there maybe other qualities in this one that are worth exploring?~
+== BSANDR ~ We will not find out by sitting at this table and giving these onlookers a good show...~
+== BViconi ~ Right, come on, yalluk, you deserve the chance to show us that you can stand up to the promise you have made us with your grand entry.~
+== BSANDR ~ (Before you realise what is going on, you have received a kiss from the left and the right while two strong and determined girls motion you in the direction of the stairs that lead to the bedrooms.) ~
+DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() RestParty() ~
+EXIT
+
+CHAIN
+IF ~Global("SanVicInnLov","LOCALS",13)~ THEN BSANDR SanVicInnYes3
+~ Good morning, my wonderful lover.~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",16)~
+== BViconi ~ Not too bad, rivvil, mmh, not too bad. You have earned yourself a chance to ask for my pleasures again and - maybe, just maybe, I may agree to endure your clumsy attempts once again. Choices are not too many up here on the surface.~
+== BSANDR ~ (Laughs and gives Viconia a kiss before she kisses you.) You must really have impressed Vicky. I have never heard her issue such a heartfelt compliment to any male before.~
+== BViconi ~ Enough! Let's all get moving before this scene gets too silly.~
+= ~(Her agile tongue that slips into your mouth while she gives you a final kiss betrays her words. This was probably not the last night you spent with her...)~
+== BSANDR ~ Yes, let us follow our 'leader and protector' to new heroic adventures.~
+EXIT
+
+CHAIN
+IF ~Global("SanVicInnLov","LOCALS",15)~ THEN BSANDR SanVicInnNo3
+~ (Sandrah smiles at you and shakes her head as she joins you hand in hand with Viconia) A good night it was - but something was still missing.~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",16)~
+== BViconi ~ Something or someone? (She gives you a questioning glance.)~
+== BSANDR IF ~Global("SanRompath","GLOBAL",1)~THEN~ (Laughs and gives Viconia a kiss before she kisses you.) You must really have impressed Vicky. I have never seen her indicating to any male before that she might have missed him.~
+== BSANDR IF ~Global("SanRompath","GLOBAL",2)~THEN~ (Laughs and gives Viconia a kiss before she kisses you.) There is much to learn from a drow if one is willing, maybe next time you will give it a try yourself?~
+== BViconi ~ Enough! Let's all get moving before this scene gets too silly.~
+= ~(Her agile tongue that slips into your mouth while she gives you a good morning kiss betrays her words. This was probably not the last chance for you to spend a night with her...)~
+== BSANDR ~ Yes, let us follow our 'leader and protector' to new heroic adventures.~
+EXIT
+
+CHAIN
+IF ~Global("SanVicInnLov","LOCALS",17)~ THEN BSANDR SanVicInnD1
+~ (As soon as you have entered the tavern, Sandrah smiles at you in a fashion that leaves little doubt to her intend with you - right here and right now.)~
+DO ~ SetGlobal("SanVicInnLov","LOCALS",18)~
+== BViconi ~ (A sudden pain in your earlobe makes you turn around abruptly - to look into your drow companion's grinning teeth.)~
+== BSANDR ~ A short glance at the crowd gathered in this place, especially the male part of it, has made one thing clear to us, right Vicky?~
+== BViconi ~ (Viconia blows softly into your still hurting ear.) There is just one who is acceptable to be allowed the attempt to humour me this evening.~
+== BSANDR ~ He is a bit better than a mere apprentice by now, Vicky, even if not yet a perfect lover.~
+== BViconi ~ Oh, my poor surfacer friend! The choices you have are so thin up here that you settle for almost anything that is not completely unacceptable. So what - you cannot get any better, so what is there needs to serve the purpose.~
+END
+++ ~ Stop that immediately, you two. I AM NOT YOUR PLAYTOY! If you want a single kiss from me tonight stop treating me like that!~ + SanVicInnD2
+
+CHAIN
+IF ~~ THEN BSANDR SanVicInnD2
+~ Vicky, you were right, anger can be a real motivation for a tired warrior like <CHARNAME>. I surrender to your will and charm to be your willing *playtoy*, take me! (She lets herself fall into your arm, purring in joy and anticipation.)~
+== BViconi ~ I tremble before your strength, oh <CHARNAME>, hahaha. I am yours tonight but beware - better prove yourself worthy of it. (She sneaks into your other arm like the dangerous but fascinating carnivor she really is.) ~
+== BSANDR ~ (With the two overwhelming beauties having seized you again in this way you are not sure about who really is in control of this situation - but then, who cares?)~
+DO ~ RestParty() ~
+EXIT
