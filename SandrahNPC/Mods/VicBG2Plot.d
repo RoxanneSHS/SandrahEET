@@ -208,7 +208,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ VicSisHelp2
-~It was a female drow that vanished into that spider web structure over there. Be cautious, she may not be alone.~EXIT
+~It was a female drow who vanished into that spider web structure over there. Be cautious, she may not be alone.~EXIT
 
 CHAIN
 IF~Global("CVVICSp","ar0804",1)~THEN CVVicsis Found

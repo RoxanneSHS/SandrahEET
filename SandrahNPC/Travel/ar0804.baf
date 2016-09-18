@@ -4,11 +4,12 @@ Global("CVVICSp","ar0804",0)
 THEN
 RESPONSE #100
 SetGlobal("CVVICSp","ar0804",1)
-CreateCreature("CVVicsis",[500.500],8)
-CreateCreature("Cut3dr1",[530.530],6)
-CreateCreature("F_Dromag",[560.560],3)
-CreateCreature("Cut4dr4",[440.600],7)
-CreateCreature("drow06",[600.637],1)
+CreateCreature("CVVicsis",[500.500],4) 
+CreateCreature("dsdrow04",[530.530],0)
+CreateCreature("F_Dromag",[560.560],6) 
+ActionOverride("F_Drowmag",SetNumTimesTalkedTo(1))
+CreateCreature("dsdrow01",[440.600],6)
+CreateCreature("drow06",[600.637],1) 
 END
 
 IF
