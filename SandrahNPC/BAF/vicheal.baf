@@ -16,6 +16,14 @@ IncrementGlobal("SanHealVic","GLOBAL",1)
 END
 
 IF
+Global("SanHealVic","GLOBAL",5)
+Global("ENDOFBG1","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanHealVic","GLOBAL",15)
+END
+
+IF
 Global("SanVicArrst","GLOBAL",9)
 InParty(Myself)
 InParty("CVSandr")
@@ -28,8 +36,9 @@ END
 IF
 InParty(Myself)
 InParty("CVSandr")
-OR(4)
+OR(5)
 Global("SanHealVic","GLOBAL",5)
+Global("SanHealVic","GLOBAL",15)
 Global("Vicstake","LOCALS",2)
 Global("Vicstake","LOCALS",4)
 Global("SanVicArrst","GLOBAL",10)

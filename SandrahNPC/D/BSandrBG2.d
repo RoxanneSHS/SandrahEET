@@ -1011,3 +1011,14 @@ IF ~~ THEN BSANDR SanVicInnD2
 == BSANDR ~ (With the two overwhelming beauties having seized you again in this way you are not sure about who really is in control of this situation - but then, who cares?)~
 DO ~ RestParty() ~
 EXIT
+
+CHAIN
+IF WEIGHT #-9 ~Global("SanHealVic","GLOBAL",15)~ THEN BViconi VicHealed2
+~ Once again you have used your remarkable skills on me, Sandrah. Again this is something that puzzles me in the usual way, rivvil. Never would such be done in the Underdark.~
+DO ~ SetGlobal("SanHealVic","GLOBAL",6)~
+== BSANDR~ But you have healers in Menzoberranzan and you yourself are one of them.~
+== BViconi ~ This is for the purpose of the battle only. To keep up the fighting power of the group you are in. Never would one use these skills to raise or heal those that were to weak to stand the battle's assault. Your selfless way is something else.~
+== BSANDR ~ You are a valuable fighter and cleric in this group and I keep you going. You are sometimes neglecting your own health in a way.~
+== BViconi ~ Ha, some ten-days ago I would have believed you. But now I get a notion of your surfacer's ideas of comraderie and - friendship. Even if they still seem strange to me.~
+== BSANDR ~ But you no longer reject them right away, right.~
+== BViconi ~ It feels different, but it somehow...yes, it feels good in some twisted way. I sense you do all that without some hidden intentions that I should be cautious about. Well, let us move on, Sandrah - - (whispers) my friend?~  EXIT
