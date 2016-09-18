@@ -4780,7 +4780,7 @@ DO ~ SetGlobal("SanVicInnLov","LOCALS",8)~
 == BVicon ~ (A sudden pain in your earlobe makes you turn around abruptly - to look into your drow companion's grinning teeth.)~
 == BSANDR ~ A short glance at the crowd gathered in this place, especially the male part of it, has made one thing clear to us, right Vicky?~
 == BVicon ~ (Viconia blows softly into your still hurting ear.) There is just one who is acceptable to be allowed the attempt to humour me this evening.~
-== BSANDR ~ He is a bit better than a mere apprentice by now, Vicky, even if not yet a perfect lover.~
+== BSANDR ~ Ah, <PRO_HESHE> is a bit better than a mere apprentice by now, Vicky, even if not yet a perfect lover.~
 == BVicon ~ Oh, my poor surfacer friend! The choices you have are so thin up here that you settle for almost anything that is not completely unacceptable. So what - you cannot get any better, so what is there needs to serve the purpose.~
 END
 ++ ~ Stop that immediately, you two. I AM NOT YOUR PLAYTOY! If you want a single kiss from me tonight stop treating me like that!~ + SanVicInnD2
