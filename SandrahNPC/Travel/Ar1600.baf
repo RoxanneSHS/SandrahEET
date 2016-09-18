@@ -38,11 +38,12 @@ IF
 InParty("CVSandr")
 Global("PirateRefused","GLOBAL",0)
 !InParty("Imoen2")
-OR(6)
+OR(7)
 InParty("Driz2")
 InParty("Saerileth")
 InParty("RChloe")
 InParty("Yasraena")
+InParty("Yoshimo")
 PartyHasItem("Misc8v")
 !Global("SanRotRepl","GLOBAL",0)
 THEN
