@@ -123,7 +123,7 @@ IF
 Global("ENDOFBG1","GLOBAL",2)
 Global("SanCanTravel","GLOBAL",0)
 OR(2)
-Global("Chapter","GLOBAL",18)
+Global("Chapter","GLOBAL",16)
 XPGT(Myself,6000000)
 THEN
 RESPONSE #100
