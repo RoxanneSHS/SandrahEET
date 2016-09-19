@@ -210,7 +210,7 @@ IF ~OR(10)
     Global("CVAR2000","GLOBAL",1)
     Global("CVAR1900","GLOBAL",1)
     Global("CVAR1600","GLOBAL",1)
-    Global("RZAR2300","GLOBAL",1)
+    Global("CVAR2300","GLOBAL",1)
     Global("CVAR2100","GLOBAL",1)
     Global("CVAR2500","GLOBAL",1)
     Global("CVAR1700","GLOBAL",1)
@@ -233,7 +233,7 @@ IF ~Global("CVAR1200","GLOBAL",1)~ THEN REPLY ~Windspear Hills~ GOTO Choice14
 IF ~Global("CVAR2000","GLOBAL",1)~ THEN REPLY ~Trademeet~ GOTO Choice15
 IF ~Global("CVAR1900","GLOBAL",1)~ THEN REPLY ~Druid's Cove~ GOTO Choice16
 IF ~Global("CVAR1600","GLOBAL",1)~ THEN REPLY ~Brynnlaw~ GOTO Choice17
-IF ~Global("RZAR2300","GLOBAL",1)~ THEN REPLY ~Sahuagin city~ DO ~SetGlobal("SanTravel","GLOBAL",97)~ EXIT
+IF ~Global("CVAR2300","GLOBAL",1)~ THEN REPLY ~Sahuagin city~ DO ~SetGlobal("SanTravel","GLOBAL",97)~ EXIT
 IF ~Global("CVAR2100","GLOBAL",1)~ THEN REPLY ~The Underdark~ GOTO Choice18
 IF ~Global("CVAR2500","GLOBAL",1)~ THEN REPLY ~Underdark's Exit~ DO ~SetGlobal("SanTravel","GLOBAL",104)~ EXIT
 IF ~Global("CVAR1700","GLOBAL",1)~ THEN REPLY ~Small Teeth Pass~ DO ~SetGlobal("SanTravel","GLOBAL",105)~ EXIT

@@ -1,7 +1,19 @@
 IF
-   Global("RZAR2300","GLOBAL",0)
+Global("CVAR2300","GLOBAL",0)
 THEN
-    RESPONSE #100
-             SetGlobal("RZAR2300","GLOBAL",1)
-             Continue()
+RESPONSE #100
+SetGlobal("CVAR2300","GLOBAL",1)
+Continue()
+END
+
+IF
+Dead("sahpr3")
+InParty("CVSandr")
+Global("PelligFollow","GLOBAL",1)
+Global("anicor","ar2300",0)
+THEN
+RESPONSE #100
+SetGlobal("anicor","ar2300",1)
+ActionOverride("Pellig",JumpToPoint([1032.914]))
+ActionOverride("Haiass",JumpToPoint([1034.917]))
 END
