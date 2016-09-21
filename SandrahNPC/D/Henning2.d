@@ -7,14 +7,16 @@ END
 
 IF ~  NumTimesTalkedToGT(0) ~ THEN BEGIN HennShopWD
 SAY ~ Hello again, my friends. ~
-IF~ InParty("Imoen2") Global("HennImoRit","LOCALS",0) ~ THEN EXTERN HENNING2 HennImoRit1
+IF~ !Global("ENDOFBG1","GLOBAL",2) InParty("Imoen2") Global("HennImoRit","LOCALS",0) ~ THEN EXTERN HENNING2 HennImoRit1
 IF~ !InParty("Imoen2") Global("HennStoWD","LOCALS",0)~ THEN REPLY~ Greetings, Henning, good to see you again.~
 EXIT
 IF ~ !InParty("Imoen2") Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, Henning, let us take a look at your wares.~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
-IF ~ InParty("Imoen2") GlobalGT("HennImoRit","LOCALS",0 ) Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, Henning, let us take a look at your wares.~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
-IF ~ InParty("Imoen2") Global("HennImoRit","LOCALS",1 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit2
-IF ~ InParty("Imoen2") Global("HennImoRit","LOCALS",2 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit3
+IF ~ !Global("ENDOFBG1","GLOBAL",2)InParty("Imoen2") GlobalGT("HennImoRit","LOCALS",0 ) Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, Henning, let us take a look at your wares.~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
+IF ~ !Global("ENDOFBG1","GLOBAL",2) InParty("Imoen2") Global("HennImoRit","LOCALS",1 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit2
+IF ~ !Global("ENDOFBG1","GLOBAL",2) InParty("Imoen2") Global("HennImoRit","LOCALS",2 ) RealGlobalTimerExpired("HennImoRitInt","LOCALS")~ THEN REPLY~ Greetings, Henning, I'll leave you to Imoen...~ EXTERN HENNING2 HennImoRit3
 IF~ Global("ENDOFBG1","GLOBAL",2) GlobalLT("Chapter","GLOBAL",16) !InParty("Imoen2") Global("HenMissImo","LOCALS",0) ~ THEN REPLY~ Henning, it is not with happy news we appear here today.~ GOTO ImmiJonMiss1
+IF~Global("ENDOFBG1","GLOBAL",2) InParty("Imoen2") Global("HennImoRitSoa","LOCALS",0)~THEN EXTERN HENNING2 HennImoRit32
+IF ~ Global("ENDOFBG1","GLOBAL",2)InParty("Imoen2") GlobalGT("HennImoRitSoa","LOCALS",1 ) Global("HennStoWD","LOCALS",1)~ THEN REPLY~ Greetings, Henning, let us take a look at your wares.~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF~~THEN BEGIN ImmiJonMiss1
@@ -59,4 +61,13 @@ IF~~THEN  HENNING2 HennImoRit3
 ==HENNING2~ (Kiss.) Mmpf.~
 ==Bimoen ~ (Kiss.) Mmpf.~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+EXIT
+
+CHAIN
+IF~~THEN  HENNING2 HennImoRit32
+~  Imoen!~
+==Bimoen2 ~ Henning! (Kiss.) Mmpf.~
+==HENNING2~ (Kiss.) Mmpf.~
+==Bimoen2 ~ (Kiss.) Mmpf.~
+DO ~ SetGlobal("HennImoRitSoa","LOCALS",1) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT

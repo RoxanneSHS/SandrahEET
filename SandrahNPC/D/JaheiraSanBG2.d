@@ -98,9 +98,9 @@ IF~Global("SanGalvFi","LOCALS",4) ~ THEN BSANDR SanJahRomPCGal2
 ~ You know your decision already, Jaheira, do you not?~
 DO~ SetGlobal("SanGalvFi","LOCALS",5) ~
 == BJAHEIR ~ (Smiles) To think how I once underestimated you, my young friend. Yes, you may well be right, Sandrah, it seems to me my heart knows it already a long time. Just my stupid brain will not accept it yet.~
-== BSANDR ~ You have given up everything else for the trust you have in him - and the love.~
-== BJAHEIR ~ You trust him as much yourself, don't you? And you love him, too.~
-== BSANDR ~ Jaheira there have been and are still others who believe in him and his importance for the Realms just like we do. Gorion, your old friend, and...my father, Elminster himself. We are right in our assumptions and he has proven it in his deeds over and over again.~
+== BSANDR ~ You have given up everything else for the trust you have in <PRO_HIMHER> - and the love.~
+== BJAHEIR ~ You trust <PRO_HIMHER> as much yourself, don't you? And you love <PRO_HIMHER>, too.~
+== BSANDR ~ Jaheira there have been and are still others who believe in <PRO_HIMHER> and <PRO_HISHER> importance for the Realms just like we do. Gorion, your old friend, and...my father, Elminster himself. We are right in our assumptions and <PRO_HESHE> has proven it in <PRO_HISHER> deeds over and over again.~
 == BJAHEIR ~ Everything you say is right, Sandrah, just so right...but falling in love so unexpectedly does not make things easier it seems.~
 == BSANDR ~ Does it not? What are you afraid of, my friend? Love is a power that makes all of us loose control sometimes, nobody is strong enough to withstand it. Just let yourself fall and enjoy it - you will get out stronger and more confident than ever before.~
 == BJAHEIR ~ I am afraid I have already lost my control completely...(Laughs nervously) Thank you for making me accept this. A harper in love cannot be a harper in balance - a *hasbeen* harper, that is.~
