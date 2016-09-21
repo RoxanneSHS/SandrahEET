@@ -5929,17 +5929,17 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",16)~
 ==BSANDR ~ Beginner! (Still you are much too fascinated to intervene, instead you study the near perfect view of those beautiful fighters in their action.) ~
 ==BSHART ~ (Shar-Teel attacks Sandrah with heavy blows from her fists. Her body is all strength and grace. You admire the play of her muscles beneath her skin, which is by now smooth and gleaming from Sandrah's permanent care applied on her friend. She really reminds you of a mighty wildcat.)~
 ==BSANDR ~ (None of Shar-Teel's heavy blows seems to have any affect on Sandrah. With light playful movements she twitches out of reach of the pounding fists always in the last instant. You wonder how her almost fragile body is able to use her hammer in fight like you have seen - cutting down orcs with a single strike. Everything with her seems to depend on technique and body control. Her fighting style reminds you of a sophisticated dance rather than a killing job.)~
-==BSHART ~ Hey, pussycat, let's stop it. See <CHARNAME> enjoys our display just too much.
+==BSHART ~ Hey, pussycat, let's stop it. See <CHARNAME> enjoys our display just too much.~
 EXIT
 
 CHAIN
 IF ~ Global("SanSharBoth","GLOBAL",1)~ THEN BSANDR SanShartBN1
 ~ (As you enter your room at the inn, you find Shar-Teel and Sandrah already present. Both had left the common room earlier to care for their recent injuries.)~
 DO ~ SetGlobal("SanSharBoth","GLOBAL",2)~
-== BSHART~ Aaah, good, now a little bit more to the left, too. (Shar-Teel lies on the bed on her stomach, completely naked. Except for a number of bruises and scars, you observe again how beautiful her body can be when cleaned and cared for.)~
-== BSANDR ~ Then hold still once again. Clench your teeth it will hurt a bit. But I think you will like that even more. (Sandrah kneels on the bed beside Shar-Teel with a cup of salve from which she takes with her fingertips to gently massage it onto the lying girl's wounds. Sandrah has put on one of those transparent nothings you so much enjoy see her wearing, just to tear them from her body in your arousal.)~
-== BSHART~ Ouch, little bastard. Don't think I love pain when I could have something better instead.~
-== BSANDR ~ (Sandrah quickly adjusts a number of small kisses all around the wound she was working on.) You will feel much better immediately. I swear.~
+==BSHART~ Aaah, good, now a little bit more to the left, too. (Shar-Teel lies on the bed on her stomach, completely naked. Except for a number of bruises and scars, you observe again how beautiful her body can be when cleaned and cared for.)~
+==BSANDR ~ Then hold still once again. Clench your teeth it will hurt a bit. But I think you will like that even more. (Sandrah kneels on the bed beside Shar-Teel with a cup of salve from which she takes with her fingertips to gently massage it onto the lying girl's wounds. Sandrah has put on one of those transparent nothings you so much enjoy see her wearing, just to tear them from her body in your arousal.)~
+==BSHART~ Ouch, little bastard. Don't think I love pain when I could have something better instead.~
+==BSANDR ~ (Sandrah quickly adjusts a number of small kisses all around the wound she was working on.) You will feel much better immediately. I swear.~
 END
 ++ ~ * You silently close the door behind you and lean your back against it, preparing to watch the two wonderful girls like they were some piece of art.*~ + SanShartBN2
 ++ ~ * You lie down on the bed next to the pair and continue to watch them while you feel your own arousal grow moment by moment.* ~ + SanShartBN3
@@ -5947,7 +5947,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanShartBN2
 ~ There is someone else, Sharly, who might want to join us.~
-== BSHART ~ Hey, loverboy, get your cute ass over here, unless you want to drown in that puddle drooling from your open mouth. ~
+==BSHART ~ Hey, loverboy, get your cute ass over here, unless you want to drown in that puddle drooling from your open mouth. ~
 END
 ++ ~ *You move over to the bed, where Shar-Teel's steel-hard grib catches you as soon as you come into reach and forces you to kneel down in front of her. She laughs triumphantly before she starts to kiss you with full passion.*~ + SanShartBN4
 
@@ -5955,7 +5955,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanShartBN3
 ~ *Sandrah playfully puts a dot of the salve to the top of your nose, smiling invitigly at you.*~
-== BSHART ~ Hey, loverboy, are you too shy or just too dumb. (She gets hold of both of your ears and forces your head down to hers. She laughs triumphantly before she starts to kiss you with full passion.)~
+==BSHART ~ Hey, loverboy, are you too shy or just too dumb. (She gets hold of both of your ears and forces your head down to hers. She laughs triumphantly before she starts to kiss you with full passion.)~
 END
 ++ ~ * You have already decided that any opposition from your side would be completely useless against those two accomplished fighters.* ~ +SanShartBN4
 
@@ -5968,44 +5968,44 @@ CHAIN
 IF ~ Global("DimDay","GLOBAL",1)~ THEN BSANDR Dimday
 ~ Good bard, take these coins and spend the evening with your wife and children, please.~ 
 DO~ SetGlobal("DimDay","GLOBAL",2) TakePartyGold(50) ~
-== BSANDR ~ (You are happy with Sandrah's action - the guy was really terrible.)~
+==BSANDR ~ (You are happy with Sandrah's action - the guy was really terrible.)~
 = ~ (Sandrah sits down at the old celesta in the corner and tries a few notes.)~
 = ~ (Soon a beautiful melody starts to emerge from the battered instrument.)~
-== BSHART ~ Oh, I know this one, it is a wonderful tune!~ DO ~PlaySound("DimDay")  ~
+==BSHART ~ Oh, I know this one, it is a wonderful tune!~ DO ~PlaySound("DimDay")  ~
 = ~
 **I see you on the street in company
   Why don't you come and ease your mind with me
   I'm living for the night we steal away
   I need you at the dimming of the day** ~
 = ~ (You could hear a needle drop at the inn as Shar-Teel's wonderful voice has calmed all chatter. Shar-Teel stands beside Sandrah with her hand on the sitting girl's shoulder and her gaze is like a million miles away. You swear you saw a little teardrop in her eye.)~
-== BSANDR ~ (Sandrah takes Shar-Teel's hand and the two girls come over to you.)~
-== BSHART ~ Sandrah, don't you think the musicians can claim a reward.~
-== BSANDR ~ You want me to go around the room with a tin can collecting coins, really?~
-== BSHART ~ I think this here loverboy will have to pay for all. (Her smile at you is soft and sweet, the music and her associated memories must have mellowed her mood tonight.)~
-== BSANDR ~ (Sandrah puts one arm around your shoulder, while Shar-Teel grips your arm on the other side and gently but unresistable they guide you to your bedroom upstairs.) ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+==BSANDR ~ (Sandrah takes Shar-Teel's hand and the two girls come over to you.)~
+==BSHART ~ Sandrah, don't you think the musicians can claim a reward.~
+==BSANDR ~ You want me to go around the room with a tin can collecting coins, really?~
+==BSHART ~ I think this here loverboy will have to pay for all. (Her smile at you is soft and sweet, the music and her associated memories must have mellowed her mood tonight.)~
+==BSANDR ~ (Sandrah puts one arm around your shoulder, while Shar-Teel grips your arm on the other side and gently but unresistable they guide you to your bedroom upstairs.) ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
 IF ~ Global("DimDay","GLOBAL",4) ~ THEN BSANDR CruelTBK
 ~ (Your two lovecats have sided up left and right of you embracing your shoulders.)~
 DO ~ SetGlobal("DimDay","GLOBAL",5) ~
-== BSHART ~ (While Sandrah starts to whistle a jolly tune, Shar-Teel joins in with her beautiful voice: ~
+==BSHART ~ (While Sandrah starts to whistle a jolly tune, Shar-Teel joins in with her beautiful voice: ~
 = ~ * Cruel to be kind in the right measure
  Cruel to be kind it's a very good sign
  Cruel to be kind means that I love you
  You got to be cruel to be kind.*~
 = ~ (She punches you hard in the ribs. As you open your mouth to gasp for air, her tongue slides gently into your mouth and her lips seal off any protest.)~
-== BSANDR ~ (Sandrah's arms embrace you from behind to steady you, but she also pins your arms to your body, so her friend can continue her love attack without your resistance - as if you would attempt any.)~
+==BSANDR ~ (Sandrah's arms embrace you from behind to steady you, but she also pins your arms to your body, so her friend can continue her love attack without your resistance - as if you would attempt any.)~
 EXIT
 
 CHAIN
 IF ~ Global("SharRead1","GLOBAL",1)~ THEN BSANDR SanShartbook1
 ~(As you enter the side room you rented for your party after a negotiation with the proprietor, you are once more struck by another surprise from your lovecats. You had thought you knew them by now and even Shar-Teel coming up in a gown and a nice hairdo would not shock you anymore. But you have erred.)~
 DO ~ SetGlobal("SharRead1","GLOBAL",2) ~
-== BSHART~ (Shar-Teel sits at the table with Sandrah kneeling beside her with her arm around Shar-Teel's shoulder and peering into the BOOK that she holds.)~
+==BSHART~ (Shar-Teel sits at the table with Sandrah kneeling beside her with her arm around Shar-Teel's shoulder and peering into the BOOK that she holds.)~
 = ~ And then the ca-v-a, cava what, cava-li oh, cavalier, hey what a word, it's even pathetic when pronounced, but looks horrible in writing. Too much ado for an arrogant male.~
-== BSANDR ~ Wildcat, we will never find out the end of the story if you keep commenting all the words like that. ~
-== BSHART~ It seems like your warrior has instinctively sensed your presence now, as Shar-Teel turns around to look at you - through a pair of spectacles!! ~
+==BSANDR ~ Wildcat, we will never find out the end of the story if you keep commenting all the words like that. ~
+==BSHART~ It seems like your warrior has instinctively sensed your presence now, as Shar-Teel turns around to look at you - through a pair of spectacles!! ~
 =~ Hey, loverboy, you really spent your youth with stuff like that? And I complained about my upbringing...~
 END
 ++ ~ She-bear what is wrong with your eyes? ~ + SanShartbook2
@@ -6013,25 +6013,25 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanShartbook2
 ~ Hello, <CHARNAME>.~
-== BSHART~ Nothing is wrong, bloody idiot, just Sandrah and I found out that I am a bit short-sighted when it comes to reading.~
+==BSHART~ Nothing is wrong, bloody idiot, just Sandrah and I found out that I am a bit short-sighted when it comes to reading.~
 END
 ++~ No wonder, it was never detected, since when do you READ?~ + SanShartbook3
 
 CHAIN
 IF ~~ THEN BSANDR SanShartbook3
 ~Oh my, <CHARNAME>! (Sandrah looks really disappointed.)~
-== BSHART~ Ha, pussycat, didn't I tell you? Now you owe me. I told you he would come up with something stupid like that. Even the best of them males cannot be trained into something better.~
-== BSANDR ~ <CHARNAME>, you could really have come up with something more intelligent. I was betting with Shar-Teel you would. Sorry I have to leave you now - to clean and polish her boots.~
-== BSHART~ Mind it, I will give you no pardon. If I cannot see my pretty face in them afterwards, I will give you a spanking. ~
-== BSANDR ~ Good trick, wildcat, but your lesson is not finished. Your new teacher will continue with you now. (While changing positions with you, she manages to give you a passionate kiss, before leaving you alone with Shar-Teel.)~
-== BSHART~ You do not really intend to continue with THAT lesson, hm, my cavalier?~
+==BSHART~ Ha, pussycat, didn't I tell you? Now you owe me. I told you he would come up with something stupid like that. Even the best of them males cannot be trained into something better.~
+==BSANDR ~ <CHARNAME>, you could really have come up with something more intelligent. I was betting with Shar-Teel you would. Sorry I have to leave you now - to clean and polish her boots.~
+==BSHART~ Mind it, I will give you no pardon. If I cannot see my pretty face in them afterwards, I will give you a spanking. ~
+==BSANDR ~ Good trick, wildcat, but your lesson is not finished. Your new teacher will continue with you now. (While changing positions with you, she manages to give you a passionate kiss, before leaving you alone with Shar-Teel.)~
+==BSHART~ You do not really intend to continue with THAT lesson, hm, my cavalier?~
 END
 ++~ A cavalier is also a man of honour to his lady - and I promised to Sandrah. So you do not want me to break my word?~ + SanShartbook4
 
 CHAIN
 IF ~~ THEN BSANDR SanShartbook4
 ~(Shar-Teel makes a face but nevertheless turns back to the book without further protest.)~
-== BSHART~ Mpf. So that clever pussycat is again the winner in the end.~
+==BSHART~ Mpf. So that clever pussycat is again the winner in the end.~
 = ~ *And then the cavalier bowed down to the lady and kissed her parted lips...* Hey, loverboy, what are you waiting for, you man of honour...~
 END
 ++ ~ (You follow the book's instructions immediately.)~
@@ -6066,7 +6066,7 @@ DO ~ SetGlobal("SanSharGoM","LOCALS",2)~
 == BSHART IF~Global("Sanrompath","Global",1)~THEN~ Gosh, just think of it - some weeks ago I would've been so proud and all to have the son of the God of Murder walk by my side...and in my bedroll at nights.~
 == BSHART IF~Global("Sanrompath","Global",2)~THEN~ Gosh, just think of it - some weeks ago I would've been so proud and all to have the daughter of the God of Murder walk by my side...and you in my bedroll at nights.~
 == BSANDR IF~Global("Sanrompath","Global",1)~THEN~ And now? Are you not proud to be his she-bear?~
-== BSHART IF~Global("Sanrompath","Global",1)~THEN~~ That's it, exactly, pussycat, fuck this murdergod, I am proud to be <CHARNAME>'s girl, do you see it.~
+== BSHART IF~Global("Sanrompath","Global",1)~THEN~ That's it, exactly, pussycat, fuck this murdergod, I am proud to be <CHARNAME>'s girl, do you see it.~
 == BSANDR IF~Global("Sanrompath","Global",2)~THEN~ And now? Are you not proud to be with us?~
 == BSHART IF~Global("Sanrompath","Global",2)~THEN~That's it, exactly, pussycat, fuck this murdergod, I am proud to be your *friends*, do you see it.~
 == BSANDR ~ Yes, I do. It is quite a difference.~
@@ -6210,7 +6210,7 @@ DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
 == BSHART ~ No...I am just glad this episode is over now. Angelo Dorsan no longer looms over me, I am free from that ghost now.~
 == BSANDR ~ A new life is ahead of you, wildcat, the one you have already begun for some time.~
 == BSHART ~ You say it, pussycat, this is exactly how I feel about it.~
-=~BSHART ~ Loverboy, move your ass over here, your wife is in need of you, just in case you haven't noticed yet, you dolt.~
+==BSHART ~ Loverboy, move your ass over here, your wife is in need of you, just in case you haven't noticed yet, you dolt.~
 END
 ++~ (Move to Shar-Teel and silently lay your arms around her shoulder.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~ EXIT
 ++~ (Clean your weapon and ignore Shar-Teel and Sandrah.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-6) ~EXIT

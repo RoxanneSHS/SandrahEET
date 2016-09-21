@@ -6995,6 +6995,7 @@ END
 ACTION_IF FILE_EXISTS_IN_GAME ~a7afaaq.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/mods/AfaaqSan.d~
 EXTEND_TOP ~a7afatk.bcs~ ~SandrahNPC/mods/AfaaqSan.baf~
+EXTEND_TOP ~a7afatk2.bcs~ ~SandrahNPC/mods/AfaaqSan.baf~
 PRINT ~ Afaaq detected - added Sandrah banters~
 END ELSE BEGIN
     PRINT ~ Afaaq not detected - skipped~

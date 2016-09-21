@@ -20,3 +20,12 @@ IF~~THEN A7Afaaq A7IntroSan2
 END
 ++~There is no way to stop Sandrah when it comes to fight slavery. We will see.~+ 196
 
+CHAIN
+IF WEIGHT #-9~ Global("A7IntroSan","LOCALS",2) See("CVSandr") InParty("CVSandr") ~ THEN A7Afaaq A7SanDrowfree
+~Your actions confirm your words, my lady. I regained hope when I observed the freeing of those drow captives.~
+DO~SetGlobal("A7IntroSan","LOCALS",3) ~
+==CVSandrJ~(Sigh) If only your own captivity could be solved as easily as theirs.~
+==A7Afaaq~You are persistent in your actions, so much I have learned. Obstacles and challenges do not frustrate you easily.~
+==CVSandrJ~(Smile) A djinni has one advantage over us mortals, you have time in abundance. A good thing when dealing with long term operations. You will be free one day.~
+==A7Afaaq~I believe it now more than ever. You and <CHARNAME> will reach nearly any goal you set for yourself. You are remarkable beings.~EXIT
+

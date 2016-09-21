@@ -42,3 +42,14 @@ RESPONSE #100
 SetGlobal("BanterIntroNPC6","LOCALS",1)
 Continue()
 END
+
+IF
+GlobalGT("DrowSlavesFree","GLOBAL",0) 
+See("CVSandr") 
+InParty("CVSandr") 
+Global("A7IntroSan","LOCALS",1)
+!AreaCheck("ar2200")
+THEN
+RESPONSE #100
+SetGlobal("A7IntroSan","LOCALS",2)
+END

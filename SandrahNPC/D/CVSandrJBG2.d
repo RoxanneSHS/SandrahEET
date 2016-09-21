@@ -1062,6 +1062,7 @@ IF ~~THEN BEGIN SanremIren4
 SAY~I would not be astonished if we find out that we already met this man a couple of times.~
 IF~~THEN REPLY~The hooded man...~EXIT
 IF~~THEN REPLY~I owe him a lot already and if he is that hooded man I have double reasons to get a hand on him.~EXIT 
+END
 
 IF ~ Global("SanYoshDun","GLOBAL",2) ~ THEN BEGIN SanYoshDunNoYosh1
 SAY ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the center of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~
@@ -3700,7 +3701,7 @@ IF~~THEN TRGyp02 GypSanFortn
 ==TRGyp02~(Kveroslava has suddenly calmed down again.) We must be strong to withstand fate. Maybe it is such a strength why your future escapes my sight... keep your coins, please. I... don't have the power to discern the path of one such as you.~ DO ~GiveGoldForce(10)
 ActionOverride(Player1,SetDialogue("Player1"))~EXIT
 
-I_C_T Imoen2J 142 SanCloneElle
+I_C_T ImoenJ 56 SanCloneElle
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Another piece of the puzzle, Ellesime...~
 ==Imoen2J IF~InParty("CVSandr")~THEN~That beautiful elven queen for which Prism died to make her sculpture...your knowledge is confusing as so often, besta friend.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~An elven queen indeed, Imoen. Another hint to some events in a hidden city of the elves.~

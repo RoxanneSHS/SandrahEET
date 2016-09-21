@@ -82,8 +82,8 @@ IF~ Dead("v#1whi")InPartyAllowDead("v#1whi")~ THEN REPLY ~ I will take care of t
 IF~ Dead("rh#isra")InPartyAllowDead("rh#isra")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sunite paladin that is possible!~ GOTO IsraRess
 IF~ Dead("neera")InPartyAllowDead("neera")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our confused wildmage that is possible!~ GOTO NeeraRess
 IF~ Dead("Rasaad")InPartyAllowDead("rasaad")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sun Soul monk that is possible!~ GOTO RasaadRess
-IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") Random(2,1)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO SirenRess
-IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") Random(2,2)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO RescNoPoss
+IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") RandomNum(2,1)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO SirenRess
+IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") RandomNum(2,2)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO RescNoPoss
 IF~~THEN REPLY ~ Please, Sandrah, we must do all for the fallen that is possible!~GOTO RescNoPoss
 END
 
