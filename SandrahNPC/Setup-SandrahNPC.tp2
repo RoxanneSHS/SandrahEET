@@ -3,7 +3,7 @@
 BACKUP ~SandrahNPC/backup~
 AUTHOR ~Roxanne - Contact Roxanne@shsforums.net~
 
-VERSION ~v2.02.b~
+VERSION ~v2.03.b~
 
 AUTO_TRA ~SandrahNPC/TRA/%s~
 
@@ -156,7 +156,7 @@ COPY ~SandrahNPC\Areas/CVNAR1SR.bmp~ ~override\CVNAR1SR.bmp~
 COPY ~SandrahNPC\Areas/CVNAR2.ARE~ ~override\CVNAR2.ARE~
      COMPILE ~SandrahNPC/Areas/CVNAR2.baf~
 COPY ~SandrahNPC\Areas/CVNAR2.mos~ ~override\CVNAR2.mos~
-COPY ~SandrahNPC\Areas/CVNAR2.tiz~ ~override\CVNAR2.tiz~
+COPY ~SandrahNPC\Areas/CVNAR2.tis~ ~override\CVNAR2.tis~
 COPY ~SandrahNPC\Areas/CVNAR2.wed~ ~override\CVNAR2.wed~
 COPY ~SandrahNPC\Areas/CVNAR2HT.bmp~ ~override\CVNAR2HT.bmp~
 COPY ~SandrahNPC\Areas/CVNAR2LM.bmp~ ~override\CVNAR2LM.bmp~
@@ -167,7 +167,7 @@ COPY ~SandrahNPC\Areas/CVDRU0.ARE~ ~override\CVDRU0.ARE~
      SAY 0x20c8 @643
      COMPILE ~SandrahNPC/Areas/CVDRU0.baf~
 COPY ~SandrahNPC\Areas/CVDRU0.mos~ ~override\CVDRU0.mos~
-COPY ~SandrahNPC\Areas/CVDRU0.tiz~ ~override\CVDRU0.tiz~
+COPY ~SandrahNPC\Areas/CVDRU0.tis~ ~override\CVDRU0.tis~
 COPY ~SandrahNPC\Areas/CVDRU0.wed~ ~override\CVDRU0.wed~
 COPY ~SandrahNPC\Areas/CVDRU0HT.bmp~ ~override\CVDRU0HT.bmp~
 COPY ~SandrahNPC\Areas/CVDRU0LM.bmp~ ~override\CVDRU0LM.bmp~
@@ -294,7 +294,7 @@ COPY ~SandrahNPC\Areas/CVROA1.ARE~ ~override\CVROA1.ARE~
    SAY 0xdd4 @164
    COMPILE ~SandrahNPC/Areas/CVROA1.baf~
 COPY ~SandrahNPC\Areas/CVROA1.mos~ ~override\CVROA1.mos~
-COPY ~SandrahNPC\Areas/CVROA1.tiz~ ~override\CVROA1.tiz~
+COPY ~SandrahNPC\Areas/CVROA1.tis~ ~override\CVROA1.tis~
 COPY ~SandrahNPC\Areas/CVROA1.wed~ ~override\CVROA1.wed~
 COPY ~SandrahNPC\Areas/CVROA1HT.bmp~ ~override\CVROA1HT.bmp~
 COPY ~SandrahNPC\Areas/CVROA1LM.bmp~ ~override\CVROA1LM.bmp~
@@ -315,7 +315,7 @@ COPY ~SandrahNPC\Areas/CVROA2.ARE~ ~override\CVROA2.ARE~
    SAY 0x3ad8 @791
    COMPILE ~SandrahNPC/Areas/CVROA2.baf~
 COPY ~SandrahNPC\Areas/CVROA2.mos~ ~override\CVROA2.mos~
-COPY_LARGE ~SandrahNPC\Areas/CVROA2.tiz~ ~override\CVROA2.tiz~
+COPY_LARGE ~SandrahNPC\Areas/CVROA2.tis~ ~override\CVROA2.tis~
 COPY ~SandrahNPC\Areas/CVROA2.wed~ ~override\CVROA2.wed~
 COPY ~SandrahNPC\Areas/CVROA2HT.bmp~ ~override\CVROA2HT.bmp~
 COPY ~SandrahNPC\Areas/CVROA2LM.bmp~ ~override\CVROA2LM.bmp~
@@ -331,7 +331,7 @@ COPY ~SandrahNPC\Areas/CVROA3.ARE~ ~override\CVROA3.ARE~
      SAY 0x2580 @799
      COMPILE ~SandrahNPC/Areas/CVROA3.baf~
 COPY ~SandrahNPC\Areas/CVROA3.mos~ ~override\CVROA3.mos~
-COPY ~SandrahNPC\Areas/CVROA3.tiz~ ~override\CVROA3.tiz~
+COPY ~SandrahNPC\Areas/CVROA3.tis~ ~override\CVROA3.tis~
 COPY ~SandrahNPC\Areas/CVROA3.wed~ ~override\CVROA3.wed~
 COPY ~SandrahNPC\Areas/CVROA3HT.bmp~ ~override\CVROA3HT.bmp~
 COPY ~SandrahNPC\Areas/CVROA3LM.bmp~ ~override\CVROA3LM.bmp~
@@ -433,7 +433,7 @@ COPY ~SandrahNPC\Areas/CVHUT1SR.bmp~ ~override\CVHUT1SR.bmp~
 COPY ~SandrahNPC\Areas/CVSEW1.ARE~ ~override\CVSEW1.ARE~
      COMPILE ~SandrahNPC/Areas/CVSEW1.baf~
 COPY ~SandrahNPC\Areas/CVSEW1.mos~ ~override\CVSEW1.mos~
-COPY ~SandrahNPC\Areas/CVSEW1.tiz~ ~override\CVSEW1.tiz~
+COPY ~SandrahNPC\Areas/CVSEW1.tis~ ~override\CVSEW1.tis~
 COPY ~SandrahNPC\Areas/CVSEW1.wed~ ~override\CVSEW1.wed~
 COPY ~SandrahNPC\Areas/CVSEW1HT.bmp~ ~override\CVSEW1HT.bmp~
 COPY ~SandrahNPC\Areas/CVSEW1LM.bmp~ ~override\CVSEW1LM.bmp~
@@ -524,7 +524,7 @@ COPY ~SandrahNPC\Areas/CVAKA1SR.bmp~ ~override\CVAKA1SR.bmp~
 COPY ~SandrahNPC\Areas/CVAKA2.ARE~ ~override\CVAKA2.ARE~
      COMPILE ~SandrahNPC/Areas/CVaka2.baf~
 COPY ~SandrahNPC\Areas/CVAKA2.mos~ ~override\CVAKA2.mos~
-COPY ~SandrahNPC\Areas/CVAKA2.tiz~ ~override\CVAKA2.tiz~
+COPY ~SandrahNPC\Areas/CVAKA2.tis~ ~override\CVAKA2.tis~
 COPY ~SandrahNPC\Areas/CVAKA2.wed~ ~override\CVAKA2.wed~
 COPY ~SandrahNPC\Areas/CVAKA2HT.bmp~ ~override\CVAKA2HT.bmp~
 COPY ~SandrahNPC\Areas/CVAKA2LM.bmp~ ~override\CVAKA2LM.bmp~
@@ -588,7 +588,7 @@ COPY ~SandrahNPC\Areas/CVSHA1.ARE~ ~override\CVSHA1.ARE~
      SAY 0x26dc @304
      COMPILE ~SandrahNPC/Areas/cvsha1.baf~
 COPY ~SandrahNPC\Areas/CVSHA1.mos~ ~override\CVSHA1.mos~
-COPY ~SandrahNPC\Areas/CVSHA1.tiz~ ~override\CVSHA1.tiz~
+COPY ~SandrahNPC\Areas/CVSHA1.tis~ ~override\CVSHA1.tis~
 COPY ~SandrahNPC\Areas/CVSHA1.wed~ ~override\CVSHA1.wed~
 COPY ~SandrahNPC\Areas/CVSHA1HT.bmp~ ~override\CVSHA1HT.bmp~
 COPY ~SandrahNPC\Areas/CVSHA1LM.bmp~ ~override\CVSHA1LM.bmp~
@@ -597,7 +597,7 @@ COPY ~SandrahNPC\Areas/CVSHA1SR.bmp~ ~override\CVSHA1SR.bmp~
 COPY ~SandrahNPC\Areas/CVSHA2.ARE~ ~override\CVSHA2.ARE~
      COMPILE ~SandrahNPC/Areas/cvsha2.baf~
 COPY ~SandrahNPC\Areas/CVSHA2.mos~ ~override\CVSHA2.mos~
-COPY ~SandrahNPC\Areas/CVSHA2.tiz~ ~override\CVSHA2.tiz~
+COPY ~SandrahNPC\Areas/CVSHA2.tis~ ~override\CVSHA2.tis~
 COPY ~SandrahNPC\Areas/CVSHA2.wed~ ~override\CVSHA2.wed~
 COPY ~SandrahNPC\Areas/CVSHA2HT.bmp~ ~override\CVSHA2HT.bmp~
 COPY ~SandrahNPC\Areas/CVSHA2LM.bmp~ ~override\CVSHA2LM.bmp~
@@ -619,7 +619,7 @@ COPY ~SandrahNPC\Areas/CVSHA3SR.bmp~ ~override\CVSHA3SR.bmp~
 COPY ~SandrahNPC\Areas/CVSHA4.ARE~ ~override\CVSHA4.ARE~
 COMPILE ~SandrahNPC/Areas/cvsha4.baf~
 COPY ~SandrahNPC\Areas/CVSHA4.mos~ ~override\CVSHA4.mos~
-COPY ~SandrahNPC\Areas/CVSHA4.tiz~ ~override\CVSHA4.tiz~
+COPY ~SandrahNPC\Areas/CVSHA4.tis~ ~override\CVSHA4.tis~
 COPY ~SandrahNPC\Areas/CVSHA4.wed~ ~override\CVSHA4.wed~
 COPY ~SandrahNPC\Areas/CVSHA4HT.bmp~ ~override\CVSHA4HT.bmp~
 COPY ~SandrahNPC\Areas/CVSHA4LM.bmp~ ~override\CVSHA4LM.bmp~
@@ -628,7 +628,7 @@ COPY ~SandrahNPC\Areas/CVSHA4SR.bmp~ ~override\CVSHA4SR.bmp~
 COPY ~SandrahNPC\Areas/CVSHA5.ARE~ ~override\CVSHA5.ARE~
 COMPILE ~SandrahNPC/Areas/cvsha5.baf~
 COPY ~SandrahNPC\Areas/CVSHA5.mos~ ~override\CVSHA5.mos~
-COPY ~SandrahNPC\Areas/CVSHA5.tiz~ ~override\CVSHA5.tiz~
+COPY ~SandrahNPC\Areas/CVSHA5.tis~ ~override\CVSHA5.tis~
 COPY ~SandrahNPC\Areas/CVSHA5.wed~ ~override\CVSHA5.wed~
 COPY ~SandrahNPC\Areas/CVSHA5HT.bmp~ ~override\CVSHA5HT.bmp~
 COPY ~SandrahNPC\Areas/CVSHA5LM.bmp~ ~override\CVSHA5LM.bmp~
@@ -674,7 +674,7 @@ COPY ~SandrahNPC\Areas/CVSHA9SR.bmp~ ~override\CVSHA9SR.bmp~
 COPY ~SandrahNPC\Areas/CVSH10.ARE~ ~override\CVSH10.ARE~
      COMPILE ~SandrahNPC/Areas/CVSH10.baf~
 COPY ~SandrahNPC\Areas/CVSH10.mos~ ~override\CVSH10.mos~
-COPY ~SandrahNPC\Areas/CVSH10.tiz~ ~override\CVSH10.tiz~
+COPY ~SandrahNPC\Areas/CVSH10.tis~ ~override\CVSH10.tis~
 COPY ~SandrahNPC\Areas/CVSH10.wed~ ~override\CVSH10.wed~
 COPY ~SandrahNPC\Areas/CVSH10HT.bmp~ ~override\CVSH10HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH10LM.bmp~ ~override\CVSH10LM.bmp~
@@ -684,7 +684,7 @@ COPY ~SandrahNPC\Areas/CVSH11.ARE~ ~override\CVSH11.ARE~
      SAY 0x1c10 @638
      COMPILE ~SandrahNPC/Areas/CVSH11.baf~
 COPY ~SandrahNPC\Areas/CVSH11.mos~ ~override\CVSH11.mos~
-COPY ~SandrahNPC\Areas/CVSH11.tiz~ ~override\CVSH11.tiz~
+COPY ~SandrahNPC\Areas/CVSH11.tis~ ~override\CVSH11.tis~
 COPY ~SandrahNPC\Areas/CVSH11.wed~ ~override\CVSH11.wed~
 COPY ~SandrahNPC\Areas/CVSH11HT.bmp~ ~override\CVSH11HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH11LM.bmp~ ~override\CVSH11LM.bmp~
@@ -694,7 +694,7 @@ COPY ~SandrahNPC\Areas/CVSH12.ARE~ ~override\CVSH12.ARE~
      COMPILE ~SandrahNPC/Areas/CVSH12.baf~
      COMPILE ~SandrahNPC/Areas/CVSH12AN.baf~
 COPY ~SandrahNPC\Areas/CVSH12.mos~ ~override\CVSH12.mos~
-COPY ~SandrahNPC\Areas/CVSH12.tiz~ ~override\CVSH12.tiz~
+COPY ~SandrahNPC\Areas/CVSH12.tis~ ~override\CVSH12.tis~
 COPY ~SandrahNPC\Areas/CVSH12.wed~ ~override\CVSH12.wed~
 COPY ~SandrahNPC\Areas/CVSH12HT.bmp~ ~override\CVSH12HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH12LM.bmp~ ~override\CVSH12LM.bmp~
@@ -716,7 +716,7 @@ COPY ~SandrahNPC\Areas/CVSH14.ARE~ ~override\CVSH14.ARE~
      SAY 0x2140 @652
      COMPILE ~SandrahNPC/Areas/CVSH14.baf~
 COPY ~SandrahNPC\Areas/CVSH14.mos~ ~override\CVSH14.mos~
-COPY ~SandrahNPC\Areas/CVSH14.tiz~ ~override\CVSH14.tiz~
+COPY ~SandrahNPC\Areas/CVSH14.tis~ ~override\CVSH14.tis~
 COPY ~SandrahNPC\Areas/CVSH14.wed~ ~override\CVSH14.wed~
 COPY ~SandrahNPC\Areas/CVSH14HT.bmp~ ~override\CVSH14HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH14LM.bmp~ ~override\CVSH14LM.bmp~
@@ -725,7 +725,7 @@ COPY ~SandrahNPC\Areas/CVSH14SR.bmp~ ~override\CVSH14SR.bmp~
 COPY ~SandrahNPC\Areas/CVSH15.ARE~ ~override\CVSH15.ARE~
      COMPILE ~SandrahNPC/Areas/CVSH15.baf~
 COPY ~SandrahNPC\Areas/CVSH15.mos~ ~override\CVSH15.mos~
-COPY ~SandrahNPC\Areas/CVSH15.tiz~ ~override\CVSH15.tiz~
+COPY ~SandrahNPC\Areas/CVSH15.tis~ ~override\CVSH15.tis~
 COPY ~SandrahNPC\Areas/CVSH15.wed~ ~override\CVSH15.wed~
 COPY ~SandrahNPC\Areas/CVSH15HT.bmp~ ~override\CVSH15HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH15LM.bmp~ ~override\CVSH15LM.bmp~
@@ -761,7 +761,7 @@ COPY ~SandrahNPC\Areas/CVSH20.ARE~ ~override\CVSH20.ARE~
      COMPILE ~SandrahNPC/Areas/CVSH20.baf~
      COMPILE ~SandrahNPC/Areas/sh20amb.baf~
 COPY ~SandrahNPC\Areas/CVSH20.mos~ ~override\CVSH20.mos~
-COPY ~SandrahNPC\Areas/CVSH20.tiz~ ~override\CVSH20.tiz~
+COPY ~SandrahNPC\Areas/CVSH20.tis~ ~override\CVSH20.tis~
 COPY ~SandrahNPC\Areas/CVSH20.wed~ ~override\CVSH20.wed~
 COPY ~SandrahNPC\Areas/CVSH20HT.bmp~ ~override\CVSH20HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH20LM.bmp~ ~override\CVSH20LM.bmp~
@@ -781,7 +781,7 @@ COPY ~SandrahNPC\Areas/CVSH22.ARE~ ~override\CVSH22.ARE~
      COMPILE ~SandrahNPC/Areas/cvfrozla.baf~
      COMPILE ~SandrahNPC/Areas/CVSeelk.baf~
 COPY ~SandrahNPC\Areas/CVSH22.mos~ ~override\CVSH22.mos~
-COPY ~SandrahNPC\Areas/CVSH22.tiz~ ~override\CVSH22.tiz~
+COPY ~SandrahNPC\Areas/CVSH22.tis~ ~override\CVSH22.tis~
 COPY ~SandrahNPC\Areas/CVSH22.wed~ ~override\CVSH22.wed~
 COPY ~SandrahNPC\Areas/CVSH22HT.bmp~ ~override\CVSH22HT.bmp~
 COPY ~SandrahNPC\Areas/CVSH22LM.bmp~ ~override\CVSH22LM.bmp~
@@ -808,7 +808,7 @@ COPY ~SandrahNPC\Areas/CVPIR2SR.bmp~ ~override\CVPIR2SR.bmp~
 COPY ~SandrahNPC\Areas/CVPIR3.ARE~ ~override\CVPIR3.ARE~
      COMPILE ~SandrahNPC/Areas/CVPIR3.baf~
 COPY ~SandrahNPC\Areas/CVPIR3.mos~ ~override\CVPIR3.mos~
-COPY ~SandrahNPC\Areas/CVPIR3.tiz~ ~override\CVPIR3.tiz~
+COPY ~SandrahNPC\Areas/CVPIR3.tis~ ~override\CVPIR3.tis~
 COPY ~SandrahNPC\Areas/CVPIR3.wed~ ~override\CVPIR3.wed~
 COPY ~SandrahNPC\Areas/CVPIR3HT.bmp~ ~override\CVPIR3HT.bmp~
 COPY ~SandrahNPC\Areas/CVPIR3LM.bmp~ ~override\CVPIR3LM.bmp~
@@ -908,7 +908,7 @@ COPY ~SandrahNPC\Areas/CVELS4.ARE~ ~override\CVELS4.ARE~
      COMPILE     ~SandrahNPC/Areas/CVELS4.baf~
      COMPILE     ~SandrahNPC/Areas/CVCoffin.baf~
 COPY ~SandrahNPC\Areas/CVELS4.mos~ ~override\CVELS4.mos~
-COPY ~SandrahNPC\Areas/CVELS4.tiz~ ~override\CVELS4.tiz~
+COPY ~SandrahNPC\Areas/CVELS4.tis~ ~override\CVELS4.tis~
 COPY ~SandrahNPC\Areas/CVELS4.wed~ ~override\CVELS4.wed~
 COPY ~SandrahNPC\Areas/CVELS4HT.bmp~ ~override\CVELS4HT.bmp~
 COPY ~SandrahNPC\Areas/CVELS4LM.bmp~ ~override\CVELS4LM.bmp~
@@ -968,7 +968,7 @@ COPY ~SandrahNPC\Areas/CVHel2SR.bmp~ ~override\CVHel2SR.bmp~
 COPY ~SandrahNPC\Areas/CVcrxw.ARE~ ~override\CVcrxw.ARE~
      COMPILE     ~SandrahNPC/Areas/CVcrxw.baf~
 COPY ~SandrahNPC\Areas/CVcrxw.mos~ ~override\CVcrxw.mos~
-COPY ~SandrahNPC\Areas/CVcrxw.tiz~ ~override\CVcrxw.tiz~
+COPY ~SandrahNPC\Areas/CVcrxw.tis~ ~override\CVcrxw.tis~
 COPY ~SandrahNPC\Areas/CVcrxw.wed~ ~override\CVcrxw.wed~
 COPY ~SandrahNPC\Areas/CVcrxwHT.bmp~ ~override\CVcrxwHT.bmp~
 COPY ~SandrahNPC\Areas/CVcrxwLM.bmp~ ~override\CVcrxwLM.bmp~
@@ -1008,7 +1008,7 @@ COPY ~SandrahNPC\Areas/cvumo1SR.bmp~ ~override\cvumo1SR.bmp~
 COPY ~SandrahNPC\Areas/cvumo2.ARE~ ~override\cvumo2.ARE~
      COMPILE     ~SandrahNPC/Areas/cvumo2.baf~
 COPY ~SandrahNPC\Areas/cvumo2.mos~ ~override\cvumo2.mos~
-COPY ~SandrahNPC\Areas/cvumo2.tiz~ ~override\cvumo2.tiz~
+COPY ~SandrahNPC\Areas/cvumo2.tis~ ~override\cvumo2.tis~
 COPY ~SandrahNPC\Areas/cvumo2.wed~ ~override\cvumo2.wed~
 COPY ~SandrahNPC\Areas/cvumo2HT.bmp~ ~override\cvumo2HT.bmp~
 COPY ~SandrahNPC\Areas/cvumo2LM.bmp~ ~override\cvumo2LM.bmp~
@@ -1016,7 +1016,7 @@ COPY ~SandrahNPC\Areas/cvumo2SR.bmp~ ~override\cvumo2SR.bmp~
 
 COPY ~SandrahNPC\Areas/cvumo3.ARE~ ~override\cvumo3.ARE~
 COPY ~SandrahNPC\Areas/cvumo3.mos~ ~override\cvumo3.mos~
-COPY ~SandrahNPC\Areas/cvumo3.tiz~ ~override\cvumo3.tiz~
+COPY ~SandrahNPC\Areas/cvumo3.tis~ ~override\cvumo3.tis~
 COPY ~SandrahNPC\Areas/cvumo3.wed~ ~override\cvumo3.wed~
 COPY ~SandrahNPC\Areas/cvumo3HT.bmp~ ~override\cvumo3HT.bmp~
 COPY ~SandrahNPC\Areas/cvumo3LM.bmp~ ~override\cvumo3LM.bmp~
@@ -1031,7 +1031,7 @@ COPY ~SandrahNPC\Areas/cvumo4.ARE~ ~override\cvumo4.ARE~
      SAY 0x18ec @573
      COMPILE     ~SandrahNPC/Areas/cvumo4.baf~
 COPY ~SandrahNPC\Areas/cvumo4.mos~ ~override\cvumo4.mos~
-COPY ~SandrahNPC\Areas/cvumo4.tiz~ ~override\cvumo4.tiz~
+COPY ~SandrahNPC\Areas/cvumo4.tis~ ~override\cvumo4.tis~
 COPY ~SandrahNPC\Areas/cvumo4.wed~ ~override\cvumo4.wed~
 COPY ~SandrahNPC\Areas/cvumo4HT.bmp~ ~override\cvumo4HT.bmp~
 COPY ~SandrahNPC\Areas/cvumo4LM.bmp~ ~override\cvumo4LM.bmp~
@@ -1040,7 +1040,7 @@ COPY ~SandrahNPC\Areas/cvumo4SR.bmp~ ~override\cvumo4SR.bmp~
 COPY ~SandrahNPC\Areas/cvumo5.ARE~ ~override\cvumo5.ARE~
      COMPILE  ~SandrahNPC\Areas/CVUmo5.baf~
 COPY ~SandrahNPC\Areas/cvumo5.mos~ ~override\cvumo5.mos~
-COPY ~SandrahNPC\Areas/cvumo5.tiz~ ~override\cvumo5.tiz~
+COPY ~SandrahNPC\Areas/cvumo5.tis~ ~override\cvumo5.tis~
 COPY ~SandrahNPC\Areas/cvumo5.wed~ ~override\cvumo5.wed~
 COPY ~SandrahNPC\Areas/cvumo5HT.bmp~ ~override\cvumo5HT.bmp~
 COPY ~SandrahNPC\Areas/cvumo5LM.bmp~ ~override\cvumo5LM.bmp~
@@ -1051,7 +1051,7 @@ COPY ~SandrahNPC\Areas/cvumo6.ARE~ ~override\cvumo6.ARE~
      COMPILE  ~SandrahNPC\Areas/CVUmoTR.baf~
      COMPILE  ~SandrahNPC\Areas/CVORCT.baf~
 COPY ~SandrahNPC\Areas/cvumo6.mos~ ~override\cvumo6.mos~
-COPY ~SandrahNPC\Areas/cvumo6.tiz~ ~override\cvumo6.tiz~
+COPY ~SandrahNPC\Areas/cvumo6.tis~ ~override\cvumo6.tis~
 COPY ~SandrahNPC\Areas/cvumo6.wed~ ~override\cvumo6.wed~
 COPY ~SandrahNPC\Areas/cvumo6HT.bmp~ ~override\cvumo6HT.bmp~
 COPY ~SandrahNPC\Areas/cvumo6LM.bmp~ ~override\cvumo6LM.bmp~
@@ -1702,13 +1702,9 @@ COMPILE
 COPY_EXISTING ~ar0400.are~ ~Override~
 WRITE_ASCII 0x6c04 ~CV40JA~
 
-COPY ~SandrahNPC\Areas/tisunpack.exe~  ~override\tisunpack.exe~
+COPY ~SandrahNPC/PVRZ~ ~override~
 
 PRINT ~Installed SandrahNPC for EET Core~
-
-AT_NOW ~SandrahNPC\Areas/CVUnpack.bat~
-AT_UNINSTALL ~SandrahNPC/Areas/CVUninstall.bat~
-
 
 BEGIN
 ~Mods Compatibility~
