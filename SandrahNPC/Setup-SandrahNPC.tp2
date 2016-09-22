@@ -1702,6 +1702,7 @@ COMPILE
 COPY_EXISTING ~ar0400.are~ ~Override~
 WRITE_ASCII 0x6c04 ~CV40JA~
 
+PRINT ~Copying new area graphics - this may take a few minutes...~
 COPY ~SandrahNPC/PVRZ~ ~override~
 
 PRINT ~Installed SandrahNPC for EET Core~

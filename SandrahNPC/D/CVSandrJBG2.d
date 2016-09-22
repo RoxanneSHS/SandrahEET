@@ -687,7 +687,7 @@ IF ~~ THEN REPLY ~ Why should Ao do such - I mean if anyone can guess at all why
 END
 
 IF ~~ THEN BEGIN SanMysSucc13
-SAY ~ Hm. Remember that Ao chose humans during the Times of Trouble to aid him against the renegade gods. With Mystra's role to rule over the Weave while all the gods in one way or another require access to that source of power at the same time, Ao might have followed a similar concept. Instead of giving one of the other celestials that advantage over all the others, he tasked a *mere* human with it, trusting her more than any other god.~
+SAY ~ Hm. Remember that Ao chose humans during the Time of Troubles to aid him against the renegade gods. With Mystra's role to rule over the Weave while all the gods in one way or another require access to that source of power at the same time, Ao might have followed a similar concept. Instead of giving one of the other celestials that advantage over all the others, he tasked a *mere* human with it, trusting her more than any other god.~
 IF ~~ THEN REPLY ~ But why?~ GOTO SanMysSucc14
 IF~~THEN REPLY~He did well in that, after all I learned about those corrupt creatures calling themselves *gods*.~GOTO SanMysSucc14
 END
@@ -715,7 +715,7 @@ END
 
 IF ~~ THEN BEGIN SanMysSucc18
 SAY ~ (This time Sandrah does not hesitate to answer.) To be honest, I do not know.~
-= ~ See, Narvantial's original studies and papers have not been seen since the Times of Trouble. Nothing of the evidence he may have had for his theory is known. All that is left is the fact that in conclusion from his findings he could foresay that my grandmother Midnight would be the next incarnation of Mystra. Why and how he came to that conclusion is unknown, as well as it remains unknown if the same thing had in deed ever happened in previous times. Which of course means that we have no evidence that it will happen again in the future.~
+= ~ See, Narvantial's original studies and papers have not been seen since the Time of Troubles. Nothing of the evidence he may have had for his theory is known. All that is left is the fact that in conclusion from his findings he could foresay that my grandmother Midnight would be the next incarnation of Mystra. Why and how he came to that conclusion is unknown, as well as it remains unknown if the same thing had in deed ever happened in previous times. Which of course means that we have no evidence that it will happen again in the future.~
 IF ~~ THEN REPLY ~ What about your father or the priests of Mystra's temple? Would they hide such things from you for some reason?~ GOTO SanMysSucc19
 END
 
@@ -2449,7 +2449,7 @@ IF~~THEN REPLY~ Have you any idea - despite that strange self-writing book - of 
 END
 
 IF~~ THEN BEGIN SanMysSeekr2
-SAY~ Mystra has maintained a lot of her human aspects from the time she was Midnight. My feelings tell me that she has always seen her role as Guardian of the Weave as an interim - both for the celestial as for herself. She agreed to AO when need was after the incident that killed Mystra in the Times of Trouble to serve to maintain the balance - until her real successor was found - or will be ready to accept her task. ~
+SAY~ Mystra has maintained a lot of her human aspects from the time she was Midnight. My feelings tell me that she has always seen her role as Guardian of the Weave as an interim - both for the celestial as for herself. She agreed to AO when need was after the incident that killed Mystra in the Time of Troubles to serve to maintain the balance - until her real successor was found - or will be ready to accept her task. ~
 IF~~THEN REPLY~You mean...there is a kind of deal between your grandmother and AO for her to guard the Weave until the real new Mystra would be ready for her task. One that was born at the Time of Troubles but could not yet become the goddess when the unforeseen death of the old Mystra occured?~
 DO~SetGlobal("SanKhalBlood","GLOBAL",4)~ GOTO SanMysSeekr3
 END
@@ -2525,7 +2525,7 @@ END
 
 IF~~ THEN BEGIN SanAneWeavTh9
 SAY~ The Weave would be without a guardian then. I doubt that it can be controlled by any sorcerer regardless how powerful. But worse things would happen, <CHARNAME>. Without Mystra in control the other gods would attempt to each claim their stake on the power source - especially the *evil* gods. A new power struggle would commence.~
-IF~~THEN REPLY~ The return of the *Times of Trouble*.~ GOTO SanAneWeavTh10
+IF~~THEN REPLY~ The return of the *Time of Troubles*.~ GOTO SanAneWeavTh10
 IF~~THEN REPLY~ AO could only prevent that by appointing a successor for Mystra.~GOTO SanAneWeavTh10
 END
 
@@ -2807,7 +2807,7 @@ IF~~THEN REPLY~ Back to the facts. We were told that in the generation before us
 END
 
 IF~~THEN BEGIN SanHeriMyst9
-SAY~ One a priestess of the goddess herself, well aware of her duties, her heritage and courageous enough to pick up a fight even with gods. The other a merchant's daughter, beautiful, young and intelligent winning many hearts but seemingly unaware of the blood she carried. Thus was the situation when unexpectedly Mystra was killed in the Times of Trouble and AO had to urgently find a new guardian for the Weave.~
+SAY~ One a priestess of the goddess herself, well aware of her duties, her heritage and courageous enough to pick up a fight even with gods. The other a merchant's daughter, beautiful, young and intelligent winning many hearts but seemingly unaware of the blood she carried. Thus was the situation when unexpectedly Mystra was killed in the Time of Troubles and AO had to urgently find a new guardian for the Weave.~
 IF~~THEN REPLY~ Combine those two personalities and we get - you!~GOTO SanHeriMyst10
 END
 
@@ -2830,7 +2830,7 @@ END
 
 IF~~THEN BEGIN SanHeriMyst13
 SAY~ Not just any spawn, but one of the strongest, one to grow from the essence of the weaker ones and become a major power and maybe even aspiring to the Throne of Bhaal. ~
-=~By the time Bhaal was seeding his spawns he knew how the Times of Trouble would end - for him but also for the ones who would bring him down. And even if the final backstab was done by Cyric - and Mask was involved as the deadly weapon - it was Midnight that had lead and concluded the mission in AO's name. The priestess of Mystra, later reincarnate as the goddess herself, was the real enemy for the God of Murder.~
+=~By the time Bhaal was seeding his spawns he knew how the Time of Troubles would end - for him but also for the ones who would bring him down. And even if the final backstab was done by Cyric - and Mask was involved as the deadly weapon - it was Midnight that had lead and concluded the mission in AO's name. The priestess of Mystra, later reincarnate as the goddess herself, was the real enemy for the God of Murder.~
 =~With his plan to live on through his spawns who would grow and each of them hold part of his essence so enough would be maintained to restore his power one day, there was one opponent to be eliminated who could spoil the plan once again - Mystra.~
 IF~~THEN REPLY~ When Khalindra died at the bhaalspawn's birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
 IF~~THEN REPLY~ When Khalindra died at the bhaalspawn's birth - my birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
