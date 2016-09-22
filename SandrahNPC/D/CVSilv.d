@@ -54,7 +54,7 @@ EXIT
 CHAIN
 IF~~ THEN CVSILV Wanderers6
 ~ The record of the Bhaalspawn has already been accessed twice. The limit has been reached.~
-==CVSANDRJ~ What? <CHARNAME>, somebody has studied your entries and probably not for a reason we like. Guardian who has accessed those entries.~
+==CVSANDRJ~ What? <CHARNAME>, somebody has studied your entries and probably not for a reason we like. Guardian who has accessed those entries?~
 ==CVSILV ~I am not authorised to give you names?~
 ==CVSANDRJ~ You do not need to, just nod if I am right.~
 =~Sarevok?~

@@ -131,3 +131,25 @@ ActionOverride("CVSandr",MoveToObject(Player1))
 ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
 END
 
+IF
+GlobalGT("Chapter","GLOBAL",17)
+Global("Deactivate0801","AR0800",1)
+InMyArea(Player1)
+THEN
+RESPONSE #100
+FadeToColor([1.0],0)
+SetGlobal("Deactivate0801","AR0800",2)
+DayNight(MIDNIGHT)
+FadeFromColor([20.0],0)
+TriggerActivation("Tran0801a",FALSE)
+TriggerActivation("Tran0801b",FALSE)
+TriggerActivation("Tran0801c",FALSE)
+TriggerActivation("Tran0801d",FALSE)
+TriggerActivation("BodhiInfo1",TRUE)
+TriggerActivation("BodhiInfo2",TRUE)
+TriggerActivation("BodhiInfo3",TRUE)
+TriggerActivation("Tran0808",TRUE)
+Unlock("DOOR12")
+CreateCreatureObjectOffScreen("BODHIAMB",Player1,0,0,0)
+Continue()
+END
