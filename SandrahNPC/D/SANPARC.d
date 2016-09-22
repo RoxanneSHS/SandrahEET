@@ -199,7 +199,7 @@ IF ~Global("CVAR0400","GLOBAL",1)~ THEN REPLY ~The Slums~ GOTO Choice5
 IF ~Global("CVAR0800","GLOBAL",1)~ THEN REPLY ~The Graveyard~ GOTO Choice6
 IF ~Global("CVAR0300","GLOBAL",1)~ THEN REPLY ~The Docks~ GOTO Choice7
 IF ~Global("CVAR0500","GLOBAL",1)~ THEN REPLY ~The Bridge~ GOTO Choice8
-IF ~Global("RZAR0900","GLOBAL",1)~ THEN REPLY ~The Temple District~ GOTO Choice9
+IF ~Global("CVAR0900","GLOBAL",1)~ THEN REPLY ~The Temple District~ GOTO Choice9
 IF ~Global("CVAR1000","GLOBAL",1)~ THEN REPLY ~The Government District~ GOTO Choice10
 IF ~Global("CVAR0020","GLOBAL",1)~ THEN REPLY ~The City Gates~ GOTO Choice10
 IF ~Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~De´Arnise keep~ GOTO Choice11
@@ -378,8 +378,8 @@ END
 
 IF ~~ THEN BEGIN Choice9
 SAY ~State specifics.~
-IF ~Global("RZAR0900","GLOBAL",1)~ THEN REPLY ~Temples outdoor~ DO ~SetGlobal("SanTravel","GLOBAL",45)~ EXIT
-IF ~Global("RZAR0901","GLOBAL",1)~ THEN REPLY ~Temple of Helm~ DO ~SetGlobal("SanTravel","GLOBAL",46)~ EXIT
+IF ~Global("CVAR0900","GLOBAL",1)~ THEN REPLY ~Temples outdoor~ DO ~SetGlobal("SanTravel","GLOBAL",45)~ EXIT
+IF ~Global("CVAR0901","GLOBAL",1)~ THEN REPLY ~Temple of Helm~ DO ~SetGlobal("SanTravel","GLOBAL",46)~ EXIT
 IF ~Global("CVAR0902","GLOBAL",1)~ THEN REPLY ~Temple of Lathander~ DO ~SetGlobal("SanTravel","GLOBAL",47)~ EXIT
 IF ~Global("CVAR0903","GLOBAL",1)~ THEN REPLY ~Order of the Radiant Heart ~ DO ~SetGlobal("SanTravel","GLOBAL",48)~ EXIT
 IF ~Global("CVAR0904","GLOBAL",1)~ THEN REPLY ~Temple of Talos~ DO ~SetGlobal("SanTravel","GLOBAL",49)~ EXIT

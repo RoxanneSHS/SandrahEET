@@ -1,7 +1,7 @@
 IF
-   Global("RZAR0901","GLOBAL",0)
+   Global("CVAR0901","GLOBAL",0)
 THEN
     RESPONSE #100
-             SetGlobal("RZAR0901","GLOBAL",1)
+             SetGlobal("CVAR0901","GLOBAL",1)
              Continue()
 END

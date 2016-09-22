@@ -111,7 +111,7 @@ CHAIN
 IF~Global("SanJahMiss","LOCALS",3)~ THEN BSANDR SanJahRomPCRet
 ~It feels good to have you walking amidst us again, Jaheira.~
 DO~SetGlobal("SanJahMiss","LOCALS",4)~ 
-== BJAHEIR ~ I am glad as well, my friend. <CHARNAME> has made a decision that I was too afraid to make myself all the time...or did he have some counselor to assist him with that?~
+== BJAHEIR ~ I am glad as well, my friend. <CHARNAME> has made a decision that I was too afraid to make myself all the time...or did he have some counselor to assist <PRO_HIMHER> with that?~
 == BSANDR ~ A counselor cannot change what is deep inside you, Jaheira, she can only make visible what maybe you yourself do not see too clearly at the moment.~
 == BJAHEIR ~ You have really grown in your role since I first met - and distrusted - you. I will not hide my feelings for <CHARNAME> anymore, not from myself nor from anyone else. And I will admid my feelings for you as well. (She kisses Sandrah's forehead and embraces the younger woman for a while.)~
 =~ Let us move on - my steps will be light from now on.~

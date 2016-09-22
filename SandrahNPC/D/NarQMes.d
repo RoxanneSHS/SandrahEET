@@ -144,7 +144,7 @@ IF ~ Global("SanKhalBlood","GLOBAL",4)~THEN NarQMes BookWriteL
 DO~ SetGlobal("SanKhalBlood","GLOBAL",5) ~
 == BSANDR~ You are right, dear Landrel, you could always read me like an open book.~
 == NarQMes ~ It is simple as you never closed your pages to my eyes. So?~
-== BSANDR~ We are already at the topic - books. Maybe you can help me as good as my father as you knowledge in those things is not small . I am interested in one particular book - the one which writes itself.~
+== BSANDR~ We are already at the topic - books. Maybe you can help me as good as my father as your knowledge in those things is not small . I am interested in one particular book - the one which writes itself.~
 == NarQMes ~ (His eyes widen.) The goddess herself has talked to you, she must have, as she has sealed our lips by her oath on it - until now, that is.~
 == BSANDR~ Honestly, she did not mention the book itself, rather she hinted at the fact that all the reigns of the incarnations of Mystra are not eternal but a succession chosen from the bloodline of the very first of them all. Through the book I hope to learn about those bloodlines.~
 == NarQMes ~ The Seeker has found the trail and follows the scent. It is early but you have grown faster than anyone could have expected.~
