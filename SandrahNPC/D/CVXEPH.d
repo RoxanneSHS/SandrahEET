@@ -32,7 +32,7 @@ DO~SetGlobal("SanXephRet","GLOBAL",4)~
 ==CVSandrJ~ When we heard that Mystra is in distress we came immediately.~
 ==Sankhelb~ Many attempts have been made in the past by sorcerers led astray by the sheer idea of gaining the power of the Weave for themselves.~
 ==IF_FILE_EXISTS Wardmaga~ The sorcerer we deal with this time has used the chance that Mystra came to the Prime to deal with your father. ~
-==IF_FILE_EXISTS Wardmagb~ Since the Times of Trouble it is Ao's verdict that the gods that come to our plane leave part of their abilities and powers behind and become vulnerable down here.~
+==IF_FILE_EXISTS Wardmagb~ Since the Time of Troubles it is Ao's verdict that the gods that come to our plane leave part of their abilities and powers behind and become vulnerable down here.~
 ==Elminsa~Relatively vulnerable, my friend. He could capture her with his undeniable powers but has still not reached his goal to access the Weave through her.~
 ==CVSandrJ~ Is it known who this sorcerer is or where he may be?~
 ==Sankhelb~ It is best that we show you the message we received. (He holds up a small bust of the goddess Mystra.)~
