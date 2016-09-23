@@ -209,7 +209,7 @@ DO~SetGlobal("SanMystApp","arpo31",2)~
 ==CVSANDRJ ~ So the attempt of your former lover was a real danger for you, Mystra?~
 ==SANMYST~ You know well by now that we need the aid and the faith of the mortals to aid us in all that happens on the Prime Plane, Sandrah. I am no longer Midnight, I need you and your father, as well as <CHARNAME> when a danger arises from Toril. ~
 ==CVSANDRJ ~He would have turned against you next, Mystra, the power who stands in his way. Then we have slain a god today?~
-==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her dispair.The cunning weaseling Cyric had left his prime shell when it became apparent to him whom he was facing.~
+==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her dispair. The cunning weaseling Cyric had left his prime shell when it became apparent to him whom he was facing.~
 ==CVSANDRJ ~The mighty Bhaalspawn <CHARNAME>!~
 ==SANMYST~ No, I was referring to you, Sandrah.~
 ==CVSANDRJ ~Really....?~
