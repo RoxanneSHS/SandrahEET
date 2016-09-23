@@ -6232,6 +6232,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~C6Coran.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/coranbg2c6.d~
 PRINT ~ Coran BG2 detected - Sandrah's relationship continued~
 END
+
+COPY ~SandrahNPC/Misc/coranm.bmp~ ~override/c6coran.bmp~
  
 ACTION_IF FILE_EXISTS_IN_GAME ~YSElm01.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/YSElm01app.d~
