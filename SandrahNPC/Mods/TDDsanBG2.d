@@ -194,7 +194,7 @@ END
 INTERJECT_COPY_TRANS Alust02 14 SanKnownAlust1
 ==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ It seems that our anchestors have left a lot for us to repair on the material plane, <CHARNAME>.~
 ==Alust02 IF~ InParty("CVSandr") ~THEN ~ I do not think you call the Mad God your grandfather more often than <CHARNAME> relates to Bhaal as father.~
-==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ You are right, Lady Alustriel, but it will not keep me from regarding their deed as some kind of family business that need to be cleaned up.~
+==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ You are right, Lady Alustriel, but it will not keep me from regarding their deed as some kind of family business that needs to be cleaned up.~
 END
 
 ADD_TRANS_ACTION Bendalis BEGIN 0 END BEGIN 0 1  END

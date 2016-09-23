@@ -2769,18 +2769,13 @@ END
 
 IF~~THEN BEGIN SanHeriMyst2
 SAY~ You are wonderful, again and again. Yes, let us recapitulate what we have learned - to express it in our own words will let our minds grab the meaning and impact of it all.~
-IF~~THEN REPLY~ Up to now we have always seen in you Midnight's granddaughter through your father's line. Now we have learned about a similar but even more significant connection to Mystra through your mother's bloodline.~ GOTO SanHeriMyst4
-IF~~THEN REPLY~ As it seems you are the only remaining mortal on Faerun that can continue Mystra's bloodline and succeed the goddess yourself or through your daughters, should you ever have them.~ GOTO SanHeriMyst3
+IF~~THEN REPLY~ Up to now we have always seen in you Midnight's granddaughter through your father's line. Now we have learned about a similar but even more significant connection to Mystra through your mother's bloodline.~ GOTO SanHeriMyst3
+IF~~THEN REPLY~ As it seems you are the only remaining mortal on Faerun who can continue Mystra's bloodline and succeed the goddess yourself or through your daughters, should you ever have them.~ GOTO SanHeriMyst3
 END
 
 IF~~THEN BEGIN SanHeriMyst3
 SAY~ Please, let us not jump to conclusions just now. In our proven manner let us put piece beside piece so we do not oversee any important detail.~
 IF~~THEN REPLY~ Fine. For the moment I suggest to forget about anything we knew before of your heritage and your grandmother and focus on the motherly line.~ GOTO SanHeriMyst4
-END
-
-IF~~THEN BEGIN SanHeriMyst4
-SAY~ (Almost as a whisper:) *Our* mother's bloodline, even if Khalindra was just misused in your case.~
-IF~~THEN REPLY~ Do you see a significance in that or is it just coincidence?~ GOTO SanHeriMyst5
 END
 
 IF~~THEN BEGIN SanHeriMyst5
@@ -2824,7 +2819,7 @@ IF~~THEN REPLY~ His plan was more than mere revenge - but in which way?~  GOTO S
 END
 
 IF~~THEN BEGIN SanHeriMyst12
-SAY~ We have completely lost our sense of time over the topic, my love. Let us continue this another time.~
+SAY~ We have completely lost our sense of time over the topic, my love. Let us continue this on another occasion.~
 IF~~THEN DO~SetGlobal("SanKhalBlood","GLOBAL",14)~EXIT
 END
 
