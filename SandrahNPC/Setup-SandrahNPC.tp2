@@ -1881,8 +1881,6 @@ COMPILE ~SandrahNPC/Pellig/haiass/d/haiasstob.d~ USING ~SandrahNPC/TRA/Haiasstob
     COMPILE ~SandrahNPC/Pellig/haiass/scripts/haiass.baf~ USING ~SandrahNPC/TRA/Haiass.tra~
     COMPILE ~SandrahNPC/Pellig/haiass/scripts/haiwolf.baf~
 
-
-
     COPY ~SandrahNPC/Pellig/haiass/itm/haiw1.itm~ ~override~
      ~SandrahNPC/Pellig/haiass/itm/haiw2.itm~ ~override~
      ~SandrahNPC/Pellig/haiass/itm/haiw3.itm~ ~override~

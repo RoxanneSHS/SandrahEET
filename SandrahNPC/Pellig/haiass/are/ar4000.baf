@@ -1,4 +1,14 @@
 IF
+Global("Sanswitch","ar4000",0)
+InPartyAllowDead("CVsandr")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",ChangeAIScript("CVSan25",OVERRIDE))
+SetGlobal("Sanswitch","ar4000",1)
+Continue()
+END
+
+IF
 Global("HaiassSoA","GLOBAL",1)
 THEN
 RESPONSE #100
