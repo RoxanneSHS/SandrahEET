@@ -9,10 +9,10 @@ IF~~THEN REPLY~ I need a magical item.~ GOTO magit
 IF~~ THEN REPLY ~ We want to party a bit. ~ DO~ GiveItemCreate("Misc97","CVSandr",1,0,0)~ EXIT
 IF~OR(2)Global("Dollgiven","LOCALS",0) AreaCheck("Ares01") ~ THEN REPLY ~ Give me something I may have forgotten. ~ DO~ GiveItemCreate("Sandoll","CVSandr",1,0,0) SetGlobal("Dollgiven","LOCALS",1)~ EXIT
 IF~!Global("ENDOFBG1","GLOBAL",2)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitem
-IF~Global("ENDOFBG1","GLOBAL",2)GlobalLT("Chapter","GLOBAL",22)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemSoA
-IF~Global("ENDOFBG1","GLOBAL",2)GlobalGT("Chapter","GLOBAL",21)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemToB
-IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalLT("Chapter","GLOBAL",22)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice1
-IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalGT("Chapter","GLOBAL",21)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice3
+IF~Global("ENDOFBG1","GLOBAL",2)GlobalLT("Chapter","GLOBAL",20)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemSoA
+IF~Global("ENDOFBG1","GLOBAL",2)GlobalGT("Chapter","GLOBAL",19)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemToB
+IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalLT("Chapter","GLOBAL",20)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice1
+IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice3
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",2) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice26
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",4) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice26
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",6) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO RTFNo
@@ -223,7 +223,7 @@ IF~ OR(7)
     Global("CVRR3100","GLOBAL",1)
     Global("CVRR3300","GLOBAL",1)
     Global("CVdd3300","GLOBAL",1)
-    GlobalGT("Chapter","GLOBAL",21)~ THEN REPLY ~Other Towns~  GOTO Choice25
+    GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY ~Other Towns~  GOTO Choice25
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
                                                                            
@@ -247,7 +247,7 @@ IF~ OR(7)
     Global("CVRR3100","GLOBAL",1)
     Global("CVRR3300","GLOBAL",1)
     Global("CVdd3300","GLOBAL",1)
-    GlobalGT("Chapter","GLOBAL",21)~ THEN REPLY ~Other Towns~  GOTO Choice25
+    GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY ~Other Towns~  GOTO Choice25
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -308,10 +308,10 @@ END
 IF ~~ THEN BEGIN Choice6
 SAY ~State specifics.~
 IF ~Global("CVAR0800","GLOBAL",1)~ THEN REPLY ~Graveyard outside~ DO ~SetGlobal("SanTravel","GLOBAL",20)~ EXIT
-IF ~Global("RZAR0801","GLOBAL",1)GlobalLT("Chapter","GLOBAL",20)~ THEN REPLY ~Beneath graveyard~  DO ~SetGlobal("SanTravel","GLOBAL",21)~ EXIT
-IF ~Global("RZAR0801","GLOBAL",1)GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY ~Beneath graveyard~ DO ~SetGlobal("SanTravel","GLOBAL",120)~ EXIT
-IF ~Global("RZAR0803","GLOBAL",1)GlobalLT("Chapter","GLOBAL",20)~ THEN REPLY ~Bodhi큦 lair~ DO ~SetGlobal("SanTravel","GLOBAL",22)~ EXIT
-IF ~Global("RZAR0803","GLOBAL",1)GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY ~Bodhi큦 lair~ DO ~SetGlobal("SanTravel","GLOBAL",121)~ EXIT
+IF ~Global("RZAR0801","GLOBAL",1)GlobalLT("Chapter","GLOBAL",18)~ THEN REPLY ~Beneath graveyard~  DO ~SetGlobal("SanTravel","GLOBAL",21)~ EXIT
+IF ~Global("RZAR0801","GLOBAL",1)GlobalGT("Chapter","GLOBAL",17)~ THEN REPLY ~Beneath graveyard~ DO ~SetGlobal("SanTravel","GLOBAL",120)~ EXIT
+IF ~Global("RZAR0803","GLOBAL",1)GlobalLT("Chapter","GLOBAL",18)~ THEN REPLY ~Bodhi큦 lair~ DO ~SetGlobal("SanTravel","GLOBAL",22)~ EXIT
+IF ~Global("RZAR0803","GLOBAL",1)GlobalGT("Chapter","GLOBAL",17)~ THEN REPLY ~Bodhi큦 lair~ DO ~SetGlobal("SanTravel","GLOBAL",121)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
