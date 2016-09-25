@@ -13,9 +13,9 @@ THEN
   RESPONSE #100
     CutSceneID(Protagonist)
     FadeToColor([20.0],0)
-    MoveToPoint([931.672])
+    MoveToPoint([331.2450])
     Wait(2)
-    CreateCreature("haiass7",[791.721],1)
+    CreateCreature("haiass7",[325.2470],1)
     EndCutSceneMode()
 END
 

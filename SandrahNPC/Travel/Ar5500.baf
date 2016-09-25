@@ -1,10 +1,18 @@
 IF
+Global("EnteredArea","AR5500",9)
+GlobalGT("SanJenship","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("EnteredArea","AR5500",0)
+END
+
+IF
 Global("SanJenship","GLOBAL",0)
 InParty("CVJenlig")
 InParty("CVSandr")
 THEN
 RESPONSE #100
-SetMasterArea("ar6300")
+SetGlobal("EnteredArea","AR5500",9)
 ActionOverride(Player1,LeaveAreaLUA("CVJens","",[1421.1084],4))
 ActionOverride(Player2,LeaveAreaLUA("CVJens","",[1421.1084],4))
 ActionOverride(Player3,LeaveAreaLUA("CVJens","",[1421.1084],4))
