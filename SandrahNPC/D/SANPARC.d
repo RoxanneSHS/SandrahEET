@@ -12,7 +12,7 @@ IF~!Global("ENDOFBG1","GLOBAL",2)~THEN REPLY ~ Can you retrieve something I have
 IF~Global("ENDOFBG1","GLOBAL",2)GlobalLT("Chapter","GLOBAL",20)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemSoA
 IF~Global("ENDOFBG1","GLOBAL",2)GlobalGT("Chapter","GLOBAL",19)~THEN REPLY ~ Can you retrieve something I have lost?~ GOTO lostitemToB
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalLT("Chapter","GLOBAL",20)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice1
-IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice3
+IF~ Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalGT("Chapter","GLOBAL",19)~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice1
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",2) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice26
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",4) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO Choice26
 IF~ Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",6) CombatCounter(0) !See([ENEMY])~ THEN REPLY~ We want to revisit a place we know.~ GOTO RTFNo
@@ -240,6 +240,7 @@ IF ~Global("CVAR1700","GLOBAL",1)~ THEN REPLY ~Small Teeth Pass~ DO ~SetGlobal("
 IF ~Global("CVAR2600","GLOBAL",1)~ THEN REPLY ~Tethir Forest~ DO ~SetGlobal("SanTravel","GLOBAL",107)~ EXIT
 IF ~Global("CVAR1800","GLOBAL",1)~ THEN REPLY ~Northern Forest of Tethir~ DO ~SetGlobal("SanTravel","GLOBAL",106)~ EXIT
 IF ~Global("CVAR2800","GLOBAL",1)~ THEN REPLY ~Suldanessalar~ GOTO Choice19
+IF ~Global("CVAR6400","GLOBAL",1)~ THEN REPLY ~Next Areas~ GOTO Choice3
 IF~ OR(7)
     Global("CVRR3900","GLOBAL",1)
     Global("CVRR5100","GLOBAL",1)
