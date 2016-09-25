@@ -200,7 +200,7 @@ END
 
 CHAIN
 IF~~ THEN SAMYSTP1 Mystpr252
-~Can you imagine what reaching this place means for those that are not with such a powerful party like yours?~
+~Can you imagine what reaching this place means for those who are not with such a powerful party like yours?~
 END
 ++~It's a mystery to me how some have made it at all to here. They must be either really faithful or quite desperate to take up such a challenge.~ DO~IncrementGlobal("QiTest","cvumo4",2)~ + Mystpr253
 ++~It's like everywhere else, the strong make it through and the weak are selected out. It's nature's way.~ DO~IncrementGlobal("QiTest","cvumo4",1)~ + Mystpr253

@@ -13,7 +13,7 @@ IF~~THEN REPLY~ Our common interest is against the Bhaalists. Come with me to fi
 END
 
 IF~~ THEN BEGIN CVQidrPC2
-SAY~ One day soon you will be a leader and ruler yourself, <CHARNAME>, and you will understand the responsibility for the people who trust in you by then. I would gladly join you in the remaining fight against our common foes - but you will understand that my place is here by with people. Furthermore it would be foolish of us to give our foes the opportunity to perhaps capture the two mightiest Bhaalspawns with one sweep.~
+SAY~ One day soon you will be a leader and ruler yourself, <CHARNAME>, and you will understand the responsibility for the people who trust in you by then. I would gladly join you in the remaining fight against our common foe - but you will understand that my place is here by with people. Furthermore it would be foolish of us to give our foe the opportunity to perhaps capture the two mightiest Bhaalspawns with one sweep.~
 =~ My place for the time is here. Also my existence must be further hidden from the Five and the traitor as it has been in the past. My sister at your side is the guarantee for your success.~
 IF~~THEN REPLY~ I understand your reasons well and you do not act out of cowardice for sure. Was our travel to Undermountain in vain?~ DO~ SetGlobal("SanQuidPC","LOCALS",3)~ GOTO CVQidrPC3
 END
@@ -74,5 +74,5 @@ IF~~ THEN CVQidr 2
 END
 ++~ I can help myself, drow, in the best possible way you have opened to me - by taking your powerful essence! DIE!!~ DO~ SetGlobal("CVUMHostile","GLOBAL",1) ActionOverride("CVSandr",ChangeAIScript("CVSanUM",OVERRIDE)) SetGlobal("SandrahJoined","GLOBAL",26) ActionOverride("CVSandr",LeaveParty()) ~EXIT
 ++~ Your beauty and your pleasant attitude almost made me forget that you suffer from the same blood as I do. I will see you soon.~ DO~SetGlobal("SanQuidPC","LOCALS",1)~EXIT
-++~ I expect us to form some kind of alliance ourselfs to face the one trying to destroy us. I will come soon to see you.~ DO~SetGlobal("SanQuidPC","LOCALS",1)~ EXIT
+++~ I expect us to form some kind of alliance ourself to face the one trying to destroy us. I will come soon to see you.~ DO~SetGlobal("SanQuidPC","LOCALS",1)~ EXIT
 
