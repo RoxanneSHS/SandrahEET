@@ -5,7 +5,7 @@ SAY~Allow me to leave inn clean behind us. No need to investigate anyone for thi
 IF~~THEN DO~SetGlobal("CleanInn","LOCALS",3) ClearAllActions() StartCutSceneMode() CreateVisualEffectObject("SPUNHOLY",Myself) Wait(2) CreateVisualEffectObject("SPUNHOLY","CVJenDe") Wait(2) ActionOverride("CVJenDe",DestroySelf()) EndCutSceneMode() RealSetGlobalTimer("JenligT","LOCALS",1300)~ EXIT
 END
 
-IF~IsGabber(Player1)GlobalGT("SanGithSwJ","GLOBAL",0)~THEN BEGIN JenPid
+IF~IsGabber(Player1)GlobalGT("SanGithSwJ","GLOBAL",0) GlobalLT("EndOfBG1","Global",2)~THEN BEGIN JenPid
 SAY~*Smouldering black eyes embedded in gleaming yellow scales stare at you as you turn to Jen'lig. Her emotions are unpenetrable.*~
 IF~Global("JenOrigin","LOCALS",0)~THEN REPLY~Tell me something about your race.~GOTO Jrace
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~Would male Githyanki estimate you a beautiful female?~GOTO JBeaum
