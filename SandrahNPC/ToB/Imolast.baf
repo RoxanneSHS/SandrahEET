@@ -1,0 +1,20 @@
+IF
+Global("ImoenBackToHuman","GLOBAL",0)
+GlobalTimerExpired("ImoenChangeBack","GLOBAL")
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("ImoenBackToHuman","GLOBAL",1)
+SetGlobal("FinalFight","AR6200",4)
+ClearActions(Myself)
+ActionOverride("Imoen2",ReallyForceSpellRES("imoslay2",Myself))
+ActionOverride("Imoen2",ChangeEnemyAlly(Myself,NEUTRAL))
+ActionOverride("Imoen2",DialogInterrupt(TRUE))
+ActionOverride("Imoen2",ChangeAIScript("imoe25",OVERRIDE))
+ActionOverride("Imoen2",ChangeAIScript("",SPECIFICS))
+ActionOverride("Imoen2",ChangeAIScript("",CLASS))
+ActionOverride("Imoen2",ChangeAIScript("",RACE))
+ActionOverride("Imoen2",ChangeAIScript("",GENERAL))
+ActionOverride("Imoen2",ChangeAIScript("",DEFAULT))
+SetInterrupt(TRUE)
+END
