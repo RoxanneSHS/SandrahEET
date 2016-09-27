@@ -7639,6 +7639,8 @@ EXTEND_TOP
 ~Vico25.bcs~ ~SandrahNPC/ToB/ViconiaSanTOB.baf~
 EXTEND_TOP 
 ~Imoslay.bcs~ ~SandrahNPC/ToB/Imolast.baf~
+EXTEND_TOP 
+~Imoe25.bcs~ ~SandrahNPC/ToB/Imolast.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~Sarev25.bcs~ THEN BEGIN
 COMPILE

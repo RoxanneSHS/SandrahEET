@@ -14,5 +14,5 @@ Wait(6)
 ActionOverride("Pellig3",SetNumTimesTalkedTo(1))
 SetGlobal("Pellswitch","cvrtf2",1)
 SetGlobal("SanBeginRtF","GLOBAL",2)
-ActionOverride("Pellig",StartDialogueNoSet([PC]))
+ActionOverride("Pellig3",StartDialogueNoSet([PC]))
 END

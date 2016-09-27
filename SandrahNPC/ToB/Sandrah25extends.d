@@ -259,16 +259,16 @@ INTERJECT_COPY_TRANS Finmel01 25 SanOddElement2
 ==CVQidr IF ~InParty("CVSandr")InMyArea("CVQidr") ~THEN~ It is even worse for you, as I have defeated the calling of my blood and turned it into a power against Bhaal and yourself.~END
 
 INTERJECT_COPY_TRANS Finsol01 14 SanQidrEssence1
-==CVSan25J IF ~InParty("CVSandr") !InMyArea("CVQidr") ~THEN~ What will happen to my sister and her essence that she uses in the name of Eilistraeee and Mystra and has no intention to apply in an evil way.~
-==Finsol01 IF ~InParty("CVSandr") !InMyArea("CVQidr") ~THEN~ The odd element, hidden by those mortals from all...even from the celestials except for your goddess. What would you do about it had you the right to decide, Sandrah?~
-==CVSan25J IF ~InParty("CVSandr") !InMyArea("CVQidr") ~THEN~ I trust my sister as I have seen her deeds and accomplishments at Undermountain. Her essence has been turned into something positive and it is where it belongs.~
-==Finsol01 IF ~InParty("CVSandr") !InMyArea("CVQidr") ~THEN~ So it shall be, Sandrah, I take it as the verdict of the one you will soon become.~ END
+==CVSan25J IF ~InParty("CVSandr") !InMyArea("CVQidr2") ~THEN~ What will happen to my sister and her essence that she uses in the name of Eilistraeee and Mystra and has no intention to apply in an evil way.~
+==Finsol01 IF ~InParty("CVSandr") !InMyArea("CVQidr2") ~THEN~ The odd element, hidden by those mortals from all...even from the celestials except for your goddess. What would you do about it had you the right to decide, Sandrah?~
+==CVSan25J IF ~InParty("CVSandr") !InMyArea("CVQidr2") ~THEN~ I trust my sister as I have seen her deeds and accomplishments at Undermountain. Her essence has been turned into something positive and it is where it belongs.~
+==Finsol01 IF ~InParty("CVSandr") !InMyArea("CVQidr2") ~THEN~ So it shall be, Sandrah, I take it as the verdict of the one you will soon become.~ END
 
 INTERJECT_COPY_TRANS Finsol01 14 SanQidrEssence2
-==CVQidr IF ~InParty("CVSandr") InMyArea("CVQidr") ~THEN~ What will happen to the part of the essence that is within me but which I use in the name of Eilistraeee and Mystra and have no intention to apply in an evil way ever.~
-==Finsol01 IF ~InParty("CVSandr") InMyArea("CVQidr") ~THEN~ The odd element, hidden by those mortals from all...even from the celestials except for your goddess. What would you do about it had you the right to decide, Sandrah?~
-==CVSan25J IF ~InParty("CVSandr") InMyArea("CVQidr") ~THEN~ I trust my sister as I have seen her deeds and accomplishments at Undermountain. Her essence has been purified and turned into something positive and it is where it belongs.~
-==Finsol01 IF ~InParty("CVSandr") InMyArea("CVQidr") ~THEN~ So it shall be, Sandrah, I take it as the verdict of the one you will soon become.~ END
+==CVQidr IF ~InParty("CVSandr") InMyArea("CVQidr2") ~THEN~ What will happen to the part of the essence that is within me but which I use in the name of Eilistraeee and Mystra and have no intention to apply in an evil way ever.~
+==Finsol01 IF ~InParty("CVSandr") InMyArea("CVQidr2") ~THEN~ The odd element, hidden by those mortals from all...even from the celestials except for your goddess. What would you do about it had you the right to decide, Sandrah?~
+==CVSan25J IF ~InParty("CVSandr") InMyArea("CVQidr2") ~THEN~ I trust my sister as I have seen her deeds and accomplishments at Undermountain. Her essence has been purified and turned into something positive and it is where it belongs.~
+==Finsol01 IF ~InParty("CVSandr") InMyArea("CVQidr2") ~THEN~ So it shall be, Sandrah, I take it as the verdict of the one you will soon become.~ END
 
 ADD_TRANS_TRIGGER Finsol01 3
 ~!InParty("CVSandr")~
@@ -291,7 +291,7 @@ APPEND Finsol01
 IF WEIGHT #-10~ Global("SanRaiseMys","GLOBAL",1)~ THEN BEGIN SanMystCalls
 SAY~It will soon be the time for you to decide your fate, godchild. Maybe the decision to be made by one of your companions before that will impact your own choice.~
 =~ Sandrah of Waterdeep, your goddess demands for you. You have found your way and you have aided <CHARNAME> to find the own. You have done the unexpected again and again. Mystra requests you to make your choice prior to <CHARNAME> and only true to your own heart this time.~
-IF~~THEN DO~ SetGlobal("SanRaiseMys","GLOBAL",2) ActionOverride("Finmel01",DestroySelf()) ActionOverride("Balth2",DestroySelf()) ActionOverride("CVqidr",DestroySelf())ClearAllActions()StartCutSceneMode() StartCutScene("CVcut301")~ EXIT
+IF~~THEN DO~ SetGlobal("SanRaiseMys","GLOBAL",2) ActionOverride("Finmel01",DestroySelf()) ActionOverride("Balth2",DestroySelf()) ActionOverride("CVqidr2",DestroySelf())ClearAllActions()StartCutSceneMode() StartCutScene("CVcut301")~ EXIT
 END
 
 IF WEIGHT #-11~ Global("SandrahSummoned","GLOBAL",2)~ THEN BEGIN SanMystCalls2

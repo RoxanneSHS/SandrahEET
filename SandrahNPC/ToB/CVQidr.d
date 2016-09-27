@@ -1,7 +1,7 @@
 BEGIN CVQidr
 
 IF~Global("CVSummQi","GLOBAL",3)~THEN BEGIN CVQidrShowdown1
-SAY~ <CHARNAME>, my sister Sandrah - I received your call, the hour has come to end the Times of Trouble after all this time and the destruction that has been caused by Bhaal.~
+SAY~ <CHARNAME>, my sister Sandrah - I received your call, the hour has come to finally end the Time of Troubles and the destruction that has been caused by Bhaal.~
 IF~~THEN DO~ SetGlobal("CVSummQi","GLOBAL",4)~ EXIT
 END
 
