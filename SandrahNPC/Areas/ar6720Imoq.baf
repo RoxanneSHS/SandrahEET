@@ -6,7 +6,7 @@ RESPONSE #100
 ActionOverride("Nobl10",DestroySelf())
 ActionOverride("housg1",DestroySelf())
 ActionOverride("housg2",DestroySelf())
-TriggerActivation("Stairs6721",FALSE)
+TriggerActivation("Stairs3321",FALSE)
 SetGlobal("ImoTrav","BG3320",1)
 END
 
@@ -63,7 +63,7 @@ Global("ImoTrav","BG3320",5)
 THEN
 RESPONSE #100
 SetGlobal("ImoTrav","BG3320",6)
-TriggerActivation("Stairs6721",TRUE)
+TriggerActivation("Stairs3321",TRUE)
 END
 
 IF
