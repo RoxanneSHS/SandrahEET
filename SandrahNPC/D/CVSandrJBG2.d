@@ -2775,7 +2775,7 @@ END
 
 IF~~THEN BEGIN SanHeriMyst3
 SAY~ Please, let us not jump to conclusions just now. In our proven manner let us put piece beside piece so we do not oversee any important detail.~
-IF~~THEN REPLY~ Fine. For the moment I suggest to forget about anything we knew before of your heritage and your grandmother and focus on the motherly line.~ GOTO SanHeriMyst4
+IF~~THEN REPLY~ Fine. For the moment I suggest to forget about anything we knew before of your heritage and your grandmother and focus on the motherly line.~ GOTO SanHeriMyst5
 END
 
 IF~~THEN BEGIN SanHeriMyst5
