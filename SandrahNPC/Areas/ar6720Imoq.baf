@@ -67,6 +67,7 @@ TriggerActivation("Stairs3321",TRUE)
 END
 
 IF
+Global("SanBeginRTF","GLOBAL",0)
 GlobalGT("OrcPrison","GLOBAL",27)
 Global("ImoTrav","BG3320",6)
 THEN
