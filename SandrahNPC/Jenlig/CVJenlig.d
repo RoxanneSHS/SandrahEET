@@ -32,7 +32,8 @@ END
 
 IF~!InParty(Myself)!AreaCheck("BG0125")~ THEN BEGIN HissK
 SAY~Follow weak commander was mistake. Jen'lig finds sword by herself.~
-IF~~THEN DO~EscapeAreaMove("BG0125",339,800,10)~EXIT
+IF~~THEN REPLY~Stubborn githyanki...~DO~EscapeAreaMove("BG0125",339,800,10)~EXIT
+IF~~THEN REPLY~Ooops, I did not mean it this way. Stay with us, Jen'lig~DO~JoinParty()~EXIT
 END
 
 CHAIN

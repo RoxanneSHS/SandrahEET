@@ -160,3 +160,19 @@ SetGlobal("BodiAppear","GLOBAL",0)
 Continue()
 END
 
+IF
+Dead("CVJenlig")
+InPartyAllowDead("CVJenlig")
+!HasItem("CVJensw",Player1)
+!HasItem("CVJensw",Player2)
+!HasItem("CVJensw",Player3)
+!HasItem("CVJensw",Player4)
+!HasItem("CVJensw",Player5)
+!HasItem("CVJensw",Player6)
+Delay(12)
+THEN
+RESPONSE #100
+ActionOverride(Player1,PickUpItem("CVJensw"))
+DisplayStringWait(Player1,@979)
+END
+
