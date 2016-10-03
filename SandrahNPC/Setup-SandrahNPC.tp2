@@ -7782,6 +7782,55 @@ COPY ~SandrahNPC/mveeet~ ~movies~
 
 ADD_JOURNAL @11 @12 @13 @17 @21 @42 @58 @70 @71 @73 @76 @90 @104 @105 @108 @111 @117 @127 @132 @133 @148 @155 @175 @186 @200 @212 @213 @238 @349 @350 @358 @359 @466 @468 @469 @470 @489 @520 @576 @590 @591 @640 @681 @682 @700 @740 @752 @781 @810 @904 @906 @907 @922 @923 @924 @925 @926 @927 @931 @932 @955 @968 @970 @972 @973 @978 USING ~SandrahNPC/TRA/setup-Sandr.tra~
 
+ACTION_IF FILE_EXISTS_IN_GAME ~M_EET.lua~ THEN BEGIN
+
+OUTER_SET chapter23 = RESOLVE_STR_REF (@980) 
+OUTER_SET chapter24 = RESOLVE_STR_REF (@981) 
+OUTER_SET chapter25 = RESOLVE_STR_REF (@982) 
+OUTER_SET chapter26 = RESOLVE_STR_REF (@983)
+OUTER_SET chapter27 = RESOLVE_STR_REF (@984)
+OUTER_SET chapter28 = RESOLVE_STR_REF (@985)
+OUTER_SET chapter29 = RESOLVE_STR_REF (@986)
+OUTER_SET chapter30 = RESOLVE_STR_REF (@987)
+OUTER_SET chapter31 = RESOLVE_STR_REF (@988)
+OUTER_SET chapter32 = RESOLVE_STR_REF (@989)
+OUTER_SET chapter33 = RESOLVE_STR_REF (@990)
+OUTER_SET chapter34 = RESOLVE_STR_REF (@991)
+OUTER_SET chapter35 = RESOLVE_STR_REF (@992)
+OUTER_SET chapter36 = RESOLVE_STR_REF (@993)
+
+COPY_EXISTING ~M_EET.lua~ ~override~
+  REPLACE_TEXTUALLY ~\(return Infinity_FetchString(71000 \+ chapter)\)~  ~\1
+    elseif (chapter == 23) then
+        return Infinity_FetchString(%chapter23%)
+    elseif (chapter == 24) then
+        return Infinity_FetchString(%chapter24%)
+    elseif (chapter == 25) then
+        return Infinity_FetchString(%chapter25%)
+    elseif (chapter == 26) then
+        return Infinity_FetchString(%chapter26%)
+    elseif (chapter == 27) then
+        return Infinity_FetchString(%chapter27%)
+    elseif (chapter == 28) then
+        return Infinity_FetchString(%chapter28%)
+    elseif (chapter == 29) then
+        return Infinity_FetchString(%chapter29%)
+    elseif (chapter == 30) then
+        return Infinity_FetchString(%chapter30%)
+    elseif (chapter == 31) then
+        return Infinity_FetchString(%chapter31%)
+    elseif (chapter == 32) then
+        return Infinity_FetchString(%chapter32%)
+    elseif (chapter == 33) then
+        return Infinity_FetchString(%chapter33%)
+    elseif (chapter == 34) then
+        return Infinity_FetchString(%chapter34%)
+    elseif (chapter == 35) then
+        return Infinity_FetchString(%chapter35%)
+    elseif (chapter == 36) then
+        return Infinity_FetchString(%chapter36%)~ 
+END
+
 COMPILE 
 ~SandrahNPC/Mods/NeeraSanBG1.d~
 ~SandrahNPC/Mods/RasaadSanBG1.d~
