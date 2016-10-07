@@ -13,7 +13,7 @@ END
 IF
 Global("Kiararomanceactive","GLOBAL",3)
 Global("LoveTalk","LOCALS",43)
-Global("Chapter","GLOBAL",20)
+Global("Chapter","GLOBAL",18)
 Global("SanRepaKiara","LOCALS",0)
 OR(2)
 Global("Jerliaquest","GLOBAL",2)

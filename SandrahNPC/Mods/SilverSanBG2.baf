@@ -1,6 +1,6 @@
 IF
 GlobalLT("SanSilvrheal","GLOBAL",5)
-GlobalGT("Chapter","GLOBAL",15)
+GlobalGT("Chapter","GLOBAL",13)
 InParty(Myself)
 InParty("CVSandr")
 OR(7)

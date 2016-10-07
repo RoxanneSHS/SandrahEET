@@ -39,7 +39,7 @@ END
 
 IF
 Global("SanKiZaBha","GLOBAL",3)
-GlobalGT("Chapter","GLOBAL",16)
+GlobalGT("Chapter","GLOBAL",14)
 InParty("CVSandr")
 CombatCounter(0)
 See("CVSandr")

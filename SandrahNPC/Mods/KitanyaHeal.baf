@@ -36,7 +36,7 @@ END
 IF
 Global("SanHealKity","GLOBAL",4)
 InParty("CVSandr")
-GlobalLT("Chapter","GLOBAL",19)
+GlobalLT("Chapter","GLOBAL",17)
 RealGlobalTimerExpired("SanKityT","LOCALS")
 !See([ENEMY])
 CombatCounter(0)
