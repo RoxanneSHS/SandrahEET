@@ -1,6 +1,7 @@
 // Elminster Revenge
 
 IF
+GlobalLT("Chapter","Global",22)
 Dead("CVSandr")
 Global("ElmRevDau","GLOBAL",0)
 THEN
