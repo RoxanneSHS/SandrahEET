@@ -4173,7 +4173,6 @@ END
 
 IF
 !Global("ENDOFBG1","GLOBAL",2)
-GlobalGT("Chapter","GLOBAL",2)
 Global("VicBant3","GLOBAL",2)
 RealGlobalTimerExpired("VicBantT","GLOBAL")
 InParty("Viconia")
@@ -4189,8 +4188,9 @@ END
 //Fourth Viconia (Learning the Art)
 IF
 RealGlobalTimerExpired("VicBantT","GLOBAL")
-InParty("Viconia")
 Global("VicBant3","GLOBAL",4)
+GlobalGT("Chapter","GLOBAL",2)
+InParty("Viconia")
 THEN
 RESPONSE #100
 SetGlobal("VicBant3","GLOBAL",5)
