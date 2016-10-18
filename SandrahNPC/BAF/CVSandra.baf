@@ -4191,6 +4191,8 @@ RealGlobalTimerExpired("VicBantT","GLOBAL")
 Global("VicBant3","GLOBAL",4)
 GlobalGT("Chapter","GLOBAL",2)
 InParty("Viconia")
+!AreaType(DUNGEON)
+!AreaCheck("BG5000")
 THEN
 RESPONSE #100
 SetGlobal("VicBant3","GLOBAL",5)
