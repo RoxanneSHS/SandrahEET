@@ -4793,6 +4793,9 @@ END
 ADD_STATE_TRIGGER ShartJ 2
 ~!InParty("CVSandr")~
 
+ADD_STATE_TRIGGER ViconJ 0
+~!InParty("CVSandr")~
+
 //   Firebead     
 INTERJECT_COPY_TRANS FIREBE 1 StrangeScroll1
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Firebead looks at Sandrah, puzzled for a second.) ~
