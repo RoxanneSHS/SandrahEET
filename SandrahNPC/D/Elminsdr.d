@@ -9,7 +9,7 @@ IF ~ Global("Mothdream1","GLOBAL",2) ~ THEN  Elminsdr MothDream
 == Sanpre2 ~ It makes me sad when I see you this way - but at the same time happy. You still love her as you have always done.~
 ==  Elminsdr ~And thou art living proof of that love, Sandrah, before HE destroyed all that!~
 == Sanpre2 ~ Your wraith against that dead god will never lessen...~
-==  Elminsdr ~Dead he is - but harm though he still can do. His spawns and those who follow false beliefs will cause trouble in Faerun long after the Time of Trouble.~
+==  Elminsdr ~Dead he is - but harm though he still can do. His spawns and those who follow false beliefs will cause trouble in Faerun long after the Time of Troubles.~
 == Sanpre2 ~ I know, father. He killed your beloved wife from beyond his own grave by implanting the spawn in her and he grieves you ever since that day.~
 ==  Elminsdr ~ Not all is bad, Sandrah, when I look at thee I see it every time. And I see her - thou becometh more like her with every day you grow. Her, whom thou have not really known...~
 == Sanpre2 ~ Come now, father, we will eat. Will you tell me of the other one today, the one that caused her end while still being innocent?~
