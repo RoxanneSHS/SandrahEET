@@ -21,11 +21,11 @@ CHAIN
 IF~ NumTimesTalkedTo(0)
 Global("Katcut","GLOBAL",2) ~ THEN Hilath HilathQ1
 ~ Oh, dear <PRO_SIRMAAM>, have you seen that bandit Khattark!~
-= ~ I think my husband is dead and he took my dear baby boy with him...~
+= ~ I think my husband is dead and the thug took my dear baby boy with him...~
 == CVSandrJ ~ Dear lady Hilath, calm down. I see what I can do. (Kneels down and inspects the husband's body.) ~
-= ~ Lady, you must be strong now, your husband is beyond any healer's skills.~
-== HILATH ~ Lady Sandrah, now I recognise you. But what a bad day to return to Waterdeep. The mighty Khattark terrorises the area and all who have the need to travel.~
-= ~ Now he has killed poor Jonathan and grabbed my baby from my arms...~
+= ~ Lady, you must be strong, your husband is beyond any healer's skills.~
+== HILATH ~ Lady Sandrah, I recognise you. But what a bad day to return to Waterdeep. The mighty Khattark terrorises the area and all who have the need to travel.~
+= ~ And now he has killed poor Jonathan and grabbed my baby from my arms...~
 == CVSandrJ ~ Do not worry, Hilath, our group with <CHARNAME> will not stand idle when harm is done. The bandit ran off to that hut over there. We will get him, right, <CHARNAME>?~
 END
 ++ ~ Of course, lady. Your baby will be safely back in your arms in a short while.~ + Hilqtaken
@@ -42,7 +42,7 @@ EXIT
 CHAIN
 IF ~~ THEN Hilath Hilqrej
 ~ Sandrah, that cannot be true! I do not believe you will leave me alone at this moment of need. When the militia returns, my son will surely be dead already.~
-== CVSandrJ ~ Do not worry, mylady. I will go after Khattark, your son will be with you again shortly. These cowards will return to the swordcoast without me.~
+== CVSandrJ ~ Do not worry, mylady. I will go after Khattark, your son will be with you again shortly. These cowards will return to the Sword Coast without me.~
 END
 ++ ~ But, Sandrah...(Sandrah turns away without taking any further notice of you).~ DO ~
 SetGlobal("Katcut","GLOBAL",11) ~

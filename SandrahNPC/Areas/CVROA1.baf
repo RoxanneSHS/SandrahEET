@@ -182,3 +182,12 @@ THEN
 RESPONSE #100
 SetGlobal("SanSharCom","GLOBAL",7)
 END
+
+IF
+Global("Katcut","GLOBAL",13)
+!InParty("CVSandr")
+InMyArea("Hilath")
+THEN
+RESPONSE #100
+ActionOverride("Hilath",DestroySelf())
+END

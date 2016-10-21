@@ -21,6 +21,15 @@ SetGlobal("Katcut","GLOBAL",4)
 END
 
 IF
+Global("Katcut","GLOBAL",13)
+!InParty("CVSandr")
+InMyArea("Kattah")
+THEN
+RESPONSE #100
+ActionOverride("Kattah",DestroySelf())
+END
+
+IF
 Global("WDFishermen","GLOBAL",3)
 !PartyHasItem("CVWDFi2")
 Global("Fishsc","CVHUT1",0)
