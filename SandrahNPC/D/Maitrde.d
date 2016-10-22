@@ -14,11 +14,11 @@ END
 
 CHAIN
 IF ~~ THEN  maitrde WDresto2
-~ <PRO_SIRMAAM>, may there be a misunderstanding? Pardon, I did not get your name? ~
+~ Oui, <PRO_SIRMAAM>, may there be a misunderstanding? Pardon, I did not get your name? ~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! A cool nice beer - but PRESTO or however that is in your language, QUICK. ~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Huh, funny man, bring us something pink and creamy.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ What a pathetic male. If food is not on the table instantly, it will be you skewered on the grill tonight! ~
-== BVICONI IF~ InParty("Viconia") ~ THEN ~ Looks like a decent place. They should really have fresh gragrk.~
+== BVICON IF~ InParty("Viconia") ~ THEN ~ Looks like a decent place. They should really have fresh gragrk.~
 == BKIVAN IF~ InParty("Kivan") ~ THEN ~ This place tries to smell like the forests of Shilmista but it is not the real thing. ~
 ==IF_FILE_EXISTS BSUFINCH  IF ~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) The most pleasant gastronomic place in Waterdeep... ~
 == MAITRDE IF ~ InParty("Sufinch") ~ THEN ~ Oh, merde, are you a restaurant critic, madame?~
@@ -50,12 +50,12 @@ END
 
 CHAIN
 IF ~~ THEN  maitrde WDresto4
-~ <PRO_SIRMAAM>, I see, no reservation, just as I thought already. Well, if you come again in about six or seven tendays, I may put you on the waiting list...~
+~ Non, <PRO_SIRMAAM>, I see, no reservation, just as I thought already. Well, if you come again in about six or seven tendays, I may put you on the waiting list...~
 == HILATH  IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Wait, wait, Maitre. ~
 == MAITRDE IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Lady Hilath? You know these...people?~
 == HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Of course, Maitre, they have rescued my little boy. It is the party of Lady Sandrah.~
-== MAITRDE ~ Lady Sandrah, oh yes, now I recognise you, my poor old eyes - you were hiding a bit to make a joke with old maitre, haha. Yes yes, come quick, I will lead you to your table.~
-== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Maitre, send their bill to my house tomorrow. I am sorry, I cannot stay with you, <CHARNAME>, I have to take care of my husband's funeral. But you and your friends really have deserved some pleasant treatment, goodnight.~
+== MAITRDE ~ Lady Sandrah, oh yes, now I recognise you, my poor old eyes - you were hiding a bit to make a joke with old maitre, haha. Oui oui, come quick, I will lead you to your table.~
+== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Maitre, send their bill to my house tomorrow. I am sorry, I cannot stay with you, <CHARNAME>, I have to take care of my husband's funeral. But you and your friends really have deserved some pleasant treatment, goodnight.~DO~EscapeArea()~
 == CORANJ IF ~ GlobalLT("Katcut","GLOBAL",10) InParty("Coran") ~ THEN  ~Mylady, I offer you my arm in this hour of need. Trust me, I am an expert in dealing with dead husbands. ~
 == HILATH IF ~ GlobalLT("Katcut","GLOBAL",10) InParty("Coran") ~ THEN  ~ I thank you so much, dear elf, come along...~
 == MAITRDE IF ~ Global("Katcut","GLOBAL",10) ~ THEN ~ This evening will be on the house, Lady Sandrah, take my excuse, avec plaisir.~
@@ -67,7 +67,7 @@ StartCutScene("CVWDRes1")~EXIT
 
 CHAIN
 IF ~Global("Maitre1","GLOBAL",2)~ THEN  maitrde WDresto5
-~ <PRO_SIRMAAM>, I would like to bring to your attention today's specials on the menu.~
+~ Voila, <PRO_SIRMAAM>, I would like to bring to your attention today's specials on the menu.~
 = ~ We have the freshest rose quayles from the Shinig Plains. And exquisite giant trouts from The Lake of Steam...~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Those fishes are really delicious, <CHARNAME>.~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Rose quayles? What about pink ones? ~

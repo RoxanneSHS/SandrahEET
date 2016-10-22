@@ -30,7 +30,7 @@ Global("GetOut","LOCALS",0)
 THEN
 RESPONSE #100
 SetGlobal("GetOut","LOCALS",1)
-LeaveAreaLUA("CVELM1","",[1246.650],5)
+MoveBetweenAreas("CVELM1",[1246.650],5)
 END
 
 IF
