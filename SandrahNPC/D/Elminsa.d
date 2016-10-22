@@ -241,7 +241,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == CVSandrJ ~ We will do that, father.~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Wow, adventuring is just my thing. The halls of the mighty Elminster visited by Imoen the Magnificent herself!~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Gosh, the only decent man on Faerun must be an old mage still moaning his long dead wife. What a waste. I must dwell on with those pathetic fools that are left.  ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ The drow do well to avoid mingling with this mighty man. ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ The drow do well to avoid mingling with this mighty man. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Cities of the humans normally make me feel the loss of Shilmista even more. But this place is different. Sandrah, your father has more insight into things than anyone I have met before. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) The most wonderful place one can visit is the house and the gardens of the famous mage Elminster... ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ So while we are in Waterdeep I may also recommend that we go to my family if time permits. ~
@@ -328,7 +328,7 @@ IF~~THEN  Elminsa SendAcad2
 ~ <CHARNAME>, once again thou reveal the makings of a real leader and competent captain. Mine daughter hath done well to follow thee. 'tis also the burdon of a leader to make such decisions where the life of some may be endangered for the sake of many.~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Mr. E, hey man, don't doubt my <CHARNAME>. 'jus send us off and we'll be back with their heads in less time than ya need to recite the names of cities along the coast from north to south.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Even an academy led by a female can be bashed. Just let the right group do the job and you'll see. <CHARNAME>, we are wasting time, blood could already be flowing - and not ours. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ That witch is more cunning than a spiderqueen. But she is no match at all for our joined forces. On, <CHARNAME>, for Shar! ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ That witch is more cunning than a spiderqueen. But she is no match at all for our joined forces. On, <CHARNAME>, for Shar! ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ I have my arrows ready to strike down these magelings. They have no right to threaten the Realms with magic for sale. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Another heroic deed on the pages of the famous hero <CHARNAME>. Another incredible task and another victory for the good. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ These blasphemous misusers of Mystra's great gifts deserve only total destruction. ~

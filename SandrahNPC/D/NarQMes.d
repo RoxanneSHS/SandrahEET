@@ -103,7 +103,7 @@ CHAIN
 IF ~ Global("SanVisitedWD","GLOBAL",1) AreaCheck("CVDRE2") Global("SanWDWelc","LOCALS",1) Global("SanNarQ","GLOBAL",9)~ THEN NarQMes WelWDremE
 ~ Good journey to you all. I hope I will see you all well and alive again soon.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ (Shart-Teel wets her finger in her mouth and draws a kind of heart-shape sign with the moist on Landrel's forehead.) Try to stay alive, acceptable males are such a rare find. ~
-== BVICONI  IF~ InParty("Viconia") ~ THEN ~ (Instead of shaking his outstretched hand, Viconia's own has vanished for a moment beneath Landrel's robe. His groan is not completely one of pain and his face shows that the dark elf knows how to pleasure a man.) ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ (Instead of shaking his outstretched hand, Viconia's own has vanished for a moment beneath Landrel's robe. His groan is not completely one of pain and his face shows that the dark elf knows how to pleasure a man.) ~
 END
 ++ ~ Goodbye, Landrel, thank you for all.~
 EXIT
