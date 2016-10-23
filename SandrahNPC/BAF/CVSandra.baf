@@ -2087,7 +2087,7 @@ SetGlobal("SanGolman","LOCALS",2)
 END
 
 IF
-Global("SanGolman","LOCALS",1)
+GlobalLT("SanGolman","LOCALS",2)
 PartyHasItemIdentified("cvgolman")
 Delay(22)
 THEN

@@ -494,7 +494,7 @@ END
 
 IF~~THEN BEGIN Godag8
 SAY~What I meant was, the weapon was not used for fighting even before it came into Gorion's possession. It looks more than a ritual dagger by its original design.~
-=~(She hesitates for a momemt.)~
+=~(She hesitates for a moment.)~
 =~It may just be a silly young girl's imagination, but those ornaments have a sinister impression in my eyes.~
 IF~~THEN REPLY~A sinister ritual dagger? Huh, you mean like one used for some kind of sacrifice or such...?~ GOTO Godag9
 END
@@ -5697,7 +5697,7 @@ DO~ SetGlobal("SanWDTemplWi","GLOBAL",9)~
 ==CVLEYG ~ I was very sick before the dream began but now I feel well. Have...have you done that, mylady?~
 == CVSandrJ ~ This here is Mystra's temple and I am one of her healers. I am glad you feel better, Leyala.~
 ==CVLEYG ~ Yes, this is Mystra's temple, you look just like the goddess as I saw her in my dream state...~
-DO ~ EscapeArea() AddexperienceParty(11300) RestParty()~EXIT
+DO ~ AddexperienceParty(11300) RestParty() DestroySelf()~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanXzarDea","GLOBAL",1) Global("SanResurAva","GLOBAL",1) InParty("Xzar")~ THEN CVSANDRJ Sanxzarhandsoff
