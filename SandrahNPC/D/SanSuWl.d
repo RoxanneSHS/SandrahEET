@@ -4,7 +4,7 @@ BEGIN SANSUWL
 CHAIN
 IF ~ Global("SanSuBH","GLOBAL",1)~ THEN SANSUWL SuBH1
 ~ Ah, booklovers where one would hardly expect them. And interested in advanced questions of philosophy as I can see.~
-DO ~ SetGlobal("SanSuBH","GLOBAL",2) RealSetGlobalTimer("BloomwT","GLOBAL",7000)~
+DO ~ SetGlobal("SanSuBH","GLOBAL",2) RealSetGlobalTimer("BloomwT","GLOBAL",6000)~
 == IF_FILE_EXISTS BSUFINCH IF~ InParty("Sufinch") ~ THEN ~ You can see a lot of things by just looking at people for a glance, or do you know us, sir?~
 == BSANDR IF ~ !InParty("Sufinch") ~ THEN ~ You can see a lot of things by just looking at people for a glance from the outside, or do you know us by any chance?~
 == SANSUWL ~ A mutual friend has provided me with the information, that you are an adept of the philosophy of the Great Monteelah, and you may even be in the possession of one of his rare writings.~

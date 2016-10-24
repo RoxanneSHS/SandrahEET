@@ -2,7 +2,7 @@ CHAIN
 IF WEIGHT #-9~NumTimesTalkedTo(0) AreaCheck("BG2200") Global("JoinBandtT","GLOBAL",2)~ THEN Teven TevFoundSan
 ~ Guessed you outsmarted me, didn't you, Sandrah? ~
 DO~ SetGlobal("JoinBandtT","GLOBAL",3)~
-==CVSandrJ ~ Hello, old friend. Do you wish to follow the path your old bosses already have paved for you?~
+==CVSandrJ ~ Hello, old friend. Do you wish to follow the path that your former bosses already have paved for you?~
 == Teven~ I followed YOUR path, girl, and it wasn't too hard with the wreckage you leave behind across the Coast. I come for the promiss you gave me, haha.~
 ==CVSandrJ ~ Yes, I remember, was it not that I said you may become my boss in Tazok's troups?~
 == Teven~ Exactly, little pussycat.~

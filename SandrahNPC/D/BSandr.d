@@ -1947,7 +1947,7 @@ IF~~THEN BSANDR  SanFuWDBook
 DO~ SetGlobal("LeftSan","GLOBAL",3)~
 ==IF_FILE_EXISTS BSUFINCH ~ The little old bookworm Clarissa. Just to think I could be like her if I had not met you all. All theories, no practical experience at all.~
 == BSANDR ~ Yes, Finch, you have emerged quite a bit. But back to Clarissa, she gave us a book to deliver to you.~ DO ~ TakePartyItem("SuSaBo")  ~
-==IF_FILE_EXISTS BSUFINCH ~ Great Deneir, it is really Monteelah's famous essay on the Virtue of Wisdom. Excuse me, I have to get back into my shell as a bookworm - (laughs)- at last for a little while. This book is not too thick.It takes mere minutes for me to copy it. Keep the original for your studies, will you.~
+==IF_FILE_EXISTS BSUFINCH ~ Great Deneir, it is really Monteelah's famous essay on the Virtue of Wisdom. Excuse me, I have to get back into my shell as a bookworm - (laughs)- at last for a little while. This book is not too thick. It takes mere minutes for me to copy it. Keep the original for your studies, will you.~
 == BSANDR ~ (Laughs)~
 DO ~ EraseJournalEntry(@111) GiveItemCreate("SuSaBo","Sufinch",0,0,0) SetGlobal("Bloomw","GLOBAL",6) AddexperienceParty(3600) RealSetGlobalTimer("BloomwT","GLOBAL",4800)~
 END
@@ -2347,7 +2347,7 @@ IF ~ ~ THEN BSANDR BeregOrph21
 == KELDDA ~ I am sure you will. And let me tell you this, I will not object to it. I will give advice to all those who follow the dawnbringer under my command not to hinder you in any way. I cannot openly support you at the moment but I personally dispise any nobleman who misuses his wealth and power in such a way as Travenhurst. I wish you good luck and Lathander's blessing be with you.~
 END
 ++ ~ Be sure we will return with the evidence. Your trust in us will be justified.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
-++ ~ Yes, yes, spare your words and keep out of our way when justice is done by those who do not hide behind titles and paragraphs.~ EXIT
+++ ~ Yes, yes, spare your words and keep out of our way when justice is done by those who do not hide behind titles and law clauses.~ EXIT
 
 CHAIN
 IF~ Global("OrcPrison","GLOBAL",24)~ THEN BSANDR BeregOrph30
