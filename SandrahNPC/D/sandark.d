@@ -28,7 +28,7 @@ END
 // Jet'Laya
 CHAIN
 IF ~ Global("San2Elves","GLOBAL",3)~ THEN BSANDR JetLath
-~ Jet'laya, you are a priestess of Lathander. It is quite unusual for your kin to pray to the new sun good, isn't it?~
+~ Jet'laya, you are a priestess of Lathander. It is quite unusual for your kin to pray to the new sun good, is it not?~
 DO ~ SetGlobal("San2Elves","GLOBAL",4)~
 == JETLAJ ~ I would agree tai that, even if I have tai remind you, that our kin is as widespread and diverted in their beliefs as your own. Probably ye would find one or another elf following each god that is known on Toril.~
 == BSANDR ~ That may well be the case, but there would surely be a special reason for you to make that choice.~

@@ -1621,3 +1621,11 @@ THEN
 RESPONSE #100
 SetGlobal("KiyoOut","GLOBAL",0)
 END
+
+IF
+HPGT(Myself,100)
+LevelLT(Myself,9)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("CVR100",Myself) 
+END
