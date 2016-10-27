@@ -10,10 +10,31 @@ IF ~ Global("Sandark","GLOBAL",2) ~ THEN SANDARK Warn1
 == JETLAJ ~ Please, <CHARNAME>, you see what a monster it is who holds my dear sister. You have promised me your help. Do you still stand to your word?~
 == BSANDR ~ Do not fear, Jet'laya, <CHARNAME> keeps <PRO_HISHER> word, even with a mighty foe such as this Lich.~
 END
-++ ~ I gave you my word and I will not flinch from any evil creature. Even a Lich can be beaten by the steadfast. Let us move on.~  DO ~ SetGlobal("Sandark","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",1) AddexperienceParty(6000) ~ EXIT
-++ ~ It's absolutely foolish, suicidal, and therefore profitable, let's get it done so we can see what the booty is like.~DO~SetGlobal("Sandark","GLOBAL",3)AddexperienceParty(2000) ~ EXIT
-++ ~ I have not come here with you to turn and run away when the first glimpse of danger appears. I laugh at such threats, Jet'laya. (Can't wait to see how you seek shelter in my bedroll tonight when we camp out in this dreaded wood.)~ DO~SetGlobal("Sandark","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1) AddexperienceParty(1000) ~ EXIT
-++ ~ Have you seen a creature like this ever before? A Lich! We have not the force to stand up to such a creature, it is useless. It hurts me deep, Jet'laya, but your sister has erred and now is lost beyond hope. Let us retreat.~ DO ~ SetGlobal("Sandark","GLOBAL",4)IncrementGlobal("Sanpoints","GLOBAL",-3)ReputationInc(-2) ~ EXIT
+++ ~ I gave you my word and I will not flinch from any evil creature. Even a Lich can be beaten by the steadfast. Let us move on.~  + Warn2
+++ ~ It's absolutely foolish, suicidal, and therefore profitable, let's get it done so we can see what the booty is like.~ + Warn3
+++ ~ I have not come here with you to turn and run away when the first glimpse of danger appears. I laugh at such threats, Jet'laya. (Can't wait to see how you seek shelter in my bedroll tonight when we camp out in this dreaded wood.)~ + Warn4
+++ ~ Have you seen a creature like this ever before? A Lich! We have not the force to stand up to such a creature, it is useless. It hurts me deep, Jet'laya, but your sister has erred and now is lost beyond hope. Let us retreat.~ + Warn5
+
+CHAIN
+IF~~THEN SANDARK Warn2
+~Suicidal fools.~
+DO~SetGlobal("Sandark","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",1) AddexperienceParty(6000) ~ EXIT
+
+CHAIN
+IF~~THEN SANDARK Warn3
+~Suicidal fools.~
+DO~SetGlobal("Sandark","GLOBAL",3)AddexperienceParty(2000) ~ EXIT
+
+CHAIN
+IF~~THEN SANDARK Warn4
+~Suicidal fools.~
+DO~SetGlobal("Sandark","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1) AddexperienceParty(1000) ~ EXIT
+
+CHAIN
+IF~~THEN SANDARK Warn5
+~Mortal cowards, haha.~
+DO ~ SetGlobal("Sandark","GLOBAL",4)IncrementGlobal("Sanpoints","GLOBAL",-3)ReputationInc(-2) ~ EXIT
+
 
 // Jet Laya Sister
 

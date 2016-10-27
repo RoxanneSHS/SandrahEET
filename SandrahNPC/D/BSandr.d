@@ -5843,7 +5843,7 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",10) RealSetGlobalTimer("SanSharIntT","GLOBA
 == BSANDR ~ So if I could have become like her if my life had been less blessed, would you admit that it could be true in the other way as well?~
 == BSHART~ What do you mean by that? Don't try to trick me with words.~
 == BSANDR ~ If she had been born in my place, would she not have used her skills and passion in a similar way. Fighting like I do for some cause instead of fighting for mere survival and some grub? Is that idea so remote?~
-== BSHART~ (Shar-Teel is quite for some while.) Ysena was forced by circumstances to the life she led. Hard to say what could have become of her in a luckier world. You could damn be right in your assumption -- the more I think of it the more I tend to agree.~
+== BSHART~ (Shar-Teel is silent for some while.) Ysena was forced by circumstances to the life she led. Hard to say what could have become of her in a luckier world. You could damn be right in your assumption -- the more I think of it the more I tend to agree.~
 == BSANDR ~ If it is true for her, Shar-Teel, it would be true for you as well. Only you are still alive, and young, and strong. Your story is not yet told to the end.~
 == BSHART~ Damn, why do I NOT have the impression you are just another glee babbling cleric trying to show me the *right way*.~
 == BSANDR ~ Because I am not talking of a *right way* to you. I am talking about your potential, your abilities, your strength. And of the ways those can be used. You have choices. And your possibilities have increased now that you are with <CHARNAME>.~

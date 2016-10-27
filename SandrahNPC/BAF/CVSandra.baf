@@ -8374,7 +8374,9 @@ END
 
 IF
 GlobalLT("Chapter","Global",14)
+OR(2)
 Dead("Brage")
+Dead("Laryssa")
 Global("PCKilledBrage","LOCALS",0)
 THEN
 RESPONSE #100
