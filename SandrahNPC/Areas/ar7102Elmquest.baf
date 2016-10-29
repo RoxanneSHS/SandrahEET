@@ -8,4 +8,15 @@ CreateCreature("Elminsa",[362.235],2)
 CreateCreature("narqmes",[392.265],2)
 END
 
+IF
+!Global("TransformedChicken","GLOBAL",0)
+InParty("CVSandr")
+!Dead("Melicamp")
+Global("NewFace","BG3202",0)
+THEN
+RESPONSE #100
+SetGlobal("NewFace","BG3202",1)
+ActionOverride("Melicamp",ReallyForceSpellRES("Meliface",Myself))
+END
+
 

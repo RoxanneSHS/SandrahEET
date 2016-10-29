@@ -5573,6 +5573,7 @@ RealGlobalTimerExpired("SanSharIntT","GLOBAL")
 !Global("X#SHARINTEREST","GLOBAL",3)
 InParty("SHARTEEL")
 TimeOfDay(DUSK)
+AreaType(OUTDOOR)
 THEN
 RESPONSE #100
 SetGlobal("SanSharInt","GLOBAL",13)
