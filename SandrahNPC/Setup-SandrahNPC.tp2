@@ -6998,6 +6998,13 @@ END ELSE BEGIN
     PRINT ~ Afaaq not detected - skipped~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~b2#tenyj.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/TenyaNPC.d~
+PRINT ~ Tenya NPC detected - installed Sandrah interactions~
+END ELSE BEGIN
+  PRINT ~Tenya NPC not detected - skipped Sandrah part~
+END
+
 BEGIN
 ~Shauhana for Shadow of Amn EET~
 
