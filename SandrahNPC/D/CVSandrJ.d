@@ -2098,7 +2098,7 @@ END
 // Umberlee's bowl
 IF ~ Global("Umbowl","GLOBAL",1) ~ THEN BEGIN Umbowl
 SAY ~ I apologise, <CHARNAME>, that had to be your decision not mine. I over acted.~
-IF~~ THEN REPLY ~ I am not sure I understand what was really going on. Those poor fisherman asking for our help were really murderers and thieves? And how could you know?~ GOTO Umbowl2
+IF~~ THEN REPLY ~ I am not sure I understand what was really going on. Those poor fishermen asking for our help were really murderers and thieves? And how could you know?~ GOTO Umbowl2
 END
 
 IF ~~ THEN BEGIN Umbowl2

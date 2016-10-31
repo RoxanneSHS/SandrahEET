@@ -7000,6 +7000,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~b2#tenyj.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/TenyaNPC.d~
+EXTEND_TOP ~B2#Tenya.bcs~ ~SandrahNPC/Mods/Tenyaheal.baf~
 PRINT ~ Tenya NPC detected - installed Sandrah interactions~
 END ELSE BEGIN
   PRINT ~Tenya NPC not detected - skipped Sandrah part~
