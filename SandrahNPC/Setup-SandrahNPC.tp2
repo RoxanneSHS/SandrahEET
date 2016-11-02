@@ -4709,6 +4709,8 @@ EXTEND_TOP
 ~Carsa.bcs~ ~SandrahNPC/BAF/CarsaJardrop.baf~
 EXTEND_TOP
 ~Melicamp.bcs~ ~SandrahNPC/BAF/Meliface.baf~
+EXTEND_TOP
+~Xvart.bcs~ ~SandrahNPC/BAF/xvart.baf~
 
 EXTEND_TOP ~Player1D.BCS~ ~SandrahNPC/BAF/Player1.baf~
 

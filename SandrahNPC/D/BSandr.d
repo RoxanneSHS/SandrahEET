@@ -4848,7 +4848,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR EdwCurs2
-~ <CHARNAME>, I have sworn and I swear it again, I am not responsible for Edwin's fate. My goddess is not one that can be petitioned by prayers to act on my behalf. I see that Edwin is probably cursed by her, but it is not my doing. He has brought his fate upon himself by his own misuse of Mystra's gifts.~
+~ <CHARNAME>, I have sworn and I swear it again, I am not responsible for Edwin's fate. My goddess is not one who can be petitioned by prayers to act on my behalf. I see that Edwin is probably cursed by her, but it is not my doing. He has brought his fate upon himself by his own misuse of Mystra's gifts.~
 == Bedwin_ ~ LIAR! I was a competent red wizard until I met you. It started when you threatened me. You, and you alone are behind all this. And you cheat your beloved leader with your intrigue!~
 == BSANDR ~ Stop your senseless accusations, Mageling. I even used my healer skills on you when you needed it. I do my best for <CHARNAME>'s group at all times.~
 END
@@ -6415,7 +6415,7 @@ END
 CHAIN
 IF~Global("SanDruids","cvdru0",2)~THEN BSANDR XvartSecret
 ~ The epitome of blind bigotry - if these shadow druids really love and protect nature chances are poor for the environment I love.~
-DO~SetGlobal("SanDruids","cvdru0",3)~
+DO~SetGlobal("SanDruids","cvdru0",3) SetGlobal("SanXvartPeace","Global",1)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Those are blind, misled fools who cause destruction everywhere they appear, especially to mother nature they pretend to defend.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Balance cannot be achieved by violently enforcing the one side only. Sandrah, my friend from the City of Splendor, you understand nature much better than any of those fanatics.~
 == BMinsc_ IF~ InParty("Minsc") ~ THEN ~ The stench of this evil hole makes Minsc swoon and Boo has even overthrown his breakfast. Good we kicked their butts and they leave the little blue people alone now.~
