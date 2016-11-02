@@ -15,7 +15,7 @@ DO~SetGlobal("Altalk","BG1800",5)~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, my blood will not cease to boil until we have finished this battle. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ This whole installation must be just an illusion, no gods can exist in a world where such is possible. ~
 == BSANDR IF~ InParty("Xan") ~ THEN ~ My goddess has led me here to correct this misdeed, Xan. And you alongside with me, my friend.~
-== BEDWIN  IF~ InParty("Edwin") ~ THEN ~ What is this uproar about? Anyone knows a more productive way of producing this ore? ~
+== BEDWIN_  IF~ InParty("Edwin") ~ THEN ~ What is this uproar about? Anyone knows a more productive way of producing this ore? ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Robbing purses is one thing, robbing people's freedom and dignity is another. ~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ Now we are seeing the dark side of the sword coast and of thine opponents. ~
 ==CVSandrJ IF~ InParty("RH#ISRA") ~ THEN  ~ I am afraid this is just the beginning of our journey into much darker terrain (sigh).~

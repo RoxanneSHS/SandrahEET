@@ -5731,6 +5731,8 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ACQXZAH1.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/ACQuestSan.d~
+COPY_EXISTING ~ACqxzah1.cre~ ~override~ 
+     WRITE_ASCII 0x34 ~Resach~
  END ELSE BEGIN
 COPY ~SandrahNPC/Mods/acqxzah1.cre~ ~override/acqxzah1.cre ~
      SAY NAME1 @403
@@ -8196,13 +8198,13 @@ END
 
 
 COPY_EXISTING ~BDBanter.2da~ ~override~
-REPLACE_TEXTUALLY ~SAFANA       ***~ ~SAFANA       BSAFAN    ~
+REPLACE_TEXTUALLY ~SAFANA       BDSAFANB~ ~SAFANA       BSAFAN    ~
 
 COPY_EXISTING ~BDBanter.2da~ ~override~
-REPLACE_TEXTUALLY ~EDWIN        ***~ ~EDWIN        Bedwin    ~
+REPLACE_TEXTUALLY ~EDWIN        BDEDWINB~ ~EDWIN        Bedwin    ~
 
 COPY_EXISTING ~BDBanter.2da~ ~override~
-REPLACE_TEXTUALLY ~VICONIA      ***~ ~VICONIA      BVicon    ~
+REPLACE_TEXTUALLY ~VICONIA      BDVICONB~ ~VICONIA      BVicon    ~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE

@@ -1,4 +1,5 @@
 IF
+GlobalGT("Umbowl","GLOBAL",0)
 GlobalLT("Umbowl","GLOBAL",5)
 InParty(Myself)
 InParty("CVSandr")
@@ -17,7 +18,21 @@ IncrementGlobal("Umbowl","GLOBAL",1)
 END
 
 IF
+AreaCheck("BG1200")
+GlobalGT("Talosangr","BG1200",1)
+Global("Umbowl","GLOBAL",6)
+CombatCounter(0)
+!See([ENEMY])
+Delay(6)
+THEN
+RESPONSE #100
+IncrementGlobal("Umbowl","GLOBAL",1)
+END
+
+IF
+OR(2)
 Global("Umbowl","GLOBAL",5)
+Global("Umbowl","GLOBAL",7)
 InParty("CVSandr")
 InParty(Myself)
 See("CVSandr")
@@ -29,3 +44,4 @@ THEN
 RESPONSE #100
 Dialogue("CVSandr")
 END
+

@@ -223,10 +223,10 @@ IF WEIGHT #1 ~ Global("CowElmVis","LOCALS",1) ~ THEN NarQMes SanWiEdinWD
 DO ~ SetGlobal("CowElmVis","LOCALS",2)~
 == CVSandrJ IF ~ !InMyArea("Pellig") ~ THEN ~ He travels with <CHARNAME> but he is under my constant observation.~
 == CVSandrJ IF ~ InMyArea("Pellig") ~ THEN ~ He travels with <CHARNAME> but he is under my constant observation. And you know Pelligram, she would swallow him whole if she suspected one false move from the mageling.~
-== BEDWIN IF ~ InMyArea("Pellig") ~ THEN ~  That cat has really had her eyes on me all the time. (I wished some other pussycat would be as observant to me.) ~
-== BEDWIN IF ~ !InMyArea("Pellig") ~ THEN ~ (If this pussycat had her eyes on me all the time she MUST have recognized my enourmous qualities - ha, in no time now she will be mine.)~
+== BEDWIN_ IF ~ InMyArea("Pellig") ~ THEN ~  That cat has really had her eyes on me all the time. (I wished some other pussycat would be as observant to me.) ~
+== BEDWIN_ IF ~ !InMyArea("Pellig") ~ THEN ~ (If this pussycat had her eyes on me all the time she MUST have recognized my enourmous qualities - ha, in no time now she will be mine.)~
 == NarQMes ~ Move carefully in this house, scum, and you may leave it alive. Although I doubt very much that one of your kind can restrain himself such.~
-== BEDWIN ~ As if you had the means to threaten me, apprentice. I keep peace because I chose so, and for <CHARNAME>'s benefit.~
+== BEDWIN_ ~ As if you had the means to threaten me, apprentice. I keep peace because I chose so, and for <CHARNAME>'s benefit.~
 == CVSandrJ ~ Psst, Edwin, you are still needed, do not quarrel with Landrel, he will send you to the Nine Hells with just a snap of his finger.~
-== BEDWIN ~ I doubt that but I will behave. (Oh, sweet girl, you really care for my well being - your rude mask has betrayed you once again...)~
+== BEDWIN_ ~ I doubt that but I will behave. (Oh, sweet girl, you really care for my well being - your rude mask has betrayed you once again...)~
 EXIT

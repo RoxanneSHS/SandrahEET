@@ -5343,9 +5343,9 @@ END
 
 INTERJECT_COPY_TRANS BORK 5 SanEdBlush
 ==CVSandrJ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~ This really destroys all my hopes I had for a possible relationship, dearest mage?~
-==Bedwin IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Uh, Sandrah, our relationship, eh, what?~
+==Bedwin_ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Uh, Sandrah, our relationship, eh, what?~
 ==CVSandrJ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~How could I ever dream to compete with the beauties of the Blushing Mermaid or the Undercellars. Your taste in women is for those at a level I can never reach.~ DO ~ SetGlobal("SanEdBlushTa","GLOBAL",2) ~
-==Bedwin IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Your training with the smith of Beregost and others may help...~
+==Bedwin_ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Your training with the smith of Beregost and others may help...~
 ==CVSandrJ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Still I am afraid I can never reach the level you prefer in women. I wonder how any girl can ever sink so low.~
 ==BORK IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN~ Surely not one like you, mylady.~
 END
@@ -5497,7 +5497,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BSandr IF~ InParty("Neera") ~ THEN  ~Not a wild mage but a woman, who can get wild at times.~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ What? No honest fight, no bloodshed? By Tempus, those are demons for babies. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ This victory is glorious but still just an illusion. He will come back and we all are doomed. ~
-== Bedwin  IF~ InParty("Edwin") ~ THEN ~ Such intelligence in a woman is both admirable and dangerous (I need to get this pet under my thumb soon.)~
+== Bedwin_  IF~ InParty("Edwin") ~ THEN ~ Such intelligence in a woman is both admirable and dangerous (I need to get this pet under my thumb soon.)~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ This lair is now ours to loot. The whole thing reminds me of a story I once encountered with the daughter of...ah..maybe another time...  ~
 == IF_FILE_EXISTS BGARRI IF~ InParty("Garrick") ~ THEN  ~  Well,
 The mighty mage's courageous daughter,
@@ -5531,7 +5531,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, we have deserved this. Let us show them how heroes can celebrate. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ This whole installation is just an illusion created to let us forget doom for a few quickly passing hours. ~
 == BSANDR IF~ InParty("Xan") ~ THEN ~ Then sweet elf let us do just that, forget doom and enjoy the illusion as if it were real. Nothing of it can hurt us, right?~
-== Bedwin  IF~ InParty("Edwin") ~ THEN ~ Haha, all these willing dumb women just waiting for the master to teach them tonight. (Damned, if I could only get this arrogant wonderful Waterdeep pussy into a state to recognize my qualities...chances may be good tonight...) ~
+== Bedwin_  IF~ InParty("Edwin") ~ THEN ~ Haha, all these willing dumb women just waiting for the master to teach them tonight. (Damned, if I could only get this arrogant wonderful Waterdeep pussy into a state to recognize my qualities...chances may be good tonight...) ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Purses and more purses. Women and girls and more girls and more women. Where to start... ~
 == BGARRI IF~ InParty("Garrick") ~ THEN  ~ My, there is a bard's competition over there on the stage just starting. I expect you all to cheer for me! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ A welcome change from our usual life on the road. A tradition only too rare in my suffering homeland. But we canst enjoy a day if the chance appears.~
@@ -5565,7 +5565,7 @@ DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou are not aware of the presence of danger, but thou shouldst.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competend couselor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
 ==BGARRI IF~InParty("Garrick")~THEN~A few lines to add to my heroine's epos...the aspects of  romance in between the great deeds.~ 
-==Bedwin IF~InParty("Edwin")~THEN~(I hope she'll recognise my limping tomorrow - I must arrange a similar scene for us.)~
+==Bedwin_ IF~InParty("Edwin")~THEN~(I hope she'll recognise my limping tomorrow - I must arrange a similar scene for us.)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair can be worshipped in many ways (Smile).~
 == BSANDR ~ (Sigh). Too good we have caring companions with us. ~
 EXIT
@@ -5581,7 +5581,7 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ No, no I will not write anything down about this scene. ~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair must have arranged this scene for us. ~
 == Bneera_  IF~ InParty("Neera") ~ THEN ~ If this isn't the wildest of wild magic, I don't know.~
-== Bedwin IF~ InParty("Edwin") ~ THEN ~ (What a chance to show the princess what is really to be explored beneath the red robe - if she would once just look in my direction. A bit of splashing might help...)~
+== Bedwin_ IF~ InParty("Edwin") ~ THEN ~ (What a chance to show the princess what is really to be explored beneath the red robe - if she would once just look in my direction. A bit of splashing might help...)~
 == BMINSC_ IF~ InParty("Minsc") ~ THEN ~ No, Boo stays on the beach, your fur will get all wet and ruffled and you complain afterwards. And get out of the sun, It's too hot for you. What? - Yes, I command you. I do in matters I know best and you do where you have more insight, right?~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~Jen'Lig likes be out of disguise clothes. Water caress scales like lover should.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not look your way, eeh, and not yours of course. (Dives under water.)~

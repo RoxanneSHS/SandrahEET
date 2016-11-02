@@ -3707,7 +3707,7 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",7) ~
 == BSANDR ~ Mystra is among all the gods of Toril the goddess that allows their followers the most freedom in their own decisions. I am not obliged to follow strict rules like those of Helm. Actually, there is nothing that Mystra could demand from me, that I would not do anyway.~
 == BAJANT ~ I already pointed out last time, that you do as much good as many followers of Helm would wish to do. Now you say, that Mystra does not directly provide you with the motives to do so as well. So what guides you then, Sandrah?~
 == BSANDR ~ I have not confirmed that Mystra is not a guidance to me. All I said is that her rules and instructions are not expressed in clear commands, but are something that you find in your own heart and mind.~
-= ~ Remember what you learned about Mystra, or rather about Midnight. She was an adventurer and cleric of pure heart. Due to her own interpretation of what was right and good, she was chosen by Ao at the Times of Trouble to help him destroy the renegade gods. Ao, the Lord of Lords, chose her, the human adventurer, instead of other gods.~
+= ~ Remember what you learned about Mystra, or rather about Midnight. She was an adventurer and cleric of pure heart. Due to her own interpretation of what was right and good, she was chosen by Ao at the Time of Troubles to help him destroy the renegade gods. Ao, the Lord of Lords, chose her, the human adventurer, instead of other gods.~
 == BAJANT ~ Except for Helm. Ao put Helm beside the adventurers on the holy task.~
 == BSANDR ~ (Smiles at Ajantis) You see how Midnight and Helm have worked hand in hand and succeeded to bring back peace to the troubled Toril. (She takes his hand.) And here are we, hand in hand, following their example to bring peace once again to these troubled times.~
 == BAJANT ~ (Ajantis keeps Sandrah's hand in his own and smiles back.) I like this view on our mission, even if we do not deal with fallen gods this time.~
@@ -3724,7 +3724,7 @@ DO~SetGlobal("SanImohelmKill","LOCALS",2)~
 == BSANDR ~You try to warn me about Ajantis, Imoen? Thank you, but I think I know him a bit longer than you do.~
 ==Bimoen~Same problem always, Sandrah, if ya standin' too close you cant see the global picture. I wasn't sleepin' in my Candlekeep hist'ry lessons all the time, you oughta know, I always listened to the interestin' parts.~
 == BSANDR ~Like what for example?~
-==Bimoen~Like those Times of Trouble - an' ol' Helm killing your Mystra!~
+==Bimoen~Like those Time of Troubles - an' ol' Helm killing your Mystra!~
 == BSANDR ~I see what you mean, my learned besta friend. Are you aware of the fact that the incarnation of Mystra slain by Helm was not the one that I serve. My grandmother Midnight was elevated to replace the fallen Mystra and to take her cloak and name.~
 ==Bimoen~You have no grudge against the helmites then - hihi. He might've done your granny a favour by removing the old one...~
 == BSANDR ~Oh, Imoen, stop your wild analysis before it gets out of hand. Our view on what has happened way back then surely must take more historical facts into account. Helm is no murderer and my grandmother was not appointed to her task as the result of an intrigue.~
@@ -4828,20 +4828,20 @@ CHAIN
 IF~ Global("Cowscroll","GLOBAL",1)~ THEN BSANDR EdwEny
 ~ Mageling, do not dare to even look in my direction.~
 DO~ SetGlobal("Cowscroll","GLOBAL",2)~
-== BEDWIN ~ You are an arrogant fool! Just because you are the mighty man's daughter, you do not impress me the least. <CHARNAME> leads you like his little doggie on a leash, haha. Do not try to bite me, little one.~
+== Bedwin_ ~ You are an arrogant fool! Just because you are the mighty man's daughter, you do not impress me the least. <CHARNAME> leads you like his little doggie on a leash, haha. Do not try to bite me, little one.~
 == BSANDR ~ My loyalty to <CHARNAME> is the only thing that keeps you alive at the moment. Whatever <PRO_HISHER> reason is to let you come along, watch out, red scum, one false move and I skin you alive.~
-== BEDWIN ~ Ha, boil in your own wraith, you will not dare to touch me, priestess.~
+== Bedwin_ ~ Ha, boil in your own wraith, you will not dare to touch me, priestess.~
 == BSANDR ~ I need not even move a finger against you, red wizard. The curse of Mystra is upon you now. You yourself will be your own greatest enemy.~
-== BEDWIN ~ (Edwin has turned ghostly pale upon these last words. You see his hands tremble as he quickly moves away from Sandrah.)~ DO ~ GiveItemCreate("myscurs","Edwin",0,0,0) UseItem("myscurs","Edwin") ActionOverride("Edwin",ChangeAIScript("BGEDWI2",OVERRIDE))~
+== Bedwin_ ~ (Edwin has turned ghostly pale upon these last words. You see his hands tremble as he quickly moves away from Sandrah.)~ DO ~ GiveItemCreate("myscurs","Edwin",0,0,0) UseItem("myscurs","Edwin") ActionOverride("Edwin",ChangeAIScript("BGEDWI2",OVERRIDE))~
 EXIT
 
 CHAIN
 IF ~ Global("Cowscroll","GLOBAL",3)~ THEN BSANDR EdwCurs
 ~ (Edwin has again hurt himself badly by his own miscast spell.)~
 DO~ SetGlobal("Cowscroll","GLOBAL",4)~
-== BEDWIN ~ Damned arrogant priestess, what have you done to me?~
+== Bedwin_ ~ Damned arrogant priestess, what have you done to me?~
 == BSANDR ~ Mageling, I told you already, I will do nothing and I have done nothing against you, as long as <CHARNAME> tolerates your evil presence in this group!~
-== BEDWIN ~ You lie, crazy witch! I am cursed, all my spells work against myself instead of helping the group to crush our enemies.~
+== Bedwin_ ~ You lie, crazy witch! I am cursed, all my spells work against myself instead of helping the group to crush our enemies.~
 END
 ++ ~ Sandrah, did you really bestow your goddess' curse on Edwin, I cannot believe that?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~+ EdwCurs2
 ++ ~ You two, stop it immediately. As long as you are in my party, I demand you find a way to get along with each other. We are following a common goal, mind that.~ + EdwCurs2
@@ -4849,7 +4849,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR EdwCurs2
 ~ <CHARNAME>, I have sworn and I swear it again, I am not responsible for Edwin's fate. My goddess is not one that can be petitioned by prayers to act on my behalf. I see that Edwin is probably cursed by her, but it is not my doing. He has brought his fate upon himself by his own misuse of Mystra's gifts.~
-== BEDWIN ~ LIAR! I was a competent red wizard until I met you. It started when you threatened me. You, and you alone are behind all this. And you cheat your beloved leader with your intrigue!~
+== Bedwin_ ~ LIAR! I was a competent red wizard until I met you. It started when you threatened me. You, and you alone are behind all this. And you cheat your beloved leader with your intrigue!~
 == BSANDR ~ Stop your senseless accusations, Mageling. I even used my healer skills on you when you needed it. I do my best for <CHARNAME>'s group at all times.~
 END
 ++ ~ Calm down, both of you. Sandrah, I believe you, because I know you well enough. You did not do it, but the goddess you worship has acted against Edwin nevertheless. So now I ask you as my counselor for an advice, please.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ EdwCurs3
@@ -4858,10 +4858,10 @@ END
 CHAIN
 IF ~~ THEN BSANDR EdwCurs3
 ~ (It is obvious, that Sandrah is badly hurt by your mistrust.) ~
-== BEDWIN ~ My reputation as a wizard is destroyed by that priestess. I am powerless, she has cursed me and she has weakened you, <CHARNAME>, with her mislead arrogance. It is she who has to go.~
+== Bedwin_ ~ My reputation as a wizard is destroyed by that priestess. I am powerless, she has cursed me and she has weakened you, <CHARNAME>, with her mislead arrogance. It is she who has to go.~
 == BSANDR ~ (Sandrah is very calm when she speaks again.) I see only one solution, <CHARNAME>. I admit my goddess is probably the reason for Edwin's state, punishing him for his misuse of her gifts and his hunger for power. I did not ask her to do this and I have no way to make her undo it.~
 =~ All I can do at this moment is to give you my counselor's advice. It looks as if only Edwin's offensive spells suffer from that curse. The best will be for him to concentrate on the defensive and protective spells he knows or may start to learn.~
-== BEDWIN ~ Ha, what a cunning plan, cursed witch, now you reveal your true intention...~
+== Bedwin_ ~ Ha, what a cunning plan, cursed witch, now you reveal your true intention...~
 == BSANDR ~ All I am saying, that changing his attitude may be one solution against the curse. If Mystra sees the change in his use of magic, she will perhaps even remove the curse from him.~
 END
 ++ ~ I suggest to follow Sandrah's advice for the time being. Just try it, Edwin, and we will see how it works.~
@@ -4871,28 +4871,28 @@ CHAIN
 IF ~ Global("Cowscroll","GLOBAL",5)~ THEN BSANDR SanEdlook
 ~ Can you not cast your lusty gaze elsewhere, Mageling? There is a couple of wild boars in the brushes over there, their females should be to your liking. (Edwin was studying Sandrah intensively while she was dismantling her armour and boots for the rest you have called.)~
 DO~ SetGlobal("Cowscroll","GLOBAL",6)~
-== BEDWIN ~ How can so much needless and undeserved hatred exist in a fragile person of such outmost beauty? What makes you hate me so much without ever having exchanged a real conversation with me?~
+== Bedwin_ ~ How can so much needless and undeserved hatred exist in a fragile person of such outmost beauty? What makes you hate me so much without ever having exchanged a real conversation with me?~
 == BSANDR ~ You have not done anything yet to make me change my global opinion of the Red Scourge at all. Every word you have said so far has confirmed only my darkest expectation.~
-== BEDWIN ~ Ah, but I cannot imagine that a woman of your intelligence and charm lacks the sophistication to recognize a real man of quality. ~
+== Bedwin_ ~ Ah, but I cannot imagine that a woman of your intelligence and charm lacks the sophistication to recognize a real man of quality. ~
 == BSANDR ~ I am sure I would recognize one, but what does that have to do with you, Edwin?~
-== BEDWIN ~ I have observed your interest in erotic adventures and new experiences and I can promise you...~
+== Bedwin_ ~ I have observed your interest in erotic adventures and new experiences and I can promise you...~
 == BSANDR ~ ...if I would need an embroidered red skirt for one of those adventures, I will simply cast a stun spell on you and make me one out of your robe. I am sure that some mindless female will come along and find the naked statue attractive. A nice prospect in which we both are the winners, do you not think so?~
-== BEDWIN ~ Your arrogance will be your downfall priestess. I await the day you come crawling to my bedside..(Oh, how I love these strong ones becoming submissive slaves when I stir up their dark lusts...)~
+== Bedwin_ ~ Your arrogance will be your downfall priestess. I await the day you come crawling to my bedside..(Oh, how I love these strong ones becoming submissive slaves when I stir up their dark lusts...)~
 == BSANDR ~ (Sandrah tip-toes lightly to the nearby pond in just her fragile shirt for her refreshing bath, making sure that Edwin gets a full view of the treasures denied to him.)~
-== BEDWIN ~ What a tease...what a fruit to be plucked...aah...~  DO~ RestParty()~
+== Bedwin_ ~ What a tease...what a fruit to be plucked...aah...~  DO~ RestParty()~
 EXIT
 
 CHAIN
 IF ~ Global("Cowscroll","GLOBAL",7)~ THEN BSANDR SanEdlook
 ~ (In a motion too fast for the naked eye, Sandrah's hammer has appeared in her hand ready to strike as Edwin is approaching her smiling slickly.)~
 DO~ SetGlobal("Cowscroll","GLOBAL",8) RealSetGlobalTimer("CowscrollT","GLOBAL",1800)~
-== BEDWIN ~ Oh, please hold it, girl..eh, mylady, ehm, I have the impression that you are one of the rare civilized beings in this forsaken land. (...and a beauty that would outshine any ruler's harem easily.) Can we not get along in a mannered way?~
+== Bedwin_ ~ Oh, please hold it, girl..eh, mylady, ehm, I have the impression that you are one of the rare civilized beings in this forsaken land. (...and a beauty that would outshine any ruler's harem easily.) Can we not get along in a mannered way?~
 == BSANDR ~ What are you creeping up to me for, snake. You want to bite my foot or rather lick it?~
-== BEDWIN ~ (Oh my, any of the two would make my dreams come true.) Eh, I just want to talk to you from comrad to comrad - for the sake of <CHARNAME> and <PRO_HISHER> progress. (That should get her - blindly devoted as she is to that simian.)~
+== Bedwin_ ~ (Oh my, any of the two would make my dreams come true.) Eh, I just want to talk to you from comrad to comrad - for the sake of <CHARNAME> and <PRO_HISHER> progress. (That should get her - blindly devoted as she is to that simian.)~
 == BSANDR ~ Speak!~
-== BEDWIN ~ (Ah, not one for the harem, indeed, that one would rule, if she only wanted to.) This curse from your goddess, priestess of Mystra, can we not do something about it? It should be clear now that I am loyal to <CHARNAME> and this group could largely benefit from the full use of my skills (This group could even benefit from a halfdead goblin with a broken quarterstaff.)~
+== Bedwin_ ~ (Ah, not one for the harem, indeed, that one would rule, if she only wanted to.) This curse from your goddess, priestess of Mystra, can we not do something about it? It should be clear now that I am loyal to <CHARNAME> and this group could largely benefit from the full use of my skills (This group could even benefit from a halfdead goblin with a broken quarterstaff.)~
 == BSANDR ~ Spare me your insults, magelings, I think I made it clear that I have nothing to do with your curse and I can and will do nothing to help you. I have kept you alive so far, which is already more than you deserve and more you would do for me.~
-== BEDWIN ~ (What an error! Oh how I would keep you alive, how I would awaken your senses and your lust every day again, little tease...) Do not think I am ungrateful and I have not recognized that. (Deep inside she must feel it - feel how much she needs a man of my qualities.) Just go to think about it patiently, maybe you can guess of a way for improvement with all the knowledge you undoubtly possess. (Do not think too hard, I don't want to see your face wrinkled, pussy.)~
+== Bedwin_ ~ (What an error! Oh how I would keep you alive, how I would awaken your senses and your lust every day again, little tease...) Do not think I am ungrateful and I have not recognized that. (Deep inside she must feel it - feel how much she needs a man of my qualities.) Just go to think about it patiently, maybe you can guess of a way for improvement with all the knowledge you undoubtly possess. (Do not think too hard, I don't want to see your face wrinkled, pussy.)~
 == BSANDR ~ Step carefully, I maybe will not heal your leg if you foolishly break it when you loose your grip in your own slime.~
 EXIT
 
@@ -4900,26 +4900,26 @@ CHAIN
 IF ~ Global("Cowscroll","GLOBAL",9)~ THEN BSANDR SanEdNoCurse
 ~ (Sandrah lightly raises a brow as Edwin is approaching her smiling happily.) Yes?~
 DO~ SetGlobal("Cowscroll","GLOBAL",10) RealSetGlobalTimer("CowscrollT","GLOBAL",1500) ~
-== BEDWIN ~ Mylady, I want to let you participate in the joy I am feeling today. (I would give you a feast, sweetling, that you would never forget, mmmh.)~
+== Bedwin_ ~ Mylady, I want to let you participate in the joy I am feeling today. (I would give you a feast, sweetling, that you would never forget, mmmh.)~
 == BSANDR ~ Did you let a town explode in fireballs or melt the glaciers of the Cloudpeaks to drown Nashkel? Such are the things that delight the red scum.~
-== BEDWIN ~ Oh, Sandrah, none of the evil you appoint to me could be further from my heart. I am however sure that somehow you are not as innocent as you try to appear in the state that makes me so happy today. (If ever you were innocent, little bitch, I can almost smell all the men you have experienced...) Your goddess has removed her curse from me.~
+== Bedwin_ ~ Oh, Sandrah, none of the evil you appoint to me could be further from my heart. I am however sure that somehow you are not as innocent as you try to appear in the state that makes me so happy today. (If ever you were innocent, little bitch, I can almost smell all the men you have experienced...) Your goddess has removed her curse from me.~
 == BSANDR ~ She will have her reasons. Be sure I will not send a thankful prayer to her for that.~
-== BEDWIN ~ But would you not follow the advice of Mystra and forgive me as well? (We can manifest our new friendship in kisses as sweet as our best Thayan wines...)~
+== Bedwin_ ~ But would you not follow the advice of Mystra and forgive me as well? (We can manifest our new friendship in kisses as sweet as our best Thayan wines...)~
 == BSANDR ~ As little as I had to do with Mystra cursing you, I have to do with her forgiving you. I question her not but I do not follow her blindly.~
-== BEDWIN ~ *MY* feelings today are high enough to forgive you your hesitation, sweetest priestess. Deep in my heart I know that your goddess has seen through your eyes and decided with what you have recognised about me to remove her curse.~
+== Bedwin_ ~ *MY* feelings today are high enough to forgive you your hesitation, sweetest priestess. Deep in my heart I know that your goddess has seen through your eyes and decided with what you have recognised about me to remove her curse.~
 == BSANDR ~ Mmh. That may indeed be possible. Be that as it may, look at that wench over there, mageling, just the cheap type you so much enjoy. Would it not be great to celebrate your joy with her - and likewise free me of your presence.~
-== BEDWIN ~ I would rather celebrate this event with someone of the same sophistication and cultural level as myself...~
+== Bedwin_ ~ I would rather celebrate this event with someone of the same sophistication and cultural level as myself...~
 == BSANDR ~ Here, I lend you my handmirror for the day. Look inside and you will see the only one matching that description I can imagine.~
-== BEDWIN ~ (I am not mistaken. Even her insults are more pleasing than any woman's compliments. - Melting glaciers? You will be washed away by your own feelings, little girl, once the dam is broken by me.)~
+== Bedwin_ ~ (I am not mistaken. Even her insults are more pleasing than any woman's compliments. - Melting glaciers? You will be washed away by your own feelings, little girl, once the dam is broken by me.)~
 EXIT
 
 CHAIN
 IF ~ Global("SanEdBlushTa","GLOBAL",1)~ THEN BSANDR SanEdBlushTaNoDy
 ~ This really destroys all my hopes I had for a possible relationship, dearest mage?~
 DO~ SetGlobal("SanEdBlushTa","GLOBAL",2) SetGlobal("SanEdBlush","GLOBAL",2)RealSetGlobalTimer("CowscrollT","GLOBAL",1500)~
-==BEDWIN ~ (Dearest mage? Girl, I knew I would get you sooner or later.) Uh, Sandrah, our relationship, eh, what?~
+==Bedwin_ ~ (Dearest mage? Girl, I knew I would get you sooner or later.) Uh, Sandrah, our relationship, eh, what?~
 ==BSANDR ~ How could I ever dream to compete with the beauties of the Blushing Mermaid or the Undercellars. Your taste in women is for those at a level I can never reach.~
-==BEDWIN ~ Your training with the smith of Beregost and others may help...~
+==Bedwin_ ~ Your training with the smith of Beregost and others may help...~
 ==BSANDR ~ Still I am afraid I can never reach the level you prefer in women. I wonder how any girl can ever sink so low.~
 EXIT
 
@@ -4927,7 +4927,7 @@ CHAIN
 IF ~Global("SanEdAnts","GLOBAL",1)~ THEN BSANDR SanEdInnAnt1
 ~ (Sandrah has left the public room to go upstairs. You decide to give her a little moment, knowing how she loves to prepare herself for the intimate hours she will soon share with you.)~
 DO~ SetGlobal("SanEdAnts","GLOBAL",2) RealSetGlobalTimer("CowscrollT","GLOBAL",1200)~
-== BEDWIN ~ (Edwin has risen just a moment later mumbling some excuse to retire upstairs as well.)~
+== Bedwin_ ~ (Edwin has risen just a moment later mumbling some excuse to retire upstairs as well.)~
 END
 ++ ~ You order yourself a final nightcap drink and start to imagine your wonderful lover in her glimmering neglige waiting for your affection eagerly.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+  SanEdInnAnt2
 ++ ~ The obvious interest that Edwin has shown recently for Sandrah and his early disappearance without one of the tavern girls makes you suspicious. You rise to make sure that Edwin has really retired to *his* room.~ +  SanEdInnAnt2
@@ -4936,7 +4936,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanEdInnAnt2
 ~ (As you come silently upstairs you see the light in your and Sandrah's room and you observe the nifty nightgown she has prepared on the bed while she is still combing her auburn locks.)~
-== BEDWIN ~ (As your eyes adjust to the darkness of the corridor, you recognise the dark figure that has become almost one with the large wardrobe halfway down the hall. Edwin is observing Sandrah's every move.)~  
+== Bedwin_ ~ (As your eyes adjust to the darkness of the corridor, you recognise the dark figure that has become almost one with the large wardrobe halfway down the hall. Edwin is observing Sandrah's every move.)~  
 END
 ++ ~ (You stomp up the last steps of the staircase and walk towards your room.) Goodnight, Edwin. ( You make sure the door is well closed behind you before you take Sandrah in your arms and lift her onto the bed.)~ EXIT
 ++ ~ (You freeze to a statue right where you stand and wait how the situation will evolve.)~+ SanEdInnAnt3
@@ -4944,42 +4944,42 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanEdInnAnt3
 ~ (Sandrah has put the hairbrush away and starts to unlace her underware.)~
-== BEDWIN ~ (Even in the dim light granted to you, Edwins increasing arousal is visible and you can hear his respiration get heavier as Sandrah lays the hairbrush away and starts to unlace her undergown.)~
+== Bedwin_ ~ (Even in the dim light granted to you, Edwins increasing arousal is visible and you can hear his respiration get heavier as Sandrah lays the hairbrush away and starts to unlace her undergown.)~
 == BSANDR ~ (You all of a sudden realise the slightly wicked smile on Sandrah's face and a moment later the almost invisible motion of her right hand showing you she must have cast some spell, although you are not yet seeing any effect.)~
-== BEDWIN ~ (Sandrah has moved a bit to one side, and in the light from the room you now see the caravan of little ants that have started to march towards the unaware Edwin. A moment later the first ones have reached his bare foot and continue to crawl up his leg and disappear below his red gown.)~
+== Bedwin_ ~ (Sandrah has moved a bit to one side, and in the light from the room you now see the caravan of little ants that have started to march towards the unaware Edwin. A moment later the first ones have reached his bare foot and continue to crawl up his leg and disappear below his red gown.)~
 == BSANDR ~ (Sandrah turns around to the door now allowing both you and Edwin a  full view of her splendid body.)~
-== BEDWIN ~ (Edwin's jaw sacks down - but a second later the whole situation changes. The armada of ants must have reached his more intimate areas now.)~
+== Bedwin_ ~ (Edwin's jaw sacks down - but a second later the whole situation changes. The armada of ants must have reached his more intimate areas now.)~
 == BSANDR ~ Come, my love, do not let me suffer much longer without you, <CHARNAME>. (You realise that she has known all the time what has been going on in the darkness in front of her room.)~
-== BEDWIN ~ Aaah, what is this? (Edwin has commenced some sort of dance by now. In a really masochistic way he starts to beat on his own body where you guess it must hurt the most...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+== Bedwin_ ~ Aaah, what is this? (Edwin has commenced some sort of dance by now. In a really masochistic way he starts to beat on his own body where you guess it must hurt the most...)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
 IF ~ Global("SanEdLoveBoy","LOCALS",1)~ THEN BSANDR SanEdBetter
 ~ Hold still, <CHARNAME>, a quick healing for you, my love.~
 DO~ SetGlobal("SanEdLoveBoy","LOCALS",2) ForceSpell(Player1,CLERIC_HEAL)RealSetGlobalTimer("CowscrollT","GLOBAL",1500)~
-== BEDWIN ~ It is such a sad sight every time, Sandrah. How can such a lady like you throw herself away at such a simian. Open your eyes and see the possibilities while you are still young and desireable. (Oh, how disireable she is.)~
+== Bedwin_ ~ It is such a sad sight every time, Sandrah. How can such a lady like you throw herself away at such a simian. Open your eyes and see the possibilities while you are still young and desireable. (Oh, how disireable she is.)~
 == BSANDR ~ Are you talking about such possibilities like red clad maroons who see a pretty love slave in any girl they meet?~
-== BEDWIN ~ You are lacking the fantasy, Sandrah, to imagine the pleasures and the lust my love slaves experience. Not even to mention the paradise that opens to a true lady of my heart. (If you only knew how true these words are, sweet persuader.)~
+== Bedwin_ ~ You are lacking the fantasy, Sandrah, to imagine the pleasures and the lust my love slaves experience. Not even to mention the paradise that opens to a true lady of my heart. (If you only knew how true these words are, sweet persuader.)~
 == BSANDR ~ Ha, it is slaves you need indeed, mageling, as the idea of any strong woman more than able to equal you, would make you realise your impotence.~
-== BEDWIN ~ I have the feeling that such a woman would challenge me to even greater achievements, goals that a licking slave could not provide. (The licking from such a woman would let me forget any love slave I ever enjoyed.) ~
+== Bedwin_ ~ I have the feeling that such a woman would challenge me to even greater achievements, goals that a licking slave could not provide. (The licking from such a woman would let me forget any love slave I ever enjoyed.) ~
 == BSANDR ~ Dream on, Edwin. And pleasure yourself with that fat waitress we will meet again when <CHARNAME> leads us back to your favourite inn in the meantime.~
-== BEDWIN ~ I can see through your mask, priestess. It is really you who is the one afraid. Your affairs with men that cannot match your wit and passion for even the shortest moment are really hurting a true connaisseur who must observe them. Such a waste, pearls before the swine...~
+== Bedwin_ ~ I can see through your mask, priestess. It is really you who is the one afraid. Your affairs with men that cannot match your wit and passion for even the shortest moment are really hurting a true connaisseur who must observe them. Such a waste, pearls before the swine...~
 = ~ Wake up. With your power, your abilities, your beauty and grace you are made for a ruler. You should be the companion of a leader, a general, a mighty mage - shortly an Odesseiron!~
 == BSANDR ~ I will gladly look ahead to meet your brother in Thay then one day.~
-== BEDWIN ~ What? Whom? (Arrgh, that wit, that wickedness. I will get you, Sandrah, if not this way then another.)~
+== Bedwin_ ~ What? Whom? (Arrgh, that wit, that wickedness. I will get you, Sandrah, if not this way then another.)~
 EXIT
 
 CHAIN
 IF ~ Global("SanEdLoveBoy","LOCALS",3) ~ THEN BSANDR SanEdAlmDy
 ~ What a terrible whining, Edwin. Will you be dead soon?~
 DO~ SetGlobal("SanEdLoveBoy","LOCALS",4) RealSetGlobalTimer("CowscrollT","GLOBAL",1500)~
-== BEDWIN ~ I may very well be, given the neglection this group's healer lets me suffer.~
+== Bedwin_ ~ I may very well be, given the neglection this group's healer lets me suffer.~
 == BSANDR ~ Are you hinting at that light scratch you received in the last battle. I do not assume you would give any of your slaves even a minute of rest to care for such a wound.~
-== BEDWIN ~ Those creatures are made to suffer such, it does not hurt them much. But the fine intellectual genius is very much impeded by such bodily sufferings.~
+== Bedwin_ ~ Those creatures are made to suffer such, it does not hurt them much. But the fine intellectual genius is very much impeded by such bodily sufferings.~
 == BSANDR ~ I see. That is why you run around in this skirt like a weak little girl and moan when the thorn of a rose pricks your soft skin.~
-== BEDWIN ~ (Oh, my thorny rose, one has to bleed and to suffer to enjoy the beauty and the delight of your presence.) A lady of your finesse should understand that to be a birthright of our class.~
+== Bedwin_ ~ (Oh, my thorny rose, one has to bleed and to suffer to enjoy the beauty and the delight of your presence.) A lady of your finesse should understand that to be a birthright of our class.~
 == BSANDR ~ Our class? Mageling, you want to degrade me to your level? (She angrily throws a minor potion of healing in Edwin's direction.)~
-== BEDWIN ~ (Edwin clumsily attempts to catch the bottle but stumbles and falls, hurting himself worse than before, while the healing potion spills out into the dust.)~ DO ~ TakeItemReplace("Potn54","potn08","Edwin") ApplyDamage(Myself,16,CRUSHING) ApplySpellRES("CVSLEEP","Edwin") ~
+== Bedwin_ ~ (Edwin clumsily attempts to catch the bottle but stumbles and falls, hurting himself worse than before, while the healing potion spills out into the dust.)~ DO ~ TakeItemReplace("Potn54","potn08","Edwin") ApplyDamage(Myself,16,CRUSHING) ApplySpellRES("CVSLEEP","Edwin") ~
 EXIT
 
 
@@ -4987,32 +4987,32 @@ CHAIN
 IF ~Global("Cowscroll","GLOBAL",11)~ THEN BSANDR SanEdRobRag
 ~ That red robe is really the adequate garnment for you.~
 DO ~ SetGlobal("Cowscroll","GLOBAL",12) RealSetGlobalTimer("CowscrollT","GLOBAL",1800)~
-== BEDWIN~ It is indeed of the finest Thayan quality and the embroidering took month of slave's work to perfect it.~
+== Bedwin_~ It is indeed of the finest Thayan quality and the embroidering took month of slave's work to perfect it.~
 == BSANDR~ I was more pointing at the red colour that issues a warning even in the dark wilderness out here.~
-== BEDWIN~ Warning. For a lady of our qualities it offers the promise of sensual experiences hitherto unknown to you.~
+== Bedwin_~ Warning. For a lady of our qualities it offers the promise of sensual experiences hitherto unknown to you.~
 == BSANDR~It reminds me of a Thayan rug we had at home in front of the fireplace. I loved to lie on it in the evening warming my nude body near the fire.~
-== BEDWIN~ (Oh, don't stop now...I see the picture...I feel it almost, oh..) Mylady, my robe could really serve such a purpose at our nightly campfire...~
+== Bedwin_~ (Oh, don't stop now...I see the picture...I feel it almost, oh..) Mylady, my robe could really serve such a purpose at our nightly campfire...~
 == BSANDR~ The bad thing would be that you would either be in it - or you would have to take it off. I am not sure which variant is the more disgusting.~
-== BEDWIN~ Don't try to fool yourself, Sandrah, you are a girl who aches with all her senses for more satisfaction than those clumsy lovers you find at the Sword Coast could ever imagine. Every movement of your perfect body expressed the need to be adored by one who really knows to handle it adequately. (Ha, an art only few masters even in Thay have perfected to my level.)~
+== Bedwin_~ Don't try to fool yourself, Sandrah, you are a girl who aches with all her senses for more satisfaction than those clumsy lovers you find at the Sword Coast could ever imagine. Every movement of your perfect body expressed the need to be adored by one who really knows to handle it adequately. (Ha, an art only few masters even in Thay have perfected to my level.)~
 == BSANDR~ Thank you, Edwin, for reminding me of that. (She leaves Edwin and moves to where you are preparing your place by the campfire.)~
-== BEDWIN~ (What now? Why does she seek the nearness of that half-ape at such a moment?)~
+== Bedwin_~ (What now? Why does she seek the nearness of that half-ape at such a moment?)~
 EXIT
 
 CHAIN
 IF ~ Global("Cowscroll","GLOBAL",13)~ THEN BSANDR SanEdEndl
 ~ The promising red robe, a solemn light in the darkness.~
 DO ~SetGlobal("Cowscroll","GLOBAL",14) RealSetGlobalTimer("CowscrollT","GLOBAL",1800)~
-== BEDWIN~ Don't fear anything, sweetest Sandrah. (No fireball but still a warm welcome?). Are you in a gentle mood tonight, lady of my dreams?~
+== Bedwin_~ Don't fear anything, sweetest Sandrah. (No fireball but still a warm welcome?). Are you in a gentle mood tonight, lady of my dreams?~
 == BSANDR~ Look at that starfilled sky, Edwin, and tell me of anyone who would not yearn for the nearness of a caring person by her side when gazing at the eternal - mh, nothing?~
-== BEDWIN~ Is it nothingness you see in that space or rather eternity?~
+== Bedwin_~ Is it nothingness you see in that space or rather eternity?~
 == BSANDR~ An eternity of possibilities that would end up in nothingness if we cannot make up our minds about chosing one or the other.~
-== BEDWIN~ And you are one of those who is willing to make choices, even on the risk that might be involved in one or the other.~
+== Bedwin_~ And you are one of those who is willing to make choices, even on the risk that might be involved in one or the other.~
 == BSANDR~ The risk is often the extra thrill that makes one possibility more interesting than the safe path.~
-== BEDWIN~ I hear a soul speaking that understands my language, Sandrah. The safe way is for the stupid millions who dwell their lives like grazing cattle. Only the superior minds, the courageous hearts and those not afraid of the uncharted void will be satisfied with new experiences and enduring pleasures.~
+== Bedwin_~ I hear a soul speaking that understands my language, Sandrah. The safe way is for the stupid millions who dwell their lives like grazing cattle. Only the superior minds, the courageous hearts and those not afraid of the uncharted void will be satisfied with new experiences and enduring pleasures.~
 == BSANDR~ And you would sacrifice happily the *grazing millions* to tickle your greedy lust.~
-== BEDWIN~ As you would slaughter a lamb for the meat to satisfy your appetite.~
+== Bedwin_~ As you would slaughter a lamb for the meat to satisfy your appetite.~
 == BSANDR~ Good night, Edwin, there are still millions of possibilities open.~
-== BEDWIN~ What? Oh, yes, one more closed, but still the door is open...(Like that open door you left for me at the inn before that clumsy lover of yours made <PRO_HISHER> premature appearance.)~
+== Bedwin_~ What? Oh, yes, one more closed, but still the door is open...(Like that open door you left for me at the inn before that clumsy lover of yours made <PRO_HISHER> premature appearance.)~
 == BSANDR~ Sleep well, wizard.~ DO ~  ApplySpellRES("CVSLEEP","Edwin") ~
 EXIT
 
@@ -5020,17 +5020,17 @@ CHAIN
 IF ~Global("CowElmFear","LOCALS",1)~ THEN BSANDR cowMeetElm
 ~ Edwin, what is it with you, do you need my help? (Sandrah stretches out her hand to help Edwin to his feet again.)~
 DO ~ SetGlobal("CowElmFear","LOCALS",2)~
-== BEDWIN~ Oh, I swooned a bit it seems. (Uh, and holding your delicate little hand assures the next attack...) Something powerful and fearful is around here.~
+== Bedwin_~ Oh, I swooned a bit it seems. (Uh, and holding your delicate little hand assures the next attack...) Something powerful and fearful is around here.~
 == BSANDR~ Here? This is my hometown, Edwin, my father's house is right over there. I can sense nothing frightening around. My father's protective skills make sure that even the worst dark enemies have no access to this place.~
-== BEDWIN~ Is it THAT house there? There is the source of my trouble, I can sense it clearly! (What a chance on the side, I will hold that lovely hand as long as I can, whatever hell is waiting over there.)~
+== Bedwin_~ Is it THAT house there? There is the source of my trouble, I can sense it clearly! (What a chance on the side, I will hold that lovely hand as long as I can, whatever hell is waiting over there.)~
 == BSANDR~ (Sandrah suddenly starts to laugh heartily.)~
-== BEDWIN~ Does my condition really amuse you so? Even you cannot be that cold hearted, lady. (Not with a warm lovely hand like that.)~
+== Bedwin_~ Does my condition really amuse you so? Even you cannot be that cold hearted, lady. (Not with a warm lovely hand like that.)~
 == BSANDR~ Oh, forgive me, nothing is wrong here. I just have come to realise what the trouble is. Having travelled with you for so long, red wizard, I almost forgot about your true nature.~
-== BEDWIN~ ???~
+== Bedwin_~ ???~
 == BSANDR~ Of course Elminster's house must be the darkest of dungeons from the view of your kind, and my father's protections sense the presence of the red scum as well.~
-== BEDWIN~ Elminster? Your father? (He lets go Sandrah's hand as if it were a poisonous snake.) You are...~
+== Bedwin_~ Elminster? Your father? (He lets go Sandrah's hand as if it were a poisonous snake.) You are...~
 == BSANDR~ You did not know that, Edwin? Everybody here knows that I am Elminster's daughter.~
-== BEDWIN ~ And we will enter the lair of the dragon now?~
+== Bedwin_ ~ And we will enter the lair of the dragon now?~
 END
 ++ ~ Sandrah, will it be safe for Edwin to enter your father's house? He is a companion of our party like everyone else here.~ + cowMeetElm2
 ++ ~ Sandrah, I demand of you to guarantee Edwin's safety in your fasther's house. He is my chosen companion and even Elminster has to accept that, do you hear me.~ + cowMeetElm3
@@ -5049,15 +5049,15 @@ CHAIN
 IF ~Global("CowElmFear","LOCALS",3)~ THEN BSANDR cowMeetElm4
 ~ Yes, Edwin?~
 DO ~ SetGlobal("CowElmFear","LOCALS",4)~
-== BEDWIN ~ I have waited for a quiet moment. my sweetest lady Sandrah, to thank you for what you did on my behalf on our visit to Waterdeep. (Oh, I have not washed my hand that held your fingers there, fragile and fine but yet powerful in their ability to cast spells even I envy you for.)~
+== Bedwin_ ~ I have waited for a quiet moment. my sweetest lady Sandrah, to thank you for what you did on my behalf on our visit to Waterdeep. (Oh, I have not washed my hand that held your fingers there, fragile and fine but yet powerful in their ability to cast spells even I envy you for.)~
 == BSANDR~ You are a companion of <CHARNAME> and thus aiming with us for this party's benefit, or at least I assume the last until I have evidence against you.~
-== BEDWIN ~ You are well aware that a meeting of my kin with the mightiest of the Harpers and the prime disciple of Mystra nearly always ends deadly - for the red wizard. It was your shielding hand that stayed Elminster's wrath. (Oh that hand that fills my dreams at night, may I take the chance now to hold it again?).~
+== Bedwin_ ~ You are well aware that a meeting of my kin with the mightiest of the Harpers and the prime disciple of Mystra nearly always ends deadly - for the red wizard. It was your shielding hand that stayed Elminster's wrath. (Oh that hand that fills my dreams at night, may I take the chance now to hold it again?).~
 == BSANDR~ I dearly wish I made no mistake. Should your cunning mind lead you to any betrayal against <CHARNAME> you will find my wrath matching that of my father with ease.~
-== BEDWIN ~ (Edwin takes Sandrah's hand and attempts to kiss her fingers in a grand act.) I swear...~
+== Bedwin_ ~ (Edwin takes Sandrah's hand and attempts to kiss her fingers in a grand act.) I swear...~
 == BSANDR~ (Smack) Swear nothing, mageling, you will be judged by your deeds not by your slimy sloberring my body.~
-== BEDWIN ~ (Edwin touches his slapped cheek.) Another part not to be washed.~
+== Bedwin_ ~ (Edwin touches his slapped cheek.) Another part not to be washed.~
 == BSANDR~ What?~
-== BEDWIN ~ You will find my acts be completely adequate to your demands, mylady. (Or at least what will become visible for you.) Your example is always an encouragement for me.~
+== Bedwin_ ~ You will find my acts be completely adequate to your demands, mylady. (Or at least what will become visible for you.) Your example is always an encouragement for me.~
 == BSANDR~ Oh, my. Are there really women on Toril who think a Thayan lover would be the pinnacle of any girl's wishes? Why do they not come quickly to relief me of this presence?~ DO ~ RestParty()~
 EXIT
 
@@ -5065,32 +5065,32 @@ CHAIN
 IF ~ Global("Cowscroll","GLOBAL",15)~ THEN BSANDR SanEdArmCo
 ~ I take your silent starring at me for a compliment, Edwin.~
 DO ~ SetGlobal("Cowscroll","GLOBAL",16)~
-== BEDWIN ~ What? I wasn't...~
+== Bedwin_ ~ What? I wasn't...~
 == BSANDR ~ You were silently adoring me for the last hundred heartbeats. It appears strange to me, as I imagine that this is normally the way you like your women to react to you.~
-== BEDWIN ~ It is indeed...(Get your senses together mage, the goddess is really talking to you.) I was pensing whether it would be better to be the silent connaisseur savouring your beauty or the bard singing your praise.~
+== Bedwin_ ~ It is indeed...(Get your senses together mage, the goddess is really talking to you.) I was pensing whether it would be better to be the silent connaisseur savouring your beauty or the bard singing your praise.~
 == BSANDR~ I am glad you chose the first option. In my wildest fantasy I cannot imagine you singing.~
-== BEDWIN~ (In your wildest fantasies I would prefer another role myself.)~
+== Bedwin_~ (In your wildest fantasies I would prefer another role myself.)~
 == BSANDR~ Is this the famous Thayan charm that makes women all over Faerun shiver when they only think of it, the way the imagination of a night with a drow lady would make you faint?~
-== BEDWIN~ You are the only woman I have ever encountered that is able to keep her feminine charm (should I have said sex appeal) even in a heavy armour.~
+== Bedwin_~ You are the only woman I have ever encountered that is able to keep her feminine charm (should I have said sex appeal) even in a heavy armour.~
 == BSANDR~ That is really a charming compliment, Edwin. And I even have the proof that it must be the truth.~
-== BEDWIN ~ Of course it is! (Sometimes it is just not necessary to lie when the facts are so overwhelming.)~
+== Bedwin_ ~ Of course it is! (Sometimes it is just not necessary to lie when the facts are so overwhelming.)~
 == BSANDR IF ~ GlobalGT("SanBooTlk","GLOBAL",1)~THEN ~ Sure. Minsc was saying exactly the same.~
 == BSANDR IF ~ GlobalLT("SanBooTlk","GLOBAL",1)~THEN ~ Sure. That vegetable merchant in Nashkel was saying exactly the same.~
-== BEDWIN IF ~ GlobalGT("SanBooTlk","GLOBAL",1)~THEN  ~ WHAT! (His rat must have told him, how could such a simian come to such an observation by himself.) I am...~
-== BEDWIN IF ~ GlobalLT("SanBooTlk","GLOBAL",1)~THEN ~ WHAT! (Is that the level of courtesy she appoints to me? Same as that smelly simian?) I am...~
+== Bedwin_ IF ~ GlobalGT("SanBooTlk","GLOBAL",1)~THEN  ~ WHAT! (His rat must have told him, how could such a simian come to such an observation by himself.) I am...~
+== Bedwin_ IF ~ GlobalLT("SanBooTlk","GLOBAL",1)~THEN ~ WHAT! (Is that the level of courtesy she appoints to me? Same as that smelly simian?) I am...~
 == BSANDR ~ Speechless?~
-== BEDWIN ~...~
+== Bedwin_ ~...~
 EXIT
 
 CHAIN
 IF ~ Global("Cowscroll","GLOBAL",17)~ THEN BSANDR SanEdCoomAsp
 ~ Yes?~
 DO ~ SetGlobal("Cowscroll","GLOBAL",18) RealSetGlobalTimer("CowscrollT","GLOBAL",1800)~
-== BEDWIN~ Sandrah, don't you feel it yourself, we are the only suitable people in this hopeless assembly of simians. Do you not feel the urge for some civilized conversation with one who would exceptionally be able to understand you.~
+== Bedwin_~ Sandrah, don't you feel it yourself, we are the only suitable people in this hopeless assembly of simians. Do you not feel the urge for some civilized conversation with one who would exceptionally be able to understand you.~
 == BSANDR~ And what should be the topic for our clash of bonmots and our firework of intelligent exchange, my red-robed genius?~
-== BEDWIN~ There are so many aspects of you, mylady, that fascinate me.~
+== Bedwin_~ There are so many aspects of you, mylady, that fascinate me.~
 == BSANDR~ Let us look for some communalities then, shall we? ~
-== BEDWIN~ Fine~
+== Bedwin_~ Fine~
 == BSANDR~ So let us take the primary aspects of your personality and see how they match mine. ~
 = ~ Cunning? No match.~
 = ~ Egoism? No match.~
@@ -5103,30 +5103,30 @@ DO ~ SetGlobal("Cowscroll","GLOBAL",18) RealSetGlobalTimer("CowscrollT","GLOBAL"
 =~ A Warm Heart? No match. ~
 = ~ An insurmountable dislike for each other? Bingo!~
 =~ So we have by ways of our common intelligent analysis really found an interesting topic for our conversation. ~
-== BEDWIN~ But there must be...~
+== Bedwin_~ But there must be...~
 == BSANDR~ Thank you so much, Edwin, you were right. That was really a diversion from the daily ennui we have to face. We should urgently do that again.~
-== BEDWIN~ (I have to admit her analysis was almost correct - except...why did she deny my intelligence?)~ DO~RestParty()~
+== Bedwin_~ (I have to admit her analysis was almost correct - except...why did she deny my intelligence?)~ DO~RestParty()~
 EXIT
 
 CHAIN
 IF ~ Global("Cowscroll","GLOBAL",19)~ THEN BSANDR SanEdPenny
 ~ Edwin?~
 DO~ SetGlobal("Cowscroll","GLOBAL",20)RealSetGlobalTimer("CowscrollT","GLOBAL",1800)~
-== BEDWIN~ A penny for your thoughts, Sandrah?~
+== Bedwin_~ A penny for your thoughts, Sandrah?~
 == BSANDR~ Do you have one?~
-== BEDWIN~ What?~
+== Bedwin_~ What?~
 == BSANDR~ A penny.~
-== BEDWIN~ Eh...sure...~
+== Bedwin_~ Eh...sure...~
 == BSANDR~ Sure, you must have. Now I know the reason why that little beggar girl we just passed started crying.~
-== BEDWIN~ I would never do such a...- I would never be caught doing such a thing.~
+== Bedwin_~ I would never do such a...- I would never be caught doing such a thing.~
 == BSANDR~ Anyway, so without having ever done a single bit of honest work in your life you somehow got into possession of a penny.~
-== BEDWIN~ Honestly, I would say I'm a millionairy at home in Thay.~
+== Bedwin_~ Honestly, I would say I'm a millionairy at home in Thay.~
 == BSANDR~ My thoughts were drifting to the warm scented bath I envisioned for tonight. I had just removed my boots...~
-== BEDWIN~ (Oh those wonderfully crafted tiny artworks...)~
+== Bedwin_~ (Oh those wonderfully crafted tiny artworks...)~
 == BSANDR~ ...and started dipping my toes into the water to test the temperature...~
-== BEDWIN~ ..mmh...that wonderful middle toe graced by the silver engraved ring that I dreamed of kissing...~
+== Bedwin_~ ..mmh...that wonderful middle toe graced by the silver engraved ring that I dreamed of kissing...~
 == BSANDR~ What are you mumbling there, Edwin?~
-== BEDWIN~ Eeh, nothing, nothing, please continue.~
+== Bedwin_~ Eeh, nothing, nothing, please continue.~
 == BSANDR~ Oh, that was already all for the one penny you wanted to invest on me.~
 EXIT
 
@@ -5134,11 +5134,11 @@ CHAIN
 IF~ Global("SanEdWizCandlAtt","LOCALS",1) ~ THEN BSANDR CandlwizRed
 ~ Whereever they appear it is on some cunning wicked purpose.~
 DO ~ SetGlobal("SanEdWizCandlAtt","LOCALS",2) ~
-== BEDWIN~ Don't you see, girl, never become the enemy of the Red Wizards, they get you for sure, even if you hide in a remote place.~
+== Bedwin_~ Don't you see, girl, never become the enemy of the Red Wizards, they get you for sure, even if you hide in a remote place.~
 == BSANDR~ And then they attack me with such childish attempts like this fool. (Laughs) I am truely scared.~
-== BEDWIN~ (Whoever that wimp was, he did not do honour to the red robe.) They probably just send a little apprentice out after that foolish old man. Why overpower the attack. They could not know that their opponent would be someone like you. (Terrible fighter girl, still I would get the upper hand soon in any battle between the sheets...)~
+== Bedwin_~ (Whoever that wimp was, he did not do honour to the red robe.) They probably just send a little apprentice out after that foolish old man. Why overpower the attack. They could not know that their opponent would be someone like you. (Terrible fighter girl, still I would get the upper hand soon in any battle between the sheets...)~
 == BSANDR~ I am still young, I can wait. Wait for the one red robe who does not attack without purpose - and for the one whose skills would match his ambitions. You, Edwin, are the only one I ever spoke a complete sentence with, as your collegues all laid dead at my feet within seconds.~
-== BEDWIN~  Uuuh, the little poodle pulls on <CHARNAME>'s leash again, haha. Your threats are wasted on me. (Let us wrestle in my bedroll this eve, you will see what power really means.)~
+== Bedwin_~  Uuuh, the little poodle pulls on <CHARNAME>'s leash again, haha. Your threats are wasted on me. (Let us wrestle in my bedroll this eve, you will see what power really means.)~
 == BSANDR~ Right, wasted just like the attempts to exchange any intelligent word with you.~
 EXIT
 
@@ -5146,15 +5146,15 @@ CHAIN
 IF~ Global("SanEdCyr","LOCALS",1)~ THEN BSANDR SanEdCyrR
 ~ Edwin, you look as if you have found the spell to rule all of Toril, your happiness is always a bad sign for others.~
 DO~ SetGlobal("SanEdCyr","LOCALS",2)~
-== BEDWIN~ (The spell to rule you, that's what I am after.) Sandrah, you are already forgiven, I have discovered the reason for your wicked ways on me. Perfect.~
+== Bedwin_~ (The spell to rule you, that's what I am after.) Sandrah, you are already forgiven, I have discovered the reason for your wicked ways on me. Perfect.~
 == BSANDR~ Only the perverted brain of a red mage can find happiness in something described as *wickedness*.~
-== BEDWIN~ If it is the revelation of one of the greatest gods of Toril than it is perfectly acceptable. It is your own grandfather who speaks out of you. (My wonderful Demi-Goddess, what more reason to adore you!)~
+== Bedwin_~ If it is the revelation of one of the greatest gods of Toril than it is perfectly acceptable. It is your own grandfather who speaks out of you. (My wonderful Demi-Goddess, what more reason to adore you!)~
 == BSANDR~ Hm. That had to come. Yes, it is true that through my father and his ancestry both in Midnight and in Cyric, I may be mistaken for a grandchild of the Prince of Lies.~
-== BEDWIN~ Mistaken? You surely are, your father was breeded by Cyric, the great god, and his mistress Mystra. You know well how we Thayans worship Cyric.~
+== Bedwin_~ Mistaken? You surely are, your father was breeded by Cyric, the great god, and his mistress Mystra. You know well how we Thayans worship Cyric.~
 == BSANDR~ And what does have to do with us, Edwin?~
-== BEDWIN~ Can you not see the sign set for us, as Cyric and Mystra conquered during the Times of Trouble hand in hand, same way it is foreseen for her grandchild to do the same with a devotee of Cyric.~
+== Bedwin_~ Can you not see the sign set for us, as Cyric and Mystra conquered during the Time of Troubles hand in hand, same way it is foreseen for her grandchild to do the same with a devotee of Cyric.~
 == BSANDR~ Only there is a flaw in your reasoning, Edwin. It were not the God you follow and the Goddess of Magic who seeded my father and are therefore my grandparents - it were the adventuress Midnight and a human thief name of Cyric that are his parents. With both ascending to godhood later, they have lost as well the connection to their former life on the material plane. It is therefore an error to attach the current God of Lies and Murder to my heritage.~
-== BEDWIN~ I love it how you wiggle and struggle, fighting makes you utmost attractive, Sandrah. You are most beautiful when you are angry. (Only one has to stay outside of your hammer's range.) You may try to construct your own reasonings to avoid the obvious but the impact of your heritage will sooner or later become apparent, granddaughter of Cyric!~
+== Bedwin_~ I love it how you wiggle and struggle, fighting makes you utmost attractive, Sandrah. You are most beautiful when you are angry. (Only one has to stay outside of your hammer's range.) You may try to construct your own reasonings to avoid the obvious but the impact of your heritage will sooner or later become apparent, granddaughter of Cyric!~
 == BSANDR~ If your lore is so profound, Edwin, it has surely not slipped your attention that both, Cyric and Midnight, were masters of their own fate and even stood up against the gods themselves, assisting Ao to kill the false ones. Reflect about this aspect of my heritage as well, mageling.~
 EXIT
 
@@ -5162,11 +5162,11 @@ CHAIN
 IF ~Global("sanredatt","GLOBAL",3)~THEN BSANDR SanEdEastWood
 ~Was I mistaken in my defending you against the disciples of the Morning Lord, Edwin?~
 DO~SetGlobal("sanredatt","GLOBAL",4)~
-== BEDWIN~You were not, not at all. (You seldom are erring, unless it comes to your choice of males.) I know these wizards, yes, I admit, but I have nothing to do with that ritual. (I would never do something so amateurish as that.)~
+== Bedwin_~You were not, not at all. (You seldom are erring, unless it comes to your choice of males.) I know these wizards, yes, I admit, but I have nothing to do with that ritual. (I would never do something so amateurish as that.)~
 == BSANDR~I believe you - this was too clumsy for your skills even.~
-== BEDWIN~Thank you, in a way. It seems Denak and his goons were bored a bit while waiting for my success with that Rashemi witch and were using the meantime for their little hobby.~
+== Bedwin_~Thank you, in a way. It seems Denak and his goons were bored a bit while waiting for my success with that Rashemi witch and were using the meantime for their little hobby.~
 == BSANDR~Hm, maybe. In Thay nobody seems to trust the other much as this Zulkir Nevron sent some overseers after you. The fact that you were not on THEIR side of this Thayan intrigue does not yet mean you are on OUR side. ~
-== BEDWIN~(Good enough to be by your side, sweetheart, so things can evolve further between us...)~EXIT
+== Bedwin_~(Good enough to be by your side, sweetheart, so things can evolve further between us...)~EXIT
 
 // Branwen Joined
 
@@ -6326,7 +6326,7 @@ DO ~ SetGlobal("Santlove","GLOBAL",8) ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ This quiet moment was nothing but an illusion, friends. Doom is waiting on that doorstep yonder already. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ I cannot figure one of the traps in this damned house. So many good things and not one *souvenir* to prove I was really here. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis a place filled with knowledge and wisdom in ev'ry corner. The old scrolls do not lie about your father, Sandrah.~
-==BEDWIN  IF~ InParty("Edwin") ~ THEN ~ (The sooner we leave this cage the better...how can such a place be the home of a lovebird like her?)~
+==Bedwin_  IF~ InParty("Edwin") ~ THEN ~ (The sooner we leave this cage the better...how can such a place be the home of a lovebird like her?)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~I can see that my goddess gave thee a taste of her pleasures (giggles and blushes lightly).~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ I despise the perversion of human cities. Why can people not take the example of this house to see how a symbiosis with nature can be achieved?~
 == Bjenli IF~InParty("CVJenlig")~THEN~ Jen'lig senses power that will be helpful for her mission. Manlings here are more than they show open.~
@@ -6363,7 +6363,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ HA, before your whining never ends I will carry a sack myself to the glibbering priests. (Her eyes betray Shar-Teel, her harsh words are nothing but a masquerade. It is clear that she fully agrees with Imoen's intention.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ If always blood and death could finally lead to an acceptable end, Imoen, Toril could be a much better place for all. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ The deeds of Imoen the Magnificent go on and on. A new chapter will be written today in her book. ~
-== BEDWIN IF ~InParty("Edwin") ~THEN ~ (Uh, that pink incarnation of nitwit! The gold, the power, yes, give it to a horde of babbling brats...) My leader, you will surely be wiser than to do such.~
+== Bedwin_ IF ~InParty("Edwin") ~THEN ~ (Uh, that pink incarnation of nitwit! The gold, the power, yes, give it to a horde of babbling brats...) My leader, you will surely be wiser than to do such.~
 == BMinsc_ IF ~InParty("Minsc") ~THEN ~ Boo says he loves the pink little lady. You don't need to be strong as Minsc to do heroic deeds.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
@@ -6398,7 +6398,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I should never have gone out to sea, I knew it. So here is the end of our journey. No, by Shar. We find a way, we always do.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! You foolish <PRO_RACE> never listened to me. The sea is not a friend to any dwarf. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Lathander will not forsake us, he will see our pure hearts in need.~
-== BEDWIN  IF~ InParty("Edwin") ~ THEN ~ Imbeciles! Have you taken me to this island without any return plans...(But my little clever heroine will surely find a way out of here...if she would only find a way to my bedroll as well...). What are you waiting on, <PRO_RACE>, do something!~
+== Bedwin_  IF~ InParty("Edwin") ~ THEN ~ Imbeciles! Have you taken me to this island without any return plans...(But my little clever heroine will surely find a way out of here...if she would only find a way to my bedroll as well...). What are you waiting on, <PRO_RACE>, do something!~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, what a shame. I come from a seafaring tribe but I admit, I cannot handle a ship like that. ~
 ==Bskie IF~ InParty("Skie") ~ THEN ~I...just...want...to...leave this terrible place, PLEASE!~
 ==Bjenli IF ~ InParty("CVJenlig") ~ THEN ~(Hiss) Jen'lig knowledge of githyanki spelljammer not helpful here. Water not concept of Astral Plane.~
@@ -6767,7 +6767,7 @@ DO~ SetGlobal("X#MinscBoo","GLOBAL",5)~
 
 // Drizzt
 CHAIN
-IF WEIGHT #-3~InParty("CVSandr") OR(2) GlobalGT("MeetDrizztInBeard","Global",0) Global("DrDuMeetUlg","GLOBAL",1)~THEN Drizzt JoinSan
+IF WEIGHT #-3~InParty("CVSandr") OR(2) GlobalGT("F_MeetDrizztInBeard","Global",0) Global("DrDuMeetUlg","GLOBAL",1)~THEN Drizzt JoinSan
 ~Well met. Are you prepared, then?~
 ==CVSandrJ~Oh, yes...sorry, <CHARNAME>, of course this is your decision...~
 ==CVJenliJ IF~InParty("CVSandr")InParty("CVJenlig")~THEN~(Hiss) Good to fight with Sandrah's teacher - if apprentice that good, says much about master.~
@@ -6829,11 +6829,11 @@ IF ~ Global("SanDrizzt","GLOBAL",10)~ THEN BSANDR SanDriMid
 DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1600) ~
 == F_DRIZTJ~ (Again you observe how Drizzt's face lightens up as he willingly sits down beside Sandrah and takes her hand.) I imagine my knowledge of Midnight interests you some, my dear.~
 == BSANDR~ You are the only one I know who can give me some insight into her more private aspects - I mean except my father, but his perspective is that of a son who rarely had his mother at home.~
-== F_DRIZTJ~ She was independent and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Times of Trouble to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
+== F_DRIZTJ~ She was independent and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Time of Troubles to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
 =~ Love meant a lot for her, love for her fellowbeings, love for our animal companions, (smiles) and of course the physical aspects of love. Before she finally chose her companion Cyric, she had a number of lovers, which was easy for her with her charm and her beauty.~
 == BSANDR~ And that included you, Drizzt, regardless of your race or your reputation.~
 == F_DRIZTJ~ Yes, and we both enjoyed it while it lasted and never forgot what we had. Although it was clear for both of us that it was nothing to endure as we both were too restless to move on and to move things on Toril.~
-== BSANDR~ She had a practical view on life and she never neglected the easier and joyful side even in the Times of Trouble.~
+== BSANDR~ She had a practical view on life and she never neglected the easier and joyful side even in the Time of Troubles.~
 == F_DRIZTJ~ In all the long wandering years since then I have only once again met a woman like her...~
 == BSANDR~ You did, you lucky man?~
 == F_DRIZTJ~ Lucky indeed, Sandrah. (He leans over to her and kisses her.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
@@ -7163,11 +7163,11 @@ CHAIN
 IF~~ THEN  BSANDR SanHealEde
 ~ They are already trained well by a *real* man - trained to use a hammer in the most efficient way on anyone who dares to raise my anger.~
 DO~ SetGlobal("SanHealEde","GLOBAL",6)~
-== BEDWIN~ That training has been excellent, I have to admit that. I think a pupil talented to learn the one art may be suited as well to learn a far more subtle art as easily. (Oh, just to think of those fingers stimulating my very skin...) Know that I have quite a reputation as a teacher in the erotic arts, my beauty.~
+== Bedwin_~ That training has been excellent, I have to admit that. I think a pupil talented to learn the one art may be suited as well to learn a far more subtle art as easily. (Oh, just to think of those fingers stimulating my very skin...) Know that I have quite a reputation as a teacher in the erotic arts, my beauty.~
 == BSANDR~ Interesting, Edwin. So you are a masochist at heart.~
-== BEDWIN~ Huh?~
+== Bedwin_~ Huh?~
 == BSANDR~ Any treatment of yours other than for healing will only mean one thing for you, mageling. Pain.~
-== BEDWIN~ If you only knew what pleasures you cast aside so foolishly. (Oh, she gets me so hot with her resistance...I will make you crawl and beg for my kisses, little bitch.)~
+== Bedwin_~ If you only knew what pleasures you cast aside so foolishly. (Oh, she gets me so hot with her resistance...I will make you crawl and beg for my kisses, little bitch.)~
 EXIT
 
 //Heal Xzar
@@ -7314,7 +7314,7 @@ IF~~ THEN EXTERN BSANDR SanHealXan
 END
 END
 
-APPEND BEDWIN
+APPEND Bedwin_
 IF WEIGHT #-9 ~ Global("SanHealEde","GLOBAL",5)~ THEN BEGIN SanHealede
 SAY ~ These fragile healing hands could do so much to a man if trained in the right manner.~
 IF~~ THEN EXTERN BSANDR SanHealEde

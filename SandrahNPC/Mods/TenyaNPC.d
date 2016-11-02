@@ -20,3 +20,13 @@ DO~SetGlobal("Umbowl","GLOBAL",6)~
 ==BSandr~I have no sympathy for the water queen and her reign of terror over those who make a living at sea, but there is an open foe who is even worse - and that is Talos. ~
 ==B2#TenyJ~It's good to know that I don't have to thank you in any way. Whatever your reasons were, I owe you nothing.~
 ==BSandr~I did never expect more from the water bitch.~EXIT
+
+CHAIN
+IF~Global("Umbowl","GLOBAL",7)~THEN B2#TenyJ Sandid2
+~You are either very brave or very foolish to make your enemies among the gods.~
+DO~SetGlobal("Umbowl","GLOBAL",8)~
+==BSandr~If it were different, you may not have been given the chance to travel with us.~
+==B2#TenyJ~You will wait in vain for me to thank you for your help against those fishermen of Talos way back then.~
+==BSandr~Neither that event nor the present one have anything to do with you, Tenya. You are not as important as you think - I am a priestess of a goddess who is easily at odds with the evil representatives of the pantheon.~
+==B2#TenyJ~I observe you, Sandrah. One can learn a lot from you. One can learn from other people's success as well as from their failure.~
+==BSandr~This is a good attitude - at least one thing we can agree on.~EXIT

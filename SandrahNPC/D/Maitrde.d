@@ -29,7 +29,7 @@ IF ~~ THEN  maitrde WDresto2
 == MAITRDE  IF~ InParty("k-rose") ~ THEN~ Are you recommended by any of the opera houses along the Swordcoast? Mpf, I doubt it.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~A place in the spirit of Sune, at least at first glance.~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, will this discussion last forever before I can squeeze my teeth into a large hunk of cheese and bread. ~
-== BEDWIN IF~ InParty("Edwin") ~ THEN ~ (That damned stubborn cleric girl really has it all, the ways of a woman of world and taste and wealth. I have to make her my pet, damn it, she needs to be under my thumb soon.)~
+== BEDWIN_ IF~ InParty("Edwin") ~ THEN ~ (That damned stubborn cleric girl really has it all, the ways of a woman of world and taste and wealth. I have to make her my pet, damn it, she needs to be under my thumb soon.)~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Sir, with our lifestyle this may be very well our last meal ever. Even if we do not live long enough to digest it, you may start to serve now.~
 ==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Meat!~
 ==BNeera_ IF~InParty("Neera")~THEN ~A decent meal, I already gave up hope I'd ever get one.~
