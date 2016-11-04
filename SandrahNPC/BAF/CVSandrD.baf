@@ -343,7 +343,8 @@ END
 IF
 InParty("Edwin")
 Global("Cowscroll","GLOBAL",4)
-AreaType(FOREST)
+AreaType(OUTDOOR)
+!AreaType(CITY)
 See("Edwin")
 !See([ENEMY])
 !StateCheck("Edwin",CD_STATE_NOTVALID)

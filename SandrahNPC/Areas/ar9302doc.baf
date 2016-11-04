@@ -7,3 +7,15 @@ IncrementGlobal("SanDoctor","GLOBAL",1)
 ActionOverride("CVSandr",AddSpecialAbility("SpHeal2"))
 SetGlobal("DocWasHere","BG3402",1)
 END
+
+IF
+Global("wyvernp","GLOBAL",0)
+OR(2)
+GlobalGT("Homesail","Global",8)
+GlobalGT("Chapter","Global",5)
+!PartyHasItem("Misc52")
+!InParty("Coran")
+THEN
+RESPONSE #100
+SetGlobal("wyvernp","GLOBAL",1)
+END
