@@ -1496,9 +1496,9 @@ IF~~THEN REPLY~ You are right, we will not let our continuous efforts to keep th
 IF~~THEN REPLY~ No, we can't keep on saving these mines every tenday. We must take care of our own mission now.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1) SetGlobal("SanDrow","BG5403",3)~EXIT
 END
 
-IF~Global("SanQuiNash","BG5404",4)~ THEN BEGIN MetQidrNah1
+IF~OR(2) Global("SanQuiNash","BG5404",4) Global("SanQuiNash","BG1903",4)~ THEN BEGIN MetQidrNah1
 SAY~ So they really exist, the followers of the Dark Maiden, Eilistraee. And they have really achieved to live in peace across the races.~
-IF~~THEN REPLY~ A fascinating woman, very unlike any of the drow we have met, including refugees on the surface. I am afraid my own knowledge on that specific subject is not very good.~ DO~SetGlobal("SanQuiNash","BG5404",5)~ GOTO MetQidrNah2
+IF~~THEN REPLY~ A fascinating woman, very unlike any of the drow we have met, including refugees on the surface. I am afraid my own knowledge on that specific subject is not very good.~ DO~SetGlobal("SanQuiNash","BG5404",5) SetGlobal("SanQuiNash","BG1903",5)~ GOTO MetQidrNah2
 END
 
 IF~~THEN BEGIN MetQidrNah2
@@ -1506,7 +1506,8 @@ SAY~ The Dark Lady herself is a child of Corellon Larethian and Araushnee - late
 =~They usually live in forests or abandoned ruins which become both their shelter and temples. Eilistraee and Mystra are often worshipped together and lore has it that a temple exists deep below Waterdeep's Undermountain.~
 IF~~THEN REPLY~This priestess somehow appeared to me as a dark counterpart to you, my beloved.~GOTO
 MetQidrNah3
-IF~~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a High Priestess of Lolth and her heavy forces.~ GOTO MetQidrNah4
+IF~AreaCheck("BG5404")~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a High Priestess of Lolth and her heavy forces.~ GOTO MetQidrNah4
+IF~AreaCheck("BG1903")~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a Bregan D'aerthe activity.~ GOTO MetQidrNah4
 END
 
 IF~~THEN BEGIN MetQidrNah3

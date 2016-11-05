@@ -8198,6 +8198,9 @@ COPY ~SandrahNPC/oasis/d0amtgen.wav~ ~override~
 COPY ~SandrahNPC/oasis/d0oasis9.spl~ ~override~
 END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~jc_drw06.cre~ THEN BEGIN
+EXTEND_TOP ~bg1903.bcs~ ~SandrahNPC\areas/ar8703quidr.baf~
+END
 
 COPY_EXISTING ~BDBanter.2da~ ~override~
 REPLACE_TEXTUALLY ~SAFANA       BDSAFANB~ ~SAFANA       BSAFAN    ~

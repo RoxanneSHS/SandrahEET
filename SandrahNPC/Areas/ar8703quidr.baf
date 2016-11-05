@@ -1,0 +1,42 @@
+IF
+InParty("CVSandr")
+Dead("DSShar")
+GlobalLT("Chapter","Global",7)
+Global("SanQuiNash","BG1903",0)
+THEN
+RESPONSE #100
+CreateCreature("CVQidrn",[506.272],11)
+CreateCreature("CVUmdrom",[433.238],12)
+CreateCreature("CVUMelff",[457.320],10)
+SetGlobal("SanQuiNash","BG1903",1)
+END
+
+IF
+Global("SanQuiNash","BG1903",2)
+THEN
+RESPONSE #100
+ActionOverride("CVQidrn",EscapeArea())
+ActionOverride("CVUmdrom",EscapeArea())
+ActionOverride("CVUMelff",EscapeArea())
+SetGlobal("SanQuiNash","BG1903",3)
+END
+
+IF
+Global("SanQuiNash","BG1903",3)
+!InMyArea("CVQidrn")
+CombatCounter(0)
+Delay(6)
+THEN
+RESPONSE #100  
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
+SetGlobal("SanQuiNash","BG1903",4)
+END
+
+IF
+Global("SanQuiNash","BG1903",4)
+Delay(6)
+THEN
+RESPONSE #100
+SetGlobal("SanQuiNash","BG1903",5)
+DisplayStringWait(Player1,@706)
+END

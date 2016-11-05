@@ -8,9 +8,13 @@ Continue()
 END
 
 IF
+OR(2)
+AreaCheck("BG1903")
 AreaCheck("BG5404")
 See(Player1)
+OR(2)
 Global("SanQuiNash","BG5404",1)
+Global("SanQuiNash","BG1903",1)
 THEN
 RESPONSE #100
 StartDialogueNoSet([PC])
