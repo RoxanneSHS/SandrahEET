@@ -2108,8 +2108,8 @@ DO ~ SetGlobal("SanImoEd","LOCALS",2)~
 == Bimoen ~ Ya think mages like me cant see when other mages are miscasting their spells in a lovesick manner, hey I's never dumb, sweetheart.~
 == BSANDR ~ (Laughs) No, Imoen, you cannot mean that in earnest. That red robed bastard and me? Let me get out my *bestest* cure for you immediately.~
 == Bimoen ~ Haha yourself, that's exactly the reaction one shows when caught with her fingers in the pudding. So no more fooling Imoen, the secret agent number one. You can only save your hide by confessing the hole truth now. ~
-== BSANDR ~ Fine. Here is the truth and nothing but the truth. If all the demons from hell escape and slaughter mankind, and Edwin and me are the last two remaining humans on Toril that could make our race survive, I would not consider for a second to let him come near me.~
-== Bimoen ~ Huuh. That sound like sooo much *no* that it is almost *yes* again.~
+== BSANDR ~ Fine. Here is the truth and nothing but the truth. If all the demons from hell escape and slaughter mankind, and Edwin and me are the last two remaining humans on Toril who could make our race survive, I would not consider for a second to let him come near me.~
+== Bimoen ~ Huuh. This sounds like sooo much *no* that it's almost *yes* again.~
 == BSANDR ~ Imoen, that is the weirdest interpretation I have ever heard.~
 == Bimoen ~ Besta friend, just wait and see. Seems like I know you better than yourself. You cant in no way imagine it, so it's almost sure gonna happen - that's what life has taught me all the time.~
 == BSANDR ~ And I tell you, never in a million years!~
