@@ -14,14 +14,14 @@ INTERJECT_COPY_TRANS NTDRAAGI 0 SanBlackHand
 END
 
 INTERJECT_COPY_TRANS  NTGGHOTA 0 SanHasGSw
-== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ We have the sword, but you know that your journey is over. It is for *her* that follows you.~
+== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ We have the sword, but you know that your journey is over. It is for *her* who follows you.~
 == NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ Then it is true? My pleas to the gods that have left me have been heard. There will be one to follow where I have been betrayed. Light! What do you know?~
-== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ Our hope was that you could tell us. The orcs that have betrayed you in your final battle seem to fear a *godchild* to follow you. She will claim the sword.~
+== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ Our hope was that you could tell us. The orcs who have betrayed you in your final battle seem to fear a *godchild* to follow you. She will claim the sword.~
 == NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ Vennegrat and the traitors will be punished, good news. One will finally unite the orcs to defend their lands against the hungry mob from the south.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ So you were rather a defender than an aggressor, Ghotal?~
 == NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ I am sure your elders taught you otherwise, ha. History is written by the winners in their favour, such is our fate. But you have given me the hope today that all will be corrected.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ And you know who *she* is?~
-== NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ How can I know. I am cursed to this place since the day the battle was lost. I know nothing and I have but worthless sons that hopefully have not survived the battle to spawn even more worthless orcs. It soothes my soul in this final hour that *she* exists.~
+== NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ How can I know. I am cursed to this place since the day the battle was lost. I know nothing and I have but worthless sons who hopefully have not survived the battle to spawn even more worthless orcs. It soothes my soul in this final hour that *she* exists.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ Rest in peace, Ghotal.~
 == NTGGHOTA IF ~ InParty("CVSandr") ~THEN ~ I will after you have laid me to rest. You might be capable of that as you were able to come here at all.~
 END
