@@ -4703,7 +4703,7 @@ END NOOBER 23
 //Kaishas
 
 INTERJECT KAISH2 12   SanIntKai
-== CVSandrJ IF ~ InParty("CVSandr") CheckStatLT(Player1,14,INT) CheckStatLT(Player1,14,WIS)~ THEN ~ Kaishas, do you take us all for fools? I knew you were werewolves before we even spoke to Karoug... frankly we were already suspicious within five minutes of entering the village! If you're going to try to kill us then go right ahead, but for Ao's sake give us some credit for intelligence!~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Kaishas, do you take us all for fools? I knew you were werewolves before we even spoke to Karoug... frankly we were already suspicious within five minutes of entering the village! If you're going to try to kill us then go right ahead, but for Ao's sake give us some credit for intelligence!~
 END  KAISH2 16
 
 //Brage after rescue
