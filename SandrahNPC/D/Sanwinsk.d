@@ -24,12 +24,12 @@ IF ~ Global("SanOrDiEarly","GLOBAL",1)~ THEN SANWINSK WinskiAppEar2
 DO ~SetGlobal("SanOrDiEarly","GLOBAL",2)RealSetGlobalTimer("WiItemR","GLOBAL",1200)~
 == BSANDR ~ Orloth, you know very well that it is impossible. If you are who I assume you are, then you must know that <CHARNAME> has little choice other than to chase the one you try to protect.~
 == SANWINSK ~ Ha, and I know who you are, little girl, my divinings have not been in vain, Elminster's daughter!~
-== BSANDR ~ Right. If you know that, then you are aware that it was him that defeated you last time.~
+== BSANDR ~ Right. If you know that, then you are aware that it was him who defeated you last time.~
 == SANWINSK ~ Defeated me? You know less than you think you know, cleric baby.~
 == BSANDR ~ You did not get the one whom you were persuing so hard back then.~
 == SANWINSK ~ Fool, that was just one of a number of possibilities. Right, I did not get the one your father had shielded already, but what did it matter. There was enough material around to suit me.~
-== BSANDR ~ I have my doubts you really found what you needed. You are not really the one that controls the current events, I am sure.~
-==BDYNAH IF ~ InParty("Dynaheir") ~ THEN~ Thou art the Old One then that set the gnoll troups against me. I knowest who you are, I witnessed at the trial whence you were exiled from Rashemen.~
+== BSANDR ~ I have my doubts you really found what you needed. You are not really the one who controls the current events, I am sure.~
+==BDYNAH IF ~ InParty("Dynaheir") ~ THEN~ Thou art the Old One then who set the gnoll troups against me. I knowest who you are, I witnessed at the trial whence you were exiled from Rashemen.~
 == SANWINSK ~ YOU! You just blindly stumble around in your limited circles. You have no idea about the global picture at all.~
 EXIT
 
@@ -39,13 +39,13 @@ IF ~ Global("SanOrDiId","GLOBAL",5)~ THEN SANWINSK WinskiApp2
 DO ~SetGlobal("SanOrDiId","GLOBAL",6)RealSetGlobalTimer("WiItemR","GLOBAL",1200)~
 == BSANDR ~ Orloth, you know very well that it is impossible. If you are who I assume you are, then you must know that <CHARNAME> has little choice other than to chase the one you try to protect.~
 == SANWINSK ~ Ha, and I know who you are, little girl, my divinings have not been in vain, Elminster's daughter!~
-== BSANDR ~ Right. If you know that, then you are aware that it was him that defeated you last time.~
+== BSANDR ~ Right. If you know that, then you are aware that it was him who defeated you last time.~
 == SANWINSK ~ Defeated me? You know less than you think you know, cleric baby.~
 == BSANDR ~ You did not get the one you were persuing so hard back then.~
 == SANWINSK ~ Fool, that was just one of a number of possibilities. Right, I did not get the one your father had shielded already, but what did it matter. There was enough material around to suit me.~
-== BSANDR ~ I have my doubts you really found what you needed. You are not really the one that controls the current events, I am sure.~
+== BSANDR ~ I have my doubts you really found what you needed. You are not really the one who controls the current events, I am sure.~
 == SANWINSK ~ YOU! You just blindly stumble around in your limited circles. You have no idea about the global picture at all.~
-== BSANDR ~ A merchant crisis on the Sword Coast, even a war with Amn, how will they help you in your goal against Rashemen? They will feed your spawn Sarevok until he is too strong for your leash, even if he is not already by now.~
+== BSANDR ~ A merchant crisis on the Sword Coast, even a war with Amn, how will they help you in your goal against Rashemen? It all will feed your spawn Sarevok until he is too strong for your leash, even if that is not already the case by now.~
 == SANWINSK ~ You cannot deny your heritage, I see. You have come far already, I have to admit. You even know about Sarevok. But YOUR spawn seems to be weak enough to be under your control. Still you have come too close now for my liking. It has to end now.~ EXIT
 
 CHAIN
