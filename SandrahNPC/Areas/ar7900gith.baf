@@ -83,6 +83,15 @@ ActionOverride("CVTALOP1",Enemy())
 END
 
 IF
+Global("Chapter","GLOBAL",6)
+GlobalLT("BD_Chapter_Save","GLOBAL",6)
+THEN
+RESPONSE #100
+SetGlobal("BD_Chapter_Save","GLOBAL",6)
+SaveGame(31)
+END
+
+IF
 Global("SanSoDSkie","Global",6)
 THEN
 RESPONSE #100

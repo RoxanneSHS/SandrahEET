@@ -112,6 +112,7 @@ END
 IF
 RealGlobalTimerExpired("SanFlirTi","GLOBAL")
 GlobalGT("Chapter","Global",5)
+!AreaCheck("BG0900")
 InParty(Myself)
 OR(3)
 Global("SanFlirt","GLOBAL",12)

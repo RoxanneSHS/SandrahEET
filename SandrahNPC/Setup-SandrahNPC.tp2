@@ -7843,6 +7843,9 @@ COPY_EXISTING ~M_EET.lua~ ~override~
         return Infinity_FetchString(%chapter36%)~ 
 END
 
+COPY_EXISTING ~Cutckeep.bcs~ ~override~
+REPLACE_TEXTUALLY ~BG2626~ ~BG0900~
+
 COMPILE 
 ~SandrahNPC/Mods/NeeraSanBG1.d~
 ~SandrahNPC/Mods/RasaadSanBG1.d~
