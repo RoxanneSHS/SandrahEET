@@ -6236,7 +6236,7 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",25) ~
 == BSANDR ~ Stop, wildcat. Fat is not the expression to be used here. That you start to grow out of your armour and your other clothes does not come unexpected, regarding your condition.~
 == BSHART ~ Yeah, sorry, I'm a bit edgy these days...~
 == BSANDR ~ Haha, I would not have noticed any difference to other times. But, honestly, as your trusted healer I have to tell you that the adventuring days will now be over for you for a time.~
-== BSHART ~ I can't honestly say that I'm prepared really. Anyway what is that is and what must be done be done. Watcha propose, pussycat?~ DO~  FillSlot(SLOT_ARMOR)~
+== BSHART ~ I can't honestly say that I'm prepared, really. Anyway, what is that is and what must be done be done. Watcha propose, pussycat?~ DO~  FillSlot(SLOT_ARMOR)~
 == BSANDR ~ As <CHARNAME>'s quest has not allowed us to find an own place by now, I renew my invitation to go to Waterdeep and set the new family up in my father's place meanwhile.~
 END
 ++ ~ Listen, everybody, we will need to take a break in adventuring to bring the expectant mother home to Waterdeep! ~ +  SanSharGoWDBaby2
@@ -6264,7 +6264,7 @@ CHAIN
 IF ~~ THEN BSANDR SanSharGoWDBaby4
 ~ MEN! ~
 == BSHART ~ (Shar-Teel smiles as she turns to go. She turns quickly but not quickly enough to hide the small tear she has in her eye as well.)~
-DO ~ ActionOverride("Sharteel",LeaveParty())
+DO ~ SetGlobal("x#sharinterest","Global",3) ActionOverride("Sharteel",LeaveParty())
 ActionOverride("Sharteel",MoveBetweenAreas("CVSans",[352.325],12))~
 EXIT
 

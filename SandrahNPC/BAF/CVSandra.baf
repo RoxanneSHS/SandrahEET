@@ -3188,6 +3188,7 @@ END
 IF
 InParty("Tiax")
 !AreaCheck("BG3300")
+!AreaCheck("BG1100")
 Global("Santiax","LOCALS",0)
 Delay(12)
 THEN
