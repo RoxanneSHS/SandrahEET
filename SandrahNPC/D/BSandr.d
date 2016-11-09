@@ -5150,7 +5150,7 @@ DO~ SetGlobal("SanEdCyr","LOCALS",2)~
 == BSANDR~ Only the perverted brain of a red mage can find happiness in something described as *wickedness*.~
 == Bedwin_~ If it is the revelation of one of the greatest gods of Toril than it is perfectly acceptable. It is your own grandfather who speaks out of you. (My wonderful Demi-Goddess, what more reason to adore you!)~
 == BSANDR~ Hm. That had to come. Yes, it is true that through my father and his ancestry both in Midnight and in Cyric, I may be mistaken for a grandchild of the Prince of Lies.~
-== Bedwin_~ Mistaken? You surely are, your father was breeded by Cyric, the great god, and his mistress Mystra. You know well how we Thayans worship Cyric.~
+== Bedwin_~ Mistaken? You surely are, your father was bred by Cyric, the great god, and his mistress Mystra. You know well how we Thayans worship Cyric.~
 == BSANDR~ And what does have to do with us, Edwin?~
 == Bedwin_~ Can you not see the sign set for us, as Cyric and Mystra conquered during the Time of Troubles hand in hand, same way it is foreseen for her grandchild to do the same with a devotee of Cyric.~
 == BSANDR~ Only there is a flaw in your reasoning, Edwin. It were not the God you follow and the Goddess of Magic who seeded my father and are therefore my grandparents - it were the adventuress Midnight and a human thief name of Cyric that are his parents. With both ascending to godhood later, they have lost as well the connection to their former life on the material plane. It is therefore an error to attach the current God of Lies and Murder to my heritage.~
@@ -6439,7 +6439,7 @@ EXIT
 CHAIN
 IF ~ Global("DYBant","GLOBAL",2) ~THEN BSANDR DyCloth
 ~  I had the feeling earlier that you were a bit of astonished to see me in <CHARNAME>'s company, Dynaheir. May it be that you know me in any way.~
-DO ~ SetGlobal("DYBant","GLOBAL",3) RealSetGlobalTimer("DynBantT","GLOBAL",2400)~
+DO ~ SetGlobal("DYBant","GLOBAL",3) RealSetGlobalTimer("DynBantT","GLOBAL",1600)~
 == BDYNAH ~ 'Tis not you in person that I thought familiar, it is something about you I noticed or something you own.~
 == BSANDR ~ Strange enough, as I had a similar kind of sudden feeling, as if something connects us both. Perhaps if you tell me why you have come from a place half a season's travel away from here, we get a hint.~
 == BDYNAH ~ 'Tis an interesting time for the Realms, with great things foretold for the Sword Coast.  'Tis therefore a likely place to look for what we need. ~
@@ -6465,13 +6465,13 @@ DO ~ SetGlobal("DYBant","GLOBAL",5) SetGlobal("SanNotCloth","GLOBAL",3) RealSetG
 == BSANDR IF ~ PartyHasItem("Sanwi1")~ THEN~ Look at this. (Sandrah has put the first cloth piece she received from Viconia beside this one.) Another part of the same item. Can you tell me more about it, Dynaheir?~
 == BDYNAH  ~ I found it near a place thine folk call the Firewine. But it must have been lost in older times, me guesses at the end of the Time of Troubles...Thou know the lore, or so I hope.~
 == BSANDR ~ The lore about the Firewine or the history of the Time of Troubles?~
-== BDYNAH  ~ 'tis the second I was referring to. 'tis the time when the spawns of Bhaal were created and born by the mothers all over Faerun, mothers that the God had chosen to carry on his seed as he knew his fate was sealed.~
-== BSANDR ~ Mothers that were not really mothers but mere vessels for the spawns to be created. Misused women that had to die by giving birth to what was forced into them.~
+== BDYNAH  ~ 'tis the second I was referring to. 'tis the time when the spawns of Bhaal were created and born by the mothers all over Faerun, mothers whom the God had chosen to carry on his seed as he knew his fate was sealed.~
+== BSANDR ~ Mothers who were not really mothers but mere vessels for the spawns to be created. Misused women who had to die by giving birth to what was forced into them.~
 == BDYNAH  ~ Thou hath a warmth heart to care so for these long dead women. (Dynaheir takes a deep look at Sandrah, and sensing the pain in the younger women, puts an arm around her shoulders.) But there is more, ain't it?~
 == BSANDR ~ My own mother was one of them...~
 == BDYNAH  ~ But...No, that cannot be true...thou are nay the one! I cannot err so...~
 == BSANDR ~ Stay calm, Dynaheir, it is not me I am talking about. You are right, I am no Bhaalspawn. But my own mother was cursed with one after she had me.~
-== BDYNAH  ~ Alas thine own interest is explained! That child that is neither thy brother or sister and not even thy mother's child - this is what thou searches... ~
+== BDYNAH  ~ Alas thine own interest is explained! That child who is neither thy brother or sister and not even thy mother's child - this is what thou searches... ~
 EXIT
 
 CHAIN

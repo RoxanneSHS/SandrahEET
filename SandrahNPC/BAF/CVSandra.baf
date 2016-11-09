@@ -4400,7 +4400,7 @@ Global("DYBant","GLOBAL",3)
 InParty("Dynaheir")
 GlobalLT("SanNotCloth","Global",1)
 Global("X#DynaJournal","GLOBAL",8)
-RealGlobalTimerExpired("DynBantT","GLOBAL")
+Delay(33)
 THEN
 RESPONSE #100
 SetGlobal("DYBant","GLOBAL",4)
@@ -8038,7 +8038,7 @@ Global("Formedcloth","GLOBAL",11)
 THEN
 RESPONSE #100
 SetGlobal("Formedcloth","GLOBAL",12)
-RealSetGlobalTimer("ClothwaitTi","LOCALS",2400)
+RealSetGlobalTimer("ClothwaitTi","LOCALS",1400)
 END
 
 IF

@@ -309,7 +309,7 @@ END
 
 IF ~~ THEN BEGIN  SanFlr104
 SAY ~ In principle yes. Godly powers can only be inherited directly from the gods. ~
-IF ~~ THEN REPLY ~ What does that mean, *in principle*? Bhaal must have known what you tell me now - and still he has breeded his spawns to guarantee his own succession or survival. Where is the sense of that?~ GOTO SanFlr105
+IF ~~ THEN REPLY ~ What does that mean, *in principle*? Bhaal must have known what you tell me now - and still he has bred his spawns to guarantee his own succession or survival. Where is the sense of that?~ GOTO SanFlr105
 END
 
 IF ~~ THEN BEGIN  SanFlr105
@@ -336,7 +336,7 @@ END
 
 IF ~~ THEN BEGIN  SanFlr114
 SAY ~ In principle yes. Godly powers can only be inherited directly from the gods. ~
-IF ~~ THEN REPLY ~ What does that mean, *in principle*? Bhaal must have known what you tell me now - and still he has breeded his spawns to guarantee his own succession or survival. Where is the sense of that?~ GOTO SanFlr115
+IF ~~ THEN REPLY ~ What does that mean, *in principle*? Bhaal must have known what you tell me now - and still he has bred his spawns to guarantee his own succession or survival. Where is the sense of that?~ GOTO SanFlr115
 END
 
 IF ~~ THEN BEGIN  SanFlr115
