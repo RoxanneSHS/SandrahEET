@@ -3896,7 +3896,7 @@ END
 
 IF~~THEN BEGIN SanWinskApp20
 SAY ~ By now you have certainly found one of my methods of investigation. Pretend that you know more than you actually do and bluff the rest out of your subject. It worked well on this guy again.~
-IF ~~ THEN REPLY ~ Let me catch up with you. He is the same one that way back then chased Gorion and Winthrop with the babies across the Sword Coast. But it seems he had failed. Due to your father's involvement. Right so far?~ GOTO SanWinskApp21
+IF ~~ THEN REPLY ~ Let me catch up with you. He is the same one who way back then chased Gorion and Winthrop with the babies across the Sword Coast. But it seems he had failed. Due to your father's involvement. Right so far?~ GOTO SanWinskApp21
 END
 
 IF~~THEN BEGIN SanWinskApp21
@@ -3911,8 +3911,8 @@ IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWi
 END
 
 IF~~THEN BEGIN SanWinskApp23
-SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. The Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
-IF ~~ THEN REPLY ~ So you knew it - my mission and your mission are in the end the same. You found the spawn your father had protected to lead him against the one that rises to follow his godly father. Only a Bhaalspawn has the power to defeat another Bhaalspawn. You found me!~ GOTO SanWinskApp24
+SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
+IF ~~ THEN REPLY ~ So you knew it - my mission and your mission are in the end the same. You found the spawn your father had protected to lead him against the one who rises to follow his godly father. Only a Bhaalspawn has the power to defeat another Bhaalspawn. You found me!~ GOTO SanWinskApp24
 END
 
 IF~~THEN BEGIN SanWinskApp24
@@ -3938,13 +3938,13 @@ IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWi
 END
 
 IF~~THEN BEGIN SanWinskApp33
-SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. The Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
+SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
 IF ~~ THEN REPLY ~ So you knew it - my mission and your mission are in the end the same. You found the spawn your father had protected to lead him against the one that rises to follow his godly father. Only a Bhaalspawn has the power to defeat another Bhaalspawn. You found me!~ GOTO SanWinskApp34
 END
 
 IF~~THEN BEGIN SanWinskApp34
 SAY ~ This time you are not fully right, <CHARNAME>. I did not know all of that from the beginning. All I knew was, you were the key to this whole mystery. And then I fell in love with you and everything has changed. My reason to be by your side now is - you.~
-= ~ And still you are right. You are one of the children that were hunted and you are now the one to stop the one who tries to become the God of Murder.~
+= ~ And still you are right. You are one of the children who were hunted and you are now the one to stop the one who tries to become the God of Murder.~
 IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still are granted one in these days. I feel you tell the truth and you always did. And I know that you love me and I will hold on to that for strength.~ DO ~ SetGlobal("SanOrDiId","GLOBAL",9)~EXIT
 END
 

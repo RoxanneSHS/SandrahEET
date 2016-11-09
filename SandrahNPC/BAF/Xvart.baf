@@ -10,6 +10,7 @@ END
 IF
 Global("SanXvartPeace","Global",1)
 See([PC])
+AreaCheck("bg4700")
 THEN
 RESPONSE #100
 RunAwayFrom([PC],60)

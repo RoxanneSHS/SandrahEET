@@ -4396,10 +4396,20 @@ SetGlobal("DYBant","GLOBAL",2)
 END
 
 IF
-InParty("Dynaheir")
 Global("DYBant","GLOBAL",3)
-OR(2)
+InParty("Dynaheir")
+GlobalLT("SanNotCloth","Global",1)
 Global("X#DynaJournal","GLOBAL",8)
+RealGlobalTimerExpired("DynBantT","GLOBAL")
+THEN
+RESPONSE #100
+SetGlobal("DYBant","GLOBAL",4)
+END
+
+IF
+Global("DYBant","GLOBAL",3)
+InParty("Dynaheir")
+GlobalGT("SanNotCloth","Global",1)
 RealGlobalTimerExpired("DynBantT","GLOBAL")
 THEN
 RESPONSE #100
