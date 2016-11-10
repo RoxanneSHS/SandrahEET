@@ -292,7 +292,9 @@ END
 
 IF
 Global("DYBant","GLOBAL",9)
+OR(2)
 GlobalGT("X#DYLoveTalk","GLOBAL",25)
+GlobalGT("Chapter","Global",6)
 InParty("Dynaheir")
 RealGlobalTimerExpired("DynBantT","GLOBAL")
 See("Dynaheir")
@@ -300,6 +302,7 @@ See("Dynaheir")
 !StateCheck("Dynaheir",CD_STATE_NOTVALID)
 !AreaCheck("cvsant")
 !AreaCheck("CVSans")
+!Global("X#DynaheirRomanceactive","GLOBAL",3)
 THEN
 RESPONSE #100
 SetGlobal("DYBant","GLOBAL",10)
