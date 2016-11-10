@@ -408,3 +408,7 @@ I_C_T BDImoen 92 SanBDImoReunite
 ==CVSandrJ IF~InParty("CVSandr")~THEN~We have a lot of tales to tell, but now is not the time. You know better than we do, how bad things are.~
 ==BDImoen IF~InParty("CVSandr")~THEN~Even you couldn't keep <CHARNAME> outa trouble forever, tssst. Any idea what's really up, Miss Clever?~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Just the usual sequence of events. We defeated one foe and up jumps the next one - a mysterious hooded man who framed the murder of Skie on <CHARNAME>. We have to be cautious, I assume he wants us out of the shelter of Baldur's Gate to have better access on us for whatever his intentions are.~END
+
+I_C_T BDFenste 0 SanFenstAssure
+==CVSandrJ IF~InParty("CVSandr")~THEN~*She takes your hand reassuringly.*~
+==CVSandrJ IF~InParty("CVSandr")~THEN~She is the best hands, my love. I could do not more for our *bestest* friend than they do here, especially not since we have to get out on the road again now.~END
