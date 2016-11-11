@@ -1628,6 +1628,8 @@ LevelLT(Myself,9)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVR100",Myself) 
+Wait(6)
+ReallyForceSpellRES("CVReset",Myself)
 END
 
 IF
@@ -1636,6 +1638,8 @@ LevelLT(Myself,10)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVR112",Myself) 
+Wait(6)
+ReallyForceSpellRES("CVReset",Myself)
 END
 
 IF
@@ -1644,6 +1648,8 @@ LevelLT(Myself,11)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVR133",Myself) 
+Wait(6)
+ReallyForceSpellRES("CVReset",Myself)
 END
 
 IF
@@ -1652,6 +1658,8 @@ LevelLT(Myself,12)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVR152",Myself)
+Wait(6)
+ReallyForceSpellRES("CVReset",Myself)
 END
 
 IF
@@ -1660,4 +1668,6 @@ LevelLT(Myself,16)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVR260",Myself)
+Wait(6)
+ReallyForceSpellRES("CVReset",Myself)
 END

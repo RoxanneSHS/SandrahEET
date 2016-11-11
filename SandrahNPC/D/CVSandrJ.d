@@ -6039,3 +6039,7 @@ IF~InParty("CVSandr")~THEN REPLY~ You're a fool to love the bastard and a fool t
 IF~InParty("CVSandr")~THEN REPLY~ If I must kill you to pass, then so be it. I do so forgiving you your transgressions against me. ~DO~IncrementGlobal("Sanpoints","Global",4) ReputationInc(1)~GOTO 25
 END
 
+EXTEND_BOTTOM Tenya 0
+IF~ GlobalGT("Umbowl","GLOBAL",1) PartyHasItem("MISC53")~THEN REPLY~With Mystra's help I came into possession of a bowl that was taken from your mother. Perhaps now she will rest.~GOTO 11
+END
+
