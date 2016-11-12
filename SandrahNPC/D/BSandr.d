@@ -6634,6 +6634,24 @@ DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)
 == BDYNAH ~ (The Hathran puts her arm around the younger woman's shoulder and they continue to walk entwined, with Sandrah's head resting lightly on Dynaheir's arm.)~
 EXIT
 
+CHAIN
+IF ~ Global("DYBant","GLOBAL",48)~ THEN BSANDR SanDywinskPast
+~ We not only love the same Bhaalspawn, Dynaheir, we are also <PRO_HISHER> protectors and advisors.~
+DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)~
+== BDYNAH ~ I am in agreement with these words, Sandrah, 'tis still my mission, now even more as I protect my lover by it.~
+== BSANDR~ Then we should try to join our forces to find out about the Orloth who has hunted <CHARNAME> - and you.~
+== BDYNAH ~ His name was Winsky Perorate, once one of the most powerful wizards of my homeland.~
+== BSANDR~ Was he part of the reasons you came to the Sword Coast then, Dynaheir?~
+== BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come westbound.~
+= ~ I hath told thee of my dajemma and that it had ended by our secret mission being betrayed to Thay. One of the traitors in this widespread conspiracy against Rashemen itself was Winsky.~
+== BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expell him?~
+== BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Orloth in the end.~
+== BSANDR ~ Still it may have been his perception, that your presence at Baldur's Gate was connected to the events back then.~
+== BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesised in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
+== BSANDR ~ Only, Dynaheir, the threat against Rashemen by Winski has disappeared, but the threat of the Bhaalspawns against all of the Realms and maybe beyond has grown.~
+== BDYNAH ~ (The Hathran puts her arm around the younger woman's shoulder and they continue to walk entwined, with Sandrah's head resting lightly on Dynaheir's arm.)~
+EXIT
+
 CHAIN 
 IF ~Global("SanMinDyStat","LOCALS",1)~ THEN BSANDR  SanMinDyStat1
 ~ Thank you, Boo, you are a true cavalier, I hope Minsc is willing to learn well from you.~

@@ -4507,6 +4507,17 @@ SetGlobal("DYBant","GLOBAL",34)
 END
 
 IF
+Global("EndofBG1","Global",1)
+InParty("Dynaheir")
+RealGlobalTimerExpired("DynBantT","GLOBAL")
+!AreaType(DUNGEON)
+Global("DYBant","GLOBAL",17)
+THEN
+RESPONSE #100
+SetGlobal("DYBant","GLOBAL",48)
+END
+
+IF
 InParty("Dynaheir")
 RealGlobalTimerExpired("DynBantT","GLOBAL")
 !AreaType(DUNGEON)
@@ -4618,7 +4629,7 @@ IF
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 !See([ENEMY])
 CombatCounter(0)
-OR(15)
+OR(16)
 Global("SanDynAftGn","GLOBAL",1)
 Global("DYBant","GLOBAL",2)
 Global("DYBant","GLOBAL",4)
@@ -4628,6 +4639,7 @@ Global("DYBant","GLOBAL",12)
 Global("DYBant","GLOBAL",14)
 Global("DYBant","GLOBAL",16)
 Global("DYBant","GLOBAL",18)
+Global("DYBant","GLOBAL",48)
 Global("DYBant","GLOBAL",20)
 Global("SanMinDyStat","LOCALS",1)
 Global("SanDyWyEd","LOCALS",1)
