@@ -4288,6 +4288,7 @@ COPY_EXISTING ~ttjahier.CRE~ ~override/ttjahier.CRE~
               ~jaheir4.CRE~ ~override/jaheir4.CRE~
               ~jaheir6.CRE~ ~override/jaheir6.CRE~
               ~jaheir7.CRE~ ~override/jaheir7.CRE~
+	      ~jaheir7_.CRE~ ~override/jaheir7_.CRE~	
               ~jaheir8.CRE~ ~override/jaheir8.CRE~
               ~jaheird.CRE~ ~override/jaheird.CRE~
               ~e36.CRE~ ~override/e36.CRE~
@@ -8219,6 +8220,12 @@ REPLACE_TEXTUALLY ~DYNAHEIR     BDDYNAHB~ ~DYNAHEIR     BDYNAH    ~
 
 COPY_EXISTING ~BDBanter.2da~ ~override~
 REPLACE_TEXTUALLY ~MINSC        BDMINSCB~ ~Minsc        BMINSC_    ~
+
+COPY_EXISTING ~BDBanter.2da~ ~override~
+REPLACE_TEXTUALLY ~JAHEIRA      BDJAHEIB~ ~Jaheira      BJahei    ~
+
+COPY_EXISTING ~BDBanter.2da~ ~override~
+REPLACE_TEXTUALLY ~KHALID       BDKHALIB~ ~KHALID       BKhali    ~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
