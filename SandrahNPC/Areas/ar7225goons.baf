@@ -48,6 +48,14 @@ CreateCreatureDoor("galdor",[965.482],0)
 END
 
 IF
+Global("DMWWSarevokFight","GLOBAL",4)
+THEN
+RESPONSE #100
+ActionOverride("Sarevok",DestroyItem("MONHP1"))
+SetGlobal("DMWWSarevokFight","GLOBAL",5)
+END
+
+IF
 Global("SanHaerRel1","GLOBAL",32)
 Global("HaerResc","bg0125",0)
 InParty("CVSandr")
