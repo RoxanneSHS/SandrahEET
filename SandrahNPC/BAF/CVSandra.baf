@@ -5954,7 +5954,7 @@ IF
 Global("JoinedBandits","GLOBAL",0)
 AreaCheck("BG1900")
 Global("SanBadDir","GLOBAL",0)
-GlobalLT("Chapter","Global"5)
+GlobalLT("Chapter","Global",5)
 !Dead("Tazok")
 THEN
 RESPONSE #100

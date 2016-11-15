@@ -10,7 +10,7 @@ DO ~ SetGlobal("SanEndBG1Plot","GLOBAL",4)~
 == CVSandrJ ~ I have sensed your hand in the events that have led us here today. I have followed them but mostly I have followed what my heart told me to do.~
 == sanmyst~ This is the way your grandmother Midnight would have done it herself. ~
 == CVSandrJ ~ I confess that often I seek her paragon to guide me, instead of consulting my goddess.~
-== sanmyst~ (Laughs gently) You do well in that, as it will lead you to the same result anyway. Finding the way through the mortal example that was before you makes you see the path of Mystra just the same, Sandrah.~
+== sanmyst~ (Laughs gently) You do well in that, as it will lead you to the same result anyway. Finding the way through the mortal example which was before you makes you see the path of Mystra just the same, Sandrah.~
 == CVSandrJ ~ Why have you come? Is it to confirm what I guess already - the story has not ended with Sarevok?~
 == sanmyst~ You are right, Sarevok's defeat was the closing of one chapter and the beginning of the next. It is for you and <CHARNAME> to continue what you have begun. ~
 == CVSandrJ ~ To finish what was not granted to yourself - or to Midnight - to provide the final end for the god of murder.~

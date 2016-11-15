@@ -412,3 +412,15 @@ I_C_T BDImoen 92 SanBDImoReunite
 I_C_T BDFenste 0 SanFenstAssure
 ==CVSandrJ IF~InParty("CVSandr")~THEN~*She takes your hand reassuringly.*~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~She is the best hands, my love. I could do not more for our *bestest* friend than they do here, especially not since we have to get out on the road again now.~END
+
+EXTEND_BOTTOM BDSafanJ 141
+IF~InParty("CVSandr")~THEN REPLY~My long term relationship with Sandrah has surely not escaped your scrutiny.~GOTO SafSan1
+END
+
+APPEND BDSafanJ
+IF~~THEN BEGIN SafSan1
+SAY~Honey, I know just too well what's going on between the two of you...I also know how liberal your priestess is when it comes to other lovers - and that she allows you that same freedom.~
+IF~~THEN REPLY~You're right, she would encourage me herself to try anything that comes my way.~GOTO 142
+IF~~THEN REPLY~That may very well be. Anyway I'm not like that, I choose her and her alone.~GOTO 157
+END
+END

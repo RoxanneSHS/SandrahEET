@@ -1855,6 +1855,8 @@ COMPILE ~SandrahNPC/Mods/NtDexpbzomb.d~
 EXTEND_TOP ~ntdxter.bcs~ ~SandrahNPC/Mods/NtDexpbzomb.baf~
 END
 
+EXTEND_TOP ~Koboldf.bcs~ ~SandrahNPC/Baf/SanKobo.baf~
+
 //** HAIASS*//
 COMPILE ~SandrahNPC/Mods/haiass.d~
 EXTEND_TOP ~BG2616.bcs~  ~SandrahNPC/Areas/haiasslater.baf~

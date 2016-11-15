@@ -1,0 +1,7 @@
+IF
+AreaCheck("ar0602")
+See("CVSandr")
+THEN
+RESPONSE #100
+Kill(Myself)
+END
