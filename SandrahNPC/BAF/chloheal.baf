@@ -1,10 +1,10 @@
-IF
+/*IF
 AreaCheck("ar0601")
 Global("AssigningImoenScriptCR","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("AssigningImoenScriptCR","GLOBAL",2)
-END
+END*/
 
 IF
 GlobalLT("SanHealChlo","GLOBAL",9)

@@ -4,6 +4,7 @@ VERSION 2.03
 All Three Parts
 Area graphics updated for PVRZ
 Journal Upgrade for weidu 2.40 and better
+
 SoD NPC banter files ressurected
 
 Sandrah HP bug fixed

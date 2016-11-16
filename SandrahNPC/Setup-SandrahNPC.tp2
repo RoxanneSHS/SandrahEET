@@ -1461,6 +1461,7 @@ EXTEND_TOP ~AR1203.bcs~  ~SandrahNPC/Travel/AR1203.baf~
 EXTEND_TOP ~AR2101.bcs~  ~SandrahNPC/Travel/AR2101.baf~
 EXTEND_TOP ~BG1207.bcs~  ~SandrahNPC/Travel/BG1207.baf~
 EXTEND_TOP ~AR2905.bcs~  ~SandrahNPC/Travel/AR2905.baf~
+EXTEND_TOP ~JonRoom.bcs~  ~SandrahNPC/Areas/JonRoom.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~AR0707.bcs~ THEN BEGIN
   EXTEND_TOP ~AR0707.bcs~  ~SandrahNPC/Travel/AR0003.baf~

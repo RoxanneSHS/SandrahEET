@@ -1,0 +1,10 @@
+IF
+Entered([PC])
+OR(2)
+Global("SandrahJoined","GLOBAL",52)
+Global("SandrahJoined","GLOBAL",6)
+THEN
+RESPONSE #100
+SaveGame(0)
+DisplayString(Myself,@994) 
+END
