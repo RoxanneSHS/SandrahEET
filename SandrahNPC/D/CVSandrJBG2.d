@@ -3716,11 +3716,11 @@ IF~~THEN CVSandrJ SanCloneEllePC2
 =~*She says no more, obviously lost in her thoughts.*~EXIT
 
 CHAIN 
-IF WEIGHT #-2~  Global("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
+IF WEIGHT #-2~  GlobalLT("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
  ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaelan told me to give you a bit o' help to find some work. Listen up, eh!~ 
 DO~SetGlobal("HigherPrice","LOCALS",1)~
 ==CVSandrJ~You are a clever boy, Brus. You see and hear a lot, right?~
-=~Like uncle's not told you da full price you gotta pay fa his service?~
+==Brus2~Like uncle's not told you da full price you gotta pay fa his service?~
 ==CVSandrJ~We should have guessed as much, <CHARNAME>, the shadow thieves give nothing for cheap - except murder.~
 ==Brus2~Now, now, calm yaself, lady. Uncle would've told you of the increase bit by bit like another 20,000 on each visit.~
 ==CVSandrJ~Until which sum would be reached, do you have an idea, boy?~
