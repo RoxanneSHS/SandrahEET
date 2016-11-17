@@ -4,7 +4,7 @@ Global("DocWasHere","bg0002",0)
 THEN
 RESPONSE #100
 IncrementGlobal("SanDoctor","GLOBAL",1)
-ActionOverride("CVSandr",AddSpecialAbility("SpHeal2"))
+ActionOverride("CVSandr",AddSpecialAbility("sanhand"))
 SetGlobal("DocWasHere","bg0002",1)
 END
 
@@ -15,6 +15,6 @@ Global("DocWasHere","bg0002",0)
 THEN
 RESPONSE #100
 IncrementGlobal("SanDoctor","GLOBAL",1)
-ActionOverride("CVSandr",AddSpecialAbility("Sppr216"))
+ActionOverride("CVSandr",AddSpecialAbility("sanhand"))
 SetGlobal("DocWasHere","bg0002",1)
 END
