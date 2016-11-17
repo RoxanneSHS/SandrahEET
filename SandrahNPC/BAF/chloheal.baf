@@ -1,11 +1,3 @@
-/*IF
-AreaCheck("ar0601")
-Global("AssigningImoenScriptCR","GLOBAL",0)
-THEN
-RESPONSE #100
-SetGlobal("AssigningImoenScriptCR","GLOBAL",2)
-END*/
-
 IF
 GlobalLT("SanHealChlo","GLOBAL",9)
 InParty(Myself)
@@ -44,7 +36,7 @@ Global("SanHealChlo","GLOBAL",13)
 THEN
 RESPONSE #100
 MoveToObject("CVSandr")
-Dialog(Player1)
+Dialog("CVSandr")
 END
 
 IF
