@@ -620,7 +620,7 @@ RealGlobalTimerExpired("SanMinskInt","GLOBAL")
 !TimeOfDay(NIGHT)
 AreaType(FOREST)
 InParty("Minsc")
-!InParty("CVShau")
+!Global("EndofBG1","Global",2)
 THEN
 RESPONSE #100
 SetGlobal("SanBooTlk","GLOBAL",5)
@@ -631,7 +631,7 @@ Global("SanBooTlk","GLOBAL",6)
 RealGlobalTimerExpired("SanMinskInt","GLOBAL")
 InParty("Minsc")
 !AreaType(DUNGEON)
-!InParty("CVShau")
+!Global("EndofBG1","Global",2)
 THEN
 RESPONSE #100
 SetGlobal("SanBooTlk","GLOBAL",7)
