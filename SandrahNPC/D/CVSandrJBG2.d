@@ -3716,7 +3716,7 @@ IF~~THEN CVSandrJ SanCloneEllePC2
 =~*She says no more, obviously lost in her thoughts.*~EXIT
 
 CHAIN 
-IF WEIGHT #-2~  GlobalLT("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
+IF WEIGHT #-2~  Global("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
  ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaelan told me to give you a bit o' help to find some work. Listen up, eh!~ 
 DO~SetGlobal("HigherPrice","LOCALS",1)~
 ==CVSandrJ~You are a clever boy, Brus. You see and hear a lot, right?~
