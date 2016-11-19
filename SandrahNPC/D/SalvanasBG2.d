@@ -2,7 +2,7 @@ APPEND Salvanas
 END
 
 CHAIN
-IF WEIGHT #-9~ InParty("CVSandr") See("CVSandr") !StateCheck("CVSandr",STATE_SLEEPING) Global("CVSandrsalvanas","LOCALS",0) ~THEN Salvanas San1
+IF WEIGHT #-9~ !InPartySlot(LastTalkedToBy,0)Global("CVSandrsalvanas","LOCALS",0) IsGabber("CVSandr")InParty("CVSandr") See("CVSandr") !StateCheck("CVSandr",STATE_SLEEPING) ~THEN Salvanas San1
 ~I may be unrecognizable for a lady of your style and beauty...still I cannot help but introduce myself as your humble servant, Salvanas by name.~
 DO~SetGlobal("CVSandrsalvanas","LOCALS",1) ~
 ==BSandr~(Laughs) Salvanas, beautiful elf, I must deeply disappoint you - I do not hold servants.~

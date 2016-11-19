@@ -103,7 +103,7 @@ DO ~ SetGlobal("SanCloeRom","GLOBAL",9) RealSetGlobalTimer("SanCloeInterv","LOCA
 == RCHLOEJ ~ In fact all of that, dear. If that grandmother Midnight is the one I'm thinking of right now, than we share maybe a similar origin.~
 == BSANDR~ Not really, Chloe, even if dealing with godchilds has become a regular occupation to me now, it seems, <CHARNAME>, Imoen, yourself. I do not belong to the club.~
 == RCHLOEJ ~ I see, I was just thinking that Midnight and you being a priestess of Mystra...~
-== BSANDR~ Oh, you were right with that, Chloe. My grandmother is in fact the woman Midnight that was raised by Ao to become Mystra after she defeated the renegade Gods in the Time of Troubles.~
+== BSANDR~ Oh, you were right with that, Chloe. My grandmother is in fact the woman Midnight who was raised by Ao to become Mystra after she defeated the renegade Gods in the Time of Troubles.~
 == RCHLOEJ ~ But why do you exclude yourself then from *the club*?~
 == BSANDR~ I am a descendent of the human woman Midnight, not of the goddess she later became. See, Midnight gave birth to my father when she was still a human, an adventurer and a priestess.~
 == RCHLOEJ ~ Just like yourself...I see. So your blood is not that of the goddess but of the woman she was before. Hm. It puzzles me a bit.~
