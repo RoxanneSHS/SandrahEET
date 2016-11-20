@@ -117,7 +117,7 @@ IF ~ Global("SanCloeRom","GLOBAL",10)~ THEN BSANDR SanChloR4
 DO ~ SetGlobal("SanCloeRom","GLOBAL",11) RealSetGlobalTimer("SanCloeInterv","LOCALS",1800) ~
 == RCHLOEJ ~ (Chloe moves to Sandrah and puts her hand gently on the other girl's upper thight just below to where her armour ends.) Was is there, my snowcap?~
 == BSANDR~ (Dreamily) Oh, a bit further up, how could I forget that...~
-== RCHLOEJ ~ Your armour protects you from your foes - but also from your friends and lovers sometimes.~
+== RCHLOEJ ~ Your armour protects you from your foe - but also from your friend and lover sometimes.~
 == BSANDR~ (Smiles) It is quite practicable that the kensai do not wear such protection. You have no defense against me this way.~
 == RCHLOEJ ~ Why would I want to? I can vividly remember where YOU last touched ME. Can you as well?~
 == BSANDR~ Definitely! (Sandrah takes Chloe's hand and the two move quickly into the darkness and out of sight.) ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
