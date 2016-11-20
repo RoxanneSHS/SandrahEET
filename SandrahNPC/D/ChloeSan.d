@@ -22,7 +22,7 @@ CHAIN
 IF~~THEN BSANDR ChloHealed2
 ~ (Smiles at Chloe) Do you have a special task for them, dear?~
 DO~ SetGlobal("SanHealChlo","GLOBAL",8) RealSetGlobalTimer("SanCloeInterv","LOCALS",800)~
-== RCHLOEJ ~ (Chloe puts Sandrah's hands to her own chest covered by her armour, just to where her heart is.) Their healing abilities may find further need should they explore the patient intensively.~
+== RCHLOEJ ~ (Chloe puts Sandrah's hands to her own chest not covered by any armour, just to where her heart is.) Their healing abilities may find further need should they explore the patient intensively.~
 == BSANDR~ You have my promise that such an examination will be performed as soon as we find a quiet place and <CHARNAME> will allow us to rest.~
 == RCHLOEJ ~ You understand your profession quite well. (She is so sweet, I hope she really understands where this may lead to.)~
 == BSANDR~ For me it has always been more than just a profession to help the friends that are dear to me with their needs. (She removes one of her hands from Chloe's grasps and touches the other girl's cheek.) You will not have to wait too long for the cure to be applied.~
