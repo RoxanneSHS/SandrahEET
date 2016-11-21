@@ -73,6 +73,7 @@ END
 IF
 InMyArea("Pellig")
 !Global("SandrahJoined","GLOBAL",1)
+!AreaCheck("ar0602")
 THEN
 RESPONSE #100
 ActionOverride("Pellig",EscapeArea())
