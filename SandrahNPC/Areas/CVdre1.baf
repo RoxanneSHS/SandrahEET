@@ -28,6 +28,15 @@ CreateCreature("Pellig",[927.933],12)
 END
 
 IF
+!Global("SanVisitedWD","GLOBAL",0)
+Global("Notes","CVDRE1",0)
+THEN
+RESPONSE #100
+SetGlobal("Notes","CVDRE1",1)
+AddMapNote([881.887],@239)
+END
+
+IF
 Global("Sanpre3Ex","CVDRE1",0)
 Global("SanPCGoodMys","GLOBAL",3)
 THEN
