@@ -132,13 +132,14 @@ DO ~ SetGlobal("SanCloeRom","GLOBAL",13) RealSetGlobalTimer("SanCloeInterv","LOC
 == RCHLOEJ ~ What about your mother, snowcap? Your eyes have taken such a sad look when the topic came up. Sad, but so lovely. (Chloe kisses one of Sandrah's eyelids.)~
 == BSANDR~ I never knew my mother personally - I know her just through the tales of others. I was merely one year old when she died.~
 == RCHLOEJ ~ (Chloe kisses Sandrah's other eyelid.) What happened?~
-== BSANDR~ She died when she gave birth to <CHARNAME> or another of that tainted blood.~
+== BSANDR~ She died when she gave birth to a child of the tainted blood.~
 == RCHLOEJ ~ (Jumps back as if bitten by a snake.) WHAT?~
 = ~ ...you and <CHARNAME> are siblings??...you are a Bhaalspawn, is that the power I have sensed in you all the time ...but you are Mystra's grandchild...~
 = ~ (Chloe straightens herself and returns to stand close to Sandrah. Her face is calm again and she takes the priestess' hand.) No - you would not betray me so, my snowcap, there must be something more to this story.~
-== BSANDR~ Thank you for your trust, my squirrel, you are not mistaken. I am no Bhaalspawn, for you know that my father is Elminster. I am also not a sibling to <CHARNAME> as the dead god Bhaal has used my mother as a vessel to breed of his spawns but that does not make us *family*. Bhaal htried to revenge on the ones to kill him, Mystra and Cyric, my grandparents by hurting their son and his wife that way.~
+== BSANDR~ Thank you for your trust, my squirrel, you are not mistaken. I am no Bhaalspawn, for you know that my father is Elminster. I am also not a sibling of <CHARNAME> as the dead god Bhaal has used my mother as a vessel to breed one of his spawns but that does not make us *family*. Bhaal tried to revenge on the ones to kill him, Mystra and Cyric, my grandparents by hurting their son and his wife that way.~
 == RCHLOEJ ~ But the bastard has failed. Not only has <CHARNAME> found a different use of Bhaal's heritage but also the girl the evil god made motherless is accompanying the spawn today.~
-== BSANDR~ It is not the only case, Chloe, where the Gods of Faerun have underestimated the peristence and the freedom of the mortals. We are not their toys.~
+== BSANDR~I am not even convinced anymore that <CHARNAME> is the spawn who killed my mother, I am still searching for that child.~ 
+=~But this not the only case, Chloe, where the Gods of Faerun have underestimated the peristence and the freedom of the mortals. We are not their toys.~
 == RCHLOEJ ~ A valid thought - I am Akadia's child and she is mother to me. And still it is my life I live and my fate I decide upon myself. It feels good to share that with you, snowcap. (She seals her words with kissing Sandra's eyelids again, one after the other.)~
 EXIT
 
