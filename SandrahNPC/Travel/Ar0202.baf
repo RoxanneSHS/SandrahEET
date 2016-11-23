@@ -1,7 +1,15 @@
 IF
-   Global("RZAR0202","GLOBAL",0)
+Global("CVAR0202","GLOBAL",0)
 THEN
-    RESPONSE #100
-             SetGlobal("RZAR0202","GLOBAL",1)
-             Continue()
+RESPONSE #100
+SetGlobal("CVAR0202","GLOBAL",1)
+Continue()
+END
+
+IF
+Global("OpenSecretDoor","AR0202",0)
+Dead("UnseeingEye")
+THEN
+RESPONSE #100
+SetGlobal("OpenSecretDoor","AR0202",1)
 END

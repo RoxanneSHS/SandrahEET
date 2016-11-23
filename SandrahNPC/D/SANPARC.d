@@ -393,7 +393,7 @@ IF ~~ THEN BEGIN TempSew
 SAY ~State specifics.~
 IF ~Global("RZAR0701","GLOBAL",1)~ THEN REPLY ~The main sewers~ DO ~SetGlobal("SanTravel","GLOBAL",50)~ EXIT
 IF ~Global("RZAR0705","GLOBAL",1)~ THEN REPLY ~Mekrath´s hideout~ DO ~SetGlobal("SanTravel","GLOBAL",51)~ EXIT
-IF ~Global("RZAR0202","GLOBAL",1)~ THEN REPLY ~The Unseeing Eye cult lair~ DO ~SetGlobal("SanTravel","GLOBAL",52)~ EXIT
+IF ~Global("CVAR0202","GLOBAL",1)~ THEN REPLY ~The Unseeing Eye cult lair~ DO ~SetGlobal("SanTravel","GLOBAL",52)~ EXIT
 IF ~Global("CVAR0205","GLOBAL",1)~ THEN REPLY ~Unseeing Eye´s hideout~ DO ~SetGlobal("SanTravel","GLOBAL",53)~ EXIT
 IF ~Global("CVAR0204","GLOBAL",1)~ THEN REPLY ~Forgotten city~ DO ~SetGlobal("SanTravel","GLOBAL",54)~ EXIT
 IF ~Global("CVAR0203","GLOBAL",1)~ THEN REPLY ~Temple of the Forgotten God~ DO ~SetGlobal("SanTravel","GLOBAL",55)~ EXIT
