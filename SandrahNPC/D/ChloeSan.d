@@ -219,7 +219,7 @@ IF~Global("SanHealChlo","GLOBAL",10)~THEN SanSuWL CelBook
 =~Book lovers with an exquisit taste are a rare find in these times and these areas.~
 DO~SetGlobal("SanHealChlo","GLOBAL",11)~
 == RCHLOEJ ~And why would someone come to look for them in such a place then?~
-==CVSandrJ~I can recall having met such strange figures like you once on the Sword Coast. They were asking for a rare toom in quite a notorious manner.~
+==CVSandrJ~I can recall having met such strange figures like you once on the Sword Coast. They were asking for a rare tome in quite a notorious manner.~
 ==SanSuWL~And did they succeed in their quest?~
 ==CVSandrJ~Would I not know that their leader died in the attempt to steal the book from us I would swear he stands before me now.~
 ==SanSuWL~I hope we can avoid any hostility this time, my friends. Just some poems to delight the heart... ~
@@ -235,7 +235,7 @@ IF WEIGHT #-9 ~Global("SanHealChlo","GLOBAL",13) ~THEN RCHLOEJ BHAssault
 ~ Uuh...What the hell was that?? Your gifts are truely dangerous, my snowcap.~
 DO~SetGlobal("SanHealChlo","GLOBAL",14) ~
 == BSANDR~I declare myself innocent, my squirrel. There was nothing in that booklet to hint at any secret that would endanger you, I swear it.~
-== RCHLOEJ ~Oh, don't get worried, I was not blaming you. Even if you had known I would appreciate that you trusted such a treasure to me.~
+== RCHLOEJ ~Oh, don't get worried, I was not blaming you. Even if you had known I would appreciate that you entrusted such a treasure to me.~
 == BSANDR~The last book these men were hunting was in the end the key to a large treasure, or so they thought. This time it may just be some wealthy collector who wants the booklet for its rarity.~
 == RCHLOEJ ~Bad luck for the guy. It's also rare to me and furthermore it's a gift I dearly appreciated. I will not part with it for a mountain of gold or an army of golems threatening me.~
 == BSANDR~I knew it was the right thing to give it to you. You are the one to value its true meaning.~
