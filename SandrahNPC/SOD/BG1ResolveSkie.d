@@ -90,3 +90,48 @@ END
 ++~Well done, counselor. I hope she will remember to restore our reputation when she gets to Baldur's Gate.~EXIT
 ++~Her appearance in Baldur's Gate will remove all accusations of murder - even if I doubt we would be celebrated heroes again, at least we are no longer criminals.~ EXIT
 
+CHAIN
+IF~Global("SanSoDSkie","Global",8)~ THEN CVSandrJ KillskieF1
+~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
+DO~SetGlobal("SanSoDSkie","Global",9)~
+END
+++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
+++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
+++~The accusation of murder is pointless with the victim being alive, right?~ + KillskieF2
+
+CHAIN
+IF~~ THEN CVSandrJ KillskieF2
+~The mistrust against Bhaalspawns may prevail over the return of a lost daughter.~
+=~Entar may even suspect this to be another intrigue of the hated breed.~
+END
+++~What? You lost me now...~ + KillskieF3
+++~I would think to regain his daughter would be the most important fact.~ + KillskieF3
+
+CHAIN
+IF~~ THEN CVSandrJ KillskieF3
+~Oh, I was referring to HER heritage...~
+=~*She stops for a moment, looking at you questioningly.*~
+=~I see...you never suspected...I thought you knew. Well, then - Skie is another Bjaalspawn.~
+END
+++~What? Are you sure?~ + KillskieF4
+++~Sandrah, please, you start to see Bhaalspawns everywhere these days.~+ KillskieF4
+
+CHAIN
+IF~~ THEN CVSandrJ KillskieF4
+~Please, I am not hysteric. Just look at the facts we have.~
+=~The hooded man, Irenicus as we know by now, was always referring to another candidate before he finally captured you. I falsly assumed he meant Caelar, but no.~
+=~Remember Skie's conduct during the Dragonspear campaign.~
+END
+++~A spoiled brat without any discipline, the nightmare of her superiors.~ + KillskieF5
+++~Anything specific?~  + KillskieF5
+
+CHAIN
+IF~~ THEN CVSandrJ KillskieF5
+~Remember when we first met her as a Flaming Fist. Out in that wood over the dead corpses of those *food thieves*. Well armed bandits and experienced fighters she claimed to have followed and defeated - single handed with her shortsword.~
+=~Next her disappearance from the coalition camp. Why did she leave? There was never a sign that her disappearance was against her will.~
+=~Her mother died during her birth, like mostly the mothers of a Bhaalspawn do...~
+=~But finally - the fight you had when Irenicus tried to make you kill her. He had made his decision, his candidate was you - not her. So he got rid of her and at the same time discredited you in a way to force you out of Baldur's Gate. That monster you saw, Skie turned into the Avatar of Bhaal, the Slayer. Only a Bhaalspawn would have this ability.~
+END
+++~A lot of evidence...and your interpretation of it. I am not convinced.~EXIT
+++~I am afraid that you may be just too right, my counselor.~EXIT
+++~You have confirmed what I was trying not to see...I just hope that her father does not even know about her heritage.~EXIT

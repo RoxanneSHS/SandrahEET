@@ -99,3 +99,12 @@ SetGlobal("SanSoDSkie","Global",7)
 SetGlobal("K#Drawbridge","BG0900",2)
 CloseDoor("DoorDraw")
 END
+
+IF
+Global("SanSoDSkie","Global",7)
+InParty("CVSandr")
+GlobalLT("Chapter","Global",22)
+THEN
+RESPONSE #100
+SetGlobal("SanSoDSkie","Global",8)
+END

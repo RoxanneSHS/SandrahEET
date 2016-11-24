@@ -8265,6 +8265,3 @@ PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT ~IWD not detected - skipped ~
 END
-
-
-
