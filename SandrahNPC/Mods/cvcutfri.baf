@@ -1,0 +1,10 @@
+IF
+Global("CvSarevokCutsceneStart","Global",1)
+THEN
+RESPONSE #25
+AttackReevaluate("cvscutse",10)
+RESPONSE #25
+AttackReevaluate("cvscutta",10)
+RESPONSE #25
+AttackReevaluate("cvscutan",10)
+END

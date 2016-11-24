@@ -10,7 +10,7 @@ DO~SetGlobal("SanSarev","GLOBAL",3)~
 ==BSandr25~This was what I was contemplating as well recently.~
 ==BSAREV25 ~Excuse my curiosity, Sandrah, but what would you have done if you had found one of the others - not <CHARNAME>?~
 ==BSandr25~What I did to you and what I am now out to do still - prevent him or her from taking Bhaal's heritage and Throne.~
-==BSAREV25 ~I see your determination to that task, ha, I have even felt it myself, so to say. It appears to me that you are a factor in all the equations and even in Alaundo's prophesies that none had ever accounted for. At least I made the mistake to overlook it - and I paid for it.~ DO~ClearAllActions() StartMovie("CVSarde")~EXIT
+==BSAREV25 ~I see your determination to that task, ha, I have even felt it myself, so to say. It appears to me that you are a factor in all the equations and even in Alaundo's prophesies that none had ever accounted for. At least I made the mistake to overlook it - and I paid for it.~ DO~SetGlobal("CVSareded","Global",1)~EXIT
 
 CHAIN
 IF~Global("SanSarev","GLOBAL",4)~ THEN BSandr25 SecondSarev

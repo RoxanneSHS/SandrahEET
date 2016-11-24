@@ -13,6 +13,7 @@ Tenya recognises bowl
 Added Afaaq Crossmod
 Added Tenya NPC Crossmod
 Alternative Unseeing Eye Solution
+Low quality movie converted to cutscene
 
 VERSION 2.02
 ----------------

@@ -7014,6 +7014,55 @@ END ELSE BEGIN
   PRINT ~Tenya NPC not detected - skipped Sandrah part~
 END
 
+//Sarevok Defeat revisited
+
+COPY ~SandrahNPC\Mods/CVSCUTAN.cre~ ~override~
+SAY NAME1 Angelo
+SAY NAME2 Angelo
+
+COPY ~SandrahNPC\Mods/CVSCUTSA.cre~ ~override~
+SAY NAME1 Sarevok
+SAY NAME2 Sarevok
+
+COPY ~SandrahNPC\Mods/CVSCUTTA.cre~ ~override~
+SAY NAME1 Tazok
+SAY NAME2 Tazok
+
+COPY ~SandrahNPC\Mods/CVSCUTSE.cre~ ~override~
+SAY NAME1 Semaj
+SAY NAME2 Semaj
+
+COPY ~SandrahNPC\Mods/CVSCUTIM.cre~ ~override~
+SAY NAME1 Imoen
+SAY NAME2 Imoen
+
+COPY ~SandrahNPC\Mods/CVSCUTJH.cre~ ~override~
+SAY NAME1 Jaheira
+SAY NAME2 Jaheira
+
+COPY ~SandrahNPC\Mods/CVSCUTMN.cre~ ~override~
+SAY NAME1 Minsc
+SAY NAME2 Minsc
+
+COPY ~SandrahNPC\Mods/CVSCUTVC.cre~ ~override~
+SAY NAME1 Viconia
+SAY NAME2 Viconia
+
+COPY ~SandrahNPC\Mods/CVSCUTPC.cre~ ~override~
+SAY NAME1 Peasant
+SAY NAME2 Peasant
+
+COPY ~SandrahNPC\Mods/CVSare.are~ ~override~
+
+COMPILE
+~SandrahNPC\Mods/CVSare.baf~ 
+~SandrahNPC\Mods/CVcutfri.baf~ 
+~SandrahNPC\Mods/CVSDsare.baf~ 
+~SandrahNPC\Mods/CVcutfoe.baf~ 
+
+EXTEND_BOTTOM
+~CVSandra.bcs~ ~SandrahNPC\Mods/CVSarded.baf~ 
+
 BEGIN
 ~Shauhana for Shadow of Amn EET~
 

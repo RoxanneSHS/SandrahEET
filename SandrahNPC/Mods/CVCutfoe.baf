@@ -1,0 +1,40 @@
+IF
+HasItem("Mage01",Myself)
+Global("CvSarevokCutsceneStart","Global",1)
+THEN
+RESPONSE #16
+DestroyItem("Mage01")
+END
+
+IF
+HasItem("Monhp1",Myself)
+Global("CvSarevokCutsceneStart","Global",1)
+THEN
+RESPONSE #16
+DestroyItem("Monhp1")
+END
+
+IF
+Global("CvSarevokCutsceneStart","Global",1)
+Name("CVSCUTSA",Myself)
+THEN
+RESPONSE #100
+Attack("Sanpre2")
+END
+
+IF
+Global("CvSarevokCutsceneStart","Global",1)
+!Name("CVSCUTSA",Myself)
+THEN
+RESPONSE #16
+AttackReevaluate("cvscutim",10)
+RESPONSE #16
+AttackReevaluate("cvscutvc",10)
+RESPONSE #16
+AttackReevaluate("cvscutmn",10)
+RESPONSE #16
+AttackReevaluate("cvscutjh",10)
+RESPONSE #20
+AttackReevaluate("cvscutpc",10)
+END
+

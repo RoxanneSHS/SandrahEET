@@ -130,7 +130,7 @@ END
 
 IF~~THEN BEGIN SanAdSarD
 SAY~He witnessed Sarevok's death only pretending to be dead himself, knowing we would not pay the minions too much attention once they were out of our way.~
-IF~~THEN DO~ SetGlobal("CVAngelRev","LOCALS",1) ClearAllActions() StartMovie("CVSarde")~EXIT
+IF~~THEN DO~ SetGlobal("CVAngelRev","LOCALS",1) SetGlobal("CVSareded","Global",1)~EXIT
 END
 
 IF~~THEN BEGIN SanHamCl2

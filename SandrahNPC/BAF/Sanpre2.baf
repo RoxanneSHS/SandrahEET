@@ -1,4 +1,26 @@
 IF
+AreaCheck("CVSare")
+Global("CvSarevokCutsceneStart","Global",1)
+!Dead("CVSCUTSA")
+THEN
+RESPONSE #100
+Attack("cvscutsa")
+END
+
+IF
+AreaCheck("CVSare")
+Global("CvSarevokCutsceneStart","Global",1)
+Dead("CVSCUTSA")
+THEN
+RESPONSE #35
+AttackReevaluate("cvscutta",10)
+RESPONSE #35
+AttackReevaluate("cvscutse",10)
+RESPONSE #35
+AttackReevaluate("cvscutan",10)
+END
+
+IF
 AreaCheck("ar3513")
 Global("CbSarevokCutsceneStart","AR3513",1)
 THEN
