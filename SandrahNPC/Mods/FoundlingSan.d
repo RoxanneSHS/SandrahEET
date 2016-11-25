@@ -35,3 +35,18 @@ END
 EXTEND_BOTTOM L#FouJ 127
 IF~InParty("CVSandr")~THEN REPLY~You should team up with Sandrah. Her counselling goes into the same direction. *Know more about your enemy than he knows about you.* And I listen to her so that we won't lose our fight and we all stay alive.~ GOTO 130
 END
+
+EXTEND_BOTTOM L#FouJ 169
+IF~InParty("CVSandr") !InParty("Viconia")~THEN REPLY~Maybe Sandrah can find something in her encyclopedic tome?~ DO~SetGlobal("SanFouBH","Global",2)~EXTERN CVSandrJ FouIska
+END
+
+CHAIN
+IF~~THEN CVSandrJ FouIska
+~Deep Imaskari are heirs of a lost empire who have survived when their slaves turned against them. Their empire crumbled and the few survivors fled deep down beneath the surface of Faerun, purposely shutting themselves off from the events of the surface. They are the only human population to survive in the Underdark.~
+=~For those reasons, little is known about how they have developped meanwhile.~
+==L#FouJ~Anything else?~
+==CVSandrJ~While on the surface still, they were a wizard society and did not worship the gods in general, except for some of the old deities for their magic powers.~
+==L#FouJ~Interesting, they may still serve Mystra or her dark counterpart Shar.~
+==CVSandrJ~If it is really true that you were some sacrifice for the shadow, it definitely excludes Mystra and points directly to Shar.~
+==L#FouJ~I once read a scroll that the Shadow Dragon considered worthless - it was telling a similar tale. I think... they created some enclaves.~EXTERN  L#FouJ 175
+
