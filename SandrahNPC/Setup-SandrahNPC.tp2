@@ -7381,6 +7381,8 @@ EXTEND_TOP
 ~ar0400.BCS~ ~SandrahNPC/Shauhana/ar0400blindorc.baf~
 EXTEND_TOP
 ~ar0700.BCS~ ~SandrahNPC/Shauhana/ar0700nib.baf~
+EXTEND_BOTTOM
+~ar0602.BCS~ ~SandrahNPC/Shauhana/Ar0602Minsc.baf~
 EXTEND_TOP
 ~BG1201.bcs~ ~SandrahNPC/Areas/ar8101shauprev.baf~
 

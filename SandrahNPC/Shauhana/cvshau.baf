@@ -357,8 +357,11 @@ END
 IF
 InParty("CVSandr")
 !InParty("Minsc")
-!Dead("Minsc")
+!AreaCheck("CVSha1")
 Global("SanShauMinsc","GLOBAL",1)
+OR(2)
+GlobalGT("Shausc","LOCALS",0)
+GlobalGT("ShauBrag","LOCALS",0)
 RealGlobalTimerExpired("SanShauMinTi","GLOBAL")
 THEN
 RESPONSE #100

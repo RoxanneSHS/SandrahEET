@@ -1,0 +1,17 @@
+IF
+Global("K#MinscImport","AR0602",0)
+GlobalLT("chapter","GLOBAL",20)
+OR(2)
+StateCheck("Minsc",STATE_REALLY_DEAD)
+!BeenInParty("Minsc")
+OR(2)
+Global("SandrahJoined","GLOBAL",52)
+Global("SandrahJoined","GLOBAL",6)
+THEN
+RESPONSE #100
+CreateCreature("Minsc7",[4029.2759],0) 
+ActionOverride("Minsc",MakeGlobalOverride())
+SetGlobal("K#MinscImport","AR0602",1)
+SetGlobal("Sprite_is_DeadMinsc","Global",0)
+Continue()
+END
