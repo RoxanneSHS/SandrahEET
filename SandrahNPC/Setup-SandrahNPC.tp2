@@ -7447,7 +7447,6 @@ EXTEND_TOP ~Dccdead.bcs~ ~SandrahNPC/Shauhana/Duergar1.baf~
 EXTEND_TOP ~BPWDASGT.bcs~ ~SandrahNPC/Shauhana/CVSh22Bttl.baf~
 EXTEND_TOP ~BPWTSIGT.bcs~ ~SandrahNPC/Shauhana/CVSh22Bttl.baf~
 EXTEND_TOP ~BPWTRSGT.bcs~ ~SandrahNPC/Shauhana/CVSh22Bttl.baf~
-EXTEND_TOP ~Minsc.bcs~ ~SandrahNPC/Shauhana/MinscClean.baf~
 COPY ~SandrahNPC/Shauhana/BPDUEGIS.SPL~ ~override/BPDUEGIS.SPL~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ar4330.are~ THEN BEGIN
