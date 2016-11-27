@@ -62,5 +62,5 @@ SetGlobal("SPRITE_IS_DEADMINSC","GLOBAL",0)
 CreateCreature("Minsc12",[1178.1386],6)
 ActionOverride("Minsc",SetGlobal("IWasKickedOut","LOCALS",1))
 ActionOverride("Minsc",SetNumTimesTalkedTo(1))
-ActionOverride("Minsc",SetDialog("MINSCP_"))
+ActionOverride("Minsc",SetDialog("MINSCP"))
 END
