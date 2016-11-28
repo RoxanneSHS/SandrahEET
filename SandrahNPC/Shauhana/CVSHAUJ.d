@@ -267,6 +267,6 @@ CHAIN
 IF~~THEN TRGyp02 GypShauFortn
 ~Impressive...your heritage is indeed very special and it is the source of your future.~
 ==CVShauJ~ Another of those prophesies then (sigh), will I ever find out what it all means?~
-==TRGyp02~Nothing to be afraid of, right? Orcs are strong, one like you is even stronger and...you are among friends that will make you succeed, have faith in yourself.~
+==TRGyp02~Nothing to be afraid of, right? Orcs are strong, one like you is even stronger and...you are among friends who will make you succeed, have faith in yourself.~
 ==TRGyp02 IF~ InParty("Minsc")~THEN~(Her eyes wander to where Minsc is standing nearby) Hold on to those you have found and trust your heart.~
 ==CVShauJ~I will. What else can I do anyway?~ DO ~ActionOverride(Player1,SetDialogue("Player1"))~EXIT
