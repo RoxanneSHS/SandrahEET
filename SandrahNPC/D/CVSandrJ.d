@@ -5144,15 +5144,6 @@ INTERJECT_COPY_TRANS SHANDAL2 15 UlghMag
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ NOT A WORD TO ME ANYMORE!~
 END
 
-//Keldath & Red Wizards
-INTERJECT_COPY_TRANS KELDDA 20 SanRedWizHateK
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ The red scum! Dealing with demonic powers they can hardly control at all - but what do those Thayans care about the consequences of their misuse of magic!~
-==KELDDA IF ~ InParty("CVSandr")~ THEN ~ A priestess of Mystra will surely make them aware of what evil they do.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It will be a lesson that will come too late for them, good Keldath, as they cannot make any use of it after I have dealt with them.~
-==KELDDA IF ~ InParty("CVSandr")~ THEN ~ Your hatred for them seems to root deeper than usual with the servants of Mystra.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Calm) Yes, it does.~
-END
-
 // Volo
 
 INTERJECT_COPY_TRANS VOLO 2 Knowbetter
