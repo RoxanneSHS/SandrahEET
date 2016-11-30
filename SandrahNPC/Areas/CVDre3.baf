@@ -12,6 +12,7 @@ RestorePartyLocations()
 Wait(2)
 FadeFromColor([20.0],0)
 EndCutSceneMode()
+RestParty()
 END
 
 IF
