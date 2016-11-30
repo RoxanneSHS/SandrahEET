@@ -223,10 +223,10 @@ CHAIN
 IF WEIGHT #-2~PartyHasItem("SuSaBo") Global("Nashtalk","LOCALS",1) ~THEN CVFINCH 62
 ~ Hello, fellow bookworms, how did you fare?~
 DO~SetGlobal("Nashtalk","LOCALS",2)~
-==BSANDRBSANDR~ Finch, you will not believe it, but we have met your cousin Clarissa Bloomwhiffler in Waterdeep.~
-==CVFINCHCVFINCH ~ The little old sweet bookworm Clarissa. Just to think I could be like her if I had not gone out to the road. All theories, no practical experience at all.~
-== BSANDRBSANDR ~ Yes, Finch, you have emerged quite a bit. But back to Clarissa, she gave us a book to deliver to you.~ DO ~ TakePartyItem("SuSaBo")  ~
-==CVFINCHCVFINCH ~ Great Deneir, it is really Monteelah's famous essay on the Virtue of Wisdom. Excuse me, I have to get back into my shell as a bookworm - (laughs)- at last for a little while. This book is not too thick. It takes mere minutes for me to copy it. Keep the original for your studies, will you.~ DO~EscapeArea()~
-== BSANDRBSANDR ~ (Laughs)~
+==BSANDR~ Finch, you will not believe it, but we have met your cousin Clarissa Bloomwhiffler in Waterdeep.~
+==CVFINCH ~ The little old sweet bookworm Clarissa. Just to think I could be like her if I had not gone out to the road. All theories, no practical experience at all.~
+== BSANDR ~ Yes, Finch, you have emerged quite a bit. But back to Clarissa, she gave us a book to deliver to you.~ DO ~ TakePartyItem("SuSaBo")  ~
+==CVFINCH ~ Great Deneir, it is really Monteelah's famous essay on the Virtue of Wisdom. Excuse me, I have to get back into my shell as a bookworm - (laughs)- at last for a little while. This book is not too thick. It takes mere minutes for me to copy it. Keep the original for your studies, will you.~ DO~EscapeArea()~
+== BSANDR ~ (Laughs)~
 DO ~ EraseJournalEntry(@111) GiveItemCreate("SuSaBo","Sufinch",0,0,0) SetGlobal("Bloomw","GLOBAL",6) AddexperienceParty(5000) RealSetGlobalTimer("BloomwT","GLOBAL",4800)~ EXIT
 
