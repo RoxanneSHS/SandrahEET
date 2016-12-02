@@ -34,7 +34,7 @@ DO~SetGlobal("SanIsraTalk","GLOBAL",7) RealSetGlobalTimer("SanIsraDel","GLOBAL",
 ==BRH#ISRA~I have observed that you care much for your fellowbeings, the other day I even saw you casting a healing spell on a wounded bird.~
 ==BSandr~I am aware that the powers of the Weave are a two-sided affair. You have observed well where my priority lies.~EXIT
 
-EXTEND_BOTTOM RH#IsrJ 1669
+EXTEND_TOP RH#IsrJ 1669 #1
 IF~InParty("CVSandr")~THEN REPLY~Sandrah?~GOTO IsrSanCommt2
 IF~InParty("CVJenlig")~THEN REPLY~Jen'lig?~ GOTO IsrJenCommt2
 END

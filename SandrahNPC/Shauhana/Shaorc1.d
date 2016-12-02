@@ -198,6 +198,7 @@ END
 
 IF~~THEN BEGIN Open2
 SAY~You follow the Creek 'Ulthak north and then east past the Shaman's hut and the mill to our village Hai 'Ulthak, the residence.~
+=~Watch out friends, some Vennegrat traitor orcs are still around here and there.~
 IF~~THEN REPLY~Fine, we can find that.~DO~SetGlobal("SanHintFactory","GLOBAL",8)~EXIT
 END
 
