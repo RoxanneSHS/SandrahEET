@@ -29,9 +29,9 @@ IF WEIGHT #-5~Global("SanIsraTalk","GLOBAL",6)~THEN BRH#ISR Santhird3
 ~I was not aware that Mystra was the goddess of healers as well.~
 DO~SetGlobal("SanIsraTalk","GLOBAL",7) RealSetGlobalTimer("SanIsraDel","GLOBAL",1100)~
 ==BSandr~Many judge my goddess by the deeds of the mediocre mages and spellcasters they encounter too often. Mystra is the guardian of the Weave, the power that hold everything in our multiverse together. The Weave provides power to destroy or to repair.~
-==BRH#ISRA~Obviously you have the gift to use the Weave in both ways at an impressive level.~
+==BRH#ISR~Obviously you have the gift to use the Weave in both ways at an impressive level.~
 ==BSandr~(Sigh) I am often forced to use the destructive aspect to help our group, however it is the healer's ability that attracted me to my goddess primarily.~
-==BRH#ISRA~I have observed that you care much for your fellowbeings, the other day I even saw you casting a healing spell on a wounded bird.~
+==BRH#ISR~I have observed that you care much for your fellowbeings, the other day I even saw you casting a healing spell on a wounded bird.~
 ==BSandr~I am aware that the powers of the Weave are a two-sided affair. You have observed well where my priority lies.~EXIT
 
 EXTEND_TOP RH#IsrJ 1669 #1
