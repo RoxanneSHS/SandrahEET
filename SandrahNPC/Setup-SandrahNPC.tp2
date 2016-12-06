@@ -2999,6 +2999,10 @@ WRITE_ASCII 0x280 ~cvassasT~
 COPY ~SandrahNPC\CRE/CVWDArch.CRE~ ~override\CVWDArch.CRE~
 SAY NAME1 @769
 SAY NAME2 @769
+
+COPY ~SandrahNPC\CRE/CVWDArc2.CRE~ ~override\CVWDArc2.CRE~
+SAY NAME1 @769
+SAY NAME2 @769
                               
 COPY ~SandrahNPC\CRE/CVWDPri.CRE~ ~override\CVWDPri.CRE~
 SAY NAME1 @770
