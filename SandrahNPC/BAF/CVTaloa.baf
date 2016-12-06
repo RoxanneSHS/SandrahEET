@@ -4,7 +4,6 @@ See(NearestEnemyOf(Myself))
 Range(NearestEnemyOf(Myself),20)
 THEN
 RESPONSE #100
-ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
 ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
 ForceSpell(SecondNearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
 ForceSpell(NearestEnemyOf(Myself),WIZARD_TRUE_DISPEL_MAGIC)
@@ -26,6 +25,7 @@ SetGlobal("daudeath","LOCALS",1)
 END
 
 IF
+GlobalGT("Chapter","Global",12)
 Global("fear","LOCALS",0)
 GlobalTimerExpired("fearme","LOCALS")
 See(NearestEnemyOf(Myself))
@@ -37,6 +37,7 @@ SetGlobal("fear","LOCALS",1)
 END
 
 IF
+GlobalGT("Chapter","Global",12)
 Global("prison","LOCALS",0)
 GlobalTimerExpired("poisoner","LOCALS")
 See(NearestEnemyOf(Myself))
@@ -49,6 +50,7 @@ SetGlobal("prison","LOCALS",1)
 END
 
 IF
+GlobalGT("Chapter","Global",12)
 Global("sphere","LOCALS",0)
 GlobalTimerExpired("prismatic","LOCALS")
 Range(NearestEnemyOf(Myself),6)
@@ -60,6 +62,7 @@ SetGlobal("sphere","LOCALS",1)
 END
 
 IF
+GlobalGT("Chapter","Global",12)
 Global("sphere2","LOCALS",0)
 GlobalTimerExpired("prismatic2","LOCALS")
 See(NearestEnemyOf(Myself))
