@@ -6,6 +6,7 @@ Area graphics updated for PVRZ
 Journal Upgrade for weidu 2.40 and better
 
 SoD NPC banter files ressurected
+More robust check for crossmod candidates
 
 Sandrah HP bug fixed
 Tenya recognises bowl

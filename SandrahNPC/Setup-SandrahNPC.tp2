@@ -5810,7 +5810,7 @@ COMPILE ~SandrahNPC/Mods/NTAshma.baf~
 PRINT ~ Sandrah NTotSC part added~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~b!gavin.cre~ THEN BEGIN
+ACTION_IF (FILE_CONTAINS ~WeiDU-BGEE.log~ ~gavin\.tp2. #[0-9]+ #2~) BEGIN
 COMPILE ~SandrahNPC/Mods/bgavinsan.d~
 EXTEND_BOTTOM ~CVSandra.bcs~ ~SandrahNPC/Mods/GavinSanNo.baf~
 PRINT ~ Gavin detected - Sandrah part added~
