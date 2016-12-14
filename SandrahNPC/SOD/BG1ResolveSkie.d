@@ -111,14 +111,14 @@ CHAIN
 IF~~ THEN CVSandrJ KillskieF3
 ~Oh, I was referring to HER heritage...~
 =~*She stops for a moment, looking at you questioningly.*~
-=~I see...you never suspected...I thought you knew. Well, then - Skie is another Bjaalspawn.~
+=~I see...you never suspected...I thought you knew. Well, then - Skie is another Bhaalspawn.~
 END
 ++~What? Are you sure?~ + KillskieF4
 ++~Sandrah, please, you start to see Bhaalspawns everywhere these days.~+ KillskieF4
 
 CHAIN
 IF~~ THEN CVSandrJ KillskieF4
-~Please, I am not hysteric. Just look at the facts we have.~
+~Please, I am not hysterical. Just look at the facts we have.~
 =~The hooded man, Irenicus as we know by now, was always referring to another candidate before he finally captured you. I falsly assumed he meant Caelar, but no.~
 =~Remember Skie's conduct during the Dragonspear campaign.~
 END
