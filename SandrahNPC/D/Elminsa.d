@@ -257,7 +257,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Many paths did I travel but nothing alike did I encounter until present days. The old scripts werst correct when it cometh to Elminster.~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ I enjoy the balance that is present in this place wherever I cast my eyes. ~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ This place has connection to the planes itself. It's an isle of different matter and time, almost like our towns on the Astral Plane. Wonderous.~
-==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~ My cöwled teachers would tremble when facing this legendary master. In company other than my present one, I would tremble too, I guess.~
+==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~ My cowled teachers would tremble when facing this legendary master. In company other than my present one, I would tremble too, I guess.~
 == Elminsa IF~ InParty("CVJenlig") ~ THEN ~It is rare that a creature like thee comes to our Prime. My best wish for thine mission, githling.~
 == BSANDR ~ Let me show you the gardens and the view of the endless sea, my friends. ~
 END
