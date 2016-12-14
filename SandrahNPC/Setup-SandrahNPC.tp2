@@ -1870,6 +1870,16 @@ SAY NAME1 Setta
 SAY NAME2 Setta
 END
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~cm1800a1.CRE~ THEN BEGIN
+COPY ~SandrahNPC/Mods\cm1800a1.CRE~ ~override~
+SAY NAME1 ~Black Talon Elite~
+SAY NAME2 ~Black Talon Elite~
+
+COPY ~SandrahNPC/Mods\cmirone.CRE~ ~override~
+SAY NAME1 ~Black Talon General~
+SAY NAME2 ~Black Talon General~
+END
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~dw#cut1.bcs~ THEN BEGIN
 COMPILE ~SandrahNPC/werewolf~   USING  ~SandrahNPC/werewolf/english.tra~
 END
