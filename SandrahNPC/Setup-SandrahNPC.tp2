@@ -4097,12 +4097,17 @@ SAY NAME2 @914
 SAY UNIDENTIFIED_DESC @951
 SAY DESC @915
 
+COPY ~SandrahNPC/ITM/Elmpin.itm~ ~override/Elmpin.itm~
+SAY NAME1 @995
+SAY NAME2 @995
+SAY UNIDENTIFIED_DESC @995
+SAY DESC @996
+
 COPY ~SandrahNPC/ITM/myscurs.itm~ ~override/myscurs.itm~
 COPY ~SandrahNPC/ITM/IMOSLHP1.ITM~ ~override/IMOSLHP1.ITM~
 COPY ~SandrahNPC/ITM/CVlotwy.ITM~ ~override/CVlotwy.ITM~
 COPY ~SandrahNPC/ITM/myscurs.spl~ ~override/myscurs.spl~
 COPY ~SandrahNPC/ITM/myscurs2.spl~ ~override/myscurs2.spl~
-COPY ~SandrahNPC/ITM/Elmpin.itm~ ~override/Elmpin.itm~
 COPY ~SandrahNPC/ITM/sanmys1.itm~ ~override/sanmys1.itm~
 COPY ~SandrahNPC/ITM/sanmys2.itm~ ~override/sanmys2.itm~
 COPY ~SandrahNPC/ITM/sanmys3.itm~ ~override/sanmys3.itm~

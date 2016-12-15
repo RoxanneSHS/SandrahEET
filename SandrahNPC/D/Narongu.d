@@ -88,7 +88,7 @@ END
 
 IF ~~ THEN BEGIN AlzAtt
 SAY ~ WHAT? ARE YOU STUPID? ~
-IF ~~ THEN REPLY ~(Sandra whispers again) <CHARNAME>, Don not try to be my guardian against this creature, he is too mighty for us. We must find a better way than to fight him. ~ GOTO Recons
+IF ~~ THEN REPLY ~(Sandrah whispers again) <CHARNAME>, Don not try to be my guardian against this creature, he is too mighty for us. We must find a better way than to fight him. ~ GOTO Recons
 IF ~~ THEN REPLY ~ No more talking! ~ GOTO AlzFight
 END
 
