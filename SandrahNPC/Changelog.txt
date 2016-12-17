@@ -7,6 +7,7 @@ Journal Upgrade for weidu 2.40 and better
 
 SoD NPC banter files ressurected
 More robust check for crossmod candidates
+Missing resources added
 
 Sandrah HP bug fixed
 Tenya recognises bowl
