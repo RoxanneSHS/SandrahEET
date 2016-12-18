@@ -3305,12 +3305,28 @@ INTERJECT_COPY_TRANS UDSOLA01 79 SanMeetsPhaere
 =~(You cannot but notice the slight uncertainty in Phaere's voice and the questioning look she gives Sandrah. A glance at Solaufein assures you that he observed the same.)~
 END
 
-INTERJECT_COPY_TRANS UDSOLA01 104 SanSolSnif
+INTERJECT UDSOLA01 104 SanSolSnif
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ Whoever you are in Ched Nasad and why you came to our city, you impress me each time anew. You risk a lot but you are not foolish, you seem to have the power to back up your plan. But I will not wiggle free of one bondage to exchange it with the next one, mind that. For the case at hand - all you are required to do is bring back some artefact to the witch that makes her believe you did the deed.~
-END
+END UDSOLA01 107
+
+INTERJECT UDSOLA01 103 SanSolSnifa
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+DO~SetGlobal("SanSolSnif","Global",1)~
+== UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
+== UDSOLA01 IF ~InParty("CVSandr")~THEN~ Whoever you are in Ched Nasad and why you came to our city, you impress me each time anew. You risk a lot but you are not foolish, you seem to have the power to back up your plan. But I will not wiggle free of one bondage to exchange it with the next one, mind that. For the case at hand - all you are required to do is bring back some artefact to the witch that makes her believe you did the deed.~
+END UDSOLA01 107
+
+INTERJECT UDSOLA01 102 SanSolSnifb
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+DO~SetGlobal("SanSolSnif","Global",1)~
+== UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
+== UDSOLA01 IF ~InParty("CVSandr")~THEN~ Whoever you are in Ched Nasad and why you came to our city, you impress me each time anew. You risk a lot but you are not foolish, you seem to have the power to back up your plan. But I will not wiggle free of one bondage to exchange it with the next one, mind that. For the case at hand - all you are required to do is bring back some artefact to the witch that makes her believe you did the deed.~
+END UDSOLA01 107
 
 INTERJECT_COPY_TRANS UDARDUL 65 SanMMInt1b
 == UDARDUL IF ~InParty("CVSandr")~THEN~ You, priestess, wait! Is that the one you were talking about, silly girl?~
