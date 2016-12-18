@@ -369,12 +369,13 @@ SAY~ Yes, I do. In addition I want you to be aware that those who remain in the 
 IF~GlobalGT("Sanpoints","GLOBAL",120) Global("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack4
 IF~GlobalLT("Sanpoints","GLOBAL",121) Global("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack5
 IF~GlobalGT("Sanpoints","GLOBAL",120) GlobalLT("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack6
-IF~GlobalLT("Sanpoints","GLOBAL",120) GlobalLT("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack7
+IF~GlobalLT("Sanpoints","GLOBAL",121) GlobalLT("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack7
 END
 
 IF ~~THEN BEGIN SoulBack4
 SAY~ You have surely grown as much inside as outside, my love. Only a leader like you can bring out such dedication and love in ones companions. Others may have hirelings and armies of thralls - you have much more than that.~
-IF~~THEN EXIT
+IF~Global("SanHintFactory","Global",35)~THEN EXIT
+IF~!Global("SanHintFactory","Global",35)~THEN GOTO SoulBack11
 END
 
 IF ~~THEN BEGIN SoulBack5
@@ -412,6 +413,14 @@ IF ~~THEN BEGIN SoulBack10
 SAY~It is now the right point to remind you that I myself have yet to accomplish my quest. Let us find out what this Book That Writes Itself has to tell me.~
 IF~~THEN REPLY~Sure. I will stand by you in this just as you did for me.~EXIT
 IF~~THEN REPLY~You said your path would be mine. It looks like you are making now too much extra demands. I say nay.~GOTO SoulBack9
+END
+
+IF ~~THEN BEGIN SoulBack11
+SAY~Still, it is now the right point to remind you that I myself have yet to accomplish some quest. I have to find out about that orc godchild who was pointed out to us by the blind orc shaman.~
+=~You are too busy to follow your own affairs. You have a right to decide this way and I can and will not stop you. Neither can you alter my course, it seems.~
+IF~~THEN REPLY~ You are right, I need to follow my destiny.~GOTO SoulBack9
+IF~~THEN REPLY~ I would happily discuss further quests with you once this here is all over...~GOTO SoulBack9
+IF~~THEN REPLY~ You have tried to manipulate me more than once to divert from my tasks. This has to stop.~ GOTO SoulBack9
 END
 
 IF~Global("SanAfterJon","GLOBAL",4)~THEN BEGIN BhaalDream
