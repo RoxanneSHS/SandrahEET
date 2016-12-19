@@ -3622,6 +3622,15 @@ END
 
 //Dealing With Solaufein
 
+ADD_TRANS_TRIGGER UDSOLA01 117 
+~!InParty("CVSandr")~
+
+EXTEND_BOTTOM UDSOLA01 117
+IF ~InParty("CVSandr")~ THEN REPLY ~No, Solaufein. I was sent here to kill you... time to die, fool.~ EXTERN CVSANDRJ NotKillSola
+IF ~InParty("CVSandr")~ THEN REPLY ~I'm sorry, Solaufein... I have no choice. I have to kill you.~ EXTERN CVSANDRJ NotKillSola
+IF ~InParty("CVSandr")~ THEN REPLY ~Phaere sent me to kill you, Solaufein, but I'm not going to do it.~ EXTERN UDSOLA01 119
+END
+
 ADD_TRANS_TRIGGER UDSOLA01 121 
 ~!InParty("CVSandr")~
 
