@@ -1623,6 +1623,54 @@ SetGlobal("KiyoOut","GLOBAL",0)
 END
 
 IF
+HasItemEquiped("dsshld53","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("dsshld53",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
+HasItemEquiped("bdring10","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("bdring10",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
+HasItemEquiped("helm07","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("helm07",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
+HasItemEquiped("F_Grioun","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("F_Grioun",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
+HasItemEquiped("cmarq09","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("cmarq09",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
+HasItemEquiped("cmbtq01","CVSandr")
+THEN
+RESPONSE #100
+GiveItem("cmbtq01",Player1)  
+DisplayStringWait(Myself,@997) 
+END
+
+IF
 HPGT(Myself,100)
 LevelLT(Myself,9)
 THEN
