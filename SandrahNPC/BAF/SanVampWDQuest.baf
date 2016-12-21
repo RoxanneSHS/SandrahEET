@@ -17,7 +17,7 @@ SetGlobal("SanVampWDQuest","GLOBAL",2)
 END
 
 IF
-Global("Chapter","GLOBAL",19)
+GlobalGT("Chapter","GLOBAL",17)
 GlobalLT("SanVampWDQuest","GLOBAL",2)
 THEN
 RESPONSE #100
@@ -31,6 +31,7 @@ AreaType(OUTDOOR)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 CombatCounter(0)
 !See([ENEMY])
+!AreaCheck("ar2500")
 Delay(12)
 THEN
 RESPONSE #100
