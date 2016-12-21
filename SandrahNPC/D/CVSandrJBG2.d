@@ -1490,14 +1490,14 @@ IF~~THEN REPLY ~ I will have my family on my mind as well as my companions when 
 END
 
 IF~~THEN BEGIN SanExtraDuty2
-SAY~ You have learned a bit about responsibility and leadership by now, I guess. And you know you can always count on a couselor that loves you and Shar-Teel dearly.~
+SAY~ You have learned a bit about responsibility and leadership by now, I guess. And you know you can always count on a couselor who loves you and Shar-Teel dearly.~
 = ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 END
 
 IF~~THEN BEGIN SanExtraDuty3
-SAY~ No doubt about that - in the same way she made Waterdeep a safer place even before the child was born. But there are other necessities than just the material ones, like having the beloved father of her child near her often. You know you can always rely on a couselor that loves you and Shar-Teel dearly.~
+SAY~ No doubt about that - in the same way she made Waterdeep a safer place even before the child was born. But there are other necessities than just the material ones, like having the beloved father of her child near her often. You know you can always rely on a couselor who loves you and Shar-Teel dearly.~
 = ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
@@ -1505,7 +1505,7 @@ END
 
 
 IF~~THEN BEGIN SanExtraDuty4
-SAY~ No doubt about that - and you can always count on a couselor that loves you and Shar-Teel dearly.~
+SAY~ No doubt about that - and you can always count on a couselor who loves you and Shar-Teel dearly.~
 = ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
