@@ -19,6 +19,7 @@ END
 IF
 GlobalGT("Chapter","GLOBAL",17)
 GlobalLT("SanVampWDQuest","GLOBAL",2)
+Global("DrizztEncounter","GLOBAL",1)
 THEN
 RESPONSE #100
 SetGlobal("SanVampWDQuest","GLOBAL",2)
