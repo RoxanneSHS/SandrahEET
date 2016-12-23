@@ -10,7 +10,7 @@ INTERJECT_COPY_TRANS BHFABIO 0 SanFab1
 ==BHFABIO IF ~ InParty("CVSandr") ~ THEN ~ I have never been to...little Sandrah?..eh...~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Little angry Sandrah with a mighty angry hammer in her hand. So, you have never made it to Ankhapur, I guess - nor to any other place outside of this tavern!~
 ==BHFABIO IF ~ InParty("CVSandr") ~ THEN ~ I-I-I was about...believe me..Oh, no, you won't believe me anymore, I guess...~ DO ~ SetGlobal("SanFab2","GLOBAL",1)~
-== IMOEN2_IF ~ InParty("CVSandr") InParty("Imoen2")~ THEN ~ So you know some more people on this island, Sandrah?~ 
+== IMOEN2_ IF ~ InParty("CVSandr") InParty("Imoen2")~ THEN ~ So you know some more people on this island, Sandrah?~ 
 END
 
 INTERJECT_COPY_TRANS BHGRELUS 4 Sangrel
