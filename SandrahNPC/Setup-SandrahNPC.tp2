@@ -6282,11 +6282,6 @@ EXTEND_TOP
 ~Krdemlch.bcs~ ~SandrahNPC/BAF/SanDelich.baf~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~Coran8.cre~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/coranbg2.d~
-PRINT ~ Coran BG2 detected - Sandrah's relationship continued~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~C6Coran.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/coranbg2c6.d~
 PRINT ~ Coran BG2 detected - Sandrah's relationship continued~
