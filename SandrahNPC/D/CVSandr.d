@@ -27,7 +27,7 @@ IF ~~ THEN REPLY ~ I can trust no one out here. I'm sorry. Maybe another day? ~ 
 END
 
 IF ~~ AnotherDay
-SAY ~I will wait for you. Think about it, <CHARNAME>, for Gorion's sake. (As you turn to leave you feel forlorne, like walking into a growing darkness - why did you not trust her?)~
+SAY ~I will wait for you. Think about it, <CHARNAME>, for Gorion's sake.~
 IF ~~ THEN DO ~ AddJournalEntry(@12,INFO) ~ EXIT
 END
 
@@ -81,7 +81,7 @@ IF ~~ THEN REPLY ~ Oh, no! She is a pain and a headache. You say that all of thi
 END
 
 IF ~NumTimesTalkedToGT(0) ~ THEN BEGIN SecondChance
-SAY ~I see you have returned, <CHARNAME>. (Suddenly you start to feel a comfort and warmness growing inside you.)~
+SAY ~I see you have returned, <CHARNAME>. ~
 IF ~~ THEN REPLY ~ Well, I think I must trust someone or I'm lost. Something tells me you are sent to help me, Sandrah, come with me.~ GOTO SanJoin
 END
 
