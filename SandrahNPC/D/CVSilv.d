@@ -59,7 +59,7 @@ IF~~ THEN CVSILV Wanderers6
 ==CVSANDRJ~ You do not need to, just nod if I am right.~
 =~Sarevok?~
 ==CVSILV ~(The silver dragon nods his mighty head.)~
-==CVSANDRJ~ Mhm, and we was granted access because his blood entitled him to...~
+==CVSANDRJ~ Mhm, and he was granted access because his blood entitled him to...~
 ==CVSILV ~(The silver dragon nods again.)~
 ==CVSANDRJ~And the second - Jon Irenicus?~
 ==CVSILV ~BRAAAH !!!! That false intruder attempted it but he had no blood of his own for justification.~
