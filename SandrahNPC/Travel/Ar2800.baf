@@ -8,6 +8,7 @@ END
 
 IF
 Global("SanSuElfHeal","GLOBAL",3)
+CombatCounter(0)
 THEN
 RESPONSE #100
 SetGlobal("SanSuElfHeal","GLOBAL",4)
