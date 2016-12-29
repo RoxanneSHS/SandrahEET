@@ -4,13 +4,14 @@ Global("CvSarevokCutsceneStart","Global",1)
 THEN
 RESPONSE #100
 SetGlobal("CvTimerSet","cvsare",1)
-SetGlobalTimer("CvKillSarevok","cvsare",SEVEN_MINUTES)
+SetGlobalTimer("CvKillSarevok","cvsare",TEN_MINUTES)
 ApplySpell(Player1,WIZARD_HOLD_PERSON)
 END
 
 IF
+OR(2)
 GlobalTimerExpired("CvKillSarevok","cvsare")
-Global("CvSarevokCutsceneStart","Global",1)
+Dead("CVsCutsa")
 THEN
 RESPONSE #100
 SetGlobal("CvSarevokCutsceneStart","Global",2)

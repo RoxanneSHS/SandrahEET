@@ -1729,3 +1729,30 @@ ReallyForceSpellRES("CVR260",Myself)
 Wait(6)
 ReallyForceSpellRES("CVReset",Myself)
 END
+
+IF
+Global("CVSareded","Global",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetGlobal("CVSareded","Global",2)
+StartCutSceneMode()
+Wait(2)
+FadeToColor([20.0],0)
+Wait(1)
+StorePartyLocations()
+Wait(2)
+SetCursorState(TRUE)
+StartCutScene("CVSDSare")
+END
+
+IF
+Global("CVSareded","Global",3)
+!AreaCheck("CVSare")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("CVSareded","Global",0)
+SetGlobal("CvSarevokCutsceneStart","Global",0)
+SetGlobal("Sprite_Is_DeadCVsCutsa","Global",0)
+END

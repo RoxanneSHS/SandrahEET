@@ -1,5 +1,5 @@
 IF
-Global("CvSarevokCutsceneStart","Global",1)
+AreaCheck("CVSare")
 THEN
 RESPONSE #25
 AttackReevaluate("cvscutse",10)
