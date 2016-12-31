@@ -2771,7 +2771,7 @@ END
 IF ~~ THEN BEGIN  rainbFav4
 SAY ~ (Laughs) <CHARNAME>, you really have a talent for the *wrong* question. I do not have one. Today I lust for a bowl of Waterdeep fishsoup, but probably just because there is no chance to get one. And you could make me happy with a very fresh piece of deer loin. But I am afraid with our hunting talents that will as well remain an illusion.~
 =~ You see, it has some advantage to remain flexible. Whatever lands on our dining table tonight, might just turn out to become my favourite dish.~
-IF ~~ THEN REPLY ~ One thing I can make sure for you. You will love the desert. Here is a little appetizer. (Kiss her on the lips.)~ DO ~ SetGlobal("rainbFav","LOCALS",1)~ EXIT
+IF ~~ THEN REPLY ~ One thing I can make sure for you. You will love the dessert. Here is a little appetizer. (Kiss her on the lips.)~ DO ~ SetGlobal("rainbFav","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanMkStake5
@@ -5127,7 +5127,7 @@ ADD_TRANS_TRIGGER GALKEN 3
 ~!InParty("CVSandr")~
 
 INTERJECT GALKEN 3 BetterNow
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Rather than to wait for some far away treasures that may or may not exist, I would be interested in that wine - and especially the desert thereafter - right here and now.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Rather than to wait for some far away treasures that may or may not exist, I would be interested in that wine - and especially the dessert thereafter - right here and now.~
 == GALKEN IF ~ InParty("CVSandr")~ THEN ~ Wow, an unexpected offer from a lady who could not be expected to come into such quarters very often.  How about moving over to the fireplace, mylady, and exploring our possibilities in more depth.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ A splendid thought, dear friend, let us not hesistate. ~
 == GALKEN IF ~ InParty("CVSandr")~ THEN ~ ....~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
