@@ -124,7 +124,7 @@ IF~~THEN REPLY~ Very good, I almost forgot it, but my sweet counselor did not. G
 END
 
 IF~~THEN BEGIN  SanWKStory1
-SAY~ As Odren has told you, the imprisonment of the evil creature goes back to the Times of Trouble. Unconfirmed lore has it that not only gods walked on Faerun in their avatars but also creatures of the Abyss including Demogorgon himself. Only Helm was allowed to maintain his status as a god by Ao's verdict. It is therefore a plausible assumption that the Keep holds such an avatar.~
+SAY~ As Odren has told you, the imprisonment of the evil creature goes back to the Time of Troubles. Unconfirmed lore has it that not only gods walked on Faerun in their avatars but also creatures of the Abyss including Demogorgon himself. Only Helm was allowed to maintain his status as a god by Ao's verdict. It is therefore a plausible assumption that the Keep holds such an avatar.~
 IF~~THEN REPLY~You mean the Prince of Demons waits for us down there?~ GOTO SanWKStory2
 IF~~THEN REPLY~We are to fight the Overlord of the Abyss? That is sheer madness!~ GOTO SanWKStory2
 END
