@@ -20,7 +20,6 @@ RESPONSE #100
 CreateCreatureObjectOffset("CVTALOP1",Player1,[100.100])
 CreateCreatureObjectOffset("CVTALOW1",Player1,[-100.-100])
 CreateCreatureObjectOffset("CVTALOW1",Player1,[125.-100])
-CreateCreatureObjectOffset("CVTALOW1",Player1,[-130.-125])
 SetGlobal("Talosangr","BG1200",2)
 END
 

@@ -51,7 +51,6 @@ RESPONSE #100
 SetGlobal("MoreTalos","BG0900",1)
 CreateCreature("CVTALOW1",[3802.2036],0)  
 CreateCreature("CVTALOW1",[4168.1924],2)
-CreateCreature("CVTALOW1",[4112.2095],0)
 END
 
 IF
