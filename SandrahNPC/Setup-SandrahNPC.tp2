@@ -1003,8 +1003,8 @@ COPY ~SandrahNPC\Areas/CVcrxwLM.bmp~ ~override\CVcrxwLM.bmp~
 COPY ~SandrahNPC\Areas/CVcrxwSR.bmp~ ~override\CVcrxwSR.bmp~
 
 COPY ~SandrahNPC\Areas/CVJens.ARE~ ~override\CVJens.ARE~
-     SAY 0x1bd0 @848
-     SAY 0x1c04 @847
+     SAY 0x1be4 @848
+     SAY 0x1c18 @847  
      SAY 0x1628 @849
      SAY 0x16ec @850
      COMPILE     ~SandrahNPC/Areas/cvjens.baf~
