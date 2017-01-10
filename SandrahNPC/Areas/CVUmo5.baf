@@ -64,3 +64,13 @@ RESPONSE #100
 SetGlobal("YasVis","CVUMO5",1)
 ActionOverride("Yasraena",SetGlobal("YasUmo5","LOCALS",1))
 END
+
+IF
+InParty("CVSandr")
+PartyHasItem("CVQCall") 
+Global("Reduce","CVUMO5",0)
+THEN
+RESPONSE #100
+SetGlobal("Reduce","CVUMO5",1)
+ActionOverride("CVSandr",ReallyForceSpellRES("CVRM40",Myself))
+END
