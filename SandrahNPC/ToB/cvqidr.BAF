@@ -52,8 +52,11 @@ Global("SanQuidPC","LOCALS",1)
 !Allegiance(Myself,ENEMY)
 THEN
 RESPONSE #100
-EscapeAreaMove("CVUmo5",855,570,13)
-ActionOverride("CVSandr",EscapeAreaMove("CVUmo5",825,580,13))
+ActionOverride("CVSandr",LeaveParty())
+MoveGlobal("CVUmo5","CVSandr",[825.580])
+Wait(2)
+MoveGlobalObject("Pellig","CVSandr")
+EscapeAreaMove("CVUmo5",855,570,SEE)
 SetGlobal("SanQuidPC","LOCALS",2)
 SetGlobal("SandrahJoined","GLOBAL",25)
 END
