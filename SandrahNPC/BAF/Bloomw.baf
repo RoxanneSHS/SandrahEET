@@ -40,3 +40,13 @@ RESPONSE #100
 MoveToObject(Player1)
 StartDialogNoSet("Bloomw")
 END
+
+IF
+Global("Bloomw","GLOBAL",8)
+!AreaCheck("CVEBS1")
+Global("Imustmove","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("Imustmove","LOCALS",1)
+EscapeAreaMove("CVEBS1",294,355,NWW)
+END

@@ -3,6 +3,7 @@ BEGIN BLOOMW
 CHAIN
 IF ~ Global("Bloomw","GLOBAL",1)~ THEN BLOOMW BloReUn
 ~ O Great Deneir, that is our girl Finch!~
+DO~SetGlobal("Bloomw","GLOBAL",8)~
 == IF_FILE_EXISTS BSUFINCH ~ Clarissa, old bookworm, so good to see you. How is everybody?~
 == BLOOMW ~ Old bookworm yourself, we are all so busy all the time, nothing has changed at all. But you, what has happened to you in all the time?~
 == IF_FILE_EXISTS BSUFINCH ~ I am travelling with the party of <CHARNAME>. I have scribbled tomes full of our glorious deeds along the Sword Coast. I am setting up my own library for the people in Nashkel with the help of my friends.~
@@ -22,12 +23,12 @@ END
 CHAIN
 IF ~~ THEN BLOOMW BloRePr
 ~ I will tell that to the rest, thank you, <PRO_SIRMAAM>.~
-DO ~ SetGlobal("Bloomw","GLOBAL",8) ReputationInc(1) EscapeAreaMove("CVEBS1",294,355,5)~ EXIT
+DO ~ ReputationInc(1) EscapeAreaMove("CVEBS1",294,355,5)~ EXIT
 
 CHAIN
 IF ~~ THEN BLOOMW BloReInp
 ~ You are a nasty person, I am sorry for poor Finch for having to endure you.  ~
-DO ~ SetGlobal("Bloomw","GLOBAL",8) ReputationInc(-1) EscapeAreaMove("CVEBS1",294,355,5)~ EXIT
+DO ~  ReputationInc(-1) EscapeAreaMove("CVEBS1",294,355,5)~ EXIT
 
 CHAIN
 IF ~ Global("Bloomw","GLOBAL",2)~ THEN Bloomw BloSUQ
