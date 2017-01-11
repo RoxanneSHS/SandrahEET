@@ -24,7 +24,7 @@ END
 
 IF~~ THEN BEGIN SanAneWeavTh5
 SAY~ That is exactly what I think myself, my competent leader. The agression is the work of mortals and we are called to aid AO and Mystra as it is our plane that is the battlefield - and down here our gods always require our strength and support as they are vulnerable in their avatars.~
-IF~~THEN REPLY~ Wow, you and me aiding...like Midnight and her companions in the Times of Trouble.~GOTO SanAneWeavTh6
+IF~~THEN REPLY~ Wow, you and me aiding...like Midnight and her companions in the Time of Troubles.~GOTO SanAneWeavTh6
 IF~~THEN REPLY~ Is that your role here, Sandrah, just like your grandmother before you? All these hints we have found about you following her footsteps? We must contemplate this.~ GOTO SanAneWeavTh6
 END
 

@@ -6708,6 +6708,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~zanegh.are~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/aneghSan.d~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Mods/aneghSan.baf~
+EXTEND_BOTTOM
+~CVSan25.bcs~ ~SandrahNPC/Mods/aneghSan.baf~
 PRINT ~ Tales of Anegh detected - Sandrah part added~
 END ELSE BEGIN
   PRINT ~Tales of Anegh not detected - Sandrah part skipped ~

@@ -72,3 +72,19 @@ THEN
 RESPONSE #100
 SetGlobal("SanKhalBlood","GLOBAL",3)
 END
+
+IF
+CombatCounter(0)
+InParty(Myself)
+!See([ENEMY])
+See(Player1)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+OR(4)
+Global("ZDreamSzene1","GLOBAL",4)
+Global("ZDreamSzene1","GLOBAL",6)
+Global("ZDreamSzene1","GLOBAL",8)
+Global("ZDreamSzene1","GLOBAL",10)
+THEN
+RESPONSE #100
+StartDialogNoSet("CVSandr")
+END
