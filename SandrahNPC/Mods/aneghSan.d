@@ -73,7 +73,7 @@ END
 IF~~ THEN BEGIN NomoTrait8
 SAY~ Sweet charmer, thank you. What I meant is that they all let someone else have control over them, even if they all try to break the chain after a while. But it is always too late, as the evil spawn inside has already developped too far.~
 IF~~THEN REPLY~ If I see it right it was the same for me, just that the one who had control was a wise harper named Gorion and his influence was just the opposite to what those others experienced. And then came a priestess who never tired to get me moving along unharmed.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
-IF~~THEN REPLY~ Neither Gorion nor yourself would have allowed such. I know very well by now that you and your hammer would have ended my existance before I could grow into such a monster.~ EXIT
+IF~~THEN REPLY~ Neither Gorion nor yourself would have allowed such. I know very well by now that you and your hammer would have ended my existence before I could grow into such a monster.~ EXIT
 END
 END
 
