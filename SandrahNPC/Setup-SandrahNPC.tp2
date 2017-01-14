@@ -1349,6 +1349,8 @@ EXTEND_BOTTOM
 ~ar0330.bcs~ ~SandrahNPC/Areas/ar0330fill.baf~
 EXTEND_TOP
 ~ar2401.bcs~ ~SandrahNPC/Areas/ar2401journ.baf~
+EXTEND_TOP
+~ar5505.bcs~ ~SandrahNPC/Areas/Ar5505Conv.baf~
 EXTEND_BOTTOM
 ~ar2900.bcs~ ~SandrahNPC/Areas/ar2900san.baf~
 EXTEND_TOP
