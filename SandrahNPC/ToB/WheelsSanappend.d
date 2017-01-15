@@ -2,10 +2,10 @@ APPEND Balth
 
 IF WEIGHT #-17 ~Global("DMWWmeldeathdialog","GLOBAL",3)Dead("sendai")Dead("abazigal")!Global("HadBhaal25Dream5","GLOBAL",1)~ THEN BEGIN Sanwhatnow1
 SAY ~It is done! <CHARNAME>, it is over! We are the last of the Bhaalspawns - Melissan is dead, the rest of the Five are dead! I was right to trust you. Together we have withstood Bhaal's evil taint.~
-IF ~~ THEN REPLY ~Is it over, though? What of Bhaal, himself? Is he still dead?~ GOTO 206
-IF ~Global("DMWWBvMEnd","GLOBAL",2)~ THEN REPLY ~What did Melissan mean, though? Is Bhaal still going to rise?~DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~ GOTO 206
-IF ~!Global("DMWWBvMEnd","GLOBAL",2)~ THEN REPLY ~I spoke to the spirit of Yaga-Shura. He seemed sure that Bhaal was still rising, even so.~DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~ GOTO 206
-IF ~~ THEN REPLY ~It's not quite over yet, Balthazar. You're standing between me and godhood. Time to die, trusting fool.~ DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 205
+IF ~~ THEN REPLY ~Is it over, though? What of Bhaal, himself? Is he still dead?~ GOTO 207
+IF ~Global("DMWWBvMEnd","GLOBAL",2)~ THEN REPLY ~What did Melissan mean, though? Is Bhaal still going to rise?~DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~ GOTO 207
+IF ~!Global("DMWWBvMEnd","GLOBAL",2)~ THEN REPLY ~I spoke to the spirit of Yaga-Shura. He seemed sure that Bhaal was still rising, even so.~DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~ GOTO 207
+IF ~~ THEN REPLY ~It's not quite over yet, Balthazar. You're standing between me and godhood. Time to die, trusting fool.~ DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 206
 END
 END
 
