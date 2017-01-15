@@ -8071,10 +8071,19 @@ COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
         END ~~
         
 APPEND ~racetext.2da~
-~GITHYANKI  152        34273      -1         72732         -1~
+~GITHYANKI  152        34273      -1         34273         -1~
 UNLESS ~GITHYANKI~
 
 COPY_EXISTING ~CVJenlig.CRE~ ~override~
+    LPF ADD_CRE_EFFECT INT_VAR opcode = 53 
+    target = 1 
+    parameter1 = 32532  
+    parameter2 = 2 
+    timing = 9
+END
+BUT_ONLY
+
+COPY_EXISTING ~CVJen25.CRE~ ~override~
     LPF ADD_CRE_EFFECT INT_VAR opcode = 53 
     target = 1 
     parameter1 = 32532  
