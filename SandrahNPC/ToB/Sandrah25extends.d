@@ -304,12 +304,35 @@ EXTEND_BOTTOM Yaga02 8
 IF~ GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
 END
 
+EXTEND_BOTTOM Yaga02 10
+IF~ !Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
+END
+
+EXTEND_BOTTOM Yaga02 10
+IF~ Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S41
+END
+
+EXTEND_BOTTOM Yaga02 11
+IF~ !Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
+END
+
+EXTEND_BOTTOM Yaga02 11
+IF~ Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S41
+END
+
 CHAIN
 IF~~THEN Yaga02 S40
 ~Qi...who?~
 ==Solar~Who?...~
 END
 ++~Ah, nevermind...I mean, Balthasar still is alive.~+9
+
+CHAIN
+IF~~THEN Yaga02 S41
+~Qi...who?~
+==Solar~Who?...~
+END
+++~Ah, nevermind...I mean, go on.~+12
 
 
 EXTEND_BOTTOM CHALCY01 1
