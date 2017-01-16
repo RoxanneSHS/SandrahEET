@@ -80,6 +80,7 @@ RESPONSE #100
 ClearAllActions()
 SetMasterArea("CVROA1")
 ActionOverride("Haiass",SetNumTimesTalkedTo(1))
+ActionOverride("Haiass",ReallyForceSpellRES("CVReset",Myself))
 Continue()
 END
 

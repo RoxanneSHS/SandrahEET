@@ -449,7 +449,6 @@ Global("KeldornBio","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("KeldornBio","GLOBAL",1)
-TextScreen("KELDORND")
 SmallWait(1)
 ActionOverride("Keldorn",LeaveParty())
 ActionOverride("Keldorn",DestroySelf())
@@ -758,6 +757,17 @@ RESPONSE #100
 SmallWait(1)
 ActionOverride("lrirenic",LeaveParty())
 ActionOverride("lrirenic",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("RChloe")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("RChloe",LeaveParty())
+ActionOverride("RChloe",EscapeAreaMove("AR0709",480,445,S))
 Continue()
 END
 
