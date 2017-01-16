@@ -706,7 +706,7 @@ IF~~THEN REPLY~You mean...there is a way to use that essence for another purpose
 END
 
 IF~~THEN BEGIN EvilPrincFin3
-SAY~I say, it is us - no, in this final case it will be you, you alone - that will be the final obstacle for anyone to use the essence that Bhaal left behind.~
+SAY~I say, it is us - no, in this final case it will be you, you alone - who will be the final obstacle for anyone to use the essence that Bhaal left behind.~
 =~Which ultimately will mean, this essence will be in your hands, should we succeed. It will be at your disposal.~
 IF~Alignment(Player1,MASK_EVIL)~THEN REPLY~Are you implying that I...that I will have the choice to raise Bhaal or to replace him?~DO~SetGlobal("SanWhichWay","ar4500",2)~GOTO EvilPrincFin4
 IF~!Alignment(Player1,MASK_EVIL)~THEN REPLY~Are you implying that I...that I will have the choice to raise Bhaal or to replace him?~DO~SetGlobal("SanWhichWay","ar4500",2)~GOTO EvilPrincFin8

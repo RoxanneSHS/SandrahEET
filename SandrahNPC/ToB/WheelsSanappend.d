@@ -9,7 +9,7 @@ IF ~~ THEN REPLY ~It's not quite over yet, Balthazar. You're standing between me
 END
 END
 
-EXTEND_BOTTOM Balth 212
+EXTEND_BOTTOM Balth 213
 IF~InParty("CVSandr") GlobalGT("San25ChiQuest","GLOBAL",12)~THEN REPLY~ Melissan can never succeed as she does not even know that a large portion of the essence still exists elsewhere. Do you think it is safe to tell our new ally about it, Sandrah?~ EXTERN CVSan25J SanBaltQuil1
 END
 
