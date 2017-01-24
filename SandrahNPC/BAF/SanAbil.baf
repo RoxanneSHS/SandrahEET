@@ -1574,6 +1574,17 @@ END
 
 IF
 Global("SanResurAva","GLOBAL",2)
+DifficultyGT(NORMAL)
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",3)
+IncrementGlobal("SanKillBG1","GLOBAL",15)
+ApplyDamagePercent("CVSandr",49,CRUSHING)
+ApplySpell("CVSandr",CLERIC_HOLD_PERSON)
+END
+
+IF
+Global("SanResurAva","GLOBAL",2)
 THEN
 RESPONSE #100
 SetGlobal("SanResurAva","GLOBAL",3)

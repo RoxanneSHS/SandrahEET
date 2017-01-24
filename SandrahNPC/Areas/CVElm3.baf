@@ -38,6 +38,35 @@ END
 
 IF
 Global("SanWDTemplWi","GLOBAL",7)
+DifficultyGT(NORMAL)
+Delay(5)
+THEN
+RESPONSE #100
+ClearAllActions()
+SetInterrupt(FALSE)
+StartCutSceneMode()
+ActionOverride("CVSandr",TakePartyItem("CVLeybod")) 
+Wait(2)
+ActionOverride("CVSandr",DestroyItem("CVLeybod")) 
+Wait(4)
+CreateVisualEffectObject("SPDIMNDR",Player1)
+CreateVisualEffectObject("SPDIMNDR",Player2)
+CreateVisualEffectObject("SPDIMNDR",Player3)
+CreateVisualEffectObject("SPDIMNDR",Player4)
+CreateVisualEffectObject("SPDIMNDR",Player5)
+CreateVisualEffectObject("SPDIMNDR",Player6)
+Wait(4)
+ApplyDamagePercent("CVSandr",49,CRUSHING)
+ApplyDamagePercent(Player1,40,CRUSHING)
+Wait(4)
+CreateCreatureObject("CVLeyG",Myself,0,0,0) 
+ActionOverride("CVLeyG",MoveToObject("CVSandr"))
+EndCutSceneMode()
+SetGlobal("SanWDTemplWi","GLOBAL",8)
+END
+
+IF
+Global("SanWDTemplWi","GLOBAL",7)
 Delay(5)
 THEN
 RESPONSE #100

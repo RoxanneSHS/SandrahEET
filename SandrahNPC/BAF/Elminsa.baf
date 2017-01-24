@@ -23,6 +23,39 @@ END
 
 IF
 Global("ElmRevDau","GLOBAL",4)
+DifficultyGT(NORMAL)
+THEN
+RESPONSE #100
+SetGlobal("ElmRevDau","GLOBAL",5)
+ActionOverride(Player1,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ActionOverride(Player2,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ActionOverride(Player3,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ActionOverride(Player4,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ActionOverride(Player5,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ActionOverride(Player6,ForceSpell(Myself,LOSE_FIVE_LEVELS))
+ApplyDamagePercent(Player1,49,CRUSHING)
+ApplyDamagePercent(Player2,45,CRUSHING)
+ApplyDamagePercent(Player3,45,CRUSHING)
+ApplyDamagePercent(Player4,34,CRUSHING)
+ApplyDamagePercent(Player5,45,CRUSHING)
+ApplyDamagePercent(Player6,45,CRUSHING)
+TakePartyItem("SanArmM")
+TakePartyItem("SanHamM")
+TakePartyItem("Sanport")
+TakePartyItem("Sandoll")
+TakePartyItem("SanParc")
+TakePartyItem("Sanwdsty")
+TakePartyItem("GIFTOFM")
+TakePartyItem("SanBook")
+TakePartyItem("SanAmul")
+TakePartyItem("SanRing")
+TakePartyItem("SanHamy")
+TakePartyItem("SanRin2")
+TakePartyItem("CVMidshi")
+END
+
+IF
+Global("ElmRevDau","GLOBAL",4)
 THEN
 RESPONSE #100
 SetGlobal("ElmRevDau","GLOBAL",5)

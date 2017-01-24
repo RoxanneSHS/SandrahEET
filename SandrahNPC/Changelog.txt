@@ -4,6 +4,7 @@ VERSION 2.03
 All Three Parts
 Area graphics updated for PVRZ
 Journal Upgrade for weidu 2.40 and better
+Adjustments if higher difficulty levels are chosen by player
 
 SoD NPC banter files ressurected
 More robust check for crossmod candidates
