@@ -45,6 +45,16 @@ SetGlobal("EntJar1","AR0602",0)
 END
 
 IF
+GlobalLT("SanToBg2","Global",4)
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanToBg2","Global",6)
+ActionOverride("CVSandr",DestroySelf())
+ActionOverride("CVSandr",LeaveParty())
+END
+
+IF
 Global("Itempomml","GLOBAL",0)
 PartyHasItem("SW1H54C")
 THEN
