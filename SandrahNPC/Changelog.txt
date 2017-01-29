@@ -13,6 +13,7 @@ Missing resources added
 Sandrah HP bug fixed
 Sandrah cannot use some items
 Tenya recognises bowl
+Pai'na NPC survives Viconia/Sandrah quest
 
 Added Afaaq Crossmod
 Added Tenya NPC Crossmod
