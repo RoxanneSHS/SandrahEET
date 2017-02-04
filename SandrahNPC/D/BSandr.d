@@ -6354,7 +6354,7 @@ END
 ++ ~ Let us take as much as we can anyhow. We will sell it and use the money to do some good on the Sword Coast. I will see to it that no life was lost here without a purpose. Otherwise the treasure will just raise the greed of other evil minds.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 
 CHAIN
-IF ~ Global("SanSuBH","GLOBAL",30)InParty("Imoen2") GlobalGT("OrcPrison","GLOBAL",25)~ THEN BSANDR BloodyMoney3
+IF ~ Global("SanSuBH","GLOBAL",30)InParty("Imoen2") GlobalGT("OrcPrison","GLOBAL",23)~ THEN BSANDR BloodyMoney3
 ~  The papers seem to be the real treasure here. I will need to take them along and study why so many had to die for them. All this other treasures here are soiled with blood.~
 DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == Bimoen~ Scary to think of all the many and many people dead or zombied for this. Dontcha think we can make something good from it. Take this loot and distribute it to ones who had suffered from the pirates and such.~
