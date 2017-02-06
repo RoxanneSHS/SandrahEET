@@ -429,6 +429,19 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("L#Fou")
+Global("L#FouBIO","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("L#FouBIO","GLOBAL",1)
+SmallWait(1)
+ActionOverride("L#Fou",LeaveParty())
+ActionOverride("L#Fou",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("Yasraena")
 Global("YasraenaBio","cvrtf1",0)
 THEN
