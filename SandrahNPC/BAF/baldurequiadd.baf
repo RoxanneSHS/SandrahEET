@@ -1,78 +1,87 @@
 IF
-PartyHasItem("Sanbook")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanbook")
 THEN
 RESPONSE #100
 TakePartyItem("Sanbook") 
+Continue()
 END
 
 IF
-PartyHasItem("Sanparc")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanparc")
 THEN
 RESPONSE #100
 TakePartyItem("Sanparc") 
+Continue()
 END
 
 IF
-PartyHasItem("Sanamul")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanamul")
 THEN
 RESPONSE #100
 TakePartyItem("Sanamul")
+Continue()
 END
 
 IF
-PartyHasItem("Sanhamm")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanhamm")
 THEN
 RESPONSE #100
 TakePartyItem("Sanhamm")
+Continue()
 END
 
 IF
-PartyHasItem("Sanarmm")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanarmm")
 THEN
 RESPONSE #100
 TakePartyItem("Sanarmm")
+Continue()
 END
 
 IF
-PartyHasItem("Sanarmb")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanarmb")
 THEN
 RESPONSE #100
 TakePartyItem("Sanarmb")
+Continue()
 END
 
 IF
-PartyHasItem("Sanring")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanring")
 THEN
 RESPONSE #100
 TakePartyItem("Sanring")
+Continue()
 END
 
 IF
-PartyHasItem("Sanrin2")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanrin2")
 THEN
 RESPONSE #100
 TakePartyItem("Sanrin2")
+Continue()
 END
 
 IF
-PartyHasItem("CVMysclk")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("CVMysclk")
 THEN
 RESPONSE #100
 TakePartyItem("CVMysclk")
+Continue()
 END
 
 IF
-InMyArea("Pellig")
 !Global("SandrahJoined","GLOBAL",1)
+InMyArea("Pellig")
 !AreaCheck("ar0602")
 THEN
 RESPONSE #100
@@ -81,27 +90,30 @@ END
 
 
 IF
-PartyHasItem("Sanhamy")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("Sanhamy")
 THEN
 RESPONSE #100
 TakePartyItem("Sanhamy")
+Continue()
 END
 
 IF
-PartyHasItem("CVMidshi")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("CVMidshi")
 THEN
 RESPONSE #100
 TakePartyItem("CVMidshi")
+Continue()
 END
 
 IF
-PartyHasItem("CVMybelt")
 !Global("SandrahJoined","GLOBAL",1)
+PartyHasItem("CVMybelt")
 THEN
 RESPONSE #100
 TakePartyItem("CVMybelt")
+Continue()
 END
 
 IF
