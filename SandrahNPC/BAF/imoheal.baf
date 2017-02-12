@@ -1,4 +1,13 @@
 IF
+Global("profs","LOCALS",0)
+Class(Myself,MAGE_ALL)
+THEN
+RESPONSE #100
+SetGlobal("profs","LOCALS",1)
+ReallyForceSpellRES("CVImod",Myself)
+END
+
+IF
 Alignment(Player1,MASK_EVIL)
 Global("ImoHousew","GLOBAL",2)
 ReputationGT(Player1,5)
