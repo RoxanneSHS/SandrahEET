@@ -1,6 +1,7 @@
 IF
 Global("profs","LOCALS",0)
 Class(Myself,MAGE_ALL)
+GlobalLT("Chapter","Global",3)
 THEN
 RESPONSE #100
 SetGlobal("profs","LOCALS",1)
