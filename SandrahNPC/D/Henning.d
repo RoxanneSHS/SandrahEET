@@ -187,7 +187,7 @@ DO ~ SetGlobal("SanImoNashInt","GLOBAL",15)~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hm. Man, that was not very clever. One should not been caught in the act like this, believe one who knows.  ~
 == BGARRI IF~ InParty("Garrick") ~ THEN  ~  (Starts to rip a piece of parchment.) This wedding gift is no longer needed, I assume. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Treacherous and cunning. The books of lore are full of deeds from cowards and the revenge done by the strong maidens thus betrayed.~
-== BJAHEIR  IF~ InParty("Jaheira") ~ THEN ~ Oh, Imoen, all my care for you could not prevent this. Let us get the little one away from here immediately, <CHARNAME>. ~ 
+== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ Oh, Imoen, all my care for you could not prevent this. Let us get the little one away from here immediately, <CHARNAME>. ~ 
 == BSANDR ~ (Sandrah takes Imoen's hand and leads her outside.)~
 DO ~
  StartCutSceneMode()

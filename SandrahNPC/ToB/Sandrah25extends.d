@@ -351,11 +351,3 @@ DO ~ClearAllActions()
 StartCutSceneMode()
 StartCutScene("cutch4b")~ EXIT
 
-EXTEND_BOTTOM FinSol01 8
-IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
-END
-
-EXTEND_TOP FinSol01 4 #3
-IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
-IF~InParty("CVSandr") InParty("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 46
-END

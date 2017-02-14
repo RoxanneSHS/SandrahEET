@@ -524,7 +524,7 @@ CHAIN
 IF~Global("JenJaheB","LOCALS",0) InParty("Jaheira") InParty("Khalid") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Jaheirabant
 ~Jen'lig puzzled by concept of marriage on prime. Is ownership of female to enslave best male for breeding?~
 DO~SetGlobal("JenJaheB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
-==BJAHEI~I give you credit that you come from a formerly enslaved race, Jen'lig, but I definitely not enslave Khalid.~
+==BJAHEI~I give you credit that you come from a formerly enslaved race, Jen'lig, but I definitely do not enslave Khalid.~
 ==BKHALI~I hear your w-words, beloved. ~
 ==BJAHEI~We are bound by more than just the need to maintain the race by breeding.~
 ==BKHALI~The act itself m-may be performed with an experienced druid w-w-without needing to fear the consequences. N-now and then, I mean.~

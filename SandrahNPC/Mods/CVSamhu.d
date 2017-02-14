@@ -57,7 +57,7 @@ IF WEIGHT #2
   IF ~~ THEN REPLY  ~He's a merchant we found.  His caravan was attacked by bandits, and he was badly wounded.  He paid us to take him back to Beregost.~  GOTO 11
   IF ~~ THEN REPLY ~This is Samuel.  We want to turn him in for the 50 gold.~ GOTO 40
   IF ~Global("X#KivanSamuel","GLOBAL",0) InParty("kivan") InMyArea("kivan") !StateCheck("kivan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("X#KivanSamuel","GLOBAL",1)~ EXTERN ~KIVANJ~ 218
-IF~InParty("jaheira") InMyArea("jaheira") StateCheck("jaheira",CD_STATE_NOTVALID)~ THEN EXTERN ~BJAHEIR~ 780
+IF~InParty("jaheira") InMyArea("jaheira") StateCheck("jaheira",CD_STATE_NOTVALID)~ THEN EXTERN ~BJAHEI~ 294
 END
 
 IF~~THEN BEGIN 40
@@ -78,7 +78,7 @@ SAY~But...hey, who are you carrying there?~
   IF ~~ THEN REPLY  ~He's a merchant we found.  His caravan was attacked by bandits, and he was badly wounded.  He paid us to take him back to Beregost.~  GOTO 11
   IF ~~ THEN REPLY ~This is Samuel.  We want to turn him in for the 50 gold.~ GOTO 40
   IF ~Global("X#KivanSamuel","GLOBAL",0) InParty("kivan") InMyArea("kivan") !StateCheck("kivan",CD_STATE_NOTVALID)~ THEN DO ~SetGlobal("X#KivanSamuel","GLOBAL",1)~ EXTERN ~KIVANJ~ 218
-IF~InParty("jaheira") InMyArea("jaheira") StateCheck("jaheira",CD_STATE_NOTVALID)~ THEN EXTERN ~BJAHEIR~ 780
+IF~InParty("jaheira") InMyArea("jaheira") StateCheck("jaheira",CD_STATE_NOTVALID)~ THEN EXTERN ~BJAHEI~ 294
 END
 
 IF~~THEN BEGIN 42
