@@ -3134,15 +3134,6 @@ INTERJECT_COPY_TRANS YOSHIMO 6 SanYoshDunNoImo
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ <CHARNAME>, we are close to the surface and the exit now. There are still dangers ahead, as I tried to avoid fighting when I sneaked into this place. I did not want to endanger you by stirring up our foe with battle noises.~
 END
 
-// Drizzt
-INTERJECT DRIZ2 0 SanDriMA
-==  CVSandrJ IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~ Drizzt!!~
-==  DRIZ2 IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~ Sandrah, how unexpected and how wonderful!~
-= ~ (They embrace and kiss each other like in a whirlwind.)~
-==  CVSandrJ IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~Yes, unexpected and wonderful and just like we knew it was going to happen. Let us talk about what happened to each of us once we have escaped this hole.~
-END DRIZ2 7
-
-
 // Freeing Tabitha
 INTERJECT BEAST 0 SanPelligFreeTab
 ==  PELLIG IF ~ InParty("CVSandr") InMyArea("Pellig")~ THEN ~ GROWWWLLL~
@@ -3432,23 +3423,6 @@ IF~~ THEN CVSANDRJ PellFreeLeo3
 CHAIN
 IF~~ THEN CVSANDRJ PellFreeLeo4
 ~ The cowled wizards control all use of magic here in the city. To use those powers without penalty you need to get their approval. Like everything in a city like this, you can get that probably through bribe. We just need to find the right person for that.~ EXIT
-
-//Cult of the Beast
-CHAIN
-IF ~ Global("SanDestBeastCult","GLOBAL",1) ~ THEN CVSANDRJ DestBeastCult
-~ It is time to stop with this, <CHARNAME>! These children you are asked to kill are real this time. We will not spill their blood.~
-DO~ SetGlobal("SanDestBeastCult","GLOBAL",2) ~
-==CultBeH ~ Silly girl, who are you to interfer with this most holy ritual?~
-== CVSandrJ ~ Holy? I have never encountered a gang of miscreeds worse than you and the Beast you worship. We have played along your lines until now to learn all about your cult and its belief. We know enough now and we will end it.~
-==CultBeH ~ You have no idea of the holy powers you are facing.~
-== CVSandrJ ~ You and your beast will scare Toril no longer. It is you who errs about whom he is facing today.~
-==CultBeH ~ (The Highest priest seems to fall into a kind of trance for a minute. As he opens his eyes again you can swear you see sheer panic in his gaze at Sandrah for an instant.) ~
-=~ You. you...who are you really...what amount of power...~
-== CVSandrJ ~ I am Sandrah, priestess of Mystra, and I am your destructor.~
-==CultBeH ~ A mere priestess...I see...not the goddess herself? Not all is lost then, my fellowers.~
-END
-++~ He took you for Mystra herself? It is time to end this bloody experience.~ EXTERN CULTBEH 53
-++~ You are right, Sandrah, we can learn no more and must stop this cult.~  EXTERN CULTBEH 53
 
 //SanSunRitual
 CHAIN
