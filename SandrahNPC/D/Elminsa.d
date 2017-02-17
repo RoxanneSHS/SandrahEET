@@ -119,8 +119,8 @@ CHAIN
 IF ~~ THEN Elminsa ClP2
 ~  Something that can be the entrance to the depth. Or from the way they see it, the exit to the surface. But <CHARNAME> is a child of these regions, I trust <PRO_HIMHER> to lead thee in this. ~
 END
-IF~!AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(3000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
-IF~!AreaCheck("BG3402")!InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. I remember, Imoen and me used to hike up there. It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(3000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
+IF~!AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(2000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
+IF~!AreaCheck("BG3402")!InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. I remember, Imoen and me used to hike up there. It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(2000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
 IF~ AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
 IF~ AreaCheck("BG3402")!InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. I remember, Imoen and me used to hike up there. It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
 
@@ -136,7 +136,7 @@ IF ~ Global("ElminGaveNarQ","GLOBAL",2) PartyHasItem("SCRLALZ") ~ THEN Elminsa T
 ~ Ah, thou have returned with the scroll. Have you found out even more?~
 == CVSandrJ ~ A talking demonish scroll and maybe a key to a portal.~
 END
-++ ~ We seek your further advice on it. Sandrah has found out some things, but we are not sure of the proper things to do now. You said that much on the Sword Coast depends on acting the right way on this matter. ~ DO ~AddexperienceParty(3000)EraseJournalEntry(@71) AddJournalEntry(@73,QUEST_DONE)~+ GaveNarQ3
+++ ~ We seek your further advice on it. Sandrah has found out some things, but we are not sure of the proper things to do now. You said that much on the Sword Coast depends on acting the right way on this matter. ~ DO ~AddexperienceParty(2000)EraseJournalEntry(@71) AddJournalEntry(@73,QUEST_DONE)~+ GaveNarQ3
 
 CHAIN
 IF ~ Global("ElminGaveNarQ","GLOBAL",2) !PartyHasItem("SCRLALZ") ~ THEN Elminsa ThalWoScr
@@ -182,7 +182,7 @@ IF ~~ THEN Elminsa NarqLie
 = ~ (As he hugs and kisses Sandrah again, you see him slip a small parcel into  her robe.) ~ DO ~ GiveItemCreate("SanParc","CVSandr",0,0,0)
 SetGlobal("SanparcT","GLOBAL",1)
 AddJournalEntry(@77,QUEST_DONE) 
-AddexperienceParty(10000)
+AddexperienceParty(5000)
 SetGlobal("SanNarQ","GLOBAL",7)
 TakePartyItem("EShard")
 EraseJournalEntry(@13)
@@ -209,7 +209,7 @@ IF ~~ THEN Elminsa NarqLeft1
 = ~ (As he hugs and kisses Sandrah again, you see him slip a small parcel into  her robe.) ~ DO ~ GiveItemCreate("SanParc","CVSandr",0,0,0)
 SetGlobal("SanparcT","GLOBAL",1)
 AddJournalEntry(@77,QUEST_DONE) 
-AddexperienceParty(10000)
+AddexperienceParty(5000)
 SetGlobal("SanNarQ","GLOBAL",7)
 TakePartyItem("EShard")
 EraseJournalEntry(@13)
@@ -310,8 +310,8 @@ CHAIN
 IF~ Global("SanAcadMission","GLOBAL",3)~ THEN Elminsa SendAcad
 ~ A good day to thee, famous heroes. A welcome sight for an old man - and a father. ~
 DO ~ SetGlobal("SanAcadMission","GLOBAL",4)~
-== BSANDR IF ~ AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you, father, about the reason we have come.~ DO ~ AddexperienceParty(33000)~
-== BSANDR IF ~ !AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you faster than we could make it to Waterdeep ourselves, father.~ DO ~ AddexperienceParty(11000)~
+== BSANDR IF ~ AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you, father, about the reason we have come.~ DO ~ AddexperienceParty(11000)~
+== BSANDR IF ~ !AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you faster than we could make it to Waterdeep ourselves, father.~ DO ~ AddexperienceParty(6000)~
 == Elminsa ~ Good lore indeed but also a difficult situation arising from that. With thy friends help thou hath finally been able to give that hateful Academy a blow it long has deserved. 'tis I sense the presence of an artifact that wouldst allow us to take that blow even deeper into the heart of the enemy.~
 == BSANDR ~ I sensed myself, that the fibula we have gained may be the entry into the Academy itself. A chance like we will not get easily again.~
 == Elminsa ~ (Elminster strokes his beard in deep thought.) True, true. But knowest, Sandrah, 'tis not anonymity that guards thee this time. The enemy will know and attack thee on sight.~

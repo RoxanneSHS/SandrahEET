@@ -506,7 +506,7 @@ END
 
 IF~~ THEN BEGIN SanPackW31
 SAY~ This is not over yet, <CHARNAME>, and some bloodshed may not be avoidable after all. Kaishas mentioned their chieftain who was send out to arrange their escape from the island. She said that maybe he will not so peacefully remove the *gift* from us. Selaad, who misused us from the very beginning in the most cunning way under his Mendas disquise.~ 
-IF~~ THEN DO ~SetGlobal("SanPackW","LOCALS",6) AddexperienceParty(5800)~ EXIT
+IF~~ THEN DO ~SetGlobal("SanPackW","LOCALS",6) AddexperienceParty(3800)~ EXIT
 END
 
 //Red Wizards in East Wood
@@ -838,7 +838,7 @@ END
 IF ~~ THEN BEGIN KhaDead2
 SAY ~ We should anyway search this area for eventual remainders of Kharaz's army. We do not want our halfling friends to be hurt, right?~
 = ~ Given the lack or organisation among the ogres, we may still encounter their *normal* attacks from time to time. Like you mentioned some time ago, they have always been a plague, Valiant or no Valiant.~
-IF~~ THEN REPLY ~ They never were much of a threat to us, but these Kharaz Tribe ones seem to be more dangerous. You are right, let us clean the area before we move on.~ DO ~ SetGlobal("ValiantKN","GLOBAL",16) AddexperienceParty(4200) ~EXIT
+IF~~ THEN REPLY ~ They never were much of a threat to us, but these Kharaz Tribe ones seem to be more dangerous. You are right, let us clean the area before we move on.~ DO ~ SetGlobal("ValiantKN","GLOBAL",16) AddexperienceParty(2200) ~EXIT
 END
 
 // Donate Pirate Treasure
@@ -2448,7 +2448,7 @@ DO ~ReputationInc(1) RealSetGlobalTimer("BeregOrphOpen","GLOBAL",3600)~
 ==Bimoen ~ That changes now. And there is also this bag of lotsa gold. The orc that had it for stealing my boy away does not need a coin of it anymore. It's enough for a lotta clothes and food for a lotsa boys 'n' girls for a long and long time.~ 
 == KELDDA ~ All of that is in good hands with us, lady Imoen. I see that you and your friends cannot stay yourself to see us go to work right away. You have already done much and I can see that you are determined to put this intrigue to a final end. The next time you pass Beregost you will be able to see the first results of the project, I assure you.~
 END
-++ ~ And I assure you, that we will have good news about the destruction of the ones behind all of this trouble when we see each other next time. Farewell. ~ DO ~ AddexperienceParty(11200)~
+++ ~ And I assure you, that we will have good news about the destruction of the ones behind all of this trouble when we see each other next time. Farewell. ~ DO ~ AddexperienceParty(5200)~
 EXIT
 
 CHAIN
@@ -2501,7 +2501,7 @@ DO ~ SetGlobal("SanImoRetWD","GLOBAL",7) ~
 == Henning2 ~ Through your father's channels I already have been in contact with Karaea in Nashkel, so she will run the business down there for the time. And I have met with Clarissa, the local bookmerchant. Her business is flourishing, but her abilities in organisation and bookkeeping are a bit chaotic, to say the least. So we already have agreed that I will start to organise that part of her business for a while.~
 == Narqmes ~ Your father has given a suite of unused rooms in the west wing to the young couple for their free use, Miss Sandrah.~
 == Henning2 ~ If your friends do not mind, I would like to show this nest to my sweetest girl...~
-==Bimoen ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(22000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+==Bimoen ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(4000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
@@ -4691,7 +4691,7 @@ DO ~ SetGlobal("SanDSOTSCUW","GLOBAL",7)~
 == BVicon ~ This would indeed be disturbing news. The matron mothers themselves would not dare to openly or secretly act against the Bregan D'aerthe. ~
 == BSANDR ~ The question is, what they do here, so close to the surface of the Sword Coast and at a time where we have this crisis up there.~
 == BVicon ~ Jarlaxle is known to take any chance for large scale bloodshed and expansion of his power he can smell. His cunning mind exceeds the fantasies of the drow females themselves.~
-== BSANDR ~ We can only hope that he is not in league with the Iron Throne and its leaders then.~ DO ~ AddexperienceParty(3100) ~
+== BSANDR ~ We can only hope that he is not in league with the Iron Throne and its leaders then.~ DO ~ AddexperienceParty(2100) ~
 EXIT
 
 // Two Cleric Lovers at Inn
@@ -6421,7 +6421,7 @@ DO~SetGlobal("SanDruids","cvdru0",3) SetGlobal("SanXvartPeace","Global",1)~
 == BMinsc_ IF~ InParty("Minsc") ~ THEN ~ The stench of this evil hole makes Minsc swoon and Boo has even overthrown his breakfast. Good we kicked their butts and they leave the little blue people alone now.~
 == Bfaldo IF~ InParty("Faldorn") ~ THEN ~ We have soiled this place with blood and the earth moans. They might have been mislead by those strange vapours in these caves, but are we so much better than them in what we did? ~
 END
-++~ It was good to return, Sandrah. We cannot bring back the innocent ones we were forced to kill, but we have at least put an end to it.~DO~AddexperienceParty(3000)~EXIT
+++~ It was good to return, Sandrah. We cannot bring back the innocent ones we were forced to kill, but we have at least put an end to it.~DO~AddexperienceParty(1000)~EXIT
 
 // Dynaheir Quest Talks
 
@@ -6796,7 +6796,7 @@ END
 CHAIN
 IF~~THEN Drizzt JoinSan2
 ~Let's go!~
-DO~ReallyForceSpellRES("fjxpmooc",Myself) JoinParty()~EXIT
+DO~JoinParty()~EXIT
 
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",3)~ THEN BSANDR SanDriBG1In
@@ -6909,7 +6909,7 @@ IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_CATTI rescued
 ==CVSandrJ IF~!InParty("F_Drizzt")~THEN~Catti-Brie, at last we have found you! We had to battle our way through the Nine Hells and Drizzt's old foe. And not to mention all the drow that seem to be involved in whatever has fallen upon us here.~
 ==F_Catti~And there is more to come, the darkness from the sky has been drained and used to open a portal to the Abyss with the intention to summon forth the Tanar´ri Balor known as Errtu. The one Drizzt banished to the Abyss for a hundred years. Artemis and Jarlaxe are the ones behind it all because of their hatred for Drizzt and their struggle to see him joining the fallen. The beast has awakened! ~
 ==CVSandrJ~The way out is clear for you.~
-==F_Catti~Friends, the final fight is on!~DO~AddexperienceParty(4500) EscapeArea()~EXIT
+==F_Catti~Friends, the final fight is on!~DO~AddexperienceParty(3500) EscapeArea()~EXIT
 
 CHAIN
 IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_Brueno Searchcatti
@@ -7688,33 +7688,33 @@ EXTEND_TOP KELDDA 0 #1
 APPEND KELDDA
 IF ~~ THEN BEGIN GivePirtres
 SAY ~ A wise decision. This way a bloodstained treasure will be repaid to those who have suffered most from the evil proceedings on the Sword Coast.~
-IF ~NumItemsParty("CVPirbag",1)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",2)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",2)~ THEN REPLY ~ I will donate these two bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(13000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(13000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",4) AddexperienceParty(14000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(13000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(14000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(18000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(3000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(13000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(14000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(18000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these six bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",6) AddexperienceParty(22000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",1)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",2)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",2)~ THEN REPLY ~ I will donate these two bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(3000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(3000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",3)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(4000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(4000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",4)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",4) AddexperienceParty(5000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(3000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(4000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(5000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",5)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(6000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(3000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(4000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(5000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(6000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",6)~ THEN REPLY ~ I will donate these six bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",6) AddexperienceParty(7000) ~ EXIT
 IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate this bag of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",1) AddexperienceParty(2000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(7000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(13000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(14000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(18000) ~ EXIT
-IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these six bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",6) AddexperienceParty(22000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these two bags of pirate treasure~ DO ~ TakePartyItemNum("CVPirbag",2) AddexperienceParty(3000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these three bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",3) AddexperienceParty(4000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these four bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(5000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these five bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",5) AddexperienceParty(6000) ~ EXIT
+IF ~NumItemsParty("CVPirbag",7)~ THEN REPLY ~ I will donate these six bags of pirate treasure~DO ~ TakePartyItemNum("CVPirbag",6) AddexperienceParty(7000) ~ EXIT
 END
 END
 

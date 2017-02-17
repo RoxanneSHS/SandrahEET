@@ -443,7 +443,7 @@ Global("Sancharm","LOCALS",5)
 Delay(6)
 THEN
 RESPONSE #100
-AddXPObject("CVSandr",8000)
+AddXPObject("CVSandr",3000)
 SetGlobal("Sancharm","LOCALS",6)
 END
 
@@ -3750,7 +3750,7 @@ THEN
 RESPONSE #100
 SetGlobal("OrcPrison","GLOBAL",23)
 DisplayStringHead("Imoen2",@263)
-AddexperienceParty(22500)
+AddexperienceParty(9500)
 END
 
 IF
@@ -7987,7 +7987,7 @@ Wait(2)
 DestroyItem("sanwi3")
 Wait(2)
 GiveItemCreate("sanwif",Player1,0,0,0)
-AddexperienceParty(12050)
+AddexperienceParty(7050)
 AddJournalEntry(@213,QUEST)
 EraseJournalEntry(@148)
 EndCutSceneMode()
@@ -8127,7 +8127,7 @@ EraseJournalEntry(@200)
 EraseJournalEntry(@238)
 EraseJournalEntry(@213)
 AddJournalEntry(@359,QUEST_DONE)
-AddexperienceParty(28500)
+AddexperienceParty(10500)
 SetGlobal("Formedcloth","GLOBAL",21)
 RealSetGlobalTimer("SanImoBHScrl","LOCALS",7500)
 END

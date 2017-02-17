@@ -1,10 +1,10 @@
 //Set PID
 
 IF
+Global("SanPidPack","GLOBAL",10)
 !Global("ENDOFBG1","GLOBAL",2)
 GlobalGT("SanVisitedWD","GLOBAL",0)
 GlobalGT("Chapter","GLOBAL",3)
-Global("SanPidPack","GLOBAL",10)
 THEN
 RESPONSE #100
 SetGlobal("SanPidPack","GLOBAL",11)
@@ -12,8 +12,8 @@ END
 
 // Sandrah Gains Mystra Blessings
 IF
-XPGT(Myself,350000)
 Global("SanshProf","LOCALS",0)
+XPGT(Myself,350000)
 !See([ENEMY])
 CombatCounter(0)
 THEN
@@ -24,8 +24,8 @@ ReallyForceSpellRES("CVProf4",Myself)
 END
 
 IF
-XPGT(Myself,400000)
 Global("SanpriProf","LOCALS",0)
+XPGT(Myself,400000)
 !See([ENEMY])
 CombatCounter(0)
 THEN
@@ -35,13 +35,58 @@ ReallyForceSpellRES("CVPriex",Myself)
 END
 
 IF
-GlobalGT("Sanpoints","GLOBAL",24)
 Global("Sancharm","LOCALS",0)
+GlobalGT("Sanpoints","GLOBAL",24)
 THEN
 RESPONSE #100
 SetGlobal("Sancharm","LOCALS",1)
 ReallyForceSpellRES("spin759",Myself)
 AddSpecialAbility("cvcharm")
+END
+
+IF
+Global("Sanhitgain","LOCALS",0)
+LevelGT(Myself,2)
+THEN
+RESPONSE #100
+SetGlobal("Sanhitgain","LOCALS",1)
+ReallyForceSpellRES("BGHP+3",Myself)
+END
+
+IF
+Global("Sanhitgain","LOCALS",1)
+LevelGT(Myself,3)
+THEN
+RESPONSE #100
+SetGlobal("Sanhitgain","LOCALS",2)
+ReallyForceSpellRES("BGHP+3",Myself)
+END
+
+IF
+Global("Sanhitgain","LOCALS",2)
+LevelGT(Myself,5)
+THEN
+RESPONSE #100
+SetGlobal("Sanhitgain","LOCALS",3)
+ReallyForceSpellRES("BGHP+3",Myself)
+END
+
+IF
+Global("Sanhitgain","LOCALS",3)
+LevelGT(Myself,6)
+THEN
+RESPONSE #100
+SetGlobal("Sanhitgain","LOCALS",4)
+ReallyForceSpellRES("BGHP+3",Myself)
+END
+
+IF
+Global("Sanhitgain","LOCALS",4)
+LevelGT(Myself,9)
+THEN
+RESPONSE #100
+SetGlobal("Sanhitgain","LOCALS",5)
+ReallyForceSpellRES("BGHP+5",Myself)
 END
 
 IF
@@ -427,7 +472,7 @@ SetGlobal("SanKillBonus","LOCALS",3)
 AddSpecialAbility("SPIN103")
 AddSpecialAbility("SPIN147")
 ReallyForceSpellRES("spin761",Myself)
-AddXPObject("CVSandr",25000)
+AddXPObject("CVSandr",5000)
 DisplayStringWait(Myself,@357)
 END
 
@@ -441,7 +486,7 @@ RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",4)
 AddSpecialAbility("SPIN112")
 AddSpecialAbility("SPIN477")
-AddXPObject("CVSandr",50000)
+AddXPObject("CVSandr",10000)
 DisplayStringWait(Myself,@357)
 END
 
@@ -535,7 +580,7 @@ CombatCounter(0)
 THEN
 RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",8)
-AddXPObject("CVSandr",25000)
+AddXPObject("CVSandr",11000)
 DisplayStringWait(Myself,@357)
 AddSpecialAbility("CVDrag5")
 END
@@ -548,7 +593,7 @@ CombatCounter(0)
 THEN
 RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",9)
-AddXPObject("CVSandr",30000)
+AddXPObject("CVSandr",12000)
 DisplayStringWait(Myself,@357)
 END
 
