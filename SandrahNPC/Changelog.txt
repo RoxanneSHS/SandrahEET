@@ -1,4 +1,10 @@
-VERSION 2.03
+VERSION 2.04
+-----------------
+All Three Parts
+Overall balancing for EET mega-mod installations
+Successful regression testing of previous beta versions
+
+VERSION 2.03b
 -----------------
 
 All Three Parts
@@ -21,7 +27,7 @@ Added Tenya NPC Crossmod
 Alternative Unseeing Eye Solution
 Low quality movie converted to cutscene
 
-VERSION 2.02
+VERSION 2.02b
 ----------------
 Bhaalspawn Trilogy
 
