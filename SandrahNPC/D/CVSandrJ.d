@@ -37,9 +37,9 @@ IF ~Global("SanResurAva","GLOBAL",1)~ THEN BEGIN SanRessur1
 SAY ~ (Sandrah has knelt down by your fallen comrade and inspects carefully the body.) ~
 IF  ~~THEN REPLY ~ Is there anything you think you can do to help right here?~ DO ~ RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ GOTO GenRess
 IF~ OR(3) HaveSpellParty(CLERIC_RESURRECTION) HaveSpellParty(CLERIC_MASS_RAISE_DEAD) HaveSpellRES("SPJA01") ~THEN REPLY ~ I will let our cleric cast a spell, Sandrah. ~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
-IF ~~ THEN REPLY ~We will take the body to a temple quickly to be ressurected.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~  EXIT
+IF ~~ THEN REPLY ~ We will take the body to a temple quickly to be ressurected.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~  EXIT
 IF~~THEN REPLY ~ We will bury our comrade and mourn for the fallen later.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
-IF~~THEN REPLY ~Another fool gone - but I know my silly healer will not keep quiet until she's wasted her talent on a useless corpse...~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ DO~AddXPObject(Player1,-500)~GOTO GenRess
+IF~~THEN REPLY ~ Another fool gone - but I know my silly healer will not keep quiet until she's wasted her talent on a useless corpse...~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ DO~AddXPObject(Player1,-500)~GOTO GenRess
 END
 
 IF~~THEN BEGIN GenRess
@@ -298,7 +298,7 @@ IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY ~ Far from that, I was just thinki
 IF~ Global("SanRomPath","GLOBAL",1)~THEN REPLY ~ Far from that, I was just thinking of a version of that tale where the prince could adopt this role in order to reward his great heroine with the sweetest of kisses for HIS rescue.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~ GOTO SanDungFi4
 IF ~~THEN REPLY~ (Laugh) You? I more had the feeling you try to protect me, my heroine.~ GOTO SanDungFi5
 IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY~ Surely not, although the thought of it is quite tempting. I could be the great hero to rescue you...and in all the tales such a hero is rewarded by the sweet damsel's kiss.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanDungFi6
-IF~~THEN REPLY~If you wet your silk panties, I'm sure you know a spell to dry them quickly. (You shake your head in disbelief.)~EXIT
+IF~~THEN REPLY~ If you wet your silk panties, I'm sure you know a spell to dry them quickly. (You shake your head in disbelief.)~EXIT
 END
 
 IF~~ THEN BEGIN SanDungFi3
@@ -332,8 +332,8 @@ IF ~~THEN BEGIN SanDungFi12
 SAY ~ Actually I wanted the opposite. It is not the fate I would accept for any of us, to pass down here unnoticed from anyone. I intend to leave a mark on the face of Toril once it is my time to go. ~
 IF~~ THEN REPLY~ Such a mark may be left with different flavours, love. I think I can be assured which type you have in mind.~ GOTO SanDung13
 IF~~THEN REPLY~ My mark on the face of Toril shall be one to be remembered with respect.~ GOTO SanDung13
-IF~~THEN REPLY ~ As long as we leave Toril a better place than how we found it, does it matter whether our deeds are noticed by the public?~ GOTO SanDung13
-IF~~THEN REPLY ~You and me, we have all it needs to become heroes long to be remembered.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanDung13
+IF~~THEN REPLY~ As long as we leave Toril a better place than how we found it, does it matter whether our deeds are noticed by the public?~ GOTO SanDung13
+IF~~THEN REPLY~ You and me, we have all it needs to become heroes long to be remembered.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanDung13
 END
 
 IF~~THEN BEGIN SanDung13
@@ -359,7 +359,7 @@ END
 
 IF ~~ THEN BEGIN PCJonCenteol2
 SAY ~ Never mind, <CHARNAME>. It was just curiosity that made me ask, because I had heard the name before and I was astonished to hear it in a place like this. Probably it does not concern us at all. Hopefully he will never cross our path.~
-IF~~ THEN REPLY ~  I pray for that. We have plenty of opponents that threaten our lives every day - and yours, and yours. ~ DO ~ SetGlobal("CentPC","GLOBAL",2) SetGlobal("SanSpokeCent","LOCALS",1)~ EXIT
+IF~~ THEN REPLY ~ I pray for that. We have plenty of opponents that threaten our lives every day - and yours, and yours. ~ DO ~ SetGlobal("CentPC","GLOBAL",2) SetGlobal("SanSpokeCent","LOCALS",1)~ EXIT
 END
 
 //Talos
@@ -409,15 +409,15 @@ END
 
 //Bassilius
 IF~Global("SanBassil","BG3700",1) ~THEN BEGIN Bassil1
-SAY~(Mumbles) Cyric...this mad priest was at least right in one thing, it is hard to escape the grip of the family...~
-IF~~THEN REPLY~(Look at her questioningly.)~ GOTO Bassil2
-IF~~THEN REPLY~Why does your family come to your mind right now?~ GOTO Bassil2
+SAY~ (Mumbles) Cyric...this mad priest was at least right in one thing, it is hard to escape the grip of the family...~
+IF~~THEN REPLY~ (Look at her questioningly.)~ GOTO Bassil2
+IF~~THEN REPLY~ Why does your family come to your mind right now?~ GOTO Bassil2
 END
 
 IF~~THEN BEGIN Bassil2
-SAY~Did I think aloud, <CHARNAME>...? The mad God of Lies is a disturbing person - but let us move on now, this is no place for prolonged stay.~
-IF~~THEN REPLY~Yes, let's take this symbol to the Temple in Beregost and report our success there.~DO~SetGlobal("SanBassil","BG3700",2)~EXIT
-IF~~THEN REPLY~At least his symbol will bring us good coin at the Temple in Beregost. Let's go and report our success there.~DO~SetGlobal("SanBassil","BG3700",2)~EXIT
+SAY~ Did I think aloud, <CHARNAME>...? The mad God of Lies is a disturbing person - but let us move on now, this is no place for prolonged stay.~
+IF~~THEN REPLY~ Yes, let's take this symbol to the Temple in Beregost and report our success there.~DO~SetGlobal("SanBassil","BG3700",2)~EXIT
+IF~~THEN REPLY~ At least his symbol will bring us good coin at the Temple in Beregost. Let's go and report our success there.~DO~SetGlobal("SanBassil","BG3700",2)~EXIT
 END
 
 
@@ -450,25 +450,25 @@ END
 //Gorion's Dagger
 IF~Global("CVGodag","GLOBAL",2)~THEN BEGIN  Godag1
 SAY~I observe that you study the details of that dagger once again. Is it something special to you, <CHARNAME>?~
-IF~~THEN REPLY~It was Gorion's weapon, about the only physical heritage I've obtained from him.~ GOTO Godag2
-IF~~THEN REPLY~I found it on Gorion's corpse and kept it, assuming it was his own, but....,~ GOTO Godag2
+IF~~THEN REPLY~ It was Gorion's weapon, about the only physical heritage I've obtained from him.~ GOTO Godag2
+IF~~THEN REPLY~ I found it on Gorion's corpse and kept it, assuming it was his own, but....,~ GOTO Godag2
 END
 
 IF~~THEN BEGIN Godag2
 SAY~(She has moved closer to look at the little weapon in your hand.) It has the initial *A* engraved, not a *G* like you would expect.~
-IF~~THEN REPLY~Exactly...that's what was puzzling me as well.~DO~SetGlobal("CVGodag","GLOBAL",3)~GOTO Godag3
+IF~~THEN REPLY~ Exactly...that's what was puzzling me as well.~DO~SetGlobal("CVGodag","GLOBAL",3)~GOTO Godag3
 END
 
 IF~~THEN BEGIN Godag3
 SAY~Are you sure it was his weapon - it may be a hint to those who performed that assault on you?~
-IF~~THEN REPLY~I'm sure it was his, I saw it on him almost daily, even though I never had the chance to see the engraving while he was alive.~GOTO Godag4
+IF~~THEN REPLY~ I'm sure it was his, I saw it on him almost daily, even though I never had the chance to see the engraving while he was alive.~GOTO Godag4
 END
 
 IF~~THEN BEGIN Godag4
 SAY~Hm, in this case Gorion himself received it from someone else and kept it. The design is ancient, it maybe an item he himself inherited from his anchestors.~
-IF~~THEN REPLY~I know nothing about Gorion's past, I must confess, not even the names of his parents if any of them started with *A*.~EXIT
-IF~~THEN REPLY~A heritage or a booty - but then the Gorion I knew was a really peaceful man, not one to loot opponents even if he had them.~EXIT
-IF~~THEN REPLY~The only person I know who played a role in Gorion's life and started with an *A* is that seer Aloundo, everpresent in Candlekeep's walls.~EXIT
+IF~~THEN REPLY~ I know nothing about Gorion's past, I must confess, not even the names of his parents if any of them started with *A*.~EXIT
+IF~~THEN REPLY~ A heritage or a booty - but then the Gorion I knew was a really peaceful man, not one to loot opponents even if he had them.~EXIT
+IF~~THEN REPLY~ The only person I know who played a role in Gorion's life and started with an *A* is that seer Aloundo, everpresent in Candlekeep's walls.~EXIT
 END
 
 IF~Global("CVGodag","GLOBAL",5)~THEN BEGIN  Godag5
@@ -480,23 +480,23 @@ IF~~THEN BEGIN Godag6
 SAY~(She studies the dagger for some time before the responds to you.)~
 =~Nothing too specific, I have to confess, just a few observations.~
 =~By weight and design of the item I would say it was rather designed for a woman than a man.~
-IF~~THEN REPLY~Interesting.~GOTO Godag7
-IF~~THEN REPLY~Yes? Go on.~GOTO Godag7
-IF~~THEN REPLY~Cherchez la femme *A*. ~GOTO Godag7
-IF~~THEN REPLY~A trace to my mother maybe?~GOTO Godag7
+IF~~THEN REPLY~ Interesting.~GOTO Godag7
+IF~~THEN REPLY~ Yes? Go on.~GOTO Godag7
+IF~~THEN REPLY~ Cherchez la femme *A*. ~GOTO Godag7
+IF~~THEN REPLY~ A trace to my mother maybe?~GOTO Godag7
 END
 
 IF~~THEN BEGIN Godag7
 SAY~As a weapon it has not seen much fighting...~
-IF~~THEN REPLY~Gorion was no adventurer as long as I knew him.~GOTO Godag8
-IF~~THEN REPLY~Candlekeep was a peaceful enclosure, I never saw Gorion use a weapon or offensive spell until the day of his death.~  GOTO Godag8
+IF~~THEN REPLY~ Gorion was no adventurer as long as I knew him.~GOTO Godag8
+IF~~THEN REPLY~ Candlekeep was a peaceful enclosure, I never saw Gorion use a weapon or offensive spell until the day of his death.~  GOTO Godag8
 END
 
 IF~~THEN BEGIN Godag8
 SAY~What I meant was, the weapon was not used for fighting even before it came into Gorion's possession. It looks more than a ritual dagger by its original design.~
 =~(She hesitates for a moment.)~
 =~It may just be a silly young girl's imagination, but those ornaments have a sinister impression in my eyes.~
-IF~~THEN REPLY~A sinister ritual dagger? Huh, you mean like one used for some kind of sacrifice or such...?~ GOTO Godag9
+IF~~THEN REPLY~ A sinister ritual dagger? Huh, you mean like one used for some kind of sacrifice or such...?~ GOTO Godag9
 END
 
 IF~~THEN BEGIN Godag9
@@ -992,7 +992,7 @@ END
 
 IF~~THEN BEGIN SanXanPC14
 SAY ~ The whole cure could be easier if I had a bit of assistance with the case?~
-IF~~THEN REPLY ~ Do you mean me, Sandrah?~ GOTO SanXanPC15
+IF~~THEN REPLY~ Do you mean me, Sandrah?~ GOTO SanXanPC15
 IF~~THEN REPLY~ What does that mean, Sandrah? Do you want to involve me also into this case - that is...strange.~ GOTO SanXanPC15
 END
 
@@ -2180,7 +2180,7 @@ SAY ~ (Sandrah walks beside you scanning the area for possible dangers. All seem
 IF ~~ THEN REPLY ~ (You decide there will be better occasions in the future.) ~ DO ~ SetGlobal("SanPidPack","GLOBAL",2)~ EXIT
 IF ~~ THEN REPLY ~ It is good to have you in the party, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Nice1
 IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO StandardComp
-IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
 IF~~THEN BEGIN SanHamCl
@@ -2204,7 +2204,7 @@ IF ~~ THEN REPLY ~ It is good to have you in the party, Sandrah. ~ GOTO Nice2
 IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ GOTO StandardComp2
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
-IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
 IF ~~ THEN BEGIN StandardComp2
@@ -2221,8 +2221,8 @@ IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",3) ~ THEN BEGIN SanPCInit3
 SAY ~ (Sandrah walks beside you scanning the area for possible dangers. It is a good time to get to know her better.) ~
 IF ~~ THEN REPLY ~ Where are you from, Sandrah? ~ GOTO SanWater
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
-IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
-IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
+IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
 IF~~THEN BEGIN SanNoMage1
@@ -2261,9 +2261,9 @@ IF ~ AreaType(FOREST) TimeOfDay(DAY) Global("SanStrBe","LOCALS",0) ~ THEN REPLY 
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
-IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
+IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~ Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
 IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
@@ -2274,10 +2274,10 @@ IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON) ~ THEN REPLY ~ Can you pro
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
-IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
-IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
-IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
-IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~ Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
+IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
+IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
+IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
 IF~~THEN BEGIN SanKnoDrizPC1
