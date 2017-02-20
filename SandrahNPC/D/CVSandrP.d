@@ -2,7 +2,7 @@ BEGIN CVSandrP
 
 IF ~Global("SandrahJoined","GLOBAL",1) GlobalLT("Chapter","Global",22)~ THEN BEGIN KickSPT1
 SAY ~So you want me to leave you out here alone?~
-IF ~~ THEN REPLY ~ Yes, dear Sandrah, you need to rest here for a short while. I will be back soon. I already start to miss you. (Suddenly you feel something like a dark hopelessness around you.) ~ GOTO PT11
+IF ~~ THEN REPLY ~ Yes, Sandrah, you need to rest here for a short while. I will be back soon. ~ GOTO PT11
 IF ~!Global("ENDOFBG1","GLOBAL",2) GlobalLT("SanEndBG1Plot","GLOBAL",5)~ THEN REPLY  ~I think it's best for us to part now, but we may travel together again soon enough. Do you know of any place we can meet later?.~ GOTO PT12
 IF ~Global("ENDOFBG1","GLOBAL",2) ~ THEN REPLY  ~I think it's best for us to part now, but we may travel together again soon enough. Do you know of any place we can meet later?.~ GOTO PT12
 IF~!Global("ENDOFBG1","GLOBAL",2) GlobalGT("SanEndBG1Plot","GLOBAL",4)~ THEN REPLY  ~I think it's best for us to part now, but we may travel together again soon enough. Do you know of any place we can meet later?.~ GOTO PT13
@@ -69,7 +69,7 @@ IF ~~ THEN REPLY ~ You may try as you want, but I will not make the same mistake
 END
 
 IF ~Global("SandrahJoined","GLOBAL",4)~ THEN BEGIN KickSPT4
-SAY ~ (Your heart seems to skip a beat as you see Sandrah standing before you, even sweeter and more beautiful than in you memories.)~
+SAY ~ (Your heart seems to skip a beat as you see Sandrah standing before you, even more beautiful than in you memories.)~
 IF ~~ THEN REPLY ~ (Pretend not to notice her. You know too well the feelings she had for you and you cannot take her back into the group and face all the problems that may arise from that.)~DO~ IncrementGlobal("Sanpoints","GLOBAL",-3)~ EXIT
 IF ~~ THEN REPLY ~ Thanks to Mystra! Here you are, Sandrah, how I have missed you.~ GOTO KickSPT40
 END
