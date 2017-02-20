@@ -8337,6 +8337,39 @@ REPLACE_TEXTUALLY ~JAHEIRA      BDJAHEIB~ ~Jaheira      BJahei    ~
 COPY_EXISTING ~BDBanter.2da~ ~override~
 REPLACE_TEXTUALLY ~KHALID       BDKHALIB~ ~KHALID       BKhali    ~
 
+COPY_EXISTING ~bg2900.ARE~ ~override~
+LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 1985
+    fj_box_top      = 3244
+    fj_box_right    = 2034
+    fj_box_bottom   = 3323
+    fj_cursor_idx   = 28   //door
+    fj_vertex_0     = 1985 + (3296 << 16)
+    fj_vertex_1     = 2034 + (3323 << 16)
+    fj_vertex_2     = 2034 + (3272 << 16)
+    fj_vertex_3     = 1985 + (3244 << 16)
+//    fj_flags        = 0  (PartyRequired)
+    fj_loc_x        = 2009
+    fj_loc_y        = 3284
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = Tran9001
+    fj_destination_area = AR9001
+    fj_destination_name = Exit9000
+  END
+  
+  LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 1913
+    fj_loc_y       = 3301
+    fj_orientation = 5
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = Exit9001
+  END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
 ~SandrahNPC\IWD/SanIWD_Dialogues.d~
