@@ -114,7 +114,7 @@ IF
 	OR(2)
 		!GlobalTimerNotExpired("DMWWCuringBlindness","GLOBAL")
 		!StateCheck(Myself,STATE_BLIND)
-	OR(13)
+	OR(12)
 		AttackedBy([GOODCUTOFF.0.0.0.0.20],DEFAULT)
 		AttackedBy([PC],DEFAULT)
 		AttackedBy([FAMILIAR],DEFAULT)
@@ -127,8 +127,7 @@ IF
 		SpellCastOnMe([ALLY],0)
 		SpellCastOnMe([CONTROLLED],0)
 		SpellCastOnMe([CHARMED],0)
-		StateCheck([ENEMY],RZ_STATE_DISABLED)
-	!GlobalTimerNotExpired("whatthe","LOCALS")
+		!GlobalTimerNotExpired("whatthe","LOCALS")
 THEN
 	RESPONSE #100
 		SetGlobalTimer("whatthe","LOCALS",TWO_ROUNDS)
