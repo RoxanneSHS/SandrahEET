@@ -140,7 +140,7 @@ END
 
 IF~~THEN BEGIN Knowname2
 SAY~Will not have chance for longer use. United force of cadre will destroy them. Sword will return home, (sigh), as will Jen'lig.~
-IF~~THEN DO~AddXPObject("CVJenlig",8000) ~EXIT
+IF~~THEN DO~AddXPObject("CVJenlig",3000) ~EXIT
 END
 
 IF~Global("Goodfight","LOCALS",1)~THEN BEGIN Goodcomm1
@@ -474,7 +474,7 @@ END
 IF~Global("JenFouSem","BG0125",6)~THEN BEGIN FoundSwFin
 SAY~(Hiss) Here is sword Jen'lig set out to find. Here is end of Sarevok from commander.~
 =~Give sword to Jen'lig for keep...please.~
-IF~~THEN REPLY~You deserve it...my githyanki friend.~DO~SetGlobal("JenFouSem","BG0125",7) AddXPObject("CVJenlig",17000) AddXPObject(Player1,17000)ActionOverride("CVJenlig",TakePartyItem("CVyensw2"))~EXIT
+IF~~THEN REPLY~You deserve it...my githyanki friend.~DO~SetGlobal("JenFouSem","BG0125",7) AddXPObject("CVJenlig",7000) AddXPObject(Player1,7000)ActionOverride("CVJenlig",TakePartyItem("CVyensw2"))~EXIT
 END
 
 IF~Global("JenGoHome","bd0130",1)~THEN BEGIN JenLeavePr1
@@ -595,7 +595,7 @@ END
 CHAIN
 IF~~THEN CVJenlij AskJardak
 ~Not use deny, mammal. You on list of murderers.~
-DO~AddXPObject("CVJenlig",8000)~
+DO~AddXPObject("CVJenlig",3000)~
 ==CVJenlij IF~Global("SuninMeetJen","GLOBAL",0)~THEN ~You were with murderers of Kastya, the wounded sword bearer. You tell where sword is.~
 ==CVJenlij IF~Global("SuninMeetJen","GLOBAL",2)~THEN~Sunin dead already. We know sword with Semaj who with Sarevok.~
 ==Jardak IF~Global("SuninMeetJen","GLOBAL",0)~THEN~Who told you, that coward Sunin? Baah, I knew the mage would whine like a girl when meeting your kin.~
@@ -640,8 +640,8 @@ IF~~THEN CVJenliJ MFLCave3
 =~Jen'lig swear to protect her captain from Mind Flayers with own life.~
 DO~SetGlobal("MiFlExists","BG3802",5)~
 END
-++~You are quite brave to stand up to such beasts.~DO~AddXPObject("CVJenlig",5500)~EXIT
-++~I think I start to understand why your kin are such scary fighters.~DO~AddXPObject("CVJenlig",6500)~EXIT
+++~You are quite brave to stand up to such beasts.~DO~AddXPObject("CVJenlig",2400)~EXIT
+++~I think I start to understand why your kin are such scary fighters.~DO~AddXPObject("CVJenlig",2400)~EXIT
 
 EXTEND_TOP Stepha 4 #0
 IF ~ InParty("CVJenlig")~ THEN EXTERN CVJenliJ SteNoGo
