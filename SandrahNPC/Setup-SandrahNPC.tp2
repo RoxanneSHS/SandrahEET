@@ -4950,6 +4950,7 @@ COMPILE
 ~SandrahNPC/D/AloraSanBanter.d~
 ~SandrahNPC/D/Imoenclass.d~
 ~SandrahNPC/D/sanflirt.d~
+~SandrahNPC/Mods/TeaWithLandri.d~
 
 PRINT ~Expanded Samuel and Flaming Fist Episodes~
 
@@ -8135,6 +8136,8 @@ COPY_EXISTING ~ogrema_c.cre~ ~override~
 WRITE_ASCII 0x280 ~ogrema_c~
 COPY_EXISTING ~ogrema_d.cre~ ~override~
 WRITE_ASCII 0x280 ~ogrema_d~
+COPY_EXISTING ~ohnszass.cre~ ~override~
+         WRITE_ASCII 0x34 ~SzassS~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ar3520.ARE~ THEN BEGIN
     COPY ~Worldmap/map_mods_areas.tbl~  ~Worldmap~

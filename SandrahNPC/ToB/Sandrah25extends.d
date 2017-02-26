@@ -234,6 +234,13 @@ DO~ SetGlobal("San25ChiQuest","GLOBAL",16) GiveItemCreate("CVUmward",Player1,0,0
 ADD_TRANS_ACTION AMCLER02 BEGIN 9 END BEGIN 0 END
 ~ SetGlobal("SanBaltMelis","GLOBAL",1)~
 
+//Szass in Neera quest
+I_C_T OHNSzass 3 SanOhSzassR
+==OHNSzass IF~InParty("CVSandr")~THEN~I was sure we meet again, miniature Mystra. Shall I extinct you right here and now or would you be my willing tool this time?~
+==BSandr25 IF~InParty("CVSandr")~THEN~It is not my death you want, otherwise you had already advised your lackeys to attempt it. We are far too useful at the moment and you want not the unnecessary publicity of my demise in Thay.~
+==OHNSzass IF~InParty("CVSandr")~THEN~(Grins) I will not underestimate you again, priestess. Still, your analysis is correct.~
+==OHNSzass IF~InParty("CVSandr")~THEN~Back to you, Neera and <CHARNAME>.~
+END
 
 //Melissan Showdown
 INTERJECT_COPY_TRANS Finmel01 27 SanOddElement1
