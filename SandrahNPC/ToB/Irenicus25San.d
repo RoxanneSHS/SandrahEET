@@ -290,3 +290,9 @@ EXTEND_TOP FinSol01 4 #3
 IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
 IF~InParty("CVSandr") InParty("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 46
 END
+
+I_C_T LRElle1 42 SanLRMaskAccept
+==CVSan25J IF~InParty("CVSandr")~THEN~How could I refuse? I see that it must be done, do no longer worry, Ellesime~
+==LRElle1 IF~InParty("CVSandr")~THEN~You learned about responsibility already and you will learn a lot more. Hopefully you learn about love as well.~
+==CVSan25J IF~InParty("CVSandr")~THEN~I have experienced twice already what can be the result of betrayed love and how many may suffer from the consequences. Midnight and Cyric are my grandparents.~
+END
