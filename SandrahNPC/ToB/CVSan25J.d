@@ -412,7 +412,7 @@ END
 IF~Global("SanChoices","ar6400",2)~THEN BEGIN SanYagChoic1
 SAY~ It seems we have several options to go from here once we cleaned out this area and made it save for travellers once again.~
 IF ~~THEN REPLY~I guess we need to find they key to Yaga-Shura's immortality.~ GOTO SanYagChoic2
-IF~Global("LRJonCastDivinationSpell","GLOBAL",2)~THEN REPLY~Irenicus proposed to pay Watcher's Keep a visit.~GOTO SanIrProp
+IF~InParty("LRIrenic")~THEN REPLY~Irenicus proposed to pay Watcher's Keep a visit.~GOTO SanIrProp
 IF ~~THEN REPLY~Please help me to keep an overview, counselor.~GOTO SanYagChoic2
 END
 
