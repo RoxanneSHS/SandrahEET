@@ -191,13 +191,13 @@ END
 
 CHAIN
 IF~~THEN JONEL25J SanIn
-~Enough of this. <CHARNAME>, you have already wasted too much time listening to the mad monk's drivel. Now your half-brother would try to convince you to join him in his glorious death. Little does he realize that in doing so he would only release Bhaal's essence back into cosmos where it will be collected and utilized by your *protectress* Melissan.~ 
+~Enough of this. <CHARNAME>, you have already wasted too much time listening to the mad monk's drivel. Now your half-brother would try to convince you to join him in his glorious death. Little does he realize that in doing so he would only release Bhaal's essence back into cosmos where it will be collected and utilized by your *protectress* Melissan.~ DO ~IncrementGlobal("ConvinceBalth","GLOBAL",2)~ 
 ==JONEL25J IF ~ G("lrHasSoulStone",0)G("AcceptIlmater",0)G("lrBaltSoul",1)~THEN~I, on the other hand, have a much better use for your half-brother's divine spirit. Get ready for battle, godchild. It's time for this to end.~ ~I, on the other hand, have a much better use for your half-brother’s divine spirit. Get ready for battle, godchild. It’s time for this to end.~
 ==BALTH~<CHARNAME>, does the masked sorcerer that you have brought in my presence have a hold on your spirit? He sounds like a convincing liar, and I can feel a connection between you two. I pity you, my <PRO_BROTHERSISTER>. Yet his presence makes it even more urgent that I destroy your vileness. Verily, I shall wipe out two great evils with one strike.~
 ==CVSan25J~Have you all not realised by now that here is another glitch in Alaundo's prophesy? A Bhaalspawn would be the only to be able to prevent Bhaal's return, we learned. Does it really say it has to be just a single one and all others are by design evil?~
 ==BALTH~<CHARNAME>, your company is truely a mixed troupe...the priestess compensates for the exile, I guess.~
 ==CVSan25J~Balthazar, try not to judge us as we do not judge you - too much is at stake. Consider the possibility that after all you are not alone in your attempt and your suicide solution is not the only way out.~
-==BALTH~It is true.  You are a good advisor, and your stance against evil is without question.  Your assistance in <CHARNAME>'s fight against the taint of our evil father is worthy of praise.~ DO ~IncrementGlobal("ConvinceBalth","GLOBAL",2)~ 
+==BALTH~It is true.  You are a good advisor, and your stance against evil is without question.  Your assistance in <CHARNAME>'s fight against the taint of our evil father is worthy of praise.~ 
 END
 ++~Can we not explore our possibilities, common possibilities on this basis?~EXTERN Balth 39
 
