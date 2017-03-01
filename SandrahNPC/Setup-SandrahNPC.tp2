@@ -7516,7 +7516,6 @@ END ELSE BEGIN
   PRINT ~Ariena not detected - skipped Shauhana addition~
 END
 
-COPY ~SandrahNPC/Shauhana/Shauorc.mos~ ~override/Shauorc.mos~
 COPY ~SandrahNPC/Shauhana/Shauorc.2DA~ ~override/Shauorc.2DA~
 REPLACE ~ 99992~ @640
 REPLACE ~ 99993~ @640
