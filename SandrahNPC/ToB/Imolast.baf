@@ -18,7 +18,6 @@ ActionOverride("Imoen2",ChangeAIScript("",CLASS))
 ActionOverride("Imoen2",ChangeAIScript("",RACE))
 ActionOverride("Imoen2",ChangeAIScript("",GENERAL))
 ActionOverride("Imoen2",ChangeAIScript("",DEFAULT))
-JoinParty()
 SetInterrupt(TRUE)
 END
 
@@ -26,6 +25,7 @@ IF
 GlobalGT("FinalFight","AR6200",3)
 !Allegiance(Myself,NEUTRAL)
 Global("ImoenBackToHuman","GLOBAL",1)
+!InParty("Imoen2")
 THEN
 RESPONSE #100
 ChangeEnemyAlly(Myself,NEUTRAL)
