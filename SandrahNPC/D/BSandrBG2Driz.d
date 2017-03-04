@@ -521,11 +521,11 @@ END
 DO ~SetGlobal("CQuestActive","GLOBAL",7)~ EXIT
 
 EXTEND_TOP DRIZ2 25 #1
-IF~InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN REPLY~ I am sorry, but we cannot help you today. But I know Sandrah will take care that we do everything necessary to help you and your friends in time. (With this option you can still play the Region of Terror mod provided Sandrah remains in your party to rescue Drizzt and his friends.)~ GOTO 27
+IF~InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN REPLY~ I propose that we operate separately to increase our chances to succeed. I know Sandrah will take care that we do everything necessary to help you and your friends in time. ~ GOTO 27
 END
 
 EXTEND_TOP DRIZ2 27 #1
-IF~InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN REPLY~ I am sorry, but we cannot help you today. But I know Sandrah will take care that we do everything necessary to help you and your friends in time. (With this option you can still play the Region of Terror mod provided Sandrah remains in your party to rescue Drizzt and his friends.)~ DO ~SetGlobal("Drizztiwdornot","GLOBAL",1) SetGlobal("DrizztKickedOut","GLOBAL",1) SetGlobal("SanRotRepl","GLOBAL",1) SetLeavePartyDialogueFile() EscapeAreaMove("RR4002",1027,1088,8) ~ EXIT
+IF~InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN REPLY~ I propose that we operate separately to increase our chances to succeed. I know Sandrah will take care that we do everything necessary to help you and your friends in time.~ DO ~SetGlobal("Drizztiwdornot","GLOBAL",1) SetGlobal("DrizztKickedOut","GLOBAL",1) SetGlobal("SanRotRepl","GLOBAL",1) SetLeavePartyDialogueFile() EscapeAreaMove("RR4002",1027,1088,8) ~ EXIT
 END
 
 EXTEND_TOP DRMESS 1 #0
