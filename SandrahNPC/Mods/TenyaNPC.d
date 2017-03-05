@@ -1,4 +1,4 @@
-EXTEND_TOP B2#TenyJ 185 #12
+EXTEND_TOP B2#TenyJ 117 #12
 IF~InParty("CVSandr")~THEN REPLY~What do you think of Sandrah?~GOTO SanTeny1
 END 
 
@@ -8,8 +8,8 @@ IF~~THEN B2#TenyJ SanTeny1
 =~She scares me...not.~
 ==B2#TenyJ IF~InMyArea("Pellig")~THEN~Nor does her big fat cat.~
 END
-++~*Stay silent to that remark.*~EXTERN B2#TenyJ 179
-++~I don't believe you're *not* scared of her, even if she probably wouldn't care.~EXTERN B2#TenyJ 179
+++~*Stay silent to that remark.*~EXTERN B2#TenyJ 111
+++~I don't believe you're *not* scared of her, even if she probably wouldn't care.~EXTERN B2#TenyJ 111
 
 CHAIN
 IF~Global("Umbowl","GLOBAL",5)~THEN B2#TenyJ Sandid1

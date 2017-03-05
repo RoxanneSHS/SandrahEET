@@ -37,11 +37,11 @@ END
 ++~As long as there is a solid chance to avoid the blackmail we should take it. Let's consult Thalantyr immediately.~DO~ SetGlobal("CVLotPlot","GLOBAL",3)~  EXIT
 
 EXTEND_TOP Thalan 35 #3
-IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr")~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
+IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
 END
 
 EXTEND_TOP Thalan 1 #3
-IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr")~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
+IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
 END
 
 CHAIN

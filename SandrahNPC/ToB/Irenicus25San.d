@@ -263,7 +263,7 @@ INTERJECT Jonel25J 304  SanDealSoul1
 INTERJECT Jonel25J 305  SanDealSoul2
 ==Jonel25J IF~InParty("CVSandr") GlobalGT("JonRedemptioncounter","GLOBAL",10)~THEN~But - maybe there are more perspectives than you can see, celestial moth.~END CVSan25J SanDealSoul
 
-INTERJECT Jonel25J 322 SanDealSoul3
+INTERJECT Jonel25J 319 SanDealSoul3
 ==CVSan25J IF~InParty("CVSandr") ~THEN~The possibilities a new goddess may offer?~END CVSan25J SanDealSoul
 
 CHAIN
