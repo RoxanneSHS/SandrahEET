@@ -6182,9 +6182,11 @@ END ELSE BEGIN
   PRINT ~Ninafer not detected - skipped Sandrah part~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~AGKARAEA.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/AuroraSan.d~
-END
+COPY ~SandrahNPC/CRE/CVCedri.CRE~ ~override~
+     SAY NAME1 Cedric
+     SAY NAME2 Cedric
+EXTEND_TOP ~bg4803.bcs~  ~SandrahNPC/Areas/bg4803Ced.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~R!Kit15.CRE~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/KitanyaSan.d~

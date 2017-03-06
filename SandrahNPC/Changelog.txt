@@ -6,6 +6,7 @@ Successful regression testing of previous beta versions
 
 Tea With Landrin added
 Sandrah/Szass in Neera ToB quest added
+New shopkeeper in Nashkel
 
 VERSION 2.03b
 -----------------

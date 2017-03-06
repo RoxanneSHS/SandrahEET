@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanImoNashInt","GLOBAL",16)
+Global("Incedric","BG4803",0)
+THEN
+RESPONSE #100
+SetGlobal("Incedric","BG4803",1)
+CreateCreature("CVCedri",[170.280],13)
+END
