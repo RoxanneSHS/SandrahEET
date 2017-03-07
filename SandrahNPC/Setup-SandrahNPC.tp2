@@ -5980,7 +5980,7 @@ COPY ~SandrahNPC\Mods/SanVault.cre~ ~override\SanVault.cre~
 SAY NAME1 @704               
 SAY NAME2 @704
 EXTEND_TOP ~BG4100.bcs~ ~SandrahNPC/Mods/ara100sentry.baf~
-PRINT ~ The Vault detected - Sandrah travel add-on installed~
+PRINT ~ The Vault detected - Sandrah drow add-on installed~
 END ELSE BEGIN
   PRINT ~The Vault not detected - skipped travel Sandrah add-on~
 END
