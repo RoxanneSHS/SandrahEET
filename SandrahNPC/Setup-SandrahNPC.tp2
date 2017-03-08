@@ -4613,6 +4613,10 @@ ACTION_IF FILE_EXISTS_IN_GAME ~F_NIBSHP.sto~ THEN BEGIN
 COPY_EXISTING ~F_NIBSHP.sto~ ~override/F_NIBSHP.sto~
   ADD_STORE_ITEM ~CVheherb~ #5 #0 #0 ~IDENTIFIED~ #3
 END
+
+COPY_EXISTING ~inn3351.sto~ ~override~
+WRITE_LONG 0x5c 12 
+BUT_ONLY
   
 PRINT ~Installed Sandrah Shops~ 
 
