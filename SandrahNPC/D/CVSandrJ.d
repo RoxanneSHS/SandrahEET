@@ -5956,6 +5956,9 @@ IF ~InParty("CVSandr")~ THEN REPLY ~You said that these walls were soaked with i
 IF ~InParty("CVSandr")~ THEN REPLY ~What more proof do I need then you not knowing your own only daughter - doppelganger.~GOTO 5
 END
 
+REPLACE_STATE_TRIGGER Voleta 0
+~Global("SanVolHeal","BG0146",0)~
+
 ADD_TRANS_ACTION Voleta BEGIN 0 END BEGIN 0 1 2 END ~ SetGlobal("SanVolHeal","BG0146",1)~
 
 INTERJECT_COPY_TRANS IF_FILE_EXISTS ACQX0004 7 DrglInfiltr
