@@ -3278,7 +3278,7 @@ DO ~SetGlobal("Kivshil","GLOBAL",2) SetGlobal("PKivshil","GLOBAL",2) RealSetGlob
 == BKIVAN ~ You sound a bit reserved. But you must have been all over Faerun and seen so much. It must be hard to impress you with something.~
 == BSANDR ~ It is very different whether you are just a passing visitor in a place or whether you call that place home. In Shilmista, I felt more like a spectator than any place else. I could not imagine that real people have real everyday lives in such a place.~
 == BKIVAN ~ Then in some way you have felt it right, melamin, it is indeed no place for the profane things in life, it is our haven, our dream....sorry, let us follow the others. ~
-= ~ (Kivan shyly takes Sandrah's hand and they follow the group hand in hand for a while without the necessity for further words.)~
+= ~ (Kivan and Sandrah follow the group side by side for a while without the necessity for further words.)~
 EXIT
 
 CHAIN
