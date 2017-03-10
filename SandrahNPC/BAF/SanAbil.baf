@@ -1812,3 +1812,43 @@ SetGlobal("CVSareded","Global",0)
 SetGlobal("CvSarevokCutsceneStart","Global",0)
 SetGlobal("Sprite_Is_DeadCVsCutsa","Global",0)
 END
+
+IF
+HasItemEquiped("Bow05",Myself)
+THEN
+RESPONSE #100
+TakeItemReplace("MISC59","BOW05","CVSandr")
+Continue()
+END
+
+IF
+HasItemEquiped("Bow04",Myself)
+THEN
+RESPONSE #100
+TakeItemReplace("MISC59","BOW04","CVSandr")
+Continue()
+END
+
+IF
+HasItemEquiped("Bow03",Myself)
+THEN
+RESPONSE #100
+TakeItemReplace("MISC59","BOW03","CVSandr")
+Continue()
+END
+
+IF
+HasItemEquiped("Bow02",Myself)
+THEN
+RESPONSE #100
+TakeItemReplace("MISC59","BOW02","CVSandr")
+Continue()
+END
+
+IF
+HasItemEquiped("Bow01",Myself)
+THEN
+RESPONSE #100
+TakeItemReplace("MISC59","BOW01","CVSandr")
+Continue()
+END
