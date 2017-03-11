@@ -9,6 +9,8 @@ Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
 Feldepost is a high class inn
 
+updated fl#add_kit_ee.tpa 
+
 VERSION 2.03b
 -----------------
 
