@@ -2268,6 +2268,7 @@ IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") 
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
 IF ~Global("SanBreBa","GLOBAL",2) ~ THEN REPLY ~ You and Breagar seem to be a bit at odds with each other.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBreCon1
 IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON) ~ THEN REPLY ~ Can you provide us with some wooden stakes, Sandrah?~ GOTO SanMkStake5
@@ -2429,6 +2430,52 @@ SAY~ (Before you can get the whole berry, she quickly bites it in two and you bo
 IF ~~ THEN REPLY ~ (You stop any drooling juice with a series of kisses around Sandrah's mouth.) ~ DO ~ SetGlobal("SanStrBe","LOCALS",1)~ EXIT
 END
 
+IF~~THEN BEGIN StopRom
+SAY~Yes? (She raises an eyebrow suspiciously.)~
+IF~OR(2) GlobalGT("Kivshil","GLOBAL",7) GlobalGT("PKivshil","GLOBAL",7)OR(2) InParty("Kivan") InParty("P#Kivan")~THEN REPLY~Your relationship with Kivan goes too far for my liking. Stop it.~ GOTO StopRomH
+IF~ InParty("Coran")GlobalGT("SanCoran","LOCALS",4) Global("SanRomPath","GLOBAL",1)~THEN REPLY~Your relationship with Coran goes too far for my liking. ~DO~SetGlobal("SanCoran","LOCALS",16)~ GOTO StopRomF
+IF~ InParty("Coran")GlobalGT("SanCoran","LOCALS",4) ~THEN REPLY~Your relationship with Coran goes too far for my liking. ~ GOTO StopRomF
+IF~GlobalGT("SanBooTlk","GLOBAL",3)InParty("Minsc")~THEN REPLY~Your relationship with Kivan goes too far for my liking. Stop it.~ GOTO StopRomH
+IF~GlobalGT("SanGarr1","GLOBAL",5)InParty("Garrick")~THEN REPLY~Your relationship with Garrick goes too far for my liking. ~ GOTO StopRomF
+IF~GlobalGT("SanXanA","GLOBAL",5) InParty("XAN")~THEN REPLY~Your relationship with Xan goes too far for my liking. ~DO~SetGlobal("SanXanA","GLOBAL",23)~ GOTO StopRomF
+IF~InParty("Imoen2")~ THEN REPLY~I am glad you and Imoen understand each other so well.~GOTO Imoexcuse
+IF~~THEN REPLY~I changed my mind, this can wait until another day.~EXIT
+END
+
+IF~~THEN BEGIN Imoexcuse
+SAY~We have enough in common to understand each other and we are different enough to enjoy this difference.~
+IF~~THEN REPLY~I could say the same about the two of us, Sandrah.~DO~IncrementGlobal("Sanpoints","Global",1) ~EXIT
+IF~~THEN REPLY~You keep her occupied and I have my head clear for the important things.~DO~IncrementGlobal("Sanpoints","Global",-1) ~EXIT
+END
+
+IF~~THEN BEGIN StopRomH
+SAY~I just do my healer's task here, <CHARNAME>, no need for your jealousy.~
+IF~~THEN REPLY~If you say so...just do it more discreetly then.~EXIT
+IF~~THEN REPLY~Do not make me laugh. Pfff. healer's task!~ GOTO StopRom2
+IF~~THEN REPLY~(Say nothing and decide to observe the development carefully.)~EXIT
+IF~~THEN REPLY~You are a pretty poor liar. This is just anarchy and disrespect. I want nothing of that in my party.~GOTO OneTooMany
+END
+
+IF~~THEN BEGIN StopRomF
+SAY~You have all the freedom you like to do what you want, I will not fence you in. Just grant me the same, <CHARNAME>.~
+IF~~THEN REPLY~If this is the arrangement, just do it a bit more discreetly then.~EXIT
+IF~~THEN REPLY~What is permissible for AO is not permissible for a bull.~ GOTO StopRom2
+IF~~THEN REPLY~(Say nothing and decide to observe the development carefully.)~EXIT
+IF~~THEN REPLY~If this is the arrangement, don't complain if you find your place occupied.~EXIT
+IF~~THEN REPLY~Freedom? This is just anarchy and disrespect. I want nothing of that in my party.~GOTO OneTooMany
+END
+
+IF~~THEN BEGIN StopRom2
+SAY~(She looks at you for a moment without saying a word. As she turns and walks away she mumbles something you cannot understand.)~
+IF~~THEN DO~IncrementGlobal("SanStopIt","LOCALS",1)~EXIT
+END
+
+IF~Global("SanStopIt","LOCALS",3)~THEN BEGIN OneTooMany
+SAY~I was willing to make some compromise and I did, <CHARNAME>. But you will not live my life for me and you will not rule all my decisions.~
+=~Enough is enough, little tyrant. Whistle for your wolf if you want a docile companion.~
+IF~~THEN DO~ SetGlobal("SanStopIt","LOCALS",4) SetGlobal("Sandrahjoined","Global",83)LeaveParty() EscapeAreaDestroy(90)~EXIT
+END
+
 //PIDs after LT1  Pack 6 or 36
 
 
@@ -2488,6 +2535,7 @@ IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FORES
 IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
 IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF ~Global("SanBreBa","GLOBAL",2) ~ THEN REPLY ~ You and Breagar seem to be a bit at odds with each other.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBreCon1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
@@ -2510,6 +2558,7 @@ IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
 IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
@@ -2685,6 +2734,7 @@ IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","G
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~Global("ChartQuest","GLOBAL",1)GlobalGT("CalDone","GLOBAL",0)Global("SanMendas","LOCALS",0)~ THEN REPLY ~ Mmh, you would not by any chance know this Mendas of Waterdeep?~ GOTO SanMendas1
 IF ~ Global("rainbFav","LOCALS",0) ~ THEN REPLY ~ Sandrah, what is your favourite colour?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ GlobalGT("SanBooTlk","GLOBAL",5) Global("MinskFlow","LOCALS",0) ~ THEN REPLY ~ That is a beautiful flower in your hair, Sandrah. Do you wear it for me?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO MinscFlow1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
@@ -3229,6 +3279,7 @@ IF ~ Global("Gorlet","LOCALS",0) GlobalGT("Formedcloth","GLOBAL",7)~ THEN REPLY 
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
 IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
@@ -3553,6 +3604,7 @@ IF ~ GlobalGT("Sprite_is_DeadBandit","GLOBAL",25) Global("SanFiSkills","LOCALS",
 IF~Global("ChartQuest","GLOBAL",1)GlobalGT("CalDone","GLOBAL",0)Global("SanMendas","LOCALS",0)~ THEN REPLY ~ Mmh, you would not by any chance know this Mendas of Waterdeep?~ GOTO SanMendas1
 IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
@@ -4074,6 +4126,7 @@ IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FORES
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
+IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1

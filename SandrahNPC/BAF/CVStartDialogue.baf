@@ -79,7 +79,7 @@ IF
 !See([ENEMY])
 CombatCounter(0)
 See(Player1)
-OR(24)
+OR(25)
 Global("SanHasTWOP","GLOBAL",2)
 Global("SanDSOTSCUW","GLOBAL",1)
 Global("SanDSOTSCUW","GLOBAL",3)
@@ -104,6 +104,7 @@ Global("SanBassil","BG3700",1)
 Global("WDFishermen","GLOBAL",8)
 Global("WDFishermen","GLOBAL",10)
 Global("SanSoDSkie","Global",8)
+Global("SanStopIt","LOCALS",3)
 THEN
 RESPONSE #100
 StartDialogNoSet("CVSandr")
