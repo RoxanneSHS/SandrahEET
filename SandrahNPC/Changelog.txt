@@ -9,6 +9,7 @@ Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
 Feldepost is a high class inn
 Options to influence Sandrah to other NPC flirts
+Gavin Sandrah romance removed
 
 updated fl#add_kit_ee.tpa 
 

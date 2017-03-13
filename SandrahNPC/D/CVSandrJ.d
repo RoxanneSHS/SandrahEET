@@ -4041,7 +4041,7 @@ IF~~ THEN REPLY ~ Of course you must do that. I was about to ask you for your ad
 END
 
 IF ~~ THEN BEGIN  SanMarAj3
-SAY~ With pleasure. I can be as close as possible to you on that special event. And near Ajantis, too. But is there already a date set for the fortunate event?~
+SAY~ With pleasure. I can be as close as possible to you on that special event. But is there already a date set for the fortunate event?~
 IF~~ THEN REPLY ~ Ajantis has suggested to wait until he is knighted. You know how important this is to him. And I have agreed, I mean, why hurry as long as I have my loving man by my side.~ GOTO SanMarAj4
 END
 
@@ -4059,7 +4059,7 @@ END
 
 IF ~~ THEN BEGIN  SanMarAj6
 SAY ~ Does time really matter. You have a husband for life already, marriage or not,  and you can live and savour every single day of it.~
-IF~~THEN REPLY ~ And I will! With him and with you. (You kiss Sandrah dearly and then look for your future husband to tell him the news.) ~ EXIT
+IF~~THEN REPLY ~ And I will! With him and with you. (You give Sandrah a quick kiss and then look for your future husband to tell him the news.) ~ EXIT
 END
 
 IF~~THEN BEGIN ImoBio1

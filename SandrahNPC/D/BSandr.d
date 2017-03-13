@@ -1473,14 +1473,14 @@ END
 
 IF~~ KnowAjKi
 SAY ~ <CHARNAME>, you mean that little kiss I gave to Ajantis? (Laughs gently). Jealous? ~
-= ~  Well, to say the truth, there was some interest in each other at one time. Look at him, he is handsome, he is upright and well mannered, not too dumb, a rare occasion even in a big town like Waterdeep. And we are from the same circles in society so we frequently crossed each others way. ~
-= ~ But it was nothing serious, our ways and views of life in the end are too different. I think I am much too liberate and free thinking for a man of strict rules and categories like Ajantis.~
+= ~  Well, to say the truth, there was some interest from my side at one time. Look at him, he is handsome, he is upright and well mannered, not too dumb, a rare occasion even in a big town like Waterdeep. And we are from the same circles in society so we frequently crossed each others way. ~
+= ~ But nothing came out of it, our ways and views of life in the end are too different. I think I am much too liberate and free thinking for a man of strict rules and categories like Ajantis.~
 IF ~~ THEN REPLY ~ Thank you for being so open, Sandrah. Yes, it is hard to imagine you and Ajantis as a pair if one knows both your different characters. ~ DO ~ SetGlobal("KnoAjMale","GLOBAL",3)~ EXIT
 IF ~~ THEN REPLY ~ Is that really all? But you kissed him at the meeting? ~ GOTO KnowAjKi2
 END
 
 IF ~~ KnowAjKi2
-SAY ~ I just had to do it to find out how it would feel. We never kissed or even held hands back there in Waterdeep. Our relationship never grew up to that stage. ~
+SAY ~ I just had to do it to find out how it would feel. We never kissed or even held hands back there in Waterdeep. He was and is a man for one woman only and that woman is NOT Sandrah of Waterdeep. ~
 IF ~~ THEN REPLY ~ Thank you for being so open, Sandrah. Yes, it is hard to imagine you and Ajantis as a pair if one knows both your different characters. ~ DO ~ SetGlobal("KnoAjMale","GLOBAL",3)~ EXIT
 END
 
@@ -1584,14 +1584,14 @@ END
 
 IF~~ KnowAjKiF
 SAY ~ <CHARNAME>, you mean that little kiss I gave him. (Laughs gently). ~
-= ~  Well, to say the truth, there was some interest in each other at one time. Look at him, he is handsome, he is upright and well mannered, not too dumb, a rare occasion even in a big town like Waterdeep. And we are from the same circles in society so we frequently crossed each others way. ~
+= ~  Well, to say the truth, there was some interest from my side at one time. Look at him, he is handsome, he is upright and well mannered, not too dumb, a rare occasion even in a big town like Waterdeep. And we are from the same circles in society so we frequently crossed each others way. ~
 = ~ But it was nothing serious, our ways and views of life in the end are too different. I think I am much too liberate and free thinking for a man of strict rules and categories like Ajantis.~
 IF ~~ THEN REPLY ~ Thank you for being so open, Sandrah. Yes, it is hard to imagine you and Ajantis as a pair if one knows both your different characters. ~ DO ~ SetGlobal("KnoAjFem","GLOBAL",3)~ GOTO KnowAjGF1
 IF ~~ THEN REPLY ~ Is that really all? But you kissed him at the meeting? ~ GOTO KnowAjKi2F
 END
 
 IF ~~ KnowAjKi2F
-SAY ~ I just had to do it to find out how it would feel. We never kissed or even held hands back there in Waterdeep. Our relationship never grew up to that stage. ~
+SAY ~  I just had to do it to find out how it would feel. We never kissed or even held hands back there in Waterdeep. He was and is a man for one woman only and that woman is NOT Sandrah of Waterdeep.  ~
 IF ~~ THEN REPLY ~ Thank you for being so open, Sandrah. Yes, it is hard to imagine you and Ajantis as a pair if one knows both your different characters. ~ DO ~ SetGlobal("KnoAjFem","GLOBAL",3)~ GOTO KnowAjGF1
 END
 
@@ -1601,7 +1601,7 @@ IF ~~ THEN REPLY ~ What do you mean by that? ~ GOTO KnowAjGF2
 END
 
 IF ~~ KnowAjGF2
-SAY ~ If anything more would have been between us, I would be back in Waterdeep being Lady Ilvastarr now, prancing the floor like a caged animal, waiting for my paladin hero to return from one of the Order's mission now and then.~
+SAY ~ If he really had responded to my advances, I would be back in Waterdeep being Lady Ilvastarr now, prancing the floor like a caged animal, waiting for my paladin hero to return from one of the Order's mission now and then.~
 IF ~~ THEN REPLY ~ But you are a great fighter and cleric yourself, would he not take you with him to fight the evil.~ GOTO KnowAjComp
 IF ~~ THEN REPLY ~ That does not sound so unpleasant to me. A caring loving husband who fights evil while you guard and decorate your home for the returning hero.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO KnowAjHousewife
 IF ~~ THEN REPLY ~ I am happy you were able to resist such a great opportunity. At least that is what most people I know would think it is to be Lady Ilvastarr. Most except maybe Imoen, the little free bird, - and you - and me. It is much better to have you here with me.~ GOTO KnowAJFree

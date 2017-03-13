@@ -13,53 +13,12 @@ RESPONSE #100
 SetGlobal("SanGavBant","GLOBAL",1)
 END
 
-IF
-Global("SanGavBant","GLOBAL",2)
-InParty("B!Gavin")
-GlobalGT("B!GAVINLOVETALK","GLOBAL",3)
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-THEN
-RESPONSE #100
-SetGlobal("SanGavBant","GLOBAL",3)
-END
-
-IF
-Global("SanGavBant","GLOBAL",4)
-InParty("B!Gavin")
-GlobalGT("B!GAVINLOVETALK","GLOBAL",5)
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-THEN
-RESPONSE #100
-SetGlobal("SanGavBant","GLOBAL",5)
-END
-
-IF
-Global("SanGavBant","GLOBAL",6)
-InParty("B!Gavin")
-GlobalGT("B!GAVINLOVETALK","GLOBAL",7)
-Global("SanPCGavInt","GLOBAL",0)
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-THEN
-RESPONSE #100
-SetGlobal("SanPCGavInt","GLOBAL",1)
-END
-
-IF
-Global("SanGavBant","GLOBAL",6)
-InParty("B!Gavin")
-GlobalGT("B!GAVINLOVETALK","GLOBAL",13)
-THEN
-RESPONSE #100
-SetGlobal("SanGavBant","GLOBAL",7)
-END
-
-IF    
+IF  
+Global("SanGavBant","GLOBAL",2)  
 InParty("B!GAVIN")
 Global("SanGavkilBant","GLOBAL",0)
 GlobalLT("SanAjkilBant","GLOBAL",1)
-OR(2)
-GlobalGT("SanGavBant","GLOBAL",4)
-GlobalGT("SanGavLA","GLOBAL",3)
+RealGlobalTimerExpired("SanGavLATime","GLOBAL")
 THEN
 RESPONSE #100
 SetGlobal("SanGavkilBant","GLOBAL",1)
@@ -122,125 +81,11 @@ SetGlobal("SanGavMorn","GLOBAL",3)
 END
 
 IF
-InParty("B!Gavin")
-Global("SanPCGavMar","GLOBAL",0)
-TimeGT(11)
-PartyHasItem("B!PCRing")
-THEN
-RESPONSE #100
-SetGlobal("SanPCGavMar","GLOBAL",1)
-END
-
-//Gavin if PC Male
-IF
-InParty("B!Gavin")
-Global("SanGavBant","GLOBAL",2) 
-Global("SanGavLA","GLOBAL",0)
-OR(3)
-Global("SanRomPath","GLOBAL",1)
-Global("B!GavinRomCutByOther","GLOBAL",1)
-Global("B!GavinRomanceMatch","GLOBAL",0)
-THEN
-RESPONSE #100
-SetGlobal("SanGavLA","GLOBAL",1)
-RealSetGlobalTimer("SanGavLATime","GLOBAL",3600)
-END
-
-IF
-InParty("B!Gavin")
-Global("SanGavLA","GLOBAL",1)
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-AreaType(OUTDOOR)
-Delay(20)
-THEN
-RESPONSE #100
-SetGlobal("SanGavLA","GLOBAL",2)
-END
-
-IF
-InParty("B!Gavin")
-!Global("ENDOFBG1","GLOBAL",2)
-GlobalGT("SanGavLA","GLOBAL",7)
-Global("SanGavHurt1","LOCALS",0)
-HPLT("B!Gavin",45)
-THEN
-RESPONSE #100
-SetGlobal("SanGavHurt1","LOCALS",1)
-END
-
-IF
-!StateCheck("B!Gavin",CD_STATE_NOTVALID)
-!See([ENEMY])
-CombatCounter(0)
-Global("SanGavHurt1","LOCALS",1)
-THEN
-RESPONSE #100
-MoveToObject("B!Gavin")
-Interact("CVSandr")
-END
-
-IF
-InParty("B!Gavin")
-!Global("ENDOFBG1","GLOBAL",2) 
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-AreaType(OUTDOOR)
-OR(7)
-Global("SanGavLA","GLOBAL",1)
-Global("SanGavLA","GLOBAL",3)
-Global("SanGavLA","GLOBAL",5)
-Global("SanGavLA","GLOBAL",7)
-Global("SanGavLA","GLOBAL",9)
-Global("SanGavLA","GLOBAL",11)
-Global("SanGavLivDream","LOCALS",1)
-Delay(20)
-THEN
-RESPONSE #100
-IncrementGlobal("SanGavLA","GLOBAL",1)
-END
-
-IF
-GlobalGT("SanGavLA","GLOBAL",14)
-InParty("B!Gavin")
-PartyRested()
-GlobalGT("Chapter","GLOBAL",5)
-Global("SanGavLivDream","LOCALS",0)
-Delay(20)
-THEN
-RESPONSE #100
-SetGlobal("SanGavLivDream","LOCALS",1)
-END
-
-IF
-InParty("B!Gavin")
-Global("SanGavLA","GLOBAL",13) 
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-GlobalGT("Chapter","GLOBAL",4)
-AreaType(CITY)
-Delay(20)
-THEN
-RESPONSE #100
-SetGlobal("SanGavLA","GLOBAL",14)
-END
-
-IF
-InParty("B!Gavin")
-Global("SanGavLA","GLOBAL",15)
-AreaType(OUTDOOR)
-OR(2)
-Global("EndofBG1","GLOBAL",1)
-RealGlobalTimerExpired("SanGavLATime","GLOBAL")
-AreaType(OUTDOOR)
-THEN
-RESPONSE #100
-SetGlobal("SanGavLA","GLOBAL",16)
-END
-
-IF
 !StateCheck("B!Gavin",CD_STATE_NOTVALID)
 !See([ENEMY])
 CombatCounter(0)
 !AreaType(DUNGEON)
-OR(16)
+OR(7)
 Global("SanGavBant","GLOBAL",1)
 Global("SanGavBant","GLOBAL",3)
 Global("SanGavBant","GLOBAL",5)
@@ -248,15 +93,6 @@ Global("SanGavBant","GLOBAL",7)
 Global("SanGavkilBant","GLOBAL",3)
 Global("SanGavMorn","GLOBAL",1)
 Global("SanGavMorn","GLOBAL",3)
-Global("SanPCGavMar","GLOBAL",1)
-Global("SanGavLA","GLOBAL",2)
-Global("SanGavLA","GLOBAL",4)
-Global("SanGavLA","GLOBAL",6)
-Global("SanGavLA","GLOBAL",8)
-Global("SanGavLA","GLOBAL",10)
-Global("SanGavLA","GLOBAL",12)
-Global("SanGavLA","GLOBAL",14)
-Global("SanGavLA","GLOBAL",16)
 THEN
 RESPONSE #100
 MoveToObject("B!Gavin")
@@ -286,9 +122,6 @@ GlobalLT("SanGavLA","GLOBAL",10)
 OR(2)
 Global("BGavinBorland1","GLOBAL",1)
 Global("B!GAVINWHICHHOUSE","GLOBAL",4)
-OR(2)
-GlobalGT("SanGavBant","GLOBAL",5)
-GlobalGT("SanGavLA","GLOBAL",4)
 THEN
 RESPONSE #100
 SetGlobal("SangavNoHurt","GLOBAL",1)
@@ -326,9 +159,8 @@ END
 IF
 Global("SanGavSpell","LOCALS",0)
 InParty("B!Gavin")
-OR(2)
-Global("SanPCGavMar","GLOBAL",2)
-Global("SanGavLA","GLOBAL",9)
+Global("SanGavMorn","GLOBAL",4) 
+PartyRested()
 THEN
 RESPONSE #100
 SetGlobal("SanGavSpell","LOCALS",1)
