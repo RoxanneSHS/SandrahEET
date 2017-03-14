@@ -8,7 +8,7 @@ Tea With Landrin added
 Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
 Feldepost is a high class inn
-Options to influence Sandrah to other NPC flirts
+Options to influence Sandrah flirts with other NPCs 
 Gavin Sandrah romance removed
 
 updated fl#add_kit_ee.tpa 

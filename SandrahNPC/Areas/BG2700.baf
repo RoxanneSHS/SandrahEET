@@ -26,7 +26,7 @@ THEN
 RESPONSE #100
 SetGlobal("CVSandrExists","bg2700",1)
 CreateCreature("Sandrah",[3130.1403],0)
-AddXPObject("CVSandr",5600)
+AddXPObject("CVSandr",2600)
 SetGlobalTimer("SanbookT","GLOBAL",300)
 Continue()
 END
