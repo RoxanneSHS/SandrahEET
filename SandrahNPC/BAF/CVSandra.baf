@@ -3879,6 +3879,18 @@ IF
 Dead("Tarnesh")
 AreaCheck("bg2300")
 Global("Tarded","GLOBAL",0)
+!InParty("Imoen2")
+THEN
+RESPONSE #100
+SetGlobal("Tarded","GLOBAL",1)
+END
+
+IF
+Dead("Tarnesh")
+AreaCheck("bg2300")
+Global("Tarded","GLOBAL",0)
+InParty("Imoen2")
+!StateCheck("Imoen2",CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
 SetGlobal("Tarded","GLOBAL",1)
