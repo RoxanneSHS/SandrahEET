@@ -94,184 +94,184 @@ END
 
 IF~~THEN BEGIN SirenRess
 SAY ~(Sandrah takes a long time to examine the tiefling before she decides on a method to apply.) This should work...~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("C0Sirene",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",350) ApplySpell("C0Sirene",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ValeRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("t2val",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("t2val",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN RasaadRess
 SAY ~I can probably not worsen his current state with my attempt.~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("rasaad",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("rasaad",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN WhitRess
 SAY ~I hope I can cope with his physiognomy that is a bit strange due to his being raised by a naga. (Nervously) I can probably not worsen his current state with my attempt.~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("v#1whi",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("v#1whi",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN IsraRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("rh#isra",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("rh#isra",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN NeeraRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("neera",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("neera",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN KagRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("kagain",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("kagain",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN JenliRess
 SAY ~I hope I can cope with her alien physiognomy but on the other hand githyanki are said to have humanoid roots. (Nervously) I can probably not worsen her current state with my attempt.~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("CVJenlig",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",400) ApplySpell("CVJenlig",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN NaliRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Nalia",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Nalia",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN SafaRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Safana",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Safana",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN SaerRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Saerileth",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Saerileth",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ChloeRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("RChloe",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("RChloe",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN YasRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Yasraena",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Yasraena",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ShauRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("CVShau",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("CVShau",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN DrizRess1
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("F_Drizzt",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("F_Drizzt",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN DrizRess2
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Driz2",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Driz2",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN EdwRess
 SAY ~ <CHARNAME>, you really want me to sacrifice part of myself for that dirty red scum? Well.~
 =~ (Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",5000) ApplySpell("Edwin",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",500) ApplySpell("Edwin",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN EldoRess
 SAY ~ <CHARNAME>, you really want me to sacrifice part of myself for that dirty bard scum? Well.~
 =~ (Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",5000) ApplySpell("Eldoth",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",500) ApplySpell("Eldoth",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN RoseRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("k-rose",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("k-rose",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN GavRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("B!GAVIN",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("B!GAVIN",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN BregRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("ACBre",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("ACBre",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN FinkRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Sufinch",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Sufinch",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN IndiRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("J#Indi",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("J#Indi",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN XanRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Xan",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Xan",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN BranRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Branwen",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Branwen",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN MinscRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Minsc",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Minsc",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN GarrRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Garrick",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Garrick",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN AjanRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Ajantis",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Ajantis",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN DynaRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Dynaheir",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Dynaheir",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN SharRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Sharteel",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Sharteel",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN KivanRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Kivan",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Kivan",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN KivanRess2
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("p#Kivan",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("p#Kivan",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN CoranRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Coran",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Coran",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ImoRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Imoen2",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Imoen2",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN KhalRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Khalid",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Khalid",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN JahRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Jaheira",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Jaheira",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN VicoRess
@@ -281,7 +281,7 @@ END
 
 IF~~THEN BEGIN FaldoRess
 SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
-IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",300) ApplySpell("Faldorn",CLERIC_RAISE_DEAD)~EXIT
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("Faldorn",CLERIC_RAISE_DEAD)~EXIT
 END
 
 // Dungeon Talks
