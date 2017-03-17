@@ -3651,9 +3651,9 @@ DO ~SetGlobal("SanAjan1","LOCALS",3)~
 == BAJANT ~ Will you tell who you are then in time?~
 == BSANDR ~ My sweet paladin, you are talking of a fact that cannot be hidden anywhere on the Sword Coast for very long. <CHARNAME> will find out soon enough by own means. I only want this bit of time to gain my own reputation in this group without any credit to my father. Is that so hard to understand?~
 == BAJANT ~ No, m'lady. I think this is acceptable. It does no harm and it is no lie. To gain your own merits instead of relying on your father's laurels is a valid course. And, if I may add this, m'lady, from what I see, you really will get your own reputation very fast.~
-== BSANDR ~ A compliment? My lovely paladin, you then approve to my course of action.~
+== BSANDR ~ A compliment? You then approve to my course of action?~
 == BAJANT ~ I am happy to see you have your good reasons to act like you do. Maybe at one time I myself should have opened my eyes more to the real Sandrah than to be blinded by the image of the mage's daughter.~
-== BSANDR ~ (Kisses Ajantis quickly on the cheek.) Thank you, my confidant.~
+== BSANDR ~ Thank you, my confidant.~
 EXIT
 
 CHAIN
@@ -3668,10 +3668,7 @@ DO ~ SetGlobal("SanHealAjan","GLOBAL",6) RealSetGlobalTimer("SanHelmDogmasdel","
 == BSANDR ~ And which is the truth nevertheless. Ajantis, you have become a man of the road now yourself. Admit that often the situations we face require this directness and this resolute actions. If you really wanted to spend your life with smalltalk and courtesy, the order would surely have some adequate missions for you.~
 == BSANDR IF~Global("SanRomPath","GLOBAL",2)~THEN~ I really think you know yourself too little. Be honest, Ajantis, do you not sometimes admire <CHARNAME> or me for the way we directly deal with the heart of the matter?~
 == BSANDR IF~Global("SanRomPath","GLOBAL",1)~THEN~ I really think you know yourself too little. You  would not be happy with a woman who is just decoration to a nice home - where you would not stay that long anyway...~
-== BAJANT ~ Mylady, what I admire in you, is that you seem to be capable of both. You are a noblewoman at heart and by your actions but without the empty facade those ladies in Waterdeep show the world while there is nothing behind it in reality. And you are as well capable to outshine any of them with your beauty and your manners - whenever you choose it.~
-== BSANDR ~ Thank you, paladin. There is still hope for you. Your words really show you get the notion of a world that is not so orderly and black and white as you once thought. Open your eyes, Ajantis, your eyes, your mind and your heart to see what life really means.~
-== BAJANT ~ Is there a chance, Sandrah, that I can hope for some guidance from your side in this?~
-== BSANDR ~ (Laughs) You are already receiving it, sweet paladin, at this very moment. (Gives Ajantis a kiss on the cheek before she whirls away to her next task.)~
+== BAJANT ~ Mylady, what I notice in you, is that you seem to be capable of both. You are a noblewoman at heart and by your actions but without the empty facade those ladies in Waterdeep show the world while there is nothing behind it in reality. And you are as well capable to outshine any of them with your beauty and your manners - whenever you choose it.~
 EXIT
 
 CHAIN
@@ -3696,7 +3693,6 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",3)~
 == BSANDR ~ So what is the result of this? Duty to one's cause does not require Helm or any other god at all. Do not let your vigilant one get notice of such blasphemic thoughts, I really fear for you, paladin.~
 == BAJANT IF~GlobalGT("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbendable character as you, Elminster's daughter. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
 == BAJANT IF~Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbendable character as you, Mystra's pride. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
-== BSANDR ~ (As all conversations between Sandrah and Ajantis this one ends with Sandrah putting her arm around the paladin's neck to bend him down to her before he kisses him on the forehead.)~
 EXIT
 
 CHAIN
@@ -3709,11 +3705,11 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",7) ~
 == BSANDR ~ I have not confirmed that Mystra is not a guidance to me. All I said is that her rules and instructions are not expressed in clear commands, but are something that you find in your own heart and mind.~
 = ~ Remember what you learned about Mystra, or rather about Midnight. She was an adventurer and cleric of pure heart. Due to her own interpretation of what was right and good, she was chosen by Ao at the Time of Troubles to help him destroy the renegade gods. Ao, the Lord of Lords, chose her, the human adventurer, instead of other gods.~
 == BAJANT ~ Except for Helm. Ao put Helm beside the adventurers on the holy task.~
-== BSANDR ~ (Smiles at Ajantis) You see how Midnight and Helm have worked hand in hand and succeeded to bring back peace to the troubled Toril. (She takes his hand.) And here are we, hand in hand, following their example to bring peace once again to these troubled times.~
-== BAJANT ~ (Ajantis keeps Sandrah's hand in his own and smiles back.) I like this view on our mission, even if we do not deal with fallen gods this time.~
+== BSANDR ~ (Smiles at Ajantis) You see how Midnight and Helm have worked hand in hand and succeeded to bring back peace to the troubled Toril. ~
+== BAJANT ~ I like this view on our mission, even if we do not deal with fallen gods this time.~
 == BSANDR ~ (Sandrah stops their walk abruptly.) Who says we do not?~
 == BAJANT ~ What do you mean, Sandrah?~
-== BSANDR ~ What? Oh, I am sorry, Ajantis, forget my words, I got carried away by my thoughts somehow. (She silences any possible response in her usual way - with a kiss on the perplexed paladin's mouth.)~
+== BSANDR ~ What? Oh, I am sorry, Ajantis, forget my words, I got carried away by my thoughts somehow.~
 EXIT
 
 CHAIN
@@ -3728,7 +3724,7 @@ DO~SetGlobal("SanImohelmKill","LOCALS",2)~
 == BSANDR ~I see what you mean, my learned besta friend. Are you aware of the fact that the incarnation of Mystra slain by Helm was not the one that I serve. My grandmother Midnight was elevated to replace the fallen Mystra and to take her cloak and name.~
 ==Bimoen~You have no grudge against the helmites then - hihi. He might've done your granny a favour by removing the old one...~
 == BSANDR ~Oh, Imoen, stop your wild analysis before it gets out of hand. Our view on what has happened way back then surely must take more historical facts into account. Helm is no murderer and my grandmother was not appointed to her task as the result of an intrigue.~
-==Bimoen~Like I said...blue-eyed! Beware - one false move and your handsome lover will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~EXIT
+==Bimoen~Like I said...blue-eyed! Beware - one false move and our handsome companion will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~EXIT
 
 
 CHAIN
