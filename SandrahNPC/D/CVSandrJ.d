@@ -390,7 +390,7 @@ END
 
 IF~Global("SanBHTalos","GLOBAL",2)~ THEN BEGIN TalosvisitBH1
 SAY~Talos?~
-IF~~THEN REPLY~ This symbol, you mean? Do you think those lizards worship him?~ DO~SetGlobal("SanBHTalos","GLOBAL",3) AddexperienceParty(3100)~GOTO TalosvisitBH2
+IF~~THEN REPLY~ This symbol, you mean? Do you think those lizards worship him?~ DO~SetGlobal("SanBHTalos","GLOBAL",3) AddexperienceParty(1100)~GOTO TalosvisitBH2
 END
 
 IF~~ THEN BEGIN TalosvisitBH2
@@ -530,7 +530,7 @@ END
 
 IF ~ ~ THEN BEGIN SanVault21
 SAY ~ Ancient vampires that travelled the Coast by these mysterious astral tunnels. The vault seemed to have been their travel center of kinds. I guess you are right, <CHARNAME>, there is no other insight here for us, than that the past is still alive in many ways around us and reaches out for us sometimes unexpectedly.~
-IF~~ THEN DO ~ AddexperienceParty(3500) SetGlobal("TheVaultSentry","GLOBAL",3) ~ EXIT
+IF~~ THEN DO ~ AddexperienceParty(350) SetGlobal("TheVaultSentry","GLOBAL",3) ~ EXIT
 END
 
 //Xvart Village
@@ -707,7 +707,7 @@ END
 
 IF ~~ THEN BEGIN SwCoaUW36
 SAY ~ The question is, what they do here, so close to the surface of the Sword Coast and at a time where we have this crisis up there.~
-IF ~~ THEN REPLY ~ We can only hope that this guy Jarlaxle is not in league with the Iron Throne and its leaders then.~ DO ~ AddexperienceParty(3500) ~ EXIT
+IF ~~ THEN REPLY ~ We can only hope that this guy Jarlaxle is not in league with the Iron Throne and its leaders then.~ DO ~ AddexperienceParty(2500) ~ EXIT
 END
 
 IF ~ Global("SanDSOTSCUW","GLOBAL",8)~ THEN BEGIN SwCoaUW41
@@ -1154,7 +1154,7 @@ END
 
 IF~~ THEN BEGIN SanGoth65
 SAY ~ It would be a strange coincidence if something else would be in that citadel. The building was errected shortly after the battle, so most likely that is where the key to the grave is kept.~ 
-IF~~THEN DO ~ SetGlobal("SanGothSwFound","GLOBAL",4) AddexperienceParty(4300)~ EXIT
+IF~~THEN DO ~ SetGlobal("SanGothSwFound","GLOBAL",4) AddexperienceParty(1300)~ EXIT
 END
 
 IF~ Global("SanGothSwFound","GLOBAL",3) ~ THEN BEGIN SanGoth70
@@ -4524,7 +4524,7 @@ END
 
 IF ~ Global("NarCavOut","GLOBAL",3) ~ THEN BEGIN NarCavLeav
 SAY ~ Shall we try the shard now, <CHARNAME>? ~
-IF ~~ THEN REPLY ~ Yes, Sandrah. Let me say we all put our hope in you now.~ DO ~ AddExperienceParty(14700)~ GOTO NarShardActiv
+IF ~~ THEN REPLY ~ Yes, Sandrah. Let me say we all put our hope in you now.~ DO ~ AddExperienceParty(5700)~ GOTO NarShardActiv
 END
 
 IF ~~ THEN BEGIN NarShardActiv
@@ -4743,7 +4743,7 @@ END
 //Marl
 INTERJECT_COPY_TRANS MARL 0 CutMarl
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Sir? Calm down, we are not the ones you look for. ~
-== MARL IF ~ InParty("CVSandr")~ THEN ~ (Starts to tremble under Sandrah's gaze and takes a step back.) Sssorry, mylady. ~ DO ~ AddexperienceParty(400) EscapeArea() ~
+== MARL IF ~ InParty("CVSandr")~ THEN ~ (Starts to tremble under Sandrah's gaze and takes a step back.) Sssorry, mylady. ~ DO ~ AddexperienceParty(100) EscapeArea() ~
 END
 
 //NOOBER
@@ -5742,7 +5742,7 @@ DO~ SetGlobal("SanWDTemplWi","GLOBAL",9)~
 ==CVLEYG ~ I was very sick before the dream began but now I feel well. Have...have you done that, mylady?~
 == CVSandrJ ~ This here is Mystra's temple and I am one of her healers. I am glad you feel better, Leyala.~
 ==CVLEYG ~ Yes, this is Mystra's temple, you look just like the goddess as I saw her in my dream state...~
-DO ~ AddexperienceParty(11300) RestParty() DestroySelf()~EXIT
+DO ~ AddexperienceParty(6300) RestParty() DestroySelf()~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanXzarDea","GLOBAL",1) Global("SanResurAva","GLOBAL",1) InParty("Xzar")~ THEN CVSANDRJ Sanxzarhandsoff

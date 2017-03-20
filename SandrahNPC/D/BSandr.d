@@ -506,7 +506,7 @@ END
 
 IF~~ THEN BEGIN SanPackW31
 SAY~ This is not over yet, <CHARNAME>, and some bloodshed may not be avoidable after all. Kaishas mentioned their chieftain who was send out to arrange their escape from the island. She said that maybe he will not so peacefully remove the *gift* from us. Selaad, who misused us from the very beginning in the most cunning way under his Mendas disquise.~ 
-IF~~ THEN DO ~SetGlobal("SanPackW","LOCALS",6) AddexperienceParty(3800)~ EXIT
+IF~~ THEN DO ~SetGlobal("SanPackW","LOCALS",6) AddexperienceParty(1800)~ EXIT
 END
 
 //Red Wizards in East Wood
@@ -2448,7 +2448,7 @@ DO ~ReputationInc(1) RealSetGlobalTimer("BeregOrphOpen","GLOBAL",3600)~
 ==Bimoen ~ That changes now. And there is also this bag of lotsa gold. The orc that had it for stealing my boy away does not need a coin of it anymore. It's enough for a lotta clothes and food for a lotsa boys 'n' girls for a long and long time.~ 
 == KELDDA ~ All of that is in good hands with us, lady Imoen. I see that you and your friends cannot stay yourself to see us go to work right away. You have already done much and I can see that you are determined to put this intrigue to a final end. The next time you pass Beregost you will be able to see the first results of the project, I assure you.~
 END
-++ ~ And I assure you, that we will have good news about the destruction of the ones behind all of this trouble when we see each other next time. Farewell. ~ DO ~ AddexperienceParty(5200)~
+++ ~ And I assure you, that we will have good news about the destruction of the ones behind all of this trouble when we see each other next time. Farewell. ~ DO ~ AddexperienceParty(4200)~
 EXIT
 
 CHAIN
@@ -2501,7 +2501,7 @@ DO ~ SetGlobal("SanImoRetWD","GLOBAL",7) ~
 == Henning2 ~ Through your father's channels I already have been in contact with Cedric in Nashkel, so she will run the business down there for the time. And I have met with Clarissa, the local bookmerchant. Her business is flourishing, but her abilities in organisation and bookkeeping are a bit chaotic, to say the least. So we already have agreed that I will start to organise that part of her business for a while.~
 == Narqmes ~ Your father has given a suite of unused rooms in the west wing to the young couple for their free use, Miss Sandrah.~
 == Henning2 ~ If your friends do not mind, I would like to show this nest to my sweetest girl...~
-==Bimoen ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(4000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+==Bimoen ~ Sweetheart, whatcha waiting for, quick and quickest, I have to inspect your body fully completely all over to see that nothing is amiss...~ DO ~ AddExperienceParty(2000) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
