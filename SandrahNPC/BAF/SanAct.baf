@@ -164,6 +164,7 @@ END
 IF
 	See(NearestEnemyOf(Myself))
 	Range(NearestEnemyOf(Myself),20)
+	ActionListEmpty()
 THEN
 	RESPONSE #100
 		EquipMostDamagingMelee()
