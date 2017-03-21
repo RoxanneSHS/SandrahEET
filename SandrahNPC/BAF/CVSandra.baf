@@ -1356,6 +1356,7 @@ IF
 Global("SanSafaBan","GLOBAL",1)
 RealGlobalTimerExpired("SanSafaBanTi","LOCALS")
 InParty("Safana")
+!AreaType(DUNGEON)
 THEN
 RESPONSE #100
 SetGlobal("SanSafaBan","GLOBAL",2)
@@ -1367,6 +1368,7 @@ Global("SanSafaBan","GLOBAL",3)
 RealGlobalTimerExpired("SanSafaBanTi","LOCALS")
 AreaType(City)
 TimeOfDay(DAY)
+!AreaType(DUNGEON)
 THEN
 RESPONSE #100
 SetGlobal("SanSafaBan","GLOBAL",4)
