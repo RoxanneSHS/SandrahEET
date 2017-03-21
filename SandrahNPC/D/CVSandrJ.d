@@ -2427,7 +2427,7 @@ END
 
 IF ~~ THEN BEGIN SanStrBe4
 SAY~ (Before you can get the whole berry, she quickly bites it in two and you both end up with half of it, some juice starting to drip from you mouth.) ~
-IF ~~ THEN REPLY ~ (You stop any drooling juice with a series of kisses around Sandrah's mouth.) ~ DO ~ SetGlobal("SanStrBe","LOCALS",1)~ EXIT
+IF ~~ THEN REPLY ~ (You stop any drooling juice with a quick kiss on the corner of Sandrah's mouth.) ~ DO ~ SetGlobal("SanStrBe","LOCALS",1)~ EXIT
 END
 
 IF~~THEN BEGIN StopRom
