@@ -68,7 +68,7 @@ END
 IF ~~ THEN BEGIN SanFlr32
 SAY ~ Access to the Weave that grants the powers to cast magic is given by all the gods to their followers, even those gods we would think of as evil. Mystra cannot prevent this. All she and her followers can do is to support those who chose the right path in its use and those who have the faith to object the evil magic users.~
 IF~~THEN REPLY ~ I do not want to hurt you in your religion, but it sounds like your goddess is a rather weak one then.~ GOTO SanFlr33
-IF~~THEN REPLY ~ Than Mystra is a bit like an overseer rather than one that rules the fate of us mortals?~ GOTO SanFlr34
+IF~~THEN REPLY ~ Then Mystra is a bit like an overseer rather than one that rules the fate of us mortals?~ GOTO SanFlr34
 END
 
 IF ~~ THEN BEGIN SanFlr33
