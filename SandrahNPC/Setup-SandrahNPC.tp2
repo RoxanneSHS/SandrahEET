@@ -2026,10 +2026,12 @@ SAY 0x9e @765
 COPY ~SandrahNPC/Kit/CVchao.SPL~ ~override/CVchao.SPL~
      SAY 0xc  @474
      SAY 0x8  @474
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/CVbard.SPL~ ~override/CVbard.SPL~
      SAY 0xc  @503
      SAY 0x8  @503
+     SAY 0x50 @999
 
 COPY ~SandrahNPC/Kit/cvvispi.spl~ ~override/cvvispi.spl~
      SAY 0xc  @443
@@ -2147,38 +2149,38 @@ COPY ~SandrahNPC/Kit/cvdra17.eff~ ~override/cvdra17.eff~
 COPY ~SandrahNPC/Kit/cvdra18.spl~ ~override/cvdra18.spl~
      SAY 0xc  @279
      SAY 0x8  @279
-     SAY 0x50 @279
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/cvdra18.eff~ ~override/cvdra18.eff~
 COPY ~SandrahNPC/Kit/cvdra19.spl~ ~override/cvdra19.spl~
      SAY 0xc  @280
      SAY 0x8  @280
-     SAY 0x50 @280
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/cvdra19.eff~ ~override/cvdra19.eff~
 COPY ~SandrahNPC/Kit/cvdra20.spl~ ~override/cvdra20.spl~
      SAY 0xc  @544
      SAY 0x8  @544
-     SAY 0x50 @544
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/cvdra20.eff~ ~override/cvdra20.eff~
 COPY ~SandrahNPC/Kit/CVDra26.eff~ ~override/CVDra26.eff~
 COPY ~SandrahNPC/Kit/CVDra26.spl~ ~override/CVDra26.spl~
      SAY 0xc  @718
      SAY 0x8  @718
-     SAY 0x50 @718
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/CVbookw.eff~ ~override/CVbookw.eff~
 COPY ~SandrahNPC/Kit/CVbookw.spl~ ~override/CVbookw.spl~
      SAY 0xc  @865
      SAY 0x8  @865
-     SAY 0x50 @865
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/CVtenta.eff~ ~override/CVtenta.eff~
 COPY ~SandrahNPC/Kit/CVtenta.spl~ ~override/CVtenta.spl~
      SAY 0xc  @928
      SAY 0x8  @928
-     SAY 0x50 @928
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/CVazut.eff~ ~override/CVazut.eff~
 COPY ~SandrahNPC/Kit/CVazut.spl~ ~override/CVazut.spl~
      SAY 0xc  @929
      SAY 0x8  @929
-     SAY 0x50 @929
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/cvknok.spl~ ~override/cvknok.spl~
      SAY 0xc  @401
      SAY 0x8  @401
@@ -2195,7 +2197,7 @@ COPY ~SandrahNPC/Kit/cvbabbl.bam~ ~override/cvbabbl.bam~
 COPY ~SandrahNPC/Kit/cvbabbl.spl~ ~override/cvbabbl.spl~
      SAY 0xc  @867
      SAY 0x8  @867
-     SAY 0x50 @867
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/SANWDHO.SPL~ ~override/SANWDHO.SPL~
      SAY 0xc  @407
      SAY 0x8  @407
@@ -2203,7 +2205,7 @@ COPY ~SandrahNPC/Kit/SANWDHO.SPL~ ~override/SANWDHO.SPL~
 COPY ~SandrahNPC/Kit/CVPest.SPL~ ~override/CVPest.SPL~
      SAY 0xc  @773
      SAY 0x8  @773
-     SAY 0x50 @773
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/SANWDRE.SPL~ ~override/SANWDRE.SPL~
      SAY 0xc  @408
      SAY 0x8  @408
@@ -2239,12 +2241,12 @@ COPY ~SandrahNPC/Kit/cvresis.spl~ ~override/cvresis.spl~
 COPY ~SandrahNPC/Kit/SanGaz1.spl~ ~override/sanGaz1.spl~
      SAY 0xc  @459
      SAY 0x8  @459
-     SAY 0x50 @459
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/CVVeto.spl~ ~override/CVVeto.spl~
      SAY 0xc  @511
      SAY 0x8  @511
-     SAY 0x50 @511
+     SAY 0x50 @999
 
 COPY ~SandrahNPC/Kit/santsu.spl~ ~override/santsu.spl~
      SAY 0xc  @693
@@ -2254,34 +2256,34 @@ COPY ~SandrahNPC/Kit/santsu.spl~ ~override/santsu.spl~
 COPY ~SandrahNPC/Kit/CVSPHGOL.SPL~ ~override/CVSPHGOL.SPL~
      SAY 0xc  @702
      SAY 0x8  @702
-     SAY 0x50 @702
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/HAEPRIS.SPL~ ~override/HAEPRIS.SPL~
      SAY 0xc  @743
      SAY 0x8  @743
-     SAY 0x50 @743
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/CVHada.SPL~ ~override/CVHada.SPL~
      SAY 0xc  @744
      SAY 0x8  @744
-     SAY 0x50 @744
+     SAY 0x50 @999
 
 COPY ~SandrahNPC/Kit/CVevil.spl~ ~override/CVevil.spl~
 COPY ~SandrahNPC/Kit/CValgn.spl~ ~override/CValgn.spl~
 COPY ~SandrahNPC/Kit/CVSanbs.SPL~ ~override/CVSanbs.SPL~
      SAY 0xc  @549
      SAY 0x8  @549
-     SAY 0x50 @549
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/cvdra23.spl~ ~override/cvdra23.spl~
      SAY 0xc  @662
      SAY 0x8  @662
-     SAY 0x50 @662
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/CVSilFir.spl~ ~override/CVSilFir.spl~
      SAY 0xc  @783
      SAY 0x8  @783
-     SAY 0x50 @784
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Jenlig/cvinvij.spl~ ~override/cvinvij.spl~
      SAY 0xc  @453
@@ -2311,7 +2313,7 @@ ADD_PROJECTILE ~SandrahNPC/Kit/CVMysAn.pro~
 COPY ~SandrahNPC/Kit/cvmysan.spl~ ~override/cvmysan.spl~
      SAY 0xc  @767
      SAY 0x8  @767
-     SAY 0x50 @767
+     SAY 0x50 @999
 COPY ~SandrahNPC/Kit/cvmysa1.spl~ ~override/cvmysa1.spl~
      WRITE_SHORT   0x98 ~%CVMysAn%~
 COPY ~SandrahNPC/Kit/cvmysa2.spl~ ~override/cvmysa2.spl~ 
