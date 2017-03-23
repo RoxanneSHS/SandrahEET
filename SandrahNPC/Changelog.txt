@@ -10,6 +10,7 @@ New shopkeeper in Nashkel
 Feldepost is a high class inn
 Options to influence Sandrah flirts with other NPCs 
 Gavin Sandrah romance removed
+More spell descriptions added
 
 updated fl#add_kit_ee.tpa 
 
