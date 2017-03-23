@@ -154,19 +154,20 @@ THEN
 END
 
 IF
+	ActionListEmpty()
+	See(NearestEnemyOf(Myself))
+	Range(NearestEnemyOf(Myself),20)
+	!ModalState(TURNUNDEAD)
+THEN
+	RESPONSE #100
+	EquipMostDamagingMelee()
+	AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
 	AttackedBy([ANYONE],DEFAULT)
 	ActionListEmpty()
 THEN
 	RESPONSE #100
-		AttackOneRound(LastAttackerOf(Myself))
-END
-
-IF
-	See(NearestEnemyOf(Myself))
-	Range(NearestEnemyOf(Myself),20)
-	ActionListEmpty()
-THEN
-	RESPONSE #100
-		EquipMostDamagingMelee()
-		AttackReevaluate(NearestEnemyOf(Myself),30)
+	AttackOneRound(LastAttackerOf(Myself))
 END
