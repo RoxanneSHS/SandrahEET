@@ -3724,8 +3724,8 @@ DO~SetGlobal("SanImohelmKill","LOCALS",2)~
 == BSANDR ~I see what you mean, my learned besta friend. Are you aware of the fact that the incarnation of Mystra slain by Helm was not the one that I serve. My grandmother Midnight was elevated to replace the fallen Mystra and to take her cloak and name.~
 ==Bimoen~You have no grudge against the helmites then - hihi. He might've done your granny a favour by removing the old one...~
 == BSANDR ~Oh, Imoen, stop your wild analysis before it gets out of hand. Our view on what has happened way back then surely must take more historical facts into account. Helm is no murderer and my grandmother was not appointed to her task as the result of an intrigue.~
-==Bimoen~Like I said...blue-eyed! Beware - one false move and our handsome companion will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~EXIT
-
+==Bimoen~Like I said...blue-eyed! Beware - one false move and our handsome companion will ...(she makes a gesture of cutting a throat.) Don't say ol' watchful Imoen didn't warn ya in time.~
+== BSANDR ~(Sandrah's face becomes stern) And, yes, he would not hesitate to do his duty to kill me for similar reasons than those Helm *saw* to kill Mystra.~EXIT
 
 CHAIN
 IF ~ Global("SanAjantWDEntry","LOCALS",1)~ THEN BSANDR AjanWDentry

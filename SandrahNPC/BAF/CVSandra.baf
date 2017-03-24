@@ -3796,6 +3796,17 @@ SetGlobal("OrcPrison","GLOBAL",29)
 END
 
 IF
+Global("SanImohelmKill","LOCALS",0)
+InParty("Imoen2")
+InParty("Ajantis")
+AreaType(CITY)
+GlobalGT("Chapter","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("SanImohelmKill","LOCALS",1)
+END
+
+IF
 !See([ENEMY])
 CombatCounter(0)
 InParty("Imoen2")
