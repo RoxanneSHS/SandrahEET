@@ -3668,7 +3668,7 @@ DO ~ SetGlobal("SanHealAjan","GLOBAL",6) RealSetGlobalTimer("SanHelmDogmasdel","
 == BSANDR ~ And which is the truth nevertheless. Ajantis, you have become a man of the road now yourself. Admit that often the situations we face require this directness and this resolute actions. If you really wanted to spend your life with smalltalk and courtesy, the order would surely have some adequate missions for you.~
 == BSANDR IF~Global("SanRomPath","GLOBAL",2)~THEN~ I really think you know yourself too little. Be honest, Ajantis, do you not sometimes admire <CHARNAME> or me for the way we directly deal with the heart of the matter?~
 == BSANDR IF~Global("SanRomPath","GLOBAL",1)~THEN~ I really think you know yourself too little. You  would not be happy with a woman who is just decoration to a nice home - where you would not stay that long anyway...~
-== BAJANT ~ Mylady, what I notice in you, is that you seem to be capable of both. You are a noblewoman at heart and by your actions but without the empty facade those ladies in Waterdeep show the world while there is nothing behind it in reality. And you are as well capable to outshine any of them with your beauty and your manners - whenever you choose it.~
+== BAJANT ~ Mylady, I surely do not need YOUR advice in those matters. I am aware you can put on any mask you like with ease and play the noblewoman just as well as the harlot.~
 EXIT
 
 CHAIN
