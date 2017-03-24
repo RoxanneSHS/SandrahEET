@@ -417,6 +417,7 @@ AreaCheck("BG3900")
 Global("JenLinear","LOCALS",0)
 Dead("Icharyd")
 CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
 SetGlobal("JenLinear","LOCALS",1)
