@@ -48,11 +48,7 @@ InParty("CVSandr")
 !See([ENEMY])
 CombatCounter(0)
 !StateCheck(Player1,CD_STATE_NOTVALID)
-!StateCheck(Player2,CD_STATE_NOTVALID)
-!StateCheck(Player3,CD_STATE_NOTVALID)
-!StateCheck(Player4,CD_STATE_NOTVALID)
-!StateCheck(Player5,CD_STATE_NOTVALID)
-!StateCheck(Player6,CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
 SetGlobal("SanDruids","cvdru0",2)
