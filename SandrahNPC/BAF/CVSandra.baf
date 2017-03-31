@@ -2479,7 +2479,7 @@ END
 
 IF
 Global("SanNarQ","GLOBAL",6)
-Global("NarCavOut","GLOBAL",2) 
+GlobalLT("NarCavOut","GLOBAL",3) 
 Global("NarHellAfter","GLOBAL",3)
 PartyHasItemIdentified("EShard")
 PartyHasItem("Sandebo")
