@@ -5725,7 +5725,7 @@ IF
 Global("DimDay","GLOBAL",1)
 THEN
 RESPONSE #100
-PlaySong(0)
+PlaySound("DimDay")
 MoveToObject("SHARTEEL")
 Interact("CVSandr")
 END
@@ -7147,7 +7147,7 @@ SmallWait(5)
 MoveToPoint([769.524])
 SmallWait(5)
 EndCutSceneMode()
-PlaySong(0)
+PlaySound("mernig")
 END
 
 IF
