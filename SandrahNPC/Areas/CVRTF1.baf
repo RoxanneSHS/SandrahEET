@@ -125,6 +125,7 @@ Global("JaheiraBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("JaheiraBio","cvrtf1",1)
+SetGlobal("RTFJahMove","GLOBAL",1)
 SmallWait(1)
 ActionOverride("Jaheira",LeaveParty())
 ActionOverride("Jaheira",EscapeAreaMove("ar0308",530,670,14))
@@ -138,6 +139,7 @@ Global("HexxatBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("HexxatBio","cvrtf1",1)
+SetGlobal("RTFHexMove","GLOBAL",1)
 SmallWait(1)
 ActionOverride("Hexxat",LeaveParty())
 ActionOverride("Hexxat",EscapeAreaMove("ar0800",1460,1970,10))
@@ -151,6 +153,8 @@ Global("NeeraBio","cvrtf1",0)
 THEN
 RESPONSE #100
 SetGlobal("NeeraBio","cvrtf1",1)
+SetGlobal("RTFNerMove","GLOBAL",1)
+SmallWait(1)
 ActionOverride("Neera",LeaveParty())
 ActionOverride("Neera",EscapeAreaMove("OH6200",1402,1151,7)
 Continue()
@@ -776,11 +780,13 @@ END
 IF
 Global("StartEndBios","cvrtf1",1)
 InParty("RChloe")
+Global("RchloeToRtF","Global",0)
 THEN
 RESPONSE #100
+SetGlobal("RchloeToRtF","Global",1)
 SmallWait(1)
 ActionOverride("RChloe",LeaveParty())
-ActionOverride("RChloe",EscapeAreaMove("AR0709",480,445,S))
+ActionOverride("RChloe",EscapeAreaMove("BG3401",220,352,8))
 Continue()
 END
 
