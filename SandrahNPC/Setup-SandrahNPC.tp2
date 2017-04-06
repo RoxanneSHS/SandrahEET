@@ -4691,32 +4691,7 @@ PRINT ~Installed Sandrah Movies~
 
 AT_UNINSTALL ~SandrahNPC/mve/CVMovieuninstal.bat~
 
-COPY ~SandrahNPC/Music/CVblank.mus~ ~music~
-COPY_EXISTING ~songlist.2da~ ~override~
-SET_2DA_ENTRY 0 2 3 ~CVBLANK.MUS~  
-COPY ~SandrahNPC/Music/DimDay.ogg~  ~override/DimDay.ogg~
-COPY ~SandrahNPC/Music/mernig.ogg~  ~override/mernig.ogg~
-COPY ~SandrahNPC/Music/San606.ogg~  ~override/San606.ogg~
-COPY ~SandrahNPC/Music/San607.ogg~  ~override/San607.ogg~
-COPY ~SandrahNPC/Music/San609.ogg~  ~override/San609.ogg~
-COPY ~SandrahNPC/Music/San610.ogg~  ~override/San610.ogg~
-COPY ~SandrahNPC/Music/San612.ogg~  ~override/San612.ogg~
-COPY ~SandrahNPC/Music/San613.ogg~  ~override/San613.ogg~
-COPY ~SandrahNPC/Music/San614.ogg~  ~override/San614.ogg~
-COPY ~SandrahNPC/Music/San616.ogg~  ~override/San616.ogg~
-COPY ~SandrahNPC/Music/San617.ogg~  ~override/San617.ogg~
-COPY ~SandrahNPC/Music/San619.ogg~  ~override/San619.ogg~
-COPY ~SandrahNPC/Music/San620.ogg~  ~override/San620.ogg~
-COPY ~SandrahNPC/Music/San622.ogg~  ~override/San622.ogg~
-COPY ~SandrahNPC/Music/San625.ogg~  ~override/San625.ogg~
-COPY ~SandrahNPC/Music/San626.ogg~  ~override/San626.ogg~
-COPY ~SandrahNPC/Music/San631.ogg~  ~override/San631.ogg~
-COPY ~SandrahNPC/Music/San633.ogg~  ~override/San633.ogg~
-COPY ~SandrahNPC/Music/San635.ogg~  ~override/San635.ogg~
-COPY ~SandrahNPC\Music/oggdec.exe~ ~override/oggdec.exe~
-
-AT_NOW ~SandrahNPC\Music/CVVoiceInstall.bat~
-AT_UNINSTALL ~SandrahNPC\Music/CVVoiceUninstall.bat~
+COPY ~SandrahNPC/Music~  ~override~
 
 PRINT ~Installed Sandrah Voice and Music~
 
