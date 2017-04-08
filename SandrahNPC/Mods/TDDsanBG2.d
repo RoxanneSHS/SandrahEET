@@ -153,8 +153,8 @@ INTERJECT RIATMOV1 1  RecSan
 ==RIATMOV1 IF~InParty("CVSandr")~THEN~ But wait, if my eyes don't deceive me I recognise a little girl who has grown into a beautiful lady - Sandrah?~
 ==CVSANDRJ IF~InParty("CVSandr")~THEN~  Your eyes are still intact, yes it is me.~
 ==RIATMOV1 IF~InParty("CVSandr")~THEN~ Then I will take you to the quarter immediately, your father is present there, as well as Khelben and other high rank magicians. Maybe you can help them with a recent problem.~ DO~
-SetGlobal("mageriatward","GLOBAL",1)
-SetGlobalTimer("riatwardback","GLOBAL",3)
+SetGlobal("tz_mageriatward","GLOBAL",1)
+SetGlobalTimer("tz_riatwardback","GLOBAL",3)
 StartCutSceneMode()
 ClearAllActions()
 FadeToColor([20.0],0)
@@ -163,19 +163,19 @@ StartCutScene("newwardr") ~EXIT
 
 
 EXTEND_BOTTOM Priscali 2
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Priscali 3
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Priscali 4
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Pibble2 3
-IF~InParty("CVSandr") ~THEN REPLY~ I have one of the best healers in the Realms in my party, fear not. We will find the girl and you will live on.~ DO~ SetGlobal("dinquest2","GLOBAL",4) SetGlobal("Sanresc","LOCALS",0) StartCutSceneMode() Wait(1) ActionOverride("CVSandr",MoveToObject("Pibble2")) Wait(2)  Wait(2) ActionOverride("CVSandr",ForceSpell("Pibble2",CLERIC_HEAL)) Wait(8)  ActionOverride("Pibble2",Polymorph(FIGHTER_MALE_GNOME)) EndCutSceneMode() ~EXIT
+IF~InParty("CVSandr") ~THEN REPLY~ I have one of the best healers in the Realms in my party, fear not. We will find the girl and you will live on.~ DO~ SetGlobal("tz_dinquest2","GLOBAL",4) SetGlobal("Sanresc","LOCALS",0) StartCutSceneMode() Wait(1) ActionOverride("CVSandr",MoveToObject("Pibble2")) Wait(2)  Wait(2) ActionOverride("CVSandr",ForceSpell("Pibble2",CLERIC_HEAL)) Wait(8)  ActionOverride("Pibble2",Polymorph(FIGHTER_MALE_GNOME)) EndCutSceneMode() ~EXIT
 END
 
 APPEND  Pibble2

@@ -19,7 +19,7 @@ SetGlobal("SanOrgotrp","LOCALS",3)
 END
 
 IF
-Global("caliprisonspawn","GLOBAL",1)
+Global("tz_caliprisonspawn","GLOBAL",1)
 !AreaCheck("dd9x06")
 Global("SanTDDCali","LOCALS",0)
 Delay(8)
@@ -29,7 +29,7 @@ SetGlobal("SanTDDCali","LOCALS",1)
 END
 
 IF
-Global("artyinfz","GLOBAL",2)
+Global("tz_artyinfz","GLOBAL",2)
 Global("SanTDDjarlhunt","LOCALS",0)
 Delay(12)
 THEN
@@ -39,7 +39,7 @@ END
 
 IF
 Global("SanTDDjarlhunt","LOCALS",2)
-GlobalGT("githleev","GLOBAL",1)
+GlobalGT("tz_githleev","GLOBAL",1)
 AreaCheck("dd8000")
 THEN
 RESPONSE #100
@@ -48,7 +48,7 @@ END
 
 IF
 Global("SanTDDjarlhunt","LOCALS",4)
-GlobalGT("artraise","GLOBAL",0)
+GlobalGT("tz_artraise","GLOBAL",0)
 Dead("Jarlcave")
 THEN
 RESPONSE #100
