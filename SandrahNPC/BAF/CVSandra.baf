@@ -3453,7 +3453,10 @@ END
 IF
 Global("SanImoNashInt","GLOBAL",12)
 !AreaCheck("BG4803")
+OR(3)
 RealGlobalTimerExpired("SanImoNashRet","GLOBAL")
+AreaCheck("BG2900")
+AreaCheck("BG2400")
 Global("SanThruNasM","GLOBAL",2)
 Global("SanImoNashRaid","GLOBAL",0)
 CombatCounter(0)
