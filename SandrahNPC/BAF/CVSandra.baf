@@ -92,6 +92,7 @@ InParty(Myself)
 GlobalLT("Sanpoints","GLOBAL",47)
 GlobalLT("Sanbehbast","LOCALS",3)
 !AreaCheck("BG1803")
+AreaType(OUTDOOR)
 THEN
 RESPONSE #100
 SetGlobal("Sanbehbast","LOCALS",3)
