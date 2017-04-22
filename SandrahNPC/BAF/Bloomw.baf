@@ -13,7 +13,7 @@ InParty("CVSandr")
 !InParty("Sufinch")
 OR(2)
 Global("SUSanKnowsFinch","GLOBAL",1)
-Global("SUPCKnowsFinch","GLOBAL",1)
+GlobalGT("SUPCKnowsFinch","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("Bloomw","GLOBAL",2)

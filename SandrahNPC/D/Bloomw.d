@@ -77,8 +77,10 @@ IF ~Global("Bloomw","GLOBAL",3)~ THEN BLOOMW BloSUCoI
 == BLOOMW ~ My name is Clarissa Bloomwhiffler, have you maybe met my wandering cousin during your travels?~
 == BSandr ~ Oh, yes, I met her at Candlekeep a while back, she was copying some of the tomes there.~
 == BLOOMW ~ A dream come true for her then. Imagine, Candlekeep, all the books, all the knowledge...~
-DO ~ SetGlobal("Bloomw","GLOBAL",4) EscapeAreaMove("CVEBS1",294,355,5)~
-EXIT
+END
+++~I had to spent all my life at that boring place, no reason to get enthusiastic.~+ BloSUQ1
+++~I called Candlekeep my home but circumstances forced me to leave.~+ BloSUQ1
+
 
 CHAIN
 IF ~ Global("Bloomw","GLOBAL",4)~ THEN BLOOMW BloSUInB
