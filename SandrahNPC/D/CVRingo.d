@@ -18,7 +18,7 @@ IF ~~ THEN CVRingo  WDretkhatliv
 == CVRingo ~ He and his gang are a real threat and as it seems a foe too big for our local militia. With no armed forces at our disposal at the moment any help from your side would be welcome.~
 == BSANDR~ We had to save the life of Lady Hillath's little boy when we met him. <CHARNAME> wisely decided the boy's life to be more valuable than to defend the villain at that moment. But we feel we have an obligation to track him down now.~
 END
-++ ~ Is there any information about his hiding place? We had the impression that he uses the anonymity of the big city to hide right here.~ DO ~ AddexperienceParty(5000)~+ WDretKhatfind
+++ ~ Is there any information about his hiding place? We had the impression that he uses the anonymity of the big city to hide right here.~ DO ~ AddexperienceParty(500)~+ WDretKhatfind
 
 
 CHAIN
@@ -30,7 +30,7 @@ IF ~~ THEN CVRingo  WDretkhatdedS
 ==CVRingo ~ That villain really has a nerve! Right before our very noses!~
 END
 ++ ~ You need to worry no more, Ringhontal, he and his croonies will hurt no one evermore.~ DO ~AddexperienceParty(9000)~  + WDret2
-++ ~ It was a bloody and heroic battle down there, but it is US who emerged victorious from it. Waterdeep is saved.~ DO ~AddexperienceParty(2000)~ + WDret2
+++ ~ It was a bloody and heroic battle down there, but it is US who emerged victorious from it. Waterdeep is saved.~ DO ~AddexperienceParty(200)~ + WDret2
 
 CHAIN
 IF ~~ THEN CVRingo  WDretkhatdedH
@@ -49,7 +49,7 @@ CHAIN
 IF ~~ THEN CVRingo WDret3
 ~ That is a bit of a relief to hear. Even if the rest of the gang will be still about, they have lost their mastermind and will now be easier to defeat by our men. It would have been better to find them together in their lair, but this is still good news, <CHARNAME>.~
 END
-++ ~ Is there any information about his former hiding place? We had the impression that the gang uses the anonymity of the big city to hide right here.~ DO ~ AddexperienceParty(5000)~+ WDretKhatfind2
+++ ~ Is there any information about his former hiding place? We had the impression that the gang uses the anonymity of the big city to hide right here.~ DO ~ AddexperienceParty(500)~+ WDretKhatfind2
 
 CHAIN
 IF ~~ THEN CVRingo  WDretKhatfind
@@ -176,7 +176,7 @@ DO~SetGlobal("SanVampWDQuest","GLOBAL",25)~
 == BSANDR~ You read me well, my friend. (Sandrah and you report of your investigation and the destruction of the portal.)~
 == CVRingo ~And even ol' Reagan is back again. I just pity the poor crew of the Harare and the families they left behind.~
 == BSANDR~ Take this donation from my own purse, Ringhontal, and make sure they will receive the support of our Temple in any way.~
-== CVRingo ~Well done, my girl. If you care to see a bit of a spectacle, <CHARNAME>, come to the harbour when you are ready. The destruction of the the ship and the portal by Mystra's powers will be a symbol for the people of Waterdeep that the threat on the town is over.~ DO~ AddexperienceParty(12000)~EXIT
+== CVRingo ~Well done, my girl. If you care to see a bit of a spectacle, <CHARNAME>, come to the harbour when you are ready. The destruction of the the ship and the portal by Mystra's powers will be a symbol for the people of Waterdeep that the threat on the town is over.~ DO~ AddexperienceParty(5500)~EXIT
 
 CHAIN
 IF~ GlobalGT("SanWDTemplWi","GLOBAL",9) ~ THEN CVRingo WDTempHealDoneF
