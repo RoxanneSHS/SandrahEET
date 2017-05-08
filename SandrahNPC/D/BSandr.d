@@ -2254,7 +2254,7 @@ CHAIN
 IF ~~  THEN BSANDR HenGone2
 ~ Imoen, Henning is surely alive. He is probably even unhurt, as there is none of his blood around. From the evidence around, he must have fought bravely...~
 == Bimoen ~ Oh, my poor heroic boy. Just y'all wait and see. The magnificent Imoen and her troupe rides to the rescue.~
-== BSANDR ~ That is the true spirit of the heroine, Imoen. I guess we cannot learn anymore in here. I suggest somebody must have heard or seen what has happened. This must have been quite a fight. I propose to ask the major Berrun Ghastkill for information.~
+== BSANDR ~ That is the true spirit of the heroine, Imoen. I guess we cannot learn anymore in here. I suggest somebody must have heard or seen what has happened. This must have been quite a fight. I propose to ask the mayor Berrun Ghastkill for information.~
 EXIT
 
 //The Orphanage of Beregost
@@ -2271,7 +2271,7 @@ IF~ Global("OrcPrison","GLOBAL",17)~ THEN BSANDR BeregOrph1
 == Bimoen ~ Ha ha ha, he will wet his trousers when he sees me, and he will soil them worse when I tell him what I'll do to him.~
 == BSANDR ~ I suggest we should pay him a visit, but we should make a bit of a plan before that. To the citizens of this town he is still a well-respected man. They would not easily like a band of adventurers to enter a council members house in full armour with violent intentions.~
 END
-++ ~ We should consult the major Keldath Ormlyr at the temple first. We have Travenhurst's purse with the bloodmoney and we have Haynalt's statements on the involvement in the Iron Crisis.~ + BeregOrph2
+++ ~ We should consult the mayor Keldath Ormlyr at the temple first. We have Travenhurst's purse with the bloodmoney and we have Haynalt's statements on the involvement in the Iron Crisis.~ + BeregOrph2
 ++ ~ The evidence we have currently - the purse with the bloodmoney and Haynalt's story - may be enough for us, but probably not sufficent for the authorities to act against such a *honorable* citizen. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ + BeregOrph3
 
 CHAIN
@@ -2317,10 +2317,10 @@ END
 
 CHAIN
 IF ~ Global("KeldPriTrav","LOCALS",1)~ THEN BSANDR BeregOrph20
-~ We come on a grave case with one of your citizens, major Ormlyr.~
+~ We come on a grave case with one of your citizens, mayor Ormlyr.~
 DO ~ SetGlobal("OrcPrison","GLOBAL",20) SetGlobal("KeldPriTrav","LOCALS",2)~
 == KELDDA ~ Welcome once again, heroes of Beregost. You have been of valuable help to our town on a number of occasions already. Whatever it is, I am willing to hear you out and assist you in any way that can be justified.~
-== Bimoen ~ Heya, you better do that. We fight lotsa times for you, major man, now this Traviman needs to be punished badly for all he done to my darling and to everybody on the coast...~
+== Bimoen ~ Heya, you better do that. We fight lotsa times for you, mayor man, now this Traviman needs to be punished badly for all he done to my darling and to everybody on the coast...~
 == KELDDA ~ Please, mylady, you seem to be very excited...~
 == Bimoen ~ Excited? I AM EXPLODING!~
 == BSANDR ~ Please, Imoen. Psst. Let me explain it to the major piece by piece. I am sure he will understand why you are so angry.~
@@ -2343,7 +2343,7 @@ END
 
 CHAIN
 IF ~ ~ THEN BSANDR BeregOrph21
-~ You will understand, major, that we will investigate on Travenhurst further, with or without your approval.~
+~ You will understand, mayor, that we will investigate on Travenhurst further, with or without your approval.~
 == KELDDA ~ I am sure you will. And let me tell you this, I will not object to it. I will give advice to all those who follow the dawnbringer under my command not to hinder you in any way. I cannot openly support you at the moment but I personally dispise any nobleman who misuses his wealth and power in such a way as Travenhurst. I wish you good luck and Lathander's blessing be with you.~
 END
 ++ ~ Be sure we will return with the evidence. Your trust in us will be justified.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
@@ -2397,19 +2397,19 @@ END
 
 CHAIN
 IF ~ Global("OrcPrison","GLOBAL",26)~ THEN BSANDR  BeregOrph40
-~ (As soon as she sees the Beregost major, Imoen starts to run to him, waving her document.)~
+~ (As soon as she sees the Beregost mayor, Imoen starts to run to him, waving her document.)~
 DO~ SetGlobal("OrcPrison","GLOBAL",27)~
 == KELDDA ~ Attention, lady, it's wet and slippery just cleaned a minute...oooh~
-==Bimoen ~ Uuuuh, nooo....(Imoen slides directly into the major's strong arms which prevent her from a hurting fall.) Ooops, thank you kindly, sir.~
+==Bimoen ~ Uuuuh, nooo....(Imoen slides directly into the mayor's strong arms which prevent her from a hurting fall.) Ooops, thank you kindly, sir.~
 == KELDDA ~ By Lathander, no harm done. By your enthusiasm I anticipate you are in a far better mood than last time, mylady?~
-==Bimoen ~ (Imoen still in the major's arms) Oh, yes and yes. (Gives the perplexed man a smashing kiss.) I could embrace all the world.~
+==Bimoen ~ (Imoen still in the mayor's arms) Oh, yes and yes. (Gives the perplexed man a smashing kiss.) I could embrace all the world.~
 == KELDDA ~ Well, yes, so here you are with both feet on the ground again. Yes, eh, nice to see that all is well.~
 END
 ++ ~ We came to give you a report on Travenhurst - but also on some official business for Imoen.~ + BeregOrph41
 
 CHAIN
 IF~~ THEN BSANDR BeregOrph41
-~ (The major still looks puzzled.)~
+~ (The mayor still looks puzzled.)~
 == KELDDA ~ Imoen, do I know her?~
 ==Bimoen ~ You are not old enough to be senile, sir. You just held me in your arms a heartbeat ago!~
 == KELDDA ~ Oh, I see, eh, I take this as a kind of introduction then. So, well, Travenhurst?~
