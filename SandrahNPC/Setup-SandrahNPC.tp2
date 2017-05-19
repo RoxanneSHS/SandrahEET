@@ -4718,6 +4718,11 @@ EXTEND_TOP
 ~bandit.bcs~ ~SandrahNPC/BAF/banditbluff.baf~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~bhostile.bcs~ THEN BEGIN
+EXTEND_TOP
+~bhostile.bcs~ ~SandrahNPC/BAF/banditbluff.baf~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~hobgobc.bcs~ THEN BEGIN
 EXTEND_TOP
 ~hobgobc.bcs~ ~SandrahNPC/BAF/banditbluff.baf~

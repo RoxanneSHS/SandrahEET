@@ -1,4 +1,13 @@
 IF
+Global("JoinedBandits","GLOBAL",1)
+!See([PC])
+!Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+ChangeEnemyAlly(Myself,NEUTRAL)
+END
+
+IF
 AreaCheck("BG1900")
 Global("DMWWRaemonAlarm","GLOBAL",0)
 Global("DMWWbanditsalerted","GLOBAL",0)
@@ -10,3 +19,4 @@ RESPONSE #100
 SetGlobal("DMWWRaemonAlarm","GLOBAL",0)
 ChangeEnemyAlly(Myself,NEUTRAL)
 END
+
