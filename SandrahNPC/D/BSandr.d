@@ -3352,7 +3352,7 @@ DO ~ SetGlobal("Kivkill","GLOBAL",5) SetGlobal("PKivkill","GLOBAL",5) RealSetGlo
 == BKIVAN ~ Which sound? I do not hear anything.~
 == BSANDR~Your laughter. It is wonderful to hear it again.~
 == BKIVAN ~ My laughter...Somebody's magic must have returned it to me.~
-== BSANDR~ Somebody's magic or somebody's...(Kisses Kivan quickly before she turns and moves away away, blushing like a little girl.) ~
+== BSANDR~ Somebody's magic or somebody's...(Kisses Kivan quickly before she turns and moves away, blushing like a little girl.) ~
 == BKIVAN ~ (Mumbles to himself) Somebody's magic or somebody's stubborn love.~
 EXIT
 
