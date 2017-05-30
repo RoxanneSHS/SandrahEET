@@ -559,7 +559,7 @@ IF ~~THEN REPLY ~ (Take her in your arms for comfort.) Let us look for some suns
 END
 
 IF~~THEN BEGIN SanXvart5
-SAY~Thank you, <CHARNAME>, for trying to comfort me - but...I have the feeling we must find out the reason behind that stupid attack. Those Xvarts were not themselves - as if somebody or something had them under their spell. Please, let us go back to that cave and take a deeper look, just to make sure we have not missed something crucial.~
+SAY~Thank you, <CHARNAME>, for trying to comfort me - but...I have the feeling we must find out the reason behind that stupid attack. Those Xvarts were not themselves - as if somebody or something had them under their spell. Please, let us take a closer look at this haunted cave, just to make sure we have not missed something crucial.~
 IF ~~THEN REPLY ~ Well, it's just a few steps away, if it makes you feel better...let's go.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~EXIT
 IF ~~THEN REPLY ~ All we need now is to get out of here and forget the whole thing over some mugs of beer and a warm bath.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~EXIT
 END
