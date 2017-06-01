@@ -4662,7 +4662,7 @@ DO ~ SetGlobal("VicBant3","GLOBAL",4)RealSetGlobalTimer("VicBantT","GLOBAL",ONE_
 == BVicon ~ I killed a man and his son who had taken me in for some time. I was desperate from my long time of running away and hiding on the surface, and I was foolish enough to believe they did not despise me for my race. But I was wrong and I blame my own weakness for it. They took me in on a remote farm but their intentions were not good. They had heard the stories of the pleasures the women of my race can provide to the males, and they just wanted me as the slave for their sick perverted lust. When they tried it - both together - these cowardly bastards - I killed them with my bare hands.~
 == BSANDR ~ So it was self defense, not murder. I have to agree that none of our courts would share my personal view on it.~
 == BVicon ~ Even worse, as the other son of the man I killed was in the Flaming Fist, and it was him who took after me for revenge for his father and brother in the name of the law.~
-== BSANDR ~ So he was not hunting you with the knowledge of his superiors but for a personal revenge disguised as the law. Good to know. So you are not a hunted criminal and we are not outlaws that shelter you.~
+== BSANDR ~ So he was not hunting you with the knowledge of his superiors but for a personal revenge disguised as the law. Good to know. So you are not a hunted criminal and we are not outlaws who shelter you.~
 == BVicon ~ Sandrah, in a strange way it has felt good to tell you. I feel free now. I can be a member of our group like any other?~
 == BSANDR ~ Sure.~
 EXIT
