@@ -6694,6 +6694,7 @@ OR(2)
 Global("FurlIntre","GLOBAL",1)
 Global("FurlIntr","GLOBAL",1)
 RealGlobalTimerExpired("BloomwT","GLOBAL")
+!AreaCheck("bg0900")
 THEN
 RESPONSE #100
 SetGlobal("SanSuBH","GLOBAL",15)
