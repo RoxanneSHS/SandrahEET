@@ -72,29 +72,29 @@ IF~~THEN REPLY~ Please move ahead of us to Baldur's Gate to meet me at the Elfso
 END
 
 APPEND AJANTP 
-IF ~!InParty("CVSandr") Global("IWasKickedOut","LOCALS",0) GlobalLT("ENDOFBG1","GLOBAL",2)~ THEN BEGIN 21
+IF ~!InParty("CVSandr") Global("KickedOut","LOCALS",0) GlobalLT("ENDOFBG1","GLOBAL",2)~ THEN BEGIN 21
 SAY~ But... but... we were a team, we were bound by... by honor! Sigh... Why is everything always so complicated?~
-IF~~THEN DO~ SetGlobal("IWasKickedOut","LOCALS",1)~EXIT
+IF~~THEN DO~ SetGlobal("KickedOut","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN Sanhere
 SAY~As you wish, <CHARNAME>. I shall wait.~
-IF~~THEN DO~ SetGlobal("IWasKickedOut","LOCALS",1)~EXIT
+IF~~THEN DO~ SetGlobal("KickedOut","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN SanFA
 SAY~As you wish, <CHARNAME>. It would be an honour.~
-IF~~THEN DO~ SetGlobal("IWasKickedOut","LOCALS",1)EscapeAreaMove("BG2301",766,966,0)~EXIT
+IF~~THEN DO~ SetGlobal("KickedOut","LOCALS",1)EscapeAreaMove("BG2301",766,966,0)~EXIT
 END
 
 IF~~THEN BEGIN SanNa
 SAY~As you wish, <CHARNAME>. It would be an honour.~
-IF~~THEN DO~ SetGlobal("IWasKickedOut","LOCALS",1)EscapeAreaMove("BG4801",602,463,0)~EXIT
+IF~~THEN DO~ SetGlobal("KickedOut","LOCALS",1)EscapeAreaMove("BG4801",602,463,0)~EXIT
 END
 
 IF~~THEN BEGIN SanBE
 SAY~As you wish, <CHARNAME>. It would be an honour.~
-IF~~THEN DO~ SetGlobal("IWasKickedOut","LOCALS",1)EscapeAreaMove("BG0705",537,704,0)~EXIT
+IF~~THEN DO~ SetGlobal("KickedOut","LOCALS",1)EscapeAreaMove("BG0705",537,704,0)~EXIT
 END
 END
 
