@@ -32,6 +32,23 @@ ADD_STATE_TRIGGER EldotP 0
 ~!InParty("CVSandr")~
 
 CHAIN
+IF WEIGHT #-3~InParty("CVSandr") Global("KickedOut","LOCALS",0)~THEN SafanP Withsan
+~Can I not stay with you, even a little longer? Our time together has been... quite enjoyable. Ah well, perhaps we shall meet again.~
+END
+++~Our paths have to separate right now, but they will cross again one of these days. I might seek your help again soon. Let us set up a meeting place somewhere along the Sword Coast.~+ Withsan1
+++~Safana, I do not want to part ways with you forever. Just wait for me here. I will return for you when I need your help again.~+ Withsan2
+
+CHAIN
+IF~~THEN SafanP Withsan1
+~Fine. You can try looking for me in Nashkel's Belching Dragon. Not that I promise to be there, mind you.~
+DO~SetGlobal("KickedOut","LOCALS",1) EscapeAreaMove("BG4809",400,230,7)~EXIT
+
+CHAIN
+IF~~THEN SafanP Withsan2
+~No, <CHARNAME>. I shall definitely not wait for you here. This place is too dangerous to linger in alone. You can try looking for me in Nashkel's Belching Dragon. Not that I promise to be there, mind you.~
+DO~SetGlobal("KickedOut","LOCALS",1) EscapeAreaMove("BG4809",400,230,7)~EXIT
+
+CHAIN
 IF WEIGHT #-3~InParty("Skie") InParty("CVSandr") GlobalLT("ENDOFBG1","GLOBAL",2) Global("IWasKickedOut","LOCALS",0) GlobalGT("RansomTaken","GLOBAL",1)~ THEN EldotP SkiRes1
 ~I would rather travel alone than spend a second more with you boorish oafs.  Goodbye, and good riddance.  Come along, Skie. ~
 ==SkieJ~I'd rather...No. There is something we should discuss.~
