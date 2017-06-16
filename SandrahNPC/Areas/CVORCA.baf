@@ -1,8 +1,6 @@
 IF
-NumDeadGT("ORC02",4)
 NumDeadGT("ORCPRIEST",3)
 NumDeadGT("ORCMAGE",2)
-NumDeadGT("ORC05",2)
 Global("SANIMONASHINT","GLOBAL",17)
 InParty("Imoen2")
 Global("RellrukExists","CVORCA",0)
