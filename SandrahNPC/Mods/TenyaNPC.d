@@ -2,6 +2,18 @@ EXTEND_TOP B2#TenyJ 117 #12
 IF~InParty("CVSandr")~THEN REPLY~What do you think of Sandrah?~GOTO SanTeny1
 END 
 
+EXTEND_TOP B2#TenyJ 117 #12
+IF~InParty("CVJenlig")~THEN REPLY~What do you think of Jen'lig?~GOTO JenTeny1
+END 
+
+CHAIN
+IF~~THEN B2#TenyJ JenTeny1
+~She's funny. She talks funny but sees things really clear.~
+=~She kills also very clear. No remorse. That's funny as well.~
+END
+++~*Funny? I could laugh myself to death.~EXTERN B2#TenyJ 111
+++~The githyanki make sure they have eye contact when they kill you. I'm sure nobody laughs anymore when she looks them in the eye.~EXTERN B2#TenyJ 111
+
 CHAIN
 IF~~THEN B2#TenyJ SanTeny1
 ~False priestess of a false goddess, mother warned me of Mystra often enough.~
