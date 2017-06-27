@@ -8347,6 +8347,12 @@ END
 COPY_EXISTING ~btelite.cre~ ~override/btelite2.cre~
               WRITE_ASCII 0x280 ~btelite2~
               
+COPY_EXISTING ~stafoak.itm~ ~override~
+   SAY NAME1 @1000
+   SAY NAME2 @1001
+   SAY UNIDENTIFIED_DESC @1000
+   SAY DESC @1002
+              
 COPY_EXISTING ~jaheir2.CRE~ ~override/jaheir.CRE~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d0oasis9.spl~ THEN BEGIN
