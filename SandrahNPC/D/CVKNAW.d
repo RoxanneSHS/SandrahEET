@@ -3,7 +3,7 @@ BEGIN  CVKNAW
 CHAIN
 IF~ Global("OrcPrison","GLOBAL",10)~ THEN CVKNAW SD1
 ~ The Red Head. Your boy will die. You are all fools to come here. Why not wait - boy could live.~
-DO ~ SetGlobal("OrcPrison","GLOBAL",11)  AddexperienceParty(44550)~
+DO ~ SetGlobal("OrcPrison","GLOBAL",11)  AddexperienceParty(19550)~
 == HENNING ~ Ouuh, Imoen...(Henning is unconcious.)~
 == Bimoen ~ My love, my only love, wait, we are here, you will not die. SANDRAH!!!~
 == BSandr ~ (Sandrah has already knelt down beside Henning and has stopped the bleeding at his chest.) Psst, Imoen, all will be well, he is just unconscious, he will live.~
