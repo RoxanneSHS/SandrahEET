@@ -1462,6 +1462,16 @@ END
 IF
 Global("SanResurAva","GLOBAL",0)
 !AreaCheck("ARAM00")
+Dead("Tenya")
+InPartyAllowDead("Tenya")
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",1)
+END
+
+IF
+Global("SanResurAva","GLOBAL",0)
+!AreaCheck("ARAM00")
 Dead("faldorn")
 InPartyAllowDead("faldorn")
 THEN

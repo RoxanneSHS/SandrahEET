@@ -84,6 +84,7 @@ IF~ Dead("neera")InPartyAllowDead("neera")~ THEN REPLY ~ I will take care of tha
 IF~ Dead("Rasaad")InPartyAllowDead("rasaad")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Sun Soul monk that is possible!~ GOTO RasaadRess
 IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") RandomNum(2,1)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO SirenRess
 IF~ Dead("C0Sirene")InPartyAllowDead("C0Sirene") RandomNum(2,2)~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our tiefling paladin that is possible!~ GOTO RescNoPoss
+IF~ Dead("Tenya")InPartyAllowDead("Tenya")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for our Umberlee orphan that is possible!~ GOTO TenyaRess
 IF~~THEN REPLY ~ Please, Sandrah, we must do all for the fallen that is possible!~GOTO RescNoPoss
 END
 
@@ -95,6 +96,11 @@ END
 IF~~THEN BEGIN SirenRess
 SAY ~(Sandrah takes a long time to examine the tiefling before she decides on a method to apply.) This should work...~
 IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",350) ApplySpell("C0Sirene",CLERIC_RAISE_DEAD)~EXIT
+END
+
+IF~~THEN BEGIN TenyaRess
+SAY ~(Sandrah seems to fall into a deep trance for some moments before you observe that something is happening.)~
+IF~~THEN DO ~ SetGlobal("SanResurAva","GLOBAL",2) AddXPObject("CVSandr",200) ApplySpell("tenya",CLERIC_RAISE_DEAD)~EXIT
 END
 
 IF~~THEN BEGIN ValeRess
