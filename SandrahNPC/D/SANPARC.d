@@ -2,7 +2,7 @@ BEGIN SANPARC
 
 IF~ Global("SanparcT","GLOBAL",1)~ THEN BEGIN Sanparc1
 SAY ~ What item shall I give you? ~
-IF~~ THEN REPLY ~ Open my purse. ~ DO~ GiveItemCreate("Misc07","CVSandr",1000,0,0)~ EXIT
+IF~GlobalLT("CVPurseGold","Global",3)~ THEN REPLY ~ Open my purse. ~ DO~ IncrementGlobal("CVPurseGold","Global",1) GiveItemCreate("Misc07","CVSandr",1000,0,0)~ EXIT
 IF~~ THEN REPLY ~ Give me a present. ~ DO~ GiveItemCreate("Misc1I","CVSandr",1,0,0)~ EXIT
 IF~~ THEN REPLY ~ Give me something from my treasure chest. ~ GOTO chest
 IF~~THEN REPLY~ I need a magical item.~ GOTO magit

@@ -11,7 +11,7 @@ Wait(2)
 TakePartyItemNum("CVheherb",1)
 DestroyItem("CVheherb")
 Wait(2)
-GiveItemCreate("potn55","CVSandr",2,2,0)
+GiveItemCreate("potn55","CVSandr",0,0,0)
 Wait(3)
 EndCutSceneMode()
 END
