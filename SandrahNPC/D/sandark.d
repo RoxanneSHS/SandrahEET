@@ -93,7 +93,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR SanJetSisD3
-~ I am glad you do not loose your humour when facing the most incredible dangers. The situation is indeed so hopeless that it would scare away any other hero on this Coast. Having stated this, the conclusion is that you have to do it, otherwise this creature will continue its harvest of innocent souls.~
+~ I am glad you do not lose your humour when facing the most incredible dangers. The situation is indeed so hopeless that it would scare away any other hero on this Coast. Having stated this, the conclusion is that you have to do it, otherwise this creature will continue its harvest of innocent souls.~
 END
 ++~ Hey, counselor, let us go and do it before we can think about it too long and come to recognise how foolish we really are, hahaha.~ DO ~ AddexperienceParty(2500)~ EXIT
 
