@@ -23,7 +23,7 @@ IF
 Global("wyvernp","GLOBAL",0)
 OR(2)
 GlobalGT("Homesail","Global",8)
-GlobalGT("Chapter","Global",5)
+GlobalGT("Chapter","Global",4)
 !PartyHasItem("Misc52")
 !InParty("Coran")
 THEN
