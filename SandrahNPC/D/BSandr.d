@@ -2415,7 +2415,7 @@ IF~~ THEN BSANDR BeregOrph41
 == KELDDA ~ Oh, I see, eh, I take this as a kind of introduction then. So, well, Travenhurst?~
 END
 ++ ~ He has left town, even the Sword Coast. We have found evidence of his deeds but we prefer to keep it for the moment as it also includes details about the intrigue that is still ongoing. It goes far beyond local affairs and we will report in details to the Dukes at Baldur's Gate.~ +  BeregOrph42
-++ ~ His part of the plot by the Iron Throne is finished. He was responsible for Henning's kidnapping but has compensated for his deed. He has also delivered detailed evidence about the whole intrigue. But it is not over yet. We need to continue our fight against those that were behind him.~ +BeregOrph43
+++ ~ His part of the plot by the Iron Throne is finished. He was responsible for Henning's kidnapping but has compensated for his deed. He has also delivered detailed evidence about the whole intrigue. But it is not over yet. We need to continue our fight against those who were behind him.~ +BeregOrph43
 
 CHAIN
 IF~~ THEN BSANDR BeregOrph42
@@ -7043,7 +7043,7 @@ CHAIN
 IF ~~ THEN BSANDR SanHealVic
 ~ But you have healers in Menzoberranzan and you yourself are one of them.~
 DO ~ SetGlobal("SanHealVic","GLOBAL",6)~
-== BVicon ~ This is for the purpose of the battle only. To keep up the fighting power of the group you are in. Never would one use these skills to raise or heal those that were to weak to stand the battle's assault. Your selfless way is something else.~
+== BVicon ~ This is for the purpose of the battle only. To keep up the fighting power of the group you are in. Never would one use these skills to raise or heal those who were to weak to stand the battle's assault. Your selfless way is something else.~
 == BSANDR ~ You are a valuable fighter and cleric in this group and I keep you going. You are sometimes neglecting your own health in a way.~
 == BVicon ~ Ha, some ten-days ago I would have believed you. But now I get a notion of your surfacer's ideas of comraderie and - friendship. Even if they still seem strange to me.~
 == BSANDR ~ But you no longer reject them right away, right.~
