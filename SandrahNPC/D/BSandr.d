@@ -4357,14 +4357,14 @@ IF~ Global("SanCorbabe","GLOBAL",4)~ THEN BSANDR  SanCorbabe2
 ~ (Sandrah has moved close to Coran as the elf somehow helplessly fondles Namara.) Let me give you a hand, Coran. Even if I am not mother I know a bit about childcare from my healer's education.~
 DO ~ SetGlobal("SanCorbabe","GLOBAL",5) RealSetGlobalTimer("P#CGBabyTalkTime","GLOBAL",COROM_TIMER)~
 == BCORAN~Luck be a Lady, Sandrah, and it seems to me that you are both my lady and my luck.~
-== BSANDR ~*smiles and strokes Namara’s head* I think that title rightfully belongs to this little lady.~
+== BSANDR ~*smiles and strokes Namara's head* I think that title rightfully belongs to this little lady.~
 == BCORAN~I went back to her mother because of you... It was the greatest surprise in my life. When I saw the child, my heart went cold, for thoughts of what you were going to do.~
-= ~I was expecting you to berate me for Namara’s existence every time you were cross with me, turning our sweet companionship into the unbearable.~
+= ~I was expecting you to berate me for Namara's existence every time you were cross with me, turning our sweet companionship into the unbearable.~
 = ~Yet, you insisted that I decided on something... good. I was lucky that it was you by my side that day or, as the Seldarine know, I would have acted like a selfish brat.~
 == BSANDR ~I am not of the Seldarine, but I know that you would not have acted as a selfish brat, Coran. There is honor in you. Sooner or later, you would have done the right thing.~
 == BCORAN~You... you see me that way? As an honorable man?~
 == BSANDR ~Not exactly paladin-like honorable, but close enough.~
-== BCORAN~That’s... that’s such a strange thing to hear from a woman. But then...you're different from all of those I have ever known, kitten.~
+== BCORAN~That's... that's such a strange thing to hear from a woman. But then...you're different from all of those I have ever known, kitten.~
 EXIT
 
 CHAIN
@@ -4380,8 +4380,8 @@ DO ~ SetGlobal("SanCorbabe","GLOBAL",7) RealSetGlobalTimer("P#CGBabyTalkTime","G
 == BCORAN ~*grins* It is almost scary how well you know me.~
 = ~Brielbara stood in front of the flower merchant and looked at the blooms for a while. And I looked at her... Then she startled and hurried away. Something in this startle endeared her to me. I did not have the time to light-finger a bud, and only enough money to buy a single red flower. I did so, and ran after her.~
 = ~When I offered her the flower, there was surprise and gratitude in her eyes, but she shook her head and told me that she was married. 'Well,' I replied, 'so much the better. I am for making you happy, and your husband - to take care of all your other needs.'~
-= ~The next thing I knew, I was standing in the middle of the busy street in Baldur’s Gate, hugging a strange woman who sobbed into my shoulder. In a moment, she wiped her tears away and straightened. You met Yago... he was quite apt at devouring the very last shred of happiness from his wife. Brielbara was determined to snatch out of his jaws whatever she could. Rarely have I met woman who plunged into an affair with such decisiveness and passion.~
-= ~After a while, being fed up with seeing bruises all over Brielbara’s body and listening to what her husband did to her, I suggested that I spirit her away from Yago. At first she was quite fascinated by the prospect, but when she understood that I would neither stay with her long after our escape, nor settle down in a remote corner of the world, she told me that a human’s life is too short to make new starts.~
+= ~The next thing I knew, I was standing in the middle of the busy street in Baldur's Gate, hugging a strange woman who sobbed into my shoulder. In a moment, she wiped her tears away and straightened. You met Yago... he was quite apt at devouring the very last shred of happiness from his wife. Brielbara was determined to snatch out of his jaws whatever she could. Rarely have I met woman who plunged into an affair with such decisiveness and passion.~
+= ~After a while, being fed up with seeing bruises all over Brielbara's body and listening to what her husband did to her, I suggested that I spirit her away from Yago. At first she was quite fascinated by the prospect, but when she understood that I would neither stay with her long after our escape, nor settle down in a remote corner of the world, she told me that a human's life is too short to make new starts.~
 = ~A good dose of despair in the gaiety of our meetings finally wore me down, and I left.~
 == BSANDR ~So, it was the memory of happiness, which prompted her to keep Namara. I would have run away with you, even if I knew it would only last for a day...~
 == BCORAN ~*Coran embraces her and kisses her hair lightly.* I know, my firehearted kitten.~
@@ -4391,7 +4391,7 @@ CHAIN
 IF~ Global("SanCorbabe","GLOBAL",8)~ THEN BSANDR  SanCorbabe4
 ~ (Sandrah looks expectantly at Coran who finished to read a letter.) Good or bad news, my love?~
 DO ~ SetGlobal("SanCorbabe","GLOBAL",9) RealSetGlobalTimer("P#CGBabyTalkTime","GLOBAL",180)~
-== BCORAN~ I would leave that decision to you, kitten, as much as you've grown fond with my little baby. But I received a message from Brielbara. Her affairs are settled, and she’d like to take Namara back.~
+== BCORAN~ I would leave that decision to you, kitten, as much as you've grown fond with my little baby. But I received a message from Brielbara. Her affairs are settled, and she'd like to take Namara back.~
 == BSANDR ~ You are right, I love the little one - but I am not her mother, just a substitute for a time, so of course I accept her rights. And Coran... take this gold from my purse, please. Brielbara will look more favorably on you if you do not arrive empty-handed.~
 == BCORAN~You would trust a thief with your gold and the knowledge of your full purse?~
 == BSANDR ~I would trust *you* with that.~
@@ -4406,7 +4406,7 @@ IF~ Global("SanCorbabe","GLOBAL",12)~ THEN BSANDR  SanCorbabe5
 DO~ SetGlobal("SanCorbabe","GLOBAL",13)~
 == BCORAN~ A'maelamin Sandrah, cormamin lindua ele lle... ~
 == BSANDR ~(Smiles) And so does mine heart sing at the sight of you.~
-== BCORAN~Ah, a’maelamin, I have missed you so! (Coran catches Sandrah in his arms and swirls her around.) Ah, I am sorry, I was talking to you in my thoughts all the way here and slipped to elvish inadvertently. My heart sings to see thee, beloved kitten. Hmm... it sounds more... natural in elvish than in Common. Never mind!~
+== BCORAN~Ah, a'maelamin, I have missed you so! (Coran catches Sandrah in his arms and swirls her around.) Ah, I am sorry, I was talking to you in my thoughts all the way here and slipped to elvish inadvertently. My heart sings to see thee, beloved kitten. Hmm... it sounds more... natural in elvish than in Common. Never mind!~
 == BSANDR ~It feels already like you have never been gone!~
 == BCORAN~How have you been, my kitten? Unhurt? And not seduced by some irresponsible vagabond? I want to know of every moment I have missed... ~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
@@ -6659,7 +6659,7 @@ DO ~ SetGlobal("SanMinDyStat","LOCALS",2)~
 =~ I know that people would take Minsc and me for lovers, but this is not true. So we would not cause thee embarrassment if that is what concerns thee. My desire to have him near is not romantic, 'tis practical. ~
 == BSANDR ~ I know that, Dynaheir, as well as how he feels, more like a brother. (She looks questioningly at Dynaheir.) I am aware of the Rashemi custom to take a girl with the gift for the arts from the parents and give them another child to raise in return. ~
 == BDYNAH ~ Thy eye is sharp, Sandrah, and thy knowledge of foreign lore impressive! Indeed, Minsc is the boy that my parents raised in my stead. I recognized him when I met him after my parent's death - the wounds he had received defending my home town Borovsk from the Thayan raid stole his memories and his wit. But... he is mine brother nonetheless. ~
-== BSANDR ~ The care that your brother requires comes not from spells or scrolls, Dynaheir. We both can partake in his healing with our sisterly love fór him. Talk to his heart and he undertstands you. This is the healing his soul requires.~
+== BSANDR ~ The care that your brother requires comes not from spells or scrolls, Dynaheir. We both can partake in his healing with our sisterly love for him. Talk to his heart and he undertstands you. This is the healing his soul requires.~
 == BDYNAH ~ Minsc is a slow thinker, yet not insensitive. Why, with his... rodent, I am afraid he is more sensitive than needed. And I want him not to be hurt by a foolish romance for a girl who is beyond his reach.~
 == BSANDR ~ Boo is Minsc himself, Dynaheir, you may have observed yourself. For some reason Minsc is afraid of his own wit and lets Boo speak on his behalf. Let others think what they want, we two undertand it and that is enough.~
 == BDYNAH ~ And romancing thee, is that a part of the therapy or a dangerous play on thine side? I am afraid of Minsc reaction should he feel betrayal.~
@@ -6903,7 +6903,7 @@ IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_CATTI rescued
 ~Friends, the chaos has overcome us!~
 ==F_DRIZTJ IF~InParty("F_Drizzt")~THEN~Catti-Brie, at last we have found you! We had to battle our way through the Nine Hells and old foe. And not to mention all the drow that seem to be involved in whatever has fallen upon us here.~
 ==CVSandrJ IF~!InParty("F_Drizzt")~THEN~Catti-Brie, at last we have found you! We had to battle our way through the Nine Hells and Drizzt's old foe. And not to mention all the drow that seem to be involved in whatever has fallen upon us here.~
-==F_Catti~And there is more to come, the darkness from the sky has been drained and used to open a portal to the Abyss with the intention to summon forth the Tanar´ri Balor known as Errtu. The one Drizzt banished to the Abyss for a hundred years. Artemis and Jarlaxe are the ones behind it all because of their hatred for Drizzt and their struggle to see him joining the fallen. The beast has awakened! ~
+==F_Catti~And there is more to come, the darkness from the sky has been drained and used to open a portal to the Abyss with the intention to summon forth the Tanar'ri Balor known as Errtu. The one Drizzt banished to the Abyss for a hundred years. Artemis and Jarlaxe are the ones behind it all because of their hatred for Drizzt and their struggle to see him joining the fallen. The beast has awakened! ~
 ==CVSandrJ~The way out is clear for you.~
 ==F_Catti~Friends, the final fight is on!~DO~AddexperienceParty(3500) EscapeArea()~EXIT
 

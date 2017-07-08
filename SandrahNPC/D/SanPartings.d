@@ -53,7 +53,7 @@ IF WEIGHT #-3~InParty("Skie") InParty("CVSandr") GlobalLT("ENDOFBG1","GLOBAL",2)
 ~I would rather travel alone than spend a second more with you boorish oafs.  Goodbye, and good riddance.  Come along, Skie. ~
 ==SkieJ~I'd rather...No. There is something we should discuss.~
 ==EldotP~Not now, darling, come along, away from these people, I command.~
-==SkieJ~There have been more and more hints for me that you don’t care about me? That you’re only after my money? ~
+==SkieJ~There have been more and more hints for me that you don't care about me? That you're only after my money? ~
 ==EldotP~Frankly, I'll be glad for a respite from you, mewling little brat. <CHARNAME>, I'll take the chance for a little luxury and a rest from the road at the Elfsong. Find me there if you want - and have fun with silly Miss Richgirl meanwhile.~DO~EscapeAreaMove("BG0705",873,377,0)~EXIT
 
 ADD_STATE_TRIGGER AJANTP 3

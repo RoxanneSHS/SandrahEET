@@ -172,9 +172,9 @@ IF~Global("SanDrowHerD","GLOBAL",1)~ THEN BSandr SanQilDri
 DO~SetGlobal("SanDrowHerD","GLOBAL",2) SetGlobal("SanDrowHerV","GLOBAL",2) SetGlobal("SanDrowHerY","GLOBAL",2)~
 ==Driz2J ~ I am confused because I always thought that you were a friend to those drow who despise the wickedness of the Underdark - and a friend of mine.~
 ==BSANDR ~And what have I done that makes you think I am not?~
-==Driz2J ~  You are a descendant of Eresseae Qilué but you denied your drow heritage to <CHARNAME>.~
+==Driz2J ~  You are a descendant of Eresseae Qilue but you denied your drow heritage to <CHARNAME>.~
 ==BSANDR ~Oh, no, my friend, I would never deny my heritage from one as great as *The Dark Sister*. I was just referring to the historical fact that it does not make me more drow than anyone else on the surface.~
-=~ Qilué like her elder sisters was born to a human couple, as you know. Her father had killed her mother when he had found out that she had been possessed by Mystra, the goddess of magic. Mystra, seeking to keep the child alive, came upon a pregnant drow priestess of Eilistraee whose child had died in her womb, and made a pact with Eilistraee that served both their intentions. ~
+=~ Qilue like her elder sisters was born to a human couple, as you know. Her father had killed her mother when he had found out that she had been possessed by Mystra, the goddess of magic. Mystra, seeking to keep the child alive, came upon a pregnant drow priestess of Eilistraee whose child had died in her womb, and made a pact with Eilistraee that served both their intentions. ~
 ==Driz2J ~  This is the history I know as well.~
 ==BSANDR ~ Veladorn has become a fair and mighty priestess of both Mystra and the good drow goddess Eilistraee. She is one that gives me much inspiration of how the races can come together and live peacefully.~
 ==Driz2J ~  (The drow embraces his human lover) I had hoped that I was mistaken and your reasons would be sound. Yes, Sandrah, you proof your birthright every single day on which I have the pleasure to observe you.~

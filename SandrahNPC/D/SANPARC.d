@@ -202,7 +202,7 @@ IF ~Global("CVAR0500","GLOBAL",1)~ THEN REPLY ~The Bridge~ GOTO Choice8
 IF ~Global("CVAR0900","GLOBAL",1)~ THEN REPLY ~The Temple District~ GOTO Choice9
 IF ~Global("CVAR1000","GLOBAL",1)~ THEN REPLY ~The Government District~ GOTO Choice10
 IF ~Global("CVAR0020","GLOBAL",1)~ THEN REPLY ~The City Gates~ GOTO Choice10
-IF ~Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~De´Arnise keep~ GOTO Choice11
+IF ~Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~De'Arnise keep~ GOTO Choice11
 IF ~Global("CVAR1100","GLOBAL",1)~ THEN REPLY ~Umar Hills~ GOTO Choice12
 IF ~Global("CVAR1404","GLOBAL",1)~ THEN REPLY ~The Temple Ruins~ GOTO Choice13
 IF ~OR(10)
@@ -299,7 +299,7 @@ END
 IF ~~ THEN BEGIN TrSphere
 SAY ~State specifics.~
 IF ~Global("CVAR0411","GLOBAL",1)~ THEN REPLY ~Entrance floor~ DO ~SetGlobal("SanTravel","GLOBAL",14)~ EXIT
-IF ~Global("RZAR0410","GLOBAL",1)~ THEN REPLY ~Navigator´s room~ DO ~SetGlobal("SanTravel","GLOBAL",15)~ EXIT
+IF ~Global("RZAR0410","GLOBAL",1)~ THEN REPLY ~Navigator's room~ DO ~SetGlobal("SanTravel","GLOBAL",15)~ EXIT
 IF ~Global("RZAR0412","GLOBAL",1)~ THEN REPLY ~Ice and Fire Room~ DO ~SetGlobal("SanTravel","GLOBAL",16)~ EXIT
 IF ~Global("CVAR0413","GLOBAL",1)~ THEN REPLY ~Engine room~ DO ~SetGlobal("SanTravel","GLOBAL",17)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice5
@@ -311,8 +311,8 @@ SAY ~State specifics.~
 IF ~Global("CVAR0800","GLOBAL",1)~ THEN REPLY ~Graveyard outside~ DO ~SetGlobal("SanTravel","GLOBAL",20)~ EXIT
 IF ~Global("RZAR0801","GLOBAL",1)GlobalLT("Chapter","GLOBAL",18)~ THEN REPLY ~Beneath graveyard~  DO ~SetGlobal("SanTravel","GLOBAL",21)~ EXIT
 IF ~Global("RZAR0801","GLOBAL",1)GlobalGT("Chapter","GLOBAL",17)~ THEN REPLY ~Beneath graveyard~ DO ~SetGlobal("SanTravel","GLOBAL",120)~ EXIT
-IF ~Global("RZAR0803","GLOBAL",1)GlobalLT("Chapter","GLOBAL",18)~ THEN REPLY ~Bodhi´s lair~ DO ~SetGlobal("SanTravel","GLOBAL",22)~ EXIT
-IF ~Global("RZAR0803","GLOBAL",1)GlobalGT("Chapter","GLOBAL",17)~ THEN REPLY ~Bodhi´s lair~ DO ~SetGlobal("SanTravel","GLOBAL",121)~ EXIT
+IF ~Global("RZAR0803","GLOBAL",1)GlobalLT("Chapter","GLOBAL",18)~ THEN REPLY ~Bodhi's lair~ DO ~SetGlobal("SanTravel","GLOBAL",22)~ EXIT
+IF ~Global("RZAR0803","GLOBAL",1)GlobalGT("Chapter","GLOBAL",17)~ THEN REPLY ~Bodhi's lair~ DO ~SetGlobal("SanTravel","GLOBAL",121)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -392,9 +392,9 @@ END
 IF ~~ THEN BEGIN TempSew
 SAY ~State specifics.~
 IF ~Global("RZAR0701","GLOBAL",1)~ THEN REPLY ~The main sewers~ DO ~SetGlobal("SanTravel","GLOBAL",50)~ EXIT
-IF ~Global("RZAR0705","GLOBAL",1)~ THEN REPLY ~Mekrath´s hideout~ DO ~SetGlobal("SanTravel","GLOBAL",51)~ EXIT
+IF ~Global("RZAR0705","GLOBAL",1)~ THEN REPLY ~Mekrath's hideout~ DO ~SetGlobal("SanTravel","GLOBAL",51)~ EXIT
 IF ~Global("CVAR0202","GLOBAL",1)~ THEN REPLY ~The Unseeing Eye cult lair~ DO ~SetGlobal("SanTravel","GLOBAL",52)~ EXIT
-IF ~Global("CVAR0205","GLOBAL",1)~ THEN REPLY ~Unseeing Eye´s hideout~ DO ~SetGlobal("SanTravel","GLOBAL",53)~ EXIT
+IF ~Global("CVAR0205","GLOBAL",1)~ THEN REPLY ~Unseeing Eye's hideout~ DO ~SetGlobal("SanTravel","GLOBAL",53)~ EXIT
 IF ~Global("CVAR0204","GLOBAL",1)~ THEN REPLY ~Forgotten city~ DO ~SetGlobal("SanTravel","GLOBAL",54)~ EXIT
 IF ~Global("CVAR0203","GLOBAL",1)~ THEN REPLY ~Temple of the Forgotten God~ DO ~SetGlobal("SanTravel","GLOBAL",55)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice9
@@ -418,12 +418,12 @@ END
 
 IF ~~ THEN BEGIN Choice11
 SAY ~State specifics.~
-IF ~Global("PCKeepOwner","GLOBAL",0) Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~Court of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",64)~ EXIT
-IF ~GlobalGT("PCKeepOwner","GLOBAL",0) Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~Court of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",65)~ EXIT
-IF ~Global("PCKeepOwner","GLOBAL",0) Global("RZAR1302","GLOBAL",1)~ THEN REPLY ~First floor of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",66)~ EXIT
-IF ~GlobalGT("PCKeepOwner","GLOBAL",0)Global("RZAR1302","GLOBAL",1)~ THEN REPLY ~First floor of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",67)~ EXIT
-IF ~Global("PCKeepOwner","GLOBAL",0) Global("RZAR1303","GLOBAL",1)~ THEN REPLY ~Second floor of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",68)~ EXIT
-IF ~GlobalGT("PCKeepOwner","GLOBAL",0) Global("RZAR1303","GLOBAL",1)~ THEN REPLY ~Second floor of de´Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",69)~ EXIT
+IF ~Global("PCKeepOwner","GLOBAL",0) Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~Court of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",64)~ EXIT
+IF ~GlobalGT("PCKeepOwner","GLOBAL",0) Global("CVAR1300","GLOBAL",1)~ THEN REPLY ~Court of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",65)~ EXIT
+IF ~Global("PCKeepOwner","GLOBAL",0) Global("RZAR1302","GLOBAL",1)~ THEN REPLY ~First floor of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",66)~ EXIT
+IF ~GlobalGT("PCKeepOwner","GLOBAL",0)Global("RZAR1302","GLOBAL",1)~ THEN REPLY ~First floor of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",67)~ EXIT
+IF ~Global("PCKeepOwner","GLOBAL",0) Global("RZAR1303","GLOBAL",1)~ THEN REPLY ~Second floor of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",68)~ EXIT
+IF ~GlobalGT("PCKeepOwner","GLOBAL",0) Global("RZAR1303","GLOBAL",1)~ THEN REPLY ~Second floor of de'Arnise keep~ DO ~SetGlobal("SanTravel","GLOBAL",69)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -431,7 +431,7 @@ END
 IF ~~ THEN BEGIN Choice12
 SAY ~State specifics.~
 IF ~Global("CVAR1100","GLOBAL",1)~ THEN REPLY ~Umar Hills outdoor~ DO ~SetGlobal("SanTravel","GLOBAL",70)~ EXIT
-IF ~Global("RangerProtector","GLOBAL",1)Global("CVAR1102","GLOBAL",1)~ THEN REPLY ~Ranger´s cabin~ DO ~SetGlobal("SanTravel","GLOBAL",71)~ EXIT
+IF ~Global("RangerProtector","GLOBAL",1)Global("CVAR1102","GLOBAL",1)~ THEN REPLY ~Ranger's cabin~ DO ~SetGlobal("SanTravel","GLOBAL",71)~ EXIT
 IF ~Global("RZAR1104","GLOBAL",1)~ THEN REPLY ~Mayor's House~ DO ~SetGlobal("SanTravel","GLOBAL",72)~ EXIT
 IF ~Global("RZAR1105","GLOBAL",1)~ THEN REPLY ~Imnesvale Inn~ DO ~SetGlobal("SanTravel","GLOBAL",73)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
@@ -443,7 +443,7 @@ SAY ~State specifics.~
 IF ~!Dead("shadel") Global("CVAR1404","GLOBAL",1)~ THEN REPLY ~Temple Ruins wilderness~ DO ~SetGlobal("SanTravel","GLOBAL",74)~ EXIT
 IF ~Dead("shadel") Global("CVAR1404","GLOBAL",1)~ THEN REPLY ~Temple Ruins wilderness~ DO ~SetGlobal("SanTravel","GLOBAL",75)~ EXIT
 IF ~Global("CVAR1401","GLOBAL",1)~ THEN REPLY ~Temple of Amaunator~ DO ~SetGlobal("SanTravel","GLOBAL",76)~ EXIT
-IF ~Global("CVAR1402","GLOBAL",1)~ THEN REPLY ~Shadow Dragon´s hideout~ DO ~SetGlobal("SanTravel","GLOBAL",77)~ EXIT
+IF ~Global("CVAR1402","GLOBAL",1)~ THEN REPLY ~Shadow Dragon's hideout~ DO ~SetGlobal("SanTravel","GLOBAL",77)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice1
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -452,9 +452,9 @@ IF ~~ THEN BEGIN Choice14
 SAY ~State specifics.~
 IF ~Global("CVAR1200","GLOBAL",1)~ THEN REPLY ~Windspear Hills~ DO ~SetGlobal("SanTravel","GLOBAL",78)~ EXIT
 IF ~Global("RZAR1204","GLOBAL",1)~ THEN REPLY ~Garren Windspear's home~ DO ~SetGlobal("SanTravel","GLOBAL",79)~ EXIT
-IF ~Global("CVAR1201","GLOBAL",1)~ THEN REPLY ~Entrance to Firkraag´s dungeon~ DO ~SetGlobal("SanTravel","GLOBAL",80)~ EXIT
+IF ~Global("CVAR1201","GLOBAL",1)~ THEN REPLY ~Entrance to Firkraag's dungeon~ DO ~SetGlobal("SanTravel","GLOBAL",80)~ EXIT
 IF ~Global("CVAR1202","GLOBAL",1)~ THEN REPLY ~King Strohm's maze~ DO ~SetGlobal("SanTravel","GLOBAL",81)~ EXIT
-IF ~Global("RZAR1203","GLOBAL",1)~ THEN REPLY ~Firkraag´s lair~ DO ~SetGlobal("SanTravel","GLOBAL",82)~ EXIT
+IF ~Global("RZAR1203","GLOBAL",1)~ THEN REPLY ~Firkraag's lair~ DO ~SetGlobal("SanTravel","GLOBAL",82)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice2
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -531,7 +531,7 @@ IF ~~ THEN BEGIN Choice21
 SAY ~State specifics.~
 IF ~Global("RZAR5200","GLOBAL",1)~ THEN REPLY ~Marching Mountains~ DO ~SetGlobal("SanTravel","GLOBAL",126)~ EXIT
 IF ~Global("RZAR5201","GLOBAL",1)~ THEN REPLY ~To Yaga-Shura's lair~ DO ~SetGlobal("SanTravel","GLOBAL",127)~ EXIT
-IF ~Global("RZAR5204","GLOBAL",1)~ THEN REPLY ~Second floor of Yaga-Shura´s lair~ DO ~SetGlobal("SanTravel","GLOBAL",130)~ EXIT
+IF ~Global("RZAR5204","GLOBAL",1)~ THEN REPLY ~Second floor of Yaga-Shura's lair~ DO ~SetGlobal("SanTravel","GLOBAL",130)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice3
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
@@ -550,7 +550,7 @@ END
 IF ~~ THEN BEGIN Choice23
 SAY ~State specifics.~
 IF ~Global("CVAR6000","GLOBAL",1)~ THEN REPLY ~Abazigal's lair~ DO ~SetGlobal("SanTravel","GLOBAL",136)~ EXIT
-IF ~Global("RZAR6003","GLOBAL",1)~ THEN REPLY ~Lycanth´s laboratory~ DO ~SetGlobal("SanTravel","GLOBAL",137)~ EXIT
+IF ~Global("RZAR6003","GLOBAL",1)~ THEN REPLY ~Lycanth's laboratory~ DO ~SetGlobal("SanTravel","GLOBAL",137)~ EXIT
 IF ~Global("RZAR6004","GLOBAL",1)~ THEN REPLY ~Fll'Yissetat~ DO ~SetGlobal("SanTravel","GLOBAL",138)~ EXIT
 IF ~Global("RZAR6005","GLOBAL",1)~ THEN REPLY ~Abazigal~ DO ~SetGlobal("SanTravel","GLOBAL",139)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice3
@@ -560,10 +560,10 @@ END
 IF ~~ THEN BEGIN Choice24
 SAY ~State specifics.~
 IF ~Global("CVAR6100","GLOBAL",1)~ THEN REPLY ~Sendai's Enclave~ DO ~SetGlobal("SanTravel","GLOBAL",140)~ EXIT
-IF ~Global("RZAR6101","GLOBAL",1)~ THEN REPLY ~Entrance in Sendai´s enclave~ DO ~SetGlobal("SanTravel","GLOBAL",141)~ EXIT
+IF ~Global("RZAR6101","GLOBAL",1)~ THEN REPLY ~Entrance in Sendai's enclave~ DO ~SetGlobal("SanTravel","GLOBAL",141)~ EXIT
 IF ~Global("CVAR6104","GLOBAL",1)~ THEN REPLY ~Crossroads~ DO ~SetGlobal("SanTravel","GLOBAL",142)~ EXIT
 IF ~Global("RZAR6106","GLOBAL",1)~ THEN REPLY ~Beholder~ DO ~SetGlobal("SanTravel","GLOBAL",143)~ EXIT
-IF ~Global("CVAR6108","GLOBAL",1)~ THEN REPLY ~Sendai´s inner sanctum~ DO ~SetGlobal("SanTravel","GLOBAL",144)~ EXIT
+IF ~Global("CVAR6108","GLOBAL",1)~ THEN REPLY ~Sendai's inner sanctum~ DO ~SetGlobal("SanTravel","GLOBAL",144)~ EXIT
 IF ~~ THEN REPLY ~Previous Choices.~ GOTO Choice3
 IF ~~ THEN REPLY ~Nowhere~ EXIT
 END
