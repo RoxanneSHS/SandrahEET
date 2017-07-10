@@ -578,7 +578,7 @@ IF~~THEN REPLY ~ Why did you prevent me from killing him right here and now and 
 END
 
 IF~~THEN BEGIN MetKoveras2
-SAY ~ It is good that you did not let him provoke you here and now. This is what he expects you to do, to loose your head and act out in anger. It is now clear, he wants you to remove the Iron Throne leaders for his benefit and take the blame as their murderer onto you. He will return to Baldur's Gate with all his foe eliminated in one event.~
+SAY ~ It is good that you did not let him provoke you here and now. This is what he expects you to do, to lose your head and act out in anger. It is now clear, he wants you to remove the Iron Throne leaders for his benefit and take the blame as their murderer onto you. He will return to Baldur's Gate with all his foe eliminated in one event.~
 IF~~THEN REPLY ~ Let us continue and see what else we can find out to our advantage.~ DO~ SetGlobal("SanLibCommt2","LOCALS",2)~ EXIT
 END
 
@@ -740,7 +740,7 @@ END
 
 IF~~THEN BEGIN CasOwn2
 SAY ~ That is not exactly what I meant, I was thinking just of a nice place to call your own, with a view to enjoy. And a bit of independence as well. ~
-IF~~THEN REPLY ~ Yes, that sounds better. In the end to rule and to own so much land that you need a castle for protection, also means that you loose some of your freedom. It is not that I am afraid to take responsibility, but in some way I still enjoy the freedom we have together at the moment. Ask me again in a couple of years, maybe I have come to another view then.~  GOTO CasOwn3
+IF~~THEN REPLY ~ Yes, that sounds better. In the end to rule and to own so much land that you need a castle for protection, also means that you lose some of your freedom. It is not that I am afraid to take responsibility, but in some way I still enjoy the freedom we have together at the moment. Ask me again in a couple of years, maybe I have come to another view then.~  GOTO CasOwn3
 END
 
 IF~~THEN BEGIN CasOwn3
@@ -2858,7 +2858,7 @@ DO~ SetGlobal("SanXanA","GLOBAL",11) RealSetGlobalTimer("SanXanT","GLOBAL",1800)
 == BSANDR ~ I keep you sleepless and dreamless and you enjoy it?~
 == BXANNN ~ If the reason to enjoy life with open eyes is better than any dream that sleep or reverie can provide, then it is better to stay awake, is it not?~
 == BSANDR ~ My wonderful elf poet, you almost embarass me with your high vision of my presence. (Sandrah kneels down beside Xan who lies on his back and looks dreamily upwards into nothingness.)~
-== BXANNN ~ Take my hand, my beauty, and let me listen to your soothing voice. Let me loose myself in your loving words and hopeful errors.~
+== BXANNN ~ Take my hand, my beauty, and let me listen to your soothing voice. Let me lose myself in your loving words and hopeful errors.~
 == BSANDR ~ Can there be any error if the feeling that is provided makes my lover feel alive and joyful. Once again it is you, Xan, that is about to make the mistake. But I am here to prevent the worst. (She leans forward and covers his face and breast with the waterfall of her locks.)~
 == BXANNN ~ (Xan has embraced Sandrah and pulls her closer to his body. It seems that in between kisses you hear the elf sobbing, out of joy or out of pain, who can tell?)~ DO ~ RestParty()~
 EXIT
@@ -3493,7 +3493,7 @@ IF ~ Global("SanKivTaz","GLOBAL",5) ~THEN BSANDR SanKivSeeD
 ~Kivan, my sweetheart, are you looking at me so dreamily - or do you see another? ~
 DO~ SetGlobal("SanKivTaz","GLOBAL",6) SetGlobal("PSanKivTaz","GLOBAL",6) RealSetGlobalTimer("KivshilT","GLOBAL",1200)~
 == BKIVAN ~ Your question is the answer already, my knowing and understanding healer. Truth is that I see both. Can you stand that truth, Sandrah?~
-== BSANDR ~ I can and I have accepted it from the beginning. I do not even want you to loose her or forget her. She will always be within you and a part of you.~
+== BSANDR ~ I can and I have accepted it from the beginning. I do not even want you to lose her or forget her. She will always be within you and a part of you.~
 == BKIVAN ~ Are you really so selfless and understanding, Sandrah?~
 == BSANDR ~ I love you as you are and I am surely not jealous for someone who is gone. There is so much love in your heart, enough for me anytime. The fact that she will always be there as well only shows who you are Kivan, how much you care and that you never forget. It is exactly that devotion I so much admire in you.~
 == BKIVAN ~ Long time ago you made me think about why Deheriana wanted me to continue on this plane for any other reason than to revenge her. A good friend tried to convince me that she wanted me to continue and seek another chance. I struggled to disagree but now I tend to think otherwise. Do you think she wanted me to find someone to take her place by my side?~
@@ -3738,7 +3738,7 @@ DO ~ SetGlobal("SanAjantWDEntry","LOCALS",2)~
 == BAJANT ~ Please do not misunderstand me...it may be a bit early to let get people here get the wrong impression - about us...I thought you would understand, Sandrah.~
 == BSANDR ~ I understand very well, Ajantis. I will be the epitome of a lady while in Waterdeep, I swear it.~
 == BAJANT ~ I had not intended to hurt your feelings with my request.~
-== BSANDR ~ (Instead of an answer Sandrah kisses the perplexed paladin passionately.) So - we have a deal. I will not do such things while in Waterdeep. This priestess of Mystra has a reputation to loose here as well. (Laughs and kisses Ajantis again.)~
+== BSANDR ~ (Instead of an answer Sandrah kisses the perplexed paladin passionately.) So - we have a deal. I will not do such things while in Waterdeep. This priestess of Mystra has a reputation to lose here as well. (Laughs and kisses Ajantis again.)~
 == BAJANT ~ ...will I ever understand this quicksilver girl?~
 EXIT
 
@@ -3796,7 +3796,7 @@ DO ~ SetGlobal("SanAjkilBant","GLOBAL",2)~
 ==BSANDR ~ I do what needs to be done. Too easy? Well, it would sum it up quite well nevertheless. But to satisfy you, I must add more detail, right?~
 = ~ Fighting itself is an art. Do not look at me so sceptical, my friend. I really mean what I say. It is an art involving both the body and the mind. It includes force and power, but also tactics, and a bit of reading your enemy's mind in the blinking of an eye. All of that is challenging and arousing. But we both know, it does not end with that.~
 = ~ You could say, the arena would be the place for me. It is not. It is a show and a carnival at best, or a bloody exploit at worst. It has no worthwhile motivation. ~
-== BAJANT ~You hate the killing, right Sandrah. Somebody looses his one and only life at the end of the challenge and that overshadows everything else.~
+== BAJANT ~You hate the killing, right Sandrah. Somebody loses his one and only life at the end of the challenge and that overshadows everything else.~
 ==BSANDR ~ You understand it well. We can congratulate ourselves in the end, saying that we once again have crushed evil. And that is true most of the time, and it may be satisfactory for some of us.~
 == BAJANT ~Not enough for you? Is that not the most worthy goal, Sandrah?~
 ==BSANDR ~ It would be, if our definition of evil is true and it would be, if there would exist no other means to stop evil. But you know as well as I know it is not so, there is not only black and white in this world - even for the view of a helmit.~
@@ -4889,7 +4889,7 @@ DO~ SetGlobal("Cowscroll","GLOBAL",8) RealSetGlobalTimer("CowscrollT","GLOBAL",1
 == Bedwin_ ~ (Ah, not one for the harem, indeed, that one would rule, if she only wanted to.) This curse from your goddess, priestess of Mystra, can we not do something about it? It should be clear now that I am loyal to <CHARNAME> and this group could largely benefit from the full use of my skills (This group could even benefit from a halfdead goblin with a broken quarterstaff.)~
 == BSANDR ~ Spare me your insults, magelings, I think I made it clear that I have nothing to do with your curse and I can and will do nothing to help you. I have kept you alive so far, which is already more than you deserve and more you would do for me.~
 == Bedwin_ ~ (What an error! Oh how I would keep you alive, how I would awaken your senses and your lust every day again, little tease...) Do not think I am ungrateful and I have not recognized that. (Deep inside she must feel it - feel how much she needs a man of my qualities.) Just go to think about it patiently, maybe you can guess of a way for improvement with all the knowledge you undoubtly possess. (Do not think too hard, I don't want to see your face wrinkled, pussy.)~
-== BSANDR ~ Step carefully, I maybe will not heal your leg if you foolishly break it when you loose your grip in your own slime.~
+== BSANDR ~ Step carefully, I maybe will not heal your leg if you foolishly break it when you lose your grip in your own slime.~
 EXIT
 
 CHAIN
@@ -5803,10 +5803,10 @@ IF ~~ THEN BSANDR SharRedo2
 ~ I leave the rest to you, wildcat.~
 == BSHART ~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamia not to run away from me.~
 END
-IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY ~ I will be ready. And I don't care who wins or looses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
+IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY ~ I will be ready. And I don't care who wins or loses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",1)
 RealSetGlobalTimer("X#SharInterestTime","GLOBAL",600)~ EXIT
-IF~ GlobalGT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or looses. Perhaps we both have won already.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
+IF~ GlobalGT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or loses. Perhaps we both have won already.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",2)
 RealSetGlobalTimer("X#SharInterestTime","GLOBAL",600)~ EXIT
 
@@ -5816,10 +5816,10 @@ IF ~~ THEN BSANDR SharRedo3
 == BSHART ~ Maybe I will regret it but anyway.~
 =~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamia not to run away from me.~
 END
-IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or looses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
+IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or loses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",1)
 RealSetGlobalTimer("X#SharInterestTime","GLOBAL",600)~ EXIT
-IF~ GlobalGT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or looses. Perhaps we both have won already.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
+IF~ GlobalGT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or loses. Perhaps we both have won already.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",2)
 RealSetGlobalTimer("X#SharInterestTime","GLOBAL",600)~ EXIT
 
@@ -6144,7 +6144,7 @@ END
 CHAIN
 IF~~ THEN BSANDR SharPregT4
 ~ (Sandrah smiles at both of you) <CHARNAME> will be so completely different from the father you have known, Shar-Teel.~
-== BSHART~ He'd better be. I will not loose my weapon skills just because my belly will grow.~
+== BSHART~ He'd better be. I will not lose my weapon skills just because my belly will grow.~
 END
 ++ ~ I am sure you will defend your little one like any good she-bear does. Shar-Teel, I really love you. And this child - our child - I will be its father with joy. We will give him the childhood that we two never had.~ + SharPregT5
 
@@ -6178,7 +6178,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR SharPregN2
-~ Hold it, <CHARNAME>. The mother started a similar sentence with *her name will be...*. So before you kill each other about it and I loose both the people I love dearly, how about this: Shar-Teel, you will decide the girl's name and, <CHARNAME>, you will decide the boy's name.~
+~ Hold it, <CHARNAME>. The mother started a similar sentence with *her name will be...*. So before you kill each other about it and I lose both the people I love dearly, how about this: Shar-Teel, you will decide the girl's name and, <CHARNAME>, you will decide the boy's name.~
 == BSHART~ Sounds reasonable, doesn't, my love?~
 END
 ++ ~ Yes, that sounds fair. Mh, maybe we can keep the name that is not needed this time for a later occasion...~ + SharPregN3

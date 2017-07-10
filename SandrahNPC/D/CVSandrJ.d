@@ -1896,7 +1896,7 @@ IF~Global("HalItems","BG0153",2)~THEN BEGIN SanMagtrav1
 SAY~The prospect of a lighter way of travelling instead of trudging dusty roads is very appealing...~
 IF~~THEN REPLY~ Could a skilled disciple of Mystra make some use of what we have gathered today?~ GOTO SanMagtrav2
 IF~~THEN REPLY~ He?~ GOTO SanMagtrav2
-IF~~THEN REPLY~ We would loose much of the landscape and its sights by that, haha.~ GOTO SanMagtrav2
+IF~~THEN REPLY~ We would lose much of the landscape and its sights by that, haha.~ GOTO SanMagtrav2
 END
 
 IF~~THEN BEGIN SanMagtrav2
@@ -2307,14 +2307,14 @@ IF~~THEN REPLY~ I see, obviously he does it to every girl that is not completely
 END
 
 IF ~~ THEN BEGIN SanCorFem2
-SAY ~ I find it kind of amusing and entertaining. And knowing his ways, there is surely no chance any of us two will loose her heart in that trap.~ 
+SAY ~ I find it kind of amusing and entertaining. And knowing his ways, there is surely no chance any of us two will lose her heart in that trap.~ 
 IF~~THEN REPLY~ You are willing to play along to his lines then? ~ GOTO SanCorFem3
 IF~~THEN REPLY~ And which one of us do you think he prefers?~ GOTO SanCorFem3
 IF~~THEN REPLY~ But we will surely not start a fight over this *ladies man*, cute as he may be.~ GOTO SanCorFem3
 END
 
 IF ~~ THEN BEGIN SanCorFem3
-SAY ~ (Sandrah smiles knowingly at you.) Listen, as we both are quite entertained by his advances and we both know that there is nothing but a nice little adventure waiting for us, I see no reason why we should not allow ourselves to enjoy that little fun. We have no reason for jealousy and no way to loose our heart and soul. I am always willing to learn a bit more in the art of carnal love and Coran is a competent subject for learning.~
+SAY ~ (Sandrah smiles knowingly at you.) Listen, as we both are quite entertained by his advances and we both know that there is nothing but a nice little adventure waiting for us, I see no reason why we should not allow ourselves to enjoy that little fun. We have no reason for jealousy and no way to lose our heart and soul. I am always willing to learn a bit more in the art of carnal love and Coran is a competent subject for learning.~
 IF~~THEN REPLY~ You mean...you propose we can have him both, let's say, a kind of adventure and entertainment. Is that not a bit...hm, weird?~ GOTO SanCorFem4
 IF~~THEN REPLY~ Are you really proposing that we two share him between us as our kind of *love toy*?~ GOTO SanCorFem4
 END
@@ -2331,14 +2331,14 @@ IF~~THEN REPLY~ I see, obviously he does it to every girl that is not completely
 END
 
 IF ~~ THEN BEGIN SanCorMal2
-SAY ~ I find it kind of amusing and entertaining. And knowing his ways, there is surely no chance I will loose my heart in that trap.~
+SAY ~ I find it kind of amusing and entertaining. And knowing his ways, there is surely no chance I will lose my heart in that trap.~
 IF~~THEN REPLY~ You are willing to play along to his lines then? ~ GOTO SanCorMal3
 IF~~THEN REPLY~ Are you joking, Sandrah?~ GOTO SanCorMal3
 IF~~THEN REPLY~ But I will surely not start a fight over you with this *ladies man*, cute as he may be.~ GOTO SanCorMal3
 END
 
 IF ~~ THEN BEGIN SanCorMal3
-SAY ~ (Sandrah smiles knowingly at you.) Listen, as we both are quite entertained by his advances and we both know that there is nothing but a nice little adventure waiting , I see no reason why we should not allow ourselves to enjoy that little fun. You have no reason for jealousy and I have no way to loose my heart and soul. I am always willing to learn a bit more in the art of carnal love and Coran is a competent subject for learning.~
+SAY ~ (Sandrah smiles knowingly at you.) Listen, as we both are quite entertained by his advances and we both know that there is nothing but a nice little adventure waiting , I see no reason why we should not allow ourselves to enjoy that little fun. You have no reason for jealousy and I have no way to lose my heart and soul. I am always willing to learn a bit more in the art of carnal love and Coran is a competent subject for learning.~
 IF~~THEN REPLY~ You mean...you propose I should allow you to play with him, let's say, a kind of adventure and entertainment. is that not a bit...hm, weird?~ GOTO SanCorMal4
 IF~~THEN REPLY~ Are you really proposing that we two share him between us as our kind of *love toy*?~ GOTO SanCorMal4
 END
@@ -2961,9 +2961,9 @@ IF~~THEN REPLY~ Do we really need so many words between us still. If I see somet
 END
 
 IF~~THEN BEGIN  SanFirstN3m
-SAY ~ I want us to loose much more than just our doubts tonight, my sweet hero. (She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
+SAY ~ I want us to lose much more than just our doubts tonight, my sweet hero. (She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
 IF~~ THEN REPLY ~ You were right to wait until tonight, Sandrah. This needs the right place and the right time. (You start to caress her breasts beneath their glimmering sheath.) And the right time is now.~  GOTO SanFirstN3q
-IF~~ THEN REPLY ~ I am more than willing to loose myself to you, Sandrah (You start to slowly caress her body beneath the glimmering sheath.)~ GOTO SanFirstN3q
+IF~~ THEN REPLY ~ I am more than willing to lose myself to you, Sandrah (You start to slowly caress her body beneath the glimmering sheath.)~ GOTO SanFirstN3q
 END
 
 IF~~THEN BEGIN  SanFirstN3h
@@ -2994,10 +2994,10 @@ IF~~THEN REPLY ~ (As you look at yourself in the mirror, you see a new <CHARNAME
 END
 
 IF~~THEN BEGIN  SanFirstN4f
-SAY ~ I want us to loose much more than just our doubts tonight, my sweet heroine. To loose ourself in order to gain something new.~
+SAY ~ I want us to lose much more than just our doubts tonight, my sweet heroine. To lose ourself in order to gain something new.~
 =~ (She tenderly takes both your hands and leads you over to the bed.)~
 IF~~ THEN REPLY ~ You were right to wait until tonight, Sandrah. This needs the right place and the right time. (You start to caress her breasts beneath their glimmering sheath.) And the right time is now.~  GOTO SanFirtsBed
-IF~~ THEN REPLY ~ I am more than willing to loose myself to you, Sandrah (You start to slowly caress her body beneath the glimmering sheath.)~ GOTO SanFirtsBed
+IF~~ THEN REPLY ~ I am more than willing to lose myself to you, Sandrah (You start to slowly caress her body beneath the glimmering sheath.)~ GOTO SanFirtsBed
 END
 
 IF~~THEN BEGIN SanFirtsBed
@@ -3146,7 +3146,7 @@ END
 IF ~~ THEN BEGIN ShirtM
 SAY ~ You would not think that this is a gift a father presents to his almost grown daughter, would you? ~
 IF~~ THEN REPLY ~ Hardly. Maybe it was rather the gift of a lover then? ~ GOTO ShirtM2
-IF~~ THEN REPLY ~ Maybe, if this father wants to loose his daughter to the next male being to pass by. ~ GOTO ShirtM3
+IF~~ THEN REPLY ~ Maybe, if this father wants to lose his daughter to the next male being to pass by. ~ GOTO ShirtM3
 END
 
 IF ~~ THEN BEGIN ShirtM2
@@ -4403,7 +4403,7 @@ END
 IF~~THEN BEGIN  SanTiaHel1
 SAY~ I have not gathered much experience as a healer with this type of madness. There is illness of the mind that comes from a loss or a hurt or some other traumatic event. You can slowly find your way into the mind of the suffering person with gaining the person's  trust and listening to his story to find out about the reason for the state.~
 IF~~THEN REPLY~ I see that such a procedure is not very feasible during a life on the road like ours.~ DO~ SetGlobal("SanTiaHealQ","LOCALS",1)~GOTO SanTiaHel2
-IF~~THEN REPLY~ Can a couple of spells not make him more endurable? I'd hate to loose his abilities in the party.~ DO~ SetGlobal("SanTiaHealQ","LOCALS",1)~GOTO SanTiaHel3
+IF~~THEN REPLY~ Can a couple of spells not make him more endurable? I'd hate to lose his abilities in the party.~ DO~ SetGlobal("SanTiaHealQ","LOCALS",1)~GOTO SanTiaHel3
 END
 
 IF~~THEN BEGIN  SanTiaHel2
@@ -4413,7 +4413,7 @@ END
 
 IF~~THEN BEGIN  SanTiaHel3
 SAY~ This is not a confusion caused by a spell which can be reversed by another spell I could cast. His state comes from deeper inside the mind where you can only venture with the assistance of the patient himself through words and care.~
-IF~~THEN REPLY~ I see. Maybe you will find some time during our travel...even if I would loose those moments to spend with you.~ GOTO SanTiaHel2
+IF~~THEN REPLY~ I see. Maybe you will find some time during our travel...even if I would lose those moments to spend with you.~ GOTO SanTiaHel2
 END
 
 
@@ -5854,8 +5854,8 @@ DO ~ SetGlobal("ImoSlay1","LOCALS",1) ~
 == CVSandrJ ~ To me it looked like more than a spell to be found on the pages of a third rate mage's spellbook. But I am not completely sure yet if it really was what I think it could have been.~
 == Bimoen~ I swear I will never do that again, that was really scary. I was so very strong and at the same time so helpless.~
 END
-++ ~ Right, we need to continue. I told you, Imoen, be careful with those spells, never use one you are not completely sure of. Especially not when we are in a combat like this. I need you, little one - and I do not want to loose you, little sister.~ EXIT
-++ ~ Sandra will you tell me about your suspicion? If there is anything we can do for Imoen, then you need to tell me. I do not want to loose my little sister.~ + ImoSlay3
+++ ~ Right, we need to continue. I told you, Imoen, be careful with those spells, never use one you are not completely sure of. Especially not when we are in a combat like this. I need you, little one - and I do not want to lose you, little sister.~ EXIT
+++ ~ Sandra will you tell me about your suspicion? If there is anything we can do for Imoen, then you need to tell me. I do not want to lose my little sister.~ + ImoSlay3
 
 CHAIN
 IF ~~ THEN CVSANDRJ ImoSlay3
