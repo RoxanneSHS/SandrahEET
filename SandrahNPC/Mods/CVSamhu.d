@@ -21,7 +21,7 @@ IF~~THEN CVSAMHU hints2
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You must hate him worse than I do for what he did to me.~
 ==SHARTJ IF~InParty("SHARTEEL")~ THEN~That's nothing compared to what he did to me, the scoundrel who copulated with that whore who called herself my mother.~
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, you suffer indeed worse than me.~
-==CVSandrJ ~You should not loose more strength in talking, friend. Sleep now. (She casts *sleep* on her patient.)~
+==CVSandrJ ~You should not lose more strength in talking, friend. Sleep now. (She casts *sleep* on her patient.)~
 ==CVSAMHU~ Beware of the traitors...*snooze*~ DO~ DestroySelf()~EXIT
 
 
