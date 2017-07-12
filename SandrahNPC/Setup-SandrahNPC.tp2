@@ -8059,7 +8059,9 @@ COPY_EXISTING ~oopah2.cre~ ~override~
 WRITE_ASCII 0x280 ~oopah~ #8
 
 COPY_EXISTING ~Gazib.dlg~ ~override~
+DECOMPILE_AND_PATCH BEGIN
 REPLACE_TEXTUALLY ~"Ogre"~ ~"Oopah"~
+END
 
 COPY_EXISTING ~Kahrk.cre~ ~override~
 WRITE_ASCII 0x250 ~Kahrk~ #8
