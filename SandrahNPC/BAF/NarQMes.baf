@@ -53,3 +53,10 @@ THEN
 RESPONSE #100
 StartDialogueNoSet([PC])
 END
+
+IF
+Global("SanNarQ","GLOBAL",49)
+THEN
+RESPONSE #100
+DestroySelf()
+END
