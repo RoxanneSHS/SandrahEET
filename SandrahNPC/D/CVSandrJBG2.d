@@ -3676,7 +3676,7 @@ IF~Global("TalkedToLyros","GLOBAL",1) Global("LyrosJob","GLOBAL",0) InParty("CVS
 END
 
 EXTEND_BOTTOM Rylock 9
-IF~Global("TalkedToLyros","GLOBAL",1) Global("LyrosJob","GLOBAL",0) InParty("CVSandr")~THEN REPLY~A mage named Xzar told me.  He wanted to gain entry to the compound and retrieve his companion.~ GOTO 59
+IF~Global("TalkedToLyros","GLOBAL",1) Global("LyrosJob","GLOBAL",0) InParty("CVSandr")~THEN REPLY~A mage named Xzar told me.  He wanted to gain entry to the compound and retrieve his companion.~ GOTO 12
 END
 
 EXTEND_BOTTOM TRGyp02 2
