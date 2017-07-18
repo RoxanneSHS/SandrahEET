@@ -4757,7 +4757,15 @@ INTERJECT NOOBER 4 NobCous
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I met your cousin Roober in Waterdeep recently.~
 == NOOBER IF ~ InParty("CVSandr")~ THEN ~ That hammer you carry! You must be the lady who made Roober take a bath in the harbour...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ There is a river right next to here...~
-END NOOBER 23
+END NOOBER San23
+
+CHAIN
+IF~~THEN Noober San23
+~See you soon! Bye!~
+DO~AddexperienceParty(100) EscapeArea() ~
+==BranwJ IF~Global("X#NOOBER11","GLOBAL",0) IfValidForPartyDialog("branwen") InMyArea("branwen")
+!StateCheck("branwen",CD_STATE_NOTVALID)~THEN~If only that one were gifted to wield a blade half as well as he wields his tongue, he'd be truly a wondrous creature.~
+==Bimoen IF~Global("X#NOOBER11","GLOBAL",0)IfValidForPartyDialog("IMOEN2")InMyArea("IMOEN2")!StateCheck("IMOEN2",CD_STATE_NOTVALID)~THEN~ FINALLY! I swear, if he said one more thing, I was going to kill him!~EXIT
 
 //Kaishas
 
