@@ -36,4 +36,36 @@ IF~~THEN CVSan25J SanBaltQuil2
 ==CVSan25J~Still I hope you can also see the perspective that lies in the fact that the daughters of Elminster will be both at your side in the coming showdown.~
 ==Balth~Let it be so, then. Even Melissan's stolen divinity will not be a match for us both and our allies. I have preparations to make, <CHARNAME>.  Go to the Throne of Bhaal.  When the time comes, I will be there.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
+EXTEND_BOTTOM Yaga02 8
+IF~ GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
+END
 
+EXTEND_BOTTOM Yaga02 10
+IF~ !Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
+END
+
+EXTEND_BOTTOM Yaga02 10
+IF~ Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S41
+END
+
+EXTEND_BOTTOM Yaga02 11
+IF~ !Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
+END
+
+EXTEND_BOTTOM Yaga02 11
+IF~ Dead("Balth") GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S41
+END
+
+CHAIN
+IF~~THEN Yaga02 S40
+~Qi...who?~
+==Solar~Who?...~
+END
+++~Ah, nevermind...I mean, Balthasar still is alive.~+9
+
+CHAIN
+IF~~THEN Yaga02 S41
+~Qi...who?~
+==Solar~Who?...~
+END
+++~Ah, nevermind...I mean, go on.~+12
