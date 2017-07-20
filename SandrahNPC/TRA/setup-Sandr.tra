@@ -17,7 +17,7 @@ Equipped Abilities: unknown~
 @08 = ~History of Faerun ~
 @09 = ~History of Faerun ~
 @10 = ~Sandrah's personal copy of Elminster's rare History of Faerun
-(not to be confused with the everpresent History of the North). This rare tome contains the comprehensive knowledge of items and places that the famous Elminster has visited and documented - which is indeed almost all of Faerun. Sandrah studies the worn book whenever time allows during your travels. 
+(not to be confused with the ever present History of the North). This rare tome contains the comprehensive knowledge of items and places that the famous Elminster has visited and documented - which is indeed almost all of Faerun. Sandrah studies the worn book whenever time allows during your travels.
 
 The book can identify items provided you give Sandrah enough time to look them up.
 (To identify an item, it must be in Sandrah's inventory - first initiate the book in her inventory, see the dialogue, second right click the item to be investigated.)
@@ -29,14 +29,14 @@ Sandrah has told me today of a vision from her father's crystal shard. We must f
 
 @12 = ~A Mysterious Young Woman
 
-Today I met a young woman named Sandrah at the site of Gorion's murder. She claimed she had come too late and wants to help me now. I have seen her at Candlekeep before we left when my foster father had rejected her offer for help. Was that a mistake he made? Do I make the same mistake by refusing her help again. I feel like I should go back to her and try to find out more. ~
+Today I met a young woman named Sandrah at the site of Gorion's murder. She claimed she had come too late and wants to help me now. I have seen her at Candlekeep before we left when my foster father had rejected her offer for help. Was that a mistake he made? Do I make the same mistake by refusing her help again? I feel like I should go back to her and try to find out more. ~
 
 @13 = ~A Demonic Scroll
 
 When we met the old mage Firebead today, he handed a strange Scroll to Sandrah. Only part of it is readable and it has a demonic aura with it. Sandrah will keep it until we eventually meet her father during our travels, as Firebead assumes that he may know more about the artifact. ~
 @14 = ~Demonic Scroll ~
 @15 = ~Demonic Scroll ~
-@16 = ~"...need it if...go there where water roars and wolves howl...uninvited and fear the wraith of the mighty Alza...."
+@16 = ~"...need it if...go there where water roars and wolves howl...uninvited and fear the wrath of the mighty Alza...."
 
 Most of the scroll you have received from the mage Firebead is unreadable from stains of dried blood. Sandrah has noted that the scroll is probably of demonic origin and has decided to keep it until either she or her father can find out more about it.~
 @17 = ~A Demonic Scroll
@@ -49,7 +49,7 @@ Sandrah has studied the mysterious scroll a bit and found that it may - among ot
 @21 = ~A Demonic Scroll
 
 Sandrah has found another bit of information from our mysterious scroll. Someone named Alzaligundrel is the master of this scroll. He has an archenemy in some mountains in the south. The enemy's lair seems to be near falling water. So what? All of it is still too vague to divert us from our task. I am waiting for Sandra or her father to find out more.~
-@22 = ~ The demonic scroll in you inventory seems to come alive. 
+@22 = ~ The demonic scroll in your inventory seems to come alive.
 Maybe it has detected the portal is near. You should converse with the damned thing.~
 @23 = ~Gift of Mystra ~
 @24 = ~Gift of Mystra ~
@@ -70,7 +70,7 @@ This scroll seems to be the counterpart of the demonic scroll you received from 
 @34 = ~Elminster's Shard ~
 @35 = ~Elminster's Shard
 
-Elminster's famous tool, often referred to during your journeys with Sandrah. You can see any part of Faerun you want as through a large telescope. Sometimes even an event in the future becomes visible - for those you know how to use it. But even the Great Mage's own daughter cannot operate the tool for your use - or so she claims.~
+Elminster's famous tool, often referred to during your journeys with Sandrah. You can see any part of Faerun you want as through a large telescope. Sometimes even an event in the future becomes visible - for those who know how to use it. But even the Great Mage's own daughter cannot operate the tool for your use - or so she claims.~
 @36 = ~Alzaligundrel's Heart ~
 @37 = ~Alzaligundrel's Heart~
 @38 = ~Alzaligundrel's Heart
@@ -87,7 +87,7 @@ Do you dare to trick the mighty demon with this false one?~
 We have received the second half of the portal scroll to Alzaligundrel's lair. In order to save our lives, health and Sandrah's freedom we have made a strange deal with the demon Naronguth. We must bring him Alzaligundrel's Heart in exchange for Elminster's Shard. ~
 @43 = ~Demonknight ~
 @44 = ~Demonknight ~
-@45 = ~You inspect the waterfall that the demonish knight has guarded a bit closer.~
+@45 = ~You inspect the waterfall that the demonic knight has guarded a bit closer.~
 @46 = ~You remember what the mysterious scroll told you. Here is water, cloud peaking mountains...~
 @47 = ~You see the rocks at the right side. -   It looks like an entrance there.
 
@@ -95,13 +95,13 @@ We have received the second half of the portal scroll to Alzaligundrel's lair. I
 @48 = ~A Demonic Scroll 
 - A Lair in the Cloudpeaks
 
-Our search for Eminster's shard has lead us to a secret entrance in the Cloudpeak Mountains, hidden behind the mists of a waterfall. What awaits us there? ~
+Our search for Elminster's shard has lead us to a secret entrance in the Cloudpeak Mountains, hidden behind the mists of a waterfall. What awaits us there? ~
 @49 = ~The entrance from the Cloudpeaks has collapsed. It seems like only the demon Naronguth can help you to leave this place.~
 @50 = ~Bracers ~
 @51 = ~Bracers of Demonic Virtue~
 @52 = ~Bracers of Demonic Virtue
 
-The effect of these bracers on cretures of non-demonic origin is unknown~
+The effect of these bracers on creatures of non-demonic origin is unknown~
 @53 = ~The demonic scroll in your inventory seems to spring into your hand. 
 It looks like it has something urgent to say.~
 @54 = ~The narrow entrance through the waterfall has collapsed and filled with boulders when the demon started yelling at you. It can no longer be used. Maybe your host knows a way out? ~
@@ -135,14 +135,14 @@ Maybe Sandrah has some advice for you, you may want to talk to her. ~
 - Elminster's Quest
 
 Our meeting with Elminster has finally shed some light on the story behind the mysterious scroll.
-    Elminster's Shard of Mystra has been Stolen!!
+    Elminster's Shard of Mystra has been stolen!!
 Demonic powers are at work and they threaten all of us on the Sword Coast. We must find them with the help of Sandrah and the scroll and retrieve the shard. Our quest leads us to the south of the Sword Coast, the Cloudpeak Mountains.~
 @71 = ~A Demonic Scroll 
 - Visit Firebead
 
-We met with Sandrah's father, the mighty mage Elminster today. Demonic things are going on at the Sword Coast. But before we can really start to help, we need to retrieve a scroll from Firebead. He stays at Beregost, in a friend's house near the Feldepost Inn.~
+We met with Sandrah's father, the mighty mage Elminster today. Demonic things are happening on the Sword Coast. But before we can really start to help, we need to retrieve a scroll from Firebead. He stays at Beregost, in a friend's house near the Feldepost Inn.~
 @72 = ~A Bad Decision
-Today Elminster has come to seek the help from my party in an urgent task for the Swordcoast at large. I had to deny because of my own preesing business although Sandrah pleeded with me to listen to her father. She has now left me to help the old man alone. I feel lost and sad. Will I ever see her again? and if, will she forgive me?~
+Today Elminster has come to seek the help from my party in an urgent task for the Sword Coast at large. I had to deny because of my own pressing business although Sandrah pleaded with me to listen to her father. She has now left me to help the old man alone. I feel lost and sad. Will I ever see her again? And if so, will she forgive me?~
 @73 = ~A Demonic Scroll 
 - Visit Firebead
 
@@ -152,7 +152,7 @@ We have retrieved a scroll from Firebead and brought it to Elminster. The demoni
 @76 = ~Elminster's Daughter 
 - Need For Help
 
-Sandrah has received a message from her father. Something must have happened that causes Elminster to require our assistance. We are to meet him at the temple in the Friedly Arm.~
+Sandrah has received a message from her father. Something must have happened that causes Elminster to require our assistance. We are to meet him at the temple in the Friendly Arm.~
 @77 = ~A Demonic Scroll 
 - Elminster's Quest Resolved
 
@@ -174,7 +174,7 @@ A nice memory of a caring father, that brings a smile to Sandrah's eye.~
 @85 = ~Sandrah's Boots (Waterdeep Style)~
 @86 = ~Sandrah's Boots (Waterdeep Style)
 
-Handmade boots of finest leather made in the latest fashion of the City of Splendor. They add to Sandrah sex appeal and charisma - (as if this was needed).~
+Handmade boots of finest leather made in the latest fashion of the City of Splendor. They add to Sandrah's sex appeal and charisma - (as if this was needed).~
 @87 = ~Portrait of a Lady (by Leonardo)~
 @88 = ~Portrait of Sandrah's Mother~
 @89 = ~Portrait of Sandrah's Mother
@@ -202,31 +202,31 @@ Move to the western part of the area.~
 @98 = ~Hilath's Baby ~
 @99 = ~Hilath's Baby
 
-You have rescued Hilath's Baby from the bandit Khattark. You must quickly return it to the mother as it is already crying for milk.~
+You have rescued Hilath's baby from the bandit Khattark. You must quickly return it to the mother as it is already crying for milk.~
 @100 = ~Dead Baby ~
 @101 = ~Hilath's Dead Baby ~
 @102 = ~Hilath's Dead Baby
 
-Your attempt to rescued Hilath's Baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
+Your attempt to rescued Hilath's baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
 @103 = ~ No, my husband...
          This bandit Khattark, he has the baby!~
 @104 = ~Khattark - the Bandit
 
-We have saved Hilath's baby from the bandit Khattark. But we had to make a deal for the babies rescue and Khattark himself could escape. He may try to hide in Waterdeep and continue his assaults on the town from his nest. We feel obliged to search for him when we get to town.~
+We have saved Hilath's baby from the bandit Khattark. But we had to make a deal for the baby's rescue and Khattark himself could escape. He may try to hide in Waterdeep and continue his assaults on the town from his nest. We feel obliged to search for him when we get to town.~
 
 @105 = ~Khattark - the Bandit
 
 We have killed the bandit Khattark today, but the rest of his gang may still be in Waterdeep and may become a threat to the townspeople again, once they have found a new leader. We should keep our eyes open while in town. ~
 @106 = ~Without Sandrah and her map we could not travel on to Waterdeep. ~
-@107 = ~After a long odyssee in the wilderness we finally found our way back to the Friendly Arm.~
+@107 = ~After a long odyssey in the wilderness we finally found our way back to the Friendly Arm.~
 @108 = ~The Failed Journey to Waterdeep
 
-Sandrah had invited us to her father's house in Waterdeep. On the road we encountered a frightening bandit leader who had kidnappped a child. I refused to interfer myself and proposed to leave the case to the Waterdeep militia. Sandrah has left my group without a word and went to help the poor child's mother and to restore her reputation in her hometown. Without Sandrah and her map we could not travel on to Waterdeep. After a long odyssee in the wilderness we finally found our way back to the Friendly Arm. Will I ever see Sandrah again?~
+Sandrah had invited us to her father's house in Waterdeep. On the road we encountered a frightening bandit leader who had kidnapped a child. I refused to interfer myself, and proposed to leave the case to the Waterdeep militia. Sandrah has left my group without a word and went to help the poor child's mother and to restore her reputation in her hometown. Without Sandrah and her map we could not travel on to Waterdeep. After a long odyssey in the wilderness we finally found our way back to the Friendly Arm. Will I ever see Sandrah again?~
 @109 = ~Maitre De ~
 @110 = ~Maitre De ~
 @111 = ~A Book for Finch
 
-Clarissa Bloomwhiffler, a relative of Finch in Waterdeep has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch would be delighted if we delivered the tome to her for her library.~
+Clarissa Bloomwhiffler, a relative of Finch in Waterdeep, has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch would be delighted if we delivered the tome to her for her library.~
 @112   = ~Book for Finch~
 @113   = ~Book for Finch~
 @114   = ~Virtue of Wisdom
@@ -276,7 +276,7 @@ Like so many other things I learn bit by bit, she has assured me, that everythin
 @134 = ~Elminster's Daughter ~
 @135 = ~Sunbathing~
 @136 =~Totally exhausted after the extended splashing and swimming you find yourself dripping wet in Sandrah's arm, lying on the shoreline.
-The rest of your companions is shattered on the banks nearby, all of them totally naked and happy.
+The rest of your companions are scattered on the banks nearby, all of them totally naked and happy.
 You are lazily caressing Sandrah's perfect body, lingering long at her rose nipples that are hardened after the bath.
 You feel her breathing getting faster...~
 @137 =~Did we just observe how Mystra punishes the misuse of her powers?~
@@ -284,18 +284,18 @@ You feel her breathing getting faster...~
 @139 = ~A Piece of Cloth ~
 @140 = ~A piece of cloth you have received from Viconia, the renegade drow, priestess of Shar.~
 @141 = ~A piece of cloth you have received from Viconia, the renegade drow, priestess of Shar.
-Sandrah vaguely resembles a part of the pattern on this piece of cloth, but she cannot remember where she might have seen it. You need more pieces of the puzzle to make out some sense.~
+Sandrah vaguely recognises a part of the pattern on this piece of cloth, but she cannot remember where she might have seen it. You need more pieces of the puzzle to make out some sense.~
 @142 = ~Dynaheir's piece ~
 @143 = ~Dynaheir's piece of Cloth
 A piece of cloth that stirs up memories in Sandrah although she cannot yet exactly tell why. It was found by the Rashemi witch Dynaheir near the old Firewine Bridge. Dynaheir assumes that it was lost there long ago, at a period she called the Time of Troubles.~
 @144 = ~Firewine piece ~
 @145 = ~Firewine piece
-An old caravan guard that went insane after he lost a caravan to the bandits long time ago had a piece of a torn cloth that is related to something in Sandrah's past. You learned as well that two babies were carried by some travellers that were assaulted by bandits near the Firewine Bridge long ago. What became of them is unknown.  ~
+An old caravan guard who went insane after he lost a caravan to the bandits a long time ago, had a piece of a torn cloth that is related to something in Sandrah's past. You learned as well that two babies were carried by some travellers that were assaulted by bandits near the Firewine Bridge long ago. What became of them is unknown.  ~
 @146 = ~Full piece ~
 @147 = ~Reconstructed piece of cloth~
 @148 = ~A Strange Piece of Cloth
 
-The renegade drow Viconia gave a strange piece of a cloth to Sandrah today, indicating it was meant for my companion by the goddes Shar. Sandrah vaguely resembles a part of the pattern on the cloth, but she cannot remember where she might have seen it. ~
+The renegade drow Viconia gave a strange piece of a cloth to Sandrah today, indicating it was meant for my companion by the goddess Shar. Sandrah vaguely recognises a part of the pattern on the cloth, but she cannot remember where she might have seen it. ~
 @149 = ~Mystra's Hammer ~
 @150 = ~Mystra's Hammer ~
 @151 = ~Mystra's Hammer
@@ -317,7 +317,7 @@ It is a powerful armour and at the same time it clings to Sandrah's body emphasi
      if a long past episode of history, the Time of Troubles, casts its dark
      shadow to the present.
      In a revolt for power against the overload Ao, several gods had once
-     attempted and failed to overthrow the order and stole the tablets of fate. 
+     attempted and failed to overthrow the order and stole the Tablets of Fate.
      The renegades were slain and new gods were enthroned in their place. But 
      this peace does not seem to be permanent. At least one of them - Bhaal - 
      has spawned a dangerous seed on Faerun which just now starts to grow.
@@ -325,7 +325,7 @@ It is a powerful armour and at the same time it clings to Sandrah's body emphasi
      knowledge...~
 @156 = ~Winski Perorate ~
 @157 = ~Mystra has blessed Sandrah with a special ability for her gained experience with the group.~
-@158 = ~My first rest after Sandrah has fallen. Why have I done nothing to ressurect her? Will maybe her father find her and take her home? ~
+@158 = ~My first rest after Sandrah has fallen. Why have I done nothing to resurrect her? Will maybe her father find her and take her home? ~
 @159 = ~Mystra's Hammer ~
 @160 = ~Mystra's Blessed Hammer ~
 @161 = ~Mystra's Blessed Hammer
@@ -340,10 +340,10 @@ Sandrah received this blessed hammer after she had travelled with your group thr
 @167 = ~You cannot decipher the foreign writing ~
 @168 = ~ ... today the Orloth has sent me to follow a group of travellers from Waterdeep. He thinks they are in possession of two of the creatures the master requires...
 ...
-...during endless days persuing the small group. They carry two small ones indeed and are eagerly trying to hide their true destination by meandering across this damned land of the Sword Coast...
+...during endless days pursuing the small group. They carry two small ones indeed and are eagerly trying to hide their true destination by meandering across this damned land of the Sword Coast...
 ...
-...the group was attacked by a band of bandits before I could get close to at least one of the childs. I was hiding in the brushes when I saw this DROW warrior priestess approaching...
-...now in these tunnels, I have escaped the bandit and the mysterious drow, but what is here inside? It is murmering and slurring in the dark, encircling me...~
+...the group was attacked by a band of bandits before I could get close to at least one of the children. I was hiding in the brushes when I saw this DROW warrior priestess approaching...
+...now in these tunnels, I have escaped the bandit and the mysterious drow, but what is here inside? It is murmuring and slurring in the dark, encircling me...~
 @169 = ~Letter~
 @170 = ~Letter to Sandrah ~
 @171 = ~Letter to Sandrah
@@ -372,7 +372,7 @@ The Merchant of Nashkel has promised us gold if we were to bring back a winter w
 @183 = ~Horse ~
 @184 = ~Stallion~
 @185 = ~Suzanna~
-@186 = ~The kidnappping of Henning
+@186 = ~The kidnapping of Henning
 
 A black day for all of us, but especially for Imoen. Instead of the happy reunion with her boyfriend, we found his shop at Nashkel empty and full of evidence of a heavy fight. The local mayor reported a bandit raid on the shop. It seems that our investigations and the reopening of the Nashkel mines by us have forced a large and mighty organisation to act against us. The trail leads to the uncharted Cloakwood Forest.~
 @187 = ~ 
@@ -413,11 +413,11 @@ At first sight the ring that Imoen has received from her lover Henning looks lik
 @200  = ~A Strange Piece of Cloth - A Visitor
 
 Alarming things have happened. We seem to have stirred our faceless enemy by finding a strange piece of cloth from the past. A wizard appeared out of nowhere with mysterious warnings. But my courageous companion Sandrah has kept her cool and found a way to gain some useful information out of the whole confusing mess. It looks as if a long past episode of history, the Time of Troubles, casts its dark shadow to the present.
-In a revolt for power against the overloard Ao, several gods had once attempted and failed to overthrow the order. The renegades were slain and new gods were enthroned in their place. But this peace does not seem to be permanent. At least one of them - Bhaal - has spawned a dangerous seed over Faerun which just now starts to grow.
+In a revolt for power against the overlord Ao, several gods had once attempted and failed to overthrow the order. The renegades were slain and new gods were enthroned in their place. But this peace does not seem to be permanent. At least one of them - Bhaal - has spawned a dangerous seed over Faerun which just now starts to grow.
 And it looks that me and my group have a part in that scheme without our knowledge...~
 @201 = ~Platform Shoes~
 @202 = ~A pair from Sandrah's endless collection of stylish boots and shoes. ~
-@203 = ~Wyern Skin Boots~
+@203 = ~Wyvern Skin Boots~
 @204 = ~Nymph Hair Sandals~
 @205 = ~Elminster's Study~
 @206 = ~Garden~
@@ -432,9 +432,9 @@ Clarissa Bloomwhiffler, a relative of Finch in Waterdeep has given us a copy of 
 @213 = ~A Strange Piece of Cloth - Reconstructed
 
 During your travels all over the Sword Coast, you and Sandrah have found three pieces of a strange cloth in various places. With the third piece in hand, you are finally able to reconstruct it. The reconstruction has given Sandrah the necessary clues. It is a bedcloth from Elminster's and Khalindra's household. 
-Obviously it was used for Khalindra's second baby, the Bhaalspawn, during the time when it travelled from Waterdeep to an unknown destination in order to hide it from several groups of persuers. 
+Obviously it was used for Khalindra's second baby, the Bhaalspawn, during the time when it travelled from Waterdeep to an unknown destination in order to hide it from several groups of pursuers. 
 But why this was done? 
-Who were the persuers?  
+Who were the pursuers?  
 Who were the ones trying to hide and rescue this child along with another one of the same godly heritage?
 Those are the questions you now ponder.
 
@@ -706,7 +706,7 @@ Today we have probably discovered the truth about the Bhaalspawn that was insemi
 
 It must be me!
 
-To save my life from all kinds of persuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep. 
+To save my life from all kinds of pursuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep. 
 
 Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast. 
 
@@ -715,7 +715,7 @@ I am not alone in my task. With Sandrah by my side and with my *sister* Imoen we
 
 Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
 It must be me!
-To save my life from all kinds of persuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep.
+To save my life from all kinds of pursuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep.
 Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast.
 I am not alone in my task. With Sandrah by my side and with my *sister* Imoen we will succeed to stop Sarevok to become the next God of Murder.~
 @360 = ~ You have lost charisma as a leader within the group. ~
@@ -992,7 +992,7 @@ For 55k xp!~
 @488= ~ Sandrah has healed this injured and limping  mountain cat. Your druid companion has suggested to take it to a wilderness area and set it free in its natural surrounding again.~
 @489=~ Sureblade defeated
 You have succeeded in destroying Rolf Sureblade's bandit army that terrorized the area around Soubar. But instead of bringing the head of the half-orc back victoriously something strange has happened. In his final stand Sureblade identified Shauhana as the future orc leader to unite the Clans. The oulaw has sworn his sword and life to Shauhana's mission.
-Your counselor Sandrah has persuaded you to see the enormous potential Sureblade has shown as a General - even if it was for an army of bandits. Given the right task he would make a leader as Shauhana would need for her crusade.
+Your counselor Sandrah has pursuaded you to see the enormous potential Sureblade has shown as a General - even if it was for an army of bandits. Given the right task he would make a leader as Shauhana would need for her crusade.
 As the rest of the bandits will quickly disband without their leader and Sureblade will hide until Shauhana needs him, your mission for Soubar is nevertheless ended successfully. Now you have to go back to the town pretending the villain's death and defeat and let the friendly town return to peace.~
 @490=~Bandit Squad Leader~
 @491=~Murderer~
@@ -1319,7 +1319,7 @@ We have encountered a blind Clan Orc shaman and his guide in Baldur's Gate. They
 Sandrah and her beloved thieving bard Haer'Dalis have encountered the joint assault of Naronguth and Alzaligundrel, two foes they have in common for different reasons. The tiefling was killed in the battle and is now in a state that can neither be described as live nor dead. With her healer skills Sandrah is helpless when it comes to a descendent of the abyss who has been slain by another hellish creature while on the surface of the Prime. According to Mystra's advice Sandrah may be able to restore him in the abyss by using his murderer's own heart in the process. With the help of a map received from the Goddess of All Magic we can follow the villains and find the access to the nether regions this way. The trail leads us to the forgotten temple area in the Umar Hills.~
 @740 =~How to restore a Tiefling
 
-In persuit of Haer'Dalis' killer you finally make your way back to the Sword Coast and Baldur's Gate. Through secret passage ways - often with your eyes blindfolded - the Shadow Thieves manage to get your party from Amn to their headquarter up North within a day.
+In pursuit of Haer'Dalis' killer you finally make your way back to the Sword Coast and Baldur's Gate. Through secret passage ways - often with your eyes blindfolded - the Shadow Thieves manage to get your party from Amn to their headquarter up North within a day.
 
 As you finally reach your destination you are vividly remembering the day when you last stood in the room you now stand in. It was the day when you entered the Undercity to face your *brother* Sarevok in his final battle.~
 @741 =~Look here, <CHARNAME>, this is where Sarevok was torn down to Hell!~
@@ -1567,7 +1567,7 @@ At the site of Gorion's murder you have found three things you decide to keep du
 You found some disturbing information about the dagger that is your sole heritage from your stepfather Gorion - the item seems to be a cult dagger used in the bloody sacrifices performef by the followers of the God of Murder - Bhaal. This specific dagger had belonged most likely to a woman with the initial *A*. How the dagger came into Gorion's possession remains a mystery at this time, still you have the remote feeling that it may be a trace to Gorion's past and thus to your own origins. Your lover Sandrah seems to share this opinion even though even with her knowledge and lore she currently has no clue about those past connections.
 Hopefully you will find further details during your quests, so you decide to keep your heritage in your possession.~
 @907= ~Gorion's Dagger
-All your possesions have been taken from you by the mysterious capturer on your trip to Amn. While you were able to regain part of your equipment from his Duergar minions and a captured Genie, one of the most valued items stays lost. Your capturer had a personal interest in Gorion's dagger and by that has given you still another reason to persue him.~
+All your possesions have been taken from you by the mysterious capturer on your trip to Amn. While you were able to regain part of your equipment from his Duergar minions and a captured Genie, one of the most valued items stays lost. Your capturer had a personal interest in Gorion's dagger and by that has given you still another reason to pursue him.~
 @908=~ Install Consistent Imoen
 Choose one
 [1] Imoen appears as a mage throughout the game, 
@@ -1623,7 +1623,7 @@ Weight: 2~
 @921=~Festhall~
 @922=~Jen'lig's Hunt
 
-I have allowed the githyanki Jen'lig to join my party. This strange creature from the Astral Plane is hunting for a relict of her race that has been stolen by some mortals. One of the thief was a flaming fist sergeant she had persued to the Friendly Arm Inn. The trail of his accomplices seems to point to Baldur's Gate. ~
+I have allowed the githyanki Jen'lig to join my party. This strange creature from the Astral Plane is hunting for a relict of her race that has been stolen by some mortals. One of the thief was a flaming fist sergeant she had pursued to the Friendly Arm Inn. The trail of his accomplices seems to point to Baldur's Gate. ~
 @923=~Jen'lig's Hunt
 
 Jen'lig has told me today that she searches a sacred silver sword from the city of Tu'narath that was once wielded by Gith herself, the heroine that freed her race from the slavery of the Illithids. Such an item must be of great importance to her race.~
@@ -1723,14 +1723,14 @@ I should look for a blackthorn tree in the forest.  I need to find a blackthorn 
 
 @970 = ~Brage's Quest
 
-We have met the former captain Brage from Nashkel on a mountain pass near Dragonspear Castle. It seems he is on a desperate search for the legendary Sharkta Fai in the Stormhorns. Was he the invisible persuer of the pirate Monteelah we suspected to exist during our adventure on the Sword Coast?~
+We have met the former captain Brage from Nashkel on a mountain pass near Dragonspear Castle. It seems he is on a desperate search for the legendary Sharkta Fai in the Stormhorns. Was he the invisible pursuer of the pirate Monteelah we suspected to exist during our adventure on the Sword Coast?~
 @971 = ~This mod requires Siege of Dragonspear to be installed.~
 @972 = ~Brage's Quest
 
 We have found several hints while visiting Easthaven and Kuldahar that the former captain Brage from Nashkel has travelled to the north to further reach the Stormhorn Mountains. He is in search of someone or something to help him restore his health.~
 @973 = ~Brage's Quest
 
-Brage from Nashkel turned up at the destroyed Eldath temple at the Dragon's Eye. He was searching a document in the enclave's library concerning Sharkta Fai. We could not persue him to come back with us. After the enclave has been freed by us from the reptile invaders, he should be save there for a time.~
+Brage from Nashkel turned up at the destroyed Eldath temple at the Dragon's Eye. He was searching a document in the enclave's library concerning Sharkta Fai. We could not pursue him to come back with us. After the enclave has been freed by us from the reptile invaders, he should be save there for a time.~
 @974 = ~Soultaker Dagger~
 @975 = ~This dagger weighs heavily in your hand and is warm to the touch. Merely having it on your person makes you feel uneasy for some reason. The gem mounted in the hilt seems to have an inner light of some sort, a sign of a mortal soul caged in the item. You are sure this is the dagger that killed Skie Silvershield and captured her soul. Taking it to a temple with your cleric may set the soul free again.~
 @976 =~Slaver Scroll~
