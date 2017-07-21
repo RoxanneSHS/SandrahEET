@@ -1617,14 +1617,14 @@ I have allowed the githyanki Jen'lig to join my party. This strange creature fro
 Jen'lig has told me today that she searches for a sacred silver sword from the city of Tu'narath that was once wielded by Gith herself, the heroine that freed her race from the slavery of the Illithids. Such an item must be of great importance to her race.~
 @924=~Jen'lig's Hunt
 
-We have found initial evidence for the relict our githyanki companion searches. It is the sheath of a sword stolen from her former commander Kastya. Six men seem to have been involved in the murdering of Kastya and the theft of the sword. One was the sergeant Horvok she had traced to the Friendly Arm Inn - five more need to be found.~
+We have found a first trace of the relict our githyanki companion searches. It is the sheath of a sword stolen from her former commander, Kastya. Six men seem to have been involved in the murdering of Kastya and the theft of the sword. One was the sergeant Horvok she had tracked to the Friendly Arm Inn - five more need to be found.~
 @925=~Jen'lig's Hunt
 
 Another step forward in Jen'lig's quest. The bandit leader Tazok was one of Kastya's murderers. However, he did not reveal much more about the case before his well earned death.
 One thing that bothers me is the fact that Jen'lig's possible success with her mission may as well mean a great danger for her - the god-queen of the githyanki is rumoured to assimilate the power and essence of strong kinsmen to prolong her own lichdom.~
 @926=~Jen'lig's Hunt
 
-When we defeated Kastya's murderer number three, Davaeorn, we found a warning letter indicating the names of two more complices, Jardak and Sunin in Baldur's Gate. It may be a good idea to contact the Shadow Thieves Guild in that town - such a guild is a good source for all kind of information, provided you grease their hands adequately.~
+When we defeated Kastya's murderer number three, Davaeorn, we found a warning letter indicating the names of two more complices, Jardak and Sunin in Baldur's Gate. It may be a good idea to contact the Shadow Thieves Guild in that town - such a guild is a good source for all kinds of information, provided you grease their palms adequately.~
 @927=~Jen'lig's Hunt
 
 We seem to get nearer to Jen'lig's goal and to mine. The sorcerer responsible for her mentor's death and the theft of the holy sword is Semaj, a close confidant of my archenemy Sarevok.
@@ -1656,7 +1656,7 @@ Curing is permanent only insofar as the creature does not sustain further damage
 @938 =~Pirate~
 @939 =~Bookhunter~
 @940 =~Orc~
-@941 =~Momk~
+@941 =~Monk~
 @942 =~Citizen~
 @943 =~Nobleman~
 @944 =~Guest~
@@ -1670,10 +1670,10 @@ Curing is permanent only insofar as the creature does not sustain further damage
 @952 =~Bow~
 @953 =~Eagle~
 @954 =~Snake~
-@955 =~The kidnappping of Henning
+@955 =~The kidnapping of Henning
 
 A new development. We are following the trail of those orcs who have captured Imoen's boyfriend Henning. It seems that our investigations and the reopening of the Nashkel mines by us have forced a large and mighty organisation to act against us. 
-The trail had at first pointed to the uncharted Cloakwood Forest. But meanwhile we found a witness that told us the orcs with their prisoner are unsure of their route and are currently on their way to the halflings village of Gullykin.~
+The trail had at first pointed to the uncharted Cloakwood Forest. But meanwhile we found a witness that told us the orcs with their prisoner are unsure of their route and are currently on their way to the halfling village of Gullykin.~
 @956 =~Frost Giant~
 @957 =~Ice Golem~
 @958 =~githyanki~
@@ -1724,7 +1724,7 @@ Brage from Nashkel turned up at the destroyed Eldath temple at the Dragon's Eye.
 @976 =~Slaver Scroll~
 @977 =~Captain Haegan,
 
-I did not sponsor your continued stay in Athkatla only for you to sell the best of your stock to that lout running the Copper Cornet. Sion tells me it is your fault that the last shipment was not young enough for the Lady's tastes, and I want three of the proper age to be sent to our typical meeting place within the Temple District. Fail to do so, and I will expose you and Lehtinan to the city officials.
+I did not sponsor your continued stay in Athkatla only for you to sell the best of your stock to that lout running the Copper Coronet. Sion tells me it is your fault that the last shipment was not young enough for the Lady's tastes, and I want three of the proper age to be sent to our typical meeting place within the Temple District. Fail to do so, and I will expose you and Lehtinan to the city officials.
 
 A.~
 @978 =~Collect the fee for Gaelan Bayle
@@ -1752,8 +1752,8 @@ Gaelan's nephew Brus told me the truth about Gaelan Bayle's allies. The gold the
 @998 =~Unless Elminster finds a way to rescue Sandrah, she will be lost forever. 
 You will probably never know.~
 @999 =~Since her early training, Sandrah began to feel a presence from time to time. Her skin would tingle coolly and she had a feeling of somehow being followed or observed. After such attentions, she always found that spells, which she had labored over for weeks, would suddenly work without any problem.
-This ability to assimilate spells they observe on other casters or just invent is granted to few priestesses of Mystra, including Midnight and Sandrah herself. 
-Such spells and abilities are often useful but they may have unexpected side effects which prevents them from being made available for common spellbooks.~
-@1000 = ~Quarter Staff~
+This ability to assimilate spells they observe on other casters or just invent, is granted to few priestesses of Mystra, including Midnight and Sandrah herself.
+Such spells and abilities are often useful, but they may have unexpected side effects which prevents them from being made available for common spellbooks.~
+@1000 = ~Quarterstaff~
 @1001 = ~Staff of Dark Oaks~
 @1002 = ~Only the highest ranking of the Shadow Druids are said to possess these mythical staves which grant them skin as tough as the dark oaks, resilience against fire, and resistance against the most potent of poisons. ~
