@@ -3879,7 +3879,7 @@ END
 
 
 IF ~~THEN BEGIN ZomHom13
-SAY ~ This is about an ancient legend that is common to all the older races on Toril, like the elves, the orcs and the dwarfs. For many it is more than just a legend but a place that really exists.~
+SAY ~ This is about an ancient legend that is common to all the older races on Toril, such as the elves, the orcs and the dwarfs. For many it is more than just a legend but a place that really exists.~
 =~ Sharkta Fai - according to their belief - is a fountain that is said to restore the bodies of those who have fallen in battle before they go hale to the next world after life. It is guarded by a mighty watcher who makes sure that only those who deserve it will be cleaned and restored by the fountain. Any living creature attempting to use it will lose its life to the Guardian without any hope to enter the afterworld.~
 = ~ Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enourmous power but also will gain endless life.~
 IF ~~ THEN REPLY ~ This will explain the pirate's actions. The prospect of eternal life is reason enough for such a man to kill a whole ship crew and more.~ GOTO ZomHom14
