@@ -1194,7 +1194,7 @@ IF ~~ THEN REPLY ~ The letters we found seem to say just that. And then, this ha
 END
 
 IF~~ THEN BEGIN OutNashM2
-SAY ~ We should report our discoveries back to Berrun at Nashkel. With that and the items we found down there, they should be able to re-open the mines and reduce the impact of the Iron Crisis. But on the other hand, our deeds here will probably not remain unnoticed. If they had not known by now already, they will now be sure that we are persuing them.~
+SAY ~ We should report our discoveries back to Berrun at Nashkel. With that and the items we found down there, they should be able to re-open the mines and reduce the impact of the Iron Crisis. But on the other hand, our deeds here will probably not remain unnoticed. If they had not known by now already, they will now be sure that we are pursuing them.~
 IF~!InParty("Branwen")~THEN REPLY ~ Any idea who *THEY* are?~ GOTO OutNashM3
 IF~InParty("Branwen")~THEN REPLY ~ Any idea who *THEY* are?~ GOTO OutNashM4
 END
@@ -1306,7 +1306,7 @@ IF ~~ THEN BEGIN SanOrDiId4
 SAY ~ Let me tell you the rest of it first, before we try to analyse things.~
 = ~ The travellers party was attacked by bandits before the scout could do anything more. There was also a drow priestess at the scene of the ambush, although probably just another witness of the scene. However, the scout tried to hide in some tunnels, which were the Ulcaster ruins and he died down there, killed by the monsters we have met down there. This is where the diary ends.~
 IF ~ PartyHasItem("Sanwi1") ~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and what this Orloth was after...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
-IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. And this Orloth is still around and after the creatures he was persuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
+IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. And this Orloth is still around and after the creatures he was pursuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 IF ~~ THEN REPLY ~ Ghosts of the past. But my studies of the scripts at Candlekeep have taught me, that our present events are always connected to what has been before us...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 END
 
@@ -2671,7 +2671,7 @@ IF~~THEN REPLY ~ Actually, I no longer know what to expect at all. Not anymore s
 END
 
 IF~~THEN BEGIN SanSharCon3
-SAY ~ Listen, <CHARNAME>. I am not jealous and I am not persuing any revenge. We are making new experiences in a field that is new to both of us. I love you and I feel you love me too. But I do not want to cage you and control you. I appeared by your side out of nowhere and I conquered you without much opposition from your side. Maybe I just overwhelmed you before you could say no.~
+SAY ~ Listen, <CHARNAME>. I am not jealous and I am not pursuing any revenge. We are making new experiences in a field that is new to both of us. I love you and I feel you love me too. But I do not want to cage you and control you. I appeared by your side out of nowhere and I conquered you without much opposition from your side. Maybe I just overwhelmed you before you could say no.~
 IF~~THEN REPLY ~ Sandrah, I never wanted to object or say no, believe me...~ GOTO SanSharCon4
 END
 
@@ -4434,7 +4434,7 @@ IF ~ Global("Formedcloth","GLOBAL",13) ~ THEN BEGIN KhalChi1
 SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by side for a while and you feel the power of her love and her nearness giving you strength and confidence.)~
 = ~ My love, you bear the discovery of your heritage quite well.~
 IF ~~ THEN REPLY~ Don't forget I have the power of a God in me, even if I do not give in to his dark luring.~ GOTO KhalChi2
-IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's persuasions at far distance from my heart. ~ GOTO KhalChi3
+IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi3
 END
 
 IF~~ THEN BEGIN KhalChi2

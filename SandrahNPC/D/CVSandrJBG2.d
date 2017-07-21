@@ -562,7 +562,7 @@ IF~ ~ THEN BEGIN SanHendls8
 SAY ~ Rightfully so, <CHARNAME>. It was not so hard to find the trail of the slavers and their victims as their number was large and the nearby desert to where it led showed it well. Also the occasional dead body of a young woman or a child that had either tried to escape or collapsed from exhaustion lined the way. By nightfall we caught sight of the caravan as they were about to stop for the night. I will never forget the sound of hundreds of weeping children and the wailing of the desperate women that were raped by their capturers - not just for their fun but also to breed just right away a new generation to be born directly into slavery...~
 = ~ My father struggled hard to remain patient himself but he feared that a direct attack with even our whole magical power would cause many victims among the captured, as the capturers themselves had a number of wizards among them. He knew they would use their fireballs and summoned monsters remorselessly not caring how many of their prisoners would die through that.~
 = ~ While we were still planning our next steps, a young girl of my age had suddenly taken her chance to try an escape and came running directly to the point where we were hiding in the dunes. She was already bleeding and her clothes were torn. More than a dozend of the slavers were on her trail while she came running towards us, running for her life.~
-= ~ All I remember is that an instant later the first of her persuers lay dead before my feet while my hammer was already targeted at the next one. Within seconds hell broke loose around us. All I know is that I felt neither pain nor fear, I was just fighting and destroying the monsters that had done what I had seen in that village.~
+= ~ All I remember is that an instant later the first of her pursuers lay dead before my feet while my hammer was already targeted at the next one. Within seconds hell broke loose around us. All I know is that I felt neither pain nor fear, I was just fighting and destroying the monsters that had done what I had seen in that village.~
 IF~~THEN REPLY ~ (You remain silent as Sandrah seems to experience the pain of that battle once again.)~  GOTO SanHendls9
 END
 
@@ -637,7 +637,7 @@ IF~~ THEN REPLY ~Haiass is here too? What a loyal friend..~GOTO SanNotCapt14
 END
 
 IF~~ THEN BEGIN SanNotCapt14
-SAY~ With the animals' help I quickly found the trail that your kidnappers had left not anticipating someone might persue them. I followed them to the town and their hideout in the Docks. It were Shadow Thieves that laid the ambush and they nauseated you all with a magic cloud spell.~
+SAY~ With the animals' help I quickly found the trail that your kidnappers had left not anticipating someone might pursue them. I followed them to the town and their hideout in the Docks. It were Shadow Thieves that laid the ambush and they nauseated you all with a magic cloud spell.~
 = ~ Pelligram and me observed the building from a hiding place and we had not to wait long until a party left there with suspiciously looking boxes, big enough to hold a body. They moved to a secret and well locked entrance beneath the merchant's arcades.~
 IF~ AreaCheck("ar0603") ~THEN REPLY ~ And that is where we are now. Please continue. ~ GOTO SanNotCapt3
 IF~!AreaCheck("ar0603")~THEN REPLY ~ And that is where we found each other again. Please continue. ~GOTO SanNotCapt3
@@ -1202,7 +1202,7 @@ IF~~THEN REPLY~ And then he harbours his old mates, you mean?~ GOTO Santhethumb4
 END
 
 IF ~~ THEN BEGIN Santhethumb4
-SAY~ Maybe he did not volunteer to do so, they may just have used the right arguments to persuade him - like giving his past occupation to the guards.~
+SAY~ Maybe he did not volunteer to do so, they may just have used the right arguments to pursuade him - like giving his past occupation to the guards.~
 IF~~ THEN DO~ SetGlobal("SanPirThumb","ar0310",2)~ EXIT
 END
 
@@ -1419,7 +1419,7 @@ IF~~THEN REPLY~So all of this maze is maybe some kind of test of our abilities?~
 END
 
 IF~~ THEN BEGIN SanFirkDung8
-SAY~ Not even that. My assumption is that he knows well that we will be able to get to him. Most probably he set up this challenge to spur your interest to persue him and at the same time get a chance to study you in how you defeat the obstacles in your way. And last but not least he may get some entertainment from watching our progress.~
+SAY~ Not even that. My assumption is that he knows well that we will be able to get to him. Most probably he set up this challenge to spur your interest to pursue him and at the same time get a chance to study you in how you defeat the obstacles in your way. And last but not least he may get some entertainment from watching our progress.~
 IF~~THEN REPLY~ He is so very sure of himself and his trap. That attitude shall be his downfall.~ GOTO SanFirkDung9
 END
 
@@ -1428,7 +1428,7 @@ SAY~ Please stay careful, my darling. Even if he is arrogant beyond any means he
 IF~~THEN REPLY~ Mh, what is he, a Lich?~ GOTO SanFirkDung10
 IF~~THEN REPLY~ May he be a mischievous old dragon?~ GOTO SanFirkDung10
 IF~~THEN REPLY~ Is it a Bhaalspawn again who is waiting for me?~ GOTO SanFirkDung10
-IF~~THEN REPLY~ Have I angered some minor deity to persue us this way?~ GOTO SanFirkDung10
+IF~~THEN REPLY~ Have I angered some minor deity to pursue us this way?~ GOTO SanFirkDung10
 END
 
 IF~~ THEN BEGIN SanFirkDung10
@@ -1927,7 +1927,7 @@ END
 
 IF~~THEN BEGIN Suldahint4
 SAY~ Exactly. If we only had the means to warn those elves. But the town has vanished from the knowledge and the surface of Toril some time ago. I can only imagine now that it had to do with the events that led to the exile of our opponents.~
-IF~~THEN REPLY~ Well, if all of that is true, the only way to help the elves is to persue Jon. Which we must do anyhow for Imoen's an my own sake.~EXIT
+IF~~THEN REPLY~ Well, if all of that is true, the only way to help the elves is to pursue Jon. Which we must do anyhow for Imoen's an my own sake.~EXIT
 IF~~THEN REPLY~ We must follow the two creatures that stole Imoen's and my souls. If that leads us to the target of their revenge...fine, we can surely need those elves to our assistance.~EXIT
 END
 
@@ -1970,7 +1970,7 @@ END
 
 //Underdark
 IF~Global("UcmMatronDrow","GLOBAL",2)~THEN BEGIN UDWelcome1
-SAY~Just the warm welcome we had to expect in this place - even worse in our persuit of Irenicus and Bodhi.~
+SAY~Just the warm welcome we had to expect in this place - even worse in our pursuit of Irenicus and Bodhi.~
 IF~~THEN REPLY~ How can it be that they are in alliance with the Drow?~ GOTO UDWelcome2
 IF~~THEN REPLY~ Why do the drow not treat those elves with the same hostility?~ GOTO UDWelcome2
 END
@@ -2072,7 +2072,7 @@ IF~~THEN BEGIN SanFemDrow11
 SAY~ (Laughs) A dangerous choice, my dear. You know what drow female require most from their love-slaves.~
 IF~~THEN REPLY~(Wink) That was exactly why I asked you for it.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF~~THEN REPLY~Ha, between the sheets I will still lead.~ EXIT
-IF~~THEN REPLY~Fine with me as long as you allow me to maintain enough strength to persuit our quest.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~~THEN REPLY~Fine with me as long as you allow me to maintain enough strength to pursuit our quest.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 END
 
 IF~Global("SanUsePrevi","AR2200",1)~THEN BEGIN UseDrowPriv1
@@ -2109,7 +2109,7 @@ IF~~THEN BEGIN SanErrGith2
 SAY~It appears that according to their codex someone had to pay with his life for the theft - and Saemon Havarian was not available.~
 IF~~THEN REPLY~ He had any reason not to be here. I wonder if that idiot knew what he was hiding.~EXIT
 IF~~THEN REPLY~ Saemon, we will find you! This is not over yet.~ EXIT
-IF~~THEN REPLY~ I guess he simply misused us and our abilities to get rid of those persuers.~ GOTO SanErrGith3
+IF~~THEN REPLY~ I guess he simply misused us and our abilities to get rid of those pursuers.~ GOTO SanErrGith3
 END
 
 IF~~THEN BEGIN SanErrGith3
@@ -3366,7 +3366,7 @@ INTERJECT_COPY_TRANS IF_FILE_EXISTS Valran01 0 Sanderrik
 ==CVSandrJ IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Derrick? The silent elf ranger, who used to watch and never talk?~
 == Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Sandrah!! The girl who always let me loose every thought I had for every word I might have wanted to tell her.~
 == CVSandrJ IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ You are with friends up here in the woods? You mentioned someone named Valygar.~
-== Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Obviously you don't know him and were not sent to persuit him.~
+== Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Obviously you don't know him and were not sent to pursuit him.~
 == Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Mmh, I definitely trust you, Sandrah, maybe you and your friends may be able to help someone in trouble with the cowled wizards in Athkatla.~
 == CVSandrJ IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ They are not our friends, for sure. Actually we can need any ally against them.~
 == Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ My friend is in his cabin nearby. (Laughs) Maybe he has more success with you, Sandrah, even if he rarely uses more words than I did.~

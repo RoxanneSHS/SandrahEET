@@ -3817,7 +3817,7 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",14)~
 == BSANDR ~And maybe none is needed. You have already learned to open yourself to new possibilities that were unthinkable for you just two moons past. I am not expecting you to propose to me just because you have kissed me. As you know quite well, I am none of those Waterdeep girls you have known. Let us just learn and explore this together.~
 == BAJANT ~But there is responsibility, Sandrah, we cannot just...~
 == BSANDR ~Yes, we can! I am responsible for whatever happens just like you. I am not the little kitten that needs your protection.~
-== BAJANT ~ Persuader, sweet devilish persuader...(He has already leaned over to her for a passionate kiss.)~ DO ~ StartCutSceneMode()
+== BAJANT ~ pursuader, sweet devilish pursuader...(He has already leaned over to her for a passionate kiss.)~ DO ~ StartCutSceneMode()
                 SmallWait(4)
                 FadeToColor([20.0],0)
 		Wait(4)
@@ -4572,7 +4572,7 @@ IF ~ Global("SanHealkal","GLOBAL",11)~ THEN BSANDR SanKhaIntPeaceG
 ~ Khalid, it is reported that there is a kind of mystic grove near to this place, a relict of old druid culture. Does that sound interesting to you?~
 DO ~ SetGlobal("SanHealkal","GLOBAL",12) ~
 == BKhali ~ Sure, especially in your company, Sandrah.~
-== BSANDR ~ Then let us join our forces to persuade Jaheira to come with us and be our druid guide in the matter.~
+== BSANDR ~ Then let us join our forces to pursuade Jaheira to come with us and be our druid guide in the matter.~
 == BKhali ~ Well,eh...if you think so...~
 == BSANDR ~ Jaheira! Come with us, we like to walk over to the old druids place with you.~
 == BJahei ~ Yes, sure.~
@@ -4955,7 +4955,7 @@ IF ~ Global("SanEdLoveBoy","LOCALS",1)~ THEN BSANDR SanEdBetter
 DO~ SetGlobal("SanEdLoveBoy","LOCALS",2) ForceSpell(Player1,CLERIC_HEAL)RealSetGlobalTimer("CowscrollT","GLOBAL",1500)~
 == Bedwin_ ~ It is such a sad sight every time, Sandrah. How can such a lady like you throw herself away at such a simian. Open your eyes and see the possibilities while you are still young and desireable. (Oh, how disireable she is.)~
 == BSANDR ~ Are you talking about such possibilities like red clad maroons who see a pretty love slave in any girl they meet?~
-== Bedwin_ ~ You are lacking the fantasy, Sandrah, to imagine the pleasures and the lust my love slaves experience. Not even to mention the paradise that opens to a true lady of my heart. (If you only knew how true these words are, sweet persuader.)~
+== Bedwin_ ~ You are lacking the fantasy, Sandrah, to imagine the pleasures and the lust my love slaves experience. Not even to mention the paradise that opens to a true lady of my heart. (If you only knew how true these words are, sweet pursuader.)~
 == BSANDR ~ Ha, it is slaves you need indeed, mageling, as the idea of any strong woman more than able to equal you, would make you realise your impotence.~
 == Bedwin_ ~ I have the feeling that such a woman would challenge me to even greater achievements, goals that a licking slave could not provide. (The licking from such a woman would let me forget any love slave I ever enjoyed.) ~
 == BSANDR ~ Dream on, Edwin. And pleasure yourself with that fat waitress we will meet again when <CHARNAME> leads us back to your favourite inn in the meantime.~
@@ -5717,7 +5717,7 @@ IF~ Global("SanSharInt","GLOBAL",2) ~ THEN BSANDR SanShart1
 DO ~ SetGlobal("SanSharInt","GLOBAL",3) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Ha, pussycat! For you, NO man can be too bad to lower yourself down to him. Ah, forget it, I did not say that...~
 == BSANDR ~ What do you mean?~
-== BSHART~ Sandrah, earnestly, I cannot really get to terms with you. You are so strong and confident, but at the same time you think men are the greatest thing on earth. You could have them all and rule them at your liking, but you let them persuade you with their silly sweettalk. They lick you everywhere like dogs in heat - let them lick your boots instead, you deserve it.~
+== BSHART~ Sandrah, earnestly, I cannot really get to terms with you. You are so strong and confident, but at the same time you think men are the greatest thing on earth. You could have them all and rule them at your liking, but you let them pursuade you with their silly sweettalk. They lick you everywhere like dogs in heat - let them lick your boots instead, you deserve it.~
 == BSANDR~ Competition is your everything, Shar-Teel. Or so it seems. One always must rule another, prove to be better, be the winner. Can there be no equality between people?~
 == BSHART~ Hm - you are even stranger than I had imagined. You have no need to lower yourself to anyone, so why do you want to be equal to a standard that is not yours. ~
 = ~ And equality between man and woman - crazy. Equality between a dog and his master? Put your men on the short leash and feel the power running through you, Sandrah. You are the best example that WE are the ruling gender!~
@@ -5957,7 +5957,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR SanShartBN4
-~ While your mouth is occupied by Shar-Teel's busy and demanding tongue, you feels Sandrah's gentle lips taking care of that part of your body that has painfully grown in the presence of the two persuaders. But your wonderful healer knows exactly how to turn that kind of pain into pleasure. ~ DO ~ RestParty() ~
+~ While your mouth is occupied by Shar-Teel's busy and demanding tongue, you feels Sandrah's gentle lips taking care of that part of your body that has painfully grown in the presence of the two pursuaders. But your wonderful healer knows exactly how to turn that kind of pain into pleasure. ~ DO ~ RestParty() ~
 EXIT
 
 CHAIN
@@ -7292,7 +7292,7 @@ END
 
 IF ~~ THEN BEGIN SanHenMis3
 SAY ~ Those bandits that were down at the local mines seem to be part of a larger organisation. However much we appreciate your help with our problem, it seems you have made yourself some mighty enemy there. ~
-= ~ Now, Henning was very proud of his *little red-headed heroine* as he called her everywhere, and so his connection with your group was not a secret. I am afraid his capture is more aimed to harm you and somehow to stop you from further persuing your investigations in this matter.~
+= ~ Now, Henning was very proud of his *little red-headed heroine* as he called her everywhere, and so his connection with your group was not a secret. I am afraid his capture is more aimed to harm you and somehow to stop you from further pursuing your investigations in this matter.~
 IF~~THEN REPLY~ But the result is just the opposite. Now we will increase our efforts to find the people and the organisation that is behind this Iron Shortage. With this we will also find Henning. Imoen, you have my word, we will not stop until you have him safely back in your arms.~ GOTO SanHenMis4
 END
 
