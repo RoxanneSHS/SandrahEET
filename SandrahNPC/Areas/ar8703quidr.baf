@@ -1,6 +1,8 @@
 IF
 InParty("CVSandr")
-Dead("DSShar")
+OR(2)
+GlobalGT("SanDSOTSCUW","GLOBAL",10)
+Dead("DSShar") 
 GlobalLT("Chapter","Global",7)
 Global("SanQuiNash","BG1903",0)
 THEN
