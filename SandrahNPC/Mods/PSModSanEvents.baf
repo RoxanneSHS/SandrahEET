@@ -38,3 +38,14 @@ SetGlobal("SanPsMysPlot","GLOBAL",6)
 StartDialogNoSet("CVSandr")
 END
 
+IF
+Global("PsTeosRabbit","ar0410",2)
+AreaCheck("Ar0410")
+!See([ENEMY])
+!StateCheck(Player1,CD_STATE_NOTVALID)
+CombatCounter(0)
+!StateCheck(Myself,CD_STATE_NOTVALID)
+THEN
+RESPONSE #100
+StartDialogNoSet("CVSandr")
+END

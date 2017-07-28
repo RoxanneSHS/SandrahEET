@@ -6071,9 +6071,9 @@ COMPILE ~SandrahNPC/Mods/PSModtalk.d~
 EXTEND_TOP ~CVSandra.bcs~ ~SandrahNPC/Mods/PSModSanEvents.baf~
 COPY_EXISTING ~PSMeli.cre~ ~override/PSMeli.cre~
               WRITE_ASCII 0x34 ~RTMelis~
-PRINT ~ Planar Sphere Mod detected - Sandrah's Mystra part added~
+PRINT ~ Expanded Mage Stronghold Mod detected - Sandrah's Mystra part added~
 END ELSE BEGIN
-  PRINT ~Planar Sphere Mod not detected - skipped Sandrah's Mystra part~
+  PRINT ~Expanded Mage Stronghold mod not detected - skipped Sandrah's Mystra part~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ACBRE.CRE~ THEN BEGIN

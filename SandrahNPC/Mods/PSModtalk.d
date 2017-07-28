@@ -25,6 +25,25 @@ IF~~THEN BEGIN SanGetPSArtef4
 SAY~ (Mumbles) At least I will be - if that appeases you.~
 IF~~THEN EXIT
 END
+
+IF~Global("PsTeosRabbit","ar0410",2)~THEN BEGIN Rabbit2
+SAY~I can only hope he swallowed the bait, he and his masters.~
+IF~~THEN REPLY~What the hell was that? What is that rabbit really? The future of the Realms and the Multiverse rely on this rabbit? What part do you play in this madness?~GOTO Rabbit3
+END
+
+IF~~THEN BEGIN Rabbit3
+SAY~Teos was right, <CHARNAME>. This rabbit is nothing but a rabbit. And this artifact was just a rabbit cage.~
+=~The cowled wizards surely expected someone else to emerge from the artifact but that is not our problem.~
+IF~~THEN REPLY~And you know what they expected?~GOTO Rabbit4
+IF~~THEN REPLY~And you let me play my part here blindly to fool the cowls?~GOTO Rabbit4
+END
+
+IF~~THEN BEGIN Rabbit4
+SAY~(Smiles enigmaticly.) Does it really matter, my dear. You have what you wanted, do you not? The sphere is now your own and the cowled wizards have found that what they wanted from your cooperation, cannot be gained.~
+=~(She kisses you lightly.) You have won. Mystra has won. We need not to know more.~
+IF~~THEN DO~ SetGlobal("PsTeosRabbit","ar0410",3)~EXIT
+END
+
 END
 
 CHAIN
@@ -59,7 +78,7 @@ DO~ SetGlobal("SanPsMysPlot","GLOBAL",5) ~
 == CVSandrJ~It is a trap - but it challenges Mystra, maybe even endangers her.~
 ==PSElmin~A trap - only for those who blindly stumble into it. It hath been the case before that the celestials have to rely on the fearless deeds of the mortals to persist. Mortals of exclusive potential, I dare say.~
 == CVSandrJ~What advice can you provide us with, father?~
-==PSElmin~Follow only thine fine instinct, Sandrah, loose not thine hope and faith. Much hath to be sacrificed against this foe to gain everything in the end. We play at high stakes but it is us who have the odd card that can change it all. Let thy senses not be fooled.~
+==PSElmin~Follow only thine fine instinct, Sandrah, let thy senses not be fooled.~
 == CVSandrJ~You and Mystra set your trust in me - and I set mine in <CHARNAME>.~
 ==PSElmin~A valid approach. Fair thee well and do not become desperate regardless of what thee think thou encounter.~DO~ ReallyForceSpell(Myself,DRYAD_TELEPORT) ~EXIT
 
