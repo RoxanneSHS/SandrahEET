@@ -2291,7 +2291,7 @@ COPY ~SandrahNPC/Jenlig/cvinvij.spl~ ~override/cvinvij.spl~
      SAY 0x50 @453
 
 COPY ~SandrahNPC/Kit/Meliface.spl~ ~override/Meliface.spl~
-COPY ~SandrahNPC/Kit/Sanlore1.spl~ ~override/Sanlore1.spl~
+COPY ~SandrahNPC/Kit/Sanlor1.spl~ ~override/Sanlor1.spl~
 COPY ~SandrahNPC/Kit/Sanlore2.spl~ ~override/Sanlore2.spl~
 COPY ~SandrahNPC/Kit/DW#Curse.spl~ ~override/DW#Curse.spl~
      
@@ -2407,6 +2407,7 @@ LAF fl#add_kit_ee
 STR_VAR 
 kit_name = CVMystra
 END
+
 
 //DEFINE SPHERE ACCESS______________________________________________________________
 //

@@ -3,6 +3,7 @@ VERSION 2.04
 All Three Parts
 Overall balancing for EET mega-mod installations
 Successful regression testing of previous beta versions
+Many editorial corrections
 
 Tea With Landrin added
 Sandrah/Szass in Neera ToB quest added
