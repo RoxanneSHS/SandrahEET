@@ -405,7 +405,7 @@ IF~~THEN EXIT
 END
 
 IF~Global("JenDeadR","LOCALS",1)~THEN BEGIN FoundR1
-SAY~*Jen'lig inspects the freshly killed body of her kinsmen.*~
+SAY~*Jen'lig inspects the freshly killed body of her kinsman.*~
 =~(Hiss) Dead rider captain of githyanki. Misses red mount. Misses silver sword. Drow killed captain in ambush. ~
 IF~~THEN REPLY~Drow seem to be our common target down here.~GOTO FoundR2
 IF~~THEN REPLY~You will have a good chance to avenge his death, we will clean those tunnels of drow and their allies.~ GOTO FoundR2
