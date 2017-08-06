@@ -156,7 +156,7 @@ IF~Global("JenDurl","LOCALS",1)~ THEN BJenli Bastion
 ~(HISS!) Dwarfling as stupid as Queen in her palace...~
 DO~SetGlobal("JenDurl","LOCALS",2)~
 ==BSandr~You mean, they both try to hide in a fortification defending all intruders in the vain hope to endure eternally.~
-==BJenli~Sandrah has keen eye that good advisor needs. <CHARNAME> lucky to have such one. Queen not listen to advisors, assimilates them to gain their power but thus looses their eyes.~
+==BJenli~Sandrah has keen eye that good advisor needs. <CHARNAME> lucky to have such one. Queen not listen to advisors, assimilates them to gain their power but thus loses their eyes.~
 ==BSandr~Hm, you would like to counsel her at times - for the sake of your race, but it is not possible. When you appear too strong she will try to make use of your power by assimilation.~
 ==BJenli~(Hiss) Jen'lig see and learn much which is good for githyanki. Will be lost if come too close to Queen...will be lost if not shared with Queen and fortress cadre.~
 ==BSandr~Your planewalking will allow you to serve your kin and gain knowledge - and you stay out of Queen Vlaakith's reach at the same time.~
@@ -465,7 +465,7 @@ DO~ SetGlobal("JenFaldoB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300
 ==BJenli~(Hiss) View of manling druids not go farther than can see in their woods full of green trees. Githyanki never destroyed what was never there. From plane travel imported many things to Tu'narath - fungus is only thing that can grow on bodies of dead gods that are our soil.~
 == BFALDO~Even in a desert the Grreat Motherrr is present.~
 ==BJenli~(Hiss) All gods on Astral Plane are dead gods. A dead great mother to grow fungus on is a weak concept, too weak to make a race strong to survive against illithids and githzerai.~
-== BFALDO~You are a race rotting away in yourrr cities without even the option to reverrt to nature again. You pity me as you cannot even loose what our city folks never deserved to know.~EXIT
+== BFALDO~You are a race rotting away in yourrr cities without even the option to reverrt to nature again. You pity me as you cannot even lose what our city folks never deserved to know.~EXIT
 
 CHAIN
 IF~Global("JenDynaB","LOCALS",0) InParty("Dynaheir") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Dynabant

@@ -1640,7 +1640,7 @@ END
 
 //Bodhi' Abduction Attempt + Defeat
 IF~ Global("SanBodAttmpt","AR0800",2) ~ THEN BEGIN SanBodAbdu1
-SAY~ She does not give up easily - but then she has nothing to loose anymore. Do not worry, we will get your beloved back from her, we have seen her weakness already.~
+SAY~ She does not give up easily - but then she has nothing to lose anymore. Do not worry, we will get your beloved back from her, we have seen her weakness already.~
 IF~~ THEN REPLY ~ Her weakness? She has abducted what she assumed was dearest to my heart.~ DO~SetGlobal("SanBodAttmpt","AR0800",3) ~GOTO SanBodAbdu2
 END
 
@@ -2962,7 +2962,7 @@ IF~~THEN REPLY ~Like fear makes us run faster than we otherwise would?~ GOTO Poo
 END
 
 IF~~THEN BEGIN PoolTalk12
-SAY~ A valid example. Now, for a healer that is essential knowledge. Often you loose a patient because he has already given up himself mentally - vice versa you can use the will of the patient to fuel the healing process.~
+SAY~ A valid example. Now, for a healer that is essential knowledge. Often you lose a patient because he has already given up himself mentally - vice versa you can use the will of the patient to fuel the healing process.~
 =~In Shauhana's case the various ingrediences came together, the water of the pool, her will to become hale and her strong belief in Sharkta Fai - and a healer's knowledge and skill to make use of those ingrediences.~
 IF~~THEN REPLY ~So in the end it was you - by knowing all of this and being able to use it. Probably that makes you the best healer I have ever encountered.~ GOTO PoolTalk13
 END
@@ -3331,8 +3331,8 @@ END
 INTERJECT JARLAXLE 40 SanJarNotso2
 == CVSandrJ IF ~InParty("CVSandr") ~ THEN~ Did you really expect this to work with us, Jarlaxle.~
 == JARLAXLE IF ~InParty("CVSandr") ~ THEN~ Sweetest priestess - yes, yes, I see through your disguise - even more alluring in your drow incarnation, why must we always meet under the worst of circumstances?~
-== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",1)~ THEN~ Your choice of men...mh, mh, the looser Drizzt, or this male caricature <CHARNAME>...~
-== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2)~ THEN~ Your choice of bed mates...mh, mh, the looser Drizzt, or now even a female like <CHARNAME>...~
+== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",1)~ THEN~ Your choice of men...mh, mh, the loser Drizzt, or this male caricature <CHARNAME>...~
+== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2)~ THEN~ Your choice of bed mates...mh, mh, the loser Drizzt, or now even a female like <CHARNAME>...~
 == CVSandrJ IF ~InParty("CVSandr") ~ THEN~ ENOUGH! My choice would surely not let me pick a lowly drow bandit and stupid murderer.~
 == JARLAXLE IF ~InParty("CVSandr") ~ THEN~ Your anger only enhances your beauty - and stirs up my lust. I was to let you all depart here as part of my good will and fairness. But now my price has increased - there will be only one way to leave this pocket plane. After a night with you, proud priestess, in which you pay the fare for your companions.~
 == JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2) ~ THEN~ Or maybe your girlfriend would even like to join us in our pleasures...~
@@ -3344,8 +3344,8 @@ END JARLAXLE 41
 INTERJECT JARLAXLE 38 SanJarNotso1
 == CVSandrJ IF ~InParty("CVSandr") ~ THEN~ Did you really expect this to work with us, Jarlaxle.~
 == JARLAXLE IF ~InParty("CVSandr") ~ THEN~ Sweetest priestess - yes, yes, I see through your disguise - even more alluring in your drow incarnation, why must we always meet under the worst of circumstances?~
-== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",1)~ THEN~ Your choice of men...mh, mh, the looser Drizzt, or this male caricature <CHARNAME>...~
-== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2)~ THEN~ Your choice of bed mates...mh, mh, the looser Drizzt, or now even a female like <CHARNAME>...~
+== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",1)~ THEN~ Your choice of men...mh, mh, the loser Drizzt, or this male caricature <CHARNAME>...~
+== JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2)~ THEN~ Your choice of bed mates...mh, mh, the loser Drizzt, or now even a female like <CHARNAME>...~
 == CVSandrJ IF ~InParty("CVSandr") ~ THEN~ ENOUGH! My choice would surely not let me pick a lowly drow bandit and stupid murderer.~
 == JARLAXLE IF ~InParty("CVSandr") ~ THEN~ Your anger only enhances your beauty - and stirs up my lust. I was to let you all depart here as part of my good will and fairness. But now my price has increased - there will be only one way to leave this pocket plane. After a night with you, proud priestess, in which you pay the fare for your companions.~
 == JARLAXLE IF ~InParty("CVSandr") Global("SanRomPath","GLOBAL",2) ~ THEN~ Or maybe your girlfriend would even like to join us in our pleasures...~
@@ -3364,7 +3364,7 @@ END
 //Valygar's Friends
 INTERJECT_COPY_TRANS IF_FILE_EXISTS Valran01 0 Sanderrik
 ==CVSandrJ IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Derrick? The silent elf ranger, who used to watch and never talk?~
-== Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Sandrah!! The girl who always let me loose every thought I had for every word I might have wanted to tell her.~
+== Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Sandrah!! The girl who always let me lose every thought I had for every word I might have wanted to tell her.~
 == CVSandrJ IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ You are with friends up here in the woods? You mentioned someone named Valygar.~
 == Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Obviously you don't know him and were not sent to pursuit him.~
 == Valran01 IF ~InParty("CVSandr")Global("SanValgyR","GLOBAL",0)~ THEN~ Mmh, I definitely trust you, Sandrah, maybe you and your friends may be able to help someone in trouble with the cowled wizards in Athkatla.~

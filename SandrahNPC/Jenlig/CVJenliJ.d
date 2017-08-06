@@ -146,7 +146,7 @@ END
 IF~Global("Goodfight","LOCALS",1)~THEN BEGIN Goodcomm1
 SAY~<CHARNAME> lead good to battle, leads good in battle. Jen'lig say we make progress for both of us this way.~
 IF~~THEN REPLY~You fight quite well yourself.~ GOTO Goodcomm2
-IF~~THEN REPLY~If you'd adhere to my orders more often we would loose less blood.~ GOTO Goodcomm2
+IF~~THEN REPLY~If you'd adhere to my orders more often we would lose less blood.~ GOTO Goodcomm2
 END
 
 IF~~THEN BEGIN Goodcomm2
@@ -427,7 +427,7 @@ SAY~You do and keep...but, <CHARNAME> commander, soon will come those who seek f
 =~(Hiss)...please.~
 IF~~THEN REPLY~*Did she really say *please*? It seems she means it this time*.~DO~SetGlobal("JenSilvwr","GLOBAL",2)~EXIT
 IF~~THEN REPLY~*One look into her black eyes tells you she will not hesitate to take the sword from your dead body if you force her to.*.~DO~SetGlobal("JenSilvwr","GLOBAL",2) ~EXIT
-IF~~THEN REPLY~*The weapon is powerful - but is it worth to oppose the githyanki and to maybe loose a worthy companion for it?*~DO~SetGlobal("JenSilvwr","GLOBAL",2) ~EXIT
+IF~~THEN REPLY~*The weapon is powerful - but is it worth to oppose the githyanki and to maybe lose a worthy companion for it?*~DO~SetGlobal("JenSilvwr","GLOBAL",2) ~EXIT
 END
 
 IF~Global("JenZanHunt","LOCALS",1)~THEN BEGIN BookZen1
