@@ -88,7 +88,7 @@ THEN
 RESPONSE #100
 ClearAllActions()
 SetInterrupt(FALSE)
-AddexperienceParty(60000)
+AddexperienceParty(20000)
 EraseJournalEntry(@469)
 EraseJournalEntry(@468)
 EraseJournalEntry(@349)

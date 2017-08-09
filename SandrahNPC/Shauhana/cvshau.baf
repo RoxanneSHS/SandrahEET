@@ -191,10 +191,10 @@ SetGlobal("SanSharkta","GLOBAL",4)
 END
 
 IF
-Global("SanSharkta","GLOBAL",3) 
-InParty("CVSandr")
 AreaCheck("CVSh10")
 PartyHasItem("CVSHAJWL")
+GlobalLT("SanSharkta","GLOBAL",4) 
+InParty("CVSandr")
 CombatCounter(0)
 THEN
 RESPONSE #100
