@@ -1077,7 +1077,7 @@ END
 
 IF~~  THEN BEGIN SanGhotalBG15
 SAY ~ Maybe they blamed themselves. Even though our books try to make Ghotal look like a kind of half-beast invader, it does not really fit. The way he organised the orc Clans and was about to defeat the southern forces does not sound like he was just a primitive aggressor. And if you look at the rest of the tales from that time, you would get the picture of the southern people expanding their lands largely to the north and to the east.~
-IF ~~ THEN REPLY~ You mean that it was probably rather us who intruded into the lands of the orcs than them attacking. Then Ghotal had united them to defend their territories, their homelands against our expansion. That would explain the neglection of that part in our oh so glorious history.~ DO ~ SetGlobal("SanFDGGoth","GLOBAL",2)~EXIT
+IF ~~ THEN REPLY~ You mean that it was probably rather us who intruded into the lands of the orcs than them attacking. Then Ghotal had united them to defend their territories, their homelands against our expansion. That would explain the neglect of that part in our oh so glorious history.~ DO ~ SetGlobal("SanFDGGoth","GLOBAL",2)~EXIT
 END
 
 IF ~ Global("SanNTFalseWarn","LOCALS",1)~ THEN BEGIN SanWarnNTPb
@@ -3348,7 +3348,7 @@ IF ~~ THEN REPLY ~ Do you mean my love for Xan does not stand in the way between
 END
 
 IF ~~ THEN BEGIN Xanchos4
-SAY ~ My, how could it? Our love has gained another dimension today. Love does not lessen just because you share it with more people - it is an endless resource in itself. Now run and kiss your love-hungry elf before he faints from neglection and we have to carry him.~
+SAY ~ My, how could it? Our love has gained another dimension today. Love does not lessen just because you share it with more people - it is an endless resource in itself. Now run and kiss your love-hungry elf before he faints from neglect and we have to carry him.~
 IF ~~ THEN REPLY ~ Sandrah, you are so wonderful, so different from anyone I know. Probably that is why I love you so.~DO ~ SetGlobal("XanDecide","GLOBAL",4)~EXIT
 END
 

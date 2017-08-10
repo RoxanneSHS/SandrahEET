@@ -4969,7 +4969,7 @@ CHAIN
 IF ~ Global("SanEdLoveBoy","LOCALS",3) ~ THEN BSANDR SanEdAlmDy
 ~ What a terrible whining, Edwin. Will you be dead soon?~
 DO~ SetGlobal("SanEdLoveBoy","LOCALS",4) RealSetGlobalTimer("CowscrollT","GLOBAL",1500)~
-== Bedwin_ ~ I may very well be, given the neglection this group's healer lets me suffer.~
+== Bedwin_ ~ I may very well be, given the neglect this group's healer lets me suffer.~
 == BSANDR ~ Are you hinting at that light scratch you received in the last battle. I do not assume you would give any of your slaves even a minute of rest to care for such a wound.~
 == Bedwin_ ~ Those creatures are made to suffer such, it does not hurt them much. But the fine intellectual genius is very much impeded by such bodily sufferings.~
 == BSANDR ~ I see. That is why you run around in this skirt like a weak little girl and moan when the thorn of a rose pricks your soft skin.~
