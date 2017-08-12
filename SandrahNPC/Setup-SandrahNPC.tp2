@@ -5883,10 +5883,10 @@ EXTEND_TOP
 EXTEND_TOP
 ~ar40pb.BCS~ ~SandrahNPC/Mods/ar40pbtalos.baf~
 COPY_EXISTING ~ntkeelor.cre~ ~override/ntkeelor.cre ~
-     WRITE_ASCII 0x248 ~shout20~
+     WRITE_ASCII 0x248 ~shout20~ #8
 COPY_EXISTING ~ntaschma.cre~ ~override/ntaschma.cre ~
-     WRITE_ASCII 0x248 ~ntashma~
-     WRITE_ASCII 0x2cc ~ntashma~
+     WRITE_ASCII 0x248 ~ntashma~ #8
+     WRITE_ASCII 0x2cc ~ntashma~ #8
 EXTEND_TOP
 ~Ship1.BCS~ ~SandrahNPC/Mods/shiptalos.baf~
 COMPILE ~SandrahNPC/Mods/NTKeelorRevisit.d~
