@@ -1,7 +1,7 @@
 // Northern Tales
 INTERJECT_COPY_TRANS NTOLIVIA 1 Freepotn
 == CVSandrJ IF ~ InParty("CVSandr")!PartyHasItem("POTN45")~ THEN ~ Next time we pass here we should have a potion of freedom with us to give you. Your dream may come true then.~
-== NTOLIVIA IF ~ InParty("CVSandr")!PartyHasItem("POTN45")~ THEN ~ You are kind, fair traveller. Most passing call me crazy and insult me.~ DO~ AddexperienceParty(1200)~
+== NTOLIVIA IF ~ InParty("CVSandr")!PartyHasItem("POTN45")~ THEN ~ You are kind, fair traveller. Most passing call me crazy and insult me.~ DO~ AddexperienceParty(120)~
 END
 
 INTERJECT_COPY_TRANS NTDRAAGI 0 SanBlackHand
