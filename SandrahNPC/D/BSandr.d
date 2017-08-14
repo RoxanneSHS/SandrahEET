@@ -5453,7 +5453,8 @@ IF ~ ~THEN BSANDR HaiPelTown1
 ~ Pelligram grew up in the hassle of Waterdeep, she tutors Haiass in this new situation.~
 END
 ++~ And her mistress surely will do the same for me. (Take her hand and continue alongside of her.)~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~ EXIT
-++~ Only his master is not in need of such support. (Smile at Sandrah and straighten your back, showing her that the big city has no impact on your nerves.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~Global("SanRomPath","Global",1)~THEN REPLY~ Only his master is not in need of such support. (Smile at Sandrah and straighten your back, showing her that the big city has no impact on your nerves.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~Global("SanRomPath","Global",2)~THEN REPLY~ Only his mistress is not in need of such support. (Smile at Sandrah and straighten your back, showing her that the big city has no impact on your nerves.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 
 CHAIN
 IF ~ Global("HaiassPellRom","GLOBAL",7) ~THEN BSANDR HaiPelBath
