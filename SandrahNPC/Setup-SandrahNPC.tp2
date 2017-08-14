@@ -2413,55 +2413,72 @@ END
 //
 INCLUDE ~SandrahNPC/lib/remove_lines.tpa~
 
-
 ACTION_INCLUDE ~%MOD_FOLDER%/lib/fnp_compat.tpa~
+
 COPY_EXISTING ~kitlist.2da~ ~override~
 	COUNT_2DA_ROWS 1 rows
 	READ_2DA_ENTRY (%rows% - 1) 5 1 mod_clab
 BUT_ONLY
+
 LAF ~DEFINE_FNP_KIT_INFO~
   INT_VAR
-	c_cleric 		= 0   // put a '1' next to the kit's class
-	c_acolyte 		= 0
-	c_fighter_cleric = 1   // only choose ONE of these classes!
-	c_cleric_mage	= 0
-	c_cleric_thief 	= 0
-	c_ranger_cleric	= 0
-    c_druid 		= 0
-    c_mystic 		= 0
-    c_occultist 	= 0
-    c_champion 		= 0
-    c_zealot 		= 0
-    c_ranger 		= 0
-    c_scout 		= 0
+	u_leather_armor 	= 1
+	u_chain_armor 		= 1
+	u_plate_armor 		= 1
+	u_club_staff	 	= 0
+	u_hammers	 	= 5
+	u_maces 	 	= 0
+	u_flails 		= 1
+	u_axes 			= 0
+	u_daggers 		= 1
+	u_short_swords		= 1
+	u_long_swords		= 1
+	u_scimitars 		= 0
+	u_katanas 		= 0
+	u_bastard_swords 	= 0
+	u_2hand_swords 		= 2
+	u_halberds 		= 0
+	u_spears 	 	= 1
+	u_darts 		= 0
+	u_slings	 	= 0
+	u_bows 			= 0
+	u_crossbows 		= 0
   STR_VAR
-    clab_name = EVAL ~%mod_clab%~
-	race 			= ~human~  
-	s_Life 			= ~focus~   // for chosen spheres, enter 'focus' or 'major' or 'minor'
-	s_Death 		= ~x~   // (or 'paladin' or 'ranger' for those classes)
+    clab_name 	= EVAL ~%mod_clab%~
+	class 		= ~cleric~	 
+	s_Life 		= ~focus~
+	s_Death 	= ~x~
 	s_Benediction 	= ~major~
 	s_Destruction 	= ~major~
 	s_Protection 	= ~x~
-	s_War 			= ~minor~
+	s_War 		= ~minor~
+	s_Exploration   = ~x~
 	s_Knowledge 	= ~major~
 	s_Deception 	= ~minor~
-	s_Thought 		= ~minor~
-	s_Dread 		= ~x~
-	s_Vigor 		= ~x~
+	s_Thought 	= ~minor~
+	s_Dread 	= ~x~
+	s_Vigor 	= ~x~
 	s_Affliction 	= ~x~
-	s_Animal 		= ~minor~
-	s_Plant 		= ~x~
-	s_Earth 		= ~x~
-	s_Water 		= ~x~
-	s_Air 			= ~major~
-	s_Fire 			= ~minor~
-	s_Light 		= ~x~
-	s_Shadow 		= ~x~
-	s_Magic 		= ~major~
+	s_Animal 	= ~minor~
+	s_Plant 	= ~x~
+	s_Earth 	= ~x~
+	s_Water 	= ~x~
+	s_Air 		= ~major~
+	s_Fire 		= ~minor~
+	s_Light 	= ~x~
+	s_Shadow 	= ~x~
+	s_Magic 	= ~major~
+	s_Perdition     = ~x~
 END
 
+LAM ~READ_FNP_KIT_INFO~
+
 ACTION_IF FILE_EXISTS_IN_GAME ~d5_spheres.d5~ BEGIN
-  INCLUDE ~%MOD_FOLDER%/lib/add_fnp_spheres.tpa~
+  LAM apply_fnp_spheres
+END
+
+ACTION_IF FILE_EXISTS_IN_GAME ~d5_fnp_usability.d5~ BEGIN
+  LAM apply_fnp_usability
 END
 //__________________________________________________________________________________
 
