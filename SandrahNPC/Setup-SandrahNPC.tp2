@@ -6367,14 +6367,6 @@ ACTION_IF FILE_EXISTS_IN_GAME ~DL#BWN.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/POBSan.d~
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~1XAEONB.dlg~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/AeonSanBG2.d~
-EXTEND_TOP ~1XAEON01.bcs~ ~SandrahNPC/Mods/AeonSanBG2.baf~
-PRINT ~ Aeon NPC detected - Sandrah integrated~
-END ELSE BEGIN
-  PRINT ~ Aeon NPC not detected - skipped~
-END*/
-
 ACTION_IF FILE_EXISTS_IN_GAME ~MWArn.cre~ THEN BEGIN
 EXTEND_TOP
 ~MWarsc.bcs~ ~SandrahNPC/Mods/Arienaheal.baf~
@@ -6640,18 +6632,6 @@ PRINT ~ Sheena detected - Sandrah part added~
 END ELSE BEGIN
   PRINT ~Sheena not detected - skipped ~
 END  
-
-/*ACTION_IF FILE_EXISTS_IN_GAME ~Vxvar01.cre~ THEN BEGIN
-EXTEND_TOP
-~VxVar.bcs~ ~SandrahNPC/Mods/VarshHeal.baf~
-COMPILE ~SandrahNPC/Mods/VarshSanBG2.d~
-COPY ~SandrahNPC\CRE/CVVaBeho.CRE~ ~override\CVVaBeho.CRE~
-SAY NAME1 @812
-SAY NAME2 @812
-PRINT ~ Varshoon detected - Sandrah Illithid added~
-END ELSE BEGIN
-  PRINT ~Varshoon not detected - skipped ~
-END*/
 
 ACTION_IF FILE_EXISTS_IN_GAME ~j#klsy13.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/KelseySanBG2.d~ 
@@ -7014,24 +6994,6 @@ EXTEND_TOP
 ~dd5000.bcs~ ~SandrahNPC/Mods/dd5000reward.baf~
 END
 
-/*ACTION_IF FILE_EXISTS_IN_GAME ~V#1Whib.dlg~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/WhiteSanInt.d~
-EXTEND_BOTTOM
-~V#1Whi.bcs~ ~SandrahNPC/Mods/WhiteHeal.baf~
-COPY_EXISTING ~V#1SN.spl~ ~override/V#1SN2.spl~
- WRITE_ASCII 0xae ~V#1sum2~
-COPY_EXISTING ~V#1SUM.eff~ ~override/V#1SUM2.eff~
- WRITE_ASCII 0x30 ~V#1SN2~
-COPY_EXISTING ~V#1SN.cre~ ~override/V#1SN2.cre~
- WRITE_SHORT 0x24 ~47~
- WRITE_SHORT 0x26 ~47~ 
- SAY NAME1 @954
- SAY NAME2 @954
-PRINT ~ White NPC detected - Sandrah crossmod added~
-END ELSE BEGIN
-  PRINT ~White NPC not detected - skipped Sandrah addition~
-END*/
-
 ACTION_IF FILE_EXISTS_IN_GAME ~GV#VYND.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/VyndSandrah.d~
 EXTEND_TOP
@@ -7080,14 +7042,6 @@ PRINT ~ Sirene NPC detected - added Sandrah relationship~
 END ELSE BEGIN
     PRINT ~ Sirene NPC not detected - skipped Sandrah relationship~
 END
-
-/*ACTION_IF FILE_EXISTS_IN_GAME ~L#Fou.cre~ THEN BEGIN
-COMPILE ~SandrahNPC/mods/FoundlingSan.d~
-EXTEND_TOP ~L#Fou.bcs~ ~SandrahNPC/mods/FoundlingSan.baf~
-PRINT ~ Foundling detected - added Two Weaves content~
-END ELSE BEGIN
-    PRINT ~ Foundling not detected - skipped Two Weaves content~
-END*/
 
 ACTION_IF FILE_EXISTS_IN_GAME ~a7afaaq.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/mods/AfaaqSan.d~
