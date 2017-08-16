@@ -5,6 +5,10 @@ Overall balancing for EET mega-mod installations
 Successful regression testing of previous beta versions
 Many editorial corrections
 
+Removed croosmod White NPC
+Removed croosmod Foundling NPC
+Removed croosmod Varshoon NPC
+Removed croosmod Aeon NPC
 Tea With Landrin added
 Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
