@@ -6450,15 +6450,6 @@ END ELSE BEGIN
   PRINT ~Solaufein not detected - skipped ~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~BE3Fade.dlg~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/FadeSoASan.d~
-EXTEND_TOP
-~E3Fade.bcs~ ~SandrahNPC/Mods/FadeSoASan.baf~
-PRINT ~ Fade detected - Sandrah part added~
-END ELSE BEGIN
-  PRINT ~Fade not detected - skipped ~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~CMGMiri.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/MiriamSan.d~
 EXTEND_TOP
