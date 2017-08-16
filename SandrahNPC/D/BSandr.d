@@ -312,7 +312,7 @@ END
 
 IF~ Global("SanSuBH","GLOBAL",34)~ THEN BEGIN ZombRet1
 SAY ~ (Sandrah has studied the nautical books you have gathered for some time, changing from one to the other and back again, now and then mumbling to herself.)~
-IF~~ THEN REPLY~ Well, councelor? Any ideas or insights?~ DO ~ SetGlobal("SanSuBH","GLOBAL",35) ~ GOTO ZombRet2
+IF~~ THEN REPLY~ Well, counselor? Any ideas or insights?~ DO ~ SetGlobal("SanSuBH","GLOBAL",35) ~ GOTO ZombRet2
 END
 
 IF~~ THEN BEGIN ZombRet2
