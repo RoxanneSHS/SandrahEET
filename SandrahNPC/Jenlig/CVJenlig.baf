@@ -691,7 +691,7 @@ CombatCounter(0)
 Delay(12)
 THEN
 RESPONSE #100
-EquipItem("CVJensw")
+XEquipItem("CVJensw", Myself, SLOT_WEAPON, EQUIP)
 END
 
 IF
