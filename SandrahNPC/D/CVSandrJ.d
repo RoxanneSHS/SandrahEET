@@ -6104,3 +6104,22 @@ EXTEND_BOTTOM Tenya 0
 IF~ GlobalGT("Umbowl","GLOBAL",1) PartyHasItem("MISC53")~THEN REPLY~With Mystra's help I came into possession of a bowl that was taken from your mother. Perhaps now she will rest.~GOTO 11
 END
 
+INTERJECT Alyth 2 SanElfGhost
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~A ghostly mourner for another ghost?~
+== IF_FILE_EXISTS BSUFINCH  IF~ InParty("CVSandr") InParty("Sufinch") Global("SuFinchElfsong","GLOBAL",0)~ THEN ~An interesting story he tells, though incomplete. I shall make a note of it! ~DO~SetGlobal("SuFinchElfsong","GLOBAL",1)~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~Does she ever mention a location or event in her songs, somewhere her lost lover might have gone to?~
+==Alyth IF ~ InParty("CVSandr")~ THEN ~Hm, nothing that makes much sense, a dragon castle where they fight evil. No one knows where that might be or when that may have happened.~ 
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~Dragonspear Castle? A place full of lost souls...~
+END
+++~(Ignore her.)~ + SanElfGhost2
+++~(Raise an eyebrow questioningly.)~ + SanElfGhost2
+
+CHAIN
+IF~~THEN Alyth SanElfGhost2
+~Yes, lady, I heard that name a couple of times in her moans.~
+== CVSandrJ ~Several attempts were made in the past to drive whatever evil resides in Dragonspear Castle out of there.~
+=~Many brave men were lost and it is said that their souls are captured there and yearn for deliverance.~
+==Alyth~You mean that our ghost elf's lover might've been one of them?~
+== CVSandrJ ~I passed near Dragonspear Castle on my journey from Waterdeep to Candlekeep before I met <CHARNAME>. There was a group who called themselves *crusaders*, led by a charismatic female paladin. They were on their way to that castle. They talked about helping the lost souls. If they really had some success, this may explain why the singing has stopped.~
+==Alyth~The lovers finally united in death? How romantic...but bad for our business.~
+== CVSandrJ ~Have some bard make a tale out of it and it may turn out quite profitable.~EXIT
