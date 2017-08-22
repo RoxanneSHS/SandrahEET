@@ -22,7 +22,7 @@ IF ~ !PartyHasItem("CVFARKPA") ~ THEN REPLY ~ You heard my cleric already. The p
 
 CHAIN
 IF ~~ THEN CVMONTE BookHE2
-~ The papers - finally. So I give you my fond *adieu*. My friends here will make sure you understand that it is of no use persuing this hunt any further.~
+~ The papers - finally. So I give you my fond *adieu*. My friends here will make sure you understand that it is of no use pursuing this hunt any further.~
 DO ~ SetGlobal("monteedebut","LOCALS",3)~ EXIT
 
 
@@ -33,5 +33,5 @@ DO~  SetGlobal("monteedebut","LOCALS",2) ~EXIT
 
 CHAIN
 IF ~~ THEN CVMONTE BookHE4
-~ The papers - I have screened you. You bloody fools, you do not even know what you have thrown so carelessly away. So I give you my fond *adieu*. My friends here will make sure you understand that it is of no use persuing this hunt any further.~
+~ The papers - I have screened you. You bloody fools, you do not even know what you have thrown so carelessly away. So I give you my fond *adieu*. My friends here will make sure you understand that it is of no use pursuing this hunt any further.~
 DO ~ SetGlobal("monteedebut","LOCALS",3)~ EXIT
