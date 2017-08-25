@@ -4,25 +4,29 @@
 @03 = ~Sandrah's Ring
 
 This ring was given to Sandrah on her fifteenth birthday by her father in Waterdeep. It has a nearly unreadable inscription that could say: From your loving father E. to Sandrah, my daughter.
-Sandrah will never part from this gift. ~
+Sandrah will never part from this gift. 
+
+Equipped Abilities: Magic Resistance: +10%
+~
 @04 = ~Sandrah's Amulet ~
 @05 = ~Sandrah's Amulet ~
 @06 = ~Sandrah's Amulet
 
 The amulet belonged to Sandrah's mother who died giving birth to another child. It seems to have great powers granted from Mystra herself.
-   STATISTICS: unknown
 
-Equipped Abilities: unknown~
+Equipped Abilities: Increased casting speed +1~
 @07 = ~Sandrah was born in Waterdeep as the daughter of one of the most famous mages in Faerun. Her mother died when she was one year old when giving birth to another child, whom she never got to know. Her father taught her many of the secrets of Mystra and the lore of the realms when he was at home - which was not often the case. Sandrah has inherited the wandering ways of her father. Currently she follows a vision she saw when secretly looking into her father's crystal shard - and also a mysterious dream that urges her to search for her mother's second child of whom nobody around her dared to speak. ~
 @08 = ~History of Faerun ~
 @09 = ~History of Faerun ~
 @10 = ~Sandrah's personal copy of Elminster's rare History of Faerun
 (not to be confused with the ever present History of the North). This rare tome contains the comprehensive knowledge of items and places that the famous Elminster has visited and documented - which is indeed almost all of Faerun. Sandrah studies the worn book whenever time allows during your travels.
 
-The book can identify items provided you give Sandrah enough time to look them up.
-(To identify an item, it must be in Sandrah's inventory - first initiate the book in her inventory, see the dialogue, second right click the item to be investigated.)
+Sandrah's personal copy has the famous author's own signature inside of the front page : " To my d..(tea stain)..r Sandrah with love. Elminster", which makes it an even rarer item.
 
-Sandrah's personal copy has the famous author's own signature inside of the front page : " To my d..(tea stain)..r Sandrah with love. Elminster", which makes it an even rarer item.~
+STATISTICS:
+Special: The book can identify items provided you give Sandrah enough time to look them up.
+(To identify an item, it must be in Sandrah's inventory - first initiate the book in her inventory, see the dialogue, second right click the item to be investigated.)
+~
 @011 = ~Find the Petrified Priestess
 
 Sandrah has told me today of a vision from her father's crystal shard. We must find and free a priestess from the North that has been trapped by a mage with a flesh to stone spell. We must find the reverse spell scroll at a temple and then detect the woman's statue in some festival or market area. ~
@@ -174,7 +178,10 @@ A nice memory of a caring father, that brings a smile to Sandrah's eye.~
 @85 = ~Sandrah's Boots (Waterdeep Style)~
 @86 = ~Sandrah's Boots (Waterdeep Style)
 
-Handmade boots of finest leather made in the latest fashion of the City of Splendor. They add to Sandrah's sex appeal and charisma - (as if this was needed).~
+Handmade boots of finest leather made in the latest fashion of the City of Splendor. They add to Sandrah's sex appeal and charisma - (as if this was needed).
+
+Equipped Abilities: Charisma Bonus +1
+~
 @87 = ~Portrait of a Lady (by Leonardo)~
 @88 = ~Portrait of Sandrah's Mother~
 @89 = ~Portrait of Sandrah's Mother
@@ -300,13 +307,19 @@ The renegade drow Viconia gave a strange piece of a cloth to Sandrah today, indi
 @150 = ~Mystra's Hammer ~
 @151 = ~Mystra's Hammer
 
-Sandrah received this enchanted hammer when she started her studies as a cleric. Its abilities cannot be detected by anyone not blessed by Mystra.~
+Sandrah received this enchanted hammer when she started her studies as a cleric. Its abilities cannot be detected by anyone not blessed by Mystra.
+
+Equipped Abilities: Special, Sandrah can assimilate a magical ability from certain enemies slain by the hammer.
+~
 @152 = ~Mystic Armour ~
 @153 = ~Sandrah's Chainmail~
 @154 = ~Sandrah's Chainmail
 
 Can a chainmail be a fashionable item? This one can. 
-It is a powerful armour and at the same time it clings to Sandrah's body emphasising every female aspect of the young cleric's figure. The decoration is immune to any battle demolitions and is a work of art in the timeless style of Waterdeep.~
+It is a powerful armour and at the same time it clings to Sandrah's body emphasising every female aspect of the young cleric's figure. The decoration is immune to any battle demolitions and is a work of art in the timeless style of Waterdeep.
+
+Equipped Abilities: Remove Fear
+~
 @155 = ~        A Strange Piece of Cloth - A Visitor
 
      Alarming things have happened. We seem to have stirred our faceless 
@@ -330,7 +343,10 @@ It is a powerful armour and at the same time it clings to Sandrah's body emphasi
 @160 = ~Mystra's Blessed Hammer ~
 @161 = ~Mystra's Blessed Hammer
 
-Sandrah received this blessed hammer after she had travelled with your group throughout the Sword Coast, gaining a high reputation for fighting for the good. Elminster himself was the messenger to deliver the gift from the goddess Mystra.~
+Sandrah received this blessed hammer after she had travelled with your group throughout the Sword Coast, gaining a high reputation for fighting for the good. Elminster himself was the messenger to deliver the gift from the goddess Mystra.
+
+Equipped Abilities: Special, Sandrah can assimilate a magical ability from certain enemies slain by the hammer.
+~
 @162 = ~BGT required for installation!~
 @163 = ~Without Sandrah and her knowledge of the old map you cannot continue on to Waterdeep.~
 @164 = ~ North to Waterdeep 1 hour
