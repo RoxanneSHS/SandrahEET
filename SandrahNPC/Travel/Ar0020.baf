@@ -35,3 +35,11 @@ SetGlobal("CVColleEnc","GLOBAL",1)
 RealSetGlobalTimer("CVColleAgain","GLOBAL",600)
 END
 
+IF
+Global("CbPartyGotThisFar","AR0020",1)
+THEN 
+RESPONSE #100
+SetGlobal("CbPartyGotThisFar","AR0020",2)
+HideAreaOnMap("ar3000")
+END
+
