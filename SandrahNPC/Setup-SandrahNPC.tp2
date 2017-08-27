@@ -7815,6 +7815,13 @@ END ELSE BEGIN
   PRINT ~Tashia ToB not detected - skipped Sandrah part~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~BM#Amb25.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/ToB/AmberToB.d~
+PRINT ~ Amber ToB detected - installed Sandrah crossmod~
+END ELSE BEGIN
+  PRINT ~Amber ToB not detected - skipped Sandrah part~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~dw#melis.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/ToB/WheelsSanappend.d~  
 END
