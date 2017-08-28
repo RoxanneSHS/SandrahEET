@@ -5558,7 +5558,7 @@ I am still trying to find adequate words...it is not easy. ~
 = ~ Mmh. You are by far the most beautiful woman I ever encountered, mylady.~
 ==BSANDR ~ Sorry, Garrick, a bard's compliment of this kind needs to be translated as *you do not directly hurt my eyes*.~
 == BGARRI ~ Is that the impression you have of us bards? Everything I say would be largely exaggerated? Then I am stuck, what can I say to make me believe I tell the truth?~
-==BSANDR ~ That is easy, my sweet bard. Stop talking and prove what you mean by actions instead.~
+==BSANDR ~ That is easy, sweet bard. Stop talking and prove what you mean by actions instead.~
 == BGARRI ~ I can tell we're going to get along ... ah, brilliantly, Sandrah...Oh, well, uh... I mean, we could at least give it a go. Ah well... ~
 = ~ (The rest trails off into the distance, as Garrick and Sandrah have fallen far behind the group...)~
 EXIT
@@ -5584,7 +5584,7 @@ DO~ SetGlobal("SanGarr1","GLOBAL",6) RealSetGlobalTimer("SangarLeDel","LOCALS",3
 == BGARRI ~ I, em, I thought I would leave my hero epos aside for a while and concentrate on another subject instead.~
 ==BSANDR ~ Have you lost your interest in your heroine then?~
 == BGARRI ~ Oh, no, not at all. I-I how shall I say, I think the heroic aspects of my main character are for the general public. I start to get, uhm, more interested in the more personal sides - the more romantic aspects of the character, you see...~
-==BSANDR ~ So you will become a balladeer of lovesongs, my lovely artist?~
+==BSANDR ~ So you will become a balladeer of lovesongs, lovely artist?~
 == BGARRI ~ It is my heart, dear Sandrah, that sings these songs, no longer my art. Listen closely...~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
@@ -5622,7 +5622,7 @@ IF ~ Global("SanGarQCh","GLOBAL",1)~ THEN BSANDR SanGarCh
 ~ Garrick, you look absolutely fantastic in that chainmail. It is like it was made especially for you.~
 DO ~ SetGlobal("SanGarQCh","GLOBAL",2)~
 == BGARRI ~ Oh, Sandrah, (blush) you really, ehm, you like how I look in this?~
-==BSANDR ~ My lovely bard, you have convinced me today that you differ from the average bard I have encountered so far. There is more than sweet words in you as you have proven with your brave standing against Myr'Cutio. You really deserve this chainmail - and the admiration of the women you attract with it.~
+==BSANDR ~ Garrick, you have convinced me today that you differ from the average bard I have encountered so far. There is more than sweet words in you as you have proven with your brave standing against Myr'Cutio. You really deserve this chainmail - and the admiration of the women you attract with it.~
 == BGARRI ~  Does that, eh, include the admiration of a certain lady who is more important than any of those wenches that fall for fanciful clad bards? I, eh-, I mean one that cannot be blinded by a shining armour, but sees directly to the heart that pulses beneath.~
 ==BSANDR ~ You mean a heart that pulses a little bit quicker every time the said bard glimpses the lady in question here?~
 == BGARRI ~ It is about to burst through this strong armour to jump directly into your hands, mylady...~
@@ -5649,13 +5649,13 @@ CHAIN
 IF ~ Global("SanGarr1","GLOBAL",7)~ THEN BSANDR SanGarle
 ~ Garrick, my dear, good news or bad news?.~
 DO ~ SetGlobal("SanGarr1","GLOBAL",8)~
-== BGARRI ~ (Garrick holds the message he had received with slight disbelief.) Probably both, sweetest heroine. Good news for the aspiring bard and not so good for the man in love.~
+== BGARRI ~ (Garrick holds the message he had received with slight disbelief.) Probably both, my heroine. Good news for the aspiring bard and not so good for the man in love.~
 ==BSANDR ~ It sounds like they offer you an engagement in your profession but of course you cannot travel with us during that time.~
-== BGARRI ~ Exactly that, my sweetest inspiration...and you partly have to blame yourself for that as it was the song about my favourite heroine that is responsible for the proposed contract.~
+== BGARRI ~ Exactly that, my inspiration...and you partly have to blame yourself for that as it was the song about my favourite heroine that is responsible for the proposed contract.~
 ==BSANDR ~ Where would you have to go?~
 == BGARRI ~ The famous Elfsong in Baldur's Gate, I still cannot believe it. That man scribbling notes in that last tavern all the time while I sang just for you, Sandrah...~
 ==BSANDR ~I remember, we made some private jokes about him and his greasy notebook...~
-== BGARRI ~ Looks like he was a talent scout from the Gate and he was fascinated by my performance, although it was solely aimed at you, my heroine.~
+== BGARRI ~ Looks like he was a talent scout from the Gate and he was fascinated by my performance, although it was solely aimed at you.~
 ==BSANDR ~(Kisses the bard) You were excellent that night...eh...I mean that evening...I mean your performance...eh...your artistic performance, of course.~
 == BGARRI ~(Smiles) You enjoyed the other part of my art after the song just as well - you did not hide it.~
 ==BSANDR ~(Sighs) When do you need to go - and for how long?~
