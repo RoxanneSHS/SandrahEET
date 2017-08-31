@@ -21,8 +21,6 @@ THEN
 RESPONSE #100
 CreateCreature("CVTALOW1",[961.439],0)
 CreateCreature("CVTALOW1",[1222.597],4)
-CreateCreature("CVTALOW1",[1197.826],3)
-CreateCreature("CVTALOW1",[1161.836],2)
 SetGlobal("Enforce","cvtal1",1)
 END
 
