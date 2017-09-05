@@ -90,7 +90,7 @@ END
 
 CHAIN
 IF WEIGHT #-7~Global("CVLotPlot","GLOBAL",9)~THEN BSandr CVLotwy9
-~(Sandrah quickly mixes the other ingrediences to the poison and shakes the corked bottle a few times. You see the liquid change its colour from the poisonous green to transparent.)~
+~(Sandrah expertly mixes the other ingrediences to the poison and shakes the corked bottle a few times. You see the liquid change its colour from the poisonous green to transparent.)~
 =~The only way to convince you all that this is medicine is by doing this...~
 DO~SetGlobal("CVLotPlot","GLOBAL",10) SetGlobal("PartyCured","GLOBAL",1)~
 =~(She takes and swallows a mouthful of the liquid.)~
