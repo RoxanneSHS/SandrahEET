@@ -138,7 +138,7 @@ INTERJECT_COPY_TRANS BW05TERG 26 Acaspy2
 == CVSandrJ IF ~ InParty("CVSandr") PartyHasItem("SANAKAK") ~ THEN ~ There may exist another possibility to get to the source of this evil.~
 == BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ I have noticed you before, little priestess, but we were too busy to rightly introduce ourselves. You are Elminster's child if I am not mistaken.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Yes, I am Sandrah. You must know that I have been to Legencase and the Academy already two summers passed.~
-== BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ Really? Pray tell us more about that. Let us see if we really have a chance to persue this evil further.~
+== BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ Really? Pray tell us more about that. Let us see if we really have a chance to pursue this evil further.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ The Academy was once renowned for its excellent education in the magic arts, especially focussed on priests and healing spells. Some summers ago however the current head mistress, Monica, whom we met briefly inside this trap, took over responsibility. Alarming news reached my father's ear, there was talk about a shift in focus to educate battle mages and the like now.~
 = ~ One source provided us with the report that the Academy had even provided a batallion of battle mages to a local war in Suzail. After a long discussion my father finally agreed to send me to the Academy disguised as a novice. He provided me with an emergency spell for escape in case of danger and an endless fatherly advice of how to tread careful as a spy.~
 == BIMOEN IF ~InParty("Imoen2") InParty("CVSandr")~ THEN ~ Oh, how thrilling, a real spy! How I envy you, Sandrah!~
