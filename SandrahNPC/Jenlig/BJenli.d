@@ -88,7 +88,7 @@ DO~SetGlobal("SanHealJen","GLOBAL",9)ActionOverride("CVSandr",AddSpecialAbility(
 ==BJenli~(Hiss) Vlaakith not Gith even when try to be. Queen too much alone to take councelling for what is best for githyanki race.~
 ==BSandr~You risk to make your own decisions in that respect, even if those may not be equivalent to those of Vlaakith?~
 ==BJenli~Jen'lig always true to spirit of Gith, always loyal to githyanki...loyal to Queen if possible without breaking first rules.~
-==BSandr~A dangerous path - but that of true hero. I only doubt that your own kin would understand all of that well.~
+==BSandr~A dangerous path - but that of true heroine. I only doubt that your own kin would understand all of that well.~
 ==BJenli~(Hiss) Jen'lig had to come to prime and distance from Astral Plane to understand. Must teach others by example. Githyanki ignorance is maybe more dangerous enemy for own minds than even mind flayer tentacles.~ EXIT
 
 CHAIN
