@@ -6732,7 +6732,7 @@ CHAIN
 IF ~ Global("DYBant","GLOBAL",22)~ THEN BSANDR SanDyAscens
 ~ (It has become a familiar and almost soothing picture for you to see the two women you so dearly love sitting together in their studies of books and scrolls.)~
 DO ~ SetGlobal("DYBant","GLOBAL",23) RealSetGlobalTimer("DynBantT","GLOBAL",1200)~
-== BDYNAH~ Arest thou glad to have found the right Bhaalspawn in <CHARNAME>, my love? ~
+== BDYNAH~ Arest thou glad to have found the right Bhaalspawn in <CHARNAME>? ~
 == BSANDR ~ This is a very strange question, Dynaheir, as I had never any idea of what I was really seeking in the beginning. And I am still not sure I have found all the answers that are out there.~
 == BDYNAH~ 'tis that thou doth not believe much in fate and a future that is already written as we go through to it. If thou wouldst found the Bhaalspawn of thy mother to be the evil one thou wouldst have attempted to change fate. Thus is your nature.~
 == BSANDR ~ Yes, I admit it probably is. It is my relation to my goddess and all her companions that this plane here is our plane to shape and to dwell on. They may guide and advise us but must take into account our spirit of rebellion against an unjust fate dealt out to us.~
@@ -6743,14 +6743,14 @@ DO ~ SetGlobal("DYBant","GLOBAL",23) RealSetGlobalTimer("DynBantT","GLOBAL",1200
 == BDYNAH~ Thou art a factor that is not to be found in the scrolls and prophesies I have studied so intensly for long and which made me to venture to the Sword Coast on this quest. Mayhaps 'tis this element that will make the difference in the end.~
 == BSANDR ~ There is some hand I feel in this, Dynaheir, of which I always thought it was my goddess, but I may err. I had dreams that made me leave Candlekeep, and we have encountered strange coincidences that let me find the truth about my mother's spawn and others of the blood as if guided to it.~
 == BDYNAH~ Something is waiting for you there in the unwritten part of the future, Sandrah, as sure as my fate is waiting for me the way it is written.~
-== BSANDR ~ Beloved Hathran, I have respect for your faith but I built mine on the lack of logic in your reasoning. If my future is unwritten and in my hands, and if <CHARNAME>'s way with Bhaals blood in <PRO_HIMHER> is still chosen by no one else but <CHARNAME> - then why should your fate be sealed?~
+== BSANDR ~ My Hathran, I have respect for your faith but I built mine on the lack of logic in your reasoning. If my future is unwritten and in my hands, and if <CHARNAME>'s way with Bhaals blood in <PRO_HIMHER> is still chosen by no one else but <CHARNAME> - then why should your fate be sealed?~
 == BDYNAH ~ Thou wouldst fight against a pantheon of gods to make it undone, I know for sure - and maybe you will, granddaughter of Midnight.~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
 CHAIN
 IF ~Global("SanDyUnTo","LOCALS",1) ~ THEN BSANDR SanDyUnTo
 ~ (Sandrah, who has remained silent during the last attempt of Winski on Dynaheir has now taken her friend's hand in the way she has so often taken yours to provide you with confidence and strength.)~
 DO~ SetGlobal("SanDyUnTo","LOCALS",2)~
-== BDYNAH~ Thou dost not believe in the fate that I saw lie ahead of me, my love?~
+== BDYNAH~ Thou dost not believe in the fate that I saw lie ahead of me, Sandrah?~
 == BSANDR ~ I believe more than ever in our ability to change a fate that may be drafted only but not put into stone until the tiny moment where the future becomes the present. ~
 == BDYNAH IF ~ InParty("Minsc") ~ THEN ~ We will know soon, Sandrah. I hope thou art the one who is right this time. Shouldst it not be so it will be thyne task alone to care for Minsc and <CHARNAME>.~
 == BDYNAH IF ~ !InParty("Minsc") ~ THEN ~ We will know soon, Sandrah. I hope thou art the one who is right this time. Shouldst it not be so it will be thyne task alone to care for <CHARNAME>.~
@@ -6777,7 +6777,7 @@ DO~ SetGlobal("X#MinscBoo","GLOBAL",5)~
 == BSANDR ~ Yes.~
 == BDYNAH  ~ Kwowing and accepting that will spare thee the hurt to come.~
 == BSANDR ~ I accept that as the price for the time that is granted to us meanwhile. Your brother is a pure and gentle soul like rarely any other I have ever encountered. Just like his sister.~
-== BDYNAH~ (Dynaheir embraces and kisses the younger cleric gently and then leads her towards her bedroll.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
+== BDYNAH~ (Dynaheir embraces and kisses the younger cleric gently.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
 
 // Drizzt
