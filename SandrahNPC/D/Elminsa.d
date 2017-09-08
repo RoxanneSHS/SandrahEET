@@ -310,8 +310,8 @@ CHAIN
 IF~ Global("SanAcadMission","GLOBAL",3)~ THEN Elminsa SendAcad
 ~ A good day to thee, famous heroes. A welcome sight for an old man - and a father. ~
 DO ~ SetGlobal("SanAcadMission","GLOBAL",4)~
-== BSANDR IF ~ AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you, father, about the reason we have come.~ DO ~ AddexperienceParty(11000)~
-== BSANDR IF ~ !AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you faster than we could make it to Waterdeep ourselves, father.~ DO ~ AddexperienceParty(6000)~
+== BSANDR IF ~ AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you, father, about the reason we have come.~ DO ~ AddexperienceParty(1100)~
+== BSANDR IF ~ !AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you faster than we could make it to Waterdeep ourselves, father.~ DO ~ AddexperienceParty(600)~
 == Elminsa ~ Good lore indeed but also a difficult situation arising from that. With thy friends help thou hath finally been able to give that hateful Academy a blow it long has deserved. 'tis I sense the presence of an artifact that wouldst allow us to take that blow even deeper into the heart of the enemy.~
 == BSANDR ~ I sensed myself, that the fibula we have gained may be the entry into the Academy itself. A chance like we will not get easily again.~
 == Elminsa ~ (Elminster strokes his beard in deep thought.) True, true. But knowest, Sandrah, 'tis not anonymity that guards thee this time. The enemy will know and attack thee on sight.~
