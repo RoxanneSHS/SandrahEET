@@ -161,12 +161,12 @@ END
 
 IF ~~ THEN BEGIN  tergMoniAka2
 SAY ~ Splendid. Did you find out what was behind it?~
-IF~~THEN REPLY ~ We found parts of a journal kept by the high sorceresses of Legencase. They had a plan to replace major figures in Baldur's Gate, ultimately the Dukes themselves.~ DO ~ TakePartyItem("SanAkJo")AddexperienceParty(32500) ~  GOTO tergMoniAka4
+IF~~THEN REPLY ~ We found parts of a journal kept by the high sorceresses of Legencase. They had a plan to replace major figures in Baldur's Gate, ultimately the Dukes themselves.~ DO ~ TakePartyItem("SanAkJo")AddexperienceParty(3500) ~  GOTO tergMoniAka4
 END
 
 IF ~~ THEN BEGIN  tergMoniAka3
 SAY ~ Splendid. Did you face the head mistress herself? Was she involved in the plot?~
-IF~~THEN REPLY ~ The academy and its head mistress Monica are destroyed. We found parts of a journal kept by the high sorceresses of Legencase. They had a plan to replace major figures in Baldur's Gate, ultimately the Dukes themselves.~ DO ~ TakePartyItem("SanAkJo") AddexperienceParty(32500) ~ GOTO tergMoniAka4
+IF~~THEN REPLY ~ The academy and its head mistress Monica are destroyed. We found parts of a journal kept by the high sorceresses of Legencase. They had a plan to replace major figures in Baldur's Gate, ultimately the Dukes themselves.~ DO ~ TakePartyItem("SanAkJo") AddexperienceParty(3500) ~ GOTO tergMoniAka4
 END
 
 IF ~~ THEN BEGIN  tergMoniAka4
