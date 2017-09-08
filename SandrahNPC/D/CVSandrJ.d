@@ -319,6 +319,7 @@ END
 
 IF~~ THEN BEGIN SanDungFi5
 SAY ~ I try to do the best that I can, which does not mean I doubt your own abilities. But still someone as hunted and targeted like you can need any additional protection <PRO_HESHE> can get.~
+IF ~~THEN REPLY~ Yours is most welcome.~EXIT
 IF ~~THEN REPLY~ Yours is most welcome, my love. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF ~~THEN REPLY~ You can however protect me and yourself much better if we both had all our hands free and on our weapons.~ EXIT
 END
@@ -524,7 +525,7 @@ IF ~~ THEN REPLY ~ There are islands like that in the south of the Sword Coast. 
 END
 
 IF ~ ~ THEN BEGIN SanVault3
-SAY ~ I have no better clue than that, my lovely detective. We could check it, if our journeys ever lead us close to the place again.~
+SAY ~ I have no better clue than that, my clever detective. We could check it, if our journeys ever lead us close to the place again.~
 IF~~ THEN DO ~ SetGlobal("PriestGondVault","GLOBAL",3)~ EXIT
 END
 
@@ -762,7 +763,7 @@ END
 
 IF ~ Global("SanDSOTSCUW","GLOBAL",13)~ THEN BEGIN SwCoaUW60
 SAY ~ Now comes that part of our underground trip where I am glad I am not this group's leader, <CHARNAME>.~
-IF~~THEN REPLY ~ What are you talking about now, my love. Have I missed something?~ GOTO SwCoaUW61
+IF~~THEN REPLY ~ What are you talking about now, Sandrah. Have I missed something?~ GOTO SwCoaUW61
 IF~~THEN REPLY ~ Yes, it is not an easy duty to return with the news of somebody's loved ones death. Not an easy duty but a duty nonetheless.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SwCoaUW61
 END
 
@@ -1006,6 +1007,8 @@ IF~~THEN BEGIN SanXanPC15
 SAY ~ <CHARNAME>, as the leader of this group you have a responsibility for those you lead. No one should suffer if help could be provided. And - just in case you have not noticed it yet - this patient would not reject a bit more interest from your side.~
 IF~~THEN REPLY ~ Sometimes your fantasies are really wild, Sandrah. But maybe that is what I love you for. ~ DO ~  SetGlobal("SanXanPC","GLOBAL",3)~ EXIT
 IF~~THEN REPLY ~ As long as our relationship is not impacted by this. My love for you is too important to put it on risk. ~ DO ~  SetGlobal("SanXanPC","GLOBAL",3)~ EXIT
+IF~~THEN REPLY ~Healing is your expertise, so do what you must do.~ DO ~  SetGlobal("SanXanPC","GLOBAL",3)~ EXIT
+IF~~THEN REPLY ~Even if...keep your nose out of it, will you?~ DO ~  SetGlobal("SanXanPC","GLOBAL",3)~ EXIT
 END
 
 //Haeball
@@ -1331,9 +1334,9 @@ IF~~THEN REPLY ~ A baby replica clad in the bedcloth we have reconstructed. Is t
 END
 
 IF~~THEN BEGIN Formedcloth21
-SAY~ *Take a look at who you are from the tower that overlooks the Realms*. Let us go up to my tower then, my love, it overlooks the Realms.~
-IF~~THEN REPLY~ I remember your words after our wonderful first night. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~
-EXIT
+SAY~ *Take a look at who you are from the tower that overlooks the Realms*. Let us go up to my tower then, <CHARNAME>, it overlooks the Realms.~
+IF~~THEN REPLY~ I remember your words after our wonderful first night. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~ EXIT
+IF~~THEN REPLY~ I remember your words after that night in your room. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~EXIT
 END
 
 IF ~Global("Formedcloth","GLOBAL",6) Global("SanRomPath","GLOBAL",2)~ THEN BEGIN Formedcloth30
@@ -1343,9 +1346,9 @@ IF~~THEN REPLY ~ A babygirl replica clad in the bedcloth we have reconstructed. 
 END
 
 IF~~THEN BEGIN Formedcloth31
-SAY~ *Take a look at who you are from the tower that overlooks the Realms*. Let us go up to my tower then, my love, it overlooks the Realms.~
-IF~~THEN REPLY~ I remember your words after our wonderful first night. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~
-EXIT
+SAY~ *Take a look at who you are from the tower that overlooks the Realms*. Let us go up to my tower then, <CHARNAME>, it overlooks the Realms.~
+IF~~THEN REPLY~ I remember your words after our wonderful first night. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~ EXIT
+IF~~THEN REPLY~ I remember your words after that night in your room. The words you said to me when we stood up there and looked over the morning mist covering Faerun. You promised me, that one day the mist will uncover the truth. Let us go and see, Sandrah. ~ DO~ SetGlobal("Formedcloth","GLOBAL",7)~EXIT
 END
 
 // BG1 Dream1
@@ -1376,7 +1379,7 @@ END
 // BG1 Dream2
 
 IF ~ Global("SanBG1DreamReact","GLOBAL",3) ~ THEN BEGIN DreamReact2
-SAY ~ My love, you are bathed in cold sweat. Another one of those bad dreams?~
+SAY ~ My, you are bathed in cold sweat. Another one of those bad dreams?~
 IF~~THEN REPLY ~ Blood, murder, destruction. Why do I have these dreams? This goes far beyond the bloodshed we see each day, because of the fighting that is forced upon us. This comes from far deeper. Why?~ GOTO DreamReact22
 END
 
@@ -1395,6 +1398,7 @@ END
 IF ~~ THEN BEGIN DreamReact24
 SAY ~ (Sandrah silently holds you in her arms for a long time.)~
 IF~~THEN REPLY ~ Thank you, my love. Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
+IF~~THEN REPLY ~ Thank you. (You free yourself from her embrace.) Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
 END
 
 // Found Second Cloth
@@ -1485,7 +1489,7 @@ IF ~~ THEN REPLY~ If finally her love for you will be stronger than her love for
 END
 
 IF ~~ THEN BEGIN SanBranDec4
-SAY ~ My darling, that is not what I fear. This is not the decision she will have to make. It is the choice between us or Tempus. Her god requires the total devotion of his priests. Our arguments that to fight for the good and the loved ones should be pleasing to Tempus, may not be strong enough in the end. I do not want to be a doomsayer on this happy day, but I do not want you to be completely unprepared.~
+SAY ~ That is not what I fear. This is not the decision she will have to make. It is the choice between us or Tempus. Her god requires the total devotion of his priests. Our arguments that to fight for the good and the loved ones should be pleasing to Tempus, may not be strong enough in the end. I do not want to be a doomsayer on this happy day, but I do not want you to be completely unprepared.~
 IF ~~ THEN REPLY~ And my priestess of Mystra? Are you maybe trying to prepare me for something in that respect as well?~ GOTO SanBranDec5
 END
 
@@ -1952,7 +1956,7 @@ END
 
 IF~~THEN BEGIN SanIrTRetCC4
 SAY ~ Clever questions, <CHARNAME>.~
-IF ~~ THEN REPLY ~ (Smile) I am learning daily - from the best, my love, from you.~ GOTO SanIrTRetCC5
+IF ~~ THEN REPLY ~ (Smile) I am learning daily - from the best, from you.~ GOTO SanIrTRetCC5
 IF ~~ THEN REPLY ~ And has my clever counselor the answers?~GOTO SanIrTRetCC5
 END
 
@@ -1990,7 +1994,7 @@ END
 
 IF~~ THEN BEGIN SantelTheft2
 SAY ~ The purpose of exposing it there, as far as I can see, is to inspire young imaginative people to follow the science and maybe invent things like Leonardo did that may be of benefit for the population.~
-IF~~ THEN REPLY ~ Which means, my love, any more practical use of it should then receive your approval.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~~ THEN REPLY ~ Which means, any more practical use of it should then receive your approval.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF~~ THEN REPLY ~ A replica accompanied by some explanatory words can suit a similar purpose then, but only the real one can be used for an actual purpose.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 END
 
@@ -2000,7 +2004,7 @@ IF ~~ THEN DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~EXIT
 END
 
 IF~~ THEN BEGIN SantelTheft4
-SAY ~ I guess you are right, my love - in principle. The purpose of exposing it there, as far as I can see, is to inspire young imaginative people to follow the science and maybe invent things like Leonardo did that may be of benefit for the population. A replica accompanied by some explanatory words can suit a similar purpose then, but only the real one can be used for an actual purpose. Only I doubt this dwarf had more in his mind than to just sell it.~
+SAY ~ I guess you are right - in principle. The purpose of exposing it there, as far as I can see, is to inspire young imaginative people to follow the science and maybe invent things like Leonardo did that may be of benefit for the population. A replica accompanied by some explanatory words can suit a similar purpose then, but only the real one can be used for an actual purpose. Only I doubt this dwarf had more in his mind than to just sell it.~
 IF~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ Hm. Then maybe I just should keep it for myself. It is very useful to observe bathing girls on a faraway beach...haha.~EXIT
 IF~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ Hm. Then maybe I just should keep it to myself. It is very useful to us to observe handsome bathing males on a faraway beach...haha.~EXIT
 IF~~ THEN REPLY ~ I believe the guy, Sandrah, those dwarves are always curious and practical people. Perhaps we contribute to a great discovery this way.~ EXIT
@@ -2008,7 +2012,7 @@ IF~~ THEN REPLY ~ A powerful tool in our situation if we need to observe a dange
 END
 
 IF~Global("SanTelscp","LOCALS",3)~THEN BEGIN SanSigStrgze1
-SAY~ May I have that telescope for a minute, please, my love?~
+SAY~ May I have that telescope for a minute, please?~
 IF~~THEN REPLY ~ Sure - do you want to stargaze?~ DO~ SetGlobal("SanTelscp","LOCALS",4)~GOTO SanSigStrgze2
 END
 
@@ -2064,7 +2068,7 @@ IF~~THEN REPLY ~ Don't laugh at me and don't ask me why - but I have the strong 
 END
 
 IF~~ THEN BEGIN ShauPrevInGate5
-SAY ~ I do neither, my love. I think you are right. You demi-gods have a tendency to find each other as you all move on paths set aside from the masses. It is an orc girl they look for and maybe we will find her one of these days.~
+SAY ~ I do neither. I think you are right. You demi-gods have a tendency to find each other as you all move on paths set aside from the masses. It is an orc girl they look for and maybe we will find her one of these days.~
 IF~~THEN DO ~ SetGlobal("SanBG1ShauPrev","GLOBAL",7) AddJournalEntry(@700,QUEST)~ EXIT
 END
 
@@ -2092,6 +2096,7 @@ END
 IF ~~ THEN BEGIN SanTamoko5
 SAY ~ It is not for me to either condemn or forgive him, <CHARNAME>. That is your decision if it is to decide for any of us.~
 IF ~~ THEN REPLY ~ You have been my counselor and my lover through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
+IF ~~ THEN REPLY ~ You have been my counselor through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
 IF ~~ THEN REPLY ~ This venture has been our common one since the beginning, it is not my decision alone that counts here. You have heard it once again from Tamoko, this is not a *family affair*, millions of lives on Toril are at stake here.~  GOTO  SanTamoko6
 END
 
@@ -2270,7 +2275,7 @@ IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What 
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~ Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
-IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
+IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
@@ -2539,7 +2544,7 @@ IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
 IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
-IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
+IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
@@ -2555,8 +2560,8 @@ IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",8) ~ THEN BEGIN SanPCInit8
-SAY ~ (As Sandrah sees you come near, she smiles brightly:) <CHARNAME>, my love, what is on your mind? ~
-IF ~Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN REPLY ~ Sandrah, sweetheart, I want to ask you about Gorion again. I just recalled a small incident that I almost forgot in all the turmoil of the last days. You know, on that dreadful day I left Candlekeep with my foster father, I saw you talking to him on the library steps. You may not have seen me, as agitated as you stormed away from him. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO Candlevisit
+SAY ~ (As Sandrah sees you come near, she smiles brightly:) <CHARNAME>, what is on your mind? ~
+IF ~Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN REPLY ~ Sandrah, I want to ask you about Gorion again. I just recalled a small incident that I almost forgot in all the turmoil of the last days. You know, on that dreadful day I left Candlekeep with my foster father, I saw you talking to him on the library steps. You may not have seen me, as agitated as you stormed away from him. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO Candlevisit
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
@@ -2764,7 +2769,7 @@ IF~ AreaType(OUTDOOR) Global("Sanhairdo","LOCALS",0) ~ THEN REPLY~ (Sandrah has 
 IF ~ PartyHasItem("SanParc") Global("SanParcPid","LOCALS",0) ~ THEN REPLY~ When we brought the Shard back to your father, I noticed he slipped some small box into your robes. May I ask you what it was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanParcPid
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
 IF~ GlobalGT("SanNarQ","GLOBAL",6) !AreaType(OUTDOOR) Global("SanAdveFa","LOCALS",0) !AreaType(DUNGEON) ~ THEN REPLY ~ You mentioned sometime that you used to travel with your father a bit on his adventures, Sandrah. Tell me about it, please. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanAdvenE1
-IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
+IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
@@ -2820,7 +2825,7 @@ IF ~~ THEN REPLY ~ That is true of course. But most of the time you are very str
 END
 
 IF ~~ THEN BEGIN  rainbFav3
-SAY ~ Do you see a contradiction in that, my love? Cannot both aspects exist in a person at the same time?~
+SAY ~ Do you see a contradiction in that? Cannot both aspects exist in a person at the same time?~
 IF ~~ THEN REPLY ~ Probably that is true for all of us. Maybe I just chose the wrong question. So how about your favourite dish then? ~GOTO rainbFav4
 END
 
@@ -2867,7 +2872,7 @@ END
 
 IF ~~THEN BEGIN Sanhairdo1
 SAY ~ (She sees you observing her and returns you a smile.) Do you feel that southern breeze, <CHARNAME>? I can almost smell those foreign lands and hear their exotic birds sing.~
-IF~~THEN REPLY ~ I am more fascinated by what the present landscape has to offer with respect to beautiful creatures, my love.~ GOTO Sanhairdo2
+IF~~THEN REPLY ~ I am more fascinated by what the present landscape has to offer with respect to beautiful creatures.~ GOTO Sanhairdo2
 IF~~THEN REPLY~ There is so much to explore in the exotic creature by my side, who shows me a new aspect of her beauty all the time.~ GOTO Sanhairdo2
 END
 
@@ -2886,19 +2891,19 @@ IF~Global("Sanrompath","GLOBAL",2)~THEN REPLY ~ Oh, Women and vanity, seems none
 END
 
 IF ~~ THEN BEGIN Pidlock2
-SAY ~ A woman's secret. No, I do not have secrets with you, my love. So honestly I just use my magic skills.~
+SAY ~ A woman's secret. No, I do not have secrets with you. So honestly I just use my magic skills.~
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY ~ Is that not totally unfair to the rest of us humble beings who are not blessed by Mystra? ~  GOTO Pidlock3M
 IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY ~ Is that not totally unfair to the rest of us humble beings who are not blessed by Mystra? ~ GOTO Pidlock3F
 IF ~~ THEN REPLY ~ You really use your magic gifts on such trifle things? Is that not a real disrespect for Mystra?~ GOTO Pidlock3
 END
 
 IF~~THEN BEGIN  Pidlock3M
-SAY~ You are the one to benefit most, sweetheart, you enjoy my lovely looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
+SAY~ You are the one to benefit most, sweetheart, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
 IF~~ THEN REPLY ~ *She casts some unknown spell and your armour and weapons start to sparkle like newly created.*~ DO~ IncrementGlobal("PidLock","LOCALS",1) CreateVisualEffectObject("SPFLESHS",Player1)~ EXIT
 END
 
 IF~~THEN BEGIN  Pidlock3F
-SAY~ You are the one to benefit most, sweetheart, you enjoy my lovely looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
+SAY~ You are the one to benefit most, sweetheart, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
 IF~~ THEN REPLY ~ *She casts some unknown spell and your robe starts to sparkle like newly created and your ruffled locks all of a sudden are all in place and gleaming in their full beauty.*~ DO~ IncrementGlobal("PidLock","LOCALS",1) CreateVisualEffectObject("SPFLESHS",Player1)~ EXIT
 END
 
@@ -3028,7 +3033,7 @@ END
 IF ~~THEN BEGIN SanAdvenE4
 SAY ~ It was sure a more entertaining way to learn than by sitting in a classroom. But it was education nonetheless. My father never tired to lecture on everything that lay at the wayside, be it plants, animals, ancient ruins or places of history, people of the present and of the past. I guess this large tome I carry along contains only a quarter of everything my father really knows about the Realms.~
 = ~ But I think what was even more important than all the lore and the facts, was the way my father himself dealt with things and people. His whole attitude towards life has shaped me.~
-IF ~~ THEN REPLY ~  Sandrah, my love, I have the feeling you are giving a bit of that back to me now. I never had this kind of experiences until now. But at your side a get a notion of what it must have been for you travelling with your father. Or even having one.~ DO ~ SetGlobal("SanAdveFa","LOCALS",1)~EXIT
+IF ~~ THEN REPLY ~  Sandrah, I have the feeling you are giving a bit of that back to me now. I never had this kind of experiences until now. But at your side a get a notion of what it must have been for you travelling with your father. Or even having one.~ DO ~ SetGlobal("SanAdveFa","LOCALS",1)~EXIT
 END
 
 IF~~ THEN BEGIN SanVisWDFA
@@ -3211,7 +3216,7 @@ IF ~~ THEN REPLY ~ And you are willing to give your personal riches for the sake
 END
 
 IF ~~ THEN BEGIN SanParcPid4
-SAY ~ Be glad you find me in such a mellow mood, my love. Otherwise I would be insulted by such a question. Of course what is mine is yours and for the group.~
+SAY ~ Be glad you find me in such a mellow mood. Otherwise I would be insulted by such a question. Of course what is mine is yours and for the group.~
 IF ~~ THEN REPLY ~ Sorry, I did not mean any insult. So can we put the things we gain as a group back into it for storage? ~ GOTO SanParcPid5
 END
   
@@ -3271,12 +3276,12 @@ IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",10) ~ THEN BEGIN SanPCInit10
 SAY ~ (The enigmatic smile of your wonderful lover makes you move up to her and embrace her.)~
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
-IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ My love, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
+IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ Sandrah, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
 IF ~ GlobalGT("SanSharInt","GLOBAL",11) Global("SanSharCon","LOCALS",0) ~ THEN REPLY ~ You seem to go along with Shar-Teel quite well, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanSharCon1
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~Global("CVGodag","GLOBAL",7)~THEN REPLY~My only heritage from Gorion appears to be the cult dagger of a Bhaalist, Sandrah. Does that make any sense to you? ~DO~SetGlobal("CVGodag","GLOBAL",8)~GOTO Godag11
-IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
+IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
@@ -3447,7 +3452,7 @@ IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN  PidBhaal10
-SAY ~ Yes, all of that is true - except for the last one. My interest in you is of a different nature, my love.~
+SAY ~ Yes, all of that is true - except for the last one. My interest in you is of a different nature.~
 IF ~~ THEN REPLY~ But you knew who I was all the time, did you not?~ GOTO PidBhaal11
 IF ~~ THEN REPLY~ This is not really true. Yes, you love me now, but you came to me in search of a Bhaalspawn not in search of a lover.~ GOTO PidBhaal11
 END
@@ -3460,7 +3465,7 @@ END
 IF~~THEN BEGIN  PidBhaal12
 SAY ~ You are right. This will be a long story to tell. Do you think the time is right just now or should I tell it to you later?~
 IF ~~ THEN REPLY ~ This is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest.~ GOTO PidBhaal13
-IF ~~ THEN REPLY ~ You are right, we should look for a calm location to settle down and listen to that story with all patience. I will ask you again later, my love. (Kiss her.) ~ DO ~ SetGlobal("Formedcloth","GLOBAL",10) ~EXIT
+IF ~~ THEN REPLY ~ You are right, we should look for a calm location to settle down and listen to that story with all patience. I will ask you again later. ~ DO ~ SetGlobal("Formedcloth","GLOBAL",10) ~EXIT
 END
 
 IF~~THEN BEGIN  PidBhaal13
@@ -3490,7 +3495,7 @@ IF ~~THEN REPLY ~ Is this what we are facing now, Sandrah? Our mysterious foe in
 END
 
 IF~~THEN BEGIN  PidBhaal17
-SAY~ No, <CHARNAME>, this episode here is far from what a clash of the Bhaalspawns for power will look like. And, my lovely hero, you are not a brainless weapon in somebody's powerplay. You are a fighter and force by your own means.~
+SAY~ No, <CHARNAME>, this episode here is far from what a clash of the Bhaalspawns for power will look like. And you are not a brainless weapon in somebody's powerplay. You are a fighter and force by your own means.~
 IF~~THEN REPLY ~ Thank you, Sandrah. I have much to think about now. Your tale is not even halfways told but it is getting late now. Let us continue another time.~ EXIT
 END
 
@@ -3596,7 +3601,7 @@ END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",11) ~ THEN BEGIN SanPCInit11
 SAY ~ (Your wonderful lover's smile welcomes you.) <CHARNAME>?~
-IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ My love, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
+IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ Sandrah, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
 IF ~ GlobalGT("SanSharInt","GLOBAL",11) Global("SanSharCon","LOCALS",0) ~ THEN REPLY ~ You seem to go along with Shar-Teel quite well, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanSharCon1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~Global("CVGodag","GLOBAL",7)~THEN REPLY~My only heritage from Gorion appears to be the cult dagger of a Bhaalist, Sandrah. Does that make any sense to you? ~DO~SetGlobal("CVGodag","GLOBAL",8)~GOTO Godag11
@@ -3608,7 +3613,7 @@ IF ~ Global("Gorlet","LOCALS",0) GlobalGT("Formedcloth","GLOBAL",7)~ THEN REPLY 
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
 IF ~ GlobalGT("Sprite_is_DeadBandit","GLOBAL",25) Global("SanFiSkills","LOCALS",0) ~ THEN REPLY ~ Sandrah, with your background from Waterdeep, I am wondering where you learned to fight like that.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanFiSkills
 IF~Global("ChartQuest","GLOBAL",1)GlobalGT("CalDone","GLOBAL",0)Global("SanMendas","LOCALS",0)~ THEN REPLY ~ Mmh, you would not by any chance know this Mendas of Waterdeep?~ GOTO SanMendas1
-IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
+IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
@@ -3630,7 +3635,7 @@ IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you hav
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
-IF ~Global("Formedcloth","GLOBAL",18)~ THEN REPLY ~ My love, I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions about Imoen are the same.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanImoBhaCon2
+IF ~Global("Formedcloth","GLOBAL",18)~ THEN REPLY ~ I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions about Imoen are the same.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanImoBhaCon2
 IF ~ Global("XanDecide","GLOBAL",3) InParty("Xan")~ THEN REPLY ~ Sandrah, my love, we must talk about Xan urgently.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~Global("SanBreBa","GLOBAL",2) ~ THEN REPLY ~ You and Breagar seem to be a bit at odds with each other.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBreCon1
 IF ~ Global("SanBranDec","GLOBAL",5)~ THEN REPLY ~ It feels a bit empty, Sandrah, without Branwen - even with the two of us together in love. Do you feel the same?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",4)~GOTO BranLeft1
@@ -3767,13 +3772,13 @@ IF~Global("PCKnowsElmDaughter","GLOBAL",0)~THEN REPLY~ What do you mean?~ DO~Set
 END
 
 IF~~THEN BEGIN SanTalosF3
-SAY~ You are starting to become a prominent figure on the Sword Coast, my love. And you are harbouring Elminster's daughter in your company. It is unavoidable for you to gather the unwanted attention of the evil forces of Faerun one of these days.~
+SAY~ You are starting to become a prominent figure on the Sword Coast. And you are harbouring Elminster's daughter in your company. It is unavoidable for you to gather the unwanted attention of the evil forces of Faerun one of these days.~
 IF~~THEN REPLY~ It's just bad timing then, I guess.~ GOTO SanTalosF4
 IF~~THEN REPLY~ We are torn deeper and deeper into this maelstrom of forces that we cannot defend...~GOTO SanTalosF4
 END
 
 IF~~THEN BEGIN SanTalosF3n
-SAY~ You are starting to become a prominent figure on the Sword Coast, my love. And you are harbouring Mystra's priestess in your company. It is unavoidable for you to gather the unwanted attention of the evil forces of Faerun one of these days.~
+SAY~ You are starting to become a prominent figure on the Sword Coast. And you are harbouring Mystra's priestess in your company. It is unavoidable for you to gather the unwanted attention of the evil forces of Faerun one of these days.~
 IF~~THEN REPLY~ It's just bad timing then, I guess.~ GOTO SanTalosF4
 IF~~THEN REPLY~ We are torn deeper and deeper into this maelstrom of forces that we cannot defend...~GOTO SanTalosF4
 END
@@ -3873,7 +3878,7 @@ IF ~~THEN REPLY~ An arrogant fool thinking to be better than any of us. You can'
 END
 
 IF ~~ THEN BEGIN  SanSociety5
-SAY ~ Actually it is for me to pay my respect to you, my love. With the heritage that is yours and a majority of people believing that your path is set by this, you overcome it all to be - you. I love you.~
+SAY ~ Actually it is for me to pay my respect to you. With the heritage that is yours and a majority of people believing that your path is set by this, you overcome it all to be - you. I love you.~
 IF~~ THEN EXIT
 END
 
@@ -4007,7 +4012,7 @@ IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still
 END
 
 IF~~THEN BEGIN NiteMass1
-SAY ~ You will feel like brandnew in a few minutes, my love, if you follow my healer's advice strictly. Lay down on this blanket face down now.~
+SAY ~ You will feel like brandnew in a few minutes, if you follow my healer's advice strictly. Lay down on this blanket face down now.~
 IF ~~ THEN REPLY ~ (Follow her advice.)~ GOTO NiteMass3
 IF ~~ THEN REPLY ~ In a minute, I first must...(You find yourself face down on the blanket by her feet. You have hardly recognised the slight push and your feet suddenly loosing their grip below you.) ~ GOTO NiteMass2
 IF~~ THEN REPLY ~ But...~ GOTO NiteMass2
@@ -4058,7 +4063,7 @@ IF~~THEN REPLY ~ That is the headquarter of the order, isn't it? A real large te
 END
 
 IF ~~ THEN BEGIN  SanMarAj5
-SAY~ If our mission will succeed, everything will look much different, my love. Not only the war threat will hopefully vanish into thin air, but also Ajantis will become a knight of the order.~
+SAY~ If our mission will succeed, everything will look much different. Not only the war threat will hopefully vanish into thin air, but also Ajantis will become a knight of the order.~
 = ~ With the influence of his family and your own reputation as the heroine of the Sword Coast and the foster child of the famous Gorion, it is not just a dream to walk down the aisle of the Temple of Amn as the proud bride you deserve to be, my little princess.~
 IF~~THEN REPLY ~ Oh, Sandrah you are so wonderful! Your fantastic visions make any waiting for the great day worthwhile. But I am sure it will still take some time until then.~ GOTO SanMarAj6
 END
@@ -4149,7 +4154,7 @@ IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you hav
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
-IF ~Global("Formedcloth","GLOBAL",18)~ THEN REPLY ~ My love, I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions about Imoen are the same.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanImoBhaCon2
+IF ~Global("Formedcloth","GLOBAL",18)~ THEN REPLY ~ I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions about Imoen are the same.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanImoBhaCon2
 IF ~ Global("XanDecide","GLOBAL",3) InParty("Xan")~ THEN REPLY ~ Sandrah, my love, we must talk about Xan urgently.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON)~ THEN REPLY ~ Can you provide us with some wooden stakes, Sandrah?~ GOTO SanMkStake5
 IF ~Global("SanBreBa","GLOBAL",2) ~ THEN REPLY ~ You and Breagar seem to be a bit at odds with each other.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBreCon1
@@ -4211,7 +4216,7 @@ IF ~~ THEN REPLY ~ Yes, yes, I know all of that. But other than the blood of a g
 END
 
 IF~~ THEN BEGIN SanBLine4
-SAY~ What are you aiming at, my love?~
+SAY~ What are you aiming at?~
 IF ~~ THEN REPLY ~ We have the evidence that from the same blood that runs in your veins at least two gods - Mystra and Cyric - have been elevated in the past. I say at least, because according to the scriptures of Narvantial there were even more in the past - and there will be future gods coming from that line you represent.~ DO ~ SetGlobal("SanMysRise","GLOBAL",4)~ GOTO SanBLine5
 END
 
@@ -4432,7 +4437,7 @@ END
 
 IF ~ Global("Formedcloth","GLOBAL",13) ~ THEN BEGIN KhalChi1
 SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by side for a while and you feel the power of her love and her nearness giving you strength and confidence.)~
-= ~ My love, you bear the discovery of your heritage quite well.~
+= ~ You bear the discovery of your heritage quite well.~
 IF ~~ THEN REPLY~ Don't forget I have the power of a God in me, even if I do not give in to his dark luring.~ GOTO KhalChi2
 IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi3
 END
@@ -4456,6 +4461,7 @@ END
 IF~~ THEN BEGIN KhalChi5
 SAY ~ I need to remind you then, that even if you were the child that she has born, you cannot think of her as your mother - not in the way she was a vessel for Bhaal's seed only. And for the same reason I am not your sister, or even half-sister.~
 IF ~~ THEN REPLY~ But you are rightfully my lover, Sandrah. Still I am sure that I am the child whose birth has caused your mother's death.~ GOTO KhalChi6
+IF ~~ THEN REPLY~ Still I am sure that I am the child whose birth has caused your mother's death.~ GOTO KhalChi6
 END
 
 IF~~ THEN BEGIN KhalChi6
@@ -4473,7 +4479,7 @@ END
 IF ~ Global("Formedcloth","GLOBAL",17)~ THEN BEGIN SanImoBhaCon1
 SAY ~ (It is bedtime already, but Sandrah still sits staring at the flames of the dying fire.)~
 IF ~~ THEN REPLY ~ A penny for your thoughts. I will go to warm the bed for us, love, don't be too long.~ DO ~ SetGlobal("Formedcloth","GLOBAL",18)~ EXIT
-IF ~~ THEN REPLY ~ My love, I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions are the same.~ GOTO SanImoBhaCon2
+IF ~~ THEN REPLY ~ I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions are the same.~ GOTO SanImoBhaCon2
 END
 
 IF~~ THEN BEGIN SanImoBhaCon2
@@ -4590,7 +4596,7 @@ IF~~THEN REPLY~When we left Baldur's Gate, I was sure we were doing a right thin
 END
 
 IF~~THEN BEGIN SanDBIsShe3
-SAY~Let us not be too quick in our judgement, my love. We have been used and misused before, fed with lies or half truth to act for one party or other. We will learn more soon and make our own decisions.~
+SAY~Let us not be too quick in our judgement, <CHARNAME>. We have been used and misused before, fed with lies or half truth to act for one party or other. We will learn more soon and make our own decisions.~
 IF~~THEN REPLY~Just as usual, yes.~EXIT
 IF~~THEN REPLY~I can count on my counselor, so much is assured.~EXIT
 END
@@ -4615,13 +4621,13 @@ END
 
 IF~~THEN BEGIN SanMadel3
 SAY~As it were Harpers who rescued them, we cannot exclude that Gorion was one of them. If so, those children we know about might have been among them or maybe this was just one operation of a series of attempts by the Harpers to rescue bhaal children from their early fate.~
-=~My love, I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
+=~I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
 IF~~THEN DO~SetGlobal("SanMadele","Global",2)~ EXIT
 END
 
 IF~~THEN BEGIN SanMadel4
 SAY~It does and we also have the *A* from Gorion's dagger as a further hint.~
-=~My love, I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
+=~I am sure, we will gain more facts and insights into those dark events and finally will find your origins.~
 IF~~THEN DO~SetGlobal("SanMadele","Global",2)~ EXIT
 END
 
@@ -4900,7 +4906,7 @@ INTERJECT_COPY_TRANS MELICA 23 MagesDaughter3
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ This cannot be true. This is a dream. You accuse me for your crazy attempts to tamper with magic that is sizes too big for you...~
 == Bimoen IF  ~ InParty("Imoen2") InParty("CVSandr")~ THEN ~ Hey, someone bring in some chairs 'n' a bit of snacks. This here will get interesting...and long...~
 == THALAN IF ~ InParty("CVSandr")~ THEN ~ My little Sandrah, one thing he said is correct. You have yourself to blame for still caring for this foolish little boy. But who am I to critisize, I think I have just made the same mistake by forgiving him once again.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Well. (Embraces Melicamp and gives him a long kiss.) I am happy you are well and have Thalantyr here to watch over you. I will not do that again. Farewell, my love, I am off with the one who rescued you and whom you forgot to thank.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Well. (Embraces Melicamp and gives him a long kiss.) I am happy you are well and have Thalantyr here to watch over you. I will not do that again. Farewell, Melicamp, I am off with the one who rescued you and whom you forgot to thank.~
 == MELICA IF ~ InParty("CVSandr")~ THEN ~ But, darling...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ <CHARNAME>, please let us get out of here quickly, before this apprentice-for-all-times tries to entangle me again.~
 END
