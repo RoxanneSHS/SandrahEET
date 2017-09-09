@@ -1225,14 +1225,18 @@ StartCutSceneMode()
 END
 
 IF ~Global("SanFeldeTalk","GLOBAL",5)~ THEN BEGIN DownSa
-SAY ~( When Sandrah comes down from the bathroom her appearance nearly knocks you out.)~
+SAY ~(When Sandrah comes down from the bathroom her appearance nearly knocks you out.)~
 IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl in the world tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.~  DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 END
 
 IF ~Global("SanFeldeTalk","GLOBAL",6)~ THEN BEGIN DownSaImo
 SAY ~( When the girls come down from the bathroom their appearance nearly knocks you out.)~
 IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding.
 Imoen! Wow, little duckling, you are a magnificent swan tonight. This can only be Mystra's work. (You bow to your ladies and kiss their hands before leading the company to comfortable seats by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.~  DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 END
 
 // Feldetalk 2 Bath Extension
@@ -1279,6 +1283,8 @@ END
 IF ~Global("SanFeldeTalk","GLOBAL",9)~ THEN BEGIN FT1BathN
 SAY ~( When Sandrah comes down from the bathroom her appearance nearly knocks you out)~
 IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
+IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
+IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.~  DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
 END
 
 // Bathtub if not done before
