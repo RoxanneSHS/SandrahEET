@@ -1195,7 +1195,7 @@ END
 
 IF ~~ BathCheck
 SAY ~ See you in little awhile. (Blows you a kiss.) ~
-IF ~ GlobalGT("SandrahMorningTalk","GLOBAL",5)~ THEN REPLY ~ (Catch the blown kiss.) ~  DO ~ 
+IF ~ GlobalGT("SandrahMorningTalk","GLOBAL",5)~ THEN REPLY ~ (Catch the blown kiss.) ~  DO ~
 SetGlobal("SanFeldeTalk","GLOBAL",7)
 StartCutSceneMode()
                 SmallWait(4)
@@ -1214,6 +1214,33 @@ StartCutSceneMode()
 		FadeFromColor([20.0],0)
                 EndCutSceneMode()~ EXIT
 IF ~ !GlobalGT("SandrahMorningTalk","GLOBAL",5) InParty("Imoen2")~ THEN REPLY ~ (Catch the blown kiss.) ~ DO ~
+SetGlobal("SanFeldeTalk","GLOBAL",6)
+StartCutSceneMode()
+                SmallWait(4)
+                MoveToPoint([521.550])
+		FadeToColor([20.0],0)
+		Wait(4)
+		FadeFromColor([20.0],0)
+                EndCutSceneMode() ~ EXIT
+IF ~ GlobalGT("SandrahMorningTalk","GLOBAL",5)~ THEN REPLY ~ (Ignore her advance.) ~  DO ~
+SetGlobal("SanFeldeTalk","GLOBAL",7)
+StartCutSceneMode()
+                SmallWait(4)
+                MoveToPoint([521.550])
+		FadeToColor([20.0],0)
+		Wait(4)
+		FadeFromColor([20.0],0)
+                EndCutSceneMode() ~ EXIT
+                IF ~ !GlobalGT("SandrahMorningTalk","GLOBAL",5)!InParty("Imoen2")~ THEN REPLY ~ (Ignore her advance.) ~ DO ~
+SetGlobal("SanFeldeTalk","GLOBAL",5)
+StartCutSceneMode()
+                SmallWait(4)
+                MoveToPoint([521.550])
+		FadeToColor([20.0],0)
+		Wait(4)
+		FadeFromColor([20.0],0)
+                EndCutSceneMode()~ EXIT
+IF ~ !GlobalGT("SandrahMorningTalk","GLOBAL",5) InParty("Imoen2")~ THEN REPLY ~ (Ignore her advance.)~ DO ~
 SetGlobal("SanFeldeTalk","GLOBAL",6)
 StartCutSceneMode()
                 SmallWait(4)
