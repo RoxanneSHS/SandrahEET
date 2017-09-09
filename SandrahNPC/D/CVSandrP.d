@@ -30,8 +30,9 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",2)~ THEN BEGIN KickSPT2
 SAY ~Oh, you are back again. I have missed you so. (Her eyes shimmer like stars when looking at you) I am.... (looks at you hopefully) ~
+IF ~~ THEN REPLY  ~Time to move on, Sandrah. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 IF ~~ THEN REPLY  ~(All of a sudden you feel warm and joyful hearing her voice) I was such a fool, Sandrah! I should never have left you. Things just do not work without you. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXIT
-IF ~~ THEN REPLY ~Well, dear Sandrah, you need to rest here for a a little longer. I will be back soon. I already start to miss you. (Suddenly you feel you have done something extremely wrong.)~ EXIT
+IF ~~ THEN REPLY ~Well, Sandrah, you need to rest here for a a little longer. I will be back soon.~ EXIT
 END
 
 IF ~Global("SandrahJoined","GLOBAL",3)~ THEN BEGIN KickSPT3
@@ -51,6 +52,7 @@ END
 
 IF ~~ THEN BEGIN Anew3
 SAY ~ <CHARNAME>, I want to apologise to you. I was wrong for leaving you like I did. Having thought about it afterwards it was all because I was moving too fast in our relationship. I never gave you enough time to really make up your mind in quiet consideration. Your rebuking me was maybe the only way you could tell me that.~
+IF ~~ THEN REPLY  ~Let's not make more ado about it, Sandrah. Agree on another attempt, shall we?~GOTO OnlyCompanion
 IF ~~ THEN REPLY  ~Sandrah, yes, you were so fast and you are such a...powerful and overwhelming girl - I mean, this is not what I meant - you seem to know so much and you are so adorable. Well, I was just a little afraid of you.~ GOTO PCAfraid
 IF ~~ THEN REPLY  ~Sandrah, I have missed you from the very minute you left. Yes, I was a bit scared to find myself all of a sudden be loved by such a girl I never even dared to dream of. Call me a coward or worse, but please come back to us - to me. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO PCAfraid
 IF ~~ THEN REPLY  ~Sandrah, you are a breathtaking woman and that is exactly what you did to me - you took my breath away. I was struggling for air against your power. I - I cannot be your lover, so much has become clear to me. But we all need you back in the group.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO OnlyCompanion
@@ -150,9 +152,9 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",6)~ THEN BEGIN BG2Rejoin1
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
-=~ (She rushes into your arms and kisses you desperately.)~
-= ~ Oh, I was so afraid and terrified. Are you hurt, darling, let me heal you?~
-IF~~THEN REPLY ~ Sandrah, my sweet thing, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() SetGlobal("San0602Reunite","LOCALS",1) RealSetGlobalTimer("San0602Int","LOCALS",EIGHT_MINUTES)~ GOTO BG2Rejoin2
+=~ (She rushes into your arms and kisses you spontaniously.)~
+= ~ Oh, I was so afraid and terrified. Are you hurt, let me heal you?~
+IF~~THEN REPLY ~ Sandrah, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() SetGlobal("San0602Reunite","LOCALS",1) RealSetGlobalTimer("San0602Int","LOCALS",EIGHT_MINUTES)~ GOTO BG2Rejoin2
 END
 
 IF~~ THEN BEGIN BG2Rejoin2
@@ -175,7 +177,8 @@ END
 IF ~ Global("SandrahJoined","GLOBAL",7) ~THEN BEGIN AmnReun
 SAY ~ (Sandrah is in deep contemplation over an ancient toom.)~
 IF~~THEN REPLY ~ (You adore her from a distance for some time. Will you let her into your life - and into your heart - once again?)~ EXIT
-IF~~THEN REPLY ~ Sandrah, my love, you have forgiven me in the past already and here I am again. I am asking you, please, come with me once again...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO AnmOncM
+IF~~THEN REPLY ~ Sandrah, you have forgiven me in the past already and here I am again. I am asking you, please, come with me once again...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO AnmOncM
+IF~~THEN REPLY ~ Sandrah?...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO AnmOncM
 END
 
 IF~~THEN BEGIN AnmOncM
@@ -215,9 +218,9 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",52)~ THEN BEGIN BG2Rejoin51
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
-=~ (She rushes into your arms and kisses you desperately.)~
-= ~ Oh, I was so afraid and terrified. Are you hurt, darling, let me heal you?~
-IF~~THEN REPLY ~ Sandrah, my sweet thing, where...where do you come from? This is the most unlikely place to see you again that I can imagine?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO BG2Rejoin52
+=~ (She rushes into your arms and kisses you spontaniously.)~
+= ~ Oh, I was so afraid and terrified. Are you hurt, let me heal you?~
+IF~~THEN REPLY ~ Sandrah, where...where do you come from? This is the most unlikely place to see you again that I can imagine?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO BG2Rejoin52
 END
 
 IF~~ THEN BEGIN BG2Rejoin52
@@ -228,7 +231,7 @@ END
 
 IF~Global("SandrahJoined","GLOBAL",16)~THEN BEGIN TalosRejun1
 SAY~Seasick, traveller?~
-IF~~THEN REPLY~ Sandrah!! Oh, I was so afraid and terrified but I was sure you would make it without us. Come into my arms, love.~DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
+IF~~THEN REPLY~ Sandrah!! Oh, I was so afraid and terrified but I was sure you would make it without us. ~DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
 IF~~THEN REPLY~ You are unbelievable, my fearless counselor. You made it to here even quicker than we could. This can only be Mystra's work!!~  DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
 END
 
