@@ -896,6 +896,7 @@ IF ~Global("Santlove","GLOBAL",6)~ THEN BEGIN AfterFN1
 SAY ~ I love you, <CHARNAME>.~
 IF~~THEN REPLY ~ I love you, Sandrah. This night was wonderful. I will never forget it. Look at the sun coming up. I look ahead to another wonderful day with you.~ GOTO AfterFN2
 IF~~THEN REPLY ~ Last night was wonderful, my darling. I hope it was not the last we spend like this. But look at the sun rising. Somewhere down in this mist over Faerun lies my destiny.~ GOTO AfterFN2
+IF~~THEN REPLY ~ Last night was...I don't know what was in that wine, but I did things that had better been left undone. You and me - I respect you and care for you but there it ends.~ GOTO AfterFN2No
 END
 
 IF~~THEN BEGIN  AfterFN2
@@ -903,8 +904,19 @@ SAY ~ Somewhere down in this mist that covers Faerun lies OUR destiny. The sun w
 IF~~THEN REPLY ~ Let us go down to see our comrades. You are right. It is time to bring further light into this mist that covers our future. One more kiss before we go. (Embrace her passionately.)~ DO ~ SetGlobal("Santlove","GLOBAL",7)~ GOTO AfterFN3
 END
 
+IF~~THEN BEGIN  AfterFN2No
+SAY ~ Somewhere down in this mist that covers Faerun lies OUR destiny. The sun will soon dissolve the morning mist and things will become clear.~
+IF~~THEN REPLY ~ Let us go down to see our comrades. You are right. It is time to bring further light into this mist that covers our future. I hope I have a true friend by my side through it all.~ DO ~ SetGlobal("Santlove","GLOBAL",7)~ GOTO AfterFN3No
+END
+
 IF~~THEN BEGIN  AfterFN3
 SAY ~ (Sandrah returns your kiss in what seems to be a never ending moment.)~
+= ~ Let us go to our comrades below, see how they enjoyed the stay. And do not forget to see my father in his study, he may have some valid information for our further travels.~
+IF~~THEN EXIT
+END
+
+IF~~THEN BEGIN  AfterFN3No
+SAY ~ You have. And know that I do not give up any case that easily. Time will tell.~
 = ~ Let us go to our comrades below, see how they enjoyed the stay. And do not forget to see my father in his study, he may have some valid information for our further travels.~
 IF~~THEN EXIT
 END
@@ -2506,6 +2518,7 @@ SAY ~ Yes, <CHARNAME>, there are secrets. But if I am not totally wrong, you are
 = ~ Mind that some of these riddles and connections can only be solved by us together. Are you willing to take a small risk for a large gain? (Smiles at you invitingly) ~
 IF ~~ THEN REPLY ~ Sandrah, if the prize is worth it, I will. And if the price is YOU, I am more than willing to fight for it. (Take her in your arms and kiss her)~ GOTO LoveStarts36
 IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozend. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts36
+IF ~~ THEN REPLY ~ I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
 END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",6) ~ THEN BEGIN SanPCInit6
@@ -2525,6 +2538,7 @@ SAY ~ Yes, <CHARNAME>, there are. But I if I am not totally wrong, you are one w
 = ~ Mind that some of these riddles and connections can only be solved by us together. Are you willing to take a small risk for a large gain? (Smiles at you invitingly) ~
 IF ~~ THEN REPLY ~ Sandrah, if the prize is worth it, I will. And if the price is YOU, I am more than willing to fight for it. (Take her in your arms and kiss her)~ GOTO LoveStarts
 IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozend. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts
+IF ~~ THEN REPLY ~ I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
 END
 
 IF ~~ THEN BEGIN ColdFeet

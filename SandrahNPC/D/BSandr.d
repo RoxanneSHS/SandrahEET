@@ -1814,6 +1814,7 @@ END
 IF~~ THEN BEGIN SantLove4
 SAY~ Come close to me, <CHARNAME>, hold me in your arms.~
 IF ~~ THEN REPLY ~ Nothing that I would like to do more, Sandrah, this is a special place and a special moment for us. ~  GOTO SantLove5
+IF ~~ THEN REPLY ~ Hm, you know how I feel about that. I am your friend and you are mine - and that means a lot to me, it should means as much for you as well.~ GOTO SantLove5a
 END
 
 IF~~ THEN BEGIN SantLove5
@@ -1821,8 +1822,19 @@ SAY~ Can you imagine me standing up here, looking to the south and dreaming of m
 IF ~~ THEN REPLY ~  I can - what is that one lonely light down south there at the coastline? It is very far away. ~ GOTO SantLove6
 END
 
+IF~~ THEN BEGIN SantLove5a
+SAY~ Can you imagine me standing up here, looking to the south and dreaming of my future lover? ~
+IF ~~ THEN REPLY ~  I can - what is that one lonely light down south there at the coastline? It is very far away. ~ GOTO SantLove6a
+END
+
 IF~~ THEN BEGIN SantLove6
 SAY~ (Laughs sweetly) That is Candlekeep. Think of it! Me standing here dreaming of the love to come and looking directly at the place where it was already waiting for me. ~
+IF~ Global("SanRomPath","GLOBAL",1)~THEN DO ~ TextScreen("SanTowM") Wait(2) Interact("CVSandr")~ EXIT
+IF~ Global("SanRomPath","GLOBAL",2)~THEN DO ~ TextScreen("SanTowF") Wait(2) Interact("CVSandr")~ EXIT
+END
+
+IF~~ THEN BEGIN SantLove6a
+SAY~ (Laughs nervously) That is Candlekeep. Think of it! Me standing here dreaming of the love to come and looking directly at the place where you lived. What does it mean?~
 IF~ Global("SanRomPath","GLOBAL",1)~THEN DO ~ TextScreen("SanTowM") Wait(2) Interact("CVSandr")~ EXIT
 IF~ Global("SanRomPath","GLOBAL",2)~THEN DO ~ TextScreen("SanTowF") Wait(2) Interact("CVSandr")~ EXIT
 END
@@ -2216,7 +2228,7 @@ IF ~ Global("SanImoLoveLet","GLOBAL",1) ~THEN BSANDR ImoLoveLet
 ~ Imoen, you have read this piece of paper now for the fifth time since we woke up. And your face gets so dreamingly each time. Confess, my best friend, it must be a love letter.~
 DO ~ SetGlobal("SanImoLoveLet","GLOBAL",2)~
 == Bimoen ~ Clever as always. Yeah 'tis. Can you imagine, my first love letter in all my life, wow, it's just wonderful.~
-== BSANDR ~ Henning really cares a lot for you. This wonderful coat, finding you with letters. I wish my lover would be so inventive (Blows you a secret kiss behind Imoen's back.)~
+== BSANDR ~ Henning really cares a lot for you. This wonderful coat, finding you with letters. I wish someone who cares for me would be so inventive (Blows you a secret kiss behind Imoen's back.)~
 == Bimoen ~ I'm so happiest when I just think of him. Oh, if we can only make it to Nashkel more often.~
 END
 IF ~ !PartyHasItem("Sanwi2") ~ THEN REPLY ~ I have heard that, my friend. There is still the rescue in the Gnoll Citadel awaiting our solution. That will bring our way through Nashkel.~ +ImoLoveLet2
