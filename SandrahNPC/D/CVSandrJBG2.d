@@ -3,7 +3,7 @@ APPEND CVSANDRJ
 // PID Package 13 - Starting in Amn
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",13) ~ THEN BEGIN SanPCInit13
-SAY ~ (Sandrah awaits you with her lovely smile.) What can I do for you, my love?~
+SAY ~ (Sandrah awaits you with her lovely smile.) What can I do for you, <CHARNAME>?~
 IF ~RandomNum(3,1)~THEN REPLY~ Kiss me, darling, don't ask why, just do it. (No answer can come from her as you have already sealed her mouth with your hungry lips.)~ EXIT
 IF ~RandomNum(3,2)~THEN REPLY~ When I look at you I am convinced for a short moment that Toril is wonderful place.~ EXIT
 IF ~RandomNum(3,3)~THEN REPLY~ Even after all we've been through together I discover each day anew how much I love you.~EXIT
@@ -671,6 +671,7 @@ SAY ~ Anyway, this Irenicus seems to be part of that new emerging force threaten
 = ~ While doing my secret inquiries about the situation, I simply hired a handful of street childs to keep their eyes on the dungeon entrance as well as on the thieves hideout in the docks, so I was notified right away when another guild than the one that had captured you made their move against the dungeon.~
 = ~ The entrance went up in a big explosion and the Shadow Thieves and Assassins made it into the dungeon. I followed them, hiding from them and also from the menagerie of creatures Irenicus had to defend the prison - well, and then I found you.~
 IF ~~THEN REPLY ~ Yes, you did, my bravehearted lover, and just in time. (You embrace and kiss her.)~ DO~ SetGlobal("SanNotCapt","LOCALS",3)~EXIT
+IF ~~THEN REPLY ~ Yes, you did, my friend, and just in time. (You embrace and kiss her.)~ DO~ SetGlobal("SanNotCapt","LOCALS",3)~EXIT
 END
 
 IF ~~ THEN BEGIN SanMysSucc11
@@ -782,7 +783,7 @@ END
 // PID Package 14 - Reaching Brynnlaw
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",14) ~ THEN BEGIN SanPCInit14
-SAY ~ (Your trusted and beloved companion raises her gaze as you approach. You know that there is nothing she will not share with you.) <CHARNAME>?~
+SAY ~ (Your trusted companion raises her gaze as you approach. You know that there is nothing she will not share with you.) <CHARNAME>?~
 IF ~RandomNum(2,1)TimeGT(12)~THEN REPLY~Share my bed with me tonight and soothe my soul with your love, Sandrah.~ GOTO SanBedPid1
 IF ~RandomNum(2,2)TimeGT(12)~THEN REPLY~ Share my bed with me tonight and soothe my soul with your love, Sandrah.~ GOTO SanBedPid2
 IF ~TimeLT(13)~THEN REPLY~ Share my bed with me tonight and soothe my soul with your love, Sandrah.~ GOTO SanBedPid3
@@ -1848,7 +1849,7 @@ END
 
 IF~~ THEN BEGIN SanPCWasSlayer3
 SAY~ We would not be here talking to each other. One of us would have to live on with the fact of having killed the most beloved of all.~
-IF ~~ THEN REPLY ~If you had done it, you would have freed me from an existence that would not have been me at all. An act of mercy that only the truest lover would be able to perform. You would have done this for me.~ GOTO SanPCWasSlayer4
+IF ~~ THEN REPLY ~If you had done it, you would have freed me from an existence that would not have been me at all. An act of mercy that only the truest friend would be able to perform. You would have done this for me.~ GOTO SanPCWasSlayer4
 IF ~~ THEN REPLY ~ To have killed you and live on with the knowledge of my deed even if I were not responsible of it. Rather I wished you had the strength to prevent this creature from existing on Faerun.~ GOTO SanPCWasSlayer7
 END
 
@@ -2217,6 +2218,7 @@ IF~~ THEN BEGIN SanWarnIntr8
 SAY~ He is an interesting man, yes. But I am not drow, just in case you forgot, so I do not command males to my service. It will be his choice - and yours.~
 IF~~THEN REPLY~ Oh, thank you, *Mistress*.~EXIT
 IF~~THEN REPLY~ I will *convince* him to make the right *choice* should he cast his dark eyes on you.~EXIT
+IF~~THEN REPLY~ Let's see if he can handle that amount of freedom.~EXIT
 END
 
 IF~Global("SanSola","GLOBAL",3) ~THEN BEGIN SanWarnIntr11

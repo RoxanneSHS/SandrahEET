@@ -2744,7 +2744,7 @@ END
 // PIDs for Romance early
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",9) ~ THEN BEGIN SanPCInit9
-SAY ~ (You are near Sandrah, your beautiful lover. There is so much you want to ask her. Her smile invites you to initiate a talk.)~
+SAY ~ (You are near Sandrah. There is so much you want to ask her. Her smile invites you to initiate a talk.)~
 IF ~ Global("Santlove","GLOBAL",4) Global("SanFirNigh","LOCALS",0) ~ THEN REPLY ~ Now, here we are for the first time really alone in a room we can call or own.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanFirstN1
 IF~~ THEN REPLY ~ (Smile at Sandrah and kiss her quickly.) ~ EXIT
 IF~ AreaType(FOREST) Global("Pid9Ankl","LOCALS",0)~ THEN REPLY ~ As you approach her, a sharp pain runs through your ankle and you have to sit down on a nearby rock.  ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO Pid9Ankl
@@ -2912,12 +2912,12 @@ IF ~~ THEN REPLY ~ You really use your magic gifts on such trifle things? Is tha
 END
 
 IF~~THEN BEGIN  Pidlock3M
-SAY~ You are the one to benefit most, sweetheart, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
+SAY~ You are the one to benefit most, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
 IF~~ THEN REPLY ~ *She casts some unknown spell and your armour and weapons start to sparkle like newly created.*~ DO~ IncrementGlobal("PidLock","LOCALS",1) CreateVisualEffectObject("SPFLESHS",Player1)~ EXIT
 END
 
 IF~~THEN BEGIN  Pidlock3F
-SAY~ You are the one to benefit most, sweetheart, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
+SAY~ You are the one to benefit most, you enjoy my looks all the time. But let me be a bit selfish now, and improve your looks, as I need to endure them all day long.~
 IF~~ THEN REPLY ~ *She casts some unknown spell and your robe starts to sparkle like newly created and your ruffled locks all of a sudden are all in place and gleaming in their full beauty.*~ DO~ IncrementGlobal("PidLock","LOCALS",1) CreateVisualEffectObject("SPFLESHS",Player1)~ EXIT
 END
 
@@ -3287,7 +3287,7 @@ END
 // PID Package 10
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",10) ~ THEN BEGIN SanPCInit10
-SAY ~ (The enigmatic smile of your wonderful lover makes you move up to her and embrace her.)~
+SAY ~ (The enigmatic smile of your companion makes you move up to her and talk to her.)~
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
 IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ Sandrah, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
@@ -3614,7 +3614,7 @@ END
 // PID Package 11
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",11) ~ THEN BEGIN SanPCInit11
-SAY ~ (Your wonderful lover's smile welcomes you.) <CHARNAME>?~
+SAY ~ (Sandrah's smile welcomes you.) <CHARNAME>?~
 IF ~ GlobalGT("SanWDTemplWi","GLOBAL",8) Global("SanTmplHealL","LOCALS",0) ~ THEN REPLY ~ Sandrah, you have taken quite an extraordinary risk to help a little girl you do not even even know. Your calling as a healer appears in a new light to me today.~ GOTO SanTmplHeal1
 IF ~ GlobalGT("SanSharInt","GLOBAL",11) Global("SanSharCon","LOCALS",0) ~ THEN REPLY ~ You seem to go along with Shar-Teel quite well, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanSharCon1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -4134,7 +4134,7 @@ END
 // PID Package 12 - After candlekeep
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",12) ~ THEN BEGIN SanPCInit12
-SAY ~ (As you approach her, Sandrah's eyes sparkle and her lips display that undecipherable smile you love so much.)~
+SAY ~ (As you approach her, Sandrah's eyes sparkle and her lips display that undecipherable smile you observed so many times already.)~
 IF ~ Global("Criminal","GLOBAL",1) ~ THEN REPLY ~ I was wondering about one thing from Gorion's letter about my heritage, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",4)~GOTO Gorlover1
 IF ~ AreaType(OUTDOOR) !TimeOfDay(DAY) GlobalLT("SanCampFire","LOCALS",3)~ THEN REPLY ~ (Sandrah has taken off her armour and stretches her wonderous body in the dim light letting you admire her beauty and grace to full extend. Once again you recognise in wonder how young and fragile your companion is - a fact you tend to forget when she acts as your fighter cleric in the daily battles.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO CampireSc1
 IF~Global("CVGodag","GLOBAL",7)~THEN REPLY~My only heritage from Gorion appears to be the cult dagger of a Bhaalist, Sandrah. Does that make any sense to you? ~DO~SetGlobal("CVGodag","GLOBAL",8)~GOTO Godag11
