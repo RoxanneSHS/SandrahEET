@@ -400,7 +400,7 @@ IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend th
 END
 
 IF ~~ THEN BEGIN SanMkStake2
-SAY~ Sweetheart, what kind of novels did you read there in Candlekeep? Hm, some wooden stakes would be handy, just in case we find their coffins. If we drive them through their hearts, that will destroy the vampire permanently, otherwise they will return the following night.~
+SAY~ My, what kind of novels did you read there in Candlekeep? Hm, some wooden stakes would be handy, just in case we find their coffins. If we drive them through their hearts, that will destroy the vampire permanently, otherwise they will return the following night.~
 IF ~~ THEN REPLY ~ Wooden stakes, too bad we did not bring any...~ GOTO SanMkStake3
 END
 
@@ -431,7 +431,7 @@ IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend th
 END
 
 IF ~~ THEN BEGIN SanMkStake12
-SAY~ Sweetheart, what kind of novels did you read there in Candlekeep? Hm, some wooden stakes would be handy, just in case we find their coffins. If we drive them through their hearts, that will destroy the vampire permanently, otherwise they will return the following night.~
+SAY~ My, what kind of novels did you read there in Candlekeep? Hm, some wooden stakes would be handy, just in case we find their coffins. If we drive them through their hearts, that will destroy the vampire permanently, otherwise they will return the following night.~
 IF ~~ THEN REPLY ~ Wooden stakes, too bad we did not bring any...~ GOTO SanMkStake13
 END
 
@@ -478,7 +478,7 @@ END
 IF~~ THEN BEGIN SanPackW12
 SAY ~ I admit my reasoning is still a bit vague, nothing but a light suspicion. Anyway, we have no other way as to cooperate with the villagers at the moment. They have this new ship which will be our only means to escape this island. Just let us be extremely careful, please.~
 IF ~~ THEN REPLY ~ Yes, let us keep our eyes open, counselor. I do not think the villager can be much of a danger to us.~  GOTO SanPackW13
-IF ~~ THEN REPLY ~ Do not worry your pretty head to much, my sweetheart. It looks like we can easily overpower them from the little weaponry I have seen.~ GOTO SanPackW13
+IF ~~ THEN REPLY ~ Do not worry your pretty head to much. It looks like we can easily overpower them from the little weaponry I have seen.~ GOTO SanPackW13
 END
 
 IF~~ THEN BEGIN SanPackW13
@@ -891,7 +891,7 @@ IF~~THEN REPLY ~ Confusing, isn't it. But you just exactly expressed my own feel
 END
 
 IF~~THEN BEGIN AjProp12
-SAY ~ Wonderful, love is one of the rare things that grows when you share it. Remember that I have warned you about Ajantis, sweetheart, and what it means to be loved by him.~
+SAY ~ Wonderful, love is one of the rare things that grows when you share it. Remember that I have warned you about Ajantis and what it means to be loved by him.~
 IF~~THEN REPLY ~ I remember it, yes, but it seems to have become obsolete by now. He has really changed.~  GOTO AjProp13
 IF~~THEN REPLY ~ The danger you warned me about is the same for you as it is for me.~ GOTO AjProp13
 END
@@ -932,7 +932,7 @@ IF ~~THEN REPLY ~ Lady Ilvastarr, I need to acquaint to that name. Wow, I - I fe
 END
 
 IF~~ THEN BEGIN AjanProp23
-SAY~ (Laughs.) Just think of this, sweetheart, there once were people in Waterdeep who thought that Lady Ilvastarr would be me one day.~
+SAY~ (Laughs.) Just think of this, there once were people in Waterdeep who thought that Lady Ilvastarr would be me one day.~
 IF~~THEN REPLY ~ Except for one who had decided not to meet those expectations. Too late now! ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
 IF~~THEN REPLY ~ You will not become jealous after all? Remember you had your chance, but I am so glad you did not take it.  ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
 END
@@ -1182,14 +1182,14 @@ END
 IF ~~ FT1-4
 SAY ~You are a competent leader. (Giggles) <CHARNAME>, that is your best decision for a while. ~
 = ~ Imoen, let us get out your best pink evening gown and I will see what my backpack holds. Now we will show to <CHARNAME> how ladies of style from the City of Splendor dress for a nice evening at the fireplace. ~
-= ~I hope you like to see a different side of your sweetheart now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
+= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
 IF~~ THEN REPLY ~ I can hardly await it. Do not take too long. I have heard rumours of how long those ladylike ladies can take to get dressed just for a simple dinner of roasted chicken and a mug of beer by the fireside, haha. ~ DO ~SetGlobal("SanFeldeTalk","GLOBAL",4) ~ GOTO BathCheck
 END
 
 IF ~~ FT1-5
 SAY~ You are a competent leader. <CHARNAME> (giggles), that is your best decision for a while. ~
 = ~ I will show to you how a Waterdeep lady of style dresses for a nice evening at the fireplace (Gives you a quick kiss on the cheek). Thank you, <CHARNAME>. ~
-= ~I hope you like to see a different side of your sweetheart now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
+= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
 IF~~ THEN REPLY ~ I can hardly await it. Do not take too long. I have heard rumours of how long those ladylike ladies can take to get dressed just for a simple dinner of roasted chicken and a mug of beer by the fireside, haha. ~ DO ~SetGlobal("SanFeldeTalk","GLOBAL",4) ~ GOTO BathCheck
 END
 
@@ -1226,7 +1226,7 @@ END
 
 IF ~Global("SanFeldeTalk","GLOBAL",5)~ THEN BEGIN DownSa
 SAY ~( When Sandrah comes down from the bathroom her appearance nearly knocks you out.)~
-IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl in the world tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat for two by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl in the world tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 END
 
 IF ~Global("SanFeldeTalk","GLOBAL",6)~ THEN BEGIN DownSaImo
@@ -1278,7 +1278,7 @@ END
 
 IF ~Global("SanFeldeTalk","GLOBAL",9)~ THEN BEGIN FT1BathN
 SAY ~( When Sandrah comes down from the bathroom her appearance nearly knocks you out)~
-IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat for two by the fireplace.) ~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
+IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
 END
 
 // Bathtub if not done before
@@ -1314,12 +1314,14 @@ IF ~~THEN BEGIN SanPeFu2
 SAY ~ I am sorry I have disturbed this rare moment of solitude. I am selfish for wishing to share it with you.~
 IF~~THEN REPLY ~ (Silently reach out for her and pull her down to you for a kiss.) I was selfish for keeping it to myself. But you are right, these moments become rare. I often greeted the day back there in Candlekeep, but now I am happy for any moment of sleep I can get. ~ GOTO  SanPeFu4
 IF ~~ THEN REPLY~ Sorry, my love, I was so deep in thoughts. Come sit here with me and let us enjoy the moment together.~  DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu4
+IF ~~ THEN REPLY~ I have long given up the dream of some privacy while we are on the road.~ GOTO SanPeFu6
 END
 
 IF ~~THEN BEGIN SanPeFu3
 SAY ~ I have often fought off the desire to do it, knowing you would need the bit of rest you can get these days. It is rare enough that you can get enough sleep to stand the perils of each new day.~
 IF ~~ THEN REPLY~ True, my healer and counselor. But do not forget that you yourself are a constant source of strength for me.~  GOTO  SanPeFu4
 IF ~~THEN REPLY ~ As your captain I command you to wake me more often in the future for such a moment. These rare moments alone with you give me more strength than any week of sleep can.~ GOTO  SanPeFu4
+IF ~~ THEN REPLY~ I have long given up the dream of some privacy while we are on the road.~ GOTO SanPeFu6
 END
 
 IF ~~THEN BEGIN SanPeFu4
@@ -1335,6 +1337,18 @@ SAY ~ I love you, <CHARNAME>.~
 IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",5) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
 END
 
+IF ~~THEN BEGIN SanPeFu6
+SAY ~ (She sits down beside you, facing the rising sun.)~
+= ~ This is the weight of the responsibility you have as a leader, <CHARNAME>. It is heavy and disturbing, and you were not prepared for it. Given that, you master it really well.~
+IF~~THEN REPLY ~ I have a competent lieutenant and counselor by my side making it much easier to bear.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu7
+IF~~THEN REPLY ~ I have a loving companion who carries that weight with me. Thank you for all.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO  SanPeFu7
+IF~~THEN REPLY ~ Yes, I do, if I were only not distracted all the time.~  DO ~ SetGlobal("SANDRAHLT","GLOBAL",5) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
+END
+
+IF ~~THEN BEGIN SanPeFu7
+SAY ~ That is what true friends are for, <CHARNAME>.~
+IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",5) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
+END
 
 IF ~ Global("SANDRAHLT","GLOBAL",6)~ THEN BEGIN SanLtKillToo1
 SAY ~ (Sandrah silently looks at a bloodstain on her hammer without wiping it off like she usually does in her constant care for her equipment.)~
@@ -1356,10 +1370,16 @@ IF~~ THEN BEGIN SanLtKillToo4
 SAY ~ (She laughs.) You know how stubborn I am, <CHARNAME>. I regret nothing. I would never have found the one I love for my life if I had stayed in Waterdeep. That alone is worth it all.~
 IF~~THEN REPLY ~ One gets this sadness now and then in the constant battles we do. But I feel the same. Together and in love we will prevail. (Her kiss is hungry and long. When she finally lets you go you see she has regained her usual confidence.)~ GOTO SanLtKillToo5
 IF~~THEN REPLY ~ (You take her in your arms almost violently to kiss her. Her reply is hungry and expressing her need for your reassurance. When she finally lets you go you see she has regained her usual confidence.)~ GOTO SanLtKillToo5
+IF~~THEN REPLY ~ Time again for your favourite topic...~ GOTO SanLtKillToo6
 END
 
 IF~~ THEN BEGIN SanLtKillToo5
 SAY ~ Oh, how good that has felt, my love.~
+IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",7) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
+END
+
+IF~~ THEN BEGIN SanLtKillToo6
+SAY ~ Let a girl have her dreams, <CHARNAME>.~
 IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",7) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
 END
 
@@ -1423,12 +1443,13 @@ IF ~~ THEN DO~ SetGlobal("Sancharm","LOCALS",2) CreateVisualEffectObject("SPFLES
 END
 
 IF~ Global("Sancharm","LOCALS",3) ~ THEN BEGIN Sancharm4
-SAY ~ My beloved, we are now together for a significant while and I do not regret one single instant of it.~
+SAY ~ We are now together for a significant while and I do not regret one single instant of it.~
 IF~~THEN REPLY ~ I love you too, Sandrah.~ DO ~ SetGlobal("Sancharm","LOCALS",4) ~GOTO Sancharm5
+IF~~THEN REPLY ~ Same for me, Sandrah.~ DO ~ SetGlobal("Sancharm","LOCALS",4) ~GOTO Sancharm5
 END
 
 IF ~~ THEN BEGIN Sancharm5
-SAY ~ Come into my arms, <CHARNAME>. This eve I want to show you a bit of Mystra's Weave. I feel that you are destined to partake in what I gain from my goddess every day.~
+SAY ~ Hold my hand, <CHARNAME>. This eve I want to show you a bit of Mystra's Weave. I feel that you are destined to partake in what I gain from my goddess every day.~
 IF~~THEN REPLY~ (The infinite depth of her eyes seem to pull on you overcoming any resistance. The reality around you blurs away as you seem to leave your own self. You are not alerted as Sandrah's hand holds yours and her soothing voice is very near to you.)~
 DO ~ ClearAllActions()
 SmallWait(2)
@@ -1437,7 +1458,7 @@ TextScreen("SanGift")~ EXIT
 END
 
 IF~ Global("Sancharm","LOCALS",6) ~ THEN BEGIN Sancharm6
-SAY ~ Are you feeling well, my love. I was not sure how someone not gifted by Mystra in the way I am would react to this invocation of the Weave. But I wanted to share it with my beloved for just one time to know and understand each other even better.~
+SAY ~ Are you feeling well, <CHARNAME>. I was not sure how someone not gifted by Mystra in the way I am would react to this invocation of the Weave. But I wanted to share it with you for just one time to know and understand each other even better.~
 IF~~THEN REPLY~ I feel unharmed and I never had a single moment of fear knowing you by my side. So that was the Weave then, did you let me see it? ~DO ~SetGlobal("Sancharm","LOCALS",7) ~GOTO Sancharm7
 END
 
@@ -1450,8 +1471,6 @@ IF ~~ THEN BEGIN Sancharm8
 SAY ~ (Sandrah smiles her enigmatic smile.) No, I do not possess the required power. Not yet. And who knows if I ever will. Even among the experienced and more gifted priests of the goddess there are very few that are blessed with such insights and powers. Maybe my father and Khelben Blackstaff are really the only ones.~ 
 IF~~THEN EXIT
 END
-
-
 
 //FT2
 
@@ -6915,7 +6934,7 @@ CHAIN
 IF~ Global("SanDrByeBG1","LOCALS",1)~ THEN BSANDR SanDriByeBG1
 ~ You seem to be restless, love. What is on your mind?~
 DO~ SetGlobal("SanDrByeBG1","LOCALS",2)~
-== F_DRIZTJ ~ I assume you are quite aware of it, sweetheart. You are prepared that it would be like that.~
+== F_DRIZTJ ~ I assume you are quite aware of it. You are prepared that it would be like that.~
 == BSANDR~ I thought I would be, but who can really be so cold at heart not to become weak when the moment really is there.~
 == F_DRIZTJ ~ New duties are calling me already. Your place is at <CHARNAME>'s side for now. Let us not prolong this moment of pain for us unnessesarily. We both have accepted that our relation will be like that, we trade the moments of pure pleasure for the long dark times without the beloved.~
 == BSANDR~ Your ways will be hard to track, but I know that you will always have a way to find us, if needed my father will help you surely. I await our next meeting anxiously, my love.~
