@@ -111,7 +111,7 @@ IF~~THEN REPLY ~ Is it open for such common folks as us or are only Mystra's fol
 END
 
 IF ~~ THEN BEGIN SanWDTempl2
-SAY ~ As we are already standing in front of it there is no reason not to go inside, darling. Do not expect too much, the immense reputation it has throughout the Realms is not because of the building but because of the deeds and knowledge that is emissed from here.~
+SAY ~ As we are already standing in front of it there is no reason not to go inside. Do not expect too much, the immense reputation it has throughout the Realms is not because of the building but because of the deeds and knowledge that is emissed from here.~
 = ~ What you will see is just a place of study and a place for healing, nothing different from Candlekeep. Mystra, as you know, is not one to display her power or wealth. ~
 IF~~THEN REPLY ~ Fine, you have no business then to settle here, just pay a visit to old collegues?~ GOTO SanWDTempl3
 END
@@ -689,16 +689,24 @@ END
 IF~~ THEN BEGIN  SanAwaitsDr6
 SAY ~ (Laughs) Like in the old saying about a sparrow in your hand and a dove on the roof. I am not totally unhappy with what I have got. (Laughs again) You have a lot of potential and are growing daily, who knows...maybe one day <CHARNAME> of Candlekeep will be one recognised alongside such a hero as Drizzt Do'Urden. And this hero will be mine.~
 IF~~THEN REPLY ~ (Your lips melt together in a kiss that seems endless.)~ DO ~ SetGlobal("SanDrizzt","GLOBAL",2) SetGlobal("SanDrizzt2","GLOBAL",2) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
+IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~GOTO SanAwaitsDr6a
+END
+
+IF~~ THEN BEGIN SanAwaitsDr6a
+SAY~(Smiles) No.~
+IF~~THEN EXIT
 END
 
 IF~~ THEN BEGIN  SanAwaitsDr7
 SAY ~ Drizzt was just a nice dream of a young girl. I never applied that standard to reality but was really open to whatever my heart would find. Like the wonderful <CHARNAME> of Candlekeep. ~
 IF~~THEN REPLY ~ (Your lips melt together in a kiss that seems endless.)~ DO ~ SetGlobal("SanDrizzt","GLOBAL",2) SetGlobal("SanDrizzt2","GLOBAL",2) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
+IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~GOTO SanAwaitsDr6a
 END
 
 IF~~ THEN BEGIN  SanAwaitsDr9
 SAY ~ You have to thank only the wonderful <CHARNAME> of Candlekeep for this. You are my first choice, darling, and Drizzt is just a nice dream of a young girl.~
 IF~~THEN REPLY ~ (Your lips melt together in a kiss that seems endless.)~ DO ~ SetGlobal("SanDrizzt","GLOBAL",2) SetGlobal("SanDrizzt2","GLOBAL",2) StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
+IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~GOTO SanAwaitsDr6a
 END
 
 IF~ Global("SanIreHint","LOCALS",1)~ THEN BEGIN IreHint1
@@ -708,7 +716,7 @@ END
 
 IF~~ THEN BEGIN  IreHint2
 SAY ~ Their interest is aimed at the Bhaal power in you rather than the fight for the throne of your dead originator. For whatever reason they might need this power. Their vampiric army and their messenger reveal that they already possess significant resources.~
-IF~~THEN REPLY ~ I have heard your warning and your promise, my darling. The warning that Sarevok's end will not mean peace for me - and the promise that I will not be alone against whatever will come next. (You kiss your counselor.)~
+IF~~THEN REPLY ~ I have heard your warning and your promise, Sandrah. The warning that Sarevok's end will not mean peace for me - and the promise that I will not be alone against whatever will come next. ~
 EXIT
 END
 
@@ -747,6 +755,7 @@ IF~~THEN BEGIN CasOwn3
 SAY ~ I am not sure why I asked the question myself. I love this adventuring life with you by my side - all we see and all we learn. And we are still so young. But maybe after some time there will be this yearning for a place of our own, be it a castle or a hut by the seaside, I do not know.~
 = ~ See, darling, I still have a home I can return to any time. And of course you will be welcome there anytime and always.~
 IF~~THEN REPLY ~ But I think I feel what you try to express, it will always be different than our own place - our own home. So much can happen with time, yeah, let's just take it as it comes as long as we take it together. (Embrace her and hug her dearly.)~ DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
+IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
 
 IF~ Global("SanCasOwn","GLOBAL",3)~ THEN BEGIN CasOwn4
@@ -759,6 +768,7 @@ END
 IF~~ THEN BEGIN CasOwn5
 SAY ~ I love you for your attitude on this. Even if I think that a worthy ruler may have a way to use power and resources in such a way that many under his rule may be able to live a protected and happy life.~
 IF~~ THEN REPLY ~ We have not yet come upon many examples of that kind on our travels. But we have found many kind and caring people among what they call the *common folk*. (You kiss, Sandrah.) ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
+IF~~ THEN REPLY ~ We have not yet come upon many examples of that kind on our travels. But we have found many kind and caring people among what they call the *common folk*. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
 
 IF~~ THEN BEGIN CasOwn6
@@ -781,6 +791,7 @@ END
 IF~~ THEN BEGIN CasOwn9
 SAY ~ Only one of the happiest days? You must be a very lucky <PRO_MANWOMAN> to say that. (She pretends to sulk.)~
 IF~~THEN REPLY ~ You can say that. That day was the beginning of a series of wonderful happy days. I don't need to tell you why that is, my love. (You kiss her until her eyes shine with happiness.)~ DO ~ SetGlobal("SanCasOwn","GLOBAL",6)~EXIT
+IF~~THEN REPLY ~ You can say that. Let's move on before you come up with that *other topic* again.~ DO ~ SetGlobal("SanCasOwn","GLOBAL",6)~EXIT
 END
 
 
@@ -905,7 +916,7 @@ END
 // PC has Ajantis' Ring
 
 IF~ Global("SanAjanProp2","GLOBAL",2)~THEN BEGIN AjanProp20
-SAY ~ You look wonderful, love, and so very happy. Let me see the ring, darling.~
+SAY ~ You look wonderful, love, and so very happy. Let me see the ring.~
 IF ~~THEN REPLY ~ The ring? Did he tell you about it?~  GOTO AjanProp21
 IF ~~THEN REPLY ~ Oh, you have known it, didn't you. Here, see, it is plain but still very special.~ GOTO AjanProp22
 END
@@ -922,8 +933,8 @@ END
 
 IF~~ THEN BEGIN AjanProp23
 SAY~ (Laughs.) Just think of this, sweetheart, there once were people in Waterdeep who thought that Lady Ilvastarr would be me one day.~
-IF~~THEN REPLY ~ Except for one who had decided not to meet those expectations. Too late now! (Laugh and kiss her.) ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
-IF~~THEN REPLY ~ You will not become jealous after all? Remember you had your chance, but I am so glad you did not take it. (Laugh and kiss her.) ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
+IF~~THEN REPLY ~ Except for one who had decided not to meet those expectations. Too late now! ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
+IF~~THEN REPLY ~ You will not become jealous after all? Remember you had your chance, but I am so glad you did not take it.  ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
 END
 
 
@@ -1274,7 +1285,7 @@ END
 
 IF ~ AreaCheck("BG3351") !Global("FT1Bath","GLOBAL",1) GlobalGT("SandrahMorningTalk","GLOBAL",5)~ THEN BEGIN FTFeld
 SAY ~ How about taking a room and ordering a warm scented bathtub.~
-IF ~~ THEN REPLY ~ A splendid idea, I will take a glass of wine by the fireplace, while you get the bathtub ready. Don't be too long, darling. ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",7)~ EXIT
+IF ~~ THEN REPLY ~ A splendid idea, I will take a glass of wine by the fireplace, while you get the bathtub ready. Don't be too long. ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",7)~ EXIT
 END
 
 /* Lovetalks*/
@@ -1808,7 +1819,7 @@ END
 
 IF~~ THEN BEGIN SantLove3
 SAY ~ They are my friends and yours. They are the watchers of this tower, day and night. They all have names and they keep all negative influences away from this shelter.~
-IF ~~ THEN REPLY ~ If we could only stay here forever. Of course, darling I know we cannot. But we can dream of it for a while - together. ~ GOTO SantLove4
+IF ~~ THEN REPLY ~ If we could only stay here forever. Of course, I know we cannot. But we can dream of it for a while - together. ~ GOTO SantLove4
 END
 
 IF~~ THEN BEGIN SantLove4
