@@ -1,3 +1,17 @@
+VERSION 2.05
+-----------------
+Made Sandrah romance less restrictive
+More dialogue options for friendship path
+Tuned several encounters to take SCS into account
+Added Midnight's book to game
+Removed crossmod White NPC
+Removed crossmod Foundling NPC
+Removed crossmod Varshoon NPC
+Removed crossmod Aeon NPC
+Removed crossmod Fade NPC
+Elfsong ghost added
+Item descriptions extended
+
 VERSION 2.04
 -----------------
 All Three Parts
@@ -5,12 +19,6 @@ Overall balancing for EET mega-mod installations
 Successful regression testing of previous beta versions
 Many editorial corrections
 
-Removed crossmod White NPC
-Removed crossmod Foundling NPC
-Removed crossmod Varshoon NPC
-Removed crossmod Aeon NPC
-Removed crossmod Fade NPC
-Elfsong ghost added
 Tea With Landrin added
 Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
