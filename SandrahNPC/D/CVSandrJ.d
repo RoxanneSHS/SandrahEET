@@ -2185,13 +2185,13 @@ END
 IF ~ Global("Umbowl","GLOBAL",1) ~ THEN BEGIN Umbowl
 SAY ~ I apologise, <CHARNAME>, that had to be your decision not mine. I over acted.~
 IF~~ THEN REPLY ~ I am not sure I understand what was really going on. Those poor fishermen asking for our help were really murderers and thieves? And how could you know?~ GOTO Umbowl2
+IF~~ THEN REPLY ~ I hope you have a good explanation for it.~ GOTO Umbowl2
 END
 
 IF ~~ THEN BEGIN Umbowl2
 SAY ~ I knew because I saw it in my father's shard. I will tell you about it some other time.~
 IF ~~ THEN REPLY ~ Whatever. I am leading this party and we follow my decisions. As you have apologised already, let us move on.~ DO ~ SetGlobal("Umbowl","GLOBAL",2)~ EXIT
-IF ~~ THEN REPLY ~ Whatever told you, it looks you were right. I did not know that Mystra was a goddess to threaten people that way. Any idea how to finish this, now that we have this strange bowl?~
-GOTO Umbowl3
+IF ~~ THEN REPLY ~ Whatever told you, it looks you were right. I did not know that Mystra was a goddess to threaten people that way. Any idea how to finish this, now that we have this strange bowl?~ GOTO Umbowl3
 END
 
 IF ~~ THEN BEGIN Umbowl3
@@ -2207,12 +2207,12 @@ IF~~THEN REPLY ~ It would be better, if we found some useable iron for Taerom an
 END
 
 
-
 //Find Branwen
 
 IF ~ Global("SanBranSearchRem","GLOBAL",2) ~ THEN BEGIN GetPetScr1
 SAY ~ Please, <CHARNAME>, give me a minute of your time. ~
 IF ~~ THEN REPLY ~ Of course, Sandrah, you have been a bit silent recently.~ GOTO GetPetScr2
+IF ~~ THEN REPLY ~ (Sigh) Yees?.~ GOTO GetPetScr2
 END
 
 IF ~~ THEN BEGIN GetPetScr2
@@ -2226,6 +2226,7 @@ END
 IF ~~ THEN BEGIN GetPetScrNo
 SAY ~ <CHARNAME>, are you still yourself? I can't believe what I just heard. Let the girl's fate be a lesson to you and do not anger a potent priestess of Mystra. I will not ask you so nicely for your help a second time. ~
 IF ~~ THEN REPLY ~ Yes, yes, Sandrah calm down. Seems that I have little to say in this matter. Have it your way then. ~  GOTO GetPetScrInf
+IF ~~ THEN REPLY ~ Fine, say what you have to say but make it quick. I promise nothing. ~  GOTO GetPetScrInf
 END
 
 IF ~~ THEN BEGIN GetPetScrInf
@@ -2347,7 +2348,7 @@ IF ~~ THEN REPLY ~ (You enjoy walking side by side with your beautiful companion
 IF ~ GlobalGT("Sprite_is_DeadBandit","GLOBAL",25) Global("SanFiSkills","LOCALS",0) ~ THEN REPLY ~ Sandrah, with your background from Waterdeep, I am wondering where you learned to fight like that.~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanFiSkills
 IF ~ AreaType(FOREST) TimeOfDay(DAY) Global("SanStrBe","LOCALS",0) ~ THEN REPLY ~ Wild strawberries over there, what a rare sight!~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanStrBe
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -2373,6 +2374,7 @@ END
 IF~~THEN BEGIN SanKnoDrizPC1
 SAY~ You would envy me even more if you learn that he was one of my teachers in combat, <CHARNAME>.~
 IF~~THEN REPLY ~ It really explains a lot about your impressive abilities. I wish I had a teacher like that - or even a real teacher at all.~ GOTO SanKnoDrizPC2
+IF~~THEN REPLY ~ Why did I even ask, I should've known already. I wish I even had any real teacher at all.~ GOTO SanKnoDrizPC2
 END
 
 IF~~THEN BEGIN SanKnoDrizPC2
@@ -2406,6 +2408,7 @@ IF ~~ THEN BEGIN SanCorFem4
 SAY ~ It may sound funny but, yes, I propose we will both have a bit of fun with him without need to bother too much. He broke so many poor girl's hearts that I have no scruple to use him for my own joy - and I see no reason why you should not allow yourself the same freedom. What is the danger in that, <CHARNAME>? We know what to expect and we only pay him in his own currency.~ 
 IF~~THEN REPLY~ Hm, and maybe learn a bit by the way. I must confess, the chances for boyfriends were really limited in Candlekeep. (Laugh). So we have a deal, Sandrah.~ EXIT
 IF~~THEN REPLY~ Hey, I take it as a bit of a competition, let's see who has more success in seducing him.~ EXIT
+IF~~THEN REPLY~ The whole idea is absolutely disgusting. I'm out.~ EXIT
 END
 
 IF~~ THEN BEGIN SanCorMal1
@@ -2424,12 +2427,14 @@ IF ~~ THEN BEGIN SanCorMal3
 SAY ~ (Sandrah smiles knowingly at you.) Listen, as we both are quite entertained by his advances and we both know that there is nothing but a nice little adventure waiting , I see no reason why we should not allow ourselves to enjoy that little fun. You have no reason for jealousy and I have no way to lose my heart and soul. I am always willing to learn a bit more in the art of carnal love and Coran is a competent subject for learning.~
 IF~~THEN REPLY~ You mean...you propose I should allow you to play with him, let's say, a kind of adventure and entertainment. is that not a bit...hm, weird?~ GOTO SanCorMal4
 IF~~THEN REPLY~ Are you really proposing that we two share him between us as our kind of *love toy*?~ GOTO SanCorMal4
+IF~~THEN REPLY~ The whole discussion is absolutely disgusting. I'm out.~ EXIT
 END
 
 IF ~~ THEN BEGIN SanCorMal4
 SAY ~ It may sound funny but, yes, I propose you will let me have a bit of fun with him without need to bother too much. He broke so many poor girl's hearts that a I have no scruple to use him for my own joy - and I see no reason why you should not allow yourself the same freedom. What is the danger in that, <CHARNAME>? We know what to expect and we only pay him in his own currency.~ 
 IF~~THEN REPLY~ Hm, and maybe learn a bit by the way. I must confess, the chances to make our own relationship even more interesting are tempting. (Laugh). So we have a deal, Sandrah.~ EXIT
 IF~~THEN REPLY~ Hey, I take it as a bit of a competition, let's see who has more success in seducing you.~ EXIT
+IF~~THEN REPLY~ The whole idea is absolutely disgusting. I'm out.~ EXIT
 END
 
 IF~~THEN BEGIN  SanAskBH11
