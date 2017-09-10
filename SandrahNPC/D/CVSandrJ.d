@@ -3063,6 +3063,7 @@ SAY ~ Can you imagine how much I have hoped this moment would come to happen bet
 IF~~THEN REPLY~ I have lost all my doubt I once may have had in our relationship. I am so glad you have kept your faith and tried and tried again. You do not give up a case very easy and declare it as hopeless. Neither in our quests and fights, nor when it comes to love. ~ GOTO SanFirstN3m
 IF~~THEN REPLY~ Yes, it is wonderful. It lets me even forget what is really waiting for me once we leave this lovely enclave, as surely we must again soon. Once this is all over, I dearly wish to return to here with you. ~ GOTO SanFirstN3h
 IF~~THEN REPLY~ Do we really need so many words between us still. If I see something in your endlessly deep eyes, then it is the desire you feel for me right now, Sandrah. ~ GOTO SanFirstN3q
+IF~~THEN REPLY~ (Is it the wine or some magic working on you. You look into her endlessly deep eyes, and see the desire she feels for you right now.) ~ GOTO SanFirstN3q
 END
 
 IF~~THEN BEGIN  SanFirstN3m
@@ -3089,7 +3090,9 @@ IF ~~ THEN BEGIN SanFirstN2f
 SAY ~ Can you imagine how much I have hoped this moment would come to happen between us. And to be able to let it happen here.~
 IF~~THEN REPLY~ I have lost all my doubt I once may have had in our relationship that at first seemed so odd to me. I am so glad you have kept your faith and tried to convince me in your gentle but steadfast manner. You do not give up a case very easy and declare it as hopeless. Neither in our quests and fights, nor when it comes to love. ~ GOTO  SanFirstN3f
 IF~~THEN REPLY~ You have already changed the person I was before completely, Sandrah. Everything can be different when you look at it from another perspective. You have shown that to me in many instances - and also in love. I have come to trust your lead.~ GOTO SanFirstN3f
+IF~~THEN REPLY~ (Is it the wine or some magic working on you. You look into her endlessly deep eyes, and see the desire she feels for you right now.) ~ GOTO SanFirstN3f
 END
+
 
 IF ~~ THEN BEGIN SanFirstN3f
 SAY~ (She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
@@ -3128,12 +3131,14 @@ END
 IF ~~THEN BEGIN SanAdvenE3
 SAY ~ Your own way to do it with books and imagination spares you at least the spiders in your bedroll and the sunburn from the desert sun, haha. Oh, yes it was always great. And it was also what build our father and daughter relationship. I learned a lot and appreciated what my father actually did in Mystra's name.~
 IF ~~ THEN REPLY ~ It was not only fun then?~ GOTO SanAdvenE4
+IF ~~ THEN REPLY ~ That guy always has a hidden agenda!~ GOTO SanAdvenE4
 END
 
 IF ~~THEN BEGIN SanAdvenE4
 SAY ~ It was sure a more entertaining way to learn than by sitting in a classroom. But it was education nonetheless. My father never tired to lecture on everything that lay at the wayside, be it plants, animals, ancient ruins or places of history, people of the present and of the past. I guess this large tome I carry along contains only a quarter of everything my father really knows about the Realms.~
 = ~ But I think what was even more important than all the lore and the facts, was the way my father himself dealt with things and people. His whole attitude towards life has shaped me.~
 IF ~~ THEN REPLY ~  Sandrah, I have the feeling you are giving a bit of that back to me now. I never had this kind of experiences until now. But at your side a get a notion of what it must have been for you travelling with your father. Or even having one.~ DO ~ SetGlobal("SanAdveFa","LOCALS",1)~EXIT
+IF ~~ THEN REPLY ~  Sadly enough, you also learned his ways of manipulation and meddling, my dear.~ DO ~ SetGlobal("SanAdveFa","LOCALS",1)~EXIT
 END
 
 IF~~ THEN BEGIN SanVisWDFA
@@ -3184,6 +3189,7 @@ IF ~~ THEN BEGIN Pid9Ankl
 SAY ~ (Instead of casting a healing spell on you, Sandrah kneels in front of you and starts to unlace your boot slowly.)~
 IF~~ THEN REPLY ~ My sweet priestess, why do you not just cast a healing spell on me? ~ GOTO Pid9AnklS
 IF~~ THEN REPLY ~ (Lean back against the trunk of a tree. Close your eyes and let her continue. She is your healer and knows what is best for you.) ~ GOTO Pid9AnkL
+IF~~ THEN REPLY ~ Priestess, can you not just cast a healing spell on me like any other healer would do? ~ GOTO Pid9AnklS
 END
 
 IF ~~ THEN BEGIN Pid9AnklS
@@ -3210,6 +3216,7 @@ END
 IF ~~ THEN BEGIN SammomQ1
 SAY ~ I can imagine how puzzled you are. I am confused no less, but maybe to tell what little I know about her will help us see something we have not considered yet. ~ 
 IF ~~ THEN REPLY ~ From the copy of Leonardo's famous painting one can imagine her beauty. And then seeing her daughter only confirms that assumption. And she must have been so much younger than your father?~ GOTO SammomQ2
+IF ~~ THEN REPLY ~ From the copy of Leonardo's famous painting she was about your age and she must have been so much younger than your father?~ GOTO SammomQ2
 END
 
 IF ~~ THEN BEGIN SammomQ2
