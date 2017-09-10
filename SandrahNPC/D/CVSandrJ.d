@@ -1487,6 +1487,7 @@ END
 IF~~ THEN BEGIN  Twop7
 SAY ~ I believe that my search has pointed me to you in the first place. Your quest and mine seem to be somehow related. I am sure we will find the answers we both seek along our common path.~
 IF ~~ THEN REPLY ~ We will not find that out by sitting here and talking. (Kiss her.) Answers are waiting to be found, let us move on.~ DO ~ SetGlobal("SanHasTWOP","GLOBAL",3) RealSetGlobalTimer("WiItemR","GLOBAL",3000) ~ EXIT
+IF ~~ THEN REPLY ~ We will not find that out by sitting here and talking. Answers are waiting to be found, let us move on.~ DO ~ SetGlobal("SanHasTWOP","GLOBAL",3) RealSetGlobalTimer("WiItemR","GLOBAL",3000) ~ EXIT
 END
 
 IF ~ Global("SanChildH","GLOBAL",4)~ THEN BEGIN Twop21
@@ -1561,7 +1562,7 @@ END
 IF~~THEN BEGIN MetQidrNah2
 SAY~ The Dark Lady herself is a child of Corellon Larethian and Araushnee - later known as Lolth the Queen of the Spider Pits. Regardless of her heritage Eilistraee became a good goddess of the moon, dance, song, the sword and the hunt who grants her followers special abilities to help them survive. They are usually drow who decided (or were forced to) leave the Underdark. However, not only drow may become Sword Dancers. There are also surface elves and half-elves among them.  ~
 =~They usually live in forests or abandoned ruins which become both their shelter and temples. Eilistraee and Mystra are often worshipped together and lore has it that a temple exists deep below Waterdeep's Undermountain.~
-IF~~THEN REPLY~This priestess somehow appeared to me as a dark counterpart to you, my beloved.~GOTO
+IF~~THEN REPLY~This priestess somehow appeared to me as a dark counterpart to you.~GOTO
 MetQidrNah3
 IF~AreaCheck("BG5404")~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a High Priestess of Lolth and her heavy forces.~ GOTO MetQidrNah4
 IF~AreaCheck("BG1903")~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a Bregan D'aerthe activity.~ GOTO MetQidrNah4
@@ -1591,15 +1592,17 @@ END
 
 //Fireplain Hut
 IF ~ Global("SanLoveHut","GLOBAL",2)~ THEN BEGIN firehut1
-SAY ~ Darling, there is an old hut in this area, that is no longer occupied. It is not extremely comfortable, but it is a nice dry shelter nevertheless.~
+SAY ~ <CHARNAME>, there is an old hut in this area, that is no longer occupied. It is not extremely comfortable, but it is a nice dry shelter nevertheless.~
 IF~~THEN REPLY ~ I like that promising sparkle in your eye, Sandrah. I seldom can read your mind, but at this moment I think I can. (Kiss her.) Let us not stand here idle but go to find it.~ DO~ SetGlobal("SanLoveHut","GLOBAL",3)~ EXIT
 IF~~THEN REPLY ~ An old hut in an area beset by Ogres. The true love nest for the die-hard adventurer. But with you, Sandrah, it may turn into a cozy little island of peace. Let's see.~ DO~ SetGlobal("SanLoveHut","GLOBAL",3)~ EXIT
+IF~~THEN REPLY ~ My interest in old huts in an area beset by Ogres is below zero. And...I recognise that look in your eyes. My answer is no.~ DO~ SetGlobal("SanLoveHut","GLOBAL",3)~ EXIT
 END
 
 IF~Global("SaOgmaIn","GLOBAL",5)~ THEN BEGIN firehut2
 SAY~ Now that we are sure the area is safe, <CHARNAME>, are you still in the mood to visit that little hut again (She looks at you with that special little-girl-look that is almost irresistible.)~
 IF~~THEN REPLY~Sorry, Sandrah, but somehow the moment is gone. Those are the ways of our adventurer's life. ~ DO ~ SetGlobal("SaOgmaIn","GLOBAL",6)~GOTO firehut3
 IF~~THEN REPLY~Do you think a few ogres can spoil my mood when it comes to my love for you. I am more hungry for your sweet lips than I even was before.~ DO ~ SetGlobal("SaOgmaIn","GLOBAL",6)~GOTO firehut4
+IF~~THEN REPLY~I already told you that I'm not interested in another of your advances.~ DO ~ SetGlobal("SaOgmaIn","GLOBAL",6)~GOTO firehut5
 END
 
 IF~~THEN BEGIN firehut3
@@ -1612,10 +1615,16 @@ SAY ~ Here is something to help you for the moment. I cannot see you collapse on
 IF~~ THEN EXIT
 END
 
+IF~~THEN BEGIN firehut5
+SAY ~ (Sigh) If you would only know what you miss...~
+IF~~ THEN EXIT
+END
+
 IF ~ Global("SaOgmaIn","GLOBAL",8)~ THEN BEGIN firehut88
-SAY ~ Darling, you are tired for today and our cosy little hut is nearby, you remember it?~
+SAY ~ You are tired for today and our cosy little hut is nearby, you remember it?~
 IF ~~ THEN REPLY ~ You are right. But then, I am not too tired. Let us go there but I do not need my sleep immediately (blink at her.)~ DO ~ SetGlobal("SaOgmaIn","GLOBAL",9)~ EXIT
 IF ~~ THEN REPLY ~ You are so right. I could fall asleep within the next five steps. Let us quickly go there.~ GOTO firehut89
+IF ~~ THEN REPLY ~ You are right. Better than to sleep out in the open.~ DO ~ SetGlobal("SaOgmaIn","GLOBAL",9)~ EXIT
 END
 
 IF ~~ THEN BEGIN firehut89
@@ -1626,19 +1635,19 @@ END
 //Sunsplash
 
 IF~ Global("SanSplash","GLOBAL",1)~ THEN BEGIN Sunsplash
-SAY ~ Oh, darling, look at the sunshine dancing on the water! Come, friends, let us splash right in...~
+SAY ~ Oh, <CHARNAME>, look at the sunshine dancing on the water! Come, friends, let us splash right in...~
 IF~~THEN DO ~ SetGlobal("SanSplash","GLOBAL",2) SaveGame(0)~ EXIT
 END
 
 IF~ Global("SanSplash","GLOBAL",5) AreaCheck("CVSPLA")~ THEN BEGIN SunsplashE
 SAY ~ (Slowly your senses return to reality.)~
-= ~ The sun starts setting, I am getting cold, darling. Too bad we need to get moving. (Kisses you.) Hey all, do not forget to collect your stuff.~ 
+= ~ The sun starts setting, I am getting cold. Too bad we need to get moving. (Kisses you.) Hey all, do not forget to collect your stuff.~
 = ~ Tell me, when you are all ready to move.~
 IF ~~ THEN DO ~ SetGlobal("SanSplash","GLOBAL",6)~ EXIT
 END
 
 IF ~ IsGabber(Player1) Global("SanSplash","GLOBAL",6) AreaCheck("CVSPLA") ~ THEN BEGIN SunsplashR
-SAY ~ Are we ready to go, Love?~
+SAY ~ Are we ready to go?~
 IF~~ THEN REPLY ~ Just a moment, not all of us have yet their equipment restored.~  EXIT
 IF~~ THEN REPLY ~ Sad but true, we need to get moving again.~ DO ~ SetGlobal("SanSplash","GLOBAL",7)~ EXIT
 END
