@@ -1284,6 +1284,7 @@ END
 IF ~ Global("WinskApp1","GLOBAL",5)~ THEN BEGIN Winsk1Dis
 SAY ~ (The strange wizards appearance and threat has left you completely speechless and confused. Will Sandrah have any idea what has just happened?)~
 IF~~ THEN REPLY ~ Who was that? What did he want? I am completely lost.~ GOTO Winsk1Dis2
+IF~~ THEN REPLY ~ The Sword Coast these days is crowded with morons. I'm embarassed.~ GOTO Winsk1Dis2
 END
 
 IF~~ THEN BEGIN Winsk1Dis2
@@ -1320,12 +1321,14 @@ END
 IF ~ Global("SanOrDiId","GLOBAL",2) ~ THEN BEGIN SanOrDiId1
 SAY ~ This sheds some light on recent encounters, but maybe not yet enough...~
 IF ~~ THEN REPLY ~ You have deciphered that strange diary, Sandrah?~ GOTO SanOrDiId2
+IF ~~ THEN REPLY ~ If you have books to study, I'm content. At least it keeps you from talking.~ GOTO SanOrDiId2
 END
 
 IF ~~ THEN BEGIN SanOrDiId2
 SAY ~ I will tell you what I found and then we will see together what it really reveals to us.~
 IF~~ THEN REPLY ~ I think we need to take some time for that, when we have got to a safer place. I will talk to you about it later. ~ DO ~ SetGlobal("SanOrDiId","GLOBAL",3)~ EXIT
 IF~~ THEN REPLY ~ Fine, you seem to be puzzled. I have learned something from you by now. Let us put all the facts we know in front of us and then see where they may fit.~ GOTO SanOrDiId3
+IF~~ THEN REPLY ~You will not keep quiet until I let you spit it out. (Sigh) What is it this time?~ GOTO SanOrDiId3
 END
 
 IF ~~ THEN BEGIN SanOrDiId3
@@ -1348,8 +1351,9 @@ END
 // Found all cloth pieces
 
 IF ~ Global("Formedcloth","GLOBAL",2) ~ THEN BEGIN  Formedcloth10
-SAY ~ My darling? ~
-IF~~THEN REPLY~ Sandrah, my heart, the story of Khalindra's second child lies heavy on your thoughts. You do not need to deny it, I know and love you well enough. What do you propose to do? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",3) AddJournalEntry(@238,QUEST)~ GOTO Formedcloth11
+SAY ~ <CHARNAME>? ~
+IF~~THEN REPLY~ Sandrah, the story of Khalindra's second child lies heavy on your thoughts. You do not need to deny it, I know and love you well enough. What do you propose to do? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",3) AddJournalEntry(@238,QUEST)~ GOTO Formedcloth11
+IF~~THEN REPLY~ Sandrah, ever since we heard the story of Khalindra's second child, you're in your thoughts. You do not need to deny it, I know you well enough. What do you propose to do? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",3) AddJournalEntry(@238,QUEST)~ GOTO Formedcloth11
 END
 
 IF~~THEN BEGIN  Formedcloth11
@@ -1400,11 +1404,15 @@ IF~~ THEN BEGIN DreamReact12
 SAY ~ Be careful, my dear. There are powers at struggle inside of you, two ways you can go. I am here to help you with your choices if you let me. Never forget that. ~ 
 IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one with or without Sandrah's help.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
 IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one but it is reassuring to know Sandrah by your side.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
+IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
 END
 
 IF~~ THEN BEGIN DreamReact13
 SAY ~ Be careful, my dear. There are powers at struggle inside of you, two ways you can go. It is either Gorion's death or the image of his murderer that has set this struggle in motion.~
 IF~~THEN REPLY ~ Whatever it is, I know I am not alone with that. Thank you for your care. (Kiss her.)~DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~  EXIT
+IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one with or without Sandrah's help.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
+IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one but it is reassuring to know Sandrah by your side.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
+IF~~THEN REPLY ~ (You nod silently. The dream has contained the notion of two ways as well. You know you will take the right one.)~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
 IF~~THEN REPLY ~ Sandrah, whatever it is, it is inside of me and mine to fight. Thank you for your care, but there is little you can do about it. Just see to it that you have your healing spells and council ready when needed.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",2)~ EXIT
 END
 
@@ -1424,13 +1432,20 @@ END
 IF ~~ THEN BEGIN DreamReact23
 SAY ~ You are wise to see it this way. Those are lies. Blood and murder is not your way, although we cannot avoid some fighting and bloodshed when it is forced upon us. But you are not doing this to gain personal power from it.~ 
 IF~~THEN REPLY ~ Take me in your arms, Sandrah, I am so tired of this.~ GOTO DreamReact24
-IF~~THEN REPLY ~ Whatever the message. I see nothing wrong with the way we follow. It gives me my strength, not this blood and murder thing.~ GOTO DreamReact24
+IF~~THEN REPLY ~ Whatever the message. I see nothing wrong with the way we follow. It gives me my strength, not this blood and murder thing.~ GOTO DreamReact25
+IF~~THEN REPLY ~ Whatever the message. I see nothing wrong with the way we follow. It's bloody but it also gives me my strength.~ GOTO DreamReact25
 END
 
 IF ~~ THEN BEGIN DreamReact24
 SAY ~ (Sandrah silently holds you in her arms for a long time.)~
 IF~~THEN REPLY ~ Thank you, my love. Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
 IF~~THEN REPLY ~ Thank you. (You free yourself from her embrace.) Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
+END
+
+IF ~~ THEN BEGIN DreamReact25
+SAY ~ (Sandrah silently nods and gives you a long glance)~
+IF~~THEN REPLY ~Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
+IF~~THEN REPLY ~ Thank you. Let us go on.~ DO ~ SetGlobal("SanBG1DreamReact","GLOBAL",4)~ EXIT
 END
 
 // Found Second Cloth
@@ -5269,7 +5284,7 @@ INTERJECT_COPY_TRANS VOLO 2 Knowbetter
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Mylady? May you know these stories better than me?~ 
 = ~ Huh, oh yes, I see you may indeed know them, my excuse, mylady Sandrah.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Do not worry, master Volo, any story is largely improved if it is told by you. ~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~ DO~GiveItemCreate("CVMiHist",Player1,1,0,0)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Only heartfelt compliments, good Volo, I always enjoyed your stories back then in Waterdeep.~
 = ~ But regarding the corner of my eye, Volo, you are standing too far away to really see what is there.~
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Truely observed, mylady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
@@ -5282,7 +5297,7 @@ INTERJECT_COPY_TRANS VOLO 3 Knowbetter3
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Mylady? May you know these stories better than me?~ 
 = ~ Huh, oh yes, I see you may indeed know them, my excuse, mylady Sandrah.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Do not worry, master Volo, any story is largely improved if it is told by you. ~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~ DO~GiveItemCreate("CVMiHist",Player1,1,0,0)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Only heartfelt compliments, good Volo, I always enjoyed your stories back then in Waterdeep.~
 = ~ But regarding the corner of my eye, Volo, you are standing too far away to really see what is there.~
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Truely observed, mylady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~

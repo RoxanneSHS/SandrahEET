@@ -4,4 +4,5 @@ THEN
 RESPONSE #100
 SetGlobal("PapInChest","J#lig2",1)
 ActionOverride("Container9",CreateItem("CVSHPRTE",0,0,0))
+ActionOverride("Container9",CreateItem("CVMiHist",0,0,0))
 END
