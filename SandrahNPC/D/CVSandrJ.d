@@ -1013,11 +1013,11 @@ END
 IF~~THEN BEGIN SanXanPC11
 SAY ~ (Sandrah continues with her boot-laces, while she responds to you in the same volume.) And does it improve his mood, can you see that? I do not dare to look around myself, it would be a bit to obvious.~
 IF~~THEN REPLY ~ You do that for him, and I thought you did it for me?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanXanPC12
-IF~~THEN REPLY ~ He seems to admire it - like everybody, including myself. Say, do you want to cure him, sweet healer? I declare him a hopeless case.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanXanPC13
+IF~~THEN REPLY ~ He seems to admire it - like everybody, including myself. Say, do you want to cure him, healer? I declare him a hopeless case.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanXanPC13
 END
 
 IF~~THEN BEGIN SanXanPC12
-SAY ~ Darling, I do not exclude you. All you see is yours to have whenever you want.But you are right, I try to humour our poor moody elf a bit.~ 
+SAY ~ Darling, I do not exclude you. All you see is yours to have whenever you want.But you are right, I try to humour our poor moody elf a bit.~
 IF~~THEN REPLY ~ Good luck, Sandrah. I hope you will not drench me in tears should you fail with him. I declare him a hopeless case.~ GOTO SanXanPC13
 END
 
@@ -1064,13 +1064,15 @@ IF ~~ THEN REPLY ~ As long as those creatures stay in here, they do no harm to t
 END
 
 IF ~~ THEN BEGIN HaebCorps2
-SAY~ Sweetheart, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
+SAY~ <CHARNAME>, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
 IF ~~ THEN REPLY ~ Surely not, my counselor.~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
+IF ~~ THEN REPLY ~ Do I need to care?~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 END
 
 IF ~~ THEN BEGIN HaebCorps3
-SAY~ (Laughs) I know some of them. But honestly, sweetheart, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
+SAY~ (Laughs) I know some of them. But honestly, <CHARNAME>, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
 IF ~~ THEN REPLY ~ Surely not, my counselor.~DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
+IF ~~ THEN REPLY ~ Do I need to care?~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 END
 
 IF~~THEN BEGIN SanHasItms2
@@ -1152,8 +1154,8 @@ END
 
 IF ~~ THEN BEGIN SanKnowsHasdIdT2
 SAY ~ I propose to try and get as much information out of him as we can, using the bits and pieces we have gathered so far. Our goal must be, to stop whatever is brewing up there in the northern woods and around the Field of the Dead. A new orc war is not what the Sword Coast needs now.~
-IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a cardgame with you, my sweet counselor.~
-EXIT 
+IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a cardgame with you, my counselor.~ EXIT
+IF ~~ THEN REPLY ~ We'll go there but it will be me who does the talking.~ EXIT
 END
 
 IF ~ Global("SanKnowsHasdId","GLOBAL",5)~ THEN BEGIN SanKnowsHasdId11
@@ -1216,6 +1218,7 @@ END
 IF~~THEN BEGIN SanFab2b
 SAY ~ I am afraid exactly that. I have to confess, even I was a silly little teenage girl at one time. But to clarify things in my favour, nothing had happened because this star bard had to leave the island for his grand tournee (smiles amused).~
 IF ~~THEN REPLY ~ Sandrah and her boyfriends, soso. Interesting.~ EXIT
+IF ~~THEN REPLY ~ Oh, spare me the details.~ EXIT
 END
 
 // Done Nashkel Mines
