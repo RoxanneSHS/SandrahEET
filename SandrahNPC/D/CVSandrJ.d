@@ -627,12 +627,14 @@ END
 IF ~~ THEN BEGIN SwCoaUW3
 SAY ~ There have been no reports about it during two human lifespans now. Duergar no longer have been seen on the surface of the Sword Coast for that long - other than occasional exiles or outcasts that is. But those caves, or rather mines still exist. Those races are known to secure their diggings for eternity.~
 IF ~~ THEN REPLY ~ And you think we have found the entrance to that *underground coast*?~ GOTO SwCoaUW4
+IF ~~ THEN REPLY ~ I think we have found the entrance to that *underground coast*.~ GOTO SwCoaUW4
 END
 
 IF ~~ THEN BEGIN SwCoaUW4
 SAY ~ Just look around, <CHARNAME>, this is build in a solid fashion. Look how they cleverly make use of the natural caves and structures and connect them with artifical tunnels. This looks like a system to me. And it is unlikely that more than one exist beneath this area.~
 IF ~~ THEN REPLY ~ And what does that mean for us?~ GOTO SwCoaUW5
 IF ~~ THEN REPLY ~ Do you have any idea who might be using it these days. Maybe our foe?~ GOTO SwCoaUW5
+F ~~ THEN REPLY ~ Your talent to state the obvious is amazing. Use your hammer, not your mouth.~EXIT
 END
 
 IF ~~ THEN BEGIN SwCoaUW5
@@ -643,6 +645,7 @@ END
 IF ~~ THEN BEGIN SwCoaUW6
 SAY ~ Yes, the mines, but they are just local systems, not connected with this one here. And remember all their transport and communication between their locations is on the surface.~
 IF ~~ THEN REPLY ~ Then who is down here? ~GOTO SwCoaUW7
+IF ~~ THEN REPLY ~ I'm ready to find out who else is down here. ~GOTO SwCoaUW7
 END
 
 IF ~~ THEN BEGIN SwCoaUW7
@@ -663,6 +666,7 @@ END
 IF ~ Global("SanDSOTSCUW","GLOBAL",3)~ THEN BEGIN SwCoaUW21
 SAY ~ A drow item, my suspicion was correct then. At least the duergar have trade with the drow.~
 IF ~~ THEN REPLY ~ The thing looks really powerful, Sandrah.~ GOTO SwCoaUW22
+IF ~~ THEN REPLY ~ I heard those items are pretty useless on the surface.~ GOTO SwCoaUW22
 END
 
 IF ~~ THEN BEGIN SwCoaUW22
@@ -702,6 +706,7 @@ END
 IF ~~ THEN BEGIN SwCoaUW33
 SAY ~ Oh my, <CHARNAME>, if you are right, then there is bad trouble on its way. There is such a legendary organisation and it is led by drow. If those are behind this, then we face an enemy deadlier than those Iron Throne puppets.~
 IF ~~ THEN REPLY ~ And who might that be?~ GOTO SwCoaUW34
+IF ~~ THEN REPLY ~ Now you will boast to know who they are...~ GOTO SwCoaUW34
 END
 
 IF ~~ THEN BEGIN SwCoaUW34
@@ -739,7 +744,7 @@ END
 
 IF ~ Global("SanDSOTSCUW","GLOBAL",10)~ THEN BEGIN SwCoaUW50
 SAY ~ Sometimes I do not really like to be right in my analysis. This time I wished I had erred.~
-IF~~ THEN REPLY ~ Rieltar and the Iron Throne in league with the Bregan D'aerthe, what could be worse.~ GOTO SwCoaUW51
+IF~~ THEN REPLY ~ Rieltar and the Iron Throne in league with the Bregan D'aerthe, what could be worse?~ GOTO SwCoaUW51
 IF~~ THEN REPLY ~ So this is where those bastards got their supplies from. An alliance with the Underdark. Name an evil deed and those traitors have already done it.~ GOTO SwCoaUW51
 END
 
@@ -757,6 +762,7 @@ END
 IF ~~ THEN BEGIN SwCoaUW53
 SAY ~ Brilliant, <CHARNAME>, let us sneak out like we sneaked in without leaving our traces. As we killed members of all fractions involved and have not left any evidence of ourselves behind yet, your plan will work. I suggest to move further on instead of returning the way we came.~
 IF~~THEN REPLY ~ Why do you propose that last?~ GOTO SwCoaUW54
+IF~~THEN REPLY ~ It's seldom my habbit to turn around.~ GOTO SwCoaUW54
 END
 
 IF ~~ THEN BEGIN SwCoaUW54
@@ -808,6 +814,7 @@ SAY ~ It would give us the chance to know our enemy from within before we decide
 IF~~THEN REPLY ~ Sandrah, I apologize for my rudeness. Your reasoning is convincing. Let us retreat to Peldvale and look for their representatives there.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF~~THEN REPLY ~ I was a bit harsh, Sandrah, sorry, we should really retreat to Larswood and see if we find a way from there like you proposed.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF~~THEN REPLY ~ A cunning and clever plan, Sandrah. Sorry that I was so rude to you before. If only we had this much time to execute it. The camp is just ahead and it is a hard decision to turn away again. Even if it may be the better decision.~ EXIT
+IF~~THEN REPLY ~Fine. I heard you out - but this is my decision. End of discussion.~EXIT
 END
 
 IF ~ Global("SanSareHi3","LOCALS",1)~ THEN BEGIN SanSareHi30
@@ -824,6 +831,7 @@ END
 IF ~~ THEN BEGIN SanSareHi32
 SAY ~ From the contents of this letter he is the next in the chain of command above Davaeorn. ~
 IF~~ THEN REPLY ~ It sounded like you have heard the name before?~ GOTO  SanSareHi31
+IF~~ THEN REPLY ~ And now he is here as part of this Iron Throne operation. This is no coincidence, I am sure.~ GOTO SanSareHi33
 END
 
 IF ~~ THEN BEGIN SanSareHi33
@@ -832,7 +840,7 @@ IF~~ THEN REPLY ~ There have been already a number of hints to the involvement o
 END
 
 IF ~~ THEN BEGIN SanSareHi34
-SAY ~ My darling, you think you met him on the day your foster father died?~
+SAY ~ You think you met him on the day your foster father died?~
 IF~~ THEN REPLY ~ The black creature that killed Gorion. The faceless one starts to get unveiled. Sarevok.~ DO ~ AddexperienceParty(550) SetGlobal("SanSareHi3","LOCALS",2)~ EXIT
 END
 
@@ -840,6 +848,7 @@ END
 IF~ Global("SanDesTroll","LOCALS",1)~ THEN BEGIN DesertTrollAdvice1
 SAY~ Oh, my, <CHARNAME>, watch out, those are desert trolls.~
 IF~~THEN REPLY ~ I learned that trolls regenerate and can only be killed by fiery weapons and spells. Thank you for reminding me to use them here.~ DO~ SetGlobal("SanDesTroll","LOCALS",2)~ GOTO DesertTrollAdvice2
+IF~~THEN REPLY ~ I see it myself and we can kill them with by fiery weapons and spells. ~ DO~ SetGlobal("SanDesTroll","LOCALS",2)~ GOTO DesertTrollAdvice2
 END 
 
 IF~~THEN BEGIN DesertTrollAdvice2
