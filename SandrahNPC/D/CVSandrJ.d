@@ -1786,6 +1786,7 @@ IF ~~ THEN BEGIN WhoFather2
 SAY ~ Dear <CHARNAME>, so shy? What lays so heavy on your mind? (She smiles encouraging.) ~
 IF ~~ THEN REPLY ~ Yes, Sandrah, there is something on my mind that keeps worrying me. Your heritage, em, I mean your father...~ GOTO WhoFather3
 IF ~~ THEN REPLY ~ Em...you look lovely, Sandrah. (Give her a quick kiss on the cheek.) ~ GOTO WhoFatherShy
+IF ~~ THEN REPLY ~ Em...nevermind.~ GOTO WhoFatherShy
 END
 
 IF ~~ THEN BEGIN WhoFatherShy
@@ -1805,6 +1806,7 @@ SAY ~ Yes.~
 IF ~~ THEN REPLY ~ How could I have been so blind? You must really think I am a fool and you secretly laugh about me? ~  GOTO WhoFather5
 IF ~~ THEN REPLY ~ And you tried to hide this very fact from me? Why? What is your game here, Elminster's daughter? --- You are his spy!! ~ GOTO WhoFather5
 IF ~~ THEN REPLY ~ Wow, that explains a lot. This must be quite a burdon for a young girl who wants to find her own way in life. ~ GOTO WhoFather5
+IF ~~ THEN REPLY ~ You are a liar and manipulator through and through - and now I know why!~  GOTO WhoFather5
 END
 
 IF ~~ THEN BEGIN WhoFather5
@@ -1819,6 +1821,7 @@ SAY ~ <CHARNAME>, there is and was no secret! Our relationship is build on trust
 = ~ - and not for what your heritage may be. (The last part was delivered almost as a whisper.) ~
 IF~~ THEN REPLY ~ I understand. I am sorry, Sandrah, I apologise for having given you the impression that I have any doubt in your loyalty and honesty. Just the fact to have the mighty Elminster's daughter holding my hand right now is so overwhelming...~ GOTO WhoFather7
 IF~~ THEN REPLY ~ I think I understand you in a way. But are you not a little bit withholding things from me? ~ GOTO WhoFather7
+IF~~ THEN REPLY ~ You have an experienced way to make all your lies sound so plausible, I have to admit that.~ GOTO WhoFather7
 END
 
 IF ~~ THEN BEGIN WhoFather7
@@ -1832,8 +1835,16 @@ StartCutSceneMode()
 		FadeFromColor([20.0],0)
                 EndCutSceneMode()
 		SaveGame(0)~ EXIT
-
 IF ~~ THEN REPLY ~ Yes, you have proven that while by my side already, Sandrah. I can imagine that being Elminster's daughter can be a blessing and a curse at the same time. Come, Sandrah, I am glad to have you with me for your own virtues, not your father's. ~ DO ~
+StartCutSceneMode()
+                SmallWait(4)
+		FadeToColor([20.0],0)
+		Wait(4)
+		FadeFromColor([20.0],0)
+                EndCutSceneMode()
+		SaveGame(0)
+~ EXIT
+IF ~~ THEN REPLY ~ (You manage to escape her grip.) You have convinced me for the moment. Being his daughter is not an easy thing. I just hope I make no mistake by trusting you too much.~ DO ~
 StartCutSceneMode()
                 SmallWait(4)
 		FadeToColor([20.0],0)
