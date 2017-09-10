@@ -3265,6 +3265,7 @@ IF ~~ THEN BEGIN ShirtM2
 SAY ~ If this is what lovers give to their girls, I am curious what I will receive from you, now that you are my loverboy?~
 IF~~THEN REPLY ~ You will find out soon enough. Meanwhile take this as the first rate. (Give her a passionate kiss, while you hands start to stroke that wonderful material and what is underneath.) ~ DO ~ SetGlobal("ShirtM","LOCALS",1)~ EXIT
 IF~~THEN REPLY ~ How about this. (Try to attach a little yellow flower from a nearby bush on the shirt near her bossom, using the opportunity to explore a bit of what is hidden by the shiny wrapping.) ~ DO ~ SetGlobal("ShirtM","LOCALS",1)~ EXIT 
+IF~~THEN REPLY ~ Read my lips: I-am-not-your-loverboy. End.~EXIT
 END
 
 IF ~~ THEN BEGIN ShirtM3
@@ -3282,7 +3283,7 @@ IF~~THEN REPLY ~ He's an old manipulator and it seems you learned that art quite
 END
 
 IF ~~ THEN BEGIN ShirtF2
-SAY ~ You must try it on, sweetheart, I insist. Wait.~
+SAY ~ You must try it on, I insist. Wait.~
 = ~ (Without anyone from the party noticing she takes your hand and leads you to a group of evergreen thick bushes nearby. She is out of the shirt in no time.)~
 IF~~ THEN REPLY ~ (You take the wonderful material from her hand and let it drop to the ground, as your hands start to explore her soft skin that no silk can compare to.) ~ GOTO ShirtF3
 IF~~ THEN REPLY ~ (Take the shirt and put it on. It feels wonderful.) Uh, you can probably not go back to the others like this. Take mine in return (Give her the woolen shirt you wear beneath your armour.)~ GOTO ShirtF3
@@ -3297,6 +3298,7 @@ END
 IF ~~ THEN BEGIN FavSpell1
 SAY ~ Entangle. (Wraps her arms around you, entangling you completely.)~
 IF~~ THEN REPLY ~ And what comes as second? ~ GOTO FavSpell2
+IF~~ THEN REPLY ~ You take any chance you're given...stop it! ~ GOTO FavSpell2
 END
 
 IF ~~ THEN BEGIN FavSpell2
@@ -3330,6 +3332,7 @@ END
 IF ~~ THEN BEGIN SanParcPid5
 SAY ~ A good reminder, <CHARNAME>. I wanted to do that in my experiment but laid it aside before I could finish that part. Maybe one of these days we may find a day of rest and I can spend some time working that bit out.~
 IF~~ THEN REPLY ~ Only that I could imagine some other things to do with you should such a day really come along. (The kiss she gives you in return shows you that she was thinking in a similar vein.)~ DO ~ SetGlobal("SanParcPid","LOCALS",1)~ GOTO SanParcPid6
+IF~~ THEN REPLY ~ There is little time these days for any of the things we might want to do.~ DO ~ SetGlobal("SanParcPid","LOCALS",1)~ GOTO SanParcPid6
 END
   
 IF ~~ THEN BEGIN SanParcPid6
