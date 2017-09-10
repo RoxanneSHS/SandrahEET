@@ -2482,6 +2482,7 @@ END
 IF ~~ THEN BEGIN SanFiSkills
 SAY ~ When I started to accompany my father on his missions from time to time, I soon found that not always his magic and diplomacy where enough to handle all situations. Sometimes a bit of weapon skills would come in handy, I thought.~
 IF ~~ THEN REPLY ~ Excuse me, I am not meaning to fall in the same prejudice trap again with you, but a girl like you still seems to be the last person I would expect to pick up a war hammer and fight.~ DO ~ SetGlobal("SanFiSkills","LOCALS",1)~ GOTO SanFiSkills2
+IF ~~ THEN REPLY ~ Women's choice of weapons is not that different from men's, if you ask me..~ DO ~ SetGlobal("SanFiSkills","LOCALS",1)~ GOTO SanFiSkills2
 END
 
 IF ~~ THEN BEGIN SanFiSkills2
@@ -2493,6 +2494,7 @@ IF ~~ THEN BEGIN SanFiSkills3
 SAY ~ I was alone in our house at that hour and spent my time to decorate our entry hall for the coming birthday celebration of my father. It was a warm spring day, so I had left the main door to the town open to let the air in. I was just fixing some flower garlands to the wall with small nails and a tiny hammer when this old friend came in, one day too early for the birthday.~
 = ~As Drizzt Do'Urden looks like anything but one of the Realm's most famous fighters, I was just taking him for a thief who had sneaked into the house sensing the unlocked front door. And of course I started to attack him with my little hammer.~
 IF ~~ THEN REPLY ~ THAT Drizzt Do'Urden? A little girl with a hammer attacking HIM, that must have been quite a sight.~ GOTO SanFiSkills4
+IF ~~ THEN REPLY ~ THAT Drizzt Do'Urden? You are quite some storyteller.~ GOTO SanFiSkills4
 END
 
 IF ~~ THEN BEGIN SanFiSkills4
@@ -2506,12 +2508,14 @@ IF ~~ THEN BEGIN SanStrBe
 SAY ~ (Sandrah has dashed forward already and starts to pick the strawberries quickly.)~
 IF~~ THEN REPLY ~ (Follow her slowly, waiting amused where this situation will lead to.) ~ GOTO SanStrBe2
 IF~~ THEN REPLY ~ (Follow her head over heels to get some of the berries yourself before she can take them all.)~ GOTO SanStrBe3
+IF~~ THEN REPLY ~ (Ignore her silly game.)~DO ~ SetGlobal("SanStrBe","LOCALS",1)~EXIT
 END
 
 IF ~~ THEN BEGIN SanStrBe2
 SAY ~ (Sandrah holds one of the biggest berries between her teeth, smiling invitingly at you.)~
 IF~~ THEN REPLY ~ (You close your eyes and open your mouth to receive the berry from her.)~ GOTO SanStrBe4
 IF ~~ THEN REPLY ~ (You move close to her and put your lips around her mouth and the berry, while your tongue gently motions the berry out from between her teeth.)~ GOTO SanStrBe4
+IF~~ THEN REPLY ~ (Ignore her silly game.)~DO ~ SetGlobal("SanStrBe","LOCALS",1)~EXIT
 END
 
 IF ~~ THEN BEGIN SanStrBe3
@@ -2522,6 +2526,7 @@ END
 IF ~~ THEN BEGIN SanStrBe4
 SAY~ (Before you can get the whole berry, she quickly bites it in two and you both end up with half of it, some juice starting to drip from you mouth.) ~
 IF ~~ THEN REPLY ~ (You stop any drooling juice with a quick kiss on the corner of Sandrah's mouth.) ~ DO ~ SetGlobal("SanStrBe","LOCALS",1)~ EXIT
+IF ~~ THEN REPLY ~ That was absolutely childish, Sandrah. ~ DO ~ SetGlobal("SanStrBe","LOCALS",1)~ EXIT
 END
 
 IF~~THEN BEGIN StopRom
@@ -2622,7 +2627,7 @@ END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",7) ~ THEN BEGIN SanPCInit7
 SAY ~ (As Sandrah sees you come near, she starts to busily examine the tome of Faerun history she always studies at quiet moments. She makes you feel clearly that is is not the time to talk with you.) ~
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
+IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -2640,6 +2645,7 @@ IF ~ RealGlobalTimerExpired("PIDSulk","LOCALS")~ THEN REPLY ~ Sandrah, I have hu
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
+IF ~GlobalLT("SanPidPack","GLOBAL",8)~ THEN REPLY ~ I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
 IF ~~ THEN REPLY ~ Maybe another time.~ EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 END
@@ -2709,6 +2715,7 @@ IF~~THEN BEGIN SanloveHut2
 SAY ~ This straw will make a wonderful playground for us, just give me a few minutes. How about you try to light us the fireplace?~
 = ~ * Unexpectantly Sandrah has turned into some kind of busy housewife. She starts to arrange the straw from a half-eaten pile and covers it with one of her expensive coats that she has retrieved from her backpack. Your comrades join into the various activities, like rearranging boxes, barrels and planks, and as you turn around from your well-lit fire, you see a table and stools have been improvised. There is a blanket on the table and even a small bottle used as a vase with some sunflowers in it.*~
 IF~~THEN REPLY ~ My, I have seen people in the city living in worse places than this. Amazing what a bit of creativity can create out of almost nothing.~ DO~ SetGlobal("SaOgmaIn","GLOBAL",7) RestParty()~ EXIT
+IF~~THEN REPLY ~ Other circumstances would have made you the perfect house maid.~ DO~ SetGlobal("SaOgmaIn","GLOBAL",7) RestParty()~ EXIT
 END
 
 IF~~ THEN BEGIN  SanElmInf11
@@ -2732,7 +2739,7 @@ IF~~THEN REPLY ~ Important to the Realms. What could be in a little orphan witho
 END
 
 IF~~ THEN BEGIN  SanElmInf13
-SAY ~ Of course you are my love now. Now, that I have met you and got to know you. But remember, that happened only after I came to your side in order to protect you - and Gorion.~
+SAY ~ Of course you are my love imterest now. Now, that I have met you and got to know you. But remember, that happened only after I came to your side in order to protect you - and Gorion.~
 IF ~~ THEN REPLY~ Well, yes, you knew about me already before we met, from what you said you saw when fiddling with your father's shard. ~ GOTO SanElmInf14
 END
 
@@ -2749,6 +2756,7 @@ END
 IF~~ THEN BEGIN  SanElmInf16
 SAY ~ Do not forget the one that started it all for you, the murderer of Gorion! He knows who you are and he is the one who was after you in the first place. I have no doubt that a lot of answers will be received once we got to him.~
 IF~~THEN REPLY ~ Oh, yes, he will have a lot to explain - when the tip of my sword pins him to the floor like he were a butterfly to be conserved. HA!~ EXIT
+IF~~THEN REPLY ~ I'm not sure if I give that bastard the time to explain himself. HA!~ EXIT
 END
 
 IF~~THEN BEGIN SanSharCon1
@@ -2764,21 +2772,20 @@ END
 IF~~THEN BEGIN SanSharCon3
 SAY ~ Listen, <CHARNAME>. I am not jealous and I am not pursuing any revenge. We are making new experiences in a field that is new to both of us. I love you and I feel you love me too. But I do not want to cage you and control you. I appeared by your side out of nowhere and I conquered you without much opposition from your side. Maybe I just overwhelmed you before you could say no.~
 IF~~THEN REPLY ~ Sandrah, I never wanted to object or say no, believe me...~ GOTO SanSharCon4
+IF~~THEN REPLY ~ Sandrah, I must warn you, I'm <PRO_MANWOMAN> enough to decide for myself.~ GOTO SanSharCon4
 END
 
 IF~~THEN BEGIN SanSharCon4
-SAY ~ Make your experiences, darling, as I make mine. Find out how it is with Shar-Teel. It will only make your love for me deeper in the end. (Giggles) And you will learn some practical things on the side, to make our nights more interesting...~
+SAY ~ Make your experiences, <CHARNAME>, as I make mine. Find out how it is with Shar-Teel. It will only make your love for me deeper in the end. (Giggles) And you will learn some practical things on the side, to make our nights more interesting...~
 IF~~THEN REPLY ~ You are not asking me to stop it with her. I cannot believe that?~ GOTO SanSharCon5
 IF~~THEN REPLY ~ You sound like you are openly encouraging me to go on with Shar-Teel. You are strange sometimes, but there seems to be some intention behind your words.~ GOTO SanSharCon5
+IF~~THEN REPLY ~ You still think your charm will get me in the end? Wake up before it is too late.~ GOTO SanSharCon5
 END
 
 IF~~THEN BEGIN SanSharCon5
-SAY ~ (She looks into your eyes with the enigmatic smile you know now so well.) My sweetest true love, I know that it can never last between you and her. But both of you can grow and learn from it. And it will be to your and my benefit as well as for the good of our group. To fight her off from my side is not necessary. And for you, to frustrate you will only mean you will forever have the feeling you will have missed something in your life. And you will blame my clinging to you and preventing it for that miss.~
-= ~ (She kisses you so long and passionately that any word you still could have said has gone from your mind as she finally lets you recover your breath.) ~
+SAY ~ (She looks into your eyes with the enigmatic smile you know now so well.) My one true love, I know that it can never last between you and her. But both of you can grow and learn from it. And it will be to your and my benefit as well as for the good of our group. To fight her off from my side is not necessary. And for you, to frustrate you will only mean you will forever have the feeling you will have missed something in your life. And you will blame my clinging to you and preventing it for that miss.~
 IF ~~ THEN DO ~SetGlobal("SanSharCon","LOCALS",1)~ EXIT
 END
-
-
 
 IF ~~ THEN BEGIN Candlevisit
 SAY ~ Yes, <CHARNAME>, you are right. I was there - it is not easy to explain, but I will try. Listen. ~
@@ -2806,11 +2813,14 @@ END
 IF ~~ THEN BEGIN Shard3
 SAY ~ I had been to Candlekeep once before with my father when he met with Gorion, Jaheira and Khalid on some Harper business. It was at that time I also learned about you and Imoen. ~
 IF ~~ THEN REPLY ~ Strange, I recall many of Gorion's visitors, but there never was a young girl among them - be sure I would have noticed such a beauty. ~ GOTO Shard4
+IF ~~ THEN REPLY ~ No, no, I recall all of Gorion's visitors, but I swear you were not among them. ~ GOTO Shard4
 END
 
 IF ~~ THEN BEGIN Shard4
 SAY ~ Imoen and you were not in Candlekeep at that time. You two were on a hiking trip in the Cloudpeaks. But Gorion had those little memory bubbles of you, you know the ones that capture your image and a short animated moment from your life. He had several from you and even one from Imoen. They were very life-like, I already liked you when I saw you in it.~
 IF ~~ THEN REPLY ~ Look how time has flown by. I have much to think about from all the things you told me today. I only know this already: It was good to trust you and not to be afraid. It looks like there are explanations for all the mysterious things going on and together we will find them out. (Take her in your arms. You look long into her dark and almost bottomless eyes before you finally kiss her.) ~ DO ~ SetGlobal("SanPidPack","GLOBAL",9) ~ EXIT
+IF ~~ THEN REPLY ~ Look how time has flown by. I have much to think about from all the things you told me today. I only know this already: It was good to trust you and not to be afraid. It looks like there are explanations for all the mysterious things going on and together we will find them out. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",9) ~ EXIT
+IF ~~ THEN REPLY ~ Look how time has flown by. I have much to think about from all the things you told me today. I'm still not sure it was good to trust you. It looks like there are handy explanations for all the mysterious things going on and you never lack one. We'll see - I have my eyes open. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",9) ~ EXIT
 END
 
 // PIDs for Romance early
