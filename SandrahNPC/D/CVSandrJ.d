@@ -1741,9 +1741,10 @@ END
 
 IF ~~ THEN BEGIN WDniteRoom2
 SAY ~ My father's house is not far away. Before the road gets us back again, I would really like to show it to you. It is still a very special place to me. It is home.~
-= ~ (She takes your hand lightly.) And there is my own room in there. On the large bed I was dreaming my girl's dreams of romance and the hero that would come to rescue me. And now I dream of something else to do there...(She kisses you passionately.)~
-IF~~ THEN REPLY ~ I can hardly wait to share the place and its memories with you, darling.~ EXIT
+= ~ (She takes your hand lightly.) And there is my own room in there. On the large bed I was dreaming my girl's dreams of romance and the hero that would come to rescue me. And now I dream of something else to do there...~
+IF~~ THEN REPLY ~ I can hardly wait to share the place and its memories with you, Sandrah.~ EXIT
 IF~~ THEN REPLY ~ Once we have found this villain Khattark, I would be more than willing to share the place and its memories with you, darling.~ EXIT
+IF~~ THEN REPLY ~ Who could resist a visit to the famous Elminster's house.~ EXIT
 END
 
 
@@ -1761,7 +1762,7 @@ END
 IF ~~ THEN BEGIN  NarQnotElm
 SAY ~ You have proven yourself a competent leader for our group so far. Even if not perfect, you are learning more day after day. I respect your decision, it is for the group and our goals. I am not so selfish as to complain.~
 = ~ For this very moment however I have to follow my father. May Mystra's blessing be with you, <CHARNAME>. I cannot say if we meet again but my hope is that we do. Farewell.~
-= ~ (She does not turn away quick enough - you still get a glimpse of the sadness on her face and the tears welling up in her eyes...) ~
+= ~ (She does not turn away quick enough - you still get a glimpse of the sadness on her face.) ~
 IF ~~ THEN DO ~
    CreateVisualEffectObject("SPDIMNDR","CVSandr")
    SetGlobal("SanNarQnotElm","GLOBAL",2)
