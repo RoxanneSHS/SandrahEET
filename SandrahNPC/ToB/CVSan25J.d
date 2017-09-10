@@ -21,6 +21,7 @@ IF~PartyHasItem("plot04j") AreaCheck("Ar3017") Range("Belljar",12)~ THEN REPLY~S
 IF~PartyHasItem("plot04j") AreaCheck("Ar3017") !Range("Belljar",12)~THEN REPLY~Sandrah, do you have an idea how this machine can open the door to the level below?~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanOpenLum3
 IF~Global("CVGodag","GLOBAL",13) !Global("San25ChiQuest","GLOBAL",0)~THEN REPLY~You remember those initials on Gorion's dagger?~DO~SetGlobal("CVGodag","GLOBAL",14)~GOTO GodagTob1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCltob
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN GodagTob1

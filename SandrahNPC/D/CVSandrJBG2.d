@@ -87,6 +87,7 @@ IF~InParty("Zaiya") GlobalLT("ZaiyaCursed","GLOBAL",8) Global("SanZaiyaPid","LOC
 IF~Global("WorkingForBodhi","GLOBAL",1) Global("SanOnBohWork","LOCALS",0)~THEN REPLY~Do you think it was a mistake to accept Bodhi's offer to reach Brynlaw?~DO~SetGlobal("SanOnBohWork","LOCALS",1)~GOTO SanonBoh1
 IF~!Global("SanCanTravel","GLOBAL",2) AreaCheck("CVDre1")~ THEN REPLY ~I think it's time again to retutn to Amn, Sandrah.~ DO ~SetGlobal("SanTravel","GLOBAL",62)~ EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl2
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanonBoh1
@@ -826,6 +827,7 @@ IF~AreaCheck("AR2400") !Dead("udmaster") PartyHasItem("Misc9x")~THEN REPLY~We ne
 IF~InParty("ADAngel") !AreaCheck("ar0800") Global("CVAngelRev","LOCALS",0)~THEN REPLY~What had that Angelo to tell you so urgently?~GOTO SanAdSarD
 IF~!Global("SanCanTravel","GLOBAL",2) AreaCheck("CVDre1")~ THEN REPLY ~I think it's time again to retutn to Amn, Sandrah.~ DO ~SetGlobal("SanTravel","GLOBAL",62)~ EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl2
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN Flayeropen
@@ -2351,6 +2353,7 @@ IF~Global("SanXephRet","GLOBAL",7)PartyHasItem("SANAKAK")~ THEN REPLY ~ Well, lo
 IF~Global("SaerilethBetrothed","GLOBAL",1)Global("SanSaerMarry","LOCALS",0)~THEN REPLY~ Sandrah, I must talk to you about Saerileth, please.~ GOTO Marrysaer1
 IF~InParty("ADAngel") !AreaCheck("ar0800") Global("CVAngelRev","LOCALS",0)~THEN REPLY~What had that Angelo to tell you so urgently?~GOTO SanAdSarD
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl2
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanAdri1

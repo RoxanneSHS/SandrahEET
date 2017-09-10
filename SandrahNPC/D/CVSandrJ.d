@@ -5,6 +5,7 @@ IF ~ Global("SanhealScrl","GLOBAL",1) ~ THEN BEGIN SanhealScrl
 SAY ~ <CHARNAME>, this kind of healing scrolls are very useful for a skilled healer like me. It would be wise to give them to me whenever we find them. I can significantly aid our party in the battles to come.~
 IF~~THEN REPLY ~ Thank you for this advise, my counselor. They are light to carry and the health of our party is an important aspect to be considered by a leader. I am still learning to fit this role.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanhealScrl2
 IF~~THEN REPLY ~ But they also make good money. Money to improve our equipment and such.~ GOTO SanhealScrl2
+IF~~THEN REPLY ~ Candlekeep was full of dusty scrolls. If you see some worth in them, keep them. But don't fill your packs with stuff we don't need later on.~ GOTO SanhealScrl2
 END
 
 IF~~THEN BEGIN SanhealScrl2
@@ -16,7 +17,7 @@ END
 
 IF ~Global("BG1FlirtHeal","LOCALS",1) ~THEN BEGIN SanFlirtHeal11
 SAY ~ (Just in time Sandrah has cast one of her healing spells on you.) ~
-IF~~THEN REPLY ~ Wow, you're a most powerful healer, Sandrah. Not even Frendan back in Candlekeep could have done that better.~ DO ~SetGlobal("BG1FlirtHeal","LOCALS",2)~ GOTO SanFlirtHeal12
+IF~~THEN REPLY ~ Wow, you're a powerful healer, Sandrah. Not even Frendan back in Candlekeep could have done that better.~ DO ~SetGlobal("BG1FlirtHeal","LOCALS",2)~ GOTO SanFlirtHeal12
 END
 
 IF~~THEN BEGIN SanFlirtHeal12
@@ -295,6 +296,7 @@ END
 IF~ Global("SanDungtalk","GLOBAL",1)~ THEN BEGIN SanDungFi1
 SAY~ (Sandrah has moved up closely to your side and has laid her hand on your shoulder while continuing in the area, slowly and carefully.)~
 IF ~~THEN REPLY~ Fear nothing, little one, we are here together. Whatever is ahead should rather fear us.~ DO ~ SetGlobal("SanDungtalk","GLOBAL",2)RealSetGlobalTimer("SanDungtalkInt","GLOBAL",7200)~ GOTO SanDungFi2
+IF ~~THEN REPLY~ Now is not the time for...whatever you have in mind.~ DO ~ SetGlobal("SanDungtalk","GLOBAL",2)RealSetGlobalTimer("SanDungtalkInt","GLOBAL",7200)~ GOTO SanDungFi2
 END
 
 IF~~ THEN BEGIN SanDungFi2
@@ -345,7 +347,7 @@ END
 
 IF~~THEN BEGIN SanDung13
 SAY~ It is true that many a good deed is done unnoticed by the people. It is not personal fame that I really have in mind. But any effort achieved by us may not have a lasting impact, if it were not recognised by the people and seen as an encouragement to follow the example. Every deed counts, sure, but a real change can only be achieved if this vision is shared by many.~
-IF ~~THEN REPLY~ So onwards then, sweet heroine. Let's first do the task and then gather the laurels.~ EXIT
+IF ~~THEN REPLY~ So onwards then, future heroine. Let's first do the task and then gather the laurels.~ EXIT
 IF ~~THEN REPLY~ Enough talking, let's do some deeds.~ EXIT
 END
 
@@ -366,7 +368,7 @@ END
 
 IF ~~ THEN BEGIN PCJonCenteol2
 SAY ~ Never mind, <CHARNAME>. It was just curiosity that made me ask, because I had heard the name before and I was astonished to hear it in a place like this. Probably it does not concern us at all. Hopefully he will never cross our path.~
-IF~~ THEN REPLY ~ I pray for that. We have plenty of opponents that threaten our lives every day - and yours, and yours. ~ DO ~ SetGlobal("CentPC","GLOBAL",2) SetGlobal("SanSpokeCent","LOCALS",1)~ EXIT
+IF~~ THEN REPLY ~ I pray for that. We have plenty of opponents that threaten our lives every day. ~ DO ~ SetGlobal("CentPC","GLOBAL",2) SetGlobal("SanSpokeCent","LOCALS",1)~ EXIT
 END
 
 //Talos
@@ -434,6 +436,7 @@ IF ~ Global("DuerFAInn","GLOBAL",1)~ THEN BEGIN DuerFAInn
 SAY~ Strange. Duergar here on the surface. Far away from any entrance to the underground.~
 IF ~ GlobalLT("SandrahMorningTalk","GLOBAL",7)~ THEN REPLY ~ These are trouble times indeed. Nothing is as it should be. Except for some few important things. (You smile at her trying to look reassuring. You take her hand in yours while you continue your march. There is no objection from her side.) ~ DO ~ SetGlobal("DuerFAInn","GLOBAL",2)~ EXIT
 IF ~ GlobalGT("SandrahMorningTalk","GLOBAL",6)~ THEN REPLY ~ These are trouble times indeed. Nothing is as it should be.~ DO ~ SetGlobal("DuerFAInn","GLOBAL",2) ~EXIT
+IF ~~ THEN REPLY ~ Let others worry about them, Sandrah. We have our own problems to solve.~EXIT
 END
 
 // Book of Unknowing
@@ -576,6 +579,7 @@ END
 IF~Global("SanCandlOgr","LOCALS",1)~THEN BEGIN SarvArrog
 SAY~ That arrogant fool, calling himself the *Son of Murder* now openly is making promises to his followers for the time of his *immortality* already.~
 IF~~THEN REPLY ~ There are no more doubts now, counselor. Our findings and your learned analysis of the facts are proven correct now. Even if I had preferred your error, if you know what I mean.~ DO~ SetGlobal("SanCandlOgr","LOCALS",2)~GOTO SarvArrog2
+IF~~THEN REPLY ~ THAT *Son of Murder* will not reach his goal, I tell you. ~ DO~ SetGlobal("SanCandlOgr","LOCALS",2)~GOTO SarvArrog2
 END
 
 IF~~ THEN BEGIN SarvArrog2
@@ -2204,6 +2208,7 @@ IF ~~ THEN REPLY ~ (You decide there will be better occasions in the future.) ~ 
 IF ~~ THEN REPLY ~ It is good to have you in the party, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Nice1
 IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO StandardComp
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanHamCl
@@ -2228,6 +2233,7 @@ IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ GOTO StandardComp2
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF ~~ THEN BEGIN StandardComp2
@@ -2246,6 +2252,7 @@ IF ~~ THEN REPLY ~ Where are you from, Sandrah? ~ GOTO SanWater
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanNoMage1
@@ -2302,6 +2309,7 @@ IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~ No
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanKnoDrizPC1
@@ -2550,7 +2558,7 @@ END
 // PID Pack 8
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",7) ~ THEN BEGIN SanPCInit7
-SAY ~ (As Sandrah sees you come near, she starts to busily examine the tome of Faerun history she always studies at quiet moments. She makes you feel clearly that is is not the time to talk with you.) ~ 
+SAY ~ (As Sandrah sees you come near, she starts to busily examine the tome of Faerun history she always studies at quiet moments. She makes you feel clearly that is is not the time to talk with you.) ~
 IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
@@ -2602,6 +2610,7 @@ IF ~ Global("Godtalk","LOCALS",0) !AreaType(DUNGEON)~ THEN REPLY ~ Sandrah, how 
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanAcArF
@@ -2796,6 +2805,7 @@ IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPL
 IF ~ Global("PCKnowsElmDaughter","GLOBAL",1) Global("SanElmInf1","LOCALS",0) GlobalGT("Chapter","GLOBAL",2) ~ THEN REPLY ~ Sandrah, your father and yourself have different reasons to be interested in me, at least this is my interpretation of what I heard from both of you.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanElmInf11
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~ (You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanGay
@@ -3348,6 +3358,7 @@ IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good pla
 IF ~ Global("XanDecide","GLOBAL",3) InParty("Xan")~ THEN REPLY ~ Sandrah, my love, we must talk about Xan urgently.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~ Global("rainbFav","LOCALS",0) ~ THEN REPLY ~ Sandrah, what is your favourite colour?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF ~~ THEN BEGIN Xanchos1
@@ -3679,6 +3690,7 @@ IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good pla
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN LoveSnak1 
@@ -4190,6 +4202,7 @@ IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need
 IF~Global("SanMadele","Global",1)~THEN REPLY~I am contemplating Madele's words about that Harper's raid and the stolen children.~GOTO SanMadel1
 IF~GlobalGT("bd_explosives_plot","Global",1) Global("SanLanciedb","Locals",0)~THEN REPLY~I could see that you had to restrain yourself quite a bit not to strike that Torsin de Lancie down with your hammer.~DO~SetGlobal("SanLanciedb","Locals",1)~ GOTO Lancie1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
+IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF~~THEN BEGIN SanvaultSum
