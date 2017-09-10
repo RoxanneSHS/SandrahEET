@@ -903,6 +903,8 @@ IF ~Global("Santlove","GLOBAL",4)~ THEN BEGIN SanFirstN1SI
 SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and unpenetrable look, that seems to say everything and nothing at the same time.)~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
+IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
+IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
 END
 
 IF ~Global("Santlove","GLOBAL",6)~ THEN BEGIN AfterFN1
@@ -962,11 +964,13 @@ END
 IF ~ Global("SanIdolTake","GLOBAL",3)~ VaRevF1
 SAY ~ So this is the famous or rather *infamous* Vampire's Revenge. <CHARNAME>, remember not to use it.~
 IF~~THEN REPLY ~ But what to do with it now? ~ GOTO VaRevF2
+IF~~THEN REPLY ~ I hear your words but I will decide nyself. ~ GOTO VaRevF2
 END
 
 IF~~ THEN BEGIN VaRevF2
 SAY ~ We should get ourself some holy water from the Beregost Temple and then go to visit the ghost cave nearby. Torqion required those two items to end his spooking. I think the town's people would be grateful if we could end the horror there.~
-IF ~~ THEN REPLY~ Thank you, my counselor. (You lay your arm around her waist and walk entwined with her for a while.) ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
+IF ~~ THEN REPLY~ Thank you, my counselor.  ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
+IF ~~ THEN REPLY~ One possible option.  ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
 END
 
 IF ~ Global("SanIdolTake","GLOBAL",5)~ THEN BEGIN VaRevF3
@@ -2989,6 +2993,8 @@ IF ~~ THEN BEGIN SanFirstN1
 SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and unpenetrable look, that seems to say everything and nothing at the same time.)~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
+IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
+IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
 END
 
 IF ~~ THEN BEGIN SanFirstN2m
