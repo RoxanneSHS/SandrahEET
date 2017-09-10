@@ -2131,6 +2131,7 @@ END
 IF~Global("SanBG1ShauPrev","GLOBAL",6)~ THEN BEGIN ShauPrevInGate3
 SAY ~ A very powerful but blind orc shaman and his guide, hm.~
 IF ~~ THEN REPLY ~ Any idea what they were searching?~GOTO ShauPrevInGate4
+IF ~~ THEN REPLY ~ Obviously they lost their way. Or do you have some deeper insight?~GOTO ShauPrevInGate4
 END
 
 IF~~ THEN BEGIN ShauPrevInGate4
@@ -2149,13 +2150,14 @@ IF ~~ THEN REPLY ~ Sandrah?~ DO~ SetGlobal("SanTamoko","LOCALS",2)~ GOTO SanTamo
 END
 
 IF ~~ THEN BEGIN SanTamoko2
-SAY ~ That poor Tamoko, cursed to love the wrong Bhaalspawn like I am blessed to love the right one. Her story has confirmed everything we have learned about Sarevok so far.~
+SAY ~ That poor Tamoko, cursed to love the wrong Bhaalspawn like I am blessed to follow the right one. Her story has confirmed everything we have learned about Sarevok so far.~
 IF ~~ THEN REPLY ~ And such a fate could have been mine, had not Gorion and your father had their hands shielding over me. And Elminster's daughter in the times of ordeal.~ GOTO SanTamoko3
+IF ~~ THEN REPLY ~ That Sarevok is a fool and that will be his downfall.~ GOTO SanTamoko3
 END
 
 IF ~~ THEN BEGIN SanTamoko3
 SAY ~ But she also revealed, that the way for you or him was not set but a path to be chosen and a path that can be altered even later on by redemption.~
-IF ~~ THEN REPLY ~ One thing is strange however. He sees himself as my brother and me as his family. It is his prime reason to be after me like that.~GOTO SanTamoko4
+IF ~~ THEN REPLY ~ One thing is strange however. He sees himself as my brother and me as his family. It is his prime reason to be after me like that?~GOTO SanTamoko4
 END
 
 IF ~~ THEN BEGIN SanTamoko4
@@ -2169,10 +2171,11 @@ SAY ~ It is not for me to either condemn or forgive him, <CHARNAME>. That is you
 IF ~~ THEN REPLY ~ You have been my counselor and my lover through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
 IF ~~ THEN REPLY ~ You have been my counselor through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
 IF ~~ THEN REPLY ~ This venture has been our common one since the beginning, it is not my decision alone that counts here. You have heard it once again from Tamoko, this is not a *family affair*, millions of lives on Toril are at stake here.~  GOTO  SanTamoko6
+IF ~~ THEN REPLY ~ For the survival of the Realms, his defeat is as sure as his death.~ EXIT
 END
 
 IF ~~ THEN BEGIN SanTamoko6
-SAY ~ I love you for every word that you have said. Yes, we cannot just decide for us here, but for the fate of the Sword Coast and the Realms. It will all depend on Sarevok once we have him tracked down. When he sees his defeat, it will be him to give us the evidence on which we will decide.~
+SAY ~ I respect you for every word that you have said. Yes, we cannot just decide for us here, but for the fate of the Sword Coast and the Realms. It will all depend on Sarevok once we have him tracked down. When he sees his defeat, it will be him to give us the evidence on which we will decide.~
 IF ~~ THEN REPLY ~ So be it.~ EXIT
 IF ~~ THEN REPLY ~ For the survival of the Realms, his defeat is as sure as his death.~ EXIT
 END
