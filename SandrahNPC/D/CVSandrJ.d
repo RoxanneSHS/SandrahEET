@@ -2919,6 +2919,7 @@ END
 IF ~~ THEN BEGIN  rainbFav2
 SAY ~ It only shows that I am a young girl after all, just trying to make up my mind on a lot of things. I am not set in my opinions and I am willing to learn.~
 IF ~~ THEN REPLY ~ That is true of course. But most of the time you are very straight forward and appear to be so very sure of your actions and beliefs.~ GOTO rainbFav3
+IF ~~ THEN REPLY ~ You have your answers and excuses for everything. Even when you contradict yourself.~ GOTO rainbFav3
 END
 
 IF ~~ THEN BEGIN  rainbFav3
@@ -2930,6 +2931,7 @@ IF ~~ THEN BEGIN  rainbFav4
 SAY ~ (Laughs) <CHARNAME>, you really have a talent for the *wrong* question. I do not have one. Today I lust for a bowl of Waterdeep fishsoup, but probably just because there is no chance to get one. And you could make me happy with a very fresh piece of deer loin. But I am afraid with our hunting talents that will as well remain an illusion.~
 =~ You see, it has some advantage to remain flexible. Whatever lands on our dining table tonight, might just turn out to become my favourite dish.~
 IF ~~ THEN REPLY ~ One thing I can make sure for you. You will love the dessert. Here is a little appetizer. (Kiss her on the lips.)~ DO ~ SetGlobal("rainbFav","LOCALS",1)~ EXIT
+IF ~~ THEN REPLY ~ I'm sure you have your limits like all of us.~ DO ~ SetGlobal("rainbFav","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanMkStake5
@@ -2948,7 +2950,7 @@ IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I had the feeling that a littl
 END
 
 IF ~~ THEN BEGIN SanEdLoveBoy21
-SAY ~ Let me feel your forehead, my darling, is it fever that haunts you? Fine, a bit of jealousy does a woman good, it makes her feel wanted and desired by her true lover. But why did you chose Edwin? That is really an insult.~
+SAY ~ Let me feel your forehead, is it fever that haunts you? Fine, a bit of jealousy does a woman good, it makes her feel wanted and desired by her true lover. But why did you chose Edwin? That is really an insult.~
 IF ~~ THEN REPLY ~ Those Thayan red robes have a reputation in the arts of love. An issue that is of not too little interest to you as well.~ DO ~ SetGlobal("SanEdLoveBoy","LOCALS",3)~ GOTO SanEdLoveBoy23
 END
 
@@ -2960,11 +2962,13 @@ END
 IF ~~ THEN BEGIN SanEdLoveBoy23
 SAY ~ I really do not have much need for a wicked wizard in my bed at all. The space is already occupied by the most wonderful, tender, and satisfying lover of the Realms. If only this guy could use his mouth more often for useful things instead of utterly foolish babbling.~
 IF~~ THEN REPLY ~ Useful things like this? (Kiss her passionately.) ~ EXIT
+IF~~ THEN REPLY ~ I should have known it was a mistake to bring up this topic in the first place. ~ EXIT
 END
 
 IF ~~ THEN BEGIN SanEdLoveBoy24
-SAY ~ Neither is it for you, darling. So what do you intend? Let us use him to teach us things we may not dream up ourselves? I would rather we find everything out by our own than with him.~
+SAY ~ Neither is it for you. So what do you intend? Let us use him to teach us things we may not dream up ourselves? I would rather we find everything out by our own than with him.~
 IF~~ THEN REPLY ~ (Laugh.) I see, there is no way to convince you of his *usefulness*. Poor Edwin. Too bad he never tried on me.~ EXIT
+IF~~ THEN REPLY ~ I should have known it was a mistake to bring up this topic in the first place. ~ EXIT
 END
 
 IF ~~THEN BEGIN Sanhairdo1
@@ -2978,6 +2982,7 @@ SAY ~ Then my efforts to look beautiful for the one I care for are not wasted, t
 IF~~THEN REPLY ~ Well, yes, if nature endows one so richly, any artifical attemt to improve it is wasted.~ GOTO Sanhairdo3
 IF~~THEN REPLY ~ You have proven that there is no natural beauty that cannot be improved by a skilled artist to an even higher level.~ GOTO Sanhairdo3
 IF~~THEN REPLY ~ One thing I adore in you, is that I do not have to make such decisions. Any new aspect you show me of yourself is wonderful. It is your ever-changing nature that makes you so special.~ GOTO Sanhairdo3
+IF~~THEN REPLY ~ It's wasted effort anyway. Put your helmet on, we're marching again.~ GOTO Sanhairdo3
 END
 
 IF~~THEN BEGIN Sanhairdo3
@@ -3008,17 +3013,18 @@ END
 IF~~THEN BEGIN  Pidlock3
 SAY ~ Not at all! As you may recall the adventurer Midnight, the woman Mystra was before becoming a goddess, was not only known for her fighting powers. Bards have composed and sung countless songs about her legendary beauty. ~
 IF~~THEN REPLY ~ Then you are performing your duty as her priestess perfectly, as I cannot imagine a bard in the Realms who would not sing of your beauty when he sees you.~ DO~ IncrementGlobal("PidLock","LOCALS",1)~EXIT
+IF~~THEN REPLY ~ Then your vanity is inherited. ~ DO~ IncrementGlobal("PidLock","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN  SanPCGavT1
 SAY ~ He is a nice man, if that is what you mean, a bit shy which sometimes makes him appear clumsy. And he lacks a bit of the decisiveness I like to see in a man - and in a woman as well.~
 IF ~~ THEN REPLY ~ Hey, if you say *nice*, I can almost guess what you have in mind with him. Beware! You are all mine.~ GOTO SanPCGavT2
-IF ~~ THEN REPLY ~ That is almost the same that I would say about him. How much do you like him, Sandrah.~ GOTO SanPCGavT2
+IF ~~ THEN REPLY ~ That is almost the same that I would say about him. How much do you like him, Sandrah?~ GOTO SanPCGavT2
 END
 
 IF~~THEN BEGIN  SanPCGavT2
-SAY ~ Loveliest <CHARNAME>, do I hear something like jealousy from you. You will probably not forbid me a little fun with a man. I am only trying to learn to make things more wonderful for us.~
-= ~ But honestly, darling, he is nice and all, but not really my choice. And - hm, he seems to be much more interested in you.~
+SAY ~ <CHARNAME>, do I hear something like jealousy from you. You will probably not forbid me a little fun with a man. .~
+= ~ But honestly, he is nice and all, but not really my choice. And - hm, he seems to be much more interested in you.~
 IF ~~ THEN REPLY ~ Is that what you are talking about with him then? You are talking about me?~ DO ~ SetGlobal("SanPCGavT","LOCALS",1) ~ GOTO SanPCGavT3
 END
 
@@ -3034,14 +3040,9 @@ IF~~THEN REPLY ~ This kind of indecision is not the Sandrah I know. Please, be o
 END
 
 IF~~THEN BEGIN  SanPCGavT5
-SAY ~ Gavin is an honest and earnest man, Sandrah, not like those I choose for my little fun. They know what to expect with me and they get it on a mutual basis. Gavin really cares for you. You should not misuse him if you do not feel more for him. I beg you not to just play with him, that would be unfair. If you just want a little flirt or one-night stand, we will find one for you in the next town we enter. ~
-IF~~THEN REPLY ~ You are right, I guess. Also it would bring a lot of trouble to our common group if I did that just for a little fun. Best we let things just develop, I cannot make up my mind about him at the moment. ~ GOTO SanPCGavT6
+SAY ~ Gavin is an honest and earnest man, <CHARNAME>, not like those I choose for my little fun. They know what to expect with me and they get it on a mutual basis. Gavin really cares for you. You should not misuse him if you do not feel more for him. I beg you not to just play with him, that would be unfair. If you just want a little flirt or one-night stand, we will find one for you in the next town we enter. ~
+IF~~THEN REPLY ~ You are right, I guess. Also it would bring a lot of trouble to our common group if I did that just for a little fun. Best we let things just develop, I cannot make up my mind about him at the moment. ~ EXIT
 IF~~THEN REPLY ~ You are right, I guess. Just one more thing, sweetheart. Does he have any idea about us two? ~ GOTO SanPCGavT7
-END
-
-IF~~THEN BEGIN  SanPCGavT6
-SAY ~ If you give it a bit more time, he may even learn more about us two. I have no idea how he would react if he finds we are more than just very good friends. He appears to be quite tolerant and unbiased, but to imagine us as lovers may be beyond his imagination.~
-IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN  SanPCGavT7
