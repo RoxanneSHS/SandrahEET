@@ -3804,6 +3804,7 @@ END
 IF~~THEN BEGIN  SanTmplHeal1
 SAY ~ You have done the same, <CHARNAME>, have you forgotten already? It was your blood you gave that rescued Leyala. I was only Mystra's instrument in that.~
 IF~~THEN REPLY ~ I observe that you are a bit shy to be appreciated for your enourmous healing abilities. Not even the high priests at the Temple were able to use the power of the Weave like you did.~ DO~ SetGlobal("SanTmplHealL","LOCALS",1) ~ GOTO SanTmplHeal2
+IF~~THEN REPLY ~ I have my doubts. Not even the high priests at the Temple were able to use the power of the Weave like you did.~ DO~ SetGlobal("SanTmplHealL","LOCALS",1) ~ GOTO SanTmplHeal2
 END
 
 IF~~THEN BEGIN  SanTmplHeal2
@@ -3828,21 +3829,29 @@ IF ~~ THEN BEGIN  BranLeft2
 SAY ~ Neither do I. We will keep all these sweet moments we had with her in our common memory. Who knows, we may see her again some day on our travels.~
 IF ~~ THEN REPLY ~ I love you, Sandrah. Let us raise our glasses to her and to many a victorious battle waiting ahead for us. This is the spirit she would expect from us.~ EXIT
 IF ~~ THEN REPLY ~ You have sworn that Mystra will demand never such a step from you. I would not be able to take that loss, Sandrah. But this eve let us raise our glasses to her and to many a victorious battle waiting ahead for us. This is the spirit she would expect from us.~ EXIT
+IF ~~ THEN REPLY ~ This eve let us raise our glasses to her and to many a victorious battle waiting ahead for us. This is the spirit she would expect from us.~ EXIT
 END
 
 IF ~~ THEN BEGIN  MinscFlow1
 SAY ~ I would wear one for you, if the space were not already occupied. This one is from a secret admirer.~
 IF ~~ THEN REPLY ~ What. Who is it? ~ GOTO MinscFlow2
+IF ~~ THEN REPLY ~ Who is it? ~ GOTO MinscFlow2
 END
 
 IF ~~ THEN BEGIN  MinscFlow2
 SAY ~ (Smiles) The essence of a secret admirer is that he is secret, <CHARNAME>. Nothing however for you to worry about, I swear it to you.~
 IF ~~ THEN REPLY ~ If you say so, I have no reason to doubt it. (Kiss her.) Don't blame me if I rise a bit earlier tomorrow morning, so I can be the one to give you my flower to wear for the new day.~ GOTO MinscFlow3
 IF ~~ THEN REPLY ~ Hm, I will keep my eyes open, my love. You should warn your *secret admirer* about my deadly jealousy however. (Laugh and kiss her gently.)~ GOTO MinscFlow3
+IF ~~ THEN REPLY ~ Hm, I will keep my eyes open. I need to know what is going on in my party.~ GOTO MinscFlow4
 END
 
 IF ~~ THEN BEGIN  MinscFlow3
 SAY ~ (She responds to your kiss so passionately that any doubt about whom she loves is dismissed immediately.) ~
+IF~~THEN DO ~ SetGlobal("MinskFlow","LOCALS",1)~ EXIT
+END
+
+IF ~~ THEN BEGIN  MinscFlow4
+SAY ~ Really? Have you heard of medical confidentiality? ~
 IF~~THEN DO ~ SetGlobal("MinskFlow","LOCALS",1)~ EXIT
 END
 
