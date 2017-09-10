@@ -3454,7 +3454,7 @@ IF ~~ THEN REPLY ~ You know already what is happening?~ GOTO Xanchos2
 END
 
 IF ~~ THEN BEGIN Xanchos2
-SAY ~ Oh, my silly sweetheart. First him and now you. I appreciate your care for my feelings, but you both misunderstand me completely. <CHARNAME>, I am completely happy for you both. My beloved friends have finally discovered their true feelings for each other, is that not wonderful?~
+SAY ~ First him and now you. I appreciate your care for my feelings, but you both misunderstand me completely. <CHARNAME>, I am completely happy for you both. My beloved friends have finally discovered their true feelings for each other, is that not wonderful?~
 IF~~THEN REPLY ~ But you love Xan yourself, don' you...?~ GOTO Xanchos3
 END
 
@@ -3466,6 +3466,7 @@ END
 IF ~~ THEN BEGIN Xanchos4
 SAY ~ My, how could it? Our love has gained another dimension today. Love does not lessen just because you share it with more people - it is an endless resource in itself. Now run and kiss your love-hungry elf before he faints from neglect and we have to carry him.~
 IF ~~ THEN REPLY ~ Sandrah, you are so wonderful, so different from anyone I know. Probably that is why I love you so.~DO ~ SetGlobal("XanDecide","GLOBAL",4)~EXIT
+IF ~~ THEN REPLY ~ Sandrah, you are so wonderful, so different from anyone I know. Friendship like this is just as valuable as love itself.~DO ~ SetGlobal("XanDecide","GLOBAL",4)~EXIT
 END
 
 IF ~~ THEN BEGIN GorLet1
@@ -3476,7 +3477,7 @@ END
 
 IF ~~ THEN BEGIN GorLet2
 SAY ~ This letter is from my father, it is his handwriting and it is signed *E.* As Elminster.~
-IF~~THEN REPLY ~ It just confirms what we know already. Your father had sensed the approaching danger. You had seen the same in his shard, Sandrah. Anything else? Something I may have overseen?~ GOTO GorLet4
+IF~~THEN REPLY ~ It just confirms what we know already. Your father had sensed the approaching danger. You had seen the same in his shard, Sandrah. Anything else? Something I may have overlooked?~ GOTO GorLet4
 END
 
 IF ~~ THEN BEGIN GorLet3
@@ -3487,6 +3488,7 @@ END
 IF ~~ THEN BEGIN GorLet4
 SAY ~ (She repeats slowly) *We have done what we can for those in thy care, but the time nears when we must step back and let matters take what course they will.  We have, perhaps, been a touch too sheltering to this point.* Those in thy care!~
 IF ~~ THEN REPLY ~ The two babies! ~ DO ~ SetGlobal("Gorlet","LOCALS",1)~ GOTO GorLet5
+IF ~~ THEN REPLY ~ Those? Me and...? ~ DO ~ SetGlobal("Gorlet","LOCALS",1)~ GOTO GorLet5
 END
 
 IF ~~ THEN BEGIN GorLet5
@@ -3543,7 +3545,7 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 END
 
 IF~~THEN BEGIN SanBhaalRev2
-SAY ~ Yes, you know your lore well <CHARNAME>. But there are some important details to be added. The adventurers went out in pairs to pursue the renegade gods. So Cyric and his betrothed Midnight went to chase Myrkul and Bhaal together, as they were partners also in love. You must know that those two were also parents already of a son that had come to adulthood shortly before the events.~
+SAY ~ Yes, you know your lore well <CHARNAME>. But there are some important details to be added. The adventurers went out in pairs to pursue the renegade gods. So Cyric and his betrothed Midnight went to chase Myrkul, Bane and Bhaal together, as they were partners also in love. You must know that those two were also parents already of a son that had come to adulthood shortly before the events.~
 IF ~~ THEN REPLY ~ I see, so as Bhaal had foreseen his death he was also aware who would kill him, or at least he knew it would be the pair of Midnight and Cyric. And your father is the most prominent disciple of Mystra on Toril. The target of his revenge.~ GOTO SanBhaalRev3
 END
 
@@ -3566,11 +3568,13 @@ IF~~THEN BEGIN  PidBhaal10
 SAY ~ Yes, all of that is true - except for the last one. My interest in you is of a different nature.~
 IF ~~ THEN REPLY~ But you knew who I was all the time, did you not?~ GOTO PidBhaal11
 IF ~~ THEN REPLY~ This is not really true. Yes, you love me now, but you came to me in search of a Bhaalspawn not in search of a lover.~ GOTO PidBhaal11
+IF ~~ THEN REPLY~ This is not really true. Yes, you trust me now, but you came to me in search of a Bhaalspawn not in search of a friend.~ GOTO PidBhaal11
 END
 
 IF~~THEN BEGIN  PidBhaal11
 SAY ~ Truth is that I did not know that it was you who was the Bhaalspawn I came looking for. Let me tell you everything step by step and you will see. I had no picture of this whole connections until now, just little pieces here and there of the puzzle - just like that torn bedsheet we found together piece by piece. And I had no idea how wonderful and loving you were.~
 IF ~~ THEN REPLY~ I have found in our relationship already that you cannot be so easily judged. Please forgive me my words. I know that the explanation is probably more complex than I quickly assumed.~ GOTO PidBhaal12
+IF ~~ THEN REPLY~ Does anything ever turn out the way we perceive it?~ GOTO PidBhaal12
 END
 
 IF~~THEN BEGIN  PidBhaal12
@@ -3621,12 +3625,14 @@ IF~~THEN BEGIN SanGodtalk2
 SAY ~ Remember your history lessons in Candlekeep, <CHARNAME>, what did you learn about my goddess?~
 IF~~THEN REPLY~ Actually she was just an adventurer who slayed the former goddess during the period when the avatars walked on Toril. She took the slain one's name and cloak and was made her successor by the Overgod Ao.~ GOTO SanGodtalk3
 IF~~THEN REPLY~ She was human in the beginning. Midnight was one of the adventurers who were called by the Overgod Ao to pursue the renegade gods' avatars on Toril during the Time of Troubles. She and her partner Cyric traced Bhaal and Myrkul, and in a fight of several days finally slayed them. The adventurers were later granted godhood themselves.~ GOTO SanGodtalk3
+IF~~THEN REPLY~ She was a love-hungry party girl who earned herself the nickname *Midnight* and obviously the prototype for young priestesses to follow her. ~ GOTO SanGodtalk3
 END
 
 IF~~THEN BEGIN SanGodtalk3
 SAY ~ (Laughs) You have a way to tell these fundamental religious stories in an even more profane way than I could. Nevermind, you do not hurt anything in me with that. You are completely right. Midnight was an adventurer, providing her magic skills and fighting power to fight evil. A well-known heroine in her time.~
 = ~ She and her friends were appointed then by Ao, alongside Helm, to bring the renegade gods to reason and stop their destructive ploy for power. Ao trusted those mortals more than his godly fellowers to help the good side to win against the darkness. ~
 IF~~THEN REPLY ~ So you see in her more a figure to identify with than a heavenly power that rules your life. I mean, you being yourself an adventurer with magic skills and remarkable fighting power.~GOTO  SanGodtalk4
+IF~~THEN REPLY~ She was a love-hungry party girl who earned herself the nickname *Midnight* and obviously the prototype for young priestesses to follow her. ~ GOTO SanGodtalk4
 END
 
 IF~~THEN BEGIN SanGodtalk4
@@ -3681,12 +3687,12 @@ IF ~~ THEN REPLY ~ Thank you for this advice, my teacher. I am glad you never ti
 END
 
 IF ~~ THEN BEGIN Xanrevery1
-SAY~ Are we not lovers who share exactly that, <CHARNAME> ?~
-IF ~~ THEN REPLY ~ It is not about you and me this time, my love, it is about Xan.~ GOTO Xanrevery2
+SAY~ Do we not share exactly that, <CHARNAME> ?~
+IF ~~ THEN REPLY ~ It is not about you and me this time, it is about Xan.~ GOTO Xanrevery2
 END
 
 IF ~~ THEN BEGIN Xanrevery2
-SAY ~ I have no secrets with him that you may not ask me about. It may even be easier to ask me then him. (Smiles conspiratorially.) We both know him too well, sweetheart.~
+SAY ~ I have no secrets with him that you may not ask me about. It may even be easier to ask me then him. (Smiles conspiratorially.) We both know him too well.~
 IF ~Race(Player1,ELF) ~ THEN REPLY ~ Did you experience the revery once with him?~ GOTO Xanrevery3
 IF ~Race(Player1,HALF_ELF) ~ THEN REPLY ~ Did you experience the revery once with him?~ GOTO Xanrevery4
 END
@@ -3706,6 +3712,7 @@ END
 IF ~~ THEN BEGIN Xanrevery5
 SAY ~ You did not hurt me in any way, you just confirmed how much of a better choice you are for Xan in the end. I would never have been able to give him this ultimate fulfilment of my love. I am more than well rewarded to see you two have come to that wonderful point in your relationship.~
 IF ~~ THEN REPLY ~ Oh, Sandrah, how much I love you!~ DO~ SetGlobal("Xanrever","LOCALS",1)~EXIT
+IF ~~ THEN REPLY ~ Oh, Sandrah, how much I appreciate to be your friend!~ DO~ SetGlobal("Xanrever","LOCALS",1)~EXIT
 END
 
 // PID Package 11
