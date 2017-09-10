@@ -1907,6 +1907,7 @@ END
 IF ~~ THEN BEGIN SanBook1
 SAY ~ Besides my education in the arts of Mystra I have this very special copy of Elminster's History of Faerun that you have seen me studying whenever time allows. So if I do not know what a thing is right away, chances are good that I may identify it with the help of this tome.~
 IF ~~ THEN REPLY ~ With you, one has to expect a new surprise at every turn. (You smile at her) I will make use of your many talents as good as I can.~ DO ~ SetGlobal("SanBeltGen","GLOBAL",2)~ EXIT
+IF ~~ THEN REPLY ~ You come well prepared to this adventure, Sandrah. I wonder what else you know...~ DO ~ SetGlobal("SanBeltGen","GLOBAL",2)~ EXIT
 END
 
 // Find the second Demon Cave
@@ -2026,6 +2027,7 @@ IF~~THEN BEGIN SanIrTRetCC4
 SAY ~ Clever questions, <CHARNAME>.~
 IF ~~ THEN REPLY ~ (Smile) I am learning daily - from the best, from you.~ GOTO SanIrTRetCC5
 IF ~~ THEN REPLY ~ And has my clever counselor the answers?~GOTO SanIrTRetCC5
+IF ~~ THEN REPLY ~ Does any of this help us with our case?~GOTO SanIrTRetCC5
 END
 
 IF~~THEN BEGIN SanIrTRetCC5
@@ -2039,11 +2041,12 @@ END
 IF~~THEN BEGIN SanIrTRetCC6
 SAY ~ Hm. Hm?~
 IF ~~ THEN REPLY ~ You are not convinced of this interpretation?~ GOTO SanIrTRetCC7
+IF ~~ THEN REPLY ~ Something else?~ GOTO SanIrTRetCC7
 END
 
 IF~~THEN BEGIN SanIrTRetCC7
 SAY ~ More or less I agree to your conclusion. Only - I have the feeling we are missing some small detail that might in the end prove to be important. Why, for example, does he lie about our elimination? ~
-IF ~~ THEN REPLY ~ For some reason he wants us to be there as well.~GOTO SanIrTRetCC7
+IF ~~ THEN REPLY ~ For some reason he wants us to be there as well.~GOTO SanIrTRetCC8
 IF ~~ THEN REPLY ~ It is doubly a trap, a trap for his father and a trap for us. But how?~  GOTO SanIrTRetCC8
 END
 
