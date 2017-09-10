@@ -3860,6 +3860,7 @@ SAY ~ Imagine that scum wanted to celebrate the event with me.~
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ And you really could say no to *such* a man. I'm not so sure I would let such a chance go past.~ GOTO EdCursGon2
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I am glad you let the chance go past. There is nothing he may have in all his sophistication and experience that I could not learn - with you.~ GOTO EdCursGon3
 IF ~~ THEN REPLY ~ You should have taken the chance and learn something from him - just that the two of us can enjoy it together afterwards.~ GOTO EdCursGon4
+IF ~~ THEN REPLY ~ Doppelganger, you let the chance go past? Where is Sandrah?~GOTO EdCursGon6
 END
 
 IF ~~ THEN BEGIN  EdCursGon2
@@ -3877,6 +3878,12 @@ END
 IF ~~ THEN BEGIN  EdCursGon4
 SAY ~ Darling, I am sure we do not need such help from one like Edwin. I would rather continue to learn it slowly bit by bit - together with you, like we have enjoyed to experience before.~
 IF ~~ THEN REPLY ~ Oh, yes, this promise I can give you gladly. But say - were you in anyway involved in Mystra's change of mind, I can hardly imagine that? ~ DO ~ SetGlobal("EdCursGon","LOCALS",1)~ GOTO
+EdCursGon5
+END
+
+IF ~~ THEN BEGIN  EdCursGon6
+SAY ~ You're right, why did I not consult you before I rejected him! I could have learned so much - all those bad experiences I never had.~
+IF ~~ THEN REPLY ~ Mh. But say - were you in anyway involved in Mystra's change of mind, I can hardly imagine that? ~ DO ~ SetGlobal("EdCursGon","LOCALS",1)~ GOTO
 EdCursGon5
 END
 
