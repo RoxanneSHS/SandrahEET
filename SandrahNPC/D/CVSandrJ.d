@@ -3992,11 +3992,13 @@ END
 IF ~~ THEN BEGIN  SanSociety1
 SAY ~ Huh, <CHARNAME>, do not walk so close to me, please, we might be seen together. My, what would people think! (Laughs heartily.)~
 IF~~THEN REPLY ~Right, I confess my question came out a bit silly. I mean I know that obviously you don't care at all about such things. ~ DO~SetGlobal("SanNobility","LOCALS",1)~ GOTO SanSociety2
+IF~~THEN REPLY ~Think I already understood. ~ DO~SetGlobal("SanNobility","LOCALS",1)~ GOTO SanSociety2
 END
 
 IF ~~ THEN BEGIN  SanSociety2
 SAY ~ I try to take people for what they are and pay them the respect I think they deserve, not the one they appoint to themselves by fancy or inherited titles.~
 IF~~THEN REPLY ~ You seem to treat all nobles, dukes and such as your equal and I bet you wouldn't even bow to a king. But isn't part of the respect people pay to you due to your father.~ GOTO SanSociety3
+IF~~THEN REPLY ~ Such pride may easily lead to one's downfall.~ GOTO SanSociety3
 END
 
 IF ~~ THEN BEGIN  SanSociety3
@@ -4007,8 +4009,8 @@ END
 IF ~~ THEN BEGIN  SanSociety4
 SAY ~ (Laughs) Elminster is...Elminster, no titles, no land to rule. He is himself and at home where he lays his head. He is the most free man I know.~
 IF ~~ THEN REPLY ~ As seems to be his daughter. Yes, and I love and respect you for that.~ GOTO SanSociety5
-IF ~~ THEN REPLY ~ His influence on you cannot be denied. You follow him in that, but I understand you do it by your own choice and not by any other obligation. And you follow the path of your grandmother Midnight.~GOTO SanSociety5
-IF ~~ THEN REPLY ~ You free yourself of your heritage first, but then you voluntarily follow your father's ways. Complicated, but I guess I understand you.~ GOTO SanSociety5
+IF ~~ THEN REPLY ~ His influence on you cannot be denied. You follow him in that, but I understand you do it by your own choice and not by any other obligation. And you follow the path of your grandmother Midnight.~GOTO SanSociety5b
+IF ~~ THEN REPLY ~ You free yourself of your heritage first, but then you voluntarily follow your father's ways. Complicated, but I guess I understand you.~ GOTO SanSociety5b
 IF ~~THEN REPLY~ An arrogant fool thinking to be better than any of us. You can't deny that you're his daughter and heiress.~DO~IncrementGlobal("Sanpoints","Global",-2)~EXIT
 END
 
@@ -4017,6 +4019,10 @@ SAY ~ Actually it is for me to pay my respect to you. With the heritage that is 
 IF~~ THEN EXIT
 END
 
+IF ~~ THEN BEGIN  SanSociety5b
+SAY ~ Actually it is for me to pay my respect to you. With the heritage that is yours and a majority of people believing that your path is set by this, you overcome it all to be - you. ~
+IF~~ THEN EXIT
+END
 
 IF ~~THEN BEGIN ZomHom13
 SAY ~ This is about an ancient legend that is common to all the older races on Toril, such as the elves, the orcs and the dwarfs. For many it is more than just a legend but a place that really exists.~
@@ -4040,6 +4046,7 @@ END
 IF ~~THEN BEGIN ZomHom16
 SAY ~ I am sure he has not yet studied those papers himself, otherwise he would not have hidden them and now would need to hunt them. If he had, he would not need them anymore but would rather be out to find those two missing parts. The papers come from different sources and are written in quite a number of differents scripts and old languages. I doubt that a pirate has the knowledge to decipher them. He would need a very learned scholar for such a task.~
 IF ~~ THEN REPLY ~ Someone like you then, my knowledgeable counselor. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
+IF ~~ THEN REPLY ~ A monk like those at Candlekeep. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
 END
 
 IF ~~THEN BEGIN ZomHom17
@@ -4106,6 +4113,7 @@ IF~~THEN BEGIN SanWinskApp22
 SAY ~ Again perfectly right. But the Orloth did not get them, so much he confessed to my bluff. They came safely to Candlekeep. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
 = ~ So the Orloth in the end succeeded to find Sarevok to raise and train him to his liking. At least initially. Sarevok is behind the events we are currently dealing with.~
 IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWinskApp23
+IF ~~ THEN REPLY ~ And he may well be the armoured figure that killed Gorion?~ GOTO SanWinskApp23
 END
 
 IF~~THEN BEGIN SanWinskApp23
@@ -4117,6 +4125,7 @@ IF~~THEN BEGIN SanWinskApp24
 SAY ~ This time you are not fully right, <CHARNAME>. I did not know all of that from the beginning. All I knew was, you were the key to this whole mystery, one of those children. And then I fell in love with you and everything has changed. My reason to be by your side now is - you.~
 = ~ And still you are right. You are now the one to stop the one who tries to become the God of Murder.~
 IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still are granted one in these days. I feel you tell the truth and you always did. And I know that you love me and I will hold on to that for strength.~ DO ~ SetGlobal("SanOrDiId","GLOBAL",9)~EXIT
+IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still are granted one in these days. I feel you tell the truth and you always did. And I know that you support me and I will hold on to that for strength.~ DO ~ SetGlobal("SanOrDiId","GLOBAL",9)~EXIT
 END
 
 IF~~THEN BEGIN SanWinskApp30
@@ -4133,6 +4142,7 @@ IF~~THEN BEGIN SanWinskApp32
 SAY ~ Again perfectly right. But the Orloth did not get them, so much he confessed to my bluff. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
 = ~ So the Orloth in the end succeeded to find his spawn and to raise and train him to his liking. At least initially. We know now that it is this spawn that is behind the events we are currently dealing with.~
 IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWinskApp33
+IF ~~ THEN REPLY ~ And he may well be the armoured figure that killed Gorion?~ GOTO SanWinskApp33
 END
 
 IF~~THEN BEGIN SanWinskApp33
@@ -4144,6 +4154,7 @@ IF~~THEN BEGIN SanWinskApp34
 SAY ~ This time you are not fully right, <CHARNAME>. I did not know all of that from the beginning. All I knew was, you were the key to this whole mystery. And then I fell in love with you and everything has changed. My reason to be by your side now is - you.~
 = ~ And still you are right. You are one of the children who were hunted and you are now the one to stop the one who tries to become the God of Murder.~
 IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still are granted one in these days. I feel you tell the truth and you always did. And I know that you love me and I will hold on to that for strength.~ DO ~ SetGlobal("SanOrDiId","GLOBAL",9)~EXIT
+IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still are granted one in these days. I feel you tell the truth and you always did. And I know that you support me and I will hold on to that for strength.~ DO ~ SetGlobal("SanOrDiId","GLOBAL",9)~EXIT
 END
 
 IF~~THEN BEGIN NiteMass1
@@ -4167,6 +4178,7 @@ END
 IF ~~ THEN BEGIN NiteMass4
 SAY~ (The darkness is now complete around you and Sandrah removes your remaining clothes bit by bit, massaging carefully every new part of your body that becomes undressed.)~
 IF ~~ THEN REPLY ~ (She has turned you now on your back and starts her work on the front part of your body. Whenever you get a chance, you manage to remove a part of her clothes in return.)~ DO ~ SetGlobal("NiteMass","LOCALS",1)~ GOTO NiteMass5
+IF ~~ THEN REPLY ~ (She has turned you now on your back and starts her work on the front part of your body.) Enough. I know well where this will lead to in the end. The medical part is over, thanks. (You tip her light body over and grab your scattered clothes.)~ DO ~ SetGlobal("NiteMass","LOCALS",1)~ GOTO NiteMass6
 END
 
 IF ~~ THEN BEGIN NiteMass5
@@ -4174,6 +4186,10 @@ SAY~ (It does not take long for both of you to be completely naked. The massage 
 IF ~~ THEN REPLY ~ (You now start to return the caresses to Sandrah as the healer turns into a lover. As Sandrah gets more and more aroused, you feel it necessary to silence her mouth with your own lips and tongue - you do not want to keep your tired comrades awake at this hour...)~ DO ~ RestParty()~ EXIT
 END
 
+IF ~~ THEN BEGIN NiteMass6
+SAY~ (She just grins viciously as you turn and walk over to your bedroll.)~
+IF ~~ THEN DO ~ RestParty()~ EXIT
+END
 
 IF ~~ THEN BEGIN  SanMarAj1
 SAY~ I will do anything that will make you two happy together, my sweetheart.~
