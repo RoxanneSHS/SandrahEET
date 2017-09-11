@@ -117,7 +117,7 @@ IF~~THEN REPLY ~ Fine, you have no business then to settle here, just pay a visi
 END
 
 IF ~~ THEN BEGIN SanWDTempl3
-SAY ~ Right, nothing more. And by the way, we can also check out the spells and wares that are offered. But I am happy to share this part of my life with you today. (She embraces you dearly and kisses you long and tenderly.)~
+SAY ~ Right, nothing more. And by the way, we can also check out the spells and wares that are offered. But I am happy to share this part of my life with you today. ~
 IF~~THEN DO~ SetGlobal("SanWDTemplWi","GLOBAL",2)~EXIT
 END
 
@@ -138,12 +138,14 @@ IF ~~ THEN BEGIN SanSpidWeb3
 SAY~ And here you stand like a God for this small insect universe with the power to interfer and turn it one way or another.~
 IF~~THEN REPLY~ (You smile at her and take her hand.) Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 IF~~THEN REPLY~ (You reach out and destroy the fine webs. While you struggle to remove the sticky remains from your fingers, Sandrah has turned away and moved on.)~ EXIT
+IF~~THEN REPLY~ Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 END
 
 IF ~~ THEN BEGIN SanSpidWeb4
 SAY ~ To play God in that small insect universe? Do you think you must interfer just because you have the power to do so.~
 IF~~THEN REPLY~ (You smile at her and take her hand.) Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 IF~~THEN REPLY~ (You reach out and destroy the fine webs. While you struggle to remove the sticky remains from your fingers, Sandrah has turned away and moved on.)~ EXIT
+IF~~THEN REPLY~ Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 END
 
 // Bookhunters
@@ -156,6 +158,7 @@ END
 IF~~THEN BEGIN BookH31
 SAY ~ This is curious. Earrings and tattoos, but not of the Thayan or Calimshan type. Is this a mermaid?~
 IF~~THEN REPLY ~So it was a sailor? At least at sometime in his life. A sailor or a pirate. ~ GOTO BookH32
+IF~~THEN REPLY ~A gypsy, a sailor or a pirate? ~ GOTO BookH32
 END
 
 IF~~THEN BEGIN BookH32
@@ -164,7 +167,7 @@ IF~~THEN REPLY ~Remember when I told you about something written in magic ink. T
 END
 
 IF~~THEN BEGIN BookH33
-SAY ~ You are either just babbling about what just comes to your mind or you are a genius, my love. Wait.~
+SAY ~ You are either just babbling about what just comes to your mind or you are a genius. Wait.~
 =~ *She dashes to the pack holding the book and starts to rush through its pages.* ~
 IF~~ THEN DO~ SetGlobal("SanSuBH","GLOBAL",10) AddexperienceParty(900) RealSetGlobalTimer("BloomwT","GLOBAL",1000)~EXIT
 END
@@ -224,6 +227,7 @@ END
 IF ~ Global("SanSuBH","GLOBAL",13)!InParty("Sufinch") ~ THEN BEGIN FiBookQ60
 SAY~ Here in my book I have found something about that crazy writer Monteelah. Maybe it is helpful, <CHARNAME>. ~
 IF ~~ THEN REPLY ~ Please, just tell it to us, then we may see.~ DO ~ SetGlobal("SanSuBH","GLOBAL",14) RealSetGlobalTimer("BloomwT","GLOBAL",1200)~ GOTO FiBookQ61
+IF ~~ THEN REPLY ~ Still hunting pirate treasure? What a waste of time.~ DO ~ SetGlobal("SanSuBH","GLOBAL",14) RealSetGlobalTimer("BloomwT","GLOBAL",1200)~ GOTO FiBookQ61
 END
 
 IF~~THEN BEGIN FiBookQ61
@@ -240,11 +244,13 @@ END
 IF ~ Global("SanSuBH","GLOBAL",15)~THEN BEGIN BookH60
 SAY~ I just had an idea about that pirate map issue, <CHARNAME>.~
 IF~~THEN REPLY ~ It is funny how one sometimes comes to ideas on a thing when one is *NOT* thinking about just that thing.~ GOTO BookH61
+IF ~~ THEN REPLY ~ Still hunting pirate treasure? What a waste of time.~ GOTO BookH61
 END
 
 IF~~THEN BEGIN BookH61
 SAY ~ (Laughs) Exactly like that. Do you remember that funny guy at the Wyrm's Crossing Bridge? The seller of information?~
 IF~~THEN REPLY ~ Yes, didn't he mention pirates and old lore and such? Furlon. He was quite fond of you. But then, who isn't. Good idea, it doesn't hurt to ask him next time we come to that bridge.~ DO ~ SetGlobal("SanSuBH","GLOBAL",16)~ EXIT
+IF~~THEN REPLY ~ Yes, didn't he mention pirates and old lore and such? Furlon. He was quite fond of you. It wouldn't hurt to ask him next time we come to that bridge.~ DO ~ SetGlobal("SanSuBH","GLOBAL",16)~ EXIT
 END
 
 
@@ -269,6 +275,7 @@ END
 IF~~THEN BEGIN BookH73
 SAY ~ Anyway, we are now involved if we like it or not, because we know the secret. We cannot just give back the book and go our way in peace.~
 IF~~THEN REPLY ~ So it is wait for them to find us or be active and find them instead.~ GOTO BookH74
+IF~~THEN REPLY ~ So we need to find that not dead pirate lord..~ GOTO BookH74
 END
 
 IF~~THEN BEGIN BookH74
@@ -286,6 +293,7 @@ END
 IF~~THEN BEGIN  SanLHpir2
 SAY ~ This issue would only be interesting for one who plans to attack a ship or its crew.~
 IF~~THEN REPLY ~ Like pirates!~ DO ~ AddexperienceParty(650) SetGlobal("SanLHpir","GLOBAL",2) ~ EXIT
+IF~~THEN REPLY ~ Beachcombers!~ DO ~ AddexperienceParty(650) SetGlobal("SanLHpir","GLOBAL",2) ~ EXIT
 END
 
 
@@ -297,6 +305,7 @@ END
 IF~~ THEN BEGIN MontCofPir2
 SAY ~ No, otherwise they would have noticed who we are right from the beginning. But at least we know now that our assumptions on the hidden treasure have some validity. It must be something very special we have discovered here, given all the people who had to die for it already.~
 IF~~THEN REPLY ~ And just think of how fiercly they continue on our trail. Somehow we have to find out more about that island soon.~ DO ~ SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~ EXIT
+IF~~THEN REPLY ~ I wish we soon find a way to shake them off from our trail.~ DO ~ SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~ EXIT
 END
 
 IF ~ Global("SanSuBH","GLOBAL",26)~ THEN BEGIN ZombieDusk
@@ -390,7 +399,7 @@ END
 
 IF~~ THEN BEGIN ZomHom22
 SAY ~ We still have everything, <CHARNAME>. Monteelah may have the documents, but remember that I made the translation during the cruise. And that I still have here in my magic parcel, should we ever have a need to consult the topic again.~
-IF ~~ THEN REPLY ~ Oh, my clever counselor, how could I forget that. You not even tricked the pirate to believe we have no idea what the papers where all about. You even have them translated for easy use. Even after all that time you can still surprise me, my love.~ DO ~ SetGlobal("Homesail","GLOBAL",12)~ EXIT
+IF ~~ THEN REPLY ~ Oh, my clever counselor, how could I forget that. You not even tricked the pirate to believe we have no idea what the papers where all about. You even have them translated for easy use. Even after all that time you can still surprise me.~ DO ~ SetGlobal("Homesail","GLOBAL",12)~ EXIT
 END
 
 // DSOTSC Vampire Castle
