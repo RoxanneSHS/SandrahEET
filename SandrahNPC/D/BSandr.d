@@ -782,7 +782,7 @@ END
 
 IF~~THEN BEGIN CasOwn3
 SAY ~ I am not sure why I asked the question myself. I love this adventuring life with you by my side - all we see and all we learn. And we are still so young. But maybe after some time there will be this yearning for a place of our own, be it a castle or a hut by the seaside, I do not know.~
-= ~ See, darling, I still have a home I can return to any time. And of course you will be welcome there anytime and always.~
+= ~ See, I still have a home I can return to any time. And of course you will be welcome there anytime and always.~
 IF~~THEN REPLY ~ But I think I feel what you try to express, it will always be different than our own place - our own home. So much can happen with time, yeah, let's just take it as it comes as long as we take it together. (Embrace her and hug her dearly.)~ DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
@@ -801,8 +801,9 @@ IF~~ THEN REPLY ~ We have not yet come upon many examples of that kind on our tr
 END
 
 IF~~ THEN BEGIN CasOwn6
-SAY ~ And what would you do different, my love? Surely not higher walls and greater forces. Those do not hold up the corruption that comes from within.~
+SAY ~ And what would you do different? Surely not higher walls and greater forces. Those do not hold up the corruption that comes from within.~
 IF~~THEN REPLY ~ You are right. You have to build on the loyalty and love of those around you. Give your people an adequate share, use power and resources in such a way that many under your rule may be able to live a protected and happy life. No one can persist on his own strength alone for a long time. (You kiss, Sandrah.) ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
+IF~~THEN REPLY ~ You are right. You have to build on the loyalty and love of those around you. Give your people an adequate share, use power and resources in such a way that many under your rule may be able to live a protected and happy life. No one can persist on his own strength alone for a long time. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 IF~~THEN REPLY ~ You are right. An iron hand that leaves no doubt and a counselor that detects any trace of betrayal before my power could be questioned. An elite force rather than a waste mass of mediocrity. Maybe just you and me - maybe just me. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
 
@@ -815,6 +816,7 @@ END
 IF~~ THEN BEGIN CasOwn8
 SAY ~ None of them has had a ruler like the one you once described to me, the one who anchors his power in love and respect for his people.~
 IF~~THEN REPLY ~ Sometimes I wish I could be one, just to show that such a concept is possible. But then - I am surely not destined to rule.~ DO ~ SetGlobal("SanCasOwn","GLOBAL",6)~EXIT
+IF~~THEN REPLY ~ Someday I will be one, just to show that such a concept is possible. I am surely destined to rule.~ DO ~ SetGlobal("SanCasOwn","GLOBAL",6)~EXIT
 END
 
 IF~~ THEN BEGIN CasOwn9
@@ -873,6 +875,7 @@ END
 IF ~ Global("ValiantKN","GLOBAL",15) ~ THEN BEGIN KhaDead
 SAY ~ Now that this Kharaz is defeated, we will hopefully have overcome those ogres hunting us constantly.~
 IF~~ THEN REPLY ~ I hope the news will get to them soon. That was really a pest.~ GOTO KhaDead2
+IF~~ THEN REPLY ~ I'm ready for them anytime, those bloody bastards.~ GOTO KhaDead2
 END
 
 IF ~~ THEN BEGIN KhaDead2
@@ -910,7 +913,7 @@ END
 
 //   Ajantis plans to propose to PC
 IF ~ Global("SanAjanProp1","GLOBAL",3)~ THEN BEGIN AjProp1
-SAY ~ Darling, have you come to some conclusion about your feelings towards Ajantis?~
+SAY ~ <CHARNAME>, have you come to some conclusion about your feelings towards Ajantis?~
 IF~~THEN REPLY ~ Mmh, I could ask you the same, right?~ GOTO AjProp11
 END
 
@@ -945,7 +948,7 @@ END
 // PC has Ajantis' Ring
 
 IF~ Global("SanAjanProp2","GLOBAL",2)~THEN BEGIN AjanProp20
-SAY ~ You look wonderful, love, and so very happy. Let me see the ring.~
+SAY ~ You look wonderful, and so very happy. Let me see the ring.~
 IF ~~THEN REPLY ~ The ring? Did he tell you about it?~  GOTO AjanProp21
 IF ~~THEN REPLY ~ Oh, you have known it, didn't you. Here, see, it is plain but still very special.~ GOTO AjanProp22
 END
@@ -965,8 +968,6 @@ SAY~ (Laughs.) Just think of this, there once were people in Waterdeep who thoug
 IF~~THEN REPLY ~ Except for one who had decided not to meet those expectations. Too late now! ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
 IF~~THEN REPLY ~ You will not become jealous after all? Remember you had your chance, but I am so glad you did not take it.  ~ DO ~ SetGlobal("SanAjanProp2","GLOBAL",3)~ EXIT
 END
-
-
 
 // Make Space in group for Dynaheir
 
@@ -1050,8 +1051,7 @@ IF ~~ THEN DO ~ SetGlobal("SandrahLT","GLOBAL",1) SetGlobal("SandrahMorningTalk"
 END
 
 IF ~~THEN BEGIN Disappointed
-SAY ~ <CHARNAME>, Reality sometimes can be as cruel as dreams can be wonderful.
-(Suddenly you feel something like a dark hopelessness around you.) ~ 
+SAY ~ <CHARNAME>, Reality sometimes can be as cruel as dreams can be wonderful. ~
 IF ~~ THEN DO ~ SetGlobal("SandrahMorningTalk","GLOBAL",11) SetGlobal("SandrahJoined","GLOBAL",3) EscapeAreaMove("BG3402",270,497,0)~ EXIT
 END
 
@@ -1096,6 +1096,7 @@ SAY ~My wonderful hero, <CHARNAME>, it feels so good to be by your side once aga
 IF ~~ THEN REPLY~ I have missed you, too, Sandrah. Now that you are here again, my feelings have become much clearer to me. (Slowly pull her closer to you and kiss her.) ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NextKiss
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY~ Sandrah, I feel it... you are about to kiss me again and...I have made a mistake once, I will not miss my chance of a lifetime again, my love. ~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO IrritatedB
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY~ Sandrah, I feel it... you are about to kiss me again and... I don't know...I have never...It feels so good and right, but...I mean...We both are girls? ~GOTO Irritated
+IF ~~ THEN REPLY~ I want us to end this right now. I do not feel like that about you.~DO~SetGlobal("SandrahMorningTalk","GLOBAL",14)~EXIT
 END
 
 IF ~~ THEN BEGIN IrritatedB
