@@ -4217,10 +4217,11 @@ IF ~~ THEN BEGIN  SanMarAj5
 SAY~ If our mission will succeed, everything will look much different. Not only the war threat will hopefully vanish into thin air, but also Ajantis will become a knight of the order.~
 = ~ With the influence of his family and your own reputation as the heroine of the Sword Coast and the foster child of the famous Gorion, it is not just a dream to walk down the aisle of the Temple of Amn as the proud bride you deserve to be, my little princess.~
 IF~~THEN REPLY ~ Oh, Sandrah you are so wonderful! Your fantastic visions make any waiting for the great day worthwhile. But I am sure it will still take some time until then.~ GOTO SanMarAj6
+IF~~THEN REPLY ~ (Sigh) That means waiting and waiting for the special day to come. ~ GOTO SanMarAj6
 END
 
 IF ~~ THEN BEGIN  SanMarAj6
-SAY ~ Does time really matter. You have a husband for life already, marriage or not,  and you can live and savour every single day of it.~
+SAY ~ Does time really matter? You have a husband for life already, marriage or not,  and you can live and savour every single day of it.~
 IF~~THEN REPLY ~ And I will! With him and with you. (You give Sandrah a quick kiss and then look for your future husband to tell him the news.) ~ EXIT
 END
 
@@ -4345,16 +4346,20 @@ END
 IF~~ THEN BEGIN SanTiaxPC2
 SAY~No - but history shows that good and mighty rulers very often had good advisors to support them. Or good and intelligent lovers.~
 IF ~~ THEN REPLY ~ Or both. The lucky ones had both of it even in the same person. (You kiss her passionately.)~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
+IF ~~ THEN REPLY ~ Hopefully I found at least one of them already.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
+IF ~~ THEN REPLY ~ Hopefully I found at least one of them already. And reliable friends are worth a fortune, don't forget that.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 END
 
 IF~~ THEN BEGIN SanTiaxPC3
 SAY~ No - but history shows that good and mighty rulers very often had good advisors to support them. Or good and intelligent wives.~
 IF ~~ THEN REPLY ~Or both. The lucky ones had both of it even in the same person. (You kiss her passionately.)~DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
+IF ~~ THEN REPLY ~ Hopefully I found at least one of them already.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
+IF ~~ THEN REPLY ~ Hopefully I found at least one of them already. And reliable friends are worth a fortune, don't forget that.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 END
 
 IF~~ THEN BEGIN SanBLine1
 SAY~ Hm, I have stirred up something there, it seems.~
-IF ~~ THEN REPLY ~ You have given me a lot of hope with your knowledge, darling. It is a precious thought that the terrible heritage ends with my generation of Bhaalspawns - unless one of them would raise to godhood.~ GOTO SanBLine2
+IF ~~ THEN REPLY ~ You have given me a lot of hope with your knowledge. It is a precious thought that the terrible heritage ends with my generation of Bhaalspawns - unless one of them would raise to godhood.~ GOTO SanBLine2
 END
 
 IF~~ THEN BEGIN SanBLine2
