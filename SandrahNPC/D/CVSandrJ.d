@@ -4406,6 +4406,7 @@ IF~~ THEN BEGIN SanWDRespct1
 SAY~ (Smiles) My fellow priests of Mystra like me a lot, and those that are at Waterdeep are my teachers since my earliest years, and yes, my friends as well.~
 IF~~THEN REPLY ~ To me it looks more like the kind of respect one pays to his superior - and since I know you much better now, it is because of yourself, not due to your father or grandmother.~ GOTO  SanWDRespct2
 IF~~THEN REPLY ~ The *Guardian of the Cloak*, mh. Knowing the importance of Mystra's cloak I can only assume that this is not a title attached to a minor servant of the temple.~ GOTO  SanWDRespct2
+IF~~THEN REPLY ~ Your explanations are as unbelievable as always. Hiding and evasive as always.~ GOTO  SanWDRespct2
 END
 
 IF ~~ THEN BEGIN SanWDRespct2
@@ -4415,15 +4416,15 @@ IF~~THEN REPLY ~ Another bunch of secrets that comes to the surface, Sandrah? Wi
 END
 
 IF ~~ THEN BEGIN SanWDRespct3
-SAY~ Yes, sure, it is not a secret, just one more aspect of me that we only barely have touched until now. I can tell you about it right now or later when we have more time, as you wish, darling.~
+SAY~ Yes, sure, it is not a secret, just one more aspect of me that we only barely have touched until now. I can tell you about it right now or later when we have more time, as you wish.~
 IF~~THEN REPLY ~ I am anxious to hear about it right now.~ DO ~ SetGlobal("SanWDRespect","LOCALS",2)~ GOTO SanWDRespct5
-IF~~THEN REPLY ~ (Smile) Sounds like this will be a longer story for a more quiet moment. I will ask you about it later, sweetheart.~ DO ~ SetGlobal("SanWDRespect","LOCALS",1)~ EXIT
+IF~~THEN REPLY ~ (Smile) Sounds like this will be a longer story for a more quiet moment. I will ask you about it later, Sandrah.~ DO ~ SetGlobal("SanWDRespect","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanWDRespct4
-SAY~ Oh, <CHARNAME>, will you ever learn to trust me, dear? It is not a secret, just one more aspect of me that we only barely have touched until now. I can tell you about it right now or later when we have more time, just as you wish, darling.~
+SAY~ Oh, <CHARNAME>, will you ever learn to trust me, dear? It is not a secret, just one more aspect of me that we only barely have touched until now. I can tell you about it right now or later when we have more time, just as you wish.~
 IF~~THEN REPLY ~ I am anxious to hear about it right now.~ DO ~ SetGlobal("SanWDRespect","LOCALS",2)~ GOTO SanWDRespct5
-IF~~THEN REPLY ~ (Smile) Sounds like this will be a longer story for a more quiet moment. I will ask you about it later, sweetheart.~ DO ~ SetGlobal("SanWDRespect","LOCALS",1)~ EXIT
+IF~~THEN REPLY ~ (Smile) Sounds like this will be a longer story for a more quiet moment. I will ask you about it later, Sandrah.~ DO ~ SetGlobal("SanWDRespect","LOCALS",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanWDRespct5
@@ -4433,8 +4434,10 @@ IF~~THEN REPLY ~ We are strong, too strong to be mere puppets on strings pulled 
 END
 
 IF ~~ THEN BEGIN SanWDRespct6
-SAY~  Neither my father nor my teachers at the temple ever tried to push me in any direction, for which I am forever thankful. They provided me with all the knowledge and guidance that let me find my own decision in the end. As Mystra is not a goddess of strict rules and crusted ceremonies but actually requires their fellowers to be open minded and able to decide on the right terms to conduct their duties in her name, I finally came to accept my calling as a healer and a priestess. (Laughs) As was observed already, I do in her name what I would be doing on my own principles more or less anyway.~
+SAY~  Neither my father nor my teachers at the temple ever tried to push me in any direction, for which I am forever thankful. They provided me with all the knowledge and guidance that let me find my own decision in the end. As Mystra is not a goddess of strict rules and crusted ceremonies but actually requires their fellowers to be open minded and able to decide on the right terms to conduct their duties in her name, I finally came to accept my calling as a healer and a priestess.~
+=~ (Laughs) As was observed already, I do in her name what I would be doing on my own principles more or less anyway.~
 IF~~THEN REPLY ~ Yes, that is the Sandrah I have learned to respect and to love. But how does that explain your role in the Temple?~ GOTO SanWDRespct7
+IF~~THEN REPLY ~ Yes, that is the Sandrah I have learned to respect. But how does that explain your role in the Temple?~ GOTO SanWDRespct7
 IF~~THEN REPLY ~ So it's your strength and pride that gains you your role in the Temple? Well done.~ GOTO SanWDRespct7
 END
 
