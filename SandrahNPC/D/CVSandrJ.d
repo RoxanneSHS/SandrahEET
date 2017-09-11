@@ -5926,7 +5926,7 @@ END
 ++~ We have already dwelled here long enough, Sandrah, our own mission calls us forward.~ DO~
 IncrementGlobal("Sanpoints","GLOBAL",-2)~ EXIT
 ++~ Lead us to the Inner Temple, Sandrah, let us see what we can do.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~ EXIT
-++ ~ They seem to hold you at high esteem here, Sandrah. Another of your little secrets, my wonderful companion.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
+++ ~ They seem to hold you at high esteem here, Sandrah. Another of your little secrets.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
 
 CHAIN
 IF~ Global("SanWDTemplWi","GLOBAL",8)~ THEN CVSANDRJ SanWDTempleLey
@@ -6104,6 +6104,7 @@ DO ~ SetGlobal("OrcPrison","GLOBAL",16) AddXPObject("CVSandr",7000)~
 END
 ++ ~ And I love you too, Sandrah. (You gently move Imoen aside to embrace Sandrah yourself.)~ + ClckWMines2
 ++ ~ At least you kept your word and brought your hammer along.~ + ClckWMines2
+++ ~ I will never underestimate the worth of true friendship.~ + ClckWMines2
 
 CHAIN
 IF~~ THEN CVSANDRJ ClckWMines2
