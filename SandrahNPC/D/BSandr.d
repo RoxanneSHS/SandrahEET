@@ -468,6 +468,7 @@ END
 IF ~ Global("SanKiLordVa","LOCALS",1) ~ THEN BEGIN Lordvamp1
 SAY ~ Now that those two vampires are *dead* we should look for their resting place and make use of our wooden stakes least we want to see them again.~
 IF ~~ THEN REPLY~ Their coffins must be down here somewhere, they cannot leave this place in the daylight.~ DO~ SetGlobal("SanKiLordVa","LOCALS",2) ~EXIT
+IF ~~ THEN REPLY~ We best get out of here before they regenerate and fight us again.~ DO~ SetGlobal("SanKiLordVa","LOCALS",2) ~EXIT
 END
 
 // Balduran's Island
@@ -505,12 +506,14 @@ END
 IF~~ THEN BEGIN SanPackW21
 SAY ~ I share your view, <CHARNAME>, however, unless this Draedel and his book provide us with a way to leave this island, our option is still Kaishas' ship. Before we have found a way to make use of it, we should avoid to confront her openly.~
 IF ~~ THEN REPLY ~ With the saved baby and the coat and such, we can try to make some friends among the villagers. It cannot hurt.~ DO ~ SetGlobal("SanPackW","LOCALS",4)~ EXIT
+IF ~~ THEN REPLY ~ I don't have time for diplomacy. The faster we get out of here, the better.~ DO ~ SetGlobal("SanPackW","LOCALS",4)~ EXIT
 END
 
 IF ~ Global("SanPackW","LOCALS",5)~ THEN BEGIN SanPackW30
 SAY ~ I am glad, <CHARNAME>, you have ended this in peace after all. (Kisses you.) ~
 IF~~THEN REPLY ~ I am glad, *WE* have ended this in peace after all, my steadfast counselor. Thank you.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanPackW31
 IF~~THEN REPLY ~ I have learned a bit during this quest. Bloodshed is not always the only solution. I learned a bit - not little of that I learned from you, my counselor.~ GOTO SanPackW31
+IF~~THEN REPLY ~ Gorion taught me that bloodshed is not always the only solution.~ GOTO SanPackW31
 END
 
 IF~~ THEN BEGIN SanPackW31
@@ -575,9 +578,21 @@ IF~~THEN REPLY~ I will keep my eyes on my companions all the time now - I must t
 END
 
 IF ~ Global("SanLibCommt1","LOCALS",1)~ THEN BEGIN Libscrl3d
-SAY ~ See what Aloundo says here : * These offspring will be aligned good and evil, but chaos will flow through them all.* I am so glad for the one I have found, and the chaos I sensed is not your own but forced from external onto you. I Love you.~
+SAY ~ See what Aloundo says here : * These offspring will be aligned good and evil, but chaos will flow through them all.* I am so glad for the one I have found, and the chaos I sensed is not your own but forced from external onto you. ~
 IF~~THEN REPLY ~ (The moment she takes your hand and kisses you dearly you feel a large wave of confidence and strength well up inside of you. You know with her by your side you will master this situation as well as the struggle inside of you.)~ DO
-~ SetGlobal("SanLibCommt1","LOCALS",2)~ EXIT
+~ SetGlobal("SanLibCommt1","LOCALS",2)~ GOTO Libscrl3d1
+IF~~THEN REPLY ~ (The moment she takes your hand, you know with her by your side you will master this situation as well as the struggle inside of you.)~ DO
+~ SetGlobal("SanLibCommt1","LOCALS",2)~ GOTO Libscrl3d2
+END       
+
+IF~~THEN BEGIN Libscrl3d1
+SAY~I Love you. ~
+IF~~THEN EXIT
+END
+
+IF~~THEN BEGIN Libscrl3d2
+SAY~Count on me through this, <CHARNAME>. ~
+IF~~THEN EXIT
 END
 
 IF ~Global("SanLibCommt2","LOCALS",1)~ THEN BEGIN MetKoveras
@@ -592,7 +607,7 @@ IF~~THEN REPLY ~ Let us continue and see what else we can find out to our advant
 END
 
 IF~~THEN BEGIN MetKoveras3
-SAY ~ You are the child of the God of Murder but you are no Murderer. As such you would have been considered if you had attempted to strike him right now. We need to let him react now that his plan to have you remove the Iron Throne leaders for his benefit and take the blame as their murderer onto you will fail. He must end up visible as the villain he truely is - not you.~
+SAY ~ You are the child of the God of Murder but you are no murderer. As such you would have been considered if you had attempted to strike him right now. We need to let him react now that his plan to have you remove the Iron Throne leaders for his benefit and take the blame as their murderer onto you will fail. He must end up visible as the villain he truely is - not you.~
 IF~~THEN REPLY ~ Thank you, counselor. Let us continue and see what else we can find out to our advantage.~ DO~ SetGlobal("SanLibCommt2","LOCALS",2)~ EXIT
 END
 
@@ -604,7 +619,8 @@ END
 
 IF~~THEN BEGIN  SanPrat2
 SAY ~ I would indeed never laugh about any dead, it is Sarevok's arrogance that amuses me. He really seems to be be very sure he has got rid of us. Good.~
-IF~~THEN REPLY ~ You have surely already ideas how we can take this to our advantage, sweetest of all counselors?~ GOTO SanPrat3
+IF~~THEN REPLY ~ You have surely already ideas how we can take this to our advantage?~ GOTO SanPrat3
+IF~~THEN REPLY ~ Suggestions?~ GOTO SanPrat3
 END
 
 IF~~THEN BEGIN  SanPrat3
@@ -620,7 +636,7 @@ END
 
 IF~~THEN BEGIN  SanPrat5
 SAY ~ My idea would be to avoid Baldur's Gate for the moment as we have no direct mission to fulfill. Let us keep hidden and gather strength and information on the Sword Coast. Our moment will come when he really makes his move towards the Dukehood. Then we must be there with the evidence of his full treachery and let him stand naked in the view of all.~
-IF~~ THEN REPLY~ Fine. But first let us get out of this dump and for a good meal and a warm bath. And a fine linnen bed to enjoy...(The rest of your sentence is swallowed by a love-hungry mouth that sucks all breath out of you...)~ DO ~ SetGlobal("SanLibCommt3","LOCALS",2)~EXIT
+IF~~ THEN REPLY~ Fine. But first let us get out of this dump and for a good meal and a warm bath. And a fine linnen bed to enjoy...~ DO ~ SetGlobal("SanLibCommt3","LOCALS",2)~EXIT
 END
 
 // Undercity
