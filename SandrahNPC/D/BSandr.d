@@ -1538,7 +1538,7 @@ IF~~THEN REPLY~ Would you yourself possess such power, Sandrah?~GOTO Sancharm8
 END
 
 IF ~~ THEN BEGIN Sancharm8
-SAY ~ (Sandrah smiles her enigmatic smile.) No, I do not possess the required power. Not yet. And who knows if I ever will. Even among the experienced and more gifted priests of the goddess there are very few that are blessed with such insights and powers. Maybe my father and Khelben Blackstaff are really the only ones.~ 
+SAY ~ (Sandrah smiles her enigmatic smile.) No, I do not possess the required power. Not yet. And who knows if I ever will. Even among the experienced and more gifted priests of the goddess there are very few that are blessed with such insights and powers. Maybe my father and Khelben Blackstaff are really the only ones.~
 IF~~THEN EXIT
 END
 
@@ -1614,12 +1614,14 @@ SAY ~ What a wonderful creature, a beautiful young stallion! It must be a great 
 IF ~~ THEN REPLY ~ I have to admit, my experience with these creatures is almost non- existent.~ GOTO Sanhors3
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ Do you want me to catch it for you, mylady, to see my proud queen mount this impressive horse?~ GOTO Sanhors2
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I think you know more about riding than I do. But if you catch and hold it for me, I will put my trust in you and mount his back. But only if you lead him for me.~ GOTO Sanhors3
+IF ~~ THEN REPLY ~ And there! Hurray, maggots. Let's all stop and cheer for maggots.~EXIT
 END
 
 IF~~ THEN BEGIN Sanhors2
 SAY ~ Let us imagine how that would be for a moment, I am afraid we should not really do it with this horse. It has the famous brand of the Craumerdaun family, so it is not free.~
 IF ~~ THEN REPLY ~ Sometimes the idea of something and a little daydreaming about it does not hurt. (Gently touch Sandrah's face with your forefinger, following the the lines of her enigmatic smile.)~ GOTO Sanhors4
 IF ~~ THEN REPLY ~ One day we will be able to buy you one of those - one day when all of this is over and we return to a more peaceful life...~ GOTO Sanhors4
+IF ~~ THEN REPLY ~Horses are pretty impractical for us despite all our travelling. Forget about them.~ GOTO Sanhors3
 END
 
 IF~~ THEN BEGIN Sanhors3
@@ -1631,6 +1633,7 @@ IF~~ THEN BEGIN Sanhors4
 SAY ~ Do you know the story of the young princess who tried to weaken a bloody tyrant's heart to have mercy for the starving poor. She rode up to his castle on a snow white stallion wearing nothing but her long hair to protect her.~
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I wish I could make you ride up to my castle this way. Your hair is beautiful but it will not cover very much on such an occasion. You could ask me for everything and I would give it without hesitation.~ DO ~ SetGlobal("Sanhors","GLOBAL",2)~ EXIT
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ Are you dreaming to be that princess? You riding up to any castle that way and any tyrant would give whatever you ask for without hesitation. Your hair is beautiful but it will not cover very much on such an occasion. ~ DO ~ SetGlobal("Sanhors","GLOBAL",2)~ EXIT
+IF ~~ THEN REPLY ~ (Shake your head) Girlish fantasies.~ DO ~ SetGlobal("Sanhors","GLOBAL",2)~ EXIT
 END
 
 //FT4
@@ -1653,7 +1656,8 @@ END
 
 IF~~ THEN BEGIN FT4-4
 SAY ~ You being both at Candlekeep as the orphans you were may not be so strange, as the places for poor motherless children like you two are rare on the rough Sword Coast. The monks may not appear to be very fond of children on the outside, but I guess they have good hearts and really like to have a bit of childish activities around their lone studies.~
-IF~~ THEN REPLY ~ You are right, Sandrah, with a rascal like Imoen they sure got their full share - and more.~ GOTO FT4-5
+IF~~ THEN REPLY ~ Sure, Sandrah, with a rascal like Imoen they sure got their full share - and more.~ GOTO FT4-5
+IF~~ THEN REPLY ~ They were just to weak and peaceful to kick us brats out to the road.~ GOTO FT4-5
 END
 
 IF~~ THEN BEGIN FT4-5
