@@ -7375,6 +7375,7 @@ END
 
 IF
 Global("SanVeilDance","GLOBAL",1)
+!Global("SanRompa","Global",2)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 OR(4)
 AreaCheck("CVWOHA")

@@ -1767,6 +1767,7 @@ IF ~ Global("SanDreamTalk","GLOBAL",3) Global("SanStarTalk","LOCALS",0) ~ THEN B
 SAY ~ (Sandrah lies on her back on her bedroll near to you, gazing at the stars above.)~
 IF ~~ THEN REPLY ~ (Whisper, not to disturb the others in the group:) Sandrah, can you not sleep yet?~ GOTO Startalk1
 IF ~~ THEN REPLY ~ (Silently admire your beautiful companion, who looks more enigmatic than ever in the dim light of the stars and the dying campfire.)~ GOTO Startalk1
+IF ~~ THEN REPLY ~(Roll over to sleep) It's been a long day, yawn...~GOTO Startalk1
 END
 
 IF ~~ THEN BEGIN Startalk1
@@ -1774,17 +1775,19 @@ SAY ~ (Sandrah silently moves a bit closer to you. She puts her head on your sho
 IF~~ THEN REPLY ~ Moments like this could last an eternity (sigh), if they only would.~ GOTO Startalk2
 IF ~~ THEN REPLY ~ What are you thinking of, Sandrah? ~ GOTO Startalk2
 IF ~~ THEN REPLY ~ (Say nothing, do nothing, just put your arm around her and gently pull her a little bit closer to you.) ~ GOTO Startalk2
+IF ~~ THEN REPLY ~ (Say nothing, do nothing, pretend you sleep already.) ~ GOTO Startalk2
 END
 
 IF ~~ THEN BEGIN Startalk2
 SAY ~ (She remains silent for some time, you start to think she has fallen asleep.)~
 = ~ <CHARNAME>, when I see all those stars up there, I sometimes imagine one of them was my mother looking down at me. (Laughs nervously) It is a strange thought, I know, for someone who normally has a more rational view on things...~
-IF~~ THEN REPLY ~ Hm, all your talks are always about your father. You have never mentioned your mother before. So from your words I assume that she is no more? ~  GOTO Startalk3
+IF~~ THEN REPLY ~ Hm, all your talks are always about your father. You have never mentioned your mother before. So, from your words I assume that she is no more? ~  GOTO Startalk3
 END
 
 IF ~~ THEN BEGIN Startalk3
 SAY ~ Like yourself I never really knew my mother. She died when I was just one year old, so I have no conscious recollection of her. Just the things my father told me about her. For him she, she never really left. ~
 IF~~ THEN REPLY ~ From all I heard, you must resemble her a lot?~  GOTO Startalk4
+IF~~ THEN REPLY ~ Most likely she was a bit like yourself, don't you think?~  GOTO Startalk4
 END
 
 IF ~~ THEN BEGIN Startalk4
@@ -1800,14 +1803,18 @@ END
 IF ~~ THEN BEGIN Startalk6
 SAY ~ (She has moved another bit closer to you, her head resting in your armpit and her free arm slung around your chest.) ~
 IF~~ THEN REPLY ~ (You continue to look into the stars with her presence soothing you while your thoughts trail off into nothingness...) ~ DO~ RestParty()~EXIT
+IF~~ THEN REPLY ~ (You remove her arm and turn over to get your long deserved sleep...) ~ DO~ RestParty()~EXIT
 END
 
 // DreamTalk 3
 
 IF ~ Global("SanDreamTalk","GLOBAL",5) Global("Mothdream1","GLOBAL",0) ~ THEN BEGIN MotherDream
 SAY ~ (Today at the inn Sandrah has sat down at a table to study her tome of Elminster's knowledge once again. She has neglected her studies a bit - due to you.) ~
-= ~ (As much as you yearn to have her in your arms and occupied otherwise, you decide that sometimes everybody needs some time for their own.)~
+= ~ (You decide that sometimes everybody needs some time for their own.)~
 IF ~~ THEN REPLY ~ While you watch her from your comfortable armchair and admire her beauty and the grace of her every move, your mind begins to drift....
+...you find yourself in a state between waking and dreaming, where everything is possible.....
+~ DO ~ SetGlobal("Mothdream1","GLOBAL",1) ~ EXIT
+IF ~~ THEN REPLY ~ While you wait for the beer you have ordered, your mind begins to drift....
 ...you find yourself in a state between waking and dreaming, where everything is possible.....
 ~ DO ~ SetGlobal("Mothdream1","GLOBAL",1) ~ EXIT
 END
@@ -1869,7 +1876,7 @@ END
 // In Elminster's Garden
 
 IF ~ Global("Mothdream2","GLOBAL",7) ~ THEN BEGIN MoDreScene1
-SAY ~ (Sandrah catches you as you are almost tumbling to the ground.) What is it, my love, you are pale as if you have seen a ghost.~
+SAY ~ (Sandrah catches you as you are almost tumbling to the ground.) What is it, you are pale as if you have seen a ghost.~
 IF~~THEN REPLY ~ You are almost right, Sandrah - I have been here in that garden before...~ DO ~ SetGlobal("Mothdream2","GLOBAL",8) ~ GOTO MoDreScene2
 END
  
@@ -1984,6 +1991,7 @@ END
 IF ~~ THEN BEGIN BjorOgDe5
 SAY ~ (Sandrah gently takes your hand and examines the wound. She raises your hand to her mouth and slowly starts to suck on your bruised finger.) ~
 IF~~THEN REPLY ~ Oooh, too bad I did not hurt some other parts as well...~ DO ~ SetGlobal("SanHadBjor","GLOBAL",5)~ EXIT
+IF~~THEN REPLY ~ Hehehe...~ DO ~ SetGlobal("SanHadBjor","GLOBAL",5)~ EXIT
 END
 
 // Drizzt Saga - Lich
