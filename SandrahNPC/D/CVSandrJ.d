@@ -4650,6 +4650,7 @@ IF ~ Global("Formedcloth","GLOBAL",17)~ THEN BEGIN SanImoBhaCon1
 SAY ~ (It is bedtime already, but Sandrah still sits staring at the flames of the dying fire.)~
 IF ~~ THEN REPLY ~ A penny for your thoughts. I will go to warm the bed for us, love, don't be too long.~ DO ~ SetGlobal("Formedcloth","GLOBAL",18)~ EXIT
 IF ~~ THEN REPLY ~ I know you well enough to guess the thoughts you roll around in your pretty head may be the same that I have been working on all day. Let us see if our conclusions are the same.~ GOTO SanImoBhaCon2
+IF ~~ THEN REPLY ~ A penny for your thoughts. Don't stay up too long. We need to rise early tomorrow,~ DO ~ SetGlobal("Formedcloth","GLOBAL",18)~ EXIT
 END
 
 IF~~ THEN BEGIN SanImoBhaCon2
@@ -4676,7 +4677,9 @@ END
 
 IF ~~ THEN BEGIN SanImoBhaCon6
 SAY ~ If all other possibilities fail on a case and only one remains in the end, must not that one then be the truth?~
-IF ~~ THEN REPLY ~ But she has not those dreams I have. She is not hunted like me. If the same seed is in her, then it has not grown up in the same way as in me, except for that slayer manifestation once.~ GOTO SanImoBhaCon7
+IF ~GlobalLT("OrcPrison","GLOBAL",8)~ THEN REPLY ~ But she has not those dreams I have. She is not hunted like me. If the same seed is in her, then it has not grown up in the same way as in me, except for that slayer manifestation once.~ GOTO SanImoBhaCon7
+IF ~GlobalGT("OrcPrison","GLOBAL",8)~ THEN REPLY ~ But she has not those dreams I have. She is not hunted like me. If the same seed is in her, then it has not grown up in the same way as in me.~ GOTO SanImoBhaCon7
+IF ~GlobalGT("OrcPrison","GLOBAL",8)~ THEN REPLY ~ Tin evidence. She is not hunted like me. Nobody recognises the curse on her.~ GOTO SanImoBhaCon7
 END
 
 IF ~~ THEN BEGIN SanImoBhaCon7
@@ -4707,6 +4710,7 @@ END
 IF ~ Global("NarCavOut","GLOBAL",3) ~ THEN BEGIN NarCavLeav
 SAY ~ Shall we try the shard now, <CHARNAME>? ~
 IF ~~ THEN REPLY ~ Yes, Sandrah. Let me say we all put our hope in you now.~ DO ~ AddExperienceParty(5700)~ GOTO NarShardActiv
+IF ~~ THEN REPLY ~ What else, I don't want to hibernate in this hole.~ DO ~ AddExperienceParty(5700)~ GOTO NarShardActiv
 END
 
 IF ~~ THEN BEGIN NarShardActiv
@@ -4733,7 +4737,8 @@ END
 IF ~ Global("NarCavOut","GLOBAL",5)~ THEN BEGIN NarQShardHome
 SAY ~ The Shard did not take us all the way, probably my powers are not yet enough for that distance.~
 IF ~~ THEN REPLY ~ At least it got us to the surface again. A little bit of hiking in fresh air may suit us well after this hellish smelling adventure.~  GOTO QShardHome1
-IF ~~ THEN REPLY ~ Hahaha, defeating archdemons with peanuts and performing transportation spells of stonethrow length? What kind of priestess are you, my darling. (Smile broadly at her.) ~ GOTO QShardHome1
+IF ~~ THEN REPLY ~ Hahaha, defeating archdemons with peanuts and performing transportation spells of stonethrow length? What kind of priestess are you? (Smile broadly at her.) ~ GOTO QShardHome1
+IF ~~ THEN REPLY ~ Better than nothing. ~ GOTO QShardHome1
 END
 
 IF ~~ THEN BEGIN QShardHome1
