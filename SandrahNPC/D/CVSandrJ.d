@@ -4500,7 +4500,8 @@ END
 
 IF~~THEN BEGIN Gorlover1
 SAY ~ I can imagine what it is. The relationship between my mother Khalindra and Gorion.~
-IF ~~ THEN REPLY~ Smart lovely counselor, I would have really struggled to get the question out if you had not known it already. And do you also know the answer then?~ GOTO Gorlover2
+IF ~~ THEN REPLY~ Smart counselor, I would have really struggled to get the question out if you had not known it already. And do you also know the answer then?~ GOTO Gorlover2
+IF ~~ THEN REPLY~ Right, you have any insight to share?~ GOTO Gorlover2
 END
 
 IF ~~THEN BEGIN  Gorlover2
@@ -4526,6 +4527,7 @@ END
 IF ~~ THEN BEGIN SanMysSucc3
 SAY ~ Hm. Remember that Ao chose humans during the Time of Troubles to aid him against the renegade gods. With Mystra's role to rule over the Weave while all the gods in one way or another require access to that source of power at the same time, Ao might have followed a similar concept. Instead of giving one of the other celestials that advantage over all the others, he tasked a *mere* human with it, trusting her more than any other god.~
 IF ~~ THEN REPLY ~ But why?~ GOTO SanMysSucc4
+IF ~~ THEN REPLY ~ Go on.~ GOTO SanMysSucc4
 END
 
 IF ~~ THEN BEGIN SanMysSucc4
@@ -4579,6 +4581,7 @@ END
 IF~~THEN BEGIN  SanTiaHel3
 SAY~ This is not a confusion caused by a spell which can be reversed by another spell I could cast. His state comes from deeper inside the mind where you can only venture with the assistance of the patient himself through words and care.~
 IF~~THEN REPLY~ I see. Maybe you will find some time during our travel...even if I would lose those moments to spend with you.~ GOTO SanTiaHel2
+IF~~THEN REPLY~ I see. Maybe you will find some time during our travel.~ GOTO SanTiaHel2
 END
 
 
@@ -4591,20 +4594,22 @@ END
 IF~~THEN BEGIN  SanTiaHel5
 SAY~NO! Have you still not understood. The mad God of Lies is neither my grandfather nor was he the man loved by Midnight. It was Cyric the thief and adventurer who is in my bloodline, not the god he was transformed to.~
 IF~~THEN REPLY~ Yes, sorry. You make that an important point all the time.~EXIT
+IF~~THEN REPLY~ Nitty gritty.~EXIT
 END
 
 // Khalindra's Child
 
 IF ~ Global("Formedcloth","GLOBAL",13) ~ THEN BEGIN KhalChi1
-SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by side for a while and you feel the power of her love and her nearness giving you strength and confidence.)~
+SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by side for a while and you feel the power of her nearness giving you strength and confidence.)~
 = ~ You bear the discovery of your heritage quite well.~
 IF ~~ THEN REPLY~ Don't forget I have the power of a God in me, even if I do not give in to his dark luring.~ GOTO KhalChi2
 IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi3
 END
 
 IF~~ THEN BEGIN KhalChi2
-SAY~ You can always count on your lover and healer to help you with that struggle as well.~
+SAY~ You can always count on your healer to help you with that struggle as well.~
 IF ~~ THEN REPLY~ I love you, Sandrah.~ GOTO KhalChi4
+IF ~~ THEN REPLY~ It's good to have friends like this, Sandrah.~ GOTO KhalChi4a
 END
 
 
@@ -4615,6 +4620,11 @@ END
 
 IF~~ THEN BEGIN KhalChi4
 SAY ~ And I love you, <CHARNAME>.~
+IF ~~ THEN REPLY ~ Even at the risk that our mother may be the same? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",14) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",1800)~ GOTO KhalChi5
+END
+
+IF~~ THEN BEGIN KhalChi4a
+SAY ~ You know that I will always love you, <CHARNAME>, however far you like to keep me from you.~
 IF ~~ THEN REPLY ~ Even at the risk that our mother may be the same? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",14) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",1800)~ GOTO KhalChi5
 END
 
