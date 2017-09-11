@@ -1132,7 +1132,7 @@ END
 IF~~ THEN BEGIN Haiass4
 SAY ~ Huh, have you heard, our big master calls us. Poor wolf, poor Sandrah, back on the leash. Oh, <CHARNAME>, how could we only hope to survive without your permanent care.~
 =~ (She returns to the group, laughing and playing with the happy wolf. Her smile to you seems to be full of irony.)~
-IF~~THEN REPLY ~ *Sigh*, young girls and young puppies! How did I deserve this.~ EXIT
+IF~~THEN REPLY ~ *Sigh*, young girls and young puppies! How did I deserve this?~ EXIT
 END
 
 IF~~ THEN BEGIN Haiass5
@@ -1151,6 +1151,7 @@ IF~~ THEN BEGIN Haiass7
 SAY ~ Not everybody. There are people who know you two better.~
 = ~ (Rising up she gives both of you a quick kiss on the forehead.)~
 IF~~ THEN REPLY ~ (You feel happy and carefree as you follow those two lovely creatures back to the rest of your companions.) ~ EXIT
+IF~~ THEN REPLY ~ (At least you are sure now of what she is up to.) ~ EXIT
 END
 
 // Two Pussycats
@@ -1159,6 +1160,7 @@ IF~ Global("SanPussMis","GLOBAL",1)~ THEN BEGIN SanPussMis1
 SAY~ *In the twilight silhouetted against the half moon you see Sandrah sitting side by side with another person. It seems she has laid her arm around that somebody's shoulder while whispering in his ear. You heart hurts at this sight but you are drawn nevertheless closer to the scene.*~
 IF~~THEN REPLY ~ *You decide to move silently a bit closer to the entwined couple. You MUST know who that person is.*~  GOTO SanPussMis2
 IF~~THEN REPLY ~*You pretend to stroll leasurly softly whistling a joyful tune while your path just by chance brings you nearer to the entwined couple.*~ GOTO SanPussMis2
+IF~~THEN REPLY ~*You ignore the whole scenery.~EXIT
 END
 
 IF ~~THEN BEGIN SanPussMis2
@@ -1172,6 +1174,7 @@ SAY ~ *Sandrah starts to move towards you, she as well on all fours. She imitate
 = ~ *Pelligram has reached you and starts to rub her soft snout on your left leg.*~
 = ~ *A moment later you feel another warm mouth on your right leg as Sandrah kneels beside you and starts to caress you in the same catlike way.*~
 IF ~~ THEN REPLY ~ Oh, how lucky I am to be loved by such two wonderful pussycats at once.~ DO ~ SetGlobal("SanPussMis","GLOBAL",2) ~GOTO SanPussMis4
+IF ~~ THEN REPLY ~Oh, no, not one of your games again, Sandrah, I'm not in the mood.~EXIT
 END
 
 IF ~~THEN BEGIN SanPussMis4
@@ -1430,7 +1433,7 @@ IF ~~THEN REPLY ~ Would you change a thing if you could? Do you think you made a
 END
 
 IF~~ THEN BEGIN SanLtKillToo4
-SAY ~ (She laughs.) You know how stubborn I am, <CHARNAME>. I regret nothing. I would never have found the one I love for my life if I had stayed in Waterdeep. That alone is worth it all.~
+SAY ~ (She laughs.) You know how stubborn I am, <CHARNAME>. I regret nothing. I would never have found the one I think I love if I had stayed in Waterdeep. That alone is worth it all.~
 IF~~THEN REPLY ~ One gets this sadness now and then in the constant battles we do. But I feel the same. Together and in love we will prevail. (Her kiss is hungry and long. When she finally lets you go you see she has regained her usual confidence.)~ GOTO SanLtKillToo5
 IF~~THEN REPLY ~ (You take her in your arms almost violently to kiss her. Her reply is hungry and expressing her need for your reassurance. When she finally lets you go you see she has regained her usual confidence.)~ GOTO SanLtKillToo5
 IF~~THEN REPLY ~ Time again for your favourite topic...~ GOTO SanLtKillToo6
@@ -1442,7 +1445,7 @@ IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",7) RealSetGlobalTimer("SandrahMorni
 END
 
 IF~~ THEN BEGIN SanLtKillToo6
-SAY ~ Let a girl have her dreams, <CHARNAME>.~
+SAY ~ Let a woman have her dreams, <CHARNAME>.~
 IF~~THEN DO ~ SetGlobal("SANDRAHLT","GLOBAL",7) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
 END
 
@@ -1459,6 +1462,7 @@ END
 IF~~ THEN BEGIN FT2-2
 SAY ~ (Takes your hand for a moment and smiles at you.) It was not my intention to stir up fresh wounds. Maybe it helps you in your mourning about Gorion to recall the good times with him.~
 IF~~ THEN REPLY~ You are right, Sandrah, it helps. The hurt of his loss is there anyway, whether I talk about it or not. So it is maybe better to talk.~ GOTO FT2-3
+IF~~ THEN REPLY~ I'm not sure if it helps. The hurt of his loss is there anyway, whether I talk about it or not. So why not talk.~ GOTO FT2-3
 END
 
 IF~~ THEN BEGIN FT2-3
@@ -1470,6 +1474,7 @@ END
 IF~~ THEN BEGIN FT2-4
 SAY ~ You surely have a more than average knowledge of the Sword Coast and its history.~
 IF~~ THEN REPLY ~ Maybe. But then it is all theory, and now we have the real things at our hands. It is quite different to hear and read about a hailstorm than to be hit by one. Guess you understand my metaphor. ~ GOTO FT2-5
+IF~~ THEN REPLY ~ Maybe. I always felt the urge to see and experience it all in real life, not just books and lore. ~ GOTO FT2-5
 END
 
 IF~~ THEN BEGIN FT2-5
@@ -1509,6 +1514,7 @@ IF~ Global("Sancharm","LOCALS",3) ~ THEN BEGIN Sancharm4
 SAY ~ We are now together for a significant while and I do not regret one single instant of it.~
 IF~~THEN REPLY ~ I love you too, Sandrah.~ DO ~ SetGlobal("Sancharm","LOCALS",4) ~GOTO Sancharm5
 IF~~THEN REPLY ~ Same for me, Sandrah.~ DO ~ SetGlobal("Sancharm","LOCALS",4) ~GOTO Sancharm5
+IF~~THEN REPLY ~ Your optimism...we have our good times and bad times.~ DO ~ SetGlobal("Sancharm","LOCALS",4) ~GOTO Sancharm5
 END
 
 IF ~~ THEN BEGIN Sancharm5
@@ -1523,6 +1529,7 @@ END
 IF~ Global("Sancharm","LOCALS",6) ~ THEN BEGIN Sancharm6
 SAY ~ Are you feeling well, <CHARNAME>. I was not sure how someone not gifted by Mystra in the way I am would react to this invocation of the Weave. But I wanted to share it with you for just one time to know and understand each other even better.~
 IF~~THEN REPLY~ I feel unharmed and I never had a single moment of fear knowing you by my side. So that was the Weave then, did you let me see it? ~DO ~SetGlobal("Sancharm","LOCALS",7) ~GOTO Sancharm7
+IF~~THEN REPLY~ Fantastic, like a sleigh ride. Can we do it again soon. ~DO ~SetGlobal("Sancharm","LOCALS",7) ~GOTO Sancharm7
 END
 
 IF ~~ THEN BEGIN Sancharm7
