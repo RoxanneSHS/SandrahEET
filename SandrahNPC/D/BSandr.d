@@ -649,6 +649,7 @@ IF~~ THEN BEGIN SanHadKil2
 SAY ~ No.~
 IF ~~ THEN REPLY ~ I cannot really imagine that.~ GOTO SanHadKil3
 IF ~~ THEN REPLY ~ Is your love for me not strong enough for such a deed?~ GOTO SanHadKil3
+IF ~~ THEN REPLY ~ I'm glad I never trusted your enduring romance attacks on me.~ GOTO SanHadKil3
 END
 
 IF~~ THEN BEGIN SanHadKil3
@@ -673,10 +674,11 @@ IF~ Global("SanDurlAnsw","LOCALS",1)~ THEN BEGIN DurlAnsw
 SAY ~ Looks like they want to test our knowledge in lore here.~
 IF~~THEN REPLY ~ Counselor, this is your domaine, please.~ GOTO DurlAnsw2
 IF~~THEN REPLY ~ Oh, no, not riddles? Can you help me out with those?~ GOTO DurlAnsw2
+IF~~THEN REPLY ~ I love riddles. You'll soon see how good I am at that.~EXIT
 END
 
 IF~~THEN BEGIN DurlAnsw2
-SAY ~ Sure, my love. No need to worry. ~
+SAY ~ Sure, <CHARNAME>. No need to worry. ~
 IF~~ THEN DO ~ SetGlobal("SanDurlAnsw","LOCALS",2)~ EXIT
 END
 
@@ -709,6 +711,7 @@ IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~I should have known that befor
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~But you never met one like him, it seems.~ GOTO SanAwaitsDr7
 IF~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ But you never met one like him, it seems.~ GOTO SanAwaitsDr6
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~And as such a man does not exist you decided on another opportunity. Do I have to thank Drizzt Do'Urden for my wonderful lover?~ GOTO SanAwaitsDr9
+IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~And as such a man does not exist you decided to grab just any opportunity that comes your way. So I have to thank Drizzt Do'Urden for my companions shameless behaviour.~ EXIT
 END
 
 IF~~ THEN BEGIN  SanAwaitsDr6
@@ -741,8 +744,7 @@ END
 
 IF~~ THEN BEGIN  IreHint2
 SAY ~ Their interest is aimed at the Bhaal power in you rather than the fight for the throne of your dead originator. For whatever reason they might need this power. Their vampiric army and their messenger reveal that they already possess significant resources.~
-IF~~THEN REPLY ~ I have heard your warning and your promise, Sandrah. The warning that Sarevok's end will not mean peace for me - and the promise that I will not be alone against whatever will come next. ~
-EXIT
+IF~~THEN REPLY ~ I have heard your warning and your promise, Sandrah. The warning that Sarevok's end will not mean peace for me - and the promise that I will not be alone against whatever will come next. ~  EXIT
 END
 
 //The legendary shield of Gwalhaudh the Pure
@@ -750,6 +752,7 @@ END
 IF ~ Global("KNSHLDF","GLOBAL",1) ~ THEN BEGIN Gwalh1
 SAY ~ This is quite a find, <CHARNAME>, this legendary shield is mentioned in many old scripts and was deemed by some to be lost forever.~
 IF~~THEN REPLY ~ So you know what it is?~ GOTO Gwalh2
+IF~~THEN REPLY ~ Of course.~ GOTO Gwalh2
 END
 
 IF~~THEN BEGIN Gwalh2
@@ -760,6 +763,7 @@ END
 IF~~THEN BEGIN Gwalh3
 SAY ~ According to the history that is known about it, there is no evidence that we could not use it. Maybe we find someone during our travels who has a higher need for it than we do, but until then it is now ours.~
 IF~~THEN REPLY ~ Thank you, Sandrah, your knowledge proves to be ever useful for the group.~ DO ~ SetGlobal("KNSHLDF","GLOBAL",2) AddexperienceParty(400)~EXIT
+IF~~THEN REPLY ~ Good to know.~ DO ~ SetGlobal("KNSHLDF","GLOBAL",2) AddexperienceParty(200)~EXIT
 END 
 
 // Dream of Castle Owner
