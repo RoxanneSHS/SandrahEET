@@ -3402,6 +3402,7 @@ IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGH
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
+IF~Global("SanRompa","Global",0)~ THEN REPLY ~ Sandrah, we need to clarify our relationship once and for all.~ GOTO RomClari1
 IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
@@ -3469,6 +3470,43 @@ IF ~~ THEN REPLY ~ Sandrah, you are so wonderful, so different from anyone I kno
 IF ~~ THEN REPLY ~ Sandrah, you are so wonderful, so different from anyone I know. Friendship like this is just as valuable as love itself.~DO ~ SetGlobal("XanDecide","GLOBAL",4)~EXIT
 END
 
+IF ~~ THEN BEGIN  RomClari1
+SAY~I am listening.~
+=~*Once and for all* sounds pretty dramatic. It is not your usual choice of words.~
+IF ~~ THEN REPLY ~ Mock me as you want, but listen, i mean what I say.~GOTO RomClari3
+IF ~~ THEN REPLY ~ Nevermind. It can wait.~GOTO RomClari2
+END
+
+IF ~~ THEN BEGIN  RomClari2
+SAY~Oh - that was such a great opening line for...nothing.~
+IF~~THEN EXIT
+END
+
+IF ~~ THEN BEGIN  RomClari3
+SAY~I was expecting such a conversation sooner or later.~
+IF ~~ THEN REPLY ~You make no secret about your feelings for me, Sandrah. I value you and you know that. You also know that I don't feel the same for you, it's just not there. There is nothing you or me can do about it.~GOTO RomClari4
+IF ~~ THEN REPLY ~However much I appreciate what you do for me and our companions, I can't endure your permanent advances anymore. I tried to make that clear but you ignore my decision.~GOTO RomClari4
+END
+
+IF ~~ THEN BEGIN  RomClari4
+SAY~So you want me to leave and end it?~
+IF ~~ THEN REPLY ~I think this is the only sensible solution. Otherwise we both will suffer from the situation day after day.~  GOTO RomClari5
+IF ~~ THEN REPLY ~I want you to accept the facts. Otherwise we both will suffer from the situation day after day. I don't want you to leave, I just want you to stop your advances. You and me are nothing that can become true.~ GOTO RomClari6
+IF ~~ THEN REPLY ~My heart belongs to another. I can't respond to your feelings. I can offer you my friendship but not my love.~ GOTO RomClari8
+END
+
+IF ~~ THEN BEGIN  RomClari5
+SAY~You have become a competent leader indeed. As your...former...counselor I support your decision. Too bad it breaks my heart.~
+=~(She forces a smile.) I am a healer after all, I am not supposed to die from a broken heart, right?~
+IF~~THEN DO ~SetGlobal("SanRompa","Global",1) SetGlobal("Sandrahjoined","Global",83)LeaveParty() EscapeAreaDestroy(90)~EXIT
+END
+
+IF ~~ THEN BEGIN  RomClari6
+SAY~~You have become a competent leader indeed. As your...counselor I support your decision. Too bad it breaks my heart.~
+=~(She forces a smile.) I am a healer after all, I am not supposed to die from a broken heart, right?~
+=~I need some time to think about it. Let us move. I will follow you for the time being until I see clear enough to make my own plans. Let us talk another day.~DO~SetGlobal("SanRompa","Global",2) RunAwayFrom(Player1,60)~EXIT
+END
+ 
 IF ~~ THEN BEGIN GorLet1
 SAY ~ Do you still have preserved it, I would be interested to see it. It may tell us something that you may have not understood then, but may become apparent with the insight we have gained until now.~
 IF ~ PartyHasItem("SCRL3Z")~ THEN REPLY ~ Here it is, let us read it again together. (Hand her the letter and glance over her shoulder at the words you almost know by heart now.) ~ GOTO GorLet2
