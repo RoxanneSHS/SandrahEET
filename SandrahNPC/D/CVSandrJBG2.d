@@ -238,11 +238,17 @@ END
 
 IF~~THEN BEGIN SanBabewait2
 SAY~ Shar-Teel has grown into a very responsible and caring woman following a high code of honor. We will get the notice when to come to Waterdeep in due time. You can be assured that she, my father and Landrel will find us and provide a means to be there when we are supposed to. In this case here, no news means good news.~
-IF~~ THEN REPLY~ Counselor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~ GOTO SanBabewait3
+IF~!Global("SanRompa","Global",2)~ THEN REPLY~ Counselor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~ GOTO SanBabewait3
+IF~Global("SanRompa","Global",2)~ THEN REPLY~ Counselor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~ GOTO SanBabewait3a
 END
 
 IF~~THEN BEGIN SanBabewait3
 SAY~ So do I. (She embraces you and kisses you dearly.)~
+IF~~ THEN REPLY~ Do you remember how our wildcat....(You continue your way arm in arm with Sandrah exchanging happy episodes from your time together with Shar-Teel.)~ DO~ SetGlobal("SanBabewait","LOCALS",1)~EXIT
+END
+
+IF~~THEN BEGIN SanBabewait3a
+SAY~ So do I. ~
 IF~~ THEN REPLY~ Do you remember how our wildcat....(You continue your way arm in arm with Sandrah exchanging happy episodes from your time together with Shar-Teel.)~ DO~ SetGlobal("SanBabewait","LOCALS",1)~EXIT
 END
 
@@ -252,7 +258,7 @@ IF~~THEN REPLY~ Provided we can get our hands on the blood of a Silver Dragon...
 END
 
 IF~~THEN BEGIN SanTanner22
-SAY ~ Swear to me, my love, that we will never do such a deed as to kill an old Silver One!! If we want to prove our heroism against Dragons there are evil ones for us, but never a Silver Dragon.~
+SAY ~ Swear to me that we will never do such a deed as to kill an old Silver One!! If we want to prove our heroism against Dragons there are evil ones for us, but never a Silver Dragon.~
 IF~~THEN REPLY~ I had no intention to do such a thing, I don't even have an idea where to find one. I hope my clever counselor knows of a way how to trick those bastards.~ GOTO  SanTanner23
 IF~~THEN REPLY~ Looks to me it's either the blood of a Silver One or those slayers may escape undetected.~ GOTO SanTanner23
 IF~~THEN REPLY~A dragon is a dragon for me, I care little. I just want to solve this riddle, that's all.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~ EXIT
@@ -336,7 +342,8 @@ END
 
 IF~~ THEN BEGIN SanmysarmDream1
 SAY ~ YOU have dreamt of me and Mystra...but...~
-IF~~THEN REPLY~Are you angry about that, my love?~ GOTO SanmysarmDream2
+IF~!Global("SanRompa","Global",2)~THEN REPLY~Are you angry about that, my love?~ GOTO SanmysarmDream2
+IF~Global("SanRompa","Global",2)~THEN REPLY~Are you angry about that?~ GOTO SanmysarmDream2
 IF~~THEN REPLY~ Are you puzzled by that? Am I not supposed to dream of you, or your grandmother?~ GOTO SanmysarmDream2
 END
 
