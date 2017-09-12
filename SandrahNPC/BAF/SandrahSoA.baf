@@ -268,6 +268,7 @@ END
 IF
 Global("SanFlirt","GLOBAL",20)
 Global("ENDOFBG1","GLOBAL",2)
+!Global("SanRompa","Global",2)
 THEN
 RESPONSE #100
 SetGlobal("SanFlirt","GLOBAL",21)
@@ -1040,6 +1041,7 @@ END
 
 IF
 Global("PhaereInnuendo","GLOBAL",2)
+!Global("SanRompa","Global",2)
 AreaCheck("ar2200")
 Global("SanNitePh","LOCALS",0)
 Delay(8)
@@ -1050,6 +1052,7 @@ END
 
 IF
 Global("PhaereInnuendo","GLOBAL",3)
+!Global("SanRompa","Global",2)
 AreaCheck("ar2200")
 Global("SanNitePh","LOCALS",0)
 Delay(8)

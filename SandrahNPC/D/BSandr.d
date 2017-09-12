@@ -2102,7 +2102,8 @@ IF~~ THEN BSANDR BookHW3
 END
 ++ ~ Fine. Maybe those were just another bunch of lunatics like they seem to crowd the Sword Coast these days. What can be in a book for four people to give their lives to gain it?~
 EXIT
-
+++ ~ Fine, study as you may as long as you comply to your other duties.~
+EXIT
 
 
 
