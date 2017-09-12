@@ -412,7 +412,7 @@ IF~!InMyArea("Haiass")~THEN REPLY~ I have much to think about for now. I will ke
 END
 
 IF~~THEN BEGIN SanPCvsDriz1
-SAY~ My love, have you not consented to aid him just the same? Or have you changed your mind about that, now that the full scope of that intrigue against him becomes visible?~
+SAY~ <CHARNAME>, have you not consented to aid him just the same? Or have you changed your mind about that, now that the full scope of that intrigue against him becomes visible?~
 IF~~THEN REPLY ~ You know I am no coward, Sandrah, but I have to weight the interest of one companion against the interest of the rest of our party?~ GOTO SanPCvsDriz2
 END
 
@@ -430,13 +430,13 @@ IF~~THEN REPLY ~ Will you...Sandrah, will you follow Drizzt when the moment come
 END
 
 IF~~THEN BEGIN SanPCvsDriz4
-SAY~ You fool...(Sandrah's eyes are wet with tears as she turns and stumbles away.)~
+SAY~ You fool...(Sandrah's eyes are icy as she turns and rushes away.)~
 IF~~THEN DO ~SetGlobal("SanPCvsDriz","LOCALS",2) SetGlobal("SanPidPack","GLOBAL",113)~ EXIT
 END
 
 IF~~THEN BEGIN SanSzassPid1
 SAY~I can provide you with what I know myself about the topic but be aware that much of it is scientific theory still and either you will find it utterly fascinating or rather boring.~
-IF~~THEN REPLY~ Thanks for the warning, darling. I will rely on your knowledge should we ever need it again in the future but I might want to keep your mouth occupied with sweeter things at the moment. ~GOTO SanSzassPid2
+IF~!Global("SanRompa","Global",2)~THEN REPLY~ Thanks for the warning, Sandrah. I will rely on your knowledge should we ever need it again in the future but I might want to keep your mouth occupied with sweeter things at the moment. ~GOTO SanSzassPid2
 IF~~THEN REPLY~I am willing to give it a try, we can stop anytime and, hm, change to lighter and practical things should it really become that theoretical. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanSzassPid3
 IF~~THEN REPLY~ It seems important enough for your goddess to make an appearance, which I take partly as a proof for the correctness of that theory. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanSzassPid3
 END
@@ -449,6 +449,7 @@ END
 IF~~THEN BEGIN SanSzassPid3
 SAY~ You have probably read a lot back in Candlekeep about Toril and the other planes we know about and how they interact and hang together.~
 IF~~THEN REPLY~ Well, yes, not implying that I understood it all or even believe in it fully. ~GOTO SanSzassPid4
+IF~~THEN REPLY~ Well, yes, I have a pretty good background knowledge of the subject. ~GOTO SanSzassPid4
 END
 
 IF~~THEN BEGIN SanSzassPid4
@@ -463,6 +464,7 @@ SAY~ Maybe it was theory only - until I got a glimpse of it with my own eyes dow
 =~ Some philosophers tell us that there is not such an *outside* and that where the Weave does not exist there is nothing.~
 =~Some say that nothing would be defined as the abscence of anything while others would express it as the negation of anything that is...~
 IF~~THEN REPLY~Woo, I guess I see where that would lead us to...this dark matter stuff, right?~ GOTO SanSzassPid6
+IF~~THEN REPLY~Woo, You see it as a proof for the dark matter theory, right?~ GOTO SanSzassPid6
 END
 
 IF~~THEN BEGIN SanSzassPid6
@@ -508,11 +510,13 @@ END
 IF~~THEN BEGIN SanKanAdv1
 SAY ~ Yes, he is, one of the most dangerous in the Realms. The only method the paladins of the joint churches found to end him was to tear his torso apart and hide the parts at distributed places. They could not destroy him permanently, as we have witnessed ourselves.~
 IF~~THEN REPLY ~ What do you think we should do, counselor?~ GOTO SanKanAdv2
+IF~~THEN REPLY ~ The case has just found the competent people to solve it.~ GOTO SanKanAdv2
 END
 
 IF~~THEN BEGIN SanKanAdv2
-SAY~ A difficult question, my love, and one we must consider thouroghly. There is no necessity for an answer unless we should discover all the missing parts of his body somehow.~
+SAY~ A difficult question, and one we must consider thouroghly. There is no necessity for an answer unless we should discover all the missing parts of his body somehow.~
 IF~~THEN REPLY ~ And what if we did? - He promised us unbelievable rewards. Even if I do not trust him to give them to us without a fight, we may gain much from defeating a such a lich.~ GOTO SanKanAdv3
+IF~~THEN REPLY ~ It's just a matter of time for us. Even if I do not trust him to give us our reward without a fight, we may gain much from defeating a such a lich.~ GOTO SanKanAdv3
 END
 
 IF~~THEN BEGIN SanKanAdv3
