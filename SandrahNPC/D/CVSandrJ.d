@@ -634,7 +634,7 @@ IF ~~ THEN BEGIN SwCoaUW4
 SAY ~ Just look around, <CHARNAME>, this is build in a solid fashion. Look how they cleverly make use of the natural caves and structures and connect them with artifical tunnels. This looks like a system to me. And it is unlikely that more than one exist beneath this area.~
 IF ~~ THEN REPLY ~ And what does that mean for us?~ GOTO SwCoaUW5
 IF ~~ THEN REPLY ~ Do you have any idea who might be using it these days. Maybe our foe?~ GOTO SwCoaUW5
-F ~~ THEN REPLY ~ Your talent to state the obvious is amazing. Use your hammer, not your mouth.~EXIT
+IF ~~ THEN REPLY ~ Your talent to state the obvious is amazing. Use your hammer, not your mouth.~EXIT
 END
 
 IF ~~ THEN BEGIN SwCoaUW5
@@ -3502,9 +3502,10 @@ IF~~THEN DO ~SetGlobal("SanRompa","Global",1) SetGlobal("Sandrahjoined","Global"
 END
 
 IF ~~ THEN BEGIN  RomClari6
-SAY~~You have become a competent leader indeed. As your...counselor I support your decision. Too bad it breaks my heart.~
+SAY~You have become a competent leader indeed. As your...counselor I support your decision. Too bad it breaks my heart.~
 =~(She forces a smile.) I am a healer after all, I am not supposed to die from a broken heart, right?~
-=~I need some time to think about it. Let us move. I will follow you for the time being until I see clear enough to make my own plans. Let us talk another day.~DO~SetGlobal("SanRompa","Global",2) RunAwayFrom(Player1,60)~EXIT
+=~I need some time to think about it. Let us move. I will follow you for the time being until I see clear enough to make my own plans. Let us talk another day.~
+IF~~THEN DO~SetGlobal("SanRompa","Global",2) RunAwayFrom(Player1,60)~EXIT
 END
  
 IF ~~ THEN BEGIN GorLet1

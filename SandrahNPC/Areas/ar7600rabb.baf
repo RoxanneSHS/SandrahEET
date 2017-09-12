@@ -5,4 +5,5 @@ RESPONSE #100
 SetGlobal("SanRabb","BG0600",1)
 CreateCreature("rabbit01",[2134.726],8)
 CreateCreature("rabbit",[2164.776],8)
+Continue()
 END

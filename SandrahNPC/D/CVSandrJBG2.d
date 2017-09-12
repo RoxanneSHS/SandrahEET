@@ -620,6 +620,7 @@ END
 IF~~ THEN BEGIN SanAmnAdvC
 SAY ~ I have gained a bit of insight into this city's situation while searching for you after your kidnapping. There is a large turmoil of powers, including the Shadow Thieves, the cowled  wizards and Irenicus and his allies. It looks like for the moment, the cowles have reached a slight advantaged by arresting that strange mage and our friend with their famous *unsanctioned use of magic* law with which they control the town. I have heard rumors of some mysteriuos prison where they lock away those who violate this law. Where this place is seems to be unknown - sure is that it is not in this town and not reachable by common means.~
 IF ~~ THEN REPLY ~ Disturbing news, in deed. So how do we find this place then?~ GOTO  SanAmnAdvD
+IF ~~ THEN REPLY ~ We must find the place, it's for Imoen and I owe that capturer a bit of revenge as well?~ GOTO  SanAmnAdvD
 END
 
 IF~~ THEN BEGIN SanAmnAdvD
