@@ -4,9 +4,9 @@ APPEND CVSANDRJ
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",13) ~ THEN BEGIN SanPCInit13
 SAY ~ (Sandrah awaits you with her lovely smile.) What can I do for you, <CHARNAME>?~
-IF ~RandomNum(3,1)~THEN REPLY~ Kiss me, darling, don't ask why, just do it. (No answer can come from her as you have already sealed her mouth with your hungry lips.)~ EXIT
-IF ~RandomNum(3,2)~THEN REPLY~ When I look at you I am convinced for a short moment that Toril is wonderful place.~ EXIT
-IF ~RandomNum(3,3)~THEN REPLY~ Even after all we've been through together I discover each day anew how much I love you.~EXIT
+IF ~!Global("SanRompa","Global",2)RandomNum(3,1)~THEN REPLY~ Kiss me, darling, don't ask why, just do it. (No answer can come from her as you have already sealed her mouth with your hungry lips.)~ EXIT
+IF ~!Global("SanRompa","Global",2)RandomNum(3,2)~THEN REPLY~ When I look at you I am convinced for a short moment that Toril is wonderful place.~ EXIT
+IF ~!Global("SanRompa","Global",2)RandomNum(3,3)~THEN REPLY~ Even after all we've been through together I discover each day anew how much I love you.~EXIT
 IF~OR(22) 	Global("AerieRomanceActive","GLOBAL",2)
 		Global("AnomenRomanceActive","GLOBAL",2)
 		Global("JaheiraRomanceActive","GLOBAL",2)
@@ -51,7 +51,7 @@ IF~!AreaCheck("ar0602") Global("SanNotCapt","LOCALS",0)Global("SanSentBelt","GLO
 IF ~Global("SanNotCapt","LOCALS",1)~ THEN REPLY~ Please continue with your report about our kidnapping and your finding us.~ GOTO SanNotCapt3
 IF ~Global("SanMysRise","GLOBAL",2)~ THEN REPLY ~ Sandrah, are you familiar with the studies of Narvantial of Soubar?~ GOTO SanMysSucc11
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ GOTO SanBLine11
-IF~Global("Chapter","GLOBAL",14) Global("SanAmnAdv1","LOCALS",0) ~ THEN REPLY ~ You have already taken a look around town, beloved counselor. Where do we start our search for our *besta friend*, you think?~ GOTO SanAmnAdvA
+IF~Global("Chapter","GLOBAL",14) Global("SanAmnAdv1","LOCALS",0) ~ THEN REPLY ~ You have already taken a look around town, counselor. Where do we start our search for our *besta friend*, you think?~ GOTO SanAmnAdvA
 IF ~Global("SanHendak","GLOBAL",2) !AreaCheck("ar0406")~ THEN REPLY~ Those slavers in the Copper Coronet have angered you deeply, Sandrah, especially what they did to the children.~ GOTO SanHendls1
 IF~GlobalGT("SanAdrianL","Global",5) Global("SanAskAdrian","LOCALS",0)InParty("RH#Adrian")~ THEN REPLY ~Adrian?~DO~SetGlobal("SanAskAdrian","LOCALS",1)~GOTO SanAdri1
 IF~GlobalGT("SanAranH","GLOBAL",9) Global("SanAskAran","LOCALS",0)InParty("C-Aran")~ THEN REPLY ~Aran?~DO~SetGlobal("SanAskAran","LOCALS",1)~GOTO SanAranL1
@@ -80,7 +80,7 @@ IF~Global("C#SB_Auftraggeber","GLOBAL",1) Global("SanSilvAdl","LOCALS",0)~ THEN 
 IF~ Global("SanNecroHa","LOCALS",2)~ THEN REPLY~ A while ago you declared your concerns about Necromancy. I understood that Mystra and thus her priestess oppose to those practices.~ EXTERN BSANDR SanNecrohate4
 IF~  Global("BeholderPlot","GLOBAL",1) !Dead("UnseeingEye")Global("SanUnseen","LOCALS",0) ~ THEN REPLY ~ Sandrah, have you ever heard about this *Cult of the Unseeing Eye*? ~ GOTO SanUnsee1
 IF~Global("SanVampWDQuest","GLOBAL",16)~ THEN REPLY~ Let us now enter that portal.~ GOTO DoWDVampQ6
-IF~ Global("SanSharInt","GLOBAL",37) AreaType(OUTDOOR) Global("SanBabeToo","LOCALS",0)~ THEN REPLY ~ Sandrah, I wonder, when all of this adventuring will be finished one day, have you ever imagined yourself as a mother of your own children?~ GOTO SanBabeHave1
+IF~ Global("SanSharInt","GLOBAL",37) AreaType(OUTDOOR) !Global("SanRompa","Global",2) Global("SanBabeToo","LOCALS",0)~ THEN REPLY ~ Sandrah, I wonder, when all of this adventuring will be finished one day, have you ever imagined yourself as a mother of your own children?~ GOTO SanBabeHave1
 IF~ GlobalGT("C#AjantisRitterSuche","GLOBAL",0) Global("SanGoldBall","LOCALS",0) PartyHasItem("C#Ajgk")~ THEN REPLY~ How can we go about this mystery of the missing knights, my counselor?~ GOTO SanGlobAjanMiss1
 IF~InParty("ADAngel") !AreaCheck("ar0800") Global("CVAngelRev","LOCALS",0)~THEN REPLY~What had that Angelo to tell you so urgently?~GOTO SanAdSarD
 IF~InParty("Zaiya") GlobalLT("ZaiyaCursed","GLOBAL",8) Global("SanZaiyaPid","LOCALS",0)~THEN REPLY~Did you have the time already to acquaint yourself with the affliction of our new comrade Zaiya - a challenge for your healing skills?~DO~SetGlobal("SanZaiyaPid","LOCALS",1)~GOTO SanZaiyaHeal1
@@ -115,6 +115,7 @@ IF~~THEN BEGIN SanZaiyaHeal2
 SAY~It seems you misunderstand the issues of wild magic, <CHARNAME>. It is the purest and oldest form of arcane skills, once wielded by Mystril herself with powerful but also with radical effects.~
 =~While all arcanists accept the fact that magic is a powerful and often unpredictable force, most believe that through the proper training and diligence it is something that one can learn to control. Wild mages, however, reject this precept, believing instead that controlling arcane magic is a futile goal that only limits one's potential to preconceived ideas of order.~
 IF~~THEN REPLY~Are they so wrong in that?~GOTO SanZaiyaHeal3
+IF~~THEN REPLY~They seem to have a point there. Or are they mislead?~GOTO SanZaiyaHeal3
 END
 
 IF~~THEN BEGIN SanZaiyaHeal3
@@ -142,6 +143,8 @@ END
 IF~~THEN BEGIN SanStronghold
 SAY~I am sorry if I look at it more pessimistic, <CHARNAME>. Your stronghold and the related responsibility is just a temporary thing, not yet a home. It is a step on our road even if it is an important one.~
 IF~~THEN REPLY~For me it is important and I will do my best to fulfill my duties with the stronghold.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~~THEN REPLY~For me each step of the road is important. It's one step closer to my goals.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~~THEN REPLY~It's my intention to get as much benefit from the stronghold as I can before I have to drop it.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~EXIT
 END
 
 IF~~THEN BEGIN SanStarBG2PID1
@@ -157,7 +160,7 @@ IF~~THEN REPLY~Bhaal looms over our relationship and he will until we have solve
 END
 
 IF~~THEN BEGIN SanOtherLove
-SAY~The more we learn and the more we experience the closer we seem to get. You cannot betray me with another lover, you can only betray me by changing the foundation of our relationship.~
+SAY~The more we learn and the more we experience the closer we seem to get. You cannot betray me with some lover, you can only betray me by changing the foundation of our relationship.~
 IF~~THEN REPLY~ I will never do that - I will never follow Bhaal's calling.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 IF~~THEN REPLY~Like what, starting to follow the example of a dead god who claims to be my *father*?~EXIT
 END
@@ -166,17 +169,21 @@ IF~~THEN BEGIN SanStarBG2PID3
 SAY~(The fruity notes are so much different from the tempting and seductive smell she wears at nightime.)~
 IF~~THEN REPLY~(Lost for words you just smile at her.)~ EXIT
 IF~~THEN REPLY~(You blow her a kiss.)~ EXIT
+IF~Global("SanRompa","Global",2)~THEN REPLY~(Sometimes you think it was a mistake to have turned her offers down way back then.)~ EXIT
 END
 
 IF~~THEN BEGIN SanStarBG2PID4
-SAY~There is a light at the end of every tunnel, my love. ~
+SAY~There is a light at the end of every tunnel, <CHARNAME>. ~
 IF~~THEN REPLY~There can be a light even within the darkest dungeon if one travels with you, sweetheart.~ EXIT
+IF~~THEN REPLY~There can be a light even within the darkest dungeon if one travels with you, Sandrah.~ EXIT
+IF~~THEN REPLY~The light at the end of the darkest dungeon may come from some demon's hellfire.~ EXIT
 END
 
 IF~~THEN BEGIN SanStarBG2PID5
-SAY~Any ideas of what to do with this lovely evening, my love? ~
+SAY~Any ideas of what to do with this lovely evening? ~
 IF~~THEN REPLY~(Quickly kiss her.) I have to get my eyes off you, sweetheart, otherwise I wouldn't be able to concentrate on my task just another minute~ EXIT
 IF~~THEN REPLY~I'm sure we both have the same thing in mind.~GOTO SanBedPid12
+IF~~THEN REPLY~Sorry, but nothing I feel like sharing with you.~EXIT
 END
 
 IF ~~THEN BEGIN SanGlobAjanMiss1
