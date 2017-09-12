@@ -538,7 +538,7 @@ END
 
 IF~ ~ THEN BEGIN SanAskLief2
 SAY ~ You know my father's tendency to appear at all times and odd places. We will probably meet him in Athkatla or Trademeet one of these days. I suggest we keep the message for him safely. ~
-IF~~THEN REPLY ~ Fine. Thank you, sweetest counselor of the Realms.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
+IF~~THEN REPLY ~ Fine. Thank you, counselor.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 END
 
 IF~ ~ THEN BEGIN SanHendls1
@@ -547,7 +547,7 @@ IF~~THEN REPLY ~ Sandrah!~ DO~ SetGlobal("SanHendak","GLOBAL",3)~ GOTO SanHendls
 END
 
 IF~ ~ THEN BEGIN SanHendls2
-SAY ~ Are you shocked by my reaction, my love, or by the deeds that even our worst fantasies may not be capable of imagining?~
+SAY ~ Are you shocked by my reaction, or by the deeds that even our worst fantasies may not be capable of imagining?~
 IF~~THEN REPLY ~ I think you are right...yes...those people have known no scruples to misuse the helpless and defenseless victims to suffer for their so-called entertainment. They deserve no mercy as they had none for their slaves.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanHendls3
 IF~~THEN REPLY ~ I hate slavery just as much as you do, Sandrah. It is just...in all the time we are together now, with the hundreds of foe I have seen you kill, this is the first time I have ever seen you being satisfied by taking another one's life.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanHendls3
 END
@@ -555,6 +555,7 @@ END
 IF~ ~ THEN BEGIN SanHendls3
 SAY ~ I will kill the next of those slave drivers with the same merciless satisfaction, <CHARNAME>, that you have seen today with me. I will tell you the story of it some time, when my emotions have calmed down a bit. It has to do with one of my early missions I ventured on with my father, the one where I also freed Pelligram.~
 IF~~THEN REPLY ~ Her - but also some children?~ GOTO SanHendls4
+IF~~THEN REPLY ~ Sounds like some horrible experience?~ GOTO SanHendls4
 END
 
 IF~ ~ THEN BEGIN SanHendls4
@@ -563,7 +564,7 @@ IF~~THEN REPLY ~ (There is nothing for you to do but take her in your arms and c
 END
 
 IF~ ~ THEN BEGIN SanHendls5
-SAY ~ (She smiles at you.) You are a kind and caring observer, my love. I think I owe you a story about the background of my behaviour by now.~
+SAY ~ (She smiles at you.) You are a kind and caring observer. I think I owe you a story about the background of my behaviour by now.~
 IF~~THEN REPLY ~ Sandrah, it is not curiousity but something I have learned from one of the best healers I know - it helps to heal a wounded soul to talk about your sorrows to someone who cares for you.~ DO~ SetGlobal("SanHendak","GLOBAL",4)IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanHendls6
 END
 
@@ -577,6 +578,7 @@ IF~ ~ THEN BEGIN SanHendls7
 SAY ~ He wanted to be by my side when the rough truth and cruelty of the Realms would end my childhood dreams of a fairytale world as he was certain it would happen sooner or later. I am sure even he was unaware and shocked by what we really found on that mission.~
 = ~ We teleported to a space outside of the village that had pleaded for help. There was an unnatural quietness around the area, no bird singing, no dog barking. As we moved slowly into the village we soon found out why. Dead bodies lay strewn in the streets and in every house, barn and building we examined. The intruders had killed men, women, animals, many obviously in their sleep or before they could even grab their weapons to defend themselves. It had not been a fight but rather a slaughter, eliminating the whole population. Only after some time and when we overcame the initial shock of having come too late, we recognised that among all the dead there where no children and no younger women.~
 IF~~THEN REPLY ~ ...oh, my, I fear the worst...~  GOTO SanHendls8
+IF~~THEN REPLY ~ Ah, I expect the bloody part comes now...~  GOTO SanHendls8
 END
 
 IF~ ~ THEN BEGIN SanHendls8
@@ -610,7 +612,7 @@ IF ~~ THEN REPLY ~ What? Sandrah!~  GOTO  SanAmnAdvB
 END
 
 IF~~ THEN BEGIN SanAmnAdvB
-SAY ~ Imoen's rescue, my beloved <CHARNAME> will be a long term operation to be well planned and organised, not one of those missions to rush into with drawn weapons to save the damsel in distress. And, by the way, if you have not noticed yet, being so close to her, Imoen is far from being the helpless damsel waiting for our immediate appearance. So my advice is to go about with a cool mind in order to succeed.~
+SAY ~ Imoen's rescue, <CHARNAME> will be a long term operation to be well planned and organised, not one of those missions to rush into with drawn weapons to save the damsel in distress. And, by the way, if you have not noticed yet, being so close to her, Imoen is far from being the helpless damsel waiting for our immediate appearance. So my advice is to go about with a cool mind in order to succeed.~
 IF ~~ THEN REPLY ~ Sorry, if I have sounded like I doubted your loyalty. Please, go on.~ GOTO  SanAmnAdvC
 IF ~~ THEN REPLY ~ Maybe it is good that you have not got swept away by an immediate impulse to rush to the rescue. I will listen to your reasoning carefully, Sandrah.~ GOTO  SanAmnAdvC
 END
