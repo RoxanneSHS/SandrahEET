@@ -378,11 +378,13 @@ IF~~ THEN BEGIN SanPelltru2
 SAY ~ A valid assumption and I thought likewise when I initially discovered some of Pelligram's abilities and found she was surely something more than just a magnificent animal.~
 =~ However, discovering and learning more over time, I have now come to believe that my father was just an instrument used to make me meet Pelligram. Even the mighty Elminster would not be able to create a creature like her - I mean she is not a golem or a summoned being. She is a real personality on her own.~
 IF~~THEN REPLY~ Hmm. For me it sounds like you suspect someone even mightier than your father to be responsible. Your Goddess? Mystra herself?~ GOTO SanPelltru3
+IF~~THEN REPLY~ There's a chance that she's just a clever animal and the rest is just what we like to see in her.~ GOTO SanPelltru3
 END
 
 IF~~ THEN BEGIN SanPelltru3
 SAY ~ It will take a bit of time to provide you with my interpretation, my dear. Do you want to converse about it now or should we postpone the issue to a quiet moment later on? ~
-IF~~THEN REPLY~ Right, we will talk about it one of those evenings, provided you allow me the time for a bit of conversation before your desire overwhelms us (Smile at her and give her a kiss.)~ DO~ SetGlobal("SanPelltru","LOCALS",1)~EXIT
+IF~!Global("SanRompa","Global",2)~THEN REPLY~ Right, we will talk about it one of those evenings, provided you allow me the time for a bit of conversation before your desire overwhelms us (Smile at her and give her a kiss.)~ DO~ SetGlobal("SanPelltru","LOCALS",1)~EXIT
+IF~Global("SanRompa","Global",2)~THEN REPLY~ Right, we will talk about it one of those evenings, provided I'm still interested then.~ DO~ SetGlobal("SanPelltru","LOCALS",1)~EXIT
 IF~~THEN REPLY~ There is no urgent task at hand, Sandrah, so we may as well continue with this topic.~GOTO SanPelltru4
 END
 
@@ -394,7 +396,7 @@ IF~~THEN REPLY ~ Boo? A special creature, no doubt. But Minsc is no follower of 
 END
 
 IF~~ THEN BEGIN SanPelltru5
-SAY ~ (Laughs nervously) I am afraid I may sound silly or self-centered, darling, but I think it has nothing to do with being a priestess of Mystra or not. My goddess seems to have specific interests and even some kind of plan for some mortals of this plane. She provides those people with this kind of sendling to accompany their ways.~
+SAY ~ (Laughs nervously) I am afraid I may sound silly or self-centered, but I think it has nothing to do with being a priestess of Mystra or not. My goddess seems to have specific interests and even some kind of plan for some mortals of this plane. She provides those people with this kind of sendling to accompany their ways.~
 IF~~THEN REPLY~ It is not silly, Sandrah. I think it has become obvious by now that Mystra's interest in you is a very special one, be it because of your father or because you are her grandchild - or maybe just because you are...yourself.~ GOTO SanPelltru6
 END
 
@@ -405,8 +407,8 @@ END
 
 IF~~ THEN BEGIN SanPelltru7
 SAY ~ Oh, no, I would not insult her with such a comparison. She is of her own kin and loyal to me as much as she is to Mystra. We will never separate and so our way is together - maybe to that goal that Mystra has in mind for us. Still it will be us to make the decisions, not the Goddess.~
-IF~InMyArea("Haiass")~THEN REPLY~ I have much to think about for now, darling. I think I will keep a more open eye on Haiass as well from now on. Thank you.~EXIT
-IF~!InMyArea("Haiass")~THEN REPLY~ I have much to think about for now, darling. I think I will keep a more open eye on Pelligram as well from now on. Thank you.~ EXIT
+IF~InMyArea("Haiass")~THEN REPLY~ I have much to think about for now. I will keep a more open eye on Haiass as well from now on. Thank you.~EXIT
+IF~!InMyArea("Haiass")~THEN REPLY~ I have much to think about for now. I will keep a more open eye on Pelligram as well from now on. Thank you.~ EXIT
 END
 
 IF~~THEN BEGIN SanPCvsDriz1
