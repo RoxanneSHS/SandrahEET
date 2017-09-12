@@ -150,7 +150,14 @@ SAY ~ (If you ever saw a face lighten up when seeing you, it is now.) <CHARNAME>
 IF ~~ THEN REPLY  ~ I am sorry for my rudeness back then, friends, of course we will listen to your problem. Afterwards we will council in our group whether we can do anything to help Elminster. ~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXTERN Elminsa GaveNarQ2
 END
 
-IF ~Global("SandrahJoined","GLOBAL",6)~ THEN BEGIN BG2Rejoin1
+IF ~Global("SandrahJoined","GLOBAL",6)!Global("Sanrompa","Global",2)~ THEN BEGIN BG2Rejoin1l
+SAY ~ <CHARNAME>, it is really you! I have finally found you!~
+=~ (She rushes into your arms and kisses you desperately.)~
+= ~ Oh, I was so afraid and terrified. Are you hurt, darling, let me heal you?~
+IF~~THEN REPLY ~ Sandrah, my sweet thing, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() SetGlobal("San0602Reunite","LOCALS",1) RealSetGlobalTimer("San0602Int","LOCALS",EIGHT_MINUTES)~ GOTO BG2Rejoin2
+END
+
+IF ~Global("SandrahJoined","GLOBAL",6)Global("Sanrompa","Global",2)~ THEN BEGIN BG2Rejoin1
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
 =~ (She rushes into your arms and kisses you spontaniously.)~
 = ~ Oh, I was so afraid and terrified. Are you hurt, let me heal you?~
