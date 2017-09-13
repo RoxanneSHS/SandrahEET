@@ -3492,7 +3492,7 @@ IF ~~ THEN BEGIN  RomClari4
 SAY~So you want me to leave and end it?~
 IF ~~ THEN REPLY ~I think this is the only sensible solution. Otherwise we both will suffer from the situation day after day.~  GOTO RomClari5
 IF ~~ THEN REPLY ~I want you to accept the facts. Otherwise we both will suffer from the situation day after day. I don't want you to leave, I just want you to stop your advances. You and me are nothing that can become true.~ GOTO RomClari6
-IF ~~ THEN REPLY ~My heart belongs to another. I can't respond to your feelings. I can offer you my friendship but not my love.~ GOTO RomClari8
+IF ~~ THEN REPLY ~My heart belongs to another. I can't respond to your feelings. I can offer you my friendship but not my love.~ GOTO RomClari6
 END
 
 IF ~~ THEN BEGIN  RomClari5
