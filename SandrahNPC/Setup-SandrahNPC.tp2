@@ -8123,7 +8123,18 @@ COPY_EXISTING ~Imoend.cre~ ~override~
   
 COPY_EXISTING ~Sandrah.cre~ ~override~
   ADD_KNOWN_SPELL ~cvwoun~ #1 ~priest~
+   BUT_ONLY
+
+COPY_EXISTING ~Sandrah.cre~ ~override~  
   ADD_KNOWN_SPELL ~sppr108~ #0 ~priest~
+  BUT_ONLY
+  
+COPY_EXISTING ~Sandrah.cre~ ~override~
+  ADD_KNOWN_SPELL ~sppr212~ #0 ~priest~
+  BUT_ONLY
+  
+COPY_EXISTING ~Sandrah.cre~ ~override~
+  ADD_KNOWN_SPELL ~sppr103~ #0 ~priest~
   BUT_ONLY
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
