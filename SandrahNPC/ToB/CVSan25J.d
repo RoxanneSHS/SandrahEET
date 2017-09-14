@@ -165,7 +165,7 @@ IF~~THEN REPLY~Cyric, who else.~EXIT
 END
 
 IF~~THEN BEGIN SanCyricwar1
-SAY~ Is that not apparent, my love? Ao appointed Bhaal's role as the god of murder to my grandfather, among his other tasks. Any form of restoration of his predessesor means a stab at Cyric's domain.~
+SAY~ Is that not apparent, <CHARNAME>? Ao appointed Bhaal's role as the god of murder to my grandfather, among his other tasks. Any form of restoration of his predessesor means a stab at Cyric's domain.~
 IF~~THEN REPLY~ In this case he must be an opponent to our foe - and a possible ally for us.~ GOTO SanCyricwar2
 IF~~THEN REPLY~ I will never NEVER cooperate with the mad God of Lies!~ GOTO SanCyricwar2
 END
@@ -190,7 +190,7 @@ IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally
 END
 
 IF~~THEN BEGIN SanLongPid12
-SAY ~I would not miss a single day of it, my love.~
+SAY ~I would not miss a single day of it, my dear.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
 IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
@@ -238,7 +238,7 @@ END
 IF~~ THEN BEGIN SanSarevPid4
 SAY~ You are both similar in the way that you have this heritage that is part of yourself and will always be inside you. It can always come out like in your own transformation to the Slayer once. You are similar now as you both control the beast and I know it is not an easy task.~
 =~I have always tried to help you in your internal battle, <CHARNAME>...~
-IF~~THEN REPLY ~Will you do likewise for him?~GOTO SanSarevPid5
+IF~~THEN REPLY ~Will you do the same for him?~GOTO SanSarevPid5
 END
 
 IF~~ THEN BEGIN SanSarevPid5
