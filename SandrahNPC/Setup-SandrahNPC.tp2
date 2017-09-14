@@ -8120,6 +8120,11 @@ COPY_EXISTING ~Imoend.cre~ ~override~
 
 COPY_EXISTING ~Imoend.cre~ ~override~
   ADD_MEMORIZED_SPELL ~SPWI104~ #0 ~wizard~ ( 1 )
+  
+COPY_EXISTING ~Sandrah.cre~ ~override~
+  ADD_KNOWN_SPELL ~cvwoun~ #1 ~priest~
+  ADD_KNOWN_SPELL ~sppr108~ #0 ~priest~
+  BUT_ONLY
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BPDemon.bcs~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/BPDemon.baf~
