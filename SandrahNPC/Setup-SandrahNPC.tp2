@@ -4361,8 +4361,8 @@ COPY_EXISTING ~Imoen1.CRE~ ~override/Imoen1.CRE~
               ~Imoen213.CRE~ ~override/Imoen213.CRE~
               ~Imoendrm.cre~ ~override/Imoendrm.CRE~
  WRITE_BYTE 0x238 17 // 17 STR
- WRITE_ASCII 0x34 ~Nimoens~
- WRITE_ASCII 0x3c ~Nimoenm~
+ WRITE_ASCII 0x34 ~Nimoens~ #8
+ WRITE_ASCII 0x3c ~Nimoenm~ #8
 
 COPY_EXISTING ~Imoen2.CRE~ ~override/ImoenM.CRE~
 WRITE_SHORT 0x10 0
@@ -4509,8 +4509,8 @@ COPY_EXISTING ~Branwe.CRE~ ~override/Branwe.CRE~
              ~ttBran.CRE~ ~override/ttBran.CRE~
   WRITE_BYTE 0x23d 16 // constitution
   WRITE_BYTE 0x238 17 // 17 STR
-  WRITE_ASCII 0x34 ~Branwes~
-  WRITE_ASCII 0x3c ~Branwem~
+  WRITE_ASCII 0x34 ~Branwes~ #8
+  WRITE_ASCII 0x3c ~Branwem~ #8
   WRITE_ASCII 0x260 ~RTFGone~
   BUT_ONLY_IF_IT_CHANGES
   
@@ -4518,8 +4518,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~dl#bwn.CRE~ THEN BEGIN
 COPY_EXISTING ~dl#bwn.CRE~ ~override/dl#bwn.CRE~
   WRITE_BYTE 0x23d 16 // constitution
   WRITE_BYTE 0x238 17 // 17 STR
-  WRITE_ASCII 0x34 ~Branwes~
-  WRITE_ASCII 0x3c ~Branwem~
+  WRITE_ASCII 0x34 ~Branwes~ #8
+  WRITE_ASCII 0x3c ~Branwem~ #8
   WRITE_ASCII 0x260 ~RTFGone~
   BUT_ONLY_IF_IT_CHANGES
 END
