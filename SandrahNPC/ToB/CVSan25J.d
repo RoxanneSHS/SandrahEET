@@ -27,6 +27,7 @@ END
 IF~~THEN BEGIN GodagTob1
 SAY~A...like Alianna, not K like Khalindra. ~
 IF~~THEN REPLY~She was not Gorion's lover like he wrote to me in his Candlekeep letter but he knew her and she was my mother.~GOTO GodagTob2
+IF~~THEN REPLY~Gorion loved a bhaalist of the worst type, he killed her and kept her child. I don't believe he could have lied to me like that.~GOTO GodagTob2
 END
 
 IF~~THEN BEGIN GodagTob2
@@ -131,15 +132,15 @@ IF~~THEN REPLY~We are to fight the Overlord of the Abyss? That is sheer madness!
 END
 
 IF~~THEN BEGIN  SanWKStory2
-SAY~ It would be *just* his mortal avatar, my darling - probably still the most dangerous and evil creature imaginable. And remember that it is not confirmed yet, even the members of the order do not know the identity of the Imprisoned One. ~
+SAY~ It would be *just* his mortal avatar - probably still the most dangerous and evil creature imaginable. And remember that it is not confirmed yet, even the members of the order do not know the identity of the Imprisoned One. ~
 =~ Still Helm's personal dealing with the case is an indication that the Imprisoned One is indeed Demogorgon's avatar.~
 IF~~THEN REPLY~ His *mortal* avatar as you stated. ~DO~SetGlobal("WhoImpr","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN SanMinglGod1
 SAY~I hope you do not let Talos' words bring mistrust to our union. Should my presence at your side allow the interpretation that Mystra is involved, others may indeed use this as a loophole. I just hope my aid compensates for that.~
-IF~~THEN REPLY~ It surely does.~ GOTO SanMinglGod2
-IF~~THEN REPLY~ Go on.~ GOTO SanMinglGod2
+IF~~THEN REPLY~It surely does.~ GOTO SanMinglGod2
+IF~~THEN REPLY~Go on.~ GOTO SanMinglGod2
 IF~~THEN REPLY~Ah, those who have an interest in the Bhaalwar are those that would have found this or any other excuse to mingle in our affairs.~ GOTO SanMinglGod2
 END
 
@@ -152,6 +153,7 @@ IF~~THEN BEGIN SanMinglGod3
 SAY~*Her expression is unpenetrable as she gives you one of her long thoughtful looks.* ~
 =~We do not need another war, definitely not. My hope is that you and I come out of this whole mess as a force powerful enough to improve the situation here on the Prime permanently. The mortals must emancipate themselve from those power hungry meddlers that call themselve *gods*~
 IF~~THEN REPLY~Who else may have their champion in this game?~GOTO SanMinglGod4
+IF~~THEN REPLY~Sounds like you think more gods play a role in this game?~GOTO SanMinglGod4
 END
 
 IF~~THEN BEGIN SanMinglGod4
