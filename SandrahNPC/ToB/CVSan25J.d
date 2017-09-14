@@ -146,7 +146,7 @@ END
 
 IF~~THEN BEGIN SanMinglGod2
 SAY~(Sigh) Once this quest is over we should really deal with those constant interferences of the celestials on the Prime. This is our plane!~
-IF~~THEN REPLY~Are you trying to declare a war to the gods, my love?~ GOTO SanMinglGod3
+IF~~THEN REPLY~Are you trying to declare a war to the gods, Sandrah?~ GOTO SanMinglGod3
 END
 
 IF~~THEN BEGIN SanMinglGod3
@@ -265,8 +265,9 @@ IF~~THEN DO~SetGlobal("SanPoPla","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN SanPoPla4
-SAY~ It appears from all the messages we have received that the final war of the Bhaalspawns has now begun. And you, my love, are at the very centre of it all.~
+SAY~ It appears from all the messages we have received that the final war of the Bhaalspawns has now begun. And you, <CHARNAME>, are at the very centre of it all.~
 IF~~THEN REPLY~ I'm afraid that is the case. Can you be a bit more specific, Sandrah?~ DO~SetGlobal("SanPoPla","LOCALS",2)~GOTO SanPoPla5
+IF~~THEN REPLY~ Do you have some information that are less pbvious than what you just stated, Sandrah?~ DO~SetGlobal("SanPoPla","LOCALS",2)~GOTO SanPoPla5
 END
 
 IF~~THEN BEGIN SanPoPla5
@@ -284,6 +285,7 @@ END
 IF~~THEN BEGIN SanPoPla7
 SAY~ It is this Army of the Five we learned about in Tethir and also the words of the stone head about the *most unlikely allies*. Add to this the hunt of Bhaalspawns that has recently started by some unknown power. It seems that the big ones start to feed on the small to get bigger. Your godly father spawned them richly enought - his essence is much devided this way.~
 IF~~THEN REPLY~ You begin to get as mysterious as those stone heads - only your face is much lovelier.~ GOTO SanPoPla8
+IF~~THEN REPLY~ You begin to get as mysterious as those stone heads.~ GOTO SanPoPla8
 END
 
 IF~~THEN BEGIN SanPoPla8
@@ -303,7 +305,7 @@ IF~~THEN REPLY~The one we killed was a Bhaalspawn herself. What sense does that 
 END
 
 IF~~THEN BEGIN SanPoPla11
-SAY~ It makes very much sense, my love. The most unlikely allies in the fight for Bhaal's throne would indeed be - five Bhaalspawns. However if my recent analysis is correct and a certain amount of Bhaal's essence is required to start the ritual of his recall then it does make sense that five strong ones work together and start to eliminate the weaker ones to *harvest* what they need.~
+SAY~ It makes very much sense, <CHARNAME>. The most unlikely allies in the fight for Bhaal's throne would indeed be - five Bhaalspawns. However if my recent analysis is correct and a certain amount of Bhaal's essence is required to start the ritual of his recall then it does make sense that five strong ones work together and start to eliminate the weaker ones to *harvest* what they need.~
 IF~~THEN REPLY~Why did they never try to approach me to join them?~ GOTO SanPoPla12
 IF~~THEN REPLY~They avoid me by all means. The one in Tethir for some reason attacked me alone.~GOTO SanPoPla12
 END
@@ -312,7 +314,7 @@ IF~~THEN BEGIN SanPoPla12
 SAY~ Even if they work together on a temporary basis, in the end it will be only one who can become the rising god. Once they have reached their initial goal the fight among them will start. You - you are the common enemy. On the one hand you possess much of what they need - hence the single attempt of Illasera on you, on the other hand only their combined power may be able to defeat you.~
 IF~~THEN REPLY~ All of this seems to make sense, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 IF~~THEN REPLY~ It seems our goal will be to meet them one by one but never face them together, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
-IF~~THEN REPLY~ You were right long ago, my love, when you told me that there is no way to escape my destiny.~ DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
+IF~~THEN REPLY~ You were right long ago, when you told me that there is no way to escape my destiny.~ DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 END
 
 IF~Global("SanSerBha","GLOBAL",3)~ THEN BEGIN SanTraitAssu1
@@ -367,7 +369,7 @@ IF~~THEN GOTO DoubtMothPC2
 END
 
 IF~~THEN BEGIN DoubtMothPC2
-SAY~(Smiles) You know me just too well, my love. Yes, I have been thinking about a mistake we both have made long, long time ago...~ 
+SAY~(Smiles) You know me just too well, <CHARNAME>. Yes, I have been thinking about a mistake we both have made long, long time ago...~ 
 IF~~THEN REPLY~Probably...there were some we made, even if we tried to avoid to do something intentionally wrong most of the time. Is it still that relevant today?~DO~SetGlobal("SanDoubtKhalTOB","LOCALS",2)~GOTO DoubtMothPC3
 END
 
@@ -487,7 +489,7 @@ IF~~THEN REPLY~You sound as crazy as this crazy whatever-it-was!~ GOTO Sangoriwr
 END
 
 IF~~THEN BEGIN Sangoriwr2
-SAY~I seek revenge and I seek justice and I know I will be able to claim it. Not from you, my love, but from the one who really did it. I will be by your side when he faces his verdict.~
+SAY~I seek revenge and I seek justice and I know I will be able to claim it. Not from you, <CHARNAME>, but from the one who really did it. I will be by your side when he faces his verdict.~
 IF~~ THEN REPLY~Now I understand. You talk of Bhaal...~DO~SetGlobal("SanGoriWraith","Global",3) ~EXIT
 END
 
@@ -536,13 +538,13 @@ IF~~THEN REPLY~ It is a kind of relief to me that I do not have to grieve her. G
 END
 
 IF~~THEN BEGIN SanWronassumpt3
-SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, my love, she was just a willing toy of Bhaal, do not dwell on her.~
+SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
 IF~~THEN REPLY~ It is a kind of relief to me that I do not have to grieve her. Gorion did me a favour even greater than I had imagined till this day.~ GOTO SanWronassumpt5
 IF~~THEN REPLY~ If your mother's second child was neither me nor Imoen...~GOTO SanWronassumpt5
 END
 
 IF~~THEN BEGIN SanWronassumpt4
-SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, my love, she was just a willing toy of Bhaal, do not dwell on her.~
+SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
 IF~~THEN REPLY~ If your mother's second child was neither me nor Imoen...~GOTO SanWronassumpt5
 IF~~THEN REPLY~ I can't believe that your own father did betray us so all the time, Sandrah.~ GOTO SanWronassumpt5
 END
@@ -583,7 +585,7 @@ IF~~THEN REPLY~ We must still do a thing or two here before we can find the time
 END
 
 IF~Global("San25ChiQuest","GLOBAL",5) ~ THEN BEGIN SanQuestForce
-SAY~ We have postponed our return to my father long enough now, my love. Now is a good time to let me take us there. Not just for my own benefit but for yours as well.~
+SAY~ We have postponed our return to my father long enough now, <CHARNAME>. Now is a good time to let me take us there. Not just for my own benefit but for yours as well.~
 IF~~THEN REPLY~ Let us go.~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
 IF~~THEN REPLY~ Just another minute...~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
 IF~~THEN REPLY~ I have outgrown your father's envolvement by now...~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
@@ -622,11 +624,12 @@ END
 IF~~ THEN BEGIN SanWantsSeeQi5
 SAY~ Can I give my father our oath that you have no intention to partake in your father's ressurection nor to harm my sister in any way?~
 IF~~THEN REPLY~ Yes, I swear it. By my love for you.~ DO~ SetGlobal("San25ChiQuest","GLOBAL",10)~GOTO SanWantsSeeQi6
+IF~~THEN REPLY~ Yes, I swear it. I owe you as much for your loyalty.~ DO~ SetGlobal("San25ChiQuest","GLOBAL",10)~GOTO SanWantsSeeQi6
 IF~~THEN REPLY~ I am not willing to give you such an oath.~ GOTO SanWantsSeeQi7
 END
 
 IF~~ THEN BEGIN SanWantsSeeQi6
-SAY~ I am so glad to hear that, my love, let us go to see my father.~
+SAY~ I am so glad to hear that, let us go to see my father.~
 IF~~THEN REPLY~ (You kiss her.)~EXIT
 END
 
@@ -642,7 +645,7 @@ FadeFromColor([30.0],0)~EXIT
 END
 
 IF~Global("San25ChiQuest","GLOBAL",12)~ THEN BEGIN SanWantsSeeQi8
-SAY~ My love, I am glad I share this great day of my life with you - my sister and me will meet.~
+SAY~ <CHARNAME>, I am glad I share this great day of my life with you - my sister and me will meet.~
 IF~~THEN REPLY~ How do we get to Undermountain. I have learned at Candlekeep that it is a vast labyrinth and uncharted dungeon.~ GOTO SanWantsSeeQi9
 IF~Global("CVUmo1","GLOBAL",1)~THEN REPLY~ Your mother's grave at the temple is the entrance?~GOTO SanWantsSeeQi9
 IF~!Global("CVUmo1","GLOBAL",1)~THEN REPLY~ What is the use of that key your father gave you?~ GOTO SanWantsSeeQi9
