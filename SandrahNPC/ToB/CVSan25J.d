@@ -356,8 +356,15 @@ SAY~ Maybe he already did. Before he would openly reveal himself to you would he
 IF ~~THEN REPLY~Better keep our eyes open then.~EXIT
 END
 
-IF~Global("SanDoubtKhalTOB","LOCALS",1)~THEN BEGIN DoubtMothPC1
+IF~Global("SanDoubtKhalTOB","LOCALS",1)!Global("SanRompa","Global",2)~THEN BEGIN DoubtMothPC1
 SAY ~*You have observed that your beloved Sandrah has been pondering some issue for a while now.*~
+IF~~THEN REPLY~Do I really have to tell you I'm here whenever you need me?~GOTO DoubtMothPC2
+IF~~THEN REPLY~Spit it out before it swallows you!~GOTO DoubtMothPC2
+IF~~THEN REPLY~*You decide not to bother her and give her time to speak if she wants to.* ~GOTO DoubtMothPC2a
+END
+
+IF~Global("SanDoubtKhalTOB","LOCALS",1)Global("SanRompa","Global",2)~THEN BEGIN DoubtMothPC1c
+SAY ~*You have observed that your counselor Sandrah has been pondering some issue for a while now.*~
 IF~~THEN REPLY~Do I really have to tell you I'm here whenever you need me?~GOTO DoubtMothPC2
 IF~~THEN REPLY~Spit it out before it swallows you!~GOTO DoubtMothPC2
 IF~~THEN REPLY~*You decide not to bother her and give her time to speak if she wants to.* ~GOTO DoubtMothPC2a
@@ -403,12 +410,19 @@ END
 IF~~THEN BEGIN DoubtMothPC7
 SAY~You are right, <CHARNAME>, the idea of Khalindra being your mother as well as mine has given you some strength that you surely needed. It is...I still have the feeling that the search I set out for when I left Waterdeep is not over yet.~
 IF~~THEN REPLY~I hope we have not met that child already - and probably killed her or him.~ GOTO DoubtMothPC8
-IF~~THEN REPLY~If that child was not me, then chances get thinner every day that he or she is still alive.~GOTO DoubtMothPC8
-IF~~THEN REPLY~Still assuming that the spawn placed next to your cradle was one of the strongest of the breed - are you saying it may be one of those Five we are now up against?~GOTO DoubtMothPC8
+IF~!Global("SanRompa","Global",2)~THEN REPLY~If that child was not me, then chances get thinner every day that he or she is still alive.~GOTO DoubtMothPC8
+IF~!Global("SanRompa","Global",2)~THEN REPLY~Still assuming that the spawn placed next to your cradle was one of the strongest of the breed - are you saying it may be one of those Five we are now up against?~GOTO DoubtMothPC8
+IF~Global("SanRompa","Global",2)~THEN REPLY~If that child was not me, then chances get thinner every day that he or she is still alive.~GOTO DoubtMothPC8a
+IF~Global("SanRompa","Global",2)~THEN REPLY~Still assuming that the spawn placed next to your cradle was one of the strongest of the breed - are you saying it may be one of those Five we are now up against?~GOTO DoubtMothPC8a
 END
 
 IF~~THEN BEGIN DoubtMothPC8
 SAY~*She takes your hand and presses it hard.* Whatever the outcome may be, one decision we have made long ago is undoubtable - I love you.~
+IF~~THEN DO ~IncrementGlobal("Sanpoints","GLOBAL",1)StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~EXIT
+END
+
+IF~~THEN BEGIN DoubtMothPC8a
+SAY~*She takes your hand and presses it hard.* Whatever the outcome may be, one decision we have made long ago is undoubtable - we will face this together.~
 IF~~THEN DO ~IncrementGlobal("Sanpoints","GLOBAL",1)StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~EXIT
 END
 
