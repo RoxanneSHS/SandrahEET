@@ -58,7 +58,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ SodImoMiss3
-~You read my mind, love.~
+~You read my mind, <CHARNAME>.~
 =~I feel a bit lighter having to look only after one of you this time. (She smiles again but you can see that she is still concerned.)~EXIT
 
 CHAIN
@@ -229,6 +229,7 @@ DO~SetGlobal("SanBhaal","bd2000",3)~
 END
 ++~Here it all began - or ended.~ + BhalBri2
 ++~Here it all began - or ended. And we are holding each other's hand where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
+++~Here it all began - or ended. And we stand here united where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
 
 CHAIN
 IF ~~THEN CVSandrJ BhalBri2
@@ -237,6 +238,7 @@ IF ~~THEN CVSandrJ BhalBri2
 END
 ++~And together we will master what remains to be done. (You kiss her.)~+ BhalBri4
 ++~Your presence gives me strength even now as I see how much awaits me still. (You tell her of your vision and the hooded man's visit.)~+ BhalBri3
+++~And together we will master what remains to be done. ~+ BhalBri3
 
 CHAIN
 IF ~~THEN CVSandrJ BhalBri3
@@ -249,7 +251,7 @@ IF ~~THEN CVSandrJ BhalBri4
 
 CHAIN
 IF WEIGHT #-2~Global("SanBDdream2","LOCALS",1) ~THEN CVSandrJ BDdream2a
-~Another meaningful dream, my love?~
+~Another meaningful dream?~
 DO~SetGlobal("SanBDdream2","LOCALS",2)~
 END
 ++~How can it be meaningful if the meaning escapes me?~ + BDdream2b
@@ -411,7 +413,7 @@ I_C_T BDImoen 92 SanBDImoReunite
 
 I_C_T BDFenste 0 SanFenstAssure
 ==CVSandrJ IF~InParty("CVSandr")~THEN~*She takes your hand reassuringly.*~
-==CVSandrJ IF~InParty("CVSandr")~THEN~She is the best hands, my love. I could do not more for our *bestest* friend than they do here, especially not since we have to get out on the road again now.~END
+==CVSandrJ IF~InParty("CVSandr")~THEN~She is the best hands. I could do not more for our *bestest* friend than they do here, especially not since we have to get out on the road again now.~END
 
 EXTEND_BOTTOM BDSafanJ 141
 IF~InParty("CVSandr")~THEN REPLY~My long term relationship with Sandrah has surely not escaped your scrutiny.~GOTO SafSan1

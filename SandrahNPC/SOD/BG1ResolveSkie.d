@@ -6,7 +6,7 @@ I_C_T Boanaste 4 SanSoDSkie
 
 CHAIN
 IF WEIGHT #-4~Global("SanSodEntrap","Global",1)~THEN BSandr Entrap1
-~An expertise on magical entrapments - my love, we should keep this book for me to study when this battle is over.~ 
+~An expertise on magical entrapments - <CHARNAME>, we should keep this book for me to study when this battle is over.~ 
 DO~SetGlobal("SanSodEntrap","Global",2)~
 END
 ++~Anything of imminent help for the tasks at hand?~+ Entrap2
@@ -31,7 +31,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ Killskie2
-~I know you did not kill her, even if you are unsure about yourself. The fact that bothers me is that the killer took Skie's soul. We will have a hard time to prove your innocense since we cannot restore the only witness we have.~
+~I know you did not kill her, even if you are unsure about yourself. The fact that bothers me is that the killer took Skie's soul. We will have a hard time to prove your innocence since we cannot restore the only witness we have.~
 =~The killer used something like a soultaker weapon, without the weapon that holds Skie's soul, I can do nothing for her.~EXIT
 
 CHAIN
