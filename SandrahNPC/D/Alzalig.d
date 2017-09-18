@@ -20,11 +20,6 @@ SAY ~ Are you kidding me, mortal?~
 IF ~~ THEN REPLY ~ The scroll was just found by coincidence. It had a lot to tell anyway. For example about your archenemy. ~ GOTO NarArch
 END
 
-IF ~~ THEN BEGIN NarHeart1
-SAY~ What? ~
-IF ~~ THEN REPLY ~ (Sandrah remarks:) If this one is as dumb as the last one, we may find a way to outwit him instead of fighting, <CHARNAME>. ~  GOTO NarArch
-END
-
 IF ~~ THEN BEGIN NarArch
 SAY ~ HA, so the archenemy Naronguth is once again behind all this. And he sends your pathetic little group to defeat me? His jokes get worse each time around. ~
 = ~ And you, little fools, will suffer an early death for your impertinence.~
@@ -53,3 +48,10 @@ END
 IF ~~ THEN BEGIN Alzfight
 SAY ~ Fools! ~ IF ~~ THEN DO ~ ChangeEnemyAlly("Alzalig",ENEMY) Attack(Player1)~ EXIT
 END
+
+CHAIN
+IF ~~ THEN Alzalig NarHeart1
+~ What? ~
+==CVSandrJ ~ If this one is as dumb as the last one, we may find a way to outwit him instead of fighting, <CHARNAME>. ~
+END
+++~Worth a try.~+ NarArch

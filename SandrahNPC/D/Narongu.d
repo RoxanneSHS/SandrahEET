@@ -1,7 +1,6 @@
 BEGIN NARONGU
 
 // Naronguth Returns
-//
 
 IF ~ Global("SanNarQ","GLOBAL",9) AreaCheck("CVRoa1") ~ THEN BEGIN  NarRRet1
 SAY ~ STAND!! The band of slippery slipper thieves. What did you expect? ~
@@ -27,12 +26,14 @@ IF ~NumTimesTalkedTo(0)InMyArea("CVSandr")PartyHasItem("Scrlalz") AreaCheck("CVN
 SAY ~ MORTAL, YOUR JOURNEY HAS COME TO AN END!
  (It seems to you, that this demon was puzzled for a moment, not expecting anyone to approach from this direction of the path.) ~
 IF ~ ~ THEN REPLY ~ Who, or what are you? ~ GOTO FindAlz1
+IF ~ ~ THEN REPLY ~ Where are we now? ~ GOTO FindAlz1
 END
 
 IF ~~ THEN BEGIN FindAlz1
 SAY ~ HAHA, SINCE YOU WILL NOT LEAVE THIS PLACE ALIVE I MIGHT AS WELL TELL YOU! ~
 = ~ I AM NARONGUTH....??...NARONGUTH!!!. ~
 IF ~ ~ THEN REPLY ~ Are we supposed to know you? (The horrible sound of crashing rocks is heard as the entry behind you collapses.)~  DO ~ CreateItem("SANBOUL",0,0,0) DropItem("SANBOUL",[302.586])~ GOTO FindAlz2
+IF ~ ~ THEN REPLY ~ Interesting. Not that it means anything to us. (The horrible sound of crashing rocks is heard as the entry behind you collapses.)~  DO ~ CreateItem("SANBOUL",0,0,0) DropItem("SANBOUL",[302.586])~ GOTO FindAlz2
 END
 
 IF ~~ THEN BEGIN FindAlz2
@@ -46,7 +47,8 @@ SAY~ WHAT IS THIS WHISPER, CLERIC GIRL? NOTHING REMAINS SECRET TO THE MIGHTY NAR
 = ~ LET ME THINK. ~
 = ~ ONLY SOMEONE AS MIGHTY AS ELMINSTER WOULD BE ABLE TO FIND ME. (Puzzled again) NONE OF YOU IS ELMINSTER , HEY. BUT....~
 = ~ LITTLE CLERIC GIRL, COME CLOSER, THERE IS SOMETHING I SENSE ABOUT YOU.~
-IF ~ ~ THEN REPLY ~ You nasty fiend, don't dare to touch Sandrah. ~ GOTO FindAlz4
+IF ~ ~ THEN REPLY ~ You nasty fiend, don't dare to touch Sandrah. ~ DO~IncrementGlobal("Sanpoints","Global",1)~GOTO FindAlz4
+IF ~ ~ THEN REPLY ~ Sandrah, I think you got us into somr trouble here. ~GOTO FindAlz4
 END
 
 IF  ~~ THEN BEGIN FindAlz4
@@ -88,7 +90,7 @@ END
 
 IF ~~ THEN BEGIN AlzAtt
 SAY ~ WHAT? ARE YOU STUPID? ~
-IF ~~ THEN REPLY ~(Sandrah whispers again) <CHARNAME>, Don not try to be my guardian against this creature, he is too mighty for us. We must find a better way than to fight him. ~ GOTO Recons
+IF ~~ THEN REPLY ~(Sandrah whispers again) <CHARNAME>, Don not try to be my guardian against this creature, he is too powerful for us. We must find a better way than to fight him. ~ GOTO Recons
 IF ~~ THEN REPLY ~ No more talking! ~ GOTO AlzFight
 END
 
@@ -243,16 +245,10 @@ APPEND CVSANDRJ
 IF~~ THEN BEGIN NarSanInt1
 SAY ~ (Whispers to you:) As this is not Alzaligundrel, then probably this is the archenemy mentioned by the scroll. <CHARNAME>, maybe we can use this to our advantage. ~ IF ~~THEN EXTERN NARONGU Whisp1
 END
-END
-
-APPEND CVSANDRJ
 
 IF~~THEN BEGIN NarSanInt2
 SAY ~(Whispers again:) Ha, <CHARNAME>, We have him now, with his hellish fire inside he cannot go pass the waterfall. If we offer him to deal with Alzaligundrel on his behalf, we can request the shard in return. ~ IF ~~THEN  EXTERN NARONGU DealDone
 END
-END
-
-APPEND CVSANDRJ
 
 IF ~~ THEN BEGIN NarSanInt3
 SAY ~ (Sandrah's face turns to anger like you have never seen her before. She takes some peanuts from a pocket of her robe and throws them at the demon:) HERE, SOME NUTS FOR YOUR PARTY - NOW GO TO HELL!~
