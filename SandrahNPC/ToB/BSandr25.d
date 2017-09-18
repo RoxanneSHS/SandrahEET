@@ -4,6 +4,7 @@ IF~Global("SanTOBanter","GLOBAL",1)~THEN BEGIN SanToBStart1
 SAY~ The final chapter of our common journey has begun. The path we need to take side by side seems to become clearer.~
 IF~~THEN REPLY~Clearer? What is clear is that I probably do good to keep my lovely advisor with me.~GOTO SanToBStart2
 IF~~THEN REPLY~All that is clear to me at the moment is how good it feels you are here with me, Sandrah.~ GOTO SanToBStart2
+IF~~THEN REPLY~All that is clear to me at the moment is I need my companions now more than ever, Sandrah.~ GOTO SanToBStart2a
 END
 
 IF~~THEN BEGIN SanToBStart2
@@ -11,9 +12,16 @@ SAY~ Consult me whenever you feel the need for my advice. And kiss me whenever y
 IF~~THEN REPLY~ (Take her in your arms and kiss her passionately.)~DO~SetGlobal("SanTOBanter","GLOBAL",2)~EXIT
 END
 
+IF~~THEN BEGIN SanToBStart2a
+SAY~ Consult me whenever you feel the need for my advice. ~
+IF~~THEN REPLY~ Sure.~DO~SetGlobal("SanTOBanter","GLOBAL",2)~EXIT
+END
+
 IF~Global("SanSerBha","GLOBAL",1)~ THEN BEGIN SanSearchServ1
 SAY~I have thought a bit about our current situation and I have found an issue that we need to pay more attention to.~
 IF~~THEN REPLY~What do you mean?~ DO~ SetGlobal("SanSerBha","GLOBAL",2)~ GOTO SanSearchServ2
+IF~~THEN REPLY~Yes?~ DO~ SetGlobal("SanSerBha","GLOBAL",2)~ GOTO SanSearchServ2
+IF~~THEN REPLY~Anything I haven't thought of myself?~ DO~ SetGlobal("SanSerBha","GLOBAL",2)~ GOTO SanSearchServ2
 END
 
 IF~~THEN BEGIN SanSearchServ2
@@ -43,7 +51,7 @@ END
 
 IF~~ THEN BEGIN SanSearchServ5
 SAY~Yaga-Shura is most probably one of the allies, as we heard that this Gromnir has already gone to a kind of madness, and it is most unlikely that the fight inside of the group has already begun.  The other three, mmh...it may be too early to issue a suspicion already...~
-IF~~THEN REPLY ~ Hey, hey, don't weasel out of it like that. Share it with me, my love, even if we agree it was pure nonsense.~GOTO SanSearchServ6
+IF~~THEN REPLY ~ Hey, hey, don't weasel out of it like that. Share it with me, even if we agree it was pure nonsense.~GOTO SanSearchServ6
 IF~~THEN REPLY ~Unless you tell me we cannot share valuable information or put it aside as an error.~GOTO SanSearchServ6
 END
 
@@ -53,6 +61,7 @@ SAY~ This Melissan we met seems to know a lot about the Bhaalspawns, she even kn
 IF~~THEN REPLY~ At least I know of one whom I can always trust. (You kiss her.)~EXIT
 IF~~THEN REPLY~ We must be very careful and I know that you are no doomsayer. I will keep my eyes open - and you continue to bring every observation that may help to my attention.~ EXIT
 IF~~THEN REPLY~I found this Melissan quite attractive, wow. I am not going hysterical to see a traitor and foe in every new face I see from now on.~EXIT
+IF~~THEN REPLY~ At least I know of one whom I can always trust. (You nod to her.)~EXIT
 END
 
 IF~ Global("SanBaltMelis","GLOBAL",4)~ THEN BEGIN AmaSanBalt1
@@ -100,6 +109,7 @@ END
 IF~~THEN BEGIN SanKeve4
 SAY~If you recall your lore, <CHARNAME>, Kelemvor was one of the adventurers who set out in AO's name at the time of trouble, the others being Adon, Cyric, and Midnight. They had travelled over Toril together already for a number of years and Kelemvor was Midnight's true love at the time.~
 IF~~THEN REPLY~But she ended up with Cyric in the end and Kelemvor was dead?~DO~SetGlobal("SanKevl","GLOBAL",2)~GOTO SanKeve5
+IF~~THEN REPLY~How did she end up with Cyric while Kelemvor was dead?~DO~SetGlobal("SanKevl","GLOBAL",2)~GOTO SanKeve5
 END
 
 IF~~THEN BEGIN SanKeve5
@@ -123,7 +133,8 @@ END
 
 IF~~ THEN BEGIN  SanGorp3
 SAY~ We have become a major power in the Realms by now and we should act accordingly. Once we have finished our quests - and I am confident we will as long as we stay together - we will alter the face of our world to the better.~
-IF~~THEN REPLY~You have never believed in a fate different from the one we create for ourselves, my love. I slowly start to accept your vision.~EXIT
+IF~~THEN REPLY~You have never believed in a fate different from the one we create for ourselves, Sandrah. I slowly start to accept your vision.~EXIT
+IF~~THEN REPLY~You have never believed in a fate different from the one we create for ourselves, Sandrah. I still can't believe that we ever reach the power that lets us decide like we want.~EXIT
 END
 
 IF~Global("SanGodInvolve","GLOBAL",4)~THEN BEGIN SanCyrMis1
@@ -162,7 +173,7 @@ IF~!Dead("Balth")~THEN REPLY~That's either me or Balthazar.~ GOTO SanCyrMis7
 END
 
 IF~~THEN BEGIN SanCyrMis7
-SAY~I still wonder what Cyric has in mind. The spawn who would stop the return of Bhaal would have the power required to ascend to godhood. We have encountered a number of celestials sensing this already. ~
+SAY~I still wonder what Cyric has in mind. The spawn who would stop the return of Bhaal would have the power required to ascend to godhood. We have encountered a number of celestials predicting this already. ~
 =~Even if the God of murder is not returning, the outcome of the Bhaal war may be the birth of a new god...~
 IF~~THEN EXIT
 END
@@ -177,8 +188,8 @@ IF~~THEN REPLY~ You have never changed for me, Sandrah, and I keep calling you b
 END
 
 IF~~  THEN BEGIN StartRtF2
-SAY~(Smiles) You still feel like my wonderful lover you ever were, my *God*. It is one of those little privileges I made AO grant us for our services.~
-IF~~THEN REPLY~ You have a lot of power up here and we do much together that I never thought was possible - if you were not a God. Was it part of your deal with the Overlord that despite that all I have retained much of my human feelings - including my urge for roaming and adventuring?~GOTO StartRtF3
+SAY~(Smiles) You still feel like my wonderful cmpanion you ever were, my *God*. It is one of those little privileges I made AO grant us for our services.~
+IF~~THEN REPLY~ You have a lot of power up here and we do much together that I never thought was possible - if you were not a goddess. Was it part of your deal with the Overlord that despite that all I have retained much of my human feelings - including my urge for roaming and adventuring?~GOTO StartRtF3
 END
 
 IF~~  THEN BEGIN StartRtF3
