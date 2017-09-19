@@ -11,6 +11,7 @@ Removed crossmod Aeon NPC
 Removed crossmod Fade NPC
 Elfsong ghost added
 Item descriptions extended
+LoB flags added
 
 VERSION 2.04
 -----------------
