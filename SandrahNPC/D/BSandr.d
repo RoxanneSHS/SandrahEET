@@ -6583,9 +6583,10 @@ DO ~ SetGlobal("DYBant","GLOBAL",5) SetGlobal("SanNotCloth","GLOBAL",3) RealSetG
 == BDYNAH IF ~ GlobalLT("Formedcloth","GLOBAL",2)~THEN~ 'tis maybe good to have a confidant in this, Sandrah, and I hath reasoned with mineself to trust thee. Now that we regained mine Journal I want to show thee a find I had hidden between the pages in the book. I ask you to take into your custody for the moment, a strange item indeed.~ DO ~ GiveItemCreate("Sanwi2","CVSandr",0,0,0)~
 == BDYNAH IF ~ GlobalGT("Formedcloth","GLOBAL",1)~THEN~ 'tis maybe good to have a confidant in this, Sandrah, and I hath reasoned with mineself to trust thee. 'tis connected with that strange piece of cloth I found.~
 == BDYNAH ~  I have come to possess during Minsc and mine travel this item I wanted to debate with you. ~
-== BSANDR IF ~GlobalLT("Formedcloth","GLOBAL",2)~ THEN~ A strange piece of cloth with a part of a pattern that somehow reminds me of something I have seen before. If I only knew when or where. Can you tell me more about it, Dynaheir?~
-== BSANDR IF ~ PartyHasItem("Sanwi3")~ THEN~ They belong to the same puzzle. (Sandrah has put the cloth piece she received at the Firewine from the caravan guard beside this one.) Another part of the same item. Can you tell me more about it, Dynaheir?~
-== BSANDR IF ~ PartyHasItem("Sanwi1")~ THEN~ Look at this. (Sandrah has put the first cloth piece she received from Viconia beside this one.) Another part of the same item. Can you tell me more about it, Dynaheir?~
+== BSANDR IF ~GlobalLT("Formedcloth","GLOBAL",2)~ THEN~ A strange piece of cloth with a part of a pattern that somehow reminds me of something I have seen before. If I only knew when or where. ~
+== BSANDR IF ~ PartyHasItem("Sanwi3")~ THEN~ They belong to the same puzzle. (Sandrah has put the cloth piece she received at the Firewine from the caravan guard beside this one.) Another part of the same item.~
+== BSANDR IF ~ PartyHasItem("Sanwi1")~ THEN~ Look at this. (Sandrah has put the first cloth piece she received from Viconia beside this one.) Another part of the same item. ~
+== BSANDR ~Can you tell me more about it, Dynaheir?~
 == BDYNAH  ~ I found it near a place thine folk call the Firewine. But it must have been lost in older times, me guesses at the end of the Time of Troubles...Thou know the lore, or so I hope.~
 == BSANDR ~ The lore about the Firewine or the history of the Time of Troubles?~
 == BDYNAH  ~ 'tis the second I was referring to. 'tis the time when the spawns of Bhaal were created and born by the mothers all over Faerun, mothers whom the God had chosen to carry on his seed as he knew his fate was sealed.~
