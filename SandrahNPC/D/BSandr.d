@@ -986,7 +986,8 @@ END
 
 IF~~ THEN BEGIN  SanDyrescK
 SAY ~ I am well armed and unhurt. I can make it back to Nashkel on my own. Give the witch my space in the group, <CHARNAME>. We will meet afterwards at Nalin's temple.~
-IF ~~ THEN DO ~ SetGlobal("SandrahJoined","GLOBAL",44)LeaveParty() EscapeAreaMove("BG4802",350,497,3)~ EXIT
+IF~~THEN REPLY ~Hm, you are right. If we find her alive, we are obliged to take her back to safety. I will find a solution in time, Sandrah, stay and aid us.~ EXIT
+IF ~~ THEN REPLY~A good solution. We do it that way.~DO ~ SetGlobal("SandrahJoined","GLOBAL",44)LeaveParty() EscapeAreaMove("BG4802",350,497,3)~ EXIT
 END
 
 /*First Four Morningtalks */
