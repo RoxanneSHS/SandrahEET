@@ -86,6 +86,7 @@ IF~Global("SanXephRet","GLOBAL",6)~ THEN CVSandrJ SanAkaVisXen1
 ==Elminsa~Xephistagoras is expecting us mages to come to the rescue and he needs our arcane abilities for his plan. His traps and defences will be aimed at us.~
 END
 ++~Once more we will have the surprise factor on our side. This and our determination to rescue Sandrah's goddess.~+ SanAkaVisXen2
+++~Your case is in good hands with us. We have the experience required for this.~+ SanAkaVisXen2
 
 CHAIN
 IF~~ THEN CVSandrJ SanAkaVisXen2
@@ -93,7 +94,7 @@ IF~~ THEN CVSandrJ SanAkaVisXen2
 ==Elminsa~We can transfer thee to the outside of it. From there thou wouldst be again on thy own as the sorcerer's defences are unpenetrable from the distance.~
 =~ <CHARNAME>?~
 END
-++~ We are ready to leave right now, Elminster.~DO~ SetGlobal("SanXephRet","GLOBAL",8)~EXIT
+++~We are ready to leave right now, Elminster.~DO~ SetGlobal("SanXephRet","GLOBAL",8)~EXIT
 ++~We will need a few moments to prepare ourselves before we go.~EXTERN Elminsa DepLegDeff
 
 CHAIN

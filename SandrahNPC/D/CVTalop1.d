@@ -207,8 +207,8 @@ DO~SetGlobal("Umberbowl","GLOBAL",4)~
 ==CVSandrJ~ <CHARNAME>, the gods have no right to misuse us mortals for their internal quarrels. We HAVE A RIGHT to defend ourselves against such!~
 ==CVTalop1~Shut up, girl, let your leader speak now.~
 END
-++~ We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. ~ + Tenya2
-++~ I agree with my counselor, you were the ones to violate the laws of the prime and the gods.~  + Tenya3
+++~We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. ~ + Tenya2
+++~I agree with my counselor, you were the ones to violate the laws of the prime and the gods.~  + Tenya3
 ++~We will hear first what this priestess' child up north has to say to this case.~ + Tenya4
 
 CHAIN

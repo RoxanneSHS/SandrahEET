@@ -36,6 +36,7 @@ IF~~ THEN CVTRAVI sd3
 END
 ++ ~(Whisper to Sandrah) Clever, my counselor, you get it out of him bit by bit. Keep on, I will let you run this inquisition.~ +sd4
 
+
 CHAIN
 IF~~ THEN CVTRAVI sd4
 ~ (Travenhurst has collapsed to a crying bundle among the broken furniture and glass the battle has left behind.)~
