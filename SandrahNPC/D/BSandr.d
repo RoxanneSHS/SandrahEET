@@ -7070,6 +7070,7 @@ DO ~ SetGlobal("Formedcloth","GLOBAL",9)~
 END
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ So Winthrop carried a little baby girl at that time and Gorion the boy. We know who that boy is and what became of him. Maybe my dreams have told me already the truth. It was Khalindra's child. It was me! ~ EXIT
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I am sure now, Sandrah. One of the two children was me. We could not see which one was with Gorion. Maybe my dreams have told me already the truth. It was Khalindra's child. It was me! ~ EXIT
+IF~~THEN REPLY~The baby Gorion carried was me! There can be no doubt. But was it also Khalindra's child?~EXIT
 
 CHAIN
 IF ~ Global("Formedcloth","GLOBAL",23)~ THEN BSANDR ImoBhaalSp4
