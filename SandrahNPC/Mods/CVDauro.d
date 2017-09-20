@@ -28,7 +28,7 @@ END
 CHAIN
 IF~~ THEN CVDauro Traceddem3
 ~ There is a graveyard and a tomb not far away to the north east. The demon has found that place much to his liking and I suspect that he uses his powers to raise some of the fallen from their graves to gather a party of undead thralls.~
-==BSandr~ <CHARNAME>, we should act quickly before this force becomes to powerful even for us. I propose you lead us to the lair right now.~EXIT
+==BSandr~ <CHARNAME>, we should act quickly before this force becomes too powerful even for us. I propose you lead us to the lair right now.~EXIT
 
 CHAIN
 IF~Global("SanDauroQ","GLOBAL",5)~THEN CVDauro Traceddem4
