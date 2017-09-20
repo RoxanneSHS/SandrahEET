@@ -10,7 +10,7 @@ DO~ SetGlobal("SanSafaBan","GLOBAL",10)~
 == CVEntar ~ Well spoken, mylady - and it is a pleasure to meet a lady of your reputation, Sandrah, even if the circumstances seem to be not the best. But let us investigate the case now. Will you act as defender of the accused, mylady?~
 END
 ++ ~ Duke, I am <CHARNAME>, the leader of this group. It is my responsibility to defend the comrade who is *falsely* accused here.~ + SafPCDef1
-++ ~ Sandrah, my wise councelor, I put my trust in you for this. If I were the accused I could think of no better defender to chose for myself.~ + SafSandDef1
+++ ~ Sandrah, my councelor, I put my trust in you for this. If I were the accused I could think of no better defender to chose for myself.~ + SafSandDef1
 
 CHAIN
 IF~~ THEN CVEntar SafPCDef1

@@ -29,7 +29,7 @@ IF ~~ THEN CVHayn Orcpr3
 == BSandr ~ And Travenhurst, he is a council member in Beregost as far as I recall.~
 == CVHayn ~ Lady, you are right, at least that is his facade. And the reason Henning and I have been kidnapped.~
 END
-++ ~ I guess we better listen to your background story, Haynalt. This complex intrigue seems to take another unexpected twist. Sandrah, you were right - once again - we should know what we are facing before we get down there to fight Davaeorn or Knowlod. Please continue.~ + Orcpr4
+++ ~ I guess we better listen to your background story, Haynalt. This complex intrigue seems to take another unexpected twist. Sandrah, you were right, we should know what we are facing before we get down there to fight Davaeorn or Knowlod. Please continue.~ + Orcpr4
 
 CHAIN
 IF ~~ THEN CVHayn Orcpr4
@@ -62,6 +62,7 @@ IF ~~ THEN CVHayn Orcpr6
 == CVHayn ~ After all that, I will not wait to drown like a rat, sorry lady. I guess the way to the surface that you came is cleared of foes now?~
 END
 ++ ~ You are free to leave, unless you want to wait for our return from Knowlod below.~ + Orcpr7
+++ ~ Run, run. We need no scared merchants around here when we start the fireworks.~ + Orcpr7
 
 CHAIN
 IF ~~ THEN CVHayn Orcpr7

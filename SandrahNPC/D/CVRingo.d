@@ -110,7 +110,7 @@ IF ~~ THEN CVRingo WDTempHeal2
 == BSANDR~ If all goes well, yes. One more thing, <CHARNAME>, we will need to analyse the blood of our comrades to find some matching one. I can only take a small bit of yours as I do not intend to hurt you more than absolutely necessary.~
 END
 ++ ~ This is madness! I will not sacrifice mine or any of my comrad's blood and lifeforce for an unknown girl. If the gods want her life we are not to interfer!~ DO~ SetGlobal("SanWDTemplWi","GLOBAL",4)~ EXIT
-++ ~ Darling, I trust you as much as Ringhontal does. We will help you in any way we can. Do what must be done.~ DO ~ SetGlobal("SanWDTemplWi","GLOBAL",5)~ + WDTempHeal3
+++ ~ Sandrah, I trust you as much as Ringhontal does. We will help you in any way we can. Do what must be done.~ DO ~ SetGlobal("SanWDTemplWi","GLOBAL",5)~ + WDTempHeal3
 
 CHAIN
 IF ~~ THEN CVRingo WDTempHeal3

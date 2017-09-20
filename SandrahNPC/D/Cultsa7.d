@@ -47,7 +47,7 @@ END
 APPEND CVSandrJ
 IF~Global("SanEntrCult","ra5501",1)~THEN BEGIN EntrCult1
 SAY~Please trust me, <CHARNAME>, we are at one of the most evil places we have ever been together. Still I would ask you to pretend to enter this cult for the moment.~
-IF~~THEN REPLY~Of course I trust you, my beloved counselor.~GOTO EntrCult2
+IF~~THEN REPLY~Of course I trust you, my counselor.~GOTO EntrCult2
 IF~~THEN REPLY~You act a bit strange, Sandrah. You are very much concerned about this cult, are you?~ GOTO EntrCult2
 IF~~THEN REPLY~I had already decided to infiltrate these beasts - let us get to the bottom of it...and destroy it from inside.~ GOTO EntrCult2
 END

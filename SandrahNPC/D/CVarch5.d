@@ -21,7 +21,7 @@ DO~ SetGlobal("SanKhalBlood","GLOBAL",10)~
 ==CVSANDRJ~Wait! Cerameon is in my mother's bloodline?~
 ==CVARCH5 ~I cannot repeat a name I once have issued, such is the rule - but yes, I just said that name.~
 END
-++~(Slowly you come out of your half-slumber.) Is that the answer you were looking for, my love?~+  Bloodline2
+++~(Slowly you come out of your half-slumber.) Is that the answer you were looking for, Sandrah?~+  Bloodline2
 
 CHAIN
 IF~~THEN CVARCH5 Bloodline2

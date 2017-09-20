@@ -13,5 +13,5 @@ IF~AreaCheck("CVHel2") ~THEN  CVHaeSar MeetCVHel2
 ==CVSandrJ~By preventing you to succeed in your ambition to become Bhaal, the God of Murder? ~
 ==CVHaeSar~(Nods.) The last vision my mortal eyes have seen I will never forget. It was that hammer you carry coming down upon me for that fatal blow. I wonder if my surviving sibling knows how close death walks beside <PRO_HIMHER> all the time.~
 ==CVSandrJ~<CHARNAME> is not you and has nothing to fear from me other than my neverending love.~
-==CVHaeSar~My new form of existance has given me insight into many new aspects of the Planes. This includes some knowledge into your role and destiny, granddaughter of Mystra!~
-=~But enough of that now. Chances are good that our paths across this Muliverse cross again - Sandrah of Waterdeep.~ DO~EscapeArea()~EXIT
+==CVHaeSar~My new form of existance has given me insight into many new aspects of the planes. This includes some knowledge into your role and destiny, granddaughter of Mystra!~
+=~But enough of that now. Chances are good that our paths across this multiverse cross again - Sandrah of Waterdeep.~ DO~EscapeArea()~EXIT

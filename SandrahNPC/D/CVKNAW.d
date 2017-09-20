@@ -22,6 +22,7 @@ IF~~ THEN CVKNAW SD2
 == CVKNAW ~ You kill all Knawlod men. You kill Rellruk, no bad - was worthless orc. You take hostage back. You not get Knawlod and not get Davaeorn.~
 END
 ++ ~ You make one error after another, orc. You all underestimate Red Head's power.~ + SD3
+++ ~ You make one error after another, orc. You all underestimate my power.~ + SD3
 
 
 CHAIN
