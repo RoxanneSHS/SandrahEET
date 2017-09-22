@@ -2565,11 +2565,11 @@ SAY BIO @825
 
 ACTION_IF FILE_EXISTS_IN_GAME ~githcapt.bcs~ THEN BEGIN
 COPY_EXISTING ~githcapt.bcs~ ~override~
-  DECOMPILE_BCS_TO_BAF
+  DECOMPILE_AND_PATCH BEGIN
         REPLACE_TEXTUALLY       ~Global("Prepare","LOCALS",0)~
                                 ~Global("Prepare","LOCALS",0)
                                  See(NearestEnemyOf(Myself))~
-  COMPILE_BAF_TO_BCS
+  END
 END
 
 
