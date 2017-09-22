@@ -178,6 +178,7 @@ IF~~ THEN BSHAUHA Sharkta4
 == BSHAUHA ~ I do have. It will just take us a lot of fighting, as the road is long and there are many oponents to be met. But we will succeed in the end.~
 END
 ++ ~ I agree. But what is the purpose in the end? Sandrah, what does the book tell us about Sharkta Fai? I will not risk all of our lives to chase a legend.~ + Sharkta5
+++ ~ (Sigh.).~ + Sharkta5
 
 CHAIN
 IF~~ THEN BSHAUHA Sharkta5
@@ -192,6 +193,8 @@ IF~~ THEN BSHAUHA Sharkta5
 == BSandr ~ Right. And this is why I think we can succeed. We will bring your orc teacher's body for his journey to the Other World. He has fallen while defending you, a gloriuos deed for which he deserves the entry. If we persuade the Guardian that he died for you and that you need just a drop from the fountain to be healed, we will be heard. The necromancers are greedy, they just want too much. We only ask for little and have earned it.~
 END
 ++ ~ We will do as Sandrah proposed. Even if the Guardian refuses this little gift, you will have done your last service for your teacher who gave his life for you.~EXIT
+++ ~ I hope all of the will turn out profitable in the end.~EXIT
+++ ~ I can't await the bloodshed.~DO~IncrementGlobal("Sanpoints","Global",-2)~EXIT
 
 CHAIN
 IF ~ Global("SanSharkta","GLOBAL",12)~ THEN BSHAUHA Sharkta10
@@ -218,6 +221,7 @@ DO ~ SetGlobal("Shamyrkfound","GLOBAL",4)RealSetGlobalTimer("ShaktTime","GLOBAL"
 END
 ++~ Hold on for a second! The empty mausoleum on the Fields of Dead? It wasn't so empty when we were there.~ + MyrkamSt1
 ++~ (Remain silent and let Sandrah continue with the inquiry. You know her talent to extract secrets in her seemingly harmless manner.)~ + MyrkamSt1
+++~ We laid that ghost over there to rest long ago.~ + MyrkamSt1
 
 CHAIN
 IF ~~ THEN BSHAUHA MyrkamSt1
@@ -244,6 +248,7 @@ DO~ SetGlobal("Shamyrkfound","GLOBAL",6)RealSetGlobalTimer("ShaktTime","GLOBAL",
 == BSHAUHA ~ Yes, he was Myrkul's son - and I have his blood in me.~
 END
 ++~ So we know now, why the Guardian and others called you a godchild, Shauhana.~ + MyrkamSt3
+++~ (Shake your head in disbekief) Is there anyone left in the Realms these days not claiming to be a godchild?.~ + MyrkamSt3
 
 CHAIN
 IF ~~ THEN BSHAUHA MyrkamSt3
@@ -256,6 +261,7 @@ IF ~~ THEN BSHAUHA MyrkamSt3
 == BSHAUHA ~ That is your view - from the side of the attacked. But grandfather did not intend to bring the End of Everything. He rather wanted to bring a beginning, a beginning for the united Clans. But he failed, as orc's, even Clan orcs, are too stupid to work united and forget their little greed for a moment.~
 END
 ++ ~ That is some food for thought, Shauhana. It is late already. Let us continue our talk another time.~ EXIT
+++ ~ (Yawn.).~ EXIT
 
 // Entering Amn
 
@@ -267,6 +273,7 @@ DO ~ SetGlobal("Shaucity","GLOBAL",2)~
 == BSHAUHA ~ Oooh!!~
 END
 ++ ~ What is wrong, Shauhana? Hold on to me, you seem to be trembling.~ + CityG2
+++ ~ Get yourself together, Shauhana? Pretend you're orc, heh.~ + CityG2
 
 CHAIN
 IF ~~ THEN BSHAUHA CityG2
@@ -277,6 +284,7 @@ IF ~~ THEN BSHAUHA CityG2
 == BSHAUHA ~ For a moment I had this strange vision of what would happen if all those many people would discover that I am orc. It caught me somewhat unaware.~
 END
 ++ ~ (You try to let your laughter sound gentle and reassuring) But, Shauhana, nobody here will think that you are orc. Just compare your features to the Clan folk you have known. I assure you that when you walk up to someone and tell them you are orc, they will just shake their head in disbelief.~ + CityG3
+++ ~ You really have a lot to learn still.~ + CityG3
 
 CHAIN
 IF ~~ THEN BSHAUHA CityG3
@@ -289,6 +297,7 @@ IF ~~ THEN BSHAUHA CityG3
 == BSHAUHA ~ (Suddenly Shauhana laughs out loud.) Oh, my poor ignorant orcs! I learned more in just a few days travelling with you than all of them together will ever forget in their lifetimes. They know so little, these wannabe world rulers. It is clear that grandfather had to fail with them.~
 END
 ++ ~ Your grandfather seems to be very important for you, Shauhana? He comes to your mind on many occasions.~ + CityG4
+++ ~ Grandfather here, Grandfather there...~ + CityG4
 
 CHAIN
 IF ~~ THEN BSHAUHA CityG4
