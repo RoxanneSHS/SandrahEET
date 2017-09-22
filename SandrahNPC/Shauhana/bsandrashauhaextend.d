@@ -9,11 +9,12 @@ END
 IF ~~ THEN BEGIN ShauHer2
 SAY ~ That is what made her strong. That and her belief to be orc.~
 IF~~THEN REPLY~ The way you say that sounds, as if you do not believe her.~ GOTO ShauHer3
+IF~~THEN REPLY~ She neither looks nor acts very orcish. Any idea what's the matter with her, is she lying?~ GOTO ShauHer3
 END
 
 IF ~~ THEN BEGIN ShauHer3
 SAY ~ Oh, I do believe her - I mean I believe she tells truely all she knows about herself. My doubt is that she herself knows who she is. Even with a possible grandfather like General Ghotal, her strength, her intelligence and her outer appearance are not explainable.~
-IF~~THEN REPLY~ Sounds like you fall for that godchild thing. Well, you seem to attract them, my love.~ GOTO ShauHer4
+IF~~THEN REPLY~ Sounds like you fall for that godchild thing. Well, you seem to attract them.~ GOTO ShauHer4
 END
 
 IF ~~ THEN BEGIN ShauHer4
@@ -28,8 +29,10 @@ IF~~THEN REPLY~ Nor is it Bhaal that one sees when it comes to me - at least tha
 END
 
 IF ~~ THEN BEGIN ShauHer6
-SAY ~ (She has taken your hand and pulls you close to her now.) That is correct, my sweetest wonderful love. I have to confess, I am stuck with my research at the moment. I just see that another godchild needs my attention right now.~
+SAY ~ (She has taken your hand and looks you in the eyes.) That is correct. I have to confess, I am stuck with my research at the moment. I just see that another godchild needs my attention right now.~
 IF ~~THEN REPLY~ And how! (Embrace her tightly and cover her lips with kisses.)~
+EXIT
+IF ~~THEN REPLY~ Let's move on.~
 EXIT
 END
 
@@ -56,8 +59,8 @@ END
 
 IF~~ THEN BEGIN Sanfreehend21
 SAY~ We will not find out by standing outside of it all day.~
-IF~!InParty("CVSHAU")~THEN REPLY ~ You need to say nothing more, my love. Let us pay them a visit they won't forget.~ DO ~ IncrementGlobal("Sanpoints","GLOBAL",3) EraseJournalEntry(@458)~ EXIT
-IF~InParty("CVShau")~THEN REPLY ~ You need to say nothing more, my love. Let us pay them a visit they won't forget.~DO ~ IncrementGlobal("Sanpoints","GLOBAL",3) EraseJournalEntry(@458)~ EXTERN CVShauJ Shautempslav
+IF~!InParty("CVSHAU")~THEN REPLY ~ You need to say nothing more, Sandrah. Let us pay them a visit they won't forget.~ DO ~ IncrementGlobal("Sanpoints","GLOBAL",3) EraseJournalEntry(@458)~ EXIT
+IF~InParty("CVShau")~THEN REPLY ~ You need to say nothing more, Sandrah. Let us pay them a visit they won't forget.~DO ~ IncrementGlobal("Sanpoints","GLOBAL",3) EraseJournalEntry(@458)~ EXTERN CVShauJ Shautempslav
 END
 END
 
@@ -75,6 +78,8 @@ IF~~THEN CVShauJ Shautempslav
 ==CVShauJ~ You will find me as determined as yourself in this crusade, Sandrah!~
 END
 ++~I will not let two girls rush into that danger unaccompanied. We will use utmost caution but we will go and destroy them.~EXIT
+++~We will use utmost caution but we will go and destroy them.~EXIT
+++~I will not waste time and resources on useless skirmish.~EXIT
 
 // Shauhana Meets Minsc
 CHAIN
