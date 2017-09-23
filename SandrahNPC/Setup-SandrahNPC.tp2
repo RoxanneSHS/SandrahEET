@@ -4228,7 +4228,7 @@ END
 COPY_EXISTING ~wench1.cre~ ~override/wench1.cre~
               WRITE_ASCII 0x280 ~wench1~
 COPY_EXISTING ~emerso.cre~ ~override/emerso.cre~
-              WRITE_ASCII 0x280 ~emerso~
+              WRITE_ASCII 0x280 ~emerson~
 COPY_EXISTING ~gaxir.cre~ ~override/gaxir.cre~
               WRITE_ASCII 0x280 ~gaxir~
 COPY_EXISTING ~cow.cre~ ~override/cow.cre~
