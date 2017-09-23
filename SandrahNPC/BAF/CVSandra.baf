@@ -1301,11 +1301,14 @@ IF
 Global("ReturnNashQuest","GLOBAL",7)
 Global("SanCldKBo","LOCALS",0)
 AreaCheck("BG5400")
+OR(2)
 See("Emerso")
+See("Emerson")
 THEN
 RESPONSE #100
 SetGlobal("SanCldKBo","LOCALS",12)
 ActionOverride("Emerso",SetGlobal("SanCldKBo","LOCALS",12))
+ActionOverride("Emerson",SetGlobal("SanCldKBo","LOCALS",12))
 DisplayStringWait(Player1,@542)
 END
 
@@ -1314,7 +1317,9 @@ Global("ReturnNashQuest","GLOBAL",7)
 Global("SanCldKBo","LOCALS",3)
 Global("EmDrow","BG5400",0)
 AreaCheck("BG5400")
+OR(2)
 See("Emerso")
+See("Emerson")
 THEN
 RESPONSE #100
 SetGlobal("EmDrow","BG5400",1)
