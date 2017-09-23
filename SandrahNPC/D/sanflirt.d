@@ -63,6 +63,7 @@ END
 IF ~~ THEN BEGIN SanFlr31
 SAY ~ Mystra is not a goddess that can be petitioned by her followers nor is there much to preach on behalf of the goddess of magic. Following her means more to look into the right use of her gifts and object to those magic users who misuse them.~
 IF~~ THEN REPLY ~ I see. It makes sense, you cannot convert someone who is not blessed with the gift of magic to follow your goddess but you can fight against the misuse of magic on Toril. But tell me, why does your goddess allow such at all?~ GOTO SanFlr32
+IF~~ THEN REPLY ~ I have no interest to discuss religion. To each her own. Let's move.~EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr32
@@ -110,29 +111,32 @@ END
 
 IF ~~ THEN BEGIN SanFlr45
 SAY ~ Do not forget those many happy days you had with Gorion and with Imoen and those others back there. They are the heritage your foster father has left you.~
-IF ~~ THEN REPLY~ Thank you, my sweet healer. Your therapy has worked well - at least for a time of diversion. (You kiss her cheek.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
+IF ~~ THEN REPLY~ Thank you, my healer. Your therapy has worked well - at least for a time of diversion. (You kiss her cheek.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
 IF~~ THEN REPLY ~ I don't know if I can thank you for stirring up those memories of a time that is lost forever.~ EXIT
 END
 
 IF ~ Global("SanFlirt","GLOBAL",9)~ THEN BEGIN SanFlr50
 SAY ~ Oh, how I yearn for a deliceously cooked meal served at a nicely decorated table, <CHARNAME>.~
 IF~~ THEN REPLY ~ Is that my delicate Waterdeep Belle emerging from the armour of the Sword Coast's most feared fighter now?. ~ DO ~ SetGlobal("SanFlirt","GLOBAL",10)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr51
+IF~~ THEN REPLY ~ Are you now making demands for luxury here on the road?. ~ DO ~ SetGlobal("SanFlirt","GLOBAL",10)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr51
 END
 
 IF ~~ THEN BEGIN SanFlr51
 SAY ~ (Laughs) Exactly, <CHARNAME>. I have never hidden that I know the pleasantries of the life of an upper class girl in the City of Splendor. There are aspects of that life I can do without, but others I enjoy heartily. Like good food.~
 IF ~~THEN REPLY ~ One thing I love so much about you are the many facettes of your personality, knowing the pleasures of the city girl and still enjoying our rural life on the road.~ GOTO SanFlr54
 IF~~ THEN REPLY ~ Can your magic not supply us with such a table for our dinner tonight?~ GOTO SanFlr52
+IF~~ THEN REPLY ~Oh, just shut up with your nonsense.~EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr52
 SAY ~ It could, but it would not be the same. The rattling of pots and pans and the smells that fill the house, the selection of the wine and the arrangement of the flowers on the table - all that is as much part of it as the meal itself. This atmosphere cannot be created artificially. I think it has to wait until we find an opportunity to celebrate such an evening with our friends.~
-IF ~~THEN REPLY ~ My love, I understand well the hidden request to steer our party's way to such an opportunity in the near future.~GOTO SanFlr53
+IF ~~THEN REPLY ~ Well, I understand well the hidden request to steer our party's way to such an opportunity in the near future.~GOTO SanFlr53
 END
 
 IF ~~ THEN BEGIN SanFlr53
 SAY ~I am content with this prospect, sweet <CHARNAME>. Give me at least an appetizer.~
-IF ~~THEN REPLY ~ (You kiss her sweet lips.)~ EXIT
+IF ~~THEN REPLY ~ (You kiss her on the lips.)~ EXIT
+IF ~~THEN REPLY ~ (You give her a walnut you found on the path.)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr54
@@ -150,11 +154,12 @@ IF ~~ THEN BEGIN SanFlr56
 SAY ~ Not to forget the fact that we would probably never have met.~
 IF~~THEN REPLY~ To think of that possibility. A life without you, puuh. (You laugh and take her in your arms for a tender kiss.)~ EXIT
 IF~~THEN REPLY~ For a monk, the temptations of a woman like you would be simply unbearable. (Wink at her.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~EXIT
+IF~~THEN REPLY~ (Mumble) If you only knew how often I wish I hadn't.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
 END
 
 
 IF ~ Global("SanFlirt","GLOBAL",11)~ THEN BEGIN SanFlr60
-SAY ~ My love, I will continue to provide you with my advice and counselling as good as I can, even if we have experienced that I can err like everybody else.~
+SAY ~ <CHARNAME>, I will continue to provide you with my advice and counselling as good as I can, even if we have experienced that I can err like everybody else.~
 IF~~THEN REPLY~ What makes you say that?~ GOTO SanFlr61
 IF~~THEN REPLY~ I surely count on that, Sandrah. Your advice is always based on the best of information we have available in a situation. You never gave any false advice on purpose.~GOTO SanFlr61
 IF~~THEN REPLY~ Good for you to recognise that. Maybe in the future it will make you think a second time before you hand out any advice that may be harmful to us.~ GOTO SanFlr63
@@ -179,6 +184,7 @@ END
 IF ~~ THEN BEGIN SanFlr64
 SAY~ I sure will as long as you remain who you are. We just have to be aware that from now on any false decisions may become of dire consequences - not only for us but for more and more people relying on our success.~
 IF~~THEN REPLY~ To know where the traps are hidden is more than just the first step to overcome them. I have large confidence that we will master this - together.~ DO~ SetGlobal("SanFlirt","GLOBAL",12) RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~EXIT
+IF~~THEN REPLY~ To know where the traps are hidden is more than just the first step to overcome them. I have large confidence that I will master this - just follow in my steps.~ DO~ SetGlobal("SanFlirt","GLOBAL",12) RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~EXIT
 END
 
 IF ~ Global("SanFlirt","GLOBAL",13)~ THEN BEGIN SanFlr70
@@ -201,7 +207,8 @@ END
 
 IF ~~ THEN BEGIN SanFlr73
 SAY~ Oh, do not make me blush - just think that the same could be said about you. You would be the pride of your mother as well if she could see you today.~
-IF~~THEN REPLY~ I hope so. I am convinced that she was surely not volunteering to receive me from such a *father*. It would hopefully be of some consolation for her to see what can come out of such black blood.~ GOTO SanFlr74
+IF~!Global("SanRompa","Global",2)~THEN REPLY~ I hope so. I am convinced that she was surely not volunteering to receive me from such a *father*. It would hopefully be of some consolation for her to see what can come out of such black blood.~ GOTO SanFlr74
+IF~Global("SanRompa","Global",2)~THEN REPLY~ I hope so. I am convinced that she was surely not volunteering to receive me from such a *father*. It would hopefully be of some consolation for her to see what can come out of such black blood.~ GOTO SanFlr74a
 END
 
 IF ~~ THEN BEGIN SanFlr74
@@ -211,19 +218,31 @@ IF~~THEN DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFrom
 EXIT
 END
 
+IF ~~ THEN BEGIN SanFlr74a
+SAY~ And if not for her...it sure is for those who care the most for you today...~
+IF~~THEN EXIT
+END
+
 IF ~ Global("SanFlirt","GLOBAL",15)~THEN BEGIN SanFlr80
-SAY ~ We are together now for quite a significant while now, my love. Long enough to consider something like a common history between us.~
+SAY ~ We are together now for quite a significant while now. Long enough to consider something like a common history between us.~
 IF~~ THEN REPLY ~ A bit more than just a 'common history', wouldn't you think? Even if sometimes I think I have just started to know you a bit.~ DO ~ SetGlobal("SanFlirt","GLOBAL",16)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr81
+IF~~ THEN REPLY ~ A bit more than just a 'common history', wouldn't you think? (Sigh) Not all of it was that enjoyable.~ DO ~ SetGlobal("SanFlirt","GLOBAL",16)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr81
 END
 
 IF ~~ THEN BEGIN SanFlr81
 SAY~ (Smiles) I hope you are still interested in discovering the rest of it. Me, I do not regret a single one of our days together - nor do I want to miss any of those still to come.~
 IF~~ THEN REPLY ~ Do you see a chance for it to go on like this...I mean, this challenge will end someday, changes will come - a life completely different from what we have known until now.~ GOTO SanFlr82
+IF~~ THEN REPLY ~ Your enthusiasm is annoying. With all our common history you should know me better by now.~ GOTO SanFlr82a
 END
 
 IF ~~ THEN BEGIN SanFlr82
 SAY~ And I am sure you will fit well into this new life, together with me, however it may look like. We two will shape it to fit us.~
 IF~~ THEN REPLY ~ I like your confidence in - mhmm - in us. Your belief that anything is possible for us if we just want it.~  GOTO SanFlr83
+END
+
+IF ~~ THEN BEGIN SanFlr82a
+SAY~ You know that I am stubborn beyond reason and not one to easily give up what she wants.~
+IF~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr83
@@ -235,7 +254,8 @@ END
 IF ~~ THEN BEGIN SanFlr84
 SAY~ I admit, I have taken a weird way to express what I actually wanted to say to you.~
 IF~~ THEN REPLY ~ (Laugh) One of the things I have grown accustomed to, darling...~ GOTO SanFlr85
-IF ~~ THEN REPLY ~ I should have guessed so myself, given our 'common history'. So what was your intention then?~ GOTO SanFlr85
+IF ~!Global("SanRompa","Global",2)~ THEN REPLY ~ I should have guessed so myself, given our 'common history'. So what was your intention then?~ GOTO SanFlr85
+IF ~Global("SanRompa","Global",2)~ THEN REPLY ~ I should have guessed so myself, given our 'common history'. So what was your intention then?~ GOTO SanFlr82a
 END
 
 IF ~~ THEN BEGIN SanFlr85
@@ -245,7 +265,7 @@ EXIT
 END
 
 IF ~ Global("SanFlirt","GLOBAL",17)~THEN BEGIN SanFlr90
-SAY ~ My love, is there someone, living or historic, that in a way inspires your actions and motivations?~
+SAY ~ Is there someone, living or historic, that in a way inspires your actions and motivations?~
 IF~~ THEN REPLY ~ You mean in the way you are inspired and even somehow follow the way of the mystic heroine Midnight?~ DO ~ SetGlobal("SanFlirt","GLOBAL",18)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr91
 END
 
@@ -263,13 +283,14 @@ IF ~~ THEN REPLY ~ Not that I had any choice in it, I mean to become what I am n
 END
 
 IF ~~ THEN BEGIN SanFlr9Driz2
-SAY ~ (Sandrah smiles) Knowing both Drizzt and you quite a bit, I can assure you that you keep to your true self quite well through all these challenges that would make weaker characters stumble. One of the many aspects of you that make me love you so much.~
+SAY ~ (Sandrah smiles) Knowing both Drizzt and you quite a bit, I can assure you that you keep to your true self quite well through all these challenges that would make weaker characters stumble. One of the many aspects of you that make me like you so much.~
 IF~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr9Gor
 SAY ~ We have learned by now that Gorion was a Harper, even if it is my personal opinion that his own interpretation of this belief was guided by his own wisdom and feelings much more than by any doctrine.~
 IF ~~ THEN REPLY ~ He never referred to the Harpers at all. For me his decisions and beliefs seemed to be all his own. I think you are right in your assumptions. Which reminds me a bit of yourself and your relationship with your goddess.~ GOTO SanFlr9Gor2
+IF ~~ THEN REPLY ~ He never referred to the Harpers at all. For me his decisions and beliefs seemed to be all his own. I think you are right in your assumptions. ~ GOTO SanFlr9Gor2
 END
 
 IF ~~ THEN BEGIN SanFlr9Gor2
@@ -278,7 +299,7 @@ IF~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN SanFlr9Self
-SAY ~ (She gives you one of the special glances from her bottomless eyes and sighs.) You know that you can rely on my counselling and loyalty with all I can give you. But mind, darling, that I am as deeply involved in all of this as you are yourself. This in a way disqualifies me to be more than your ever true companion - and lover.~
+SAY ~ (She gives you one of the special glances from her bottomless eyes and sighs.) You know that you can rely on my counselling and loyalty with all I can give you. But mind that I am as deeply involved in all of this as you are yourself. This in a way disqualifies me to be more than your ever true companion.~
 IF ~~ THEN REPLY ~ And by that you are the most important person for me in this situation and you are surely competent to accept the responsibility implied.~ EXIT
 END
 
@@ -291,7 +312,7 @@ IF ~~ THEN REPLY ~ Helm.~ EXIT
 END
 
 IF ~ Global("SanFlirt","GLOBAL",19)~THEN BEGIN SanFlr101
-SAY ~ I was wondering how you feel about children, sweet <CHARNAME>?~
+SAY ~ I was wondering how you feel about children, <CHARNAME>?~
 IF~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I like children in general - but probably you were referring to having children of my own one day...~ DO ~ SetGlobal("SanFlirt","GLOBAL",20)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr102
 IF~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I like children in general - but probably you were referring to having children of my own one day...~ DO ~ SetGlobal("SanFlirt","GLOBAL",20)RealSetGlobalTimer("SanFlirTi","GLOBAL",7200)~ GOTO SanFlr112
 END
@@ -314,11 +335,11 @@ END
 
 IF ~~ THEN BEGIN  SanFlr105
 SAY ~ <CHARNAME>, the dead god's intention was to keep his blood in reign of the Throne of the God of Murder.~
-IF ~~ THEN REPLY ~ And I could become the normal father of a family of nice wonderful children with the woman I dearly love? Just like that?~  GOTO SanFlr106
+IF ~~ THEN REPLY ~ And I could become the normal father of a family of nice wonderful children with the one I dearly love? Just like that?~  GOTO SanFlr106
 END
 
 IF ~~ THEN BEGIN  SanFlr106
-SAY ~ (She gives you a long thoughtful glance - long and full of love.) You know it will not be *just like that*. You need to survive a long a bloody battle against all that has been left on this plane by Bhaal - including what he has left inside of you - before such a future can become possible. But I am confident of this perspective.~
+SAY ~ (She gives you a long thoughtful glance.) You know it will not be *just like that*. You need to survive a long a bloody battle against all that has been left on this plane by Bhaal - including what he has left inside of you - before such a future can become possible. But I am confident of this perspective.~
 IF ~~ THEN REPLY ~ It is not *me* who must succeeed, Sandrah, it must and and will be *us*.~ EXIT
 IF ~~ THEN REPLY ~ These children you talk about, they require a mother as well as a father. Do I need to say more, Sandrah? We will succeed, no doubt.~ EXIT
 END
@@ -345,7 +366,7 @@ IF ~~ THEN REPLY ~ And I could become the mother of some nice wonderful children
 END
 
 IF ~~ THEN BEGIN  SanFlr116
-SAY ~ (She gives you a long thoughtful glance - long and full of love.) You know it will not be *just like that*. You need to survive a long a bloody battle against all that has been left on this plane by Bhaal - including what he has left inside of you - before such a future can become possible. But I am confident of this perspective.~
+SAY ~ (She gives you a long thoughtful glance.) You know it will not be *just like that*. You need to survive a long a bloody battle against all that has been left on this plane by Bhaal - including what he has left inside of you - before such a future can become possible. But I am confident of this perspective.~
 IF ~~ THEN REPLY ~ It is not *me* who must succeeed, Sandrah, it must and and will be *us*.~ EXIT
 IF ~~ THEN REPLY ~ These children you talk about, they require a father as well as a mother. Do I need to say more, Sandrah? We will succeed, no doubt.~ EXIT
 END
@@ -364,30 +385,38 @@ IF~~ THEN BEGIN SanFlirtCity2
 SAY ~ (She unbuttons the top of your tunica and knots a smooth silken scarf around your neck. You notice that the colour exactly matches the one of your own eyes.)~
 IF~~THEN REPLY ~ It's wonderful, thank you, my love. (You embrace and kiss her.)~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
+IF~~THEN REPLY ~ It's wonderful, thank you, Sandrah. ~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+END
 
 IF~~ THEN BEGIN SanFlirtCity3
 SAY ~ (She makes you bow your head and artfully attaches a silken ribbon to your locks. You notice that the colour exactly matches the one of your own eyes.)~
 IF~~THEN REPLY ~ It's wonderful, thank you, my love. (You embrace and kiss her.)~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+IF~~THEN REPLY ~ It's wonderful, thank you, Sandrah. ~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
 IF ~Global("BG2FlirtDung","LOCALS",1) ~THEN BEGIN SanFlirtDung1
 SAY ~ (Even in a dungeon like this Sandrah seems to be unable to loose her confidence and positive attitude.) ~
 IF~~THEN REPLY ~ (You envy her for a moment before you realise that you can gain strength for yourself from her attitude. You give her a loving smile as she turns around and gazes at you.) All is well, Sandrah - you are by my side.~ DO ~SetGlobal("BG2FlirtDung","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+IF~~THEN REPLY ~ (You envy her for a moment before you realise that you can gain strength for yourself from her attitude.)~ DO ~SetGlobal("BG2FlirtDung","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
 IF ~Global("BG2FlirtForst","LOCALS",1) ~THEN BEGIN SanFlirtForst1
 SAY ~ (Sandrah hums a small tune that intwines melodically with the songs of the birds from above.) ~
 IF~~THEN REPLY ~ (You take her hand and walk beside her for a while like you were just like any other happy loving young couple in Fearun - and for a moment it seems you are nothing else.)~ DO ~SetGlobal("BG2FlirtForst","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+IF~~THEN REPLY ~ Psst, you may attract foe.~ DO ~SetGlobal("BG2FlirtForst","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
 IF ~Global("BG2FlirtNite","LOCALS",1) ~THEN BEGIN SanFlirtForst1
 SAY ~ (The nightly city is full of strange voices and sounds, completely different from its daily bussle. Sandrah has stopped for a moment, holding your hand and assimilating the scenery with all her senses.) ~
 IF~~THEN REPLY ~ There can be peaceful islands even in such a city when you are in love and with your dear one. (You turn to her and kiss her.) ~ DO ~SetGlobal("BG2FlirtNite","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+IF~~THEN REPLY ~ (You wish there was someone near to share it with.) ~ DO ~SetGlobal("BG2FlirtNite","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
 IF ~Global("BG2FlirtHeal","LOCALS",1) ~THEN BEGIN SanFlirtHeal1
 SAY ~ (Like so many uncounted times before Sandrah has cast one of her healing spells on you.) ~
 IF~~THEN REPLY ~ Where would I be if not for you, sweetheart. Your healing. your trust and your confidence keep me alive day after day. (You kiss one of her healing hands and then the other.) ~ DO ~SetGlobal("BG2FlirtHeal","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ GOTO SanFlirtHeal2
+IF~~THEN REPLY ~ Thank you. ~ DO ~SetGlobal("BG2FlirtHeal","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
+IF~~THEN REPLY ~ Your worth to be tugged along, woman, keep that up. ~ DO ~SetGlobal("BG2FlirtHeal","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
 IF~~ THEN BEGIN SanFlirtHeal2
@@ -399,6 +428,7 @@ IF~Global("BG2FlirtThet","LOCALS",1)~ THEN BEGIN SanFlirtThet1
 SAY ~ (Dreamily) Now that this place is save...a lonely cosy hut in the mysterious Tethyr Forest. We have not had such a nest for some time, <CHARNAME>.~
 IF~~THEN REPLY ~I love that tone in your voice, this mixture of romance and longing.~ DO~ SetGlobal("BG2FlirtThet","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000)~GOTO SanFlirtThet2
 IF~~THEN REPLY ~Is my fearless heroine growing tired? Are you looking for a place to settle down?~DO~ SetGlobal("BG2FlirtThet","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000)~GOTO SanFlirtThet3
+IF~~THEN REPLY ~And we have better things to do at this moment than to fill our minds with such considerations.~DO~ SetGlobal("BG2FlirtThet","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000)~EXIT
 END
 
 IF~~ THEN BEGIN SanFlirtThet2
