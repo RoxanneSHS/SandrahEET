@@ -1561,7 +1561,7 @@ END
 
 IF~~THEN BEGIN MetQidrNah2
 SAY~ The Dark Lady herself is a child of Corellon Larethian and Araushnee - later known as Lolth the Queen of the Spider Pits. Regardless of her heritage Eilistraee became a good goddess of the moon, dance, song, the sword and the hunt who grants her followers special abilities to help them survive. They are usually drow who decided (or were forced to) leave the Underdark. However, not only drow may become Sword Dancers. There are also surface elves and half-elves among them.  ~
-=~They usually live in forests or abandoned ruins which become both their shelter and temples. Eilistraee and Mystra are often worshipped together and lore has it that a temple exists deep below Waterdeep's Undermountain.~
+=~They often live in forests or abandoned ruins which become both their shelter and temples. Eilistraee and Mystra are sometimes worshipped together and lore has it that a temple exists deep below Waterdeep's Undermountain.~
 IF~~THEN REPLY~This priestess somehow appeared to me as a dark counterpart to you.~GOTO
 MetQidrNah3
 IF~AreaCheck("BG5404")~THEN REPLY~She was quite brave to make this appearance in front of a party who had just stopped a High Priestess of Lolth and her heavy forces.~ GOTO MetQidrNah4
