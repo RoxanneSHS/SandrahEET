@@ -1,5 +1,6 @@
 IF
 Global("DMWWOgreAmbush","GLOBAL",0)
+InMyArea("ogrema_a")
 THEN
 RESPONSE #100
 SetGlobal("DMWWOgreAmbush","GLOBAL",1)
