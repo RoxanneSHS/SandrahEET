@@ -8,7 +8,7 @@ IF~AreaCheck("oh3020")~THEN CVshar1 MettMys
 ==CVSandrJ~It does not mean both can be at the same time and same place together.~
 ==CVshar1~We will see about that - just like we will see each other again, I am sure.~DO ~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
-ADD_TRANS_ACTION Ogrelead BEGIN 0 END BEGIN 0 END ~ GiveItemCreate("CVOGscr",Myself,0,0,0) ~
+ADD_TRANS_ACTION Ogrelead BEGIN 0 END BEGIN 0 END ~ GiveItemCreate("CVOGscr",Myself,0,0,0) Wait(1) Enemy()~
 
 CHAIN
 IF~Global("SanTalSeek","ar0204",1)~THEN CVTalop1 ArchSeek
