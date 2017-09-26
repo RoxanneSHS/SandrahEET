@@ -384,7 +384,6 @@ END
 IF~~ THEN BEGIN SanFlirtCity2
 SAY ~ (She unbuttons the top of your tunica and knots a smooth silken scarf around your neck. You notice that the colour exactly matches the one of your own eyes.)~
 IF~~THEN REPLY ~ It's wonderful, thank you, my love. (You embrace and kiss her.)~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
-END
 IF~~THEN REPLY ~ It's wonderful, thank you, Sandrah. ~ DO ~ SetGlobal("BG2FlirtCity","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000) ~ EXIT
 END
 
