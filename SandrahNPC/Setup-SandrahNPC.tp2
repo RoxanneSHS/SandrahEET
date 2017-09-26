@@ -4304,6 +4304,7 @@ END
 
 COPY_EXISTING ~ogrema_d.cre~ ~override/ogrema_d.cre~
               WRITE_ASCII 0x280 ~ogrema_d~
+              REMOVE_CRE_ITEM ~mage01~ 
 COPY_EXISTING ~Sethle.cre~ ~override/Sethle.cre~
               WRITE_ASCII 0x280 ~Sethle~
 COPY_EXISTING ~coksmth.cre~ ~override/coksmth.cre~
