@@ -3627,16 +3627,18 @@ SAY ~ I have been gathering information and studied all various sources about Bh
 = ~ We have witnessed now the scene of why this child had to leave Waterdeep and my father. Khalindra's spawn and all the others that the dead god had left behind throughout Faerun were hunted by the various parties with their different interests at that time. ~
 =~ The Harpers, including my father, Gorion, and to our surprise also Winthrop, however believed that the Bhaalspawns by themselves were innocent babies that were not evil and murderous from their blood alone. It is this belief that was given on to me by my father. And now with you, <CHARNAME>, by my side it has been proven. The power of that god is sleeping in you and is awakened part by part as you grow and learn to use it. But how you make use of that power, that is your own decision and guarded by your own will. A fact that only few people can understand.~
 IF ~~ THEN REPLY ~ The dreams I had, the ones about blood and murder, those voices trying to convince me that there is only one way for me to follow - that was Bhaal pulling me to the evil side? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",11)~ GOTO PidBhaal14
+IF ~~ THEN REPLY ~ The dreams I had, the ones about blood and murder are thus explained by Bhaal. But that's not all, isn't it? ~ DO ~ SetGlobal("Formedcloth","GLOBAL",11)~ GOTO PidBhaal14
 END
 
 IF~~THEN BEGIN  PidBhaal14
 SAY~ Yes, but your dreams also included Gorion and what he had given to you. The means to withstand this pulling, and the vision of a life where you use your powers against that evil. That is the other face of your heritage, the one that your foe are not able to see.~
 IF ~~ THEN REPLY ~ They will see it soon enough - but it will be too late for them by then.~ GOTO PidBhaal15
+IF ~~ THEN REPLY ~ They truth of that assumption is yet to ne seen.~ GOTO PidBhaal15
 END
 
 IF~~THEN BEGIN  PidBhaal15
 SAY~ So let me continue my tale. For a long time my search for the second child of Khalindra was in studies mostly, and some few talks I had with my father, who always closed up on me when the topic was brought up by me.~
-= ~ Then suddely at the end of this winter, things started to get in motion. As could be expected, the children that were spawned by Bhaal all at the same time, shortly before his destruction, reached the age of adulthood. If you trust Alaundo - or rather the interpretation that is believed by the most - this would be the time when they would become aware of who they are, and according to the prophesies would begin their rush for power.~
+= ~ Then suddely at the end of this winter, things started to get in motion. The majority of the children were spawned by Bhaal at the same time, shortly before his destruction. Those now reached the age of adulthood. If you trust Alaundo - or rather the interpretation that is believed by the most - this would be the time when they would become aware of who they are, and according to the prophesies would begin their rush for power.~
 IF ~~ THEN REPLY ~ In that rush they would eventually be confronted with one another. The result would be an enourmous war and the resulting bloodshed would be the source for Bhaal's children to gather more and more power. Or at least those that would survive. In the end the remaining spawns would fight over the Throne of Bhaal for the winner to become the new God of Murder. This is the version I heard at Candlekeep every day from the Chanters.~GOTO  PidBhaal16
 END
 
@@ -3646,11 +3648,14 @@ SAY~ This is the interpretation of Alaundo that most people know, yes. It is not
 = ~And here we have <CHARNAME>. A Bhaalspawn. Powerful, yes. A leader, yes and we follow <PRO_HIMHER>. Yes, <PRO_HESHE> kills foe at great number, yes -but <PRO_HESHE> is not evil, <PRO_HESHE> is only defending <PRO_HIMHER>self.~
 = ~ Read again Alaundo with this example in mind and you will see what was really said. Bhaalspawns will rise, they will be good or bad. In the attempt to rise to power they will inevitably find each other. But in two possible ways - either as rivals for that bloody throne or as the two sides of a medal. The one, according to Alaundo that will have the necessary power and will to stop the victorious Bhaalspawn to ascend to the godhood and throne of the dead god - will be one who possesses equal abilities, ergo another Bhaalspawn.~
 IF ~~THEN REPLY ~ Is this what we are facing now, Sandrah? Our mysterious foe in the dark is a Bhaalspawn and here is the good one to stop him? The weapon the Harpers forged to stop evil.~ GOTO  PidBhaal17
+IF ~~THEN REPLY ~ The rush for Bhaal's throne or return has begun. And here we are in the middle of it all? Hard to believe.~ GOTO  PidBhaal17
+IF ~~THEN REPLY ~ Aloundo's prophesy about the rush for Bhaal's throne or return are rather vague. I heard them every day. There is no reason to believe that all of that happens right now.~ GOTO  PidBhaal17
 END
 
 IF~~THEN BEGIN  PidBhaal17
 SAY~ No, <CHARNAME>, this episode here is far from what a clash of the Bhaalspawns for power will look like. And you are not a brainless weapon in somebody's powerplay. You are a fighter and force by your own means.~
 IF~~THEN REPLY ~ Thank you, Sandrah. I have much to think about now. Your tale is not even halfways told but it is getting late now. Let us continue another time.~ EXIT
+IF~~THEN REPLY ~ I have the feeling that you take some random events and mix them with some weird old prophesy to make me believe you. For whatever reason...I will find out what your insinuations are really about, be sure.~ EXIT
 END
 
 
