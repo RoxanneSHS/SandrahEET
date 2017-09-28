@@ -4648,6 +4648,7 @@ SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by
 = ~ You bear the discovery of your heritage quite well.~
 IF ~~ THEN REPLY~ Don't forget I have the power of a God in me, even if I do not give in to his dark luring.~ GOTO KhalChi2
 IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi3
+IF~~ THEN REPLY~ The support of my friends and companions helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi2
 END
 
 IF~~ THEN BEGIN KhalChi2
@@ -4686,6 +4687,7 @@ END
 IF~~ THEN BEGIN KhalChi7
 SAY ~ It is soothing to think that. When we look into the sky at night and see this star up there watching us, we look at the same one then. Her death is the source of new love and new hope, thus not in vain. The evil God's plan to revenge on Elminster and his beloved wife has failed.~
 IF ~~ THEN REPLY~ Even more it has failed as it will be this spawn that puts an end to the one who attempts to rise in his name.~ EXIT
+IF ~~ THEN REPLY~ This whole story will end quite differently from what some mad gods may have conjured up for us. Just wait and see.~ EXIT
 END
 
 // Imoen is Bhaalspawn
