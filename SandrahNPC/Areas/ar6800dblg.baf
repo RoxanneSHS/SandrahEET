@@ -22,6 +22,7 @@ END
 
 IF
 Global("HorseExists","bg2300",0)
+InParty("CVSandr")
 THEN
 RESPONSE #100
 CreateCreature("horsesa",[3042.3541],4)
