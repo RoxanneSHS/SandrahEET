@@ -95,39 +95,6 @@ SAY~Poor scum from the Sword Coast, (spit).~
 IF~~THEN DO~SetDialog("WDWATCH")~EXIT
 END
 
-BEGIN CVWDDWA
-IF ~RandomNum(3,1) ~ THEN BEGIN 0
-SAY  ~Some leatherhead jacked me case last night! If I find the addle-coved idiot, I'll strangle him!~
-IF~~ THEN EXIT
-END
-
-IF ~RandomNum(3,2) ~ THEN BEGIN 1
-SAY ~The bub in the Hive tastes like donkey-piss!~
-IF ~~ THEN REPLY ~You've tasted donkey-piss?!~ GOTO 2
-IF ~~ THEN REPLY ~Then don't drink it, genius.~ GOTO 3
-IF ~~ THEN REPLY ~Point the way!~ GOTO 4
-END
-
-IF ~~ THEN BEGIN 2
-SAY ~Go hang yerself, Clueless!~
-IF ~~ THEN EXIT
-END
-
-IF ~~ THEN BEGIN 3
-SAY ~Keep rattlin' that bone-box o' yers, and I'll splatter yer brains all over the cobblestones!~
-IF ~~ THEN EXIT
-END
-
-IF ~~ THEN BEGIN 4
-SAY ~The Gathering Dust Bar, cutter.~
-IF ~~ THEN EXIT
-END
-
-IF ~RandomNum(3,3) ~ THEN BEGIN 5
-SAY ~You know the chant?~
-IF ~~ THEN EXIT
-END
-
 BEGIN  CVWDBar7
 
 IF~AreaCheck("CVROA7")~THEN BEGIN Fest1

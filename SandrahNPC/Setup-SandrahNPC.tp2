@@ -969,6 +969,7 @@ COPY ~SandrahNPC\Areas/CVELT2LM.bmp~ ~override\CVELT2LM.bmp~
 COPY ~SandrahNPC\Areas/CVELT2SR.bmp~ ~override\CVELT2SR.bmp~
 
 COPY ~SandrahNPC\Areas/CVELT3.ARE~ ~override\CVELT3.ARE~
+     COMPILE     ~SandrahNPC/Areas/CVELT3.baf~
 COPY ~SandrahNPC\Areas/CVELT3.mos~ ~override\CVELT3.mos~
 COPY ~SandrahNPC\Areas/CVELT3.tis~ ~override\CVELT3.tis~
 COPY ~SandrahNPC\Areas/CVELT3.wed~ ~override\CVELT3.wed~
@@ -4710,12 +4711,6 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVDre1.are~ THEN BEGIN
   FAIL  @406
 END
 
-AT_NOW ~SandrahNPC/mve/CVMovie.bat~
-
-PRINT ~Installed Sandrah Movies~
-
-AT_UNINSTALL ~SandrahNPC/mve/CVMovieuninstal.bat~
-
 COPY ~SandrahNPC/Music~  ~override~
 
 PRINT ~Installed Sandrah Voice and Music~
@@ -8407,6 +8402,55 @@ LPF fj_are_structure
     fj_structure_type = entrance
     fj_name           = Exit9001
   END
+  
+COMPILE     ~SandrahNPC/Areas/CVELT3.baf~
+COMPILE     ~SandrahNPC/Mods/Blackpit.d~
+COMPILE	    ~SandrahNPC/Mods/CutBPS1.baf~
+COMPILE     ~SandrahNPC/Travel/CVCut305.baf~
+
+EXTEND_TOP
+~BPHub.BCS~ ~SandrahNPC/Mods/BPHubSan.baf~
+EXTEND_TOP
+~OH9310.BCS~ ~SandrahNPC/Mods/OH9310San.baf~
+
+//new travel region and new entrance for Pits
+COPY_EXISTING ~CVELT3.ARE~ ~override~
+
+LPF fj_are_structure
+    INT_VAR
+    fj_type         = 2    //travel
+    fj_box_left     = 958
+    fj_box_top      = 497
+    fj_box_right    = 1019
+    fj_box_bottom   = 555
+    fj_cursor_idx   = 30
+    fj_vertex_0     = 958 + (539 << 16)
+    fj_vertex_1     = 986 + (555 << 16)
+    fj_vertex_2     = 1019 + (513 << 16)
+    fj_vertex_3     = 991 + (497 << 16)
+    fj_vertex_4     = 958 + (539 << 16)
+    fj_flags        = 4 // PartyRequired
+    fj_loc_x        = 936
+    fj_loc_y        = 572
+    STR_VAR
+    fj_structure_type   = region
+    fj_name             = ToPit
+    fj_destination_area = oh9360
+    fj_destination_name = InPit
+  END
+
+COPY_EXISTING ~oh9360.ARE~ ~override~  
+ LPF fj_are_structure
+    INT_VAR
+    fj_loc_x       = 989
+    fj_loc_y       = 525
+    fj_orientation = 12
+    STR_VAR
+    fj_structure_type = entrance
+    fj_name           = InPit
+  END
+
+PRINT ~Black Pits access from Waterdeep added~  
 
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE

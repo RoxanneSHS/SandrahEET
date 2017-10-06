@@ -1,0 +1,24 @@
+IF
+Global("SanPitsWD","Global",0)
+THEN
+RESPONSE #100
+SetGlobal("SanPitsWD","Global",1)
+TriggerActivation("ToPit",FALSE)
+END
+
+IF
+Global("SanPitsWD","Global",2)
+THEN
+RESPONSE #100
+SetGlobal("SanPitsWD","Global",3)
+TriggerActivation("ToPit",TRUE)
+CreateVisualEffect("Spsumgte",[942.569])
+END
+
+IF
+Global("SanPitsWD","Global",7)
+THEN
+RESPONSE #100
+SetGlobal("SanPitsWD","Global",8)
+TriggerActivation("ToPit",FALSE)
+END
