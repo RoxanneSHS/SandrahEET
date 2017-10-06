@@ -6745,7 +6745,7 @@ IF ~ Global("DYBant","GLOBAL",18)~ THEN BSANDR SanDywinsk
 ~ We not only love the same Bhaalspawn, Dynaheir, we are also <PRO_HISHER> protectors and advisors.~
 DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)~
 == BDYNAH ~ I am in agreement with these words, Sandrah, 'tis still my mission, now even more as I protect my lover by it.~
-== BSANDR~ Then we should try to join our forces to find out about the Orloth who has hunted <CHARNAME> once and is now hunting him again - and you.~
+== BSANDR~ Then we should try to join our forces to find out about the Orloth who has hunted <CHARNAME> once and is now hunting <PRO_HIMHER> again - and you.~
 == BDYNAH ~ His name is Winsky Perorate, once one of the most powerful wizards of my homeland.~
 == BSANDR~ Is he part of the reasons you came to the Sword Coast then, Dynaheir?~
 == BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come here.~
