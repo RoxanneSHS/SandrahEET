@@ -93,3 +93,15 @@ END
 CHAIN
 IF~~THEN CVSandrJ BPWD6
 ~Do not worry. It is just a matter of persistence. We will wear him out. We stand together and he will lose with every new fight. ~EXIT
+
+CHAIN
+IF~Global("SanPitsEnd","Global",1)~ THEN CVSandrJ BPWDE1
+~I am pretty sure now that our tactic works here. Baeloth is desperate due to our success. He will be forced to face us in person pretty soon. If that happens our chance to leave is there.~
+DO~SetGlobal("SanPitsEnd","Global",2)~ 
+END
+++~There will still be the djinn to defeat.~+ BPWDE2
+++~There is no visible exit from these areas, even with the drow dead.~+ BPWDE2
+
+CHAIN
+IF~~THEN CVSandrJ BPWDE2
+~I think that Najim will be grateful enough for the freedom he gains through Baeloth's defeat. There is no reason for him not to let us go. i am confident.~EXIT
