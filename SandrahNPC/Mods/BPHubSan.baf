@@ -33,7 +33,7 @@ ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
 END
 
 IF
-!Global("T3_B5","GLOBAL",0)
+!Global("T3_B4","GLOBAL",0)
 Global("SanPitsEnd","Global",0) 
 InParty("CVSandr")
 !StateCheck(Player1,CD_STATE_NOTVALID)

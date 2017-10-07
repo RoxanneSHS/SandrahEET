@@ -104,4 +104,4 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ BPWDE2
-~I think that Najim will be grateful enough for the freedom he gains through Baeloth's defeat. There is no reason for him not to let us go. i am confident.~EXIT
+~I think that Najim will be grateful enough for the freedom he gains through Baeloth's defeat. There is no reason for him not to let us go. I am confident.~EXIT
