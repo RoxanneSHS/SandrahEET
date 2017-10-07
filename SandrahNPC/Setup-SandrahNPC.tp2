@@ -2446,7 +2446,7 @@ LAF ~DEFINE_FNP_KIT_INFO~
 	u_crossbows 		= 0
   STR_VAR
     clab_name 	= EVAL ~%mod_clab%~
-	class 		= ~cleric~	 
+	class 		= ~fighter_cleric~	 
 	s_Life 		= ~focus~
 	s_Death 	= ~x~
 	s_Benediction 	= ~major~
