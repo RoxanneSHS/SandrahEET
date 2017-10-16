@@ -975,8 +975,8 @@ END
 
 IF ~ Global("SanIdolTake","GLOBAL",5)~ THEN BEGIN VaRevF3
 SAY ~ We have done to the area around here some favour, and also to this lost soul, <CHARNAME>. I think we should keep the cursed sword. I have read, that it is considered to be the key to something from the past. Maybe we can find out something during our travels.~
-IF ~ PartyHasItem("sw1h19") ~ THEN REPLY~ Maybe a smith or a learned mage know something. ~ GOTO VaRevF4
-IF ~ !PartyHasItem("sw1h19") ~ THEN REPLY~ Torqion seems to have dropped it when he *died*. Maybe a smith or a learned mage know something. ~ GOTO VaRevF4
+IF ~ OR(2) PartyHasItem("sw1h19") PartyHasItem("SW1HVAM") ~ THEN REPLY~ Maybe a smith or a learned mage know something. ~ GOTO VaRevF4
+IF ~ !PartyHasItem("sw1h19") !PartyHasItem("SW1HVAM")~ THEN REPLY~ Torqion seems to have dropped it when he *died*. Maybe a smith or a learned mage know something. ~ GOTO VaRevF4
 END
 
 IF ~~ THEN BEGIN VaRevF4
