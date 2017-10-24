@@ -5,12 +5,12 @@ INTERJECT_COPY_TRANS NTOLIVIA 1 Freepotn
 END
 
 INTERJECT_COPY_TRANS NTDRAAGI 0 SanBlackHand
-== CVSandrJ IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~THEN~  Good old Brother Hasdar is here as well, I see. He has counted on our persistence to gather the great book for him. He should have known we would also show the same initiative to collect our debts.~
-== NTDRAAGI IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ You have come to the wrong place, my girl. Nothing you would gather here would be of any use to you as you will not leave here to enjoy it.~
-== CVSandrJ IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~THEN~ I told your good Hasdar already that we just need the ring to end the orc ritual in the north. That is not too much, I assume, for the service we have provided.~
-== NTHASDAR IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ Haeball must have told her about Ghotal's ring - before she killed him. She is extremely dangerous, Brother Draagis.~
-== CVSandrJ IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ Interesting, <CHARNAME>, another piece of the puzzle. The ring is here and it had belonged to the great orc general. We are gaining another bit of insight.~ DO ~ AddexperienceParty(11000)~
-== NTDRAAGI IF ~ Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ And you can ponder on that insight for an eternity, girl, as you will have a lot of time from now on - in the Nine Hells.~
+== CVSandrJ IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~THEN~  Good old Brother Hasdar is here as well, I see. He has counted on our persistence to gather the great book for him. He should have known we would also show the same initiative to collect our debts.~
+== NTDRAAGI IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ You have come to the wrong place, my girl. Nothing you would gather here would be of any use to you as you will not leave here to enjoy it.~
+== CVSandrJ IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~THEN~ I told your good Hasdar already that we just need the ring to end the orc ritual in the north. That is not too much, I assume, for the service we have provided.~
+== NTHASDAR IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ Haeball must have told her about Ghotal's ring - before she killed him. She is extremely dangerous, Brother Draagis.~
+== CVSandrJ IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ Interesting, <CHARNAME>, another piece of the puzzle. The ring is here and it had belonged to the great orc general. We are gaining another bit of insight.~ DO ~ AddexperienceParty(11000)~
+== NTDRAAGI IF ~ OR(2) Global("NTTalkedToHasdar","GLOBAL",5) Global("HasdarReturnToTemple","GLOBAL",1) InParty("CVSandr")~ THEN~ And you can ponder on that insight for an eternity, girl, as you will have a lot of time from now on - in the Nine Hells.~
 END
 
 INTERJECT_COPY_TRANS  NTGGHOTA 0 SanHasGSw

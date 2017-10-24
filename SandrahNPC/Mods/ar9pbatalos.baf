@@ -1,5 +1,7 @@
 IF
+OR(2)
 Global("GetReadyToPitigriling","GLOBAL",1)
+Global("NTGetReadyToPitigriling","GLOBAL",1) 
 Global("SantalosDec","GLOBAL",1)
 ReputationGT(Player1,12)
 THEN

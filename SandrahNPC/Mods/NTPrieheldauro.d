@@ -1,6 +1,6 @@
-EXTEND_TOP NTPRIHEL 0 #1 
-IF ~ GlobalGT("TalkedToSatos","GLOBAL",0) Global("SanDauroQ","GLOBAL",6)InParty("CVSandr")~ THEN REPLY~ We have the sad obligation to report to you the death of your paladin Dauron. He fell as a true hero against the mighty demon Paraagariel.~ GOTO Daurep2
-IF ~ GlobalGT("TalkedToSatos","GLOBAL",0) Global("SanDauroQ","GLOBAL",7)InParty("CVSandr")~ THEN REPLY ~Has the priest Dauron reported his success in defeating the demon Paraagariel?~ GOTO Daurep1
+EXTEND_TOP NTPRIHEL 0 #1
+IF ~ OR(2) GlobalGT("TalkedToSatos","GLOBAL",0) GlobalGT("NTTalkedToSatos","GLOBAL",0)  Global("SanDauroQ","GLOBAL",6)InParty("CVSandr")~ THEN REPLY~ We have the sad obligation to report to you the death of your paladin Dauron. He fell as a true hero against the mighty demon Paraagariel.~ GOTO Daurep2
+IF ~ OR(2) GlobalGT("TalkedToSatos","GLOBAL",0) GlobalGT("NTTalkedToSatos","GLOBAL",0) Global("SanDauroQ","GLOBAL",7)InParty("CVSandr")~ THEN REPLY ~Has the priest Dauron reported his success in defeating the demon Paraagariel?~ GOTO Daurep1
 END
 
 APPEND NTPRIHEL

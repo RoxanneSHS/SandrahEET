@@ -1,8 +1,10 @@
 IF
 Global("SanVsTalos","GLOBAL",1)
-OR(2)
+OR(4)
 Global("MeandarNeedHelp","GLOBAL",2)
+Global("NTMeandarNeedHelp","GLOBAL",2)
 Global("MeandarGivesCultQuest","GLOBAL",1)
+Global("NTMeandarGivesCultQuest","GLOBAL",1) 
 InParty("CVSandr")
 Global("TalOnIsl","ar90pb",0)
 THEN

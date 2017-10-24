@@ -2348,7 +2348,7 @@ IF ~~ THEN REPLY ~ (You enjoy walking side by side with your beautiful companion
 IF ~ GlobalGT("Sprite_is_DeadBandit","GLOBAL",25) Global("SanFiSkills","LOCALS",0) ~ THEN REPLY ~ Sandrah, with your background from Waterdeep, I am wondering where you learned to fight like that.~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanFiSkills
 IF ~ AreaType(FOREST) TimeOfDay(DAY) Global("SanStrBe","LOCALS",0) ~ THEN REPLY ~ Wild strawberries over there, what a rare sight!~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanStrBe
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -2627,7 +2627,7 @@ END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",7) ~ THEN BEGIN SanPCInit7
 SAY ~ (As Sandrah sees you come near, she starts to busily examine the tome of Faerun history she always studies at quiet moments. She makes you feel clearly that is is not the time to talk with you.) ~
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -2654,7 +2654,7 @@ IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",8) ~ THEN BEGIN SanPCInit8
 SAY ~ (As Sandrah sees you come near, she smiles brightly:) <CHARNAME>, what is on your mind? ~
 IF ~Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN REPLY ~ Sandrah, I want to ask you about Gorion again. I just recalled a small incident that I almost forgot in all the turmoil of the last days. You know, on that dreadful day I left Candlekeep with my foster father, I saw you talking to him on the library steps. You may not have seen me, as agitated as you stormed away from him. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO Candlevisit
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
@@ -2871,7 +2871,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDF
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ Global("SanBranDec","GLOBAL",5)~ THEN REPLY ~ It feels a bit empty, Sandrah, without Branwen - even with the two of us together in love. Do you feel the same?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",4)~GOTO BranLeft1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
@@ -3435,7 +3435,7 @@ IF~~ THEN REPLY ~ (Embrace Sandrah and give her a passionate kiss. ) ~ EXIT
 IF ~ PartyHasItem("SanParc") Global("SanParcPid","LOCALS",0) ~ THEN REPLY~ When we brought the Shard back to your father, I noticed he slipped some small box into your robes. May I ask you what it was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanParcPid
 IF~ GlobalGT("SanNarQ","GLOBAL",6) !AreaType(OUTDOOR) Global("SanAdveFa","LOCALS",0) !AreaType(DUNGEON) ~ THEN REPLY ~ You mentioned sometime that you used to travel with your father a bit on his adventures, Sandrah. Tell me about it, please. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanAdvenE1
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fall and we have time for a rest. I long for you, Sandrah.~ GOTO SanNight2Inv
 IF ~ AreaType(CITY) GlobalLT("SanBuySweet1","LOCALS",2) ~THEN REPLY ~ Wait here, a minute, I need to get us something quickly. (You rush into a nearby shop.) ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanBuySweet11
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
@@ -3816,7 +3816,7 @@ IF ~ Global("X#XALOVETALK","GLOBAL",39) InParty("XAN") Global("Xanrever","LOCALS
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fall and we have time for a rest. I long for you, Sandrah.~ GOTO SanNight2Inv
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanPCGavT1
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
@@ -4360,7 +4360,7 @@ IF ~ GlobalGT("SanBooTlk","GLOBAL",5) Global("MinskFlow","LOCALS",0) ~ THEN REPL
 IF~ Global("SanXanPC","GLOBAL",2)InParty("Xan")~THEN REPLY~ I observe you started to care for Xan quite a bit. Is it the healer that tries to cure this hopeless case?~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanXanPC13
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
 IF ~ Global("X#XALOVETALK","GLOBAL",39) InParty("XAN") Global("Xanrever","LOCALS",0) ~ THEN REPLY ~ May I ask you a very intimate question, my love? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanrevery1
-IF ~ Global("TORKIONNEEDYOU","GLOBAL",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanPCGavT1
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
@@ -5738,6 +5738,7 @@ APPEND IF_FILE_EXISTS NTHAEBAL
 
 IF WEIGHT #-9 ~  !Dead("NTHASDAR")
 !Global("TalkedToReedigInBeard","GLOBAL",1)
+!Global("NTTalkedToReedig","GLOBAL",3)
 InParty("CVSandr")
 Global("SanMageDM","LOCALS",0)
 OR(2)

@@ -3936,7 +3936,9 @@ StartDialogNoSet("CVSandr")
 END
 
 IF
+OR(2)
 Global("MeetIndfigtToOffer","GLOBAL",1)
+Global("NTMeetIndfigtToOffer","GLOBAL",1)
 AreaCheck("ar82pb")
 Global("9001Fi","GLOBAL",3)
 !PartyHasItem("NTMISC06")
@@ -3957,7 +3959,10 @@ SetGlobal("SanOrcCKey","LOCALS",1)
 END
 
 IF
+OR(3) 
 Global("TalkedToHasdar1","GLOBAL",1)
+Global("NTTalkedToHasdar","GLOBAL",2)
+Global("NTTalkedToHasdar","GLOBAL",3)
 GlobalLT("SanKnowsHasdId","GLOBAL",3)
 Global("Hasntlet","LOCALS",0)
 PartyHasItem("ntpblet2")
@@ -3968,7 +3973,10 @@ IncrementGlobal("SanKnowsHasdId","GLOBAL",1)
 END
 
 IF
+OR(3)
 Global("TalkedToHasdar1","GLOBAL",1)
+Global("NTTalkedToHasdar","GLOBAL",2)
+Global("NTTalkedToHasdar","GLOBAL",3)
 GlobalLT("SanKnowsHasdId","GLOBAL",3)
 Global("Hasntmisc","LOCALS",0)
 PartyHasItem("ntmisc10")
@@ -3979,7 +3987,10 @@ IncrementGlobal("SanKnowsHasdId","GLOBAL",1)
 END
 
 IF
+OR(3)
 Global("TalkedToHasdar1","GLOBAL",1)
+Global("NTTalkedToHasdar","GLOBAL",2)
+Global("NTTalkedToHasdar","GLOBAL",3)
 GlobalLT("SanKnowsHasdId","GLOBAL",3)
 Global("Hasnkey3","LOCALS",0)
 PartyHasItem("ntkeypb3")
@@ -3998,7 +4009,10 @@ SetGlobal("SanKnowsHasdId","GLOBAL",6)
 END
 
 IF
+OR(2)
 Global("TalkedToHasdar1","GLOBAL",2)
+Global("NTTalkedToHasdar","GLOBAL",4) 
+!Dead("NTDRAAGI")
 Global("SanKnowsHasdId","GLOBAL",4)
 THEN
 RESPONSE #100
