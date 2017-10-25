@@ -13,6 +13,7 @@ Elfsong ghost added
 Item descriptions extended
 LoB flags added
 Black Pits integrated and accesible from Waterdeep
+Added additional compatibility with NTotSC v2.0
 
 VERSION 2.04
 -----------------
