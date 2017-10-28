@@ -7063,6 +7063,13 @@ END ELSE BEGIN
   PRINT ~Tenya NPC not detected - skipped Sandrah part~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~C0Drake.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/DrakeBG1.d~
+PRINT ~ Drake NPC detected - installed Sandrah interactions~
+END ELSE BEGIN
+  PRINT ~Drake NPC not detected - skipped Sandrah part~
+END
+
 //Sarevok Defeat revisited
 
 COPY ~SandrahNPC\Mods/CVSCUTAN.cre~ ~override~
