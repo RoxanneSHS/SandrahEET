@@ -6335,7 +6335,7 @@ END
 
 INTERJECT Alyth 2 SanElfGhost
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~A ghostly mourner for another ghost?~
-== IF_FILE_EXISTS BSUFINCH  IF~ InParty("CVSandr") InParty("Sufinch") Global("SuFinchElfsong","GLOBAL",0)~ THEN ~An interesting story he tells, though incomplete. I shall make a note of it! ~DO~SetGlobal("SuFinchElfsong","GLOBAL",1)~
+== IF_FILE_EXISTS BSUFINCH  IF~ InParty("CVSandr") InParty("Sufinch") Global("SuFinchElfsong","GLOBAL",0)~ THEN ~An interesting story she tells, though incomplete. I shall make a note of it! ~DO~SetGlobal("SuFinchElfsong","GLOBAL",1)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~Does she ever mention a location or event in her songs, somewhere her lost lover might have gone to?~
 ==Alyth IF ~ InParty("CVSandr")~ THEN ~Hm, nothing that makes much sense, a dragon castle where they fight evil. No one knows where that might be or when that may have happened.~ 
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~Dragonspear Castle? A place full of lost souls...~
