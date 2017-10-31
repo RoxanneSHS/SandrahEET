@@ -15,12 +15,22 @@ RESPONSE #100
 IncrementGlobal("SanMeetC0Drake","GLOBAL",1)
 END
 
+IF
+AreaCheck("BG3700")
+Global("SanDrakeChic","BG3700",0)
+IsValidForPartyDialogue("CVSandr")
+PartyHasItem("Misc49")
+THEN
+RESPONSE #100
+SetGlobal("SanDrakeChic","BG3700",1)
+END
 
 IF
-OR(3)
+OR(4)
 Global("SanMeetC0Drake","Global",3)
 Global("SanMeetC0Drake","Global",5)
 Global("SanMeetC0Drake","Global",7)
+Global("SanDrakeChic","BG3700",1)
 !See([ENEMY])
 See("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
