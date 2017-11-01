@@ -20,3 +20,15 @@ DO~SetGlobal("SanDrakeChic","BG3700",2)~
 ==CVSandrJ~It is not chicken in general, it is this particular one alone. And with respect to the drinking, I wish I had this excuse. I fear the truth is worse.~
 ==C0DrakeJ~I see. If it's not the booze that makes the graetest fools out of us, there's only one other thing. A man, a woman, gosh, priestess...who am I to judge.~
 =~(Winks) We all have our weak spots,~EXIT
+
+CHAIN
+IF~Global("C0DrakeBassilus","GLOBAL",5)~ THEN C0DrakeJ WhyBasil
+~So, that was a strange remark on Bassilius' demise. Followers of Mystra and Cyric despise each other, so much is clear. You seem to take that more personal?~
+DO~SetGlobal("C0DrakeBassilus","GLOBAL",6)~
+==CVSandrJ~You know why Mystra became Cyric's enemy even after they ventured together during the Time of Troubles, right?~
+==C0DrakeJ~Yeah, I heard he killed her lover Kelemvor or such? And he's evil and mad and all. And she's all but forgiving, not that I say she should be.~
+==CVSandrJ~Well, then you know all there is to know.~
+==C0DrakeJ~Do I? Which of them is family to you?~
+==CVSandrJ IF~GlobalGT("Chapter","Global",3)~THEN~Cyric claims to be my grandfather. But enough of that for now.~
+==CVSandrJ IF~GlobalLT("Chapter","Global",4)~THEN~Enough of that for now. Maybe once we know each other a bit better.~
+==C0DrakeJ~Just as mylady commands.~EXIT

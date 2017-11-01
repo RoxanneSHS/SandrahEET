@@ -26,10 +26,28 @@ SetGlobal("SanDrakeChic","BG3700",1)
 END
 
 IF
+Global("C0DrakeBassilus","GLOBAL",3)
+AreaCheck("BG3700")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("C0DrakeBassilus","GLOBAL",4)
+END
+
+IF
+Global("C0DrakeBassilus","GLOBAL",4)
+!AreaCheck("BG3700")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("C0DrakeBassilus","GLOBAL",5)
+END
+
+IF
 OR(4)
 Global("SanMeetC0Drake","Global",3)
 Global("SanMeetC0Drake","Global",5)
-Global("SanMeetC0Drake","Global",7)
+Global("C0DrakeBassilus","GLOBAL",5)
 Global("SanDrakeChic","BG3700",1)
 !See([ENEMY])
 See("CVSandr")
