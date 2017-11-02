@@ -36,6 +36,7 @@ THEN
 		ActionOverride(Player6,CreateVisualEffectObject("SPDIMNDR",Myself))
 		Wait(3)
 		SetGlobal("SanPitsWD","Global",7)
+                SetGlobal("BAINVI","GLOBAL",9)
 		EndCutSceneMode()
 END
 
