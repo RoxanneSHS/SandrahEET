@@ -1,0 +1,8 @@
+IF
+Global("BAINVI","GLOBAL",9)
+Global("BA_START_SCENE","MYAREA",0)
+THEN
+RESPONSE #100
+SetGlobal("BA_START_SCENE","MYAREA",1)
+DestroySelf()
+END

@@ -8014,6 +8014,8 @@ EXTEND_TOP
 ~BD4100.bcs~ ~SandrahNPC/Sod/bd4100skie.baf~
 EXTEND_TOP
 ~BD0104.bcs~ ~SandrahNPC/Sod/bd0104join.baf~
+EXTEND_TOP
+~Bainvi.bcs~ ~SandrahNPC/Sod/Bainvi.baf~
 
 COPY_EXISTING ~kit.ids~ ~override~ //Kit fixes 
   REPLACE_TEXTUALLY ~0x0000 BARBARIAN~			  ~0x40000000 BARBARIAN~
