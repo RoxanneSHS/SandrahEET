@@ -7974,6 +7974,7 @@ COMPILE
 ~SandrahNPC/Sod/CVBrage.d~
 ~SandrahNPC/Sod/Corwinsan.d~
 ~SandrahNPC/Sod/BG1ResolveSkie.d~
+~SandrahNPC/Sod/BPSKEL.BAF~
 
 COMPILE
 ~SandrahNPC/Travel/CVNoRtF.baf~
@@ -8307,6 +8308,10 @@ COPY ~SandrahNPC\CRE/cvshar1.cre~ ~override~
 SAY NAME1 Sharlene
 SAY NAME2 Sharlene
 
+COPY ~SandrahNPC\CRE/BPLLYRK.CRE~ ~override~
+SAY NAME1 Llyrk
+SAY NAME2 Llyrk
+
 COPY ~SandrahNPC/ITM/CVOGscr.itm~ ~override~
 SAY NAME1 Letter
 SAY NAME2 Letter
@@ -8427,7 +8432,7 @@ COPY_EXISTING ~oh9360.ARE~ ~override~
     fj_name           = InPit
   END
 
-PRINT ~Black Pits access from Waterdeep added~  
+PRINT ~Black Pits access from Waterdeep added~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
