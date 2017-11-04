@@ -15,7 +15,7 @@ SetGlobal("Itemmirilet","GLOBAL",1)
 END
 
 IF
-Global("Wiwo","BG2800",0)
+Global("Wiwo","BG3800",0)
 OR(2)
 Global("ImopeltHunt","GLOBAL",1)
 Global("ImopeltHunt","GLOBAL",2)
