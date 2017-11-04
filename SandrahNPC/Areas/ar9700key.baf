@@ -13,3 +13,14 @@ THEN
 RESPONSE #100
 SetGlobal("Itemmirilet","GLOBAL",1)
 END
+
+IF
+Global("Wiwo","BG2800",0)
+OR(2)
+Global("ImopeltHunt","GLOBAL",1)
+Global("ImopeltHunt","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG3800",1)
+CreateCreature("wolfwi",[4576.1649],N) 
+END
