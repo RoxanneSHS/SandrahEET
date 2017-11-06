@@ -542,7 +542,7 @@ DO~SetGlobal("SanHealJen","GLOBAL",5)~
 ==BSandr~You have no gods to allow you access to the source I have, the Weave. But at times I also use natural resources for healing where I can. I would be eager to learn more about those techniques.~
 ==CVJenliJ~Jen'lig cannot tell you more what g'lathk do, she is a hr'a'cknir of some sorts even if different from others.~
 ==BSandr~You are a sentinel, a hunter of thieves? ~
-==CVJenliJ~This is good way to say what Jen'lig do. But children of Gith never are thieves. Is new concept to persue our enemies that way. ~EXIT
+==CVJenliJ~This is good way to say what Jen'lig do. But children of Gith never are thieves. Is new concept to pursue our enemies that way. ~EXIT
 
 CHAIN
 IF~Global("SanTazPatrl","GLOBAL",4)~THEN CVJenliJ After3

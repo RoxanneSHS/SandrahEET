@@ -1,8 +1,8 @@
 /*Set Romance Path*/
 
 IF
-See([PC])
 NumTimesTalkedTo(0)
+See([PC])
 Gender(Player1,MALE)
 THEN
 RESPONSE #100
@@ -13,8 +13,8 @@ Dialogue(Nearest([PC]))
 END
 
 IF
-See([PC])
 NumTimesTalkedTo(0)
+See([PC])
 Gender(Player1,FEMALE)
 THEN
 RESPONSE #100                                   
@@ -342,12 +342,12 @@ SetGlobal("SandrahMorningTalk","GLOBAL",6)
 END
 
 IF
-InParty(Myself)
 PartyRested()
 !See([ENEMY])
 RealGlobalTimerExpired("SandrahMorningTalkTime","GLOBAL")
 Global("SanRomPath","GLOBAL",1)
 Global("SandrahMorningTalk","GLOBAL",7)
+InParty(Myself)
 THEN
 RESPONSE #100
 SetGlobal("SandrahMorningTalk","GLOBAL",8)
