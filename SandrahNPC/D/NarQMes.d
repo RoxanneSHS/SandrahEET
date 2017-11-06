@@ -3,7 +3,7 @@ BEGIN NarQMes
 CHAIN
 IF ~Global("NarQMessSees","GLOBAL",1)~ THEN NarQMes NarQGiveMes
 ~ Misses Sandrah, so good I found you.~
-== CVSandrJ ~Landrel! You look troubled, my father must have send you! Talk quickly, what is wrong? ~
+== CVSandrJ ~Landrel! You look troubled, my father must have send you! Talk, good man , what is wrong? ~
 == NarQMes ~Indeed, Miss Sandrah, there are events that have alerted your father much and he sent me out to find you quickly. You must come to meet him urgently. You - and he also asked for the ones that are with you to feel invited. ~
 == CVSandrJ ~ That sounds distubing. <CHARNAME>, if my father takes to such an action, then there must be real trouble, something that even he is not able to deal with alone. Please, we must follow his call.~
 END
@@ -19,7 +19,7 @@ END
 
 CHAIN
 IF ~~ THEN NarQMes GiveMes1
-~  I was lucky to find you so quickly as we only knew of your last position from yesterday and your group moves quite a lot..~
+~  I was lucky to find you so prompt as we only knew of your last position from yesterday and your group moves quite a lot..~
 == CVSandrJ ~ Why did you not use the shard to locate me? ~
 == NarQMes ~That is part of the current problem, the shard...It is better for your father to tell you about all of that. You will of course set off immediately to see him, Misses Sandrah?~
 == CVSandrJ ~ <CHARNAME>? ~
