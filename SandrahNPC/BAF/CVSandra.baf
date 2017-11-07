@@ -8211,7 +8211,7 @@ END
 //BG1 Dream Reaction
 
 IF
-Global("BG1Dream","GLOBAL",2)
+Global("Dream","GLOBAL",2)
 Global("SanBG1DreamReact","GLOBAL",0)
 AreaType(OUTDOOR)
 InParty("CVSandr")
@@ -8221,8 +8221,8 @@ SetGlobal("SanBG1DreamReact","GLOBAL",1)
 END
 
 IF
-Global("BG1Dream","GLOBAL",2)
-Global("SanBG1DreamReact","GLOBAL",3)
+Global("Dream","GLOBAL",3)
+GlobalLT("SanBG1DreamReact","GLOBAL",3)
 InParty("CVSandr")
 THEN
 RESPONSE #100
