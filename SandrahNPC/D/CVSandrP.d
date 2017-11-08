@@ -122,7 +122,7 @@ END
 IF ~~ THEN BEGIN  KickSPT53
 SAY ~ The guy really was completely lovesick and homesick, you would not believe it. So...~
 = ~ He arranged for a real PARTY, freshly roasted basiliks and steaming bloodwine included, and after a few mugs of that wine began to talk of home and the pleasantries of the deep regions, especially the climate.~
-= ~ However, when he tried to get closer to me, trying to convince me to come there with me, I started to throw peanuts at him...~  
+= ~ However, when he tried to get closer to me, trying to convince me to come there with him, I started to throw peanuts at him...~  
 IF ~~ THEN REPLY ~ Peanuts? Are you joking? ~  GOTO KickSPT54
 END
 
