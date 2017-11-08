@@ -95,6 +95,5 @@ IF~~THEN DO~ SetGlobal("JosterSilence","GLOBAL",1) SetGlobal("JosterLeave","GLOB
 END
 END
 
-ADD_TRANS_ACTION Renal BEGIN 45 END BEGIN 0 END
-~SetGlobal("MAEVAREXPOSED","GLOBAL",0)~
+
 
