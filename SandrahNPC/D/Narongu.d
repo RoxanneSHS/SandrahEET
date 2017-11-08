@@ -48,7 +48,7 @@ SAY~ WHAT IS THIS WHISPER, CLERIC GIRL? NOTHING REMAINS SECRET TO THE MIGHTY NAR
 = ~ ONLY SOMEONE AS MIGHTY AS ELMINSTER WOULD BE ABLE TO FIND ME. (Puzzled again) NONE OF YOU IS ELMINSTER , HEY. BUT....~
 = ~ LITTLE CLERIC GIRL, COME CLOSER, THERE IS SOMETHING I SENSE ABOUT YOU.~
 IF ~ ~ THEN REPLY ~ You nasty fiend, don't dare to touch Sandrah. ~ DO~IncrementGlobal("Sanpoints","Global",1)~GOTO FindAlz4
-IF ~ ~ THEN REPLY ~ Sandrah, I think you got us into somr trouble here. ~GOTO FindAlz4
+IF ~ ~ THEN REPLY ~ Sandrah, I think you got us into some trouble here. ~GOTO FindAlz4
 END
 
 IF  ~~ THEN BEGIN FindAlz4
