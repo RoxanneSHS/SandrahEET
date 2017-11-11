@@ -3,7 +3,7 @@ BEGIN Alzalig
 IF ~NumTimesTalkedTo(0) !AreaCheck("CVDre3") InMyArea("CVSandr")~ THEN BEGIN FoundAlz
 SAY ~ Have you got the items, slave? Await your punishment for being so late!~
 = ~ Stop! You are not my unfaithful duergar slave. Visitors? Here? ~
-= ~ Minions attack~
+= ~ Minions attack!~
 IF ~ ~ THEN REPLY ~ Oh, they are out of service, I think. I take it you are Alzaligrundel? ~ GOTO FoundAlz1
 END
 
