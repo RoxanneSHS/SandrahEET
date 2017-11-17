@@ -7,7 +7,7 @@ SmallWait(2)
 MoveViewPoint([1369.3292],VERY_FAST)
 MoveToPoint([1369.3292])
 MoveViewPoint([280.1206],VERY_FAST)
-MoveToPoint([280.1206])
+JumpToPoint([280.1206])
 UnhideGUI()
 SetGlobal("RoadFound","GLOBAL",4)
 END
