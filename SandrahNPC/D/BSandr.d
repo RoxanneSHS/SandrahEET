@@ -113,7 +113,7 @@ END
 IF ~~ THEN BEGIN SanWDTempl2
 SAY ~ As we are already standing in front of it there is no reason not to go inside. Do not expect too much, the immense reputation it has throughout the Realms is not because of the building but because of the deeds and knowledge that is emissed from here.~
 = ~ What you will see is just a place of study and a place for healing, nothing different from Candlekeep. Mystra, as you know, is not one to display her power or wealth. ~
-IF~~THEN REPLY ~ Fine, you have no business then to settle here, just pay a visit to old collegues?~ GOTO SanWDTempl3
+IF~~THEN REPLY ~ Fine, you have no business then to settle here, just pay a visit to old colleagues?~ GOTO SanWDTempl3
 END
 
 IF ~~ THEN BEGIN SanWDTempl3
