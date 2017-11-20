@@ -351,7 +351,7 @@ END
 IF~~THEN BEGIN Jencow2
 SAY~ When Githyanki need meal, male will go hunt, female will collect fruit and fungus.~
 =~(Hiss) Is Illithids kept Githyanki for slave work and war but also to devour brain when not useful anymore. (Hiss)~
-=~Githyanki broke chains with Gith lead, now Illithids tremble at rage of my strong kin. (Hiss).~
+=~Githyanki broke chains with Gith lead, now Illithids tremble at rage of Gith strong kin. (Hiss).~
 IF~~THEN REPLY~I guess, I'll just have some vegetables for dinner tonight.~DO~SetGlobal("Jencow","CVROA3",2) ~EXIT
 END
 
