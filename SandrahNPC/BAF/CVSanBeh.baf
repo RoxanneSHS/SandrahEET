@@ -24,6 +24,17 @@ END
 IF
 GlobalGT("SanLive","GLOBAL",2)
 HPLT(Myself,15)
+GlobalLT("Chapter","GLOBAL",18)
+THEN
+RESPONSE #100
+ReallyForceSpellRES("BGSleep",Myself) 
+Wait(3)
+ReallyForceSpell(Myself,HEAL_NO_VISUAL) 
+END
+
+IF
+GlobalGT("SanLive","GLOBAL",2)
+HPLT(Myself,15)
 THEN
 RESPONSE #100
 ReallyForceSpellRES("CVdexin",Myself)
