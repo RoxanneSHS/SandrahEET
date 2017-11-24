@@ -20,7 +20,6 @@ IF~~THEN DO~ GiveGoldForce(1000)
 SetGlobal("T3_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",302)
-SetCutSceneLite(TRUE)
 StartCutScene("CUTBP03")
 Wait(2)
 Deactivate("BPNAJIM")~EXIT
@@ -182,8 +181,7 @@ SAY ~That certainly could have gone worse. You've proven you can stamp out the w
 SetGlobal("T0_B1","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",1)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -194,8 +192,7 @@ SetGlobal("T0_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",2)
 SetGlobal("TIER","GLOBAL",1)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -205,8 +202,7 @@ IF ~~ THEN DO ~GiveGoldForce(75)
 SetGlobal("T1_B1","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",101)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -216,8 +212,7 @@ IF ~~ THEN DO ~GiveGoldForce(200)
 SetGlobal("T1_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",102)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -226,8 +221,7 @@ SAY ~Goodness! The look on their faces when they realized they would never again
 IF ~~ THEN DO ~GiveGoldForce(100)
 SetGlobal("T1_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -237,8 +231,7 @@ IF ~~ THEN DO ~GiveGoldForce(225)
 SetGlobal("T1_B3","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",103)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -247,8 +240,7 @@ SAY ~Uncanny! You seem to have a knack for killing things that are already dead.
 IF ~~ THEN DO ~GiveGoldForce(115)
 SetGlobal("T1_B3","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -258,8 +250,7 @@ IF ~~ THEN DO ~GiveGoldForce(250)
 SetGlobal("T1_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",104)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -268,8 +259,7 @@ SAY ~Well, you may be able to take a hit, but you certainly won't make one fight
 IF ~~ THEN DO ~GiveGoldForce(125)
 SetGlobal("T1_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -280,8 +270,7 @@ SetGlobal("LAST_BATTLE","GLOBAL",105)
 SetGlobal("T1_B5","GLOBAL",-1)
 SetGlobal("TIER","GLOBAL",2)
 GiveGoldForce(300)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -290,8 +279,7 @@ SAY ~Inconceivable! Get out of here, and take your reward with you.~ [BPT1B502]
 IF ~~ THEN DO ~SetGlobal("T1_B5","GLOBAL",-1)
 GiveGoldForce(150)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -301,8 +289,7 @@ IF ~~ THEN DO ~GiveGoldForce(400)
 SetGlobal("T2_B1","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",201)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -311,8 +298,7 @@ SAY  ~After that last contest, I don't know whether to call you a gladiator or a
 IF ~~ THEN DO ~GiveGoldForce(200)
 SetGlobal("T2_B1","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -322,8 +308,7 @@ IF ~~ THEN DO ~GiveGoldForce(450)
 SetGlobal("T2_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",202)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -332,8 +317,7 @@ SAY ~Again, you prove yourself a skilled swatter of insects. Perhaps what you ne
   IF ~~ THEN DO ~GiveGoldForce(225)
 SetGlobal("T2_B2","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -352,8 +336,7 @@ TriggerActivation("ARROWTRAP5",FALSE)
 TriggerActivation("ARROWTRAP6",FALSE)
 TriggerActivation("STINKYTRAP",FALSE)
 TriggerActivation("JERKTRAP",FALSE)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -371,8 +354,7 @@ TriggerActivation("ARROWTRAP5",FALSE)
 TriggerActivation("ARROWTRAP6",FALSE)
 TriggerActivation("STINKYTRAP",FALSE)
 TriggerActivation("JERKTRAP",FALSE)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -382,8 +364,7 @@ IF ~~ THEN DO ~GiveGoldForce(550)
 SetGlobal("T2_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",204)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -392,8 +373,7 @@ SAY ~That was hardly fair, routing your rival's reinforcements. But you have giv
 IF ~~ THEN DO ~GiveGoldForce(275)
 SetGlobal("T2_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -403,8 +383,7 @@ IF ~~ THEN REPLY~What happened to all the alliteration? I hope we haven't broken
 SetGlobal("T2_B5","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("TIER","GLOBAL",3)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -413,8 +392,7 @@ SAY ~Oh, this is no fun! Your neck remains unscathed and your pantaloons are rap
 IF ~~ THEN DO ~GiveGoldForce(800)
 SetGlobal("T3_B1","GLOBAL",-1)
 SetGlobal("LAST_BATTLE","GLOBAL",301)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -424,8 +402,7 @@ SAY ~Oh, this is no fun! Your neck remains unscathed and your pantaloons are rap
 IF ~~ THEN DO ~GiveGoldForce(400)
 SetGlobal("T3_B1","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -459,8 +436,7 @@ IF ~~ THEN DO ~GiveGoldForce(1200)
 SetGlobal("T3_B3","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",303)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -469,8 +445,7 @@ SAY ~Confound it! Once more, you have anticipated my surprise! How does this kee
   IF ~~ THEN DO ~GiveGoldForce(600)
 SetGlobal("T3_B3","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -480,8 +455,7 @@ SAY  ~Heh huh... it appears I have miscalculated once again. I grow tired of thi
 SetGlobal("T3_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
 SetGlobal("LAST_BATTLE","GLOBAL",304)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -490,8 +464,7 @@ SAY ~Heh huh... it appears I have miscalculated once again. I grow tired of this
 IF ~~ THEN DO ~GiveGoldForce(700)
 SetGlobal("T3_B4","GLOBAL",-1)
 SetGlobal("START_BATTLE","GLOBAL",0)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 END
 
@@ -504,7 +477,6 @@ IF WEIGHT #-3 ~ GlobalGT("SanPitsWD","Global",2)Global("T3_B1","GLOBAL",2) Globa
 DO~GiveGoldForce(800)
 SetGlobal("T3_B1","GLOBAL",-1)
 SetGlobal("LAST_BATTLE","GLOBAL",301)
-SetCutSceneLite(TRUE)
-StartCutSceneEx("CUTBP03",FALSE)
+StartCutScene("CUTBP03")
 ~ EXIT
 
