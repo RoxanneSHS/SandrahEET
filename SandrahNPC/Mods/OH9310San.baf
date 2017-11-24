@@ -104,3 +104,22 @@ ActionOverride(Player5,LeaveAreaLUA("OH9360","",[894.693],N))
 ActionOverride(Player6,LeaveAreaLUA("OH9360","",[971.609],N))
 END
 
+IF
+Global("T3_B2","GLOBAL",1)
+Global("START_BATTLE","GLOBAL",4)
+LevelPartyLT(8)
+GlobalGT("SanPitsWD","Global",2) 
+THEN
+RESPONSE #100
+SetGlobal("T3_B2","GLOBAL",2)
+StartCutSceneMode()
+CreateCreature("BPCLAY",[341.372],SSW)  // Clay Golem
+CreateVisualEffect("spsdimpa",[341.372])
+CreateCreature("BPCLAY",[219.576],SSW)  // Clay Golem
+CreateVisualEffect("spsdimpa",[219.576])
+PlaySound("EFF_M31C")
+SetGlobal("START_BATTLE","GLOBAL",5)
+Wait(1)
+EndCutSceneMode()
+END
+
