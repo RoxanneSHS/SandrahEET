@@ -14,8 +14,9 @@ IF~Global("WDFishermen","GLOBAL",1)~THEN WDFish1 Fishplot1
 ==CVSandrJ~That should not be a problem - depending of what the issue is you need help with.~
 ==WDFish2~Our goddess does not answer us anymore, you know.~
 ==WDFish1~Our nets are empty and our prayers are unanswered since five days now.~
-==CVSandrJ~That is not only a problem for you. ~
-=~<CHARNAME>, those fishermen and their collegues play an important role for the supply of this Capitale, my hometown. In the long term their problems become a problem of the city.~
+==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~We should not intrude into this case. If they are punished, they have deserved it.~
+==CVSandrJ~That is not only a problem for the fishermen. ~
+=~<CHARNAME>, those people and their collegues play an important role for the supply of this Capitale, my hometown. In the long term their problems become a problem of the city.~
 END
 ++~Have you done anything to anger Umberlee?~ + Fishplot2
 ++~What has happened that has deprived you of the goodwill of your goddess?~ + Fishplot2
@@ -29,6 +30,7 @@ IF~~THEN WDFish1 Fishplot2
 ==CVSandrJ~Oh, no! The times of such sacrifices are no longer for a modern city like my hometown. We need to find a way to negotiate with Umberlee.~
 ==WDFish2~We'd prefer that too, if we only knew how.~
 ==CVSandrJ~There is a way to summon an Ambassador of the Sea to the shoreline and talk to him about your goddess' wishes.~
+==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~You're silly to think you can manage such a creature!~
 ==WDFish1~See, I told you that Mystra's priests have the knowledge we need in such a case.~
 ==WDFish2~We'll see, my friend, we'll see. So, Sandrah, how will you accomplish that?~
 ==CVSandrJ~We need a bowl of Umberlee and the corresponding scroll for the ritual.~
@@ -58,6 +60,7 @@ IF~ Global("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotS
 ==WDFish2~We may have our fish knifes ready in case the creature is hostile.~
 ==CVSandrJ~No! Please, all of you, sheath your weapons. We want a peaceful negotiation.~
 ==WDFish1~Sandrah is right, Yantl. Our goddess is already angry, we should do anything to bequiet her.~
+==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~This can only end in bloodshed...~
 ==CVSandrJ~Fine, now that is agreed, I will start the recitation.~
 =~*Sandrah starts with a strange incantation in an unknown language...*~DO~SetGlobal("WDFishermen","GLOBAL",6)~EXIT
 
@@ -202,6 +205,7 @@ IF~~ THEN WDFish5 Sirine3
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ (Mumbles to herself) Will it be the god of murder who leads thy hand or the voice of reason, <CHARNAME>.~
 == BYESLI IF~ InParty("Yeslick") ~ THEN ~ Damned creature should stay in their water and not mingle with men. Throw the fish back in the pool and be done with the mess.~
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
+==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~Do not dare to touch Umberlee's child, you fools!~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
 ==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Be *mercyful* and kill her, mercyful towards all she may entangle next.~
 == BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendor, let's enjoy our stay and leave this damp hole, I say.~
