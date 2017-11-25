@@ -55,9 +55,9 @@ IF ~~ THEN  maitrde WDresto4
 == MAITRDE IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Lady Hilath? You know these...people?~
 == HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Of course, Maitre, they have rescued my little boy. It is the party of Lady Sandrah.~
 == MAITRDE ~ Lady Sandrah, oh yes, now I recognise you, my poor old eyes - you were hiding a bit to make a joke with old maitre, haha. Oui oui, come quick, I will lead you to your table.~
-== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Maitre, send their bill to my house tomorrow. I am sorry, I cannot stay with you, <CHARNAME>, I have to take care of my husband's funeral. But you and your friends really have deserved some pleasant treatment, goodnight.~DO~EscapeArea()~
+== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10)~ THEN ~ Maitre, send their bill to my house tomorrow. I am sorry, I cannot stay with you, <CHARNAME>, I have to take care of my husband's funeral. But you and your friends really have deserved some pleasant treatment, goodnight.~DO~MoveBetweenAreas("CVElm1",[1246.650],4)~
 == CORANJ IF ~ GlobalLT("Katcut","GLOBAL",10) InParty("Coran") ~ THEN  ~Mylady, I offer you my arm in this hour of need. Trust me, I am an expert in dealing with dead husbands. ~
-== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10) InParty("Coran") ~ THEN  ~ I thank you so much, dear elf, come along...~
+== HILATH IF ~ GlobalLT("Katcut","GLOBAL",10) InParty("Coran") ~ THEN  ~ I thank you so much, dear elf, come along...~DO~MoveBetweenAreas("CVElm1",[1246.650],4)~
 == MAITRDE IF ~ Global("Katcut","GLOBAL",10) ~ THEN ~ This evening will be on the house, Lady Sandrah, take my excuse, avec plaisir.~
 END
 ++ ~ I hope this place really is worth all this trouble.~ DO ~ ClearAllActions()
