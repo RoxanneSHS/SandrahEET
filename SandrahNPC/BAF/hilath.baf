@@ -18,6 +18,7 @@ See(Player1)
 InParty("CVSandr")
 CombatCounter(0)
 !See([Enemy])
+!AreaCheck("CVWDRE")
 THEN
 RESPONSE #100
 MoveToObject(Player1)
