@@ -111,3 +111,11 @@ ActionOverride("CVSandr",TakePartyItem("CVVACRY"))
 ActionOverride("CVSandr",DestroyItem("CVVACRY"))
 SetGlobal("CleanCrystal","CVElm3",1)
 END
+
+IF
+GlobalGT("SanWDTemplWi","GLOBAL",8)
+InMyArea("CVLeyG")
+THEN
+RESPONSE #100
+ActionOverride("CVLeyG",EscapeAreaDestroy(45))
+END
