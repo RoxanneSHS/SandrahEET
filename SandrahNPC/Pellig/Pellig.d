@@ -23,6 +23,7 @@ IF ~NumTimesTalkedTo(0)~ THEN  Pellig Pellini
 ==Pellig IF~InParty("Dorn")~THEN~Grrowl!!~
 ==BDorn_ IF~InParty("Dorn")~THEN~Aarg, breathe not at me, hellish creature!~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~Not a red dragon you tame, priestess, but has power more than pets of manlings usually have.~
+== IF_FILE_EXISTS C0DrakeJ~InParty("C0Drake") ~ THEN ~ Too many drinks? At least it's not white mice...~ 
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Graceful and scaring. I sense a creature of the Shining Plains.~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ You live in balance with nature and the beasts, Sandrah, just like your mother once did.~
 == BSANDR ~ Let me introduce you to Pelligram, my Black Plainscat, a panther from the Shining Plains of Ormoth. I rescued her as a baby from some hunters who wanted to train and sell her to the fighting pits of Amn. She has become my friend when we grew up together. ~

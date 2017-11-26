@@ -261,7 +261,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == Elminsa IF~ InParty("CVJenlig") ~ THEN ~It is rare that a creature like thee comes to our Prime. My best wish for thine mission, githling.~
 == BSANDR ~ Let me show you the gardens and the view of the endless sea, my friends. ~
 END
-++ ~ Thank you, Elminster, for your warm welcome. This is really a refuge for one who seems not to be too welcome anywhere unless it is paid for. ~
+++ ~ Thank you, Elminster. This is really a refuge for one who seems not to be too welcome anywhere unless it is paid for. ~
 + WelWD2
 
 CHAIN
