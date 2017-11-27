@@ -1174,7 +1174,7 @@ IF ~~THEN BEGIN SanPussMis3
 SAY ~ *Sandrah starts to move towards you, she as well on all fours. She imitates her large cat's pouring while coming nearer alongside Pelligram.*~
 = ~ *Pelligram has reached you and starts to rub her soft snout on your left leg.*~
 = ~ *A moment later you feel another warm mouth on your right leg as Sandrah kneels beside you and starts to caress you in the same catlike way.*~
-IF ~~ THEN REPLY ~ Oh, how lucky I am to be loved by such two wonderful pussycats at once.~ DO ~ SetGlobal("SanPussMis","GLOBAL",2) ~GOTO SanPussMis4
+IF ~~ THEN REPLY ~Oh, how lucky I am to be loved by such two wonderful pussycats at once.~ DO ~ SetGlobal("SanPussMis","GLOBAL",2) ~GOTO SanPussMis4
 IF ~~ THEN REPLY ~Oh, no, not one of your games again, Sandrah, I'm not in the mood.~EXIT
 END
 
@@ -1598,7 +1598,7 @@ IF~~ THEN REPLY ~ Getting to know each other is a good thing, Sandrah, even if I
 END
 
 IF~~ THEN BEGIN FT3-3
-SAY ~ I am my parent's only child and I grew up with my father, as you might already have heard. My mother died in childbirth a year after I was born. I have no own memories of her at all - but still it is as if I had known her so well from all the talks and shared stories I received from others about her.~ 
+SAY ~ I am my parent's only child and I grew up with my father, as you might already have heard. My mother died in childbirth a year after I was born. I have no own memories of her at all - but still it is as if I had known her so well from all the talks and shared stories I received from others about her.~
 IF~~ THEN REPLY ~ You are more fortunate than I am, as I never even heard my mother's name once. Gorion died before he could tell me anything about my heritage. ~  GOTO FT3-4
 IF~~ THEN REPLY ~ But then you must have a brother or sister, unless the newborn died with your mother...Oh, Sandrah, sorry, I should not have brought that up...~ GOTO FT3-4
 END
