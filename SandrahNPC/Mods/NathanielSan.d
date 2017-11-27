@@ -28,7 +28,7 @@ IF WEIGHT #-4~Global("SanNathB","GLOBAL",9)~THEN BFHNat SanHealNath3
 DO~SetGlobal("SanNathB","GLOBAL",10)RealSetGlobalTimer("SanNathInt","LOCALS",2000)~
 ==BSandr~We are not trying to hide the fact that we are lovers, if that is what you mean. Is that a problem for you, Nathaniel?~
 ==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",1)~THEN~Why should it? You have maybe misunderstood me and my questions to you. Not to offend you - you are a wonderful woman, Sandrah...~
-==BSandr IF~GLOBAL("SanRomPath","GLOBAL",1)~THEN~(Laughs) But a woman, still. I did not talk to your possible interest in me but in him.~
+==BSandr IF~GLOBAL("SanRomPath","GLOBAL",1)~THEN~(Laughs) But a woman, still. I did not talk of your possible interest in me but in him.~
 ==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",1)~THEN~Don't worry too much yet, it will all depend on what happens once we find Latimer.~
 ==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~Why should it? Love goes its own ways and makes its own rules~
 ==BSandr IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~(Laughs) Like matching two women at times - or two men.~
