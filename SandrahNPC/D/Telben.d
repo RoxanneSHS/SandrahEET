@@ -17,7 +17,7 @@ END
 
 CHAIN
 IF~~THEN TELBEN 3
-~ I was out here to look for my beehives among the trees when this enormous hord of orcs was suddenly all around. At first they were not seeing me as they were too much occupied with their quarrel among themselves and with their prisoner...~
+~ I was out here to look for my beehives among the trees when this enormous horde of orcs was suddenly all around. At first they were not seeing me as they were too much occupied with their quarrel among themselves and with their prisoner...~
 ==BIMOEN ~ Prisoner...orcs...HENNING!~
 ==TELBEN ~ The RED-HAIRED HEROINE!! That is you...~
 ==BIMOEN ~ Oh, sweet little man, Telben darling, quickest tell me all. You saw my Henning! <CHARNAME>, he is alive! He is here. Quickest where is he now, where have the orcs gone?~
@@ -42,7 +42,7 @@ IF~~THEN TELBEN 4
 ==BIMOEN ~ His trust is not in vain. Henning, we are so near...~
 ==TELBEN~ He slipped something off his finger for me to give it to you, to show you he is well and is setting his hopes on you. ~ DO ~ GiveItemCreate("sanhenri","Imoen2",0,0,0) ~
 ==CVSandrJ ~ So what did the orcs finally decide? Are they here in the cave or gone to the Cloakwood?~
-==TELBEN~ Orcs and decide, haha. No, the two worst of them, the leaders, split up the hord. The larger group, taking your man with them, went off to the North, to meet someone named Tazok for information about the way to the Cloakwood. The smaller group made off to the East, to some caves nearby to desert from their master.~
+==TELBEN~ Orcs and decide, haha. No, the two worst of them, the leaders, split up the horde. The larger group, taking your man with them, went off to the North, to meet someone named Tazok for information about the way to the Cloakwood. The smaller group made off to the East, to some caves nearby to desert from their master.~
 END
 ++ ~ We should then persue the larger group, but we do not know the way to the Cloakwood and this Devern guy any better than the orcs.~ +5
 ++ ~ As we do not know the way to the Cloakwood and this Devern guy any better than the orcs, we should pay the nearby group a visit in their cave to *question* them a bit about their master. There may be some hints of where to continue our search.~+6
