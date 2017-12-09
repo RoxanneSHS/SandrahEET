@@ -1464,7 +1464,7 @@ END
 
 IF ~~ THEN BEGIN Twop3
 SAY ~ There was the mentioning of babies being in the traveller's party that was seen in both cases. But then again I am sure that I was never on the Sword Coast at this age. I only started travelling outside of Waterdeep when I was older and my father took me with him now and then.~
-IF~~THEN REPLY ~ That would mean that you were not one of the children that were seen. But how do they got hold of your cloth. And then there are the hints directly to your interest. I am lost in this confusion.~ GOTO Twop4
+IF~~THEN REPLY ~ That would mean that you were not one of the children that were seen. But how did they get hold of your cloth. And then there are the hints directly to your interest. I am lost in this confusion.~ GOTO Twop4
 IF~ GlobalGT("Mothdream1","GLOBAL",1)~ THEN REPLY~ In my dream of Khalindra there was mentioning of the second child of your mother...~  GOTO Twop5
 END
 
