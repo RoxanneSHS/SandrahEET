@@ -6077,7 +6077,7 @@ END
 EXIT
 
 CHAIN
-IF ~ Global("OrcPrison","GLOBAL",9) Global("ImoSlay1","LOCALS",0)~  THEN CVSANDRJ ImoSlay1
+IF ~ Global("OrcPrison","GLOBAL",9) Global("SanImoFiSl","LOCALS",1)~  THEN CVSANDRJ ImoSlay1
 ~ (You are still shocked about Imoen's strange transformation during the battle.)~
 END
 ++ ~ Imoen, what the hell has happened? What was this creature? A demon? ~ + ImoSlay2
@@ -6085,7 +6085,7 @@ END
 CHAIN
 IF ~~ THEN CVSANDRJ ImoSlay2
 ~ Are you well again, Imoen? Here, let me look at you?~
-DO ~ SetGlobal("ImoSlay1","LOCALS",1) ~ 
+DO ~ SetGlobal("SanImoFiSl","LOCALS",2) ~
 == Bimoen~ I dunno what happened. A miscast spell from Tarnesh's spellbook maybe. I cannot remember anything clearly. 'twas all blood and blurry, n' I guess I killed some orcs with empty hands, huh?~
 == CVSandrJ ~ To me it looked like more than a spell to be found on the pages of a third rate mage's spellbook. But I am not completely sure yet if it really was what I think it could have been.~
 == Bimoen~ I swear I will never do that again, that was really scary. I was so very strong and at the same time so helpless.~
