@@ -4393,6 +4393,7 @@ AreaCheck("BG5100")
 NumInParty(6)
 Global("SanDyResc","GLOBAL",0)
 Global("DynBantTre","LOCALS",0)
+!BeenInParty("dynaheir")
 THEN
 RESPONSE #100
 SetGlobal("DynBantTre","LOCALS",1)
@@ -4403,6 +4404,7 @@ IF
 RealGlobalTimerExpired("DynBantT","GLOBAL")
 Global("SanDyResc","GLOBAL",0)
 !InParty("Dynaheir")
+!BeenInParty("dynaheir")
 AreaCheck("BG5100")
 THEN
 RESPONSE #100
