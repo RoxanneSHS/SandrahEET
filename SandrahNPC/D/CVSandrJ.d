@@ -3234,7 +3234,7 @@ END
 
 IF ~~ THEN BEGIN SammomQ4
 SAY ~ Yes it is very far away. Only seldom a ship makes the journey between the two places. Had it not been with my father's Shard and his magic means of transportation I would never have seen it in my life. It is beautiful, it is peaceful, full of exotic fruits and rare animals, the everblue sea in the warm breeze...~
-IF~~ THEN REPLY ~ Oh stop it. See the dark cloud over there coming from the coastline. If we are lucky it will only rain...ah, the Sword Coast - let us seek some shelter, our talk must wait until later.~ DO ~ SetGlobal("SammomQ","LOCALS",1) StartRainNow() ~ EXIT
+IF~~ THEN REPLY ~ Oh stop it. See the dark cloud over there coming from the coastline. If we are lucky it will only rain...ah, the Sword Coast - let us seek some shelter, our talk must wait until later.~ DO ~ SetGlobal("SammomQ","LOCALS",1) StartRainNow() TakePartyItem("Sanport") DestroyItem("Sanport")~ EXIT
 END
 
 IF ~~ THEN BEGIN SammomQ6
