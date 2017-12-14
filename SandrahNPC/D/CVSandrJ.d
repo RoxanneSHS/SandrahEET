@@ -5136,7 +5136,7 @@ END
 
 INTERJECT AJANTI 0 WDFriends
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Greeting, Ajantis, will you really consider me as a foe? ~
-== AJANTI IF ~ InParty("CVSandr")~ THEN ~ Lady Sandrah, is that really you? Oh, where are my manners, sweet lady, if you are with that party, their goal must be just - or at least not an evil one. ~
+== AJANTI IF ~ InParty("CVSandr")~ THEN ~ Lady Sandrah, is that really you? Oh, where are my manners, mylady, if you are with that party, their goal must be just - or at least not an evil one. ~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Walks up to Ajantis and kisses him on the cheek.) ~
 == AJANTI IF ~ InParty("CVSandr")~ THEN ~ (Ajantis blushes to deep red) M-m-mylady! Please!!~
 == Bimoen IF ~ InParty("Imoen2") InParty("CVSandr")~ THEN ~ (Giggles) Has-been lovers, haha, our cleric has a checkered past...~
