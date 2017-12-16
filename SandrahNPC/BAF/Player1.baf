@@ -3,6 +3,7 @@
 IF
 GlobalLT("Chapter","Global",22)
 Dead("CVSandr")
+InPartyAllowDead("CVSandr")
 Global("ElmRevDau","GLOBAL",0)
 THEN
 RESPONSE #100
@@ -24,6 +25,7 @@ IF
 RealGlobalTimerExpired("ElmRevDauT","GLOBAL")
 Global("ElmRevDau","GLOBAL",1)
 Dead("CVSandr")
+InPartyAllowDead("CVSandr")
 THEN
 RESPONSE #100
 SetGlobal("ElmRevDau","GLOBAL",2)
