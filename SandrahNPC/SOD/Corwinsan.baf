@@ -16,8 +16,34 @@ RESPONSE #100
 IncrementGlobal("SanCorwin","GLOBAL",1)
 END
 
+IF
+Global("EndofBG1","Global",0)
+OR(2)
+Global("Candletrapa","GLOBAL",1)
+Global("Candletrapb","GLOBAL",1)
+InParty(Myself)
+InParty("CVSandr")
+!AreaCheck("BG2609")
+Global("SanSarevCorw","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("SanSarevCorw","Locals",1)
+END
+
+IF
+Global("DauShield","GLOBAL",1)
+!See("Elminster5")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("DauShield","GLOBAL",2)
+END
+
 IF 
+OR(3)
 Global("SanCorwin","GLOBAL",3)
+Global("SanSarevCorw","Locals",1)
+Global("DauShield","GLOBAL",2)
 InParty(Myself)
 InParty("CVSandr")
 !See([ENEMY])
