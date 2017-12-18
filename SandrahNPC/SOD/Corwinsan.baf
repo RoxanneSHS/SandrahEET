@@ -1,4 +1,5 @@
 IF
+GlobalGT("Chapter","GLOBAL",5)
 InParty(Myself)
 InParty("CVSandr")
 GlobalLT("SanCorwin","GLOBAL",3)
