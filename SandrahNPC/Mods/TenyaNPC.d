@@ -1,8 +1,8 @@
-EXTEND_TOP B2#TenyJ 117 #12
+EXTEND_TOP B2#TenyJ 185 #12
 IF~InParty("CVSandr")~THEN REPLY~What do you think of Sandrah?~GOTO SanTeny1
 END 
 
-EXTEND_TOP B2#TenyJ 117 #12
+EXTEND_TOP B2#TenyJ 185 #12
 IF~InParty("CVJenlig")~THEN REPLY~What do you think of Jen'lig?~GOTO JenTeny1
 END 
 
