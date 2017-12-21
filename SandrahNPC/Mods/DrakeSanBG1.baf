@@ -44,6 +44,31 @@ SetGlobal("C0DrakeBassilus","GLOBAL",5)
 END
 
 IF
+GlobalGT("Chapter","Global",4)
+Global("SanMeetC0Drake","Global",4)
+OR(16)
+AreaCheck("BG4801")
+AreaCheck("BG2616")
+AreaCheck("BG3351")
+AreaCheck("BG3304")
+AreaCheck("BG2301")
+AreaCheck("BG0105")
+AreaCheck("BG0116")
+AreaCheck("BG0119")
+AreaCheck("BG0706")
+AreaCheck("BG4003")
+AreaCheck("BG1001")
+AreaCheck("bh0115")
+AreaCheck("bh0107")
+AreaCheck("BG3357")
+AreaCheck("BG0114")
+AreaCheck("CVRoa2")
+THEN
+RESPONSE #100
+SetGlobal("SanMeetC0Drake","Global",5)
+END
+
+IF
 OR(4)
 Global("SanMeetC0Drake","Global",3)
 Global("SanMeetC0Drake","Global",5)

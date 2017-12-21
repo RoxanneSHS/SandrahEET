@@ -32,3 +32,19 @@ DO~SetGlobal("C0DrakeBassilus","GLOBAL",6)~
 ==CVSandrJ IF~GlobalGT("Chapter","Global",3)~THEN~Cyric claims to be my grandfather. But enough of that for now.~
 ==CVSandrJ IF~GlobalLT("Chapter","Global",4)~THEN~Enough of that for now. Maybe once we know each other a bit better.~
 ==C0DrakeJ~Just as mylady commands.~EXIT
+
+CHAIN
+IF~ Global("SanMeetC0Drake","Global",5)~ THEN C0DrakeJ Drink
+~How about sharing a glass of wine, Sandrah, I noticed you like some every now and then.~
+DO~ SetGlobal("SanMeetC0Drake","Global",6) ~
+== BSANDR~ But not that one you chose, Drake! I saw a '69 Plains of Akanal on the menu. A brilliant choice, at least according to lore. I never had the priviledge yet to taste even a lesser vintage from that region. ~
+== C0DrakeJ ~ How it's found its way to this forlorn inn will probably remain one of the mysteries of our life. ~
+== BSANDR ~ Such will remain the famous taste it is supposed to have, Drake, until you start to buy and open it. ~
+== C0DrakeJ ~ (Drake's eyes move to the stately tavern girl who serves them some glasses and a bit of cheese to accompany the wine. His gaze follows her as she wiggles self-consciously away from their table.)~
+== BSANDR ~ You may however choose to leave this precious bottle unopened and get yourself some cheap substitute, if it is just to get drunk.~
+== C0DrakeJ ~ With the very precious things it's difficult, my friend. One can indeed be afraid to cherrish them because of the fear of loss by comsumption. Imagine we drink and enjoy that bottle now. It'll be lost forever while we gain only this little bit of joy that'll be gone by the morning. There's no way to keep it for longer. ~
+== BSANDR ~ And so we have the continuing dream of what it could have been. An imagination that may grow to undeserved expectations but will never be fulfilled. ~
+== C0DrakeJ ~ (His eyes find the tavern wench again who is already flirting with a fat drunken guest at another table.) *Sigh*, is '69 maybe your birth date? ~
+== BSANDR ~ No it is not. For the conaisseur, there was an even better year during that decade. ~
+= ~(With a quick move she has pulled the cork from the bottle and the thick red wine pours into their glasses.) Raise your glass with me, Drake, drink to the joys life holds for us, even if they cannot last forever. Carpe diem.~
+EXIT

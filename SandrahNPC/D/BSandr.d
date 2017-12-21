@@ -2966,7 +2966,7 @@ IF~ Global("SanXanA","GLOBAL",8)~ THEN BSANDR Xanknows3
 DO~ SetGlobal("SanXanA","GLOBAL",9) RealSetGlobalTimer("SanXanT","GLOBAL",1200)~
 == BXANNN ~ How it has found its way to this forlorn inn will probably remain one of the mysteries of our life. ~
 == BSANDR ~ Such will remain the famous taste it is supposed to have, Xan, until you start to move and open it. ~
-== BXANNN ~ (Xan's eyes move to the stately tavern girl that serves them some glasses and a bit of cheese to accompany the wine. His gaze follows her as she wiggles self-consciously away from their table.)~
+== BXANNN ~ (Xan's eyes move to the stately tavern girl who serves them some glasses and a bit of cheese to accompany the wine. His gaze follows her as she wiggles self-consciously away from their table.)~
 == BSANDR ~ You may however choose to leave this precious bottle unopened and get yourself some cheap substitute, if it is just to get drunk.~
 == BXANNN ~ With the very precious things it is difficult, my friend. One can indeed be afraid to cherrish them because of the fear of loss by comsumption. Imagine we drink and enjoy that bottle now. It will be lost forever while we gain only this little bit of joy that will be gone by the morning. There is no way to keep it for longer. ~
 == BSANDR ~ And so we have the continuing dream of what it could have been. An imagination that may grow to undeserved expectations but will never be fulfilled. ~
