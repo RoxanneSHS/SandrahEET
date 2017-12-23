@@ -79,7 +79,7 @@ END
 CHAIN
 IF~~THEN Thalan CVLotwy7
 ~That's what she said. ~
-==CVSandrJ~We need the water and herb before we can go hunting, <CHARNAME>. I can only prepare the antidote within some minutes after we have killed the beast, otherwise the essence will loose its power inside the dead body.~
+==CVSandrJ~We need the water and herb before we can go hunting, <CHARNAME>. I can only prepare the antidote within some minutes after we have killed the beast, otherwise the essence will lose its power inside the dead body.~
 ==Thalan~You seem to mean what you say, my girl. Only - I have never seen one of those beasts you seek all my lifetime.~
 ==CVSandrJ~(Laughs) You have probably never been too deep into the Cloakwood, my friend.~
 =~I am sure we can find one there sooner or later. My only concern is the time pressure we are under.~
