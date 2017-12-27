@@ -19,7 +19,7 @@ DO~ SetGlobal("Formedcloth","GLOBAL",8)~
 == SANWINTH ~ You mean they would take my little sweetie and feed the power dormant in her to grow and grow just to use her as their puppet. Imbeciles.~
 == ELMINSDR~ Thus exactly is their scheming. They are the most dangerous as they will be hardest to control. We can mobilise the paladins of Helm and others against the remaining Bhaal followers. We can easily trick the fanatics in their bloodthirsty destruction, their wrath will not last long. Soon they will find another target. But this last group is mine grief.~
 == GORION ~ And who are those last, friend Elminster? Did the Shard tell you something?~
-== ELMINSDR~ Thou areth right, Gorion, there hath been found an Orloth, a mighty one and one thirsty of power. He hath been expelled from his home country for his sick ambitions already and he lusts for revenge. Beware of him most of all. He has reached the Sword Coast last eve.~
+== ELMINSDR~ Thou areth right, Gorion, there hath been found an Othlor, a mighty one and one thirsty of power. He hath been expelled from his home country for his sick ambitions already and he lusts for revenge. Beware of him most of all. He has reached the Sword Coast last eve.~
 == GORION ~ It will be too dangerous and too obvious to travel to Candlekeep right away.~
 == SANWINTH ~ But it is also impossible to stay here longer. This is the first place to be searched.~
 == ELMINSDR~ Thou shouldst indeed leave imminently. But do not go to Candlekeep just now. Steer a crooked course across the Realms to dust your trails. I will be thine ears and eyes and try to lay false hints as well.~
