@@ -2652,7 +2652,7 @@ IF~AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have s
 
 CHAIN
 IF ~~ THEN BSANDR SanImoBhCh3
-~ (Mumbles) Winthrop's girl, surely not the one taken by the Orloth as that one was a boy.~
+~ (Mumbles) Winthrop's girl, surely not the one taken by the Othlor as that one was a boy.~
 ==Bimoen ~ That's nice isn't it the good men have the good childs and that naughty wizard needed to find him another one.~
 END
 IF~!AreaCheck("BG2626")~THEN REPLY~You seem to think otherwise, Sandrah. I have some thoughts about that myself now. Winthrop called the child *Immi*. Let us continue and talk about it another day.~ EXIT
@@ -6746,16 +6746,16 @@ IF ~ Global("DYBant","GLOBAL",18)~ THEN BSANDR SanDywinsk
 ~ We not only love the same Bhaalspawn, Dynaheir, we are also <PRO_HISHER> protectors and advisors.~
 DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)~
 == BDYNAH ~ I am in agreement with these words, Sandrah, 'tis still my mission, now even more as I protect my lover by it.~
-== BSANDR~ Then we should try to join our forces to find out about the Orloth who has hunted <CHARNAME> once and is now hunting <PRO_HIMHER> again - and you.~
+== BSANDR~ Then we should try to join our forces to find out about the Othlor who has hunted <CHARNAME> once and is now hunting <PRO_HIMHER> again - and you.~
 == BDYNAH ~ His name is Winsky Perorate, once one of the most powerful wizards of my homeland.~
 == BSANDR~ Is he part of the reasons you came to the Sword Coast then, Dynaheir?~
 == BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come here.~
 = ~ I hath told thee of my dajemma and that it had ended by our secret mission being betrayed to Thay. One of the traitors in this widespread conspiracy against Rashemen itself was Winsky.~
 == BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expell him?~
-== BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Orloth in the end.~
+== BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Othlor in the end.~
 == BSANDR ~ Still it may be his perception, that your presence here today is connected to the events back then.~
 == BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesised in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
-== BSANDR ~ Only, Dynaheir, the threat is no longer against Rashemen alone, as Sarevok is no longer really under control of the Orloth as it appears, but the threat is against all of the Realms and maybe beyond.~
+== BSANDR ~ Only, Dynaheir, the threat is no longer against Rashemen alone, as Sarevok is no longer really under control of the Othlor as it appears, but the threat is against all of the Realms and maybe beyond.~
 == BDYNAH ~ (The Hathran puts her arm around the younger woman's shoulder and they continue to walk entwined, with Sandrah's head resting lightly on Dynaheir's arm.)~
 EXIT
 
@@ -6764,13 +6764,13 @@ IF ~ Global("DYBant","GLOBAL",48)~ THEN BSANDR SanDywinskPast
 ~ We not only love the same Bhaalspawn, Dynaheir, we are also <PRO_HISHER> protectors and advisors.~
 DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)~
 == BDYNAH ~ I am in agreement with these words, Sandrah, 'tis still my mission, now even more as I protect my lover by it.~
-== BSANDR~ Then we should try to join our forces to find out about the Orloth who has hunted <CHARNAME> - and you.~
+== BSANDR~ Then we should try to join our forces to find out about the Othlor who has hunted <CHARNAME> - and you.~
 == BDYNAH ~ His name was Winsky Perorate, once one of the most powerful wizards of my homeland.~
 == BSANDR~ Was he part of the reasons you came to the Sword Coast then, Dynaheir?~
 == BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come westbound.~
 = ~ I hath told thee of my dajemma and that it had ended by our secret mission being betrayed to Thay. One of the traitors in this widespread conspiracy against Rashemen itself was Winsky.~
 == BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expell him?~
-== BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Orloth in the end.~
+== BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Othlor in the end.~
 == BSANDR ~ Still it may have been his perception, that your presence at Baldur's Gate was connected to the events back then.~
 == BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesised in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
 == BSANDR ~ Only, Dynaheir, the threat against Rashemen by Winski has disappeared, but the threat of the Bhaalspawns against all of the Realms and maybe beyond has grown.~
@@ -7057,7 +7057,7 @@ IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_Regis2 Searchcatti3
 
 CHAIN
 IF ~ Global("Formedcloth","GLOBAL",8) ~ THEN BSANDR ImoWinBabe
-~ Gorion and Winthrop were the ones then, and that Orloth was hunting them.~
+~ Gorion and Winthrop were the ones then, and that Othlor was hunting them.~
 DO ~ SetGlobal("Formedcloth","GLOBAL",9)~
 == Bimoen IF  ~ InParty("Imoen2")~ THEN ~Puffguts? That was my ol' Puffguts with that other little baby girl. My-o! Now I see... ~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ See what, Imoen?~
@@ -7066,8 +7066,8 @@ DO ~ SetGlobal("Formedcloth","GLOBAL",9)~
 == Bimoen IF  ~ InParty("Imoen2")~ THEN ~ Yes - no - I mean that he took me and was always so good to me after he had lost her. ~
 ==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ Now I am lost, Imoen.~
 == Bimoen IF  ~ InParty("Imoen2")~ THEN ~ Don't you see how it all fits. He was the clever disguised Harper. Ev'rybody goes through the shop and the inn when at Candlekeep. The shopkeeper sees and hears everything. He takes the poor Bhaalspawn girl and knows he can protect her as nobody can come near without his seeing.~
-=~ Just remember, they told us we did not come together to Candlekeep, Puffguts 'n' me come later. It is true, later after he lost the baby in those raids or to that nasty Orloth. But with his good heart he found another orphan girl that needed his help. Poor lil' Imoen.~
-==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ That would explain some things, Imoen. Especially why there was no second Bhaalspawn at Candlekeep. Hm, and the Orloth's remark once about the cloth being some evidence. Maybe evidence that in the end he got one of the babies. But was it Khalindra's one? We do not know.~
+=~ Just remember, they told us we did not come together to Candlekeep, Puffguts 'n' me come later. It is true, later after he lost the baby in those raids or to that nasty Othlor. But with his good heart he found another orphan girl that needed his help. Poor lil' Imoen.~
+==BSANDR IF  ~ InParty("Imoen2")~ THEN ~ That would explain some things, Imoen. Especially why there was no second Bhaalspawn at Candlekeep. Hm, and the Othlor's remark once about the cloth being some evidence. Maybe evidence that in the end he got one of the babies. But was it Khalindra's one? We do not know.~
 END
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ So Winthrop carried a little baby girl at that time and Gorion the boy. We know who that boy is and what became of him. Maybe my dreams have told me already the truth. It was Khalindra's child. It was me! ~ EXIT
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I am sure now, Sandrah. One of the two children was me. We could not see which one was with Gorion. Maybe my dreams have told me already the truth. It was Khalindra's child. It was me! ~ EXIT

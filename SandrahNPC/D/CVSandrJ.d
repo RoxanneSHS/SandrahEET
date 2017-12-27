@@ -1317,7 +1317,7 @@ SAY ~ Yes and no. We have to follow any hint we find here and now. But it will b
 IF ~~ THEN REPLY ~ ..is that what we are fighting? ~ EXTERN CVSANDRJ Winsk1Dis7
 END
 
-//  Orloth Scout
+//  Othlor Scout
 IF ~ Global("SanOrDiId","GLOBAL",2) ~ THEN BEGIN SanOrDiId1
 SAY ~ This sheds some light on recent encounters, but maybe not yet enough...~
 IF ~~ THEN REPLY ~ You have deciphered that strange diary, Sandrah?~ GOTO SanOrDiId2
@@ -1333,18 +1333,18 @@ END
 
 IF ~~ THEN BEGIN SanOrDiId3
 SAY ~ Very good, <CHARNAME>.~
-= ~ The scout who carried and wrote this journal was from Rashemen. He mentions his master, an Orloth. (You bite on your lips not to interrupt Sandrah.)~
+= ~ The scout who carried and wrote this journal was from Rashemen. He mentions his master, an Othlor. (You bite on your lips not to interrupt Sandrah.)~
 = ~ The death of this man and the last entries into his diary date to the time roughly around our birth, at the end of the Time of Troubles.~
-= ~ In the mission from the Orloth, the man was following a group of travellers across the Sword Coast. Those travellers where trying to cover their path because of something they were carrying.~
-IF~GlobalGT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ I will be damned if this Orloth is not the same one that made his strange assault on us!~ GOTO SanOrDiId4
-IF~GlobalLT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ An Orloth, a male Rashemen mage? How does he fit into the picture? ~ GOTO SanOrDiId4
+= ~ In the mission from the Othlor, the man was following a group of travellers across the Sword Coast. Those travellers where trying to cover their path because of something they were carrying.~
+IF~GlobalGT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ I will be damned if this Othlor is not the same one that made his strange assault on us!~ GOTO SanOrDiId4
+IF~GlobalLT("WinskApp1","GLOBAL",5) ~THEN REPLY ~ An Othlor, a male Rashemen mage? How does he fit into the picture? ~ GOTO SanOrDiId4
 END
 
 IF ~~ THEN BEGIN SanOrDiId4
 SAY ~ Let me tell you the rest of it first, before we try to analyse things.~
 = ~ The travellers party was attacked by bandits before the scout could do anything more. There was also a drow priestess at the scene of the ambush, although probably just another witness of the scene. However, the scout tried to hide in some tunnels, which were the Ulcaster ruins and he died down there, killed by the monsters we have met down there. This is where the diary ends.~
-IF ~ PartyHasItem("Sanwi1") ~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and what this Orloth was after...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
-IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. And this Orloth is still around and after the creatures he was pursuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
+IF ~ PartyHasItem("Sanwi1") ~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and what this Othlor was after...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
+IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. And this Othlor is still around and after the creatures he was pursuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 IF ~~ THEN REPLY ~ Ghosts of the past. But my studies of the scripts at Candlekeep have taught me, that our present events are always connected to what has been before us...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 END
 
@@ -2161,7 +2161,7 @@ IF ~~ THEN REPLY ~ One thing is strange however. He sees himself as my brother a
 END
 
 IF ~~ THEN BEGIN SanTamoko4
-SAY ~ One of his many errors. He is alone in his lust for power, as we heard from poor Tamoko, nobody has ever helped him to discover the true nature of his heritage. He only had this Orloth Winski that fed him with just the terms about the evil aspect of being a Bhaalspawn. And the only interest he has in his siblings is to eliminate them as possible rivals to the Throne of Bhaal.~
+SAY ~ One of his many errors. He is alone in his lust for power, as we heard from poor Tamoko, nobody has ever helped him to discover the true nature of his heritage. He only had this Othlor Winski that fed him with just the terms about the evil aspect of being a Bhaalspawn. And the only interest he has in his siblings is to eliminate them as possible rivals to the Throne of Bhaal.~
 IF ~~ THEN REPLY ~ You sound as if you somehow understand and forgive him.~ GOTO  SanTamoko5
 IF ~~ THEN REPLY ~ You think, I may have ended in his place under different circumstances. Does that make you sound so forgiving?~ GOTO  SanTamoko5
 END
@@ -3824,8 +3824,8 @@ IF ~ Global("Formedcloth","GLOBAL",9) ~ THEN REPLY ~ I am a Bhaalspawn then. Hen
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
 IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~ GOTO PidBhaal13
-IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
-IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
+IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
+IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~ Nevermind.~EXIT
 END
@@ -4123,7 +4123,7 @@ IF ~~ THEN REPLY ~ And this Sarevok was one of them?~ GOTO BSHunt3
 END
 
 IF ~~ THEN BEGIN BSHunt3
-SAY ~ Yes. A young man, about your own age, so born at the Time of Troubles when Bhaal spread his seed over Faerun. He showed enourmous physical and mental powers early on. But then all of a sudden he disappeared without a trace. My suspicion is now, that this Orloth we encountered finally found him.~
+SAY ~ Yes. A young man, about your own age, so born at the Time of Troubles when Bhaal spread his seed over Faerun. He showed enourmous physical and mental powers early on. But then all of a sudden he disappeared without a trace. My suspicion is now, that this Othlor we encountered finally found him.~
 IF ~~ THEN REPLY ~ So like you told earlier, this Sarevok and his Bhaal powers are misused by this strange Rashemen wizard - but how does that fit to Gorion's death, his hunting us and finally the whole iron crisis?~ GOTO BSHunt4
 END
 
@@ -4133,12 +4133,12 @@ IF ~~ THEN REPLY ~ Why?~ GOTO BSHunt5
 END
 
 IF ~~ THEN BEGIN BSHunt5
-SAY ~ Because it leads me to believe that Sarevok has rather used the Orloth than vice versa. He has learned all he could from this wizard of significant power, but now he is using what he has learned for his own purpose.~
+SAY ~ Because it leads me to believe that Sarevok has rather used the Othlor than vice versa. He has learned all he could from this wizard of significant power, but now he is using what he has learned for his own purpose.~
 IF ~~ THEN REPLY ~ But what might that purpose be and how does it explain our role in it?~  GOTO BSHunt6
 END
 
 IF ~~ THEN BEGIN BSHunt6
-SAY ~ The prophesies of Alaundo, <CHARNAME>! Sarevok attempts to fulfil them, with himself rising to Bhaal's throne. Remember the Orloth's warning about the *rising god*. This crisis and the possible war with Amn, that will be a bloodshed to feed the growing power of the God of Murder.~
+SAY ~ The prophesies of Alaundo, <CHARNAME>! Sarevok attempts to fulfil them, with himself rising to Bhaal's throne. Remember the Othlor's warning about the *rising god*. This crisis and the possible war with Amn, that will be a bloodshed to feed the growing power of the God of Murder.~
 IF ~~ THEN REPLY ~ Gorion's death, my dreams about rivers of blood. For whatever reason he seems to know that I would be the one to try and stop him. But I guess he doesn't know that I have you by my side in this.~DO ~ SetGlobal("BSHunt1","LOCALS",1)~EXIT
 END
 
@@ -4150,18 +4150,18 @@ END
 
 IF~~THEN BEGIN SanWinskApp21
 SAY ~ Perfectly right. Those children were special in their heritage and their abilities. ~
-IF ~~ THEN REPLY ~ Bhaalspawns, destined to grow in them the powers of the God of Murder. Your father and his friends protected them - as we know him, he did it to prevent them being mistreated and misused for an evil purpose. A purpose like that one of the Orloth.~ GOTO SanWinskApp22
+IF ~~ THEN REPLY ~ Bhaalspawns, destined to grow in them the powers of the God of Murder. Your father and his friends protected them - as we know him, he did it to prevent them being mistreated and misused for an evil purpose. A purpose like that one of the Othlor.~ GOTO SanWinskApp22
 END
 
 IF~~THEN BEGIN SanWinskApp22
-SAY ~ Again perfectly right. But the Orloth did not get them, so much he confessed to my bluff. They came safely to Candlekeep. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
-= ~ So the Orloth in the end succeeded to find Sarevok to raise and train him to his liking. At least initially. Sarevok is behind the events we are currently dealing with.~
+SAY ~ Again perfectly right. But the Othlor did not get them, so much he confessed to my bluff. They came safely to Candlekeep. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
+= ~ So the Othlor in the end succeeded to find Sarevok to raise and train him to his liking. At least initially. Sarevok is behind the events we are currently dealing with.~
 IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWinskApp23
 IF ~~ THEN REPLY ~ And he may well be the armoured figure that killed Gorion?~ GOTO SanWinskApp23
 END
 
 IF~~THEN BEGIN SanWinskApp23
-SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
+SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Othlor is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
 IF ~~ THEN REPLY ~ So you knew it - my mission and your mission are in the end the same. You found the spawn your father had protected to lead him against the one who rises to follow his godly father. Only a Bhaalspawn has the power to defeat another Bhaalspawn. You found me!~ GOTO SanWinskApp24
 END
 
@@ -4179,18 +4179,18 @@ END
 
 IF~~THEN BEGIN SanWinskApp31
 SAY ~ Perfectly right. Those children were special in their heritage and their abilities.~
-IF ~~ THEN REPLY ~ Bhaalspawns, destined to grow in them the powers of the God of Murder. Your father protected them - as we know him, he did it to prevent them being mistreated and misused for an evil purpose. A purpose like that one of the Orloth.~ GOTO SanWinskApp32
+IF ~~ THEN REPLY ~ Bhaalspawns, destined to grow in them the powers of the God of Murder. Your father protected them - as we know him, he did it to prevent them being mistreated and misused for an evil purpose. A purpose like that one of the Othlor.~ GOTO SanWinskApp32
 END
 
 IF~~THEN BEGIN SanWinskApp32
-SAY ~ Again perfectly right. But the Orloth did not get them, so much he confessed to my bluff. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
-= ~ So the Orloth in the end succeeded to find his spawn and to raise and train him to his liking. At least initially. We know now that it is this spawn that is behind the events we are currently dealing with.~
+SAY ~ Again perfectly right. But the Othlor did not get them, so much he confessed to my bluff. But somehow he got possession of another one, Sarevok. Mind that the God of Murder has spread his spawn widely to make sure enough of his blood would survive.~
+= ~ So the Othlor in the end succeeded to find his spawn and to raise and train him to his liking. At least initially. We know now that it is this spawn that is behind the events we are currently dealing with.~
 IF ~~ THEN REPLY ~ And he is the armoured figure that killed Gorion!~ GOTO SanWinskApp33
 IF ~~ THEN REPLY ~ And he may well be the armoured figure that killed Gorion?~ GOTO SanWinskApp33
 END
 
 IF~~THEN BEGIN SanWinskApp33
-SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Orloth is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
+SAY ~ That is very likely the case. As well as the fact that he is not doing what his mentor had expected him to do. The powers of Bhaal have taken on their own shape, the Othlor is no longer his master. Things have gone out of control, but not only for this misguided wizard. This Bhaalspawn has become a threat for the whole Sword Coast by now. And we are in the middle of events - and maybe the only ones who can still stop him.~
 IF ~~ THEN REPLY ~ So you knew it - my mission and your mission are in the end the same. You found the spawn your father had protected to lead him against the one that rises to follow his godly father. Only a Bhaalspawn has the power to defeat another Bhaalspawn. You found me!~ GOTO SanWinskApp34
 END
 
@@ -4342,8 +4342,8 @@ IF ~ Global("GithHint","LOCALS",0) Global("SanGithVS","GLOBAL",8)~ THEN REPLY ~ 
 IF~ Global("SanEdLoveBoy","LOCALS",2)~ THEN REPLY ~ Your former hate for the red wizard Edwin seems to have changed quite a bit, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanEdLoveBoy20
 IF ~Global("SanMysRise","GLOBAL",2)~ THEN REPLY ~ Sandrah, are you familiar with the studies of Narvantial of Soubar?~ GOTO SanMysSucc1
 IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~ GOTO PidBhaal13
-IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
-IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
+IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
+IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
 IF ~ Global("SanNobility","LOCALS",0) AreaType(CITY) ~ THEN REPLY ~ As a child from a metropole's society I wonder how you feel about nobility and ranks and all such.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanSociety1
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~(You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
 IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
@@ -4365,7 +4365,7 @@ IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPL
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
-IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Orloth's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanWinskApp20
+IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanWinskApp20
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanBLine1
 IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~Do you still think Caelar Argent may be a bhaalspawn?~DO~SetGlobal("SanDBdoubt","LOCALS",1)~GOTO SanDBIsShe1
 IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
@@ -4706,8 +4706,8 @@ END
 
 IF~~ THEN BEGIN SanImoBhaCon3
 SAY ~ A girl of about your own age. A girl sent off with Winthrop to Candlekeep in the same way you were sent with Gorion. No real evidence that this girl had not reached Candlekeep at the same time that you reached there with Gorion.~
-IF ~GlobalLT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Orloth has not got her.~ GOTO SanImoBhaCon4
-IF ~GlobalGT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Orloth has not got her.~ GOTO SanImoBhaCon5
+IF ~GlobalLT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon4
+IF ~GlobalGT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon5
 END
 
 
