@@ -9,18 +9,6 @@ Continue()
 END
 
 IF
-Global("SanImoMake","bg2700",0)
-OR(2)
-Global("Imoenclasschoice","GLOBAL",2)
-Global("Imoenclasschoice","GLOBAL",3)
-THEN
-RESPONSE #100
-ActionOverride("IMOEN2",DestroySelf())
-SetGlobal("SanImoMake","bg2700",1)
-Continue()
-END
-
-IF
 Global("CVSandrExists","bg2700",0)
 THEN
 RESPONSE #100
@@ -32,21 +20,32 @@ Continue()
 END
 
 IF
-Global("SanImoMake","bg2700",1)
+Global("SanImoMake","bg2700",0)
 Global("Imoenclasschoice","GLOBAL",2)
 THEN
 RESPONSE #100
 SetGlobal("SanImoMake","bg2700",2)
-CreateCreature("IMOENM",[3140.3681],12)
+CreateCreature("IMOEN0M",[3140.3681],12)
 END
 
 IF
-Global("SanImoMake","bg2700",1)
+Global("SanImoMake","bg2700",0)
 Global("Imoenclasschoice","GLOBAL",3)
 THEN
 RESPONSE #100
 SetGlobal("SanImoMake","bg2700",2)
-CreateCreature("IMOEND",[3140.3681],12)
+CreateCreature("IMOEN0D",[3140.3681],12)
+END
+
+IF
+Global("SanImoMake","bg2700",0)
+OR(2)
+Global("Imoenclasschoice","GLOBAL",1)
+Global("Imoenclasschoice","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("SanImoMake","bg2700",2)
+CreateCreature("IMOEN1",[3140.3681],12) 
 END
 
 IF
