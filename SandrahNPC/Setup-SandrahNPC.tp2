@@ -8121,16 +8121,16 @@ CVGiran   NONE
 Pellig3   NONE~
 UNLESS ~CVSandr~
 
-COPY_EXISTING ~Imoenm.cre~ ~override~
+COPY_EXISTING ~Imoen0m.cre~ ~override~
   ADD_KNOWN_SPELL ~SPWI104~ #0 ~wizard~
 
-COPY_EXISTING ~Imoenm.cre~ ~override~
+COPY_EXISTING ~Imoen0m.cre~ ~override~
   ADD_MEMORIZED_SPELL ~SPWI104~ #0 ~wizard~ ( 1 )
 
-COPY_EXISTING ~Imoend.cre~ ~override~
+COPY_EXISTING ~Imoen0d.cre~ ~override~
   ADD_KNOWN_SPELL ~SPWI104~ #0 ~wizard~
 
-COPY_EXISTING ~Imoend.cre~ ~override~
+COPY_EXISTING ~Imoen0d.cre~ ~override~
   ADD_MEMORIZED_SPELL ~SPWI104~ #0 ~wizard~ ( 1 )
   
 COPY_EXISTING ~baldur.gam~ ~override~
