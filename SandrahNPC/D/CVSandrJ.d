@@ -3633,7 +3633,7 @@ END
 IF~~THEN BEGIN  PidBhaal14
 SAY~ Yes, but your dreams also included Gorion and what he had given to you. The means to withstand this pulling, and the vision of a life where you use your powers against that evil. That is the other face of your heritage, the one that your foe are not able to see.~
 IF ~~ THEN REPLY ~ They will see it soon enough - but it will be too late for them by then.~ GOTO PidBhaal15
-IF ~~ THEN REPLY ~ They truth of that assumption is yet to ne seen.~ GOTO PidBhaal15
+IF ~~ THEN REPLY ~ They truth of that assumption is yet to be seen.~ GOTO PidBhaal15
 END
 
 IF~~THEN BEGIN  PidBhaal15
