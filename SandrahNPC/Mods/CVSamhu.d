@@ -21,7 +21,7 @@ IF~~THEN CVSAMHU hints2
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You must hate him worse than I do for what he did to me.~
 ==SHARTJ IF~InParty("SHARTEEL")~ THEN~That's nothing compared to what he did to me, the scoundrel who copulated with that whore who called herself my mother.~
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, you suffer indeed worse than me.~
-==BDCorwiJ IF~InParty("Corwin")~ THEN~ Our suspicions were correct, damn it. That weasel Dorsan, Scar already suspected him. I didn't trust myself in his case, this man just turns my stomach. Good to know that my guts told me the truth.~
+==BDCorwiJ IF~InParty("Corwin")~ THEN~ Our suspicions were correct, damn it. That weasel Dosan, Scar already suspected him. I didn't trust myself in his case, this man just turns my stomach. Good to know that my guts told me the truth.~
 ==CVSAMHU IF~InParty("Corwin")~ THEN~ You're Schael Corwin...cough...make sure Scar's warned...~
 ==CVSandrJ ~You should not lose more strength in talking, friend. Sleep now. (She casts *sleep* on her patient.)~
 ==CVSAMHU~ Beware of the traitors...*snooze*~ DO~ DestroySelf()~EXIT

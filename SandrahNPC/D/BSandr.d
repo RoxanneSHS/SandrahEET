@@ -6230,13 +6230,13 @@ IF ~ Global("SanSharTown","GLOBAL",2) ~ THEN BSANDR SanSharTown1
 ~  How do you feel to be back in your hometown, dear?~
 DO ~ SetGlobal("SanSharTown","GLOBAL",3)~
 == BSHART~ Bah, *hometown*! Too bad those bandits haven't raided it and taught those pathetic Fists an enduring lesson. Now we need to do it.~
-== BSANDR ~ Chances are that we meet a certain Angelo Dorsan while in town.~
+== BSANDR ~ Chances are that we meet a certain Angelo Dosan while in town.~
 == BSHART~ The worst swine of them all. I tell you what, pussycat, I think I have changed quite a bit since I am in this group. Today, if I'd meet this bastard who calls himself my father I can just laugh him in the face. He has become so small and irrelevant to me that I don't care anymore to hate him.~
 == BSANDR ~ That is good to hear. Your inner strength has built up to the physical then. This way we can also avoid some confrontations with the Flaming Fist. Please think of it. <CHARNAME>'s quest requires that we do not attract too much attention - at least not yet.~
 == BSHART~ Suits me well, Sandrah. Revenge is a dish to be served cold. We will built up the trap for our foe and all that support them in cold blood and unescapable deadly. When the hour comes for them to realize, it will be too late.~
 = ~ I tell you something, pussycat, I bet when we reveal the whole plot we will find the bloody idiot who boasts to be my father among our catch.~
 == BSANDR ~ Why do you think so? Is there anything you know that might be helpful to us?~
-== BSHART~ No, I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dorsan. Imagine his face when the whole thing is shattered by no other that his spoiled, useless daughter, HA!~
+== BSHART~ No, I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan. Imagine his face when the whole thing is shattered by no other that his spoiled, useless daughter, HA!~
 == BSANDR ~ HA! ~
 EXIT
 
@@ -6331,7 +6331,7 @@ DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
 == BSANDR ~ Something must have been in him after all. He made it far - but not as far as his daughter.~
 == BSHART ~ He made the wrong choices, that idiot, again and again in his life. I made the right one, thanks to you and to <CHARNAME>.~
 == BSANDR ~ Do you pity him?~
-== BSHART ~ No...I am just glad this episode is over now. Angelo Dorsan no longer looms over me, I am free from that ghost now.~
+== BSHART ~ No...I am just glad this episode is over now. Angelo Dosan no longer looms over me, I am free from that ghost now.~
 == BSANDR ~ A new life is ahead of you, wildcat, the one you have already begun for some time.~
 == BSHART ~ You say it, pussycat, this is exactly how I feel about it.~
 ==BSHART ~ Loverboy, move your ass over here, your wife is in need of you, just in case you haven't noticed yet, you dolt.~
@@ -6348,7 +6348,7 @@ DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
 == BSANDR ~ Something must have been in him after all. He made it far - but not as far as his daughter.~
 == BSHART ~ He made the wrong choices, that idiot, again and again in his life. I made the right one, thanks to you and to <CHARNAME>.~
 == BSANDR ~ Do you pity him?~
-== BSHART ~ No...I am just glad this episode is over now. Angelo Dorsan no longer looms over me, I am free from that ghost now.~
+== BSHART ~ No...I am just glad this episode is over now. Angelo Dosan no longer looms over me, I am free from that ghost now.~
 == BSANDR ~ A new life is ahead of you, wildcat, the one you have already begun for some time.~
 == BSHART ~ You say it, pussycat, this is exactly how I feel about it.~EXIT
 
