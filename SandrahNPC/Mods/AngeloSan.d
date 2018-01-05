@@ -83,7 +83,7 @@ DO~SetGlobal("AngelinWD","LOCALS",2) ~
 ==Badangel~Does he know my background, you think?~
 ==BSandr~SHE knows much more than that, much more than you would like anyone to know of you.~
 ==Badangel~She? Someone I knew in the past.~
-==BSandr~Her name is Shar-Teel Dorsan.~
+==BSandr~Her name is Shar-Teel Dosan.~
 ==Badangel~Eh...she..is..commander..of..the..Waterdeep..Forces??...Chief, I best stay outside while you get into the lioness' den.~
 END
 ++~It's time to face the facts, Angelo. Be a man and face her, ask her for forgiving and such.~EXIT
