@@ -28,7 +28,7 @@ EXIT
 CHAIN
 IF ~~ THEN  CVSHPRI NorWoo3
 ~ You fail to understand, <PRO_RACE>, I am to prevent the return of Ghotal.~
-== BSANDR ~ Surely not in the interest of peace with the Sword Coast. Were you among the ones that deceived Ghotal in his final battle? Is that why you fear his return?~
+== BSANDR ~ Surely not in the interest of peace with the Sword Coast. Were you among the ones who deceived Ghotal in his final battle? Is that why you fear his return?~
 == CVSHPRI~ Again you try to intrude into business that is not yours. Is it not enough that our common goal is to prevent Ghotal's return? I am not interested in your motives and I will not reveal mine.~
 == BSANDR ~ This answer was as good as a *yes*. And it means we do not trust you. You have deceived Ghotal in the crucial moment and you will deceive us if it suits you.~
 END
