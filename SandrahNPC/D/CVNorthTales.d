@@ -50,7 +50,7 @@ END
 INTERJECT_COPY_TRANS NTORDOL 10 SanHint17
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ With that candle a little bit more of light could be shed into mysterious happenings.~
 == NTORDOL IF ~ InParty("CVSandr")~ THEN ~Little priestess, you seem to be well capable of finding your part of the truth and counselling this group on its way without my humble assistance.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I would not have learned my lessons well, if I would not knew how to listen to any sage advise.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I would not have learned my lessons well, if I would not know how to listen to any sage advise.~
 == NTORDOL IF ~ InParty("CVSandr")~ THEN ~ Of that I have none for the future goddess to rise...Let me be off now quickly.~
 END
 
