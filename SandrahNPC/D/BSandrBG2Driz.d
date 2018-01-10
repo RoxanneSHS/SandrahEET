@@ -145,12 +145,12 @@ IF~ Global("SanDrizBG2","LOCALS",1)~ THEN BSANDR SanDriBG2Plot1
 ~ How did you fare since we parted, my sweet dark hero? It has been an eternity, it seems to me (sigh).~
 DO~ SetGlobal("SanDrizBG2","LOCALS",2)~
 == Driz2J ~ Many fights and many victories, just like yourself, my sweet apprenticess. And another meeting with my arch enemies.~
-== BSANDR~ Entreri and Jarlaxle, they are not dead and defeated then? Please tell me, my love.~
+== BSANDR~ Entreri and Jarlaxle, they are not dead and defeated then? Please tell me, Drizzt.~
 == Driz2J ~ They are not dead, and neither am I, as you see and feel yourself. But hopefully it is finished by now. Entreri and me had a final battle and he killed me - or so he thinks. In truth, a mage had interferred our battle and, of all people, Jarlaxle ressurected me afterwards.~
 == BSANDR~ That is strange - and wonderful, as I have you by my side once again. Do you have any idea why the drow thief should have acted like that?~
 == Driz2J ~ Not at all. At least I am free now from from Entreri's constant persuit.~
 == BSANDR~ Hm, but at which price, my dear? I cannot imagine that the Bregan D'aerthe do anything for free. We must be very careful as to what Jarlaxle may demand of you some day.~
-== Driz2J ~ Are we not always careful, sweet Sandrah? It is our common fate to sleep with one eye open, constantly under the suspicious glance of our foes. Does it prevent us from enjoying the moments together that are granted to us?~
+== Driz2J ~ Are we not always careful, Sandrah? It is our common fate to sleep with one eye open, constantly under the suspicious glance of our foes. Does it prevent us from enjoying the moments together that are granted to us?~
 == BSANDR~ You are right, Drizzt. How can I neglect my duties to my lover so! It will be corrected this very instant...(Her armour and shield fly to the ground as the attacks the willing drow fighter with all her passion.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
 CHAIN
@@ -168,7 +168,7 @@ EXIT
 
 CHAIN
 IF~Global("SanDrowHerD","GLOBAL",1)~ THEN BSandr SanQilDri
-~Is something wrong, my love?~
+~Is something wrong, Drizzt?~
 DO~SetGlobal("SanDrowHerD","GLOBAL",2) SetGlobal("SanDrowHerV","GLOBAL",2) SetGlobal("SanDrowHerY","GLOBAL",2)~
 ==Driz2J ~ I am confused because I always thought that you were a friend to those drow who despise the wickedness of the Underdark - and a friend of mine.~
 ==BSANDR ~And what have I done that makes you think I am not?~
@@ -177,7 +177,7 @@ DO~SetGlobal("SanDrowHerD","GLOBAL",2) SetGlobal("SanDrowHerV","GLOBAL",2) SetGl
 =~ Qilue like her elder sisters was born to a human couple, as you know. Her father had killed her mother when he had found out that she had been possessed by Mystra, the goddess of magic. Mystra, seeking to keep the child alive, came upon a pregnant drow priestess of Eilistraee whose child had died in her womb, and made a pact with Eilistraee that served both their intentions. ~
 ==Driz2J ~  This is the history I know as well.~
 ==BSANDR ~ Veladorn has become a fair and mighty priestess of both Mystra and the good drow goddess Eilistraee. She is one that gives me much inspiration of how the races can come together and live peacefully.~
-==Driz2J ~  (The drow embraces his human lover) I had hoped that I was mistaken and your reasons would be sound. Yes, Sandrah, you proof your birthright every single day on which I have the pleasure to observe you.~
+==Driz2J ~  (The drow embraces his human friend) I had hoped that I was mistaken and your reasons would be sound. Yes, Sandrah, you proof your birthright every single day on which I have the pleasure to observe you.~
 ==BSANDR ~ (Sandrah kisses the drow.)~ DO~RestParty()~EXIT
 
 CHAIN
@@ -185,11 +185,11 @@ IF~ Global("SanDrizBG2","LOCALS",5)~ THEN BSANDR SanDriBG2Plot3
 ~ (Sandrah has silently taken her drow friend's hand. You can observe that she looks troubled herself with the news Drizzt has received.)~
 DO~ SetGlobal("SanDrizBG2","LOCALS",6)~
 == Driz2J ~ Sandrah? Normally you would be the strong one to comfort me in such a case. But this time you seem to be more concerned than I am. Fear nothing, we are together and we are in strong company.~
-== BSANDR~ (Sandrah smiles ar Drizzt.) Yes, we are, my love, I am not corcerned about that. With <CHARNAME> and our friends by our side, Entreri does not scare me. ~
-== Driz2J ~ So what is on our mind, sweet Sandrah?~
+== BSANDR~ (Sandrah smiles ar Drizzt.) Yes, we are, Drizzt, I am not corcerned about that. With <CHARNAME> and our friends by our side, Entreri does not scare me. ~
+== Driz2J ~ So what is on our mind, Sandrah?~
 == BSANDR~ I am sometimes too confident in my own abilities and my strength, Drizzt. But however much I develop my skills, I will never be able to defend myself against such attacks as you have to face right now. As long as I love and care for others who are close to my heart, I make them a target for my foes.~
-== Driz2J ~ That much is true as well for <CHARNAME> or for me. Our foes may as well target on you in order to strike a blow against us.~
-== BSANDR~ Mmh...you are right, my wise friend. I make you a target for my foes just as me or Imoen have become the target of <CHARNAME>'s enemies. There is only one way to defend us against that.~
+== Driz2J ~ That much is true as well for <CHARNAME> or for me. Our foe may as well target on you in order to strike a blow against us.~
+== BSANDR~ Mmh...you are right, my wise friend. I make you a target for my foe just as me or Imoen have become the target of <CHARNAME>'s enemies. There is only one way to defend us against that.~
 == Driz2J ~ Yes, that is to stay together and stand side by side against them. None of them must get a chance to weaken our friendship and solidarity. It is our common power that makes us so strong regardless how weak or strong we are individually.~
 EXIT
 
@@ -210,7 +210,7 @@ DO~ SetGlobal("SanDrizBG2","LOCALS",8)~
 
 CHAIN
 IF~ Global("SanDrizBG2","LOCALS",10)~ THEN BSANDR SanDriBG2Plot5
-~ I can understand that you look so concerned, my love, after the newest piece of information we have gained about Jarlaxle and Entreri.~
+~ I can understand that you look so concerned, Drizzt, after the newest piece of information we have gained about Jarlaxle and Entreri.~
 DO~ SetGlobal("SanDrizBG2","LOCALS",11)~
 == Driz2J ~ Oh, Sandrah, this intrigue goes further and deeper into dangerous territories than I would ever have dreamed.~
 == BSANDR~ Yet once again be assured that you are not alone in this. Our joint forces have brought us this far already and we have overcome any resistance with ease. Do not be doubtful, my wise teacher - it is you who has taught me the two biggest mistakes in a combat are to over estimate your own powers as well as not to know how to use them.~
@@ -233,7 +233,7 @@ IF~Global("SanDrBremen","LOCALS",1) ~ THEN BSANDR SanDriBrem
 ~ (Sandrah tilts her head sideways as she looks at Drizzt with a smile.)~
 DO~ SetGlobal("SanDrBremen","LOCALS",2)~
 == Driz2J ~ My sweetest priestess, are you mocking me or is this the smile of my loving little girl?~
-== BSANDR~ All of that, sweetheart. I am just shaking my head about your talent to attract any kind of trouble again and again.~
+== BSANDR~ All of that. I am just shaking my head about your talent to attract any kind of trouble again and again.~
 == Driz2J ~ Sandrah, you are an experienced adventurer by now with our good <CHARNAME> already having gained a name of <PRO_HISHER> own. So you should know that for us there is no way to get out of the way of danger and trouble.~
 == BSANDR~ So much is true, dear. Still your name surely is best known throughout the Realms and the cases you encounter are a bit more random than ours. Today I have the feeling of entering another training course with my old teacher again.~
 == Driz2J ~ Then expect the unexpected any second.~
@@ -243,7 +243,7 @@ EXIT
 
 CHAIN
 IF~ Global("SanDrBryn","LOCALS",2)~ THEN BSANDR SanDriBry1
-~ We should have a lookout for the priest Martin, my lovely drow. Was it not here that he was supposed to be found?~
+~ We should have a lookout for the priest Martin. Was it not here that he was supposed to be found?~
 DO~ SetGlobal("SanDrBryn","LOCALS",3)~ 
 == Driz2J ~ You are right, Sandrah. Finally we have found the way to get to this cursed island where <CHARNAME>'s quest and mine require our attention.~
 == BSANDR~ Both tasks are OUR tasks, not yours alone or <CHARNAME>'s alone. You have ventured on your own for so long that you tend to forget that you are now among friends, Drizzt.~
@@ -257,7 +257,7 @@ CHAIN
 IF~ Global("SanDrClob","LOCALS",1)~ THEN BSANDR SanDriSlv1
 ~ (Sandrah is pale and her hand slightly trembles as she clutches her hammer.)~
 DO~ SetGlobal("SanDrClob","LOCALS",2)~
-== Driz2J ~ Love, that is very bad news. You hate those damned slavers just as badly as I do. But see the chance we have today with their hot trail in front of us.~
+== Driz2J ~ Sandrah, that is very bad news. You hate those damned slavers just as badly as I do. But see the chance we have today with their hot trail in front of us.~
 == BSANDR~ You are right, my drow, as bad as this news is it gives us the opportunity to strike another massive blow against this town's slave trade. I will swallow my anger and replace it by coldblooded determination.~
 == Driz2J ~ With me by your side and with <CHARNAME> the victory will soon be ours. Your cold blood will soon be heated by the battle - and afterwards by the even purer heat of love...~
 END
@@ -283,7 +283,7 @@ END
 
 CHAIN
 IF~ Global("SanDriLeaveWD","GLOBAL",1)~ THEN BSANDR SanEndPlot1
-~ Oh, my love, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
+~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
 DO~ SetGlobal("SanDriLeaveWD","GLOBAL",2)~
 == Driz2J ~ And how could I have saved everyone and freed the enslaved souls of so many in this *Region of Terror* without <CHARNAME>'s help - and without the most wonderful companion of all by my side. (He kisses Sandrah long and passionate.]~
 END

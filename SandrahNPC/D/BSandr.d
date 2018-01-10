@@ -6979,7 +6979,7 @@ DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealS
 == BSANDR~ She had a practical view on life and she never neglected the easier and joyful side even in the Time of Troubles.~
 == F_DRIZTJ~ In all the long wandering years since then I have only once again met a woman like her...~
 == BSANDR~ You did, you lucky man?~
-== F_DRIZTJ~ Lucky indeed, Sandrah. (He leans over to her and kisses her.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
+== F_DRIZTJ~ Lucky indeed, Sandrah. (He takes her hand and smiles.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
 CHAIN
 IF ~ Global("SanDrizzt","GLOBAL",12)~ THEN BSANDR SanDriCyr
@@ -6994,7 +6994,7 @@ DO~ SetGlobal("SanDrizzt","GLOBAL",13) SetGlobal("SanDrizzt2","GLOBAL",13) RealS
 = ~ But more important - just like Midnight took Mystra's mantle and sacrificed her humanity and her womanhood to take the duties of a goddess, Cyric did likewise. His burden was heavy as he had to become the new god of murder by Ao's verdict and the great schemer and plotter we recognise in him today.~
 == BSANDR~ Understandable that a man of integrity who has to take on the duties of such deities will appear broken in his personality. A short step from the thief with his tricks and masquerades to the mad god of strive, lies and illusions, but a thin line easily overstepped.~
 == F_DRIZTJ~ (Drizzt looks at Sandrah in deep thought.) You see what only she was able to see before. Another indication of your resemblance. May you be very careful for how far you will follow her way.~
-== BSANDR~ Is this a warning for my choice of men, mh, it may just come too late. (She kisses him.)~
+== BSANDR~ Is this a warning for my choice of men, mh, it may just come too late. ~
 == F_DRIZTJ~ (Smiles) Keep in mind where Midnight's way finally led for herself.~
 == BSANDR~ Do not worry, Drizzt, there are no vacancies caused by slain gods around these days.~ EXIT
 
@@ -7018,12 +7018,12 @@ END
 
 CHAIN
 IF~ Global("SanDrByeBG1","LOCALS",1)~ THEN BSANDR SanDriByeBG1
-~ You seem to be restless, love. What is on your mind?~
+~ You seem to be restless, Drizzt. What is on your mind?~
 DO~ SetGlobal("SanDrByeBG1","LOCALS",2)~
 == F_DRIZTJ ~ I assume you are quite aware of it. You are prepared that it would be like that.~
 == BSANDR~ I thought I would be, but who can really be so cold at heart not to become weak when the moment really is there.~
-== F_DRIZTJ ~ New duties are calling me already. Your place is at <CHARNAME>'s side for now. Let us not prolong this moment of pain for us unnessesarily. We both have accepted that our relation will be like that, we trade the moments of pure pleasure for the long dark times without the beloved.~
-== BSANDR~ Your ways will be hard to track, but I know that you will always have a way to find us, if needed my father will help you surely. I await our next meeting anxiously, my love.~
+== F_DRIZTJ ~ New duties are calling me already. Your place is at <CHARNAME>'s side for now. Let us not prolong this moment of pain for us unnessesarily. We both have accepted that our relation will be like that, we trade the moments of pure pleasure for the long dark times without the other.~
+== BSANDR~ Your ways will be hard to track, but I know that you will always have a way to find us, if needed my father will help you surely. I await our next meeting anxiously, Drizzt.~
 == F_DRIZTJ ~ I will find you again and new moments of joy will lighten our lives, Sandrah, farewell.~
 = ~ Farewell you all. It was a pleasure to travel and fight with companions such as you.~ DO ~ LeaveParty() EscapeArea()~ EXIT
 

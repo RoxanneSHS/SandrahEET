@@ -216,7 +216,7 @@ DO ~ SetGlobal("SanDriDrowAmb","GLOBAL",4)~
 == F_DRIZTJ~ (Laughs) Did we not talk about meeting old acquaintances from time to time. This one seems to be one of yours.~
 == BSANDR ~ Right, Drizzt, Naronguth, thief of my father's Shard, fetishist for footwear and peanut hater.~
 == NARONGU~ DRIZZT?? IS THAT DRIZZT DO'URDEN?? SURE, IS THERE ANY OTHER DRIZZT?~
-== BSANDR ~ Well, my love, your reputation is widespread if they even know you down there where this creature comes from.~
+== BSANDR ~ Well, my dear, your reputation is widespread if they even know you down there where this creature comes from.~
 == NARONGU~ DRIZZT DO'URDEN AND ELMINSTER'S BABY GIRL IN ONE CATCH - CELEBRATION TIME AGAIN!!!~ DO ~ ChangeEnemyAlly("Narongu",ENEMY) Attack("CVSandr") ~ EXIT
 
 //Narongu Final in Nine Hells - Haer'Dalis
