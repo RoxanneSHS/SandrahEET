@@ -15,7 +15,7 @@ IF~Global("SanSarevCorw","Locals",1)~THEN BDCORWIJ CorwiCand1
 DO~SetGlobal("SanSarevCorw","Locals",2)~
 ==CVSandrJ~I know that he is a bhaalspawn and I know that he was leading those operations we stopped in Nashkel and Cloakwood.~
 ==BDCORWIJ~That's not all, am I right?~
-==CVSandrJ~I have sufficient evidence to think that he was raised and educated by an Orloth named Winski...~
+==CVSandrJ~I have sufficient evidence to think that he was raised and educated by an Othlor named Winski...~
 ==BDCORWIJ~Winski Perorate, a mage serving Sarevok's stepfather Rieltar Anchev.~
 END
 ++~We had some unpleasant visits from the guy already.~+ CorwiCand2
@@ -27,7 +27,7 @@ IF~~THEN BDCORWIJ CorwiCand2
 ~I know little of Winski as he doesn't seek the public. He's been around the Iron Throne as long as I can think back. His nor Sarevok's activities are not easy to follow. There are indications of all matters of dark deeds but no real proof.~
 ==CVSandrJ~We have reason to think that originally Winski pursued and found Sarevok because of his heritage. The mage intended to use his disciple against his former homeland Rashemen.~
 ==BDCORWIJ~I doubt that Sarevok will let himself be used like a toy or a weapon.~
-==CVSandrJ~I agree. Like I said, that was the Orloth's intent. But long the tables have turned and Sarevok has outgrown his teacher and probably also his father's organisation.~
+==CVSandrJ~I agree. Like I said, that was the Othlor's intent. But long the tables have turned and Sarevok has outgrown his teacher and probably also his father's organisation.~
 ==BDCORWIJ~Sarevok's activities seem far too focussed to be taken as a youngster's wildness or escapades. But what is he after?~
 ==CVSandrJ~We are at Candlekeep, Corwin, here they sing out Alaundo's prophesies daily...~
 ==BDCORWIJ~Are you...you mean...he's a bhaalspawn, he's gaining power and he's ruthless. But - he's far from becoming a god of murder, that's just absurd.~
