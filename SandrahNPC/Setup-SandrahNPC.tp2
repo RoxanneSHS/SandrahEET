@@ -7998,6 +7998,8 @@ EXTEND_TOP
 ~BDCorwin.bcs~ ~SandrahNPC/Sod/Corwinsan.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Sod/SandrahSoD.baf~
+EXTEND_TOP
+~Semaj.bcs~ ~SandrahNPC/Sod/Semajdrop.baf~
 
 EXTEND_TOP
 ~BD7220.bcs~ ~SandrahNPC/Sod/bd7220warn.baf~
