@@ -15,7 +15,9 @@ AreaCheck("bd0130")
 OR(2)
 PartyHasItem("bdshpam1")
 PartyHasItem("bdshpam2")
+OR(2)
 Dead("BDKorme1")
+Global("BD_MERC_MACHINE_OT","BD0130",3)
 Global("SanSodPamp","BD0130",0)
 THEN
 RESPONSE #100
