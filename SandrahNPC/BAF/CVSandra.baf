@@ -3577,6 +3577,7 @@ Global("SanClkWo","GLOBAL",0)
 InParty("Imoen2")
 AreaCheck("BG2100")
 PartyHasItem("misc90")
+GlobalGT("Orcimo1T","LOCALS",1)
 THEN
 RESPONSE #100
 SetGlobal("SanClkWo","GLOBAL",1)
