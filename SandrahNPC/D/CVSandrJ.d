@@ -4366,6 +4366,7 @@ IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REP
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanWinskApp20
+IF ~ GlobalLT("Chapter","GLOBAL",13) Global("SanSkieSoDBhaal","GLOBAL",1)~THEN REPLY ~ Skie  another bhaalspawn, is that really what you think?~ DO~SetGlobal("SanSkieSoDBhaal","GLOBAL",2)~ GOTO Skiebhaal1
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanBLine1
 IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~Do you still think Caelar Argent may be a bhaalspawn?~DO~SetGlobal("SanDBdoubt","LOCALS",1)~GOTO SanDBIsShe1
 IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
@@ -4378,6 +4379,18 @@ END
 IF~~THEN BEGIN SanvaultSum
 SAY~ Let me check on the option, just one second.~
 IF~~THEN DO~ CreateCreatureObjectDoor("sanvault","CVSandr",0,0,0)~EXIT
+END
+
+IF~~THEN BEGIN Skiebhaal1
+SAY~I...do not listen to me, <CHARNAME>, I probably over react when it comes to your *siblings*. A mother dying in childbed and a rich girl with a killing spleen are not really evidence. We have more important things to care about at the moment.~
+IF~~THEN REPLY~I'm glad you see this yourself.~ GOTO Skiebhaal2
+IF~~THEN REPLY~Why don't I believe that you really believe that it's neglectable. Maybe I know you too well already.~GOTO Skiebhaal2
+IF~~THEN REPLY~Hm, I don't know what to think of it myself.~GOTO Skiebhaal2
+END
+
+IF~~THEN BEGIN Skiebhaal2
+SAY~We are supposed to keep an eye on her anyway. I surely will. Be it only to prove myself wrong. Hopefully.~
+IF~~THEN EXIT
 END
 
 IF~~ THEN BEGIN SanTiaxPC1
