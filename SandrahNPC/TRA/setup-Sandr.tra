@@ -499,7 +499,7 @@ I am convinced by now that Sandrah's and my own stories are entwined. There is a
 @240 = ~ TAKE THIS SYMBOL OF WHAT YOU ARE!~
 @241 = ~ TAKE A LOOK AT WHO YOU ARE FROM THE TOWER THAT OVERLOOKS THE REALMS!~
 @242 = ~ Khalindra's Baby ~
-@243 = ~ Khalindra's Baby 
+@243 = ~ Khalindra's Baby
 
 You hold a replica of Khalindra's baby in your arm. It is wrapped in a bedcloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
 
@@ -564,10 +564,15 @@ The whistle can be used to call Haiass, as long as he is in the same area as you
 @278 = ~Sandrah has released Quedlima from her spell prison.~
 @279 = ~Torm's Justice~
 @280 = ~Helm's Eye~
-@281 = ~Which size of the worldmap do you have installed?
+@281 = ~Korlasz is defeated, and the last of Sarevok's influence died with her. Your foster father, Gorion, has been avenged. Many of those who helped you thwart your half-brother's schemes drift away from you, returning to their lives. Even Imoen has taken the opportunity to learn more about her arcane abilities with help of Duke Liia Jannath. 
 
-1. Large Worldmap 4900x3500
-2. Huge Worldmap 8000x6300~
+For the first time since you left Candlekeep, you have the opportunity to reflect on the astonishing turns your life has taken.
+
+Though you are fêted by the rulers of Baldur's Gate, a sense of unease plagues you. You can't help but hear the rumors, the whispers that you share the same dark blood as Sarevok. Some hint you killed your half-brother not for the good of the city, but so you could usurp his place and his power. For the moment, however, your persecutors' voices are drowned out by an ever-growing number of others with more immediate concerns.
+
+Every day, more refugees driven from their homes by the servants of Caelar Argent arrive at the city gates. Many have stories of the Shining Lady's grace; all have tales of her followers' wrath.
+
+A tenday after Korlasz's defeat, you retire to your chamber in the Ducal Palace, your thoughts troubled. You wonder what effect Caelar's crusade will have on Baldur's Gate, little knowing how close at hand the answer is...~
 @282 = ~Yondalla's Blessing~
 @283 = ~L'Urieet Yantyrr~
 @284 = ~Jen'lig~
