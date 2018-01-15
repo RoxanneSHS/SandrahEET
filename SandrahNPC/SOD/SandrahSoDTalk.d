@@ -426,3 +426,10 @@ IF~~THEN REPLY~You're right, she would encourage me herself to try anything that
 IF~~THEN REPLY~That may very well be. Anyway I'm not like that, I choose her and her alone.~GOTO 157
 END
 END
+
+I_C_T BDSkie 63 SanSkieSoDBhaal
+==CVSandrJ IF~InParty("CVSandr")~THEN~(Mumbles to herself) That girl with her pocket knife quite expertly killed those scary marauders...a strange sight.~
+==BDSkie IF~InParty("CVSandr")~THEN~I can hear you very well, Sandrah, my ears are sharp.~
+==CVSandrJ IF~InParty("CVSandr")~THEN~All your senses seem to be. Say, was it not mentioned your mother died when giving birth to you?~
+==BDSkie IF~InParty("CVSandr")~THEN~What...OH, YOU...!!~
+==BDSkie IF~InParty("CVSandr")~THEN~<CHARNAME>, you should get rid of that witch, she's cracking up it seems. She seems to see bhaalspawns everywhere these days.~END
