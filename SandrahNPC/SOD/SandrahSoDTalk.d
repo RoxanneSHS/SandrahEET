@@ -433,3 +433,8 @@ I_C_T BDSkie 63 SanSkieSoDBhaal
 ==CVSandrJ IF~InParty("CVSandr")~THEN~All your senses seem to be. Say, was it not mentioned your mother died when giving birth to you?~
 ==BDSkie IF~InParty("CVSandr")~THEN~What...OH, YOU...!!~
 ==BDSkie IF~InParty("CVSandr")~THEN~<CHARNAME>, you should get rid of that witch, she's cracking up it seems. She seems to see bhaalspawns everywhere these days.~END
+
+I_C_T BDMadele 7 SanDaggMothSoD
+==CVSandrJ IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~What was that woman's name?~
+==BDMadele IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~HeheheheeeeHAHAHAHA...maybe I tell you if you let me out of here or maybe not...~
+==CVSandrJ IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~(Mumbles) Maybe her name starts with an *A*.~END
