@@ -135,7 +135,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ Fountemp3
-~I am pretty sure about it. And maybe it was the last refuge of Bhaal before the mortal heroes finally defeated him at the nearby Boareskyre Bridge.~
+~I am pretty sure about it. And maybe it was the last refuge of Bhaal before the mortal heroes finally defeated him at the nearby Boareskyr Bridge.~
 END
 ++~You are the historian here. I don't feel like this is part of my family history.~EXIT
 ++~Shadows of the past...wherever we go, it seems we can't escape them.~EXIT
