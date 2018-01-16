@@ -4850,7 +4850,7 @@ END
 IF~~THEN BEGIN SanMadel2
 SAY~The Bhaal priestess was mad from all she had to endure but even in madness she did not invent such an event. Fact is the raid happened. Bhaal children were *stolen* or rather rescued by the Harpers. These children survived the attempted sacrifice and early attempt to ressurect the God of Murder.~
 IF~~THEN REPLY~Thank you for staying analytic here. These children, bhaalspawns, may be alive today.~ GOTO SanMadel3
-IF~~THEN REPLY~The harper and the priestess in love fit quite well to what Gorion wrote in his letter.~GOTO SanMadel4
+IF~~THEN REPLY~The harper and the priestess fit quite well to what Gorion wrote in his letter.~GOTO SanMadel4
 END
 
 IF~~THEN BEGIN SanMadel3
