@@ -438,3 +438,10 @@ I_C_T BDMadele 7 SanDaggMothSoD
 ==CVSandrJ IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~What was that woman's name?~
 ==BDMadele IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~HeheheheeeeHAHAHAHA...maybe I tell you if you let me out of here or maybe not...~
 ==CVSandrJ IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~(Mumbles) Maybe her name starts with an *A*.~END
+
+I_C_T BDWoris 8 SanElfGhostSoD
+==CVSandrJ IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~Maybe a tale could be our reward. Were you not a bard in your lost life, my elf?~
+==BDWoris IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~I entertained the best houses in Baldur's Gate, mylady, but my unrest and hunger for adventuring let me embark on this quest to Dragonspear long ago.~
+==CVSandrJ IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~You left your lady behind. She never forgot you and her soul was always longing for you. She may now find her own rest as well.~
+==BDWoris IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~My Elmyra, my love...~
+==CVSandrJ IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~Peace be with you and with Elmyra, the voice of the Elfsong Tavern.~END
