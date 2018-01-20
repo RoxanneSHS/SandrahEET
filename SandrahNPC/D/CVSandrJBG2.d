@@ -695,7 +695,7 @@ SAY ~ Anyway, this Irenicus seems to be part of that new emerging force threaten
 = ~ While doing my secret inquiries about the situation, I simply hired a handful of street childs to keep their eyes on the dungeon entrance as well as on the thieves hideout in the docks, so I was notified right away when another guild than the one that had captured you made their move against the dungeon.~
 = ~ The entrance went up in a big explosion and the Shadow Thieves and Assassins made it into the dungeon. I followed them, hiding from them and also from the menagerie of creatures Irenicus had to defend the prison - well, and then I found you.~
 IF ~~THEN REPLY ~ Yes, you did, my bravehearted lover, and just in time. (You embrace and kiss her.)~ DO~ SetGlobal("SanNotCapt","LOCALS",3)~EXIT
-IF ~~THEN REPLY ~ Yes, you did, my friend, and just in time. (You embrace and kiss her.)~ DO~ SetGlobal("SanNotCapt","LOCALS",3)~EXIT
+IF ~~THEN REPLY ~ Yes, you did, my friend, and just in time. ~ DO~ SetGlobal("SanNotCapt","LOCALS",3)~EXIT
 END
 
 IF ~~ THEN BEGIN SanMysSucc11
