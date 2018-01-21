@@ -589,7 +589,7 @@ END
 INTERJECT DRIZ2 0 SanDriMA
 ==  CVSandrJ IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~ Drizzt!!~
 ==  DRIZ2 IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~ Sandrah, how unexpected and how wonderful!~
-= ~ (They embrace and kiss each other like in a whirlwind.)~
+= ~ (They embrace each other like in a whirlwind.)~
 ==  CVSandrJ IF ~ InParty("CVSandr") GlobalGT("SanDrizzt","GLOBAL",7)~ THEN ~Yes, unexpected and wonderful and just like we knew it was going to happen. Let us talk about what happened to each of us once we have escaped this hole.~
 END DRIZ2 7
 

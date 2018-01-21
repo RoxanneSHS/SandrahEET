@@ -130,7 +130,7 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot1b
-~ Oh, Drizzt, my love, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
+~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
 DO~ SetGlobal("SanDriLeaveWD","GLOBAL",2)~
 ==Driz2P ~ And who else could have saved everyone and freed the enslaved souls of so many in this *Region of Terror* than <CHARNAME> and the most wonderful companion of all by <PRO_HISHER> side. (He kisses Sandrah long and passionate.]~
 END

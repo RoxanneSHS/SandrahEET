@@ -1,6 +1,3 @@
-APPEND BKACHI
-END
-
 CHAIN
 IF~Global("SanHealKachi","GLOBAL",3)~THEN BKachi Sanheal1
 ~ Thank you, Sandrah, so much kindness from healing hands is somewhat unknown to me.~

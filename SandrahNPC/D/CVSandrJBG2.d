@@ -1056,7 +1056,7 @@ IF~ !InParty("Wulfg2") !InParty("RChloe")~ THEN GOTO BG2Reunion16
 END
 
 IF ~~THEN BEGIN BG2Reunion14
-SAY~ A friend of my beloved Drizzt. That makes you a friend of mine as well. I look ahead to travel and fight at your side, Wulfgar.~
+SAY~ A friend of my friend Drizzt. That makes you a friend of mine as well. I look ahead to travel and fight at your side, Wulfgar.~
 IF~  InParty("RChloe")~ THEN DO ~ SetGlobal("SanMetChloe","LOCALS",1)~ GOTO BG2Reunion8
 IF~ !InParty("RChloe")~ THEN GOTO BG2Reunion16
 END
