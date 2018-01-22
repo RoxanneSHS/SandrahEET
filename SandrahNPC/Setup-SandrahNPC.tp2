@@ -6162,6 +6162,7 @@ COPY ~SandrahNPC/ITM/bmysgf.itm~ ~override/bmysgf.itm~
 SAY NAME1 @870
 SAY NAME2 @870
 SAY DESC @871
+SAY 0x39e Sandrah
 PRINT ~ Master Grolim detected - added a gift for Sandrah~
 END ELSE BEGIN
     PRINT ~ Master Grolim not detected - skipped ~
