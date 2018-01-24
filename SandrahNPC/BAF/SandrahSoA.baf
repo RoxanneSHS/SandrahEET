@@ -437,10 +437,11 @@ END
 IF
 AreaCheck("ar0300")
 Global("SanTempOghmAmn","LOCALS",0)
-OR(3)
+OR(4)
 See("Door0319")
-See("Door0325")
+Range("Door0325",35)
 See("Door0415")
+Range("Door0319",35)
 THEN
 RESPONSE #100
 SetGlobal("SanTempOghmAmn","LOCALS",1)
