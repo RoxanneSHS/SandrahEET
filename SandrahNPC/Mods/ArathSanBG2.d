@@ -39,7 +39,7 @@ DO~SetGlobal("SanMeetArath","GLOBAL",7)RealSetGlobalTimer("SanInterArath","LOCAL
 ==BLK#Arat~Like you said...we spend much time together and there is not always some other interesting object around.~
 ==BSandr~(Laughs) You are a master in issuing compliments to women, really.~
 ==BLK#Arat~I'm not at that stage yet with you - not before I see abit clearer.~
-=~How can a Bhaalspawn and a priestess of Mystra be as close as you are with <CHARNAME>? My lore of the Times of Trouble tells me that the current incarnation of your goddess and her company were the ones to defeat and kill the God of Murder.~
+=~How can a Bhaalspawn and a priestess of Mystra be as close as you are with <CHARNAME>? My lore of the Time of Troubles tells me that the current incarnation of your goddess and her company were the ones to defeat and kill the God of Murder.~
 ==BSandr~My personal hatred towards Bhaal goes even deeper as he caused the early death of my mother by impregnating her with one of his spawns.~
 ==BLK#Arat~Oops...so my question is further fuelled by this fact. Unless you secretly plan to take revenge on <CHARNAME> but still wait for some strange reason.~
 ==BSandr~Fact is that our paths have crossed because of the relationship you just revealed and we stayed companions and fell in love with each other meanwhile. Over time we found more and more indications that we share some common fate that still needs to found. We are connected by the bloodline that each of us have inherited but we are not slaves to our blood.~
