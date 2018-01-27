@@ -78,7 +78,7 @@ DO~ SetGlobal("SanMeetArath","GLOBAL",12)~
 ==BLK#Arat~ I was just thinking the same, Sandrah. Maybe you should examine her one last time to make sure all is well and then we can give her back her freedom.~
 == BSANDR~ (Sandrah carefully inspects the cat which Arath has cupped in his hands. She looks into the druid's eyes and smiles.) She is fine, my friend, ready to conquer the wilderness again.~
 ==BLK#Arat~ This is a wonderful moment. Thank you for it, my friend.~
-DO~ AddXPObject("BLK#Arat",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
+DO~ AddXPObject("Arath",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") Wait(2) DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
 
 CHAIN
 IF~ Global("SanMeetArath","GLOBAL",12)~ THEN CVCatCe SanFindAr3
@@ -92,7 +92,7 @@ DO~ SetGlobal("SanMeetArath","GLOBAL",13)ActionOverride("CVSandr",AddSpecialAbil
 ==BLK#Arat~ In some way yes, you are right, Sandrah, but this was different, much clearer than what I receive from a *normal* animal.~
 == BSANDR~ Pelligram surely does not fit into that category. Anyway, I am glad our little guest has now found what she needs, Arath.~
 ==BLK#Arat~ So am I. (Instictively Arath keeps Sandrah's hand in his own while the group continues their march.)~
-==CVCatCe~ Miau.~DO~ MoveToPointNoInterrupt([0.0])~ EXIT
+==CVCatCe~ Miau.~DO~ ActionOverride("CVCatce",MoveToPointNoInterrupt([0.0]))~ EXIT
 
 CHAIN
 IF WEIGHT #-5~Global("SanMeetArath","GLOBAL",14)~THEN BLK#Arat SanMeetArath6
