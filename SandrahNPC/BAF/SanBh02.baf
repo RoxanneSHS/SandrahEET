@@ -5,6 +5,7 @@ RESPONSE #100
 CutSceneId("CVSandr")
 Wait(1)
 ActionOverride("Bhaal01",DestroySelf())
+ActionOverride("Skie",DestroySelf())
 Wait(2)
 RestorePartyLocations()
 EndCutSceneMode()

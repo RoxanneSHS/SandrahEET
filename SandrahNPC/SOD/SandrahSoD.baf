@@ -148,7 +148,7 @@ END
 
 IF
 Global("SanSoDSkieB","Global",0)
-Global("SanSoDSkie","Global",9)
+GlobalLT("SanSoDSkie","Global",9)
 Global("Chapter","Global",18)
 OR(2)
 AreaCheck("ar2600")

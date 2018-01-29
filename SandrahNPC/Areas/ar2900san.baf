@@ -7,4 +7,15 @@ RESPONSE #100
 SetGlobal("SanhellComm","ar2900",1)
 END
 
+IF
+Global("SanSoDSkieB","Global",2)
+Global("SanhellComm","ar2900",2)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSoDSkieB","Global",3)
+CreateCreatureObjectDoor("CVSkie",Player1,0,0,0)
+Wait(2)
+ActionOverride("Skie",Dialog(Player1))
+END
 

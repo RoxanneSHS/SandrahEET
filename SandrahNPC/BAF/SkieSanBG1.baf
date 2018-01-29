@@ -115,3 +115,13 @@ RESPONSE #100
 SetGlobal("CVSanSkieHeal","LOCALS",6)
 ActionOverride("CVSandr",AddSpecialAbility("CVBabbl"))
 END
+
+IF
+OR(2)
+Global("SanSoDSkieB","Global",5)
+Global("SanSoDSkieB","Global",3)
+See([PC])
+THEN
+RESPONSE #100
+Dialogue([PC])
+END

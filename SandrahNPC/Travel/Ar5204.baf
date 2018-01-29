@@ -1,7 +1,23 @@
 IF
-   Global("RZAR5204","GLOBAL",0)
+Global("RZAR5204","GLOBAL",0)
 THEN
-    RESPONSE #100
-             SetGlobal("RZAR5204","GLOBAL",1)
-             Continue()
+RESPONSE #100
+SetGlobal("RZAR5204","GLOBAL",1)
+Continue()
 END
+
+IF
+Global("YagaShuraHeart1","GLOBAL",2)
+InParty("CVSandr")
+Global("SanSoDSkieB","Global",4)
+CombatCounter(0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanSoDSkieB","Global",5)
+CreateCreatureObjectDoor("CVSkie",Player1,0,0,0)
+Wait(2)
+ActionOverride("Skie",Dialog(Player1))
+END
+
+

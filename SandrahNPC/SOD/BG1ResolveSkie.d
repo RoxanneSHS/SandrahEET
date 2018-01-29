@@ -93,7 +93,7 @@ END
 CHAIN
 IF~Global("SanSoDSkie","Global",8)~ THEN CVSandrJ KillskieF1
 ~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
-DO~SetGlobal("SanSoDSkie","Global",9)SetGlobal("SanSoDSkieB","Global",2)~
+DO~SetGlobal("SanSoDSkie","Global",9) SetGlobal("SanSoDSkieB","Global",2)~
 END
 ++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
 ++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
@@ -144,3 +144,37 @@ END
 ++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
 ++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
 ++~The accusation of murder is pointless with the victim being alive, right?~ + KillskieF2
+
+CHAIN
+IF WEIGHT #-4~Global("SanSoDSkieB","Global",3)~THEN Skie BackHell
+~This time I'm the hooded one to watch, hihi.~
+DO~SetGlobal("SanSoDSkieB","Global",4)~
+==Skie~Irenicus will pay, I'm sure. I know you have all reason to make him pay, <CHARNAME>.~
+==CVSandrJ~Skie? I will not ask why you are here, I am just curious how you accomplished being here. But then, I guess I already know that answer as well.~
+==Skie~Ha, Miss Clever, how could I've doubted you would be here as well. But even you can't prevent what will happen here, nor what will happen when Irenicus falls.~
+END
+++~Why are you here, Skie?~+ BackHell2
+++~How can you be here, Skie?~+ BackHell2
+++~Sandrah was right, you're here because you are a child of Bhaal as well.~+ BackHell2
+
+CHAIN
+IF ~~THEN Skie BackHell2
+~Hey, this is as well my place as it's yours, <CHARNAME>. Entar Silvershield is not my father. I learned to accept it. You showed me, Irenicus showed me, and my new ally showed me what to do with my *potential*.~
+=~Do what you must. I will not stand in your way today, dear <PRO_BROTHERSISTER>. Not this time.~
+==CVSandrJ~Your new ally, Skie? Has he motivated you to follow the urge of your blood...~
+==Skie~He? There is no *he*. SHE has shown me where my destiny lies. They tried to keep me away from power and lock me in a golden cage. My stupid brother was to rule in Baldur's Gate, not me, who deserved it.~
+==CVSandrJ~Is this why he had to die? You were involved in Eddard's murder near Beregost?~
+==Skie~I had to start somewhere, didn't I. And I have to finish somewhere. You and <CHARNAME> will do better than any to be the cherry on my cream. But first you be so nice to clean up this Irenicus mess, will you, dear?~
+=~Sure you will, you need your soul. At least for a little while longer.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+
+CHAIN
+IF WEIGHT #-4~Global("SanSoDSkieB","Global",5)~THEN Skie BackYaga
+~Thank you, you're the greatest, <CHARNAME>.~
+DO~SetGlobal("SanSoDSkieB","Global",6)~
+==CVSandrJ~Skie, are you following us?~
+==Skie~I was told you would try to find a way to defeat Yaga-Shura. When I heard of it I was rejoicing, really. You must believe me.~
+==CVSandrJ~I do believe you. Your new ally told you, am I right? Eliminating the fire giant creates a vacant seat among the Five. Just think of it Skie, that seat was made for a giant. It might be far too large for you.~
+==Skie~You...Ha, I shouldn't have underestimated your cleverness, Sandrah. But so what...even if you think you know what's going on, you can't do anything else but play our game.~
+==CVSandrJ~You are in league with Melissan. What did she promise you? A seat at your father's side, some crumbs from the Throne of Bhaal?~
+==Skie~Hush, little girl. Be a good pet and help <CHARNAME> to destroy the heart.~
+=~And excuse the Lady Silvershield, you know, things to do and people to meet and so on...~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
