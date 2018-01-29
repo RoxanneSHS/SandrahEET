@@ -22,6 +22,7 @@ Wait(2)
 SetGlobal("SanItmBG2","GLOBAL",3)
 SetGlobal("A7-Cutscene","ar0602",11)
 SetGlobal("EntJar1","AR0602",2)
+SetGlobal("L#SDCreateMainItem","GLOBAL",2)
 Continue()
 END
 
@@ -79,5 +80,13 @@ RESPONSE #100
 SetGlobal("K#MinscImport","AR0602",2)
 ActionOverride("Minsc",CreateItem("IMOENHP1",1,0,0)) 
 ActionOverride("Minsc",FillSlot(SLOT_BELT))
+Continue()
+END
+
+IF
+Contains("l#2sda1","Picture1")
+THEN
+RESPONSE #100
+ActionOverride("Picture1",DestroyItem("l#2sda1"))
 Continue()
 END

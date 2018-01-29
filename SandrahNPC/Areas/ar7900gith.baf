@@ -101,6 +101,7 @@ END
 
 IF
 Global("SanSoDSkie","Global",7)
+Global("SanSoDSkieB","Global",0)
 InParty("CVSandr")
 GlobalLT("Chapter","Global",22)
 THEN

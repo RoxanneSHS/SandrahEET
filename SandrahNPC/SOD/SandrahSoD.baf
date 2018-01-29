@@ -147,7 +147,20 @@ SetGlobal("SanSodEntrap","Global",1)
 END
 
 IF
-OR(14)
+Global("SanSoDSkieB","Global",0)
+Global("SanSoDSkie","Global",9)
+Global("Chapter","Global",18)
+OR(2)
+AreaCheck("ar2600")
+AreaCheck("ar0800")
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("SanSoDSkieB","Global",1)
+END
+
+IF
+OR(15)
 Global("SanPilRidl","BD1200",1)
 Global("SanSodPamp","BD0130",1)
 Global("Sansusp","bd0102",1)
@@ -162,6 +175,7 @@ Global("SanBDdream2","LOCALS",1)
 Global("SanBdInfiltrate","Global",1)
 Global("bd_spawn_cultist","bd7220",2)
 Global("bd_sandrah_ot","bd4100",1)
+Global("SanSoDSkieB","Global",1)
 CombatCounter(0)
 InParty(Myself)
 !See([ENEMY])

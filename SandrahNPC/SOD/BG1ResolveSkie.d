@@ -93,7 +93,7 @@ END
 CHAIN
 IF~Global("SanSoDSkie","Global",8)~ THEN CVSandrJ KillskieF1
 ~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
-DO~SetGlobal("SanSoDSkie","Global",9)~
+DO~SetGlobal("SanSoDSkie","Global",9)SetGlobal("SanSoDSkieB","Global",2)~
 END
 ++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
 ++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
@@ -135,3 +135,12 @@ END
 ++~A lot of evidence...and your interpretation of it. I am not convinced.~EXIT
 ++~I am afraid that you may be just too right, my counselor.~EXIT
 ++~You have confirmed what I was trying not to see...I just hope that her father does not even know about her heritage.~EXIT
+
+CHAIN
+IF~Global("SanSoDSkieB","Global",1)~ THEN CVSandrJ KillskieF1B
+~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
+DO~SetGlobal("SanSoDSkieB","Global",2)~
+END
+++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
+++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
+++~The accusation of murder is pointless with the victim being alive, right?~ + KillskieF2
