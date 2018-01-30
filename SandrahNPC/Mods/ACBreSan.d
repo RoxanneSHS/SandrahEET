@@ -7,7 +7,7 @@ DO ~ SetGlobal("SanBreBa","GLOBAL",2)~
 == ACBreB ~ GET OFF ME, BUZZURK!!~
 == BSANDR ~ I was just healing...~
 == ACBreB ~ Leave me alone with your terrible spells and your forsaken magic, witch!~
-== BSANDR ~ But I was...(She stops when she sees Breagar's face, violet with anger and hate.)~
+== BSANDR ~ But I was...(She stops when she sees Breagar's face, violet with anger and disgust.)~
 = ~ (Sandrah silently turns and walks away.)~
 EXIT
 
