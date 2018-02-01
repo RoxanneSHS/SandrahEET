@@ -39,7 +39,7 @@ DO~SetGlobal("SanHealAmber","GLOBAL",6)RealSetGlobalTimer("AmbSanInt","LOCALS",2
 ==BSandr~ I never judge by race, Amber, and this is especially true for tieflings. I have never met two that were alike given the variety of possible demonic ancestors as well as for the non-demonic partner. ~
 ==BM#Amber~You are right, our parents can manifest themselves in such variety of ways, you are not likely to find two tieflings with exactly similar appearances and abilities. What would you make out of me, with your knowledge and significant lore?~
 ==BSandr~ From your question I take it that you do not know your parents?~
-==BM#Amber~My mother was from the surface in Waterdeep, but I can't even say whether she was human. My father was the demonic part for sure, but as you know yourself, there is plenty of them in the Nine hells and elsewhere.~
+==BM#Amber~My mother was from the surface in Waterdeep, but I can't even say whether she was human. My father was the demonic part for sure, but as you know yourself, there is plenty of them in the Nine Hells and elsewhere.~
 ==BSandr~ We can only make guesses unless I get a chance to inspect you a bit closer. For example these lovely little demonic streaks in your skin are in all probability a direct indication of the nature of your demonic ancestor, while your feline grace and movement may indicate your mother's side.~
 ==BM#Amber~(Rolls up her sleeve a bit for Sandrah to see more of her tattoo-like pigments.) You make it sound like I received the best of both worlds...~
 ==BSandr~ (Smiles) I will judge on that if I get a closer look at the inner values - the outside looks quite promising - it may contain a beautiful soul as well.~
