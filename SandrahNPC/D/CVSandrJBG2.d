@@ -3213,6 +3213,10 @@ INTERJECT_COPY_TRANS RENAL 14 SanRenaTip
 == CVSandrJ IF~ InParty("CVSandr")~ THEN ~ (Smiles) If you really knew a bit about my reputation then you would be aware that I do not reject someone because of his profession, mmh.~
 END
 
+INTERJECT_COPY_TRANS RENAL 63 SanRenaTip2
+== CVSandrJ IF~ InParty("CVSandr")~ THEN ~Psst...this is to our benefit in two ways, <CHARNAME> - we get close insights into the shadow thieves' operations and at the same time we can control the activities of at least a number of them.~  END
+
+
 //Neeber
 INTERJECT NEEBER 3 SanKnowsfaml
 == CVSandrJ IF~ InParty("CVSandr")~ THEN ~ Oh, my, this reminds me of Noober or Roober. Say, your name is by chance *Floober*?~
