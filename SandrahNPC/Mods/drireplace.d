@@ -5,7 +5,7 @@ IF~~THEN REPLY~But have we not killed the two when we went with Drizzt to Icewin
 END
 
 IF~~ THEN BEGIN SanReplDr56
-SAY~ With the resources of the Bregan D'aerthe they have probably found a way of resurrection. It makes them even worse enemies of Drizzt - but also of us, my love. We should find the time to investigate in Arlax what is going on.~
+SAY~ With the resources of the Bregan D'aerthe they have probably found a way of resurrection. It makes them even worse enemies of Drizzt - but also of us, <CHARNAME>. We should find the time to investigate in Arlax what is going on.~
 IF~~THEN DO~ SetGlobal("JarDjin65","AR0400",4)  SetGlobal("EntDjin55","AR0400",4) SetGlobal("Ttcmal","GLOBAL",1) RevealAreaOnMap("RR3100")~EXIT
 END
 
@@ -39,7 +39,7 @@ END
 IF~ Global("NCaDri","GLOBAL",1)~ THEN BEGIN SanReplDr70
 SAY~ Two simple (wink) tasks remain for us now. Destroy the crystal and free Catti-Brie.~
 IF~~THEN REPLY~ May I remind my counselor that we have no idea where one or the other may be found?~ GOTO SanReplDr71
-IF~~THEN REPLY~ Oh, yes, let's just do it (wink, too)~ GOTO SanReplDr71
+IF~~THEN REPLY~ Oh, yes, let's just do it (wink, too).~ GOTO SanReplDr71
 END
 
 IF~~THEN BEGIN SanReplDr71
@@ -59,7 +59,7 @@ IF~~THEN DO ~ SetGlobal("Driknicd","GLOBAL",2)~EXIT
 END
 
 IF~ Global("SanDrBryn","ar1600",2)~ THEN BEGIN SanNDriBry1
-SAY~ We should have a lookout for the priest Martin, my love. Was it not here that he was supposed to be found?~
+SAY~ We should have a lookout for the priest Martin. Was it not here that he was supposed to be found?~
 IF~~THEN REPLY~Who was that again?~DO~ SetGlobal("SanDrBryn","ar1600",3)~ GOTO SanNDriBry2
 END
 
@@ -142,7 +142,7 @@ IF~~ THEN BSANDR SanEndPlot2b
 ==Driz2P ~ Please, <CHARNAME>, Sandrah, give me a minute.~
 == BSANDR~ Are you well, dear, you look tired and exhausted?~
 ==Driz2P ~ That is exactly how I feel, Sandrah, and only your strength keeps me going at the moment. That is why I want to ask a favour of <CHARNAME>. The recent events have stressed me to the limit and I need a bit of time to restore and to contemplate over it all. My lifetime enemies have finally been destroyed with your help and a new future lies open for me.~
-== BSANDR~ What is your plan, sweetheart?~
+== BSANDR~ What is your plan, Drizzt?~
 ==Driz2P ~ I am an old friend of your father, Sandrah, and of your teachers back at the Waterdeep temple. It is there I want to go for a while and it is there you will find me should <CHARNAME> require my services again. Allow me a tenday of rest and meditation at the Temple of Mystra.~
 == BSANDR~ A decision that your healer would recommend to prevent your burnout, Drizzt. I am sure <CHARNAME> will understand your decision.~
 END
