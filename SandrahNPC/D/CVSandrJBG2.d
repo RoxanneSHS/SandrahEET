@@ -641,7 +641,7 @@ END
 
 IF~~ THEN BEGIN SanAmnAdvF
 SAY ~ Imoen is strong, do not forget she is a Bhaalspawn as well and she has grown significantly during our common adventures. Her personality has developped and she can defend herself quite well for the moment. Her situation is maybe not extremely pleasant but her life is not in imminate danger. If either Irenicus or the cowls had intended to kill her, she would not be alive anymore.~
-IF ~~ THEN REPLY ~Thank you, my darling counselor. This conversation has helped me a lot to order my own thoughts and disrupted feelings. I know that your words are not cold analysis but full of love and care for Imoen - and for me. (You kiss her intensively)~ DO ~ SetGlobal("SanAmnAdv1","LOCALS",1)~EXIT
+IF ~~ THEN REPLY ~Thank you, my counselor. This conversation has helped me a lot to order my own thoughts and disrupted feelings. I know that your words are not cold analysis but full of love and care for Imoen - and for me. (You kiss her intensively)~ DO ~ SetGlobal("SanAmnAdv1","LOCALS",1)~EXIT
 END
 
 IF~~ THEN BEGIN SanNotCapt11
@@ -729,7 +729,7 @@ IF ~~ THEN REPLY ~ And is that true, Sandrah?~ GOTO SanMysSucc16
 END
 
 IF ~~ THEN BEGIN SanMysSucc16
-SAY ~ (Again Sandrah seems to hesitate.) You can imagine that I have thought quite a bit about that issue, my darling. If it were true, it would mean with both Midnight and my father being the only spawns left from that bloodline...~
+SAY ~ (Again Sandrah seems to hesitate.) You can imagine that I have thought quite a bit about that issue, <CHARNAME>. If it were true, it would mean with both Midnight and my father being the only spawns left from that bloodline...~
 IF ~~ THEN REPLY ~ ...then you and your children if you would have them one day are the sole heirs of that blood!~ GOTO SanMysSucc17
 END
 
@@ -756,7 +756,7 @@ END
 
 IF~~ THEN BEGIN SanBLine11
 SAY~ Hm, I have stirred up something there, it seems.~
-IF ~~ THEN REPLY ~ You have given me a lot of hope with your knowledge, darling. It is a precious thought that the terrible heritage ends with my generation of Bhaalspawns - unless one of them would raise to godhood.~ GOTO SanBLine12
+IF ~~ THEN REPLY ~ You have given me a lot of hope with your knowledge, Sandrah. It is a precious thought that the terrible heritage ends with my generation of Bhaalspawns - unless one of them would raise to godhood.~ GOTO SanBLine12
 END
 
 IF~~ THEN BEGIN SanBLine12
@@ -1450,7 +1450,7 @@ IF~~THEN REPLY~ He is so very sure of himself and his trap. That attitude shall 
 END
 
 IF~~ THEN BEGIN SanFirkDung9
-SAY~ Please stay careful, my darling. Even if he is arrogant beyond any means he may have a reason to feel so superior.~
+SAY~ Please stay careful. Even if he is arrogant beyond any means he may have a reason to feel so superior.~
 IF~~THEN REPLY~ Mh, what is he, a Lich?~ GOTO SanFirkDung10
 IF~~THEN REPLY~ May he be a mischievous old dragon?~ GOTO SanFirkDung10
 IF~~THEN REPLY~ Is it a Bhaalspawn again who is waiting for me?~ GOTO SanFirkDung10
@@ -2297,7 +2297,7 @@ IF~~THEN REPLY~ The joke's on you, who's a jealous little girl now, hahaha?~DO~ 
 END
 
 IF~~ THEN BEGIN SanWarnIntr19
-SAY~ Since when have you become such a doomsayer, my darling?~
+SAY~ Since when have you become such a doomsayer, Sandrah?~
 IF~~THEN GOTO SanWarnIntr13
 END
 
@@ -3088,7 +3088,7 @@ IF~~THEN REPLY~ Even if we have to cooperate with the damned cowls for it?~DO~ S
 END
 
 IF~~THEN BEGIN SanSphereAdv2
-SAY~ The cowled wizards are part of the fragile balance that keeps Athkatla peaceful for the time being and as such even Mystra accepts their actions although their use of her gifts are far from being what they should be. The sphere in their hands would give them too much power as it would to any other user. You correctly spoke of responsibility, darling. This is what it will mean for us.~
+SAY~ The cowled wizards are part of the fragile balance that keeps Athkatla peaceful for the time being and as such even Mystra accepts their actions although their use of her gifts are far from being what they should be. The sphere in their hands would give them too much power as it would to any other user. You correctly spoke of responsibility. This is what it will mean for us.~
 IF~~THEN REPLY~ It's a powerful thing, isn't it? And very dangerous if it fell into the wrong hands?~GOTO SanSphereAdv3
 IF~~THEN REPLY~ I do not see much use in it for our goals, even if it's a powerful stronghold.~ GOTO SanSphereAdv3
 END
