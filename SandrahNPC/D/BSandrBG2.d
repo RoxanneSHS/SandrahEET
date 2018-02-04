@@ -65,7 +65,7 @@ IF~~THEN REPLY ~ And there comes that barrier of mist then?~ GOTO Sanjondreams9
 END
 
 IF~~ THEN BEGIN Sanjondreams9
-SAY ~ I could not have said it any better, my love. Unless we find a way through it the only other chance I see to find out about our enemy's motifs is from the man himself - once we find him.~
+SAY ~ I could not have said it any better, <CHARNAME>. Unless we find a way through it the only other chance I see to find out about our enemy's motifs is from the man himself - once we find him.~
 IF~~THEN REPLY ~ He has those deep blue eyes, I will never forget how they stared at me when he did those experiments on me in the dungeon...~ GOTO Sanjondreams10
 END
 
