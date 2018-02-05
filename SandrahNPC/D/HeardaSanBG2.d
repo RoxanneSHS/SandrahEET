@@ -69,7 +69,7 @@ IF ~Global("SanHaerRel3","LOCALS",2) ~ THEN BSANDR SanHaerMissedInt
 ~ A bird shall be free to sing and never be anyone's slave. You will not be kept by bounds to us that you do not accept yourself.~
 DO~ SetGlobal("SanHaerRel3","LOCALS",3) SetGlobal("SanHaerRel1","GLOBAL",2) RealSetGlobalTimer("SanHaerRelT","LOCALS",2000) ~
 ==BHAERDA ~ Words of utmost delight from the lips of a girl who can only be a dream, too wonderful to be real - both the words and the girl.~
-== BSANDR~ Come back to reality, wordly poet. Yes you must be a poet of sorts, a bard maybe?~
+== BSANDR~ Come back to reality, wordy poet. Yes you must be a poet of sorts, a bard maybe?~
 ==BHAERDA~ Your bard from now on, mylady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
 = ~ You are one not bound by the chains of this plane yourself! How come we have never met before?~
 == BSANDR~ What are you talking about, my confused bard? I am of this plane, a human who has never left Toril except in her dreams.~
