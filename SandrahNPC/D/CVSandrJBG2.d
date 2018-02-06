@@ -1194,20 +1194,7 @@ END
 
 IF~~ THEN BEGIN SanUnsee11
 SAY~ And it is a big one if you look at the size of those tunnels. Furthermore this Unseeing Eye is not alone.~
-IF~ OR(2) InParty("Yasraena") InParty("Viconia")~ THEN REPLY~ Any advice on our tactics then, Sandrah?~ GOTO SanUnsee12
-IF~ !InParty("Yasraena") !InParty("Viconia")~ THEN REPLY~ Any advice on our tactics then, Sandrah?~ GOTO SanUnsee13
-END
-
-IF~~ THEN BEGIN SanUnsee12
-SAY~ Let me go ahead with the drow while the rest of you wait here in safety. Drow are resistant against the gazes of beholders and I am protected by Mystra. Do not endanger the others uncessesarily. We will return when all is safe for you.~
-IF~~THEN REPLY~ Good luck - be very careful please, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
-IF~~THEN REPLY ~ Oh, don't play that lonely heroine role, Sandrah, it's all for one and one for all or something like this...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~ EXIT
-END
-
-IF~~ THEN BEGIN SanUnsee13
-SAY~ Let me go ahead while the rest of you wait here in safety. I am protected by Mystra against the gazes of beholders. Do not endanger the others uncessesarily. I will return when all is safe for you.~
-IF~~THEN REPLY~ Good luck - be very careful please, my love.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
-IF~~THEN REPLY ~ Oh, don't play that lonely heroine role, Sandrah, it's all for one and one for all or something like this...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~ EXIT
+IF~~THEN EXIT
 END
 
 // The Thumb
