@@ -32,7 +32,7 @@ IF~~THEN REPLY~ Brynnlaw again (Sigh)~ GOTO SanReplDr64
 END
 
 IF~~THEN BEGIN SanReplDr64
-SAY~ We need to contact a cleric named Martin who operates a portal for the travel to Cadderly. My father has documented this quite well in my toom here.~
+SAY~ We need to contact a cleric named Martin who operates a portal for the travel to Cadderly. My father has documented this quite well in my tome here.~
 IF~~THEN REPLY~ I hope the entry is not yet outdated. Well, we will see once we get there.~ DO~ SetGlobal("CreMar2","GLOBAL",1) SetGlobal("Timetolfiwd","GLOBAL",1)SetGlobal("AloDriz","GLOBAL",4)~EXIT
 END
 
