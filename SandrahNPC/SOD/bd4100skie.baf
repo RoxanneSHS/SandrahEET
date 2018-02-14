@@ -4,5 +4,6 @@ Global("bd_sandrah_ot","bd4100",0)
 IfValidForPartyDialog("CVsandr")
 THEN
 RESPONSE #100
+SetGlobal("L#SDCreateMainItem","GLOBAL",2)
 SetGlobal("bd_sandrah_ot","bd4100",1)
 END
