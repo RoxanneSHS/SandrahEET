@@ -11,6 +11,7 @@ IF
 Global("SanSoDSkieB","Global",2)
 Global("SanhellComm","ar2900",2)
 InParty("CVSandr")
+!InParty("L#2sdskie")
 THEN
 RESPONSE #100
 SetGlobal("SanSoDSkieB","Global",3)

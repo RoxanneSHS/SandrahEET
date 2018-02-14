@@ -10,6 +10,7 @@ IF
 Global("YagaShuraHeart1","GLOBAL",2)
 InParty("CVSandr")
 Global("SanSoDSkieB","Global",4)
+!InParty("L#2sdskie")
 CombatCounter(0)
 Delay(12)
 THEN
