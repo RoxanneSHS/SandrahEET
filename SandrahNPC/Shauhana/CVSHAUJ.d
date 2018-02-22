@@ -136,13 +136,14 @@ END
 IF~~THEN BEGIN Shaubrag3
 SAY ~ Those who have kissed the stars are blessed by those who have gone to the Other World. You do not kill them or the Other World will revenge them and take you from life early.~
 = ~ Brage talked to those in the Other World, those he had killed and those who chased him. Only he could see or hear them. My Clan put him in the pits but dared not touch him otherwise. ~
-= ~ When he was not in the stars he was my teacher. He talked to me and I learned. He showed my his signs in the book and I learned. When the stars called him he would fight me - and I learned again.~
-IF~~THEN REPLY ~ We met him once, when on the Sword Coast. They tried to cure him, but he must have escaped. He must have wandered for a long time to end in your land.~ GOTO Shaubrag4
+= ~ When he was not in the stars he was my teacher. He talked to me and I learned. He showed me his signs in the book and I learned. When the stars called him he would fight me - and I learned again.~
+IF~~THEN REPLY ~ We met him before, when on the Sword Coast. They tried to cure him, but he went on a long search. We met him again later. He must have wandered for a long time to end in your land.~ GOTO Shaubrag4
 END
 
 IF~~THEN BEGIN Shaubrag4
 SAY ~ He came in search of Sharkta Fai. Either to be cured from the stars or to be taken to the Other World.~
 IF~~THEN REPLY ~ Sharkta Fai? ~  GOTO Shaubrag5
+IF~~THEN REPLY ~ Sharkta Fai, we heard of it bfore. ~  GOTO Shaubrag5
 END
 
 IF~~THEN BEGIN Shaubrag5
