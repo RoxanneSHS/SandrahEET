@@ -7444,6 +7444,8 @@ EXTEND_BOTTOM
 ~ar0602.BCS~ ~SandrahNPC/Shauhana/Ar0602Minsc.baf~
 EXTEND_TOP
 ~BG1201.bcs~ ~SandrahNPC/Areas/ar8101shauprev.baf~
+EXTEND_TOP
+~Minsc.BCS~ ~SandrahNPC/Shauhana/Minscsh.baf~
 
 COMPILE
 ~SandrahNPC/Shauhana/cvshau.baf~

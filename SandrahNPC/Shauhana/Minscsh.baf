@@ -1,0 +1,10 @@
+IF
+HasItem("Imoenhp1")
+OR(3)
+AreaCheck("ar0406")
+AreaCheck("ar0400")
+AreaCheck("ar0700")
+THEN
+RESPONSE #100
+DestroyItem("Imoenhp1")
+END	
