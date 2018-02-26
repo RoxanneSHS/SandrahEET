@@ -1,5 +1,5 @@
 IF
-HasItem("Imoenhp1")
+HasItem("Imoenhp1",Myself)
 OR(3)
 AreaCheck("ar0406")
 AreaCheck("ar0400")
