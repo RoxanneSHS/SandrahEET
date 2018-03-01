@@ -6,4 +6,5 @@ THEN
 RESPONSE #100
 SetGlobal("L#SDCreateMainItem","GLOBAL",2)
 SetGlobal("bd_sandrah_ot","bd4100",1)
+ActionOverride("CVSandr",StartDialogueNoSet(Player1))
 END
