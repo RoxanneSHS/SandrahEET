@@ -41,6 +41,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanShauMinsc","GLOBAL",14)
 CreateCreatureObjectOffset("CVbootlk","Pellig",[25.25])
+Interact("CVShau") 
 END
 
 IF
