@@ -1864,7 +1864,7 @@ Continue()
 END
 
 IF
-Global("ElmRevDau","GLOBAL",1)
+!Global("ElmRevDau","GLOBAL",0)
 !Dead("CVSandr")
 THEN
 RESPONSE #100
