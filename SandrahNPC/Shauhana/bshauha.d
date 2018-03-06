@@ -60,7 +60,7 @@ END
 
 IF ~~THEN BEGIN ShauStor6
 SAY ~ Baah, don't be a fool, <CHARNAME>. An additional revenge for the dead of her beloved husband it was. To let me suffer endlessly as a slave instead of a sudden death. ~
-= ~ She could see me during my training period how I had to pleasure the male orcs and satisfy their lust for a human woman - or an orcish one that looked like one. To see me fighting in the pit for my life again and again with only one means to escape - to loose my final fight.~
+= ~ She could see me during my training period how I had to pleasure the male orcs and satisfy their lust for a human woman - or an orcish one that looked like one. To see me fighting in the pit for my life again and again with only one means to escape - to lose my final fight.~
 IF ~~THEN REPLY ~ All of that is now over, Shauhana. You have escaped this life. I will not let it happen to you again, I swear that.~ DO ~ SetGlobal("SanShauMeet","GLOBAL",9)~EXIT
 END
 
@@ -305,7 +305,7 @@ IF ~~ THEN BSHAUHA CityG4
 == BSandr ~ But he tried to achieve that by gathering the largest orc army that ever was united and started a war to conquer the realms.~
 == BSHAUHA ~ You know much, Sandrah - most of the time. But your knowledge about Ghotal comes from second hand sources, that paint this cruel picture of him. My old mentor had other things to tell about that time long ago. In his version, my grandfather united the clans to defend our lands against the aggressors from the south.~
 END
-++ ~ Let us put this interesting debate on hold for a minute, girls. Let Shauhana get her own impression of the town to loose her fears. Maybe we can find some time to inquire a bit of your history in the temples of wisdom of Athkatla.~ EXIT
+++ ~ Let us put this interesting debate on hold for a minute, girls. Let Shauhana get her own impression of the town to lose her fears. Maybe we can find some time to inquire a bit of your history in the temples of wisdom of Athkatla.~ EXIT
 ++ ~ Maybe that old blind shaman we found in the Slums knows a bit more. I have the impression he wanted me and Shauhana to meet each other.~
 EXIT
 
@@ -364,7 +364,7 @@ IF ~ Global("SanShauMinsc","GLOBAL",4)~ THEN BSHAUHA ShauMinsHint
 ~ Sandrah, you told me that you know where the man Minsc and his companion Boo is.~
 DO ~ SetGlobal("SanShauMinsc","GLOBAL",5)~
 == BSandr ~ Yes, my friend, we last have seen him in Athkatla. He mourns the death of his former companion, the witch he has guarded with all his power and blood.~
-== BSHAUHA ~This must be terrible...I mean to be somebody's guardian and to loose that one nevertheless.~
+== BSHAUHA ~This must be terrible...I mean to be somebody's guardian and to lose that one nevertheless.~
 == BSandr ~ You are very caring, Shauhana, unlike any orc I have ever met. Yes, it must be the worst experience one can have, especially as Minsc is totally blameless for the loss of Dynaheir, his witch. (Sandrah and Shauhana walk together for a long time in which your lover tells the half-orc girl the story of Dynaheir and Minsc.)~
 == BSHAUHA ~Maybe the only way to help him is to give him a new task in protecting a mage?~
 == BSandr ~ The strange prophecy you have mentioned - in combination with the fact that you have started to develop your magical skills recently... You are a strong warrior, Shauhana, but that does not mean you cannot need a bit of protection on the way that lies before you.~
@@ -384,7 +384,7 @@ DO ~ SetGlobal("SanShauMinsc","GLOBAL",7) RealSetGlobalTimer("SanShauMinTi","GLO
 == BSandr ~ You seem to be the subject of many prophesies, Shauhana. I know no other man than Minsc who would fit to your description, but before I would dare to raise any hope in you I want to be sure we do not miss any detail you can tell me about that man.~
 == BSHAUHA ~ My teacher described a big man who has lost everything he ever cared for except for his little animal friend. Someone to protect the growing magical skills I start to discover. His animal friend is a creature that talks to those who are supposed to understand.~
 == BSandr ~ Yes, my friend, Minsc mourns the death of his former companion, the witch he has guarded with all his power and blood.~
-== BSHAUHA ~This must be terrible...I mean to be somebody's guardian and to loose that one nevertheless.~
+== BSHAUHA ~This must be terrible...I mean to be somebody's guardian and to lose that one nevertheless.~
 == BSandr ~ You are very caring, Shauhana, unlike any orc I have ever met. Yes, it must be the worst experience one can have, especially as Minsc is totally blameless for the loss of Dynaheir, his witch. (Sandrah and Shauhana walk together for a long time in which your lover tells the half-orc girl the story of Dynaheir and Minsc.)~
 == BSHAUHA ~Maybe the only way to help him is to give him a new task in protecting a mage?~
 == BSandr ~ The strange prophecy you have mentioned - in combination with the fact that you have started to develop your magical skills recently... You are a strong warrior, Shauhana, but that does not mean you cannot need a bit of protection on the way that lies before you.~
@@ -467,11 +467,11 @@ EXIT
 
 CHAIN
 IF~Global("SanShaubogon","LOCALS",2)~ THEN BSHAUHA BooKidnap1
-~I wonder if the mighty warrior would persue another being apart from Boo in the same way, should he ever loose it...~
+~I wonder if the mighty warrior would persue another being apart from Boo in the same way, should he ever lose it...~
 DO~SetGlobal("SanShaubogon","LOCALS",3)~ 
 == BMINSC~ There is at least one for whom Minsc would go down to the Nine Hells and kick every Demon's butt until he gets her back.~
 == BSHAUHA ~ Her?~
-== BMINSC~ This berserker will never again loose anyone he cares for - hamster or witch. I swear that, my orc girl.~
+== BMINSC~ This berserker will never again lose anyone he cares for - hamster or witch. I swear that, my orc girl.~
 == BSHAUHA ~ I wonder whom you care more about, the orc girl or the witch?~
 == BMINSC~ Is there a difference, my Shauhana? Not for me.~
 ==Pellig~ (Was that whole orchestration really necessary, Boolerion?)~
@@ -485,9 +485,9 @@ DO~SetGlobal("SanShauMinsc","GLOBAL",23)RealSetGlobalTimer("SanShauMinTi","GLOBA
 == BMINSC~ (Minsc carelessly smears the blood from the small wound at his eyebrow all over his forehead.)~
 == BSHAUHA ~ (Shauhana dashes to him, hastily tearing out a cloth and her waterbottle on the way.) Hold still, Minsc, let me take care of it with the little paraphernalia I have got to help you.~
 == BMINSC~But, Shauhana, this is nothing - just a tiny scratch...~
-== BSHAUHA ~ Ssssh, do not resists or you will loose even more precious blood, my hero.~
+== BSHAUHA ~ Ssssh, do not resists or you will lose even more precious blood, my hero.~
 == BMINSC~ I will let you have it your way, dear, still I guess you overreact a bit.~
-== BSHAUHA ~Better this than loosing one I...I...I cannot stand to loose...~
+== BSHAUHA ~Better this than losing one I...I...I cannot stand to lose...~
 == BMINSC~ It feels much better already (Minsc tenderly takes hold of the orc girl's hand tending his forehead. He kisses her fingertips with closed eyes.) Such caring hands...~
 == BSHAUHA ~Minsc...~
 == BMINSC~ Shauhana...~
@@ -502,7 +502,7 @@ IF~ Global("SanShauMinsc","GLOBAL",26)~ THEN BSHAUHA MinscHurt
 DO~SetGlobal("SanShauMinsc","GLOBAL",27)RealSetGlobalTimer("SanShauMinTi","GLOBAL",1200)~
 == BMINSC~ Not all orc's butts are for buttkickin', it seems. (Laughs and smacks Shauhana's behind playfully.)~
 == BSHAUHA ~I knew you kissed the stars, you silly berserker! (She hits Minsc's forehead with the stick she has still in her hand.) I will teach you some manners! (In another second she has the warrior in a stranglehold.)~
-== BMINSC~What do orcs know about manners, hahaha...(He looses his balance under Shauhana's attack and they both tumble down the slope beside the road.)~
+== BMINSC~What do orcs know about manners, hahaha...(He loses his balance under Shauhana's attack and they both tumble down the slope beside the road.)~
 == BSHAUHA ~(When the bundle of the entwined bodies comes to a halt in the ditch below, you see that both have started to laugh and a second later they start to exchange kisses.)~
 END
 ++~(You lead your party onwards.) I hope those two will catch up with us before nightfall.~DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0) EndCutSceneMode() ~ EXIT
