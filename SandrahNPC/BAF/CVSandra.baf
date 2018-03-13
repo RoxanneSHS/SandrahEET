@@ -3833,9 +3833,9 @@ Interact(Player1)
 END
 
 IF
-NumItemsPartyGT("CVPirbag",0)
-GlobalGT("OrcPrison","GLOBAL",28)
 Global("PirTresDon","GLOBAL",0)
+GlobalGT("OrcPrison","GLOBAL",28)
+NumItemsPartyGT("CVPirbag",0)
 OR(3)
 AreaCheck("BG3400")
 AreaCheck("BG3402")
@@ -3846,8 +3846,8 @@ SetGlobal("PirTresDon","GLOBAL",1)
 END
 
 IF
-NumItemsParty("CVPirbag",0)
 Global("PirTresDon","GLOBAL",2)
+NumItemsParty("CVPirbag",0)
 THEN
 RESPONSE #100
 SetGlobal("PirTresDon","GLOBAL",3)
