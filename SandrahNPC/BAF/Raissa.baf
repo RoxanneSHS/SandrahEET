@@ -1,0 +1,13 @@
+IF
+OR(3)
+SpellCastOnMe([PC],CLERIC_LESSER_RESTORATION) 
+SpellCastOnMe([PC],CLERIC_RESTORATION) 
+SpellCastOnMeRES("cvresto","CVSandr")
+Global("Restored","LOCALS",0)
+THEN
+RESPONSE #100
+SetInterrupt(FALSE)
+SetGlobal("Restored","LOCALS",1)
+Wait(2)
+StartDialogNoSet([PC])
+END
