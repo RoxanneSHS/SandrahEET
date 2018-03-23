@@ -474,6 +474,32 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("M#Amber")
+Global("AmberBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("AmberBio","GLOBAL",1)
+SmallWait(1)
+ActionOverride("M#Amber",LeaveParty())
+ActionOverride("M#Amber",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("t#dace")
+Global("DaceBio","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("DaceBio","GLOBAL",1)
+SmallWait(1)
+ActionOverride("t#dace",LeaveParty())
+ActionOverride("t#dace",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 Global("BalthazarFights","GLOBAL",1)
 Global("BalthazarBio","GLOBAL",0)
 THEN
@@ -499,6 +525,19 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("BDCaelar")
+THEN
+RESPONSE #100
+SmallWait(1)
+SetGlobal("RTFCaeMove","GLOBAL",1)
+SmallWait(1)
+ActionOverride("BDCaelar",LeaveParty())
+ActionOverride("BDCaelar",EscapeAreaMove("bd2000",3224,1415,5))
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("O#Xan")
 THEN
 RESPONSE #100
@@ -516,6 +555,17 @@ RESPONSE #100
 SmallWait(1)
 ActionOverride("ADAngel",LeaveParty())
 ActionOverride("ADAngel",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("Ninde")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("Ninde",LeaveParty())
+ActionOverride("Ninde",DestroySelf())
 Continue()
 END
 
@@ -581,6 +631,17 @@ RESPONSE #100
 SmallWait(1)
 ActionOverride("SK#Neht",LeaveParty())
 ActionOverride("SK#Neht",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("Saerileth")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("Saerileth",LeaveParty())
+ActionOverride("Saerileth",DestroySelf())
 Continue()
 END
 
