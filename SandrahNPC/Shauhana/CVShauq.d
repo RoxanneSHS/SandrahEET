@@ -82,4 +82,4 @@ DO~SetGlobal("ShauPalHis","CVSH13",2)~
 ==CVMinsc~ Good berserkers are needed at all time to protect, mind that, my lovely queen.~
 ==CVShauQ ~Of course, Minsc, the best fighters will be in your lodge to protect the rest of us. ~
 ==Sanboy1~And Prince Giran will belong to them!~
-==CVShauQ~<CHARNAME>, in a while Wallrick and I will go on a journey to Waterdeep, Baldur's Gate and Athkatla to meet their leaders. I will try to negotiate a peace treaty to guarantee the safety of Clan's land and agree on a stable boundry to the Southern Realms. May your journeys as well be peaceful and successful.~ EXIT
+==CVShauQ~<CHARNAME>, in a while Wallrick and I will go on a journey to Waterdeep, Baldur's Gate and Athkatla to meet their leaders. I will try to negotiate a peace treaty to guarantee the safety of Clan's land and agree on a stable boundary to the Southern Realms. May your journeys as well be peaceful and successful.~ EXIT
