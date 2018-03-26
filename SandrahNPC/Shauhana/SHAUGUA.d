@@ -43,7 +43,7 @@ END
 CHAIN
 IF~~ THEN SHAUGUA ComeForEnd3
 ~A dark wizard from the east, corrupted by a knowledge of the Dark Weave. He needs what Myrkul had needed, the souls of the fallen - only he will not wait until the harvest is brought to him, he wants to reap himself.~
-==CVSandrJ~Szass Tam uses the power of the Dark Weave here on the primary plane!! <CHARNAME>, we must end this quickly - this ursupator has no idea what he is causing.~
+==CVSandrJ~Szass Tam uses the power of the Dark Weave here on the primary plane!! <CHARNAME>, we must end this quickly - this usurper has no idea what he is causing.~
 == SHAUGUA ~He is not attempting to follow the fallen god...~
 ==CVSandrJ~Oh, no, he wants much more...Where do we find him?~
 == SHAUGUA ~ He took my former habitation in the north east of these caves. You need my wardstone to enter it. I doubt that you can even get near to him, shielded by his Dark Matter he brought down here, I wish you could...~ DO~ GiveItemCreate("CVDaWard","CVSandr",0,0,0)~
