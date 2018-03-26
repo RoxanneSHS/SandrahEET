@@ -1,4 +1,14 @@
 IF
+Global("SanHintFactory","GLOBAL",15)
+Global("Saved","CVSH20",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Saved","CVSH20",1)
+SaveGame(0)
+END
+
+IF
 Global("Produce","CVSH20",4)
 Global("CVWinsSh20","CVSH20",0)
 THEN
