@@ -13,7 +13,7 @@ DO~SetGlobal("Bloomw","GLOBAL",8)~
 == BLOOMW ~ How about giving me some to copy them for our own library, Finch?~
 == IF_FILE_EXISTS BSUFINCH ~ What a great idea. It will spread our knowledge in the name of Deneir. And it will make the names of my friends popular throughout Faerun.~
 == BIMOEN2 IF ~ InParty("Imoen2") ~ THEN ~ Wow, <CHARNAME>, we will be heroes in books now! Remember, Finch, I was always nice to you, yes, only goodest things in the book about Imoen the Magnificent...~
-== IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Our names in books first and then bardsongs and stageplays will be made out of this. And the money all comes back to us, hehe.~
+== IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Our names in books first and then bard songs and stage plays will be made out of this. And the money all comes back to us, hehe.~
 == BSandr ~ Finch, so you are related to Clarissa Bloomwhiffler, our book merchant. The world is but a small village.~
 == BLOOMW ~ In deed.~
 END
@@ -32,7 +32,7 @@ DO ~  ReputationInc(-1) EscapeAreaMove("CVEBS1",294,355,5)~ EXIT
 
 CHAIN
 IF ~ Global("Bloomw","GLOBAL",2)~ THEN Bloomw BloSUQ
-~ Books for Adventurers, books for mages, bardsong books, maps, Bloomwhiffler's has it all!~
+~ Books for Adventurers, books for mages, bard song books, maps, Bloomwhiffler's has it all!~
 == BSandr ~ Bloomwhiffler? Do you know by any chance a Finch Bloomwhiffler?~
 == BLOOMW ~ My name is Clarissa Bloomwhiffler, have you maybe met my wandering cousin during your travels?~
 == BSandr IF~ Global("SUSanKnowsFinch","GLOBAL",1)~ THEN~ Oh, yes, she was travelling with our party for some time.~
@@ -72,7 +72,7 @@ EXIT
 
 CHAIN
 IF ~Global("Bloomw","GLOBAL",3)~ THEN BLOOMW BloSUCoI
-~ Books for Adventurers, books for mages, bardsong books, maps, Bloomwhiffler's has it all!~
+~ Books for Adventurers, books for mages, bard song books, maps, Bloomwhiffler's has it all!~
 == BSandr ~ Bloomwhiffler? Are you by any chance acquainted with Finch Bloomwhiffler?~
 == BLOOMW ~ My name is Clarissa Bloomwhiffler, have you maybe met my wandering cousin during your travels?~
 == BSandr ~ Oh, yes, I met her at Candlekeep a while back, she was copying some of the tomes there.~

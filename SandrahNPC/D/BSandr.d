@@ -19,7 +19,7 @@ END
 //Stolen Book for Candlekeep
 IF ~ Global("SanCldKBo","LOCALS",2)~THEN BEGIN SanCldKBoMin1
 SAY~ Books about Drow history and an infestation by spiders...<CHARNAME>, we had better prepare ourselves adequately before going down into those mines once again.~ 
-IF~~THEN REPLY~ What do you expect we will find, my counselor?~ GOTO SanCldKBoMin2
+IF~~THEN REPLY~ What do you expect we will find, my counsellor?~ GOTO SanCldKBoMin2
 IF~~THEN REPLY~Drow?~ GOTO SanCldKBoMin2
 END
 
@@ -54,7 +54,7 @@ END
 
 IF~~THEN BEGIN SanGolem3
 SAY~ Let me read it one of these days. We surely cannot build one - but to know how they are constructed can save our lives in case we meet one. To know how it is constructed will help us to attack the weak and crucial points in a battle against them.~
-IF~~THEN REPLY ~I see. To know how to construct them helps to deconstruct them.~DO~ SetGlobal("SanGolman","LOCALS",3)~EXIT
+IF~~THEN REPLY ~I see. To know how to construct them helps to de-construct them.~DO~ SetGlobal("SanGolman","LOCALS",3)~EXIT
 END
 
 //Took Eldoth
@@ -97,7 +97,7 @@ IF~~THEN REPLY ~ Say, Waterdeep beauty, has any admirer ever presented you with 
 END
 
 IF~~ THEN BEGIN SanCoraFl2
-SAY ~ As you may imagine, I had quite a number of admirers back at the City of Splendor. But none possessed the gifts or even the fantasy to come up with something like those beautiful flowers. I would be unable to make up my mind which one I like the best.~ 
+SAY ~ As you may imagine, I had quite a number of admirers back at the City of Splendour. But none possessed the gifts or even the fantasy to come up with something like those beautiful flowers. I would be unable to make up my mind which one I like the best.~ 
 IF~~THEN REPLY ~ An imaginative elf as an admirer is quite something. If only his feelings would be true, but I am afraid they are like the dream that produced this gift.~ EXIT
 IF~~THEN REPLY ~ As the saying goes *the trip is worth the fare.* Even if his feelings are nothing more than these dream flowers, it is still enjoyable to be admired in such a way.~ EXIT
 END
@@ -135,14 +135,14 @@ IF~~THEN REPLY~ Hm. Do you want me to destroy it before some poor victim gets tr
 END
 
 IF ~~ THEN BEGIN SanSpidWeb3
-SAY~ And here you stand like a God for this small insect universe with the power to interfer and turn it one way or another.~
+SAY~ And here you stand like a God for this small insect universe with the power to interfere and turn it one way or another.~
 IF~~THEN REPLY~ (You smile at her and take her hand.) Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 IF~~THEN REPLY~ (You reach out and destroy the fine webs. While you struggle to remove the sticky remains from your fingers, Sandrah has turned away and moved on.)~ EXIT
 IF~~THEN REPLY~ Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 END
 
 IF ~~ THEN BEGIN SanSpidWeb4
-SAY ~ To play God in that small insect universe? Do you think you must interfer just because you have the power to do so.~
+SAY ~ To play God in that small insect universe? Do you think you must interfere just because you have the power to do so.~
 IF~~THEN REPLY~ (You smile at her and take her hand.) Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
 IF~~THEN REPLY~ (You reach out and destroy the fine webs. While you struggle to remove the sticky remains from your fingers, Sandrah has turned away and moved on.)~ EXIT
 IF~~THEN REPLY~ Or the wisdom to use the power where it is really needed. Let us act on the clumsy traps that are set for us.~ EXIT
@@ -189,7 +189,7 @@ IF~~THEN REPLY ~ And no indication of the position of the treasure or whatever t
 END
 
 IF~~THEN BEGIN BookH44
-SAY ~ <CHARNAME>, let me try something. (The seeks around for the book she had thrown away and then leafes through its pages). Blablabla...*to reveal in the end that no man is and island - see illustration number one.* This made no sense in the text at all when I read it. But now we can see the hint.~
+SAY ~ <CHARNAME>, let me try something. (The seeks around for the book she had thrown away and then browses through its pages). Blablabla...*to reveal in the end that no man is and island - see illustration number one.* This made no sense in the text at all when I read it. But now we can see the hint.~
 IF~~THEN REPLY ~ What is the next passage? ~ GOTO BookH45
 END
 
@@ -237,7 +237,7 @@ END
 
 IF~~THEN BEGIN FiBookQ62
 SAY ~ That is true. His amnesia might have been a trick to conceal his real past life. The life of a pirate and maybe sole survivor of a pirate ship that has hidden a treasure on some island. But somebody from his past has recognised him and knows what is really behind his unreadable book that has not gone into public publishing.~
-=~ His other books are at least more readable. He could make a living out of them. But we cannot ask him anymore. He died in the Beard two winters ago.~
+=~ His other books are at least more readable. He could make a living out of them. But we cannot ask him any more. He died in the Beard two winters ago.~
 IF ~~ THEN EXIT
 END
 
@@ -304,7 +304,7 @@ END
 
 IF~~ THEN BEGIN MontCofPir2
 SAY ~ No, otherwise they would have noticed who we are right from the beginning. But at least we know now that our assumptions on the hidden treasure have some validity. It must be something very special we have discovered here, given all the people who had to die for it already.~
-IF~~THEN REPLY ~ And just think of how fiercly they continue on our trail. Somehow we have to find out more about that island soon.~ DO ~ SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~ EXIT
+IF~~THEN REPLY ~ And just think of how fiercely they continue on our trail. Somehow we have to find out more about that island soon.~ DO ~ SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~ EXIT
 IF~~THEN REPLY ~ I wish we soon find a way to shake them off from our trail.~ DO ~ SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~ EXIT
 END
 
@@ -321,12 +321,12 @@ END
 
 IF~ Global("SanSuBH","GLOBAL",34)~ THEN BEGIN ZombRet1
 SAY ~ (Sandrah has studied the nautical books you have gathered for some time, changing from one to the other and back again, now and then mumbling to herself.)~
-IF~~ THEN REPLY~ Well, counselor? Any ideas or insights?~ DO ~ SetGlobal("SanSuBH","GLOBAL",35) ~ GOTO ZombRet2
+IF~~ THEN REPLY~ Well, counsellor? Any ideas or insights?~ DO ~ SetGlobal("SanSuBH","GLOBAL",35) ~ GOTO ZombRet2
 END
 
 IF~~ THEN BEGIN ZombRet2
 SAY~ Please do not laugh at me, but come see. Place the books side by side on this bridge table. Now see here, it says *hoist the starboard mizzen lines* in this one, which means little to me.~
-= ~ But now I look into this construction book and it tells me how I make a mizzen sail. And it has an illustration of that sail, see here. Now look around the ship and see! (She points to one of the dozend sails on the ship.) This is the one - and here are the lines to operate it.~
+= ~ But now I look into this construction book and it tells me how I make a mizzen sail. And it has an illustration of that sail, see here. Now look around the ship and see! (She points to one of the dozens sails on the ship.) This is the one - and here are the lines to operate it.~
 IF~~ THEN REPLY~ Well, yes, we put the two books on the table side by side and then decipher the nautical words as we need them. Cumbersome but it may work. In the absence of any alternative we might as well try it.~ GOTO ZombRet3
 IF~~ THEN REPLY ~ We need a weather prophet still. If you really think we can manage it this way we need a calm sea for at least three days, but still a bit of wind. You don't propose to do such a thing in a storm.~ GOTO ZombRet3
 END
@@ -399,13 +399,13 @@ END
 
 IF~~ THEN BEGIN ZomHom22
 SAY ~ We still have everything, <CHARNAME>. Monteelah may have the documents, but remember that I made the translation during the cruise. And that I still have here in my magic parcel, should we ever have a need to consult the topic again.~
-IF ~~ THEN REPLY ~ Oh, my clever counselor, how could I forget that. You not even tricked the pirate to believe we have no idea what the papers where all about. You even have them translated for easy use. Even after all that time you can still surprise me.~ DO ~ SetGlobal("Homesail","GLOBAL",12)~ EXIT
+IF ~~ THEN REPLY ~ Oh, my clever counsellor, how could I forget that. You not even tricked the pirate to believe we have no idea what the papers where all about. You even have them translated for easy use. Even after all that time you can still surprise me.~ DO ~ SetGlobal("Homesail","GLOBAL",12)~ EXIT
 END
 
 // DSOTSC Vampire Castle
 IF ~ Global("SanWoodSt","LOCALS",1)~ THEN BEGIN SanMkStake1
 SAY ~ Vampires! That is what we are up to here. They have taken the child to make it one of their own kind.~
-IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend them, my counselor?~ GOTO SanMkStake2
+IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend them, my counsellor?~ GOTO SanMkStake2
 END
 
 IF ~~ THEN BEGIN SanMkStake2
@@ -420,7 +420,7 @@ IF~~ THEN REPLY ~ You can? How, with your magic?~ GOTO SanMkStake4
 END
 
 IF ~~ THEN BEGIN SanMkStake4
-SAY~ No magic is needed, my sweet little simpleton, just handycraft.~
+SAY~ No magic is needed, my sweet little simpleton, just handicraft.~
 IF~~THEN DO~ 
 StartCutSceneMode()
 MoveToPoint([719.317])
@@ -436,7 +436,7 @@ END
 
 IF ~ Global("SanWoodSt","LOCALS",5)~ THEN BEGIN SanMkStake11
 SAY ~ Vampires! That is what we are up to here. They have taken the child to make it one of their own kind.~
-IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend them, my counselor?~ GOTO SanMkStake12
+IF ~~ THEN REPLY~ Don't we need garlic and special weapons and such to defend them, my counsellor?~ GOTO SanMkStake12
 END
 
 IF ~~ THEN BEGIN SanMkStake12
@@ -451,7 +451,7 @@ IF~~ THEN REPLY ~ You can? How, with your magic?~ GOTO SanMkStake14
 END
 
 IF ~~ THEN BEGIN SanMkStake14
-SAY~ No magic is needed, my sweet little simpleton, just handycraft.~
+SAY~ No magic is needed, my sweet little simpleton, just handicraft.~
 IF~~THEN DO~ 
 StartCutSceneMode()
 MoveToPoint([3639.1398])
@@ -487,7 +487,7 @@ END
 
 IF~~ THEN BEGIN SanPackW12
 SAY ~ I admit my reasoning is still a bit vague, nothing but a light suspicion. Anyway, we have no other way as to cooperate with the villagers at the moment. They have this new ship which will be our only means to escape this island. Just let us be extremely careful, please.~
-IF ~~ THEN REPLY ~ Yes, let us keep our eyes open, counselor. I do not think the villager can be much of a danger to us.~  GOTO SanPackW13
+IF ~~ THEN REPLY ~ Yes, let us keep our eyes open, counsellor. I do not think the villager can be much of a danger to us.~  GOTO SanPackW13
 IF ~~ THEN REPLY ~ Do not worry your pretty head to much. It looks like we can easily overpower them from the little weaponry I have seen.~ GOTO SanPackW13
 END
 
@@ -511,13 +511,13 @@ END
 
 IF ~ Global("SanPackW","LOCALS",5)~ THEN BEGIN SanPackW30
 SAY ~ I am glad, <CHARNAME>, you have ended this in peace after all. (Kisses you.) ~
-IF~~THEN REPLY ~ I am glad, *WE* have ended this in peace after all, my steadfast counselor. Thank you.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanPackW31
-IF~~THEN REPLY ~ I have learned a bit during this quest. Bloodshed is not always the only solution. I learned a bit - not little of that I learned from you, my counselor.~ GOTO SanPackW31
+IF~~THEN REPLY ~ I am glad, *WE* have ended this in peace after all, my steadfast counsellor. Thank you.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanPackW31
+IF~~THEN REPLY ~ I have learned a bit during this quest. Bloodshed is not always the only solution. I learned a bit - not little of that I learned from you, my counsellor.~ GOTO SanPackW31
 IF~~THEN REPLY ~ Gorion taught me that bloodshed is not always the only solution.~ GOTO SanPackW31
 END
 
 IF~~ THEN BEGIN SanPackW31
-SAY~ This is not over yet, <CHARNAME>, and some bloodshed may not be avoidable after all. Kaishas mentioned their chieftain who was send out to arrange their escape from the island. She said that maybe he will not so peacefully remove the *gift* from us. Selaad, who misused us from the very beginning in the most cunning way under his Mendas disquise.~ 
+SAY~ This is not over yet, <CHARNAME>, and some bloodshed may not be avoidable after all. Kaishas mentioned their chieftain who was send out to arrange their escape from the island. She said that maybe he will not so peacefully remove the *gift* from us. Selaad, who misused us from the very beginning in the most cunning way under his Mendas disguise.~ 
 IF~~ THEN DO ~SetGlobal("SanPackW","LOCALS",6) AddexperienceParty(1800)~ EXIT
 END
 
@@ -541,7 +541,7 @@ END
 IF ~ Global("SanAbbat","LOCALS",1)~ THEN BEGIN SanFindWost1
 SAY ~ Abbathor? We have heard that dwarfen god's name before, do you remember, <CHARNAME>?~
 IF ~~ THEN REPLY ~ Can you refresh my memory, Sandrah? I cannot recall the details.~ GOTO SanFindWost2
-IF ~~ THEN REPLY ~ Those mysterious dwarfes that were somehow involved with the Nashkel mines, right? The snakes of Abbathor. Can you give me some further insight, counselor?~ GOTO SanFindWost2
+IF ~~ THEN REPLY ~ Those mysterious dwarves that were somehow involved with the Nashkel mines, right? The snakes of Abbathor. Can you give me some further insight, counsellor?~ GOTO SanFindWost2
 END
 
 IF ~~ THEN BEGIN SanFindWost2
@@ -608,7 +608,7 @@ END
 
 IF~~THEN BEGIN MetKoveras3
 SAY ~ You are the child of the God of Murder but you are no murderer. As such you would have been considered if you had attempted to strike him right now. We need to let him react now that his plan to have you remove the Iron Throne leaders for his benefit and take the blame as their murderer onto you will fail. He must end up visible as the villain he truely is - not you.~
-IF~~THEN REPLY ~ Thank you, counselor. Let us continue and see what else we can find out to our advantage.~ DO~ SetGlobal("SanLibCommt2","LOCALS",2)~ EXIT
+IF~~THEN REPLY ~ Thank you, counsellor. Let us continue and see what else we can find out to our advantage.~ DO~ SetGlobal("SanLibCommt2","LOCALS",2)~ EXIT
 END
 
 IF ~ Global("SanLibCommt3","LOCALS",1)~ THEN BEGIN SanPrat1
@@ -630,13 +630,13 @@ END
 
 IF~~THEN BEGIN  SanPrat4
 SAY ~ Sarevok has lost all remaining interest in the Iron Crisis and its effects. His next goal as we now know is to ascend to become one of the Dukes of Baldur's Gate. This will keep him in that city and busy for quite some ten-days still. Political work like that moves slow.~
-IF ~~ THEN REPLY ~ My initial impuls was to follow him the Baldur's Gate and strike before he can gain any more power, but maybe that should be reconsidered.~ GOTO SanPrat5
+IF ~~ THEN REPLY ~ My initial impulse was to follow him the Baldur's Gate and strike before he can gain any more power, but maybe that should be reconsidered.~ GOTO SanPrat5
 IF ~~ THEN REPLY ~ It would be really cumbersome to stay in the underground for a prolonged time in Baldur's Gate and wait for the right moment to strike at him.~GOTO SanPrat5
 END
 
 IF~~THEN BEGIN  SanPrat5
-SAY ~ My idea would be to avoid Baldur's Gate for the moment as we have no direct mission to fulfill. Let us keep hidden and gather strength and information on the Sword Coast. Our moment will come when he really makes his move towards the Dukehood. Then we must be there with the evidence of his full treachery and let him stand naked in the view of all.~
-IF~~ THEN REPLY~ Fine. But first let us get out of this dump and for a good meal and a warm bath. And a fine linnen bed to enjoy...~ DO ~ SetGlobal("SanLibCommt3","LOCALS",2)~EXIT
+SAY ~ My idea would be to avoid Baldur's Gate for the moment as we have no direct mission to fulfil. Let us keep hidden and gather strength and information on the Sword Coast. Our moment will come when he really makes his move towards the Dukehood. Then we must be there with the evidence of his full treachery and let him stand naked in the view of all.~
+IF~~ THEN REPLY~ Fine. But first let us get out of this dump and for a good meal and a warm bath. And a fine linen bed to enjoy...~ DO ~ SetGlobal("SanLibCommt3","LOCALS",2)~EXIT
 END
 
 // Undercity
@@ -672,7 +672,7 @@ END
 // Durlag's Riddles
 IF~ Global("SanDurlAnsw","LOCALS",1)~ THEN BEGIN DurlAnsw
 SAY ~ Looks like they want to test our knowledge in lore here.~
-IF~~THEN REPLY ~ Counselor, this is your domaine, please.~ GOTO DurlAnsw2
+IF~~THEN REPLY ~ counsellor, this is your domain, please.~ GOTO DurlAnsw2
 IF~~THEN REPLY ~ Oh, no, not riddles? Can you help me out with those?~ GOTO DurlAnsw2
 IF~~THEN REPLY ~ I love riddles. You'll soon see how good I am at that.~EXIT
 END
@@ -782,15 +782,15 @@ END
 
 IF~~THEN BEGIN CasOwn3
 SAY ~ I am not sure why I asked the question myself. I love this adventuring life with you by my side - all we see and all we learn. And we are still so young. But maybe after some time there will be this yearning for a place of our own, be it a castle or a hut by the seaside, I do not know.~
-= ~ See, I still have a home I can return to any time. And of course you will be welcome there anytime and always.~
+= ~ See, I still have a home I can return to any time. And of course you will be welcome there any time and always.~
 IF~~THEN REPLY ~ But I think I feel what you try to express, it will always be different than our own place - our own home. So much can happen with time, yeah, let's just take it as it comes as long as we take it together. (Embrace her and hug her dearly.)~ DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 IF~~THEN REPLY ~ (Sigh) You never give up that idea, Sandrah.~DO ~ SetGlobal("SanCasOwn","GLOBAL",2)RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
 
 IF~ Global("SanCasOwn","GLOBAL",3)~ THEN BEGIN CasOwn4
-SAY~ Do you remember that other occassion when we were standing high on a castle overviewing the vast land one former ruler called his own?~
+SAY~ Do you remember that other occasion when we were standing high on a castle overlooking the vast land one former ruler called his own?~
 IF~~ THEN REPLY ~ I do. And once again we see how such a dream of power and wealth has crumbled. The concept does not seem to work in the long run.~ GOTO CasOwn5
-IF~~ THEN REPLY ~ And again I see that such a shortsighted fortification of power, oppression, and exploitation comes to a certain end. It is not what I aim for. All I want is a little calm and cosy place for us, beloved.~ GOTO CasOwn5
+IF~~ THEN REPLY ~ And again I see that such a short sighted fortification of power, oppression, and exploitation comes to a certain end. It is not what I aim for. All I want is a little calm and cosy place for us, beloved.~ GOTO CasOwn5
 IF ~~ THEN REPLY ~ If ever I were given the power to rule such a place, things would turn out different. The ones in the places we have seen so far have all failed.~ GOTO CasOwn6
 END
 
@@ -804,13 +804,13 @@ IF~~ THEN BEGIN CasOwn6
 SAY ~ And what would you do different? Surely not higher walls and greater forces. Those do not hold up the corruption that comes from within.~
 IF~~THEN REPLY ~ You are right. You have to build on the loyalty and love of those around you. Give your people an adequate share, use power and resources in such a way that many under your rule may be able to live a protected and happy life. No one can persist on his own strength alone for a long time. (You kiss, Sandrah.) ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 IF~~THEN REPLY ~ You are right. You have to build on the loyalty and love of those around you. Give your people an adequate share, use power and resources in such a way that many under your rule may be able to live a protected and happy life. No one can persist on his own strength alone for a long time. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
-IF~~THEN REPLY ~ You are right. An iron hand that leaves no doubt and a counselor that detects any trace of betrayal before my power could be questioned. An elite force rather than a waste mass of mediocrity. Maybe just you and me - maybe just me. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
+IF~~THEN REPLY ~ You are right. An iron hand that leaves no doubt and a counsellor that detects any trace of betrayal before my power could be questioned. An elite force rather than a waste mass of mediocrity. Maybe just you and me - maybe just me. ~ DO ~ SetGlobal("SanCasOwn","GLOBAL",4) RealSetGlobalTimer("SanCasOwnT","LOCALS",ONE_DAY) ~ EXIT
 END
 
 IF~ Global("SanCasOwn","GLOBAL",5)~ THEN BEGIN CasOwn7
 SAY ~ Another sad castle with another sad story. Any time we stand high up on one of them where one has this magnificent view of the enourmous lands all around us, I get this strange feeling.~
 IF~~THEN REPLY ~ I see what you mean. We have not found one of them yet that tells the tale with a happy ending.~ GOTO CasOwn8
-IF~GlobalGT("SanVisitedWD","GLOBAL",0)~THEN REPLY ~ I remember one occassion when we stood together on a high tower overlooking everything and it was one of the happiest days of my life. ~ GOTO CasOwn9
+IF~GlobalGT("SanVisitedWD","GLOBAL",0)~THEN REPLY ~ I remember one occasion when we stood together on a high tower overlooking everything and it was one of the happiest days of my life. ~ GOTO CasOwn9
 END
 
 IF~~ THEN BEGIN CasOwn8
@@ -830,7 +830,7 @@ END
 
 IF ~ Global("ValiantKN","GLOBAL",1)~ THEN BEGIN ValiantKN1
 SAY ~ So this is the famous Valiant, the sword of the crusader on a quest to rid the Sword Coast of a vicious ogre horde. And the ogres have possessed it for the many generations that have passed since they defeated the ancient heroes. But look, the blade seems to have maintained its purity throughout the decades in the ogre's possession.~
-IF~~ THEN REPLY ~ Another ancient relict, but still useable I think. Or is this another sword that has a curse or something like that on it?~  GOTO ValiantKN2
+IF~~ THEN REPLY ~ Another ancient relict, but still usable I think. Or is this another sword that has a curse or something like that on it?~  GOTO ValiantKN2
 IF~~ THEN REPLY ~ Interesting. I assume you could tell us more of the sword's story, Sandrah, but I do not think we have the time now for a history lesson.~ GOTO ValiantKN2
 END
 
@@ -859,12 +859,12 @@ END
 
 IF ~Global("ValiantKN","GLOBAL",7)~ THEN BEGIN ValiantKN7
 SAY ~ Now we know the answer about the ogre question. It looks like we have another pack of bounty hunters on our trail.~
-IF~~ THEN REPLY ~ A brother was mentioned, another mighty ogre. I doubt that we can reason with that one any better than with the prevoius ones.~ GOTO ValiantKN8
+IF~~ THEN REPLY ~ A brother was mentioned, another mighty ogre. I doubt that we can reason with that one any better than with the previous ones.~ GOTO ValiantKN8
 END
 
 IF ~~ THEN BEGIN ValiantKN8
 SAY ~ I would prefer if we could find this Kharaz and settle the issue once and for all. You heard this Wrarkh. They hunt us just to please and be rewarded by this Kharaz.~
-IF~~ THEN REPLY ~ And you have no idea, counselor, what we could do? No ogre castle or headquarter we could storm? ~ GOTO ValiantKN9
+IF~~ THEN REPLY ~ And you have no idea, counsellor, what we could do? No ogre castle or headquarters we could storm? ~ GOTO ValiantKN9
 END
 
 IF ~~ THEN BEGIN ValiantKN9
@@ -875,7 +875,7 @@ END
 IF ~ Global("ValiantKN","GLOBAL",15) ~ THEN BEGIN KhaDead
 SAY ~ Now that this Kharaz is defeated, we will hopefully have overcome those ogres hunting us constantly.~
 IF~~ THEN REPLY ~ I hope the news will get to them soon. That was really a pest.~ GOTO KhaDead2
-IF~~ THEN REPLY ~ I'm ready for them anytime, those bloody bastards.~ GOTO KhaDead2
+IF~~ THEN REPLY ~ I'm ready for them any time, those bloody bastards.~ GOTO KhaDead2
 END
 
 IF ~~ THEN BEGIN KhaDead2
@@ -902,7 +902,7 @@ IF~~ THEN REPLY~ He has left yestereve when you were upstairs already. He asked 
 END
 
 IF~~THEN BEGIN  SanAjaLeft2
-SAY~ I am sorry for what I have done to our group, <CHARNAME>. We have lost a good friend and a valuable comrad due to me. Me and my selfishness.~
+SAY~ I am sorry for what I have done to our group, <CHARNAME>. We have lost a good friend and a valuable comrade due to me. Me and my selfishness.~
 IF~~ THEN REPLY~ You have probably lost the most of us all, my love. Your dream of what is possible in love has shattered.~ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",21)~ GOTO SanAjaLeft3
 END
 
@@ -974,7 +974,7 @@ END
 IF ~ Global("SanDyResc","GLOBAL",1) ~ THEN BEGIN  SanDyResc1
 SAY ~ <CHARNAME>, we have come to this place to rescue the imprisoned Dynaheir we were told about. But we have no space in the party to take her along and back to safety. Have you considered this already?~
 IF~~THEN REPLY ~ We will free her and heal her and send her back to Nashkel then, where she will be safe. That is all I intend to do for her, which I think is quite a lot.~ DO ~ SetGlobal("SanDyResc","GLOBAL",2) ~ GOTO SanDyrescS
-IF~~THEN REPLY ~ Hm, you are right. If we find her alive, which I dearly hope, we are obliged to take her back to safety even if we do not choose her as a new companion. What do you suggest counselor?~ DO ~ SetGlobal("SanDyResc","GLOBAL",2) ~ GOTO SanDyrescK
+IF~~THEN REPLY ~ Hm, you are right. If we find her alive, which I dearly hope, we are obliged to take her back to safety even if we do not choose her as a new companion. What do you suggest counsellor?~ DO ~ SetGlobal("SanDyResc","GLOBAL",2) ~ GOTO SanDyrescK
 IF~~THEN REPLY ~ Hm, you are right. If we find her alive, which I dearly hope, we are obliged to take her back to safety. I will find a solution in time, Sandrah, thank you for reminding me.~ DO ~ SetGlobal("SanDyResc","GLOBAL",2) ~  EXIT
 END
 
@@ -1366,8 +1366,8 @@ END
 
 IF ~~ THEN BEGIN Hesitate1
 SAY ~ (Sandrah touches your face gently) I see, my love. I am not as helpful as I considered myself to be. I don't make things easier with my feelings for you. ~
-= ~ I had not considered this at all when making my plans. You must know I am confused a little myself - laughs - not very good for one who set out to be your counselor. Let's face the day together in good spirit. (She gives you a smile that makes your heart sing.) ~
-IF ~~ THEN REPLY ~ You are a good counselor after all. Let us face *IT* together, whatever *IT* may be today. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",6) SetGlobal("SandrahLT","GLOBAL",3)RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER) ~ EXIT
+= ~ I had not considered this at all when making my plans. You must know I am confused a little myself - laughs - not very good for one who set out to be your counsellor. Let's face the day together in good spirit. (She gives you a smile that makes your heart sing.) ~
+IF ~~ THEN REPLY ~ You are a good counsellor after all. Let us face *IT* together, whatever *IT* may be today. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",6) SetGlobal("SandrahLT","GLOBAL",3)RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER) ~ EXIT
 END
 
 
@@ -1386,7 +1386,7 @@ END
 
 IF ~~THEN BEGIN SanPeFu3
 SAY ~ I have often fought off the desire to do it, knowing you would need the bit of rest you can get these days. It is rare enough that you can get enough sleep to stand the perils of each new day.~
-IF ~~ THEN REPLY~ True, my healer and counselor. But do not forget that you yourself are a constant source of strength for me.~  GOTO  SanPeFu4
+IF ~~ THEN REPLY~ True, my healer and counsellor. But do not forget that you yourself are a constant source of strength for me.~  GOTO  SanPeFu4
 IF ~~THEN REPLY ~ As your captain I command you to wake me more often in the future for such a moment. These rare moments alone with you give me more strength than any week of sleep can.~ GOTO  SanPeFu4
 IF ~~ THEN REPLY~ I have long given up the dream of some privacy while we are on the road.~ GOTO SanPeFu6
 END
@@ -1394,7 +1394,7 @@ END
 IF ~~THEN BEGIN SanPeFu4
 SAY ~ (She sits down beside you, facing the rising sun and resting her cheek on your shoulder.)~ 
 = ~ This is the weight of the responsibility you have as a leader, <CHARNAME>. It is heavy and disturbing, and you were not prepared for it. Given that, you master it really well.~
-IF~~THEN REPLY ~ I have a competent lieutenant and counselor by my side making it much easier to bear.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu5
+IF~~THEN REPLY ~ I have a competent lieutenant and counsellor by my side making it much easier to bear.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu5
 IF~~THEN REPLY ~ I have a loving companion who carries that weight with me. Thank you for all.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO  SanPeFu5
 IF~~THEN REPLY ~ Yes, I do, if I were only not distracted all the time.~  DO ~ SetGlobal("SANDRAHLT","GLOBAL",5) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
 END
@@ -1407,7 +1407,7 @@ END
 IF ~~THEN BEGIN SanPeFu6
 SAY ~ (She sits down beside you, facing the rising sun.)~
 = ~ This is the weight of the responsibility you have as a leader, <CHARNAME>. It is heavy and disturbing, and you were not prepared for it. Given that, you master it really well.~
-IF~~THEN REPLY ~ I have a competent lieutenant and counselor by my side making it much easier to bear.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu7
+IF~~THEN REPLY ~ I have a competent lieutenant and counsellor by my side making it much easier to bear.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  SanPeFu7
 IF~~THEN REPLY ~ I have a loving companion who carries that weight with me. Thank you for all.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO  SanPeFu7
 IF~~THEN REPLY ~ Yes, I do, if I were only not distracted all the time.~  DO ~ SetGlobal("SANDRAHLT","GLOBAL",5) RealSetGlobalTimer("SandrahMorningTalkTime","GLOBAL",SANROM_TIMER)~ EXIT
 END
@@ -2139,7 +2139,7 @@ DO ~SetGlobal("SanImoPCInterest","GLOBAL",2)~
 == Bimoen  ~WOW, YOU ARE A LOVESICK CITY BABE FALLEN FOR MY LITTLE <CHARNAME>!!! WOW.~
 == BSANDR   ~I might as well have given the news to the Beregost town crier, could I?~
 =   ~(Sigh) If I ever need some older sister's advice in matters of the heart I will confide with you.~
-== Bimoen  ~HEY ISN'T THAT GRAND. I'm Imoen, the Counselor Of Love, for my little ward's big city sweetie. Hey, we're besta friends now, Sandrah, are we.~
+== Bimoen  ~HEY ISN'T THAT GRAND. I'm Imoen, the counsellor Of Love, for my little ward's big city sweetie. Hey, we're besta friends now, Sandrah, are we.~
 == BSANDR   ~(sigh)~
 == Bimoen   ~ Now, here's just one thing, darling Sandrah. You cannot borrow any of my PINK underware to tease  <CHARNAME>. (Starts to roll in the grass laughing like mad.)~
 == BSANDR  ~ (Picks up some nuts in revenge and starts throwing them at Imoen.)~
@@ -2269,19 +2269,19 @@ DO~SetGlobal("ImoHousew","GLOBAL",4)~
 ==BSANDR~(Sigh) Oh, I wish I could stop my thoughts - if only to not become some wrinkled old hag.~
 ==Bimoen~But you cant and the more you try not to, the more it creeps into ya brain...~
 =~I know that...only way is to talk with some besta friend about it, that's what I'd do...by the way, I'm all ears.~
-==BSANDR~Imoen, the counselor?~
+==BSANDR~Imoen, the counsellor?~
 ==Bimoen~You bet.~
 ==BSANDR~I was thinking about something as trivial as good and evil...~
 ==Bimoen~That's not trivial...and it means ya thinking 'bout <CHARNAME>, and that they all think <PRO_HESHE>'s evil and such, right?~
 ==BSANDR~But you know better, you know better than anyone?~
-==Bimoen~And you do as well or you wouldn't be here. Listen and listen what counselor Imoen tells you.~
+==Bimoen~And you do as well or you wouldn't be here. Listen and listen what counsellor Imoen tells you.~
 =~<CHARNAME>'s as evil as any <PRO_GIRLBOY> can be, teasing <PRO_HISHER> nice little red haired sister all day...and killing for money, of course.~
 ==BSANDR~You are joking! Killing for money?~
 ==Bimoen~I swear and swear it! See, <PRO_HESHE> took 5gp from Reevor to kill the rats in the warehouse, that's how evil <PRO_HESHE> is.~
 ==BSANDR~(Laughs) I bet the evil part of that is that <PRO_HESHE> did not give you half of it afterwards.~
 ==Bimoen~You got it. I only told you what your heart was knowin' already, so why torture that brain of yours and get wrinkles like Auntie Jaheira.~
-==BSANDR~Counselor Imoen, that was a really good advice.~
-==Bimoen~No wonder, I had the chance to learn it from the bestest counselor on the Sword Coast.~EXIT
+==BSANDR~counsellor Imoen, that was a really good advice.~
+==Bimoen~No wonder, I had the chance to learn it from the bestest counsellor on the Sword Coast.~EXIT
 
 CHAIN
 IF ~ Global("SanImoNashInt","GLOBAL",1) ~ THEN BSANDR SanImoNashInt1
@@ -2353,7 +2353,7 @@ IF ~ !PartyHasItem("Sanwi2") ~ THEN REPLY ~ I have heard that, my friend. There 
 CHAIN
 IF~~ THEN BSANDR ImoLoveLet2
 ~ What do you think, Imoen, should we look out for a nice gift here in town to bring along for Henning?~
-== Bimoen ~ Great idea, besta counselor. I've seen this reaaaaly rare expensive dark Calimsham chocolate in that shop a minute ago. He loves such sweet things, I know.~
+== Bimoen ~ Great idea, besta counsellor. I've seen this reaaaaly rare expensive dark Calimsham chocolate in that shop a minute ago. He loves such sweet things, I know.~
 == BSANDR ~ (Laughs) I do not think he will have the slightest chance to taste it as long as you are around. His mouth will be totally occupied with kissing you.~
 == Bimoen ~ You bet. Come let's get it quickest. Nashkel, here we come!~ EXIT
 
@@ -2942,7 +2942,7 @@ DO ~ SetGlobal("SanXanPink","LOCALS",2)~
 == BXANNN ~ Sure a curiosity like me attracts the stares of the crowd.~
 == BSANDR ~ I would not be so unsettled if that were the reason for their glances. I feel I have to be very watchful to protect...~
 == BXANNN ~ ...your interests?~
-== BSANDR ~ Is that not obvious? (Sandrah blushes like a teenage girl, once again you recognize that your counselor actually is not that far from those years yet.)~
+== BSANDR ~ Is that not obvious? (Sandrah blushes like a teenage girl, once again you recognize that your counsellor actually is not that far from those years yet.)~
 == BXANNN ~ I may just be able to endure these garments for a little while more, if a lady of such distinction like you, Sandrah, is able to respect the man behind the outfit.~
 == BSANDR ~ Oh, yes, I do. (She starts to fondle one of Xan's new earrings and blows a soft kiss in his earlobe.)~
 EXIT
@@ -3109,7 +3109,7 @@ CHAIN
 IF ~ Global("XanDecide","GLOBAL",2) ~ THEN BSANDR Xantakepc
 ~ Xan, my elf, I have never seen you so very happy before, but you have avoided me all morning, just as if you do not want to share this happiness with me.~
 DO ~ SetGlobal("XanDecide","GLOBAL",3) ~
-== BXANNN ~ Oh, sweetest of counselors, if I could only...I want so to share it with you of all people on Toril, but then...You have made it possible for me and then at the same time it is you that will be the saddest woman in the Realms by this eve.~
+== BXANNN ~ Oh, sweetest of counsellors, if I could only...I want so to share it with you of all people on Toril, but then...You have made it possible for me and then at the same time it is you that will be the saddest woman in the Realms by this eve.~
 == BSANDR ~ Xan, listen carefully. I will not be the saddest woman at all, just the opposite, my happy elf. To see you in this mood makes this day a happy day for me as well...~
 == BXANNN ~ But if you had an idea of the reason...~
 == BSANDR ~ Psst, I told you to listen. Only one thing can make a creature feel like you do - Love. You have finally come to terms with your struggling feelings and are now sure. You love <CHARNAME>.~
@@ -3184,7 +3184,7 @@ DO ~ SetGlobal("SanXanSurv","LOCALS",2)~
 == BSANDR ~ In a way one could call your mission to be accomplished by now...~
 == BXANNN ~ In a way - yes...report to my home...be send out for another hopeless mission...~
 == BSANDR ~ ...this one was not so hopeless after all.~
-== BXANNN ~ But will the next one be accompanied by a loving fearless counselor who wields the deadly hammer beside the useless Moonblade once more?~
+== BXANNN ~ But will the next one be accompanied by a loving fearless counsellor who wields the deadly hammer beside the useless Moonblade once more?~
 == BSANDR ~ Has the Moonblade already required a new task of you, my love?~
 == BXANNN ~ It hasn't...but it surely will call me to my doom in just a while.~
 == BSANDR ~ Who knows. Maybe your mission is not finished yet. For my part, I have learned that my path will be with <CHARNAME> still further. The journey has just begun. As you have not received a new mission yourself, one can assume - and hope - you will stay with us still.~
@@ -4048,7 +4048,7 @@ DO ~ SetGlobal("SanAjanProp2","GLOBAL",6)~
 == BAJANT ~ And you really approve to it, Sandrah?~
 == BSANDR ~ I told you that I would, did I not? And judging by the ring she now wears she did the same.~
 == BAJANT ~ I am sure your council in the matter was of some importance.~
-== BSANDR ~ No, it was not, Ajantis, you should know that. As I am part of it myself, my role was not that of a counselor here. I talked to <CHARNAME> as openly about my own feelings as I do to you. Her decision is hers alone. ~
+== BSANDR ~ No, it was not, Ajantis, you should know that. As I am part of it myself, my role was not that of a counsellor here. I talked to <CHARNAME> as openly about my own feelings as I do to you. Her decision is hers alone. ~
 == BAJANT ~ You make me a very happy man with your words, Sandrah. If I had not loved you before, I would do it now. Still - your own answer to the same question would have been *no*, right?~
 == BSANDR ~ Oh, sweetling, why bother, it has all turned out right. Just - <CHARNAME> is a very passionate woman.~
 == BAJANT ~ What do you try to suggest by that, Sandrah?~
@@ -4975,7 +4975,7 @@ IF ~~ THEN BSANDR EdwCurs2
 == Bedwin_ ~ LIAR! I was a competent red wizard until I met you. It started when you threatened me. You, and you alone are behind all this. And you cheat your beloved leader with your intrigue!~
 == BSANDR ~ Stop your senseless accusations, Mageling. I even used my healer skills on you when you needed it. I do my best for <CHARNAME>'s group at all times.~
 END
-++ ~ Calm down, both of you. Sandrah, I believe you, because I know you well enough. You did not do it, but the goddess you worship has acted against Edwin nevertheless. So now I ask you as my counselor for an advice, please.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ EdwCurs3
+++ ~ Calm down, both of you. Sandrah, I believe you, because I know you well enough. You did not do it, but the goddess you worship has acted against Edwin nevertheless. So now I ask you as my counsellor for an advice, please.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ EdwCurs3
 ++ ~ If you two cannot get along with each other, I will not risk our goals and the benefit of the rest to suffer from your childish quarrel. Find a way to cooperate or you two will leave.~ + EdwCurs3
 
 CHAIN
@@ -4983,7 +4983,7 @@ IF ~~ THEN BSANDR EdwCurs3
 ~ (It is obvious, that Sandrah is badly hurt by your mistrust.) ~
 == Bedwin_ ~ My reputation as a wizard is destroyed by that priestess. I am powerless, she has cursed me and she has weakened you, <CHARNAME>, with her mislead arrogance. It is she who has to go.~
 == BSANDR ~ (Sandrah is very calm when she speaks again.) I see only one solution, <CHARNAME>. I admit my goddess is probably the reason for Edwin's state, punishing him for his misuse of her gifts and his hunger for power. I did not ask her to do this and I have no way to make her undo it.~
-=~ All I can do at this moment is to give you my counselor's advice. It looks as if only Edwin's offensive spells suffer from that curse. The best will be for him to concentrate on the defensive and protective spells he knows or may start to learn.~
+=~ All I can do at this moment is to give you my counsellor's advice. It looks as if only Edwin's offensive spells suffer from that curse. The best will be for him to concentrate on the defensive and protective spells he knows or may start to learn.~
 == Bedwin_ ~ Ha, what a cunning plan, cursed witch, now you reveal your true intention...~
 == BSANDR ~ All I am saying, that changing his attitude may be one solution against the curse. If Mystra sees the change in his use of magic, she will perhaps even remove the curse from him.~
 END
@@ -6492,7 +6492,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
 ==Bskie IF~ InParty("Skie") ~ THEN ~What a great idea!!...I mean, after we put some aside to purchase some stylish replacement for our torn wardrobe, right?~
-==Bjenli IF ~ InParty("CVJenlig") ~ THEN ~(Hiss) Jen'lig will carry some for pink girl plan. Counselor Sandrah know real worth of treasure found here.~
+==Bjenli IF ~ InParty("CVJenlig") ~ THEN ~(Hiss) Jen'lig will carry some for pink girl plan. counsellor Sandrah know real worth of treasure found here.~
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Sing a song of joy with me at the end of this long and dreadful night. With the morning and with our heroine Imoen comes hope. ~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! Give me such a sack for your orphans. But don't tell any dwarf you ever met about it. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Such great deed done with such ease, Lady Imoen. I envy you for that, in a good way, I mean.~
@@ -6687,7 +6687,7 @@ DO~ SetGlobal("DYBant","GLOBAL",13) RealSetGlobalTimer("DynBantT","GLOBAL",1000)
 == BSANDR~ In my lessons on the Realm's and Toril's history I have learned of the wars between Rashemen and Thay. My heart is always with the righteous side, Dynaheir, and Rashemi gained my respect by standing against these armies of evil for so long.~
 = ~ But there is another issue I want to bring to your attention and maybe you can provide some council on it.~
 == BDYNAH~ I gladly wouldst if I have any to provide.~
-== BSANDR~ I have mentioned my opinion on the Red Scourge to <CHARNAME> on occasions. I probably have acted with too much visible emotions and have lost my standing as a counselor with <PRO_HIMHER> on that subject. It will be hard for me to prevent <PRO_HIMHER> now from getting involved with them, should one of them slime his way into our group.~
+== BSANDR~ I have mentioned my opinion on the Red Scourge to <CHARNAME> on occasions. I probably have acted with too much visible emotions and have lost my standing as a counsellor with <PRO_HIMHER> on that subject. It will be hard for me to prevent <PRO_HIMHER> now from getting involved with them, should one of them slime his way into our group.~
 == BDYNAH~ I am afraid that with Thay and Rashemen being the enemies they are, <PRO_HISHER> ears will be dumb to my advice as well. Shouldst the case occur, all we can do is stand together sisterly and help each other to obstruct their evil from <CHARNAME>.~
 == BSANDR~ (They embrace each other and exchange a kiss to seal their bond for your benefit.)~
 EXIT

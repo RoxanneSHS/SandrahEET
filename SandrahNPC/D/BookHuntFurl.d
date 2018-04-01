@@ -20,7 +20,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",17)~
 ==ACQ40001 ~ Ya mem'ry's as sharp as mine. Well done. A pirate it is. A name, a year, a face?~
 == BSANDR ~ The island description is a bit vague, but maybe a name...How about Monteelah?~
 ==ACQ40001 ~ Puuh (Looks nervously around). Lower your voice, m'lady, maybe he's not as dead as he tried to make us think.~
-== BSANDR ~ I have a good prescription agains fear. ~ DO ~ TakePartyGold(500)~
+== BSANDR ~ I have a good prescription against fear. ~ DO ~ TakePartyGold(500)~
 ==ACQ40001 ~ Ya must be fearless, lady, few dare to speak that name at all.~
 == BSANDR ~ I see, we are talking about the pirate Monteelah here? ~
 ==ACQ40001 ~ Sure, but we ain't talkin' much longer if ya keep repeating that dreadful name. Killed all his crew they say. Not one returned from that island where he's s'pposed to have hid his treasure.~

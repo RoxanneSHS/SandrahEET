@@ -5,7 +5,7 @@ DO~SetGlobal("SanHealanom","GLOBAL",5)~
 ==BSandr~Sure, Anomen, one tends to forget the obvious in the heat of the battle. My spell was cast as an almost automatic reflex when I saw a companion in need.~
 == Banomen~Yes, yes, your apology is accepted, just don't do it again.~
 ==BSandr~Apology? Doubtful resources? I draw my healing power from the Weave itself...~
-== Banomen~Mylady, let us stop this discourse. Your access to the Weave is granted to you by a goddess of dubious reputation.~
+== Banomen~My lady, let us stop this discourse. Your access to the Weave is granted to you by a goddess of dubious reputation.~
 ==BSandr~One more word of insult to Mystra and the damage you receive will be more than YOUR skills will be able to heal, HELMIT!~EXIT
 
 CHAIN
@@ -15,10 +15,10 @@ DO~SetGlobal("SanHealanom","GLOBAL",7)~
 ==BSandr~We travel together since <CHARNAME> had to leave Candlekeep on the day <PRO_HESHE> lost Gorion. So far our joint actions and decisions have certainly made a clear statement with respect to our alignment. You are not our judge, Helmit.~
 == Banomen~You spit out the name of my god as if it's meant to be a cuss.~
 ==BSandr~ I heard you discrediting my Goddess whenever you saw a chance to do so.~
-== Banomen~A goddess who grants her gifts to good or evil without responsibility. I admit you as her priestess seem to have a slight tendency to act honorable, but she...~
+== Banomen~A goddess who grants her gifts to good or evil without responsibility. I admit you as her priestess seem to have a slight tendency to act honourable, but she...~
 ==BSandr~ ENOUGH!! I warned you before - I have *a slight tendency* to smite bigotry just the same as evil.~
 == Banomen~I was just...~
-==BSandr~(Anomen's words are adressed to Sandrah's back only. She has already turned and walked away. You can see that she restrains her hand twice to draw her deadly hammer from her girdle.)~EXIT
+==BSandr~(Anomen's words are addressed to Sandrah's back only. She has already turned and walked away. You can see that she restrains her hand twice to draw her deadly hammer from her girdle.)~EXIT
 
 CHAIN
 IF WEIGHT #-11~Global("SanHealanom","GLOBAL",9) ~THEN Banomen SanSlavChiHunt1
@@ -30,7 +30,7 @@ DO~  SetGlobal("SanHealanom","GLOBAL",10) ~
 ==Banomen~What can happen to a child that she will greet death so willingly?~
 ==BSandr~(She has knelt down by the dead body and closes the girl's starry eyes.) Look at these marks and bruises on her ankles and her wrists, they are fresh. She must have been in chains!~
 ==Banomen~A prisoner? - NO, a slave!~
-==BSandr~I am sure of that, Anomen, and she is dead not longer than an hour. She cannot be the only one in this forsaken area, look at the broken waggon here, it bears no marks of decay.~
+==BSandr~I am sure of that, Anomen, and she is dead not longer than an hour. She cannot be the only one in this forsaken area, look at the broken wagon here, it bears no marks of decay.~
 ==Banomen~A slaver's caravan must have come through here and left its horrible trail.~
 ==BSandr~They cannot be far. <CHARNAME>, we must make haste and follow them. We cannot let them escape.~
 ==Banomen~I agree with Sandrah - we must destroy them and free their prisoners by all means!~
@@ -68,7 +68,7 @@ CHAIN
 IF WEIGHT #-16~Global("SanAnomenDecide","GLOBAL",1) ~THEN Banomen SanSaerAdv
 ~(Sigh, almost to himself) I hope I will do the right thing...~
 DO~SetGlobal("SanAnomenDecide","GLOBAL",2) ~
-==BSandr~We have not found common views very often in the past, Anomen, but maybe it would still help to listen to some neutral counselor's advice in this case.~
+==BSandr~We have not found common views very often in the past, Anomen, but maybe it would still help to listen to some neutral counsellor's advice in this case.~
 ==Banomen~You are right, we mostly disagree...Still it may be a good test for my own decision to compare it against yours.~
 ==BSandr~I will not decide for you, Anomen, I just ask you to consider the facts.~
 =~All we have at the moment are your father's words that accuse Saerk of Moira's death. You know well those are words fuelled by bitterness, hatred and ...alcohol. Do we really kill a man on basis of such evidence.~
