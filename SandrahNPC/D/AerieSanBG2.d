@@ -29,7 +29,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",8) RealSetGlobalTimer("SanAeriInt","GLOBAL",
 ==BAERIE~ What do you mean by that?~
 ==BSandr ~It was sad to imagine that it once may have been the most wonderful place in Faerun - and still what had remained from the former glory in the place and the attitude of the people was overwhelming me.~
 ==BAERIE~ The loss of my home and the loss of my wings have nearly destroyed me, Sandrah, had it not been for the care of uncle Quayle and Baervan.~
-==BSandr ~And yet you have survived to enjoy life and to encourage your comrads with your example.~
+==BSandr ~And yet you have survived to enjoy life and to encourage your comrades with your example.~
 ==BAERIE~ Do I? You seem to think too highly of me, Sandrah. I have lost far too much to ever be the one I was before...~
 ==BSandr ~You are not alone in that, Avariel. We all have suffered our losses and with each one our life has changed. Still for every loss there is always something new gained sooner or later.~
 ==BAERIE~ What do you know about a loss such as I have suffered? You, you have everything...~
@@ -60,7 +60,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",12) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 ==BSandr ~I do not doubt that, Aerie, he is a wonderful man. As you said he did the best under his circumstances. An elvish body is a fragile thing, especially that of a winged elf. Few are found outside of the Faenya-Dale that can offer adequate care.~
 ==BAERIE~ And can you?~
 ==BSandr ~I cannot promise you much. All I can offer you is to take a look and then to tell you the truth about what I can do. But what I can surely offer you is the helping hand of a friend to make your soul feel better about the loss.~
-==BAERIE~ (Aerie burries her face on Sandrah's chest.) I wanted not to yell at you...you are so kind and caring. Just hold me for a while, will you?~
+==BAERIE~ (Aerie buries her face on Sandrah's chest.) I wanted not to yell at you...you are so kind and caring. Just hold me for a while, will you?~
 ==BSandr ~(Sandrah just takes the avariel in her arms and starts to caress the girl's long tresses mumbling soothing words into her pointed ears.)~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -93,7 +93,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",16) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 =~ <CHARNAME> has lost Candlekeep and found comfort at Elminster's place as well.~
 ==BAERIE~ Y-you are s-so kind in all you do for me and you offer me, Sandrah.~
 ==BSandr~ Let me describe you the garden, Aerie - and of course my tower with its view wide over the Realms. See, I never had the chance to experience flying like you, but I imagine that standing up there in the fresh breeze and letting your view cross over the lands below is coming close to it.~
-==BAERIE~ I learn so much from you, Sandrah. You try to see the world through my eyes to c-c-comfort and help me. I will try this approach with our comrads myself.~
+==BAERIE~ I learn so much from you, Sandrah. You try to see the world through my eyes to c-c-comfort and help me. I will try this approach with our comrades myself.~
 =~(The avariel steps up closely to Sandrah and caresses the priestess smooth face. Then she places a kiss on the cheek she had just touched and blushing deep she runs out of your sight.)~EXIT
 
 CHAIN
@@ -119,7 +119,7 @@ IF ~Global("SanAerSharkt","LOCALS",3)~ THEN BSandr SanAerShakt2
 DO~SetGlobal("SanAerSharkt","LOCALS",4) ~
 ==BAERIE~ S-Sandrah, I was waiting in Sharkta Fai but nothing has happened...~
 ==BSandr~ Do not worry, my poor avariel. I need a bit of time for the procedure and you will need a good night of sleep afterwards, that is why it had to wait until now.~
-=~(Sandrah has opened her backpack already to retrieve a number of mysterious items from it. Among the things you spot a phiole of water you have observed her filling at the legendary pool.)~
+=~(Sandrah has opened her backpack already to retrieve a number of mysterious items from it. Among the things you spot a phial of water you have observed her filling at the legendary pool.)~
 ==BAERIE~ Ooh, can you f-forgive me my scepticism - I should have trusted you as you deserve it.~
 ==BSandr~Trust needs to be gained, Aerie. I hope I can gain your trust and friendship this time. Come over here...yes, lay on your belly, make yourself comfortable and relax, my dear...fine, it will take a bit of time now...~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() Wait(2) ActionOverride("CVSandr",Interact("CVSandr"))~
 EXIT
@@ -146,7 +146,7 @@ DO~SetGlobal("SanHealaeri","GLOBAL",18) RealSetGlobalTimer("SanAeriInt","GLOBAL"
 ==BAERIE~ Oh, I have discovered so many things already since I left the circus and ventured with <CHARNAME> and you. I sometimes wonder if my little head can contain all I learn every day.~
 ==BSandr~There are far too many things to see and learn in Faerun for one person alone in all lifetime. Every day may reveal new wonderful, frightening or astonishing things for us.~
 ==BAERIE~ I-I think I know what you want to tell me in that friendliness that is your nature. I-I should not look back too much...rather look forward to what may come next.~
-==BSandr~We cannot change anymore what has passed, my avariel, but we can shape what is still to come. <CHARNAME> and me are determined to do this - will you become a part of it, Aerie?~
-==BAERIE~ You are the first person, Sandrah, that has ever made me feel like I was i-important in some way...you know, someone who could ac-acomplish something.~
+==BSandr~We cannot change any more what has passed, my avariel, but we can shape what is still to come. <CHARNAME> and me are determined to do this - will you become a part of it, Aerie?~
+==BAERIE~ You are the first person, Sandrah, that has ever made me feel like I was i-important in some way...you know, someone who could ac-accomplish something.~
 ==BSandr~Sure you can. Even more can be achieved if not one does it alone but we work together on it.~
 ==BAERIE~ I-I happily accept this invitation. (Aerie slides to Sandrah's side embracing the young priestess. With her head leaned against Sandrah's shoulder she starts to study the page of the tome your lover was reading - or at least she pretends to study.)~EXIT
