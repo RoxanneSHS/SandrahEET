@@ -10,7 +10,7 @@ END
 CHAIN
 IF~~THEN BSandr sanHealNalia
 ~I learned some from him but most at the Temple of Mystra at Waterdeep. My skills are those of a priestess and my goddess grants them to me.~
-==BNALIA~ You must be one of her favorites then.~
+==BNALIA~ You must be one of her favourites then.~
 ==BSANDR~ Actually the true development only started after my training at the Temple itself - when I met and accompanied <CHARNAME>. I had to constantly use my abilities in our combats and the healing after battle and became more confident and skilled by it. It looks like a day of practice in real life is worth a tenday of study, I mean - if you survive it.~
 ==BNALIA~ In this case I may now have the chance to develop myself as well, growing each day with the challenges at <CHARNAME>'s side. Even if I will probably never reach your level as you serve the goddess of all magic herself.~
 ==BSANDR~ No need to envy me, Nalia, Mystra's servants do not have an advantage over other true scholars of the magic arts - they just have more responsibilities to see that those skills are used for an acceptable purpose.~
@@ -20,31 +20,31 @@ IF~~THEN BSandr sanHealNalia
 
 CHAIN
 IF~ Global("SanNalia","GLOBAL",1) ~ THEN BSANDR SanNalGown
-~ (Sandrah appears in the public room out of her armor and dressed up in a wonderful new gown, embroidered richly and embellishing every aspect of her marvelous body.)~ DO ~ SetGlobal("SanNalia","GLOBAL",2)~
+~ (Sandrah appears in the public room out of her armor and dressed up in a wonderful new gown, embroidered richly and embellishing every aspect of her marvellous body.)~ DO ~ SetGlobal("SanNalia","GLOBAL",2)~
 ==BNALIA~ Must you REALLY display your beauty and wealth in such a SHAMELESS way, Sandrah?~
 ==BSANDR~ Shameless? Yes, if you mean to say that I am neither ashamed of my beauty nor of my wealth than you are correct. I have gained none of them by exploiting poor peasants or robbing honest people.~
 ==BNALIA~ It makes me weep to think of the poor seamstress who had to spend endless hours of labour in an ill lit cold chamber to manufacture it.~
 ==BSANDR~ The woman who made it, a lone mother of six children by the way, spent one hundred and seven days to make it. Take a look, every stitch is perfect - it really is more than a gown, it is a work of art.~
 ==BNALIA~ Exploitation of the worst kind!~
-==BSANDR~ The woman received a payment that let herself and her children live well for two whole years, Nalia. In addition, her reputation in my hometown became such that she never runs out of customers now and last time I met her she had engaged two young neighbour girls for her assistance with all the orders she receives.~
+==BSANDR~ The woman received a payment that let herself and her children live well for two whole years, Nalia. In addition, her reputation in my home town became such that she never runs out of customers now and last time I met her she had engaged two young neighbour girls for her assistance with all the orders she receives.~
 ==BNALIA~ An exception then...~
 ==BSANDR~ An example of a fair deal I would call it. When she saw me wearing the gown one day at the Waterdeep temple she was beaming with pride and told me I was exactly matching the vision she had of how it would look when worn that she had during the production.~
-==BNALIA~ (Nalia probes Sandrah's sleeve with her fingertips.) The fabrique is fantastic - it is indeed a work of art. You look wonderful in it.~ DO~RestParty()~
+==BNALIA~ (Nalia probes Sandrah's sleeve with her fingertips.) The fabricate is fantastic - it is indeed a work of art. You look wonderful in it.~ DO~RestParty()~
 EXIT
 
 CHAIN
 IF~Global("SanNaliaMarket","LOCALS",2)~THEN BSANDR SanNalMrkt
 ~This seems to be true Calimshan silk, good man. Very fine quality indeed - just the colour would not really fit me.~
 DO~SetGlobal("SanNaliaMarket","LOCALS",3)~
-==CVMerch~I could only offer this yellow...but, no it would really bite with your hair. Maybe next time when the caravan comes through from the south. I expect new merchandise in just a tenday, mylady.~ DO~EscapeArea()~
+==CVMerch~I could only offer this yellow...but, no it would really bite with your hair. Maybe next time when the caravan comes through from the south. I expect new merchandise in just a tenday, milady.~ DO~EscapeArea()~
 ==BSANDR~Thank you, good to know. I will find the time to take another look then.~
 ==BNALIA~ You reveal an expert view with those fine things, Sandrah. Your style is almost perfect, even in the combat wear that was made for you.~
-==BSANDR~Well, I hail from the City of Splendor after all. It probably had some influence on my tastes.~
+==BSANDR~Well, I hail from the City of Splendour after all. It probably had some influence on my tastes.~
 ==BNALIA~ That explains why I could not identify yet from which family of the noblesse you come, I know not many of the nobles of Waterdeep.~
 ==BSANDR~You are mistaken, Nalia, I am not of noble birth at all.~
 ==BNALIA~ Oh...I would have sworn you were. Your behaviour and your language, your clothes and the way you deal with people...~
-==BSANDR~I truely hope I do not come across so snobbish and arrogant.~
-==BNALIA~Not at all, not every noble shows off like my aunt Delcia or my wanna-be bethroted Isaea. Yours is the true manners and noble behaviour that made me think you were of noble birth.~
+==BSANDR~I truly hope I do not come across so snobbish and arrogant.~
+==BNALIA~Not at all, not every noble shows off like my aunt Delcia or my wanna-be betrothed Isaea. Yours is the true manners and noble behaviour that made me think you were of noble birth.~
 ==BSANDR~Then all of it can be found in the offspring of a mage and a merchant's daughter just as well.~
 ==BNALIA~It is hard to believe but your education must have been exquisite then.~EXIT
 
