@@ -2,7 +2,7 @@ BEGIN CVMerch
 APPEND BNalia
 
 IF~ Global("SanHealNalia","GLOBAL",3)~THEN BEGIN SanHeal
-SAY~ You magical skills are enormous compared to my own little attempts in this art. You mentioned you father was a mage, did he teach you?~
+SAY~ You magical skills are enormous compared to my own little attempts in this art. You mentioned that your father was a mage, did he teach you?~
 IF~~THEN DO~ SetGlobal("SanHealNalia","GLOBAL",4)~ EXTERN BSandr sanHealNalia
 END
 END
@@ -10,9 +10,9 @@ END
 CHAIN
 IF~~THEN BSandr sanHealNalia
 ~I learned some from him but most at the Temple of Mystra at Waterdeep. My skills are those of a priestess and my goddess grants them to me.~
-==BNALIA~ You must be one of her favourites then.~
+==BNALIA~ You must be one of her favorites then.~
 ==BSANDR~ Actually the true development only started after my training at the Temple itself - when I met and accompanied <CHARNAME>. I had to constantly use my abilities in our combats and the healing after battle and became more confident and skilled by it. It looks like a day of practice in real life is worth a tenday of study, I mean - if you survive it.~
-==BNALIA~ In this case I may now have the chance to develop myself as well, growing each day with the challanges at <CHARNAME>'s side. Even if I will probably never reach your level as you serve the goddess of all magic herself.~
+==BNALIA~ In this case I may now have the chance to develop myself as well, growing each day with the challenges at <CHARNAME>'s side. Even if I will probably never reach your level as you serve the goddess of all magic herself.~
 ==BSANDR~ No need to envy me, Nalia, Mystra's servants do not have an advantage over other true scholars of the magic arts - they just have more responsibilities to see that those skills are used for an acceptable purpose.~
 ==BNALIA~ I see. In this case your abilities surely indicate that you must be a very high ranked priestess in her services.~
 ==BSANDR~ No, I am not, but that is a different story altogether.~DO~RealSetGlobalTimer("SanNalInterv","LOCALS",300)~EXIT
@@ -20,11 +20,11 @@ IF~~THEN BSandr sanHealNalia
 
 CHAIN
 IF~ Global("SanNalia","GLOBAL",1) ~ THEN BSANDR SanNalGown
-~ (Sandrah appears in the public room out of her armour and dressed up in a wonderful new gown, embroidered richly and embellishing every aspect of her marvellous body.)~ DO ~ SetGlobal("SanNalia","GLOBAL",2)~
+~ (Sandrah appears in the public room out of her armor and dressed up in a wonderful new gown, embroidered richly and embellishing every aspect of her marvelous body.)~ DO ~ SetGlobal("SanNalia","GLOBAL",2)~
 ==BNALIA~ Must you REALLY display your beauty and wealth in such a SHAMELESS way, Sandrah?~
 ==BSANDR~ Shameless? Yes, if you mean to say that I am neither ashamed of my beauty nor of my wealth than you are correct. I have gained none of them by exploiting poor peasants or robbing honest people.~
 ==BNALIA~ It makes me weep to think of the poor seamstress who had to spend endless hours of labour in an ill lit cold chamber to manufacture it.~
-==BSANDR~ The woman who made it, a lone mother of six children by the way, spent onehundred and seven days to make it. Take a look, every stitch is perfect - it really is more than a gown, it is a work of art.~
+==BSANDR~ The woman who made it, a lone mother of six children by the way, spent one hundred and seven days to make it. Take a look, every stitch is perfect - it really is more than a gown, it is a work of art.~
 ==BNALIA~ Exploitation of the worst kind!~
 ==BSANDR~ The woman received a payment that let herself and her children live well for two whole years, Nalia. In addition, her reputation in my hometown became such that she never runs out of customers now and last time I met her she had engaged two young neighbour girls for her assistance with all the orders she receives.~
 ==BNALIA~ An exception then...~
@@ -82,10 +82,10 @@ DO ~ SetGlobal("SanNalia","GLOBAL",6)~
 ==BSANDR~He never tried to influence my love life in any way. But then I guess this was not what your father had in mind as well. From everything you have told us about him there may be only one possible reason - responsibility.~
 ==BNALIA~ Sure this was a prime factor for him, responsibility for the Keep, the land, the people - but also for me, Sandrah!~
 ==BSANDR~(Sandrah has taken Nalia's hand as the young aristocrat has sat down by her side.)~
-=~It must surely have been a terrible choice for your father having to decide between the two, the love for his only child and the responsibility for the land and its people. Having to evaluate the fate of the one against the wellfare of so many. ~
+=~It must surely have been a terrible choice for your father having to decide between the two, the love for his only child and the responsibility for the land and its people. Having to evaluate the fate of the one against the welfare of so many. ~
 ==BNALIA~ It makes sense what you say. If those were his choices I were the lamb to be sacrificed...~
-==BSANDR~You were his heir, Nalia, and as such you inherited the responsibility for your people and shared it with him. In his eyes it was your duty to take the burdon to live with Isaea for the wellfare of your father's lands - your lands - and the people on it.~
+==BSANDR~You were his heir, Nalia, and as such you inherited the responsibility for your people and shared it with him. In his eyes it was your duty to take the burden to live with Isaea for the welfare of your father's lands - your lands - and the people on it.~
 ==BNALIA~ Do you think your father would have been able to do such a thing to you?~
 ==BSANDR~My father would have known that I am no *lamb* waiting just patiently for its fate. He would have known I would use my own wit and strength to find a solution. Your father surely thought likewise of you, Nalia, considering what you inherited from him and - from your mother.~
 ==BNALIA~ Again I think you are right.~
-=~Thank you, Sandrah. You are truely the friend I needed tonight.~DO ~RestParty()~EXIT
+=~Thank you, Sandrah. You are truly the friend I needed tonight.~DO ~RestParty()~EXIT
