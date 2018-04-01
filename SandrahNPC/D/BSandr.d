@@ -1076,7 +1076,7 @@ END
 IF ~~ THEN BEGIN Experience2
 SAY ~ You tell me - with your looks you must have the same impact - Well, maybe not with Candlekeep scholars... ~
 =  ~ My chances were better at home in Waterdeep. I made some experiences, mostly out of curiosity, some holding hands, a few kisses, a boy writing terrible poems for me... ~
-IF ~~ THEN REPLY ~ ...just like lovesick Adam rhyming for me, poor boy. He was a cute stableboy at Candlekeep and a childhood friend, but when he got to that age to discover his undying love for me...Candlekeep is not big enough if you want to avoid a romantic rhyming boy you feel nothing for... (You both burst into tears of laughter just to find yourself in each others arms again.)~ GOTO Girlkiss
+IF ~~ THEN REPLY ~ ...just like lovesick Adam rhyming for me, poor boy. He was a cute stable-boy at Candlekeep and a childhood friend, but when he got to that age to discover his undying love for me...Candlekeep is not big enough if you want to avoid a romantic rhyming boy you feel nothing for... (You both burst into tears of laughter just to find yourself in each others arms again.)~ GOTO Girlkiss
 END
 
 IF ~~ THEN BEGIN Girlkiss
@@ -1126,7 +1126,7 @@ END
 
 IF~~ THEN BEGIN Haiass3
 SAY ~ Look, Haiass, here comes <CHARNAME> to have some fun with us.~
-IF~~ THEN REPLY ~ Enough fun, you two, you attract all the Hobgoblins and Kobolds within miles with that noise you make. Come on, we need to move.~ GOTO Haiass4
+IF~~ THEN REPLY ~ Enough fun, you two, you attract all the hobgoblins and kobolds within miles with that noise you make. Come on, we need to move.~ GOTO Haiass4
 IF~~THEN REPLY ~ Hey, you two, let me join you. Uh, here it flies again, Haiass, get it!~ GOTO Haiass5
 END
 
@@ -1137,14 +1137,14 @@ IF~~THEN REPLY ~ *Sigh*, young girls and young puppies! How did I deserve this?~
 END
 
 IF~~ THEN BEGIN Haiass5
-SAY ~ (After some more play, Sandrah pretends to collaps exhausted by the side of a small creek, Haiass laying at her side with his snout on her lap.)~
+SAY ~ (After some more play, Sandrah pretends to collapse exhausted by the side of a small creek, Haiass laying at her side with his snout on her lap.)~
 IF ~~ THEN REPLY ~ Oh, please, nice as this was, our foe will not be playing right now. We better continue now. ~ GOTO Haiass4
-IF ~~ THEN REPLY ~ (You fall into the grass on the free side of Sandrah, and start to caress Haiass' ears. Now and then you find your hand touching Sandrah as well in the maneouvre.)~ GOTO Haiass6
+IF ~~ THEN REPLY ~ (You fall into the grass on the free side of Sandrah, and start to caress Haiass' ears. Now and then you find your hand touching Sandrah as well in the manoeuvre.)~ GOTO Haiass6
 END
 
 IF~~ THEN BEGIN Haiass6 
 SAY ~ (Sandrah lies on her back, looking dreamily to the sky.) ~
-= ~ You really care for your loyal wolf, <CHARNAME>, I see this as a good insight into your character. The way you treat him with care and love shows your attitude towards your fellowbeings.~
+= ~ You really care for your loyal wolf, <CHARNAME>, I see this as a good insight into your character. The way you treat him with care and love shows your attitude towards your fellow beings.~
 IF~~ THEN REPLY ~ Maybe Haiass and me are not that different. Two orphaned beings in a world where everybody seems to first take them as their enemy, even without knowing our real attitude.~ GOTO Haiass7
 END
 
@@ -1160,12 +1160,12 @@ END
 IF~ Global("SanPussMis","GLOBAL",1)~ THEN BEGIN SanPussMis1
 SAY~ *In the twilight silhouetted against the half moon you see Sandrah sitting side by side with another person. It seems she has laid her arm around that somebody's shoulder while whispering in his ear. You heart hurts at this sight but you are drawn nevertheless closer to the scene.*~
 IF~~THEN REPLY ~ *You decide to move silently a bit closer to the entwined couple. You MUST know who that person is.*~  GOTO SanPussMis2
-IF~~THEN REPLY ~*You pretend to stroll leasurly softly whistling a joyful tune while your path just by chance brings you nearer to the entwined couple.*~ GOTO SanPussMis2
+IF~~THEN REPLY ~*You pretend to stroll leisurely, softly whistling a joyful tune, while your path just by chance brings you nearer to the entwined couple.*~ GOTO SanPussMis2
 IF~~THEN REPLY ~*You ignore the whole scenery.~EXIT
 END
 
 IF ~~THEN BEGIN SanPussMis2
-SAY ~ * A strange - almost growling sound - comes from that second person, who has now started to move towards you- on all fours. You realise that it was Pelligram haunched on her hindlegs beside Sandrah, that looked almost like a human in the dimly lit clearing.~
+SAY ~ * A strange - almost growling sound - comes from that second person, who has now started to move towards you- on all fours. You realise that it was Pelligram haunched on her hind legs beside Sandrah, that looked almost like a human in the dimly lit clearing.~
 IF~~THEN REPLY ~ Oh, here you are, my two lovely pussycats.~ GOTO SanPussMis3
 IF~~THEN REPLY ~ *You blush red on your mistake and are thankful that this cannot be seen in the dark. You attempt to retreat unseen before Sandrah will notice you. Too late.*~ GOTO SanPussMis3
 END
@@ -1180,8 +1180,8 @@ END
 
 IF ~~THEN BEGIN SanPussMis4
 SAY ~ *Pelligram loses her interest soon and trails off into the darkness.*~
-= ~ *The other pussycat has drawn even closer on you and her caresses on your bare leg get more intense. Her lips and tongue are engaged on the soft skin of your inner thights starting to arouse you more and more.*~
-IF~~THEN REPLY~ *You start to fondle her head and caress her earlobes, knowing from past experiences how much that is stimulating her. She answers you with a satisfied purring, while her head moves upwards between your thights demanding more.*~ DO ~
+= ~ *The other pussycat has drawn even closer on you and her caresses on your bare leg get more intense. Her lips and tongue are engaged on the soft skin of your inner thighs starting to arouse you more and more.*~
+IF~~THEN REPLY~ *You start to fondle her head and caress her earlobes, knowing from past experiences how much that is stimulating her. She answers you with a satisfied purring, while her head moves upwards between your thighs demanding more.*~ DO ~
 StartCutSceneMode()
                 SmallWait(4)
                 FadeToColor([20.0],0)
@@ -1210,20 +1210,20 @@ END
 IF ~~ FT1-2
 SAY~I'm quite the traveller, but I had no adventures so far. I hope you like to have your cleric and fighter companion display a more ladylike side to you now and then? ~
 IF ~ InParty("Imoen2") ~ THEN REPLY ~ So how about getting the whole party into some bathtubs and than regather over there at the cozy fireplace? ~ + FT1-4
-IF ~ !InParty("Imoen2") ~ THEN REPLY ~ So how about getting the whole party into some bathtubs and than regather over there at the cozy fireplace? ~ + FT1-5
+IF ~ !InParty("Imoen2") ~ THEN REPLY ~ So how about getting the whole party into some bathtubs and than regather over there at the cosy fireplace? ~ + FT1-5
 END
 
 IF ~~ FT1-4
 SAY ~You are a competent leader. (Giggles) <CHARNAME>, that is your best decision for a while. ~
-= ~ Imoen, let us get out your best pink evening gown and I will see what my backpack holds. Now we will show to <CHARNAME> how ladies of style from the City of Splendor dress for a nice evening at the fireplace. ~
-= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
+= ~ Imoen, let us get out your best pink evening gown and I will see what my backpack holds. Now we will show to <CHARNAME> how ladies of style from the City of Splendour dress for a nice evening at the fireplace. ~
+= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded bar room around you for a moment).~
 IF~~ THEN REPLY ~ I can hardly await it. Do not take too long. I have heard rumours of how long those ladylike ladies can take to get dressed just for a simple dinner of roasted chicken and a mug of beer by the fireside, haha. ~ DO ~SetGlobal("SanFeldeTalk","GLOBAL",4) ~ GOTO BathCheck
 END
 
 IF ~~ FT1-5
 SAY~ You are a competent leader. <CHARNAME> (giggles), that is your best decision for a while. ~
 = ~ I will show to you how a Waterdeep lady of style dresses for a nice evening at the fireplace (Gives you a quick kiss on the cheek). Thank you, <CHARNAME>. ~
-= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded barroom around you for a moment).~
+= ~I hope you like to see a different side of your companion now. I can be more than just your cleric and fighter companion (Her smile is an invitation that lets you forget the crowded bar room around you for a moment).~
 IF~~ THEN REPLY ~ I can hardly await it. Do not take too long. I have heard rumours of how long those ladylike ladies can take to get dressed just for a simple dinner of roasted chicken and a mug of beer by the fireside, haha. ~ DO ~SetGlobal("SanFeldeTalk","GLOBAL",4) ~ GOTO BathCheck
 END
 
@@ -1287,14 +1287,14 @@ END
 
 IF ~Global("SanFeldeTalk","GLOBAL",5)~ THEN BEGIN DownSa
 SAY ~(When Sandrah comes down from the bathroom her appearance nearly knocks you out.)~
-IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl in the world tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
+IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl in the world tonight. How my fearless front line fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.)~  DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 END
 
 IF ~Global("SanFeldeTalk","GLOBAL",6)~ THEN BEGIN DownSaImo
 SAY ~( When the girls come down from the bathroom their appearance nearly knocks you out.)~
-IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding.
+IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless front line fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding.
 Imoen! Wow, little duckling, you are a magnificent swan tonight. This can only be Mystra's work. (You bow to your ladies and kiss their hands before leading the company to comfortable seats by the fireplace.) ~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
 IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.)~  DO ~ SetGlobal("SanFeldeTalk","GLOBAL",8)~ EXIT
@@ -1343,7 +1343,7 @@ END
 
 IF ~Global("SanFeldeTalk","GLOBAL",9)~ THEN BEGIN FT1BathN
 SAY ~( When Sandrah comes down from the bathroom her appearance nearly knocks you out)~
-IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless frontline fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
+IF~~ THEN REPLY ~ Wow, Sandrah, you look like the most beautiful girl on Toril tonight. How my fearless front line fighter cleric can change into the beauty queen of Faerun in just a few moments will remain beyond my understanding. This can only be Mystra's work. (You bow to your lady and kiss her hand before leading her to a comfortable seat by the fireplace.) ~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
 IF~~ THEN REPLY ~That was about time. We came here to eat and drink, mind you, this is not the Waterdeep debutante's ball.~ DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
 IF~~ THEN REPLY ~(You just shake your head about so much unnecessary fuss and turn back to a more important thing - your mug of cold beer.)~  DO ~ SetGlobal("FT1Bath","GLOBAL",1) SetGlobal("SanFeldeTalk","GLOBAL",10) ~EXIT
 END
@@ -1484,7 +1484,7 @@ IF~~ THEN REPLY ~ You have the slight advantage that you seem to be a bit better
 END
 
 IF~~ THEN BEGIN FT2-6
-SAY~ Thank you for this compliment. You are not too bad yourself, given that you were just thrown into this adventuring life without a warning. Let us pick up this talk later, <CHARNAME>, before this real world hits us with a suprise while we are unaware.~
+SAY~ Thank you for this compliment. You are not too bad yourself, given that you were just thrown into this adventuring life without a warning. Let us pick up this talk later, <CHARNAME>, before this real world hits us with a surprise while we are unaware.~
 IF~~ THEN REPLY ~ Right - It feels good to talk to you, Sandrah, Thank you.~ EXIT
 IF~~ THEN REPLY ~ Enough babbling for one day, move your pretty arse, girl.~GOTO FT2-7
 END
@@ -1568,7 +1568,7 @@ IF ~~ THEN REPLY ~ Is it really so easy to read my mind? ~ GOTO KnowAjKi
 END
 
 IF~~ KnowAjCl
-SAY~ We both are from Waterdeep, both from the wealthier part of the City of Splendor, so we know each other. The Ilvastarr family is quite prominent in town.~
+SAY~ We both are from Waterdeep, both from the wealthier part of the City of Splendour, so we know each other. The Ilvastarr family is quite prominent in town.~
 IF ~~ THEN REPLY ~ I see. Just that? ~ GOTO KnowAjKi
 END
 
@@ -1613,7 +1613,7 @@ END
 IF ~ Global("Sanhors","GLOBAL",1)~ THEN BEGIN Sanhors1
 SAY ~ What a wonderful creature, a beautiful young stallion! It must be a great pleasure to ride this one.~
 IF ~~ THEN REPLY ~ I have to admit, my experience with these creatures is almost non- existent.~ GOTO Sanhors3
-IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ Do you want me to catch it for you, mylady, to see my proud queen mount this impressive horse?~ GOTO Sanhors2
+IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ Do you want me to catch it for you, my lady, to see my proud queen mount this impressive horse?~ GOTO Sanhors2
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I think you know more about riding than I do. But if you catch and hold it for me, I will put my trust in you and mount his back. But only if you lead him for me.~ GOTO Sanhors3
 IF ~~ THEN REPLY ~ And there! Hurray, maggots. Let's all stop and cheer for maggots.~EXIT
 END
@@ -1683,7 +1683,7 @@ IF ~~ THEN REPLY ~ Is it really so easy to read my mind? ~ GOTO KnowAjKiF
 END
 
 IF~~ KnowAjClF
-SAY~ We both are from Waterdeep, both from the wealthier part of the City of Splendor, so we know each other. The Ilvastarr family is quite prominent in town.~
+SAY~ We both are from Waterdeep, both from the wealthier part of the City of Splendour, so we know each other. The Ilvastarr family is quite prominent in town.~
 IF ~~ THEN REPLY ~ I see. Just that? ~ GOTO KnowAjKiF
 END
 
@@ -1715,7 +1715,7 @@ END
 IF~~KnowAjComp
 SAY~ I am sure that this will not fit well into the paladin's vision of his wife. Her role is the decorative housewife, keeper of the home, and mother of his children. No place for the hot blooded woman who fights by his side by day and enjoys the pleasures of his bed at night.~
 IF~~THEN REPLY ~ Thank you for the warning, Sandrah. (Smile and give her a kiss.)~ EXIT
-IF~~THEN REPLY ~ Maybe his mindframe can be changed when he actually sees girls like us acting. I can easily imagine you to fit in both roles with ease. Or me. Or Imoen. (Smile and give her a kiss.)~ EXIT
+IF~~THEN REPLY ~ Maybe his mind frame can be changed when he actually sees girls like us acting. I can easily imagine you to fit in both roles with ease. Or me. Or Imoen. (Smile and give her a kiss.)~ EXIT
 END
 
 IF ~~ KnowAjHousewife
@@ -1729,7 +1729,7 @@ IF ~~ KnowAJFree
 SAY ~ After all you were forced to this current life as adventurer by the circumstances. It is rich on events, both nice and bad. It is good to find friends to share your path with. But can it go on like that forever. Maybe one day you will wish for a little place of peace to call home. ~
 IF~~THEN REPLY ~ Yes, I wish for a little place of peace to call my home again. But this is silly talk as I have no choice in it at the moment.~ EXIT
 IF~~THEN REPLY ~ If this quest is all over one day, why not. A little place of peace for all of us to call home. We can still go out for missions if we feel the calling. But we always have a haven to return to when the duty is done. But I cannot imagine such a place without you. (Embrace her dearly). ~ EXIT
-IF~~THEN REPLY ~ Maybe his mindframe can be changed when he actually sees girls like us acting. I can easily imagine you to fit in both roles with ease. Or me. Or Imoen. (Smile and give her a kiss.)~ EXIT
+IF~~THEN REPLY ~ Maybe his mind frame can be changed when he actually sees girls like us acting. I can easily imagine you to fit in both roles with ease. Or me. Or Imoen. (Smile and give her a kiss.)~ EXIT
 END
 
 // DreamTalk 1
@@ -1738,27 +1738,27 @@ SAY ~ How about taking a rest, <CHARNAME>, this has been a long and eventful day
 END
 
 IF ~~ THEN BEGIN SanCamp1
-SAY ~ Good to warm the bones beside the campfire. We are not yet used to this life of adventurers out in the wild.~
+SAY ~ Good to warm the bones beside the camp fire. We are not yet used to this life of adventurers out in the wild.~
 IF ~~ THEN REPLY ~ So this whole lifestyle is new to you as well? ~ GOTO Lifestyle
 IF ~~ THEN REPLY ~ What has your life been like until now, Sandrah? ~ GOTO Lifestyle
 IF ~~ THEN REPLY ~ Yes, I'm so tired from this day, good night, Sandrah. ~DO ~ IncrementGlobal("Sanpoints","GLOBAL",-1) SetGlobal("SanDreamTalk","GLOBAL",2) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN Lifestyle
-SAY ~ I am used to townlife, I live comfortably in Waterdeep, usually. ~
+SAY ~ I am used to town life, I live comfortably in Waterdeep, usually. ~
 IF ~~ THEN REPLY ~ Oh, Waterdeep, the famous city, I hope we will see it sometime on our journey. ~ GOTO SeeWaterdeep
 IF ~~ THEN REPLY ~ Oh, a city girl, and a rich one's daughter, I guess, from your fine cloth and good equipment. Have you ever been out in the wilderness overnight? ~ GOTO Citygirl
 IF ~~ THEN REPLY ~ Then you must be as tired as I am, good night, Sandrah. ~ DO ~ SetGlobal("SanDreamTalk","GLOBAL",2) RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN SeeWaterdeep
-SAY ~ This may be far in the future still, <CHARNAME>, a long road is ahead of us until then. It is better to be rested for the journey. Good night. (For a moment it seemed to you that she was blowing you a goodnight kiss before turning to her pillow - or was it just a trick of the light from the campfire?)~
+SAY ~ This may be far in the future still, <CHARNAME>, a long road is ahead of us until then. It is better to be rested for the journey. Good night. (For a moment it seemed to you that she was blowing you a goodnight kiss before turning to her pillow - or was it just a trick of the light from the camp fire?)~
 IF~~ THEN REPLY ~ Good night, Sandrah. ~ DO ~ SetGlobal("SanDreamTalk","GLOBAL",2)  RestParty()~ EXIT
 END
 
 IF ~~ THEN BEGIN Citygirl
 SAY ~ I have been hiking with my father now and then. We have rested at all kind of places in the wilderness, caves, campfires, an oasis. But those are tales for other quiet evenings when the need for a good night's sleep is not so urgent. ~
-=  ~ Good night. (For a moment it seemed to you that she was blowing you a goodnight kiss before turning to her pillow - or was it just a trick of the light from the campfire?)~
+=  ~ Good night. (For a moment it seemed to you that she was blowing you a goodnight kiss before turning to her pillow - or was it just a trick of the light from the camp fire?)~
 IF~~ THEN REPLY  ~ Good night, Sandrah. ~ DO ~ SetGlobal("SanDreamTalk","GLOBAL",2)  RestParty()~ EXIT
 END
 
@@ -1767,12 +1767,12 @@ END
 IF ~ Global("SanDreamTalk","GLOBAL",3) Global("SanStarTalk","LOCALS",0) ~ THEN BEGIN DreamT2
 SAY ~ (Sandrah lies on her back on her bedroll near to you, gazing at the stars above.)~
 IF ~~ THEN REPLY ~ (Whisper, not to disturb the others in the group:) Sandrah, can you not sleep yet?~ GOTO Startalk1
-IF ~~ THEN REPLY ~ (Silently admire your beautiful companion, who looks more enigmatic than ever in the dim light of the stars and the dying campfire.)~ GOTO Startalk1
+IF ~~ THEN REPLY ~ (Silently admire your beautiful companion, who looks more enigmatic than ever in the dim light of the stars and the dying camp fire.)~ GOTO Startalk1
 IF ~~ THEN REPLY ~(Roll over to sleep) It's been a long day, yawn...~GOTO Startalk1
 END
 
 IF ~~ THEN BEGIN Startalk1
-SAY ~ (Sandrah silently moves a bit closer to you. She puts her head on your shoulder and together you look upwards into the star filled nightsky.) ~
+SAY ~ (Sandrah silently moves a bit closer to you. She puts her head on your shoulder and together you look upwards into the star filled night sky.) ~
 IF~~ THEN REPLY ~ Moments like this could last an eternity (sigh), if they only would.~ GOTO Startalk2
 IF ~~ THEN REPLY ~ What are you thinking of, Sandrah? ~ GOTO Startalk2
 IF ~~ THEN REPLY ~ (Say nothing, do nothing, just put your arm around her and gently pull her a little bit closer to you.) ~ GOTO Startalk2
@@ -1822,7 +1822,7 @@ END
 
 
 IF ~ Global("Mothdream1","GLOBAL",6)~ THEN BEGIN AfterMoDr
-SAY ~ <CHARNAME>, are you allright? Have you seen a ghost or was it just a bad dream?~
+SAY ~ <CHARNAME>, are you all right? Have you seen a ghost or was it just a bad dream?~
 IF~~ THEN REPLY ~ Oh, what happened? I must have fallen asleep. I am fine and hungry. Let us order something to eat. ~ DO ~ IncrementGlobal("Sanpoints","GLOBAL",-1)SetGlobal("SanDreamTalk","GLOBAL",6)RealSetGlobalTimer("SanDreamTalkTime","GLOBAL",SANROM_TIMER) SetGlobal("Mothdream1","GLOBAL",7)~EXIT
 IF~~ THEN REPLY ~ Oh, what happened? I must have fallen asleep. I had a very strange dream, or was it a vision? ~ GOTO AfterMoDr2
 IF~~ THEN REPLY ~ I must have fallen asleep. Or maybe not. The strange dream or vision I had was too real. ~ GOTO AfterMoDr2
@@ -1848,20 +1848,20 @@ END
 // Learned from Viconia
 IF ~ Global("SanDreamTalk","GLOBAL",9) ~ THEN BEGIN VicSedLrn1m
 SAY ~ (Sandrah has vanished to another room a while ago having taken her backpack with her.)~
-= ~ (As she now appears in the door of your room, your jaw drops down and your eyes seem to pop out. The tiny see-through nothing she is wearing shows her perfect body in the light of the fireplace behind her. Her lips and aureols are enhanced by some glossy red makeup and her hair reveals its beauty so often hidden beneath a helmet.) ~
+= ~ (As she now appears in the door of your room, your jaw drops down and your eyes seem to pop out. The tiny see-through nothing she is wearing shows her perfect body in the light of the fireplace behind her. Her lips and aureoles are enhanced by some glossy red make-up and her hair reveals its beauty so often hidden beneath a helmet.) ~
 IF~~THEN REPLY ~ (You rise immediately to take possession of all that beauty offered to you in this way.) Mystra be praised, she does not require her priestesses to be chaste!~ GOTO VicSedLrn2
 IF ~~THEN REPLY ~ (You remain expectantly seated while the clicking of her high-heels on the floor tiles comes slowly nearer, making each second of waiting an additional second of pleasure.) ~ GOTO VicSedLrn2
 END
 
 IF ~ Global("SanDreamTalk","GLOBAL",10) ~ THEN BEGIN VicSedLrn1f
 SAY ~ (Sandrah has vanished to another room a while ago having taken her backpack with her.)~
-= ~ (As she now appears in the door of your room, your breath stops for a moment on the sight you see. The tiny see-through nothing she is wearing shows her perfect body in the light of the fireplace behind her. Her lips and aureols are enhanced by some glossy red makeup and her hair reveals its beauty so often hidden beneath a helmet.) ~
+= ~ (As she now appears in the door of your room, your breath stops for a moment on the sight you see. The tiny see-through nothing she is wearing shows her perfect body in the light of the fireplace behind her. Her lips and aureoles are enhanced by some glossy red make-up and her hair reveals its beauty so often hidden beneath a helmet.) ~
 IF ~~THEN REPLY ~ (You remain expectantly seated while the clicking of her high-heels on the floor tiles comes slowly nearer, making each second of waiting an additional second of pleasure.) ~ GOTO VicSedLrn2
 IF ~~THEN REPLY ~ (You stand up and let the long thick robe that has covered you up to now glide to the floor. Her eyes widen with love and lust as she recognises that you are prepared for this evening as well.)~ GOTO VicSedLrn3
 END
 
 IF ~~THEN BEGIN VicSedLrn2
-SAY ~ Wonderful, my love, we do not wish to spoil our pleasure by unneccesary haste. We have a lot of time tonight.~
+SAY ~ Wonderful, my love, we do not wish to spoil our pleasure by unnecessary haste. We have a lot of time tonight.~
 =~ (She takes your head in both of her hands and, after a long intensive kiss, she leads your lips down to a place just above her breasts.)~
 IF~~ THEN REPLY ~ (Your lips and hands need no further assistance from Sandrah to find their way to ever new points of pleasure on her magnificent body...) ~ DO ~ SetGlobal("SanDreamTalk","GLOBAL",11) RealSetGlobalTimer("SanDreamTalkTime","GLOBAL",SANROM_TIMER) RestParty()~ EXIT
 END
@@ -1883,7 +1883,7 @@ END
  
 IF~~ THEN BEGIN MoDreScene2
 SAY ~ You mean...~
-IF~~THEN REPLY ~ There is a small pavillion at the upper end of the garden, overlooking the sea. The painting of your mother of which that small copy appeared after my first dream is there.~ GOTO MoDreScene3
+IF~~THEN REPLY ~ There is a small pavilion at the upper end of the garden, overlooking the sea. The painting of your mother of which that small copy appeared after my first dream is there.~ GOTO MoDreScene3
 END
  
 IF~~ THEN BEGIN MoDreScene3
@@ -1893,7 +1893,7 @@ END
  
 IF~~ THEN BEGIN MoDreScene4
 SAY ~ Then it was really much more than a dream. It was a vision of a past event that had actually taken place. I remember my father and me standing over there when we had the talk you had in your dream shortly before I left home to go to Candlekeep and Gorion.~
-= ~ And that other talk you told me of, it happened at the other end of the garden, by the pavillion with her picture. It was about half a year earlier. It is all true.~
+= ~ And that other talk you told me of, it happened at the other end of the garden, by the pavilion with her picture. It was about half a year earlier. It is all true.~
 IF~~THEN REPLY ~ Then why did I see these visions of the past? How are they related with me? I mean other than they involve you, of course.~ GOTO MoDreScene5
 IF~~THEN REPLY ~ Who or what makes me see these things and why? How are they related with me other than they involve you?~ GOTO MoDreScene5
 END
