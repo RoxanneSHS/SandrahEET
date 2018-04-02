@@ -5425,7 +5425,7 @@ DO ~ SetGlobal("SanBranKilT","GLOBAL",2)~
 ==BSANDR ~ I hope I did my duty in Tempus' view - and in yours, Branwen.~
 ==BBRANW ~ Do not joke, Sandrah, you killed more of those bastards than I did. And now look at me, all sweaty and greasy and my hair tangled badly.~
 ==BSANDR ~ (Sandrah has already a soft sponge in her hand to clean Branwen's lovely face - an instant later she takes care of the fighter girl's blond locks.) You will look wonderful again in just some seconds, dear.~
-==BBRANW ~ Aah, that feels good. I could cast a healing spell myself, but it is much sweeter to be cared for like this. Still, I'm puzzled continously about your fighting style. I have never before seen anyone dance with a mighty war hammer like you. Yes, it is a dance, even if it is a deadly one for your foe.~
+==BBRANW ~ Aah, that feels good. I could cast a healing spell myself, but it is much sweeter to be cared for like this. Still, I'm puzzled continuously about your fighting style. I have never before seen anyone dance with a mighty war hammer like you. Yes, it is a dance, even if it is a deadly one for your foe.~
 ==BSANDR ~ Side by side we make a pretty good phalanx to protect the rest of our group and especially <CHARNAME>, do you agree, Branwen.~
 ==BBRANW ~ Sure, my friend, I know I can trust you blindly however dangerous the fight becomes. Hm, and I come to enjoy this aftermath as well.~
 ==BSANDR ~ Me, too, now let me look at those other bruises you received down there...~
@@ -5438,7 +5438,7 @@ IF ~ Global("SanBranDzt","GLOBAL",1)~ THEN BSANDR SanbranDrzt
 DO ~ SetGlobal("SanBranDzt","GLOBAL",2) SetGlobal("SansharDzt","GLOBAL",2)~
 ==BBRANW ~ So you know this mighty fighter, Sandrah. He is admirable, but strange that you call a drow your friend.~
 ==BSANDR ~ You have not recognized him then? I am sure you have heard about him nonetheless. It was Drizzt Do'Urden himself.~
-==BBRANW ~ Wow, Drizzt Do'Urden, no wonder he impressed me from the very beginning. And you have the priviledge to know him? How I envy you.~
+==BBRANW ~ Wow, Drizzt Do'Urden, no wonder he impressed me from the very beginning. And you have the privilege to know him? How I envy you.~
 ==BSANDR ~ You would envy me even more if you would know that he was one of my teachers in combat, Branwen.~
 ==BBRANW ~ It really explains a lot about your impressive abilities. I wish I had a teacher like that - or even a real teacher at all.~
 ==BSANDR ~ I was already wondering about your profession, Branwen, as I know from the habits of your people that it is not a way normally for a female to follow Tempus as fighter and as priest.~
@@ -5452,7 +5452,7 @@ IF~Global("SansharDzt","GLOBAL",1)~THEN BSANDR SansharDrzt
 DO ~ SetGlobal("SansharDzt","GLOBAL",2)SetGlobal("SanBranDzt","GLOBAL",2) ~
 ==BSHART ~ So you know this mighty fighter, Sandrah. He is admirable, but strange that you call a drow your friend.~
 ==BSANDR ~ You have not recognized him then? I am sure you have heard about him nonetheless. It was Drizzt Do'Urden himself.~
-==BSHART ~ Wow, Drizzt Do'Urden, no wonder he impressed me from the very beginning. And you have the priviledge to know him? How I envy you.~
+==BSHART ~ Wow, Drizzt Do'Urden, no wonder he impressed me from the very beginning. And you have the privilege to know him? How I envy you.~
 ==BSANDR ~ You would envy me even more if you would know that he was one of my teachers in combat, Shar-Teel.~
 ==BSHART ~ It really explains a lot about your impressive abilities. I wish I had a teacher like that - or even a real teacher at all.~
 ==BSANDR ~ I was already wondering about your skills, as I know from that your skills have surely not been taught to you from the Flaming Fist.~
@@ -5464,7 +5464,7 @@ CHAIN
 IF ~ Global("SanBranTrzg","GLOBAL",1)~ THEN BSANDR SanbranDrzt
 ~ You must be content to see this bastard dead, Branwen. Will it lighten your heart to tell me how he came to do to you what he did?~
 DO ~ SetGlobal("SanBranTrzg","GLOBAL",2)~
-==BBRANW ~ You have the gift to look deep into your comrad's hearts, my friend. More so than me, as my own senses betrayed me with this mage. In romance I think I have not experienced much of subtleties. Tranzig's slithering tongue put my doubts to rest easily, as I know he could not have done with you.~
+==BBRANW ~ You have the gift to look deep into your comrade's hearts, my friend. More so than me, as my own senses betrayed me with this mage. In romance I think I have not experienced much of subtleties. Tranzig's slithering tongue put my doubts to rest easily, as I know he could not have done with you.~
 ==BSANDR ~ He wanted more than you were willing to give him.~
 ==BBRANW ~ After a time, yes. I saw through his false ways quickly and kicked him out of my bedroll. He said: "A woman with a stone heart... shall all be stone..." and put that terrible spell on me.~
 ==BSANDR ~ I am not one who thinks revenge is a good motivation, but there are cases where it appears to be the only solution. Knowing he will never again be able to do you or any other woman any harm, should give you more pleasant dreams from now on.~
@@ -5474,7 +5474,7 @@ EXIT
 
 CHAIN
 IF~ Global("SanBranTrzg","GLOBAL",3)~ THEN BSANDR SanBranTiny
-~ (Sandrah and Branwen are lying side by side in the grass during the short rest you grant to your troups. Sandrah plays with Branwen's long flowing golden locks.)~
+~ (Sandrah and Branwen are lying side by side in the grass during the short rest you grant to your troupes. Sandrah plays with Branwen's long flowing golden locks.)~
 DO ~ SetGlobal("SanBranTrzg","GLOBAL",4)~
 ==BBRANW ~ (Branwen catches Sandrah's fingers and inspects them closely.)~
 ==BSANDR ~ Is there anything special about my hand, dear?~
