@@ -2197,7 +2197,7 @@ DO ~ SetGlobal("PallonTalk","GLOBAL",2) ~
 == Bimoen ~ Hey, know what. Walk through Candlekeep at any time of day and you hear them great prophesies chanted like they meant something to somebody. This God of Murder will get us all or maybe not, or a hero will stop him or the hero will become the god or whatever. I tried to listen time after time and it could mean something important or just mad babbling. Make out of it what you want.~
 == BSANDR ~ So what do you think yourself?~
 == Bimoen ~ About that Bhaal guy, you mean? If he was a god who cares and if he is dead who cares even less. Problem is people who believe such stuff and think it tells them to act really weird, see? You know best with your Mystra goddess, Sandrah. It is what you do in her name, no matter if she really exists or not.~
-== BSANDR ~ You are right, Imoen, you are a clever philosopher. It is good you are not in Candlekeep anymore, they would have kicked you out sooner or later for your free thinking.~
+== BSANDR ~ You are right, Imoen, you are a clever philosopher. It is good you are not in Candlekeep any more, they would have kicked you out sooner or later for your free thinking.~
 == Bimoen ~ Guess your Mystra coulda taken me then, she doesn't seem to care for such as long as your heart is in the right place.~
 == BSANDR ~ (Smiles) Your heart surely is, besta friend.~
 EXIT
@@ -3375,12 +3375,12 @@ DO ~ SetGlobal("Santiax","LOCALS",4) RealSetGlobalTimer("SantiaxTa","LOCALS",160
 == BTIAX~ Why? You are his granddaughter, his heiress...~
 == BSANDR ~ I am the granddaughter of the adventurer Cyric. My heritage goes back to the man, when he was still in his human form and before he was elevated by Ao to godhood. I am not the granddaughter of your mad god, Tiax.~
 == BTIAX~ Blablabla...what is the use of that detail, Sandrah. You are of HIS blood, and that means that fate has sent me to your side as your natural companion so we both can rise in Cyric's name to his heritage...~
-== BSANDR ~ God's have no heirs, Tiax. Sometimes an ursupator claims their power and domain, but that is a different story.~
+== BSANDR ~ God's have no heirs, Tiax. Sometimes an usurper claims their power and domain, but that is a different story.~
 == BTIAX~ Idiotic! The scheme is so clear, even a female must be able to see it - you and me, Cyric and Mystra. We will rule.~
 == BSANDR ~ Tread careful Tiax, neither of those gods may like your rising to their realm.~
 == BTIAX~ Baah, Cyric wants Tiax to rule. You should pray sometimes, priestess, then your goddess will surely tell you she wants you to follow her.~
 == BSANDR ~ I am already following her, Tiax, as well as the way set out by the woman Midnight she had been before.~
-== BTIAX~ Then how can you be so blind, Sandrah. If you follow Midnight - see what became of her, hehe, she rules, Cyric rules, Tiax will rule - The logic is infailable - Sandrah will rule.~
+== BTIAX~ Then how can you be so blind, Sandrah. If you follow Midnight - see what became of her, hehe, she rules, Cyric rules, Tiax will rule - The logic is infallible - Sandrah will rule.~
 EXIT
 
 CHAIN
@@ -3424,7 +3424,7 @@ DO ~ SetGlobal("Kivshil","GLOBAL",4) SetGlobal("PKivshil","GLOBAL",4) RealSetGlo
 == BSANDR~ You say *She is*. ~
 == BKIVAN ~ Humans would call her dead. But elves do not die. They venture from this being. She waits for me to join her in Arvanaith. ~
 == BSANDR~ We all need to remember our past, our desires and those who have departed.~
-== BKIVAN ~ But not all have lost the one who trusted them in the way I did. I must fulfill my vow to Shevarash before I can depart to join her.~
+== BKIVAN ~ But not all have lost the one who trusted them in the way I did. I must fulfil my vow to Shevarash before I can depart to join her.~
 == BSANDR~ Kivan, I spent all my life until recently with a man who lives beside and with his dead mela en'coiamin. I know about those beasts on Toril who stay single after losing their mate.~
 == BKIVAN ~ You know a lot for a young girl, I saw that already. You will never be accused of idle chatter by me. - Good night, Sandrah, you are no elf, you need your sleep to fight by my side again tomorrow.~
 == BSANDR~ Good night, Kivan.~
@@ -3443,7 +3443,7 @@ DO ~ SetGlobal("Kivshil","GLOBAL",6) SetGlobal("PKivshil","GLOBAL",6) RealSetGlo
 == BSANDR~  So, my friend, we need to find such a solution for you as well.~
 == BKIVAN ~  When Tazok is dead, I will return to Shilmista to start my journey to Arvanaith. I am but a black arrow on Shevarash' bow. ~
 == BSANDR~  My father was not granted the chance to avenge his beloved wife. The vile deed of the God of Murder was done from even beyond the murderer's grave. And still he gave meaning to his life, to my life and too many, many others throughout Faerun.~
-== BKIVAN ~  * Kivan's face shows his deep thoughts, but also for the first time since you know him, he seems to be content, almost relaxed, as he silently walks beside Sandrah with his arm around her shoulder and a tender sidelook to her every now and then. They walk like that a bit behind the group for a long while.* ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
+== BKIVAN ~  * Kivan's face shows his deep thoughts, but also for the first time since you know him, he seems to be content, almost relaxed, as he silently walks beside Sandrah with his arm around her shoulder and a tender side look to her every now and then. They walk like that a bit behind the group for a long while.* ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
 CHAIN
@@ -3453,8 +3453,8 @@ DO ~ SetGlobal("Kivkill","GLOBAL",3) SetGlobal("PKivkill","GLOBAL",3) RealSetGlo
 == BKIVAN ~Here - Lle naa belegohtar... you are a mighty warrior, Sandrah.~
 = ~ I must admit, I completely took you for a weekend warrior, in your shimmering chain mail and those robes that the merchants in Waterdeep may advertise as "adventurer's brown", "Cormanthyr green" or "road mud brown". (Kivan's laughter is hoarse, but, yes, it is really laughter.)~
 == BSANDR~ That means quite something from a man with your experience. Not that it matters in case of an elf, but, how old are you, Kivan?~
-== BKIVAN ~I had seen two hundred and twenty four summers before Deheriana was killed. I have not counted anymore afterwards.~
-== BSANDR~ (Sandrah holds the waterbag to Kivan's lips and lets him drink in return.)~
+== BKIVAN ~I had seen two hundred and twenty four summers before Deheriana was killed. I have not counted any more afterwards.~
+== BSANDR~ (Sandrah holds the water bag to Kivan's lips and lets him drink in return.)~
 == BKIVAN ~ But that was just yesterday, wasn't it, so what is there to count.~
 == BSANDR~ Yesterday, Kivan, was the day when we rescued that little boy from the Ogres, remember. And the day before was when we discovered and prevented the bandit ambush on the caravan. A lot of travellers could have lost their lives. Remember, dear, none of these days was in vain.~
 == BKIVAN ~ And the night before was the one we both saw this falling star, you remember that as well, Sandrah.~
@@ -3510,7 +3510,7 @@ DO ~ SetGlobal("KivNakD","GLOBAL",2) SetGlobal("PKivNakD","GLOBAL",2)~
 == BKIVAN ~ Amazing, once again, it explains what I have seen in you but could not name.~
 ==BSANDR~ I loved to go there, yes, nude and free, to feel the wind from the sea touching me everywhere, delivering messages from far away regions I would one day see. Carrying voices of people I might meet. Dwarfs, maybe even elves.~
 == BKIVAN ~ Tell me more, Sandrah.~
-==BSANDR~ I will rather show you than tell you. (Sandrah slowly drops the light gown she had put on after you had stopped for the rest. You see her slender feminine body enlighted by the pale light of the half moon. She takes some first hesitant steps to begin a dance to a music you cannot hear - maybe it is whispered in the wind.)~
+==BSANDR~ I will rather show you than tell you. (Sandrah slowly drops the light gown she had put on after you had stopped for the rest. You see her slender feminine body enlightened by the pale light of the half moon. She takes some first hesitant steps to begin a dance to a music you cannot hear - maybe it is whispered in the wind.)~
 == BKIVAN ~ (Now the tune becomes audible. Low, sad and longing. Sandrah's figures and movements become more confident as they follow the melody like in a trance. You suddenly recognize that it is Kivan who is humming this mesmerising tune.) ~
 ==BSANDR~ (Sandrah's eyes are closed and her lips are slightly parted as if awaiting a lover to join her dance.)~
 == BKIVAN ~ (You see Kivan's muscular body now come out of the shade to join Sandrah. He has dropped his clothes completely as well. He starts to encircle her movements without ever touching her.)~
@@ -3522,17 +3522,17 @@ CHAIN
 IF ~ Global("SanKivTaz","GLOBAL",1) ~THEN BSANDR SanKivTazd
 ~ (Sandrah has sat down beside Kivan and has silently removed the hunter's gloves from his hands. She gently moves her fingers along the bruises and scars of his battered hand.)~
 DO~ SetGlobal("SanKivTaz","GLOBAL",2) SetGlobal("PSanKivTaz","GLOBAL",2) RealSetGlobalTimer("KivshilT","GLOBAL",880)~
-== BKIVAN ~ It is in vain, Sandrah, no healer's skills can repair these fingers anymore. Tazok and his men did their job well that night. The only job they knew and could perform well.~
+== BKIVAN ~ It is in vain, Sandrah, no healer's skills can repair these fingers any more. Tazok and his men did their job well that night. The only job they knew and could perform well.~
 ==BSANDR~ There is no real healing required here, Kivan. (She kisses the battered hand lightly.) You manage your bow and sword quite well with this hand. The healing has already come from your inside. It has you made go on and continue your live.~
-== BKIVAN ~ It is not healing, you talk about, melamin, it is the strength that was provided by Shevarash to avenge Deheriana. Now the Black Archer is satisfied by Tazok's dead, he has no need for his tool anymore.~
+== BKIVAN ~ It is not healing, you talk about, melamin, it is the strength that was provided by Shevarash to avenge Deheriana. Now the Black Archer is satisfied by Tazok's dead, he has no need for his tool any more.~
 ==BSANDR~ My friend, we need to find another source of strength for you then.~
-== BKIVAN ~ That will not be necessary anymore, as I told you before, my way is now to Arvanaith.~
-==BSANDR~ Your way was always to Arvanaith, every elf's way is. But there may be well another two-hundred fourty and something years to be covered until you get there. At first, there is <CHARNAME>'s quest to finish. We need to find the one who hired Tazok for his deeds.~
+== BKIVAN ~ That will not be necessary any more, as I told you before, my way is now to Arvanaith.~
+==BSANDR~ Your way was always to Arvanaith, every elf's way is. But there may be well another two-hundred forty and something years to be covered until you get there. At first, there is <CHARNAME>'s quest to finish. We need to find the one who hired Tazok for his deeds.~
 == BKIVAN ~ You are right to remind me, this is an obligation that needs to be fulfilled. These old wounds again trouble me. (Kivan flexes his fingers.) I had been shooting more since I have joined this group, and the body protests by reminding me more avidly where it was broken and burnt. But I will not let it slow me, for our battles are the just ones. ~
 ==BSANDR~ (Sandrah has put Kivan's hand into her lap and starts to apply some cool smooth salve to the bruises. Kivan's eyes close to the gentle motions of Sandrah's fingers on the burned scars.) Healing needs to come from inside, melamin. (Her other hand, that is moist from the salve as well, has moved to Kivan's pointed ears in slow caress.)~
 == BKIVAN ~ Aah, elves are very sensitive in this area.~
 =~ (He whispers:) Cormlle naa tanya tel'raa - your heart is that of a lion. I never see you scared, not even by me. Can you be the source of strength I now require?~
-==BSANDR~ You underestimate my healer's skills, my still unexperienced elf, I can heal more than just a few bruises or ressurect a fallen friend. (Her fingers now caress Kivan's closed eyelids, her mouth is close to Kivan's lips.)~
+==BSANDR~ You underestimate my healer's skills, my still inexperienced elf, I can heal more than just a few bruises or ressurect a fallen friend. (Her fingers now caress Kivan's closed eyelids, her mouth is close to Kivan's lips.)~
 == BKIVAN ~ (He feels her breath close to his lips and opens his own in expectation.) Wisdom is no matter of age, let me taste your strength.~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -3569,12 +3569,12 @@ IF ~ Global("CentKiv","GLOBAL",1)~ THEN BSANDR KivJon
 ~ Secretive elf, do you trust me as much as to share a bit of lore with me?~
 DO ~ SetGlobal("CentKiv","GLOBAL",2) SetGlobal("SanSpokeCent","LOCALS",1)~
 == BKIVAN  ~ How can I not trust the one that gives me so much every moment since I met her?~
-== BSANDR ~ This mage's name, Jon Irenicus, I heard it before. He has done more with his magical powers than to punish this crazy loveblind murderess. Something much more evil and destructive.~
+== BSANDR ~ This mage's name, Jon Irenicus, I heard it before. He has done more with his magical powers than to punish this crazy love blind murderess. Something much more evil and destructive.~
 == BKIVAN  ~ Her speaking of him sounded like he is a man you should not get into trouble with. But how am I to help you in that matter, Sandrah?~
 == BSANDR ~ The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
 == BKIVAN  ~ Sandrah, I swear that I am hiding nothing from you, beloved. I have never heard the name before. What I can assure you, that he is not from Shilmista. That makes the man even more suspicious.~
 == BSANDR ~ In which way, Kivan?~
-== BKIVAN  ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enourmous, that it is kept secret even among the elves themselves. I can only honestly proclaim to you that I do not even have a glimpse of information what or where he has done it.~
+== BKIVAN  ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enormous, that it is kept secret even among the elves themselves. I can only honestly proclaim to you that I do not even have a glimpse of information what or where he has done it.~
 == BSANDR ~ Never mind, Kivan. It was just curiosity that made me ask, because I had heard the name before and I was astonished to hear it in a place like this. Probably it does not concern us at all. Hopefully he will never cross our path.~
 == BKIVAN  ~ I pray for that. We have plenty of opponents that threaten poor <CHARNAME>'s life every day - and yours, and yours. I hate to see your downfall waiting for you in these traps and dungeons.~
 == BSANDR ~ I am sorry I have brought the topic up. You are right, we have enough to consider already. <CHARNAME>, please let us move out of here before this place depresses us all completely.~
@@ -3585,7 +3585,7 @@ IF ~ Global("SanKevStay","LOCALS",1) ~ THEN BSANDR SanKevStay
 ~ Say, why do you continue to stay with <CHARNAME> after we have killed Tazok?~
 DO ~ SetGlobal("SanKevStay","LOCALS",2) SetGlobal("PSanKevStay","LOCALS",2)RealSetGlobalTimer("KivshilT","GLOBAL",1200)~
 == BKIVAN ~ (Kivan lies on his back in the grass gazing dreamily into the warm sun. Sandrah lies beside him with her head resting on his bare chest while he tenderly strokes her hair.)~
-= ~ Hm, <PRO_HESHE> has taken me in when I was blindly following my revenge and has lead me onto a course where my own fate has become part of our overall concern. And mind, sweetheart, Tazok has been ressurected and my task is not yet done.~
+= ~ Hm, <PRO_HESHE> has taken me in when I was blindly following my revenge and has lead me onto a course where my own fate has become part of our overall concern. And mind, sweetheart, Tazok has been resurrected and my task is not yet done.~
 == BSANDR ~ I see. Quite a list of reasons.~
 == BKIVAN ~ (Kisses her forehead.) You are not trying to hear me say, my one and only reason to continue on this plane is the love of some silly little stubborn human girl, don't you?~
 == BSANDR ~ It would not hurt me to hear it, if you would find the time to use a bit of nicer words, others than *silly* and *stubborn*. But, anyway, you are here and it is good.~
@@ -3605,12 +3605,12 @@ IF~ Global("SanKivBow","GLOBAL",1)~ THEN BSANDR Kivbow
 ~ (Sandrah has taken Kivan in her arms and caresses his head while the elf is shaken with attacks of sobbing and mumbling elvish curses.)~
 DO ~ SetGlobal("SanKivBow","GLOBAL",2)~ 
 == BKIVAN  ~ So we are even betrayed of our revenge, these rascals just revived Tazok and he goes on with his bloodshed like before...~
-== BSANDR ~ Ssssht. My love, it will all be corrected. These evil doers have no chance anymore. Their days are counted.~
+== BSANDR ~ Ssssht. My love, it will all be corrected. These evil doers have no chance any more. Their days are counted.~
 == BKIVAN  ~ Sandrah belegohtar, will you join me when I renew my vow to Shevarash today?~
 == BSANDR ~ Kivan, my life, no. No, this time we will not be blinded by revenge and destruction. This time we will cure you and us and the Sword Coast from this disease.~
 == BKIVAN  ~ You will not...wait, yes...Sandrah I am listening to you, I know you keep a calm view and will set things right. Speak mellamina.~
 == BSANDR ~ Look at it from the perspective of a healer, my elf. Tazok and this Imanel Silversword are just symptoms of the disease that has befallen the Sword Coast and now infects us with death and hatred. Sometimes a healer must cut deep to cure the disease at the very root. And this is what we must do now - together. You, me and <CHARNAME> and all that follow us.~
-== BKIVAN  ~ (Kivan straightens and looks fiercly at the walls of the city.) That evil resides in there somewhere. I will follow my healer's guide to burn out the wound from any particle of its existence, so that the Sword Coast can become sane again.~
+== BKIVAN  ~ (Kivan straightens and looks fiercely at the walls of the city.) That evil resides in there somewhere. I will follow my healer's guide to burn out the wound from any particle of its existence, so that the Sword Coast can become sane again.~
 == BSANDR ~ ...and all those who have suffered by that plague. (She kisses Kivan intensively and then moves up to you.)~
 =~ All those who have suffered by that plague, <CHARNAME>. (She takes your head with both hands and pulls you down to her warm and soothing lips.)~
 EXIT
@@ -3662,8 +3662,8 @@ IF ~ Global("SankivRab","LOCALS",1)~ THEN BSANDR SanKivSeeR
 DO ~ SetGlobal("SankivRab","LOCALS",2) SetGlobal("PSankivRab","LOCALS",2)~
 == BKIVAN ~ Those poor rabbits must feel as lost and alone here as I do.~
 == BSANDR ~ Oh, come on, sweetheart, do not get solemn. You are neither alone with me by your side, nor are you lost with your beautiful companion being able to show you everything you need in the city as you would do for me in the forest.~
-== BKIVAN ~ An old rusty elf is no longer as flexible in his ways as you are, young rabbit. I see you at home in the city's bustle just the same as on a cool eve beneath the larchs. I envy you for your ability to feel at home wherever you are.~
-== BSANDR ~ I think nature is everything that surrounds us and we are her children whereever we are. The druids are in error when they think only a lonely wood grove allows us such a perception. A sunset over the city's chimneys can be as beautiful as the sunrise over a lonely lake on the Spine of the World.~
+== BKIVAN ~ An old rusty elf is no longer as flexible in his ways as you are, young rabbit. I see you at home in the city's bustle just the same as on a cool eve beneath the larches. I envy you for your ability to feel at home wherever you are.~
+== BSANDR ~ I think nature is everything that surrounds us and we are her children wherever we are. The druids are in error when they think only a lonely wood grove allows us such a perception. A sunset over the city's chimneys can be as beautiful as the sunrise over a lonely lake on the Spine of the World.~
 == BKIVAN ~ You must know, as I am sure you have seen them both. With you at my side, Sandrah, I can imagine I will be able to feel the same everywhere.~
 == BSANDR ~ That sounds promising. I prefer that to limiting ourselves to one choice only, my love.~
 == BKIVAN ~ Then let us hurry. Show me the beautiful sides of *our* city!~
@@ -3680,7 +3680,7 @@ DO ~ SetGlobal("SankivRab","LOCALS",4) SetGlobal("PSankivRab","LOCALS",4)RealSet
 == BKIVAN ~ You do not need to set your stays in the city aside because of me, Sandrah. As you have seen, with you by my side I can manage everything.~
 == BSANDR ~ That is good to know, as we will eventually do that, like shopping for things we cannot get in the woods and such. Maybe meet some old friends from time to time, buy a book, eat out at a restaurant.~
 == BKIVAN ~ Mmm?~
-== BSANDR ~ Is it not handy that I am quite flexibel, my elf? I can live in the city or outside, although I would prefer some view of the sea. But a lonely lake would do just as well.~
+== BSANDR ~ Is it not handy that I am quite flexible, my elf? I can live in the city or outside, although I would prefer some view of the sea. But a lonely lake would do just as well.~
 == BKIVAN ~ I once found a vacated cabin by a sunlit lake, with a veranda to sit in the evening sun, extended woodland for hunting nearby, a silhouette of mountains in the distance.~
 == BSANDR ~ (She has closed her eyes, leaning against Kivan's shoulder.) I can see it, darling, yes, that is the place. I am sure a ranger like you finds the path to it again.~
 == BKIVAN ~ Sure, sweetheart. So what is this all about then?~
@@ -3702,9 +3702,9 @@ DO ~ SetGlobal("SankivRab","LOCALS",6) SetGlobal("PSankivRab","LOCALS",6)RealSet
 == BSANDR ~ Darling, close your eyes and tell me of the journey as if we would take it. I will follow your words with my finger on my map.~
 == BKIVAN ~ We will follow the Chionthar for six days walking at good pace...~
 == BSANDR ~ We will need a stop from time to time, I get so easily hungry for you, sweet tease.~
-== BKIVAN ~ Agreed, seven days. We will pass through the greenlands off from Iriaebor without touching the village. We will start to smell the new freshness in the air cleansed by Sunset Mountains. The fir needles soften our steps as we continue through the woods moving slightly upwards but not very steep. Birdsong surrounds us and a shy deer observes us from a safe distance. No animal will flee us, as they know no hunters here.~
+== BKIVAN ~ Agreed, seven days. We will pass through the green lands off from Iriaebor without touching the village. We will start to smell the new freshness in the air cleansed by Sunset Mountains. The fir needles soften our steps as we continue through the woods moving slightly upwards but not very steep. Birdsong surrounds us and a shy deer observes us from a safe distance. No animal will flee us, as they know no hunters here.~
 == BSANDR ~ The journey is already worth it alone, my ranger.~
-== BKIVAN ~ You seem to really feel it already. But we are almost there, as the woods open to a sunlit meadow that slightly slopes down to the lake. Halfways between the wood's edge and the shore you see our cabin, it looks so natural as if it was not built there but has somehow grown there as part of the landscape. - So where are we on your map?~
+== BKIVAN ~ You seem to really feel it already. But we are almost there, as the woods open to a sunlit meadow that slightly slopes down to the lake. Halfway between the wood's edge and the shore you see our cabin, it looks so natural as if it was not built there but has somehow grown there as part of the landscape. - So where are we on your map?~
 == BSANDR ~ Exactly here.~
 == BKIVAN ~ But there is nothing?~
 == BSANDR ~ Then it must be the right place. A place of our own, not known to the outsiders and not charted on any map, just like you described it.~
@@ -3737,7 +3737,7 @@ DO ~ SetGlobal("SanFalB","GLOBAL",3)~
 == BSANDR IF ~ !InMyArea("Pellig") ~ THEN ~ The part of our house in Waterdeep I loved most was the wild garden. The animals there were my best friends.~
 == Bfaldo IF ~ InMyArea("Pellig") ~ THEN ~  Yourr feelings I can read like you read yourr books. You speak the truth. You have respect forr the Great Mother. Strrange.~
 == BSANDR ~ Do you really think that the way for all humans is to live in the wild again? Exploiting nature is vile but making use of natural resources to your need is what all children of the Great Mother do to survive. People who have a respect for their fellow beings can balance their demands with nature.~
-== Bfaldo ~ Who does that? The farrmer destroys the wood and exploits the soil. He is a vampirrre sucking the Great Mother's vein ripped open with his plow.~
+== Bfaldo ~ Who does that? The farrmer destroys the wood and exploits the soil. He is a vampirrre sucking the Great Mother's vein ripped open with his plough.~
 == BSANDR ~ The farmer feeds his family and other's who do not work the land themselves. The same way the hunter kills a deer for food. Just like a wolf does as well.~
 == Bfaldo ~ And those that dig into the verry intestines of the Mother with their shovels to tear the orrre from her bleeding system - those bandits in the mine over there?~
 == BSANDR ~ We are here to destroy them.~
@@ -3749,17 +3749,17 @@ CHAIN
 IF ~ Global("SanEldoDisl","LOCALS",7)~ THEN BSANDR EldothRuma
 ~ This is surely not your size, Eldoth!~
 DO ~ SetGlobal("SanEldoDisl","LOCALS",8)~
-== BELDOT~ (Holds one of Sandrah's expensive undershirts in his hand which he has taken from her backpack during the short break you called to refresh your party.)~
+== BELDOT~ (Holds one of Sandrah's expensive underskirts in his hand which he has taken from her backpack during the short break you called to refresh your party.)~
 =~ I must admit it looks pretty luxurious - and if I might say, expensive.~
 == BSANDR ~ Then it would be better to put it back before it can take any damage for which you would have to compensate.~
 == BELDOT~ Hey, hey, I am just interested in my new comrades and like to get to know them a bit better.~
 == BSANDR ~ By spying on their underware? Interesting.~
 == BELDOT~ Say, all your equipment and clothes look like the best of qualities, it must be worth a fortune what you carry around on the road.~
 == BSANDR ~ And you are volunteering to defend it from any thieves or such? Or are you one yourself?~
-== BELDOT~ No insults please, lady rich girl. Say, why is one like you not at home in her estate where a well educated lovely young lady belongs? Maybe you are here trodding the dusty road with your hammer 'cos you're the thief yourself.~
+== BELDOT~ No insults please, lady rich girl. Say, why is one like you not at home in her estate where a well educated lovely young lady belongs? Maybe you are here treading the dusty road with your hammer 'cos you're the thief yourself.~
 == BSANDR ~ Do I look like one to you - well you must know about disguises, even if coming on as a bard is a great risk if one sings as terrible as you do.~
 == BELDOT~ Be silent, it's not like your opinion is required on that matter. It would suit you much better to behave a bit more ladylike.~
-== BSANDR ~ Good idea. As a lady from the City of Splendor I will have my servants just whip a common thief caught with his fingers on my belongings.~
+== BSANDR ~ Good idea. As a lady from the City of Splendour I will have my servants just whip a common thief caught with his fingers on my belongings.~
 == BELDOT~ (Flushes red and drops the shirt.) Calm down...(Stumbles away...)~
 DO~ ApplySpellRES("CVSLEEP","Eldoth")~
 EXIT
@@ -3810,7 +3810,7 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",3)~
 == BSANDR ~ (Sigh) I think you are right, even though we may never resolve our different views. Nevertheless you have my interest awakened.~
 == BAJANT ~ I will leave your dealing with Mystra aside as we both know well the family relations that lie behind that. Now what I have come to observe is rather, that your actions and opinions would suit a follower of Helm quite well. Actually I think you do more that would please the Vigilant One than many of his self-appointed followers.~
 == BSANDR ~ Ajantis, that is so absurd, that it starts to become really interesting. Please continue with your *analysis*.~
-== BAJANT ~ Maybe in a moment you will not think of it as so absurd anymore. This is what I see, mylady, when I compare your actions to Helm's rules.~
+== BAJANT ~ Maybe in a moment you will not think of it as so absurd any more. This is what I see, mylady, when I compare your actions to Helm's rules.~
 = ~ Helm says: *Never betray those who trust you.* You see, Sandrah, you fully comply with that.~
 = ~ *Be fair and diligent in the conduct of your orders.* You never fail to act this way.~
 = ~ *Protect the weak, poor, injured, and young; do not sacrifice them for others or for yourself.* Do I need to name the examples for your acting exactly this way. Would you not rather sacrifice yourself than to see anyone suffer for you?~
@@ -3826,7 +3826,7 @@ CHAIN
 IF ~ Global("SanHelmDogmas","GLOBAL",6)~ THEN BSANDR AjanMyst
 ~ If you look at me like that, Ajantis, it is again something that has to do with religion. Fine. I agree that the topic is unavoidable between a paladin and a priestess of different gods.~
 DO ~ SetGlobal("SanHelmDogmas","GLOBAL",7) ~
-== BAJANT ~ Sandrah? I am relieved that you do not reject the topic anymore. I would really ask you about your current relation to Mystra. When we last saw each other in Waterdeep, I had the impression that you were fighting hard not to follow the way that everybody was expecting of you. I mean to become Mystra's priestess alongside  your father.~
+== BAJANT ~ Sandrah? I am relieved that you do not reject the topic any more. I would really ask you about your current relation to Mystra. When we last saw each other in Waterdeep, I had the impression that you were fighting hard not to follow the way that everybody was expecting of you. I mean to become Mystra's priestess alongside  your father.~
 == BSANDR ~ Mystra is among all the gods of Toril the goddess that allows their followers the most freedom in their own decisions. I am not obliged to follow strict rules like those of Helm. Actually, there is nothing that Mystra could demand from me, that I would not do anyway.~
 == BAJANT ~ I already pointed out last time, that you do as much good as many followers of Helm would wish to do. Now you say, that Mystra does not directly provide you with the motives to do so as well. So what guides you then, Sandrah?~
 == BSANDR ~ I have not confirmed that Mystra is not a guidance to me. All I said is that her rules and instructions are not expressed in clear commands, but are something that you find in your own heart and mind.~
@@ -4301,7 +4301,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",14) RealSetGlobalTimer("BloomwT","GLOBAL",1200
 == BSANDR ~ The hints and descriptions in his book are his own writing. So he remembers about the island and what is there to be found.~
 ==IF_FILE_EXISTS BSUFINCH~ That is true. It does not fit together. And what sense would you make out of that? ~
 == BSANDR ~ His amnesia might have been a trick to conceal his real past life. The life of a pirate and maybe sole survivor of a pirate ship that has hidden a treasure on some island. But somebody from his past has recognised him and knows what is really behind his unreadable book that has not gone into public publishing.~
-==IF_FILE_EXISTS BSUFINCH~ His other books are at least more readable. He could make a living out of them. But we cannot ask him anymore. He died in the Beard two winters ago.~
+==IF_FILE_EXISTS BSUFINCH~ His other books are at least more readable. He could make a living out of them. But we cannot ask him any more. He died in the Beard two winters ago.~
 EXIT
 
 CHAIN
@@ -4472,7 +4472,7 @@ DO ~ SetGlobal("SanCorbabe","GLOBAL",2) SetGlobal("P#CoranBaby","GLOBAL",1)~
 == BSANDR ~ (Laughs.) Kind of, yes. Now, but honestly, Coran, it seems like it is the first time you encounter this situation and ... hm, what are you going to do about it?~
 == BCORAN~ What? Eh, did we not help the girl already by restoring her from that curse?~
 == BSANDR ~ Does your fatherly care end with that, elf. I must say I am disappointed. I was expecting you to care more for the ones that are close to you.~
-== BCORAN~ But she isn't close to me anymore. You have heard it yourself, Brielbara is past and I am past for her.~
+== BCORAN~ But she isn't close to me any more. You have heard it yourself, Brielbara is past and I am past for her.~
 == BSANDR ~ Maybe so - for her. But what about Namara? She is your child and she is not past.~
 == BCORAN~ Why do you care so much about other woman's children, Sandrah, even if I am their father?~
 == BSANDR ~ Should I not? Maybe I should not care about this father as well?~
@@ -4553,7 +4553,7 @@ DO ~SetGlobal("JarKhalBant1","GLOBAL",2)~
 == BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interference here? ~
 == BSANDR ~ He did not send me himself, but he has surely found out by now. I can only hope he has as much trust in me as I can ask you to trust me.~
 == BJahei ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
-== BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little anymore, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
+== BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little any more, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
 == BJahei IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ Mmmh.~
 EXIT
@@ -4570,7 +4570,7 @@ DO ~SetGlobal("JarKhalBant1","GLOBAL",2)~
 == BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interferance here? ~
 == BSANDR ~ He did not send me himself, but he has surely found out by now. I can only hope he has as much trust in me as I can ask you to trust me.~
 == BJahei ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
-== BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little anymore, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
+== BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little any more, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
 == BJahei IF ~ InParty("KHALID") ~ THEN ~ KHALID!~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ Mmmh.~
 EXIT
@@ -4633,7 +4633,7 @@ DO ~ SetGlobal("SanJahKiv","GLOBAL",2)~
 == BSANDR ~ If there was ever a Harper than it is you, Jaheira. Always with the nose and fingers in other people's business. Listen, I do not want to insult you, I know you are the self-appointed warden of <CHARNAME>. But I care for <PRO_HIMHER> from the depth of my heart as well.~
 == BJahei ~ That is not so clear from this situation you have created!~
 == BSANDR ~ You mean to say, it is not so clear to you. And that is disturbing you. You still do not trust me.~
-== BJahei ~ Mh. I was about to. But your actions seem to shift so rapidly, I cannot see clearly anymore.~
+== BJahei ~ Mh. I was about to. But your actions seem to shift so rapidly, I cannot see clearly any more.~
 == BSANDR ~ But you think you must in order to protect <CHARNAME> and so we can run around in circles for a long time. So I think the only means to avoid that is to endure your scrutiny.~
 == BJahei ~ Good. So what about Kivan?~
 == BSANDR ~ You are absolutely right, I will never become his mela en'coiamin. But I can be his reason to continue on this plane, as he calls it, and to make his days worth living.~
@@ -5725,7 +5725,7 @@ DO~ SetGlobal("SanGarrN","GLOBAL",2) ~
 == BGARRI ~ I am more for the ballads and lovesongs, eh , apart from the hero sagas. Mmh, but then - if you would be happy with a slow dance rather than those jigs and reels, mylady...~
 ==BSANDR ~ Let us see. <CHARNAME>, may I ask you courtly for this dance? I must warn you however, the bard anounced a slow one. One to get a bit nearer to each other I assume.~
 END
-++ ~ Oh, please, Sandrah, spare me this ordeal. I cannot be this groups respected leader anymore if they see me dance.~ +  SanGarrDaSe
+++ ~ Oh, please, Sandrah, spare me this ordeal. I cannot be this groups respected leader any more if they see me dance.~ +  SanGarrDaSe
 ++ ~ A slow one? I may be able to manage that without breaking my feet and your toes, Sandrah. Yes, let's do it.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ SanGarrDaPC
 
 CHAIN
@@ -6124,7 +6124,7 @@ EXIT
 
 CHAIN
 IF ~ Global("SharRead1","GLOBAL",1)~ THEN BSANDR SanShartbook1
-~(As you enter the side room you rented for your party after a negotiation with the proprietor, you are once more struck by another surprise from your lovecats. You had thought you knew them by now and even Shar-Teel coming up in a gown and a nice hairdo would not shock you anymore. But you have erred.)~
+~(As you enter the side room you rented for your party after a negotiation with the proprietor, you are once more struck by another surprise from your lovecats. You had thought you knew them by now and even Shar-Teel coming up in a gown and a nice hairdo would not shock you any more. But you have erred.)~
 DO ~ SetGlobal("SharRead1","GLOBAL",2) ~
 ==BSHART~ (Shar-Teel sits at the table with Sandrah kneeling beside her with her arm around Shar-Teel's shoulder and peering into the BOOK that she holds.)~
 = ~ And then the ca-v-a, cava what, cava-li oh, cavalier, hey what a word, it's even pathetic when pronounced, but looks horrible in writing. Too much ado for an arrogant male.~
@@ -6231,7 +6231,7 @@ IF ~ Global("SanSharTown","GLOBAL",2) ~ THEN BSANDR SanSharTown1
 DO ~ SetGlobal("SanSharTown","GLOBAL",3)~
 == BSHART~ Bah, *hometown*! Too bad those bandits haven't raided it and taught those pathetic Fists an enduring lesson. Now we need to do it.~
 == BSANDR ~ Chances are that we meet a certain Angelo Dosan while in town.~
-== BSHART~ The worst swine of them all. I tell you what, pussycat, I think I have changed quite a bit since I am in this group. Today, if I'd meet this bastard who calls himself my father I can just laugh him in the face. He has become so small and irrelevant to me that I don't care anymore to hate him.~
+== BSHART~ The worst swine of them all. I tell you what, pussycat, I think I have changed quite a bit since I am in this group. Today, if I'd meet this bastard who calls himself my father I can just laugh him in the face. He has become so small and irrelevant to me that I don't care any more to hate him.~
 == BSANDR ~ That is good to hear. Your inner strength has built up to the physical then. This way we can also avoid some confrontations with the Flaming Fist. Please think of it. <CHARNAME>'s quest requires that we do not attract too much attention - at least not yet.~
 == BSHART~ Suits me well, Sandrah. Revenge is a dish to be served cold. We will built up the trap for our foe and all that support them in cold blood and unescapable deadly. When the hour comes for them to realize, it will be too late.~
 = ~ I tell you something, pussycat, I bet when we reveal the whole plot we will find the bloody idiot who boasts to be my father among our catch.~
@@ -6280,8 +6280,8 @@ CHAIN
 IF ~~ THEN BSANDR SharPregT5
 ~ It will still be some time, seven moons to be exact. We have a lot of time to finish our quest and find a good place for you and the little one.~
 == BSHART~ Damn it! Millions of women have done that before, so why should I be afraid. I swear I will be a mother whom this child will love and respect all life long. And you, <CHARNAME>, I will gut you and boil you and then have pussycat revive you to start slicing you again if you ever dare to do anything wrong to our child. Remember all I told you about my bloody father and simply do the opposite and you may survive. (Shar-Teel has tears in her eyes - they might come from joy.)~
-== BSANDR ~ Our house in Waterdeep will always be there when the time comes that you cannot travel and fight anymore, Shar-Teel. There is no need for haste to find a place. There is still time enough for us to finish this quest and make plans for our life thereafter. It will all turn out to be wonderful.~
-== BSHART~ (Shar-Teel is now hugging you like you have never dreamed she could.) This whole bloody love thing has got us in the end, you crazy idiotic male sweet sweet loving man. Puuh, in some time I cannot wear this armour anymore, but skirts. ~
+== BSANDR ~ Our house in Waterdeep will always be there when the time comes that you cannot travel and fight any more, Shar-Teel. There is no need for haste to find a place. There is still time enough for us to finish this quest and make plans for our life thereafter. It will all turn out to be wonderful.~
+== BSHART~ (Shar-Teel is now hugging you like you have never dreamed she could.) This whole bloody love thing has got us in the end, you crazy idiotic male sweet sweet loving man. Puuh, in some time I cannot wear this armour any more, but skirts. ~
 == BSANDR ~ Trust me, wildcat, I will find some for you that even you will like. You must overcome the feeling that becoming a mother means you get dependent and weak. It will not, I know you good enough. You will stay strong and proud in your new role.~
 == BSHART~ Just think of it, just a little while ago I would have killed you for such words, just to drop you beside the cadaver of the male that did such a thing to me. And now? ~
 = ~ Since I have thrown up already twice this morning there is little chance that anything is left in my stomach to vomit out now. So listen closely, loverboy. I think I can say it now without getting sick. I LOVE YOU.~
@@ -6354,7 +6354,7 @@ DO ~ SetGlobal("SanSharAngD","LOCALS",2) ~
 
 CHAIN
 IF ~Global("SanSharInt","GLOBAL",24)~ THEN BSANDR SanSharGoWDBaby1
-~ Sorry, wildcat, there is no way to close that armour around you anymore. You have grown out of it by now.~
+~ Sorry, wildcat, there is no way to close that armour around you any more. You have grown out of it by now.~
 DO ~ SetGlobal("SanSharInt","GLOBAL",25) ~
 == BSHART ~ You dare to call me fat, pussycat, just wait...~
 == BSANDR ~ Stop, wildcat. Fat is not the expression to be used here. That you start to grow out of your armour and your other clothes does not come unexpected, regarding your condition.~
@@ -7585,7 +7585,7 @@ IF ~~ THEN BEGIN San677
   IF ~InParty("viconia")~ THEN REPLY ~I would not want to lose Viconia's divine spells. Shar is a powerful goddess, and she favors the drow.~  GOTO San680
   IF ~InParty("eldoth")~ THEN REPLY  ~Eldoth is a slug, but he sure knows how to sing... But so can you, if you would just do more often, I'd agree to let him go.~  GOTO San682
    IF ~~ THEN REPLY  ~Sounds like a good plan, Shar-Teel, but we can't do it just now. Let me sort out this mess with my father's murderer, and then - we will hit the road together.~  GOTO San686
-  IF ~~ THEN REPLY  ~No, Shar-Teel, absolutely not. We have no need anymore to sell ourselves as mercenaries. Even you have a code of honor developped that I can respect. Think about it, my she-bear.~  GOTO San688
+  IF ~~ THEN REPLY  ~No, Shar-Teel, absolutely not. We have no need any more to sell ourselves as mercenaries. Even you have a code of honor developped that I can respect. Think about it, my she-bear.~  GOTO San688
   END
 
 IF ~~ THEN BEGIN San678
