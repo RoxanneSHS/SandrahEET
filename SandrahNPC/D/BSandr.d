@@ -4204,13 +4204,13 @@ IF ~ Global("FinchBant1","LOCALS",1)~ THEN BSANDR FinchBant1m
 DO ~SetGlobal("FinchBant1","LOCALS",3)~
 ==IF_FILE_EXISTS BSUFINCH~ Excuse me, Sandrah, I think you will not remember me from Waterdeep, am I right?~
 == BSANDR ~ Honestly, Finch, no, I do not. Should I?~
-==IF_FILE_EXISTS BSUFINCH~ Oh, no, I mean - we never have really met or talked with each other, it would be mere coincidence if you even would have recognized someone as unsignificant as me.~
+==IF_FILE_EXISTS BSUFINCH~ Oh, no, I mean - we never have really met or talked with each other, it would be mere coincidence if you even would have recognized someone as insignificant as me.~
 == BSANDR ~ Waterdeep is a big city, I do not know all the people who live there. There is no reason to belittle yourself or to scold me for not knowing you.~
 ==IF_FILE_EXISTS BSUFINCH~ Sorry, I read so many words but when it comes to using them , I fail  to express myself right.~
 = ~ It is only natural that you do not know me. It is just so strange that, of course, I have the feeling we know each other well, because I know you, the mighty mage's daughter, the beautiful priestess of Mystra. You are so prominent that everybody knows you and then we think you know us, too.~
-== BSANDR ~ I see your point now. Then maybe we should change that now as we are comerads in <CHARNAME>'s group. I heard you are a priestess of Deneir?~
+== BSANDR ~ I see your point now. Then maybe we should change that now as we are comrades in <CHARNAME>'s group. I heard you are a priestess of Deneir?~
 ==IF_FILE_EXISTS BSUFINCH~ Oh, yes, you know about him of course. Oh, how I envy you for all the knowledge you have access to by your goddess and your father as well.~
-== BSANDR ~ To achieve knowledge is always a labourous task even if you have access to some resources. Look at <CHARNAME>, he has learned a lot growing up in the magnificent Candlekeep library. But the real learning just started when he had to depart from the books and had to deal with the real life.~
+== BSANDR ~ To achieve knowledge is always a laborious task even if you have access to some resources. Look at <CHARNAME>, he has learned a lot growing up in the magnificent Candlekeep library. But the real learning just started when he had to depart from the books and had to deal with the real life.~
 ==IF_FILE_EXISTS BSUFINCH~ You do not think then that books and learning provide you with real knowledge?~
 == BSANDR ~ That is not what I tried to express. They are of course important - however not for their own sake but to prepare us and make us fit for the real life. Our knowledge proves its worth not in a scholar's study and intellectual discourse but when helping us to master the problems in our lives.~
 = ~ As a priestess, one of my foremost goals is it to help people and make the world a little more bearable for us all. It is for this purpose I use my knowledge. There is no knowledge just for knowledge's sake. That would be like the rich man with his sack of gold coins left in a desolate place - he starves to death because there is nothing to buy and he cannot eat his gold.~
@@ -4223,13 +4223,13 @@ IF ~ Global("FinchBant1","LOCALS",2)~ THEN BSANDR FinchBant1f
 DO ~SetGlobal("FinchBant1","LOCALS",3)~
 ==IF_FILE_EXISTS BSUFINCH~ Excuse me, Sandrah, I think you will not remember me from Waterdeep, am I right?~
 == BSANDR ~ Honestly, Finch, no, I do not. Should I?~
-==IF_FILE_EXISTS BSUFINCH~ Oh, no, I mean - we never have really met or talked with each other, it would be mere coincidence if you even would have recognized someone as unsignificant as me.~
+==IF_FILE_EXISTS BSUFINCH~ Oh, no, I mean - we never have really met or talked with each other, it would be mere coincidence if you even would have recognized someone as insignificant as me.~
 == BSANDR ~ Waterdeep is a big city, I do not know all the people who live there. There is no reason to belittle yourself or to scold me for not knowing you.~
 ==IF_FILE_EXISTS BSUFINCH~ Sorry, I read so many words but when it comes to using them , I fail  to express myself right.~
 = ~ It is only natural that you do not know me. It is just so strange that, of course, I have the feeling we know each other well, because I know you, the mighty mage's daughter, the beautiful priestess of Mystra. You are so prominent that everybody knows you and then we think you know us, too.~
-== BSANDR ~ I see your point now. Then maybe we should change that now as we are comerads in <CHARNAME>'s group. I heard you are a priestess of Deneir?~
+== BSANDR ~ I see your point now. Then maybe we should change that now as we are comrades in <CHARNAME>'s group. I heard you are a priestess of Deneir?~
 ==IF_FILE_EXISTS BSUFINCH~ Oh, yes, you know about him of course. Oh, how I envy you for all the knowledge you have access to by your goddess and your father as well.~
-== BSANDR ~ To achieve knowledge is always a labourous task even if you have access to some resources. Look at <CHARNAME>, she has learned a lot growing up in the magnificent Candlekeep library. But the real learning just started when she had to depart from the books and had to deal with the real life.~
+== BSANDR ~ To achieve knowledge is always a laborious task even if you have access to some resources. Look at <CHARNAME>, she has learned a lot growing up in the magnificent Candlekeep library. But the real learning just started when she had to depart from the books and had to deal with the real life.~
 ==IF_FILE_EXISTS BSUFINCH~ You do not think then that books and learning provide you with real knowledge?~
 == BSANDR ~ That is not what I tried to express. They are of course important - however not for their own sake but to prepare us and make us fit for the real life. Our knowledge proves its worth not in a scholar's study and intellectual discourse but when helping us to master the problems in our lives.~
 = ~ As a priestess, one of my foremost goals is it to help people and make the world a little more bearable for us all. It is for this purpose I use my knowledge. There is no knowledge just for knowledge's sake. That would be like the rich man with his sack of gold coins left in a desolate place - he starves to death because there is nothing to buy and he cannot eat his gold.~
@@ -4259,7 +4259,7 @@ IF~~ THEN BSANDR FinchHealed
 ~ We are both still learning to deal with this *real life*, Finch. You did not get these wounds from turning the pages of your books. You were bravely fighting just minutes ago.~
 DO ~ SetGlobal("SanHealfink","GLOBAL",6) ~
 ==IF_FILE_EXISTS BSUFINCH ~ You are right - but not fully. The fight was forced on us, all I had to do was to react instinctively to defend me and my companions.~
-== BSANDR ~ And you see my mistake. I cast a healing spell on you, instinctively because I saw you hurt. With a bit more of thinking, I would have kept my spell for our comrades that have not our skills and I should have adviced you to use one of your own on yourself.~
+== BSANDR ~ And you see my mistake. I cast a healing spell on you, instinctively because I saw you hurt. With a bit more of thinking, I would have kept my spell for our comrades that have not our skills and I should have advised you to use one of your own on yourself.~
 ==IF_FILE_EXISTS BSUFINCH ~ You are always so wise, Sandrah. It helps me a lot to see you make mistakes as well. And even more how open you are to admit them. You never try to display yourself as the shining heroine you are.~
 == BSANDR ~ As you just saw yourself, it is good not to think of myself as that *heroine*. I am but an apprentice in this business and it is good to be reminded of that. Arrogance would be our downfall.~
 ==IF_FILE_EXISTS BSUFINCH ~ Belittleling ourselves is inappropriate as well. We must make adequate use of our combined skills, then <CHARNAME>'s mission will be a success.~
@@ -4267,13 +4267,13 @@ EXIT
 
 CHAIN
 IF ~ Global("SanSUFiCLREV","GLOBAL",1)~ THEN BSANDR SuFiBookQ
-~ Now we have discovered that at least your familiy here in Waterdeep was not completely unknown to me.~
+~ Now we have discovered that at least your family here in Waterdeep was not completely unknown to me.~
 DO ~ SetGlobal("SanSUFiCLREV","GLOBAL",2)~
 ==IF_FILE_EXISTS BSUFINCH~ Oh, the family is soo big and busy, it is surely impossible to grow up in this town without ever running into one of us. But Clarissa is a bit different from the rest. With her interest in books as well, she always was important for me.~
 == BSANDR ~ My father of course is a constant customer of her supplies. And vice versa. He gave her lots of books to sell that he found along his journeys through the realms.~
 ==IF_FILE_EXISTS BSUFINCH~ I suggest to see her shop, <CHARNAME>, before we leave Waterdeep. She may have something useful for us among her maps and books.~
 END
-++~Sure, we are just a stonethrow away from her door anyway, let us go there at once.~ EXIT
+++~Sure, we are just a stone throw away from her door anyway, let us go there at once.~ EXIT
 ++~Bah, we surely do not need to load us with more dusty stuff like old tomes and parchments.~ + SuFiBookQ2
 
 CHAIN
@@ -4325,18 +4325,18 @@ DO~ SetGlobal("SanCoran","LOCALS",3)~
 == BSANDR ~ With surely more to follow if you stay with this company.~
 == BCORAN~ And what a delight that will be, sweetling, to explore them on the side of the Flower of Toril.~
 == BSANDR ~ (Laughs) How many poor broken hearted damsels have worn this title before me, elf?~
-== BCORAN~ (Smiles back) I am not completely unexperienced with your fair gender, but believe me, I try not to repeat myself in a dull routine. A special flower like you has deserved an adequate treatment - from one competent to provide such.~
+== BCORAN~ (Smiles back) I am not completely inexperienced with your fair gender, but believe me, I try not to repeat myself in a dull routine. A special flower like you has deserved an adequate treatment - from one competent to provide such.~
 == BSANDR ~ I am glad I have found one then. I look forward to find out what a true *master of the arts* may have in store for me.~
 == BCORAN~ (Places a quick kiss on Sandrah's fingertips.) Fair maiden, that is a challenge I am more than happy to accept.~
 EXIT
 
 CHAIN
 IF ~ Global("SanCoran","LOCALS",4)~ THEN BSANDR SanCoranbo
-~ (Sandrah has stopped by the side of the road and kneels down to relace her boot.)~
+~ (Sandrah has stopped by the side of the road and kneels down to re-lace her boot.)~
 DO~ SetGlobal("SanCoran","LOCALS",5) RealSetGlobalTimer("SanCoranTi","LOCALS",3600)~
 == BCORAN~ (Coran dashes to her side.) Sweetest maiden, let your poor servant kneel for you to provide his humble service...~
 == BSANDR ~ No, Coran, get up immediately. Do you not see that a number of fair maidens from this village may observe this scene - you spoil all your chances for this eve if they see you like that.~
-== BCORAN~ By Hanali, you would be right, my fairie, if such a need would exist. A hunter should never be so careless, I admit.~
+== BCORAN~ By Hanali, you would be right, my faerie, if such a need would exist. A hunter should never be so careless, I admit.~
 == BSANDR ~ A hunter should never set all his chances on one single arrow. His plate may remain empty for his lonely supper.~
 == BCORAN~ Which would be of no matter at all, when he has the vision of a foot so light that it barely touches the dust of the road but yet able to trample the mightiest ogre into the mud.~
 == BSANDR ~ Our dreams may well let us forget the empty stomach for a while. Do not let such carelessness become a habbit, my elfish poet. The labours of romance require a fair amount of stableness.~
@@ -4344,7 +4344,7 @@ EXIT
 
 CHAIN
 IF ~ Global("SanCoran","LOCALS",6)~ THEN BSANDR SanCoranSi
-~ (Sandrah has inspected the dusted celeste in the remote corner of the inn's public room. Some muted notes begin to evolve into a melody under Sandrah's adept fingers.)~
+~ (Sandrah has inspected the dusted celesta in the remote corner of the inn's public room. Some muted notes begin to evolve into a melody under Sandrah's adept fingers.)~
 DO~ SetGlobal("SanCoran","LOCALS",7) RealSetGlobalTimer("SanCoranTi","LOCALS",600)~
 == BCORAN~ Hmmm, dadada...~
 == BSANDR ~ Coran I heard you sing before, I really need your voice for this little tune, my own would spoil the whole performance.~
@@ -4376,7 +4376,7 @@ DO ~SetGlobal("SanCoran","LOCALS",9) RealSetGlobalTimer("SanCoranTi","LOCALS",18
 == BCORAN~ 
 *The lark that watched the maiden undress,
 Told me of beauties of heavens, no less,
-I sing along with that bird, an anxiuous elf
+I sing along with that bird, an anxious elf
 As in short while I must see it all for myself.*~
 == BSANDR~ (Smiles and blows Coran a kiss.) Probably you will, thief of maiden hearts.~ DO~RestParty()~
 EXIT
@@ -4416,7 +4416,7 @@ DO ~ SetGlobal("SanCorShirt","LOCALS",2)~
 == BCORAN~My kitten, do you not see those are actually blouses, I am gazing at. A weird thought has just crossed my mind...could your magic not turn me into one of those?~
 == BSANDR~ Long sleeves or short?~
 == BCORAN~Eeh? What? Oh, long ones, so that I would cover even more of your perfect beautiful body, my love.~
-== BSANDR~ Oh, Coran, I am so sorry...oops I was too fast with my spellcasting.~
+== BSANDR~ Oh, Coran, I am so sorry...oops I was too fast with my spell casting.~
 == BCORAN~ Why, what is wrong?~
 == BSANDR~ I prematurely thought you were eyeing that big store wench for some time already, so I made you a blouse some sizes to large for me. Poor Coran - or maybe not, I am sure you will make the best of the situation - at least she is also female.~
 == BCORAN~ How can you still think I have eyes for any female except for my one and only Queen of Hearts.~
@@ -4435,7 +4435,7 @@ DO ~ SetGlobal("SanCoran","LOCALS",16)~
 == BSANDR~ Oh, yes, and the coldness is starting to creep up my legs already as the only one who could do something about it still stands around babbling instead of acting.~
 == BCORAN~ No wonder, the way you have dressed tonight is wonderful but surely not keeping you warm.(Coran swiftly lifts Sandrah onto the rest of his armchair and removes her high heeled slippers to massage her naked feet. Slowly but expertly his fingers start to move upwards on her leg that extends from her glimmering night shirt.)~
 == BSANDR~ Hmmm. It starts to get a bit warmer. (Her own hands have vanished beneath the morning gown Coran is wearing after his bath at the inn.)~
-== BCORAN~ (Coran lifts his lightweighted lover up and starts to move towards the staircase.) Soon, my sweet prey, it will get pretty hot. Mmpf.~
+== BCORAN~ (Coran lifts his lightweight lover up and starts to move towards the staircase.) Soon, my sweet prey, it will get pretty hot. Mmpf.~
 == BSANDR~ (Sandrah's hungry mouth has already stopped any further words from the elf.)~
 DO~ RestParty()~
 EXIT
@@ -4452,7 +4452,7 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanCormor2
-~ Sure. (Stiffles another yawn)~
+~ Sure. (Stifles another yawn)~
 == BCORAN~ Whatever.(Yawn)~
 == BSANDR~ Sweetheart, what would you need to get you awake?~
 == BCORAN~ The chance to get a few minutes of rest from that hungry beast that drained me tonight.~
@@ -4467,7 +4467,7 @@ IF~ Global("SanCorbabe","GLOBAL",1)~ THEN BSANDR  SanCorbabe1
 ~ (Sandrah smiles at Coran.) You seem to be surprised. Do you not have a number of those little ones already?~
 DO ~ SetGlobal("SanCorbabe","GLOBAL",2) SetGlobal("P#CoranBaby","GLOBAL",1)~
 == BCORAN~ By Hanali, YOU do not seem to be surprised the least of having me revealed as a father.~
-== BSANDR ~ Given the longivity of an elf and your personal lifestyle, my surprise is that this is the first encounter of that kind since we met.~
+== BSANDR ~ Given the longevity of an elf and your personal lifestyle, my surprise is that this is the first encounter of that kind since we met.~
 == BCORAN~ It sounds like you expect the Sword Coast to be flooded by my offspring...~
 == BSANDR ~ (Laughs.) Kind of, yes. Now, but honestly, Coran, it seems like it is the first time you encounter this situation and ... hm, what are you going to do about it?~
 == BCORAN~ What? Eh, did we not help the girl already by restoring her from that curse?~
@@ -4489,8 +4489,8 @@ DO ~ SetGlobal("SanCorbabe","GLOBAL",5) RealSetGlobalTimer("P#CGBabyTalkTime","G
 = ~I was expecting you to berate me for Namara's existence every time you were cross with me, turning our sweet companionship into the unbearable.~
 = ~Yet, you insisted that I decided on something... good. I was lucky that it was you by my side that day or, as the Seldarine know, I would have acted like a selfish brat.~
 == BSANDR ~I am not of the Seldarine, but I know that you would not have acted as a selfish brat, Coran. There is honor in you. Sooner or later, you would have done the right thing.~
-== BCORAN~You... you see me that way? As an honorable man?~
-== BSANDR ~Not exactly paladin-like honorable, but close enough.~
+== BCORAN~You... you see me that way? As an honourable man?~
+== BSANDR ~Not exactly paladin-like honourable, but close enough.~
 == BCORAN~That's... that's such a strange thing to hear from a woman. But then...you're different from all of those I have ever known, kitten.~
 EXIT
 
@@ -4511,7 +4511,7 @@ DO ~ SetGlobal("SanCorbabe","GLOBAL",7) RealSetGlobalTimer("P#CGBabyTalkTime","G
 = ~After a while, being fed up with seeing bruises all over Brielbara's body and listening to what her husband did to her, I suggested that I spirit her away from Yago. At first she was quite fascinated by the prospect, but when she understood that I would neither stay with her long after our escape, nor settle down in a remote corner of the world, she told me that a human's life is too short to make new starts.~
 = ~A good dose of despair in the gaiety of our meetings finally wore me down, and I left.~
 == BSANDR ~So, it was the memory of happiness, which prompted her to keep Namara. I would have run away with you, even if I knew it would only last for a day...~
-== BCORAN ~*Coran embraces her and kisses her hair lightly.* I know, my firehearted kitten.~
+== BCORAN ~*Coran embraces her and kisses her hair lightly.* I know, my fire hearted kitten.~
 EXIT
 
 CHAIN
@@ -4519,7 +4519,7 @@ IF~ Global("SanCorbabe","GLOBAL",8)~ THEN BSANDR  SanCorbabe4
 ~ (Sandrah looks expectantly at Coran who finished to read a letter.) Good or bad news, my love?~
 DO ~ SetGlobal("SanCorbabe","GLOBAL",9) RealSetGlobalTimer("P#CGBabyTalkTime","GLOBAL",180)~
 == BCORAN~ I would leave that decision to you, kitten, as much as you've grown fond with my little baby. But I received a message from Brielbara. Her affairs are settled, and she'd like to take Namara back.~
-== BSANDR ~ You are right, I love the little one - but I am not her mother, just a substitute for a time, so of course I accept her rights. And Coran... take this gold from my purse, please. Brielbara will look more favorably on you if you do not arrive empty-handed.~
+== BSANDR ~ You are right, I love the little one - but I am not her mother, just a substitute for a time, so of course I accept her rights. And Coran... take this gold from my purse, please. Brielbara will look more favourable on you if you do not arrive empty-handed.~
 == BCORAN~You would trust a thief with your gold and the knowledge of your full purse?~
 == BSANDR ~I would trust *you* with that.~
 == BCORAN~Thank you, kitten. But what... what did you mean about Briel liking me?~
@@ -4567,7 +4567,7 @@ DO ~SetGlobal("JarKhalBant1","GLOBAL",2)~
 == BSANDR ~ Sure, Jaheira. By the way, it is good that you are with us now.~
 == BJahei ~ Thank you, but I am not looking for compliments at the moment. Your words at the Inn and the way you avoided the topic of your father have unsettled me a bit.~
 == BSANDR ~ I can imagine that. But believe me, I am not trying to hide anything - just I am not confronting <CHARNAME> with everything at once. I think she has to gain some insight on her own before any of us should reveal more than necessary.~
-== BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interferance here? ~
+== BJahei ~ I would agree to that, provided your motives are just. So I gathered from what you said - I mean what you not said - that your father does not know about your own little interference here? ~
 == BSANDR ~ He did not send me himself, but he has surely found out by now. I can only hope he has as much trust in me as I can ask you to trust me.~
 == BJahei ~ Mh, on behalf of your father, I decide to trust you for the time being and keep my mouth shut towards <CHARNAME>. But I will keep my eyes on you, little Sandrah.~
 == BKhali IF ~ InParty("KHALID") ~ THEN ~ N-n-not so little any more, f-f-fine lady S-S-Sandrah, a real nice lady indeed...~
@@ -4614,12 +4614,12 @@ EXIT
 
 CHAIN
 IF~~THEN  BSANDR SanJAHHea1
-~ Thank you, Jaheira, for correcting my actions. In the heat of the battle I tend to cast my healing spells almost instinctively on those I see in need. You are right, I should learn to focus my resources on those who do not have the possibilities themself.~
+~ Thank you, Jaheira, for correcting my actions. In the heat of the battle I tend to cast my healing spells almost instinctively on those I see in need. You are right, I should learn to focus my resources on those who do not have the possibilities them self.~
 DO~  SetGlobal("SanHealjah","GLOBAL",4)~
-== BJahei ~ Oh, Sandrah, like so often you misunderstand me. It was not my intention to critise you at all. Although I now would agree with your self-analysis.~
-== BSANDR ~ And you mistake me as well. I have not felt critisized at all. I know I am not yet at the end of my education and I have understood your words as those of a tutor, not those of a critic. You have the experience I still lack and I am willing to learn.~
+== BJahei ~ Oh, Sandrah, like so often you misunderstand me. It was not my intention to criticise you at all. Although I now would agree with your self-analysis.~
+== BSANDR ~ And you mistake me as well. I have not felt criticized at all. I know I am not yet at the end of my education and I have understood your words as those of a tutor, not those of a critic. You have the experience I still lack and I am willing to learn.~
 == BJahei ~ Mmh, if that is so, then well, yes. I will continue to give you my advice when I see need for it.~
-== BSANDR ~ I am not so unexperienced as not to hear the lingering mistrust in between your words, Jaheira. How did I raise your suspicion this time?~
+== BSANDR ~ I am not so inexperienced as not to hear the lingering mistrust in between your words, Jaheira. How did I raise your suspicion this time?~
 == BJahei ~ I admit, I have not made up my mind on you yet. You are not an easy person - I mean you do so many contradicting things, some wise, some foolish from my point of view, I just cannot come to any conclusion.~
 == BSANDR ~ Like what, Jaheira?~
 == BJahei ~ Please, do not insist on an answer right now. Let us move on. We should delay this talk to another day.~
@@ -4641,7 +4641,7 @@ DO ~ SetGlobal("SanJahKiv","GLOBAL",2)~
 == BSANDR ~ (You can see that Sandrah is fighting very hard with herself for a moment. Jaheira instinctively has taken two steps back and grabbed her stick with both hands.)~
 == BJahei ~ So?~
 == BSANDR ~ Well, as you do not care for other people' feelings and beliefs, I will not care for yours now! I do not care if you believe in Arvanaith for yourself or not! ~
-= ~ I will not let this man go blindly into his death and self-distruction! This wonderful man who has so much more to give in his life. Forget about the legends and myths of your Arvanaith! It does not exist! The only place where he will ever see his beloved Deheriana is in his dreams. I will not let him throw his life away and go into the dark void which is all there is after death. Life is here and now - not in the afterworld whatever name you give to it.~
+= ~ I will not let this man go blindly into his death and self-destruction! This wonderful man who has so much more to give in his life. Forget about the legends and myths of your Arvanaith! It does not exist! The only place where he will ever see his beloved Deheriana is in his dreams. I will not let him throw his life away and go into the dark void which is all there is after death. Life is here and now - not in the afterworld whatever name you give to it.~
 == BJahei ~ A-a-a-and <CHARNAME>?~
 == BSANDR ~ <CHARNAME> is my mela en'coiamin, if you grant us humans such, and <PRO_HESHE> is much more understanding and knowing than you can ever imagine. Stick your chauvinistic thoughts of jealousy where you want them, but <CHARNAME> knows that I am true to <PRO_HIMHER>, even if I am trying to save the life of an elf who deserves it.~
 == BJahei ~ But, Sandrah...~
@@ -4660,7 +4660,7 @@ DO ~ SetGlobal("SanHealkal","GLOBAL",8)~
 == BSANDR ~ Travelling the Sword Coast like we do, might help in this. I can take the opportunity to flirt with a stately knight, for example, when he is not occupied with his *dragon* tasks for a while.~
 == BKhali ~ (Khalid has moved a bit closer to Sandrah.) A young lady like you will be able to attract such a knight quite easily if she wanted to.~
 == BSANDR ~ (Sandrah has closed her book and put it into her backpack. She rises to her naked feet displaying her well shaped legs in her short skirt.) Would you mind to take a little stroll outside of the camp before the meal is ready. This knight and damsel topic is quite an issue that any young girl likes to learn more about from someone who seems to know a bit.~
-== BKhali ~ With great pleasure, mylady. (Khalid takes Sandrah's hand which she had offered to help him to his feet and the two wander off into the darkness hand in hand.)  ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
+== BKhali ~ With great pleasure, milady. (Khalid takes Sandrah's hand which she had offered to help him to his feet and the two wander off into the darkness hand in hand.)  ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
 CHAIN
@@ -4670,7 +4670,7 @@ DO ~ SetGlobal("SanHealkal","GLOBAL",10)~
 == BJahei ~ Well, hm, so what is going on there between you and my husband, Sandrah?~
 == BSANDR ~ Going on? I do not like the tone of that question at all. Jaheira, you have a wonderful and loving husband and there is nothing *going on*. I like him very much and I enjoy talking with him whenever he has some time for me.~
 == BJahei ~ That is all, young one? Are you really so innocent or just so cunning?~
-== BSANDR ~ He is your husband and he loves you exquisitly. What is so wrong if he spends a moment now and then with a young girl, even if she is charming and beautiful. Do you trust him so little?~
+== BSANDR ~ He is your husband and he loves you exquisitely. What is so wrong if he spends a moment now and then with a young girl, even if she is charming and beautiful. Do you trust him so little?~
 == BJahei ~ Hm, Sandrah, probably it is really like you say - in your eyes. But I know my husband's weaknesses well. I beg of you as a friend, please do not encourage him to think he is more than a comrade to you. ~
 == BSANDR ~ I have done and will do nothing that may come between you and the man who loves you more than anything on Toril. I can assure you, it is not just gratitude that binds him to you. You really have not the least reason to doubt him.~
 == BJahei ~ Is that really so, Sandrah? ~
@@ -4689,7 +4689,7 @@ DO~ SetGlobal("SanFrJah","LOCALS",2)~
 =~ I called you his daughter just because of that growth. The little girl I knew is on her way to something, whatever it is. And <CHARNAME>'s fate is related to you. Consequently your companions like me are involved as well.~
 == BSANDR ~ Are you concerned about that, Jaheira.~
 == BJahei ~ I ought to be, don't you agree, Sandrah? It was Gorion's wish for Khalid and me to take care of his ward. Even if I must admit that <PRO_HESHE> has probably outgrown our care already.~
-== BSANDR ~ That would not change the fact that you are trusted and valuable companions still. And neither <PRO_HIMHER> nor me will ever be so capable as not to have need for your experienced tutalage.~
+== BSANDR ~ That would not change the fact that you are trusted and valuable companions still. And neither <PRO_HIMHER> nor me will ever be so capable as not to have need for your experienced tutelage.~
 == BJahei ~ I appreciate your careful considerations, Sandrah, in an older person such would be anticipated as *wisdom*. Hm, and I appreciate your friendship, if I may call it such.~
 == BSANDR ~ You may call it that, Jaheira.~
 EXIT
@@ -4699,7 +4699,7 @@ IF ~ Global("SanHealkal","GLOBAL",11)~ THEN BSANDR SanKhaIntPeaceG
 ~ Khalid, it is reported that there is a kind of mystic grove near to this place, a relict of old druid culture. Does that sound interesting to you?~
 DO ~ SetGlobal("SanHealkal","GLOBAL",12) ~
 == BKhali ~ Sure, especially in your company, Sandrah.~
-== BSANDR ~ Then let us join our forces to pursuade Jaheira to come with us and be our druid guide in the matter.~
+== BSANDR ~ Then let us join our forces to persuade Jaheira to come with us and be our druid guide in the matter.~
 == BKhali ~ Well,eh...if you think so...~
 == BSANDR ~ Jaheira! Come with us, we like to walk over to the old druids place with you.~
 == BJahei ~ Yes, sure.~
@@ -4711,11 +4711,11 @@ IF ~ Global("SanHealkal","GLOBAL",13)~ THEN BSANDR SanKhaIntPeaceR
 ~ (A while later the three reappear chatting and laughing happily - like a family on a sunday trip, you think to yourself.)~
 DO ~ SetGlobal("SanHealkal","GLOBAL",14) ~
 == BKhali ~ That was quite interesting, especially in the company of such two wonderful guides.~
-== BSANDR ~ Amazing how different things appear when seen with a druid's view. Thank you so much! (She kisses first Jaheira and then Khalid on the cheek before she twirls away.)~
+== BSANDR ~ Amazing how different things appear when seen with a Druid's view. Thank you so much! (She kisses first Jaheira and then Khalid on the cheek before she twirls away.)~
 == BKhali ~ Oh, my love, I wish we could have a daughter like this...~
 == BJahei ~ My lovely husband, *IF* we had a daughter one day, I agree, she should become like Sandrah...~
 == BKhali ~ (Khalid lifts Jaheira up easily and swings her around in his strong arms.) There will be no escape and no excuse for you tonight, my sweetheart. I will assure you of my husband's duties.~
-== BJahei ~ Lovely fool. (Her attemted protest is drenched in a series of kisses.) ~
+== BJahei ~ Lovely fool. (Her attempted protest is drenched in a series of kisses.) ~
 EXIT
 
 // Viconia on Male PC
