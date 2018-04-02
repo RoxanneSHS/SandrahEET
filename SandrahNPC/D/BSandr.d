@@ -5144,7 +5144,7 @@ IF ~Global("CowElmFear","LOCALS",1)~ THEN BSANDR cowMeetElm
 ~ Edwin, what is it with you, do you need my help? (Sandrah stretches out her hand to help Edwin to his feet again.)~
 DO ~ SetGlobal("CowElmFear","LOCALS",2)~
 == Bedwin_~ Oh, I swooned a bit it seems. (Uh, and holding your delicate little hand assures the next attack...) Something powerful and fearful is around here.~
-== BSANDR~ Here? This is my hometown, Edwin, my father's house is right over there. I can sense nothing frightening around. My father's protective skills make sure that even the worst dark enemies have no access to this place.~
+== BSANDR~ Here? This is my home town, Edwin, my father's house is right over there. I can sense nothing frightening around. My father's protective skills make sure that even the worst dark enemies have no access to this place.~
 == Bedwin_~ Is it THAT house there? There is the source of my trouble, I can sense it clearly! (What a chance on the side, I will hold that lovely hand as long as I can, whatever hell is waiting over there.)~
 == BSANDR~ (Sandrah suddenly starts to laugh heartily.)~
 == Bedwin_~ Does my condition really amuse you so? Even you cannot be that cold hearted, lady. (Not with a warm lovely hand like that.)~
@@ -5624,9 +5624,9 @@ IF ~ Global("SanSafaBan","GLOBAL",4) ~ THEN BSANDR SanSaf4
 DO ~  SetGlobal("SanSafaBan","GLOBAL",5) RealSetGlobalTimer("SanSafaBanTi","LOCALS",600)~
 == BSAFAN~ Hurray, it is SURELY about time to do some shopping, my wardrobe has suffered significantly from this crawling through the mud of the Sword Coast.~
 =~ Say, Sandrah, with your obvious taste and style in all matters of chic, would you mind to help me a bit with my choices?~
-== BSANDR~ Sure I will. (Laughs.) Remember we have gold enough to pay the stuff, I would not endanger <CHARNAME>'s reputation by a theft of just some garnments.~
+== BSANDR~ Sure I will. (Laughs.) Remember we have gold enough to pay the stuff, I would not endanger <CHARNAME>'s reputation by a theft of just some garments.~
 == BSAFAN~ Tell me, your style is really of a sophisticated mix of understatement and obvious wealth - and it still is so...sexy.~
-== BSANDR~ Remember I am from Waterdeep, the City of Splendor. Maybe you just inhale this taste when you grow up there. You yourself cannot disguise your southern heritage, Calimshan I would guess?~
+== BSANDR~ Remember I am from Waterdeep, the City of Splendour. Maybe you just inhale this taste when you grow up there. You yourself cannot disguise your southern heritage, Calimshan I would guess?~
 == BSAFAN~ Perfectly right, I hale from Calimport. We down there *inhale* it as well, even if the breeze is much lighter and warmer in our region, haha.~
 EXIT
 
@@ -5672,17 +5672,17 @@ CHAIN
 IF ~Global("SanGarr1","GLOBAL",1) ~ THEN BSANDR SanGarr1
 ~ What are you humming there, Garrick, I have never heard that tune before.~
 DO~ SetGlobal("SanGarr1","GLOBAL",2)~
-== BGARRI ~ Brilliant, mylady, if you never heard it, then probably nobody else did. Ehem, it is my own, or a least I think it is, you know... with us bards, sometimes the inspiration comes and you don't really know how.~
-==BSANDR ~ And then you find out later it came from another bard you overheard somehow and somewhen.~
+== BGARRI ~ Brilliant, milady, if you never heard it, then probably nobody else did. Ehem, it is my own, or a least I think it is, you know... with us bards, sometimes the inspiration comes and you don't really know how.~
+==BSANDR ~ And then you find out later it came from another bard you overheard somehow and some when.~
 == BGARRI ~ Sadly enough, that is the case sometimes. You cannot always control the calling of the muse... but...~
-=~ Mylady, you are probably, emm, not aware that you would star in my current epos on heroes of the Sword Coast.~
+=~ Milady, you are probably, emm, not aware that you would star in my current epos on heroes of the Sword Coast.~
 ==BSANDR ~ Do I? Hm, I like the tune for it, Garrick. Please, sing it again.~
 == BGARRI ~ With pleasure, lady Sandrah.
  *Along the trails of Sword Coast frightening and cold,
 Resound the tales of the daughter of the mage of old,
 Her eyes as shiny as the star of....emm,*
 I am still trying to find adequate words...it is not easy. ~
-= ~ Mmh. You are by far the most beautiful woman I ever encountered, mylady.~
+= ~ Mmh. You are by far the most beautiful woman I ever encountered, milady.~
 ==BSANDR ~ Sorry, Garrick, a bard's compliment of this kind needs to be translated as *you do not directly hurt my eyes*.~
 == BGARRI ~ Is that the impression you have of us bards? Everything I say would be largely exaggerated? Then I am stuck, what can I say to make me believe I tell the truth?~
 ==BSANDR ~ That is easy, sweet bard. Stop talking and prove what you mean by actions instead.~
@@ -5694,11 +5694,11 @@ CHAIN
 IF ~ Global("SanGarr1","GLOBAL",3) InParty("Garrick")~ THEN BSANDR SanGarr3
 ~ Garrick, excuse me if I use a bard's speech, but you look like a happy hen that has laid the golden egg.~
 DO ~SetGlobal("SanGarr1","GLOBAL",4) ~
-== BGARRI ~ Something like that indeed, how could you know, mylady?~
+== BGARRI ~ Something like that indeed, how could you know, milady?~
 ==BSANDR ~ So, what is it?~
 == BGARRI ~ I have progressed with my Sandrah of Waterdeep song significantly...I am hoping you would lend me your ear and, eh, approve to it..~
 ==BSANDR ~ (Laughs gently) Oh, my own personal poet, let us hear it, then.~
-== BGARRI ~ Eh, now...mylady, it is still work in progress...I would suggest the current version is still for your ears only, hm, yes, not yet for public...~
+== BGARRI ~ Eh, now...milady, it is still work in progress...I would suggest the current version is still for your ears only, hm, yes, not yet for public...~
 ==BSANDR ~ Come, my bard, let us go to this other room for the..rehearsal.~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
@@ -5708,7 +5708,7 @@ IF ~ Global("SanGarr1","GLOBAL",5)InParty("Garrick")~ THEN BSANDR SanGarr5
 DO~ SetGlobal("SanGarr1","GLOBAL",6) RealSetGlobalTimer("SangarLeDel","LOCALS",300)~
 == BGARRI ~ Sweetest heroine, I think I have changed my mind a bit.~
 ==BSANDR ~ Oh, in which way?~
-== BGARRI ~ I, em, I thought I would leave my hero epos aside for a while and concentrate on another subject instead.~
+== BGARRI ~ I, em, I thought I would leave my hero epic aside for a while and concentrate on another subject instead.~
 ==BSANDR ~ Have you lost your interest in your heroine then?~
 == BGARRI ~ Oh, no, not at all. I-I how shall I say, I think the heroic aspects of my main character are for the general public. I start to get, uhm, more interested in the more personal sides - the more romantic aspects of the character, you see...~
 ==BSANDR ~ So you will become a balladeer of lovesongs, lovely artist?~
@@ -5722,8 +5722,8 @@ IF ~ Global("SanGarrN","GLOBAL",1)~ THEN BSANDR SanGarrDa
 DO~ SetGlobal("SanGarrN","GLOBAL",2) ~
 == BGARRI ~ I'm all ears, as the saying goes.~
 ==BSANDR ~ You can surely play some music that one can dance to?~
-== BGARRI ~ I am more for the ballads and lovesongs, eh , apart from the hero sagas. Mmh, but then - if you would be happy with a slow dance rather than those jigs and reels, mylady...~
-==BSANDR ~ Let us see. <CHARNAME>, may I ask you courtly for this dance? I must warn you however, the bard anounced a slow one. One to get a bit nearer to each other I assume.~
+== BGARRI ~ I am more for the ballads and love songs, eh , apart from the hero sagas. Mmh, but then - if you would be happy with a slow dance rather than those jigs and reels, milady...~
+==BSANDR ~ Let us see. <CHARNAME>, may I ask you courtly for this dance? I must warn you however, the bard announced a slow one. One to get a bit nearer to each other I assume.~
 END
 ++ ~ Oh, please, Sandrah, spare me this ordeal. I cannot be this groups respected leader any more if they see me dance.~ +  SanGarrDaSe
 ++ ~ A slow one? I may be able to manage that without breaking my feet and your toes, Sandrah. Yes, let's do it.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ SanGarrDaPC
@@ -5731,7 +5731,7 @@ END
 CHAIN
 IF~~ THEN BSANDR SanGarrDaSe
 ~ If this is so. (She takes Garrick's hand and motions him to his feet. Laying one arm around his shoulder she whispers in his ear:) So you will be my partner for this dance yourself. Just sing your melody in my ear, no one else really needs to hear it.~
-== BGARRI ~ (Embraces Sandrah gently and begins to stear her to the movements of a slow tune he hums into her ear. You observe, that both of them are really good dancers. You regret your choice already.)
+== BGARRI ~ (Embraces Sandrah gently and begins to steer her to the movements of a slow tune he hums into her ear. You observe, that both of them are really good dancers. You regret your choice already.)
 ~ DO ~ RestParty()~ EXIT
 
 CHAIN
@@ -5741,18 +5741,18 @@ IF~~ THEN BSANDR SanGarrDaPC
 Two young lovers sway and swoon
 To the lonely violin's lovely tune
 They knew that would end just too soon...*~
-==BSANDR ~ (Sandrah feels light as a delicate bird in your arms. And while you know it is otherwise, she still gives you the feeling that you are leading this dance. You take this as just another short insight into her manyfold abilities.)
+==BSANDR ~ (Sandrah feels light as a delicate bird in your arms. And while you know it is otherwise, she still gives you the feeling that you are leading this dance. You take this as just another short insight into her manifold abilities.)
 ~ DO ~ RestParty()~  EXIT
 
 CHAIN
 IF ~ Global("SanGarQCh","GLOBAL",1)~ THEN BSANDR SanGarCh
-~ Garrick, you look absolutely fantastic in that chainmail. It is like it was made especially for you.~
+~ Garrick, you look absolutely fantastic in that chain-mail. It is like it was made especially for you.~
 DO ~ SetGlobal("SanGarQCh","GLOBAL",2)~
 == BGARRI ~ Oh, Sandrah, (blush) you really, ehm, you like how I look in this?~
-==BSANDR ~ Garrick, you have convinced me today that you differ from the average bard I have encountered so far. There is more than sweet words in you as you have proven with your brave standing against Myr'Cutio. You really deserve this chainmail - and the admiration of the women you attract with it.~
+==BSANDR ~ Garrick, you have convinced me today that you differ from the average bard I have encountered so far. There is more than sweet words in you as you have proven with your brave standing against Myr'Cutio. You really deserve this chain-mail - and the admiration of the women you attract with it.~
 == BGARRI ~  Does that, eh, include the admiration of a certain lady who is more important than any of those wenches that fall for fanciful clad bards? I, eh-, I mean one that cannot be blinded by a shining armour, but sees directly to the heart that pulses beneath.~
 ==BSANDR ~ You mean a heart that pulses a little bit quicker every time the said bard glimpses the lady in question here?~
-== BGARRI ~ It is about to burst through this strong armour to jump directly into your hands, mylady...~
+== BGARRI ~ It is about to burst through this strong armour to jump directly into your hands, milady...~
 ==BSANDR ~ (Pretends to catch an imaginary object with both hands.) It is safe with me. I will take good care of it. (She puts the invisible object inside of her armour right next to where her own heart is situated.)~
 EXIT
 
@@ -5760,7 +5760,7 @@ CHAIN
 IF ~ Global("SanGarQCh","GLOBAL",3)~ THEN BSANDR SanGarCh
 ~ Garrick, I think I have a thing you might want back again.~
 DO ~ SetGlobal("SanGarQCh","GLOBAL",4) RealSetGlobalTimer("SangarLeDel","LOCALS",300)~
-== BGARRI ~ Mylady, I have lost so many things on you, my sleep, my heart, my brain..~
+== BGARRI ~ Milady, I have lost so many things on you, my sleep, my heart, my brain..~
 ==BSANDR ~ Hopefully not your voice and inspiration, my bard. As for your heart...(She has taken off her armour already and is clad in one of her clinging and shining shirts that reveal her perfect body so seductively. She takes his hand and leads it between her breasts.) You remember where I put it?~
 == BGARRI ~ Maybe if I would explore that area a bit more, I would find the other things I miss as well.~
 ==BSANDR ~ My fearless explorer, only those who dare something will be rewarded...~
@@ -5828,7 +5828,7 @@ IF~ Global("SanShartDuel","GLOBAL",4)~ THEN BSANDR SanShartM0
 ~ Frustrated? ~
 DO ~ SetGlobal("SanShartDuel","GLOBAL",5)~
 == BSHART~ Were you trapped in the same way to follow <CHARNAME>, little *puss in boots*?~
-= ~ Ha, probably not, you little weekend warrior princess - with your playtoy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
+= ~ Ha, probably not, you little weekend warrior princess - with your play-toy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
 == BSANDR ~ I hope your fighting skills are better than your judgements on people's abilities, *wildcat*. Maybe I am just a better fighter than you can imagine. ~
 END
 ++ ~ We will see YOUR worth soon, Shar-Teel. But do not sulk too much when you see Sandrah get into action. She's one of the best fighters of the Sword Coast, whatever your prejudice against her looks might have suggested. ~ + SanShartM1
@@ -5845,11 +5845,11 @@ IF~ Global("SanSharInt","GLOBAL",2) ~ THEN BSANDR SanShart1
 DO ~ SetGlobal("SanSharInt","GLOBAL",3) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Ha, pussycat! For you, NO man can be too bad to lower yourself down to him. Ah, forget it, I did not say that...~
 == BSANDR ~ What do you mean?~
-== BSHART~ Sandrah, earnestly, I cannot really get to terms with you. You are so strong and confident, but at the same time you think men are the greatest thing on earth. You could have them all and rule them at your liking, but you let them pursuade you with their silly sweettalk. They lick you everywhere like dogs in heat - let them lick your boots instead, you deserve it.~
+== BSHART~ Sandrah, earnestly, I cannot really get to terms with you. You are so strong and confident, but at the same time you think men are the greatest thing on earth. You could have them all and rule them at your liking, but you let them pursuade you with their silly sweet talk. They lick you everywhere like dogs in heat - let them lick your boots instead, you deserve it.~
 == BSANDR~ Competition is your everything, Shar-Teel. Or so it seems. One always must rule another, prove to be better, be the winner. Can there be no equality between people?~
 == BSHART~ Hm - you are even stranger than I had imagined. You have no need to lower yourself to anyone, so why do you want to be equal to a standard that is not yours. ~
 = ~ And equality between man and woman - crazy. Equality between a dog and his master? Put your men on the short leash and feel the power running through you, Sandrah. You are the best example that WE are the ruling gender!~
-== BSANDR~ Who wants to be queen of slaves and spittlelickers. My interest in men is for those who match me, in strength but also in passion, personality, and devotion.~
+== BSANDR~ Who wants to be queen of slaves and lickspittles. My interest in men is for those who match me, in strength but also in passion, personality, and devotion.~
 == BSHART~ Sure, the higher the risk and the harder the battle, the sweeter is the victory.~
 == BSANDR~ Oh, my, I told you, I am not interested in such kind of conquers.~
 == BSHART~ What a waste of beauty and strength. The mighty lioness happy in her golden cage. I pity you, poor little rich girl. (Even after these words you can see that Shar-Teel seems to be in deep thoughts. Sandrah does not seem to fit into her picture of the world at large.)~
@@ -5860,7 +5860,7 @@ IF~ Global("SanSharInt","GLOBAL",4) ~ THEN BSANDR SanShart2
 ~ No fighting?~
 DO ~ SetGlobal("SanSharInt","GLOBAL",5) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Peace, Sandrah. I thought a bit about you and maybe it is worth to take you as you are - for the moment.~
-== BSANDR ~ Good, if you want to talk about something, I will not reject you. We are at least comrads of <CHARNAME>.~
+== BSANDR ~ Good, if you want to talk about something, I will not reject you. We are at least comrades of <CHARNAME>.~
 == BSHART~ My mother was a whore and my father is the worst male swine in Faerun, while I am the product of their mating. Not a start into this damned life that can be compared to yours.~
 == BSANDR ~  But you have overcome this handicap of origin with your strength and will, even if it has left some scars on your soul. In some way that is a fact for which you earn my respect.~
 == BSHART~  Sandrah, your respect? Yes, you may be surprised now, but it really means something to me. Tell me, what do you see in me?~
@@ -5870,7 +5870,7 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",5) RealSetGlobalTimer("SanSharIntT","GLOBAL
 == BSHART~  What else can there be than wealth, power, and the independence both allow you?~
 == BSANDR ~ A real and deep satisfaction from the deed you have done, something that goes beyond counting your  gain in gold at the end of the day.~
 == BSHART~  This is the typical perspective of one who always had it all without ever needing to suffer and fight for it.~
-== BSANDR ~  Right. But it is also the knowledge of one who always had what you want so eagerly, that it does not give you enduring happiness to dwell on your richess and your power.~
+== BSANDR ~  Right. But it is also the knowledge of one who always had what you want so eagerly, that it does not give you enduring happiness to dwell on your richness and your power.~
 == BSHART~  Either you are right or those are just the words of the bored nobles who need fighting and struggle not to survive but to put a thrill in their otherwise empty lives.~
 == BSANDR ~ I think we will have time together on this quest to find out about that.~
 == BSHART~ Ha, and crush some stupid males and find some treasures while doing it.~
@@ -5881,7 +5881,7 @@ IF ~ Global("SanSharInt","GLOBAL",6) ~ THEN BSANDR SanShart2m
 ~ We have a common interest, Shar-Teel, am I right?~
 DO ~ SetGlobal("SanSharInt","GLOBAL",8) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean?~
-== BSANDR ~ I appreciate your openess on this topic. So you are not denying that <CHARNAME> is a bit of an exception from his gender even for your standards.~
+== BSANDR ~ I appreciate your openness on this topic. So you are not denying that <CHARNAME> is a bit of an exception from his gender even for your standards.~
 == BSHART~ I would agree to that. (Slowly her hands wander towards her weapons, her shoulders straighten.)~
 == BSANDR ~ Relax, Shar-Teel, it is not my intention to fight over him with you. We are no cats in heat, my friend.~
 == BSHART IF ~ Global("X#ShartSex","GLOBAL",1)~ THEN ~ You would not call me friend if you were aware what has happened during your watch last night.~
@@ -5902,7 +5902,7 @@ IF ~ Global("SanSharInt","GLOBAL",7)~ THEN BSANDR SanShart2f
 ~ We have a common interest, Shar-Teel, am I right?~
 DO ~ SetGlobal("SanSharInt","GLOBAL",8) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Your taste in men might not always be the same as mine. But there are exceptions, if that is what you mean? Are you trying to quarrel with me on behalf of such lesser beings like men are?~
-== BSANDR ~ I appreciate your openess on this topic. You seem to be both lured to men like a moth to a flames and in the same moment you hate and despise them.~
+== BSANDR ~ I appreciate your openness on this topic. You seem to be both lured to men like a moth to a flames and in the same moment you hate and despise them.~
 == BSHART~ I would agree to that. But that would be nothing a rich young playgirl like you would understand. (Shar-Teel's hand has now gripped the handle of her weapon.) You may be the stronger fighter, Sandrah, but I doubt that you had already all the experience in the carnal area that I had, good or bad.~
 == BSANDR ~ Sure the bad ones are missing in my repertoire. I do not envy you for them. Life has let you get your full share of unpleasantness up to now, right?~
 == BSHART~ (Shar-Teel's hands have dropped from her weapon and she has sat down with her knees up to her chin. It almost looks like she would burst into tears any moment.]~
@@ -5929,7 +5929,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR SharRedo2
 ~ I leave the rest to you, wildcat.~
-== BSHART ~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamia not to run away from me.~
+== BSHART ~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamina not to run away from me.~
 END
 IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY ~ I will be ready. And I don't care who wins or loses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",1)
@@ -5942,7 +5942,7 @@ CHAIN
 IF ~~ THEN BSANDR SharRedo3
 ~ You do not give up that easily, wildcat.~
 == BSHART ~ Maybe I will regret it but anyway.~
-=~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamia not to run away from me.~
+=~ Are you prepared for a hard fight, loverboy? There will be one in our bedroll tonight if you have the stamina not to run away from me.~
 END
 IF~ GlobalLT("X#SharInterestTalk","GLOBAL",32)~THEN REPLY  ~ I will be ready. And I don't care who wins or loses. Perhaps we both win.~ DO ~ SetGlobal("SanSharReDo","GLOBAL",2)
 SetGlobal("X#SHARINTEREST","GLOBAL",1)
@@ -5978,7 +5978,7 @@ CHAIN
 IF~~ THEN BSANDR Sharheal1
 ~ I am already sure you were not the little girl that ran to mammy, mammy, mammy when she scratched her knees a bit. Accepting my healer skills is not admitting any weakness.~
 DO ~ SetGlobal("SanHealshar","GLOBAL",8)~
-== BSHART~ Right you are, I never did that weening crap with my mother. I'd rather smear myself with my own blood all over instead.~
+== BSHART~ Right you are, I never did that whining crap with my mother. I'd rather smear myself with my own blood all over instead.~
 ==BSANDR ~ I am not mammy, wildcat, and I do not cuddle you at all. This is a professional healer's act to restore your fighting abilities - see it as that.~
 == BSHART~ Ha, and it's an act on yourself, Sandrah, for your own little pride and your sake to prove what an oh-so-good heart you have.~
 ==BSANDR ~ (Sandrah moves up to Shar-Teel and sticks two fingers into the slash she has just healed a moment ago. Blood begins to drop again from the wound as Sandrah mercilessly pokes the injured flesh. Her look is straight into Shar-Teel's eyes.)~
@@ -5991,7 +5991,7 @@ CHAIN
 IF~~ THEN BSANDR Sharheal2
 ~ I am already sure you were not the little girl that ran to mammy, mammy, mammy when it scratches her knees a bit. Accepting my healer skills is not admitting any weakness. I would have allowed you your suffering if my professional analysis had not advised me that a hale Wildcat is of more advantage for the group.~
 DO ~ SetGlobal("SanHealshar","GLOBAL",8)~
-== BSHART~ Right you are, I never did that weening crap with my mother. I'd rather smear myself with my own blood all over instead.~
+== BSHART~ Right you are, I never did that whining crap with my mother. I'd rather smear myself with my own blood all over instead.~
 ==BSANDR ~ I am not mammy, Wildcat, and I do not wait for you to be hurt if I want to cuddle you. This is a professional healer's act to restore your fighting abilities - see it as that.~
 == BSHART~ Ha, and it's an act on yourself, Sandrah, for your own little pride and your sake to prove what an oh-so-good heart you have.~
 ==BSANDR ~ (Sandrah moves up to Shar-Teel and sticks two fingers into the slash she has just healed a moment ago. Blood begins to drop again from the wound as Sandrah mercilessly pokes the injured flesh. Her look is straight into Shar-Teel's eyes.)~
@@ -6005,8 +6005,8 @@ IF ~ Global("SanSharInt","GLOBAL",11)~ THEN BSANDR SanShart3
 ~ (Sandrah has silently moved up to Shar-Teel, and with a quick sidestep and a push has brought the fierce warrior girl to a fall. Sandrah sits on Shar-Teel's breast and starts to smear dirt into her face.)~
 DO ~ SetGlobal("SanSharInt","GLOBAL",12) RealSetGlobalTimer("SanSharIntT","GLOBAL",SANROM_TIMER)~
 == BSHART~ Ha, you hot little bitch. Have I got you out of your reserve now, are you willing to fight now with me over <CHARNAME>?~
-== BSANDR ~ (Sandrah just laughs on top of her helplessly struggling victim and moves now higher up on Shar-Teels body, holding the girl's head in an iron grib between her naked shapely legs.)~
-== BSHART~ (Shar-Teels struggling ceases while she snorts exhausted between Sandrah's thights.) ~
+== BSANDR ~ (Sandrah just laughs on top of her helplessly struggling victim and moves now higher up on Shar-Teels body, holding the girl's head in an iron grip between her naked shapely legs.)~
+== BSHART~ (Shar-Teels struggling ceases while she snorts exhausted between Sandrah's thighs.) ~
 == BSANDR ~ (Sandrah has started to caress Shar-Teel's hair, fondling her ears gently, while her eyes are closed.)~
 == BSHART~ (The movement of Shar-Teel's head beneath Sandrah's body has taken on a rhythm that you just know too well. You turn away from your two lover girls when you sense that the fight is no fight at all, but Shar-Teel is now demonstrating to Sandrah what she received from you last night.)~ DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
@@ -6073,19 +6073,19 @@ IF ~~ THEN BSANDR SanShartBN2
 ~ There is someone else, Sharly, who might want to join us.~
 ==BSHART ~ Hey, loverboy, get your cute ass over here, unless you want to drown in that puddle drooling from your open mouth. ~
 END
-++ ~ *You move over to the bed, where Shar-Teel's steel-hard grib catches you as soon as you come into reach and forces you to kneel down in front of her. She laughs triumphantly before she starts to kiss you with full passion.*~ + SanShartBN4
+++ ~ *You move over to the bed, where Shar-Teel's steel-hard grip catches you as soon as you come into reach and forces you to kneel down in front of her. She laughs triumphantly before she starts to kiss you with full passion.*~ + SanShartBN4
 
 
 CHAIN
 IF ~~ THEN BSANDR SanShartBN3
-~ *Sandrah playfully puts a dot of the salve to the top of your nose, smiling invitigly at you.*~
+~ *Sandrah playfully puts a dot of the salve to the top of your nose, smiling invitingly at you.*~
 ==BSHART ~ Hey, loverboy, are you too shy or just too dumb. (She gets hold of both of your ears and forces your head down to hers. She laughs triumphantly before she starts to kiss you with full passion.)~
 END
 ++ ~ * You have already decided that any opposition from your side would be completely useless against those two accomplished fighters.* ~ +SanShartBN4
 
 CHAIN
 IF ~~ THEN BSANDR SanShartBN4
-~ While your mouth is occupied by Shar-Teel's busy and demanding tongue, you feels Sandrah's gentle lips taking care of that part of your body that has painfully grown in the presence of the two pursuaders. But your wonderful healer knows exactly how to turn that kind of pain into pleasure. ~ DO ~ RestParty() ~
+~ While your mouth is occupied by Shar-Teel's busy and demanding tongue, you feels Sandrah's gentle lips taking care of that part of your body that has painfully grown in the presence of the two persuaders. But your wonderful healer knows exactly how to turn that kind of pain into pleasure. ~ DO ~ RestParty() ~
 EXIT
 
 CHAIN
@@ -6163,7 +6163,7 @@ EXIT
 
 CHAIN
 IF ~ Global("SharRead1","GLOBAL",3)~ THEN BSANDR SharReadName
-~ (Sandrah and Shar-Teel sit together with the wildcat holding a book they read together. Although no longer the big surprise it once was, it is still a strange sight to you. Somehow you expect Shar-Teel to jump up any moment to throw the book into the campfire with a scowl. But nothing of that kind happens.)~
+~ (Sandrah and Shar-Teel sit together with the wildcat holding a book they read together. Although no longer the big surprise it once was, it is still a strange sight to you. Somehow you expect Shar-Teel to jump up any moment to throw the book into the camp fire with a scowl. But nothing of that kind happens.)~
 DO ~ SetGlobal("SharRead1","GLOBAL",4)~
 == BSHART~ *When the wizard turned to look at Me-ri-nandra*, Merinandra? A strange name, isn't it?~
 == BSANDR ~ It is elvish, just like Shar-Teel.~
@@ -6171,7 +6171,7 @@ DO ~ SetGlobal("SharRead1","GLOBAL",4)~
 == BSANDR ~ At least it would make sense. Did you not know that, wildcat? Maybe I am wrong, tell me, what do you know about it?~
 == BSHART~  Actually, I never asked. It was just a name to me. It is not bad, isn't it? I kinda like it, or maybe I just got used to it without caring too much.~
 == BSANDR ~ *The Deep Pond*, hm, it makes some sense, anything may be found in it, a dangerous beast or a rich treasure.~
-== BSHART~ Deep Pond, which idiot would name his daughter so? Oh, sure, my idiotic father of course, the brainless moroon. He probably picked up the word during his *hero days* and just liked the sound of it. And then he put it on his daughter just so - why should he care how a girl is named.~
+== BSHART~ Deep Pond, which idiot would name his daughter so? Oh, sure, my idiotic father of course, the brainless moron. He probably picked up the word during his *hero days* and just liked the sound of it. And then he put it on his daughter just so - why should he care how a girl is named.~
 == BSANDR ~ Maybe this is how it came about. But then, it is a beautiful name for a beautiful girl. It is unique, everybody in the Realms will know it soon. Including your family.~
 == BSHART~ Ha, the *great hero's* daughter will outshine her wicked father. Everybody will notice what a little pathetic male he is compared to the Deep Pond.~
 == BSANDR ~ I am thinking more of the passion and love, the beauty and the energy, the friendship and the care, that can be found in this pond. Dark and brooding on the surface but worth diving into it with open eyes.~
@@ -6227,13 +6227,13 @@ EXIT
 
 CHAIN
 IF ~ Global("SanSharTown","GLOBAL",2) ~ THEN BSANDR SanSharTown1
-~  How do you feel to be back in your hometown, dear?~
+~  How do you feel to be back in your home town, dear?~
 DO ~ SetGlobal("SanSharTown","GLOBAL",3)~
-== BSHART~ Bah, *hometown*! Too bad those bandits haven't raided it and taught those pathetic Fists an enduring lesson. Now we need to do it.~
+== BSHART~ Bah, *home town*! Too bad those bandits haven't raided it and taught those pathetic Fists an enduring lesson. Now we need to do it.~
 == BSANDR ~ Chances are that we meet a certain Angelo Dosan while in town.~
 == BSHART~ The worst swine of them all. I tell you what, pussycat, I think I have changed quite a bit since I am in this group. Today, if I'd meet this bastard who calls himself my father I can just laugh him in the face. He has become so small and irrelevant to me that I don't care any more to hate him.~
 == BSANDR ~ That is good to hear. Your inner strength has built up to the physical then. This way we can also avoid some confrontations with the Flaming Fist. Please think of it. <CHARNAME>'s quest requires that we do not attract too much attention - at least not yet.~
-== BSHART~ Suits me well, Sandrah. Revenge is a dish to be served cold. We will built up the trap for our foe and all that support them in cold blood and unescapable deadly. When the hour comes for them to realize, it will be too late.~
+== BSHART~ Suits me well, Sandrah. Revenge is a dish to be served cold. We will built up the trap for our foe and all that support them in cold blood and inescapable deadly. When the hour comes for them to realize, it will be too late.~
 = ~ I tell you something, pussycat, I bet when we reveal the whole plot we will find the bloody idiot who boasts to be my father among our catch.~
 == BSANDR ~ Why do you think so? Is there anything you know that might be helpful to us?~
 == BSHART~ No, I have no evidence, I just know this fool too well. This Iron Throne complot is just the kind of thing he would fall for, the prospect of easy money and power and such - the whole package of pathetic male idiocy that attracts leeches like Angelo Dosan. Imagine his face when the whole thing is shattered by no other that his spoiled, useless daughter, HA!~
@@ -6249,7 +6249,7 @@ DO ~ SetGlobal("SanSharInt","GLOBAL",21) RealSetGlobalTimer("SanSharIntT","GLOBA
 == BSHART~ OOOH, damn it! I broke it in that Ogre battle long ago. I completely forgot to tell you to make me one again...~
 == BSANDR ~ SHAR-TEEL!!!~
 == BSHART~ SANDRAH!!! NO, DAMN IT, that cannot be!~
-== BSANDR ~ It can be and it is. I am definitly sure. Congratulations, wildcat.~
+== BSANDR ~ It can be and it is. I am definitely sure. Congratulations, wildcat.~
 END
 ++ ~ A broken medicine bottle long ago causes a sickness now? Would one of you please explain to me what is going on? ~ + SharPregT2
 
@@ -6317,7 +6317,7 @@ IF ~~ THEN BSANDR SharPregN3
 == BSHART~ Hey, hey, lovely idiot, before you do that you need to qualify as a father for this one first. Don't think you're done with just putting your seed into me and then go and have your fun with our pussycat here. I will beat responsibility into your empty head if I must.~
 == BSANDR ~ You were right, <CHARNAME>. (Sandrah laughs friendly.) A real she-bear defending her young one against each and all.~
 == BSHART~ And do you see anything wrong with that? Just wait and see what you will do when your time comes.~
-== BSANDR ~ I was not critising you at all, wildcat. You do that perfectly right. Remember what some misguided people will think about your child's heritage from its father. It will need a strong mother like yourself. ~
+== BSANDR ~ I was not criticising you at all, wildcat. You do that perfectly right. Remember what some misguided people will think about your child's heritage from its father. It will need a strong mother like yourself. ~
 == BSHART~ I, mh, I was also thinking that the little one would have a loving aunt to teach the lore of Toril and things like proper language and such. You know this tutor kind of person.~
 == BSANDR ~ Agreed. You are really seriously making plans for the future. You have quite changed a bit from the first time we have met.~
 == BSHART~ I am not really missing anything from that time. And don't think I like those males any better just because of this one-in-a-million exception we have found.~
