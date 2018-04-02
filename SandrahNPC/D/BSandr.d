@@ -6398,7 +6398,7 @@ EXIT
 
 CHAIN
 IF ~ Global("Santlove","GLOBAL",2) ~ THEN BSANDR SantLove21
-~ My friends, please feel at home in this place. Go downstairs, where Landrel will be able to fulfill your every wish and need. If necessary with the help of his own knowledge in the magic arts.~
+~ My friends, please feel at home in this place. Go downstairs, where Landrel will be able to fulfil your every wish and need. If necessary with the help of his own knowledge in the magic arts.~
 = ~<CHARNAME>, please, please come with me down these stairs to my own quarter, my love.~
 DO ~ SetGlobal("Santlove","GLOBAL",3) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Huuh, don't need to tell lil' ol' Imoen what those two are up to...~
@@ -6415,7 +6415,7 @@ DO ~ SetGlobal("Santlove","GLOBAL",3) ~
 == Bjenli IF~InParty("CVJenlig")~THEN~(Hiss) Will be long time till Jen'lig find male of her kin for mating.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~May Sune reign over this place tonight for thee to feel her spirit.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hey, ladies, there is sure another bedroom in this house to have some fun in. ~
-== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ The prophesy surely spared out some intersting parts. Or mayhap some prude monks have made the respective scrolls disappear.~
+== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ The prophesy surely spared out some interesting parts. Or mayhap some prude monks have made the respective scrolls disappear.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ And we thought we had still a child given to our care. The wheel of nature never stands still.~
 == BSANDR ~ Goodnight all, goodnight.~ DO~
 StartCutSceneMode()
@@ -6490,7 +6490,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == Bedwin_ IF ~InParty("Edwin") ~THEN ~ (Uh, that pink incarnation of nitwit! The gold, the power, yes, give it to a horde of babbling brats...) My leader, you will surely be wiser than to do such.~
 == BMinsc_ IF ~InParty("Minsc") ~THEN ~ Boo says he loves the pink little lady. You don't need to be strong as Minsc to do heroic deeds.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
-== BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was imune to such attacks - my heart.~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was immune to such attacks - my heart.~
 ==Bskie IF~ InParty("Skie") ~ THEN ~What a great idea!!...I mean, after we put some aside to purchase some stylish replacement for our torn wardrobe, right?~
 ==Bjenli IF ~ InParty("CVJenlig") ~ THEN ~(Hiss) Jen'lig will carry some for pink girl plan. counsellor Sandrah know real worth of treasure found here.~
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Sing a song of joy with me at the end of this long and dreadful night. With the morning and with our heroine Imoen comes hope. ~
@@ -6500,7 +6500,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",31)~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, the slaughter is done and for a valid purpose as it comes out in the end. Righteous deeds will follow us. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Oh to bring a bit of light and hope to these poor children once more. After all, our perils make some sense this way, the moonblade is not wielded in vain. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Money not for our own bags and I stand here and fully agree to that? Some people have a way to bring out the best in us. ~
-== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis an intention of the truely pure at heart. I am grateful to have found such company in perilious times. No god of murder stands a chance against a golden heart as thine, Imoen.~
+== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ 'tis an intention of the truly pure at heart. I am grateful to have found such company in perilous times. No god of murder stands a chance against a golden heart as thine, Imoen.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Imoen, be careful. As good as your intentions are, do not imbalance nature too much. Ah, forget what I just said, give me my part of the load to carry.~
 == BSANDR ~ You are wonderful, Imoen. We will find a possibility to do this. Right, <CHARNAME>?~
 END
@@ -6518,7 +6518,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",33)~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Bad luck, but I am a woodelf. We have seafaring brothers, but this island is deserted. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ We should look for books, maybe. We may find something on the ship. An instruction or so.~
 == BSANDR IF ~ !InParty("Sufinch")~ THEN~ This adventure started with a book, perhaps the ending will be found from books as well. What about that one from our poor captain? There may be others that help around that ship.~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ We have smit all the evil on this island. And now we are stuck? Helm will help.~
+== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ We have smitten all the evil on this island. And now we are stuck? Helm will help.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I should never have gone out to sea, I knew it. So here is the end of our journey. No, by Shar. We find a way, we always do.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! You foolish <PRO_RACE> never listened to me. The sea is not a friend to any dwarf. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Lathander will not forsake us, he will see our pure hearts in need.~
@@ -6605,9 +6605,9 @@ IF ~ Global("DYBant","GLOBAL",6) ~ THEN BSANDR SanDyBS1
 DO ~ SetGlobal("DYBant","GLOBAL",7) RealSetGlobalTimer("DynBantT","GLOBAL",1800)~
 == BDYNAH  ~ 'tis the truth, as well as we have excluded thee already for being one. But what about the second child your mother had.~
 == BSANDR ~ I do not know her or him, you see I do not even know the spawn's gender. Nor what happened to it after my mother died.~
-== BDYNAH  ~ Mayhaps 'tis the same one we both pursue then.~
+== BDYNAH  ~ Mayhap 'tis the same one we both pursue then.~
 == BSANDR ~ But is it the one that we assume to be at the heart of the machinations that bother the Realms today. Or is it the other one?~
-== BDYNAH  ~ The other one? I have heard of some that read the prophecies of Alaundo in this way. Art thou mayhaps one of them, one of Elminster's school?~
+== BDYNAH  ~ The other one? I have heard of some that read the prophecies of Alaundo in this way. Art thou mayhap one of them, one of Elminster's school?~
 == BSANDR IF ~ Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN ~ Even more, I am Elminster's daughter. And as such I agree with my father, that the one able to obstruct the spawn who rises to acquire the dead god's throne must be a Bhaalspawn as well.~
 == BSANDR IF ~ Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN ~ I agree with Elminster, that the one able to obstruct the spawn who rises to acquire the dead god's throne must be a Bhaalspawn as well.~
 == BDYNAH  ~ And still thou dost not know which one thou will face if thou succeed to find your mother's lost child, the ursurpator or the defender.~
@@ -6623,7 +6623,7 @@ CHAIN
 IF ~ Global("DYBant","GLOBAL",8) ~ THEN BSANDR SanDyBS1
 ~ Dynaheir, will you give me some insigh into a Hathran's approach to the magic arts?~
 DO ~ SetGlobal("DYBant","GLOBAL",9) RealSetGlobalTimer("DynBantT","GLOBAL",1800)~
-== BDYNAH~ Thou artst wise, my young friend, to name it *the magic arts*. Thou knowest that we are chosen among our folks when still very young. The elders sense the gift for the arts in a young one and take her from her family to teach her from then on. It is an honor for the family which is given another child into their care in return.~
+== BDYNAH~ Thou artst wise, my young friend, to name it *the magic arts*. Thou knowest that we are chosen among our folks when still very young. The elders sense the gift for the arts in a young one and take her from her family to teach her from then on. It is an honour for the family which is given another child into their care in return.~
 == BSANDR ~ That sounds like you believe that one needs a gift or a talent to start the studies at first.~
 == BDYNAH~ 'tis true, but also truth is that the gift would be lost if it weren't trained and schooled from an early day onwards. Even if thou art a gifted one the work is hard and endures all thine life to evolve it to mastery.~
 == BSANDR ~ I see. But if that is true, it is as well true for any other profession or art. You may have a talent for drawing pictures, but it needs more than just this to reach the mastery of a Leonardo.~
@@ -6641,10 +6641,10 @@ DO ~ SetGlobal("DYBant","GLOBAL",11) RealSetGlobalTimer("DynBantT","GLOBAL",800)
 == BSANDR ~ The common subject being the Bhaalspawn issue or <CHARNAME>?~
 == BDYNAH~ Thou art a precise observer, young friend. Mayhaps the two will reveal in the end as the same.~
 == BSANDR ~ It is in deed that we have quite a bit in common then, but from the caution I sense in your words I deduct, that you are still not completely sure about the answer yet. Neither am I.~
-== BDYNAH~ Thanks for this openess, Sandrah. I will be as open to thee as well shouldst I gain more insight to that common suspicion.~
+== BDYNAH~ Thanks for this openness, Sandrah. I will be as open to thee as well shouldst I gain more insight to that common suspicion.~
 == BSANDR ~ Good - than perhaps the other aspect of that subject may be the appropriate topic for this eve?~
 == BDYNAH~ I have lately by an error and in care for <CHARNAME> entered into a dream of <PRO_HISHER>.~
-== BSANDR ~ I truely believe that it was in sorrow over <PRO_HIMHER>, as I know you well enough not to assume that you would misuse your gifts for another reason. Will you talk about what you found - knowing that I would not misuse such a knowledge as well?~
+== BSANDR ~ I truly believe that it was in sorrow over <PRO_HIMHER>, as I know you well enough not to assume that you would misuse your gifts for another reason. Will you talk about what you found - knowing that I would not misuse such a knowledge as well?~
 == BDYNAH~ My trust in thee is complete with anything concerning <CHARNAME> as your feelings are obvious. As are <PRO_HISHER>, from what I saw in <PRO_HISHER> dream.~
 == BSANDR ~ You were in it as well, Dynaheir? Does that irritate you?~
 == BDYNAH~ Thou knowest that?~
@@ -6661,9 +6661,9 @@ IF ~ Global("DYBantF","GLOBAL",10)~ THEN BSANDR SanDycommInF
 DO ~ SetGlobal("DYBant","GLOBAL",11) SetGlobal("DYBantF","GLOBAL",11) RealSetGlobalTimer("DynBantT","GLOBAL",800)~
 == BDYNAH~ I suggest to have our common interest as the subject for a joined conversation tonight, Sandrah.~
 == BSANDR ~ The common subject being the Bhaalspawn issue or <CHARNAME>?~
-== BDYNAH~ Thou art a precise observer, young friend. Mayhaps the two will reveal in the end as the same.~
+== BDYNAH~ Thou art a precise observer, young friend. Mayhap the two will reveal in the end as the same.~
 == BSANDR ~ It is in deed that we have quite a bit in common then, but from the caution I sense in your words I deduct, that you are still not completely sure about the answer yet. Neither am I.~
-== BDYNAH~ Thanks for this openess, Sandrah. I will be as open to thee as well shouldst I gain more insight to that common suspicion.~
+== BDYNAH~ Thanks for this openness, Sandrah. I will be as open to thee as well shouldst I gain more insight to that common suspicion.~
 == BSANDR ~ Good - than perhaps the other aspect of that subject may be the appropriate topic for this eve?~
 == BDYNAH~ Thou knowest that?~
 == BSANDR ~ I know <CHARNAME> well enough to anticipate that a woman of your charm, knowledge and dedication will not leave <PRO_HIMHER> without interest. You are a fascinating and warm female that attracts others naturally.~
@@ -6680,7 +6680,7 @@ DO~ SetGlobal("DYBant","GLOBAL",13) RealSetGlobalTimer("DynBantT","GLOBAL",1000)
 == BDYNAH~  Thank, Sandrah, 'tis that I feel likewise about our conversations. We have more in common than the difference in age and origin wouldst let thou think. Say, why is it thou so despise the filthy Red Scourge, the Thayan wizards?~
 == BSANDR~ For me they represent everything that makes magic and the arts provided by my goddess such a two-sided medal. The red scum are the downside of it, the incarnation of the misuse of Mystra's powers.~
 == BDYNAH~ Fighting Thayan invading armies and their wizards ensures our survival, Sandrah, so it cometh natural for me. A Rashemi doth no more than guard his house. Thine reasons are far more abstract.~
-== BSANDR~ Maybe, but any of them I encountered until today has added to my bad impression of Thay. Meddling in Necromancy, basing their society on slavery and keeping their women at a similar low level - name any despisable attitude and you will find it in Thay.~
+== BSANDR~ Maybe, but any of them I encountered until today has added to my bad impression of Thay. Meddling in Necromancy, basing their society on slavery and keeping their women at a similar low level - name any despicable attitude and you will find it in Thay.~
 == BDYNAH ~ Thayans are a nation which breeds wars, and thus is bringing on the demise of humans. Szass Tam, the current ruler of Thay, was born decades earlier than me, and now he continues his existence as a lich. ~
 == BSANDR~ They do not respect even death and nature itself. They melted glaciers with their magic to make the meltwater caused flooding in Immilmar and Mulsantir.~
 == BDYNAH~ Me and my sisters went to repair damages and salvage what we could. Meanwhile, Thayan forces crossed the foothills of the High Country.~
@@ -6701,7 +6701,7 @@ DO~ SetGlobal("DYBant","GLOBAL",15) RealSetGlobalTimer("DynBantT","GLOBAL",1000)
 == BDYNAH~ Thou hath surely observed as well that 'tis my believe we are not mere puppets in somebody's game.~
 == BSANDR~ Have you come to the Sword Coast to change the destiny that you assume is yours?~
 == BDYNAH~ (Smiles) If it were mine to alter destiny then it wouldn't be my destiny but what I made of it instead. 'tis true, I have seen that my future would be in this land far from Rashemen and I needed to come here as fate is unavoidable.~
-== BSANDR~ And it is connected with <CHARNAME> and who he is. But what was not revealed by your forsight is that love would be part of it.~
+== BSANDR~ And it is connected with <CHARNAME> and who he is. But what was not revealed by your foresight is that love would be part of it.~
 == BDYNAH~ And maybe love will make the change from destiny to destination here. Thou understand much, young friend. Do not try to mingle with what is dealt to us.~
 == BSANDR~ If just that would be my fate? If I followed a calling just like you did, to find <CHARNAME> and play my part here just like you thought you need to do? And what if love is the power that is changing it for me as well.~
 == BDYNAH~ (Dynaheir has embraced Sandrah) Your love for <CHARNAME> or your love for me, Sandrah?~
@@ -6713,12 +6713,12 @@ IF ~ Global("DYBant","GLOBAL",34)~ THEN BSANDR SanDyRedWF
 ~ Dynaheir, I feel much for you by now and I hope you see me as your friend as well.~
 DO~ SetGlobal("DYBant","GLOBAL",15) RealSetGlobalTimer("DynBantT","GLOBAL",1000)~
 == BDYNAH~ I do, young one, thou hast grown dear to my heart, you and <CHARNAME>, more than may be good for all of us.~
-= ~ Know that it is not custom among the Hathran but not very seldom found that we love one of our own gender. Mayhaps 'tis 'cause the fate that waitest for most of us doth not allow to think of family life.~
+= ~ Know that it is not custom among the Hathran but not very seldom found that we love one of our own gender. Mayhap 'tis 'cause the fate that waitest for most of us doth not allow to think of family life.~
 == BSANDR~ It is as if you knew what I wanted to talk about. I have come to recognise that you believe much in fate and destiny and that what happens follows some higher design.~
 == BDYNAH~ Thou hath surely observed as well that 'tis my believe we are not mere puppets in somebody's game.~
 == BSANDR~ Have you come to the Sword Coast to change the destiny that you assume is yours?~
 == BDYNAH~ (Smiles) If it were mine to alter destiny than it wouldn't be my destiny but what I made of it instead. 'tis true, I have seen my future would be in this land far from Rashemen and I needed to come here as fate is unavoidable.~
-== BSANDR~ And it is connected with <CHARNAME> and who she is. But what was not revealed by your forsight is that love would be part of it and that you would not be alone in your task to guard her.~
+== BSANDR~ And it is connected with <CHARNAME> and who she is. But what was not revealed by your foresight is that love would be part of it and that you would not be alone in your task to guard her.~
 == BDYNAH~ And maybe love will make the change from destiny to destination here. Thou understand much, young friend. Do not try to mingle with what is dealt to us.~
 == BSANDR~ If just that would be my fate? If I followed a calling just like you did, to find <CHARNAME> and play my part here just like you thought you need to do? And what if love is the power that is changing it for me as well.~
 == BDYNAH~ (Dynaheir has embraced Sandrah) Your love for <CHARNAME> or your love for me, Sandrah?~
@@ -6751,10 +6751,10 @@ DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)
 == BSANDR~ Is he part of the reasons you came to the Sword Coast then, Dynaheir?~
 == BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come here.~
 = ~ I hath told thee of my dajemma and that it had ended by our secret mission being betrayed to Thay. One of the traitors in this widespread conspiracy against Rashemen itself was Winsky.~
-== BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expell him?~
+== BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expel him?~
 == BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Othlor in the end.~
 == BSANDR ~ Still it may be his perception, that your presence here today is connected to the events back then.~
-== BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesised in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
+== BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesied in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
 == BSANDR ~ Only, Dynaheir, the threat is no longer against Rashemen alone, as Sarevok is no longer really under control of the Othlor as it appears, but the threat is against all of the Realms and maybe beyond.~
 == BDYNAH ~ (The Hathran puts her arm around the younger woman's shoulder and they continue to walk entwined, with Sandrah's head resting lightly on Dynaheir's arm.)~
 EXIT
@@ -6769,10 +6769,10 @@ DO~ SetGlobal("DYBant","GLOBAL",19) RealSetGlobalTimer("DynBantT","GLOBAL",1200)
 == BSANDR~ Was he part of the reasons you came to the Sword Coast then, Dynaheir?~
 == BDYNAH ~ I have crossed his path before and I have sensed a vague relationship with my studies on the topic of Bhaal then, but he hath not been considered by me or the Hathrans when I was selected to come westbound.~
 = ~ I hath told thee of my dajemma and that it had ended by our secret mission being betrayed to Thay. One of the traitors in this widespread conspiracy against Rashemen itself was Winsky.~
-== BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expell him?~
+== BSANDR ~ That explains why he had been expelled from your country and afterwards came to the Sword Coast to search for his instrument of revenge. Were you among those to expel him?~
 == BDYNAH ~ No, I was still young then, just finished my dajemma. But I was one of the witnesses at his council, having escaped and survived the deadly betrayal set up for us. Mine testimony among others led to the verdict against that well-respected Othlor in the end.~
 == BSANDR ~ Still it may have been his perception, that your presence at Baldur's Gate was connected to the events back then.~
-== BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesised in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
+== BDYNAH ~ 'tis to be expected, yes. It was not foretold this way but it appears to be the truth. It was prophesied in the scrolls that the Bhaalspawn rising would threaten Rashemen. Now it seems the reason being the renegade steering him against us.~
 == BSANDR ~ Only, Dynaheir, the threat against Rashemen by Winski has disappeared, but the threat of the Bhaalspawns against all of the Realms and maybe beyond has grown.~
 == BDYNAH ~ (The Hathran puts her arm around the younger woman's shoulder and they continue to walk entwined, with Sandrah's head resting lightly on Dynaheir's arm.)~
 EXIT
@@ -6788,11 +6788,11 @@ DO ~ SetGlobal("SanMinDyStat","LOCALS",2)~
 =~ I know that people would take Minsc and me for lovers, but this is not true. So we would not cause thee embarrassment if that is what concerns thee. My desire to have him near is not romantic, 'tis practical. ~
 == BSANDR ~ I know that, Dynaheir, as well as how he feels, more like a brother. (She looks questioningly at Dynaheir.) I am aware of the Rashemi custom to take a girl with the gift for the arts from the parents and give them another child to raise in return. ~
 == BDYNAH ~ Thy eye is sharp, Sandrah, and thy knowledge of foreign lore impressive! Indeed, Minsc is the boy that my parents raised in my stead. I recognized him when I met him after my parent's death - the wounds he had received defending my home town Borovsk from the Thayan raid stole his memories and his wit. But... he is mine brother nonetheless. ~
-== BSANDR ~ The care that your brother requires comes not from spells or scrolls, Dynaheir. We both can partake in his healing with our sisterly love for him. Talk to his heart and he undertstands you. This is the healing his soul requires.~
+== BSANDR ~ The care that your brother requires comes not from spells or scrolls, Dynaheir. We both can partake in his healing with our sisterly love for him. Talk to his heart and he understands you. This is the healing his soul requires.~
 == BDYNAH ~ Minsc is a slow thinker, yet not insensitive. Why, with his... rodent, I am afraid he is more sensitive than needed. And I want him not to be hurt by a foolish romance for a girl who is beyond his reach.~
-== BSANDR ~ Boo is Minsc himself, Dynaheir, you may have observed yourself. For some reason Minsc is afraid of his own wit and lets Boo speak on his behalf. Let others think what they want, we two undertand it and that is enough.~
+== BSANDR ~ Boo is Minsc himself, Dynaheir, you may have observed yourself. For some reason Minsc is afraid of his own wit and lets Boo speak on his behalf. Let others think what they want, we two understand it and that is enough.~
 == BDYNAH ~ And romancing thee, is that a part of the therapy or a dangerous play on thine side? I am afraid of Minsc reaction should he feel betrayal.~
-== BSANDR ~ I see that danger, too, and I am not betraying him. To rebuke him will hurt him even more, it will make him feel unwanted and inferior. This is not what I feel for him. I care as much for him as you do, believe me and I am not misusing him as a playtool.~
+== BSANDR ~ I see that danger, too, and I am not betraying him. To rebuke him will hurt him even more, it will make him feel unwanted and inferior. This is not what I feel for him. I care as much for him as you do, believe me and I am not misusing him as a play tool.~
 == BDYNAH ~ Agreed. Thou hast to take a risk there to access him and to heal him and I am grateful you do. I trust thee, Sandrah...and I accept the possibility of failure. 'tis not that it can go worse but only better. (Dynaheir embraces Sandrah to seal the mutual understanding between the two women.)~
 EXIT
 
@@ -6845,7 +6845,7 @@ IF~ Global("SanDyWyEd","LOCALS",1)~ THEN BSANDR SanDyWyEd
 DO ~ SetGlobal("SanDyWyEd","LOCALS",2)~
 == BDYNAH~ I still have not the idea why <CHARNAME> keepeth the snake so near to <PRO_HISHER> bossom.~
 == BSANDR ~ It is maybe better to have the enemy under close observation than attacking out of the dark. But honestly, Dynaheir, I do not know it. It is no secret to <PRO_HIMHER> how much I despise the red scum.~
-== BDYNAH~ 'tis mayhaps a valid point that we both can watch Edwin's every move and will not be caught unawares.~
+== BDYNAH~ 'tis mayhap a valid point that we both can watch Edwin's every move and will not be caught unaware.~
 == BSANDR ~ He will not act against our joint powers of Mystra. Those will be more than enough to defeat him any time.~
 == BDYNAH~ (Smiles) Not to forget your fighting abilities as thee will strike him down with a single hit of thine hammer.~
 == BSANDR ~ Is there anything specific between you and this particular Thayan? He was trying to get us to kill you, not just because you are a Hathran, but because you are Dynaheir.~
@@ -6868,10 +6868,10 @@ DO ~ SetGlobal("DYBant","GLOBAL",23) RealSetGlobalTimer("DynBantT","GLOBAL",1200
 == BSANDR ~ Then you have studied her and me well, as she is my inspiration for many things I do. She and her son.~
 == BDYNAH~ Thine father Elminster, a worthy man to follow. Thou knowst that Mystra has gone through many incarnations, and the current is but one of them. She has become what she is by following a path that is equal to thine.~
 == BSANDR ~ Then you would be aware that I, just like her, would have slain the new god of murder, even if I had found him in the spawn of my own mother.~
-== BDYNAH~ Thou art a factor that is not to be found in the scrolls and prophesies I have studied so intensly for long and which made me to venture to the Sword Coast on this quest. Mayhaps 'tis this element that will make the difference in the end.~
+== BDYNAH~ Thou art a factor that is not to be found in the scrolls and prophesies I have studied so intensely for long and which made me to venture to the Sword Coast on this quest. Mayhap 'tis this element that will make the difference in the end.~
 == BSANDR ~ There is some hand I feel in this, Dynaheir, of which I always thought it was my goddess, but I may err. I had dreams that made me leave Candlekeep, and we have encountered strange coincidences that let me find the truth about my mother's spawn and others of the blood as if guided to it.~
 == BDYNAH~ Something is waiting for you there in the unwritten part of the future, Sandrah, as sure as my fate is waiting for me the way it is written.~
-== BSANDR ~ My Hathran, I have respect for your faith but I built mine on the lack of logic in your reasoning. If my future is unwritten and in my hands, and if <CHARNAME>'s way with Bhaals blood in <PRO_HIMHER> is still chosen by no one else but <CHARNAME> - then why should your fate be sealed?~
+== BSANDR ~ My Hathran, I have respect for your faith but I built mine on the lack of logic in your reasoning. If my future is unwritten and in my hands, and if <CHARNAME>'s way with Bhaal's blood in <PRO_HIMHER> is still chosen by no one else but <CHARNAME> - then why should your fate be sealed?~
 == BDYNAH ~ Thou wouldst fight against a pantheon of gods to make it undone, I know for sure - and maybe you will, granddaughter of Midnight.~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
 CHAIN
@@ -6883,19 +6883,19 @@ DO~ SetGlobal("SanDyUnTo","LOCALS",2)~
 == BDYNAH IF ~ InParty("Minsc") ~ THEN ~ We will know soon, Sandrah. I hope thou art the one who is right this time. Shouldst it not be so it will be thyne task alone to care for Minsc and <CHARNAME>.~
 == BDYNAH IF ~ !InParty("Minsc") ~ THEN ~ We will know soon, Sandrah. I hope thou art the one who is right this time. Shouldst it not be so it will be thyne task alone to care for <CHARNAME>.~
 == BSANDR ~ You have my word on it, it will always be as if you would be guarding with me. But worry not, we both have felt the hand that plays the odd card in this game all the time.~
-== BDYNAH IF ~ GlobalLT("DYBant","GLOBAL",23)~ THEN ~ Thou art a factor that is not to be found in the scrolls and prophesies I have studied so intensly for long and which made me to venture to the Sword Coast on this quest. Mayhaps 'tis this element that will make the difference in the end.~
+== BDYNAH IF ~ GlobalLT("DYBant","GLOBAL",23)~ THEN ~ Thou art a factor that is not to be found in the scrolls and prophesies I have studied so intensely for long and which made me to venture to the Sword Coast on this quest. Mayhap 'tis this element that will make the difference in the end.~
 == BDYNAH IF ~ GlobalGT("DYBant","GLOBAL",22)~ THEN ~ Thou art that card?~
 == BSANDR ~ Not me alone. I refer to the one who seems to have guided me to be here at this moment, the one who has led us two together to meet at <CHARNAME>'s side.~
 == BDYNAH ~ Thou talk of thy goddess?~
 == BSANDR ~ The one who has hunted and defeated the God of Murder already but whose son has been punished by Bhaal even from beyond the grave.~
-== BDYNAH ~ Thou mayhaps be right, as Aloundo's prophesies stem from the time before thy grandmother Midnight took Mystra's cloak and place. Her name is not found in the scrolls.~
+== BDYNAH ~ Thou mayhap be right, as Aloundo's prophesies stem from the time before thy grandmother Midnight took Mystra's cloak and place. Her name is not found in the scrolls.~
 EXIT
 
 CHAIN
 IF ~ Global("X#MinscBoo","GLOBAL",4)~ THEN BSANDR MinscBooMysPlan
-~ You have been very thoughful recently, Hathran.~
+~ You have been very thoughtful recently, Hathran.~
 DO~ SetGlobal("X#MinscBoo","GLOBAL",5)~
-== BDYNAH ~ I was wandering if thy goddess hath truely a plan for bringing Minsc and you together.~
+== BDYNAH ~ I was wandering if thy goddess hath truly a plan for bringing Minsc and you together.~
 == BSANDR ~ Yes and no, I think.~
 == BDYNAH  ~(Smiles) Thou meanst yes, together for some quest that is thine both to resolve, but no for being more than companions in that.~
 == BSANDR ~ But you also will know that whatever those gods intend for us, it is still us on our material plane that live our lives and decide our fate.~
@@ -6903,7 +6903,7 @@ DO~ SetGlobal("X#MinscBoo","GLOBAL",5)~
 == BSANDR ~ I will as long as it is allowed to me. ~
 == BDYNAH  ~ There is someone else waiting for him in the future, is that thy meaning?~
 == BSANDR ~ Yes.~
-== BDYNAH  ~ Kwowing and accepting that will spare thee the hurt to come.~
+== BDYNAH  ~ Knowing and accepting that will spare thee the hurt to come.~
 == BSANDR ~ I accept that as the price for the time that is granted to us meanwhile. Your brother is a pure and gentle soul like rarely any other I have ever encountered. Just like his sister.~
 == BDYNAH~ (Dynaheir embraces and kisses the younger cleric gently.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
@@ -6973,7 +6973,7 @@ DO~ SetGlobal("SanDrizzt","GLOBAL",11) SetGlobal("SanDrizzt2","GLOBAL",11) RealS
 == F_DRIZTJ~ (Again you observe how Drizzt's face lightens up as he willingly sits down beside Sandrah and takes her hand.) I imagine my knowledge of Midnight interests you some, my dear.~
 == BSANDR~ You are the only one I know who can give me some insight into her more private aspects - I mean except my father, but his perspective is that of a son who rarely had his mother at home.~
 == F_DRIZTJ~ She was independent and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Time of Troubles to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
-=~ Love meant a lot for her, love for her fellowbeings, love for our animal companions, (smiles) and of course the physical aspects of love. Before she finally chose her companion Cyric, she had a number of lovers, which was easy for her with her charm and her beauty.~
+=~ Love meant a lot for her, love for her fellow beings, love for our animal companions, (smiles) and of course the physical aspects of love. Before she finally chose her companion Cyric, she had a number of lovers, which was easy for her with her charm and her beauty.~
 == BSANDR~ And that included you, Drizzt, regardless of your race or your reputation.~
 == F_DRIZTJ~ Yes, and we both enjoyed it while it lasted and never forgot what we had. Although it was clear for both of us that it was nothing to endure as we both were too restless to move on and to move things on Toril.~
 == BSANDR~ She had a practical view on life and she never neglected the easier and joyful side even in the Time of Troubles.~
@@ -6990,7 +6990,7 @@ DO~ SetGlobal("SanDrizzt","GLOBAL",13) SetGlobal("SanDrizzt2","GLOBAL",13) RealS
 == F_DRIZTJ~ You are a wise person, to judge thus, knowing your own limits. So here is the eye witnesses' report.~
 = ~ Cyric was a competent and *honest* thief as every adventuring party needs to open locks and to find and disable traps. A cheerful man of many talents, intelligent and attractive. Not an odd choice for your grandmother. However what made him special and won him her heart was his sacrifice of the own self when the final battle neared.~
 == BSANDR~ It was him, not Midnight that ended the God of Murder.~
-== F_DRIZTJ~ Exactly. It was Cyric with the help of Mask in the form of the sword Godsbane that backstabbed the God of Murder as the pair had tracked him down and cornered with no means to escape. With all her power and weaponcraft, Midnight could not hit the final blow against him. Only the skilled noiseless assasin with the undefeatable sword could backstab and murder this god.~
+== F_DRIZTJ~ Exactly. It was Cyric with the help of Mask in the form of the sword Godsbane that backstabbed the God of Murder as the pair had tracked him down and cornered with no means to escape. With all her power and weapon craft, Midnight could not hit the final blow against him. Only the skilled noiseless assassin with the unbeatable sword could backstab and murder this god.~
 = ~ But more important - just like Midnight took Mystra's mantle and sacrificed her humanity and her womanhood to take the duties of a goddess, Cyric did likewise. His burden was heavy as he had to become the new god of murder by Ao's verdict and the great schemer and plotter we recognise in him today.~
 == BSANDR~ Understandable that a man of integrity who has to take on the duties of such deities will appear broken in his personality. A short step from the thief with his tricks and masquerades to the mad god of strive, lies and illusions, but a thin line easily overstepped.~
 == F_DRIZTJ~ (Drizzt looks at Sandrah in deep thought.) You see what only she was able to see before. Another indication of your resemblance. May you be very careful for how far you will follow her way.~
@@ -7004,12 +7004,12 @@ IF ~Global("SanDriDrowAmb","GLOBAL",1)~ THEN BSANDR SAnDrwoAmb
 DO ~ SetGlobal("SanDriDrowAmb","GLOBAL",2)~
 == F_DRIZTJ~ I stepped on the toes of many evil creatures, including some of my own race even here on the surface. It will be interesting to find out who is behind it this time.~
 == BSANDR~ You do not know it yet?~
-== F_DRIZTJ~ This is a trap set up with great care and expertice and it involves drow and spiders. It looks like the handwriting of my *friend* Artemis.~
+== F_DRIZTJ~ This is a trap set up with great care and expertise and it involves drow and spiders. It looks like the handwriting of my *friend* Artemis.~
 == BSANDR~ Artemis Entreri?~
 == F_DRIZTJ~ You know him as well, Sandrah?~
 == BSANDR~ No, I have just read something in my father's book about him.~
 == BSANDR IF~ GlobalGT("SanDSOTSCUW","GLOBAL",10)~ THEN~We had an encounter with some Bregan D'aerthe on the Sword Coast. Is not Artemis involved with that organisation as well?~
-== F_DRIZTJ IF~ GlobalGT("SanDSOTSCUW","GLOBAL",10)~THEN~ Sandrah! You have encountered the Bregan D'aerthe and are standing here alive in front of me!! You are truely someone to be counted on in these disturbing times.~
+== F_DRIZTJ IF~ GlobalGT("SanDSOTSCUW","GLOBAL",10)~THEN~ Sandrah! You have encountered the Bregan D'aerthe and are standing here alive in front of me!! You are truly someone to be counted on in these disturbing times.~
 == F_DRIZTJ ~ Artemis is a high rank in the Bregan D'aerthe and very close to Jarlaxle himself. We have to prepare for an epic battle, my friends.~
 == BSANDR~ You live a dangerous life, good Drizzt.~
 == F_DRIZTJ ~ My Sandrah, if you have not encountered it yet, you have been lucky. With the way you and <CHARNAME> have chosen you are destined to make yourself dangerous enemies sooner or later. Forget about a peaceful time in a nice home surrounded by your children. Sandrah, your way will resemble Midnight's with every further step you take.~
@@ -7022,7 +7022,7 @@ IF~ Global("SanDrByeBG1","LOCALS",1)~ THEN BSANDR SanDriByeBG1
 DO~ SetGlobal("SanDrByeBG1","LOCALS",2)~
 == F_DRIZTJ ~ I assume you are quite aware of it. You are prepared that it would be like that.~
 == BSANDR~ I thought I would be, but who can really be so cold at heart not to become weak when the moment really is there.~
-== F_DRIZTJ ~ New duties are calling me already. Your place is at <CHARNAME>'s side for now. Let us not prolong this moment of pain for us unnessesarily. We both have accepted that our relation will be like that, we trade the moments of pure pleasure for the long dark times without the other.~
+== F_DRIZTJ ~ New duties are calling me already. Your place is at <CHARNAME>'s side for now. Let us not prolong this moment of pain for us unnecessary. We both have accepted that our relation will be like that, we trade the moments of pure pleasure for the long dark times without the other.~
 == BSANDR~ Your ways will be hard to track, but I know that you will always have a way to find us, if needed my father will help you surely. I await our next meeting anxiously, Drizzt.~
 == F_DRIZTJ ~ I will find you again and new moments of joy will lighten our lives, Sandrah, farewell.~
 = ~ Farewell you all. It was a pleasure to travel and fight with companions such as you.~ DO ~ LeaveParty() EscapeArea()~ EXIT
@@ -7038,7 +7038,7 @@ IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_CATTI rescued
 
 CHAIN
 IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_Brueno Searchcatti
-~By Moradin's hammer! Seems like the Nine Hells itself has placed itself in Icewind Dale and I fear that Catti-Brie, my fosterchild, is lost within it.~
+~By Moradin's hammer! Seems like the Nine Hells itself has placed itself in Icewind Dale and I fear that Catti-Brie, my foster child, is lost within it.~
 ==F_DRIZTJ IF~InParty("F_Drizzt")~THEN~The demonic content seems to appear as a common pattern...~
 ==CVSandrJ IF~!InParty("F_Drizzt")~THEN~ We are on her trail already.~
 ==F_Brueno~I found the dead bodies of the rangers Catti-Brie travelled with though no signs from her except for some small clues leading me to this location. But the tracks end here. You must proceed with haste, I suspect the worst.~DO~AddexperienceParty(3500) EscapeArea()~EXIT
@@ -7075,7 +7075,7 @@ IF~~THEN REPLY~The baby Gorion carried was me! There can be no doubt. But was it
 
 CHAIN
 IF ~ Global("Formedcloth","GLOBAL",23)~ THEN BSANDR ImoBhaalSp4
-~ My besta friend, how do you feel after all these occurances? You spend a lot of time with thinking by yourself these days. Remember what friends are for, Imoen.~
+~ My besta friend, how do you feel after all these occurrences? You spend a lot of time with thinking by yourself these days. Remember what friends are for, Imoen.~
 DO~ SetGlobal("Formedcloth","GLOBAL",24)~ 
 == Bimoen ~ Alright and yes. I cant keep it inside me for much longer or it starts eating me. Besta friend, let us sit down, you must and must listen to me and give your learned advice.~
 == BSANDR ~ Sure, Imoen, let us sit right here. Looks like we have quite some time to talk at the moment.~
@@ -7096,7 +7096,7 @@ IF ~~ THEN BSANDR ImoBhaalSp5
 == Bimoen ~ Yeah, they are cleverest and more clever than the hunters. In the end they make it safely to Candlekeep. Vrooooom - years and years pass and the little babies become little children and they live happy and are friends and know nothing of what was before in the dark time.~
 == BSANDR ~ They learned from their foster fathers and from the monks. They grew up and were to each other like <PRO_BROTHERSISTER> to sister. Nothing and no one could tear them apart.~
 == Bimoen ~ Nothing and no one could tear them apart and nothing and no one ever will, I swear!~
-== BSANDR ~ But their innocent life ended one dark day. Another child with the same blood in him had also grown up in another part of the Realms. This one, a boychild named Sarevok, had not the care of Winthrop or Gorion, but was raised and taught in the way to feed the evil power within him.~
+== BSANDR ~ But their innocent life ended one dark day. Another child with the same blood in him had also grown up in another part of the Realms. This one, a boy child named Sarevok, had not the care of Winthrop or Gorion, but was raised and taught in the way to feed the evil power within him.~
 END
 ++ ~ Sarevok and his teacher studied the lore and the prophecies of the seer Alaundo. They found that the rising of Sarevok to eventually follow his *father* would require to eliminate others of the same blood first.~ + ImoBhaalSp6
 
@@ -7104,7 +7104,7 @@ CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp6
 ~ Only a Bhaalspawn can prevent Sarevok from rising to become Bhaal's successor. With divination and cunning they found out about <CHARNAME>.~
 == Bimoen ~ But Elminster ever watchful over Faerun sensed their plan and sent a warning letter to Gorion.~
-== BSANDR ~ A letter that was secretly read by the tricky and alway curious Immi even before Gorion laid his eyes on it.~
+== BSANDR ~ A letter that was secretly read by the tricky and always curious Immi even before Gorion laid his eyes on it.~
 == Bimoen ~ Well, good she did, remember *Nothing and no one could tear them apart*.~
 == BSANDR ~ At the same moment also Elminster's only daughter found out about a child of that heritage being at Candlekeep and in imminent danger.~
 == Bimoen ~ Elminster's daughter was looking out for such children 'cause her mother had died from birthing one of them and died from it. Sandrah guessed that one of the babies that were brought to Candlekeep was her mother's one.~
@@ -7125,7 +7125,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR ImoBhaalSp8
-~ The soil the seed of Bhaal needs to grow in. Like any flower seed, the seed of that god needs the right ground to nurish from. And Imoen in that respect is as dry as the Calimshan Desert for him. It is her lack of ambition to rule and to execute power.~
+~ The soil the seed of Bhaal needs to grow in. Like any flower seed, the seed of that god needs the right ground to nourish from. And Imoen in that respect is as dry as the Calimshan Desert for him. It is her lack of ambition to rule and to execute power.~
 == Bimoen ~ Hey, I wanna rule Toril and make it all pink!~
 == BSANDR ~ Exactly, Imoen. This is exactly your relation to power. With <CHARNAME>, this is different, <PRO_HESHE> has become our leader in a natural way, the makings of a strong ruler are visible in <PRO_HISHER> actions all the time. Even if contrary to the way Bhaal would need those abilities to develop.~
 END
@@ -7198,7 +7198,7 @@ EXIT
 
 CHAIN
 IF ~~ THEN BSANDR SanHarbmap
-~ (Sandrah retrieves the book pages and arranges them in the map pattern in front of the interested harbor master.)~
+~ (Sandrah retrieves the book pages and arranges them in the map pattern in front of the interested harbour master.)~
 == HARBOR~ Mmmh, that river here...no, that coastline here is in the wrong place, mmh, that wood shouldn't be there but there, no...no.~
 == BSANDR~ Some ideas, master?~
 == HARBOR~ Some definite information, but you wouldn't like it, fair lady.~
@@ -7206,7 +7206,7 @@ IF ~~ THEN BSANDR SanHarbmap
 == HARBOR~ Ha, lady, I like your attitude. So, this island is definitely not along any of the routes that the merchant fleet travels, which excludes most islands within the Sea of Swords. ~
 == BSANDR~ So we need to find somebody who travels outside those accustomed routes, right?~
 == HARBOR~ Most of them you wouldn't wanna meet, lady, I can tell you.~
-== BSANDR~ You mean pirates, I assume. But there are also scientiests or explorers maybe that found islands that the merchants later were not interested in.~
+== BSANDR~ You mean pirates, I assume. But there are also scientists or explorers maybe that found islands that the merchants later were not interested in.~
 == HARBOR~ As the only pirates I have encountered here in town were hanging from the end of a rope around their dirty necks, your options are thin. Wait - Holghorn!~
 == BSANDR~ An explorer?~
 == HARBOR~ An adventurous captain in his time, always looking for new routes and such, but not enough of a merchant to prosper with his skills.~
@@ -7219,14 +7219,14 @@ EXIT
 // After Sarevok's Dead
 CHAIN
 IF ~ Global("SanEndBG1Plot","GLOBAL",1)~ THEN BSANDR SanEndBG1Plot1
-~ And so ends the prelude to the Bhaalspawn war that was prophesized by the seer Aloundo. We have done our task quite well, <CHARNAME>.~
+~ And so ends the prelude to the Bhaalspawn war that was prophesied by the seer Alaundo. We have done our task quite well, <CHARNAME>.~
 DO~ SetGlobal("SanEndBG1Plot","GLOBAL",2)~
 END
 ++  ~ The prelude? Have we not defeated Sarevok and his followers and just prevented a war with Amn?~ + SanEndBG1Plot2
 
 CHAIN
 IF ~~ THEN BSANDR SanEndBG1Plot2
-~ We have done this, and I am glad we did. Yet I think this was just the beginning of what the Seer has anounced. We have heard Sarevok's story from the various sources. He was just one spawn of Bhaal trying to succeed his father. There are many more out there, some like him and some like you, <CHARNAME>. Their awakening, just like yours has just begun.~
+~ We have done this, and I am glad we did. Yet I think this was just the beginning of what the Seer has announced. We have heard Sarevok's story from the various sources. He was just one spawn of Bhaal trying to succeed his father. There are many more out there, some like him and some like you, <CHARNAME>. Their awakening, just like yours has just begun.~
 END
 ++ ~ But I will no longer be involved in their struggle, Sandrah. I am not aiming at the way Sarevok was following - and I have stopped him. It is time to find some peace for our own - you and me.~  + SanEndBG1Plot3
 
@@ -7234,7 +7234,7 @@ CHAIN
 IF ~~ THEN BSANDR SanEndBG1Plot3
 ~ I hope we will be granted a short rest, before the next battle will come. I am afraid, <CHARNAME>, it is not for you to choose - and neither is it for me as I will always follow you in my love for you.~
 =~ This event here has put you and your heritage out in the open. Any Bhaalspawn attempting to either re-evoke Bhaal or take his place like Sarevok will know about you sooner or later. You will become involved time and time again, like it or not. Either as their opponent or their victim.~
-== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Mayhaps we have not changed the fate I saw for me, Sandrah. 'tis still to come in another battle for <CHARNAME>.~ 
+== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Mayhap we have not changed the fate I saw for me, Sandrah. 'tis still to come in another battle for <CHARNAME>.~ 
 == BSANDR IF~ InParty("Dynaheir") ~ THEN ~As is the fate for every Hathran to live and to die in duty for what is the dearest to her heart.~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Thou art wise once again, Sandrah. Then the vision I had was to tell me that my duty is not with Rashemen but to protect <CHARNAME>. And by this I will do my duty to my land and kin, as the forthcoming struggle of Bhaalspawns will threaten even countries as far away as mine.~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Such should really be my *family*, gosh. I prefer my good old puffing daddy. And for a sibling, <CHARNAME> is all I ever would look for, if I should feel the need for it.~
@@ -7248,7 +7248,7 @@ IF ~~ THEN BSANDR SanEndBG1Plot3
 == BSANDR IF ~InParty("B!GAVIN")~ THEN ~ These words mean a lot, Gavin. It is the support and presence of friends and loved ones that make us act this way and provide us with the confidence needed for it.~
 == Bjenli  IF~ InParty("CVJenlig") ~ THEN ~ (Hiss) Try to become weak manling god must end like this. Commander wise not to choose such path, <CHARNAME> made to destroy gods rather than become useless one.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ It is Shar's will that I survive all these trials. I really have doubts if the drow in me would have rejected the offer of such powers so easily, still I must admit I feel relief that <CHARNAME> was able to do it.~
-== BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, my fate is connected to this plane now through my love for you. I have paid my dues to <CHARNAME> and Shevarash by Tazok's death. You two take my vow today that I will follow your course whereever it will lead us. Khalreshaar be my witness. ~
+== BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, my fate is connected to this plane now through my love for you. I have paid my dues to <CHARNAME> and Shevarash by Tazok's death. You two take my vow today that I will follow your course wherever it will lead us. Khalreshaar be my witness. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ It sounds like history will be written where you go <CHARNAME>. The need for a witness to document all this is inevitable. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ There was no doubt to the righteousness of your path until now. You are the one to be followed to destroy any remaining threats from the evil god that has spawned you.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clannedin's axe, that was a magnificent fight and we were victorious because the gods smiled at us. It was right to follow you, silly <PRO_RACE>, and you will need my assistance in the future, it seems. ~
@@ -7271,7 +7271,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR BranHealed
-~ I have been blessed by Mystra with my gifts to use them this way. Although I must confess you need them quite a bit with your fearless attacks against any oponent.~
+~ I have been blessed by Mystra with my gifts to use them this way. Although I must confess you need them quite a bit with your fearless attacks against any opponent.~
 DO ~ SetGlobal("SanHealBran","GLOBAL",6)~
 == BBRANW ~ For me it is Tempus that guides me in this way. I tend to our wounds after the battle if need be, but with your approach it seems to me that we form a quite capable team in battle.~
 == BSANDR ~ This is the essence of companionship, Branwen, to share the perils and the joy.~
@@ -7293,11 +7293,11 @@ IF ~~ THEN BSANDR SanHealsaf
 DO ~ SetGlobal("SanHealsaf","GLOBAL",4)~
 == BSAFAN ~ Eh...you are mocking me. Is it not your duty to heal, Sandrah?~
 == BSANDR ~ My duty and my pleasure, for sure, and I do not need to be reminded of it. Be assured I know what to do and to whom.~
-== BSAFAN ~ Sorry, yes, I have observed that much already. It is not often that one finds a companion that is skilled and confident enough to act out without the necessary tutorlage from a superior.~
-== BSANDR ~ A superior such as you, mylady?~
+== BSAFAN ~ Sorry, yes, I have observed that much already. It is not often that one finds a companion that is skilled and confident enough to act out without the necessary tutelage from a superior.~
+== BSANDR ~ A superior such as you, milady?~
 == BSAFAN ~ If you were born and raised like me...Oh, no, I've got it all wrong, my apologies. Surely a girl of such noble birth and education like you knows the problem much better than anyone else around.~
-== BSANDR ~ Do I, mylady?~
-== BSAFAN ~ Oh, please, don't call me *mylady*, especially not with that tone of yours. I already apologised, didn't I. You deserve that title just as well. And thank you for your healing.~
+== BSANDR ~ Do I, milady?~
+== BSAFAN ~ Oh, please, don't call me *milady*, especially not with that tone of yours. I already apologised, didn't I. You deserve that title just as well. And thank you for your healing.~
 == BSANDR ~ Yes, yes.~
 EXIT
 
@@ -7328,7 +7328,7 @@ EXIT
 // Heal Coran
 CHAIN
 IF~~ THEN BSANDR Sanhealcor
-~ I would not intentionally hurt a comrad that I care for, Coran.~
+~ I would not intentionally hurt a comrade that I care for, Coran.~
 DO ~ SetGlobal("SanHealcor","GLOBAL",5)~
 ==BCORAN ~ It is surely not your intention, maiden of the Weave, but your sole presence is already hurting my poor suffering heart.~
 == BSANDR~ Sneaky little thief, you know quite well that my healer's calling would never allow me to leave a suffering creature unattended. What else can I do than to help where my skills are required.~
@@ -7346,7 +7346,7 @@ DO ~ SetGlobal("SanHealDyna","GLOBAL",6) RealSetGlobalTimer("SanHealDynaB","LOCA
 == BDYNAH ~ I hath a limited knowledge of the art, but to execute it like thou dost, one hath to inherit the gift for it. 'tis not to be gained by studying the scrolls.~
 == BSANDR~ But there are others among the Hathran who possess the ability to heal, I know. In battle it is as much needed as a fireball is.~
 == BDYNAH ~ Thou art right, Sandrah, it's just me who is amongst those without this blessing. If I call the Weave to restore, it takes back from me some of my powers and weakens me.~
-== BSANDR~ I see. It is similar to my gift from Mystra to restore a fallen friend even when I have consumed my spells in the day already. I can access to the energy of the Weave, but I am drained significantly by the Weave in return. It is a balance that Mystra controls between giving and taking. I will only use my ability when all else fails and my comrad would be lost without the option of a temple to restore him in time.~
+== BSANDR~ I see. It is similar to my gift from Mystra to restore a fallen friend even when I have consumed my spells in the day already. I can access to the energy of the Weave, but I am drained significantly by the Weave in return. It is a balance that Mystra controls between giving and taking. I will only use my ability when all else fails and my comrade would be lost without the option of a temple to restore him in time.~
 == BDYNAH ~ Thou arest a healer from thine heart and soul, Sandrah, willing to sacrifice part of thine ownself on behalf of thine friends.~
 == BSANDR~ You do the same, Dynaheir, as a Hathran is destined to risk her own life for her people every time she is needed. You are always the first target for your enemy's worst attacks.~
 == BDYNAH ~ 'tis good to hear such words from one who really knows what they mean from her own experience. (Dynaheir embraces Sandrah in deep friendship and understanding.) ~
@@ -7368,7 +7368,7 @@ CHAIN
 IF~~ THEN BSANDR EldoHealed
 ~ (Laughs) And you should use your natural talents...oh, wait a second - your talents? What am I talking about here?~
 DO~SetGlobal("SanHealeldo","GLOBAL",5) ~
-== BELDOT~ Oh, yes, my manifold talents, a valid topic for a conversation, mylady.~
+== BELDOT~ Oh, yes, my manifold talents, a valid topic for a conversation, my lady.~
 == BSANDR~ You cannot really call that a conversation when the topic itself is non-existent. As a bard you are a disaster, to say the least, and your thieving skills will get us nowhere but to jail. Your views on women are better kept to yourself. Even the perfume you use speaks one single word to a lady of distinction - *Cheap*.~
 EXIT
 
@@ -7559,22 +7559,22 @@ IF ~~ THEN BEGIN San672
 END
 
 IF ~~ THEN BEGIN San673
-  SAY  ~So I was thinking... Let's take the kitty. Dump everyone, especially this drow slut, and travel together with pussycat for a time. Go someplace nice.~
+  SAY  ~So I was thinking... Let's take the kitty. Dump everyone, especially this drow slut, and travel together with pussycat for a time. Go some place nice.~
   IF ~~ THEN GOTO San677
 END
 
 IF ~~ THEN BEGIN San674
-  SAY  ~On the other hand, I'm growing frustrated with having to associate with scum, especially the slimy bard. Let's squish the slug, take the kitty, dump everyone else and travel together with pussycat for a time. Go someplace nice.~
+  SAY  ~On the other hand, I'm growing frustrated with having to associate with scum, especially the slimy bard. Let's squish the slug, take the kitty, dump everyone else and travel together with pussycat for a time. Go some place nice.~
   IF ~~ THEN GOTO San677
 END
 
 IF ~~ THEN BEGIN San675
-  SAY ~I was looking at that stupid girl that trails after you as if she is glued to your cloak... and I just can't stand it any more. Let's snap her neck, or dump her with the rest, take the kitty and travel together with pussycat for a time. Go someplace nice.~
+  SAY ~I was looking at that stupid girl that trails after you as if she is glued to your cloak... and I just can't stand it any more. Let's snap her neck, or dump her with the rest, take the kitty and travel together with pussycat for a time. Go some place nice.~
   IF ~~ THEN GOTO San677
 END
 
 IF ~~ THEN BEGIN San676
-  SAY  ~I was thinking... that dwarf is a good fighter, but the rest... let's dump this pathetic squad, take the kitty and travel together with pussycat for a time. Go someplace nice.~
+  SAY  ~I was thinking... that dwarf is a good fighter, but the rest... let's dump this pathetic squad, take the kitty and travel together with pussycat for a time. Go some place nice.~
   IF ~~ THEN GOTO San677
 END
 
@@ -7585,7 +7585,7 @@ IF ~~ THEN BEGIN San677
   IF ~InParty("viconia")~ THEN REPLY ~I would not want to lose Viconia's divine spells. Shar is a powerful goddess, and she favors the drow.~  GOTO San680
   IF ~InParty("eldoth")~ THEN REPLY  ~Eldoth is a slug, but he sure knows how to sing... But so can you, if you would just do more often, I'd agree to let him go.~  GOTO San682
    IF ~~ THEN REPLY  ~Sounds like a good plan, Shar-Teel, but we can't do it just now. Let me sort out this mess with my father's murderer, and then - we will hit the road together.~  GOTO San686
-  IF ~~ THEN REPLY  ~No, Shar-Teel, absolutely not. We have no need any more to sell ourselves as mercenaries. Even you have a code of honor developped that I can respect. Think about it, my she-bear.~  GOTO San688
+  IF ~~ THEN REPLY  ~No, Shar-Teel, absolutely not. We have no need any more to sell ourselves as mercenaries. Even you have a code of honour developed that I can respect. Think about it, my she-bear.~  GOTO San688
   END
 
 IF ~~ THEN BEGIN San678
@@ -7597,7 +7597,7 @@ END
 
 IF ~~ THEN BEGIN San679
   SAY  ~O, really? And I thought you were less pathetic than other men. Listen to yourself... 'beeeestest frieeend... *She spits.* Well, damn, and I'd say the same about pussycat. ~ 
-  = ~ See where this love and friend thing got us. In the end we will fail 'cause it got us so weak. To hell, it still feels good, you bastard. *She grabs you by both ears and clenches your head to her warm bossom*. Loverboy.~
+  = ~ See where this love and friend thing got us. In the end we will fail 'cause it got us so weak. To hell, it still feels good, you bastard. *She grabs you by both ears and clenches your head to her warm bosom*. Loverboy.~
   IF ~~ THEN DO ~IncrementGlobal("X#SharKind","GLOBAL",1) RestParty()~ EXIT
 END
 
@@ -7607,7 +7607,7 @@ IF ~~ THEN BEGIN San680
 END
 
 IF ~~ THEN BEGIN San682
-  SAY  ~*She spits.* Call this a deal. With pussycat providing the musical background we will make any bard redundant. If you get me in the right mood, loverboy, you may even be granted with a lovesong, let's see. ~
+  SAY  ~*She spits.* Call this a deal. With pussycat providing the musical background we will make any bard redundant. If you get me in the right mood, loverboy, you may even be granted with a love song, let's see. ~
   IF ~~ THEN DO ~IncrementGlobal("X#SharKind","GLOBAL",2)RestParty()~ EXIT
 END
 
@@ -7750,14 +7750,14 @@ END
 
 APPEND BELDOT
 IF WEIGHT #-9 ~ Global("SanHealeldo","GLOBAL",4) ~THEN BEGIN  SanHealeldo
-SAY ~ That healing attitude suits a beautiful lady like you much better than all this fighting in heavy gear. Women should use their natural talents like that instead of trying to immitate men.~
+SAY ~ That healing attitude suits a beautiful lady like you much better than all this fighting in heavy gear. Women should use their natural talents like that instead of trying to imitate men.~
 IF~~ THEN EXTERN BSANDR EldoHealed
 END
 END
 
 APPEND BBRANW                                           
 IF WEIGHT #-9 ~ Global("SanHealBran","GLOBAL",5)~ THEN BEGIN Sanbranheal
-SAY ~ I am already deeply in your depth for your rescue from my statuesque state. You never ceise in your care for your companions, Sandrah.~
+SAY ~ I am already deeply in your depth for your rescue from my statuesque state. You never cease in your care for your companions, Sandrah.~
 IF~~ THEN EXTERN BSANDR BranHealed
 END
 END
