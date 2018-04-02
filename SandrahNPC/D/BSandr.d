@@ -3788,7 +3788,7 @@ IF~~ THEN BSANDR SanAjanHeal
 ~ If you are so observant, Ajantis, then you should have noticed that my healing skills are applied to all party members in need. *THAT* is not an indication of some special interest in you.~
 DO ~ SetGlobal("SanHealAjan","GLOBAL",6) RealSetGlobalTimer("SanHelmDogmasdel","LOCALS",600)~
 == BAJANT ~ Well, yes, you are right. You are taking care for us all in an exemplary way. Now, did your answer mean, that there is another kind of interest you may have in me?~
-== BSANDR ~ Oh, my paladin, do not try to appear so innocent. We both know what could once have been developped between us if things had not gone otherwise...~
+== BSANDR ~ Oh, my paladin, do not try to appear so innocent. We both know what could once have been developed between us if things had not gone otherwise...~
 == BAJANT ~ You mean if you would have decided to change your ways to something more...ladylike...oh, no, that is not the right expression - I mean, you are a lady through and through - just not like...~
 == BSANDR ~ ..not like the average empty headed giggling young debutante from the Waterdeep noblesse, with nothing on her mind than finding the *representative and adequate* husband like her mother and her grandmother before her.~
 == BAJANT ~ You have a way to express things, Sandrah, that leaves me speechless, you know that well. But probably you learned these outspoken ways from your father who is known to astound people by his directness that sometimes can hurt as well.~
@@ -3806,20 +3806,20 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",3)~
 == BSANDR ~ My friend, let me help you to *unpuzzle* you. Just tell me what the matter is.~
 == BAJANT ~ It is about your really lax relation to your goddess and the relation to Helm.~
 == BSANDR ~ Ajantis, let us stay friends and not talk about religion, please.~
-== BAJANT ~ Sandrah, we cannot be friends if we continously avoid such a crucial issue between us, do you not think so?~
+== BAJANT ~ Sandrah, we cannot be friends if we continuously avoid such a crucial issue between us, do you not think so?~
 == BSANDR ~ (Sigh) I think you are right, even though we may never resolve our different views. Nevertheless you have my interest awakened.~
 == BAJANT ~ I will leave your dealing with Mystra aside as we both know well the family relations that lie behind that. Now what I have come to observe is rather, that your actions and opinions would suit a follower of Helm quite well. Actually I think you do more that would please the Vigilant One than many of his self-appointed followers.~
 == BSANDR ~ Ajantis, that is so absurd, that it starts to become really interesting. Please continue with your *analysis*.~
-== BAJANT ~ Maybe in a moment you will not think of it as so absurd any more. This is what I see, mylady, when I compare your actions to Helm's rules.~
+== BAJANT ~ Maybe in a moment you will not think of it as so absurd any more. This is what I see, milady, when I compare your actions to Helm's rules.~
 = ~ Helm says: *Never betray those who trust you.* You see, Sandrah, you fully comply with that.~
 = ~ *Be fair and diligent in the conduct of your orders.* You never fail to act this way.~
 = ~ *Protect the weak, poor, injured, and young; do not sacrifice them for others or for yourself.* Do I need to name the examples for your acting exactly this way. Would you not rather sacrifice yourself than to see anyone suffer for you?~
 = ~ *Demonstrate excellence and loyalty in your role as a guardian and protector.* If that is not what you do to <CHARNAME>, then I am the blindest fool on Toril.~
 == BSANDR ~ Now before I am accused of being a Helmite, please tell me where I fail, my paladin.~
 == BAJANT ~ (Laughs) Sandrah, is that not obvious? Helm requires his follower's strict obedience to his rules. (Laughs again) Despite all your virtues, Sandrah, two words are surely not existing in your dictionary, *obedience* and *rule*.~
-== BSANDR ~ So what is the result of this? Duty to one's cause does not require Helm or any other god at all. Do not let your vigilant one get notice of such blasphemic thoughts, I really fear for you, paladin.~
-== BAJANT IF~GlobalGT("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbendable character as you, Elminster's daughter. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
-== BAJANT IF~Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbendable character as you, Mystra's pride. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
+== BSANDR ~ So what is the result of this? Duty to one's cause does not require Helm or any other god at all. Do not let your vigilant one get notice of such blasphemous thoughts, I really fear for you, paladin.~
+== BAJANT IF~GlobalGT("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbend-able character as you, Elminster's daughter. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
+== BAJANT IF~Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN~(Ajantis shakes his head but seems to be far from angry) Sandrah, I knew you would find a way out of my trap for convincing you of your calling to Helm. (He becomes very stern for a moment.) Not everybody has such a strong and unbend-able character as you, Mystra's pride. There are many who need the help and supervision of Helm to act like you act out of your own strength.~
 EXIT
 
 CHAIN
@@ -3856,12 +3856,12 @@ DO~SetGlobal("SanImohelmKill","LOCALS",2)~
 
 CHAIN
 IF ~ Global("SanAjantWDEntry","LOCALS",1)~ THEN BSANDR AjanWDentry
-~ Does it make you nervous to enter our hometown so unexpectedly today, Ajantis?~
+~ Does it make you nervous to enter our home town so unexpectedly today, Ajantis?~
 DO ~ SetGlobal("SanAjantWDEntry","LOCALS",2)~
-== BAJANT ~ Nervous?...mmh,..no...yes. Oh, mylady, you read me like an open book, Sandrah!~
+== BAJANT ~ Nervous?...mmh,..no...yes. Oh, milady, you read me like an open book, Sandrah!~
 == BSANDR ~ Well, maybe nervous is not the right word, my paladin. I know how you like to return to Waterdeep - you do not want to be seen with me in public however.~
-== BAJANT ~ Oh, no, that is a bit harsh, Sandrah. Your presence is nothing to be hidden or to be ashamed of - really the opposite. I truely adore you. It is only...well...you are so spontanious and overhwelming sometimes.~
-== BSANDR ~ And you want me to behave and keep my feelings hidden while in our hometown?~
+== BAJANT ~ Oh, no, that is a bit harsh, Sandrah. Your presence is nothing to be hidden or to be ashamed of - really the opposite. I truly adore you. It is only...well...you are so spontaneous and overwhelming sometimes.~
+== BSANDR ~ And you want me to behave and keep my feelings hidden while in our home town?~
 == BAJANT ~ Please do not misunderstand me...it may be a bit early to let get people here get the wrong impression - about us...I thought you would understand, Sandrah.~
 == BSANDR ~ I understand very well, Ajantis. I will be the epitome of a lady while in Waterdeep, I swear it.~
 == BAJANT ~ I had not intended to hurt your feelings with my request.~
@@ -3937,14 +3937,14 @@ IF ~ Global("SanHelmDogmas","GLOBAL",13) ~ THEN BSANDR AjanAfKi
 ~ As you are trying to avoid me, Ajantis, it seems to be up to me to take up our thread. (Her smile would melt the Ice on the Spine of the World.)~
 DO ~ SetGlobal("SanHelmDogmas","GLOBAL",14)~
 == BAJANT ~ I have already broken so many principles and oaths I had made to myself because of you, Sandrah. It cannot get any more worse.~
-== BSANDR ~ Where is the galant paladin? I feel almost like I were an uncurable disease. If only I would not understand you so well...~
-== BAJANT ~ Forgive me, Sandrah, yes, the galant paladin is all in tatters. Uncurable indeed. But I see how selfish I am. I think only of my own dilemma and forget all about how you must feel.~
+== BSANDR ~ Where is the galant paladin? I feel almost like I were an incurable disease. If only I would not understand you so well...~
+== BAJANT ~ Forgive me, Sandrah, yes, the gallant paladin is all in tatters. Incurable indeed. But I see how selfish I am. I think only of my own dilemma and forget all about how you must feel.~
 == BSANDR ~(Sandrah has sat down close to the paladin. Her hand lies gently on his knee.) I am not feeling that bad, my poor sweetheart. Confused and unsure of how we will go from here, yes, but see, I am open to anything that might happen between us. It is more your peace of soul that is currently on my mind.~
 == BAJANT ~Always the gentle healer, Sandrah, but like you said, there may be no cure for this.~
 == BSANDR ~And maybe none is needed. You have already learned to open yourself to new possibilities that were unthinkable for you just two moons past. I am not expecting you to propose to me just because you have kissed me. As you know quite well, I am none of those Waterdeep girls you have known. Let us just learn and explore this together.~
 == BAJANT ~But there is responsibility, Sandrah, we cannot just...~
 == BSANDR ~Yes, we can! I am responsible for whatever happens just like you. I am not the little kitten that needs your protection.~
-== BAJANT ~ pursuader, sweet devilish pursuader...(He has already leaned over to her for a passionate kiss.)~ DO ~ StartCutSceneMode()
+== BAJANT ~ Persuader, sweet devilish persuader...(He has already leaned over to her for a passionate kiss.)~ DO ~ StartCutSceneMode()
                 SmallWait(4)
                 FadeToColor([20.0],0)
 		Wait(4)
@@ -3963,13 +3963,13 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",17)~
 == BSANDR ~ Can they be really dangers if they come from our hearts, Ajantis. Provided, of course that heart is not a black one - which I would exclude in our cases. ~
 == BAJANT ~ Do you mean to say that anything that our heart dictates cannot be dangerous?~
 == BSANDR ~ Disturbing maybe - sometimes foolish - light hearted, if we talk of me - but dangerous? I would deny that.~
-== BAJANT ~ I have followed your counsil, Sandrah, I have listened to my heart. I am not sure there is not some danger in what it tells me.~
+== BAJANT ~ I have followed your counsel, Sandrah, I have listened to my heart. I am not sure there is not some danger in what it tells me.~
 == BSANDR ~ Still talking of danger, not of risk, darling?~
 == BAJANT ~ Tell me truely, Sandrah, do you love <CHARNAME>?~
 == BSANDR ~ Yes, I do.~
 == BAJANT ~ But - but you stand here with me, holding my hand, wearing nothing but this teasing, eh, nothing, and encourage me in any way to think you love - me.~
 == BSANDR ~ Yes, I do.~
-= ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my galant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
+= ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my gallant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
 == BAJANT ~ (He follows Sandrah to the starlit groove where they embrace each other long and passionately. You can hear them murmur between their kisses for a long time. But you still hear her words resounding in your ears - she loves you.)~ DO~RestParty()~
 EXIT
 
@@ -3981,7 +3981,7 @@ DO ~ SetGlobal("SanAjanProp1","GLOBAL",2)RealSetGlobalTimer("SanAjanPropDel","GL
 == BSANDR ~ I cannot deny that those are my feelings for both of you. Nevertheless you know about my own attitude to such a step in general.~
 == BAJANT ~ I am not sure I fully understand your motives though. I have learned enough about you to know that you do not lack responsibility.~
 == BSANDR ~ Responsibility? Is that the primary issue here. Ajantis, she is young, even a bit younger than I am. We are still learning to deal with our feelings, with our heart. Is it so irresponsible of us to make some experience in love first before our mind and brain follow us? Do you really need an answer that binds for the rest of all our lives right now?~
-== BAJANT ~ You were right, Sandrah. You cannot really be a concellor on this issue, as deep as you are in the matter yourself. Still you help me a lot with your words, as they provide me with the arguments for and against my step.~
+== BAJANT ~ You were right, Sandrah. You cannot really be a counsellor on this issue, as deep as you are in the matter yourself. Still you help me a lot with your words, as they provide me with the arguments for and against my step.~
 == BSANDR ~ And your family? You really need their consent before you can make up your own mind?~
 == BAJANT ~ You are right, I do not need it really. But I would still feel much happier with it than without. In the end it will be my decision alone - and hers of course.~
 == BSANDR ~ (Smiles at the paladin.) I am glad you say that, you have advanced indeed, Ajantis, emancipated yourself in a way.~
@@ -4006,12 +4006,12 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",17)~
 == BSANDR ~ Can they be really dangers if they come from our hearts, Ajantis. Provided, of course that heart is not a black one - which I would exclude in our cases. ~
 == BAJANT ~ Do you mean to say that anything that our heart dictates cannot be dangerous?~
 == BSANDR ~ Disturbing maybe - sometimes foolish - light hearted, if we talk of me - but dangerous? I would deny that.~
-== BAJANT ~ I have followed your counsil, Sandrah, I have listened to my heart. I am not sure there is not some danger in what it tells me.~
+== BAJANT ~ I have followed your counsel, Sandrah, I have listened to my heart. I am not sure there is not some danger in what it tells me.~
 == BSANDR ~ Still talking of danger, not of risk, darling?~
 == BAJANT ~ Tell me truely, Sandrah, do you love <CHARNAME>?~
 == BSANDR ~ Yes, I do.~
-== BAJANT ~ Then we have one thing in common, mylady.~
-== BSANDR ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my galant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
+== BAJANT ~ Then we have one thing in common, milady.~
+== BSANDR ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my gallant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
 == BAJANT ~ Have you really understood me, Sandrah, I love <CHARNAME>.~
 == BSANDR ~ And so do I. And if you still doubt it, I love you, Ajantis.~
 == BAJANT ~ (He follows Sandrah to the starlit groove where they embrace each other long and passionately. You can hear them murmur between their kisses for a long time. But you still hear their words resounding in your ears - they both love you.)~ DO~RestParty()~
@@ -4033,8 +4033,8 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",17)~
 == BSANDR ~ Still talking of danger, not of risk, darling?~
 == BAJANT ~ Tell me truely, Sandrah, do you love <CHARNAME>?~
 == BSANDR ~ Yes, I do.~
-== BAJANT ~ Then we have one thing in common, mylady. Although you are granted with the priviledge of her accepting it.~
-== BSANDR ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my galant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
+== BAJANT ~ Then we have one thing in common, milady. Although you are granted with the privilege of her accepting it.~
+== BSANDR ~ You see, you took the risk and you have won. The danger is gone. The night is getting a bit chilly, my gallant paladin, I need your embrace to keep me warm now. (She slings her arms around Ajantis and hugs him tightly.)~
 == BAJANT ~ Sandrah, I love you. And it is not because <CHARNAME> rejected me and I am in need of a substitute.~
 == BSANDR ~ I fully understand you. And if you still doubt it, I love you, Ajantis.~
 == BAJANT ~ (He follows Sandrah to the starlit groove where they embrace each other long and passionately. You can hear them murmur between their kisses for a long time. But you still hear their words resounding in your ears - they both love you.)~ DO~RestParty()~
@@ -4084,7 +4084,7 @@ EXIT
 
 CHAIN
 IF ~ Global("SanHelmDogmas","GLOBAL",24)~ THEN BSANDR Ajboth1
-~ (Ajantis and Sandrah have laid down in the dry grass side by side. Sandrah rumages her backpack and starts to arrange a variety of small delicious snacks on a napkin between them.)~
+~ (Ajantis and Sandrah have laid down in the dry grass side by side. Sandrah rummages her backpack and starts to arrange a variety of small delicious snacks on a napkin between them.)~
 = ~ <CHARNAME>, come here, love, join us for those little bits I have secretly acquainted in the last town.~
 DO ~ SetGlobal("SanHelmDogmas","GLOBAL",25)~
 == BAJANT ~ Oh, yes, our little picnic would not be nice without you, my beloved. (He moves aside to make an inviting space for you between them)~
@@ -4115,15 +4115,15 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",27)~
 == BAJANT ~ I could stand here all night to watch the dance of you two wonderful creatures, Sandrah.~
 == BSANDR ~ You could either join us, my sweetheart, or you could propose some other recreational occupation for us. (Her body language leaves no doubt as to what she is thinking about.)~
 == BAJANT ~ I will not deny you any of the pleasures that I share with <CHARNAME>, except for sharing my name with you.~
-== BSANDR ~ I do not mean to insult the name of your family, Ajantis, still I am only interested in the man behind that name. (With an elegant movement that indicates the end of her play with Pelligram, Sandrah lands in Ajantis' arms. The nearly transparent blouse she wears when not in armour has slipped halfways from her body.)~
+== BSANDR ~ I do not mean to insult the name of your family, Ajantis, still I am only interested in the man behind that name. (With an elegant movement that indicates the end of her play with Pelligram, Sandrah lands in Ajantis' arms. The nearly transparent blouse she wears when not in armour has slipped halfway from her body.)~
 == BAJANT ~ (Ajantis lips glide down from her mouth to her bare shoulder and further down to her breast...)~
 END
-++ ~ (You turn back to the campfire and your bedroll, awaiting the return of your two lovers.)~ + AjPellDanc1
+++ ~ (You turn back to the camp-fire and your bedroll, awaiting the return of your two lovers.)~ + AjPellDanc1
 
 CHAIN
 IF ~ ~ THEN BSANDR AjPellDanc1
 ~ (You have almost dozed off into happy dreams when you feel Sandrah's silken skin against your naked backside as she glides into your bedroll.) Thank you for everything, my love.~
-== BAJANT ~ (A moment later you feel a strong calloused hand glide gently between your thights from the front to caress you.) Good night, my beautiful bethroted.~ DO ~ RestParty()~ EXIT
+== BAJANT ~ (A moment later you feel a strong calloused hand glide gently between your thighs from the front to caress you.) Good night, my beautiful bethroted.~ DO ~ RestParty()~ EXIT
 
 
 CHAIN
@@ -4142,13 +4142,13 @@ DO ~ SetGlobal("SanAjanGifts","GLOBAL",2) RealSetGlobalTimer("SanAjGifts","GLOBA
 
 CHAIN
 IF ~ Global("SanAjanGifts","GLOBAL",3)~ THEN BSANDR AjbothR
-~ (Ajantis and Sandrah have laid down in the dry grass side by side. Sandrah rumages her backpack and starts to arrange a variety of small delicious snacks on a napkin between them.)~
+~ (Ajantis and Sandrah have laid down in the dry grass side by side. Sandrah rummages her backpack and starts to arrange a variety of small delicious snacks on a napkin between them.)~
 = ~ <CHARNAME>, come here, love, join us for those little bits I have secretly acquainted in the last town.~
 DO ~ SetGlobal("SanHelmDogmas","GLOBAL",25)SetGlobal("SanAjanGifts","GLOBAL",4) RealsetGlobalTimer("SanAjGifts","GLOBAL",1800)~
 == BAJANT ~ Oh, yes, our little picnic would not be nice without you, <CHARNAME>. (He moves aside to make an inviting space for you between them)~
 END
 ++ ~ What a surprise, Sandrah, these things look delicious. (You make yourself comfortable in their midst and administer a kiss on the cheek to the left and the right before taking a piece of a spiced sausage.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~+ Ajboth2R
-++ ~ Oh, you lovebirds, I'm afraid you must do without me. The tasks of a leader hold me up. (You look into two puzzled and disappointed faces.)~ +  Ajboth3R
+++ ~ Oh, you love-birds, I'm afraid you must do without me. The tasks of a leader hold me up. (You look into two puzzled and disappointed faces.)~ +  Ajboth3R
 
 CHAIN
 IF~~ THEN BSANDR Ajboth2R
@@ -4176,7 +4176,7 @@ DO ~ SetGlobal("SanHelmDogmas","GLOBAL",27)SetGlobal("SanAjanGifts","GLOBAL",6) 
 == BSANDR ~ I do not mean to insult the name of your family, Ajantis, still I am only interested in the man behind that name. (With an elegant movement that indicates the end of her play with Pelligram, Sandrah lands in Ajantis' arms. The nearly transparent blouse she wears when not in armour has slipped halfways from her body.)~
 == BAJANT ~ (Ajantis lips glide down from her mouth to her bare shoulder and further down to her breast...)~
 END
-++ ~ (You turn back to the campfire and your bedroll, awaiting the return of your happy lover.)~ + AjPellDanc1A
+++ ~ (You turn back to the camp-fire and your bedroll, awaiting the return of your happy lover.)~ + AjPellDanc1A
 
 CHAIN
 IF ~ ~ THEN BSANDR AjPellDanc1A
