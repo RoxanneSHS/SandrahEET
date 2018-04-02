@@ -5298,10 +5298,10 @@ IF ~ Global("SanBranSearch","GLOBAL",4) Global("SanBranJoined","GLOBAL",1) ~ THE
 ~ I am so glad we were able to free you, I was so desperate when I learned first about your fate.~
 DO ~ SetGlobal("SanBranJoined","GLOBAL",2)~
 ==BBRANW ~ You knew about my fate? Did you urge <CHARNAME> to come to my rescue then?~
-== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzik was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
+== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzig was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
 ==BBRANW ~ Strange, priestess, the same magic that caused my terrible fate also in a way triggered my rescue. By Tempus, I do not know what to make out of your goddess Mystra now?~
 == BSANDR ~ Mystra grants her powers to many but some do not use them in the way they should. The goddess and her priests are there to correct things that have gone astray.~
-==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzik and all that are on his side!~
+==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzig and all that are on his side!~
 EXIT
 
 
@@ -5310,14 +5310,14 @@ IF ~ Global("SanBranSearch","GLOBAL",3) Global("SanBranJoined","GLOBAL",1)Global
 ~ I am so glad we were able to free you, I was so desperate when I learned first about your fate.~
 DO ~ SetGlobal("SanBranJoined","GLOBAL",2) SetGlobal("SanPidPack","GLOBAL",36)~
 ==BBRANW ~ You knew about my fate? Did you urge <CHARNAME> to come to my rescue then?~
-== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzik was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
+== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzig was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
 ==BBRANW ~ Strange, priestess, the same magic that caused my terrible fate also in a way triggered my rescue. By Tempus, I do not know what to make out of your goddess Mystra now?~
 == BSANDR ~ Mystra grants her powers to many but some do not use them in the way they should. The goddess and her priests are there to correct things that have gone astray.~
-==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzik and all that are on his side!~
+==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzig and all that are on his side!~
 == BSANDR ~ So be it. But there is something else on my mind, now that you are with us. ~
 ==BBRANW ~ Speak up, Sandrah, for all you have done, I see you as my friend.~
 == BSANDR ~ <CHARNAME> and I have not gone along so well lately. She has rather rudely rebuked my feelings for her. I stayed with her to accomplish this task, but now you are freed, I think she has another cleric and fighter by her side and I am no longer needed. Please take care of her for me, will you.~
-==BBRANW ~ Feelings for her? But you are both...nevermind.~
+==BBRANW ~ Feelings for her? But you are both...never mind.~
 = ~ Hold on, Sandrah, today my new life has started and new hope is reborn. I dearly wish that can be the same for you. Stay with us and give <CHARNAME> another chance.~
 == BSANDR ~ Thank you for your friendly advice, Branwen. I can only hope she will try to talk to me soon.~
 EXIT
@@ -5327,10 +5327,10 @@ IF ~ Global("SanBranSearch","GLOBAL",3) Global("SanBranJoined","GLOBAL",1)Global
 ~ I am so glad we were able to free you, I was so desperate when I learned first about your fate.~
 DO ~ SetGlobal("SanBranJoined","GLOBAL",2) SetGlobal("SanPidPack","GLOBAL",36) RealSetGlobalTimer("SanBranReplTime","GLOBAL",ONE_DAY)~
 ==BBRANW ~ You knew about my fate? Did you urge <CHARNAME> to come to my rescue then?~
-== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzik was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
+== BSANDR ~ My father has a magic device, Mystra's Shard, that sometimes shows events to him. Your imprisonment by this Tranzig was shown by the Shard. It made me feel responsible to do something about it, because it was a bad deed and I was probably one of the few who knew about it.~
 ==BBRANW ~ Strange, priestess, the same magic that caused my terrible fate also in a way triggered my rescue. By Tempus, I do not know what to make out of your goddess Mystra now?~
 == BSANDR ~ Mystra grants her powers to many but some do not use them in the way they should. The goddess and her priests are there to correct things that have gone astray.~
-==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzik and all that are on his side!~
+==BBRANW ~ If so, then onwards in Tempus' name and in Mystra's name! Let us crush Tranzig and all that are on his side!~
 == BSANDR ~ So be it. But there is something else on my mind, now that you are with us. ~
 ==BBRANW ~ Speak up, Sandrah, for all you have done, I see you as my friend.~
 == BSANDR ~ <CHARNAME> and I have not gone along so well lately. He has rather rudely rebuked my feelings for him. I stayed with him to accomplish this task, but now you are freed, I think he has another cleric and fighter by his side and I am no longer needed. Please take care of him for me, will you.~
@@ -5343,7 +5343,7 @@ IF ~ Global("SanBranTRInv","LOCALS",1)~ THEN BSANDR SanBranTRInvq
 ~ Branwen, may I ask you about your recent past and this mage Tranzig?~
 DO ~ SetGlobal("SanBranTRInv","LOCALS",2)~
 ==BBRANW ~ Hm. Thou did much for me, Sandrah, so I feel obliged to answer thee, although I am a bit ashamed of my errors connected with him.~
-== BSANDR ~ We all make mistakes, do not worry too much about that. It was neither my intention to critisize nor to open freshly healed wounds again. But your knowledge may be useful for our party at the moment.~
+== BSANDR ~ We all make mistakes, do not worry too much about that. It was neither my intention to criticize nor to open freshly healed wounds again. But your knowledge may be useful for our party at the moment.~
 = ~ Did your acquaintance with Tranzig and his men maybe give you an insight into what lies currently ahead of us?~
 ==BBRANW ~ Thou are right, Sandrah, I should forget my dented pride for the moment and contribute to our success with the information I have, even if it is only little.~
 = ~ It seems that Tranzig is part of an organisation responsible for the bandit raids as well as for the problems with the mines. A half-orc runs the operations underground with the help of a large army of kobolds that for some reason take him for a godlike leader. So this is what we will face probably when we go down there. This is already all the knowledge I have about this issue.~
@@ -5379,9 +5379,9 @@ DO ~ SetGlobal("SanBranFrT","GLOBAL",4)~
 ==BBRANW ~ 'tis indeed that I think of Norheim more often these days. I'm afraid it softens me and I prayed to Tempus for strength.~
 ==BSANDR ~ He has heard your plea as you are strong as ever, Branwen. Thinking of home and what is dear to your heart is not a weakness. It is good when a fighter knows what she is fighting for. ~
 =~ (Sandrah has moved closer to Branwen with a small bottle that she now carefully unscrews.) Smell it.~
-==BBRANW ~ (Branwen has closed her eyes and takes a deep breath of the scent that seems to be contained in the flacon.) Magic, aah. A cool spring morning in my parent's house by the sea. Fresh air blows into my open window from the waterfront. Seagulls are in a fight over a crab in the air above. The constant deep vibration of one wave after another rolling in with the flood. ~
+==BBRANW ~ (Branwen has closed her eyes and takes a deep breath of the scent that seems to be contained in the flagon.) Magic, aah. A cool spring morning in my parent's house by the sea. Fresh air blows into my open window from the waterfront. Seagulls are in a fight over a crab in the air above. The constant deep vibration of one wave after another rolling in with the flood. ~
 =~(Branwen's eyes are closed and her arms are open as if to engulf the the scenery she sees.) Sandrah, the whole landscape you have captured in the scent from this little bottle. You are a true mage.~
-==BSANDR ~ You really like it? That makes me happy. I tried to preserve some of your very own nature in this essence. But it is not a magic, Branwen, it is just artisanry. A precise mixture of natural ingrediences that creates this kind of image by the nose rather than by the eye.~
+==BSANDR ~ You really like it? That makes me happy. I tried to preserve some of your very own nature in this essence. But it is not a magic, Branwen, it is just artisanry. A precise mixture of natural ingredients that creates this kind of image by the nose rather than by the eye.~
 ==BBRANW ~ Thou knowest much about people's minds and how to cure the soul. Thou are maybe a better healer than me - I heal only the battle scars. Thank you, my friend. This morning has done me good. I am ready to crush some villain's heads again.~
 ==BSANDR ~ (Takes Branwen's hand as they stroll out of your sight.) Lead on, I count on you if healing is required afterwards.~
 EXIT
