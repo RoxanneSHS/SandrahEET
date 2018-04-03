@@ -7,7 +7,7 @@ IF~~ THEN REPLY ~ Wow, my passionate companion, you seem to be in quite some moo
 END
 
 IF~~ THEN BEGIN SanAnmNig2
-SAY ~ (You have no chance to elaborate further on the subject as her hungry mouth has already taken possesion of your lips and her intruding tongue licks up your words before they have a chance to come from your mouth.)~
+SAY ~ (You have no chance to elaborate further on the subject as her hungry mouth has already taken possession of your lips and her intruding tongue licks up your words before they have a chance to come from your mouth.)~
 IF~~ THEN DO ~
 ClearAllActions()
 SetInterrupt(FALSE)
@@ -22,7 +22,7 @@ IF~Global("SanJonDream","LOCALS",1)~ THEN BEGIN Sanjondreams1
 SAY ~ The dreams begin again, my love, like you had them on the Sword Coast when Sarevok and your *father* tried to talk to your soul. What is it this time?~
 IF~~THEN REPLY ~ Those are just dreams, they had not changed me then and they will not change me now.~ GOTO Sanjondreams2
 IF~~THEN REPLY ~ (Tell Sandrah about the dreams and Jon's role in them.)~ GOTO Sanjondreams2
-IF~~THEN REPLY ~ Maybe you can help me, counselor. Those dreams on the Sword Coast had their meaning - two powers fighting inside of me. The dreams now -  a power still dormant within me that this Jon tries to awaken?~ GOTO Sanjondreams2
+IF~~THEN REPLY ~ Maybe you can help me, counsellor. Those dreams on the Sword Coast had their meaning - two powers fighting inside of me. The dreams now -  a power still dormant within me that this Jon tries to awaken?~ GOTO Sanjondreams2
 END
 
 IF~~ THEN BEGIN Sanjondreams2
@@ -56,7 +56,7 @@ END
 
 IF~~ THEN BEGIN Sanjondreams7
 SAY ~ The elves and their secrecy that they never lift to anyone not their kind. But without a glimpse inside I am stuck.~
-IF~~THEN REPLY ~ Stuck in what matter, dear counselor?~ DO~ SetGlobal("SanJonDream","LOCALS",4)~  GOTO Sanjondreams8
+IF~~THEN REPLY ~ Stuck in what matter, dear counsellor?~ DO~ SetGlobal("SanJonDream","LOCALS",4)~  GOTO Sanjondreams8
 END
 
 IF~~ THEN BEGIN Sanjondreams8
@@ -119,7 +119,7 @@ IF~~THEN REPLY~ I still have the feeling we stopped something really evil down h
 END
 
 IF~~ THEN BEGIN Sanillthid4
-SAY~ I agree. The fact that we found the key to this installation with Firkraag should be sufficent evidence for that. It is hard to imagine the red dragon's involvement in anything that would not be utmost evil.~
+SAY~ I agree. The fact that we found the key to this installation with Firkraag should be sufficient evidence for that. It is hard to imagine the red dragon's involvement in anything that would not be utmost evil.~
 IF~~THEN EXIT
 END
 
@@ -138,13 +138,13 @@ END
 
 IF ~~ THEN BEGIN SanSharAmJail2
 SAY ~ Oh, please, <CHARNAME>, do not blame her for anything without knowing the facts. I believe in her sense of responsibility and she would not take a risk on herself and your unborn child without the best of reasons. We should investigate the matter of her coming to Amn right away.~
-IF~~THEN REPLY ~ Oh, counselor, of course you are right. I was just so shocked, expecting her to be safely at Waterdeep. And now this. Let us find out about her reasons to be here and of course let us help her in whatever is her task here.~ EXIT
+IF~~THEN REPLY ~ Oh, counsellor, of course you are right. I was just so shocked, expecting her to be safely at Waterdeep. And now this. Let us find out about her reasons to be here and of course let us help her in whatever is her task here.~ EXIT
 IF~~THEN REPLY ~ I was a fool to trust her! I was a fool to listen to you as well! She will never change. Would she not carry our child inside her I would let her rot in that jail - damn it.~DO~IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
 END
 
 IF ~~ THEN BEGIN SanSharAmJail3
 SAY ~ Oh, please, <CHARNAME>, do not blame her for anything without knowing the facts. I believe in her sense of responsibility and she would not take a risk on herself and leave your child without the best of reasons. We should investigate the matter of her coming to Amn right away.~
-IF~~THEN REPLY ~ Oh, counselor, of course you are right. I was just so shocked, expecting her to be safely at Waterdeep. And now this. Let us find out about her reasons to be here and of course let us help her in whatever is her task here.~ EXIT
+IF~~THEN REPLY ~ Oh, counsellor, of course you are right. I was just so shocked, expecting her to be safely at Waterdeep. And now this. Let us find out about her reasons to be here and of course let us help her in whatever is her task here.~ EXIT
 IF~~THEN REPLY ~ I was a fool to trust her! I was a fool to listen to you as well! She will never change. Would she not be the mother of our child I would let her rot in that jail - damn it.~DO~IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
 END
 
@@ -154,12 +154,12 @@ IF~~THEN REPLY~ How she has changed - and still she has somehow remained the sam
 END
 
 IF ~ Global("sharplot","GLOBAL",10)~ THEN BEGIN SanSharAmJail15
-SAY ~ It was good to see our wildcat again and being well. Even if the reason for it was not a pleasant one. We can travel to Waterdeep anytime if you want to reumite the happy family for a few days.~
+SAY ~ It was good to see our wildcat again and being well. Even if the reason for it was not a pleasant one. We can travel to Waterdeep any time if you want to reunite the happy family for a few days.~
 IF~~THEN REPLY~ How she has changed - and still she has somehow remained the same. She is a woman of honour and principles and she has become a careful mother. I feel a bit of ashamed as I was first angry of seeing her here in town instead of being in Waterdeep.~ DO~ SetGlobal("sharplot","GLOBAL",11)~ GOTO SanSharAmJail6
 END
 
 IF ~~ THEN BEGIN SanSharAmJail6
-SAY ~ Do not be too hard on yourself, <CHARNAME>, it was a bit of a shock to meet her here in town, especially in jail. But it has all turned out to be based on a good reason. Even if you already miss her again by now, do not forget there is someone to comfort you anytime...~
+SAY ~ Do not be too hard on yourself, <CHARNAME>, it was a bit of a shock to meet her here in town, especially in jail. But it has all turned out to be based on a good reason. Even if you already miss her again by now, do not forget there is someone to comfort you any time...~
 IF ~~ THEN REPLY~ Oh, how could I ever forget that, Sandrah. (You kiss her willingly offered mouth tenderly.)~ EXIT
 END
 
@@ -168,12 +168,12 @@ IF~Global("SanJahMiss","LOCALS",1)~THEN BEGIN SanJahGoAft1
 SAY~ We are not going to let our beloved Druid alone in this situation, right <CHARNAME>?~
 IF ~~ THEN REPLY~ You mean Jaheira? ~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~ GOTO SanJahGoAft2
 IF ~~ THEN REPLY~ We are already on our way to the Harper's compound, my love. I can read her words as clearly as they are *not* written in her letter.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanJahGoAft3
-IF ~~ THEN REPLY~ Jaheira clearly says that I am not to follow her. Is my counselor telling me otherwise?~ GOTO SanJahGoAft4
+IF ~~ THEN REPLY~ Jaheira clearly says that I am not to follow her. Is my counsellor telling me otherwise?~ GOTO SanJahGoAft4
 END
 
 IF~~ THEN BEGIN SanJahGoAft2
 SAY~ Oh, I forgot that you have a harem of those wonderful creatures at your disposal and do not really recognise that one is missing.~
-IF ~~ THEN REPLY~ Jaheira clearly says that I am not to follow her. Is my counselor telling me otherwise?~ GOTO SanJahGoAft5
+IF ~~ THEN REPLY~ Jaheira clearly says that I am not to follow her. Is my counsellor telling me otherwise?~ GOTO SanJahGoAft5
 END
 
 IF~~ THEN BEGIN SanJahGoAft3
@@ -182,12 +182,12 @@ IF ~~ THEN REPLY~ Whatever those false Harpers still want from her, they will fa
 END
 
 IF~~ THEN BEGIN SanJahGoAft4
-SAY~ Your counselor only emphasises what your heart is already pounding to your ears, <CHARNAME>. If you feel anything for her, your place is at her side NOW.~
+SAY~ Your counsellor only emphasises what your heart is already pounding to your ears, <CHARNAME>. If you feel anything for her, your place is at her side NOW.~
 IF ~~ THEN REPLY~ We are already on our way to the Harper's compound, my love. I can read her words now as clearly as they are *not* written in her letter.~ DO~SetGlobal("SanJahMiss","LOCALS",2)~ EXIT
 END
 
 IF~~ THEN BEGIN SanJahGoAft5
-SAY~ She really has deserved a better man than you are. But we women are sometimes blind with our choices it seems. Your counselor only emphasises what your heart should be pounding to your ears already, <CHARNAME>. If you feel anything for her, your place is at her side NOW.~
+SAY~ She really has deserved a better man than you are. But we women are sometimes blind with our choices it seems. Your counsellor only emphasises what your heart should be pounding to your ears already, <CHARNAME>. If you feel anything for her, your place is at her side NOW.~
 IF ~~ THEN REPLY~ We are already on our way to the Harper's compound, my love. I can read her words now as clearly as they are *not* written in her letter.~ DO~SetGlobal("SanJahMiss","LOCALS",2)~ EXIT
 END
 
@@ -200,7 +200,7 @@ END
 
 IF ~~ THEN BEGIN SanProudPCdeci2
 SAY ~Yes, you have become an excellent leader, knowing many ways to solve a problem, not just by rashness or sword.~
-IF~~THEN REPLY~I think I owe much to my teachers and counselors, Sandrah, people like Gorion...and Jaheira and Khalid.~ DO ~ SetGlobal("SanPCInfluen","LOCALS",2) ~GOTO SanProudPCdeci3
+IF~~THEN REPLY~I think I owe much to my teachers and counsellors, Sandrah, people like Gorion...and Jaheira and Khalid.~ DO ~ SetGlobal("SanPCInfluen","LOCALS",2) ~GOTO SanProudPCdeci3
 END
 
 IF ~~ THEN BEGIN SanProudPCdeci3
@@ -263,14 +263,14 @@ IF~~THEN REPLY~ You are right, a lot of things have changed for us in a relative
 END
 
 IF~~THEN BEGIN Darnicasown4
-SAY~ You have grown much, my love, and you have quickly learned to make decisions that impact a lot of people. You have grown to one who can handle the burdon of responsibility. I still remember your words about how a good ruler would act with and for his people, the land and all of Faerun.~
+SAY~ You have grown much, my love, and you have quickly learned to make decisions that impact a lot of people. You have grown to one who can handle the burden of responsibility. I still remember your words about how a good ruler would act with and for his people, the land and all of Faerun.~
 IF~~THEN REPLY~ You see me as such, Sandrah? You *want* me as such? ~GOTO Darnicasown5
 IF~~THEN REPLY~ I have a clearer understanding now of what that really means. It is still not something I really strive for.~ GOTO Darnicasown5
 END
 
 IF~~THEN BEGIN Darnicasown5
 SAY~It is not that I want you to become ruler of some land and people, I really want you as what you are - and what you will become together with me. It is only - it makes me both proud and confident to see how you could use your potential should the necessity arise.~
-IF~~THEN REPLY~ (You kiss her) I would know where to look for an advisor and counselor should it really happen.~EXIT
+IF~~THEN REPLY~ (You kiss her) I would know where to look for an advisor and counsellor should it really happen.~EXIT
 END
 
 //Necromancers
@@ -283,7 +283,7 @@ IF~~THEN BEGIN SanNecrohate2
 SAY ~ One example, you are right, my love, but not what bothers me today. Those I refer to are already dead. ~
 =~ Mystra as a goddess is responsible for all the magic skills and schools that we know - except for one - Necromancy.~
 IF~~THEN REPLY ~ She is the goddess of all magic arts - are you saying that Necromancy does not belong among them?~ GOTO SanNecrohate3
-IF~~THEN REPLY ~ I have a vague rememberance about that from my Candlekeep teachings, but I must confess that it is better to consult an expert on that - like a priestess of Mystra herself.~ GOTO SanNecrohate3
+IF~~THEN REPLY ~ I have a vague remembrance about that from my Candlekeep teachings, but I must confess that it is better to consult an expert on that - like a priestess of Mystra herself.~ GOTO SanNecrohate3
 END
 
 IF~~THEN BEGIN SanNecrohate3
@@ -295,7 +295,7 @@ END
 
 IF~~THEN BEGIN SanNecrohate4
 SAY ~ I would not accept the idea of Necromancy being one of the magical arts under the guard of my Goddess. It is a sacrilege and a blasphemy trying to break the boundaries of our existence on the material plane and gaining prolongation to a life in a way that is not part of our nature. You see the failed results of those who fumble with it - the liches and rotting undead, the vampires and worse.~
-IF~~THEN REPLY ~ But you yourself have ressurected our fallen comrades many time from the dead, Sandrah.~ DO ~ SetGlobal("SanNecroHa","LOCALS",3)~GOTO SanNecrohate5
+IF~~THEN REPLY ~ But you yourself have resurrected our fallen comrades many time from the dead, Sandrah.~ DO ~ SetGlobal("SanNecroHa","LOCALS",3)~GOTO SanNecrohate5
 END
 
 IF~~THEN BEGIN SanNecrohate5
@@ -318,7 +318,7 @@ END
 
 IF~~THEN BEGIN SanNecrohate8
 SAY ~ You will see in a minute, my love. One of those eastern groups concentrating on the studies of abnormal acts to gain eternal life were the red wizards from Halruaa. I think you know your lore well enough from there, as they were involved in the founding of Thay.~
-IF~~THEN REPLY ~ I see, your old archenemies, the red wizards appear out of that dark mist of history now. Another good reason for your hate on that group. You gave me a lot of food for thought. Let us continue another time, Sandrah.~ EXIT
+IF~~THEN REPLY ~ I see, your old arch enemies, the red wizards appear out of that dark mist of history now. Another good reason for your hate on that group. You gave me a lot of food for thought. Let us continue another time, Sandrah.~ EXIT
 END
 
 //  The archive
@@ -330,9 +330,9 @@ END
 
 // Abyss
 IF~Global("SanhellComm","ar2900",1)~THEN BEGIN SanKeepCool1
-SAY~ (While everybody including yourself slowly fights down the internal turmoil your flight to the Abyss has caused your counselor seems to have started the exploration of the area already.)~
-IF~~THEN REPLY~ Counselor?~ GOTO SanKeepCool2
-IF~~THEN REPLY~ There is not much anymore that can threaten you, Sandrah, not even death or hell, it seems.~ GOTO SanKeepCool2
+SAY~ (While everybody including yourself slowly fights down the internal turmoil your flight to the Abyss has caused your counsellor seems to have started the exploration of the area already.)~
+IF~~THEN REPLY~ counsellor?~ GOTO SanKeepCool2
+IF~~THEN REPLY~ There is not much any more that can threaten you, Sandrah, not even death or hell, it seems.~ GOTO SanKeepCool2
 END
 
 IF~~ THEN BEGIN SanKeepCool2
@@ -391,7 +391,7 @@ IF~~THEN REPLY~You said your path would be mine. It looks like you are making no
 END
 
 IF ~~THEN BEGIN SoulBack7
-SAY~ Empty words, <CHARNAME>, you have done nothing to justify them. You have finished your quest but mine lies unresolved. From the way you have treated me all the time I cannot expect any help from you with it anymore.~
+SAY~ Empty words, <CHARNAME>, you have done nothing to justify them. You have finished your quest but mine lies unresolved. From the way you have treated me all the time I cannot expect any help from you with it any more.~
 IF~~THEN REPLY~Sandrah, my love - if I made mistakes in the past we will correct them - together.~ GOTO SoulBack10
 IF~~THEN REPLY~ You said your path would be mine. It looks like you are making now too much extra demands. I say nay, go if you must.~GOTO SoulBack9
 END
@@ -405,7 +405,7 @@ END
 
 IF ~~THEN BEGIN SoulBack9
 SAY~ I had never expected this to be possible...~
-=~Well, I have done my part and I am cast aside. I have no idea where you will go from here. Only fate can reunite us again. I wish you all the best. (She turns away apruptly.)~
+=~Well, I have done my part and I am cast aside. I have no idea where you will go from here. Only fate can reunite us again. I wish you all the best. (She turns away abruptly.)~
 IF~~THEN REPLY~ But...~ DO ~SetGlobal("SandrahJoined","GLOBAL",0) ActionOverride("CVSandr",MoveBetweenAreas("CVRtf1",[803.624],2)) ~ EXIT
 END
 
@@ -475,13 +475,13 @@ SAY~ Cyric fell in love with Midnight during their adventures. As her heart belo
 =~Afterwards he played the caring and soothing companion to help Midnight in her grief and by that won her heart.~
 =~ Mask as Godsbane hid Kelemvor's soul from Cyric and when the adventurers finally succeeded in their final mission, Ao judged it fair to elevate Kelemvor to godhood and give him the Realm of the Dead. Only then and after she had given birth to their son, Mystra found out the truth about the death of her former lover.~
 IF~~THEN REPLY~And she never forgave Cyric, who had become the Mad God by that time anyway.~EXIT
-IF~~THEN REPLY~Thus the two became archenemies among the gods and we have to suffer the consequences.~EXIT
+IF~~THEN REPLY~Thus the two became arch enemies among the gods and we have to suffer the consequences.~EXIT
 END
 
 //Growing Powers
 IF~Global("SanFinCult","LOCALS",2)~THEN BEGIN SanGrowPo1
 SAY~We have done well to destroy that wicked beast cult thoroughly, <CHARNAME>.~
-IF~~THEN REPLY~ I am glad I had your advice, counselor, to chose the right moment for the strike.~ GOTO SanGrowPo2
+IF~~THEN REPLY~ I am glad I had your advice, counsellor, to chose the right moment for the strike.~ GOTO SanGrowPo2
 IF~~THEN REPLY~ The deed itself was good - anyhow...I'm still puzzled by the immense power you revealed against the cult's highest.~ GOTO SanGrowPo3
 IF~~THEN REPLY~ Can you explain to me your growing powers, my darling? And then - you were mistaken for Mystra herself...and not for the first time, as I recall.~GOTO SanGrowPo3
 END
@@ -498,7 +498,7 @@ END
 
 IF~~THEN BEGIN SanGrowPo4
 SAY~(Looks troubled for a moment.) <CHARNAME>...~
-=~It is my deepest believe that you will be the one tasked to defeat the last Bhaalspawn that threaten's Faerun with the return of the God of Murder.~
+=~It is my deepest believe that you will be the one tasked to defeat the last Bhaalspawn that threatens Faerun with the return of the God of Murder.~
 =~It will require our joint efforts to defeat him or her and end what the Times of Trouble have not ended. It is for no other purpose that my goddess provides this strength to me.~
 IF~~THEN REPLY~It is good to be reassured of your loyalty, Sandrah.~EXIT
 IF~~THEN REPLY~(Mumble) *Those powers are always ready to strike the other way, should she  loose her faith in me...*~EXIT
@@ -508,9 +508,9 @@ END
 //Nib Jansen Hints
 
 IF ~ Global("KnowStorm","GLOBAL",3)~ THEN BEGIN NibHint1
-SAY ~ <CHARNAME>, when I was scouting through the city in search of any hints as to where you and our friends may have been taken, I encountered this gnome inventor on the promenade. He had an interesting device for travelling large distances. He mentioned such places as the Stornhorn Mountains or the Umar Hills.~
-IF~~ THEN REPLY ~ Counselor, please, I don't want to hurt your feelings, but magic travelling devices? Remember those mages caught on an icy island in a magic trap. We escaped, I admit, but I won't try my luck on that again.~ GOTO NibHint2
-IF~~ THEN REPLY ~ Oh, great, we should keep that in mind, even if currently we do not have plans to go to those places. Even if I have a bit of relunctance to magic travelling. One may sometimes end up in places not intended.~ GOTO NibHint2
+SAY ~ <CHARNAME>, when I was scouting through the city in search of any hints as to where you and our friends may have been taken, I encountered this gnome inventor on the promenade. He had an interesting device for travelling large distances. He mentioned such places as the Stormhorn Mountains or the Umar Hills.~
+IF~~ THEN REPLY ~ counsellor, please, I don't want to hurt your feelings, but magic travelling devices? Remember those mages caught on an icy island in a magic trap. We escaped, I admit, but I won't try my luck on that again.~ GOTO NibHint2
+IF~~ THEN REPLY ~ Oh, great, we should keep that in mind, even if currently we do not have plans to go to those places. Even if I have a bit of reluctance to magic travelling. One may sometimes end up in places not intended.~ GOTO NibHint2
 END
 
 IF ~~ THEN BEGIN NibHint2
@@ -553,7 +553,7 @@ IF~~THEN REPLY~ The way you say that sounds, as if you do not believe her.~ GOTO
 END
 
 IF ~~ THEN BEGIN ShauHer3
-SAY ~ Oh, I do believe her - I mean I believe she tells truely all she knows about herself. My doubt is that she herself knows who she is. Even with a possible grandfather like General Ghotal, her strength, her intelligence and her outer appearance are not explainable.~
+SAY ~ Oh, I do believe her - I mean I believe she tells truly all she knows about herself. My doubt is that she herself knows who she is. Even with a possible grandfather like General Ghotal, her strength, her intelligence and her outer appearance are not explainable.~
 IF~~THEN REPLY~ Sounds like you fall for that godchild thing. Well, you seem to attract them, my love.~ GOTO ShauHer4
 END
 
@@ -576,7 +576,7 @@ END
 
 //Shadowtemple
 IF~Global("SanArch","ar1402",1)~THEN BEGIN SanArchloss1
-SAY~ I once read that each Amaunator temple had an area only accesible to the priests that was called *The Archive*. Sounds like a place were records and such are kept, a place to store immense knowledge.~
+SAY~ I once read that each Amaunator temple had an area only accessible to the priests that was called *The Archive*. Sounds like a place were records and such are kept, a place to store immense knowledge.~
 IF ~~THEN REPLY~ It must hurt a scholar and seeker like yourself deeply that all that now seems to be lost due to the dragon's destruction.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2) SetGlobal("SanArch","ar1402",2) ~ GOTO SanArchloss2
 IF ~~THEN REPLY~ Stupid dragon!~ DO~SetGlobal("SanArch","ar1402",2) ~ EXIT
 IF ~~THEN REPLY~ Probably heaps of dusty parchments never to be read by anyone. No great loss, I guess.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-2) SetGlobal("SanArch","ar1402",2) ~GOTO SanArchloss3
@@ -601,7 +601,7 @@ END
 
 IF~~ THEN BEGIN MaeVarRec2
 SAY~ Remember when I told you about the different thieves' guilds in this town and how one of them was involved in your kidnapping on behalf of Irenicus? This is the one.~
-IF~~THEN REPLY~ But why did you not tell us down there, counselor? I surely had liked to put some questions to the guy, I can tell you!~ GOTO MaeVarRec3
+IF~~THEN REPLY~ But why did you not tell us down there, counsellor? I surely had liked to put some questions to the guy, I can tell you!~ GOTO MaeVarRec3
 END
 
 IF~~ THEN BEGIN MaeVarRec3
@@ -636,7 +636,7 @@ END
 IF~Global("SanNaza","LOCALS",1)~THEN BEGIN sannarz1
 SAY~Do we grant this creature the final wish and take his essence to the surface?~
 IF ~~THEN REPLY~ We defeated him once, so I see no great risk even if it's a trap.~ GOTO sannarz2
-IF ~~THEN REPLY~ You tell me, Sandrah, why do I give rare rations to a counselor if not for advice, haha.~ GOTO sannarz2
+IF ~~THEN REPLY~ You tell me, Sandrah, why do I give rare rations to a counsellor if not for advice, haha.~ GOTO sannarz2
 END
 
 IF~~THEN BEGIN sannarz2
@@ -680,7 +680,7 @@ END
 IF~Global("SanNitePh","LOCALS",1)~ THEN BEGIN SanPhhad1
 SAY~ (Smiles) Are those drow ladies really up to their reputation, <CHARNAME>?~
 IF~~THEN REPLY~ Sandrah, please, I did it for our survival, for the group, for you...~ GOTO SanPhhad2
-IF~~THEN REPLY~ It was a completetly new experience, quite different from - you.~ GOTO SanPhhad2
+IF~~THEN REPLY~ It was a completely new experience, quite different from - you.~ GOTO SanPhhad2
 IF~~THEN REPLY ~ Hm, I actually like my lovers a little bit more...restraint. But yes, it was not as painful as I feared it to be...~ GOTO SanPhhad2
 END
 
@@ -704,7 +704,7 @@ END
 
 IF~~THEN BEGIN SanPhhad5
 SAY~Jealousy because of that black slut? You will never see her again after this night while I will continue to be by your side. I will make you forget her just the next night and this will be just an interesting anecdote for us. Did you really think my love for you was that weak?~
-IF~~THEN REPLY~ I should have known you better, your persistency and loyalty is not injured by every little incident.~ DO~ SetGlobal("SanNitePh","LOCALS",4)~ EXIT
+IF~~THEN REPLY~ I should have known you better, your persistence and loyalty is not injured by every little incident.~ DO~ SetGlobal("SanNitePh","LOCALS",4)~ EXIT
 END
 END
 
@@ -732,7 +732,7 @@ END
 CHAIN
 IF~~THEN BSANDR DeKhalReac2
 ~ I had considered it, judging the risk that someone may discover the restoration on the body and knew of me intruding as neglectable in this whole turmoil. But I decided against it.~
-= ~I think it is important that Jaheira sees him like that. It makes her accept the fact that Khalid is gone beyond any hope and nohing can bring him back. It hurts, yes, but it clarifies the facts.~
+= ~I think it is important that Jaheira sees him like that. It makes her accept the fact that Khalid is gone beyond any hope and noshing can bring him back. It hurts, yes, but it clarifies the facts.~
 ==BJAHEIR ~ You have loved him, too, Sandrah, and have lost him with me. You are the most caring person I know. Yes, he is gone but we are not. No use to dwell here just one moment longer.~
 EXIT
 
@@ -802,7 +802,7 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR SanSharbirthGorion6
-~ (Sandrah opens Shar-Teel's nightgown to reveil her budding breasts. A first drop of milk becomes visible on one of the mother's rose buds.)~
+~ (Sandrah opens Shar-Teel's nightgown to reveal her budding breasts. A first drop of milk becomes visible on one of the mother's rose buds.)~
 == CVshabab~ There is only one way for you to find that out, loverboy. Make it a girl next time.~
 == Sangori~ Weeeeh...Weeeh.~
 == CVshabab~ (She gently moves the baby's mouth to its tab.) Hey, loverboy, I have two of that outlets. (She grabs you behind the head and pulls you down to her other breast in love.)~
@@ -837,17 +837,17 @@ DO~SetGlobal("CVColleEnc","GLOBAL",14)~
 ==Pellig~ Growl.~
 ==BSandr~ The last ones we have encountered of that type - except for Edwin whom I personally declare innocent this time - were Szass Tam and...this strange *Collector*.~
 ==Pellig~GROWL!!!~
-==BSandr~ He was very interested in some artifact from me...was he really here to gather it?~
+==BSandr~ He was very interested in some artefact from me...was he really here to gather it?~
 END
-++~ Eh, darling, you may want to take a look into your handmirror...~+ CollNightVis2
+++~ Eh, darling, you may want to take a look into your hand mirror...~+ CollNightVis2
 ++~ (You touch her hair near her left temple where her ever perfect hairdo is a bit ruffled) Probably?~+ CollNightVis2
 
 CHAIN
 IF~~THEN BSandr CollNightVis2
-~ (She quickly gets her small mirror from her backback.) He really cut a tiny strand of my hair - a disgusting man.~
+~ (She quickly gets her small mirror from her backpack.) He really cut a tiny strand of my hair - a disgusting man.~
 =~I cannot imagine a man following us into this remote wilderness, entering the camp of a well-armed party like us at night just to satisfy himself with a lock of my hair. What does he want with it?~
 END
-++~We will make him confess it and reveil his motif next time we run into him.~ + CollNightVis3
+++~We will make him confess it and reveal his motif next time we run into him.~ + CollNightVis3
 ++~He was interested in something from your body already last time. It surely goes beyond some type of fetishism or such.~+ CollNightVis3
 
 CHAIN
@@ -865,7 +865,7 @@ CHAIN
 IF ~ Global("SanBooPel","GLOBAL",11) ~ THEN BSANDR SanBoo17
 ~ Look at this.~
 DO ~ SetGlobal("SanBooPel","GLOBAL",2)~
-== Pellig ~ (Pelligram sits on her hindlegs beside Minsc and stares at Boo who is sitting on the big warrior's shoulder.)~
+== Pellig ~ (Pelligram sits on her hind legs beside Minsc and stares at Boo who is sitting on the big warrior's shoulder.)~
 == BMinsc ~ Boo likes the big cat very much, you know, Sandrah.~
 == BSANDR ~ Maybe. It seems to be rather interest than hunger I sense in her.~
 == BMinsc ~ Big cat would never eat Boo. Do you not see, they are both of the same warrior spirit. They understand each other without need for words.~
@@ -886,7 +886,7 @@ DO ~ SetGlobal("SanBooTlk","GLOBAL",22)~
 == BMinsc ~ Boo is puzzled by your words. Such a mighty fighter and great healer must have gained her approval long ago.~
 == BSANDR ~ In my country we do not have this habit, Minsc. It is only my own self that is on a journey to find - myself.~
 == BMinsc ~ Boo says he understands well. Boo hopes that Minsc will find the same one day - find myself.~
-== BSANDR ~ (Sandrah has taken Minsc's hand in hers. Boo jumps from Minsc's shoulder to Sandrah's lap and back again, summersaulting with joy.) You will find yourself surely, Minsc, yourself and your way. It will not be easy, but it is never for any of us.~
+== BSANDR ~ (Sandrah has taken Minsc's hand in hers. Boo jumps from Minsc's shoulder to Sandrah's lap and back again, somersaulting with joy.) You will find yourself surely, Minsc, yourself and your way. It will not be easy, but it is never for any of us.~
 == BMinsc ~ It is not for one like you, Sandrah? Boo has heard something like that from Dynaheir as well. All pretty damsels need protection.~
 == BSANDR ~ I will gladly accept yours, my paladin.~
 == BMinsc ~ Boo says we have four eyes for one witch. That fits.~
@@ -932,8 +932,8 @@ DO ~ SetGlobal("SanVicInnLov","LOCALS",12)~
 == BViconi ~ (The partly vicious, partly amused smile around Viconia's lips reveals that she has her fun from the situation as well.)~
 END
 ++ ~ (You stay where you are, knowing that the two are perfectly capable to handle the situation alone.) ~ + SanVicInnNo
-IF~Global("SanRompath","GLOBAL",1)~THEN REPLY ~ (You leasurely stroll over to the table feeling the envious glances of the other males as you take your seat next to the beauties.)~ + SanVicInnYes
-IF~Global("SanRompath","GLOBAL",2)~THEN REPLY ~ (You leasurely stroll over to the table swinging your hips and opening an extra button on your blouse to add to the tease as you take your seat next to the other beauties.)~ + SanVicInnFem
+IF~Global("SanRompath","GLOBAL",1)~THEN REPLY ~ (You leisurely stroll over to the table feeling the envious glances of the other males as you take your seat next to the beauties.)~ + SanVicInnYes
+IF~Global("SanRompath","GLOBAL",2)~THEN REPLY ~ (You leisurely stroll over to the table swinging your hips and opening an extra button on your blouse to add to the tease as you take your seat next to the other beauties.)~ + SanVicInnFem
 
 CHAIN
 IF ~~ THEN BSANDR SanVicInnNo
