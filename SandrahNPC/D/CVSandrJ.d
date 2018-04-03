@@ -2267,7 +2267,7 @@ IF ~~ THEN REPLY ~ (You decide there will be better occasions in the future.) ~ 
 IF ~~ THEN REPLY ~ It is good to have you in the party, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Nice1
 IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO StandardComp
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanHamCl
@@ -2292,7 +2292,7 @@ IF ~~ THEN REPLY ~ You are a beautiful girl, Sandrah. ~ GOTO StandardComp2
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF ~~ THEN BEGIN StandardComp2
@@ -2311,7 +2311,7 @@ IF ~~ THEN REPLY ~ Where are you from, Sandrah? ~ GOTO SanWater
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanNoMage1
@@ -2368,7 +2368,7 @@ IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~ No
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~ Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
 IF~~THEN REPLY~ Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanKnoDrizPC1
@@ -2593,7 +2593,7 @@ IF ~~ THEN BEGIN ManySecrets36
 SAY ~ Yes, <CHARNAME>, there are secrets. But if I am not totally wrong, you are one who wants to reveal them. ~
 = ~ Mind that some of these riddles and connections can only be solved by us together. Are you willing to take a small risk for a large gain? (Smiles at you invitingly) ~
 IF ~~ THEN REPLY ~ Sandrah, if the prize is worth it, I will. And if the price is YOU, I am more than willing to fight for it. (Take her in your arms and kiss her)~ GOTO LoveStarts36
-IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozend. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts36
+IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozens. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts36
 IF ~~ THEN REPLY ~ I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
 END
 
@@ -2613,14 +2613,14 @@ IF ~~ THEN BEGIN ManySecrets
 SAY ~ Yes, <CHARNAME>, there are. But I if I am not totally wrong, you are one who wants to reveal them. ~
 = ~ Mind that some of these riddles and connections can only be solved by us together. Are you willing to take a small risk for a large gain? (Smiles at you invitingly) ~
 IF ~~ THEN REPLY ~ Sandrah, if the prize is worth it, I will. And if the price is YOU, I am more than willing to fight for it. (Take her in your arms and kiss her)~ GOTO LoveStarts
-IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozend. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts
+IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozens. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO LoveStarts
 IF ~~ THEN REPLY ~ I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~ DO ~ SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
 END
 
 IF ~~ THEN BEGIN ColdFeet
-SAY ~ Is that how I make you feel, an experiment? You see how unexperienced I am in these matters. I was taking the risk of doing it all wrong because doing nothing instead was even worse. I really care for you and that let me rush out straight away. Was I really that bad at it? ~
+SAY ~ Is that how I make you feel, an experiment? You see how inexperienced I am in these matters. I was taking the risk of doing it all wrong because doing nothing instead was even worse. I really care for you and that let me rush out straight away. Was I really that bad at it? ~
 IF ~~ THEN REPLY ~ I guess you are right, we are both really beginners if it comes to romance, aren't we? You make me feel happy and afraid at the same moment, one minute hot one minute cold...oh damn, Sandrah. I am babbling like a fool instead of doing this.. (Take her in your arms and kiss her)~ GOTO LoveStarts
-IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl from Waterdeep that breaks hearts by the dozend. And now you are working on mine playing the innocent little cutie. I don't want to be entangled in your mess of secrets and traps, Sandrah. (She turns away quickly, but not quick enough to hide the small tear in the corner of her eyes - just another of her clever tricks?) ~ DO ~ SetGlobal("SanPidPack","GLOBAL",7) SetGlobal("SanBranRepl","GLOBAL",1)RealSetGlobalTimer("PIDSulk","LOCALS",5000)~ EXIT
+IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl from Waterdeep that breaks hearts by the dozens. And now you are working on mine playing the innocent little cutie. I don't want to be entangled in your mess of secrets and traps, Sandrah. (She turns away quickly, but not quick enough to hide the small tear in the corner of her eyes - just another of her clever tricks?) ~ DO ~ SetGlobal("SanPidPack","GLOBAL",7) SetGlobal("SanBranRepl","GLOBAL",1)RealSetGlobalTimer("PIDSulk","LOCALS",5000)~ EXIT
 END
 
 // PID Pack 8
@@ -2664,7 +2664,7 @@ IF~~THEN REPLY~I want to talk with you about your relationship with a companion.
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
-IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
+IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our travelling faster, please.~ GOTO SanvaultSum
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
@@ -2679,11 +2679,11 @@ IF ~ Global("Godtalk","LOCALS",0) !AreaType(DUNGEON)~ THEN REPLY ~ Sandrah, how 
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanAcArF
-SAY ~ Let me get this small bootle of extract from acid slime out. Puuh, what a smell.~
+SAY ~ Let me get this small bottle of extract from acid slime out. Puuh, what a smell.~
 =~ The remaining material is around, here is wood and over there are a lot of feathers where a buzzard has devoured his prey. It will not take long.~
 IF~~THEN DO~ StartCutSceneMode()
 SmallWait(4)
@@ -2713,7 +2713,7 @@ END
 
 IF~~THEN BEGIN SanloveHut2
 SAY ~ This straw will make a wonderful playground for us, just give me a few minutes. How about you try to light us the fireplace?~
-= ~ * Unexpectantly Sandrah has turned into some kind of busy housewife. She starts to arrange the straw from a half-eaten pile and covers it with one of her expensive coats that she has retrieved from her backpack. Your comrades join into the various activities, like rearranging boxes, barrels and planks, and as you turn around from your well-lit fire, you see a table and stools have been improvised. There is a blanket on the table and even a small bottle used as a vase with some sunflowers in it.*~
+= ~ * Unexpectedly Sandrah has turned into some kind of busy housewife. She starts to arrange the straw from a half-eaten pile and covers it with one of her expensive coats that she has retrieved from her backpack. Your comrades join into the various activities, like rearranging boxes, barrels and planks, and as you turn around from your well-lit fire, you see a table and stools have been improvised. There is a blanket on the table and even a small bottle used as a vase with some sunflowers in it.*~
 IF~~THEN REPLY ~ My, I have seen people in the city living in worse places than this. Amazing what a bit of creativity can create out of almost nothing.~ DO~ SetGlobal("SaOgmaIn","GLOBAL",7) RestParty()~ EXIT
 IF~~THEN REPLY ~ Other circumstances would have made you the perfect house maid.~ DO~ SetGlobal("SaOgmaIn","GLOBAL",7) RestParty()~ EXIT
 END
@@ -2721,13 +2721,13 @@ END
 IF~~ THEN BEGIN  SanElmInf11
 SAY ~ Honestly, I cannot answer that, as I do not know my father's reason for his obvious interest in you. What I can confirm is, however, that we have not even once talked about you when we were at Waterdeep. Until I left, none of us was aware that the other one knew anything about you.~
 IF ~~THEN REPLY ~ I have no reason to disbelieve you, Sandrah, even though the coincidence has puzzled me a bit in the beginning.~ GOTO SanElmInf12
-IF~~THEN REPLY ~ I know you good enough by now to see you are telling the truth. Nonetheless, the coincidence of you two having an interest in me for different reasons seems farfetched.~ GOTO SanElmInf12
+IF~~THEN REPLY ~ I know you good enough by now to see you are telling the truth. Nonetheless, the coincidence of you two having an interest in me for different reasons seems far-fetched.~ GOTO SanElmInf12
 IF~~THEN REPLY~You and your meddling father...I know you well enough to know you just tell those things I already found out by myself and you cannot longer deny.~DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanElmInf12b
 END
 
 IF~~ THEN BEGIN  SanElmInf12b
 SAY~If you think of me this way, why did you even bother to ask?~
-=~Logical thinking, not one of your specialties, should have told you that even without having coordinated between ourselves, you have come to our attention for a similar reason. Which is in the end no wonder. If I thought that you and your fate would be important for the fate of the Realms, then my father would have come to the same conclusions in his enduring watch over Faerun.~
+=~Logical thinking, not one of your specialities, should have told you that even without having coordinated between ourselves, you have come to our attention for a similar reason. Which is in the end no wonder. If I thought that you and your fate would be important for the fate of the Realms, then my father would have come to the same conclusions in his enduring watch over Faerun.~
 IF~~THEN REPLY ~ Important to the Realms. I thought I would be important to your heart and that is why you are here?~ GOTO SanElmInf13
 IF~~THEN REPLY ~ Important to the Realms. What could be in a little orphan without power or fortune that would be connected to the fate of the Realms? ~GOTO SanElmInf14
 END
@@ -2739,7 +2739,7 @@ IF~~THEN REPLY ~ Important to the Realms. What could be in a little orphan witho
 END
 
 IF~~ THEN BEGIN  SanElmInf13
-SAY ~ Of course you are my love imterest now. Now, that I have met you and got to know you. But remember, that happened only after I came to your side in order to protect you - and Gorion.~
+SAY ~ Of course you are my love interest now. Now, that I have met you and got to know you. But remember, that happened only after I came to your side in order to protect you - and Gorion.~
 IF ~~ THEN REPLY~ Well, yes, you knew about me already before we met, from what you said you saw when fiddling with your father's shard. ~ GOTO SanElmInf14
 END
 
@@ -2790,7 +2790,7 @@ END
 IF ~~ THEN BEGIN Candlevisit
 SAY ~ Yes, <CHARNAME>, you are right. I was there - it is not easy to explain, but I will try. Listen. ~
 = ~ I wanted to warn him - but of course he already knew about the danger that was approaching. ~
-= ~ I wanted to help him - but of course he refused that from a young girl whom he thought to be ambitious but not yet too competend. ~
+= ~ I wanted to help him - but of course he refused that from a young girl whom he thought to be ambitious but not yet too competent. ~
 = ~ Actually, I kind of knew that it would not really make much sense to talk to him. But I simply had to try, I could not just sit at home and do nothing. Not with what I already knew...~
 IF ~~ THEN REPLY ~ But what did you know? And how did you know about Gorion and me at all, over there in Waterdeep? ~ GOTO Shard1
 END
@@ -2802,9 +2802,9 @@ IF ~~ THEN REPLY ~ The Harpers, I have read about them in the library...~ GOTO S
 END
 
 IF ~~ THEN BEGIN Shard2
-SAY ~ Shhhh, <CHARNAME>, I will never finish if you always interupt me. So, where was I...~
-= ~ Ah yes, Elm....eh, my father's study and the crystal shard. (Puts her finger gently to your lips as she sees you want to interupt again). Right, one of the instruments in my father's study, one that he uses in his many activities to observe the realms and certain activities that he and his friends are interested in, is the Crystal Shard. ~
-= ~ The Shard is an item he has directly received from Mystra herself. It allows you to see things at far away places like through an enourmous telescope. Sometimes the Shard even gives you a short glimpse into the future. ~
+SAY ~ Shhhh, <CHARNAME>, I will never finish if you always interrupt me. So, where was I...~
+= ~ Ah yes, Elm....eh, my father's study and the crystal shard. (Puts her finger gently to your lips as she sees you want to interrupt again). Right, one of the instruments in my father's study, one that he uses in his many activities to observe the realms and certain activities that he and his friends are interested in, is the Crystal Shard. ~
+= ~ The Shard is an item he has directly received from Mystra herself. It allows you to see things at far away places like through an enormous telescope. Sometimes the Shard even gives you a short glimpse into the future. ~
 = ~ Of course I am strictly forbidden to go even near the shard without him - but then as a priestess of Mystra and having already finished my apprenticeship in some of Mystra's secrets, it is not really possible to keep it all hidden from me. (Laughs) after all I am my father's daughter, and he is known to interfere with quite a lot of things throughout the four corners of Faerun. ~
 = ~ So, without going into every little detail, through the Shard I received some yet unclear information about Gorion and the danger that was approaching, and how it may be connected to some research in history that I am doing myself at the moment.~ 
 IF ~~ THEN REPLY ~ (You can no longer keep quiet with the flood of information she unloads on you) But how come you know Gorion and me - and even Imoen before you even met her? ~ GOTO Shard3
@@ -2843,7 +2843,7 @@ IF~Global("ChartQuest","GLOBAL",1)GlobalGT("CalDone","GLOBAL",0)Global("SanMenda
 IF ~ Global("rainbFav","LOCALS",0) ~ THEN REPLY ~ Sandrah, what is your favourite colour?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ GlobalGT("SanBooTlk","GLOBAL",5) Global("MinskFlow","LOCALS",0) ~ THEN REPLY ~ That is a beautiful flower in your hair, Sandrah. Do you wear it for me?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO MinscFlow1
-IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
+IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our travelling faster, please.~ GOTO SanvaultSum
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
 IF~ Global("SanXanPC","GLOBAL",2)~THEN REPLY~ I observe you started to care for Xan quite a bit. Is it the healer that tries to cure this hopeless case?~DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanXanPC13
 IF ~ GlobalGT("Mothdream1","GLOBAL",6) Global("SammomQ","LOCALS",1)~ THEN REPLY ~ We started to talk about your mother a while back but we were interupted by this rainstorm. I would like to continue that issue, if you do not object.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SammomQ6
@@ -2861,7 +2861,7 @@ IF ~ Global("FavSpell","LOCALS",0)~ THEN REPLY ~ Say, Sandrah, my disciple of My
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
 IF ~ GlobalGT("SanSharInt","GLOBAL",11) Global("SanSharCon","LOCALS",0) ~ THEN REPLY ~ You seem to go along with Shar-Teel quite well, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanSharCon1
 IF~~ THEN REPLY ~ (Embrace Sandrah and give her a passionate kiss. ) ~ EXIT
-IF~ AreaType(OUTDOOR) Global("Sanhairdo","LOCALS",0) ~ THEN REPLY~ (Sandrah has taken off all the scarfs and diadems she normally wears in her stylish hairdo and lets her auburn locks fly free in the wind. As usual you have to stop, stunned by her beauty.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Sanhairdo1
+IF~ AreaType(OUTDOOR) Global("Sanhairdo","LOCALS",0) ~ THEN REPLY~ (Sandrah has taken off all the scarves and diadems she normally wears in her stylish hairdo and lets her auburn locks fly free in the wind. As usual you have to stop, stunned by her beauty.)~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Sanhairdo1
 IF ~ PartyHasItem("SanParc") Global("SanParcPid","LOCALS",0) ~ THEN REPLY~ When we brought the Shard back to your father, I noticed he slipped some small box into your robes. May I ask you what it was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanParcPid
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
 IF~ GlobalGT("SanNarQ","GLOBAL",6) !AreaType(OUTDOOR) Global("SanAdveFa","LOCALS",0) !AreaType(DUNGEON) ~ THEN REPLY ~ You mentioned sometime that you used to travel with your father a bit on his adventures, Sandrah. Tell me about it, please. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanAdvenE1
@@ -2878,7 +2878,7 @@ IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPL
 IF ~ Global("PCKnowsElmDaughter","GLOBAL",1) Global("SanElmInf1","LOCALS",0) GlobalGT("Chapter","GLOBAL",2) ~ THEN REPLY ~ Sandrah, your father and yourself have different reasons to be interested in me, at least this is my interpretation of what I heard from both of you.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanElmInf11
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~ (You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanGay
@@ -2892,7 +2892,7 @@ IF ~~ THEN REPLY ~And his strange accent?~ DO~ SetGlobal("SanMendas","LOCALS",1)
 END
 
 IF~~ THEN BEGIN SanMendas2
-SAY~Different classes of our town speak different colloqial slangs - his is none of them. But then the City of Splendour holds people from all places and races and their languages.~
+SAY~Different classes of our town speak different colloquial slang - his is none of them. But then the City of Splendour holds people from all places and races and their languages.~
 =~ Still....~
 IF ~~ THEN REPLY ~Still?~ GOTO SanMendas3
 END
@@ -2935,7 +2935,7 @@ IF ~~ THEN REPLY ~ I'm sure you have your limits like all of us.~ DO ~ SetGlobal
 END
 
 IF ~~ THEN BEGIN SanMkStake5
-SAY~ Let me see...This wooden artefact should be useable to make some. Nobody seems to need it anymore.~
+SAY~ Let me see...This wooden artefact should be usable to make some. Nobody seems to need it any more.~
 IF~~THEN DO~ 
 ForceSpell(Myself,CLERIC_SPIRITUAL_HAMMER)
 GiveItemCreate("misc6w",Player1,2,0,0)
@@ -2944,7 +2944,7 @@ RealSetGlobalTimer("SanWoodStRep","LOCALS",600)~ EXIT
 END
 
 IF ~~ THEN BEGIN SanEdLoveBoy20
-SAY ~ To be honest with you, <CHARNAME>, it has not. I still do not fully understand why you continue to have him with us. But, yes, I have changed in so far that I do not question it anymore and just endure it like the constant rainstorms that make the Sword Coast so unpleasant at times.~
+SAY ~ To be honest with you, <CHARNAME>, it has not. I still do not fully understand why you continue to have him with us. But, yes, I have changed in so far that I do not question it any more and just endure it like the constant rainstorms that make the Sword Coast so unpleasant at times.~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I had the feeling that a little bit more than that is emerging between you two.~ GOTO SanEdLoveBoy21
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I had the feeling that a little bit more than that is emerging between you two.~ GOTO SanEdLoveBoy22
 END
@@ -2979,7 +2979,7 @@ END
 
 IF~~THEN BEGIN Sanhairdo2
 SAY ~ Then my efforts to look beautiful for the one I care for are not wasted, thank you. So you prefer this more natural look to the other one.~
-IF~~THEN REPLY ~ Well, yes, if nature endows one so richly, any artifical attemt to improve it is wasted.~ GOTO Sanhairdo3
+IF~~THEN REPLY ~ Well, yes, if nature endows one so richly, any artificial attempt to improve it is wasted.~ GOTO Sanhairdo3
 IF~~THEN REPLY ~ You have proven that there is no natural beauty that cannot be improved by a skilled artist to an even higher level.~ GOTO Sanhairdo3
 IF~~THEN REPLY ~ One thing I adore in you, is that I do not have to make such decisions. Any new aspect you show me of yourself is wonderful. It is your ever-changing nature that makes you so special.~ GOTO Sanhairdo3
 IF~~THEN REPLY ~ It's wasted effort anyway. Put your helmet on, we're marching again.~ GOTO Sanhairdo3
@@ -3051,7 +3051,7 @@ IF~~THEN EXIT
 END
 
 IF ~~ THEN BEGIN SanFirstN1
-SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and unpenetrable look, that seems to say everything and nothing at the same time.)~
+SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and impenetrable look, that seems to say everything and nothing at the same time.)~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
@@ -3067,14 +3067,14 @@ IF~~THEN REPLY~ (Is it the wine or some magic working on you. You look into her 
 END
 
 IF~~THEN BEGIN  SanFirstN3m
-SAY ~ I want us to lose much more than just our doubts tonight, my sweet hero. (She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
+SAY ~ I want us to lose much more than just our doubts tonight, my sweet hero. (She slowly has taken off her armour and the clothes below and changed into a piece of weightless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
 IF~~ THEN REPLY ~ You were right to wait until tonight, Sandrah. This needs the right place and the right time. (You start to caress her breasts beneath their glimmering sheath.) And the right time is now.~  GOTO SanFirstN3q
 IF~~ THEN REPLY ~ I am more than willing to lose myself to you, Sandrah (You start to slowly caress her body beneath the glimmering sheath.)~ GOTO SanFirstN3q
 END
 
 IF~~THEN BEGIN  SanFirstN3h
 SAY ~ That is my wish as well. But it may only come true in a long, long while. Tonight is tonight, and it is a special occasion for us. We may want to take a preview of what awaits us in the future. ~
-=~(She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
+=~(She slowly has taken off her armour and the clothes below and changed into a piece of weightless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
 IF~~ THEN REPLY ~ You were right to wait until tonight, Sandrah. This needs the right place and the right time. (You start to caress her breasts beneath their glimmering sheath.) And the right time is now~  GOTO SanFirstN3q
 IF~~THEN REPLY ~ You are precious, Sandrah, I would never forgive myself for letting this moment pass in the hope of some vague future. As always you are right in this.~ GOTO SanFirstN3m
 END
@@ -3095,8 +3095,8 @@ END
 
 
 IF ~~ THEN BEGIN SanFirstN3f
-SAY~ (She slowly has taken off her armour and the clothes below and changed into a piece of weighless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
-= ~ (She comes over to you and undresses you slowly bit by bit while she kisses, bites and licks every part of your craving body that she reveals in that process. She slips a neglige like her own over you in the end and leads you to one of the large mirrors of the room.)~
+SAY~ (She slowly has taken off her armour and the clothes below and changed into a piece of weightless glimmering material, that lets you see every detail of her body but tempts you even more than pure nakedness.)~
+= ~ (She comes over to you and undresses you slowly bit by bit while she kisses, bites and licks every part of your craving body that she reveals in that process. She slips a negligee like her own over you in the end and leads you to one of the large mirrors of the room.)~
 IF~~THEN REPLY ~ (As you look at yourself in an outfit you never had possessed before, you feel very beautiful and more of a woman than ever before. You love Sandrah for it and you want to show that love to her - now.) ~ GOTO SanFirstN4f
 IF~~THEN REPLY ~ (As you look at yourself in the mirror, you see a new <CHARNAME>, a beautiful and strong woman, ready to be loved, ready to make new experiences - with your loving Sandrah.)~ GOTO  SanFirstN4f
 END
@@ -3110,8 +3110,8 @@ END
 
 IF~~THEN BEGIN SanFirtsBed
 SAY ~ You feel Sandrah's smooth skin through the thin material of her cloth all along the length of your body as she blows a warm kiss into your earlobe. You are drowned in a feeling of togetherness you have never known before. ~
-= ~ You feel your bodies becoming like one, melting into one another as your hands start to caress her backside and slowly slide into the moisty area of her nether lips. ~
-= ~ Her kisses are both inviting and demanding. Your own body erupts under the caresses of her fingers and lips that seem to be everywhere at once. You know that a point is reached where none of you can return anymore... ~
+= ~ You feel your bodies becoming like one, melting into one another as your hands start to caress her backside and slowly slide into the moist area of her nether lips. ~
+= ~ Her kisses are both inviting and demanding. Your own body erupts under the caresses of her fingers and lips that seem to be everywhere at once. You know that a point is reached where none of you can return any more... ~
 IF~~THEN DO ~ StartMovie("Restinn")~ EXIT
 END
 
@@ -3162,14 +3162,14 @@ IF ~~ THEN REPLY ~ Spit it out already, woman!~ GOTO SanVisWD3
 END
 
 IF~~ THEN BEGIN  SanVisWD3
-SAY ~ There is the story of the Old Waterdeep Road that was supposed to run between the City of Splendour and the Friendly Arm Inn. Even in the old times, it was kept secret among the elves and dwarves and other innates that helped in the building and development of Waterdeep. The lore has it, that on this road travelling times between the Sword Coast and Waterdeep would only be a few hours.~
+SAY ~ There is the story of the Old Waterdeep Road that was supposed to run between the City of Splendour and the Friendly Arm Inn. Even in the old times, it was kept secret among the elves and dwarves and other innate that helped in the building and development of Waterdeep. The lore has it, that on this road travelling times between the Sword Coast and Waterdeep would only be a few hours.~
 IF ~~ THEN REPLY ~ But we know the vicinity of the Arm quite well. It seems that no such road is there today.~  GOTO SanVisWD4
 IF ~~ THEN REPLY ~ If this road has ever existed, it is surely no longer there. We must have found it otherwise during our travels.~ GOTO SanVisWD4
-IF ~~ THEN REPLY ~ Why do you hold us up with such boring old crap. There is no such road anymore and you know it.~ GOTO SanVisWD4
+IF ~~ THEN REPLY ~ Why do you hold us up with such boring old crap. There is no such road any more and you know it.~ GOTO SanVisWD4
 END
 
 IF~~ THEN BEGIN SanVisWD4
-SAY ~ The road would not be that obvious to the passerby's eye. Even those who used it in former days had to use a map to follow it. Maybe some of those maps still exist today on the Sword Coast.~
+SAY ~ The road would not be that obvious to the passers-by eye. Even those who used it in former days had to use a map to follow it. Maybe some of those maps still exist today on the Sword Coast.~
 IF ~!Global("SanWDHi","GLOBAL",2)~ THEN REPLY ~ We surely have no time to start a search on the Sword Coast for a map we do not even know whether it exists or not, just to have a day off in Waterdeep. ~GOTO SanVisWD5
 IF ~ Global("SanWDHi","GLOBAL",2)~ THEN REPLY ~ We surely have no time to start a search on the Sword Coast for a map we do not even know whether it exists or not, just to have a day off in Waterdeep. ~GOTO SanVisWD6
 END
@@ -3199,7 +3199,7 @@ IF~~ THEN REPLY ~ We need to be quick, danger may be always near. Hurry, please,
 END
 
 IF ~~ THEN BEGIN Pid9AnkE
-SAY ~ My mighty warrior, you are surely not hurt so bad as to need a healer. Bite on your lip, swallow the pain, and quickly back to the road. (Sandrah grins maliciously and leaves you to hobble behind the onmoving group.) ~ IF ~~ THEN DO ~ SetGlobal("Pid9Ankl","LOCALS",1) ~ EXIT
+SAY ~ My mighty warrior, you are surely not hurt so bad as to need a healer. Bite on your lip, swallow the pain, and quickly back to the road. (Sandrah grins maliciously and leaves you to hobble behind the on moving group.) ~ IF ~~ THEN DO ~ SetGlobal("Pid9Ankl","LOCALS",1) ~ EXIT
 END
 
 IF ~~ THEN BEGIN Pid9AnkL
@@ -3220,7 +3220,7 @@ IF ~~ THEN REPLY ~ From the copy of Leonardo's famous painting she was about you
 END
 
 IF ~~ THEN BEGIN SammomQ2
-SAY ~ Oh, <CHARNAME>, you are mistaken like most people when it comes to my father. He likes his disquise as an old man, yes, and he is by his years as a human. But Mystra has granted him longevity and health, so he can compete with any young man anytime. In any respect. ~
+SAY ~ Oh, <CHARNAME>, you are mistaken like most people when it comes to my father. He likes his disguise as an old man, yes, and he is by his years as a human. But Mystra has granted him longevity and health, so he can compete with any young man any time. In any respect. ~
 IF~~ THEN REPLY ~ Interesting, but today we wanted to talk about your mother. Let us leave your father as a topic for another occasion. ~ GOTO SammomQ3
 IF~~ THEN REPLY ~ Are you trying to change the subject, Sandrah, we wanted to talk about your mother. Let us leave the old man aside for today. ~ GOTO SammomQ3
 END
@@ -3233,7 +3233,7 @@ IF~~ THEN REPLY ~ That must be many tendays away from the Sword Coast. I think I
 END
 
 IF ~~ THEN BEGIN SammomQ4
-SAY ~ Yes it is very far away. Only seldom a ship makes the journey between the two places. Had it not been with my father's Shard and his magic means of transportation I would never have seen it in my life. It is beautiful, it is peaceful, full of exotic fruits and rare animals, the everblue sea in the warm breeze...~
+SAY ~ Yes it is very far away. Only seldom a ship makes the journey between the two places. Had it not been with my father's Shard and his magic means of transportation I would never have seen it in my life. It is beautiful, it is peaceful, full of exotic fruits and rare animals, the ever-blue sea in the warm breeze...~
 IF~~ THEN REPLY ~ Oh stop it. See the dark cloud over there coming from the coastline. If we are lucky it will only rain...ah, the Sword Coast - let us seek some shelter, our talk must wait until later.~ DO ~ SetGlobal("SammomQ","LOCALS",1) StartRainNow() TakePartyItem("Sanport") DestroyItem("Sanport")~ EXIT
 END
 
@@ -3286,11 +3286,11 @@ IF ~~ THEN BEGIN ShirtF2
 SAY ~ You must try it on, I insist. Wait.~
 = ~ (Without anyone from the party noticing she takes your hand and leads you to a group of evergreen thick bushes nearby. She is out of the shirt in no time.)~
 IF~~ THEN REPLY ~ (You take the wonderful material from her hand and let it drop to the ground, as your hands start to explore her soft skin that no silk can compare to.) ~ GOTO ShirtF3
-IF~~ THEN REPLY ~ (Take the shirt and put it on. It feels wonderful.) Uh, you can probably not go back to the others like this. Take mine in return (Give her the woolen shirt you wear beneath your armour.)~ GOTO ShirtF3
+IF~~ THEN REPLY ~ (Take the shirt and put it on. It feels wonderful.) Uh, you can probably not go back to the others like this. Take mine in return (Give her the woollen shirt you wear beneath your armour.)~ GOTO ShirtF3
 END
 
 IF ~~ THEN BEGIN ShirtF3
-SAY ~ (She kisses you on the mouth and helps your hands to caress her naked breasts for a while. She laughs and helps you to put on the silk and then dresses in your old woolen one in return.) ~ 
+SAY ~ (She kisses you on the mouth and helps your hands to caress her naked breasts for a while. She laughs and helps you to put on the silk and then dresses in your old woollen one in return.) ~ 
 =~ What will the others think if they see us returning from the bushes dressed like that.~
 IF~~ THEN REPLY ~ Cultural exchange between the Sword Coast and Waterdeep.~ DO ~ SetGlobal("ShirtF","LOCALS",1)~ EXIT
 END
@@ -3320,7 +3320,7 @@ END
 
 IF ~~ THEN BEGIN SanParcPid3
 SAY~ I think it can help us a bit. And maybe it has some surprises as I sense my father tampered a bit with it. Knowing his abilities and his humour I am not afraid, but maybe not everything I ask from it will be the expected.~
-=~ We can ask it for gold coins or jewels from my purse at Waterdeep. So it will not be an endless supply, just what I actually own, but it will help us with the equipment we need and (laughs) the barbills from our endless parties..,~
+=~ We can ask it for gold coins or jewels from my purse at Waterdeep. So it will not be an endless supply, just what I actually own, but it will help us with the equipment we need and (laughs) the bar bills from our endless parties..,~
 IF ~~ THEN REPLY ~ And you are willing to give your personal riches for the sake of the group?~ GOTO SanParcPid4
 END
 
@@ -3404,7 +3404,7 @@ IF~~THEN REPLY~I want to talk with you about your relationship with a companion.
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
 IF~Global("SanRompa","Global",0)~ THEN REPLY ~ Sandrah, we need to clarify our relationship once and for all.~ GOTO RomClari1
 IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counsellor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
-IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
+IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our travelling faster, please.~ GOTO SanvaultSum
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
 IF ~ Global("SanWDRespect","LOCALS",1)~ THEN REPLY ~ We have a bit of time now, Sandrah. Please tell me a bit of your position and relation to the famous Mystra Temple in Waterdeep.~ GOTO SanWDRespct5
 IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON)~ THEN REPLY ~ Can you provide us with some wooden stakes, Sandrah?~ GOTO SanMkStake5
@@ -3445,7 +3445,7 @@ IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good pla
 IF ~ Global("XanDecide","GLOBAL",3) InParty("Xan")~ THEN REPLY ~ Sandrah, my love, we must talk about Xan urgently.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~ Global("rainbFav","LOCALS",0) ~ THEN REPLY ~ Sandrah, what is your favourite colour?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF ~~ THEN BEGIN Xanchos1
@@ -3460,7 +3460,7 @@ IF~~THEN REPLY ~ But you love Xan yourself, don' you...?~ GOTO Xanchos3
 END
 
 IF ~~ THEN BEGIN Xanchos3
-SAY ~ Yes, and I love you, too. So how can I stand in the way between your two hearts? Know that love does not express itself by ownership. I own neither him nor you for myself. To be part of your happiness and Xan's newfound hope for life is what I have gained today. (She kisses you and her sparkling eyes show you the true joy she feels for you.)~
+SAY ~ Yes, and I love you, too. So how can I stand in the way between your two hearts? Know that love does not express itself by ownership. I own neither him nor you for myself. To be part of your happiness and Xan's new found hope for life is what I have gained today. (She kisses you and her sparkling eyes show you the true joy she feels for you.)~
 IF ~~ THEN REPLY ~ Do you mean my love for Xan does not stand in the way between us, Sandrah?~ GOTO Xanchos4
 END
 
@@ -3474,7 +3474,7 @@ IF ~~ THEN BEGIN  RomClari1
 SAY~I am listening.~
 =~*Once and for all* sounds pretty dramatic. It is not your usual choice of words.~
 IF ~~ THEN REPLY ~ Mock me as you want, but listen, i mean what I say.~GOTO RomClari3
-IF ~~ THEN REPLY ~ Nevermind. It can wait.~GOTO RomClari2
+IF ~~ THEN REPLY ~ Never mind. It can wait.~GOTO RomClari2
 END
 
 IF ~~ THEN BEGIN  RomClari2
@@ -3511,7 +3511,7 @@ END
 IF ~~ THEN BEGIN GorLet1
 SAY ~ Do you still have preserved it, I would be interested to see it. It may tell us something that you may have not understood then, but may become apparent with the insight we have gained until now.~
 IF ~ PartyHasItem("SCRL3Z")~ THEN REPLY ~ Here it is, let us read it again together. (Hand her the letter and glance over her shoulder at the words you almost know by heart now.) ~ GOTO GorLet2
-IF ~ !PartyHasItem("SCRL3Z")~ THEN REPLY ~ I do not have it anymore, but I have read it so often, I can recite it to you word by word. (Recite Gorion's letter.)~ GOTO GorLet3
+IF ~ !PartyHasItem("SCRL3Z")~ THEN REPLY ~ I do not have it any more, but I have read it so often, I can recite it to you word by word. (Recite Gorion's letter.)~ GOTO GorLet3
 END
 
 IF ~~ THEN BEGIN GorLet2
@@ -3560,7 +3560,7 @@ END
 IF ~~ THEN BEGIN WWIsl1
 SAY ~ Wolves that were once men and men that turn to wolves. The island seems to be inhabited by a type of werewolves different from those we have encountered on the mainland up to now. The ones here seem to by Lycanthropes, which means they may change between a human and a wolf form.~
 IF~~THEN REPLY ~ Does that mean that humans we encounter outside of this compound may in reality be werewolves?~ GOTO WWIsl2
-IF~~THEN REPLY ~ So we cannot trust anyone on this island as he or she may be a wolf in reality, ready to attack anytime.~ GOTO WWIsl2
+IF~~THEN REPLY ~ So we cannot trust anyone on this island as he or she may be a wolf in reality, ready to attack any time.~ GOTO WWIsl2
 END
 
 IF ~~ THEN BEGIN WWIsl2
@@ -3599,7 +3599,7 @@ IF ~~ THEN REPLY ~ Then Bhaal chose the wife of the son of his executioners to m
 END
 
 IF~~THEN BEGIN SanBhaalRev5
-SAY ~ Mind something else that is important in this context, <CHARNAME>. Our mortal notions of father, mother, brother, sister and family cannot be applied when it comes to descendends of the Gods. Elminster is Midnight's son not Mystra's, as I am Midnight's granddaughter not Mystra's - and such is true for the spawns of Bhaal, they are not brothers and sisters among each other. And they may be instruments of the God of Murder but they are not sons and daughters. ~
+SAY ~ Mind something else that is important in this context, <CHARNAME>. Our mortal notions of father, mother, brother, sister and family cannot be applied when it comes to descendants of the Gods. Elminster is Midnight's son not Mystra's, as I am Midnight's granddaughter not Mystra's - and such is true for the spawns of Bhaal, they are not brothers and sisters among each other. And they may be instruments of the God of Murder but they are not sons and daughters. ~
 IF~~THEN EXIT
 END
 
@@ -3639,22 +3639,22 @@ END
 IF~~THEN BEGIN  PidBhaal15
 SAY~ So let me continue my tale. For a long time my search for the second child of Khalindra was in studies mostly, and some few talks I had with my father, who always closed up on me when the topic was brought up by me.~
 = ~ Then suddely at the end of this winter, things started to get in motion. The majority of the children were spawned by Bhaal at the same time, shortly before his destruction. Those now reached the age of adulthood. If you trust Alaundo - or rather the interpretation that is believed by the most - this would be the time when they would become aware of who they are, and according to the prophesies would begin their rush for power.~
-IF ~~ THEN REPLY ~ In that rush they would eventually be confronted with one another. The result would be an enourmous war and the resulting bloodshed would be the source for Bhaal's children to gather more and more power. Or at least those that would survive. In the end the remaining spawns would fight over the Throne of Bhaal for the winner to become the new God of Murder. This is the version I heard at Candlekeep every day from the Chanters.~GOTO  PidBhaal16
+IF ~~ THEN REPLY ~ In that rush they would eventually be confronted with one another. The result would be an enormous war and the resulting bloodshed would be the source for Bhaal's children to gather more and more power. Or at least those that would survive. In the end the remaining spawns would fight over the Throne of Bhaal for the winner to become the new God of Murder. This is the version I heard at Candlekeep every day from the Chanters.~GOTO  PidBhaal16
 END
 
 IF~~THEN BEGIN  PidBhaal16
-SAY~ This is the interpretation of Alaundo that most people know, yes. It is not what I believe and it is not what my father believes. It is not what Gorion has fought and died for and it is not what Wintrop thinks is true.~
+SAY~ This is the interpretation of Alaundo that most people know, yes. It is not what I believe and it is not what my father believes. It is not what Gorion has fought and died for and it is not what Winthrop thinks is true.~
 = ~ Your Candlekeep chanters are the best example for what is wrong. They repeat the same thing every day without questions or doubts. It is said and heard so often, that in the end everyone believes it is true.~
 = ~And here we have <CHARNAME>. A Bhaalspawn. Powerful, yes. A leader, yes and we follow <PRO_HIMHER>. Yes, <PRO_HESHE> kills foe at great number, yes -but <PRO_HESHE> is not evil, <PRO_HESHE> is only defending <PRO_HIMHER>self.~
 = ~ Read again Alaundo with this example in mind and you will see what was really said. Bhaalspawns will rise, they will be good or bad. In the attempt to rise to power they will inevitably find each other. But in two possible ways - either as rivals for that bloody throne or as the two sides of a medal. The one, according to Alaundo that will have the necessary power and will to stop the victorious Bhaalspawn to ascend to the godhood and throne of the dead god - will be one who possesses equal abilities, ergo another Bhaalspawn.~
 IF ~~THEN REPLY ~ Is this what we are facing now, Sandrah? Our mysterious foe in the dark is a Bhaalspawn and here is the good one to stop him? The weapon the Harpers forged to stop evil.~ GOTO  PidBhaal17
 IF ~~THEN REPLY ~ The rush for Bhaal's throne or return has begun. And here we are in the middle of it all? Hard to believe.~ GOTO  PidBhaal17
-IF ~~THEN REPLY ~ Aloundo's prophesy about the rush for Bhaal's throne or return are rather vague. I heard them every day. There is no reason to believe that all of that happens right now.~ GOTO  PidBhaal17
+IF ~~THEN REPLY ~ Alaundo's prophesy about the rush for Bhaal's throne or return are rather vague. I heard them every day. There is no reason to believe that all of that happens right now.~ GOTO  PidBhaal17
 END
 
 IF~~THEN BEGIN  PidBhaal17
-SAY~ No, <CHARNAME>, this episode here is far from what a clash of the Bhaalspawns for power will look like. And you are not a brainless weapon in somebody's powerplay. You are a fighter and force by your own means.~
-IF~~THEN REPLY ~ Thank you, Sandrah. I have much to think about now. Your tale is not even halfways told but it is getting late now. Let us continue another time.~ EXIT
+SAY~ No, <CHARNAME>, this episode here is far from what a clash of the Bhaalspawns for power will look like. And you are not a brainless weapon in somebody's power play. You are a fighter and force by your own means.~
+IF~~THEN REPLY ~ Thank you, Sandrah. I have much to think about now. Your tale is not even halfway told but it is getting late now. Let us continue another time.~ EXIT
 IF~~THEN REPLY ~ I have the feeling that you take some random events and mix them with some weird old prophesy to make me believe you. For whatever reason...I will find out what your insinuations are really about, be sure.~ EXIT
 END
 
@@ -3667,14 +3667,14 @@ END
 
 IF~~THEN BEGIN SanGodtalk2
 SAY ~ Remember your history lessons in Candlekeep, <CHARNAME>, what did you learn about my goddess?~
-IF~~THEN REPLY~ Actually she was just an adventurer who slayed the former goddess during the period when the avatars walked on Toril. She took the slain one's name and cloak and was made her successor by the Overgod Ao.~ GOTO SanGodtalk3
-IF~~THEN REPLY~ She was human in the beginning. Midnight was one of the adventurers who were called by the Overgod Ao to pursue the renegade gods' avatars on Toril during the Time of Troubles. She and her partner Cyric traced Bhaal and Myrkul, and in a fight of several days finally slayed them. The adventurers were later granted godhood themselves.~ GOTO SanGodtalk3
+IF~~THEN REPLY~ Actually she was just an adventurer who slew the former goddess during the period when the avatars walked on Toril. She took the slain one's name and cloak and was made her successor by the Overgod Ao.~ GOTO SanGodtalk3
+IF~~THEN REPLY~ She was human in the beginning. Midnight was one of the adventurers who were called by the Overgod Ao to pursue the renegade gods' avatars on Toril during the Time of Troubles. She and her partner Cyric traced Bhaal and Myrkul, and in a fight of several days finally slew them. The adventurers were later granted godhood themselves.~ GOTO SanGodtalk3
 IF~~THEN REPLY~ She was a love-hungry party girl who earned herself the nickname *Midnight* and obviously the prototype for young priestesses to follow her. ~ GOTO SanGodtalk3
 END
 
 IF~~THEN BEGIN SanGodtalk3
-SAY ~ (Laughs) You have a way to tell these fundamental religious stories in an even more profane way than I could. Nevermind, you do not hurt anything in me with that. You are completely right. Midnight was an adventurer, providing her magic skills and fighting power to fight evil. A well-known heroine in her time.~
-= ~ She and her friends were appointed then by Ao, alongside Helm, to bring the renegade gods to reason and stop their destructive ploy for power. Ao trusted those mortals more than his godly fellowers to help the good side to win against the darkness. ~
+SAY ~ (Laughs) You have a way to tell these fundamental religious stories in an even more profane way than I could. Never mind, you do not hurt anything in me with that. You are completely right. Midnight was an adventurer, providing her magic skills and fighting power to fight evil. A well-known heroine in her time.~
+= ~ She and her friends were appointed then by Ao, alongside Helm, to bring the renegade gods to reason and stop their destructive ploy for power. Ao trusted those mortals more than his godly fellows to help the good side to win against the darkness. ~
 IF~~THEN REPLY ~ So you see in her more a figure to identify with than a heavenly power that rules your life. I mean, you being yourself an adventurer with magic skills and remarkable fighting power.~GOTO  SanGodtalk4
 IF~~THEN REPLY~ She was a love-hungry party girl who earned herself the nickname *Midnight* and obviously the prototype for young priestesses to follow her. ~ GOTO SanGodtalk4
 END
@@ -3687,7 +3687,7 @@ END
 
 IF~~ THEN BEGIN SanNight2Inv
 SAY ~ My <CHARNAME>, I am hungry again for your tenderness. Please give me a small appetizer right now.~
-IF ~~THEN REPLY ~ (Give her a long passionate kiss while both of your hands tenderly grab the two halfes of her behind, that are unprotected by her armour.) ~ GOTO SanNight2InvGr
+IF ~~THEN REPLY ~ (Give her a long passionate kiss while both of your hands tenderly grab the two halves of her behind, that are unprotected by her armour.) ~ GOTO SanNight2InvGr
 IF~~THEN REPLY ~ (Feed her expectant mouth with a series of short kisses, like a parent bird feeds its hungry young ones.)~ EXIT
 END
 
@@ -3705,7 +3705,7 @@ IF~~THEN REPLY ~ They did not have what I wanted to get for you, sorry Sandrah. 
 END
 
 IF~~ THEN BEGIN SanBuySweet12
-SAY ~ (You slip an exquisit dried and caramelized Thayan fig between her expectant lips.)~
+SAY ~ (You slip an exquisite dried and caramelized Thayan fig between her expectant lips.)~
  = ~ Hm, good. (Her mouth is on yours with her tongue forcing the other half of the sweet between your lips in return.)~
 IF~~ THEN EXIT
 END
@@ -3742,13 +3742,13 @@ IF ~Race(Player1,HALF_ELF) ~ THEN REPLY ~ Did you experience the revery once wit
 END
 
 IF ~~ THEN BEGIN Xanrevery3
-SAY ~ No, my dear, that is the priviledge of your race and an experience from which I will forever be excluded. ~
+SAY ~ No, my dear, that is the privilege of your race and an experience from which I will forever be excluded. ~
 IF ~~ THEN REPLY ~ But you had every other sweet experience with him, so you may imagine how wonderful it is to share his revery with him.~ GOTO Xanrevery5
 IF ~~ THEN REPLY ~ I am sorry, I did not think of that restriction. I just wanted to tell you how wonderful it is, not to make you feel the loss.~ GOTO Xanrevery5
 END
 
 IF ~~ THEN BEGIN Xanrevery4
-SAY ~ No, my dear, that is the priviledge of your bein partly of his race and an experience from which I will forever be excluded.~
+SAY ~ No, my dear, that is the privilege of your being partly of his race and an experience from which I will forever be excluded.~
 IF ~~ THEN REPLY ~ But you had every other sweet experience with him, so you may imagine how wonderful it is to share his revery with him.~ GOTO Xanrevery5
 IF ~~ THEN REPLY ~ I am sorry, I did not think of that restriction. I just wanted to tell you how wonderful it is, not to make you feel the loss.~ GOTO Xanrevery5
 END
@@ -3789,7 +3789,7 @@ IF~ Global("SanEdLoveBoy","LOCALS",2)~ THEN REPLY ~ Your former hate for the red
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
 IF ~ GlobalGT("Mothdream1","GLOBAL",6) Global("SammomQ","LOCALS",0) AreaType(OUTDOOR)~ THEN REPLY ~ Sandrah, would you mind to tell me a bit more about your mother. I am still totally confused by this dream or vision I had - and then to find her portrait with me. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SammomQ1
-IF ~ Global("SanNobility","LOCALS",0) AreaType(CITY) ~ THEN REPLY ~ As a child from a metropole's society I wonder how you feel about nobility and ranks and all such. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanSociety1
+IF ~ Global("SanNobility","LOCALS",0) AreaType(CITY) ~ THEN REPLY ~ As a child from a metropolis's society I wonder how you feel about nobility and ranks and all such. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanSociety1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~ (You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
 IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON)~ THEN REPLY ~ Can you provide us with some wooden stakes, Sandrah?~ GOTO SanMkStake5
@@ -3827,7 +3827,7 @@ IF ~ Global("Formedcloth","GLOBAL",10)~ THEN REPLY ~ Sandrah, this is a good pla
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN LoveSnak1 
@@ -3842,12 +3842,12 @@ END
 
 IF~~THEN BEGIN LoveSnak3
 SAY~ (Dreamily) Raspberries...chocolate pie...vanilla flan...~
-IF~~THEN REPLY~ (Look into your backpack). A dried bisquit...a mouldy walnut...hey, here's a find - pickled herring, oh, but it looks like Haiass has nibbled on it already...Now, how about this. (You serve her a big kiss.)~ EXIT
+IF~~THEN REPLY~ (Look into your backpack). A dried biscuit...a mouldy walnut...hey, here's a find - pickled herring, oh, but it looks like Haiass has nibbled on it already...Now, how about this. (You serve her a big kiss.)~ EXIT
 END
 
 IF~~THEN BEGIN  SanTmplHeal1
 SAY ~ You have done the same, <CHARNAME>, have you forgotten already? It was your blood you gave that rescued Leyala. I was only Mystra's instrument in that.~
-IF~~THEN REPLY ~ I observe that you are a bit shy to be appreciated for your enourmous healing abilities. Not even the high priests at the Temple were able to use the power of the Weave like you did.~ DO~ SetGlobal("SanTmplHealL","LOCALS",1) ~ GOTO SanTmplHeal2
+IF~~THEN REPLY ~ I observe that you are a bit shy to be appreciated for your enormous healing abilities. Not even the high priests at the Temple were able to use the power of the Weave like you did.~ DO~ SetGlobal("SanTmplHealL","LOCALS",1) ~ GOTO SanTmplHeal2
 IF~~THEN REPLY ~ I have my doubts. Not even the high priests at the Temple were able to use the power of the Weave like you did.~ DO~ SetGlobal("SanTmplHealL","LOCALS",1) ~ GOTO SanTmplHeal2
 END
 
@@ -3861,7 +3861,7 @@ END
 IF~~THEN BEGIN  SanTmplHeal3
 SAY ~ Hm. I am reluctant to do so. As I have told you before, Mystra is not one to protect or guide her disciples on their everyday struggle.~
 IF~~THEN REPLY ~ I see, let us not gamble our lives on the protection we might receive from any God. Let us explore and refine our own resources and rely on those.~ EXIT
-IF~~THEN REPLY ~ Mystra helps those who attempt to help themselves - those were your own words once. I understand now that we have to make our own decicions and take our own risks and she might be our aid - or not.~EXIT
+IF~~THEN REPLY ~ Mystra helps those who attempt to help themselves - those were your own words once. I understand now that we have to make our own decisions and take our own risks and she might be our aid - or not.~EXIT
 END
 
 IF ~~ THEN BEGIN  BranLeft1
@@ -3993,7 +3993,7 @@ IF ~~ THEN REPLY ~ One of the women here destined to visit the gods, to travel t
 END
 
 IF ~~ THEN BEGIN GithHint4
-SAY ~ Hm. I follow Midnight's way as I see she did the right things. And she is Mystra now, part and inhabitant of the Weave. Am I granted the priviledge to see her one day? I sure would have a lot to tell her and especially to ask her. About me - about you - about my father - about herself.~
+SAY ~ Hm. I follow Midnight's way as I see she did the right things. And she is Mystra now, part and inhabitant of the Weave. Am I granted the privilege to see her one day? I sure would have a lot to tell her and especially to ask her. About me - about you - about my father - about herself.~
 IF ~~ THEN REPLY ~ A possible explanation, but not the only one.~ EXIT
 IF~InParty("CVJenlig")~THEN REPLY~Maybe Jen'lig can provide us with some insight here?~EXTERN CVJenliJ GithhintJ1
 END
@@ -4025,7 +4025,7 @@ END
 
 IF ~~ THEN BEGIN SanBreCon3
 SAY ~ (Laughs trenchant.) Maybe his horizon is a bit limited, he cannot see as far as taller people can.~
-IF~~THEN REPLY ~Please, Sandrah, I can see you are hurt by such narrow mindedness, but please do not make it worse. I cannot change a granite headed dwarf's oppinions, so I beg you to just be strong enough to ignore his insults.~ GOTO SanBreCon4
+IF~~THEN REPLY ~Please, Sandrah, I can see you are hurt by such narrow mindedness, but please do not make it worse. I cannot change a granite headed dwarf's opinions, so I beg you to just be strong enough to ignore his insults.~ GOTO SanBreCon4
 END
 
 IF ~~ THEN BEGIN SanBreCon4
@@ -4047,7 +4047,7 @@ END
 
 IF ~~ THEN BEGIN  SanSociety3
 SAY ~ I admit that, but I already told you long ago that my aim is to be recognised for my own deeds and not for being Elminster's daughter. I think I can well distinguish between those who compliment me for my own sake and those who do it due to my father.~
-IF ~~ THEN REPLY ~ What is the status of your father in Waterdeep or in the Realms. Is he one of the masked rulers of the city of Splendour or Mystra's archpriest - or both?~ GOTO SanSociety4
+IF ~~ THEN REPLY ~ What is the status of your father in Waterdeep or in the Realms. Is he one of the masked rulers of the city of Splendour or Mystra's arch priest - or both?~ GOTO SanSociety4
 END
 
 IF ~~ THEN BEGIN  SanSociety4
@@ -4071,7 +4071,7 @@ END
 IF ~~THEN BEGIN ZomHom13
 SAY ~ This is about an ancient legend that is common to all the older races on Toril, such as the elves, the orcs and the dwarfs. For many it is more than just a legend but a place that really exists.~
 =~ Sharkta Fai - according to their belief - is a fountain that is said to restore the bodies of those who have fallen in battle before they go hale to the next world after life. It is guarded by a mighty watcher who makes sure that only those who deserve it will be cleaned and restored by the fountain. Any living creature attempting to use it will lose its life to the Guardian without any hope to enter the afterworld.~
-= ~ Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enourmous power but also will gain endless life.~
+= ~ Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enormous power but also will gain endless life.~
 IF ~~ THEN REPLY ~ This will explain the pirate's actions. The prospect of eternal life is reason enough for such a man to kill a whole ship crew and more.~ GOTO ZomHom14
 END
 
@@ -4088,7 +4088,7 @@ IF ~~ THEN REPLY ~ And you mean that Monteelah does not know about those missing
 END
 
 IF ~~THEN BEGIN ZomHom16
-SAY ~ I am sure he has not yet studied those papers himself, otherwise he would not have hidden them and now would need to hunt them. If he had, he would not need them anymore but would rather be out to find those two missing parts. The papers come from different sources and are written in quite a number of differents scripts and old languages. I doubt that a pirate has the knowledge to decipher them. He would need a very learned scholar for such a task.~
+SAY ~ I am sure he has not yet studied those papers himself, otherwise he would not have hidden them and now would need to hunt them. If he had, he would not need them any more but would rather be out to find those two missing parts. The papers come from different sources and are written in quite a number of different scripts and old languages. I doubt that a pirate has the knowledge to decipher them. He would need a very learned scholar for such a task.~
 IF ~~ THEN REPLY ~ Someone like you then, my knowledgeable counsellor. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
 IF ~~ THEN REPLY ~ A monk like those at Candlekeep. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
 END
@@ -4202,7 +4202,7 @@ IF ~~ THEN REPLY ~ Let me think about all of that in a quiet moment, if we still
 END
 
 IF~~THEN BEGIN NiteMass1
-SAY ~ You will feel like brandnew in a few minutes, if you follow my healer's advice strictly. Lay down on this blanket face down now.~
+SAY ~ You will feel like brand new in a few minutes, if you follow my healer's advice strictly. Lay down on this blanket face down now.~
 IF ~~ THEN REPLY ~ (Follow her advice.)~ GOTO NiteMass3
 IF ~~ THEN REPLY ~ In a minute, I first must...(You find yourself face down on the blanket by her feet. You have hardly recognised the slight push and your feet suddenly loosing their grip below you.) ~ GOTO NiteMass2
 IF~~ THEN REPLY ~ But...~ GOTO NiteMass2
@@ -4373,7 +4373,7 @@ IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need
 IF~Global("SanMadele","Global",1)~THEN REPLY~I am contemplating Madele's words about that Harper's raid and the stolen children.~GOTO SanMadel1
 IF~GlobalGT("bd_explosives_plot","Global",1) Global("SanLanciedb","Locals",0)~THEN REPLY~I could see that you had to restrain yourself quite a bit not to strike that Torsin de Lancie down with your hammer.~DO~SetGlobal("SanLanciedb","Locals",1)~ GOTO Lancie1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN SanvaultSum
@@ -5861,7 +5861,7 @@ DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 ==CVJenliJ IF~ InParty("CVJenlig") ~ THEN ~Mammals at play not much different from Githyanki. Jen'lig misses being pleasured this way.~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, you are lucky to be still alive. I heard a rumour in these bushes and just wanted to behead some nasty gibberlings. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Oh, this young love on the eve of doom. Keep on with it while you still can. Too sad there is no tomorrow for you and all of us. ~
-== BCORAN  IF~ InParty("Coran") ~ THEN  ~ Want me to join. I learned the Thay type of massage from a lady I met in...ah, no, I think it was...nevermind. ~
+== BCORAN  IF~ InParty("Coran") ~ THEN  ~ Want me to join. I learned the Thay type of massage from a lady I met in...ah, no, I think it was...Never mind. ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou are not aware of the presence of danger, but thou shouldst.~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competend couselor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
 ==BGARRI IF~InParty("Garrick")~THEN~A few lines to add to my heroine's epos...the aspects of  romance in between the great deeds.~ 
