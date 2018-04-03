@@ -16,8 +16,8 @@ END
 
 IF ~~ THEN BEGIN GiftofM
 SAY ~Yes, this sword is a gift of my goddess Mystra. I was afraid I may miss you before the danger arrived, so I left it with a watcher to make sure you would not be totally defenceless. ~
-IF ~~ THEN REPLY ~So you already tried to help me once, and now you are here yourself to help me again. You have proven your trustworthiness to me, I will be honored if you join me. ~ GOTO SanJoin
-IF ~~ THEN REPLY ~Even then, what would make you do such a thing? What are your motives? I am not sure whether I can trust a total stranger that provides me with an enourmous gift. ~ GOTO Trust
+IF ~~ THEN REPLY ~So you already tried to help me once, and now you are here yourself to help me again. You have proven your trustworthiness to me, I will be honoured if you join me. ~ GOTO SanJoin
+IF ~~ THEN REPLY ~Even then, what would make you do such a thing? What are your motives? I am not sure whether I can trust a total stranger that provides me with an enormous gift. ~ GOTO Trust
 END
 
 IF ~~ THEN BEGIN Trust

@@ -29,7 +29,7 @@ IF ~~ THEN CVRingo  WDretkhatdedS
 == BSANDR~ We had to save the life of Lady Hillath's little boy when we first met him. <CHARNAME> wisely decided the boy's life to be more valuable than to defend the villain at that moment. But we felt we had an obligation to track him down and we found him an his gang hiding in the sewers right next to the garrison.~
 ==CVRingo ~ That villain really has a nerve! Right before our very noses!~
 END
-++ ~ You need to worry no more, Ringhontal, he and his croonies will hurt no one evermore.~ DO ~AddexperienceParty(9000)~  + WDret2
+++ ~ You need to worry no more, Ringhontal, he and his cronies will hurt no one evermore.~ DO ~AddexperienceParty(9000)~  + WDret2
 ++ ~ It was a bloody and heroic battle down there, but it is US who emerged victorious from it. Waterdeep is saved.~ DO ~AddexperienceParty(200)~ + WDret2
 
 CHAIN
@@ -97,7 +97,7 @@ CHAIN
 IF ~~ THEN CVRingo WDTempHeal2
 ~ Yes, the healer performing the ritual will indeed be required to sacrifice a part of herself to repay to the balance of the Weave. And maybe here even more is required. That is why we are in need  of Sandrah here.~
 == BSANDR~ My dearest teacher, enough of the preliminaries. I am blessed by Mystra to aid in cases like the one you describe and there is no discussion necessary at all...~
-== CVRingo ~ Oh, child, I tend to forget how direct and forceful you act. So well. This girlchild Leyala over there on the altar has been brought to us a couple of days ago. The decease it suffers from is beyond any of our skills, it seems her whole blood has been tainted by a dark illness. We only barely keep her alive but unconcious by the force field of the altar itself.~
+== CVRingo ~ Oh, child, I tend to forget how direct and forceful you act. So well. This girl child Leyala over there on the altar has been brought to us a couple of days ago. The decease it suffers from is beyond any of our skills, it seems her whole blood has been tainted by a dark illness. We only barely keep her alive but unconscious by the force field of the altar itself.~
 == BSANDR~ (Sandrah has already moved to Mystra's Altar during Ringhontal's speech and carefully inspects the girl's body.)~
 =~ ...~
 == CVRingo ~ Do you see what we think we see?~
@@ -109,7 +109,7 @@ IF ~~ THEN CVRingo WDTempHeal2
 == CVRingo ~ But both of you will recover, right?~
 == BSANDR~ If all goes well, yes. One more thing, <CHARNAME>, we will need to analyse the blood of our comrades to find some matching one. I can only take a small bit of yours as I do not intend to hurt you more than absolutely necessary.~
 END
-++ ~ This is madness! I will not sacrifice mine or any of my comrad's blood and lifeforce for an unknown girl. If the gods want her life we are not to interfer!~ DO~ SetGlobal("SanWDTemplWi","GLOBAL",4)~ EXIT
+++ ~ This is madness! I will not sacrifice mine or any of my comrade's blood and life force for an unknown girl. If the gods want her life we are not to interfere!~ DO~ SetGlobal("SanWDTemplWi","GLOBAL",4)~ EXIT
 ++ ~ Sandrah, I trust you as much as Ringhontal does. We will help you in any way we can. Do what must be done.~ DO ~ SetGlobal("SanWDTemplWi","GLOBAL",5)~ + WDTempHeal3
 
 CHAIN
@@ -122,8 +122,8 @@ CHAIN
 IF~ Global("SanWDTemplWi","GLOBAL",9)~ THEN CVRingo WDTempHealDone
 ~ Dearest Sandrah, I am so glad to see you and <CHARNAME> well again. You have both taken quite a risk to help poor Leyala.~
 DO~ SetGlobal("SanWDTemplWi","GLOBAL",10)~
-== BSANDR~ Mystra's powers are in deed imense. I am content that the goddess has protected her servant this time. So how is the little girl, Ringhontal?~
-== CVRingo ~Your sacrifice has completely restored her. She has returned to her happy grandmother, her parents having been killed recently by the bandit Khattark. I have anticipated your decision, mylady, and provided the grandmother with a feasible sum from the Temple's resorts. The poor family has suffered hard recently.~ DO~ TakePartyGold(2000)~
+== BSANDR~ Mystra's powers are in deed immense. I am content that the goddess has protected her servant this time. So how is the little girl, Ringhontal?~
+== CVRingo ~Your sacrifice has completely restored her. She has returned to her happy grandmother, her parents having been killed recently by the bandit Khattark. I have anticipated your decision, my lady, and provided the grandmother with a feasible sum from the Temple's resorts. The poor family has suffered hard recently.~ DO~ TakePartyGold(2000)~
 == BSANDR~ Splendid, good Ringhontal. Is that all we can do this time at Waterdeep?~
 == CVRingo ~ Yes, that is all this time. And let me say, brave girl, it was not little that you accomplished during this brief stay. Our goddess smiles upon you and blesses you. I am entitled to give you this item from Mystra's own travelling days to aid you in the times ahead of you, my child.~
 == BSANDR~ One of Midnights's own items. I will wear it proudly, Ringhontal. Farewell, my friend.~ DO~ AddSpecialAbility("cvdrag2") AddSpecialAbility("sanhand") GiveItemCreate("cvmybelt","CVSandr",0,0,0) AddSpecialAbility("sanhand") AddSpecialAbility("spin101")~
@@ -154,9 +154,9 @@ IF~Global("SanVampWDQuest","GLOBAL",8)~THEN CVRingo StartVampQ1
 DO~SetGlobal("SanVampWDQuest","GLOBAL",9)~
 == BSANDR~Ringhontal, the temple allows me extremely great freedom in my actions, but still I am a disciple of our Goddess and I serve this temple. If you call me there must be such need.~
 == CVRingo ~This is what has happened.~
-=~ A few days ago, fishermen sighted a ship adrift not far from our harbour. There was no sign of a crew but also no sign of havary or battle on the ship. When the harbour master brought it on anchor it was found to be our own merchant ship *Harare* that was expected home already one month ago from Port Nyranzaru.~
+=~ A few days ago, fishermen sighted a ship adrift not far from our harbour. There was no sign of a crew but also no sign of average or battle on the ship. When the harbour master brought it on anchor it was found to be our own merchant ship *Harare* that was expected home already one month ago from Port Nyranzaru.~
 = ~ Further investigations showed no trace of what had happened on board, everything was intact with the only exception that there was no trace of the crew. The only living things on board were masses of rats, but even an attack of those on the crew could be excluded.~
-=~ The ship was left well ouside the harbour at anchor and the harbour master ordered a quarantine on that area. Starting from the following night we have received a couple of alarming reports from up and down the coast. People swear they have seen nightly creatures roaming - and we found the body of a curious fisherman who must have gone near that ship in the dark disregarding the strict orders to keep away. The body was bloodless.~
+=~ The ship was left well outside the harbour at anchor and the harbour master ordered a quarantine on that area. Starting from the following night we have received a couple of alarming reports from up and down the coast. People swear they have seen nightly creatures roaming - and we found the body of a curious fisherman who must have gone near that ship in the dark disregarding the strict orders to keep away. The body was bloodless.~
 == BSANDR~ Vampires?~
 == CVRingo ~We think so, and pretty mighty ones as it seems. However, neither our searching of the ship again nor our divination has revealed any trace of vampires or any other creature on that ship. There is no hiding place or sarcophagus where any such creature could spend the hours of daylight.~
 == BSANDR~You were right to call us, Ringhontal, and I am glad you have not traced the creatures, whoever they are. Do not forget they have eliminated a whole crew of able seamen without the trace of a fight. You would have been in great danger if they had confronted you.~
