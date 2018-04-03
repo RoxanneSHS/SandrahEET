@@ -1365,8 +1365,8 @@ END
 
 IF ~Global("Formedcloth","GLOBAL",6) Global("SanRomPath","GLOBAL",1)~ THEN BEGIN Formedcloth20
 SAY ~ *Take this symbol of what you are*. What did Mystra give you, <CHARNAME>?~
-IF~~THEN REPLY ~ It is a baby statue, clad with the bedcloth we have reconstructed. What does it mean?~ GOTO Formedcloth21
-IF~~THEN REPLY ~ A baby replica clad in the bedcloth we have reconstructed. Is that me? Does it mean the child that was rescued, hidden and hunted was me?~ GOTO Formedcloth21
+IF~~THEN REPLY ~ It is a baby statue, clad with the bed cloth we have reconstructed. What does it mean?~ GOTO Formedcloth21
+IF~~THEN REPLY ~ A baby replica clad in the bed cloth we have reconstructed. Is that me? Does it mean the child that was rescued, hidden and hunted was me?~ GOTO Formedcloth21
 END
 
 IF~~THEN BEGIN Formedcloth21
@@ -1377,8 +1377,8 @@ END
 
 IF ~Global("Formedcloth","GLOBAL",6) Global("SanRomPath","GLOBAL",2)~ THEN BEGIN Formedcloth30
 SAY ~ *Take this symbol of what you are*. What did Mystra give you, <CHARNAME>?~
-IF~~THEN REPLY ~ It is a baby statue, clad with the bedcloth we have reconstructed, a little girl. What does it mean?~ GOTO Formedcloth21
-IF~~THEN REPLY ~ A babygirl replica clad in the bedcloth we have reconstructed. Is that me? Does it mean the child that was rescued, hidden and hunted was me?~ GOTO Formedcloth31
+IF~~THEN REPLY ~ It is a baby statue, clad with the bed cloth we have reconstructed, a little girl. What does it mean?~ GOTO Formedcloth21
+IF~~THEN REPLY ~ A baby girl replica clad in the bed cloth we have reconstructed. Is that me? Does it mean the child that was rescued, hidden and hunted was me?~ GOTO Formedcloth31
 END
 
 IF~~THEN BEGIN Formedcloth31
@@ -1396,7 +1396,7 @@ END
 
 IF~~ THEN BEGIN DreamReact11
 SAY ~ Will it help you to tell me that dream? It has changed you, <CHARNAME>, you have found new abilities in yourself.~
-IF~~ THEN REPLY ~ It was just a dream, nevermind. Those abilities come from our experience on the road.~ GOTO DreamReact12
+IF~~ THEN REPLY ~ It was just a dream, never mind. Those abilities come from our experience on the road.~ GOTO DreamReact12
 IF~~THEN REPLY ~ (Tell her about your dream and your new found ability.)~ GOTO DreamReact13
 END
 
@@ -1457,9 +1457,9 @@ IF~~THEN REPLY ~  What? They have been found very far apart from each other. How
 END
 
 IF ~~ THEN BEGIN Twop2
-SAY ~ It looks somehow like the patterns that were on my bedcloth when I was very young back at my father's house in Waterdeep.~
-IF~~THEN REPLY ~  Incredible, how would pieces of your bedcloth come to places shattered throughout the Sword Coast? ~ GOTO Twop3
-IF~~THEN REPLY ~ Are you sure? I will not go out and chase phantoms all over Faerun for a bit of child's bedclothes.~ GOTO Twop3
+SAY ~ It looks somehow like the patterns that were on my bed cloth when I was very young back at my father's house in Waterdeep.~
+IF~~THEN REPLY ~  Incredible, how would pieces of your bed cloth come to places shattered throughout the Sword Coast? ~ GOTO Twop3
+IF~~THEN REPLY ~ Are you sure? I will not go out and chase phantoms all over Faerun for a bit of child's bed clothes.~ GOTO Twop3
 END
 
 IF ~~ THEN BEGIN Twop3
@@ -1537,7 +1537,7 @@ IF ~~ THEN REPLY~ If finally her love for you will be stronger than her love for
 END
 
 IF ~~ THEN BEGIN SanBranDec4
-SAY ~ That is not what I fear. This is not the decision she will have to make. It is the choice between us or Tempus. Her god requires the total devotion of his priests. Our arguments that to fight for the good and the loved ones should be pleasing to Tempus, may not be strong enough in the end. I do not want to be a doomsayer on this happy day, but I do not want you to be completely unprepared.~
+SAY ~ That is not what I fear. This is not the decision she will have to make. It is the choice between us or Tempus. Her god requires the total devotion of his priests. Our arguments that to fight for the good and the loved ones should be pleasing to Tempus, may not be strong enough in the end. I do not want to be a doom sayer on this happy day, but I do not want you to be completely unprepared.~
 IF ~~ THEN REPLY~ And my priestess of Mystra? Are you maybe trying to prepare me for something in that respect as well?~ GOTO SanBranDec5
 END
 
@@ -1586,7 +1586,7 @@ IF~~ THEN REPLY ~ You astonish me, Sandrah. You are normally the most content an
 END
 
 IF~~THEN BEGIN WarnEd2
-SAY~ My goddess tolerates their schemings, and probably you should expect me to do the same. But my position is clear, Mystra's powers in the end have to be used to create something positive. The red wizards are only interested in the power they can gain from magic - they do not care for good or evil and work for anyone they expect to give them more power and wealth.~
+SAY~ My goddess tolerates their scheming, and probably you should expect me to do the same. But my position is clear, Mystra's powers in the end have to be used to create something positive. The red wizards are only interested in the power they can gain from magic - they do not care for good or evil and work for anyone they expect to give them more power and wealth.~
 IF ~~ THEN REPLY ~ I think, my counsellor, at the moment I better trust my own judgement. Yours is somehow tinted by your dislike of the red wizards in general.~ DO ~ SetGlobal("WarnEd","GLOBAL",2)~EXIT
 END
 
@@ -1674,7 +1674,7 @@ END
 
 IF~~ THEN BEGIN ShanMys4
 SAY~ Right, you would not expect me to follow a goddess of the nature just described. Mystra is a tolerant goddess as are her priests, such as I. My intention is to help and heel and support those who try to do good - those like you. Things are not always black or white, you surely know. Not every little bit of error needs the immediate intervention of a god, like a Helmite would make us believe.~
-= ~ In the end, many of those who try to achieve great power and richess on behalf of their fellowbeings by misusing Mystra's gift end up like those we meet right here. They entangle themselves in their own traps, they put themselves far outside of the community of others and they end alone and helpless out in the cold.~
+= ~ In the end, many of those who try to achieve great power and riches at expense of their fellow beings by misusing Mystra's gift end up like those we meet right here. They entangle themselves in their own traps, they put themselves far outside of the community of others and they end alone and helpless out in the cold.~
 = ~ For the rest, well, true followers of Mystra like me and my father go out and deal with them. And we encourage others, even those who do not rely on magic resources, to stand up against those who err too far from what is still acceptable.~
 IF ~~ THEN REPLY ~ So Mystra in the end helps those who first take their own courage to do something and decide to act against what is wrong.~ GOTO ShanMys5
 END
@@ -1708,14 +1708,14 @@ IF ~~ THEN DO ~ SetGlobal("RoadFound","GLOBAL",2) ~ EXIT
 END
 
 IF~Global("WDIntrotalk","LOCALS",1)~THEN BEGIN FirstWDIntro1
-SAY~Welcome to my hometown, <CHARNAME>. May I give you some initial introduction to this area.~
+SAY~Welcome to my home town, <CHARNAME>. May I give you some initial introduction to this area.~
 IF~~THEN REPLY~Hey, I'm an adventurer by now, I like to explore things myself.~DO~SetGlobal("WDIntrotalk","LOCALS",2)~GOTO FirstWDIntroO
-IF~~THEN REPLY~The City of Splendor is quite large, your aid is much welcome.~GOTO FirstWDIntro2
+IF~~THEN REPLY~The City of Splendour is quite large, your aid is much welcome.~GOTO FirstWDIntro2
 IF~~THEN REPLY~Just tell me what is in our immediate surrounding.~DO~SetGlobal("WDIntrotalk","LOCALS",3)~GOTO FirstWDIntro2
 END
 
 IF~~THEN BEGIN FirstWDIntro2
-SAY~We have arrived in the south western ward of town, centered around the Temples of Waukeen, Siamorphe, and Sharess. Here we find a lot of entertainment and - (laughs) - a warm thermal bath house in the south.~
+SAY~We have arrived in the south western ward of town, centred around the Temples of Waukeen, Siamorphe, and Sharess. Here we find a lot of entertainment and - (laughs) - a warm thermal bath house in the south.~
 IF~~THEN REPLY~Thanks, let us take a look at all that.~DO~SetGlobal("WDIntrotalk","LOCALS",3)~GOTO FirstWDIntroO
 IF~~THEN REPLY~I know about Waukeen, the god of commerce and trade, but who are those other two you mentioned?~GOTO FirstWDIntroG
 IF~~THEN REPLY~Where else can we go from here?~GOTO FirstWDIntro3
@@ -1723,13 +1723,13 @@ END
 
 IF~~THEN BEGIN FirstWDIntroG
 SAY~Sharess actually has no temple but a festhall to worship dance, music...all carnal pleasures, she is the goddess of Hedonism.~
-=~Siamorphe is a local demi-goddess, her portifolio is the Devine Right by which the noble leaders rule the masses responsibly and she is thus worshipped by those with inherited wealth and power.~
+=~Siamorphe is a local demi-goddess, her portfolio is the Divine Right by which the noble leaders rule the masses responsibly and she is thus worshipped by those with inherited wealth and power.~
 IF~~THEN REPLY~Thanks, let us take a look at all that.~DO~SetGlobal("WDIntrotalk","LOCALS",3)~GOTO FirstWDIntroO
 IF~~THEN REPLY~Where else can we go from here?~GOTO FirstWDIntro3
 END
 
 IF~~THEN BEGIN FirstWDIntroO
-SAY~You may ask me anytime for assistance again.~
+SAY~You may ask me any time for assistance again.~
 IF~~THEN EXIT
 END
 
@@ -1786,7 +1786,7 @@ IF ~~ THEN BEGIN WhoFather2
 SAY ~ Dear <CHARNAME>, so shy? What lays so heavy on your mind? (She smiles encouraging.) ~
 IF ~~ THEN REPLY ~ Yes, Sandrah, there is something on my mind that keeps worrying me. Your heritage, em, I mean your father...~ GOTO WhoFather3
 IF ~~ THEN REPLY ~ Em...you look lovely, Sandrah. (Give her a quick kiss on the cheek.) ~ GOTO WhoFatherShy
-IF ~~ THEN REPLY ~ Em...nevermind.~ GOTO WhoFatherShy
+IF ~~ THEN REPLY ~ Em...never mind.~ GOTO WhoFatherShy
 END
 
 IF ~~ THEN BEGIN WhoFatherShy
@@ -1805,7 +1805,7 @@ SAY ~ Yes.~
 = ~ This is not a secret - as you have experienced through the people we have met during our travels together.~
 IF ~~ THEN REPLY ~ How could I have been so blind? You must really think I am a fool and you secretly laugh about me? ~  GOTO WhoFather5
 IF ~~ THEN REPLY ~ And you tried to hide this very fact from me? Why? What is your game here, Elminster's daughter? --- You are his spy!! ~ GOTO WhoFather5
-IF ~~ THEN REPLY ~ Wow, that explains a lot. This must be quite a burdon for a young girl who wants to find her own way in life. ~ GOTO WhoFather5
+IF ~~ THEN REPLY ~ Wow, that explains a lot. This must be quite a burden for a young girl who wants to find her own way in life. ~ GOTO WhoFather5
 IF ~~ THEN REPLY ~ You are a liar and manipulator through and through - and now I know why!~  GOTO WhoFather5
 END
 
@@ -1858,7 +1858,7 @@ END
 // Tarnesh Attack
 
 IF ~ Global("Tarded","GLOBAL",1) AreaCheck("bg2300") ~ THEN BEGIN BountyHu
-SAY ~ (Sandrah cleans a bloodspot on her weapon with disgust.)~
+SAY ~ (Sandrah cleans a blood spot on her weapon with disgust.)~
 IF~~THEN REPLY ~ How did you know in advance that this was a bounty hunter?~ GOTO BountyHu2
 END
 
@@ -1914,7 +1914,7 @@ END
 IF~ Global("PixieHint","GLOBAL",2) ~ THEN BEGIN PixieHint
 SAY ~ Have you heard, <CHARNAME>, the girl mentioned a cave with hellish smelling creatures. I am sure our goal is nearby.~
 IF ~~THEN REPLY ~ We better prepare ourselves then, this will not be an easy battle. ~ DO ~ SetGlobal("PixieHint","GLOBAL",3)~EXIT
-IF ~~THEN REPLY ~ Hm, childish phantasies, you heard her talk about her cat's seven lives. She is a bit deranged, I think, not to be believed.~ DO ~ SetGlobal("PixieHint","GLOBAL",3)~ EXIT
+IF ~~THEN REPLY ~ Hm, childish fantasies, you heard her talk about her cat's seven lives. She is a bit deranged, I think, not to be believed.~ DO ~ SetGlobal("PixieHint","GLOBAL",3)~ EXIT
 IF ~~THEN REPLY ~ Yes, I guessed so myself, first the demonic scroll and now this child. It all matches, we must be very close.~ DO ~ SetGlobal("PixieHint","GLOBAL",3)~ EXIT
 END
 
@@ -1954,7 +1954,7 @@ IF~~THEN REPLY~ Oh, my lovely tease. Has somebody told you already that your opt
 END
 
 IF~Global("SanSecrt","BG0300",2)~THEN BEGIN SanWallPass1
-SAY~ Interesting...this must be the place. (Sandrah closes her tome and stares inquisitely at a haystack near the mighty castle wall.)~
+SAY~ Interesting...this must be the place. (Sandrah closes her tome and stares inquisitively at a haystack near the mighty castle wall.)~
 IF~~THEN REPLY~Haha, have you found the needle we look for in this haystack?~DO~SetGlobal("SanSecrt","BG0300",3)~GOTO SanWallPass2
 IF~~THEN REPLY~It must be more than an ordinary haystack if it is mentioned in your all-knowing book?~DO~SetGlobal("SanSecrt","BG0300",3)~GOTO SanWallPass2
 END
@@ -1974,7 +1974,7 @@ END
 
 IF~~THEN BEGIN SanMagtrav2
 SAY~ (Sandrah seems to be lost in her thoughts without paying much attention to your responses.)~
-=~ A skyship would draw too much attention to a party that better operates more discreet...but those formulas in the book...integrated with my parcels abilities...hm, hm, hm...~
+=~ A sky ship would draw too much attention to a party that better operates more discreet...but those formulas in the book...integrated with my parcels abilities...hm, hm, hm...~
 IF~~THEN REPLY~Anything in your considerations you like to share with us, Sandrah?~ DO~SetGlobal("HalItems","BG0153",3)~ GOTO SanMagtrav3
 IF~~THEN REPLY~(Leave her to her musings knowing she will come out with her results when the time is ripe - which may be in quite a long while with her.)~DO~SetGlobal("HalItems","BG0153",3)~ EXIT
 END
@@ -1986,7 +1986,7 @@ IF~~THEN REPLY~You and your secrets. I know, if it helps the company you'll come
 END
 
 IF ~ Global("SanIrThr","LOCALS",1)~ THEN BEGIN SanIrThrSar1
-SAY ~ It seems that everything we had deducted so far is actually true. Rieltar and the Iron Throne have lost control of the operation. No one seems to really care about us anymore.~
+SAY ~ It seems that everything we had deducted so far is actually true. Rieltar and the Iron Throne have lost control of the operation. No one seems to really care about us any more.~
 IF~~THEN REPLY ~ No one except for Sarevok, that is. His plans in deed seem to be quite different from those of the Iron Throne's leaders - or we have disturbed him so much, that he somehow lost control himself.~ GOTO SanIrThrSar2
 END
 
@@ -2002,7 +2002,7 @@ IF~~THEN REPLY ~ Hm?~ GOTO SanIrThrSar4
 END
 
 IF ~~ THEN BEGIN SanIrThrSar4
-SAY~ That was not what we have expected. Quite some fight, but just mercenairies nonetheless. Our real foe are not here it seems.~
+SAY~ That was not what we have expected. Quite some fight, but just mercenaries nonetheless. Our real foe are not here it seems.~
 IF~~ THEN REPLY ~ Haven't we heard a rumour before, that they might be at Candlekeep?~ DO~ SetGlobal("SanIrThr","LOCALS",4)~ EXIT
 IF~~ THEN REPLY ~ Let us seek the rooms for any evidence we may produce to Eltan and the authorities. And for any trace of these bastards.~ DO~ SetGlobal("SanIrThr","LOCALS",4)~ EXIT
 END
@@ -2231,7 +2231,7 @@ END
 
 IF ~~ THEN BEGIN GetPetScrInf
 SAY ~ Well, first thing to do is to get us a mage scroll for our mission. As I do not have the spell memorized, we need to purchase one from a temple. The Morninglord Temple of Beregost or Helm's Temple at Nashkel should have a stone to flesh scroll that we can buy. ~
-= ~ Then we need to find the statue. What I saw in the shard was an area with tents and merchants and banners. So it looked like a market in a big town or maybe a festival of sorts. We should try to find such an event and then keep our eyes open, maybe some derranged misfit uses the poor statue as a weird attraction to make some money. ~
+= ~ Then we need to find the statue. What I saw in the shard was an area with tents and merchants and banners. So it looked like a market in a big town or maybe a festival of sorts. We should try to find such an event and then keep our eyes open, maybe some deranged misfit uses the poor statue as a weird attraction to make some money. ~
 IF ~ PartyHasItem("SCRLPET")~ THEN REPLY~ I have such a scroll with me, Sandrah, so will keep it for our task. Disgusting to think of what some people will do for a few coins. You were right to urge me for help. Wasn't there talk of some carnival I picked up recently? Where was it...~ DO ~ SetGlobal("SanBranSearchRem","GLOBAL",3) AddJournalEntry(@11,QUEST) ~ EXIT
 IF~!PartyHasItem("SCRLPET")~ THEN REPLY ~ Disgusting to think of what some people will do for a few coins. You were right to urge me for help. Wasn't there talk of some carnival I picked up recently? Where was it...~
 DO ~ SetGlobal("SanBranSearchRem","GLOBAL",3) AddJournalEntry(@11,QUEST) ~ EXIT
@@ -2250,7 +2250,7 @@ END
 
 IF ~~ THEN BEGIN PetScrCar3
 SAY ~ I am sure she is here, the scenery is exactly what I saw in the shard. We must hurry to her rescue, <CHARNAME>!~
-IF ~!PartyHasItem("SCRLPET")~ THEN REPLY ~ But we do not yet have the spell you adviced me to buy for this purpose. ~ GOTO PetScrCar4
+IF ~!PartyHasItem("SCRLPET")~ THEN REPLY ~ But we do not yet have the spell you advised me to buy for this purpose. ~ GOTO PetScrCar4
 IF ~PartyHasItem("SCRLPET")~ THEN REPLY ~ We will free her as fast as we can. Everybody look out for a statue that looks almost human. Sandrah, I promise you, we will find her.~ DO ~ SetGlobal("SanBranSearchRem","GLOBAL",5)~ EXIT
 END
 
@@ -2296,7 +2296,7 @@ IF~~THEN REPLY~ Nevermind.~EXIT
 END
 
 IF ~~ THEN BEGIN StandardComp2
-SAY ~ (Laughs) Oh, <CHARNAME>, don you not think I have heard that before. Let us move on before we end up in silly city smalltalk. (Sandrah grins brightly at you) ~
+SAY ~ (Laughs) Oh, <CHARNAME>, don you not think I have heard that before. Let us move on before we end up in silly city small talk. (Sandrah grins brightly at you) ~
 IF ~~ THEN DO ~ SetGlobal("SanPidPack","GLOBAL",3)~ EXIT
 END
 
@@ -2322,8 +2322,8 @@ END
 
 IF ~~ THEN BEGIN SanWater
 SAY ~ I was born and raised in Waterdeep. My father is well known there, as well as in some other places... ~
-IF ~~ THEN REPLY ~ So a real big city girl. I should have known by your exquisit robes and looks. ~ GOTO NoSnob
-IF ~~ THEN REPLY ~ This is a surprise. Even with your exquisit robes and looks you make a pretty good fighter. You are not the average big city snob. ~ GOTO NoSnob
+IF ~~ THEN REPLY ~ So a real big city girl. I should have known by your exquisite robes and looks. ~ GOTO NoSnob
+IF ~~ THEN REPLY ~ This is a surprise. Even with your exquisite robes and looks you make a pretty good fighter. You are not the average big city snob. ~ GOTO NoSnob
 END
 
 IF ~~ THEN BEGIN NoSnob
@@ -2338,7 +2338,7 @@ IF ~~ THEN REPLY ~ If this is really an answer, then it is a rather cryptic one.
 END
 
 IF ~~ THEN BEGIN SanCryptic
-SAY ~ I admit it is. I also admit that to say: just wait and see, is not any better. But I have to ask for your patience once more. Once you have learned more about yourself and the situation here and my father's envolvement, you will understand me. ~
+SAY ~ I admit it is. I also admit that to say: just wait and see, is not any better. But I have to ask for your patience once more. Once you have learned more about yourself and the situation here and my father's involvement, you will understand me. ~
 IF ~~ THEN REPLY ~ Looks like your father plays quite some role here. ~  GOTO SanWater
 END
 
@@ -2413,7 +2413,7 @@ END
 
 IF~~ THEN BEGIN SanCorMal1
 SAY~ (Smiles) Jealous that he advances me in such a shameless way?~
-IF~~THEN REPLY~ I see, obviously he does it to every girl that is not completely undesireable or too fast to escape him in time.~ DO ~ SetGlobal("SanCorMale","LOCALS",1)~ GOTO SanCorMal2
+IF~~THEN REPLY~ I see, obviously he does it to every girl that is not completely undesirable or too fast to escape him in time.~ DO ~ SetGlobal("SanCorMale","LOCALS",1)~ GOTO SanCorMal2
 END
 
 IF ~~ THEN BEGIN SanCorMal2
@@ -2444,12 +2444,12 @@ IF~~THEN REPLY ~ Are you aware of any specific problems that may trouble the peo
 END
 
 IF~~THEN BEGIN  SanAskBH12
-SAY ~ A gentle old half-elf named Billy Bob may still live here in his retirement. He is an aquaintance of my father and somehow also involved with the Harpers. If we find him, he may know of the problems in this otherwise boring place.~
+SAY ~ A gentle old half-elf named Billy Bob may still live here in his retirement. He is an acquaintance of my father and somehow also involved with the Harpers. If we find him, he may know of the problems in this otherwise boring place.~
 IF ~~ THEN REPLY ~ A retired half-elf? Wonder what elves retire from, mh.~ DO ~ SetGlobal("SanAskBH1","LOCALS",1)~EXIT
 END
 
 IF~~THEN BEGIN  SanAskBH13
-SAY ~ If we find an old half-elf named Billy Bob, he may know of the problems in this otherwise boring place. He is an aquaintance of my father and was somehow also involved with the Harpers before his retirement.~
+SAY ~ If we find an old half-elf named Billy Bob, he may know of the problems in this otherwise boring place. He is an acquaintance of my father and was somehow also involved with the Harpers before his retirement.~
 IF ~~ THEN REPLY ~ A retired half-elf? Wonder what elves retire from, mh.~ DO ~ SetGlobal("SanAskBH1","LOCALS",1)~EXIT
 END
 
@@ -2470,7 +2470,7 @@ IF ~~ THEN REPLY ~ As old as Candlekeep or Baldur's Gate perhaps.~ GOTO SanTorq4
 END
 
 IF ~~ THEN BEGIN SanTorq4
-SAY ~ Those places you mention are not really old, compared to the long ages that were before them. No, this lore is from times further in the dark. Places like Ulcaster or the Firewine Bridge, or even places not longer remembered anymore by the people of the Sword Coast today. Some old ruins, places yet to be discovered.~
+SAY ~ Those places you mention are not really old, compared to the long ages that were before them. No, this lore is from times further in the dark. Places like Ulcaster or the Firewine Bridge, or even places not longer remembered any more by the people of the Sword Coast today. Some old ruins, places yet to be discovered.~
 IF~~THEN REPLY~ Maybe we will find such places on our quests. I remember a guy who had been to Candlekeep a while ago, a scientist Charleston Nib who planned the excavation of some ancient settlement on the Sword Coast. Maybe such are places where we should keep our eyes open.~ DO ~ SetGlobal("SanTorq","LOCALS",1) ~EXIT
 END
 
@@ -2498,10 +2498,10 @@ IF ~~ THEN REPLY ~ THAT Drizzt Do'Urden? You are quite some storyteller.~ GOTO S
 END
 
 IF ~~ THEN BEGIN SanFiSkills4
-SAY ~ I see, his name made it even to the enclosure of Candlekeep. So, Drizzt decided not to clarify the situation of him being a visitor to my father, but rather continued to fight with me. We went for a bit when suddendly my father was standing in the door and burst into a big laughter.~
+SAY ~ I see, his name made it even to the enclosure of Candlekeep. So, Drizzt decided not to clarify the situation of him being a visitor to my father, but rather continued to fight with me. We went for a bit when suddenly my father was standing in the door and burst into a big laughter.~
 = ~ So after the situation was clarified, Drizzt declared that he was quite impressed by my natural talent as a melee fighter, even showing a couple of real bad bruises he had taken from me. It was then decided that he would give me some real training whenever he was in Waterdeep and could spare the time.~
 IF ~ Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN REPLY ~ Fighting lessons from Drizzt Do'Urden, oh my, no wonder you know what you are doing.~ EXIT
-IF ~ Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN REPLY ~ Fighting lessons from Drizzt Do'Urden, oh my, no wonder you know what you are doing. Next thing I learn from you that Elminster himself tutored your spellcasting, haha. (Sandrah smiles secretly to herself.) ~  EXIT
+IF ~ Global("PCKnowsElmDaughter","GLOBAL",0)~ THEN REPLY ~ Fighting lessons from Drizzt Do'Urden, oh my, no wonder you know what you are doing. Next thing I learn from you that Elminster himself tutored your spell casting, haha. (Sandrah smiles secretly to herself.) ~  EXIT
 END
 
 IF ~~ THEN BEGIN SanStrBe
@@ -2892,7 +2892,7 @@ IF ~~ THEN REPLY ~And his strange accent?~ DO~ SetGlobal("SanMendas","LOCALS",1)
 END
 
 IF~~ THEN BEGIN SanMendas2
-SAY~Different classes of our town speak different colloqial slangs - his is none of them. But then the City of Splendor holds people from all places and races and their languages.~
+SAY~Different classes of our town speak different colloqial slangs - his is none of them. But then the City of Splendour holds people from all places and races and their languages.~
 =~ Still....~
 IF ~~ THEN REPLY ~Still?~ GOTO SanMendas3
 END
@@ -3142,14 +3142,14 @@ IF ~~ THEN REPLY ~  Sadly enough, you also learned his ways of manipulation and 
 END
 
 IF~~ THEN BEGIN SanVisWDFA
-SAY ~ Just a thought that comes to my mind when the Friendly Arm and old lore are mentioned. Something about my hometown Waterdeep.~
+SAY ~ Just a thought that comes to my mind when the Friendly Arm and old lore are mentioned. Something about my home town Waterdeep.~
 IF ~~ THEN REPLY ~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO ~ SetGlobal("SanVisWDFA","LOCALS",1)~ GOTO SanVisWD
 END
 
 
 IF~~ THEN BEGIN SanVisWD
 SAY ~ I very much would like to do so. Although we meet my father out here from time to time, I would dearly like to share with you a bit of where I came from.~
-= ~ Besides, our house and garden would give us all the opportunity to relax for a day or so. And last but not least there is the City of Splendor itself with all its attractions.~
+= ~ Besides, our house and garden would give us all the opportunity to relax for a day or so. And last but not least there is the City of Splendour itself with all its attractions.~
 IF ~~ THEN REPLY ~ Now that I know you and your resources a bit better, I cannot imagine that you would not have a means to take us there somehow, am I right? ~ DO ~ SetGlobal("SanVisWD","LOCALS",1)~ GOTO SanVisWD2
 IF ~~ THEN REPLY ~ Good ideas, but with the roads cut off by the present situation, Waterdeep is far beyond the regions we can go to at the moment, even if our current tasks would allow for a day of relaxation. ~ DO ~ SetGlobal("SanVisWD","LOCALS",1) ~ GOTO SanVisWD2
 IF ~~ THEN REPLY ~ A town full of wealth and a palace filled with magical items! A valid perspective to leave ol' Sword Coast for a while. ~ DO ~ SetGlobal("SanVisWD","LOCALS",1) IncrementGlobal("Sanpoints","GLOBAL",-1)~ GOTO SanVisWD2
@@ -3162,7 +3162,7 @@ IF ~~ THEN REPLY ~ Spit it out already, woman!~ GOTO SanVisWD3
 END
 
 IF~~ THEN BEGIN  SanVisWD3
-SAY ~ There is the story of the Old Waterdeep Road that was supposed to run between the City of Splendor and the Friendly Arm Inn. Even in the old times, it was kept secret among the elves and dwarves and other innates that helped in the building and development of Waterdeep. The lore has it, that on this road travelling times between the Sword Coast and Waterdeep would only be a few hours.~
+SAY ~ There is the story of the Old Waterdeep Road that was supposed to run between the City of Splendour and the Friendly Arm Inn. Even in the old times, it was kept secret among the elves and dwarves and other innates that helped in the building and development of Waterdeep. The lore has it, that on this road travelling times between the Sword Coast and Waterdeep would only be a few hours.~
 IF ~~ THEN REPLY ~ But we know the vicinity of the Arm quite well. It seems that no such road is there today.~  GOTO SanVisWD4
 IF ~~ THEN REPLY ~ If this road has ever existed, it is surely no longer there. We must have found it otherwise during our travels.~ GOTO SanVisWD4
 IF ~~ THEN REPLY ~ Why do you hold us up with such boring old crap. There is no such road anymore and you know it.~ GOTO SanVisWD4
@@ -4047,7 +4047,7 @@ END
 
 IF ~~ THEN BEGIN  SanSociety3
 SAY ~ I admit that, but I already told you long ago that my aim is to be recognised for my own deeds and not for being Elminster's daughter. I think I can well distinguish between those who compliment me for my own sake and those who do it due to my father.~
-IF ~~ THEN REPLY ~ What is the status of your father in Waterdeep or in the Realms. Is he one of the masked rulers of the city of splendor or Mystra's archpriest - or both?~ GOTO SanSociety4
+IF ~~ THEN REPLY ~ What is the status of your father in Waterdeep or in the Realms. Is he one of the masked rulers of the city of Splendour or Mystra's archpriest - or both?~ GOTO SanSociety4
 END
 
 IF ~~ THEN BEGIN  SanSociety4
@@ -4719,8 +4719,8 @@ END
 
 IF~~ THEN BEGIN SanImoBhaCon3
 SAY ~ A girl of about your own age. A girl sent off with Winthrop to Candlekeep in the same way you were sent with Gorion. No real evidence that this girl had not reached Candlekeep at the same time that you reached there with Gorion.~
-IF ~GlobalLT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon4
-IF ~GlobalGT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bedcloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon5
+IF ~GlobalLT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bed cloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon4
+IF ~GlobalGT("OrcPrison","GLOBAL",8)~  THEN REPLY ~ The torn bed cloth? A pirate's trick then to mislead the hunters. We are sure the Othlor has not got her.~ GOTO SanImoBhaCon5
 END
 
 
@@ -4868,7 +4868,7 @@ END
 IF~~THEN BEGIN Lancie1
 SAY~I never liked that man in Waterdeep and this has not improved today.~
 IF~~THEN REPLY~Was he one of your former...~ GOTO Lancie2
-IF~~THEN REPLY~So you crossed each other's path in your hometown already.~ GOTO Lancie3
+IF~~THEN REPLY~So you crossed each other's path in your home town already.~ GOTO Lancie3
 END
 
 IF~~THEN BEGIN Lancie2
