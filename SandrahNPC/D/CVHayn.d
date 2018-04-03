@@ -40,7 +40,7 @@ END
 
 CHAIN
 IF ~~ THEN CVHayn Orcpr5
-~ I was in Baldur's Gate a ten-day ago on business and I had to visit the Iron Throne's headquarter on that occasion. After a long business lunch I went to one of the private chambers they provide for a short nap. I dozed away in one of their huge armchairs, when a heated discussion on the other side of the room caught my attention.~
+~ I was in Baldur's Gate a ten-day ago on business and I had to visit the Iron Throne's headquarters on that occasion. After a long business lunch I went to one of the private chambers they provide for a short nap. I dozed away in one of their huge armchairs, when a heated discussion on the other side of the room caught my attention.~
 = ~ It was Travenhurst and Sarevok, the stepson of one of the Iron Throne's leaders. They had not seen me, as the large armchair's back hid me from their view. Their discussion was about the next steps of the operation and Travenhurst was obviously not satisfied with the role that was planned for him in the new structure of the Iron Throne that Sarevok had in mind, once he would be the leader of the League.~
 == Bimoen ~ What is all this about? Why is you and why is Henning kidnapped? My head spins around and around from all this treachery.~
 == CVHayn ~ I am sorry to say that I am partly responsible for Henning's fate - the other part is due to you, I am afraid. ~
@@ -48,7 +48,7 @@ IF ~~ THEN CVHayn Orcpr5
 == BSandr ~ Psst, Imoen, listen to him. So far he has provided us with a lot of insight already. We learn more about the whole situation than during all our last ten-days of scouting up and down the Sword Coast.~
 == CVHayn ~ After the two had left the room, I stayed some time in my chair to make sure they were really gone. But when I left the room and the building I ran into Travenhurst on the corridor outside. I was not sure at that time whether he had any suspicion about where I came from. But I decided to deliver my information to my friend Henning as well, as a kind of assurance for my safety.~
 == BSandr ~ A fatal mistake, as it looks now.~
-== CVHayn ~ In hindsight, it looks like that, mylady. I must have been under observation ever since I left Baldur's Gate. Travenhurst arranged with Davaeorn to send his orcs to kidnap us. But it looks like the nobleman does not want our blood on his hands. We are just to be held until the operation has succeeded. It seems that afterwards they do not expect us to be of any danger anymore to them.~
+== CVHayn ~ In hindsight, it looks like that, milady. I must have been under observation ever since I left Baldur's Gate. Travenhurst arranged with Davaeorn to send his orcs to kidnap us. But it looks like the nobleman does not want our blood on his hands. We are just to be held until the operation has succeeded. It seems that afterwards they do not expect us to be of any danger any more to them.~
 END
 ++ ~ Thank you for all of this information. It gives us some insight which phantoms we have been chasing all the time. But you said that we are also partly responsible for this kidnapping - how? ~ + Orcpr6
 
