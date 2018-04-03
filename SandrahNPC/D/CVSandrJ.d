@@ -762,7 +762,7 @@ END
 IF ~~ THEN BEGIN SwCoaUW53
 SAY ~ Brilliant, <CHARNAME>, let us sneak out like we sneaked in without leaving our traces. As we killed members of all fractions involved and have not left any evidence of ourselves behind yet, your plan will work. I suggest to move further on instead of returning the way we came.~
 IF~~THEN REPLY ~ Why do you propose that last?~ GOTO SwCoaUW54
-IF~~THEN REPLY ~ It's seldom my habbit to turn around.~ GOTO SwCoaUW54
+IF~~THEN REPLY ~ It's seldom my habit to turn around.~ GOTO SwCoaUW54
 END
 
 IF ~~ THEN BEGIN SwCoaUW54
@@ -794,7 +794,7 @@ END
 IF~~ THEN BEGIN SanBadDir11
 SAY ~ I speak indeed as your counsellor now. We should really consider not to take this bandit camp by a frontal attack. It is not only the forces we will have to face but also the possibility that hostages may be killed and that the bosses may get a chance to escape us at last in the foreseeable turmoil of the fight.~
 IF~~THEN REPLY ~ This is to be considered, you are right. I would avoid such a move, if I only knew of an alternative.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanBadDir13
-IF~~THEN REPLY~ Hesitation from my frontline fighter is the last thing I need in this situation. Sandrah, you deeply disappoint me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanBadDir12
+IF~~THEN REPLY~ Hesitation from my front-line fighter is the last thing I need in this situation. Sandrah, you deeply disappoint me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanBadDir12
 IF~~THEN REPLY ~ Can you recommend another path of action for us? You know that time is pressing us.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBadDir13
 END
 
@@ -805,7 +805,7 @@ IF~~THEN REPLY ~ If you are so clever, then tell us YOUR plan, but make it quick
 END
 
 IF~~ THEN BEGIN SanBadDir13
-SAY~ We have seen and heard the reports of the nearby areas, especially Larswood and Peldvale are also in the hands of those bandits. We have also reduced their ranks lately quite a bit. Let us find some subcommander there on the perimeter and convince him that we are the necessary reinforcement.~
+SAY~ We have seen and heard the reports of the nearby areas, especially Larswood and Peldvale are also in the hands of those bandits. We have also reduced their ranks lately quite a bit. Let us find some sub-commander there on the perimeter and convince him that we are the necessary reinforcement.~
 IF~~THEN REPLY ~ You mean, we join their ranks and try to get transferred to the main camp without the need to battle our way in?~ GOTO SanBadDir14
 END
 
@@ -835,7 +835,7 @@ IF~~ THEN REPLY ~ And now he is here as part of this Iron Throne operation. This
 END
 
 IF ~~ THEN BEGIN SanSareHi33
-SAY ~ So am I. The boy Sarevok has mysteriously disappeared some time ago. He would now be a man of your age, maybe one who has developped secretly the power inherited by a Bhaalspawn to a signicant level. He is surely involved in this intrigue, if he is not the one we are after himself.~
+SAY ~ So am I. The boy Sarevok has mysteriously disappeared some time ago. He would now be a man of your age, maybe one who has developed secretly the power inherited by a Bhaalspawn to a significant level. He is surely involved in this intrigue, if he is not the one we are after himself.~
 IF~~ THEN REPLY ~ There have been already a number of hints to the involvement of a Bhaalspawn before. Now he has a name. And I bet I have already met him once!~ GOTO  SanSareHi34
 END
 
@@ -874,7 +874,7 @@ IF~~THEN REPLY ~ I would say that any news at all is already better than what we
 END
 
 IF~~ THEN BEGIN SanMinBo4
-SAY ~ The Cloakwood Mines were an old dwarfen mine once. Even during the days of its operations, the exact location had been kept a secret among their clans alone. But even that is many years passed.~
+SAY ~ The Cloakwood Mines were an old dwarf mine once. Even during the days of its operations, the exact location had been kept a secret among their clans alone. But even that is many years passed.~
 = ~ The dwarfs in their endless digging lower and lower, one day had hit something like a subterranean river or water reservoir. The whole mine was flooded and many of their kin were drowned in the disaster. ~
 =~ In the years since then only few attempts have been made to get access again to the cave system, but they all failed. And what little knowledge existed of the exact location has diminished as well.~
 IF~~THEN REPLY ~ If I remember my lessons from Candlekeep well, the Cloakwood covers nearly a quarter of the Sword Coast. No settlements exist and no real roads, just footpaths used by obscure druids. ~ GOTO SanMinBo5
@@ -900,7 +900,7 @@ END
 //In Sandrah's Room First Night
 
 IF ~Global("Santlove","GLOBAL",4)~ THEN BEGIN SanFirstN1SI
-SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and unpenetrable look, that seems to say everything and nothing at the same time.)~
+SAY ~ (Sandrah pours a glass of burgundy coloured thick wine from a decanter on the table and drinks a tiny sip of it, closing her eyes to fully appreciate the moment. She moves up to you and holds the glass to your lips. She now looks straight into your eyes with her own bottomless and impenetrable look, that seems to say everything and nothing at the same time.)~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ (You take a small sip from the glass as well and then take it from her hand to put it on the table with your eyes still looking deeper and deeper into hers.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2f
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ (You take a small sip from the glass as well and await her next move.) ~ DO ~ SetGlobal("Santlove","GLOBAL",5) SetGlobal("SanFirNigh","LOCALS",1)~ GOTO SanFirstN2m
@@ -945,7 +945,7 @@ END
 
 IF~~THEN BEGIN  TakIdl2
 SAY ~ When you look at these engravings all over the wall they appear to be of the same ancient period and culture. There may exist some connection.~
-IF~~THEN REPLY~ Do you think it will be safe to take any relicts from this tomb with us? I mean just in case.~ GOTO TakIdl3
+IF~~THEN REPLY~ Do you think it will be safe to take any relics from this tomb with us? I mean just in case.~ GOTO TakIdl3
 END
 
 IF~~THEN BEGIN  TakIdl3
@@ -955,7 +955,7 @@ IF~~THEN REPLY ~ As a priest, is it a sacrilege for you to take things from a pl
 END
 
 IF~~THEN BEGIN  TakIdl4
-SAY ~ Those people are long dead and the things they left behind here no longer *belong* to them. Will it not be better if those dead artifacts could still be of some use to the living? Be it to lay the Beregost ghosts to rest, or be it for us to learn something from the events and people of older times.~
+SAY ~ Those people are long dead and the things they left behind here no longer *belong* to them. Will it not be better if those dead artefacts could still be of some use to the living? Be it to lay the Beregost ghosts to rest, or be it for us to learn something from the events and people of older times.~
 = ~ The reason I warned you, <CHARNAME>, is that those dead may had a different opinion during their lifetime and have therefore guarded it against what they would call *thieves*.~ 
 IF~~THEN DO~ SetGlobal("SanIdolTake","GLOBAL",2)~ EXIT
 END
@@ -964,7 +964,7 @@ END
 IF ~ Global("SanIdolTake","GLOBAL",3)~ VaRevF1
 SAY ~ So this is the famous or rather *infamous* Vampire's Revenge. <CHARNAME>, remember not to use it.~
 IF~~THEN REPLY ~ But what to do with it now? ~ GOTO VaRevF2
-IF~~THEN REPLY ~ I hear your words but I will decide nyself. ~ GOTO VaRevF2
+IF~~THEN REPLY ~ I hear your words but I will decide myself. ~ GOTO VaRevF2
 END
 
 IF~~ THEN BEGIN VaRevF2
@@ -1093,7 +1093,7 @@ END
 
 IF~~  THEN BEGIN SanGhotalBG12
 SAY ~ Strange, you are normally well learned in the lore of the Sword Coast. But maybe there is not so much known about that time south in Candlekeep. Maybe the threat was more on Waterdeep.~
-= ~ Anyway, General Ghotal was the greatest orc leader ever. He almost succeeded to unite all the fierceful northern Clans of the orcs and he led them against the joint forces of Waterdeep and the Sword Coast. He only failed in the end because his own forces betrayed him and started their endless internal quarrels again before the final battle was won.~
+= ~ Anyway, General Ghotal was the greatest orc leader ever. He almost succeeded to unite all the fierce northern Clans of the orcs and he led them against the joint forces of Waterdeep and the Sword Coast. He only failed in the end because his own forces betrayed him and started their endless internal quarrels again before the final battle was won.~
 = ~ Here on the Fields of Death must be the place of his final defeat.~
 IF ~~ THEN REPLY~ But when did all of that happen. Surely too long ago to still resurrect him, even if he was such a strong leader.~ GOTO SanGhotalBG13
 IF~~THEN REPLY ~ Hm, orcs. As long as they waste their time to pray for a long gone leader, that keeps them occupied and out of our ways, right?~ GOTO SanGhotalBG13
@@ -1154,7 +1154,7 @@ END
 
 IF ~~ THEN BEGIN SanKnowsHasdIdT2
 SAY ~ I propose to try and get as much information out of him as we can, using the bits and pieces we have gathered so far. Our goal must be, to stop whatever is brewing up there in the northern woods and around the Field of the Dead. A new orc war is not what the Sword Coast needs now.~
-IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a cardgame with you, my counsellor.~ EXIT
+IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a card game with you, my counsellor.~ EXIT
 IF ~~ THEN REPLY ~ We'll go there but it will be me who does the talking.~ EXIT
 END
 
@@ -1166,7 +1166,7 @@ END
 IF~ Global("SanGothSwFound","GLOBAL",1) ~ THEN BEGIN SanGoth60
 SAY ~ Here it is, Ghotal's famed sword!~
 IF ~~ THEN REPLY~ The thing can really make one shiver. We should not keep it.~ GOTO SanGoth61
-IF ~~THEN REPLY~  An enourmous weapon, it gives you some idea about the orc leader that wielded it. Do you think it is safe to keep it? ~ GOTO SanGoth61
+IF ~~THEN REPLY~  An enormous weapon, it gives you some idea about the orc leader that wielded it. Do you think it is safe to keep it? ~ GOTO SanGoth61
 END
 
 IF~~ THEN BEGIN SanGoth61
@@ -1188,19 +1188,19 @@ IF ~~ THEN REPLY~ Another key to to be searched and found? Or do we just leave t
 END
 
 IF~~ THEN BEGIN SanGoth64
-SAY ~ Then the risk would remain for the orcs to finally find and resurrect him. Let us not stop halfways but end this threat for once and for all.~
+SAY ~ Then the risk would remain for the orcs to finally find and resurrect him. Let us not stop halfway but end this threat for once and for all.~
 IF~~ THEN REPLY ~ For that we would need whatever is hidden in the altar in the Northern Citadel, don't you think so?~ GOTO SanGoth65
 END
 
 IF~~ THEN BEGIN SanGoth65
-SAY ~ It would be a strange coincidence if something else would be in that citadel. The building was errected shortly after the battle, so most likely that is where the key to the grave is kept.~ 
+SAY ~ It would be a strange coincidence if something else would be in that citadel. The building was erected shortly after the battle, so most likely that is where the key to the grave is kept.~ 
 IF~~THEN DO ~ SetGlobal("SanGothSwFound","GLOBAL",4) AddexperienceParty(1300)~ EXIT
 END
 
 IF~ Global("SanGothSwFound","GLOBAL",3) ~ THEN BEGIN SanGoth70
 SAY ~ Here it is, Ghotal's famed sword!~
 IF ~~ THEN REPLY~ The thing can really make one shiver. We should not keep it.~ GOTO SanGoth71
-IF ~~ THEN REPLY~ An enourmous weapon, adequate for the orc leader that wielded it. Do you think It is safe to keep it? ~ GOTO SanGoth71
+IF ~~ THEN REPLY~ An enormous weapon, adequate for the orc leader that wielded it. Do you think It is safe to keep it? ~ GOTO SanGoth71
 END
 
 IF~~ THEN BEGIN SanGoth71
@@ -1216,7 +1216,7 @@ IF ~~THEN REPLY ~ Haha, he looks just like the type young girls would dream abou
 END
 
 IF~~THEN BEGIN SanFab2b
-SAY ~ I am afraid exactly that. I have to confess, even I was a silly little teenage girl at one time. But to clarify things in my favour, nothing had happened because this star bard had to leave the island for his grand tournee (smiles amused).~
+SAY ~ I am afraid exactly that. I have to confess, even I was a silly little teenage girl at one time. But to clarify things in my favour, nothing had happened because this star bard had to leave the island for his grand tour (smiles amused).~
 IF ~~THEN REPLY ~ Sandrah and her boyfriends, soso. Interesting.~ EXIT
 IF ~~THEN REPLY ~ Oh, spare me the details.~ EXIT
 END
@@ -1284,7 +1284,7 @@ END
 IF ~ Global("WinskApp1","GLOBAL",5)~ THEN BEGIN Winsk1Dis
 SAY ~ (The strange wizards appearance and threat has left you completely speechless and confused. Will Sandrah have any idea what has just happened?)~
 IF~~ THEN REPLY ~ Who was that? What did he want? I am completely lost.~ GOTO Winsk1Dis2
-IF~~ THEN REPLY ~ The Sword Coast these days is crowded with morons. I'm embarassed.~ GOTO Winsk1Dis2
+IF~~ THEN REPLY ~ The Sword Coast these days is crowded with morons. I'm embarrassed.~ GOTO Winsk1Dis2
 END
 
 IF~~ THEN BEGIN Winsk1Dis2
@@ -1343,8 +1343,8 @@ END
 IF ~~ THEN BEGIN SanOrDiId4
 SAY ~ Let me tell you the rest of it first, before we try to analyse things.~
 = ~ The travellers party was attacked by bandits before the scout could do anything more. There was also a drow priestess at the scene of the ambush, although probably just another witness of the scene. However, the scout tried to hide in some tunnels, which were the Ulcaster ruins and he died down there, killed by the monsters we have met down there. This is where the diary ends.~
-IF ~ PartyHasItem("Sanwi1") ~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and what this Othlor was after...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
-IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artifact she gave you. And this Othlor is still around and after the creatures he was pursuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
+IF ~ PartyHasItem("Sanwi1") ~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artefact she gave you. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and what this Othlor was after...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
+IF ~ PartyHasItem("Sanwi1") GlobalGT("WinskApp1","GLOBAL",5)~ THEN REPLY ~ Viconia? She mentioned the same scene! It was how she got possession of that strange artefact she gave you. And this Othlor is still around and after the creatures he was pursuing then. It seems now we really must keep our eyes open for more pieces to find out what those people tried to hide and who they were...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 IF ~~ THEN REPLY ~ Ghosts of the past. But my studies of the scripts at Candlekeep have taught me, that our present events are always connected to what has been before us...~ DO ~ RealSetGlobalTimer("WiItemR","GLOBAL",800) SetGlobal("SanOrDiId","GLOBAL",4)~ EXIT
 END
 
