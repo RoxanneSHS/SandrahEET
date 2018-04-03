@@ -1016,7 +1016,7 @@ END
 CHAIN
 IF ~~ THEN BSANDR SanVicInnD2
 ~ Vicky, you were right, anger can be a real motivation for a tired warrior like <CHARNAME>. I surrender to your will and charm to be your willing *playtoy*, take me! (She lets herself fall into your arm, purring in joy and anticipation.)~
-== BViconi ~ I tremble before your strength, oh <CHARNAME>, hahaha. I am yours tonight but beware - better prove yourself worthy of it. (She sneaks into your other arm like the dangerous but fascinating carnivor she really is.) ~
+== BViconi ~ I tremble before your strength, oh <CHARNAME>, hahaha. I am yours tonight but beware - better prove yourself worthy of it. (She sneaks into your other arm like the dangerous but fascinating carnivore she really is.) ~
 == BSANDR ~ (With the two overwhelming beauties having seized you again in this way you are not sure about who really is in control of this situation - but then, who cares?)~
 DO ~ RestParty() ~
 EXIT

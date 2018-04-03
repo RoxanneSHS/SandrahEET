@@ -70,9 +70,9 @@ DO ~ SetGlobal("PKivshil","GLOBAL",6) SetGlobal("Kivshil","GLOBAL",6)RealSetGlob
 == BSANDR~ Kivan, I was a very happy child with my father. He had his grief and his wrath but it did not blacken my days with him. I dearly love him for all he was and is.~
 == BP#KIV ~  A happy man, even in his loss. I served Khalreshaar, the Lady of the Forest once, Sandrah. After my loss it was Shevarash, the Black Archer, I said my prayers to. Those who serve Shevarash lose the ability to feel pain, as all that was dear to them had been taken away. Your father had you, which may have saved him. ~
 == BSANDR~  So, my friend, we need to find such a solution for you as well.~
-== BP#KIV ~  As Tazok is dead, I will return to Shilmista soon to start my journey to Arvanaith. I was but a black arrow on Shevarash' bow but I am not needed by him anymore. ~
+== BP#KIV ~  As Tazok is dead, I will return to Shilmista soon to start my journey to Arvanaith. I was but a black arrow on Shevarash' bow but I am not needed by him any more. ~
 == BSANDR~  My father was not granted the chance to avenge his beloved wife. The vile deed of the God of Murder was done from even beyond the murderer's grave. And still he gave meaning to his life, to my life and too many, many others throughout Faerun.~
-== BP#KIV ~  * Kivan's face shows his deep thoughts, but also for the first time you know him, he seems to be content, almost relaxed, as he silently walks beside Sandrah with his arm around her shoulder and a tender sidelook to her every now and then. They walk like that a bit behind the group for a long while.* ~
+== BP#KIV ~  * Kivan's face shows his deep thoughts, but also for the first time you know him, he seems to be content, almost relaxed, as he silently walks beside Sandrah with his arm around her shoulder and a tender side look to her every now and then. They walk like that a bit behind the group for a long while.* ~
 EXIT
 
 CHAIN
@@ -82,8 +82,8 @@ DO ~ SetGlobal("PKivkill","GLOBAL",3) SetGlobal("Kivkill","GLOBAL",3)RealSetGlob
 == BP#KIV ~Here - Lle naa belegohtar... you are a mighty warrior, Sandrah.~
 = ~ I must admit, I completely took you for a weekend warrior, in your shimmering chain mail and those robes that the merchants in Waterdeep may advertise as "adventurer's brown", "Cormanthyr green" or "road mud brown". (Kivan's laughter is hoarse, but, yes, it is really laughter.)~
 == BSANDR~ That means quite something from a man with your experience. Not that it matters in case of an elf, but, how old are you, Kivan?~
-== BP#KIV ~I had seen two hundred and twenty four summers before Deheriana was killed. I have not counted anymore afterwards.~
-== BSANDR~ (Sandrah holds the waterbag to Kivan's lips and lets him drink in return.)~
+== BP#KIV ~I had seen two hundred and twenty four summers before Deheriana was killed. I have not counted any more afterwards.~
+== BSANDR~ (Sandrah holds the water bag to Kivan's lips and lets him drink in return.)~
 == BP#KIV ~ But that was just yesterday, wasn't it, so what is there to count.~
 == BSANDR~ Yesterday, Kivan, was the day when we rescued that little boy from the Ogres, remember. And the day before was when we discovered and prevented the bandit ambush on the caravan. A lot of travellers could have lost their lives. Remember, dear, none of these days was in vain.~
 == BP#KIV ~ And the night before was the one we both saw this falling star, you remember that as well, Sandrah.~
@@ -121,7 +121,7 @@ DO ~ SetGlobal("PKivNakD","GLOBAL",2) SetGlobal("KivNakD","GLOBAL",2)~
 == BP#KIV ~ Amazing, once again, it explains what I have seen in you but could not name.~
 ==BSANDR~ I loved to go there, yes, nude and free, to feel the wind from the sea touching me everywhere, delivering messages from far away regions I would one day see. Carrying voices of people I might meet. Dwarfs, maybe even elves.~
 == BP#KIV ~ Tell me more, Sandrah.~
-==BSANDR~ I will rather show you than tell you. (Sandrah slowly drops the light gown she had put on after you had stopped for the rest. You see her slender feminine body enlighted by the pale light of the half moon. She takes some first hesitant steps to begin a dance to a music you cannot hear - maybe it is whispered in the wind.)~
+==BSANDR~ I will rather show you than tell you. (Sandrah slowly drops the light gown she had put on after you had stopped for the rest. You see her slender feminine body lighted by the pale light of the half moon. She takes some first hesitant steps to begin a dance to a music you cannot hear - maybe it is whispered in the wind.)~
 == BP#KIV ~ (Now the tune becomes audible. Low, sad and longing. Sandrah's figures and movements become more confident as they follow the melody like in a trance. You suddenly recognize that it is Kivan who is humming this mesmerising tune.) ~
 ==BSANDR~ (Sandrah's eyes are closed and her lips are slightly parted as if awaiting a lover to join her dance.)~
 == BP#KIV ~ (You see Kivan's muscular body now come out of the shade to join Sandrah. He has dropped his clothes completely as well. He starts to encircle her movements without ever touching her.)~
@@ -153,15 +153,15 @@ IF ~ Global("PSanKivTaz","GLOBAL",1) ~THEN BSANDR PSanKiv15
 DO~ SetGlobal("PSanKivTaz","GLOBAL",2) SetGlobal("SanKivTaz","GLOBAL",2) RealSetGlobalTimer("KivshilT","GLOBAL",880)~
 == BP#KIV ~ It is in vain, Sandrah, no healer's skills can repair these fingers anymore. Tazok and his men did their job well that night. The only job they knew and could perform well.~
 ==BSANDR~ There is no real healing required here, Kivan. (She kisses the battered hand lightly.) You manage your bow and sword quite well with this hand. The healing has already come from your inside. It has you made go on and continue your live.~
-== BP#KIV ~ It is not healing, you talk about, melamin, it is the strength that was provided by Shevarash to avenge Deheriana. Now the Black Archer is satisfied by Tazok's dead, he has no need for his tool anymore.~
+== BP#KIV ~ It is not healing, you talk about, melamin, it is the strength that was provided by Shevarash to avenge Deheriana. Now the Black Archer is satisfied by Tazok's dead, he has no need for his tool any more.~
 ==BSANDR~ My friend, we need to find another source of strength for you then.~
-== BP#KIV ~ That will not be necessary anymore, as I told you before, my way is now to Arvanaith.~
+== BP#KIV ~ That will not be necessary any more, as I told you before, my way is now to Arvanaith.~
 ==BSANDR~ Your way was always to Arvanaith, every elf's way is. But there may be well another two-hundred fourty and something years to be covered until you get there. At first, there is <CHARNAME>'s quest to finish. ~
 == BP#KIV ~ You are right to remind me, this is an obligation that needs to be fulfilled. These old wounds again trouble me. (Kivan flexes his fingers.) I had been shooting more since I have joined this group, and the body protests by reminding me more avidly where it was broken and burnt. But I will not let it slow me, for our battles are the just ones. ~
 ==BSANDR~ (Sandrah has put Kivan's hand into her lap and starts to apply some cool smooth salve to the bruises. Kivan's eyes close to the gentle motions of Sandrah's fingers on the burned scars.) Healing needs to come from inside, melamin. (Her other hand, that is moist from the salve as well, has moved to Kivan's pointed ears in slow caress.)~
 == BP#KIV ~ Aah, elves are very sensitive in this area.~
 =~ (He whispers:) Cormlle naa tanya tel'raa - your heart is that of a lion. I never see you scared, not even by me. Can you be the source of strength I now require?~
-==BSANDR~ You underestimate my healer's skills, my still unexperienced elf, I can heal more than just a few bruises or ressurect a fallen friend. (Her fingers now caress Kivan's closed eyelids, her mouth is close to Kivan's lips.)~
+==BSANDR~ You underestimate my healer's skills, my still inexperienced elf, I can heal more than just a few bruises or ressurect a fallen friend. (Her fingers now caress Kivan's closed eyelids, her mouth is close to Kivan's lips.)~
 == BP#KIV ~ (He feels her breath close to his lips and opens his own in expectation.) Wisdom is no matter of age, let me taste your strength.~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -203,7 +203,7 @@ DO ~ SetGlobal("P#SpeakUp","GLOBAL",8)~
 == BSANDR ~ The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
 == BP#KIV   ~ Sandrah, I swear that I am hiding nothing from you, beloved. I have never heard the name before. What I can assure you, that he is not from Shilmista. That makes the man even more suspicious.~
 == BSANDR ~ In which way, Kivan?~
-== BP#KIV ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enourmous, that it is kept secret even among the elves themselves. I can only honestly proclaim to you that I do not even have a glimpse of information what or where he has done it.~
+== BP#KIV ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enormous, that it is kept secret even among the elves themselves. I can only honestly proclaim to you that I do not even have a glimpse of information what or where he has done it.~
 == BSANDR ~ Thank you, Kivan. ~
 EXIT
 
@@ -234,7 +234,7 @@ DO~ SetGlobal("PSanKivTaz","GLOBAL",6) SetGlobal("SanKivTaz","GLOBAL",6) RealSet
 == BP#KIV ~ Your question is the answer already, my knowing and understanding healer. Truth is that I see both. Can you stand that truth, Sandrah?~
 == BSANDR ~ I can and I have accepted it from the beginning. I do not even want you to loose her or forget her. She will always be within you and a part of you.~
 == BP#KIV ~ Are you really so selfless and understanding, Sandrah?~
-== BSANDR ~ I love you as you are and I am surely not jealous for someone who is gone. There is so much love in your heart, enough for me anytime. The fact that she will always be there as well only shows who you are Kivan, how much you care and that you never forget. It is exactly that devotion I so much admire in you.~
+== BSANDR ~ I love you as you are and I am surely not jealous for someone who is gone. There is so much love in your heart, enough for me any time. The fact that she will always be there as well only shows who you are Kivan, how much you care and that you never forget. It is exactly that devotion I so much admire in you.~
 == BP#KIV ~ Long time ago you made me think about why Deheriana wanted me to continue on this plane for any other reason than to revenge her. A good friend tried to convince me that she wanted me to continue and seek another chance. I struggled to disagree but now I tend to think otherwise. Do you think she wanted me to find someone to take her place by my side?~
 == BSANDR ~ No.~
 == BP#KIV ~ But...~
@@ -257,8 +257,8 @@ IF ~ Global("PSankivRab","LOCALS",1)~ THEN BSANDR PSanKiv21
 DO ~ SetGlobal("SankivRab","LOCALS",2) SetGlobal("PSankivRab","LOCALS",2)~
 == BP#KIV ~ Those poor rabbits must feel as lost and alone here as I do.~
 == BSANDR ~ Oh, come on, sweetheart, do not get solemn. You are neither alone with me by your side, nor are you lost with your beautiful companion being able to show you everything you need in the city as you would do for me in the forest.~
-== BP#KIV ~ An old rusty elf is no longer as flexible in his ways as you are, young rabbit. I see you at home in the city's bustle just the same as on a cool eve beneath the larchs. I envy you for your ability to feel at home wherever you are.~
-== BSANDR ~ I think nature is everything that surrounds us and we are her children whereever we are. The druids are in error when they think only a lonely wood grove allows us such a perception. A sunset over the city's chimneys can be as beautiful as the sunrise over a lonely lake on the Spine of the World.~
+== BP#KIV ~ An old rusty elf is no longer as flexible in his ways as you are, young rabbit. I see you at home in the city's bustle just the same as on a cool eve beneath the larches. I envy you for your ability to feel at home wherever you are.~
+== BSANDR ~ I think nature is everything that surrounds us and we are her children where ever we are. The druids are in error when they think only a lonely wood grove allows us such a perception. A sunset over the city's chimneys can be as beautiful as the sunrise over a lonely lake on the Spine of the World.~
 == BP#KIV ~ You must know, as I am sure you have seen them both. With you at my side, Sandrah, I can imagine I will be able to feel the same everywhere.~
 == BSANDR ~ That sounds promising. I prefer that to limiting ourselves to one choice only, my love.~
 == BP#KIV ~ Then let us hurry. Show me the beautiful sides of *our* city!~
@@ -275,7 +275,7 @@ DO ~ SetGlobal("SankivRab","LOCALS",4) SetGlobal("PSankivRab","LOCALS",4) RealSe
 == BP#KIV  ~ You do not need to set your stays in the city aside because of me, Sandrah. As you have seen, with you by my side I can manage everything.~
 == BSANDR ~ That is good to know, as we will eventually do that, like shopping for things we cannot get in the woods and such. Maybe meet some old friends from time to time, buy a book, eat out at a restaurant.~
 == BP#KIV  ~ Mmm?~
-== BSANDR ~ Is it not handy that I am quite flexibel, my sweet elf? I can live in the city or outside, although I would prefer some view of the sea. But a lonely lake would do just as well.~
+== BSANDR ~ Is it not handy that I am quite flexible, my sweet elf? I can live in the city or outside, although I would prefer some view of the sea. But a lonely lake would do just as well.~
 == BP#KIV  ~ I once found a vacated cabin by a sunlit lake, with a veranda to sit in the evening sun, extended woodland for hunting nearby, a silhouette of mountains in the distance.~
 == BSANDR ~ (She has closed her eyes, leaning against Kivan's shoulder.) I can see it, darling, yes, that is the place. I am sure a ranger like you finds the path to it again.~
 == BP#KIV  ~ Sure, sweetheart. So what is this all about then?~
@@ -297,9 +297,9 @@ DO ~ SetGlobal("SankivRab","LOCALS",6) SetGlobal("PSankivRab","LOCALS",6)RealSet
 == BSANDR ~ Darling, close your eyes and tell me of the journey as if we would take it. I will follow your words with my finger on my map.~
 == BP#KIV ~ From Baldur's Gate we will follow the Chionthar for six days walking at good pace...~
 == BSANDR ~ We will need a stop from time to time, I get so easily hungry for you, sweet tease.~
-== BP#KIV ~ Agreed, seven days. We will pass through the greenlands off from Iriaebor without touching the village. We will start to smell the new freshness in the air cleansed by the Sunset Mountains. The fir needles soften our steps as we continue through the woods moving slightly upwards but not very steep. Birdsong surrounds us and a shy deer observes us from a save distance. No animal will flee us, as they know no hunters here.~
+== BP#KIV ~ Agreed, seven days. We will pass through the green lands off from Iriaebor without touching the village. We will start to smell the new freshness in the air cleansed by the Sunset Mountains. The fir needles soften our steps as we continue through the woods moving slightly upwards but not very steep. Birdsong surrounds us and a shy deer observes us from a save distance. No animal will flee us, as they know no hunters here.~
 == BSANDR ~ The journey is already worth it alone, my ranger.~
-== BP#KIV ~ You seem to really feel it already. But we are almost there, as the woods open to a sunlit meadow that slightly slopes down to the lake. Halfways between the wood's edge and the shore you see our cabin, it looks so natural as if it was not built there but has somehow grown there as part of the landscape. - So where are we on your map?~
+== BP#KIV ~ You seem to really feel it already. But we are almost there, as the woods open to a sunlit meadow that slightly slopes down to the lake. Halfway between the wood's edge and the shore you see our cabin, it looks so natural as if it was not built there but has somehow grown there as part of the landscape. - So where are we on your map?~
 == BSANDR ~ Exactly here.~
 == BP#KIV ~ But there is nothing?~
 == BSANDR ~ Then it must be the right place. A place of our own, not known to the outsiders and not charted on any map, just like you described it.~
@@ -319,9 +319,9 @@ CHAIN
 IF~~ THEN BSANDR PSanKivUmarRepl2
 ~It is an event that happened in the time period between our separation from Kivan on the Sword Coast and our reunion here in Amn.~
 == BP#KIV ~ Amongst other things I occupied my time with the guarding of travellers from the Sword Coast to Amn and vice versa. Payment was good and xvarts, kobolds and bandits no match for a skilled scout. Organised Orcs are a different story.~
-=~One of the caravans I helped guarding was ambushed by about forty orcs accompanied by several schamans a few weeks ago. Even our fierce defense could not prevent the orcs from capturing the lady and her money that were the caravan's treasure. ~
+=~One of the caravans I helped guarding was ambushed by about forty orcs accompanied by several shamans a few weeks ago. Even our fierce defence could not prevent the orcs from capturing the lady and her money that were the caravan's treasure. ~
 == BSANDR ~ You have found a trail of the missing woman?~
-== BP#KIV ~I persued their trail into these very hills around here. They vanished from the surface and the area is covered by too many footprints for me to track them.~
+== BP#KIV ~I pursued their trail into these very hills around here. They vanished from the surface and the area is covered by too many footprints for me to track them.~
 == BSANDR ~ What do you propose, my dear?~
 == BP#KIV ~They must be hiding in one of the caves of this area. I swear, I must find and avenge on them, <CHARNAME>!~ EXIT
 
@@ -334,7 +334,7 @@ END
 
 CHAIN
 IF WEIGHT #-4~Global("P#SanSupport","GLOBAL",2)~THEN BP#Deh SanDeher1
-~Kivan told me that you have traveled together for long time now, he actually talks a lot about you.~
+~Kivan told me that you have travelled together for long time now, he actually talks a lot about you.~
 DO~IncrementGlobal("P#SanSupport","GLOBAL",1)RealSetGlobalTimer("P#DeherSanTalks","LOCALS",1000)~
 ==BSandr~We met long ago on the Sword Coast - before we defeated your murderer. And not a day has passed without him mentioning your name several times.~
 ==BP#Deh~He... he is a good man...~
