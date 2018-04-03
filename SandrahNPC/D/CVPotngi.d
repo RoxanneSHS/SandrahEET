@@ -31,8 +31,8 @@ CHAIN
 IF~ Global("SanDoPotn","GLOBAL",0) InParty("CVSandr")~ THEN CVPOTNGI NewHeal1
 ~ Attention!! Please be careful! Do not step on these Aescalus herb plants I am collecting. They are very useful and can do a lot of good.~
 DO~SetGlobal("SanDoPotn","GLOBAL",1) ~
-==CVSandrJ~ In deed, <CHARNAME>, we should respect this knowledgable lady. I know very well the value of her work.~
-==CVPOTNGI~You are a healer, mylady?~
+==CVSandrJ~ In deed, <CHARNAME>, we should respect this knowledgeable lady. I know very well the value of her work.~
+==CVPOTNGI~You are a healer, my lady?~
 ==CVSandrJ~ Yes, I am a priestess of Mystra specialising myself in healing bodies and minds.~
 ==CVPOTNGI~In this case you may have use of a sample of these herbs for your never ending work with such an adventurous party. Do you know how to handle the herb?~
 ==CVSandrJ IF~HasItem("Sanparc","CVSandr")~ THEN~ I have a magic device that can add your herb to a simple healing potion to enhance it significantly.~

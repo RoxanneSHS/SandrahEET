@@ -40,9 +40,9 @@ END
 
 INTERJECT_COPY_TRANS NTKRESTI 3 SanKresti
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Smiles at the handsome elf.)~
-== NTKRESTI IF ~ InParty("CVSandr")~ THEN ~ Mylady, this island holds pleasures I am sure a conaisseur in these areas would dearly love to explore.~
+== NTKRESTI IF ~ InParty("CVSandr")~ THEN ~ My lady, this island holds pleasures I am sure a connoisseur in these areas would dearly love to explore.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I am knowledgeable in many areas, including the pleasures an elf can learn to provide, given the long years he is allowed to gather his experiences.~
-== NTKRESTI IF ~ InParty("CVSandr")~ THEN ~ We understand each other quite well, mylady. If you want to explore this topic a bit more, I suggest you come back to me in a while and - alone.~
+== NTKRESTI IF ~ InParty("CVSandr")~ THEN ~ We understand each other quite well, my lady. If you want to explore this topic a bit more, I suggest you come back to me in a while and - alone.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Out of the corner of your eye you think you see her wink at the elf and blow him a quick kiss...)~
 END
 

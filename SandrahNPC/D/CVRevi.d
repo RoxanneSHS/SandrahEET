@@ -7,7 +7,7 @@ IF~~THEN REPLY ~ It is wonderful to see how everything has been set up here. Wit
 END
 
 IF~~THEN BEGIN  ImoRevi2
-SAY ~ Yes, it is all due to the wonderful Imoen of Candlekeep. She has set up this home for the little ones like Izzy, I mean Isobel. And Imoen is also a great inspiration for our children in how she keeps up her positive attitude even in the darkest perrils she has to face. Our children just love her. And her steadfast companion Henning, of course.~
+SAY ~ Yes, it is all due to the wonderful Imoen of Candlekeep. She has set up this home for the little ones like Izzy, I mean Isobel. And Imoen is also a great inspiration for our children in how she keeps up her positive attitude even in the darkest perils she has to face. Our children just love her. And her steadfast companion Henning, of course.~
 IF ~~ THEN REPLY ~ She is a great woman for sure. I think we can afford to contribute a bit to the success of this home.~ GOTO ImoRevi3
 IF~~ THEN REPLY ~ She sure has her good sides, but please keep an eye on the language your children learn - let them not follow the famous Imoen in her endless babbling. ~DO ~ SetGlobal("OrcPrison","GLOBAL",32)~ EXIT
 END
