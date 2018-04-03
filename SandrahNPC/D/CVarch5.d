@@ -15,7 +15,7 @@ DO~ SetGlobal("SanKhalBlood","GLOBAL",10)~
 =~ (Tries a forced smile.) You are pretty small and young for one whose record in the Book is one of the longest of them all. Make yourself comfortable and listen, it will take some time.~
 ==CVSANDRJ~Well, we are ready whenever you are.~
 ==CVARCH5 ~Sandrah, daughter of Khalindra, herself daughter of Collinea, who was daughter of Cathreina....~
-=~(The voice continues to recite name after name in a monotone sing-song that seems to have no end. You comrads and you doze away slowly...)~
+=~(The voice continues to recite name after name in a monotone sing-song that seems to have no end. You comrades and you doze away slowly...)~
 =~ (Only Sandrah listens intensely and it seems as if she learns the endless sermon by heart.)~
 =~...daughter of Cerameon.~
 ==CVSANDRJ~Wait! Cerameon is in my mother's bloodline?~
@@ -45,11 +45,11 @@ END
 CHAIN
 IF~~THEN CVARCH5 Bloodline4
 ~ I cannot repeat a name I have once delivered, such is the rule, but your reaction shows well enough you know whose name I gave.~
-==CVSANDRJ~ Quilue Veladorn is among my mother's anchestors?~
+==CVSANDRJ~ Quilue Veladorn is among my mother's ancestors?~
 ==CVARCH5 ~The Book contains no errors, so she is in your pedigree as well.~
 ==CVSANDRJ~(Takes a deep breath.) We can skip the rest then as we know to which source it will lead.~
 ==CVARCH5 ~(Cheerful) I am most happy to hear that and was happy to have served you...~
-==CVSANDRJ~Wait a minute, good archivar. I have spared you the rest of your recital but I ask you for another bit that is in your record.~
+==CVSANDRJ~Wait a minute, good archivist. I have spared you the rest of your recital but I ask you for another bit that is in your record.~
 ==CVARCH5 ~Well, I will do if the rules allow it.~
 ==CVSANDRJ~Say...taking a reverse glance from the root we now know - how many branches are there?~
 ==CVARCH5 ~(Almost panicking.) F-f-forty seven - you do not insist of hearing them all?~
@@ -57,7 +57,7 @@ IF~~THEN CVARCH5 Bloodline4
 ==CVARCH5 ~The rule does not allow to repeat names already given.~
 ==CVSANDRJ~Fine - just omit the ones we heard already.~
 ==CVARCH5 ~The record is empty.~
-==CVSANDRJ~Empty? I thought the unfailable book cannot forget anything. Has someone erased parts of it somehow?~
+==CVSANDRJ~Empty? I thought the infallible book cannot forget anything. Has someone erased parts of it somehow?~
 ==CVARCH5 ~Lady, none of that is possible. If there is no entry now there has never been one before.~
 ==CVSANDRJ~ Let me try another attempt. How many entries are there if we take the generation that was before the current?~
 ==CVARCH5 ~Two leaves had the tree, but I cannot give the names...~

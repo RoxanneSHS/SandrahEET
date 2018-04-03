@@ -17,7 +17,7 @@ IF~~THEN DO ~ AddexperienceParty(24000)AddXPObject("CVSandr",15000)~ EXIT
 END
 
 IF~Global("PaladQ","LOCALS",1)~ THEN BEGIN CaravanVictimSaved1
-SAY~ You have ended that red robed devil, <PRO_LADYLORD>. He killed mama and papa and many other childrens' parents. He wanted to take us far away. Poor Lanita was sick and fell down but he would not let us help her. He was a monster.~
+SAY~ You have ended that red robed devil, <PRO_LADYLORD>. He killed mama and papa and many other children's' parents. He wanted to take us far away. Poor Lanita was sick and fell down but he would not let us help her. He was a monster.~
 IF~~THEN REPLY~ You all go back this road you came. Take all the food and the gold you can get from your torturers and go to Ilmather's temple, will you.~ GOTO CaravanVictimSaved2
 IF~~THEN REPLY~ The thief who was with them, did she also mistreat you or any other child?~ GOTO CaravanVictimSaved3
 END
@@ -47,7 +47,7 @@ END
 APPEND CVSandrJ
 IF~Global("SanEntrCult","ra5501",1)~THEN BEGIN EntrCult1
 SAY~Please trust me, <CHARNAME>, we are at one of the most evil places we have ever been together. Still I would ask you to pretend to enter this cult for the moment.~
-IF~~THEN REPLY~Of course I trust you, my counselor.~GOTO EntrCult2
+IF~~THEN REPLY~Of course I trust you, my counsellor.~GOTO EntrCult2
 IF~~THEN REPLY~You act a bit strange, Sandrah. You are very much concerned about this cult, are you?~ GOTO EntrCult2
 IF~~THEN REPLY~I had already decided to infiltrate these beasts - let us get to the bottom of it...and destroy it from inside.~ GOTO EntrCult2
 END

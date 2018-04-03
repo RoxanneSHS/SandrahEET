@@ -14,7 +14,7 @@ END
 
 CHAIN
 IF~~ THEN CVCatCe SanFind2
-~ Miau (The cat stretches and tests its healed leg cautiously. It expells a satisfied purring.)~
+~ Miau (The cat stretches and tests its healed leg cautiously. It expels a satisfied purring.)~
 ==BCERND~ Look at it, Sandrah, it is not a tame one, it is a wild mountain cat. How did it get here?~
 == BSANDR~ Probably brought here by some hunter or menagerie and then thrown out in the street when they found it was injured.~
 ==BCERND~ (Sighs) I am afraid you are right, my girl.~
@@ -36,5 +36,5 @@ DO~ SetGlobal("SanCerndLT","GLOBAL",6)~
 == BSANDR~ You are a druid, do you not communicate with the wild beings all the time?~
 ==BCERND~ In some way yes, you are right, Sandrah, but this was different, much clearer than what I receive from a *normal* animal.~
 == BSANDR~ Pelligram surely does not fit into that category. Anyway, I am glad our little guest has now found what she needs, Cernd.~
-==BCERND~ So am I. (Instictively Cernd keeps Sandrah's hand in his own while the group continues their march.)~ 
+==BCERND~ So am I. (Instinctively Cernd keeps Sandrah's hand in his own while the group continues their march.)~ 
 ==CVCatCe~ Miau.~DO~ MoveToPointNoInterrupt([0.0])~ EXIT
