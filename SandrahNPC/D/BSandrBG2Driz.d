@@ -92,7 +92,7 @@ EXIT
 
 CHAIN
 IF ~ Global("SanDrizzt2","GLOBAL",7)~ THEN BSANDR SanDriz2JMat
-~ (Sandrah has sat down near Drizzt in her usual leasure dress that looks so innocent and so seductive at the same time.)~
+~ (Sandrah has sat down near Drizzt in her usual leisure dress that looks so innocent and so seductive at the same time.)~
 DO ~ SetGlobal("SanDrizzt2","GLOBAL",8) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200)~
 == Driz2J~ I have to admit, Sandrah, that you have quite advanced from the student I had the pleasure to educate. How time flies when the little kitten suddenly emerges into a graceful but dangerous felidae.~
 == BSANDR~ (Smiles) You have known Pelligram since her early days...~
@@ -114,8 +114,8 @@ IF ~ Global("SanDrizzt2","GLOBAL",10)~ THEN BSANDR SanDriz2JMid
 DO~ SetGlobal("SanDrizzt2","GLOBAL",11) RealSetGlobalTimer("SanDrizztInterv","GLOBAL",1200) ~
 == Driz2J~ (Again you observe how Drizzt's face lightens up as he willingly sits down beside Sandrah and takes her hand.) I imagine my knowledge of Midnight interest you some, my dear.~
 == BSANDR~ You are the only one I know who can give me some insight into her more private aspects - I mean except my father, but his perspective is that of a son who rarely had his mother at home.~
-== Driz2J~ She was independant and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Times of Trouble to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
-=~ Love meant a lot for her, love for her fellowbeings, love for our animal companions, (smiles) and of course the physical aspects of love. Before she finally chose her companion Cyric, she had a number of lovers, which was easy for her with her charm and her beauty.~
+== Driz2J~ She was independent and strong, following no one and listening only to her own judgement on things. She followed a righteous path of her own and therefore Ao chose her in the Times of Trouble to fight the renegade gods, as she was not tainted by religious conviction or bonding.~
+=~ Love meant a lot for her, love for her fellow beings, love for our animal companions, (smiles) and of course the physical aspects of love. Before she finally chose her companion Cyric, she had a number of lovers, which was easy for her with her charm and her beauty.~
 == BSANDR~ And that included you, Drizzt, regardless of your race or your reputation.~
 == Driz2J~ Yes, and we both enjoyed it while it lasted and never forgot what we had. Although it was clear for both of us that it was nothing to endure as we both were too restless to move on and to move things on Toril.~
 == BSANDR~ She had a practical view on life and she never neglected the easier and joyful side even in the Times of Trouble.~
@@ -132,7 +132,7 @@ DO~ SetGlobal("SanDrizzt2","GLOBAL",13) RealSetGlobalTimer("SanDrizztInterv","GL
 == Driz2J~ You are a wise person, to judge thus, knowing your own limits. So here is the eye witnesses' report.~
 = ~ Cyric was a competent and *honest* thief as every adventuring party needs to open locks and to find and disable traps. A cheerful man of many talents, intelligent and attractive. Not an odd choice for your grandmother. However what made him special and won him her heart was his sacrifice of the own self when the final battle neared.~
 == BSANDR~ It was him, not Midnight that ended the God of Murder.~
-== Driz2J~ Exactly. It was Cyric with the help of Mask in the form of the sword Godsbane that backstabbed the God of Murder as the pair had tracked him down and cornered with no means to escape. With all her power and weaponcraft, Midnight could not hit the final blow against him. Only the skilled noiseless assasin with the undefeatable sword could backstab and murder this god.~
+== Driz2J~ Exactly. It was Cyric with the help of Mask in the form of the sword Godsbane that backstabbed the God of Murder as the pair had tracked him down and cornered with no means to escape. With all her power and weapon craft, Midnight could not hit the final blow against him. Only the skilled noiseless assassin with the unbeatable sword could backstab and murder this god.~
 = ~ But more important - just like Midnight took Mystra's mantle and sacrificed her humanity and her womanhood to take the duties of a goddess, Cyric did likewise. His burden was heavy as he had to become the new god of murder by Ao's verdict and the great schemer and plotter we recognise in him today.~
 == Driz2J~ Understandable that a man of integrity who has to take on the duties of such deities will appear broken in his personality. A short step from the thief with his tricks and masquerades to the mad god of strive, lies and illusions, but a thin line easily overstepped.~
 == Driz2J~ (Drizzt looks at Sandrah in deep thought.) You see what only she was able to see before. Another indication of your resemblance. May you be very careful for how far you will follow her way.~
@@ -144,11 +144,11 @@ CHAIN
 IF~ Global("SanDrizBG2","LOCALS",1)~ THEN BSANDR SanDriBG2Plot1
 ~ How did you fare since we parted, my sweet dark hero? It has been an eternity, it seems to me (sigh).~
 DO~ SetGlobal("SanDrizBG2","LOCALS",2)~
-== Driz2J ~ Many fights and many victories, just like yourself, my sweet apprenticess. And another meeting with my arch enemies.~
+== Driz2J ~ Many fights and many victories, just like yourself, my sweet apprentice. And another meeting with my arch enemies.~
 == BSANDR~ Entreri and Jarlaxle, they are not dead and defeated then? Please tell me, Drizzt.~
-== Driz2J ~ They are not dead, and neither am I, as you see and feel yourself. But hopefully it is finished by now. Entreri and me had a final battle and he killed me - or so he thinks. In truth, a mage had interferred our battle and, of all people, Jarlaxle ressurected me afterwards.~
+== Driz2J ~ They are not dead, and neither am I, as you see and feel yourself. But hopefully it is finished by now. Entreri and me had a final battle and he killed me - or so he thinks. In truth, a mage had interfered our battle and, of all people, Jarlaxle resurrected me afterwards.~
 == BSANDR~ That is strange - and wonderful, as I have you by my side once again. Do you have any idea why the drow thief should have acted like that?~
-== Driz2J ~ Not at all. At least I am free now from from Entreri's constant persuit.~
+== Driz2J ~ Not at all. At least I am free now from from Entreri's constant pursuit.~
 == BSANDR~ Hm, but at which price, my dear? I cannot imagine that the Bregan D'aerthe do anything for free. We must be very careful as to what Jarlaxle may demand of you some day.~
 == Driz2J ~ Are we not always careful, Sandrah? It is our common fate to sleep with one eye open, constantly under the suspicious glance of our foes. Does it prevent us from enjoying the moments together that are granted to us?~
 == BSANDR~ You are right, Drizzt. How can I neglect my duties to my lover so! It will be corrected this very instant...(Her armour and shield fly to the ground as the attacks the willing drow fighter with all her passion.)~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
@@ -185,7 +185,7 @@ IF~ Global("SanDrizBG2","LOCALS",5)~ THEN BSANDR SanDriBG2Plot3
 ~ (Sandrah has silently taken her drow friend's hand. You can observe that she looks troubled herself with the news Drizzt has received.)~
 DO~ SetGlobal("SanDrizBG2","LOCALS",6)~
 == Driz2J ~ Sandrah? Normally you would be the strong one to comfort me in such a case. But this time you seem to be more concerned than I am. Fear nothing, we are together and we are in strong company.~
-== BSANDR~ (Sandrah smiles ar Drizzt.) Yes, we are, Drizzt, I am not corcerned about that. With <CHARNAME> and our friends by our side, Entreri does not scare me. ~
+== BSANDR~ (Sandrah smiles ar Drizzt.) Yes, we are, Drizzt, I am not concerned about that. With <CHARNAME> and our friends by our side, Entreri does not scare me. ~
 == Driz2J ~ So what is on our mind, Sandrah?~
 == BSANDR~ I am sometimes too confident in my own abilities and my strength, Drizzt. But however much I develop my skills, I will never be able to defend myself against such attacks as you have to face right now. As long as I love and care for others who are close to my heart, I make them a target for my foes.~
 == Driz2J ~ That much is true as well for <CHARNAME> or for me. Our foe may as well target on you in order to strike a blow against us.~
@@ -202,9 +202,9 @@ DO~ SetGlobal("SanDrizBG2","LOCALS",8)~
 == Driz2J ~ A riddle?~
 == BSANDR~ Rather a mystery or even something that is hardly believable. Listen - that demon Errtu mentioned the crystal relict that seems to provide your enemies with the means to act against you once again.~
 == Driz2J ~ And you found the answer in your book, no, it really looks like you found something more weird, hm?~
-== BSANDR~ There once was an evil relict, the dark counterpart of my father's crystal shard. The powers acosted to it match Errtu's description of the item Jarlaxle and Entreri seem to use. But - the relict was destroyed long ago.~
+== BSANDR~ There once was an evil relict, the dark counterpart of my father's crystal shard. The powers accosted to it match Errtu's description of the item Jarlaxle and Entreri seem to use. But - the relict was destroyed long ago.~
 == Driz2J ~ Hm...hm...I see why you are confused, dear. Anyhow those two must have gained possession of something similar or just a slight splinter left of it after the destruction.~
-== BSANDR~ I have been thinking in that direction as well. Now, the book says the destruction was through the breath of an ancient undefeatable dragon, which means that there should be no trace of that relict be left on the material plane. (Sigh.) I am not as helpful as I should be for my lover in his time of need.~
+== BSANDR~ I have been thinking in that direction as well. Now, the book says the destruction was through the breath of an ancient unbeatable dragon, which means that there should be no trace of that relict be left on the material plane. (Sigh.) I am not as helpful as I should be for my lover in his time of need.~
 == Driz2J ~ Sandrah, don't say such a thing. Of course you are. One can simply not expect to be successful all the times. It helps so much to know you invest all your ability in aiding me and my Icewind Dale friends.~
 = ~ (Drizzt gently removes the book from Sandrah's arms and takes up the space himself.) You have much needed means to restore this old warrior's body and soul again...~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0)  EndCutSceneMode() ~ EXIT
 
@@ -215,10 +215,10 @@ DO~ SetGlobal("SanDrizBG2","LOCALS",11)~
 == Driz2J ~ Oh, Sandrah, this intrigue goes further and deeper into dangerous territories than I would ever have dreamed.~
 == BSANDR~ Yet once again be assured that you are not alone in this. Our joint forces have brought us this far already and we have overcome any resistance with ease. Do not be doubtful, my wise teacher - it is you who has taught me the two biggest mistakes in a combat are to over estimate your own powers as well as not to know how to use them.~
 == Driz2J ~And my best and wisest student will tell me now that our strength is the combination of our joint forces - and of course you are right in this. But we are not alone here, Sandrah, you and I. We are surrounded by friends that have aided us so far but still have their own obligations - and we have sworn to contribute to their quest as well.~
-== BSANDR~ Your considerations are valid, Drizzt, but no reason to be worried. We have learned to trust <CHARNAME> as the most competent leader we could wish to have. I have no doubt that together we will find a way to manage sucessfully the various tasks we have before us as companions.~
+== BSANDR~ Your considerations are valid, Drizzt, but no reason to be worried. We have learned to trust <CHARNAME> as the most competent leader we could wish to have. I have no doubt that together we will find a way to manage successfully the various tasks we have before us as companions.~
 END
 ++ ~ Drizzt, Sandrah, there is no use to worry. We will find a way to get to Cadderly and we will not forget our main quest meanwhile. Both tasks have one thing in common - we have the best chances for success if we aim at them together.~ EXIT
-++ ~ You are correct, my counsellor. We have wandererd far from our main task by now to aid Drizzt. It is my duty as this company's leader to steer our course back to it as fast as possible.~ + SanDriBG2Plot6
+++ ~ You are correct, my counsellor. We have wandered far from our main task by now to aid Drizzt. It is my duty as this company's leader to steer our course back to it as fast as possible.~ + SanDriBG2Plot6
 
 CHAIN
 IF~~ THEN BSANDR SanDriBG2Plot6
@@ -247,7 +247,7 @@ IF~ Global("SanDrBryn","LOCALS",2)~ THEN BSANDR SanDriBry1
 DO~ SetGlobal("SanDrBryn","LOCALS",3)~ 
 == Driz2J ~ You are right, Sandrah. Finally we have found the way to get to this cursed island where <CHARNAME>'s quest and mine require our attention.~
 == BSANDR~ Both tasks are OUR tasks, not yours alone or <CHARNAME>'s alone. You have ventured on your own for so long that you tend to forget that you are now among friends, Drizzt.~
-== Driz2J ~ Your nearness never lets me forget this, Sandrah. The companionship of this party - and the stubborn love of the Realm's most wonderful girl - both have changed this old campagner completely.~
+== Driz2J ~ Your nearness never lets me forget this, Sandrah. The companionship of this party - and the stubborn love of the Realm's most wonderful girl - both have changed this old campaigner completely.~
 END
 ++ ~ Ah, your quest or mine, Drizzt - but as Sandrah has reminded us we are in this as a company of friends. Let's see if we can trace this priest.~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~ EXIT
 ++~ We are near to Imoen right now. This comes first and everything else has to wait for its chance.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
@@ -258,7 +258,7 @@ IF~ Global("SanDrClob","LOCALS",1)~ THEN BSANDR SanDriSlv1
 ~ (Sandrah is pale and her hand slightly trembles as she clutches her hammer.)~
 DO~ SetGlobal("SanDrClob","LOCALS",2)~
 == Driz2J ~ Sandrah, that is very bad news. You hate those damned slavers just as badly as I do. But see the chance we have today with their hot trail in front of us.~
-== BSANDR~ You are right, my drow, as bad as this news is it gives us the opportunity to strike another massive blow against this town's slave trade. I will swallow my anger and replace it by coldblooded determination.~
+== BSANDR~ You are right, my drow, as bad as this news is it gives us the opportunity to strike another massive blow against this town's slave trade. I will swallow my anger and replace it by cold blooded determination.~
 == Driz2J ~ With me by your side and with <CHARNAME> the victory will soon be ours. Your cold blood will soon be heated by the battle - and afterwards by the even purer heat of love...~
 END
 ++~ There is nothing more to be added, Drizzt. We will follow them immediately.~ EXIT
@@ -283,7 +283,7 @@ END
 
 CHAIN
 IF~ Global("SanDriLeaveWD","GLOBAL",1)~ THEN BSANDR SanEndPlot1
-~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
+~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercely gripped your sweet heart for so long.~
 DO~ SetGlobal("SanDriLeaveWD","GLOBAL",2)~
 == Driz2J ~ And how could I have saved everyone and freed the enslaved souls of so many in this *Region of Terror* without <CHARNAME>'s help - and without the most wonderful companion of all by my side. (He kisses Sandrah long and passionate.]~
 END
@@ -291,7 +291,7 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot2
-~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The bossman calls and the love nest waits empty.~
+~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The boss-man calls and the love nest waits empty.~
 == Driz2J ~ Please, <CHARNAME>, Sandrah, give me a minute.~
 == BSANDR~ Are you well, dear, you look tired and exhausted?~
 == Driz2J ~ That is exactly how I feel, Sandrah, and only your strength keeps me going at the moment. That is why I want to ask a favour of <CHARNAME>. The recent events have stressed me to the limit and I need a bit of time to restore and to contemplate over it all. My lifetime enemies have finally been destroyed with your help and a new future lies open for me.~
@@ -317,7 +317,7 @@ END
 
 APPEND EntDjin
 IF WEIGHT #-1 ~ Global("EntDjin11","LOCALS",0) InParty("CVSandr") !InParty("Driz2") ~ THEN BEGIN SanDo
-SAY ~ Sandrah of Waterdeep? I have a message for you from Artemis Enteri.~ 
+SAY ~ Sandrah of Waterdeep? I have a message for you from Artemis Entreri.~ 
 IF~~THEN GOTO 10
 END
 
@@ -445,7 +445,7 @@ IF~~ THEN CVSandrJ Regis1
 ==REG2~They always healed me immediately after the torture just to start anew.~
 == CVSandrJ~Creatures without a heart - or with a dark black one.~
 ==REG2~It may help you to learn what has really happened. You must know that our whole company around Drizzt had urgent business at Mithril hall. We used a mage's skill to transport us to there from Icewind Dale but something went wrong.~
-=~I found myself stranded in some foreign forrest. After a couple of days I was captured by some drow and brought to the crystal tower where I got a glimpse Bruenor, Catti-Brie, Artemis Entreri and that drow, Jarlaxle.~
+=~I found myself stranded in some foreign forest. After a couple of days I was captured by some drow and brought to the crystal tower where I got a glimpse Bruenor, Catti-Brie, Artemis Entreri and that drow, Jarlaxle.~
 == CVSandrJ~Did you learn more from them?~
 ==REG2~Jarlaxle and Entreri used some crystal shard to detect and capture us. They referred to us as *bait*.~
 == CVSandrJ~Hm, it is not hard to imagine that they expect Drizzt to come searching after you...or maybe even Drizzt and <CHARNAME>.~
@@ -460,9 +460,9 @@ DO~SetGlobal("DlCadd","GLOBAL",1)~
 == CADDERLY~ But they brought it here, probably having recognised how dangerous the thing was. It is mysterious...but there is no doubt that the crystal has been destroyed. Maybe the tower was an illusion.~
 == CVSANDRJ~ Possible - but it would not explain how those two traced and captured Drizzt's friends. (Sandrah provides a summary of the recent events.)~
 == CADDERLY~ I see...maybe they found a similar artefact with comparable features. The crystal was not the only evil object on Toril. Our plane is full of them. They are rare but occasionally detected.~
-== CVSANDRJ~ And this new crystal? We have no idea how to destroy it. I studied my father's toom and all I found was your name recommended for such a case.~
+== CVSANDRJ~ And this new crystal? We have no idea how to destroy it. I studied my father's tome and all I found was your name recommended for such a case.~
 == CADDERLY~ Your father's book? The only man I know...is it?...are you...Elminster.~
-== CVSANDRJ~ I am his daughter and I own a very special personal copy of his encyclopedia.~
+== CVSANDRJ~ I am his daughter and I own a very special personal copy of his encyclopaedia.~
 == CADDERLY~ Well, then, Elminster's daughter, know this. The crystal was destroyed by the breath of the ancient red dragon Hephaestus. The creature is still alive. Probably his breath could do the same on this new artefact.~
 =~ The problem is that the object is in the hands of your enemies. Not even the cleverest thief could remove it from the Crystal Tower.~
 == CVSANDRJ~ We will not give up so easily. If we join forces we surely will detect a possibility.~
@@ -473,7 +473,7 @@ IF ~~ THEN CVSANDRJ Sanhenman
 ~Under attack you say? By whom?~
 DO~SetGlobal("Driknicd","GLOBAL",1)~
 ==HENMAN~ Giants, Orcs, Goblins... All monsters from the mountains have united for the attack.~
-== CVSANDRJ~ Then there must be somone who organises these attacks. I think we know you is behind it, a common foe now also for us.~
+== CVSANDRJ~ Then there must be someone who organises these attacks. I think we know you is behind it, a common foe now also for us.~
 ==HENMAN~ I see. I will gladly return to the Dale to bring the good news of your help.~DO ~EscapeArea()~EXIT
 
 CHAIN
@@ -508,10 +508,10 @@ IF~~THEN CADDER3 101
 ~ We must now rest often and guard the seal in shifts but we are too few who are still left. This is the last chance to act.~
 == CVSANDRJ~ Chaunticleer was rather vague in his report about the events. Can you give us a clearer picture before we set out to act?~
 == CADDER3~ Yes, yes, sure. It was a normal night at the temple and I was preparing to go to sleep when a young priest came running to notify me. ~
-=~ An unexperienced acolyte had activated a ritual circle of the highest order and thus opened a portal directly to the Abyss. How he got inside the ritual chamber at all...we will never know as he as well as the guards  died in the initial onslaught from hell.~
+=~ An inexperienced acolyte had activated a ritual circle of the highest order and thus opened a portal directly to the Abyss. How he got inside the ritual chamber at all...we will never know as he as well as the guards  died in the initial onslaught from hell.~
 =~ Demons started to appear one by one, faster than the fearless brothers could fight them back. Many lost their life as we failed - until we finally could install the seals to keep them at bay.~
 =~ How long those hastily summoned seals can hold those demons back we don't know...but if they escape...oh, Deneir...Something must be done quickly.~
-== CVSANDRJ~ When the reenforcement from the Abyss is stopped, <CHARNAME> and us should be able to eliminate those creatures that have come up already. But we must first close that portal again. ~
+== CVSANDRJ~ When the reinforcement from the Abyss is stopped, <CHARNAME> and us should be able to eliminate those creatures that have come up already. But we must first close that portal again. ~
 == CADDER3~ You have exactly described your role here. It needs a human sacrifice to close that portal and one of our fearless brothers has volunteered for that. Unfortunately all attempts to reach the portal have failed so far.~
 =~ We can hear the noise of the fighting as Deneir himself tries to activate the tortured and dead to fight the hellish minions. But even a God's powers on the primary plane are not sufficient.~
 == CVSANDRJ~ The Gods need the powers of the mortals when they come to Faerun themselves. Only with our aid Deneir may have enough power to hold back the demons until your priest can close the portal.~
@@ -565,7 +565,7 @@ END
 
 IF WEIGHT #-5~  Global("CQuestActive","GLOBAL",8) !InParty("Driz2")InParty("CVSandr")~ THEN BEGIN 102
 SAY ~ This is brother Lucus, Sandrah, <CHARNAME>, those will accompany you to the portal chamber.~
-IF~~THEN REPLY~ I am honored to meet you, brother Lucas. Not many would have the courage to do for others what you will do.~ GOTO 17
+IF~~THEN REPLY~ I am honoured to meet you, brother Lucas. Not many would have the courage to do for others what you will do.~ GOTO 17
 END
 END
 
@@ -598,14 +598,14 @@ CHAIN
 IF ~ Global("SanDestBeastCult","GLOBAL",1) ~ THEN CVSANDRJ DestBeastCult
 ~ It is time to stop with this, <CHARNAME>! These children you are asked to kill are real this time. We will not spill their blood.~
 DO~ SetGlobal("SanDestBeastCult","GLOBAL",2) ~
-==CultBeH ~ Silly girl, who are you to interfer with this most holy ritual?~
-== CVSandrJ ~ Holy? I have never encountered a gang of miscreeds worse than you and the Beast you worship. We have played along your lines until now to learn all about your cult and its belief. We know enough now and we will end it.~
+==CultBeH ~ Silly girl, who are you to interfere with this most holy ritual?~
+== CVSandrJ ~ Holy? I have never encountered a gang of miscreants worse than you and the Beast you worship. We have played along your lines until now to learn all about your cult and its belief. We know enough now and we will end it.~
 ==CultBeH ~ You have no idea of the holy powers you are facing.~
 == CVSandrJ ~ You and your beast will scare Toril no longer. It is you who errs about whom he is facing today.~
 ==CultBeH ~ (The Highest priest seems to fall into a kind of trance for a minute. As he opens his eyes again you can swear you see sheer panic in his gaze at Sandrah for an instant.) ~
 =~ You. you...who are you really...what amount of power...~
 == CVSandrJ ~ I am Sandrah, priestess of Mystra, and I am your destructor.~
-==CultBeH ~ A mere priestess...I see...not the goddess herself? Not all is lost then, my fellowers.~
+==CultBeH ~ A mere priestess...I see...not the goddess herself? Not all is lost then, my fellows.~
 END
 ++~ He took you for Mystra herself? It is time to end this bloody experience.~ EXTERN CULTBEH 53
 ++~ You are right, Sandrah, we can learn no more and must stop this cult.~  EXTERN CULTBEH 53
