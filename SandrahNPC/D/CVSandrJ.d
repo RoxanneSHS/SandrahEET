@@ -478,7 +478,7 @@ IF~~THEN BEGIN Godag4
 SAY~Hm, in this case Gorion himself received it from someone else and kept it. The design is ancient, it maybe an item he himself inherited from his anchestors.~
 IF~~THEN REPLY~ I know nothing about Gorion's past, I must confess, not even the names of his parents if any of them started with *A*.~EXIT
 IF~~THEN REPLY~ A heritage or a booty - but then the Gorion I knew was a really peaceful man, not one to loot opponents even if he had them.~EXIT
-IF~~THEN REPLY~ The only person I know who played a role in Gorion's life and started with an *A* is that seer Aloundo, everpresent in Candlekeep's walls.~EXIT
+IF~~THEN REPLY~ The only person I know who played a role in Gorion's life and started with an *A* is that seer Alaundo, ever-present in Candlekeep's walls.~EXIT
 END
 
 IF~Global("CVGodag","GLOBAL",5)~THEN BEGIN  Godag5
@@ -519,7 +519,7 @@ END
 IF ~Global("PriestGondVault","GLOBAL",2) ~ THEN BEGIN SanVault1
 SAY ~ So finally we found the key to this vampiric sword - no, let me correct myself - we found the sword is the key to a place called the vault.~
 IF ~~ THEN REPLY ~ Some treasure worth hunting, but the information is still slightly vague, if I may remark.~ GOTO SanVault2
-IF ~~ THEN REPLY ~ *...a small, desolate isle surrounded by raging waters, only to be entered when the waters were calmed...* Hm, an island that can be reached at certain times, meaning it cannot be far out in the ocean. Mabe near the coast and reachable at low tide.~ GOTO SanVault2
+IF ~~ THEN REPLY ~ *...a small, desolate isle surrounded by raging waters, only to be entered when the waters were calmed...* Hm, an island that can be reached at certain times, meaning it cannot be far out in the ocean. Maybe near the coast and reachable at low tide.~ GOTO SanVault2
 END
 
 IF ~ ~ THEN BEGIN SanVault2
@@ -539,7 +539,7 @@ IF~~ THEN REPLY ~ I always hated vampires and I found another reason why. But wa
 END
 
 IF ~ ~ THEN BEGIN SanVault21
-SAY ~ Ancient vampires that travelled the Coast by these mysterious astral tunnels. The vault seemed to have been their travel center of kinds. I guess you are right, <CHARNAME>, there is no other insight here for us, than that the past is still alive in many ways around us and reaches out for us sometimes unexpectedly.~
+SAY ~ Ancient vampires that travelled the Coast by these mysterious astral tunnels. The vault seemed to have been their travel centre of kinds. I guess you are right, <CHARNAME>, there is no other insight here for us, than that the past is still alive in many ways around us and reaches out for us sometimes unexpectedly.~
 IF~~ THEN DO ~ AddexperienceParty(350) SetGlobal("TheVaultSentry","GLOBAL",3) ~ EXIT
 END
 
@@ -631,14 +631,14 @@ IF ~~ THEN REPLY ~ I think we have found the entrance to that *underground coast
 END
 
 IF ~~ THEN BEGIN SwCoaUW4
-SAY ~ Just look around, <CHARNAME>, this is build in a solid fashion. Look how they cleverly make use of the natural caves and structures and connect them with artifical tunnels. This looks like a system to me. And it is unlikely that more than one exist beneath this area.~
+SAY ~ Just look around, <CHARNAME>, this is build in a solid fashion. Look how they cleverly make use of the natural caves and structures and connect them with artificial tunnels. This looks like a system to me. And it is unlikely that more than one exist beneath this area.~
 IF ~~ THEN REPLY ~ And what does that mean for us?~ GOTO SwCoaUW5
 IF ~~ THEN REPLY ~ Do you have any idea who might be using it these days. Maybe our foe?~ GOTO SwCoaUW5
 IF ~~ THEN REPLY ~ Your talent to state the obvious is amazing. Use your hammer, not your mouth.~EXIT
 END
 
 IF ~~ THEN BEGIN SwCoaUW5
-SAY ~ This cave system will be rather large - I mean several days to travel and explore - even more if we take into account that it will not be uninhibited. I do not think that those bandits and iron throne allys have made their way into here. We have seen their activities all over the surface but no hints to some secret underground ways.~
+SAY ~ This cave system will be rather large - I mean several days to travel and explore - even more if we take into account that it will not be uninhibited. I do not think that those bandits and iron throne allies have made their way into here. We have seen their activities all over the surface but no hints to some secret underground ways.~
 IF ~~ THEN REPLY ~ But the mines?~ GOTO SwCoaUW6
 END
 
@@ -670,12 +670,12 @@ IF ~~ THEN REPLY ~ I heard those items are pretty useless on the surface.~ GOTO 
 END
 
 IF ~~ THEN BEGIN SwCoaUW22
-SAY ~ It is indeed. Drow items are energized by local earth nodes and the surrounding aura of what they call *faerzress*. As long as it remains within an earth node or a zone of faerzress, it grants its exceptional powers. The backdraw is that all those things will dissolve to dust if exposed to sunlight.~
+SAY ~ It is indeed. Drow items are energized by local earth nodes and the surrounding aura of what they call *faerzress*. As long as it remains within an earth node or a zone of faerzress, it grants its exceptional powers. The drawback is that all those things will dissolve to dust if exposed to sunlight.~
 IF ~~ THEN REPLY ~ Mmh. Anyway, we may use it as long as we stay underground. So you think drow are already near?~ GOTO SwCoaUW23
 END
 
 IF ~~ THEN BEGIN SwCoaUW23
-SAY ~ At least they have a connection to this cave system, it seems, but at the moment we are still too near to the surface to their liking. But we need to heed the warning and be prepared if we want to go deeper into this labyrith.~
+SAY ~ At least they have a connection to this cave system, it seems, but at the moment we are still too near to the surface to their liking. But we need to heed the warning and be prepared if we want to go deeper into this labyrinth.~
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I am afraid we must. I mean, we are following a dwarf. For him this is not such a strange habitat at all, he might have gone quite deep into this system.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SwCoaUW24
 IF ~Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ I am afraid we must. I mean, we are following a dwarf. For him this is not such a strange habitat at all, he might have gone quite deep into this system.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SwCoaUW25
 IF ~Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ I would rather return, Sandrah, but I have given my word to Otho to find his nephew. I won't break it, it would dishonour all of us.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SwCoaUW24
@@ -693,7 +693,7 @@ IF ~~ THEN DO ~ SetGlobal("SanDSOTSCUW","GLOBAL",4)~ EXIT
 END
 
 IF ~ Global("SanDSOTSCUW","GLOBAL",5)~ THEN BEGIN SwCoaUW31
-SAY ~ A strange alliance. Drow weaponmasters and mages with the duergar...~
+SAY ~ A strange alliance. Drow weapon masters and mages with the duergar...~
 IF ~~ THEN REPLY ~ Not really what you anticipated, Sandrah. Are you puzzled yourself?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SwCoaUW32
 IF ~~ THEN REPLY ~ You have erred a bit, it seems. Or maybe things have changed in the decades since your book has been last amended?~ GOTO SwCoaUW32
 END
@@ -750,7 +750,7 @@ END
 
 IF ~~ THEN BEGIN SwCoaUW51
 SAY ~ Still there is a bit of hope in all this for us now, <CHARNAME>.~
-IF~~THEN REPLY ~ Sandrah, you and your undefeatable optimism. Where do you see the light at the end of this tunnel now?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SwCoaUW52
+IF~~THEN REPLY ~ Sandrah, you and your unbeatable optimism. Where do you see the light at the end of this tunnel now?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SwCoaUW52
 IF ~~THEN REPLY ~ As much as I admire your optimistic view at times, I am afraid this is really grave news even for you.~ GOTO SwCoaUW52
 END
 
