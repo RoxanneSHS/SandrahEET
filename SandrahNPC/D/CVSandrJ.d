@@ -5085,8 +5085,8 @@ FillSlot(SLOT_AMULET)~
 END
 
 INTERJECT_COPY_TRANS SHARTE 12  SanFight12
-== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ If men are so pathetic, why did you choose only them for your game. Are you afraid to get into a real fight with a strong oponent. ~
-== SHARTE IF ~ InParty("CVSandr") ~THEN ~ Like whom, like you little weekend warrior princess - with your playtoy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
+== CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ If men are so pathetic, why did you choose only them for your game. Are you afraid to get into a real fight with a strong opponent. ~
+== SHARTE IF ~ InParty("CVSandr") ~THEN ~ Like whom, like you little weekend warrior princess - with your play toy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ Which means any hobgoblin would scare me more than you do. At least my silk panties are currently as dry as the Calimsha Desert.~
 == SHARTE IF ~ InParty("CVSandr") ~THEN ~ With your big words that could make one start to weep if they were not so laughable, you could almost get along for a male. When stupidity is the criteria for gender, I mean.~
 == CVSandrJ IF ~ InParty("CVSandr") ~THEN ~ If I could get along as male, then why not extend your bet to include me. Just to teach me a lesson, maybe? ~
@@ -5139,7 +5139,7 @@ INTERJECT_COPY_TRANS MELICA 23 MagesDaughter3
 == MELICA IF ~ InParty("CVSandr")~ THEN ~ It is all your fault, Sandrah, you decided to give up on me, so what else have I left now but my magic experiments.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ This cannot be true. This is a dream. You accuse me for your crazy attempts to tamper with magic that is sizes too big for you...~
 == Bimoen IF  ~ InParty("Imoen2") InParty("CVSandr")~ THEN ~ Hey, someone bring in some chairs 'n' a bit of snacks. This here will get interesting...and long...~
-== THALAN IF ~ InParty("CVSandr")~ THEN ~ My little Sandrah, one thing he said is correct. You have yourself to blame for still caring for this foolish little boy. But who am I to critisize, I think I have just made the same mistake by forgiving him once again.~
+== THALAN IF ~ InParty("CVSandr")~ THEN ~ My little Sandrah, one thing he said is correct. You have yourself to blame for still caring for this foolish little boy. But who am I to criticize, I think I have just made the same mistake by forgiving him once again.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Well. (Embraces Melicamp and gives him a long kiss.) I am happy you are well and have Thalantyr here to watch over you. I will not do that again. Farewell, Melicamp, I am off with the one who rescued you and whom you forgot to thank.~
 == MELICA IF ~ InParty("CVSandr")~ THEN ~ But, darling...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ <CHARNAME>, please let us get out of here quickly, before this apprentice-for-all-times tries to entangle me again.~
@@ -5152,7 +5152,7 @@ INTERJECT AJANTI 0 WDFriends
 == AJANTI IF ~ InParty("CVSandr")~ THEN ~ Lady Sandrah, is that really you? Oh, where are my manners, mylady, if you are with that party, their goal must be just - or at least not an evil one. ~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Walks up to Ajantis and kisses him on the cheek.) ~
 == AJANTI IF ~ InParty("CVSandr")~ THEN ~ (Ajantis blushes to deep red) M-m-mylady! Please!!~
-== Bimoen IF ~ InParty("Imoen2") InParty("CVSandr")~ THEN ~ (Giggles) Has-been lovers, haha, our cleric has a checkered past...~
+== Bimoen IF ~ InParty("Imoen2") InParty("CVSandr")~ THEN ~ (Giggles) Has-been lovers, haha, our cleric has a chequered past...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Ajantis, still the stiff little paladin-to-be? ~
 == AJANTI IF ~ InParty("CVSandr")~ THEN ~ Lady Sandrah, you err, I'm no longer the little paladin-to-be you once knew, but a member of the order now, following Helm's righteous way.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ That was more or less to be expected, Sir Ajantis, never taking even the slightest step from your designated path. ~
@@ -5165,11 +5165,11 @@ END AJANTI 5
 INTERJECT_COPY_TRANS X#Setta 0 SanSetRibbs
 == BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~ I do not know about others in this party, but I will not let this opportunity pass. I'd buy one for my girl surely, good lady.~
 == BDynah IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~Minsc, Minsc, you know what wouldst be said about you at home for that...~
-== BMINSC_ IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~They would joke about it with no end trying to bethrot me to my sweet Sandrah right away.~
+== BMINSC_ IF ~ InParty("Dynaheir") InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN ~They would joke about it with no end trying to betroth me to my sweet Sandrah right away.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~So you would buy one for me then, Minsc?~
 == BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~You know so much, Sandrah, but maybe you know not all about Rashemen customs. It is for all loved girls at the Midsummer Festival in Rashemen to wear such a ribbon in their hair, given to them by their boy. Boo would be ashamed if our girl would be seen there without our colour in her hair.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~A lovely custom, even if it is neither Midsummer nor we are near Rashemen. But one needs to be prepared. So which colour do I get from my Minsc?~
-== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Oh, my...hm. What do you say Boo? Red, as her mouth and the colour of a rose that she is? Too blantant?~
+== BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Oh, my...hm. What do you say Boo? Red, as her mouth and the colour of a rose that she is? Too blatant?~
 = ~ Yellow, like the morning sun that lights everything just like she lights our day? Or maybe green like s spring day, fresh and new like herself.~
 == BSANDR IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~Minsc, I will only wear one, otherwise all people would think I got multiple lovers, so you have to make up your mind.~
 == BMINSC_ IF ~ InParty("Minsc") InParty("CVSandr") GlobalGT("SanBooTlk","GLOBAL",3) ~ THEN~There is a good reason for any of her colours. Setta, I buy that rainbow coloured one as my lady appears in a different way to me each time I look at her.~
@@ -5225,7 +5225,7 @@ INTERJECT SONNER 5  SanUmberbowl
 ==  JEBADO  IF ~ InParty("CVSandr")~ THEN ~ Hell, Sonner the witch knows. ~
 = ~ We had lots of trouble with a young priestess of Umberlee seeking revenge on us 'cos we had to kill her mother. That Talos priest told us we need to do it to get his god's favour. So what? We are caught in a tangle of gods playing with us. ~
 == Sonner IF ~ InParty("CVSandr")~ THEN ~I suppose I have little choice then.  I've had the evidence for Talos on me the entire time; we felt it was safest that way.~
-==  JEBADO  IF ~ InParty("CVSandr")~ THEN ~Give them the bowl, they may know how to bequiet Umberlee, I'd say.~
+==  JEBADO  IF ~ InParty("CVSandr")~ THEN ~Give them the bowl, they may know how to becalm Umberlee, I'd say.~
 == Sonner IF ~ InParty("CVSandr")~ THEN ~ Take it, but know that the Storm Lord knows who it is that opposes him.~DO~GiveItem("MISC53",[PC])~
 =~Now you best get out of here.  I should stay well away from any Talos shrine if I were you.  Vengeful things these gods.~DO~AddexperienceParty(300) ActionOverride("Telman",EscapeAreaDestroy(90)) ActionOverride("Jebadoh",EscapeAreaDestroy(90))  EscapeAreaDestroy(90)~
 EXIT
@@ -5238,9 +5238,9 @@ INTERJECT RAIKEN 0 JoinBandtR
 == RAIKEN IF ~ InParty("CVSandr")~ THEN ~ Sandrah, princess of Waterdeep, finally you take notice of me. I knew this road to wealth would get me the best of chicks in the end. ~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ See this band with me. Guess you and your boss don't want to have such as us against them, sweety.~
 == RAIKEN IF ~ InParty("CVSandr")~ THEN ~ You want to threaten us, hammer girl, beware!~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ My, man, you really need me by your side. Someone's got to do the thinking. We want to be with you of course, can't you see that's why we came. Tazok would be delighted to have us in the ranks. I can even think he will promote you to be my boss in the troups.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ My, man, you really need me by your side. Someone's got to do the thinking. We want to be with you of course, can't you see that's why we came. Tazok would be delighted to have us in the ranks. I can even think he will promote you to be my boss in the troupes.~
 == RAIKEN IF ~ InParty("CVSandr")~ THEN ~ Hoi, be your boss! Guess what my first mission will be with you. I knew one day you would come crawling for me, they all do in the end. Well let's move.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Spits on the ground as Raiken turns his back.) Puh, can there be really girls that get so low as to act like this moroon thinks I would?~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Spits on the ground as Raiken turns his back.) Puh, can there be really girls that get so low as to act like this moron thinks I would?~
 END RAIKEN 9
 
 INTERJECT TEVEN 0 JoinBandtT
@@ -5248,9 +5248,9 @@ INTERJECT TEVEN 0 JoinBandtT
 == TEVEN IF ~ InParty("CVSandr")~ THEN ~ Sandrah, princess of Waterdeep, finally you take notice of me. I knew this road to wealth would get me the best of chicks in the end. ~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ See this band with me. Guess you and your boss don't want to have such as us against them, sweety.~
 == TEVEN IF ~ InParty("CVSandr")~ THEN ~ You want to threaten us, hammer girl, beware!~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ My, man, you really need me by your side. Someone's got to do the thinking. We want to be with you of course, can't you see that's why we came. Tazok would be delighted to have us in the ranks. I can even think he will promote you to be my boss in the troups.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ My, man, you really need me by your side. Someone's got to do the thinking. We want to be with you of course, can't you see that's why we came. Tazok would be delighted to have us in the ranks. I can even think he will promote you to be my boss in the troupes.~
 == TEVEN IF ~ InParty("CVSandr")~ THEN ~ Hoi, be your boss! Guess what my first mission will be with you. I knew one day you would come crawling for me, they all do in the end. Well let's move.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Spits on the ground as Teven turns his back.) Puh, can there be really girls that get so low as to act like this moroon thinks I would?~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Spits on the ground as Teven turns his back.) Puh, can there be really girls that get so low as to act like this moron thinks I would?~
 END TEVEN 5
 
 // Bandit Camp
@@ -5287,7 +5287,7 @@ INTERJECT_COPY_TRANS ENDER 6 ImoCamp6
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Elfman, you have seen my Henning, yes? He is fine, yes? He knows I am coming, yes? Elfman, speak, will you, yes?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Yes, yes, yes, and yes.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Hu? ~
-== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milkbaby and his spirit is unbeaten.~
+== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milk baby and his spirit is unbeaten.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Oh, my poor dearest darling. He has to suffer all this just because of me. Thank you elfman, I love ya for the news. (She squeezes a big wet kiss on the surprised elf's cheek.)~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Does the name Davaeorn mean anything to you?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp13","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ I suspect he is the one operating from the Cloakwood Mine, Tazok's superior. You should investigate that trapped chest with Tazok's papers right here. I am sure you will find more in there than I can tell you about it.~
@@ -5299,7 +5299,7 @@ INTERJECT_COPY_TRANS ENDER 13 ImoCamp13
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Elfman, you have seen my Henning, yes? He is fine, yes? He knows I am coming, yes? Elfman, speak, will you, yes?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Yes, yes, yes, and yes.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Hu? ~
-== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milkbaby and his spirit is unbeaten.~
+== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milk baby and his spirit is unbeaten.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Oh, my poor dearest darling. He has to suffer all this just because of me. Thank you elfman, I love ya for the news. (She squeezes a big wet kiss on the surprised elf's cheek.)~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Does the name Davaeorn mean anything to you?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ I suspect he is the one operating from the Cloakwood Mine, Tazok's superior. You should investigate that trapped chest with Tazok's papers right here. I am sure you will find more in there than I can tell you about it.~
@@ -5312,7 +5312,7 @@ INTERJECT_COPY_TRANS ENDER 18 ImoCamp18
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Elfman, you have seen my Henning, yes? He is fine, yes? He knows I am coming, yes? Elfman, speak, will you, yes?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Yes, yes, yes, and yes.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp18","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Hu? ~
-== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milkbaby and his spirit is unbeaten.~
+== ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ If you give me a chance to answer, yes. Your boyfriend was here two nights ago. They kept him with me here in the tent. Tazok urged the orc leader to quickly move on with their hostage to the Cloakwood. He was afraid that you would find his basis here and cause too much trouble because of Henning. Your boy is a bit battered but relatively unhurt. He is not a milk baby and his spirit is unbeaten.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Oh, my poor dearest darling. He has to suffer all this just because of me. Thank you elfman, I love ya for the news. (She squeezes a big wet kiss on the surprised elf's cheek.)~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Does the name Davaeorn mean anything to you?~
 == ENDER IF  ~ InParty("CVSandr") InParty("Imoen2") Global("ImoCamp6","GLOBAL",0) Global("ImoCamp13","GLOBAL",0)GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ I suspect he is the one operating from the Cloakwood Mine, Tazok's superior. You should investigate that trapped chest with Tazok's papers right here. I am sure you will find more in there than I can tell you about it.~
@@ -5323,7 +5323,7 @@ INTERJECT_COPY_TRANS IRON2 0 MineInf
 == CVSandrJ IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ And where are the orcs with their prisoner?~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Out with it quickest, man!~
 == IRON2 IF~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ They keep the orcs in their own quarter at the prison level. Scares dem prisoners like mad to have that bunch next door, haha.~
-== CVSandrJ IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Did you see their prisoner with them? Did they deliver him to Daevorn?~
+== CVSandrJ IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Did you see their prisoner with them? Did they deliver him to Davaeorn?~
 == IRON2 IF ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ They brought a human with 'em, just two days ago. But not for the boss. The orcs keep 'im in their quarters. Must be the prisoner for someone else, boss is not interested in him.~
 == Bimoen IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ He?~
 == CVSandrJ IF  ~ InParty("CVSandr") InParty("Imoen2") GlobalGT("SANIMONASHINT","GLOBAL",18)~ THEN ~ Do not worry, Imoen, we will see him pretty soon and he will tell us all about the background of his kidnapping himself.~
@@ -5359,7 +5359,7 @@ INTERJECT_COPY_TRANS KOVERA 3 Candletrapa
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It is as we expected, Sarevok, oh, yes Koveras spelled backwards, really wants to use us to eliminate the Iron Throne leaders for him. The ring of one of the victims to be found on his supposed murderer later on. A clumsy plan that shows us we have a good chance against this opponent.~
 == KOVERA IF ~ InParty("CVSandr")~ THEN ~ You then must be this mysterious advisor for Gorion's ward, who is reported to cause so much damage to the Iron Throne's operations.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ And to your operations, I assume, if you know those reports so well.~
-== KOVERA IF ~ InParty("CVSandr")~ THEN ~ Your choice of the wrong advisors, <CHARNAME>, has led you into this trouble and it will lead you to your downfall if you continue to follow this lying witch.~
+== KOVERA IF ~ InParty("CVSandr")~ THEN ~ Your choice of the wrong advisers, <CHARNAME>, has led you into this trouble and it will lead you to your downfall if you continue to follow this lying witch.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ The words of the cornered rat seeking for any chance to escape the fate that is obvious. This here will not be the location to seal your destruction, Sarevok. We will not be the scapegoats in your wicked plan.~
 == KOVERA IF ~ InParty("CVSandr")~ THEN~ You may consider yourself clever, but you are no match for the powers at work here, silly child.~
 END
@@ -5368,7 +5368,7 @@ INTERJECT_COPY_TRANS KOVERA 9 Candletrapb
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It is as we expected, Sarevok, oh, yes Koveras spelled backwards, really wants to use us to eliminate the Iron Throne leaders for him. The ring of one of the victims to be found on his supposed murderer later on. A clumsy plan that shows us we have a good chance against this opponent.~
 == KOVERA IF ~ InParty("CVSandr")~ THEN ~ You then must be this mysterious advisor for Gorion's ward, who is reported to cause so much damage to the Iron Throne's operations.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ And to your operations, I assume, if you know those reports so well.~
-== KOVERA IF ~ InParty("CVSandr")~ THEN ~ Your choice of the wrong advisors, <CHARNAME>, has led you into this trouble and it will lead you to your downfall if you continue to follow this lying witch.~
+== KOVERA IF ~ InParty("CVSandr")~ THEN ~ Your choice of the wrong advisers, <CHARNAME>, has led you into this trouble and it will lead you to your downfall if you continue to follow this lying witch.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ The words of the cornered rat seeking for any chance to escape the fate that is obvious. This here will not be the location to seal your destruction, Sarevok. We will not be the scapegoats in your wicked plan.~
 == KOVERA IF ~ InParty("CVSandr")~ THEN~ You may consider yourself clever, but you are no match for the powers at work here, silly child.~
 END
@@ -5389,7 +5389,7 @@ END
 
 // Ashen
 INTERJECT ASHEN 0  AsImposter
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Ha, I doubt you will be very much welcome there. Unless your pockets are filled with gold to pay all your debitors you left behind after your bankruptcy.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Ha, I doubt you will be very much welcome there. Unless your pockets are filled with gold to pay all your lenders you left behind after your bankruptcy.~
 == AJANTJ IF ~ InParty("Ajantis") InParty("CVSandr")~ THEN ~ Even my superiors at the temple gave this man some credit before he was finally found out.~
 == ASHEN IF ~ InParty("CVSandr")~ THEN ~ The hardships one must endure! The Sword Coast is not far enough from Waterdeep to remain unnoticed for long.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Silly to think you can escape the eyes of Helm or Elminster, dumb imposter.~
@@ -5436,7 +5436,7 @@ ADD_TRANS_TRIGGER GALKEN 3
 INTERJECT GALKEN 3 BetterNow
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Rather than to wait for some far away treasures that may or may not exist, I would be interested in that wine - and especially the dessert thereafter - right here and now.~
 == GALKEN IF ~ InParty("CVSandr")~ THEN ~ Wow, an unexpected offer from a lady who could not be expected to come into such quarters very often.  How about moving over to the fireplace, mylady, and exploring our possibilities in more depth.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ A splendid thought, dear friend, let us not hesistate. ~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ A splendid thought, dear friend, let us not hesitate. ~
 == GALKEN IF ~ InParty("CVSandr")~ THEN ~ ....~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
 
@@ -5445,7 +5445,7 @@ EXIT
 
 INTERJECT_COPY_TRANS SHANDAL2 15 UlghMag
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Tread carefully, mageling.~
-== SHANDAL2 IF ~ InParty("CVSandr")~ THEN ~ Damn, the mighty mages daughter in person. Must HE interfer ever and always.~
+== SHANDAL2 IF ~ InParty("CVSandr")~ THEN ~ Damn, the mighty mages daughter in person. Must HE interfere ever and always.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ <CHARNAME>, consider to listen to his offer only with utmost suspicion. However, I am too curious to find out what his cunning little mind has conjured for us.~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
 == SHANDAL2 IF ~ InParty("CVSandr")~ THEN ~ Oh, damn El...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ NOT A WORD TO ME ANYMORE!~
@@ -5455,28 +5455,28 @@ END
 
 INTERJECT_COPY_TRANS VOLO 2 Knowbetter
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Mmh.~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Mylady? May you know these stories better than me?~ 
-= ~ Huh, oh yes, I see you may indeed know them, my excuse, mylady Sandrah.~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ My lady? May you know these stories better than me?~ 
+= ~ Huh, oh yes, I see you may indeed know them, my excuse, my lady Sandrah.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Do not worry, master Volo, any story is largely improved if it is told by you. ~
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~ DO~GiveItemCreate("CVMiHist",Player1,1,0,0)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Only heartfelt compliments, good Volo, I always enjoyed your stories back then in Waterdeep.~
 = ~ But regarding the corner of my eye, Volo, you are standing too far away to really see what is there.~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Truely observed, mylady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ Truly observed, my lady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Well then, my experienced traveller?~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ With your allmighty father out of sight this time, well - As they say from Calimshan to Soubar, *Your place or mine*, mylady...~ 
+== Volo IF ~ InParty("CVSandr")~ THEN ~ With your almighty father out of sight this time, well - As they say from Calimshan to Soubar, *Your place or mine*, my lady...~ 
 END
 
 INTERJECT_COPY_TRANS VOLO 3 Knowbetter3
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Mmh.~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Mylady? May you know these stories better than me?~ 
-= ~ Huh, oh yes, I see you may indeed know them, my excuse, mylady Sandrah.~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ My lady? May you know these stories better than me?~ 
+= ~ Huh, oh yes, I see you may indeed know them, my excuse, my lady Sandrah.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Do not worry, master Volo, any story is largely improved if it is told by you. ~
 == Volo IF ~ InParty("CVSandr")~ THEN ~ Is there a bit of irony in your voice and in the corner of your eye.~ DO~GiveItemCreate("CVMiHist",Player1,1,0,0)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Only heartfelt compliments, good Volo, I always enjoyed your stories back then in Waterdeep.~
 = ~ But regarding the corner of my eye, Volo, you are standing too far away to really see what is there.~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ Truely observed, mylady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
+== Volo IF ~ InParty("CVSandr")~ THEN ~ Truly observed, my lady. (Volo moves close to Sandrah and pretends to study one of her eyes.) Right, now I see what it is...~ DO ~ IncrementGlobal("ElmHint","GLOBAL",1)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Well then, my experienced traveller?~
-== Volo IF ~ InParty("CVSandr")~ THEN ~ With your allmighty father out of sight this time, well - As they say from Calimshan to Soubar, *Your place or mine*, mylady...~ 
+== Volo IF ~ InParty("CVSandr")~ THEN ~ With your almighty father out of sight this time, well - As they say from Calimshan to Soubar, *Your place or mine*, my lady...~ 
 END
 
 //Naskel Mine
@@ -5575,7 +5575,7 @@ INTERJECT_COPY_TRANS MEILUM 0 Thirdpart
 == MEILUM IF ~ InParty("CVSandr")~ THEN ~ I was guarding and guarding them. Where are they now? This is all I have found of them when they were gone that night.~ DO~ GiveItemCreate("Sanwi3","CVSandr",0,0,0) ~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Poor man, have you been here ever since you lost that fated caravan so long ago? ~
 == MEILUM IF ~ InParty("CVSandr")~ THEN ~ I hear them cry, the poor babies, where are they now - do not doubt my words fools, I am the greatest fighter on the Sword Coast.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I am afraid we just witnessed one of his last moments of clearness. His mind is uncurable gone.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I am afraid we just witnessed one of his last moments of clearness. His mind is incurable gone.~
 END
 
 //Drienne Cloudpeaks
@@ -5594,25 +5594,25 @@ END
 
 INTERJECT_COPY_TRANS TAEROM 14 TaeAmu
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ I hope you can help me, if you would please be so kind and take a look at this. (Sandrah moves up to Taerom and opens her dress at the collar.)~
-== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Mylady, that is a very interesting ..em..amulet, in deed...~
+== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Milady, that is a very interesting ..em..amulet, in deed...~
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ The only problem is that it has this little spot, you see it, maybe a bit rusty?~
 == TAEROM  IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Oh yes, a little spot I spot there..yes..let me take a closer look, mylady. ~
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Yes, master smith, I knew you would see the problem and be able to help.~
-== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ If you do not mind, please, mylady, follow me this way to the backroom, I need to get a special..eh..*tool* for the problem at hand.~
-== CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Of course, dear master, I was sure you would possess the right *tool* for this...(Sandrah follows Taerom to the backroom of the smitty.)~
+== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ If you do not mind, please, milady, follow me this way to the backroom, I need to get a special..eh..*tool* for the problem at hand.~
+== CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Of course, dear master, I was sure you would possess the right *tool* for this...(Sandrah follows Taerom to the back room of the smithy.)~
 == TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ (When the two return a while later, you observe that the smith must have worked hard.)~
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~ THEN ~ Thank you, Taerom, good work. You are a crafty gentlemen, I will return whenever I have a problem like this.~ 
-== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~THEN ~ Always welcome, mylady. (The handsome smith winks at Sandrah.)~ DO ~ SetGlobal("SanHadTae","GLOBAL",2) RealSetGlobalTimer("SanTaeT","GLOBAL",600) ~
+== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",1)~THEN ~ Always welcome, milady. (The handsome smith winks at Sandrah.)~ DO ~ SetGlobal("SanHadTae","GLOBAL",2) RealSetGlobalTimer("SanTaeT","GLOBAL",600) ~
 END
 
 INTERJECT_COPY_TRANS TAEROM 14 TaeGir
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Good day, master Taerom.~
-== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Mylady, you look splendid once again, your repaired..em..amulet, suits you well...~
+== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Milady, you look splendid once again, your repaired..em..amulet, suits you well...~
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Oh, good master, if I could only say the say the same about the rest of my equipment.~
-== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Anything you think I can help you with, mylady Sandrah?~
+== TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ Anything you think I can help you with, milady Sandrah?~
 == CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ I hope so, Taerom, the clasp of my girdle is somehow stuck.~
 == TAEROM IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ (Looks around at his tools.) I just do not have the right equipment here, just wait a minute...~
-== CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ (Sandrah follows the smith to the sideroom where he seems to be looking for the right tools to help her with her girdle...)~
+== CVSandrJ IF ~ InParty("CVSandr") Global("SanHadTae","GLOBAL",3)~ THEN ~ (Sandrah follows the smith to the side room where he seems to be looking for the right tools to help her with her girdle...)~
 == TAEROM IF ~ InParty("CVSandr") ~ THEN ~ No problem, lady Sandrah, you are always welcome here with your little problems...~ DO ~ SetGlobal("SanHadTae","GLOBAL",4) ~
 END
 
@@ -5620,7 +5620,7 @@ END
 
 INTERJECT_COPY_TRANS SCAR 30 SanScar1
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ I understand, master Scar, that you wanted to give me something that my father has left in your care?~
-==SCAR IF ~ InParty("CVSandr")~ THEN ~ Mylady Sandrah? Eh - oh, yes, yes, that little, eh, something. I think I have left it in my quarter, just...~
+==SCAR IF ~ InParty("CVSandr")~ THEN ~ My lady Sandrah? Eh - oh, yes, yes, that little, eh, something. I think I have left it in my quarter, just...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It is probably best I just come with you to retrieve it, spares you one way, dear master.~
 ==SCAR IF ~ InParty("CVSandr")~ THEN ~ Eh, yes (blush), sure, this way...~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 END
@@ -5633,10 +5633,10 @@ INTERJECT_COPY_TRANS SCAR 31 SanScar4
 END
 
 INTERJECT_COPY_TRANS LOBAR 0 LowLatern
-==LOBAR IF ~ InParty("CVSandr")~ THEN ~ Mylady, we are acquainted to serve customers of every class and variety here, but rarely in my years have I encountered a lady of such distinction and beauty.~
+==LOBAR IF ~ InParty("CVSandr")~ THEN ~ My lady, we are acquainted to serve customers of every class and variety here, but rarely in my years have I encountered a lady of such distinction and beauty.~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Thank you very much, kind sir, you flatter me in a much welcome way, if I may say.~
 ==LOBAR IF ~ InParty("CVSandr")~ THEN ~ While your companions may enjoy themselves on cost of the house, may I take the freedom to show you a bit of the specialities I have gathered over time?~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It would be indeed a welcome excurse from the daily routine, for which your establishment has a reputation beyond the city's walls.~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ It would be indeed a welcome excuse from the daily routine, for which your establishment has a reputation beyond the city's walls.~
 ==LOBAR IF ~ InParty("CVSandr")~ THEN ~ This is quite a compliment from a lady of the world like you~
 END
 
@@ -5646,7 +5646,7 @@ INTERJECT_COPY_TRANS BORK 5 SanEdBlush
 ==CVSandrJ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~How could I ever dream to compete with the beauties of the Blushing Mermaid or the Undercellars. Your taste in women is for those at a level I can never reach.~ DO ~ SetGlobal("SanEdBlushTa","GLOBAL",2) ~
 ==Bedwin_ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Your training with the smith of Beregost and others may help...~
 ==CVSandrJ IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN ~Still I am afraid I can never reach the level you prefer in women. I wonder how any girl can ever sink so low.~
-==BORK IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN~ Surely not one like you, mylady.~
+==BORK IF ~ InParty("CVSandr") InParty("Edwin") GlobalLT("X#EdwinBlushing","GLOBAL",5)~ THEN~ Surely not one like you, my lady.~
 END
 
 INTERJECT_COPY_TRANS PHANDA 1 SanBiggPa
@@ -5665,7 +5665,7 @@ INTERJECT_COPY_TRANS LAOLA 0 SanSharGirlFFist
 == LAOLA IF~ InParty("Sharteel") InParty("CVSandr")~ THEN ~ Psst, you shouldn't insult Commander Dosan...~
 == BSHART IF~ InParty("Sharteel") InParty("CVSandr")~ THEN ~ Ha, *Commander* Dosan, by the Iron Throne's grace. Didn't I promise it, pussycat, he can be found with the scum trying to make his profit, this bastard.~
 == LAOLA IF~ InParty("Sharteel") InParty("CVSandr")~ THEN ~ You are insulting a high officer of the...~
-== BSHART IF~ InParty("Sharteel") InParty("CVSandr")~ THEN ~ Don't wet your panties about it, girly soldier, I can talk about my father how I want. And now  piss off.~
+== BSHART IF~ InParty("Sharteel") InParty("CVSandr")~ THEN ~ Don't wet your panties about it, girlie soldier, I can talk about my father how I want. And now  piss off.~
 END
 
 INTERJECT_COPY_TRANS REGINA 2 Sanbore2
@@ -5705,7 +5705,7 @@ END
 APPEND SHARTE
 
 IF ~ Global("BeatSharteel","GLOBAL",4) ~ THEN BEGIN SanSharBeatJ
-SAY ~ I am beat by such a tiny warrior imitation like you? How is that. Well, I will find out soon enough, as I stand by my word. <CHARNAME>, you command my swordarm as of now.~
+SAY ~ I am beat by such a tiny warrior imitation like you? How is that. Well, I will find out soon enough, as I stand by my word. <CHARNAME>, you command my sword arm as of now.~
 IF ~~ THEN REPLY ~ We will see your worth soon. But do not sulk too much, you have been beaten by Sandrah, one of the best fighters of the Sword Coast, whatever your prejudice against her looks might have suggested. ~ DO ~ ActionOverride("CVSandr",ForceSpell("Sharteel",CLERIC_CURE_SERIOUS_WOUNDS)~ GOTO SanSharBeatJ2
 END
 
@@ -5734,7 +5734,7 @@ IF WEIGHT #-999 ~ InParty("CVSandr")
 	OR(2)
         Global("Evilsh","GLOBAL",1)
         Global("Goodsh","GLOBAL",1)~ THEN BEGIN Punish
-SAY ~It is an odd place, to be sure. Teleportations are affected most drastically in effect trapping the occasional passing mage. Those that are there will find their way off in time. Those that are not there anymore have found their own way off. I think you will agree that the ones that you met were not inclined to work together and effect their own release. An excellent judge of character in a supposedly natural phenomenon, wouldn't you say? I must be off. Fare ye well. ~
+SAY ~It is an odd place, to be sure. Teleportations are affected most drastically in effect trapping the occasional passing mage. Those that are there will find their way off in time. Those that are not there any more have found their own way off. I think you will agree that the ones that you met were not inclined to work together and effect their own release. An excellent judge of character in a supposedly natural phenomenon, wouldn't you say? I must be off. Fare ye well. ~
 IF ~~ THEN DO ~ TakePartyItem("CLCK22")
                 TakePartyItem("MISC2H")
                 AddexperienceParty(900)
@@ -5758,7 +5758,7 @@ OR(2)
 PartyHasItem("NTMISC10")
 PartyHasItem("DSGBBOW")
 ~ THEN BEGIN SanHasItms1
-  SAY  ~Travelers, I recognized again the devilish mage's presence in your companion. But I also sense you have an item of interest for me as well. So now...Whatever you do, do not give a certain book to anyone who asks you for it, you will certainly be betrayed.~
+  SAY  ~Travellers, I recognized again the devilish mage's presence in your companion. But I also sense you have an item of interest for me as well. So now...Whatever you do, do not give a certain book to anyone who asks you for it, you will certainly be betrayed.~
 IF~~ THEN DO~ SetGlobal("SanMageDM","LOCALS",1)~EXTERN CVSandrJ SanHasItms2
 END
 END
@@ -5790,7 +5790,7 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Once again evil has been smashed! Well, *smashed* may not be the right word. But then, even a peanut can smite evil when thrown by the hand of the righteous. ~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Well, I am not sure if we want this adventure spread in a bardsong through the realms. But maybe it can be used on stage - for a comedy. ~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~A foe is defeated. Victory asks not for method to achieve it.~
-== IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Oh, mylady, if I only once had the courage and energy to act out with such strength for the good, instead of faltering in indecision.~
+== IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Oh, my lady, if I only once had the courage and energy to act out with such strength for the good, instead of faltering in indecision.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~Sandrah, thou arest the strangest kind of paladin one can imagine - but 'tis said that your goddess is different from others as well.~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! How many beers did I have last night? Hit me with Clangeddin's Axe, I need to wake up. ~
 == BNeera_ IF~ InParty("Neera") ~ THEN  ~ Are you sure you're not a wild mage at heart, Sandrah?~ 
@@ -5817,7 +5817,7 @@ IF ~~ THEN CVSANDRJ BaldMaekt15
 DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ Let us go buy some pink balloons and some ribbons for the girls, and then we could...~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ There sure is some arena around here where we can train on some male scum. Ha, all aboard for funtime! ~
-== BVicon  IF~ InParty("Viconia") ~ THEN ~ Another strange surfacer habit, these carnevals. But there seem to be a lot of willing males in the crowd. Excuse me, I think I spied a really decent prey...~
+== BVicon  IF~ InParty("Viconia") ~ THEN ~ Another strange surfacer habit, these carnivals. But there seem to be a lot of willing males in the crowd. Excuse me, I think I spied a really decent prey...~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ My heart bursts in remembering the Daoine Teague Feer, the great celebration of Shilmista. ~
 == BSANDR IF~ InParty("Kivan") ~ THEN ~ This is not as sacred as the Feer, but maybe you will remember it once as well with joy - as a moment you have spent with one you loved.~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ (Kivan wordlessly kisses Sandrah. He has a small tear in his eye.)~
@@ -5838,8 +5838,8 @@ DO ~ SetGlobal("NarHellAfter","GLOBAL",3) ~
 == BMINSC_ IF ~InParty("Minsc") ~ THEN~ Boo has reminded Minsc about the good tradition for us fighters of Rashemen to celebrate with mead our victories.~
 == BDynah  IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Oh, I fear the worst, Minsc always gets drunk heavily on such occasions and will be unusable the next day. But he never learns.~
 == BSANDR IF~ InParty("Dynaheir") InParty("Minsc") ~ THEN ~ Do not worry, Dynaheir. I will gladly celebrate with our courageous protector and my healing skills will help us avoid the consequences afterwards. Let everybody enjoy the day.~
-== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Blind citizens. I pity them for the arificial joys they need to install, never getting the chance of dwelling in nature's endless celebration and beauty. ~
-== BSANDR ~ Look at that merchant, <CHARNAME>. On an occassion like this your girl should receive a nice ribbon for her hair.~
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Blind citizens. I pity them for the artificial joys they need to install, never getting the chance of dwelling in nature's endless celebration and beauty. ~
+== BSANDR ~ Look at that merchant, <CHARNAME>. On an occasion like this your girl should receive a nice ribbon for her hair.~
 END
 ++ ~ Do not be too selfish, Sandrah, I will buy one for each girl in the party.~
 EXIT
@@ -5854,7 +5854,7 @@ DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ Which of my sisters taught you in these arts, Sandrah? <CHARNAME>, remember you have another healer in your group if it REALLY hurts. (Licks her lips seductively.) ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ What a lovely scene, oh how I yearn for the forests of Shilmista and my beloved Deheriana to do the same. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) Hups, I have not misplaced my notepad around here, no probably not. ~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not recognise you were behind that tree. (The color of his face could be named as *purple*.)~
+== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, milady. I did not recognise you were behind that tree. (The color of his face could be named as *purple*.)~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Just call on me if you need some romantic music to accompany you. ~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! Can this not wait until we get to a decent inn, so the rest of us can get a cool nice beer while you do whatever you want to do. ~
 == IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ I always wish I could my courage together and make such a move myself. Looks as if I have to be the bystander again.~
@@ -5863,8 +5863,8 @@ DO ~ SetGlobal("Pid9AnklCmt","LOCALS",2) SetGlobal("Pid9Ankl","LOCALS",1) ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Oh, this young love on the eve of doom. Keep on with it while you still can. Too sad there is no tomorrow for you and all of us. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Want me to join. I learned the Thay type of massage from a lady I met in...ah, no, I think it was...Never mind. ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou are not aware of the presence of danger, but thou shouldst.~
-== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competend couselor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
-==BGARRI IF~InParty("Garrick")~THEN~A few lines to add to my heroine's epos...the aspects of  romance in between the great deeds.~ 
+== BJahei  IF~ InParty("Jaheira") ~ THEN ~ Our competent leader through this wilderness and <PRO_HISHER> likely competent counsellor, see, see. I assume you two are taking special training in survival. Ha! (Stamps away angrily.) Let us move, <CHARNAME>. ~
+==BGARRI IF~InParty("Garrick")~THEN~A few lines to add to my heroine's epic...the aspects of  romance in between the great deeds.~ 
 ==Bedwin_ IF~InParty("Edwin")~THEN~(I hope she'll recognise my limping tomorrow - I must arrange a similar scene for us.)~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~ The Lady Firehair can be worshipped in many ways (Smile).~
 == BSANDR ~ (Sigh). Too good we have caring companions with us. ~
@@ -5884,16 +5884,16 @@ DO ~ SetGlobal("SanSplash","GLOBAL",4)~
 == Bedwin_ IF~ InParty("Edwin") ~ THEN ~ (What a chance to show the princess what is really to be explored beneath the red robe - if she would once just look in my direction. A bit of splashing might help...)~
 == BMINSC_ IF~ InParty("Minsc") ~ THEN ~ No, Boo stays on the beach, your fur will get all wet and ruffled and you complain afterwards. And get out of the sun, It's too hot for you. What? - Yes, I command you. I do in matters I know best and you do where you have more insight, right?~
 ==CVJenliJ IF~InParty("CVJenlig")~THEN~Jen'Lig likes be out of disguise clothes. Water caress scales like lover should.~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, mylady. I did not look your way, eeh, and not yours of course. (Dives under water.)~
+== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Oh, ehem, sorry, milady. I did not look your way, eeh, and not yours of course. (Dives under water.)~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ Starts to sing *In the summertime, when the weather is fine.... ~
 == Brasaad_  IF~ InParty("Rasaad") ~ THEN ~ I'd prefer bathing in Selune's light but it's better than not bathing at all.~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ What are you staring at, he! Did you think I have a fur on my skin or what. Buzzurk! ~
 == IF_FILE_EXISTS ~BB!GAVIN~ IF~ InParty("B!Gavin") ~THEN~ Just like in the good old days on the beach in Ulgoth's Beard, with Jolun and the rest. What a wonderful idea, Sandrah!~
-== BBRANW  IF~ InParty("Branwen") ~ THEN ~ My, is that water warm. Try to do that in Norheim, you will be an iceblock even in summertime. ~
+== BBRANW  IF~ InParty("Branwen") ~ THEN ~ My, is that water warm. Try to do that in Norheim, you will be an ice block even in summertime. ~
 == IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~THEN~I have not had such simple innocent pleasure since I was a little girl, yipee.~ 
 == IF_FILE_EXISTS C0SirenJ IF~ InParty("C0Sirene") ~THEN~Thank you, Lord Ilmater, I was feeling sooo dirty already. And you - look the other way...MEN!~
-== BXANNN  IF~ InParty("Xan") ~ THEN ~ The pleasure and the priviledge is mine to die by your side. ~
-== BCORAN  IF~ InParty("Coran") ~ THEN  ~ Ladies, out of the way. Let me show you my swandive! ~
+== BXANNN  IF~ InParty("Xan") ~ THEN ~ The pleasure and the privilege is mine to die by your side. ~
+== BCORAN  IF~ InParty("Coran") ~ THEN  ~ Ladies, out of the way. Let me show you my swan-dive! ~
 == BDynah  IF~ InParty("Dynaheir") ~ THEN ~ Thou art never too old for a bit of healthy fun.~
 == BDorn_  IF~ InParty("Dorn") ~ THEN ~Water? I don't even drink it, ever!~
 == BJahei  IF~ InParty("Jaheira") ~ THEN ~ Let us encompass nature like nature made us to be. ~
@@ -5920,7 +5920,7 @@ END
 CHAIN
 IF~~ THEN CVSANDRJ ChiHin11
 ~ You are right, <CHARNAME>, there is no direct hint to anything we would need at the moment. It does not yet help us directly. Unless we get to learn more by any chance the trail is as cold as you said.~
-= ~ It is still, I cannot get these children out of my thoughts. They must be nearly grown by now, about our age if they have survived. And somehow their tale is intwined with ours.~
+= ~ It is still, I cannot get these children out of my thoughts. They must be nearly grown by now, about our age if they have survived. And somehow their tale is entwined with ours.~
 END
 ++ ~ *For one short moment, a thought rushes through your mind. You are an orphan that came to Candlekeep with Gorion just about that time, seemingly out of nowhere...*~
 EXIT
@@ -5935,10 +5935,10 @@ DO~SetGlobal("SanChildH","GLOBAL",4)~
 ==CVSandrJ IF ~InParty("B!GAVIN")~ THEN ~ A ghost indeed. Maybe worse.~
 == Bimoen IF~ InParty("Imoen2") ~ THEN ~ <CHARNAME>, we gotta listen. I don't like how my besta friends looks now. Gloomy.~
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ I know this feeling of the past trying its prying fingers into present life, like the Spiderqueen trying to hunt the renegade on the surface.~
-== Bajant  IF~ InParty("Ajantis") ~ THEN ~ Helm's everwatching eye will keep safe those that do not follow false gods.~
+== Bajant  IF~ InParty("Ajantis") ~ THEN ~ Helm's ever watching eye will keep safe those that do not follow false gods.~
 ==CVSandrJ ~ Those two children with the travellers were Bhaalspawns.~
 END
-++ ~ Hunted by some while others tried to hide and save them. From the time of occurance that would make sense. But its the bad hunting for them and the good trying to save them?~ +  ChiHin21
+++ ~ Hunted by some while others tried to hide and save them. From the time of occurrence that would make sense. But its the bad hunting for them and the good trying to save them?~ +  ChiHin21
 ++ ~ And one of them might have been the one your mother gave life to. I see your interest in them now. But it seems they have survived. But who were the ones who tried to save them - and why?~ + ChiHin21
 
 CHAIN
@@ -5968,9 +5968,9 @@ EXIT
 // Waterdeep Temple
 CHAIN
 IF~~THEN CVSANDRJ SanWDTemple1
-~ Thank you for the welcome, Rhanthona, although I have well heard the slight hint in it regarding my abscence.~
+~ Thank you for the welcome, Rhanthona, although I have well heard the slight hint in it regarding my absence.~
 DO ~ SetGlobal("SanWDTempleHint","GLOBAL",2)~
-==SAMYSTP1~ Mylady, it was not intended as critisism, we just miss your joyful and encouraging presence here. Your father has advised us on your mission which we follow with great interest. The fame of your ventures reaches us regularly. So this must be the famous <CHARNAME> then?~
+==SAMYSTP1~ Milady, it was not intended as criticism, we just miss your joyful and encouraging presence here. Your father has advised us on your mission which we follow with great interest. The fame of your ventures reaches us regularly. So this must be the famous <CHARNAME> then?~
 END
 ++~Famous? I have not known that the Temple of Waterdeep has such an interest in me.~+ SanWDTemple2
 
@@ -5979,11 +5979,11 @@ IF~~THEN CVSANDRJ SanWDTemple2
 ~ You know about my father's interest in you already, and the temple has an interest in you and me - and many means to receive information from the Realms. Be sure that little of what we accomplish remains unnoticed for long.~
 ==SAMYSTP1~ Do not be irritated, young friend, your way is a special one and much depends on your actions, and the actions of our priestess as well.~
 == CVSandrJ ~ Let us stop now, Rhanthona, before we give <CHARNAME> the impression that Mystra's disciples are trying to mingle with <PRO_HISHER> fate.~
-==SAMYSTP1~ I am sorry, Mylady, if my words should have given that impression. No, young friend, your fame is spreading by your deeds and many follow your progress with interest. It is not the nature of Mystra to interfere with the decisions of the mortals. Even if our priestess is by your side, she does all of this on her own responsibility.~
+==SAMYSTP1~ I am sorry, Milady, if my words should have given that impression. No, young friend, your fame is spreading by your deeds and many follow your progress with interest. It is not the nature of Mystra to interfere with the decisions of the mortals. Even if our priestess is by your side, she does all of this on her own responsibility.~
 == CVSandrJ ~ Thank you, Rhanthona...~
-==SAMYSTP1~ Before you continue onwards, Mylady, if your time allows you may want to pay a visit to the Inner Temple with your friends. We have taken care of a problem case here but we are stuck in our progress. I assume that your healing talents may assist us to accomplish a result.~
+==SAMYSTP1~ Before you continue onwards, Milady, if your time allows you may want to pay a visit to the Inner Temple with your friends. We have taken care of a problem case here but we are stuck in our progress. I assume that your healing talents may assist us to accomplish a result.~
 END
-++~ We have already dwelled here long enough, Sandrah, our own mission calls us forward.~ DO~
+++~ We have already dwelt here long enough, Sandrah, our own mission calls us forward.~ DO~
 IncrementGlobal("Sanpoints","GLOBAL",-2)~ EXIT
 ++~ Lead us to the Inner Temple, Sandrah, let us see what we can do.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~ EXIT
 ++ ~ They seem to hold you at high esteem here, Sandrah. Another of your little secrets.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
@@ -5992,9 +5992,9 @@ CHAIN
 IF~ Global("SanWDTemplWi","GLOBAL",8)~ THEN CVSANDRJ SanWDTempleLey
 ~ Aaah....little one,...are you fine...?~
 DO~ SetGlobal("SanWDTemplWi","GLOBAL",9)~
-==CVLEYG ~ I think I am - I have been away long, like in an endless dream. But you, mylady, what is it with you?~
+==CVLEYG ~ I think I am - I have been away long, like in an endless dream. But you, milady, what is it with you?~
 == CVSandrJ ~ Aaah...do not worry, Leyala, I will be fine soon...just a bit of rest for all of us.~
-==CVLEYG ~ I was very sick before the dream began but now I feel well. Have...have you done that, mylady?~
+==CVLEYG ~ I was very sick before the dream began but now I feel well. Have...have you done that, milady?~
 == CVSandrJ ~ This here is Mystra's temple and I am one of her healers. I am glad you feel better, Leyala.~
 ==CVLEYG ~ Yes, this is Mystra's temple, you look just like the goddess as I saw her in my dream state...~
 DO ~ AddexperienceParty(6300) RestParty() DestroySelf()~EXIT
@@ -6003,7 +6003,7 @@ CHAIN
 IF WEIGHT #-2~Global("SanXzarDea","GLOBAL",1) Global("SanResurAva","GLOBAL",1) InParty("Xzar")~ THEN CVSANDRJ Sanxzarhandsoff
 ~What do you intend to do with our comrade's body, greedy vulture?~
 DO~SetGlobal("SanXzarDea","GLOBAL",2) ~
-==BXZAR~ (Mumbles) Magnificient material...bones...sinews...Eh, what is it, healer girl?~
+==BXZAR~ (Mumbles) Magnificent material...bones...sinews...Eh, what is it, healer girl?~
 == CVSandrJ ~ Step back, necromancer, or you will feel the whole wrath of Mystra! This body is none of your business.~
 ==BXZAR~(We will see, we will see...the day will come when your body will be on my workbench...)~
 END
@@ -6063,7 +6063,7 @@ DO ~ SetGlobal("SANIMONASHINT","GLOBAL",20)~
 == orcimo1 ~ UUUAAAH!~
 == Bimoen~ This orc then must know where Henning is!~
 == orcimo1 ~ UUUAAAH!~
-== CVSandrJ ~ He will not be able anymore to tell us anything.~
+== CVSandrJ ~ He will not be able any more to tell us anything.~
 == Bimoen~ Please, please besta Sandrah, do something to make him heal, we need to ask 'im about my Henning, quickest help!~
 == CVSandrJ ~ You really want me to heal this orc slayer that maybe has hurt your dear boy.~
 == Bimoen~ Sandrah, please, you must and must. If he knows where Henning is, we must know.~
@@ -6110,7 +6110,7 @@ CHAIN
 IF ~~ THEN CVSANDRJ ImoSlay3
 ~ No, <CHARNAME>, it is just a vague thought. I need to investigate further. It is not something to discuss now in the middle of this dungeon. We shall talk about it at a more quiet moment and after I have consulted with my book again on the topic. I hope that I was mistaken, but what we have seen could have been the mortal form of Bhaal. The Slayer. ~
 END
-++ ~ Bhaal again. Somehow this dead god is involved in all of this, and still we have no clue about how. But you are right, this dungeon is no place for futher talk. Knawlod is waiting here somewhere.~
+++ ~ Bhaal again. Somehow this dead god is involved in all of this, and still we have no clue about how. But you are right, this dungeon is no place for further talk. Knawlod is waiting here somewhere.~
 EXIT
 
 CHAIN
@@ -6120,12 +6120,12 @@ DO ~ SetGlobal("OrcPrison","GLOBAL",14)~
 == Bimoen~ Please, please besta Sandrah, do everything to make him heal, quickest we go to Waterdeep!! Right, <CHARNAME>?~
 == CVSandrJ ~ Hold on for a moment, Imoen. We have little time for this - we cannot travel all to Waterdeep - and do not forget, we will have all our enemies against us if we do not continue our strike now.~
 == Bimoen~ But what do we do? You do not give up Henning, no, you would never, I know you, Sandrah.~
-== CVSandrJ ~ (Sandrah has taken a small item from her magical box. It looks like a very small splinter of glass but it starts to expell a soft blue light as soon as she holds it in her hand.]~
+== CVSandrJ ~ (Sandrah has taken a small item from her magical box. It looks like a very small splinter of glass but it starts to expel a soft blue light as soon as she holds it in her hand.)~
 == Bimoen~ Whatcha do, be careful, very very much.~
 == CVSandrJ ~ Listen closely and do not discuss with me, <CHARNAME>, this is the only way to rescue Henning.~
 END
 ++ ~ Sure, Sandrah, you have all our trust in that. We all want Imoen and Henning happily together once again. Do whatever must be done.~+ HenToWD2
-++~ The one thing we don't need at this moment is some unnessessary hocus pocus.~ + HenToWD2
+++~ The one thing we don't need at this moment is some unnecessary hocus pocus.~ + HenToWD2
 
 CHAIN
 IF ~~ THEN CVSANDRJ HenToWD2
@@ -6140,7 +6140,7 @@ CHAIN
 IF ~~ THEN CVSANDRJ HenToWD3
 ~ <CHARNAME>, you prove yourself a competent leader once again. Do not worry about the task here in the mines. If this splinter works, I will be at Waterdeep in a moment. Once there with Elminster and Mystra, I am sure that they will have a way to locate you and send me back here to your side.~
 == Bimoen~ I cannot come with you, Sandrah, are you sure?~
-== CVSandrJ ~ Poor darling, there is no way for you to come with us. The splinter only carries me and what I have on me. I can only take Henning as he is presently unconcious. And, Imoen, mind you, with all your multiple talents you still are no healer. What Henning needs now is healing and rest. When I am back we will find a way to go to him. I swear it as your *besta* friend.~
+== CVSandrJ ~ Poor darling, there is no way for you to come with us. The splinter only carries me and what I have on me. I can only take Henning as he is presently unconscious. And, Imoen, mind you, with all your multiple talents you still are no healer. What Henning needs now is healing and rest. When I am back we will find a way to go to him. I swear it as your *besta* friend.~
 == Bimoen~ Henning, I love you. And you too, Sandrah. ~ DO~ AddXPObject("Imoen2",10000)IncrementGlobal("Sanpoints","Global",1)~
 EXIT
 
@@ -6148,7 +6148,7 @@ CHAIN
 IF ~~ THEN CVSANDRJ HenToWD4
 ~ Hush, <CHARNAME>, selfish idiot. Do not worry about the task here in the mines. If this splinter works, I will be at Waterdeep in a moment. Once there with Elminster and Mystra, I am sure that they will have a way to locate you and send me back here to your side.~
 == Bimoen~ I cannot come with you, Sandrah, are you sure?~
-== CVSandrJ ~ Poor darling, there is no way for you to come with us. The splinter only carries me and what I have on me. I can only take Henning as he is presently unconcious. And, Imoen, mind you, with all your multiple talents you still are no healer. What Henning needs now is healing and rest. When I am back we will find a way to go to him. I swear it as your *besta* friend.~
+== CVSandrJ ~ Poor darling, there is no way for you to come with us. The splinter only carries me and what I have on me. I can only take Henning as he is presently unconscious. And, Imoen, mind you, with all your multiple talents you still are no healer. What Henning needs now is healing and rest. When I am back we will find a way to go to him. I swear it as your *besta* friend.~
 == Bimoen~ Henning, I love you. And you too, Sandrah. ~ DO~ AddXPObject("Imoen2",10000)IncrementGlobal("Sanpoints","Global",-2)~
 EXIT
 
@@ -6178,11 +6178,11 @@ CHAIN
 IF WEIGHT #-6~Global("Chapter","GLOBAL",5)Global("HelpAldeth","GLOBAL",2)InParty("CVSandr") Global("SanAldth","LOCALS",0)~ THEN Aldeth SanAldth1
 ~ I'm sorry, but I have much to do in rebuilding my shattered consortium.  Perhaps we will meet again.~
 == CVSandrJ ~ Did you have the chance to relish the quietness of your lovely cabin again, Aldeth?~
-== ALDETH ~ Not yet, mylady. And then, if you allow me to say, at the moment I am lacking the company to enjoy the place in the way it deserves to be savoured - on a warm lovely sundown with a distinguished lady of equal taste by one's side...oh I am dreaming.~ DO~ SetGlobal("SanAldth","LOCALS",1)~
+== ALDETH ~ Not yet, milady. And then, if you allow me to say, at the moment I am lacking the company to enjoy the place in the way it deserves to be savoured - on a warm lovely sundown with a distinguished lady of equal taste by one's side...oh I am dreaming.~ DO~ SetGlobal("SanAldth","LOCALS",1)~
 == CVSandrJ ~ I see the picture, Aldeth, it is quite enjoyable.~
 == ALDETH ~ Maybe, if your time would allow...~
 == CVSandrJ ~ I am afraid, Aldeth, the cabin will remain but a dream for foreseeable time, but maybe this town offers a place to enjoy oneself as well.~
-== ALDETH ~ You are quite right, mylady, with the right company and the necessary fantasy almost any place can be made into a small oasis away from the daily bustle.~
+== ALDETH ~ You are quite right, milady, with the right company and the necessary fantasy almost any place can be made into a small oasis away from the daily bustle.~
 == CVSandrJ ~And you know of such a place, maybe in the vicinity.~
 == ALDETH ~Let me take you there, sweet lady...~
  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
@@ -6194,7 +6194,7 @@ DO~SetGlobal("SanCldKBo","LOCALS",1)ActionOverride("CVSandr",SetGlobal("SanCldKB
 == CVSandrJ ~He went to the mine, Emerson?~
 ==EMERSO~ I warned him because of that spider infestation that had started the day before he arrived. But he just laughed and told me that the spiders were a good sign that he was at the right place.~
 == CVSandrJ ~In deed puzzling. Spiders as a good sign for what? What or whom may he want to find down there...?~
-==EMERSO~ That's what I asked him as well, but he just gave me one of his books for an answer. Here look yourself, you are far more knowledgable than me, mayhaps I gives you some hint.~ DO~ GiveItemCreate("book39","CVSandr",1,0,0)~EXIT
+==EMERSO~ That's what I asked him as well, but he just gave me one of his books for an answer. Here look yourself, you are far more knowledgeable than me, mayhap it gives you some hint.~ DO~ GiveItemCreate("book39","CVSandr",1,0,0)~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("EmDrow","BG5400",1)~ THEN IF_FILE_EXISTS Emerso EmDrowhint2
@@ -6215,7 +6215,7 @@ END
 
 APPEND GALILE
 IF~~THEN BEGIN 66
-SAY~ Two bright new stars were born on the firnament just recently. One of them in Mystra's belt, the other is even more strange as it now adds to an insignificant unnamed constallation a new meaning - it is the old elvish symbol for *hope*. ~
+SAY~ Two bright new stars were born on the firmament just recently. One of them in Mystra's belt, the other is even more strange as it now adds to an insignificant unnamed constellation a new meaning - it is the old elvish symbol for *hope*. ~
 IF~~THEN REPLY~ What meaning has the appearance of a new star for us? ~ GOTO 67
 END
 
@@ -6296,7 +6296,7 @@ DO ~ SetGlobal("SanSuBH","GLOBAL",17)~
 ==ACQ40001 ~ Ya mem'ry's as sharp as mine. Well done. A pirate it is. A name, a year, a face?~
 == BSANDR ~ The island description is a bit vague, but maybe a name...How about Monteelah?~
 ==ACQ40001 ~ Puuh (Looks nervously around). Lower your voice, m'lady, maybe he's not as dead as he tried to make us think.~
-== BSANDR ~ I have a good prescription agains fear. ~ DO ~ TakePartyGold(500)~
+== BSANDR ~ I have a good prescription against fear. ~ DO ~ TakePartyGold(500)~
 ==ACQ40001 ~ Ya must be fearless, lady, few dare to speak that name at all.~
 == BSANDR ~ I see, we are talking about the pirate Monteelah here? ~
 ==ACQ40001 ~ Sure, but we ain't talkin' much longer if ya keep repeating that dreadful name. Killed all his crew they say. Not one returned from that island where he's s'pposed to have hid his treasure.~
