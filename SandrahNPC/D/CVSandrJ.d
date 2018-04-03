@@ -3,7 +3,7 @@ BEGIN CVSANDRJ
 // Healing Scrolls
 IF ~ Global("SanhealScrl","GLOBAL",1) ~ THEN BEGIN SanhealScrl
 SAY ~ <CHARNAME>, this kind of healing scrolls are very useful for a skilled healer like me. It would be wise to give them to me whenever we find them. I can significantly aid our party in the battles to come.~
-IF~~THEN REPLY ~ Thank you for this advise, my counselor. They are light to carry and the health of our party is an important aspect to be considered by a leader. I am still learning to fit this role.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanhealScrl2
+IF~~THEN REPLY ~ Thank you for this advise, my counsellor. They are light to carry and the health of our party is an important aspect to be considered by a leader. I am still learning to fit this role.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanhealScrl2
 IF~~THEN REPLY ~ But they also make good money. Money to improve our equipment and such.~ GOTO SanhealScrl2
 IF~~THEN REPLY ~ Candlekeep was full of dusty scrolls. If you see some worth in them, keep them. But don't fill your packs with stuff we don't need later on.~ GOTO SanhealScrl2
 END
@@ -38,13 +38,13 @@ IF ~Global("SanResurAva","GLOBAL",1)~ THEN BEGIN SanRessur1
 SAY ~ (Sandrah has knelt down by your fallen comrade and inspects carefully the body.) ~
 IF  ~~THEN REPLY ~ Is there anything you think you can do to help right here?~ DO ~ RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ GOTO GenRess
 IF~ OR(3) HaveSpellParty(CLERIC_RESURRECTION) HaveSpellParty(CLERIC_MASS_RAISE_DEAD) HaveSpellRES("SPJA01") ~THEN REPLY ~ I will let our cleric cast a spell, Sandrah. ~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
-IF ~~ THEN REPLY ~ We will take the body to a temple quickly to be ressurected.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~  EXIT
+IF ~~ THEN REPLY ~ We will take the body to a temple quickly to be resurrected.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~  EXIT
 IF~~THEN REPLY ~ We will bury our comrade and mourn for the fallen later.~DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
 IF~~THEN REPLY ~ Another fool gone - but I know my silly healer will not keep quiet until she's wasted her talent on a useless corpse...~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ DO~AddXPObject(Player1,-500)~GOTO GenRess
 END
 
 IF~~THEN BEGIN GenRess
-SAY ~ I can call the blessing of Mystra on me to ressurect our comrade. But you have to make sure with the rest, that we are well protected as I will not be able to defend myself for a while afterwards.~
+SAY ~ I can call the blessing of Mystra on me to resurrect our comrade. But you have to make sure with the rest, that we are well protected as I will not be able to defend myself for a while afterwards.~
 IF ~~THEN REPLY ~ No, Sandrah, it is too dangerous at the moment. We will need to find another way.~ DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
 IF~ Dead("Imoen2") InPartyAllowDead("Imoen2")~THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for Imoen that is possible! ~GOTO ImoRess
 IF ~ Dead("Khalid") InPartyAllowDead("Khalid")~ THEN REPLY ~ I will take care of that. Please, Sandrah, we must do all for Khalid that is possible!~ GOTO KhalRess
@@ -90,7 +90,7 @@ IF~~THEN REPLY ~ Please, Sandrah, we must do all for the fallen that is possible
 END
 
 IF~~THEN BEGIN  RescNoPoss
-SAY ~I am sorry, <CHARNAME>, my examination has revealed that this one is damaged too much for Mystra's rescue here on the field. If help is still possibel we need to take the body to a temple quickly.~
+SAY ~I am sorry, <CHARNAME>, my examination has revealed that this one is damaged too much for Mystra's rescue here on the field. If help is still possible we need to take the body to a temple quickly.~
 IF~~THEN DO~ SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
 END
 
@@ -362,8 +362,8 @@ END
 
 IF ~~ THEN BEGIN PCJonCenteol1
 SAY ~ The context in which I remember his name had to do with something done to an elf community. But like all these things, the elves hide it in the mist they love to surround what they consider their internal affairs.~
-IF~~ THEN REPLY ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enourmous, that it is kept secret even among the elves themselves. ~  GOTO PCJonCenteol2
-IF~~ THEN REPLY ~ Can't you use your pretty head to solve OUR problems, counselor. We have plenty of those. ~  GOTO PCJonCenteol2
+IF~~ THEN REPLY ~ If he is such a powerful mage and he has really misused his powers like you assume, then whatever he has done must be a crime so enormous, that it is kept secret even among the elves themselves. ~  GOTO PCJonCenteol2
+IF~~ THEN REPLY ~ Can't you use your pretty head to solve OUR problems, counsellor. We have plenty of those. ~  GOTO PCJonCenteol2
 END
 
 IF ~~ THEN BEGIN PCJonCenteol2
@@ -558,11 +558,11 @@ END
 IF~~  THEN BEGIN  SanXvart3
 SAY ~ I feel so...dirty. It is so pointless. Why did we not just run away and took another road. Let those blue bastards alone - we have won nothing.~
 IF ~~ THEN REPLY ~ I am not proud of what we have done, Sandrah, but look at it this way - we are a strong party and able to defend ourselves. If we had run away and kept them alive, what would have happened to a caravan of harmless travellers that could have met them without warning?~ DO ~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanXvart4
-IF ~~ THEN REPLY ~ Oh, don't be silly, my 'counselor', it is surely not your 'advice' to run away from such blue bastards and let them attack anyone who comes their way.~ GOTO SanXvart4
+IF ~~ THEN REPLY ~ Oh, don't be silly, my 'counsellor', it is surely not your 'advice' to run away from such blue bastards and let them attack anyone who comes their way.~ GOTO SanXvart4
 END
 
 IF~~  THEN BEGIN  SanXvart4
-SAY ~ I am a bad counselor today, <CHARNAME>. Of course you are right, they did not give us a chance to act otherwise and we could not have left this threat terrorize the whole area and endanger anyone else who could come along here unaware.~
+SAY ~ I am a bad counsellor today, <CHARNAME>. Of course you are right, they did not give us a chance to act otherwise and we could not have left this threat terrorize the whole area and endanger anyone else who could come along here unaware.~
 =~ Maybe it was just the complete stupidity of their senseless attack...why did they not see that we were much too powerful for them? Ah, do not worry, we will not be able to find an answer to that...~
 IF ~~THEN REPLY ~ You are right. This battle is not among our heroic deeds, just some dirty job that needed to be done. Let us get out of here before all our morale reaches a new low point.~ GOTO SanXvart5
 IF ~~THEN REPLY ~ (Take her in your arms for comfort.) Let us look for some sunshine even on this dreadful day, shall we?~ GOTO SanXvart5
@@ -578,7 +578,7 @@ END
 
 IF~Global("SanCandlOgr","LOCALS",1)~THEN BEGIN SarvArrog
 SAY~ That arrogant fool, calling himself the *Son of Murder* now openly is making promises to his followers for the time of his *immortality* already.~
-IF~~THEN REPLY ~ There are no more doubts now, counselor. Our findings and your learned analysis of the facts are proven correct now. Even if I had preferred your error, if you know what I mean.~ DO~ SetGlobal("SanCandlOgr","LOCALS",2)~GOTO SarvArrog2
+IF~~THEN REPLY ~ There are no more doubts now, counsellor. Our findings and your learned analysis of the facts are proven correct now. Even if I had preferred your error, if you know what I mean.~ DO~ SetGlobal("SanCandlOgr","LOCALS",2)~GOTO SarvArrog2
 IF~~THEN REPLY ~ THAT *Son of Murder* will not reach his goal, I tell you. ~ DO~ SetGlobal("SanCandlOgr","LOCALS",2)~GOTO SarvArrog2
 END
 
@@ -651,16 +651,16 @@ END
 IF ~~ THEN BEGIN SwCoaUW7
 SAY ~ We have seen orcs and duergar so far. Orcs do not usually go deeper under ground than we humans do. So it is probably duergar the deeper we proceed - and maybe drow.~
 IF ~~ THEN REPLY ~ Drow? ~ GOTO SwCoaUW8
-IF ~!InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counselor.~ EXIT
+IF ~!InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counsellor.~ EXIT
 IF ~!InParty("yeslick")~ THEN REPLY ~ I am once again perplexed how one can fill such a pretty head with such an amount of unnecessary lore.~ EXIT
-IF ~InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counselor.~ EXTERN BYESLI SwCoaUWY1
+IF ~InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counsellor.~ EXTERN BYESLI SwCoaUWY1
 END
 
 IF ~~ THEN BEGIN SwCoaUW8
 SAY ~ It is often reported that the drow can be found at the lower levels of areas inhabited by the duergar. The drow tolerate the duergar usually, provided the duergar let them pass for their occasional raids to the surface and then block their retreat against possible pursuers from above.~
-IF ~!InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counselor.~ EXIT
+IF ~!InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counsellor.~ EXIT
 IF ~!InParty("yeslick")~ THEN REPLY ~ I am once again perplexed how one can fill such a pretty head with such an amount of unnecessary lore.~ EXIT
-IF ~InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counselor.~ EXTERN BYESLI SwCoaUWY1
+IF ~InParty("yeslick")~ THEN REPLY ~ We will not find out unless we continue, right? Thank you once again, counsellor.~ EXTERN BYESLI SwCoaUWY1
 END
 
 IF ~ Global("SanDSOTSCUW","GLOBAL",3)~ THEN BEGIN SwCoaUW21
@@ -787,12 +787,12 @@ END
 //Infiltrate bandit camp
 IF ~ Global("SanBadDir","GLOBAL",1)~ THEN BEGIN SanBadDir10
 SAY ~ <CHARNAME>, just one moment please.~
-IF~~THEN REPLY ~ Yes, my counselor?~ DO ~SetGlobal("SanBadDir","GLOBAL",2)~ GOTO SanBadDir11
+IF~~THEN REPLY ~ Yes, my counsellor?~ DO ~SetGlobal("SanBadDir","GLOBAL",2)~ GOTO SanBadDir11
 IF~~THEN REPLY ~ What now?~ DO ~SetGlobal("SanBadDir","GLOBAL",2)~ GOTO SanBadDir11
 END
 
 IF~~ THEN BEGIN SanBadDir11
-SAY ~ I speak indeed as your counselor now. We should really consider not to take this bandit camp by a frontal attack. It is not only the forces we will have to face but also the possibility that hostages may be killed and that the bosses may get a chance to escape us at last in the foreseeable turmoil of the fight.~
+SAY ~ I speak indeed as your counsellor now. We should really consider not to take this bandit camp by a frontal attack. It is not only the forces we will have to face but also the possibility that hostages may be killed and that the bosses may get a chance to escape us at last in the foreseeable turmoil of the fight.~
 IF~~THEN REPLY ~ This is to be considered, you are right. I would avoid such a move, if I only knew of an alternative.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanBadDir13
 IF~~THEN REPLY~ Hesitation from my frontline fighter is the last thing I need in this situation. Sandrah, you deeply disappoint me.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanBadDir12
 IF~~THEN REPLY ~ Can you recommend another path of action for us? You know that time is pressing us.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanBadDir13
@@ -969,7 +969,7 @@ END
 
 IF~~ THEN BEGIN VaRevF2
 SAY ~ We should get ourself some holy water from the Beregost Temple and then go to visit the ghost cave nearby. Torqion required those two items to end his spooking. I think the town's people would be grateful if we could end the horror there.~
-IF ~~ THEN REPLY~ Thank you, my counselor.  ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
+IF ~~ THEN REPLY~ Thank you, my counsellor.  ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
 IF ~~ THEN REPLY~ One possible option.  ~ DO~ SetGlobal("SanIdolTake","GLOBAL",4)~ EXIT
 END
 
@@ -1065,19 +1065,19 @@ END
 
 IF ~~ THEN BEGIN HaebCorps2
 SAY~ <CHARNAME>, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
-IF ~~ THEN REPLY ~ Surely not, my counselor.~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
+IF ~~ THEN REPLY ~ Surely not, my counsellor.~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 IF ~~ THEN REPLY ~ Do I need to care?~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 END
 
 IF ~~ THEN BEGIN HaebCorps3
 SAY~ (Laughs) I know some of them. But honestly, <CHARNAME>, we should do something about it. After some time these creatures will get bored and find their way out of here. We surely do not want them run through the streets of Nashkel.~
-IF ~~ THEN REPLY ~ Surely not, my counselor.~DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
+IF ~~ THEN REPLY ~ Surely not, my counsellor.~DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 IF ~~ THEN REPLY ~ Do I need to care?~ DO ~ SetGlobal("9001Fi","GLOBAL",5)~ EXIT
 END
 
 IF~~THEN BEGIN SanHasItms2
 SAY ~ That would include betrayal by yourself, mageling. Your mistrust in my blood is repaid my mistrust for you.~
-IF~~THEN REPLY ~ What would you advise, counselor?~ GOTO SanHasItms3
+IF~~THEN REPLY ~ What would you advise, counsellor?~ GOTO SanHasItms3
 END
 
 IF~~THEN BEGIN SanHasItms3
@@ -1121,9 +1121,9 @@ END
  
 IF ~~ THEN BEGIN SanWarnNTPc
 SAY ~ I do not blame you, because it is easy to forget, but I am a priestess after all. This place is powerfully guarded by an ancient god or goddess. It may be connected to the events we have found on the Fields of the Death.~
-IF ~ GlobalGT("SanFDGGoth","GLOBAL",1)~ THEN REPLY~ This General Ghotal, the orc leader. We heard that the orcs seek a way for his ressurection. ~ EXIT
+IF ~ GlobalGT("SanFDGGoth","GLOBAL",1)~ THEN REPLY~ This General Ghotal, the orc leader. We heard that the orcs seek a way for his resurrection. ~ EXIT
 IF ~Global("9001Fi","GLOBAL",3)~ THEN REPLY~ Wasn't that strange mage Haeball mentioned in connection with that?~ EXIT
-IF~~ THEN REPLY~ Whatever key may be required to open it. Mmh, we best stay away from it then, my counselor.~ EXIT
+IF~~ THEN REPLY~ Whatever key may be required to open it. Mmh, we best stay away from it then, my counsellor.~ EXIT
 END
 
 IF ~ Global("SanOrcCKey","LOCALS",1)~ THEN BEGIN SanOrcCKey1
@@ -1154,7 +1154,7 @@ END
 
 IF ~~ THEN BEGIN SanKnowsHasdIdT2
 SAY ~ I propose to try and get as much information out of him as we can, using the bits and pieces we have gathered so far. Our goal must be, to stop whatever is brewing up there in the northern woods and around the Field of the Dead. A new orc war is not what the Sword Coast needs now.~
-IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a cardgame with you, my counselor.~ EXIT
+IF ~~ THEN REPLY ~ Am I right to think, that you want to use again your methods of threatening and bluff, I could study on you now every once in a while? I will never sit down for a cardgame with you, my counsellor.~ EXIT
 IF ~~ THEN REPLY ~ We'll go there but it will be me who does the talking.~ EXIT
 END
 
@@ -1587,7 +1587,7 @@ END
 
 IF~~THEN BEGIN WarnEd2
 SAY~ My goddess tolerates their schemings, and probably you should expect me to do the same. But my position is clear, Mystra's powers in the end have to be used to create something positive. The red wizards are only interested in the power they can gain from magic - they do not care for good or evil and work for anyone they expect to give them more power and wealth.~
-IF ~~ THEN REPLY ~ I think, my counselor, at the moment I better trust my own judgement. Yours is somehow tinted by your dislike of the red wizards in general.~ DO ~ SetGlobal("WarnEd","GLOBAL",2)~EXIT
+IF ~~ THEN REPLY ~ I think, my counsellor, at the moment I better trust my own judgement. Yours is somehow tinted by your dislike of the red wizards in general.~ DO ~ SetGlobal("WarnEd","GLOBAL",2)~EXIT
 END
 
 //Fireplain Hut
@@ -1934,7 +1934,7 @@ END
 IF ~ Global("SaBalCarn","GLOBAL",1)~ THEN BEGIN BaldMaekt1
 SAY ~ A fun fair, <CHARNAME>, we have not had much amusement for quite a while.~
 IF~PartyHasItem("sw1h19")~THEN REPLY~ And I do not feel much like having some now. Sandrah, just consider why we are here and don't play the little girl at the amusement park role, he.~ GOTO BaldMaekt12
-IF~~THEN REPLY~ Counselor, I agree, our mission is grave and our prospect is dark. As one elf I know may say, we are doomed and may not even see tomorrow. So why not have some fun.~ GOTO BaldMaekt13
+IF~~THEN REPLY~ counsellor, I agree, our mission is grave and our prospect is dark. As one elf I know may say, we are doomed and may not even see tomorrow. So why not have some fun.~ GOTO BaldMaekt13
 IF~!PartyHasItem("sw1h19")~THEN REPLY~ And I do not feel much like having some now. Sandrah, just consider why we are here and don't play the little girl at the amusement park role, he.~ GOTO BaldMaekt14
 END
 
@@ -2026,7 +2026,7 @@ END
 IF~~THEN BEGIN SanIrTRetCC4
 SAY ~ Clever questions, <CHARNAME>.~
 IF ~~ THEN REPLY ~ (Smile) I am learning daily - from the best, from you.~ GOTO SanIrTRetCC5
-IF ~~ THEN REPLY ~ And has my clever counselor the answers?~GOTO SanIrTRetCC5
+IF ~~ THEN REPLY ~ And has my clever counsellor the answers?~GOTO SanIrTRetCC5
 IF ~~ THEN REPLY ~ Does any of this help us with our case?~GOTO SanIrTRetCC5
 END
 
@@ -2168,8 +2168,8 @@ END
 
 IF ~~ THEN BEGIN SanTamoko5
 SAY ~ It is not for me to either condemn or forgive him, <CHARNAME>. That is your decision if it is to decide for any of us.~
-IF ~~ THEN REPLY ~ You have been my counselor and my lover through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
-IF ~~ THEN REPLY ~ You have been my counselor through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
+IF ~~ THEN REPLY ~ You have been my counsellor and my lover through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
+IF ~~ THEN REPLY ~ You have been my counsellor through all of this. So I may rightfully ask you for your opinion of that.~ GOTO  SanTamoko6
 IF ~~ THEN REPLY ~ This venture has been our common one since the beginning, it is not my decision alone that counts here. You have heard it once again from Tamoko, this is not a *family affair*, millions of lives on Toril are at stake here.~  GOTO  SanTamoko6
 IF ~~ THEN REPLY ~ For the survival of the Realms, his defeat is as sure as his death.~ EXIT
 END
@@ -2203,7 +2203,7 @@ END
 IF ~ Global("SaNasIro","GLOBAL",1) ~THEN BEGIN SaNasIro1
 SAY ~ <CHARNAME>, look there, I suggest we take a sample of this tainted iron with us back to Nashkel, maybe they can find out what causes it to decay and can do something about it. Perhaps even Taerom with his knowledge of iron could be helpful.~
 IF~~THEN REPLY ~ Yes, we should even inspect these creatures down here, they may carry some evidence of what they use to cause the damage.~ DO ~ SetGlobal("SaNasIro","GLOBAL",2)~EXIT
-IF~~THEN REPLY ~ It would be better, if we found some useable iron for Taerom and Braegar instead of loading our packs with some garbage, my *counselor*.~ DO ~ SetGlobal("SaNasIro","GLOBAL",2)~EXIT
+IF~~THEN REPLY ~ It would be better, if we found some useable iron for Taerom and Braegar instead of loading our packs with some garbage, my *counsellor*.~ DO ~ SetGlobal("SaNasIro","GLOBAL",2)~EXIT
 END
 
 
@@ -2348,11 +2348,11 @@ IF ~~ THEN REPLY ~ (You enjoy walking side by side with your beautiful companion
 IF ~ GlobalGT("Sprite_is_DeadBandit","GLOBAL",25) Global("SanFiSkills","LOCALS",0) ~ THEN REPLY ~ Sandrah, with your background from Waterdeep, I am wondering where you learned to fight like that.~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanFiSkills
 IF ~ AreaType(FOREST) TimeOfDay(DAY) Global("SanStrBe","LOCALS",0) ~ THEN REPLY ~ Wild strawberries over there, what a rare sight!~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanStrBe
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~Global("SanAtGor","LOCALS",0)~ THEN REPLY ~ Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~ GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~ I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~ Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~ Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDFA","LOCALS",0)~ THEN REPLY~ Do you have to tell me something about that old man Jopi, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanVisWDFA
@@ -2627,13 +2627,13 @@ END
 
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",7) ~ THEN BEGIN SanPCInit7
 SAY ~ (As Sandrah sees you come near, she starts to busily examine the tome of Faerun history she always studies at quiet moments. She makes you feel clearly that is is not the time to talk with you.) ~
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ GOTO SanTorq1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~ GlobalGT("RoadFound","GLOBAL",1) AreaCheck("bg2300") PartyHasItem("SanMap") ~ THEN REPLY ~ I am ready to start the journey to Waterdeep now, lead on, Sandrah.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WDTravl1
 IF ~ Global("SanNarQ","GLOBAL",7) !Global("SanWDHi","GLOBAL",2) Global("SanVisWD","LOCALS",0)~ THEN REPLY~ Do you sometimes wish to visit your home at Waterdeep again, Sandrah? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanVisWD
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
@@ -2654,11 +2654,11 @@ IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",8) ~ THEN BEGIN SanPCInit8
 SAY ~ (As Sandrah sees you come near, she smiles brightly:) <CHARNAME>, what is on your mind? ~
 IF ~Global("PCKnowsElmDaughter","GLOBAL",1)~ THEN REPLY ~ Sandrah, I want to ask you about Gorion again. I just recalled a small incident that I almost forgot in all the turmoil of the last days. You know, on that dreadful day I left Candlekeep with my foster father, I saw you talking to him on the library steps. You may not have seen me, as agitated as you stormed away from him. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO Candlevisit
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
@@ -2702,7 +2702,7 @@ END
 IF~ Global("SanDesTroll","LOCALS",4)~THEN BEGIN SanAcArNF2
 SAY~ You asked me for some acid arrows some time ago, <CHARNAME>. Around here is all I would need to produce us some.~
 IF~~THEN REPLY~ Thank you, but our quivers are filled at the moment. I will ask you again if we need some.~ DO~ SetGlobal("SanDesTroll","LOCALS",2)~EXIT
-IF~~THEN REPLY~ Very good, I almost forgot it, but my counselor did not. Go ahead, Sandrah.~  GOTO SanAcArF
+IF~~THEN REPLY~ Very good, I almost forgot it, but my counsellor did not. Go ahead, Sandrah.~  GOTO SanAcArF
 END
 
 
@@ -2835,7 +2835,7 @@ IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST
 IF~Global("SanPCGay","LOCALS",0)~ THEN REPLY~Ahem, Sandrah...can you imagine that I really have no interest in women at all?~DO~SetGlobal("SanPCGay","LOCALS",1)~GOTO SanGay
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF~ Global("Drizztfight","GLOBAL",1) !InParty("Branwen") GlobalLT("SanDrizzt","GLOBAL",3) Global("SanFiSkills","LOCALS",0)~ THEN REPLY ~ It seems that the famous Drizzt Do'Urden knows you well, Sandrah? In a way I envy you for this.~ GOTO SanKnoDrizPC1
 IF ~ GlobalGT("Santiax","LOCALS",3) Global("SantiaxPC","LOCALS",0)~ THEN REPLY ~ Tiax seems to think that your heritage in a way seems to imply what kind of future is waiting for you.~ GOTO SanTiaxPC1
@@ -2871,7 +2871,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDF
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ Global("SanBranDec","GLOBAL",5)~ THEN REPLY ~ It feels a bit empty, Sandrah, without Branwen - even with the two of us together in love. Do you feel the same?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",4)~GOTO BranLeft1
 IF ~ Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~ THEN REPLY ~ You have been to this island with your father, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanAskBH11
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
@@ -3358,7 +3358,7 @@ SAY~I can accept some open word when needed, I can even take some rudeness now a
 END
 
 IF~~ THEN BEGIN Sanbast3
-SAY~I have said what needed to be said. Do with it what you want. Just do not seek for your counselor's advice when you go on like that.~
+SAY~I have said what needed to be said. Do with it what you want. Just do not seek for your counsellor's advice when you go on like that.~
 IF~~THEN DO~SetGlobal("Sanbehbast","LOCALS",2)RealSetGlobalTimer("SanFlirTi","GLOBAL",3000)~ EXIT
 END
 
@@ -3398,12 +3398,12 @@ IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Tal
 IF~~ THEN REPLY ~ (Smile at Sandrah and kiss her quickly.) ~ EXIT
 IF ~ Global("Gorlet","LOCALS",0) GlobalGT("Formedcloth","GLOBAL",7)~ THEN REPLY ~ Sandrah, you must know on the day I found Gorion's dead body he had this letter, that Imoen had already seen before. The warning of what was approaching. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO GorLet1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
 IF~~THEN REPLY~I want to talk with you about your relationship with a companion.~GOTO StopRom
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF
 IF~Global("SanRompa","Global",0)~ THEN REPLY ~ Sandrah, we need to clarify our relationship once and for all.~ GOTO RomClari1
-IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
+IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counsellor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
 IF ~ Global("SanWDRespect","LOCALS",1)~ THEN REPLY ~ We have a bit of time now, Sandrah. Please tell me a bit of your position and relation to the famous Mystra Temple in Waterdeep.~ GOTO SanWDRespct5
@@ -3435,7 +3435,7 @@ IF~~ THEN REPLY ~ (Embrace Sandrah and give her a passionate kiss. ) ~ EXIT
 IF ~ PartyHasItem("SanParc") Global("SanParcPid","LOCALS",0) ~ THEN REPLY~ When we brought the Shard back to your father, I noticed he slipped some small box into your robes. May I ask you what it was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanParcPid
 IF~ GlobalGT("SanNarQ","GLOBAL",6) !AreaType(OUTDOOR) Global("SanAdveFa","LOCALS",0) !AreaType(DUNGEON) ~ THEN REPLY ~ You mentioned sometime that you used to travel with your father a bit on his adventures, Sandrah. Tell me about it, please. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanAdvenE1
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fall and we have time for a rest. I long for you, Sandrah.~ GOTO SanNight2Inv
 IF ~ AreaType(CITY) GlobalLT("SanBuySweet1","LOCALS",2) ~THEN REPLY ~ Wait here, a minute, I need to get us something quickly. (You rush into a nearby shop.) ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanBuySweet11
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
@@ -3496,13 +3496,13 @@ IF ~~ THEN REPLY ~My heart belongs to another. I can't respond to your feelings.
 END
 
 IF ~~ THEN BEGIN  RomClari5
-SAY~You have become a competent leader indeed. As your...former...counselor I support your decision. Too bad it breaks my heart.~
+SAY~You have become a competent leader indeed. As your...former...counsellor I support your decision. Too bad it breaks my heart.~
 =~(She forces a smile.) I am a healer after all, I am not supposed to die from a broken heart, right?~
 IF~~THEN DO ~SetGlobal("SanRompa","Global",1) SetGlobal("Sandrahjoined","Global",83)LeaveParty() EscapeAreaDestroy(90)~EXIT
 END
 
 IF ~~ THEN BEGIN  RomClari6
-SAY~You have become a competent leader indeed. As your...counselor I support your decision. Too bad it breaks my heart.~
+SAY~You have become a competent leader indeed. As your...counsellor I support your decision. Too bad it breaks my heart.~
 =~(She forces a smile.) I am a healer after all, I am not supposed to die from a broken heart, right?~
 =~I need some time to think about it. Let us move. I will follow you for the time being until I see clear enough to make my own plans. Let us talk another day.~
 IF~~THEN DO~SetGlobal("SanRompa","Global",2) RunAwayFrom(Player1,60)~EXIT
@@ -3782,7 +3782,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) Global("SanWDHi","GLOBAL",2) Global("SanVisWDF
 IF~GlobalGT("Santiax","LOCALS",3)Global("SanTiaHealQ","LOCALS",0)~ THEN REPLY~Sandrah, can you imagine that Tiax could be healed from his megalomania?~ GOTO SanTiaHel1
 IF ~ GlobalGT("SanWDTempleRha","GLOBAL",0) GlobalGT("SanWDTempleHint","GLOBAL",1) Global("SanWDRespect","LOCALS",0)~ THEN REPLY ~ Sandrah, you seem to be highly respected at the Waterdeep temple.~ GOTO SanWDRespct1
 IF ~ Global("SanWDRespect","LOCALS",1)~ THEN REPLY ~ We have a bit of time now, Sandrah. Please tell me a bit of your position and relation to the famous Mystra Temple in Waterdeep.~ GOTO SanWDRespct5
-IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counselor?~GOTO BHGHand
+IF~Global("BHHandSearch","GLOBAL",0) PartyHasItem("BHGHandn") PartyHasItem("BHGHand") ~THEN REPLY~Do you have any idea about this *Glorious Hand* issue, my learned counsellor?~GOTO BHGHand
 IF~ Global("SantalosDec","GLOBAL",10)~ THEN REPLY~What is it between you and Talos - or Mystra and Talos respectively? ~GOTO Talosvisit4
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~ GOTO SanTalosF1
 IF~ Global("SanEdLoveBoy","LOCALS",2)~ THEN REPLY ~ Your former hate for the red wizard Edwin seems to have changed quite a bit, Sandrah?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanEdLoveBoy20
@@ -3793,7 +3793,7 @@ IF ~ Global("SanNobility","LOCALS",0) AreaType(CITY) ~ THEN REPLY ~ As a child f
 IF~PartyHasItem("SW1H19") Global("TheVaultVamp","GLOBAL",2) !See([ENEMY]) CombatCounter(0)~THEN REPLY~ Can you call the Vault Sentry to make our traveling faster, please.~ GOTO SanvaultSum
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~ (You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
 IF ~ Global("SanWoodSt","LOCALS",2) AreaType(DUNGEON)~ THEN REPLY ~ Can you provide us with some wooden stakes, Sandrah?~ GOTO SanMkStake5
-IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
+IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counsellor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
@@ -3816,7 +3816,7 @@ IF ~ Global("X#XALOVETALK","GLOBAL",39) InParty("XAN") Global("Xanrever","LOCALS
 IF ~ Global("SanOrDiId","GLOBAL",3) ~ THEN REPLY ~ I want to talk with you now about that diary we found at Ulcaster, if you don't mind. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO UlDarT
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~ THEN REPLY~Can you tell me some more about Waterdeep?~  DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ !AreaType(DUNGEON) ~ THEN REPLY ~ I can hardly wait until the dusk will fall and we have time for a rest. I long for you, Sandrah.~ GOTO SanNight2Inv
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanPCGavT1
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
@@ -3852,7 +3852,7 @@ IF~~THEN REPLY ~ I have my doubts. Not even the high priests at the Temple were 
 END
 
 IF~~THEN BEGIN  SanTmplHeal2
-SAY ~ (Smiles) Do not forget that your eager counselor nearly killed the both of us in her blind attempt to do good by using powers that are beyond her control. I promise you this, I will not let such behaviour become a habit to me.~
+SAY ~ (Smiles) Do not forget that your eager counsellor nearly killed the both of us in her blind attempt to do good by using powers that are beyond her control. I promise you this, I will not let such behaviour become a habit to me.~
 IF~~THEN REPLY ~ We have paid the price but your goddess seems to have further plans for you. Rely on her protection.~ GOTO SanTmplHeal3
 IF~~THEN REPLY ~ I have agreed with my free will to help you - and I do not regret it. Yet I know what you mean. We cannot do such things every day. However I do not think you acted foolishly or blind. I would call it a calculated risk instead, (laugh) if a risk really can be calculated at all.~EXIT
 END
@@ -4089,7 +4089,7 @@ END
 
 IF ~~THEN BEGIN ZomHom16
 SAY ~ I am sure he has not yet studied those papers himself, otherwise he would not have hidden them and now would need to hunt them. If he had, he would not need them anymore but would rather be out to find those two missing parts. The papers come from different sources and are written in quite a number of differents scripts and old languages. I doubt that a pirate has the knowledge to decipher them. He would need a very learned scholar for such a task.~
-IF ~~ THEN REPLY ~ Someone like you then, my knowledgeable counselor. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
+IF ~~ THEN REPLY ~ Someone like you then, my knowledgeable counsellor. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
 IF ~~ THEN REPLY ~ A monk like those at Candlekeep. But tell me, who do you think has taken the missing bits from the stack then?~ GOTO ZomHom17
 END
 
@@ -4346,7 +4346,7 @@ IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN RE
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
 IF ~ Global("SanNobility","LOCALS",0) AreaType(CITY) ~ THEN REPLY ~ As a child from a metropole's society I wonder how you feel about nobility and ranks and all such.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanSociety1
 IF ~ GlobalLT("PidLock","LOCALS",2) ~ THEN REPLY ~(You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
-IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counselor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
+IF ~ Global("SanOnBalduIsl","GLOBAL",1)~ THEN REPLY ~ Now, counsellor, do you have any idea what we have to face here? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO WWIsl1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",1) Global("SanCorMale","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorMal1
 IF~ InParty("Coran") Global("SanRomPath","GLOBAL",2) Global("SanCorFem","LOCALS",0)~ THEN REPLY ~ Sandrah, what do you make of our cute companion Coran? ~GOTO SanCorFem1
 IF ~ GlobalGT("Cowscroll","GLOBAL",9) Global("EdCursGon","LOCALS",0) ~ THEN REPLY ~ Mystra has finally taken her curse off from Edwin.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO EdCursGon1
@@ -4360,7 +4360,7 @@ IF ~ GlobalGT("SanBooTlk","GLOBAL",5) Global("MinskFlow","LOCALS",0) ~ THEN REPL
 IF~ Global("SanXanPC","GLOBAL",2)InParty("Xan")~THEN REPLY~ I observe you started to care for Xan quite a bit. Is it the healer that tries to cure this hopeless case?~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanXanPC13
 IF ~ Global("SaOgmaIn","GLOBAL",6) AreaCheck("CVWOHA") ~  THEN REPLY ~This place does not really look like the kind of palace you must be used to, my love. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanloveHut1
 IF ~ Global("X#XALOVETALK","GLOBAL",39) InParty("XAN") Global("Xanrever","LOCALS",0) ~ THEN REPLY ~ May I ask you a very intimate question, my love? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanrevery1
-IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counselor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
+IF ~ OR(2) Global("TORKIONNEEDYOU","GLOBAL",1) Global("NTTorkionNeedYou","Global",1) !PartyHasItem("Misc48") Global("SanTorq","LOCALS",0) ~ THEN REPLY ~ Sandrah, my little counsellor, does your famous book tell us anything about this Torqion and the sword he requires from us? ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanTorq1
 IF ~ Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~ THEN REPLY ~ Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO SanPCGavT1
 IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REPLY ~ My back hurts badly and it's myself I have to blame. As the leader of our group I should have called us to rest already hours ago.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO NiteMass1
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
@@ -4510,7 +4510,7 @@ IF~~THEN GOTO SanWDRespct8
 END
 
 IF ~~ THEN BEGIN SanWDRespct8
-SAY~  Actually there is no contradiction between the two. I serve Mystra and the adequate use of her powers in the Realms out there any day. I do my work at your side both as a teacher and counselor as well as with my healing skills. And I follow the quest of an admirable hero whose fate may turn out to be of great importance for us all.~
+SAY~  Actually there is no contradiction between the two. I serve Mystra and the adequate use of her powers in the Realms out there any day. I do my work at your side both as a teacher and counsellor as well as with my healing skills. And I follow the quest of an admirable hero whose fate may turn out to be of great importance for us all.~
 IF~~THEN REPLY ~ But you always claimed that neither you father nor your temple sent you to my side. How does that fit?~ GOTO SanWDRespct9
 END
 
@@ -4557,7 +4557,7 @@ END
 
 IF~~THEN BEGIN Gorlover1
 SAY ~ I can imagine what it is. The relationship between my mother Khalindra and Gorion.~
-IF ~~ THEN REPLY~ Smart counselor, I would have really struggled to get the question out if you had not known it already. And do you also know the answer then?~ GOTO Gorlover2
+IF ~~ THEN REPLY~ Smart counsellor, I would have really struggled to get the question out if you had not known it already. And do you also know the answer then?~ GOTO Gorlover2
 IF ~~ THEN REPLY~ Right, you have any insight to share?~ GOTO Gorlover2
 END
 
@@ -4832,7 +4832,7 @@ END
 IF~~THEN BEGIN SanDBIsShe3
 SAY~Let us not be too quick in our judgement, <CHARNAME>. We have been used and misused before, fed with lies or half truth to act for one party or other. We will learn more soon and make our own decisions.~
 IF~~THEN REPLY~Just as usual, yes.~EXIT
-IF~~THEN REPLY~I can count on my counselor, so much is assured.~EXIT
+IF~~THEN REPLY~I can count on my counsellor, so much is assured.~EXIT
 END
 
 IF~~THEN BEGIN SanDBIsShe4
@@ -4848,7 +4848,7 @@ IF~~THEN REPLY~One of those stolen children may have been Caelar Argent, don't y
 END
 
 IF~~THEN BEGIN SanMadel2
-SAY~The Bhaal priestess was mad from all she had to endure but even in madness she did not invent such an event. Fact is the raid happened. Bhaal children were *stolen* or rather rescued by the Harpers. These children survived the attempted sacrifice and early attempt to ressurect the God of Murder.~
+SAY~The Bhaal priestess was mad from all she had to endure but even in madness she did not invent such an event. Fact is the raid happened. Bhaal children were *stolen* or rather rescued by the Harpers. These children survived the attempted sacrifice and early attempt to resurrect the God of Murder.~
 IF~~THEN REPLY~Thank you for staying analytic here. These children, bhaalspawns, may be alive today.~ GOTO SanMadel3
 IF~~THEN REPLY~The harper and the priestess fit quite well to what Gorion wrote in his letter.~GOTO SanMadel4
 END
