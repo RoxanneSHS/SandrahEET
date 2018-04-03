@@ -115,10 +115,10 @@ CHAIN
 IF ~ Global("SanCloeRom","GLOBAL",10)~ THEN BSANDR SanChloR4
 ~ * My body still tingles where you last touched*~
 DO ~ SetGlobal("SanCloeRom","GLOBAL",11) RealSetGlobalTimer("SanCloeInterv","LOCALS",1800) ~
-== RCHLOEJ ~ (Chloe moves to Sandrah and puts her hand gently on the other girl's upper thight just below to where her armour ends.) Was is there, my snowcap?~
+== RCHLOEJ ~ (Chloe moves to Sandrah and puts her hand gently on the other girl's upper thigh just below to where her armour ends.) Was is there, my snowcap?~
 == BSANDR~ (Dreamily) Oh, a bit further up, how could I forget that...~
 == RCHLOEJ ~ Your armour protects you from your foe - but also from your friend and lover sometimes.~
-== BSANDR~ (Smiles) It is quite practicable that the kensai do not wear such protection. You have no defense against me this way.~
+== BSANDR~ (Smiles) It is quite practicable that the kensai do not wear such protection. You have no defence against me this way.~
 == RCHLOEJ ~ Why would I want to? I can vividly remember where YOU last touched ME. Can you as well?~
 == BSANDR~ Definitely! (Sandrah takes Chloe's hand and the two move quickly into the darkness and out of sight.) ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
@@ -138,8 +138,8 @@ DO ~ SetGlobal("SanCloeRom","GLOBAL",13) RealSetGlobalTimer("SanCloeInterv","LOC
 = ~ (Chloe straightens herself and returns to stand close to Sandrah. Her face is calm again and she takes the priestess' hand.) No - you would not betray me so, my snowcap, there must be something more to this story.~
 == BSANDR~ Thank you for your trust, my squirrel, you are not mistaken. I am no Bhaalspawn, for you know that my father is Elminster. I am also not a sibling of <CHARNAME> as the dead god Bhaal has used my mother as a vessel to breed one of his spawns but that does not make us *family*. Bhaal tried to revenge on the ones to kill him, Mystra and Cyric, my grandparents by hurting their son and his wife that way.~
 == RCHLOEJ ~ But the bastard has failed. Not only has <CHARNAME> found a different use of Bhaal's heritage but also the girl the evil god made motherless is accompanying the spawn today.~
-== BSANDR~I am not even convinced anymore that <CHARNAME> is the spawn who killed my mother, I am still searching for that child.~ 
-=~But this not the only case, Chloe, where the Gods of Faerun have underestimated the peristence and the freedom of the mortals. We are not their toys.~
+== BSANDR~I am not even convinced any more that <CHARNAME> is the spawn who killed my mother, I am still searching for that child.~ 
+=~But this not the only case, Chloe, where the Gods of Faerun have underestimated the persistence and the freedom of the mortals. We are not their toys.~
 == RCHLOEJ ~ A valid thought - I am Akadia's child and she is mother to me. And still it is my life I live and my fate I decide upon myself. It feels good to share that with you, snowcap. (She seals her words with kissing Sandra's eyelids again, one after the other.)~
 EXIT
 
@@ -169,7 +169,7 @@ DO ~ SetGlobal("SanCloeRom","GLOBAL",18) RealSetGlobalTimer("SanCloeInterv","LOC
 == RCHLOEJ ~ You are an inspiration to me, snowcap, I think one of these days I will start to write some poems just like Celeste.~
 == BSANDR~ Do not use wrinkled dusty old parchment for that, my lady poet, I offer you my own skin to write upon with lips and fingertips.~
 == RCHLOEJ ~ A surface so smooth and warm will make the rhymes come almost by themselves until the poem finds its own climax...~
-== BSANDR~ Must you artists always be so wordly - this willing subject yearns for the deeds...~
+== BSANDR~ Must you artists always be so wordy - this willing subject yearns for the deeds...~
 == RCHLOEJ ~ A parchment is not supposed to speak until the poet gives it the words to issue - like this. (Chloe's lips and tongue begin their work below Sandrah's right ear and slowly but steadily find their path downward from there...)~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
@@ -182,7 +182,7 @@ DO~ SetGlobal("SanCloeBryn","LOCALS",2) ~
 == RCHLOEJ ~ That means...eh..you are very close to each other...~
 == BSANDR~ Yes, we are - but hold on, Chloe, before you get things wrong - I do not fall in love with girls routinely. Imoen is my besta friend and just that.~
 == RCHLOEJ ~ Sorry, Sandrah, was my jealousy really so obvious?~
-== BSANDR~ Yes, it was, but nevermind, I take it as a good sign that you really care for me.~
+== BSANDR~ Yes, it was, but never mind, I take it as a good sign that you really care for me.~
 == RCHLOEJ ~ (Smiles) I do. (She kisses Sandrah's nose.) Yes, I do. (She kisses Sandrah's mouth.)~
 EXIT
 
@@ -193,7 +193,7 @@ DO~ SetGlobal("SanChlEd","LOCALS",2) ~
 == RCHLOEJ ~ How do you know...ah, you are not spared by him as well?~
 == BSANDR~ (Laughs) When it comes to females, his self-attested intellect seems to be completely eroded.~
 == RCHLOEJ ~ He is a man under a bad spell, my friend, and the spellcaster sits in his own loins, hehehe.~
-== BSANDR~ It would be laughable or useable whatever you prefer if it were not for the lowly Thayvan ways with women.~
+== BSANDR~ It would be laughable or usable whatever you prefer if it were not for the lowly Thayvan ways with women.~
 == RCHLOEJ ~ There is no peril for any of us to end up as his toy or slave, Sandrah. He can call himself lucky for any day he stays alive himself in our company - that red scum.~
 == BSANDR~ You say it. (The girls kiss each other, making sure that Edwin can observe them well.)~
 == BEDWIN ~ (Edwin's face is as red as his robe. Mumbles) The two of you in couple on my leash - that is my vision of paradise. Just a tug left or right and the one there will crawl up to me to pleasure my flesh, aaah...~EXIT
@@ -209,14 +209,14 @@ DO~SetGlobal("SanCloeBryn","LOCALS",4)~
 == RCHLOEJ ~You...you understand that, really?~
 == BSANDR~ You two match really nice together, by your ways and characters - only I cannot promise you that Imoen will feel the same for you.~
 == RCHLOEJ ~We two also matched quite well, my agile little snowcap. I do not regret any moment we have shared and I will never forget a single detail.~
-== BSANDR~ Nor will I, my bushy squirrel. It was a wonderul experience.~
+== BSANDR~ Nor will I, my bushy squirrel. It was a wonderful experience.~
 == RCHLOEJ ~(The girls kiss each other with a passion you have never observed before - which means quite something for them.)~  DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
 CHAIN
 IF~Global("SanHealChlo","GLOBAL",10)~THEN SanSuWL CelBook
 ~Wanderers, I greet you!~
-=~Book lovers with an exquisit taste are a rare find in these times and these areas.~
+=~Book lovers with an exquisite taste are a rare find in these times and these areas.~
 DO~SetGlobal("SanHealChlo","GLOBAL",11)~
 == RCHLOEJ ~And why would someone come to look for them in such a place then?~
 ==CVSandrJ~I can recall having met such strange figures like you once on the Sword Coast. They were asking for a rare tome in quite a notorious manner.~
