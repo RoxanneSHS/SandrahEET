@@ -4243,7 +4243,7 @@ END
 
 IF ~~ THEN BEGIN  SanMarAj2
 SAY~ Yes, Ajantis told me already. Before you ask me anything, please grant me one small wish, <CHARNAME>. Let me help you to choose your wedding dress. (Giggles) I promise it will not be pink.~
-IF~~ THEN REPLY ~ Of course you must do that. I was about to ask you for your advice on that subject anyway. But I wanted to ask you for even more. I want you to be my maid of honor on the celebration.~ DO ~SetGlobal("SanPCMarAj1","LOCALS",1)~ GOTO SanMarAj3
+IF~~ THEN REPLY ~ Of course you must do that. I was about to ask you for your advice on that subject anyway. But I wanted to ask you for even more. I want you to be my maid of honour on the celebration.~ DO ~SetGlobal("SanPCMarAj1","LOCALS",1)~ GOTO SanMarAj3
 END
 
 IF ~~ THEN BEGIN  SanMarAj3
@@ -4254,7 +4254,7 @@ END
 IF ~~ THEN BEGIN  SanMarAj4
 SAY~ I see. Yes - I mean it makes him happy and it will make this special day in your life a real splendid occassion, with knights and their ladies and all of us dressed up for the event. And I guess the hero and heroine of the Sword Coast will have their big day in the Helm's Temple in Amn.~
 IF~~THEN REPLY ~ Amn? But that will not be possible with the threat of a war we have?~ GOTO SanMarAj5
-IF~~THEN REPLY ~ That is the headquarter of the order, isn't it? A real large temple. How would we get there and then, would the authorities admit us there?~ GOTO SanMarAj5
+IF~~THEN REPLY ~ That is the headquarters of the order, isn't it? A real large temple. How would we get there and then, would the authorities admit us there?~ GOTO SanMarAj5
 END
 
 IF ~~ THEN BEGIN  SanMarAj5
@@ -4291,13 +4291,13 @@ IF ~~ THEN REPLY~ It is an adventure to bring it all to the light piece by piece
 END
 
 IF~~ THEN BEGIN SanDimDay2
-SAY ~ From what I have heard, my musical side must be part of my mother's heritage. Elminster has many talents, but singing? Huuh, he may use that as a weapon like those wailing deadbringers I have read about.~
+SAY ~ From what I have heard, my musical side must be part of my mother's heritage. Elminster has many talents, but singing? Huuh, he may use that as a weapon like those wailing dead bringers I have read about.~
 IF ~~ THEN REPLY~ Imagine that, my love, our own place one day - you sit down to play some tune while Shar-Teel's beautiful voice fills the room. And I - I will silently adore you both, with my own voice similar to your father's.~ GOTO SanDimDay4
 IF ~~ THEN REPLY~ What about your own singing, Sandrah? I just imagine my two lovecats performing a duet for me.~ GOTO SanDimDay3
 END
 
 IF~~ THEN BEGIN SanDimDay3
-SAY ~ *Cat* is the keyword here. it will sound like that, I am afraid. I can play quite some instruments but I better keep my mouth shut. Sorry but the voice is Elminster's ingredience to my musical side.~
+SAY ~ *Cat* is the keyword here. it will sound like that, I am afraid. I can play quite some instruments but I better keep my mouth shut. Sorry but the voice is Elminster's ingredient to my musical side.~
 IF ~~ THEN REPLY~ One cannot have all. And I am quite lucky to be able to compensate it with my other girl. (Laugh and kiss her gently.)~ EXIT
 END
 
@@ -4366,10 +4366,10 @@ IF ~ TimeOfDay(NIGHT) AreaType(OUTDOOR) Global("NiteMass","LOCALS",0) ~ THEN REP
 IF ~Global("Homesail","GLOBAL",7)~THEN REPLY ~ Well, friends, let's make ourselves comfortable and learn from Sandrah what is so special about a pile of old parchments, that so many people had to die for them already.~ GOTO ZomHom13
 IF~ Global("DimDay","GLOBAL",2) ~ THEN REPLY ~ I loved the song you performed with our wildcat the other day. I did not know about your musical skills before that.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanDimDay1
 IF ~ Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~ THEN REPLY ~ So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanWinskApp20
-IF ~ GlobalLT("Chapter","GLOBAL",13) Global("SanSkieSoDBhaal","GLOBAL",1)~THEN REPLY ~ Skie  another bhaalspawn, is that really what you think?~ DO~SetGlobal("SanSkieSoDBhaal","GLOBAL",2)~ GOTO Skiebhaal1
+IF ~ GlobalLT("Chapter","GLOBAL",13) Global("SanSkieSoDBhaal","GLOBAL",1)~THEN REPLY ~ Skie  another Bhaalspawn, is that really what you think?~ DO~SetGlobal("SanSkieSoDBhaal","GLOBAL",2)~ GOTO Skiebhaal1
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanBLine1
-IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~Do you still think Caelar Argent may be a bhaalspawn?~DO~SetGlobal("SanDBdoubt","LOCALS",1)~GOTO SanDBIsShe1
-IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
+IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~Do you still think Caelar Argent may be a Bhaalspawn?~DO~SetGlobal("SanDBdoubt","LOCALS",1)~GOTO SanDBIsShe1
+IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no Bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
 IF~Global("SanMadele","Global",1)~THEN REPLY~I am contemplating Madele's words about that Harper's raid and the stolen children.~GOTO SanMadel1
 IF~GlobalGT("bd_explosives_plot","Global",1) Global("SanLanciedb","Locals",0)~THEN REPLY~I could see that you had to restrain yourself quite a bit not to strike that Torsin de Lancie down with your hammer.~DO~SetGlobal("SanLanciedb","Locals",1)~ GOTO Lancie1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
@@ -4382,9 +4382,9 @@ IF~~THEN DO~ CreateCreatureObjectDoor("sanvault","CVSandr",0,0,0)~EXIT
 END
 
 IF~~THEN BEGIN Skiebhaal1
-SAY~I...do not listen to me, <CHARNAME>, I probably over react when it comes to your *siblings*. A mother dying in childbed and a rich girl with a killing spleen are not really evidence. We have more important things to care about at the moment.~
+SAY~I...do not listen to me, <CHARNAME>, I probably over react when it comes to your *siblings*. A mother dying in child bed and a rich girl with a killing spleen are not really evidence. We have more important things to care about at the moment.~
 IF~~THEN REPLY~I'm glad you see this yourself.~ GOTO Skiebhaal2
-IF~~THEN REPLY~Why don't I believe that you really believe that it's neglectable. Maybe I know you too well already.~GOTO Skiebhaal2
+IF~~THEN REPLY~Why don't I believe that you really believe that it's negligible. Maybe I know you too well already.~GOTO Skiebhaal2
 IF~~THEN REPLY~Hm, I don't know what to think of it myself.~GOTO Skiebhaal2
 END
 
@@ -4394,21 +4394,21 @@ IF~~THEN EXIT
 END
 
 IF~~ THEN BEGIN SanTiaxPC1
-SAY~And we both agree that this gnome is uncureable mad, do we not?~
+SAY~And we both agree that this gnome is incurable mad, do we not?~
 IF ~ Global("SanRomPath","GLOBAL",1)~ THEN REPLY ~ Maybe or maybe not. Often truth comes out of the mouth of children or fools. A new perspective for you, Sandrah. Did you never think that your destiny may be to rule or lead yourself?~ GOTO SanTiaxPC3
 IF ~ Global("SanRomPath","GLOBAL",2)~ THEN REPLY ~ Maybe or maybe not. Often truth comes out of the mouth of children or fools. A new perspective for you, Sandrah. Did you never think that your destiny may be to rule or lead yourself?~  GOTO SanTiaxPC2
 END
 
 
 IF~~ THEN BEGIN SanTiaxPC2
-SAY~No - but history shows that good and mighty rulers very often had good advisors to support them. Or good and intelligent lovers.~
+SAY~No - but history shows that good and mighty rulers very often had good advisers to support them. Or good and intelligent lovers.~
 IF ~~ THEN REPLY ~ Or both. The lucky ones had both of it even in the same person. (You kiss her passionately.)~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 IF ~~ THEN REPLY ~ Hopefully I found at least one of them already.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 IF ~~ THEN REPLY ~ Hopefully I found at least one of them already. And reliable friends are worth a fortune, don't forget that.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 END
 
 IF~~ THEN BEGIN SanTiaxPC3
-SAY~ No - but history shows that good and mighty rulers very often had good advisors to support them. Or good and intelligent wives.~
+SAY~ No - but history shows that good and mighty rulers very often had good advisers to support them. Or good and intelligent wives.~
 IF ~~ THEN REPLY ~Or both. The lucky ones had both of it even in the same person. (You kiss her passionately.)~DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 IF ~~ THEN REPLY ~ Hopefully I found at least one of them already.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
 IF ~~ THEN REPLY ~ Hopefully I found at least one of them already. And reliable friends are worth a fortune, don't forget that.~ DO~ SetGlobal("SantiaxPC","LOCALS",1) ~EXIT
@@ -4442,13 +4442,13 @@ IF ~~ THEN REPLY ~ I should have known it, Sandrah, you would draw your own conc
 END
 
 IF~~THEN BEGIN Godag11
-SAY~Gorion must have had a reason to keep such an artifact, so much is sure. Just the same we can take it as granted that he was no supporter of the God of Murder.~
+SAY~Gorion must have had a reason to keep such an artefact, so much is sure. Just the same we can take it as granted that he was no supporter of the God of Murder.~
 IF ~~ THEN REPLY ~Definitely not, he was surely opposing the remainder of the dead gods followers at any occasion.~  GOTO Godag12
 IF ~~ THEN REPLY ~I know little about his involvement with any such cults but from the few words he ever said about the subject I am sure he hated Bhaal like nothing else.~ GOTO Godag12
 END
 
 IF~~THEN BEGIN Godag12
-SAY~ I knew him even less than you did but he did not seem to be the man to keep trophies of any defeated foe. That dagger was one to be used in the bloody sacrifices of Bhaal's followers but Gorion's reasaon to keep it must go deeper than that.~
+SAY~ I knew him even less than you did but he did not seem to be the man to keep trophies of any defeated foe. That dagger was one to be used in the bloody sacrifices of Bhaal's followers but Gorion's reason to keep it must go deeper than that.~
 =~If we only could find out who that woman *A* was...~
 IF ~~ THEN REPLY ~She MUST have been a Bhaalist and she must at the same time have been someone whom Gorion had known. Who knows if that really has any relevance to my past, it may be something from his early days altogether.~GOTO Godag13
 IF ~~ THEN REPLY ~I know really very little about the man who gave his life for mine. But we probably have other things at hand than to dig into my stepfather's unknown past.~ GOTO Godag13
@@ -4491,7 +4491,7 @@ IF~~THEN REPLY ~ We are strong, too strong to be mere puppets on strings pulled 
 END
 
 IF ~~ THEN BEGIN SanWDRespct6
-SAY~  Neither my father nor my teachers at the temple ever tried to push me in any direction, for which I am forever thankful. They provided me with all the knowledge and guidance that let me find my own decision in the end. As Mystra is not a goddess of strict rules and crusted ceremonies but actually requires their fellowers to be open minded and able to decide on the right terms to conduct their duties in her name, I finally came to accept my calling as a healer and a priestess.~
+SAY~  Neither my father nor my teachers at the temple ever tried to push me in any direction, for which I am forever thankful. They provided me with all the knowledge and guidance that let me find my own decision in the end. As Mystra is not a goddess of strict rules and crusted ceremonies but actually requires their followers to be open minded and able to decide on the right terms to conduct their duties in her name, I finally came to accept my calling as a healer and a priestess.~
 =~ (Laughs) As was observed already, I do in her name what I would be doing on my own principles more or less anyway.~
 IF~~THEN REPLY ~ Yes, that is the Sandrah I have learned to respect and to love. But how does that explain your role in the Temple?~ GOTO SanWDRespct7
 IF~~THEN REPLY ~ Yes, that is the Sandrah I have learned to respect. But how does that explain your role in the Temple?~ GOTO SanWDRespct7
@@ -4604,7 +4604,7 @@ IF ~~ THEN REPLY ~ ...then you and your children if you would have them one day 
 END
 
 IF ~~ THEN BEGIN SanMysSucc7
-SAY ~ Provided that Narvantial's theorie was true?~ 
+SAY ~ Provided that Narvantial's theories was true?~ 
 IF ~~ THEN REPLY ~ Are you saying it is not true?~ GOTO SanMysSucc8
 END
 
@@ -4660,8 +4660,8 @@ IF ~ Global("Formedcloth","GLOBAL",13) ~ THEN BEGIN KhalChi1
 SAY ~ (Sandrah has come up to you and silently takes your hand. You walk side by side for a while and you feel the power of her nearness giving you strength and confidence.)~
 = ~ You bear the discovery of your heritage quite well.~
 IF ~~ THEN REPLY~ Don't forget I have the power of a God in me, even if I do not give in to his dark luring.~ GOTO KhalChi2
-IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi3
-IF~~ THEN REPLY~ The support of my friends and companions helps me to keep the dark deceiver's pursuasions at far distance from my heart. ~ GOTO KhalChi2
+IF~~ THEN REPLY~ The power of a wonderful lover helps me to keep the dark deceiver's persuasions at far distance from my heart. ~ GOTO KhalChi3
+IF~~ THEN REPLY~ The support of my friends and companions helps me to keep the dark deceiver's persuasions at far distance from my heart. ~ GOTO KhalChi2
 END
 
 IF~~ THEN BEGIN KhalChi2
@@ -4796,7 +4796,7 @@ END
 IF ~ Global("NarCavOut","GLOBAL",5)~ THEN BEGIN NarQShardHome
 SAY ~ The Shard did not take us all the way, probably my powers are not yet enough for that distance.~
 IF ~~ THEN REPLY ~ At least it got us to the surface again. A little bit of hiking in fresh air may suit us well after this hellish smelling adventure.~  GOTO QShardHome1
-IF ~~ THEN REPLY ~ Hahaha, defeating archdemons with peanuts and performing transportation spells of stonethrow length? What kind of priestess are you? (Smile broadly at her.) ~ GOTO QShardHome1
+IF ~~ THEN REPLY ~ Hahaha, defeating arch demons with peanuts and performing transportation spells of stone throw length? What kind of priestess are you? (Smile broadly at her.) ~ GOTO QShardHome1
 IF ~~ THEN REPLY ~ Better than nothing. ~ GOTO QShardHome1
 END
 
@@ -4818,14 +4818,14 @@ IF~~THEN REPLY~We should keep that in mind...maybe they will have a vacancy for 
 END
 
 IF~~THEN BEGIN SanDBIsShe1
-SAY~What I can say for sure at this moment is that the Shining Lady really is eloquent. An aasimar she called herself - possible and an explanation for her so-called crusade. It does not exclude her from being bhaalspawn as well.~
+SAY~What I can say for sure at this moment is that the Shining Lady really is eloquent. An aasimar she called herself - possible and an explanation for her so-called crusade. It does not exclude her from being Bhaalspawn as well.~
 IF~~THEN REPLY~How that? ~GOTO SanDBIsShe2
-IF~~THEN REPLY~Can you explain what aasimars are?~GOTO SanDBIsShe2
+IF~~THEN REPLY~Can you explain what aasimar are?~GOTO SanDBIsShe2
 END
 
 IF~~THEN BEGIN SanDBIsShe2
 SAY~Aasimar are descendants of the celestials and thus oppose the fiendish. This may have happened in her case generations ago and does not mean her direct *father* cannot be Bhaal.~
-=~Anyway, there is a direct interest in you, my dear, an interest in your heritage. And - for our own situation it does not change the fact that the authorities in Baldur's Gate think that she is a bhaalspawn. The latter may be source for trouble regardless whether it is true or not.~
+=~Anyway, there is a direct interest in you, my dear, an interest in your heritage. And - for our own situation it does not change the fact that the authorities in Baldur's Gate think that she is a Bhaalspawn. The latter may be source for trouble regardless whether it is true or not.~
 IF~~THEN REPLY~When we left Baldur's Gate, I was sure we were doing a right thing - the assault, the panic of the people in the streets...Now that I met her, things get a second perspective.~ GOTO SanDBIsShe3
 END
 
@@ -4849,7 +4849,7 @@ END
 
 IF~~THEN BEGIN SanMadel2
 SAY~The Bhaal priestess was mad from all she had to endure but even in madness she did not invent such an event. Fact is the raid happened. Bhaal children were *stolen* or rather rescued by the Harpers. These children survived the attempted sacrifice and early attempt to resurrect the God of Murder.~
-IF~~THEN REPLY~Thank you for staying analytic here. These children, bhaalspawns, may be alive today.~ GOTO SanMadel3
+IF~~THEN REPLY~Thank you for staying analytic here. These children, Bhaalspawns, may be alive today.~ GOTO SanMadel3
 IF~~THEN REPLY~The harper and the priestess fit quite well to what Gorion wrote in his letter.~GOTO SanMadel4
 END
 
