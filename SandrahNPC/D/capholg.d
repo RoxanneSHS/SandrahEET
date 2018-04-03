@@ -61,7 +61,7 @@ IF~~ THEN Capholg Readchar2
 ==Capholg ~ (Spits angrily on the ground.) Right you are, lady. But I am a man of the sea and an explorer. Sometimes one finds what he's not supposed to find. Like Glorhan - Zombie Pirate's Island.~
 ==CVSandrJ ~ As you said, we are all in the same boat somehow, we all know about it now. So you might as well tell us the rest.~
 ==Capholg ~ I will tell you, and then we can discuss the way ahead.~
-= ~ You are aware that Monteelah hid the greatest treasure a pirate has ever gained on that Island, Glorhan, off the routes any decent merchant ships would ever sail. What it really is, nobody but himself knows, but it is clearly more that just mountains of gold and jewelry. Something so precious that he killed his whole crew on that island so only he will know about it.~
+= ~ You are aware that Monteelah hid the greatest treasure a pirate has ever gained on that Island, Glorhan, off the routes any decent merchant ships would ever sail. What it really is, nobody but himself knows, but it is clearly more that just mountains of gold and jewellery. Something so precious that he killed his whole crew on that island so only he will know about it.~
 ==CVSandrJ ~ And they are still all out there, zombies by now?~
 ==Capholg ~ You are quite clever, lady. Sure, otherwise you would not have found out so many things already.~
 = ~ Yes, they are there, killed by him and suffering his curse. They cannot die but are turned to zombies. Zombies cursed to watch over his treasures in the hope he might return to remove their curse and let their souls free. They were the most feared crew of pirates on all seas while alive, and they are now even stronger in their zombie form.~
@@ -76,7 +76,7 @@ IF~~ THEN Capholg Readchar3
 ==CVSandrJ ~ You have a ship, captain?~
 ==Capholg ~ I can arrange for some. But we need to be very secret. We can charter no crew, so I will have to do it with you landlubbers. And it will cost.~
 ==CVSandrJ ~ We can surely be your deckhands on that, if you advise us right. We are experienced adventurers even if we are no sailors. But you are acting in your own interest, so why the cost?~
-==Capholg ~Lady! I might have been a bit drunk when you found me - but now I am sober. I am a captain of honor and no pirate...~
+==Capholg ~Lady! I might have been a bit drunk when you found me - but now I am sober. I am a captain of honour and no pirate...~
 ==CVSandrJ ~ I am sorry, captain, I was not trying to insult you.~
 ==Capholg ~ Good. You are right, it is in my own interest as I am in it now same as you. The money is not for me at all. But we need the ship and some equipment. And I need to shake some hands to get the paperwork done secretly and quick.~
 ==CVSandrJ ~ Understood. So, how much are we talking about here?~
