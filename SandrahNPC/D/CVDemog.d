@@ -1,7 +1,7 @@
 BEGIN CVDemog
 
 IF~OR(2)!InParty("CVSandr") StateCheck("CVSandr",CD_STATE_NOTVALID)~THEN BEGIN fail0
-SAY~You have come in vain, mortal. Only the young priestess of Mystra can come to the market place to deal with Demorgorgon.~
+SAY~You have come in vain, mortal. Only the young priestess of Mystra can come to the market place to deal with Demogorgon.~
 IF~~THEN EXIT
 END
 

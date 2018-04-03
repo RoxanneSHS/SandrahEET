@@ -1,7 +1,7 @@
 BEGIN CVDruD1
 
 IF~Global("DruTlk","CVDru0",0)~THEN BEGIN DrutalkF
-SAY~ You have overcome our defenses, destroyers of nature! Intruders!~
+SAY~ You have overcome our defences, destroyers of nature! Intruders!~
 IF~~THEN REPLY~ Who are you to misuse and manipulate these poor xvarts? You send them against each and everyone they see, senselessly fighting and killing - and dying for nothing.~DO~SetGlobal("DruTlk","CVDru0",1)~ GOTO DrutalkF2
 END
 
@@ -27,7 +27,7 @@ DO~SetGlobal("DruidCar","BG4900",3)~
 ==CVDrud1~They carve their names and that of their girls into the tree bark.~
 ==CVDrud3~Empty bottles everywhere, all the filth they should have left in their town.~
 ==CVDrud1~They cut the trees for the large gambling tents...~
-==CVDrud3~There was enough space just a stonethrow away.~
+==CVDrud3~There was enough space just a stone throw away.~
 ==CVDrud1~None of them will feel too badly a headache in the morning!!~
 ==CVDrud3~None of them will have a head in the morning, my friend.~
 ==CVDrud1~Let the dance begin, OUR dance.~
