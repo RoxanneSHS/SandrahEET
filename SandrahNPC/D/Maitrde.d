@@ -22,7 +22,7 @@ IF ~~ THEN  maitrde WDresto2
 == BKIVAN IF~ InParty("Kivan") ~ THEN ~ This place tries to smell like the forests of Shilmista but it is not the real thing. ~
 ==IF_FILE_EXISTS BSUFINCH  IF ~ InParty("Sufinch") ~ THEN ~ (Scribble, scribble) The most pleasant gastronomic place in Waterdeep... ~
 == MAITRDE IF ~ InParty("Sufinch") ~ THEN ~ Oh, merde, are you a restaurant critic, madame?~
-== BAJANT IF~ InParty("Ajantis") ~ THEN ~ Oh, how did we land in this snobish place. From the price for a meal you could help dozens of poor children. ~
+== BAJANT IF~ InParty("Ajantis") ~ THEN ~ Oh, how did we land in this snobbish place. From the price for a meal you could help dozens of poor children. ~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ Strange how manlings make ingestion an art.~
 == MAITRDE IF~ InParty("CVJenlig") ~ THEN ~A creature spending such effort on decoration of the own body should be sophisticated enough to value artisanry of the highest form.~
 ==IF_FILE_EXISTS k-roseB  IF ~ InParty("k-rose") ~ THEN ~ They do not have music in this place. Will you let me sing for my meal? ~
@@ -68,21 +68,21 @@ StartCutScene("CVWDRes1")~EXIT
 CHAIN
 IF ~Global("Maitre1","GLOBAL",2)~ THEN  maitrde WDresto5
 ~ Voila, <PRO_SIRMAAM>, I would like to bring to your attention today's specials on the menu.~
-= ~ We have the freshest rose quayles from the Shinig Plains. And exquisite giant trouts from The Lake of Steam...~
+= ~ We have the freshest rose quayles from the Shining Plains. And exquisite giant trouts from The Lake of Steam...~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Those fishes are really delicious, <CHARNAME>.~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Rose quayles? What about pink ones? ~
-==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Fine, I take a dozend of those trouts...~
+==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Fine, I take a dozen of those trout...~
 == MAITRDE IF~ InParty("ACBre") ~ THEN  ~ But, Sir, we were extremely lucky to acquire just five for the whole restaurant, the cost is immense.~ 
 ==BDorn IF~ InParty("Dorn") ~ THEN ~ Meat!~
 == MAITRDE IF~ InParty("Dorn") ~ THEN ~ Always a good choice, sir.~
 == BVICON  IF~ InParty("Viconia") ~ THEN ~ Now, what about fresh gragrk, rivvil.~
 == MAITRDE IF~ InParty("Viconia") ~ THEN ~  And how would you like that cooked, medium, well done...~
 == BVICON  IF~ InParty("Viconia") ~ THEN ~ By Shar, incredible male...~
-== MAITRDE IF~ InParty("Viconia") ~ THEN ~ I see, madame, a real connaisseur, of course we will serve it raw, slaughtered at the table.~
+== MAITRDE IF~ InParty("Viconia") ~ THEN ~ I see, madame, a real connoisseur, of course we will serve it raw, slaughtered at the table.~
 == BJenli IF~ InParty("CVJenlig") ~ THEN ~ Cook long and spice well, manling, Jen'lig not must know what dead creature was before.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Just a bit of rice and vegetables. Not too much effort for those who are doomed anyhow.~
 ==BNeera_ IF~InParty("Neera")~THEN ~(Sigh) I order something and get something else, it always happens to me - wild magic everywhere.~
-== BSandr ~ I will try the Waterdeep Fishsoup, <CHARNAME>, I recommend it to you, this place is famous for it.~
+== BSandr ~ I will try the Waterdeep Fish soup, <CHARNAME>, I recommend it to you, this place is famous for it.~
 END
 ++ ~ And a good wine for everyone to go along with the meal.~ DO ~ SetGlobal("Katcut","GLOBAL",6) SetGlobal("Maitre1","GLOBAL",3) StartMovie("DAYNITE")~
 EXIT
@@ -91,14 +91,14 @@ CHAIN
 IF~ NumTimesTalkedToGT(0)Global("Katcut","GLOBAL",6) ~ THEN maitrde WDresto6
 ~ (Yawn) I hope everything was excellent, <SIRMAAM> ? ~
 == BSandr ~ Of course, I think it is late already, let us go over to my father's house for the night, <CHARNAME>.~
-== MAITRDE ~ Well, mylady, there is still a small problem with the bill?~
+== MAITRDE ~ Well, madame, there is still a small problem with the bill?~
 == BSandr ~ I understood that it is settled already?~
 == MAITRDE ~ Right. Except for those little extras, that were not foreseen and are therefore not covered.~
 == BSandr ~ Little extras, like what?~
 == MAITRDE ~ Four broken plates...~
-== MAITRDE IF ~InParty("ACBre") ~ THEN  ~ (Looks at Breagar) Seven broken beermugs, it is really a costly habit to throw them over your shoulder when empty...~
-== MAITRDE IF ~ InParty("Viconia") ~ THEN ~  (Smiles lustingly at Viconia) A wall to be painted because of the bloodstains from freshly slaughtered gragrk..~
-== MAITRDE IF~ InParty("Coran") ~ THEN ~ (Eyes Coran suspiciously) Four misteriously missing bottles of sweet Delavasian wine...~
+== MAITRDE IF ~InParty("ACBre") ~ THEN  ~ (Looks at Breagar) Seven broken beer mugs, it is really a costly habit to throw them over your shoulder when empty...~
+== MAITRDE IF ~ InParty("Viconia") ~ THEN ~  (Smiles lusting at Viconia) A wall to be painted because of the bloodstains from freshly slaughtered gragrk..~
+== MAITRDE IF~ InParty("Coran") ~ THEN ~ (Eyes Coran suspiciously) Four mysteriously missing bottles of sweet Delavasian wine...~
 == MAITRDE IF~ InParty("Imoen2") ~ THEN ~ (Winks at Imoen) Removal of all those pink decorations in the ladies bathroom... ~
 == MAITRDE IF ~ InParty("Minsc") ~ THEN ~ Four sofa cushions bitten to shreds by a...is it a hamster?~
 == MAITRDE ~A 20GP fine from the militia for nightly noise. They do not have an ear for the real bard's talents it seems...~
@@ -109,7 +109,7 @@ END
 
 CHAIN
 IF ~~ THEN  maitrde WDresto7
-~ For you, <SIRMAAM> , just 650GP and maybe a little tip for your ever servicable maitre de.~
+~ For you, <SIRMAAM> , just 650GP and maybe a little tip for your ever serviceable Maitre de.~
 END
 ++ ~ Oh my.~ DO ~ SetGlobal("Katcut","GLOBAL",7) TakePartyGold(670)~
 EXIT

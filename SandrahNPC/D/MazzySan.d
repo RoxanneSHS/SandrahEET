@@ -12,9 +12,9 @@ IF WEIGHT #-11~Global("SanPalad1","LOCALS",5)~THEN BMAZZY SanPalad1
 DO~SetGlobal("SanPalad1","LOCALS",6)~
 ==BSandr~Why would I - provided that such a thing like a *paladin of Mystra* existed - what would it change in me?~
 ==BMazzy~I always envied these men and woman that have the ability to become the epitome of everything their deity stands for, to become paladins fighting for the cause of justice and virtue. A Paladin is a divine Champion, and it angers me that race is a factor in being able to show one's devotion to their deity.~
-==BSandr~My goddess does not exactly stand  for justice and virtue, Mazzy, there are many who even critisize her for providing the magical arts to good and bad alike.~
+==BSandr~My goddess does not exactly stand  for justice and virtue, Mazzy, there are many who even criticize her for providing the magical arts to good and bad alike.~
 ==BMazzy~You are a priestess in her name and with her blessings, aren't you? Your behaviour speaks in her name. And your behaviour would suit any paladin.~
-==BSandr~The last is true for you as well, my little friend. You truely are the epitome of everything Arvoreen stands for, Mazzy. By this you are as good a paladin for the warrior god, as I represent what Mystra would aim for would her duties in the pantheon allow her this choice.~
+==BSandr~The last is true for you as well, my little friend. You truly are the epitome of everything Arvoreen stands for, Mazzy. By this you are as good a paladin for the warrior god, as I represent what Mystra would aim for would her duties in the pantheon allow her this choice.~
 ==BMazzy~You make your goddess sound like she is the victim of some circumstances.~
 ==BSandr~In some way she is - she is the neutral Guardian of the Weave, which provides the energy for most anything existing on the planes including the power required to practice magic. As all the gods, good or bad, are entitled to grant magical skills to selected devotees, Mystra has to tolerate a certain amount of misuse of magic which is sometimes discrediting her name.~
 ==BMazzy~This limitation does not apply to her priestess then? ~

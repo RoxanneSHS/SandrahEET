@@ -39,7 +39,7 @@ DO~SetGlobal("SankagTavern","LOCALS",3)~
 ==Wench1~Thank you ma'am, your refill is on the way.~
 ==BSANDR~Ah, Kagain, I nearly forgot a third talent.~
 == BKAGAI ~Yes? (With the bill paid his axe has become uninteresting again.)~
-==BSANDR~The fine nose for riches and gold that is unfailable in a dwarf.~
+==BSANDR~The fine nose for riches and gold that is infallible in a dwarf.~
 == BKAGAI ~Hohoho, I like your sense of humour as much as your purse - almost.~EXIT
 
 //Sandrah Kagain Banters
@@ -67,7 +67,7 @@ DO~ SetGlobal("SanKagFight","LOCALS",5) RealSetGlobalTimer("SanKagFightInt","LOC
 == BKAGAI ~ (The dwarf has approached from the other side of the tree and starts to inspect the armour intensely.)~
 == BSANDR~ (With closed eyes) You know about my magic skills by now, dwarf. Are you not afraid there might be some protection on what you try to touch and what is not yours?~
 == BKAGAI ~ Huuh, wasn't thinking of such, girly. Jus' came to admire those true feminine features this armour resembles, really made to show what the owner got, hahaha.~
-== BSANDR~ I thought we had an agreement that I do not fit in your pattern, Kagain. Dwarfen standards in women are just different. See, I do not even have a beard.~
+== BSANDR~ I thought we had an agreement that I do not fit in your pattern, Kagain. Dwarven standards in women are just different. See, I do not even have a beard.~
 == BKAGAI ~ Didn't ya listen last time, girly. I told ya I would evaluate those obvious flaws against the rest of whatcha offer...~
 == BSANDR~ Stop it immediately. There is no *offer* for one like you at all.~
 == BKAGAI ~ Oooops! ~ DO ~ ApplyDamage(Myself,16,CRUSHING) ApplySpellRES("CVSLEEP","Kagain") ~
@@ -94,5 +94,5 @@ DO~SetGlobal("SanKagAbe","BG0126",1)~
 == BSANDR~ My hammer might give you more action than you could be willing or able to take.~
 == BKAGAI ~Oh, for fairness no weapons on either side, hahaha, just what we wear - as long as we still wear somethin'...~
 == BSANDR~ (Sandrah lifts her booted foot.) At Waterdeep those are called *Stiletto Heels*, my friend. You really want to find out why?~
-== BKAGAI ~Little devil, I shoulda known you always have one more up your sleeve. Makes you even more desireable.~
+== BKAGAI ~Little devil, I shoulda known you always have one more up your sleeve. Makes you even more desirable.~
 == BSANDR~ And more unreachable for you.~EXIT
