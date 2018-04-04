@@ -776,7 +776,7 @@ END
 
 IF~~ THEN BEGIN SanBLine15
 SAY~ Oh, no, <CHARNAME>, that is just too much! Shall I think of myself as the possible mother or grandmother of future gods just based on some vague and lost studies of an obscure historian? ~
-IF ~~ THEN REPLY ~ Forgive me for bringing this topic up. You are right, it's really very vague - and you are surely not the woman to base your decisions on rumors like that.~ EXIT
+IF ~~ THEN REPLY ~ Forgive me for bringing this topic up. You are right, it's really very vague - and you are surely not the woman to base your decisions on rumours like that.~ EXIT
 IF ~~ THEN REPLY ~ It is vague, I agree. But what if there was a grain of truth in the whole story...?~ EXIT
 IF ~~ THEN REPLY ~ I should have known it, Sandrah, you would draw your own conclusions and make your own fearless decisions nonetheless...~ EXIT
 END
@@ -791,7 +791,7 @@ END
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",114) ~ THEN BEGIN SanPCInit114
 SAY ~ (Sandrah looks up sadly to you as she recognises your attempt to start a conversation.) <CHARNAME>?~
 IF ~~THEN REPLY~ Sandrah, please give me chance to apologize for my doubt in your loyalty to me and to Imoen. If there is a way to solve both our quest and Drizzt's quest without parting we will find it - together.~ GOTO SanPCvsDriz5
-IF ~~THEN REPLY~ Sandrah, please let me explain something you might have misunderstood. If really the situation should arise that we cannot support Drizzt's quest anymore because of Imoen, I will understand that you will aid him nonetheless. I am sure you two would find a way to rejoin us a quickly as possible and we would continue together once again.~ GOTO SanPCvsDriz6
+IF ~~THEN REPLY~ Sandrah, please let me explain something you might have misunderstood. If really the situation should arise that we cannot support Drizzt's quest any more because of Imoen, I will understand that you will aid him nonetheless. I am sure you two would find a way to rejoin us a quickly as possible and we would continue together once again.~ GOTO SanPCvsDriz6
 END
 
 IF~~THEN BEGIN SanPCvsDriz5
@@ -820,7 +820,7 @@ IF~Global("PoolHealT","CVSHA7",4)~THEN REPLY~ (You take a deep breath) Let us en
 IF ~Global("SanMysRise","GLOBAL",2)~ THEN REPLY ~ Sandrah, are you familiar with the studies of Narvantial of Soubar?~ GOTO SanMysSucc11
 IF ~ GlobalGT("SanFlirt","GLOBAL",19) Global("SanMysRise","GLOBAL",3)~THEN REPLY ~ We were talking about children the other day, Sandrah, and about my heritage in this context.~ GOTO SanBLine11
 IF~Global("SanVampWDQuest","GLOBAL",16)~ THEN REPLY~ Let us now enter that portal.~ GOTO DoWDVampQ6
-IF~ Global("FreeSlaves","GLOBAL",1) Global("SanHendak","GLOBAL",3)~ THEN REPLY ~ (You take a quiet moment to embrace Sandrah kindly.) The freeing of those slaves, especially the children has both agitated and relieveed you, Sandrah.~ GOTO SanHendls5
+IF~ Global("FreeSlaves","GLOBAL",1) Global("SanHendak","GLOBAL",3)~ THEN REPLY ~ (You take a quiet moment to embrace Sandrah kindly.) The freeing of those slaves, especially the children has both agitated and relieved you, Sandrah.~ GOTO SanHendls5
 IF~ Global("ys_FindElminster","GLOBAL",1) Global("SanAskLief","LOCALS",0) ~ THEN REPLY ~ Sandrah, have you ever heard or met this mage Lief. Is he to be trusted or may this be another trap misusing your father's name?~ GOTO SanAskLief1
 IF~GlobalGT("GettingApprentices","GLOBAL",0) Global("SanPCHassphere","GLOBAL",0) ~ THEN REPLY~ Sandrah, as a priestess of Mystra you are probably the best suitable counsellor in matters of this planar sphere.~ GOTO SanSphereAdv1
 IF~ Global("KangaxxQuest","GLOBAL",1) Global("SanKangAdv","LOCALS",0)~ THEN REPLY ~ This talking skull, Kangaxx, he's a lich, right, Sandrah?~ GOTO SanKanAdv1
@@ -952,12 +952,12 @@ IF~~THEN REPLY~ A common journey.~ EXIT
 END
 
 IF~~ THEN BEGIN SanCompliMeet2
-SAY~ Why do you not show me the truth of your words with some action? (Before you can do anything, she lets herself fall into your arms which instictively embrace her and keep her from tumbling. Her eyes are half closed and her mouth is ready to be kissed.)~
+SAY~ Why do you not show me the truth of your words with some action? (Before you can do anything, she lets herself fall into your arms which instinctively embrace her and keep her from tumbling. Her eyes are half closed and her mouth is ready to be kissed.)~
 IF~~THEN REPLY~ (You touch her lips softly with your index finger to which she responds with her tongue. You lean forward and kiss her.)~ EXIT
 END
 
 IF~~ THEN BEGIN SanCompliMeet3
-SAY~ I will never forget that day which has changed my whole life. An unrevertable change.~
+SAY~ I will never forget that day which has changed my whole life. An irreversible change.~
 IF~~THEN REPLY~ You wouldn't want to change it anyway, would you. (You do not wait for an answer but embrace and kiss her. Her willing response is your answer.)~EXIT
 END
 
@@ -1010,7 +1010,7 @@ IF~~ THEN EXTERN  Wulfg2J  BG2Reunionwul
 END
 
 IF~~THEN BEGIN BG2Reunion8
-SAY~ Hello, I have seen you in the Seven Dens the other day. Had I known you had similar interests to mine, it would have been advantageous to venture in here together. But anyway, the way out will be challanging as well. I am Sandrah of Waterdeep.~
+SAY~ Hello, I have seen you in the Seven Dens the other day. Had I known you had similar interests to mine, it would have been advantageous to venture in here together. But anyway, the way out will be challenging as well. I am Sandrah of Waterdeep.~
 IF~~ THEN EXTERN  RCHLOEJ  BG2Reunionchlo
 END
 
@@ -1096,7 +1096,7 @@ IF~~THEN REPLY~ But strange, how come the Shadow Thieves attack this prison, I t
 END
 
 IF~~ THEN BEGIN SanYoshDunNoYosh2
-SAY~ Yes and no. You were taken here by one group of Shadow Thieves while another group today assaulted this place. As far as I can tell from the little information I could secretly gather, there are different guildes of the thieves operating here, as well as other strange creatures at war with both sides. It is really confusing.~
+SAY~ Yes and no. You were taken here by one group of Shadow Thieves while another group today assaulted this place. As far as I can tell from the little information I could secretly gather, there are different guilds of the thieves operating here, as well as other strange creatures at war with both sides. It is really confusing.~
 IF~~THEN REPLY ~ You did well to operate most secretly, Sandrah, out there alone in a foreign city with what seems to be several parties of power at work. The Shadow Thieves, regardless which guild, are no fun to deal with.~ GOTO SanYoshDunNoYosh3
 END
 
@@ -1107,17 +1107,17 @@ IF~~THEN REPLY ~ Fear not, my little girl, we are by your side now (Laugh). Let 
 END
 
 IF ~ Global("SanHeardIren","GLOBAL",3) ~ THEN BEGIN Sanremwdoom
-SAY ~ Vampires! I heard rumors outside in Athkatla that there was a third party somehow trying to get power in the underworld of the city besides the Shadow Thieves and Cowled Wizards. But they were just rumors as those creatures operated only at night.~
+SAY ~ Vampires! I heard rumours outside in Athkatla that there was a third party somehow trying to get power in the underworld of the city besides the Shadow Thieves and Cowled Wizards. But they were just rumours as those creatures operated only at night.~
 IF~~THEN REPLY~ First Irenicus as the scroll signed "I." and now the kind of vampires we encountered in his trap in the Mountain of the Dead, what do you make out of that?~ GOTO Sanremwdoom2
 END
 
 IF~~ THEN BEGIN Sanremwdoom2
-SAY~ This Irenicus has observed you since quite some time already. Your kidnapping has been planned thouroughly. Only the fact that he has stepped on too many toes here in town has given you the chance to escape.~
+SAY~ This Irenicus has observed you since quite some time already. Your kidnapping has been planned thoroughly. Only the fact that he has stepped on too many toes here in town has given you the chance to escape.~
 IF~~THEN REPLY~ Mmh. I will take this chance and use it well. We are warned of him and he will not get us again unaware.~ DO~ SetGlobal("SanHeardIren","GLOBAL",5) ~EXIT
 END
 
 IF~  Global("SanHeardIren","GLOBAL",4) ~ THEN BEGIN Sanremnodoom
-SAY ~ Vampires! I heard rumors outside in Athkatla that there was a third party somehow trying to get power in the underworld of the city besides the Shadow Thieves and Cowled Wizards. But they were just rumors as those creatures operated only at night.~
+SAY ~ Vampires! I heard rumours outside in Athkatla that there was a third party somehow trying to get power in the underworld of the city besides the Shadow Thieves and Cowled Wizards. But they were just rumours as those creatures operated only at night.~
 IF~~THEN REPLY~ Wow, we have really arrived at an interesting scene at a time of turmoil. You were right, Sandrah, my heritage does not seem to allow us much rest between adventures, whether we chose it or not.~ GOTO Sanremwdoom2
 END
 
@@ -1139,18 +1139,18 @@ END
 IF~Global("SanSacroll","GLOBAL",2)~ THEN BEGIN Sanfreehend10
 SAY~ (Sandrah has taken the message you have found on the dead slaver captain Haegan and reads it once again.) ~
 IF~~THEN REPLY~ Anything you want to share with me, my love?~ DO ~ SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO  Sanfreehend11
-IF~~THEN REPLY~I don't like that look on your face - you want to enroll me for one of your silly crusades for goodness again...~DO~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1)~ GOTO Sanfreehend11
+IF~~THEN REPLY~I don't like that look on your face - you want to enrol me for one of your silly crusades for goodness again...~DO~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1)~ GOTO Sanfreehend11
 END
 
 IF~~ THEN BEGIN Sanfreehend11
 SAY ~ Have you read this carefully, dear? There seems to be another slaver's installation here in town. These bastards, it must be right under the nose of the churches in the temple district. Not even Helm's ever watchful eye seems to be aware of it.~
 IF~~THEN REPLY ~ But you expect us to find what the officials of this town can't find?~ GOTO Sanfreehend12
-IF~~THEN REPLY ~ I have seen the scrupelous deeds of these slavers in the Coronet and on their ship-house. If there is another one we will search and destroy it likewise.~ GOTO Sanfreehend13
+IF~~THEN REPLY ~ I have seen the scrupulous deeds of these slavers in the Coronet and on their ship-house. If there is another one we will search and destroy it likewise.~ GOTO Sanfreehend13
 END
 
 IF~~ THEN BEGIN Sanfreehend12
-SAY~ Or what they decide to ignore, <CHARNAME>. If you have not noticed it yet, this capitale is corrupt and evil through and through.~
-IF~~THEN REPLY ~ This seems to be the case for any assembly of humans that grows beyond a certain size (Sigh). Even if we have our own tasks, Sandrah, we will never ignore such kind of evil that we can correct. We will find and destroy those slavers whereever we find them.~GOTO Sanfreehend13
+SAY~ Or what they decide to ignore, <CHARNAME>. If you have not noticed it yet, this capital is corrupt and evil through and through.~
+IF~~THEN REPLY ~ This seems to be the case for any assembly of humans that grows beyond a certain size (Sigh). Even if we have our own tasks, Sandrah, we will never ignore such kind of evil that we can correct. We will find and destroy those slavers wherever we find them.~GOTO Sanfreehend13
 END
 
 IF~~ THEN BEGIN Sanfreehend13
@@ -1215,7 +1215,7 @@ IF~~THEN REPLY~ And then he harbours his old mates, you mean?~ GOTO Santhethumb4
 END
 
 IF ~~ THEN BEGIN Santhethumb4
-SAY~ Maybe he did not volunteer to do so, they may just have used the right arguments to pursuade him - like giving his past occupation to the guards.~
+SAY~ Maybe he did not volunteer to do so, they may just have used the right arguments to persuade him - like giving his past occupation to the guards.~
 IF~~ THEN DO~ SetGlobal("SanPirThumb","ar0310",2)~ EXIT
 END
 
@@ -1234,14 +1234,14 @@ END
 
 //Tirdir
 IF ~ Global("SanTirdir","LOCALS",2)~ THEN BEGIN SanTirdirhunt1
-SAY~ See. <CHARNAME>, the guy over there in that brigh red cloak. We have seen that colour before, remember? By the way, it seems his cloak is torn at the right sleeve...~
+SAY~ See. <CHARNAME>, the guy over there in that bright red cloak. We have seen that colour before, remember? By the way, it seems his cloak is torn at the right sleeve...~
 IF~~THEN REPLY~ You are right, Sandrah, the same red cloth that Tirdir tore off from one of his capturers. Well, I think we will ask this man a few questions...not too kindly. I suggest you have your hammer ready just in case he will not cooperate.~ DO ~ SetGlobal("SanTirdir","LOCALS",3)~ EXIT
 END
 
 // Kangaxx Parts
 IF ~ Global("SankangTors","GLOBAL",1)~ BEGIN SanTombkanEnt1
 SAY ~ A very strange place for a tomb, do you not think so, <CHARNAME>?~
-IF~!Global("SankangLegs","LOCALS",3)~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here anymore.~  GOTO SanTombkanEnt2
+IF~!Global("SankangLegs","LOCALS",3)~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here any more.~  GOTO SanTombkanEnt2
 IF~!Global("SankangLegs","LOCALS",3)~THEN REPLY ~ Even in a weird town like Athkatla that is true. What do you make out of it, my counsellor?~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanTombkanEnt2
 IF ~ Global("SankangLegs","LOCALS",3)~ THEN REPLY ~ Another part of Kangaxx?~ GOTO SanTombkanEnt7
 END
@@ -1285,7 +1285,7 @@ END
 
 IF ~ Global("SankangLegs","LOCALS",1)~ BEGIN SanTombkanEnt11
 SAY ~ Another tomb, hidden in an unlikely location, do you not think so, <CHARNAME>?~
-IF~~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here anymore.~  GOTO SanTombkanEnt12
+IF~~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here any more.~  GOTO SanTombkanEnt12
 IF~~THEN REPLY ~ Even in a weird town like Athkatla that is true. What do you make out of it, my counsellor?~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanTombkanEnt12
 END
 
@@ -1302,7 +1302,7 @@ IF~~THEN REPLY ~ Thank you, but I guess we know what to do.~ DO~IncrementGlobal(
 END
 
 IF~~THEN BEGIN SanTombkanEnt15
-SAY ~ We should not endanger those blind fools by opening the sarcophag right now and waking its guardian. Let us deal with the cultist task first and then return to this tomb when we have got everybody else out of here.~
+SAY ~ We should not endanger those blind fools by opening the sarcophagus right now and waking its guardian. Let us deal with the cultist task first and then return to this tomb when we have got everybody else out of here.~
 IF~~THEN REPLY ~ A good proposal, Sandrah. Let's do it that way.~ EXIT
 IF~~THEN REPLY ~ Good to hear that we both have the same idea about this, my counsellor.~ EXIT
 IF~~THEN REPLY ~ As much as I love the sound of your voice, I see no need to spare those dumb idiots down here. I will do what I think is right.~ EXIT
@@ -1310,7 +1310,7 @@ END
 
 IF ~ Global("SankangLegs","LOCALS",2)~ BEGIN SanTombkanEnt21
 SAY ~ A very strange place for a tomb, do you not think so, <CHARNAME>?~
-IF~~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here anymore.~ DO~ SetGlobal("SankangLegs","LOCALS",3)~ GOTO SanTombkanEnt22
+IF~~THEN REPLY ~ This town has its secrets almost everywhere. No finding can astonish me here any more.~ DO~ SetGlobal("SankangLegs","LOCALS",3)~ GOTO SanTombkanEnt22
 IF~~THEN REPLY ~ Even in a weird town like Athkatla that is true. What do you make out of it, my counsellor?~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ DO~ SetGlobal("SankangLegs","LOCALS",3)~GOTO SanTombkanEnt22
 END
 
@@ -1350,7 +1350,7 @@ IF~~THEN REPLY~ Three parts, Sandrah?~ DO~ SetGlobal("SankangFull","LOCALS",2) ~
 END
 
 IF~~BEGIN SanTombkanEnt31
-SAY ~ The legs and arms we have found in the one tomb, the torso from the other one - and we know where the skull is. Theoratically Kangaxx can be put together again. If you want to know my opinion about it I would be willing to help you find a decision of what to do with the possibilities we have in hand. You may ask me any time.~
+SAY ~ The legs and arms we have found in the one tomb, the torso from the other one - and we know where the skull is. Theoretically Kangaxx can be put together again. If you want to know my opinion about it I would be willing to help you find a decision of what to do with the possibilities we have in hand. You may ask me any time.~
 IF~~THEN EXIT
 END
 
@@ -1400,14 +1400,14 @@ IF~~THEN REPLY~Spit it out already, woman!~DO~ IncrementGlobal("Sanpoints","GLOB
 END
 
 IF~~ THEN BEGIN SanFirkDung2
-SAY~ Remember your history lessons, <CHARNAME>. Such a combination of all odd races, creatures, and mercenairies has existed once before, led by an outcasted twin couple.~ 
+SAY~ Remember your history lessons, <CHARNAME>. Such a combination of all odd races, creatures, and mercenaries has existed once before, led by an outcast twin couple.~ 
 IF~~THEN REPLY~ I am not sure what you are referring to now.~  GOTO SanFirkDung3
 IF~~THEN REPLY~ Are you referring to the Chimera Legion in the north?~ GOTO SanFirkDung3
 IF~~THEN REPLY~ The famous *Maulers* you mean? ~ GOTO SanFirkDung3
 END
 
 IF~~ THEN BEGIN SanFirkDung3
-SAY~ The Chimera Legion that haunted the Icewind Dale long ago. It was lead by half-breeds with a hatred against everyone and the pure will to destroy. They used the discontent of the outcast breeds to gather a large troup that threatened to whole North at their time.~
+SAY~ The Chimera Legion that haunted the Icewind Dale long ago. It was lead by half-breeds with a hatred against everyone and the pure will to destroy. They used the discontent of the outcast breeds to gather a large troupe that threatened to whole North at their time.~
 IF~~THEN REPLY~Historically interesting, but can we learn anything from that?~ GOTO SanFirkDung4
 END
 
@@ -1418,7 +1418,7 @@ END
 
 IF~~ THEN BEGIN SanFirkDung5
 SAY~ (Laughs short.) Actually just to be prepared for quite some surprises. We have seen part of his strange forces already here on the parameter of his realm. They will surely become fiercer the more we advance and consist of creatures that may be new to us. And in the end the guy himself. Who can he be?~
-IF~~THEN REPLY~The best we can do at the moment is to stock up our armor and spells and make sure we can face all sorts of strange enemies that require different combat styles and weapons to be used by us. I'd like to see that Firkraag myself eagerly.~EXIT
+IF~~THEN REPLY~The best we can do at the moment is to stock up our armour and spells and make sure we can face all sorts of strange enemies that require different combat styles and weapons to be used by us. I'd like to see that Firkraag myself eagerly.~EXIT
 END
 
 IF~ Global("SanMaze","ar1202",1)~ THEN BEGIN SanFirkDung6
@@ -1427,7 +1427,7 @@ IF~~THEN REPLY~And what does my counsellor make out of it?~DO~ SetGlobal("SanMaz
 END
 
 IF~~ THEN BEGIN SanFirkDung7
-SAY~ Remember that he even sent you an invitation of sorts. Surely he wants us to overcome his defenses and face him in person.~
+SAY~ Remember that he even sent you an invitation of sorts. Surely he wants us to overcome his defences and face him in person.~
 IF~~THEN REPLY~So all of this maze is maybe some kind of test of our abilities?~ GOTO SanFirkDung8
 END
 
@@ -1445,14 +1445,14 @@ IF~~THEN REPLY~ Have I angered some minor deity to pursue us this way?~ GOTO San
 END
 
 IF~~ THEN BEGIN SanFirkDung10
-SAY~ It is a creature with a lot of patience and enough time to wait for the right moment. He has prepared the dungeon and the land around it outside for just this pupose. In addition, he was able to take on a human form and come to Athkatla for you. He plans ahead on long terms to take his ancient revenge.~
+SAY~ It is a creature with a lot of patience and enough time to wait for the right moment. He has prepared the dungeon and the land around it outside for just this purpose. In addition, he was able to take on a human form and come to Athkatla for you. He plans ahead on long terms to take his ancient revenge.~
 IF~~THEN REPLY~ The planning excludes the Lich and a god would not spent that amount of time to punish a mortal but strike more directly.~ GOTO SanFirkDung11
-IF~~THEN REPLY~A bhaalspawn would not have known about me until recently. This trap and Firkraag's grudge is against me personally and older than my career in the Realms.~ GOTO SanFirkDung12
+IF~~THEN REPLY~A Bhaalspawn would not have known about me until recently. This trap and Firkraag's grudge is against me personally and older than my career in the Realms.~ GOTO SanFirkDung12
 END
 
 IF~~ THEN BEGIN SanFirkDung11
 SAY~ A valid deduction I would say.~
-IF~~THEN REPLY~A bhaalspawn would not have known about me until recently. This trap and Firkraags grudge is against me personally and older than my career in the Realms.~ GOTO SanFirkDung13
+IF~~THEN REPLY~A Bhaalspawn would not have known about me until recently. This trap and Firkraag's grudge is against me personally and older than my career in the Realms.~ GOTO SanFirkDung13
 END
 
 IF~~ THEN BEGIN SanFirkDung12
@@ -1466,7 +1466,7 @@ IF~~THEN REPLY~counsellor, you have taught me pretty well how to use my logic th
 END
 
 IF~~ THEN BEGIN SanFirkDung14
-SAY~ (She nods thoughfully) Either you being Gorion's step son, the warden of a Harper - or you being of Bhaal's blood. As he is focussed on you and not interested in Imoen at all the arguments for the first option are weighting heavier, I think.~
+SAY~ (She nods thoughtfully) Either you being Gorion's step son, the warden of a Harper - or you being of Bhaal's blood. As he is focussed on you and not interested in Imoen at all the arguments for the first option are weighting heavier, I think.~
 IF~~THEN REPLY~ Let us be prepared to face an old and angry dragon then, my friends.~EXIT
 END
 
@@ -1504,22 +1504,22 @@ END
 
 IF~~THEN BEGIN SanExtraDuty2
 SAY~ You have learned a bit about responsibility and leadership by now, I guess. And you know you can always count on a couselor who loves you and Shar-Teel dearly.~
-= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
+= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep any time from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 END
 
 IF~~THEN BEGIN SanExtraDuty3
-SAY~ No doubt about that - in the same way she made Waterdeep a safer place even before the child was born. But there are other necessities than just the material ones, like having the beloved father of her child near her often. You know you can always rely on a couselor who loves you and Shar-Teel dearly.~
-= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
+SAY~ No doubt about that - in the same way she made Waterdeep a safer place even before the child was born. But there are other necessities than just the material ones, like having the beloved father of her child near her often. You know you can always rely on a counsellor who loves you and Shar-Teel dearly.~
+= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep any time from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 END
 
 
 IF~~THEN BEGIN SanExtraDuty4
-SAY~ No doubt about that - and you can always count on a couselor who loves you and Shar-Teel dearly.~
-= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep anytime from now on.~
+SAY~ No doubt about that - and you can always count on a counsellor who loves you and Shar-Teel dearly.~
+= ~ Using my new spell ability we may return to our quest once again. If your heart desires, I can take us on a trip to Waterdeep any time from now on.~
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Let us go then.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 IF~~THEN REPLY ~ (You kiss her and feel the strength you receive from her nearness.) Before we go,  let us go to the town and temple for some shopping.~DO ~ SetGlobal("SanSharInt","GLOBAL",36)~EXIT
 END
@@ -1607,18 +1607,18 @@ END
 
 IF~Global("SanBrynAltern","LOCALS",4)~THEN BEGIN TrySthNew6
 SAY~ You see, it does not take long in this town until someone knows about your situation and is willing to show her face.~
-IF~~THEN REPLY ~ So you think this will be another offer to bring us to Brynnlaw? Any idea who that Asten might be?~ GOTO TrySthNew7
+IF~~THEN REPLY ~ So you think this will be another offer to bring us to Brynnlaw? Any idea who that Aster might be?~ GOTO TrySthNew7
 IF~~THEN REPLY~ Hm, a claim to *take me where I want to go* sounds just like that. Have you heard that name during your stay in town?~ GOTO TrySthNew7
 END
 
 IF~~THEN BEGIN TrySthNew7
-SAY~ Probably that lady Asten is just a contact person. If my assumptions I mentioned earlier were correct, the real originator of the new offer will remain hidden if ever possible.~
+SAY~ Probably that lady Aster is just a contact person. If my assumptions I mentioned earlier were correct, the real originator of the new offer will remain hidden if ever possible. The order of the Aster follows Lathander.~
 IF~~THEN REPLY~ You think it's a traitor in the government, if I understood you correctly?~ DO~ SetGlobal("SanBrynAltern","LOCALS",5)~GOTO TrySthNew8
 END
 
 IF~~THEN BEGIN TrySthNew8
 SAY~ I would not call that person a traitor, even if he or she or they provide us with a government secret. The motivation may as well be a just one, to use us to act against the Cowled wizards, the Shadow Thieves and the vampire guild that play their game for power here in town. Someone or some group may act out of responsibility and loyalty to the people of Athkatla.~
-IF~~THEN REPLY~ I take your words as an advice to hear that lady Asten out.~ EXIT
+IF~~THEN REPLY~ I take your words as an advice to hear that lady Aster out.~ EXIT
 IF~~THEN REPLY~ We can only find out what's behind this by talking to said lady. I will keep your words in my mind when talking to her.~ EXIT
 END
 
@@ -1653,7 +1653,7 @@ END
 
 //Bodhi' Abduction Attempt + Defeat
 IF~ Global("SanBodAttmpt","AR0800",2) ~ THEN BEGIN SanBodAbdu1
-SAY~ She does not give up easily - but then she has nothing to lose anymore. Do not worry, we will get your beloved back from her, we have seen her weakness already.~
+SAY~ She does not give up easily - but then she has nothing to lose any more. Do not worry, we will get your beloved back from her, we have seen her weakness already.~
 IF~~ THEN REPLY ~ Her weakness? She has abducted what she assumed was dearest to my heart.~ DO~SetGlobal("SanBodAttmpt","AR0800",3) ~GOTO SanBodAbdu2
 END
 
@@ -1694,12 +1694,12 @@ END
 
 IF~ Global("SanBodAttmpt","AR0800",4) ~ THEN BEGIN SanBodAbdu4
 SAY~ Elven law and justice sometimes appears very strict to me.~
-IF~~THEN REPLY~ Are you feeling some kind of sypathy for that vampire all of a sudden?~ GOTO  SanBodAbdu5
+IF~~THEN REPLY~ Are you feeling some kind of sympathy for that vampire all of a sudden?~ GOTO  SanBodAbdu5
 IF~~THEN REPLY~ So it is finally confirmed that our enemies are or were elves, even if not much of that was left in Bodhi.~ GOTO  SanBodAbdu5
 END
 
 IF~~ THEN BEGIN SanBodAbdu5
-SAY~ We have long suspected that some internal elven affair has caused Jon and Bodhi to be expelled from their society. We do not know the circumstances and the crimes they have done to justify their punishment - it does not matter anymore as the deeds they have done afterwards, especially to you and Imoen make them our enemies as well.~
+SAY~ We have long suspected that some internal elven affair has caused Jon and Bodhi to be expelled from their society. We do not know the circumstances and the crimes they have done to justify their punishment - it does not matter any more as the deeds they have done afterwards, especially to you and Imoen make them our enemies as well.~
 IF~~THEN REPLY~ You still seem to be far from happy about our victory.~DO~SetGlobal("SanBodAttmpt","AR0800",5) ~ GOTO  SanBodAbdu6
 END
 
@@ -1720,7 +1720,7 @@ END
 IF~ Global("Homesail","GLOBAL",13)~ THEN BEGIN SanBHBrag1
 SAY~ So it was Brage who was scaring the pirate Monteelah on the Sword Coast.~
 IF~~THEN REPLY ~ What are you talking about now?~ GOTO SanBHBrag2
-IF~~THEN REPLY ~ You mean...we were suspecting all during this mysterious hunt by Montelaah that some third party was involved. Brage?~ GOTO SanBHBrag2
+IF~~THEN REPLY ~ You mean...we were suspecting all during this mysterious hunt by Monteelah that some third party was involved. Brage?~ GOTO SanBHBrag2
 END
 
 IF~~THEN BEGIN SanBHBrag2
@@ -1790,7 +1790,7 @@ END
 
 IF~~ THEN BEGIN EssFactry5
 SAY~Let us go back to the graveyard, please. I want to check one thing before I share my assumptions - and my nightmares - with you. (The smile she attempts is meant to be reassuring but you see that it is really forced.)~
-IF~~THEN REPLY~ Yes, let us go, there is nothing to be learned here anymore.~EXIT
+IF~~THEN REPLY~ Yes, let us go, there is nothing to be learned here any more.~EXIT
 END
 
 IF~Global("SanHintFactory","GLOBAL",4)~ THEN BEGIN EssFactry6
@@ -1842,7 +1842,7 @@ END
 IF~~THEN BEGIN  Beattam3
 SAY~ See here, <CHARNAME>! The rocks themselves are not penetrated by the flow. Massive stone material stops it.~
 IF~~THEN REPLY~ If we pile up some boulders in front of each it cannot get on to the middle, I guess.~DO~SetGlobal("SanHintFactory","GLOBAL",21)~ EXIT
-IF~~THEN REPLY~ There's a lot of boulders on those fithy duergars outside, we must transport some inside of here and build a barricade.~DO~SetGlobal("SanHintFactory","GLOBAL",21)~ EXIT
+IF~~THEN REPLY~ There's a lot of boulders on those filthy duergar outside, we must transport some inside of here and build a barricade.~DO~SetGlobal("SanHintFactory","GLOBAL",21)~ EXIT
 IF~~THEN REPLY~ Don't you have a spell to tear down the roof on this guy?~DO~SetGlobal("SanHintFactory","GLOBAL",21)~ EXIT
 END
 
@@ -1977,7 +1977,7 @@ IF~~THEN REPLY~ I must not use the ability come what may.~ GOTO SanDangeIns5
 END
 
 IF ~~ THEN BEGIN SanDangeIns5
-SAY~ That is true. Whatever comes for us, do not use the power again. It will only grow stronger until nothing can control it anymore. Let it starve on your neglegtance.~
+SAY~ That is true. Whatever comes for us, do not use the power again. It will only grow stronger until nothing can control it any more. Let it starve on your neglegtance.~
 IF~~THEN EXIT
 END
 
@@ -2459,7 +2459,7 @@ END
 
 IF~~ THEN BEGIN SanMysSeekr1
 SAY~ My role is to find the one who will succeed her in the line of incarnations of Mystra one day.~
-IF~~THEN REPLY~ It sounds like her own reign will not be that long anymore...I mean for a goddess...if a successor has to be found during your own human lifespan.~ GOTO SanMysSeekr2
+IF~~THEN REPLY~ It sounds like her own reign will not be that long any more...I mean for a goddess...if a successor has to be found during your own human lifespan.~ GOTO SanMysSeekr2
 IF~~THEN REPLY~ Have you any idea - despite that strange self-writing book - of how to go about that task?~ GOTO SanMysSeekr2
 END
 
@@ -2756,7 +2756,7 @@ IF~~THEN BEGIN FindSRBook24
 SAY~ Again you probably are right, my lovely genius, please go on.~
 IF~~THEN REPLY~ The temple below Athkatla was more or less intact, even if the worshipers of the forgotten god had no idea what they were preserving. Unless there is another temple that we have not even found yet I would propose to give this one a try.~ GOTO FindSRBook25
 IF~~THEN REPLY~ The only alternative we know so far is below Athkatla, but we have explored that one already. Either we need to look again with our current knowledge of what might be there or it is in another temple that we have not even found yet.~ GOTO FindSRBook25
-IF~~THEN REPLY~ The one below Athkatla holds no secrets for us anymore, so - dead end until we find another installation during our travels.~ GOTO FindSRBook25
+IF~~THEN REPLY~ The one below Athkatla holds no secrets for us any more, so - dead end until we find another installation during our travels.~ GOTO FindSRBook25
 END
 
 IF~~THEN BEGIN FindSRBook25
@@ -2829,7 +2829,7 @@ END
 IF~~THEN BEGIN SanHeriMyst11
 SAY~ A fact that destroyed my mother as it was known to another god as well - Bhaal.~
 IF~~THEN REPLY~ You already allured to the fact that I was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
-IF~~THEN REPLY~ You already allured to the fact that the bhaalspawn was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
+IF~~THEN REPLY~ You already allured to the fact that the Bhaalspawn was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
 IF~~THEN REPLY~ His plan was more than mere revenge - but in which way?~  GOTO SanHeriMyst12
 END
 
@@ -2842,8 +2842,8 @@ IF~~THEN BEGIN SanHeriMyst13
 SAY~ Not just any spawn, but one of the strongest, one to grow from the essence of the weaker ones and become a major power and maybe even aspiring to the Throne of Bhaal. ~
 =~By the time Bhaal was seeding his spawns he knew how the Time of Troubles would end - for him but also for the ones who would bring him down. And even if the final backstab was done by Cyric - and Mask was involved as the deadly weapon - it was Midnight who had lead and concluded the mission in AO's name. The priestess of Mystra, later reincarnate as the goddess herself, was the real enemy for the God of Murder.~
 =~With his plan to live on through his spawns who would grow and each of them hold part of his essence so enough would be maintained to restore his power one day, there was one opponent to be eliminated who could spoil the plan once again - Mystra.~
-IF~~THEN REPLY~ When Khalindra died at the bhaalspawn's birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
-IF~~THEN REPLY~ When Khalindra died at the bhaalspawn's birth - my birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
+IF~~THEN REPLY~ When Khalindra died at the Bhaalspawn's birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
+IF~~THEN REPLY~ When Khalindra died at the Bhaalspawn's birth - my birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
 END
 
 IF~~THEN BEGIN SanHeriMyst14
