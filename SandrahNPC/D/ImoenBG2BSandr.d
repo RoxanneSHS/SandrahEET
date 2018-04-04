@@ -6,7 +6,7 @@ IF~~THEN BSANDR ImoHealedReun
 ~ Yes, it is good we have finally found you, besta friend. <CHARNAME> did all to find your whereabouts and struggled for the passage to here. You were the goal that made us strive onwards.~
 DO~SetGlobal("SanHealImo","GLOBAL",8) RealSetGlobalTimer("SanImoNashIntT","GLOBAL",600)~
 ==BIMOEN2~ (Smiles) Good to know <CHARNAME> was not alone to rescue poor me but there was also someone *competent* to work on the job, haha.~
-== BSANDR~ Good to see old Imoen is still alive and has not lost her humor. The madman's work could not destoy the real you, just like Bhaal could not grow strong inside of you before. Still there is  the harm he and Bhodi have done to you both.~
+== BSANDR~ Good to see old Imoen is still alive and has not lost her humour. The madman's work could not destroy the real you, just like Bhaal could not grow strong inside of you before. Still there is  the harm he and Bodhi have done to you both.~
 ==BIMOEN2~ The emptiness...oh, Sandrah, how can I feel a loss when what's gone never was mine really.~
 == BSANDR~The Bhaal part of you did not take over much of the goodhearted Imoen, that is true. Still it is part of your soul, even if its just the dark side of it. To survive in the long term you need that part and you need to regain it same as <CHARNAME>. ~
 ==BIMOEN2~ It's so strange and strange, Sandrah, I never ever want that Murder God in me and now he's gone it's not good as well.~
@@ -50,7 +50,7 @@ DO~SetGlobal("SanHealImo","GLOBAL",13) RealSetGlobalTimer("SanImoNashIntT","GLOB
 ==BIMOEN2~But I destroyed...Henning...<CHARNAME>...Imoen the Magnificent...it's all ruins.~
 == BSANDR~Oh, no, not this self-destruction, please, my friend. You are strong and healthy, you will both recover your soul, a lifetime is still ahead of you. You will still love <CHARNAME> and you will now know the nature of this love.~
 ==BIMOEN2~...and Henning?~
-== BSANDR~Your question reveals how much you care for him and now you see clearer about all your feelings. You made your choice even if your consciuosness is not yet aware of it.~
+== BSANDR~Your question reveals how much you care for him and now you see clearer about all your feelings. You made your choice even if your consciousness is not yet aware of it.~
 ==BIMOEN2~But will he...?~
 == BSANDR~Does he need to know? I mean, you need not to lie to him, just show him the true feelings you have for him - now after all you have been through.~
 ==BIMOEN2~Heya...I will...eh, did I say thank you, count-sellor?...~EXIT
@@ -66,7 +66,7 @@ DO~SetGlobal("SanHealImo","GLOBAL",16) RealSetGlobalTimer("SanImoNashIntT","GLOB
 =~We have much more in common than we ever had imagined, besta friend, like really loving <CHARNAME>.~
 == BSANDR~It is good that you finally realized it and are yourself again - no, I have to correct myself, you are a new mature Imoen by now.~
 ==BIMOEN2~Hey, silly, you make me sound like some oldish matron...it's me if ya wanna take a look, it's Imoen the Magnificent.~
-== BSANDR~It truely is. (She kisses Imoen's forehead lightly.) I am glad it is you again.~EXIT
+== BSANDR~It truly is. (She kisses Imoen's forehead lightly.) I am glad it is you again.~EXIT
 
 
 //__________APPENDS__________________//

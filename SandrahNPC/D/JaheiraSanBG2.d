@@ -2,11 +2,11 @@ APPEND BSANDR
 
 IF ~ Global("SanJaheirPCBG2","LOCALS",1) ~ THEN BEGIN SanPCJaheirBg210
 SAY ~ You have not only become a very competent leader by now, <CHARNAME>, but even a true friend to those who have stayed faithful to your quest.~
-IF~~THEN REPLY ~ Yourself included of course. But you were probably referring to somone else right now.~ GOTO SanPCJaheirBg211
+IF~~THEN REPLY ~ Yourself included of course. But you were probably referring to someone else right now.~ GOTO SanPCJaheirBg211
 END
 
 IF ~~ THEN BEGIN SanPCJaheirBg211
-SAY~ Jaheira is not among those who let down their defenses easily even to a longterm companion. You have succeeded in that by your continous loyalty and care. She seems to return that now to you, finally.~
+SAY~ Jaheira is not among those who let down their defences easily even to a long term companion. You have succeeded in that by your continuous loyalty and care. She seems to return that now to you, finally.~
 IF~~THEN REPLY ~What do you imply by that.~ DO ~ SetGlobal("SanJaheirPCBG2","LOCALS",2)~GOTO SanPCJaheirBg212
 END
 
@@ -19,7 +19,7 @@ END
 
 CHAIN
 IF~ Global("SanJaheirBG2","GLOBAL",2) ~ THEN BSANDR SanJahRomPC1
-~ (Your young companion Sandrah and the older but agelessly attractive Jaheirah walk hand in hand in front of you, unaware that you are within hearing distance.)~
+~ (Your young companion Sandrah and the older but agelessly attractive Jaheira walk hand in hand in front of you, unaware that you are within hearing distance.)~
 DO~ SetGlobal("SanJaheirBG2","GLOBAL",3) ~
 == BJAHEIR ~...sure that Khalid would have wanted it that way.~
 == BSANDR ~ I think I knew him well enough to agree, my friend. The endless cycle of life continues when one of us is gone and nature itself makes her demands. He would surely not want his wife to wither away in solitude.~
@@ -38,7 +38,7 @@ IF~ Global("SanJaheirBG2","GLOBAL",4) ~ THEN BSANDR SanJahRomPC2
 DO~ SetGlobal("SanJaheirBG2","GLOBAL",5) ~
 == BJAHEIR ~ Sandrah, I remember an occasion when me and Khalid have talked about you - and about having our own children one day...~
 == BSANDR ~ (Sandrah listens silently.)~ 
-== BJAHEIR ~ If we were to have a daughter, we discusssed on that day, she should have become like you (sigh).~
+== BJAHEIR ~ If we were to have a daughter, we discussed on that day, she should have become like you (sigh).~
 == BSANDR ~ I never had a mother to talk to, Jaheira. Even if she should be alive today, I can imagine our relationship would by now be a bit different than from child to parent, maybe a bit more like close confidants - she may be something like my best friend to share my thoughts and feelings with and to learn and participate from her experience.~
 == BJAHEIR ~ Your words soothe and hurt at the same time, Sandrah. Your image brings to live a picture for both of us that we will never experience.~
 == BSANDR ~ Are you so sure, Jaheira? Do you not see a young woman and and experienced woman walking side by side sharing their views, their losses and their hopes - even if they are not related by their blood?~
@@ -68,10 +68,10 @@ DO~ SetGlobal("SanJaheirBG2","GLOBAL",7) ~
 == BSANDR ~ They cared little for you, being a sister Harper after all. Your loss of Khalid appeared to be unknown to them.~
 == BJAHEIR ~ Yes, you are correct. Why did they know nothing about that?~
 == BSANDR ~ Probably because they are concentrating too much on their internal affairs not noticing what goes on outside of their secret circles.~
-== BJAHEIR ~ Your view is unblurred, Sandrah, yes, why could they not tell us anything about the current status of this town? Instead they try to conceal their activities with absurd measures like the treatment of a silly little thief like Montaron.~
+== BJAHEIR ~ Your view is not blurred, Sandrah, yes, why could they not tell us anything about the current status of this town? Instead they try to conceal their activities with absurd measures like the treatment of a silly little thief like Montaron.~
 == BSANDR ~ Mmmh. So what may this internal activity be that seems to consume all of their interest and focus?~
 == BJAHEIR ~ <CHARNAME>?~
-== BSANDR ~ <CHARNAME> and the one who persues the power so much, this Irenicus. Do they want this power for themselves maybe?~
+== BSANDR ~ <CHARNAME> and the one who pursues the power so much, this Irenicus. Do they want this power for themselves maybe?~
 == BJAHEIR ~ With you and me by <CHARNAME>'s side it looks like Bhaal's power is in perfect balance, as much as any Harper could wish it to be.~
 == BSANDR ~ I agree. Unless you are one to whom the power is of more importance than the balance. We must be very careful, Jaheira, to trust the Harpers of this region too much.~
 EXIT
@@ -87,7 +87,7 @@ DO~ SetGlobal("SanGalvFi","LOCALS",2) ~
 == BJAHEIR ~ But can <CHARNAME> probably feel the same for me after this event?~
 == BSANDR ~ If ever any doubt had existed you have clarified with your action where you stand and how you feel. <CHARNAME> would be blind not to see your feelings...and a caring person like <PRO_HIMHER> is unlikely of such a blindness.~
 == BJAHEIR ~ You have soothed my soul once again, my young healer. Now, what about the Harpers? They have been my family and my stronghold until now. They have become strangers if not enemies for me now, they will hunt me - hunt us - for this deed.~
-== BSANDR ~ Those were no true Harpers, Jaheira. Sooner or later, the truth will become aparent. None of the Harpers I know, including my own father, would condemn you for your deed. Do not loose your faith just because of this misled branch we found here.~
+== BSANDR ~ Those were no true Harpers, Jaheira. Sooner or later, the truth will become apparent. None of the Harpers I know, including my own father, would condemn you for your deed. Do not loose your faith just because of this misled branch we found here.~
 == BJAHEIR ~ Yes, Sandrah, deep in my heart I know you are right. Still it will take some time to restore the balance that was distorted today. We may have some of the Harpers at our heels until we will be able to clarify the whole affair.~
 == BSANDR ~ We will all stand by you, my friend. You can count on <CHARNAME>'s loyalty and...love.~
 == BJAHEIR ~(Mumbles) Loyalty and love...too good to be true...~
@@ -104,16 +104,16 @@ DO~ SetGlobal("SanGalvFi","LOCALS",5) ~
 == BJAHEIR ~ Everything you say is right, Sandrah, just so right...but falling in love so unexpectedly does not make things easier it seems.~
 == BSANDR ~ Does it not? What are you afraid of, my friend? Love is a power that makes all of us loose control sometimes, nobody is strong enough to withstand it. Just let yourself fall and enjoy it - you will get out stronger and more confident than ever before.~
 == BJAHEIR ~ I am afraid I have already lost my control completely...(Laughs nervously) Thank you for making me accept this. A harper in love cannot be a harper in balance - a *hasbeen* harper, that is.~
-== BSANDR ~ (Takes Jaheira by the hand.) It is your resistance against your own heart and will that has inbalanced you. Once you admit that your feelings are right and wonderful, you will find your balance and peace again and at a higher level of intensity.~
+== BSANDR ~ (Takes Jaheira by the hand.) It is your resistance against your own heart and will that has unbalanced you. Once you admit that your feelings are right and wonderful, you will find your balance and peace again and at a higher level of intensity.~
 == BJAHEIR ~ You are the most wonderful friend I can imagine, Sandrah. (She kisses the younger woman on the forehead.) Let us continue now. (As her eyes meet you in turning you see a warmth in them like you have never seen before from your wonderful druid.)~EXIT
 
 CHAIN
 IF~Global("SanJahMiss","LOCALS",3)~ THEN BSANDR SanJahRomPCRet
 ~It feels good to have you walking amidst us again, Jaheira.~
 DO~SetGlobal("SanJahMiss","LOCALS",4)~ 
-== BJAHEIR ~ I am glad as well, my friend. <CHARNAME> has made a decision that I was too afraid to make myself all the time...or did he have some counselor to assist <PRO_HIMHER> with that?~
-== BSANDR ~ A counselor cannot change what is deep inside you, Jaheira, she can only make visible what maybe you yourself do not see too clearly at the moment.~
-== BJAHEIR ~ You have really grown in your role since I first met - and distrusted - you. I will not hide my feelings for <CHARNAME> anymore, not from myself nor from anyone else. And I will admid my feelings for you as well. (She kisses Sandrah's forehead and embraces the younger woman for a while.)~
+== BJAHEIR ~ I am glad as well, my friend. <CHARNAME> has made a decision that I was too afraid to make myself all the time...or did he have some counsellor to assist <PRO_HIMHER> with that?~
+== BSANDR ~ A counsellor cannot change what is deep inside you, Jaheira, she can only make visible what maybe you yourself do not see too clearly at the moment.~
+== BJAHEIR ~ You have really grown in your role since I first met - and distrusted - you. I will not hide my feelings for <CHARNAME> any more, not from myself nor from anyone else. And I will admit my feelings for you as well. (She kisses Sandrah's forehead and embraces the younger woman for a while.)~
 =~ Let us move on - my steps will be light from now on.~
 EXIT
 
@@ -162,7 +162,7 @@ IF WEIGHT #-31~Global("SanJaheirBG2","GLOBAL",11)~THEN BJaheir SanJahRomPCEnd
 DO~ SetGlobal("SanJaheirBG2","GLOBAL",12)~
 == BSANDR ~Your persistence has gained you much, my friend, <CHARNAME>'s love and the acceptance of the harpers - and your acceptance of them.~
 == BJAHEIR ~The true ones, yes.~
-=~This is why I seek your conselling right now. I think I have to go back to the building in the docks one more time to restore what those false harpers have imbalanced. Do you think that <CHARNAME> will understand this, I mean now in the middle of our quests?~
+=~This is why I seek your counselling right now. I think I have to go back to the building in the docks one more time to restore what those false harpers have imbalanced. Do you think that <CHARNAME> will understand this, I mean now in the middle of our quests?~
 == BSANDR ~You know the answer, Jaheira. He has understood you all the time and supported you through all those struggles. Your love for each other is strong enough even if you will be apart for a short while.~
 == BJAHEIR ~You are right, I knew this answer already.~
 =~<CHARNAME>, it will take only a few days in Athkatla to organise the restoration of the harpers in Amn. I wait for you to pick me up again whenever you need my support in your company again.~
