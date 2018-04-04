@@ -9,7 +9,7 @@ END
 
 // Bring Gifts
 IF ~ Global("MystrGift","GLOBAL",2) ~ ElmBringGift
-SAY ~ Greetings, my daughter. Greetings, <CHARNAME>. Thine company is fairing well in thine doings in these troubled times. Thine deeds have not been unobserved by those who care for your wellbeing.~
+SAY ~ Greetings, my daughter. Greetings, <CHARNAME>. Thine company is fairing well in thine doings in these troubled times. Thine deeds have not been unobserved by those who care for your well being.~
 =~ My daughter, thine goddess is pleased by what thou didst in her name. Take these small trinkets as a symbol of her blessings.~
 IF~~ THEN DO ~ SetGlobal("MystrGift","GLOBAL",3) ~EXIT
 END
@@ -19,8 +19,8 @@ END
 CHAIN
 IF ~Global("ElminGaveNarQ","GLOBAL",1)~ THEN  Elminsa ElminGaveNarQI
 ~Well, well, Sandrah, my heart, I see thou found thine way to thine troubled father.~
-== CVSandrJ ~Oh, father! (Embraces the old man) You look indeed troubled - and it is not because of me and my following <CHARNAME>. Something bad must have happended, please tell me.~
-== Elminsa ~Indeed, indeed, Sandrah, <CHARNAME>, trouble has come to Faerun from the depth below, the demonish Realms that are always lurking to send their troubles up to us. ~
+== CVSandrJ ~Oh, father! (Embraces the old man) You look indeed troubled - and it is not because of me and my following <CHARNAME>. Something bad must have happened, please tell me.~
+== Elminsa ~Indeed, indeed, Sandrah, <CHARNAME>, trouble has come to Faerun from the depth below, the demonic Realms that are always lurking to send their troubles up to us. ~
 = ~<CHARNAME>, thine little company has proven thyself rather competent in handling the troubles of the Sword Coast recently. And then mine darling Sandrah is with thee and the problem at hand now is in a way also some kind of family business.~
 == CVSandrJ ~ Speak, father, if there is trouble we will do as best as we can, even if we have our own mission to follow, right <CHARNAME>? ~
 END
@@ -64,7 +64,7 @@ IF ~~ THEN Elminsa GaveNarQ2
 == CVSandrJ ~ FATHER, you do not accuse me of theft?~
 == Elminsa ~ Hohoho, Sandrah, calm down, little one!~
 = ~ Nothing can be further from me than accusing thee. I let thee do your own little things with it from time to time so thou will learn and grow. My trust in thee is enough to know thou will not overstep thine limits. ~
-= ~ No, this deed was done by one that cannot use the Shard but wants to do harm to us. There is some evidence that a group of duergar and demonknights have been to Waterdeep lately. But those creatures can only be the minions of someone much more evil and planning.~
+= ~ No, this deed was done by one that cannot use the Shard but wants to do harm to us. There is some evidence that a group of duergar and demon knights have been to Waterdeep lately. But those creatures can only be the minions of someone much more evil and planning.~
 END
 IF ~ PartyHasItem("SCRLALZ") ~ THEN REPLY ~ We have encountered the mage Firebead, who mentioned a scroll found on a dead duergar near Beregost recently. Sandrah has it now. It has something demonic on it as well. May there be a connection to the duergars you mentioned? ~ + GaveNarQ3
 IF ~ !PartyHasItem("SCRLALZ") ~ THEN REPLY ~ Go on, please.~ + GaveNarScrl
@@ -78,7 +78,7 @@ END
 
 CHAIN
 IF ~~ THEN Elminsa GaveNarScr2
-~  Firebead stays at a friend's house opposite to the Feldepost. Once you have the artifact, bring it to Thalantyr's High Hedge. ~
+~  Firebead stays at a friend's house opposite to the Feldepost. Once you have the artefact, bring it to Thalantyr's High Hedge. ~
 = ~ I will do mine own research meanwhile and rejoin with you at the Hedge once Thalantyr sends me notice of your arrival. ~
 END
 ++ ~ Sandrah, friends, let us not waste time then, off to Beregost. See you soon, Elminster. ~ DO ~ SetGlobal("ElminGaveNarQ","GLOBAL",2) ActionOverride("Elminsa",EscapeArea()) ActionOverride("Narqmes",EscapeArea())AddJournalEntry(@71,QUEST) ~  EXIT
@@ -88,11 +88,11 @@ IF ~~ THEN Elminsa GaveNarQ3
 ~ Interesting and well done my daughter. Thine having the scroll will indeed save us a lot of time. Let us take a look at it then. (Give the scroll to Elminster)~
 = ~ Hm,hm ----- aaah, see see. Oh yes, interesting....~
 = ~ Well, friends, that sheds indeed a light on things.~
-== CVSandrJ ~ The scroll can talk in a limited way, I found out. And it knows about some portal, maybe it is even the key to it. Someone named Alzaligrundel and someone he calls his archenemy are somehow involved in the affair. Go, tell us father, have you found out more?~
+== CVSandrJ ~ The scroll can talk in a limited way, I found out. And it knows about some portal, maybe it is even the key to it. Someone named Alzaligrundel and someone he calls his arch enemy are somehow involved in the affair. Go, tell us father, have you found out more?~
 == Elminsa  ~ Congratulations! Years of good education have not been wasted on thee, my pretty little daughter, clever, clever. Thou know much already. ~
-= ~ So the two hellish archenemies are behind all of this. BAD, BAD. One of them must have the shard and he must be somewhere on the Sword Coast waiting for his duergar scout to return. The scroll was given to the duergar to find the demon's archenemy and then report to his master. The scroll may also be the key to get back into his master's lair with the news.~
+= ~ So the two hellish arch enemies are behind all of this. BAD, BAD. One of them must have the shard and he must be somewhere on the Sword Coast waiting for his duergar scout to return. The scroll was given to the duergar to find the demon's arch enemy and then report to his master. The scroll may also be the key to get back into his master's lair with the news.~
 END
-++ ~ But the duergar is dead. Did the archenemy kill him?~ + GaveNarQ4
+++ ~ But the duergar is dead. Did the arch enemy kill him?~ + GaveNarQ4
 
 CHAIN
 IF ~~ THEN Elminsa GaveNarQ4
@@ -112,16 +112,16 @@ IF ~~ THEN Elminsa ClP1
 == CVSandrJ ~ A waterfall maybe? High mountains of course, southern mountains however still on the Sword Coast?  ~
 == Elminsa ~  Something that can be the entrance to the depth. Or from the way they see it, the exit to the surface. But <CHARNAME> is a child of these regions, I trust <PRO_HIMHER> to lead thee in this. ~
 END
-IF~!AreaCheck("BG3402")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
-IF~ AreaCheck("BG3402")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
+IF~!AreaCheck("BG3402")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remembering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
+IF~ AreaCheck("BG3402")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remembering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
 
 CHAIN
 IF ~~ THEN Elminsa ClP2
 ~  Something that can be the entrance to the depth. Or from the way they see it, the exit to the surface. But <CHARNAME> is a child of these regions, I trust <PRO_HIMHER> to lead thee in this. ~
 END
-IF~!AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(2000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
+IF~!AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remembering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(2000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
 IF~!AreaCheck("BG3402")!InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls points us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. I remember, Imoen and me used to hike up there. It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ AddexperienceParty(2000) SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ EXIT
-IF~ AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remebering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
+IF~ AreaCheck("BG3402")InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. Remember, Imo when we hiked up there (Imoen smiles brightly remembering your trip to the Cloudpeaks long ago). It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
 IF~ AreaCheck("BG3402")!InParty("Imoen2")~ THEN REPLY~ Thank you for your trust. High mountains and waterfalls point us to the Cloudpeaks. They are on the southern border of the Sword Coast guarding against Amn. I remember, Imoen and me used to hike up there. It is still a large area to search, but at least a hint. So we have a mission at hand. Farewell, Elminster, I think Sandrah will know what to do with the shard, once we have it.~ DO ~ SetGlobal("SanNarQ","GLOBAL",1) SetGlobal("ElminGaveNarQ","GLOBAL",4) AddJournalEntry(@70,QUEST) EraseJournalEntry(@76)~ + MoveElm
 
 CHAIN
@@ -134,7 +134,7 @@ EXIT
 CHAIN
 IF ~ Global("ElminGaveNarQ","GLOBAL",2) PartyHasItem("SCRLALZ") ~ THEN Elminsa ThalWScr
 ~ Ah, thou have returned with the scroll. Have you found out even more?~
-== CVSandrJ ~ A talking demonish scroll and maybe a key to a portal.~
+== CVSandrJ ~ A talking demonic scroll and maybe a key to a portal.~
 END
 ++ ~ We seek your further advice on it. Sandrah has found out some things, but we are not sure of the proper things to do now. You said that much on the Sword Coast depends on acting the right way on this matter. ~ DO ~AddexperienceParty(2000)EraseJournalEntry(@71) AddJournalEntry(@73,QUEST_DONE)~+ GaveNarQ3
 
@@ -173,7 +173,7 @@ END
 ++ ~ They were send back to the deep by us, but not destroyed.~ + NarqLeft1
 ++ ~ We could master only the minor one, we had to use our wits for the other, just as you advised us to do.~ + NarqLeft1
 ++ ~ We killed them and got you your shard. ~ + NarqLie
-++ ~ We used our wits and tricks to get hold of the shard, but they were not defeatable. ~+ NarqLeft1
+++ ~ We used our wits and tricks to get hold of the shard, but they were invincible. ~+ NarqLeft1
 
 CHAIN
 IF ~~ THEN Elminsa NarqLie
@@ -247,7 +247,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ So while we are in Waterdeep I may also recommend that we go to my family if time permits. ~
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ A place that stirs the imagination of any bard. Would anyone believe me if I start a song about it? ~
 ==IF_FILE_EXISTS ~BB!GAVIN~ IF~ InParty("b!gavin") ~ THEN  ~Waterdeep already is quite some sight, but this place stands apart from that city in many ways, as do its inhabitants.~
-==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clangeddin's Axe, only the halls of a true dwarfen clan can be done with more craftsmanship and skill. But then, considering our host, I guess it was done by dwarfs. ~
+==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clangeddin's Axe, only the halls of a true dwarf clan can be done with more craftsmanship and skill. But then, considering our host, I guess it was done by dwarfs. ~
 == Elminsa IF~ InParty("ACBre") ~ THEN  ~ In deed, good Breagar, thou kin were involved in the making, as were elves and planetars and other creatures.~
 == IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~This place has the blessing of many Gods and I can feel Sune's spirit reigns here as well. It becomes clear why Sandrah is who she is.~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ I can smell the breezes of my northern seas on the wind here. ~
@@ -256,7 +256,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVDRE2")~ THEN Elminsa WelWD
 == Elminsa  IF~ InParty("Coran") ~ THEN  ~ I wouldst advise thou better not try your luck, elf. ~
 == BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ Many paths did I travel but nothing alike did I encounter until present days. The old scripts werst correct when it cometh to Elminster.~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ I enjoy the balance that is present in this place wherever I cast my eyes. ~
-== BJenli IF~ InParty("CVJenlig") ~ THEN ~ This place has connection to the planes itself. It's an isle of different matter and time, almost like our towns on the Astral Plane. Wonderous.~
+== BJenli IF~ InParty("CVJenlig") ~ THEN ~ This place has connection to the planes itself. It's an isle of different matter and time, almost like our towns on the Astral Plane. Wondrous.~
 ==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~ My cowled teachers would tremble when facing this legendary master. In company other than my present one, I would tremble too, I guess.~
 == Elminsa IF~ InParty("CVJenlig") ~ THEN ~It is rare that a creature like thee comes to our Prime. My best wish for thine mission, githling.~
 == BSANDR ~ Let me show you the gardens and the view of the endless sea, my friends. ~
@@ -274,7 +274,7 @@ IF ~ Global("SanNarQ","GLOBAL",7) AreaCheck("CVSTUD") ~ THEN Elminsa FalSlip1
 ~ I hope thou hath enjoyed thine stay.~
 DO ~ SetGlobal("SanNarQ","GLOBAL",8)~
 == BSANDR ~ Father, you seemed to be nervous about those demons that might have returned and may even be searching for us.~
-== Elminsa ~ Mine Sandrah, yes, I fear that Naronguth is after thee and those with thee. He cannot trace thee here in my house, for mine magic defenses work against him, but it wouldst not take him too long to find thee when out of Waterdeep.~
+== Elminsa ~ Mine Sandrah, yes, I fear that Naronguth is after thee and those with thee. He cannot trace thee here in my house, for mine magic defences work against him, but it wouldst not take him too long to find thee when out of Waterdeep.~
 == BSANDR ~ As much as we enjoyed our stay here, father, you know that <CHARNAME> has <PRO_HISHER> own path and mission to follow. We cannot dwell on here much longer.~
 END
 ++ ~ Sandrah is right, Elminster, as much as we enjoyed your hospitality, we must now move on. Hiding out here is not an option. If we must face Naronguth again, then it must be done.~ + FalSlip2
@@ -290,7 +290,7 @@ CHAIN
 IF ~~ THEN Elminsa FalSlip2
 ~ Mine heroic friends, I will not let thou go without providing some assistance, for sure.~
 = ~ Harken! An item the demon wouldst miss from his possession art his silver slippers.~
-== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Hoops, what comes now? More silly demon defense strategies?~
+== BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Hoops, what comes now? More silly demon defence strategies?~
 == Elminsa IF~ InParty("Imoen2") ~ THEN~ Laugh not, little bright redhead, thou art right indeed.~
 == BSANDR ~ Those slippers have betrayed him once already?~
 == Elminsa ~ But art he aware of this? That demon is stupid enough to lust for his slippers again and thus his downfall can once more be accomplished by the fearless.~
@@ -303,7 +303,7 @@ IF ~~ THEN Elminsa FalSlip3
 ~ I hath prepared a magic device for thee to play a trick with Naronguth again. Force alone wouldst not accomplish thine victory. (He pulls out a pair of silver dancing shoes, exactly like the ones Naronguth left behind at his last retreat.)~
 == BSANDR ~ I sense something magic about them, father, will you tell us about it.~
 == Elminsa ~ I wouldst advise thee to never put those slippers on to thy feet. Once thee wouldst try to move, the entangle spell wouldst start to work.~
-== BSANDR ~ Slippers of entaglement. You think that this would fool him?~
+== BSANDR ~ Slippers of entanglement. You think that this would fool him?~
 == Elminsa ~ At least he wouldst be hampered enough for thine chances to be improved. ~ DO ~ GiveItemCreate("SanEtg","CVSandr",0,0,0) AddJournalEntry(@127,QUEST) SetGlobal("SanNarQ","GLOBAL",9) EscapeArea()~  EXIT
 
 CHAIN
@@ -312,11 +312,11 @@ IF~ Global("SanAcadMission","GLOBAL",3)~ THEN Elminsa SendAcad
 DO ~ SetGlobal("SanAcadMission","GLOBAL",4)~
 == BSANDR IF ~ AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you, father, about the reason we have come.~ DO ~ AddexperienceParty(1100)~
 == BSANDR IF ~ !AreaCheck("CVDRE2")~ THEN ~ (Embraces her father) Lore has surely reached you faster than we could make it to Waterdeep ourselves, father.~ DO ~ AddexperienceParty(600)~
-== Elminsa ~ Good lore indeed but also a difficult situation arising from that. With thy friends help thou hath finally been able to give that hateful Academy a blow it long has deserved. 'tis I sense the presence of an artifact that wouldst allow us to take that blow even deeper into the heart of the enemy.~
+== Elminsa ~ Good lore indeed but also a difficult situation arising from that. With thy friends help thou hath finally been able to give that hateful Academy a blow it long has deserved. 'tis I sense the presence of an artefact that wouldst allow us to take that blow even deeper into the heart of the enemy.~
 == BSANDR ~ I sensed myself, that the fibula we have gained may be the entry into the Academy itself. A chance like we will not get easily again.~
 == Elminsa ~ (Elminster strokes his beard in deep thought.) True, true. But knowest, Sandrah, 'tis not anonymity that guards thee this time. The enemy will know and attack thee on sight.~
 == BSANDR ~ But I am not alone this time but with experienced and fearless companions. And I am not the green novice I was last time.~
-== Elminsa ~ MhMhMh, true again. Nonetheless, last time thou hadthed a backdoor to slip out by. 'tis not the case now. Whence I transport thine party to the Academy, thou are there alone. Of a way to recall thee I know not.~
+== Elminsa ~ MhMhMh, true again. Nonetheless, last time thou hadthed a back door to slip out by. 'tis not the case now. Whence I transport thine party to the Academy, thou are there alone. Of a way to recall thee I know not.~
 == BSANDR ~ Do not worry, father. Once the academy is in our hands, we will also have their means to return to the Sword Coast or to Waterdeep.~
 == Elminsa ~ (Elminster turns to you now:) Young friend, thou hath now heared what lies before thee shouldst thou choose to go to Legencase. Ask thine questions if thou willst.~
 END
@@ -325,13 +325,13 @@ END
 
 CHAIN
 IF~~THEN  Elminsa SendAcad2
-~ <CHARNAME>, once again thou reveal the makings of a real leader and competent captain. Mine daughter hath done well to follow thee. 'tis also the burdon of a leader to make such decisions where the life of some may be endangered for the sake of many.~
+~ <CHARNAME>, once again thou reveal the makings of a real leader and competent captain. Mine daughter hath done well to follow thee. 'tis also the burden of a leader to make such decisions where the life of some may be endangered for the sake of many.~
 == BIMOEN IF~ InParty("Imoen2") ~ THEN ~ Mr. E, hey man, don't doubt my <CHARNAME>. 'jus send us off and we'll be back with their heads in less time than ya need to recite the names of cities along the coast from north to south.~
 == BSHART IF~ InParty("Sharteel") ~ THEN ~ Even an academy led by a female can be bashed. Just let the right group do the job and you'll see. <CHARNAME>, we are wasting time, blood could already be flowing - and not ours. ~
-== BVICON  IF~ InParty("Viconia") ~ THEN ~ That witch is more cunning than a spiderqueen. But she is no match at all for our joined forces. On, <CHARNAME>, for Shar! ~
+== BVICON  IF~ InParty("Viconia") ~ THEN ~ That witch is more cunning than a spider queen. But she is no match at all for our joined forces. On, <CHARNAME>, for Shar! ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ I have my arrows ready to strike down these magelings. They have no right to threaten the Realms with magic for sale. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Another heroic deed on the pages of the famous hero <CHARNAME>. Another incredible task and another victory for the good. ~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ These blasphemous misusers of Mystra's great gifts deserve only total destruction. ~
+== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ These blasphemous misuser of Mystra's great gifts deserve only total destruction. ~
 ==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ I know of no other in the Realms who would be able to do this, should <CHARNAME> refuse the task. He has my trust. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Risks are high. But is it not by deeds like this that the good in the end can persist against evil. ~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Magic is to be mistrusted in itself. But these infamous misusers callsfor a mighty hammer to crush them. ~
@@ -347,7 +347,7 @@ can be held by no decent bard.~
 == BYESLI IF~ InParty("Yeslick") ~ THEN ~ The son and the granddaughter of Cyric demand it, ' still the deed is a heroic one. Yeah, I may be puzzled but I am d'termined.~ 
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood flows in the name of CYRIC as the great hero TIAX crushes another mighty opponent who tries to rule without OUR blessing!~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust his decisions by now with all my heart ~
-== BSAFAN IF~ InParty("Safana") ~ THEN~Apart from the fighting - done by my hero companions - this place is full of jewelry. My, and I've seen those fashionable robes on the sorceresses we defeated earlier!~
+== BSAFAN IF~ InParty("Safana") ~ THEN~Apart from the fighting - done by my hero companions - this place is full of jewellery. My, and I've seen those fashionable robes on the sorceresses we defeated earlier!~
 ==BJenli IF~ InParty("CVJenlig") ~ THEN ~Jen'lig follow commander to battle worth joint ability. (Hiss) Fall down will Legencase fortress.~ 
 == BSANDR ~ (Sandrah has taken your hand and squeezes it lightly but reassuring. You know this time she will follow you, whatever decision you may make.) ~
 END
@@ -394,11 +394,11 @@ DO ~ SetGlobal("Formedcloth","GLOBAL",25)~
 == Elminsa ~ Well, yes, thou deserve to know even if it will grieve thee and me and all who listen.~
 = ~ Your mother's name was Ismanelda. Red haired, quick witted, ever cheerful young Ismanelda.~
 == BIMOEN ~ Hey, now tell me her bestest colour was pink and I know she's really the one.~
-== Elminsa ~ (The old mage seems perplexed for a second.) Well, however thee gained that knowledge - but yes, she often wore pink garnments around the house.~
+== Elminsa ~ (The old mage seems perplexed for a second.) Well, however thee gained that knowledge - but yes, she often wore pink garments around the house.~
 == BIMOEN ~ She lived here, in Waterdeep, in this house? Slowpoke be quicker, man, tell me and tell me.~
 == Elminsa ~ I would if thou let me. Yes, she lived here as she was working in mine and Khalindra's household. She was a Waterdeep girl who worked in our kitchen. She was just - by coincidence...well..~
 == BIMOEN ~ PLEASE, mighty mage. If I can stand it you should as well, be no baby.~
-== Elminsa ~ Bhaal had sneaked into the house to insaminate Khalindra at night when I was away. For some reason Ismanelda was still awake and he sensed her presence in the house. With his evil instinct he searched and found her. He raped her for no other cause than that she was there at that moment.~
+== Elminsa ~ Bhaal had sneaked into the house to inseminate Khalindra at night when I was away. For some reason Ismanelda was still awake and he sensed her presence in the house. With his evil instinct he searched and found her. He raped her for no other cause than that she was there at that moment.~
 == BIMOEN ~ Bloody bastard. I'd kill him if he would still be alive. Ha, I will kill that Sarevok of his instead. But...~
 = ~ ...hey, did Winthrop know her? I mean did he...~
 == Elminsa ~ Good Winthrop. Well. He is a Harper, thou know that by now and thus came to my house regularly. He came more often once Ismanelda was in the household and he never left the house without paying a visit to the kitchen or the kitchen garden. All in the house sensed that some romance was afoot there. And then came the black day.~
