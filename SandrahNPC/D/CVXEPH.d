@@ -50,7 +50,7 @@ DO~SetGlobal("SanXephRet","GLOBAL",5)~
 ==Sanmyst~ The difference is that you want the power for yourself while any incarnation of Mystra was always chosen to guarantee the use by all entitled to it. None of us wanted the power for purposes others than those required by our task.~
 ==CVXEPH~ Bah, weak and vulnerable as a goddess as you are down here on the material plane.~
 ==Sanmyst~ Still strong enough to withstand you.~
-==CVXEPH~ Not long anymore. Your disciples know I have you in custody. They will send out their mighty mages to rescue you...to be trapped just like you. As my thralls they will provide the remaining powers I need to make the final step - and replace you.~
+==CVXEPH~ Not long any more. Your disciples know I have you in custody. They will send out their mighty mages to rescue you...to be trapped just like you. As my thralls they will provide the remaining powers I need to make the final step - and replace you.~
 ==Sanmyst~ YOU have no idea whom they will sent for you, Xephistagoras. It will be one who has crossed your plans twice already.~
 ==CVXEPH~ NOBODY HAS EVER...except...that girl...~
 DO~ClearAllActions() StartCutSceneMode()
@@ -78,7 +78,7 @@ DO~ClearAllActions() StartCutSceneMode() StartCutScene("CVmyskir")~EXIT
 CHAIN
 IF~Global("SanXephRet","GLOBAL",6)~ THEN CVSandrJ SanAkaVisXen1
 ~Xephistagoras. Is that the reason, father, why you have called for us?~
-==Elminsa~ One of the reasons, my daughter. Thou hath truely cancelled two of his cunning plans already and thou hath the courage required to face him again.~
+==Elminsa~ One of the reasons, my daughter. Thou hath truly cancelled two of his cunning plans already and thou hath the courage required to face him again.~
 ==Sankhelb~Our divination has told us he operates from a place that only you know well enough.~
 ==CVSandrJ~The Academy of Legencase? It must have been vacated since we last visited it.~
 ==Sankhelb~Visited and left victorious, Sandrah. But not just you but also <CHARNAME> and your friends.~
@@ -91,7 +91,7 @@ END
 CHAIN
 IF~~ THEN CVSandrJ SanAkaVisXen2
 ~I assume you have the means to get us to Legencase, father.~
-==Elminsa~We can transfer thee to the outside of it. From there thou wouldst be again on thy own as the sorcerer's defences are unpenetrable from the distance.~
+==Elminsa~We can transfer thee to the outside of it. From there thou wouldst be again on thy own as the sorcerer's defences are not penetrable from the distance.~
 =~ <CHARNAME>?~
 END
 ++~We are ready to leave right now, Elminster.~DO~ SetGlobal("SanXephRet","GLOBAL",8)~EXIT
@@ -109,7 +109,7 @@ DO~SetGlobal("SanXephRet","GLOBAL",14)~
 ==CVSANDRJ ~ So Xephistagoras was a real danger for you, Mystra?~
 ==SANMYST~ You know well by now that we need the aid and the faith of the mortals to aid us in all we do on the Prime Plane, Sandrah. I am no longer Midnight, I need you and your father, as well as <CHARNAME> when a danger arises from Toril. And dangerous, old and corrupt he was.~
 ==CVSANDRJ ~And did he act aided by your evil competitors as he has claimed?~
-==SANMYST~ You know your lore better than any, granddaughter. You know that Cyric backstabbed Bhaal with the weapon which was really Mask in disguise. Mask never forgave AO for raising Cyric and me to be gods afterwards. Xephistagoras was Mask's avatar down here.~
+==SANMYST~ You know your lore better than any, granddaughter. You know that Cyric back-stabbed Bhaal with the weapon which was really Mask in disguise. Mask never forgave AO for raising Cyric and me to be gods afterwards. Xephistagoras was Mask's avatar down here.~
 ==CVSANDRJ ~Then we have slain a god today?~
 ==SANMYST~ No. You killed the sorcerer only because Mask had retreated his prime shell when it became apparent to him whom he was facing.~
 ==CVSANDRJ ~The mighty Bhaalspawn <CHARNAME>!~
