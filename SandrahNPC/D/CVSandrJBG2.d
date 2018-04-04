@@ -1906,7 +1906,7 @@ IF~Global("SanSlayHelp","LOCALS",2)~THEN BEGIN SanPCWasSlayer11
 SAY~(Sandrah with a pale face lets her deadly hammer fall to the ground. Slowly her tense face relaxes and she picks up her weapon ready for the next foe.) ~
 =~ Have you truly returned to be yourself, <CHARNAME>? Has Bhaal's avatar left?~
 IF ~~ THEN REPLY ~ (You nod. Something tells you she was really prepared to slaughter the avatar if necessary.)~ DO~ SetGlobal("SanSlayHelp","LOCALS",3)~ EXIT
-IF ~~ THEN REPLY ~ (You nod. You will seek her counselling once you are out of this imminate danger.)~ DO~ SetGlobal("SanSlayHelp","LOCALS",3)~ EXIT
+IF ~~ THEN REPLY ~ (You nod. You will seek her counselling once you are out of this imminent danger.)~ DO~ SetGlobal("SanSlayHelp","LOCALS",3)~ EXIT
 END
 
 IF~Global("SanSlayHelp","LOCALS",4)~THEN BEGIN SanPCWasSlayer21
@@ -1928,7 +1928,7 @@ IF~~THEN REPLY~ The hidden town of the elves? Do you think they come from there?
 END
 
 IF~~THEN BEGIN Suldahint2
-SAY~ It becomes clearer now for me, <CHARNAME>. All of this around here is the machinery of an enourmous revenge.~
+SAY~ It becomes clearer now for me, <CHARNAME>. All of this around here is the machinery of an enormous revenge.~
 IF~~THEN REPLY~ Of Irenicus? But against whom?~ GOTO Suldahint3
 END
 
@@ -1977,7 +1977,7 @@ IF~~THEN REPLY~ I must not use the ability come what may.~ GOTO SanDangeIns5
 END
 
 IF ~~ THEN BEGIN SanDangeIns5
-SAY~ That is true. Whatever comes for us, do not use the power again. It will only grow stronger until nothing can control it any more. Let it starve on your neglegtance.~
+SAY~ That is true. Whatever comes for us, do not use the power again. It will only grow stronger until nothing can control it any more. Let it starve on your negligence.~
 IF~~THEN EXIT
 END
 
@@ -1989,8 +1989,8 @@ IF~~THEN REPLY~ Why do the drow not treat those elves with the same hostility?~ 
 END
 
 IF~~THEN BEGIN UDWelcome2
-SAY~A common interest, <CHARNAME>, one that make the worst of oponents to allies all of a sudden.~
-=~We have learned already that our foe are most likely elves who have committed a crime against Suldanessalar and its queen Ellesime. They have been exiled from their former home and been punished with the loss of their elven longivity.~
+SAY~A common interest, <CHARNAME>, one that make the worst of opponents to allies all of a sudden.~
+=~We have learned already that our foe are most likely elves who have committed a crime against Suldanessalar and its queen Ellesime. They have been exiled from their former home and been punished with the loss of their elven longevity.~
 IF~~THEN REPLY~They have stolen Imoen's and my souls to compensate for that.~DO~SetGlobal("UcmMatronDrow","GLOBAL",3)~ GOTO UDWelcome3
 END
 
@@ -2161,7 +2161,7 @@ IF~~THEN DO~ RestParty()~EXIT
 END
 
 IF~~THEN BEGIN SanDrwLuv6
-SAY~ (Slapp) Slave, did you not learn to use your mouth better on me than with talk? (She lightly slapps your behind to motivate you.)~
+SAY~ (Slapp) Slave, did you not learn to use your mouth better on me than with talk? (She lightly slaps your behind to motivate you.)~
 IF~~THEN REPLY~ The mistress will not be disappointed.~ GOTO SanDrwLuv3
 IF~~THEN REPLY~ You play your role very well, harsh mistress.~ GOTO SanDrwLuv3
 END
@@ -2179,13 +2179,13 @@ IF~~THEN DO~ SetGlobal("SanDrowSleep","LOCALS",4)~ EXIT
 END
 
 IF~~THEN BEGIN SanDrwLuv9
-SAY~ We can burn the sheets together any time without that transformation, my sweet vulcano.~
+SAY~ We can burn the sheets together any time without that transformation, my sweet volcano.~
 IF~~THEN DO~ SetGlobal("SanDrowSleep","LOCALS",4)~ EXIT
 END
 
 IF~Global("SanSola","GLOBAL",1)~ THEN BEGIN SanWarnIntr1
 SAY~Do you have the same feeling, <CHARNAME>, someone is using us as pawns in a game here - the game being a drow intrigue of course.~
-IF~~THEN REPLY~ Just because we are send to fight some underdark gnomes?~ GOTO SanWarnIntr2
+IF~~THEN REPLY~ Just because we are send to fight some Underdark gnomes?~ GOTO SanWarnIntr2
 IF~~THEN REPLY~ Us and Solaufein as well, I guess, but who and why? ~GOTO SanWarnIntr2
 IF~~THEN REPLY~ This Phaere surely has some plans with us. Wait and see.~ GOTO SanWarnIntr2
 END
@@ -2208,13 +2208,13 @@ IF~~THEN REPLY~ I do not want us to get involved in such an internal affair. Wha
 END
 
 IF~~ THEN BEGIN SanWarnIntr5
-SAY~Not a very good idea, <CHARNAME>. Why should she listen to suspicious outsiders trying to compromite her favourite daughter?~
+SAY~Not a very good idea, <CHARNAME>. Why should she listen to suspicious outsiders trying to compromise her favourite daughter?~
 IF~~THEN GOTO SanWarnIntr6
 END
 
 IF~~ THEN BEGIN SanWarnIntr6
 SAY~ Knowing the situation we can take our advantage from it. They prepare for war with the surface elves and at the same time they steer towards an internal power struggle. It is a dangerous game but if we play it carefully it may work for our goals. A city in turmoil may serve our purpose well.~
-=~ By the way, we should pay attention to Solaufein. He serves Phaere only as long as he must but my assesment is that he will take his chance out of her claws as soon as he sees his chance.~
+=~ By the way, we should pay attention to Solaufein. He serves Phaere only as long as he must but my assessment is that he will take his chance out of her claws as soon as he sees his chance.~
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~You like that dark fighter - and lover - don't you?~GOTO SanWarnIntr8
 IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY~ You like that dark fighter - and lover - don't you?~ GOTO SanWarnIntr7
 END
@@ -2222,7 +2222,7 @@ END
 IF~~ THEN BEGIN SanWarnIntr7
 SAY~ (Laughs) If my dark mistress allows me. But maybe you like him as well. As we are not drow females, we might let the male make his own choice I suppose.~
 IF~~THEN REPLY~ He is trained to accept our commands so he will serve the one he's assigned to...But, no, I do not want a pet but a man who really wants me.~EXIT
-IF~~THEN REPLY~ I have no interst in him at all.~EXIT
+IF~~THEN REPLY~ I have no interest in him at all.~EXIT
 IF~~THEN REPLY~ Interesting - even at the risk that he may not choose any of us.~EXIT
 END
 
@@ -2284,14 +2284,14 @@ IF~~THEN REPLY~ The joke's on you, who's a jealous little girl now, hahaha?~DO~ 
 END
 
 IF~~ THEN BEGIN SanWarnIntr19
-SAY~ Since when have you become such a doomsayer, Sandrah?~
+SAY~ Since when have you become such a doom sayer, Sandrah?~
 IF~~THEN GOTO SanWarnIntr13
 END
 
 IF~Global("SanSola","GLOBAL",5)~ THEN BEGIN SanWarnIntr21
 SAY~ Finally Phaere will reveal to us why she really wants us and what her plot is. If all my analysis of the facts is correct, this will be our big chance to end this adventure gloriously.~
 IF~~THEN REPLY~ She still wants more than Solaufein's death?~ GOTO SanWarnIntr22
-IF~~THEN REPLY~ Let me know what my couselor thinks about it and compare it to my own guesses.~ GOTO SanWarnIntr22
+IF~~THEN REPLY~ Let me know what my counsellor thinks about it and compare it to my own guesses.~ GOTO SanWarnIntr22
 IF~~THEN REPLY~It's all obvious for me as well, we need not to waste more time with talking. ~ DO~ SetGlobal("SanSola","GLOBAL",6) IncrementGlobal("Sanpoints","GLOBAL",-4)~EXIT
 END
 
@@ -2307,7 +2307,7 @@ IF~~THEN REPLY~ But how?~ GOTO SanWarnIntr24
 END
 
 IF~~THEN BEGIN SanWarnIntr24
-SAY~ It is useless to make guesses as we will surely hear from her own lips in a few moments. I just wanted to recommend to you to agree to whatever she askes of you. Open objection will not help us - we should rather fuel the power struggle between mother and daughter. We cannot defend them both and the city that is behind them, but we can probably deal with the remainder once they have clashed. Even the winner afterwards will have been weakened enough so we can deal with her.~
+SAY~ It is useless to make guesses as we will surely hear from her own lips in a few moments. I just wanted to recommend to you to agree to whatever she asks of you. Open objection will not help us - we should rather fuel the power struggle between mother and daughter. We cannot defend them both and the city that is behind them, but we can probably deal with the remainder once they have clashed. Even the winner afterwards will have been weakened enough so we can deal with her.~
 IF~~THEN REPLY~ Fine...did I already tell you how beautiful you are, drow lady? But I think it's necessary you change back soon as your mind starts to work like theirs, my counsellor. (Smile)~EXIT
 END
 
@@ -2331,7 +2331,7 @@ IF~Global("CVGodag","GLOBAL",9) Global("CVGodagJon","GLOBAL",1)~THEN REPLY~I sti
 IF~Global("PoolHealT","CVSHA7",4)~THEN REPLY~ (You take a deep breath) Let us enter that pool now, Sandrah.~DO~SetGlobal("PoolHealT","CVSHA7",5)~GOTO PoolTalk17
 IF~ Global("ys_FindElminster","GLOBAL",1) Global("SanAskLief","LOCALS",0) ~ THEN REPLY ~ Sandrah, have you ever heard or met this mage Lief. Is he to be trusted or may this be another trap misusing your father's name?~ GOTO SanAskLief1
 IF~ Global("KangaxxQuest","GLOBAL",1) Global("SanKangAdv","LOCALS",0)~ THEN REPLY ~ This talking skull, Kangaxx, he's a lich, right, Sandrah?~ GOTO SanKanAdv1
-IF ~ Global("SanPelltru","LOCALS",1)~ THEN REPLY~We talked about Pelligram recently and I remember we made the assumption that your Goddess mystra arranged for the two of you to meet.~ GOTO SanPelltru4
+IF ~ Global("SanPelltru","LOCALS",1)~ THEN REPLY~We talked about Pelligram recently and I remember we made the assumption that your Goddess Mystra arranged for the two of you to meet.~ GOTO SanPelltru4
 IF~GlobalGT("GettingApprentices","GLOBAL",0) Global("SanPCHassphere","GLOBAL",0) ~ THEN REPLY~ Sandrah, as a priestess of Mystra you are probably the best suitable counsellor in matters of this planar sphere.~ GOTO SanSphereAdv1
 IF~Global("SanVampWDQuest","GLOBAL",16)~ THEN REPLY~ Let us now enter that portal.~ GOTO DoWDVampQ6
 IF~Global("SANSHARINT","GLOBAL",26)GlobalGT("Chapter","GLOBAL",13) Global("SanBabewait","LOCALS",0)!AreaType(CITY)~ THEN REPLY~ How may our wildcat Shar-Teel be faring these days?~ GOTO SanBabewait1
@@ -2356,8 +2356,8 @@ IF~ Global("SanKhalBlood","GLOBAL",5) !AreaCheck("CVElm1") !AreaCheck("CVElm2")!
 IF~Global("SanKhalBlood","GLOBAL",13) ~ THEN REPLY~ Shall we continue our analysis of our discoveries at the Archive?~ GOTO SanHeriMyst7
 IF~Global("SanKhalBlood","GLOBAL",12) RealGlobalTimerExpired("SanDreamTalkTime","GLOBAL")~ THEN REPLY~ It must be a heavy burden that you feel with our discovery in the Archive. Do you know what it really means for us?~ GOTO SanHeriMyst1
 IF~Global("SanKhalBlood","GLOBAL",14) ~ THEN REPLY~ Why had Bhaal chosen Khalindra for one of his spawns if not for the reasons we had anticipated until recently?~ GOTO SanHeriMyst13
-IF~ OR(2) Global("SanIntEllesInt1","GLOBAL",1) Global("SanIntEllesInt1","GLOBAL",1) ~ THEN REPLY ~ Who is Quilue Veladorn, Sandrah?~ GOTO SanQuilBef1
-IF~GlobalGT("SanKhalBlood","GLOBAL",9) Global("SanIntEllesInt1","GLOBAL",0)~ THEN REPLY ~ Who is Quilue Veladorn, Sandrah?~ GOTO SanQuilBef11
+IF~ OR(2) Global("SanIntEllesInt1","GLOBAL",1) Global("SanIntEllesInt1","GLOBAL",1) ~ THEN REPLY ~ Who is Qilue Veladorn, Sandrah?~ GOTO SanQuilBef1
+IF~GlobalGT("SanKhalBlood","GLOBAL",9) Global("SanIntEllesInt1","GLOBAL",0)~ THEN REPLY ~ Who is Qilue Veladorn, Sandrah?~ GOTO SanQuilBef11
 IF~GlobalGT("SheinaTalk","GLOBAL",0)OR(3) AreaCheck("ARPO05")AreaCheck("ARPO06")AreaCheck("ARPO07")~ THEN REPLY ~ My healer, what can you do to help these people?~ GOTO SanHealTDD1
 IF~Global("SanXephRet","GLOBAL",7)PartyHasItem("SANAKAK")~ THEN REPLY ~ Well, looks like we are ready to go to Legencase now.~DO~ SetGlobal("SanXephRet","GLOBAL",8)~EXIT
 IF~Global("SaerilethBetrothed","GLOBAL",1)Global("SanSaerMarry","LOCALS",0)~THEN REPLY~ Sandrah, I must talk to you about Saerileth, please.~ GOTO Marrysaer1
@@ -2386,7 +2386,7 @@ IF~~THEN REPLY~That is all?~DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanA
 END
 
 IF~~THEN BEGIN SanHealTDD1
-SAY~ As a healer Sheina provides all that can be done for the suffering villagers. I would be more helpful to assist you in finding the source of that desease and try to get into that cursed castle with you.~
+SAY~ As a healer Sheina provides all that can be done for the suffering villagers. I would be more helpful to assist you in finding the source of that disease and try to get into that cursed castle with you.~
 IF~~THEN REPLY~ I am glad you say that, Sandrah.~EXIT
 END
 
@@ -2408,7 +2408,7 @@ IF~Global("GodGuess3","LOCALS",0)~ THEN REPLY~ Tyr is as old as one can imagine.
 IF~Global("GodGuess1","LOCALS",0)~ THEN REPLY~ How about Selune, she is one of the oldest deities?~ GOTO FindSRBook6
 IF~~ THEN REPLY~ Someone like Amaunator, ancient but forgotten today.~GOTO FindSRBook10
 IF~Global("GodGuess2","LOCALS",0)~ THEN REPLY~ How about Tymora who was from the beginning?~ GOTO FindSRBook7
-IF~Global("GodGuessE","LOCALS",0)~THEN REPLY~ We probably can excempt the evil Gods like Bane or Talos.~ GOTO FindSRBook8
+IF~Global("GodGuessE","LOCALS",0)~THEN REPLY~ We probably can exempt the evil Gods like Bane or Talos.~ GOTO FindSRBook8
 END
 
 IF~~THEN BEGIN FindSRBook4
@@ -2447,7 +2447,7 @@ IF~~THEN REPLY~ Helm and Lathander...~GOTO FindSRBook12
 END
 
 IF~~THEN BEGIN FindSRBook12
-SAY~ *...not Oghma but one who was before...*. Amaunator was the bringer of light to Faerun, but also in the sense that he brought light for the mortal strive for truth and wisdom and such preceeded Oghma and Deneir.~
+SAY~ *...not Oghma but one who was before...*. Amaunator was the bringer of light to Faerun, but also in the sense that he brought light for the mortal strive for truth and wisdom and such preceded Oghma and Deneir.~
 IF~~THEN REPLY~ We know where we need to search, I guess.~ GOTO FindSRBook13
 IF~~THEN REPLY~ We found his old temples already but no sign of such a book in any.~ GOTO FindSRBook13
 END
@@ -2470,7 +2470,7 @@ DO~SetGlobal("SanKhalBlood","GLOBAL",4)~ GOTO SanMysSeekr3
 END
 
 IF~~ THEN BEGIN SanMysSeekr3
-SAY~(Smiles) I thank you for bringing some clarity into my own confused thoughts. Your theory at least aligns with all the facts we have found so far. There was a moment when I was misled to think that what happened to me where tests of my own abilities. Now I see clearer. Somehow my grandmother's agreement with AO seems to forbid that she adresses that woman to become Mystra herself.~
+SAY~(Smiles) I thank you for bringing some clarity into my own confused thoughts. Your theory at least aligns with all the facts we have found so far. There was a moment when I was misled to think that what happened to me where tests of my own abilities. Now I see clearer. Somehow my grandmother's agreement with AO seems to forbid that she addresses that woman to become Mystra herself.~
 IF~~THEN REPLY~So her trusted priestess and granddaughter needs to do that for her. What will you do?~ GOTO SanMysSeekr4
 IF~~THEN REPLY~So her trusted priestess and granddaughter needs to do that for her. Will you leave me then to follow your own quest or do you invite me come with you?~ GOTO SanMysSeekr4
 IF~~THEN REPLY~So her trusted priestess and granddaughter needs to do that for her. But how, as you have sworn to follow me and my quest already?~ GOTO SanMysSeekr4
@@ -2502,7 +2502,7 @@ IF~~THEN REPLY~*A* is not *K* - like in Khalindra. You always had your doubts th
 END
 
 IF~~THEN BEGIN GodagBG24
-SAY~Gorion laid out hints to your past for you in digestable bits. He may not have told you the whole truth about that woman in his letter back at Candlekeep, have you considered that?~
+SAY~Gorion laid out hints to your past for you in digestible bits. He may not have told you the whole truth about that woman in his letter back at Candlekeep, have you considered that?~
 IF~~THEN REPLY~Do you accuse Gorion of a lie now?~ GOTO GodagBG25
 IF~~THEN REPLY~If his letter were a lie he must have had his reason for it.~ GOTO GodagBG25
 END
@@ -2578,13 +2578,13 @@ END
 
 IF~~ THEN BEGIN SansaeFiTlk4
 SAY~You know that I love you, more than anything else and I stand by your side through thick and thin. But, please, I cannot be your counsellor in your relation to other women. You must decide and follow your heart alone.~
-IF~~THEN REPLY~You are right - I should never have brough the topic up. (You kiss her passionately.)~EXIT
+IF~~THEN REPLY~You are right - I should never have brought the topic up. (You kiss her passionately.)~EXIT
 IF~~THEN REPLY~ I love you, too. (You kiss her tenderly.)~EXIT
 IF~~THEN REPLY~ If any proof were required for your love you have just given it to me again, light of my life. (You embrace her and hide your face in her locks that smell of spring flowers today. She tenderly motions your head up so she can kiss you.)~EXIT
 END
 
 IF~~THEN BEGIN Marrysaer1
-SAY~ She seems to explode almost of pride and happiness. You must have fulfiled her deepest wish.~
+SAY~ She seems to explode almost of pride and happiness. You must have fulfilled her deepest wish.~
 IF~~THEN REPLY~ Eh, actually...not yet.~ DO~SetGlobal("SanSaerMarry","LOCALS",1) ~ GOTO Marrysaer2
 END
 
@@ -2607,7 +2607,7 @@ IF~~THEN REPLY~ At least your laughter shows that I have not hurt your feelings 
 END
 
 IF~~THEN BEGIN Marrysaer5
-SAY~You are right. I should not belittle your decision - actually I accept it like it is. If you are willing to pay her price there is nothing for me to critisize. My problem will be to find the right present for your great day - oh, and the right dress... (Another attack of laughter drowns her words.)~ 
+SAY~You are right. I should not belittle your decision - actually I accept it like it is. If you are willing to pay her price there is nothing for me to criticize. My problem will be to find the right present for your great day - oh, and the right dress... (Another attack of laughter drowns her words.)~ 
 IF~~THEN REPLY~Not every one can be as complicated as you are, my sweet seeker. Your goal was never marriage - maybe you do not even know yet what your own goal is.~ GOTO Marrysaer6
 IF~~THEN REPLY~ At least your laughter shows that I have not hurt your feelings with my decision.~ GOTO Marrysaer6
 END
@@ -2649,7 +2649,7 @@ END
 
 IF~~THEN BEGIN SanBedPid11
 SAY~My whole body craves for you, beloved. Let us get away from other eyes immediately, hmmm.~
-IF~~THEN REPLY~(You move her to a nearby place hidden from inquisite eyes...)~ DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+IF~~THEN REPLY~(You move her to a nearby place hidden from inquisitive eyes...)~ DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
 END
 
 IF~~THEN BEGIN SanBedPid12
@@ -2668,7 +2668,7 @@ IF~~THEN DO~ SetGlobal("SanTwrLo","GLOBAL",2) ClearAllActions() StartCutSceneMod
 END
 
 IF~~THEN BEGIN SanQuilBef1
-SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar is drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
+SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar is drow, but probably that is just anecdote because she became the High Priestess of Eilistraee, the Dark Maiden.~
 IF~~THEN REPLY~ I see. I thought by mistake that she may be more closely related to you.~ DO~ SetGlobal("SanIntEllesInt1","GLOBAL",2)  SetGlobal("SanIntEllesInt2","GLOBAL",2)~GOTO SanQuilBef2
 END
 
@@ -2680,7 +2680,7 @@ IF~~THEN REPLY~ You chose your heroines quite well and without restrictions to r
 END
 
 IF~~THEN BEGIN SanQuilBef11
-SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar was drow, but probably that is just annecdote because she became the High Priestess of Elistraee, the Dark Maiden.~
+SAY~ Qilue Veladorn, or Eresseae Qilue Silverhand, is the youngest of the Seven Sisters, a daughter of an earlier incarnation of Mystra herself. Some legends have it that her mortal avatar was drow, but probably that is just anecdote because she became the High Priestess of Eilistraee, the Dark Maiden.~
 IF~~THEN REPLY~ I see. That means that your mother as well was a descendant of Mystra, not only your father.~ DO~ SetGlobal("SanIntEllesInt1","GLOBAL",2)  SetGlobal("SanIntEllesInt2","GLOBAL",2)~GOTO SanQuilBef2
 END
 
@@ -2690,7 +2690,7 @@ IF~~THEN REPLY~ (You move up to her and your naked skin is attracted by her gown
 END
 
 IF~~ THEN BEGIN SanTowrLo2
-SAY~ (She slowly sinks to her knees pulling you down with her. You find your head directly beween her soft breasts and only need to open your lips to grasps a protruding nipple and feel the arousal in both of your bodies building up higher...)~
+SAY~ (She slowly sinks to her knees pulling you down with her. You find your head directly between her soft breasts and only need to open your lips to grasps a protruding nipple and feel the arousal in both of your bodies building up higher...)~
 IF~~THEN REPLY~ ....~  GOTO SanTowrLo3
 END
 
@@ -2721,12 +2721,12 @@ END
 
 IF~~ THEN BEGIN SanTowrLo13
 SAY~ (You feel her silken fur against your stomach as you jump with your forelegs onto her delicate back.) ~
-IF~~THEN REPLY~ (Your strong hindlegs move rhymically as you penetrate her without hinderance or hesitation.)~ GOTO SanTowrLo14
+IF~~THEN REPLY~ (Your strong hind legs move rhythmical as you penetrate her without hindrance or hesitation.)~ GOTO SanTowrLo14
 END
 
 IF~~ THEN BEGIN SanTowrLo14
-SAY~ (A small snortlike sound is all you receive from her but that is enough to indicate that you give her exactly what she needs.)~
-IF~~THEN REPLY~ (The violence of your climax lets your animal body shudder and you glide exausted from her back.)~ GOTO SanTowrLo15
+SAY~ (A small snort like sound is all you receive from her but that is enough to indicate that you give her exactly what she needs.)~
+IF~~THEN REPLY~ (The violence of your climax lets your animal body shudder and you glide exhausted from her back.)~ GOTO SanTowrLo15
 END
 
 IF~~ THEN BEGIN SanTowrLo15
@@ -2747,14 +2747,14 @@ IF~~THEN REPLY~ Please let me know your findings.~ DO~ SetGlobal("SanKhalBlood",
 END
 
 IF~~THEN BEGIN FindSRBook23
-SAY~ It is written here, that each Amaunator temple had an area only accesible to the priests that was called *The archive*. Sounds like a place were records and such are kept, does it not?~
+SAY~ It is written here, that each Amaunator temple had an area only accessible to the priests that was called *The archive*. Sounds like a place were records and such are kept, does it not?~
 IF~Global("CVAR1402","GLOBAL",1)~THEN REPLY~ Good and bad news, I guess. The one in the Umar Temple probably was destroyed by the Shadow Dragon. His lair would have been that archive before he moved in violently.~ GOTO FindSRBook24
 IF ~~THEN REPLY~Amaunator's temples are only ruins nowadays...~ GOTO FindSRBook24
 END
 
 IF~~THEN BEGIN FindSRBook24
 SAY~ Again you probably are right, my lovely genius, please go on.~
-IF~~THEN REPLY~ The temple below Athkatla was more or less intact, even if the worshipers of the forgotten god had no idea what they were preserving. Unless there is another temple that we have not even found yet I would propose to give this one a try.~ GOTO FindSRBook25
+IF~~THEN REPLY~ The temple below Athkatla was more or less intact, even if the worshippers of the forgotten god had no idea what they were preserving. Unless there is another temple that we have not even found yet I would propose to give this one a try.~ GOTO FindSRBook25
 IF~~THEN REPLY~ The only alternative we know so far is below Athkatla, but we have explored that one already. Either we need to look again with our current knowledge of what might be there or it is in another temple that we have not even found yet.~ GOTO FindSRBook25
 IF~~THEN REPLY~ The one below Athkatla holds no secrets for us any more, so - dead end until we find another installation during our travels.~ GOTO FindSRBook25
 END
@@ -2800,14 +2800,14 @@ IF~~THEN REPLY~ But still her bloodline is one of most ancient on the primary pl
 END
 
 IF~~THEN BEGIN SanHeriMyst6
-SAY~ Oh, my, silly. Even if Qilue Veladorn really was drow - which I doubt - it would be almost onehundred and ten generations between her and me. I have as much elvish or orc blood within me than drow, which is about the same mixture you will find in any of us if you just take enough generations into account.~
+SAY~ Oh, my, silly. Even if Qilue Veladorn really was drow - which I doubt - it would be almost one hundred and ten generations between her and me. I have as much elvish or orc blood within me than drow, which is about the same mixture you will find in any of us if you just take enough generations into account.~
 =~ But jokes aside, I have to accept that I descended from Mystra both through my father and my mother.~
 IF~~THEN REPLY~ This is the first part of what we learned. I propose to continue another time to deal with the consequences this has when we add the rest of our findings to it.~ DO~SetGlobal("SanKhalBlood","GLOBAL",13)~ EXIT
 IF~~THEN REPLY~ This is the first part of what we learned. Now let us look at the consequences this has when we add the rest of our findings to it.~ DO~SetGlobal("SanKhalBlood","GLOBAL",14)~ GOTO SanHeriMyst7
 END
 
 IF~~THEN BEGIN SanHeriMyst7
-SAY~ This is when I asked the Book about the other decendents of Mystra in my belief that I was the one assigned to find the successor of Midnight in her role as Goddess of All Magic.~
+SAY~ This is when I asked the Book about the other descendent of Mystra in my belief that I was the one assigned to find the successor of Midnight in her role as Goddess of All Magic.~
 IF~~THEN REPLY~ Well you found her, didn't you?~ GOTO SanHeriMyst8
 END
 
@@ -2847,7 +2847,7 @@ IF~~THEN REPLY~ When Khalindra died at the Bhaalspawn's birth - my birth, the po
 END
 
 IF~~THEN BEGIN SanHeriMyst14
-SAY~(She hesitates for a moment.) I know you will understand my next words correctly as an innocent baby cannot be blamed for its father's cunning plan. With insaminating Khalindra Bhaal not only prevented the birth of further children from her line - he also placed the killer for the last remaining one right into the same cradle.~
+SAY~(She hesitates for a moment.) I know you will understand my next words correctly as an innocent baby cannot be blamed for its father's cunning plan. With inseminating Khalindra Bhaal not only prevented the birth of further children from her line - he also placed the killer for the last remaining one right into the same cradle.~
 IF~~THEN REPLY~ You are mad! The second child was to be your killer?...oh, Sandrah...No, you are not mad, it's Bhaal who is wicked beyond human reasoning.~ GOTO SanHeriMyst17
 IF~~THEN REPLY~ You are mad! I was to be your killer?...oh, Sandrah...No, you are not mad, it's Bhaal who is wicked beyond human reasoning.~ GOTO SanHeriMyst16
 IF~~THEN REPLY~ The wolf grows up beside the lamb until one day the wolf gets the lust for meat...~GOTO SanHeriMyst15
@@ -2881,7 +2881,7 @@ END
 
 IF~~THEN BEGIN SharkTru3
 SAY~ The legend is old and Szass Tam is one who has studied every piece of information about necromancy, prolonging ones existence and other related issues thoroughly. I would be astonished if he had not come across the legend at one time or other. You know well that I myself do not believe in it - and Szass Tam has found that out himself, provided he ever believed in it himself...~
-IF~~THEN REPLY~ Ha, but he found a good use for it with superstitous orcs that would freely deliver him *material* right to his doorstep.~GOTO SharkTru5
+IF~~THEN REPLY~ Ha, but he found a good use for it with superstitious orcs that would freely deliver him *material* right to his doorstep.~GOTO SharkTru5
 END
 
 IF~~THEN BEGIN SharkTru5
@@ -2897,12 +2897,12 @@ END
 
 IF~~THEN BEGIN SharkTru7
 SAY~ I will tell you about it when we come to the pool again. It is nothing supernatural or faked, just the knowledge every potent healer should have.~
-IF~~THEN REPLY~ Fine. I have learned from you that everything will be reveiled in due time. So what about the legend that is so old and widespread?~GOTO SharkTru8
+IF~~THEN REPLY~ Fine. I have learned from you that everything will be revealed in due time. So what about the legend that is so old and widespread?~GOTO SharkTru8
 END
 
 IF~~THEN BEGIN SharkTru8
 SAY~ The legend is old and Szass Tam is one who has studied every piece of information about necromancy, prolonging ones existence and other related issues thoroughly. I would be astonished if he had not come across the legend at one time or other. You know well that I myself do not believe in it - and Szass Tam has found that out himself, provided he ever believed in it himself...~
-IF~~THEN REPLY~ Ha, but he found a good use for it with superstitous orcs that would freely deliver him *material* right to his doorstep.~GOTO SharkTru10
+IF~~THEN REPLY~ Ha, but he found a good use for it with superstitious orcs that would freely deliver him *material* right to his doorstep.~GOTO SharkTru10
 END
 
 IF~~THEN BEGIN SharkTru10
@@ -2911,7 +2911,7 @@ IF~~THEN REPLY~The factory is a perpetuum mobile, a thing I read about in Candle
 END
 
 IF~~THEN BEGIN SharkTru6
-SAY~Unless someone disrups this vicious circle.~
+SAY~Unless someone disrupts this vicious circle.~
 IF~~THEN REPLY~We know well who that someone is.~EXIT
 IF~GlobalLT("SanSharkTru","LOCALS",2)~THEN REPLY~ But what about Shauhana's healing?~ GOTO SharkTru11
 END
@@ -2923,7 +2923,7 @@ END
 
 IF~~THEN BEGIN SharkTru12
 SAY~ I will tell you about it when we come to the pool again. It is nothing supernatural or faked, just the knowledge every potent healer should have.~
-IF~~THEN REPLY~ Fine. I have learned from you that everything will be reveiled in due time. ~EXIT
+IF~~THEN REPLY~ Fine. I have learned from you that everything will be revealed in due time. ~EXIT
 END
 
 IF~ Global("PoolHealT","CVSHA7",1) ~ THEN BEGIN PoolTalk1
@@ -2934,7 +2934,7 @@ END
 
 IF~~THEN BEGIN PoolTalk2
 SAY~ The legend is old and Szass Tam is one who has studied every piece of information about necromancy, prolonging ones existence and other related issues thoroughly. I would be astonished if he had not come across the legend at one time or other. You know well that I myself do not believe in it - and Szass Tam has found that out himself, provided he ever believed in it himself...~
-IF~~THEN REPLY~ Ha, but he found a good use for it with superstitous orcs that would freely deliver him *material* right to his doorstep.~GOTO PoolTalk3
+IF~~THEN REPLY~ Ha, but he found a good use for it with superstitious orcs that would freely deliver him *material* right to his doorstep.~GOTO PoolTalk3
 END
 
 IF~~THEN BEGIN PoolTalk3
@@ -2944,7 +2944,7 @@ IF~~THEN REPLY~But what about Shauhana's healing?~ GOTO PoolTalk5
 END
 
 IF~~THEN BEGIN PoolTalk4
-SAY~Unless someone dirsrups this vicious circle.~
+SAY~Unless someone disrupts this vicious circle.~
 IF~~THEN REPLY~We know well who that someone is.~GOTO PoolTalk8
 IF~GlobalLT("SanSharkTru","LOCALS",2)~THEN REPLY~ But what about Shauhana's healing?~ GOTO PoolTalk5
 END
