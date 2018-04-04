@@ -4,17 +4,17 @@ CHAIN
 IF ~ NumTimesTalkedTo(0) ~ THEN RELLRUK Rell1
 ~ Rellruk has knowed. Red Head would come and find!~
 == Bimoen ~ Red Head comes and finds and kills nasty orc boss, ha! Gotcha! If you were a cleverest orc and you knowed I was coming, you'd better had my Henning here to give me.~
-== RELLRUK ~ Boss Knawlod boss for more orcs. He keep man. Bring to Daevorn.~
-== Bimoen ~ Good of boss Knawlod  'cause you wanted to kill my sweetheart. But I am gonna slice you up now, slowly and slowlier, so you can feel any tiny bit of pain, you..you..you ORC!~
+== RELLRUK ~ Boss Knowlod boss for more orcs. He keep man. Bring to Davaeorn.~
+== Bimoen ~ Good of boss Knowlod  'cause you wanted to kill my sweetheart. But I am gonna slice you up now, slowly and slowlier, so you can feel any tiny bit of pain, you..you..you ORC!~
 END
 ++ ~ (Bluff) Hold on for a second, Imoen, let us torture this orc a bit, so he can give us information about this Devern or Daeworn guy. I promise, Imoen you can do all you want with him, just do not kill him too early. ~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ Rell2
-++ ~ So Daevorn is the one behind this kidnapping. What else do you know? Speak and we may hold back Red Head for a minute so you can run.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+Rell2
+++ ~ So Davaeorn is the one behind this kidnapping. What else do you know? Speak and we may hold back Red Head for a minute so you can run.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+Rell2
 
 CHAIN
 IF ~~ THEN RELLRUK Rell2
-~ Ha, idiots. You torture orc. Be orc is one torture all life. Scare me nothing. If Rellruk or Knawlod know where Daevorn we all go there and no fight. ~
-== BSANDR ~ But you were to deliver the man to Daeworn, right, so you must know where to find him? ~
-==RELLRUK ~ Knawlod think he clever, can find Cloakwood Mine without Tazok. But only Tazok know way. Knawlod too much greedy, want not share.~
+~ Ha, idiots. You torture orc. Be orc is one torture all life. Scare me nothing. If Rellruk or Knowlod know where Davaeorn we all go there and no fight. ~
+== BSANDR ~ But you were to deliver the man to Davaeorn, right, so you must know where to find him? ~
+==RELLRUK ~ Knowlod think he clever, can find Cloakwood Mine without Tazok. But only Tazok know way. Knowlod too much greedy, want not share.~
 END
 ++ ~ At least we have a name now, we already know. The row of man behind man seems to be endless.~ + Rell3
 
