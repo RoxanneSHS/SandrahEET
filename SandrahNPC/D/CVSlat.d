@@ -15,7 +15,7 @@ DO~ SetGlobal("Surrender","LOCALS",3)~
 ==CVSandrJ~ I hate the slavers and the red wizards like nothing else on the face of Toril and I am more than ready to strike her down with my hammer right here, paladin, if she really is guilty. At the moment she is just an unarmed woman begging for our mercy.~
 ==CVSlat~Lady, please hold back your paladin...I am a thief and they hired me to open the houses they showed me at night for them - I had little idea what they did inside, I mean that they killed parents and stole their children, until yesterday.~
 ==CVSandrJ~ Go on.~
-==CVSlat~Merdoth, the red wizard leading the operation decided to take me with them claiming that I knew too much and could give the authorities the clues they needed to persue them. They took me to the outskirts of town where I first saw the caravan of all those enslaved children. But I was now their prisoner myself, Merdoth would not let me go.~
+==CVSlat~Merdoth, the red wizard leading the operation decided to take me with them claiming that I knew too much and could give the authorities the clues they needed to pursue them. They took me to the outskirts of town where I first saw the caravan of all those enslaved children. But I was now their prisoner myself, Merdoth would not let me go.~
 ==BKeldor IF~InParty("Keldorn")~THEN~ You put on quite some fight against us. Now that you are defeated you come up with that story  to save your dirty hide.~
 ==Banomen IF~InParty("Anomen")~THEN~ You put on quite some fight against us. Now that you are defeated you come up with that story  to save your dirty hide.~
 ==CVSlat~But what could I do when you found us and the fight broke out. There was no other chance than to fight for my live as long as Merdoth was alive.~
@@ -54,7 +54,7 @@ IF~Global("SanQuedPris","GLOBAL",3)~ THEN CVSlat2 NeverGiveUp
 ~Your highness, save me from my capturers, I am a lawful citizen of Athkatla, protect me!~
 DO~SetGlobal("SanQuedPris","GLOBAL",4)~
 ==HABrega~What is this about? Where do you come from all of a sudden?~
-==CVSlat2~(She points at Sandrah) This witch has confined me in a remote prison with her evil spell!! I have been kidnapped and robbed...(She bursts into tears on the High Commisioner's breast.)~
+==CVSlat2~(She points at Sandrah) This witch has confined me in a remote prison with her evil spell!! I have been kidnapped and robbed...(She bursts into tears on the High Commissioner's breast.)~
 ==BKeldor IF~InParty("Keldorn")~THEN~ There you have your justice, Sandrah. You trust a thief and that's what you get. We should have followed my advice.~
 ==Banomen IF~InParty("Anomen")~THEN~ There you have your justice, Sandrah. You trust a thief and that's what you get. We should have followed my advice.~
 ==CVSandrJ IF~InParty("Keldorn")~THEN~ Oh, this is just a last straw attempt of her to escape justice. I guess we can clear that misunderstanding in no time, Keldorn.~

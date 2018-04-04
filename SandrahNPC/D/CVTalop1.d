@@ -3,7 +3,7 @@ BEGIN CVTalop1
 
 IF~Global("TalosKnow","CVElm6",1)~THEN BEGIN WDLive1
 SAY~Talos knows where you live, <CHARNAME>.~
-IF~~THEN REPLY~ Neither Talos nor any of his brigants will ever enter my home. Take that message to your temple, fiend.~DO~SetGlobal("TalosKnow","CVElm6",2)~GOTO WDLive2
+IF~~THEN REPLY~ Neither Talos nor any of his brigands will ever enter my home. Take that message to your temple, fiend.~DO~SetGlobal("TalosKnow","CVElm6",2)~GOTO WDLive2
 IF~~THEN REPLY~ Who are you?~ DO~SetGlobal("TalosKnow","CVElm6",2)~GOTO WDLive2
 END
 
@@ -42,7 +42,7 @@ DO~SetGlobal("SantalosDec","GLOBAL",11)~
 == CVTalos~ I have received reports about your impertinence, Sandrah of Waterdeep, priestess of haha Mystra. You will soon see who I am.~
 ==CVSandrJ~Do you accuse us of anything specific, Lord of Destruction, or is it just that we rather repair where you try to destroy?~
 == CVTalos~Is that not enough already if done on a grand scale like you attempt to do?~
-=~Still - the <PRO_RACE> who leads you has a heritage that allows for hope to find the right way if not counselled anymore by the stupid granddaughter of a doomed goddess.~
+=~Still - the <PRO_RACE> who leads you has a heritage that allows for hope to find the right way if not counselled any more by the stupid granddaughter of a doomed goddess.~
 ==CVSandrJ~And you have come in person to show the *right way* and make use of the chaos you anticipate to follow in its wake?~
 == CVTalos~A perspective too beautiful to be ignored - you have a clear mind, priestess. With that it should be obvious to you that YOU are in the way to let <CHARNAME> become a great player in the story of the Sword Coast.~
 ==CVSandrJ~Only if your version of the script would be alluring, otherwise I am only in YOUR way, Talos.~
@@ -73,7 +73,7 @@ CHAIN
 IF~Global("SanBHTalos","GLOBAL",4)~THEN CVTalos AdaSteal
 ~Congratulations, my dear priestess. You and the Bhaalspawn never miss a chance to cross the Storm Lord's path!~
 ==CVSandrJ~Another of your little intrigues has been destroyed. I am *glad* we have added once again to the Storm Lord's amusement.~
-==CVTalos~You got that right, girl. You amuse me. I care little about the outcome of my schemings - and the bloodshed your party has caused among those scaly beasts is as much a pleasure for me than any other result of this plot.~
+==CVTalos~You got that right, girl. You amuse me. I care little about the outcome of my scheming - and the bloodshed your party has caused among those scaly beasts is as much a pleasure for me than any other result of this plot.~
 ==CVSandrJ~We care as little about that as you do. But we care about the fishermen we have helped.~
 ==CVTalos~Hihihi, a nice girl like you deserves a present for your good deeds...~
 DO~SetGlobal("SanBHTalos","GLOBAL",5) Enemy() ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS) ReallyForceSpell(Myself,CLERIC_IRONSKIN)~ EXIT
@@ -92,7 +92,7 @@ CHAIN
 IF~Global("SanNWTalV","GLOBAL",5)~ THEN CVTalos Talossare
 ~Congratulations, dumb fools!! Round one clearly goes to you. The chaos foreseen for the Sword Coast will only be a limited one due to your interventions.~
 ==CVSandrJ~You were not in league with the forces acting, do not try to fool us, Talos.~
-== CVTalos~Can you be so sure of that, little priestess. So many have by now found <CHARNAME> to be an intersting actor on the prime plane...~
+== CVTalos~Can you be so sure of that, little priestess. So many have by now found <CHARNAME> to be an interesting actor on the prime plane...~
 ==CVSandrJ~Just in case you plan to manipulate <CHARNAME> in the future, Storm Lord, be warned. You will have to face a strong opposition.~
 == CVTalos~Hihihi, opposition from you and your playground goddess??? A very interesting challenge. I can hardly await the next round to begin...hihihi...~
 DO~SetGlobal("SanNWTalV","GLOBAL",6) Enemy() ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS) ReallyForceSpell(Myself,CLERIC_IRONSKIN)~ EXIT
@@ -110,10 +110,10 @@ IF~Global("SantalosDec","GLOBAL",20)~THEN CVTalos AdaSteal
 ~Congratulations, my dear. You never miss a chance to cross the Storm Lord's path!~
 DO~SetGlobal("SantalosDec","GLOBAL",21)~
 ==CVSandrJ~This time the situation may be quite amusing for you, Talos, even if we had to steal a little useless nothing from your Storm Mistress Ada.~
-== CVTalos~ Ah - your little theft is irrelevant and serves that fool well if she cannot guard her valuables any better. But, oh, the disrespect it reveils for the god she serves!~
+== CVTalos~ Ah - your little theft is irrelevant and serves that fool well if she cannot guard her valuables any better. But, oh, the disrespect it reveals for the god she serves!~
 ==CVSandrJ~Then know that the revenge on the one who ordered the theft is already looming over his unknowing head. The intrigue just started will be Mae'Var's downfall in the end including a bit of bloodshed on his guild.~
 == CVTalos~ Hihi, you were right, Sandrah. The intrigue and the chaos sown already amuses me.~
-=~May it be that Mystra's grandchild cannot fully deny another of her anchestor's? Maybe that unmentionable grandpa, hihihi...~ DO~ ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
+=~May it be that Mystra's grandchild cannot fully deny another of her ancestor's? Maybe that unmentionable grandpa, hihihi...~ DO~ ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT
 
 
 
@@ -122,7 +122,7 @@ IF~Global("Talosangr","BG1200",2) ~THEN CVTalop1 Waterq1
 ~ You have angered the Storm Lord before and you do it again, foolish heathens.~
 DO~SetGlobal("Talosangr","BG1200",3) ~
 ==CVSandrJ~ Your master must have a good network, priest. It did not take you long to detect that we help where he seeks to seed destruction.~
-==CVTalop1~ Ha, a silly baby priestess of Mystra - don't interfere in matters too big for you or your weak goddess. Stay out of his ways is what the Storm Lord demands or you will vanish in his turmoils without a trace.~
+==CVTalop1~ Ha, a silly baby priestess of Mystra - don't interfere in matters too big for you or your weak goddess. Stay out of his ways is what the Storm Lord demands or you will vanish in his turmoil without a trace.~
 ==CVSandrJ~ Neither my goddess nor her priestess will retreat from the threats of the Lord of Destruction, so much should even be clear to one whose mind is *fogged* and *frozen* by the god he follows.~
 ==CVTalop1~ Some just need to learn their lessons the hard way, it seems.~ DO~ Enemy() ~EXIT
 
@@ -139,7 +139,7 @@ DO~SetGlobal("Mecorima","ars002",5) ~
 ==CVTalop1~Shut up, girl, let your leader speak now.~
 END
 ++~ We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. Take it, priest.~ DO~SetGlobal("Mecorima","ars002",5) ~ EXIT
-++~ I agree with my counselor, you have murdered and stolen once before for this item already, your intention now is not to be trusted.~ DO~ SetGlobal("Mecorima","ars002",6) ~EXIT
+++~ I agree with my counsellor, you have murdered and stolen once before for this item already, your intention now is not to be trusted.~ DO~ SetGlobal("Mecorima","ars002",6) ~EXIT
 ++~We don't have what you ask for, priest. We left the booty on some slain *brothers* of yours not far from here. Pick it up there or just decide you want to join their fate.~ DO~ SetGlobal("Mecorima","ars002",6) ~EXIT
 ++~ What you search is with some dead brothers of your faith a bit to the south of here. Just let us pass, we have nothing to do with you.~ DO~SetGlobal("Mecorima","ars002",5) ~ EXIT
 
@@ -149,7 +149,7 @@ IF~Global("SantalosDec","GLOBAL",2)~ THEN CVTalop1 IslVis1
 DO~SetGlobal("SantalosDec2","ar9pba",1)~
 ==CVSandrJ~Always a pleasure to meet Talos' disciples. It is  a good training for me and my friends to fight your stupid hordes time and time again.~
 ==CVTalop1~You have underestimated and angered the Lord of Destruction before. You were idiotic enough to come out here where Umberlee and Talos are strong and the servant of the Weave is weak.~
-==CVSandrJ~Mystra is as strong out here as are those who follow her. Before you go on threatening us endlessly tell us if your visit has any purpose other than to receive a bloody nose for you and your croonies?~
+==CVSandrJ~Mystra is as strong out here as are those who follow her. Before you go on threatening us endlessly tell us if your visit has any purpose other than to receive a bloody nose for you and your cronies?~
 ==CVTalop1~The Storm Lord wants only you, Sandrah, priestess of Mystra. Your companions are free to go unmolested.~
 END
 ++~(Stay silent and let Sandrah handle the case.)~+ IslVis2
@@ -161,7 +161,7 @@ IF~~ THEN CVTalop1 IslVis2
 ~Your whole course of action is crossing Talos' plans again and again, Sandrah.~
 ==CVSandrJ~You make me laugh, priest. We do what anyone who follows a righteous path would do. If followers of your god are the ones who oppose us it is at their own peril. We do not actively seek the fight with Talos. ~
 ==CVTalop1~This is as much of a confession as was needed!! You have heard it all. We will take you to Talos' temple to pay for it to our Lord.~
-=~Your companions may repent and go free once their 'counselor' is out of the way. After a bit of compensation is payed, that is.~
+=~Your companions may repent and go free once their 'counsellor' is out of the way. After a bit of compensation is paid, that is.~
 ==CVSandrJ~What does that mean?~
 ==CVTalop1~<CHARNAME>, you will pay 20000 gold to the treasure of the Storm Lord's temple and hand over Sandrah to us. Otherwise none of you will ever leave this island and you will perish with her under the wrath of Talos.~
 END
@@ -185,13 +185,13 @@ IF~Global("SanTalWar","GLOBAL",2)~THEN CVTalos Adakill
 ~So once again, my dear. You never miss a chance to cross the Storm Lord's path! But open aggression - you have to admit you overstepped the possible line of what I can accept from Mystra's minions.~
 DO~SetGlobal("SanTalWar","GLOBAL",3)~
 ==CVSandrJ~Laughable excuse, Lord of Destruction, you let your temple plan an assault on Lathander while you were quite aware of <CHARNAME>'s involvement with them.~
-==CVTalos~Clever advocat, YOU have to admit that you used murder first, hihi.~
+==CVTalos~Clever advocate, YOU have to admit that you used murder first, hihi.~
 ==CVSandrJ~Prevention, just like you could have foreseen. You let your lambs been slaughtered blindly.~
 ==CVTalos~We Gods are not to interfere with the actions of the mortals...~
 ==CVSandrJ~A rule you bend and use or misuse just like it pleases you.~
 ==CVTalos~YOU are not one to issue accusations, my dear little agent. Yes, an agent of Mystra you are rather than a priestess. You work for her just like you chose and you play your own game - with her knowledge - just like it suits you. And then you dare to talk about the bending of rules, hahaha.~
 ==CVSandrJ~If that is how you feel, Talos, raise the case in your celestial circles but do not appear before us as judge for your own case.~
-==CVTalos~Hihihi, mortals, a judge? Not at all. I will be a kind teacher to you. I'll show my childeren my kindness and care by administering a punishment for them to contemplate and learn from.~
+==CVTalos~Hihihi, mortals, a judge? Not at all. I will be a kind teacher to you. I'll show my children my kindness and care by administering a punishment for them to contemplate and learn from.~
 ==CVTalos IF~DifficultyGT(NORMAL)~THEN~My anger is growing - the Storm is approaching.~ DO~ StartCutSceneMode() Wait(2) ScreenShake([577.451],20) ApplyDamagePercent(Player1,49,CRUSHING) Wait(2) ApplyDamagePercent(Player2,49,CRUSHING) Wait(2) ApplyDamagePercent(Player3,49,CRUSHING) Wait(2) ApplyDamagePercent(Player4,49,CRUSHING) Wait(2) ApplyDamagePercent(Player5,49,CRUSHING) Wait(2) ApplyDamagePercent(Player6,49,CRUSHING) Wait(2) EndCutSceneMode()~
 ==CVTalos IF~DifficultyLT(HARD)~THEN~My anger is growing - the Storm is approaching.~ DO~ StartCutSceneMode() Wait(2) ScreenShake([577.451],20) ApplyDamagePercent(Player1,70,CRUSHING) Wait(2) ApplyDamagePercent(Player2,70,CRUSHING) Wait(2) ApplyDamagePercent(Player3,70,CRUSHING) Wait(2) ApplyDamagePercent(Player4,70,CRUSHING) Wait(2) ApplyDamagePercent(Player5,70,CRUSHING) Wait(2) ApplyDamagePercent(Player6,70,CRUSHING) Wait(2) EndCutSceneMode()~EXIT
 
@@ -208,7 +208,7 @@ DO~SetGlobal("Umberbowl","GLOBAL",4)~
 ==CVTalop1~Shut up, girl, let your leader speak now.~
 END
 ++~We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. ~ + Tenya2
-++~I agree with my counselor, you were the ones to violate the laws of the prime and the gods.~  + Tenya3
+++~I agree with my counsellor, you were the ones to violate the laws of the prime and the gods.~  + Tenya3
 ++~We will hear first what this priestess' child up north has to say to this case.~ + Tenya4
 
 CHAIN
