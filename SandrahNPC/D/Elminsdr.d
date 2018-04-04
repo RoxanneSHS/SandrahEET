@@ -13,7 +13,7 @@ IF ~ Global("Mothdream1","GLOBAL",2) ~ THEN  Elminsdr MothDream
 == Sanpre2 ~ I know, father. He killed your beloved wife from beyond his own grave by implanting the spawn in her and he grieves you ever since that day.~
 ==  Elminsdr ~ Not all is bad, Sandrah, when I look at thee I see it every time. And I see her - thou becometh more like her with every day you grow. Her, whom thou have not really known...~
 == Sanpre2 ~ Come now, father, we will eat. Will you tell me of the other one today, the one that caused her end while still being innocent?~
-==  Elminsdr ~ Is that how thou see the spawn, are thou so wise not to blame the newborne for its heritage? 'tis thine belief that one sprung from the God of Murder is not guilty himself from the day of birth?~
+==  Elminsdr ~ Is that how thou see the spawn, are thou so wise not to blame the newborn for its heritage? 'tis thine belief that one sprung from the God of Murder is not guilty himself from the day of birth?~
 == Sanpre2 ~ That is what I learned from you and I have no reason to doubt it.~ DO~ EscapeArea()~
 ==  Elminsdr ~ Good. Whatever comes out of that belief, who knows. (Turns to the painting:) Good night, Khalindra.~ DO ~ SetGlobal("Mothdream1","GLOBAL",3) EscapeArea() ~
 EXIT
@@ -30,7 +30,7 @@ IF ~ Global("Mothdream2","GLOBAL",2) ~ THEN  Elminsdr MothDream2
 ==  Elminsdr ~ Thou dost well to show pity and mercy, dear Sandrah, the child itself is without blame. It had no say in its own creation and heritage, yet it carries the seed of the black blood further.~
 == Sanpre2 ~ Then it is innocent and not bad by heritage alone?~
 ==  Elminsdr ~ Thou art correct in thine assumption. The child is master of its own fate and its way - good or bad. But many of those who find out about its blood will be prejudiced and will by this feed the black seed to evolve.~ 
-== Sanpre2 ~ It is not a child anymore, by now it will be just one year younger than me...~ DO ~ EscapeArea()~
+== Sanpre2 ~ It is not a child any more, by now it will be just one year younger than me...~ DO ~ EscapeArea()~
 ==  Elminsdr ~ Oh, Khalindra, thine daughter is ready to go her own way soon. I pray to thee, I have done all to prepare our poor girl for what awaits her. ~  DO ~ SetGlobal("Mothdream2","GLOBAL",3) EscapeArea()~
 EXIT
 

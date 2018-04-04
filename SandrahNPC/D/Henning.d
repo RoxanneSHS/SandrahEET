@@ -63,7 +63,7 @@ DestroyItem("MISC01")
 END
 
 IF~~ NK1c
-SAY ~ Did you accomplish that, mylady?~
+SAY ~ Did you accomplish that, milady?~
 IF ~~ THEN EXTERN HENNING ForImo2
 END
 
@@ -114,15 +114,15 @@ END
 
 CHAIN
 IF~ Global("Nashtalk","LOCALS",0) ~ THEN HENNING ForImo1
-~ Excuse me, mylady, would you mind to come a bit aside with me for a personal question? ~
+~ Excuse me, milady, would you mind to come a bit aside with me for a personal question? ~
 =~ This is not my usual attitude, mylady, please believe me, but your lively red-headed friend...~
 DO ~ SetGlobal("ImoNashSK","GLOBAL",1)SetGlobal("Nashtalk","LOCALS",1)~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Ah, you mean Imoen!~
 == HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Imoen is her name - Imoen - Eh, what I wanted to ask you, please excuse me for my directness. But is Imoen, I mean is she...(Blushes deep red)~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ She has no steady boyfriend at the moment.~
-== HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Thank you for your understanding, mylady, that is exactly what I wanted to ask you...My name, by the way, is Henning.~
+== HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Thank you for your understanding, milady, that is exactly what I wanted to ask you...My name, by the way, is Henning.~
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Imoen, my friend, please come over here for a moment, will you. Fine. Let me introduce you then, Henning of Nashkel, this is Imoen of Candlekeep.~
-== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Heya, Henning, nice to meet ya, quite a nice shop ya got yourself here. Say, I desperately am searchin' for some pink garnments...~
+== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Heya, Henning, nice to meet ya, quite a nice shop ya got yourself here. Say, I desperately am searchin' for some pink garments...~
 == HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Oh, lady Imoen, yes...pink..this way please, let me show you...~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
@@ -130,9 +130,9 @@ IF~ Global("SanImoNashInt","GLOBAL",4)~ THEN HENNING ForImo2
 ~ You are a true admirable heroine!~
 == BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Heya, Henning, quite some of these nasty beasts out there. But no match for Imoen and her sidekicks.~
 == HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Imoen, I am so glad you return without hurt. I need to think all the time about the dangers you may encounter.~
-== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Ha, don't wet your pants about us. We can handle much more than just a few winterwolves, right on. Say, how's business. Any perils from those Nashkel housewifes that come in here frequently?~
-== HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Other women? Oh yes they come and go, but everytime that door opens, I just hope it might be you.~
-== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Oooh, how romantic. Betcha can't think what I got for ya. (Imoen rumages in her backpack for quite a while until she finds some badly battered dried pink berries.) Hey, let's just sit out into the sun and munch these sweeties together, watcha think.~ DO ~ SetGlobal("SanImoNashInt","GLOBAL",5) AddJournalEntry(@932,QUEST)~EXIT
+== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Ha, don't wet your pants about us. We can handle much more than just a few winter wolves, right on. Say, how's business. Any perils from those Nashkel housewives that come in here frequently?~
+== HENNING IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Other women? Oh yes they come and go, but every time that door opens, I just hope it might be you.~
+== BIMOEN  IF ~ InParty("CVSandr") InParty("Imoen2") ~ THEN ~ Oooh, how romantic. Betcha can't think what I got for ya. (Imoen rummages in her backpack for quite a while until she finds some badly battered dried pink berries.) Hey, let's just sit out into the sun and munch these sweeties together, watcha think.~ DO ~ SetGlobal("SanImoNashInt","GLOBAL",5) AddJournalEntry(@932,QUEST)~EXIT
 
 CHAIN
 IF WEIGHT #-999 ~ Global("SanImoNashInt","GLOBAL",7)InParty("Imoen2") InParty("CVSandr") ~ THEN HENNING ImoFurC
@@ -150,11 +150,11 @@ CHAIN
 IF WEIGHT #-999~ Global("SanImoNashInt","GLOBAL",10)InParty("Imoen2") InParty("CVSandr") ~ THEN HENNING ImoFur2
  ~ IMOEN! My, how beautiful you are, my darling, this coat really brings out all your natural beauty to shine!~
  DO ~ SetGlobal("SanImoNashInt","GLOBAL",11)~
- == BIMOEN ~ Henning, my sweetest dreamboy, I love it so much and much. And I love you so much more. It must have cost you a fortune, but it is worth it every bit of coin. Now listen...(tells Henning about the shop ideas, she has developped with Sandrah.]~
+ == BIMOEN ~ Henning, my sweetest dreamboy, I love it so much and much. And I love you so much more. It must have cost you a fortune, but it is worth it every bit of coin. Now listen...(tells Henning about the shop ideas, she has developed with Sandrah.]~
 == HENNING ~ Now, Imoen, all of that would be much easier for both of us if you were here with me, but...~
  == BIMOEN ~ But what? I thought you loved me to be your adventuring heroine with loads of tales to tell when I come ...home?~
 == HENNING ~ Yes, yes, yes. Of course. You are not one to be kept behind the counter of a small but wealthy shop. And did you just say *home* to our little nest here?~
- == BIMOEN ~ Did I? Mmh, I always had my heart on my tongue, as old Puffguts used to say. Nevermind, anyway, I like it here so much but I have my obligations to <CHARNAME> as well. Now, <PRO_HESHE> would be lost out there without me!~
+ == BIMOEN ~ Did I? Mmh, I always had my heart on my tongue, as old Puffguts used to say. Never mind, anyway, I like it here so much but I have my obligations to <CHARNAME> as well. Now, <PRO_HESHE> would be lost out there without me!~
 == HENNING ~ Sweetheart, I would never dare to chain you to the home, I mean house...Just, please, pray to <CHARNAME> to drop by more often - with you.~
 END
 ++ ~ Henning, you knew of Imoen's way before you started to court her. You have to live with the fact that she is coming and going at my demands.~ EXIT
@@ -178,11 +178,11 @@ DO ~ SetGlobal("SanImoNashInt","GLOBAL",15)~
 == BVICONI  IF~ InParty("Viconia") ~ THEN ~ The wraith of the spider queen upon you. Imoen you have deserved better than this male scum. ~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ My saddest day since Deheriana vanished. ~
 == IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ Oh no, poor little Imoen. You hateful man (Throws her heaviest tome at Henning.) ~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Mylady Imoen, take my arm, please, I will lead you from this rotten place. Helm may smash it to pieces! ~
-== IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ The tale of this treachery will be sung across the Swordcoast. No decent customer will enter this shop again.~
-== IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Oh, mylady, this is ..unexpected. You have not deserved this. Take the hand of a friend, please.~
+== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Milady Imoen, take my arm, please, I will lead you from this rotten place. Helm may smash it to pieces! ~
+== IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ The tale of this treachery will be sung across the Sword Coast. No decent customer will enter this shop again.~
+== IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ Oh, milady, this is ..unexpected. You have not deserved this. Take the hand of a friend, please.~
 == IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Buzzurk! Clangeddin's Axe lay this place to ruins. ~
-== BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, lousy moneygrabber, squeal in your own blood and intestines. ~
+== BBRANW  IF~ InParty("Branwen") ~ THEN ~ By Tempus, lousy money grabber, squeal in your own blood and intestines. ~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Love is an illusion. Waking up is the hardest part of it. ~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~ Hm. Man, that was not very clever. One should not been caught in the act like this, believe one who knows.  ~
 == BGARRI IF~ InParty("Garrick") ~ THEN  ~  (Starts to rip a piece of parchment.) This wedding gift is no longer needed, I assume. ~

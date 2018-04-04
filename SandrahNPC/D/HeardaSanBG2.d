@@ -44,14 +44,14 @@ IF~~THEN REPLY~But we have no way to return to Baldur's Gate, my love.~GOTO SanH
 END
 
 IF~~ THEN BEGIN SanHaerHunt6
-SAY~Like it or not, <CHARNAME>, the Shadow Thieves are an organisation that has a network all through the realms. They have ways to operate between the branches of their guilds and their loot goes this way and that to conceil their traces. I am definitely sure they will have a way to get us to their quarter at Baldur's Gate, provided the price is right.~
+SAY~Like it or not, <CHARNAME>, the Shadow Thieves are an organisation that has a network all through the realms. They have ways to operate between the branches of their guilds and their loot goes this way and that to conceal their traces. I am definitely sure they will have a way to get us to their quarter at Baldur's Gate, provided the price is right.~
 IF~~THEN REPLY~I see, let us return to Athkatla and try our connections there.~EXIT
 END
 END
 
 APPEND Voleta
 IF WEIGHT #-4~Global("SanHaerRel1","GLOBAL",32)~THEN BEGIN HaerH1
-SAY~Ah, the unfailable hero appears again to destroy evil and rescue Faerun!~
+SAY~Ah, the infallible hero appears again to destroy evil and rescue Faerun!~
 IF~~THEN REPLY~ You sound quite sarcastic for one whom we helped last time.~ GOTO HaerH2
 IF~~THEN REPLY~ What do you mean by that?~ GOTO HaerH2
 END
@@ -70,7 +70,7 @@ IF ~Global("SanHaerRel3","LOCALS",2) ~ THEN BSANDR SanHaerMissedInt
 DO~ SetGlobal("SanHaerRel3","LOCALS",3) SetGlobal("SanHaerRel1","GLOBAL",2) RealSetGlobalTimer("SanHaerRelT","LOCALS",2000) ~
 ==BHAERDA ~ Words of utmost delight from the lips of a girl who can only be a dream, too wonderful to be real - both the words and the girl.~
 == BSANDR~ Come back to reality, wordy poet. Yes you must be a poet of sorts, a bard maybe?~
-==BHAERDA~ Your bard from now on, mylady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
+==BHAERDA~ Your bard from now on, my lady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
 = ~ You are one not bound by the chains of this plane yourself! How come we have never met before?~
 == BSANDR~ What are you talking about, my confused bard? I am of this plane, a human who has never left Toril except in her dreams.~
 ==BHAERDA~ Can it be? You are and you are not. Or maybe not yet. Your bird must nest close to your heart to find that out...~
@@ -84,7 +84,7 @@ DO~ SetGlobal("SanHaerRel1","GLOBAL",4)RealSetGlobalTimer("SanHaerRelT","LOCALS"
 == BSANDR~ You are already at the topic I wanted to address myself, Haer'Dalis. I had the impression at our first meeting and now I have it again that you mistook me for a being similar to yourself. How is that?~
 ==BHAERDA~ Oh, Goddess, not like myself of course, not from the chaotic existence that has spawned me. What I meant was that you are a bird as free as me, not bound to the clumsy material world of the humans, but travelling the spheres and planes at will - or at least most of the time unless your will itself is bound.~
 == BSANDR~ (Laughs) My will may be as free as to do the travelling you refer to - still, my material self is human, my friend, and as such my existence is bound to the primary plane. It always was.~
-==BHAERDA~You are not one to lie, morning dove. Then how can my senses betray me so. I have felt it in you so very strongly when my eyes regained their sight freed from that wizard's spell whom you sent to the Nine Hells yourself...Only a powerful being can do such things, not a poor clayborne creature.~
+==BHAERDA~You are not one to lie, morning dove. Then how can my senses betray me so. I have felt it in you so very strongly when my eyes regained their sight freed from that wizard's spell whom you sent to the Nine Hells yourself...Only a powerful being can do such things, not a poor clay born creature.~
 == BSANDR~ I am a priestess of Mystra, my goddess grants me some access to the Weave in her service. It is probably that connection that you have sensed.~
 ==BHAERDA~Maybe or maybe not. Are you under a spell not knowing who you are? But there is no spell that I can sense. Is it your goddess? If so, you are closer to her than any priest I have ever known is to his god.~
 == BSANDR~ I am Midnight's granddaughter, my friend.~
@@ -126,7 +126,7 @@ DO~ SetGlobal("SanHaerRel1","GLOBAL",10)RealSetGlobalTimer("SanHaerRelT","LOCALS
 ==BHAERDA~ (He kisses her forehead lightly.) Sleep and dream, my slumbering goddess, unaware of the power that is growing in you...First I thought you were concealing your true identity, my morning dove, but now I know what I have seen in you is still to come.~
 == BSANDR~ (Yawns) What are you mumbling, my raven? A new poem or is it more?~
 ==BHAERDA~ (He smiles and brushes a stray lock from her forehead.) Probably an epos rather than a poem but one that the history of Toril is writing, not your poor little bard here.~
-== BSANDR~ I sense it that your wandering between the planes has reveiled more to you than we *clayborn* creatures are supposed to know. Maybe it is better to be unaware of details in our fate that lie still in the future.~
+== BSANDR~ I sense it that your wandering between the planes has revealed more to you than we *clay born* creatures are supposed to know. Maybe it is better to be unaware of details in our fate that lie still in the future.~
 ==BHAERDA~ As always you are right in your wise perception. What if you knew one thing or other and decide to change something that has to be?~
 == BSANDR~ To know about future events and to change them in the now thus disturbing the continuum of time - it might be desastereous.~
 ==BHAERDA~ For those for whom time is a river that takes them with it in the one direction such is true. There are creatures however that jump through those currents like a salmon.~
@@ -139,11 +139,11 @@ IF ~Global("SanHaerRel1","GLOBAL",11)~ THEN BSANDR SanHaerMist5
 ~*Sandrah once more has made herself comfortable with her tiny feet resting in Haer'Dalis' lap.*~
 DO~SetGlobal("SanHaerRel1","GLOBAL",12)~
 ==BHAERDA~*The tiefling never seems to get tired of caressing Sandrah carefully toe for toe.*~
-== BSANDR ~ Say, my hellish lover, you seem to share a certain penchant with a footware fetishist from the Abyss I once met.~
+== BSANDR ~ Say, my hellish lover, you seem to share a certain penchant with a footwear fetishist from the Abyss I once met.~
 ==BHAERDA~You, my dove, seem to have a fondness with our kin, is that possible?~
 == BSANDR ~ I cannot really say that Naronguth and me are actually very fond of each other...~
 ==BHAERDA~...NARONGUTH!! You are acquainted with that mad descendant of the Nine Hell's? Quickly, my morning dove, tell me more.~
-== BSANDR ~Well, we encountered him and Alzaligundrel while we were still on the Sword Coast...~
+== BSANDR ~Well, we encountered him and Alzaligrundel while we were still on the Sword Coast...~
 ==BHAERDA~Beware!! That other mad devil as well? And you survived that encounter - ah, sure you did, my dove, they are no match for you.~
 == BSANDR ~So you know both of them as well, I see. I cannot believe they are friends of yours. (Giggles) What did you steal from them?~
 ==BHAERDA~How can you know...Ah, my dove reads me like an open book of lore. Yes, I took something from them that they were fighting about all the time.~
@@ -207,7 +207,7 @@ CHAIN
 IF WEIGHT #-5~Global("SanHaerRel1","GLOBAL",34)~THEN Haerdap SanRescue
 ~My morning dove!! How could I ever have doubted that my goddess would be able to overcome even the barriers of the Nine Hells to rescue me.~
 ==CVSandrJ~My raven!! (She darts to the tiefling and embraces him. A long series of kisses follows.)~
-==Haerdap ~We will soon sing our lovesong again together, my young goddess. But now let us make haste to get out of here. The master of this place is known for his shifting tempers and may change his generous behaviour soon.~
+==Haerdap ~We will soon sing our love song again together, my young goddess. But now let us make haste to get out of here. The master of this place is known for his shifting tempers and may change his generous behaviour soon.~
 =~There is a temporary exit right here behind me.~DO~AddXPObject("CVSandr",55000) AddXPObject("Haerdalis",55000) SetGlobal("KickedOut","LOCALS",0) JoinParty() ~EXIT
 
 CHAIN

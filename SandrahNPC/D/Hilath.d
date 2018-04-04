@@ -30,7 +30,7 @@ Global("Katcut","GLOBAL",2) ~ THEN Hilath HilathQ1
 END
 ++ ~ Of course, lady. Your baby will be safely back in your arms in a short while.~ + Hilqtaken
 ++ ~ This mighty Khattark looked a bit too dangerous for us. We better get you to Waterdeep and let the militia there do the job.~ DO ~ ReputationInc(-10) ~ + Hilqrej
-++ ~ As lady from the City of Splendor you wil know that everything can be done - for the right price, mylady...~  DO ~ ReputationInc(-1) ~ + Hilqtaken
+++ ~ As lady from the City of Splendour you will know that everything can be done - for the right price, my lady...~  DO ~ ReputationInc(-1) ~ + Hilqtaken
 
 CHAIN
 IF ~~ THEN Hilath Hilqtaken
@@ -42,7 +42,7 @@ EXIT
 CHAIN
 IF ~~ THEN Hilath Hilqrej
 ~ Sandrah, that cannot be true! I do not believe you will leave me alone at this moment of need. When the militia returns, my son will surely be dead already.~
-== CVSandrJ ~ Do not worry, mylady. I will go after Khattark, your son will be with you again shortly. These cowards will return to the Sword Coast without me.~
+== CVSandrJ ~ Do not worry, my lady. I will go after Khattark, your son will be with you again shortly. These cowards will return to the Sword Coast without me.~
 END
 ++ ~ But, Sandrah...(Sandrah turns away without taking any further notice of you).~ DO ~
 SetGlobal("Katcut","GLOBAL",11) ~

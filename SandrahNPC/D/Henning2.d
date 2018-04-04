@@ -26,9 +26,9 @@ END
 
 IF~~THEN BEGIN ImmiJonMiss2
 SAY~ By all the Gods, <CHARNAME>, we need to find a way to get her out of that prison urgently.~
-IF~~THEN REPLY~ You have my word, Henning, that we are already persuing that goal eagerly. It will not be long until your happy reunion. There is nothing you can do at the very moment other than to keep your spirits up and put your trust in us.~ EXIT
+IF~~THEN REPLY~ You have my word, Henning, that we are already pursuing that goal eagerly. It will not be long until your happy reunion. There is nothing you can do at the very moment other than to keep your spirits up and put your trust in us.~ EXIT
 IF~~THEN REPLY~ Stop whining, man, I don't understand what a courageous girl like Imoen sees in you. You can do nothing, WE will take care of that business.~ EXIT
-IF~~THEN REPLY~ Be assured that you will be the first to get the notice of her rescue, Henning. However it makes no sense for you to join us in the persuit. Let us see your wares to prepare for the rescue mission. ~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
+IF~~THEN REPLY~ Be assured that you will be the first to get the notice of her rescue, Henning. However it makes no sense for you to join us in the pursuit. Let us see your wares to prepare for the rescue mission. ~ DO ~ StartStore("sto4803",LastTalkedToBy(Myself))~ EXIT
 END
 
 
@@ -37,7 +37,7 @@ IF~~THEN  HENNING2 HennImoRit1
 ~  How have you fared, my love?~
 DO ~ SetGlobal("HennImoRit","LOCALS",1) RealSetGlobalTimer("HennImoRitInt","LOCALS",180)~
 ==Bimoen ~ Oh, listen and listen, besta loverboy...(Imoen breathlessly reports what has happened since they have parted.)~
-==HENNING2~ Oh, my wonderfull, courageous heroine, mmpf...~
+==HENNING2~ Oh, my wonderful, courageous heroine, mmpf...~
 ==Bimoen ~ (Kisses Henning over and over) Hey, enough talking for now, there is something I needa show ya quickest, this garter belt I bought in Beregost...~
 DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~
 EXIT
