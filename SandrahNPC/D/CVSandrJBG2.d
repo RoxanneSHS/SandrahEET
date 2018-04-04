@@ -2978,7 +2978,7 @@ END
 
 IF~~THEN BEGIN PoolTalk12
 SAY~ A valid example. Now, for a healer that is essential knowledge. Often you lose a patient because he has already given up himself mentally - vice versa you can use the will of the patient to fuel the healing process.~
-=~In Shauhana's case the various ingrediences came together, the water of the pool, her will to become hale and her strong belief in Sharkta Fai - and a healer's knowledge and skill to make use of those ingrediences.~
+=~In Shauhana's case the various ingredients came together, the water of the pool, her will to become hale and her strong belief in Sharkta Fai - and a healer's knowledge and skill to make use of those ingredients.~
 IF~~THEN REPLY ~So in the end it was you - by knowing all of this and being able to use it. Probably that makes you the best healer I have ever encountered.~ GOTO PoolTalk13
 END
 
@@ -3007,7 +3007,7 @@ IF~~THEN REPLY~ (You take a deep breath) Let us enter that pool now, Sandrah.~DO
 END
 
 IF~~THEN BEGIN PoolTalk17
-SAY~ (Sandrah cautiosly takes Myrkul's emblem in her gloved hand and steps up to the pool.)~
+SAY~ (Sandrah cautiously takes Myrkul's emblem in her gloved hand and steps up to the pool.)~
 =~(As the symbol touches the water, the whole pool freezes within seconds. Sandrah gives all of you a sign to step onto the frozen surface with her...~
 IF~~THEN EXIT
 END
@@ -3026,7 +3026,7 @@ IF~~THEN DO~ SetGlobal("SanVampWDQuest","GLOBAL",7) IncrementGlobal("Sanpoints",
 END
 
 IF~~ THEN BEGIN ForgotWDVampQ3
-SAY~ They would not ask me if that were the case. Remember I serve the Temple exactly for these special purposes and I am granted so much freedom otherwise. It is in our all interest if you now listen to your consellor in this matter.~
+SAY~ They would not ask me if that were the case. Remember I serve the Temple exactly for these special purposes and I am granted so much freedom otherwise. It is in our all interest if you now listen to your counsellor in this matter.~
 IF~~THEN DO~ SetGlobal("SanVampWDQuest","GLOBAL",7) IncrementGlobal("Sanpoints","GLOBAL",-3) SetGlobal("SANWDho","GLOBAL",1)~EXIT
 END
 
@@ -3116,12 +3116,12 @@ END
 
 IF~Global("SanMaltese","LOCALS",3)~THEN BEGIN Ybgirq11
 SAY~More than before I am convinced we are obliged to solve Eleanor Ybgir's quest. In a city like this it should be possible to gather the parts for that proposed forged crown.~
-IF~~THEN REPLY~ Wihout her help what will we do with the parts?~DO~SetGlobal("SanMaltese","LOCALS",4)~GOTO  Ybgirq12
+IF~~THEN REPLY~ Without her help what will we do with the parts?~DO~SetGlobal("SanMaltese","LOCALS",4)~GOTO  Ybgirq12
 IF~~THEN REPLY~ I've seen that murderous mage with my own eyes now - He needs to be stopped. Only how? ~DO~SetGlobal("SanMaltese","LOCALS",4)~GOTO  Ybgirq12
 END
 
 IF~~THEN BEGIN Ybgirq12
-SAY~ Our old friend in the docks should be able to help us with his skills if we bring him the ingrediences that Eleanor has listed for us.~
+SAY~ Our old friend in the docks should be able to help us with his skills if we bring him the ingredients that Eleanor has listed for us.~
 IF~~THEN REPLY~ Ah, Cromwell! I should have thought of him myself.~EXIT
 IF~~THEN REPLY~ You're right, Cromwell should be able to put together such an item from the things we bring to him.~EXIT
 END
@@ -3134,18 +3134,18 @@ END
 
 // Yoshimo
 INTERJECT_COPY_TRANS YOSHIMO 42 SanYoshDun
-== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the center of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~
+== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the centre of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~
 == YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You come from outside, Lady? But strange, how come the Shadow Thieves attack this prison, I thought they are in league with our capturers? ~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Yes and no. My friends were taken here by one group of Shadow Thieves while another group today assaulted this place. As far as I can tell from the little information I could secretly gather, there are different guildes of the thieves operating here, as well as other strange creatures at war with both sides. It is really confusing.~
-== YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You did well to operate most secretly, mylady. The Shadow Thieves, regardless which guild, are no fun to deal with.~
+== YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You did well to operate most secretly, my lady. The Shadow Thieves, regardless which guild, are no fun to deal with.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ <CHARNAME>, we are close to the surface and the exit now. There are still dangers ahead, as I tried to avoid fighting when I sneaked into this place. I did not want to endanger you by stirring up our foe with battle noises.~
 END
 
 INTERJECT_COPY_TRANS YOSHIMO 6 SanYoshDunNoImo
-== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the center of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~
+== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ We are indeed in Athkatla in Amn, <CHARNAME>, very much beneath the centre of town. I followed the Shadow Thieves from the merchant's promenade into this dungeon to find you.~
 == YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You come from outside, Lady? But strange, how come the Shadow Thieves attack this prison, I thought they are in league with our capturers? ~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Yes and no. My friends were taken here by one group of Shadow Thieves while another group today assaulted this place. As far as I can tell from the little information I could secretly gather, there are different guildes of the thieves operating here, as well as other strange creatures at war with both sides. It is really confusing.~
-== YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You did well to operate most secretly, mylady. The Shadow Thieves, regardless which guild, are no fun to deal with.~
+== YOSHIMO IF ~ InParty("CVSandr") ~ THEN ~ You did well to operate most secretly, my lady. The Shadow Thieves, regardless which guild, are no fun to deal with.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ <CHARNAME>, we are close to the surface and the exit now. There are still dangers ahead, as I tried to avoid fighting when I sneaked into this place. I did not want to endanger you by stirring up our foe with battle noises.~
 END
 
@@ -3163,7 +3163,7 @@ END BEAST 77
 // Sandrah and Hendak
 INTERJECT HENDAK 33 SanHendR1
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ It is so wonderful to see you and your companions free once again. Have you made plans for the future already?~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ Mylady, you have played a very important role in our release. My heartfelt thanks go to the <CHARNAME>'s whole group but to you and your courage especially.~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ My lady, you have played a very important role in our release. My heartfelt thanks go to the <CHARNAME>'s whole group but to you and your courage especially.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ I will fight slavery with all my might wherever I encounter it, Hendak.~
 ==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ This is good to hear from a friend as powerful as you are, mylady. The new Copper Coronet is no longer a place of such cruelty to humans or beasts.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~ THEN ~ Then I hope that <CHARNAME> will steer our ways to here frequently, my friend.~
@@ -3175,7 +3175,7 @@ INTERJECT HENDAK 33 SanHendR2
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ Hendak, I have really longed for seeing you again - and as the man you have a right to be.~
 ==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I was a slave steered by the hands and will of others. You gave me hope - including the strength to no longer hide my feelings. ~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ (Sandrah has moved close to the aging fighter and has gently taken his hand in the comforting way you know so well.)~
-==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ You are a tough fighter but it seems you know just too well when to let down your defenses...~
+==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ You are a tough fighter but it seems you know just too well when to let down your defences...~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ (Sandrah's smile is inviting the former slave to continue.)~
 ==HENDAK IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ I have gained back a life but in love I am a lonely man.~
 == CVSandrJ IF~ InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~ THEN ~ You are aware that I am just a passing wanderer, seeking rest and shelter for a night every now and then...~
@@ -3215,8 +3215,8 @@ END NEEBER 16
 //Keldorn
 INTERJECT_COPY_TRANS KELDOR 22 SanMeetKel1
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ Sir Keldorn! Ajantis' Mentor?~
-== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, mylady. You have met...oh this glance in your eye when you speak his name, you must be...~
-== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, mylord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
+== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, my lady. You have met...oh this glance in your eye when you speak his name, you must be...~
+== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, my lord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
 == KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The pleasure is mine, lady Sandrah, as Ajantis' letters were full of praise of your intelligence and your courageous deeds - and of course your loveliness and beauty, which I can only confirm right now.~
 = ~ But where is Ajantis right now, his reports have ceased to come for a while?~
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ (Sighs) I had dearly hoped that you could tell us. He had to leave us on the Sword Coast for a mission in Helm's name and we have not received news from him since then.~
@@ -3225,8 +3225,8 @@ END
 
 INTERJECT_COPY_TRANS KELDOR 26 SanMeetKel2
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ Sir Keldorn! Ajantis' Mentor?~
-== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, mylady. You have met...oh this glance in your eye when you speak his name, you must be...~
-== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, mylord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
+== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, milady. You have met...oh this glance in your eye when you speak his name, you must be...~
+== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, my lord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
 == KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The pleasure is mine, lady Sandrah, as Ajantis' letters were full of praise of your intelligence and your courageous deeds - and of course your loveliness and beauty, which I can only confirm right now.~
 = ~ But where is Ajantis right now, his reports have ceased to come for a while?~
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ (Sighs) I had dearly hoped that you could tell us. He had to leave us on the Sword Coast for a mission in Helm's name and we have not received news from him since then.~
@@ -3235,8 +3235,8 @@ END
 
 INTERJECT_COPY_TRANS KELDOR 18 SanMeetKel3
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ Then you must be Sir Keldorn! Ajantis' Mentor?~
-== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, mylady. You have met...oh this glance in your eye when you speak his name, you must be...~
-== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, mylord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
+== KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The very same, milady. You have met...oh this glance in your eye when you speak his name, you must be...~
+== CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~Sandrah of Waterdeep, my lord. A strange place to meet - but probably not for a paladin and a priestess of Mystra. Anyway, I am delighted to make your acquaintance finally. Ajantis mentioned your name and your deeds often.~
 == KELDOR IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ The pleasure is mine, lady Sandrah, as Ajantis' letters were full of praise of your intelligence and your courageous deeds - and of course your loveliness and beauty, which I can only confirm right now.~
 = ~ But where is Ajantis right now, his reports have ceased to come for a while?~
 == CVSandrJ IF~ InParty("CVSandr") GlobalGT("SanHelmDogmas","GLOBAL",11) ~ THEN ~ (Sighs) I had dearly hoped that you could tell us. He had to leave us on the Sword Coast for a mission in Helm's name and we have not received news from him since then.~
@@ -3249,21 +3249,21 @@ INTERJECT HurgisF 4 SanTrickF
 == HurgisF IF~ InParty("CVSandr")~ THEN ~Who...oh..yes, little Sandrah of Waterdeep has become quite a lady, not to be recognised that easy. But now tell that stubborn paladin who I am to speed things up here.~
 ==CVSandrJ IF~ InParty("CVSandr")~ THEN ~Oh, yes I will. (Whispers) That man has never seen me before nor do I know him, <CHARNAME>, this is a trick to get Tyrianna from our care.~
 END
-++~ I will get her now, please excuse my precaution, mylord.~ EXTERN HurgisF 13
+++~ I will get her now, please excuse my precaution, my lord.~ EXTERN HurgisF 13
 ++~ It's obviously a trap and you are not Hurgis.~ EXTERN HurgisF 14
 
 INTERJECT HurgisR 4 SanTrickR
 ==CVSandrJ IF~ InParty("CVSandr")~ THEN ~Still the old grumbler and tyrant, Uncle Hurgis. The little Sandrah was always so afraid of you when you came to Waterdeep to see mummy and daddy.~
 DO~SetGlobal("HurgisHere","GLOBAL",1)~
-== HurgisR IF~ InParty("CVSandr")~ THEN ~You must be mistaken, mylady, but I have neither acquaintances at Waterdeep nor do I know a girl named Sandrah. Now, please, no further disturbances in this business.~
-==CVSandrJ IF~ InParty("CVSandr")~ THEN ~Thank you for this confirmation, mylord, but please understand that we need to be careful. That man has never seen me before nor do I know him, <CHARNAME>, he tells the truth. An imposter would surely have declared to remember me.~
+== HurgisR IF~ InParty("CVSandr")~ THEN ~You must be mistaken, milady, but I have neither acquaintances at Waterdeep nor do I know a girl named Sandrah. Now, please, no further disturbances in this business.~
+==CVSandrJ IF~ InParty("CVSandr")~ THEN ~Thank you for this confirmation, my lord, but please understand that we need to be careful. That man has never seen me before nor do I know him, <CHARNAME>, he tells the truth. An imposter would surely have declared to remember me.~
 == HurgisR IF~ InParty("CVSandr")~ THEN ~Even if I can understand your caution I hope we can end these tests by now. Time is pressing.~
 END HurgisR 9
 
 //Shar-Teel in Amn
 INTERJECT IF_FILE_EXISTS Sharthug 0 SharInJail
 == CVSandrJ IF ~InParty("CVSandr") GlobalGT("SanSharInt","GLOBAL",20) ~ THEN~ If we would not know it better, <CHARNAME>, I would swear this sounds like our good old wildcat Shar-Teel. What do you think?~
-== Sharthug IF ~InParty("CVSandr") GlobalGT("SanSharInt","GLOBAL",20) ~ THEN~ Shar-Teel! You know this crazy bloodthirsty wench? I will not say any more words to you, you must all be a buch of madmen yourself. Let me outa here...~
+== Sharthug IF ~InParty("CVSandr") GlobalGT("SanSharInt","GLOBAL",20) ~ THEN~ Shar-Teel! You know this crazy bloodthirsty wench? I will not say any more words to you, you must all be a bunch of madmen yourself. Let me outa here...~
 END Sharthug 2
 
 //Mekrath
@@ -3278,7 +3278,7 @@ INTERJECT_COPY_TRANS HAERDA 0 SanHaerRel1
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ A bird shall be free to sing and never be anyone's slave. You will not be kept by bounds to us that you do not accept yourself.~
 ==HAERDA IF ~InParty("CVSandr")~ THEN~ Words of utmost delight from the lips of a girl who can only be a dream, too wonderful to be real - both the words and the girl.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Come back to reality, wordy poet. Yes you must be a poet of sorts, a bard maybe?~
-==HAERDA IF ~InParty("CVSandr")~ THEN~ Your bard from now on, mylady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
+==HAERDA IF ~InParty("CVSandr")~ THEN~ Your bard from now on, milady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
 = ~ You are one not bound by the chains of this plane yourself! How come we have never met before?~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ What are you talking about, my confused bard? I am of this plane, a human who has never left Toril except in her dreams.~
 ==HAERDA IF ~InParty("CVSandr")~ THEN~ Can it be? You are and you are not. Or maybe not yet. Your bird must nest close to your heart to find that out...~
@@ -3287,8 +3287,8 @@ END
 INTERJECT_COPY_TRANS HAERDA 25 SanHaerRel2
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ A bird shall be free to sing and never be anyone's slave. You will not be kept by bounds to us that you do not accept yourself.~
 ==HAERDA IF ~InParty("CVSandr")~ THEN~ Words of utmost delight from the lips of a girl who can only be a dream, too wonderful to be real - both the words and the girl.~
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~ Come back to reality, wordly poet. Yes you must be a poet of sorts, a bard maybe?~
-==HAERDA IF ~InParty("CVSandr")~ THEN~ Your bard from now on, mylady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~ Come back to reality, wordy poet. Yes you must be a poet of sorts, a bard maybe?~
+==HAERDA IF ~InParty("CVSandr")~ THEN~ Your bard from now on, milady, bound by voluntary slavery to a mistress so kind and ...wait, what is that?~
 = ~ You are one not bound by the chains of this plane yourself! How come we have never met before?~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ What are you talking about, my confused bard? I am of this plane, a human who has never left Toril except in her dreams.~
 ==HAERDA IF ~InParty("CVSandr")~ THEN~ Can it be? You are and you are not. Or maybe not yet. Your bird must nest close to your heart to find that out...~
@@ -3316,14 +3316,14 @@ INTERJECT_COPY_TRANS UDSOLA01 79 SanMeetsPhaere
 END
 
 INTERJECT UDSOLA01 104 SanSolSnif
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionettes ourselves.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ Whoever you are in Ched Nasad and why you came to our city, you impress me each time anew. You risk a lot but you are not foolish, you seem to have the power to back up your plan. But I will not wiggle free of one bondage to exchange it with the next one, mind that. For the case at hand - all you are required to do is bring back some artefact to the witch that makes her believe you did the deed.~
 END UDSOLA01 107
 
 INTERJECT UDSOLA01 103 SanSolSnifa
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionettes ourselves.~
 DO~SetGlobal("SanSolSnif","Global",1)~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
@@ -3331,7 +3331,7 @@ DO~SetGlobal("SanSolSnif","Global",1)~
 END UDSOLA01 107
 
 INTERJECT UDSOLA01 102 SanSolSnifb
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionetts ourselves.~
+== CVSandrJ IF ~InParty("CVSandr")~ THEN~Let me be open to you, Solaufein, even at the risk that it is a mistake. We do not have the intention to become Phaere's marionettes ourselves.~
 DO~SetGlobal("SanSolSnif","Global",1)~
 == UDSOLA01 IF ~InParty("CVSandr")~THEN~ I note your words, priestess, even as I choose not to comment on them now.~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Neither would you relay them to your *mistress* - do not say a word, I trust you will not. You have no reason to trust us yet but maybe our action in this case will convince you of our true nature.~
@@ -3341,7 +3341,7 @@ END UDSOLA01 107
 INTERJECT_COPY_TRANS UDARDUL 65 SanMMInt1b
 == UDARDUL IF ~InParty("CVSandr")~THEN~ You, priestess, wait! Is that the one you were talking about, silly girl?~
 ==UDPHAE01 IF ~InParty("CVSandr")~THEN~ She has shown more than once that she is far superior to this Veldrin she pretends to follow, mother.~
-== UDARDUL IF ~InParty("CVSandr")~THEN~ At least to this assesment I can for once agree, daughter. I can sense her power clearly.~
+== UDARDUL IF ~InParty("CVSandr")~THEN~ At least to this assessment I can for once agree, daughter. I can sense her power clearly.~
 =~ For the time I have use for you and your party, priestess, but you are under close observation all the time. Ust Natha is OUR city - forget that for one single moment and Lolth will be upon you - do you understand?~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN~ Matron Mother, I seek not the fight with you, but do not speak for the Spider Queen if you are not really sure you are her favourite.~
 == UDARDUL IF ~InParty("CVSandr")~THEN~(Hiss) We will see. Tumble once and be sure House Despana will give you the push into the spider pits. Now be off.~
@@ -3374,7 +3374,7 @@ Enemy()~
 END JARLAXLE 41
 
 INTERJECT_COPY_TRANS Player1 33 SanTreeLife
-==Player1 IF~ InParty("CVSandr") ~ THEN ~ (You feel a small hand slip into yours and you instictively return a tender squeeze.)~
+==Player1 IF~ InParty("CVSandr") ~ THEN ~ (You feel a small hand slip into yours and you instinctively return a tender squeeze.)~
 == CVSandrJ IF ~InParty("CVSandr")~ THEN ~ (You look at Sandrah and she gives you one of her enigmatic smiles.) ~
 ==Player1 IF~ InParty("CVSandr") ~ THEN ~ (You take her hand and feel once again the power and confidence she constantly has given you since that day long ago when you had to leave Candlekeep.)~
 =~ (You return her smile as with Sandrah you need no words. You have no more doubt - with her by your side Irenicus will fall.)~ DO~IncrementGlobal("Sanpoints","GLOBAL",20)~
@@ -3405,8 +3405,8 @@ INTERJECT_COPY_TRANS Imoen2 19 SanImoReAsy
 
 CHAIN
 IF ~~THEN CVSandrJ BG2Reunion16
-~ <CHARNAME>, your equipment has been taken, probably by those greedy Duergars. With my magic parcel I may be able to retrieve some of our valuable items, if you want me to. ~
-==IF_FILE_EXISTS D#Silver IF~InParty("D#Silver")~ THEN ~ Maybe those greedy Duergars have laid their hands on Mommy!~
+~ <CHARNAME>, your equipment has been taken, probably by those greedy Duergar. With my magic parcel I may be able to retrieve some of our valuable items, if you want me to. ~
+==IF_FILE_EXISTS D#Silver IF~InParty("D#Silver")~ THEN ~ Maybe those greedy Duergar have laid their hands on Mommy!~
 ==CVSandrJ IF~InParty("D#Silver")~ THEN ~ Looks like our capturer has kidnapped others as well. You grieve for your lost Mommy then?~
 ==IF_FILE_EXISTS D#Silver IF~InParty("D#Silver")~ THEN ~We must find my Mommy. The Master has hidden her in a box. ~
 ==CVSandrJ IF~InParty("D#Silver")~ THEN ~ A box?...I see...An assassin would refer to her favourite weapon as *Mommy*.~
@@ -3453,7 +3453,7 @@ IF~~ THEN CVSANDRJ SanSunRitual
 = ~I will afterwards meditate on the glory of the light that defeats the darkness.~
  ==SHAAVA01 ~  So ends the morning ritual, child.~
  =~The sun is now high in the sky. The time for the noon ritual has come. What will be your action to praise your Lord, child?~
-== CVSandrJ ~ I will recity a hymn in praise of Amaunator.~
+== CVSandrJ ~ I will recite a hymn in praise of Amaunator.~
 =~I will continue my praise by raising my hands to the sun.~
 =~ I will finally enjoy the dominance of the sun at its highest point.~
 ==SHAAVA01 ~ Darkness is nearing and it will be time for the evening ritual to be performed to ward off the evil. What will you do?~
@@ -3484,8 +3484,8 @@ END
 
 CHAIN
 IF~~THEN CVSANDRJ SanUDJarlAgain
-~<CHARNAME>, he has found ways already in the past to reemerge by some foolish magician's aid. We can only find out if we bite into this hook - knowing it is another of his traps.~
-==BREG01~ I see you are acqauinted with Jarlaxle, mylady. Make out of it what you want, my offer stands and I know nothing more but what I told you already.~
+~<CHARNAME>, he has found ways already in the past to re-emerge by some foolish magician's aid. We can only find out if we bite into this hook - knowing it is another of his traps.~
+==BREG01~ I see you are acquainted with Jarlaxle, milady. Make out of it what you want, my offer stands and I know nothing more but what I told you already.~
 END
 ++~Right, Sandrah, we must take the risk in order to find out. Man, go on but make it quick and avoid trying to fool us.~EXTERN BREG01 8
 
@@ -3610,7 +3610,7 @@ END
 END
 
 EXTEND_TOP SHAAVA01 4 #1
-IF~InParty("CVSandr") ~THEN REPLY ~ I think, my counsellor, this seems to be a task for you and and your neverending knowledge of lore.~ EXTERN CVSANDRJ SanSunRitual
+IF~InParty("CVSandr") ~THEN REPLY ~ I think, my counsellor, this seems to be a task for you and and your never-ending knowledge of lore.~ EXTERN CVSANDRJ SanSunRitual
 END
 
 //Dealing With Solaufein
@@ -3669,12 +3669,12 @@ IF~ InParty("CVSandr")~ THEN REPLY ~My companion Sandrah and I have fought the s
 END
 
 EXTEND_BOTTOM Demson 86
-IF~ InParty("CVSandr")Dead("HurgisF")!Dead("Plgirl01")~ THEN REPLY ~My counsellor Sandrah has demasked the villain who claimed to be Hurgis Baltezan. The child is save.~ GOTO 90
+IF~ InParty("CVSandr")Dead("HurgisF")!Dead("Plgirl01")~ THEN REPLY ~My counsellor Sandrah has de-masked the villain who claimed to be Hurgis Baltezan. The child is save.~ GOTO 90
 END
 
 APPEND Hellfear
 IF~~THEN BEGIN 101
-SAY~ An unexpected opinion from one who is as powerful as you. No one can succeed alone. Friends and lovers form our soul like our heritage and our goals. Bhaalspawns there are many but none I have encoutered with such wisdom.~
+SAY~ An unexpected opinion from one who is as powerful as you. No one can succeed alone. Friends and lovers form our soul like our heritage and our goals. Bhaalspawns there are many but none I have encountered with such wisdom.~
 IF~~THEN DO~ IncrementGlobal("Sanpoints","GLOBAL",5)~GOTO 15
 END
 END
@@ -3706,11 +3706,11 @@ CHAIN
 IF~~THEN TRGyp02 GypSanFortn
 ~Lines of great strength and a long past is what I see in your hand even from here, young priestess...~
 ==CVSandrJ~ (With an amused smile playing around her lips Sandrah stretches out her hand to the fortune teller.)~
-==TRGyp02~(Kveroslava, the fortuneteller, takes Sandrah's hand and looks at her palm with the eyes of an expert.)~
+==TRGyp02~(Kveroslava, the fortune-teller, takes Sandrah's hand and looks at her palm with the eyes of an expert.)~
 =~Yours is a future that is related to...powers, great powers...can it be?~
 =~(Kveroslava suddenly looks from Sandrah to you, her eyes wide with horror.)~
 =~Powers I cannot see and do not want to see - you will face them, you have no choice.~
-==CVSandrJ~We always have a choice, mylady, it is us who shape our own fate in the end.~
+==CVSandrJ~We always have a choice, my-lady, it is us who shape our own fate in the end.~
 ==TRGyp02~(Kveroslava has suddenly calmed down again.) We must be strong to withstand fate. Maybe it is such a strength why your future escapes my sight... keep your coins, please. I... don't have the power to discern the path of one such as you.~ DO ~GiveGoldForce(10)
 ActionOverride(Player1,SetDialogue("Player1"))~EXIT
 
@@ -3735,7 +3735,7 @@ IF~~THEN CVSandrJ SanCloneEllePC2
 
 CHAIN 
 IF WEIGHT #-2~  Global("BodiAppear","GLOBAL",7) Global("HigherPrice","LOCALS",0) InParty("CVSandr")~ THEN Brus2 high1 
- ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaelan told me to give you a bit o' help to find some work. Listen up, eh!~ 
+ ~Hoy! You'd be the one I's watchin' for, aye? Uncle Gaylan told me to give you a bit o' help to find some work. Listen up, eh!~ 
 DO~SetGlobal("HigherPrice","LOCALS",1)~
 ==CVSandrJ~You are a clever boy, Brus. You see and hear a lot, right?~
 ==Brus2~Like uncle's not told you da full price you gotta pay fa his service?~
