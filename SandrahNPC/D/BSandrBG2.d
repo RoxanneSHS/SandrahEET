@@ -649,7 +649,7 @@ IF~Global("RE_BjorninSex","GLOBAL",2) ~ THEN BEGIN PchadBjorn1
 SAY~(Sandrah smiles knowingly at you and corrects the fit of your shirt under the belt wordlessly.)~
 IF~~THEN REPLY~ Well, another shared experience - a very pleasant one.~ DO~SetGlobal("RE_BjorninSex","GLOBAL",3)~ EXIT
 IF~~THEN REPLY~ (Smile back at her and blow her a kiss. You know that she knows that you know...)~ DO~SetGlobal("RE_BjorninSex","GLOBAL",3)~ EXIT
-IF~~THEN REPLY~ Secret conaisseur. You choose your men with expertise.~ DO~SetGlobal("RE_BjorninSex","GLOBAL",3)~ EXIT
+IF~~THEN REPLY~ Secret connoisseur. You choose your men with expertise.~ DO~SetGlobal("RE_BjorninSex","GLOBAL",3)~ EXIT
 END
 
 IF~Global("SanNitePh","LOCALS",2)~THEN BEGIN SanPhNot1

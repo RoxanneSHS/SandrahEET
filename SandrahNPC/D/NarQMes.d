@@ -5,7 +5,7 @@ IF ~Global("NarQMessSees","GLOBAL",1)~ THEN NarQMes NarQGiveMes
 ~ Misses Sandrah, so good I found you.~
 == CVSandrJ ~Landrel! You look troubled, my father must have send you! Talk, good man , what is wrong? ~
 == NarQMes ~Indeed, Miss Sandrah, there are events that have alerted your father much and he sent me out to find you quickly. You must come to meet him urgently. You - and he also asked for the ones that are with you to feel invited. ~
-== CVSandrJ ~ That sounds distubing. <CHARNAME>, if my father takes to such an action, then there must be real trouble, something that even he is not able to deal with alone. Please, we must follow his call.~
+== CVSandrJ ~ That sounds disturbing. <CHARNAME>, if my father takes to such an action, then there must be real trouble, something that even he is not able to deal with alone. Please, we must follow his call.~
 END
 ++ ~ The old tyrant calls and we jump, right Sandrah? ~ + GiveMesId
 ++ ~ If Elminster himself is disturbed, so should we, let us listen to Landrel. ~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ GiveMes1
@@ -87,7 +87,7 @@ END
 CHAIN
 IF ~~ THEN NarQMes WelWDPel2
 ~ It is actually a *She*, <PRO_SIRMAAM>.~
-== CVSandrJ ~ Let us go out to the garden, <CHARNAME>, I truely hope that you will like her. I wish so much that she can come with us when we leave this time. I was not sure what I would meet, when I set out for my little adventure, so I left her at home. But now things are so much different...~
+== CVSandrJ ~ Let us go out to the garden, <CHARNAME>, I truly hope that you will like her. I wish so much that she can come with us when we leave this time. I was not sure what I would meet, when I set out for my little adventure, so I left her at home. But now things are so much different...~
 END
 ++ ~ You and your secrets. Something new is waiting for me every minute with you. (Give her a kiss.) So let us see Pelligram then.~ EXIT
 ++ ~ You and your secrets. (Shrug your shoulders.) So let us see Pelligram then.~ EXIT
@@ -102,7 +102,7 @@ EXIT
 CHAIN
 IF ~ Global("SanVisitedWD","GLOBAL",1) AreaCheck("CVDRE2") Global("SanWDWelc","LOCALS",1) Global("SanNarQ","GLOBAL",9)~ THEN NarQMes WelWDremE
 ~ Good journey to you all. I hope I will see you all well and alive again soon.~
-== BSHART IF~ InParty("Sharteel") ~ THEN ~ (Shart-Teel wets her finger in her mouth and draws a kind of heart-shape sign with the moist on Landrel's forehead.) Try to stay alive, acceptable males are such a rare find. ~
+== BSHART IF~ InParty("Sharteel") ~ THEN ~ (Shar-Teel wets her finger in her mouth and draws a kind of heart-shape sign with the moist on Landrel's forehead.) Try to stay alive, acceptable males are such a rare find. ~
 == BVICON  IF~ InParty("Viconia") ~ THEN ~ (Instead of shaking his outstretched hand, Viconia's own has vanished for a moment beneath Landrel's robe. His groan is not completely one of pain and his face shows that the dark elf knows how to pleasure a man.) ~
 END
 ++ ~ Goodbye, Landrel, thank you for all.~
@@ -118,12 +118,12 @@ EXIT
 
 CHAIN
 IF ~ Global("SanSharInt","GLOBAL",30) ~ THEN NarQMes SanSharBit1
-~ You have come not a minute too late for the happy event. We have set up the lady Shar-Teel in your quarters, mylady Sandrah. Huh, it is really time for a bit of quietness in this house again.~
+~ You have come not a minute too late for the happy event. We have set up the lady Shar-Teel in your quarters, my lady Sandrah. Huh, it is really time for a bit of quietness in this house again.~
 DO ~ SetGlobal("SanSharInt","GLOBAL",31)~
 == CVSandrJ ~ Hoho, you cannot expect such with a little baby in the house, Landrel, especially not from such parents.~
 == NarQMes ~ (Sigh) At least the mother will be occupied with childcare a bit without the necessity to search out trouble in town.~
 == CVSandrJ ~ Did she do anything wrong, Landrel?~
-== NarQMes ~ Do not worry, mylady, actually she did things right - only just in her own special way.~
+== NarQMes ~ Do not worry, my lady, actually she did things right - only just in her own special way.~
 = ~ <CHARNAME>, can you imagine the sight of a highly pregnant woman emerging in a nightgown and sandals from the Waterdeep sewers with a bloody sword in hand?~
 END
 ++ ~ If the woman's name was Shar-Teel I believe I can imagine such a thing easily. What happened?~ + SanSharBit2
@@ -131,7 +131,7 @@ END
 
 CHAIN
 IF~~ THEN NarQMes SanSharBit2
-~ Lady Shar-Teel found traces of Khattark's former gang a while ago and occasionally hunted down an old member or two. Just two weeks ago she got excited as her street boy scouts brought her news about the remaining gang members getting very nervous about that persue and would gather again to join forces to defend themselves.~
+~ Lady Shar-Teel found traces of Khattark's former gang a while ago and occasionally hunted down an old member or two. Just two weeks ago she got excited as her street boy scouts brought her news about the remaining gang members getting very nervous about that pursue and would gather again to join forces to defend themselves.~
 = ~ So the lady, regardless of her state, quickly decided to make the first move herself...Well, she raided the former hideout of Khattark and destroyed her enemies. When our militia followed her trace they found about forty slain bandits and monsters down there.~
 == CVSandrJ ~ A caring mother, <CHARNAME>, she wants your child to grow up in a save environment.~
 END
@@ -185,10 +185,10 @@ END
 
 CHAIN
 IF~~ THEN NarQMes SanSharNewHome2
-~ Mylord, of course. I guess mylady Sandrah will remember where the House of the Commander of Waterdeep is.~
+~ My lord, of course. I guess milady Sandrah will remember where the House of the Commander of Waterdeep is.~
 == CVSandrJ ~Say, good Landrel, does it mean that Shar-Teel has also inherited the other duties that are associated with the House and the position.~
-== NarQMes ~Mylady, do I need to remind you that this is not subject to open discussion, not even between us?~
-== CVSandrJ ~(Laughs.) I understand this as *yes* and will not inquire further. Quite a career for Angelo Dorsan's daughter.~
+== NarQMes ~Milady, do I need to remind you that this is not subject to open discussion, not even between us?~
+== CVSandrJ ~(Laughs.) I understand this as *yes* and will not inquire further. Quite a career for Angelo Dosan's daughter.~
 =~I assume you urgently want to see our Wildcat at her new home north of the Westgate. At least I cannot wait to congratulate and embrace her once again.~
 END
 ++~That secret mansion between the Inner Walls and the Westgate is now her home? Let's go then.~ EXIT
@@ -211,7 +211,7 @@ IF~Global("SanXephRet","GLOBAL",1)~THEN NarQMes SanWDXephRet
 ~ Mylady Sandrah, darkness has befallen all who follow Mystra!~
 DO~ SetGlobal("SanXephRet","GLOBAL",2)~
 == CVSandrJ ~ One look at your pale face tells me the news is grave indeed.~
-==NarQMes ~ Our Goddess herself is amiss, Sandrah! Captured by the most villaineous sorcerer Faerun has ever known.~
+==NarQMes ~ Our Goddess herself is amiss, Sandrah! Captured by the most villainous sorcerer Faerun has ever known.~
 == CVSandrJ ~ An old acquaintance of mine I suspect, hence you were sent for me.~
 ==NarQMes ~ I was sent also for you, <CHARNAME>, and your other friends, <PLAYER3>, <PLAYER4>, <PLAYER5>, <PLAYER6>, and <PLAYER2>. All the Chosen followers of our Goddess are awaiting you at the Temple.~
 == CVSandrJ ~I anticipate one of those occasion where the gods need the aid of the mortals on our home plane.~

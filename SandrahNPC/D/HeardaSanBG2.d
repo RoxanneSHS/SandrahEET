@@ -125,7 +125,7 @@ IF ~Global("SanHaerRel1","GLOBAL",9)~ THEN BSANDR SanHaerMist4
 DO~ SetGlobal("SanHaerRel1","GLOBAL",10)RealSetGlobalTimer("SanHaerRelT","LOCALS",2000)~
 ==BHAERDA~ (He kisses her forehead lightly.) Sleep and dream, my slumbering goddess, unaware of the power that is growing in you...First I thought you were concealing your true identity, my morning dove, but now I know what I have seen in you is still to come.~
 == BSANDR~ (Yawns) What are you mumbling, my raven? A new poem or is it more?~
-==BHAERDA~ (He smiles and brushes a stray lock from her forehead.) Probably an epos rather than a poem but one that the history of Toril is writing, not your poor little bard here.~
+==BHAERDA~ (He smiles and brushes a stray lock from her forehead.) Probably an epic rather than a poem but one that the history of Toril is writing, not your poor little bard here.~
 == BSANDR~ I sense it that your wandering between the planes has revealed more to you than we *clay born* creatures are supposed to know. Maybe it is better to be unaware of details in our fate that lie still in the future.~
 ==BHAERDA~ As always you are right in your wise perception. What if you knew one thing or other and decide to change something that has to be?~
 == BSANDR~ To know about future events and to change them in the now thus disturbing the continuum of time - it might be desastereous.~

@@ -54,7 +54,7 @@ IF~ Global("SanNalia","GLOBAL",3) ~ THEN BSANDR SanNalscl
 DO ~ SetGlobal("SanNalia","GLOBAL",4)~
 ==BNALIA~ Good you ask, maybe you can help me with that spell here. Either I am too dumb or it is written down incorrectly.~
 ==BSANDR~Hm. It looks to me as something is missing here at the end. But then I am not an expert for learning spells from a scroll, it is not a priestess' way to add to her skills. I am afraid you need to wait until you find a correct version of it.~
-==BNALIA~ Thank you anyway. I have observed that your spellcasting is much different from what I do. ~
+==BNALIA~ Thank you anyway. I have observed that your spell casting is much different from what I do. ~
 ==BSANDR~Mystra is the servant and the guardian of the Weave. She has granted me more and more insight and access to that power over time.~
 ==BNALIA~ Very special indeed - especially as you have denied to hold any high rank in her temple or such.~
 ==BSANDR~Oh? Has <CHARNAME> not told you? I am the granddaughter of Midnight.~
