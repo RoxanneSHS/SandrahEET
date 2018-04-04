@@ -11,12 +11,12 @@ EXIT
 END
 
 IF~~THEN BEGIN PT13
-SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away apruptly.)~
+SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away abruptly.)~
 IF~~THEN REPLY~ But...~ DO ~SetGlobal("SandrahJoined","GLOBAL",52) ActionOverride("CVSandr",MoveBetweenAreas("AR0602",[3057.657],0))~ EXIT
 END
 
 IF ~~ THEN BEGIN PT11
-SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away apruptly.)~
+SAY~No, I have no idea where you will go from here. Only fate or chance can reunite us again. I wish you all the best. (She turns away abruptly.)~
 IF~~THEN REPLY~ But...~ DO~ SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaDestroy(90)~ EXIT
 IF~~THEN REPLY~ Wait...~ DO~ SetGlobal("SandrahJoined","GLOBAL",2) EscapeAreaDestroy(90)~ EXIT
 END
@@ -32,7 +32,7 @@ IF ~Global("SandrahJoined","GLOBAL",2)~ THEN BEGIN KickSPT2
 SAY ~Oh, you are back again. I have missed you so. (Her eyes shimmer like stars when looking at you) I am.... (looks at you hopefully) ~
 IF ~~ THEN REPLY  ~Time to move on, Sandrah. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 IF ~~ THEN REPLY  ~(All of a sudden you feel warm and joyful hearing her voice) I was such a fool, Sandrah! I should never have left you. Things just do not work without you. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXIT
-IF ~~ THEN REPLY ~Well, Sandrah, you need to rest here for a a little longer. I will be back soon.~ EXIT
+IF ~~ THEN REPLY ~Well, Sandrah, you need to rest here for a little longer. I will be back soon.~ EXIT
 END
 
 IF ~Global("SandrahJoined","GLOBAL",3)~ THEN BEGIN KickSPT3
@@ -66,7 +66,7 @@ END
 
 IF ~~ THEN BEGIN OnlyCompanion
 SAY ~ Yes, <CHARNAME>, I will come with you again. But be warned, I do not give up so easily. I will not make a promise that I will not try to win your heart again. ~
-IF ~~ THEN REPLY ~ If your advances at me are the price I have to pay for the best fighter and cleric on the swordcoast, I think I am now man enough to handle it - this way or that. Welcome back, Sandrah. (Kiss her lightly on the cheek.) ~ DO~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXIT
+IF ~~ THEN REPLY ~ If your advances at me are the price I have to pay for the best fighter and cleric on the Sword Coast, I think I am now man enough to handle it - this way or that. Welcome back, Sandrah. (Kiss her lightly on the cheek.) ~ DO~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXIT
 IF ~~ THEN REPLY ~ You may try as you want, but I will not make the same mistake again. I will not loose my heart and soul to you, Sandrah. Come with us for the sake of our mission but nothing more. (Offer her your hand for welcome.) ~ DO~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 END
 
@@ -91,7 +91,7 @@ IF ~~ THEN BEGIN KickSPT42
 SAY ~ Yes, <CHARNAME>, there are. But I if I am not totally wrong, you are a man who wants to reveal them. ~
 = ~ Mind that some of these riddles and connections can only be solved by us together. Are you willing to take a small risk for a large gain? (Smiles at you invitingly) ~
 IF ~~ THEN REPLY ~ Sandrah, if the prize is worth it, I will. And if the price is YOU, I am more than willing to fight for it. (Take her in your arms and kiss her)~ GOTO KickSPT41
-IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozend. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO KickSPT41
+IF ~~ THEN REPLY ~ Oh, you clever tease. You are really the big city girl that breaks hearts by the dozens. And now you are working on mine. Well, I will reveal your secrets one by one (You open the first button of her robe and glance at her magic necklace hanging down between her two well-formed breasts). Watch out, darling, you may end up as the prize won by the fearless <CHARNAME>. (Laugh and take her in your arms to kiss her)~ GOTO KickSPT41
 END
 
 IF ~Global("SandrahJoined","GLOBAL",44)!InParty("Dynaheir")~ THEN BEGIN KickSPT441
@@ -159,7 +159,7 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",6)Global("Sanrompa","Global",2)~ THEN BEGIN BG2Rejoin1
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
-=~ (She rushes into your arms and kisses you spontaniously.)~
+=~ (She rushes into your arms and kisses you spontaneously.)~
 = ~ Oh, I was so afraid and terrified. Are you hurt, let me heal you?~
 IF~~THEN REPLY ~ Sandrah, how have you fared? Has he done something to you?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() SetGlobal("San0602Reunite","LOCALS",1) RealSetGlobalTimer("San0602Int","LOCALS",EIGHT_MINUTES)~ GOTO BG2Rejoin2
 END
@@ -182,7 +182,7 @@ IF~~ THEN REPLY ~ Oh, no. We have no other choice than to search the rest of the
 END
 
 IF ~ Global("SandrahJoined","GLOBAL",7) ~THEN BEGIN AmnReun
-SAY ~ (Sandrah is in deep contemplation over an ancient toom.)~
+SAY ~ (Sandrah is in deep contemplation over an ancient tome.)~
 IF~~THEN REPLY ~ (You adore her from a distance for some time. Will you let her into your life - and into your heart - once again?)~ EXIT
 IF~~THEN REPLY ~ Sandrah, you have forgiven me in the past already and here I am again. I am asking you, please, come with me once again...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO AnmOncM
 IF~~THEN REPLY ~ Sandrah?...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO AnmOncM
@@ -217,7 +217,7 @@ IF~~ THEN REPLY ~What about you, I want you by my side in this but you refused t
 END
 
 IF~~ THEN BEGIN SanIsNoSoldR3
-SAY~ Do not forget, <CHARNAME>, I am your counselor. Those have existed in the armies for long without holding a military rank of sorts. ~
+SAY~ Do not forget, <CHARNAME>, I am your counsellor. Those have existed in the armies for long without holding a military rank of sorts. ~
 IF~~ THEN REPLY ~Well, then the major surely is familiar with that regulation. Fine, let's go.~
 DO~
 SetGlobal("SanNoSold","LOCALS",3) SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~EXIT
@@ -225,13 +225,13 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",52)~ THEN BEGIN BG2Rejoin51
 SAY ~ <CHARNAME>, it is really you! I have finally found you!~
-=~ (She rushes into your arms and kisses you spontaniously.)~
+=~ (She rushes into your arms and kisses you spontaneously.)~
 = ~ Oh, I was so afraid and terrified. Are you hurt, let me heal you?~
 IF~~THEN REPLY ~ Sandrah, where...where do you come from? This is the most unlikely place to see you again that I can imagine?~ DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO BG2Rejoin52
 END
 
 IF~~ THEN BEGIN BG2Rejoin52
-SAY~ I was sent to Amn by my father and Duke Belt to search for you when the duke learned that you had not arrived in Athkatla as expected. Belt asked Elminster to devine your location and it was decided to send an undercover agent to Amn to investigate further. Logically the choice fell on me.~
+SAY~ I was sent to Amn by my father and Duke Belt to search for you when the duke learned that you had not arrived in Athkatla as expected. Belt asked Elminster to divine your location and it was decided to send an undercover agent to Amn to investigate further. Logically the choice fell on me.~
 IF~~THEN REPLY ~ That is good. I am so relieved. But do you know anything more then? We have no idea what has happened or where we are.~ DO ~SetGlobal("SanSentBelt","GLOBAL",1)~
 GOTO BG2Rejoin3
 END
@@ -239,7 +239,7 @@ END
 IF~Global("SandrahJoined","GLOBAL",16)~THEN BEGIN TalosRejun1
 SAY~Seasick, traveller?~
 IF~~THEN REPLY~ Sandrah!! Oh, I was so afraid and terrified but I was sure you would make it without us. ~DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
-IF~~THEN REPLY~ You are unbelievable, my fearless counselor. You made it to here even quicker than we could. This can only be Mystra's work!!~  DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
+IF~~THEN REPLY~ You are unbelievable, my fearless counsellor. You made it to here even quicker than we could. This can only be Mystra's work!!~  DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
 END
 
 IF~~ THEN BEGIN TalosRejun2

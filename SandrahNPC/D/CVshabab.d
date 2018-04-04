@@ -39,7 +39,7 @@ IF ~Global("SanSharNewHome","GLOBAL",1)GlobalGT("SanSharInt","GLOBAL",35)~ THEN 
 DO~SetGlobal("SanSharNewHome","GLOBAL",2)~
 ==Sangori~Pa-pa.~
 ==BSandr~Congratulation, wildcat, or do I need to say Lord Commander...~
-==CVshabab~Psst, well, yes. But you know your hometown's customs well, pussycat, this is not to be trumpeted out into the public.~
+==CVshabab~Psst, well, yes. But you know your home town's customs well, pussycat, this is not to be trumpeted out into the public.~
 ==BSandr~I consider myself part of the family...in a way.~
 ==CVshabab ~Of course you are...~
 =~But now, <CHARNAME>, stop standing there like a stooge. Your family waits for you...~
@@ -82,7 +82,7 @@ IF~~THEN CVshabab Angel1
 ~Hm, there must be a good reason you let him travel with you. Has our Pussycat healer inserted a brain into his empty nutshell head after all?~
 ==Sangori~Grand-pa?~
 ==IF_FILE_EXISTS ADAngelJ ~ There are many things I have done wrong in my life, Shar-Teel, especially to you. Since I travel with <CHARNAME> I have gained insight into some or the other mistake, believe me.~
-==CVshabab~I will not shed your blood in front of the child unless you make a false move. Know however, you are neither dad nor granddad in this house. And one false move within the Watergate city limits and you'll rot in Untermountain, I swear it.~
+==CVshabab~I will not shed your blood in front of the child unless you make a false move. Know however, you are neither dad nor granddad in this house. And one false move within the Watergate city limits and you'll rot in Undermountain, I swear it.~
 ==IF_FILE_EXISTS ADAngelJ ~ It's good to see you take your occupation seriously, as mother as well as Commander.~EXIT
 
 CHAIN
@@ -92,8 +92,8 @@ IF ~Global("SanSharNewHome","GLOBAL",1)Global("SanSharCom","GLOBAL",8)~ THEN CVs
 DO~SetGlobal("SanSharNewHome","GLOBAL",3)~
 ==Sangori~Big heroes.~
 ==BSandr~Congratulation, wildcat, or do I need to say Lord Commander...~
-==CVshabab~ Psst, well, yes. But you know your hometown's customs well, Pussycat, this is not to be trumpeted out into the public.~
-==BSandr~Anyway, It is good to know that my hometown's safety is in capable hands.~
+==CVshabab~ Psst, well, yes. But you know your home town's customs well, Pussycat, this is not to be trumpeted out into the public.~
+==BSandr~Anyway, It is good to know that my home town's safety is in capable hands.~
 END
 ++~You named your child Gorion? You are full of surprises, Shar-Teel.~EXIT
 
@@ -109,5 +109,5 @@ END
 IF~~THEN CVshabab Angel2
 ~Hm, there must be a good reason you let him travel with you. Has our Pussycat healer inserted a brain into his empty nutshell head after all?~
 ==IF_FILE_EXISTS ADAngelJ ~ There are many things I have done wrong in my life, Shar-Teel, especially to you. Since I travel with <CHARNAME> I have gained insight into some or the other mistake, believe me.~
-==CVshabab~I will not shed your blood in my own home unless you make a false move. Know however, you are neither dad nor friend in this house. And one false move within the Watergate city limits and you'll rot in Untermountain, I swear it.~
+==CVshabab~I will not shed your blood in my own home unless you make a false move. Know however, you are neither dad nor friend in this house. And one false move within the Watergate city limits and you'll rot in Undermountain, I swear it.~
 ==IF_FILE_EXISTS ADAngelJ ~ It's good to see you take your occupation seriously, as chief's wife as well as Commander.~EXIT
