@@ -15,8 +15,8 @@ IF WEIGHT #-3~Global("SanDaceB","GLOBAL",6)~THEN BT#Dace DaceSan2
 ~Hey, Sandrah-kid, say - you and <CHARNAME> 've been hunted by quite a few folks for some while?~
 DO~SetGlobal("SanDaceB","GLOBAL",7) RealSetGlobalTimer("SanDaceTime","LOCALS",1640)~
 ==BSandr~You might as well say that we have been the hunters in as many cases as well. And often, we may have been prey and hunter at the same time.~
-==BT#Dace~But now, with that Irenicus mage you're the hunters and it's quite approriate you've got me in your ranks.~
-==BSandr~I am sure it is a good think to team with you. I am not sure about the role of hunter and prey in this case. It was Irenicus who was hunting us. He made some strange offers to <CHARNAME> that obviously have to do with the Bhaal heritage. He knows we need to persue him to free Imoen. He counts on that.~
+==BT#Dace~But now, with that Irenicus mage you're the hunters and it's quite appropriate you've got me in your ranks.~
+==BSandr~I am sure it is a good think to team with you. I am not sure about the role of hunter and prey in this case. It was Irenicus who was hunting us. He made some strange offers to <CHARNAME> that obviously have to do with the Bhaal heritage. He knows we need to pursue him to free Imoen. He counts on that.~
 ==BT#Dace~It's a trap then, that whatcha think, kid?~
 ==BSandr~He still wants something from <CHARNAME>. He was interrupted down there beneath Athkatla before he could finish his work. All he has to do is wait.~
 ==BT#Dace~Hm...if we want to rescue that Imoen-girl we must move, there's no way 'round that.~
@@ -67,7 +67,7 @@ IF~~THEN BT#Dace DaceSan6
 ==BSandr~Yes, I call him...~
 ==BT#Dace~Sshh, dontcha tell me, I don't needa know. Keep it for yours and him 'n' let me keep *Ducky* between him and me, got me?~
 ==BSandr~Fine, I think you are right in your typical Dace way. We both have our own unique relationship with that special man, and our own names to make it private and precious.~
-==BT#Dace~Brilliant, kid, I knew you had the stomach for this. Alright with you, Ducky?~
+==BT#Dace~Brilliant, kid, I knew you had the stomach for this. All right with you, Ducky?~
 END
 ++~Whatever you say, Dace - whatever you say, Sandrah.~EXIT
 

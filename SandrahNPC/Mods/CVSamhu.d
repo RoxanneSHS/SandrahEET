@@ -17,7 +17,7 @@ IF~~THEN CVSAMHU hints2
 ~Cough...~
 ==CVSandrJ ~I am doing what is possible here in the field. We must bring him to the temple where he can get the rest and care he needs.~
 ==CVSAMHU~ Beware of the Flaming Fist...are no longer a force of law and order...Angelo Dosan has sold them to the service of the Iron Throne...~
-==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scumbag - that's how the *great hero* ends, a bloody traitor.~
+==SHARTJ IF~InParty("SHARTEEL")~ THEN~ Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You must hate him worse than I do for what he did to me.~
 ==SHARTJ IF~InParty("SHARTEEL")~ THEN~That's nothing compared to what he did to me, the scoundrel who copulated with that whore who called herself my mother.~
 ==CVSAMHU IF~InParty("SHARTEEL")~ THEN~ You are his daughter? Poor girl, you suffer indeed worse than me.~

@@ -4,7 +4,7 @@ IF~Global("SanDauroQ","GLOBAL",3) ~THEN CVDaudem TalkDauro
 DO~SetGlobal("SanDauroQ","GLOBAL",4)~
 ==CVDauro~You feed on innocent children and destroy the life of their families. We cannot let you go on.~
 ==CVDaudem~ Your mortal morals are irrelevant for me. Each child's soul gives me a ten day stay on your plane.~
-==BSandr~ And a demon's death on the surface gives him two hundered years of suffering in the abyss.~
+==BSandr~ And a demon's death on the surface gives him two hundred years of suffering in the abyss.~
 ==CVDaudem~ Ha, that almost sounds like a threat if it did not come from my next victim.~
 =~Paladin, I see you brought some company to go down with you. That makes seven tendays for me at once, hahaha.~
 ==BSandr~ I prefer the mentioned two hundred years of suffering for you.~

@@ -36,7 +36,7 @@ IF ~~ THEN REPLY ~I am a lucky <PRO_MANWOMAN>, yes, but my time in Candlekeep is
 END
 
 IF ~~ THEN BEGIN 5
-SAY ~Oh! Oh, I promise that I regret my inattention. I did not meant to cause offense! Please! Accept my apology!~
+SAY ~Oh! Oh, I promise that I regret my inattention. I did not meant to cause offence! Please! Accept my apology!~
 IF ~~ THEN REPLY ~Do not get so flustered; I should not have made such an issue of a slight bump. Consider it forgotten. Say, what is that you are reciting? It sounds intriguing.~ GOTO 2
 IF ~~ THEN REPLY  ~Worry your head no further. I accept your apology. Say, haven't I seen you wandering around Candlekeep the past tenday? Who are you?~ GOTO 4
 IF ~~ THEN REPLY ~Oh, it's you, Finch. I did not recognize you with your head out of a book. I thought you were leaving Candlekeep soon, or was that wishful thinking?~ GOTO 7
@@ -53,7 +53,7 @@ IF ~~ THEN REPLY ~You try my patience. Move on, little one, lest you want me to 
 IF ~~ THEN REPLY ~I was just kidding, Finch, old pal! Don't be so sensitive! What's new in the world of literature?~ GOTO 8
 IF ~~ THEN REPLY ~Or they can learn just how thin-skinned you can be. You really should spend more time with people and less with books, Finch. Perhaps then, you wouldn't take a joke so seriously.~ GOTO 22
 IF ~~ THEN REPLY ~No, I really want to know. When are you leaving Candlekeep? I take a trip soon with my foster father, Gorion. I am anxious to venture outside these walls, but it might be nice to have additional familiar company.~ GOTO 25
-IF ~~ THEN REPLY ~No, I really want to know. When are you leaving Candlekeep? I take a trip soon with my foster father, Gorion, and I'd hate to wind up traveling the road alongside a bore like you.~ GOTO 6
+IF ~~ THEN REPLY ~No, I really want to know. When are you leaving Candlekeep? I take a trip soon with my foster father, Gorion, and I'd hate to wind up travelling the road alongside a bore like you.~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 8
@@ -98,9 +98,9 @@ IF ~~ THEN REPLY ~Ah, you are a cleric of Deneir. No wonder you love this place.
 END
 
 IF ~~ THEN BEGIN 16
-SAY ~Making sport out of another's race or stature is one of the lowest forms of humor. The shortcomings of that comedic strategy are well-documented in Sir Feliks Jongleur's compendium on the subject, "Funny Stuff, Volumes One through Twenty-Nine and Three-Quarters." I highly recommend them to anyone short on wit.~
+SAY ~Making sport out of another's race or stature is one of the lowest forms of humour. The shortcomings of that comedic strategy are well-documented in Sir Feliks Jongleur's compendium on the subject, "Funny Stuff, Volumes One through Twenty-Nine and Three-Quarters." I highly recommend them to anyone short on wit.~
 IF ~~ THEN REPLY ~Shortcomings? Did you just make a pun?~  GOTO 40
-IF ~~ THEN REPLY ~Congratulations. You have succeeded in sucking all sense of humor and fun out of me in five seconds flat.~ GOTO 36
+IF ~~ THEN REPLY ~Congratulations. You have succeeded in sucking all sense of humour and fun out of me in five seconds flat.~ GOTO 36
 IF ~~ THEN REPLY ~Sir Feliks Jongleur...? Did you just make that up?~ GOTO 44
 IF ~~ THEN REPLY ~All right! All right! That was a lame joke! I apologize!~ GOTO 48
 END
@@ -167,12 +167,12 @@ IF ~~ THEN BEGIN 36
 SAY ~Oh, I was actually trying to be funny, myself. I made a pun, you see...? Though not a very good one, I admit. (sigh) I am not very skilled at talking to people.~
 =~Alas, I have dallied in Candlekeep longer than I should have in service of my temple, though I am certain Deneir would understand.~
 =~I must leave with all haste. I have a list of works needed to establish a new library on the Amnish border. I located a likely seller of one volume in Beregost, so off I go!~
-=~Perhaps we shall meet again. Mayhaps I will be more entertaining next time. I bid you farewell!~
+=~Perhaps we shall meet again. Mayhap I will be more entertaining next time. I bid you farewell!~
 IF ~~ THEN DO ~MoveBetweenAreas("BG3357",[515.405],0) ~ EXIT
 END
 
 IF ~~ THEN BEGIN 40
-SAY ~Yes. I am sorry. Puns are a poor sort of humor, as well. I really should know better. Still, it was fun to talk to you!~
+SAY ~Yes. I am sorry. Puns are a poor sort of humour, as well. I really should know better. Still, it was fun to talk to you!~
 =~Alas, I have dallied in Candlekeep longer than I should have in service of my temple, though I am certain Deneir would understand.~
 =~Anyhow, I leave with all haste. I have a list of works needed to establish a new library on the Amnish border. I located a likely seller of one volume in Beregost, so off I go!~
 =~Perhaps we shall meet again. I bid you farewell!~
