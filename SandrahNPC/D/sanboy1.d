@@ -6,7 +6,7 @@ IF ~ NumTimesTalkedTO(0) ~ THEN Sanboy1 messgiv
 == BSANDR ~ I am, little one. ~
 == Sanboy1 ~ Not little. Big enough to give you this from that old man with the strange hat. ~ DO ~ GiveItemCreate("Sanboy1","CVSandr",0,0,0) ~
 == BSANDR ~ Where is he now? ~
-== Sanboy1 ~ He disappeared when he gave me the paper. Said you will give me 200 Goldpieces for it. (Gets red in the face).~ DO ~ EscapeArea()~
+== Sanboy1 ~ He disappeared when he gave me the paper. Said you will give me 200 gold pieces for it. (Gets red in the face).~ DO ~ EscapeArea()~
 == BSANDR ~ Here you are, little thief. ~ DO ~ TakePartyGold(5)~
 EXIT
 
@@ -36,9 +36,9 @@ DO~ SetGlobal("Entered","CVSH14",2)~
 == BSANDR ~ Giran? What are you doing here in Clan Orc land in the middle of a civil war?~
 == Sanboy1 ~This is a long story with a happy ending for sure. When I left Beregost with my uncle to settle in our new home in Amn we were ambushed and my uncle was killed by those slavers.~
 == BSANDR ~ Slavers! We destroyed many of them but obviously not enough. They sell children to the orcs, these bastards.~
-== Sanboy1 ~They said that's where I belong as unbehaved as I was and setting half their camp on fire one night - but don't worry - becoming orc is the best part of it.~
+== Sanboy1 ~They said that's where I belong as ill-mannered as I was and setting half their camp on fire one night - but don't worry - becoming orc is the best part of it.~
 == BSANDR ~Really?~
-== Sanboy1 ~Sure, now that the new princess rules. She's been a slavegirl herself and has freed all of us, trying to send us back home. Only I won't go.~
+== Sanboy1 ~Sure, now that the new princess rules. She's been a slave-girl herself and has freed all of us, trying to send us back home. Only I won't go.~
 == BSANDR ~You have nobody to go to in the south?~
 == Sanboy1 ~Nay - with uncle gone there is no one. But up here, Shauhana is as beautiful as you are, lady Sandrah (blushes deep red)...and Minsc, her hero, he will teach me to become a real orcish Berserker as soon as my fourteenth summer comes.~
 == BSANDR ~ We are on our way to meet those two...~

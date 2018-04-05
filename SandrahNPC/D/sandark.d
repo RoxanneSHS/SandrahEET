@@ -41,7 +41,7 @@ DO ~ SetGlobal("Sandark","GLOBAL",4)IncrementGlobal("Sanpoints","GLOBAL",-3)Repu
 INTERJECT_COPY_TRANS JETLAJ 1 SanJetSis
 == JETLAJ IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4)~ THEN~ And ye, Sandrah, with all yer experience and skill, ye see no way we could help her?~
 == BSANDR IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4) ~ THEN~ Be honest to yourself, my friend, you are skilled yourself - enough to know that to cure a creature like your sister, her own will must support the task of the healer.~
-== JETLAJ IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4)~ THEN~ With her mind gone or contolled by the Lich as it is, there's no such will from her side I am afraid.~
+== JETLAJ IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4)~ THEN~ With her mind gone or controlled by the Lich as it is, there's no such will from her side I am afraid.~
 == BSANDR IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4) ~THEN~ Then we have to be strong enough to go the only way possible in this case and release her poor soul from the endless pain that awaits her.~ DO ~ SetGlobal("SanHealJet","GLOBAL",4)~
 == JETLAJ IF ~ InParty("CVSandr")GlobalLT("SanHealJet","GLOBAL",4)~ THEN~ I thank ye very much, Sandrah, for assuring me the terrible thing I have tai do is still the only possible way tai help my sister.~
 END
@@ -66,7 +66,7 @@ IF ~~ THEN BSANDR JetHealed
 DO ~ SetGlobal("SanHealJet","GLOBAL",4)~
 == JETLAJ~ And ye, with all yer experience and skill, ye see no way we could help her?~
 == BSANDR  ~ Be honest to yourself, my friend, you are skilled yourself - enough to know that to cure a creature like your sister, her own will must support the task of the healer.~
-== JETLAJ~ With her mind gone or contolled by the Lich as it is, there's no such will from her side I am afraid.~
+== JETLAJ~ With her mind gone or controlled by the Lich as it is, there's no such will from her side I am afraid.~
 == BSANDR  ~ Then we have to be strong enough to go the only way possible in this case and release her poor soul from the endless pain that awaits her.~
 == JETLAJ~ I thank ye very much, Sandrah, for assuring me the terrible thing I have tai do is still the only possible way tai help my sister.~
 EXIT
@@ -76,7 +76,7 @@ IF ~ Global("SanJetAml","LOCALS",1)~ THEN BSANDR SanJetSisD
 ~ (Sandrah has taken Jet'laya in her arms and silently caresses the sobbing girl's head.)~
 DO ~ SetGlobal("SanJetAml","LOCALS",2)~
 == JETLAJ~ I know 'thad tai be done and we should feel better now, but it still hurts deep.~
-== BSANDR  ~ You have seen that she was not herself anymore but only a monster controlled by that dark lich by now.~
+== BSANDR  ~ You have seen that she was not herself any more but only a monster controlled by that dark lich by now.~
 == JETLAJ~ You are right, my friend. My sister is dead for long already, now her poor soul is free from the suffering in eternity that was foreseen for her by the fiend.~
 == BSANDR  ~ We should seek to destroy the evil now, <CHARNAME>. Others are still held in a similar way. If we do not stop him, he will soon seek another victim to replace Ferium.~
 END
@@ -86,10 +86,10 @@ END
 
 CHAIN
 IF ~~ THEN BSANDR SanJetSisD2
-~ We have seen other souls captured by the Dark One in the wood south of here. It is known that such a lich can be destroyed once you have the phiol that contains his soul essence, otherwise he will be able to restore himself continously. A lich must have this essence always near to him but will never have it on himself for contingency.~
+~ We have seen other souls captured by the Dark One in the wood south of here. It is known that such a lich can be destroyed once you have the phial that contains his soul essence, otherwise he will be able to restore himself continuously. A lich must have this essence always near to him but will never have it on himself for contingency.~
 END
-++ ~ There was an unaccessible rotting house by that lake in the south. This may be a good place for the creature to hide his essence and have it near enough for his needs. We could explore for a way to get to it somehow.~ DO ~ AddexperienceParty(2500)~ EXIT
-++ ~ Seek for a needle in a haystick while fighting off the most dangerous creature we have ever encountered. Sandrah, you are a genius. We never had so much fun before. It is an opportunity we should not miss.~ + SanJetSisD3
+++ ~ There was an inaccessible rotting house by that lake in the south. This may be a good place for the creature to hide his essence and have it near enough for his needs. We could explore for a way to get to it somehow.~ DO ~ AddexperienceParty(2500)~ EXIT
+++ ~ Seek for a needle in a haystack while fighting off the most dangerous creature we have ever encountered. Sandrah, you are a genius. We never had so much fun before. It is an opportunity we should not miss.~ + SanJetSisD3
 
 CHAIN
 IF ~~ THEN BSANDR SanJetSisD3

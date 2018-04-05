@@ -8,11 +8,11 @@ IF~InParty("CVSandr") GlobalGT("SanWDTempleRha","GLOBAL",0)~THEN GOTO Mystprg3
 END
 
 IF~~THEN BEGIN Mystprg2
-SAY ~ Greetings, Mylady Sandrah, Grandchild of Midnight, Guardian of the Cloak. It is a pleasure to greet you at your temple. You should talk to the Chosen Priestess Rhathona during your stay.~
+SAY ~ Greetings, Milady Sandrah, Grandchild of Midnight, Guardian of the Cloak. It is a pleasure to greet you at your temple. You should talk to the Chosen Priestess Rhathona during your stay.~
 IF~~THEN DO ~ SetGlobal("SanWDTempleRha","GLOBAL",1)~ EXIT
 END
 
 IF~~THEN BEGIN Mystprg3
-SAY ~ Enjoy your stay, Mylady Sandrah, Grandchild of Midnight, Guardian of the Cloak. Everything is to your service.~
+SAY ~ Enjoy your stay, Milady Sandrah, Grandchild of Midnight, Guardian of the Cloak. Everything is to your service.~
 IF~~THEN EXIT
 END
