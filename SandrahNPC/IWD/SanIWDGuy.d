@@ -26,7 +26,7 @@ IF~~THEN REPLY~We have no time for any additional tasks, sorry.~ GOTO IWD21
 END
 
 IF~~THEN BEGIN IWD21
-SAY~The town of Easthaven calls interested adventurers and mercenaries for a task that guarantees richess and fame ~
+SAY~The town of Easthaven calls interested adventurers and mercenaries for a task that guarantees riches and fame ~
 IF~~THEN REPLY~Easthaven, isn't that in Icewind Dale? ~GOTO IWD22
 IF~~THEN REPLY~Easthaven is far in the north, isn't it? ~GOTO IWD22
 IF~~THEN REPLY~You bore me already, guy, get lost.~EXIT
@@ -34,7 +34,7 @@ IF~~THEN REPLY~It does not hurt to listen to the details, I will decide afterwar
 END
 
 IF~~THEN BEGIN IWD22
-SAY ~ Easthaven is a town in the Icewind Dale. Trouble has been reported up in the region and the neighbouring hamlett of Kuldahar asked for help.~
+SAY ~ Easthaven is a town in the Icewind Dale. Trouble has been reported up in the region and the neighbouring hamlet of Kuldahar asked for help.~
 IF~Global("BrageRiddle","GLOBAL",2)~THEN GOTO IWD24
 IF~!Global("BrageRiddle","GLOBAL",2)~THEN GOTO IWD23
 END

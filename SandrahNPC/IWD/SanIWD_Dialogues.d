@@ -1,6 +1,6 @@
 CHAIN
 IF WEIGHT #-3~Global("SanIDW1","Global",1)~THEN CVSandrJ IWD1Start1
-~Time to search my backpack for some warmer undergarnments, I would say.~
+~Time to search my backpack for some warmer undergarments, I would say.~
 DO~SetGlobal("SanIDW1","Global",2)~
 END
 ++~Waterdeep style? I cannot wait to see you in it.~ + IWD1Start2
@@ -29,7 +29,7 @@ END
 
 CHAIN
 IF WEIGHT #-3~Global("SanIDW1","Global",5)~THEN CVSandrJ IWD1Gem1
-~ Somebody else has been here already - we may not be alone in our persuit of the gem.~
+~ Somebody else has been here already - we may not be alone in our pursuit of the gem.~
 DO~SetGlobal("SanIDW1","Global",6)~
 END
 ++~The priest at the entrance sounded like there was an attack recently.~ + IWD1Gem2
@@ -59,11 +59,11 @@ DO~SetGlobal("SanIDW1","Global",8)~
 =~When I think of intelligent snakes, I think of Yuan-ti...but the name does not fit.~
 END
 ++~A powerful being that is able to unite lizard folks, maybe Yuan-ti and other unusual creatures.~ + IWD1yxu2
-++~All these creatures have in common that they like it warm, the old vulcano serves them well.~ + IWD1yxu2
+++~All these creatures have in common that they like it warm, the old volcano serves them well.~ + IWD1yxu2
 
 CHAIN
 IF~~ THEN CVSandrJ IWD1yxu2
-~A valid remark. Are these weather experiments the result of an attempt to return Icewind Dale to its ancient jungle-like state wherin Yxunomei's serpentine followers could prosper?~
+~A valid remark. Are these weather experiments the result of an attempt to return Icewind Dale to its ancient jungle-like state wherein Yxunomei's serpentine followers could prosper?~
 END
 ++~What kind of creature has such power?~ + IWD1yxu3
 ++~Are we facing some minor deity in the end?~ + IWD1yxu3
@@ -141,7 +141,7 @@ END
 CHAIN
 IF~~ THEN CVSandrJ IWD1hand2
 ~The fortress once ruled the surrounding lands and kept the orcs of the region at bay. The elves here forged a close alliance with the dwarves of Dorn's Deep and together crafted some of the greatest magical arms, armour and other items of that age. For centuries, elves lived in peace in the fortress.~
-=~After a while, it was discovered by the elves that several orc tribes were armed with those magical weapons forged by the elves and the dwarves. Larrel, the archmage and ruler of the Hand - the ghost we were sent to find - immediately blamed the dwarves for supplying the orcs and broke off all ties.~
+=~After a while, it was discovered by the elves that several orc tribes were armed with those magical weapons forged by the elves and the dwarves. Larrel, the arch mage and ruler of the Hand - the ghost we were sent to find - immediately blamed the dwarves for supplying the orcs and broke off all ties.~
 =~Here we stand at the remains of that old conflict. There was some treachery involved that was never revealed and therefore the Hand is said to be full of the restless ghosts of old.~
 END
 ++~Maybe we will find out what really happened long ago.~ EXIT
@@ -180,7 +180,7 @@ END
 CHAIN
 IF~~THEN CVSandrJ IWD1popeq3
 ~The god of endurance, suffering, and martyrdom may not act directly against the sacrilege - and while you mentioned my goddess, do I need to remind you that her priestess is here and willing to end this quest. Mystra helps those who decided to act and help themselves, she is on your side in this demon hunt.~ 
-=~Besides, there is another thing to consider, Ever since the Times of Trouble, gods become vulnerable when they visit the Prime Material Plane. If they chose to walk among us mortals they need to do it in mortal avatars. Even if still very powerful beings, it means they can die - or be killed by one of the other celestials greedy for their portefolio.~ EXIT
+=~Besides, there is another thing to consider, Ever since the Times of Trouble, gods become vulnerable when they visit the Prime Material Plane. If they chose to walk among us mortals they need to do it in mortal avatars. Even if still very powerful beings, it means they can die - or be killed by one of the other celestials greedy for their portfolio.~ EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("SanIDW1","Global",19)~THEN CVSandrJ IWD1Mines1
@@ -211,7 +211,7 @@ END
 
 CHAIN
 IF ~~THEN CVSandrJ IWD1EahRet3
-~There is an existing one here in the temple, a portal to Baator. It was sealed generations ago by the barbarian shaman Jerrod when he sacrificed himself in a battle against the archmage Arakon, who had created the gate to summon a demon horde to serve him in conquering the North. ~
+~There is an existing one here in the temple, a portal to Baator. It was sealed generations ago by the barbarian shaman Jerrod when he sacrificed himself in a battle against the arch mage Arakon, who had created the gate to summon a demon horde to serve him in conquering the North. ~
 END
 ++~I see. We must prevent the demon to re-open that portal. Who else is left to do the job... ~  EXIT
 ++~One demon is a challenge, but a horde entering through a portal from Baator will be total destruction, we cannot let that happen.~ EXIT
@@ -239,7 +239,7 @@ END
 
 CHAIN
 IF WEIGHT #-3~Global("SanHOWScar","Global",1) ~THEN Scar IWDIron1
-~On a word please, mylady Sandrah.~
+~On a word please, milady Sandrah.~
 DO~SetGlobal("SanHOWScar","Global",2) ~
 ==CVSandrJ~Scar, we did not expect to see you so soon again.~
 ==Scar~You will understand in a minute, I am sure.~
@@ -261,11 +261,11 @@ END
 
 CHAIN
 IF ~~THEN Scar IWDIron2
-~I gave you the facts and I will mark Lonelywood on your map. I can offer you no richess but the experience you may gain on that mission. Think about it and make your decision well. This is all I ask of you this time. ~DO~ EscapeArea()~EXIT
+~I gave you the facts and I will mark Lonelywood on your map. I can offer you no riches but the experience you may gain on that mission. Think about it and make your decision well. This is all I ask of you this time. ~DO~ EscapeArea()~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("SanHOWScar","Global",4) InParty("CVSandr") ~THEN Scar IWDRetu1
-~Yes, <CHARNAME>. mylady Sandrah?~
+~Yes, <CHARNAME>. milady Sandrah?~
 DO~SetGlobal("SanHOWScar","Global",5) ~
 ==CVSandrJ~Scar, we have been to Lonelywood and beyond. (Sandrah gives a detailed report about your mission to Icewind Dale - except...she does not mention your discovery of the ore on Burial Island at all.)~
 ==Scar~Another example of those criminal Iron Throne activities. Duke Eltan will not be delighted to hear that. Had there really been iron up there in the region, they would have prevented its digging, even on the price of a bloody local conflict, just to keep up the crisis.~
@@ -288,7 +288,7 @@ END
 
 CHAIN
 IF~~ THEN CVSandrJ IWDIronM2
-~(Laughs) Experienced adventurers? We are in a new town - find an inn for gossip, inquire the major, check for supplies - once done, we need to find the babarian camp that Hjollder mentioned.~
+~(Laughs) Experienced adventurers? We are in a new town - find an inn for gossip, inquire the major, check for supplies - once done, we need to find the barbarian camp that Hjollder mentioned.~
 END
 ++~(Grin) I'm lucky to have such a competent counselor.~EXIT
 ++~The daily adventurer routine, hope it was worth the journey.~EXIT
@@ -305,7 +305,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ IWDIronC2
-~The interesting question is, who knows about the ore's existence in this place except for those dwarves who cannot talk anymore.~
+~The interesting question is, who knows about the ore's existence in this place except for those dwarves who cannot talk any more.~
 =~I believe what Wylfdene told us, his tribes are no diggers and the shaman's and the dead are the only ones who enter here. None of them values this material other than because of its magnetic attributes that probably were the reason to chose this place for the holy burial grounds.~
 =~The people of Lonelywood have no idea as well, the ghosts and watchers keep them away.~
 END
@@ -388,7 +388,7 @@ END
 I_C_T DHroth 10 SanIWDBrage
 ==DHroth IF~InParty("CVSandr")~THEN~My last candidate, Brage, was just to eager to move further and would not waste time with this adventure.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Brage? Brage from Nashkel?~
-==DHroth IF~InParty("CVSandr")~THEN~A friend of yours, mylady?~
+==DHroth IF~InParty("CVSandr")~THEN~A friend of yours, my lady?~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Someone we met and helped during our journeys. What may have led him so far to the north?~
 ==DHroth IF~InParty("CVSandr")~THEN~A search, as far as I could tell from the little he spoke, someone or something called Sharkta Fai.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Maybe we will see him again if we follow your invitation.~END
@@ -415,7 +415,7 @@ IF~~THEN DKieran2 IronT
 ==CVSandrJ~Hm - and those others, are they waiting for him to return?~
 ==DKieran2~As innkeeper you get an eye for some types, I can tell you. No, I think they observe...the talkative guy, the one who's with the girl, he mentioned that no ore's supposed to leave town for the south. ~
 ==CVSandrJ~Where would that ore come from, Lonelywood is no mining town?~
-==DKieran2~A valid observation, mylady. No idea what ore they talk about.~
+==DKieran2~A valid observation, my-lady. No idea what ore they talk about.~
 END
 IF~~THEN REPLY~I see. Let me ask you something else.~GOTO 1
 
@@ -447,7 +447,7 @@ CHAIN
 IF~~THEN DTybald IronTT
 ~Strange or maybe not? He may be the boss and stay with the mayor while his servants are at the inn. Maybe that's how those fine people handle it.~
 ==CVSandrJ~But you are sure they belong together?~
-==DTybald~A lonely man, a noble man, coming all alone at this time of year through inpenetrable hostile land from the south and a bunch of bodyguards or whatever they are coming same day on same route? I may not be a genius, but whom do they try to fool with pretending they are different groups.~
+==DTybald~A lonely man, a noble man, coming all alone at this time of year through impenetrable hostile land from the south and a bunch of bodyguards or whatever they are coming same day on same route? I may not be a genius, but whom do they try to fool with pretending they are different groups.~
 END
 ++~Makes sense to me. If he spoke to none of you, then how do you know he was from the Ten Towns?~+ 31
 
