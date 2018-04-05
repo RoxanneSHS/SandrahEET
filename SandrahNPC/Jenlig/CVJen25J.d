@@ -4,7 +4,7 @@ BEGIN CVJen25J
 
 IF ~ IsGabber(Player1) Global("Melissanjob","GLOBAL",1) ~ THEN BEGIN JenPCInit25
 SAY ~ (Jen'lig's emotionless reptile-like face awaits her *commander's* words.)~
-IF~Global("Badtiming","LOCALS",0)~THEN REPLY~It looks like you traded the turmoil of your homeplane for a similar siuation on the Prime.~DO~SetGlobal("Badtiming","LOCALS",1)~GOTO TwoOdds1
+IF~Global("Badtiming","LOCALS",0)~THEN REPLY~It looks like you traded the turmoil of your home plane for a similar situation on the Prime.~DO~SetGlobal("Badtiming","LOCALS",1)~GOTO TwoOdds1
 IF~~THEN REPLY~It's good you found your way back to us, Jen'lig.~GOTO Bestplace
 IF~Global("SanJenship","GLOBAL",7)~THEN REPLY~I wonder why none of the githyanki sent after you carried a silver sword even though they must have been high ranked enforcers.~GOTO Nosword1
 IF~Global("SanJenship","GLOBAL",8) PartyHasItem("CVJenglo") InParty("CVSandr")~THEN REPLY~Are you willing to tell me something of that globe we found on the githyanki ship?~GOTO Minglo1
@@ -12,7 +12,7 @@ IF~Global("CVJenTOBRet","GLOBAL",13) Global("Mindglo2","LOCALS",0)~THEN REPLY~Sa
 END
 
 IF~~THEN BEGIN Minglo1
-SAY~Githyanki Mind Cage. Was to capture Jen'lig's mindpower from her for Queen - when enforcers had killed Jen'lig on prime.~
+SAY~Githyanki Mind Cage. Was to capture Jen'lig's mind power from her for Queen - when enforcers had killed Jen'lig on prime.~
 IF~~THEN REPLY~I already learned your race never gives up when they hunt. Why did you keep it?~GOTO Minglo2
 IF~~THEN REPLY~A devilish device. Why do you carry it instead of destroying it?~GOTO Minglo2
 END
@@ -49,7 +49,7 @@ IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN TwoOdds1
-SAY~(Hiss) Gihyanki not run from fight. Jen'lig at side of commander in these days make more sense than run and fight own kin as long as there is no chance to change godqueen's mind at home.~
+SAY~(Hiss) Githyanki not run from fight. Jen'lig at side of commander in these days make more sense than run and fight own kin as long as there is no chance to change godqueen's mind at home.~
 IF~~THEN REPLY~Maybe I can pay back your loyalty for me one day. Who knows what may come out of this Bhaalwar for us. You help me and I will try to help you- if I can.~GOTO TwoOdds2
 IF~~THEN REPLY~A logical reasoning and I am not blind to the advantages of your presence in my *cadre*.~EXIT
 IF~~THEN REPLY~Your abilities more than compensate for the shelter that our group provides for a hunted githyanki.~EXIT
@@ -130,7 +130,7 @@ EXIT
 
 INTERJECT_COPY_TRANS Bazdra03 9 CVJenGloUpgr
 ==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~ Child of Tiamat, listen to Jen'lig of Tother-Ka from Tu'narath who asks for service.~
-==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~I read your insignia, Jen'lig, planewalker commander, true daughter of Gith. What do you demand out of the old pact of Tiamat and Gith?~
+==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~I read your insignia, Jen'lig, Planewalker commander, true daughter of Gith. What do you demand out of the old pact of Tiamat and Gith?~
 ==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~ Jen'lig has a powerful item of the Githyanki but not powerful enough for the purpose it is needed for.~
 ==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~I see the globe. I will enhance it with my breath. Now go with the peace between your kin and mine.~DO~TakePartyItem("CvJenGlo") GiveItemCreate("CVJenGl2","CVJenlig",1,0,0)~END
 

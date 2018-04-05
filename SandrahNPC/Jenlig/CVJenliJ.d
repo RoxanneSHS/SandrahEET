@@ -10,8 +10,8 @@ SAY~*Smouldering black eyes embedded in gleaming yellow scales stare at you as y
 IF~Global("JenOrigin","LOCALS",0)~THEN REPLY~Tell me something about your race.~GOTO Jrace
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~Would male Githyanki estimate you a beautiful female?~GOTO JBeaum
 IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY~Would male Githyanki estimate you a beautiful female?~GOTO JBeauf
-IF~Global("JenOrigin","LOCALS",1)~THEN REPLY~You once said that your anchestors may have human sources.~DO~SetGlobal("JenOrigin","LOCALS",2)~GOTO JRace2
-IF~Global("Goodfight","LOCALS",11) Global("AfterFirst","LOCALS",0)~THEN REPLY~Your nighly visit was very suprising, Jen'lig.~DO~SetGlobal("AfterFirst","LOCALS",1)~GOTO GoodcapP1
+IF~Global("JenOrigin","LOCALS",1)~THEN REPLY~You once said that your ancestors may have human sources.~DO~SetGlobal("JenOrigin","LOCALS",2)~GOTO JRace2
+IF~Global("Goodfight","LOCALS",11) Global("AfterFirst","LOCALS",0)~THEN REPLY~Your nightly visit was very surprising, Jen'lig.~DO~SetGlobal("AfterFirst","LOCALS",1)~GOTO GoodcapP1
 IF~Global("Goodfight","LOCALS",13) Global("AfterFirst","LOCALS",1)~THEN REPLY~Will you enjoy some pleasure with me again, Jen'lig?~GOTO GoodcapP7
 END
 
@@ -27,7 +27,7 @@ IF~~THEN REPLY~You sound like you are a high ranked military back home?~ GOTO JR
 END
 
 IF~~THEN BEGIN JRace4
-SAY~(Sigh) Is dangerous to be. Those with too much skill are "honored" by queen Vlaakith with sacrifice, their spiritual energy captured for her use, to assimilate and make her stronger and longer-lived.~
+SAY~(Sigh) Is dangerous to be. Those with too much skill are "honoured" by queen Vlaakith with sacrifice, their spiritual energy captured for her use, to assimilate and make her stronger and longer-lived.~
 =~Is good to be trusted with important mission on Prime Plane.~
 IF~~THEN REPLY~You mean...success of your mission may be dangerous for you?~GOTO JRace5
 IF~~THEN REPLY~To bring back this sword of yours would put you in great danger then?~GOTO JRace5
@@ -59,7 +59,7 @@ END
 
 IF~Global("SanGithSwJ","GLOBAL",1)~THEN BEGIN Murd1
 SAY~You think Jen'lig murderer - no?~
-IF~~THEN REPLY~Our first meeting was with your weapon over the bloody body of a flaming fist sergeant. But first impressions can somtimes mislead.~ GOTO Murd2
+IF~~THEN REPLY~Our first meeting was with your weapon over the bloody body of a flaming fist sergeant. But first impressions can sometimes mislead.~ GOTO Murd2
 IF~~THEN REPLY~You gave some explanation, even if I must confess, I did not fully understand it.~ GOTO Murd2
 END
 
@@ -70,14 +70,14 @@ IF~~THEN REPLY~So you have come all the long way from your plane to find a sword
 END
 
 IF~~THEN BEGIN Murd3
-SAY~ Know that it is not a silver sword like mine. Every regiment supreme of rank has such one. If the weapon is lost or stolen, the Githyanki must seek it out at all costs or be killed by its superiors for the dishonor. ~
-=~I seek the one of my citadel city. It be forged from a splinter of the very one wielded by Gith herself to free all gith-kind from their ages-long enslavement by the illithids. Ages later it be used in the battle between the King of Shadows and a mysterious mage, in which it shattered and the shards were spread across the Mere of Dead Men.~
+SAY~ Know that it is not a silver sword like mine. Every regiment supreme of rank has such one. If the weapon is lost or stolen, the Githyanki must seek it out at all costs or be killed by its superiors for the dishonour. ~
+=~I seek the one of my citadel city. It be forged from a splinter of the very one wielded by Gith herself to free all gith-kind from their ages-long enslavement by the Illithids. Ages later it be used in the battle between the King of Shadows and a mysterious mage, in which it shattered and the shards were spread across the Mere of Dead Men.~
 IF~~THEN REPLY~For a people without gods such a symbol is pretty important.~ GOTO Murd4
 IF~~THEN REPLY~Surely a rare artefact but still you take pretty much effort to retrieve it.~ GOTO Murd4
 END
 
 IF~~THEN BEGIN Murd4
-SAY~Thief disgraced my clan and city. Thief will use sword to do harm in your world, <CHARNAME>. Any misdeed of the thief stains our honor. Every astral traveler's silver cord cut by the thief will be my failure.~
+SAY~Thief disgraced my clan and city. Thief will use sword to do harm in your world, <CHARNAME>. Any misdeed of the thief stains our honor. Every astral traveller's silver cord cut by the thief will be my failure.~
 IF~~THEN REPLY~So the sergeant involved was from Baldur's Gate. It is a big city to search for such an item.~ GOTO Murd5
 IF~~THEN REPLY~Looks like you search for a needle in a haystack. But maybe we find some clues together.~ GOTO Murd5
 END
@@ -103,7 +103,7 @@ IF~~THEN REPLY~And what does that mean?~ GOTO  MulShe3
 END
 
 IF~~THEN BEGIN MulShe3
-SAY~ Kastya was marshall who carried sword I seek. Was wounded on Prime and detected by evil human magic. Six men come to scene of fallen hero.~
+SAY~ Kastya was Marshall who carried sword I seek. Was wounded on Prime and detected by evil human magic. Six men come to scene of fallen hero.~
 IF~~THEN REPLY~How do you know that, Jen'lig?~DO~RealSetGlobalTimer("JenligT","LOCALS",1800)AddJournalEntry(@924,QUEST)~GOTO  MulShe4
 END
 
@@ -114,7 +114,7 @@ IF~~THEN REPLY~And you made him talk before you murdered him which we came too l
 END
 
 IF~~THEN BEGIN MulShe5
-SAY~Horvok story says that six robbed and killed wounded marshall for sword he carried. Men is cadre in large organisation in Baldur town. Detection cannot scrutinize them, hidden by mighty dark shielding, same shielding as Mulahey cave.~
+SAY~Horvok story says that six robbed and killed wounded marshal for sword he carried. Men is cadre in large organisation in Baldur town. Detection cannot scrutinize them, hidden by mighty dark shielding, same shielding as Mulahey cave.~
 =~<CHARNAME> commander follow trail of foe, Jen'lig follows commander. We hunt same cadre.~
 IF~~THEN REPLY~So far you have proven yourself loyal and useful, so let's continue.~ EXIT
 IF~~THEN REPLY~Looks like this is a valid thing to do, we're more efficient in union than separate.~ EXIT
@@ -124,12 +124,12 @@ END
 IF~Global("SanGithSwJ","GLOBAL",5)~THEN BEGIN DeadGo1
 SAY~(Hiss) Strange to think that commander child of useless dead god. <CHARNAME> is strong leader by own skill, not require bloody heritage for that.~
 IF~~THEN REPLY~Maybe those skills have there origin in that darkness. A disgusting thought - but maybe the truth.~GOTO DeadGo2
-IF~~THEN REPLY~It's me that designs the useage of what the blood gave me. Bhaal is dead but I am alive.~GOTO DeadGo2
+IF~~THEN REPLY~It's me that designs the usage of what the blood gave me. Bhaal is dead but I am alive.~GOTO DeadGo2
 IF~~THEN REPLY~ I rely on dead gods just as little as you do, Jen'lig. If I have Bhaal's power, be sure I will use it - following my design, not to his.~GOTO DeadGo2
 END
 
 IF~~THEN BEGIN DeadGo2
-SAY~Jen'lig trust commander. Dead god will stay dead as long as commander alive. (Hiss) Counselor Sandrah and Jen'lig make vow that this will remain case.~
+SAY~Jen'lig trust commander. Dead god will stay dead as long as commander alive. (Hiss) Counsellor Sandrah and Jen'lig make vow that this will remain case.~
 IF~~THEN REPLY~There are a few tasks to be done still, let's move.~DO~SetGlobal("SanGithSwJ","GLOBAL",6) ~EXIT
 END
 
@@ -188,7 +188,7 @@ END
 
 IF~~THEN BEGIN Goodcomm6m
 SAY~Listen good and not misunderstand. Githyanki breed for maintaining the race. Githyanki also mate for pleasure as well. Githyanki know not of your love concept. Githyanki will not mate with one of not of respect and status. Jen'lig values <CHARNAME>.~
-=~You not say nothing now. Think. You once ask if Jen'lig is beautiful? Jen'lig very desireable Githyanki female, can choose from many males.~ 
+=~You not say nothing now. Think. You once ask if Jen'lig is beautiful? Jen'lig very desirable Githyanki female, can choose from many males.~ 
 IF~~THEN EXIT
 END
 
@@ -239,7 +239,7 @@ END
 
 IF~~THEN BEGIN JenCommLu8
 SAY~*Her long bony fingers with the dangerous talons cover your mouth so your reaction would not alert your other sleeping companions.* ~
-=~*You feel her fingers starting to explore your unknown body, slow and tenderly. She reacts instincly to your body's reactions and needs little time to find the areas that pleasure you most.~
+=~*You feel her fingers starting to explore your unknown body, slow and tenderly. She reacts indistinctly to your body's reactions and needs little time to find the areas that pleasure you most.~
 IF~~THEN REPLY~*Your hands reach out towards her body as well and you start to caress her unfamiliar hide. You are surprised how warm her body feels and that despise her scales she reacts very sensitive to your every touch.~ DO~SetGlobal("Goodfight","LOCALS",11)RealSetGlobalTimer("JenligT","LOCALS",9000)~GOTO JenCommLu9
 END
 
@@ -250,7 +250,7 @@ END
 
 IF~~THEN BEGIN JenCommLu10
 SAY~(Soft hissing) <CHARNAME> do good. Not clumsy manling as expected. Jen'lig chose well.~
-=~*She leads your other hand to her nether regions that are feeling moisty and formed like those of a human female - Githyanki were supposed to have similar origins you remember.*~
+=~*She leads your other hand to her nether regions that are feeling moist and formed like those of a human female - Githyanki were supposed to have similar origins you remember.*~
 IF~~THEN DO~ClearAllActions() SmallWait(2) SetInterrupt(FALSE) TextScreen("JenliN1")SmallWait(2) RestParty()~EXIT
 END
 
@@ -299,7 +299,7 @@ IF~~THEN REPLY~You are destroying our...eh...children...eh...our eggs...?~GOTO J
 END
 
 IF~~THEN BEGIN Jeneggs5
-SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy misbreed if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg.  Jen'lig and commander not do for breeding.~
+SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy monstrosity if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg.  Jen'lig and commander not do for breeding.~
 =~*With an experienced hit of the silver sword she splits the second egg's sturdy shell.*~
 IF~~THEN REPLY~It would have been interesting to see what result we may have produced. Anyway, it probably is better not to know. ~GOTO Jeneggs6
 IF~~THEN REPLY~That is probably the best. ~GOTO Jeneggs6
@@ -326,7 +326,7 @@ END
 IF~~THEN BEGIN Silver2
 SAY~(Hiss) Prime creatures not know worth of silver. Good for magical things. If find, give to Jen'lig. Githyanki can put to good use.~
 IF~~THEN REPLY~If we find one we keep it for you, sure.~ EXIT
-IF~~THEN REPLY~At your command, mylady.~ EXIT
+IF~~THEN REPLY~At your command, my lady.~ EXIT
 IF~~THEN REPLY~Not a big challenge, we'll do if it pleases you. You obviously seem to like all that ornamental stuff.~ EXIT
 IF~~THEN REPLY~Is it so hard for you to say *please* sometimes?~EXIT
 END
@@ -350,7 +350,7 @@ END
 
 IF~~THEN BEGIN Jencow2
 SAY~ When Githyanki need meal, male will go hunt, female will collect fruit and fungus.~
-=~(Hiss) Is Illithids kept Githyanki for slave work and war but also to devour brain when not useful anymore. (Hiss)~
+=~(Hiss) Is Illithids kept Githyanki for slave work and war but also to devour brain when not useful any more. (Hiss)~
 =~Githyanki broke chains with Gith lead, now Illithids tremble at rage of Gith strong kin. (Hiss).~
 IF~~THEN REPLY~I guess, I'll just have some vegetables for dinner tonight.~DO~SetGlobal("Jencow","CVROA3",2) ~EXIT
 END
@@ -549,7 +549,7 @@ IF~Global("SanTazPatrl","GLOBAL",4)~THEN CVJenliJ After3
 ~Now know more about cadre we oppose. Murderer two was Tazok, cadre name Iron Throne. Can find in Baldur's Gate.~
 DO~SetGlobal("SanTazPatrl","GLOBAL",5)~
 ==BSandr~Two of those who killed your Kastya have been found, that is right. Still we have no access yet to the big town. Our next step still is the other mine in Cloakwood.~
-==CVJenliJ~Commander leads well, Sandrah councels well, Jen'lig confident we soon know name of sorcerer with sword. Our Intellect and perseverence will bring to fall thieves of sword and killer of Gorion. One has name now other will have soon.~ DO~AddJournalEntry(@925,QUEST)~EXIT
+==CVJenliJ~Commander leads well, Sandrah counsels well, Jen'lig confident we soon know name of sorcerer with sword. Our Intellect and perseverance will bring to fall thieves of sword and killer of Gorion. One has name now other will have soon.~ DO~AddJournalEntry(@925,QUEST)~EXIT
 
 CHAIN
 IF~~THEN CVJenliJ Daelet2
@@ -562,9 +562,9 @@ DO~SetGlobal("SanTazPatrl","GLOBAL",7)~
 CHAIN
 IF WEIGHT #1~PartyHasItem("HELM07") InParty("CVJenlig")~THEN Degrod JenNec
 ~Thank you for returning with the helm of Balduran.  It was so good to do business together.  Here is your payment, and I shall take the helm.  Now I must be off, I'll leave you with some of my servants to escort you out.  My servants aren't known for their gentle nature, so I would leave as soon as possible.~
-==CVJenliJ~(Hiss!) Manling sorcerers all same to steal artifacts belong to others for power.~
-==Degrod~YOU would make a fine artifact, nicely petrified and silent. Let us try this, won't you, my dear.~
-==CVJenliJ~(Hiss!) Jen'lig make artifact of sorcerer. Will expose nicely on tip of her silver sword.~
+==CVJenliJ~(Hiss!) Manling sorcerers all same to steal artefacts belong to others for power.~
+==Degrod~YOU would make a fine artefact, nicely petrified and silent. Let us try this, won't you, my dear.~
+==CVJenliJ~(Hiss!) Jen'lig make artefact of sorcerer. Will expose nicely on tip of her silver sword.~
 ==Degrod~We'll see about that.~
 DO~GiveGoldForce(5000) CreateCreature("HELMHO",[371.427],0) CreateCreature("DOOMGU",[418.460],0) CreateCreature("DOOMGU",[326.489],0) CreateCreature("STALKE",[351.605],0) Enemy()~EXIT
 
@@ -629,7 +629,7 @@ CHAIN
 IF~Global("MiFlExists","BG3802",4)~THEN CVJenliJ MFLCave2
 ~(HISS!!) Just a minor one and almost dead already.~
 ==CVSandrJ~Those are your enemies and former masters, Jen'lig?~
-==CVJenliJ~Was Illithid. Searching food which is manling's or beast's brains. Or maybe seached for hatchery of my kin's eggs. (Hiss). Be good for you was dying and not strong.~
+==CVJenliJ~Was Illithid. Searching food which is manling's or beast's brains. Or maybe searched for hatchery of my kin's eggs. (Hiss). Be good for you was dying and not strong.~
 END
 ++~I heard that creature talking - it was inside my head!~+ MFLCave3
 ++~He created sounds and pictures in my head, I saw an injured elf and heard him talk!~+ MFLCave3
@@ -671,7 +671,7 @@ IF~Global("JenFouSem","BG0125",1)~THEN CVJenliJ Semfound
 DO~SetGlobal("JenFouSem","BG0125",2)DialogInterrupt(FALSE)~
 =~You sorcerer be Semaj.~
 ==Semaj~So it is true, you githyanki never give up the hunt for a silver sword. Baah, but you are alone, just like the one that carried the sword.~
-==CVJenliJ~Jen'lig not alone, is supreme primewalker with commander <CHARNAME> and most powerful  force of the prime. Is end of Semaj and end of sword hunt.~DO~MoveToObject("Semaj") Attack("Semaj")~
+==CVJenliJ~Jen'lig not alone, is supreme Planewalker with commander <CHARNAME> and most powerful  force of the prime. Is end of Semaj and end of sword hunt.~DO~MoveToObject("Semaj") Attack("Semaj")~
 ==Semaj~It's a bunch of fools coming to sacrifice themselves to the new God of Murder and his chosen!~EXIT
 
 CHAIN
@@ -682,4 +682,4 @@ DO~SetGlobal("CVWarnjen","LOCALS",1) SetNumTimesTalkedTo(0)~
 ==Bellam~I'm Just a friend tryin' to warn ya. ~
 ==CVJenliJ~Warn of Phandalyn? ~
 ==Bellam~He is a powerful paladin here in the city and he poses a grave danger to you. I would suggest that you avoid him altogether. You can usually find him in one of the taverns close to the docks, but I don't recommend you do. If you have business there, I suggest you do it after sundown. ~
-==CVJenliJ~Manling paladins call themselves men of honor. They see not honor when vision is blurred by their manling gods they follow. (Hiss.)~EXIT
+==CVJenliJ~Manling paladins call themselves men of honour. They see not honour when vision is blurred by their manling gods they follow. (Hiss.)~EXIT

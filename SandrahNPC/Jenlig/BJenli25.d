@@ -12,7 +12,7 @@ DO~SetGlobal("CVJenTOBRet","GLOBAL",9) RealSetGlobalTimer("CVJen25Intvl","GLOBAL
 ==BJenli25~Sandrah as always, understands concepts that are very far from her own.~
 =~When Jen'lig returned sword of Kastya to Tu'narath was happy day for town cadre. Much respect was gained for Planewalkers. Not long until Jen'lig received summoning to meet with queen.~
 ==BSandr25~You were expecting that - including your possible assimilation by your godqueen.~
-==BJenli25~Correct - Jen'lig long spent time for meditation and preparation, made her mindshield strong against queen. Vlaakith struggled hard to enter Jen'lig mind and power but found defence too strong. Finally began to listen to her counselor...~
+==BJenli25~Correct - Jen'lig long spent time for meditation and preparation, made her mind shield strong against queen. Vlaakith struggled hard to enter Jen'lig mind and power but found defence too strong. Finally began to listen to her counselor...~
 ==BSandr25~She listened - but still you are here today.~
 ==BJenli25~Queen was struggling long with Jen'lig but struggling more - much more - with own self.~
 =~What Jen'lig proposed was best for race - and Githyanki in Vlaakith agreed. But part of Queen is not longer Githyanki, is loneliness, is greed, is hunger.~
@@ -24,19 +24,19 @@ IF~Global("CVJenTOBRet","GLOBAL",10)~ THEN BJenli25 JenQStor2
 ~(Hiss) Cadre and <CHARNAME> will withstand any foolish Githyanki attempt. Not danger if Jen'lig be detected and hunted.~
 DO~SetGlobal("CVJenTOBRet","GLOBAL",11) RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)~
 ==BSandr25~You think that such a thing could happen?~
-==BJenli25~(You almost have to laugh aloud when you see Jen'lig's long limbs in the immitation of a shoulder shrug she must have observed on - yourself.)~
+==BJenli25~(You almost have to laugh aloud when you see Jen'lig's long limbs in the imitation of a shoulder shrug she must have observed on - yourself.)~
 =~Queen may be unforgiven, may think Jen'lig resistance is bad example for others of our race.~
-==BSandr25~I am sure we have nothing to fear, my friends. It would take an invasion army to the Prime to capture the Supeme Primewalker of Tu'narath in the company of her friends. I can think of only one Githyaki capable of such a thread - and that is the hunted herself.~
-==BJenli25~(Hiss) Jen'lig fully agrees with conselor analysis.~EXIT
+==BSandr25~I am sure we have nothing to fear, my friends. It would take an invasion army to the Prime to capture the Supreme Planewalker of Tu'narath in the company of her friends. I can think of only one Githyanki capable of such a thread - and that is the hunted herself.~
+==BJenli25~(Hiss) Jen'lig fully agrees with counsellor analysis.~EXIT
 
 CHAIN
 IF~Global("CVJenTOBRet","GLOBAL",12)~ THEN BJenli25 JenQStor3
 ~Tiamat child made Mind Globe strong enough item.~
 DO~SetGlobal("CVJenTOBRet","GLOBAL",13) RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)~
 ==BSandr25~Strong enough to be used against Vlaakith you think?~
-==BJenli25~At right moment in right hands it will be, Sandrah councelor. Right moment will be when queen and Jen'lig alone.~
+==BJenli25~At right moment in right hands it will be, Sandrah counsellor. Right moment will be when queen and Jen'lig alone.~
 ==BSandr25~If you go back to Tu'narath they will overwhelm you. You cannot fight your whole kin.~
-==BJenli25~Jen'lig not fight own kin anymore, only the one who no longer is true Githyanki. (Hiss) Jen'lig not fool but has listened to <CHARNAME>'s dead manling god story and considered carefully.~
+==BJenli25~Jen'lig not fight own kin any more, only the one who no longer is true Githyanki. (Hiss) Jen'lig not fool but has listened to <CHARNAME>'s dead manling god story and considered carefully.~
 =~Bhaal god is dead but not among dead gods of Astral Plane - yet.~
 ==BSandr25~I think I see where it leads to. We have a common goal in this aspect. Bhaal has to stay dead and his remains must be transferred to your plane.~
 ==BJenli25~(Hiss) Arrival of new god will be great disturbance and will disrupt local energies - those protecting queen palace as well. Will allow Jen'lig to return and use globe.~
@@ -64,12 +64,12 @@ IF~Global("CVJenSarRom","GLOBAL",3)~THEN BJenli25 SarLover1
 DO~SetGlobal("CVJenSarRom","GLOBAL",4) RealSetGlobalTimer("JenSarDel","LOCALS",4100)~
 ==IF_FILE_EXISTS BSAREV25~You as well, Jen'lig. I appreciate that moment just before you take your enemy's life when you lock your gaze to his and let him know what he faces - the END.~
 ==BJenli25~Sarevok alone among manlings, not with female at his side.~
-==IF_FILE_EXISTS BSAREV25~Women are pathetic - most of them. They are a hinderance for a warrior.~
+==IF_FILE_EXISTS BSAREV25~Women are pathetic - most of them. They are a hindrance for a warrior.~
 ==BJenli25~Githyanki concept is that body needs other stimulation than fighting and eating at times. Is good to have valid companion in cadre at such time.~
 ==IF_FILE_EXISTS BSAREV25~Are you honestly suggesting what I think you are suggesting...you are quite exotic...~
-==BJenli25~Jen'lig sure not a hinderance for Sarevok warrior.~
+==BJenli25~Jen'lig sure not a hindrance for Sarevok warrior.~
 ==IF_FILE_EXISTS BSAREV25~What can I say? Your bedroll or mine?~
-==BJenli25~Jen'lig bedroll better - has right fabric to smootly caress Jen'lig's scales when out of armour.~
+==BJenli25~Jen'lig bedroll better - has right fabric to smoothly caress Jen'lig's scales when out of armour.~
 ==IF_FILE_EXISTS BSAREV25~Same for the scarred body of a fighter I guess. As for caressing your scales...I am not as unexperienced with your gender as you might think.~
 ==BJenli25~(Hiss) Not talking more, show Jen'lig deeds.~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
 
