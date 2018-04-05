@@ -69,16 +69,16 @@ IF ~~ THEN BEGIN SkyshipSH3
 SAY~ Science has improved, my good <CHARNAME>, due to that experiment. My skyship is now a reliable means of transport.~
 =~What is more, friends, it will be totally free for use to you - I ruin myself but don't think a Jansen cannot be grateful. What can I do for you today?~
 IF ~~ THEN REPLY ~ This time we like to take a look at your wares.~ DO~ StartStore("F_NIBSHP",Player1)~EXIT
-IF~~THEN REPLY~ We need to find some comrads we left in Athkatla, can you take us there?~ DO ~SetGlobal("SanTravel","GLOBAL",62)GiveItemCreate("CVSkys",Player1,0,0,0)~ EXIT
+IF~~THEN REPLY~ We need to find some comrades we left in Athkatla, can you take us there?~ DO ~SetGlobal("SanTravel","GLOBAL",62)GiveItemCreate("CVSkys",Player1,0,0,0)~ EXIT
 IF ~~ THEN REPLY ~ Actually we just wanted to inform ourselves this time. We will come back another time. ~ EXIT
 END
 
 IF WEIGHT #-10 ~ Global("NibHere","CVSH13",2)  ~ THEN BEGIN SkyshipSHPer
 SAY~ I ruin myself but don't think a Jansen cannot be grateful. What can I do for you today?~
 IF ~~ THEN REPLY ~ This time we like to take a look at your wares.~ DO~ StartStore("F_NIBSHP",Player1)~EXIT
-IF~~THEN REPLY~ We need to find some comrads we left in Athkatla, can you take us there?~ DO ~GiveItemCreate("CVSkys",Player1,0,0,0) SetGlobal("SanTravel","GLOBAL",62)~ EXIT
+IF~~THEN REPLY~ We need to find some comrades we left in Athkatla, can you take us there?~ DO ~GiveItemCreate("CVSkys",Player1,0,0,0) SetGlobal("SanTravel","GLOBAL",62)~ EXIT
 IF~GlobalGT("SanRTFPlot1","GLOBAL",6)~THEN REPLY~Do you know where Ghotal's summer camp was?~DO~GiveItemCreate("CVSkys",Player1,0,0,0) SetGlobal("SanTravel","GLOBAL",401)~ EXIT
-IF~Global("RTLeyPlot1","GLOBAL",7)~THEN REPLY~We need a nighly passage to the Spellhold Asylum on Brynnlaw.~DO~ClearAllActions() StartCutSceneMode() StartCutScene("CVCut411")~EXIT
+IF~Global("RTLeyPlot1","GLOBAL",7)~THEN REPLY~We need a nightly passage to the Spellhold Asylum on Brynnlaw.~DO~ClearAllActions() StartCutSceneMode() StartCutScene("CVCut411")~EXIT
 IF ~~ THEN REPLY ~ Actually we just wanted to inform ourselves this time. We will come back another time. ~ EXIT
 END
 END

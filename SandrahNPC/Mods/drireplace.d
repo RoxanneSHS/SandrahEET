@@ -12,7 +12,7 @@ END
 IF~Global("AloDriz","GLOBAL",1)~THEN BEGIN SanReplDr60
 SAY~ It does not sound pleasant at all, but obviously we cannot defeat Entreri as long as he is able to use the power of the crystal.~
 IF~~THEN REPLY~There may be a way to destroy it...~ GOTO SanReplDr61
-IF~~THEN REPLY~We must destroy it, Sandrah, my counselor. Can I count on you to study the case thouroughly?~GOTO SanReplDr61
+IF~~THEN REPLY~We must destroy it, Sandrah, my counsellor. Can I count on you to study the case thoroughly?~GOTO SanReplDr61
 END
 
 IF~~THEN BEGIN SanReplDr61
@@ -38,7 +38,7 @@ END
 
 IF~ Global("NCaDri","GLOBAL",1)~ THEN BEGIN SanReplDr70
 SAY~ Two simple (wink) tasks remain for us now. Destroy the crystal and free Catti-Brie.~
-IF~~THEN REPLY~ May I remind my counselor that we have no idea where one or the other may be found?~ GOTO SanReplDr71
+IF~~THEN REPLY~ May I remind my counsellor that we have no idea where one or the other may be found?~ GOTO SanReplDr71
 IF~~THEN REPLY~ Oh, yes, let's just do it (wink, too).~ GOTO SanReplDr71
 END
 
@@ -64,7 +64,7 @@ IF~~THEN REPLY~Who was that again?~DO~ SetGlobal("SanDrBryn","ar1600",3)~ GOTO S
 END
 
 IF~~THEN BEGIN SanNDriBry2
-SAY~The contact who knows about the crystal shard that was used to kidnapp Drizzt's friends. I cannot blame you for forgetting one of our many quests, now that we are so close to Imoen.~
+SAY~The contact who knows about the crystal shard that was used to kidnap Drizzt's friends. I cannot blame you for forgetting one of our many quests, now that we are so close to Imoen.~
 IF~~THEN REPLY~ Ah, your quest or mine, what a dilemma - but you have reminded me we are in this as a company of friends. Let's see if we can trace this priest.~ DO ~ IncrementGlobal("Sanpoints","GLOBAL",2)~ EXIT
 IF~~THEN REPLY~ We are near to Imoen right now. This comes first and everything else has to wait for its chance.~ DO~IncrementGlobal("Sanpoints","GLOBAL",-2)~EXIT
 END
@@ -77,7 +77,7 @@ END
 
 IF~~THEN BEGIN DriNear2
 SAY~ I know well the marks left by Twinkle, my drow's trusted scimitar.~
-=~Dear Drizzt has received the reports of our progress from the comrads we rescued. He must have overtaken us in our persuit.~
+=~Dear Drizzt has received the reports of our progress from the comrades we rescued. He must have overtaken us in our persuit.~
 =~MY!! I hope he has enough patience to wait for us before he risks to face those two fiends and their allies all alone.~
 IF~~THEN REPLY~ I wish he'd hear your very words. It would be suicide otherwise as he has no means to overcome the power of the crystal even if he could stand up against our common enemies.~DO~SetGlobal("SanRecDriz","RA4000",2)~EXIT
 END
@@ -89,7 +89,7 @@ IF WEIGHT #-2~ GlobalGT("SanROTRepl","GLOBAL",0)Global("EntandDri","GLOBAL",0)~T
 DO~SetGlobal("EntandDri","GLOBAL",1)~ 
 ==Enteri~Drizzt Do'Urden.~
 ==Driz2P~Artemis Entreri.~
-==Enteri~We must fight alone if you wish Catti-Brie to survive. I want no interferrence, especially not from your panther or your cleric girl friend.~
+==Enteri~We must fight alone if you wish Catti-Brie to survive. I want no interference, especially not from your panther or your cleric girl friend.~
 ==Driz2P~I expected no less. Take me to the chosen playground.~DO~ActionOverride("Driz2",MoveToPoint([1450.710]))ActionOverride("Driz2",EscapeAreaMove("RR4005",409,362,12))~
 ==Enteri~Come through the passage.~DO~ActionOverride("Enteri",MoveToPoint([1450.710]))ActionOverride("Enteri",EscapeAreaMove("RR4005",409,362,12))~EXIT
 
@@ -110,7 +110,7 @@ DO~SetGlobal("asdfadfa","GLOBAL",2) SetGlobal("Catelldrg","RR4005",2)~
 
 CHAIN
 IF WEIGHT #-3~GlobalGT("SanROTRepl","GLOBAL",0) AreaCheck("RR3950") Global("Theendisnear","GLOBAL",3)~THEN Catt2 SanDepart
-~Drizzt has told me all you and Sandrah have done for us, <CHARNAME>. You are kind and bravehearted heroes like no others in the Realms.~
+~Drizzt has told me all you and Sandrah have done for us, <CHARNAME>. You are kind and brave hearted heroes like no others in the Realms.~
 DO~SetGlobal("Theendisnear","GLOBAL",4)
 SetGlobal("Villagesaved","GLOBAL",1)
 SetGlobal("TrigCQCip","GLOBAL",1)
@@ -130,7 +130,7 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot1b
-~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercly gripped your sweet heart for so long.~
+~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercely gripped your sweet heart for so long.~
 DO~ SetGlobal("SanDriLeaveWD","GLOBAL",2)~
 ==Driz2P ~ And who else could have saved everyone and freed the enslaved souls of so many in this *Region of Terror* than <CHARNAME> and the most wonderful companion of all by <PRO_HISHER> side. (He kisses Sandrah long and passionate.]~
 END
@@ -138,7 +138,7 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot2b
-~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The bossman calls and the love nest waits empty.~
+~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The boss man calls and the love nest waits empty.~
 ==Driz2P ~ Please, <CHARNAME>, Sandrah, give me a minute.~
 == BSANDR~ Are you well, dear, you look tired and exhausted?~
 ==Driz2P ~ That is exactly how I feel, Sandrah, and only your strength keeps me going at the moment. That is why I want to ask a favour of <CHARNAME>. The recent events have stressed me to the limit and I need a bit of time to restore and to contemplate over it all. My lifetime enemies have finally been destroyed with your help and a new future lies open for me.~

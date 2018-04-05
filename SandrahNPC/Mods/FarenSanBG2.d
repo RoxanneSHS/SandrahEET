@@ -27,11 +27,11 @@ IF WEIGHT #-23~Global("SanHealFaren","GLOBAL",5)~THEN BFHFRN SanHeal3
 ~Sandrah, you have advised me to remind you when the time is due for exchanging my bandages.~
 DO~SetGlobal("SanHealFaren","GLOBAL",6) RealSetGlobalTimer("SanFarenT","LOCALS",1800)~
 ==BSandr~ You are right, Faren, they are due right now. A patient like you makes a healer's work easy.~
-==BFHFRN~Your recent examination has probably reveiled to you that other parts of my body are in good shape and, eh, well developped.~
+==BFHFRN~Your recent examination has probably revealed to you that other parts of my body are in good shape and, eh, well developped.~
 ==BSandr~(Laughs) I am used to men who appreciate and react to my presence. Rarely I get a chance to see SUCH an obvious reaction to my nearness.~
 ==BFHFRN~You see that even if I would deny it, that little traitor down there has already given my secret away.~
 ==BSandr~*Little* traitor is obviously not the right expression - and before you think of delivering an apology - no, I do not feel insulted by such obvious appreciation.~
-==BFHFRN~Ah, I had no intention to apologize. My body is as honest as I am, mylady.~
+==BFHFRN~Ah, I had no intention to apologize. My body is as honest as I am, my lady.~
 ==BSandr~Talking of your body - let us not neglect your wound any longer.~ DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
 
 CHAIN
@@ -40,7 +40,7 @@ IF WEIGHT #-24~Global("SanHealFaren","GLOBAL",7)~THEN BFHFRN SanHeal4
 DO~SetGlobal("SanHealFaren","GLOBAL",8)RealSetGlobalTimer("SanFarenT","LOCALS",1800)~
 ==BSandr~ It was offered to me on a golden platter, so to say, and sometimes directness can be really refreshing.~
 ==BFHFRN~Don't think I'm not capable of the more delicate and sensible aspects of romance. You just gave me little time for that.~
-==BSandr~ Shame on me then and I deserve the loss. But who says that everything needs to follow a predesigned order of events, Faren. We may well agree to make your next conquer a bit more challenging. I anticipate you can make a lady of the City of Splendor fall for you in more than one way.~
+==BSandr~ Shame on me then and I deserve the loss. But who says that everything needs to follow a predesignated order of events, Faren. We may well agree to make your next conquer a bit more challenging. I anticipate you can make a lady of the City of Splendour fall for you in more than one way.~
 ==BFHFRN~An interesting proposal. You will not be disappointed, mylady.~EXIT
 
 CHAIN
