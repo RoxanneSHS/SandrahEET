@@ -7,14 +7,14 @@ Global("SanNarQ","GLOBAL",0)
 Global("SanNarQ","GLOBAL",1)
 Global("SanNarQ","GLOBAL",2)
 ~ THEN BEGIN Scrltlk1
-SAY ~Great Alzaligundrel, what is your order?~
+SAY ~Great Alzaligrundel, what is your order?~
 IF ~~ THEN REPLY ~Who are you? What can you do for me? ~ GOTO Scrltlk2
 END
 
 IF~~ THEN BEGIN  Scrltlk2
 SAY ~ (It sounds like the scroll clears its *throat*)~
 IF ~!Global("UsedScrlPort","GLOBAL",1)~ THEN REPLY ~Master, do you want me to open the portal? ~ GOTO Port
-IF ~!Global("UsedScrlLoc","GLOBAL",1)~ THEN REPLY ~Master, shall I locate your archenemy? ~ GOTO Locate
+IF ~!Global("UsedScrlLoc","GLOBAL",1)~ THEN REPLY ~Master, shall I locate your arch enemy? ~ GOTO Locate
 IF ~!Global("UsedScrlRock","GLOBAL",1)~ THEN REPLY ~Master, do you want me to create a stone? ~ GOTO Stone
 IF ~Global("UsedScrlRock","GLOBAL",1)~ THEN REPLY ~Master, do you still want me to create stones? ~ GOTO Stone3
 IF ~Global("UsedScrlRock","GLOBAL",2)~ THEN REPLY ~Master, do you still want me to create stones? ~ GOTO Stone3
@@ -37,7 +37,7 @@ IF ~~ THEN DO ~ AddJournalEntry(@17,QUEST) SetGlobal("UsedScrlPort","GLOBAL",1) 
 END
 
 IF~~ THEN BEGIN  Locate
-SAY ~ The Archenemy is in his lair.~
+SAY ~ The Arch enemy is in his lair.~
 IF ~~ THEN REPLY ~Who? Where?. ~ GOTO Locate2
 END
 
