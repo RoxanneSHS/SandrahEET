@@ -1,6 +1,6 @@
 BEGIN CVwdwauk
 IF~ AreaCheck("CVRoan")~THEN BEGIN WelcomeN
-SAY~Welcome to the Temple of Splendor...~
+SAY~Welcome to the Temple of Splendour...~
 IF~~THEN REPLY~This really looks like Waukeen's Jewel once again.~GOTO WelcomeN1
 END
 
@@ -18,7 +18,7 @@ END
 
 IF~~THEN BEGIN Welcome1
 SAY~(Sigh) You are right...it was Waukeen's Crown Jewel before the bandit Khattark and his bunch made their visit. The vandals even took the handles. The temple would give a tremendous reward to anyone who would end the terror of that guy.~
-IF~~THEN REPLY~We are persuing the man already. Be assured we will get him.~ GOTO ComeB
+IF~~THEN REPLY~We are pursuing the man already. Be assured we will get him.~ GOTO ComeB
 IF~GlobalGT("KatDef","GLOBAL",1)~THEN REPLY~We ended his regime right below your feet in the sewers, Khattark and his men are no more.~ GOTO Reward
 IF~~THEN REPLY~Does the temple still offer services?~GOTO Service2
 END
@@ -106,16 +106,16 @@ IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~We are looking for the collector 
 END
 
 IF~~THEN BEGIN Fest2
-SAY~Tututu, sweet greenhorns from the lower Sword Coast, eh?...Candlekeep, Nashkel? Nevermind, you're all the same peasants. First dip into the City of Splendor, that is.~
+SAY~Tututu, sweet greenhorns from the lower Sword Coast, eh?...Candlekeep, Nashkel? Never mind, you're all the same peasants. First dip into the City of Splendour, that is.~
 IF~OR(4)PartyHasItem("Sanbrc") PartyHasItem("AGshld01") PartyHasItem("Imofurc") PartyHasItem("Blunpoi") Global("GaveKey","CVROA7",0)~THEN GOTO Fest3
 IF~!PartyHasItem("Sanbrc") !PartyHasItem("AGshld01") !PartyHasItem("Imofurc") !PartyHasItem("Blunpoi")~THEN GOTO Fest4
 IF~!Global("GaveKey","CVROA7",0)~THEN GOTO Fest4
 END
 
 IF~~THEN BEGIN Fest3
-SAY~You look like seasoned adventurers. There is a man in a back room who seeks to buy rare artifacts for highest prices. Maybe you have something for him. You'll need this key to access that area. ~
+SAY~You look like seasoned adventurers. There is a man in a back room who seeks to buy rare artefacts for highest prices. Maybe you have something for him. You'll need this key to access that area. ~
 IF~~THEN REPLY~We may try that. My backpack gets heavier daily.~DO~SetGlobal("GaveKey","CVROA7",1) GiveItemCreate("WDKEY7",Player1,1,0,0) ~GOTO Fest4
-IF~~THEN REPLY~Shady collectors in shady backrooms of shady bars? Maybe I'm a greenhorn but I'm no fool, thank you.~GOTO Fest4
+IF~~THEN REPLY~Shady collectors in shady back rooms of shady bars? Maybe I'm a greenhorn but I'm no fool, thank you.~GOTO Fest4
 IF~~THEN REPLY~I'd prefer to see the rest of the possibilities first.~GOTO Fest4
 END
 
@@ -123,7 +123,7 @@ IF~~THEN BEGIN Fest4
 SAY~If you have the coin you may convince our girls to keep you company. I just provide the rooms and drinks to make your stay one to remember.~
 IF~~THEN REPLY~At least I will remember the empty purse and the hangover...Thank you but no.~EXIT
 IF~~THEN REPLY~Not this time, I'm in a hurry.~EXIT
-IF~~THEN REPLY~I've just been plundered by your *collegues* across the street...~ GOTO Fest5
+IF~~THEN REPLY~I've just been plundered by your *colleagues* across the street...~ GOTO Fest5
 IF~~THEN REPLY~I don't say no until I see your list of services.~GOTO Fest5
 
 END
@@ -171,7 +171,7 @@ IF~NumTimesTalkedTo(0)~THEN CVWDSiam SanIlva1
 ==CVWDSiam~Sarcasm does not befit the likes of...ooops...excuse me, mylady Sandrah, I had not...~
 ==CVSandrJ~Nevermind, we will not bother you any further.~
 ==CVWDSiam~Oh, I had always hoped one day you would find your way to us - unlike your father who steadfastly rejects his association with the noblesse.~
-==CVSandrJ~He righfully does - and with my mother being just a merchant's daughter I know my place as well.~
+==CVSandrJ~He rightfully does - and with my mother being just a merchant's daughter I know my place as well.~
 ==CVWDSiam~You are Elminster's daughter, child, and High Priestess of the House of Wonders...~
 ==CVSandrJ~I am just a simple priestess in the ranks...~
 ==CVWDSiam~Ah...just like your father - your disguises fool not those with an eye for true power.~

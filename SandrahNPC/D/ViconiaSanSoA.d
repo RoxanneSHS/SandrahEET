@@ -29,10 +29,10 @@ IF WEIGHT #-19~ Global("Vicstake","LOCALS",4) ~THEN BViconi VicciStake2
 ~I owe you a story, don't I?~
 DO~SetGlobal("Vicstake","LOCALS",5)RealSetGlobalTimer("SanVicBG2Plot","LOCALS",1800)~
 ==BSandr~ You do not owe me anything but I will listen if you think you are ready to share it with me.~
-==BViconi~I was alone in this town for quite a while and was looking for a suitable male to fulfill my needs.~
+==BViconi~I was alone in this town for quite a while and was looking for a suitable male to fulfil my needs.~
 ==BSandr~You are not one to suit yourself with just anyone, you want someone to match you in power and in passion - you made a wrong choice?~
 ==BViconi~Ha, not with respect to power nor with respect to passion but with respect to bigotry. The jaluk feasted with me - yes, I confess he gave me pleasure enough.~
-=~His powers however are with this town and its administration. After a while his fear of his fellowmen overcame his pleasure with me. He was afraid  his involvement with a drow would get him in trouble, the weak wael, Shar curse him and embrace him in her darkness!~
+=~His powers however are with this town and its administration. After a while his fear of his fellow men overcame his pleasure with me. He was afraid  his involvement with a drow would get him in trouble, the weak wael, Shar curse him and embrace him in her darkness!~
 ==BSandr~You got involved with one of the nobles of Athkatla?~
 ==BViconi~Ha, why should I go for less? But, my friend, my definition of *noble* would not fit for Acton Balthis.~
 ==BSandr~Is that not one of the Council members of Amn? I see - those bigot nobles have their oh so *lawful* ways to dismiss an unsuitable ex-lover.~

@@ -12,11 +12,11 @@ IF~Global("WDFishermen","GLOBAL",1)~THEN WDFish1 Fishplot1
 ==WDFish2~We're not sure, Lady Sandrah, it's just a straw we cling to...~
 ==WDFish1~We're worshipping the Water Queen rather than your goddess, to be honest.~
 ==CVSandrJ~That should not be a problem - depending of what the issue is you need help with.~
-==WDFish2~Our goddess does not answer us anymore, you know.~
+==WDFish2~Our goddess does not answer us any more, you know.~
 ==WDFish1~Our nets are empty and our prayers are unanswered since five days now.~
 ==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~We should not intrude into this case. If they are punished, they have deserved it.~
 ==CVSandrJ~That is not only a problem for the fishermen. ~
-=~<CHARNAME>, those people and their collegues play an important role for the supply of this Capitale, my hometown. In the long term their problems become a problem of the city.~
+=~<CHARNAME>, those people and their colleagues play an important role for the supply of this Capital, my home town. In the long term their problems become a problem of the city.~
 END
 ++~Have you done anything to anger Umberlee?~ + Fishplot2
 ++~What has happened that has deprived you of the goodwill of your goddess?~ + Fishplot2
@@ -27,7 +27,7 @@ IF~~THEN WDFish1 Fishplot2
 ==CVSandrJ~Someone outside of your circles may have sinned against the sea and her creatures and thus has caused the problem.~
 ==WDFish2~We have prayed to Her already to tell us of the cause of her anger but there was no answer.~
 ==WDFish1~Some are already proposing an old ritual of sacrifice like it was sometimes done by our forefathers...~
-==CVSandrJ~Oh, no! The times of such sacrifices are no longer for a modern city like my hometown. We need to find a way to negotiate with Umberlee.~
+==CVSandrJ~Oh, no! The times of such sacrifices are no longer for a modern city like my home town. We need to find a way to negotiate with Umberlee.~
 ==WDFish2~We'd prefer that too, if we only knew how.~
 ==CVSandrJ~There is a way to summon an Ambassador of the Sea to the shoreline and talk to him about your goddess' wishes.~
 ==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~You're silly to think you can manage such a creature!~
@@ -43,7 +43,7 @@ IF~~THEN WDFish1 Fishplot3
 ==WDFish2~The shoreline is our goddess' temple, it's here we worship her.~
 ==CVSandrJ~Mystra makes no deals with the Water Queen. The items we are looking for may be in one of the other temples in the West of town.~
 END
-++~We can take a look at the Temple of Splendor then.~DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
+++~We can take a look at the Temple of Splendour then.~DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
 ++~Why not inquire at the Temple of the Siamorphe then?~DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
 ++~I have nothing against another visit at the festhall of Sharess, hm.~  DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
 
@@ -59,7 +59,7 @@ IF~ Global("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotS
 ==CVSandrJ~We have the items to summon an Ambassador of the Sea.~
 ==WDFish2~We may have our fish knifes ready in case the creature is hostile.~
 ==CVSandrJ~No! Please, all of you, sheath your weapons. We want a peaceful negotiation.~
-==WDFish1~Sandrah is right, Yantl. Our goddess is already angry, we should do anything to bequiet her.~
+==WDFish1~Sandrah is right, Yantl. Our goddess is already angry, we should do anything to becalm her.~
 ==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~This can only end in bloodshed...~
 ==CVSandrJ~Fine, now that is agreed, I will start the recitation.~
 =~*Sandrah starts with a strange incantation in an unknown language...*~DO~SetGlobal("WDFishermen","GLOBAL",6)~EXIT
@@ -207,10 +207,10 @@ IF~~ THEN WDFish5 Sirine3
 ==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
 ==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~Do not dare to touch Umberlee's child, you fools!~
 == BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
-==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Be *mercyful* and kill her, mercyful towards all she may entangle next.~
-== BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendor, let's enjoy our stay and leave this damp hole, I say.~
+==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Be *merciful* and kill her, merciful towards all she may entangle next.~
+== BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendour, let's enjoy our stay and leave this damp hole, I say.~
 ==BJenli IF~ InParty("CVJenlig") ~ THEN ~Go to sleep with a mind flayer and wake up with your brain devoured. (Hiss) Only you will not wake up again. Manling too stupid for easy reasoning. Throw fish back to water, commander.~
-== BSANDR~ The lovers' fate is one thing but let me remind you that my hometown will suffer from a wrong decision in this case. ~
+== BSANDR~ The lovers' fate is one thing but let me remind you that my home town will suffer from a wrong decision in this case. ~
 END
 ++~We will bring you back to the water immediately, Neerol, enough suffering has come out of this fated love already, we must act on behalf of those who live on.~DO~SetGlobal("WDFishermen","GLOBAL",12) ActionOverride("WDFish5",DestroySelf())GiveItemCreate("WDfibod","CVSandr",1,0,0)~EXIT
 ++~I will leave you here, Neerol, the way out is clear. Go back to your Water Queen if you want. The fishermen must deal with their problem alone, I will not be judge in this case.~DO~SetGlobal("WDFishermen","GLOBAL",22) ~EXIT

@@ -18,7 +18,7 @@ END
 APPEND Jondal
 
 IF WEIGHT #-1~NumTimesTalkedTo(0) Global("JonHit","GLOBAL",0) ~ THEN BEGIN  1
-SAY~Hey there <CHARNAME>!  I see you're up early this day.  Well your father, Gorion, has asked me a strange favor.  Seems like he wants you to learn some fighting and asked me to be the teacher.  So I hope you brought your staff with you. ~
+SAY~Hey there <CHARNAME>!  I see you're up early this day.  Well your father, Gorion, has asked me a strange favour.  Seems like he wants you to learn some fighting and asked me to be the teacher.  So I hope you brought your staff with you. ~
 =~Hostile creatures have red circles around their feet. Left-clicking within the circle will direct you to attack me. You can switch weapons using the Quick Weapons icons. The weapon outlined in green is the current weapon. Attack with fists only (empty quick slot) if you only wish to knock your opponent unconscious.  You don't have to worry about that with me, so use your staff.  If you have magical abilities, try casting a spell at me by left clicking on the spell icon at the bottom of the screen.  Left-click on one of the spells that come up and cast it on whichever target you want.  I just hope you have an offensive spell memorized.~
 =~During our fight I'm going to spring a little surprise on you.  Remember, you can press the SPACE BAR at any time and pause the game.  This will give you time to think, especially once my little surprise comes up.  Are you ready now?  Good!~
 IF~~THEN DO~ CreateCreature("ERIK",[4185.1114],0) ActionOverride("Erik",Enemy()) Enemy() ~EXIT

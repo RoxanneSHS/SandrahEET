@@ -89,14 +89,14 @@ IF~~THEN EXIT
 END
 
 IF~RandomNum(2,2)~THEN BEGIN Guest2
-SAY ~That's the true Waterdeep fishsoup, I tell you. I must know I tried them all here in town.~
+SAY ~That's the true Waterdeep fish soup, I tell you. I must know I tried them all here in town.~
 IF~~THEN EXIT
 END
 
 
 BEGIN WDRestB
 IF~RandomNum(2,1)~THEN BEGIN Boy1
-SAY ~ Last nite there's bunch of dwarfs here, great fun, threw all empty dishes jus' on de ground an I didnt 'ave to clean 'em.~
+SAY ~ Last nite there's bunch of dwarfs here, great fun, threw all empty dishes jus' on de ground an I didn't 'ave to clean 'em.~
 IF~~THEN EXIT
 END
 
