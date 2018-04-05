@@ -3,7 +3,7 @@ ADD_TRANS_TRIGGER ADAngelj 236
 Global("SanSharNewHome","GLOBAL",0)~
 
 EXTEND_BOTTOM ADAngelj 236
-IF~GlobalLT("SanSharInt","GLOBAL",25)~THEN REPLY~ Why, yes, in fact. We traveled together a while.~ GOTO 239
+IF~GlobalLT("SanSharInt","GLOBAL",25)~THEN REPLY~ Why, yes, in fact. We travelled together a while.~ GOTO 239
 IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~ Yes. We became lovers for a time.~ GOTO SanAng1
 IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~ Yes. We became lovers...by the way..eh...can you envision yourself as a grandpa of sorts?~ GOTO SanAng5
 IF~GlobalGT("SanSharNewHome","GLOBAL",0)~ THEN REPLY~ I know you are her father and I know well how you treated her. She is a mayor figure now in Waterdeep, best stay out of her way.~GOTO 258
@@ -12,7 +12,7 @@ END
 APPEND ADAngelj
 IF~~THEN BEGIN SanAng1
 SAY~I... see. I confess that's not what I expected. I... hope you did right by her, chief.~
-IF~~THEN REPLY~Definitely better than you did. No false pretents, I know you are her father and I know well how you treated her.~ GOTO SanAng2
+IF~~THEN REPLY~Definitely better than you did. No false pretence, I know you are her father and I know well how you treated her.~ GOTO SanAng2
 IF~~THEN REPLY~I will not talk about the whole thing with you.~GOTO 255
 END
 
@@ -52,11 +52,11 @@ IF WEIGHT #-6~Global("SanAngelB","LOCALS",1)~ THEN Badangel SanKillSar
 ~Wait a minute, cleric girl, we needa talk a bit.~
 DO~SetGlobal("SanAngelB","LOCALS",2)~
 ==BSandr~What is it, cretin?~
-==Badangel~He, he, no hostilities anymore, we're on the same side now, beauty.~
+==Badangel~He, he, no hostilities any more, we're on the same side now, beauty.~
 ==BSandr~We will see.~
 ==Badangel~Now...I remember very well who it was that finally defeated my old boss Sarevok. Don't think I can't remember that gleaming hammer all my life.~
 ==BSandr~Hm, you witnessed it? But you were dead already by that time...~
-==Badangel~Ah, dead...relatively. You see me right now, don't you, I have my ways to survive even without a healer like you on my side. I pretended to be dead enough not to be of interest to you or <CHARNAME> anymore. You didn't take the time to inspect one like me very carefully on that day.~
+==Badangel~Ah, dead...relatively. You see me right now, don't you, I have my ways to survive even without a healer like you on my side. I pretended to be dead enough not to be of interest to you or <CHARNAME> any more. You didn't take the time to inspect one like me very carefully on that day.~
 ==BSandr~You are probably right in that. We were all very much focussed on Sarevok, just removing the rubble that was in the way to that goal.~
 ==Badangel~Well, yes, rubble...You're right in a way - but as they say, a bad penny always turns up again.~
 ==BSandr~Fine, so you witnessed it all pretending your death - anything of interest you have to say beyond that? I was there myself so I know what happened.~
@@ -78,7 +78,7 @@ IF WEIGHT #-6~Global("AngelinWD","LOCALS",1) ~ THEN Badangel WDComand
 ~This place kinda gives me a strange feeling...~
 DO~SetGlobal("AngelinWD","LOCALS",2) ~
 ==BSandr~No wonder, it is the house of the Commander of the Waterdeep Forces.~
-==Badangel~ A kind of collegue then, I mean,...I was once commanding the Flaming Fist for a short while...eh?~
+==Badangel~ A kind of colleague then, I mean,...I was once commanding the Flaming Fist for a short while...eh?~
 ==BSandr~You would do good not to compare yourself with the current Waterdeep Commander, just as a friendly advice.~
 ==Badangel~Does he know my background, you think?~
 ==BSandr~SHE knows much more than that, much more than you would like anyone to know of you.~

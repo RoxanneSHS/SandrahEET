@@ -43,7 +43,7 @@ CHAIN
 IF WEIGHT #-11~Global("SanHealMWA","GLOBAL",3)~THEN MWBarn SanHeal1
 ~ You think Ariena so weak to need your spellcasting to move on? No need gifts from your woman god.~
 DO~SetGlobal("SanHealMWA","GLOBAL",4)~
-==BSandr~This group needs you in full power and strength, Ariena. My role is to help us to maintain your health and wellfare.~
+==BSandr~This group needs you in full power and strength, Ariena. My role is to help us to maintain your health and welfare.~
 == MWBarn~Fine, keep Ariena fit to crush foes of <CHARNAME>. Not think of receiving thanks.~ EXIT
 
 CHAIN
@@ -65,15 +65,15 @@ CHAIN
 IF~~THEN CVSandrJ MWArAAsi
 ~(Sandrah turns around to you with a questioning look as she hears her name. She obviously had not listened to Ariena and you before.) May I help you?~
 ==MWarnJ~Ariena has Orc blood and Aasimar blood. You know all much. Tell me what means Aasimar. Ariena no knows good what they is.~
-==CVSandrJ~If one is an Aasimar, it means that their ancestors have the blood of a good extraplanar creature within them. Like the blood of an Archon or Deva. Most Aasimars have a tendency to be a good person as well.~
+==CVSandrJ~If one is an Aasimar, it means that their ancestors have the blood of a good extraplanar creature within them. Like the blood of an Archon or Deva. Most Aasimar have a tendency to be a good person as well.~
 ==MWarnJ~That big nonsense. Never say anyone that Ariena is good. Orc blood very strong in Ariena.~
-==CVSandrJ~A tendency indicates a possibility, Ariena. Thus, not all Aasimars do good deeds. Like <CHARNAME> is the child of Bhaal but is no murderer through this.~
+==CVSandrJ~A tendency indicates a possibility, Ariena. Thus, not all Aasimar do good deeds. Like <CHARNAME> is the child of Bhaal but is no murderer through this.~
 ==MWarnJ~So what mean 'tendency' word?~
-==CVSandrJ~You are an Aasimar! You just do not 'always' do good things. But the legacy of an Aasimar continues for many generations. You, Ariena, also have this taint. It can be seen in your beauty and your resilience. Many Aasimars cling, because of their blood, to the side of good. Their blood pulls them towards this side. Though it is not law, it is the general rule.~
-==MWarnJ~If Aasimar are good then makes Ariena think why mother of Ariena left Ariena. Me wonder what you knows of Aasimars is right. Ariena starts to wonder about mother of Ariena, when Ariena came south. Me come from north and they tells Ariena mother flees from north. Me no know much, but me know only way you can goes from north is to south.~
+==CVSandrJ~You are an Aasimar! You just do not 'always' do good things. But the legacy of an Aasimar continues for many generations. You, Ariena, also have this taint. It can be seen in your beauty and your resilience. Many Aasimar cling, because of their blood, to the side of good. Their blood pulls them towards this side. Though it is not law, it is the general rule.~
+==MWarnJ~If Aasimar are good then makes Ariena think why mother of Ariena left Ariena. Me wonder what you knows of Aasimar is right. Ariena starts to wonder about mother of Ariena, when Ariena came south. Me come from north and they tells Ariena mother flees from north. Me no know much, but me know only way you can goes from north is to south.~
 ==CVSandrJ~There is only one person who could answer this, Ariena. Your mother is still alive, right?~ 
 ==MWarnJ~Hm... (The half-orc has grabbed your arm almost desperately. You clench your teeth not to show the pain her agitated grib causes.)~
-=~Can Ariena ask favor of you?~
+=~Can Ariena ask favour of you?~
 END
 ++~ Hm... depends. What is it?~ EXTERN MWarnJ 42
-++~ Hell no! I took you in my party for brawn not brain. Just kill and ask no questions or favors, okay?~ EXTERN MWarnJ 40
+++~ Hell no! I took you in my party for brawn not brain. Just kill and ask no questions or favours, okay?~ EXTERN MWarnJ 40

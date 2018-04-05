@@ -2,7 +2,7 @@ APPEND CVSandrJ
 
 IF ~Global("SanHelpQ","RA5602",1)~ THEN BEGIN SanIWDIcetmplQ1
 SAY~May I help, <CHARNAME>?~
-IF~~THEN REPLY~Ah, damned riddles. Your specialty, my beautiful thinker. Any ideas?~ GOTO SanIWDIcetmplQ2
+IF~~THEN REPLY~Ah, damned riddles. Your speciality, my beautiful thinker. Any ideas?~ GOTO SanIWDIcetmplQ2
 IF~~THEN REPLY~ I will be damned if I couldn't solve this riddle. You may help by standing there silently and watching me. (Wink) And be impressed my my cleverness afterwards, of course.~DO~ SetGlobal("SanHelpQ","RA5602",2) ~GOTO SanIWDIcetmplQ3
 END
 

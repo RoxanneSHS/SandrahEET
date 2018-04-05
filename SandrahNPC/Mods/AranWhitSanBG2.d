@@ -5,7 +5,7 @@ DO~SetGlobal("SanAranH","GLOBAL",4)~
 ==BSandr~You had no healers?~
 ==C-Aranb~Too few - but on top of that they wouldn't be in the middle of the battle like you. Girl, few of your gender can fight like that. And even if, they weren't in th' Flaming Fist.~
 ==BSandr~Aran, <CHARNAME> and me were fighting against the Flaming Fist most of the time we spent at Baldur's Gate, even if against our will.~
-==C-Aranb~Hate to say it but I guess we might've lost that battle. Glad I wasn't there anymore.~
+==C-Aranb~Hate to say it but I guess we might've lost that battle. Glad I wasn't there any more.~
 ==BSandr~We are on the same side now.~
 ==C-Aranb~Good to know, really good to know.~EXIT
 

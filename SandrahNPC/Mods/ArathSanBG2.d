@@ -8,12 +8,12 @@ CHAIN
 IF WEIGHT #-5~Global("SanMeetArath","GLOBAL",2)~THEN BLK#Arat SanMeetArath2
 ~With respect to slavery we seem to share the same opinion, mylady.~
 DO~SetGlobal("SanMeetArath","GLOBAL",3)RealSetGlobalTimer("SanInterArath","LOCALS",1700)~
-==BSandr~Is it so unusual to care for one's fellowbeings and fight against those who do treat them like possession and worse?~
+==BSandr~Is it so unusual to care for one's fellow beings and fight against those who do treat them like possession and worse?~
 ==BLK#Arat~I'd say it is not - still it is unusual for one like you.~
 ==BSandr~And what would *one like me* be in your view?~
 ==BLK#Arat~Well, obviously you belong to that so-called upper class who generally profit from the suffering of slaves and often enforce it to dwell in their luxury.~
 ==BSandr~Generally? Some do, so much is obvious, some do not - some object to it and some fight against it. There are all variations in your *so-called upper class*. I have the feeling you know that just too well as you do not appear to me as one who spent his former life in poverty.~
-==BLK#Arat~(Smiles) Is it so easy to get you out of your reserves, mylady?~
+==BLK#Arat~(Smiles) Is it so easy to get you out of your reserves, my lady?~
 ==BSandr~Normally not, but two things sure succeed for that purpose. One is slavery - the other is prejudice.~EXIT
 
 CHAIN
@@ -38,7 +38,7 @@ DO~SetGlobal("SanMeetArath","GLOBAL",7)RealSetGlobalTimer("SanInterArath","LOCAL
 ==BSandr~Do you spend that much time with observing and thinking about me?~
 ==BLK#Arat~Like you said...we spend much time together and there is not always some other interesting object around.~
 ==BSandr~(Laughs) You are a master in issuing compliments to women, really.~
-==BLK#Arat~I'm not at that stage yet with you - not before I see abit clearer.~
+==BLK#Arat~I'm not at that stage yet with you - not before I see a bit clearer.~
 =~How can a Bhaalspawn and a priestess of Mystra be as close as you are with <CHARNAME>? My lore of the Time of Troubles tells me that the current incarnation of your goddess and her company were the ones to defeat and kill the God of Murder.~
 ==BSandr~My personal hatred towards Bhaal goes even deeper as he caused the early death of my mother by impregnating her with one of his spawns.~
 ==BLK#Arat~Oops...so my question is further fuelled by this fact. Unless you secretly plan to take revenge on <CHARNAME> but still wait for some strange reason.~
@@ -59,7 +59,7 @@ END
 
 CHAIN
 IF~~ THEN CVCatCe SanFindArat2
-~ Miau (The cat stretches and tests its healed leg cautiously. It expells a satisfied purring.)~
+~ Miau (The cat stretches and tests its healed leg cautiously. It expels a satisfied purring.)~
 ==BLK#Arat~ Look at it, Sandrah, it is not a tame one, it is a wild mountain cat. How did it get here?~
 == BSANDR~ Probably brought here by some hunter or menagerie and then thrown out in the street when they found it was injured.~
 ==BLK#Arat~ (Sighs) I am afraid you are right, my friend.~
@@ -91,7 +91,7 @@ DO~ SetGlobal("SanMeetArath","GLOBAL",13)ActionOverride("CVSandr",AddSpecialAbil
 == BSANDR~ You are a druid, do you not communicate with the wild beings all the time?~
 ==BLK#Arat~ In some way yes, you are right, Sandrah, but this was different, much clearer than what I receive from a *normal* animal.~
 == BSANDR~ Pelligram surely does not fit into that category. Anyway, I am glad our little guest has now found what she needs, Arath.~
-==BLK#Arat~ So am I. (Instictively Arath keeps Sandrah's hand in his own while the group continues their march.)~
+==BLK#Arat~ So am I. (Instinctively Arath keeps Sandrah's hand in his own while the group continues their march.)~
 ==CVCatCe~ Miau.~DO~ ActionOverride("CVCatce",MoveToPointNoInterrupt([0.0]))~ EXIT
 
 CHAIN
