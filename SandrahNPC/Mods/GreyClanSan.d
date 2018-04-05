@@ -4,7 +4,7 @@ CHAIN
 IF ~ NumTimesTalkedTo(0) ~ THEN SANLIND 1
 ~ Foolish as before, the spy dares to return.~
 ==BSANDR ~ Ah, it is only you, Lyndy, the worst apprentice sorceress in the academy.~
-==SANLIND ~ High Sorceress Lyndy by now. Times have changed a bit. I have gained some skills by now, other than you, dilletante spy and dilletante priestess.~
+==SANLIND ~ High Sorceress Lyndy by now. Times have changed a bit. I have gained some skills by now, other than you, dilettante spy and dilettante priestess.~
 ==BSANDR ~ We will see. At least our skills have brought us into here. And by the front door.~
 ==SANLIND ~ You have destroyed my latest creation? My myconide watcher? You will pay for that!~
 DO ~ ChangeEnemyAlly("sanlind",ENEMY) ChangeAIScript("CVAkaWiz",OVERRIDE)~ EXIT
@@ -20,7 +20,7 @@ IF ~ NumTimesTalkedTo(0) ~ THEN SANRENA 1
 = ~ Congratulations, Renata, two out of three correct! You have really improved.~
 == SANRENA ~ Little Miss Arrogance. Always the best in the classroom, always the teacher's pet. Until the nasty spy was found out. You must have a nerve to appear here once again.~
 == BSANDR ~ It was a mistake to leave here while there was still unfinished business. We have come back to correct this mistake.~
-== SANRENA ~ This time Miss Know-it-all has failed the test. Sorry, but your comeback is the mistake here, and it cannot be corrected anymore.~
+== SANRENA ~ This time Miss Know-it-all has failed the test. Sorry, but your comeback is the mistake here, and it cannot be corrected any more.~
 DO ~ ChangeEnemyAlly("sanrena",ENEMY) ChangeAIScript("CVAkaWiz",OVERRIDE) ~ EXIT
 
 APPEND  CVSANDRJ
@@ -33,13 +33,13 @@ END
 
 IF~~ THEN BEGIN SanJeyTakeQ2
 SAY~ Exactly. At least it would not hurt us to look for his man near the Hall of Wonders and learn more about this Grey Clan.~
-IF~~THEN REPLY~ Hm, the Hall of Wonders is just around the corner. I'm just afraid that the story will not end there and may lead us far away from our current quest. Let's find out, we're not yet commited to support them.~EXIT
+IF~~THEN REPLY~ Hm, the Hall of Wonders is just around the corner. I'm just afraid that the story will not end there and may lead us far away from our current quest. Let's find out, we're not yet commuted to support them.~EXIT
 END
 
 IF~~ THEN BEGIN SanJeyTakeQ3
 SAY~ He did not ask directly for our support and would probably be able to handle the case with his elite fists alone. It is us who may gain their respect and support - if we help them now they may help us later against our foe.~
 IF~~THEN REPLY~ I see. At least it would not hurt us to look for his man near the Hall of Wonders and learn more about this grey clan.~EXIT
-IF~~THEN REPLY~ Hm, the Hall of Wonders is just around the corner. I'm just afraid that the story will not end there and may lead us far away from our current quest. Let's find out, we're not yet commited to support them.~EXIT
+IF~~THEN REPLY~ Hm, the Hall of Wonders is just around the corner. I'm just afraid that the story will not end there and may lead us far away from our current quest. Let's find out, we're not yet commuted to support them.~EXIT
 END
 
 // Academy Mission
@@ -127,7 +127,7 @@ END
 
 
 INTERJECT_COPY_TRANS BW05MONI 3 Acaspy
-== BW05MONI IF ~ InParty("CVSandr") ~ THEN ~ Crazy charade. You have this little apprentice spy with you. Sandrah, you are foolish enough to stand up against the Acedemy of Legencase once again. But daddy cannot help you this time, this place is hidden even from him. He will not even know when you are dead in a few moments.~
+== BW05MONI IF ~ InParty("CVSandr") ~ THEN ~ Crazy charade. You have this little apprentice spy with you. Sandrah, you are foolish enough to stand up against the Academy of Legencase once again. But daddy cannot help you this time, this place is hidden even from him. He will not even know when you are dead in a few moments.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ This group of <CHARNAME> has crossed all your plans on the Sword Coast by now. Such silly magelings like Linda, Octavia and Petrarca will not be able to stop us.~
 == BW05MONI IF ~ InParty("CVSandr") ~ THEN ~Sad. Our academy is known for its splendid results. You should have learned your lesson there. You cannot stop us, foolish little girl. You did not listen to the lecture then, you will learn the hard way now.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ You will see how much you err, when we personally will deliver what will be left of your intrigue against Baldur's Gate to your own doorstep. I will bring you the remains of your lackeys to Legencase.~
@@ -140,10 +140,10 @@ INTERJECT_COPY_TRANS BW05TERG 26 Acaspy2
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Yes, I am Sandrah. You must know that I have been to Legencase and the Academy already two summers passed.~
 == BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ Really? Pray tell us more about that. Let us see if we really have a chance to pursue this evil further.~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ The Academy was once renowned for its excellent education in the magic arts, especially focussed on priests and healing spells. Some summers ago however the current head mistress, Monica, whom we met briefly inside this trap, took over responsibility. Alarming news reached my father's ear, there was talk about a shift in focus to educate battle mages and the like now.~
-= ~ One source provided us with the report that the Academy had even provided a batallion of battle mages to a local war in Suzail. After a long discussion my father finally agreed to send me to the Academy disguised as a novice. He provided me with an emergency spell for escape in case of danger and an endless fatherly advice of how to tread careful as a spy.~
+= ~ One source provided us with the report that the Academy had even provided a battalion of battle mages to a local war in Suzail. After a long discussion my father finally agreed to send me to the Academy disguised as a novice. He provided me with an emergency spell for escape in case of danger and an endless fatherly advice of how to tread careful as a spy.~
 == BIMOEN IF ~InParty("Imoen2") InParty("CVSandr")~ THEN ~ Oh, how thrilling, a real spy! How I envy you, Sandrah!~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ I gathered a lot of information way then, but I was finally found out by Monica when I overheard her negotiations with an ambassador trying to hire the new services of the academy for a revolt against his Duke. I could just escape with the device from my father.~
-== BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ You are a remarkably brave young girl, Sandrah, althought you made yourself a mighty enemy. Was it really worth the hugh risk you took?~
+== BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ You are a remarkably brave young girl, Sandrah, although you made yourself a mighty enemy. Was it really worth the huge risk you took?~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ We may find the worth of my venture right now. Even when my father and his friends could do little to stop Monica and her dealings back then, I gathered enough insider information that could help us now. But more important is that we found this fibula on one of the sorceresses we had to defeat.~
 == BW05TERG IF ~ InParty("CVSandr") ~ THEN ~ And you know what it is and how we may use it for our advantage?~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ It is an identification symbol but also a transportation keystone of some sorts. Even though we cannot locate the exact position of the Academy, I assume that my father can imitate the recall spell with help of Mystra's shard.~
@@ -185,7 +185,7 @@ END
 // Starting the Quest
 CHAIN
 IF WEIGHT #-2~NumTimesTalkedTo(0) InParty("CVSandr")~THEN BW05FFGE JeyNoticeSan
-~ Hello, my not-so-little-girl-anymore, would you recognise your old growler, as you liked to call me?~
+~ Hello, my not-so-little-girl-any-more, would you recognise your old growler, as you liked to call me?~
 ==CVSANDRJ~ Good day to you, old...(Laughs), General Jedyan.~
 ==BW05FFGE~ (The general turns to you.) I recognise you! You are the ones who dealt with the bandit threat. Even though your deeds were invaluable, peace were only temporarily. Another threat has risen, and if nothing is done the streets will run red with the blood of innocents.~
 ==CVSANDRJ~ More than the one we currently already deal with, which is the intrigue of the Iron Throne against Baldur's Gate and Amn?~
@@ -210,8 +210,8 @@ CHAIN
 IF~~THEN CVSANDRJ  MoniAka2
 ~ Have you become puppets on the string of Xephistagoras by now, Monica?~
 == BW05MONI ~ It makes me glad somehow to see that even the worst of our students are better than the whole rest of this uncivilized place called the Sword Coast. So you know about Xephistagoras, little priestess. Then you know your journey and your infiltration has come to an end. Even your father trembles when this name is mentioned.~
-==CVSANDRJ ~ Isolation really produces wild mindcapes. You are so cut off here from any reality that you have not noticed whom you were really working for. As your little intrigue has failed already, your mighty puppeteer has cut the strings and has gone to his next cunning plot. You are sadly alone against us now. Your only chance is cooperation.~
-== BW05MONI ~ XEPHISTAGORAS! I call you to destroy these intruders. Get your revenge on Elminster today, crush his beloved daughter and bring our mission to a glorius end!~
+==CVSANDRJ ~ Isolation really produces wild mindscapes. You are so cut off here from any reality that you have not noticed whom you were really working for. As your little intrigue has failed already, your mighty puppeteer has cut the strings and has gone to his next cunning plot. You are sadly alone against us now. Your only chance is cooperation.~
+== BW05MONI ~ XEPHISTAGORAS! I call you to destroy these intruders. Get your revenge on Elminster today, crush his beloved daughter and bring our mission to a glorious end!~
 END
 ++ ~ (Laugh) Impressive. Only - it seems you are still alone. Your mighty ally does not seem to like losers.~ + MoniAka3
 ++ ~ Nice try. We will surely not wait until the big evil guy finds some time to care for his failed project. Come with us to Baldur's Gate and you will receive a fair trial from the Dukes.~ + MoniAka3
@@ -239,10 +239,10 @@ EXIT
 CHAIN
 IF~~THEN  CVSANDRJ TergMoniXe
 ~ One thing remains open nonetheless. Xephistagoras did not appear in the hour of need of the academy. He seemed to have dropped his allies when their failure became apparent.~
-== ELMINSA ~ This arch fiend. Looks like him, to leave the battlefield in the hour of dispair.~
+== ELMINSA ~ This arch fiend. Looks like him, to leave the battlefield in the hour of despair.~
 == BW05TERG~ We have destroyed his basis here on the Sword Coast and with your daughter's success we have also cut off his retreat in Legencase. Agreed, he himself is not destroyed, but it will take him a long, long time to build up a similar force against us again.~
 ==CVSANDRJ ~ Mind it, father, <CHARNAME> has destroyed a large number of fierce opponents that were in league against us. Those will not be so easily replaced like bandits and mercenaries. The whole network does no longer exist.~
-== ELMINSA ~ Thou has become truely a major force here, mine young friend <CHARNAME>. I advise thee to be more careful henceforth. Thine enemies will be more powerful from now on as well. A great one rarely goes unnoticed.~
+== ELMINSA ~ Thou has become truly a major force here, mine young friend <CHARNAME>. I advise thee to be more careful henceforth. Thine enemies will be more powerful from now on as well. A great one rarely goes unnoticed.~
 == BW05TERG~ I agree with Elminster. Your role in this episode is played for the moment. We will hear of Xephistagoras again, but not in the near future. You have gained a lot of experience that will help you with your own quest surely. Good luck to you all.~ DO ~ EscapeArea()~
 == ELMINSA ~ Once again, I welcome thee all to Waterdeep. Enjoy thine stay here. The old mage will retire now and clear the field for the young heroes. (Kisses his daughter dearly before he retires to his study.)~ DO ~ EscapeArea()~
 EXIT
