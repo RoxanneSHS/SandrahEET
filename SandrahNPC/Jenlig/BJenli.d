@@ -26,7 +26,7 @@ IF~~THEN REPLY~You are destroying your...eh...children...eh...your eggs...?~GOTO
 END
 
 IF~~THEN BEGIN JeneggsE5
-SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy misbreed if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg. Jen'lig and Thayling not do for breeding.~
+SAY~(Hiss) Githyanki breed to maintain race. Varsh at hatchery will destroy monstrosity if find and blame Jen'lig for deed. No place on Astral Plane and no place on Prime for what is in egg. Jen'lig and Thayling not do for breeding.~
 =~*With an experienced hit of the silver sword she splits the second egg's sturdy shell.*~
 IF~~THEN REPLY~It would have been interesting to see what result you may have produced. Anyway, it probably is better not to know. ~GOTO JeneggsE6
 IF~~THEN REPLY~That is probably the best. ~GOTO JeneggsE6
@@ -58,7 +58,7 @@ DO~SetGlobal("Jenimo2","LOCALS",4)RealSetGlobalTimer("JenligT","LOCALS",1000)~
 ==BImoen~According to our schedule it's your turn to cook for us tonight. Heya, I'd be most and more interested what you folks eat for dinner. ~
 ==BJenli~Cooking is infant work not for soldier.~
 ==BImoen~Hey, We're all hungry and tired and each of us has to do it in turn. No exceptions, right?~
-==BJenli~(Hiss) Is manling habbit, so Jen'lig travels with manlings, fights with manlings - now cooks with manlings.~
+==BJenli~(Hiss) Is manling habit, so Jen'lig travels with manlings, fights with manlings - now cooks with manlings.~
 ==BImoen~That's the spirit, gal. So tell me quickest, what's on the menu?~
 ==BJenli~(Looks around the vicinity of the camp) Fungus grows there on tree, squirrels hop there or maybe is rat? What else...all put in pan and cook some hours. Will not know what was before when cooked. ~
 ==BImoen~Eeeh...very efficient and maybe very healthy for Githyanki but maybe not very much my taste...~
@@ -74,7 +74,7 @@ IF~Global("SanHealJen","GLOBAL",6)~THEN BJenli SanthiefJen1
 ==BJenli~None of my race steals from other or from society. But outsiders steal from Githyanki. Like sword Jen'lig is sent to find.~
 =~Jen'lig thought of best way to find thieves. Best way is to think like thief. To think like thief must learn to act and behave like thief. (Hiss) steal from outsiders also good for Githyanki - they steal - Jen'lig steal back.~
 ==BSandr~It was your own invention then? Impressive. After all I had read about your kin I was not expecting one to take so much initiative.~
-==BJenli~A Githyanki Primewalker-Captain must decide often on mission. Must have capability for own thinking. (Hiss) Even...too much thinking great danger.~
+==BJenli~A Githyanki Planewalker-Captain must decide often on mission. Must have capability for own thinking. (Hiss) Even...too much thinking great danger.~
 ==BSandr~So you really are a high ranking officer.~
 ==BJenli~(Hiss) Gish or captain not be sent alone for mission. Must be special to travel Prime alone.~ DO~SetGlobal("SanHealJen","GLOBAL",7)~EXIT
 
@@ -85,7 +85,7 @@ DO~SetGlobal("SanHealJen","GLOBAL",9)ActionOverride("CVSandr",AddSpecialAbility(
 ==BSandr~Mystra is not so useless for me in the way that she originally was a human herself. She teaches me how to deal with the powers of the Weave. The deeds she performed as a human priestess, fighter and adventurer are also inspiring me when I need guidance for my own behaviour.~
 ==BJenli~(Hiss) Midnight was great fighter, not afraid to fight even other manling gods. Follow her by adopting her human ways makes Sandrah strong. Is different from saying prayers and hoping for help from (hiss) gods. Is not different from Jen'lig follow example of mighty Gith to fight for freedom of our race.~
 ==BSandr~Your mistrust in gods includes your own god-queen Vlaakith...~
-==BJenli~(Hiss) Vlaakith not Gith even when try to be. Queen too much alone to take councelling for what is best for githyanki race.~
+==BJenli~(Hiss) Vlaakith not Gith even when try to be. Queen too much alone to take counselling for what is best for githyanki race.~
 ==BSandr~You risk to make your own decisions in that respect, even if those may not be equivalent to those of Vlaakith?~
 ==BJenli~Jen'lig always true to spirit of Gith, always loyal to githyanki...loyal to Queen if possible without breaking first rules.~
 ==BSandr~A dangerous path - but that of true heroine. I only doubt that your own kin would understand all of that well.~
@@ -111,7 +111,7 @@ DO~SetGlobal("JenLinear","LOCALS",2)~
 ==BSandr~I read that your home are the god-isles each being the immense petrified remains of a dead god that floats on the Astral Plane. Such isles have matter and time to some extend.~
 ==BJenli~You know much, Sandrah. My city Tu'narath, the capital city of the githyanki, is the petrified corpse of a dead god known as "The One in the Void". Dead god of the prime.~
 END
-++~A tome at candlekeep mentioned that your queen Vlaakith never leaves home - it is said she has no age.~ + Linetime2
+++~A tome at Candlekeep mentioned that your queen Vlaakith never leaves home - it is said she has no age.~ + Linetime2
 ++~I heard Vlaakith CLVII has no age as she is a lich, she feeds on her own kin.~+ Linetime2
 
 CHAIN
@@ -124,7 +124,7 @@ END
 
 CHAIN
 IF~Global("JenHallw","BG0130",1)~ THEN BJenli Invent
-~Much reminds Jenlig of Tu'narath. Good inventions made by githyanki but only can make use on Astral Plane.~
+~Much reminds Jen'lig of Tu'narath. Good inventions made by githyanki but only can make use on Astral Plane.~
 DO~SetGlobal("JenHallw","BG0130",2)~
 ==BSandr~Your kin builds things like these around here?~
 ==BJenli~Take many years of your time count to create Githyanki astral ship, (hiss).~
@@ -143,7 +143,7 @@ IF~Global("JenSeatalk","BG3100",2)~ THEN BJenli Seaside
 DO~SetGlobal("JenSeatalk","BG3100",3)~ 
 ==BIMOEN IF ~ InParty("Imoen2")~ THEN ~You have oceans over there? Guess they must be as strange as anything else in that world.~
 ==BSandr~I read there is even travel and trade between the God Isles of your plane.~
-==BJenli~Unpenetrable fog lies between God isles. Needs much knowledge to venture out and find way.~
+==BJenli~Impenetrable fog lies between God isles. Needs much knowledge to venture out and find way.~
 ==BSandr~This is common to the Sea of Swords you see before you, Jen'lig. To sail out there beyond the sight of the shore is not for the faint hearted.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clangeddin's Axe, only the faint minded would entrust their life to the sea.~
 ==BJenli~Counselor did?~
@@ -156,10 +156,10 @@ IF~Global("JenDurl","LOCALS",1)~ THEN BJenli Bastion
 ~(HISS!) Dwarfling as stupid as Queen in her palace...~
 DO~SetGlobal("JenDurl","LOCALS",2)~
 ==BSandr~You mean, they both try to hide in a fortification defending all intruders in the vain hope to endure eternally.~
-==BJenli~Sandrah has keen eye that good advisor needs. <CHARNAME> lucky to have such one. Queen not listen to advisors, assimilates them to gain their power but thus loses their eyes.~
+==BJenli~Sandrah has keen eye that good advisor needs. <CHARNAME> lucky to have such one. Queen not listen to advisers, assimilates them to gain their power but thus loses their eyes.~
 ==BSandr~Hm, you would like to counsel her at times - for the sake of your race, but it is not possible. When you appear too strong she will try to make use of your power by assimilation.~
 ==BJenli~(Hiss) Jen'lig see and learn much which is good for githyanki. Will be lost if come too close to Queen...will be lost if not shared with Queen and fortress cadre.~
-==BSandr~Your planewalking will allow you to serve your kin and gain knowledge - and you stay out of Queen Vlaakith's reach at the same time.~
+==BSandr~Your plane-walking will allow you to serve your kin and gain knowledge - and you stay out of Queen Vlaakith's reach at the same time.~
 ==BJenli~Works for time only. Jen'lig must return when mission fulfilled.~
 ==BSandr~Durlag fell due to his own paranoia and the fortification became his trap.~
 ==BJenli~Queen already in own trap...trap of mind like schizoid dwarfling.~
@@ -175,7 +175,7 @@ DO~SetGlobal("SuninMeetJen","GLOBAL",4) RealSetGlobalTimer("JenligT","LOCALS",15
 ==BJenli~See much, priestess Sandrah, good advisor for commander.~
 =~Kastya was Supreme Planewalker before Jen'lig. Kastya discover Jen'lig talents and took her from normal ranks, trained and taught her well.~
 ==BSandr~Your mentor and teacher - I hear something else as well...~
-==BJenli~Sandrah see into heart of manlings, see into heart of githyanki. Jen'lig was thinking Kastya may become mate - (Hiss!!) but was killed before Jen'lig could qualify for such consideration by marshall.~
+==BJenli~Sandrah see into heart of manlings, see into heart of githyanki. Jen'lig was thinking Kastya may become mate - (Hiss!!) but was killed before Jen'lig could qualify for such consideration by marshal.~
 ==BSandr~(Sigh) Young female githyanki are not much different from young human females...~
 ==BJenli~(Hiss) Sandrah had this human *love* feeling for her teacher?~
 ==BSandr~Drizzt, yes, I had sleepless nights because of him - he was a drow.~
@@ -188,12 +188,12 @@ CHAIN
 IF~Global("SanJenDriz","LOCALS",1)~THEN BJenli KayWas3
 ~Meeting Darkling has very impacted Sandrah.~
 DO~SetGlobal("SanJenDriz","LOCALS",2)~
-==BSandr~Yes...(sigh), in a positive manner. You have developped quite a good eye for our *manling* feelings.~
+==BSandr~Yes...(sigh), in a positive manner. You have developed quite a good eye for our *manling* feelings.~
 ==BJenli~(Hiss) Feeling not too strange for Jen'lig. Maybe Darkling was to Sandrah what Kastya was to Jen'lig.~
 ==BSandr ~Young female githyanki are not much different from young human females in the presence of a male who has all they wish for, I guess.~
 ==BJenli~Manling girls mix your love feeling concept into it - githyanki search for best to make continue race...and best to have satisfaction in bed, true.~
 ==BSandr ~Should someone ever do to Drizzt what those men have done to Kastya I would attempt to walk the planes to capture and punish them.~
-==BJenli~And Sandrah has persistence and skill to succeed - like Jen'lig will succeed and make Kaystya honorable in death.~EXIT
+==BJenli~And Sandrah has persistence and skill to succeed - like Jen'lig will succeed and make Kastya honourable in death.~EXIT
 
 CHAIN
 IF~Global("SuninMeetJen","GLOBAL",5)~THEN  BJenli KayWas2
@@ -216,11 +216,11 @@ DO~SetGlobal("JenWyEat","LOCALS",2) ~
 ==BSandr IF~ InParty("CVSandr") ~ THEN  ~There is never a dull moment with the company you choose, <CHARNAME>.~
 == BCORAN  IF~ InParty("Coran") ~ THEN  ~If more people could develop this taste, Wyvern hunting will become a great business opportunity.~
 == BVICON  IF~ InParty("Viconia") ~ THEN ~ I can't imagine any of our surfacers is interested in the delicious liver of the beast, so I claim it for myself, githyanki. ~
-== BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Back to the roots, our anchestors would have taken any opportunity for meat.~
+== BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Back to the roots, our ancestors would have taken any opportunity for meat.~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ (Scribble) I'll file this under *cuisine of the astral plane*, I guess. ~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ She is a beast, however she tries to disguise it. ~
 == IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ The very thought of it is...disgusting. ~
-==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ I'm glad I have an iron ration of dried bisquits for days like these.~
+==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ I'm glad I have an iron ration of dried biscuits for days like these.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clangeddin's Axe, we surely must slay them but leave the rubbish to the wolves, buzzurk!~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ Not in the worst time of hunger in Norheim we'd go to fill our bellies with such stuff.~
 == BXANNN  IF~ InParty("Xan") ~ THEN ~ Whether we poison ourselves with its meat or fall under the beast's claws - where is the difference? ~
@@ -236,7 +236,7 @@ IF~Global("BansheeMap3","GLOBAL",2)~THEN BJenli DSCMinf
 ~ (Hiss) Trail is fresh, scent cannot be mistaken...(HISS!!)~
 DO~SetGlobal("BansheeMap3","GLOBAL",3)~
 ==BSandr~A trace of the sword you seek? Here?~
-==BJenli~Not sword, Jen'lig sense illithids. Must be close.~
+==BJenli~Not sword, Jen'lig sense Illithids. Must be close.~
 =~Commander <CHARNAME> be careful. Look for cave or hole to underground, mind flayers not be on surface.~
 ==BSandr~What would they do up here?~
 ==BJenli~Seek food maybe. Seek manling brains to feed on...(Hiss) Maybe seek githyanki eggs - but wrong place, no hatchery near. Great pleasure for Jen'lig if commander help find and destroy illithid. Also good for manlings in area - illithid may want go to towns nearby to feed.~
@@ -250,7 +250,7 @@ IF~Global("BansheeMap3","GLOBAL",4)~THEN BJenli DSCMinfcav
 ~ (HISS!!) *They here. Not speak, commander, they not know we here.*~
 DO~SetGlobal("BansheeMap3","GLOBAL",5)~
 ==BSandr~*Sandrah looks questioningly at you - it seems she has heard Jen'lig's psionic message as well.*~
-=~*Looking at your comrads you are aware that they have experienced the same.*~
+=~*Looking at your comrades you are aware that they have experienced the same.*~
 END
 ++~*You put your finger to your lips and give a sign to cautiously move forward.*~DO~AddexperienceParty(1200)~EXIT
 ++~*You put your finger to your lips and signal towards the exit of the cave.*~DO~ ReputationInc(-1)~+ DSCMinfcav2
@@ -277,15 +277,15 @@ DO~SetGlobal("JenThHonor","LOCALS",2)~
 //Jen'lig and Edwin
 CHAIN
 IF~Global("JenEdwinR","LOCALS",1)~THEN BJenli EdwinR1
-~*After your rest you see Jen'lig restore her richly ornamented earrings and other jewelry to her body before covering her body with the veil and scarf that conceils her identity from the prying eyes of your fellowbeings.* ~
+~*After your rest you see Jen'lig restore her richly ornamented earrings and other jewellery to her body before covering her body with the veil and scarf that conceils her identity from the prying eyes of your fellow beings.* ~
 DO~ SetGlobal("JenEdwinR","LOCALS",2) RealSetGlobalTimer("JenEdwinRT","LOCALS",2400)~
 ==Bedwin~*Edwin, who just finished his own toilet nearby, has obviously recognized Jen'lig's razor sharp talons on each of her bony fingers that are normally hidden.* He stops and stares in fascination.~
-==BJenli~The githyanki has recognized his stare instinctly.~
+==BJenli~The githyanki has recognized his stare indistinctly.~
 =~(Hiss) Good to kill without weapon, good to eat without cutlery. (Hiss) Heritage from illithid breeding of useful slaves.~
 ==Bedwin~Rarely a female of the prime decorates her body with such taste and finesse. (A beast from a shadow plane knows more about jewelry than any of those peasant cows of the damned Sword Coast.)~
 ==BJenli~*She moves closer to the Thayan to display the talon of her forefinger. You can see Edwin admiringly study the rich insets of gold pieces and unknown small jewels.*~
 =~Also is good for showing affection to her mate. Jen'lig misses much.~
-==Bedwin~Men of these regions have no refinement and knowledge about fashion of any kind. (Does she notice the sublety of my robe's ornaments?)~
+==Bedwin~Men of these regions have no refinement and knowledge about fashion of any kind. (Does she notice the subtlety of my robe's ornaments?)~
 ==BJenli~Jen'lig has observed Thayling taste for good stuff.~EXIT
 
 CHAIN
@@ -301,7 +301,7 @@ CHAIN
 IF~Global("JenEdwinR","LOCALS",5)~THEN BJenli EdwinR3
 ~Thayling has new decoration nose ring. Look ancient and valuable.~
 DO~ SetGlobal("JenEdwinR","LOCALS",6) RealSetGlobalTimer("JenEdwinRT","LOCALS",3000)~
-==Bedwin~(Is the only conaisseur of real beauty here really an outer plane creature?) It is a family heritage, indeed quite a rare item.~
+==Bedwin~(Is the only connoisseur of real beauty here really an outer plane creature?) It is a family heritage, indeed quite a rare item.~
 ==BJenli~*Her hissing has become more tender to your ears. She slowly moves her talon along Edwin's forehead and down his cheek.*~
 ==Bedwin~(This feeling is strange but yet compelling. The beast knows more about erotic subtlety than the Sword Coast wenches, so much is for sure) Eh, take your time to study its refinements, Jen'lig.~
 ==BJenli~*She continues along the line of his upper lip and then explores the jawbones under his skin, all the time taking great care not to hurt him.*~
@@ -334,7 +334,7 @@ DO~SetGlobal("JenPalad","LOCALS",2)~
 ==Bajant IF~InParty("Ajantis")~THEN~You're as single-minded as any evil-doer I ever encountered. Your logic is blasphemous.~
 ==IF_FILE_EXISTS CONCHOJ IF~InParty("CONCHOBHAIR")~THEN~You're as single-minded as any evil-doer I ever encountered. Your logic is blasphemous.~
 ==IF_FILE_EXISTS BT2val IF~InParty("T2val")~THEN~You're as single-minded as any evil-doer I ever encountered. Your logic is blasphemous.~
-==BJenli ~Clarity of concept means clarity of actions and duties. Jen'lig knows well what is honor and duty without be slave to useless god.~EXIT
+==BJenli ~Clarity of concept means clarity of actions and duties. Jen'lig knows well what is honour and duty without be slave to useless god.~EXIT
 
 CHAIN
 IF~Global("JenIsraB","LOCALS",0) InParty("rh#isra") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Israbant
