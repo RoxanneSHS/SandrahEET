@@ -8,10 +8,10 @@ END
 
 CHAIN
 IF~~THEN  ACASC Ascjen1
-~A challenge. For Jen'lig it has to be a Baldur's Gate Planewalker. Freshly ground pepper, half a dried chili mixed with one third cup vodka , half a cup tomato juice, a cup of fresh lime juice, a cup of fresh lemon juice, a pinch of horseradish - pickled okra and celery stalks for garnish. Ready to leave this Plane.~
+~A challenge. For Jen'lig it has to be a Baldur's Gate Planewalker. Freshly ground pepper, half a dried chilli mixed with one third cup vodka , half a cup tomato juice, a cup of fresh lime juice, a cup of fresh lemon juice, a pinch of horseradish - pickled okra and celery stalks for garnish. Ready to leave this Plane.~
 ==CVJenliJ~(Hiss) Good spicy, make good head spin, make Jen'lig want mate.~
 END
-++~They probably fulfill such wishes as well in this establishment.~EXTERN ACASC 3
+++~They probably fulfil such wishes as well in this establishment.~EXTERN ACASC 3
 
 EXTEND_TOP ACASC 3 #1
 IF ~InParty("CVSandr") ~ THEN REPLY ~ What would you serve Elminster's own daughter?~ GOTO AscSan1

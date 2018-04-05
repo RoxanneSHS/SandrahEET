@@ -1,7 +1,7 @@
 BEGIN CVCedri
 
 IF ~ Global("KarMovedIn","LOCALS",0)~ THEN BEGIN KarMovedIn1
-SAY ~ Hello, I know you are friends of Henning the shopowner here. I was so sorry when I heard what has happened to our mutual friend. I am Cedric.~
+SAY ~ Hello, I know you are friends of Henning the shop owner here. I was so sorry when I heard what has happened to our mutual friend. I am Cedric.~
 IF~~THEN REPLY ~ Have you taken the chance to occupy his shop in the meantime, you little misfit? ~ GOTO KarMovedInRude
 IF~~THEN REPLY ~ You are his friend as well, it is good that somebody takes care of his business in the meantime. We hope to find him soon.~ GOTO KarMovedInFr
 END
