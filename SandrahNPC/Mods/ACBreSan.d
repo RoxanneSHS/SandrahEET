@@ -20,7 +20,7 @@ DO ~ SetGlobal("SanHealBre","GLOBAL",6)~
 == ACBreB ~ Buzzurk, she wouldn't even let me thank her, arrogant priestess.~
 END
 ++ ~ Did you want to apologize to her for your rudeness, Breagar?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
-++ ~ She is our healer. The magic she uses to heal you is the same that is in those potions you consume anytime you need them.~ EXIT
+++ ~ She is our healer. The magic she uses to heal you is the same that is in those potions you consume any time you need them.~ EXIT
 ++ ~ Seems like you hurt her feelings quite a bit. She is trying to do you good, not to assault you, mind that.~  DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
 
 CHAIN
@@ -28,11 +28,11 @@ IF ~ Global("SanBreBa","GLOBAL",4)~ THEN BSANDR SanBreBal
 ~ You are hurt, dwarf? Take this.~
 DO ~ GiveItemCreate("Misc97","ACBre",12,0,0) SetGlobal("SanBreBa","GLOBAL",5)~
 == ACBreB ~ Buzzurk! What do you mean by that? I am not a drunkard.~
-== BSANDR ~ You want none of my healing. You only have curses and insults for me. Still you are a member of <CHARNAME>'s group and as such I feel responsibility for your wellbeing. ~
+== BSANDR ~ You want none of my healing. You only have curses and insults for me. Still you are a member of <CHARNAME>'s group and as such I feel responsibility for your well-being. ~
 == ACBreB ~ Sandrah, I already wanted...~
 == BSANDR ~ Baah.~
 END
-++ ~ (You decide you will not be bothered by those two stubborn party members. As of now they have both been valuable and contributed dutyfully to the common tasks. Their private quarrel is just that - private.)~ DO ~ ApplySpellRES("CVChaRed",Player1)~ EXIT
+++ ~ (You decide you will not be bothered by those two stubborn party members. As of now they have both been valuable and contributed dutifully to the common tasks. Their private quarrel is just that - private.)~ DO ~ ApplySpellRES("CVChaRed",Player1)~ EXIT
 ++ ~ Sandrah, please, do not stomp away this time again. You have not even given Breagar a chance to talk to you decently.~ +  SanBreBal2
 ++ ~ Breagar, I think it is about time to reconsider your position on Sandrah. You rebuke her every time she attempts to do you any good.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ SanBreBal3
 
@@ -43,7 +43,7 @@ IF ~~ THEN BSANDR SanBreBal2
 == BSANDR ~ How many vile deeds have you seen me perform already in the name of that cursed goddess?~
 == ACBreB ~ Honestly I observed only the opposite until now.~
 == BSANDR ~ Interesting. But you still raise yourself to judge my goddess as the root of all evil that is associated with magic from your point of view.~
-== ACBreB ~ You have to admit that magic is often misused in her name. You yourself despise the red wizzards whenever we meet one.~
+== ACBreB ~ You have to admit that magic is often misused in her name. You yourself despise the red wizards whenever we meet one.~
 == BSANDR ~ Yes, I do. Think about it. Keep observing what I really do before you sentence me or my goddess based on your prejudices.~ 
 == ACBreB ~ By Clangeddin's Axe, you are a hard nut.~
 EXIT
@@ -55,7 +55,7 @@ IF ~~ THEN BSANDR SanBreBal3
 == BSANDR ~ How many vile deeds have you seen me perform already in the name of that cursed goddess.~
 == ACBreB ~ Honestly I observed only the opposite until now.~
 == BSANDR ~ Interesting. But you still raise yourself to judge my goddess as the root of all evil that is associated with magic from your point of view.~
-== ACBreB ~ You have to admit that magic is often misused in her name. You yourself despise the red wizzards whenever we meet one.~
+== ACBreB ~ You have to admit that magic is often misused in her name. You yourself despise the red wizards whenever we meet one.~
 == BSANDR ~ Yes, I do. Think about it. Keep observing what I really do before you sentence me or my goddess based on your prejudices.~
 == ACBreB ~ By Clangeddin's Axe, you are a hard nut.~
 EXIT
@@ -70,7 +70,7 @@ DO ~ SetGlobal("SanBreBa","GLOBAL",7)~
 == BSANDR ~ (Closes her book, but says nothing.)~
 == ACBreB ~ Every dwarf is proud of the profession he has learned and is trying all his life to improve his skills and become better in it.~
 == BSANDR ~ Like you do as a smith?~
-== ACBreB ~ Hmm. I was not a always a smith, from my family heritage I started as a baker in the true tradition of the Bardomar clan. Why I became a smith is adifferent story for another occasion.~
+== ACBreB ~ Hmm. I was not a always a smith, from my family heritage I started as a baker in the true tradition of the Bardomar clan. Why I became a smith is a different story for another occasion.~
 == BSANDR ~ Love.~
 == ACBreB ~ Buzzurk! You and your...how can you know?~
 == BSANDR ~ This, Breagar is part of my profession. A healer has to know more about the people than just to examine the visible wounds.~
@@ -79,7 +79,7 @@ DO ~ SetGlobal("SanBreBa","GLOBAL",7)~
 == ACBreB ~ What?~
 == BSANDR ~ I am not a magician, Breagar. I am a healer for both the body and the soul. The use of Mystra's arts is nothing more for me than a tool. You use your hammer to form the iron while I use my spells to find the illness and to fight the evil.~
 == ACBreB ~ Still there is no product of what you do, no piece of honest work you can show at the end of a labour day, like a bread or a sword.~
-== BSANDR ~ If a smith repairs a broken sword to be useable again, has he not done a worthy task? If a healer mends a broken limb and sees her patient walk off again, can she not be satisfied with a task well done. If there is a worried man, who has lost his reason to live and his faith in all that is good, and a healer and priest makes him see a way to enjoy the coming day once again - is that not a valid profession in your eyes?~ 
+== BSANDR ~ If a smith repairs a broken sword to be usable again, has he not done a worthy task? If a healer mends a broken limb and sees her patient walk off again, can she not be satisfied with a task well done. If there is a worried man, who has lost his reason to live and his faith in all that is good, and a healer and priest makes him see a way to enjoy the coming day once again - is that not a valid profession in your eyes?~ 
 == ACBreB ~ Hmm...It is good that we have talked, Sandrah. Let me think about this for a while now.~ DO~ RestParty()~
 EXIT
 
@@ -89,12 +89,12 @@ IF ~ Global("SanBreAbb","LOCALS",1) ~THEN BSANDR SanBreDwF
 DO ~ SetGlobal("SanBreAbb","LOCALS",2) ~
 == ACBreB ~ If a dwarf takes up an occupation and a responsibility he will do it wholeheartedly - even those clanless fools we meet here.~
 == BSANDR ~ I was wondering why there are so many of them here, following these strange promises of an evil god.~
-== ACBreB ~ Dwarfen clan rules are strict, and you will always find those not willing to comply. That scum ends up clanless on the surface where they can easily be corrupted by all types of influences, drinking, stealing, murdering...~
-== BSANDR ~ But does not the great number of those deviants astonish you, Breagar? If dwarfen society is so ideal, why are so many expelled?~
+== ACBreB ~ Dwarven clan rules are strict, and you will always find those not willing to comply. That scum ends up clanless on the surface where they can easily be corrupted by all types of influences, drinking, stealing, murdering...~
+== BSANDR ~ But does not the great number of those deviants astonish you, Breagar? If dwarven society is so ideal, why are so many expelled?~
 == ACBreB ~ Clan life is strict and no place for the weak - be it in body or in mind.~
 == BSANDR ~ I see...~
-== ACBreB ~ You see nothing, arrogant priestess, you just critisize what you cannot understand.~
-== BSANDR ~ I was not trying to critisize, I just tried to learn.~
+== ACBreB ~ You see nothing, arrogant priestess, you just criticize what you cannot understand.~
+== BSANDR ~ I was not trying to criticize, I just tried to learn.~
 == ACBreB ~ Mpf.~
 EXIT
 
@@ -103,7 +103,7 @@ IF~Global("ACMINEC2","GLOBAL",2)~THEN BSANDR SanBreSlavmin
 ~At last we have found something in common, Breagar, even if it is only a common hatred against slavery and those who profit from it.~
 DO~SetGlobal("ACMINEC2","GLOBAL",3)~
 == ACBreB ~ Mpf, true enough - we may have found some more things if you were not so utterly stubborn, girl.~
-== BSANDR ~ A blockheaded dwarf calls me stubborn...~
+== BSANDR ~ A block headed dwarf calls me stubborn...~
 == ACBreB ~Yes, and rightfully so. I may have misjudged you in the beginning, Sandrah, but I have long since changed my mind about who you are - only you never let me explain it, stubborn girl.~
 =~ Whatever - don't let your hammer rest until we have cleaned this place!~
 == BSANDR ~ Same for your axe, Breagar.~EXIT
@@ -123,7 +123,7 @@ DO ~ SetGlobal("SanBreBa","GLOBAL",10) RealSetGlobalTimer("SanBreHaBat","LOCALS"
 == ACBreB ~You deny that it is fate that brought us together and the hands of various gods?~
 == BSANDR ~Breagar, remember which choices have brought you here today - instead of being a  baker in the Stormhorn caves happily married to a fat bearded dwarf wife. Who decided to become a smith? Who decided to do everything for the love of a very special woman? Who took the challenges and the risk?~
 == ACBreB ~Hmmrpf...Which god or goddess lead Audhild into our bakery and made me see who she is, he?~
-== BSANDR ~ Does it require gods to let us discover our love where we least expect it, or is fate needed for that. It can be also percepted as just a natural development of things in which we made our own decisions - right or wrong.~
+== BSANDR ~ Does it require gods to let us discover our love where we least expect it, or is fate needed for that. It can be also perceived as just a natural development of things in which we made our own decisions - right or wrong.~
 == ACBreB ~It is always a good choice to share ones thoughts with a friend, Sandrah, even if her answers are as murky as the questions, hehe.~
 == BSANDR ~ None of us is alone in that...and thank you for calling me a friend.~
 == ACBreB ~ Mmpf.~EXIT
