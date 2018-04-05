@@ -1,9 +1,9 @@
 CHAIN
 IF WEIGHT #-2~Global("AlorPel","GLOBAL",4)~THEN BCMALOR Heali
-~Your tiny fingers are quite dexterious in your tasks of healing - for a big one. Did you ever consider to use them for other skills?~
+~Your tiny fingers are quite dexterous in your tasks of healing - for a big one. Did you ever consider to use them for other skills?~
 DO~SetGlobal("AlorPel","GLOBAL",5)~
 ==BSandr~You mean something like picking other people's valuables out of their pockets without being caught?~
-==BCMALOR~Hey, you need not to know the whole repertoir right away. Opening locks for the group could be helpful.~
+==BCMALOR~Hey, you need not to know the whole repertoire right away. Opening locks for the group could be helpful.~
 ==BSandr~I can do that sometimes with my hammer or a spell. I prefer to stick to one profession and do that one well. For other skills it is not a problem for me to rely on my trusted friends.~
 ==BCMALOR~That's a good attitude, girl, I'll stick to my thieving and consult you for healing and you may just ask me if you ever need a heavy lock to be opened.~EXIT
 
@@ -20,9 +20,9 @@ DO~SetGlobal("AlorPel","GLOBAL",6)~
 
 CHAIN
 IF~InParty("CVSandr") See("CVSandr") Global("AlorPel","GLOBAL",6)~THEN BCMALOR Thivi
-~Hey, I always dreamed of going to Waterdeep, the big big City of Splendor.~
+~Hey, I always dreamed of going to Waterdeep, the big big City of Splendour.~
 DO~SetGlobal("AlorPel","GLOBAL",7)~
-==BSandr~You are aware of the fact that the Shadow Thieves have been driven out from my hometown, are you?~
+==BSandr~You are aware of the fact that the Shadow Thieves have been driven out from my home town, are you?~
 ==BCMALOR~Oh, come on, they would not object to one single halfling thief, those big meanies. If I tell them I'm an honest thief and a best friend of Elminster's daughter they MUST let me in, don't you think.~
 ==BSandr~Oh, yes, I am sure you will find your way to talk your admission into town by such means.~EXIT
 

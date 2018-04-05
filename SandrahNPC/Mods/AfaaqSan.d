@@ -4,11 +4,11 @@ IF WEIGHT #-9~InPartySlot(LastTalkedToBy,0) InParty("CVSandr") Global("A7BanterI
 DO~SetGlobal("A7BanterIntro","GLOBAL",2) IncrementGlobal("A7BanterIntroParty","GLOBAL",1)~
 =~Would you care to introduce your companions to me?~
 END
-++~Sure, why not? I start with my cleric and counselor Sandrah of Waterdeep right here, extraordinary fighter and priestess of Mystra.~DO~SetGlobal("A7IntroSan","LOCALS",1)~+A7IntroSan2
+++~Sure, why not? I start with my cleric and counsellor Sandrah of Waterdeep right here, extraordinary fighter and priestess of Mystra.~DO~SetGlobal("A7IntroSan","LOCALS",1)~+A7IntroSan2
 
 CHAIN
 IF~~THEN A7Afaaq A7IntroSan2
-~I am honored to make your acquaintance, Sandrah. From <CHARNAME>'s glance when introducing you, I can tell you are more than a mere companion to <PRO_HIMHER>.~
+~I am honoured to make your acquaintance, Sandrah. From <CHARNAME>'s glance when introducing you, I can tell you are more than a mere companion to <PRO_HIMHER>.~
 ==CVSandrJ~You have a sharp eye. Afaaq, yes, we are lovers in deed.~
 ==A7Afaaq~(Sigh) Lucky ones.~
 ==CVSandrJ~As much as I enjoy meeting you, it saddens me to see somebody in slavery.~

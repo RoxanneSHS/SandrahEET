@@ -25,9 +25,9 @@ DO~SetGlobal("SanHealAmber","GLOBAL",4)RealSetGlobalTimer("AmbSanInt","LOCALS",2
 ==BM#Amber~Your kind action has given you some credit. Of course, I am not saying that all aasimar are like that.~
 ==BSandr~Fine, let us start with that error then - I am not aasimar.~
 ==BM#Amber~Aasimar are descendants of the celestials and thus oppose the fiendish. I hail from Waterdeep, even if it's just from the dock ward, so I know who you are, daughter of Elminster.~
-==BSandr~(Laughs) I remember you, Amber, the red haired wildcat that set the ward on fire one night - even though you were not really to blame for it. My father did a lot to rebuild it afterwards and gave me a chance to help in it. I hope we made it a better place even if you were not there anymore to see the improvements.~
+==BSandr~(Laughs) I remember you, Amber, the red haired wildcat that set the ward on fire one night - even though you were not really to blame for it. My father did a lot to rebuild it afterwards and gave me a chance to help in it. I hope we made it a better place even if you were not there any more to see the improvements.~
 ==BM#Amber~Ha, any change to the rotten place would be an improvement. But why do you deny your origin - anyone knows about your father's birth to Mystra.~
-==BSandr~My father was born to the human Midnight before her ascencion and by that is human just like me. None of us are aasimar and none of us oppose your kin just by race - even though we have a number of enemies among your kin...~
+==BSandr~My father was born to the human Midnight before her ascension and by that is human just like me. None of us are aasimar and none of us oppose your kin just by race - even though we have a number of enemies among your kin...~
 ==BM#Amber~Let's drop the topic for the moment. You have not convinced me but we may have found an interesting topic for further talk.~EXIT
 
 CHAIN
@@ -73,9 +73,9 @@ DO~SetGlobal("SanHealAmber","GLOBAL",11)~
 ==BSandr~ You know how to tease me, my little devil. (Lying close beside the tiefling she starts to caress amber's ears.)~
 ==BM#Amber~ (Purrs with her eyes closed.) ~
 =~Say, you told me you had some encounters with creatures from the lower planes already?~
-==BSandr~ There are some hellhounds on my trail, jumping up occasionally and when you need them the least.~
+==BSandr~ There are some hell hounds on my trail, jumping up occasionally and when you need them the least.~
 ==BM#Amber~ Do I know them maybe?~
-==BSandr~ One pair of clowns are called Alzaligundrel and Naronguth...~
+==BSandr~ One pair of clowns are called Alzaligrundel and Naronguth...~
 ==BM#Amber~ You're the one who defeated them, wow...who else?~
 ==BSandr~ A real nasty one by the name of Paraagariel...~
 ==BM#Amber~ The soul stealer!! You are in great danger, my friend.~
@@ -97,7 +97,7 @@ IF WEIGHT #-29~Global("SanHealAmber","GLOBAL",15)~ THEN BM#Amber SanHealAssi15
 DO~SetGlobal("SanHealAmber","GLOBAL",16)RealSetGlobalTimer("AmbSanInt","LOCALS",2000)~
 ==BSandr~(Sighs) And if I do, would that end the necessity for those intimate explorations with you?~
 ==BM#Amber~ (Purrs.) We will always find good reasons to learn more about the other, you will not get easily rid of me now I know of the pleasures it provides to both of us.~
-==BSandr~You insist to know what I think about your heritage then. Know first that it does not change anything for me as I dearly love the Amber who stands before me, not your anchestors. You have overcome them and their influences and forged your own personality out of it.~
+==BSandr~You insist to know what I think about your heritage then. Know first that it does not change anything for me as I dearly love the Amber who stands before me, not your ancestors. You have overcome them and their influences and forged your own personality out of it.~
 ==BM#Amber~Then I am strong enough to face the facts, beloved scientist. Tell me, who was my mother?~
 ==BSandr~You have inherited all her catlike features, Amber, a strange creature even if of the Prime and one not easily to fall for demonic machinations. A fighter and a thief of race, strong willed like yourself she must have searched for such a partner to gain his abilities. There is only one race here that fits this specification - a Rakshasa.~
 ==BM#Amber~With a demonic father that makes me doubly evil...or as they say, two wrongs can make one right, sometimes.~
@@ -106,9 +106,9 @@ DO~SetGlobal("SanHealAmber","GLOBAL",16)RealSetGlobalTimer("AmbSanInt","LOCALS",
 ==BSandr~You are a Fey'ri, Amber, just like you always have assumed yourself...~
 ==BM#Amber~But...~
 ==BSandr~Yes, I know...prejudice once again, my love.~
-=~Most of the succubus we encounter on the surface are female, as they use Faerun as their hunting ground and to seduce the males of the prime. But they are their own kin, even as their males are not so apparent and - women who encoutered them do not advertise it afterwards.~
+=~Most of the succubus we encounter on the surface are female, as they use Faerun as their hunting ground and to seduce the males of the prime. But they are their own kin, even as their males are not so apparent and - women who encountered them do not advertise it afterwards.~
 ==BM#Amber~Wow, what a mixture...tell you what - you are in great danger.~
-==BSandr~A habit of MY anchestors, I would say...~
+==BSandr~A habit of MY ancestors, I would say...~
 ==BM#Amber~The Rakshasa in me craves for your sweet human flesh and the succubus has already put his spell on you - you cannot resist!~
 ==BSandr~I surrender...~ DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT

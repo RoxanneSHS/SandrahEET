@@ -68,7 +68,7 @@ DO~SetGlobal("SanAdrianL","Global",7)~
 ==BSandr~I do not care if others call you evil. You are an interesting man of many facets, Adrian, that is all that counts for me. Some of those aspects may be judged as evil by some who do not see the man as a whole.~
 ==BRH#ADR~Do you know I dreamt about you recently - not that you're the woman of my dreams...or my nightmares...~
 ==BSandr~You mean that certain kind of dreams that men have of women?~
-==BRH#ADR~Yeah, hormons or such.~
+==BRH#ADR~Yeah, hormones or such.~
 ==BSandr~(Laughs) If you think I am offended to be subject of your fantasies, you are wrong.~
 =~If you want to find out the difference between your dream and reality I will not fight you too hard.~
 ==BRH#ADR~Good to know I'm safe from your hammer should I silently slip into your bedroll tonight to find out...~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
