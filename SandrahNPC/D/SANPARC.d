@@ -50,11 +50,11 @@ END
 IF ~~THEN BEGIN lostitem
 SAY ~ These are the items I can retrieve for you:~
 IF ~ Global("ItemGS","GLOBAL",1) !PartyHasItem("Scrl3z")~ THEN REPLY ~Gorion's letter.~ DO~ GiveItemCreate("Scrl3z","CVSandr",1,0,0)~ EXIT
-IF ~ Global("ItemAu","GLOBAL",1) !PartyHasItem("Scrlauto")~ THEN REPLY ~Three autograhs.~ DO~ GiveItemCreate("Scrlauto","CVSandr",1,0,0)~ EXIT
+IF ~ Global("ItemAu","GLOBAL",1) !PartyHasItem("Scrlauto")~ THEN REPLY ~Three autographs.~ DO~ GiveItemCreate("Scrlauto","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itemport","GLOBAL",1) !PartyHasItem("Sanport")~ THEN REPLY ~Mother's portrait.~ DO~ GiveItemCreate("Sanport","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itembash","GLOBAL",1) !PartyHasItem("ACQBOOK0")~ THEN REPLY ~Bashrik's journal.~ DO~ GiveItemCreate("ACQBOOK0","CVSandr",1,0,0)~ EXIT
 IF ~ GlobalLT("HelpLandrin","GLOBAL",4) Global("ItemLandri","GLOBAL",1) OR(3) !PartyHasItem("Boot06") !PartyHasItem("Misc60") !PartyHasItem("Misc61")~ THEN REPLY ~The spider booty from Beregost.~ DO~ GiveItemCreate("Misc60","CVSandr",1,0,0) GiveItemCreate("Misc61","CVSandr",1,0,0) GiveItemCreate("Boot06","CVSandr",1,0,0)~ EXIT
-IF ~ Global("Itemarte","GLOBAL",1) !PartyHasItem("X#TOME")~ THEN REPLY ~Imoen's Artifact.~ DO~ GiveItemCreate("X#TOME","CVSandr",1,0,0)~ EXIT
+IF ~ Global("Itemarte","GLOBAL",1) !PartyHasItem("X#TOME")~ THEN REPLY ~Imoen's Artefact.~ DO~ GiveItemCreate("X#TOME","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itemval","GLOBAL",1) !PartyHasItem("sw2val")~ THEN REPLY ~Valiant, the sword.~ DO~ GiveItemCreate("sw2val","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itembowl","GLOBAL",1) !PartyHasItem("misc53")~ THEN REPLY ~The water elemental bowl.~ DO~ GiveItemCreate("misc53","CVSandr",1,0,0)~ EXIT
 IF~~ THEN REPLY ~A coin.~ DO~ GiveItemCreate("Misc07","CVSandr",1,0,0)~ EXIT
@@ -100,7 +100,7 @@ IF ~ Global("Itemntk3","GLOBAL",1) !PartyHasItem("ntkeypb3")~ THEN REPLY ~ A rus
 IF ~ Global("Itemntk2","GLOBAL",1) !PartyHasItem("ntkeypb2")~ THEN REPLY ~ The ring of the grave (Key to orc cicle).~ DO~ GiveItemCreate("ntkeypb2","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itemntk1","GLOBAL",1) !PartyHasItem("ntmisc08")~ THEN REPLY ~ Symbol of Helm (Key to Ghotal's grave).~ DO~ GiveItemCreate("ntmisc08","CVSandr",1,0,0)~ EXIT
 IF ~ Global("Itembashj","GLOBAL",1) !PartyHasItem("ACQBOOK0")~ THEN REPLY ~ Bashrik's journal.~ DO~ GiveItemCreate("ACQBOOK0","CVSandr",1,0,0)~ EXIT
-IF ~ Global("ItemFinkb","GLOBAL",1) !PartyHasItem("SUFBOOK2")~ THEN REPLY ~ Metalurgy Today, a book for Finch's library.~ DO~ GiveItemCreate("SUFBOOK2","CVSandr",1,0,0)~ EXIT
+IF ~ Global("ItemFinkb","GLOBAL",1) !PartyHasItem("SUFBOOK2")~ THEN REPLY ~ Metallurgy Today, a book for Finch's library.~ DO~ GiveItemCreate("SUFBOOK2","CVSandr",1,0,0)~ EXIT
 IF ~ Global("ItemFinkp","GLOBAL",1) !PartyHasItem("SUFBOOKb")~ THEN REPLY ~ The Joy of Pudding, a book for Finch's library.~ DO~ GiveItemCreate("SUFBOOKb","CVSandr",1,0,0)~ EXIT
 IF ~ Global("ItemFink4","GLOBAL",1) !PartyHasItem("SUFBOOK4")~ THEN REPLY ~ Popular History of Nashkel, a book for Finch's library.~ DO~ GiveItemCreate("SUFBOOK4","CVSandr",1,0,0)~ EXIT
 IF ~ Global("ItemBluDrag","GLOBAL",1) !PartyHasItem("BHBUDSTF")~ THEN REPLY ~ The Staff of the Blue Dragon.~ DO~ GiveItemCreate("BHBUDSTF","CVSandr",1,0,0)~ EXIT

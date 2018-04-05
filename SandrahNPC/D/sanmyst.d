@@ -29,7 +29,7 @@ DO ~ SetGlobal("SanLive","GLOBAL",3)~
 == sanmyst~ ...and not only for them - your work on this plane is magnificent and you are about to establish yourself as a force on Toril to be counted - just like your father.~
 == BSANDR ~ You will not compare me to the great Elminster, Mystra, although I recognise your support to my abilities.~
 == sanmyst~ Elminster is Elminster, and Sandrah is...well, let us see what Sandrah will be in the end. Even if your way is of utmost importance it just stays that - YOUR way. You need to follow it and you do it well.~
-== BSANDR ~ Mmmh, it is not smalltalk we are having, grandmother, but still you are vague as always. Is there something specific you would demand of me or my companions today?~
+== BSANDR ~ Mmmh, it is not small talk we are having, grandmother, but still you are vague as always. Is there something specific you would demand of me or my companions today?~
 == sanmyst~ As a healer you know how important recognition and admiration are to the soul, do you not? Know that your goddess is with you, my child, and gives you the strength to continue as the road now gets steeper and steeper. I will grant you some of my gifts as you deserve them and my blessing be on you. Hmm, it has been good to see you, Sandrah.~
 == BSANDR ~ It has been good to see you. Mys..., grandmother.~ DO~ CreateVisualEffectObject("SPFLESHS",Myself) ~EXIT
 
@@ -40,7 +40,7 @@ DO~SetGlobal("SanHintFactory","GLOBAL",34)~
 == BSANDR ~ Greetings, Mystra, goddess of all magic - even if some fools may think otherwise. I was expecting you in some way already.~
 == sanmyst~Ah, you did? Oh, yes, of course, clever granddaughter. The attempted assault on the Weave of course did not remain unnoticed.~
 == BSANDR ~ And you - or was it AO himself - let us deal on our own with a threat that might have affected much more than our Toril?~
-== sanmyst~Your assessment is in a large way correct. The merging of the Dark Weave's matter and energy with that of the Prime results in the annhilation  of both. On a large scale such destruction will be a danger for the balance of the other planes as well.~
+== sanmyst~Your assessment is in a large way correct. The merging of the Dark Weave's matter and energy with that of the Prime results in the annihilation  of both. On a large scale such destruction will be a danger for the balance of the other planes as well.~
 == BSANDR ~I understand *in principle* and *on a large scale*. Are you saying Szass Tam had not advanced far enough?~
 == sanmyst~Thanks to you, fearless adventurers, he did not come far this time. But the danger will remain for all of us. He has noticed your common potential, Sandrah and <CHARNAME>, and has withdrawn in time from you.~
 == BSANDR ~You know where he has gone?~
@@ -59,10 +59,10 @@ DO~SetGlobal("SanHaerRel1","GLOBAL",17)~
 =~The heroine Midnight would not have hesitated one moment to dart to the Nine Hells for a drow named Drizzt or to storm Mount Celestial for a thief named Cyric.~
 == sanmyst~(Sigh) I should have known your answer, grandchild. As it is inevitable, all I can do is aid you within my limits. For us celestials the Realms of Demogorgon are forbidden territory.~
 == BSANDR ~I was anticipating from my lore that it is there we need to go. With Hear'Dalis' body and the demon heart of his murderer he can be restored there, right?~
-== sanmyst~Provided you can get Demogorgon to cooperate, this is correct. Luckily for you those two quarreling demons got injured by your battle and to follow their trace will guide you the path that would otherwise be inpenetrable.~
+== sanmyst~Provided you can get Demogorgon to cooperate, this is correct. Luckily for you those two quarrelling demons got injured by your battle and to follow their trace will guide you the path that would otherwise be impenetrable.~
 == BSANDR ~What advice would my goddess and grandmother give me?~
 == sanmyst~Stay away from that task - no, I know you will not listen to this.~
-=~So, the demons need to return to their Realm and that will show you the entrance you need to take. One is losing occasional blood drops from your magic weapon's injury. These unique blooddrops we can locate and follow.~
+=~So, the demons need to return to their Realm and that will show you the entrance you need to take. One is losing occasional blood drops from your magic weapon's injury. These unique blood drops we can locate and follow.~
 =~Here, take this map, it shows you where the first blood drop has fallen on the surface of the Prime. Once you have found it, consult the map again and it will guide you to the next drop.~ DO~GiveItemCreate("CVBloMa1","CVSandr",1,0,0)~
 == BSANDR ~I thank my goddess for her understanding - and I thank my grandmother for her love.~
 == sanmyst~My blessing on all of you.~ DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT

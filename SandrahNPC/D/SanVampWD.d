@@ -65,7 +65,7 @@ IF~ Global("SanVampInvas","GLOBAL",1)~THEN CVVAMBO invplan1
 ==CVVAMBO~ Yes, and those mortals have become part of our army now.~
 =~ We have assimilated one of their mortal boatmen. He will be one of us soon and he has the skill to get us from the floating thing to the ground.~
 ==CVVAMSH3~But, High Eldest, once we have consumed the city our legions will grow and grow and with that the hunger for new flesh we need to feed...~
-==CVVAMBO~ ENOUGH, your quarrels go to my nerves, doomsayer!~ DO~ StartCutsceneMode()
+==CVVAMBO~ ENOUGH, your quarrels go to my nerves, doom sayer!~ DO~ StartCutsceneMode()
 Wait(2)
 CreateVisualEffectObject("spattck1","orgo01")
 Wait(2)

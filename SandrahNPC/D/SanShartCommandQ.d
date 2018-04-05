@@ -2,7 +2,7 @@ BEGIN CVShacom
 BEGIN CVWDBoss
 
 IF~AreaCheck("CVRoa1")~THEN BEGIN Hello1
-SAY~Look who's comming to dinner. Nice surprise. The paladin girl is mine, friends, haha.~
+SAY~Look who's coming to dinner. Nice surprise. The paladin girl is mine, friends, haha.~
 IF~~THEN REPLY~None of the girls will be yours, scoundrel.~EXIT
 IF~~THEN REPLY~All that will be yours tonight are our blades. In your flesh!~EXIT
 END
@@ -27,7 +27,7 @@ END
 
 CHAIN
 IF ~~THEN CVShacom WestGate2
-~The trail leeds to an abandoned woodkeeper's shack near Old Waterdeep Road...~
+~The trail leads to an abandoned wood keeper's shack near Old Waterdeep Road...~
 ==CVSandrJ~We know the place - it used to be one of Khattark's old hideouts.~
 ==CVShacom~ There is supposed to be some gathering there this eve, all the new important guys and the boss will be there if my informants are to be trusted.~
 ==CVSandrJ~Are they trustworthy?~

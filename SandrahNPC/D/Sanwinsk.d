@@ -26,10 +26,10 @@ DO ~SetGlobal("SanOrDiEarly","GLOBAL",2)RealSetGlobalTimer("WiItemR","GLOBAL",12
 == SANWINSK ~ Ha, and I know who you are, little girl, my divinings have not been in vain, Elminster's daughter!~
 == BSANDR ~ Right. If you know that, then you are aware that it was him who defeated you last time.~
 == SANWINSK ~ Defeated me? You know less than you think you know, cleric baby.~
-== BSANDR ~ You did not get the one whom you were persuing so hard back then.~
+== BSANDR ~ You did not get the one whom you were pursuing so hard back then.~
 == SANWINSK ~ Fool, that was just one of a number of possibilities. Right, I did not get the one your father had shielded already, but what did it matter. There was enough material around to suit me.~
 == BSANDR ~ I have my doubts you really found what you needed. You are not really the one who controls the current events, I am sure.~
-==BDYNAH IF ~ InParty("Dynaheir") ~ THEN~ Thou art the Old One then who set the gnoll troups against me. I knowest who you are, I witnessed at the trial whence you were exiled from Rashemen.~
+==BDYNAH IF ~ InParty("Dynaheir") ~ THEN~ Thou art the Old One then who set the gnoll troupes against me. I knowest who you are, I witnessed at the trial whence you were exiled from Rashemen.~
 == SANWINSK ~ YOU! You just blindly stumble around in your limited circles. You have no idea about the global picture at all.~
 EXIT
 
@@ -41,7 +41,7 @@ DO ~SetGlobal("SanOrDiId","GLOBAL",6)RealSetGlobalTimer("WiItemR","GLOBAL",1200)
 == SANWINSK ~ Ha, and I know who you are, little girl, my divinings have not been in vain, Elminster's daughter!~
 == BSANDR ~ Right. If you know that, then you are aware that it was him who defeated you last time.~
 == SANWINSK ~ Defeated me? You know less than you think you know, cleric baby.~
-== BSANDR ~ You did not get the one you were persuing so hard back then.~
+== BSANDR ~ You did not get the one you were pursuing so hard back then.~
 == SANWINSK ~ Fool, that was just one of a number of possibilities. Right, I did not get the one your father had shielded already, but what did it matter. There was enough material around to suit me.~
 == BSANDR ~ I have my doubts you really found what you needed. You are not really the one who controls the current events, I am sure.~
 == SANWINSK ~ YOU! You just blindly stumble around in your limited circles. You have no idea about the global picture at all.~

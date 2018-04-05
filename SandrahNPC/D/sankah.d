@@ -2,7 +2,7 @@ BEGIN SANKAH
 
 CHAIN
 IF ~ Global("ValiantKN","GLOBAL",4)~ THEN SANKAH Sw1
-~ You! You killed Kahrk. Mighty Kahrk the swordholder.~
+~ You! You killed Kahrk. Mighty Kahrk the sword holder.~
 DO ~ SetGlobal("ValiantKN","GLOBAL",5)~
 == BSandr ~ You see, <CHARNAME>, they worship this sword Valiant as their symbol and will try to gain it back.~
 END
