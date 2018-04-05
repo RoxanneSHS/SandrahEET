@@ -342,7 +342,7 @@ IF~Global("JenIsraB","LOCALS",0) InParty("rh#isra") !See([ENEMY])!AreaType(DUNGE
 DO~SetGlobal("JenIsraB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==IF_FILE_EXISTS BRH#ISRA~We Sunites show beauty and style to worship our goddess - attracting male...(grins) it is a side effect but not the main purpose. Your ornaments and stylish clothes only serve for that purpose?~
 ==BJenli ~Jen'lig style is for identification on Astral Plane. (Hiss) Maybe attracts suitable male if Jen'lig wants one. Dress for useless manling god is absurd concept.~
-==IF_FILE_EXISTS BRH#ISRA~There is obviously some difference between our races...anyway, this mission makes us comrads in some sense and respect for each other will be a key to our success, right?~
+==IF_FILE_EXISTS BRH#ISRA~There is obviously some difference between our races...anyway, this mission makes us comrades in some sense and respect for each other will be a key to our success, right?~
 ==BJenli ~(Hiss) Concept of strong united cadre is Githyanki concept. Concept of beauty and style is Githyanki concept. Serving useless gods is not Githyanki concept. ~
 ==IF_FILE_EXISTS BRH#ISRA~Well, two out of three is not too bad for a starting point (grin).~EXIT
 
@@ -353,8 +353,8 @@ DO~SetGlobal("JenBranB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==BBRANW~Thou come from even farther away it seems to me. You resemble none of the monsters I encountered in Norheim.~
 ==BJenli~Jen'lig monster? You fear just because githyanki?~
 ==BBRANW~I don't fear thee as you made a pact with <CHARNAME>. Githyanki. What I heard about your kin is that you are heartless killing beasts to be avoided.~
-==BJenli~Manlings know little, are weak, and not have honor often. Is what githyanki are told of you by Varsh.~
-==BBRANW~Ha, good point. If you are a creature to know honor and know how to fight for it, Tempus and me may give you a chance. ~
+==BJenli~Manlings know little, are weak, and not have honour often. Is what githyanki are told of you by Varsh.~
+==BBRANW~Ha, good point. If you are a creature to know honour and know how to fight for it, Tempus and me may give you a chance. ~
 ==BJenli~Evil is relative. Always is evil what is foe or unknown. Always must look deeper for truth.~EXIT
 
 CHAIN
@@ -406,7 +406,7 @@ IF~Global("JenShartB","LOCALS",0) InParty("Sharteel") !See([ENEMY])!AreaType(DUN
 ~Fight good and kill bloody, manling, but must channel anger more.~
 DO~ SetGlobal("JenShartB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BShart ~Ha, your style is much to my liking, *githling*. Especially the way you make that eye contact with your foe when you have him defeated and cut his heart out with that incredible sword. You make sure he knows well he's gonna die now and it's YOU who has the power to take his forsaken life. A great gesture.~
-==BJenli~Githyanki race long would perish from Astral Plane and Limbo if not can fight better than any, especially better than the illithid and githzerai.~
+==BJenli~Githyanki race long would perish from Astral Plane and Limbo if not can fight better than any, especially better than the illithid and Githzerai.~
 ==BShart ~Ha, you surely make any Flaming Fist look like a street rat with a wooden toy sword, including one Angelo Dorsan.~
 ==BJenli~Know Flaming Fist? Know sergeant Horvok?~
 ==BShart ~A bloody corrupted bastard, would sell his long deceased mother's corpse for a handful of coins.~
@@ -441,7 +441,7 @@ IF~Global("JenMinsB","LOCALS",0) InParty("Minsc") !See([ENEMY])!AreaType(DUNGEON
 ~More in head of rat than in head of mighty manling. Fight good but not with brain.~
 DO~ SetGlobal("JenMinsB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BMINSC_ ~Boo is NO rat, lizard girl, he's a giant space hamster!~
-==BJenli~(Hiss) Jen'lig is NO lizard, is githyanki. Githyanki planewalker travel many planes but nowhere lives *giant space hamster*. ~
+==BJenli~(Hiss) Jen'lig is NO lizard, is githyanki. Githyanki Planewalker travel many planes but nowhere lives *giant space hamster*. ~
 =~When say fight with your head, not mean use skull to hit enemy, mean use what inside of head - if something there.~
 == BMINSC_ ~We kick evil butts our way, right Boo?~
 =~Boo says, we don't yet know if Jen'lig is evil or not. We will not kick her githyanki ass...no, Boo, I will not say that, she is a githyanki GIRL after all, whatever that means.~
@@ -454,8 +454,8 @@ DO~ SetGlobal("JenSafaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)
 == BSAFAN~He? That's a really strange question - is that your motivation to become the first githyanki thief I've ever heard of, I mean, protection of your kin against theft?~
 ==BJenli~(Hiss) Jen'lig invented concept that best way to find thieves of silver weapons would be to learn thief's method and concept of mind.~
 == BSAFAN~That may make sense on your strange Astral Plane. On the Prime it makes more sense to learn to steal from the rich - they are the only ones to possess enough to justify the risk, isn't that so?~
-==BJenli~Rich manlings seldom seem to be people of honor and values.~
-== BSAFAN~Honor and values? I never heard that any of the two pays for a new pair of stylish shoes, bah.~EXIT
+==BJenli~Rich manlings seldom seem to be people of honour and values.~
+== BSAFAN~Honour and values? I never heard that any of the two pays for a new pair of stylish shoes, bah.~EXIT
 
 CHAIN
 IF~Global("JenFaldoB","LOCALS",0) InParty("Faldorn") !See([ENEMY])!AreaType(DUNGEON) GlobalGT("SanFalB","GLOBAL",2)~THEN BJenli Faldobant
@@ -464,12 +464,12 @@ DO~ SetGlobal("JenFaldoB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300
 == BFALDO~ How can therrr be no nature in a place unless you brainless creatures have destroyed your Great Mother in selfishness.~
 ==BJenli~(Hiss) View of manling druids not go farther than can see in their woods full of green trees. Githyanki never destroyed what was never there. From plane travel imported many things to Tu'narath - fungus is only thing that can grow on bodies of dead gods that are our soil.~
 == BFALDO~Even in a desert the Grreat Motherrr is present.~
-==BJenli~(Hiss) All gods on Astral Plane are dead gods. A dead great mother to grow fungus on is a weak concept, too weak to make a race strong to survive against illithids and githzerai.~
+==BJenli~(Hiss) All gods on Astral Plane are dead gods. A dead great mother to grow fungus on is a weak concept, too weak to make a race strong to survive against Illithids and Githzerai.~
 == BFALDO~You are a race rotting away in yourrr cities without even the option to reverrt to nature again. You pity me as you cannot even lose what our city folks never deserved to know.~EXIT
 
 CHAIN
 IF~Global("JenDynaB","LOCALS",0) InParty("Dynaheir") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Dynabant
-~Githyanki value comrads by how they act in fight. Witch fights good but only with brain.~
+~Githyanki value comrades by how they act in fight. Witch fights good but only with brain.~
 DO~ SetGlobal("JenDynaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS  BDYNA ~Rashemen witches protect our country alongside our fighters for ages in our struggle with Thay. Our lands would long be occupied without such skills.~
 ==IF_FILE_EXISTS  BDYNAH ~Rashemen witches protect our country alongside our fighters for ages in our struggle with Thay. Our lands would long be occupied without such skills.~
@@ -477,8 +477,8 @@ DO~ SetGlobal("JenDynaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)
 ==IF_FILE_EXISTS  BDYNA~Thou are special in thine race I observe. 'tis new to find analytic skills behind an evil beast's facade.~
 ==IF_FILE_EXISTS  BDYNAH~Thou are special in thine race I observe. 'tis new to find analytic skills behind an evil beast's facade.~
 ==BJenli~(Hiss) Call Jen'lig beast, call Jen'lig evil when both of us fight for race against those who want to extinguish our breed? Your red wizards are equivalent to githyanki's mind flayers.~
-==IF_FILE_EXISTS  BDYNA~Mayhaps one has to dig deep beneath the surface to see how much we have in common. I apologise for naming thee a beast, 'tis a bad custom to refer to those we don't know in such way.~
-==IF_FILE_EXISTS  BDYNAH~Mayhaps one has to dig deep beneath the surface to see how much we have in common. I apologise for naming thee a beast, 'tis a bad custom to refer to those we don't know in such way.~
+==IF_FILE_EXISTS  BDYNA~Mayhap one has to dig deep beneath the surface to see how much we have in common. I apologise for naming thee a beast, 'tis a bad custom to refer to those we don't know in such way.~
+==IF_FILE_EXISTS  BDYNAH~Mayhap one has to dig deep beneath the surface to see how much we have in common. I apologise for naming thee a beast, 'tis a bad custom to refer to those we don't know in such way.~
 ==BJenli~(Hiss) Wit is sharp weapon, Dynaheir knows as well as Jen'lig knows.~EXIT
 
 CHAIN
@@ -494,17 +494,17 @@ DO~ SetGlobal("JenCoranB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300
 == BCoran IF~!InParty("CVSandr")~THEN~My choice among the females in this party would always be for the best...(He gracefully bows to the githyanki.)~
 == BJenli IF~!InParty("CVSandr")~THEN~Jen'lig sometimes breed with little toy for fun - not to maintain race.~
 == BJenli IF~InParty("CVSandr")~THEN~Sandrah choice of partner sometimes quite doubtful. Choses to have fun not to breed really. Good chance for elfling to be used as toy by strong girl.~
-== BCoran ~ Used as a toy? This is not really my *concept*, my extraterrestrian love counselor.~
+== BCoran ~ Used as a toy? This is not really my *concept*, my extraterrestrial love counsellor.~
 == BJenli ~On close inspection, elfling too weak to be even toy for Jen'lig. (Hiss)~EXIT
 
 CHAIN
 IF~Global("JenDrizB","LOCALS",0) InParty("F_Drizzt")GlobalGT("SanDrizzt","GLOBAL",5) !See([ENEMY])~THEN BJenli Drizbant
-~Githyanki value comrads by how they act in fight. Much admire how darkling taught Sandrah.~
+~Githyanki value comrades by how they act in fight. Much admire how darkling taught Sandrah.~
 DO~ SetGlobal("JenDrizB","LOCALS",1) ~
 == F_DRIZTJ~ Well...as you're part of this party and even friendly with Sandrah, I anticipate that you may be different from the githyanki I knew in the same way I may differ from the drow you met before.~
 ==BJenli~(Hiss) Drow sparring partners for hatchlings. Drizzt and Jen'lig seen many things and learned much, make their own mind to replace prejudice.~
 == F_DRIZTJ~Sandrah told me, you have recently lost the teacher and friend you had and are now searching his silver sword to restore his honor.~
-==BJenli~Kastya was supreme planewalker to teach Jen'lig. Githyanki know not your friendship concept - but Jen'lig was hoping that Kastya would choose her to mate if found valuable enough...hiss...like Sandrah has hoped from Drizzt.~
+==BJenli~Kastya was supreme Planewalker to teach Jen'lig. Githyanki know not your friendship concept - but Jen'lig was hoping that Kastya would choose her to mate if found valuable enough...hiss...like Sandrah has hoped from Drizzt.~
 == F_DRIZTJ~Ehem...(Drizzt shuffles his feet nervously)...eh, she told you such...~
 ==BJenli~Drizzt would be fool if not take her, Jen'lig not know better girl fighter among manlings.~
 == F_DRIZTJ~(Sigh) Well, yes, that may not be the criteria we apply on the prime - even if drow in the Underdark might follow such reasoning.~EXIT
@@ -558,7 +558,7 @@ DO~SetGlobal("JenWhiteB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS V#1whib~Do I? Maybe I do. Honestly you are the only reptile of some intelligence and able to talk since I left...my mother.~
 ==BJenli~Concept of mother not exist for githyanki (Hiss). Cadre be raised together in hatchery, never know who lay egg in beginning.~
 ==IF_FILE_EXISTS V#1whib~Not so different from my situation, reptile, I do not well remember my first mother who *lay egg in beginning*. Anyway, you gave me something to think about...why did my mother adopt and raise me if reptiles do not have such an instinct?~
-==BJenli~(Hiss) Concepts of Prime creatures offen differ from Astral Plane, Jen'lig learn difference every day.~
+==BJenli~(Hiss) Concepts of Prime creatures often differ from Astral Plane, Jen'lig learn difference every day.~
 ==IF_FILE_EXISTS V#1whib~Naga want to guard and protect - whatever may be their subject. Githyanki seem to be a little more manlike, they protect their own and fight the alien. Anyway, time to move on.~EXIT
 
 CHAIN
@@ -567,7 +567,7 @@ IF~Global("JenBaeloB","LOCALS",0) InParty("Baeloth")~THEN BJenli WhiteB
 DO~SetGlobal("JenBaeloB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BaelothJ~You would have made an interesting addition to the Black Pits, githyanki.~
 ==BJenli~Children of Gith long have freed themselves from slavery - darkling not even has power of mindflayer.~
-==BaelothJ~Fine, fine, thus is the spirit that makes fights sooo interesting. Who needs unspirited slaves, we need true fighters...~
+==BaelothJ~Fine, fine, thus is the spirit that makes fights sooo interesting. Who needs inspirited slaves, we need true fighters...~
 ==BJenli~You want true fighter (Hiss). May get what you want faster than desire.~DO~ReallyForceSpell("Baeloth",PSIONIC_PROJECT_FORCE) ~EXIT
 
 CHAIN

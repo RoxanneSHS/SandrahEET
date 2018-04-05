@@ -1,7 +1,7 @@
 APPEND CVSANDRJ
 
 IF~Global("ZDreamSzene1","GLOBAL",4)~THEN BEGIN SanAneWeavTh1
-SAY~ A threat to the Weave itself and my goodess. <CHARNAME>, I am most relieved that I have you and our steadfast companions to care about the assault.~
+SAY~ A threat to the Weave itself and my goddess. <CHARNAME>, I am most relieved that I have you and our steadfast companions to care about the assault.~
 IF~~THEN REPLY~ What did we just see, a vision announcing the death of Mystra herself? ~ DO~ SetGlobal("ZDreamSzene1","GLOBAL",5) ~GOTO SanAneWeavTh2
 END
 
@@ -17,13 +17,13 @@ IF~~THEN REPLY~ But...what about the vision we saw, her downfall?~ GOTO SanAneWe
 END
 
 IF~~ THEN BEGIN SanAneWeavTh4
-SAY~ Remember what I taught you about Mystra's special relation to us mortals, darling. Not only she has always been one of us to be elevated to godhood for her deeds - but also she and AO have always counted on heroes from the material plane when they needed support against an agression that originates from Faerun.~
+SAY~ Remember what I taught you about Mystra's special relation to us mortals, darling. Not only she has always been one of us to be elevated to godhood for her deeds - but also she and AO have always counted on heroes from the material plane when they needed support against an aggression that originates from Faerun.~
 IF~~THEN REPLY~ So the dream was maybe send by Mystra herself as a request for our aid?~ GOTO SanAneWeavTh5
 IF~~THEN REPLY~ This vision was telling us that the sorcerer who attacks is a mortal?~ GOTO SanAneWeavTh5
 END
 
 IF~~ THEN BEGIN SanAneWeavTh5
-SAY~ That is exactly what I think myself, my competent leader. The agression is the work of mortals and we are called to aid AO and Mystra as it is our plane that is the battlefield - and down here our gods always require our strength and support as they are vulnerable in their avatars.~
+SAY~ That is exactly what I think myself, my competent leader. The aggression is the work of mortals and we are called to aid AO and Mystra as it is our plane that is the battlefield - and down here our gods always require our strength and support as they are vulnerable in their avatars.~
 IF~~THEN REPLY~ Wow, you and me aiding...like Midnight and her companions in the Time of Troubles.~GOTO SanAneWeavTh6
 IF~~THEN REPLY~ Is that your role here, Sandrah, just like your grandmother before you? All these hints we have found about you following her footsteps? We must contemplate this.~ GOTO SanAneWeavTh6
 END
@@ -61,8 +61,8 @@ END
 
 IF~~ THEN BEGIN NomoTrait6
 SAY~ No, the name recalls nothing, but who says it is not just another disguise. At least I suspect that he really is the sorcerer our vision has shown us. Who else could hold a Bhaalspawn like Marlik under control and then recruit an even more powerful one to defeat him.~
-IF~~THEN REPLY~ He is not unfailable and so far has not overpowered us. I agree with your opinion that it must be a force such as us to stop his planned assault on the Realms.~EXIT
-IF~~THEN REPLY~ Ha, but here we are at the inside of his operation from where we can blow him the most uninspected blows. Control Bhaalspawns? Ha, laughable!~ EXIT
+IF~~THEN REPLY~ He is not infallible and so far has not overpowered us. I agree with your opinion that it must be a force such as us to stop his planned assault on the Realms.~EXIT
+IF~~THEN REPLY~ Ha, but here we are at the inside of his operation from where we can blow him the most unexpected blows. Control Bhaalspawns? Ha, laughable!~ EXIT
 END
 
 IF~Global("ZDreamSzene1","GLOBAL",8)~ THEN BEGIN NomoTrait7
@@ -71,7 +71,7 @@ IF~~THEN REPLY~ That is true. They do not have someone like you by their side, m
 END
 
 IF~~ THEN BEGIN NomoTrait8
-SAY~ Sweet charmer, thank you. What I meant is that they all let someone else have control over them, even if they all try to break the chain after a while. But it is always too late, as the evil spawn inside has already developped too far.~
+SAY~ Sweet charmer, thank you. What I meant is that they all let someone else have control over them, even if they all try to break the chain after a while. But it is always too late, as the evil spawn inside has already developed too far.~
 IF~~THEN REPLY~ If I see it right it was the same for me, just that the one who had control was a wise harper named Gorion and his influence was just the opposite to what those others experienced. And then came a priestess who never tired to get me moving along unharmed.~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~ EXIT
 IF~~THEN REPLY~ Neither Gorion nor yourself would have allowed such. I know very well by now that you and your hammer would have ended my existence before I could grow into such a monster.~ EXIT
 END
@@ -103,7 +103,7 @@ DO~SetGlobal("ZDreamSzene1","GLOBAL",11)~
 EXIT
 
 EXTEND_BOTTOM Z_NOMO5 1
-IF~ InParty("CVSandr")~ THEN REPLY ~I would like to consult with my counselor for a moment, just the two of us.~ EXTERN CVSANDRJ NomoTrait1
+IF~ InParty("CVSandr")~ THEN REPLY ~I would like to consult with my counsellor for a moment, just the two of us.~ EXTERN CVSANDRJ NomoTrait1
 END
 
 APPEND Z_Igor
