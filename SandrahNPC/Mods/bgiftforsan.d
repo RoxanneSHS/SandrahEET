@@ -14,5 +14,5 @@ DestroyGold(2400)~EXTERN CVSandrJ GroSangift2
 
 CHAIN
 IF~~THEN  CVSandrJ GroSangift2
-~I will make the best use of it in our search for Imoen to compensate for the monitary loss. Do not do such foolish deeds again, my love...at least not too often.~
+~I will make the best use of it in our search for Imoen to compensate for the monetary loss. Do not do such foolish deeds again, my love...at least not too often.~
 =~*Her eyes when kissing you seem to betray her rational words.*~EXIT

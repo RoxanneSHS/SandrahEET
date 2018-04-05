@@ -2,13 +2,13 @@
 
 INTERJECT_COPY_TRANS ~B!GAVIN~ 0 HelloGav
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Hello, Dawnbringer Gavin. Or maybe Gavin Mor of Ulgoth's Beard?~
-==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ Mylady, I must admit I am confused. I would surely remember if I had ever met someone as beautiful as you are (blushes).~
+==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ My lady, I must admit I am confused. I would surely remember if I had ever met someone as beautiful as you are (blushes).~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Your memory does not betray you, we have never met. I was just guessing, the name Gavin is not that common in these areas.~
 ==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ But then I am anything but famous, how can a lady such as you have heard of me -- oh, let me guess, you are from Waterdeep?~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Right.~
 ==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ Then my brother Jolun must have mentioned my name...but you? You have met Jolun...~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ You are right, I know your brother, but that is a different story for another day. Nice to meet you, Gavin (shakes Gavin's hand smiling.)~
-==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ Oh, eh, yes, thank you mylady, (blushes again), oh my, Jolun...I fear the worst...~
+==~B!GAVIN~ IF ~ InParty("CVSandr")~ THEN ~ Oh, eh, yes, thank you my lady, (blushes again), oh my, Jolun...I fear the worst...~
 END
 
 // Reed
@@ -29,7 +29,7 @@ END
 
 //Jolun if with Gavin
 INTERJECT_COPY_TRANS IF_FILE_EXISTS ~B!JOLUN~ 23 SanJolInto
-== ~BB!GAVIN~ IF~ InParty("CVSandr")~ THEN ~ And this beautyful lady...~
+== ~BB!GAVIN~ IF~ InParty("CVSandr")~ THEN ~ And this beautiful lady...~
 ==  ~B!JOLUN~ IF~ InParty("CVSandr")~ THEN ~ ...is Sandrah of Waterdeep, the one and only...~
 == ~BB!GAVIN~ IF~ InParty("CVSandr")~ THEN ~ Oh, yes, I forgot you had - I mean you are - I mean you met before.~
 == BSANDR  IF~ InParty("CVSandr")~ THEN ~ (Kisses Jolun quickly) Hello, sweetheart, a place like this here is an endless source of inspirations for an artist like you.~
@@ -38,9 +38,9 @@ INTERJECT_COPY_TRANS IF_FILE_EXISTS ~B!JOLUN~ 23 SanJolInto
 ==  ~B!JOLUN~ IF~ InParty("CVSandr")~ THEN ~ Where it belongs, sweetheart. And what role would suit you better than that of the goddess you follow.~
 == BDYNAH  IF~ InParty("CVSandr") InParty("Dynaheir")~ THEN ~ Prophetic, I'd dare to say.~
 == BXANNN IF ~ InParty("CVSandr") !InParty("Dynaheir") InParty("XAN")~ THEN ~ Prophetic, I'd dare to say.~
-== ~BB!GAVIN~ IF~ InParty("CVJenlig")~ THEN ~ And this exotic creature is Jen'lig, a githyanki planewalker.~
+== ~BB!GAVIN~ IF~ InParty("CVJenlig")~ THEN ~ And this exotic creature is Jen'lig, a Githyanki Planewalker.~
 ==  ~B!JOLUN~ IF~ InParty("CVJenlig")~ THEN ~ I will make a sketch of her immediately. She must be on that fresco as well. A thrilling experience indeed.~
-==BJenli IF ~InParty("CVJenlig")~ THEN ~(Hiss) Make conterfeit is manling silly concept. Keep picture in mind if need to remember.~
+==BJenli IF ~InParty("CVJenlig")~ THEN ~(Hiss) Make counterfeit is manling silly concept. Keep picture in mind if need to remember.~
 END
 
 
@@ -50,16 +50,16 @@ IF ~ Global("SanGavBant","GLOBAL",1)~ THEN BSANDR GavJolu
 ~ (Gavin has made several attempts during the last hour to approach Sandrah, but has always decided otherwise at the last moment.)~
 = ~Gavin, I guess you surely like to know about my encounter with your brother?~
 DO ~  SetGlobal("SanGavBant","GLOBAL",2)RealSetGlobalTimer("SanGavLATime","GLOBAL",3600)~
-==~BB!GAVIN~ ~Um, ah, I do not want to bother you too much, mylady.~
+==~BB!GAVIN~ ~Um, ah, I do not want to bother you too much, my lady.~
 ==BSANDR ~ Gavin, (laughs lightly), I am a healer. I cannot watch while people suffer. ~
 = ~ So -. Your brother is a talented artist and he did a bit of work for the academy at Waterdeep last year. And yes, of course he advanced me the very moment I caught his eye.~
 ==~BB!GAVIN~ ~I cannot blame him for that...I hope he did not...embarrass you too much.~
-==BSANDR ~ Oh, Gavin, do not think too badly of your brother. He is straight forward and upright, something you could need maybe now and then. Yes, his manners are not extremely gentlemanlike, but he is not a wrong person at all.~
-==~BB!GAVIN~ ~I am glad, mylady, you take it humourously and do not blame him too much.~
+==BSANDR ~ Oh, Gavin, do not think too badly of your brother. He is straight forward and upright, something you could need maybe now and then. Yes, his manners are not extremely gentleman-like, but he is not a wrong person at all.~
+==~BB!GAVIN~ ~I am glad, my lady, you take it humorously and do not blame him too much.~
 ==BSANDR ~ What is there to blame? He met a young beautiful girl and started to flirt a bit. I have suffered worse, dear Gavin. Your brother has his charm and I enjoyed his attention for what it was, a little flirt.~
 ==~BB!GAVIN~ ~Maybe I am just old fashioned and you are a modern girl, playing with the boys hearts like that.~
-==BSANDR ~ You worry too much, Gavin. I am not toying with boys hearts like that. But I like to have a little fun sometimes just like your brother does. We met on equal terms without spectaculous expectations and we enjoyed it. That is all. No tragedy, nobody hurt, no broken hearts.~
-==~BB!GAVIN~ ~Then I was mistaken, mylady, I did not think you step through life that lightly.~
+==BSANDR ~ You worry too much, Gavin. I am not toying with boys hearts like that. But I like to have a little fun sometimes just like your brother does. We met on equal terms without spectacular expectations and we enjoyed it. That is all. No tragedy, nobody hurt, no broken hearts.~
+==~BB!GAVIN~ ~Then I was mistaken, my lady, I did not think you step through life that lightly.~
 ==BSANDR ~ You are mistaken now! I do not dance through life like a careless plaything. But let seriousness reign where it is necessary, and have some fun where it is allowed.~
 ==~BB!GAVIN~ ~And once again I have made a complete fool of myself, I guess.~
 ==BSANDR ~ (Sandrah touches Gavin's cheek gently.) Not at all, my friend. You only showed what a caring and goodhearted person you are. Just do not forget the lighter sides of life exist as well.~
@@ -164,7 +164,7 @@ IF~~ THEN BSANDR SanHealGavi
 DO ~ SetGlobal("SanHealgav","GLOBAL",6) ~
 ==~BB!GAVIN~ ~ Oh, Sandrah, please do not make your jokes on me this way. I know I am a bit hesitant sometimes, but I try to improve. Do not measure everyone against your own standards.~
 == BSANDR ~ I am not joking about you at all. At times I even admire your thoughtful ways, and I enjoy our discussions about all those topics that you mind about. This time, my words were part of the healing process, my dear.~
-==~BB!GAVIN~ ~ I see, you envolve me in this light converation and - swoosh - my pain from a moment ago is forgotten as your spell works on the physical wounds.~
+==~BB!GAVIN~ ~ I see, you involve me in this light conversation and - swoosh - my pain from a moment ago is forgotten as your spell works on the physical wounds.~
 == BSANDR ~ Has this psychological aspect not been part of your clerical education, Gavin?~
 ==~BB!GAVIN~ ~ Yes and no. I guess to give some blessing and educational words of Lathander to your patients serves the same purpose. Your ways seem to be so natural and easy. One easily forgets how much skill and care is really hidden behind the cheerful facade.~
 EXIT
@@ -193,7 +193,7 @@ END
 
 
 INTERJECT_COPY_TRANS ~B!GavinJ~ 2180 SanGavCongrate
-== BSANDR IF ~ InParty("CVSandr") ~ THEN~Congratulution, <CHARNAME> of Candlekeep, or do I better say Lady <CHARNAME> Mor. Congratulation, Gavin, after all you really managed to follow your heart and become the happy husband of the wonderful <CHARNAME>. (She kisses both of you tenderly.)~
+== BSANDR IF ~ InParty("CVSandr") ~ THEN~Congratulation, <CHARNAME> of Candlekeep, or do I better say Lady <CHARNAME> Mor. Congratulation, Gavin, after all you really managed to follow your heart and become the happy husband of the wonderful <CHARNAME>. (She kisses both of you tenderly.)~
 END
 
 //Keldath & Red Wizards

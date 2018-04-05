@@ -12,7 +12,7 @@ IF~ Global("SanFabioBH","GLOBAL",3)~THEN BFabio SanFabio2
 ~Ah, the forest with plenty of privacy.  If only I had a lady to enjoy it with...~
 DO~SetGlobal("SanFabioBH","GLOBAL",4)~
 ==BSandr~ Little birds sing to me that it may be the little Lady Andrella you have in mind, Fabio.~
-==BFabio~Andrella, oh, the birdy may try to test her wings soon. A real gentleman will galantly see to it that she does not hurt herself too much with the first attempt.~
+==BFabio~Andrella, oh, the birdy may try to test her wings soon. A real gentleman will gallantly see to it that she does not hurt herself too much with the first attempt.~
 ==BSandr~ In this case it may just be good that you are out here with us...~
 ==BFabio~Oh, pretty Sandrah, you know too well yourself that I'm not one to take advantage of such a situation.~
 ==BSandr~ I know oh *too well* that you do just that.~
@@ -49,7 +49,7 @@ DO~SetGlobal("SanFabioBH","GLOBAL",9)~
 ==BFabio~ Oh, my swan, those *experts* that try to tell you about a sparrow in your hand...well, they never encountered the real thing most probably.~
 ==BSandr~(Smiles at Fabio.) It takes two to make this experience such a pleasant one, so do not give all the credit to me alone.~
 ==BFabio~ I have plenty material for a new song or two now.~
-==BSandr~You will find an open ear with me anytime you are ready for another verse.~EXIT
+==BSandr~You will find an open ear with me any time you are ready for another verse.~EXIT
 
 CHAIN
 IF~ Global("SanFabioBH","GLOBAL",10)~THEN BFabio SanFabio4
@@ -67,7 +67,7 @@ IF~Global("SanFabioAndrella","LOCALS",1)~ THEN BFabio SanFabioAndr
 ~Eeh...~
 DO~ SetGlobal("SanFabioAndrella","LOCALS",2)~
 ==BSandr~There is really no need to explain anything, my bard. By the way, she is really charming.~
-==BFabio~ No comparrison to you, my swan...but...we both know you will move on sooner or later...~
+==BFabio~ No comparison to you, my swan...but...we both know you will move on sooner or later...~
 ==BSandr~Like I said, there is really no need to explain to ME. What she will make out of it is something completely different.~
 ==BFabio~ Mmh, I guess there is no real need for her to know, isn't that so?~
 ==BSandr~ She will not learn anything from me, Fabio.~
