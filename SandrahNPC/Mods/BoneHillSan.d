@@ -2,14 +2,14 @@
 INTERJECT_COPY_TRANS BHPELL 11 BHArrival
 == CVSandrJ IF ~ InParty("CVSandr") InParty("Imoen2") AreaCheck("bh0100") ~ THEN ~ Imoen, I am sorry to disappoint you. Lendore, although far in the south, has not really beaches to lie on. I was disappointed myself, when my father first took me here.~ DO ~ RealSetGlobalTimer("BH1EvenT","GLOBAL",345) ~
 ==IMOEN2_ IF ~ InParty("CVSandr") InParty("Imoen2") AreaCheck("bh0100") ~ THEN ~ Puuh, then let's finish this thing here quick. Never any fun for us. An island without beach, who makes such silly landscapes, ha? We coulda stayed at Candlekeep looking at a cold uninviting sea all day.~
-== BHPELL  ~ Sandrah, Sandrah. And now accompanied by such a lifely redhead. One will see what that means for the quietude of our island...~
+== BHPELL  ~ Sandrah, Sandrah. And now accompanied by such a lively redhead. One will see what that means for the quietude of our island...~
 END
 
 INTERJECT_COPY_TRANS BHFABIO 0 SanFab1
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Did you have much success then in Ankhapur and Hlondeth, Fabio? At least you returned savely.~
 ==BHFABIO IF ~ InParty("CVSandr") ~ THEN ~ I have never been to...little Sandrah?..eh...~
 == CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ Little angry Sandrah with a mighty angry hammer in her hand. So, you have never made it to Ankhapur, I guess - nor to any other place outside of this tavern!~
-==BHFABIO IF ~ InParty("CVSandr") ~ THEN ~ I-I-I was about...believe me..Oh, no, you won't believe me anymore, I guess...~ DO ~ SetGlobal("SanFab2","GLOBAL",1)~
+==BHFABIO IF ~ InParty("CVSandr") ~ THEN ~ I-I-I was about...believe me..Oh, no, you won't believe me any more, I guess...~ DO ~ SetGlobal("SanFab2","GLOBAL",1)~
 == IMOEN2_ IF ~ InParty("CVSandr") InParty("Imoen2")~ THEN ~ So you know some more people on this island, Sandrah?~ 
 END
 

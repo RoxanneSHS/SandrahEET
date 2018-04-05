@@ -30,7 +30,7 @@ IF~Global("SanC0SirB","Global",6) ~THEN C0SirenJ Siri3
 DO~ SetGlobal("SanC0SirB","Global",7) ~
 ==CVSandrJ ~A paladin of Mystra, you mean?~
 ==C0SirenJ ~I heard about the Knights of the Mystic Fire, are they not champions of Mystra?~
-==CVSandrJ ~Maybe not in the way you think they are. Mystra herself is the Guardian of the Weave and as such stays mostly neutral. Protection of the Weave includes working against its misuse. Neither Mystra's priests nor her knights are forces of goodness like a champion of Ilmather.~
+==CVSandrJ ~Maybe not in the way you think they are. Mystra herself is the Guardian of the Weave and as such stays mostly neutral. Protection of the Weave includes working against its misuse. Neither Mystra's priests nor her knights are forces of goodness like a champion of Ilmater.~
 ==C0SirenJ ~Maybe I judged your goddess by the deeds of her servant whom I see everyday.~
 ==CVSandrJ ~The Knights of the Mystic Fire are mainly protecting large temples and operations of Mystra - as such they are more fighters that have some knowledge in the arcane rather than being deeply involved with Mystra's tasks.~
 =~As her priestess I study and protect the Weave, which is more of my choice than defending ber temples and priests.~

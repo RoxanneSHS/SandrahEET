@@ -29,12 +29,12 @@ IF~GlobalGT("Chapter","GLOBAL",19)~THEN REPLY~  She mentioned my grandmother?? A
 END
 
 IF~~ THEN BEGIN CalliEnd3
-SAY~She also metioned an elven city to be located around here. I am not sure what any of the two mean...if one were true the other might be as well.~
+SAY~She also mentioned an elven city to be located around here. I am not sure what any of the two mean...if one were true the other might be as well.~
 IF~~THEN REPLY~As there is no elven city here her hatred against me and my family probably comes from the same distorted imagination.~GOTO CalliEnd5
 END
 
 IF~~ THEN BEGIN CalliEnd4
-SAY~ She also metioned the elven city to be located around here. As the one were true the other might be as well.~
+SAY~ She also mentioned the elven city to be located around here. As the one were true the other might be as well.~
 IF~~THEN REPLY~But Khalindra's mother was no priestess of Bhaal, right? ~GOTO CalliEnd5
 END
 
@@ -50,7 +50,7 @@ IF~~ THEN BSANDR SanCalliHeal
 ~ I am sure you did, Callisto, it has left its scars on your body - and your soul.~
 =~But now you travel with companions that help each other out according to the skills they possess. Mine are the skills of a healer.~
 DO~SetGlobal("SanHealcalli","GLOBAL",4)RealSetGlobalTimer("SanCallisT","LOCALS",1200)~
-==BCMCalli~ Baah! I prefer the skills of a fighter you obviously possess as well in abundance. If you believe so much in that comrad stuff, use them to guard my back in battle.~
+==BCMCalli~ Baah! I prefer the skills of a fighter you obviously possess as well in abundance. If you believe so much in that comrade stuff, use them to guard my back in battle.~
 == BSANDR~ You can rely on that as well as on my healing provided afterwards.~
 ==BCMCalli~Fine - now leave me be - priestess! (She spits out the last word as if it were meant as an insult, which it probably is for her.)~EXIT
 
@@ -66,7 +66,7 @@ DO~SetGlobal("SanHealcalli","GLOBAL",7) RealSetGlobalTimer("SanCallisT","LOCALS"
 == BSANDR~Many have commented on that fact before, most probably because I have chosen to model myself after her. After all she was my grandmother...~
 ==BCMCalli~Wow - you say that a human just like you became a goddess later?~
 == BSANDR~She was not afraid to chase and destroy the renegades as she saw the necessity to do it. She went out to destroy Bhaal himself - she and her companion were elevated to godhood later to replace the ones killed in the Time of Troubles.~
-==BCMCalli~A great heroine indeed - and it just shows how weak and useless those despiseable gods really are. I bet you would kill one of them as well if you must.~
+==BCMCalli~A great heroine indeed - and it just shows how weak and useless those despicable gods really are. I bet you would kill one of them as well if you must.~
 == BSANDR~(Smiles) There are a few whom I cannot count among my friends. Stay with <CHARNAME> and me and you may one day have to face one of them and his wrath yourself with us.~
 ==BCMCalli~You and me, we sure have the heart and the skills to stand our ground against anyone, puny gods included.~EXIT
 
@@ -76,7 +76,7 @@ IF~~THEN BSANDR SanCalliHeal3
 DO~SetGlobal("SanHealcalli","GLOBAL",9) RealSetGlobalTimer("SanCallisT","LOCALS",3100)~
 ==BCMCalli~ That's something worthy, I have to admit. It can help you defeat your foes even better.~
 == BSANDR~ It is true that <CHARNAME> and me have succeeded several times by using the lore and the brain instead of relying on our weapon's force alone.~
-==BCMCalli~ Good to have you on my side instead of against me. You're right - I never saw you snivling on your knees and begging for a useless god's grace.~
+==BCMCalli~ Good to have you on my side instead of against me. You're right - I never saw you snivelling on your knees and begging for a useless god's grace.~
 == BSANDR~ I follow a certain path of values and ideals. By coincidence it is the one aligned with serving Mystra. Like I told you before, Callisto, I am as much inspired by the deeds she performed herself when she was still the human Midnight.~
 ==BCMCalli~The fact that she was able to slay a god herself only shows how weak and impotent those really are.~
 == BSANDR~ It only shows they can fall like everything else on this plane under a specific set of circumstances. I would not underestimate their power or seek quarrel with them without very good cause.~
@@ -113,7 +113,7 @@ DO~SetGlobal("SanCalliMar","ar0511",2)~
 ==BCMCalli~ I was afraid you would strike him down with your deadly hammer before I had a chance to finish him off. What grudge have you held against him?~
 == BSANDR~I have never met him before.~
 ==BCMCalli~ But...? ~
-== BSANDR~I heard his confession. Do you think I would one like him get away with such deeds? You may think I am the innocent rich girl out on an adventuring trip just for fun but, believe it or not, I have seen what men like him do and the hurt and death they spread for their base motives. Brigands, slave traders...I saw their trail and witnessed their deeds and I will fight them whereever I meet them.~
+== BSANDR~I heard his confession. Do you think I would one like him get away with such deeds? You may think I am the innocent rich girl out on an adventuring trip just for fun but, believe it or not, I have seen what men like him do and the hurt and death they spread for their base motives. Brigands, slave traders...I saw their trail and witnessed their deeds and I will fight them wherever I meet them.~
 ==BCMCalli~ Your goddess should have sent you to Sylla'cerra on the right day if she really had cared.~
 == BSANDR~I was three years old on that day.~EXIT
 
