@@ -3,8 +3,8 @@ BEGIN CVSan25J
 IF ~ IsGabber(Player1) Global("SanPidPack","GLOBAL",16) ~ THEN BEGIN SanPCInit16
 SAY ~ (Her enigmatic smile is invitation and challenge at the same moment.)~
 IF~~THEN REPLY~ (Smile back at her. Her presence alone gives you back your confidence once again.)~EXIT
-IF~AreaCheck("ar4500") Global("LeavingPocketPlane","AR4500",0) Global("SanPoPla","LOCALS",0)GlobalLT("BeginChallenge1","GLOBAL",9) ~THEN REPLY~Has my counselor any advice for me right now?~ GOTO SanPoPla1
-IF~GlobalGT("BeginChallenge1","GLOBAL",9) GlobalLT("SanPoPla","LOCALS",2)~THEN REPLY~Has my counselor any advice for me right now?~ GOTO SanPoPla4
+IF~AreaCheck("ar4500") Global("LeavingPocketPlane","AR4500",0) Global("SanPoPla","LOCALS",0)GlobalLT("BeginChallenge1","GLOBAL",9) ~THEN REPLY~Has my counsellor any advice for me right now?~ GOTO SanPoPla1
+IF~GlobalGT("BeginChallenge1","GLOBAL",9) GlobalLT("SanPoPla","LOCALS",2)~THEN REPLY~Has my counsellor any advice for me right now?~ GOTO SanPoPla4
 IF~!AreaCheck("ar4500") Global("SanPoPla","LOCALS",2)~THEN REPLY~ What is your idea about the enemy we are now facing? ~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanPoPla10
 IF~InParty("Sarevok") GlobalGT("SanSarev","GLOBAL",8) Global("SarevPid","LOCALS",0)~ THEN REPLY~You talk with Sarevok quite intensely - how do you think he's faring?~ GOTO SanSarevPid1
 IF ~RandomNum(5,1)~THEN REPLY~It is really a long road we have taken together by now, Sandrah.~ GOTO SanLongPid11
@@ -14,20 +14,20 @@ IF ~RandomNum(5,3)~THEN REPLY~It is really a long road we have taken together by
 IF ~RandomNum(5,4)~THEN REPLY~It is really a long road we have taken together by now, Sandrah.~ GOTO SanLongPid14
 IF ~RandomNum(5,5)~THEN REPLY~It is really a long road we have taken together by now, Sandrah.~ GOTO SanLongPid15
 IF~Global("SanMystApToB","GLOBAL",4) Global("SanCyrInvolve","LOCALS",0)~THEN REPLY~ What did Mystra mean when she talked about Cyric's interest in the Bhaalspawn war?~GOTO SanCyricwar1
-IF~Global("CVAR3001","GLOBAL",1) Global("CVAR3020","GLOBAL",0) Global("WhoImpr","LOCALS",0)~ THEN REPLY~ Do you have an idea what awaits us down there in Watcher's Keep, counselor.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWKStory1
+IF~Global("CVAR3001","GLOBAL",1) Global("CVAR3020","GLOBAL",0) Global("WhoImpr","LOCALS",0)~ THEN REPLY~ Do you have an idea what awaits us down there in Watcher's Keep, counsellor.~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWKStory1
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArF25
 IF~ Global("SanDesTroll","LOCALS",2) NumItemsPartyLT("arow04",5) !AreaType(FOREST)  ~ THEN REPLY~ Sandrah, we are quickly running out of acid arrows. Can you provide us with some once again?~ GOTO SanAcArNF25
 IF~PartyHasItem("plot04j") AreaCheck("Ar3017") Range("Belljar",12)~ THEN REPLY~Sandrah, do you have an idea how this machine can open the door to the level below?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanOpenLum1
 IF~PartyHasItem("plot04j") AreaCheck("Ar3017") !Range("Belljar",12)~THEN REPLY~Sandrah, do you have an idea how this machine can open the door to the level below?~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanOpenLum3
 IF~Global("CVGodag","GLOBAL",13) !Global("San25ChiQuest","GLOBAL",0)~THEN REPLY~You remember those initials on Gorion's dagger?~DO~SetGlobal("CVGodag","GLOBAL",14)~GOTO GodagTob1
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCltob
-IF~~THEN REPLY~ Nevermind.~EXIT
+IF~~THEN REPLY~ Never mind.~EXIT
 END
 
 IF~~THEN BEGIN GodagTob1
 SAY~A...like Alianna, not K like Khalindra. ~
 IF~~THEN REPLY~She was not Gorion's lover like he wrote to me in his Candlekeep letter but he knew her and she was my mother.~GOTO GodagTob2
-IF~~THEN REPLY~Gorion loved a bhaalist of the worst type, he killed her and kept her child. I don't believe he could have lied to me like that.~GOTO GodagTob2
+IF~~THEN REPLY~Gorion loved a Bhaalist of the worst type, he killed her and kept her child. I don't believe he could have lied to me like that.~GOTO GodagTob2
 END
 
 IF~~THEN BEGIN GodagTob2
@@ -49,7 +49,7 @@ IF~~THEN REPLY~Did we not assume, like Alaundo had promised, they would eliminat
 END
 
 IF~~THEN BEGIN GodagTob5
-SAY~Viekang and all those others in the town, even Grommir - <CHARNAME>, none of them was a match for you or those Five. Those were not asprirants for the next God of Murder.~
+SAY~Viekang and all those others in the town, even Gromnir - <CHARNAME>, none of them was a match for you or those Five. Those were not aspirants for the next God of Murder.~
 IF~~THEN REPLY~ Fuel - their essence is required.~ GOTO GodagTob6
 IF~~THEN REPLY~ Those streams of blood I dreamed about on the Sword Coast.~ GOTO GodagTob6
 END
@@ -74,14 +74,14 @@ END
 
 IF~~THEN BEGIN SanOpenLum1
 SAY~I have made notes of all the scribbled madness we found in this Keep, let me look at Carson's book again...Hmm, yes,....I see...~
-=~She starts to manipilate the different devices of the machine while the humming and vibration increases steadily.~
+=~She starts to manipulate the different devices of the machine while the humming and vibration increases steadily.~
 IF~~THEN REPLY~ STOP - stop it before you blow us all to the abyss.~EXIT
 IF~~THEN REPLY~(Let her continue.)~GOTO SanOpenLum2
 END
 
 IF~~THEN BEGIN SanOpenLum2
 SAY~(She pulls the last lever and steps back a bit.) That should be it.~
-=~You hear the crackle of energy and the pop of power from the formerly inactive magical gate in the northeast corner of the room. The way down to the next level is now open.~
+=~You hear the crackle of energy and the pop of power from the formerly inactive magical gate in the north-east corner of the room. The way down to the next level is now open.~
 IF~~THEN DO~EraseJournalEntry(63824)
 SetGlobal("StairButton","GLOBAL",1)
 SetGlobal("circle","GLOBAL",0)
@@ -103,7 +103,7 @@ IF~~THEN EXIT
 END
 
 IF~~THEN BEGIN SanAcArF25
-SAY ~ Let me get this small bootle of extract from acid slime out. Puuh, what a smell.~
+SAY ~ Let me get this small bottle of extract from acid slime out. Puuh, what a smell.~
 =~ The remaining material is around, here is wood and over there are a lot of feathers where a buzzard has devoured his prey. It will not take long.~
 IF~~THEN DO~ StartCutSceneMode()
 SmallWait(4)
@@ -122,7 +122,7 @@ END
 IF~ Global("SanDesTroll","LOCALS",4)~THEN BEGIN SanAcArNF225
 SAY~ You asked me for some acid arrows some time ago, <CHARNAME>. Around here is all I would need to produce us some.~
 IF~~THEN REPLY~ Thank you, but our quivers are filled at the moment. I will ask you again if we need some.~ DO~ SetGlobal("SanDesTroll","LOCALS",2)~EXIT
-IF~~THEN REPLY~ Very good, I almost forgot it, but my sweet counselor did not. Go ahead, Sandrah.~  GOTO SanAcArF25
+IF~~THEN REPLY~ Very good, I almost forgot it, but my sweet counsellor did not. Go ahead, Sandrah.~  GOTO SanAcArF25
 END
 
 IF~~THEN BEGIN  SanWKStory1
@@ -150,35 +150,35 @@ IF~~THEN REPLY~Are you trying to declare a war to the gods, Sandrah?~ GOTO SanMi
 END
 
 IF~~THEN BEGIN SanMinglGod3
-SAY~*Her expression is unpenetrable as she gives you one of her long thoughtful looks.* ~
-=~We do not need another war, definitely not. My hope is that you and I come out of this whole mess as a force powerful enough to improve the situation here on the Prime permanently. The mortals must emancipate themselve from those power hungry meddlers that call themselve *gods*~
+SAY~*Her expression is impenetrable as she gives you one of her long thoughtful looks.* ~
+=~We do not need another war, definitely not. My hope is that you and I come out of this whole mess as a force powerful enough to improve the situation here on the Prime permanently. The mortals must emancipate themselves from those power hungry meddlers that call themselves *gods*~
 IF~~THEN REPLY~Who else may have their champion in this game?~GOTO SanMinglGod4
 IF~~THEN REPLY~Sounds like you think more gods play a role in this game?~GOTO SanMinglGod4
 END
 
 IF~~THEN BEGIN SanMinglGod4
 SAY~It is hard to tell until we know who all of the Five really are. We can only make a guess about Illasera as her patron never showed up.~
-=~A hasty attack, based on surprise and backstabbing, not very well planned...a typial handwriting I would say...~
+=~A hasty attack, based on surprise and backstabbing, not very well planned...a typical handwriting I would say...~
 IF~~THEN REPLY~The mad prince of lies.~EXIT
 IF~~THEN REPLY~Your *beloved* grandfather.~EXIT
 IF~~THEN REPLY~Cyric, who else.~EXIT
 END
 
 IF~~THEN BEGIN SanCyricwar1
-SAY~ Is that not apparent, <CHARNAME>? Ao appointed Bhaal's role as the god of murder to my grandfather, among his other tasks. Any form of restoration of his predessesor means a stab at Cyric's domain.~
+SAY~ Is that not apparent, <CHARNAME>? Ao appointed Bhaal's role as the god of murder to my grandfather, among his other tasks. Any form of restoration of his predecessor means a stab at Cyric's domain.~
 IF~~THEN REPLY~ In this case he must be an opponent to our foe - and a possible ally for us.~ GOTO SanCyricwar2
 IF~~THEN REPLY~ I will never NEVER cooperate with the mad God of Lies!~ GOTO SanCyricwar2
 END
 
 IF~~THEN BEGIN SanCyricwar2
 SAY~ (She looks baffled for a second.) I think you misunderstood me, my lovely Bhaalspawn. The most powerful of the Bhaalspawns involved in this war would be his natural enemy, regardless of <PRO_HISHER> alignment or plan. YOU are his topmost enemy.~
-IF~~THEN REPLY~ But Ao has fordidden any involvement of the Gods in this struggle has he not?~DO~SetGlobal("SanCyrInvolve","LOCALS",1)~GOTO SanCyricwar3
+IF~~THEN REPLY~ But Ao has forbidden any involvement of the Gods in this struggle has he not?~DO~SetGlobal("SanCyrInvolve","LOCALS",1)~GOTO SanCyricwar3
 END
 
 IF~~THEN BEGIN SanCyricwar3
 SAY~ I would not be surprised if the cunning secret thief would not find a hidden loophole through which he can intrigue in the affair.~
 IF~~THEN REPLY~ (Sigh) When will the list of our opponents ever end?~ EXIT
-IF~~THEN REPLY ~ I trust my watchful counselor to issue a warning should she detect the slightest sign of his machinations.~EXIT
+IF~~THEN REPLY ~ I trust my watchful counsellor to issue a warning should she detect the slightest sign of his machinations.~EXIT
 IF~~THEN REPLY~ A valid warning and one more thing to keep our eyes open for.~EXIT
 END
 
@@ -186,35 +186,35 @@ IF~~THEN BEGIN SanLongPid11
 SAY~And it has taken me deep into your heart - so every step of it was worth it.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
-IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
+IF~~THEN REPLY~ (You smile and shake your head about the banalities your normally clever counsellor sometimes can come up with.) ~ EXIT
 END
 
 IF~~THEN BEGIN SanLongPid12
 SAY ~I would not miss a single day of it, my dear.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
-IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
+IF~~THEN REPLY~ (You smile and shake your head about the banalities your normally clever counsellor sometimes can come up with.) ~ EXIT
 END
 
 IF~~THEN BEGIN SanLongPid13
 SAY ~In my wildest dreams I could not have imagined our common story.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
-IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
+IF~~THEN REPLY~ (You smile and shake your head about the banalities your normally clever counsellor sometimes can come up with.) ~ EXIT
 END
 
 IF~~THEN BEGIN SanLongPid14
 SAY ~I am willing to take any detour with you that may still lie ahead.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
-IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
+IF~~THEN REPLY~ (You smile and shake your head about the banalities your normally clever counsellor sometimes can come up with.) ~ EXIT
 END
 
 IF~~THEN BEGIN SanLongPid15
 SAY ~We may have swerved once or twice but our overall course is steady.~
 IF~~THEN REPLY~ (You take her in your arms and kiss her.)~EXIT
 IF~~THEN REPLY~ (You nod in silent agreement.)~EXIT
-IF~~THEN REPLY~ (You smile and shake your head about the banalties your normally clever counselor sometimes can come up with.) ~ EXIT
+IF~~THEN REPLY~ (You smile and shake your head about the banalities your normally clever counsellor sometimes can come up with.) ~ EXIT
 END
 
 
@@ -283,13 +283,13 @@ IF~~THEN REPLY~ The mysterious assassin in Tethir? What was her role?~  GOTO San
 END
 
 IF~~THEN BEGIN SanPoPla7
-SAY~ It is this Army of the Five we learned about in Tethir and also the words of the stone head about the *most unlikely allies*. Add to this the hunt of Bhaalspawns that has recently started by some unknown power. It seems that the big ones start to feed on the small to get bigger. Your godly father spawned them richly enought - his essence is much devided this way.~
+SAY~ It is this Army of the Five we learned about in Tethir and also the words of the stone head about the *most unlikely allies*. Add to this the hunt of Bhaalspawns that has recently started by some unknown power. It seems that the big ones start to feed on the small to get bigger. Your godly father spawned them richly enough - his essence is much divided this way.~
 IF~~THEN REPLY~ You begin to get as mysterious as those stone heads - only your face is much lovelier.~ GOTO SanPoPla8
 IF~~THEN REPLY~ You begin to get as mysterious as those stone heads.~ GOTO SanPoPla8
 END
 
 IF~~THEN BEGIN SanPoPla8
-SAY~ There is a bloody harvest going on, <CHARNAME>. Someone collects the essence of Bhaalspawns. Your father could not anticipate that all of them would survive until the day of his return. So he breeded them in excess, but most probably only some amount of the evil essence he left within them is finally needed. You, <CHARNAME>, seem to poseess more of it than anyone else - most likely Bhaal's gift to Khalindra - to make you strong enough for your mission to eliminate me.~
+SAY~ There is a bloody harvest going on, <CHARNAME>. Someone collects the essence of Bhaalspawns. Your father could not anticipate that all of them would survive until the day of his return. So he bred them in excess, but most probably only some amount of the evil essence he left within them is finally needed. You, <CHARNAME>, seem to possess more of it than anyone else - most likely Bhaal's gift to Khalindra - to make you strong enough for your mission to eliminate me.~
 IF~~THEN REPLY~Does that mean I am the preferred prey in this hunt?~ GOTO SanPoPla9
 IF~~THEN REPLY~Then the rising god would be able to do without my essence provided he or she gathers enough of the remaining ones.~ GOTO SanPoPla9
 END
@@ -312,8 +312,8 @@ END
 
 IF~~THEN BEGIN SanPoPla12
 SAY~ Even if they work together on a temporary basis, in the end it will be only one who can become the rising god. Once they have reached their initial goal the fight among them will start. You - you are the common enemy. On the one hand you possess much of what they need - hence the single attempt of Illasera on you, on the other hand only their combined power may be able to defeat you.~
-IF~~THEN REPLY~ All of this seems to make sense, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
-IF~~THEN REPLY~ It seems our goal will be to meet them one by one but never face them together, counselor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
+IF~~THEN REPLY~ All of this seems to make sense, counsellor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
+IF~~THEN REPLY~ It seems our goal will be to meet them one by one but never face them together, counsellor.~DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 IF~~THEN REPLY~ You were right long ago, when you told me that there is no way to escape my destiny.~ DO~SetGlobal("SanPoPla","LOCALS",3)~ EXIT
 END
 
@@ -329,7 +329,7 @@ IF ~~THEN REPLY~And what are the two possibilities you talk about, Sandrah?~ DO~
 END
 
 IF~~ THEN BEGIN SanTraitAssu3
-SAY~One is that the traitor - traitor from the perspective of the Bhaalspawns - actually wants to prevent Bhaal's return. The other is that the traitor is not himself a Bhaalspawn but still needs the possesion of the Essence that is gathered by the Alliance.~
+SAY~One is that the traitor - traitor from the perspective of the Bhaalspawns - actually wants to prevent Bhaal's return. The other is that the traitor is not himself a Bhaalspawn but still needs the possession of the Essence that is gathered by the Alliance.~
 IF ~~THEN REPLY~The first is clear. But the second?~ GOTO SanTraitAssu4
 IF ~~THEN REPLY~This traitor, Sandrah, would he not try to establish a contact with us?~ GOTO SanTraitAssu5
 END
@@ -364,7 +364,7 @@ IF~~THEN REPLY~*You decide not to bother her and give her time to speak if she w
 END
 
 IF~Global("SanDoubtKhalTOB","LOCALS",1)Global("SanRompa","Global",2)~THEN BEGIN DoubtMothPC1c
-SAY ~*You have observed that your counselor Sandrah has been pondering some issue for a while now.*~
+SAY ~*You have observed that your counsellor Sandrah has been pondering some issue for a while now.*~
 IF~~THEN REPLY~Do I really have to tell you I'm here whenever you need me?~GOTO DoubtMothPC2
 IF~~THEN REPLY~Spit it out before it swallows you!~GOTO DoubtMothPC2
 IF~~THEN REPLY~*You decide not to bother her and give her time to speak if she wants to.* ~GOTO DoubtMothPC2a
@@ -432,12 +432,12 @@ IF~Global("SanChoices","ar6400",2)~THEN BEGIN SanYagChoic1
 SAY~ It seems we have several options to go from here once we cleaned out this area and made it save for travellers once again.~
 IF ~~THEN REPLY~I guess we need to find they key to Yaga-Shura's immortality.~ GOTO SanYagChoic2
 IF~InParty("LRIrenic")~THEN REPLY~Irenicus proposed to pay Watcher's Keep a visit.~GOTO SanIrProp
-IF ~~THEN REPLY~Please help me to keep an overview, counselor.~GOTO SanYagChoic2
+IF ~~THEN REPLY~Please help me to keep an overview, counsellor.~GOTO SanYagChoic2
 END
 
 IF~~THEN BEGIN SanIrProp
 SAY~(Laughs gently) A strange coincidence as I fully agree with him in that assessment. I was about to suggest likewise.~
-IF~~THEN REPLY~May this harmony between my advisors be a good or a bad sign?~ GOTO SanYagChoic2
+IF~~THEN REPLY~May this harmony between my advisers be a good or a bad sign?~ GOTO SanYagChoic2
 IF~~THEN REPLY~What would be the alternatives?~ GOTO SanYagChoic2
 END
 
@@ -447,7 +447,7 @@ IF ~~THEN REPLY~But Saradush is still under siege? ~ DO~ SetGlobal("SanChoices",
 END
 
 IF~~THEN BEGIN SanYagChoic3
-SAY~ That is true, but with the internal hinderances removed since we dealt with Gronmir, Errard and Melissan are in a good position to hold the town for some while. We might well use our time like proposed, I am not sure if future events will grant us many more chances to do so.~
+SAY~ That is true, but with the internal hindrances removed since we dealt with Gromnir, Errard and Melissan are in a good position to hold the town for some while. We might well use our time like proposed, I am not sure if future events will grant us many more chances to do so.~
 IF ~~THEN REPLY~Thank you, Sandrah, I see your arguments and will consider them.~DO~RevealAreaOnMap("ar3000")~EXIT
 END
 
@@ -459,7 +459,7 @@ END
 
 IF~~THEN BEGIN SanLabymap2
 SAY~It seems to start in the room with the compass rose..."...meet the rising sun..." means use the eastern portal..."pillar of stone...continue as before..." so again the eastern portal.~
-=~Go south repeatedly to a rune covered obilisk..."setting sun" which is west...north to a tree...further north to the exit.~
+=~Go south repeatedly to a rune covered obelisk..."setting sun" which is west...north to a tree...further north to the exit.~
 IF~~THEN REPLY~ It's as good a clue as any we have, I guess.~DO~SetGlobal("SanMadJou","LOCALS",2)~
 EXIT
 END
@@ -515,20 +515,20 @@ IF~~THEN REPLY~ If the darkness was not present everywhere I would swear I am in
 END
 
 IF~~ THEN BEGIN SanGarWD2
-SAY~ My father has told me that the area in our garden at Waterdeep around the little seaside pavillion was build after the archetype of a holy temple in the Mir forest, a place where once Mystra was worshipped.~
-IF~~THEN REPLY~ This must be the place then. Not much of your goddess is around anymore.~
+SAY~ My father has told me that the area in our garden at Waterdeep around the little seaside pavilion was build after the archetype of a holy temple in the Mir forest, a place where once Mystra was worshipped.~
+IF~~THEN REPLY~ This must be the place then. Not much of your goddess is around any more.~
 GOTO SanGarWD3
 END
 
 IF~~ THEN BEGIN SanGarWD3
-SAY~ The gods are dependent on their worshippers down here. This place has none who follows Mystra's path anymore.~
+SAY~ The gods are dependent on their worshippers down here. This place has none who follows Mystra's path any more.~
 IF~~THEN DO~ SetGlobal("SanTempGard","ar5202",2)~ EXIT
 END
 
 //Dead Monk
 IF~Global("SanMonkD","ar6002",1)~THEN BEGIN Bazmonk1
 SAY~Now and then a healer needs to be reminded of her limits and has to accept that death comes to all of us mortals of the primary plane. It is good if you can end it with the knowledge that you have achieved something during your existence.~
-IF~~THEN REPLY~What makes you say that on such a day, counselor?~GOTO Bazmonk2
+IF~~THEN REPLY~What makes you say that on such a day, counsellor?~GOTO Bazmonk2
 IF~~THEN REPLY~Even if you die in the end lost in such a hole like this?~ GOTO Bazmonk2
 END
 
@@ -581,7 +581,7 @@ IF~~THEN REPLY~ Your father replied *Do not worry about the little one, the Real
 END
 
 IF~~THEN BEGIN SanWronassumpt8
-SAY~ (Sandrah almost shouts now) Undermountain!! The child was in Waterdeep all the time - in that mysterious realm that is said to be the home of those who follow Elistraee and her High Priestess, the Dark Sister. ~
+SAY~ (Sandrah almost shouts now) Undermountain!! The child was in Waterdeep all the time - in that mysterious realm that is said to be the home of those who follow Eilistraee and her High Priestess, the Dark Sister. ~
 IF~~THEN REPLY~ And so the circle closes back to your family's heritage it seems.~ GOTO SanWronassumpt9
 IF~~THEN REPLY~ And that would mean?~ GOTO SanWronassumpt9
 END
@@ -602,13 +602,13 @@ IF~Global("San25ChiQuest","GLOBAL",5) ~ THEN BEGIN SanQuestForce
 SAY~ We have postponed our return to my father long enough now, <CHARNAME>. Now is a good time to let me take us there. Not just for my own benefit but for yours as well.~
 IF~~THEN REPLY~ Let us go.~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
 IF~~THEN REPLY~ Just another minute...~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
-IF~~THEN REPLY~ I have outgrown your father's envolvement by now...~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
+IF~~THEN REPLY~ I have outgrown your father's involvement by now...~ DO~ SetGlobal("SANWDho","GLOBAL",1) SetGlobal("San25ChiQuest","GLOBAL",6)~EXIT
 END
 
 IF~ Global("San25ChiQuest","GLOBAL",9)~ THEN BEGIN SanWantsSeeQi1
 SAY~<CHARNAME>, I definitely want to meet my sister. You know my feelings for you - but we only met because I set out to find the second child of Khalindra. This has been my mission all the time and still is.~
 IF~~THEN REPLY~ I am much interested in her myself, so let us go and ask your father where she is.~ GOTO SanWantsSeeQi2
-IF~~THEN REPLY~ We will not blindly rush into Undermoutain to search for her, won't we?~GOTO SanWantsSeeQi2
+IF~~THEN REPLY~ We will not blindly rush into Undermountain to search for her, won't we?~GOTO SanWantsSeeQi2
 IF~~THEN REPLY~ What did your father mean with his last words?~ GOTO SanWantsSeeQi2
 END
 
@@ -636,7 +636,7 @@ FadeFromColor([30.0],0)~EXIT
 END
 
 IF~~ THEN BEGIN SanWantsSeeQi5
-SAY~ Can I give my father our oath that you have no intention to partake in your father's ressurection nor to harm my sister in any way?~
+SAY~ Can I give my father our oath that you have no intention to partake in your father's resurrection nor to harm my sister in any way?~
 IF~~THEN REPLY~ Yes, I swear it. By my love for you.~ DO~ SetGlobal("San25ChiQuest","GLOBAL",10)~GOTO SanWantsSeeQi6
 IF~~THEN REPLY~ Yes, I swear it. I owe you as much for your loyalty.~ DO~ SetGlobal("San25ChiQuest","GLOBAL",10)~GOTO SanWantsSeeQi6
 IF~~THEN REPLY~ I am not willing to give you such an oath.~ GOTO SanWantsSeeQi7
@@ -680,7 +680,7 @@ END
 
 IF~~ THEN BEGIN SanWantsSeeQi11
 SAY~ Given the location of the Temple at the slope of the mountain and using what little knowledge is available about the wast tunnels and caves the Meairkyn Clan dwarves have constructed so many ages ago, I deduct that the entrance will be high above the area called *Skullport*. ~
-=~It is reported that Qilue Veladorn herself founded the first temple for Eilistraee down there and it has developped into a temple complex called *The Promenade* which has become the home for many who have fled the Underdark and follow the Dark Sister now.~
+=~It is reported that Qilue Veladorn herself founded the first temple for Eilistraee down there and it has developed into a temple complex called *The Promenade* which has become the home for many who have fled the Underdark and follow the Dark Sister now.~
 IF~~THEN REPLY~ It would be the appropriate place for your sister according to your father's report.~ GOTO SanWantsSeeQi12
 END
 
@@ -695,7 +695,7 @@ IF~Global("SanSharInt","GLOBAL",38)~THEN BEGIN SanShSecCh1
 SAY~<CHARNAME>, it is time for me to remind you of something very beautiful and encouraging today - and a little journey once more to Waterdeep.~
 IF~~THEN REPLY~Eh, can we not do...do that here as well?~ GOTO SanShSecCh2
 IF~~THEN REPLY~Well, it's only a spell away, isn't it. A little surprise you prepared for me?~GOTO SanShSecCh2
-IF~~THEN REPLY~My counselor, you must surely have a reason for this completely inadequate timing, I presume.~GOTO SanShSecCh2
+IF~~THEN REPLY~My counsellor, you must surely have a reason for this completely inadequate timing, I presume.~GOTO SanShSecCh2
 END
 
 IF~~THEN BEGIN SanShSecCh2
@@ -736,8 +736,8 @@ IF~~THEN BEGIN EvilPrincFin4
 SAY~We knew that for a long time already, did we not?~
 =~No, what I pointed out is that you have more options than just those two.~
 =~You could destroy the essence and prevent any ursurper of Bhaal's Throne to succeed, including your dead *father* himself...~
-IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful with you?~ GOTO EvilPrincFin5
-IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful?~ GOTO EvilPrincFin5
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nightmare and live forever peaceful with you?~ GOTO EvilPrincFin5
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nightmare and live forever peaceful?~ GOTO EvilPrincFin5
 IF~~THEN REPLY~And become a power of the Realms myself, different from the heritage that has haunted me for so long?~GOTO EvilPrincFin6
 END
 
@@ -745,8 +745,8 @@ IF~~THEN BEGIN EvilPrincFin8
 SAY~We knew that for a long time already, did we not?~
 =~No, what I pointed out is that you have more options than just those two.~
 =~You could destroy the essence and prevent any ursurper of Bhaal's Throne to succeed, including your dead *father* himself...~
-IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful with you?~ GOTO EvilPrincFin9
-IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nighmare and live forever peaceful?~ GOTO EvilPrincFin9
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nightmare and live forever peaceful with you?~ GOTO EvilPrincFin9
+IF~~THEN REPLY~And return to a normal life afterwards - forget this whole nightmare and live forever peaceful?~ GOTO EvilPrincFin9
 IF~~THEN REPLY~And become a power of the Realms myself, different from the heritage that has haunted me for so long?~GOTO EvilPrincFin10
 END
 
@@ -763,29 +763,29 @@ END
 IF~~THEN BEGIN EvilPrincFin6
 SAY~What the Prime needs is Love and Hope - murder and war will exist without the aid of a God.~
 =~Who could be a better symbol for Love and Hope than one who is condemned as *Evil* by those who consider themselves superior and *Good*!!~
-IF~~THEN REPLY~Oh, no, you're not really asking me to become some Illmater type deity with the power I may gain!~EXIT
+IF~~THEN REPLY~Oh, no, you're not really asking me to become some Ilmater type deity with the power I may gain!~EXIT
 IF~~THEN REPLY~Oh, no, I'm surely fed up with all this celestial circus - all I want is a peaceful life for my own.~EXIT
 IF~~THEN REPLY~Become a deity of Love and Hope. Hm, I am afraid it will not be so easy. I can think of many that will oppose to that.~DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) SetGlobal("ConvinceBalth","GLOBAL",4) ~EXIT
-IF~~THEN REPLY~Sounds like you want to talk me out of the oportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
-IF~~THEN REPLY~I count on my counselor to help me find the adequate solution should any of these options really be within my reach.~ DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) SetGlobal("ConvinceBalth","GLOBAL",4) ~EXIT
+IF~~THEN REPLY~Sounds like you want to talk me out of the opportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
+IF~~THEN REPLY~I count on my counsellor to help me find the adequate solution should any of these options really be within my reach.~ DO~ChangeAlignment(Player1,CHAOTIC_NEUTRAL)SetGlobal("PPEvilChoices","GLOBAL",0) SetGlobal("PPGoodChoices","GLOBAL",1) SetGlobal("ConvinceBalth","GLOBAL",4) ~EXIT
 END
 
 IF~~THEN BEGIN EvilPrincFin10
 SAY~What the Prime needs is Love and Hope - murder and war will exist without the aid of a God.~
 =~Who could be a better symbol for Love and Hope than one who is condemned as *Evil* by those who consider themselves superior and *Good*!!~
-IF~~THEN REPLY~Oh, no, you're not really asking me to become some Illmater type deity with the power I may gain!~EXIT
+IF~~THEN REPLY~Oh, no, you're not really asking me to become some Ilmater type deity with the power I may gain!~EXIT
 IF~~THEN REPLY~Oh, no, I'm surely fed up with all this celestial circus - all I want is a peaceful life for my own.~EXIT
 IF~~THEN REPLY~Become a deity of Love and Hope. Hm, I am afraid it will not be so easy. I can think of many that will oppose to that.~DO~SetGlobal("ConvinceBalth","GLOBAL",4)~EXIT
-IF~~THEN REPLY~Sounds like you want to talk me out of the oportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
-IF~~THEN REPLY~I count on my counselor to help me find the adequate solution should any of these options really be within my reach.~ DO~SetGlobal("ConvinceBalth","GLOBAL",4)~EXIT
+IF~~THEN REPLY~Sounds like you want to talk me out of the opportunity to seize what is rightfully mine - the Throne of Bhaal.~EXIT
+IF~~THEN REPLY~I count on my counsellor to help me find the adequate solution should any of these options really be within my reach.~ DO~SetGlobal("ConvinceBalth","GLOBAL",4)~EXIT
 END
 
 //Sided with Balthasar
 CHAIN
 IF~Global("SanSidedBalt","LOCALS",1)~THEN CVSan25J WithBalt1
-~I am glad it has turned out this way, that you were able to convince Balthasar of your good intentions.~
+~I am glad it has turned out this way, that you were able to convince Balthazar of your good intentions.~
 DO~SetGlobal("SanSidedBalt","LOCALS",2)~
-==IF_FILE_EXISTS BLK#IYL IF~InParty("Iylos")~THEN~Counselor, my respect. You have surely had your influence on this unexpected outcome.~
+==IF_FILE_EXISTS BLK#IYL IF~InParty("Iylos")~THEN~counsellor, my respect. You have surely had your influence on this unexpected outcome.~
 ==CVSan25J IF~InParty("Iylos")~THEN~Unexpected? Was it not what you had hoped for all the time yourself?~
 ==IF_FILE_EXISTS BLK#IYL IF~InParty("Iylos")~THEN~Hoped for, yes, but I had expected worse...or maybe...my hopes had been rising all the time observing your counselling of <CHARNAME>.~
 ==CVSan25J IF~InParty("Iylos")~THEN~Do not belittle your own deeds in this matter, my friend.~
@@ -855,7 +855,7 @@ IF~~THEN CVSan25J AloundoToB7
 ~As always we have to ask ourself, who would gain the most, who has the largest interest that the story would be widely known?~
 END
 ++~Someone who wants to prevent the events to happen.~+ AloundoToB8
-++~The story seems to happen exactly like prophesised, at least until now.~+ AloundoToB8
+++~The story seems to happen exactly like prophesied, at least until now.~+ AloundoToB8
 
 CHAIN
 IF~~THEN CVSan25J AloundoToB8
@@ -869,7 +869,7 @@ IF~~THEN CVSan25J AloundoToB9
 ~There is only one issue about Bhaal having made his plan known to his progeny. It is a lie!~
 END
 ++~What do you mean now?~+ AloundoToB10
-++~*You were not born to replace, you are fuel for the return.* These were Bhaals words to me during Irenicus' ritual to steal my soul.~+ AloundoToB10
+++~*You were not born to replace, you are fuel for the return.* These were Bhaal's words to me during Irenicus' ritual to steal my soul.~+ AloundoToB10
 
 CHAIN
 IF~~THEN CVSan25J AloundoToB10

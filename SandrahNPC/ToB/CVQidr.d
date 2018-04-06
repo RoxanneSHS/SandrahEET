@@ -59,7 +59,7 @@ IF~Global("SanQuidPC","LOCALS",0) AreaCheck("CVUmo5") InParty("CVSandr")~THEN CV
 ==CVQidr~ (Faces you for some moments.) You are surely not the monster I have been hiding from for so long, still forgive me, <CHARNAME>, when I do not call you my <PRO_BROTHERSISTER>, even when we spawn from the same source whom neither of us calls *father* nonetheless.~
 END
 ++~You have nothing to fear from me, Qilandrha, I do not follow the dead god in the same way you reject him.~+ 2
-++~Your Bhaal essence would make you a wortwhile prey, equalled only by my own. It was right to hide from me as long as you had any doubt about my true intent.~+ 2
+++~Your Bhaal essence would make you a worthwhile prey, equalled only by my own. It was right to hide from me as long as you had any doubt about my true intent.~+ 2
 
 CHAIN
 IF~~ THEN CVQidr 2
