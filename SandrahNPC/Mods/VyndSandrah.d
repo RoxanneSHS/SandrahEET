@@ -8,7 +8,7 @@ DO~SetGlobal("Sanvyndheal","Global",4)~
 ==BGV#Vynd~Seems I got myself in a trap here, mistress.~
 ==BSandr~Not again, please, I am Sandrah and we are comrades in arms, are we not?~
 ==BGV#Vynd~(Sigh) It is hard to overcome the habit of how to behave in the presence of a strong dominant woman.~
-==BSandr~(Smiles) A drow matrone like me, you mean?~
+==BSandr~(Smiles) A drow matron like me, you mean?~
 ==BGV#Vynd~The skin is a little too rosy for that, I admit, otherwise...~ EXIT
 
 CHAIN
@@ -23,7 +23,7 @@ DO~SetGlobal("Sanvyndheal","Global",6)~
 ==BGV#Vynd~Is there a chance I've erred in you? You give me a chance to escape?~
 ==BSandr~(Laughs) Like a cat lets escape a mouse.~
 ==BGV#Vynd~(Sigh) I'm used to be a toy in cruel games...~
-==BSandr~I was never one of the girls who broke their toys, honestly, my doll was the first patient for my fledling healing skills.~EXIT
+==BSandr~I was never one of the girls who broke their toys, honestly, my doll was the first patient for my fledgling healing skills.~EXIT
 
 CHAIN
 IF WEIGHT #-1~Global("Sanvyndheal","Global",7)~THEN BGV#Vynd Domina3

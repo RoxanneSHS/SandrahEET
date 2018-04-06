@@ -2,13 +2,13 @@ CHAIN
 IF WEIGHT #-2~Global("SanZaiya","GLOBAL",1)~THEN ZaiyaJ SanZaiya1
 ~Your goddess, Mystra, she is not a friend of the wild mages, I imagine?~
 DO~SetGlobal("SanZaiya","GLOBAL",2)IncrementGlobal("ZDayOfCurse","LOCALS",-2)~
-==CVSandrJ~Why? Mystra, or rather Mystril who was before her, surely was the very first wild mage herself. That was before she learned about the many side effects of such an approach and learned about methods to focus and control the energies.~
+==CVSandrJ~Why? Mystra, or rather Mystryl who was before her, surely was the very first wild mage herself. That was before she learned about the many side effects of such an approach and learned about methods to focus and control the energies.~
 ==ZaiyaJ~Focussing and controlling as well implies the reduction of the true impact.~
 ==CVSandrJ~Yes and no - fact is, a wild mage does not really understand what the *true impact* is at all times.~
 =~It is the limited view of most people to think of the Weave only as a means to cast spells.~
 =~The Weave is in everything and around everything, it is the many energies and forces that exist around the planes.~
 =~Casting a spell is equivalent to telling the Weave to rearrange itself to create a specific effect. As a wild mage does not strictly specify the effect a randomness is created where the energy of the Weave arranges itself in some unexpected form - your curse is a sad example of it. ~
-==ZaiyaJ~A wild mage is channeling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
+==ZaiyaJ~A wild mage is channelling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
 ==CVSandrJ~It is no penalty, least of all one by Mystra, it is the natural consequence of the natural use you proclaim. You use more of a power than you can handle and the power plays its own tricks on you.~EXIT
 
 CHAIN
@@ -31,12 +31,12 @@ DO~SetGlobal("SanZaiya","GLOBAL",4)SetGlobal("SanHealZaiya","GLOBAL",3)~
 CHAIN
 IF WEIGHT #-2~Global("SanZaiya","GLOBAL",5)~THEN ZaiyaJ SanZaiya3
 ~You are the only female priest of Mystra I have ever met, Sandrah.~
-==KiaraJ~I was the only female at our monastry. Are priests of Mystra restricting the females in the same way?~
+==KiaraJ~I was the only female at our monastery. Are priests of Mystra restricting the females in the same way?~
 DO~SetGlobal("SanZaiya","GLOBAL",6)~
-==CVSandrJ~Your experience with disciples of my goddess must be just coincidence. There is no such rule at our temple. (Laughs) She was a priestess herself before her ascencion.~
+==CVSandrJ~Your experience with disciples of my goddess must be just coincidence. There is no such rule at our temple. (Laughs) She was a priestess herself before her ascension.~
 ==ZaiyaJ~A lot of things differ from where we come from.~
-==KiaraJ~I think you may just be priviledged because of your heritage.~
-==CVSandrJ~I have in deed once tried to step out of my father's mighty shadow and be recocgnized for my own deeds and achievements. Alongside <CHARNAME> I believe I have succeeded in this. I no longer feel my heritage is defining me alone, it has become just one of many aspects of my personality by now.~
+==KiaraJ~I think you may just be privileged because of your heritage.~
+==CVSandrJ~I have in deed once tried to step out of my father's mighty shadow and be recognized for my own deeds and achievements. Alongside <CHARNAME> I believe I have succeeded in this. I no longer feel my heritage is defining me alone, it has become just one of many aspects of my personality by now.~
 ==ZaiyaJ~The past has its ways to catch up with us regardless how far we move.~
 ==CVSandrJ~True - but it does not mean we let ourselves be haunted by its ghosts.~EXIT
 
@@ -56,7 +56,7 @@ DO~SetGlobal("SanKiZaBha","GLOBAL",3)~
 ==KiaraJ~One of them might one day be the new God of Murder.~
 ==CVSandrJ~This will not happen. My grandmother once prevented it and I will do the same with all my might.~
 ==KiaraJ~You, a little priestess of Mystra?~
-==CVSandrJ~It is prophesised that only a Bhaalspawn can prevent Bhaal's return. I will make sure that he or she is not alone in the final battle.~EXIT
+==CVSandrJ~It is prophesied that only a Bhaalspawn can prevent Bhaal's return. I will make sure that he or she is not alone in the final battle.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanKiZaBha","GLOBAL",4)~ THEN ZaiyaJ SanZaiya5
@@ -65,7 +65,7 @@ DO~SetGlobal("SanKiZaBha","GLOBAL",5)~
 ==CVSandrJ~My heart tells me otherwise, my friend. Every day I hear <CHARNAME>'s words and observe the deeds we accomplish. I trust my feelings absolutely.~
 ==KiaraJ~Can not love make us blind stumbling fools?~
 ==CVSandrJ~I do not deny it can. But I do not see this being the case here. We have accomplished so much together, more than could be reached by deceit. And I share many thoughts with <CHARNAME> to know what the motifs and reasons for those deeds are.~
-==KiaraJ~And if one day you netvertheless find you have erred?~
+==KiaraJ~And if one day you nevertheless find you have erred?~
 ==ZaiyaJ~Ooh...~
 ==CVSandrJ~Bhaal will not return - never.~EXIT
 
@@ -74,14 +74,14 @@ IF WEIGHT #-2~Global("SanInterKiara","LOCALS",1)~THEN BKiara SanInterest1
 ~You spent a long time with <CHARNAME> already, counselling and hindering... still protecting and helping to survive.~
 DO~SetGlobal("SanInterKiara","LOCALS",2)~
 ==BSandr~I would agree to most of what you said - maybe I misunderstood that issue about *hindering*.~
-==BKiara~You know that <CHARNAME> by bloodright is destined to lead and to rule.~
+==BKiara~You know that <CHARNAME> by blood-right is destined to lead and to rule.~
 ==BSandr~<CHARNAME> leads this group through all our encounters and against foe that are not insignificant - including the foe within.~
 ==BKiara~You call the Bhaalpower a foe within?~
-==BSandr~A potential foe - it is also the source of great power and leadership. It can work in many ways, not just in the way intended by the dead God of Murder. But there may be foe within this group who councel much different from the way I do.~
+==BSandr~A potential foe - it is also the source of great power and leadership. It can work in many ways, not just in the way intended by the dead God of Murder. But there may be foe within this group who counsel much different from the way I do.~
 ==BKiara~Are you accusing me of such intention?~
-==BSandr~You are ambitous and you know you can rise high yourself together with <CHARNAME>. There is much potential that can be used in one way or another. I admit my love and my plans for our Bhaalspawn may be similar or contradicting to yours.~
+==BSandr~You are ambitious and you know you can rise high yourself together with <CHARNAME>. There is much potential that can be used in one way or another. I admit my love and my plans for our Bhaalspawn may be similar or contradicting to yours.~
 ==BKiara~Go on.~
-==BSandr~<CHARNAME> and our common fate will shape the Realms significantly. The outcome and the direction are still open. You say I am a hinderance? Only on one of the paths - I am a faithful supporter on the other one.~
+==BSandr~<CHARNAME> and our common fate will shape the Realms significantly. The outcome and the direction are still open. You say I am a hindrance? Only on one of the paths - I am a faithful supporter on the other one.~
 ==BKiara~You have made your choice...(sigh)...I wish everything would be so clear for all involved...~
 ==BSandr~If you have a choice to make, do so wisely. You will meet strong opposition if you want to corrupt what is dear to me and try to open dark portals that lead to - destruction. (Yours and my beloved one's...)~  EXIT
 

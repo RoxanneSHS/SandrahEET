@@ -44,12 +44,12 @@ IF WEIGHT #-5 ~ Global("LK#XulSandrah","LOCALS",4)~ THEN BLK#XUL XulSandra3
  DO ~SetGlobal("LK#XulSandrah","LOCALS",5)RealSetGlobalTimer("SanDelayt","LOCALS",800)~
 == BSandr~ Your position here is as dangerous as mine, Xulaye, so do not waste your breath in attempts to threaten me. Your ambitions go beyond the downfall of your sister Phaere - they threaten your matron mother as well.~
 ==BLK#XUL~Ha, who would believe you, a no name from Ched Nasad who sneaks in here with her pale slaves in a foolish disguise...~
-== BSandr~ Seems we have reached a stalemate here. You are intelligent enough to understand this yourself. I will not reveal my plans to you as I do not further investigate yours. All we need to agree on is that we have a common goal in the removal of your sister and the matron. Having succeeded I will not stand in your way to take reign of this city as long as you do not hinder me to fulfill my mission here.~
+== BSandr~ Seems we have reached a stalemate here. You are intelligent enough to understand this yourself. I will not reveal my plans to you as I do not further investigate yours. All we need to agree on is that we have a common goal in the removal of your sister and the matron. Having succeeded I will not stand in your way to take reign of this city as long as you do not hinder me to fulfil my mission here.~
 ==BLK#XUL~How am I to accept this without knowing your goal?~
 == BSandr~We have no interest in who rules Ust Natha and you will not see us again once we have left. What will you gain from exposing us other than to draw all questioning eyes onto yourself as well? Even if our outsider's accusations cannot prove your guilt against your matron they will leave a large stain of doubt on your loyalty.~
 ==BLK#XUL~Your coming here coincides with the appearance of that mysterious mage and his pale sister recently...it's those you are after, right?~
 == BSandr~We are natural allies for the time being, accept this as a fact. Anything else would only harm both of us.~
-==BLK#XUL~You're powerful enough to be usefull...and...I can still use the emergency break if I need it.~EXIT
+==BLK#XUL~You're powerful enough to be useful...and...I can still use the emergency break if I need it.~EXIT
 
 CHAIN
 IF WEIGHT #-10 ~ NumTimesTalkedTo(0) OR(2)Dead("Solaufein")Global("SolaufeinJob","GLOBAL",7) InParty("Xulaye") !StateCheck("Xulaye",CD_STATE_NOTVALID) InParty("CVSandr")~THEN UDSvir08 SanOveruleXul
@@ -58,7 +58,7 @@ IF WEIGHT #-10 ~ NumTimesTalkedTo(0) OR(2)Dead("Solaufein")Global("SolaufeinJob"
 ==UDSvir08~Alarm!! De ston fall duth nada!! ~
 ==CVSandrJ~ Silence! You have done your duty to Lolth, Xulaye, now let us apply the solution that is best for all.~
 ==LK#Xulj~You dare to...~
-==CVSandrJ~No further discussion in front of those gnomes. Let veldrin handle the case of this inferior race, it is beyond our skills to deal with such trifles.~
+==CVSandrJ~No further discussion in front of those gnomes. Let Veldrin handle the case of this inferior race, it is beyond our skills to deal with such trifles.~
 ==LK#Xulj~Servant, deal with this gnome scum!~
 END
 ++~Stand, gnomes!~EXTERN UDSvir08 3

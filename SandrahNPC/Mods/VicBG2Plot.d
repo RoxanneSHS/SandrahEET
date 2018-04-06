@@ -120,7 +120,7 @@ CHAIN
 IF ~~THEN  Corgeig VicHint2
 ~Yes, I have no doubt in your loyalty to her. You must understand that your words slightly impress me but we need more evidence in such a grave case. The wife of one of our highest nobles has been murdered.~
 ==CVSandrJ~Can you provide us with the facts that led you to accuse Viconia? Maybe our experience and knowledge of her background can shed a new light on the things.~
-==Corgeig~Why not, mylady, at least you are persons of some reputation.~
+==Corgeig~Why not, my lady, at least you are persons of some reputation.~
 =~Lorena Balthis was murdered in her estate in the Bridge District two nights ago.~
 ==CVSandrJ~As it does not help much to say that we - including Viconia - were far from the scene, what other details can you provide?~
 ==Corgeig~She was slain from behind with a drow katana...~

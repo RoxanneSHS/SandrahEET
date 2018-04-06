@@ -55,18 +55,18 @@ DO~SetGlobal("SanHealValri","GLOBAL",8)~
 
 CHAIN
 IF WEIGHT #-2~Global("SanHealValri","GLOBAL",11)~THEN BT2Val Sanheal5
-~(Sandrah sits at a table in the inn studying her toom, a glass of burgundy red thick wine next to her, fingers caressing thoughfully the stem of the glass.)~
+~(Sandrah sits at a table in the inn studying her toom, a glass of burgundy red thick wine next to her, fingers caressing thoughtfully the stem of the glass.)~
 DO~SetGlobal("SanHealValri","GLOBAL",12)~
 ==BT2Val~Sandrah, I never would have guessed to see you in a desperate mood...you of all people I know.~
 ==BSandr~(Irritated) Eh? What do you mean, Valerie?~
 ==BT2Val~You surely have observed me taking a glass or two to calm my nerves after one of those disturbing days we spent at <CHARNAME>'s side. But you??~
 ==BSandr~(Laughs) Oh, you are mistaken, my friend. This is an excellent cuvee from a very good year - I drink it just for its taste...(laughs) if at all, it helps me to digest this rather dry material I study tonight.~
 =~Get yourself a glass, dear, you should not miss it, it is not easy to find such stuff in the places we rest and dine these days.~
-==BT2Val~I am relived, I'd rather have you as a conaisseur sharing a nice experience with me than as a drinking companion to share gloomy views on our current situation.~EXIT
+==BT2Val~I am relived, I'd rather have you as a connoisseur sharing a nice experience with me than as a drinking companion to share gloomy views on our current situation.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanHealValri","GLOBAL",13)~THEN BT2Val Sanheal6
-~Sandrah, sometimes I think you could conquer all of Fearun with your charm and your beauty. ~
+~Sandrah, sometimes I think you could conquer all of Faerun with your charm and your beauty. ~
 DO~SetGlobal("SanHealValri","GLOBAL",14)~
 ==BSandr~(Sighs) I wish I could accomplish our current mission by those means - but I'm afraid I need to revert to my hammer and offensive spells even more often.~
 ==BT2Val~They rarely fail even if they overshadow your nicer sides at times.~
@@ -86,6 +86,6 @@ IF WEIGHT #-2~Global("ValJenB","LOCALS",2)~THEN BT2Val JenDuty
 DO~SetGlobal("ValJenB","LOCALS",3)~
 ==BJenli~Jen'lig need restore honor of her city and race. Thief with sword will disgrace all githyanki by use for evil deeds.~
 ==BT2Val~I follow Toril's god of duty, obedience, and loyalty. Can you really be an evil creature when you follow the same principles?~
-==BJenli~Manling sorceress cites main principles of githyanki. (Hiss) Why manling need god for what is inside every trueblood creature? Manlings too weak without their god crutches?~
+==BJenli~Manling sorceress cites main principles of githyanki. (Hiss) Why manling need god for what is inside every true blood creature? Manlings too weak without their god crutches?~
 ==BT2Val~Spare me your blasphemies - I was mistaken to think we could find common ground in why we both have come from far places to the Sword Coast.~
 ==BJenli~ Common ground is duty. Common ground not has need for gods. (Hiss!)~EXIT
