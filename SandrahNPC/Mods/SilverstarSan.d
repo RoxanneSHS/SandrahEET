@@ -2,7 +2,7 @@ CHAIN
 IF WEIGHT #-4~Global("SanSilvrheal","GLOBAL",5)~THEN BSilver SanHealSilv1
 ~You know much about people's physique. You would make a great torturer - you know how to hurt without killing. (Silverstar's eyes are locked to Sandrah's.)~
 DO~SetGlobal("SanSilvrheal","GLOBAL",6)RealSetGlobalTimer("SanSilvrInt","LOCALS",2000)~
-==BSandr~(Sandrah returns the gaze emotionlessly) Yes, I know where and how deep I would need to cut to give you endless agony but not the relief of unconciousness. I could poison your body to endure boundless pain and then cure you anytime for a new start if I wanted to. And I would let you know that only my will would allow the pain to end, not your begging and screaming. ~
+==BSandr~(Sandrah returns the gaze emotionless) Yes, I know where and how deep I would need to cut to give you endless agony but not the relief of unconsciousness. I could poison your body to endure boundless pain and then cure you any-time for a new start if I wanted to. And I would let you know that only my will would allow the pain to end, not your begging and screaming. ~
 ==BSilver~Enough - I believe you even though you have lamb's eyes.~
 =~Your bloody words don't matter to me. You offend me with your eyes. I see too much clarity in them; I see what you are and what you want with me.~EXIT
 

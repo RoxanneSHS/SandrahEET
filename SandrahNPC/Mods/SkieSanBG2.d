@@ -2,7 +2,7 @@ CHAIN
 IF WEIGHT #-3~Global("SanHealSkie","GLOBAL",3)~THEN 1xSkieb Sandrah1
 ~Brilliant, a healer with your skills makes life of an adventurer a bit more bearable.~
 DO~SetGlobal("SanHealSkie","GLOBAL",4)RealSetGlobalTimer("SanSkieT","LOCALS",2000)~
-==BSandr~This life of an adventurer is what you chose over the dull life of the aristocracy on the Sword Coast, *mylady*.~
+==BSandr~This life of an adventurer is what you chose over the dull life of the aristocracy on the Sword Coast, *my lady*.~
 ==1xSkieb~Ah, well...that is no excuse for the dirt and inconvenience and...the hurt and blood.~
 ==BSandr~I like comfort and a warm bath myself, when the time for it is right. If we cannot have that every single day on the road, we have no one but ourselves to blame.~
 ==1xSkieb~Ah, but how practical to have one with your abilities in the group. Even better - you know how a well manicured toe nail needs to look like - see, not like this one right here.~
@@ -17,15 +17,15 @@ DO ~ SetGlobal("SanHealSkie","GLOBAL",6)RealSetGlobalTimer("SanSkieT","LOCALS",2
 ==1xSkieb~ Must you REALLY display your beauty and wealth in such a SHAMELESS way, Sandrah?~
 ==BSANDR~ Shameless? Yes, if you mean to say that I am neither ashamed of my beauty nor of my wealth than you are correct. I have gained none of them by exploiting poor peasants or robbing honest people.~
 ==1xSkieb~ Are you implying that's how my family came to its status and wealth!~
-==BSANDR~ Not all of the rich make their thieving as obvious as you do. Many of them do not waste their time with the few coins they can grab by burglering simple locks.~
+==BSANDR~ Not all of the rich make their thieving as obvious as you do. Many of them do not waste their time with the few coins they can grab by burgling simple locks.~
 ==1xSkieb~Who must be silly, girl, to accuse the rich of stealing when you dress up in a gown worth more than needed to feed a poor large family for over a year.~
 =~Did you ever think of the poor seamstress who had to spend endless hours of labour in an ill lit cold chamber to manufacture it?~
-==BSANDR~ The woman who made it, a lone mother of six children by the way, spent onehundred and seven days to make it. Take a look, every stitch is perfect - it really is more than a gown, it is a work of art.~
+==BSANDR~ The woman who made it, a lone mother of six children by the way, spent one hundred and seven days to make it. Take a look, every stitch is perfect - it really is more than a gown, it is a work of art.~
 ==1xSkieb~ You're the worst kind of hypocrite I ever encountered!~
 ==BSANDR~ The woman received a payment that let herself and her children live well for two whole years.  In addition, her reputation in Waterdeep became such that she never runs out of customers now and last time I met her she had engaged two young neighbour girls for her assistance with all the orders she receives.~
 ==1xSkieb~ You try to convince me that your vanity is really charity in disguise?~
 ==BSANDR~ An example of a fair deal I would call it. When she saw me wearing the gown one day at the Waterdeep temple she was beaming with pride and told me I was exactly matching the vision she had of how it would look when worn that she had during the production.~
-==1xSkieb~ (Skie probes Sandrah's sleeve with her fingertips.) The fabrique is fantastic - it is indeed a work of art. You look wonderful in it.~ DO~RestParty()~
+==1xSkieb~ (Skie probes Sandrah's sleeve with her fingertips.) The fabricate is fantastic - it is indeed a work of art. You look wonderful in it.~ DO~RestParty()~
 EXIT
 
 CHAIN
@@ -57,7 +57,7 @@ IF WEIGHT #-3~ Global("SanHealSkie","GLOBAL",12) ~ THEN 1xSkieb SandrahL1
 ~Your choice in men is much smarter than mine, Sandrah.~
 DO ~ SetGlobal("SanHealSkie","GLOBAL",13)RealSetGlobalTimer("SanSkieT","LOCALS",2000)~
 ==BSANDR~In case you refer to your past experience, I tend to agree, but if you refer to your present interest I cannot say he is a bad choice.~
-==1xSkieb~Not the man himself...maybe the trouble I get myself into should I persue that romance, eh?~
+==1xSkieb~Not the man himself...maybe the trouble I get myself into should I pursue that romance, eh?~
 ==BSANDR~Do you mean the trouble to get involved with a Bhaalspawn or the trouble to show interest in another woman's lover.~ DO~AddSpecialAbility("cvknok")AddSpecialAbility("cvtrap")~
 ==1xSkieb~YOU would not constrain yourself due to such considerations, am I right.~
 =~...eh...~
@@ -70,7 +70,7 @@ DO~SetGlobal("DesignItem","LOCALS",2) ~
 ==BSANDR~(Blushes) I love them - and I guess with this confession my reputation as heroine of the Sword Coast is ruined forever.~
 ==1xSkieb~Oh, why? Not at all, not at all. The first thing I admired when I saw you was your style - and now that I got to know you better, on the road and on the battlefield..., well, I admire you even more and how you are able to maintain that standard.~
 =~You look just sooo great in armour just as you do in the evenings in your gowns and high heels.~
-==BSANDR~For once you are right - I do not try to hide my faible for fashionable clothes and I should not be ashamed for it. I am what I am.~
+==BSANDR~For once you are right - I do not try to hide my liking for fashionable clothes and I should not be ashamed for it. I am what I am.~
 ==1xSkieb~You are the person to understand best of all that we MUST find those gems for my designer, you do? Don't you?~
 ==BSANDR~It is no big issue to produce those few gems - and appreciate a fantastic fashion show as a reward. (Looks at you) I had little chance for this hobby since I travel with <CHARNAME>.~
 END
@@ -81,7 +81,7 @@ END
 
 CHAIN
 IF~~THEN BSANDR SandrahL2b
-~I have a pearl, a diamond and a rogue stone in my jewelry collection. I can access them with my parcel any time if you want me to. Otherwise we need to get hold of the thief before he can make it past the city gates and escapes into the wide land of Amn.~EXIT
+~I have a pearl, a diamond and a rogue stone in my jewellery collection. I can access them with my parcel any time if you want me to. Otherwise we need to get hold of the thief before he can make it past the city gates and escapes into the wide land of Amn.~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("DesignItem","LOCALS",3) ~ THEN 1xSkieb SandrahL2a
@@ -90,7 +90,7 @@ DO~SetGlobal("DesignItem","LOCALS",4) ~
 ==BSANDR~(Blushes) I love them - and I guess with this confession my reputation as heroine of the Sword Coast is ruined forever.~
 ==1xSkieb~Oh, why? Not at all, not at all. The first thing I admired when I saw you was your style - and now that I got to know you better, on the road and on the battlefield..., well, I admire you even more and how you are able to maintain that standard.~
 =~You look just sooo great in armour just as you do in the evenings in your gowns and high heels.~
-==BSANDR~For once you are right - I do not try to hide my faible for fashionable clothes and I should not be ashamed for it. I am what I am.~
+==BSANDR~For once you are right - I do not try to hide my liking for fashionable clothes and I should not be ashamed for it. I am what I am.~
 ==1xSkieb~You are the person to understand best of all that we HAD find those gems for my designer, you do? Don't you?~
 ==BSANDR~Too bad your friend in his excitement forgot to invite us to a fantastic fashion show as a reward. (Looks at you) I had little chance for this hobby since I travel with <CHARNAME>.~
 END
@@ -107,4 +107,4 @@ DO~SetGlobal("SkieRomanceC6","GLOBAL",4)~
 ==1xSkiej~You hear that, my love? There are no things your pregnant woman can't do with the Realm's best healer close at hand, right?~
 END
 ++~I'm not foolish enough to object two determined women, be assured...~ EXIT
-++~We will make marvelous parents! I'm sure of that! Nothing will go wrong with this company protecting you and the baby.~ EXIT
+++~We will make marvellous parents! I'm sure of that! Nothing will go wrong with this company protecting you and the baby.~ EXIT

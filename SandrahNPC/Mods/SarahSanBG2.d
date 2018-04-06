@@ -18,7 +18,7 @@ IF WEIGHT #-2~Global("SanSarahR","GLOBAL",3)~ THEN K#SarahB Forestlove2
 ~I have to confess one of my many errors about you, Sandrah.~
 DO~SetGlobal("SanSarahR","GLOBAL",4) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
 ==BSandr~(Smiles and turns to Sarah with Pelligram standing beside her rubbing her nose on Sandrah's thigh. The large cat purrs lowly in rhythm to the gentle strokes she receives between her ears.)~
-==K#SarahB~When I first saw you and Pelligram I was really shocked. I thought I saw a rich and beautiful girl using a proud and strong animal as her pet like it was just another stylish assesoire to show her own wealth.~
+==K#SarahB~When I first saw you and Pelligram I was really shocked. I thought I saw a rich and beautiful girl using a proud and strong animal as her pet like it was just another stylish accessory to show her own wealth.~
 ==BSandr~You are excellent with your bow, Sarah, but your judgement on people surely misfires completely all the time. Pelligram is my companion and friend if such words are adequate to describe the relationship between man and animal.~
 ==K#SarahB~You are very precise with your words, you avoid to impose our feelings of love and friendship onto other creatures.~
 ==BSandr~Still it is what I feel for her even if I cannot anticipate her motifs to stay with me. It is surely not the dependency by which some other animal companions may be bound to a human that makes her my companion. At least I am not her master or anything alike.~
@@ -46,7 +46,7 @@ DO~SetGlobal("SanSarahR","GLOBAL",6) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 = ~I suppose you are right.  I cannot possibly know how things would have turned out. No sense in wondering "what if", is there?~
 = ~I do miss him, though.  I loved him more than anyone else in this world. He was an amazing man, and I can only hope that I'll become half the person he was.~
 = ~Even when we were at our worst, he never abandoned, never lost hope.~
-==BSandr~He sounds like he was a good man, Sarah. But you are a good woman, and I see you as being just as honest, just as hardworking, and just as persistant as what you have just described your father to be. I believe you will never abandon, Sarah, just as you are now with friends who will never abandon you.~
+==BSandr~He sounds like he was a good man, Sarah. But you are a good woman, and I see you as being just as honest, just as hard working, and just as persistent as what you have just described your father to be. I believe you will never abandon, Sarah, just as you are now with friends who will never abandon you.~
 ==K#SarahB~That...it means a lot to me to hear you say this...oh...you got me rambling again...~EXIT
 
 CHAIN
