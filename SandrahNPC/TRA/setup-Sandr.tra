@@ -37,7 +37,7 @@ Today I met a young woman named Sandrah at the site of Gorion's murder. She clai
 
 @13 = ~A Demonic Scroll
 
-When we met the old mage Firebead today, he handed a strange Scroll to Sandrah. Only part of it is readable and it has a demonic aura with it. Sandrah will keep it until we eventually meet her father during our travels, as Firebead assumes that he may know more about the artifact. ~
+When we met the old mage Firebead today, he handed a strange Scroll to Sandrah. Only part of it is readable and it has a demonic aura with it. Sandrah will keep it until we eventually meet her father during our travels, as Firebead assumes that he may know more about the artefact. ~
 @14 = ~Demonic Scroll ~
 @15 = ~Demonic Scroll ~
 @16 = ~"...need it if...go there where water roars and wolves howl...uninvited and fear the wrath of the mighty Alza...."
@@ -45,14 +45,14 @@ When we met the old mage Firebead today, he handed a strange Scroll to Sandrah. 
 Most of the scroll you have received from the mage Firebead is unreadable from stains of dried blood. Sandrah has noted that the scroll is probably of demonic origin and has decided to keep it until either she or her father can find out more about it.~
 @17 = ~A Demonic Scroll
 
-Sandrah has studied the mysterious scroll a bit and found that it may - among other things - open some portal for or to someone named Alzaligundrel. We have no idea where this portal is nor what may lie behind it. We can only hope to gather more knowledge about the whole thing in the future.~
+Sandrah has studied the mysterious scroll a bit and found that it may - among other things - open some portal for or to someone named Alzaligrundel. We have no idea where this portal is nor what may lie behind it. We can only hope to gather more knowledge about the whole thing in the future.~
 
 @18 = ~Rock~
 @19 = ~Rock~
 @20 = ~This is a large stone. There is nothing special about this piece of rock.~
 @21 = ~A Demonic Scroll
 
-Sandrah has found another bit of information from our mysterious scroll. Someone named Alzaligundrel is the master of this scroll. He has an archenemy in some mountains in the south. The enemy's lair seems to be near falling water. So what? All of it is still too vague to divert us from our task. I am waiting for Sandra or her father to find out more.~
+Sandrah has found another bit of information from our mysterious scroll. Someone named Alzaligrundel is the master of this scroll. He has an arch-enemy in some mountains in the south. The enemy's lair seems to be near falling water. So what? All of it is still too vague to divert us from our task. I am waiting for Sandra or her father to find out more.~
 @22 = ~ The demonic scroll in your inventory seems to come alive.
 Maybe it has detected the portal is near. You should converse with the damned thing.~
 @23 = ~Gift of Mystra ~
@@ -61,36 +61,36 @@ Maybe it has detected the portal is near. You should converse with the damned th
 
 This longsword was left at Candlekeep by a young unknown female cleric who seemed to have just missed you. The innkeeper told you that * the hero to be its owner* would notice its use when he sees it. ~
 
-@26 = ~Alzaligundrel ~
-@27 = ~Alzaligundrel ~
+@26 = ~Alzaligrundel ~
+@27 = ~Alzaligrundel ~
 @28 = ~Naronguth ~
 @29 = ~Naronguth ~
 @30 = ~Naronguth's Scroll ~
 @31 = ~Naronguth's Scroll ~
 @32 = ~Naronguth's Scroll
 
-This scroll seems to be the counterpart of the demonic scroll you received from Firebead. Sandrah assumes that you need both parts to open the portal to Alzaligundrel ~
+This scroll seems to be the counterpart of the demonic scroll you received from Firebead. Sandrah assumes that you need both parts to open the portal to Alzaligrundel ~
 @33 = ~Elminster's Shard ~
 @34 = ~Elminster's Shard ~
 @35 = ~Elminster's Shard
 
 Elminster's famous tool, often referred to during your journeys with Sandrah. You can see any part of Faerun you want as through a large telescope. Sometimes even an event in the future becomes visible - for those who know how to use it. But even the Great Mage's own daughter cannot operate the tool for your use - or so she claims.~
-@36 = ~Alzaligundrel's Heart ~
-@37 = ~Alzaligundrel's Heart~
-@38 = ~Alzaligundrel's Heart
+@36 = ~Alzaligrundel's Heart ~
+@37 = ~Alzaligrundel's Heart~
+@38 = ~Alzaligrundel's Heart
 
-You tore that bleeding black heart from the defeated Demon Alzaligundrel who disguised himself as a blue dragon. Naronguth has promised to give you back Elminster's Shard in return for it.~
+You tore that bleeding black heart from the defeated Demon Alzaligrundel who disguised himself as a blue dragon. Naronguth has promised to give you back Elminster's Shard in return for it.~
 @39 = ~Fake Demon Heart ~
 @40 = ~Fake Demon Heart~
 @41 = ~Fake Demon Heart
 
-The Demon Alzaligundrel has given you this fake instead of his own heart. Naronguth has promised to give you back Elminster's Shard in return for Alzaligundrel's Heart. 
+The Demon Alzaligrundel has given you this fake instead of his own heart. Naronguth has promised to give you back Elminster's Shard in return for Alzaligrundel's Heart. 
 Do you dare to trick the mighty demon with this false one?~
 @42 = ~A Demonic Scroll - A Deal
 
-We have received the second half of the portal scroll to Alzaligundrel's lair. In order to save our lives, health and Sandrah's freedom we have made a strange deal with the demon Naronguth. We must bring him Alzaligundrel's Heart in exchange for Elminster's Shard. ~
-@43 = ~Demonknight ~
-@44 = ~Demonknight ~
+We have received the second half of the portal scroll to Alzaligrundel's lair. In order to save our lives, health and Sandrah's freedom we have made a strange deal with the demon Naronguth. We must bring him Alzaligrundel's Heart in exchange for Elminster's Shard. ~
+@43 = ~Demon knight ~
+@44 = ~Demon knight ~
 @45 = ~You inspect the waterfall that the demonic knight has guarded a bit closer.~
 @46 = ~You remember what the mysterious scroll told you. Here is water, cloud peaking mountains...~
 @47 = ~You see the rocks at the right side. -   It looks like an entrance there.
@@ -115,7 +115,7 @@ It looks like it has something urgent to say.~
 @58 = ~A Demonic Scroll 
 - Playing Tricks
 
-The Demon Alzaligundrel has given you a fake instead of his own heart.
+The Demon Alzaligrundel has given you a fake instead of his own heart.
 We hope to trick the mighty demon Naronguth with this false to regain Elminster's shard. His own daughter Sandrah assures me that we have made the right decision. We can only hope the best now.~
 @59 = ~Naronguth's Guard ~
 @60 = ~Naronguth's Guard ~
@@ -205,21 +205,21 @@ This worn and torn roadmap shows an old forgotten road from the Friendly Arm to 
 @95 = ~With the help of the old map you can find the forgotten road to Waterdeep.
 Move to the western part of the area.~
 @96 = ~We have found the start of the Old Waterdeep Road between the rocks and trees.~
-@97 = ~Hilath's Baby ~
-@98 = ~Hilath's Baby ~
-@99 = ~Hilath's Baby
+@97 = ~Hillath's Baby ~
+@98 = ~Hillath's Baby ~
+@99 = ~Hillath's Baby
 
-You have rescued Hilath's baby from the bandit Khattark. You must quickly return it to the mother as it is already crying for milk.~
+You have rescued Hillath's baby from the bandit Khattark. You must quickly return it to the mother as it is already crying for milk.~
 @100 = ~Dead Baby ~
-@101 = ~Hilath's Dead Baby ~
-@102 = ~Hilath's Dead Baby
+@101 = ~Hillath's Dead Baby ~
+@102 = ~Hillath's Dead Baby
 
-Your attempt to rescued Hilath's baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
+Your attempt to rescued Hillath's baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
 @103 = ~ No, my husband...
          This bandit Khattark, he has the baby!~
 @104 = ~Khattark - the Bandit
 
-We have saved Hilath's baby from the bandit Khattark. But we had to make a deal for the baby's rescue and Khattark himself could escape. He may try to hide in Waterdeep and continue his assaults on the town from his nest. We feel obliged to search for him when we get to town.~
+We have saved Hillath's baby from the bandit Khattark. But we had to make a deal for the baby's rescue and Khattark himself could escape. He may try to hide in Waterdeep and continue his assaults on the town from his nest. We feel obliged to search for him when we get to town.~
 
 @105 = ~Khattark - the Bandit
 
@@ -228,7 +228,7 @@ We have killed the bandit Khattark today, but the rest of his gang may still be 
 @107 = ~After a long odyssey in the wilderness we finally found our way back to the Friendly Arm.~
 @108 = ~The Failed Journey to Waterdeep
 
-Sandrah had invited us to her father's house in Waterdeep. On the road we encountered a frightening bandit leader who had kidnapped a child. I refused to interfer myself, and proposed to leave the case to the Waterdeep militia. Sandrah has left my group without a word and went to help the poor child's mother and to restore her reputation in her hometown. Without Sandrah and her map we could not travel on to Waterdeep. After a long odyssey in the wilderness we finally found our way back to the Friendly Arm. Will I ever see Sandrah again?~
+Sandrah had invited us to her father's house in Waterdeep. On the road we encountered a frightening bandit leader who had kidnapped a child. I refused to interfere myself, and proposed to leave the case to the Waterdeep militia. Sandrah has left my group without a word and went to help the poor child's mother and to restore her reputation in her home town. Without Sandrah and her map we could not travel on to Waterdeep. After a long odyssey in the wilderness we finally found our way back to the Friendly Arm. Will I ever see Sandrah again?~
 @109 = ~Maitre De ~
 @110 = ~Maitre De ~
 @111 = ~A Book for Finch
@@ -269,7 +269,7 @@ From the look this seems to be a pair comfortable, attractive shoes, you'll neve
 @131 = ~ When Naronguth put on Elminster's Entangled Slippers and tried to attack you, he stumbled badly and went down in a ball of fire.~
 @132 = ~Old Waterdeep Road
 
-Today we have learned from Sandrah about the Old Waterdeep Road, a mystic trail from the Sword Coast to the City of Splendor used in older times. To find and travel it, one needs a special map. Sandrah suggested that the old couple that runs the Friendly Arm may know more about it.~
+Today we have learned from Sandrah about the Old Waterdeep Road, a mystic trail from the Sword Coast to the City of Splendour used in older times. To find and travel it, one needs a special map. Sandrah suggested that the old couple that runs the Friendly Arm may know more about it.~
 @133 = ~Elminster's Daughter
 
 Today I finally discovered part of my companion's mystery:
@@ -447,7 +447,7 @@ And it looks that me and my group have a part in that scheme without our knowled
 Clarissa Bloomwhiffler, a relative of Finch in Waterdeep has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch is delighted of this special gift for her library and would not part with it under any circumstances.~
 @213 = ~A Strange Piece of Cloth - Reconstructed
 
-During your travels all over the Sword Coast, you and Sandrah have found three pieces of a strange cloth in various places. With the third piece in hand, you are finally able to reconstruct it. The reconstruction has given Sandrah the necessary clues. It is a bedcloth from Elminster's and Khalindra's household. 
+During your travels all over the Sword Coast, you and Sandrah have found three pieces of a strange cloth in various places. With the third piece in hand, you are finally able to reconstruct it. The reconstruction has given Sandrah the necessary clues. It is a bed cloth from Elminster's and Khalindra's household. 
 Obviously it was used for Khalindra's second baby, the Bhaalspawn, during the time when it travelled from Waterdeep to an unknown destination in order to hide it from several groups of pursuers. 
 But why this was done? 
 Who were the pursuers?  
@@ -501,11 +501,11 @@ I am convinced by now that Sandrah's and my own stories are entwined. There is a
 @242 = ~ Khalindra's Baby ~
 @243 = ~ Khalindra's Baby
 
-You hold a replica of Khalindra's baby in your arm. It is wrapped in a bedcloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
+You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
 
 @244 = ~ Khalindra's Baby
 
-You hold a replica of Khalindra's baby in your arm. It is wrapped in a bedcloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You see that the baby was a little girl.~
+You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You see that the baby was a little girl.~
 @245 = ~ A keystone is required to pass to the lower level.~
 @246 = ~ Keystone Part ~
 @247 = ~ Left Keystone Part ~
@@ -519,12 +519,12 @@ Henning has been badly injured by Knawlod. Sandrah suggests, that only her fathe
 @253 = ~ Travenhurst's Purse~
 @254 = ~ Travenhurst's Purse
 
-This bag containing 9500GP was found on the dead kidnapper Knawlod, who had worked for the Beregost nobleman Gerard Travenhurst. The bag has the family emblem and the seal of Travenhurst on it. 
+This bag containing 9500GP was found on the dead kidnapper Knowlod, who had worked for the Beregost nobleman Gerard Travenhurst. The bag has the family emblem and the seal of Travenhurst on it. 
 It will be evidence for the involvement of the council member in the Iron Throne's intrigues on the Sword Coast as well as his role in the kidnapping of Henning. 
 The major of Beregost will have a large interest in this item. 
 Or maybe you and Imoen want to confront the *nobleman* yourself?~
 @255 = ~Gerard Travenhurst~
-@256 = ~Housegard~
+@256 = ~Houseguard~
 @257 = ~ Journal~
 @258 = ~ Travenhurst's Journal~
 @259 = ~ Travenhurst's Journal
@@ -549,7 +549,7 @@ This deed certifies the ownership of the house and grounds at Beregost known as 
 @267 = ~This ring gives immunity to all spells, attacks and detections for permanently invisible creatures.~
 @268 = ~Wolf Attribute Item~
 @269 = ~This item gives the wolf its innate features like slow regeneration.~
-@270 = ~Haiass's Whistle~
+@270 = ~Haiass' Whistle~
 @271 = ~It looks like a woodwind whistle.~
 @272 = ~During your last years in Candlekeep, you taught Haiass how to answer to your call with this whistle.
 
@@ -610,7 +610,7 @@ The bow requires no arrows but spits out salves of magical arrows when used by S
 A strange book to be found on an orc. Shauhana received it from her involuntary teacher Brage, who was caught by her Clan and put to the arena pits where she was enslaved. The mentally deceased fighter taught the half-orc girl the human language and reading. At least for one part of the book. The first part of it is written in an unknown script while the second part is an unfinished translation to the human language. The book contains very ancient mage lore and the second unknown part may contain even stranger secrets. ~
 @299 = ~ Shauhana's Book - Part Two
 
-Sandrah has identified the script of the original book as being of an old extinguished elven accent, that is even unknown to the elves and half-elves of today. One of the topics mentioned as far as Sandrah is able to decipher it by comparing it to some known inscriptions found on the Sword Coast that are recorded in her own encyclopedic tome, is the legendary Sharkta Fai.
+Sandrah has identified the script of the original book as being of an old extinguished elven accent, that is even unknown to the elves and half-elves of today. One of the topics mentioned as far as Sandrah is able to decipher it by comparing it to some known inscriptions found on the Sword Coast that are recorded in her own encyclopaedic tome, is the legendary Sharkta Fai.
 Sharkta Fai - according to both elvish and orcish belief - is a fountain that is said to restore the bodies of those who have fallen in battle before they go hale to the next world after life. Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enormous power but also will gain endless life.~
 
 @300 = ~ Orc Shaman's Staff~
@@ -674,7 +674,7 @@ This book contains a large number of instructions and tips for the handling of a
 @336 = ~ Shipbuilding ~
 @337 = ~ Shipbuilding 
 
-A short title for a breathtaking encyclopedia. This tome explains how to manufacture each part of a ship in detail, accompanied by hundreds of illustrations of the parts of a ship.~
+A short title for a breathtaking encyclopaedia. This tome explains how to manufacture each part of a ship in detail, accompanied by hundreds of illustrations of the parts of a ship.~
 @338 = ~ Leaving Glorhan
 
 The ship creaks and the wind fills the sails. Slowly the ship comes into motion and leaves the shore. You soon get a feeling for the reaction of the rudder on your motions of the steering wheel. Sandrah finds more and more relations between the two books and figures out the right actions. Since the weather remains as good as it was proposed, the crew gets more and more cheerful.
@@ -706,7 +706,7 @@ A blind orc shaman in the Athkatla slum district has identified me as a *godchil
 @350 = ~ Becoming Father 
 
 What a surprise! Examining Shar-Teel today, Sandrah has found my wildcat lover to be pregnant. We will become parents in seven moons time!
-After the initial shock had settled, I found to my surprise that Shar-Teel has happily accepted her coming role as a mother. In a way she sees this as a challenge to prove how a strong and independant woman like herself can raise a child with the love and care that she herself has never known.
+After the initial shock had settled, I found to my surprise that Shar-Teel has happily accepted her coming role as a mother. In a way she sees this as a challenge to prove how a strong and independent woman like herself can raise a child with the love and care that she herself has never known.
 And me? It will be quite some change but not the worst one. With the time still remaining we will defeat our enemy and find a nice, quiet place to raise the baby. And others, who knows?
 Meanwhile we will still have Sandrah's home at Waterdeep as a resort should our quest unexpectedly require more time to be solved.~
 @351 = ~ Mystra's Rage~
@@ -719,7 +719,7 @@ Nib Jansen's scroll will guide you to his sky ship that allows you to travel to 
 @356 = ~ Midnight's Shelter
 
 The famous heroine Midnight was one of the adventurers chosen by Ao to retrieve the stolen Tablets of Fate. For her heroic deeds, the Overgod raised her to godhood herself, replacing the slain goddess Mystra whose name she adopted.
-While still a human woman, Midnight gave birth to a son, the famous mage Elminster, whose daughter - thus Midnight's granddaughter - is your companion Sandrah. The white mythril shield is one of the artifacts from Midnight's human adventuring days.~
+While still a human woman, Midnight gave birth to a son, the famous mage Elminster, whose daughter - thus Midnight's granddaughter - is your companion Sandrah. The white mythril shield is one of the artefacts from Midnight's human adventuring days.~
 @357 = ~ Tempus Blesses Sandrah~
 @358 = ~Sandrah's Heritage - The second child
 
@@ -882,14 +882,14 @@ It should be noted that Midnight herself spawned a child while still being in he
 @446 = ~ Flaming Fist Sergeant~
 @447 = ~ Entar Silvershield~
 @448 = ~ Safana's Fantasy~
-@449 = ~ Sandrah's clever defense has saved Safana from being hanged as a pirate. This spell was given to her as a reward.~
+@449 = ~ Sandrah's clever defence has saved Safana from being hanged as a pirate. This spell was given to her as a reward.~
 @450 = ~ I have no time for such nonsense.~
 @451 = ~ Greater Bearwere~
 @452 = ~ Druid's Were~
 @453 = ~ Mass Invisibility~
 @454 = ~ Dragon Breath~
 @455 = ~ Resist Magic~
-@456 = ~ This night Sandrah's passion seems to know no limits. Again and again she uses her wonderful body and skillful imagination to lead you into unknown areas of pleasure. Time seems to stand still and your own body seems to regenerate immediately after each of her loving attacks. Morning never seems to dawn - as if you wished it to come at all.~  
+@456 = ~ This night Sandrah's passion seems to know no limits. Again and again she uses her wonderful body and skilful imagination to lead you into unknown areas of pleasure. Time seems to stand still and your own body seems to regenerate immediately after each of her loving attacks. Morning never seems to dawn - as if you wished it to come at all.~  
 @457 = ~ MY TABITHA!! What have you done, mysterious beast?~
 @458 = ~ Another Slaver Installation
 
@@ -1007,7 +1007,7 @@ So make all the snares you can, Dan,
 And every Fire Elemental, Yentl,
 Get Hasted and Berserk, Kirk,
 For 55k XP!~
-@483=~ Book of Wonderous Crafts~
+@483=~ Book of Wondrous Crafts~
 @484=~ In her hasted flight the jar has slipped from Carsa's pouch.~
 @485= ~ The Region of Terror Mod is recommended - please install first!~
 @486= ~ Mountain Cat~
@@ -1015,7 +1015,7 @@ For 55k XP!~
 @488= ~ Sandrah has healed this injured and limping mountain cat. Your druid companion has suggested to take it to a wilderness area and set it free in its natural surroundings again.~
 @489=~ Sureblade defeated
 You have succeeded in destroying Rolf Sureblade's bandit army that terrorized the area around Soubar. But instead of bringing the head of the half-orc back victoriously, something strange has happened. In his final stand Sureblade identified Shauhana as the future orc leader to unite the Clans. The outlaw has sworn his sword and life to Shauhana's mission.
-Your counselor Sandrah has pursuaded you to see the enormous potential Sureblade has shown as a General - even if it was for an army of bandits. Given the right task he would make a leader as Shauhana would need for her crusade.
+Your counsellor Sandrah has persuaded you to see the enormous potential Sureblade has shown as a General - even if it was for an army of bandits. Given the right task he would make a leader as Shauhana would need for her crusade.
 As the rest of the bandits will quickly disband without their leader and Sureblade will hide until Shauhana needs him, your mission for Soubar is nevertheless ended successfully. Now you have to go back to the town pretending the villain's death and defeat and let the friendly town return to peace.~
 @490=~Bandit Squad Leader~
 @491=~Murderer~
@@ -1030,7 +1030,7 @@ As the rest of the bandits will quickly disband without their leader and Surebla
 @500=~Hahaha...~
 @501=~Golem Construction Manual~
 @502=~Golem Construction Manual
-The impressive tome contains detailed instructions for the design, materials and operations of golems of different types. You neither have the required material nor the craftmanship to make much use of it. Sandrah has a different opinion on the issue.~
+The impressive tome contains detailed instructions for the design, materials and operations of golems of different types. You neither have the required material nor the craftsmanship to make much use of it. Sandrah has a different opinion on the issue.~
 @503=~Sandrah's Song~
 @504=~Deserter Gang Leader~
 @505=~Flaming Fist Deserter~
@@ -1147,7 +1147,7 @@ You received this rod from Sandrah's sister, the hidden drow Bhaalspawn from Und
 @589= ~Sandrah's and <CHARNAME>'s private quarters. No access to the public.~
 @590= ~Sandrah - Return to Faerun
 
-With Sandrah's ascension to the Goddess of All Magic, and your own role as the new God of Hope and Love, the Time of Troubles has finally come to its end. Your common rule starts a new time of peace and splendor on the primary plane - at least for some time.
+With Sandrah's ascension to the Goddess of All Magic, and your own role as the new God of Hope and Love, the Time of Troubles has finally come to its end. Your common rule starts a new time of peace and splendour on the primary plane - at least for some time.
 
 Your success has been a drawback for the evil forces surrounding you still on Mount Celestial as well as their mortal followers. It does not take too long for them to stir again...
 
@@ -1155,7 +1155,7 @@ Events brew together that once again require your intervention and that of the c
        
             Return to Faerun.~
 @591= ~Return to Faerun - Trouble again
-With Sandrah's ascension to the Goddess of All Magic and your own role as the new God of Hope and Love the Time of Troubles has finally come to its end. Your common rule starts a new time of peace and splendor on the primary plane - at least for some time.
+With Sandrah's ascension to the Goddess of All Magic and your own role as the new God of Hope and Love the Time of Troubles has finally come to its end. Your common rule starts a new time of peace and splendour on the primary plane - at least for some time.
 Your success has been a drawback for the evil forces surrounding you still on Mount Celestial as well as their mortal followers. It does not take too long for them to stir again...
 Events brew together that once again require your intervention and that of the companion at your side. Toril becomes again the playground for the conspiracy of the old evil players against the new gods and there is only one place where you two can deal with the problem - the plane of your former success. You and Sandrah must transform to your mortal avatars and disguise as the adventurers you were before and return to Faerun.~
 @592= ~Celestial Exit~
@@ -1262,8 +1262,8 @@ You rush downward through a dark tunnel...
 
 Suddenly your sleigh ride ends and you stagger to your feet to inspect your new surroundings.~
 @664 = ~Dark Wardstone~
-@665 = ~The Watcher of Sharkta Fai gave you this wardstone to access his former lair now occupied by Szass Tam.~
-@666 = ~This way leads up to the graveyard of the haunted village, just like your counselor and you have expected. As long as the installation down here is running you cannot use this exit.~
+@665 = ~The Watcher of Sharkta Fai gave you this ward stone to access his former lair now occupied by Szass Tam.~
+@666 = ~This way leads up to the graveyard of the haunted village, just like your counsellor and you have expected. As long as the installation down here is running you cannot use this exit.~
 @667 = ~The doors to this complex are magically sealed. You need to find the right keystone.~
 @668 = ~This is the exit from a deeper area of the complex. At times an undead creature is disseminated from the *machine*.~
 @669 = ~The icy ravine you came down. There is no possibility to get back up this way.~
@@ -1277,19 +1277,19 @@ Suddenly your sleigh ride ends and you stagger to your feet to inspect your new 
 Then you see your orc friends and their new leader standing beside Minsc in some distance. Vennegrat's troops seem to have lost this campaign.~
 @677 = ~ Using her grandfather Ghotal's tactic, Shauhana has finally defeated Vennegrat and his followers. The civil war among the Orc has ended.~
 @678 = ~Undead Warrior~
-@679 = ~Skelletal Golem~
+@679 = ~Skeletal Golem~
 @680 = ~Gift of the Clans~
 @681 = ~Shauhana's Reign
 
 The rest - as they say - is history. Shauhana and Minsc led the Clan Orcs into a decade of peace and prosperity. The Neutral Zone between the Southern Territories and Clan Orc Lands was respected by both parties, due to the strict punishment Minsc's Berserkers applied to transgressors, regardless of their origin.
 
-Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wishlist of every child of the Realms in no time.
+Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wish-list of every child of the Realms in no time.
 
 The crisis that almost ended this peaceful episode in Faerun's history will be told later, when Sandrah and <CHARNAME> return from the Throne of Bhaal.~
 @682 = ~ Peace with the Clan Orcs
 You have aided the half-orc Shauhana to end the civil war that nearly extinguished the Clan Orcs in the Stormhorns. Ghotal's granddaughter, sired by Arvoreen, became the new leader and Queen of the Clans.
 She and her husband and protector Minsc led the Clan Orcs into a decade of peace and prosperity. The Neutral Zone between the Southern Territories and Clan Orc Lands was respected by both parties, due to the strict punishment Minsc's Berserkers applied to transgressors, regardless of their origin.
-Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wishlist of every child of the Realms in no time.~
+Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wish-list of every child of the Realms in no time.~
 @683 = ~The Collector~
 @684 = ~Red Slaver Mage~
 @685 = ~Get them moving again. I want to deliver them quickly and then leave this cursed wilderness.~
@@ -1329,7 +1329,7 @@ We have encountered a blind Clan Orc shaman and his guide in Baldur's Gate. They
 @717 =~Mystra's Elemental~
 @718 =~Aerie's Flock~
 @719 =~Haer'Dalis' body~
-@720 =~The body of Sandrah's beloved tiefling after the joint assault of Naronguth and Alzaligundrel. His state can neither be described as alive nor dead, as the descendent of the abyss has been slain by another hellish creature while on the surface of the Prime. According to Mystra's advice, Sandrah may be able to restore him in the abyss by using his murderer's own heart in the process.~
+@720 =~The body of Sandrah's beloved tiefling after the joint assault of Naronguth and Alzaligrundel. His state can neither be described as alive nor dead, as the descendent of the abyss has been slain by another hellish creature while on the surface of the Prime. According to Mystra's advice, Sandrah may be able to restore him in the abyss by using his murderer's own heart in the process.~
 @721 =~Haer'Dalis~
 @722 =~Demogorgon~
 @733 =~Map to first Blood Drop~
@@ -1339,7 +1339,7 @@ We have encountered a blind Clan Orc shaman and his guide in Baldur's Gate. They
 @737 =~Map to third Blood Drop~
 @738 =~Now familiar with the blood drops on the map you easily identify Baldur's Gate as your next destination, specifically the Shadow Thieves headquarters there. Or - as you assume - rather the old temple area that lies underneath it.~
 @739 =~How to restore a Tiefling
-Sandrah and her beloved thieving bard Haer'Dalis have encountered the joint assault of Naronguth and Alzaligundrel, two foes they have in common for different reasons. The tiefling was killed in the battle and is now in a state that can neither be described as alive nor dead. Despite her healer skills, Sandrah is helpless when it comes to a descendent of the abyss who has been slain by another hellish creature while on the surface of the Prime. According to Mystra's advice Sandrah may be able to restore him in the abyss by using his murderer's own heart in the process. With the help of a map received from the Goddess of All Magic we can follow the villains and find the access to the nether regions this way. The trail leads us to the forgotten temple area in the Umar Hills.~
+Sandrah and her beloved thieving bard Haer'Dalis have encountered the joint assault of Naronguth and Alzaligrundel, two foes they have in common for different reasons. The tiefling was killed in the battle and is now in a state that can neither be described as alive nor dead. Despite her healer skills, Sandrah is helpless when it comes to a descendent of the abyss who has been slain by another hellish creature while on the surface of the Prime. According to Mystra's advice Sandrah may be able to restore him in the abyss by using his murderer's own heart in the process. With the help of a map received from the Goddess of All Magic we can follow the villains and find the access to the nether regions this way. The trail leads us to the forgotten temple area in the Umar Hills.~
 @740 =~How to restore a Tiefling
 
 In pursuit of Haer'Dalis' killer you finally make your way back to the Sword Coast and Baldur's Gate. Through secret passageways - often with your eyes blindfolded - the Shadow Thieves manage to get your party from Amn to their headquarters up North within a day.
@@ -1384,7 +1384,7 @@ Her special personal relationship to Mystra (again another story) provides her a
 @773 = ~Mystra's Vapour~
 @774 = ~The key to the lower levels must be here somewhere.~
 @775 = ~I will not lose mine daughters and the hope of the Realms to Bhaal!!~
-@776 = ~Commander Shar-Teel has opened the passage to her tactical command center concealed behind a bookshelf.~
+@776 = ~Commander Shar-Teel has opened the passage to her tactical command centre concealed behind a bookshelf.~
 @777 = ~Copernio~
 @778 = ~Tanari Prince~
 @779 = ~Elite Guardian~
@@ -1398,13 +1398,13 @@ According to Sandrah's calculation as healer, she has advised me today that acco
 @786 = ~Purse of Infinite Coin~
 @787 = ~You received this magical purse from Waukeen's temple for freeing Waterdeep from the threat of the bandit Khattark. Put it in your quickslot and the purse can provide you with 1 (in words - ONE) gold piece per day. You will never again be a poor <PRO_MANWOMAN> in all your life!~
 @788 = ~Thermae~
-@789 = ~Temple of Splendor~
+@789 = ~Temple of Splendour~
 @790 = ~Priest of Waukeen~
 @791 = ~The growling of a large watchdog keeps you from entering this house~
 @792 = ~The militia quarter is off-limits for civilians~
 @793 = ~South Gate~
 @794 = ~Load sheets and crew lists are piled on the staircase~
-@795 = ~The largest mirror you have ever seen in Faerun...you are in the City of Splendor, no doubt~
+@795 = ~The largest mirror you have ever seen in Faerun...you are in the City of Splendour, no doubt~
 @796 = ~Dwarven Commoner~
 @797 = ~Dwarven Pub~
 @798 = ~To Temple~
@@ -1421,7 +1421,7 @@ According to Sandrah's calculation as healer, she has advised me today that acco
 @809 = ~You are the ones who stole the dark princess from us - you pay for it.~
 @810 = ~Abducted by Mind Flayers
 Our rescue of Phaere from the drow's enemies has not been without consequences. The creatures have waylaid and imprisoned us in their city. We must find a way out...~
-@811 = ~Enamored Girl~
+@811 = ~Enamoured Girl~
 @812 = ~Elder Beholder~
 @813 = ~Binamor DeVir~
 @814 = ~Drow Katana~
@@ -1430,7 +1430,7 @@ Our rescue of Phaere from the drow's enemies has not been without consequences. 
 @817 = ~Jen'lig's Silver Sword
 This Vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
 
-Useable only by githyanki ~
+Usable only by githyanki ~
 @818 =~Invisibility~
 @819 =~Blur~
 @820 =~A githyanki spell~
@@ -1438,7 +1438,7 @@ Useable only by githyanki ~
 @822 =~Gith Stun~
 @823 =~Gith Door~
 @824 =~Gith Greater Stun~
-@825 =~When you ask Jen'lig about her family and upbringing her yellow eyes glow with disbelief. Such concepts are unknown to the Githyanki. Like all of her kin she was raised by the varsh, the caretakers and wet-nurses of the githyanki, in one of their hatcheries located on the Prime. With the first days of adulthood, all githyanki are expected to train to defend the race against their two great feuds - the illithid and the githzerai - with even those not part of its armies expected to have at least some training.
+@825 =~When you ask Jen'lig about her family and upbringing her yellow eyes glow with disbelief. Such concepts are unknown to the Githyanki. Like all of her kin she was raised by the Varsh, the caretakers and wet-nurses of the githyanki, in one of their hatcheries located on the Prime. With the first days of adulthood, all githyanki are expected to train to defend the race against their two great feuds - the illithid and the Githzerai - with even those not part of its armies expected to have at least some training.
 Jen'lig was selected for duties outside the normal command structure of the githyanki and assigned to an elite squad trusted to handle one of the most important tasks for the race, the protection of the silver weapons. Those magical artefacts are sought for by magic users of all races and must be traced and retrieved should they fall into the hands of a non-githyanki.
 Jen'lig is an exception of the hr'a'cknir of her race. Instead of divination and force she uses the strategies of those who steal a silver sword, namely the skills of a thief.~
 @826 =~Not for use by unclean. Jen'lig only clean to use.~
@@ -1625,7 +1625,7 @@ Special:
       +20 Lore
 Weight: 2~
 @916=~Mystra's Bust~
-@917=~Broken Armor~
+@917=~Broken Armour~
 @918=~Cure Wounds~
 @919=~Siamorphe Temple~
 @920=~To North-West Ward~
@@ -1648,14 +1648,14 @@ One thing that bothers me is the fact that Jen'lig's possible success with her m
 When we defeated Kastya's murderer number three, Davaeorn, we found a warning letter indicating the names of two more complices, Jardak and Sunin in Baldur's Gate. It may be a good idea to contact the Shadow Thieves Guild in that town - such a guild is a good source for all kinds of information, provided you grease their palms adequately.~
 @927=~Jen'lig's Hunt
 
-We seem to get nearer to Jen'lig's goal and to mine. The sorcerer responsible for her mentor's death and the theft of the holy sword is Semaj, a close confidant of my archenemy Sarevok.
+We seem to get nearer to Jen'lig's goal and to mine. The sorcerer responsible for her mentor's death and the theft of the holy sword is Semaj, a close confidant of my arch enemy Sarevok.
 With this common goal her loyalty to my quest seems to be assured until the final showdown. What she will do when we have succeeded, I can only guess...~
 @928=~Tentacle Whip~
 @929=~Azuth's Imp~
 @930=~Cure Disease~
 @931=~Imoen in Love?
 
-Imoen urges you to hunt for a winterwolf. Henning, the shopkeeper in Nashkel offers a reward for a pelt from that animal. However, Imoen seems to be less interested in said reward than in seeing Henning again as soon as we have hunted down such a wolf.~
+Imoen urges you to hunt for a winter wolf. Henning, the shopkeeper in Nashkel offers a reward for a pelt from that animal. However, Imoen seems to be less interested in said reward than in seeing Henning again as soon as we have hunted down such a wolf.~
 @932=~Imoen in Love?
 
 It really seems that your *little sister* Imoen has some romantic interest in the handsome and charming shopkeeper of Nashkel. If you want to keep a rebellion within your party down, it is advised to visit the little shop in Amn now regularly.~
@@ -1669,7 +1669,7 @@ Casting Time: 2
 Area of Effect: Creature touched 
 Saving Throw: None 
 
-When casting this spell and laying his hand upon a creature, the healer causes 11 points of wound or other injury damage to the creature's body to be healed. This healing cannot affect creatures without corporeal bodies, nor can it cure wounds of creatures not living or of extraplanar origin.
+When casting this spell and laying his hand upon a creature, the healer causes 11 points of wound or other injury damage to the creature's body to be healed. This healing cannot affect creatures without corporeal bodies, nor can it cure wounds of creatures not living or of extra-planar origin.
 Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal - or can be cured - just as any normal injury.~
 @935 =~Ghotal's Summer Camp ~
 @936 =~Mornbryn's Shield ~
@@ -1748,9 +1748,9 @@ Brage from Nashkel turned up at the destroyed Eldath temple at the Dragon's Eye.
 I did not sponsor your continued stay in Athkatla only for you to sell the best of your stock to that lout running the Copper Coronet. Sion tells me it is your fault that the last shipment was not young enough for the Lady's tastes, and I want three of the proper age to be sent to our typical meeting place within the Temple District. Fail to do so, and I will expose you and Lehtinan to the city officials.
 
 A.~
-@978 =~Collect the fee for Gaelan Bayle
+@978 =~Collect the fee for Gaylan Bael
 
-Gaelan's nephew Brus told me the truth about Gaelan Bayle's allies. The gold they want to squeeze out of us for their help will finally amount to the ridiculous sum of 150,000 gp. Either we start collecting this sum or we find some alternative. Or do both and see which option finally leads us to our goal.~
+Gaylan's nephew Brus told me the truth about Gaylan Bael's allies. The gold they want to squeeze out of us for their help will finally amount to the ridiculous sum of 150,000 gp. Either we start collecting this sum or we find some alternative. Or do both and see which option finally leads us to our goal.~
 @979 =~Our githyanki will need her sword when we return her to life.~
 @980 =~Chapter 23~
 @981 =~Chapter 24~
@@ -1768,7 +1768,7 @@ Gaelan's nephew Brus told me the truth about Gaelan Bayle's allies. The gold the
 @993 =~Chapter 36~
 @994 =~You suddenly have a sense of imminent danger. Something here is not what it seems.~
 @995 =~Harper Pin~
-@996 =~A Harper pin is a treasured item, signifying that the bearer is an honored and trusted member of the Harpers. It grants the wearer exceptional protection against many different kinds of attacks. Harper pins are not attuned to any particular person, but you would be hard-pressed to find someone that would lend such an item or even let it out of their sight. It is quite literally a badge of honor.~
+@996 =~A Harper pin is a treasured item, signifying that the bearer is an honoured and trusted member of the Harpers. It grants the wearer exceptional protection against many different kinds of attacks. Harper pins are not attuned to any particular person, but you would be hard-pressed to find someone that would lend such an item or even let it out of their sight. It is quite literally a badge of honour.~
 @997 =~The priestess of Mystra cannot use this item.~
 @998 =~Unless Elminster finds a way to rescue Sandrah, she will be lost forever. 
 You will probably never know.~
@@ -1785,9 +1785,9 @@ She was born Ariel Manx, the second child of Theus Manx, a merchant, and his wif
 
 Her first taste of magic began with her tryst with the conjurer Tad, who set her on her path, in magic and in love. She began to lose interest in her hedonistic pursuits - not completely to be honest - and more in the quest for magical knowledge and training, gradually becoming more obsessed with her magical quest.
 
-It was during this time that she fell into the worship of Mystra, whose attention she attracted during your time of service in one of Mystra's temples. From her 21st year on, she began to feel a presence from time to time. Her skin would tingle coolly and she had a feeling of somehow being followed or observed. After such attentions, she always found that spells, which she had labored over for weeks, would suddenly work without any problem. She and her teachers soon suspected that she had been granted special attention by Mystra herself and believed that she were groomed for the position of Magister.
+It was during this time that she fell into the worship of Mystra, whose attention she attracted during your time of service in one of Mystra's temples. From her 21st year on, she began to feel a presence from time to time. Her skin would tingle coolly and she had a feeling of somehow being followed or observed. After such attentions, she always found that spells, which she had laboured over for weeks, would suddenly work without any problem. She and her teachers soon suspected that she had been granted special attention by Mystra herself and believed that she were groomed for the position of Magister.
 
-Sunlar, high priest of the Deepingdale temple of Mystra, took her under his supervision. It was during this time that her knowledge of self-defense and magic improved leaps and bounds and she spent a year in the temple at Deepingdale before she left to experience her gifts out in the adventurer's world.
+Sunlar, high priest of the Deepingdale temple of Mystra, took her under his supervision. It was during this time that her knowledge of self-defence and magic improved leaps and bounds and she spent a year in the temple at Deepingdale before she left to experience her gifts out in the adventurer's world.
 
 During the Time of Troubles, when the gods were cast down by Ao, Midnight joined with Kelemvor Lyonsbane, Cyric, and Adon in the search for the stolen Tablets of Fate. Midnight killed Myrkul, the god of death, in a duel. Cyric killed Bhaal by backstabbing him with the sword Godsbane.
 

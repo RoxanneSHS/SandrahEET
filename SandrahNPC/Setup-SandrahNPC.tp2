@@ -2645,8 +2645,8 @@ SAY NAME1 @68
 SAY NAME2 @69
 
 COPY ~SandrahNPC\CRE/Hilath.cre~ ~override\Hilath.cre~
-SAY NAME1 Hilath
-SAY NAME2 Hilath
+SAY NAME1 Hillath
+SAY NAME2 Hillath
 
 COPY ~SandrahNPC\CRE/WDFish1.cre~ ~override\WDFish1.cre~
 SAY NAME1 Henk
@@ -2801,8 +2801,8 @@ SAY NAME1 Winthrop
 SAY NAME2 Winthrop
 
 COPY ~SandrahNPC\CRE/CVKNAW.CRE~ ~override\CVKNAW.CRE~
-SAY NAME1 Knawlod
-SAY NAME2 Knawlod
+SAY NAME1 Knowlod
+SAY NAME2 Knuwlod
 
 COPY ~SandrahNPC\CRE/CVPIRZ.CRE~ ~override\CVPIRZ.CRE~
 SAY NAME1 @325
