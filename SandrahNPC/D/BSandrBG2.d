@@ -723,7 +723,7 @@ EXIT
 
 CHAIN
 IF~ Global("SawKhalid","AR0603",1)~ THEN BSANDR DeKhalReac
-~ (Sandrah has wordlessly taken Jaheirah's hand. You know from your own experience the calm and strength that she can consign to you by her healing power in such a moment.)~
+~ (Sandrah has wordlessly taken Jaheira's hand. You know from your own experience the calm and strength that she can consign to you by her healing power in such a moment.)~
 DO~ SetGlobal("SawKhalid","AR0603",2)~
 ==BJAHEIR ~ (Jaheira leans against Sandrah having lost her balance for a moment.)~
 END
@@ -731,7 +731,7 @@ END
 
 CHAIN
 IF~~THEN BSANDR DeKhalReac2
-~ I had considered it, judging the risk that someone may discover the restoration on the body and knew of me intruding as neglectable in this whole turmoil. But I decided against it.~
+~ I had considered it, judging the risk that someone may discover the restoration on the body and knew of me intruding as negligible in this whole turmoil. But I decided against it.~
 = ~I think it is important that Jaheira sees him like that. It makes her accept the fact that Khalid is gone beyond any hope and noshing can bring him back. It hurts, yes, but it clarifies the facts.~
 ==BJAHEIR ~ You have loved him, too, Sandrah, and have lost him with me. You are the most caring person I know. Yes, he is gone but we are not. No use to dwell here just one moment longer.~
 EXIT
