@@ -4,7 +4,7 @@ IF WEIGHT #-4~Global("SanMiriB","LOCALS",1)~THEN BCMGMIRI Bore1
 DO~SetGlobal("SanMiriB","LOCALS",2)~
 ==BSandr~I study you just the same as you study us, Miriam. So far my healing applied to your kin was a stake through the heart to end your infinite suffering.~
 ==BCMGMIRI~For many of us such would indeed be a graceful act to relief us of this cursed existence and the infinite - boredom.~
-==BSandr~During our travels we have often fought against those who persued an infinite existence, in most cases causing the death and pain of many others for this achievement. What is the use of immortality if all you gain is boredom.~
+==BSandr~During our travels we have often fought against those who pursued an infinite existence, in most cases causing the death and pain of many others for this achievement. What is the use of immortality if all you gain is boredom.~
 ==BCMGMIRI~Hm...there are those for whom the natural lifespan is too short to achieve what they plan.~
 ==BSandr~Immortality paired with the power to gain wisdom and change things on a greater scale - not even many of the so-called gods have reached such status.~
 ==BCMGMIRI~We have the power to kill and continue our existence.~

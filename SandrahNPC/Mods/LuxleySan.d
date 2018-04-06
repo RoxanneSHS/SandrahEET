@@ -49,14 +49,14 @@ DO~SetGlobal("SanLuxley","GLOBAL",8) RealSetGlobalTimer("SanLuxleytime","GLOBAL"
 ==BFHLAND~You seem to be quite fond of that type.~
 ==BSandr~Artists aim to entertain people. I like entertainment when the time is right. If you know what to expect from a bard you will not be frustrated by what you receive.~
 ==BFHLAND~Somehow I think Sebastian deserves a lesson from you, he's used to consider himself to be too important and irresistable.~
-==BSandr~Now, it seems he is truely important to you - and at least interesting for me to have some entertainment at the proper time.~EXIT
+==BSandr~Now, it seems he is truly important to you - and at least interesting for me to have some entertainment at the proper time.~EXIT
 
 CHAIN
 IF WEIGHT #-7~Global("SanLuxley","GLOBAL",9)~THEN BFHLSEB Luxsan5
 ~No...you will not ask her about that!~
 =~*Sebastian tries to grab Andrei's robe as the monk approaches Sandrah. With a quick move Andrei frees himself from Sebastian.*~
 DO~SetGlobal("SanLuxley","GLOBAL",10) RealSetGlobalTimer("SanLuxleytime","GLOBAL",3000)~
-==BFHLAND~Oh, yes, I will and you will not interfer!~
+==BFHLAND~Oh, yes, I will and you will not interfere!~
 ==BSandr~What is it between you once more? Andrei, you want to ask something?~
 ==BFHLSEB~No, he doesn't...~
 ==BFHLAND~I can speak for myself, Sebastian - yes, Sandrah I do...~

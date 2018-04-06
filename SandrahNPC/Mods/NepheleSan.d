@@ -2,7 +2,7 @@ CHAIN
 IF~Global("SanNeph","LOCALS",3)~THEN  BLK#Nep SanNep1
 ~Aah, thank you, dear child, where were my own thoughts...I should've tended for myself...ah, the keen quick eye of youth!~
 DO~SetGlobal("SanNeph","LOCALS",4)~
-==BSandr~You do not appear like the old grandma who needs my assistence to cross the street. Still, as companions we are supposed to help each other along. As priestess I have made it my speciality to care foremost for the health of our party.~
+==BSandr~You do not appear like the old grandma who needs my assistance to cross the street. Still, as companions we are supposed to help each other along. As priestess I have made it my speciality to care foremost for the health of our party.~
 ==BLK#Nep~Your grandmother must be pretty proud of you, little one.~
 ==BSandr~She is not too unhappy from what I hear every now and then.~EXIT
 
@@ -12,7 +12,7 @@ IF~Global("SanNeph","LOCALS",5)~THEN  BLK#Nep SanNep2
 DO~SetGlobal("SanNeph","LOCALS",6)~
 ==BSandr~She has become more important to me since I became adult and understand more of what she did and who she really was and is.~
 ==BLK#Nep~For most grandchildren it is the other way round.~
-==BSandr~My grandmother never was knitting pullovers and telling me goddnight tales. Actually I never met her as a child.~
+==BSandr~My grandmother never was knitting pullovers and telling me goodnight tales. Actually I never met her as a child.~
 ==BLK#Nep~Poor darling, you missed much I thunk.~
 ==BSandr~I never felt that way, neither with her nor with my deceased mother.~
 ==BLK#Nep~You did not come along like an orphan I must say, I never thought you missed anything in your childhood.~
@@ -26,7 +26,7 @@ CHAIN
 IF~Global("SanNeph","LOCALS",7)~THEN  BLK#Nep SanNep3
 ~Dear, dear, my, my...your grandmother is REALLY a very special one, isn't she? <CHARNAME> told me a bit about your background.~
 DO~SetGlobal("SanNeph","LOCALS",8)~
-==BSandr~Oh, I told you she is not one to cook strawberry jam and tell ferrytales to the young.~
+==BSandr~Oh, I told you she is not one to cook strawberry jam and tell fairytales to the young.~
 ==BLK#Nep~Still she has human origins, so they say.~
 ==BSandr~Right, and it is the woman Midnight, the cleric and adventurer, who is my grandmother and who inspires me rather than the goddess I have chosen to serve.~
 ==BLK#Nep~She helped to defeat Bhaal - and here I find you fighting and living side by side with a Bhaalspawn.~

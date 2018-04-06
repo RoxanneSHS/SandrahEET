@@ -32,9 +32,9 @@ CHAIN
 IF~~THEN CELOGAN SanLog1
 ~(Logan Coprith's face visibly brightens as he sees Sandrah in your company)~
 DO~SetGlobal("SanLogLT","GLOBAL",1)~
-==CELOGAN~Greetings, Mylady Sandrah. I had...mh...hoped you would find a way to come to Trademeet again. Might I ask for a moment of your time... in private?~
+==CELOGAN~Greetings, My lady Sandrah. I had...mh...hoped you would find a way to come to Trademeet again. Might I ask for a moment of your time... in private?~
 ==BSANDR~Greetings, Lord Logan. Why should I refuse the request of a respectable gentleman?~
-==CELOGAN~Let me lead on, mylady.~ DO~ StartCutSceneMode() StartCutScene("SanLogan")~EXIT
+==CELOGAN~Let me lead on, my lady.~ DO~ StartCutSceneMode() StartCutScene("SanLogan")~EXIT
 
 CHAIN
 IF WEIGHT #-9~Global("SanLogLT","GLOBAL",1)~THEN CELOGAN SanLog2
@@ -42,7 +42,7 @@ IF WEIGHT #-9~Global("SanLogLT","GLOBAL",1)~THEN CELOGAN SanLog2
 DO~SetGlobal("SanLogLT","GLOBAL",2)~
 ==BSANDR~You can be charming when you try. And words heard before may get a different meaning any time they are spoken depending on who says them and for what intend.~
 =~ Be assured I grab a moment that may be a very precious one rather than regret my hesitation when it is passed. ~
-==CELOGAN~Since I came to Trademeat I became a man of routine doing only what is my duty day in day out...~
+==CELOGAN~Since I came to Trademeet I became a man of routine doing only what is my duty day in day out...~
 ==BSANDR~Nothing more? (Her smile seems to encourage him.) I very much doubt that. ~
 ==CELOGAN~I feel that drowning you in compliments will waste both our time. You are well aware of your impact on men. ~
 ==BSANDR~You are of noble family and handsome, you must be used to such attention yourself. ~

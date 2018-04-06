@@ -20,7 +20,7 @@ DO~SetGlobal("SanNeeraBG1B","GLOBAL",4)~
 =~It is the limited view of most people to think of the Weave only as a means to cast spells.~
 =~The Weave is in everything and around everything, it is the many energies and forces that exist around the planes.~
 =~Casting a spell is equivalent to telling the Weave to rearrange itself to create a specific effect. As a wild mage does not strictly specify the effect a randomness is created where the energy of the Weave arranges itself in some unexpected form.  ~
-==BNeera_~A wild mage is channeling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
+==BNeera_~A wild mage is channelling pure energy through the own body and directing it to a target, rather than trying to contain or control it or the effects it will cause when it hits. It's a natural use of the natural elements...why the penalty?~
 ==CVSandrJ~It is no penalty, least of all one by Mystra, it is the natural consequence of the natural use you proclaim. You use more of a power than you can handle and the power plays its own tricks on you.~EXIT
 
 CHAIN
@@ -38,7 +38,7 @@ DO~SetGlobal("SanNeeraBG1B","GLOBAL",7)~
 ==CVSandrJ~No *but*, keep your mind on it, see how it builds, yes...you have it under control now...slowly...do not loose it there...yes, yes...~
 ==BNeera_~YES!~
 END
-++~*While you wait for some explosion or meteor crashing down on you, you observe instead a well-lit campfire heating the pot with your dinner. Neera smiles brightly.*~EXIT
+++~*While you wait for some explosion or meteor crashing down on you, you observe instead a well-lit camp fire heating the pot with your dinner. Neera smiles brightly.*~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanNeeraR","LOCALS",1)~THEN BNeera_ Redwi
@@ -76,8 +76,8 @@ END
 CHAIN
 IF~~THEN Neadoy Neasan1
 ~I knew it, I knew the Goddess of All Magic even smiles on a wild mage.~
-==CVSandrJ~She is protecting all who attempt to use her gifts in the right way, even those with a wild talent. She only despises those who willfully misuse magic, scum like the red wizards for example.~
-==Neadoy~The red...(He goes very pale for a momemnt.)...eh...I am so glad you came,yes.~
+==CVSandrJ~She is protecting all who attempt to use her gifts in the right way, even those with a wild talent. She only despises those who wilfully misuse magic, scum like the red wizards for example.~
+==Neadoy~The red...(He goes very pale for a moment.)...eh...I am so glad you came,yes.~
 END
 ++~I could not leave you in the clutches of these savages.~EXTERN Neadoy 2
 ++~I had a feeling you might not be enjoying the goblin hospitality.~EXTERN Neadoy 2
@@ -91,7 +91,7 @@ DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
 ==BNeera~I think I see what you mean, we have lost a lot, and *I* have lost the enclave I had so much hope set into.~
 ==CVSandrJ~I had this experience every time with the red scum. We always pay a high prize, victory is always overshadowed by the losses we had to take in return.~
 ==BNeera~Still, I am glad it is all over - at least for now.~
-==CVSandrJ~The Thayans always leave their destruction behind them, regardless of how quickly we act. We keep them at bay but we do not win. I was just remembering Dynaheir, our old comrad. Her folk have a sad and simple history, just centuries of battle after battle against their neighbours from Thay - and no perspective to end it, just the small gain of a short period of peace in between.~
+==CVSandrJ~The Thayans always leave their destruction behind them, regardless of how quickly we act. We keep them at bay but we do not win. I was just remembering Dynaheir, our old comrade. Her folk have a sad and simple history, just centuries of battle after battle against their neighbours from Thay - and no perspective to end it, just the small gain of a short period of peace in between.~
 ==BNeera~Where is the enthusiastic cheerful Sandrah I know? Let us move on before we all get too gloomy.~EXIT
 
 CHAIN
