@@ -52,15 +52,15 @@ IF~~THEN BSandr Backlive2
 ~We cannot do it right here in the road, but any nearby temple of a good deity would do, where the dagger would be destroyed and the captive soul set free.~
 END
 ++~Fine, let's go to a temple right now.~EXIT
-++~I will keep that in mind, counselor. We may do that some time.~EXIT
+++~I will keep that in mind, counsellor. We may do that some time.~EXIT
 
 CHAIN
 IF~~THEN BSandr Backlive3
-~Remember that book we once found at Dragonspeare Castle...actually very close to where Skie's soul was entrapped. I have studied it and know what to do.~
+~Remember that book we once found at Dragonspear Castle...actually very close to where Skie's soul was entrapped. I have studied it and know what to do.~
 =~We cannot do it right here in the road, but any nearby temple of a good deity would do, where the dagger would be destroyed and the captive soul set free.~
 END
 ++~Fine, let's go to a temple right now.~EXIT
-++~I will keep that in mind, counselor. We may do that some time.~EXIT
+++~I will keep that in mind, counsellor. We may do that some time.~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("SanSoDSkie","Global",3)~THEN BSandr Backlive7
@@ -84,10 +84,10 @@ DO~SetGlobal("SanSoDSkie","Global",6) AddexperienceParty(10500)~
 ==CVSandrJ~Yes, Irenicus. (Sandrah slowly and kindly brings the perplexed girl back to reality and tells her about the events that took place after her death.)~
 ==Skie~But that is incredible. They accuse YOU of my murder. But I am alive - so there isn't really any murder done - but it has been done but not by you...I need to tell my father. NOW!~
 ==CVSandrJ~Yes, you need to go back to Baldur's Gate and clarify things - most of all you must bring your father the news that you are alive.~
-=~We cannot accompany you, however. We need to persue your killer and Imoen, and, in addition, we are escaped prisoners still in the eyes of Baldur's Gate.~
+=~We cannot accompany you, however. We need to pursue your killer and Imoen, and, in addition, we are escaped prisoners still in the eyes of Baldur's Gate.~
 ==Skie~That will change soon. I will immediately consult the Jysstevs, we have business with them since a long time. They will arrange for my return home. All will be well soon. Do not forget to visit me, should your way lead you back to our town...(she continues to babble all the way to the temple's doors.)~DO~EscapeAreaDestroy(55)~
 END
-++~Well done, counselor. I hope she will remember to restore our reputation when she gets to Baldur's Gate.~EXIT
+++~Well done, counsellor. I hope she will remember to restore our reputation when she gets to Baldur's Gate.~EXIT
 ++~Her appearance in Baldur's Gate will remove all accusations of murder - even if I doubt we would be celebrated heroes again, at least we are no longer criminals.~ EXIT
 
 CHAIN
@@ -119,7 +119,7 @@ END
 CHAIN
 IF~~ THEN CVSandrJ KillskieF4
 ~Please, I am not hysterical. Just look at the facts we have.~
-=~The hooded man, Irenicus as we know by now, was always referring to another candidate before he finally captured you. I falsly assumed he meant Caelar, but no.~
+=~The hooded man, Irenicus as we know by now, was always referring to another candidate before he finally captured you. I falsely assumed he meant Caelar, but no.~
 =~Remember Skie's conduct during the Dragonspear campaign.~
 END
 ++~A spoiled brat without any discipline, the nightmare of her superiors.~ + KillskieF5
@@ -133,7 +133,7 @@ IF~~ THEN CVSandrJ KillskieF5
 =~But finally - the fight you had when Irenicus tried to make you kill her. He had made his decision, his candidate was you - not her. So he got rid of her and at the same time discredited you in a way to force you out of Baldur's Gate. That monster you saw, Skie turned into the Avatar of Bhaal, the Slayer. Only a Bhaalspawn would have this ability.~
 END
 ++~A lot of evidence...and your interpretation of it. I am not convinced.~EXIT
-++~I am afraid that you may be just too right, my counselor.~EXIT
+++~I am afraid that you may be just too right, my counsellor.~EXIT
 ++~You have confirmed what I was trying not to see...I just hope that her father does not even know about her heritage.~EXIT
 
 CHAIN

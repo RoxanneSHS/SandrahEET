@@ -4,17 +4,17 @@ IF WEIGHT #-2~Global("SanSodPamp","BD0130",1)~THEN CVSandrJ Sanpamp1
 DO~SetGlobal("SanSodPamp","BD0130",2)~
 =~Once we are finished down here, we may investigate what is going on.~
 END
-++~We are not mercenairies who hire out for any odd job.~ + Sanpamp2
+++~We are not mercenaries who hire out for any odd job.~ + Sanpamp2
 ++~You seem to be utterly restless, my dear.~+ Sanpamp2
 
 CHAIN
 IF~~THEN CVSandrJ Sanpamp2
-~I am not seeking just another adventure. I am just pretty sure that important tasks are rarely accomplishes by mercenairies.~
+~I am not seeking just another adventure. I am just pretty sure that important tasks are rarely accomplishes by mercenaries.~
 ==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~ Sooner or later they will find the need to seek aid from competent side - like the new *hero* of Baldur's Gate.~
 ==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~ Sooner or later they will find the need to seek aid from competent side - like the new *heroine* of Baldur's Gate.~
 END
-IF~Global("SanRomPath","Global",1)~THEN REPLY~(Laugh) And said hero's companion and counselor, I presume.~EXIT
-IF~Global("SanRomPath","Global",2)~THEN REPLY~(Laugh) And said heroine's companion and counselor, I presume.~EXIT
+IF~Global("SanRomPath","Global",1)~THEN REPLY~(Laugh) And said hero's companion and counsellor, I presume.~EXIT
+IF~Global("SanRomPath","Global",2)~THEN REPLY~(Laugh) And said heroine's companion and counsellor, I presume.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("Sansusp","bd0102",1)~THEN CVSandrJ Sanpamp3
@@ -37,7 +37,7 @@ CHAIN
 IF~~THEN CVSandrJ Sanpamp5
 ~It may as well be some hint to her own origins, but it is far too early to tell yet.~
 END
-++~Another bhaalspawn?...~EXIT
+++~Another Bhaalspawn?...~EXIT
 ++~(Remain silent.)~EXIT
 ++~Even better that you kept THAT from the dukes.~DO~IncrementGlobal("Sanpoints","Global",1)~EXIT
 
@@ -51,7 +51,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ SodImoMiss2
-~We received more and more hints that the Shining Lady may be a bhaalspawn herself, like the both of you. We may find ourselves fighting at two fronts in the end.~
+~We received more and more hints that the Shining Lady may be a Bhaalspawn herself, like the both of you. We may find ourselves fighting at two fronts in the end.~
 END
 ++~You're saying that the dukes may need me but don't trust me?~+ SodImoMiss3
 ++~If anything goes wrong in our fight against her crusade, the *good* people may turn against us, saying we're traitors and the common blood was thicker.~ + SodImoMiss3
@@ -94,7 +94,7 @@ IF~~THEN CVSandrJ SodDreams5
 ~The Hooded Man was in your dream as well? Interesting...It is hard to believe that Sarevok gave you that dream - the Hooded One however is alive...~
 =~...and he knows about your heritage...~
 =~...and that heritage is what interests him. Or better, what you make out of that heritage. He observes you and he stimulates you.~
-=~There are many bhaalspawns but he is focussing on you, or better said, you and Imoen. He wants to see how you develop, what your potential is.~
+=~There are many Bhaalspawns but he is focussing on you, or better said, you and Imoen. He wants to see how you develop, what your potential is.~
 END
 ++~Stop it - you start to sound like him already!~+ SodDreams6
 
@@ -314,7 +314,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ BDFin2
-~I have been a bad counselor, just once again. I should have seen it earlier.~
+~I have been a bad counsellor, just once again. I should have seen it earlier.~
 END
 ++~Seen what? ~ + BDFin3
 ++~Spit it out before it consumes you!~ + BDFin3
@@ -356,13 +356,13 @@ I_C_T BDLiia 1 BDImoenSanHurt
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Poisoned weapons as far as I can say.~ END
 
 EXTEND_BOTTOM BDeltan 4
-IF~InParty("CVSandr")~THEN REPLY~ That would be a question for my learned counselor, Sandrah of Waterdeep, right?~EXTERN CVSandrJ BDeltantalk
+IF~InParty("CVSandr")~THEN REPLY~ That would be a question for my learned counsellor, Sandrah of Waterdeep, right?~EXTERN CVSandrJ BDeltantalk
 END
 
 CHAIN
 IF~~THEN CVSandrJ BDeltantalk
 ~Not to be impolite, but it is an issue better discussed in privacy with <CHARNAME>.~
-==BDEltan~Mylady, are you withholding important information in this case?~
+==BDEltan~My lady, are you withholding important information in this case?~
 ==CVSandrJ~Be assured that I do no such thing, Duke Eltan, the slight suspicion I have would not help us currently and rather confuse some people. It would not concern your city but only <CHARNAME> anyway.~
 ==BDEltan~I trust Elminster's daughter to make the right choices here. So where were we?~EXTERN BDEltan 1
 
@@ -370,7 +370,7 @@ ADD_TRANS_ACTION BDMadele BEGIN 7 END BEGIN 0 END ~ SetGlobal("SanMadele","Globa
 
 I_C_T BDKhalid 36 SanSodHarpHere
 ==CVSandrJ IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~Khalid, I know that you and Jaheira are Harpers. Do you really expect me to believe you are here by coincidence?~
-==BDKhalid IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~I, uh, I d-don't know what you mean. We were just looking for a p-picnic spot... Sandrah?!! The good counselor of <CHARNAME>! (As always with Sandrah, you observe that Khalid's stuttering ceases immediately.)~
+==BDKhalid IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~I, uh, I d-don't know what you mean. We were just looking for a p-picnic spot... Sandrah?!! The good counsellor of <CHARNAME>! (As always with Sandrah, you observe that Khalid's stuttering ceases immediately.)~
 ==BDKhalid IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~Blast, I can't lie to you. The Harpers had word that the crusade might be heading this way. They sent us here to intercept the crusade and delay them until the Flaming Fist arrived.~
 ==CVSandrJ IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~Khalid, the Harpers have trusted a valid man. You will be a good commander in these troubled times.~
 ==BDKhalid IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~This means much to me from your lips, thank you, Sandrah.~
@@ -400,7 +400,7 @@ I_C_T BDCaelar 39 SanBdInfiltrate
 = ~<CHARNAME>, I propose to agree to go with her...~
 ==BDDelanc ~I'm glad we are in agreement, Lady Sandrah, your father would be proud of you.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~Shut up, de Lancie! We are not in agreement and my father would not even care to notice one like you.~
-=~<CHARNAME>, this whole action of the Crusade, of Caelar, had but one goal - to have you, respectively your blood, here today. We now have the chance to find out why and we have the chance to infiltrate the enemy right from the inside. Grab this chance, rely on our forces, you and your comrads - we need no army to win.~
+=~<CHARNAME>, this whole action of the Crusade, of Caelar, had but one goal - to have you, respectively your blood, here today. We now have the chance to find out why and we have the chance to infiltrate the enemy right from the inside. Grab this chance, rely on our forces, you and your comrades - we need no army to win.~
 ==BDDelanc IF~InParty("CVSandr")~THEN~Your arrogance shall be your downfall but my men and me will stay alive.~
 END
 
@@ -432,7 +432,7 @@ I_C_T BDSkie 63 SanSkieSoDBhaal
 ==BDSkie IF~InParty("CVSandr")~THEN~I can hear you very well, Sandrah, my ears are sharp.~
 ==CVSandrJ IF~InParty("CVSandr")~THEN~All your senses seem to be. Say, was it not mentioned your mother died when giving birth to you?~
 ==BDSkie IF~InParty("CVSandr")~THEN~What...OH, YOU...!!~
-==BDSkie IF~InParty("CVSandr")~THEN~<CHARNAME>, you should get rid of that witch, she's cracking up it seems. She seems to see bhaalspawns everywhere these days.~END
+==BDSkie IF~InParty("CVSandr")~THEN~<CHARNAME>, you should get rid of that witch, she's cracking up it seems. She seems to see Bhaalspawns everywhere these days.~END
 
 I_C_T BDMadele 7 SanDaggMothSoD
 ==CVSandrJ IF~InParty("CVSandr") GlobalGT("CVGodag","GLOBAL",5)~THEN~What was that woman's name?~
