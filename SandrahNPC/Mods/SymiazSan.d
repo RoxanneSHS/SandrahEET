@@ -22,7 +22,7 @@ END
 
 INTERJECT_COPY_TRANS UDSIMYAZ 36 SanprophGyth3
 == CVSANDRJ IF ~InParty("CVSandr") PartyHasItem("Misc8u")~THEN~ There is really no reason for hostility, priestess. The Elder Brain is no more as we defeated the brain eaters once we had commonly surprised the Illithids and escaped the arena. We are sufficiently equipped and have no reason to withhold a holy artefact from you. <CHARNAME>, I suggest to give them what they need and fought for and go our separate ways in peace.~
-== UDSIMYAZ IF ~InParty("CVSandr") PartyHasItem("Misc8u")~THEN~You do your race much honor, Sandrah, let us hear if <CHARNAME> is of the same nature.~
+== UDSIMYAZ IF ~InParty("CVSandr") PartyHasItem("Misc8u")~THEN~You do your race much honour, Sandrah, let us hear if <CHARNAME> is of the same nature.~
 END
 
 //Simyaz if not Salinithyl
@@ -40,7 +40,7 @@ DO~SetGlobal("SanProph","GLOBAL",6)~
 ==UDSIMYAZ~ No - but sometimes where you come from tells you were you will go.~
 ==CVSANDRJ~ That is a valid observation.~
 ==UDSIMYAZ~ You come directly from the one you serve and her line. Your path therefore is clear.~
-==CVSANDRJ~ You probably only had a short glance at my entries in the book, being more interested in your own record, I assume. I am only the grandchild of Mystra and I am that by my father Elminster, not by the motherline. Anyway, thank you for telling me. I will beg to <CHARNAME> to aid your people in your goal.~
+==CVSANDRJ~ You probably only had a short glance at my entries in the book, being more interested in your own record, I assume. I am only the grandchild of Mystra and I am that by my father Elminster, not by the mother-line. Anyway, thank you for telling me. I will beg to <CHARNAME> to aid your people in your goal.~
 ==UDSIMYAZ~ I err not but you may not know all about yourself as you have not seen the Book. Maybe you will see one day.~
 ==CVSANDRJ~ Is it possible for me to see it?~
 ==UDSIMYAZ~ It is found in a different place for every seeker who has a right to see. I cannot help you to find your path to it. This is all I can tell you, I know not more.~

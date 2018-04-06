@@ -34,7 +34,7 @@ DO~SetGlobal("SanTashiaB","GLOBAL",6)RealSetGlobalTimer("TashSanInt","LOCALS",15
 ==BTashia~(Sigh) Your diagnostic skills are fully intact, Sandrah. Almost over night the man at my side turned into his bad twin, caused by the tainted blood as I found out later.~
 ==BSandr~The heritage of Bhaal is a heavy burden and lets none of the heirs unchanged. However, it is my thorough believe and experience so far that each spawn can forge and control the power inherited in his and her way.~
 ==BTashia~You mean, if it turns out evil it's just because the person was evil even before that?~
-==BSandr~Not necessarily. The influence of Bhaal is an evil one and will change the bearer if he or she has not the strength, will and support to reject or modify it. We have seen the example of <CHARNAME>'s brother Sarevok whom we fought on the Sword Coast. In his case it were a step father and a power hungry advisor who nurished the call of the blood rather than help Sarevok control it.~
+==BSandr~Not necessarily. The influence of Bhaal is an evil one and will change the bearer if he or she has not the strength, will and support to reject or modify it. We have seen the example of <CHARNAME>'s brother Sarevok whom we fought on the Sword Coast. In his case it were a step father and a power hungry advisor who nourished the call of the blood rather than help Sarevok control it.~
 ==BTashia~Like you help <CHARNAME> to do it?~
 ==BSandr~I hope I do. <CHARNAME>'s essence of Bhaal seems to be a rather powerful portion. It could make <PRO_HIMHER> a force in the Realms in one way or the other. It is a fate and there is no choice to ignore it - but a possibility to forge it.~
 ==BTashia~Can you think of a way to revert on the path once chosen under Bhaal's influence?~

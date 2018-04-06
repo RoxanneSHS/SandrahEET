@@ -16,7 +16,7 @@ DO~ SetGlobal("SanSola","GLOBAL",12) RealSetGlobalTimer("SanSolaT","LOCALS",800)
 ==BSOLA~ Your words imply that you are ready to forgive me and maybe teach me better?~
 ==BSANDR~ Sure.~
 ==BSOLA~ I am aware up here relationship between male and female are different, alas I do not know how they are - especially not relating to one like you.~
-==BSANDR~ One like me? I am your companion in this party, I am this party's healer and counselor, mh, that about describes it.~
+==BSANDR~ One like me? I am your companion in this party, I am this party's healer and counsellor, mh, that about describes it.~
 ==BSOLA~In your disguise in Ust Natha you were considered to be a handmaiden of Lolth at least - if not even a matron's daughter. What would that relate to up here.~
 ==BSANDR~ Nothing that could be applied to me, Solaufein. I am a priestess of Mystra and the companion of <CHARNAME>, nothing else.~
 ==BSOLA~I have no reason to disbelieve you, even if it is hard to imagine you are not more than that. But as I take your words for what they are I will deal with you as my equal.~
@@ -48,7 +48,7 @@ DO~SetGlobal("SanSola","GLOBAL",16)RealSetGlobalTimer("SanSolaT","LOCALS",1000)~
 = ~ Let us put the past aside, Sandrah. Is poetry among the arts you enjoy?~
 ==BSANDR~ I am more into music and playing instruments.~
 ==BSOLA~ I heard that surfacers sing poetic words to matching tunes.~
-==BSANDR~ True, only my own voice is not made for that. Ah, but your soft pronounciation I heard on those poems may make a nice voice for singing.~
+==BSANDR~ True, only my own voice is not made for that. Ah, but your soft pronunciation I heard on those poems may make a nice voice for singing.~
 ==BSOLA~ Maybe we should try at a quiet moment, my dear, you play and I try singing.~
 ==BSANDR~ A new experience for all of us, a singing drow.~EXIT
 
@@ -56,12 +56,12 @@ CHAIN
 IF~Global("SanSola","GLOBAL",17)~THEN BSandr SanSolGods
 ~Your goddess and mine have much in common, Solaufein.~
 DO~SetGlobal("SanSola","GLOBAL",18)RealSetGlobalTimer("SanSolaT","LOCALS",3600)~
-==BSOLA~ Both are not easily understood by the broad masses as their portefolio and heritage is tainted for many.~
+==BSOLA~ Both are not easily understood by the broad masses as their portfolio and heritage is tainted for many.~
 ==BSANDR~ Yes, I have often found the mistrust to Mystra because also evil characters use her magic. Especially from those surfacers who claim to know all about good and evil.~
 ==BSOLA~ Those self-righteous paladins who claim that only a dead drow is a good drow?~
 ==BSANDR~ Yes, those and other like minded people. This is definitely not true for the disciples of Mystra.~
 ==BSOLA~ I have heard that often she and Eilistraee are worshipped in the same places.~
-==BSANDR~ Waterdeep, my hometown, is one of them. Even if I cannot say that I actually *worship* my goddess - I would rather claim I work for her goals and follow her example.~
+==BSANDR~ Waterdeep, my home town, is one of them. Even if I cannot say that I actually *worship* my goddess - I would rather claim I work for her goals and follow her example.~
 ==BSOLA~ You do not pray to her or expect her rewards for your service?~
 ==BSANDR~ Solaufein, I believe that the reward is in the Faerun we create through our deeds. Our life is here and now on this material plane. It is our responsibility - not the playground of the gods. Mystra's gifts aid me in my struggle to improve things and her example, that of my grandmother Midnight, shows me the way.~
 ==BSOLA~ If it's a better Faerun we would achieve it may be one for us, for elves and for drow.~
@@ -73,7 +73,7 @@ IF~Global("SanSola","GLOBAL",19)~THEN BSandr SanSolResp
 DO~SetGlobal("SanSola","GLOBAL",20)RealSetGlobalTimer("SanSolaT","LOCALS",1600)~
 ==BSOLA~I would think one is the source of power for the other. Eilistraee gives me the confidence and guides my way but it is me who takes the steps on that road.~
 ==BSANDR~ And that road, do you think it is defined already by your destiny?~
-==BSOLA~ A question I often ponder myself - is it all preset like some prophesies let us think or do we have the freedom of our own decisions? With your background, Sandrah, you must have given this question quite some thought, haven't you?~
+==BSOLA~ A question I often ponder myself - is it all pre-set like some prophesies let us think or do we have the freedom of our own decisions? With your background, Sandrah, you must have given this question quite some thought, haven't you?~
 ==BSANDR~My grandmother has been my inspiration and guidance in many situations, just like Eilistraee is for you. My heritage defines me - and where I come from is partly responsible for where I will go...still...~
 ==BSOLA~...partly, you said?~
 ==BSANDR~Yes, only partly. Take <CHARNAME>'s example, the Bhaal heritage and the prophesies of Alaundo. I do not believe in prohesies to tell us everything, they are just some vague hint of possibilities. Still there is no denying that <CHARNAME> - and we as well - will play an important role in the coming events. This is the *where we come from* part, Solaufein.~

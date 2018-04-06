@@ -13,22 +13,22 @@ END
 
 INTERJECT_COPY_TRANS CBSOUMJ1 27 SanCouns
 ==CBSOUMJ1 IF~ InParty("CVSandr")~ THEN~ YOUNG LADY!! WHO MIGHT YOU BE AND WHY ARE YOU NOT IN ARMOUR ACCORDING TO THE REGULATIONS?~
-== CVSANDRJ IF~ InParty("CVSandr")~ THEN~ Major, Sir, may I remind you of regulation 425-9-8 point 41, Sir. It exempts counselors of wearing army supplied equipment.~
-==CBSOUMJ1 IF~ InParty("CVSandr")~ THEN~ A counselor. Well, in this case...NO, WAIT!! Counselors may be engaged by commanding officers only, not by a simple private.~
+== CVSANDRJ IF~ InParty("CVSandr")~ THEN~ Major, Sir, may I remind you of regulation 425-9-8 point 41, Sir. It exempts counsellors of wearing army supplied equipment.~
+==CBSOUMJ1 IF~ InParty("CVSandr")~ THEN~ A counsellor. Well, in this case...NO, WAIT!! Counsellors may be engaged by commanding officers only, not by a simple private.~
 == CVSANDRJ IF~ InParty("CVSandr")~ THEN~ (Smiles gently at the major) Sir, were you not just about to promote <CHARNAME>?~
-==CBSOUMJ1 IF~ InParty("CVSandr")~ THEN~ (The major's grim face shows a slight smile as well.) You are in deed a clever little counselor, girl. The city needs helpers like you at the moment. PRIVATE, THE ARMY WILL NOT COMPENSATE FOR YOUR COUNSELOR NOR EQUIP HER BY ANY MEANS. KEEPING HER IS AT YOUR OWN EXPENSE!~
+==CBSOUMJ1 IF~ InParty("CVSandr")~ THEN~ (The major's grim face shows a slight smile as well.) You are in deed a clever little counsellor, girl. The city needs helpers like you at the moment. PRIVATE, THE ARMY WILL NOT COMPENSATE FOR YOUR counsellor NOR EQUIP HER BY ANY MEANS. KEEPING HER IS AT YOUR OWN EXPENSE!~
 END
 
 INTERJECT_COPY_TRANS CBSOUMJ3 6 SanCounsG
-==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ (The major smiles at Sandrah) I am quite aware, young lady, that the quick progress of our new captain has a bit to do with the support by his counselor.~
+==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ (The major smiles at Sandrah) I am quite aware, young lady, that the quick progress of our new captain has a bit to do with the support by his counsellor.~
 == CVSANDRJ IF~ InParty("CVSandr")~ THEN~ (Smiles gently at the major) Thank you for this compliment, Sir. Do not forget the rest of our companions who have each contributed their share.~
 ==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ It is easy to forget about much everything in the presence of a lovely lady such as you, Sandrah.~
 == CVSANDRJ IF~ InParty("CVSandr")~ THEN~ (Sandrah secretly slips away the folded note the major has let drop into her hand while shaking it.)~
-==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ I hope to see you soon, mylady.~
+==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ I hope to see you soon, my lady.~
 END
 
 INTERJECT_COPY_TRANS CBSOUMJ3 34 SanCounsHT
-==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ (The major winks at Sandrah) You will surely come up with the best decision having such a lovely counselor to assist you. (Sighs) How I envy you for that.~
+==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ (The major winks at Sandrah) You will surely come up with the best decision having such a lovely counsellor to assist you. (Sighs) How I envy you for that.~
 == CVSANDRJ IF~ InParty("CVSandr")~ THEN~ (Whispers to the major) Do not complain, Sergio, be happy with what has been so far - and what will be when we return triumphant.~
 ==CBSOUMJ3 IF~ InParty("CVSandr")~ THEN~ (Blows Sandrah a secret kiss.) ~
 END
@@ -91,7 +91,7 @@ END
 
 APPEND CBSouMJ2
 IF~~THEN BEGIN 54a
-SAY~As a commissioned officer, you have now offivially the rights to your own equipment and uniform, though I would appreciate it if you did wear something appropriate for your rank. ~ 
+SAY~As a commissioned officer, you have now officially the rights to your own equipment and uniform, though I would appreciate it if you did wear something appropriate for your rank. ~ 
 IF~~THEN DO~SetGlobal("CbPartyIsInSoubarMilitia","GLOBAL",5) SetGlobal("CbDeactivateOtherCaptains","GLOBAL",1) SetGlobal("CbPartyHuntsSpy","GLOBAL",3) SetGlobal("CbASpyEscaped","GLOBAL",1) CreateCreatureOffScreen("CB287CPT",0)~EXIT
 END
 END

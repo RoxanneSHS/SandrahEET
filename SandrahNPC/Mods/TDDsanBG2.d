@@ -7,12 +7,12 @@ END
 
 IF ~Global("SanOrgotrp","LOCALS",1)~ THEN BEGIN SanOrgo1
 SAY~ Now we have two choices, <CHARNAME>, to let that sorcerer rot here further or to pretend we fall into the trap so we can see what his real plan is and to destroy him permanently.~
-IF~~THEN REPLY~ You are fuelling my own suspicion, counselor, I did not really believe that trapped elf story myself. After all this is a mighty sorcerer's former tower. Proposals?~ DO~SetGlobal("SanOrgotrp","LOCALS",2)~  GOTO SanOrgo2
+IF~~THEN REPLY~ You are fuelling my own suspicion, counsellor, I did not really believe that trapped elf story myself. After all this is a mighty sorcerer's former tower. Proposals?~ DO~SetGlobal("SanOrgotrp","LOCALS",2)~  GOTO SanOrgo2
 IF~~THEN REPLY~ What? You think there is a trap hidden here, the poor elf is but a bait for us?~DO~SetGlobal("SanOrgotrp","LOCALS",2)~ GOTO SanOrgo2
 END
 
 IF ~~ THEN BEGIN SanOrgo2
-SAY~ We were warned of Orgoth's faible for contigency plans. I suspect the elf is one of those. Give him the cure and he will surely reveal himself as this tower's owner. Knowing this, I still propose we will play his little game as only by this we will find out about his plan and the demons he summoned.~
+SAY~ We were warned of Orgoth's faible for contingency plans. I suspect the elf is one of those. Give him the cure and he will surely reveal himself as this tower's owner. Knowing this, I still propose we will play his little game as only by this we will find out about his plan and the demons he summoned.~
 =~Our party is strong enough to cope with any demonic foe and it is the only way I see how we can remove the threat on Riativin permanently.~
 IF~~THEN REPLY~Thanks for the advice but I'd rather not unbottle this djinn, if you know what I mean.~ EXIT
 IF~~THEN REPLY~Fine, we will be well prepared when he attempts to escape.~EXIT
@@ -22,7 +22,7 @@ END
 IF ~Global("SanOrgotrp","LOCALS",3)~ THEN BEGIN SanOrgo3
 SAY~ This was the final evidence if we needed some more. How would he know about the laboratory or its functions if he were not Orgoth himself?~
 IF~~THEN REPLY~ He may have been his close assistant, but you are right, chances are thin that he really is what he pretends to be - this seems to be a well arranged trap.~ DO~SetGlobal("SanOrgotrp","LOCALS",4)~  EXIT
-IF~~THEN REPLY~ If you want to see a ghost, my stubborn little priestess, you are uncurable by even the best healer - which is yourself anyway, hihi.~DO~SetGlobal("SanOrgotrp","LOCALS",4)~EXIT
+IF~~THEN REPLY~ If you want to see a ghost, my stubborn little priestess, you are incurable by even the best healer - which is yourself anyway, hihi.~DO~SetGlobal("SanOrgotrp","LOCALS",4)~EXIT
 END
 
 IF~Global("SanTDDCali","LOCALS",1)~THEN BEGIN SanCaliHOut1
@@ -33,7 +33,7 @@ IF~~THEN REPLY~ We follow a higher goal here, Sandrah, one set by your own fathe
 END
 
 IF~~ THEN BEGIN SanCaliHOut2
-SAY~The reason the pascha wants him dead is exactly that he is not what you just called him. It seems he cares for those who are unjustly incarcerated and tortured. The blodshed and killing we see each day and even the harsh environment we find ourselves in right here should never let us forget our own beliefs and justifications.~
+SAY~The reason the pascha wants him dead is exactly that he is not what you just called him. It seems he cares for those who are unjustly incarcerated and tortured. The bloodshed and killing we see each day and even the harsh environment we find ourselves in right here should never let us forget our own beliefs and justifications.~
 IF~~THEN REPLY ~Well, if there is an alternative I swear we will find and take it.~EXIT
 END
 
@@ -103,7 +103,7 @@ IF~~THEN REPLY~A kind of family meeting in a remote sense, isn't it.~ GOTO Alus2
 END
 
 IF~~THEN BEGIN Alus2
-SAY~Being one of the seven sisters, the daughters of Mystra, she is indeed sibling of Qilue Veladorn in my anchestory. She is the Defender of Silverymoon and also became the protector of Drizzt when he came to the surface.~
+SAY~Being one of the seven sisters, the daughters of Mystra, she is indeed sibling of Qilue Veladorn in my ancestry. She is the Defender of Silverymoon and also became the protector of Drizzt when he came to the surface.~
 =~I am afraid much more of my so-called *family* may be involved in here according to those words we have heard.~
 IF~~THEN REPLY~...some grandfather you are not particularly fond of...~DO ~SetGlobal("SanAlust","DD6001",3) ~EXIT
 END
@@ -180,19 +180,19 @@ END
 
 APPEND  Pibble2
 IF~Global("Sanresc","LOCALS",0)~THEN BEGIN  Sanrescu
-SAY~ Your heart is golden, mylady, and this gnome owes you his life. I cannot repay you but I am sure you would not even accept anything from me but my thanks. I will leave this cursed place for a more peaceful dwelling. Good luck on your mission, my friends.~
+SAY~ Your heart is golden, my lady, and this gnome owes you his life. I cannot repay you but I am sure you would not even accept anything from me but my thanks. I will leave this cursed place for a more peaceful dwelling. Good luck on your mission, my friends.~
 IF~~THEN DO ~ AddexperienceParty(5500) EscapeArea()~EXIT
 END
 END
 
 INTERJECT_COPY_TRANS Alust02 1 SanKnownAlust
-==Alust02 IF~ InParty("CVSandr") ~THEN ~ Greetings as well to you, Sandrah of Waterdeep. It is well known that you have become <CHARNAME>'s steady companion and counselor. Mayhaps some turns that the recent events have taken can be accounted to you in some way.~
+==Alust02 IF~ InParty("CVSandr") ~THEN ~ Greetings as well to you, Sandrah of Waterdeep. It is well known that you have become <CHARNAME>'s steady companion and counsellor. Mayhap some turns that the recent events have taken can be accounted to you in some way.~
 ==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ Or rather to the goddess I serve, Mylady.~
 ==Alust02 IF~ InParty("CVSandr") ~THEN ~ (Smiles) The two are not far apart and coming closer almost daily. ~
 END
 
 INTERJECT_COPY_TRANS Alust02 14 SanKnownAlust1
-==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ It seems that our anchestors have left a lot for us to repair on the material plane, <CHARNAME>.~
+==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ It seems that our ancestors have left a lot for us to repair on the material plane, <CHARNAME>.~
 ==Alust02 IF~ InParty("CVSandr") ~THEN ~ I do not think you call the Mad God your grandfather more often than <CHARNAME> relates to Bhaal as father.~
 ==CVSandrJ IF~ InParty("CVSandr") ~THEN ~ You are right, Lady Alustriel, but it will not keep me from regarding their deed as some kind of family business that needs to be cleaned up.~
 END
@@ -209,7 +209,7 @@ DO~SetGlobal("SanMystApp","arpo31",2)~
 ==CVSANDRJ ~ So the attempt of your former lover was a real danger for you, Mystra?~
 ==SANMYST~ You know well by now that we need the aid and the faith of the mortals to aid us in all that happens on the Prime Plane, Sandrah. I am no longer Midnight, I need you and your father, as well as <CHARNAME> when a danger arises from Toril. ~
 ==CVSANDRJ ~He would have turned against you next, Mystra, the power who stands in his way. Then we have slain a god today?~
-==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her dispair. The cunning weaseling Cyric had left his prime shell when it became apparent to him whom he was facing.~
+==SANMYST~ No. You killed or rather freed a poor elven woman who was misused much to her despair. The cunning weaselling Cyric had left his prime shell when it became apparent to him whom he was facing.~
 ==CVSANDRJ ~The mighty Bhaalspawn <CHARNAME>!~
 ==SANMYST~ No, I was referring to you, Sandrah.~
 ==CVSANDRJ ~Really....?~

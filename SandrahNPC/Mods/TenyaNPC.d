@@ -12,7 +12,7 @@ IF~~THEN B2#TenyJ JenTeny1
 =~She kills also very clear. No remorse. That's funny as well.~
 END
 ++~*Funny? I could laugh myself to death.~EXTERN B2#TenyJ 111
-++~The githyanki make sure they have eye contact when they kill you. I'm sure nobody laughs anymore when she looks them in the eye.~EXTERN B2#TenyJ 111
+++~The githyanki make sure they have eye contact when they kill you. I'm sure nobody laughs any more when she looks them in the eye.~EXTERN B2#TenyJ 111
 
 CHAIN
 IF~~THEN B2#TenyJ SanTeny1
