@@ -4,7 +4,7 @@ IF WEIGHT #-3~Global("SanAerJon","LOCALS",2)~THEN Baerie25 MetJon1
 DO~SetGlobal("SanAerJon","LOCALS",3) RealSetGlobalTimer("SanAerieToBT","LOCALS",1800)~
 ==BSandr25~Do not forget he is an elf - or was one, just like you.~
 ==Baerie25~This is...he is further from elvish than anyone I can imagine.~
-==BSandr25~You of all should be able to understand what pain and loss can cause to an elvish soul. I can remember a time when you felt not being part of your kin anymore.~
+==BSandr25~You of all should be able to understand what pain and loss can cause to an elvish soul. I can remember a time when you felt not being part of your kin any more.~
 ==Baerie25~As always...you are right. But I cannot really compare myself to that terrible being he has become.~
 ==BSandr25~We never gave up hope for your case.~
 ==Baerie25~Oh, Sandrah, I know YOU never give up hope, not even here. I wish often I had your strength.~
@@ -23,5 +23,5 @@ DO~SetGlobal("SanAerPre","LOCALS",3) ~
 ==BSandr25~I am sure there will be one for you and the little one...~
 ==Baerie25~And <CHARNAME>? Will we all be together, you think?~
 ==BSandr25~He will be a good father, so much I know for sure - whether a quiet family life may be granted to him is another question. Do not worry too much, Aerie, when the time comes you will have friends and support to find a solution.~
-==Baerie25~I knew it would not be easy, Sandrah, I'm not the little girl anymore. I am aware of <CHARNAME>'s heritage even if both of us cannot tell where it will lead any of us. But I am confident, yes, ...and we are not alone. There will  be a good ending.~DO~ActionOverride("CVSAndr",AddSpecialAbility("CVDra26")~EXIT
+==Baerie25~I knew it would not be easy, Sandrah, I'm not the little girl any more. I am aware of <CHARNAME>'s heritage even if both of us cannot tell where it will lead any of us. But I am confident, yes, ...and we are not alone. There will  be a good ending.~DO~ActionOverride("CVSAndr",AddSpecialAbility("CVDra26")~EXIT
 

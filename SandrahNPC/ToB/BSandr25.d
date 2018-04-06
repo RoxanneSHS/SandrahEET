@@ -25,10 +25,10 @@ IF~~THEN REPLY~Anything I haven't thought of myself?~ DO~ SetGlobal("SanSerBha",
 END
 
 IF~~THEN BEGIN SanSearchServ2
-SAY~ We learned about this Allience of Five and their harvesting of Bhaal's essence by killing other spawns on a large scale. This siege here is most likely a part of that campagne. But there is another player to be observed, we heard about him or her in the Elven Grove already.~
+SAY~ We learned about this Alliance of Five and their harvesting of Bhaal's essence by killing other spawns on a large scale. This siege here is most likely a part of that campaign. But there is another player to be observed, we heard about him or her in the Elven Grove already.~
 IF~~THEN REPLY~ Sure, it's me.~ GOTO SanSearchServ3
 IF~~THEN REPLY~ There was a servant of Bhaal mentioned.~ GOTO SanSearchServ3
-IF~Global("TalkedToRielev","GLOBAL",2)~THEN REPLY~ The hooded figure that approched Irenicus with the offer?~ GOTO SanSearchServ3
+IF~Global("TalkedToRielev","GLOBAL",2)~THEN REPLY~ The hooded figure that approached Irenicus with the offer?~ GOTO SanSearchServ3
 END
 
 IF~~THEN BEGIN SanSearchServ3
@@ -59,13 +59,13 @@ IF~~ THEN BEGIN SanSearchServ6
 SAY~ This Melissan we met seems to know a lot about the Bhaalspawns, she even knew you although you never met. She claims to have brought a lot of weaker Bhaalspawns to the safety of this place. Maybe she brought a herd of sheep to the slaughterhouse. ~
 =~We know little, <CHARNAME>, and I do not want to discredit possible friends but we must be careful as we know there is a traitor infiltrating all who are involved here. Do not trust anyone who does not deserve it.~
 IF~~THEN REPLY~ At least I know of one whom I can always trust. (You kiss her.)~EXIT
-IF~~THEN REPLY~ We must be very careful and I know that you are no doomsayer. I will keep my eyes open - and you continue to bring every observation that may help to my attention.~ EXIT
+IF~~THEN REPLY~ We must be very careful and I know that you are no doom sayer. I will keep my eyes open - and you continue to bring every observation that may help to my attention.~ EXIT
 IF~~THEN REPLY~I found this Melissan quite attractive, wow. I am not going hysterical to see a traitor and foe in every new face I see from now on.~EXIT
 IF~~THEN REPLY~ At least I know of one whom I can always trust. (You nod to her.)~EXIT
 END
 
 IF~ Global("SanBaltMelis","GLOBAL",4)~ THEN BEGIN AmaSanBalt1
-SAY~In this affair there is betrayal and lies whereever we come and the deeper we get involved.~
+SAY~In this affair there is betrayal and lies wherever we come and the deeper we get involved.~
 IF~~THEN REPLY~ It is indeed confusing.~ GOTO AmaSanBalt2
 IF~~THEN REPLY~ You have mistrusted Melissan from the beginning, didn't you?~ GOTO AmaSanBalt2
 IF~~THEN REPLY~ What are you referring to now?~ GOTO AmaSanBalt2
@@ -117,7 +117,7 @@ SAY~ Cyric fell in love with Midnight during their adventures. As her heart belo
 =~Afterwards he played the caring and soothing companion to help Midnight in her grief and by that won her heart.~
 =~ Mask as Godsbane hid Kelemvor's soul from Cyric and when the adventurers finally succeeded in their final mission, Ao judged it fair to elevate Kelemvor to godhood and give him the Realm of the Dead. Only then and after she had given birth to their son, Mystra found out the truth about the death of her former lover.~
 IF~~THEN REPLY~And she never forgave Cyric, who had become the Mad God by that time anyway.~EXIT
-IF~~THEN REPLY~Thus the two became archenemies among the gods and we have to suffer the consequences.~EXIT
+IF~~THEN REPLY~Thus the two became arch-enemies among the gods and we have to suffer the consequences.~EXIT
 END
 
 IF~Global("SanGorp","CVUMO6",1)~ THEN BEGIN  SanGorp1
@@ -128,7 +128,7 @@ END
 
 IF~~ THEN BEGIN  SanGorp2
 SAY~ Once they thought us to be just an adventuring band like themselves. Well, we never were and we surely will not end like this.~
-IF~~THEN REPLY~I was forced to this life and it was always more than gold or fame we were persuing, so much is true. But our end...?~GOTO SanGorp3
+IF~~THEN REPLY~I was forced to this life and it was always more than gold or fame we were pursuing, so much is true. But our end...?~GOTO SanGorp3
 END
 
 IF~~ THEN BEGIN  SanGorp3
@@ -145,7 +145,7 @@ IF~~THEN REPLY~A good question, I was already wondering a bit myself.~ GOTO SanC
 END
 
 IF~~THEN BEGIN SanCyrMis2
-SAY~The acting god with Bhaal's portefolio has a large interest in the outcome of the Bhaal war. Any successor will threaten him immediately.~
+SAY~The acting god with Bhaal's portfolio has a large interest in the outcome of the Bhaal war. Any successor will threaten him immediately.~
 IF~!Dead("Balth")~THEN REPLY~ Hard to imagine he favours Balthazar.~GOTO SanCyrMis3
 IF~~THEN REPLY~ He has a granddaughter of sorts...~ GOTO SanCyrMis4
 IF~~THEN REPLY~ His interest must be that they kill each other without anyone strong enough to finish the race.~ GOTO SanCyrMis5
@@ -167,7 +167,7 @@ IF~~THEN DO~SetGlobal("SanGodInvolve","GLOBAL",5)~GOTO SanCyrMis6
 END
 
 IF~~THEN BEGIN SanCyrMis6
-SAY~Cyric would favour a combatant who has no interest to adopt Bhaal's portefolio should he or she be successful in the end. The Bhaalspawn to stop the return of Bhaal.~
+SAY~Cyric would favour a combatant who has no interest to adopt Bhaal's portfolio should he or she be successful in the end. The Bhaalspawn to stop the return of Bhaal.~
 IF~~THEN REPLY~Would that not be me?~ GOTO SanCyrMis7
 IF~!Dead("Balth")~THEN REPLY~That's either me or Balthazar.~ GOTO SanCyrMis7
 END
@@ -183,12 +183,12 @@ END
 //_===================================================================================
 
 IF~ Global("RtFWait","cvrtf2",1)~ THEN BEGIN StartRtF1
-SAY~ This stuff you litter all around reminds me of those adventuring days we had together - and our former comrads as well.~
+SAY~ This stuff you litter all around reminds me of those adventuring days we had together - and our former comrades as well.~
 IF~~THEN REPLY~ You have never changed for me, Sandrah, and I keep calling you by that name even if you are Mystra now.~DO~SetGlobal("RtFWait","cvrtf2",1) RealSetGlobalTimer("RtFWaitDel","cvrtf2",70)~ GOTO StartRtF2
 END
 
 IF~~  THEN BEGIN StartRtF2
-SAY~(Smiles) You still feel like my wonderful cmpanion you ever were, my *God*. It is one of those little privileges I made AO grant us for our services.~
+SAY~(Smiles) You still feel like my wonderful companion you ever were, my *God*. It is one of those little privileges I made AO grant us for our services.~
 IF~~THEN REPLY~ You have a lot of power up here and we do much together that I never thought was possible - if you were not a goddess. Was it part of your deal with the Overlord that despite that all I have retained much of my human feelings - including my urge for roaming and adventuring?~GOTO StartRtF3
 END
 
