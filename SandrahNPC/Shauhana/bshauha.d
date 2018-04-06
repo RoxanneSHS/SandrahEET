@@ -35,7 +35,7 @@ IF ~~ THEN REPLY ~ Please tell us your story then, Shauhana, we sympathise with 
 END
 
 IF~~ THEN BEGIN ShauStor2
-SAY ~ I am the sixth child born to my parents and the only one that was *cursed* from their viewpoints with not only halfbred appearance but revealing my human roots. I was an outcast with the Clan as well as within my own family.~
+SAY ~ I am the sixth child born to my parents and the only one that was *cursed* from their viewpoints with not only halfbreed appearance but revealing my human roots. I was an outcast with the Clan as well as within my own family.~
 = ~ The winter when I was twelve was the worst the Clan had to encounter in our mountains since many generations. The Clan came near extinction from the famine and the enduring cold. It was then, that my father who was one of the few who had managed to keep his family alive as a whole, decided to slaughter me on behalf of the rest.~
 IF~~THEN REPLY ~ Barbaric. You were his own child after all.~ GOTO ShauStor3
 END
@@ -107,7 +107,7 @@ DO ~ SetGlobal("SanShauOrcStaff","GLOBAL",7) ~
 == BSandr ~ Would it be a great shock for you to think that your father maybe was not your blood father?~
 == BSHAUHA ~ I am ork!!! If I were not, what would I be then?~
 == BSandr ~ After the Time of Troubles many an unwed mother claimed her offspring to be god's blood. The same for mothers that were not always true to their husbands.~
-== BSHAUHA ~ Ha, forget it. Not my mother. She was my father's wife truely, I give you an oath on that. But still I am so different. Which god would leave his child with the orcs and let it become a pit slave? Urrgh. This is all a bad dream.~
+== BSHAUHA ~ Ha, forget it. Not my mother. She was my father's wife truly, I give you an oath on that. But still I am so different. Which god would leave his child with the orcs and let it become a pit slave? Urrgh. This is all a bad dream.~
 == BSandr ~ (Takes Shauhana in her arms.) If there is any truth in it, we will find out. Maybe it was just that arch shaman's trick to hit a weak spot in you. ~
 == BSHAUHA ~ You are right. Whatever - I am what I am. And I will leave Clan's land behind me now. With you.~
 EXIT
@@ -129,7 +129,7 @@ DO ~  SetGlobal("SanSharkta","GLOBAL",3) ~
 == BSandr ~ A very, very large water, like a sea you can journey on for many, many days. When you go to the Sword Coast, it is bounded in the west by an ocean that goes for weeks of travel, all water.~
 == BSHAUHA ~ (Laughs harsh) Those bloody foolish orcs! They want to rule Toril and have not even heard of the *ocean*. Brage said he found the book on a prat that came from the ocean and he killed him in a fight.~
 == BSandr ~ A prat?~
-== BSHAUHA ~ Another strange word, yes. Brage said those are thiefs and murderers.~
+== BSHAUHA ~ Another strange word, yes. Brage said those are thieves and murderers.~
 == BSandr ~ A pirate? A thief on the sea and the ocean.~
 == BSHAUHA ~ Yes, yes. Makes that sense to you?~
 == BSandr ~ Mmm. A book of this kind found on a pirate. Pirates rob anything they can get. So that does not mean much of a trace. This book is strange for its contents and its two languages. As far as I see, it is a very old elfish book - or rather a copy of it. Someone started to translate the old language that is not even spoken by the elves of today to human language. But the translation has not been finished.~
@@ -145,7 +145,7 @@ DO ~  SetGlobal("SanSharkta","GLOBAL",5) ~
 == BSHAUHA ~ What does it say? Oh, Sandrah please?~
 == BSandr ~ You are trembling all over Shauhana. What excites you so about the old legend?~
 == BSHAUHA ~ Does it...does it tell you how I can get restored by Sharkta Fai?~
-== BSandr ~ It will take me some time to decipher the old text. I have to compare each symbol to a symbol from an ancient relict that may exist elsewhere and for which we know what it means. Nobody knows the ancient signs anymore.~
+== BSandr ~ It will take me some time to decipher the old text. I have to compare each symbol to a symbol from an ancient relict that may exist elsewhere and for which we know what it means. Nobody knows the ancient signs any more.~
 == BSHAUHA ~ You must find it out, Sandrah! PLEASE! I may get healed and be a real being. We must find out how to get inside!~
 == BSandr ~ Get inside? It is a very old legend. Who knows if it really exists. I have sworn to find a way to help you, Shauhana, but do not set your hopes on the dreams of an old race.~
 == BSHAUHA ~ It is also knowledge of the Clan. It exists. I know where it is but not how to get inside.~
@@ -171,11 +171,11 @@ END
 
 CHAIN
 IF~~ THEN BSHAUHA Sharkta4
-~ The road goes up into the mountains and the endless ice. It starts in the north of the old waysign. My tutor used an orcish amulet to hold off the creatures of the ice. I was small then and the monsters seemed enourmous. We do not have the amulet but we are a strong party.~
+~ The road goes up into the mountains and the endless ice. It starts in the north of the old way sign. My tutor used an orcish amulet to hold off the creatures of the ice. I was small then and the monsters seemed enormous. We do not have the amulet but we are a strong party.~
 == BSandr ~ None of us would be scared by creatures of the ice. We have fought many types of monsters for a just purpose. Still it would help to be prepared if we knew what to face.~
-== BSHAUHA ~ Yetis. Enourmous creatures of incredible strength. And ice cretures, golems that freeze you but maybe can be destroyed with your hammer. Fierce winter wolves and a tribe of hunter orcs.~
+== BSHAUHA ~ Yetis. Enormous creatures of incredible strength. And ice creatures, golems that freeze you but maybe can be destroyed with your hammer. Fierce winter wolves and a tribe of hunter orcs.~
 == BSandr ~ Sounds like nothing we cannot overcome, have faith, Shauhana.~
-== BSHAUHA ~ I do have. It will just take us a lot of fighting, as the road is long and there are many oponents to be met. But we will succeed in the end.~
+== BSHAUHA ~ I do have. It will just take us a lot of fighting, as the road is long and there are many opponents to be met. But we will succeed in the end.~
 END
 ++ ~ I agree. But what is the purpose in the end? Sandrah, what does the book tell us about Sharkta Fai? I will not risk all of our lives to chase a legend.~ + Sharkta5
 ++ ~ (Sigh.).~ + Sharkta5
@@ -188,9 +188,9 @@ IF~~ THEN BSHAUHA Sharkta5
 == BSHAUHA ~ But I am not fallen and my time for the Other World is not now! The fountain will restore me and then kill me afterwards?~
 == BSandr ~ The ritual states, that the fountain is only for the fallen. The Fountain's Guardian welcomes them when restored and lets them into the Other World. He does not allow a living to perform the ritual.~
 == BSHAUHA ~ So it is all in vain. Brage was indeed kissed by the stars to believe he would find healing in Sharkta Fai.~
-== BSandr ~ There is another paragraph on that topic in the book, that gives me some hope. And also another lore I found in my own encyclopedia about a necromancer's analysis on Sharkta Fai. They believe, that a living who goes into the fountain time after time will gain eternal life. If the Guardian does not insist on his right to take him to the Other World, that is.~
+== BSandr ~ There is another paragraph on that topic in the book, that gives me some hope. And also another lore I found in my own encyclopaedia about a necromancer's analysis on Sharkta Fai. They believe, that a living who goes into the fountain time after time will gain eternal life. If the Guardian does not insist on his right to take him to the Other World, that is.~
 == BSHAUHA ~ But, but I do not want eternal life, I just want to be healed for the rest of what is this life.~
-== BSandr ~ Right. And this is why I think we can succeed. We will bring your orc teacher's body for his journey to the Other World. He has fallen while defending you, a gloriuos deed for which he deserves the entry. If we persuade the Guardian that he died for you and that you need just a drop from the fountain to be healed, we will be heard. The necromancers are greedy, they just want too much. We only ask for little and have earned it.~
+== BSandr ~ Right. And this is why I think we can succeed. We will bring your orc teacher's body for his journey to the Other World. He has fallen while defending you, a glorious deed for which he deserves the entry. If we persuade the Guardian that he died for you and that you need just a drop from the fountain to be healed, we will be heard. The necromancers are greedy, they just want too much. We only ask for little and have earned it.~
 END
 ++ ~ We will do as Sandrah proposed. Even if the Guardian refuses this little gift, you will have done your last service for your teacher who gave his life for you.~EXIT
 ++ ~ I hope all of the will turn out profitable in the end.~EXIT
@@ -248,7 +248,7 @@ DO~ SetGlobal("Shamyrkfound","GLOBAL",6)RealSetGlobalTimer("ShaktTime","GLOBAL",
 == BSHAUHA ~ Yes, he was Myrkul's son - and I have his blood in me.~
 END
 ++~ So we know now, why the Guardian and others called you a godchild, Shauhana.~ + MyrkamSt3
-++~ (Shake your head in disbekief) Is there anyone left in the Realms these days not claiming to be a godchild?.~ + MyrkamSt3
+++~ (Shake your head in disbelief) Is there anyone left in the Realms these days not claiming to be a godchild?.~ + MyrkamSt3
 
 CHAIN
 IF ~~ THEN BSHAUHA MyrkamSt3
@@ -312,7 +312,7 @@ EXIT
 CHAIN 
 IF ~~ THEN BSHAUHA ShauWallCall1
 ~ Not all orcs are enemies for me. There seems to be some interest for me from those who have not forsaken my grandfather and his visions.~
-== BSandr ~ There is again emphasis on your nature as a godchild as well as on your decendence from Ghotal. The Clans can surely not harm you here in the city, but you may be able to find out more about your background.~
+== BSandr ~ There is again emphasis on your nature as a godchild as well as on your progeny from Ghotal. The Clans can surely not harm you here in the city, but you may be able to find out more about your background.~
 END
 ++ ~ We have our own mission, Shauhana, and maybe it is not possible to follow the requests of that blind seer and the warlord. But we will accompany you at least to the slums to find out what they really know and want.~ + ShauWallCall2
 IF~ !InParty("Minsc")~ THEN REPLY~ This is leading us too far off from our own mission, Shauhana. I hope you understand that you will be on your own when you follow the seer's request.~ + ShauWallCall3
@@ -414,7 +414,7 @@ DO~ SetGlobal("SanShauMinsc","GLOBAL",15) RealSetGlobalTimer("SanShauMinTi","GLO
 == Pellig~ (The telepathic voice hits you unaware and your head almost seems to burst from the intensity of the waves.)~
 == Boo ~I need your advice, old friend, now that my mission seems to near its end.~
 == Pellig~ You think I will be able to provide you with such, Boolerion?~
-== Boo ~You are the oldest and highest ranked of our Goddess' comissaries, Pelligram, closer to her than anyone else among us.~
+== Boo ~You are the oldest and highest ranked of our Goddess' commissaries, Pelligram, closer to her than anyone else among us.~
 == Pellig~  Tell me and we will see.~
 == Boo ~ My mission to unite my ward with the godchild appears to be successful.~
 == Pellig~ Congratulations for that, Boolerion - even if I sense that you may not be as happy about it as one would be in your place. ~
@@ -452,8 +452,8 @@ an' Amnish lace...' ~
 == BMINSC~ Not strange, Shauhana, but very wonderful. Let me tell you, nice orc girl, you cannot know such, poor thing that you were.~
 =~ Every good Rashemi girl needs a lot of ribbons to put in her hair to dance at Midsummer Festival! Ah, the Midsummer Festivals! Minsc misses them a lot! Minsc drank more sweet meads than everyone else and jumped the highest. O, jump over the tall bonfires, holding a nice girl by her hand...~
 == BSHAUHA ~ For an orc girl to be decorated with a ribbon would mean she will be sacrificed to Gruumsh.~
-== BMINSC~ Orcs should be kicked in the butt for doing such a thing to a girl. There are nice orc girls who deserve to be treated much better than any orcman can. Think of nicer things, Shauhana, think of a festival that is great fun for all good folk. But the crones back in Rahemen always try to find Minsc a betrothed after the bonfire dance. They say that no big and strong man like me should be without a good woman to look after him. I had to go to my dajemma before that. A married man cannot travel far from his home, and no berserker is a berserker, if he does not go to a dajemma. I think they would have me wed the first Midsummer after I return. Minsc looks even bigger in his armor than naked.~
-== BSHAUHA ~(Blushes) Your customs are truely nicer than orcish ones, for a girl, I mean.~
+== BMINSC~ Orcs should be kicked in the butt for doing such a thing to a girl. There are nice orc girls who deserve to be treated much better than any orcman can. Think of nicer things, Shauhana, think of a festival that is great fun for all good folk. But the crones back in Rahemen always try to find Minsc a betrothed after the bonfire dance. They say that no big and strong man like me should be without a good woman to look after him. I had to go to my dajemma before that. A married man cannot travel far from his home, and no berserker is a berserker, if he does not go to a dajemma. I think they would have me wed the first Midsummer after I return. Minsc looks even bigger in his armour than naked.~
+== BSHAUHA ~(Blushes) Your customs are truly nicer than orcish ones, for a girl, I mean.~
 == BMINSC~ For a man as well.~
 ==x#setta~ A blue one like the eyes of this northern girl, sir? Trust an expert, it will look just sooo beautiful on her.~
 == BSHAUHA ~You mean me, lady?~
@@ -467,7 +467,7 @@ EXIT
 
 CHAIN
 IF~Global("SanShaubogon","LOCALS",2)~ THEN BSHAUHA BooKidnap1
-~I wonder if the mighty warrior would persue another being apart from Boo in the same way, should he ever lose it...~
+~I wonder if the mighty warrior would pursue another being apart from Boo in the same way, should he ever lose it...~
 DO~SetGlobal("SanShaubogon","LOCALS",3)~ 
 == BMINSC~ There is at least one for whom Minsc would go down to the Nine Hells and kick every Demon's butt until he gets her back.~
 == BSHAUHA ~ Her?~
@@ -483,7 +483,7 @@ IF~ Global("SanShauMinsc","GLOBAL",22)~ THEN BSHAUHA MinscHurt
 ~Oh, if I only could learn some healing spells like Sandrah has them to help my wounded berserker!~
 DO~SetGlobal("SanShauMinsc","GLOBAL",23)RealSetGlobalTimer("SanShauMinTi","GLOBAL",1200)~
 == BMINSC~ (Minsc carelessly smears the blood from the small wound at his eyebrow all over his forehead.)~
-== BSHAUHA ~ (Shauhana dashes to him, hastily tearing out a cloth and her waterbottle on the way.) Hold still, Minsc, let me take care of it with the little paraphernalia I have got to help you.~
+== BSHAUHA ~ (Shauhana dashes to him, hastily tearing out a cloth and her water bottle on the way.) Hold still, Minsc, let me take care of it with the little paraphernalia I have got to help you.~
 == BMINSC~But, Shauhana, this is nothing - just a tiny scratch...~
 == BSHAUHA ~ Ssssh, do not resists or you will lose even more precious blood, my hero.~
 == BMINSC~ I will let you have it your way, dear, still I guess you overreact a bit.~
@@ -511,7 +511,7 @@ CHAIN
 IF~Global("SanShauMinsc","GLOBAL",28)~ THEN PELLIG PellBooShau
 ~Boolerion, old friend, are you looking for a place to rest?~
 DO~SetGlobal("SanShauMinsc","GLOBAL",29)~
-==Boo~ Yes, Pelligram, it seems that Minsc' bedroll will be occupied from now on and not a very save place for me in my miniature body anymore - not with those activities going on there almost the whole night.~
+==Boo~ Yes, Pelligram, it seems that Minsc' bedroll will be occupied from now on and not a very save place for me in my miniature body any more - not with those activities going on there almost the whole night.~
 ==Pellig~Love making between the creatures of the prime is like that, I can tell you stories...~
 ==Boo~ With your Sandrah I can imagine that. But I am not complaining, it is what was needed for my ward and I am satisfied very much with the outcome.~
 ==Pellig~Now that those two have found each other, do not think your mission is complete - I guess it may just have begun.~
@@ -534,7 +534,7 @@ DO~SetGlobal("SanShauMinsc","GLOBAL",32)~
 =~ Honestly, from the description Sandrah gave us about my...father...Arvoreen...I thought that he may be your god.~
 == BMINSC~ I never thought much about him thinking he was some halfling only. But now that I know more about him I think he would suit me well. Maybe I should actually become a follower, my orc princess, it may help me with some future deed I must accomplish.~
 ==BSHAUHA~ A plan? Would you tell me about it?~
-== BMINSC~ No, it will still be a secret. But having Arvoreen's favour will surely help me...I know not orcish habbits in that respect, but in Rashemen an man must ask the father for the hand of the daughter he wants to marry.~
+== BMINSC~ No, it will still be a secret. But having Arvoreen's favour will surely help me...I know not orcish habits in that respect, but in Rashemen an man must ask the father for the hand of the daughter he wants to marry.~
 ==BSHAUHA~The same is the habbit with the orcs - but...my father is dead...is Arvoreen...oh, Minsc...~
 == BMINSC~ Do you think I am not worth to ask a god for the hand of his daughter?~
 ==BSHAUHA~If not you, my wonderful hero, than nobody ever will proof worth. Also, I heard it say often that godchilds have their own opinion about their choices.~ DO ~  StartCutSceneMode()  SmallWait(4) FadeToColor([20.0],0) Wait(4) FadeFromColor([20.0],0) EndCutSceneMode() ~ EXIT
@@ -547,7 +547,7 @@ DO~SetGlobal("Orcbandits","LOCALS",2)~
 ==BSHAUHA~They are well trained and organised, Minsc. Their leader must be strong and capable. I wonder why he has chosen to be a bandit leader so much feared?~
 == BMINSC~Maybe he has not chosen but had no other way?~
 ==BSHAUHA~I heard he is half-orc like me - I know what it means to belong neither here nor there and be either feared or hunted by everyone. Maybe he would rather be a free man and a bandit leader than to hide and run away.~
-== BMINSC~It is strange not to hate such a bad orc. I wouuld have sentenced him for being orc anytime - before I met you. You do strange things to me.~
+== BMINSC~It is strange not to hate such a bad orc. I would have sentenced him for being orc any time - before I met you. You do strange things to me.~
 ==BSHAUHA~Things often look different if we get a chance to see them once from the other side. One advantage of being half-orc maybe is to be able to change one's perspective.~
 == BMINSC~...and the attitude of those who listen to you.~
 ==BSHAUHA~(Sighs) In the end we face bandits here. I wished there was another solution but it looks like all we can do is what we have done all the time - to fight them.~

@@ -10,7 +10,7 @@ DO~ SetGlobal("shauorcboy","GLOBAL",2)~
 == CVorwarl~ The blind seer in the slum district. You know him? He has urgent need to talk to Shauhana. It is in the interest of all Clan Orcs, please.~
 == BSHAUHA ~ The Clan Orcs, little one, have expelled me and they hunt me like a criminal. Do you want to trick me into a trap with that?~
 == CVorwarl~ Is the mighty granddaughter of Ghotal afraid of a little boy and a blind old man? We do not have an army hidden as would be required to catch one like you, Shauhana. We really humbly request you just to listen to us.~
-== BSHAUHA ~ (Laughs again) My boy, you are truely orc. ~
+== BSHAUHA ~ (Laughs again) My boy, you are truly orc. ~
 END
 ++ ~ Shauhana, you are orc as you always stated it. You have our support if you decide to listen to the blind seer. ~ EXIT
 ++ ~ Boy, you have heard Shauhana, the Clan Orcs are her enemies and as such they are our enemies. Their wickedness is emphasised by the fact that they send a child to trick us into some kind of trap.~
@@ -49,11 +49,11 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6) SetGlobalTimer("ShauToClan","GLOBAL",TEN_
 ==BSHAUHA~ My life is guided by prophesies of all kind. So many mysterious creatures know about me and my fate - so many, but not me.~
 == CVorwarl~ (Turns to the blind seer) Father, do you not think she deserves to know a bit more about herself and what we have been revealed about her task?~
 ==BSANDR~ Your son is right, Ghatlenk, you ask for Shauhana's assistance in important matters. Do not try to withhold information that may be crucial to her and to the companions that might be needed to assist her.~
-== CVGHATLE ~ Sandrah of Waterdeep, your name rings through the Realms already loudly. Yes, she shall know as she will need a counselor like you by her side as well as the power of the Bhaalspawn that is with you.~
+== CVGHATLE ~ Sandrah of Waterdeep, your name rings through the Realms already loudly. Yes, she shall know as she will need a counsellor like you by her side as well as the power of the Bhaalspawn that is with you.~
 == CVorwarl~ Shauhana, you already know how your grandfather Ghotal lost his final battle...~
 ==BSHAUHA~ ...by orcish betrayal! Not defeated by his enemies but by his kin!~
 == CVorwarl~ Your anger is understandable, but it was more than the selfish orcs that led to his downfall. As you know your grandfather was Myrkul's own son, with a task to unite the clan orcs and to establish a balance again in the Realms where the southern cities and folk where expanding more and more into clan's lands.~
-==BSANDR~ It was a council decision of the Gods themselve to establish balance in the Realms between the great nations of Faerun?~
+==BSANDR~ It was a council decision of the Gods themselves to establish balance in the Realms between the great nations of Faerun?~
 == CVGHATLE ~ You know much and understand well, Sandrah of Waterdeep, yes it was, with Myrkul chosen to lead the operation.~
 ==BSANDR~ I see. But then the Time of Troubles started, gods were fighting among themselves for more power...the Dead Three were slain, one of them being Myrkul.~
 == CVorwarl~ (Looks at his father again) She is indeed clever and knowing. She understands a lot of our history.~
@@ -66,8 +66,8 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6) SetGlobalTimer("ShauToClan","GLOBAL",TEN_
 ==BSHAUHA~ Sandrah? You mean your own goddess is involved in this?~
 ==BSANDR~ Yes. She and the other one who is your father.~
 ==BSHAUHA~ And who is the other one?~
-== CVGHATLE ~ You and your friends come to Clan land. We will tell you what we know up there. This town is not the place to reveal more at the moment. Meet us at the crossway to Sharkta Fai after a tenday when you are ready to pick up your quest.~
-== CVorwarl IF~!InParty("Minsc")~ THEN~ Find the warrior and his animal companion that was prophesised to you, Shauhana, and bring him with you.~
+== CVGHATLE ~ You and your friends come to Clan land. We will tell you what we know up there. This town is not the place to reveal more at the moment. Meet us at the crossways to Sharkta Fai after a tenday when you are ready to pick up your quest.~
+== CVorwarl IF~!InParty("Minsc")~ THEN~ Find the warrior and his animal companion that was prophesied to you, Shauhana, and bring him with you.~
 == CVorwarl IF~InParty("Minsc")~ THEN~ Make sure you bring your mighty warrior friend and his animal companion with you, Shauhana.~
 EXIT
 
@@ -76,11 +76,11 @@ IF ~ Global("ShauOrcWar","GLOBAL",1)~ THEN CVorwarl ShauOrcWar2
 ~ She has come, father.~
 DO~ SetGlobal("ShauOrcWar","GLOBAL",2)~
 == CVGHATLE ~ Your land, Shauhana, Clan's land, your home and your destiny. You are orc.~
-==BSHAUHA~ That is what I thought. But am I orc anymore, I do not know?~
+==BSHAUHA~ That is what I thought. But am I orc any more, I do not know?~
 == CVGHATLE ~Your heart knows better, godchild. You are orc and that is why you have come today.~
 ==BSHAUHA~ Even if my thinking is orc, Ghatlenk, my blood maybe is not. My mother was a half-orc only and my father...you know better than me who we are talking about here.~
 ==BSANDR~ Probably it is a valid time to solve this mystery so we can concentrate on the mission that lies ahead with all the knowledge at hand.~
-== CVorwarl~ Sane advice, counselor. It is good you are by her side with your knowledge, as the name may come as a shock to her.~
+== CVorwarl~ Sane advice, counsellor. It is good you are by her side with your knowledge, as the name may come as a shock to her.~
 == CVGHATLE ~ (Silence)~
 == CVGHATLE ~ Arvoreen.~
 ==BSHAUHA~ WHAT? A halfling's god! Is there anything less orcish on Toril than that!~
@@ -107,7 +107,7 @@ DO~ SetGlobal("ShauOrcWar","GLOBAL",5)~
 == CVGHATLE ~He has an unknown and most powerful ally, Sandrah. Yes, he has come back and with him a daily growing army of undead. Our own long gone fighters are rumoured to be among them.~
 ==BSANDR~Vennegrat is restoring fallen orc heroes? (Mumbles to herself) Maybe those assumed to have gone through Sharkta Fai?~
 == CVorwarl~ Vennegrat is or rather was our most potent mage and priest but an army restored of that size would be beyond his skills even. That is why we assume there is a mightier foe behind him.~
-== CVGHATLE ~We need our new leader and her fighter companion to organise our defenses against that army gathering in the former village of the Icebear Clan.~
+== CVGHATLE ~We need our new leader and her fighter companion to organise our defences against that army gathering in the former village of the Icebear Clan.~
 ==BSANDR~And you need <CHARNAME> and us to investigate the background meanwhile and eliminate possibly the source of that supply with undead fighters.~
 == CVorwarl~ You say it, Sandrah, let us all go to the Crossroad of the Iceroads a bit to the west of here and I will explain you the situation further. You have been there before on your way to our village.~
 == CVGHATLE ~We await you desperately, friends.~

@@ -68,11 +68,11 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6)SetGlobalTimer("ShauToClan","GLOBAL",TEN_D
 ==BSHAUHA~ My life is guided by prophesies of all kind. So many mysterious creatures know about me and my fate - so many, but not me.~
 == CVorwarl~ (Turns to the blind seer) Father, do you not think she deserves to know a bit more about herself and what we have been revealed about her task?~
 ==BSANDR~ Your son is right, Ghatlenk, you ask for Shauhana's assistance in important matters. Do not try to withhold information that may be crucial to her and to the companions that might be needed to assist her.~
-== CVGHATLE ~ Sandrah of Waterdeep, your name rings through the Realms already loudly. Yes, she shall know as she will need a counselor like you by her side as well as the power of the Bhaalspawn that is with you.~
+== CVGHATLE ~ Sandrah of Waterdeep, your name rings through the Realms already loudly. Yes, she shall know as she will need a counsellor like you by her side as well as the power of the Bhaalspawn that is with you.~
 == CVorwarl~ Shauhana, you already know how your grandfather Ghotal lost his final battle...~
 ==BSHAUHA~ ...by orcish betrayal! Not defeated by his enemies but by his kin!~
 == CVorwarl~ Your anger is understandable, but it was more than the selfish orcs that led to his downfall. As you know your grandfather was Myrkul's own son, with a task to unite the clan orcs and to establish a balance again in the Realms where the southern cities and folk where expanding more and more into clan's lands.~
-==BSANDR~ It was a council decision of the Gods themselve to establish balance in the Realms between the great nations of Faerun?~
+==BSANDR~ It was a council decision of the Gods themselves to establish balance in the Realms between the great nations of Faerun?~
 == CVGHATLE ~ You know much and understand well, Sandrah of Waterdeep, yes it was, with Myrkul chosen to lead the operation.~
 ==BSANDR~ I see. But then the Time of Troubles started, gods were fighting among themselves for more power...the Dead Three were slain, one of them being Myrkul.~
 == CVorwarl~ (Looks at his father again) She is indeed clever and knowing. She understands a lot of our history.~
@@ -85,8 +85,8 @@ DO~ SetGlobal("shauorcboy","GLOBAL",6)SetGlobalTimer("ShauToClan","GLOBAL",TEN_D
 ==BSHAUHA~ Sandrah? You mean your own goddess is involved in this?~
 ==BSANDR~ Yes. She and the other one who is your father.~
 ==BSHAUHA~ And who is the other one?~
-== CVGHATLE ~ You and your friends come to Clan land. We will tell you what we know up there. This town is not the place to reveal more at the moment. Meet us at the crossway to Sharkta Fai after a tenday when you are ready to pick up your quest.~
-== CVorwarl IF~!InParty("Minsc")~ THEN~ Find the warrior and his animal companion that was prophesised to you, Shauhana, and bring him with you.~
+== CVGHATLE ~ You and your friends come to Clan land. We will tell you what we know up there. This town is not the place to reveal more at the moment. Meet us at the crossways to Sharkta Fai after a tenday when you are ready to pick up your quest.~
+== CVorwarl IF~!InParty("Minsc")~ THEN~ Find the warrior and his animal companion that was prophesied to you, Shauhana, and bring him with you.~
 == CVorwarl IF~InParty("Minsc")~ THEN~ Make sure you bring your mighty warrior friend and his animal companion with you, Shauhana.~
 EXIT
 
@@ -106,7 +106,7 @@ DO~SetGlobal("ShauOrcWar","GLOBAL",8)~
 == CVGHATLE ~You are right. We assume that attack was just a test for his new troups of undead. He has retreated to the west, to the haunted Icebear Clan's village. We have sent our best scouts to the old graveyard road so he cannot advance to our land unnoticed.~
 ==BSHAUHA~ So I see several tasks before us, Ghatlenk, and I count on yours and Wallrick's advice in that.~
 == CVorwarl~Yes, my queen.~
-==BSHAUHA~ We must organise and train our fighters, (she looks at Minsc and Wallrick). The next attack will probably not be just a test anymore. And we must fortify the village.~
+==BSHAUHA~ We must organise and train our fighters, (she looks at Minsc and Wallrick). The next attack will probably not be just a test any more. And we must fortify the village.~
 =~ Additionally we need reconnaissance about our foe, especially where that supply of undead is coming from and how it can be stopped. (She nods in Sandrah's direction.) You seem to have some ideas, my friend.~
 ==BSandr~ It sounds like we need to split our forces for a while, <CHARNAME>. While Shauhana, Minsc and Wallrick prepare the orcs and the village for the next assault, we do what a small group can do best - espionage.~
 == CVGHATLE ~We have not erred, my son. With these new friends and with Shauhana there rises new hope for Ghotal's vision. Know, <CHARNAME>, once the war of orc against orc is ended, a strong leader may want to negotiate terms for orc and your kin in the south to live in peace.~
@@ -130,7 +130,7 @@ DO~ SetGlobal("SanHintFactory","GLOBAL",12)~
 ==CVSandrJ~ Yours as well, it seems.~
 ==CVGHATLE ~Vennegrat's assault on the village has taken its toll among our fighters. A sad duty to be performed.~
 ==CVSandrJ~Ghatlenk, with what we have discovered it is not a good idea to bring the fallen up there...(She reports the recent events to the orc priest.)~
-==CVGHATLE ~What a blasphemy! Our own dead are used against us. Godchild, you must end that soon - your counselor is right, after the orcs the beast will turn onto your people and cities.~
+==CVGHATLE ~What a blasphemy! Our own dead are used against us. Godchild, you must end that soon - your counsellor is right, after the orcs the beast will turn onto your people and cities.~
 END
 ++~You must return and prevent the Clans to bring their fallen to Sharkta Fai. Only by this we can cut your enemy's supplies.~+ ShauShaTabu2
 

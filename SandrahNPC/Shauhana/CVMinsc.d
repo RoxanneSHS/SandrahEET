@@ -4,7 +4,7 @@ BEGIN CVMinsc
 CHAIN
 IF~NumTimesTalkedTo(0) AreaCheck("CVSH15")~THEN CVMinsc WelcomeM
 ~Berserkers, attack!~
-==CVorwarl~Quite promissing the progress you make, Minsc.~
+==CVorwarl~Quite promising the progress you make, Minsc.~
 ==CVMinsc~Ha, when our Berserker Lodge is ready for celebration then our men will be ready to win the battle to be celebrated.~
 ==CVorwarl~I believe you, my friend, as long as the foe to fight is not supernatural...~
 ==CVMinsc~Show them how we kick butts, my Berserkers!!~
@@ -48,7 +48,7 @@ DO~ SetGlobal("SanHintFactory","GLOBAL",24)~
 ==CVShauq~ My friends, you have done so much for us, for the Clans but also for Minsc and me. I know you will not reject my final plea to come with me to the Frozen Waterfall and be witness to the events that will write a new chapter in the Clan's history.~
 END
 ++~Vennegrat still has forces, but he cannot reinforce them anymore. What is this mysterious method you and Wallrick referred to?~ + retbelw2
-++~You do not need us anymore for the few orcs that are still against you, mighty queen, we wish you good luck.~EXTERN CVSandrJ Chablowhead
+++~You do not need us any more for the few orcs that are still against you, mighty queen, we wish you good luck.~EXTERN CVSandrJ Chablowhead
 
 CHAIN
 IF~~THEN CVSandrJ Chablowhead
@@ -62,7 +62,7 @@ IF~~THEN Sanboy1 retbelw2
 ~Pa...Minsc, please, I must witness it too - we are orc now, aren't we and witnesses of the new start, right?~
 ==cvminsc~ Stay where I can see you, Giran, learn and look to become a great hero.~
 ==CVShauq~ Oh, Minsc. It is the queen's verdict that you bring our boy home uninjured.~
-==cvminsc~Our word of honor on that, beloved queen.~
+==cvminsc~Our word of honour on that, beloved queen.~
 ==CVShauq~We will venture with just a small but well-chosen group, <CHARNAME>. I will move ahead to the waterfall with Minsc and Wallrick - yes, and Giran.~
 ==sanboy1~ Hurray!~
 ==CVShauq~ Use our small camp north of here to rest and heal and then follow us so we can once and for all end this war - side by side, my friends.~ EXIT

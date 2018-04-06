@@ -14,7 +14,7 @@ IF~~THEN REPLY ~ This is your ground, so I trust your advice to your new friends
 END
 
 IF~~THEN BEGIN  ShauDeadEnd3
-SAY ~ The one way leads directly back to my Clan's settlements. Even for our joint forces that would be mere suicide, facing hords and hords of orc warriors, their dreaded Clan's Hounds, the priest battalions and the traps.~
+SAY ~ The one way leads directly back to my Clan's settlements. Even for our joint forces that would be mere suicide, facing hordes and hordes of orc warriors, their dreaded Clan's Hounds, the priest battalions and the traps.~
 IF~~THEN REPLY ~ Sounds like whatever the second option is, it must be the one to take.~  GOTO ShauDeadEnd4
 IF~~THEN REPLY ~ Let us hear about the other possibility then, so we can make a decision.~ GOTO ShauDeadEnd4
 END
@@ -27,8 +27,8 @@ END
 
 IF~~THEN BEGIN ShauDeadEnd5
 SAY ~ Through these tunnels and caves the Clan has long ago come to the Stormhorns from the south, after the Troll invasion of the Sunset Mountains drove them to move. The tunnels pass the Hornswamp to the west, it is said. None has used them since six generations of orcs, but the lore talks of all kinds of dangers and creatures that lurk down there.~
-= ~ With you by my side I would not be afraid to venture there. Stupid orcs always exaggerate the dangers they do not know. Any cave and tunnel has hords of monsters according to the tales told around campfires. I fear them not.~
-IF~~THEN REPLY ~ Neither do we. If it turns out wrong, we can still change our plan and face those orc hords on the other road. But I would rather try those caves - you are right, not only orcs but also humans and half-elves see monsters in every dark hole. Maybe it is all just stories. So lead us to these caves.~
+= ~ With you by my side I would not be afraid to venture there. Stupid orcs always exaggerate the dangers they do not know. Any cave and tunnel has hordes of monsters according to the tales told around camp fires. I fear them not.~
+IF~~THEN REPLY ~ Neither do we. If it turns out wrong, we can still change our plan and face those orc hordes on the other road. But I would rather try those caves - you are right, not only orcs but also humans and half-elves see monsters in every dark hole. Maybe it is all just stories. So lead us to these caves.~
 GOTO ShauDeadEnd6
 END
 
@@ -152,7 +152,7 @@ IF~~THEN REPLY ~ Did he find it? Where is he now?~ GOTO Shaubrag6
 END
 
 IF~~THEN BEGIN Shaubrag6
-SAY ~ He is now in the Other World of your people. On the day of my escape he was in the stars again but he did not return that time. He killed the pit priests and the overseers and most of the gladiators before they brought him down in a rainfall of arrows. There was nothing I could do for him anymore - but I took his last gift to me and escaped in the uproar he had caused.~
+SAY ~ He is now in the Other World of your people. On the day of my escape he was in the stars again but he did not return that time. He killed the pit priests and the overseers and most of the gladiators before they brought him down in a rainfall of arrows. There was nothing I could do for him any more - but I took his last gift to me and escaped in the uproar he had caused.~
 = ~ I went to the hut of the old orc shaman who once was my teacher before I killed my father. He gave me his bow and reminded me of the tunnels out of the Clan's land. Soon my escape was recognised and they sent the hunters after me. That is how we met then.~
 IF~~THEN DO ~ SetGlobal("ShauBrag","LOCALS",1) SetGlobal("SanSharkta","GLOBAL",1)~ EXIT
 END
@@ -179,7 +179,7 @@ IF~~THEN DO ~ SetGlobal("ShauhanaJoined","GLOBAL",0) SetGlobal("ShauMeetAmn","GL
 END
 
 IF~Global("ShauRemSH","LOCALS",1) ~THEN BEGIN ShauSHReminder1
-SAY~My friend <CHARNAME> the time has come that Gathlenk asked us to come to Clan's land for my task. Please stand by me and Minsc for that quest - you and all my friends I have found in your company.~
+SAY~My friend <CHARNAME> the time has come that Ghatlenk asked us to come to Clan's land for my task. Please stand by me and Minsc for that quest - you and all my friends I have found in your company.~
 IF~~THEN REPLY ~ Thanks for reminding me, we will get on our way to the Stormhorns now.~DO~SetGlobal("ShauRemSH","LOCALS",2)~EXIT
 IF~~THEN REPLY ~ I have not forgotten it, we will start our journey as soon as our current task will allow it.~DO~SetGlobal("ShauRemSH","LOCALS",2)~ EXIT
 IF~~THEN REPLY ~ Shauhana, you are aware of our current task - you help me with it and I will gladly accompany you to the Stormhorns when we have the opportunity.~DO~SetGlobal("ShauRemSH","LOCALS",2)~EXIT
@@ -196,8 +196,8 @@ IF~~THEN REPLY~Is it so wrong? You are different, so much is true - but then you
 END
 
 IF~~THEN BEGIN Skinner3
-SAY~ It is a strange thing, but orcs think the same way about <PRO_RACE>s. And the ones that showed me the error of this were also outcast among their people, the hunted Brage and the Bhaalspawn. Beeing a bit apart from the mainstream lets you see things from a different perspective it seems.~
-IF~~THEN REPLY~You are probably the firts orcish philosopher the Realms have known, Shauhana.~EXIT
+SAY~ It is a strange thing, but orcs think the same way about <PRO_RACE>s. And the ones that showed me the error of this were also outcast among their people, the hunted Brage and the Bhaalspawn. Bering a bit apart from the mainstream lets you see things from a different perspective it seems.~
+IF~~THEN REPLY~You are probably the first orcish philosopher the Realms have known, Shauhana.~EXIT
 IF~~THEN REPLY~People like you or me may be the hope for races to understand each other better.~EXIT
 IF~~THEN REPLY~If we were not like that, I would probably never have taken on orc into my party - and you would never have followed a <PRO_RACE>.~EXIT
 END
@@ -213,7 +213,7 @@ IF ~Global("SanShauMeet","GLOBAL",6) ~THEN  CVSHAUJ ShauScar1
 = ~ (As you come across a part of the cave where the ground is covered with a kind of slimy moss, her foot loses its grip for a second and she tumbles against you.)~
 = ~ Hoops, sorry, <CHARNAME>, watch out, this stuff is slippery.~
 = ~ (While she regains her balance you get a glimpse of the right side of her face. The shock almost makes you loose your balance as well.)~
-= ~(A long nasty scar runs down from her hairline across her cheek and down to her chin. It is obvious that the wound is old and had been neglegted for a long time without a chance for real healing while among the orcs as a slave.)~
+= ~(A long nasty scar runs down from her hairline across her cheek and down to her chin. It is obvious that the wound is old and had been neglected for a long time without a chance for real healing while among the orcs as a slave.)~
 DO ~ SetGlobal("SanShauMeet","GLOBAL",7)~
 == BSANDR~ (Whispers) So you have seen it at last. The poor girl must have suffered hard from that injury. And now she suffers even more pain from the stares she receives.~
 END
@@ -246,13 +246,13 @@ DO ~ SetGlobal("Shausc","LOCALS",1) ~
 == CVSHAUJ ~ Yes, Sandrah, look at it, feel it, inspect it. But I have no hope. It has been like this for so long. (Still her eyes show some expectation to Sandrah's skills.)~
 == BSANDR ~ (It takes a long time for Sandrah to carefully and gently inspect the half orc girl's face.)~
 == CVSHAUJ ~ Your look answers all my questions, Sandrah. But thank you for the good intention anyway.~
-== BSANDR ~ This injury had been done when you were so much younger, Shauhana. Not only it has healed badly and opened many times in the neglection - it is also that you have grown into a woman since then. The bones and flesh of your face have grown with you and with the imbedded destruction.~
+== BSANDR ~ This injury had been done when you were so much younger, Shauhana. Not only it has healed badly and opened many times in the neglect - it is also that you have grown into a woman since then. The bones and flesh of your face have grown with you and with the embedded destruction.~
 = ~ (She takes out some bottles and flasks from her backpack.) Sit down here in the light. It will not hurt what I do.~
 == CVSHAUJ ~ I am orc, I fear no pain. But tell me, what are you doing?~
 == BSANDR ~ I cannot heal you with what means I have out here. But maybe I can make you feel a little bit better, my friend.~
 == CVSHAUJ ~ Don't worry, it stopped hurting long time ago.~
 == BSANDR ~ Yes, but only the flesh. I will try to do something to you soul. Something to make you feel more the person you are.~
-= ~(Sandrah skillfully applies some creamy substances and other mysterious cosmetica to Shauhana's face. After a while she steps back to take a look at her work and then goes back for some finishing touches.)~
+= ~(Sandrah skilfully applies some creamy substances and other mysterious cosmetics to Shauhana's face. After a while she steps back to take a look at her work and then goes back for some finishing touches.)~
 = ~ (Finally she takes a small hand-mirror from her pack and gives it to Shauhana.)~
 == CVSHAUJ ~ Is that...Oh...Oh, Sandrah...(She bursts into tears.)~
 == BSANDR ~ My, Shauhana, no tears, please, you wash it all away again. Hey, stop, stop.~

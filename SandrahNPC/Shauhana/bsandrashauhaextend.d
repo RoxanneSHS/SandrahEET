@@ -13,7 +13,7 @@ IF~~THEN REPLY~ She neither looks nor acts very orcish. Any idea what's the matt
 END
 
 IF ~~ THEN BEGIN ShauHer3
-SAY ~ Oh, I do believe her - I mean I believe she tells truely all she knows about herself. My doubt is that she herself knows who she is. Even with a possible grandfather like General Ghotal, her strength, her intelligence and her outer appearance are not explainable.~
+SAY ~ Oh, I do believe her - I mean I believe she tells truly all she knows about herself. My doubt is that she herself knows who she is. Even with a possible grandfather like General Ghotal, her strength, her intelligence and her outer appearance are not explainable.~
 IF~~THEN REPLY~ Sounds like you fall for that godchild thing. Well, you seem to attract them.~ GOTO ShauHer4
 END
 
