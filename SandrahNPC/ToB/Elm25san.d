@@ -14,7 +14,7 @@ DO~SetGlobal("San25ChiQuest","GLOBAL",8)~
 =~Much of that is contingency and redundancy introduced against his own enemies.~
 ==BSandr25~Mystra and Cyric?~
 ==Elm25san~Especially Mystra, yes, she hath a special role for the God of Murder. Thou will see soon.~
-=~ Of the great number of Bhaalspawns there was only a dozend that really play a role for the return of the God of Murder.~
+=~ Of the great number of Bhaalspawns there was only a dozen that really play a role for the return of the God of Murder.~
 END
 ++~The five of that alliance? Myself, the mysterious traitor, who else?~+SanSist2
 ++~And you know who they are, old man?~+SanSist2
@@ -37,7 +37,7 @@ CHAIN
 IF~~ THEN Elm25san SanSist3
 ~ Yes. When enough of his essence is gathered in his domain in the Abyss he will attempt a return in the ritual. To perform it the responsibility for this he gave to his three most devoted high priestesses Alianna, Amelyssan and Nyalee and their temples.~
 ==BSandr25~You once already tried to prevent this from ever happening, did you not, father?~
-==Elm25san~Soon after Midnight was elevated to Mystra her companion Cyric in one of his last clear moments revealed some evidence he had found when assuming Bhaal's portefolio. Our goddess requested me and the Harpers to strike against the Bhaalists.~
+==Elm25san~Soon after Midnight was elevated to Mystra her companion Cyric in one of his last clear moments revealed some evidence he had found when assuming Bhaal's portfolio. Our goddess requested me and the Harpers to strike against the Bhaalists.~
 =~ Gorion attacked Alianna's temple and killed the one who had chosen to become the vessel for one of the spawns herself. What came then thou knowest best, <CHARNAME>.~
 =~ Mineself attacked the temple of Nyalee who escaped my wraith with mine own mad father's aid. She rescued and raised another one of the Spawns, Yaga-Shura.~
 END
@@ -46,7 +46,7 @@ END
 
 CHAIN
 IF~~ THEN Elm25san SanSist4
-~ AO himself intervened with Mystra claiming the goddess was shifting the balance too much to one side by interferring in this way on the primary plane. The Prince of Lies himself was ordered to shield the remains of Bhaal's devotees and the third temple. Now the only way ever to destroy it and to prevent the ritual would be from inside.~
+~ AO himself intervened with Mystra claiming the goddess was shifting the balance too much to one side by interfering in this way on the primary plane. The Prince of Lies himself was ordered to shield the remains of Bhaal's devotees and the third temple. Now the only way ever to destroy it and to prevent the ritual would be from inside.~
 ==BSandr25~Does that mean the only ones to get access would be those required for the ritual itself - one of those three you mentioned and of whom <CHARNAME> is one?~
 ==Elm25san~ Absolutely correct. All hope lies with <CHARNAME> now.~
 ==BSandr25~ One of the three but the only one who knows that much, the other two may still think they may acquire their father's power and throne.~
@@ -77,7 +77,7 @@ DO~SetGlobal("San25ChiQuest","GLOBAL",11)~
 ==BSandr25~ She is not human, you mean?~
 ==Elm25san~In his arrogance and mad humour Bhaal chose to remind me of the heritage from Khalindra's line he planned to destroy.~
 ==BSandr25~ Qilue's heritage that is?~
-==Elm25san~Right, mine firstborn, thy sister is drow and it is a gift that turned out much different from what Bhaal intended. I told thee about her education and abilities. Like a mirror of thyself she has become a priestess and is now the High Priestess of Eilistraee at Undermountain.~
+==Elm25san~Right, mine first-born, thy sister is drow and it is a gift that turned out much different from what Bhaal intended. I told thee about her education and abilities. Like a mirror of thyself she has become a priestess and is now the High Priestess of Eilistraee at Undermountain.~
 ==BSandr25~Is she willing to see me?~
 ==Elm25san~She yearns for it, Sandrah, having followed thine way and development with mine aid with the Shard all the time. Thy aim and hers are not apart, both the pride of mine heart.~
 ==BSandr25~Will you come with us to meet her?~

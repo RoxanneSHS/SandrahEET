@@ -11,7 +11,7 @@ IF~~THEN BEGIN JoinRTF2
 SAY~I am L'Urieet Yantyrr, daughter of the Bhaalspawn Sendai you defeated. I have spent my time since then with Qilandrha's people and learned a lot about their alternate ways and of the surface. I am seeking for companionship to explore Faerun - in a party that has use for my skills as cleric and mage.~
 IF~~THEN REPLY~Given the mother you had to teach you, I assume you are a worthy addition to our party. A decade with Qilandrha has surely proven that you do not follow our achestor's way.~DO~SetGlobal("Loureedjoined","GLOBAL",1) JoinParty()~EXIT
 IF~~THEN REPLY~I am not such a blue-eyed fool like Qilandrha and her sister. I trust no one with a pedigree like yours.~DO~SetGlobal("Loureedjoined","GLOBAL",3) EscapeArea()~EXIT
-IF~~THEN REPLY~Given the mother you had to teach you, I assume you are a worthy addition to our party. I will remeber your request but at the moment our ranks are filled.~EXIT
+IF~~THEN REPLY~Given the mother you had to teach you, I assume you are a worthy addition to our party. I will remember your request but at the moment our ranks are filled.~EXIT
 END
 
 CHAIN
@@ -23,12 +23,12 @@ END
 
 CHAIN
 IF~~THEN Loured25 Advance2
-~ Ha, I have little in common with those drow and their allys, especially not with Sendai - even if I may rightfully call myself the owner and heiress of this fortress now.~
+~ Ha, I have little in common with those drow and their allies, especially not with Sendai - even if I may rightfully call myself the owner and heiress of this fortress now.~
 DO~SetGlobal("LouaftSend","ar6100",2) SetGlobal("Loureedjoined","GLOBAL",2)~
 ==CVSan25J~Her heiress...her daughter...?~
 ==Loured25~One has not a choice in the own parents, many of my kin have envied me for that monstrous mother, fools that they are.~
 ==CVSan25J~The Bhaalspawn leading us would fully agree to that statement.~
-==Loured25~I know who <CHARNAME> is - excuse me, maybe it would be adequate to introduce myself. I am L'Urieet Yantyrr - and yes, I am daughter and captive of that powerblind wannabe-goddess you have defeated.~
+==Loured25~I know who <CHARNAME> is - excuse me, maybe it would be adequate to introduce myself. I am L'Urieet Yantyrr - and yes, I am daughter and captive of that power blind wannabe-goddess you have defeated.~
 ==CVSan25J~So you have no more daughter's feelings for her than she had motherly care for you, I assume.~
 ==Loured25~I had nothing to do with her machinations, even if she never admitted it. She wanted to force me to be her general and adjutant in her crusade for godlike power but I ended as her prisoner for rejecting those splendid *gifts*.~
 ==CVSan25J~What will you do now?~

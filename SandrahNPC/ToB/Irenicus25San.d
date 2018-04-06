@@ -64,7 +64,7 @@ DO~SetGlobal("SanJonPwr","LOCALS",2)RealSetGlobalTimer("SanJonT","LOCALS",2000)~
 ==BSandr25~ I am not a godchild, someone must have told you a misleading story.~
 ==BJonel25 ~ No, you are no godchild - you are far more. You are from the blood that have killed gods in the past and according to your own confession you would be willing yourself to do such a deed. I know quite well that the idiot Cyric was just a tool used to kill the previous God of Murder - the true executioner had been the one you call your grandmother.~
 ==BSandr25~ You are right, Joneleth, and you are also right that I follow Midnight's example where I can map it to my own situation.~
-==BJonel25 ~ Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overloard Ao and found worth to become godesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
+==BJonel25 ~ Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overlord Ao and found worth to become goddesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
 ==BSandr25~ I do not estimate myself superior to anyone, Joneleth. And have you ever thought clearly about what it really means to have the power of a god? Do you only see the possibilities of bloodshed and destruction in it? What about the responsibility that comes with the power?~
 ==BJonel25 ~Responsibility of a god? For the dirt crawling mob of worthless mortals, the blind lemmings rushing to their death with open eyes while drooling from greed...Why should a goddess care about them?~
 ==BSandr25~What makes a god a god if not the belief of those who follow him? Is it not the role to be an example and a guidance to those who seek the truth? I see the goddess I follow with such eyes.~
@@ -88,13 +88,13 @@ DO~SetGlobal("SanIrClk","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
 ==BSandr25~ ...(laughs) and there are some who are a bit different than that.~
 ==BJonel25 ~Even among those different ones there are not many who are able to give a cloak of almost godlike power to their beloved heirs.~
 ==BSandr25~Their heirs?~
-==BJonel25 ~My studies on you are almost finished. My new *comrads* were not withholding the information about certain events I would have otherwise not be able to learn about.~
+==BJonel25 ~My studies on you are almost finished. My new *comrades* were not withholding the information about certain events I would have otherwise not be able to learn about.~
 ==BSandr25~Certain events?~
-==BJonel25 ~I heard - in all confidence among *comrads* - about some visits by the grandmother to her grandschild...AND - I also learned about your visit to a certain archive not long ago.~
+==BJonel25 ~I heard - in all confidence among *comrades* - about some visits by the grandmother to her grandchild...AND - I also learned about your visit to a certain archive not long ago.~
 ==BSandr25~I heard you were denied this access, Joneleth.~
 ==BJonel25 ~And so what? You see that I now possess the information that the Book Which Writes Itself had to deliver to you.~
 ==BSandr25~What significance does it have for you? You gain nothing by it?~
-==BJonel25 ~I have no intention to return to the Abyss voluntarily, be assured. However, the perspective to be reliant on the wimpering god of sniffeling slaves is all but inspiring. Maybe I just found an alternative solution.~
+==BJonel25 ~I have no intention to return to the Abyss voluntarily, be assured. However, the perspective to be reliant on the whimpering god of snivelling slaves is all but inspiring. Maybe I just found an alternative solution.~
 ==BSandr25~You stay a mageling regardless of your experience. You pay much respect to mere artefacts. A simple coat will not restore your soul for you.~
 ==BJonel25 ~Not the coat, which is all but simple, but probably the wearer. You have not been given that thing without a definite implication, even if you are still too weak to accept it.~
 ==BSandr25~You call it weakness, Joneleth. Consider that it may require even more strength to reject what you think is so desireable.~EXIT
@@ -118,8 +118,8 @@ CHAIN
 IF~Global("SanIrDeava","LOCALS",3)~ THEN BJonel25 SanIrDeva2
 ~ Sandrah, I was slightly amazed by your lack of counselling to <CHARNAME> in the Deva Demon question?~
 DO~SetGlobal("SanIrDeava","LOCALS",4) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
-==BSandr25~Had you expected me to oppose your oppinions, Joneleth?~
-==BJonel25 ~Blantly speaking, yes. I would have been interested in your intellectual challenges you would set up against me.~
+==BSandr25~Had you expected me to oppose your opinions, Joneleth?~
+==BJonel25 ~Bluntly speaking, yes. I would have been interested in your intellectual challenges you would set up against me.~
 ==BSandr25~Really? I had the feeling you understood a bit more from all of it. I think you fight very hard the lesson you have already learned.~
 ==BJonel25 ~What do you mean?~
 ==BSandr25~This quest was not an intellectual challenge, my friend, and you very well know it. You also know <CHARNAME>'s choice and you are still with us after all. Ask yourself why, answer for yourself what would be your attitude towards us had <CHARNAME> taken the spark for the own purpose.~
@@ -147,7 +147,7 @@ CHAIN
 IF~Global("SanJon25","GLOBAL",10)~THEN BJonel25 SanJonPel
 ~ Sandrah, I have asked myself how powerful your soul must be compared to the Bhaalspawn you accompany.~
 DO~SetGlobal("SanJon25","GLOBAL",11) IncrementGlobal("JonRedemptionCounter","GLOBAL",5)RealSetGlobalTimer("SanJonT","LOCALS",2600)~
-==BSandr25~ Are you on the prowl for another victim? You have definitely a large problen, Joneleth?~
+==BSandr25~ Are you on the prowl for another victim? You have definitely a large problem, Joneleth?~
 ==BJonel25 ~Oh, relax, I am not after your sweet soul, child, even if the prospect may be inviting. I feel more and more the powerful being you become.~
 ==BSandr25~Give me a moment to discuss this issue with you.~
 ==BJonel25 ~I would appreciate that. I have little chance for learned and scientific intercourse in this company these days.~
@@ -158,21 +158,21 @@ DO~SetGlobal("SanJon25","GLOBAL",11) IncrementGlobal("JonRedemptionCounter","GLO
 ==BSandr25~I am saying you could be such a power just by your own means, yes, and with a soul of your own. Why is it so important to add another's stolen power to your own when you are so much already by yourself? You experienced the slayer personally - you had his power but at the same time you lost yourself. The same will be true with any other soul you assimilate. You will loose yourself.~
 ==BJonel25 ~ I loose in order to gain more.~
 ==BSandr25~A high price if what you loose is already precious and what you gain is more than you ever need.~
-==BJonel25 ~I respect your attitude, Sandrah. Other than those babbling nitwits that try to influence my decisions you are one who knows what she is talking about. I will reflect your words, hm, *counselor*.~EXIT
+==BJonel25 ~I respect your attitude, Sandrah. Other than those babbling nitwits that try to influence my decisions you are one who knows what she is talking about. I will reflect your words, hm, *counsellor*.~EXIT
 
 CHAIN
 IF~Global("SanAtSeal","LOCALS",1)~ THEN BJonel25 SanJonSeal
-~So - what will <CHARNAME>'s self declared counselor advise now? Will you make <PRO_HIMHER> walk into the trap below?~
+~So - what will <CHARNAME>'s self declared counsellor advise now? Will you make <PRO_HIMHER> walk into the trap below?~
 DO~SetGlobal("SanAtSeal","LOCALS",2) IncrementGlobal("JonRedemptionCounter","GLOBAL",3)~
 ==BSandr25~I will not *make* <CHARNAME> do anything as our leader is quite capable of making the right decisions. My advice would be indeed to move ahead. The fact we seem to agree upon is that the so-called Helmites were not as truthful as one would expect from those paladins.~
 ==BJonel25 ~So you would move on into the trap with seeing eyes?~
-==BSandr25~If what is down there fulfills my expectations I see no other way. The watchers are not able to prevent the escape of the Imprisoned One. We cannot allow him to free himself and endanger the Primary Plane again.~
+==BSandr25~If what is down there fulfils my expectations I see no other way. The watchers are not able to prevent the escape of the Imprisoned One. We cannot allow him to free himself and endanger the Primary Plane again.~
 ==BJonel25 ~It seems you feel more responsibility for the Prime than most - a strange motivation but you are determined. I am long past taking you for a blue-eyed fool, Sandrah, so let us compare notes. Just like me you hate to consider yourself as a pawn in someone else's game, be it a god or a demon. Who do you think is down there?~
 ==BSandr25~During the times of trouble when this incarceration took place, gods and other creatures walked the prime in their mortal avatars. Only Helm was allowed to keep his godly powers and he used it on this prisoner.~
 ==BJonel25 ~A captured god, you assume?~
 ==BSandr25~We know about the fate of the gods that came to Faerun. We know only little about some other visitors...~
 ==BJonel25 ~Ha, my recent insight into Demogorgon's realms may be helpful. There are rumours about his avatar venturing to the Prime in the Times of Trouble - but the outcome of the adventure seems to be a topic that is strictly avoided down there.~
-=~We will not find out by spending more talk - lead us on, <CHARNAME>, I agree with your counselor in this.~EXIT
+=~We will not find out by spending more talk - lead us on, <CHARNAME>, I agree with your counsellor in this.~EXIT
 
 ADD_TRANS_TRIGGER Balth 24
 ~!InParty("CVSandr")~
@@ -207,7 +207,7 @@ END
 
 CHAIN
 IF~~THEN CVSan25J Sancheatdemo
-~For Joneleth? Well, he is a comrad now and I give for him what I can.~
+~For Joneleth? Well, he is a comrade now and I give for him what I can.~
 =~Ask away, Demogorgon.~
 ==LRGODEMO~(right head) 
 That is cheating, you cannot name a substitute.~
@@ -241,7 +241,7 @@ The demon proceeded in preparing for his feast and poured three gallons of wine 
 ==LRGODEMO ~(left head)
 You and your greed, fool, see how she escapes our grip!~
 =~(right head)
-No price without risk, shut up! The third riddle is not going to be that easy. And it must be answered by <CHARNAME> this time to fulfill the contract!~
+No price without risk, shut up! The third riddle is not going to be that easy. And it must be answered by <CHARNAME> this time to fulfil the contract!~
 END
 ++~Dealing with demons...~EXTERN LRGODEMO 39
 
@@ -270,11 +270,11 @@ CHAIN
 IF~~THEN CVSan25J SanDealSoul
 ~Much has happened in our common travel since the day the agreement was made, Joneleth. Much has changed, especially within ourselves.~
 DO~SG("lrFinale",2)~
-==Jonel25J~You have counselled a minor Bhaalspawn stumbling halfblind over the surface of the Prime to the doorstep of godhood, quite some achievement. (Chuckles) Not to forget the fact that you accomplished the same for yourself, even if the position of the goddess of minor spellcasting and diletante magic is a bit below your true abilities.~
+==Jonel25J~You have counselled a minor Bhaalspawn stumbling half blind over the surface of the Prime to the doorstep of godhood, quite some achievement. (Chuckles) Not to forget the fact that you accomplished the same for yourself, even if the position of the goddess of minor spellcasting and dilettante magic is a bit below your true abilities.~
 ==CVSan25J~(Laughs) I read you well, my friend - you still do not want this minor goddess as an opponent, right? You may want to consider Mystra's sympathy for an elven mage having learned enough to accept the crippled god's offer.~
 ==Jonel25J~Just her sympathy? Put a bit more into the offer, my young goddess. The whole Weave is now at your command.~
-==CVSan25J~You will find your laboratory in Athkatla a playground for endless magical research should you decide to return to it with your newfound soul.~
-==Jonel25J~Hm...quite some bait. Some interesting favorites of your predecessors come to my mind, Larloch just to mention one. Or even Azuth who claimed godhood for himself in the end. Well, I will not make any vow, Sandrah...Mystra...to you what I will do, should I accept your offer.~
+==CVSan25J~You will find your laboratory in Athkatla a playground for endless magical research should you decide to return to it with your new-found soul.~
+==Jonel25J~Hm...quite some bait. Some interesting favourites of your predecessors come to my mind, Larloch just to mention one. Or even Azuth who claimed godhood for himself in the end. Well, I will not make any vow, Sandrah...Mystra...to you what I will do, should I accept your offer.~
 ==CVSan25J~I did not ask for anything, Joneleth, I was just showing you a new possibility for your consideration.~
 ==Jonel25J~You know well it's an offer that I cannot refuse.~
 =~(Turns to the Solar) I had enough disappointing experience with soiled Bhaalspawn souls, celestial moth, I think I'm ready to try something new and fresh.~
