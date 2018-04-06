@@ -6,7 +6,7 @@ END
 INTERJECT_COPY_TRANS J#INDI 2 HealworkIndi
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Hold still, little one, all will be good. No, no, do not attempt to rise, I will take care of you. ~
 ==  J#INDI IF ~ InParty("CVSandr")~ THEN ~ Ah, that feels much better already. You are the most beautiful healer I have ever seen - but I would have taken healing from even a gnoll in my current state, haha.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Keep lying down, this one seems to go deeper. We do not want an infection on that wound. (Expertly Sandrah opens Indira's armour and undercloth revealing the young adventurer's soft skin and rosebud nipples. She softly and carefully inspects the area beneath Indira's right breast.)~
+== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ Keep lying down, this one seems to go deeper. We do not want an infection on that wound. (Expertly Sandrah opens Indira's armour and under cloth revealing the young adventurer's soft skin and rosebud nipples. She softly and carefully inspects the area beneath Indira's right breast.)~
 ==  J#INDI IF ~ InParty("CVSandr")~ THEN ~ (Indira's breathing gets more excited and she closes her eyes, but does not dare to move.)~
 == CVSandrJ IF ~ InParty("CVSandr")~ THEN ~ (Sandrah moves her mouth down to Indirah's exposed breast and puts her mouth to the girl's skin.)~
 ==  J#INDI IF ~ InParty("CVSandr")~ THEN ~ Aaah, what are you doing...~
@@ -28,7 +28,7 @@ IF ~ Global("HealworkIndi","GLOBAL",2) ~ THEN BSANDR  HealworkIndi2
 ~ You have any problem with your wound, Indi?~
 DO ~ SetGlobal("HealworkIndi","GLOBAL",3)RealSetGlobalTimer("HealIndiT","GLOBAL",1620)~
 ==J#IndiB ~ Not at all! You are a gifted healer, Sandrah. But it was yourself who said, that a body like mine needs to be constantly cared for.~
-==BSANDR ~ Then let me not be accused of neglection, dear. Let us move over there to a quiet place. It would break my heart to see anyone in need when I could easily help with my *skills*. ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
+==BSANDR ~ Then let me not be accused of neglect, dear. Let us move over there to a quiet place. It would break my heart to see anyone in need when I could easily help with my *skills*. ~ DO ~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
 CHAIN
@@ -36,9 +36,9 @@ IF ~ Global("HealworkIndi","GLOBAL",4) ~ THEN BSANDR  HealworkIndi3
 ~ Have I been so wrong in estimating your wound's severity?~
 DO ~ SetGlobal("HealworkIndi","GLOBAL",5)RealSetGlobalTimer("HealIndiT","GLOBAL",1200)~
 ==J#IndiB ~ (Indira has put off her armour and her hand carefully touches the area of her breast where the wound had been.)~
-= ~ It is not hurting anymore, Sandrah, but there is a strange itching.~
-==BSANDR ~ Let us go to this sideroom, it is my duty to inspect that very carefully. (She smiles brightly.)~
-==J#IndiB ~ (The half-elf girl has already opened her richly embroidered undergown.)~
+= ~ It is not hurting any more, Sandrah, but there is a strange itching.~
+==BSANDR ~ Let us go to this side room, it is my duty to inspect that very carefully. (She smiles brightly.)~
+==J#IndiB ~ (The half-elf girl has already opened her richly embroidered under gown.)~
 ==BSANDR ~ (Sandrah moves closer and her mouth starts to explore the area of Indira's breast again.)~
 ==J#IndiB ~ Is there still some bit of that poison left, sweetling?~
 ==BSANDR ~ Hm, impossible, this tastes much too sweet. (She sucks the young girl's buds while her fingers start to caress the half-naked body.)~

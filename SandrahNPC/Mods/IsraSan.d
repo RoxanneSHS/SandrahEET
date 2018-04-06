@@ -31,7 +31,7 @@ DO~SetGlobal("SanIsraTalk","GLOBAL",7) RealSetGlobalTimer("SanIsraDel","GLOBAL",
 ==BSandr~Many judge my goddess by the deeds of the mediocre mages and spellcasters they encounter too often. Mystra is the guardian of the Weave, the power that hold everything in our multiverse together. The Weave provides power to destroy or to repair.~
 ==BRH#ISRA~Obviously you have the gift to use the Weave in both ways at an impressive level.~
 ==BSandr~(Sigh) I am often forced to use the destructive aspect to help our group, however it is the healer's ability that attracted me to my goddess primarily.~
-==BRH#ISRA~I have observed that you care much for your fellowbeings, the other day I even saw you casting a healing spell on a wounded bird.~
+==BRH#ISRA~I have observed that you care much for your fellow beings, the other day I even saw you casting a healing spell on a wounded bird.~
 ==BSandr~I am aware that the powers of the Weave are a two-sided affair. You have observed well where my priority lies.~EXIT 
 
 EXTEND_TOP RH#IsraJ 518 #1
@@ -45,5 +45,5 @@ IF~~THEN RH#IsraJ IsrSanCommt
 
 CHAIN
 IF~~THEN RH#IsraJ IsrJenCommt
-~A stranger creature I never encountered. Still, she has her own *concepts* of beauty and of honor, so she cannot be as evil as people try to make us think about her race.~EXIT
+~A stranger creature I never encountered. Still, she has her own *concepts* of beauty and of honour, so she cannot be as evil as people try to make us think about her race.~EXIT
 

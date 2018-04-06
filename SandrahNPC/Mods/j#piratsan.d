@@ -37,5 +37,5 @@ EXIT
 EXTEND_TOP SIL 15 #3
 
 IF ~Global("J#PirateFight","GLOBAL",4)
-~ THEN REPLY  ~Those pirates will mean no harm to you anymore. They attacked us and we had to kill them.~ GOTO 21
+~ THEN REPLY  ~Those pirates will mean no harm to you any more. They attacked us and we had to kill them.~ GOTO 21
 END
