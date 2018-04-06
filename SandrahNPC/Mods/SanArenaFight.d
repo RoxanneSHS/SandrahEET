@@ -24,7 +24,7 @@ END
 
 APPEND Staffm2
 IF~~THEN BEGIN SanMageDuel1
-SAY~ That sounds indeed very promising. Please step forward to the portal, mylady.~
+SAY~ That sounds indeed very promising. Please step forward to the portal, my lady.~
 IF~~THEN EXTERN CVSandrJ SanMageDuel2
 END
 
@@ -150,8 +150,8 @@ END
 
 APPEND Staffm11
 IF~ Global("FigSan","GLOBAL",3) ~THEN BEGIN SanMageDuel3
-SAY~Welcome Sandrah. Here are the rules - you may stay here as long as you are winning. If you die the contest is over for you. Do not worry, you will be ressurected in that case.~
-=~You must first clear the battle ground of all monsters before you can meet another contestor.~
+SAY~Welcome Sandrah. Here are the rules - you may stay here as long as you are winning. If you die the contest is over for you. Do not worry, you will be resurrected in that case.~
+=~You must first clear the battle ground of all monsters before you can meet another contester.~
 =~Go now and clear any monster you can find and then report back to me.~
 IF~~THEN DO~ SetGlobal("FigSan","GLOBAL",4) ~EXIT
 END
@@ -191,7 +191,7 @@ IF~~THEN DO~ IncrementGlobal("AbaSan","GLOBAL",1)~EXIT
 END
 
 IF~~THEN BEGIN SanMageDuel2
-SAY~ I thought my schooldays and classroom tests were over...(laughs) I think Midnight would enjoy this bit of contest even if Mystra would disagree.~ 
+SAY~ I thought my school-days and classroom tests were over...(laughs) I think Midnight would enjoy this bit of contest even if Mystra would disagree.~ 
 IF~~THEN DO~ SetGlobal("Startmd","GLOBAL",1) SetGlobal("FigSan","GLOBAL",1)~ EXIT
 END
 END
@@ -213,9 +213,9 @@ DO~SetGlobal("SanArenIde","RA4300",2)~
 ==IF_FILE_EXISTS RCHLOEJ IF~InParty("RCHLOE")~THEN~Crush some male idiots head! Great idea, I'm all for it. Who's gonna have the fun, you or me, snowcap?~
 ==BSandr IF~InParty("RCHLOE")~THEN~It was my idea after all, and they have fighter and mage possibilities, so it suits me well.~
 ==BJAHEIR IF~InParty("Jaheira")~THEN~I have to object to such foolish ideas, we will not prostitute ourselves for the fun of those onlookers.~
-==BSandr IF~InParty("Jaheira")~THEN~(Laughs) No fear, mylady, nobody asks you to volunteer, just stand aside a bit as if you did not know us.~
+==BSandr IF~InParty("Jaheira")~THEN~(Laughs) No fear, my lady, nobody asks you to volunteer, just stand aside a bit as if you did not know us.~
 ==BNalia IF~!InParty("Jaheira") InParty("Nalia")~THEN~I have to object to such foolish ideas, we will not prostitute ourselves for the fun of those onlookers.~
-==BSandr IF~!InParty("Jaheira")InParty("Nalia")~THEN~(Laughs) No fear, mylady, nobody asks you to volunteer, just stand aside a bit as if you did not know us.~
+==BSandr IF~!InParty("Jaheira")InParty("Nalia")~THEN~(Laughs) No fear, my lady, nobody asks you to volunteer, just stand aside a bit as if you did not know us.~
 ==BANOMEN IF~InParty("Anomen")~THEN~The order should intervene against such practices...~
 ==BSandr IF~InParty("Anomen")~THEN~(Laughs) Are you afraid someone may ask you to show your courage to fight - for the benefit of our righteous course that momentarily needs the coin?~
 ==BVICONI IF~InParty("Viconia")~THEN~A chance for our males to proof their worth at least once.~
@@ -227,7 +227,7 @@ END
 ++~If you insist - I see your arguments to do it.~ EXIT
 ++~Well, a worthy idea - but it's my task as leader to take the risk.~EXIT
 ++~I see I have a volunteer to fight provided the conditions are acceptable.~ EXIT
-++~Let's leave this place immediately. No way to participate in such barbary.~EXIT
+++~Let's leave this place immediately. No way to participate in such Barbary.~EXIT
 
 
  

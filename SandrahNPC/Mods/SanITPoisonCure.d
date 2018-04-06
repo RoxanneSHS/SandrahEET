@@ -1,5 +1,5 @@
 EXTEND_TOP Lothan 1 #1
-IF~ Global("CVLotPlot","GLOBAL",0)InParty("CVSandr")~ THEN REPLY ~ I have the Sword Coast's most experienced healer in my party, scum. Your little intrigues cannot threated me.~GOTO 3
+IF~ Global("CVLotPlot","GLOBAL",0)InParty("CVSandr")~ THEN REPLY ~ I have the Sword Coast's most experienced healer in my party, scum. Your little intrigues cannot threaten me.~GOTO 3
 END
 
 CHAIN
@@ -10,7 +10,7 @@ DO~SetGlobal("CVLotPlot","GLOBAL",2)~
 END
 ++~Uuurgh, disgusting...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
 ++~What was that for? Some mad healer's interest?~DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
-++~Are you trying to find a cure for our state by this, counselor?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ CVLotwy2
+++~Are you trying to find a cure for our state by this, counsellor?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ CVLotwy2
 
 CHAIN
 IF~~THEN BSandr CVLotwy2
@@ -48,10 +48,10 @@ CHAIN
 IF~~THEN Thalan CVLotwy5
 ~Bad news...but Sandrah knows well I am not a healer. If she cannot help you how could I?~
 DO~SetGlobal("CVLotPlot","GLOBAL",4)~
-==CVSandrJ~What we need from you is an alchemistic analysis of the poison we have been subjected to. I first need to know its nature before I can design a cure.~
+==CVSandrJ~What we need from you is an alchemist's analysis of the poison we have been subjected to. I first need to know its nature before I can design a cure.~
 ==Thalan~Ah, that makes sense...but how can I do it while it's still inside you...without, eh, doing any of you serious harm?~
 ==CVSandrJ~Oh, I have a sample of it right here...~
-==Thalan~(Without any hesitation or sign of disgust the old mage opens Sandrah's satchel and starts his investigation. Applying several substances to the sample and examining it change colour to ever new nuiances in the spectrum he utters a series of) Aah...Ooooh...~
+==Thalan~(Without any hesitation or sign of disgust the old mage opens Sandrah's satchel and starts his investigation. Applying several substances to the sample and examining it change colour to ever new nuances in the spectrum he utters a series of) Aah...Ooooh...~
 =~Uuu?....I see, I see...~
 =~Well, Sandrah, someone dislikes you and <CHARNAME> enough to make your death absolutely painful and - certain.~
 ==CVSandrJ~You know what it is then?~
@@ -67,9 +67,9 @@ IF~~THEN Thalan CVLotwy6
 ==CVSandrJ~Now that we know what it is, I know how to cure it. We need a *simple* antidote to be healed.~
 ==Thalan~I don't like the way you pronounced the word *simple* here.~
 ==CVSandrJ~The production of it is indeed simple and then we just have to sip a mouthful of it - once we have the ingrediences.~
-==Thalan~Ah - that's the issue then. The ingrediences.~
+==Thalan~Ah - that's the issue then. The ingredients.~
 ==CVSandrJ~Two of them are easy to gather...Holy Water and Aescalus Herb. Those two are needed to compensate the main ingredience and turn the poison against itself and into a cure.~
-==Thalan~That main ingredience being what?~
+==Thalan~That main ingredient being what?~
 ==CVSandrJ~A pure sample of the poison itself, the extract of a Great Poisonous Wyvern's sting.~
 ==Thalan~Not something you can buy in any store along the Sword Coast, as far as I know.~
 ==CVSandrJ~The only one to provide us with it that I can think of is the beast itself.~
@@ -90,7 +90,7 @@ END
 
 CHAIN
 IF WEIGHT #-7~Global("CVLotPlot","GLOBAL",9)~THEN BSandr CVLotwy9
-~(Sandrah expertly mixes the other ingrediences to the poison and shakes the corked bottle a few times. You see the liquid change its colour from the poisonous green to transparent.)~
+~(Sandrah expertly mixes the other ingredients to the poison and shakes the corked bottle a few times. You see the liquid change its colour from the poisonous green to transparent.)~
 =~The only way to convince you all that this is medicine is by doing this...~
 DO~SetGlobal("CVLotPlot","GLOBAL",10) SetGlobal("PartyCured","GLOBAL",1)~
 =~(She takes and swallows a mouthful of the liquid.)~
