@@ -15,9 +15,9 @@ END
 
 INTERJECT_COPY_TRANS CBTardth 37 Dragolich
 == CVSANDRJ IF ~InParty("CVSandr")~ THEN~ They revived a dragon? Do you know what that means, <CHARNAME>? They want to unleash a Dragolich on Tethir!~
-==CBTardth IF ~InParty("CVSandr")~ THEN~ Are you afraid of such a creature, mylady?~
+==CBTardth IF ~InParty("CVSandr")~ THEN~ Are you afraid of such a creature, my lady?~
 == CVSANDRJ IF ~InParty("CVSandr")~ THEN~There is any reason to be, Tardeth, but even more reason to overcome our fear and defeat this cult before it is too late.~
 ==CBTardth IF ~InParty("CVSandr")~ THEN~ I apologize, I did not want to question your courage. Maybe a warning on what you expect will help us to be prepared as you seem to behold more knowledge than we do .~
-== CVSANDRJ IF ~InParty("CVSandr")~ THEN~That was exactly my intend. I want to emphasize that a capable party of our joint forces may be the only power to stop this assault on the Realms. Even we may find this a terrible foe as a dragolich combines the terrors of a shadow dragon with those of a lich. This cult has as little scrupels as they have sense. They will never be able to control what they created.~
+== CVSANDRJ IF ~InParty("CVSandr")~ THEN~That was exactly my intend. I want to emphasize that a capable party of our joint forces may be the only power to stop this assault on the Realms. Even we may find this a terrible foe as a dragolich combines the terrors of a shadow dragon with those of a lich. This cult has as little scruples as they have sense. They will never be able to control what they created.~
 ==CBTardth IF ~InParty("CVSandr")~ THEN~ Then they must be destroyed together with their creation by all means. ~
 END

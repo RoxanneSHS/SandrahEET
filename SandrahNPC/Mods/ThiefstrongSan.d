@@ -42,10 +42,10 @@ DO~SetGlobal("TSPlot","GLOBAL",8)~
 CHAIN
 IF WEIGHT #-2~Global("TSPlot","GLOBAL",8)~THEN TS5Bad SanAltern3
 ~So! The cowardly Shadow Thieves send their champion, the mighty <CHARNAME> to stop me, eh? Very well!~
-==CVSandrJ~It may well be in our common interest to analyse the current situation here in the Docks a bit closer before a false conclusion will lead to unnessessary hostility.~
+==CVSandrJ~It may well be in our common interest to analyse the current situation here in the Docks a bit closer before a false conclusion will lead to unnecessary hostility.~
 ==TS5Bad~I am afraid that in all your beauty and charm you'll hang from the gallows, beside the thief you choose as your companion, lady, dead or alive!!~
 ==CVSandrJ~Even if you were able to defeat us, the guild will soon have another leader and things will continue. You can repeat your actions on him, maybe succeed once or twice, before one day you fall to one of them.~
-==TS5Bad~Grim perspectives but not your concern anymore. YOU will be long forgotten before that happens.~
+==TS5Bad~Grim perspectives but not your concern any more. YOU will be long forgotten before that happens.~
 ==CVSandrJ~<CHARNAME> has found another way to deal with the problem more efficiently. Listen, captain...~
 END
 ++~We cannot root the shadow thieves out but we can control their actions. My reign of the guild keeps their activities to a minimum and we have control over a shadow army that can be of help to city itself at times.~+ SanAltern4
@@ -68,7 +68,7 @@ ADD_STATE_TRIGGER TSGT05 19
 EXTEND_TOP TSGT05 0 #1
 IF~ Global("PlayerThiefGuild","GLOBAL",1)
 InParty("CVSandr")
-GlobalGT("aranjob","GLOBAL",1)~ THEN REPLY~ I do not owe anything to Renal anymore, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
+GlobalGT("aranjob","GLOBAL",1)~ THEN REPLY~ I do not owe anything to Renal any more, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
 IF~ Global("PlayerThiefGuild","GLOBAL",1)
 InParty("CVSandr")
 GlobalGT("b!alternatives","GLOBAL",4)~ THEN REPLY~ I do not owe anything to the Shadow Thieves, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
@@ -79,7 +79,7 @@ IF~InParty("CVSandr")~ THEN BEGIN 299
 SAY~Ah, there you are, <CHARNAME>, time to pay your quota to Renal, hihi.~
 IF~GlobalLT("aranjob","GLOBAL",2) GlobalLT("b!alternatives","GLOBAL",5)~GOTO 3
 IF~ Global("PlayerThiefGuild","GLOBAL",1)
-GlobalGT("aranjob","GLOBAL",1)~ THEN REPLY~ I do not owe anything to Renal anymore, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
+GlobalGT("aranjob","GLOBAL",1)~ THEN REPLY~ I do not owe anything to Renal any more, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
 IF~ Global("PlayerThiegtfGuild","GLOBAL",1)
 GlobalGT("b!alternatives","GLOBAL",4)~ THEN REPLY~ I do not owe anything to the Shadow Thieves, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
 END

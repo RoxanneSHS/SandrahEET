@@ -53,7 +53,7 @@ IF ~~ THEN  REPLY ~Hey hold on a minute! We've done nothing to you so why are yo
 END
 
 IF ~~ THEN BEGIN 1
-SAY ~You are inferior for one, two I had to speak your guttural langauge so you could understand me and three Lolth would reward me well for your sacrificial death.~
+SAY ~You are inferior for one, two I had to speak your guttural language so you could understand me and three Lolth would reward me well for your sacrificial death.~
 IF ~~ THEN REPLY ~I see a flaw in this rash plan of yours "mistress". One it's not well thought out, two we are far better fighters then you and three dos lueth Lolth phuul rothe iblith!~
  GOTO 2
 END

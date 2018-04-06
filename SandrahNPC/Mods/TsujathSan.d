@@ -90,9 +90,9 @@ CHAIN
 IF ~Global("SanHealTsuja","GLOBAL",15)~ THEN BSandr RomTsuSan3
 ~(Sandrah nibbles on some dried berries she has found in her backpack.) ~
 DO~SetGlobal("SanHealTsuja","GLOBAL",16)RealSetGlobalTimer("SantsuInt","GLOBAL",3000)~
-==BTSUJAT~I learned a bit about that rich city you hail from, Sandrah, the City of Splendor.~
+==BTSUJAT~I learned a bit about that rich city you hail from, Sandrah, the City of Splendour.~
 ==BSandr~I hope you are not misled to draw false conclusions from what you heard about Waterdeep to your companion, my friend. Even if I love my hometown for what it is - home - I am not a typical citizen of that city.~
-==BTSUJAT~You wouldn't be a typical citizen of any city or plane, mylady. Even as an outsider it is plain that you are special wherever you are.~
+==BTSUJAT~You wouldn't be a typical citizen of any city or plane, my lady. Even as an outsider it is plain that you are special wherever you are.~
 ==BSandr~Well, I would be satisfied to be a bit special for one or the other person I really care for...~
 ==BTSUJAT~(With a quick move Tsujatha grabs the berry from Sandrah's hand and throws it behind his shoulder.)~
 ==BSandr~Ooops...~
@@ -118,7 +118,7 @@ DO~SetGlobal("SanHealTsuja","GLOBAL",18)RealSetGlobalTimer("SantsuInt","GLOBAL",
  How pure, how dear their dwelling-place.*~
 ==BSandr~(She has put her book aside and moves up close to the mage) A poet from your world? Women have dark hair on Girlalion...~
 ==BTSUJAT~Some travel far to find grace and beauty on other planes, Sandrah of Waterdeep.~
-==BSandr~(She expectently looks up to Tsujatha, now standing very close to him.) On this plane it would now be the moment for a small deed, my poet.~
+==BSandr~(She expectantly looks up to Tsujatha, now standing very close to him.) On this plane it would now be the moment for a small deed, my poet.~
 ==BTSUJAT~Our worlds are not that different in that.~
 =~(He bends forward until his lips almost touch Sandrah's mouth.)~
 ==BSandr~(She puts her arm around his neck and with a slight pull closes the gap.)~
