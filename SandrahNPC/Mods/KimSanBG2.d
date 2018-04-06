@@ -6,7 +6,7 @@ DO~SetGlobal("SanKimTalks","GLOBAL",2) RealSetGlobalTimer("KimSanInt","LOCALS",3
 == KIMJ~ Ha, then you're an incredible source of information about those great deeds - or the truth about them.~
 ==BSandr~I am a first hand witness. And,...yes, if people see <CHARNAME> as a hero there is at least some reason behind it. Not many are able to act so courageous and responsible when thrown into such a struggle unprepared.~
 == KIMJ~ Depending on who's telling the tale you hear more or less about your own role in those adventures. Now that I have met you both I tend to believe that those sources are correct that claim you had much to do with <CHARNAME>'s big success. Just tell me why are you still together instead of leading your own heroic troupe?~
-==BSandr~I am a seeker for some thruth and history of which I am sure that it connects to <CHARNAME>'s further fate. And it has surely not remained hidden to you that we are lovers.~EXIT
+==BSandr~I am a seeker for some truth and history of which I am sure that it connects to <CHARNAME>'s further fate. And it has surely not remained hidden to you that we are lovers.~EXIT
 
 CHAIN
 IF~Global("SanKimTalks","GLOBAL",3)~ THEN KIMJ SanSecond
@@ -30,7 +30,7 @@ IF~ Global("SanHealKim","GLOBAL",4)~ THEN KIMJ SanHealKim
 DO~SetGlobal("SanHealKim","GLOBAL",5)RealSetGlobalTimer("KimSanInt","LOCALS",3000)~
 ==BSandr~It is one reason I have chosen Mystra's path and not the most unimportant for me.~
 == KIMJ~You resemble little the shrivelled old priest I've known or the surgeons with their bone saws we had on the ships. You tried to keep sane just not to fall into their clutches which almost meant your death with some certainty.~
-==BSandr~That is what you get for chosing the pirate's way. For me the occupation of a healer and the goals of a pirate crew are mutually exclusive. It is not to be expected that a decent healer would hire out to a pirate.~
+==BSandr~That is what you get for choosing the pirate's way. For me the occupation of a healer and the goals of a pirate crew are mutually exclusive. It is not to be expected that a decent healer would hire out to a pirate.~
 == KIMJ~You think this adventuring business we do is much "cleaner", he?~
 ==BSandr~I guess you have not missed the fact that the goals of this party are not primarily riches and adventures even if we get our share of both in abundance anyway.~
 == KIMJ~Yeah, yeah, sure enough. I also observe you're one to know how to have some fun for yourself and you're not some preaching do-good paladin tin head. I can live with your attitude, girl.~
@@ -53,7 +53,7 @@ DO~SetGlobal("SanKimTalks","GLOBAL",6) RealSetGlobalTimer("KimSanInt","LOCALS",3
 ==BSandr IF~GlobalGT("SanSharInt","GLOBAL",10)~ THEN~ You sound exactly like her now, yes she hated her father and tried to make herself a name of her own just to pay him back.~
 == KIMJ IF~GlobalGT("SanSharInt","GLOBAL",10)~ THEN~One can say she succeeded, right. But you must've known her better than any.~
 ==BSandr IF~GlobalGT("SanSharInt","GLOBAL",10)~ THEN~ Yes, she is a remarkable woman and a close friend of mine. Deep in her heart she is much better than most, honest, strong, independent.~
-== KIMJ ~Hey, then I take your comparisson with me as a compliment, I guess.~EXIT
+== KIMJ ~Hey, then I take your comparison with me as a compliment, I guess.~EXIT
 
 CHAIN
 IF~Global("SanKimTalks","GLOBAL",7) ~ THEN KIMJ SanWeirdLove
@@ -64,13 +64,13 @@ DO~SetGlobal("SanKimTalks","GLOBAL",8) RealSetGlobalTimer("KimSanInt","LOCALS",3
 ==BSandr~ What about your own experiences, Kim? All I heard so far was about Greenbeard and that was a one-sided affection only?~
 == KIMJ~ (Blushes) Psst, you hit the point. My possibilities so far have been limited, I admit.~
 ==BSandr~ (Raises a brow) First in a company of soldiers and then on a ship full of pirates? None of them was to your liking at all?~
-== KIMJ~ They were disgusting, their attempts sheer hunger and lust - there must be more to this whole lovething than slobbering male cretins.~
+== KIMJ~ They were disgusting, their attempts sheer hunger and lust - there must be more to this whole love thing than slobbering male cretins.~
 ==BSandr~You were in deed in bad company so far to make any of the wonderful experiences connected to love - and to real lust.~
 == KIMJ~ Maybe this is one of the aspects that will change now -with my new companions and friends.~
 ==BSandr IF~Global("SanRomPath","GLOBAL",1)~THEN ~ (Looks into your direction) Anyone in particular who has come into the range of your spyglass?~
 ==BSandr IF~Global("SanRomPath","GLOBAL",2)~THEN ~ (Looks questioningly at the sweet young ex-pirate) Anyone in particular who has come into the range of your spyglass?~
 == KIMJ~ It may be a bit premature to tell yet. Anyway, may I count on your discretion and...advice as a friend...?~
-==BSandr~You can talk to me about anything and at anytime, my friend. I will be your counsellor and...maybe more.~
+==BSandr~You can talk to me about anything and at any time, my friend. I will be your counsellor and...maybe more.~
 == KIMJ~Wonderful! (She gives Sandrah a quick kiss on the cheek and darts away.)~EXIT
 
 CHAIN
@@ -95,7 +95,7 @@ DO~ SetGlobal("SanKimTalks","GLOBAL",10) RealSetGlobalTimer("KimSanInt","LOCALS"
 ==BSandr IF~Global("SanRomPath","GLOBAL",2)~THEN ~I make my decisions depending on the person I face not on the race or gender or occupation. I can see nothing wrong with that.~
 == KIMJ IF~Global("SanRomPath","GLOBAL",2)~THEN ~It#s not about right or wrong - it's just unusual.~
 ==BSandr IF~Global("SanRomPath","GLOBAL",2)~THEN ~My impression of you is that *usual*, *normal*, *habit*, *rules* or similar are not the criteria to rule over your life and feelings, Kim.~
-== KIMJ IF~Global("SanRomPath","GLOBAL",2)~THEN ~A pirate is as free as a seabird...unless she#s caught...by whatever trap, oh my.~
+== KIMJ IF~Global("SanRomPath","GLOBAL",2)~THEN ~A pirate is as free as a sea bird...unless she#s caught...by whatever trap, oh my.~
 ==BSandr IF~Global("SanRomPath","GLOBAL",2)~THEN ~It would make me sad to think that you could experience it as a trap...~
 == KIMJ ~I...Sandrah...I-I...I think somehow I love you...~
 =~(Her face is deep red and agitated and she darts into the shelter of the shade nearby.)~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT

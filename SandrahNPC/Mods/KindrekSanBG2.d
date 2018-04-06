@@ -30,14 +30,14 @@ DO~SetGlobal("SanHealKindrek","GLOBAL",8) RealSetGlobalTimer("HeilKindrT","LOCAL
 ==BKindrek~Why? Your battle-dance shows me parts of your body I usually do not have the pleasure of seeing in the most stimulating way. I want to taste more of your body.~
 ==BSandr~I am not sure you really know what you ask for.~
 ==BKindrek~You're a lady of taste but also one of passion, I have observed you and by the way - come, I am freshly bathed! ~
-==BSandr~Let us see. *Her gloved hand darts out and gets an iron grib between Kindrek's unprotected loins.* ~
-=~Trust my healer's skill, my friend, I know exactly how much pressure it needs to make this instrument unuseable for your lust for all times while giving you the maximum amount of pain every time you try to relief yourself.~
+==BSandr~Let us see. *Her gloved hand darts out and gets an iron grip between Kindrek's unprotected loins.* ~
+=~Trust my healer's skill, my friend, I know exactly how much pressure it needs to make this instrument unusable for your lust for all times while giving you the maximum amount of pain every time you try to relief yourself.~
 ==BKindrek~Witch! ~
-=~*Turning slowly away from her he mumbles* Be vigilant, little girl, and sleep not, lest I come upon you unawares and chop you up! ~EXIT
+=~*Turning slowly away from her he mumbles* Be vigilant, little girl, and sleep not, lest I come upon you unaware and chop you up! ~EXIT
 
 CHAIN
 IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",9)~ THEN BKindrek San4
-~*Kindrek instinctively grabs his mighty halbert as a small pebble hits his temple while he has taken off his helmet to prepare for rest. He immediately recognises however that it was Sandrah who has thrown the stone at him.*~
+~*Kindrek instinctively grabs his mighty halberd as a small pebble hits his temple while he has taken off his helmet to prepare for rest. He immediately recognises however that it was Sandrah who has thrown the stone at him.*~
 =~Witch, you want to fight?~
 DO~SetGlobal("SanHealKindrek","GLOBAL",10) ~
 ==BSandr~ In some way or other, Berserker. My bedroll is empty tonight.~ DO~AddSpecialAbility("CVDrag10")~

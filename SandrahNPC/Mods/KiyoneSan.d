@@ -26,14 +26,14 @@ CHAIN
 IF WEIGHT #-12~ Global("SanKiyoTalks","GLOBAL",4)~THEN ~z#kiyob~ Santalk2
 ~Sandrah, I have observed your deeds now for some time and if they represent Mystra's nature then I admit I have erred with respect to her.~
 DO~SetGlobal("SanKiyoTalks","GLOBAL",5) RealSetGlobalTimer("SanKiyoti","LOCALS",2400)~
-==BSandr~(Laughes) I have felt your observant eye scanning my back at times. Nevermind. Maybe I should tell you something you cannot reveil by sole observation.~
+==BSandr~(Laughes) I have felt your observant eye scanning my back at times. Never mind. Maybe I should tell you something you cannot reveal by sole observation.~
 ==z#Kiyob~ You are a kind person, Sandrah. You must know that I trust you - it's just that not everything about you is evident at first sight.~
 ==BSandr~My goddess has the task to protect the Weave, a source of power and energy that is present in the whole multiverse. Access to the magic that stems from the Weave is granted by AO's verdict to all the gods in the pantheon and Mystra can do little about that.~
 ==z#Kiyob~ Thus the magic used by followers of evil gods is given by her against her will?~
 ==BSandr~She has not a direct right to control the use of magic.~
 ==z#Kiyob~Not a *direct* right, hm. She cannot prevent it openly, you mean?~
 ==BSandr~Many of the Harpers are her Chosen - and then there are her priests that take their part in acting against the misuse of her gifts here on the primary plane. Mystra cannot act against the other gods and against AO, but she can encourage us to do some work on her behalf.~
-==z#Kiyob~From what I have seen you are one of her frontline fighters, Sandrah.~EXIT
+==z#Kiyob~From what I have seen you are one of her front-line fighters, Sandrah.~EXIT
 
 CHAIN
 IF WEIGHT #-12~ Global("SanKiyoTalks","GLOBAL",6)~THEN ~z#kiyob~ Santalk3
@@ -70,10 +70,10 @@ CHAIN
 IF WEIGHT #-12~ Global("SanKiyoTalks","GLOBAL",8)~THEN ~z#kiyob~ SantalkKov1
 ~(Kiyone and Kova have approached Sandrah.)~ 
 DO~SetGlobal("SanKiyoTalks","GLOBAL",9) RealSetGlobalTimer("SanKiyoti","LOCALS",3400)~
-== Z#Kovab~Sandrah, your father is known to be one of the few independant and unbiased authorities in the Realms.~
+== Z#Kovab~Sandrah, your father is known to be one of the few independent and unbiased authorities in the Realms.~
 ==BSandr~ He was my teacher, Kova, and to answer your yet unspoken question, yes, I have enough reasons to believe in your innocence - in those matters you are accused by the authorities.~
 =~See, I had some opportunities to gain some insight into Athkatla's power structures with the thief guilds and the cowled wizzards and the intrigues and lies this city is build on. Your story and fate make complete sense in this context.~
-== Z#Kovab~It reliefs me much to hear that, I'm well aware of your significant influence on <CHARNAME>.~
+== Z#Kovab~It relieves me much to hear that, I'm well aware of your significant influence on <CHARNAME>.~
 ==BSandr~ I said I believe your story and I am willing to help you prove your innocence in this - I have not said I trust you completely and will not observe every move you make while in our company.~
 == Z#Kovab~I'm not declaring myself an ambassador of goodness, Sandrah, I am a thief and spy as that was the sole opportunity offered to an orphan in our town.~
 ==BSandr~Some of my best friends have a similar past, Kova. I know the code and the kind of loyalty that is required among those that live beyond the law. The oath of an honest thief weights more than the lies of a corrupt priest.~
@@ -88,12 +88,12 @@ DO~SetGlobal("SanKiyoTalks","GLOBAL",13) RealSetGlobalTimer("SanKiyoti","LOCALS"
 == Z#Kovab~I have good faith that two intelligent women have come to the right conclusion about my suspected criminal deeds.~
 ==BSandr~And what about Kova, the man?~
 == Z#Kovab~It is not easy to estimate Kiyone's feeling for that guy, if there are any at all.~
-==BSandr~There are definitly some from that man for her...(She takes Kova's hand in a friendly gesture and moves him away a bit from the others.)~
-=~I believe you are an honest and honorable man, Kova.~
+==BSandr~There are definitely some from that man for her...(She takes Kova's hand in a friendly gesture and moves him away a bit from the others.)~
+=~I believe you are an honest and honourable man, Kova.~
 == Z#Kovab~And what does she think?~
 ==BSandr~It is time for her to discover her feelings still. Life is more than just duty, as we both know well. Someone must help her find this aspect.~
 == Z#Kovab~Who could do such a thing?~
-==BSandr~An honest and honorable man, Kova.~ EXIT
+==BSandr~An honest and honourable man, Kova.~ EXIT
 
 CHAIN
 IF~ Global("SanEdPaper","LOCALS",3) ~THEN BSandr MaeKovLetttr
@@ -120,9 +120,9 @@ DO~SetGlobal("LOAClue","GLOBAL",1)GiveItemCreate("MaeLOA","Kova",0,0,0)Addexperi
 EXTEND_BOTTOM Suelle2 26
 IF~InParty("Kova")
 InParty("Kiyone")
-Global("Z#Proposal","GLOBAL",3)~THEN REPLY~I ask you for another privilege on behalf on some of my comrads.~GOTO 18
+Global("Z#Proposal","GLOBAL",3)~THEN REPLY~I ask you for another privilege on behalf on some of my comrades.~GOTO 18
 IF~InParty("Ninde")
-Global("LK#NindeRomanceActive","GLOBAL",2)~THEN REPLY~I ask you for another privilege on behalf on some of my comrads.~GOTO 18
+Global("LK#NindeRomanceActive","GLOBAL",2)~THEN REPLY~I ask you for another privilege on behalf on some of my comrades.~GOTO 18
 END
 
 ADD_TRANS_TRIGGER z#kywed 23

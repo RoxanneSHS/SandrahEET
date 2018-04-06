@@ -5,7 +5,7 @@ IF~Global("SanRetKarli","LOCALS",1)~THEN BEGIN SanKarlini1
 SAY~ Hm, what about the gnomes now?~
 IF ~~THEN REPLY~ Damned! We cannot get them back from that Balor's realm. Well, I guess that was the risk they were willing to take for science's sake.~GOTO SanKarlini2
 IF ~~THEN REPLY~ Oh, my! Only the Balor could return them to the surface, but he is gone. I 'm afraid today we have witnessed a sacrifice for science. But will anyone ever know what the gnomes find out down there?~ DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanKarlini2
-IF ~~THEN REPLY~ What a mess, Sandrah. Does my learned counselor know any way to help those poor victims of science?~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~ GOTO SanKarlini2
+IF ~~THEN REPLY~ What a mess, Sandrah. Does my learned counsellor know any way to help those poor victims of science?~ DO~IncrementGlobal("Sanpoints","GLOBAL",2)~ GOTO SanKarlini2
 IF ~~THEN REPLY~What?? They are just gnomes, who cares about GNOMES, he?~ DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~ GOTO SanKarlini2
 END
 

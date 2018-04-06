@@ -6,7 +6,7 @@ DO~SetGlobal("SanKariPell","GLOBAL",2)~
 ==BSandr~It is but you are not alone.~
 ==BMGKari~The big cat...Pelligram...she just told me...~
 ==Pellig~Purr.~
-==BSandr~You can hear her? This is a good sign. Listen to her, she is aquainted with large cities as well as with the wilderness.~
+==BSandr~You can hear her? This is a good sign. Listen to her, she is acquainted with large cities as well as with the wilderness.~
 ==BMGKari~She is a friend to you and friendly to me..~
 ==BSandr~This makes us friends as well, Kari.~
 ==BMGKari~I am glad to have such companions.~EXIT

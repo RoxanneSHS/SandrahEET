@@ -1,10 +1,10 @@
 APPEND BSandr
 
 IF~Global("SanKido","GLOBAL",1)~THEN BEGIN KidoJoin1
-SAY~(Sandrah's normally sweet face that can enlighten even a dungeon is stoney as she approaches you this time.)~
+SAY~(Sandrah's normally sweet face that can enlighten even a dungeon is stony as she approaches you this time.)~
 =~Are you willing to share your motivation to add a follower of Cyric to our company, *my love*?~
-IF~~THEN REPLY~ It was a counselor I know well who advised me often that it may be of advantage to keep such individuals under close observations rather than to let them run around causing uncontrollable havoc.~ GOTO KidoJoin2
-IF~~THEN REPLY~ He makes the impression of a rather harmlest jester to me. Cyric or no Cyric - this group certainly needs a good bard to cheer us up.~GOTO KidoJoin2
+IF~~THEN REPLY~ It was a counsellor I know well who advised me often that it may be of advantage to keep such individuals under close observations rather than to let them run around causing uncontrollable havoc.~ GOTO KidoJoin2
+IF~~THEN REPLY~ He makes the impression of a rather harmless jester to me. Cyric or no Cyric - this group certainly needs a good bard to cheer us up.~GOTO KidoJoin2
 END
 
 IF~~THEN BEGIN KidoJoin2
@@ -15,14 +15,14 @@ END
 IF~Global("SanKidoPlot","LOCALS",1)~ THEN BEGIN KidoPlot1
 SAY~ (Sandrah takes you aside when she notices that Kido is occupied with an attempt to impress a young woman with his terrible sing song.)~
 =~You were right to take Kido with us, only this way we were able to learn about this plot of the Prince of Lies and are in a position to prevent major damage.~
-IF~~THEN REPLY~ Are you asking me to kill one of my comrads, cousellor?~ GOTO KidoPlot2
+IF~~THEN REPLY~ Are you asking me to kill one of my comrades, counsellor?~ GOTO KidoPlot2
 IF~~THEN REPLY~ You taught me to keep such individuals under close observations rather than to let them run around. Are we using our usual strategy here, pretending to play their game until we find the right moment to step in?~ GOTO KidoPlot2
 IF~~THEN REPLY~ Ha, this horrible town will get the temple it deserves!~DO~IncrementGlobal("Sanpoints","GLOBAL",-4) SetGlobal("SanKidoPlot","LOCALS",2)~EXIT
 END
 
 IF~~THEN BEGIN KidoPlot2
 SAY~To kill Kido will solve nothing, as this town is full of candidates who will take this mad task instead of him. It is best for us to have control over the situation and act when the moment comes.~
-IF~~THEN REPLY~I am glad we agree on that strategy, my counselor.~ DO~ SetGlobal("SanKidoPlot","LOCALS",2)~EXIT
+IF~~THEN REPLY~I am glad we agree on that strategy, my counsellor.~ DO~ SetGlobal("SanKidoPlot","LOCALS",2)~EXIT
 END
 END
 
@@ -97,12 +97,12 @@ DO ~ SetGlobal("SanKido","GLOBAL",6) RealSetGlobalTimer("SanKidoTa","LOCALS",160
 == MWBKid ~Why? You are his granddaughter, his heiress...~
 == BSANDR ~ I am the granddaughter of the adventurer Cyric. My heritage goes back to the man, when he was still in his human form and before he was elevated by Ao to godhood. I am not the granddaughter of your mad god, Kido.~
 == MWBKid ~Blablabla...what is the use of that detail, Sandrah. You are of HIS blood, and that means that fate has sent me to your side as your natural companion so we both can rise in Cyric's name to his heritage...~
-== BSANDR ~ God's have no heirs, Kido. Sometimes an ursupator claims their power and domain, but that is a different story.~
+== BSANDR ~ God's have no heirs, Kido. Sometimes an usurper claims their power and domain, but that is a different story.~
 == MWBKid ~Idiotic! The scheme is so clear, even a female must be able to see it - you and me, Cyric and Mystra. We are made for each other.~
 == BSANDR ~ (Sigh) Am I this mad jester's lover by now already...? ~
 == MWBKid ~You should pray sometimes, priestess, then your goddess will surely tell you she wants you to follow her.~
 == BSANDR ~ I am already following her, Kido, as well as the way set out by the woman Midnight she had been before.~
-== MWBKid ~Then how can you be so blind, Sandrah. If you follow Midnight - see what became of her, hehe, Cyric's lover and a goddess. The logic is infailable, you have to admit it.~
+== MWBKid ~Then how can you be so blind, Sandrah. If you follow Midnight - see what became of her, hehe, Cyric's lover and a goddess. The logic is infallible, you have to admit it.~
 == BSANDR ~I have no intention to follow Midnight all the way, jester, not to the Pantheon and not to your greasy bedroll.~
 EXIT 
 
@@ -135,7 +135,7 @@ DO ~ SetGlobal("SanKido","GLOBAL",10) RealSetGlobalTimer("SanKidoTa","LOCALS",16
 == MWBKid ~ So far you have rebuked all my efforts to find a common ground for our relationship, priestess.~
 == BSANDR ~There is no such thing as *our relationship*.~
 == MWBKid ~ More of it than your stubborn mind guesses - listen closely, you will not regret it.~
-=~That toom and all your lore surely make it obvious to you that Cyric has taken Bhaal's portofolio as God of Murder. Damned Alaundo, but I do not wish for Bhaal to return. He might become again a threat to my muse. It was you and <CHARNAME> I searched for, because you might just have the power to defeat Bhaal.~
+=~That toom and all your lore surely make it obvious to you that Cyric has taken Bhaal's portfolio as God of Murder. Damned Alaundo, but I do not wish for Bhaal to return. He might become again a threat to my muse. It was you and <CHARNAME> I searched for, because you might just have the power to defeat Bhaal.~
 == BSANDR ~A common goal, even if I dislike your selfish motif.~
 == MWBKid ~ Ha, who would suffer more from Bhaal's return than you and your goddess?~
 == BSANDR ~All of Faerun will suffer like it did in the old days.~
