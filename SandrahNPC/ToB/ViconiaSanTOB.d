@@ -6,7 +6,7 @@ DO~SetGlobal("SanVicPCAss","LOCALS",2)~
 =~Yes, more than the current power may be achievable.~
 =~Yes or no, it may be a question of the blood or just caused by the way of life we had to take because of that blood.~
 =~And the rest is *No*.~
-==BVicon25~You will try everything to keep <CHARNAME> from assuming the rightful herritage?~
+==BVicon25~You will try everything to keep <CHARNAME> from assuming the rightful heritage?~
 ==BSandr25~Viconia, can you imagine that this heritage may not be the Throne of Bhaal? The power to rule, yes, but not necessarily by creating streams of blood and armies of murderers?~
 ==BVicon25~It...believe it or not...Sandrah...this is a perspective I would not reject. I confess the vision of power attracts me just as the vision of the Slayer's reign disgusts me.~
 ==BSandr25~A powerful ruler in control may be the alternative to a maniac beast slaughtering legions.~

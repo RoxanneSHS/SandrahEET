@@ -39,7 +39,7 @@ DO~SetGlobal("CVTiamal","AR6000",2) IncrementGlobal("SanGodInvolve","GLOBAL",1)~
 ==CVSan25J~The queen and goddess of the dragons herself! Saying that I erred may indicate that Abazigal was not your *champion*.~
 ==CVTiamal~Perfectly right. The abomination of Bhaal tried to impose as our kin but the blood of the murder god is not of our interest.~
 ==CVSan25J~Still you were deeply interested in him just in case he would be the winner and a figure to be dealt with in the future.~
-==CVTiamal~Your wisdom and your insight are a weapon matching that hammer you carry for a good reason. It was not up to Mystra to nominate a champion for this challenge but know that your intrusion is not critized by all. There are some who see the chance of a positive outcome from the Bhaalwar with you and <CHARNAME> involved.~
+==CVTiamal~Your wisdom and your insight are a weapon matching that hammer you carry for a good reason. It was not up to Mystra to nominate a champion for this challenge but know that your intrusion is not criticized by all. There are some who see the chance of a positive outcome from the Bhaalwar with you and <CHARNAME> involved.~
 END
 ++~What a change! The first encouraging words I heard for a long time in this struggle...delivered by a dragon of some *nasty* reputation.~+ reveil4
 
@@ -47,7 +47,7 @@ CHAIN
 IF~~THEN CVTiamal reveil4
 ~Trust only your own judgement of the creatures you meet, Godchild.~
 DO~GiveItemCreate("chan20",Player1,1,0,0)~
-==CVTiamal~Yes, and the judgement of the loyal counselor at your side.~
+==CVTiamal~Yes, and the judgement of the loyal counsellor at your side.~
 DO~ ActionOverride("CVSandr",AddSpecialAbility("cvdra11"))  ActionOverride("CVSandr",AddSpecialAbility("cvdra12"))~
 ==CVTiamal~Live long and prosperous.~
 DO~SetGlobal("Leave","LOCALS",2)~EXIT
@@ -69,7 +69,7 @@ DO~IncrementGlobal("SanGodInvolve","GLOBAL",1)~
 ==CVSharg IF~InParty("Viconia")~THEN~ Viconia, my priestess, I trust your judgement. Is she the one with Khalindra's blood you were to search?~
 ==VICON25J IF~InParty("Viconia")~THEN~She is and she judges no one by race or faith but only by a person's deeds and alignment.~
 ==CVSharg IF~InParty("Viconia")~THEN~ Viconia, you will be rewarded for your service as you deserve. You have my permission to continue with them.~
-==CVSharg~Let me hear the Bhaalspawn's oppinion on what his companions' wish.~
+==CVSharg~Let me hear the Bhaalspawn's opinion on what his companions' wish.~
 END
 ++~I seek no conflict with you, Shar. Let us part peacefully.~ DO~SetGlobal("CVShar","AR6108",2)~EXIT
 ++~You were the one to seek for this conflict, you will pay for it.~DO~SetGlobal("CVShar","AR6108",3)~EXIT

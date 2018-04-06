@@ -6,7 +6,7 @@ DO~SetGlobal("SanTashiaB","GLOBAL",2)~
 ==BTashi25~I understand it is not so much different from your own way - even if you in person seem to be different again from all other priests I have encountered.~
 ==BSandr25~You are right, some abilities come to me almost naturally - I guess pretty similar to your own experiences.~
 ==BTashi25~Yes and no - I still see a slight difference as I get new spells to my repertoire with experience but they are, hm, traditional arcana. You seem to *invent* new stuff which is based on the personal experience you make.~
-==BSandr25~Hm, I have never given it much thought before but I guess that is a valid observation. I often discovered some new ability after a ceratin experience I made or a foe I defeated.~
+==BSandr25~Hm, I have never given it much thought before but I guess that is a valid observation. I often discovered some new ability after a certain experience I made or a foe I defeated.~
 ==BTashi25~Do you have some explanation for it - I mean even for Mystra's priests that is quite unusual?~
 ==BSandr25~If it is not a very special talent than it is maybe my blood relationship to the Goddess.~EXIT
 

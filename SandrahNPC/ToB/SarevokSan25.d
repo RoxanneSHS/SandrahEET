@@ -1,11 +1,11 @@
 CHAIN
 IF~Global("SanSarev","GLOBAL",2)~ THEN BSandr25 FirstSarev
-~It is a slightly irritating feeling to walk as comrad with one who has once been our *enemy number one*.~
+~It is a slightly irritating feeling to walk as comrade with one who has once been our *enemy number one*.~
 DO~SetGlobal("SanSarev","GLOBAL",3)~
 ==BSAREV25 ~ If that is irritating for you then you can imagine how it is to walk beside the one whose gleaming deadly hammer was the last conscious vision I had before I ended my first mortal life.~
 ==BSandr25~In some way we had to meet way back on the Sword Coast, even if it was a long process to reveal why I was searching you.~
-==BSAREV25 ~ You were searching me? That explains a lot and on the other hand opens a stream of new questions. It explains the persistent power I felt opposing me, the destructive results that I had trouble attributing to my staggering sibling - before I learned about the counselor who was on my trail with <PRO_HIMHER>.~
-==BSandr25~You must know that I left Waterdeep for the Sword Coast in search of a Bhaalspawn. The one that was insaminated to my mother and resulted in her early death. I did not know whom I may find and which alignment he or she would have...I found <CHARNAME>...~
+==BSAREV25 ~ You were searching me? That explains a lot and on the other hand opens a stream of new questions. It explains the persistent power I felt opposing me, the destructive results that I had trouble attributing to my staggering sibling - before I learned about the counsellor who was on my trail with <PRO_HIMHER>.~
+==BSandr25~You must know that I left Waterdeep for the Sword Coast in search of a Bhaalspawn. The one that was inseminated to my mother and resulted in her early death. I did not know whom I may find and which alignment he or she would have...I found <CHARNAME>...~
 ==BSAREV25 ~ ...it may have been me - or <CHARNAME> may have been one with aspirations similar to the ones I had.~
 ==BSandr25~This was what I was contemplating as well recently.~
 ==BSAREV25 ~Excuse my curiosity, Sandrah, but what would you have done if you had found one of the others - not <CHARNAME>?~
@@ -44,7 +44,7 @@ IF~Global("SanSarev","GLOBAL",8)~ THEN BSandr25 FourthSarev
 ~Are you making progress with your attempt to understand yourself, Sarevok?~
 DO~SetGlobal("SanSarev","GLOBAL",9)~
 ==BSAREV25 ~ I may need your help in that, Sandrah - I mean as a witness.~
-==BSandr25~ A witness, a counselor, a listener - whatever, you have my attention.~
+==BSandr25~ A witness, a counsellor, a listener - whatever, you have my attention.~
 ==BSAREV25 ~ Back then when you and <CHARNAME> were about to defeat me at Baldur's Gate after you spoiled my attempt to become Grand Duke - did you advocate for my death?~
 ==BSandr25~ We discussed what we should do with you, yes, and <CHARNAME> asked for my advice after Tamoko had begged for your life.~
 ==BSAREV25 ~And what was your answer, if I may know this detail?~
@@ -59,11 +59,11 @@ IF~Global("SanSarev","GLOBAL",10)~ THEN BSandr25 FifthSarev
 DO~SetGlobal("SanSarev","GLOBAL",11)~
 ==BSAREV25 ~ Yes, concerning myself I did - concerning you...mh...more questions than answers have appeared before me.~
 ==BSandr25~ Why should you start to contemplate about me anyway?~
-==BSAREV25 ~I have learned from our comrads that your heritage, even if different from <CHARNAME>'s or my own, puts you in a similar position with respect to power.~
+==BSAREV25 ~I have learned from our comrades that your heritage, even if different from <CHARNAME>'s or my own, puts you in a similar position with respect to power.~
 ==BSandr25~ I am not a godchild, someone must have told you a misleading story.~
 ==BSAREV25 ~ No, you are no godchild - you are far more. You are from the blood that have killed gods in the past and according to your own confession you would be willing yourself to do such a deed. I know quite well that the idiot Cyric was just a tool used to kill my *father* - the true executioner had been the one you call your grandmother.~
 ==BSandr25~ You are right, Sarevok, and you are also right that I follow Midnight's example where I can map it to my own situation.~
-==BSAREV25 ~ Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overloard Ao and found worth to become godesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
+==BSAREV25 ~ Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overlord Ao and found worth to become goddesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
 ==BSandr25~ I do not estimate myself superior to anyone, Sarevok. And have you ever thought clearly about what it really means to have the power of a god? Do you only see the possibilities of bloodshed and destruction in it? What about the responsibility that comes with the power?~
 ==BSAREV25 ~Responsibility of a god? For the dirt crawling mob of worthless mortals, the blind lemmings rushing to their death with open eyes while drooling from greed...Why should a goddess care about them?~
 ==BSandr25~What makes a god a god if not the belief of those who follow him? Is it not the role to be an example and a guidance to those who seek the truth? I see the goddess I follow with such eyes.~
@@ -82,7 +82,7 @@ DO~SetGlobal("SanSarev","GLOBAL",13)~
 ==BSandr25~ I have chosen Mystra and I have never doubted her once I had made the choice, which was not an easy one.~
 ==BSAREV25 ~Because of the family bonds involved?~
 ==BSandr25~ (Smiles.) Yes - you should understand that better than any, had you questioned your heritage you may have come to other decisions. Your possibility to make an educated decision in your youth was probably not comparable to mine.~
-==BSAREV25 ~(Harshly) Elminster was probably a better teacher than the Orloth Winski. But a teacher was not the only thing that has missed in my former life. Love was the second. I understand that your actions are rather fuelled by love than by ambition or hatred.~
+==BSAREV25 ~(Harshly) Elminster was probably a better teacher than the Othlor Winski. But a teacher was not the only thing that has missed in my former life. Love was the second. I understand that your actions are rather fuelled by love than by ambition or hatred.~
 ==BSandr25~ (Smiles again.) The moth returns to play with the fire again.~
 ==BSAREV25 ~ (Returns a grimace that might be his first attempt ever to show a *smile*) Do not forget I have been to hell, Sandrah, an inviting little flame cannot scare me.~DO~RestParty()~EXIT
 
@@ -104,12 +104,12 @@ CHAIN
 IF~Global("SanSarMys","LOCALS",1)~ THEN BSandr25 SanSarevCoat
 ~(Sandrah's finger explore the fabric of the famous coat she has received from Mystra in deep thought.)~
 DO~SetGlobal("SanSarMys","LOCALS",2)~
-==BSAREV25 ~ Battallions of mages and sorcerers would have sacrificed most of Faerun to gain what is given to you while you still try to reject it.~
-==BSandr25~ I have not fiercly rejected it, I have only considered whether I am really worth it and whether I am really willing to accept the responsibilities that come with it.~
+==BSAREV25 ~ Battalions of mages and sorcerers would have sacrificed most of Faerun to gain what is given to you while you still try to reject it.~
+==BSandr25~ I have not fiercely rejected it, I have only considered whether I am really worth it and whether I am really willing to accept the responsibilities that come with it.~
 ==BSAREV25 ~You have mentioned your strange concept of responsibility before but never the endless freedom that a power like that seemingly offered to you might bring you.~
 ==BSandr25~ Freedom? No ruler or leader is ever free, exposed to the greed of his neighbours while having to care for his people. The same applies in my view even for the gods. Freedom is for a man with nothing to loose, no family to care for, no property to defend.~
 ==BSAREV25 ~Have you studied the writings of Narvantial of Soubar on the origin of your goddess?~
-==BSandr25~ I know them and I have also discovered my motherly bloodline going back to the beginning of time and including the likes of Quilue Veladorn among others.~
+==BSandr25~ I know them and I have also discovered my motherly bloodline going back to the beginning of time and including the likes of Qilue Veladorn among others.~
 ==BSAREV25 ~And now wearing Mystra's cloak yourself you are still content to follow a Bhaalspawn instead of claiming your own fortune?~
 ==BSandr25~ My way and <CHARNAME>'s way have been together since the day we met, Sarevok. If something like destiny really exists then it has brought us together. If I were after power than it would be our combined one to reshape Faerun for the good.~
 ==BSAREV25 ~Even if I have my doubt that you will be granted such a possibility it would be, eh, challenging, eh, to accompany you in that.~

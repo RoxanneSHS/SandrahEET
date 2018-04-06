@@ -17,7 +17,7 @@ CHAIN
 IF~~THEN CVSan25J SanBaltQuil1
 ~<CHARNAME>, I am convinced that Balthazar has neither intentions nor the necessary means to harm Qilandrha. We should document our mutual trust by sharing this with him.~
 ==Balth~An unknown Bhaalspawn of some significant power, but not your companion Imoen?~
-==CVSan25J~Bhaal has made many plans and constructed setups for a lot of eventualities, even if he did not foresee the betrayal by his most trusted follower. He planned the elimination of his primary foe through his children as well.~
+==CVSan25J~Bhaal has made many plans and constructed set-ups for a lot of eventualities, even if he did not foresee the betrayal by his most trusted follower. He planned the elimination of his primary foe through his children as well.~
 ==Balth~Bhaal's spawns to prevent Mystra's intervention to his return?~
 ==CVSan25J~You understand quickly, Balthazar.~
 ==Balth~Mmh, priestess of Mystra, daughter of Elminster - is that how you came into this plot?~
@@ -27,7 +27,7 @@ END
 
 CHAIN
 IF~~THEN CVSan25J SanBaltQuil2
-~ <CHARNAME> and me have discovered during our common adventures that Mystra's bloodline, the human female lines from which Midnight and earlier incarnations of Mystra have been elevated by Ao, these bloodlines are my heritage. Bhaal has raped my mother, Elminster's wife Khalindra, to insaminate her with the spawn to end this line.~
+~ <CHARNAME> and me have discovered during our common adventures that Mystra's bloodline, the human female lines from which Midnight and earlier incarnations of Mystra have been elevated by Ao, these bloodlines are my heritage. Bhaal has raped my mother, Elminster's wife Khalindra, to inseminate her with the spawn to end this line.~
 ==Balth~Obviously the plan failed.~
 ==CVSan25J~My father and his Harper friends including Gorion prevented it. My father has separated my sister Qilandrha and me from the beginning and has raised and educated her in a similar way as Gorion did with <CHARNAME>. Obviously even Melissan is unaware of her existence. I only met her myself recently together with <CHARNAME>.~
 ==Balth~I understand that our *father* has supplied a spawn with such a crucial mission with a significant part of the essence and the corresponding power.~
@@ -61,11 +61,11 @@ IF~~THEN Yaga02 S40
 ~Qi...who?~
 ==Solar~Who?...~
 END
-++~Ah, nevermind...I mean, Balthasar still is alive.~+9
+++~Ah, never mind...I mean, Balthazar still is alive.~+9
 
 CHAIN
 IF~~THEN Yaga02 S41
 ~Qi...who?~
 ==Solar~Who?...~
 END
-++~Ah, nevermind...I mean, go on.~+12
+++~Ah, never mind...I mean, go on.~+12

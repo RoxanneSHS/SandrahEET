@@ -23,6 +23,6 @@ DO~SetGlobal("SanYasSeeUM","cvumo4",2)~
 ==BYASRA25~You have read my thoughts, my friend. Maybe even better as here I would have the closeness of caves and walls that suit me even after my long time on the surface - and he will have the surface and the gardens not far away to soothe his soul.~
 ==BSandr25~My father's grounds would always welcome the two of you in their seclusion away from the bustle of the metropole itself.~
 ==BYASRA25~ Your sister has accomplished much.~
-==BSandr25~My sister maintains this place today, however the foundation was laid long ago by Eiliestraee and her priestess Qilue.~
+==BSandr25~My sister maintains this place today, however the foundation was laid long ago by Eilistraee and her priestess Qilue.~
 ==BYASRA25~You sister lives well to that part of her heritage - just like yourself, beloved.~
 ==BSandr25~(Your companions stand for a long time arm in arm to observe the peaceful scenery of everyday life before them - peace between races you so far have only encountered in merciless hate and battle against each other.)~ DO~ClearAllActions() StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT

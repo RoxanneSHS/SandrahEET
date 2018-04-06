@@ -41,7 +41,7 @@ APPEND Sarvolo
 
 IF~~THEN BEGIN VolSan1
 SAY~ The most beautiful priestess of Mystra in the history of the Realms, born of a bloodline older than any, with a heritage like none except the mighty Bhaalspawn <CHARNAME> with whom she has allied to change the face of Toril for all times.~
-=~Her history would fill an immense tome already with even more still to come. Stay close to her and you will have a frontseat when the greatest acts of our lifetime will be performed.~
+=~Her history would fill an immense tome already with even more still to come. Stay close to her and you will have a front seat when the greatest acts of our lifetime will be performed.~
 IF~~THEN REPLY~ I have a much better reason than that to stay with her, good Volo.~ GOTO VolSan2
 END
 
@@ -62,7 +62,7 @@ END
 
 CHAIN
 IF~~THEN Sarvolo VolSan2
-~A reason better than a frontrow seat where history evolves?~
+~A reason better than a front row seat where history evolves?~
 ==BSandr25~ How about putting some romance and love story in between all the boring *great deeds*.~
 ==Sarvolo~ Ah, to spice up a bit the whole thing!~
 ==BSandr25~No, Volo, just to at least one time write about the most important thing of them all - Love.~
@@ -99,17 +99,17 @@ IF~Global("SanRaiseMys","GLOBAL",2)~ THEN sanmyst RaiseSan
 ~ Greetings, Sandrah, my beloved grandchild, my priestess - and my successor.~
 DO~SetGlobal("SanRaiseMys","GLOBAL",3)~
 == BSANDR25 ~Is this the decision to be made by me now, grandmother Midnight? I wear your cloak already - is it not enough?~
-== sanmyst~You have done what I had not the chance to finish - you and <CHARNAME> have finally ended the Time of Troubles and will now be offered what is rightfully yours. Listen to the devine reasoning and then make your choice if you had not made it already deep inside.~
+== sanmyst~You have done what I had not the chance to finish - you and <CHARNAME> have finally ended the Time of Troubles and will now be offered what is rightfully yours. Listen to the divine reasoning and then make your choice if you had not made it already deep inside.~
 =~ Granddaughter, you have learned about the long line you come from and our role to connect the primary plane that is always and will always be our home with the Celestials and the Weave. You have proven that you are steadfast to follow a path that steers to righteousness while paying your dues to the practical circumstances at the same time. You have your ideals but you are no dreamer, you are courageous but not foolish or vain - in a word you are a woman like those who have stood before the decision in the past that is now yours.~
 == BSANDR25 ~Why do I have to make this decision - you are Mystra and may continue to be so?~
 == sanmyst~Remember your lore, Sandrah, and recall how I came to be what I am now. My reign over the Weave was never foreseen, you might say it was an incident like the untimely death of the one before me. The Time of Troubles created chaos everywhere and the ripples of it were present until today.~
-=~ Mystra was killed in the struggle while the gods roamed Faerun in their avatars, but AO knew that on their return a rush to stake claims for the unguarded Weave would commence. The Guardian had to be reestablished quickly, but the one to take this responsibility was not yet ready for it. She was still nursed by her mother, who was already pregnant from the seed of the God of Murder, Qilandrha who has turned out so differently still. As you have found in your search I was the only one then to substitute the Guardian.~
+=~ Mystra was killed in the struggle while the gods roamed Faerun in their avatars, but AO knew that on their return a rush to stake claims for the unguarded Weave would commence. The Guardian had to be re-established quickly, but the one to take this responsibility was not yet ready for it. She was still nursed by her mother, who was already pregnant from the seed of the God of Murder, Qilandrha who has turned out so differently still. As you have found in your search I was the only one then to substitute the Guardian.~
 == BSANDR25 ~Are you saying that your time as Mystra was always a preliminary solution?~
 == sanmyst~You may put it that way. AO has granted to me to return to the mortal life I sacrificed to guarantee the stability of the planes on the day the true Mystra would be ready and willing to accept her role.~
 == BSANDR25 ~And you have not changed your mind about it in the meantime while you had the opportunity to shape Faerun in the manner it ought to be?~
 == sanmyst~I could not do as much as I would have wanted as long as Cyric and the stirring Bhaal and all their followers were not yet defeated.~
 =~(Mystra gives you an intensive look that seems to touch your very soul and also the essence inside of you.)~
-=~ You, Sandrah, may have the ability to fullfil those dreams - with a companion at your side who may turn the power and essence of evil given to <PRO_HIMHER> to the power of love and hope. The pair of new gods to end the Trouble may be the hope for a new Faerun after all this time. I beg you, my beloved grandchild, do not cast this chance aside. Take your place among the immortals.~
+=~ You, Sandrah, may have the ability to fulfil those dreams - with a companion at your side who may turn the power and essence of evil given to <PRO_HIMHER> to the power of love and hope. The pair of new gods to end the Trouble may be the hope for a new Faerun after all this time. I beg you, my beloved grandchild, do not cast this chance aside. Take your place among the immortals.~
 == BSANDR25 ~Yes, Mystra, I will.~
 =~(Sandrah gives you one of her enigmatic looks. You feel the hope she tries to express almost physically.) I hope I will have the companion at my side to make the change happen.~
 ==Finsol01~ <CHARNAME>, the first decision thus has been made. May yours be just as wise.~
@@ -121,17 +121,17 @@ IF~Global("SandrahSummoned","GLOBAL",3)~ THEN sanmyst RaiseSanNoPc
 ~ Greetings, Sandrah, my beloved grandchild, my priestess - and my successor.~
 DO~SetGlobal("SandrahSummoned","GLOBAL",4)~
 == BSANDR25 ~Is this the decision to be made by me now, grandmother Midnight? I wear your cloak already - is it not enough?~
-== sanmyst~You have done what I had not the chance to finish - you and <CHARNAME> have finally ended the Time of Troubles and will now be offered what is rightfully yours. Listen to the devine reasoning and then make your choice if you had not made it already deep inside.~
+== sanmyst~You have done what I had not the chance to finish - you and <CHARNAME> have finally ended the Time of Troubles and will now be offered what is rightfully yours. Listen to the divine reasoning and then make your choice if you had not made it already deep inside.~
 =~ Granddaughter, you have learned about the long line you come from and our role to connect the primary plane that is always and will always be our home with the Celestials and the Weave. You have proven that you are steadfast to follow a path that steers to righteousness while paying your dues to the practical circumstances at the same time. You have your ideals but you are no dreamer, you are courageous but not foolish or vain - in a word you are a woman like those who have stood before the decision in the past that is now yours.~
 == BSANDR25 ~Why do I have to make this decision - you are Mystra and may continue to be so?~
 == sanmyst~Remember your lore, Sandrah, and recall how I came to be what I am now. My reign over the Weave was never foreseen, you might say it was an incident like the untimely death of the one before me. The Time of Troubles created chaos everywhere and the ripples of it were present until today.~
-=~ Mystra was killed in the struggle while the gods roamed Faerun in their avatars, but AO knew that on their return a rush to stake claims for the unguarded Weave would commence. The Guardian had to be reestablished quickly, but the one to take this responsibility was not yet ready for it. She was still nursed by her mother, who was already pregnant from the seed of the God of Murder, Qilandrha who has turned out so differently still. As you have found in your search I was the only one then to substitute the Guardian.~
+=~ Mystra was killed in the struggle while the gods roamed Faerun in their avatars, but AO knew that on their return a rush to stake claims for the unguarded Weave would commence. The Guardian had to be re-established quickly, but the one to take this responsibility was not yet ready for it. She was still nursed by her mother, who was already pregnant from the seed of the God of Murder, Qilandrha who has turned out so differently still. As you have found in your search I was the only one then to substitute the Guardian.~
 == BSANDR25 ~Are you saying that your time as Mystra was always a preliminary solution?~
 == sanmyst~You may put it that way. AO has granted to me to return to the mortal life I sacrificed to guarantee the stability of the planes on the day the true Mystra would be ready and willing to accept her role.~
 == BSANDR25 ~And you have not changed your mind about it in the meantime while you had the opportunity to shape Faerun in the manner it ought to be?~
 == sanmyst~I could not do as much as I would have wanted as long as Cyric and the stirring Bhaal and all their followers were not yet defeated.~
 =~(Mystra gives you an intensive look that seems to touch your very soul and also the essence inside of you.)~
-=~ You, Sandrah, may have the ability to fullfil those dreams - with a companion at your side that may turn the power and essence of evil given to <PRO_HIMHER> to the power of love and hope. The pair of new gods to end the Trouble may be the hope for a new Faerun after all this time. I beg you, my beloved grandchild, do not cast this chance aside. Take your place among the immortals.~
+=~ You, Sandrah, may have the ability to fulfil those dreams - with a companion at your side that may turn the power and essence of evil given to <PRO_HIMHER> to the power of love and hope. The pair of new gods to end the Trouble may be the hope for a new Faerun after all this time. I beg you, my beloved grandchild, do not cast this chance aside. Take your place among the immortals.~
 == BSANDR25 ~Yes, Mystra, I will.~
 =~(Sandrah gives you one of her enigmatic looks. You feel the hope she tries to express almost physically.) I hope I will have the companion at my side to make the change happen.~
 ==Finsol01~ <CHARNAME>, the first decision thus has been made. May yours be just as wise.~DO~ActionOverride("Finsol01",SetNumTimesTalkedTo(1))~EXTERN Finsol01 4
@@ -140,8 +140,8 @@ DO~SetGlobal("SandrahSummoned","GLOBAL",4)~
 // Watcher's Keep Altar Ritual
 
 EXTEND_BOTTOM Goralt1 0
-IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",0)~ THEN REPLY~ Sandrah, can my knowledable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu1
-IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",1)~ THEN REPLY~  Sandrah, can my knowledable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu2
+IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",0)~ THEN REPLY~ Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu1
+IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",1)~ THEN REPLY~  Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu2
 END
 
 CHAIN
@@ -158,7 +158,7 @@ IF~~ THEN CVSan25J SanWKRitu2
 ==CVSan25J ~ (She rings the bell again.) ~
 ==Goralt1~The whole temple trembles slightly and you feel magic energy concentrating in the place.~
 ==CVSan25J ~(Sandrah lightens the candle now.)~
-==Goralt1~ The tiny candle starts to burn with supranatural intensity. The trembling beneath your feet increases.~
+==Goralt1~ The tiny candle starts to burn with supra-natural intensity. The trembling beneath your feet increases.~
 ==CVSan25J ~(Sandrah has opened the book at the passage you found with the priest.) Orontia missnor butani. Olgor in athre. Damon.~
 =~ (At the last words she rings the bell a third time.)~
 END
@@ -174,7 +174,7 @@ DO~SetGlobal("San25ChiQuest","GLOBAL",14)~
 ==BSandr25~Ignorance can be bliss, my teacher, as I have never known to miss something while I have grown up so happily - it must have hurt all of you even more, those who knew the truth.~
 ==CVRingo~The final result rewards us all. Your sister and you will play their role now to shape Faerun in a way we all have envisioned for so long. Together with you, <CHARNAME>.~
 ==BSandr25~Can you give us a clue what awaits us beyond Khalindra's gateway?~
-==CVRingo~(Laughs) Your sister has advised us to let you take the conventional road to her Realm, not the shortcut your father and me use. She claimed that you would want to learn about her world a bit before you meet her.~
+==CVRingo~(Laughs) Your sister has advised us to let you take the conventional road to her Realm, not the short cut your father and me use. She claimed that you would want to learn about her world a bit before you meet her.~
 END
 ++~We are supposed to search that dungeon of Undermountain to find her? ~ + EnterUM2
 
@@ -187,7 +187,7 @@ END
 
 CHAIN
 IF~ AreaCheck("CVumo4") Global("QiTest","cvumo4",0)~ THEN SAMYSTP1 Mystpr251
-~Greetings, Mylady Sandrah, Grandchild of Midnight, Guardian of the Cloak. The seeker has found another step on the path.~
+~Greetings, My lady Sandrah, Grandchild of Midnight, Guardian of the Cloak. The seeker has found another step on the path.~
 ==BSandr25~ Even you have known all this for a long time, Rhanthona?~
 ==SAMYSTP1~ No, Sandrah, your sister and me have only met after you left the temple for your quest. I feel welcome down here, where everybody is accepted for his nature and heart's alignment without regard to race.~
 ==BSandr25~ You can serve Mystra in both places I assume.~
@@ -211,7 +211,7 @@ IF~~ THEN SAMYSTP1 Mystpr253
 ~Will you tell others who may seek this shelter about it, now that you know it yourself?~
 END
 ++~You surely don't want advertisements all over the place *Come to Undermountain*. I guess those who deserve to know will find it through their faith or through Eilistraee's guidance.~ DO~IncrementGlobal("QiTest","cvumo4",2)~ + Mystpr254
-++~This is not for me to decide, I am just a guest here acommpanying Sandrah to see her sister. Your secret is save with me.~ DO~IncrementGlobal("QiTest","cvumo4",2)~ + Mystpr254
+++~This is not for me to decide, I am just a guest here accompanying Sandrah to see her sister. Your secret is save with me.~ DO~IncrementGlobal("QiTest","cvumo4",2)~ + Mystpr254
 ++~There are a few whom I know well enough, Drow who have left and forsaken the Underdark for a better life and brighter future. They deserve to know there is a community that might welcome them.~ DO~IncrementGlobal("QiTest","cvumo4",2)~ + Mystpr254
 
 CHAIN
@@ -245,7 +245,7 @@ END
 //Melissan Showdown
 INTERJECT_COPY_TRANS Finmel01 27 SanOddElement1
 ==CVSan25J IF ~InParty("CVSandr") OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ You never had a chance to succeed - neither for your own ambitions nor for the case you had really followed Bhaal's orders.~
-==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ YOU!! Priestess, you and your goddess have dared to intervene again and again. You should not be here at all but dead since long already. But nevermind, this will all be corrected now.~
+==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ YOU!! Priestess, you and your goddess have dared to intervene again and again. You should not be here at all but dead since long already. But never mind, this will all be corrected now.~
 ==CVSan25J IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ With the essence of Qilandrha missing from your equations and the power of Mystra against you, you will fail.~
 ==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ Who by the Nine Hells is Qilandrha?~
 ==CVQidr IF~ InParty("CVSandr") InMyArea("CVQidr")~THEN~ I am Qilandrha - born to Khalindra of Mystra's bloodline, sired by Bhaal.~
@@ -256,7 +256,7 @@ INTERJECT_COPY_TRANS Finmel01 27 SanOddElement1
 
 INTERJECT_COPY_TRANS Finmel01 25 SanOddElement2
 ==CVSan25J IF ~InParty("CVSandr") OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ You never had a chance to succeed - neither for your own ambitions nor for the case you had really followed Bhaal's orders.~
-==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ YOU!! Priestess, you and your goddess have dared to intervene again and again. You should not be here at all but dead since long already. But nevermind, this will all be corrected now.~
+==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ YOU!! Priestess, you and your goddess have dared to intervene again and again. You should not be here at all but dead since long already. But never mind, this will all be corrected now.~
 ==CVSan25J IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ With the essence of Qilandrha missing from your equations and the power of Mystra against you, you will fail.~
 ==Finmel01 IF ~InParty("CVSandr")OR(2) InMyArea("CVQidr") PartyHasItem("CVQCall")~THEN~ Who by the Nine Hells is Qilandrha?~
 ==CVQidr IF~ InParty("CVSandr") InMyArea("CVQidr")~THEN~ I am Qilandrha - born to Khalindra of Mystra's bloodline, sired by Bhaal.~

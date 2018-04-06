@@ -1,14 +1,14 @@
 CHAIN
 IF~Global("SanIylos","GLOBAL",1)~ THEN BSandr25 IylosMeli1
-~ Iylos, maybe it is a good time to introduce myself to our new comrad. I am...~
+~ Iylos, maybe it is a good time to introduce myself to our new comrade. I am...~
 DO~SetGlobal("SanIylos","GLOBAL",2)~
 ==BLk#Iyl~ Sandrah of Waterdeep, daughter of Elminster and Khalindra, granddaughter of Midnight and Cyric, priestess of Mystra, Guardian of the Cloak, shall I go on?~
-==BSandr25~ (Laughs) Counselor of <CHARNAME>, you forgot. It is as such that I address you now as I heard your remark regarding Mellissan in the conversation with Viekang.~
+==BSandr25~ (Laughs) Counsellor of <CHARNAME>, you forgot. It is as such that I address you now as I heard your remark regarding Melissan in the conversation with Viekang.~
 ==BLk#Iyl~ I am sorry if I said something wrong, Sandrah.~
 ==BSandr25~ I try to help <CHARNAME> to get more insight into our current situation and the who is who in this plot...~
 ==BLk#Iyl~ If anyone can than it is you, the unforeseen element.~
-==BSandr25~I heard others referring to me with similar words, Iylos, but back to my topic. I try to find out who those five, respectively four - without Illasera - are. You seem to know a lot about how the final race between Bhaal's childeren is run and who is involved. ~
-=~ So, Yaga-Shura is one for me on my candidate list, Mellissan is one I am not sure of, and I added your Balthazar just a minute ago.~
+==BSandr25~I heard others referring to me with similar words, Iylos, but back to my topic. I try to find out who those five, respectively four - without Illasera - are. You seem to know a lot about how the final race between Bhaal's children is run and who is involved. ~
+=~ So, Yaga-Shura is one for me on my candidate list, Melissan is one I am not sure of, and I added your Balthazar just a minute ago.~
 ==BLk#Iyl~ (Looks perplex for a second) Mh, I get the idea where your reputation comes from Sandrah. Well, I can confirm Yaga-Shura. I will not say a word about my master who send me here. What is your point about Melissan?~
 ==BSandr25~She seems to know all about <CHARNAME> for one. Then she has brought all these Bhaalspawns together in this one place - and now I learned she has *helped* this Viekang to get rid of his ability to teleport away in case of ultimate danger. More and more I get the feeling that this town is a huge trap - and a place to collect Bhaal's essence in abundance.~
 ==BLk#Iyl~ (Iylos remains silence. His face looks like a mask under Sandrah's questioning gaze.)~
@@ -16,15 +16,15 @@ DO~SetGlobal("SanIylos","GLOBAL",2)~
 
 CHAIN
 IF~Global("SanIylos","GLOBAL",20)~ THEN BSandr25 IylosMeli1L
-~ Iylos, maybe it is a good time to introduce myself to our new comrad. I am...~
+~ Iylos, maybe it is a good time to introduce myself to our new comrade. I am...~
 DO~SetGlobal("SanIylos","GLOBAL",2)~
 ==BLk#Iyl~ Sandrah of Waterdeep, daughter of Elminster and Khalindra, granddaughter of Midnight and Cyric, priestess of Mystra, Guardian of the Cloak, shall I go on?~
-==BSandr25~ (Laughs) Counselor of <CHARNAME>, you forgot. It is as such that I address you now as I heard your remark regarding Mellissan in the conversation with <CHARNAME>.~
+==BSandr25~ (Laughs) Counsellor of <CHARNAME>, you forgot. It is as such that I address you now as I heard your remark regarding Melissan in the conversation with <CHARNAME>.~
 ==BLk#Iyl~ I am sorry if I said something wrong, Sandrah.~
 ==BSandr25~ I try to help <CHARNAME> to get more insight into our current situation and the who is who in this plot...~
 ==BLk#Iyl~ If anyone can than it is you, the unforeseen element.~
-==BSandr25~I heard others referring to me with similar words, Iylos, but back to my topic. I try to find out who those five, respectively three - without Illasera and the fire giant- are. You seem to know a lot about how the final race between Bhaal's childeren is run and who is involved. ~
-=~ So, Yaga-Shura was one, Mellissan is one I am not sure of, and I added your Balthazar just a minute ago.~
+==BSandr25~I heard others referring to me with similar words, Iylos, but back to my topic. I try to find out who those five, respectively three - without Illasera and the fire giant- are. You seem to know a lot about how the final race between Bhaal's children is run and who is involved. ~
+=~ So, Yaga-Shura was one, Melissan is one I am not sure of, and I added your Balthazar just a minute ago.~
 ==BLk#Iyl~ (Looks perplex for a second) Mh, I get the idea where your reputation comes from, Sandrah. Well, I can confirm Yaga-Shura. I will not say a word about my master who send me here. What is your point about Melissan?~
 ==BSandr25~She seems to know all about <CHARNAME> for one. Then she has brought all these Bhaalspawns together in this one place - and now I learned she has *helped* a man named Viekang to get rid of his ability to teleport away in case of ultimate danger. More and more I get the feeling that Saradush was a huge trap - and a place to collect Bhaal's essence in abundance.~
 ==BLk#Iyl~ (Iylos remains silence. His face looks like a mask under Sandrah's questioning gaze.)~
@@ -40,7 +40,7 @@ DO~SetGlobal("SanIylos","GLOBAL",4)~
 ==BLk#Iyl IF~Global("SanRompath","GLOBAL",2)~THEN~In your eh,...intimate relationship with <CHARNAME> have you never attempted to cure or help her from her taint?~
 ==BSandr25~As a monk you know as well as me that the heritage is not a disease to be cured by spells or medicine. As a counselor I have given my aid as my healing is not only aimed at the body but also to the soul.~
 ==BLk#Iyl~Have you given any advice on how to control the pulling and calling of the blood?~
-==BSandr25~No, not in such a direct way. I have helped <CHARNAME> in seing the consequences of any deed or decision, in controlling the path of <PRO_HISHER> actions and by thus eliminating the basis for the Bhaalpowers to bloom.~
+==BSandr25~No, not in such a direct way. I have helped <CHARNAME> in seeing the consequences of any deed or decision, in controlling the path of <PRO_HISHER> actions and by thus eliminating the basis for the Bhaalpowers to bloom.~
 ==BLk#Iyl~Maybe it is wisdom for a healer to know the limits of her skill. The love of a woman can be a cure for many things - as it can be the source of many evils as well. The later I mentioned for completeness only not to imply anything on your motives.~EXIT
 
 CHAIN
@@ -54,7 +54,7 @@ DO~SetGlobal("SanIylos","GLOBAL",6)SetGlobal("SanSerBha","GLOBAL",4)~
 ==BLk#Iyl~Interesting how your deduction works. What is your conclusion?~
 ==BSandr25~A traitor to such a party may have two different origins. For both is common that he or she wants to destroy the Alliance from the inside however the motives would be different. In both cases it may be feasible to seek the support of other potent enemies of the Alliance. By which I clearly mean <CHARNAME> and us.~
 ==BLk#Iyl~And what are the two possibilities you talk about, Sandrah?~
-==BSandr25~One is that the traitor - traitor from the perspective of the Bhaalspawns - actually wants to prevent Bhaal's return. The other is that the traitor is not himself a Bhaalspawn but still needs the possesion of the Essence that is gathered by the Alliance.~
+==BSandr25~One is that the traitor - traitor from the perspective of the Bhaalspawns - actually wants to prevent Bhaal's return. The other is that the traitor is not himself a Bhaalspawn but still needs the possession of the Essence that is gathered by the Alliance.~
 ==BLk#Iyl~The first is clear. But the second?~
 ==BSandr25~*The Servant of Bhaal*. Do not look so questioningly, I do not know more about this figure than this expression used by the prophesy. Did Bhaal himself plan his own return by dispersing his essence and installing a Servant to recollect it when the time has come?~
 ==BLk#Iyl~This traitor, Sandrah, would he not try to establish a contact with <CHARNAME>?~
@@ -63,7 +63,7 @@ DO~SetGlobal("SanIylos","GLOBAL",6)SetGlobal("SanSerBha","GLOBAL",4)~
 ==BSandr25~Before he would openly reveal himself to <CHARNAME> would he not try to gain more information about us and our motives and plans? Would he not make sure that <CHARNAME> is neither in league with the Five nor aspiring the Throne on <PRO_HISHER> own?~
 ==BLk#Iyl~A task not easily performed, I would say.~
 ==BSandr25~(Sandrah has stopped and looks directly into Iylos' eyes.) If I were him I would either come secretly to <CHARNAME>'s side or sent a trustee to do it, I would accompany and study my subject to get answers to my crucial questions.~
-==BLk#Iyl~(Iylos silently returns Sandrah's gaze, his face an impressionless mask.)~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
+==BLk#Iyl~(Iylos silently returns Sandrah's gaze, his face an impression less mask.)~ DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~
 EXIT
 
 CHAIN
@@ -99,7 +99,7 @@ IF~Global("SanIylos","GLOBAL",11)~ THEN BSandr25 IylosBalance2
 ~ A white lily for me, Iylos? I never expected you to be the flower cavalier. ~
 DO~SetGlobal("SanIylos","GLOBAL",12)~
 ==BLk#Iyl~(Laughs) You have enough of that category, Sandrah, I will not compete with them. Take this as a symbol of the clarity you have given to my own thoughts recently.~
-==BSandr25~ I am always willing to help if I can - even if I did it unconciously.~
+==BSandr25~ I am always willing to help if I can - even if I did it unconsciously.~
 ==BLk#Iyl~You have been at <CHARNAME>'s side for a long time now. Are you willing to disclose your reasons to me.~
 ==BSandr25~ Oh, Secretive One, our reasons to be with <PRO_HIMHER> may not be so much different.~
 ==BLk#Iyl~Are you to guard or to guide <CHARNAME>?~
@@ -112,7 +112,7 @@ CHAIN
 IF~Global("SanIylos","GLOBAL",13)~ THEN BSandr25 IylosBalance3
 ~ Do you think I can learn some of your magnificent skills if you are willing to be my teacher? ~
 DO~SetGlobal("SanIylos","GLOBAL",14)~
-==BLk#Iyl~Hm. Normally I would say no to anyone without the necessary prerequisits. But you seem to be a very rare exception.~
+==BLk#Iyl~Hm. Normally I would say no to anyone without the necessary prerequisites. But you seem to be a very rare exception.~
 ==BSandr25~I am not intending to steal one of your order's sacred secrets from you, Iylos. I am just a seeker and constant scholar trying to enhance my abilities to serve our group and course.~
 ==BLk#Iyl~I do not doubt your selfless motives, my friend, nor your ability to really master where others may need months or years of training. Let us give it a try.~ DO~RestParty()~ EXIT
 
@@ -131,7 +131,7 @@ DO~SetGlobal("SanBaltMelis","GLOBAL",3)~
 ==BLk#Iyl~(Iylos nods.) The main difference may be that <CHARNAME> is aware of it - or at least the ever watchful conselor is.~
 ==BSandr25~We are used and we know it, only I see no other method to get to the heart of this matter other than by this way - our recent visit to my father and my sister has confirmed that. We must get inside of this conspiracy or we will become victims ourself.~
 ==BLk#Iyl~(Iylos nods silently.)~
-==BSandr25~What did Melissan tell Balthazar, what did she promise him that has changed him, neglecting the monastry and raising armies to partake in the bloodshed instead?~
+==BSandr25~What did Melissan tell Balthazar, what did she promise him that has changed him, neglecting the monastery and raising armies to partake in the bloodshed instead?~
 ==BLk#Iyl~We have a common goal, Sandrah, to find that reason and to change it for good.~
 ==BSandr25~(This time it is Sandrah who nods silently.)~EXIT
 
@@ -139,7 +139,7 @@ CHAIN
 IF~ Global("SanBaltInt","GLOBAL",1)~THEN BSandr25 IylosBaltInt
 ~Your master Balthazar does everything to avoid <CHARNAME> it seems. On the other hand he is the only one of the Five who has not attacked us.~
 DO~SetGlobal("SanBaltInt","GLOBAL",2)~
-==BLk#Iyl~ What does the counselor recommend due to that, Sandrah?~
+==BLk#Iyl~ What does the counsellor recommend due to that, Sandrah?~
 ==BSandr25~I will not further insist to get the answer from you, Iylos. I will tell you how I interpret this behaviour - your master's plan may be very similar to our own, he just may have the advantage to belong to the inner circle of the five.~
 END
 ++~You think he wants to stop the return of Bhaal himself?~ + IylosBaltInt2
@@ -149,5 +149,5 @@ CHAIN
 IF~~THEN BSandr25 IylosBaltInt2
 ~Melissan manipulates him just like she does with you, <CHARNAME>. He may know it same as you do and lets it happen trying to control the situation himself.~
 =~(Sigh) If we could only let him know our intention and remove his distrust in us...~
-==BLk#Iyl~ This may already be happening, counselor.~
+==BLk#Iyl~ This may already be happening, counsellor.~
 ==BSandr25~I hope so - may he get the right message and understand it correctly.~EXIT
