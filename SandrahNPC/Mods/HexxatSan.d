@@ -18,9 +18,9 @@ DO~SetGlobal("Sanhealhex","GLOBAL",6)~
 ==BHexxat~This could change...What do you know about Chult?~
 ==Bsandr~It lies off the shores of Calimshan, it is a mountainous jungle with little population, Chultans distrust power and wealth, preferring to live simple.~
 =~So, what do you know about Waterdeep?~
-==BHexxat~It is the direct opposite of what you just said about my homeland, it is the City of Splendor, isn't it.~
+==BHexxat~It is the direct opposite of what you just said about my homeland, it is the City of Splendour, isn't it.~
 ==Bsandr~First of all - for me it is home, just like Chult may still be home for you deep in your...heart?~
-==BHexxat~You think, I have none...a heart, I mean, nor a home anymore, right?~
+==BHexxat~You think, I have none...a heart, I mean, nor a home any more, right?~
 ==Bsandr~In a way your words make me think that I maybe have erred about that.~
 EXIT
 

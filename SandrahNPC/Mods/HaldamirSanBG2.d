@@ -17,7 +17,7 @@ IF~Global("SanHealHalda","GLOBAL",5)~THEN ~BB!Hal~ HalTRecSan2
 ~*Sandrah approaches Haldamir during the rest you have ordered for the group.*~
 DO~SetGlobal("SanHealHalda","GLOBAL",6)~
 ==BSandr~Recently you told me about our first encounter in Cormanthor. Do you know what became of the little bird I rescued?~
-==~BB!Hal~~ Oh, yes, it became the talk of our village for some while. The priest you gave it to restored it completely and set it free again. But the bird stayed close to his treehouse high up in our central tree afterwards. The following spring it mated and build a nest, much to the nuisance of the priest. Ever since that day there is a nest full of young chirping birdlings right over his bedroom window. Their noise annyoys him obviously but of course he respects the thankfulness of the bird family.~
+==~BB!Hal~~ Oh, yes, it became the talk of our village for some while. The priest you gave it to restored it completely and set it free again. But the bird stayed close to his treehouse high up in our central tree afterwards. The following spring it mated and build a nest, much to the nuisance of the priest. Ever since that day there is a nest full of young chirping birdlings right over his bedroom window. Their noise annoys him obviously but of course he respects the thankfulness of the bird family.~
 ==BSandr~You always speak with warmth and kindness of your homeland. Were you taken from your nest and duties there?~
 ==~BB!Hal~~ No, I was a soldier and fighter without family. My time to think of building my nest had not yet come, if that is what you meant.~
 ==BSandr~That bird was able to find a partner in a strange place it was thrown to by an accident. It build a nest and settled down where fate had dropped it.~
@@ -40,7 +40,7 @@ DO~SetGlobal("SanHealHalda","GLOBAL",8)~
 ==~BB!Hal~~I do. Do you see those three lines of stars converging together to a single point? Looks like an arrowhead, doesn't it? ~
 ==BSandr~ One possible thing you may see in it.~
 ==~BB!Hal~~Those are the saddest stars. They are Corellon Niuve, or the tears of Corellon. We believe those stars to be the tears that Corellon wept when Lolth led the drow astray, and elf first fought elf.~
-==BSandr~ (Sandrah has taken Haldamirs hand as the elf is obviously agitated.) I know of both elves and drow that are grieved by this - and I know of some on both sides who try to overcome this gap.~
+==BSandr~ (Sandrah has taken Haldamir's hand as the elf is obviously agitated.) I know of both elves and drow that are grieved by this - and I know of some on both sides who try to overcome this gap.~
 ==~BB!Hal~~You know of many things, young N'Tel'Quessir, much that those much older and considering themselves much wiser do not comprehend.~
 =~ Eh, ehem, but this is enough stargazing for one night. (He takes a long deep look into Sandrah's eyes before he turns away.)~
 ==BSandr~ Those stars will be out there every night for us to look at and talk about.~EXIT
@@ -53,10 +53,10 @@ DO~SetGlobal("SanHealHalda","GLOBAL",10)~
 ==~BB!Hal~~That is what makes you so dangerous - for me.~
 ==BSandr~ You are a warrior, a fighter, maybe even a conqueror. ~
 ==~BB!Hal~~Before this day, I never thought the beauty of one not elven born could inspire my passion.~
-==BSandr~ The greatest danger for all of us is to build up barriers and hinderances while our heart tells us there are not to be such.~
+==BSandr~ The greatest danger for all of us is to build up barriers and hindrances while our heart tells us there are not to be such.~
 ==~BB!Hal~~Your power and your grace stir my desire like no human woman has ever done before... but my admiration gives you discomfort. I will avert my gaze, though it pains me. ~
 ==BSandr~ Admiration would indeed make me uncomfortable, I am a woman not an object to be adored but not dared to touch. And pain - well, I am a healer, right? ~
-==~BB!Hal~~The healer or the desease ...dangerous indeed. To invite me rather than to keep me at distance. ~
+==~BB!Hal~~The healer or the disease ...dangerous indeed. To invite me rather than to keep me at distance. ~
 ==BSandr~ I always do what my heart tells me to do. That should not come as a surprise to you. ~
 ==~BB!Hal~~And rather - I had hoped for a rejection than for encouragement.~
 ==BSandr~ It is not always the easy way that is the right one to take. It seems to put you in a kind of dilemma. ~
@@ -85,8 +85,8 @@ DO~SetGlobal("SanHealHalda","GLOBAL",12)~
 ==BSandr~ The stars are not the place to look for the answer you seek, Haldamir. That place is your own heart.~
 ==~BB!Hal~~I grew up in the shadow of ruined Myth Drannor. It was once called the City of Song. All peoples, elves, humans, dwarves, gnomes, even halflings, came to live there, and they dwelt in harmony, for a time. The races comingled, and many of my people grieved to see their half-human offspring wither and die of old age while they themselves were still young.~
 ==BSandr~ I am aware of the loss that an elf may have to face with great certainty if he admits his love for a human woman. Are you aware of the loss and grieve you will carry with you of a love and its joy that was offered to you and you denied it only thinking of the fact that one day it would have to end?~
-==~BB!Hal~~Among my people, it is a stain on one's honor to take a human lover. Bearing the child of that union is a crime. One who commits such an offence is to be shunned by the rest of the Tel'Quessir and considered an outsider forevermore. ~
-==BSandr~ A law that marks love as a crime does not deserve to exist. It is injustice and the incarnation of bigotery. Such a law itself is a crime.~
+==~BB!Hal~~Among my people, it is a stain on one's honor to take a human lover. Bearing the child of that union is a crime. One who commits such an offence is to be shunned by the rest of the Tel'Quessir and considered an outsider for evermore. ~
+==BSandr~ A law that marks love as a crime does not deserve to exist. It is injustice and the incarnation of bigotry. Such a law itself is a crime.~
 ==~BB!Hal~~I will not further deny it before any men or elf or before myself, Sandrah of Waterdeep - I love you.~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
 
 EXTEND_TOP ~B!Halj~ 386
