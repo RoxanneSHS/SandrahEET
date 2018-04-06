@@ -22,7 +22,7 @@ CHAIN
 IF ~~ THEN  CVSHPRI NorWoo2
 ~ You may be fools but you are useful fools. If you have killed him, the sword is of no use to anyone but the godchild. Do with it what you want as she will never get it in her hands anyway. As you are not orc it matters little that you are a godchild yourself. You will never meet her and ally with her.~
 == BSANDR ~ You have mentioned *her* several times now. Is *she* the new leader to take Ghotal's heritage? Someone you fear more than your former leader himself? ~
-== CVSHPRI~ You are an obstrusive and cunning little witch, human-girl. You will hear no more. Make sure those orcs around here do not get Ghotal's weapon to possibly get it to her.~
+== CVSHPRI~ You are an obtrusive and cunning little witch, human-girl. You will hear no more. Make sure those orcs around here do not get Ghotal's weapon to possibly get it to her.~
 EXIT
 
 CHAIN
@@ -38,7 +38,7 @@ CHAIN
 IF ~~ THEN  CVSHPRI NorWoo4
 ~ A valid point. As you are not orc it matters little that you are a godchild yourself. You will never meet her and ally with her.~
 == BSANDR ~ You have mentioned *her* several times now. Is *she* the new leader to take Ghotal's heritage? Someone you fear more than your former leader himself? ~
-== CVSHPRI~ You are an obstrusive and cunning little witch, human-girl. You will hear no more. Make sure those orcs around here do not get Ghotal's weapon to possibly get it to her.~
+== CVSHPRI~ You are an obtrusive and cunning little witch, human-girl. You will hear no more. Make sure those orcs around here do not get Ghotal's weapon to possibly get it to her.~
 EXIT
 
 
@@ -60,7 +60,7 @@ CHAIN
 IF ~ Global("SanShauOrcStaff","GLOBAL",8)~ THEN  CVSHPRI ShRet2
 ~ I told you you will not escape. This is your end now, Shauhana. Murderer and thief, enemy of the Clan. Your execution will be long and painful.~
 DO ~ SetGlobal("SanShauOrcStaff","GLOBAL",9)~
-== CVSHAUJ ~ I have paid many years for a crime that was none, but only self-defense. Any orc would be granted that right, even against the own father.~
+== CVSHAUJ ~ I have paid many years for a crime that was none, but only self-defence. Any orc would be granted that right, even against the own father.~
 == CVSHPRI~ You have put crime over crime on you. The outsiders are shown Clan secrets. You steal the holy staff. Your escape ends here.~
 == CVSHAUJ ~ I am not alone, Vennegrat, my friends are mighty warriors ready to defend me.~
 == CVSHPRI~ Fool. Hundreds of orc arrows are pointed at your hearts. Look round. Your friends can go. You stay for prison and death.~
@@ -82,7 +82,7 @@ IF~~ THEN  CVSHPRI ShRet4
 ~ I will not wait longer. Deliver the traitor!~
 == CVSHAUJ ~ They will watch you leaving, <CHARNAME>, but I think you will be able to overwhelm the escort they give you.~
 == BSANDR ~ Do you have an idea where they will take you?~
-== CVSHAUJ ~ Most likely to the prison and torture chamber. It is in a cave in the east of the area we visited. The jailor is a monstreous orc. He will rejoyce when he gets his claws on me.~
+== CVSHAUJ ~ Most likely to the prison and torture chamber. It is in a cave in the east of the area we visited. The jailer is a monstrous orc. He will rejoice when he gets his claws on me.~
 == BSANDR ~ Oh, my poor friend. Be sure we will be there before he can do you any harm. The potion will help you until then.~
 == CVSHAUJ ~ I am orc! I have no fear. But I have something that these orcs cannot imagine in their little minds - I have friends.~
 END

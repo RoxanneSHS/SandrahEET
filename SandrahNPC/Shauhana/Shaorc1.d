@@ -16,7 +16,7 @@ IF~~THEN EXIT
 END
 
 IF~RandomNum(4,4) AreaCheck("CVSH14")~ THEN BEGIN Ruins4
-SAY~ This wannabe queen is only a halfbred. She cannot lead pure bred orcs.~
+SAY~ This wannabe queen is only a half-breed. She cannot lead pure bred orcs.~
 IF~~THEN EXIT
 END
 
@@ -24,8 +24,8 @@ CHAIN
 IF~Global("ShauUnd","CVSh11",1)~THEN Shaorc1 Hint1
 ~You be friends who came with our princess, yes?~
 DO~SetGlobal("ShauUnd","CVSh11",2)~
-==CVSandrJ~ We are Shauhana's friends. Ghatlenk sent us to investigate the strange occurances in this area.~
-==Shaorc1~ Scary occurances those are, the old graveyard coming alive.~
+==CVSandrJ~ We are Shauhana's friends. Ghatlenk sent us to investigate the strange occurrences in this area.~
+==Shaorc1~ Scary occurrences those are, the old graveyard coming alive.~
 ==CVSandrJ~ We were warned about those undead...~
 ==Shaorc1~Different undead than any others.~
 ==CVSandrJ~What do you mean by that?~
@@ -49,7 +49,7 @@ IF~~ THEN Shaorc1 Hint2
 
 CHAIN
 IF~Global("Entered","CVSH15",2)~ THEN Shaorc1 Villagenetry
-~Human boy scout has anounced your coming, friends.~
+~Human boy scout has announced your coming, friends.~
 DO~SetGlobal("Entered","CVSH15",3)~
 ==CVSandrJ~I hope you make good progress with the defences and preparations.~
 ==Shaorc1~It is not good what you found in the haunted village?~
@@ -60,12 +60,12 @@ END
 
 CHAIN 
 IF~~THEN Shaorc1 village1
-~The princess is at the largest tent in the north of the village. And her mighty fighter protector trains his troups in the arena circle southeast.~EXIT
+~The princess is at the largest tent in the north of the village. And her mighty fighter protector trains his troupes in the arena circle south-east.~EXIT
 
 
 CHAIN
 IF~~THEN Shaorc1 village2
-~The mighty fighter protector trains his troups in the arena circle southwest. And our princess is at the largest tent in the north of the village.~EXIT
+~The mighty fighter protector trains his troupes in the arena circle south west. And our princess is at the largest tent in the north of the village.~EXIT
 
 BEGIN Shaorc2
 
@@ -125,7 +125,7 @@ CHAIN
 IF~Global("HinteE","CVSh11",2)~THEN Shaorc3 HintE
 ~Uuh, you...you are Shauhana's friends, you must be...~
 DO~SetGlobal("HinteE","CVSh11",3)~
-==CVSandrJ~Yes, we are. We come to investigate the undead occurances around here.~
+==CVSandrJ~Yes, we are. We come to investigate the undead occurrences around here.~
 ==Shaorc3~ They come out of the old graveyard...uuh...they go west to the former village of the Icebear Clan...they must gather there - I can physically feel the dark presence that calls them.~
 ==CVSandrJ~It is as we feared, my friend, someone is gathering an undead army there. <CHARNAME> and us will investigate further and report to Ghatlenk and Shauhana.~
 ==Shaorc3~I will not be of much help to you any further...~
@@ -157,7 +157,7 @@ IF~~THEN EXIT
 END
 
 IF~RandomNum(4,4) AreaCheck("CVSH14")~ THEN BEGIN Ruins4
-SAY~ This wannabe queen is only halfbred. Vennegrat will destroy her.~
+SAY~ This wannabe queen is only halfbreed. Vennegrat will destroy her.~
 IF~~THEN EXIT
 END
 
@@ -178,7 +178,7 @@ IF~~THEN EXIT
 END
 
 IF~RandomNum(4,4) AreaCheck("CVSH14")~ THEN BEGIN Ruins4
-SAY~ This wannabe queen is only a halfbred. She cannot lead pure bred orcs.~
+SAY~ This wannabe queen is only a halfbreed. She cannot lead pure bred orcs.~
 IF~~THEN EXIT
 END
 

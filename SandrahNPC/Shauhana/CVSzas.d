@@ -19,7 +19,7 @@ IF~Global("Init","CVSH21",4)~THEN CVSzas Szass2
 =~You are talking to a true God serving no one but himself, the Lord of the Dark Weave.~
 ==CVSandrJ~Your ambition comes not unexpected to me, foolish as it may be if not to say self-destructive.~
 ==CVSzas~The only one in danger here is you - grandchild of Mystra.~
-==CVSandrJ~The Dark Weave cannot be mastered by anyone, it is the pure negation of anything that exists within the Realms of the True Weave. You are a creature of the prime just like all of us here. The Dark Weave means anhillation to you as it would mean for all of us.~
+==CVSandrJ~The Dark Weave cannot be mastered by anyone, it is the pure negation of anything that exists within the Realms of the True Weave. You are a creature of the prime just like all of us here. The Dark Weave means annihilation to you as it would mean for all of us.~
 ==CVSzas~It is energy from the Dark Weave that already streams through me and lets this place here exist, foolish priestess. It increases with any new breathing of the Weaves until it will replace the minor energy of your Goddess' ward.~
 ==CVSandrJ~Bringing the energy of the True and the Dark Weave together will end in - nothing.~
 END
@@ -45,7 +45,7 @@ END
 
 CHAIN
 IF~Global("SzassLeaveEarly","CVSH21",1)~THEN CVSzas MustLeave
-~Aah, Bhaalspawn, your disruption of the process here is enerving. This is just one of my opportunities and I will not waste my time defending it. I leave it to my assistants to clean up the mess you made here, including the removal of yourself. Winski and Narghal Rasz will await you outside.~
+~Aah, Bhaalspawn, your disruption of the process here is enervating. This is just one of my opportunities and I will not waste my time defending it. I leave it to my assistants to clean up the mess you made here, including the removal of yourself. Winski and Narghal Rasz will await you outside.~
 ==CVSandrJ~ Winski Perorate?~
 ==CVSzas~He struggled a bit to have to return to life - eh, half-life, seeing it was Thay who had saved him - but his hatred against Rashemen made it acceptable for him. His long experience and complete lack of scruple are really valuable for me.~
 =~But, my young priestess, you will really learn to love Narghal! He has kept his lust for a love slave like you even in his current state. Enjoy your new occupation.~DO~ SetGlobal("SzassLeaveEarly","CVSH21",2) SetGlobal("SanHintFactory","GLOBAL",23) ReallyForceSpell(Myself,DRYAD_TELEPORT)~ EXIT

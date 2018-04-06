@@ -68,7 +68,7 @@ END
 
 IF~~THEN BEGIN PT21
 SAY ~ All is well. Sandrah's plan has worked fine. We need to find my weapons, they must be stored in one of the containers here. And then there is my old tutor (Points sadly to the bed.)~
-= ~ I tried what I could, but this jailor beast killed him in the end. He died protecting me, he is a hero, <CHARNAME>. I must take his body to Sharkta Fai. I must!~
+= ~ I tried what I could, but this jailer beast killed him in the end. He died protecting me, he is a hero, <CHARNAME>. I must take his body to Sharkta Fai. I must!~
 IF ~~ THEN REPLY ~ Very well. Let us find your equipment and then take the body. Let us move fast, before the rest of your Clan get alerted and is after us once again.~ DO ~ SetGlobal("ShauhanaJoined","GLOBAL",1) JoinParty()~ EXIT
 END
 

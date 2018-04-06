@@ -35,8 +35,8 @@ IF~~ THEN SHAUGUA ComeForEnd2
 ==CVSandrJ~You were forced to keep up the facade of the door to the other world for the world outside.~
 == SHAUGUA ~I am cursed with a hunger that cannot be saturated to keep me from the death I so desire.~
 ==CVSandrJ~You claimed not to know Midnight, the one who has slain the dead god you follow.~
-== SHAUGUA ~Aaah, the light at the end of my endless sufferering - know this, I was left here to do Myrkul's work long before my master fell, thus I know not of who ended his existence.~
-=~ But you claimed to be of her descendance, priestess...do for me what the one before you did for Myrkul.~
+== SHAUGUA ~Aaah, the light at the end of my endless suffering - know this, I was left here to do Myrkul's work long before my master fell, thus I know not of who ended his existence.~
+=~ But you claimed to be one of her descendants, priestess...do for me what the one before you did for Myrkul.~
 END
 ++~She may grant you that, Watcher, provided you cooperate in telling us about that new master who rules here now.~+ ComeForEnd3
 

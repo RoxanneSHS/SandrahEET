@@ -13,7 +13,7 @@ DO~SetGlobal("SanShauRSure","GLOBAL",2)~
 == CBROLFSB~Other than the fact that your half-orc friend may have been here on my side if you had not found her? Other than that she had to choose a Bhaalspawn or an outcast bandit for survival? - YES, there is.~
 END
 ++~ Then make it quick to tell us, Sureblade, it may mean your life.~ + RolfShau2
-++~ You would say anything to save your life at this moment. But as you have adressed Shauhana for mercy I leave it to her to decide if she wants to listen.~ + RolfShau2
+++~ You would say anything to save your life at this moment. But as you have addressed Shauhana for mercy I leave it to her to decide if she wants to listen.~ + RolfShau2
 
 CHAIN
 IF~~ THEN CBROLFSB RolfShau2
@@ -37,7 +37,7 @@ CHAIN
 IF~Global("RolfJoin","cvsha3",1)~ THEN CBROLFSB RolfShauJoin1
 ~ I greet you, Shauhana, Ghotal's successor, Ilneval's own daughter.~
 DO~ SetGlobal("RolfJoin","cvsha3",2)~
-==CVSHAUJ~ Rolf! You have kept your word. It was right to have trusted you. You are an orc of honor.~
+==CVSHAUJ~ Rolf! You have kept your word. It was right to have trusted you. You are an orc of honour.~
 == CBROLFSB~A half-orc like yourself, my queen. You were the first one ever to trust me and to give me a chance to proof my value. You - and your advisor, whom I have to thank for this second chance of a life.~
 ==BSANDR~Shauhana needs friends and followers like you, Rolf. You have just witnessed how things stand. Given that, will you ally with her course and task?~
 == CBROLFSB~I am here already sometime, counsellor. I have acquainted myself with the situation - and with the Clan. I cannot call them my kin yet but I found they accept my skills and my devotion to Shauhana.~

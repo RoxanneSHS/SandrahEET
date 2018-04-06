@@ -4,7 +4,7 @@ CHAIN
 IF~Global("CVWinsSh20","CVSH20",2)~THEN Sanwins2 helloAgain
 ~So we meet once again in a desolate place, <CHARNAME>.~
 DO~SetGlobal("CVWinsSh20","CVSH20",3)~
-==CVNarga~That cute little cleric girl isss really asss exquisit asss the master hasss promised.~
+==CVNarga~That cute little cleric girl isss really asss exquisite asss the master hasss promised.~
 ==CVSandrJ~The *master* must have promised a lot - before he made his urgent departure seeing that things down here did not work out as planned.~
 ==Sanwins2~I had already lost everything a man can possibly lose when we met last. The master restored me against my will and would not let me go again. So what, I am still a man with nothing to lose.~
 ==CVNarga~And a man wisss everything to win, now the massster hasss let thisss place to usss.~

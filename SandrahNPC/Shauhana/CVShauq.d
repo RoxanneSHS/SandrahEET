@@ -18,7 +18,7 @@ CHAIN
 IF~~THEN CVShauQ Welc2
 ~The mysterious Watcher? - But he let me go when he could have destroyed us all easily!~
 ==CVSandrJ~The watcher is one of his figurines - by choice or unvoluntarily, I guess the second...No, the creature I expect to find down there is Szass Tam.~
-==BEDWIN IF~InParty("Edwin")~THEN~WHAT!! (You can just catch the pale faced red wizzard from collapsing to the ground.)~
+==BEDWIN IF~InParty("Edwin")~THEN~WHAT!! (You can just catch the pale faced red wizard from collapsing to the ground.)~
 ==CVShauQ~Who is that?~
 ==CVSandrJ~Szass Tam is the Zulkir of Necromancers from Thay, Shauhana, a land far to the east of the Realms. This man has studied the darkest of practices from far gone ages and finally has voluntarily chosen the existence as a half-lich in order to free himself from the fate of life and death that is part of us creatures of the primary plane.~
 =~He is the mightiest of the eight rulers of Thay and neither alive nor dead - as long as he renews his dark energy with soul essence that is strong enough for his demands.~
@@ -27,7 +27,7 @@ IF~~THEN CVShauQ Welc2
 ==CVShauQ~We will not end as *material* for a greedy undead!! We will fight regardless of who that Tam Tam is...~
 ==CVSandrJ~I plan to take him by surprise while you continue to prepare your people for the final battle against Vennegrat. You can only win it when the supply with undead is cut off first.~
 END
-++~How can we possibly do that, counselor?~+ Welc3
+++~How can we possibly do that, counsellor?~+ Welc3
 
 CHAIN
 IF~~THEN CVShauQ Welc3
@@ -37,7 +37,7 @@ IF~~THEN CVShauQ Welc3
 ==CVSandrJ~Your grandfather, Ghotal, he has left the signs for you. When we freed his cursed remains in the Fields of the Dead he knew you would succeed him.~
 ==CVShauQ~The emblem he left at the pool - for me to find it? He never passed the gate.~
 ==CVSandrJ~The power of the God over the End of Everything is the key.~
-==CVShauQ~You find it on my shelf in my rooms here in my headquarter.~
+==CVShauQ~You find it on my shelf in my rooms here in my headquarters.~
 END
 ++~ We will go and stop them and you and Minsc will defeat them here. So be it.~EXIT
 
@@ -67,7 +67,7 @@ DO~SetGlobal("SeeLake","CVSH22",3) RealSetGlobalTimer("WaveTwo","CVSH22",125) ~
 ==CVMinsc~Very similar to what we have here today.~
 ==CVSandrJ~I see - the ice would start to crack and under the weight of the many heavy opponents finally break and the lake would swallow them.~
 ==CVShauQ~No one can survive in the fathomless icy depth of the lake and the ice will very soon seal the grave again.~
-==CVSandrJ~My hammer will be suiteable to perform the work that Ghotal's sword once did, my friends.~ DO~ StartCutSceneMode() Wait(1) MoveToPoint([3053.1123])MoveViewPoint([3053.1123],INSTANT) CreateVisualEffectObject("lightpi","CVSandr") Wait(1) EndCutSceneMode()~EXIT
+==CVSandrJ~My hammer will be suitable to perform the work that Ghotal's sword once did, my friends.~ DO~ StartCutSceneMode() Wait(1) MoveToPoint([3053.1123])MoveViewPoint([3053.1123],INSTANT) CreateVisualEffectObject("lightpi","CVSandr") Wait(1) EndCutSceneMode()~EXIT
 
 CHAIN
 IF~Global("ShauPalHis","CVSH13",1)~THEN CVShauQ ReBuild1
