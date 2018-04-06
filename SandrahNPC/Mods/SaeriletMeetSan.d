@@ -18,9 +18,9 @@ IF~~THEN REPLY~ I take her for the second, Sandrah. Some girls grow faster than 
 END
 
 IF~~ THEN BEGIN SaerYoung4
-SAY~ (She blushes) It reminds me of how I fell uncurable in love with the older hero I encountered. Just like her now.~
+SAY~ (She blushes) It reminds me of how I fell incurable in love with the older hero I encountered. Just like her now.~
 IF~~THEN REPLY~ If you talk of Drizzt, my dear, you are the living proof that such a love can mature along with you. It is not necessarily just a young girl's insecurity with her new world of feelings.~ GOTO SaerYoung5
-IF~~THEN REPLY~ And is that so bad. Either you will later reveal that you were just overwhelmed by your hormons or you may find that youth may not prevent a solid decision.~GOTO SaerYoung5
+IF~~THEN REPLY~ And is that so bad. Either you will later reveal that you were just overwhelmed by your hormones or you may find that youth may not prevent a solid decision.~GOTO SaerYoung5
 END
 
 IF~~ THEN BEGIN SaerYoung5
@@ -58,7 +58,7 @@ DO~ SetGlobal("SanHealSaer","GLOBAL",7) RealSetGlobalTimer("SanSaerT","LOCALS",1
 == BSandr ~ Very well.~
 == BSaerile~ 'tis on the eighth step of the Mount Celestia I saw thee walking once. I called thee a goddess once, perhaps in mistake, as the high planes of the Mount Celestia are where the gods themselves dwell.~
 == BSandr ~ Hm. I can assure you that I have never been to that place, not even in my dreams. But it is odd that I have heard some hints and was told of some people's visions who also saw me walking near the Weave and among the celestials. What that may mean I do not know.~
-== BSaerile~ I reliefs me that thee do not blame me a fool. Knowst that time in the linear way of the Prime is of no matter at Celestia.~
+== BSaerile~ I relieves me that thee do not blame me a fool. Knowst that time in the linear way of the Prime is of no matter at Celestia.~
 == BSandr ~ You mean that what you *remember* to have seen is something that is still in the future according to the time line of the material plane?~
 == BSaerile~ This explanation appears logical if I have seen it in the timeless sphere I come from and thou swear it has not happened to thee yet in your time. Still, no mortal has ever been known that was allowed to that region - except for the priestess Midnight. But she never left again but became Mystra on the event.~
 == BSandr ~ I know, not only because I am a priestess of that Goddess, but also because the human Midnight is my grandmother.~
@@ -70,7 +70,7 @@ IF~Global("SanUddSar","LOCALS",1)~THEN BSandr SanUddSaer
 DO~ SetGlobal("SanUddSar","LOCALS",2)~
 == BSaerile~ Thou have shamed me, Sandrah, in the face of <CHARNAME> and in the face of Tyr himself.~
 == BSandr ~ By what wrongdoing have I done so. Believe me, I had no intention to do so!~
-== BSaerile~ Oh, I notst mean thou did wrong. Thou braveheartedly defended us from the evil when I stoodst pale with terror. I have proven unworthy a paladin while thee deserve such honors.~
+== BSaerile~ Oh, I notst mean thou did wrong. Thou brave heartedly defended us from the evil when I stoodst pale with terror. I have proven unworthy a paladin while thee deserve such honours.~
 == BSandr ~ (Sandrah comes close to the younger girl and lays her hands on her shoulders. She kindly brushes a small tear from Saerileth's eye.) We all have our moments when the terror of what we face overwhelms us for a moment, my friend. You were sensing a danger that I did not. You were shocked by the sudden impact of your vision while I was not impacted by such a thing and just acted according to what I saw. Ignorance is bliss.~
 == BSaerile~ (The girl's eyes clear and a shy smile appears.) Thou areth as far from ignorance than anyone can be, Sandrah. Thine courage cometh not from the absence of fear but from mastering it.~
 == BSandr ~ Do not punish yourself unnecessarily, Saerileth, it comes with experience. I have simply faced horrors like these a few times more often than you. You need not to worry, you have proven your strength more than once.~
@@ -81,7 +81,7 @@ CHAIN
 IF~ Global("SanSaerFight","GLOBAL",3)~ THEN BSandr SanSaerQuaPC
 ~ (Sandrah and you walk hand in hand enjoying each other's closeness wordlessly.)~
 DO~SetGlobal("SanSaerFight","GLOBAL",4)~
-== BSaerile~ (Saerileth must have approached you from behind as she adresses you unexpectedly.)~
+== BSaerile~ (Saerileth must have approached you from behind as she addresses you unexpectedly.)~
 = ~Why dost thou not accept the fact that <CHARNAME> is my man now and leave thine hands off him?~
 == BSandr ~ Is that so, Paladin? Have you some exclusive rights on him? Do you think you own him?~
 == BSaerile~ Nobody hath rights to own another, thus would be slavery which we both most despise.~

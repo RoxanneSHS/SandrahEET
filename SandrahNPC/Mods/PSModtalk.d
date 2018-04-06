@@ -1,12 +1,12 @@
 INTERJECT_COPY_TRANS psteos 25 SanPsMysPlot
-== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ <CHARNAME>, I dearly plead to you to take this task. The artifact in question would constitute a magnificent threat to us all who depend on the Weave to be intact. My goddess has sealed it for a good reason.~
+== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ <CHARNAME>, I dearly plead to you to take this task. The artefact in question would constitute a magnificent threat to us all who depend on the Weave to be intact. My goddess has sealed it for a good reason.~
 ==psteos IF ~ InParty("CVSandr") ~ THEN ~ And we will unseal it to gain its power!!~
-== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ That remains to be seen - first this artifact needs to be rescued from those who stole it and be brought back into our control. In this aspect we have a common goal, Teos.~END
+== CVSandrJ IF ~ InParty("CVSandr") ~ THEN ~ That remains to be seen - first this artefact needs to be rescued from those who stole it and be brought back into our control. In this aspect we have a common goal, Teos.~END
 
 APPEND CVSandrJ
 IF~ Global("SanPsMysPlot","GLOBAL",2) ~THEN BEGIN SanGetPSArtef1
 SAY~I think I owe you an explanation about my reaction to that task.~
-IF~~THEN REPLY~ I was hoping for that. I cannot imagine that you would act against the will of your goddess who has sealed this artifact for a good reason.~ DO~ SetGlobal("SanPsMysPlot","GLOBAL",3) ~GOTO SanGetPSArtef2
+IF~~THEN REPLY~ I was hoping for that. I cannot imagine that you would act against the will of your goddess who has sealed this artefact for a good reason.~ DO~ SetGlobal("SanPsMysPlot","GLOBAL",3) ~GOTO SanGetPSArtef2
 IF~~THEN REPLY~ (Smile) In have the feeling you do your little *secret agent* routine in Mystra's name here once again.~ DO~ SetGlobal("SanPsMysPlot","GLOBAL",3) ~GOTO SanGetPSArtef2
 END
 
@@ -18,7 +18,7 @@ END
 IF~~THEN BEGIN SanGetPSArtef3
 SAY~ I cannot guarantee this, my love. All I know is that things can go much worse if we let those magelings try to resolve the issue without our knowledge and the possibility to step in when things go wrong.~
 IF~~THEN REPLY~Your goddess can really be content with a priestess such as you.~EXIT
-IF~~THEN REPLY~Mystra and the Weave may depend on our abbilities. Wow - I hope your goddess will be ready to act should we need her...~GOTO SanGetPSArtef4
+IF~~THEN REPLY~Mystra and the Weave may depend on our abilities. Wow - I hope your goddess will be ready to act should we need her...~GOTO SanGetPSArtef4
 END
 
 IF~~THEN BEGIN SanGetPSArtef4
@@ -32,14 +32,14 @@ IF~~THEN REPLY~What the hell was that? What is that rabbit really? The future of
 END
 
 IF~~THEN BEGIN Rabbit3
-SAY~Teos was right, <CHARNAME>. This rabbit is nothing but a rabbit. And this artifact was just a rabbit cage.~
-=~The cowled wizards surely expected someone else to emerge from the artifact but that is not our problem.~
+SAY~Teos was right, <CHARNAME>. This rabbit is nothing but a rabbit. And this artefact was just a rabbit cage.~
+=~The cowled wizards surely expected someone else to emerge from the artefact but that is not our problem.~
 IF~~THEN REPLY~And you know what they expected?~GOTO Rabbit4
 IF~~THEN REPLY~And you let me play my part here blindly to fool the cowls?~GOTO Rabbit4
 END
 
 IF~~THEN BEGIN Rabbit4
-SAY~(Smiles enigmaticly.) Does it really matter, my dear. You have what you wanted, do you not? The sphere is now your own and the cowled wizards have found that what they wanted from your cooperation, cannot be gained.~
+SAY~(Smiles enigmatic.) Does it really matter, my dear. You have what you wanted, do you not? The sphere is now your own and the cowled wizards have found that what they wanted from your cooperation, cannot be gained.~
 =~(She kisses you lightly.) You have won. Mystra has won. We need not to know more.~
 IF~~THEN DO~ SetGlobal("PsTeosRabbit","ar0410",3)~EXIT
 END
@@ -72,7 +72,7 @@ IF WEIGHT #-5~Global("SanPsMysPlot","GLOBAL",4) ~  THEN PSElmin SanWarn
 DO~ SetGlobal("SanPsMysPlot","GLOBAL",5) ~
 == CVSandrJ~ Mystra can rely on hers. We know that as much as she is dependent on us, we are gaining from her protection of the Weave that is source for all of us.~
 ==PSElmin~Well perceived, mine beloved daughter. Now...~
-=~Thou and <CHARNAME> hath found the artifact and secured it. Excellent.~
+=~Thou and <CHARNAME> hath found the artefact and secured it. Excellent.~
 == CVSandrJ~You know what the cowled wizards are planing to do, do you not, father?~
 ==PSElmin~Well, let them have their feat. 'tis only by that means that we can overcome our foe once and for all.~
 == CVSandrJ~It is a trap - but it challenges Mystra, maybe even endangers her.~

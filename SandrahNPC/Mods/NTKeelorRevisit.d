@@ -13,7 +13,7 @@ IF WEIGHT #-3~ Global("SanKelorHeal","GLOBAL",3)~THEN IF_FILE_EXISTS NTKeelor In
 ~  Well, I see I caught your interest in those orc proceedings going on in the north.~
 DO~ SetGlobal("SanKelorHeal","GLOBAL",4)~
 ==CVSandrJ~It would be interesting at least to compare notes and see if we are on the right track.~
-==NTKeelor~I know that priests of Oghma as well a Mystra have a good knowlege of the lore of the Realms while an old dwarf has witnessed quite a couple of things in his lifetime.~
+==NTKeelor~I know that priests of Oghma as well a Mystra have a good knowledge of the lore of the Realms while an old dwarf has witnessed quite a couple of things in his lifetime.~
 ==CVSandrJ~The battle on the Fields of Death, good dwarf? You witnessed General Ghotal's last stand.~
 ==NTKeelor~Impressive, young one. We dwarves had our own interest in that matter even if we kept hidden as long as we could. Yes, I was the eyes and ears of my clan, following the General and observing his final defeat.~
 ==CVSandrJ~But you were not in alliance with the southern Realms, were you...A strong orc nation in the north would be considered a threat for your own exploits of the mountains, especially the Stormhorns.~

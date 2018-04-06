@@ -46,7 +46,7 @@ DO~SetGlobal("SanProph","GLOBAL",3)~
 ==SAHPR4~ No - but sometimes where you come from tells you were you will go.~
 ==CVSANDRJ~ That is a valid observation.~
 ==SAHPR4~ You come directly from the one you serve and her line. Your path therefore is clear.~
-==CVSANDRJ~ You probably only had a short glance at my entries in the book, being more interested in your own record, I assume. I am only the grandchild of Mystra and I am that by my father Elminster, not by the motherline. Anyway, thank you for telling me. I will beg to <CHARNAME> to aid your people in your goal.~
+==CVSANDRJ~ You probably only had a short glance at my entries in the book, being more interested in your own record, I assume. I am only the grandchild of Mystra and I am that by my father Elminster, not by the mother-line. Anyway, thank you for telling me. I will beg to <CHARNAME> to aid your people in your goal.~
 ==SAHPR4~ I err not but you may not know all about yourself as you have not seen the Book. Maybe you will see one day.~
 ==CVSANDRJ~ Is it possible for me to see it?~
 ==SAHPR4~ It is found in a different place for every seeker who has a right to see. I cannot help you to find your path to it. This is all I can tell you, I know not more.~

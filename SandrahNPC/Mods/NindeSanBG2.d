@@ -3,7 +3,7 @@ IF WEIGHT #-3~Global("SanHealNinde","GLOBAL",3)~THEN BLK#Nind KnowWD
 ~You have made the expected progress from the fledgling young priestess under your mighty father's wing to a powerful cleric, Sandrah.~
 DO~SetGlobal("SanHealNinde","GLOBAL",4)RealSetGlobalTimer("SanNindeT","LOCALS",3500)~
 ==BSandr~Your words imply you hail from Waterdeep and knew me way back then. To be honest, I do not recall to ever have met you.~
-==BLK#Nind~We have never been introduced to each other, that is right. I left the higher circles of the City of Splendor's high society before you made your overwhelming appearance there. Still, you were too prominent a personality to be overlooked.~
+==BLK#Nind~We have never been introduced to each other, that is right. I left the higher circles of the City of Splendour's high society before you made your overwhelming appearance there. Still, you were too prominent a personality to be overlooked.~
 ==BSandr~We have at least another thing in common then, Ninde, I never really took pleasure in Waterdeep's hollow society activities, it just came as part of my heritage and my position at the temple.~
 ==BLK#Nind~(Laughs) Who would have expected differently, given your origins. But let us move on, all that stuff is topic for quieter moments.~EXIT
 

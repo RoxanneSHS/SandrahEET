@@ -31,6 +31,6 @@ IF WEIGHT #-11~Global("SanQualHeal","GLOBAL",7)~THEN BQUAYL Sanenvy
 DO~SetGlobal("SanQualHeal","GLOBAL",8)RealSetGlobalTimer("QuaySanInt","LOCALS",1000)~
 ==BSandr~ Right, it is a natural talent, I guess, which I was able to channel and focus by my training - and of course the constant use I have of those skills since I travel with <CHARNAME>.~
 ==BQUAYL ~I was pretty sure it was that and not some overhelming intellectual capacity that enables your spellcasting.~
-==BSandr~Correct - my spellcasting is almost instinctively. Which allows me to use my *overhelming intellectual capacity* for supporting the group in other aspects.~
-=~That reminds me, I should not waste my *overhelming intellectual capacity* for discussions with self-centered gnomes of questionable abilities, be it intellectual or arcane.~
+==BSandr~Correct - my spellcasting is almost instinctively. Which allows me to use my *overwhelming intellectual capacity* for supporting the group in other aspects.~
+=~That reminds me, I should not waste my *overwhelming intellectual capacity* for discussions with self-centred gnomes of questionable abilities, be it intellectual or arcane.~
 ==BQUAYL ~Ah...ah..oh, arrogant wench!!~EXIT

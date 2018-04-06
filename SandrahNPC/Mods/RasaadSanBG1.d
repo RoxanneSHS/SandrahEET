@@ -10,7 +10,7 @@ IF~ Global("SanRaasShar","GLOBAL",4)~THEN BRasaad_  SanRaasShar2
 DO~SetGlobal("SanRaasShar","GLOBAL",5)~
 ==Bsandr~You called them *keepers of Weave and Shadow Weave*, which indicates you have already some knowledge of the issue.~
 ==BRasaad_~It about sums up all I learned aside from the fact that your Mystra and my goddess Selune also have a mysterious connection.~
-==Bsandr~Originally Mystra was born as Mystryl during the battle between Shar and Selune in the dawn of time. Mystryl reigned over a united Weave at that time.  When Mystryl sacrificed herself against the ursurper Karsus from Netheril who was striving for godhood himself, AO afterwards separated the power of the Weave and established Mystra as keeper of the True Weave and Shar as her Shadow counterpart.~
+==Bsandr~Originally Mystra was born as Mystryl during the battle between Shar and Selune in the dawn of time. Mystryl reigned over a united Weave at that time.  When Mystryl sacrificed herself against the usurper Karsus from Netheril who was striving for godhood himself, AO afterwards separated the power of the Weave and established Mystra as keeper of the True Weave and Shar as her Shadow counterpart.~
 ==BRasaad_~It appears to me that Shar is not saturated with that alone and constantly hungers for the part of the Weave which is not hers.~
 ==Bsandr~Mystra is not alone, she has allies like Selune, amongst others. They say that children born under a full moon of Selune like me often exhibit a natural magical ability.~
 ==BRasaad_~Interesting - our gods aside, I think you are a companion to value for her own achievements and to keep as a friend.~

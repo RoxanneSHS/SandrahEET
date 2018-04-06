@@ -11,7 +11,7 @@ END
 
 
 IF~~THEN BEGIN Daurep2
-SAY~I am appalled to hear that, mylady. He came here a few days ago to ask for assistance against that evil foe. Sadly there was nothing the Citadel or I could do given our own circumstances.~
+SAY~I am appalled to hear that, my lady. He came here a few days ago to ask for assistance against that evil foe. Sadly there was nothing the Citadel or I could do given our own circumstances.~
 IF~~THEN DO~SetGlobal("SanDauroQ","GLOBAL",8)~ EXTERN BSandr SanDaurep2
 END
 END
@@ -19,7 +19,7 @@ END
 CHAIN
 IF~~THEN BSandr SanDaurep1
 ~ We could not let him go alone against such a foe. But it was really him who tracked the beast all the way from Baldur's Gate and revealed the demon's evil plan to us.~
-==IF_FILE_EXISTS NTPRIHEL~ You confirm his statement about the occurences with your words, mylady. I was just writing down a letter to our superiors at the Temple in Baldur's Gate. With you as witnesses his reputation will be completely restored and he will be recognised as a true example of Helm's disciples.~
+==IF_FILE_EXISTS NTPRIHEL~ You confirm his statement about the occurrences with your words, my lady. I was just writing down a letter to our superiors at the Temple in Baldur's Gate. With you as witnesses his reputation will be completely restored and he will be recognised as a true example of Helm's disciples.~
 ==BSandr~ He had to suffer much but was steadfast in doing what he knew was right.~
 ==IF_FILE_EXISTS NTPRIHEL~I will include your statement in my report. I hope all the best for him in Luskan.~ DO~AddexperienceParty(1200) ReputationInc(1)~EXIT
 

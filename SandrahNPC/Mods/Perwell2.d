@@ -1,7 +1,7 @@
 APPEND ACQ60002
 
 IF WEIGHT #-1~ Global("SeePellig","LOCALS",1)~ THEN BEGIN Pell1
-SAY~ I have never seen such an enourmous cat in my life.~
+SAY~ I have never seen such an enormous cat in my life.~
 IF~~THEN REPLY~ Better shut up before she swallows you whole.~ EXTERN ACQ60002 Pell3
 IF~~THEN REPLY~ It's a panther and it belongs to Sandrah there.~ EXTERN ACQ60002 Pell2
 END
