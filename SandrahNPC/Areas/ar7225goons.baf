@@ -12,6 +12,9 @@ InParty("CVSandr")
 Dead("Sarevok")
 Global("EndOfBG1","GLOBAL",-1)
 Global("SanEndBG1Plot","GLOBAL",0)
+OR(2)
+Global("SWO_Delay","Global",4)
+Global("SWO_Delay","Global",0)
 THEN
 RESPONSE #100
 SetGlobal("SanEndBG1Plot","GLOBAL",1)
@@ -21,6 +24,9 @@ IF
 Global("SanEndBG1Plot","GLOBAL",2)
 Global("EndOfBG1","GLOBAL",-1)
 !InParty("CVJenlig")
+OR(2)
+Global("SWO_Delay","Global",4)
+Global("SWO_Delay","Global",0)
 THEN
 RESPONSE #100
 SetGlobal("EndOfBG1","GLOBAL",0)
@@ -31,6 +37,9 @@ Global("SanEndBG1Plot","GLOBAL",2)
 Global("EndOfBG1","GLOBAL",-1)
 InParty("CVJenlig")
 PartyHasItem("cvyensw2")
+OR(2)
+Global("SWO_Delay","Global",4)
+Global("SWO_Delay","Global",0)
 THEN
 RESPONSE #100
 SetGlobal("EndOfBG1","GLOBAL",0)
