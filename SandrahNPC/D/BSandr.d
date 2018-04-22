@@ -7250,6 +7250,7 @@ IF ~~ THEN BSANDR SanEndBG1Plot3
 == BVicon  IF~ InParty("Viconia") ~ THEN ~ It is Shar's will that I survive all these trials. I really have doubts if the drow in me would have rejected the offer of such powers so easily, still I must admit I feel relief that <CHARNAME> was able to do it.~
 == BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Sandrah, my fate is connected to this plane now through my love for you. I have paid my dues to <CHARNAME> and Shevarash by Tazok's death. You two take my vow today that I will follow your course wherever it will lead us. Khalreshaar be my witness. ~
 ==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ It sounds like history will be written where you go <CHARNAME>. The need for a witness to document all this is inevitable. ~
+==IF_FILE_EXISTS TamokoJ IF ~InParty("Tamoko")~ THEN ~I have to agree with Sandrah. Your triumph over Sarevok will attract the interest of some whom you may wish to avoid. Your life will not get easier.~
 == BAJANT  IF~ InParty("Ajantis") ~ THEN ~ There was no doubt to the righteousness of your path until now. You are the one to be followed to destroy any remaining threats from the evil god that has spawned you.~
 ==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ By Clannedin's axe, that was a magnificent fight and we were victorious because the gods smiled at us. It was right to follow you, silly <PRO_RACE>, and you will need my assistance in the future, it seems. ~
 == BBRANW  IF~ InParty("Branwen") ~ THEN ~ Tempus has once more blessed our weapons against evil. ~
