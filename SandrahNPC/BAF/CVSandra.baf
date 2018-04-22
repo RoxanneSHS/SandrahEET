@@ -5821,9 +5821,10 @@ SetGlobal("SanSharInt","GLOBAL",24)
 END
 
 IF
+Global("Chapter","GLOBAL",7)
 InParty("Sharteel")
 AreaType(OUTDOOR)
-Global("Chapter","GLOBAL",7)
+GlobalLT("EndofBG1","Global",1)
 Global("SanSharGoM","LOCALS",0)
 THEN
 RESPONSE #100
