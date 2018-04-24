@@ -6321,6 +6321,13 @@ END ELSE BEGIN
   PRINT ~Ninde mod not detected - skipped ~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~TamokoJ.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/TamokoMod.d~
+PRINT ~ Tamoko mod detected - Sandrah relationship added~
+END ELSE BEGIN
+  PRINT ~Tamoko mod not detected - skipped ~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~CELogan.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/LoganSan.d~        
 COMPILE ~SandrahNPC/Mods/SanLogan.baf~
