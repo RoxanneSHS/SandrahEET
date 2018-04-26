@@ -21,3 +21,13 @@ THEN
 RESPONSE #100
 SetGlobal("CVar4000","GLOBAL",1)
 END
+
+IF
+Global("TurnDay","AR4000",0)
+GlobalLT("Chapter","GLOBAL",20)
+Global("MoveChapter","ar4000",0)
+THEN
+RESPONSE #100
+SetGlobal("MoveChapter","ar4000",1)
+SetGlobal("Chapter","GLOBAL",20)
+END
