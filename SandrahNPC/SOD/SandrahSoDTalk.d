@@ -175,7 +175,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ  SodHeph12
-~Just like the mighty bhaalspawn from Baldur's Gate is not alone, this is true for the Shining Lady as well. We should not ignore those close to her. Even if she shines, there is darkness close to her-~
+~Just like the mighty Bhaalspawn from Baldur's Gate is not alone, this is true for the Shining Lady as well. We should not ignore those close to her. Even if she shines, there is darkness close to her-~
 END
 ++~The Hooded Man?~ + SodHeph13
 ++~That mage who seemed to be her advisor?~ + SodHeph13
