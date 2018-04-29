@@ -13,7 +13,7 @@ Elfsong ghost added
 Bhaal's daughter plot added
 Item descriptions extended
 LoB flags added
-Black Pits integrated and accesible from Waterdeep
+Black Pits integrated and accessible from Waterdeep
 Added additional compatibility with NTotSC v2.0
 Multiclass handling revised
 
