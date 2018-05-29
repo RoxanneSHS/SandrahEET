@@ -8,7 +8,7 @@ IF~AreaCheck("bd7300")~THEN CVBrage Saerch1
 ==CVSandrJ~The allied forces fighting against the Crusade could need a competent fighter like you.~
 END
 ++~Where do you need to go so urgently? ~+ Saerch2
-++~The officers in the camp a little south would welcome you? ~+ Saerch2
+++~The officers in the camp a little south would welcome you. ~+ Saerch2
 
 CHAIN
 IF~~THEN CVBrage Saerch2
