@@ -24,6 +24,18 @@ SetGlobal("SanHealVic","GLOBAL",15)
 END
 
 IF
+AreaCheck("ar1005")
+!InParty(Myself)
+GlobalGT("SanVicArrst","GLOBAL",2)
+GlobalLT("SanVicArrst","GLOBAL",9)
+Global("VicPrisontalk","ar1005",0)
+THEN
+RESPONSE #100
+Unlock("Door04")
+SetGlobal("VicPrisontalk","ar1005",1)
+END
+
+IF
 Global("SanVicArrst","GLOBAL",9)
 InParty(Myself)
 InParty("CVSandr")
