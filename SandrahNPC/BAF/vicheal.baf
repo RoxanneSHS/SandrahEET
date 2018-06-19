@@ -28,6 +28,7 @@ AreaCheck("ar1005")
 !InParty(Myself)
 GlobalGT("SanVicArrst","GLOBAL",2)
 GlobalLT("SanVicArrst","GLOBAL",9)
+Global("VicInJail","ar1005",1)
 Global("VicPrisontalk","ar1005",0)
 THEN
 RESPONSE #100
