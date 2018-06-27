@@ -63,10 +63,10 @@ IF~~THEN BT#Dace DaceSan6
 ~Hey, Sandrah-kid, that's not funny!~
 ==BSandr~Ooops?~
 ==BT#Dace~He's Ducky for me - exclusively, aren't you, darlin'?~
-=~You sure have your own kid-talk name for him, I betcha have.~
-==BSandr~Yes, I call him...~
-==BT#Dace~Sshh, dontcha tell me, I don't needa know. Keep it for yours and him 'n' let me keep *Ducky* between him and me, got me?~
-==BSandr~Fine, I think you are right in your typical Dace way. We both have our own unique relationship with that special man, and our own names to make it private and precious.~
+=~You sure have your own kid-talk name for <PRO_HIMHER>, I betcha have.~
+==BSandr~Yes, I call <PRO_HIMHER>...~
+==BT#Dace~Sshh, dontcha tell me, I don't needa know. Keep it for yours and <PRO_HIMHER> 'n' let me keep *Ducky* between <PRO_HIMHER> and me, got me?~
+==BSandr~Fine, I think you are right in your typical Dace way. We both have our own unique relationship with that special <PRO_MANWOMAN>, and our own names to make it private and precious.~
 ==BT#Dace~Brilliant, kid, I knew you had the stomach for this. All right with you, Ducky?~
 END
 ++~Whatever you say, Dace - whatever you say, Sandrah.~EXIT
