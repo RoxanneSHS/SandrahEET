@@ -80,7 +80,7 @@ SAY~Ah, there you are, <CHARNAME>, time to pay your quota to Renal, hihi.~
 IF~GlobalLT("aranjob","GLOBAL",2) GlobalLT("b!alternatives","GLOBAL",5)~GOTO 3
 IF~ Global("PlayerThiefGuild","GLOBAL",1)
 GlobalGT("aranjob","GLOBAL",1)~ THEN REPLY~ I do not owe anything to Renal any more, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
-IF~ Global("PlayerThiegtfGuild","GLOBAL",1)
+IF~ Global("PlayerThiefGuild","GLOBAL",1)
 GlobalGT("b!alternatives","GLOBAL",4)~ THEN REPLY~ I do not owe anything to the Shadow Thieves, *Jester*. You seem to be unaware that things have changed a bit around here. ~GOTO 300
 END
 
