@@ -163,15 +163,15 @@ StartCutScene("newwardr") ~EXIT
 
 
 EXTEND_BOTTOM Priscali 2
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(200) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Priscali 3
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(200) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Priscali 4
-IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(2000) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
+IF~InParty("CVSandr") !Dead("Caliprig") GlobalGT("tz_caliprisonspawn","GLOBAL",0)~THEN REPLY~ The way out is cleared. Be quick to get out and hide yourself until you receive news that the town ifs free of the tyrant.~ DO~ AddexperienceParty(200) ActionOverride(Nearest("priscali"),EscapeArea())~EXIT
 END
 
 EXTEND_BOTTOM Pibble2 3
