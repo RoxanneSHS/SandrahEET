@@ -26,14 +26,14 @@ IF~~THEN REPLY~ If you want to see a ghost, my stubborn little priestess, you ar
 END
 
 IF~Global("SanTDDCali","LOCALS",1)~THEN BEGIN SanCaliHOut1
-SAY~We have always found a way to avoid such cruel deeds and reach our goal without murder. I rely on your good leadership in this case, my love.~
-IF~~THEN REPLY~ We will go to that jailor and figure out a way to betray that dumb Pascha, fear not.~ DO~SetGlobal("SanTDDCali","LOCALS",2)~ EXIT
+SAY~We have always found a way to avoid such cruel deeds and reach our goal without murder. I rely on your good leadership in this case, <CHARNAME>.~
+IF~~THEN REPLY~ We will go to that jailer and figure out a way to betray that dumb pasha, fear not.~ DO~SetGlobal("SanTDDCali","LOCALS",2)~ EXIT
 IF~~THEN REPLY~ I will only do it if it cannot be avoided. In the end the higher goal your father and the others have set may require some sacrifice.~ DO~SetGlobal("SanTDDCali","LOCALS",2)~ EXIT
 IF~~THEN REPLY~ We follow a higher goal here, Sandrah, one set by your own father. In the end it is only the life of some corrupt desert villain we talk about here.~ DO~SetGlobal("SanTDDCali","LOCALS",2)~ GOTO SanCaliHOut2
 END
 
 IF~~ THEN BEGIN SanCaliHOut2
-SAY~The reason the pascha wants him dead is exactly that he is not what you just called him. It seems he cares for those who are unjustly incarcerated and tortured. The bloodshed and killing we see each day and even the harsh environment we find ourselves in right here should never let us forget our own beliefs and justifications.~
+SAY~The reason the pasha wants him dead is exactly that he is not what you just called him. It seems he cares for those who are unjustly incarcerated and tortured. The bloodshed and killing we see each day and even the harsh environment we find ourselves in right here should never let us forget our own beliefs and justifications.~
 IF~~THEN REPLY ~Well, if there is an alternative I swear we will find and take it.~EXIT
 END
 
@@ -79,7 +79,7 @@ IF~~THEN REPLY~What's the matter, we have just won a glorious fight with one of 
 END
 
 IF~~ THEN BEGIN SanJarlhunt8
-SAY~ Oh, have you not heard his *famous last words*? But they really were not intended to be last words...What will he have this time to ressurect him from the Nine Hells, where he would rightfully belong.~
+SAY~ Oh, have you not heard his *famous last words*? But they really were not intended to be last words...What will he have this time to resurrect him from the Nine Hells, where he would rightfully belong.~
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~ (Laugh) Maybe he hopes that even the Abyss will spit him out again. Anyway, should he really return we will be ready to send him down again.~GOTO SanJarlhunt9
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~ (Concerned) We have solved the problem he constituted this time as well as in the past. Should he really have a way to come again we will just do the same thing again.~GOTO SanJarlhunt9
 IF~Global("SanRomPath","GLOBAL",2)~THEN REPLY~ (Laugh) Maybe he hopes that even the Abyss will spit him out again. Anyway, should he really return we will be ready to send him down again.~GOTO SanJarlhunt10
