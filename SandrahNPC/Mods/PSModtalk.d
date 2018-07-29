@@ -16,7 +16,7 @@ IF~~THEN REPLY~I see your point, I only hope this power is not beyond our skills
 END
 
 IF~~THEN BEGIN SanGetPSArtef3
-SAY~ I cannot guarantee this, my love. All I know is that things can go much worse if we let those magelings try to resolve the issue without our knowledge and the possibility to step in when things go wrong.~
+SAY~ I cannot guarantee this. All I know is that things can go much worse if we let those magelings try to resolve the issue without our knowledge and the possibility to step in when things go wrong.~
 IF~~THEN REPLY~Your goddess can really be content with a priestess such as you.~EXIT
 IF~~THEN REPLY~Mystra and the Weave may depend on our abilities. Wow - I hope your goddess will be ready to act should we need her...~GOTO SanGetPSArtef4
 END
