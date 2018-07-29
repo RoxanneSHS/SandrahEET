@@ -4257,7 +4257,7 @@ COPY_EXISTING ~nobl10.cre~ ~override/nobl10.cre~
 
 COPY_EXISTING ~ironelit.cre~ ~override/ironelit.cre~
               WRITE_ASCII 0x280 ~ironelit~
-COPY_EXISTING ~skellord.cre~ ~override/ironelit.cre~
+COPY_EXISTING ~skellord.cre~ ~override/skellord.cre~
               WRITE_ASCII 0x280 ~skellord~
 COPY_EXISTING ~Divine.cre~ ~override/Divine.cre~
               WRITE_ASCII 0x280 ~Divine~
