@@ -30,7 +30,7 @@ END
 
 IF~Global("FigSan","GLOBAL",16)~THEN BEGIN  SanMageDuelE
 SAY~ Congratulation to all of you. Sandrah is the ultimate winner.~
-IF~~THEN REPLY~ Your goddess smiles with us, my love.~DO~SetGlobal("FigSan","GLOBAL",17)~ EXIT
+IF~~THEN REPLY~ Your goddess smiles with us, Sandrah.~DO~SetGlobal("FigSan","GLOBAL",17)~ EXIT
 END
 END
 
