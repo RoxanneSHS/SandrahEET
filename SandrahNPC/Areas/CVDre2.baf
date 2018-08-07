@@ -12,6 +12,18 @@ Continue()
 END
 
 IF
+Global("SanNarQ","GLOBAL",7)
+Global("WD1Heal","CVDRE2",0)
+!InMyArea("Elminsa")
+Global("ElmexistsFi","CVDRE2",0)
+THEN
+RESPONSE #100
+SetGlobal("ElmexistsFi","CVDRE2",1)
+CreateCreature("elminsa",[834.775],13)
+Continue()
+END
+
+IF
 Global("SANVISITEDWD","GLOBAL",1)
 !InMyArea("narqmes")
 Global("LandrelExists","CVDRE2",0)
