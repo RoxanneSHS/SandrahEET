@@ -195,7 +195,7 @@ EXIT
 
 CHAIN
 IF~ Global("SanDrizBG2","LOCALS",7)~ THEN BSANDR SanDriBG2Plot4
-~ (Sandrah has studied her toom for several times during the last rests of the party.)~
+~ (Sandrah has studied her tome for several times during the last rests of the party.)~
 DO~ SetGlobal("SanDrizBG2","LOCALS",8)~
 == Driz2J ~ You seem to be searching for something in your knowledgeable book, my little sparrow? Maybe I can help you with it.~
 == BSANDR~ It was rather that I intended to help you, my drow prince. And maybe I can but then again I cannot really...~
