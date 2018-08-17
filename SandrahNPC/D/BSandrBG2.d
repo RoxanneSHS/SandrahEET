@@ -125,7 +125,7 @@ END
 
 //Tiax in Spellhold
 IF ~ Global("SanSHtiax","LOCALS",1)~ THEN BEGIN SanSHtxR
-SAY~ Once this asylum must have had a valid purpose. The presence of Tiax here is a proof for that. But obviously everything has run out of control. You cannot gather such much madness in one place without risking some unwanted effects.~
+SAY~ Once this asylum must have had a valid purpose. The presence of Tiax here is a proof for that. But obviously everything has run out of control. You cannot gather such an amount of madness in one place without risking some unwanted effects.~
 IF~~THEN DO~ SetGlobal("SanSHtiax","LOCALS",2)~ EXIT
 END
 
