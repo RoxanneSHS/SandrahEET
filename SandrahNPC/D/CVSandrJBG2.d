@@ -3299,7 +3299,7 @@ INTERJECT PPireni2 19 CVGodagJon
 ==PPireni2 IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN ~(Laughs harshly) Is that really all that puzzles you at such a moment, priestess?~
 == CVSandrJ IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN~ It is the only question we are not able to answer by ourselves today, your other actions are quite transparent in their shrouded ways.~
 ==PPireni2 IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN ~ Whoever you are, girl, you don't bluff me. There is much more you don't know and I'm afraid you will never have a chance to find out anyway. But...why not...it will not hurt to tell you...~
-=~I cannot assume that you know anything about <CHARNAME>'s mother since you don't even know anything about his or Imoen's FATHER.~
+=~I cannot assume that you know anything about <CHARNAME>'s mother since you don't even know anything about <PRO_HISHER> or Imoen's FATHER.~
 ==CVSandrJ IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN~Thank you for this information, Irenicus. I think we share the same assumption, even if I do not yet see why <CHARNAME>'s mother would interest you. The dagger is the key to her identity but you have not resolved the issue.~
 ==PPireni2 IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN ~(Irenicus looks perplexed for a moment.) Ah, so YOU knew about Bhaal already, your interest is to this particular Bhaalspawn's mother. Why?~
 ==CVSandrJ IF ~InParty("CVSandr")Global("CVGodag","GLOBAL",9)~ THEN~It is not your concern, Irenicus, you have not the information I seek, so much is obvious.~
