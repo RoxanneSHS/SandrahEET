@@ -3375,7 +3375,7 @@ DO ~ SetGlobal("Santiax","LOCALS",4) RealSetGlobalTimer("SantiaxTa","LOCALS",160
 == BTIAX~ Why? You are his granddaughter, his heiress...~
 == BSANDR ~ I am the granddaughter of the adventurer Cyric. My heritage goes back to the man, when he was still in his human form and before he was elevated by Ao to godhood. I am not the granddaughter of your mad god, Tiax.~
 == BTIAX~ Blablabla...what is the use of that detail, Sandrah. You are of HIS blood, and that means that fate has sent me to your side as your natural companion so we both can rise in Cyric's name to his heritage...~
-== BSANDR ~ God's have no heirs, Tiax. Sometimes an usurper claims their power and domain, but that is a different story.~
+== BSANDR ~ Gods have no heirs, Tiax. Sometimes an usurper claims their power and domain, but that is a different story.~
 == BTIAX~ Idiotic! The scheme is so clear, even a female must be able to see it - you and me, Cyric and Mystra. We will rule.~
 == BSANDR ~ Tread careful Tiax, neither of those gods may like your rising to their realm.~
 == BTIAX~ Baah, Cyric wants Tiax to rule. You should pray sometimes, priestess, then your goddess will surely tell you she wants you to follow her.~
