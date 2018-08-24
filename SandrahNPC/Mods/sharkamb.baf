@@ -1,0 +1,11 @@
+IF
+Entered([PC])
+PartyHasItem("MISC8Q") 
+!Dead("sahpr2") 
+THEN
+RESPONSE #100
+CreateCreature("sahchf02",[2508.1220],6)  
+SetGlobal("RebelsHostile","AR2300",0)
+SetGlobal("NoAmbush","AR2300",1)
+SetGlobal("SharkAmbush","AR2300",1)
+END

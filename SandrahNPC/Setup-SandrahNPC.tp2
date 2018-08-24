@@ -5814,6 +5814,8 @@ EXTEND_TOP
 ~Udgith.bcs~ ~SandrahNPC/Mods/GithHint.baf~
 COMPILE ~SandrahNPC/Mods/Sahui7.baf~
 COMPILE ~SandrahNPC/Mods/Sahui6.baf~
+EXTEND_TOP
+~sharkamb.bcs~ ~SandrahNPC/Mods/sharkamb.baf~
 
 PRINT ~Installed Scripts and Dialogues II~
 
