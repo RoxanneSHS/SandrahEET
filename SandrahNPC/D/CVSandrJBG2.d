@@ -905,7 +905,7 @@ END
 
 IF~~ THEN BEGIN FishPrie4
 SAY~ You will be in it as a child of Bhaal I assume. I am in it because of my being a priestess as well as coming from Mystra's blood.~
-IF~~THEN REPLY~ SANDRAH! If that is true all of the other Bhaalspawns will be in it as well. All those like Sarevok that may want my life because I stand between them and Bhaal's Throne. We must find and read it.~ GOTO FishPrie5
+IF~~THEN REPLY~ SANDRAH! If that is true all of the other Bhaalspawns will be in it as well. All those like Sarevok who may want my life because I stand between them and Bhaal's Throne. We must find and read it.~ GOTO FishPrie5
 IF~~THEN REPLY~ Would it contain anything you want to know about yourself that makes it worth finding it?~ GOTO FishPrie7
 END
 
@@ -1965,7 +1965,7 @@ IF~~THEN REPLY~ Well, I have discovered this strange new ability. Like in the pa
 END
 
 IF ~~ THEN BEGIN SanDangeIns3
-SAY~ This is what I mean, my love. You had controlled Bhaal with your will and the goodness of your soul so far. Now Irenicus has taken something from you and left a void. A space that the Bhaalpower will try to occupy - if we do not prevent it.~
+SAY~ This is what I mean, <CHARNAME>. You had controlled Bhaal with your will and the goodness of your soul so far. Now Irenicus has taken something from you and left a void. A space that the Bhaalpower will try to occupy - if we do not prevent it.~
 IF~~THEN REPLY~ How do WE prevent that? It is inside of ME?~ DO~ SetGlobal("SanPCCanSlay","GLOBAL",2) ~ GOTO SanDangeIns4
 END
 
@@ -1974,6 +1974,7 @@ SAY~ Sadly enough that is true. It is you that is alone with it at the moment of
 IF~~THEN REPLY~ That is so much, nothing else is needed.~ EXIT
 IF~~THEN REPLY~ That and a bit of good advice on the side.~ GOTO SanDangeIns5
 IF~~THEN REPLY~ I must not use the ability come what may.~ GOTO SanDangeIns5
+IF~~THEN REPLY~ Oh, stop that litany. It is my will and my will alone that matters here.~ GOTO SanDangeIns5
 END
 
 IF ~~ THEN BEGIN SanDangeIns5
