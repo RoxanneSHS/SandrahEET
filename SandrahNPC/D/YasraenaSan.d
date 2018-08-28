@@ -317,7 +317,7 @@ END
 CHAIN
 IF~~THEN CVSandrJ Yaspart
 ~I recommend you to go to Mystra's temple at Waterdeep. When you use this item here, it will transport you there safely. My mentor Ringhontal will take care of you. You are completely safe there until we can continue our common quest.~
-==YasraenPYasraenP~I would not take that advice from anyone else but you, Sandrah. I know you will stand to your word and mean it well. I will do as you said.~DO~SetGlobal("YasraenaJoined","GLOBAL",3)ActionOverride("Yasraena",EscapeAreaMove("cvelm3",300,350,3)) ~EXIT
+==YasraenP~I would not take that advice from anyone else but you, Sandrah. I know you will stand to your word and mean it well. I will do as you said.~DO~SetGlobal("YasraenaJoined","GLOBAL",3)ActionOverride("Yasraena",EscapeAreaMove("cvelm3",300,350,3)) ~EXIT
 
 APPEND YasraenP
 IF WEIGHT #-7~Global("YasraenaJoined","GLOBAL",3)~THEN BEGIN YasWD1
