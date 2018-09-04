@@ -20,8 +20,9 @@ END
 
 IF
 Global("DrizztKickedOut","GLOBAL",1)
-GlobalGT("SanRotRepl","GLOBAL",1)
+GlobalGT("SanRotRepl","GLOBAL",0)
 !InParty("Driz2")
+!AreaCheck("ar0603")
 THEN
 RESPONSE #100
 SetGlobal("DrizztKickedOut","GLOBAL",0)
