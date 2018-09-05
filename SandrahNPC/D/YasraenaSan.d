@@ -290,7 +290,7 @@ DO~SetGlobal("SanYasStay","LOCALS",3)~
 ==BYASRAEN~ (The two women embrace each other and kiss long and tenderly.)~EXIT
 
 
-//==================================YasraenaYasraena Appends
+//==================================Yasraena Appends
 
 APPEND BYASRAEN
 
