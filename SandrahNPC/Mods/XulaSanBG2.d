@@ -28,12 +28,12 @@ IF WEIGHT #-5 ~ Global("LK#XulSandrah","LOCALS",1)~ THEN BLK#XUL XulSandra2
 == BSandr IF~!InParty("Yasraena")InParty("Viconia")~THEN~  Not a very desirable prospect for me, sorry my friend.~       
 ==BViconi IF~!InParty("Yasraena")InParty("Viconia")~THEN~ (Sighs) If you could keep that disguise you could change many things down here.~
 END
-IF~!InParty("Yasraena")!InParty("Viconia")~THEN REPLY~(As Xulaye retreats from Sandrah, you remark:) Well, done, it's the language she understands. She surely takes you for a Handmaiden or even a Matron from of Ched Nasad now.~ EXTERN BSandr NoXulJa
+IF~!InParty("Yasraena")!InParty("Viconia")~THEN REPLY~(As Xulaye retreats from Sandrah, you remark:) Well, done, it's the language she understands. She surely takes you for a Handmaiden or even a Matron from Ched Nasad now.~ EXTERN BSandr NoXulJa
 IF~OR(2)InParty("Yasraena")InParty("Viconia")~THEN REPLY~ Maybe, but I would never leave her down here.~EXIT
 
 CHAIN
 IF~~THEN  BSandr NoXulJa
-~ Not a very desirable prospect for me, sorry my love.~
+~ Not a very desirable prospect for me, sorry, <CHARNAME>.~
 END
 ++~ (Sigh) If you could keep that disguise you could change many things down here.~ EXIT
 
