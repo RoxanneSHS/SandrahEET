@@ -90,7 +90,9 @@ END
 
 IF
 Global("SanSaerFight","GLOBAL",4)
+OR(2)
 HPPercentLT("Saerileth",50)
+HPPercentLT("CVSandr",50)
 THEN
 RESPONSE #100
 ClearAllActions()
