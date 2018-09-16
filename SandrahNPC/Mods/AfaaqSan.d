@@ -29,3 +29,6 @@ DO~SetGlobal("A7IntroSan","LOCALS",3) ~
 ==CVSandrJ~(Smile) A djinni has one advantage over us mortals, you have time in abundance. A good thing when dealing with long term operations. You will be free one day.~
 ==A7Afaaq~I believe it now more than ever. You and <CHARNAME> will reach nearly any goal you set for yourself. You are remarkable beings.~EXIT
 
+EXTEND_BOTTOM A7arab01 1
+IF~CheckStatLT(LastTalkedToBy,16,CHR) CheckStatLT(LastTalkedToBy,16,INT)InParty("CVSandr")~THEN REPLY~My name is Veldrin and I come with knowledge about an old enemy of your house. Tathas Melarn has ambitions to expand his influence in this city while your armies are preoccupied in the war with the hated surface elves.~GOTO 11
+END
