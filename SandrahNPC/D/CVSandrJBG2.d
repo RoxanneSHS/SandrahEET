@@ -3792,5 +3792,5 @@ END
   IF ~  Global("ImTooSexyForThisBrus","GLOBAL",1)~ THEN REPLY ~Brus mentioned a new deal. Is that the change he spoke of? ~ GOTO 84
 
 I_C_T C6Elhan2 42 SanElhanSuspic
-==CVSandrJ IF~InParty("CVSandr")~THEN~(Mumbles) ...and still he may be much closer to you than you would like to admit.~END
+==CVSandrJ IF~InParty("CVSandr")~THEN~(Mumbles)...and still he may be much closer to you than you would like to admit.~END
 
