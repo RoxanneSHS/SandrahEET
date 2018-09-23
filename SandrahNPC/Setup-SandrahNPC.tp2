@@ -4232,17 +4232,19 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~Hobwiz02.cre~ THEN BEGIN
 COPY_EXISTING ~Hobwiz01.cre~ ~override/Hobwiz02.cre~
 END
 
-COPY_EXISTING ~wench1.cre~ ~override/wench1.cre~
+COPY_EXISTING ~wench1.cre~ ~override~
               WRITE_ASCII 0x280 ~wench1~
-COPY_EXISTING ~emerso.cre~ ~override/emerso.cre~
+COPY_EXISTING ~emerso.cre~ ~override~
               WRITE_ASCII 0x280 ~emerson~
-COPY_EXISTING ~gaxir.cre~ ~override/gaxir.cre~
+COPY_EXISTING ~gaxir.cre~ ~override~
               WRITE_ASCII 0x280 ~gaxir~
-COPY_EXISTING ~cow.cre~ ~override/cow.cre~
+COPY_EXISTING ~oublek.cre~ ~override~
+              WRITE_ASCII 0x280 ~oublek~
+COPY_EXISTING ~cow.cre~ ~override~
               WRITE_ASCII 0x280 ~cow01~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~btelite.cre~ THEN BEGIN
-COPY_EXISTING ~btelite.cre~ ~override/btelite.cre~
+COPY_EXISTING ~btelite.cre~ ~override~
               WRITE_ASCII 0x280 ~btelite~
 END
 
