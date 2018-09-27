@@ -1,9 +1,11 @@
 IF
 Global("SanRecDriz","RA4000",0)
-OR(3)
+OR(5)
 PartyHasItem("NewHe01")
 PartyHasItem("NewPo02")
 PartyHasItem("Newshp3")
+TriggerOverride("CVSandr",See("Cont1"))
+TriggerOverride("CVSandr",See("Cont2"))
 InParty("CVSandr")
 !InParty("Driz2")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
