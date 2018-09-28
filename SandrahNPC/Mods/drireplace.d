@@ -130,15 +130,15 @@ END
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot1b
-~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercely gripped your sweet heart for so long.~
+~ Oh, Drizzt, how glad I am we have finally solved this issue that has fiercely gripped your heart for so long.~
 DO~ SetGlobal("SanDriLeaveWD","GLOBAL",2)~
-==Driz2P ~ And who else could have saved everyone and freed the enslaved souls of so many in this *Region of Terror* than <CHARNAME> and the most wonderful companion of all by <PRO_HISHER> side. (He kisses Sandrah long and passionate.]~
+==Driz2P ~ And who else could have saved everyone and freed the enslaved souls of so many in this *Region of Terror* than <CHARNAME> and the companions by <PRO_HISHER> side. (He kisses Sandrah long and passionate.]~
 END
 ++~ I am glad we were of help. So let us now return to our other problems.~ + SanEndPlot2b
 
 CHAIN
 IF~~ THEN BSANDR SanEndPlot2b
-~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The boss man calls and the love nest waits empty.~
+~ (Smiles) You do not give us much time to rest a bit after all we have been through. (Sigh) The boss man calls and the bed waits empty...~
 ==Driz2P ~ Please, <CHARNAME>, Sandrah, give me a minute.~
 == BSANDR~ Are you well, dear, you look tired and exhausted?~
 ==Driz2P ~ That is exactly how I feel, Sandrah, and only your strength keeps me going at the moment. That is why I want to ask a favour of <CHARNAME>. The recent events have stressed me to the limit and I need a bit of time to restore and to contemplate over it all. My lifetime enemies have finally been destroyed with your help and a new future lies open for me.~
