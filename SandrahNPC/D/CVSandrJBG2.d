@@ -2478,7 +2478,7 @@ IF~~THEN REPLY~So her trusted priestess and granddaughter needs to do that for h
 END
 
 IF~~ THEN BEGIN SanMysSeekr4
-SAY~ (She embraces you tenderly and gives you a warm kiss before she continues.) One thing this seeker has found already is - YOU. Not only the love I have found in you, my darling, but also the fact that your fate and mine have always been one since the day we have met.~
+SAY~ (She embraces you tenderly and gives you a warm kiss before she continues.) One thing this seeker has found already is - YOU. Not only the love I have found in you, <CHARNAME>, but also the fact that your fate and mine have always been one since the day we have met.~
 =~The answer I must find, the woman I must find, it is the quest of a lifetime and I must not rush.~
 IF~~THEN REPLY~You hope to find some clue during our time together? ~ GOTO SanMysSeekr5
 IF~~THEN REPLY~What we surely can do is to investigate about that strange self-writing book at several locations we will hit anyway.~ GOTO SanMysSeekr5
