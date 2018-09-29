@@ -15,6 +15,26 @@ RESPONSE #100
 IncrementGlobal("SanHealDriz2","GLOBAL",1)
 END
 
+IF
+Global("CattiBrieOut","GLOBAL",2)
+GlobalGT("Theendisnear","GLOBAL",3)
+THEN
+RESPONSE #100
+SetGlobal("CattiBrieOut","GLOBAL",3)
+END
+
+IF
+Global("CattiBrieOut","GLOBAL",3)
+AreaCheck("CVElm3")
+!InParty(Myself)
+Global("DrizFileset","CVElm3",0)
+THEN
+RESPONSE #100
+SetGlobal("DrizFileset","CVElm3",1)
+SetDialog("Driz2P")
+END
+
+
 
 
 

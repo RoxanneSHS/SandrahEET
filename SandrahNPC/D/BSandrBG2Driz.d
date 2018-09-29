@@ -610,4 +610,9 @@ END
 ++~ He took you for Mystra herself? It is time to end this bloody experience.~ EXTERN CULTBEH 53
 ++~ You are right, Sandrah, we can learn no more and must stop this cult.~  EXTERN CULTBEH 53
 
-
+CHAIN
+IF WEIGHT #-2~Global("CattiBrieOut","GLOBAL",3) AreaCheck("CVElm3") ~THEN Driz2J JoinTempl
+~Are we travelling together again, <CHARNAME>?~
+END
+++~We have finished our common task for the time, Drizzt. Just enjoy yourself.~EXIT
+++~It will be my pleasure, my friend. Come with me again.~DO~SetGlobal("CattiBrieOut","GLOBAL",4) JoinParty()~EXIT
