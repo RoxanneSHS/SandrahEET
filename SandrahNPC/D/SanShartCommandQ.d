@@ -48,7 +48,7 @@ CHAIN
 IF~ Global("SanSharCom","GLOBAL",7) AreaCheck("CVRoa1") ~THEN CVShacom Hut2
 ~ I will return now to Waterdeep and have a few words with that arrogant Commander of the Forces for his doing absolutely nothing in this case.~
 DO~SetGlobal("SanSharCom","GLOBAL",8) SetGlobal("ShaFollow","CVRoa1",2)~
-==CVSandrJ~Good luck with those tinheads. Do you really want to waste your time with those  administrators?~
+==CVSandrJ~Good luck with those tinheads. Do you really want to waste your time with those administrators?~
 ==CVShacom~He was a renown fighter once, I heard. Must have gone a bit rusty.~
 END
 ++~I am sure he will be up and running again after your treatment.~EXIT
