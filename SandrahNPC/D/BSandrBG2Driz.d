@@ -611,7 +611,7 @@ END
 ++~ You are right, Sandrah, we can learn no more and must stop this cult.~  EXTERN CULTBEH 53
 
 CHAIN
-IF WEIGHT #-2~Global("CattiBrieOut","GLOBAL",3) AreaCheck("CVElm3") ~THEN Driz2J JoinTempl
+IF WEIGHT #-2~Global("CattiBrieOut","GLOBAL",3) ~THEN Driz2J JoinTempl
 ~Are we travelling together again, <CHARNAME>?~
 END
 ++~We have finished our common task for the time, Drizzt. Just enjoy yourself.~EXIT
