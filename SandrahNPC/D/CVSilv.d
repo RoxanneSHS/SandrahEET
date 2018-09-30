@@ -21,7 +21,7 @@ IF~InParty("Imoen2")~ THEN REPLY~Imoen of Candlekeep, daughter of Bhaal.~+ Wande
 CHAIN
 IF~~ THEN CVSILV Wanderers3
 ~ The record of the Bhaalspawn has already been accessed twice. The limit has been reached.~
-==CVSANDRJ~ What? <CHARNAME>, somebody has studied your entries and probably not for a reason we like. Guardian who has accessed those entries?~
+==CVSANDRJ~ What? <CHARNAME>, somebody has studied your entries and probably not for a reason we like. Guardian, who has accessed those entries?~
 ==CVSILV ~I am not authorised to give you names?~
 ==CVSANDRJ~ You do not need to, just nod if I am right.~
 =~Sarevok?~
@@ -29,7 +29,7 @@ IF~~ THEN CVSILV Wanderers3
 ==CVSANDRJ~ Mhm, and he was granted access because his blood entitled him to...~
 ==CVSILV ~(The silver dragon nods again.)~
 ==CVSANDRJ~And the second - Jon Irenicus?~
-==CVSILV ~BRAAAH !!!! That false intruder attempted it but he had no blood of his own for justification.~
+==CVSILV ~BRAAAH !!!! That imposter attempted it but he had no blood of his own for justification.~
 ==CVSANDRJ~So a mysterious second seeker - one of Bhaal's blood. Who might that have been?~
 ==CVSILV ~ Have you a brother named Balthazar, Bhaalspawn?~
 END

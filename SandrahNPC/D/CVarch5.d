@@ -45,7 +45,7 @@ END
 CHAIN
 IF~~THEN CVARCH5 Bloodline4
 ~ I cannot repeat a name I have once delivered, such is the rule, but your reaction shows well enough you know whose name I gave.~
-==CVSANDRJ~ Quilue Veladorn is among my mother's ancestors?~
+==CVSANDRJ~ Qilue Veladorn is among my mother's ancestors?~
 ==CVARCH5 ~The Book contains no errors, so she is in your pedigree as well.~
 ==CVSANDRJ~(Takes a deep breath.) We can skip the rest then as we know to which source it will lead.~
 ==CVARCH5 ~(Cheerful) I am most happy to hear that and was happy to have served you...~
