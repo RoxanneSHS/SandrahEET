@@ -20,3 +20,10 @@ INTERJECT O#LLBrow 10 SanSellEilles
 END
 ++~Eilistraee wants to allow her worshippers to become true dark elves and to live on the surface? I happen to agree: it's a noble goal.~+ 11
 ++~I don't like what my counsellor proposes, but I'm not foolish enough to have her and you against me here. I will not kill you.~+ 11
+
+I_C_T O#LLKIMM 136 Sansellswordmod3
+==O#LLJarl IF~InParty("CVSandr")~THEN~Spoilsport, it means that my preferred priestess beauty is off limits, too?~
+==CVSandrJ IF~InParty("CVSandr")~THEN~I always was, or does your memory betray you? I know the spell that turned you to stone just as well as the matron did, thanks to Mystra.~
+==O#LLKIMM IF~InParty("CVSandr")~THEN~I had a bad feeling about her since the beginning. Now I understand why. She was just too eager to meet you, Jarlaxle.~
+==O#LLJarl IF~InParty("CVSandr")~THEN~Not in the way I would wish...~
+END
