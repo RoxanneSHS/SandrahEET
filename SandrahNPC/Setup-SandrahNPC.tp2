@@ -7092,6 +7092,13 @@ END ELSE BEGIN
   PRINT ~Drake NPC not detected - skipped Sandrah part~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~O#LLKIMM.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/SellswordsSan.d~
+PRINT ~ Sellswords mod detected - installed Sandrah interactions~
+END ELSE BEGIN
+  PRINT ~Sellswords mod not detected - skipped Sandrah part~
+END
+
 //Sarevok Defeat revisited
 
 COPY ~SandrahNPC\Mods/CVSCUTAN.cre~ ~override~
