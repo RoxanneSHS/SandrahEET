@@ -4451,7 +4451,7 @@ COPY_EXISTING ~kivan.CRE~ ~override/kivan.CRE~
               ~kivan6.CRE~ ~override/kivan6.CRE~
  WRITE_ASCII 0x34 ~kivans~  #8
  WRITE_ASCII 0x3c ~kivanm~  #8
- WRITE_ASCII 0x260 ~RTFGone~
+ WRITE_ASCII 0x260 ~RTFGone~  #8
 
 ACTION_IF FILE_EXISTS_IN_GAME ~p#kivan.CRE~ THEN BEGIN
 COPY_EXISTING ~p#kivan.CRE~ ~override/p#kivan.CRE~
@@ -4465,7 +4465,7 @@ COPY_EXISTING ~kivan10.CRE~ ~override/kivan10.CRE~
               ~kivan13.CRE~ ~override/kivan13.CRE~
  WRITE_ASCII 0x34 ~kivans~ #8
  WRITE_ASCII 0x3c ~kivanm~ #8
- WRITE_ASCII 0x260 ~RTFGone~
+ WRITE_ASCII 0x260 ~RTFGone~ #8
 END
  
 COPY_EXISTING ~F_Drizzt.CRE~ ~override/F_Drizzt.CRE~
@@ -4492,7 +4492,7 @@ END
 COPY_EXISTING_REGEXP GLOB ~^_?nalia[0-20]*.*\.cre$~ ~override~ 
  WRITE_ASCII 0x34 ~Naliass~  #8
  WRITE_ASCII 0x3c ~Naliamm~  #8
- WRITE_ASCII 0x260 ~RTFGone~
+ WRITE_ASCII 0x260 ~RTFGone~ #8
 
 COPY_EXISTING_REGEXP GLOB ~^.+\.cre$~ ~override~ // Imoen animation adjustments
   READ_LONG   0x08 "name"  ELSE 0
@@ -4521,7 +4521,7 @@ COPY_EXISTING ~Branwe.CRE~ ~override/Branwe.CRE~
   WRITE_BYTE 0x238 17 // 17 STR
   WRITE_ASCII 0x34 ~Branwes~ #8
   WRITE_ASCII 0x3c ~Branwem~ #8
-  WRITE_ASCII 0x260 ~RTFGone~
+  WRITE_ASCII 0x260 ~RTFGone~ #8
   BUT_ONLY_IF_IT_CHANGES
   
 ACTION_IF FILE_EXISTS_IN_GAME ~dl#bwn.CRE~ THEN BEGIN
@@ -4530,7 +4530,7 @@ COPY_EXISTING ~dl#bwn.CRE~ ~override/dl#bwn.CRE~
   WRITE_BYTE 0x238 17 // 17 STR
   WRITE_ASCII 0x34 ~Branwes~ #8
   WRITE_ASCII 0x3c ~Branwem~ #8
-  WRITE_ASCII 0x260 ~RTFGone~
+  WRITE_ASCII 0x260 ~RTFGone~ #8
   BUT_ONLY_IF_IT_CHANGES
 END
 
@@ -7917,7 +7917,7 @@ SAY NAME2 @593
 COPY_EXISTING ~dkhalid.CRE~ ~override/dkhalid.CRE~
               ~dkhalid2.CRE~ ~override/dkhalid2.CRE~
               ~DSThief.CRE~ ~override/DSThief.CRE~
-WRITE_ASCII 0x260 ~RTFGone~
+WRITE_ASCII 0x260 ~RTFGone~ #8
 
 EXTEND_TOP
 ~Edwi25.bcs~ ~SandrahNPC/ToB/RTFGone.baf~
