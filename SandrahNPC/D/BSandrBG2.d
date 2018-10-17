@@ -360,7 +360,7 @@ IF~~THEN REPLY~ Irenicus' malice has not affected my soul - or so I hope. But wi
 END
 
 IF ~~THEN BEGIN SoulBack2
-SAY~ Even if Jon was not a Bhaalspawn he has able to make use of the dead god's power. He used your soul to create his army and to finally turn himself into the Slayer. Do not forget this impression, <CHARNAME>, as such will be the opponents you will have to face sooner or later - *we* will have to face, that is.~
+SAY~ Even if Jon was not a Bhaalspawn he has been able to make use of the dead god's power. He used your soul to create his army and to finally turn himself into the Slayer. Do not forget this impression, <CHARNAME>, as such will be the opponents you will have to face sooner or later - *we* will have to face, that is.~
 IF~~THEN REPLY~ Are you warning me of the other Bhaalspawns that may still be searching and hunting me?~ GOTO SoulBack3
 END
 
