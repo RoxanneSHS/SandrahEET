@@ -2779,7 +2779,7 @@ IF~~THEN DO~ SetGlobal("SanKhalBlood","GLOBAL",12) RealSetGlobalTimer("SanDreamT
 END
 
 IF~~THEN BEGIN SanHeriMyst1
-SAY~ In the end it will mean what I decide to make out of it - sorry, what WE make out of it, my love. You know best what a heritage of that sort means and you also know that in the end it it ourselves who shape what we become.~
+SAY~ In the end it will mean what I decide to make out of it - sorry, what WE make out of it, <CHARNAME>. You know best what a heritage of that sort means and you also know that in the end it it ourselves who shape what we become.~
 IF~~THEN REPLY~ You have certainly contemplated about the revelation same as I did. Let us sit down together and see if we share the view so far.~ GOTO SanHeriMyst2
 END
 
@@ -2835,7 +2835,7 @@ IF~~THEN REPLY~ His plan was more than mere revenge - but in which way?~  GOTO S
 END
 
 IF~~THEN BEGIN SanHeriMyst12
-SAY~ We have completely lost our sense of time over the topic, my love. Let us continue this on another occasion.~
+SAY~ We have completely lost our sense of time over the topic. Let us continue this on another occasion.~
 IF~~THEN DO~SetGlobal("SanKhalBlood","GLOBAL",14)~EXIT
 END
 
