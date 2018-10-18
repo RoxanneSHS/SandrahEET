@@ -366,10 +366,10 @@ END
 
 IF ~~THEN BEGIN SoulBack3
 SAY~ Yes, I do. In addition I want you to be aware that those who remain in the struggle for Bhaal's Throne - those you have to face sooner or later to survive - will have equivalent power. Their way, even if totally different from yours, will have been of comparable difficulty. ~
-IF~GlobalGT("Sanpoints","GLOBAL",120) Global("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack4
-IF~GlobalLT("Sanpoints","GLOBAL",121) Global("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack5
-IF~GlobalGT("Sanpoints","GLOBAL",120) GlobalLT("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack6
-IF~GlobalLT("Sanpoints","GLOBAL",121) GlobalLT("SanKhalBlood","GLOBAL",16)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack7
+IF~GlobalGT("Sanpoints","GLOBAL",120) GlobalGT("SanKhalBlood","GLOBAL",11)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack4
+IF~GlobalLT("Sanpoints","GLOBAL",121) GlobalGT("SanKhalBlood","GLOBAL",11)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack5
+IF~GlobalGT("Sanpoints","GLOBAL",120) GlobalLT("SanKhalBlood","GLOBAL",12)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack6
+IF~GlobalLT("Sanpoints","GLOBAL",121) GlobalLT("SanKhalBlood","GLOBAL",12)~THEN REPLY~ What they may not have are companions like mine.~ GOTO SoulBack7
 END
 
 IF ~~THEN BEGIN SoulBack4
