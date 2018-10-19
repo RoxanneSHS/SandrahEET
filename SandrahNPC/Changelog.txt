@@ -11,6 +11,7 @@ Removed crossmod Aeon NPC
 Removed crossmod Fade NPC
 Elfsong ghost added
 Bhaal's daughter plot added
+Sellswords crossmod added
 Item descriptions extended
 LoB flags added
 Black Pits integrated and accessible from Waterdeep
