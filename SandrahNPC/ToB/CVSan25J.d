@@ -267,7 +267,7 @@ END
 IF~~THEN BEGIN SanPoPla4
 SAY~ It appears from all the messages we have received that the final war of the Bhaalspawns has now begun. And you, <CHARNAME>, are at the very centre of it all.~
 IF~~THEN REPLY~ I'm afraid that is the case. Can you be a bit more specific, Sandrah?~ DO~SetGlobal("SanPoPla","LOCALS",2)~GOTO SanPoPla5
-IF~~THEN REPLY~ Do you have some information that are less pbvious than what you just stated, Sandrah?~ DO~SetGlobal("SanPoPla","LOCALS",2)~GOTO SanPoPla5
+IF~~THEN REPLY~ Do you have some information that are less obvious than what you just stated, Sandrah?~ DO~SetGlobal("SanPoPla","LOCALS",2)~GOTO SanPoPla5
 END
 
 IF~~THEN BEGIN SanPoPla5

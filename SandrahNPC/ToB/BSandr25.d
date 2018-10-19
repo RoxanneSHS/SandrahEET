@@ -38,7 +38,7 @@ IF~!Global("TalkedToRielev","GLOBAL",2)~ THEN GOTO SanSearchServ4
 END
 
 IF~~ THEN BEGIN SanSearchServ4a
-SAY~ I would say the hooded one with his offer to Jon was the same.~
+SAY~ I would say the hooded one with the offer to Jon was the same.~
 IF~~ THEN GOTO SanSearchServ4
 END
 
