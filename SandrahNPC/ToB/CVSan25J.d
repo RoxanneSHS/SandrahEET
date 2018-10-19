@@ -7,6 +7,9 @@ IF~AreaCheck("ar4500") Global("LeavingPocketPlane","AR4500",0) Global("SanPoPla"
 IF~GlobalGT("BeginChallenge1","GLOBAL",9) GlobalLT("SanPoPla","LOCALS",2)~THEN REPLY~Has my counsellor any advice for me right now?~ GOTO SanPoPla4
 IF~!AreaCheck("ar4500") Global("SanPoPla","LOCALS",2)~THEN REPLY~ What is your idea about the enemy we are now facing? ~DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~ GOTO SanPoPla10
 IF~InParty("Sarevok") GlobalGT("SanSarev","GLOBAL",8) Global("SarevPid","LOCALS",0)~ THEN REPLY~You talk with Sarevok quite intensely - how do you think he's faring?~ GOTO SanSarevPid1
+IF~Global("SanKhalBlood","GLOBAL",13) Global("Chapter","Global",20)~ THEN REPLY~ Shall we continue our analysis of our discoveries at the Archive?~ GOTO SanHeriMyst7
+IF~Global("SanKhalBlood","GLOBAL",12) Global("Chapter","Global",20)~ THEN REPLY~ It must be a heavy burden that you feel with our discovery in the Archive. Do you know what it really means for us?~ GOTO SanHeriMyst1
+IF~Global("SanKhalBlood","GLOBAL",14) Global("Chapter","Global",20)~ THEN REPLY~ Why had Bhaal chosen Khalindra for one of his spawns if not for the reasons we had anticipated until recently?~ GOTO SanHeriMyst13
 IF ~RandomNum(5,1)~THEN REPLY~It is really a long road we have taken together by now, Sandrah.~ GOTO SanLongPid11
 IF~Global("Talos25R","GLOBAL",3) GlobalLT("SanGodInvolve","GLOBAL",3)~THEN REPLY~It seems the damned gods mingle with my affairs more than AO has allowed - and more than I like.~ DO~SetGlobal("Talos25R","GLOBAL",4)IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanMinglGod1
 IF ~RandomNum(5,2)~THEN REPLY~ It is really a long road we have taken together by now, Sandrah.~ GOTO SanLongPid12
@@ -536,6 +539,98 @@ IF~~THEN BEGIN Bazmonk2
 SAY~All the creatures we have encountered recently are full of ambitions for immortality, godhood, rule of the Realms and more. We are but humble mortals, <CHARNAME>, with the goal to provide meaning to our life here and now. We must end this Bhaalwar soon, where people like us are sacrificed by those aiming at goals that are not for them as if we were mere insects that can be squashed.~
 IF~~THEN REPLY~I know at least of a couple of wasps that will sting back.~DO~SetGlobal("SanMonkD","ar6002",2)~EXIT
 END
+
+IF~~THEN BEGIN SanHeriMyst1
+SAY~ In the end it will mean what I decide to make out of it - sorry, what WE make out of it, <CHARNAME>. You know best what a heritage of that sort means and you also know that in the end it it ourselves who shape what we become.~
+IF~~THEN REPLY~ You have certainly contemplated about the revelation same as I did. Let us sit down together and see if we share the view so far.~ GOTO SanHeriMyst2
+END
+
+IF~~THEN BEGIN SanHeriMyst2
+SAY~ You are wonderful, again and again. Yes, let us recapitulate what we have learned - to express it in our own words will let our minds grab the meaning and impact of it all.~
+IF~~THEN REPLY~ Up to now we have always seen in you Midnight's granddaughter through your father's line. Now we have learned about a similar but even more significant connection to Mystra through your mother's bloodline.~ GOTO SanHeriMyst3
+IF~~THEN REPLY~ As it seems you are the only remaining mortal on Faerun who can continue Mystra's bloodline and succeed the goddess yourself or through your daughters, should you ever have them.~ GOTO SanHeriMyst3
+END
+
+IF~~THEN BEGIN SanHeriMyst3
+SAY~ Please, let us not jump to conclusions just now. In our proven manner let us put piece beside piece so we do not oversee any important detail.~
+IF~~THEN REPLY~ Fine. For the moment I suggest to forget about anything we knew before of your heritage and your grandmother and focus on the motherly line.~ GOTO SanHeriMyst5
+END
+
+IF~~THEN BEGIN SanHeriMyst5
+SAY~ We never believed it to be by accident but rather by Bhaal's evil plan. Now I think, that we have just erred in his motivation to implant a Bhaalspawn into Khalindra. It was more than just revenge on Midnight and her son - but I will come to that later.~
+=~ So the facts. My mother never had shown any magical skills or interests, nothing that made any connection to Mystra apparent.~ 
+IF~~THEN REPLY~ But still her bloodline is one of most ancient on the primary plane and through Qilue Veladorn reaches back directly to Mystra. (Smile) Maybe that explains your knack for drow companions and some of your skills in the bedchamber.~ GOTO SanHeriMyst6
+END
+
+IF~~THEN BEGIN SanHeriMyst6
+SAY~ Oh, my, silly. Even if Qilue Veladorn really was drow - which I doubt - it would be almost one hundred and ten generations between her and me. I have as much elvish or orc blood within me than drow, which is about the same mixture you will find in any of us if you just take enough generations into account.~
+=~ But jokes aside, I have to accept that I descended from Mystra both through my father and my mother.~
+IF~~THEN REPLY~ This is the first part of what we learned. I propose to continue another time to deal with the consequences this has when we add the rest of our findings to it.~ DO~SetGlobal("SanKhalBlood","GLOBAL",13)~ EXIT
+IF~~THEN REPLY~ This is the first part of what we learned. Now let us look at the consequences this has when we add the rest of our findings to it.~ DO~SetGlobal("SanKhalBlood","GLOBAL",14)~ GOTO SanHeriMyst7
+END
+
+IF~~THEN BEGIN SanHeriMyst7
+SAY~ This is when I asked the Book about the other descendent of Mystra in my belief that I was the one assigned to find the successor of Midnight in her role as Goddess of All Magic.~
+IF~~THEN REPLY~ Well you found her, didn't you?~ GOTO SanHeriMyst8
+END
+
+IF~~THEN BEGIN SanHeriMyst8
+SAY~This remains to be seen, <CHARNAME>. Much can happen and I always denied that our fate is written without our having a say in it and the possibilities to shape it.~
+IF~~THEN REPLY~ Back to the facts. We were told that in the generation before us there were two descendants of Mystra left. The book did not tell us the names because they had been delivered before - but we know who they were - Midnight and Khalindra.~ GOTO SanHeriMyst9
+END
+
+IF~~THEN BEGIN SanHeriMyst9
+SAY~ One a priestess of the goddess herself, well aware of her duties, her heritage and courageous enough to pick up a fight even with gods. The other a merchant's daughter, beautiful, young and intelligent winning many hearts but seemingly unaware of the blood she carried. Thus was the situation when unexpectedly Mystra was killed in the Time of Troubles and AO had to urgently find a new guardian for the Weave.~
+IF~~THEN REPLY~ Combine those two personalities and we get - you!~GOTO SanHeriMyst10
+END
+
+IF~~THEN BEGIN SanHeriMyst10
+SAY~ (Blushes) Oh, charmer. How can we work earnestly if you come up with such. At least there is a grain of truth in your words. Midnight's line ended when she gave birth to Elminster and afterwards ascended to Mystra. But still the two remaining bloodlines were united as Elminster without knowing this fact fell in love with Khalindra.~
+IF~~THEN REPLY~ And you are the result of that love and that union and the only one of Mystra's bloodline who is left.~ GOTO SanHeriMyst11
+END
+
+IF~~THEN BEGIN SanHeriMyst11
+SAY~ A fact that destroyed my mother as it was known to another god as well - Bhaal.~
+IF~~THEN REPLY~ You already allured to the fact that I was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
+IF~~THEN REPLY~ You already allured to the fact that the Bhaalspawn was sired with Khalindra for a different reason than we had assumed until now?~ GOTO SanHeriMyst12
+IF~~THEN REPLY~ His plan was more than mere revenge - but in which way?~  GOTO SanHeriMyst12
+END
+
+IF~~THEN BEGIN SanHeriMyst12
+SAY~ We have completely lost our sense of time over the topic. Let us continue this on another occasion.~
+IF~~THEN DO~SetGlobal("SanKhalBlood","GLOBAL",14)~EXIT
+END
+
+IF~~THEN BEGIN SanHeriMyst13
+SAY~ Not just any spawn, but one of the strongest, one to grow from the essence of the weaker ones and become a major power and maybe even aspiring to the Throne of Bhaal. ~
+=~By the time Bhaal was seeding his spawns he knew how the Time of Troubles would end - for him but also for the ones who would bring him down. And even if the final backstab was done by Cyric - and Mask was involved as the deadly weapon - it was Midnight who had lead and concluded the mission in AO's name. The priestess of Mystra, later reincarnate as the goddess herself, was the real enemy for the God of Murder.~
+=~With his plan to live on through his spawns who would grow and each of them hold part of his essence so enough would be maintained to restore his power one day, there was one opponent to be eliminated who could spoil the plan once again - Mystra.~
+IF~~THEN REPLY~ When Khalindra died at the Bhaalspawn's birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
+IF~~THEN REPLY~ When Khalindra died at the Bhaalspawn's birth - my birth, the possibility for another daughter from the only remaining bloodline was eliminated. Hm, but you were born already, and a daughter as would be required.~ DO~SetGlobal("SanKhalBlood","GLOBAL",15)~GOTO SanHeriMyst14
+END
+
+IF~~THEN BEGIN SanHeriMyst14
+SAY~(She hesitates for a moment.) I know you will understand my next words correctly as an innocent baby cannot be blamed for its father's cunning plan. With inseminating Khalindra Bhaal not only prevented the birth of further children from her line - he also placed the killer for the last remaining one right into the same cradle.~
+IF~~THEN REPLY~ You are mad! The second child was to be your killer?...oh, Sandrah...No, you are not mad, it's Bhaal who is wicked beyond human reasoning.~ GOTO SanHeriMyst17
+IF~~THEN REPLY~ You are mad! I was to be your killer?...oh, Sandrah...No, you are not mad, it's Bhaal who is wicked beyond human reasoning.~ GOTO SanHeriMyst16
+IF~~THEN REPLY~ The wolf grows up beside the lamb until one day the wolf gets the lust for meat...~GOTO SanHeriMyst15
+END
+
+IF~~THEN BEGIN SanHeriMyst15
+SAY~ Only that the lamb was not so sheepish and the good shepherd was watchful enough.~
+IF~~THEN REPLY~ So in Bhaal's plan we would grow up as siblings with your full trust in me. But my calling of the blood would commence and grow inside of me until one day I would become aware of who I really am. And my first victim would be the one who would otherwise become my strongest opponent.  Mystra would be dead before she even had an idea who she was.~ EXIT
+END
+
+IF~~THEN BEGIN SanHeriMyst16
+SAY~ I am glad you do not blame the messenger for the news she brings.~
+IF~~THEN REPLY~ So in Bhaal's plan we would grow up as siblings with your full trust in me. But my calling of the blood would commence and grow inside of me until one day I would become aware of who I really am. And my first victim would be the one who would otherwise become my strongest opponent.  Mystra would be dead before she even had an idea who she was.~ EXIT
+END
+
+IF~~THEN BEGIN SanHeriMyst17
+SAY~ Only that the lamb was not so sheepish and the good shepherd was watchful enough.~
+IF~~THEN REPLY~ So in Bhaal's plan the two would grow up as siblings with your full trust in him or her. But the calling of the blood would commence and grow inside until one day the younger would become aware of its true nature. And the first victim would be the one who would otherwise become the strongest opponent.  Mystra would be dead before she even had an idea who she was.~ EXIT
+END
+
 
 //Sandrah's TOB Quest
 
