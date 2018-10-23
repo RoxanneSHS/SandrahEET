@@ -140,8 +140,8 @@ DO~SetGlobal("SandrahSummoned","GLOBAL",4)~
 // Watcher's Keep Altar Ritual
 
 EXTEND_BOTTOM Goralt1 0
-IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",0)~ THEN REPLY~ Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu1
-IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",1)~ THEN REPLY~  Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu2
+IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",0)~ THEN REPLY~Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu1
+IF ~ InParty("CVSandr") Global("CribNote","GLOBAL",1)~ THEN REPLY~Sandrah, can my knowledgeable priestess help me with this ritual?~ EXTERN CVSan25J SanWKRitu2
 END
 
 CHAIN
