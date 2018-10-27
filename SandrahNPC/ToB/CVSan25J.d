@@ -647,13 +647,13 @@ IF~~THEN REPLY~ It is a kind of relief to me that I do not have to grieve her. G
 END
 
 IF~~THEN BEGIN SanWronassumpt3
-SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
+SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from <PRO_HISHER> fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
 IF~~THEN REPLY~ It is a kind of relief to me that I do not have to grieve her. Gorion did me a favour even greater than I had imagined till this day.~ GOTO SanWronassumpt5
 IF~~THEN REPLY~ If your mother's second child was neither me nor Imoen...~GOTO SanWronassumpt5
 END
 
 IF~~THEN BEGIN SanWronassumpt4
-SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from his fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
+SAY~ (She has already taken you in her arms.) Still...<CHARNAME> has stripped the own self from <PRO_HISHER> fatherly heritage and become a personality of own choice. Your mother' influence in that does not matter at all, <CHARNAME>, she was just a willing toy of Bhaal, do not dwell on her.~
 IF~~THEN REPLY~ If your mother's second child was neither me nor Imoen...~GOTO SanWronassumpt5
 IF~~THEN REPLY~ I can't believe that your own father did betray us so all the time, Sandrah.~ GOTO SanWronassumpt5
 END
