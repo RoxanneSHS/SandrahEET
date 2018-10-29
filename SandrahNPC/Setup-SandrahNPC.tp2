@@ -5805,7 +5805,7 @@ REPLACE ~ 99992~ @465
 REPLACE ~ 99993~ @465
 
 COPY_EXISTING ~Sahpr4.cre~ ~override/Sahpr4.cre~
-              WRITE_ASCII 0x268 ~None~
+              WRITE_ASCII 0x268 ~None~ #8
 EXTEND_TOP
 ~Sahpr4.bcs~ ~SandrahNPC/Mods/Sahaugin.baf~    
 COMPILE ~SandrahNPC/Mods/Sallinithyl.d~
@@ -5818,6 +5818,13 @@ COMPILE ~SandrahNPC/Mods/Sahui7.baf~
 COMPILE ~SandrahNPC/Mods/Sahui6.baf~
 EXTEND_TOP
 ~sharkamb.bcs~ ~SandrahNPC/Mods/sharkamb.baf~
+
+COPY_EXISTING ~giantf01.cre~ ~override~
+              WRITE_ASCII 0x268 ~attack~ #8
+COPY_EXISTING ~ghoullor.cre~ ~override~
+              WRITE_ASCII 0x268 ~attack~ #8
+COPY_EXISTING ~vampym01.cre~ ~override~
+              WRITE_ASCII 0x268 ~attack~ #8
 
 PRINT ~Installed Scripts and Dialogues II~
 
