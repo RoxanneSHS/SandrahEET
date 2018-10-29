@@ -12,10 +12,12 @@ IF~Global("SandrahJoined","GLOBAL",25)AreaCheck("CVUMO5")~ THEN BEGIN MeetUM1
 SAY~It is a very special day for me and I have to thank you from all my heart. I now have a sister and she is a wonderful being. I am so happy I had the chance to get to know her.~
 IF~~THEN REPLY ~ I will give the both of you some more time to acquaint, I will return soon.~ DO~AddexperienceParty(18000) AddXPObject("CVSandr",22000)~GOTO MeetUM2
 IF~~THEN REPLY ~ I love you, Sandrah, and I rejoice with you. Can we continue together now?~ DO~AddexperienceParty(18000) AddXPObject("CVSandr",22000)~GOTO MeetUM2
+IF~~THEN REPLY ~ Sandrah, I rejoice with you. Can we continue together now?~ DO~AddexperienceParty(4000) AddXPObject("CVSandr",22000)~GOTO MeetUM2
+
 END
 
 IF~~THEN BEGIN MeetUM2
-SAY~ It is time to continue your quest now, my love. But before we leave this peaceful enclave go to speak to my sister again, she has some help to offer.~
+SAY~ It is time to continue your quest now, <CHARNAME>. But before we leave this peaceful enclave go to speak to my sister again, she has some help to offer.~
 IF~~THEN DO~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 END
 
