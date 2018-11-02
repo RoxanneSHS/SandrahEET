@@ -178,8 +178,8 @@ ADD_TRANS_TRIGGER Balth 24
 ~!InParty("CVSandr")~
 
 EXTEND_BOTTOM Balth 24
-IF ~ InParty("CVSandr") Alignment(Player1,MASK_GOOD) ReputationGT(Player1,18) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 31
-IF ~ InParty("CVSandr") !Alignment(Player1,MASK_GOOD)ReputationGT(Player1,18)~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 32
+IF ~ InParty("CVSandr") Alignment(Player1,MASK_GOOD) ReputationGT(Player1,18) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
+IF ~ InParty("CVSandr") !Alignment(Player1,MASK_GOOD)ReputationGT(Player1,18)~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
 IF ~ InParty("CVSandr") Alignment(Player1,MASK_GOOD) !ReputationGT(Player1,18) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
 IF ~ InParty("CVSandr") !Alignment(Player1,MASK_GOOD)!ReputationGT(Player1,18)ReputationGT(Player1,6) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 34
 IF ~InParty("CVSandr")~ THEN REPLY ~You sound like a hypocrite to me, sentencing those you have no right to judge!~ GOTO 35
