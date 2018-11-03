@@ -118,3 +118,17 @@ THEN
 RESPONSE #100
 SetGlobal("SanWhichWay","ar4500",1)
 END
+
+IF
+Global("SanWhichWay","ar4500",0)
+GlobalLT("BeginChallenge4","GLOBAL",6)
+GlobalGT("Sanpoints","GLOBAL",90)
+!Dead("dw#melis") 
+Global("HadBhaal25Dream3","GLOBAL",0)
+Global("HadBhaal25Dream2","GLOBAL",1)
+!Dead("Balth")
+THEN
+RESPONSE #100
+SetGlobal("SanWhichWay","ar4500",1)
+END
+
