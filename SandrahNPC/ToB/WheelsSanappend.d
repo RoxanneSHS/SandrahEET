@@ -34,7 +34,7 @@ IF~~THEN CVSan25J SanBaltQuil2
 ==CVSan25J~ Qilandrha easily matches each of the Five and even <CHARNAME>. What is more important is that she is our secret weapon in the upcoming fight against Melissan. She will come to our aid should we find our combined power may not be enough.~
 ==Balth~Errors, betrayal, mistakes. So many have died already in our father's bloody setup for reasons they will never know or understand. Sometimes I think Bhaal has already succeeded without the need of his actual return.~
 ==CVSan25J~Still I hope you can also see the perspective that lies in the fact that the daughters of Elminster will be both at your side in the coming showdown.~
-==Balth~Let it be so, then. Even Melissan's stolen divinity will not be a match for us both and our allies. I have preparations to make, <CHARNAME>.  Go to the Throne of Bhaal.  When the time comes, I will be there.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+==Balth~Let it be so, then. Even Melissan's stolen divinity will not be a match for us both and our allies. I have preparations to make, <CHARNAME>.  Go to the Throne of Bhaal.  When the time comes, I will be there.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT) SetGlobal("DMWWGroveRevealed","GLOBAL",1) ~EXIT
 
 EXTEND_BOTTOM Yaga02 8
 IF~ GlobalGT("San25ChiQuest","GLOBAL",14)~THEN REPLY~ Qilandrha.~GOTO S40
