@@ -13,6 +13,16 @@ Continue()
 END
 
 IF
+Global("Soltalk","cvrtf1",1)
+Dead("LrIrenic")
+THEN
+RESPONSE #100
+SetGlobal("Soltalk","cvrtf1",2)
+ActionOverride("Finsol01",SetGlobal("lrFinSolJon","LOCALS",1))
+ActionOverride("Solar",SetGlobal("lrFinSolJon","LOCALS",1))
+END
+
+IF
 Global("BalthazarFights","GLOBAL",1)
 !InMyArea("Balth2")
 Global("Balthex","cvrtf1",0)
@@ -526,6 +536,7 @@ END
 IF
 Global("StartEndBios","cvrtf1",1)
 InParty("BDCaelar")
+Global("RTFCaeMove","GLOBAL",0)
 THEN
 RESPONSE #100
 SmallWait(1)
