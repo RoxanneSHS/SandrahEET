@@ -851,6 +851,17 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+Global("A7AFAAQSUMMONED","Global",1)
+InActiveArea("A7Afaaq")
+THEN
+RESPONSE #100
+SetGlobal("A7AFAAQSUMMONED","Global",0)
+ActionOverride("A7Afaaq",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("RChloe")
 Global("RchloeToRtF","Global",0)
 THEN
