@@ -30,7 +30,9 @@ END
 
 IF
 Global("RaiToggl","BG2400",1)
+OR(2)
 GlobalGT("SanImoNashInt","GLOBAL",18)
+Global("SanImoNashInt","GLOBAL",15)
 THEN
 RESPONSE #100
 SetGlobal("RaiToggl","BG2400",2)
