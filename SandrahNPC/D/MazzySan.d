@@ -19,7 +19,7 @@ DO~SetGlobal("SanPalad1","LOCALS",6)~
 ==BSandr~In some way she is - she is the neutral Guardian of the Weave, which provides the energy for most anything existing on the planes including the power required to practice magic. As all the gods, good or bad, are entitled to grant magical skills to selected devotees, Mystra has to tolerate a certain amount of misuse of magic which is sometimes discrediting her name.~
 ==BMazzy~This limitation does not apply to her priestess then? ~
 ==BSandr~It is for her priests and her chosen followers to act against such misuse and to aid the goddess. You need no title or status to do what your heart tells you to do.~
-==BMazzy~ Your confidence in your own judgement is strong, non-paladin.~EXIT
+==BMazzy~Your confidence in your own judgement is strong, non-paladin.~EXIT
 
 
 
