@@ -2,8 +2,8 @@ BEGIN CVJenHu1
 BEGIN CVJENHU2
 BEGIN CVJen25J
 
-IF ~ IsGabber(Player1) Global("Melissanjob","GLOBAL",1) ~ THEN BEGIN JenPCInit25
-SAY ~ (Jen'lig's emotionless reptile-like face awaits her *commander's* words.)~
+IF ~IsGabber(Player1) Global("Melissanjob","GLOBAL",1) ~THEN BEGIN JenPCInit25
+SAY ~(Jen'lig's emotionless reptile-like face awaits her *commander's* words.)~
 IF~Global("Badtiming","LOCALS",0)~THEN REPLY~It looks like you traded the turmoil of your home plane for a similar situation on the Prime.~DO~SetGlobal("Badtiming","LOCALS",1)~GOTO TwoOdds1
 IF~~THEN REPLY~It's good you found your way back to us, Jen'lig.~GOTO Bestplace
 IF~Global("SanJenship","GLOBAL",7)~THEN REPLY~I wonder why none of the githyanki sent after you carried a silver sword even though they must have been high ranked enforcers.~GOTO Nosword1
@@ -31,16 +31,16 @@ END
 
 IF~~THEN BEGIN Nosword1
 SAY~(Hiss) Queen secured their swords to make sure they return. Also to make sure that Jen'lig not gains one if defeats the hunters.~
-IF~~THEN REPLY~Is that usual to do under such circumstances?~ GOTO Nosword2
-IF~~THEN REPLY~Did she mistrust the own hunters that much?~  GOTO Nosword2
-IF~~THEN REPLY~Why is that?~ GOTO Nosword2
+IF~~THEN REPLY~Is that usual to do under such circumstances?~GOTO Nosword2
+IF~~THEN REPLY~Did she mistrust the own hunters that much?~ GOTO Nosword2
+IF~~THEN REPLY~Why is that?~GOTO Nosword2
 END
 
 IF~~THEN BEGIN Nosword2
 SAY~(Hiss) Not usual procedure. Queen must have taken into account possibility of failure of mission.~
 =~...~
 =~Queen much afraid of Jen'lig. Also much afraid of influence Jen'lig may have on other Githyanki with ability for own thoughts.~
-IF~~THEN REPLY~Time may work on your behalf, my friend. The encounter we successfully mastered has shown us - and also her - that you are beyond her reach.~DO~SetGlobal("SanJenship","GLOBAL",8)~ EXIT
+IF~~THEN REPLY~Time may work on your behalf, my friend. The encounter we successfully mastered has shown us - and also her - that you are beyond her reach.~DO~SetGlobal("SanJenship","GLOBAL",8)~EXIT
 END
 
 IF~~THEN BEGIN Bestplace
@@ -71,21 +71,21 @@ DO~SetGlobal("SanJenship","GLOBAL",9)~
 ==CVJen25J~Even on Queen Vlaakith.~
 END
 ++~I doubt you could get close enought to her to use it.~EXIT
-++~This is not a plan, this is suicide.~ EXIT
+++~This is not a plan, this is suicide.~EXIT
 ++~No one can stop a Githyanki who is on a hunt, so much I have learned about your kind until now.~EXIT
 
 CHAIN
 IF~Global("SanJenship","GLOBAL",2)~THEN CVJen25J Ship1
 ~A githyanki spelljammer! Wrecked.~
 DO~SetGlobal("SanJenship","GLOBAL",3)~
-==IF_FILE_EXISTS BSAREV25 IF~InParty("Sarevok")~THEN~ An impressive vessel even in its current state.~
-==BSandr25 IF~!InParty("Sarevok")~THEN~ An impressive vessel even in its current state.~
+==IF_FILE_EXISTS BSAREV25 IF~InParty("Sarevok")~THEN~An impressive vessel even in its current state.~
+==BSandr25 IF~!InParty("Sarevok")~THEN~An impressive vessel even in its current state.~
 ==BSandr25~It is still smouldering from the crash. The accident cannot be long in the past. There may be survivors nearby.~
-==CVJen25J~ (Hiss) Is remains of Enforcer Spelljammer. Is mighty ship to fight against Githzerai.~
+==CVJen25J~(Hiss) Is remains of Enforcer Spelljammer. Is mighty ship to fight against Githzerai.~
 END
-++~About the last thing we need at this moment (sigh). Especially if it was full of angry githyanki fighters. Angry and grounded.~ + Ship2
-++~You have nothing to fear, Jen'lig, even if some have survived. We are in this together.~ + Ship2
-++~That was to be expected sooner or later. Your kin is not one to give up ever.~ + Ship2
+++~About the last thing we need at this moment (sigh). Especially if it was full of angry githyanki fighters. Angry and grounded.~+ Ship2
+++~You have nothing to fear, Jen'lig, even if some have survived. We are in this together.~+ Ship2
+++~That was to be expected sooner or later. Your kin is not one to give up ever.~+ Ship2
 
 CHAIN
 IF~~THEN CVJen25J Ship2
@@ -103,7 +103,7 @@ IF~Global("SanJenship","GLOBAL",6)~THEN CVJen25J Ship3
 DO~SetGlobal("SanJenship","GLOBAL",7)~
 ==BSandr25 ~You knew them, is that so, Jen'lig?~
 ==CVJen25J ~Best crew Vlaakith could send, was trained by Kastya and Jen'lig in old days. (Hiss)~
-==IF_FILE_EXISTS BSAREV25 IF~InParty("Sarevok")~THEN~ Deadly beasts...sorry...great warriors in deed. They did their teacher honor in dead.~
+==IF_FILE_EXISTS BSAREV25 IF~InParty("Sarevok")~THEN~Deadly beasts...sorry...great warriors in deed. They did their teacher honor in dead.~
 ==CVJen25J ~Queen must learn from that. There must be hope for Githyanki after that.~
 ==CVJen25J IF~PartyHasItem("CVJenglo")~THEN~Give Jen'lig item found at ship...please...may be of later use.~
 ==CVJen25J IF~!PartyHasItem("CVJenglo")~THEN~Let us search remains of ship...please...may find something to be of later use.~
@@ -123,21 +123,21 @@ IF~Global("SanJenship","GLOBAL",4)~THEN CVJenHu1 Found
 DO~SetGlobal("SanJenship","GLOBAL",5)~
 ==CVJENHU2~Resistance is futile.~
 ==CVJenHu1~Manling cadre to hide fugitive will perish.~
-==CVJENHU2~Order of Astral Plane will be restored.~ 
+==CVJENHU2~Order of Astral Plane will be restored.~
 ==CVJen25J~The order of our plane will not be restored as long as it is disrupted by a lich to rule our race. Vlaakith no longer githyanki in nature.~
 EXIT
 
 
 INTERJECT_COPY_TRANS Bazdra03 9 CVJenGloUpgr
-==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~ Child of Tiamat, listen to Jen'lig of Tother-Ka from Tu'narath who asks for service.~
+==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~Child of Tiamat, listen to Jen'lig of Tother-Ka from Tu'narath who asks for service.~
 ==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~I read your insignia, Jen'lig, Planewalker commander, true daughter of Gith. What do you demand out of the old pact of Tiamat and Gith?~
-==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~ Jen'lig has a powerful item of the Githyanki but not powerful enough for the purpose it is needed for.~
+==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~Jen'lig has a powerful item of the Githyanki but not powerful enough for the purpose it is needed for.~
 ==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN~I see the globe. I will enhance it with my breath. Now go with the peace between your kin and mine.~DO~TakePartyItem("CvJenGlo") GiveItemCreate("CVJenGl2","CVJenlig",1,0,0)~END
 
 ADD_TRANS_TRIGGER Finmel01 6
 ~!InParty("CVJenlig")~
 
 EXTEND_BOTTOM Finmel01 6
-IF ~InParty("CVJenlig")~ THEN DO ~SetGlobal("CVJenTOBRet","GLOBAL",14) SetGlobal("ShesInIt","LOCALS",1) ActionOverride("cutspy",DestroySelf()) Enemy()
-~ EXIT
+IF ~InParty("CVJenlig")~THEN DO ~SetGlobal("CVJenTOBRet","GLOBAL",14) SetGlobal("ShesInIt","LOCALS",1) ActionOverride("cutspy",DestroySelf()) Enemy()
+~EXIT
 END

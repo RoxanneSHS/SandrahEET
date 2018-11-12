@@ -10,4 +10,4 @@ DO~SetGlobal("CVWinsSh20","CVSH20",3)~
 ==CVNarga~And a man wisss everything to win, now the massster hasss let thisss place to usss.~
 ==CVSandrJ~I wonder what they will do with you in the Nine Hells with you drooling constantly into the hellfire. Well, you will find out in some minutes.~
 ==CVNarga~You will learn to like it, to love it, my lovesssslave. There isss no escape from here for you.~
-==Sanwins2~Perverted slobbering fool, she and <CHARNAME> have ended my disciple Sarevok and now the master himself has chosen to leave this place. They are our end, Narghal Rasz - and I welcome them.~ DO~Enemy()~EXIT
+==Sanwins2~Perverted slobbering fool, she and <CHARNAME> have ended my disciple Sarevok and now the master himself has chosen to leave this place. They are our end, Narghal Rasz - and I welcome them.~DO~Enemy()~EXIT

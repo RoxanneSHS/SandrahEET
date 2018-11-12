@@ -1,6 +1,6 @@
 CHAIN
 IF~Global("spawnDrow1","AR2100",2) ~THEN BSandr VicciUD
-~ Is is bittersweet to be here, am I right?~
+~Is is bittersweet to be here, am I right?~
 DO~SetGlobal("spawnDrow1","AR2100",3)~
 ==BViconi~I have long given up the hope to ever fool you in any way. For a moment the beauty of this world has overwhelmed me - it's the only thing I will ever miss concerning the Underdark.~
 ==BSandr~You would only fool yourself not to admit it. The Underdark is far behind you and still you will never loose it inside.~
@@ -11,13 +11,13 @@ DO~SetGlobal("spawnDrow1","AR2100",3)~
 ==BViconi~I am no fool, Sandrah - and - believe it or not, I'm here on the same mission as you - to punish Irenicus and to regain <CHARNAME>'s soul...and, mh, the soul of that babbling idiotic sister as well.~EXIT
 
 CHAIN
-IF WEIGHT #-19~ Global("Vicstake","LOCALS",2) ~THEN BViconi VicciStake
+IF WEIGHT #-19~Global("Vicstake","LOCALS",2) ~THEN BViconi VicciStake
 ~Why that questioning look you give me, Sandrah?~
 DO~SetGlobal("Vicstake","LOCALS",3)RealSetGlobalTimer("SanVicBG2Plot","LOCALS",1800)~
 ==BSandr~We have learned to trust each other during our time on the Sword Coast, Viconia.~
-==BViconi~ Yes...we have...why do you come up with that?~
+==BViconi~Yes...we have...why do you come up with that?~
 ==BSandr~Maybe to encourage you to reveal how you REALLY ended up tied to that stake. You are on the surface long enough not to be trapped by a silly coincidence.~
-==BViconi~ Why must you be so clever all the times?...baah, it makes no sense to hush it up, I guess...~
+==BViconi~Why must you be so clever all the times?...baah, it makes no sense to hush it up, I guess...~
 ==BSandr~A male?~
 ==BViconi~I have my needs like any woman...any real female drow...aargh that lousy jaluk!~
 ==BSandr~Do you - do we - still have something to fear from him?~
@@ -25,10 +25,10 @@ DO~SetGlobal("Vicstake","LOCALS",3)RealSetGlobalTimer("SanVicBG2Plot","LOCALS",1
 =~I will tell you what happened some time soon. Yes, we have learned to trust each other.~EXIT
 
 CHAIN
-IF WEIGHT #-19~ Global("Vicstake","LOCALS",4) ~THEN BViconi VicciStake2
+IF WEIGHT #-19~Global("Vicstake","LOCALS",4) ~THEN BViconi VicciStake2
 ~I owe you a story, don't I?~
 DO~SetGlobal("Vicstake","LOCALS",5)RealSetGlobalTimer("SanVicBG2Plot","LOCALS",1800)~
-==BSandr~ You do not owe me anything but I will listen if you think you are ready to share it with me.~
+==BSandr~You do not owe me anything but I will listen if you think you are ready to share it with me.~
 ==BViconi~I was alone in this town for quite a while and was looking for a suitable male to fulfil my needs.~
 ==BSandr~You are not one to suit yourself with just anyone, you want someone to match you in power and in passion - you made a wrong choice?~
 ==BViconi~Ha, not with respect to power nor with respect to passion but with respect to bigotry. The jaluk feasted with me - yes, I confess he gave me pleasure enough.~

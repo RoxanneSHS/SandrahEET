@@ -19,7 +19,7 @@ DO~SetGlobal("JenPad","Dsc035",4)~
 ==CVJenPad~I will, Jen'lig of Tother-Ka. I owe you, says Partiglerios.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
-IF ~ Global("JenPad","Dsc035",4)~THEN CVSandrJ Disco3
+IF ~Global("JenPad","Dsc035",4)~THEN CVSandrJ Disco3
 ~I see now why you once called Pelligram a small pet.~
 DO~SetGlobal("JenPad","Dsc035",5)~
 ==CVJenliJ~Githyanki commander ride red dragon if need. Jen'lig do at times but not often as is Planewalker and not can take riding animal across planes.~

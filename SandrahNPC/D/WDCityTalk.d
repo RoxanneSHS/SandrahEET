@@ -84,7 +84,7 @@ END
 
 BEGIN WDRest
 IF~RandomNum(2,1)~THEN BEGIN Guest1
-SAY ~ The place really is up to the reputation given by Volo's guide.~
+SAY ~The place really is up to the reputation given by Volo's guide.~
 IF~~THEN EXIT
 END
 
@@ -96,7 +96,7 @@ END
 
 BEGIN WDRestB
 IF~RandomNum(2,1)~THEN BEGIN Boy1
-SAY ~ Last nite there's bunch of dwarfs here, great fun, threw all empty dishes jus' on de ground an I didn't 'ave to clean 'em.~
+SAY ~Last nite there's bunch of dwarfs here, great fun, threw all empty dishes jus' on de ground an I didn't 'ave to clean 'em.~
 IF~~THEN EXIT
 END
 
@@ -107,7 +107,7 @@ END
 
 BEGIN WDWatch
 IF~RandomNum(3,1)~THEN BEGIN WDWatch1
-SAY ~ I'm on duty. No talking~
+SAY ~I'm on duty. No talking~
 IF~~THEN EXIT
 END
 

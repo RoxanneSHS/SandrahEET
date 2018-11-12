@@ -2,8 +2,8 @@ BEGIN CViwdguy
 
 IF~GlobalLT("Chapter","Global",3)NumTimesTalkedTo(0)~THEN BEGIN IWD10
 SAY~Adventurers, maybe just the kind I was sent to look out for.~
-IF~~THEN REPLY~You have an offer to make?~  GOTO IWD11
-IF~~THEN REPLY~We have no time for any additional tasks, sorry.~ GOTO IWD11
+IF~~THEN REPLY~You have an offer to make?~ GOTO IWD11
+IF~~THEN REPLY~We have no time for any additional tasks, sorry.~GOTO IWD11
 END
 
 IF~~THEN BEGIN IWD11
@@ -21,8 +21,8 @@ END
 
 IF~GlobalGT("Chapter","Global",2)~THEN BEGIN IWD20
 SAY~Qualified adventurers, maybe just the kind I was sent to look out for.~
-IF~~THEN REPLY~You have an offer to make?~  GOTO IWD21
-IF~~THEN REPLY~We have no time for any additional tasks, sorry.~ GOTO IWD21
+IF~~THEN REPLY~You have an offer to make?~ GOTO IWD21
+IF~~THEN REPLY~We have no time for any additional tasks, sorry.~GOTO IWD21
 END
 
 IF~~THEN BEGIN IWD21
@@ -34,7 +34,7 @@ IF~~THEN REPLY~It does not hurt to listen to the details, I will decide afterwar
 END
 
 IF~~THEN BEGIN IWD22
-SAY ~ Easthaven is a town in the Icewind Dale. Trouble has been reported up in the region and the neighbouring hamlet of Kuldahar asked for help.~
+SAY ~Easthaven is a town in the Icewind Dale. Trouble has been reported up in the region and the neighbouring hamlet of Kuldahar asked for help.~
 IF~Global("BrageRiddle","GLOBAL",2)~THEN GOTO IWD24
 IF~!Global("BrageRiddle","GLOBAL",2)~THEN GOTO IWD23
 END
@@ -49,7 +49,7 @@ END
 IF~~THEN BEGIN IWD24
 SAY~You need to go further north, follow the Upper Chionthar and still continue north.~
 =~To travel there it is best to contact my friend, Captain Ulysses up in Ulgoth's Beard. Good luck, adventurers.~
-IF~~THEN DO~ SetGlobal("SanBGForIWD","Global",1) RevealAreaOnMap("id1000") EscapeAreaDestroy(40)~ EXIT
+IF~~THEN DO~SetGlobal("SanBGForIWD","Global",1) RevealAreaOnMap("id1000") EscapeAreaDestroy(40)~EXIT
 END
 
 IF~GlobalLT("Chapter","Global",3)!NumTimesTalkedTo(0)~THEN BEGIN IWD30

@@ -1,12 +1,12 @@
 BEGIN BJenli25
 
 CHAIN
-IF~Global("CVJenTOBRet","GLOBAL",8)~ THEN BJenli25 JenQStor1
+IF~Global("CVJenTOBRet","GLOBAL",8)~THEN BJenli25 JenQStor1
 ~(Hiss) Now without <CHARNAME> cadre Jen'lig be alone - alone like Vlaakith...~
 =~Alone not Githyanki concept.~
 DO~SetGlobal("CVJenTOBRet","GLOBAL",9) RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)~
 ==BSandr25~Do you mind to tell your cadre friends what happened between you and your queen...For a moment you almost sounded like you pity her, but I know, pity is not a concept of your race.~
-==BJenli25~ (Hiss) Sandrah right, pity is emotion and not part of Githyanki nature. But still good word to explain.~
+==BJenli25~(Hiss) Sandrah right, pity is emotion and not part of Githyanki nature. But still good word to explain.~
 =~Vlaakith should be in cadre with all of Githyanki race - but Jen'lig found is very much alone. Githyanki who is alone cannot serve race, be it queen or soldier. Isolated queen cannot serve our race in the long term.~
 ==BSandr25~You could not connect to her and get this message through to her consciousness?~
 ==BJenli25~Sandrah as always, understands concepts that are very far from her own.~
@@ -20,7 +20,7 @@ DO~SetGlobal("CVJenTOBRet","GLOBAL",9) RealSetGlobalTimer("CVJen25Intvl","GLOBAL
 ==BJenli25~You see more than any Githyanki can see about my kin. You see what only Jen'lig has seen of all her race. (Hiss)~EXIT
 
 CHAIN
-IF~Global("CVJenTOBRet","GLOBAL",10)~ THEN BJenli25 JenQStor2
+IF~Global("CVJenTOBRet","GLOBAL",10)~THEN BJenli25 JenQStor2
 ~(Hiss) Cadre and <CHARNAME> will withstand any foolish Githyanki attempt. Not danger if Jen'lig be detected and hunted.~
 DO~SetGlobal("CVJenTOBRet","GLOBAL",11) RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)~
 ==BSandr25~You think that such a thing could happen?~
@@ -30,7 +30,7 @@ DO~SetGlobal("CVJenTOBRet","GLOBAL",11) RealSetGlobalTimer("CVJen25Intvl","GLOBA
 ==BJenli25~(Hiss) Jen'lig fully agrees with counsellor analysis.~EXIT
 
 CHAIN
-IF~Global("CVJenTOBRet","GLOBAL",12)~ THEN BJenli25 JenQStor3
+IF~Global("CVJenTOBRet","GLOBAL",12)~THEN BJenli25 JenQStor3
 ~Tiamat child made Mind Globe strong enough item.~
 DO~SetGlobal("CVJenTOBRet","GLOBAL",13) RealSetGlobalTimer("CVJen25Intvl","GLOBAL",2000)~
 ==BSandr25~Strong enough to be used against Vlaakith you think?~
@@ -45,7 +45,7 @@ DO~SetGlobal("CVJenTOBRet","GLOBAL",13) RealSetGlobalTimer("CVJen25Intvl","GLOBA
 =~Sandrah knows that Jen'lig true child of Gith (Hiss).~
 ==BSandr25~You do it for the Githyanki, to free them of the slavery of Vlaakith like Gith has freed them from the Mind Flayers long ago.~
 ==BJenli25~Githyanki deserve better queen. Queen who serves race, not herself.~
-==BSandr25~Like the Supreme Plane Walker who only knew her honour and the welfare of her people.~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==BSandr25~Like the Supreme Plane Walker who only knew her honour and the welfare of her people.~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 CHAIN
 IF~Global("CVJenSarRom","GLOBAL",1)~THEN BJenli25 SarLover1
@@ -56,7 +56,7 @@ DO~SetGlobal("CVJenSarRom","GLOBAL",2) RealSetGlobalTimer("JenSarDel","LOCALS",4
 ==BJenli25~Jen'lig not care for concept of stupid manling gods - but Jen'lig very much likes good strong fighter. Fearless warrior is Githyanki concept. Good concept for race and breeding.~
 ==IF_FILE_EXISTS BSAREV25~Ehem...is this some kind of...eh...offer...eh...~
 ==BJenli25~Jen'lig study Sarevok fighting. Is good and deadly. (Hiss) Will call by name from now on Sarevok - Sarevok will call Githyanki by name as well from now, say Jen'lig.~
-==IF_FILE_EXISTS BSAREV25~Ha, if that does not break the ice, I don't know. Well, we fight side by side now - Jen'lig.~ EXIT
+==IF_FILE_EXISTS BSAREV25~Ha, if that does not break the ice, I don't know. Well, we fight side by side now - Jen'lig.~EXIT
 
 CHAIN
 IF~Global("CVJenSarRom","GLOBAL",3)~THEN BJenli25 SarLover1
@@ -71,7 +71,7 @@ DO~SetGlobal("CVJenSarRom","GLOBAL",4) RealSetGlobalTimer("JenSarDel","LOCALS",4
 ==IF_FILE_EXISTS BSAREV25~What can I say? Your bedroll or mine?~
 ==BJenli25~Jen'lig bedroll better - has right fabric to smoothly caress Jen'lig's scales when out of armour.~
 ==IF_FILE_EXISTS BSAREV25~Same for the scarred body of a fighter I guess. As for caressing your scales...I am not as unexperienced with your gender as you might think.~
-==BJenli25~(Hiss) Not talking more, show Jen'lig deeds.~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==BJenli25~(Hiss) Not talking more, show Jen'lig deeds.~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 
 

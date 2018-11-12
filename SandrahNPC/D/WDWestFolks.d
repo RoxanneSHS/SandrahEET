@@ -1,5 +1,5 @@
 BEGIN CVwdwauk
-IF~ AreaCheck("CVRoan")~THEN BEGIN WelcomeN
+IF~AreaCheck("CVRoan")~THEN BEGIN WelcomeN
 SAY~Welcome to the Temple of Splendour...~
 IF~~THEN REPLY~This really looks like Waukeen's Jewel once again.~GOTO WelcomeN1
 END
@@ -7,8 +7,8 @@ END
 IF~~THEN BEGIN  WelcomeN1
 SAY~We did our best with the help of the city's rich support. What can I do for you?~
 IF~~THEN REPLY~Show me the temple's services.~GOTO Service2
-IF~Global("WDFishermen","GLOBAL",2) GlobalGT("KatDef","GLOBAL",1)~ THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~ GOTO AmbYes
-IF~Global("WDFishermen","GLOBAL",2) GlobalLT("KatDef","GLOBAL",2)~ THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~ GOTO AmbNo
+IF~Global("WDFishermen","GLOBAL",2) GlobalGT("KatDef","GLOBAL",1)~THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~GOTO AmbYes
+IF~Global("WDFishermen","GLOBAL",2) GlobalLT("KatDef","GLOBAL",2)~THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~GOTO AmbNo
 END
 
 IF~NumTimesTalkedTo(0)!AreaCheck("CVRoan")~THEN BEGIN Welcome
@@ -18,8 +18,8 @@ END
 
 IF~~THEN BEGIN Welcome1
 SAY~(Sigh) You are right...it was Waukeen's Crown Jewel before the bandit Khattark and his bunch made their visit. The vandals even took the handles. The temple would give a tremendous reward to anyone who would end the terror of that guy.~
-IF~~THEN REPLY~We are pursuing the man already. Be assured we will get him.~ GOTO ComeB
-IF~GlobalGT("KatDef","GLOBAL",1)~THEN REPLY~We ended his regime right below your feet in the sewers, Khattark and his men are no more.~ GOTO Reward
+IF~~THEN REPLY~We are pursuing the man already. Be assured we will get him.~GOTO ComeB
+IF~GlobalGT("KatDef","GLOBAL",1)~THEN REPLY~We ended his regime right below your feet in the sewers, Khattark and his men are no more.~GOTO Reward
 IF~~THEN REPLY~Does the temple still offer services?~GOTO Service2
 END
 
@@ -45,10 +45,10 @@ END
 
 IF~NumTimesTalkedToGT(0)~THEN BEGIN Welcome2
 SAY~How can I help you today?~
-IF~GlobalGT("KatDef","GLOBAL",1) Global("GaveRew","LOCALS",0)~THEN REPLY~We ended the terror regime right below your feet in the sewers, Khattark and his men are no more.~ GOTO Reward
+IF~GlobalGT("KatDef","GLOBAL",1) Global("GaveRew","LOCALS",0)~THEN REPLY~We ended the terror regime right below your feet in the sewers, Khattark and his men are no more.~GOTO Reward
 IF~~THEN REPLY~Does the temple still offer services?~GOTO Service
-IF~Global("WDFishermen","GLOBAL",2) GlobalGT("KatDef","GLOBAL",1)~ THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~ GOTO AmbYes
-IF~Global("WDFishermen","GLOBAL",2) GlobalLT("KatDef","GLOBAL",2)~ THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~ GOTO AmbNo
+IF~Global("WDFishermen","GLOBAL",2) GlobalGT("KatDef","GLOBAL",1)~THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~GOTO AmbYes
+IF~Global("WDFishermen","GLOBAL",2) GlobalLT("KatDef","GLOBAL",2)~THEN REPLY~We are looking for items needed to summon an Ambassador of the Sea.~GOTO AmbNo
 END
 
 IF~~THEN BEGIN  AmbNo
@@ -59,8 +59,8 @@ END
 IF~~THEN BEGIN  AmbYes
 SAY~Ah, you are the one who solved that Khattark problem and we will thank you with the information you need. ~
 =~You are lucky, as we have given the Umberlee bowl as a loan for an exhibition to our friends over at the Siamorphe's temple just a few days before Khattark could rob it.~
-IF~~THEN REPLY~Ah, a glimpse of hope in this search. What about the ritual scroll?~ GOTO AmbYes2
-IF~~THEN REPLY~Once we secured the bowl, we need to find the scroll to use it.~ GOTO AmbYes2
+IF~~THEN REPLY~Ah, a glimpse of hope in this search. What about the ritual scroll?~GOTO AmbYes2
+IF~~THEN REPLY~Once we secured the bowl, we need to find the scroll to use it.~GOTO AmbYes2
 END
 
 CHAIN
@@ -80,14 +80,14 @@ END
 BEGIN CVWDWAS
 IF WEIGHT #-3~AreaCheck("CVROA2") Global("Kathint","LOCALS",0)~THEN BEGIN Kathint
 SAY~Be careful out there, the bandit Khattark is on the loose.~
-IF~~THEN REPLY~Watch out yourself. We stirred him up and he made an escape into town. He might be right behind you this time.~ GOTO Kathint2
+IF~~THEN REPLY~Watch out yourself. We stirred him up and he made an escape into town. He might be right behind you this time.~GOTO Kathint2
 IF~~THEN REPLY~Incompetent tin head. We killed the guy for you already.~GOTO Kathint2
-IF~~THEN REPLY~He must have passed here a minute ago, blind fool. We are on his trail, just continue your slumber.~ GOTO Kathint2
+IF~~THEN REPLY~He must have passed here a minute ago, blind fool. We are on his trail, just continue your slumber.~GOTO Kathint2
 END
 
 IF~~THEN BEGIN Kathint2
 SAY~Huh?~
-IF~~THEN DO ~ SetGlobal("Kathint","LOCALS",1)SetDialog("WDWATCH")~ EXIT
+IF~~THEN DO ~SetGlobal("Kathint","LOCALS",1)SetDialog("WDWATCH")~EXIT
 END
 
 IF~!AreaCheck("CVROA2") ~THEN BEGIN Outland
@@ -99,7 +99,7 @@ BEGIN  CVWDBar7
 
 IF~AreaCheck("CVROA7")~THEN BEGIN Fest1
 SAY~Welcome to Sharess' famous festhall! You have coin to spend and pleasures to seek?...You have come to the right place, darling.~
-IF~~THEN REPLY~What does one do here in this...brothel?~ GOTO Fest2
+IF~~THEN REPLY~What does one do here in this...brothel?~GOTO Fest2
 IF~~THEN REPLY~What does one do here in this...establishment? ~GOTO Fest2
 IF~~THEN REPLY~What does one do here in this...eh, festhall?~GOTO Fest2
 IF~Global("SanRTFPlot1","GLOBAL",6)~THEN REPLY~We are looking for the collector in your backroom again.~GOTO Fest6
@@ -123,7 +123,7 @@ IF~~THEN BEGIN Fest4
 SAY~If you have the coin you may convince our girls to keep you company. I just provide the rooms and drinks to make your stay one to remember.~
 IF~~THEN REPLY~At least I will remember the empty purse and the hangover...Thank you but no.~EXIT
 IF~~THEN REPLY~Not this time, I'm in a hurry.~EXIT
-IF~~THEN REPLY~I've just been plundered by your *colleagues* across the street...~ GOTO Fest5
+IF~~THEN REPLY~I've just been plundered by your *colleagues* across the street...~GOTO Fest5
 IF~~THEN REPLY~I don't say no until I see your list of services.~GOTO Fest5
 
 END
@@ -158,7 +158,7 @@ END
 CHAIN
 IF~~THEN CVSandrJ SanTrain3
 ~(Blushes) I did some training here, I tried to learn the techniques and pleasures those girls can provide...~
-==CVWDBar4~If she were not such a nice girl I would have refused her...I mean it's against our own interest - she came to learn so that her future partner never would miss anything with her and thus become our customer. She wants to provide any possible pleasure for the lucky one herself.~ DO~EscapeArea()~
+==CVWDBar4~If she were not such a nice girl I would have refused her...I mean it's against our own interest - she came to learn so that her future partner never would miss anything with her and thus become our customer. She wants to provide any possible pleasure for the lucky one herself.~DO~EscapeArea()~
 END
 ++~I see, as I consider myself that lucky one I have to thank you - in a way.~EXIT
 
@@ -175,10 +175,10 @@ IF~NumTimesTalkedTo(0)~THEN CVWDSiam SanIlva1
 ==CVWDSiam~You are Elminster's daughter, child, and High Priestess of the House of Wonders...~
 ==CVSandrJ~I am just a simple priestess in the ranks...~
 ==CVWDSiam~Ah...just like your father - your disguises fool not those with an eye for true power.~
-=~(Sigh) You will learn one day, I do not give up hope yet.~ DO~EscapeArea()~
-== AJANTJ IF ~ InParty("Ajantis") ~ THEN ~ Mother, please...~
-==CVWDSiam IF ~ InParty("Ajantis") ~ THEN ~YOU will give my father and me an explanation for venturing with THIS (snort) party, Ajantis. You know the hour when dinner is held at our house, I expect you to be there on time.~ 
-== AJANTJ IF ~ InParty("Ajantis") ~ THEN ~ Y..yes, mother.~EXIT
+=~(Sigh) You will learn one day, I do not give up hope yet.~DO~EscapeArea()~
+== AJANTJ IF ~InParty("Ajantis") ~THEN ~Mother, please...~
+==CVWDSiam IF ~InParty("Ajantis") ~THEN ~YOU will give my father and me an explanation for venturing with THIS (snort) party, Ajantis. You know the hour when dinner is held at our house, I expect you to be there on time.~
+== AJANTJ IF ~InParty("Ajantis") ~THEN ~Y..yes, mother.~EXIT
 
 APPEND MTOWBA
 IF WEIGHT #-3~AreaCheck("CVROA7") RandomNum(3,1)~THEN BEGIN Bar1

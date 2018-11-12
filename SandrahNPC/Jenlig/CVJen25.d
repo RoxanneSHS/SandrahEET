@@ -22,7 +22,7 @@ IF~~THEN CVJen25 TobAppear2
  CHAIN
  IF~Global("CVJenTOBRet","GLOBAL",4)~THEN CVJen25 TobAppear3
 ~(Hiss...) You wake?~
-==CVSan25J~ Your recovery of the silver sword and your meeting with Queen Vlaakith have not turned out according to your plan - or are you here on another mission?~
+==CVSan25J~Your recovery of the silver sword and your meeting with Queen Vlaakith have not turned out according to your plan - or are you here on another mission?~
 ==CVJen25~Sandrah see good, as always. Queen alive, Jen'lig alive. Alive but had to flee from Tu'narath home to survive. Queen not agree that Jen'lig must remain own unassimilated for sake of githyanki race, (Hiss).~
 =~Jen'lig travel some planes but always found and hunted by own kin.~
 =~Found cord of Sarevok foe and not cut with sword but follow by instinct.~
@@ -33,7 +33,7 @@ END
 ++~The safest place for you will be in our company and we can make good use of your skills as well. Welcome back.~DO~SetGlobal("CVJenTOBRet","GLOBAL",6) JoinParty()~EXIT
 
 CHAIN
-IF~ Global("CVJenTOBRet","GLOBAL",5)~THEN CVJen25 TobAppear4
+IF~Global("CVJenTOBRet","GLOBAL",5)~THEN CVJen25 TobAppear4
 ~Commander <CHARNAME> come for Jen'lig?~
 END
 ++~You are save here and welcome to stay as long as you want.~EXIT

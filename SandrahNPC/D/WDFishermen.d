@@ -18,8 +18,8 @@ IF~Global("WDFishermen","GLOBAL",1)~THEN WDFish1 Fishplot1
 ==CVSandrJ~That is not only a problem for the fishermen. ~
 =~<CHARNAME>, those people and their colleagues play an important role for the supply of this Capital, my home town. In the long term their problems become a problem of the city.~
 END
-++~Have you done anything to anger Umberlee?~ + Fishplot2
-++~What has happened that has deprived you of the goodwill of your goddess?~ + Fishplot2
+++~Have you done anything to anger Umberlee?~+ Fishplot2
+++~What has happened that has deprived you of the goodwill of your goddess?~+ Fishplot2
 
 CHAIN 
 IF~~THEN WDFish1 Fishplot2
@@ -35,7 +35,7 @@ IF~~THEN WDFish1 Fishplot2
 ==WDFish2~We'll see, my friend, we'll see. So, Sandrah, how will you accomplish that?~
 ==CVSandrJ~We need a bowl of Umberlee and the corresponding scroll for the ritual.~
 END
-++~Where is the Water Queen's temple here in town?~ + Fishplot3
+++~Where is the Water Queen's temple here in town?~+ Fishplot3
 
 CHAIN 
 IF~~THEN WDFish1 Fishplot3
@@ -45,7 +45,7 @@ IF~~THEN WDFish1 Fishplot3
 END
 ++~We can take a look at the Temple of Splendour then.~DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
 ++~Why not inquire at the Temple of the Siamorphe then?~DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
-++~I have nothing against another visit at the festhall of Sharess, hm.~  DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
+++~I have nothing against another visit at the festhall of Sharess, hm.~ DO~SetGlobal("WDFishermen","GLOBAL",2)~EXIT
 
 CHAIN
 IF~GlobalGT("WDFishermen","GLOBAL",0) GlobalLT("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotR
@@ -54,7 +54,7 @@ IF~GlobalGT("WDFishermen","GLOBAL",0) GlobalLT("WDFishermen","GLOBAL",5)~THEN WD
 ==WDFish2~For the sake of us and the town, please do so!~EXIT
 
 CHAIN
-IF~ Global("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotS
+IF~Global("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotS
 ~Have you found a way to help us?~
 ==CVSandrJ~We have the items to summon an Ambassador of the Sea.~
 ==WDFish2~We may have our fish knifes ready in case the creature is hostile.~
@@ -65,7 +65,7 @@ IF~ Global("WDFishermen","GLOBAL",5)~THEN WDFish1 FishplotS
 =~*Sandrah starts with a strange incantation in an unknown language...*~DO~SetGlobal("WDFishermen","GLOBAL",6)~EXIT
 
 CHAIN
-IF~Global("WDFishermen","GLOBAL",7)~ THEN WDFish3 FishplotF
+IF~Global("WDFishermen","GLOBAL",7)~THEN WDFish3 FishplotF
 ~FLESHLINGS...(splash)~
 DO~SetGlobal("WDFishermen","GLOBAL",8)~
 ==WDFish2~Umberlee's servants greet you.~
@@ -81,7 +81,7 @@ DO~SetGlobal("WDFishermen","GLOBAL",8)~
 ==WDFish3~A creature of the sea has been lured to the land by a fleshling magician. She will perish if she is not returned to her elemental in time.~
 ==CVSandrJ~Are you talking of a sirine, Ambassador?~
 ==WDFish3~You fleshlings call our sisters by that name.~
-=~Find her and return her to the sea then Umberlee will be at peace with you.~DO~ TakePartyItem("CVWDFi1") TakePartyItem("CVWDFi2") CreateVisualEffect("icwrati",[2252.294])  Wait(2) CreateVisualEffect("icwrati",[2212.254]) Wait(2) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+=~Find her and return her to the sea then Umberlee will be at peace with you.~DO~TakePartyItem("CVWDFi1") TakePartyItem("CVWDFi2") CreateVisualEffect("icwrati",[2252.294])  Wait(2) CreateVisualEffect("icwrati",[2212.254]) Wait(2) ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 CHAIN
 IF~Global("WDFishermen","GLOBAL",23)~THEN WDFish1 Sacri1
@@ -98,11 +98,11 @@ IF~Global("WDFishermen","GLOBAL",12)~THEN WDFish1 Sacri2
 DO~SetGlobal("WDFishermen","GLOBAL",13)~
 ==CVSandrJ~We have found the missing sirine and will now give her back to her mother. She was with her mortal lover by her own will but it could not turn out well. The sea should soon be your friend again.~
 ==WDFish1~(Cheerful) To set our trust in Mystra was no mistake. We thank you, Sandrah.~
-==WDFish2~Bah, we will see, Henk, we will see. Don't praise another than Umberlee too early.~ DO~ClearAllActions() StartCutSceneMode() TakePartyItem("WDfibod") CreateCreature("WDFish5",[2155.290],0) Wait(6) ActionOverride("WDFish5",MoveToPoint([1841.322])) MoveViewPoint([1841.322],FAST) Wait(8) CreateVisualEffect("spanisum",[1938.322])ActionOverride("WDFish5",DestroySelf()) ActionOverride("WDFish1",EscapeArea()) EndCutSceneMode() ReputationInc(1) AddexperienceParty(9000) EscapeArea()~EXIT
+==WDFish2~Bah, we will see, Henk, we will see. Don't praise another than Umberlee too early.~DO~ClearAllActions() StartCutSceneMode() TakePartyItem("WDfibod") CreateCreature("WDFish5",[2155.290],0) Wait(6) ActionOverride("WDFish5",MoveToPoint([1841.322])) MoveViewPoint([1841.322],FAST) Wait(8) CreateVisualEffect("spanisum",[1938.322])ActionOverride("WDFish5",DestroySelf()) ActionOverride("WDFish1",EscapeArea()) EndCutSceneMode() ReputationInc(1) AddexperienceParty(9000) EscapeArea()~EXIT
 
 
 CHAIN
-IF~Global("WDFishermen","GLOBAL",8)~ THEN CVSandrJ FishplotF2
+IF~Global("WDFishermen","GLOBAL",8)~THEN CVSandrJ FishplotF2
 ~So we need to find a captive siren in a town as big as Waterdeep.~
 DO~SetGlobal("WDFishermen","GLOBAL",9)~
 ==WDFish2~Henk...tell her what you told me the other night when you returned from inspecting the nets.~
@@ -111,12 +111,12 @@ DO~SetGlobal("WDFishermen","GLOBAL",9)~
 ==CVSandrJ~Anything may be helpful, otherwise we have no hint where to start our search and your problems will get bigger with every day you cannot fish out at sea. And with that Waterdeep will be without fresh fish on the market.~
 ==WDFish1~Really, I saw nothing...I mean I saw not what he did...I just saw he was there...~
 END
-++~Man, spit it out.~ + FishplotF3
-++~WHO WAS THERE?? Damn it, speak.~ + FishplotF3
-++~Either you tell us what you saw or you'll be without help from us.~ + FishplotF3
+++~Man, spit it out.~+ FishplotF3
+++~WHO WAS THERE?? Damn it, speak.~+ FishplotF3
+++~Either you tell us what you saw or you'll be without help from us.~+ FishplotF3
 
 CHAIN
-IF~~ THEN CVSandrJ FishplotF3
+IF~~THEN CVSandrJ FishplotF3
 ~*Sandrah smiles at you in silent agreement to your outburst*~
 ==WDFish1~Whyrtman, that strange mage...he never comes out here to the fish market. But that night he was there, near the nets, staring out at the sea...~
 ==CVSandrJ~It was the night before your trouble started?~
@@ -131,41 +131,41 @@ END
 ++~I'm afraid if I say no to this quest, the rage of some mighty priestess will be upon me for not caring enough about her hometown.~EXIT
 
 CHAIN
-IF~Global("WDFishermen","GLOBAL",10)~ THEN CVSandrJ FishplotCrys
+IF~Global("WDFishermen","GLOBAL",10)~THEN CVSandrJ FishplotCrys
 ~This crystal seems to be some device to control creatures within this house - at least it was.~
 DO~SetGlobal("WDFishermen","GLOBAL",11)~
 END
-++~They were quite hostile towards us.~ + FishplotCrys2
-++~It must have lost quite a bit of its power - or the attack was intended.~ + FishplotCrys2
+++~They were quite hostile towards us.~+ FishplotCrys2
+++~It must have lost quite a bit of its power - or the attack was intended.~+ FishplotCrys2
 
 CHAIN
-IF~~ THEN CVSandrJ FishplotCrys2
+IF~~THEN CVSandrJ FishplotCrys2
 ~It seems that the crystal is losing the last of its energy just as we talk. The aggression we encountered was due to the loss of control.~
 END
 ++~Another of those mages fiddling with powers far too big for their skills.~+ FishplotCrys3
 ++~I take it then that this mage is at the core of the trouble that befell the fishermen.~+ FishplotCrys3
 
 CHAIN
-IF~~ THEN CVSandrJ FishplotCrys3
+IF~~THEN CVSandrJ FishplotCrys3
 ~Do not tempt me to a premature judgement - I never liked that Whyrtman before.~
 =~Anyway, we must anticipate that also the sirine we seek might have been under control of the crystal.~
 END
 ++~But not any longer...I see what you mean.~EXIT
 
 CHAIN
-IF~Global("WDFishermen","GLOBAL",11)~ THEN WDFish5 Sirine1
+IF~Global("WDFishermen","GLOBAL",11)~THEN WDFish5 Sirine1
 ~Are you the ones to free me or the ones to end my already fading life?~
 ==CVSandrJ~Did you kill him and turn him to stone?~
 ==WDFish5~Yes and no. It is more complex than this.~
 ==CVSandrJ~With him petrified - obviously by your sirine's gaze - you are yourself trapped here by his creatures that are no longer under control.~
 ==WDFish5~It is like you say. But all of this is not my fault alone, if you listen to me another minute you will see.~
 END
-++~A sirine does what you did, any man knows that and this mage was a fool to consider himself superior.~ + Sirine2
-++~We should really kill you before you do to us what you did to him.~DO~IncrementGlobal("Sanpoints","GLOBAL",-2) ~ + Sirine2
-++~There must be more to this story than mere stupidity of an arrogant mage, I think.~ + Sirine2
+++~A sirine does what you did, any man knows that and this mage was a fool to consider himself superior.~+ Sirine2
+++~We should really kill you before you do to us what you did to him.~DO~IncrementGlobal("Sanpoints","GLOBAL",-2) ~+ Sirine2
+++~There must be more to this story than mere stupidity of an arrogant mage, I think.~+ Sirine2
 
 CHAIN
-IF~~ THEN WDFish5 Sirine2
+IF~~THEN WDFish5 Sirine2
 ~Who is to blame, me or Whyrtman? I cannot say.~
 ==CVSandrJ~How come you are here in the first place?~
 ==WDFish5~A lonely man comes to the sea shore every night. This must attract a sirine coming to the shallow water at the same time. The usual story between my kin and the land dwellers you will say. But...this time it's different.~
@@ -178,39 +178,39 @@ IF~~ THEN WDFish5 Sirine2
 ==CVSandrJ~You must return to the sea. The Water Queen assumes you have been kidnapped and is full of hatred against us land dwellers.~
 ==WDFish5~It was just an illusion we both have followed, was it?~
 END
-++~A nice little story, too good to be true. The only witness who could say otherwise is dead.~ + Sirine3
-++~You must return to your kin, otherwise more men and women will suffer from your crazy dream.~ + Sirine3
+++~A nice little story, too good to be true. The only witness who could say otherwise is dead.~+ Sirine3
+++~You must return to your kin, otherwise more men and women will suffer from your crazy dream.~+ Sirine3
 ++~You have experienced all the love that your kin and us may probably share. Wake up and return to your queen.~+ Sirine3
 
 CHAIN
-IF~~ THEN WDFish5 Sirine3
+IF~~THEN WDFish5 Sirine3
 ~I will not live much longer in this dry place without Whyrtman's art to create an ambient for me, I'm fading with every minute. Will you help me return to the water or will you sentence me for the deed that happened?~
 ==CVSandrJ~Whyrtman was aware of the risk he took. The fact that he perished from your act has nothing to do with murder. This is not a case for justice but for mercy.~
 ==Bimoen IF~InParty("Imoen2")~THEN~Life can be sooo unfair!! Sure we take you back home, right, <CHARNAME>? ~
-== BSHART IF~ InParty("Sharteel") ~ THEN ~ Trust a male to handle critical stuff and you end in a mess. She deserves the fate she faces due to her own stupidity.  ~
-== BVICON  IF~ InParty("Viconia") ~ THEN ~ Just let her perish, she isn't even worth to soil our blades with her blood. ~
-== BKIVAN  IF~ InParty("Kivan") ~ THEN ~ Her kin is the threat of my sea elf brothers but her fate touches my heart. Let us take her to the sea and her home. ~
-==IF_FILE_EXISTS BSUFINCH  IF~ InParty("Sufinch") ~ THEN ~ To rescue the damsel and help the fishermen would be another heroic deed on the pages of the famous hero <CHARNAME>. Anything else my quill will not report. ~
-== BAJANT  IF~ InParty("Ajantis") ~ THEN ~ Justice needs to be done. If only Helm would give us a sign what justice looks like in this case. ~
-==IF_FILE_EXISTS k-roseB  IF~ InParty("k-rose") ~ THEN ~ The fishermen should pay us a bit more for dealing with a sirine. To let her die would not be profitable. ~
-==IF_FILE_EXISTS ~B!GAVINJ~ IF ~InParty("B!GAVIN")~ THEN ~ In love you sometimes must take a risk or you will regret it all your life. We must think of the fishermen and help their case.~
-==IF_FILE_EXISTS ACBreB IF~ InParty("ACBre") ~ THEN  ~ Magic is to be mistrusted in itself. She already received her punishment. The fishermen will gain nothing if we do not bring her to the shore.~
-==BNeera_ IF~ InParty("Neera") ~ THEN ~All magic can go wild under certain circumstances, somebody always will have to suffer the consequences - the mage did already, no need for her to suffer as well.~ 
-== BBRANW  IF~ InParty("Branwen") ~ THEN ~ The Water Queen is an angry goddess, any islander can tell you that. 'tis foolish not to bring her lost child back to her.~
-== BXANNN  IF~ InParty("Xan") ~ THEN ~ Any road we may chose has as little promise as the other. Does it really matter how we persue this case further... ~
-== BCORAN  IF~ InParty("Coran") ~ THEN  ~ Nobody gains anything if we kill this sirine. And my, she has such beautiful eyes.  ~
-== IF_FILE_EXISTS BRH#ISRA  IF~ InParty("RH#ISRA") ~ THEN ~Aye, Sandrah, 'tis not a good day for Mystra nor for Sune as neither love nor magic could help those two lovers. We can only do some good by helping the fishermen now.~
-== BGARRI IF~ InParty("Garrick") ~ THEN  ~  Well, a tale of sad love as any bard could ask for, Give it a happy ending for at least one of the lovers, <CHARNAME>.~
-==IF_FILE_EXISTS BT2Val IF~ InParty("T2Val") ~ THEN ~ Look at it from the point of logic not from a point of justice. Waterdeep's supplies are only guaranteed if we pacify the Water Queen.~
-== BDYNAH  IF~ InParty("Dynaheir") ~ THEN ~ (Mumbles to herself) Will it be the god of murder who leads thy hand or the voice of reason, <CHARNAME>.~
-== BYESLI IF~ InParty("Yeslick") ~ THEN ~ Damned creature should stay in their water and not mingle with men. Throw the fish back in the pool and be done with the mess.~
-==BTIAX IF ~ InParty("Tiax") ~ THEN ~ Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
+== BSHART IF~InParty("Sharteel") ~THEN ~Trust a male to handle critical stuff and you end in a mess. She deserves the fate she faces due to her own stupidity.  ~
+== BVICON  IF~InParty("Viconia") ~THEN ~Just let her perish, she isn't even worth to soil our blades with her blood. ~
+== BKIVAN  IF~InParty("Kivan") ~THEN ~Her kin is the threat of my sea elf brothers but her fate touches my heart. Let us take her to the sea and her home. ~
+==IF_FILE_EXISTS BSUFINCH  IF~InParty("Sufinch") ~THEN ~To rescue the damsel and help the fishermen would be another heroic deed on the pages of the famous hero <CHARNAME>. Anything else my quill will not report. ~
+== BAJANT  IF~InParty("Ajantis") ~THEN ~Justice needs to be done. If only Helm would give us a sign what justice looks like in this case. ~
+==IF_FILE_EXISTS k-roseB  IF~InParty("k-rose") ~THEN ~The fishermen should pay us a bit more for dealing with a sirine. To let her die would not be profitable. ~
+==IF_FILE_EXISTS ~B!GAVINJ~IF ~InParty("B!GAVIN")~THEN ~In love you sometimes must take a risk or you will regret it all your life. We must think of the fishermen and help their case.~
+==IF_FILE_EXISTS ACBreB IF~InParty("ACBre") ~THEN  ~Magic is to be mistrusted in itself. She already received her punishment. The fishermen will gain nothing if we do not bring her to the shore.~
+==BNeera_ IF~InParty("Neera") ~THEN ~All magic can go wild under certain circumstances, somebody always will have to suffer the consequences - the mage did already, no need for her to suffer as well.~
+== BBRANW  IF~InParty("Branwen") ~THEN ~The Water Queen is an angry goddess, any islander can tell you that. 'tis foolish not to bring her lost child back to her.~
+== BXANNN  IF~InParty("Xan") ~THEN ~Any road we may chose has as little promise as the other. Does it really matter how we persue this case further... ~
+== BCORAN  IF~InParty("Coran") ~THEN  ~Nobody gains anything if we kill this sirine. And my, she has such beautiful eyes.  ~
+== IF_FILE_EXISTS BRH#ISRA  IF~InParty("RH#ISRA") ~THEN ~Aye, Sandrah, 'tis not a good day for Mystra nor for Sune as neither love nor magic could help those two lovers. We can only do some good by helping the fishermen now.~
+== BGARRI IF~InParty("Garrick") ~THEN  ~ Well, a tale of sad love as any bard could ask for, Give it a happy ending for at least one of the lovers, <CHARNAME>.~
+==IF_FILE_EXISTS BT2Val IF~InParty("T2Val") ~THEN ~Look at it from the point of logic not from a point of justice. Waterdeep's supplies are only guaranteed if we pacify the Water Queen.~
+== BDYNAH  IF~InParty("Dynaheir") ~THEN ~(Mumbles to herself) Will it be the god of murder who leads thy hand or the voice of reason, <CHARNAME>.~
+== BYESLI IF~InParty("Yeslick") ~THEN ~Damned creature should stay in their water and not mingle with men. Throw the fish back in the pool and be done with the mess.~
+==BTIAX IF ~InParty("Tiax") ~THEN ~Blood shall flows in the name of CYRIC and let those fishermen suffer as well for not seeking OUR blessing!~
 ==IF_FILE_EXISTS B2#TenyJ IF~InParty("Tenya")~THEN~Do not dare to touch Umberlee's child, you fools!~
-== BJAHEI  IF~ InParty("Jaheira") ~ THEN ~ <CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
-==BDorn_ IF~ InParty("Dorn") ~ THEN ~ Be *merciful* and kill her, merciful towards all she may entangle next.~
-== BSAFAN IF~ InParty("Safana") ~ THEN~Who cares about sirines and fisherman at all? We're in the City of Splendour, let's enjoy our stay and leave this damp hole, I say.~
-==BJenli IF~ InParty("CVJenlig") ~ THEN ~Go to sleep with a mind flayer and wake up with your brain devoured. (Hiss) Only you will not wake up again. Manling too stupid for easy reasoning. Throw fish back to water, commander.~
-== BSANDR~ The lovers' fate is one thing but let me remind you that my home town will suffer from a wrong decision in this case. ~
+== BJAHEI  IF~InParty("Jaheira") ~THEN ~<CHARNAME> has learned all there is to learn for <PRO_HIMHER>. I trust <PRO_HISHER> decisions by now with all my heart ~
+==BDorn_ IF~InParty("Dorn") ~THEN ~Be *merciful* and kill her, merciful towards all she may entangle next.~
+== BSAFAN IF~InParty("Safana") ~THEN~Who cares about sirines and fisherman at all? We're in the City of Splendour, let's enjoy our stay and leave this damp hole, I say.~
+==BJenli IF~InParty("CVJenlig") ~THEN ~Go to sleep with a mind flayer and wake up with your brain devoured. (Hiss) Only you will not wake up again. Manling too stupid for easy reasoning. Throw fish back to water, commander.~
+== BSANDR~The lovers' fate is one thing but let me remind you that my home town will suffer from a wrong decision in this case. ~
 END
 ++~We will bring you back to the water immediately, Neerol, enough suffering has come out of this fated love already, we must act on behalf of those who live on.~DO~SetGlobal("WDFishermen","GLOBAL",12) ActionOverride("WDFish5",DestroySelf())GiveItemCreate("WDfibod","CVSandr",1,0,0)~EXIT
 ++~I will leave you here, Neerol, the way out is clear. Go back to your Water Queen if you want. The fishermen must deal with their problem alone, I will not be judge in this case.~DO~SetGlobal("WDFishermen","GLOBAL",22) ~EXIT
