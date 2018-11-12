@@ -21,7 +21,7 @@ END
 ++~There is no way to stop Sandrah when it comes to fight slavery. We will see.~+ 196
 
 CHAIN
-IF WEIGHT #-9~ Global("A7IntroSan","LOCALS",2) See("CVSandr") InParty("CVSandr") ~ THEN A7Afaaq A7SanDrowfree
+IF WEIGHT #-9~Global("A7IntroSan","LOCALS",2) See("CVSandr") InParty("CVSandr") ~THEN A7Afaaq A7SanDrowfree
 ~Your actions confirm your words, my lady. I regained hope when I observed the freeing of those drow captives.~
 DO~SetGlobal("A7IntroSan","LOCALS",3) ~
 ==CVSandrJ~(Sigh) If only your own captivity could be solved as easily as theirs.~

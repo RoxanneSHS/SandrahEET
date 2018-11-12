@@ -3,30 +3,30 @@ ADD_TRANS_TRIGGER ADAngelj 236
 Global("SanSharNewHome","GLOBAL",0)~
 
 EXTEND_BOTTOM ADAngelj 236
-IF~GlobalLT("SanSharInt","GLOBAL",25)~THEN REPLY~ Why, yes, in fact. We travelled together a while.~ GOTO 239
-IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~ Yes. We became lovers for a time.~ GOTO SanAng1
-IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~ Yes. We became lovers...by the way..eh...can you envision yourself as a grandpa of sorts?~ GOTO SanAng5
-IF~GlobalGT("SanSharNewHome","GLOBAL",0)~ THEN REPLY~ I know you are her father and I know well how you treated her. She is a mayor figure now in Waterdeep, best stay out of her way.~GOTO 258
+IF~GlobalLT("SanSharInt","GLOBAL",25)~THEN REPLY~Why, yes, in fact. We travelled together a while.~GOTO 239
+IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~Yes. We became lovers for a time.~GOTO SanAng1
+IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~Yes. We became lovers...by the way..eh...can you envision yourself as a grandpa of sorts?~GOTO SanAng5
+IF~GlobalGT("SanSharNewHome","GLOBAL",0)~THEN REPLY~I know you are her father and I know well how you treated her. She is a mayor figure now in Waterdeep, best stay out of her way.~GOTO 258
 END
 
 APPEND ADAngelj
 IF~~THEN BEGIN SanAng1
 SAY~I... see. I confess that's not what I expected. I... hope you did right by her, chief.~
-IF~~THEN REPLY~Definitely better than you did. No false pretence, I know you are her father and I know well how you treated her.~ GOTO SanAng2
+IF~~THEN REPLY~Definitely better than you did. No false pretence, I know you are her father and I know well how you treated her.~GOTO SanAng2
 IF~~THEN REPLY~I will not talk about the whole thing with you.~GOTO 255
 END
 
 IF~~THEN BEGIN SanAng2
 SAY~Well, yes, from your tone I deduct she'd probably said the truth...It were difficult times and she was a difficult girl. Like so many times I didn't manage it all too well.~
-IF~~THEN REPLY~At least you speak the truth. She hates you like no one else. Pray for it that you do not cross her path again.~ GOTO 258
-IF~GlobalGT("SanSharNewHome","GLOBAL",0)~THEN REPLY~ She is a mayor figure now in Waterdeep, best stay out of her way.~GOTO 258
-IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~ Yes. We became lovers...by the way..eh...can you envision yourself as a grandpa of sorts?~ GOTO SanAng5
+IF~~THEN REPLY~At least you speak the truth. She hates you like no one else. Pray for it that you do not cross her path again.~GOTO 258
+IF~GlobalGT("SanSharNewHome","GLOBAL",0)~THEN REPLY~She is a mayor figure now in Waterdeep, best stay out of her way.~GOTO 258
+IF~GlobalGT("SanSharInt","GLOBAL",25)~THEN REPLY~Yes. We became lovers...by the way..eh...can you envision yourself as a grandpa of sorts?~GOTO SanAng5
 END
 
 IF~~THEN BEGIN SanAng3
-SAY~ I can't imagine myself as a grandpa...but then, I couldn't imagine myself as a father in the first place.~
+SAY~I can't imagine myself as a grandpa...but then, I couldn't imagine myself as a father in the first place.~
 IF~~THEN REPLY~You never were the one and you surely not be the other.~GOTO SanAng6
-IF~~THEN REPLY~You need not to worry - It's irrelevant for you. If Shar-Teel don't kill you if you try to get next to the child than I will.~ GOTO SanAng6
+IF~~THEN REPLY~You need not to worry - It's irrelevant for you. If Shar-Teel don't kill you if you try to get next to the child than I will.~GOTO SanAng6
 END
 
 IF~~THEN BEGIN SanAng4
@@ -38,7 +38,7 @@ END
 IF~~THEN BEGIN SanAng5
 SAY~You impregnated her...you, a Bhaalspawn...great gods...~
 IF~GlobalGT("SanSharInt","GLOBAL",36)~THEN REPLY ~Yes, in deed. Don't forget I'm not alike at all to the one you have served.~GOTO SanAng3
-IF~GlobalLT("SanSharInt","GLOBAL",36)~THEN REPLY ~ Yes, in deed. Don't forget I'm not alike at all to the one you have served.~GOTO SanAng4
+IF~GlobalLT("SanSharInt","GLOBAL",36)~THEN REPLY ~Yes, in deed. Don't forget I'm not alike at all to the one you have served.~GOTO SanAng4
 END
 
 IF~~THEN BEGIN SanAng6
@@ -48,7 +48,7 @@ END
 END
 
 CHAIN
-IF WEIGHT #-6~Global("SanAngelB","LOCALS",1)~ THEN Badangel SanKillSar
+IF WEIGHT #-6~Global("SanAngelB","LOCALS",1)~THEN Badangel SanKillSar
 ~Wait a minute, cleric girl, we needa talk a bit.~
 DO~SetGlobal("SanAngelB","LOCALS",2)~
 ==BSandr~What is it, cretin?~
@@ -64,21 +64,21 @@ DO~SetGlobal("SanAngelB","LOCALS",2)~
 ==BSandr~There surely is but I doubt that I get wiser by talking to you.~EXIT
 
 CHAIN
-IF WEIGHT #-6~Global("SanAngelB","LOCALS",3)~ THEN Badangel SanAngNo
+IF WEIGHT #-6~Global("SanAngelB","LOCALS",3)~THEN Badangel SanAngNo
 ~Ah, good, my beautiful cleric girl, it's probably as close to you as I ever can get.~
 DO~SetGlobal("SanAngelB","LOCALS",4)~
 ==BSandr~Probably.~
-==Badangel~ Eh, don't get me wrong, beauty...I know very well that you are far outa reach for one like me. Still I appreciate the chance to get a full view of your beauty every now and then. Just to look and don't touch, okay?~
+==Badangel~Eh, don't get me wrong, beauty...I know very well that you are far outa reach for one like me. Still I appreciate the chance to get a full view of your beauty every now and then. Just to look and don't touch, okay?~
 ==BSandr~You are refreshingly honest and probably survived so far due to your sense for what is realistic.~
-==Badangel~ I'm sure that tryin' more on you than some harmless glances would stress my good luck beyond reason.~
+==Badangel~I'm sure that tryin' more on you than some harmless glances would stress my good luck beyond reason.~
 ==BSandr~(Laughs) We sure understand each other here.~EXIT
 
 CHAIN
-IF WEIGHT #-6~Global("AngelinWD","LOCALS",1) ~ THEN Badangel WDComand
+IF WEIGHT #-6~Global("AngelinWD","LOCALS",1) ~THEN Badangel WDComand
 ~This place kinda gives me a strange feeling...~
 DO~SetGlobal("AngelinWD","LOCALS",2) ~
 ==BSandr~No wonder, it is the house of the Commander of the Waterdeep Forces.~
-==Badangel~ A kind of colleague then, I mean,...I was once commanding the Flaming Fist for a short while...eh?~
+==Badangel~A kind of colleague then, I mean,...I was once commanding the Flaming Fist for a short while...eh?~
 ==BSandr~You would do good not to compare yourself with the current Waterdeep Commander, just as a friendly advice.~
 ==Badangel~Does he know my background, you think?~
 ==BSandr~SHE knows much more than that, much more than you would like anyone to know of you.~

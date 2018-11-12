@@ -38,16 +38,16 @@ IF WEIGHT #-2~Global("SanAranH","GLOBAL",9)~THEN C-ARANB Sanbunk
 ~I see you dig girls and men alike, Sandrah. Per'nally I prefer girls only. But knowin' both - which ones do you like better?~
 DO~SetGlobal("SanAranH","GLOBAL",10)RealSetGlobalTimer("SanAranT","GLOBAL",5000)~
 ==BSandr~The one willing to suit my needs tonight.~
-==C-Aranb~Ha, say no more...~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==C-Aranb~Ha, say no more...~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 
 INTERJECT_COPY_TRANS C-Aranb 54 Sanaranhaer
-== C-ARANB IF ~InParty("CVSandr")~ THEN~Enigmatic Sandrah. they say in ol' Times o' Trouble there was goddesses walkin' round here.~
-== BHAERDA IF ~InParty("CVSandr")~ THEN~Seems AO left one of them here for us.~
+== C-ARANB IF ~InParty("CVSandr")~THEN~Enigmatic Sandrah. they say in ol' Times o' Trouble there was goddesses walkin' round here.~
+== BHAERDA IF ~InParty("CVSandr")~THEN~Seems AO left one of them here for us.~
 END
 
 INTERJECT_COPY_TRANS C-Aranj 553 Sanaranud
-== C-ARANJ IF ~InParty("CVSandr")~ THEN~Sandrah gal seems to be th' only one who's no trouble with this place.~
-== CVSandrJ IF ~InParty("CVSandr")~ THEN~I am not really enjoying myself here. We must stand together and give each other strength.~
-== C-ARANJ IF ~InParty("CVSandr")~ THEN~Th' strength of one of theirs matron mothers, yeah. Looks like you really fool 'em into thinkin' you're one. Mystra's Soaked Panties, we should be outa here before th' hype's up.~
+== C-ARANJ IF ~InParty("CVSandr")~THEN~Sandrah gal seems to be th' only one who's no trouble with this place.~
+== CVSandrJ IF ~InParty("CVSandr")~THEN~I am not really enjoying myself here. We must stand together and give each other strength.~
+== C-ARANJ IF ~InParty("CVSandr")~THEN~Th' strength of one of theirs matron mothers, yeah. Looks like you really fool 'em into thinkin' you're one. Mystra's Soaked Panties, we should be outa here before th' hype's up.~
 END

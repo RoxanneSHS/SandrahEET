@@ -42,7 +42,7 @@ DO~SetGlobal("SanAdrianC","LOCALS",2)~
 ==BRH#ADR~You either have reasons to stay incognito or you are a really proud woman who has emancipated herself from such social distinctions like aristocracy or rank.~
 ==BSandr~Would that be the common thing we might have you were seeking?~
 ==BRH#ADR~I have no problem to see you as my equal, if that's what you meant.~
-==BSandr~It is not what I meant - but still worthwhile to know.~ DO~IncrementGlobal("SanAdrianL","Global",1)~EXIT
+==BSandr~It is not what I meant - but still worthwhile to know.~DO~IncrementGlobal("SanAdrianL","Global",1)~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanAdrianY","LOCALS",1)~THEN BRH#ADR Cyric
@@ -71,7 +71,7 @@ DO~SetGlobal("SanAdrianL","Global",7)~
 ==BRH#ADR~Yeah, hormones or such.~
 ==BSandr~(Laughs) If you think I am offended to be subject of your fantasies, you are wrong.~
 =~If you want to find out the difference between your dream and reality I will not fight you too hard.~
-==BRH#ADR~Good to know I'm safe from your hammer should I silently slip into your bedroll tonight to find out...~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==BRH#ADR~Good to know I'm safe from your hammer should I silently slip into your bedroll tonight to find out...~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT
 
 
 EXTEND_BOTTOM RH#ADRJ 1874
@@ -81,7 +81,7 @@ END
 APPEND RH#ADRJ
 IF~~THEN BEGIN JuSandr
 SAY~She's a mysterious as Mystra herself and still very much real. I'm an elitist bastard, but I admit she's among the very few I can respect. ~
-IF~~THEN REPLY~Once in while we seem to see things the same, my, what a change.~  EXIT
+IF~~THEN REPLY~Once in while we seem to see things the same, my, what a change.~ EXIT
 IF~~THEN REPLY~Did you really say that - or are you a doppelganger?~EXIT
 END
 END

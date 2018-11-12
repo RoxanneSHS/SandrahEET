@@ -1,6 +1,6 @@
 INTERJECT_COPY_TRANS LK#Arath 2 SanMeetArath
-== CVSANDRJ IF~ InParty("CVSandr")~ THEN~It seems to me like you are not here yourself to enjoy the glorious spectacle.~
-==LK#Arath IF~ InParty("CVSandr")~ THEN~I would not expect to find like minded company right here - yet, everything is possible.~
+== CVSANDRJ IF~InParty("CVSandr")~THEN~It seems to me like you are not here yourself to enjoy the glorious spectacle.~
+==LK#Arath IF~InParty("CVSandr")~THEN~I would not expect to find like minded company right here - yet, everything is possible.~
 =~I see a sparkle in your pretty eye that may well be hatred against what's going on here.~
 END
 
@@ -47,52 +47,52 @@ DO~SetGlobal("SanMeetArath","GLOBAL",7)RealSetGlobalTimer("SanInterArath","LOCAL
 =~I'm not sure I gained more clarity about either of you two now...let me think a bit.~EXIT
 
 CHAIN
-IF~ Global("SanMeetArath","GLOBAL",8)~ THEN CVCatCe SanFindArat1
-~ Miau, miau.~
-DO~ SetGlobal("SanMeetArath","GLOBAL",9)~
-== BSANDR~ Wait a minute, <CHARNAME>, let me take care of that poor limping creature.~
-==BLK#Arat~ You are very caring, Sandrah. Look, it is the hind leg that is injured.~
-== BSANDR~ Come here, poor kitten.~ DO~ ReallyForceSpell("CVCATCE",CLERIC_CURE_MEDIUM_WOUNDS)~
+IF~Global("SanMeetArath","GLOBAL",8)~THEN CVCatCe SanFindArat1
+~Miau, miau.~
+DO~SetGlobal("SanMeetArath","GLOBAL",9)~
+== BSANDR~Wait a minute, <CHARNAME>, let me take care of that poor limping creature.~
+==BLK#Arat~You are very caring, Sandrah. Look, it is the hind leg that is injured.~
+== BSANDR~Come here, poor kitten.~DO~ReallyForceSpell("CVCATCE",CLERIC_CURE_MEDIUM_WOUNDS)~
 END
-++~ You never tire to help suffering creatures, Sandrah.~ + SanFindArat2
-++~ What's the next patient, a three-legged frog?~ + SanFindArat2
+++~You never tire to help suffering creatures, Sandrah.~+ SanFindArat2
+++~What's the next patient, a three-legged frog?~+ SanFindArat2
 
 CHAIN
-IF~~ THEN CVCatCe SanFindArat2
-~ Miau (The cat stretches and tests its healed leg cautiously. It expels a satisfied purring.)~
-==BLK#Arat~ Look at it, Sandrah, it is not a tame one, it is a wild mountain cat. How did it get here?~
-== BSANDR~ Probably brought here by some hunter or menagerie and then thrown out in the street when they found it was injured.~
-==BLK#Arat~ (Sighs) I am afraid you are right, my friend.~
-== BSANDR~ What do you propose to do, Arath, what does your druid knowledge suggest?~
-==BLK#Arat~ It would be cruel to let it here where it does not belong and cannot survive long. Let us take it with us and give it back its freedom when we come to a suitable area in the wilderness.~
-== BSANDR~ That is a wonderful suggestion, I hate it myself when people cage and mistreat those wild creature just to satisfy their hunger for sensations.~
-==Pellig~ * Do not fear, little friend, these are good people. You will be home soon.*~
-==CVCatCe~ Miau.~
+IF~~THEN CVCatCe SanFindArat2
+~Miau (The cat stretches and tests its healed leg cautiously. It expels a satisfied purring.)~
+==BLK#Arat~Look at it, Sandrah, it is not a tame one, it is a wild mountain cat. How did it get here?~
+== BSANDR~Probably brought here by some hunter or menagerie and then thrown out in the street when they found it was injured.~
+==BLK#Arat~(Sighs) I am afraid you are right, my friend.~
+== BSANDR~What do you propose to do, Arath, what does your druid knowledge suggest?~
+==BLK#Arat~It would be cruel to let it here where it does not belong and cannot survive long. Let us take it with us and give it back its freedom when we come to a suitable area in the wilderness.~
+== BSANDR~That is a wonderful suggestion, I hate it myself when people cage and mistreat those wild creature just to satisfy their hunger for sensations.~
+==Pellig~* Do not fear, little friend, these are good people. You will be home soon.*~
+==CVCatCe~Miau.~
 EXIT
 
 
 CHAIN
-IF~Global("SanMeetArath","GLOBAL",11)~ THEN BSandr ArathFreeCat
-~ Arath, do you think this area here is adequate for our mountain cat.~
-DO~ SetGlobal("SanMeetArath","GLOBAL",12)~
-==BLK#Arat~ I was just thinking the same, Sandrah. Maybe you should examine her one last time to make sure all is well and then we can give her back her freedom.~
-== BSANDR~ (Sandrah carefully inspects the cat which Arath has cupped in his hands. She looks into the druid's eyes and smiles.) She is fine, my friend, ready to conquer the wilderness again.~
-==BLK#Arat~ This is a wonderful moment. Thank you for it, my friend.~
-DO~ AddXPObject("Arath",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") Wait(2) DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
+IF~Global("SanMeetArath","GLOBAL",11)~THEN BSandr ArathFreeCat
+~Arath, do you think this area here is adequate for our mountain cat.~
+DO~SetGlobal("SanMeetArath","GLOBAL",12)~
+==BLK#Arat~I was just thinking the same, Sandrah. Maybe you should examine her one last time to make sure all is well and then we can give her back her freedom.~
+== BSANDR~(Sandrah carefully inspects the cat which Arath has cupped in his hands. She looks into the druid's eyes and smiles.) She is fine, my friend, ready to conquer the wilderness again.~
+==BLK#Arat~This is a wonderful moment. Thank you for it, my friend.~
+DO~AddXPObject("Arath",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") Wait(2) DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
 
 CHAIN
-IF~ Global("SanMeetArath","GLOBAL",12)~ THEN CVCatCe SanFindAr3
-~ (The mountain cat carefully inspects the new area around.)~
-DO~ SetGlobal("SanMeetArath","GLOBAL",13)ActionOverride("CVSandr",AddSpecialAbility("CVDra15"))RealSetGlobalTimer("SanInterArath","LOCALS",2700)~
-==BLK#Arat~ This is were you belong, friend. Tread carefully.~
-== BSANDR~ (Sandrah smiles and takes Arath's hand while watching the cat explore its new world.)~
-==Pellig~ *Hush, little one, do not get yourself caught again. Live long and prosperous.*~
-==BLK#Arat~ Huh, there it was again, Sandrah, I think I overheard some kind of telepathic message from Pelligram to that cat.~
-== BSANDR~ You are a druid, do you not communicate with the wild beings all the time?~
-==BLK#Arat~ In some way yes, you are right, Sandrah, but this was different, much clearer than what I receive from a *normal* animal.~
-== BSANDR~ Pelligram surely does not fit into that category. Anyway, I am glad our little guest has now found what she needs, Arath.~
-==BLK#Arat~ So am I. (Instinctively Arath keeps Sandrah's hand in his own while the group continues their march.)~
-==CVCatCe~ Miau.~DO~ ActionOverride("CVCatce",MoveToPointNoInterrupt([0.0]))~ EXIT
+IF~Global("SanMeetArath","GLOBAL",12)~THEN CVCatCe SanFindAr3
+~(The mountain cat carefully inspects the new area around.)~
+DO~SetGlobal("SanMeetArath","GLOBAL",13)ActionOverride("CVSandr",AddSpecialAbility("CVDra15"))RealSetGlobalTimer("SanInterArath","LOCALS",2700)~
+==BLK#Arat~This is were you belong, friend. Tread carefully.~
+== BSANDR~(Sandrah smiles and takes Arath's hand while watching the cat explore its new world.)~
+==Pellig~*Hush, little one, do not get yourself caught again. Live long and prosperous.*~
+==BLK#Arat~Huh, there it was again, Sandrah, I think I overheard some kind of telepathic message from Pelligram to that cat.~
+== BSANDR~You are a druid, do you not communicate with the wild beings all the time?~
+==BLK#Arat~In some way yes, you are right, Sandrah, but this was different, much clearer than what I receive from a *normal* animal.~
+== BSANDR~Pelligram surely does not fit into that category. Anyway, I am glad our little guest has now found what she needs, Arath.~
+==BLK#Arat~So am I. (Instinctively Arath keeps Sandrah's hand in his own while the group continues their march.)~
+==CVCatCe~Miau.~DO~ActionOverride("CVCatce",MoveToPointNoInterrupt([0.0]))~EXIT
 
 CHAIN
 IF WEIGHT #-5~Global("SanMeetArath","GLOBAL",14)~THEN BLK#Arat SanMeetArath6
