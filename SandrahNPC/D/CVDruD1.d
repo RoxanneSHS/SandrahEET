@@ -1,11 +1,11 @@
 BEGIN CVDruD1
 
 IF~Global("DruTlk","CVDru0",0)~THEN BEGIN DrutalkF
-SAY~ You have overcome our defences, destroyers of nature! Intruders!~
-IF~~THEN REPLY~ Who are you to misuse and manipulate these poor xvarts? You send them against each and everyone they see, senselessly fighting and killing - and dying for nothing.~DO~SetGlobal("DruTlk","CVDru0",1)~ GOTO DrutalkF2
+SAY~You have overcome our defences, destroyers of nature! Intruders!~
+IF~~THEN REPLY~Who are you to misuse and manipulate these poor xvarts? You send them against each and everyone they see, senselessly fighting and killing - and dying for nothing.~DO~SetGlobal("DruTlk","CVDru0",1)~GOTO DrutalkF2
 END
 
-IF~~ THEN BEGIN DrutalkF2
+IF~~THEN BEGIN DrutalkF2
 SAY~Dying for nothing? Impertinent intruders, they die to protect nature against the filth you bring from your cities and wars. They are our army against the sins of that so-called *civilization*.~
 =~Scum like you will not understand it, you only understand violence.~
 IF~~THEN DO~Enemy()~EXIT
@@ -32,11 +32,11 @@ DO~SetGlobal("DruidCar","BG4900",3)~
 ==CVDrud3~None of them will have a head in the morning, my friend.~
 ==CVDrud1~Let the dance begin, OUR dance.~
 END
-++~Hold on, what are you up to?~ + Carniv2
+++~Hold on, what are you up to?~+ Carniv2
 ++~You are right, servants of nature, this silly fair only gets peasants drunk, drugged and robbed by gamblers.~+ Carniv2
 ++~Idiotic not to have any guards out here. (Sigh) Friends, it's up to us to prevent the worst once more.~+ Carniv2
 
 CHAIN
-IF~~ THEN CVDrud3 Carniv2
-~Intruders, we are found.~ DO~Enemy()~
+IF~~THEN CVDrud3 Carniv2
+~Intruders, we are found.~DO~Enemy()~
 ==CVDrud1~Attack, little soldiers, attack!!~DO~Enemy()~EXIT
