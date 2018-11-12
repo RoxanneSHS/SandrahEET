@@ -15,4 +15,4 @@ IF~~THEN CVSandrJ SargazD2
 ==CVCoper~PERFECTLY TRUE, LADY PRIESTESS!!! You are on the most dangerous mission of your whole life at this very moment and as close to your death as you ever were.~
 ==CVSandrJ~The stars seldom speak with such exactness and precision about a single fate?~
 ==CVCoper~BUT I DO!!! I am the death you are nearing so inescapable!~
-DO~SetGlobal("Copersan","ar10pb",3) CreateCreature("aacrs066",[2732.3090],5)Kill(Myself)~ EXIT
+DO~SetGlobal("Copersan","ar10pb",3) CreateCreature("aacrs066",[2732.3090],5)Kill(Myself)~EXIT
