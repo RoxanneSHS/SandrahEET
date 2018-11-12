@@ -9,7 +9,7 @@ DO~SetGlobal("Sanalora","GLOBAL",4)RealSetGlobalTimer("SanBantT","LOCALS",3200)~
 ==Bsandr~Sound like a four, or maybe just a three for *stuffiness*.~
 ==Balora~Okay, let Helmits have the ten.~
 ==Bsandr~And Mask?~
-==Balora~Have to think a bit about it...are there priests of Mask anyway?~ EXIT
+==Balora~Have to think a bit about it...are there priests of Mask anyway?~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("Sanalora","GLOBAL",5)~THEN Balora Cyric

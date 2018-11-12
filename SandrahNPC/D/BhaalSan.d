@@ -1,9 +1,9 @@
 CHAIN
-IF WEIGHT #-3~ Global("SanAfterJon","GLOBAL",5)~ THEN Bhaal01 AfterJon
-~ It is time we meet each other, descendent of Mystra.~
+IF WEIGHT #-3~Global("SanAfterJon","GLOBAL",5)~THEN Bhaal01 AfterJon
+~It is time we meet each other, descendent of Mystra.~
 DO~SetGlobal("SanAfterJon","GLOBAL",6)~
-==BSandr~ <CHARNAME> must have taken some of your impression back to Toril when regaining the own soul from Irenicus.~
-==Bhaal01~ You understand much of the mechanisms that were at work when that mageling created this space in the Abyss from my essence.~
+==BSandr~<CHARNAME> must have taken some of your impression back to Toril when regaining the own soul from Irenicus.~
+==Bhaal01~You understand much of the mechanisms that were at work when that mageling created this space in the Abyss from my essence.~
 ==BSandr~With your assistance he created it, I presume. There must be part of your essence in these Realms still.~
 ==Bhaal01~It has returned, if you need to know such detail, returned from those minor spawns that have perished in the race for godhood already.~
 ==BSandr~It will grow with each one who falls...Why do you reveal such to me?~
