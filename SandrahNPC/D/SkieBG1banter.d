@@ -3,10 +3,10 @@ IF WEIGHT #-3~Global("CVJenSkiB","LOCALS",1) ~THEN Bskie CVJenSki1
 ~I wonder how you do it that your nails never break when you open a lock - *I* have to be OOH so careful not to ruin mine.~
 DO~SetGlobal("CVJenSkiB","LOCALS",2)RealSetGlobalTimer("CVSanBantTi","LOCALS",1200) ~
 ==BJenli~(Hiss) Talons useful heritage from old slave days. Can use for open lock, can use for weapon - can use to make mate feel pleasure.~
-==Bskie IF~InParty("Eldoth")~THEN~ Hm, I'm not sure Eldoth would enjoy my showing him affection in this way...~
+==Bskie IF~InParty("Eldoth")~THEN~Hm, I'm not sure Eldoth would enjoy my showing him affection in this way...~
 ==BJenli IF~InParty("Eldoth")~THEN~Eldoth not male worth of any female, even Skie should know better than lower herself so much.~
 ==Bskie IF~InParty("Eldoth")~THEN~Baah, what does a reptile know about TRUE LOVE.~
-==Bskie IF~!InParty("Eldoth")~THEN~ (Giggles) If only this adventuring life would allow me to grow them like yours. And if only this adventuring life would allow me to find a suitable candidate to try your advice...~
+==Bskie IF~!InParty("Eldoth")~THEN~(Giggles) If only this adventuring life would allow me to grow them like yours. And if only this adventuring life would allow me to find a suitable candidate to try your advice...~
 ==BJenli IF~!InParty("Eldoth")~THEN~Good male for breeding never easy to find, not on Prime, not on Astral plane. Easy to loose even when have.~EXIT
 
 CHAIN
@@ -44,7 +44,7 @@ DO~SetGlobal("CVSanSkieHeal","LOCALS",5) RealSetGlobalTimer("CVSanBantTi","LOCAL
 ==Bskie~We should go. Eh...do you by any chance have any spell for a headache? ~EXIT
 
 CHAIN
-IF WEIGHT #-3~Global("X#SummonDora","GLOBAL",4)~ THEN Bskie Sanskpade
+IF WEIGHT #-3~Global("X#SummonDora","GLOBAL",4)~THEN Bskie Sanskpade
 ~WHY...why have you not foreseen and prevented that...you, you, you super clever counsellor?~
 DO~SetGlobal("X#SummonDora","GLOBAL",5)~
 ==BSandr~Hush, we could not have helped a ruling duke in our current status of criminals, so much is true.~
