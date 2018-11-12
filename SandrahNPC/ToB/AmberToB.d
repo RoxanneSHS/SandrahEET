@@ -16,4 +16,4 @@ DO~SetGlobal("M#Ambparent","Global",5)~
 ==BM#Amb25~(Sigh) Maybe or maybe not. Must I care if my *father* even knows of me or not. He may be a seeker of truth, but I'm not sure if any of us gains from the insight I could provide to him.~
 ==BSandr25~Take your time to consider, Amber. Do only what you feel like you want to do. I agree with you, there is no obligation for you to deal with your heritage at all.~
 ==BM#Amb25~That bottle of red wine I saw you purchase recently, is it still in your backpack?~
-==BSandr25~Let us sit over there and share a glass or two. And not talk any more.~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~ EXIT
+==BSandr25~Let us sit over there and share a glass or two. And not talk any more.~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode() ~EXIT

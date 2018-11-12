@@ -4,14 +4,14 @@ IF WEIGHT #-2~Global("SanSodPamp","BD0130",1)~THEN CVSandrJ Sanpamp1
 DO~SetGlobal("SanSodPamp","BD0130",2)~
 =~Once we are finished down here, we may investigate what is going on.~
 END
-++~We are not mercenaries who hire out for any odd job.~ + Sanpamp2
+++~We are not mercenaries who hire out for any odd job.~+ Sanpamp2
 ++~You seem to be utterly restless, my dear.~+ Sanpamp2
 
 CHAIN
 IF~~THEN CVSandrJ Sanpamp2
 ~I am not seeking just another adventure. I am just pretty sure that important tasks are rarely accomplishes by mercenaries.~
-==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~ Sooner or later they will find the need to seek aid from competent side - like the new *hero* of Baldur's Gate.~
-==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~ Sooner or later they will find the need to seek aid from competent side - like the new *heroine* of Baldur's Gate.~
+==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~Sooner or later they will find the need to seek aid from competent side - like the new *hero* of Baldur's Gate.~
+==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~Sooner or later they will find the need to seek aid from competent side - like the new *heroine* of Baldur's Gate.~
 END
 IF~Global("SanRomPath","Global",1)~THEN REPLY~(Laugh) And said hero's companion and counsellor, I presume.~EXIT
 IF~Global("SanRomPath","Global",2)~THEN REPLY~(Laugh) And said heroine's companion and counsellor, I presume.~EXIT
@@ -22,15 +22,15 @@ IF WEIGHT #-2~Global("Sansusp","bd0102",1)~THEN CVSandrJ Sanpamp3
 DO~SetGlobal("Sansusp","bd0102",2)~
 =~The words of the dukes have confirmed that the targets of this Shining Lady were Imoen and - you.~
 END
-++~I am convinced that is no coincidence.~ + Sanpamp4
+++~I am convinced that is no coincidence.~+ Sanpamp4
 ++~Her activities were up north until my presence here in town became widely known after we defeated Sarevok.~+ Sanpamp4
 
 CHAIN
 IF~~THEN CVSandrJ Sanpamp4
 ~A little while ago I warned you that by now you would become the target of people with a certain interest in your heritage.~
 END
-++~You mean she attacked here because I am a bhaalspawn.~ + Sanpamp5
-++~Mine and Imoen's heritage play a role here, you mean.~ + Sanpamp5
+++~You mean she attacked here because I am a bhaalspawn.~+ Sanpamp5
+++~Mine and Imoen's heritage play a role here, you mean.~+ Sanpamp5
 ++~It was good that you did not bring that topic into the discussion with the dukes.~+ Sanpamp5
 
 CHAIN
@@ -54,7 +54,7 @@ IF~~THEN CVSandrJ SodImoMiss2
 ~We received more and more hints that the Shining Lady may be a Bhaalspawn herself, like the both of you. We may find ourselves fighting at two fronts in the end.~
 END
 ++~You're saying that the dukes may need me but don't trust me?~+ SodImoMiss3
-++~If anything goes wrong in our fight against her crusade, the *good* people may turn against us, saying we're traitors and the common blood was thicker.~ + SodImoMiss3
+++~If anything goes wrong in our fight against her crusade, the *good* people may turn against us, saying we're traitors and the common blood was thicker.~+ SodImoMiss3
 
 CHAIN
 IF~~THEN CVSandrJ SodImoMiss3
@@ -66,16 +66,16 @@ IF WEIGHT #-2~Global("SanSodQuest","Global",3)~THEN CVSandrJ SodDreams1
 ~You have this worried look after a sleep, <CHARNAME>, your healer knows it just to well.~
 DO~SetGlobal("SanSodQuest","Global",4)~
 END
-++~Ah, it's nothing new, dreams like I had them before.~ + SodDreams2
-++~I will not even attempt to hide it, you know me too well - it's dreams again.~ + SodDreams2
-++~Oh, just shut up!~DO~IncrementGlobal("Sanpoints","Global",-1)~ + SodDreams2
+++~Ah, it's nothing new, dreams like I had them before.~+ SodDreams2
+++~I will not even attempt to hide it, you know me too well - it's dreams again.~+ SodDreams2
+++~Oh, just shut up!~DO~IncrementGlobal("Sanpoints","Global",-1)~+ SodDreams2
 
 CHAIN
 IF~~THEN CVSandrJ SodDreams2
 ~Tell me what the dream was about. Just share it with me.~
 END
-++~Sarevok, he told me that it's not over, that it will never be over.~ + SodDreams3
-++~Sarevok but he was telling me what you told me before, that it's not over and it will probably never be.~ + SodDreams4
+++~Sarevok, he told me that it's not over, that it will never be over.~+ SodDreams3
+++~Sarevok but he was telling me what you told me before, that it's not over and it will probably never be.~+ SodDreams4
 
 CHAIN
 IF~~THEN CVSandrJ SodDreams3
@@ -103,13 +103,13 @@ IF~~THEN CVSandrJ SodDreams6
 ~Good if I do - to protect you and Imoen from him, we must start to THINK like him. If we find out what he wants, we may prevent it.~EXIT
 
 CHAIN
-IF~ Global("SanPilRidl","BD1200",1)~THEN CVSandrJ Pillrid1
+IF~Global("SanPilRidl","BD1200",1)~THEN CVSandrJ Pillrid1
 ~"Sometimes it is wise to think backwards."~
 DO~SetGlobal("SanPilRidl","BD1200",2)~
 =~It is a quote from that Tome of Ancient Knowledge that we found in the library earlier on this level.~
 END
-++~(Ironic) Very helpful, thank you.~DO~ IncrementGlobal("Sanpoints","Global",-1)~EXIT
-++~You see a connection to this pillar riddle here?~ DO~ IncrementGlobal("Sanpoints","Global",1)~ + Pillrid2
+++~(Ironic) Very helpful, thank you.~DO~IncrementGlobal("Sanpoints","Global",-1)~EXIT
+++~You see a connection to this pillar riddle here?~DO~IncrementGlobal("Sanpoints","Global",1)~+ Pillrid2
 
 CHAIN
 IF~~THEN CVSandrJ Pillrid2
@@ -123,7 +123,7 @@ IF WEIGHT #-2~Global("bd_spawn_cultist","bd7220",2)~THEN CVSandrJ Fountemp1
 ~Coincidence? A temple of Cyric close to the bridge where your so-called father was defeated...~
 DO~SetGlobal("bd_spawn_cultist","bd7220",3)~
 END
-++~Killed by your grandfather, who was accompanied by your grandmother.~ + Fountemp2
+++~Killed by your grandfather, who was accompanied by your grandmother.~+ Fountemp2
 ++~The mad god needed a place to celebrate his victory.~+ Fountemp2
 ++~This place looks much older than the relatively short reign of Cyric so far. He became a god only after the Time of Troubles.~+ Fountemp2
 
@@ -145,16 +145,16 @@ IF WEIGHT #-2~Global("SanSodQuest","Global",5) Global("SanHeph","LOCALS",1)~THEN
 ~*Sandrah studies the annotated crusader tract you found on a dead woman.*~
 DO~SetGlobal("SanSodQuest","Global",6)~
 END
-++~What do you make out of that?~ + SodHeph2
-++~You see something that I have missed?~ + SodHeph2
+++~What do you make out of that?~+ SodHeph2
+++~You see something that I have missed?~+ SodHeph2
 
 CHAIN
 IF~~THEN CVSandrJ  SodHeph2
 ~Just like the mighty bhaalspawn from Baldur's Gate is not alone, this is true for the Shining Lady as well. We should not ignore those close to her.~
 END
-++~The Hooded Man?~ + SodHeph3
-++~That mage who seemed to be her advisor?~ + SodHeph3
-++~Whom do you talk of?~ + SodHeph3
+++~The Hooded Man?~+ SodHeph3
+++~That mage who seemed to be her advisor?~+ SodHeph3
+++~Whom do you talk of?~+ SodHeph3
 
 CHAIN
 IF~~THEN CVSandrJ  SodHeph3
@@ -162,7 +162,7 @@ IF~~THEN CVSandrJ  SodHeph3
 =~If what is written here is true, he has triggered a large part of the events we see unravel. And he may have his own agenda...~
 END
 ++~I will try to remember the name.~EXIT
-++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~EXIT
 ++~We neither know enough about any of our opponents yet, it seems.~EXIT
 
 CHAIN
@@ -170,16 +170,16 @@ IF WEIGHT #-2~Global("SanSodQuest","Global",5) Global("SanHeph","LOCALS",2)~THEN
 ~*Sandrah studies the ritual notes you found on a dead cultist.*~
 DO~SetGlobal("SanSodQuest","Global",6)~
 END
-++~What do you make out of that?~ + SodHeph12
-++~You see something that I have missed?~ + SodHeph12
+++~What do you make out of that?~+ SodHeph12
+++~You see something that I have missed?~+ SodHeph12
 
 CHAIN
 IF~~THEN CVSandrJ  SodHeph12
 ~Just like the mighty Bhaalspawn from Baldur's Gate is not alone, this is true for the Shining Lady as well. We should not ignore those close to her. Even if she shines, there is darkness close to her-~
 END
-++~The Hooded Man?~ + SodHeph13
-++~That mage who seemed to be her advisor?~ + SodHeph13
-++~Whom do you talk of?~ + SodHeph13
+++~The Hooded Man?~+ SodHeph13
+++~That mage who seemed to be her advisor?~+ SodHeph13
+++~Whom do you talk of?~+ SodHeph13
 
 CHAIN
 IF~~THEN CVSandrJ  SodHeph13
@@ -187,7 +187,7 @@ IF~~THEN CVSandrJ  SodHeph13
 =~If what I think is true, he has triggered a large part of the events we see unravel. And he may have his own agenda...~
 END
 ++~I will try to remember the name.~EXIT
-++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~I count on MY advisor to keep her eyes open for more facts about the guy.~DO~IncrementGlobal("Sanpoints","Global",1)~EXIT
 ++~We neither know enough about any of our opponents yet, it seems.~EXIT
 
 CHAIN
@@ -196,21 +196,21 @@ IF WEIGHT #-2~Global("SanSoDBook","LOCALS",1)~THEN CVSandrJ Portal1
 DO~SetGlobal("SanSoDBook","LOCALS",2)~
 =~Drangonspear Castle is a place with a long history and our opponent has chosen it for what has happened there long ago.~
 END
-++~Not a bad idea - you would not issue it if you had not something more specific in mind already. Right?~ + Portal2
-++~I saw you study that book we found, did it tell you something worthwhile sharing with us?~ + Portal2
-++~Your tome? It has something to tell that appears to be useful for us today?~ + Portal2
+++~Not a bad idea - you would not issue it if you had not something more specific in mind already. Right?~+ Portal2
+++~I saw you study that book we found, did it tell you something worthwhile sharing with us?~+ Portal2
+++~Your tome? It has something to tell that appears to be useful for us today?~+ Portal2
 
 CHAIN
 IF ~~THEN CVSandrJ Portal2
 ~The castle was infiltrated more than once from creatures out of Avernus. There is a portal connecting the planes and although it is dormant, it can be reactivated again. Just like the Shining Lady would be required to do for her crusade against the Abyss.~
 END
-++~We must prevent that. Once opened, creatures can use it in both directions, Avernus will infiltrate Toril.~ + Portal3
+++~We must prevent that. Once opened, creatures can use it in both directions, Avernus will infiltrate Toril.~+ Portal3
 
 CHAIN
 IF ~~THEN CVSandrJ Portal3
 ~It has happened like this before, so much is history. What I was aiming at was the method required to activate the portal again. This may be why she is so much interested in you.~
 END
-++~I have this key, you mean?~ + Portal4
+++~I have this key, you mean?~+ Portal4
 
 CHAIN
 IF ~~THEN CVSandrJ Portal4
@@ -227,7 +227,7 @@ DO~SetGlobal("SanBhaal","bd2000",3)~
 ==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~Here we are, Cyric's granddaughter and a son of Bhaal...~
 ==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~Here we are, Cyric's granddaughter and a daughter of Bhaal...~
 END
-++~Here it all began - or ended.~ + BhalBri2
+++~Here it all began - or ended.~+ BhalBri2
 ++~Here it all began - or ended. And we are holding each other's hand where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
 ++~Here it all began - or ended. And we stand here united where they battled for life and death.~DO~IncrementGlobal("Sanpoints","Global",1)~+ BhalBri2
 
@@ -247,22 +247,22 @@ IF ~~THEN CVSandrJ BhalBri3
 CHAIN
 IF ~~THEN CVSandrJ BhalBri4
 ~(She responds passionately to your kiss.)~
-=~ After all, it is just another bridge we cross. We do what must be done.~EXIT
+=~After all, it is just another bridge we cross. We do what must be done.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanBDdream2","LOCALS",1) ~THEN CVSandrJ BDdream2a
 ~Another meaningful dream?~
 DO~SetGlobal("SanBDdream2","LOCALS",2)~
 END
-++~How can it be meaningful if the meaning escapes me?~ + BDdream2b
-++~You read me more and more like an open book, is that good or bad?~  + BDdream2b
+++~How can it be meaningful if the meaning escapes me?~+ BDdream2b
+++~You read me more and more like an open book, is that good or bad?~ + BDdream2b
 
 CHAIN
 IF ~~THEN CVSandrJ BDdream2b
 ~If you share your vision with me, we may find it out together.~
 END
-++~Not this time, I'm too tired to talk.~DO ~IncrementGlobal("Sanpoints","Global",-1)~ EXIT
-++~What do you make out of this...(You tell her the dream.)~ + BDdream2c
+++~Not this time, I'm too tired to talk.~DO ~IncrementGlobal("Sanpoints","Global",-1)~EXIT
+++~What do you make out of this...(You tell her the dream.)~+ BDdream2c
 
 CHAIN
 IF ~~THEN CVSandrJ BDdream2c
@@ -283,17 +283,17 @@ IF WEIGHT #-2~Global("SanBdInfiltrate","Global",1)~THEN CVSandrJ BDInfil2
 ~(Sandrah shakes her head and mumbles to herself) He did not want you there...~
 DO~SetGlobal("SanBdInfiltrate","Global",2)~
 END
-++ ~You somehow convinced me it would be right to go with Caelar.~ + BDInfil3
-++ ~You really want us to step right into the dragon's mouth, right.~ + BDInfil3
+++ ~You somehow convinced me it would be right to go with Caelar.~+ BDInfil3
+++ ~You really want us to step right into the dragon's mouth, right.~+ BDInfil3
 
 CHAIN
 IF~~THEN CVSandrJ BDInfil3
 ~It would have been the safest place you could be in the storm that is now coming. No stray arrow or misfired spell would have had a chance to hit you, she would have prevented it.~
 =~But HE spoiled it.~
 END
-++~Your *friend* de Lancie?~ + BDInfil4
-++~The dwarven tin head?~ + BDInfil4
-++~Whom are you accusing?~ + BDInfil4
+++~Your *friend* de Lancie?~+ BDInfil4
+++~The dwarven tin head?~+ BDInfil4
+++~Whom are you accusing?~+ BDInfil4
 
 CHAIN
 IF~~THEN CVSandrJ BDInfil4
@@ -307,24 +307,24 @@ END
 CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",7)~THEN CVSandrJ BDFin1
 ~We have seen awfully little from Hephernaan recently. Is he preparing his trap for you - and for her?~
-DO~ SetGlobal("SanSodQuest","Global",8)~
+DO~SetGlobal("SanSodQuest","Global",8)~
 END
 ++~He is after my bhaalblood and so is she, what may be his hidden agenda you wish so much to believe in?~+ BDFin2
-++~Both of them want me to open that damned portal, I fail to see the difference.~ + BDFin2
+++~Both of them want me to open that damned portal, I fail to see the difference.~+ BDFin2
 
 CHAIN
 IF~~THEN CVSandrJ BDFin2
 ~I have been a bad counsellor, just once again. I should have seen it earlier.~
 END
-++~Seen what? ~ + BDFin3
-++~Spit it out before it consumes you!~ + BDFin3
+++~Seen what? ~+ BDFin3
+++~Spit it out before it consumes you!~+ BDFin3
 
 CHAIN
 IF~~THEN CVSandrJ BDFin3
 ~We know Hephernaan serves some other dark master...a portal works in two directions...she wants to go down to bring destruction to Avernus - he wants the opposite.~
 END
 ++~Eh? You mean he wants to open the door for those dark forces to come once again to the Prime?~+ BDFin4
-++~You may be right, anyhow, our action is the same in both cases - we must prevent it.~ + BDFin4
+++~You may be right, anyhow, our action is the same in both cases - we must prevent it.~+ BDFin4
 
 CHAIN
 IF~~THEN CVSandrJ BDFin4
@@ -334,11 +334,11 @@ CHAIN
 IF WEIGHT #-2~Global("SanSodQuest","Global",9)~THEN CVSandrJ BDJail1
 ~My besta friend Imoen - there are still friends you can always count on.~
 =~Without her help I could not have made it to you in time.~
-DO~ SetGlobal("SanSodQuest","Global",10)~
+DO~SetGlobal("SanSodQuest","Global",10)~
 END
-++~Yes, there are such friends. Imoen - and you.~DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~Yes, there are such friends. Imoen - and you.~DO~IncrementGlobal("Sanpoints","Global",1)~EXIT
 ++~I never doubted her loyalty, my *sister* will always be there for me.~EXIT
-++~I never doubted her loyalty, hers and yours.~ DO~IncrementGlobal("Sanpoints","Global",1)~ EXIT
+++~I never doubted her loyalty, hers and yours.~DO~IncrementGlobal("Sanpoints","Global",1)~EXIT
 
 
 //______________________________________________________________________
@@ -347,16 +347,16 @@ ADD_TRANS_TRIGGER BDLiia 0
 ~!InParty("CVSandr")~
 
 EXTEND_BOTTOM BDLiia 0
-IF~InParty("CVSandr")~THEN REPLY~Duke Jannath, what is all this about?~ DO~SetGlobal("bd_001_plot","bd0103",9) TriggerActivation("TranBD0100a",TRUE) TriggerActivation("TranBD0100b",TRUE) TriggerActivation("imoeninfo1",TRUE) AddMapNoteColor([505.225],64543,GREEN) AddMapNoteColor([1275.760],64543,GREEN)~GOTO 1
+IF~InParty("CVSandr")~THEN REPLY~Duke Jannath, what is all this about?~DO~SetGlobal("bd_001_plot","bd0103",9) TriggerActivation("TranBD0100a",TRUE) TriggerActivation("TranBD0100b",TRUE) TriggerActivation("imoeninfo1",TRUE) AddMapNoteColor([505.225],64543,GREEN) AddMapNoteColor([1275.760],64543,GREEN)~GOTO 1
 END
 
 I_C_T BDLiia 1 BDImoenSanHurt
 ==CVSandrJ IF~InParty("CVSandr")~THEN~*Sandrah has already knelt down inspecting Imoen's body. Her face shows a desperate expression due to the condition of her *bestest* friend.*~
 ==BDLiia IF~InParty("CVSandr")~THEN~You are a healer of some renown, I am aware, but those are not easy cases.~
-==CVSandrJ IF~InParty("CVSandr")~THEN~Poisoned weapons as far as I can say.~ END
+==CVSandrJ IF~InParty("CVSandr")~THEN~Poisoned weapons as far as I can say.~END
 
 EXTEND_BOTTOM BDeltan 4
-IF~InParty("CVSandr")~THEN REPLY~ That would be a question for my learned counsellor, Sandrah of Waterdeep, right?~EXTERN CVSandrJ BDeltantalk
+IF~InParty("CVSandr")~THEN REPLY~That would be a question for my learned counsellor, Sandrah of Waterdeep, right?~EXTERN CVSandrJ BDeltantalk
 END
 
 CHAIN
@@ -366,7 +366,7 @@ IF~~THEN CVSandrJ BDeltantalk
 ==CVSandrJ~Be assured that I do no such thing, Duke Eltan, the slight suspicion I have would not help us currently and rather confuse some people. It would not concern your city but only <CHARNAME> anyway.~
 ==BDEltan~I trust Elminster's daughter to make the right choices here. So where were we?~EXTERN BDEltan 1
 
-ADD_TRANS_ACTION BDMadele BEGIN 7 END BEGIN 0 END ~ SetGlobal("SanMadele","Global",1)~
+ADD_TRANS_ACTION BDMadele BEGIN 7 END BEGIN 0 END ~SetGlobal("SanMadele","Global",1)~
 
 I_C_T BDKhalid 36 SanSodHarpHere
 ==CVSandrJ IF~InParty("CVSandr") CheckStatLT(Player1,15,INT)CheckStatLT(Player1,14,WIS) !Class(Player1,BARD_ALL)~THEN~Khalid, I know that you and Jaheira are Harpers. Do you really expect me to believe you are here by coincidence?~
@@ -377,7 +377,7 @@ I_C_T BDKhalid 36 SanSodHarpHere
 END
 
 EXTEND_BOTTOM BDDOsia 6
-IF~InParty("CVSandr")Global("SanHelpIlm","bd3000",0)~THEN REPLY~ That would be a task for my experienced healer, Sandrah of Waterdeep.~EXTERN CVSandrJ Ilmheal1
+IF~InParty("CVSandr")Global("SanHelpIlm","bd3000",0)~THEN REPLY~That would be a task for my experienced healer, Sandrah of Waterdeep.~EXTERN CVSandrJ Ilmheal1
 END
 
 CHAIN
@@ -393,7 +393,7 @@ IF~Global("SanHelpIlm","bd3000",2)~THEN CVSandrJ Ilmheal2
 
 I_C_T BDNuber 2 SanNubSod
 ==CVSandrJ IF~InParty("CVSandr") Global("BD_Skie_Plot","Global",1)~THEN~We are looking for a girl who is almost babbling as much as you do. Have you seen her?~
-==BDNuber IF~InParty("CVSandr") Global("BD_Skie_Plot","Global",1)~THEN~ We have a common goal, oh heroes, I'm looking for such a girl myself.~END
+==BDNuber IF~InParty("CVSandr") Global("BD_Skie_Plot","Global",1)~THEN~We have a common goal, oh heroes, I'm looking for such a girl myself.~END
 
 I_C_T BDCaelar 39 SanBdInfiltrate
 ==CVSandrJ IF~InParty("CVSandr")~THEN~(She speaks loud enough for your allies to hear but not as loud as for the enemies to catch her words.)~

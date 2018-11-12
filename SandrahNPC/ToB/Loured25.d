@@ -2,7 +2,7 @@ BEGIN Loured25
 
 IF~Global("Loureedjoined","GLOBAL",2) AreaCheck("CVUmo5") GlobalGT("SanBeginRTF","GLOBAL",1)~THEN BEGIN JoinRTF1
 SAY~Do you remember me, <CHARNAME>? I followed your advice and found a new home here in Undermountain. I was just contemplating to explore the surface world for a while.~
-IF~~THEN REPLY~You are Sendai's daughter, aren't you, how do you fare?~ GOTO JoinRTF2
+IF~~THEN REPLY~You are Sendai's daughter, aren't you, how do you fare?~GOTO JoinRTF2
 IF~~THEN REPLY~I met you once but I can no longer remember the details.~GOTO JoinRTF2
 IF~~THEN REPLY~Leave me alone, drow bitch.~EXIT
 END
@@ -19,11 +19,11 @@ IF WEIGHT #-3~AreaCheck("Ar6100") Global("LouaftSend","ar6100",1) ~THEN Loured25
 ~So you reappear victoriously from her lair. I take it the Bhaalspawn is no more? I may be free of the tyrant?~
 END
 ++~Give me a good reason why I should not kill you like the others of your kin in this place.~+ Advance2
-++~If I am not mistaken, you're not in league with the drow in this place?~ + Advance2
+++~If I am not mistaken, you're not in league with the drow in this place?~+ Advance2
 
 CHAIN
 IF~~THEN Loured25 Advance2
-~ Ha, I have little in common with those drow and their allies, especially not with Sendai - even if I may rightfully call myself the owner and heiress of this fortress now.~
+~Ha, I have little in common with those drow and their allies, especially not with Sendai - even if I may rightfully call myself the owner and heiress of this fortress now.~
 DO~SetGlobal("LouaftSend","ar6100",2) SetGlobal("Loureedjoined","GLOBAL",2)~
 ==CVSan25J~Her heiress...her daughter...?~
 ==Loured25~One has not a choice in the own parents, many of my kin have envied me for that monstrous mother, fools that they are.~
@@ -34,14 +34,14 @@ DO~SetGlobal("LouaftSend","ar6100",2) SetGlobal("Loureedjoined","GLOBAL",2)~
 ==CVSan25J~What will you do now?~
 ==Loured25~I will not take possession of this dreadful place and I cannot go to the Underdark where only death awaits me after my mother's failure.~
 END
-++~Why don't you join us, you seem to be quite a capable mage and fighter?~ + Advance3
-++~I know of a shelter for people like you, an enclave of Eilistraee where they will welcome you.~ + Advance4
+++~Why don't you join us, you seem to be quite a capable mage and fighter?~+ Advance3
+++~I know of a shelter for people like you, an enclave of Eilistraee where they will welcome you.~+ Advance4
 
 CHAIN
 IF~~THEN Loured25 Advance3
 ~As long as the struggle for Bhaal's heritage rages I will not partake in it. I have faith that you, <CHARNAME>, may end it finally. Should you still remember me by that time I may consider to join you, but not now.~
 END
-++~Too bad, but I respect your choice. I know of a shelter for people like you, an enclave of Eilistraee where they will welcome you.~ + Advance4
+++~Too bad, but I respect your choice. I know of a shelter for people like you, an enclave of Eilistraee where they will welcome you.~+ Advance4
 
 CHAIN
 IF~~THEN Loured25 Advance4

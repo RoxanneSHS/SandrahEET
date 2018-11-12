@@ -25,8 +25,8 @@ IF~~THEN CVTalos reveil2
 ==CVSan25J~*A traitor in your midst* - Do not try to seed mistrust between companions, Talos. My loyalty to <CHARNAME> will not break. It is with <PRO_HIMHER> that we will end this *game* and achieve the solution that serves the Prime. Our plane is not a playground for the gods and we are not their pawns!!~
 ==CVTalos~Maybe such is true for you, little Mystra, seeing the proof you have given us today...I wonder who else will get the story right...interesting.~
 ==CVSan25J~You still think it is a game? You just lost a round, is it that for you?~
-==CVTalos IF~DifficultyGT(NORMAL)~THEN~ENOUGH! My anger is growing - the Storm is approaching.~ DO~ StartCutSceneMode() Wait(2) ScreenShake([905.1965],20) ApplyDamagePercent(Player1,49,CRUSHING) Wait(2) ApplyDamagePercent(Player2,49,CRUSHING) Wait(2) ApplyDamagePercent(Player3,49,CRUSHING) Wait(2) ApplyDamagePercent(Player4,49,CRUSHING) Wait(2) ApplyDamagePercent(Player5,49,CRUSHING) Wait(2) ApplyDamagePercent(Player6,49,CRUSHING) Wait(2) EndCutSceneMode() ReallyForceSpell(Myself,DRYAD_TELEPORT)~
-==CVTalos IF~DifficultyLT(HARD)~THEN~ENOUGH! My anger is growing - the Storm is approaching.~ DO~ StartCutSceneMode() Wait(2) ScreenShake([905.1965],20) ApplyDamagePercent(Player1,70,CRUSHING) Wait(2) ApplyDamagePercent(Player2,70,CRUSHING) Wait(2) ApplyDamagePercent(Player3,70,CRUSHING) Wait(2) ApplyDamagePercent(Player4,70,CRUSHING) Wait(2) ApplyDamagePercent(Player5,70,CRUSHING) Wait(2) ApplyDamagePercent(Player6,70,CRUSHING) Wait(2) EndCutSceneMode() ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
+==CVTalos IF~DifficultyGT(NORMAL)~THEN~ENOUGH! My anger is growing - the Storm is approaching.~DO~StartCutSceneMode() Wait(2) ScreenShake([905.1965],20) ApplyDamagePercent(Player1,49,CRUSHING) Wait(2) ApplyDamagePercent(Player2,49,CRUSHING) Wait(2) ApplyDamagePercent(Player3,49,CRUSHING) Wait(2) ApplyDamagePercent(Player4,49,CRUSHING) Wait(2) ApplyDamagePercent(Player5,49,CRUSHING) Wait(2) ApplyDamagePercent(Player6,49,CRUSHING) Wait(2) EndCutSceneMode() ReallyForceSpell(Myself,DRYAD_TELEPORT)~
+==CVTalos IF~DifficultyLT(HARD)~THEN~ENOUGH! My anger is growing - the Storm is approaching.~DO~StartCutSceneMode() Wait(2) ScreenShake([905.1965],20) ApplyDamagePercent(Player1,70,CRUSHING) Wait(2) ApplyDamagePercent(Player2,70,CRUSHING) Wait(2) ApplyDamagePercent(Player3,70,CRUSHING) Wait(2) ApplyDamagePercent(Player4,70,CRUSHING) Wait(2) ApplyDamagePercent(Player5,70,CRUSHING) Wait(2) ApplyDamagePercent(Player6,70,CRUSHING) Wait(2) EndCutSceneMode() ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
 
 
 
@@ -48,7 +48,7 @@ IF~~THEN CVTiamal reveil4
 ~Trust only your own judgement of the creatures you meet, Godchild.~
 DO~GiveItemCreate("chan20",Player1,1,0,0)~
 ==CVTiamal~Yes, and the judgement of the loyal counsellor at your side.~
-DO~ ActionOverride("CVSandr",AddSpecialAbility("cvdra11"))  ActionOverride("CVSandr",AddSpecialAbility("cvdra12"))~
+DO~ActionOverride("CVSandr",AddSpecialAbility("cvdra11"))  ActionOverride("CVSandr",AddSpecialAbility("cvdra12"))~
 ==CVTiamal~Live long and prosperous.~
 DO~SetGlobal("Leave","LOCALS",2)~EXIT
 
@@ -59,17 +59,17 @@ IF~Global("CVShar","AR6108",1)~THEN CVSharg reveil5
 ~Give me any good reason why I shall not destroy you here and now!~
 DO~IncrementGlobal("SanGodInvolve","GLOBAL",1)~
 ==CVSan25J~Let me guess, dark lady, we have just taken your *champion* out of the race.~
-==CVSharg~ AAARGH...~
+==CVSharg~AAARGH...~
 ==CVSan25J~My goddess and yourself should not try to affect each other, for all our sake. You and Mystra complement each other, Shar.~
 ==CVSharg~You see clear and sharp, daughter of the long bloodline. Ever since the Weave was split in the time of Mystril's fall, she and me needed to find a way to exist side by side.~
 ==CVSan25J~We did what we had to do with Sendai - it was not done for Mystra nor was it done against Shar. None of you should be involved in this at all.~
 ==CVSharg~I am glad you are one who can be reasoned with. I would agree if it were not for your own involvement and thus Mystra's involvement here.~
 ==CVSan25J~It was never in my goddess' interest nor her command that I am at <CHARNAME>'s side. As your involvement has ended today as well we should separate peacefully.~
 ==VICON25J IF~InParty("Viconia")~THEN~My goddess, she speaks the truth. She always has and she has been true to your servant at all times.~
-==CVSharg IF~InParty("Viconia")~THEN~ Viconia, my priestess, I trust your judgement. Is she the one with Khalindra's blood you were to search?~
+==CVSharg IF~InParty("Viconia")~THEN~Viconia, my priestess, I trust your judgement. Is she the one with Khalindra's blood you were to search?~
 ==VICON25J IF~InParty("Viconia")~THEN~She is and she judges no one by race or faith but only by a person's deeds and alignment.~
-==CVSharg IF~InParty("Viconia")~THEN~ Viconia, you will be rewarded for your service as you deserve. You have my permission to continue with them.~
+==CVSharg IF~InParty("Viconia")~THEN~Viconia, you will be rewarded for your service as you deserve. You have my permission to continue with them.~
 ==CVSharg~Let me hear the Bhaalspawn's opinion on what his companions' wish.~
 END
-++~I seek no conflict with you, Shar. Let us part peacefully.~ DO~SetGlobal("CVShar","AR6108",2)~EXIT
+++~I seek no conflict with you, Shar. Let us part peacefully.~DO~SetGlobal("CVShar","AR6108",2)~EXIT
 ++~You were the one to seek for this conflict, you will pay for it.~DO~SetGlobal("CVShar","AR6108",3)~EXIT

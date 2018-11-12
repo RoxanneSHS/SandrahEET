@@ -1,16 +1,16 @@
 CHAIN
 IF~Global("SanJon25","GLOBAL",2)~THEN BJonel25 MystraInv
-~ Strangely enough you have remained silent to <CHARNAME>'s decision to take me with you.~
+~Strangely enough you have remained silent to <CHARNAME>'s decision to take me with you.~
 DO~SetGlobal("SanJon25","GLOBAL",3)~
 ==BSandr25~Had you expected my rejection, mage?~
 ==BJonel25~You are not afraid of me, you never was. You might think you have it all under control since you overwhelmed me once before...~
 ==BSandr25~Twice.~
 ==BJonel25~I know well who dealt the blows to my previous existence...~
-==BSandr25~...and your previous plans.~ DO~ClearAllActions() StartMovie("CVJonde")~EXIT
+==BSandr25~...and your previous plans.~DO~ClearAllActions() StartMovie("CVJonde")~EXIT
 
 CHAIN
 IF~Global("SanJon25","GLOBAL",3)~THEN BJonel25 MystraInv2
-~ I had understood the gods were not to interfere with the Bhaalspawn matters in any way.~
+~I had understood the gods were not to interfere with the Bhaalspawn matters in any way.~
 DO~SetGlobal("SanJon25","GLOBAL",4)~
 ==BSandr25~I can only stress the point that the Prime is our plane, the plane of the mortals, and not the playground of some more powerful creatures to misuse it.~
 ==BJonel25~Still you are her, the servant of one who has always had an interest in the Bhaal matter, even when still in her human incarnation. Are you trying to tell me that Mystra does not play her role here?~
@@ -23,7 +23,7 @@ DO~SetGlobal("SanJon25","GLOBAL",4)~
 
 CHAIN
 IF~Global("SanJon25","GLOBAL",6)~THEN BJonel25 SanJon1
-~ I admit I have underestimated your role before, concentrating on the Bhaalspawns you accompany. Now an insider to this group I see your counselling of <CHARNAME> and the power <PRO_HESHE> gets from the companions.~
+~I admit I have underestimated your role before, concentrating on the Bhaalspawns you accompany. Now an insider to this group I see your counselling of <CHARNAME> and the power <PRO_HESHE> gets from the companions.~
 DO~SetGlobal("SanJon25","GLOBAL",7)~
 ==BSandr25~I have often found that our foes in their hunger for power oversee the virtues of true friends, companions and followers. Armies of thralls and mercenaries have fallen before our united will and capability.~
 ==BJonel25~The only one I could trust finally was the one bound to me by blood, Bodhi. In that respect you may be right.~
@@ -35,7 +35,7 @@ DO~SetGlobal("SanJon25","GLOBAL",7)~
 
 CHAIN
 IF~Global("SanHealJon","LOCALS",2)~THEN BJonel25 SanJonHeal
-~ I had never anticipated to receive a healing spell from a priestess of Mystra.~
+~I had never anticipated to receive a healing spell from a priestess of Mystra.~
 DO~SetGlobal("SanHealJon","LOCALS",3)~
 ==BSandr25~We are companions now even if that thought shocks you, Joneleth. We support each others with our various skills and abilities. ~
 ==BJonel25~Eh..~
@@ -43,49 +43,49 @@ DO~SetGlobal("SanHealJon","LOCALS",3)~
 
 CHAIN
 IF~Global("SanJon25","GLOBAL",8)~THEN BJonel25 SanJonPel
-~ Priestess, I like to ask you about your cat.~
+~Priestess, I like to ask you about your cat.~
 DO~SetGlobal("SanJon25","GLOBAL",9) RealSetGlobalTimer("SanJonT","LOCALS",2600)~
-==BSandr25~ The *priestess'* name is Sandrah - the *cat's* name is Pelligram. Our party is led by <CHARNAME> and our companions are <PLAYER2>, <PLAYER3>, <PLAYER4>, <PLAYER5>, and <PLAYER6>. You are in this group, act accordingly, you may need one or the other of them sooner or later.~
+==BSandr25~The *priestess'* name is Sandrah - the *cat's* name is Pelligram. Our party is led by <CHARNAME> and our companions are <PLAYER2>, <PLAYER3>, <PLAYER4>, <PLAYER5>, and <PLAYER6>. You are in this group, act accordingly, you may need one or the other of them sooner or later.~
 ==BJonel25~You need not to remind me of my frail new existence. I suffer from it constantly.~
 ==BSandr25~It was not my intention to belittle you. I wanted to help you find the alternative mindset you may need in your new life. We were enemies once but we are no more. You trusted only yourself but now you are among companions, they may even become friends over time. Admit it.~
 ==BJonel25~So what about your cat...I mean what about Pelligram? Do you mind telling me *Sandrah*?~
-==BSandr25~ She is a true and loyal companion who accompanies me since my late childhood. We saved each other's life many times.~
+==BSandr25~She is a true and loyal companion who accompanies me since my late childhood. We saved each other's life many times.~
 ==BJonel25~I still have enough of my abilities to feel that she is no being of this plane. You told me that Mystra does not intervene in this Bhaalspawn war. Can you solve that dilemma for me...Sandrah?~
 ==BSandr25~Even if Pelligram were a servant of Mystra she is with me because of my own mission and task, not because of the Bhaal case.~
 ==BJonel25~I see and I have learned to believe you. So what is that task other than to stop Bhaal's return?~
 ==BSandr25~To find the one to succeed Mystra when the time has come.~EXIT
 
 CHAIN
-IF~Global("SanJonPwr","LOCALS",1)~ THEN BJonel25 SanJonPwr
+IF~Global("SanJonPwr","LOCALS",1)~THEN BJonel25 SanJonPwr
 ~Sandrah, concerning myself I may have found some answers - concerning you...mh...more questions than answers have appeared before me.~
 DO~SetGlobal("SanJonPwr","LOCALS",2)RealSetGlobalTimer("SanJonT","LOCALS",2000)~
-==BSandr25~ Why should you start to contemplate about me anyway?~
+==BSandr25~Why should you start to contemplate about me anyway?~
 ==BJonel25 ~I have learned that your heritage, even if different from <CHARNAME>'s or my own, puts you in a similar position with respect to power.~
-==BSandr25~ I am not a godchild, someone must have told you a misleading story.~
-==BJonel25 ~ No, you are no godchild - you are far more. You are from the blood that have killed gods in the past and according to your own confession you would be willing yourself to do such a deed. I know quite well that the idiot Cyric was just a tool used to kill the previous God of Murder - the true executioner had been the one you call your grandmother.~
-==BSandr25~ You are right, Joneleth, and you are also right that I follow Midnight's example where I can map it to my own situation.~
-==BJonel25 ~ Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overlord Ao and found worth to become goddesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
-==BSandr25~ I do not estimate myself superior to anyone, Joneleth. And have you ever thought clearly about what it really means to have the power of a god? Do you only see the possibilities of bloodshed and destruction in it? What about the responsibility that comes with the power?~
+==BSandr25~I am not a godchild, someone must have told you a misleading story.~
+==BJonel25 ~No, you are no godchild - you are far more. You are from the blood that have killed gods in the past and according to your own confession you would be willing yourself to do such a deed. I know quite well that the idiot Cyric was just a tool used to kill the previous God of Murder - the true executioner had been the one you call your grandmother.~
+==BSandr25~You are right, Joneleth, and you are also right that I follow Midnight's example where I can map it to my own situation.~
+==BJonel25 ~Yes, you do - but do you consider the ultimate consequences, Sandrah? The women of your bloodline have not only killed gods. They are among the few mortals who were chosen by the Overlord Ao and found worth to become goddesses themselves. Does such a perspective not raise ambitions in one as capable and superior as yourself?~
+==BSandr25~I do not estimate myself superior to anyone, Joneleth. And have you ever thought clearly about what it really means to have the power of a god? Do you only see the possibilities of bloodshed and destruction in it? What about the responsibility that comes with the power?~
 ==BJonel25 ~Responsibility of a god? For the dirt crawling mob of worthless mortals, the blind lemmings rushing to their death with open eyes while drooling from greed...Why should a goddess care about them?~
 ==BSandr25~What makes a god a god if not the belief of those who follow him? Is it not the role to be an example and a guidance to those who seek the truth? I see the goddess I follow with such eyes.~
 ==BJonel25 ~...and the goddess you follow was once a mortal priestess of Mystra just like you...keep following your grandmother's step - prevent the new rising of the murderous god she herself once defeated - follow the logic of this to the end, Sandrah.~
 ==BSandr25~Listen, I am human and I am mortal. It is the primary plane where I live and where I try to help shaping a Toril that I enjoy living in. If I had the power to do it I would use it to improve the everyday life of the *drooling mob of lemmings* - I am one of them.~EXIT
 
 CHAIN
-IF~Global("IrSanWK","LOCALS",1)~ THEN BJonel25 WKadv
+IF~Global("IrSanWK","LOCALS",1)~THEN BJonel25 WKadv
 ~I heard that you counselled <CHARNAME> to go to Watcher's Keep just like I did.~
 DO~SetGlobal("IrSanWK","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
-==BSandr25~ Based on the same facts we come to the same conclusions, not a big mystery. However it is telling that it reveals the honesty in the advice we both give to <CHARNAME>.~
+==BSandr25~Based on the same facts we come to the same conclusions, not a big mystery. However it is telling that it reveals the honesty in the advice we both give to <CHARNAME>.~
 ==BJonel25 ~Correct. Does it make you trust me a bit more?~
 ==BSandr25~Yes.~
 ==BJonel25 ~..~
 =~Well, good to know anyway.~EXIT
 
 CHAIN
-IF~Global("SanIrClk","LOCALS",1)~ THEN BJonel25 SanIrClk
+IF~Global("SanIrClk","LOCALS",1)~THEN BJonel25 SanIrClk
  ~There are good old grannys who knit pullovers for their grandchildren...~
 DO~SetGlobal("SanIrClk","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
-==BSandr25~ ...(laughs) and there are some who are a bit different than that.~
+==BSandr25~...(laughs) and there are some who are a bit different than that.~
 ==BJonel25 ~Even among those different ones there are not many who are able to give a cloak of almost godlike power to their beloved heirs.~
 ==BSandr25~Their heirs?~
 ==BJonel25 ~My studies on you are almost finished. My new *comrades* were not withholding the information about certain events I would have otherwise not be able to learn about.~
@@ -100,8 +100,8 @@ DO~SetGlobal("SanIrClk","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
 ==BSandr25~You call it weakness, Joneleth. Consider that it may require even more strength to reject what you think is so desireable.~EXIT
 
 CHAIN
-IF~Global("SanIrDeava","LOCALS",1)~ THEN BJonel25 SanIrDeva
-~ What does that inquisitory look mean, pries...Sandrah?~
+IF~Global("SanIrDeava","LOCALS",1)~THEN BJonel25 SanIrDeva
+~What does that inquisitory look mean, pries...Sandrah?~
 DO~SetGlobal("SanIrDeava","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
 ==BSandr25~I was wondering if it were mere scientific curiosity that made you advocate on behalf of Ybdiel, or whether there might be something more. ~
 ==BJonel25 ~Would it really matter to you?~
@@ -115,8 +115,8 @@ DO~SetGlobal("SanIrDeava","LOCALS",2) RealSetGlobalTimer("SanJonT","LOCALS",2000
 ==BJonel25 ~(Mumbles) It is good to know there is at least one person here who never seems to give up on hopeless cases.~EXIT
 
 CHAIN
-IF~Global("SanIrDeava","LOCALS",3)~ THEN BJonel25 SanIrDeva2
-~ Sandrah, I was slightly amazed by your lack of counselling to <CHARNAME> in the Deva Demon question?~
+IF~Global("SanIrDeava","LOCALS",3)~THEN BJonel25 SanIrDeva2
+~Sandrah, I was slightly amazed by your lack of counselling to <CHARNAME> in the Deva Demon question?~
 DO~SetGlobal("SanIrDeava","LOCALS",4) RealSetGlobalTimer("SanJonT","LOCALS",2000)~
 ==BSandr25~Had you expected me to oppose your opinions, Joneleth?~
 ==BJonel25 ~Bluntly speaking, yes. I would have been interested in your intellectual challenges you would set up against me.~
@@ -145,9 +145,9 @@ DO~SetGlobal("SendaiDoorXP","AR6100",4)IncrementGlobal("JonRedemptionCounter","G
 
 CHAIN
 IF~Global("SanJon25","GLOBAL",10)~THEN BJonel25 SanJonPel
-~ Sandrah, I have asked myself how powerful your soul must be compared to the Bhaalspawn you accompany.~
+~Sandrah, I have asked myself how powerful your soul must be compared to the Bhaalspawn you accompany.~
 DO~SetGlobal("SanJon25","GLOBAL",11) IncrementGlobal("JonRedemptionCounter","GLOBAL",5)RealSetGlobalTimer("SanJonT","LOCALS",2600)~
-==BSandr25~ Are you on the prowl for another victim? You have definitely a large problem, Joneleth?~
+==BSandr25~Are you on the prowl for another victim? You have definitely a large problem, Joneleth?~
 ==BJonel25 ~Oh, relax, I am not after your sweet soul, child, even if the prospect may be inviting. I feel more and more the powerful being you become.~
 ==BSandr25~Give me a moment to discuss this issue with you.~
 ==BJonel25 ~I would appreciate that. I have little chance for learned and scientific intercourse in this company these days.~
@@ -156,12 +156,12 @@ DO~SetGlobal("SanJon25","GLOBAL",11) IncrementGlobal("JonRedemptionCounter","GLO
 ==BSandr25~I ask myself about your fixation to the power of another being's soul. You have had one and have encountered the pros and cons of it. On the other hand I have got to know and respect an intellectual mind who could be the person I described before just by own means.~
 ==BJonel25 ~Are you suggesting that I would come out of this adventure as a Power of the Realms if I would accept that wheeping slavegod's offer of an ersatz soul?~
 ==BSandr25~I am saying you could be such a power just by your own means, yes, and with a soul of your own. Why is it so important to add another's stolen power to your own when you are so much already by yourself? You experienced the slayer personally - you had his power but at the same time you lost yourself. The same will be true with any other soul you assimilate. You will loose yourself.~
-==BJonel25 ~ I loose in order to gain more.~
+==BJonel25 ~I loose in order to gain more.~
 ==BSandr25~A high price if what you loose is already precious and what you gain is more than you ever need.~
 ==BJonel25 ~I respect your attitude, Sandrah. Other than those babbling nitwits that try to influence my decisions you are one who knows what she is talking about. I will reflect your words, hm, *counsellor*.~EXIT
 
 CHAIN
-IF~Global("SanAtSeal","LOCALS",1)~ THEN BJonel25 SanJonSeal
+IF~Global("SanAtSeal","LOCALS",1)~THEN BJonel25 SanJonSeal
 ~So - what will <CHARNAME>'s self declared counsellor advise now? Will you make <PRO_HIMHER> walk into the trap below?~
 DO~SetGlobal("SanAtSeal","LOCALS",2) IncrementGlobal("JonRedemptionCounter","GLOBAL",3)~
 ==BSandr25~I will not *make* <CHARNAME> do anything as our leader is quite capable of making the right decisions. My advice would be indeed to move ahead. The fact we seem to agree upon is that the so-called Helmites were not as truthful as one would expect from those paladins.~
@@ -178,31 +178,31 @@ ADD_TRANS_TRIGGER Balth 24
 ~!InParty("CVSandr")~
 
 EXTEND_BOTTOM Balth 24
-IF ~ InParty("CVSandr") Alignment(Player1,MASK_GOOD) ReputationGT(Player1,18) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
-IF ~ InParty("CVSandr") !Alignment(Player1,MASK_GOOD)ReputationGT(Player1,18)~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
-IF ~ InParty("CVSandr") Alignment(Player1,MASK_GOOD) !ReputationGT(Player1,18) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 33
-IF ~ InParty("CVSandr") !Alignment(Player1,MASK_GOOD)!ReputationGT(Player1,18)ReputationGT(Player1,6) ~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 34
-IF ~InParty("CVSandr")~ THEN REPLY ~You sound like a hypocrite to me, sentencing those you have no right to judge!~ GOTO 35
-IF ~InParty("CVSandr")~ THEN REPLY~You won't be the first to try and kill me...and probably not the last!~ GOTO 36
-IF ~InParty("CVSandr")~ THEN REPLY ~How noble.  I'll enjoy spilling your pretentious guts all over the floor.~ GOTO 37
-IF ~ InParty("CVSandr") Alignment(Player1,MASK_EVIL)!ReputationGT(Player1,6)~ THEN REPLY ~But I am not evil!  I am a force of good and justice!~ GOTO 38
-IF ~InParty("CVSandr") Global("lrascbalt1","GLOBAL",0) InParty("lrirenic") G("AcceptIlmater",0) ~ THEN DO ~SetGlobal("lrascbalt1","GLOBAL",1)~ EXTERN JONEL25J SanIn
+IF ~InParty("CVSandr") Alignment(Player1,MASK_GOOD) ReputationGT(Player1,18) ~THEN REPLY ~But I am not evil!  I am a force of good and justice!~GOTO 33
+IF ~InParty("CVSandr") !Alignment(Player1,MASK_GOOD)ReputationGT(Player1,18)~THEN REPLY ~But I am not evil!  I am a force of good and justice!~GOTO 33
+IF ~InParty("CVSandr") Alignment(Player1,MASK_GOOD) !ReputationGT(Player1,18) ~THEN REPLY ~But I am not evil!  I am a force of good and justice!~GOTO 33
+IF ~InParty("CVSandr") !Alignment(Player1,MASK_GOOD)!ReputationGT(Player1,18)ReputationGT(Player1,6) ~THEN REPLY ~But I am not evil!  I am a force of good and justice!~GOTO 34
+IF ~InParty("CVSandr")~THEN REPLY ~You sound like a hypocrite to me, sentencing those you have no right to judge!~GOTO 35
+IF ~InParty("CVSandr")~THEN REPLY~You won't be the first to try and kill me...and probably not the last!~GOTO 36
+IF ~InParty("CVSandr")~THEN REPLY ~How noble.  I'll enjoy spilling your pretentious guts all over the floor.~GOTO 37
+IF ~InParty("CVSandr") Alignment(Player1,MASK_EVIL)!ReputationGT(Player1,6)~THEN REPLY ~But I am not evil!  I am a force of good and justice!~GOTO 38
+IF ~InParty("CVSandr") Global("lrascbalt1","GLOBAL",0) InParty("lrirenic") G("AcceptIlmater",0) ~THEN DO ~SetGlobal("lrascbalt1","GLOBAL",1)~EXTERN JONEL25J SanIn
 END
 
 CHAIN
 IF~~THEN JONEL25J SanIn
-~Enough of this. <CHARNAME>, you have already wasted too much time listening to the mad monk's drivel. Now your half-brother would try to convince you to join him in his glorious death. Little does he realize that in doing so he would only release Bhaal's essence back into cosmos where it will be collected and utilized by your *protectress* Melissan.~ DO ~IncrementGlobal("ConvinceBalth","GLOBAL",2)~ 
-==JONEL25J IF ~ G("lrHasSoulStone",0)G("AcceptIlmater",0)G("lrBaltSoul",1)~THEN~I, on the other hand, have a much better use for your half-brother's divine spirit. Get ready for battle, godchild. It's time for this to end.~ ~I, on the other hand, have a much better use for your half-brother's divine spirit. Get ready for battle, godchild. It's time for this to end.~
+~Enough of this. <CHARNAME>, you have already wasted too much time listening to the mad monk's drivel. Now your half-brother would try to convince you to join him in his glorious death. Little does he realize that in doing so he would only release Bhaal's essence back into cosmos where it will be collected and utilized by your *protectress* Melissan.~DO ~IncrementGlobal("ConvinceBalth","GLOBAL",2)~
+==JONEL25J IF ~G("lrHasSoulStone",0)G("AcceptIlmater",0)G("lrBaltSoul",1)~THEN~I, on the other hand, have a much better use for your half-brother's divine spirit. Get ready for battle, godchild. It's time for this to end.~~I, on the other hand, have a much better use for your half-brother's divine spirit. Get ready for battle, godchild. It's time for this to end.~
 ==BALTH~<CHARNAME>, does the masked sorcerer that you have brought in my presence have a hold on your spirit? He sounds like a convincing liar, and I can feel a connection between you two. I pity you, my <PRO_BROTHERSISTER>. Yet his presence makes it even more urgent that I destroy your vileness. Verily, I shall wipe out two great evils with one strike.~
 ==CVSan25J~Have you all not realised by now that here is another glitch in Alaundo's prophesy? A Bhaalspawn would be the only to be able to prevent Bhaal's return, we learned. Does it really say it has to be just a single one and all others are by design evil?~
 ==BALTH~<CHARNAME>, your company is truely a mixed troupe...the priestess compensates for the exile, I guess.~
 ==CVSan25J~Balthazar, try not to judge us as we do not judge you - too much is at stake. Consider the possibility that after all you are not alone in your attempt and your suicide solution is not the only way out.~
-==BALTH~It is true.  You are a good advisor, and your stance against evil is without question.  Your assistance in <CHARNAME>'s fight against the taint of our evil father is worthy of praise.~ 
+==BALTH~It is true.  You are a good advisor, and your stance against evil is without question.  Your assistance in <CHARNAME>'s fight against the taint of our evil father is worthy of praise.~
 END
 ++~Can we not explore our possibilities, common possibilities on this basis?~EXTERN Balth 39
 
 EXTEND_BOTTOM LRGODEMO 13
-IF~InParty("CVSandr")~THEN REPLY~ How about your counselling, Sandrah, riddles are your domain?~EXTERN CVSan25J Sancheatdemo
+IF~InParty("CVSandr")~THEN REPLY~How about your counselling, Sandrah, riddles are your domain?~EXTERN CVSan25J Sancheatdemo
 END
 
 CHAIN
@@ -214,7 +214,7 @@ That is cheating, you cannot name a substitute.~
 =~(left head) Why not? Now that mighty soul is in the bargain as well.~
 ==CVSan25J ~So be it - just let us get over this quickly.~
 ==LRGODEMO~Very well, I shall ask you the first riddle.~
-=~What is it that is greater in wickedness and more powerful demon than us; the dead eat it; and yet if the living eat it, they die?~ 
+=~What is it that is greater in wickedness and more powerful demon than us; the dead eat it; and yet if the living eat it, they die?~
 ==CVSan25J ~This riddle has no answer. Nothing can be more vile than you are, and it is preposterous to give another answer.~
 ==LRGODEMO~(right head) 
 I knew that couple would cheat! Why did you let the priestess in?~
@@ -246,13 +246,13 @@ END
 ++~Dealing with demons...~EXTERN LRGODEMO 39
 
 EXTEND_BOTTOM Jonel25J 162
-IF~InParty("CVSandr") ~THEN REPLY~ None in this party will suffer such fate as long as I can prevent it. This includes you, Irenicus. We need to get you a soul, forgot?~DO~SetGlobal("lrdemoquestion","LOCALS",2)IncrementGlobal("JonRedemptionCounter","GLOBAL",3)~ GOTO JonelDemogSan
+IF~InParty("CVSandr") ~THEN REPLY~None in this party will suffer such fate as long as I can prevent it. This includes you, Irenicus. We need to get you a soul, forgot?~DO~SetGlobal("lrdemoquestion","LOCALS",2)IncrementGlobal("JonRedemptionCounter","GLOBAL",3)~GOTO JonelDemogSan
 END
 
 APPEND Jonel25J
 IF~~THEN BEGIN  JonelDemogSan
 SAY~Fine, you are fool enough to attempt it, I am fool enough to trust you - for the time being. In the choice against Demogorgon you are my preference today.~
-IF~Global("DemogorgonChange","GLOBAL",0)~ THEN DO~ ActionOverride("demogor1",ReallyForceSpell(Myself,DEMOGORGON_CHANGE)) SetGlobal("DemogorgonChange","GLOBAL",1)TriggerActivation("DemoGorgonInfo",FALSE) ~EXIT
+IF~Global("DemogorgonChange","GLOBAL",0)~THEN DO~ActionOverride("demogor1",ReallyForceSpell(Myself,DEMOGORGON_CHANGE)) SetGlobal("DemogorgonChange","GLOBAL",1)TriggerActivation("DemoGorgonInfo",FALSE) ~EXIT
 IF~Global("DemogorgonChange","GLOBAL",1)~THEN EXIT
 END
 END
@@ -286,12 +286,12 @@ StartCutSceneMode()
 StartCutScene("lrfijon1")~EXIT
 
 EXTEND_BOTTOM FinSol01 8
-IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
+IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
 END
 
 EXTEND_TOP FinSol01 4 #3
-IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
-IF~InParty("CVSandr") InParty("lrirenic") Global("lrFinSolJon","LOCALS",0)~ THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 46
+IF~InParty("CVSandr")  Dead("lrirenic") Global("lrFinSolJon","LOCALS",0)~THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 5
+IF~InParty("CVSandr") InParty("lrirenic") Global("lrFinSolJon","LOCALS",0)~THEN DO~SetGlobal("lrFinSolJon","LOCALS",1)~GOTO 46
 END
 
 I_C_T LRElle1 42 SanLRMaskAccept

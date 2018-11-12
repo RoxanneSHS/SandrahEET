@@ -6,7 +6,7 @@ I_C_T Boanaste 4 SanSoDSkie
 
 CHAIN
 IF WEIGHT #-4~Global("SanSodEntrap","Global",1)~THEN BSandr Entrap1
-~An expertise on magical entrapments - <CHARNAME>, we should keep this book for me to study when this battle is over.~ 
+~An expertise on magical entrapments - <CHARNAME>, we should keep this book for me to study when this battle is over.~
 DO~SetGlobal("SanSodEntrap","Global",2)~
 END
 ++~Anything of imminent help for the tasks at hand?~+ Entrap2
@@ -40,12 +40,12 @@ IF WEIGHT #-4~Global("SanSoDSkie","Global",1)~THEN BSandr Backlive1
 DO~SetGlobal("SanSoDSkie","Global",2)~
 =~Whatever you decide to do with the strange mistresses' offer - we must restore Entar Silvershield's daughter. Be it for her own sake or to clean our names from the accusation of being her murderers.~
 END
-IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~ + Backlive2
-IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~  + Backlive2
-IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~ + Backlive2
-IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~ + Backlive3
-IF~Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~  + Backlive3
-IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~ + Backlive3
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~+ Backlive2
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~ + Backlive2
+IF~!Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~+ Backlive2
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Are you able to do this, my healer?~+ Backlive3
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~How are we going to do that, some dark ritual or such?~ + Backlive3
+IF~Global("SanSodEntrap","Global",2)~THEN REPLY~Will it be possible to restore a version of Skie with some less *words per minute*?~+ Backlive3
 
 CHAIN
 IF~~THEN BSandr Backlive2
@@ -66,7 +66,7 @@ CHAIN
 IF WEIGHT #-4~Global("SanSoDSkie","Global",3)~THEN BSandr Backlive7
 ~This is the right place to free poor Skie from her soul prison. We shall not prolong her suffering.~
 =~You are present, the one who's hand was made to hold the dagger when her soul was taken, so we have all we need for the ritual.~
-DO~SetGlobal("SanSoDSkie","Global",4) ClearAllActions() StartCutSceneMode() Wait(2)StartCutScene("CVSkieR")~ EXIT
+DO~SetGlobal("SanSoDSkie","Global",4) ClearAllActions() StartCutSceneMode() Wait(2)StartCutScene("CVSkieR")~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("SanSoDSkie","Global",5)~THEN Skie Backlive8
@@ -88,45 +88,45 @@ DO~SetGlobal("SanSoDSkie","Global",6) AddexperienceParty(10500)~
 ==Skie~That will change soon. I will immediately consult the Jysstevs, we have business with them since a long time. They will arrange for my return home. All will be well soon. Do not forget to visit me, should your way lead you back to our town...(she continues to babble all the way to the temple's doors.)~DO~EscapeAreaDestroy(55)~
 END
 ++~Well done, counsellor. I hope she will remember to restore our reputation when she gets to Baldur's Gate.~EXIT
-++~Her appearance in Baldur's Gate will remove all accusations of murder - even if I doubt we would be celebrated heroes again, at least we are no longer criminals.~ EXIT
+++~Her appearance in Baldur's Gate will remove all accusations of murder - even if I doubt we would be celebrated heroes again, at least we are no longer criminals.~EXIT
 
 CHAIN
-IF~Global("SanSoDSkie","Global",8)~ THEN CVSandrJ KillskieF1
+IF~Global("SanSoDSkie","Global",8)~THEN CVSandrJ KillskieF1
 ~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
 DO~SetGlobal("SanSoDSkie","Global",9) SetGlobal("SanSoDSkieB","Global",2)~
 END
-++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
-++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
-++~The accusation of murder is pointless with the victim being alive, right?~ + KillskieF2
+++~Entar Silvershield's daughter should be able to do as much.~+ KillskieF2
+++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~+ KillskieF2
+++~The accusation of murder is pointless with the victim being alive, right?~+ KillskieF2
 
 CHAIN
-IF~~ THEN CVSandrJ KillskieF2
+IF~~THEN CVSandrJ KillskieF2
 ~The mistrust against Bhaalspawns may prevail over the return of a lost daughter.~
 =~Entar may even suspect this to be another intrigue of the hated breed.~
 END
-++~What? You lost me now...~ + KillskieF3
-++~I would think to regain his daughter would be the most important fact.~ + KillskieF3
+++~What? You lost me now...~+ KillskieF3
+++~I would think to regain his daughter would be the most important fact.~+ KillskieF3
 
 CHAIN
-IF~~ THEN CVSandrJ KillskieF3
+IF~~THEN CVSandrJ KillskieF3
 ~Oh, I was referring to HER heritage...~
 =~*She stops for a moment, looking at you questioningly.*~
 =~I see...you never suspected...I thought you knew. Well, then - Skie is another Bhaalspawn.~
 END
-++~What? Are you sure?~ + KillskieF4
+++~What? Are you sure?~+ KillskieF4
 ++~Sandrah, please, you start to see Bhaalspawns everywhere these days.~+ KillskieF4
 
 CHAIN
-IF~~ THEN CVSandrJ KillskieF4
+IF~~THEN CVSandrJ KillskieF4
 ~Please, I am not hysterical. Just look at the facts we have.~
 =~The hooded man, Irenicus as we know by now, was always referring to another candidate before he finally captured you. I falsely assumed he meant Caelar, but no.~
 =~Remember Skie's conduct during the Dragonspear campaign.~
 END
-++~A spoiled brat without any discipline, the nightmare of her superiors.~ + KillskieF5
-++~Anything specific?~  + KillskieF5
+++~A spoiled brat without any discipline, the nightmare of her superiors.~+ KillskieF5
+++~Anything specific?~ + KillskieF5
 
 CHAIN
-IF~~ THEN CVSandrJ KillskieF5
+IF~~THEN CVSandrJ KillskieF5
 ~Remember when we first met her as a Flaming Fist. Out in that wood over the dead corpses of those *food thieves*. Well armed bandits and experienced fighters she claimed to have followed and defeated - single handed with her shortsword.~
 =~Next her disappearance from the coalition camp. Why did she leave? There was never a sign that her disappearance was against her will.~
 =~Her mother died during her birth, like mostly the mothers of a Bhaalspawn do...~
@@ -137,13 +137,13 @@ END
 ++~You have confirmed what I was trying not to see...I just hope that her father does not even know about her heritage.~EXIT
 
 CHAIN
-IF~Global("SanSoDSkieB","Global",1)~ THEN CVSandrJ KillskieF1B
+IF~Global("SanSoDSkieB","Global",1)~THEN CVSandrJ KillskieF1B
 ~We can only hope that Skie did succeed in restoring our reputation in Baldur's Gate and we do not get into trouble entering the town.~
 DO~SetGlobal("SanSoDSkieB","Global",2)~
 END
-++~Entar Silvershield's daughter should be able to do as much.~ + KillskieF2
-++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~ + KillskieF2
-++~The accusation of murder is pointless with the victim being alive, right?~ + KillskieF2
+++~Entar Silvershield's daughter should be able to do as much.~+ KillskieF2
+++~Once her father would have been able to extract the story from her stream of babbling, it should have become obvious that I was innocent.~+ KillskieF2
+++~The accusation of murder is pointless with the victim being alive, right?~+ KillskieF2
 
 CHAIN
 IF WEIGHT #-4~Global("SanSoDSkieB","Global",3)~THEN Skie BackHell
