@@ -96,14 +96,14 @@ END
 
 IF ~Global("SandrahJoined","GLOBAL",44)!InParty("Dynaheir")~ THEN BEGIN KickSPT441
 SAY ~ Where is the Wychalarn? Is she safe, is she well? ~
-IF~~ THEN REPLY ~ Yes, I brought her back into safe areas. She is with her guardian Minsc again.~  GOTO KickSPT443
+IF~~ THEN REPLY ~ Yes, I brought her back into safe areas. She is with her guardian Minsc again.~GOTO KickSPT443
 IF~~ THEN REPLY ~ Yes, I brought her back into safe areas, she should be able to continue her own quest now.~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO KickSPT443
 END
 
 IF~~ THEN BEGIN KickSPT443
 SAY ~ I still think one of those knocks in our constant fighting was one too many for your poor head. But I cannot help to love you and I will be with you again to prevent the worst. (Kisses you lightly on the cheek.)~
-IF~PartyHasItem("Sanwi2")~ THEN REPLY ~ She was very much interested in you. She gave me a strange item that she originally wanted to discuss with you. Look, whether you can make any sense out of it. ~ DO ~  SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXIT
-IF~!PartyHasItem("Sanwi2")~ THEN DO ~  SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
+IF~PartyHasItem("Sanwi2")~ THEN REPLY ~ She was very much interested in you. She gave me a strange item that she originally wanted to discuss with you. Look, whether you can make any sense out of it. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~ EXIT
+IF~!PartyHasItem("Sanwi2")~ THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 END
 
 
@@ -122,26 +122,26 @@ END
 IF ~~ THEN BEGIN  KickSPT53
 SAY ~ The guy really was completely lovesick and homesick, you would not believe it. So...~
 = ~ He arranged for a real PARTY, freshly roasted basiliks and steaming bloodwine included, and after a few mugs of that wine began to talk of home and the pleasantries of the deep regions, especially the climate.~
-= ~ However, when he tried to get closer to me, trying to convince me to come there with him, I started to throw peanuts at him...~  
-IF ~~ THEN REPLY ~ Peanuts? Are you joking? ~  GOTO KickSPT54
+= ~ However, when he tried to get closer to me, trying to convince me to come there with him, I started to throw peanuts at him...~
+IF ~~ THEN REPLY ~ Peanuts? Are you joking? ~GOTO KickSPT54
 END
 
 IF ~~ THEN BEGIN  KickSPT54
 SAY ~ Yes, peanuts, the only thing on his dinner table I could touch at all. 
 I threw them at the demon and told him to GO TO HELL.~
-IF ~~ THEN REPLY ~ Will this get any weirder? ~  GOTO KickSPT55
+IF ~~ THEN REPLY ~ Will this get any weirder? ~GOTO KickSPT55
 END
 
 IF ~~ THEN BEGIN  KickSPT55
 SAY ~ I am nearly finished with the story.
 When I yelled GO TO HELL at the demon, he started to consider this as a proposal, and then he decided it was just the thing to do. So he clicked the heels of his silver slippers three times and was off. ~
 = ~ In his hasted departure he dropped a few items, including his silver slippers and the SHARD. And with the Shard in hand I made haste to return to my father. ~
-IF ~~ THEN REPLY ~ I mean...you are here, no doubt. But do you want us to really believe this story? ~  GOTO KickSPT56
+IF ~~ THEN REPLY ~ I mean...you are here, no doubt. But do you want us to really believe this story? ~GOTO KickSPT56
 END
 
 IF ~~ THEN BEGIN KickSPT56
 SAY ~ I have the slippers here, just in case you really doubt my tale.~
-IF~~ THEN REPLY ~ Fantastic. We have really missed a great adventure, or at least a great party. ~ DO ~  SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
+IF~~ THEN REPLY ~ Fantastic. We have really missed a great adventure, or at least a great party. ~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 END
 
 
@@ -196,7 +196,7 @@ END
 
 IF ~ Global("SandrahJoined","GLOBAL",15) AreaCheck("BG1804") See(Player1) ~ THEN BEGIN ClckWMines
 SAY~ Everything has worked out fine, <CHARNAME>.~
-IF~~THEN REPLY~Sandrah, you really made it back here in no time!~ DO ~  SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
+IF~~THEN REPLY~Sandrah, you really made it back here in no time!~ DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ EXIT
 END
 
 IF ~Global("SandrahJoined","GLOBAL",44) InParty("Dynaheir")~ THEN BEGIN KickSPT442
@@ -239,7 +239,7 @@ END
 IF~Global("SandrahJoined","GLOBAL",16)~THEN BEGIN TalosRejun1
 SAY~Seasick, traveller?~
 IF~~THEN REPLY~ Sandrah!! Oh, I was so afraid and terrified but I was sure you would make it without us. ~DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
-IF~~THEN REPLY~ You are unbelievable, my fearless counsellor. You made it to here even quicker than we could. This can only be Mystra's work!!~  DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
+IF~~THEN REPLY~ You are unbelievable, my fearless counsellor. You made it to here even quicker than we could. This can only be Mystra's work!!~DO ~ SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()ReallyForceSpellRES("CVSanam",Myself)~ GOTO TalosRejun2
 END
 
 IF~~ THEN BEGIN TalosRejun2
