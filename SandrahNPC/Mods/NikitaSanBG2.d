@@ -6,13 +6,13 @@ DO~SetGlobal("SanHealNiki","GLOBAL",2) RealSetGlobalTimer("SanHealNikiTi","LOCAL
 ==BCMNikit~You're not as neutral as your gooddess Mystra appears to be. You have a tendency to goodness in you.~
 ==Bsandr~Despite being a Harper's daughter - and one who is widely impregnated by her father's example - I would not commit myself to such a statement. I mostly act out of practical motifs rather than to keep some imaginary balance of goodness.~
 ==BCMNikit~You do just naturally what I had to learn the hard way. I have the feeling I need to compensate for the evil I did with Section in the past. I had the feeling you had a similar goal.~
-==Bsandr~ You experienced it yourself, evil always has enough resources to feed on - greed, jealousy, envy or poverty to name a few. It does not need my help. If I can move the scales a bit to give the good side a slight advantage, this may not be balance but a Toril I like to live on.~EXIT
+==Bsandr~You experienced it yourself, evil always has enough resources to feed on - greed, jealousy, envy or poverty to name a few. It does not need my help. If I can move the scales a bit to give the good side a slight advantage, this may not be balance but a Toril I like to live on.~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("SanHealNiki","GLOBAL",3)~THEN BCMNikit Sandrah2
 ~Where did you learn to fight with that heavy hammer, Sandrah, it's not what one suspects from a fragile person like you?~
 DO~SetGlobal("SanHealNiki","GLOBAL",4) RealSetGlobalTimer("SanHealNikiTi","LOCALS",2100)~
-==Bsandr~ My drow combat teacher discovered my natural ability for this weapon - after I made various attempts with lighter tools that were not very successful.~
+==Bsandr~My drow combat teacher discovered my natural ability for this weapon - after I made various attempts with lighter tools that were not very successful.~
 ==BCMNikit~A drow? Even more strange, I never heard of drow using war hammers. Flails, yes, but hammers?~
 ==Bsandr~It was in fact a discovery by incident but Drizzt instinctively interpreted my skill correctly and taught me the initial facts even though he never used the weapon himself.~
 =~*You hear Sandrah report the well-known story of her first meeting with Drizzt Do'Urden to Nikita, her eyes sparkling enthusiastically when thinking of the drow.*~EXIT
@@ -26,7 +26,7 @@ DO~SetGlobal("SanHealNiki","GLOBAL",6) SetGlobal("LockedDoor1001b","AR1000",1)~
 =~You travel with one who is to be terminated. ~
 ==Bsandr~The one who paid and ordered <CHARNAME>'s termination is long defeated. He was a power hungry tyrant and we ended his bloody trail.~
 ==BCMNikit~Section no longer exists, Madeline. Their own corruption was their end.~
-==CMMadel~How can you err so much, fools. <CHARNAME> is a danger to all. And you have become an open traitor, Nikita. Cancellation will go forward against both of you. Section must be warned.~DO~MoveToPoint([3560.1640]) Wait(2) DestroySelf()~ EXIT
+==CMMadel~How can you err so much, fools. <CHARNAME> is a danger to all. And you have become an open traitor, Nikita. Cancellation will go forward against both of you. Section must be warned.~DO~MoveToPoint([3560.1640]) Wait(2) DestroySelf()~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("SanHealNiki","GLOBAL",6)~THEN BCMNikit Sandrah3
@@ -49,8 +49,8 @@ DO~SetGlobal("SanHealNiki","GLOBAL",8) ~
 ==Bsandr~Give up, Wetler, neither did Nikita betray us nor will Koveras alias Sarevok reward you for your deeds. The whole game is over since long time.~
 ==CMGeorge~What a sad case of complete ignorance, little beauty. Too late to learn your lessons, I'm afraid.~DO~Enemy()~
 END
-++~Nikita, is that true? This is your trap for us?~ DO~ReputationInc(-2)~EXIT
-++~Nikita did not betray us, Wetler. We will end your crusade of madness with her help.~ DO~AddexperienceParty(6800)~EXIT
+++~Nikita, is that true? This is your trap for us?~DO~ReputationInc(-2)~EXIT
+++~Nikita did not betray us, Wetler. We will end your crusade of madness with her help.~DO~AddexperienceParty(6800)~EXIT
 
 CHAIN
 IF WEIGHT #-3~Global("SanHealNiki","GLOBAL",9)~THEN BCMNikit Sandrah4
@@ -64,6 +64,6 @@ DO~SetGlobal("SanHealNiki","GLOBAL",10) ~
 ==BCMNikit~This is true for the period when you had your encounters with them. What became hollow justification of murder by that time was honest belief when I first joined them.~
 ==Bsandr~What has changed their course so much?~
 ==BCMNikit~I'm not sure...maybe the lack of control. We were not responsible to anyone but ourselves. We killed people proclaiming we eliminated evil and we got away with it. That feeling of power over life and death was corrupting many of us.~
-==Bsandr~<CHARNAME>, even without the heritage of Bhaal's blood such a development is possible. How I love and admire your strength to withstand your taint.~ DO~AddSpecialAbility("CVDra21")~
+==Bsandr~<CHARNAME>, even without the heritage of Bhaal's blood such a development is possible. How I love and admire your strength to withstand your taint.~DO~AddSpecialAbility("CVDra21")~
 END
 ++~I have something that Nikita did not have in Section, I have companions who care for me.~EXIT

@@ -66,4 +66,4 @@ DO~SetGlobal("SanLuxley","GLOBAL",10) RealSetGlobalTimer("SanLuxleytime","GLOBAL
 ==BFHLAND~I did not until recently, but Sebastian did when he suggested to join this party.~
 ==BSandr~Interesting. However, before I talk to you about my motifs, I suggest you settle your little family dispute about the subject first.~
 ==BFHLAND~There you have it.~
-==BFHLSEB~She's gone without an answer.~  EXIT
+==BFHLSEB~She's gone without an answer.~ EXIT

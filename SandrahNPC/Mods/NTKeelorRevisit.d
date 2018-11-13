@@ -2,16 +2,16 @@ BEGIN ntashma
 
 APPEND IF_FILE_EXISTS NTKeelor
 IF WEIGHT #-2~Global("SanKelorHeal","GLOBAL",2)~THEN BEGIN InBereg1
-SAY~ You have helped me in that terrible Northern Wood, my big friends. Maybe you want to learn a bit more of what I found up there before I got wounded?~
+SAY~You have helped me in that terrible Northern Wood, my big friends. Maybe you want to learn a bit more of what I found up there before I got wounded?~
 =~But not here on the street. Come to my house at the west end of town and we can talk if you want to.~
 IF~~THEN DO~SetGlobal("SanKelorHeal","GLOBAL",3) MoveToPoint([899.1243]) MoveBetweenAreas("BG3347",[377.345],12)~EXIT
 END
 END
 
 CHAIN
-IF WEIGHT #-3~ Global("SanKelorHeal","GLOBAL",3)~THEN IF_FILE_EXISTS NTKeelor InBereg2
-~  Well, I see I caught your interest in those orc proceedings going on in the north.~
-DO~ SetGlobal("SanKelorHeal","GLOBAL",4)~
+IF WEIGHT #-3~Global("SanKelorHeal","GLOBAL",3)~THEN IF_FILE_EXISTS NTKeelor InBereg2
+~ Well, I see I caught your interest in those orc proceedings going on in the north.~
+DO~SetGlobal("SanKelorHeal","GLOBAL",4)~
 ==CVSandrJ~It would be interesting at least to compare notes and see if we are on the right track.~
 ==NTKeelor~I know that priests of Oghma as well a Mystra have a good knowledge of the lore of the Realms while an old dwarf has witnessed quite a couple of things in his lifetime.~
 ==CVSandrJ~The battle on the Fields of Death, good dwarf? You witnessed General Ghotal's last stand.~
@@ -25,17 +25,17 @@ DO~ SetGlobal("SanKelorHeal","GLOBAL",4)~
 ==CVSandrJ~Some believe that Ghotal himself was a spawn of Myrkul.~
 ==NTKeelor~(Nods silently) I guess you know what that may imply...~DO~EscapeArea()~EXIT
 
-ADD_TRANS_ACTION NTKeelor BEGIN 0 END BEGIN 0 END ~ SetGlobal("SanKelorHeal","GLOBAL",1)~
+ADD_TRANS_ACTION NTKeelor BEGIN 0 END BEGIN 0 END ~SetGlobal("SanKelorHeal","GLOBAL",1)~
 
-ADD_TRANS_ACTION NTKeelor BEGIN 1 END BEGIN 0 END ~ SetGlobal("SanKelorHeal","GLOBAL",1)~
+ADD_TRANS_ACTION NTKeelor BEGIN 1 END BEGIN 0 END ~SetGlobal("SanKelorHeal","GLOBAL",1)~
 
-ADD_TRANS_ACTION NTKeelor BEGIN 2 END BEGIN 0 END ~ SetGlobal("SanKelorHeal","GLOBAL",1)~
+ADD_TRANS_ACTION NTKeelor BEGIN 2 END BEGIN 0 END ~SetGlobal("SanKelorHeal","GLOBAL",1)~
 
-ADD_TRANS_ACTION NTKeelor BEGIN 4 END BEGIN 0 END ~ SetGlobal("SanKelorHeal","GLOBAL",1)~
+ADD_TRANS_ACTION NTKeelor BEGIN 4 END BEGIN 0 END ~SetGlobal("SanKelorHeal","GLOBAL",1)~
 
 CHAIN
-IF~Global("CVGodag","GLOBAL",6)~ THEN NTAshma Hasdagger
-~ YOU carry the dagger of one of the elders - how come?~
+IF~Global("CVGodag","GLOBAL",6)~THEN NTAshma Hasdagger
+~YOU carry the dagger of one of the elders - how come?~
 DO~SetGlobal("CVGodag","GLOBAL",7) ~
 ==CVSandrJ~You mean the dagger of A...~
 ==NTAshma~STOP, woman, her name is not to be mentioned among non-believers!~

@@ -32,5 +32,5 @@ DO~SetGlobal("SanNathB","GLOBAL",10)RealSetGlobalTimer("SanNathInt","LOCALS",200
 ==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",1)~THEN~Don't worry too much yet, it will all depend on what happens once we find Latimer.~
 ==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~Why should it? Love goes its own ways and makes its own rules~
 ==BSandr IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~(Laughs) Like matching two women at times - or two men.~
-==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~Don't worry too much yet, it will all depend on what happens once we find Latimer.~ EXIT
+==BFHNat IF~GLOBAL("SanRomPath","GLOBAL",2)~THEN~Don't worry too much yet, it will all depend on what happens once we find Latimer.~EXIT
 

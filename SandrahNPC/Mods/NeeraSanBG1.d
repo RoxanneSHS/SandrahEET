@@ -1,13 +1,13 @@
 INTERJECT_COPY_TRANS Neekando 0 SanNeeraRW1
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~<CHARNAME>, they wear the red robes of the scum from Thay. Whatever they want from that girl, I am sure it is something we should object to.~
-== Neera_ IF ~ InParty("CVSandr")~ THEN ~Lady, your heart and brain don't betray you, please, I'll be lost alone against them.~
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~There is no doubt for me which side should be ours here. The red wizards of Thay are a curse for all of Faerun.~
-== Neekando IF ~ InParty("CVSandr")~ THEN ~ A priestess of the damned goddess, why was I not informed about such obstacles?~
+== CVSandrJ IF ~InParty("CVSandr")~THEN ~<CHARNAME>, they wear the red robes of the scum from Thay. Whatever they want from that girl, I am sure it is something we should object to.~
+== Neera_ IF ~InParty("CVSandr")~THEN ~Lady, your heart and brain don't betray you, please, I'll be lost alone against them.~
+== CVSandrJ IF ~InParty("CVSandr")~THEN ~There is no doubt for me which side should be ours here. The red wizards of Thay are a curse for all of Faerun.~
+== Neekando IF ~InParty("CVSandr")~THEN ~A priestess of the damned goddess, why was I not informed about such obstacles?~
 END
 
 INTERJECT_COPY_TRANS Neera_ 8 SanNeeraRW2
-== CVSandrJ IF ~ InParty("CVSandr")~ THEN ~We have already the obligation to help her, <CHARNAME>, we cannot save somebody and then leave her to the clutches of Thayan bastards. Should you think otherwise, it would be a kinder deed to kill her yourself than to leave her to them.~
-== Neera_ IF ~ InParty("CVSandr")~ THEN ~I'd never thought that a priestess of Mystra would advocate twice for my case but I'm most grateful you do.~
+== CVSandrJ IF ~InParty("CVSandr")~THEN ~We have already the obligation to help her, <CHARNAME>, we cannot save somebody and then leave her to the clutches of Thayan bastards. Should you think otherwise, it would be a kinder deed to kill her yourself than to leave her to them.~
+== Neera_ IF ~InParty("CVSandr")~THEN ~I'd never thought that a priestess of Mystra would advocate twice for my case but I'm most grateful you do.~
 END 
 
 CHAIN
@@ -95,7 +95,7 @@ DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
 ==BNeera~Where is the enthusiastic cheerful Sandrah I know? Let us move on before we all get too gloomy.~EXIT
 
 CHAIN
-IF WEIGHT #-6~Global("LavokOutside","GLOBAL",1) InParty("Neera") OR(2)Global("PlayerHasStronghold","GLOBAL",1) !Class(Player1,LONG_BOW)~ THEN Lavok Neerasphere
+IF WEIGHT #-6~Global("LavokOutside","GLOBAL",1) InParty("Neera") OR(2)Global("PlayerHasStronghold","GLOBAL",1) !Class(Player1,LONG_BOW)~THEN Lavok Neerasphere
 ~Ah, it is the sky after all. I had forgotten how it looked after so long. I thank you... and I wish to repay you for your kindness...~
 DO~DestroyItem("MINHP1") SetGlobal("PCSphere","GLOBAL",1) AddXPObject(Player1,11375)
 AddXPObject(Player2,11375) AddXPObject(Player3,11375) AddXPObject(Player4,11375) AddXPObject(Player5,11375) AddXPObject(Player6,11375)~

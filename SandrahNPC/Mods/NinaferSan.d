@@ -16,9 +16,9 @@ DO~SetGlobal("SanNinaf","GLOBAL",2) RealSetGlobalTimer("SanNinaInT","LOCALS",180
 DO~RestParty()~EXIT
 
 CHAIN
-IF WEIGHT #-12~ Global("SanHealNina","GLOBAL",3)~THEN BCMNINAF SanNinaPH
+IF WEIGHT #-12~Global("SanHealNina","GLOBAL",3)~THEN BCMNINAF SanNinaPH
 ~You are blessed by our Mystra with those skills that can actively repair what was destroyed. I envy you for this nearness to the Weave's power, I wish I could do so much good. ~
-DO~ SetGlobal("SanHealNina","GLOBAL",4)RealSetGlobalTimer("SanNinaInT","LOCALS",1800)~
+DO~SetGlobal("SanHealNina","GLOBAL",4)RealSetGlobalTimer("SanNinaInT","LOCALS",1800)~
 ==BSandr~It was the healing aspect that finally made me become her priestess. Without this blessing my choices in life might have been quite differently.~
 ==BCMNINAF~I have already noticed we are quite different in our education and the way we look at our Goddess. She has many ways to make her plans work out.~
 ==BSandr~(Laughs) Her plans? You are right we are quite different.~
@@ -30,7 +30,7 @@ CHAIN
 IF WEIGHT #-13~Global("SanNinaf","GLOBAL",3)~THEN BCMNINAF TwoMyst2
 ~May I have some of your time apart from the others, please, Sandrah?~
 DO~SetGlobal("SanNinaf","GLOBAL",4) RealSetGlobalTimer("SanNinaInT","LOCALS",3600)~
-==BSandr~ Sure.~
+==BSandr~Sure.~
 ==BCMNINAF~You know <CHARNAME> for so much longer, you have been through the Sword Coast adventures together, despite the facts that you swore loyalty to Mystra and <CHARNAME> is a Bhaalspawn.~
 ==BSandr~Add the fact that Bhaal inseminated my own mother with one of his children and thus murdered her in childbirth, Nina. Yes, the constellation is unlikely at first glance - yet, here you are yourself in the same company.~
 ==BCMNINAF~Bhaal murdered your mother? Good to know, it makes my talk a bit easier. I trust on your confidence in Mystra's name.~
@@ -48,10 +48,10 @@ CHAIN
 IF WEIGHT #-14~Global("SanNinaf","GLOBAL",5)~THEN BCMNINAF TwoMyst3
 ~After what we have studied together, now tell me honestly, do you think <CHARNAME> is the one to prevent Bhaal's return?~
 DO~SetGlobal("SanNinaf","GLOBAL",6) RealSetGlobalTimer("SanNinaInT","LOCALS",1800)~
-==BSandr~ I am sure that <PRO_HISHER>'s role is a very important one in those events to come, Nina. From the potential I have witnessed and also the rapid way the abilities are developing it points to the one you have identified.~
-==BCMNINAF~ Your reason to be by <PRO_HISHER>'s side is this?~
-==BSandr~ It is Mystra's ultimate goal to prevent the return of the one she once aided to remove. The one to threaten the Weave should he get another chance.~
-==BCMNINAF~ This motivation would still be applicable if <CHARNAME> would fail - or not be the one you assume at all...~
+==BSandr~I am sure that <PRO_HISHER>'s role is a very important one in those events to come, Nina. From the potential I have witnessed and also the rapid way the abilities are developing it points to the one you have identified.~
+==BCMNINAF~Your reason to be by <PRO_HISHER>'s side is this?~
+==BSandr~It is Mystra's ultimate goal to prevent the return of the one she once aided to remove. The one to threaten the Weave should he get another chance.~
+==BCMNINAF~This motivation would still be applicable if <CHARNAME> would fail - or not be the one you assume at all...~
 ==BSandr~Yes.~
 ==BCMNINAF~With all the possible implications?~
 ==BSandr~Yes.~
