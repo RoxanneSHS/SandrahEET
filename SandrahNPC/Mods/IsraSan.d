@@ -36,7 +36,7 @@ DO~SetGlobal("SanIsraTalk","GLOBAL",7) RealSetGlobalTimer("SanIsraDel","GLOBAL",
 
 EXTEND_TOP RH#IsraJ 518 #1
 IF~InParty("CVSandr")~THEN REPLY~Sandrah?~GOTO IsrSanCommt
-IF~InParty("CVJenlig")~THEN REPLY~Jen'lig?~ GOTO IsrJenCommt
+IF~InParty("CVJenlig")~THEN REPLY~Jen'lig?~GOTO IsrJenCommt
 END
 
 CHAIN

@@ -1,5 +1,5 @@
 CHAIN
-IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",3)~ THEN BKindrek San1
+IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",3)~THEN BKindrek San1
 ~Though I suffer priests to be near me, I will have none of your magic! Do not ever try again to cast your healing spells on me. ~
 DO~SetGlobal("SanHealKindrek","GLOBAL",4) RealSetGlobalTimer("HeilKindrT","LOCALS",900)~
 ==BSandr~Is that a threat?~
@@ -9,10 +9,10 @@ DO~SetGlobal("SanHealKindrek","GLOBAL",4) RealSetGlobalTimer("HeilKindrT","LOCAL
 ==BSandr~You saw nothing yet. I can show you how I would use it against a brute who tries to scare me for maintaining the health and power of <CHARNAME>'s party.~
 ==BKindrek~So you really have a backbone! Perhaps you are in the wrong profession.~
 ==BSandr~I seldom make my choices without sufficient reason. ~
-==BKindrek~You are not easily provoked. I will say no more. ~ EXIT
+==BKindrek~You are not easily provoked. I will say no more. ~EXIT
 
 CHAIN
-IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",5)~ THEN BKindrek San2
+IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",5)~THEN BKindrek San2
 ~Magic only destroys. It does not preserve!~
 DO~SetGlobal("SanHealKindrek","GLOBAL",6) RealSetGlobalTimer("HeilKindrT","LOCALS",900)~
 ==BSandr~A most stupid remark in the presence of a healer. I am the granddaughter of the Goddess of All Magic, just in case you were unaware of that fact.~
@@ -23,7 +23,7 @@ DO~SetGlobal("SanHealKindrek","GLOBAL",6) RealSetGlobalTimer("HeilKindrT","LOCAL
 ==BKindrek~You are expert in it - just like you are in killing. ~EXIT
 
 CHAIN
-IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",7)~ THEN BKindrek San3
+IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",7)~THEN BKindrek San3
 ~I was really turned on by watching your movements in that battle.~
 DO~SetGlobal("SanHealKindrek","GLOBAL",8) RealSetGlobalTimer("HeilKindrT","LOCALS",900)~
 ==BSandr~Is that why you got injured in this way? Keep your eyes on our foes not on my buttocks.~
@@ -36,11 +36,11 @@ DO~SetGlobal("SanHealKindrek","GLOBAL",8) RealSetGlobalTimer("HeilKindrT","LOCAL
 =~*Turning slowly away from her he mumbles* Be vigilant, little girl, and sleep not, lest I come upon you unaware and chop you up! ~EXIT
 
 CHAIN
-IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",9)~ THEN BKindrek San4
+IF WEIGHT #-5~Global("SanHealKindrek","GLOBAL",9)~THEN BKindrek San4
 ~*Kindrek instinctively grabs his mighty halberd as a small pebble hits his temple while he has taken off his helmet to prepare for rest. He immediately recognises however that it was Sandrah who has thrown the stone at him.*~
 =~Witch, you want to fight?~
 DO~SetGlobal("SanHealKindrek","GLOBAL",10) ~
-==BSandr~ In some way or other, Berserker. My bedroll is empty tonight.~ DO~AddSpecialAbility("CVDrag10")~
+==BSandr~In some way or other, Berserker. My bedroll is empty tonight.~DO~AddSpecialAbility("CVDrag10")~
 ==BKindrek~HOHOHO, the little girl is scared to sleep alone in this dungeon? Your spells are not enough to keep the monsters away at night, is it that?~
 ==BSandr~If your love making is as lousy as your conversation, I already regret my offer.~
 ==BKindrek~You are right for once, little princess, we have already wasted too much breath on talking. Ha, you will need all your strength now for Kindrek's mighty unsheathed rapier!~DO~RestParty()~EXIT
