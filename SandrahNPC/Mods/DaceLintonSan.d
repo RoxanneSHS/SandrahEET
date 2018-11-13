@@ -32,12 +32,12 @@ DO~SetGlobal("SanDaceB","GLOBAL",9) RealSetGlobalTimer("SanDaceTime","LOCALS",16
 ==BT#Dace ~It hasn't taken me that long to find how things are really between you and <CHARNAME>.~
 ==BSandr~We have no reason to hide our love from anyone.~
 ==BT#Dace ~Hey, no, listen, kid, it wasn't my idea to propose that...~
-==BT#Dace IF~Global("SanRomPath","GLOBAL",1)~THEN~ I mean...he's smart and attractive and all - not a bad choice, oh, no.~
+==BT#Dace IF~Global("SanRomPath","GLOBAL",1)~THEN~I mean...he's smart and attractive and all - not a bad choice, oh, no.~
 ==BSandr IF~Global("SanRomPath","GLOBAL",1)~THEN~Hm, I know by now that you are not so easily to be satisfied by the avarage male yourself.~
-==BT#Dace IF~Global("SanRomPath","GLOBAL",1)~THEN~ (Sigh) Ah, the good ones are so rarely sown, kid, better grab and hold on to one if you're lucky...well, I mean you ARE lucky.~
-==BT#Dace IF~Global("SanRomPath","GLOBAL",2)~THEN~ I mean...she's smart and attractive and all - not a bad choice, oh, no.~
+==BT#Dace IF~Global("SanRomPath","GLOBAL",1)~THEN~(Sigh) Ah, the good ones are so rarely sown, kid, better grab and hold on to one if you're lucky...well, I mean you ARE lucky.~
+==BT#Dace IF~Global("SanRomPath","GLOBAL",2)~THEN~I mean...she's smart and attractive and all - not a bad choice, oh, no.~
 ==BSandr IF~Global("SanRomPath","GLOBAL",2)~THEN~I have found you are not one who is beset by prejudice - love often finds its own mysterious ways.~
-==BT#Dace IF~Global("SanRomPath","GLOBAL",2)~THEN~ (Sigh) You say it and, ah, good lovers are so rarely sown, kid, better grab and hold on to one if you're lucky...well, I mean you ARE lucky.~
+==BT#Dace IF~Global("SanRomPath","GLOBAL",2)~THEN~(Sigh) You say it and, ah, good lovers are so rarely sown, kid, better grab and hold on to one if you're lucky...well, I mean you ARE lucky.~
 EXIT
 
 CHAIN
