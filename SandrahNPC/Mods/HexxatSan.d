@@ -11,7 +11,7 @@ DO~SetGlobal("Sanhealhex","GLOBAL",4)~
 CHAIN
 IF WEIGHT #-2~Global("Sanhealhex","GLOBAL",5)~THEN BHexxat Vamphe2
 ~You are an intriguing character, priestess of Mystra.~
-DO~SetGlobal("Sanhealhex","GLOBAL",6)~ 
+DO~SetGlobal("Sanhealhex","GLOBAL",6)~
 ==Bsandr~If I would say the same about you, I hope I am not misunderstood.~
 ==BHexxat~Could you see the girl I am and forget about the state you so despise?~
 ==Bsandr~I know the one - but I do not know much about the other - yet.~
@@ -51,7 +51,7 @@ DO~SetGlobal("Sanhealhex","GLOBAL",10)~
 CHAIN
 IF WEIGHT #-2~Global("SanVampHex","LOCALS",1) ~THEN BHexxat Vamphwd
 ~They are not like us...I mean not like me...not natural.~
-DO~ SetGlobal("SanVampHex","LOCALS",2)~
+DO~SetGlobal("SanVampHex","LOCALS",2)~
 ==Bsandr~With *natural* you mean those vampires are of a different type than you and others we have met.~
 ==BHexxat~(Sigh) I know you think of us as being unnatural beings, Sandrah. These creatures here are nothing I recognise of being related to my state.~
 ==Bsandr~A different *breed* of vampires. This gets interesting.~
@@ -59,7 +59,7 @@ DO~ SetGlobal("SanVampHex","LOCALS",2)~
 ==Bsandr~The woman who once was may have done so. To restore her would be a challenge - but I would not do that against her will.~
 ==BHexxat~Let us solve this riddle at hand. Maybe we can come back to this other topic sometime.~EXIT
 
-REPLACE_ACTION_TEXT  ~renal~ ~SetGlobal("PlayerHasStronghold","GLOBAL",1)~ ~~
+REPLACE_ACTION_TEXT  ~renal~~SetGlobal("PlayerHasStronghold","GLOBAL",1)~~~
 
 EXTEND_BOTTOM Renal 48
 IF~InParty("Hexxat") OR(2) Global("PlayerHasStronghold","GLOBAL",1) !Class(Player1,THIEF_ALL) ~THEN DO~AddXPObject(Player1,11375)
