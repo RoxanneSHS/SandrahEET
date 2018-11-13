@@ -9,7 +9,7 @@ I_C_T C0Sirene 5 SanC0SirB
 CHAIN
 IF~Global("SanC0SirB","Global",2) AreaCheck("CVNar2")~THEN C0SirenJ Demo1
 ~Demons...~
-DO~ SetGlobal("SanC0SirB","Global",3) ~
+DO~SetGlobal("SanC0SirB","Global",3) ~
 ==CVSandrJ ~No one would know that better than you. And this is not meant to be an insult.~
 ==C0SirenJ ~It is not my kin I can feel around here but the evil my Lord Ilmater warns me of.~
 ==CVSandrJ ~Thank you for clarification, Sirene. I am the last person to doubt your honesty.~
@@ -18,16 +18,16 @@ EXIT
 CHAIN
 IF~Global("SanC0SirB","Global",4) ~THEN C0SirenJ Siri2
 ~Sandrah, you seem to have more insight into our quest and the foe we soon face than anyone else among us.~
-DO~ SetGlobal("SanC0SirB","Global",5) ~
+DO~SetGlobal("SanC0SirB","Global",5) ~
 ==CVSandrJ ~We all share the same knowledge, I would say. I just try to summarise the facts from time to time to see if a change of perspective maybe reveals something we have overlooked so far. My education and knowledge of lore help me to integrate what we find out into a larger picture.~
 ==C0SirenJ ~Still you impress me with those analytic skills. I wish I could counsel <CHARNAME> just as well as you do.~
 ==CVSandrJ ~Each of us plays an important role in this group, yours is no less than mine.~
-==C0SirenJ ~(Smiles) I learn to trust my skills more and more while I travel with you and <CHARNAME>. I am afraid we soon need much of that confidence to succeed.~  EXIT
+==C0SirenJ ~(Smiles) I learn to trust my skills more and more while I travel with you and <CHARNAME>. I am afraid we soon need much of that confidence to succeed.~ EXIT
 
 CHAIN
 IF~Global("SanC0SirB","Global",6) ~THEN C0SirenJ Siri3
 ~Sandrah, with all the good you do, I wonder why you did not become a paladin.~
-DO~ SetGlobal("SanC0SirB","Global",7) ~
+DO~SetGlobal("SanC0SirB","Global",7) ~
 ==CVSandrJ ~A paladin of Mystra, you mean?~
 ==C0SirenJ ~I heard about the Knights of the Mystic Fire, are they not champions of Mystra?~
 ==CVSandrJ ~Maybe not in the way you think they are. Mystra herself is the Guardian of the Weave and as such stays mostly neutral. Protection of the Weave includes working against its misuse. Neither Mystra's priests nor her knights are forces of goodness like a champion of Ilmater.~
