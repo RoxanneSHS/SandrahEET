@@ -22,7 +22,7 @@ DO~SetGlobal("SanHealValri","GLOBAL",6)~
 ==Bsandr~The power to handle the Weave lies within yourself, your concentration and imagination. Any time you try to manage the Weave you need the same dedication and concentration to do it.~
 =~The Weave is in everything and around everything, it is the many energies and forces that exist around the planes.~
 =~Casting a spell is equivalent to telling the Weave to rearrange itself to create a specific effect. I connect to the portion of the Weave I want to alter and tell it of its new form, so to say.~
-==BT2Val ~No, you're not dusty and old, Sandrah. Nobody before explained it to me in such an easily understandable way. Wizards and sorcerers seem to bury the natural aspect of the art underneath layers of artificial complexity. If I listen to you, it sounds like all I need is a very clear picture of what I want the Weave to do for me?~ DO~AddSpecialAbility("SPIN147")~
+==BT2Val ~No, you're not dusty and old, Sandrah. Nobody before explained it to me in such an easily understandable way. Wizards and sorcerers seem to bury the natural aspect of the art underneath layers of artificial complexity. If I listen to you, it sounds like all I need is a very clear picture of what I want the Weave to do for me?~DO~AddSpecialAbility("SPIN147")~
 ==Bsandr~Try it.~EXIT
 
 CHAIN
@@ -39,13 +39,13 @@ DO~SetGlobal("SanHealValri","GLOBAL",10)~
 ==BT2Val~The more you tell me about it the more I admire your abilities.~
 ==BSandr~Oh, there is not so much magic involved, it is more the knowledge of how the elements involved in the healing process work together. Much depends on the will of the patient itself. The best healer is helpless when an injured person has given himself up.~
 ==BT2Val~I am glad I have not given up my belief that my talent has some virtue, regardless of my parent's rejection.~
-==BSandr~(Smiles) Your persistence is your strength.~ EXIT
+==BSandr~(Smiles) Your persistence is your strength.~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanHealValri","GLOBAL",7)~THEN BT2Val Sanheal4
 ~Sandrah, I wonder - with you being so close to <CHARNAME> and being a priestess of the goddess of all magic, too - eh...you must have your own ideas about <PRO_HISHER> sudden magical abilities.~
 DO~SetGlobal("SanHealValri","GLOBAL",8)~
-==BSandr~ Did <PRO_HESHE> tell you about the dreams that accompany this development of skills?~
+==BSandr~Did <PRO_HESHE> tell you about the dreams that accompany this development of skills?~
 ==BT2Val~They are full of blood, murder and darkness - you think there is some dark vicious power at the source of it all?~
 ==BSandr~There is also the notion of a choice that <CHARNAME> has to do. A choice between the dark calling and the warning voices against it. The power has a high price. Too high.~
 ==BT2Val~This dark power...what is it?~
@@ -77,8 +77,8 @@ DO~SetGlobal("SanHealValri","GLOBAL",14)~
 ==BSandr~Idiot years behind you now, you know what you want today, right?~
 ==BT2Val~I know that if YOU want something, you just take action.~
 ==BSandr~Yes?~
-==BT2Val~ (Valerie quickly steps up to Sandrah and embraces her with surprising energy.)~
-=~ (After a long moment, their lips part and she smiles. Her voice is much huskier than usual) I've wanted to do that for a while now, but guess I never had the courage. It looks like we have something to talk about when this quest over, now. I'm looking forward to it.~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
+==BT2Val~(Valerie quickly steps up to Sandrah and embraces her with surprising energy.)~
+=~(After a long moment, their lips part and she smiles. Her voice is much huskier than usual) I've wanted to do that for a while now, but guess I never had the courage. It looks like we have something to talk about when this quest over, now. I'm looking forward to it.~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("ValJenB","LOCALS",2)~THEN BT2Val JenDuty
@@ -88,4 +88,4 @@ DO~SetGlobal("ValJenB","LOCALS",3)~
 ==BT2Val~I follow Toril's god of duty, obedience, and loyalty. Can you really be an evil creature when you follow the same principles?~
 ==BJenli~Manling sorceress cites main principles of githyanki. (Hiss) Why manling need god for what is inside every true blood creature? Manlings too weak without their god crutches?~
 ==BT2Val~Spare me your blasphemies - I was mistaken to think we could find common ground in why we both have come from far places to the Sword Coast.~
-==BJenli~ Common ground is duty. Common ground not has need for gods. (Hiss!)~EXIT
+==BJenli~Common ground is duty. Common ground not has need for gods. (Hiss!)~EXIT

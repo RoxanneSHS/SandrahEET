@@ -16,32 +16,32 @@ CHAIN
 IF WEIGHT #-4~Global("SanTyriB","LOCALS",5)~THEN BG#Tyris Healsan2
 ~Sandrah,is it possible to feel almost at home in a place you were forced to by mere coincidence? Guld's Teeth, I haven't thought of Yuria for nigh a tenday now..~
 DO~SetGlobal("SanTyriB","LOCALS",6) ~
-==BSandr~ You do so at this very moment, right? Anyway - we are almost in a similar situation, <CHARNAME>, you - me, even if you are a bit farther from home than any of us. Still, we find comfort in a common fate and in working and living together.~
+==BSandr~You do so at this very moment, right? Anyway - we are almost in a similar situation, <CHARNAME>, you - me, even if you are a bit farther from home than any of us. Still, we find comfort in a common fate and in working and living together.~
 ==BG#Tyris~I was thinking as well of some bound to <CHARNAME> specifically.~
 ==BSandr~You let your hair grow, feminine style, as I noticed.~
-=~ Jokes aside, you are talking of romance, I guess. A difficult issue in your case.~
+=~Jokes aside, you are talking of romance, I guess. A difficult issue in your case.~
 ==BG#Tyris~Because of your own feeling for the same person, I'm not blind to that fact.~
 ==BSandr~That was not the issue I had in mind - I was more concerned by your dilemma to decide at one time about your priorities, just in case we may discover a way for you to make it back to Yuria.~
-==BG#Tyris~ Ha, you think you will get rid of me that way - but what if <CHARNAME> chooses to come with me?~ DO~RunAwayFrom("CVSandr",20)~
+==BG#Tyris~Ha, you think you will get rid of me that way - but what if <CHARNAME> chooses to come with me?~DO~RunAwayFrom("CVSandr",20)~
 ==BSandr~You are misinterpreting my words, Tyris. I truly meant it like I said it. I will give you the necessary quietude now to contemplate about your feelings.~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("SanTyriB","LOCALS",15)~THEN BG#Tyris Healsan3
 ~Sandrah,is it possible to feel almost at home in a place you were forced to by mere coincidence? Guld's Teeth, I haven't thought of Yuria for nigh a tenday now..~
 DO~SetGlobal("SanTyriB","LOCALS",6) ~
-==BSandr~ You do so at this very moment, right? Anyway - we are almost in a similar situation, <CHARNAME>, you - me, even if you are a bit farther from home than any of us. Still, we find comfort in a common fate and in working and living together.~
+==BSandr~You do so at this very moment, right? Anyway - we are almost in a similar situation, <CHARNAME>, you - me, even if you are a bit farther from home than any of us. Still, we find comfort in a common fate and in working and living together.~
 ==BG#Tyris~I was thinking as well of some bound to <CHARNAME> specifically.~
 ==BSandr~You are talking of friendship and loyalty, I guess. A difficult issue in your case.~
 ==BG#Tyris~I have both in two different places, I'm not blind to that fact.~
 ==BSandr~I am concerned by your dilemma to decide at one time about your priorities, just in case we may discover a way for you to make it back to Yuria.~
-==BG#Tyris~ Just like me - I have no idea what to do in such a case.~
+==BG#Tyris~Just like me - I have no idea what to do in such a case.~
 ==BSandr~I am short of advice fo it myself as much as I would try to help you. I suppose it will be a matter of time and experience we will share together until the possible event. Your heart will know by then what the answer is. I will give you the necessary quietude now to contemplate about your feelings.~EXIT
 
 CHAIN
 IF WEIGHT #-4~Global("SanTyriB","LOCALS",7)~THEN BG#Tyris SanretUr1
 ~Sandrah, long time ago we have talked about a possibility for me to return to Yuria...~
 DO~SetGlobal("SanTyriB","LOCALS",8) ~
-==BSandr~ (Sigh) I have not forgotten my promise but it was not easy for me to reveal my findings to you until now. Maybe it is a good moment now...(she hesitates for an instance.)~
+==BSandr~(Sigh) I have not forgotten my promise but it was not easy for me to reveal my findings to you until now. Maybe it is a good moment now...(she hesitates for an instance.)~
 ==BG#Tyris~Yes? Be assured you cannot make anything worse for me any more.~
 ==BSandr~You are right, it may be a shock but it may also be a relief to you what I have to say. Clarity may be more important now than pain.~
 =~You have found friends here on Faerun and even love, maybe some kind of home like you left behind on Yuria.~
@@ -57,7 +57,7 @@ DO~SetGlobal("SanTyriB","LOCALS",8) ~
 ==BG#Tyris~Yes - I may have felt like one for some time already, but now I am assured I have no other choice but to accept it. It is not such a bitter pill to swallow.~
 END
 IF~Global("G#TF.TyrisMatch","GLOBAL",0)~THEN REPLY~(You have her in your arms already and lift up her chin to kiss her.) It's good to know you can no longer escape me in the way you jumped into my life. I love you.~+ SanretUr2
-IF~Global("G#TF.TyrisMatch","GLOBAL",0)~THEN REPLY~ It's good to know you can no longer escape me in the way you jumped into my life. You have your place here in our company.~+ SanretUr3
+IF~Global("G#TF.TyrisMatch","GLOBAL",0)~THEN REPLY~It's good to know you can no longer escape me in the way you jumped into my life. You have your place here in our company.~+ SanretUr3
 
 CHAIN
 IF~~THEN BG#Tyris SanretUr2

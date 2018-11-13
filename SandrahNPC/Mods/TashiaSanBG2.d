@@ -26,7 +26,7 @@ CHAIN
 IF WEIGHT #-11~Global("SanTashiaB","GLOBAL",5)~THEN BTashia SanBhalT
 ~Sandrah, you said you would always have time for a comrade in need of your aid.~
 DO~SetGlobal("SanTashiaB","GLOBAL",6)RealSetGlobalTimer("TashSanInt","LOCALS",1500)~
-==BSandr~ Sure - I assume it is not the body that requires my attention unless I have lost my diagnostic skills over night.~
+==BSandr~Sure - I assume it is not the body that requires my attention unless I have lost my diagnostic skills over night.~
 ==BTashia~You haven't, it's indeed my soul that's suffering. Given the time you travel with <CHARNAME> and the closeness of you two, you are aware of <PRO_HISHER> heritage.~
 ==BSandr~You are afraid of Bhaal's blood in our leader?~
 ==BTashia~You are not, obviously, and I am neither after all I observed so far. It's not <CHARNAME> I'm worried about so much.~

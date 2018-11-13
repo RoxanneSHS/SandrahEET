@@ -1,15 +1,15 @@
 BEGIN CVVicsis
 
 CHAIN
-IF~Global("SanVicArrst","GLOBAL",1)~ THEN CVSafgua VicHold1
-~ Stand, citizens, deliver the drow!~
+IF~Global("SanVicArrst","GLOBAL",1)~THEN CVSafgua VicHold1
+~Stand, citizens, deliver the drow!~
 DO~SetGlobal("SanVicArrst","GLOBAL",2)~
 ==Viconij~What, damned rivvil? Not again!~
-==CVSafgua~ In the name of the Council, Viconia De'Vir, you are under arrest.~
+==CVSafgua~In the name of the Council, Viconia De'Vir, you are under arrest.~
 ==CVSandrJ~You must have VERY good reasons for this action, officer.~
-==CVSafgua~ Do not try to intervene, lady, you might get in trouble yourself for accompanying an accused murderer.~
+==CVSafgua~Do not try to intervene, lady, you might get in trouble yourself for accompanying an accused murderer.~
 ==CVSandrJ~What is the accusation against her?~
-==CVSafgua~ Viconia De'Vir, you are accused of murdering Lorena Balthis...~
+==CVSafgua~Viconia De'Vir, you are accused of murdering Lorena Balthis...~
 ==Viconij~Acton Balthis' wife?~
 ==CVSafgua~So you know your victim well...~
 ==Viconij~Baah, I never met that woman and wouldn't know her on the street if I met her. The husband is all I had relations to.~
@@ -17,24 +17,24 @@ DO~SetGlobal("SanVicArrst","GLOBAL",2)~
 ==CVSandrJ~This is nonsense, officer, that relationship is long in the past. When did the murder occur?~
 ==CVSafgua~Two nights ago.~
 END
-++~Impossible, we were together in Trademeet at that time.~ + VicHold2
-++~Never could she have done it, we spend that night together at d'Arnise Hold.~ + VicHold2
-IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~I am witness that she spend the night in my bed, officer.~  + VicHold2
-++~She, eh,...she has an alibi for that night..eh, yes, she has.~ + VicHold2
+++~Impossible, we were together in Trademeet at that time.~+ VicHold2
+++~Never could she have done it, we spend that night together at d'Arnise Hold.~+ VicHold2
+IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~I am witness that she spend the night in my bed, officer.~ + VicHold2
+++~She, eh,...she has an alibi for that night..eh, yes, she has.~+ VicHold2
 
 CHAIN
-IF~~ THEN CVSafgua VicHold2
+IF~~THEN CVSafgua VicHold2
 ~Be that true or not, court is not held by me out on the street but in Council at a given date. The investigation is persued with high priority given Acton Balthis status in Amn. ~
 =~Now stand aside while I take the drow in custody. You will not oppose the Council and the Cowled Wizards openly, will you. This is the law, respect it.~
 ==CVSandrJ~Who is responsible for the investigation?~
 ==CVSafgua~Corgeig Axehand himself, as this case involves the nobility of Amn.~
 END
-++~Make sure to treat her right or our wraith will be upon you once we freed the innocent woman!~ + VicHold3
+++~Make sure to treat her right or our wraith will be upon you once we freed the innocent woman!~+ VicHold3
 ++~We will talk to Axehand immediately. She is framed by someone for sure.~+ VicHold3
 ++~You just need a scapegoat to present to the public. What can be better than a drow, bigot fool. We will get her out quickly.~+ VicHold3
 
 CHAIN
-IF~~ THEN CVSafgua VicHold3
+IF~~THEN CVSafgua VicHold3
 ~Come now, drow, resistance is useless.~
 DO~ClearAllActions() SmallWait(6) StartCutSceneMode() StartCutScene("CVViCArr")~EXIT
 
@@ -58,7 +58,7 @@ DO~ChangeAIScript("",DEFAULT)~
 ==CVSandrJ~There are some that do and they are working on a way to free you right now.~
 ==Viconi~I would laugh at anybody telling me such except for you, Sandrah. Do you have clues?~
 ==CVSandrJ ~The weapon used was a katana...~
-==Viconi ~ Impossible, Shar would not allow me to use that kind of weapon!!~
+==Viconi ~Impossible, Shar would not allow me to use that kind of weapon!!~
 ==CVSandrJ ~Exactly - the fact raised initial doubt on your guilt with Axehand but not yet enough to seek for the real culprit.~DO~SetGlobal("WeaponUse","GLOBAL",2) ~
 END
 IF~~THEN REPLY~Do not despair, Viconia, we will free you soon.~DO~ApplySpellRES("BGSLEEP","Viconia") ~EXIT
@@ -72,7 +72,7 @@ DO~ChangeAIScript("",DEFAULT)~
 ==CVSandrJ~There are some that do and they are working on a way to free you right now.~
 ==Viconi~I would laugh at anybody telling me such except for you, Sandrah. Do you have clues?~
 ==CVSandrJ IF~Global("WeaponUse","GLOBAL",1)~THEN~The weapon used was a katana...~
-==Viconi IF~Global("WeaponUse","GLOBAL",1)~THEN~ Impossible, Shar would not allow me to use that kind of weapon!!~
+==Viconi IF~Global("WeaponUse","GLOBAL",1)~THEN~Impossible, Shar would not allow me to use that kind of weapon!!~
 ==CVSandrJ IF~Global("WeaponUse","GLOBAL",1)~THEN~Exactly - the fact raised initial doubt on your guilt with Axehand but not yet enough to seek for the real culprit.~DO~SetGlobal("WeaponUse","GLOBAL",2) ~
 ==CVSandrJ IF~Global("Drowseen","GLOBAL",1)~THEN~We talked to a witness who saw the drow who killed Lorena Balthis.~
 ==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~He saw a drow? But did he see me?~
@@ -82,7 +82,7 @@ DO~ChangeAIScript("",DEFAULT)~
 ==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~No...except...hm, possible...~
 ==CVSandrJ IF~Global("Drowseen","GLOBAL",1)~THEN~Yes?~
 ==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~Except for Lolth's servants there are only few who would hate me so much that they would persue me after all this time. I do not even know if any of them is still alive.~
-=~My sisters.~ DO~SetGlobal("Drowseen","GLOBAL",2) ~
+=~My sisters.~DO~SetGlobal("Drowseen","GLOBAL",2) ~
 ==CVSandrJ ~We will continue our search, I swear it will not be long, Viconia.~
 END
 ++~We must find her - where would a drow go in this city?~+ VicSis
@@ -90,7 +90,7 @@ END
 CHAIN
 IF~~THEN Viconi  VicSis
 ~Given she is one of my surviving sisters, she has not my experience with the surface. She will seek shelter in the darkness, those tunnels or tombs that undermine this cursed town.~
-DO~ SetGlobal("SanVicArrst","GLOBAL",6) ApplySpellRES("BGSLEEP","Viconia") ~ EXIT
+DO~SetGlobal("SanVicArrst","GLOBAL",6) ApplySpellRES("BGSLEEP","Viconia") ~EXIT
 
 CHAIN
 IF WEIGHT #-9~Global("SanVicArrst","GLOBAL",8)~THEN Viconi GetOut1
@@ -98,23 +98,23 @@ IF WEIGHT #-9~Global("SanVicArrst","GLOBAL",8)~THEN Viconi GetOut1
 DO~SetGlobal("SanVicArrst","GLOBAL",9) ~
 ==CVSandrJ~The murderer has already received her punishment. Binamor DeVir is dead.~
 =~(Sandrah gives the details of your search and battle against her sister.)~
-==Viconi~Will I ever leave the Underdark behind?~ DO~JoinParty()~
+==Viconi~Will I ever leave the Underdark behind?~DO~JoinParty()~
 END
-++~For the moment let us leave this gloomy place behind, my friend.~ EXIT
-++~For the moment let us leave this gloomy place behind, my love.~ EXIT
+++~For the moment let us leave this gloomy place behind, my friend.~EXIT
+++~For the moment let us leave this gloomy place behind, my love.~EXIT
 
 CHAIN
-IF WEIGHT #-4~ Global("SanVicArrst","GLOBAL",3) ~THEN  Corgeig VicHint1
+IF WEIGHT #-4~Global("SanVicArrst","GLOBAL",3) ~THEN  Corgeig VicHint1
 ~Ah, the party of <CHARNAME>. I was somehow expecting you. You are known to stir trouble and one of your company is really a cold blooded murderer.~
 DO~SetGlobal("SanVicArrst","GLOBAL",4) SetGlobal("WeaponUse","GLOBAL",1) ~
 ==CVSandrJ~We are where trouble is present, so much is true, but we seldom stir it. Often we do what the guard was unable to perform.~
 =~But we are not here to exchange pleasantries, Axehand. If you know us so well, you will also know we are loyal to our comrads.~
 ==Corgeig~A rare virtue in Amn, even among my peer nobles.~
 END
-++~Viconia is innocent, we were together in Trademeet at that time.~ + VicHint2
-++~Never could she have done it, we spend that night together at d'Arnise Hold.~ + VicHint2
-IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~I am witness that she spend the night in my bed, officer.~  + VicHint2
-++~She, eh,...she has an alibi for that night..eh, she is misused as a scapegoat because she is drow.~ + VicHint2
+++~Viconia is innocent, we were together in Trademeet at that time.~+ VicHint2
+++~Never could she have done it, we spend that night together at d'Arnise Hold.~+ VicHint2
+IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~I am witness that she spend the night in my bed, officer.~ + VicHint2
+++~She, eh,...she has an alibi for that night..eh, she is misused as a scapegoat because she is drow.~+ VicHint2
 
 CHAIN
 IF ~~THEN  Corgeig VicHint2
@@ -137,7 +137,7 @@ END
 ++~They have no real proof for guilt and we have no real proof for innocence, as she is drow that makes her guilty enough for our laws. Let us visit the scene of the crime.~EXIT
 
 CHAIN
-IF WEIGHT #-4~ OR(3) Global("SanVicArrst","GLOBAL",5) Global("SanVicArrst","GLOBAL",6) Global("SanVicArrst","GLOBAL",7) Global("Corgwait","LOCALS",0)~THEN  Corgeig VicDrw1
+IF WEIGHT #-4~OR(3) Global("SanVicArrst","GLOBAL",5) Global("SanVicArrst","GLOBAL",6) Global("SanVicArrst","GLOBAL",7) Global("Corgwait","LOCALS",0)~THEN  Corgeig VicDrw1
 ~Ah, <CHARNAME>. You have returned with news?~
 DO~SetGlobal("Corgwait","LOCALS",1)~
 ==CVSandrJ~We have interviewed Pips a bit more closely. Fact is that he saw a drow female leave the scene after the crime - however he confirmed that he never before had met Viconia as she and Acton Balthis had their rendezvous in secret.~
@@ -146,14 +146,14 @@ DO~SetGlobal("Corgwait","LOCALS",1)~
 ==Corgeig~Who would do such a thing?~
 ==CVSandrJ~Viconia left the Underdark under turbulent circumstances to say the least. She did not leave friends behind.~
 END
-IF~ Global("Drowseen","GLOBAL",2)~THEN REPLY~Her family had to suffer hard and fell in disgrace due to her acts against the hateful Lolth. We assume one of her surviving sisters was sent to the surface to execute the revenge.~GOTO VicDrw2
+IF~Global("Drowseen","GLOBAL",2)~THEN REPLY~Her family had to suffer hard and fell in disgrace due to her acts against the hateful Lolth. We assume one of her surviving sisters was sent to the surface to execute the revenge.~GOTO VicDrw2
 IF~GlobalLT("SanVicArrst","GLOBAL",7)~THEN REPLY~Let me guess - you wouldn't believe us until we delivered that drow right to your doorstep including the bleeding weapon, he?  ~GOTO VicDrw2
 
 CHAIN
 IF~~THEN Corgeig VicDrw2
 ~Bring me that murderer and the weapon and your assumptions may be confirmed. With what you have delivered so far I will at least be able to postpone the date for the trial by a tenday.~
 END
-++~Fine, we will return.~ EXIT
+++~Fine, we will return.~EXIT
 IF~PartyHasItem("CVVICSis")~THEN REPLY~Further delay is not necessary...~GOTO VicDrw3
 
 CHAIN
@@ -169,12 +169,12 @@ DO~TakePartyItem("CVVicsis") AddexperienceParty(17500)~
 ==Corgeig~I will send notice to the jailer that your friend is free.~
 END
 ++~Let us go and bring her the good news immediately.~EXIT
-++~Let us go and pick her up again immediately.~ EXIT
+++~Let us go and pick her up again immediately.~EXIT
 
 CHAIN
-IF WEIGHT #-3~ Global("SanVicArrst","GLOBAL",4) ~THEN  Hapip VicHint3
+IF WEIGHT #-3~Global("SanVicArrst","GLOBAL",4) ~THEN  Hapip VicHint3
 ~Can you not see that this is a house of mourning. We do not receive any visitors right now.~
-DO~ SetGlobal("SanVicArrst","GLOBAL",5) SetGlobal("Drowseen","GLOBAL",1) ~
+DO~SetGlobal("SanVicArrst","GLOBAL",5) SetGlobal("Drowseen","GLOBAL",1) ~
 ==CVSandrJ~You are Acton Balthis assistant, right, the one who saw the deed?~
 ==Hapip~I saw the drow leaving the scene, that is true.~
 ==CVSandrJ~You saw Viconia, your master's former mistress?~
@@ -187,9 +187,9 @@ DO~ SetGlobal("SanVicArrst","GLOBAL",5) SetGlobal("Drowseen","GLOBAL",1) ~
 ==Hapip~They may have tried to be unseen but all in the quarter know she was a drow.~
 ==CVSandrJ~I conclude that you never saw Viconia DeVir yourself.~
 ==Hapip~I saw her on the night of the murder.~
-==CVSandrJ~How do you know? You saw a drow, that is all.~ 
+==CVSandrJ~How do you know? You saw a drow, that is all.~
 END
-++~I have the feeling we have to find that mysterious drow in order to prove Viconia's innocence.~ EXTERN CVSandrJ VicHint4
+++~I have the feeling we have to find that mysterious drow in order to prove Viconia's innocence.~EXTERN CVSandrJ VicHint4
 ++~We must inform Corgein about that fact, they must search for that drow.~EXTERN CVSandrJ VicHint4
 
 CHAIN

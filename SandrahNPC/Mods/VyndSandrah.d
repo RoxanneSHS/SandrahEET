@@ -9,7 +9,7 @@ DO~SetGlobal("Sanvyndheal","Global",4)~
 ==BSandr~Not again, please, I am Sandrah and we are comrades in arms, are we not?~
 ==BGV#Vynd~(Sigh) It is hard to overcome the habit of how to behave in the presence of a strong dominant woman.~
 ==BSandr~(Smiles) A drow matron like me, you mean?~
-==BGV#Vynd~The skin is a little too rosy for that, I admit, otherwise...~ EXIT
+==BGV#Vynd~The skin is a little too rosy for that, I admit, otherwise...~EXIT
 
 CHAIN
 IF WEIGHT #-1~Global("Sanvyndheal","Global",5)~THEN BGV#Vynd Domina2

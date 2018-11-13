@@ -1,7 +1,7 @@
 CHAIN
 IF~Global("SanSanBant","GLOBAL",1)~THEN BBhalspw Intro
 ~So, you're the famous Sandrah of Waterdeep...~
-DO~ SetGlobal("SanSanBant","GLOBAL",2)~
+DO~SetGlobal("SanSanBant","GLOBAL",2)~
 ==BSandr~I knew there was another one, a Sandra of Waterdeep in Tyr's service. I have not been to Helm's and Tyr's places in our town too often. (She slightly blushes.)~
 ==BBhalspw~(Laughs) Your staggering relationship with one of those future paladins, what was his name...Ajantis?...caused some rumours but no one really knew anything.~
 ==BSandr~Let us keep it this way, there are more important issues these days.~

@@ -40,10 +40,10 @@ DO~SetGlobal("SanZaiya","GLOBAL",6)~
 ==ZaiyaJ~The past has its ways to catch up with us regardless how far we move.~
 ==CVSandrJ~True - but it does not mean we let ourselves be haunted by its ghosts.~EXIT
 
-ADD_TRANS_ACTION BKIARA BEGIN 99 END BEGIN 0 END ~ SetGlobal("SanKiZaBha","GLOBAL",1)~
+ADD_TRANS_ACTION BKIARA BEGIN 99 END BEGIN 0 END ~SetGlobal("SanKiZaBha","GLOBAL",1)~
 
 CHAIN
-IF WEIGHT #-2~Global("SanKiZaBha","GLOBAL",2)~ THEN ZaiyaJ SanZaiya4
+IF WEIGHT #-2~Global("SanKiZaBha","GLOBAL",2)~THEN ZaiyaJ SanZaiya4
 ~It is very strange that you accompany a Bhaalspawn, Sandrah. In my studies yestereve I came across the story of Midnight and the killing of the God of Murder.~
 DO~SetGlobal("SanKiZaBha","GLOBAL",3)~
 ==CVSandrJ~My family history is even closer entwined with the dead three, Zaiya. Before his destruction Bhaal inseminated my own mother with one of his spawns and she died in childbirth.~
@@ -59,7 +59,7 @@ DO~SetGlobal("SanKiZaBha","GLOBAL",3)~
 ==CVSandrJ~It is prophesied that only a Bhaalspawn can prevent Bhaal's return. I will make sure that he or she is not alone in the final battle.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanKiZaBha","GLOBAL",4)~ THEN ZaiyaJ SanZaiya5
+IF WEIGHT #-2~Global("SanKiZaBha","GLOBAL",4)~THEN ZaiyaJ SanZaiya5
 ~Sandrah, have you ever considered the Bhaalspawn to become the next God of Murder might be very close to you?~
 DO~SetGlobal("SanKiZaBha","GLOBAL",5)~
 ==CVSandrJ~My heart tells me otherwise, my friend. Every day I hear <CHARNAME>'s words and observe the deeds we accomplish. I trust my feelings absolutely.~
@@ -83,7 +83,7 @@ DO~SetGlobal("SanInterKiara","LOCALS",2)~
 ==BKiara~Go on.~
 ==BSandr~<CHARNAME> and our common fate will shape the Realms significantly. The outcome and the direction are still open. You say I am a hindrance? Only on one of the paths - I am a faithful supporter on the other one.~
 ==BKiara~You have made your choice...(sigh)...I wish everything would be so clear for all involved...~
-==BSandr~If you have a choice to make, do so wisely. You will meet strong opposition if you want to corrupt what is dear to me and try to open dark portals that lead to - destruction. (Yours and my beloved one's...)~  EXIT
+==BSandr~If you have a choice to make, do so wisely. You will meet strong opposition if you want to corrupt what is dear to me and try to open dark portals that lead to - destruction. (Yours and my beloved one's...)~ EXIT
 
 CHAIN
 IF WEIGHT #-2~Global("SanRepaKiara","LOCALS",1)~THEN BKiara SanInterest2

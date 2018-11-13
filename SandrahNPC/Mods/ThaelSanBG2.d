@@ -19,4 +19,4 @@ DO~SetGlobal("SanThaMid","LOCALS",1) ~
 ==BSandr~Why do think you know anything about priestesses of Mystra and their habits then?~
 ==BThael~Elves live a long life, you know that. Learning never ends.~
 ==BSandr~(Smiles) An attitude I share, Thael. If you like, I will tell you the story one of these evenings at our camp fire.~
-==BThael~(The moon elf nods silently.)~ EXIT
+==BThael~(The moon elf nods silently.)~EXIT
