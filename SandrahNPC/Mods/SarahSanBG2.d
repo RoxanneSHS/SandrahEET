@@ -1,7 +1,7 @@
 //Sarah ranger
 
 CHAIN
-IF WEIGHT #-2~Global("SanSarahR","GLOBAL",1)~ THEN K#SarahB Forestlove1
+IF WEIGHT #-2~Global("SanSarahR","GLOBAL",1)~THEN K#SarahB Forestlove1
 ~You seem to feel really relaxed out here in the forest, Sandrah, although you are obviously a city girl.~
 DO~SetGlobal("SanSarahR","GLOBAL",2) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
 ==BSandr~You are a good observer...(laughs)...well, such is to be expected from a ranger.~
@@ -14,7 +14,7 @@ DO~SetGlobal("SanSarahR","GLOBAL",2) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 ==BSandr~(Smiles.) In such a case I will always be willing to share my views with you.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanSarahR","GLOBAL",3)~ THEN K#SarahB Forestlove2
+IF WEIGHT #-2~Global("SanSarahR","GLOBAL",3)~THEN K#SarahB Forestlove2
 ~I have to confess one of my many errors about you, Sandrah.~
 DO~SetGlobal("SanSarahR","GLOBAL",4) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
 ==BSandr~(Smiles and turns to Sarah with Pelligram standing beside her rubbing her nose on Sandrah's thigh. The large cat purrs lowly in rhythm to the gentle strokes she receives between her ears.)~
@@ -26,11 +26,11 @@ DO~SetGlobal("SanSarahR","GLOBAL",4) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 ==BSandr~Trust your ranger's senses more often then, my friend.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanSarahR","GLOBAL",5)~ THEN K#SarahB Forestlove3
+IF WEIGHT #-2~Global("SanSarahR","GLOBAL",5)~THEN K#SarahB Forestlove3
 ~Sandrah, from what the others have told me I learned who your father is, wow.~
 =~But what puzzles me is that nobody mentions your mother ever. Will you share maybe a bit of memory with me?~
 DO~SetGlobal("SanSarahR","GLOBAL",6) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
-==BSandr~ I have no own memory of my mother - she died when I was just one year old - and still, it is just like I spend my whole youth with her.~
+==BSandr~I have no own memory of my mother - she died when I was just one year old - and still, it is just like I spend my whole youth with her.~
 ==K#SarahB~How's that?~
 ==BSandr~My father kept her alive, she was with us in every moment. At least his vision of her was part of our little family.~
 ==K#SarahB~That's happy and sad at the same time, I guess hearing so much about her could have made you miss her even more.~
@@ -50,7 +50,7 @@ DO~SetGlobal("SanSarahR","GLOBAL",6) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 ==K#SarahB~That...it means a lot to me to hear you say this...oh...you got me rambling again...~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanSarahR","GLOBAL",7)~ THEN K#SarahB Forestlove4
+IF WEIGHT #-2~Global("SanSarahR","GLOBAL",7)~THEN K#SarahB Forestlove4
 ~Sandrah, don't touch it, please.~
 DO~SetGlobal("SanSarahR","GLOBAL",8) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
 ==BSandr~I had no intention to do that, it is so fragile and beautiful, even if it is a deadly trap. (The two girls are enchanted by a spider web glistening with drops of the recent rain that spans between two flower stalks. It is indeed a little masterwork of architecture.)~
@@ -76,10 +76,10 @@ DO~SetGlobal("SanSarahR","GLOBAL",8) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 ==K#SarahB~(Looks around for a moment like coming out of a dream.) I almost forgot where we are, it's true.~EXIT
 
 CHAIN
-IF WEIGHT #-2~Global("SanSarahR","GLOBAL",9)~ THEN K#SarahB Forestlove5
+IF WEIGHT #-2~Global("SanSarahR","GLOBAL",9)~THEN K#SarahB Forestlove5
 ~Sandrah, we talked some time ago about my prejudices - and errors.~
 DO~SetGlobal("SanSarahR","GLOBAL",10) RealSetGlobalTimer("SanSarT","LOCALS",1800)~
-==BSandr~ Most of them have been overcome, right?~
+==BSandr~Most of them have been overcome, right?~
 ==K#SarahB~Most have been turned around completely, at least in my thinking and my feelings towards you...~
 ==BSandr~(Lays her arm around Sarah's waist as they continue to walk together.)~
 ==K#SarahB~I have found that you are open to most things...even...oh...~
@@ -93,7 +93,7 @@ DO~SetGlobal("SanSarahR","GLOBAL",10) RealSetGlobalTimer("SanSarT","LOCALS",1800
 ==K#SarahB ~(She bites her lip and a short fearful expression shadows her face.) Yes?~
 ==BSandr~(Embraces Sarah.) We are using far too many words instead of acting like we should...~
 ==K#SarahB ~(She sinks into the embrace and offers her half opened lips to Sandrah.) Prevent me from talking, please.~
-==BSandr~(Their first kiss seems to last an eternity...just to be followed by another one.)~DO~ StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~ EXIT
+==BSandr~(Their first kiss seems to last an eternity...just to be followed by another one.)~DO~StartCutSceneMode() Wait(2) FadeToColor([30.0],0) Wait(4) FadeFromColor([30.0],0) Wait(2) EndCutSceneMode()~EXIT
 
 
 

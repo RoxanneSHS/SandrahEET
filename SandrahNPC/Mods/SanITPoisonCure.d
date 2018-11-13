@@ -1,5 +1,5 @@
 EXTEND_TOP Lothan 1 #1
-IF~ Global("CVLotPlot","GLOBAL",0)InParty("CVSandr")~ THEN REPLY ~ I have the Sword Coast's most experienced healer in my party, scum. Your little intrigues cannot threaten me.~GOTO 3
+IF~Global("CVLotPlot","GLOBAL",0)InParty("CVSandr")~THEN REPLY ~I have the Sword Coast's most experienced healer in my party, scum. Your little intrigues cannot threaten me.~GOTO 3
 END
 
 CHAIN
@@ -8,9 +8,9 @@ IF WEIGHT #-7~Global("CVLotPlot","GLOBAL",1)~THEN BSandr CVLotwy1
 =~(She only starts breathing again after she has sealed the satchel into another layer of cloth and stowed it away in her backpack.)~
 DO~SetGlobal("CVLotPlot","GLOBAL",2)~
 END
-++~Uuurgh, disgusting...~ DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
-++~What was that for? Some mad healer's interest?~DO~ IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
-++~Are you trying to find a cure for our state by this, counsellor?~ DO~ IncrementGlobal("Sanpoints","GLOBAL",1)~+ CVLotwy2
+++~Uuurgh, disgusting...~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
+++~What was that for? Some mad healer's interest?~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~+ CVLotwy2
+++~Are you trying to find a cure for our state by this, counsellor?~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~+ CVLotwy2
 
 CHAIN
 IF~~THEN BSandr CVLotwy2
@@ -32,16 +32,16 @@ IF~~THEN BSandr CVLotwy4
 ~I need outside help anyway to identify the nature of the poison. The only person around here with the equipment to analyse my sample would be Thalantyr at the High Hedge. ~
 =~Once he has identified what has been given to us, I can counsel you on a possible cure. We may then decide to persue that possibility or to return to Lothander.~
 END
-++~I agree, we still have enough time for this consultation and we will make a decision when we know the facts.~DO~ SetGlobal("CVLotPlot","GLOBAL",3)~  EXIT
-++~No, I will risk nothing. There are too many *if* and *when* in your strategy. Let's face the sad truth and cooperate with Lothander.~ EXIT
-++~As long as there is a solid chance to avoid the blackmail we should take it. Let's consult Thalantyr immediately.~DO~ SetGlobal("CVLotPlot","GLOBAL",3)~  EXIT
+++~I agree, we still have enough time for this consultation and we will make a decision when we know the facts.~DO~SetGlobal("CVLotPlot","GLOBAL",3)~ EXIT
+++~No, I will risk nothing. There are too many *if* and *when* in your strategy. Let's face the sad truth and cooperate with Lothander.~EXIT
+++~As long as there is a solid chance to avoid the blackmail we should take it. Let's consult Thalantyr immediately.~DO~SetGlobal("CVLotPlot","GLOBAL",3)~ EXIT
 
 EXTEND_TOP Thalan 35 #3
-IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
+IF~Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~THEN REPLY ~We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~GOTO CVLotwy5
 END
 
 EXTEND_TOP Thalan 1 #3
-IF~ Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~ THEN REPLY ~ We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~ GOTO CVLotwy5
+IF~Global("CVLotPlot","GLOBAL",3)InParty("CVSandr") !Global("PartyCured","GLOBAL",1)~THEN REPLY ~We have been poisoned, Thalantyr! My counselor and healer Sandrah has proposed to seek your advice.~GOTO CVLotwy5
 END
 
 CHAIN
@@ -74,7 +74,7 @@ IF~~THEN Thalan CVLotwy6
 ==Thalan~Not something you can buy in any store along the Sword Coast, as far as I know.~
 ==CVSandrJ~The only one to provide us with it that I can think of is the beast itself.~
 END
-++~Do I get that right, Sandrah, we need Holy Water and Aescalus Herb - and then we need to find and defeat a Great Poisonous Wyvern? That's all?~ + CVLotwy7
+++~Do I get that right, Sandrah, we need Holy Water and Aescalus Herb - and then we need to find and defeat a Great Poisonous Wyvern? That's all?~+ CVLotwy7
 
 CHAIN
 IF~~THEN Thalan CVLotwy7
@@ -85,7 +85,7 @@ IF~~THEN Thalan CVLotwy7
 =~I am sure we can find one there sooner or later. My only concern is the time pressure we are under.~
 END
 ++~If this is the case, let us make haste to get those things and kill that beast!~DO~SetGlobal("CVLotPlot","GLOBAL",5)~EXIT
-++~We know where to buy those things and we know our way through the Cloakwood by now. Let's go.~ DO~SetGlobal("CVLotPlot","GLOBAL",5)~EXIT
+++~We know where to buy those things and we know our way through the Cloakwood by now. Let's go.~DO~SetGlobal("CVLotPlot","GLOBAL",5)~EXIT
 ++~It was a valid attempt, Sandrah, but our time is nearly up. We will not achieve this goal in time. Let us take the Lothander offer.~EXIT
 
 CHAIN

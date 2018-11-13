@@ -5,7 +5,7 @@ I_C_T RasaadJ_ 65 SanRaasShar
 END
 
 CHAIN
-IF~ Global("SanRaasShar","GLOBAL",4)~THEN BRasaad_  SanRaasShar2
+IF~Global("SanRaasShar","GLOBAL",4)~THEN BRasaad_  SanRaasShar2
 ~May I come back to the topic of how Mystra and Shar are related to each other, Sandrah?~
 DO~SetGlobal("SanRaasShar","GLOBAL",5)~
 ==Bsandr~You called them *keepers of Weave and Shadow Weave*, which indicates you have already some knowledge of the issue.~

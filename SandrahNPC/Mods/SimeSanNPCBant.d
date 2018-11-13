@@ -23,7 +23,7 @@ DO~SetGlobal("SansimeB","LOCALS",5)RealSetGlobalTimer("SanSimeOff","LOCALS",2000
 CHAIN
 IF WEIGHT #-6~Global("SansimeB","LOCALS",6)~THEN BSime SanSime3
 ~Our string of things we have in common seems to have no end, Sandrah.~
-DO~SetGlobal("SansimeB","LOCALS",7)RealSetGlobalTimer("SanSimeOff","LOCALS",2000)~  
+DO~SetGlobal("SansimeB","LOCALS",7)RealSetGlobalTimer("SanSimeOff","LOCALS",2000)~ 
 ==BSandr~As a ranger you must enjoy it very much to be out here in the natural landscape.~
 ==BSime~You may be a child of the City of Splendour but your love for nature is obvious - the first thing I noticed about you was of course your animal companion.~
 ==BSandr~My friendship with Pelligram is a story for another talk. The most enjoyable part of my home in Waterdeep was the large garden around our house that merged with the woodland on the slopes of Mount Waterdeep. It was full of plants and creatures. My mother had loved it in her time and it seems I have inherited that attitude.~
@@ -36,6 +36,6 @@ IF WEIGHT #-6~Global("SanSimeSol","LOCALS",1)~THEN BSime SanSime4
 ~Sandrah, did it happen to you as well...I mean being attacked and pursued due to your father - in order to hurt him.~
 DO~SetGlobal("SanSimeSol","LOCALS",2)RealSetGlobalTimer("SanSimeOff","LOCALS",2000)~
 ==BSandr~It is hard to tell. When I left the security of my father's house I encountered many attacks and have made myself an own bunch of mighty foes. Since I mostly act along Elminster's and Midnight's line most of them would be unfriendly to me regardless of my father.~
-==BSime~ But...does it make you feel bad to attract further enemies to <CHARNAME> and our friends?~
+==BSime~But...does it make you feel bad to attract further enemies to <CHARNAME> and our friends?~
 ==BSandr~As you know by now, <CHARNAME> has many against <PRO_HIMHER> due to the Bhaal heritage. Our unity makes us strong and anyone pursuing one of us will have to face all of us. We are friends, Sime, companions and we do not turn away if one of us needs the others to help.~
 ==BSime~Thank you for this confirmation. (Smiles) Attitude wise, I am not the only ranger in this group.~EXIT
