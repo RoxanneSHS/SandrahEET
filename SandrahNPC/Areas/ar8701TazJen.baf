@@ -8,6 +8,9 @@ SetGlobal("SanTazPatrl","Global",2)
 CreateCreature("TAZOK_",[400.200],13)
 Wait(2)
 ActionOverride("Tazok",SetNumTimesTalkedTo(1))
+Wait(1)
+ActionOverride("tazok",DestroyItem("mihp1"))
+Wait(1)
 ActionOverride("Tazok",StartDialogueNoSet(LastSeenBy(Myself)))
 END
 
