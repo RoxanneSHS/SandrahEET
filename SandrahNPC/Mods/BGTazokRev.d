@@ -35,7 +35,7 @@ IF~~THEN TAZOK_ 104
 ==TAZOK_~Ah, that blasted sword!! I told the sorcerer to leave it be, I knowed it would only be trouble. Mulahey, baah, he just stole the sheath for its glitter!~
 ==CVJenliJ~Tell Jen'lig who sorcerer, tell where sorcerer?~
 ==TAZOK_~Baah, strange reptile - I tell you where MY sword will be in a second - it will be in your guts!~
-DO~SetGlobal("SanTazPatrl","GLOBAL",3) DestroyItem("mihp1") Enemy() Attack("CVJenlig") ~EXIT
+DO~SetGlobal("SanTazPatrl","GLOBAL",3) DestroyItem("mihp1") Wait(2) Enemy() Attack("CVJenlig") ~EXIT
 
 CHAIN
 IF~~THEN  TAZOK_ 105
