@@ -2532,8 +2532,8 @@ END
 IF~~THEN BEGIN StopRom
 SAY~Yes? (She raises an eyebrow suspiciously.)~
 IF~OR(2) GlobalGT("Kivshil","GLOBAL",7) GlobalGT("PKivshil","GLOBAL",7)OR(2) InParty("Kivan") InParty("P#Kivan")~THEN REPLY~Your relationship with Kivan goes too far for my liking. Stop it.~GOTO StopRomH
-IF~InParty("Coran")GlobalGT("SanCoran","LOCALS",4) Global("SanRomPath","GLOBAL",1)~THEN REPLY~Your relationship with Coran goes too far for my liking. ~DO~SetGlobal("SanCoran","LOCALS",18)~GOTO StopRomF
-IF~InParty("Coran")GlobalGT("SanCoran","LOCALS",4) ~THEN REPLY~Your relationship with Coran goes too far for my liking. ~GOTO StopRomF
+IF~InParty("Coran")GlobalGT("SanCoran","LOCALS",4) Global("SanRomPath","GLOBAL",1)~THEN REPLY~Your relationship with Coran goes too far for my liking. ~DO~SetGlobal("SanCoran","LOCALS",18)~GOTO StopRom2
+IF~InParty("Coran")GlobalGT("SanCoran","LOCALS",4) Global("SanRomPath","GLOBAL",2)~THEN REPLY~Your relationship with Coran goes too far for my liking. ~GOTO StopRomF
 IF~GlobalGT("SanBooTlk","GLOBAL",3)InParty("Minsc")~THEN REPLY~Your relationship with Minsc goes too far for my liking. Stop it.~GOTO StopRomH
 IF~GlobalGT("SanGarr1","GLOBAL",5)InParty("Garrick")~THEN REPLY~Your relationship with Garrick goes too far for my liking. ~GOTO StopRomF
 IF~GlobalGT("SanXanA","GLOBAL",5) InParty("XAN")~THEN REPLY~Your relationship with Xan goes too far for my liking. ~DO~SetGlobal("SanXanA","GLOBAL",23)~GOTO StopRomF
