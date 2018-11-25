@@ -70,7 +70,7 @@ IF~Global("SantalosRang","GLOBAL",4)~THEN CVTalos TalosRanger1
 DO~SetGlobal("SantalosRang","GLOBAL",5)Enemy() ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS) ReallyForceSpell(Myself,CLERIC_IRONSKIN)~EXIT
 
 CHAIN
-IF~Global("SanBHTalos","GLOBAL",4)~THEN CVTalos AdaSteal
+IF~Global("SanBHTalos","GLOBAL",4)AreaCheck("bh2200")~THEN CVTalos AdaSteal
 ~Congratulations, my dear priestess. You and the Bhaalspawn never miss a chance to cross the Storm Lord's path!~
 ==CVSandrJ~Another of your little intrigues has been destroyed. I am *glad* we have added once again to the Storm Lord's amusement.~
 ==CVTalos~You got that right, girl. You amuse me. I care little about the outcome of my scheming - and the bloodshed your party has caused among those scaly beasts is as much a pleasure for me than any other result of this plot.~
