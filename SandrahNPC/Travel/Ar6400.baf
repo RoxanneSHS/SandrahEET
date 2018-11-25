@@ -14,3 +14,12 @@ THEN
 RESPONSE #100
 SetGlobal("SanChoices","ar6400",2)
 END
+
+IF
+GlobalLT("SanChoices","ar6400",2)
+!InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanChoices","ar6400",2)
+RevealAreaOnMap("ar3000")
+END

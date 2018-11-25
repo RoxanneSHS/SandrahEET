@@ -4345,7 +4345,7 @@ EXIT
 CHAIN
 IF ~Global("SanCoran","LOCALS",6)~THEN BSANDR SanCoranSi
 ~(Sandrah has inspected the dusted celesta in the remote corner of the inn's public room. Some muted notes begin to evolve into a melody under Sandrah's adept fingers.)~
-DO~SetGlobal("SanCoran","LOCALS",7) RealSetGlobalTimer("SanCoranTi","LOCALS",600)~
+DO~SetGlobal("SanCoran","LOCALS",7) RealSetGlobalTimer("SanCoranTi","LOCALS",620)~
 == BCORAN~Hmmm, dadada...~
 == BSANDR ~Coran I heard you sing before, I really need your voice for this little tune, my own would spoil the whole performance.~
 == BCORAN~(Coran dreamily closes his eyes.) Keep playing, I do not know the tune but your fingers already play the melody on my spine and nerves...yes... ~
@@ -4384,7 +4384,7 @@ EXIT
 CHAIN
 IF ~Global("SanCoran","LOCALS",10)~THEN BSANDR SanCorVine
 ~ Two bottles of wine? Is that not a bit too much at once?~
-DO ~SetGlobal("SanCoran","LOCALS",11) RealSetGlobalTimer("SanCoranTi","LOCALS",1800)~
+DO ~SetGlobal("SanCoran","LOCALS",11) RealSetGlobalTimer("SanCoranTi","LOCALS",1600)~
 == BCORAN~Kitten, I was not totally sure which one you would prefer, so I brought along two different ones for you to decide, the sweet one in this bottle or the fruity one in the other.~
 == BSANDR~You know well, my expert, the sweet one gives you a short glimpse into paradise, but it will not last long. What is left is a sticky feeling in the mouth and maybe even a bit of a headache.~
 = ~That dry fruity one may not reveal its potential at the first sip, but the more time you allow it to settle on you, the more of its depth you recognise. The taste in your mouth stays for a long while and you even experience new nuances over time.~
