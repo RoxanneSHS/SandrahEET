@@ -4436,7 +4436,7 @@ DO ~SetGlobal("SanCoran","LOCALS",16)~
 == BCORAN~No wonder, the way you have dressed tonight is wonderful but surely not keeping you warm.(Coran swiftly lifts Sandrah onto the rest of his armchair and removes her high heeled slippers to massage her naked feet. Slowly but expertly his fingers start to move upwards on her leg that extends from her glimmering night shirt.)~
 == BSANDR~Hmmm. It starts to get a bit warmer. (Her own hands have vanished beneath the morning gown Coran is wearing after his bath at the inn.)~
 == BCORAN~(Coran lifts his lightweight lover up and starts to move towards the staircase.) Soon, my sweet prey, it will get pretty hot. Mmpf.~
-== BSANDR~(Sandrah's hungry mouth has already stopped any further words from the elf.)~
+== BSANDR~(Sandrah's mouth has already stopped any further words from the elf.)~
 DO~RestParty()~
 EXIT
 
