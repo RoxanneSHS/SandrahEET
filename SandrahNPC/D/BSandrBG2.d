@@ -521,7 +521,7 @@ END
 // Landed in the Stormhorns
 IF ~Global("Airjump","LOCALS",3)Global("Nibfly","GLOBAL",2)~THEN BEGIN LandStorm1
 SAY ~Is everybody fine? Some healing required?~
-IF ~~THEN REPLY ~He has warned us about the landing part. Oh, he is gone again already. So let us take a look at where we are.~DO ~SetGlobal("Nibfly","GLOBAL",5)~EXIT
+IF ~~THEN REPLY ~He has warned us about the landing part. Oh, he is gone again already. So let us take a look at where we are.~DO ~SetGlobal("Airjump","LOCALS",4) SetGlobal("Nibfly","GLOBAL",5) SetGlobal("SanBreStorm","ar3520",1)~EXIT
 END
 
 IF ~Global("Airjump","LOCALS",3)Global("Nibfly","GLOBAL",3)~THEN BEGIN LandStorm3
