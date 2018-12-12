@@ -1,7 +1,9 @@
 IF
-OR(2)
-SpellCastOnMe([PC],CLERIC_LESSER_RESTORATION) 
-SpellCastOnMe([PC],CLERIC_RESTORATION) 
+Global("tannerplot2","GLOBAL",3)
+OR(3)
+SpellCastOnMe([ANYONE],CLERIC_LESSER_RESTORATION)
+SpellCastOnMe([ANYONE],CLERIC_RESTORATION)
+SpellCastOnMeRES("CVResto","CVsandr")
 Global("Restored","LOCALS",0)
 THEN
 RESPONSE #100
@@ -10,3 +12,4 @@ SetGlobal("Restored","LOCALS",1)
 Wait(2)
 StartDialogNoSet([PC])
 END
+ 
