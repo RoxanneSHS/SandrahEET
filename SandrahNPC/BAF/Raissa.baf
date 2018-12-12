@@ -1,8 +1,7 @@
 IF
-OR(3)
+OR(2)
 SpellCastOnMe([PC],CLERIC_LESSER_RESTORATION) 
 SpellCastOnMe([PC],CLERIC_RESTORATION) 
-SpellCastOnMeRES("cvresto","CVSandr")
 Global("Restored","LOCALS",0)
 THEN
 RESPONSE #100
