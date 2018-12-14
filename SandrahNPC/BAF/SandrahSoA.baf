@@ -1725,6 +1725,8 @@ Global("SanDetect","ar2000",0)
 Delay(6)
 THEN
 RESPONSE #100
+DisplayStringHead(Myself,@1006)
+Wait(4)
 ReallyForceSpellRES("Sppr104","Trskin06")
 SetGlobal("SanDetect","ar2000",1)
 END
