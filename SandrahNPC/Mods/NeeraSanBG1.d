@@ -84,7 +84,7 @@ END
 IF~!Dead("Neera")~THEN REPLY~I am looking for a wild mage named Adoy.~EXTERN Neadoy 2
 
 CHAIN
-IF WEIGHT #-2~Global("SanNeeraBG2B","GLOBAL",1)~THEN BNeera_ SanNeera22
+IF WEIGHT #-2~Global("SanNeeraBG2B","GLOBAL",1)~THEN BNeera SanNeera22
 ~Why are you looking so depressed after our victory over the Red Wizards? I thought you hate them just as much as I do.~
 DO~SetGlobal("SanNeeraBG2B","GLOBAL",2)~
 ==CVSandrJ~Even more than before, now after this experience. Yes, we have defeated them, but it is not a victory to celebrate.~
