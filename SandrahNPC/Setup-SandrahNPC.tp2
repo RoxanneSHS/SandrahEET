@@ -4370,7 +4370,7 @@ COPY_EXISTING ~Imoen1.CRE~ ~override/Imoen1.CRE~
               ~Imoen211.CRE~ ~override/Imoen211.CRE~
               ~Imoen213.CRE~ ~override/Imoen213.CRE~
               ~Imoendrm.cre~ ~override/Imoendrm.CRE~
- WRITE_BYTE 0x238 17 // 17 STR
+ WRITE_BYTE 0x238 13 
  WRITE_ASCII 0x34 ~Nimoens~ #8
  WRITE_ASCII 0x3c ~Nimoenm~ #8
 
