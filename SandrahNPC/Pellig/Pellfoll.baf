@@ -19,6 +19,7 @@ ChangeEnemyAlly("Pellig",CONTROLLED)
 END
 
 IF
+Delay(6)
 Global("HaiassJumpOn","GLOBAL",1)
 Global("HaiassSeUne","GLOBAL",1)
 !InActiveArea("haiass")
