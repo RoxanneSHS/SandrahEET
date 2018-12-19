@@ -75,3 +75,12 @@ StartCutSceneMode()
 		EndCutSceneMode()
 		SetGlobal("SanHintFactory","GLOBAL",13)
 END
+
+IF
+Global("SanSharkta","GLOBAL",7)
+InParty("CVShau")
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SanSharkta","GLOBAL",8)
+END
