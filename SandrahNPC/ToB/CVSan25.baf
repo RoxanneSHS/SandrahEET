@@ -618,7 +618,6 @@ See(NearestEnemyOf(Myself))
 Range(NearestEnemyOf(Myself),20)
 THEN
 RESPONSE #100
-EquipMostDamagingMelee()
 AttackReevaluate(NearestEnemyOf(Myself),30)
 END
 
