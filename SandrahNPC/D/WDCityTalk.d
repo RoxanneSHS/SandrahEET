@@ -120,3 +120,6 @@ IF~RandomNum(3,3)~THEN BEGIN WDWatch3
 SAY ~I'm guardian not guide. Find yourself a map at Bloomwiffler's.~
 IF~~THEN EXIT
 END
+
+ADD_STATE_TRIGGER Watch 0
+~!AreaCheck("cvelm1")~
