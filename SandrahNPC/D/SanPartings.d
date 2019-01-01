@@ -444,22 +444,15 @@ IF ~InParty("CVSandr")~THEN REPLY ~Sorry, my mistake, please stay with us, Mazzy
 IF ~InParty("CVSandr")~THEN REPLY ~It is just a temporary thing, Mazzy, we will shortly pick you up in Trademeet again.~GOTO 6
 END
 
-ADD_TRANS_TRIGGER IMOENP_ 4
+ADD_TRANS_TRIGGER IMOENP_ 0
 ~!InParty("CVSandr")~
 
-ADD_TRANS_TRIGGER IMOENP_ 7
-~!InParty("CVSandr")~
-
-EXTEND_BOTTOM   IMOENP_ 4
-IF~InParty("CVSandr") ~THEN REPLY~No, stay with me.~EXIT
-IF~InParty("CVSandr") GlobalGT("SanImoRetWD","GLOBAL",3)~ THEN REPLY~I think it best.~EXTERN CVSandrJ ImoSendWDSHP
-IF~InParty("CVSandr") GlobalLT("SanImoRetWD","GLOBAL",4)~ THEN REPLY~I think it best.~GOTO 5
-END
-
-EXTEND_BOTTOM   IMOENP_ 7
-IF~InParty("CVSandr") ~THEN REPLY~No, stay with me.~EXIT
-IF~InParty("CVSandr") GlobalGT("SanImoRetWD","GLOBAL",3)~ THEN REPLY~I think it best.~EXTERN CVSandrJ ImoSendWDSHP
-IF~InParty("CVSandr") GlobalLT("SanImoRetWD","GLOBAL",4)~ THEN REPLY~I think it best.~GOTO 5
+EXTEND_BOTTOM   IMOENP_ 0
+IF~InParty("CVSandr") ~THEN REPLY~No, stay with me.~DO~SetGlobal("KickedOut","LOCALS",0)
+ActionOverride("IMOEN2",JoinParty())~EXIT
+IF~InParty("CVSandr") GlobalGT("SanImoRetWD","GLOBAL",3)~ THEN REPLY~I think it's best.~EXTERN CVSandrJ ImoSendWDSHP
+IF~InParty("CVSandr") GlobalLT("SanImoRetWD","GLOBAL",4)~ THEN REPLY~I think it's best.~DO~SetGlobal("KickedOut","LOCALS",1)
+ChangeAIScript("",DEFAULT)~EXIT
 END
 
 CHAIN
