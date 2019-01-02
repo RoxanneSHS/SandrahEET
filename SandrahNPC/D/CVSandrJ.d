@@ -6209,17 +6209,17 @@ ADD_TRANS_TRIGGER GALILE 0
 ~!InParty("CVSandr")~
 
 EXTEND_BOTTOM GALILE 0
-IF ~InParty("CVSandr")~THEN REPLY ~And what have your observations revealed to you?~GOTO 66
-IF ~InParty("CVSandr")~THEN REPLY ~Study on, I shall not distract your gaze.~GOTO 66
+IF ~InParty("CVSandr")~THEN REPLY ~And what have your observations revealed to you?~GOTO s66
+IF ~InParty("CVSandr")~THEN REPLY ~Study on, I shall not distract your gaze.~GOTO s66
 END
 
 APPEND GALILE
-IF~~THEN BEGIN 66
+IF~~THEN BEGIN s66
 SAY~Two bright new stars were born on the firmament just recently. One of them in Mystra's belt, the other is even more strange as it now adds to an insignificant unnamed constellation a new meaning - it is the old elvish symbol for *hope*. ~
-IF~~THEN REPLY~What meaning has the appearance of a new star for us? ~GOTO 67
+IF~~THEN REPLY~What meaning has the appearance of a new star for us? ~GOTO s67
 END
 
-IF~~THEN BEGIN 67
+IF~~THEN BEGIN s67
 SAY~They were both born in the region of the night sky where the gods are represented. Strange indeed.~
 IF~~THEN REPLY~There are probably no new gods born these days. Anything else of more interest?~GOTO 2
 END
