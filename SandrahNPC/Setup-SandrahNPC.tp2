@@ -4538,7 +4538,6 @@ END
 COPY_EXISTING ~Sharte.CRE~ ~override/Sharte.CRE~
               ~Sharte4.CRE~ ~override/Sharte4.CRE~
               ~Sharte6.CRE~ ~override/Sharte6.CRE~
- WRITE_LONG 0x244 5 //Kit
  WRITE_BYTE 0x273 6 //Class Paladin
  WRITE_BYTE 0x23b 14 // 14 Wis
  WRITE_BYTE 0x23d 15 //CON
@@ -4556,7 +4555,6 @@ BUT_ONLY
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ADShar.CRE~ THEN BEGIN
 COPY_EXISTING ~ADShar.CRE~ ~override/ADShar.CRE~
- WRITE_LONG 0x244 5 //Kit
  WRITE_BYTE 0x273 6 //Class Paladin
  WRITE_BYTE 0x23b 14 // 14 Wis
  WRITE_BYTE 0x23d 15 //CON
@@ -4574,7 +4572,6 @@ END
  
 ACTION_IF FILE_EXISTS_IN_GAME ~Sharte12.CRE~ THEN BEGIN
 COPY_EXISTING ~Sharte12.CRE~ ~override/Sharte12.CRE~
- WRITE_LONG 0x244 5 //Kit
  WRITE_BYTE 0x273 6 //Class Paladin
  WRITE_BYTE 0x23b 14 // 14 Wis
  WRITE_BYTE 0x23d 15 //CON
