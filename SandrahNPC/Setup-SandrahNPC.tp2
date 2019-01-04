@@ -100,10 +100,6 @@ ACTION_IF NOT (FILE_CONTAINS ~WeiDU-BGEE.log~ ~BG1NPC\.tp2. #[0-9]+ #70 ~) AND N
   FAIL  @894
 END
 
-ACTION_IF NOT (FILE_CONTAINS ~WeiDU.log~ ~cdtweaks\.tp2. #[0-9]+ #1075 ~) BEGIN
-  FAIL  @1007
-END
-
 COPY ~SandrahNPC/ITM/sanhenri.itm~ ~override/sanhenri.itm~
 SAY NAME1 @195
 SAY NAME2 @196
