@@ -1775,8 +1775,8 @@ IF ~~THEN BEGIN Startalk1
 SAY ~(Sandrah silently moves a bit closer to you. She puts her head on your shoulder and together you look upwards into the star filled night sky.) ~
 IF~~THEN REPLY ~Moments like this could last an eternity (sigh), if they only would.~GOTO Startalk2
 IF ~~THEN REPLY ~What are you thinking of, Sandrah? ~GOTO Startalk2
-IF ~~THEN REPLY ~(Say nothing, do nothing, just put your arm around her and gently pull her a little bit closer to you.) ~GOTO Startalk2
-IF ~~THEN REPLY ~(Say nothing, do nothing, pretend you sleep already.) ~GOTO Startalk2
+IF ~~THEN REPLY ~(Say nothing, do nothing, just put your arm around her and gently pull her a little bit closer to you.)~GOTO Startalk2
+IF ~~THEN REPLY ~(Say nothing, do nothing, pretend you sleep already.)~GOTO Startalk2
 END
 
 IF ~~THEN BEGIN Startalk2
