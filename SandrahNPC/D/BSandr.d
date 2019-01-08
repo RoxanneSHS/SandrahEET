@@ -1830,8 +1830,8 @@ END
 
 IF ~~THEN BEGIN AfterMoDr2
 SAY ~You look in deed troubled, my dear. Do you want to tell me about it?~
-IF~~THEN REPLY ~I am not sure, it may trouble you as well. You were involved - and your father too. And Khalindra. ~GOTO AfterMoDr3
-IF~~THEN REPLY ~Was your mother's name by any chance *Khalindra*? ~GOTO AfterMoDr3
+IF~~THEN REPLY ~I am not sure, it may trouble you as well. You were involved - and your father too. And Khalindra.~GOTO AfterMoDr3
+IF~~THEN REPLY ~Was your mother's name by any chance *Khalindra*?~GOTO AfterMoDr3
 END
 
 IF ~~THEN BEGIN AfterMoDr3
