@@ -1,6 +1,6 @@
 BEGIN CVSan25P
 
-IF ~Global("SandrahJoined","GLOBAL",1)GlobalGT("Chapter","Global",21)~THEN BEGIN KickSPT251
+IF ~Global("SandrahJoined","GLOBAL",1)GlobalGT("Chapter","Global",19)~THEN BEGIN KickSPT251
 SAY ~So you want me to leave you out here alone?~
 IF ~~THEN REPLY ~Yes, dear Sandrah, you need to rest here for a short while. I will be back soon. I already start to miss you. (Suddenly you feel something like a dark hopelessness around you.) ~GOTO PT2513
 IF~~THEN REPLY  ~I think it's best for us to part now, but we may travel together again soon enough. Do you know of any place we can meet later?.~GOTO PT2513
