@@ -1,0 +1,10 @@
+IF
+Global("Wiwo","BG4400",0)
+OR(2)
+Global("ImopeltHunt","GLOBAL",1)
+Global("ImopeltHunt","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG4400",1)
+CreateCreature("wolfwi",[3504.3319],6)
+END

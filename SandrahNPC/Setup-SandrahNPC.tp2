@@ -1304,6 +1304,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~BG4600.bcs~ ~SandrahNPC/Areas/ar3499rabb.baf~
 EXTEND_TOP
+~BG4400.bcs~ ~SandrahNPC/Areas/bg4400.baf~
+EXTEND_TOP
 ~ar1000.bcs~ ~SandrahNPC/Areas/ar10006rabb.baf~
 EXTEND_TOP
 ~BG4200.bcs~ ~SandrahNPC/Areas/ar3100rabb.baf~

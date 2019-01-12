@@ -56,3 +56,15 @@ RESPONSE #100
 SetGlobal("Oopahfun","BG4900",1)
 ActionOverride("CVSandr",Interact("CVSandr"))
 END
+
+IF
+Global("Wiwo","BG4900",0)
+OR(2)
+Global("ImopeltHunt","GLOBAL",1)
+Global("ImopeltHunt","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("Wiwo","BG4900",1)
+CreateCreature("wolfwi",[398.640],6)
+Continue()
+END
