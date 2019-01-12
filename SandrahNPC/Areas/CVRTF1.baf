@@ -919,6 +919,39 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("rh#eva")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("rh#eva",LeaveParty())
+ActionOverride("rh#eva",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("qi#mi")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("qi#mi",LeaveParty())
+ActionOverride("qi#mi",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("qi#ela")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("qi#ela",LeaveParty())
+ActionOverride("qi#ela",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 Global("CVJenTOBRet","GLOBAL",15)
 Global("JenligBio","cvrtf1",0)
 THEN
