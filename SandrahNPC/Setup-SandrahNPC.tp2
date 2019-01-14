@@ -8390,6 +8390,18 @@ COPY_EXISTING ~stafoak.itm~ ~override~
               
 COPY_EXISTING ~jaheir2.CRE~ ~override/jaheir.CRE~
 
+COPY_EXISTING ~Caldo.CRE~ ~override~
+WRITE_SHORT 0x24 60
+WRITE_SHORT 0x26 60
+REPLACE_CRE_ITEM ~blun03~ #0 #0 #0 ~NONE~ ~WEAPON1~
+REPLACE_CRE_ITEM ~shld04~ #0 #0 #0 ~NONE~ ~SHIELD~
+
+COPY_EXISTING ~Krumm.CRE~ ~override~
+WRITE_SHORT 0x24 75
+WRITE_SHORT 0x26 75
+REPLACE_CRE_ITEM ~blun37~ #0 #0 #0 ~NONE~ ~WEAPON1~
+REPLACE_CRE_ITEM ~leat05~ #0 #0 #0 ~NONE~ ~ARMOR~
+
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d0oasis9.spl~ THEN BEGIN
 COMPILE ~SandrahNPC/oasis/amtgen01.d~ USING   ~SandrahNPC/oasis/oasis.tra~
 COMPILE ~SandrahNPC/oasis/d0hosti.baf~
