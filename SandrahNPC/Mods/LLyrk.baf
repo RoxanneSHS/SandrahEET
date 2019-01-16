@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanPitsWD","Global",2)
+Global("SwitchAI","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("SwitchAI","Locals",1)
+ChangeAIScript("Mage5",CLASS)
+END

@@ -8451,6 +8451,8 @@ EXTEND_TOP
 ~BPHub.BCS~ ~SandrahNPC/Mods/BPHubSan.baf~
 EXTEND_TOP
 ~OH9310.BCS~ ~SandrahNPC/Mods/OH9310San.baf~
+EXTEND_TOP
+~LLyrk.BCS~ ~SandrahNPC/Mods/LLyrk.baf~
 
 //new travel region and new entrance for Pits
 COPY_EXISTING ~CVELT3.ARE~ ~override~

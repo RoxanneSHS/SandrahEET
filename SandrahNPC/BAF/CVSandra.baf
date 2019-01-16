@@ -3473,7 +3473,9 @@ END
 IF
 Global("SanImoNashInt","GLOBAL",12)
 AreaCheck("BG4803")
+OR(2)
 RealGlobalTimerExpired("SanImoNashRet","GLOBAL")
+GlobalGT("Chapter","Global",3)
 THEN
 RESPONSE #100
 SetGlobal("SanImoNashInt","GLOBAL",13)
