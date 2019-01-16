@@ -5,7 +5,7 @@ INTERJECT_COPY_TRANS J#INDI 2 HealworkIndi
 ==  J#INDI IF ~InParty("CVSandr")~THEN ~Ah, that feels much better already. You are the most beautiful healer I have ever seen - but I would have taken healing from even a gnoll in my current state, haha.~
 == CVSandrJ IF ~InParty("CVSandr")~THEN ~Keep lying down, this one seems to go deeper. We do not want an infection on that wound. (Expertly Sandrah opens Indira's armour and under cloth revealing the young adventurer's soft skin and rosebud nipples. She softly and carefully inspects the area beneath Indira's right breast.)~
 ==  J#INDI IF ~InParty("CVSandr")~THEN ~(Indira's breathing gets more excited and she closes her eyes, but does not dare to move.)~
-== CVSandrJ IF ~InParty("CVSandr")~THEN ~(Sandrah moves her mouth down to Indirah's exposed breast and puts her mouth to the girl's skin.)~
+== CVSandrJ IF ~InParty("CVSandr")~THEN ~(Sandrah moves her mouth down to Indira's exposed breast and puts her mouth to the girl's skin.)~
 ==  J#INDI IF ~InParty("CVSandr")~THEN ~Aaah, what are you doing...~
 == CVSandrJ IF ~InParty("CVSandr")~THEN ~(Sandrah comes up with her head quickly and spits some green slimy liquid on the ground nearby.) These kobolds use a lot of different poisons on their weapons, really nasty. ~
 =~(She takes a sip from her field flask to clean her mouth, then holds the opening to the lying girl's mouth.) Drink, you need to drink a lot of water in the next days to clean your body systems. Healer's prescription.~
