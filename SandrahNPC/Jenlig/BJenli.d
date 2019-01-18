@@ -407,7 +407,7 @@ IF~Global("JenShartB","LOCALS",0) InParty("Sharteel") !See([ENEMY])!AreaType(DUN
 DO~SetGlobal("JenShartB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BShart ~Ha, your style is much to my liking, *githling*. Especially the way you make that eye contact with your foe when you have him defeated and cut his heart out with that incredible sword. You make sure he knows well he's gonna die now and it's YOU who has the power to take his forsaken life. A great gesture.~
 ==BJenli~Githyanki race long would perish from Astral Plane and Limbo if not can fight better than any, especially better than the illithid and Githzerai.~
-==BShart ~Ha, you surely make any Flaming Fist look like a street rat with a wooden toy sword, including one Angelo Dorsan.~
+==BShart ~Ha, you surely make any Flaming Fist look like a street rat with a wooden toy sword, including one Angelo Dosan.~
 ==BJenli~Know Flaming Fist? Know sergeant Horvok?~
 ==BShart ~A bloody corrupted bastard, would sell his long deceased mother's corpse for a handful of coins.~
 ==BJenli~Know who friends of Horvok?~
