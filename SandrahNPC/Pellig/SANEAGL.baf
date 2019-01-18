@@ -6,3 +6,10 @@ RESPONSE #100
 MoveToObject("CVSandr")
 StartDialogueNoSet("Saneagl")
 END
+
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+DestroySelf()
+END
