@@ -45,7 +45,7 @@ IF ~Dead("Sufinch") ~THEN REPLY~I am sorry to tell you that Finch has found her 
 CHAIN
 IF ~~THEN BLOOMW BloSuDe
 ~My, now she is herself a hero in a book she might have liked, poor girl.~
-= ~I have got hands on a very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that Finch would be have been dying to get her hands on the tome. Oh my what am I saying there. I'd like to give you the booklet as a token to preserve her memory, will you?~ DO~EscapeAreaMove("CVEBS1",294,355,5)~
+= ~I have got hands on a very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that Finch would be have been dying to get her hands on the booklet. Oh my what am I saying there. I'd like to give you the booklet as a token to preserve her memory, will you?~ DO~EscapeAreaMove("CVEBS1",294,355,5)~
 END
 ++~Another piece of crap to fill our backpacks...Fine, fine. (You decide to take the booklet to end this conversation and intend to throw it away when out of sight of Clarissa.)~DO ~GiveItemCreate("SuSaBo",Player1,0,0,0) SetGlobal("Bloomw","GLOBAL",5) RealSetGlobalTimer("BloomwT","GLOBAL",4800) ~EXIT
 ++~We will keep your gift as well as the memory of a good companion, thank you.~
@@ -54,10 +54,10 @@ DO ~GiveItemCreate("SuSaBo",Player1,0,0,0) SetGlobal("Bloomw","GLOBAL",5) RealSe
 CHAIN
 IF ~~THEN BLOOMW BloSUQ1
 ~I want to ask you for a favour then, you will probably meet her again on your travels along the Sword Coast.~
-= ~I have got hands on a very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that Finch would be dying to get her hands on the tome. Please deliver it to her, so she can use it in her further work for Deneir.~
+= ~I have got hands on a very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that Finch would be dying to get her hands on the booklet. Please deliver it to her, so she can use it in her further work for Deneir.~
 END
 ++ ~Do I look like your errand boy? Give it to any ordinary messenger that comes you way. We have more important tasks at hand. ~+ BloSuErr
-++ ~Of course, such a worthy and rare tome is save with us. With the bandit threat along the roads, you are wise not to give it to a simple messenger. Be assured that it will get to Finch.~+ BloSuQeY
+++ ~Of course, such a worthy and rare book is save with us. With the bandit threat along the roads, you are wise not to give it to a simple messenger. Be assured that it will get to Finch.~+ BloSuQeY
 
 CHAIN
 IF ~~THEN BLOOMW BloSuErr
@@ -110,7 +110,7 @@ IF ~Global("Bloomw","GLOBAL",8)~THEN BLOOMW BloSuQWF
 == BLOOMW ~My, my, I see your point. Such is life. There you have a true famous hero in your own family and you are not supposed to tell the world about it. Can't be helped. But then, reading is something to be done alone anyway.~
 = ~Which leads me to another topic. Something special for you and your friends, Finch.~
 == IF_FILE_EXISTS BSUFINCH ~Do not worry, <CHARNAME>, I WILL CARRY IT. It will not hamper the group in any way. (Laughs silently at her version of a joke.)~
-== BLOOMW ~I have got hands on this very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that you would be dying to get your hands on the tome. Please accept the gift for your further work for Deneir.~ DO ~GiveItemCreate("SuSaBo","Sufinch",0,0,0)SetGlobal("Bloomw","GLOBAL",9)AddJournalEntry(@212,QUEST) RealSetGlobalTimer("BloomwT","GLOBAL",4800)~
+== BLOOMW ~I have got hands on this very rare edition of Monteelah's essay on the Virtue of Wisdom. I know that you would be dying to get your hands on the booklet. Please accept the gift for your further work for Deneir.~ DO ~GiveItemCreate("SuSaBo","Sufinch",0,0,0)SetGlobal("Bloomw","GLOBAL",9)AddJournalEntry(@212,QUEST) RealSetGlobalTimer("BloomwT","GLOBAL",4800)~
 == IF_FILE_EXISTS BSUFINCH ~I am speechless...~
 == BLOOMW ~Do not worry. You have given so much already with your journals of <CHARNAME>'s quest. And you will have more next time you come to Waterdeep. Have a good journey.~
 EXIT
