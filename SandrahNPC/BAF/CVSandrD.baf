@@ -51,6 +51,7 @@ Global("SanRomPath","GLOBAL",1)
 !AreaType(DUNGEON)
 !AreaCheck("cvsant")
 !AreaCheck("CVSans")
+!AreaCheck("cvelm3")
 THEN
 RESPONSE #100
 SetGlobal("SanDreamTalk","GLOBAL",9)
