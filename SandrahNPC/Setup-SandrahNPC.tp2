@@ -8539,3 +8539,9 @@ kit_clab = CVMystra
 base_class = ~P~
 mc_dir = ~SandrahNPC/lib~
 END
+
+PRINT ~Better Pathfinding~
+
+COPY + ~%USER_DIRECTORY%/Baldur.lua~  ~%USER_DIRECTORY%~
+		REPLACE_TEXTUALLY ~'32000'~ ~'192000'~
+EVALUATE_BUFFER
