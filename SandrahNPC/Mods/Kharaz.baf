@@ -1,0 +1,10 @@
+IF
+GlobalGT("GullyOgre","GLOBAL",0)
+Areacheck("BG4000")
+Dead("JC_OGR01") 
+!Global("GullyOgre","GLOBAL",4)
+THEN
+RESPONSE #100
+SetGlobal("GullyOgre","GLOBAL",4)
+END
+
