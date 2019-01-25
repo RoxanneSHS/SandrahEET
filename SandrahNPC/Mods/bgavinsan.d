@@ -52,7 +52,7 @@ IF ~Global("SanGavBant","GLOBAL",1)~THEN BSANDR GavJolu
 DO ~ SetGlobal("SanGavBant","GLOBAL",2)RealSetGlobalTimer("SanGavLATime","GLOBAL",3600)~
 ==~BB!GAVIN~~Um, ah, I do not want to bother you too much, my lady.~
 ==BSANDR ~Gavin, (laughs lightly), I am a healer. I cannot watch while people suffer. ~
-= ~So -. Your brother is a talented artist and he did a bit of work for the academy at Waterdeep last year. And yes, of course he advanced me the very moment I caught his eye.~
+= ~So - Your brother is a talented artist and he did a bit of work for the academy at Waterdeep last year. And yes, of course he advanced me the very moment I caught his eye.~
 ==~BB!GAVIN~~I cannot blame him for that...I hope he did not...embarrass you too much.~
 ==BSANDR ~Oh, Gavin, do not think too badly of your brother. He is straight forward and upright, something you could need maybe now and then. Yes, his manners are not extremely gentleman-like, but he is not a wrong person at all.~
 ==~BB!GAVIN~~I am glad, my lady, you take it humorously and do not blame him too much.~
