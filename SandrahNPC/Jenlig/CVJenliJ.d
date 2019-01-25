@@ -239,7 +239,7 @@ END
 
 IF~~THEN BEGIN JenCommLu8
 SAY~*Her long bony fingers with the dangerous talons cover your mouth so your reaction would not alert your other sleeping companions.* ~
-=~*You feel her fingers starting to explore your unknown body, slow and tenderly. She reacts indistinctly to your body's reactions and needs little time to find the areas that pleasure you most.~
+=~*You feel her fingers starting to explore your unknown body, slow and tenderly. She reacts instinctively to your body's reactions and needs little time to find the areas that pleasure you most.~
 IF~~THEN REPLY~*Your hands reach out towards her body as well and you start to caress her unfamiliar hide. You are surprised how warm her body feels and that despise her scales she reacts very sensitive to your every touch.~DO~SetGlobal("Goodfight","LOCALS",11)RealSetGlobalTimer("JenligT","LOCALS",9000)~GOTO JenCommLu9
 END
 
