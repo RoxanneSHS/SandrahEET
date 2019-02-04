@@ -6194,18 +6194,6 @@ END ELSE BEGIN
     PRINT ~ Yasraena not detected - skipped Sandrah relationship~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~M#Ambr10.cre~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/AmberSan.d~
-COMPILE ~SandrahNPC/Mods/CVAmberDem.d~
-EXTEND_TOP
-~M#Amber.bcs~ ~SandrahNPC/Mods/Amberheal.baf~
-EXTEND_TOP
-~m#climb2.bcs~ ~SandrahNPC/Mods/amberAr05.baf~
-PRINT ~ Amber detected - Sandrah tiefling part added~
-END ELSE BEGIN
-  PRINT ~Amber not detected - skipped ~
-END
-
 ACTION_IF FILE_EXISTS_IN_GAME ~Tsujath.CRE~ THEN BEGIN  
 COMPILE ~SandrahNPC/Mods/TsujathSan.d~
 EXTEND_TOP                                        
