@@ -3963,7 +3963,7 @@ IF~~THEN REPLY~We are torn deeper and deeper into this maelstrom of forces that 
 END
 
 IF~~THEN BEGIN SanTalosF4
-SAY~Darkness and light, <CHARNAME>. Talos has as many opponents as he has powerful followers. To be visible as a possible oponent may as well mean that you will become an interesting ally for some others.~
+SAY~Darkness and light, <CHARNAME>. Talos has as many opponents as he has powerful followers. To be visible as a possible opponent may as well mean that you will become an interesting ally for some others.~
 IF~PartyHasItem("soaitm01")~THEN REPLY~Maybe someone is interested in this item from Mecorima we have gained.~EXIT
 IF~~THEN REPLY~I would not object if they show their sympathy and support a bit more open. (Sigh).~GOTO SanTalosF5
 IF~~THEN REPLY~Nice words...I would prefer strong arms at my side.~GOTO SanTalosF5
@@ -5071,7 +5071,7 @@ END STONEDL 9
 
 // Shar-Teel Initial Fight
 INTERJECT_COPY_TRANS SHARTE 4  SanFight4
-== CVSandrJ IF ~InParty("CVSandr") ~THEN ~If men are so pathetic, why did you choose only them for your game. Are you afraid to get into a real fight with a strong oponent. ~
+== CVSandrJ IF ~InParty("CVSandr") ~THEN ~If men are so pathetic, why did you choose only them for your game. Are you afraid to get into a real fight with a strong opponent. ~
 == SHARTE IF ~InParty("CVSandr") ~THEN ~Like whom, like you little weekend warrior princess - with your playtoy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
 == CVSandrJ IF ~InParty("CVSandr") ~THEN ~Which means any hobgoblin would scare me more than you do. At least my silk panties are currently dry like the Calimsha Desert.~
 == SHARTE IF ~InParty("CVSandr") ~THEN ~With your big words that could make one start to weep if they were not so laughable, you could almost get along for a male. When stupidity is the criteria for gender, I mean.~
