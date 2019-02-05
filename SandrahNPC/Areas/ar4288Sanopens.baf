@@ -1,9 +1,11 @@
 IF
 InParty("CVSandr")
+Global("DownOn","ar4288",0)
 OR(2)
 Global("CbPartyIsInSoubarMilitia","GLOBAL",7)
 Global("CbPartyHuntsSpy","GLOBAL",2)
 THEN
 RESPONSE #100
+SetGlobal("DownOn","ar4288",1)
 TriggerActivation("Tran5000",TRUE)
 END
