@@ -1,9 +1,17 @@
 IF
+Global("caveswamp","ar3520",0)
+THEN
+RESPONSE #100
+SetGlobal("caveswamp","ar3520",1)
+TriggerActivation("Swamp",FALSE)
+Continue()
+END
+
+IF
 InMyArea("CVSandr")
 Global("CreateShau","ar3520",0)
 THEN
 RESPONSE #100
-TriggerActivation("Swamp",FALSE)
 TriggerActivation("tran3521",FALSE)
 SetGlobal("CreateShau","ar3520",1)
 CreateCreature("CVShau",[2790.1100],15)
