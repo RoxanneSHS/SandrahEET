@@ -919,6 +919,17 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("O#Bran")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("O#Bran",LeaveParty())
+ActionOverride("O#Bran",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("rh#eva")
 THEN
 RESPONSE #100
@@ -947,6 +958,18 @@ RESPONSE #100
 SmallWait(1)
 ActionOverride("qi#ela",LeaveParty())
 ActionOverride("qi#ela",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("D#Silver")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("D#Silver",LeaveParty())
+ChangeEnemyAlly("D#Silver",ENEMY)
+ActionOverride("D#Silver",EscapeAreaMove("BD7230",3072,1553,10))
 Continue()
 END
 
