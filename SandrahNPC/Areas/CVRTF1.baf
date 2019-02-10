@@ -930,6 +930,17 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("PMOrel")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("PMOrel",LeaveParty())
+ActionOverride("PMOrel",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("rh#eva")
 THEN
 RESPONSE #100
