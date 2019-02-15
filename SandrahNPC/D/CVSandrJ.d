@@ -1934,7 +1934,7 @@ END
 IF ~Global("SaBalCarn","GLOBAL",1)~THEN BEGIN BaldMaekt1
 SAY ~A fun fair, <CHARNAME>, we have not had much amusement for quite a while.~
 IF~PartyHasItem("sw1h19")~THEN REPLY~And I do not feel much like having some now. Sandrah, just consider why we are here and don't play the little girl at the amusement park role, he.~GOTO BaldMaekt12
-IF~~THEN REPLY~counsellor, I agree, our mission is grave and our prospect is dark. As one elf I know may say, we are doomed and may not even see tomorrow. So why not have some fun.~GOTO BaldMaekt13
+IF~~THEN REPLY~Counsellor, I agree, our mission is grave and our prospect is dark. As one elf I know may say, we are doomed and may not even see tomorrow. So why not have some fun.~GOTO BaldMaekt13
 IF~!PartyHasItem("sw1h19")~THEN REPLY~And I do not feel much like having some now. Sandrah, just consider why we are here and don't play the little girl at the amusement park role, he.~GOTO BaldMaekt14
 END
 
