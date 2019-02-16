@@ -1,4 +1,5 @@
 IF
+Delay(6)
 InParty("CVSandr")
 Global("PelligFollow","GLOBAL",1)
 !InActiveArea("pellig")
@@ -7,6 +8,7 @@ Global("PelligFollow","GLOBAL",1)
 THEN
 RESPONSE #100
 MoveGlobalObject("Pellig","CVSandr")
+ActionOverride("Pellig",RunAwayFrom("CVSandr",5))
 END
 
 IF
