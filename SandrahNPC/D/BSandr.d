@@ -6492,7 +6492,7 @@ DO ~SetGlobal("SanSuBH","GLOBAL",31)~
 == BAJANT  IF~InParty("Ajantis") ~THEN ~Mylady Imoen, if there ever was a heart of gold that outshines any darkness, it is yours. No evil can persist in your presence.~
 == BVicon  IF~InParty("Viconia") ~THEN ~I am getting weaker and weaker with each day on the surface and in this company. This unbearable babbling girl grabs me at a part I thought was immune to such attacks - my heart.~
 ==Bskie IF~InParty("Skie") ~THEN ~What a great idea!!...I mean, after we put some aside to purchase some stylish replacement for our torn wardrobe, right?~
-==Bjenli IF ~InParty("CVJenlig") ~THEN ~(Hiss) Jen'lig will carry some for pink girl plan. counsellor Sandrah know real worth of treasure found here.~
+==Bjenli IF ~InParty("CVJenlig") ~THEN ~(Hiss) Jen'lig will carry some for pink girl plan. Counsellor Sandrah know real worth of treasure found here.~
 ==IF_FILE_EXISTS k-roseB  IF~InParty("k-rose") ~THEN ~Sing a song of joy with me at the end of this long and dreadful night. With the morning and with our heroine Imoen comes hope. ~
 ==IF_FILE_EXISTS ACBreB IF~InParty("ACBre") ~THEN  ~Buzzurk! Give me such a sack for your orphans. But don't tell any dwarf you ever met about it. ~
 ==IF_FILE_EXISTS ~B!GAVINJ~IF ~InParty("B!GAVIN")~THEN ~Such great deed done with such ease, Lady Imoen. I envy you for that, in a good way, I mean.~
