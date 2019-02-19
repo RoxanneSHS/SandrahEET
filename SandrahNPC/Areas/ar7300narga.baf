@@ -1,5 +1,5 @@
 IF
-Global("Swieca","GLOBAL",1)
+Global("NTSwieca","GLOBAL",1)
 InParty("CVSandr")
 Dead("NTSARQ")
 PartyHasItem("MISC74")
