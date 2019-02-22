@@ -7233,7 +7233,7 @@ IF
 Global("TalkedToCharleston","GLOBAL",2)
 !PartyHasItem("Misc48")
 Global("SanIdolTake","GLOBAL",0)
-Global("TORKIONNEEDYOU","GLOBAL",1) 
+Global("NTTORKIONNEEDYOU","GLOBAL",1)
 OR(2)
 AreaCheck("BG4100")
 AreaCheck("BG4101")
@@ -7243,7 +7243,7 @@ SetGlobal("SanIdolTake","GLOBAL",1)
 END
 
 IF
-Global("TORKIONNEEDYOU","GLOBAL",1)
+Global("NTTORKIONNEEDYOU","GLOBAL",1)
 Global("SanIdolTake","GLOBAL",2)
 OR(2)
 PartyHasItem("sw1h19")
@@ -7254,7 +7254,7 @@ SetGlobal("SanIdolTake","GLOBAL",3)
 END
 
 IF
-Global("TORKIONNEEDYOU","GLOBAL",2)
+Global("NTTORKIONNEEDYOU","GLOBAL",2)
 Global("SanIdolTake","GLOBAL",4)
 AreaCheck("ar9305")
 THEN
