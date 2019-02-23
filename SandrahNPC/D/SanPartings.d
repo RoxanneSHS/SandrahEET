@@ -318,13 +318,13 @@ END
 END
 
 APPEND SHARTP
-IF~Global("IWasKickedOut","LOCALS",2)~THEN BEGIN EarlyRet
+IF WEIGHT #-2 ~Global("IWasKickedOut","LOCALS",2)~THEN BEGIN EarlyRet
 SAY~My love, it is not time yet.~
 IF~~THEN REPLY ~We will come again later, wildcat. I love you.~
 EXIT
 END
 
-IF ~Global("KickedOut","LOCALS",3)~THEN BEGIN SanSharGorBirth
+IF WEIGHT #-3 ~Global("KickedOut","LOCALS",3)~THEN BEGIN SanSharGorBirth
 SAY ~Ahh! Lover-boy...not a minute too soon...~
 IF ~~THEN EXIT
 END

@@ -1,4 +1,22 @@
 IF
+!Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("SanSharInt","GLOBAL",23)
+TriggerOverride("Sharteel",!Global("IWasKickedOut","LOCALS",2))
+THEN
+RESPONSE #100
+ActionOverride("Sharteel",SetGlobal("IWasKickedOut","LOCALS",2))
+END
+
+IF
+Global("ENDOFBG1","GLOBAL",2)
+GlobalGT("SanSharInt","GLOBAL",23)
+TriggerOverride("Sharteel",!Global("KickedOut","LOCALS",2))
+THEN
+RESPONSE #100
+ActionOverride("Sharteel",SetGlobal("KickedOut","LOCALS",3))
+END
+
+IF
 GlobalGT("SanSharInt","GLOBAL",28)
 Global("Sharmove","CVSans",0)
 THEN
