@@ -24,7 +24,7 @@ END
 
 CHAIN
 IF~~THEN BDCORWIJ CorwiCand2
-~I know little of Winski as he doesn't seek the public. He's been around the Iron Throne as long as I can think back. His nor Sarevok's activities are not easy to follow. There are indications of all matters of dark deeds but no real proof.~
+~I know little of Winski as he doesn't seek the public. He's been around the Iron Throne as long as I can think back. Neither his nor Sarevok's activities are easy to follow. There are indications of all matters of dark deeds but no real proof.~
 ==CVSandrJ~We have reason to think that originally Winski pursued and found Sarevok because of his heritage. The mage intended to use his disciple against his former homeland Rashemen.~
 ==BDCORWIJ~I doubt that Sarevok will let himself be used like a toy or a weapon.~
 ==CVSandrJ~I agree. Like I said, that was the Othlor's intent. But long the tables have turned and Sarevok has outgrown his teacher and probably also his father's organisation.~
