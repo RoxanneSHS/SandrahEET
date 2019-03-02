@@ -1,6 +1,6 @@
 CHAIN
 IF~Global("SanCorwin","Global",3)~THEN BDCORWIJ Corwiheal1
-~In times like these it is good to have comrads who can repair and not only destroy.~
+~In times like these it is good to have comrades who can repair and not only destroy.~
 DO~SetGlobal("SanCorwin","Global",4)~
 ==CVSandrJ~Travelling with <CHARNAME> has required both my talents to a large extend.~
 ==BDCORWIJ~I have seen that you can be quite destructive in our battles. I wonder if this is why <PRO_HESHE> has chosen your companionship rather than due to your healing skills.~
