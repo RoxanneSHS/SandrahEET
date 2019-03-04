@@ -672,7 +672,7 @@ END
 // Durlag's Riddles
 IF~Global("SanDurlAnsw","LOCALS",1)~THEN BEGIN DurlAnsw
 SAY ~Looks like they want to test our knowledge in lore here.~
-IF~~THEN REPLY ~counsellor, this is your domain, please.~GOTO DurlAnsw2
+IF~~THEN REPLY ~Counsellor, this is your domain, please.~GOTO DurlAnsw2
 IF~~THEN REPLY ~Oh, no, not riddles? Can you help me out with those?~GOTO DurlAnsw2
 IF~~THEN REPLY ~I love riddles. You'll soon see how good I am at that.~EXIT
 END
@@ -2280,7 +2280,7 @@ DO~SetGlobal("ImoHousew","GLOBAL",4)~
 ==Bimoen~I swear and swear it! See, <PRO_HESHE> took 5gp from Reevor to kill the rats in the warehouse, that's how evil <PRO_HESHE> is.~
 ==BSANDR~(Laughs) I bet the evil part of that is that <PRO_HESHE> did not give you half of it afterwards.~
 ==Bimoen~You got it. I only told you what your heart was knowin' already, so why torture that brain of yours and get wrinkles like Auntie Jaheira.~
-==BSANDR~counsellor Imoen, that was a really good advice.~
+==BSANDR~Counsellor Imoen, that was a really good advice.~
 ==Bimoen~No wonder, I had the chance to learn it from the bestest counsellor on the Sword Coast.~EXIT
 
 CHAIN
