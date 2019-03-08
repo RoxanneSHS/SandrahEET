@@ -101,6 +101,8 @@ END
 IF
 AreaCheck("BG0125")
 Global("JenFouSem","BG0125",2)
+OR(2)
+PartyHasItem("CVyensw2")
 Dead("Semaj")
 THEN
 RESPONSE #100
