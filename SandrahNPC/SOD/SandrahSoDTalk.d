@@ -9,7 +9,7 @@ END
 
 CHAIN
 IF~~THEN CVSandrJ Sanpamp2
-~I am not seeking just another adventure. I am just pretty sure that important tasks are rarely accomplishes by mercenaries.~
+~I am not seeking just another adventure. I am just pretty sure that important tasks are rarely accomplished by mercenaries.~
 ==CVSandrJ IF~Global("SanRomPath","Global",1)~THEN~Sooner or later they will find the need to seek aid from competent side - like the new *hero* of Baldur's Gate.~
 ==CVSandrJ IF~Global("SanRomPath","Global",2)~THEN~Sooner or later they will find the need to seek aid from competent side - like the new *heroine* of Baldur's Gate.~
 END
