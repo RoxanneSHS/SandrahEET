@@ -445,3 +445,7 @@ I_C_T BDWoris 8 SanElfGhostSoD
 ==CVSandrJ IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~You left your lady behind. She never forgot you and her soul was always longing for you. She may now find her own rest as well.~
 ==BDWoris IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~My Elmyra, my love...~
 ==CVSandrJ IF~InParty("CVSandr") Global("SanElfGhost","Global",1) ~THEN~Peace be with you and with Elmyra, the voice of the Elfsong Tavern.~END
+
+EXTEND_BOTTOM BDKava 0
+IF~InParty("CVSandr") PartyHasItem("Misc97")Global("BD_SDD225","GLOBAL",2)~THEN REPLY~Someone order a mug of ale?~DO~TakePartyItem("Misc97")~GOTO 11
+END
