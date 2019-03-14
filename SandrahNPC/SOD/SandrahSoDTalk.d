@@ -380,10 +380,14 @@ EXTEND_BOTTOM BDDOsia 6
 IF~InParty("CVSandr")Global("SanHelpIlm","bd3000",0)~THEN REPLY~That would be a task for my experienced healer, Sandrah of Waterdeep.~EXTERN CVSandrJ Ilmheal1
 END
 
+EXTEND_BOTTOM BDDOsia 8
+IF~InParty("CVSandr")Global("SanHelpIlm","bd3000",0)~THEN REPLY~That would be a task for my experienced healer, Sandrah of Waterdeep.~EXTERN CVSandrJ Ilmheal1
+END
+
 CHAIN
 IF~~THEN CVSandrJ Ilmheal1
 ~I will do my best. Do not worry Dosia.~
-DO~SetGlobal("SanHelpIlm","bd3000",1) ClearAllActions() wait(1) StartCutSceneMode() StartCutScene("SanIlmH1") ~EXIT
+DO~SetGlobal("SanHelpIlm","bd3000",1) ClearAllActions() Wait(1) StartCutSceneMode() StartCutScene("SanIlmH1") ~EXIT
 
 CHAIN
 IF~Global("SanHelpIlm","bd3000",2)~THEN CVSandrJ Ilmheal2
