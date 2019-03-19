@@ -408,7 +408,9 @@ END
 IF
 Global("SanHeardIren","GLOBAL",2)
 !Global("SanIreHint","LOCALS",2)
+OR(2)
 Dead("ulvaryl")
+Dead("ishthf02")
 THEN
 RESPONSE #100
 SetGlobal("SanHeardIren","GLOBAL",4)
@@ -417,7 +419,9 @@ END
 IF
 Global("SanHeardIren","GLOBAL",2)
 Global("SanIreHint","LOCALS",2)
+OR(2)
 Dead("ulvaryl")
+Dead("ishthf02")
 THEN
 RESPONSE #100
 SetGlobal("SanHeardIren","GLOBAL",3)
