@@ -509,7 +509,7 @@ END
 
 IF ~Global("KnowStorm","GLOBAL",3)~THEN BEGIN NibHint1
 SAY ~<CHARNAME>, when I was scouting through the city in search of any hints as to where you and our friends may have been taken, I encountered this gnome inventor on the promenade. He had an interesting device for travelling large distances. He mentioned such places as the Stormhorn Mountains or the Umar Hills.~
-IF~~THEN REPLY ~counsellor, please, I don't want to hurt your feelings, but magic travelling devices? Remember those mages caught on an icy island in a magic trap. We escaped, I admit, but I won't try my luck on that again.~GOTO NibHint2
+IF~~THEN REPLY ~Counsellor, please, I don't want to hurt your feelings, but magic travelling devices? Remember those mages caught on an icy island in a magic trap. We escaped, I admit, but I won't try my luck on that again.~GOTO NibHint2
 IF~~THEN REPLY ~Oh, great, we should keep that in mind, even if currently we do not have plans to go to those places. Even if I have a bit of reluctance to magic travelling. One may sometimes end up in places not intended.~GOTO NibHint2
 END
 
