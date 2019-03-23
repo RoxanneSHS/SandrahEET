@@ -29,7 +29,7 @@ DO~SetGlobal("SanHealYas","GLOBAL",10)~
 ==BSANDR ~I get no joy from killing. I just do what must be done.~
 ==BYASRAEN~Still you do it with unmatched skill, even with artful grace.~
 ==BSANDR ~I had a drow teacher for part of it, even if it was a male.~
-==BYASRAEN~My teacher and master was Divalir, also a male drow. I have not that attitude of the drow females to men, Sandrah. One of the reasons I am on the surface. But tell me about your teacher, do I know him maybe?~
+==BYASRAEN~My teacher and master was Divalir, also a male. I have not that attitude of the drow females to men, Sandrah. One of the reasons I am on the surface. But tell me about your teacher, do I know him maybe?~
 ==BSANDR ~Probably, as you hail from Menzoberranzan. It was Drizzt do'Urden, he is very close to me.~
 ==BYASRAEN~Drizzt! In this case you have indeed a completely different view on my kin than the average surfacer. I am glad I am in your company - (with some hesitation)...and to call you my friend.~
 ==BSANDR ~(Takes Yasraena's hand.) Please honour me by calling me your friend, Yasraena.~
