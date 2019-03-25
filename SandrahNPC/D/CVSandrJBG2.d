@@ -238,8 +238,8 @@ END
 
 IF~~THEN BEGIN SanBabewait2
 SAY~Shar-Teel has grown into a very responsible and caring woman following a high code of honour. We will get the notice when to come to Waterdeep in due time. You can be assured that she, my father and Landrel will find us and provide a means to be there when we are supposed to. In this case here, no news means good news.~
-IF~!Global("SanRompa","Global",2)~THEN REPLY~counsellor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~GOTO SanBabewait3
-IF~Global("SanRompa","Global",2)~THEN REPLY~counsellor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~GOTO SanBabewait3a
+IF~!Global("SanRompa","Global",2)~THEN REPLY~Counsellor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~GOTO SanBabewait3
+IF~Global("SanRompa","Global",2)~THEN REPLY~Counsellor, again you are fully right. We have to be here and she has to be there for the moment. It will come to a good end. Still- hm, I simply miss her a bit. ~GOTO SanBabewait3a
 END
 
 IF~~THEN BEGIN SanBabewait3
@@ -1462,7 +1462,7 @@ END
 
 IF~~THEN BEGIN SanFirkDung13
 SAY~That would leave us with the dragon option, <CHARNAME>. Those deep wells and precipices we passed point in the same direction. His grudge however seems to be much older than our relatively young encounters with his kin.~
-IF~~THEN REPLY~counsellor, you have taught me pretty well how to use my logic thinking in riddles like the present one. It is probably nothing any of us has done to him personally. It must be what I represent for him.~GOTO SanFirkDung14
+IF~~THEN REPLY~Counsellor, you have taught me pretty well how to use my logic thinking in riddles like the present one. It is probably nothing any of us has done to him personally. It must be what I represent for him.~GOTO SanFirkDung14
 END
 
 IF~~THEN BEGIN SanFirkDung14
