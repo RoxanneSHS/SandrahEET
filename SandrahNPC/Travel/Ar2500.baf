@@ -16,6 +16,7 @@ RESPONSE #100
 SetGlobal("CVDrag","ar2500",1)
 ActionOverride("CVSandr",AddSpecialAbility("CVDrag5"))
 ActionOverride("CVSandr",AddSpecialAbility("CVDrag11"))
+Continue()
 END
 
 IF
