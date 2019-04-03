@@ -974,6 +974,39 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("kindrek")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("kindrek",LeaveParty())
+ActionOverride("kindrek",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("BKtouchx")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("BKtouchx",LeaveParty())
+ActionOverride("BKtouchx",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("uldar")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("uldar",LeaveParty())
+ActionOverride("uldar",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("D#Silver")
 THEN
 RESPONSE #100
