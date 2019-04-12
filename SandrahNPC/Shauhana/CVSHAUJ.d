@@ -143,7 +143,7 @@ END
 IF~~THEN BEGIN Shaubrag4
 SAY ~He came in search of Sharkta Fai. Either to be cured from the stars or to be taken to the Other World.~
 IF~~THEN REPLY ~Sharkta Fai? ~ GOTO Shaubrag5
-IF~~THEN REPLY ~Sharkta Fai, we heard of it bfore. ~ GOTO Shaubrag5
+IF~~THEN REPLY ~Sharkta Fai, we heard of it before. ~ GOTO Shaubrag5
 END
 
 IF~~THEN BEGIN Shaubrag5
