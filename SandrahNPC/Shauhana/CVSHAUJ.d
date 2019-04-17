@@ -116,7 +116,7 @@ END
 
 IF ~IsGabber(Player1) Global("ShauPid","GLOBAL",1)~THEN BEGIN ShauPID1
 SAY~You want to continue our talk about my past, <CHARNAME>?~
-IF~Global("Shausc","LOCALS",0) InParty("CVSandr") ~THEN REPLY ~Yes. I anticipate that the wound you received during the fight with your father was not taken care of by your priests? ~GOTO Shauscheal
+IF~Global("Shausc","LOCALS",0) InParty("CVSandr") GlobalLT("Sansharkta","GLOBAL",1)~THEN REPLY ~Yes. I anticipate that the wound you received during the fight with your father was not taken care of by your priests? ~GOTO Shauscheal
 IF~Global("ShauBrag","LOCALS",0)GlobalLT("Sansharkta","GLOBAL",1) ~THEN REPLY ~Yes. You mentioned your isolated youth, Shauhana, but also a human that you met not long ago. And you speak our language very well.~GOTO Shaubrag1
 IF ~Global("HoundTro","LOCALS",0) ~THEN REPLY ~I am wondering what kind of creatures your Clan Hounds really are.~GOTO HoundTro1
 IF~Global("ShauBrag","LOCALS",0)GlobalLT("Sansharkta","GLOBAL",1) ~THEN REPLY ~Yes. How did you manage to escape the pits that enslaved you for so long, Shauhana?~GOTO Shaubrag1
