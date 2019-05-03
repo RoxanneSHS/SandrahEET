@@ -957,7 +957,7 @@ THEN
 RESPONSE #100
 SmallWait(1)
 ActionOverride("HGSLV01",LeaveParty())
-ActionOverride("HGSLV01",EscapeAreaMove("CVSH13",686,652,5))
+ActionOverride("HGSLV01",EscapeAreaMove("ar5500",822,1622,3))
 Continue()
 END
 
