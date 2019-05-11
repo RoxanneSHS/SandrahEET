@@ -103,7 +103,7 @@ DO~SetGlobal("ShauOrcWar","GLOBAL",8)~
 == BMinsc~Clan Orcs make magnificent berserkers but they need leadership to persist in long hard battles. ~
 == CVorwarl~No one could have epressed it better, Minsc, and you are one who can teach them just that. ~
 ==BSHAUHA~Where is Vennegrat now? I am sure he will not be defeated yet?~
-== CVGHATLE ~You are right. We assume that attack was just a test for his new troups of undead. He has retreated to the west, to the haunted Icebear Clan's village. We have sent our best scouts to the old graveyard road so he cannot advance to our land unnoticed.~
+== CVGHATLE ~You are right. We assume that attack was just a test for his new bataillons of undead. He has retreated to the west, to the haunted Icebear Clan's village. We have sent our best scouts to the old graveyard road so he cannot advance to our land unnoticed.~
 ==BSHAUHA~So I see several tasks before us, Ghatlenk, and I count on yours and Wallrick's advice in that.~
 == CVorwarl~Yes, my queen.~
 ==BSHAUHA~We must organise and train our fighters, (she looks at Minsc and Wallrick). The next attack will probably not be just a test any more. And we must fortify the village.~
