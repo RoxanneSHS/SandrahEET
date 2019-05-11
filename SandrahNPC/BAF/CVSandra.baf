@@ -5786,9 +5786,7 @@ END
 IF
 InParty("Sharteel")
 Global("SanSharInt","GLOBAL",23)
-OR(2)
-Global("EndofBG1","GLOBAL",1)
-GlobalGT("Chapter","GLOBAL",5)
+Global("Chapter","GLOBAL",7)
 AreaType(OUTDOOR)
 AreaType(CITY)
 !AreaCheck("BG0800")
