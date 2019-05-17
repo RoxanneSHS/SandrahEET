@@ -2185,7 +2185,7 @@ END
 // Demonic Scroll
 IF
 Global("ScrlalzT","GLOBAL",0)
-AreaCheck("BG3334")
+!AreaCheck("BG3333")
 PartyHasItem("SCRLALZ")
 InParty("CVSandr")
 THEN
@@ -2196,7 +2196,7 @@ END
 
 IF
 Global("ScrlalzI","GLOBAL",0)
-AreaCheck("BG3333")
+!AreaCheck("BG3334")
 PartyHasItem("SCRLALZ")
 InParty("CVSandr")
 !Global("UsedScrlPort","GLOBAL",1)
