@@ -996,6 +996,17 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("ppsime")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("ppsime",LeaveParty())
+ActionOverride("ppsime",EscapeAreaMove("ar1100",460,3066,11))
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("BKtouchx")
 THEN
 RESPONSE #100
