@@ -1,6 +1,6 @@
 //Fate Spirit
 
-EXTEND_BOTTOM FATESP 6
+EXTEND_BOTTOM FATESP 6 #17
 IF ~!InMyArea("CVSandr") Global("SandrahSummoned","GLOBAL",0)~THEN REPLY~I desperately need Sandrah of Waterdeep by my side.~GOTO NoSan
 END
 
