@@ -42,7 +42,7 @@ IF~~THEN  TAZOK_ s105
 ~Hmmm.  You have some sense, but I have many a strong back here already.  What for I need you?!~
 END
 ++~Surely you must realize you need any help you can get, especially after losing Mulahey in the Nashkel mine.~+s106
-++~Would you rather have too few and need more, or have too many and not need them at all?~+106
+++~Would you rather have too few and need more, or have too many and not need them at all?~+s106
 
 CHAIN
 IF~~THEN  TAZOK_ s106
