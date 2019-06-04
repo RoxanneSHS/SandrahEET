@@ -6643,7 +6643,7 @@ EXTEND_TOP
 PRINT ~ Sheena detected - Sandrah part added~
 END ELSE BEGIN
   PRINT ~Sheena not detected - skipped ~
-END  
+END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~j#klsy13.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/KelseySanBG2.d~ 
@@ -7616,6 +7616,13 @@ COMPILE
 ~SandrahNPC/Jenlig/CVJen25.baf~
 ~SandrahNPC/Jenlig/CVJenHun.baf~
 ~SandrahNPC/Jenlig/CVJenTOL.baf~
+
+ACTION_IF FILE_EXISTS_IN_GAME ~finbodh.cre~ THEN BEGIN
+COMPILE ~SandrahNPC/ToB/Mel_ascension.d~
+PRINT ~ Ascension detected - Sandrah part added~
+END ELSE BEGIN
+COMPILE ~SandrahNPC/ToB/Mel_Plain.d~
+END
 
 EXTEND_BOTTOM
 ~CVSan25.bcs~  ~SandrahNPC/Travel/SanTravl.baf~
