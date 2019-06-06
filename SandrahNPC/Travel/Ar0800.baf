@@ -34,6 +34,7 @@ OR(3)
 Global("CVColleEnc","GLOBAL",1)
 Global("CVColleEnc","GLOBAL",4)
 Global("CVColleEnc","GLOBAL",7)
+!InMyArea("CVColle")
 Delay(12)
 THEN
 RESPONSE #100
