@@ -104,7 +104,7 @@ Delay(12)
 THEN
 RESPONSE #100
 CreateCreatureObjectOffset("CVSafcit",Myself,[125.125])
-CreateCreatureObjectOffset("CVSafgua",Myself,[75.75])
+CreateCreatureObjectOffset("CVSafgu2",Myself,[75.75])
 CreateCreatureObjectOffset("Cowenf1",Myself,[-125.-125])
 SetGlobal("SanVicArrst","GLOBAL",1)
 ActionOverride("CVSafgua",StartDialogueNoSet(LastSeenBy(Myself)))

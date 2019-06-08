@@ -5782,6 +5782,9 @@ COPY ~SandrahNPC/ITM/CVVicSis.ITM~ ~override/CVVicSis.ITM~
 SAY NAME1 @814
 SAY NAME2 @814
 SAY DESC @815
+COPY ~SandrahNPC\CRE/CVSafgua.CRE~ ~override\CVSafgu2.CRE~
+SAY NAME1 @1008
+SAY NAME2 @1008
 PRINT ~Added Sandrah Viconia's prosecution plot~
 
 EXTEND_TOP
