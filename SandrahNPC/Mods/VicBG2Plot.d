@@ -24,7 +24,7 @@ IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY~I am witness that she spend the ni
 
 CHAIN
 IF~~THEN CVSafgua VicHold2
-~Be that true or not, court is not held by me out on the street but in Council at a given date. The investigation is persued with high priority given Acton Balthis status in Amn. ~
+~Be that true or not, court is not held by me out on the street but in Council at a given date. The investigation is pursued with high priority given Acton Balthis status in Amn. ~
 =~Now stand aside while I take the drow in custody. You will not oppose the Council and the Cowled Wizards openly, will you. This is the law, respect it.~
 ==CVSandrJ~Who is responsible for the investigation?~
 ==CVSafgua~Corgeig Axehand himself, as this case involves the nobility of Amn.~
@@ -81,7 +81,7 @@ DO~ChangeAIScript("",DEFAULT)~
 ==CVSandrJ IF~Global("Drowseen","GLOBAL",1)~THEN~He saw a drow, just like you said, but he did not see you!! Now we must find that mysterious woman who has an interest to frame you in this way. Do you have any idea who she might be?~
 ==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~No...except...hm, possible...~
 ==CVSandrJ IF~Global("Drowseen","GLOBAL",1)~THEN~Yes?~
-==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~Except for Lolth's servants there are only few who would hate me so much that they would persue me after all this time. I do not even know if any of them is still alive.~
+==Viconi IF~Global("Drowseen","GLOBAL",1)~THEN~Except for Lolth's servants there are only few who would hate me so much that they would pursue me after all this time. I do not even know if any of them is still alive.~
 =~My sisters.~DO~SetGlobal("Drowseen","GLOBAL",2) ~
 ==CVSandrJ ~We will continue our search, I swear it will not be long, Viconia.~
 END
