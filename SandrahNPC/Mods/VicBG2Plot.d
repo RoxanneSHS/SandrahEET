@@ -108,7 +108,7 @@ IF WEIGHT #-4~Global("SanVicArrst","GLOBAL",3) ~THEN  Corgeig VicHint1
 ~Ah, the party of <CHARNAME>. I was somehow expecting you. You are known to stir trouble and one of your company is really a cold blooded murderer.~
 DO~SetGlobal("SanVicArrst","GLOBAL",4) SetGlobal("WeaponUse","GLOBAL",1) ~
 ==CVSandrJ~We are where trouble is present, so much is true, but we seldom stir it. Often we do what the guard was unable to perform.~
-=~But we are not here to exchange pleasantries, Axehand. If you know us so well, you will also know we are loyal to our comrads.~
+=~But we are not here to exchange pleasantries, Axehand. If you know us so well, you will also know we are loyal to our comrades.~
 ==Corgeig~A rare virtue in Amn, even among my peer nobles.~
 END
 ++~Viconia is innocent, we were together in Trademeet at that time.~+ VicHint2
