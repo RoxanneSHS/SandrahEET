@@ -6069,7 +6069,8 @@ COMPILE ~SandrahNPC/Mods/GreyClanSan.d~
 COMPILE ~SandrahNPC/BAF/SanMonik.baf~
 COMPILE ~SandrahNPC/Mods/CVAkaWiz.baf~
 COPY_EXISTING ~bw05moni.CRE~ ~override/bw05moni.CRE~
-WRITE_ASCII 0x248 ~SanMonik ~ 
+WRITE_ASCII 0x248 ~SanMonik~
+WRITE_ASCII 0x250 ~Mage8e~
 COPY_EXISTING ~bw05ffge.CRE~ ~override/bw05ffge.CRE~
 WRITE_ASCII 0x248 ~TalkSan1~
 COPY_EXISTING ~bw05teve.cre~ ~override/bw05teve.cre~      
