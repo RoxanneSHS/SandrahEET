@@ -6,7 +6,7 @@ END
 
 CHAIN
 IF WEIGHT #-5~Global("SanMeetArath","GLOBAL",2)~THEN BLK#Arat SanMeetArath2
-~With respect to slavery we seem to share the same opinion, mylady.~
+~With respect to slavery we seem to share the same opinion, milady.~
 DO~SetGlobal("SanMeetArath","GLOBAL",3)RealSetGlobalTimer("SanInterArath","LOCALS",1700)~
 ==BSandr~Is it so unusual to care for one's fellow beings and fight against those who do treat them like possession and worse?~
 ==BLK#Arat~I'd say it is not - still it is unusual for one like you.~
@@ -43,7 +43,7 @@ DO~SetGlobal("SanMeetArath","GLOBAL",7)RealSetGlobalTimer("SanInterArath","LOCAL
 ==BSandr~My personal hatred towards Bhaal goes even deeper as he caused the early death of my mother by impregnating her with one of his spawns.~
 ==BLK#Arat~Oops...so my question is further fuelled by this fact. Unless you secretly plan to take revenge on <CHARNAME> but still wait for some strange reason.~
 ==BSandr~Fact is that our paths have crossed because of the relationship you just revealed and we stayed companions and fell in love with each other meanwhile. Over time we found more and more indications that we share some common fate that still needs to found. We are connected by the bloodline that each of us have inherited but we are not slaves to our blood.~
-==BLK#Arat~I'm relieved to hear that. I couldn't find much of Bhaal's influence on <CHARNAME> and you hatred of the dead god was even more hidden until today.~
+==BLK#Arat~I'm relieved to hear that. I couldn't find much of Bhaal's influence on <CHARNAME> and your hatred of the dead god was even more hidden until today.~
 =~I'm not sure I gained more clarity about either of you two now...let me think a bit.~EXIT
 
 CHAIN
