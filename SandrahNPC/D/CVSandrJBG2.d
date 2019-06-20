@@ -1139,7 +1139,8 @@ END
 IF~Global("SanSacroll","GLOBAL",2)~THEN BEGIN Sanfreehend10
 SAY~(Sandrah has taken the message you have found on the dead slaver captain Haegan and reads it once again.) ~
 IF~~THEN REPLY~Anything you want to share with me, my love?~DO ~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO  Sanfreehend11
-IF~~THEN REPLY~I don't like that look on your face - you want to enrol me for one of your silly crusades for goodness again...~DO~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO Sanfreehend11
+IF~~THEN REPLY~I don't like that look on your face - you want to enroll me for one of your silly crusades for goodness again...~DO~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO Sanfreehend11
+IF~~THEN REPLY~I have not forgotten about it, Sandrah.~ DO ~SetGlobal("SanSacroll","GLOBAL",3)IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO  Sanfreehend11
 END
 
 IF~~THEN BEGIN Sanfreehend11
@@ -1156,6 +1157,7 @@ END
 IF~~THEN BEGIN Sanfreehend13
 SAY~Yes, we will, I am glad to follow a leader like you - and to love <PRO_HIMHER> dearly. ~
 IF~~THEN REPLY ~(You need no further invitation to embrace your beloved and kiss her passionately.)~DO~AddJournalEntry(@458,QUEST)~EXIT
+IF~~THEN REPLY ~Let's do what must be done.~DO~AddJournalEntry(@458,QUEST)~EXIT
 END
 
 IF~Global("SanSacroll","GLOBAL",7)~THEN BEGIN Santemlslav1
