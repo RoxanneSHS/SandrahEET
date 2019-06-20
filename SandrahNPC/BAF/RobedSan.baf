@@ -1,8 +1,18 @@
 IF
 InParty("CVSandr")
+Global("#robedatk2","LOCALS",0)
 Global("#robedatk","LOCALS",1)
 THEN
 RESPONSE #100
-SetGlobal("#robedatk","LOCALS",4)
+SetGlobal("#robedatk2","LOCALS",1)
 Kill("Wailin")
+END
+
+IF
+Global("#robedatk2","LOCALS",1)
+HPLT(Myself,40)
+THEN
+RESPONSE #100
+SetGlobal("#robedatk2","LOCALS",2)
+ReallyForceSpell(Myself,DRYAD_TELEPORT)
 END
