@@ -6226,7 +6226,10 @@ END
 IF
 AreaCheck("F_9898")
 InParty("F_Drizzt")
+OR(3)
 Dead("F_Robed")
+PartyHasItem("F_Irenot")
+PartyHasItem("F_Sumtan")
 Global("SanDrByeBG1","LOCALS",0)
 Delay(12)
 THEN

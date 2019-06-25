@@ -10,9 +10,12 @@ END
 
 IF
 Global("#robedatk2","LOCALS",1)
-HPLT(Myself,40)
+HPLT(Myself,51)
 THEN
 RESPONSE #100
 SetGlobal("#robedatk2","LOCALS",2)
+SetGlobal("Sprite_is_deadF_Robed","Global",1)
+DisplayStringWait(Myself,2816)
+SmallWait(3)
 ReallyForceSpell(Myself,DRYAD_TELEPORT)
 END
