@@ -82,4 +82,14 @@ ActionOverride("Minsc",FillSlot(SLOT_BELT))
 Continue()
 END
 
+IF
+PartyHasItem("godag02")
+THEN
+RESPONSE #100
+ActionOverride(Player1,TakePartyItem("godag02"))
+Wait(2)
+ActionOverride(Player1,DestroyItem("godag02"))
+Continue()
+END
+
 
