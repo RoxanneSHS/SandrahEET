@@ -8118,6 +8118,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanbafD","LOCALS",1)
 TakePartyItem("sanbaf")
+Wait(2)
 DestroyItem("sanbaf")
 END
 
@@ -8129,6 +8130,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanbamD","LOCALS",1)
 TakePartyItem("sanbam")
+Wait(2)
 DestroyItem("sanbam")
 END
 
