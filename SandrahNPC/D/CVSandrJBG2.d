@@ -561,6 +561,7 @@ END
 IF~~THEN BEGIN SanHendls4
 SAY ~...yes...some...(She hides her face on your shoulder sobbing noiseless. You have never before seen her so agitated.)~
 IF~~THEN REPLY ~(There is nothing for you to do but take her in your arms and caress her head until the sobbing stops. After a while she lifts her head and gives you a kiss before she wordlessly motions you to move on.)~EXIT
+IF~~THEN REPLY ~(There is nothing for you to do but take her in your arms and caress her head until the sobbing stops. You just hope she does not misinterpret your action.)~EXIT
 END
 
 IF~~THEN BEGIN SanHendls5
