@@ -334,7 +334,7 @@ END
 IF~Global("SanDungtalk","GLOBAL",3)~THEN BEGIN SanDungFi11
 SAY~This is not a place where I think we deserve to end.~
 IF ~~THEN REPLY~Are you - of all people I know - suddenly expressing dark feelings? ~DO~SetGlobal("SanDungtalk","GLOBAL",4) RealSetGlobalTimer("SanDungtalkInt","GLOBAL",7200)~GOTO SanDungFi12
-IF~~THEN REPLY~I definitely have no intention to end in this dump- are you trying to de-motivate us all?~DO~SetGlobal("SanDungtalk","GLOBAL",4) RealSetGlobalTimer("SanDungtalkInt","GLOBAL",7200)~GOTO SanDungFi12
+IF~~THEN REPLY~I definitely have no intention to end in this dump - are you trying to de-motivate us all?~DO~SetGlobal("SanDungtalk","GLOBAL",4) RealSetGlobalTimer("SanDungtalkInt","GLOBAL",7200)~GOTO SanDungFi12
 END
 
 IF ~~THEN BEGIN SanDungFi12
