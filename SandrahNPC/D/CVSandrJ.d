@@ -339,7 +339,7 @@ END
 
 IF ~~THEN BEGIN SanDungFi12
 SAY ~Actually I wanted the opposite. It is not the fate I would accept for any of us, to pass down here unnoticed from anyone. I intend to leave a mark on the face of Toril once it is my time to go. ~
-IF~~THEN REPLY~Such a mark may be left with different flavours, love. I think I can be assured which type you have in mind.~GOTO SanDung13
+IF~~THEN REPLY~Such a mark may be left with different flavours, Sandrah. I think I can be assured which type you have in mind.~GOTO SanDung13
 IF~~THEN REPLY~My mark on the face of Toril shall be one to be remembered with respect.~GOTO SanDung13
 IF~~THEN REPLY~As long as we leave Toril a better place than how we found it, does it matter whether our deeds are noticed by the public?~GOTO SanDung13
 IF~~THEN REPLY~You and me, we have all it needs to become heroes long to be remembered.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO SanDung13
