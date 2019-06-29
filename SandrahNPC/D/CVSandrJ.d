@@ -2211,7 +2211,7 @@ END
 
 IF ~Global("SanBranSearchRem","GLOBAL",2) ~THEN BEGIN GetPetScr1
 SAY ~Please, <CHARNAME>, give me a minute of your time. ~
-IF ~~THEN REPLY ~Of course, Sandrah, you have been a bit silent recently.~SetGlobal("C#BE_SpawnBrage","GLOBAL",7)~GOTO GetPetScr2
+IF ~~THEN REPLY ~Of course, Sandrah, you have been a bit silent recently.~DO~SetGlobal("C#BE_SpawnBrage","GLOBAL",7)~GOTO GetPetScr2
 IF ~~THEN REPLY ~(Sigh) Yees?.~DO~SetGlobal("C#BE_SpawnBrage","GLOBAL",7)~GOTO GetPetScr2
 END
 
