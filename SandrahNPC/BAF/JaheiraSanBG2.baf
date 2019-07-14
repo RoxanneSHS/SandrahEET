@@ -1,11 +1,4 @@
 IF
-GlobalGT("SanBeginRTF","GLOBAL",1)
-THEN
-RESPONSE #100
-DestroySelf()
-END
-
-IF
 Global("SanJaheirPCBG2","LOCALS",0)
 InParty("Jaheira")
 Global("Chapter","GLOBAL",14)

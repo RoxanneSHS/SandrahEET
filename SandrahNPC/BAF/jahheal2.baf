@@ -9,6 +9,7 @@ SetGlobal("SanJaheirBG2","GLOBAL",8)
 END
 
 IF
+Global("ElminsterForgives","GLOBAL",1)
 Global("LoveTalk","LOCALS",71)
 Global("SanJaheirBG2","GLOBAL",10)
 RealGlobalTimerExpired("JaheiraRomance","GLOBAL")
@@ -28,5 +29,9 @@ SetGlobal("SanJaheirBG2","GLOBAL",11)
 Interact(Player1)
 END
 
-
-
+IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+THEN
+RESPONSE #100
+DestroySelf()
+END
