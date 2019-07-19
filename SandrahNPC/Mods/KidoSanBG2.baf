@@ -46,6 +46,13 @@ Delay(12)
 THEN
 RESPONSE #100
 SetGlobal("SanKidoPlot","LOCALS",1)
+END
+
+IF
+Global("SanKidoPlot","LOCALS",1)
+CombatCounter(0)
+THEN
+RESPONSE #100
 MoveToObject(Player1)
 Interact("CVSandr")
 END
