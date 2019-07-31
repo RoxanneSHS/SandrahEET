@@ -1,0 +1,10 @@
+I_C_T Stoflund 4 StoSanBlDrag
+==CVSandrJ IF~InParty("CVSandr")~THEN~These dragons are aquatic creatures that live in sea and swamps and they feed on fish, shellfish and a tad of red meat from terrestrial creatures. They are known to be extremely ill tempered and cruel.~
+==Stoflund IF~InParty("CVSandr")~THEN~Right, lady. And there was one at the mouth of River Chionthar a while ago.~
+END
+
+I_C_T StoWinsk 6 StoSanWinsk
+==CVSandrJ IF~InParty("CVSandr") OR(3) GlobalGT("WinskApp1","GLOBAL",2)GlobalGT("SanOrDiEarly","GLOBAL",1)GlobalGT("SanOrDiId","GLOBAL",5)~THEN~Sarevok does not need you anymore, Winski Perorate. You lie only to yourself but do not fool us. Your ward has long outgrown the one who wanted to be his master.~
+==Stowinsk IF~InParty("CVSandr") OR(3) GlobalGT("WinskApp1","GLOBAL",2)GlobalGT("SanOrDiEarly","GLOBAL",1)GlobalGT("SanOrDiId","GLOBAL",5)~THEN~Elminster's daughter, you will learn your lesson in time. Or do you really think that <CHARNAME> would need YOU! Maybe I failed and maybe I know it, but you think you can handle a child of Bhaal, you dreamer.~
+==CVSandrJ IF~InParty("CVSandr") OR(3) GlobalGT("WinskApp1","GLOBAL",2)GlobalGT("SanOrDiEarly","GLOBAL",1)GlobalGT("SanOrDiId","GLOBAL",5)~THEN~So far we have always been able to counteract your plans and those of Sarevok.~
+END

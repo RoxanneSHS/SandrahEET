@@ -6620,6 +6620,13 @@ END ELSE BEGIN
   PRINT ~Xulaye not detected - skipped ~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~sto100.are~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/SanSeaTower.d~
+PRINT ~ Sea Tower detected - Sandrah part added~
+END ELSE BEGIN
+  PRINT ~Sea Tower not detected - skipped ~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~Kindrek.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/KindrekSanBG2.d~
 EXTEND_TOP
