@@ -674,7 +674,7 @@ IF~Global("SanDurlAnsw","LOCALS",1)~THEN BEGIN DurlAnsw
 SAY ~Looks like they want to test our knowledge in lore here.~
 IF~~THEN REPLY ~Counsellor, this is your domain, please.~GOTO DurlAnsw2
 IF~~THEN REPLY ~Oh, no, not riddles? Can you help me out with those?~GOTO DurlAnsw2
-IF~~THEN REPLY ~I love riddles. You'll soon see how good I am at that.~EXIT
+IF~~THEN REPLY ~I love riddles. You'll soon see how good I am at that.~DO~SetGlobal("SanDurlAnsw","LOCALS",3)~EXIT
 END
 
 IF~~THEN BEGIN DurlAnsw2
