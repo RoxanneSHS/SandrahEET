@@ -8,3 +8,7 @@ I_C_T StoWinsk 6 StoSanWinsk
 ==Stowinsk IF~InParty("CVSandr") OR(3) GlobalGT("WinskApp1","GLOBAL",2)GlobalGT("SanOrDiEarly","GLOBAL",1)GlobalGT("SanOrDiId","GLOBAL",5)~THEN~Elminster's daughter, you will learn your lesson in time. Or do you really think that <CHARNAME> would need YOU! Maybe I failed and maybe I know it, but you think you can handle a child of Bhaal, you dreamer.~
 ==CVSandrJ IF~InParty("CVSandr") OR(3) GlobalGT("WinskApp1","GLOBAL",2)GlobalGT("SanOrDiEarly","GLOBAL",1)GlobalGT("SanOrDiId","GLOBAL",5)~THEN~So far we have always been able to counteract your plans and those of Sarevok.~
 END
+
+I_C_T BDDarskh 1 StoSanDarskh
+==CVSandrJ IF~InParty("CVSandr") Global("StoSanWinsk","Global",1) ~THEN~This is the same illithid we have seen at the Sea Tower. It seems that we interrupted their operation only for a short while. Mind flayers love complex plans with many options. Anyway, here we are to stop another one.~
+END
