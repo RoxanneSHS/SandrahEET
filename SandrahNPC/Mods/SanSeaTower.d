@@ -12,3 +12,10 @@ END
 I_C_T BDDarskh 1 StoSanDarskh
 ==CVSandrJ IF~InParty("CVSandr") Global("StoSanWinsk","Global",1) ~THEN~This is the same illithid we have seen at the Sea Tower. It seems that we interrupted their operation only for a short while. Mind flayers love complex plans with many options. Anyway, here we are to stop another one.~
 END
+
+CHAIN
+IF~Global("StoOtherWay","Sto301",2)~THEN CVJenliJ IlliSeaTow
+~Githyanki cadre found illithids and almost destroyed. Jen'lig recognise elite captain over there. Did enough damage and left brain to die alone.~
+DO~SetGlobal("StoOtherWay","Sto301",3)~
+==CVSandrJ IF~InParty("CVSandr")~THEN~It looks like your kinsmen also took whatever evidence might have existed that could have given us a clue to the nature of those activities down here.~
+==CVJenliJ~Manlings may never know what brain eaters wanted here as Githyanki took all clues away to Queen.~EXIT
