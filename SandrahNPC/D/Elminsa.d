@@ -8,7 +8,7 @@ DO ~SetGlobal("ElmRevDau","GLOBAL",4) ReputationInc(-9)~EXIT
 END
 
 // Bring Gifts
-IF ~Global("MystrGift","GLOBAL",2) ~ElmBringGift
+IF ~Global("MystrGift","GLOBAL",2) !AreaCheck("CVElm2") ~ElmBringGift
 SAY ~Greetings, my daughter. Greetings, <CHARNAME>. Thine company is fairing well in thine doings in these troubled times. Thine deeds have not been unobserved by those who care for your well being.~
 =~My daughter, thine goddess is pleased by what thou didst in her name. Take these small trinkets as a symbol of her blessings.~
 IF~~THEN DO ~SetGlobal("MystrGift","GLOBAL",3) ~EXIT
@@ -181,7 +181,7 @@ IF ~~THEN Elminsa NarqLie
 = ~Well, we have what we need for the moment. I fear we have not seen the last of those creatures. But for now farewell and take good care of mine daughter. ~
 = ~(As he hugs and kisses Sandrah again, you see him slip a small parcel into  her robe.) ~DO ~GiveItemCreate("SanParc","CVSandr",0,0,0)
 SetGlobal("SanparcT","GLOBAL",1)
-AddJournalEntry(@77,QUEST_DONE) 
+AddJournalEntry(@77,QUEST_DONE)
 AddexperienceParty(5000)
 SetGlobal("SanNarQ","GLOBAL",7)
 TakePartyItem("EShard")
