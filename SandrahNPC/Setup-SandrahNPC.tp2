@@ -2279,6 +2279,10 @@ COPY ~SandrahNPC/Kit/CVSanbs.SPL~ ~override/CVSanbs.SPL~
      SAY 0xc  @549
      SAY 0x8  @549
      SAY 0x50 @999
+COPY ~SandrahNPC/Kit/Sani147.spl~ ~override~
+     SAY 0xc  @1009
+     SAY 0x8  @1009
+     SAY 0x50 @999
      
 COPY ~SandrahNPC/Kit/cvdra23.spl~ ~override/cvdra23.spl~
      SAY 0xc  @662

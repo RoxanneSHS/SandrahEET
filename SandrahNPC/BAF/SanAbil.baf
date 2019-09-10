@@ -470,7 +470,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",3)
 AddSpecialAbility("SPIN103")
-AddSpecialAbility("SPIN147")
+AddSpecialAbility("sani147")
 ReallyForceSpellRES("spin761",Myself)
 AddXPObject("CVSandr",5000)
 DisplayStringWait(Myself,@357)
@@ -545,7 +545,7 @@ Global("SanEndBG1Plot","GLOBAL",5)
 CombatCounter(0)
 THEN
 RESPONSE #100
-AddSpecialAbility("SPIN147")
+AddSpecialAbility("sani147")
 AddSpecialAbility("SPIN142")
 AddSpecialAbility("Sanlive")
 AddSpecialAbility("CVDeath")
