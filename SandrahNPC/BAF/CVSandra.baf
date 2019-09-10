@@ -8191,6 +8191,7 @@ END
 
 IF
 Global("Formedcloth","GLOBAL",21)
+GlobalGT("Chapter","Global",4)
 AreaCheck("CVROA1")
 InParty("Imoen2")
 THEN
