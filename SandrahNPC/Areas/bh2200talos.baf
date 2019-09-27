@@ -11,10 +11,11 @@ IF
 Global("SanBHTalos","GLOBAL",5)
 THEN
 RESPONSE #100
+SetGlobal("SanBHTalos","GLOBAL",6)
 CreateCreature("dsfordrg",[4357.1536],3)
 CreateCreature("ssnake01",[3963.1250],4)
 CreateCreature("ssnake01",[4286.1247],5)
-SetGlobal("SanBHTalos","GLOBAL",6)
+ActionOverride("Salandiaxarxes",DestroyItem("DSward1"))
 END
 
 IF
