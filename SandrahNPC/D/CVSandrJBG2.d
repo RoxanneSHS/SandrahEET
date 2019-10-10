@@ -1943,7 +1943,7 @@ END
 
 IF~~THEN BEGIN Suldahint4
 SAY~Exactly. If we only had the means to warn those elves. But the town has vanished from the knowledge and the surface of Toril some time ago. I can only imagine now that it had to do with the events that led to the exile of our opponents.~
-IF~~THEN REPLY~Well, if all of that is true, the only way to help the elves is to pursue Jon. Which we must do any how for Imoen's an my own sake.~EXIT
+IF~~THEN REPLY~Well, if all of that is true, the only way to help the elves is to pursue Jon. Which we must do any how for Imoen's and my own sake.~EXIT
 IF~~THEN REPLY~We must follow the two creatures that stole Imoen's and my souls. If that leads us to the target of their revenge...fine, we can surely need those elves to our assistance.~EXIT
 END
 
