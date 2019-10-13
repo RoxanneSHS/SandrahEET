@@ -215,7 +215,7 @@ DO~SetGlobal("SanYasUD","LOCALS",2)~
 ==BYASRAEN ~Do you see me this way, Sandrah?~
 ==BSANDR ~Could be...but I was actually referring to where you come from - the Underdark.~
 ==BYASRAEN ~Is it how you imagined it?~
-==BSANDR ~I start to comprehend why you miss it, my love. It has its beauties of a kind that can be found nowhere else and are beyond what I had thought them to be. I never could imagine how many different colours and shades are visible in the dark once you start to acquaint yourself.~
+==BSANDR ~I start to comprehend why you miss it. It has its beauties of a kind that can be found nowhere else and are beyond what I had thought them to be. I never could imagine how many different colours and shades are visible in the dark once you start to acquaint yourself.~
 ==BYASRAEN ~Oh, Sandrah, I would love to show you so much - but fate has it that we had to come to this part of the Underdark...the backyard.~
 ==BSANDR ~I will try not to judge prematurely - you mean this is like getting your first impression of the surface by looking at Athkatla's slums?~
 ==BYASRAEN ~(Laughs) You precisely hit the mark. There is so much beauty to be found in the Underdark but this is the worst place to start. However this is the ideal training ground for the perils of my home.~
