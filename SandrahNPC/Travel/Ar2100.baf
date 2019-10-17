@@ -36,7 +36,6 @@ END
 IF
 Global("UcmMatronDrow","GLOBAL",1)
 Dead("UCMGMAT")
-Dead("umatwa03")
 THEN
 RESPONSE #100
 SetGlobal("UcmMatronDrow","GLOBAL",2)
