@@ -1041,7 +1041,7 @@ END
 
 IF
 Global("Solaufeinjob","GLOBAL",8)
-!AreaCheck("ar2202")
+!See("Phaere")
 Global("SanSola","GLOBAL",2)
 Delay(8)
 THEN
