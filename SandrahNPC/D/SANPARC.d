@@ -11,9 +11,9 @@ IF~OR(2)Global("Dollgiven","LOCALS",0) AreaCheck("Ares01") ~THEN REPLY ~Give me 
 IF~!Global("ENDOFBG1","GLOBAL",2)~THEN REPLY ~Can you retrieve something I have lost?~GOTO lostitem
 IF~Global("ENDOFBG1","GLOBAL",2)GlobalLT("Chapter","GLOBAL",20)~THEN REPLY ~Can you retrieve something I have lost?~GOTO lostitemSoA
 IF~Global("ENDOFBG1","GLOBAL",2)GlobalGT("Chapter","GLOBAL",19)~THEN REPLY ~Can you retrieve something I have lost?~GOTO lostitemToB
-IF~Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalLT("Chapter","GLOBAL",20)~THEN REPLY~We want to revisit a place we know.~GOTO Choice1
+IF~Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalLT("Chapter","GLOBAL",20)!Global("Chapter","GLOBAL",17)~THEN REPLY~We want to revisit a place we know.~GOTO Choice1
 IF~Global("SanCanTravel","GLOBAL",2) Global("SanBeginRTF","GLOBAL",0) Global("SanNotTeleport","GLOBAL",0) CombatCounter(0) !See([ENEMY])GlobalGT("Chapter","GLOBAL",19)~THEN REPLY~We want to revisit a place we know.~GOTO Choice1
-IF~Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",2) CombatCounter(0) !See([ENEMY])~THEN REPLY~We want to revisit a place we know.~GOTO Choice26
+IF~Global("SanCanTravel","GLOBAL",2) OR(2) Global("SanNotTeleport","GLOBAL",2) Global("Chapter","GLOBAL",17) CombatCounter(0) !See([ENEMY])~THEN REPLY~We want to revisit a place we know.~GOTO Choice26
 IF~Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",4) CombatCounter(0) !See([ENEMY])~THEN REPLY~We want to revisit a place we know.~GOTO Choice26
 IF~Global("SanCanTravel","GLOBAL",2) Global("SanNotTeleport","GLOBAL",6) CombatCounter(0) !See([ENEMY])~THEN REPLY~We want to revisit a place we know.~GOTO RTFNo
 IF~Global("SanDoPotn","GLOBAL",1) PartyHasItem("potn08") PartyHasItem("CVHeherb")~THEN REPLY~Can you enhance this healing potion for us?~DO~StartCutSceneMode() StartCutScene("CVhepo")~EXIT
