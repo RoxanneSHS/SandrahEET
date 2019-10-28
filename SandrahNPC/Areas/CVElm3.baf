@@ -107,9 +107,9 @@ PartyHasItem("CVVACRY")
 Global("CleanCrystal","CVElm3",0)
 THEN
 RESPONSE #100
+SetGlobal("CleanCrystal","CVElm3",1)
 ActionOverride("CVSandr",TakePartyItem("CVVACRY"))
 ActionOverride("CVSandr",DestroyItem("CVVACRY"))
-SetGlobal("CleanCrystal","CVElm3",1)
 END
 
 IF
