@@ -1,4 +1,17 @@
 IF
+GlobalGT("SanRotRepl","GLOBAL",0)
+Global("EntandDri","GLOBAL",0)
+!InMyArea("Driz2")
+InParty("CVSandr") 
+THEN
+RESPONSE #100
+SetGlobal("DrizztKickedOut","GLOBAL",1)
+CreateCreature("Driz21",[1027.1088],8)
+ActionOverride("Driz2",SetLeavePartyDialogueFile())
+Continue()
+END
+
+IF
 GlobalGT("SanROTRepl","GLOBAL",0)
 Global("EntandDri","GLOBAL",1)
 InParty("CVSandr")
