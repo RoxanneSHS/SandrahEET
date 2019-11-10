@@ -8209,6 +8209,11 @@ COPY_EXISTING ~hobelite.cre~ ~override~
 WRITE_ASCII 0x248 ~Hobelite~
 COMPILE ~SandrahNPC/Mods/Hobelite.baf~
 
+COPY_EXISTING ~hellself.dlg~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+REPLACE_TEXTUALLY ~Player2Fill~ ~Player4Fill~
+END
+
 COPY_EXISTING ~ppgithgi.cre~ ~override/ppgithg1.cre~
 WRITE_ASCII 0x280 ~ppgithg1~
 COPY_EXISTING ~ppgithwa.cre~ ~override/ppgithw1.cre~
