@@ -331,7 +331,7 @@ END
 // Abyss
 IF~Global("SanhellComm","ar2900",1)~THEN BEGIN SanKeepCool1
 SAY~(While everybody including yourself slowly fights down the internal turmoil your flight to the Abyss has caused your counsellor seems to have started the exploration of the area already.)~
-IF~~THEN REPLY~counsellor?~GOTO SanKeepCool2
+IF~~THEN REPLY~Counsellor?~GOTO SanKeepCool2
 IF~~THEN REPLY~There is not much any more that can threaten you, Sandrah, not even death or hell, it seems.~GOTO SanKeepCool2
 END
 
