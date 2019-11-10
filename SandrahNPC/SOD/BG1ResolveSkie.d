@@ -162,7 +162,7 @@ IF ~~THEN Skie BackHell2
 ~Hey, this is as well my place as it's yours, <CHARNAME>. Entar Silvershield is not my father. I learned to accept it. You showed me, Irenicus showed me, and my new ally showed me what to do with my *potential*.~
 =~Do what you must. I will not stand in your way today, dear <PRO_BROTHERSISTER>. Not this time.~
 ==CVSandrJ~Your new ally, Skie? Has he motivated you to follow the urge of your blood...~
-==Skie~He? There is no *he*. SHE has shown me where my destiny lies. They tried to keep me away from power and lock me in a golden cage. My stupid brother was to rule in Baldur's Gate, not me, who deserved it.~
+==Skie~He? There is no *he*. SHE has shown me where my destiny lies. They tried to keep me away from power and locked me in a golden cage. My stupid brother was to rule in Baldur's Gate, not me, who deserved it.~
 ==CVSandrJ~Is this why he had to die? You were involved in Eddard's murder near Beregost?~
 ==Skie~I had to start somewhere, didn't I. And I have to finish somewhere. You and <CHARNAME> will do better than any to be the cherry on my cream. But first you be so nice to clean up this Irenicus mess, will you, dear?~
 =~Sure you will, you need your soul. At least for a little while longer.~DO~ReallyForceSpell(Myself,DRYAD_TELEPORT)~EXIT
