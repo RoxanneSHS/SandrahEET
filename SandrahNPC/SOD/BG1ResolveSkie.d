@@ -173,7 +173,7 @@ IF WEIGHT #-4~Global("SanSoDSkieB","Global",5)~THEN Skie BackYaga
 DO~SetGlobal("SanSoDSkieB","Global",6)~
 ==CVSandrJ~Skie, are you following us?~
 ==Skie~I was told you would try to find a way to defeat Yaga-Shura. When I heard of it I was rejoicing, really. You must believe me.~
-==CVSandrJ~I do believe you. Your new ally told you, am I right? Eliminating the fire giant creates a vacant seat among the Five. Just think of it Skie, that seat was made for a giant. It might be far too large for you.~
+==CVSandrJ~I do believe you. Your new ally told you, am I right? Eliminating the fire giant creates a vacant seat among the Five. Just think of it, Skie, that seat was made for a giant. It might be far too large for you.~
 ==Skie~You...Ha, I shouldn't have underestimated your cleverness, Sandrah. But so what...even if you think you know what's going on, you can't do anything else but play our game.~
 ==CVSandrJ~You are in league with Melissan. What did she promise you? A seat at your father's side, some crumbs from the Throne of Bhaal?~
 ==Skie~Hush, little girl. Be a good pet and help <CHARNAME> to destroy the heart.~
