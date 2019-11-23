@@ -1,0 +1,8 @@
+IF
+GlobalGT("SanSoDSkieB","Global",5)
+Global("Itsmeagain","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("Itsmeagain","Locals",1)
+SetName(#9483)
+END
