@@ -107,7 +107,7 @@ IF~~THEN REPLY~Kelemvor? He was a dead hero and still became a god - of course t
 END
 
 IF~~THEN BEGIN SanKeve4
-SAY~If you recall your lore, <CHARNAME>, Kelemvor was one of the adventurers who set out in AO's name at the time of trouble, the others being Adon, Cyric, and Midnight. They had travelled over Toril together already for a number of years and Kelemvor was Midnight's true love at the time.~
+SAY~If you recall your lore, <CHARNAME>, Kelemvor was one of the adventurers who set out in AO's name at the Time of Troubles, the others being Adon, Cyric, and Midnight. They had travelled over Toril together already for a number of years and Kelemvor was Midnight's true love at the time.~
 IF~~THEN REPLY~But she ended up with Cyric in the end and Kelemvor was dead?~DO~SetGlobal("SanKevl","GLOBAL",2)~GOTO SanKeve5
 IF~~THEN REPLY~How did she end up with Cyric while Kelemvor was dead?~DO~SetGlobal("SanKevl","GLOBAL",2)~GOTO SanKeve5
 END
