@@ -1,4 +1,32 @@
 IF
+AreaCheck("ar6200")
+Global("CVJenTOBRet","GLOBAL",14)
+Global("IllaseraDead","AR6200",1)
+Global("AbazigalDead","AR6200",1)
+Global("YagaDead","AR6200",1)
+Global("SendaiDead","AR6200",1)
+THEN
+RESPONSE #100
+ClearAllActions()
+Wait(2)
+StartCutSceneMode()
+StartCutScene("CVJenTOL")
+END
+
+IF
+GlobalGT("FinalFight","AR6200",6)
+HPLT("Finmel01",100)
+AreaCheck("ar6200")
+Global("CVJenTOBRet","GLOBAL",14)
+THEN
+RESPONSE #100
+ClearAllActions()
+Wait(2)
+StartCutSceneMode()
+StartCutScene("CVJenTOL")
+END
+
+IF
 OR(5)
 Global("CVJenTOBRet","GLOBAL",3)
 Global("CVJenTOBRet","GLOBAL",4)
@@ -131,21 +159,6 @@ RESPONSE #100
 SetGlobal("JenAtFinal","LOCALS",1)
 CreateItem("ImoSlHP1",0,0,0)
 FillSlot(SLOT_AMULET)
-END
-
-IF
-AreaCheck("ar6200")
-Global("CVJenTOBRet","GLOBAL",14)
-Global("IllaseraDead","AR6200",1)
-Global("AbazigalDead","AR6200",1)
-Global("YagaDead","AR6200",1)
-Global("SendaiDead","AR6200",1)
-THEN
-RESPONSE #100
-ClearAllActions()
-Wait(2)
-StartCutSceneMode()
-StartCutScene("CVJenTOL")
 END
 
 IF
