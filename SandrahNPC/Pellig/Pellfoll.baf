@@ -8,7 +8,7 @@ Global("PelligFollow","GLOBAL",1)
 THEN
 RESPONSE #100
 MoveGlobalObject("Pellig","CVSandr")
-ActionOverride("Pellig",RunAwayFrom("CVSandr",5))
+ActionOverride("Pellig",MoveToObjectOffset("CVSandr",[-30.30]))
 END
 
 IF
@@ -30,7 +30,7 @@ Global("HaiassSeUne","GLOBAL",1)
 THEN
 RESPONSE #100
 MoveGlobalObject("haiass",Protagonist)
-ActionOverride("Haiass",RunAwayFrom(Player1,5)) 
+ActionOverride("Haiass",MoveToObjectOffset(Player1,[-30.30]))
 END
 
 IF
