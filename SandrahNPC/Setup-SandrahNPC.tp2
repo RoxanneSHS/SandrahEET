@@ -6540,6 +6540,18 @@ EXTEND_TOP
 ~TSSpy2.bcs~ ~SandrahNPC/Mods/TSSpy2extend.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Areas/ar0323TravlBG.baf~
+COPY_EXISTING ~Baldur.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+REPLACE_TEXTUALLY   ~Global("JosterLeave","GLOBAL",1)~
+~Global("JosterLeave","GLOBAL",1)
+!Global("JosterSilence","GLOBAL",1)~
+END
+COPY_EXISTING ~Baldur25.bcs~ ~override~
+DECOMPILE_AND_PATCH BEGIN
+REPLACE_TEXTUALLY   ~Global("JosterLeave","GLOBAL",1)~
+~Global("JosterLeave","GLOBAL",1)
+!Global("JosterSilence","GLOBAL",1)~
+END
 PRINT ~ Thief Stronghold Mod detected - Sandrah part added~
 END ELSE BEGIN
   PRINT ~Thief Stronghold Mod not detected - skipped ~
