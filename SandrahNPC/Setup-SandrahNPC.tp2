@@ -2491,6 +2491,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~d5_fnp_usability.d5~ BEGIN
 END
 //__________________________________________________________________________________
 
+CLEAR_IDS_MAP
+
 PRINT ~Installed Sandrah Kit~
 
 BEGIN
