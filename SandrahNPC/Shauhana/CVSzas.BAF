@@ -51,7 +51,7 @@ See("CVSandr")
 Global("MystItem","LOCALS",0)
 THEN
 RESPONSE #100
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 IncrementGlobal("MystItem","LOCALS",1)
 END
 
@@ -63,7 +63,7 @@ THEN
 RESPONSE #100
 IncrementGlobal("MystItem","LOCALS",1)
 DestroyItem("Finilla")
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 END
 
 IF
@@ -74,7 +74,7 @@ THEN
 RESPONSE #100
 IncrementGlobal("MystItem","LOCALS",1)
 DestroyItem("Finyaga")
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 END
 
 IF
@@ -85,7 +85,7 @@ THEN
 RESPONSE #100
 IncrementGlobal("MystItem","LOCALS",1)
 DestroyItem("Finabaz")
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 END
 
 IF
@@ -96,7 +96,7 @@ THEN
 RESPONSE #100
 IncrementGlobal("MystItem","LOCALS",1)
 DestroyItem("Finbalth")
-SetGlobalTimer("Itemsdes","LOCALS",60)
+SetGlobalTimer("Itemsdes","LOCALS",36)
 END
 
 IF
@@ -353,6 +353,7 @@ IF
 !GlobalTimerNotExpired("Spell","LOCALS")
 !GlobalTimerNotExpired("LockTarget","LOCALS")
 Global("Draw","LOCALS",0)
+GlobalLT("CastStopNu","Locals",4)
 See(NearestEnemyOf(Myself))
 OR(3)
 Global("safe","LOCALS",1)
@@ -360,10 +361,12 @@ Global("safe","LOCALS",1)
 !GlobalTimerNotExpired("TimeStop","LOCALS")
 THEN
 RESPONSE #70
+IncrementGlobal("CastStopNu","Locals",1)
 SetGlobalTimer("SpellCast","LOCALS",ONE_ROUND)
 SetGlobalTimer("TimeStop","LOCALS",TWENTY_MINUTES)
 ForceSpell(Myself,WIZARD_TIME_STOP)
 RESPONSE #30
+IncrementGlobal("CastStopNu","Locals",1)
 SetGlobalTimer("SpellCast","LOCALS",ONE_ROUND)
 SetGlobalTimer("TimeStop","LOCALS",TWENTY_MINUTES)
 SpellNoDec(Myself,WIZARD_TIME_STOP)
@@ -376,6 +379,7 @@ IF
 !GlobalTimerNotExpired("Spell","LOCALS")
 !GlobalTimerNotExpired("LockTarget","LOCALS")
 Global("Draw","LOCALS",0)
+GlobalLT("CastStopNu","Locals",4)
 See(NearestEnemyOf(Myself))
 OR(3)
 Global("safe","LOCALS",1)
@@ -384,10 +388,12 @@ CheckStatGT(Myself,0,SCRIPTINGSTATE5)
 !GlobalTimerNotExpired("TimeStop","LOCALS")
 THEN
 RESPONSE #70
+IncrementGlobal("CastStopNu","Locals",1)
 SetGlobalTimer("SpellCast","LOCALS",ONE_ROUND)
 SetGlobalTimer("TimeStop","LOCALS",1000)
 ForceSpell(Myself,WIZARD_TIME_STOP)
 RESPONSE #30
+IncrementGlobal("CastStopNu","Locals",1)
 SetGlobalTimer("SpellCast","LOCALS",ONE_ROUND)
 SetGlobalTimer("TimeStop","LOCALS",1000)
 SpellNoDec(Myself,WIZARD_TIME_STOP)
