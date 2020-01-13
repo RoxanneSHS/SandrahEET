@@ -7063,7 +7063,6 @@ END ELSE BEGIN
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~D0T#ALIA.CRE~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/Turnaroundsummon.d~
 EXTEND_BOTTOM
 ~ar6107.bcs~ ~SandrahNPC/Areas/ar6107.baf~
 PRINT ~Turnabout compatibility installed~
