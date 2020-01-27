@@ -95,8 +95,7 @@ END
 CHAIN
 IF ~Global("SanVisitedWD","GLOBAL",1) AreaCheck("CVDRE2") Global("SanWDWelc","LOCALS",1) GlobalLT("SanNarQ","GLOBAL",9)~THEN NarQMes WelWDremE
 ~Please remember to see your Father before you go.~
-END
-++ ~Yes, thank you, Landrel.~
+== CVSandrJ ~Yes, thank you, Landrel.~
 EXIT
 
 CHAIN
