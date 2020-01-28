@@ -4303,7 +4303,15 @@ COPY_EXISTING ~sbutler.cre~ ~override~
               WRITE_ASCII 0x280 ~sbutler~
 COPY_EXISTING ~scook.cre~ ~override~
               WRITE_ASCII 0x280 ~scook~
-
+              
+COPY_EXISTING ~book03.itm~ ~override~
+         WRITE_LONG 0x34 ~25000~
+COPY_EXISTING ~book04.itm~ ~override~
+         WRITE_LONG 0x34 ~25000~
+COPY_EXISTING ~book05.itm~ ~override~
+         WRITE_LONG 0x34 ~25000~
+COPY_EXISTING ~book06.itm~ ~override~
+         WRITE_LONG 0x34 ~25000~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~X#GARAR.cre~ THEN BEGIN
 COPY_EXISTING ~X#GARAR.CRE~ ~override/X#GARAR.CRE~
