@@ -200,7 +200,9 @@ END
 
 IF
 Global("HaiassMiss","LOCALS",1)
+OR(2)
 RealGlobalTimerExpired("HaiassMissTime","LOCALS")
+!AreaCheck("bg2700")
 GlobalLT("HaiassLevel","GLOBAL",2)
 !InMyArea("Haiass")
 CombatCounter(0)

@@ -1896,6 +1896,9 @@ END
 
 EXTEND_TOP ~Koboldf.bcs~ ~SandrahNPC/Baf/SanKobo.baf~
 
+STRING_SET
+217429 ~Well now, our paths cross once more. I've heard nothing but tales of thy exploits in the time we have been apart. It would seem that thou art destined to have quite the impact on the Sword Coast. Quite the burden for one so young.~
+
 //** HAIASS*//
 COMPILE ~SandrahNPC/Mods/haiass.d~
 EXTEND_TOP ~BG2616.bcs~  ~SandrahNPC/Areas/haiasslater.baf~
