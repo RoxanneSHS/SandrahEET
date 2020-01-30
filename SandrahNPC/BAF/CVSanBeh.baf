@@ -83,7 +83,17 @@ Global("SanAutoHeal","LOCALS",1)
 See(Player1)
 THEN
 RESPONSE #100
+SetGlobal("SanAutoHeal","LOCALS",2)
+RealSetGlobalTimer("SanAutoHealDelay","LOCALS",120)
 ReallyForceSpellRES("CVHealh",Player1)
+END
+
+IF
+Global("SanAutoHeal","LOCALS",2)
+RealGlobalTimerExpired("SanAutoHealDelay","LOCALS")
+THEN
+RESPONSE #100
+SetGlobal("SanAutoHeal","LOCALS",0)
 END
 
 IF
