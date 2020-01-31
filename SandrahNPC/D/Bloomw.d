@@ -35,7 +35,8 @@ IF ~Global("Bloomw","GLOBAL",2)~THEN Bloomw BloSUQ
 ~Books for Adventurers, books for mages, bard song books, maps, Bloomwhiffler's has it all!~
 == BSandr ~Bloomwhiffler? Do you know by any chance a Finch Bloomwhiffler?~
 == BLOOMW ~My name is Clarissa Bloomwhiffler, have you maybe met my wandering cousin during your travels?~
-== BSandr IF~Global("SUSanKnowsFinch","GLOBAL",1)~THEN~Oh, yes, she was travelling with our party for some time.~
+== BSandr IF~Global("SUSanKnowsFinch","GLOBAL",1)!BeenInParty("Sufinch")~THEN~Oh, yes, she had helped us with some trouble on the Sword Coast once.~
+== BSandr IF~Global("SUSanKnowsFinch","GLOBAL",1)BeenInParty("Sufinch")~THEN~Oh, yes, she was travelling with our party for some time.~
 == BSandr IF~!Global("SUSanKnowsFinch","GLOBAL",1)~THEN~<CHARNAME> has probably met her at Candlekeep before <PRO_HESHE> had to leave there.~
 == BLOOMW ~How is the old bookworm doing, where is she now?~
 END
