@@ -203,3 +203,10 @@ DisplayStringWait(Player1,@979)
 SetGlobal("CVJenswseq","MYAREA",0)
 END
 
+IF
+Global("ElmRevDau","GLOBAL",1)
+!Dead("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("ElmRevDau","GLOBAL",0)
+END
