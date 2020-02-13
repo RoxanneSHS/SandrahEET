@@ -205,8 +205,11 @@ END
 
 IF
 Global("ElmRevDau","GLOBAL",1)
+OR(2)
+InParty("CVSandr")
 !Dead("CVSandr")
 THEN
 RESPONSE #100
 SetGlobal("ElmRevDau","GLOBAL",0)
+SetGlobal("Sprite_is_DeadCVSandr","Global",0) 
 END
