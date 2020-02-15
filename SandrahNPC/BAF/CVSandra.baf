@@ -4175,6 +4175,7 @@ IF
 AreaCheck("BG5506")
 Global("SanLibCommt3","LOCALS",0)
 Dead("Prat")
+Global("Teth","GLOBAL",2)
 THEN
 RESPONSE #100
 SetGlobal("SanLibCommt3","LOCALS",1)
