@@ -1615,7 +1615,7 @@ SAY ~What a wonderful creature, a beautiful young stallion! It must be a great p
 IF ~~THEN REPLY ~I have to admit, my experience with these creatures is almost non- existent.~GOTO Sanhors3
 IF ~Global("SanRomPath","GLOBAL",1)~THEN REPLY ~Do you want me to catch it for you, my lady, to see my proud queen mount this impressive horse?~GOTO Sanhors2
 IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY ~I think you know more about riding than I do. But if you catch and hold it for me, I will put my trust in you and mount his back. But only if you lead him for me.~GOTO Sanhors3
-IF ~~THEN REPLY ~And there! Hurray, maggots. Let's all stop and cheer for maggots.~EXIT
+IF ~~THEN REPLY ~And there! Hurray, maggots. Let's all stop and cheer for maggots.~GOTO Sanhors3
 END
 
 IF~~THEN BEGIN Sanhors2
