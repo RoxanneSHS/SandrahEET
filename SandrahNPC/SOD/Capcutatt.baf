@@ -1,0 +1,17 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("Haiass")
+SmallWait(10)
+LeaveAreaLUA("BG0607","",[1485.300],NNW)
+END
+
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId("Pellig")
+SmallWait(10)
+LeaveAreaLUA("BG0607","",[1335.440],NNW)
+END
