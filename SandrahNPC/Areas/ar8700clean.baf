@@ -3,6 +3,7 @@ Global("Chapter","Global",3)
 GlobalLT("SANIMONASHINT","GLOBAL",19)
 InParty("Imoen2")
 Dead("Tazok")
+Dead("Rellruk")
 THEN
 RESPONSE #100
 SetGlobal("SANIMONASHINT","GLOBAL",19)
