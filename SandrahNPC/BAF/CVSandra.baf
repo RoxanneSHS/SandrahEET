@@ -2375,9 +2375,10 @@ Global("SanNarQ","GLOBAL",2)
 Global("NotWFall","GLOBAL",0)
 Range("Container2",20)
 AreaCheck("BG5200")
-OR(2)
+OR(3)
 PartyHasItem("MISC62") 
 Global("HelpDrienne","GLOBAL",1)
+!Contains("MISC62","Container2")
 !StateCheck(Player1,CD_STATE_NOTVALID)
 THEN
 RESPONSE #100
