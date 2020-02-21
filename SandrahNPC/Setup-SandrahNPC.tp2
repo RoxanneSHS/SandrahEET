@@ -358,9 +358,9 @@ COPY ~SandrahNPC\Areas/CVROA2LN.bmp~ ~override\CVROA2LN.bmp~
 COPY ~SandrahNPC\Areas/CVROA2N.wed~ ~override\CVROA2N.wed~
 
 COPY ~SandrahNPC\Areas/CVROA3.ARE~ ~override\CVROA3.ARE~
-     SAY 0x4648 @420
-     SAY 0x467c @797
-     SAY 0x46b0 @798
+     SAY 0x46ac @420
+     SAY 0x46e0 @797
+     SAY 0x4714 @798
      SAY 0x2580 @799
      COMPILE ~SandrahNPC/Areas/CVROA3.baf~
 COPY ~SandrahNPC\Areas/CVROA3.mos~ ~override\CVROA3.mos~
