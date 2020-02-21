@@ -73,7 +73,7 @@ IF ~Global("Maitre1","GLOBAL",2)~THEN  maitrde WDresto5
 == BIMOEN IF~InParty("Imoen2") ~THEN ~Rose quayles? What about pink ones? ~
 ==IF_FILE_EXISTS ACBreB IF~InParty("ACBre") ~THEN  ~Fine, I take a dozen of those trout...~
 == MAITRDE IF~InParty("ACBre") ~THEN  ~But, Sir, we were extremely lucky to acquire just five for the whole restaurant, the cost is immense.~
-==BDorn IF~InParty("Dorn") ~THEN ~Meat!~
+==BDorn_ IF~InParty("Dorn") ~THEN ~Meat!~
 == MAITRDE IF~InParty("Dorn") ~THEN ~Always a good choice, sir.~
 == BVICON  IF~InParty("Viconia") ~THEN ~Now, what about fresh gragrk, rivvil.~
 == MAITRDE IF~InParty("Viconia") ~THEN ~ And how would you like that cooked, medium, well done...~
