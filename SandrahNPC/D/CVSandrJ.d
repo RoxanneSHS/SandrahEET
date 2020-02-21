@@ -4738,7 +4738,7 @@ IF ~~THEN BEGIN SanImoBhaCon6
 SAY ~If all other possibilities fail on a case and only one remains in the end, must not that one then be the truth?~
 IF ~GlobalLT("OrcPrison","GLOBAL",8)~THEN REPLY ~But she has not those dreams I have. She is not hunted like me. If the same seed is in her, then it has not grown up in the same way as in me, except for that slayer manifestation once.~GOTO SanImoBhaCon7
 IF ~GlobalGT("OrcPrison","GLOBAL",8)~THEN REPLY ~But she has not those dreams I have. She is not hunted like me. If the same seed is in her, then it has not grown up in the same way as in me.~GOTO SanImoBhaCon7
-IF ~GlobalGT("OrcPrison","GLOBAL",8)~THEN REPLY ~Tin evidence. She is not hunted like me. Nobody recognises the curse on her.~GOTO SanImoBhaCon7
+IF ~GlobalGT("OrcPrison","GLOBAL",8)~THEN REPLY ~Thin evidence. She is not hunted like me. Nobody recognises the curse on her.~GOTO SanImoBhaCon7
 END
 
 IF ~~THEN BEGIN SanImoBhaCon7

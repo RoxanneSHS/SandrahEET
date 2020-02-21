@@ -336,9 +336,9 @@ COPY ~SandrahNPC\Areas/CVROA1SR.bmp~ ~override\CVROA1SR.bmp~
 COPY ~SandrahNPC\Areas/CVROA2.ARE~ ~override\CVROA2.ARE~
    SAY 0x3704 @785
    SAY 0x3640 @785
-   SAY 0x6018 @91
-   SAY 0x604c @788
-   SAY 0x6080 @789
+   SAY 0x6054 @91
+   SAY 0x6088 @788
+   SAY 0x60bc @789
    SAY 0x3330 @793
    SAY 0x33f4 @793
    SAY 0x37c8 @789
