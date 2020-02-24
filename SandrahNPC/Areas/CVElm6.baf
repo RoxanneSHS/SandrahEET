@@ -7,3 +7,11 @@ SetGlobal("TalosKnow","CVElm6",1)
 CreateCreature("CVTalop1",[774.561],2)
 CreateCreature("CVTalow1",[812.512],3)
 END
+
+IF
+Global("SanSharNewHome","GLOBAL",0)
+Global("TalosKnow","CVElm6",1)
+THEN
+RESPONSE #100
+SetGlobal("SanSharNewHome","GLOBAL",1)
+END
