@@ -402,10 +402,10 @@ END
 
 IF
 AreaCheck("BG0515")
-Global("SanDurlAnsw","LOCALS",0)
+Global("SanDurlAnsw","BG0515",0)
 THEN
 RESPONSE #100
-SetGlobal("SanDurlAnsw","LOCALS",1)
+SetGlobal("SanDurlAnsw","BG0515",1)
 END
 
 IF

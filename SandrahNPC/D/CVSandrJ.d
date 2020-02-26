@@ -5057,15 +5057,15 @@ END DELSVIR 15
 
 // Durlag's Tower
 INTERJECT STONEDL 0 SanAnsw1
-== CVSandrJ IF ~InParty("CVSandr") ~THEN ~From the west it came, and then the south. The east held it next, and now it rests in the north.~
+== CVSandrJ IF ~InParty("CVSandr")Global("SanDurlAnsw","BG0515",2) ~THEN ~From the west it came, and then the south. The east held it next, and now it rests in the north.~
 END STONEDL 1
 
 INTERJECT STONEDL 4 SanAnsw2
-== CVSandrJ IF ~InParty("CVSandr") ~THEN ~It began with you and your need for a home. It grew with your clan, as you feared losing them. It manifested in the invaders that came, but you feared their coming already. It became your home, where it keeps you safe.~
+== CVSandrJ IF ~InParty("CVSandr") Global("SanDurlAnsw","BG0515",2)~THEN ~It began with you and your need for a home. It grew with your clan, as you feared losing them. It manifested in the invaders that came, but you feared their coming already. It became your home, where it keeps you safe.~
 END STONEDL 6
 
 INTERJECT STONEDL 7 SanAnsw3
-== CVSandrJ IF ~InParty("CVSandr") ~THEN ~The blame begins with the invaders, but they attacked with supposed good reason. It could be on your people, but they were in the shelter of your confidence. The craftsmen only did their jobs as directed. In your eyes, you are the one to blame for all that has happened.~
+== CVSandrJ IF ~InParty("CVSandr")Global("SanDurlAnsw","BG0515",2) ~THEN ~The blame begins with the invaders, but they attacked with supposed good reason. It could be on your people, but they were in the shelter of your confidence. The craftsmen only did their jobs as directed. In your eyes, you are the one to blame for all that has happened.~
 END STONEDL 9
 
 
