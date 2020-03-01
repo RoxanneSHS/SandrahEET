@@ -458,9 +458,9 @@ END
 CHAIN
 IF~~THEN  CVSandrJ ImoSendWDSHP
 ~Imoen, remember that there is somebody else waiting for you.~
-==IMOENP_~(Sigh) If I could only join him in Waterdeep, besta Sandrah...~
-==CVSandrJ~You can, do not despair. I have a spell for you to be sent to Henning in Waterdeep.~
-==IMOENP_~Gee, I knew and knew and knew always all the time you would be there for me if all else failed, Sandrah. Yes and yes, please send me to Henning!~
+==IMOENP_~(Sigh) If I could only join the folks in Waterdeep, besta Sandrah...~
+==CVSandrJ~You can, do not despair. I have a spell for you to be sent to Clarissa's place at Waterdeep.~
+==IMOENP_~Gee, I knew and knew and knew always all the time you would be there for me if all else failed, Sandrah. Yes and yes, please send me there!~
 DO ~ActionOverride("Imoen2",SetGlobal("KickedOut","LOCALS",1)) ActionOverride("Imoen2",SetDialogue("IMOENP_")) ActionOverride("Imoen2",EscapeAreaMove("cvebs1",459,300,12))
 ~EXIT
 
