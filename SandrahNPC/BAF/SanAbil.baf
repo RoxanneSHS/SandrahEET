@@ -569,7 +569,6 @@ THEN
 RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",7)
 AddSpecialAbility("SanGaz1")
-ReallyForceSpellRES("CVProf8",Myself)
 END
 
 IF

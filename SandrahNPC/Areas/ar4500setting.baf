@@ -132,3 +132,11 @@ RESPONSE #100
 SetGlobal("SanWhichWay","ar4500",1)
 END
 
+IF
+Global("SanWhichWay","ar4500",2)
+THEN
+RESPONSE #100
+SetGlobal("SanWhichWay","ar4500",3)
+ReallyForceSpellRES("CVProf8",Myself)
+END
+
