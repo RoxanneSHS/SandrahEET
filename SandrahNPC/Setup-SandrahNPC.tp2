@@ -8138,6 +8138,12 @@ SAY NAME2 Brage
 
 COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
 
+ACTION_IF NOT FILE_EXISTS_IN_GAME ~xvartpre.cre~ BEGIN
+COPY ~SandrahNPC\sod/xvartpre.cre~ ~override~
+	SAY NAME1 @1010
+	SAY NAME2 @1010
+END
+
 //_________________
 
 COPY - ~SandrahNPC/Worldmap/links.tbl~ ~SandrahNPC/Worldmap~
