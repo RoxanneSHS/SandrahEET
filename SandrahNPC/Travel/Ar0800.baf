@@ -154,3 +154,12 @@ Unlock("DOOR12")
 CreateCreatureObjectOffScreen("BODHIAMB",Player1,0,0,0)
 Continue()
 END
+
+IF
+Global("SanHintFactory","GLOBAL",35)
+Global("CVColleEnc","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("CVColleEnc","GLOBAL",1)
+RealSetGlobalTimer("CVColleAgain","GLOBAL",TWO_HOURS)
+END
