@@ -462,6 +462,15 @@ Spell(LastSeenBy(Myself),CLERIC_NEUTRALIZE_POISON)
 END
 
 IF
+Global("SanGrHeal","LOCALS",1)
+Global("SanGrHealWait","LOCALS",0)
+THEN
+RESPONSE #100
+SetGlobal("SanGrHealWait","LOCALS",1)
+SetGlobalTimer("SanGrHealDel","LOCALS",THREE_HOURS)
+END
+
+IF
 Global("SanHealToB","GLOBAL",0)
 ActionListEmpty()
 HaveSpell(CLERIC_MASS_CURE)
@@ -483,6 +492,7 @@ END
 IF
 ActionListEmpty()
 Global("SanGrHeal","LOCALS",1)
+GlobalTimerExpired("SanGrHealDel","LOCALS")
 See([PC])
 OR(2)
 HPPercentLT(Player1,60)
@@ -495,6 +505,7 @@ HPPercentLT(Player4,60)
 HPPercentLT(Player6,60)
 THEN
 RESPONSE #100
+SetGlobal("SanGrHealWait","LOCALS",0)
 ReallyForceSpellRES("CVHeal",Myself)
 END
 

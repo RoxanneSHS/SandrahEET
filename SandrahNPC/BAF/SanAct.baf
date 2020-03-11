@@ -75,37 +75,6 @@ END
 
 IF
 	ActionListEmpty()
-	See([PC])
-	HPPercentLT(LastSeenBy(Myself),30)
-	!StateCheck(LastSeenBy(Myself),STATE_INVISIBLE)
-	HaveSpell(CLERIC_HEAL)
-THEN
-	RESPONSE #100
-		Spell(LastSeenBy(Myself),CLERIC_HEAL)
-END
-
-IF
-	ActionListEmpty()
-	HPPercentLT(MostDamagedOf(Myself),60)
-	!StateCheck(MostDamagedOf(Myself),STATE_INVISIBLE)
-	HaveSpell(CLERIC_CURE_SERIOUS_WOUNDS)
-THEN
-	RESPONSE #100
-		Spell(MostDamagedOf(Myself),CLERIC_CURE_SERIOUS_WOUNDS)
-END
-
-IF
-	ActionListEmpty()
-	HPPercentLT(MostDamagedOf(Myself),50)
-	!StateCheck(MostDamagedOf(Myself),STATE_INVISIBLE)
-	HaveSpell(CLERIC_CURE_LIGHT_WOUNDS)
-THEN
-	RESPONSE #100
-		Spell(MostDamagedOf(Myself),CLERIC_CURE_LIGHT_WOUNDS)
-END
-
-IF
-	ActionListEmpty()
 	HPPercentLT(Myself,30)
 	HaveSpell(CLERIC_HEAL)
 THEN
@@ -143,8 +112,8 @@ THEN
 END
 
 IF
-	See([0.0.VAMPIRE])
-	!CombatCounter(0)
+	See([ENEMY.0.VAMPIRE])
+	ActuallyInCombat()
 	HaveSpell(CLERIC_NEGATIVE_PLANE_PROTECTION)
 	See([PC])
 	CheckStat(LastSeenBy(Myself),0,SCRIPTINGSTATE3)
