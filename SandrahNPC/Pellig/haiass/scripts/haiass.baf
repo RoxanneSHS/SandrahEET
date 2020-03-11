@@ -83,6 +83,7 @@ See(NearestEnemyOfType([0.GENERAL_ITEM.0.MAGE_ALL]))
 See(NearestEnemyOfType([0.GENERAL_ITEM.0.CLERIC_ALL]))
 See(NearestEnemyOfType([0.GENERAL_ITEM.0.DRUID_ALL]))
 See(NearestEnemyOfType([0.GENERAL_ITEM.0.BARD_ALL]))
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 AttackReevaluate(LastSeenBy(Myself),30)
@@ -91,6 +92,7 @@ END
 IF
 See(NearestEnemyOf(Myself))
 Global("HaiassTactica","GLOBAL",3)
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 AttackReevaluate(Nearestenemyof(Myself),30)
@@ -101,6 +103,7 @@ SEE(Protagonist)
 Exists(LastAttackerOf(Protagonist))
 Global("HaiassTactica","GLOBAL",4)
 Global("HaiassQuieto","GLOBAL",0)
+Range(NearestEnemyOf(Myself),15)
 THEN
 RESPONSE #100
 AttackReevaluate(LastAttackerOf(Protagonist),60)
@@ -132,6 +135,7 @@ See(NearestEnemyOf(Protagonist))
 !Global("HaiassTactica","GLOBAL",3)
 !Global("HaiassTactica","GLOBAL",2)
 !Global("HaiassTactica","GLOBAL",1)
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 AttackReevaluate(NearestEnemyOf(Protagonist),30)

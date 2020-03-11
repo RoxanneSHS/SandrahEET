@@ -626,7 +626,7 @@ END
 IF
 ActionListEmpty()
 See(NearestEnemyOf(Myself))
-Range(NearestEnemyOf(Myself),20)
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 AttackReevaluate(NearestEnemyOf(Myself),30)

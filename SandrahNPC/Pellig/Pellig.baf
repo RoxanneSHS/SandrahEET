@@ -37,6 +37,7 @@ END
 IF
 Global("PelligBeh","GLOBAL",1)
 See(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 Attack(NearestEnemyOfType([0.0.0.CLERIC_ALL]))
@@ -46,6 +47,7 @@ END
 IF
 Global("PelligBeh","GLOBAL",1)
 See(NearestEnemyOfType([0.0.0.LONG_BOW]))
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 Attack(NearestEnemyOfType([0.0.0.LONG_BOW]))
@@ -55,6 +57,7 @@ END
 IF
 Global("PelligBeh","GLOBAL",1)
 See(NearestEnemyOfType([0.0.0.DRUID_ALL]))
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 Attack(NearestEnemyOfType([0.0.0.DRUID_ALL]))
@@ -63,16 +66,8 @@ END
 
 IF
 Global("PelligBeh","GLOBAL",1)
-See(NearestEnemyOfType([0.0.0.LONG_BOW]))
-THEN
-RESPONSE #100
-Attack(NearestEnemyOfType([0.0.0.LONG_BOW]))
-Continue()
-END
-
-IF
-Global("PelligBeh","GLOBAL",1)
 See(NearestEnemyOf(Myself))
+Range(NearestEnemyOf(Myself),10)
 THEN
 RESPONSE #100
 Attack(NearestEnemyOf(Myself))
