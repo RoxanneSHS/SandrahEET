@@ -1,4 +1,14 @@
 IF
+HasItem("Mage01",Myself)
+Dead("CVSlaw")
+Dead("CVslam")
+THEN
+RESPONSE #100
+DestroyItem("Mage01")
+Continue()
+END
+
+IF
 Global("Surrender","LOCALS",0)
 HPLT(Myself,50)
 Dead("CVSlaw")
