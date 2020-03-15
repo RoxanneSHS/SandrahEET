@@ -18,7 +18,7 @@ IF~~THEN BSANDR HealValgy1
 ==BVALYGA~Agreed, Sandrah.~EXIT
 
 CHAIN
-IF~Global("SanValgyR","GLOBAL",2)~THEN BSANDR SanValgy1
+IF~Global("SanValgyR","GLOBAL",2)InParty("Valygar")~THEN BSANDR SanValgy1
 ~(Sandrah has sat down in the shade of a tree and Pelligram cuddles at her side resting her enormous head in Sandrah's lap.)~
 DO~SetGlobal("SanValgyR","GLOBAL",3)~
 ==BVALYGA~I have spent quite some time in the wilderness and have learned to adore the beauty of nature and its creatures. But I have not seen such grace and power assembled in one place before.~
@@ -32,7 +32,7 @@ DO~SetGlobal("SanValgyR","GLOBAL",3)~
 EXIT
 
 CHAIN
-IF~Global("SanValgyR","GLOBAL",4)~THEN BSANDR SanValgy2
+IF~Global("SanValgyR","GLOBAL",4)InParty("Valygar")~THEN BSANDR SanValgy2
 ~Do you feel like continuing our recent talk, Valygar?~
 DO~SetGlobal("SanValgyR","GLOBAL",5)~
 ==BVALYGA~With the greatest pleasure, Sandrah.~
@@ -46,7 +46,7 @@ DO~SetGlobal("SanValgyR","GLOBAL",5)~
 EXIT
 
 CHAIN
-IF~Global("SanValgyR","GLOBAL",6)~THEN BSANDR SanValgy2
+IF~Global("SanValgyR","GLOBAL",6)InParty("Valygar")~THEN BSANDR SanValgy2
 ~You seem to seek my company, Valygar?~
 DO~SetGlobal("SanValgyR","GLOBAL",7)~
 ==BVALYGA~I do, Sandrah, I seek your counselling both as a friend and as a priestess of Mystra.~
@@ -85,7 +85,7 @@ DO~SetGlobal("SanValSph","LOCALS",2)~
 ==BVALYGA~It is...but - let us focus on this mission now...we may talk another time and in a better place, please. (You notice a warm smile he gives Sandrah before he brusquely turns away and pretends to inspect his weapons.)~EXIT
 
 CHAIN
-IF~Global("SanValgyR","GLOBAL",8)~THEN BSANDR SanValgy2
+IF~Global("SanValgyR","GLOBAL",8)InParty("Valygar")~THEN BSANDR SanValgy2
 ~Do you like these earrings on me, Valygar?~
 DO~SetGlobal("SanValgyR","GLOBAL",9)~
 ==BVALYGA~Earrings, what, eh..?~
@@ -103,7 +103,7 @@ DO~SetGlobal("SanValgyR","GLOBAL",9)~
 ==BVALYGA~(Mumbles) I-I-I am afraid that this is what I will find out...~EXIT
 
 CHAIN
-IF~Global("SanValgyR","GLOBAL",10)~THEN BSANDR SanValgy3
+IF~Global("SanValgyR","GLOBAL",10)InParty("Valygar")~THEN BSANDR SanValgy3
 ~Take your seat beside me if you like, Valygar, do not linger there like a shy schoolboy.~
 DO~SetGlobal("SanValgyR","GLOBAL",11)~
 ==BVALYGA~Thank you. Say, Sandrah, by what do you judge a man? ~
@@ -118,7 +118,7 @@ DO~SetGlobal("SanValgyR","GLOBAL",11)~
 ==BSANDR~(Shakes her head smiling.) Did he not even want to know if it was success or failure?~EXIT
 
 CHAIN
-IF ~Global("SanValgyR","GLOBAL",12)~THEN BSANDR SanValgy4
+IF ~Global("SanValgyR","GLOBAL",12)InParty("Valygar")~THEN BSANDR SanValgy4
 ~(Sandrah just smiles silently as Valygar moves towards her and takes her hand into his own).~
 DO~SetGlobal("SanValgyR","GLOBAL",13)~
 ==BVALYGA~(Sigh) How can it be so easy to do what should never be done? ~
