@@ -11,14 +11,6 @@ EscapeAreaMove("AR4230",4718,3008,9)~EXIT
 END
 END
 
-INTERJECT_COPY_TRANS CBSOUMJ1 27 SanCouns
-==CBSOUMJ1 IF~InParty("CVSandr")~THEN~YOUNG LADY!! WHO MIGHT YOU BE AND WHY ARE YOU NOT IN ARMOUR ACCORDING TO THE REGULATIONS?~
-== CVSANDRJ IF~InParty("CVSandr")~THEN~Major, Sir, may I remind you of regulation 425-9-8 point 41, Sir. It exempts counsellors of wearing army supplied equipment.~
-==CBSOUMJ1 IF~InParty("CVSandr")~THEN~A counsellor. Well, in this case...NO, WAIT!! Counsellors may be engaged by commanding officers only, not by a simple private.~
-== CVSANDRJ IF~InParty("CVSandr")~THEN~(Smiles gently at the major) Sir, were you not just about to promote <CHARNAME>?~
-==CBSOUMJ1 IF~InParty("CVSandr")~THEN~(The major's grim face shows a slight smile as well.) You are in deed a clever little counsellor, girl. The city needs helpers like you at the moment. PRIVATE, THE ARMY WILL NOT COMPENSATE FOR YOUR counsellor NOR EQUIP HER BY ANY MEANS. KEEPING HER IS AT YOUR OWN EXPENSE!~
-END
-
 INTERJECT_COPY_TRANS CBSOUMJ3 6 SanCounsG
 ==CBSOUMJ3 IF~InParty("CVSandr")~THEN~(The major smiles at Sandrah) I am quite aware, young lady, that the quick progress of our new captain has a bit to do with the support by his counsellor.~
 == CVSANDRJ IF~InParty("CVSandr")~THEN~(Smiles gently at the major) Thank you for this compliment, Sir. Do not forget the rest of our companions who have each contributed their share.~
