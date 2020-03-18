@@ -100,3 +100,13 @@ RESPONSE #100
 SetGlobal("X#IMPC8","GLOBAL",1)
 ActionOverride("Imoen2",StartDialogueNoSet(Player1))
 END
+
+IF
+Global("Chapter","GLOBAL",4)
+GlobalLT("ElminsterSpawn","GLOBAL",2)
+!Exists("elmin3")
+THEN
+RESPONSE #100
+CreateCreature("elmin3",[3233.2533],S)
+SetGlobal("ElminsterSpawn","GLOBAL",2)
+END
