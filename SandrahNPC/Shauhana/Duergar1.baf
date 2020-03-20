@@ -42,3 +42,11 @@ SetGlobal("BOLD","LOCALS",0)
 SetGlobal("BOW","LOCALS",0)
 SetGlobal("MM","LOCALS",0)
 END
+
+IF
+!AreaCheck("ar0603")
+HasItem("rh#key",Myself)
+THEN
+RESPONSE #100
+DestroyItem("rh#key")
+END
