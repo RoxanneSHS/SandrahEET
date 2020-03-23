@@ -1736,3 +1736,11 @@ Wait(4)
 ReallyForceSpellRES("Sppr104","Trskin06")
 SetGlobal("SanDetect","ar2000",1)
 END
+
+IF
+!Global("SanResurAva","GLOBAL",4)
+Global("endofbg1","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",4)
+END

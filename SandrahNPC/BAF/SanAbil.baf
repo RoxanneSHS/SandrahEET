@@ -1656,6 +1656,14 @@ SetGlobal("SanResurAva","GLOBAL",0)
 END
 
 IF
+!Global("SanResurAva","GLOBAL",4)
+Global("endofbg1","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("SanResurAva","GLOBAL",4)
+END
+
+IF
 OR(2)
 HasItemEquiped("SUMIKA1",Player1)
 HasItemEquiped("SUMIKA2",Player1)
