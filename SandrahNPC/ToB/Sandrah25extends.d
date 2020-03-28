@@ -266,7 +266,7 @@ ADD_TRANS_TRIGGER Finsol01 33
 
 EXTEND_BOTTOM Finsol01 33
 IF~InParty("CVSandr") GlobalLT("PPEvilChoices","GLOBAL",3) Global("PlayerChoseEssence","GLOBAL",1)~THEN DO~ClearAllActions() StartCutSceneMode() StartCutScene("cut233s1") ~EXIT
-IF~!InParty("CVSandr") GlobalGT("PPEvilChoices","GLOBAL",2) Global("PlayerChoseEssence","GLOBAL",1)~THEN DO~ClearAllActions() StartCutSceneMode() StartCutScene("cut233s2") ~EXIT
+IF~InParty("CVSandr") GlobalGT("PPEvilChoices","GLOBAL",2) Global("PlayerChoseEssence","GLOBAL",1)~THEN DO~ClearAllActions() StartCutSceneMode() StartCutScene("cut233s2") ~EXIT
 IF~InParty("CVSandr") Global("PlayerChoseEssence","GLOBAL",0)~THEN DO~ClearAllActions() StartCutSceneMode() StartCutScene("cut233s3") ~EXIT
 END
 
