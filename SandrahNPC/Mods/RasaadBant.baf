@@ -1,5 +1,6 @@
 IF
 GlobalLT("SanRaasShar","GLOBAL",4)
+GlobalGT("SanRaasShar","GLOBAL",0)
 InParty(Myself)
 InParty("CVSandr")
 OR(7)

@@ -216,13 +216,14 @@ IF ~OR(10)
     Global("CVAR1700","GLOBAL",1)
     Global("CVAR1800","GLOBAL",1)
     Global("CVAR2600","GLOBAL",1)~THEN REPLY~Next areas~GOTO Choice2
-IF~OR(7)
+IF~OR(8)
     Global("CVRR3900","GLOBAL",1)
     Global("CVRR5100","GLOBAL",1)
     Global("CVar4230","GLOBAL",1)
     Global("CVRR3100","GLOBAL",1)
     Global("CVRR3300","GLOBAL",1)
     Global("CVdd3300","GLOBAL",1)
+    Global("NomoranPart1","GLOBAL",1)
     GlobalGT("Chapter","GLOBAL",19)~THEN REPLY ~Other Towns~ GOTO Choice25
 IF ~~THEN REPLY ~Nowhere~EXIT
 END
@@ -241,13 +242,14 @@ IF ~Global("CVAR2600","GLOBAL",1)~THEN REPLY ~Tethir Forest~DO ~SetGlobal("SanTr
 IF ~Global("CVAR1800","GLOBAL",1)~THEN REPLY ~Northern Forest of Tethir~DO ~SetGlobal("SanTravel","GLOBAL",106)~EXIT
 IF ~Global("CVAR2800","GLOBAL",1)~THEN REPLY ~Suldanessalar~GOTO Choice19
 IF ~Global("CVAR6400","GLOBAL",1)~THEN REPLY ~Next Areas~GOTO Choice3
-IF~OR(7)
+IF~OR(8)
     Global("CVRR3900","GLOBAL",1)
     Global("CVRR5100","GLOBAL",1)
     Global("CVar4230","GLOBAL",1)
     Global("CVRR3100","GLOBAL",1)
     Global("CVRR3300","GLOBAL",1)
     Global("CVdd3300","GLOBAL",1)
+    Global("NomoranPart1","GLOBAL",1)
     GlobalGT("Chapter","GLOBAL",19)~THEN REPLY ~Other Towns~ GOTO Choice25
 IF ~~THEN REPLY ~Previous Choices.~GOTO Choice1
 IF ~~THEN REPLY ~Nowhere~EXIT
@@ -583,7 +585,7 @@ IF~Global("CVdd3300","GLOBAL",1)!Global("riatavinblitz","GLOBAL",2)~THEN REPLY ~
 IF~Global("CVdd3300","GLOBAL",1)Global("riatavinblitz","GLOBAL",2)~THEN REPLY ~Riativin~DO ~SetGlobal("riatavinblitz","GLOBAL",3)~EXIT
 IF~Global("CVdd1000","GLOBAL",1)~THEN REPLY ~Easthaven~DO ~SetGlobal("SanTravel","GLOBAL",212)~EXIT
 IF~Global("CVar3610","GLOBAL",1)~THEN REPLY ~Hlondeth~DO ~SetGlobal("SanTravel","GLOBAL",213)~EXIT
-IF~Global("CVAR3540","GLOBAL",1)~THEN REPLY ~Academy of Kuldin~DO ~SetGlobal("SanTravel","GLOBAL",223)~EXIT
+IF~Global("NomoranPart1","GLOBAL",1)~THEN REPLY ~Anegh~DO~SetGlobal("SanTravel","GLOBAL",223)~EXIT
 IF ~~THEN REPLY ~Previous Choices.~GOTO Choice2
 IF ~~THEN REPLY ~Nowhere~EXIT
 END
@@ -635,7 +637,6 @@ IF~Global("CVdd3300","GLOBAL",1)!Global("riatavinblitz","GLOBAL",2)~THEN REPLY ~
 IF~Global("CVdd3300","GLOBAL",1)Global("riatavinblitz","GLOBAL",2)~THEN REPLY ~Riativin~DO ~SetGlobal("riatavinblitz","GLOBAL",3)~EXIT
 IF~Global("CVdd1000","GLOBAL",1)~THEN REPLY ~Easthaven~DO ~SetGlobal("SanTravel","GLOBAL",212)~EXIT
 IF~Global("CVar3610","GLOBAL",1)~THEN REPLY ~Hlondeth~DO ~SetGlobal("SanTravel","GLOBAL",213)~EXIT
-IF~Global("CVAR3540","GLOBAL",1)~THEN REPLY ~Academy of Kuldin~DO ~SetGlobal("SanTravel","GLOBAL",223)~EXIT
 IF ~~THEN REPLY ~Previous Choices.~GOTO RTFChoice
 IF ~~THEN REPLY ~Nowhere~EXIT
 END
