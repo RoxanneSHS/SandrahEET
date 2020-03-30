@@ -153,6 +153,8 @@ END
 IF~~THEN BEGIN SanTrain4
 SAY~If she were not such a nice girl I would have refused her...I mean it's against our own interest - she came to learn so that her future partner never would miss anything with her and thus become our customer. She wants to provide any possible pleasure for the lucky one herself.~
 IF~~THEN REPLY~As I am that lucky one I have to thank you - in a way.~DO~EscapeArea()~EXIT
+IF~~THEN REPLY~Oh, yes, she's a perfect whore thanks to you.~DO~EscapeArea()~EXIT
+IF~~THEN REPLY~(You prefer to keep your opinion about this to yourself.)~DO~EscapeArea()~EXIT
 END
 
 CHAIN
@@ -161,6 +163,8 @@ IF~~THEN CVSandrJ SanTrain3
 ==CVWDBar4~If she were not such a nice girl I would have refused her...I mean it's against our own interest - she came to learn so that her future partner never would miss anything with her and thus become our customer. She wants to provide any possible pleasure for the lucky one herself.~DO~EscapeArea()~
 END
 ++~I see, as I consider myself that lucky one I have to thank you - in a way.~EXIT
+++~Oh, yes, she's a perfect whore thanks to you.~EXIT
+++~(You prefer to keep your opinion about this to yourself.)~EXIT
 
 BEGIN CVWDSiam
 
