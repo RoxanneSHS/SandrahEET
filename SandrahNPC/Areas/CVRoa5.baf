@@ -6,13 +6,14 @@ SetGlobal("Orcalert","CVROA5",4)
 CreateCreature("repthf2",[1207.1152],13)
 CreateCreature("repthf3",[1349.937],15)
 CreateCreature("repthf2",[1787.889],2)
-CreateCreature("repthf3",[1556.1495],8)
+CreateCreature("repthf5",[1556.1495],8)
 CreateCreature("repthf2",[1693.1539],9)
 END
 
 IF
 Global("Orcalert","CVROA5",4)
 CombatCounter(0)
+Dead("repthf5")
 InMyArea("CVSandr")
 Delay(12)
 THEN

@@ -4224,6 +4224,8 @@ COPY_EXISTING ~Amaran.cre~ ~override/Amaran.cre~
               WRITE_ASCII 0x280 ~Amaran~
 COPY_EXISTING ~Kovera.cre~ ~override/Kovera.cre~
               WRITE_ASCII 0x280 ~Kovera~
+COPY_EXISTING ~repthf3.cre~ ~override/repthf5.cre~
+              WRITE_ASCII 0x280 ~repthf5~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~shobsl01.cre~ THEN BEGIN
 COPY_EXISTING ~shobsl01.cre~ ~override/shobsl01.cre~
