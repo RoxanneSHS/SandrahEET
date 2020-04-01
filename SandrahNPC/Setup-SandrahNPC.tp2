@@ -8514,6 +8514,8 @@ EXTEND_TOP
 ~OH9310.BCS~ ~SandrahNPC/Mods/OH9310San.baf~
 EXTEND_TOP
 ~LLyrk.BCS~ ~SandrahNPC/Mods/LLyrk.baf~
+COPY_EXISTING ~BPBaelot.cre~ ~override~
+              WRITE_ASCII 0x34 ~baeloths~
 
 //new travel region and new entrance for Pits
 COPY_EXISTING ~CVELT3.ARE~ ~override~
