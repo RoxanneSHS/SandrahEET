@@ -9,6 +9,7 @@ END
 IF
 Global("CVTiamal","AR6000",0)
 Dead("abazigal")
+InParty("CVSandr")
 THEN
 RESPONSE #100
 SetGlobal("CVTiamal","AR6000",1)
