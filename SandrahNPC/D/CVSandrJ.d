@@ -40,7 +40,8 @@ IF  ~~THEN REPLY ~Is there anything you think you can do to help right here?~DO 
 IF~OR(3) HaveSpellParty(CLERIC_RESURRECTION) HaveSpellParty(CLERIC_MASS_RAISE_DEAD) HaveSpellRES("SPJA01") ~THEN REPLY ~I will let our cleric cast a spell, Sandrah. ~DO~SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~EXIT
 IF ~~THEN REPLY ~We will take the body to a temple quickly to be resurrected.~DO~SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~ EXIT
 IF~~THEN REPLY ~We will bury our comrade and mourn for the fallen later.~DO~SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~EXIT
-IF~~THEN REPLY ~Another fool gone - but I know my silly healer will not keep quiet until she's wasted her talent on a useless corpse...~DO~SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)~DO~AddXPObject(Player1,-500)~GOTO GenRess
+IF~~THEN REPLY ~Another fool gone - but I know my silly healer will not keep quiet until she's wasted her talent on a useless corpse...~DO~SetGlobal("SanResurAva","GLOBAL",3) RealSetGlobalTimer("SanResurAvaInterv","GLOBAL",1600)AddXPObject(Player1,-500)~GOTO GenRess
+IF~~THEN REPLY~I want you to stop with these suggestions. I will decide on using your skills or a temple's ones.~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)SetGlobal("SanResurAva","GLOBAL",4) ~EXIT
 END
 
 IF~~THEN BEGIN GenRess
@@ -2310,6 +2311,7 @@ SAY ~(Sandrah walks beside you scanning the area for possible dangers. It is a g
 IF ~~THEN REPLY ~Where are you from, Sandrah? ~GOTO SanWater
 IF ~Global("SanAtGor","LOCALS",0)~THEN REPLY ~Sandrah, I was wondering...What brought you to the scene of Gorion's death? ~GOTO GorionSite
 IF~Global("SanNoMage","LOCALS",0)~THEN REPLY~I learned that Mystra is the goddess of all magic, so how come you are not a mage?~GOTO SanNoMage1
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -2367,6 +2369,7 @@ IF ~Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~THEN REPL
 IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now we have made ourselves some new *friends*, those that follow the Storm Lord Talos.~GOTO SanTalosF1
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -2646,6 +2649,7 @@ IF~Global("SanVsTalos","GLOBAL",1) Global("Talostlk","LOCALS",0)~THEN REPLY ~Now
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
 IF ~GlobalLT("SanPidPack","GLOBAL",8)~THEN REPLY ~I'm willing to do a lot of things with you together, but I'm not ready to give you my heart. I still don't know who you are and not even who I am. ~DO ~SetGlobal("SanPidPack","GLOBAL",8) ~EXIT
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF ~~THEN REPLY ~Maybe another time.~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 END
@@ -2678,6 +2682,7 @@ IF ~Global("PCKnowsElmDaughter","GLOBAL",1) Global("SanElmInf1","LOCALS",0) Glob
 IF ~Global("Godtalk","LOCALS",0) !AreaType(DUNGEON)~THEN REPLY ~Sandrah, how important is it for you to be a priestess?~DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanGodtalk1
 IF~Global("WDIntrotalk","LOCALS",2)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro3
 IF~Global("WDIntrotalk","LOCALS",3)OR(4)AreaCheck("CVROA2") AreaCheck("CVROA3") AreaCheck("CVElm1") AreaCheck("CVElm4")~THEN REPLY~Can you tell me some more about Waterdeep?~ DO~SetGlobal("WDIntrotalk","LOCALS",4)~GOTO FirstWDIntro2
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -2877,6 +2882,7 @@ IF ~Global("BHQuestaccept","GLOBAL",3) Global("SanAskBH1","LOCALS",0) ~THEN REPL
 IF ~Global("SanPCGavInt","GLOBAL",1) Global("SanPCGavT","LOCALS",0) ~THEN REPLY ~Sandrah, I observe you talk quite a bit with Gavin. Say, dear, what do you think of him?~DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanPCGavT1
 IF ~Global("PCKnowsElmDaughter","GLOBAL",1) Global("SanElmInf1","LOCALS",0) GlobalGT("Chapter","GLOBAL",2) ~THEN REPLY ~Sandrah, your father and yourself have different reasons to be interested in me, at least this is my interpretation of what I heard from both of you.~DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO SanElmInf11
 IF ~GlobalLT("PidLock","LOCALS",2) ~THEN REPLY ~(You blow a lock of stray hairs from Sandrah's forehead.) How come you look so splendid, regardless how hard the battle or the march was? ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO Pidlock2
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -3444,6 +3450,7 @@ IF ~Global("Formedcloth","GLOBAL",9) ~THEN REPLY ~I am a Bhaalspawn then. Hence 
 IF ~Global("Formedcloth","GLOBAL",10)~THEN REPLY ~Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~GOTO PidBhaal13
 IF ~Global("XanDecide","GLOBAL",3) InParty("Xan")~THEN REPLY ~Sandrah, my love, we must talk about Xan urgently.~DO~IncrementGlobal("Sanpoints","GLOBAL",3)~GOTO Xanchos1
 IF ~Global("rainbFav","LOCALS",0) ~THEN REPLY ~Sandrah, what is your favourite colour?~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO rainbFav1
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -3826,6 +3833,7 @@ IF~Global("DimDay","GLOBAL",2) ~THEN REPLY ~I loved the song you performed with 
 IF ~Global("Formedcloth","GLOBAL",10)~THEN REPLY ~Sandrah, this is a good place for a rest. Friends, let us sit down and listen to Sandrah and a story that hopefully will bring some light into this confusing quest about my heritage. ~GOTO PidBhaal13
 IF ~Global("SanOrDiId","GLOBAL",8) GlobalGT("Formedcloth","GLOBAL",5) ~THEN REPLY ~So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp20
 IF ~Global("SanOrDiId","GLOBAL",8) GlobalLT("Formedcloth","GLOBAL",5) ~THEN REPLY ~So we have come close to the enemy but the picture has not become clearer to me. You seemed to be able to make more out of that Othlor's appearance.~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO SanWinskApp30
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
@@ -4372,6 +4380,7 @@ IF~Global("SanDBdoubt","LOCALS",0) GlobalGT("bd_plot","global",169)~THEN REPLY~D
 IF~Global("SanSoDBook","LOCALS",2)~THEN REPLY~If Caelar Argent really is in need of my blood to activate the portal for her crusade, it finally proofs she is no Bhaalspawn herself, whatever they say in Baldur's Gate.~DO~SetGlobal("SanSoDBook","LOCALS",3)~GOTO SanDBIsShe4
 IF~Global("SanMadele","Global",1)~THEN REPLY~I am contemplating Madele's words about that Harper's raid and the stolen children.~GOTO SanMadel1
 IF~GlobalGT("bd_explosives_plot","Global",1) Global("SanLanciedb","Locals",0)~THEN REPLY~I could see that you had to restrain yourself quite a bit not to strike that Torsin de Lancie down with your hammer.~DO~SetGlobal("SanLanciedb","Locals",1)~GOTO Lancie1
+IF~Global("SanResurAva","GLOBAL",4)~THEN REPLY~I want you to use your healing skills for a fallen comrade once more. ~DO~SetGlobal("SanResurAva","GLOBAL",0)~EXIT
 IF~~THEN REPLY~Your hammer seems to be stuck.~GOTO SanHamCl
 IF~~THEN REPLY~Never mind.~EXIT
 END
