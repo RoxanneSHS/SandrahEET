@@ -97,7 +97,7 @@ CHAIN
 IF ~~THEN CVRingo WDTempHeal2
 ~Yes, the healer performing the ritual will indeed be required to sacrifice a part of herself to repay to the balance of the Weave. And maybe here even more is required. That is why we are in need  of Sandrah here.~
 == BSANDR~My dearest teacher, enough of the preliminaries. I am blessed by Mystra to aid in cases like the one you describe and there is no discussion necessary at all...~
-== CVRingo ~Oh, child, I tend to forget how direct and forceful you act. So well. This girl child Leyala over there on the altar has been brought to us a couple of days ago. The decease it suffers from is beyond any of our skills, it seems her whole blood has been tainted by a dark illness. We only barely keep her alive but unconscious by the force field of the altar itself.~
+== CVRingo ~Oh, child, I tend to forget how direct and forceful you act. So well. This girl child Leyala over there on the altar has been brought to us a couple of days ago. The disease it suffers from is beyond any of our skills, it seems her whole blood has been tainted by a dark illness. We only barely keep her alive but unconscious by the force field of the altar itself.~
 == BSANDR~(Sandrah has already moved to Mystra's Altar during Ringhontal's speech and carefully inspects the girl's body.)~
 =~...~
 == CVRingo ~Do you see what we think we see?~
