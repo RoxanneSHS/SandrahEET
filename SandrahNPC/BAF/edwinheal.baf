@@ -42,7 +42,6 @@ END
 IF
 Global("FoundScroll","LOCALS",1)
 InParty("CVSandr")
-HasItem("SCRLNet",Myself)
 Global("SanNetScrl","LOCALS",0)
 !AreaCheck("ar0802")
 !Gender(Myself,FEMALE)
