@@ -604,6 +604,17 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("K#sheena")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("K#sheena",LeaveParty())
+ActionOverride("K#sheena",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("rh#Adrian")
 THEN
 RESPONSE #100
