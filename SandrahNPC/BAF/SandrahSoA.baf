@@ -563,18 +563,6 @@ RESPONSE #100
 SetGlobal("SanSacroll","GLOBAL",7)
 END
 
-IF
-AreaCheck("ar0406")
-See("Hendak")
-Global("SanHendAff","GLOBAL",0)
-OR(2)
-Global("HendakReleased","AR0406",3)
-Global("HendakReleased","AR0406",4)
-THEN
-RESPONSE #100
-SetGlobal("SanHendAff","GLOBAL",1)
-END
-
 //Nib Jansen
 
 IF

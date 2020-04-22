@@ -3164,29 +3164,6 @@ INTERJECT BEAST 0 SanPelligFreeTab
 = ~Fear nothing, Tabitha, the day of freedom for you has come.~
 END BEAST 77
 
-// Sandrah and Hendak
-INTERJECT HENDAK 33 SanHendR1
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~It is so wonderful to see you and your companions free once again. Have you made plans for the future already?~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~My lady, you have played a very important role in our release. My heartfelt thanks go to the <CHARNAME>'s whole group but to you and your courage especially.~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~I will fight slavery with all my might wherever I encounter it, Hendak.~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~This is good to hear from a friend as powerful as you are, mylady. The new Copper Coronet is no longer a place of such cruelty to humans or beasts.~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~Then I hope that <CHARNAME> will steer our ways to here frequently, my friend.~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~I dearly hope <PRO_HESHE> will, so that I may show my fearless heroine my gratitude for her intervention. ~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",1) ~THEN ~Gratitude is not a good basis for a relationship among people who are equal. Be a proud man once again, Hendak, proud enough to venture for any woman he desires.~
-END HENDAK 210
-
-INTERJECT HENDAK 33 SanHendR2
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~Hendak, I have really longed for seeing you again - and as the man you have a right to be.~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~I was a slave steered by the hands and will of others. You gave me hope - including the strength to no longer hide my feelings. ~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~(Sandrah has moved close to the aging fighter and has gently taken his hand in the comforting way you know so well.)~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~You are a tough fighter but it seems you know just too well when to let down your defences...~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~(Sandrah's smile is inviting the former slave to continue.)~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~I have gained back a life but in love I am a lonely man.~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~You are aware that I am just a passing wanderer, seeking rest and shelter for a night every now and then...~
-==HENDAK IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~...and I am an innkeeper to serve her as best as I can. A voluntary slave to the heart of the woman who deserves such commitment.~
-== CVSandrJ IF~InParty("CVSandr") Global("SanHendAff","GLOBAL",3) ~THEN ~I will not be a mistress to command anyone, Hendak, but willing to a partner who is my equal.~
-END HENDAK 211
-
 INTERJECT HLKETTA 0 SanSlavHuntAnk
 == CVSandrJ IF~InParty("CVSandr") Global("SanSacroll","GLOBAL",6) ~THEN ~Your game play is useless on us. We have found the evidence on your companion - your dead companion - that you slavers follow your business right here under the eyes of Athkatla's temples.~
 == HLSION IF~InParty("CVSandr") Global("SanSacroll","GLOBAL",6) ~THEN ~Our dead...you killed the captain...ha, that's why the *ware* has not arrived yet, hear that, Ketta?~
@@ -3565,18 +3542,6 @@ ActionOverride("Tabitha",Ally())
 Enemy()
 ~EXIT
 END
-END
-
-APPEND HENDAK
-IF~~THEN BEGIN 210
-SAY~Please, <CHARNAME> do not make the time to your next visit too long. ~
-IF~~THEN DO ~SetGlobal("SanHendAff","GLOBAL",2)RealSetGlobalTimer("SanHendAffT","GLOBAL",1200)~EXIT
-END 
-
-IF~~THEN BEGIN 211
-SAY~You are a wonderful woman, Sandrah. ~
-IF~~THEN DO ~SetGlobal("SanHendAff","GLOBAL",4)RealSetGlobalTimer("SanHendAffT","GLOBAL",1200) RestParty()~EXIT
-END 
 END
 
 APPEND IF_FILE_EXISTS ACBreJ

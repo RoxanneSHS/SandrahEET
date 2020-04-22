@@ -26,15 +26,6 @@ ActionOverride("CVSandr",Attack("Lehtinan"))
 END
 
 IF
-InMyArea("CVSandr")
-Global("SanHendAff","GLOBAL",2)
-RealGlobalTimerExpired("SanHendAffT","GLOBAL")
-THEN
-RESPONSE #100
-SetGlobal("SanHendAff","GLOBAL",3)
-END
-
-IF
 Global("Itemsoulet","GLOBAL",0)
 PartyHasItem("cbltcnt1")
 PartyHasItem("cbltcnt2")
