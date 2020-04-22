@@ -769,6 +769,18 @@ THEN
 RESPONSE #100
 SmallWait(1)
 ActionOverride("c-aran",LeaveParty())
+ActionOverride("c-aran",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InPartyAllowDead("Safana")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("Safana",LeaveParty())
+ActionOverride("Safana",DestroySelf())
 Continue()
 END
 
