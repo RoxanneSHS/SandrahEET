@@ -6352,8 +6352,6 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~CELogan.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/LoganSan.d~        
-COMPILE ~SandrahNPC/Mods/SanLogan.baf~
-EXTEND_TOP ~CELogan.bcs~ ~SandrahNPC/Mods/SanLogan2.baf~
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~B!LARAN.cre~ THEN BEGIN
