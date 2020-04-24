@@ -300,11 +300,12 @@ END
 IF ~Global("CVPirFight","LOCALS",2)~THEN BEGIN MontCofPir1
 SAY ~If there was any doubt still, now we know it. Monteelah, the king of all pirates.~
 IF~~THEN REPLY ~And those were just a bunch of lost pirates with their own plan. Or do you think they are in any way involved in that hunt after us?~GOTO MontCofPir2
+IF~~THEN REPLY ~A philosopher who was a pirate - or the other way round? Do you think these men were in any way involved in that hunt after us?~GOTO MontCofPir2
 END
 
 IF~~THEN BEGIN MontCofPir2
 SAY ~No, otherwise they would have noticed who we are right from the beginning. But at least we know now that our assumptions on the hidden treasure have some validity. It must be something very special we have discovered here, given all the people who had to die for it already.~
-IF~~THEN REPLY ~And just think of how fiercely they continue on our trail. Somehow we have to find out more about that island soon.~DO ~SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~EXIT
+IF~GlobalGT("SanSuBH","GLOBAL",11)~THEN REPLY ~And just think of how fiercely they continue on our trail. Somehow we have to find out more about that island soon.~DO ~SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~EXIT
 IF~~THEN REPLY ~I wish we soon find a way to shake them off from our trail.~DO ~SetGlobal("J#PirateFight","GLOBAL",4) SetGlobal("CVPirFight","LOCALS",3)~EXIT
 END
 
