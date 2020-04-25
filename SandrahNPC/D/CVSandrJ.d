@@ -3480,7 +3480,7 @@ END
 IF ~~THEN BEGIN  RomClari1
 SAY~I am listening.~
 =~*Once and for all* sounds pretty dramatic. It is not your usual choice of words.~
-IF ~~THEN REPLY ~Mock me as you want, but listen, i mean what I say.~GOTO RomClari3
+IF ~~THEN REPLY ~Mock me as you want, but listen, I mean what I say.~GOTO RomClari3
 IF ~~THEN REPLY ~Never mind. It can wait.~GOTO RomClari2
 END
 
