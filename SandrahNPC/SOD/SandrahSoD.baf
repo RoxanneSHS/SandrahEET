@@ -149,10 +149,11 @@ END
 IF
 Global("SanSoDSkieB","Global",0)
 GlobalLT("SanSoDSkie","Global",9)
+GlobalGT("SanSoDSkie","Global",3)
 Global("Chapter","Global",18)
 OR(2)
 AreaCheck("ar2600")
-AreaCheck("ar0800")
+AreaType(CITY)
 Delay(12)
 THEN
 RESPONSE #100
