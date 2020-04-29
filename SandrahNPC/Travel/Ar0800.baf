@@ -7,6 +7,25 @@ Continue()
 END
 
 IF
+Global("Deactivate0801","AR0800",1)
+GlobalLT("Chapter","GLOBAL",18)
+THEN
+RESPONSE #100
+SetGlobal("Deactivate0801","AR0800",9)
+END
+
+IF
+Global("Chapter","GLOBAL",18)
+Global("Deactivate0801","AR0800",9)	
+OR(2)
+!InParty("CVSandr")
+GlobalGT("SanBodAttmpt","AR0800",0)
+THEN
+RESPONSE #100
+SetGlobal("Deactivate0801","AR0800",1)
+END
+
+IF
 Global("JosterSilence","GLOBAL",1)
 InParty("CVSandr")
 GlobalGT("BodhiJob","GLOBAL",0)
@@ -152,7 +171,6 @@ TriggerActivation("BodhiInfo3",TRUE)
 TriggerActivation("Tran0808",TRUE)
 Unlock("DOOR12")
 CreateCreatureObjectOffScreen("BODHIAMB",Player1,0,0,0)
-Continue()
 END
 
 IF
