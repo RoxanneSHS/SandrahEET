@@ -146,11 +146,11 @@ RESPONSE #100
 SetGlobal("SanSodEntrap","Global",1)
 END
 
-IF
+IF   
+Global("Chapter","Global",18)
 Global("SanSoDSkieB","Global",0)
 GlobalLT("SanSoDSkie","Global",9)
 GlobalGT("SanSoDSkie","Global",3)
-Global("Chapter","Global",18)
 OR(2)
 AreaCheck("ar2600")
 AreaType(CITY)
