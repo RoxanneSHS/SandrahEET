@@ -462,44 +462,44 @@ You can think of only one person to be able to shed some light on these issues
 @217 = ~ Academy Watcher~
 @218 = ~ The door to the inside is now accessible~
 @219 = ~ A secret exit has been opened~
-@220 = ~ Exit to Waterdeep~
-@221 = ~ Plan, Part1 ~
-@222 = ~ Plan, Part2 ~
-@223 = ~ Plan, Part3 ~
-@224 = ~ Plan, Part4 ~
-@225 = ~ Plan, Part1
+@220 = ~Exit to Waterdeep~
+@221 = ~Plan, Part1 ~
+@222 = ~Plan, Part2 ~
+@223 = ~Plan, Part3 ~
+@224 = ~Plan, Part4 ~
+@225 = ~Plan, Part1
 
 Our various groups will stir all kinds of trouble, including random murder of respected citizens in Baldur's Gate and Beregost to keep the Flaming Fist occupied.~
-@226 = ~ Plan, Part2 
+@226 = ~Plan, Part2 
 
 The continuous trouble will be accompanied by propaganda calling for a strong man to solve it all. Measures need to be taken to replace General Jedyan, as he may be respected by the population in such a role.~
-@227 = ~ Plan, Part3
+@227 = ~Plan, Part3
 
 Establish operation base at Friendly Arm. The location between Baldur's Gate and Beregost controls all exchange and travel between the two. The inn is already armed like a fortress. Nothing can suit our purpose better.~
-@228 = ~ Plan, Part4
+@228 = ~Plan, Part4
 
 Infiltrate Baldur's Gate Council. The reigning dukes will already be much discredited by the ongoing trouble, the next step to be detailed at our forthcoming meeting will be to finally replace the Dukes and assume reign over the city ourselves.~
-@229 = ~ High Sorceress Lyndy~
-@230 = ~ High Sorceress Renata~
-@231 = ~ Legencase Fibula~
-@232 = ~ Legencase Fibula
+@229 = ~High Sorceress Lyndy~
+@230 = ~High Sorceress Renata~
+@231 = ~Legencase Fibula~
+@232 = ~Legencase Fibula
 
 A symbol worn by the members and pupils of the Academy of Legencase. Sandrah, who has infiltrated the Academy once disguised as apprentice, proposed to bring the item to her father. With the help of the Fibula and Elminster's Shard it may be possible to pay a visit to the place and clarify the involvement of the sorcerers in the affairs of Baldur's Gate. ~
-@233 = ~ Legencase Journal~
-@234 = ~ Legencase Journal
+@233 = ~Legencase Journal~
+@234 = ~Legencase Journal
 
 A comprehensive plan restored from the notes and orders of the High Sorceresses of Legencase. Together they paint a cruel picture of how the Grey Clan organisation had intended to undermine Baldur's Gate, take over the reign and make the Sword Coast a playground for their further aim at power in the Realms. You are fortunate to have interfered with their plans at an early stage. Tergius and Elminster will be delighted about this evidence.~
-@235 = ~ There is no possibility to go back this way.~
-@236 = ~ Wounded Orc~
-@237 = ~ UUUAAAH!~
+@235 = ~There is no possibility to go back this way.~
+@236 = ~Wounded Orc~
+@237 = ~UUUAAAH!~
 @238 = ~Sandrah's Heritage - The second child
 
 I am convinced by now that Sandrah's and my own stories are entwined. There is a Bhaalspawn in her past, and it looks like my heritage is somehow connected to Bhaal as well. Elminster has been following us around all the time since I had to leave Candlekeep and it was not to oversee his daughter's activities. We will go to Waterdeep and his time I will get some answers from him.~
-@239 = ~ Mystra's Altar~
-@240 = ~ TAKE THIS SYMBOL OF WHAT YOU ARE!~
-@241 = ~ TAKE A LOOK AT WHO YOU ARE FROM THE TOWER THAT OVERLOOKS THE REALMS!~
-@242 = ~ Khalindra's Baby ~
-@243 = ~ Khalindra's Baby
+@239 = ~Mystra's Altar~
+@240 = ~TAKE THIS SYMBOL OF WHAT YOU ARE!~
+@241 = ~TAKE A LOOK AT WHO YOU ARE FROM THE TOWER THAT OVERLOOKS THE REALMS!~
+@242 = ~Khalindra's Baby ~
+@243 = ~Khalindra's Baby
 
 You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
 
@@ -530,7 +530,7 @@ Or maybe you and Imoen want to confront the *nobleman* yourself?~
 @259 = ~ Travenhurst's Journal
 
 The journal of the former nobleman contains a lot of information about his involvement with the Iron Throne and a man named Sarevok, sometimes spelled backwards as Koveras. The detailed protocol seemed to be intended for a possible blackmail of those at Baldur's Gate should they intend to act against Travenhurst.~
-@260 = ~ Iron Throne Mage~
+@260 = ~Iron Throne Mage~
 @261 = ~ Deed of Ownership~
 @262 = ~ Deed of Ownership
 
@@ -542,9 +542,9 @@ This deed certifies the ownership of the house and grounds at Beregost known as 
   Signed by the witnesses
   Sandrah of Waterdeep
   <CHARNAME> of Candlekeep.~
-@263 = ~ Imoen is the owner of a large mansion in Beregost now.~
-@264 = ~ Sister Revianel ~
-@265  = ~Bite~
+@263 = ~Imoen is the owner of a large mansion in Beregost now.~
+@264 = ~Sister Revianel ~
+@265 = ~Bite~
 @266 = ~Ring of Immunity~
 @267 = ~This ring gives immunity to all spells, attacks and detections for permanently invisible creatures.~
 @268 = ~Wolf Attribute Item~
