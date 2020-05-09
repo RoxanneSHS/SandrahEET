@@ -331,9 +331,6 @@ END
 ADD_STATE_TRIGGER Bran 6
 ~GlobalLT("VestibuleQuest","GLOBAL",2)~
 
-ADD_STATE_TRIGGER Blane 14
-~GlobalLT("VestibuleQuest","GLOBAL",2)~
-
 CHAIN
 IF WEIGHT #-3~InParty("Edwin") InParty("CVSandr") GlobalLT("VestibuleQuest","GLOBAL",2)~THEN Blane Susp1
 ~RED WIZARD! So, you have come to witness for yourself your handiwork! The evil arrives, but you shall fall before it enters through its unholy portal!~
