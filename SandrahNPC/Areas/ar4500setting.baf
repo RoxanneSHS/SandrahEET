@@ -1,4 +1,12 @@
 IF
+Global("BG_AttackedThieves","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BG_AttackedThieves","GLOBAL",0)
+Continue()
+END
+
+IF
 Global("TalkedToSolar","GLOBAL",1)
 InMyArea("CVSandr")
 Global("SanTOBanter","GLOBAL",0)
