@@ -1162,7 +1162,7 @@ IF~Global("SanPussMis","GLOBAL",1)~THEN BEGIN SanPussMis1
 SAY~*In the twilight silhouetted against the half moon you see Sandrah sitting side by side with another person. It seems she has laid her arm around that somebody's shoulder while whispering in his ear. You heart hurts at this sight but you are drawn nevertheless closer to the scene.*~
 IF~~THEN REPLY ~*You decide to move silently a bit closer to the entwined couple. You MUST know who that person is.*~ GOTO SanPussMis2
 IF~~THEN REPLY ~*You pretend to stroll leisurely, softly whistling a joyful tune, while your path just by chance brings you nearer to the entwined couple.*~GOTO SanPussMis2
-IF~~THEN REPLY ~*You ignore the whole scenery.~EXIT
+IF~~THEN REPLY ~*You ignore the whole scenery.*~DO ~SetGlobal("SanPussMis","GLOBAL",2)~EXIT
 END
 
 IF ~~THEN BEGIN SanPussMis2
@@ -1176,7 +1176,7 @@ SAY ~*Sandrah starts to move towards you, she as well on all fours. She imitates
 = ~*Pelligram has reached you and starts to rub her soft snout on your left leg.*~
 = ~*A moment later you feel another warm mouth on your right leg as Sandrah kneels beside you and starts to caress you in the same catlike way.*~
 IF ~~THEN REPLY ~Oh, how lucky I am to be loved by such two wonderful pussycats at once.~DO ~SetGlobal("SanPussMis","GLOBAL",2) ~GOTO SanPussMis4
-IF ~~THEN REPLY ~Oh, no, not one of your games again, Sandrah, I'm not in the mood.~EXIT
+IF ~~THEN REPLY ~Oh, no, not one of your games again, Sandrah, I'm not in the mood.~DO ~SetGlobal("SanPussMis","GLOBAL",2)~EXIT
 END
 
 IF ~~THEN BEGIN SanPussMis4

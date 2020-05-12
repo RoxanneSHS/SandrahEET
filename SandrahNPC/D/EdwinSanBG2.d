@@ -58,19 +58,19 @@ END
 IF~~THEN BEGIN EdPaper2
 SAY~And the red scum is Mae'Var's right hand. I am sure if there is a betrayal against the Shadow Thieves going on, the Wizard plays a hand in it. With my skills in magic and alchemy I can easily restore the seals on the papers afterwards.~
 IF~~THEN REPLY~Fine, let's do it.~GOTO EdPaper5
-IF~~THEN REPLY~No means no, Sandrah. Let's forget it.~EXIT
+IF~~THEN REPLY~No means no, Sandrah. Let's forget it.~DO~SetGlobal("SanEdPaper","LOCALS",2)~EXIT
 END
 
 IF~~THEN BEGIN EdPaper3
 SAY~The red scum is Mae'Var's right hand. I am sure if there is a betrayal against the Shadow Thieves going on, the Wizard plays a hand in it. With my skills in magic and alchemy I can easily restore the seals on the papers afterwards.~
 IF~~THEN REPLY~Fine, let's do it.~GOTO EdPaper5
-IF~~THEN REPLY~Hm, I will not risk it, Sandrah. Let's forget it.~EXIT
+IF~~THEN REPLY~Hm, I will not risk it, Sandrah. Let's forget it.~DO~SetGlobal("SanEdPaper","LOCALS",2)~EXIT
 END
 
 IF~~THEN BEGIN EdPaper4
 SAY~The red scum is Mae'Var's right hand. I am sure if there is a betrayal against the Shadow Thieves going on, the Wizard plays a hand in it. With my skills in magic and alchemy I can easily restore the seals on the papers afterwards.~
 IF~~THEN REPLY~Fine, let's do it.~GOTO EdPaper5
-IF~~THEN REPLY~Hm, on second thought I will not risk it, Sandrah. Let's forget it.~EXIT
+IF~~THEN REPLY~Hm, on second thought I will not risk it, Sandrah. Let's forget it.~DO~SetGlobal("SanEdPaper","LOCALS",2)~EXIT
 END
 
 IF~~THEN BEGIN EdPaper5
