@@ -93,8 +93,8 @@ END
 IF
 Global("CVUMHostile","GLOBAL",1)
 OR(2)
-AreaCheck("CVUM04")
-AreaCheck("CVUM05")
+AreaCheck("CVUMO4")
+AreaCheck("CVUMO5")
 THEN
 RESPONSE #100
 EscapeArea()
