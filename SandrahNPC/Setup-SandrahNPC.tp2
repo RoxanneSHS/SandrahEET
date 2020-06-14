@@ -1813,23 +1813,23 @@ COMPILE ~SandrahNPC/Mods/BPFLAYR1.BAF~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~acqxemer.itm~ THEN BEGIN
-COPY ~SandrahNPC/ITM/acqxemer.itm~ ~override/acqxemer.itm ~
+COPY ~SandrahNPC/ITM/acqxemer.itm~ ~override/acqxemer.itm~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BGDEX16.SPL~ THEN BEGIN
-COPY ~SandrahNPC/Misc2/BGDEX16.SPL~ ~override/BGDEX16.SPL ~
+COPY ~SandrahNPC/Misc2/BGDEX16.SPL~ ~override/BGDEX16.SPL~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BGDEX17.SPL~ THEN BEGIN
-COPY ~SandrahNPC/Misc2/BGDEX17.SPL~ ~override/BGDEX17.SPL ~
+COPY ~SandrahNPC/Misc2/BGDEX17.SPL~ ~override/BGDEX17.SPL~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~ACREVIS.BMP~ THEN BEGIN
-COPY ~SandrahNPC/Misc2/ACREVIS.BMP~ ~override/ACREVIS.BMP ~
+COPY ~SandrahNPC/Misc2/ACREVIS.BMP~ ~override/ACREVIS.BMP~
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Gauthsu.cre~ THEN BEGIN
-COPY_EXISTING ~Behold01.cre~ ~override/Gauthsu.cre ~
+COPY_EXISTING ~Behold01.cre~ ~override/Gauthsu.cre~
      SAY NAME1 Gauth
      SAY NAME2 Gauth
      WRITE_BYTE 0x270 5 
@@ -1860,7 +1860,7 @@ COMPILE ~SandrahNPC/Mods/acq40001.d~
 COMPILE ~SandrahNPC/Mods/acq40001.baf~
 EXTEND_TOP
 ~BG0900.BCS~ ~SandrahNPC/Mods/ac7900.baf~
-COPY ~SandrahNPC/Mods/acq40001.cre~ ~override/acq40001.cre ~
+COPY ~SandrahNPC/Mods/acq40001.cre~ ~override/acq40001.cre~
      SAY NAME1 Furlon
      SAY NAME2 Furlon
 END
@@ -2316,7 +2316,7 @@ SAY BATTLE_CRY3 Craw
 SAY BATTLE_CRY4 Craw
 
 COPY ~SandrahNPC/Kit/CVSLEEP.SPL~ ~override/CVSLEEP.SPL~
-COPY ~SandrahNPC/Kit/SanMove.eff~ ~override/SanMove.eff ~
+COPY ~SandrahNPC/Kit/SanMove.eff~ ~override/SanMove.eff~
 
 COPY ~SandrahNPC/Kit/CVMysAn.bam~ ~override/CVMysAn.bam~
 COPY ~SandrahNPC/Kit/CVMysAn2.bam~ ~override/CVMysAn2.bam~
@@ -5886,7 +5886,7 @@ COMPILE ~SandrahNPC/Mods/ACQuestSan.d~
 COPY_EXISTING ~ACqxzah1.cre~ ~override~ 
      WRITE_ASCII 0x34 ~Resach~
  END ELSE BEGIN
-COPY ~SandrahNPC/Mods/acqxzah1.cre~ ~override/acqxzah1.cre ~
+COPY ~SandrahNPC/Mods/acqxzah1.cre~ ~override/acqxzah1.cre~
      SAY NAME1 @403
      SAY NAME2 @403
 COMPILE ~SandrahNPC/Mods/acqxzah1.d~
@@ -5936,9 +5936,9 @@ EXTEND_TOP
 ~BG3300.BCS~ ~SandrahNPC/Mods/ar6700kelor.baf~
 EXTEND_TOP
 ~ar40pb.BCS~ ~SandrahNPC/Mods/ar40pbtalos.baf~
-COPY_EXISTING ~ntkeelor.cre~ ~override/ntkeelor.cre ~
+COPY_EXISTING ~ntkeelor.cre~ ~override/ntkeelor.cre~
      WRITE_ASCII 0x248 ~shout20~ #8
-COPY_EXISTING ~ntaschma.cre~ ~override/ntaschma.cre ~
+COPY_EXISTING ~ntaschma.cre~ ~override/ntaschma.cre~
      WRITE_ASCII 0x248 ~ntashma~ #8
      WRITE_ASCII 0x2cc ~ntashma~ #8
 EXTEND_TOP
