@@ -21,5 +21,5 @@ CHAIN
 IF~~THEN CVIZZY BereIzzy2
 ~Sort of, yes. But no one compares to Imoen herself. Tell ya my secret, one day soon I'm gonna be like her.~
 == BSANDR ~And you will fight dragons?~
-== CVIZZY ~Mmh, maybe not at first, maybe just start with Wyerns at first, but don't think I'm afraid, just first need to get myself a hero sword. When you think of Imoen you never have fear ever, jus' like her. Hey, you look like the travellin' kind, keep you eyes open - maybe you meet her one day.~DO ~MoveToPointNoInterrupt([195.440]) DestroySelf()~EXIT
+== CVIZZY ~Mmh, maybe not at first, maybe just start with Wyverns at first, but don't think I'm afraid, just first need to get myself a hero sword. When you think of Imoen you never have fear ever, jus' like her. Hey, you look like the travellin' kind, keep you eyes open - maybe you meet her one day.~DO ~MoveToPointNoInterrupt([195.440]) DestroySelf()~EXIT
 
