@@ -10,7 +10,7 @@ AUTO_TRA ~SandrahNPC/TRA/%s~
 LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/setup-Sandr.tra~
 
 BEGIN
-~SandrahNPC Check for required Installation~
+@1011
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~k#telbgt.bcs~ THEN BEGIN
   FAIL  @962
@@ -111,10 +111,10 @@ APPEND
 ~gtimes.ids~ ~100 TWENTY_MINUTES~
 
 
-PRINT ~Check for required Installation sucessful - Can install SandrahNPC mod~
+PRINT @1012
   
 BEGIN
-~Sandrah Worldmap Entries~
+@1013
 
 //COPY ~EET/base/worldmap.wmp~ ~override~
 
@@ -174,7 +174,7 @@ LAF sc#addWmpAre
 END
 
 BEGIN
-~SandrahNPC for EET Core~
+@1017
 
 COPY ~SandrahNPC\Areas/CVNAR1.ARE~ ~override\CVNAR1.ARE~
  SAY 0x4dc @49
@@ -1741,13 +1741,13 @@ COMPILE
 COPY_EXISTING ~ar0400.are~ ~Override~
 WRITE_ASCII 0x6c04 ~CV40JA~
 
-PRINT ~Copying new area graphics - this may take a few minutes...~
+PRINT @1018
 COPY ~SandrahNPC/PVRZ~ ~override~
 
-PRINT ~Installed SandrahNPC for EET Core~
+PRINT @1019
 
 BEGIN
-~Mods Compatibility~
+@1020
 
 COMPILE 
 ~SandrahNPC/Mods/CVLeyg.d~
@@ -1830,8 +1830,8 @@ END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Gauthsu.cre~ THEN BEGIN
 COPY_EXISTING ~Behold01.cre~ ~override/Gauthsu.cre~
-     SAY NAME1 Gauth
-     SAY NAME2 Gauth
+     SAY NAME1 @1021
+     SAY NAME2 @1021
      WRITE_BYTE 0x270 5 
 END
 
@@ -1861,25 +1861,25 @@ COMPILE ~SandrahNPC/Mods/acq40001.baf~
 EXTEND_TOP
 ~BG0900.BCS~ ~SandrahNPC/Mods/ac7900.baf~
 COPY ~SandrahNPC/Mods/acq40001.cre~ ~override/acq40001.cre~
-     SAY NAME1 Furlon
-     SAY NAME2 Furlon
+     SAY NAME1 @1022
+     SAY NAME2 @1022
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~x#setta.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/x#setta,d~
 COPY ~SandrahNPC/Mods/x#setta.cre~ ~override/x#setta.cre~
-SAY NAME1 Setta
-SAY NAME2 Setta
+SAY NAME1 @1023
+SAY NAME2 @1023
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~cm1800a1.CRE~ THEN BEGIN
 COPY ~SandrahNPC/Mods\cm1800a1.CRE~ ~override~
-SAY NAME1 ~Black Talon Elite~
-SAY NAME2 ~Black Talon Elite~
+SAY NAME1 @1024
+SAY NAME2 @1024
 
 COPY ~SandrahNPC/Mods\cmirone.CRE~ ~override~
-SAY NAME1 ~Black Talon General~
-SAY NAME2 ~Black Talon General~
+SAY NAME1 @1025
+SAY NAME2 @1025
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~dw#cut1.bcs~ THEN BEGIN
@@ -1897,7 +1897,7 @@ END
 EXTEND_TOP ~Koboldf.bcs~ ~SandrahNPC/Baf/SanKobo.baf~
 
 STRING_SET
-217429 ~Well now, our paths cross once more. I've heard nothing but tales of thy exploits in the time we have been apart. It would seem that thou art destined to have quite the impact on the Sword Coast. Quite the burden for one so young.~
+217429 @1026
 
 //** HAIASS*//
 COMPILE ~SandrahNPC/Mods/haiass.d~
@@ -2021,10 +2021,10 @@ APPEND ~Shoutids.ids~ ~101 HELP101~ UNLESS ~HELP101~
 APPEND ~Shoutids.ids~ ~152 DEAD_MEAT~ UNLESS ~DEAD_MEAT~
 APPEND ~Shoutids.ids~ ~153 SUM_ATTACK_EVIL~ UNLESS ~SUM_ATTACK_EVIL~
 
-PRINT ~Installed Mods Compatibility~
+PRINT @1027
 
 BEGIN
-~Sandrah Kit~
+@1028
 
 APPEND ~stats.ids~ ~109   CLERIC_HALLOW~  UNLESS ~CLERIC_HALLOW~
 
@@ -2310,10 +2310,10 @@ COPY ~SandrahNPC/Kit/DW#Curse.spl~ ~override/DW#Curse.spl~
 COPY ~SandrahNPC/Cre/saneagl3.cre~ ~override/saneagl3.cre~
 SAY NAME1 @718
 SAY NAME2 @718
-SAY BATTLE_CRY1 Craw
-SAY BATTLE_CRY2 Craw
-SAY BATTLE_CRY3 Craw
-SAY BATTLE_CRY4 Craw
+SAY BATTLE_CRY1 @1029
+SAY BATTLE_CRY2 @1029
+SAY BATTLE_CRY3 @1029
+SAY BATTLE_CRY4 @1029
 
 COPY ~SandrahNPC/Kit/CVSLEEP.SPL~ ~override/CVSLEEP.SPL~
 COPY ~SandrahNPC/Kit/SanMove.eff~ ~override/SanMove.eff~
@@ -2496,10 +2496,10 @@ END
 
 CLEAR_IDS_MAP
 
-PRINT ~Installed Sandrah Kit~
+PRINT @1030
 
 BEGIN
-~SandrahNPC Creatures and Items~
+@1031
 
 COPY ~SandrahNPC\CRE/Sandrah.cre~ ~override\Sandrah.cre~
 SAY NAME1 Sandrah
@@ -2548,23 +2548,23 @@ WRITE_SHORT   0x246 0x4000 + ~%CVMystra%~
   SAY BIO @07
 
 COPY ~SandrahNPC\CRE/Sanpre.cre~ ~override\Sanpre.cre~
-SAY NAME1 Sandrah
-SAY NAME2 Sandrah
+SAY NAME1 @1032
+SAY NAME2 @1032
 SAY BIO @07
 
 COPY ~SandrahNPC\CRE/Sanpre2.cre~ ~override\Sanpre2.cre~
-SAY NAME1 Sandrah
-SAY NAME2 Sandrah
+SAY NAME1 @1032
+SAY NAME2 @1032
 SAY BIO @07
 
 COPY ~SandrahNPC\CRE/Sanpre3.cre~ ~override\Sanpre3.cre~
-SAY NAME1 Sandrah
-SAY NAME2 Sandrah
+SAY NAME1 @1032
+SAY NAME2 @1032
 SAY BIO @07
 
 COPY ~SandrahNPC\CRE/Sanpre4.cre~ ~override\Sanpre4.cre~
-SAY NAME1 Sandrah
-SAY NAME2 Sandrah
+SAY NAME1 @1032
+SAY NAME2 @1032
 SAY BIO @07
 
 COPY ~SandrahNPC/Jenlig/CVJenlig.CRE~ ~override/CVJenlig.CRE~
@@ -2596,12 +2596,12 @@ SAY NAME1 @839
 SAY NAME2 @839
 
 COPY ~SandrahNPC/Jenlig/CVJenIll.CRE~ ~override/CVJenIll.CRE~
-SAY NAME1 Illithid
-SAY NAME2 Illithid
+SAY NAME1 @1033
+SAY NAME2 @1033
 
 COPY ~SandrahNPC/Jenlig/CVJenMiH.CRE~ ~override/CVJenMiH.CRE~
-SAY NAME1 Illithid
-SAY NAME2 Illithid
+SAY NAME1 @1033
+SAY NAME2 @1033
 
 COPY ~SandrahNPC/Jenlig/CVJenPad.CRE~ ~override/CVJenPad.CRE~
 SAY NAME1 @836
@@ -2656,32 +2656,32 @@ SAY NAME1 @68
 SAY NAME2 @69
 
 COPY ~SandrahNPC\CRE/Hilath.cre~ ~override\Hilath.cre~
-SAY NAME1 Hillath
-SAY NAME2 Hillath
+SAY NAME1 @1034
+SAY NAME2 @1034
 
 COPY ~SandrahNPC\CRE/WDFish1.cre~ ~override\WDFish1.cre~
-SAY NAME1 Henk
-SAY NAME2 Henk
+SAY NAME1 @1035
+SAY NAME2 @1035
 
 COPY ~SandrahNPC\CRE/WDFish2.cre~ ~override\WDFish2.cre~
-SAY NAME1 Yantl
-SAY NAME2 Yantl
+SAY NAME1 @1036
+SAY NAME2 @1036 
 
 COPY ~SandrahNPC\CRE/WDFish3.cre~ ~override\WDFish3.cre~
 SAY NAME1 @888
 SAY NAME2 @888
 
 COPY ~SandrahNPC\CRE/WDFish4.cre~ ~override\WDFish4.cre~
-SAY NAME1 Whyrtman
-SAY NAME2 Whyrtman
+SAY NAME1 @1037
+SAY NAME2 @1037
 
 COPY ~SandrahNPC\CRE/WDFish5.cre~ ~override\WDFish5.cre~
-SAY NAME1 Neerol
-SAY NAME2 Neerol
+SAY NAME1 @1038 
+SAY NAME2 @1038
 
 COPY ~SandrahNPC\CRE/Sankhelb.cre~ ~override\Sankhelb.cre~
-SAY NAME1 Khelben
-SAY NAME2 Khelben
+SAY NAME1 @1039
+SAY NAME2 @1039
 
 COPY ~SandrahNPC\CRE/sansuwl.cre~ ~override\sansuwl.cre~
 SAY NAME1 @939
@@ -2704,32 +2704,32 @@ SAY NAME1 @939
 SAY NAME2 @939
 
 COPY ~SandrahNPC\CRE/sakiwiz.cre~ ~override\sakiwiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/sabrwiz.cre~ ~override\sabrwiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/saanwiz.cre~ ~override\saanwiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/sagawiz.cre~ ~override\sagawiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/saskwiz.cre~ ~override\saskwiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/sakawiz.cre~ ~override\sakawiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/sachwiz.cre~ ~override\sachwiz.cre~
-SAY NAME1 Hobgoblin
-SAY NAME2 Hobgoblin
+SAY NAME1 @1040
+SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/kattah.cre~ ~override\kattah.cre~
 SAY NAME1 Khattark
@@ -5135,47 +5135,47 @@ EXTEND_TOP
 END
 
 COPY ~SandrahNPC/Pellig/pellig.cre~ ~override/pellig.cre~
-SAY NAME1 Pelligram
-SAY NAME2 Pelligram
+SAY NAME1 @1015
+SAY NAME2 @1015
 COPY ~SandrahNPC/Pellig/pellig2.cre~ ~override/pellig2.cre~
-SAY NAME1 Pelligram
-SAY NAME2 Pelligram
+SAY NAME1 @1015
+SAY NAME2 @1015
 
 COPY ~SandrahNPC/Pellig/saneagl.cre~ ~override/saneagl.cre~
-SAY NAME1 Araxias
-SAY NAME2 Araxias
+SAY NAME1 @1016
+SAY NAME2 @1016
 
 COPY ~SandrahNPC/Pellig/saneagl2.cre~ ~override/saneagl2.cre~
 SAY NAME1 @953
 SAY NAME2 @953
 
 COPY ~SandrahNPC/Pellig/haiass1.cre~ ~override/haiass1.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass2.cre~ ~override/haiass2.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass3.cre~ ~override/haiass3.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass4.cre~ ~override/haiass4.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass5.cre~ ~override/haiass5.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass6.cre~ ~override/haiass6.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/Pellig/haiass7.cre~ ~override/haiass7.cre~
-SAY NAME1 Haiass
-SAY NAME2 Haiass
+SAY NAME1 @1014
+SAY NAME2 @1014
 
 COPY ~SandrahNPC/cre/silhai.cre~ ~override/silhai.cre~
   SAY NAME1 @270
@@ -7685,8 +7685,8 @@ EXTEND_TOP
 ~ar6002.bcs~ ~SandrahNPC/Areas/ar6002San.baf~
 
 COPY ~SandrahNPC/Pellig/PelligT.cre~ ~override/PelligT.cre~
-SAY NAME1 Pelligram
-SAY NAME2 Pelligram
+SAY NAME1 @1015
+SAY NAME2 @1015
 
 COPY ~SandrahNPC/ToB/CVGORPD.CRE~ ~override/CVGORPD.CRE~
 
