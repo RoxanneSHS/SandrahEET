@@ -105,3 +105,12 @@ RESPONSE #100
 SetGlobal("JahSanMama","CVDre1",1)
 END
 
+IF
+GlobalGT("Mothdream1","GLOBAL",3)
+Global("NoPaint","CVDre1",0)
+THEN
+RESPONSE #100
+SetGlobal("NoPaint","CVDre1",1)
+AmbientActivate("Painting",FALSE)
+END
+
