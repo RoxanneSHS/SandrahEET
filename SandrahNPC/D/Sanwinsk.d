@@ -6,7 +6,7 @@ IF ~Global("WinskApp1","GLOBAL",2)~THEN SANWINSK WinskiApp1
 ~Stand!~
 DO~SetGlobal("WinskApp1","GLOBAL",3) RealSetGlobalTimer("WiItemR","GLOBAL",1200)~
 == BDYNAH  IF~InParty("Dynaheir") ~THEN ~An Othlor? ~
-== BMINSC IF ~InParty("Minsc") ~THEN ~A mighty Othlor, see Boo.~
+== BMINSC_ IF ~InParty("Minsc") ~THEN ~A mighty Othlor, see Boo.~
 == BSANDR ~A Rashemen wizard?~
 == SANWINSK ~So you know what or who I am. Good. That will make everything easier.~
 == BSANDR ~Not really. I can see you are a Rashemen wizard, an Othlor, but that explains nothing. What do you want of us?~
