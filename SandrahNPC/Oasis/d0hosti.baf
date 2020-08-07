@@ -25,7 +25,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("TethyrBattleStart","GLOBAL",1)
-    DisplayStringHead(Myself,@148)
+    DisplayStringHead(Myself,@70017)
     IncrementGlobal("D0Change","GLOBAL",-4)
     Shout(125)
     Enemy()
@@ -42,7 +42,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("TethyrBattleStart","GLOBAL",1)
-    DisplayStringHead(Myself,@148)
+    DisplayStringHead(Myself,@70017)
     IncrementGlobal("D0Change","GLOBAL",-3)
     Shout(125)
     Enemy()
@@ -58,7 +58,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("TethyrBattleStart","GLOBAL",1)
-    DisplayStringHead(Myself,@148)
+    DisplayStringHead(Myself,@70017)
     IncrementGlobal("D0Change","GLOBAL",-2)
     Shout(125)
     Enemy()
@@ -102,7 +102,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("TethyrBattleStart","GLOBAL",3)
-    DisplayStringHead(Myself,@147)
+    DisplayStringHead(Myself,@70018)
     ChangeEnemyAlly(Myself,NEUTRAL)
 END
 
