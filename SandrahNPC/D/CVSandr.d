@@ -1,99 +1,99 @@
 BEGIN CVSANDR
 
 IF ~NumTimesTalkedTo(0)~THEN BEGIN FirstJoin
-SAY ~<CHARNAME>! I am too late (Looks down at Gorion's body with horror). You desperately need help.~
-= ~You need MY help.~
-= ~<CHARNAME>, my name is Sandrah.~
-IF ~~THEN REPLY ~Sandrah, glad to meet you. What is going on? Will you help me? ~GOTO SanJoin
-IF ~PartyHasItem("GIFTOFM")~THEN REPLY ~An unknown cleric girl was in Candlekeep yesterday and left this magical sword for *a hero to be*. Was that unknown cleric maybe you, Sandrah? ~GOTO GiftofM
-IF ~~THEN REPLY ~Sandrah, can I really trust you? ~GOTO Trust
+SAY @0
+= @1
+= @2
+IF ~~THEN REPLY @3GOTO SanJoin
+IF ~PartyHasItem("GIFTOFM")~THEN REPLY @4GOTO GiftofM
+IF ~~THEN REPLY @5GOTO Trust
 END
 
 IF ~~THEN BEGIN SanJoin
-SAY ~We can be comrades in arms and partners from now on. You will not regret it, <CHARNAME>. ~
-IF ~~THEN REPLY ~Welcome, Sandrah. ~DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO IntroImo1
+SAY @6
+IF ~~THEN REPLY @7DO~IncrementGlobal("Sanpoints","GLOBAL",2)~GOTO IntroImo1
 END
 
 IF ~~THEN BEGIN GiftofM
-SAY ~Yes, this sword is a gift of my goddess Mystra. I was afraid I may miss you before the danger arrived, so I left it with a watcher to make sure you would not be totally defenceless. ~
-IF ~~THEN REPLY ~So you already tried to help me once, and now you are here yourself to help me again. You have proven your trustworthiness to me, I will be honoured if you join me. ~GOTO SanJoin
-IF ~~THEN REPLY ~Even then, what would make you do such a thing? What are your motives? I am not sure whether I can trust a total stranger that provides me with an enormous gift. ~GOTO Trust
+SAY @8
+IF ~~THEN REPLY @9GOTO SanJoin
+IF ~~THEN REPLY @10GOTO Trust
 END
 
 IF ~~THEN BEGIN Trust
-SAY ~You CAN and you MUST. What are your other options, <CHARNAME>? ~
-IF ~~THEN REPLY ~Well, I think I must trust someone or I'm lost. Something tells me you are here to help me, Sandrah, come with me.~GOTO SanJoin
-IF ~~THEN REPLY ~I can trust no one out here. I'm sorry. Maybe another day? ~DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO AnotherDay
+SAY @11
+IF ~~THEN REPLY @12GOTO SanJoin
+IF ~~THEN REPLY @13DO~IncrementGlobal("Sanpoints","GLOBAL",-1)~GOTO AnotherDay
 END
 
 IF ~~AnotherDay
-SAY ~I will wait for you. Think about it, <CHARNAME>, for Gorion's sake.~
-IF ~~THEN DO ~AddJournalEntry(@12,INFO) ~EXIT
+SAY @14
+IF ~~THEN DO ~AddJournalEntry(@60012,INFO) ~EXIT
 END
 
 IF ~~IntroImo1
-SAY ~You will need friends by your side if you want to survive on the path that is waiting for you. ~
-IF ~InParty("imoen2") ~THEN REPLY ~Imoen is here with me. She is like a sister to me. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO IntroImo2b
-IF ~!InParty("imoen2")~THEN REPLY ~I was alone until now... ~GOTO WhereIsImo
+SAY @15
+IF ~InParty("imoen2") ~THEN REPLY @16DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO IntroImo2b
+IF ~!InParty("imoen2")~THEN REPLY @17GOTO WhereIsImo
 END
 
 IF ~~IntroImo2b
-SAY ~Well...~
+SAY @18
 IF ~InParty("imoen2")~THEN EXTERN BIMOEN IntroImoS
 IF ~!InParty("imoen2")~THEN EXIT
 END
 
 IF ~~IntroImo2
-SAY ~Ah, Imoen, another of those who cannot follow the elders' orders.~
-IF ~~THEN REPLY ~First you know who I am, now you even know Imoen? ~GOTO IntroImo3
-IF ~~THEN REPLY ~I could not reject her help, she has been with me as long as I can think. Like her or not, you have to cope with her. ~GOTO IntroImo3
+SAY @19
+IF ~~THEN REPLY @20GOTO IntroImo3
+IF ~~THEN REPLY @21GOTO IntroImo3
 END
 
 IF ~~IntroImo3
-SAY ~You are loyal to your friends, <CHARNAME>. We will stand to you when you need help and care. And you will NEED help! ~IF ~~THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~EXTERN BIMOEN IntroImoN
+SAY @22IF ~~THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty()~EXTERN BIMOEN IntroImoN
 END
 
 IF ~~WhereIsImo
-SAY ~Did you see Imoen from Candlekeep? Was she not with you when you left there?~
-IF ~~THEN REPLY ~I cannot stand her babbling all the time. I did not care to take her with me. ~GOTO SeeBehindMask
-IF ~~THEN REPLY ~I cannot endanger her by taking her with me. I care too much for her to see her suffer. ~GOTO LovelyFool1
-IF ~~THEN REPLY ~How the hell do you know about Imoen? ~GOTO SeeBehindMask
+SAY @23
+IF ~~THEN REPLY @24GOTO SeeBehindMask
+IF ~~THEN REPLY @25GOTO LovelyFool1
+IF ~~THEN REPLY @26GOTO SeeBehindMask
 END
 
 IF ~~LovelyFool1
-SAY ~She is much stronger than you may think, <CHARNAME>.You must be careful to keep the friends you still have. ~
-= ~Let us return immediately to her and ask her to join us. She needs you as much as you need her.~
-= ~You can take care of her much better if she is with you than if she is out here alone. ~
-IF ~~THEN REPLY ~Hm, I think you are right, Sandrah. It was foolish of me to separate from her. We will go back and search for her. ~DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO LovelyFool2
-IF ~~THEN REPLY ~But now I have you by my side. If she is as strong as you say, she will be able to manage her own way. Surely we shall meet her again. ~GOTO LovelyFool2
+SAY @27
+= @28
+= @29
+IF ~~THEN REPLY @30DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO LovelyFool2
+IF ~~THEN REPLY @31GOTO LovelyFool2
 END
 
 IF ~~LovelyFool2 
-SAY ~<CHARNAME>, you lovely fool, you already miss her, admit it or not. ~
+SAY @32
 IF ~~THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ~EXIT
 END
 
 IF ~~SeeBehindMask
-SAY ~Oh, <CHARNAME>, little blind bird. You need to look behind her mask of cheerful babbling. ~
-= ~Behind all her funny words and jokes she is a clever girl and she cares for you. Remember all the times you had together and you will find that I'm right. ~
-IF ~~THEN REPLY ~Yes, you are right, she is my best friend as long as I can think and almost like a sister to me. When it came hard, I could always rely on her. ~GOTO LovelyFool2
-IF ~~THEN REPLY ~Oh, no! She is a pain and a headache. You say that all of this is just a clever disguise, hm?  ~GOTO LovelyFool2
+SAY @33
+= @34
+IF ~~THEN REPLY @35GOTO LovelyFool2
+IF ~~THEN REPLY @36GOTO LovelyFool2
 END
 
 IF ~NumTimesTalkedToGT(0) ~THEN BEGIN SecondChance
-SAY ~I see you have returned, <CHARNAME>. ~
-IF ~~THEN REPLY ~Well, I think I must trust someone or I'm lost. Something tells me you are here to help me, Sandrah, come with me.~GOTO SanJoin
+SAY @37
+IF ~~THEN REPLY @12GOTO SanJoin
 END
 
 APPEND BIMOEN
 
 IF ~~THEN BEGIN IntroImoS
-SAY ~(Imoen shakes Sandrah's hand with a bright grin on her face.) Nice to meet you, Sandrah, wow, what a nice robe, bad it's not pink at all. ~
+SAY @38
 IF ~~THEN EXTERN CVSANDR IntroImo2
 END
 
 IF ~~THEN BEGIN IntroImoN
-SAY ~(Imoen wildly nods to these words.) You will see. ~
+SAY @39
 IF ~~THEN EXIT
 END
 END

@@ -107,7 +107,7 @@ Global("CreateShau","ar3520",3)
 THEN
 RESPONSE #100
 SetGlobal("CreateShau","ar3520",4)
-EraseJournalEntry(@700)
+EraseJournalEntry(@60700)
 END
 
 IF

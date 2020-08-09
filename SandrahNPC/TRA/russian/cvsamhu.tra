@@ -1,0 +1,38 @@
+@0    = ~Ahhh! (The turmoil of the battle has brought the wounded man back to consciousness.)~
+@1    = ~(Your healer casts a quick spell on the man to ease his visible pains.)~
+@2    = ~-cough- -cough-  Who... are you.  Where is Lena.  -cough-.  Uhhhhh.?~
+@3    = ~Lena is save, do not worry. We will take you to the temple of Wisdom as fast as we can. All will be well.~
+@4    = ~Nothing will be well as long as corruption rules the Flaming Fist..cough.~
+@5    = ~You must not agitate yourself, your wounds will open again.~
+@6    = ~Can you do not more for him, Sandrah, he suffers badly?~
+@7    = ~Oh, Sandrah, just cast sleep on him. If we are to carry him all that length he needs to keep still else he'll attrack every bandit and fist along the road.~
+@8    = ~Cough...~
+@9    = ~I am doing what is possible here in the field. We must bring him to the temple where he can get the rest and care he needs.~
+@10   = ~Beware of the Flaming Fist...are no longer a force of law and order...Angelo Dosan has sold them to the service of the Iron Throne...~
+@11   = ~Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
+@12   = ~You must hate him worse than I do for what he did to me.~
+@13   = ~That's nothing compared to what he did to me, the scoundrel who copulated with that whore who called herself my mother.~
+@14   = ~You are his daughter? Poor girl, you suffer indeed worse than me.~
+@15   = ~Our suspicions were correct, damn it. That weasel Dosan, Scar already suspected him. I didn't trust myself in his case, this man just turns my stomach. Good to know that my guts told me the truth.~
+@16   = ~You're Schael Corwin...cough...make sure Scar's warned...~
+@17   = ~You should not lose more strength in talking, friend. Sleep now. (She casts *sleep* on her patient.)~
+@18   = ~Beware of the traitors...*snooze*~
+@19   = ~Flaming Fist deserter.
+
+A Flaming Fist soldier told us that there was a reward out for a man who deserted his unit.  The reward is for 50 gold, and the man's name is Samuel.~
+@20   = ~Okay, bye.~
+@21   = ~Okay, we do have Samuel.  Take him and give us our 50 gold.~
+@22   = ~You'll have to take him by force.  Sorry.~
+@23   = ~So we meet again.  Sorry, but I don't... hey, who are you carrying there?~
+@24   = ~It's one of our companions; he was wounded.~
+@25   = ~A hobgoblin we killed.  We think he's a member of the Chill, so we're taking him back to Beregost for identification.~
+@26   = ~He's a merchant we found.  His caravan was attacked by bandits, and he was badly wounded.  He paid us to take him back to Beregost.~
+@27   = ~This is Samuel.  We want to turn him in for the 50 gold.~
+@28   = ~Good job, here's your reward.~
+@29   = ~Flaming Fist deserter.
+
+I turned Samuel in to the Flaming Fist soldier, and got a paltry 50 gold for it.  Hell, might buy me a sword...~
+@30   = ~But...hey, who are you carrying there?~
+@31   = ~I'd rather not...you seem to be determined to prove your point by all means.~
+@32   = ~Actually, I just wanted to ask you one question.  Who is it that you have with you?~
+@33   = ~It's one of our companions, he was wounded.~

@@ -40,5 +40,5 @@ THEN
 RESPONSE #100
 SetGlobal("CVGodag","GLOBAL",11)
 AddexperienceParty(7000)
-EraseJournalEntry(@907)
+EraseJournalEntry(@60907)
 END

@@ -1,24 +1,24 @@
 CHAIN
 IF~Global("Sanhealdorn","GLOBAL",3)~THEN BDorn_  Hidmast1
-~The servitude to your mistress grants you impressive powers, woman.~
+@0
 DO~SetGlobal("Sanhealdorn","GLOBAL",4)~
-==BSandr~Servitude? Is that how you are bound to your *master*?~
-==BDorn_~Bah, do your task and stop babbling.~
-==BSandr~I would not compare my relationship to Mystra with that of a slave to her master.~
-==BDorn_~We follow <CHARNAME> while serving someone else at the same time.~
-==BSandr~If so - my alliance is revealed while yours stays hidden.~
-==BDorn_~*He stares at the blade of his sword but remains silent.*~EXIT
+==BSandr@1
+==BDorn_@2
+==BSandr@3
+==BDorn_@4
+==BSandr@5
+==BDorn_@6EXIT
 
 I_C_T DornJ_ 87 SanMistDorn1
-==CVSandrJ IF~InParty("CVSandr")~THEN~This may reveal more about the one who suggested the question than the one he may accuse.~
-==DornJ_ IF~InParty("CVSandr")~THEN~She always has *helpful* advice, but ask yourself who has the most profit from your heeding it.~
-==CVJenliJ IF~InParty("CVJenlig")~THEN~(Hiss) Doubt Githyanki loyalty, blackling?.~
-==DornJ_ IF~InParty("CVJenlig")~THEN~Believe it or not, you're about the only one I trust as you're an evil beast and you show it open.~
+==CVSandrJ IF~InParty("CVSandr")~THEN@7
+==DornJ_ IF~InParty("CVSandr")~THEN@8
+==CVJenliJ IF~InParty("CVJenlig")~THEN@9
+==DornJ_ IF~InParty("CVJenlig")~THEN@10
 END
 
 I_C_T DornJ_ 178 SanMistDorn2
-==CVJenliJ IF~InParty("CVJenlig")~THEN~(Hiss) Doubt Githyanki loyalty, blackling?.~
-==DornJ_ IF~InParty("CVJenlig")~THEN~Believe it or not, you're about the only one I trust as you're an evil beast and you show it open.~
-==CVSandrJ IF~InParty("CVSandr")~THEN~This may reveal more about the one who suggested the question than the one he may accuse.~
-==DornJ_ IF~InParty("CVSandr")~THEN~She always has *helpful* advice, but ask yourself who has the most profit from your heeding it.~
+==CVJenliJ IF~InParty("CVJenlig")~THEN@9
+==DornJ_ IF~InParty("CVJenlig")~THEN@10
+==CVSandrJ IF~InParty("CVSandr")~THEN@7
+==DornJ_ IF~InParty("CVSandr")~THEN@8
 END

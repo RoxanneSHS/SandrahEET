@@ -1,34 +1,34 @@
 CHAIN
 IF WEIGHT #-9~InPartySlot(LastTalkedToBy,0) InParty("CVSandr") Global("A7BanterIntro","GLOBAL",1) Global("BanterActive","LOCALS",1) Global("A7IntroSan","LOCALS",0)~THEN A7Afaaq A7IntroSan1
-~My <PRO_LADYLORD>, I see you are not travelling alone.~
+@0
 DO~SetGlobal("A7BanterIntro","GLOBAL",2) IncrementGlobal("A7BanterIntroParty","GLOBAL",1)~
-=~Would you care to introduce your companions to me?~
+=@1
 END
-++~Sure, why not? I start with my cleric and counsellor Sandrah of Waterdeep right here, extraordinary fighter and priestess of Mystra.~DO~SetGlobal("A7IntroSan","LOCALS",1)~+A7IntroSan2
+++@2DO~SetGlobal("A7IntroSan","LOCALS",1)~+A7IntroSan2
 
 CHAIN
 IF~~THEN A7Afaaq A7IntroSan2
-~I am honoured to make your acquaintance, Sandrah. From <CHARNAME>'s glance when introducing you, I can tell you are more than a mere companion to <PRO_HIMHER>.~
-==CVSandrJ~You have a sharp eye. Afaaq, yes, we are lovers in deed.~
-==A7Afaaq~(Sigh) Lucky ones.~
-==CVSandrJ~As much as I enjoy meeting you, it saddens me to see somebody in slavery.~
-==A7Afaaq~Like a caged bird, dreaming to fly. Oh, how I long to see my home again.~
-==CVSandrJ~Our company fights slavers where ever we find them. I am sure we will also find a way to enhance your position.~
-==A7Afaaq~I am bound to the lamp which is in <CHARNAME>'s possession, not to <CHARNAME> <PRO_HIMHER>self.~
-==CVSandrJ~I will study my tomes and consult my goddess. We will free you sooner or later.~
-==A7Afaaq~Do not burden yourself with my own troubles. I am confident that it will not be a permanent state.~
+@3
+==CVSandrJ@4
+==A7Afaaq@5
+==CVSandrJ@6
+==A7Afaaq@7
+==CVSandrJ@8
+==A7Afaaq@9
+==CVSandrJ@10
+==A7Afaaq@11
 END
-++~There is no way to stop Sandrah when it comes to fight slavery. We will see.~+ 196
+++@12+ 196
 
 CHAIN
 IF WEIGHT #-9~Global("A7IntroSan","LOCALS",2) See("CVSandr") InParty("CVSandr") ~THEN A7Afaaq A7SanDrowfree
-~Your actions confirm your words, my lady. I regained hope when I observed the freeing of those drow captives.~
+@13
 DO~SetGlobal("A7IntroSan","LOCALS",3) ~
-==CVSandrJ~(Sigh) If only your own captivity could be solved as easily as theirs.~
-==A7Afaaq~You are persistent in your actions, so much I have learned. Obstacles and challenges do not frustrate you easily.~
-==CVSandrJ~(Smile) A djinni has one advantage over us mortals, you have time in abundance. A good thing when dealing with long term operations. You will be free one day.~
-==A7Afaaq~I believe it now more than ever. You and <CHARNAME> will reach nearly any goal you set for yourself. You are remarkable beings.~EXIT
+==CVSandrJ@14
+==A7Afaaq@15
+==CVSandrJ@16
+==A7Afaaq@17EXIT
 
 EXTEND_BOTTOM A7arab01 1
-IF~CheckStatLT(LastTalkedToBy,16,CHR) CheckStatLT(LastTalkedToBy,16,INT)InParty("CVSandr")~THEN REPLY~My name is Veldrin and I come with knowledge about an old enemy of your house. Tathas Melarn has ambitions to expand his influence in this city while your armies are preoccupied in the war with the hated surface elves.~GOTO 11
+IF~CheckStatLT(LastTalkedToBy,16,CHR) CheckStatLT(LastTalkedToBy,16,INT)InParty("CVSandr")~THEN REPLY@18GOTO 11
 END

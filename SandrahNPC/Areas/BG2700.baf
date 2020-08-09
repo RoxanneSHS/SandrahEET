@@ -106,6 +106,6 @@ THEN
 RESPONSE #100
 SetGlobal("CVGodag","GLOBAL",1)
 DisplayStringWait(Player1,@905)
-AddJournalEntry(@904,QUEST)
+AddJournalEntry(@60904,QUEST)
 END
 

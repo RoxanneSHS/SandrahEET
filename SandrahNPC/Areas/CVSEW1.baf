@@ -5,8 +5,9 @@ Dead("Karmag1")
 THEN
 RESPONSE #100
 SetGlobal("KatsewDe","CVSEW1",1)
-EraseJournalEntry(@104)
-AddJournalEntry(@117,QUEST_DONE)
+EraseJournalEntry(@60104)
+EraseJournalEntry(@60105)
+AddJournalEntry(@60117,QUEST_DONE)
 SetGlobal("KatDef","GLOBAL",2)
 END
 

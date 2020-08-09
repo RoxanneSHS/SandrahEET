@@ -41,7 +41,7 @@ Global("Branfree","BG4900",0)
 THEN
 RESPONSE #100
 SetGlobal("Branfree","BG4900",1)
-EraseJournalEntry(@11)
+EraseJournalEntry(@60011)
 END
 
 IF

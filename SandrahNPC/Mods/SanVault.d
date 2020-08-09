@@ -333,12 +333,12 @@ ADD_STATE_TRIGGER Bran 6
 
 CHAIN
 IF WEIGHT #-3~InParty("Edwin") InParty("CVSandr") GlobalLT("VestibuleQuest","GLOBAL",2)~THEN Blane Susp1
-~RED WIZARD! So, you have come to witness for yourself your handiwork! The evil arrives, but you shall fall before it enters through its unholy portal!~
-==CVSandrJ~Hold on, priest, do not judge a man just because of the robe he wears.~
-==EDWINJ_~Sandrah? You speak on my behalf (I'm glad this clever girl accompanies our simian leader)? What is going on that you accuse a representative of Thay in this way, man?~
-==Blane~An evil presence threatens the holiness of the vestibule! It seeks to destroy the Song of the Morning Temple! It is Thayan doing!~
-==CVSandrJ~You may be right in that Thay is at work here, but not the man in our company.~
-==Blane~If Mystra stands for that...but...there is no more time... It comes! Arm yourselves!~
+@77
+==CVSandrJ@78
+==EDWINJ_@79
+==Blane@80
+==CVSandrJ@81
+==Blane@82
 DO~CreateCreature("JC_DEM01",[540.175],5)
 CreateCreature("JC_SKE01",[645.245],5)
 CreateCreature("JC_SKE02",[410.115],5)
@@ -346,12 +346,12 @@ SetGlobal("VestibuleQuest","GLOBAL",2)~EXIT
 
 CHAIN
 IF WEIGHT #-3~InParty("Edwin") InParty("CVSandr") GlobalLT("VestibuleQuest","GLOBAL",2)~THEN Bran Susp2
-~RED WIZARD! So, you have come to witness for yourself your handiwork! The evil arrives, but you shall fall before it enters through its unholy portal!~
-==CVSandrJ~Hold on, priest, do not judge a man just because of the robe he wears.~
-==EDWINJ_~Sandrah? You speak on my behalf (I'm glad this clever girl accompanies our simian leader)? What is going on that you accuse a representative of Thay in this way, man?~
-==Bran~An evil presence threatens the holiness of the vestibule! It seeks to destroy the Song of the Morning Temple! It is Thayan doing!~
-==CVSandrJ~You may be right in that Thay is at work here, but not the man in our company.~
-==Blane~If Mystra stands for that...but...there is no more time... It comes! Arm yourselves!~
+@77
+==CVSandrJ@78
+==EDWINJ_@79
+==Bran@80
+==CVSandrJ@81
+==Blane@82
 DO~CreateCreature("JC_DEM01",[540.175],5)
 CreateCreature("JC_SKE01",[645.245],5)
 CreateCreature("JC_SKE02",[410.115],5)

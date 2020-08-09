@@ -3,11 +3,12 @@
 BACKUP ~SandrahNPC/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Sandrah/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v2.05~
+VERSION ~v2.06~
 
 AUTO_TRA ~SandrahNPC/TRA/%s~
 
-LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/setup-Sandr.tra~
+LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/english/setup-Sandr.tra~
+LANGUAGE ~Russian~ ~russian~ ~SandrahNPC/TRA/russian/setup-Sandr.tra~
 
 BEGIN
 @1011
@@ -1883,7 +1884,7 @@ SAY NAME2 @1025
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~dw#cut1.bcs~ THEN BEGIN
-COMPILE ~SandrahNPC/werewolf~   USING  ~SandrahNPC/werewolf/english.tra~
+COMPILE ~SandrahNPC/werewolf~   USING  ~SandrahNPC/werewolf/%LANGUAGE%.tra~
 END
 
 COMPILE 
@@ -1920,9 +1921,9 @@ EXTEND_TOP ~BG2616.bcs~  ~SandrahNPC/Areas/haiasslater.baf~
     EXTEND_BOTTOM ~ar5202.bcs~ ~SandrahNPC/Pellig/haiass/hai/sub6.baf~
     EXTEND_BOTTOM ~ar5500.bcs~ ~SandrahNPC/Pellig/haiass/hai/sub7.baf~
 
-COMPILE ~SandrahNPC/Pellig/haiass/d/haiass.d~ USING ~SandrahNPC/TRA/Haiass.tra~
-COMPILE ~SandrahNPC/Pellig/haiass/d/haiasstob.d~ USING ~SandrahNPC/TRA/Haiasstob.tra~
-    COMPILE ~SandrahNPC/Pellig/haiass/scripts/haiass.baf~ USING ~SandrahNPC/TRA/Haiass.tra~
+COMPILE ~SandrahNPC/Pellig/haiass/d/haiass.d~ USING ~SandrahNPC/TRA/%LANGUAGE%/Haiass.tra~
+COMPILE ~SandrahNPC/Pellig/haiass/d/haiasstob.d~ USING ~SandrahNPC/TRA/%LANGUAGE%/Haiasstob.tra~
+    COMPILE ~SandrahNPC/Pellig/haiass/scripts/haiass.baf~ USING ~SandrahNPC/TRA/%LANGUAGE%/Haiass.tra~
     COMPILE ~SandrahNPC/Pellig/haiass/scripts/haiwolf.baf~
 
     COPY ~SandrahNPC/Pellig/haiass/itm/haiw1.itm~ ~override~
@@ -1944,7 +1945,7 @@ COMPILE ~SandrahNPC/Pellig/haiass/d/haiasstob.d~ USING ~SandrahNPC/TRA/Haiasstob
   SAY DESC @269
 
 
-COMPILE ~SandrahNPC/Pellig/haiass/hai/silhai.baf~ USING ~SandrahNPC/TRA/Silhai.tra~
+COMPILE ~SandrahNPC/Pellig/haiass/hai/silhai.baf~ USING ~SandrahNPC/TRA/%LANGUAGE%/Silhai.tra~
 COPY ~SandrahNPC/Pellig/haiass/eff~ ~override~
 
 COPY ~SandrahNPC/Pellig/haiass/itm/silhai.itm~ ~override/silhai.itm~
@@ -1959,7 +1960,7 @@ COMPILE ~SandrahNPC/Pellig/haiass/hai/hai1.baf~
   ~SandrahNPC/Pellig/haiass/hai/hai6.baf~
   ~SandrahNPC/Pellig/haiass/hai/hai7.baf~
   ~SandrahNPC/Pellig/haiass/hai/hai2.baf~
-  ~SandrahNPC/Pellig/haiass/hai/hai3.baf~ USING ~SandrahNPC/TRA/Hai2.tra~
+  ~SandrahNPC/Pellig/haiass/hai/hai3.baf~ USING ~SandrahNPC/TRA/%LANGUAGE%/Hai2.tra~
 COPY ~SandrahNPC/cre/hai1.cre~ ~override~
 
 
@@ -3046,8 +3047,8 @@ SAY NAME1 Samuel
 SAY NAME2 Samuel
 
 COPY ~SandrahNPC\CRE/CVORW2.CRE~ ~override\CVORW2.CRE~
-SAY NAME1 Orog                                                  
-SAY NAME2 Orog
+SAY NAME1 @1046
+SAY NAME2 @1046
 
 COPY ~SandrahNPC\CRE/CVIndi01.CRE~ ~override\CVIndi01.CRE~
 SAY NAME1 @421                                                  
@@ -3066,8 +3067,8 @@ SAY NAME1 @443
 SAY NAME2 @443
 
 COPY ~SandrahNPC\CRE/CVORW3.CRE~ ~override\CVORW3.CRE~      
-SAY NAME1 Orog
-SAY NAME2 Orog
+SAY NAME1 @1046
+SAY NAME2 @1046
 
 COPY ~SandrahNPC\CRE/CVHayn.CRE~ ~override\CVHayn.CRE~
 SAY NAME1 Haynalt
@@ -3409,8 +3410,8 @@ SAY NAME1 @804
 SAY NAME2 @804
 
 COPY ~SandrahNPC\CRE/CVWDBar7.CRE~ ~override\CVWDBar7.CRE~
-SAY NAME1 Barmaid
-SAY NAME2 Barmaid
+SAY NAME1 @1047
+SAY NAME2 @1047
 
 COPY ~SandrahNPC\CRE/CVRes1.CRE~ ~override\CVRes1.CRE~
 SAY NAME1 @944
@@ -3458,47 +3459,47 @@ SAY NAME2 @929
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Dog1.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/Dog1.CRE~ ~override\Dog1.CRE~
-SAY NAME1 Dog
-SAY NAME2 Dog
+SAY NAME1 @1048
+SAY NAME2 @1048
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Dog2.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/Dog2.CRE~ ~override\Dog2.CRE~
-SAY NAME1 Dog
-SAY NAME2 Dog
+SAY NAME1 @1048
+SAY NAME2 @1048
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Dog3.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/Dog3.CRE~ ~override\Dog3.CRE~
-SAY NAME1 Dog
-SAY NAME2 Dog
+SAY NAME1 @1048
+SAY NAME2 @1048
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BHOrc01.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/BHOrc01.CRE~ ~override\BHOrc01.CRE~
-SAY NAME1 Orc
-SAY NAME2 Orc
+SAY NAME1 @940
+SAY NAME2 @940
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~NKENSAI.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/NKENSAI.CRE~ ~override\NKENSAI.CRE~
-SAY NAME1 Kensai
-SAY NAME2 Kensai
+SAY NAME1 @1049
+SAY NAME2 @1049
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~IWDOrc1.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/IWDOrc1.CRE~ ~override\IWDOrc1.CRE~
-SAY NAME1 Orc
-SAY NAME2 Orc
+SAY NAME1 @940
+SAY NAME2 @940
 COPY ~SandrahNPC\CRE/IWDOrc2.CRE~ ~override\IWDOrc2.CRE~
-SAY NAME1 Orc
-SAY NAME2 Orc
+SAY NAME1 @940
+SAY NAME2 @940
 COPY ~SandrahNPC\CRE/IWDOrc3.CRE~ ~override\IWDOrc3.CRE~
-SAY NAME1 Orc
-SAY NAME2 Orc
+SAY NAME1 @940
+SAY NAME2 @940
 COPY ~SandrahNPC\CRE/IWDOrc4.CRE~ ~override\IWDOrc4.CRE~
-SAY NAME1 Orc
-SAY NAME2 Orc
+SAY NAME1 @940
+SAY NAME2 @940
 END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~FROSTGI.cre~ THEN BEGIN
@@ -3521,11 +3522,11 @@ END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Yeti1.cre~ THEN BEGIN
 COPY ~SandrahNPC\CRE/Yeti1.CRE~ ~override\Yeti1.CRE~
-SAY NAME1 Yeti
-SAY NAME2 Yeti
+SAY NAME1 @1050
+SAY NAME2 @1050
 COPY ~SandrahNPC\CRE/Yeti2.CRE~ ~override\Yeti2.CRE~
-SAY NAME1 Yeti
-SAY NAME2 Yeti
+SAY NAME1 @1050
+SAY NAME2 @1050
 END
 
 COPY ~SandrahNPC/Misc~ ~override~
@@ -3536,31 +3537,31 @@ COPY ~SandrahNPC/Misc2/Drow2ud.bmp~ ~override/ucmgmat.bmp~
 
 COPY ~SandrahNPC/Misc2/SANELM.2DA~ ~override/SANELM.2DA~
 REPLACE ~99990~ @134
-REPLACE ~99991~ @133
+REPLACE ~99991~ @60133
 
 COPY ~SandrahNPC/Misc2/Beach3.2DA~ ~override/Beach3.2DA~
 REPLACE ~ 99992~ @135
 REPLACE ~ 99993~ @136
 
 COPY ~SandrahNPC/Misc2/SanTiTr.2DA~ ~override/SanTiTr.2DA~
-REPLACE ~ 99996~ @155
-REPLACE ~ 99996~ @155
+REPLACE ~ 99996~ @60155
+REPLACE ~ 99996~ @60155
 
 COPY ~SandrahNPC/Misc2/SantowM.2DA~ ~override/SantowM.2DA~
 REPLACE ~ 99992~ @187
 REPLACE ~ 99993~ @187
 
 COPY ~SandrahNPC/Misc2/SanBhl.2DA~ ~override/SanBhl.2DA~
-REPLACE ~ 99992~ @358
-REPLACE ~ 99993~ @358
+REPLACE ~ 99992~ @60358
+REPLACE ~ 99993~ @60358
 
 COPY ~SandrahNPC/Misc2/SantowF.2DA~ ~override/SantowF.2DA~
 REPLACE ~ 99992~ @188
 REPLACE ~ 99993~ @188
 
 COPY ~SandrahNPC/Misc2/SANCLO.2DA~ ~override/SANCLO.2DA~
-REPLACE ~99990~ @213
-REPLACE ~99991~ @213
+REPLACE ~99990~ @60213
+REPLACE ~99991~ @60213
 
 COPY ~SandrahNPC/Misc2/ZomHom.2DA~ ~override/ZomHom.2DA~
 REPLACE ~ 99992~ @338
@@ -3571,8 +3572,8 @@ REPLACE ~ 99992~ @456
 REPLACE ~ 99993~ @456
 
 COPY ~SandrahNPC/Misc2/SharBa.2DA~ ~override/Sharba.2DA~
-REPLACE ~ 99992~ @350
-REPLACE ~ 99993~ @350
+REPLACE ~ 99992~ @60350
+REPLACE ~ 99993~ @60350
 
 COPY ~SandrahNPC/Misc2/Sangift.2DA~ ~override/Sangift.2DA~
 REPLACE ~ 99992~ @416
@@ -6073,7 +6074,7 @@ END ELSE BEGIN
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~JC_VS1.cre~ THEN BEGIN
-COMPILE ~SandrahNPC/Mods/Sanvault.d~ USING ~SandrahNPC/TRA/Sanvault.tra~
+COMPILE ~SandrahNPC/Mods/Sanvault.d~ USING ~SandrahNPC/TRA/%LANGUAGE%/Sanvault.tra~
 COPY ~SandrahNPC\Mods/SanVault.cre~ ~override\SanVault.cre~
 SAY NAME1 @704               
 SAY NAME2 @704
@@ -6255,8 +6256,8 @@ COMPILE ~SandrahNPC/Mods/CallistoSan.d~
 EXTEND_TOP                                        
 ~Callisto.bcs~ ~SandrahNPC/Mods/CallistoHeal.baf~
 COPY ~SandrahNPC/CRE/Cycsan1.CRE~ ~override/Cycsan1.CRE~
-     SAY NAME1 Cyclops
-     SAY NAME2 Cyclops
+     SAY NAME1 @1051
+     SAY NAME2 @1051
 PRINT ~ Callisto detected - installed Sandrah dialogues~
 END ELSE BEGIN
   PRINT ~Callisto not detected - skipped Sandrah part~
@@ -6360,7 +6361,7 @@ END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~ra4305.are~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/SanArenaFight.d~
-EXTEND_TOP ~ra4300.bcs~ ~SandrahNPC/Mods/ra4300San.baf~ USING ~SandrahNPC/TRA/arena.tra~
+EXTEND_TOP ~ra4300.bcs~ ~SandrahNPC/Mods/ra4300San.baf~ USING ~SandrahNPC/TRA/%LANGUAGE%/arena.tra~
 EXTEND_TOP ~ra4301.bcs~ ~SandrahNPC/Mods/ra4301San.baf~
 EXTEND_TOP ~ra4302.bcs~ ~SandrahNPC/Mods/ra4303San.baf~
 EXTEND_TOP ~StaffM11.bcs~ ~SandrahNPC/Mods/StaffM11.baf~
@@ -6406,8 +6407,8 @@ EXTEND_TOP
 COMPILE ~SandrahNPC/Mods/ArienaSanBG2.d~
 COMPILE ~SandrahNPC/Mods/CVRugg.d~
 COPY ~SandrahNPC/CRE/Cycsan2.CRE~ ~override/Cycsan2.CRE~
-     SAY NAME1 Cyclops
-     SAY NAME2 Cyclops
+     SAY NAME1 @1051
+     SAY NAME2 @1051
 PRINT ~ Ariena detected - Sandrah integrated~
 END ELSE BEGIN
   PRINT ~Ariena not detected - skipped Sandrah addition~
@@ -6982,7 +6983,7 @@ EXTEND_TOP
 EXTEND_TOP
 ~MWDolf.bcs~ ~SandrahNPC/Mods/KidoDolf.baf~
 COMPILE ~SandrahNPC/Mods/KidoSan.d~
-COMPILE ~SandrahNPC/Mods/CVCySacr.baf~
+COMPILE ~SandrahNPC/Mods/CVCySacr.baf~ USING ~SandrahNPC/TRA/%LANGUAGE%/setup-Sandr.tra~
 COPY ~SandrahNPC/Mods/Sanpre5.cre~ ~override/Sanpre5.cre~
      SAY NAME1 @755
      SAY NAME2 @755
@@ -7164,8 +7165,8 @@ SAY NAME1 Viconia
 SAY NAME2 Viconia
 
 COPY ~SandrahNPC\Mods/CVSCUTPC.cre~ ~override~
-SAY NAME1 Peasant
-SAY NAME2 Peasant
+SAY NAME1 @1052
+SAY NAME2 @1052
 
 COPY ~SandrahNPC\Mods/CVSare.are~ ~override~
 
@@ -7972,16 +7973,16 @@ ACTION_IF FILE_EXISTS_IN_GAME ~YASRA25P.dlg~ THEN BEGIN
 COMPILE ~SandrahNPC/ToB/YasraRTF.d~
 END
 
-PRINT ~Installed Sandrah Return To Faerun Transition~
+PRINT @1045
 
 BEGIN
-~Sandrah EET additions~
+@1044
 
 COPY  ~SandrahNPC/EET~ ~override~
 
 COPY ~SandrahNPC/mveeet~ ~movies~
 
-ADD_JOURNAL @11 @12 @13 @17 @21 @42 @58 @70 @71 @73 @76 @90 @104 @105 @108 @111 @117 @127 @132 @133 @148 @155 @175 @186 @200 @212 @213 @238 @349 @350 @358 @359 @466 @468 @469 @470 @489 @520 @576 @590 @591 @640 @681 @682 @700 @740 @752 @781 @810 @904 @906 @907 @922 @923 @924 @925 @926 @927 @931 @932 @955 @968 @970 @972 @973 @978 USING ~SandrahNPC/TRA/setup-Sandr.tra~
+ADD_JOURNAL @60011 @60012 @60013 @60017 @60021 @60042 @60048 @60058 @60070 @60071 @60073 @60076 @60077 @60090 @60104 @60105 @108 @60111 @60117 @60127 @60132 @60133 @60148 @60155 @60175 @60186 @60200 @60212 @60213 @600238 @60349 @60350 @60358 @60359 @60458 @466 @468 @469 @470 @489 @520 @576 @590 @591 @640 @681 @682 @60700 @740 @752 @781 @810 @60904 @60906 @60907 @922 @923 @924 @925 @926 @927 @60931 @60932 @60955 @968 @970 @972 @973 @60978 USING ~SandrahNPC/TRA/%LANGUAGE%/setup-Sandr.tra~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~M_K#EET.lua~ THEN BEGIN
 
@@ -8462,7 +8463,7 @@ REPLACE_CRE_ITEM ~blun37~ #0 #0 #0 ~NONE~ ~WEAPON1~
 REPLACE_CRE_ITEM ~leat05~ #0 #0 #0 ~NONE~ ~ARMOR~
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~d0oasis9.spl~ THEN BEGIN
-COMPILE ~SandrahNPC/oasis/amtgen01.d~ USING   ~SandrahNPC/oasis/oasis.tra~
+COMPILE ~SandrahNPC/oasis/amtgen01.d~ USING   ~SandrahNPC/oasis/oasis-%LANGUAGE%.tra~
 COMPILE ~SandrahNPC/oasis/d0hosti.baf~
 COPY_EXISTING ~AR6300.ARE~ ~override~
    REPLACE_TEXTUALLY ~HOSTILE~ ~D0HOSTI~ (8)
@@ -8552,7 +8553,7 @@ COPY_EXISTING ~oh9360.ARE~ ~override~
     fj_name           = InPit
   END
 
-PRINT ~Black Pits access from Waterdeep added~
+PRINT @1043
 
 ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
@@ -8580,14 +8581,14 @@ EXTEND_TOP
 EXTEND_TOP
 ~id9400.BCS~ ~SandrahNPC/IWD/id9400dwarf.baf~
 COPY_EXISTING ~bedd1.cre~ ~override/CVdedwa.cre~
-SAY NAME1 ~Dead Dwarf~
-SAY NAME2 ~Dead Dwarf~
+SAY NAME1 @1041
+SAY NAME2 @1041
 COPY_EXISTING ~Belhif.cre~ ~override~
 SAY NAME1 ~Orlex~
 SAY NAME2 ~Orlex~
 PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
-  PRINT ~IWD not detected - skipped ~
+  PRINT @1042
 END
 
 INCLUDE ~SandrahNPC/lib/qd_multiclass.tpa~

@@ -171,7 +171,7 @@ Global("Chapter","Global",14)
 THEN
 RESPONSE #100
 SetGlobal("BodiAppear","GLOBAL",0) 
-EraseJournalEntry(@978)
+EraseJournalEntry(@60978)
 Continue()
 END
 

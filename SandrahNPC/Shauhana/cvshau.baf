@@ -72,7 +72,7 @@ AreaCheck("ar3520")
 THEN
 RESPONSE #100
 SetGlobal("SanShauMeet","GLOBAL",4)
-EraseJournalEntry(@349)
+EraseJournalEntry(@60349)
 END
 
 IF

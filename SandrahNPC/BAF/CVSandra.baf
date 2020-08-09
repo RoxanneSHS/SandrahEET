@@ -1709,7 +1709,7 @@ Global("SanBranJoined","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("SanBranJoined","GLOBAL",1)
-EraseJournalEntry(@11)
+EraseJournalEntry(@60011)
 MoveToObject(Player1)
 Interact("CVSandr")
 END
@@ -2194,7 +2194,7 @@ PartyHasItem("SCRLALZ")
 InParty("CVSandr")
 THEN
 RESPONSE #100
-AddJournalEntry(@13,QUEST)
+AddJournalEntry(@60013,QUEST)
 SetGlobal("ScrlalzT","GLOBAL",1)
 END
 
@@ -2334,7 +2334,7 @@ StartCutSceneMode()
                 EndCutSceneMode()
                 SetGlobal("NarPortFound","GLOBAL",1)
                 SetGlobal("EnterNar","GLOBAL",1)
-		AddJournalEntry(@48,QUEST)
+		AddJournalEntry(@60048,QUEST)
 
 END
 
@@ -2582,7 +2582,7 @@ ClearAllActions()
 SmallWait(2)
 SetInterrupt(FALSE)
 TextScreen("SanElm")
-AddJournalEntry(@133,QUEST_DONE)
+AddJournalEntry(@60133,QUEST_DONE)
 END
 
 //Trigger Garrick
@@ -3652,8 +3652,8 @@ PartyHasItem("SanHenHu")
 THEN
 RESPONSE #100
 SetGlobal("OrcPrison","GLOBAL",13)
-EraseJournalEntry(@186)
-EraseJournalEntry(@955)
+EraseJournalEntry(@60186)
+EraseJournalEntry(@60955)
 END
 
 IF
@@ -8049,8 +8049,8 @@ DestroyItem("sanwi3")
 Wait(2)
 GiveItemCreate("sanwif",Player1,0,0,0)
 AddexperienceParty(7050)
-AddJournalEntry(@213,QUEST)
-EraseJournalEntry(@148)
+AddJournalEntry(@60213,QUEST)
+EraseJournalEntry(@60148)
 EndCutSceneMode()
 END
 
@@ -8184,12 +8184,12 @@ IF
 Global("Formedcloth","GLOBAL",20)
 THEN
 RESPONSE #100
-EraseJournalEntry(@90)
-EraseJournalEntry(@155)
-EraseJournalEntry(@200)
-EraseJournalEntry(@238)
-EraseJournalEntry(@213)
-AddJournalEntry(@359,QUEST_DONE)
+EraseJournalEntry(@60090)
+EraseJournalEntry(@60155)
+EraseJournalEntry(@60200)
+EraseJournalEntry(@600238)
+EraseJournalEntry(@60213)
+AddJournalEntry(@60359,QUEST_DONE)
 AddexperienceParty(10500)
 SetGlobal("Formedcloth","GLOBAL",21)
 RealSetGlobalTimer("SanImoBHScrl","LOCALS",7500)
@@ -8299,7 +8299,7 @@ ClearAllActions()
 SmallWait(2)
 SetInterrupt(FALSE)
 TextScreen("SanTiTr")
-AddJournalEntry(@200,QUEST)
+AddJournalEntry(@60200,QUEST)
 END
 
 

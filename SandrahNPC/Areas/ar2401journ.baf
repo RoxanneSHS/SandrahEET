@@ -2,7 +2,7 @@ IF
 Global("SanJour","Ar2401",0)
 THEN
 RESPONSE #100
-EraseJournalEntry(@700)
-EraseJournalEntry(@350)
+EraseJournalEntry(@60700)
+EraseJournalEntry(@60350)
 SetGlobal("SanJour","Ar2401",1)
 END
