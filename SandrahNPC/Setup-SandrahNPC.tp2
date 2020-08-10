@@ -2733,20 +2733,20 @@ SAY NAME1 @1040
 SAY NAME2 @1040
 
 COPY ~SandrahNPC\CRE/kattah.cre~ ~override\kattah.cre~
-SAY NAME1 Khattark
-SAY NAME2 Khattark
+SAY NAME1 @1054 
+SAY NAME2 @1054
 
 COPY ~SandrahNPC\CRE/CVShaBab.cre~ ~override\CVShaBab.cre~
-SAY NAME1 Shar-Teel
-SAY NAME2 Shar-Teel
+SAY NAME1 @1055
+SAY NAME2 @1055
 
 COPY ~SandrahNPC\CRE/CVShaBa2.cre~ ~override\CVShaBa2.cre~
-SAY NAME1 Shar-Teel
-SAY NAME2 Shar-Teel
+SAY NAME1 @1055
+SAY NAME2 @1055
 
 COPY ~SandrahNPC\CRE/CVShacom.cre~ ~override\CVShacom.cre~
-SAY NAME1 Shar-Teel
-SAY NAME2 Shar-Teel
+SAY NAME1 @1055
+SAY NAME2 @1055
 
 COPY ~SandrahNPC\CRE/maitrde.cre~ ~override\maitrde.cre~
 SAY NAME1 @109
@@ -2761,24 +2761,24 @@ SAY NAME1 @156
 SAY NAME2 @156
 
 COPY ~SandrahNPC\CRE/Shopkn.CRE~ ~override/Shopkn.CRE~
-SAY NAME1 Henning
-SAY NAME2 Henning
+SAY NAME1 @1056
+SAY NAME2 @1056
 
 COPY ~SandrahNPC\CRE/Shopknhu.CRE~ ~override/Shopknhu.CRE~
-SAY NAME1 Henning
-SAY NAME2 Henning
+SAY NAME1 @1056
+SAY NAME2 @1056
 
 COPY ~SandrahNPC\CRE/cvhenni.CRE~ ~override/cvhenni.CRE~
-SAY NAME1 Henning
-SAY NAME2 Henning
+SAY NAME1 @1056
+SAY NAME2 @1056
 
 COPY ~SandrahNPC\CRE/jopi.cre~ ~override\jopi.cre~
-SAY NAME1 Jopi
-SAY NAME2 Jopi
+SAY NAME1 @1057
+SAY NAME2 @1057
 
 COPY ~SandrahNPC\CRE/Rellruk.cre~ ~override\Rellruk.cre~
-SAY NAME1 Rellruk
-SAY NAME2 Rellruk
+SAY NAME1 @1058
+SAY NAME2 @1058
 
 COPY ~SandrahNPC\CRE/saogma.cre~ ~override\saogma.cre~
 SAY NAME1 @191
@@ -2805,16 +2805,16 @@ SAY NAME1 @230
 SAY NAME2 @230 
 
 COPY ~SandrahNPC\CRE/SANPETA.CRE~ ~override\SANPETA.CRE~
-SAY NAME1 Petana
-SAY NAME2 Petana
+SAY NAME1 @1059
+SAY NAME2 @1059
 
 COPY ~SandrahNPC\CRE/SANwinth.CRE~ ~override\SANwinth.CRE~
-SAY NAME1 Winthrop
-SAY NAME2 Winthrop
+SAY NAME1 @1060
+SAY NAME2 @1060
 
 COPY ~SandrahNPC\CRE/CVKNAW.CRE~ ~override\CVKNAW.CRE~
-SAY NAME1 Knowlod
-SAY NAME2 Knuwlod
+SAY NAME1 @1061
+SAY NAME2 @1061
 
 COPY ~SandrahNPC\CRE/CVPIRZ.CRE~ ~override\CVPIRZ.CRE~
 SAY NAME1 @325
@@ -2845,8 +2845,8 @@ SAY NAME1 @333
 SAY NAME2 @333
 
 COPY ~SandrahNPC\CRE/sanboy1.cre~ ~override\sanboy1.cre~
-SAY NAME1 Giran
-SAY NAME2 Giran
+SAY NAME1 @1062
+SAY NAME2 @1062
 
 COPY ~SandrahNPC\CRE/sahobwiz.cre~ ~override\sahobwiz.cre~
 SAY NAME1 @412
@@ -2877,8 +2877,8 @@ SAY NAME1 @938
 SAY NAME2 @938
 
 COPY ~SandrahNPC\CRE/SANKAH.CRE~ ~override\SANKAH.CRE~
-SAY NAME1 Wrarkh
-SAY NAME2 Wrarkh
+SAY NAME1 @1063
+SAY NAME2 @1063
 
 COPY ~SandrahNPC\CRE/CVTravi.CRE~ ~override\CVTravi.CRE~
 SAY NAME1 @255
@@ -2913,12 +2913,12 @@ SAY NAME1 @780
 SAY NAME2 @780
 
 COPY ~SandrahNPC\CRE/SanMyst.CRE~ ~override\SanMyst.CRE~
-SAY NAME1 Mystra
-SAY NAME2 Mystra
+SAY NAME1 @1064
+SAY NAME2 @1064
 
 COPY ~SandrahNPC\CRE/SanMysx.CRE~ ~override\SanMysx.CRE~
-SAY NAME1 Mystra
-SAY NAME2 Mystra
+SAY NAME1 @1064
+SAY NAME2 @1064
 
 COPY ~SandrahNPC\CRE/CVDaRa.CRE~ ~override\CVDaRa.CRE~
 SAY NAME1 @382
@@ -2969,12 +2969,12 @@ SAY NAME1 @280
 SAY NAME2 @280
 
 COPY ~SandrahNPC\CRE/CVTiamal.CRE~ ~override\CVTiamal.CRE~
-SAY NAME1 Tiamat
-SAY NAME2 Tiamat
+SAY NAME1 @1065
+SAY NAME2 @1065
 
 COPY ~SandrahNPC\CRE/CVSharg.CRE~ ~override\CVSharg.CRE~
-SAY NAME1 Shar
-SAY NAME2 Shar
+SAY NAME1 @1066
+SAY NAME2 @1066
 
 COPY ~SandrahNPC/Cre/CVQidrn.CRE~ ~override/CVQidrn.CRE~
 SAY NAME1 @563
@@ -3011,16 +3011,16 @@ SAY NAME1 @194
 SAY NAME2 @194
 
 COPY ~SandrahNPC\CRE/CVAjab.CRE~ ~override\CVAjab.CRE~
-SAY NAME1 Mirtco
-SAY NAME2 Mirtco
+SAY NAME1 @1067
+SAY NAME2 @1067
 
 COPY ~SandrahNPC\CRE/CVAjam.CRE~ ~override\CVAjam.CRE~
-SAY NAME1 Roedger
-SAY NAME2 Roedger
+SAY NAME1 @1068
+SAY NAME2 @1068
 
 COPY ~SandrahNPC\CRE/SANORWI.CRE~ ~override\SANORWI.CRE~
-SAY NAME1 Hugnot
-SAY NAME2 Hugnot
+SAY NAME1 @1069
+SAY NAME2 @1069
 
 COPY ~SandrahNPC\CRE/sanstat.CRE~ ~override\sanstat.CRE~
 SAY NAME1 @217
@@ -3031,20 +3031,20 @@ SAY NAME1 @236
 SAY NAME2 @236
 
 COPY ~SandrahNPC\CRE/CVMonte.CRE~ ~override\CVMonte.CRE~
-SAY NAME1 Monteelah
-SAY NAME2 Monteelah
+SAY NAME1 @1070
+SAY NAME2 @1070
 
 COPY ~SandrahNPC\CRE/CVMonte2.CRE~ ~override\CVMonte2.CRE~
-SAY NAME1 Monteelah
-SAY NAME2 Monteelah
+SAY NAME1 @1070
+SAY NAME2 @1070
 
 COPY ~SandrahNPC\CRE/CVORW1.CRE~ ~override\CVORW1.CRE~
-SAY NAME1 Razzok
-SAY NAME2 Razzok
+SAY NAME1 @1071
+SAY NAME2 @1071
 
 COPY ~SandrahNPC\CRE/CVsamhu.CRE~ ~override\CVsamhu.CRE~
-SAY NAME1 Samuel
-SAY NAME2 Samuel
+SAY NAME1 @1072
+SAY NAME2 @1072
 
 COPY ~SandrahNPC\CRE/CVORW2.CRE~ ~override\CVORW2.CRE~
 SAY NAME1 @1046
@@ -3071,16 +3071,16 @@ SAY NAME1 @1046
 SAY NAME2 @1046
 
 COPY ~SandrahNPC\CRE/CVHayn.CRE~ ~override\CVHayn.CRE~
-SAY NAME1 Haynalt
-SAY NAME2 Haynalt
+SAY NAME1 @1073
+SAY NAME2 @1073
 
 COPY ~SandrahNPC\CRE/travmag.CRE~ ~override\travmag.CRE~
 SAY NAME1 @260
 SAY NAME2 @260
 
 COPY ~SandrahNPC\CRE/CVIZZY.CRE~ ~override\CVIZZY.CRE~
-SAY NAME1 Isobel
-SAY NAME2 Izzy
+SAY NAME1 @1074
+SAY NAME2 @1075
 
 COPY ~SandrahNPC\CRE/CVREVI.CRE~ ~override\CVREVI.CRE~
 SAY NAME1 @264
@@ -3149,12 +3149,12 @@ SAY NAME1 @462
 SAY NAME2 @462
 
 COPY ~SandrahNPC\CRE/CVLeyG.CRE~ ~override\CVLeyG.CRE~
-SAY NAME1 Leyala
-SAY NAME2 Leyala
+SAY NAME1 @1076
+SAY NAME2 @1076
 
 COPY ~SandrahNPC\CRE/CVSafCit.CRE~ ~override\CVSafCit.CRE~
-SAY NAME1 Finngur
-SAY NAME2 Finngur
+SAY NAME1 @1077
+SAY NAME2 @1077
 
 COPY ~SandrahNPC\CRE/CVSafgua.CRE~ ~override\CVSafgua.CRE~
 SAY NAME1 @446
@@ -3173,8 +3173,8 @@ SAY NAME1 @448
 SAY NAME2 @448
 
 COPY ~SandrahNPC\CRE/CVCyr01.CRE~ ~override\CVCyr01.CRE~
-SAY NAME1 Emcyric
-SAY NAME2 Emcyric
+SAY NAME1 @1078
+SAY NAME2 @1078
 
 COPY ~SandrahNPC\CRE/CVBANDF1.CRE~ ~override\CVBANDF1.CRE~
 SAY NAME1 @490
@@ -3249,8 +3249,8 @@ SAY NAME1 @805
 SAY NAME2 @805
 
 COPY ~SandrahNPC\CRE/cvtalos.cre~ ~override\cvtalos.cre~
-SAY NAME1 Talos
-SAY NAME2 Talos
+SAY NAME1 @1079
+SAY NAME2 @1079
 
 COPY ~SandrahNPC\CRE/Shandals.cre~ ~override\Shandals.cre~
 SAY NAME1 @691
@@ -3291,8 +3291,8 @@ SAY NAME1 @524
 SAY NAME2 @524
 
 COPY ~SandrahNPC\CRE/cvreag.cre~ ~override\cvreag.cre~
-SAY NAME1 Reagan
-SAY NAME2 Reagan
+SAY NAME1 @1080
+SAY NAME2 @1080
 
 COPY ~SandrahNPC\CRE/cvcoper.cre~ ~override\cvcoper.cre~
 SAY NAME1 @777
@@ -3339,12 +3339,12 @@ SAY NAME1 @540
 SAY NAME2 @540
 
 COPY ~SandrahNPC\CRE/CVHaeSar.CRE~ ~override\CVHaeSar.CRE~
-SAY NAME1 Sarevok
-SAY NAME2 Sarevok
+SAY NAME1 @1081
+SAY NAME2 @1081
 
 COPY ~SandrahNPC\CRE/CVBoamb.CRE~ ~override\CVBoamb.CRE~
-SAY NAME1 Bodhi
-SAY NAME2 Bodhi
+SAY NAME1 @1082
+SAY NAME2 @1082
 
 COPY ~SandrahNPC\CRE/CVSuelf.CRE~ ~override\CVSuelf.CRE~
 SAY NAME1 @543
@@ -3367,11 +3367,11 @@ SAY NAME1 @863
 SAY NAME2 @863
 
 COPY ~SandrahNPC\CRE/Sangori.CRE~ ~override\Sangori.CRE~
-SAY NAME1 Gorion
-SAY NAME2 Gorion
+SAY NAME1 @1083
+SAY NAME2 @1083
 COPY ~SandrahNPC\CRE/Sangor2.CRE~ ~override\Sangor2.CRE~
-SAY NAME1 Gorion
-SAY NAME2 Gorion
+SAY NAME1 @1083
+SAY NAME2 @1083
 
 COPY ~SandrahNPC\CRE/CVTaloa.CRE~ ~override\CVTaloa.CRE~
 SAY NAME1 @703
@@ -3422,12 +3422,12 @@ SAY NAME1 @944
 SAY NAME2 @944
 
 COPY ~SandrahNPC\CRE/CVRes3.CRE~ ~override\CVRes3.CRE~
-SAY NAME1 Garcon
-SAY NAME2 Garcon
+SAY NAME1 @1084
+SAY NAME2 @1084
 
 COPY ~SandrahNPC\CRE/CVRes4.CRE~ ~override\CVRes4.CRE~
-SAY NAME1 Coq
-SAY NAME2 Coq
+SAY NAME1 @1085
+SAY NAME2 @1085
 
 COPY ~SandrahNPC\CRE/SanKaBa.CRE~ ~override\SanKaBa.CRE~
 SAY NAME1 @782
@@ -3704,8 +3704,8 @@ SAY DESC @86
 SAY 0xce Sandrah
 
 COPY ~SandrahNPC/ITM/Misc13L.itm~ ~override/Misc13L.itm~
-SAY NAME1 Samuel
-SAY NAME2 Samuel
+SAY NAME1 @1072
+SAY NAME2 @1072
 SAY DESC @641
 
 COPY ~SandrahNPC/ITM/Sandoll.itm~ ~override/Sandoll.itm~
@@ -4343,8 +4343,8 @@ COPY_EXISTING ~ogreunsh.cre~ ~override/ogreunsh.cre~
 COMPILE  ~SandrahNPC/BAF/ogreunsh.baf~
 
 COPY_EXISTING ~Boy1.CRE~ ~override/Boy1.CRE~
-   SAY NAME1 Lorant
-   SAY NAME2 Lorant
+   SAY NAME1 @1086
+   SAY NAME2 @1086
    
 COPY_EXISTING ~hobjoia.cre~ ~override~
 WRITE_SHORT 0x14 600 
@@ -4725,7 +4725,7 @@ COPY_EXISTING ~inn3351.sto~ ~override~
 WRITE_LONG 0x5c 12 
 BUT_ONLY
   
-PRINT ~Installed Sandrah Shops~ 
+PRINT ~Installed Sandrah Shops~
 
 BEGIN
 ~Sandrah Movies and Sounds~
@@ -5876,8 +5876,8 @@ COMPILE ~SandrahNPC/Mods/BSufinch.d~
 COMPILE ~SandrahNPC/Mods/CVFinch.d~
 COMPILE ~SandrahNPC/Mods/CVFinch.baf~
 COPY ~SandrahNPC/Mods/CVFinch.cre~ ~override/CVFinch.cre~
-     SAY NAME1 Finch
-     SAY NAME2 Finch
+     SAY NAME1 @1053
+     SAY NAME2 @1053
 EXTEND_TOP
 ~bg2600.BCS~ ~SandrahNPC/Mods/ar0015finch.baf~
 END
@@ -5967,8 +5967,8 @@ ACTION_IF FILE_EXISTS_IN_GAME ~C#Q05001.cre~ THEN BEGIN
 COPY_EXISTING ~C#Q05001.cre~ ~override/C#Q05001.cre~
               WRITE_ASCII 0x34 ~cvdauros~
 COPY ~SandrahNPC\Mods/CVdauro.cre~ ~override\CVdauro.cre~
-SAY NAME1 Dauron
-SAY NAME2 Dauron
+SAY NAME1 @1087
+SAY NAME2 @1087
 COMPILE ~SandrahNPC/Mods/CVDauro.d~
 COMPILE ~SandrahNPC/Mods/CVDauro.baf~
 COMPILE ~SandrahNPC/Mods/CVDauroDem.d~
@@ -6046,8 +6046,8 @@ COMPILE ~SandrahNPC/Mods/DarkHorSan.d~
 EXTEND_TOP ~cm3376.bcs~ ~SandrahNPC/Areas/cm3376golman.baf~
 EXTEND_TOP ~ar1001.bcs~ ~SandrahNPC/Mods/ar1001.baf~
 COPY_EXISTING ~cmsec08.cre~ ~override/cvwetler.cre~
-              SAY NAME1 Wetler
-              SAY NAME2 Wetler
+              SAY NAME1 @1088
+              SAY NAME2 @1088
               WRITE_ASCII 0x280 ~cvwetler~
 COPY_EXISTING ~cmsec03.cre~ ~override~
               WRITE_ASCII 0x250 ~initgolv~
@@ -6274,8 +6274,8 @@ END
 
 COMPILE ~SandrahNPC/Mods/AuroraSan.d~
 COPY ~SandrahNPC/CRE/CVCedri.CRE~ ~override~
-     SAY NAME1 Cedric
-     SAY NAME2 Cedric
+     SAY NAME1 @1089
+     SAY NAME2 @1089
 EXTEND_TOP ~bg4803.bcs~  ~SandrahNPC/Areas/bg4803Ced.baf~
 
 ACTION_IF FILE_EXISTS_IN_GAME ~R!Kit15.CRE~ THEN BEGIN
@@ -6425,8 +6425,8 @@ COMPILE ~SandrahNPC/D/Cultsa7.d~
 COMPILE ~SandrahNPC/BAF/Cultsa7.baf~
 
 COPY ~SandrahNPC\CRE/CVCultGi.cre~ ~override\CVCultGi.cre~
-SAY NAME1 Renata
-SAY NAME2 Renata
+SAY NAME1 @1090
+SAY NAME2 @1090
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Sdnpcsw3.itm~ THEN BEGIN
 COPY ~SandrahNPC/ITM/Sdnpcsw3.itm~ ~override/Sdnpcsw3.itm~
@@ -7133,36 +7133,36 @@ END
 //Sarevok Defeat revisited
 
 COPY ~SandrahNPC\Mods/CVSCUTAN.cre~ ~override~
-SAY NAME1 Angelo
-SAY NAME2 Angelo
+SAY NAME1 @1091
+SAY NAME2 @1091
 
 COPY ~SandrahNPC\Mods/CVSCUTSA.cre~ ~override~
-SAY NAME1 Sarevok
-SAY NAME2 Sarevok
+SAY NAME1 @1081
+SAY NAME2 @1081
 
 COPY ~SandrahNPC\Mods/CVSCUTTA.cre~ ~override~
-SAY NAME1 Tazok
-SAY NAME2 Tazok
+SAY NAME1 @1092
+SAY NAME2 @1092
 
 COPY ~SandrahNPC\Mods/CVSCUTSE.cre~ ~override~
-SAY NAME1 Semaj
-SAY NAME2 Semaj
+SAY NAME1 #19592
+SAY NAME2 #19592
 
 COPY ~SandrahNPC\Mods/CVSCUTIM.cre~ ~override~
-SAY NAME1 Imoen
-SAY NAME2 Imoen
+SAY NAME1 #16453
+SAY NAME2 #16453
 
 COPY ~SandrahNPC\Mods/CVSCUTJH.cre~ ~override~
-SAY NAME1 Jaheira
-SAY NAME2 Jaheira
+SAY NAME1 #9475
+SAY NAME2 #9475
 
 COPY ~SandrahNPC\Mods/CVSCUTMN.cre~ ~override~
-SAY NAME1 Minsc
-SAY NAME2 Minsc
+SAY NAME1 #9482
+SAY NAME2 #9482
 
 COPY ~SandrahNPC\Mods/CVSCUTVC.cre~ ~override~
-SAY NAME1 Viconia
-SAY NAME2 Viconia
+SAY NAME1 #6132
+SAY NAME2 #6132
 
 COPY ~SandrahNPC\Mods/CVSCUTPC.cre~ ~override~
 SAY NAME1 @1052
@@ -7187,13 +7187,13 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVSandr.dlg~ THEN BEGIN
 END
 
 COPY ~SandrahNPC/Shauhana/CVShau.cre~ ~override/CVShau.cre~
-SAY NAME1 Shauhana
-SAY NAME2 Shauhana
+SAY NAME1 @1093
+SAY NAME2 @1093
 SAY BIO @673
 
 COPY ~SandrahNPC/Shauhana/CVShauq.cre~ ~override/CVShauq.cre~
-SAY NAME1 Shauhana
-SAY NAME2 Shauhana
+SAY NAME1 @1093
+SAY NAME2 @1093
 SAY BIO @673
 
 COPY ~SandrahNPC/Shauhana/Shau4L.bmp~ ~override/Shau4L.bmp~
@@ -7387,8 +7387,8 @@ SAY NAME1 @650
 SAY NAME2 @650
 
 COPY ~SandrahNPC/Shauhana/CVMinsc.CRE~ ~override/CVMinsc.CRE~
-SAY NAME1 Minsc
-SAY NAME2 Minsc
+SAY NAME1 #9482
+SAY NAME2 #9482
 
 COPY ~SandrahNPC/Cre/CVMoose.CRE~ ~override\CVMoose.CRE~
 SAY NAME1 @658
@@ -7482,8 +7482,8 @@ COPY ~SandrahNPC/Shauhana/cvdra24.eff~ ~override/cvdra24.eff~
 COPY ~SandrahNPC/Shauhana/cvdra24.bam~ ~override/cvdra24.bam~
 
 COPY ~SandrahNPC/Shauhana/CVBootlk.CRE~ ~override/CVBootlk.CRE~
-SAY NAME1 Boo
-SAY NAME2 Boo
+SAY NAME1 @1094
+SAY NAME2 @1094
 COPY ~SandrahNPC/Shauhana/BOOS.BMP~ ~override/BOOS.BMP~
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~Boo.dlg~ THEN BEGIN
 COMPILE  ~SandrahNPC/Mods/boo.d~
@@ -8134,8 +8134,8 @@ COPY_EXISTING ~bdfist30.cre~ ~override/bdfists1.cre~
 WRITE_ASCII 0x280 ~bdfists1~
 
 COPY ~SandrahNPC\sod/CVBrage.CRE~ ~override~
-SAY NAME1 Brage
-SAY NAME2 Brage
+SAY NAME1 #6225
+SAY NAME2 #6225
 
 COPY_EXISTING ~skie6.cre~ ~override/cvskie.cre~
 
@@ -8404,16 +8404,16 @@ COMPILE ~SandrahNPC/Mods/dw2mc3ge.baf~
 END
 
 COPY ~SandrahNPC\CRE/cvshar1.cre~ ~override~
-SAY NAME1 Sharlene
-SAY NAME2 Sharlene
+SAY NAME1 @1095
+SAY NAME2 @1095
 
 COPY ~SandrahNPC\CRE/BPLLYRK.CRE~ ~override~
-SAY NAME1 Llyrk
-SAY NAME2 Llyrk
+SAY NAME1 #229099
+SAY NAME2 #229099
 
 COPY ~SandrahNPC/ITM/CVOGscr.itm~ ~override~
-SAY NAME1 Letter
-SAY NAME2 Letter
+SAY NAME1 #13195
+SAY NAME2 #13195
 SAY DESC @966
 
 COPY ~SandrahNPC/SoD/CVSkiDa.itm~ ~override~

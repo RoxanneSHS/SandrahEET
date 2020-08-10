@@ -1,3 +1,8 @@
+VERSION 2.06
+-----------------
+Traified version
+2020 improvements
+
 VERSION 2.05
 -----------------
 Made Sandrah romance less restrictive
