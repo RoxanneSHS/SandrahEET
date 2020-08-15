@@ -7,5 +7,5 @@ ForceSpell(Myself,WIZARD_CHAOS_VISUALS_ONLY)
 ActionOverride("Lizzy",ReallyForceSpellRES("sppr429",Myself))
 SetGlobal("SpokeToLizzy","GLOBAL",3)
 SetGlobal("Itemtalfre","GLOBAL",1)
-DisplayStringWait(Player1,@137)
+DisplayStringWait(Player1,@60137)
 END
