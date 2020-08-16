@@ -192,7 +192,7 @@ END
 CHAIN
 IF~~THEN JONEL25J SanIn
 @128DO ~IncrementGlobal("ConvinceBalth","GLOBAL",2)~
-==JONEL25J IF ~G("lrHasSoulStone",0)G("AcceptIlmater",0)G("lrBaltSoul",1)~THEN@129@129
+==JONEL25J IF ~G("lrHasSoulStone",0)G("AcceptIlmater",0)G("lrBaltSoul",1)~THEN@129
 ==BALTH@130
 ==CVSan25J@131
 ==BALTH@132
