@@ -2503,8 +2503,8 @@ BEGIN
 @1031
 
 COPY ~SandrahNPC\CRE/Sandrah.cre~ ~override\Sandrah.cre~
-SAY NAME1 Sandrah
-SAY NAME2 Sandrah
+SAY NAME1 @1032
+SAY NAME2 @1032
 WRITE_SHORT 0x244 0
 WRITE_SHORT   0x246 0x4000 + ~%CVMystra%~
 
@@ -8572,8 +8572,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~id9100.BCS~ ~SandrahNPC/IWD/id9100reset.baf~
 COPY ~SandrahNPC\IWD/CViwdguy.cre~ ~override~
-SAY NAME1 Churin
-SAY NAME2 Churin
+SAY NAME1 @1096
+SAY NAME2 @1096
 EXTEND_TOP
 ~id9101.BCS~ ~SandrahNPC/IWD/id9101Iront.baf~
 EXTEND_TOP
@@ -8584,8 +8584,8 @@ COPY_EXISTING ~bedd1.cre~ ~override/CVdedwa.cre~
 SAY NAME1 @1041
 SAY NAME2 @1041
 COPY_EXISTING ~Belhif.cre~ ~override~
-SAY NAME1 ~Orlex~
-SAY NAME2 ~Orlex~
+SAY NAME1 @1097
+SAY NAME2 @1097
 PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT @1042
