@@ -5856,10 +5856,10 @@ END
 
 ACTION_IF NOT FILE_EXISTS_IN_GAME ~BSola.dlg~ THEN BEGIN
 APPEND ~interdia.2da~
-~Sola BSola BSola25 ~
+~Sola BSola BSola ~
 UNLESS ~Sola~
 APPEND ~interdia.2da~
-~Solaufein BSola BSola25 ~
+~Solaufein BSola BSola ~
 UNLESS ~Solaufein~
 COMPILE  ~SandrahNPC/Mods/BSola.d~
 END
@@ -6457,20 +6457,10 @@ SAY UNIDENTIFIED_DESC @481
 SAY DESC @482
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~Sola12.cre~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~Sola10.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/SolaufSan.d~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC/Mods/SolaufSan.baf~
-COPY_EXISTING ~UDSola01.CRE~ ~override/UDSola01.CRE~
-              ~UDSola02.CRE~ ~override/UDSola02.CRE~
-              ~Sola10.CRE~ ~override/Sola10.CRE~
-              ~Sola12.CRE~ ~override/Sola12.CRE~
-              ~Sola15.CRE~ ~override/Sola15.CRE~
-              ~Sola17.CRE~ ~override/Sola17.CRE~
-              ~Sola5.CRE~ ~override/Sola5.CRE~
-              ~Sola7.CRE~ ~override/Sola7.CRE~
- WRITE_ASCII 0x34 ~dm041s~
- WRITE_ASCII 0x3c ~dm041l~
 PRINT ~ Solaufein detected - Sandrah part added~
 END ELSE BEGIN
   PRINT ~Solaufein not detected - skipped ~
