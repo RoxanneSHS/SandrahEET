@@ -3603,25 +3603,25 @@ COPY ~SandrahNPC/ITM/SanRing.itm~ ~override/SanRing.itm~
 SAY NAME1 @01
 SAY NAME2 @02
 SAY DESC @03
-SAY 0x34e Sandrah
+SAY 0x34e @1032
 
 COPY ~SandrahNPC/ITM/SanRin2.itm~ ~override/SanRin2.itm~
 SAY NAME1 @331
 SAY NAME2 @331
 SAY DESC @340
-SAY 0xfe Sandrah
+SAY 0xfe @1032
 
 COPY ~SandrahNPC/ITM/SanAmul.itm~ ~override/SanAmul.itm~
 SAY NAME1 @04
 SAY NAME2 @05
 SAY DESC @06
-SAY 0x54e Sandrah
+SAY 0x54e @1032
 
 COPY ~SandrahNPC/ITM/SanBook.itm~ ~override/SanBook.itm~
 SAY NAME1 @08
 SAY NAME2 @09
 SAY DESC @10
-SAY 0x9e Sandrah
+SAY 0x9e @1032
 
 COPY ~SandrahNPC/ITM/SCRLALZ.ITM~ ~override/SCRLALZ.ITM~
 SAY NAME1 @14
@@ -3804,31 +3804,31 @@ COPY ~SandrahNPC/ITM/SanHamM.itm~ ~override/SanHamM.itm~
 SAY NAME1 @149
 SAY NAME2 @150
 SAY DESC @151
-SAY 0x1f6 Sandrah
+SAY 0x1f6 @1032
 
 COPY ~SandrahNPC/ITM/SanArmM.itm~ ~override/SanArmM.itm~
 SAY NAME1 @152
 SAY NAME2 @153
 SAY DESC @154
-SAY 0x78e Sandrah
+SAY 0x78e @1032
 
 COPY ~SandrahNPC/ITM/SanArmB.itm~ ~override/SanArmB.itm~
 SAY NAME1 @152
 SAY NAME2 @153
 SAY DESC @479
-SAY 0x96e Sandrah
+SAY 0x96e @1032
 
 COPY ~SandrahNPC/ITM/Sanhamy.itm~ ~override/Sanhamy.itm~
 SAY NAME1 @159
 SAY NAME2 @160
 SAY DESC @161
-SAY 0x5c6 Sandrah
+SAY 0x5c6 @1032
 
 COPY ~SandrahNPC/ITM/CVMIDSHI.ITM~ ~override/CVMIDSHI.ITM~
 SAY NAME1 @354
 SAY NAME2 @355
 SAY DESC @356
-SAY 0x30e Sandrah
+SAY 0x30e @1032
 
 COPY ~SandrahNPC/ITM/Sanwi1.itm~ ~override/Sanwi1.itm~
 SAY NAME1 @138
@@ -7204,19 +7204,19 @@ COPY ~SandrahNPC/Shauhana/Shaumai.itm~ ~override/Shaumai.itm~
 SAY NAME1 @285
 SAY NAME2 @285
 SAY DESC @286
-SAY 0x27e Shauhana
+SAY 0x27e @1093
 
 COPY ~SandrahNPC/Shauhana/Shausw.itm~ ~override/Shausw.itm~
 SAY NAME1 @287
 SAY NAME2 @287
 SAY DESC @288
-SAY 0x256 Shauhana
+SAY 0x256 @1093
 
 COPY ~SandrahNPC/Shauhana/Shaubow.itm~ ~override/Shaubow.itm~
 SAY NAME1 @289
 SAY NAME2 @289
 SAY DESC @290
-SAY 0x166 Shauhana
+SAY 0x166 @1093
 
 COPY ~SandrahNPC/Shauhana/CVORSTA.ITM~ ~override/CVORSTA.ITM~
 SAY NAME1 @300
