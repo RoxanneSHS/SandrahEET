@@ -3689,19 +3689,19 @@ COPY ~SandrahNPC/ITM/SanParc.itm~ ~override/SanParc.itm~
 SAY NAME1 @78
 SAY NAME2 @79
 SAY DESC @80
-SAY 0x9e Sandrah
+SAY 0x9e @1032
 
 COPY ~SandrahNPC/ITM/CVmybelt.itm~ ~override/CVmybelt.itm~
 SAY NAME1 @509
 SAY NAME2 @509
 SAY DESC @510
-SAY 0x106 Sandrah
+SAY 0x106 @1032
 
 COPY ~SandrahNPC/ITM/Sanwdsty.itm~ ~override/Sanwdsty.itm~
 SAY NAME1 @84
 SAY NAME2 @85
 SAY DESC @86
-SAY 0xce Sandrah
+SAY 0xce @1032
 
 COPY ~SandrahNPC/ITM/Misc13L.itm~ ~override/Misc13L.itm~
 SAY NAME1 @1072
