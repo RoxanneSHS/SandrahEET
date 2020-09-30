@@ -6050,7 +6050,7 @@ COPY_EXISTING ~cmsec08.cre~ ~override/cvwetler.cre~
               SAY NAME2 @1088
               WRITE_ASCII 0x280 ~cvwetler~
 COPY_EXISTING ~cmsec03.cre~ ~override~
-              WRITE_ASCII 0x250 ~initgolv~
+              WRITE_ASCII 0x250 ~initrg08~
 PRINT ~ Dark Horizons detected - Sandrah add-on installed~
 END ELSE BEGIN
   PRINT ~Dark Horizons not detected - skipped Sandrah add-on~
