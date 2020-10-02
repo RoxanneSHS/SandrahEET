@@ -900,7 +900,6 @@ RESPONSE #100
 SetGlobal("SanKevl","GLOBAL",1)
 END
 
-//Brynnlaw
 IF
 AreaCheck("ar1515")
 See("pptiax")
@@ -992,7 +991,6 @@ RESPONSE #100
 SetGlobal("SanPCCanSlay","GLOBAL",1)
 END
 
-//Underdark
 IF
 PartyHasItem("D0qpliph")
 Global("SanNaza","LOCALS",0)
@@ -1076,8 +1074,6 @@ RESPONSE #100
 AddSpecialAbility("CVVispi")
 SetGlobal("SanHealXul","GLOBAL",3)
 END
-
-//Meet Shauhana
 
 IF
 Global("Airjump","LOCALS",0)
@@ -1182,8 +1178,6 @@ RESPONSE #100
 SetGlobal("CVGodag","GLOBAL",12)
 END
 
-//Mystra Dream and New Armour
-
 IF
 Global("SanNewArm","GLOBAL",2)
 THEN
@@ -1205,8 +1199,6 @@ DestroyItem("Sanarmm")
 Wait(2)
 ActionOverride("CVSandr",FillSlot(SLOT_ARMOR))
 END
-
-//Shar-Teel's Baby
 
 IF
 Global("SanSharInt","GLOBAL",31)
@@ -1253,7 +1245,6 @@ RESPONSE #100
 SetGlobal("sharplot","GLOBAL",9)
 END
 
-// The Archive
 IF
 Global("SanKhalBlood","GLOBAL",0)
 Global("ZDreamSzene1","GLOBAL",5)
@@ -1274,7 +1265,6 @@ SetInterrupt(FALSE)
 TextScreen("SanMB2")
 END
 
-//The Collector Theft
 IF
 Global("CVColleEnc","GLOBAL",12)
 !See("CVColle")
@@ -1284,7 +1274,6 @@ RESPONSE #100
 SetGlobal("CVColleEnc","GLOBAL",13)
 END
 
-//Kova Hint
 IF
 Global("SanEdPaper","LOCALS",2)
 InParty("Kova")
@@ -1300,7 +1289,6 @@ RESPONSE #100
 SetGlobal("SanEdPaper","LOCALS",3)
 END
 
-//Betana
 IF
 Global("SanMoxen","GLOBAL",0)
 !AreaCheck("ar1105")
@@ -1332,8 +1320,6 @@ SetGlobal("FindBetan","LOCALS",1)
 StartDialogueNoSet("CVSandr")
 END
 
-
-//Yikari
 IF
 AreaCheck("ar0900")
 Global("SanSacroll","GLOBAL",8)
@@ -1363,7 +1349,6 @@ SetGlobal("SanYika","LOCALS",1)
 GiveItemCreate("c2sw1h02","CVSandr",0,0,0)
 END
 
-//Soubar
 IF
 Global("SoubarStuffWarning","GLOBAL",1)
 AreaCheck("Ar4286")
@@ -1374,7 +1359,6 @@ RESPONSE #100
 SetGlobal("SanNoSold","LOCALS",1)
 END
 
-//Suldanessar
 IF
 Global("Chapter","GLOBAL",19)
 AreaCheck("ar2800")
@@ -1399,8 +1383,6 @@ RESPONSE #100
 SetGlobal("SanAfterJon","GLOBAL",2)
 END
 
-//Chimera Spell
-
 IF
 Global("SanDra25","LOCALS",1)
 THEN
@@ -1416,29 +1398,6 @@ THEN
 RESPONSE #100
 SetGlobal("SanDra25","LOCALS",2)
 AddSpecialAbility("CVDra25")
-END
-
-
-// Repairs
-
-IF
-PartyHasItem("ISHMAP")
-AreaCheck("ar2600")
-Global("SanINNERMAP","LOCALS",0)
-!See([ENEMY])
-See(Player1)
-!StateCheck(Player1,CD_STATE_NOTVALID)
-!StateCheck(Player2,CD_STATE_NOTVALID)
-!StateCheck(Player3,CD_STATE_NOTVALID)
-!StateCheck(Player4,CD_STATE_NOTVALID)
-!StateCheck(Player5,CD_STATE_NOTVALID)
-!StateCheck(Player6,CD_STATE_NOTVALID)
-CombatCounter(0)
-See("Cat01")
-THEN
-RESPONSE #100
-SetGlobal("SanINNERMAP","LOCALS",1)
-RevealAreaOnMap("ARISH1")
 END
 
 IF
