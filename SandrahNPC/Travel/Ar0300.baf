@@ -70,18 +70,6 @@ ActionOverride(Player6,LeaveAreaLUA("BG0153","",[936.473],12))
 END
 
 IF
-Global("CVMaeDidKN","ar0300",0)
-InParty("CVSandr")
-GlobalGT("MaeVarWork","GLOBAL",0)
-CombatCounter(0)
-AreaType(OUTDOOR)
-Delay(18)
-THEN
-RESPONSE #100
-SetGlobal("CVMaeDidKN","ar0300",1)
-END
-
-IF
 Global("PlayerThiefGuild","GLOBAL",1)
 GlobalGT("b!alternatives","GLOBAL",4)
 Global("JosterSilence","GLOBAL",1) 

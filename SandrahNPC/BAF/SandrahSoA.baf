@@ -714,7 +714,19 @@ CreateCreatureObjectOffset("cyc01",Myself,[-200.200])
 SetGlobal("SanHealcalli","GLOBAL",5)
 END
 
-// Tirdir
+IF
+Global("CVMaeDidKN","ar0300",0)
+InParty("CVSandr")
+GlobalGT("MaeVarWork","GLOBAL",0)
+CombatCounter(0)
+AreaType(OUTDOOR)
+!See("Maevar")
+Delay(18)
+THEN
+RESPONSE #100
+SetGlobal("CVMaeDidKN","ar0300",1)
+END
+
 IF
 Global("SanTirdir","LOCALS",1)
 AreaCheck("ar0500")
@@ -724,7 +736,6 @@ RESPONSE #100
 SetGlobal("SanTirdir","LOCALS",2)
 END
 
-//Kangaxx Parts
 IF
 AreaCheck("ar0202")
 Global("TalkedToSassar","GLOBAL",1)
@@ -757,7 +768,6 @@ RESPONSE #100
 SetGlobal("SankangFull","LOCALS",1)
 END
 
-// Beholder Cult
 IF
 AreaCheck("ar0205")
 Global("SanBehCult","LOCALS",0)
@@ -767,7 +777,6 @@ RESPONSE #100
 SetGlobal("SanBehCult","LOCALS",1)
 END
 
-// Beast Cult
 IF
 Global("SanDestBeastCult","GLOBAL",2)
 Dead("CULTBEH")
