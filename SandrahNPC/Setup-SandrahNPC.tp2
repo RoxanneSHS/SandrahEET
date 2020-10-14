@@ -7832,7 +7832,7 @@ END ELSE BEGIN
   PRINT ~Sarevok not detected - skipped ~
 END
 
-ACTION_IF FILE_EXISTS_IN_GAME ~Sola12.cre~ THEN BEGIN
+ACTION_IF FILE_EXISTS_IN_GAME ~Sola10.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/ToB/SolaufSan25.d~                     
 EXTEND_TOP                                        
 ~CVSan25.bcs~ ~SandrahNPC/ToB/SolaufeinSan25.baf~
