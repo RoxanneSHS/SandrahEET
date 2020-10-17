@@ -15,3 +15,14 @@ SetGlobal("OrcPrison","GLOBAL",9)
 CreateCreature("CVKNAW",[1165.194],4)
 CreateCreature("Shopknhu",[1135.255],4)
 END
+
+IF
+Global("OrcPrison","GLOBAL",9)
+InParty("Imoen2")
+!Dead("Imoen2")
+NearLocation("Imoen2",515,277,10)
+THEN
+RESPONSE #100
+SetGlobal("OrcPrison","GLOBAL",10)
+ActionOverride("Imoen2",DestroyItem("ImoSlHP1"))
+END
