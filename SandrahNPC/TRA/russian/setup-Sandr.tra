@@ -1,843 +1,907 @@
-@0 = ~It seems that Haiass has risen a level.~
-@01 = ~Sandrah's Ring ~
-@02 = ~Sandrah's Ring ~
-@03 = ~Sandrah's Ring
+@0 = ~Кажется, Хайасс повысил свой уровень.~
+@01 = ~Кольцо Сандры~
+@02 = ~Кольцо Сандры~
+@03 = ~Кольцо Сандры
 
-This ring was given to Sandrah on her fifteenth birthday by her father in Waterdeep. It has a nearly unreadable inscription that could say: From your loving father E. to Sandrah, my daughter.
-Sandrah will never part from this gift. 
+Это кольцо было подарено Сандре на 15-летие её отцом в Вотердипе. На нём есть почти нечитаемая надпись, которая гласит: "От твоего любящего отца Э. моей дочери Сандре".
+Сандра никогда не расстаётся с этим подарком.
 
-Equipped Abilities: Magic Resistance: +10%
-~
-@04 = ~Sandrah's Amulet ~
-@05 = ~Sandrah's Amulet ~
-@06 = ~Sandrah's Amulet
+Особенности при экипировке:
+- Сопротивление магии: +10%~
+@04 = ~Амулет Сандры~
+@05 = ~Амулет Сандры~
+@06 = ~Амулет Сандры
 
-The amulet belonged to Sandrah's mother who died giving birth to another child. It seems to have great powers granted from Mystra herself.
+Этот амулет принадлежал матери Сандры, которая умерла при родах другого ребёнка. Кажется, он наделён великой силой Мистры.
 
-Equipped Abilities: Increased casting speed +1~
-@07 = ~Sandrah was born in Waterdeep as the daughter of one of the most famous mages in Faerun. Her mother died when she was one year old when giving birth to another child, whom she never got to know. Her father taught her many of the secrets of Mystra and the lore of the realms when he was at home - which was not often the case. Sandrah has inherited the wandering ways of her father. Currently she follows a vision she saw when secretly looking into her father's crystal shard - and also a mysterious dream that urges her to search for her mother's second child of whom nobody around her dared to speak. ~
-@08 = ~History of Faerun ~
-@09 = ~History of Faerun ~
-@10 = ~Sandrah's personal copy of Elminster's rare History of Faerun
-(not to be confused with the ever present History of the North). This rare tome contains the comprehensive knowledge of items and places that the famous Elminster has visited and documented - which is indeed almost all of Faerun. Sandrah studies the worn book whenever time allows during your travels.
+Особенности при экипировке:
+- Увеличение скорости чтения заклинаний: +1~
+@07 = ~Сандра родилась в Вотердипе, она дочь одного из самых известных магов Фаэруна. Её мать умерла, когда ей было всего один год, при рождении другого ребёнка, которого она так и не увидела. Отец учил Сандру множеству тайн Мистры и всему остальному, когда он был дома - что бывало не часто. Сандра унаследовала пути своего отца. В настоящее время она следует видению, тайно подсмотренному в магическом кристалле своего отца, а также таинственным снам, которые заставляют её искать второго ребёнка своей матери, о котором окржающие её не осмеливались говорить.~
+@08 = ~История Фаэруна~
+@09 = ~История Фаэруна~
+@10 = ~Это редкий экземпляр книги Элминстера "История Фаэруна" (не путайте с "Историей Севера").
 
-Sandrah's personal copy has the famous author's own signature inside of the front page : " To my d..(tea stain)..r Sandrah with love. Elminster", which makes it an even rarer item.
+Книга содержит всесторонние знания о предметах и местах, которые Элминстер посещал и задокументировал, что, на деле, является почти всем Фаэруном.
 
-STATISTICS:
-Special: The book can identify items provided you give Sandrah enough time to look them up.
-(To identify an item, it must be in Sandrah's inventory - first initiate the book in her inventory, see the dialogue, second right click the item to be investigated.)
-~
-@60011 = ~Find the Petrified Priestess
+Сандра читает эту потрёпанную книгу всякий раз, когда ей позволяет время во время ваших путешествий. Этот экземпляр имеет подпись знаменитого автора на титульном листе: «Моей д... (чайное пятно).. Сандре с любовью. Элминстер», что делает книгу ещё более редкой.
 
-Sandrah has told me today of a vision from her father's crystal shard. We must find and free a priestess from the North that has been trapped by a mage with a flesh to stone spell. We must find the reverse spell scroll at a temple and then detect the woman's statue in some festival or market area. ~
+ПАРАМЕТРЫ:
 
-@60012 = ~A Mysterious Young Woman
+Сандре достаточно посмотреть в эту книгу, чтобы идентифицировать почти любой предмет.
+(Чтобы иметь возможность это делать, книга должна находитья в её инвентаре.)~
+@60011 = ~Найти окаменевшую священницу
 
-Today I met a young woman named Sandrah at the site of Gorion's murder. She claimed she had come too late and wants to help me now. I have seen her at Candlekeep before we left when my foster father had rejected her offer for help. Was that a mistake he made? Do I make the same mistake by refusing her help again? I feel like I should go back to her and try to find out more. ~
+Сандра рассказала мне сегодня о видении в осколке кристалла её отца. Мы должны найти и освободить священницу с севера, которая попала в ловушку мага, обращатившего её плоть в камень. Мы должны найти свиток обратного заклинания в храме, а затем обнаружить статую женщины на каком-нибудь фестивале или рынке.~
 
-@60013 = ~A Demonic Scroll
+@60012 = ~Таинственная незнакомка
 
-When we met the old mage Firebead today, he handed a strange Scroll to Sandrah. Only part of it is readable and it has a demonic aura with it. Sandrah will keep it until we eventually meet her father during our travels, as Firebead assumes that he may know more about the artefact. ~
-@14 = ~Demonic Scroll ~
-@15 = ~Demonic Scroll ~
-@16 = ~"...need it if...go there where water roars and wolves howl...uninvited and fear the wrath of the mighty Alza...."
+Сегодня я встретил девушку по имени Сандра на месте убийства Горайона. Она заявила, что пришла слишком поздно и теперь хочет мне помочь. Я видел её в Кендлкипе перед нашим уходом, когда мой приёмный отец отклонил её предложение о помощи. Это была ошибка? Совершаю ли я ту же ошибку, снова отказываясь от её помощи? Возможно, мне нужно вернуться к ней и попытаться разузнать больше.~ ~Таинственная незнакомка
 
-Most of the scroll you have received from the mage Firebead is unreadable from stains of dried blood. Sandrah has noted that the scroll is probably of demonic origin and has decided to keep it until either she or her father can find out more about it.~
-@60017 = ~A Demonic Scroll
+Сегодня я встретила девушку по имени Сандра на месте убийства Горайона. Она заявила, что пришла слишком поздно и теперь хочет мне помочь. Я видела её в Кендлкипе перед нашим уходом, когда мой приёмный отец отклонил её предложение о помощи. Это была ошибка? Совершаю ли я ту же ошибку, снова отказываясь от её помощи? Возможно, мне нужно вернуться к ней и попытаться разузнать больше.~
 
-Sandrah has studied the mysterious scroll a bit and found that it may - among other things - open some portal for or to someone named Alzaligrundel. We have no idea where this portal is nor what may lie behind it. We can only hope to gather more knowledge about the whole thing in the future.~
+@60013 = ~Демонический свиток
 
-@18 = ~Rock~
-@19 = ~Rock~
-@20 = ~This is a large stone. There is nothing special about this piece of rock.~
-@60021 = ~A Demonic Scroll
+Когда мы сегодня встретились со старым магом Файрбидом, он вручил Сандре странный свиток. Только часть его можно прочесть, и он имеет демоническую ауру. Сандра будет хранить этот свиток до тех пор, пока мы не встретим её отца во время наших путешествий, поскольку Файрбид предполагает, что он может знать больше об этом артефакте.~
+@14 = ~Демонический свиток ~
+@15 = ~Демонический свиток ~
+@16 = ~"...нужен, если... иди туда, где рёвет вода и воют волки... незванные, и страх перед гневом могучего Альза...."
 
-Sandrah has found another bit of information from our mysterious scroll. Someone named Alzaligrundel is the master of this scroll. He has an arch-enemy in some mountains in the south. The enemy's lair seems to be near falling water. So what? All of it is still too vague to divert us from our task. I am waiting for Sandra or her father to find out more.~
-@22 = ~ The demonic scroll in your inventory seems to come alive.
-Maybe it has detected the portal is near. You should converse with the damned thing.~
-@23 = ~Gift of Mystra ~
-@24 = ~Gift of Mystra ~
-@25 = ~Gift of Mystra
+Большинство свитков, которые вы получили от мага Файрбида, невозможно прочитать из-за пятен крови. Сандра отметила, что этот свиток, вероятно, имеет демоническое происхождение, и решила сохранить его, пока она или её отец не узнают о нём больше.~
+@60017 = ~Демонический свиток
 
-This longsword was left at Candlekeep by a young unknown female cleric who seemed to have just missed you. The innkeeper told you that * the hero to be its owner* would notice its use when he sees it. ~
+Сандра немного изучила таинственный свиток и обнаружила, что он может, среди прочего, открыть какой-то портал для кого-то по имени Альзалигрундель. Мы не знаем, где находится этот портал и что за ним может скрываться. Мы можем только надеяться собрать больше информации обо всем этом в будущем.~
 
-@26 = ~Alzaligrundel ~
-@27 = ~Alzaligrundel ~
-@28 = ~Naronguth ~
-@29 = ~Naronguth ~
-@30 = ~Naronguth's Scroll ~
-@31 = ~Naronguth's Scroll ~
-@32 = ~Naronguth's Scroll
+@18 = ~Камень~
+@19 = ~Камень~
+@20 = ~Это большой камень. Кажется, в нём нет ничего особенного.~
+@60021 = ~Демонический свиток
 
-This scroll seems to be the counterpart of the demonic scroll you received from Firebead. Sandrah assumes that you need both parts to open the portal to Alzaligrundel ~
-@33 = ~Elminster's Shard ~
-@34 = ~Elminster's Shard ~
-@35 = ~Elminster's Shard
+Сандра разузнала ещё немного информации о нашем таинственном свитке. Некто по имени Альзалигрундель - хозяин этого свитка. У него есть заклятый враг в горах на юге. Логово врага, похоже, находится рядом с водопадом. Ну и что? Всё это слишком расплывчато, чтобы отвлечь нас от наших дел. Я жду, когда Сандра или её отец узнают больше.~
+@22 = ~Демонический свиток в твоём инвентаре, похоже, ожил.
+Возможно, он почувствовал, что портал рядом. Тебе следует поговорить с этим проклятым предметом.~
+@23 = ~Подарок Мистры~
+@24 = ~Подарок Мистры~
+@25 = ~Подарок Мистры
 
-Elminster's famous tool, often referred to during your journeys with Sandrah. You can see any part of Faerun you want as through a large telescope. Sometimes even an event in the future becomes visible - for those who know how to use it. But even the Great Mage's own daughter cannot operate the tool for your use - or so she claims.~
-@36 = ~Alzaligrundel's Heart ~
-@37 = ~Alzaligrundel's Heart~
-@38 = ~Alzaligrundel's Heart
+Этот длинный меч оставила в Кендлкипе неизвестная молодая священница, которая, кажется, недавно тебя искала. Хозяин гостиницы сказал, что *герой, который станет его владельцем*, разберётся, как им пользоваться, когда поймёт, что к чему.~ ~Подарок Мистры
 
-You tore that bleeding black heart from the defeated Demon Alzaligrundel who disguised himself as a blue dragon. Naronguth has promised to give you back Elminster's Shard in return for it.~
-@39 = ~Fake Demon Heart ~
-@40 = ~Fake Demon Heart~
-@41 = ~Fake Demon Heart
+Этот длинный меч оставила в Кендлкипе неизвестная молодая священница, которая, кажется, недавно тебя искала. Хозяин гостиницы сказал, что *героиня, которая станет его владелицей*, разберётся, как им пользоваться, когда поймёт, что к чему.~
 
-The Demon Alzaligrundel has given you this fake instead of his own heart. Naronguth has promised to give you back Elminster's Shard in return for Alzaligrundel's Heart. 
-Do you dare to trick the mighty demon with this false one?~
-@60042 = ~A Demonic Scroll - A Deal
+@26 = ~Альзалигрундель ~
+@27 = ~Альзалигрундель ~
+@28 = ~Наронгут ~
+@29 = ~Наронгут ~
+@30 = ~Свиток Наронгута ~
+@31 = ~Свиток Наронгута ~
+@32 = ~Свиток Наронгута
 
-We have received the second half of the portal scroll to Alzaligrundel's lair. In order to save our lives, health and Sandrah's freedom we have made a strange deal with the demon Naronguth. We must bring him Alzaligrundel's Heart in exchange for Elminster's Shard. ~
-@43 = ~Demon knight ~
-@44 = ~Demon knight ~
-@45 = ~You inspect the waterfall that the demonic knight has guarded a bit closer.~
-@46 = ~You remember what the mysterious scroll told you. Here is water, cloud peaking mountains...~
-@47 = ~You see the rocks at the right side. -   It looks like an entrance there.
+Похоже, этот свиток является дубликатом демонического свитка, полученного тобой от Файрбида. Сандра полагает, что нужны обе части, чтобы открыть портал к Альзалигрунделю. ~
+@33 = ~Кристалл Элминстера ~
+@34 = ~Кристалл Элминстера ~
+@35 = ~Кристалл Элминстера
 
-         There is only one way to find out.. ~
-@60048 = ~A Demonic Scroll 
-- A Lair in the Cloudpeaks
+Знаменитый инструмент Элминстера, часто упоминаемый во время твоих путешествий с Сандрой. В нём можно увидеть любую часть Фаэруна по желанию, как в большой телескоп. Иногда даже события в будущем становится видимыми - для тех, кто умеет им пользоваться. Но даже собственная дочь Великого Мага не может управлять этим инструментом по твоему желанию - по крайней мере, так она утверждает.~
+@36 = ~Сердце Альзалигрунделя ~
+@37 = ~Сердце Альзалигрунделя ~
+@38 = ~Сердце Альзалигрунделя
 
-Our search for Elminster's shard has lead us to a secret entrance in the Cloudpeak Mountains, hidden behind the mists of a waterfall. What awaits us there? ~
-@49 = ~The entrance from the Cloudpeaks has collapsed. It seems like only the demon Naronguth can help you to leave this place.~
-@50 = ~Bracers ~
-@51 = ~Bracers of Demonic Virtue~
-@52 = ~Bracers of Demonic Virtue
+Ты вырвал это кровоточащее чёрное сердце из побеждённого демона Альзалигрунделя, который маскировался под синего дракона. Наронгут обещал взвмен него вернуть тебе Кристалл Элминстера.~ ~Сердце Альзалигрунделя
 
-The effect of these bracers on creatures of non-demonic origin is unknown~
-@53 = ~The demonic scroll in your inventory seems to spring into your hand. 
-It looks like it has something urgent to say.~
-@54 = ~The narrow entrance through the waterfall has collapsed and filled with boulders when the demon started yelling at you. It can no longer be used. Maybe your host knows a way out? ~
-@55 = ~You feel a sudden movement in your backpack where you have put the strange scroll, as if it wants to tell you something. Why not let Sandrah inspect it closer?~
-@56 = ~Boulder ~
-@57 = ~Boulder ~
-@60058 = ~A Demonic Scroll 
-- Playing Tricks
+Ты вырвала это кровоточащее чёрное сердце из побеждённого демона Альзалигрунделя, который маскировался под синего дракона. Наронгут обещал взвмен него вернуть тебе Кристалл Элминстера.~
+@39 = ~Поддельное Сердце демона ~
+@40 = ~Поддельное Сердце демона ~
+@41 = ~Поддельное Сердце демона
 
-The Demon Alzaligrundel has given you a fake instead of his own heart.
-We hope to trick the mighty demon Naronguth with this false to regain Elminster's shard. His own daughter Sandrah assures me that we have made the right decision. We can only hope the best now.~
-@59 = ~Naronguth's Guard ~
-@60 = ~Naronguth's Guard ~
-@61 = ~You hear a heavy door open in some distance.~
-@63 = ~Naronguth's Slippers~
-@64 = ~Naronguth's Slippers~
-@65 = ~Naronguth's Slippers
+Демон Альзалигрундель дал тебе эту подделку вместо своего сердца. Наронгут пообещал вернуть тебе Кристалл Элминстера в обмен на Сердце Альзалигрунделя.
+Осмелишься ли ты попытаться обмануть могущественного демона этой фальшивкой?~
+@60042 = ~Демонический свиток - Сделка
 
-Dance through the night! In these comfortable, attractive shoes, you'll never have to worry about blisters or stepping on your partner's feet. So what are you waiting for? Go out and party!
+Мы получили вторую половину свитка портала в логово Альзалигрунделя. Чтобы спасти наши жизни, здоровье и свободу Сандры, мы заключили странную сделку с демоном Наронгутом. Мы должны принести ему Сердце Альзалигрунделя в обмен на Кристалл Элминстера.~
+@43 = ~Демон рыцарь ~
+@44 = ~Демон рыцарь ~
+@45 = ~Ты осматриваешь водопад, который охранял демонический рыцарь, поближе.~
+@46 = ~Ты вспоминаешь, что тебе рассказал таинственный свиток. Вот вода, горы с облачными вершинами...~
+@47 = ~Ты видишь скалы справа.  -  Похоже, там вход.
 
-The demon stench of the former owner has completely disappeared and nothing prevents you from using these attractive ballet slippers.~
-@60066 = ~ The weird demon is gone and you are left without Elminster's shard.
-Maybe Sandrah has some advice for you, you may want to talk to her.~
-@60067 = ~Gone To Hell
+         Есть только один способ это выяснить... ~
+@60048 = ~Демонический свиток 
+- Логово в Облачных Вершинах
 
-The weird demon is gone and you are left without Elminster's shard in an underground area without exits.  What now?
-Maybe Sandrah has some advice for you, you may want to talk to her. ~
-@68 = ~Elminster ~
-@69 = ~Elminster ~
-@60070 = ~A Demonic Scroll 
-- Elminster's Quest
+Наш поиск кристалла Элминстера привёл нас к секретному входу в Горы Облачных Вершин, скрытому за туманом водопада. Что нас там ждет? ~
+@49 = ~Вход в Облачных Вершинах обрушился. Кажется, только демон Наронгут может помочь тебе покинуть это место.~
+@50 = ~Наручи ~
+@51 = ~Наручи демонической добродетели~
+@52 = ~Наручи демонической добродетели
 
-Our meeting with Elminster has finally shed some light on the story behind the mysterious scroll.
-    Elminster's Shard of Mystra has been stolen!!
-Demonic powers are at work and they threaten all of us on the Sword Coast. We must find them with the help of Sandrah and the scroll and retrieve the shard. Our quest leads us to the south of the Sword Coast, the Cloudpeak Mountains.~
-@60071 = ~A Demonic Scroll 
-- Visit Firebead
+Эффект этих наручей на существ недемонического происхождения неизвестен.~
+@53 = ~Демонический свиток в твоём инвентаре, кажется, прыгул к тебе в руки.
+Похоже, ему есть что срочно сказать.~
+@54 = ~Узкий проход через водопад обрушился и заполнился валунами, когда демон начал кричать на тебя. Там больше нельзя пройти. Может быть, твой хозяин знает путь наружу? ~
+@55 = ~Ты чувствуешь внезапное движение в своем рюкзаке, куда ты положил странный свиток, как будто он хочет тебе что-то сказать. Почему бы не позволить Сандре осмотреть его поближе?~ ~Ты чувствуешь внезапное движение в своем рюкзаке, куда ты положила странный свиток, как будто он хочет тебе что-то сказать. Почему бы не позволить Сандре осмотреть его поближе?~
+@56 = ~Валун ~
+@57 = ~Валун ~
+@60058 = ~Демонический свиток 
+- Обман
 
-We met with Sandrah's father, the mighty mage Elminster today. Demonic things are happening on the Sword Coast. But before we can really start to help, we need to retrieve a scroll from Firebead. He stays at Beregost, in a friend's house near the Feldepost Inn.~
-@60072 = ~A Bad Decision
+Демон Альзалигрундель дал тебе фальшивку вместо своего сердца.
+Мы надеемся обмануть могущественного демона Наронгута этой фальшивкой, чтобы вернуть кристалл Элминстера. Его собственная дочь Сандра уверяет, что мы приняли правильное решение. Теперь остаётся только надеяться на лучшее.~
+@59 = ~Страж Наронгута ~
+@60 = ~Страж Наронгута ~
+@61 = ~Ты слышишь, как неподалёку открывается тяжёлая дверь.~
+@63 = ~Тапки Наронгута~
+@64 = ~Тапки Наронгута~
+@65 = ~Тапки Наронгута
 
-Today Elminster has come to seek the help from my party in an urgent task for the Sword Coast at large. I had to deny because of my own pressing business although Sandrah pleaded with me to listen to her father. She has now left me to help the old man alone. I feel lost and sad. Will I ever see her again? And if so, will she forgive me?~
-@60073 = ~A Demonic Scroll 
-- Visit Firebead
+Танцуй всю ночь! В этой удобной и привлекательной обуви тебе никогда не придётся беспокоиться о волдырях или о том, что наступишь на ногу партнера. Чего же ты ждешь? Иди и веселись!
 
-We have retrieved a scroll from Firebead and brought it to Elminster. The demonic thing can converse with Sandrah. She and her father have found clues from the babbling of the scroll to some demonic activities and the missing Mystra Shard of Elminster. Another quest starts where one is done.~
-@74 = ~Landrel ~
-@75 = ~Landrel ~
-@60076 = ~Elminster's Daughter 
-- Need For Help
+Демоническая вонь бывшего хозяина полностью исчезла, и ничто не мешает тебе надеть эти привлекательные балетные тапочки.~
+@60066 = ~Странный демон ушёл, и ты остался без кристала Элминстера.
+Может быть, Сандра даст тебе какой-то совет, если ты с ней поговоришь.~ ~Странный демон ушёл, и ты осталась без кристала Элминстера.
+Может быть, Сандра даст тебе какой-то совет, если ты с ней поговоришь.~
+@60067 = ~Ушёл в ад
 
-Sandrah has received a message from her father. Something must have happened that causes Elminster to require our assistance. We are to meet him at the temple in the Friendly Arm.~
-@60077 = ~A Demonic Scroll 
-- Elminster's Quest Resolved
+Странный демон ушёл, и ты остался без кристала Элминстера в подземелье без выхода. Что теперь?
+Может быть, Сандра даст тебе какой-то совет, если ты с ней поговоришь.~
+@68 = ~Элминстер~
+@69 = ~Элминстер~
+@60070 = ~Демонический свиток 
+- Поиск кристала Элминстера
 
-Finally we have solved the mystery of the Demonic Scroll and the theft of Elminster's Shard. We have returned the artefact to its rightful owner.
-However, we also received a bit of a warning. The demons we struggled with may be defeated for the moment only - who knows if and when they may return.~
-@78 = ~A Parcel~
-@79 = ~A Parcel from Elminster~
-@80 = ~Elminster's Gift
+Наша встреча с Элминстером наконец пролила свет на историю загадочного свитка.
+     Кристалл Мистры Элминстера был украден !!
+Демонические силы действуют, и они угрожают всем нам на Побережье Меча. Мы должны найти демонов с помощью Сандры и свитка, и вернуть кристалл. Нам предстоит путь на юг Побережья Меча, к горам Облачных Вершин.~
+@60071 = ~Демонический свиток 
+- Визит к Файрбиду
 
-When we returned the Shard of Mystra to Elminster, he secretly slipped this parcel to his daughter. I trust her to reveal its contents when she decides the time is right for it.~
-@81 = ~Sandrah's Doll~
-@82 = ~Sandrah's Doll~
-@83 = ~Sandrah's Doll
+Сегодня мы встретились с отцом Сандры, могущественным магом Элминстером. На Побережье Меча творятся демонические вещи. Но прежде чем мы сможем чем-то помочь, нам нужно взять свиток у Файрбида. Он остановился в Берегосте, в доме своего друга, недалеко от таверны Фелдпоста.~
+@60072 = ~Плохое решение
 
-A childhood toy that Sandrah's father smuggled into her magic box when she left her home to go on her journey with you.
-A nice memory of a caring father, that brings a smile to Sandrah's eye.~
-@84 = ~Sandrah's Boots ~
-@85 = ~Sandrah's Boots (Waterdeep Style)~
-@86 = ~Sandrah's Boots (Waterdeep Style)
+Сегодня Элминстер пришёл просить меня о помощи в решении неотложной задачи для всего Побережья Меча. Мне пришлось отказаться из-за моего собственного неотложного дела, хотя Сандра умоляла меня выслушать её отца. Теперь она оставила меня, чтобы помочь старику самой. Я чувствую себя потерянным и грустным. Увижу ли я её когда-нибудь снова? И если да, простит ли она меня?~ ~Плохое решение
 
-Handmade boots of finest leather made in the latest fashion of the City of Splendor. They add to Sandrah's sex appeal and charisma - (as if this was needed).
+Сегодня Элминстер пришёл просить меня о помощи в решении неотложной задачи для всего Побережья Меча. Мне пришлось отказаться из-за моего собственного неотложного дела, хотя Сандра умоляла меня выслушать её отца. Теперь она оставила меня, чтобы помочь старику самой. Я чувствую себя потерянной и грустной. Увижу ли я её когда-нибудь снова? И если да, простит ли она меня?~
+@60073 = ~Демонический свиток  
+- Визит к Файрбиду
 
-Equipped Abilities: Charisma Bonus +1
-~
-@87 = ~Portrait of a Lady (by Leonardo)~
-@88 = ~Portrait of Sandrah's Mother~
-@89 = ~Portrait of Sandrah's Mother
+Мы забрали свиток у Файрбида и принесли его Элминстеру. Демоническая вещь может разговаривать с Сандрой. Она и её отец нашли в шёпоте свитка ключи к некоторым действиям демонов и пропавшему Кристалл Мистры Элминстера. Начинается другая задача, когда выполнена предыдущая.~
+@74 = ~Ландрел ~
+@75 = ~Ландрел ~
+@60076 = ~Дочь Элминстера
+- Требуется помощь
 
-Portrait of a lady painted by the famous Leonardo. Price (of original): Astronomic
-The young lady in the picture seems to be Sandrah at first sight. However Sandrah revealed to you that it is actually her mother painted by the famous Leonardo shortly before her wedding with Elminster. Even the miniature copy you found in your backpack after a mysterious dream gives you an idea of the beauty of the original which hangs in Elminster's house in Waterdeep.
-With her enigmatic but lovely smile the mother completely resembles the daughter.~
-@60090 = ~Sandrah's Heritage - The second child
+Сандра получила сообщение от отца. Должно быть, что-то случилось, что заставило Элминстера просить нашей помощи. Нам предстоит встретиться с ним в храме у Дружеской Руки.~
+@60077 = ~Демонический свиток  
+- Задание Элминстера выполнено
 
-I had a kind of vision today. It involved Sandrah, her father Elminster, his dead wife Khalindra - Sandrah's mother - and a second child of no name or gender.
-The vision also pointed at the Time of Troubles and the gods that had died there, of which I heard the Candlekeep chanters recite every day from the scripts of the Wise Alaundo.
-      And the dead God of Murder - Bhaal.
+Наконец мы раскрыли тайну Демонического Свитка и кражи кристалла Элминстера. Мы вернули артефакт законному владельцу.
+Однако также мы получили небольшое предупреждение. Демоны, с которыми мы столкнулись, могут быть побеждены только на время - кто знает, вернутся ли они, и когда.~
+@78 = ~Посылка~
+@79 = ~Посылка от Элминстера~
+@80 = ~Подарок Элминстера
 
-But how are those things connected? And why was this vision given to me?~
-@91 = ~Old Waterdeep Road~
-@92 = ~Map~
-@93 = ~Roadmap to Waterdeep~
-@94 = ~Roadmap to Waterdeep
+Когда мы вернули Кристалл Мистры Элминстеру, он тайно передал этот свёрток своей дочери. Я доверяю ей вскрыть его содержимое, когда она решит, что для этого наступит подходящий момент.~
+@81 = ~Кукла Сандры~
+@82 = ~Кукла Сандры~
+@83 = ~Кукла Сандры
 
-This worn and torn roadmap shows an old forgotten road from the Friendly Arm to Waterdeep. With the help of this map you may be able to find the old road starting just west of the famous Inn.~
-@95 = ~With the help of the old map you can find the forgotten road to Waterdeep.
-Move to the western part of the area.~
-@96 = ~We have found the start of the Old Waterdeep Road between the rocks and trees.~
-@97 = ~Hillath's Baby ~
-@98 = ~Hillath's Baby ~
-@99 = ~Hillath's Baby
+Детская игрушка, которую отец Сандры тайком положил в её волшебную шкатулку, когда она ушла из дома, чтобы отправиться с тобой в путешествие.
+Хорошее воспоминание о заботливом отце, которое вызывает улыбку в глазах Сандры.~
+@84 = ~Сапоги Сандры~
+@85 = ~Сапоги Сандры (Вотердипский стиль)~
+@86 = ~Сапоги Сандры (Вотердипский стиль)
 
-You have rescued Hillath's baby from the bandit Khattark. You must quickly return it to the mother as it is already crying for milk.~
-@100 = ~Dead Baby ~
-@101 = ~Hillath's Dead Baby ~
-@102 = ~Hillath's Dead Baby
+Эти сапоги ручной работы сшиты по поледней моде Города Блеска. Они добавляют Сандре элегантности и харизмы (если это вообще нужно).
 
-Your attempt to rescued Hillath's baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
-@103 = ~ No, my husband...
-         This bandit Khattark, he has the baby!~
-@60104 = ~Khattark - the Bandit
+Особенности при экипировке: 
+ Харизма: +1~
 
-We have saved Hillath's baby from the bandit Khattark. But we had to make a deal for the baby's rescue and Khattark himself could escape. He may try to hide in Waterdeep and continue his assaults on the town from his nest. We feel obliged to search for him when we get to town.~
+@87 = ~Портрет леди (работы Леонардо)~
+@88 = ~Портрет матери Сандры~
+@89 = ~Портрет матери Сандры
 
-@60105 = ~Khattark - the Bandit
+Портрет леди работы знаменитого Леонардо. Цена (оригинала): астрономическая.
+Юная леди на портрете на первый взгляд кажется Сандрой. Однако Сандра рассказала тебе, что на самом деле это её мать, портрет написан знаменитым Леонардо незадолго до свадьбы с Элминстером. Даже миниатюрная копия, которую ты нашёл в рюкзаке после загадочного сна, даёт тебе представление о красоте оригинала, который висит в доме Элминстера в Вотердипе.
+Своей загадочной, но милой улыбкой мать очень похожа на дочь.~ ~Портрет матери Сандры
 
-We have killed the bandit Khattark today, but the rest of his gang may still be in Waterdeep and may become a threat to the townspeople again, once they have found a new leader. We should keep our eyes open while in town. ~
-@106 = ~Without Sandrah and her map we could not travel on to Waterdeep. ~
-@107 = ~After a long odyssey in the wilderness we finally found our way back to the Friendly Arm.~
-@108 = ~The Failed Journey to Waterdeep
+Портрет леди работы знаменитого Леонардо. Цена (оригинала): астрономическая.
+Юная леди на портрете на первый взгляд кажется Сандрой. Однако Сандра рассказала тебе, что на самом деле это её мать, портрет написан знаменитым Леонардо незадолго до свадьбы с Элминстером. Даже миниатюрная копия, которую ты нашла в рюкзаке после загадочного сна, даёт тебе представление о красоте оригинала, который висит в доме Элминстера в Вотердипе.
+Своей загадочной, но милой улыбкой мать очень похожа на дочь.~
+@60090 = ~Наследие Сандры - Второй ребенок
 
-Sandrah had invited us to her father's house in Waterdeep. On the road we encountered a frightening bandit leader who had kidnapped a child. I refused to interfere myself, and proposed to leave the case to the Waterdeep militia. Sandrah has left my group without a word and went to help the poor child's mother and to restore her reputation in her home town. Without Sandrah and her map we could not travel on to Waterdeep. After a long odyssey in the wilderness we finally found our way back to the Friendly Arm. Will I ever see Sandrah again?~
-@109 = ~Maitre De ~
-@110 = ~Maitre De ~
-@60111 = ~A Book for Finch
+Сегодня у меня было какое-то видение. В нём присутствовали Сандра, её отец Элминстер, его покойная жена Халиндра - мать Сандры - и второй ребёнок неизвестного имени и пола.
+Видение также указывало на Смутное Время и мёртвых богов, о которых я слышал, как певцы в Кендлкипе каждый день пели по пророчествам Мудрого Алаундо.
+       И мёртвый бог убийств - Баал.
 
-Clarissa Bloomwhiffler, a relative of Finch in Waterdeep, has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch would be delighted if we delivered the booklet to her for her library.~
-@112   = ~Book for Finch~
-@113   = ~Book for Finch~
-@114   = ~Virtue of Wisdom
+Но как эти вещи связаны? И почему у меня было это видение?~
+@91 = ~Старая Вотердипская дорога~
+@92 = ~Карта~
+@93 = ~Дорога в Вотердип~
+@94 = ~Дорога в Вотердип
+
+На этой потрёпанной и разорванной карте изображена старая забытая дорога от Дружеской Руки до Вотердипа. С помощью этой карты ты можешь найти старую дорогу, начинающуюся к западу от известной гостиницы.~
+@95 = ~С помощью старой карты ты можешь найти забытую дорогу в Вотердип.
+Двигайся в западную часть местности.~
+@96 = ~Мы нашли начало Старой Вотердипской дороги между камней и деревьев.~
+@97 = ~Ребёнок Хиллат ~
+@98 = ~Ребёнок Хиллат ~
+@99 = ~Ребёнок Хиллат
+
+Ты спас ребёнка Хиллат от бандита Хаттарка. Ты должен быстрее вернуть его матери, так как он уже требует молока.~ ~Ребёнок Хиллат
+
+Ты спасла ребёнка Хиллат от бандита Хаттарка. Ты должна быстрее вернуть его матери, так как он уже требует молока.~
+@100 = ~Мёртвый ребёнок ~
+@101 = ~Мёртвый ребёнок Хиллат ~
+@102 = ~Мёртвый ребёнок Хиллат
+
+Твоя попытка силой забрать ребёнка Хиллат у бандита Хаттарка потерпела неудачу. Теперь вернуть матери можно только труп.~
+@103 = ~ Нет, мой муж...
+         Этот бандит Хаттарк, ребёнок у него!~
+@60104 = ~Хаттарк - Бандит
+
+Мы спасли ребёнка Хиллат от бандита Хаттарка. Но нам пришлось пойти на сделку ради спасения ребёнка, и сам Хаттарк смог спастись. Он может попытаться спрятаться в Вотердипе и продолжить свои нападения в городе из своего логова. Мы обязаны найти его, когда доберёмся до города.~
+
+@60105 = ~Хаттарк - Бандит
+
+Сегодня мы убили бандита Хаттарка, но оставшаяся часть его банды может всё ещё оставаться в Вотердипе и снова стать угрозой для горожан, как только выберут нового лидера. В городе нам стоит держать глаза открытыми. ~
+@106 = ~Без Сандры и её карты ты не сможешь отправиться в Вотердип. ~
+@107 = ~После долгой одиссеи по дикой местности ты, наконец, вернулся в Дружескую Руку.~ ~После долгой одиссеи по дикой местности ты, наконец, вернулась в Дружескую Руку.~
+@108 = ~Неудачное путешествие в Вотердип
+
+Сандра пригласила меня в дом своего отца в Вотердипе. По дороге мы встретили ужасного лидера бандитов, похитившего ребёнка. Я отказался вмешиваться и предложил передать это дело ополчению Вотердипа. Сандра, не сказав ни слова, покинула мою компанию и пошла помогать матери бедного ребенка и восстанавливать свою репутацию в её родном городе. Без Сандры и её карты я не могу отправиться в Вотердип. После долгой одиссеи по дикой местности, я, наконец, вернулся назад в Дружескую Руку. Увижу ли я когда-нибудь Сандру снова?~ ~Неудачное путешествие в Вотердип
+
+Сандра пригласила меня в дом своего отца в Вотердипе. По дороге мы встретили ужасного лидера бандитов, похитившего ребёнка. Я отказалась вмешиваться и предложила передать это дело ополчению Вотердипа. Сандра, не сказав ни слова, покинула мою компанию и пошла помогать матери бедного ребенка и восстанавливать свою репутацию в её родном городе. Без Сандры и её карты я не могу отправиться в Вотердип. После долгой одиссеи по дикой местности, я, наконец, вернулась назад в Дружескую Руку. Увижу ли я когда-нибудь Сандру снова?~
+@109 = ~Мэтр Де ~
+@110 = ~Мэтр Де ~
+@60111 = ~Книга для Финч
+
+Кларисса Блумвайффлер, родственница Финч из Вотердипа, дала нам копию очень редкого эссе Монтилы о Добродетели Мудрости. Финч будет рада, если мы доставим ей эту книгу для её библиотеки.~
+@112   = ~Книга для Финч~
+@113   = ~Книга для Финч~
+@114   = ~О Добродетели Мудрости
   
-  Monteelah's famous essay on the Virtue of Wisdom. You try to get a hold on the endlessly meandering sentences of the (in)famous philosopher and decipher their deeper meaning. It looks like he tries to tell you that the right piece of knowledge at the right place and the right time can make anything possible, but in real life the coincidence of such a situation is very rare. ~
-@115 = ~Clarissa Bloomwhiffler ~
-@116 = ~Clarissa Bloomwhiffler ~
-@60117 = ~Khattark - the Bandit
+Знаменитое эссе Монтилы О Добродетели Мудрости. Ты пытаешься ухватить суть бесконечно витиеватых предложений (не) известного философа и понять их глубокий смысл. Похоже, автор пытается сказать, что нужные знания в нужном месте и в нужное время могут сделать возможным практически всё, но в реальных жизнненных ситуациях такие совпадения бывают очень редко. ~
+@115 = ~Кларисса Блумвайфлер~
+@116 = ~Кларисса Блумвайфлер~
+@60117 = ~Хаттарк - Бандит
 
-We have finally killed the bandit Khattark and relieved Waterdeep from the constant threat of his gang.~
-@118 = ~Illithium~
-@119 = ~Illithium~
-@120 = ~Illithium
+Наконец мы убили бандита Хаттарка и избавили Вотердип от постоянной угрозы его банды.~
+@118 = ~Иллитий~
+@119 = ~Иллитий~
+@120 = ~Иллитий
 
-    2800 Pounds of pure Illithium. ~
+    2800 фунтов чистого иллития. ~
 
-@121 = ~A Pipe~
-@122 = ~A pipe~
-@123 = ~Elminster's legendary pipe.~
-@124 = ~Quarterstaff.~
-@125 = ~Elminster's Staff.~
-@126 = ~Elminster's Staff.
+@121 = ~Труба~
+@122 = ~Труба~
+@123 = ~Легендарная труба Элминстера.~
+@124 = ~Посох~
+@125 = ~Посох Элминстера~
+@126 = ~Посох Элминстера
 
-    The personal quarterstaff of Faerun's famous mage. Do not try to steal it. ~
-@60127 = ~Naronguth's Return
+    Это личный посох знаменитого мага Фаэруна. Не пытайся его украсть.~
+@60127 = ~Возвращение Наронгута
 
-Irritating news from Elminster. Our old friend, the demon Naronguth seems to be searching for us to regain his dancing slippers. The old mage gave us a pair of magically entangled shoes to assist us against Naronguth. How we can possibly get our enemy to put those shoes on will be seen.~
-@128 = ~Copy of Naronguth's Slippers~
-@129 = ~Entangled Slippers~
-@130 = ~Entangled Slippers
+Раздражающая новость от Элминстера. Наш старый друг, демон Наронгут, похоже, ищет нас, чтобы вернуть свои танцевальные тапки. Старый маг дал нам копию пары тапок, окутанных магией, чтобы помочь против Наронгута. Будет видно, сможем ли мы заставить нашего врага надеть эту обувь.~
+@128 = ~Копия тапок Наронгута~
+@129 = ~Тапки запутывания~
+@130 = ~Тапки запутывания
 
-From the look this seems to be a pair comfortable, attractive shoes, you'll never have to worry about blisters or stepping on your partner's feet. However these slippers have been modified by the mighty mage Elminster into a demon trap of sorts. How exactly the trap may work is unknown.~
-@131 = ~ When Naronguth put on Elminster's Entangled Slippers and tried to attack you, he stumbled badly and went down in a ball of fire.~
-@60132 = ~Old Waterdeep Road
+На первый взгляд кажется, что это пара удобных, привлекательных тапок, в которых никогда не придётся беспокоиться о волдырях или о том, что наступишь на ногу партнера. Однако эти тапки были превращены могущественным магом Элминстером в своего рода ловушку для демонов. Как именно работает эта ловушка, неизвестно.~
+@131 = ~Когда Наронгут надел Тапки запутывания Элминстера и попытался тебя атаковать, он сильно споткнулся и упал в огненный шар.~
+@60132 = ~Старая Вотердипская дорога
 
-Today we have learned from Sandrah about the Old Waterdeep Road, a mystic trail from the Sword Coast to the City of Splendour used in older times. To find and travel it, one needs a special map. Sandrah suggested that the old couple that runs the Friendly Arm may know more about it.~
-@60133 = ~Elminster's Daughter
+Сегодня мы узнали от Сандры о Старой Вотердипской дороге, мистическом пути из Побережья Меча до Города Блеска, использовавшейся в давние времена. Чтобы найти её и путешествовать по ней, нужна специальная карта. Сандра предположила, что старая пара, которая управляет Дружеской Рукой, может знать об этом больше.~
+@60133 = ~Дочь Элминстера
 
-Today I finally discovered part of my companion's mystery:
-Sandrah is the daughter and only child of Faerun's most famous mage, Elminster of Shadowdale, now residing at Waterdeep.
+Сегодня я, наконец, узнал часть тайны моей компаньонки:
+Сандра - дочь и единственный ребёнок самого известного мага Фаэруна, Элминстера из Шэдоудейла, сейчас живущего в Вотердипе.
  
-Although I have met the old man in various disguises and have already discovered that he and his Harper friends seem to have much interest in my fate, Sandrah has assured me, that she herself is not directly involved in her father's scheming. 
+Хотя я уже встречал старика в различной маскировке и уже знаю, что он и его друзья Арфисты, похоже, очень заинтересованы моей судьбой, Сандра заверила меня, что она сама не причастна к интригам своего отца. 
 
-Her own personal interest - beside the love for me that she has discovered during our travels together - is not yet clear.
+Её личный интерес - помимо любви ко мне, обнаружившейся во время нашего совместного путешествия - ещё не ясен.
 
-Like so many other things I learn bit by bit, she has assured me, that everything will be revealed in due time.~
-@134 = ~Elminster's Daughter ~
-@135 = ~Sunbathing~
-@136 =~Totally exhausted after the extended splashing and swimming you find yourself dripping wet in Sandrah's arm, lying on the shoreline.
-The rest of your companions are scattered on the banks nearby, all of them completely naked and happy.
-You are lazily caressing Sandrah's perfect body, lingering long at her rose nipples that are hardened after the bath.
-You feel her breathing getting faster...~
-@60137 =~Did we just observe how Mystra punishes the misuse of her powers?~
-@138 = ~A Piece of Cloth ~
-@139 = ~A Piece of Cloth ~
-@140 = ~A piece of cloth you have received from Viconia, the renegade drow, priestess of Shar.~
-@141 = ~A piece of cloth you have received from Viconia, the renegade drow, priestess of Shar.
-Sandrah vaguely recognises a part of the pattern on this piece of cloth, but she cannot remember where she might have seen it. You need more pieces of the puzzle to make out some sense.~
-@142 = ~Dynaheir's piece ~
-@143 = ~Dynaheir's piece of Cloth
-A piece of cloth that stirs up memories in Sandrah although she cannot yet exactly tell why. It was found by the Rashemi witch Dynaheir near the old Firewine Bridge. Dynaheir assumes that it was lost there long ago, at a period she called the Time of Troubles.~
-@144 = ~Firewine piece ~
-@145 = ~Firewine piece
-An old caravan guard who went insane after he lost a caravan to the bandits a long time ago, had a piece of a torn cloth that is related to something in Sandrah's past. You learned as well that two babies were carried by some travellers that were assaulted by bandits near the Firewine Bridge long ago. What became of them is unknown.  ~
-@146 = ~Full piece ~
-@147 = ~Reconstructed piece of cloth~
-@60148 = ~A Strange Piece of Cloth
+Как и многое другое, что я узнаю по крупицам, она заверила меня, что я всё узнаю в своё время.~ ~Дочь Элминстера
 
-The renegade drow Viconia gave a strange piece of a cloth to Sandrah today, indicating it was meant for my companion by the goddess Shar. Sandrah vaguely recognises a part of the pattern on the cloth, but she cannot remember where she might have seen it. ~
-@149 = ~Mystra's Hammer ~
-@150 = ~Mystra's Hammer ~
-@151 = ~Mystra's Hammer
+Сегодня я, наконец, узнала часть тайны моей компаньонки:
+Сандра - дочь и единственный ребёнок самого известного мага Фаэруна, Элминстера из Шэдоудейла, сейчас живущего в Вотердипе.
+ 
+Хотя я уже встречала старика в различной маскировке и уже знаю, что он и его друзья Арфисты, похоже, очень заинтересованы моей судьбой, Сандра заверила меня, что она сама не причастна к интригам своего отца. 
 
-Sandrah received this enchanted hammer when she started her studies as a cleric. Its abilities cannot be detected by anyone not blessed by Mystra.
+Её личный интерес - помимо любви ко мне, обнаружившейся во время нашего совместного путешествия - ещё не ясен.
 
-Equipped Abilities: Special, Sandrah can assimilate a magical ability from certain enemies slain by the hammer.
+Как и многое другое, что я узнаю по крупицам, она заверила меня, что я всё узнаю в своё время.~
+@134 = ~Дочь Элминстера ~
+@135 = ~Солнечные ванны~
+@136 =~Совершенно измученный после продолжительных брызг и плавания, ты оказываешься совершенно мокрым в руках Сандры, лежащей на берегу.
+Остальные твои товарищи расположились на берегу поблизости, все совершенно голые и счастливые.
+Ты лениво ласкаешь идеальное тело Сандры, надолго задерживаясь на ее розовых сосках, затвердевших от плавания.
+Ты чувствуешь, как её дыхание учащается...~ ~Совершенно измученная после продолжительных брызг и плавания, ты оказываешься совершенно мокрой в руках Сандры, лежащей на берегу.
+Остальные твои товарищи расположились на берегу поблизости, все совершенно голые и счастливые.
+Ты лениво ласкаешь идеальное тело Сандры, надолго задерживаясь на её розовых сосках, затвердевших от плавания.
+Ты чувствуешь, как её дыхание учащается...~
+@60137 =~Мы только что наблюдали, как Мистра наказывает за злоупотребление её силами?~
+@138 = ~Кусок ткани ~
+@139 = ~Кусок ткани ~
+@140 = ~Кусок ткани, который ты получил от Виконии, дроу-отступницы, священницы Шар.~ ~Кусок ткани, который ты получила от Виконии, дроу-отступницы, священницы Шар.~
+@141 = ~Кусок ткани, который ты получил от Виконии, дроу-отступницы, священницы Шар.
+Сандра смутно узнаёт часть узора на этом куске ткани, но не может вспомнить, где она могла его видеть. Тебе нужно больше кусочков этого пазла, чтобы понять его смысл.~ ~Кусок ткани, который ты получила от Виконии, дроу-отступницы, священницы Шар.
+Сандра смутно узнаёт часть узора на этом куске ткани, но не может вспомнить, где она могла его видеть. Тебе нужно больше кусочков этого пазла, чтобы понять его смысл.~
+@142 = ~Кусок ткани Динахейр~
+@143 = ~Кусок ткани Динахейр
+Кусок ткани, который что-то напоминает Сандре, хотя она ещё не может точно сказать, что. Его нашла ведьма рашеми Динахейр возле старого Моста Файервайн. Динахейр полагает, что он был потерян там очень давно, в период, который она назвала «смутным временем».~
+@144 = ~Кусок ткани Файервайна~
+@145 = ~Кусок ткани Файервайна
+У старика, бывшего охранника каравана, который сошел с ума после того, как он давным-давно потерял караван из-за нападения бандитов, был кусок разорванной ткани, который имеет отношение к чему-то из прошлого Сандры. Ты также узнал, что у путешественников, на которых когда-то напали бандиты у Моста Файервайн, были два младенца. Что с ними стало, неизвестно.~
+@146 = ~Полный кусок ткани~
+@147 = ~Восстановленный кусок ткани~
+@60148 = ~Странный кусок ткани
+
+Дроу-отступница Викония подарила сегодня Сандре странный кусок ткани, сказав, что он предназначен для моей спутницы богиней Шар. Сандра смутно узнаёт часть рисунка на ткани, но не может вспомнить, где она могла его видеть.~
+@149 = ~Молот Мистры~
+@150 = ~Молот Мистры~
+@151 = ~Молот Мистры
+
+Сандра получила этот зачарованный молот, когда училась на священницу. Его способности скрыты от всех, не благословлённых Мистрой.
+
+Особенности при экипировке:
+- Специальные: Сандра может усваивать магические навыки врагов, убитых эти молотом.
 ~
-@152 = ~Mystic Armour ~
-@153 = ~Sandrah's Chainmail~
-@154 = ~Sandrah's Chainmail
+@152 = ~Мистическая броня~
+@153 = ~Кольчуга Сандры~
+@154 = ~Кольчуга Сандры
 
-Can a chainmail be a fashionable item? This one can. 
-It is a powerful armour and at the same time it clings to Sandrah's body emphasising every female aspect of the young cleric's figure. The decoration is immune to any battle demolitions and is a work of art in the timeless style of Waterdeep.
+Может ли кольчуга быть модной вещью? Эта может. 
+Это мощная броня создана специально для Сандры, она повторяет и подчёркивает линии женской фигуры молодой священницы. Украшения на ней невосприимчивы к любым боевым разрушениям и представляют из себя произведение искусства в неподвластном времени стиле Вотердипа.
 
-Equipped Abilities: Remove Fear
+Особенности при экипировке:
+- Иммунитет к страху
 ~
-@60155 = ~A Strange Piece of Cloth - A Visitor
+@60155 = ~Странный кусок ткани - Посетитель
 
-     Alarming things have happened. We seem to have stirred our faceless 
-     enemy by finding a strange piece of cloth from the past. A wizard 
-     appeared out of nowhere with mysterious warnings.
-     But my courageous companion Sandrah has kept her cool and found a way to
-     gain some useful information out of the whole confusing mess. It looks as 
-     if a long past episode of history, the Time of Troubles, casts its dark
-     shadow to the present.
-     In a revolt for power against the overload Ao, several gods had once
-     attempted and failed to overthrow the order and stole the Tablets of Fate.
-     The renegades were slain and new gods were enthroned in their place. But 
-     this peace does not seem to be permanent. At least one of them - Bhaal - 
-     has spawned a dangerous seed on Faerun which just now starts to grow.
-     And it looks that me and my group have a part in that scheme without our       
-     knowledge...~
-@156 = ~Winski Perorate ~
-@157 = ~Mystra has blessed Sandrah with a special ability for her gained experience with the group.~
-@158 = ~My first rest after Sandrah has fallen. Why have I done nothing to resurrect her? Will maybe her father find her and take her home? ~
-@159 = ~Mystra's Hammer ~
-@160 = ~Mystra's Blessed Hammer ~
-@161 = ~Mystra's Blessed Hammer
+     Произошли тревожные события. Кажется, мы потревожили нашего безликого врага, найдя странный кусок ткани из прошлого. Из ниоткуда появился волшебник с таинственными предупреждениями.
+     Но моя смелая подруга Сандра сохранила хладнокровие и нашла способ извлечь полезную информацию из всей этой неразберихи. Кажется, что давно минувший исторический период - Смутное время отбрасывает свою тёмную тень на настоящее.
+     В восстании за власть против повелителя Ао, несколько богов однажды попытались и не смогли низвергнуть порядок, и украли Скрижали Судьбы. Изменники были убиты, и на их место взошли новые боги. Но этот мир не кажется постоянным. По крайней мере, один из тех богов - Баал - породил опасное семя в Фаэруне, которое только сейчас начинает расти. И похоже, что я и моя группа участвуем в этом без нашего ведома...~
+@156 = ~Вински Перорат~
+@157 = ~Мистра благословила Сандру, даровав особую способность за её опыт в группе.~
+@158 = ~Мой первый отдых после смерти Сандры. Почему я ничего не сделал, чтобы воскресить её? Может быть, её отец найдет её и заберёт домой?~ ~Мой первый отдых после смерти Сандры. Почему я ничего не сделала, чтобы воскресить её? Может быть, её отец найдет её и заберёт домой?~
+@159 = ~Молот Мистры~
+@160 = ~Благословенный молот Мистры ~
+@161 = ~Благословенный молот Мистры
 
-Sandrah received this blessed hammer after she had travelled with your group throughout the Sword Coast, gaining a high reputation for fighting for the good. Elminster himself was the messenger to deliver the gift from the goddess Mystra.
+Сандра получила этот благословенный молот после того, как путешествовала с твоей группой по Побережью Меча, заслужив высокую репутацию в сражениях за доброе дело. Сам Элминстер был посланником, доставившим дар богини Мистры.
 
-Equipped Abilities: Special, Sandrah can assimilate a magical ability from certain enemies slain by the hammer.
+Особенности при экипировке: особые, Сандра может получить магические способности некоторых врагов, убитых этим молотом.
 ~
 @162 = ~BGT required for installation!~
-@163 = ~Without Sandrah and her knowledge of the old map you cannot continue on to Waterdeep.~
-@164 = ~ North to Waterdeep 1 hour
-         South to Friendly Arm 20 hours~
-@165 = ~A Diary ~
-@166 = ~Diary of a Rashemen Scout ~
-@167 = ~You cannot decipher the foreign writing ~
-@168 = ~ ... today the Othlor has sent me to follow a group of travellers from Waterdeep. He thinks they are in possession of two of the creatures the master requires...
+@163 = ~Без Сандры и её знания старой карты ты не сможешь продолжить путь в Вотердип.~
+@164 = ~ На север - Вотердип - 1 час
+         На юг - Дружеская рука - 20 часов~
+@165 = ~Дневник ~
+@166 = ~Дневник рашемена-скаута ~
+@167 = ~Ты не можешь расшифровать иностранную запись~
+@168 = ~ ... сегодня Отлор послал меня следовать за группой путешественников из Вотердипа. Он думает, что они владеют двумя существами, которые требуются хозяину....
 ...
-...during endless days pursuing the small group. They carry two small ones indeed and are eagerly trying to hide their true destination by meandering across this damned land of the Sword Coast...
+...в течение бесконечных дней преследования маленькой группы. Они действительно несут двух младенцев и пытаются тщательно скрыть свою истинную цель путешествия, блуждая по этой проклятой земле Побережья Меча....
 ...
-...the group was attacked by a band of bandits before I could get close to at least one of the children. I was hiding in the brushes when I saw this DROW warrior priestess approaching...
-...now in these tunnels, I have escaped the bandit and the mysterious drow, but what is here inside? It is murmuring and slurring in the dark, encircling me...~
-@169 = ~Letter~
-@170 = ~Letter to Sandrah ~
-@171 = ~Letter to Sandrah
+...на группу напала банда бандитов, прежде чем я смог приблизиться хотя бы к одному из детей. Я спрятался в кустах, когда увидел эту приближающуюся жрицу-воительницу ДРОУ...
+...теперь в этих туннелях, я сбежал от бандита и таинственной дроу, но что здесь внутри? Какое-то журчание и невнятный шёпот в темноте, окружающей меня...~
+@169 = ~Письмо~
+@170 = ~Письмо к Сандре~
+@171 = ~Письмо к Сандре
 
-My dear daughter,
-Thou fareth well in the company of <CHARNAME> as the lore reaches me these days. Know that I appreciate thine taking action in matters important to thine heart. Mystra's blessing be on all thine deeds. You will steer thine new companions on a right course, such I trust mine daughter. Be not afraid to call for assistance all those thou knowest are on our side. I will see thee in time if thou do not find the way to thine father's place during thine venture.
+Моя дорогая дочка,
 
-A big kiss, my girl
+Хорошо, что <CHARNAME> в твоей компании, о чём я недавно узнал. Знай, что я понимаю твои действия и поступки, важные для твоего сердца. Да благословит тебя Мистра во всех твоих делах. Ты будешь направлять своих новых компаньонов на правильный путь, я верю своей дочери. Не бойся просить помощи у тех, кто, как ты знаешь, на нашей стороне. Мы увидимся с тобой позже, если ты до того не найдёшь возможности побывать дома во время твоего путешествия.
 
-(Here is an imprint of unknown nature)~
-@172  = ~Fur Coat ~
-@173  = ~Imoen's Pink Fur Coat~
-@174  = ~Imoen's Pink Fur Coat
+Целую тебя, моя девочка.
 
-This coat is a gift from Imoen's boyfriend Henning in Nashkel. It is made out of a young winter wolf's fur, that has been dyed to Imoen favourite colour - pink. It has further been enchanted by Helm's priest in Nashkel. Imoen loves to wear it for her loverboy with nothing else worn underneath. But at other times it is a magic coat to preserve her health and beauty between visits to the Nashkel shop and Henning.~
-@60175 = ~In want of winter wolf pelts.
+(Далее печать неизвестной природы)~
+@172  = ~Меховая шуба~
+@173  = ~Розовая меховая шуба Имоен~
+@174  = ~Розовая меховая шуба Имоен
 
-The Merchant of Nashkel has promised us gold if we were to bring back a winter wolf pelt.~
-@176 = ~Fat Man  ~
-@177 = ~Fat Man  ~
-@178 = ~Thin Woman ~
-@179 = ~Thin Woman ~
+Эта шуба - подарок друга Имоен - Хеннинга из Нашкеля. Она сделана из меха молодого зимнего волка, и окрашена в любимый цвет Имоен - розовый. Затем она была зачарована священником Хелма в Нашкеле. Имоен любит надевать её для своего любовника, когда под ней больше ничего нет. Но в остальном - это волшебная одежда для сохранения её здоровья и красоты между посещениями магазинов Нашкеля и Хеннинга.~
+@60175 = ~В поисках шкуры зимнего волка
+
+Нашкельский купец пообещал нам золото, если мы принесём ему шкуру зимнего волка.~
+@176 = ~Толстяк~
+@177 = ~Толстяк~
+@178 = ~Худая женщина~
+@179 = ~Худая женщина~
 @180 = ~Le Coq d'Or aux l'Eau Basse~
-@181 = ~Bloomwhiffler's Books and Maps ~
-@182 = ~Elminster's House~
-@183 = ~Horse ~
-@184 = ~Stallion~
-@185 = ~Suzanna~
-@60186 = ~The kidnapping of Henning
+@181 = ~Книги и карты Блумвайфлер~
+@182 = ~Дом Элминстера~
+@183 = ~Лошадь~
+@184 = ~Жеребец~
+@185 = ~Сюзанна~
+@60186 = ~Похищение Хеннинга
 
-A black day for all of us, but especially for Imoen. Instead of the happy reunion with her boyfriend, we found his shop at Nashkel empty and full of evidence of a heavy fight. The local mayor reported a bandit raid on the shop. It seems that our investigations and the reopening of the Nashkel mines by us have forced a large and mighty organisation to act against us. The trail leads to the uncharted Cloakwood Forest.~
+Чёрный день для всех нас, но особенно для Имоен. Вместо счастливого воссоединения со своим парнем, мы обнаружили его магазин в Нашкеле пустым и полным свидетельств ожесточенной драки. Местный мэр сообщил о нападении бандитов на магазин. Похоже, что наше расследование и возобновление работы шахт Нашкеля вынудили большую и сильную организацию действовать против нас. Следы ведут в не отмеченный на картах лес Клоаквуд.~
 @187 = ~ 
 
-You stand beside Sandrah on that fathomless tower of 
-Elminster's home.
-The whole of Faerun is lying below you.
+Ты стоишь рядом с Сандрой на этой непостижимой башне дома Элминстера.
+Перед тобой лежит весь Фаэрун.
 
-Your past lies to the south - just barely visible on the horizon.
-Your future waiting for you out there - somewhere.
+Твоё прошлое лежит на юге - его едва видно на горизонте.
+Твоё будущее ждёт тебя где-то ещё.
 
-But you are here now with her. This moment is yours and hers alone.
-And this feeling of love you have never felt before in your life...~
+Но сейчас ты здесь с ней. Этот момент принадлежит только тебе и ей.
+И это чувство любви, которого ты никогда раньше не испытывал...~
 @188 =  ~
 
-You stand beside Sandrah on that fathomless tower of 
-Elminster's home.
-The whole of Faerun is lying below you.
+Ты стоишь рядом с Сандрой на этой непостижимой башне дома Элминстера.
+Перед тобой лежит весь Фаэрун.
 
-Your past lies to the south - just barely visible on the horizon.
-Your future waiting for you out there - somewhere.
+Твоё прошлое лежит на юге - его едва видно на горизонте.
+Твоё будущее ждёт тебя где-то ещё.
 
-But you are here now with her. This moment is yours and hers alone.
-And this feeling of love you have never felt before in your life...~
-@189 = ~Khattark's Mage~
-@190 = ~Pelligram Dead~
-@191 = ~Sukia~
-@192 = ~I will not carry this Red Scum dirt on me!~
-@193 = ~Orc Cave~
-@194 = ~Telben Beeswaxler~
-@195 = ~Henning's Ring~
-@196 = ~Henning's Seal Ring~
-@197 = ~Henning's Seal Ring
+Но сейчас ты здесь с ней. Этот момент принадлежит только тебе и ей.
+И это чувство любви, которого ты никогда раньше не испытывал...~
+@189 = ~Маг Хаттарка~
+@190 = ~Мёртвый Пеллиграм~
+@191 = ~Сакия~
+@192 = ~Я не буду таскать на себе эту грязную Красную мразь!~
+@193 = ~Пещера Орка~
+@194 = ~Телбен Пчелиный воск~
+@195 = ~Кольцо Хеннинга~
+@196 = ~Печатка Хеннинга~
+@197 = ~Печатка Хеннинга
 
-At first sight the ring that Imoen has received from her lover Henning looks like a normal seal ring used by merchants to seal their business transactions. However this one also seems to have some magical enchantments. But even without those, Imoen would never part from this ring.~
-@198 = ~HELP!!  HELP!!~
-@199 = ~Your area map is updated~
-@60200  = ~A Strange Piece of Cloth - A Visitor
+На первый взгляд кольцо, которое Имоен получила в подарок от своего любовника Хеннинга, выглядит как обычное кольцо с печатью, используемое торговцами для заключения своих сделок. Однако у этого также есть магические чары. Но даже без них Имоен никогда не расстанется с этим кольцом.~
+@198 = ~НА ПОМОЩЬ!!  НА ПОМОЩЬ!!~
+@199 = ~Твоя карта обновлена~
+@60200  = ~Странный кусок ткани - Посетитель
 
-Alarming things have happened. We seem to have stirred our faceless enemy by finding a strange piece of cloth from the past. A wizard appeared out of nowhere with mysterious warnings. But my courageous companion Sandrah has kept her cool and found a way to gain some useful information out of the whole confusing mess. It looks as if a long past episode of history, the Time of Troubles, casts its dark shadow to the present.
-In a revolt for power against the overlord Ao, several gods had once attempted and failed to overthrow the order. The renegades were slain and new gods were enthroned in their place. But this peace does not seem to be permanent. At least one of them - Bhaal - has spawned a dangerous seed over Faerun which just now starts to grow.
-And it looks that me and my group have a part in that scheme without our knowledge...~
-@201 = ~Platform Shoes~
-@202 = ~A pair from Sandrah's endless collection of stylish boots and shoes. ~
-@203 = ~Wyvern Skin Boots~
-@204 = ~Nymph Hair Sandals~
-@205 = ~Elminster's Study~
-@206 = ~Garden~
-@207 = ~Sandrah's Quarters~
-@208 = ~Waterdeep~
-@209 = ~Rainbow Cloak~
-@210 = ~Snow Leopard Cloak~
-@211 = ~  One of the hundreds of robes and clothes from Sandrah's wardrobe. As any item from her father's house some unknown magical enchantment has been added to the cloth.~
-@60212 = ~A Book for Finch
+Произошли тревожные события. Кажется, мы потревожили нашего безликого врага, найдя странный кусок ткани из прошлого. Из ниоткуда появился волшебник с таинственными предупреждениями. Но моя смелая подруга Сандра сохранила хладнокровие и нашла способ извлечь полезную информацию из всей этой неразберихи. Кажется, что давно минувший исторический период - Смутное время отбрасывает свою тёмную тень на настоящее.
+В восстании за власть против повелителя Ао, несколько богов однажды попытались и не смогли низвергнуть порядок. Изменники были убиты, и на их место взошли новые боги. Но этот мир не кажется постоянным. По крайней мере, один из тех богов - Баал - породил опасное семя в Фаэруне, которое только сейчас начинает расти. И похоже, что я и моя группа участвуем в этом без нашего ведома...~
+@201 = ~Туфли на платформе~
+@202 = ~Пара из бесконечной коллекции стильных ботинок и туфель Сандры.~
+@203 = ~Сапоги из кожи виверны~
+@204 = ~Сандалии из волос нимфы~
+@205 = ~Кабинет Элминстера~
+@206 = ~Сад~
+@207 = ~Квартира Сандры~
+@208 = ~Вотердип~
+@209 = ~Радужная мантия~
+@210 = ~Мантия снежного барса~
+@211 = ~Одна из сотен мантий и вещей из гардероба Сандры. Как и на любой предмет из отцовского дома, на неё были наложены какие-то неизвестные магическое чары.~
+@60212 = ~Книга для Финч
 
-Clarissa Bloomwhiffler, a relative of Finch in Waterdeep has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch is delighted of this special gift for her library and would not part with it under any circumstances.~
-@60213 = ~A Strange Piece of Cloth - Reconstructed
+Кларисса Блумвайффлер, родственница Финч из Вотердипа, дала нам копию очень редкого эссе Монтилы "О Добродетели Мудрости". Финч в восторге от этого особого подарка для своей библиотеки и не расстанется с ней ни при каких обстоятельствах.~
+@60213 = ~Странный кусок ткани - восстановлен
 
-During your travels all over the Sword Coast, you and Sandrah have found three pieces of a strange cloth in various places. With the third piece in hand, you are finally able to reconstruct it. The reconstruction has given Sandrah the necessary clues. It is a bed cloth from Elminster's and Khalindra's household. 
-Obviously it was used for Khalindra's second baby, the Bhaalspawn, during the time when it travelled from Waterdeep to an unknown destination in order to hide it from several groups of pursuers. 
-But why this was done? 
-Who were the pursuers?  
-Who were the ones trying to hide and rescue this child along with another one of the same godly heritage?
-Those are the questions you now ponder.
+Путешествуя по Побережью Меча, вы с Сандрой нашли в разных местах три куска странной ткани. Найдя третий кусок, ты, наконец, можешь его восстановить. Восстановление дало Сандре необходимые подсказки. Это пелёнка из дома Элминстера и Халиндры.
+Очевидно, она использовалась для второго ребёнка Халиндры, порождения Баала, в то время, когда его унесли из Вотердипа в неизвестное место, чтобы спрятать от нескольких групп преследователей. 
+Но зачем это было сделано?
+Кто были эти преследователи?
+Кто пытался спрятать и спасти этого ребенка вместе с другим ребёнком того же божественного происхождения?
+Это вопросы, над которыми ты сейчас размышляешь.
 
-You can think of only one person to be able to shed some light on these issues
-  - Sandrah's father, Elminster himself. ~
-@214 = ~ You are able to reconstruct the mysterious cloth, having found three of the pieces. ~
-@215 = ~ INTRUDERS!!~
-@216 = ~ We must destroy this watcher with ranged weapons to stop him calling reinforcements!~
-@217 = ~ Academy Watcher~
-@218 = ~ The door to the inside is now accessible~
-@219 = ~ A secret exit has been opened~
-@220 = ~Exit to Waterdeep~
-@221 = ~Plan, Part1 ~
-@222 = ~Plan, Part2 ~
-@223 = ~Plan, Part3 ~
-@224 = ~Plan, Part4 ~
-@225 = ~Plan, Part1
+Есть только одна персона, которая может пролить свет на эти вопросы.
+   - Это отец Сандры, сам Элминстер. ~
+@214 = ~ Вы можете восстановить таинственную ткань, найдя все три части. ~
+@215 = ~ САМОЗВАНЦЫ!!~
+@216 = ~ Мы должны уничтожить этого наблюдателя оружием дальнего боя, чтобы он не вызвал подкрепление!~
+@217 = ~ Наблюдатель Академии~
+@218 = ~ Дверь внутрь теперь доступна~
+@219 = ~ Секретный выход открыт~
+@220 = ~Выход в Вотердип~
+@221 = ~План, часть 1~
+@222 = ~План, часть 2~
+@223 = ~План, часть 3~
+@224 = ~План, часть 4~
+@225 = ~План, часть 1
 
-Our various groups will stir all kinds of trouble, including random murder of respected citizens in Baldur's Gate and Beregost to keep the Flaming Fist occupied.~
-@226 = ~Plan, Part2 
+Наши различные группы будут создавать всевозможные неприятности, включая случайные убийства уважаемых граждан во Вратах Балдура и Берегосте, чтобы сдержать силы Пламенного Кулака.~
+@226 = ~План, часть 2 
 
-The continuous trouble will be accompanied by propaganda calling for a strong man to solve it all. Measures need to be taken to replace General Jedyan, as he may be respected by the population in such a role.~
-@227 = ~Plan, Part3
+Беспрерывные беды будут сопровождаться пропагандой призвать сильного мужчину всё это решить. Необходимо принять меры для замены генерала Джедьяна, поскольку народ может призвать его на эту роль.~
+@227 = ~План, часть 3
 
-Establish operation base at Friendly Arm. The location between Baldur's Gate and Beregost controls all exchange and travel between the two. The inn is already armed like a fortress. Nothing can suit our purpose better.~
-@228 = ~Plan, Part4
+Создать оперативную базу в Дружеской Руке. Расположенная между Вратами Балдура и Берегостом, она контролирует всю торговлю и путешествия между ними. Гостиница уже защищена, как крепость. Ничто не может лучше соответствовать нашим целям.~
+@228 = ~План, часть 4
 
-Infiltrate Baldur's Gate Council. The reigning dukes will already be much discredited by the ongoing trouble, the next step to be detailed at our forthcoming meeting will be to finally replace the Dukes and assume reign over the city ourselves.~
-@229 = ~High Sorceress Lyndy~
-@230 = ~High Sorceress Renata~
-@231 = ~Legencase Fibula~
-@232 = ~Legencase Fibula
+Проникнуть в совет Врат Балдура. Правящие герцоги уже будут сильно дискредитированы непрекращающимися проблемами, следующим шагом, который будет подробно объяснён на нашей предстоящей встрече, будет окончательная замена герцогов и принятие на себя власти над городом.~
+@229 = ~Верховная колдунья Линди~
+@230 = ~Верховная колдунья Рената~
+@231 = ~Легенкейская фибула~
+@232 = ~Легенкейская фибула
 
-A symbol worn by the members and pupils of the Academy of Legencase. Sandrah, who has infiltrated the Academy once disguised as apprentice, proposed to bring the item to her father. With the help of the Fibula and Elminster's Shard it may be possible to pay a visit to the place and clarify the involvement of the sorcerers in the affairs of Baldur's Gate. ~
-@233 = ~Legencase Journal~
-@234 = ~Legencase Journal
+Символ, который носят члены и ученики Академии Легенкейса. Сандра, которая проникла в Академию, когда-то переодевшись ученицей, предложила принести этот предмет своему отцу. С помощью Фибулы и Кристалла Элминстера можно будет посетить это место и выяснить причастность колдунов к делам во Вратах Балдура.~
+@233 = ~Легенкейский журнал~
+@234 = ~Легенкейский журнал
 
-A comprehensive plan restored from the notes and orders of the High Sorceresses of Legencase. Together they paint a cruel picture of how the Grey Clan organisation had intended to undermine Baldur's Gate, take over the reign and make the Sword Coast a playground for their further aim at power in the Realms. You are fortunate to have interfered with their plans at an early stage. Tergius and Elminster will be delighted about this evidence.~
-@235 = ~There is no possibility to go back this way.~
-@236 = ~Wounded Orc~
-@237 = ~UUUAAAH!~
-@600238 = ~Sandrah's Heritage - The second child
+Исчерпывающий план, восстановленный из заметок и приказов верховных колдуний Легенкейса. Вместе они рисуют жестокую картину того, как организация Серого Клана намеревалась подорвать Врата Балдура, захватить власть и превратить Побережье Меча в площадку для их дальнейшего стремления к власти в Королевствах. Тебе повезло, что ты вмешался в их планы на раннем этапе. Тергиус и Элминстер будут в восторге от этого свидетельства.~ ~Легенкейский журнал
 
-I am convinced by now that Sandrah's and my own stories are entwined. There is a Bhaalspawn in her past, and it looks like my heritage is somehow connected to Bhaal as well. Elminster has been following us around all the time since I had to leave Candlekeep and it was not to oversee his daughter's activities. We will go to Waterdeep and his time I will get some answers from him.~
-@239 = ~Mystra's Altar~
-@240 = ~TAKE THIS SYMBOL OF WHAT YOU ARE!~
-@241 = ~TAKE A LOOK AT WHO YOU ARE FROM THE TOWER THAT OVERLOOKS THE REALMS!~
-@242 = ~Khalindra's Baby ~
-@243 = ~Khalindra's Baby
+Исчерпывающий план, восстановленный из заметок и приказов верховных колдуний Легенкейса. Вместе они рисуют жестокую картину того, как организация Серого Клана намеревалась подорвать Врата Балдура, захватить власть и превратить Побережье Меча в площадку для их дальнейшего стремления к власти в Королевствах. Тебе повезло, что ты вмешалась в их планы на раннем этапе. Тергиус и Элминстер будут в восторге от этого свидетельства.~
+@235 = ~Вернуться по этому пути нет возможности.~
+@236 = ~Раненый орк~
+@237 = ~УУУАААХ!~
+@600238 = ~Наследие Сандры - Второй ребёнок
 
-You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
+В настоящее время я убеждён, что история Сандры и моя собственная переплетаются. В её прошлом было порождение Баала, и, похоже, моё происхождение тоже так или иначе связано с Баалом. Элминстер следил за нами всё время с тех пор, как мне пришлось покинуть Кендлкип, и это было не для того, чтобы следить за действиями своей дочери. Мы отправимся в Вотердип, и тогда я получу от него несколько ответов.~ ~Наследие Сандры - Второй ребёнок
 
-@244 = ~ Khalindra's Baby
+В настоящее время я убеждена, что история Сандры и моя собственная переплетаются. В её прошлом было порождение Баала, и, похоже, моё происхождение тоже так или иначе связано с Баалом. Элминстер следил за нами всё время с тех пор, как мне пришлось покинуть Кендлкип, и это было не для того, чтобы следить за действиями своей дочери. Мы отправимся в Вотердип, и тогда я получу от него несколько ответов.~
+@239 = ~Алтарь Мистры~
+@240 = ~ПРИМИ ЭТОТ СИМВОЛ ТОГО, ЧТО ТЫ ЕСТЬ!~
+@241 = ~ПОСМОТРИ, КТО ТЫ, С БАШНИ, ОТКУДА ВИДНО ВСЕ КОРОЛЕВСТВА!~
+@242 = ~Ребёнок Халиндры~
+@243 = ~Ребёнок Халиндры
 
-You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You see that the baby was a little girl.~
-@245 = ~ A keystone is required to pass to the lower level.~
-@246 = ~ Keystone Part ~
-@247 = ~ Left Keystone Part ~
-@248 = ~ Right Keystone Part ~
-@249 = ~ One part of the keystone required to enter the orc prison in Cloakwood. You need both parts to access the prison that may hold Imoen's friend Henning.~
-@250 = ~ Henning's Body~
-@251 = ~ Henning's Body
+Ты держишь в руках точную копию ребёнка Халиндры. Он завёрнут в пелёнку того же дизайна, что ты видел здесь, в доме Элминстера. Узор можно найти на двери, ведущей в покои Сандры и её башню. Ты не можешь определить пол ребенка.~ ~Ребёнок Халиндры
 
-Henning has been badly injured by Knawlod. Sandrah suggests, that only her father at Waterdeep will be able to provide the necessary healing.~
-@252 = ~ Purse~
-@253 = ~ Travenhurst's Purse~
-@254 = ~ Travenhurst's Purse
+Ты держишь в руках точную копию ребёнка Халиндры. Он завёрнут в пелёнку того же дизайна, что ты видела здесь, в доме Элминстера. Узор можно найти на двери, ведущей в покои Сандры и её башню. Ты не можешь определить пол ребенка.~
 
-This bag containing 9500GP was found on the dead kidnapper Knowlod, who had worked for the Beregost nobleman Gerard Travenhurst. The bag has the family emblem and the seal of Travenhurst on it. 
-It will be evidence for the involvement of the council member in the Iron Throne's intrigues on the Sword Coast as well as his role in the kidnapping of Henning. 
-The major of Beregost will have a large interest in this item. 
-Or maybe you and Imoen want to confront the *nobleman* yourself?~
-@255 = ~Gerard Travenhurst~
-@256 = ~Houseguard~
-@257 = ~ Journal~
-@258 = ~ Travenhurst's Journal~
-@259 = ~ Travenhurst's Journal
+@244 = ~Ребёнок Халиндры
 
-The journal of the former nobleman contains a lot of information about his involvement with the Iron Throne and a man named Sarevok, sometimes spelled backwards as Koveras. The detailed protocol seemed to be intended for a possible blackmail of those at Baldur's Gate should they intend to act against Travenhurst.~
-@260 = ~Iron Throne Mage~
-@261 = ~ Deed of Ownership~
-@262 = ~ Deed of Ownership
+Ты держишь в руках точную копию ребёнка Халиндры. Он завёрнут в пелёнку того же дизайна, что ты видел здесь, в доме Элминстера. Узор можно найти на двери, ведущей в покои Сандры и её башню. Ты видишь, что ребёнок был маленькой девочкой.~ ~Ребёнок Халиндры
 
-This deed certifies the ownership of the house and grounds at Beregost known as the *Travenhurst Estate* by one half each to Imoen of Candlekeep and Henning of Nashkel. 
+Ты держишь в руках точную копию ребёнка Халиндры. Он завёрнут в пелёнку того же дизайна, что ты видела здесь, в доме Элминстера. Узор можно найти на двери, ведущей в покои Сандры и её башню. Ты видишь, что ребёнок был маленькой девочкой.~
+@245 = ~ Для перехода на нижний уровень требуется краеугольный камень.~
+@246 = ~ Часть краеугольного камня ~
+@247 = ~ Левая часть краеугольного камня ~
+@248 = ~ Правая часть краеугольного камня ~
+@249 = ~ Это часть краеугольного камня, необходимого для входа в тюрьму орков в Клоаквуде. Тебе нужны обе части, чтобы попасть в тюрьму, в которой может находиться друг Имоен - Хеннинг.~
+@250 = ~ Тело Хеннинга~
+@251 = ~ Тело Хеннинга
+
+Хеннинг был тяжело ранен Ноулодом. Сандра полагает, что только её отец в Вотердипе может его исцелить.~
+@252 = ~ Кошелёк~
+@253 = ~ Кошелёк Травенхерста~
+@254 = ~ Кошелёк Травенхерста
+
+Этот кошелёк с 9500 золотых был найден у мёртвого похитителя Ноулода, который работал на дворянина из Берегоста Джерарда Травенхерста. На кошельке есть фамильный герб и печать Травенхерста.
+Это будет доказательством причастности члена совета к проискам Железного Трона на Побережье Меча, а также его роли в похищении Хеннинга.
+Этот предмет сильно заинтересует мэра Берегоста.
+Или, может быть, ты и Имоен сами хотите противостоять *дворянину*?~
+@255 = ~Джерард Травенхерст~
+@256 = ~Охранник дома~
+@257 = ~ Журнал~
+@258 = ~ Журнал Травенхерста~
+@259 = ~ Журнал Травенхерста
+
+В журнале бывшего дворянина содержится много информации о его причастности к Железному трону и мужчине по имени Саревок, который иногда пишет своё имя наоборот - Коверас. Подробный протокол, кажется, был предназначен для возможного шантажа тех, кто находится во Вратах Балдура, если они вознамерятся действовать против Травенхерста.~
+@260 = ~Маг Железного Трона~
+@261 = ~ Документ на право собственности~
+@262 = ~ Документ на право собственности
+
+Этот документ удостоверяет право собственности на дом и землю в Берегосте, известную как *Особняк Травенхерста*, в равных долях Имоен из Кендлкипа и Хеннинга из Нашкеля.
   
-  Signed and sealed by the rightful former owner, of sound mind and disposing memory.
-  Gerard Travenhurst
+   Подпись и печать законного бывшего владельца, в здравом уме и твёрдой памяти.
+   Джерард Травенхерст
   
-  Signed by the witnesses
-  Sandrah of Waterdeep
-  <CHARNAME> of Candlekeep.~
-@263 = ~Imoen is the owner of a large mansion in Beregost now.~
-@264 = ~Sister Revianel ~
-@265 = ~Bite~
-@266 = ~Ring of Immunity~
-@267 = ~This ring gives immunity to all spells, attacks and detections for permanently invisible creatures.~
-@268 = ~Wolf Attribute Item~
-@269 = ~This item gives the wolf its innate features like slow regeneration.~
-@270 = ~Haiass' Whistle~
-@271 = ~It looks like a woodwind whistle.~
-@272 = ~During your last years in Candlekeep, you taught Haiass how to answer to your call with this whistle.
+   Подписано свидетелями:
+   Сандра из Вотердипа
+   <CHARNAME> из Кендлкипа~
+@263 = ~Имоен теперь владелица большого особняка в Берегосте.~
+@264 = ~Сестра Ревианель ~
+@265 = ~Укус~
+@266 = ~Кольцо иммунитета~
+@267 = ~Это кольцо даёт иммунитет ко всем заклинаниям, атакам и обнаружению для постоянно невидимых существ.~
+@268 = ~Атрибут волка~
+@269 = ~Этот предмет наделяет волка таким природным свойством, как медленная регенерация.~
+@270 = ~Свисток Хайасса~
+@271 = ~Это, похоже, деревянный свисток.~
+@272 = ~Во время пребывания в Кендлкипе ты научил Хайасса отвечать на свист этого свистка.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-The whistle can be used to call Haiass, as long as he is in the same area as you.~
-@273  = ~Endrath~
-@274  = ~Fallen Priest~
-@275  = ~Slaver Orc~
-@276  = ~Quedlima~
-@277  = ~Red Wizard~
-@278 = ~Sandrah has released Quedlima from her spell prison.~
-@279 = ~Torm's Justice~
-@280 = ~Helm's Eye~
-@281 = ~Korlasz is defeated, and the last of Sarevok's influence died with her. Your foster father, Gorion, has been avenged. Many of those who helped you thwart your half-brother's schemes drift away from you, returning to their lives. Even Imoen has taken the opportunity to learn more about her arcane abilities with help of Duke Liia Jannath. 
+Этот свисток можно использовать для вызова Хайасса, если он находится в той же области, что и ты.~ ~Во время пребывания в Кендлкипе ты научила Хайасса отвечать на свист этого свистка.
 
-For the first time since you left Candlekeep, you have the opportunity to reflect on the astonishing turns your life has taken.
+ПАРАМЕТРЫ:
 
-Though you are feted by the rulers of Baldur's Gate, a sense of unease plagues you. You can't help but hear the rumors, the whispers that you share the same dark blood as Sarevok. Some hint you killed your half-brother not for the good of the city, but so you could usurp his place and his power. For the moment, however, your persecutors' voices are drowned out by an ever-growing number of others with more immediate concerns.
+Этот свисток можно использовать для вызова Хайасса, если он находится в той же области, что и ты.~
+@273  = ~Эндрат~
+@274  = ~Падший священник~
+@275  = ~Орк рабовладелец~
+@276  = ~Кведлима~
+@277  = ~Красный Волшебник~
+@278 = ~Сандра освободила Кведлиму из её магической тюрьмы.~
+@279 = ~Правосудие Торма~
+@280 = ~Взгляд Хелма~
+@281 = ~Корлаз повержена, и последняя капля влияния Саревока сгинула вместе с ней. Твой приёмный отец, Горайон, был отомщен сполна. Многие, кто помогал тебе сорвать махинации твоего сводного брата, ушли, возвратясь к нормальной жизни. Даже Имоен воспользовалась возможностью узнать больше о своих магических способностях при помощи герцогини Лии Джаннат.
 
-Every day, more refugees driven from their homes by the servants of Caelar Argent arrive at the city gates. Many have stories of the Shining Lady's grace; all have tales of her followers' wrath.
+Впервые за столь долгое время, после ухода из Кендлкипа, у тебя появилась возможность поразмышлять об удивительных событиях, перевернувших твою жизнь.
 
-A tenday after Korlasz's defeat, you retire to your chamber in the Ducal Palace, your thoughts troubled. You wonder what effect Caelar's crusade will have on Baldur's Gate, little knowing how close at hand the answer is...~
-@282 = ~Yondalla's Blessing~
-@283 = ~L'Urieet Yantyrr~
-@284 = ~Jen'lig~
-@285 = ~ Clan Chainmail~
-@286 = ~ Clan Chainmail
+Несмотря на выражение восхищения от правителей Врат Балдура, чувство беспокойства не покидает тебя. Вокруг поползли слухи, шёпот о том, что у тебя с Саревоком общая кровь - чёрная кровь. Некоторые полагают, что ты убил своего сводного брата в целях узурпировать его место и обрести власть, а не для блага города. Однако, сейчас голоса этих угнетателей тонут в растущем числе других голосов, с более неотложными проблемами.
+
+Ежедневно к городским вратам приходят всё больше беженцев, оказавшихся изгнанными из своим домов прислужниками Каэлар Аргент. У большинства имеются истории о милости Сияющей Леди, и о её фанатичных последователях.
+
+Десять дней миновало после поражения Корлаз, с тревожными мыслями ты ложишься спать в своей комнате во Дворце Герцогов. Ты задумываешься о том, как крестовый поход Каэлар может сказаться на Вратах Балдура, даже не подозревая, что ответ уже совсем близко...~ ~Корлаз повержена, и последняя капля влияния Саревока сгинула вместе с ней. Твой приёмный отец, Горайон, был отомщен сполна. Многие, кто помогал тебе сорвать махинации твоего сводного брата, ушли, возвратясь к нормальной жизни. Даже Имоен воспользовалась возможностью узнать больше о своих магических способностях при помощи герцогини Лии Джаннат.
+
+Впервые за столь долгое время, после ухода из Кендлкипа, у тебя появилась возможность поразмышлять об удивительных событиях, перевернувших твою жизнь.
+
+Несмотря на выражение восхищения от правителей Врат Балдура, чувство беспокойства не покидает тебя. Вокруг поползли слухи, шёпот о том, что у тебя с Саревоком общая кровь - чёрная кровь. Некоторые полагают, что ты убила своего сводного брата в целях узурпировать его место и обрести власть, а не для блага города. Однако, сейчас голоса этих угнетателей тонут в растущем числе других голосов, с более неотложными проблемами.
+
+Ежедневно к городским вратам приходят всё больше беженцев, оказавшихся изгнанными из своим домов прислужниками Каэлар Аргент. У большинства имеются истории о милости Сияющей Леди, и о её фанатичных последователях.
+
+Десять дней миновало после поражения Корлаз, с тревожными мыслями ты ложишься спать в своей комнате во Дворце Герцогов. Ты задумываешься о том, как крестовый поход Каэлар может сказаться на Вратах Балдура, даже не подозревая, что ответ уже совсем близко...~
+@282 = ~Благословение Йондаллы~
+@283 = ~Л'Уриит Янтирр~
+@284 = ~Джен'лиг~
+@285 = ~ Кольчуга Клана~
+@286 = ~ Кольчуга Клана
  
- Despite its orcish origin, this chainmail is an excellently crafted piece of equipment. It allows Shauhana to develop her fledgling mage abilities without losing her fighter protection.
+Несмотря на орочье происхождение, эта кольчуга представляет собой прекрасно сделанное снаряжение. Она позволяет Шаухане развивать свои магические способности, не теряя защиты воина.
  
- STATISTICS:
+ПАРАМЕТРЫ:
 
-Equipped Abilities:
- Saving Throws: +3 bonus vs. death
+Особенности при экипировке:
+  Спасброски: +3 против смерти
 
-Armor Class: 3
-Usable by creatures with a fraction of orcish blood only.~
-@287 = ~ Shauhana's Sword~
-@288 = ~ Shauhana's Sword
+Класс защиты: 3
+Может используется только существами с какой-то долей крови орков.~
+@287 = ~ Меч Шауханы~
+@288 = ~ Меч Шауханы
 
-Shauhana prefers the use of her bow and only uses her flamesword when unavoidable. The orcish weapon had belonged to her father and was not given voluntarily to a daughter with only a part of orcish blood in her.~
-@289 = ~ Shauhana's Bow~
-@290 = ~ Shauhana's Bow
+Шаухана предпочитает использовать свой лук, и использует этот огненный меч только тогда, когда это неизбежно. Это оружие орков принадлежало её отцу и не было отдано добровольно дочери, в которой лишь часть орочьей крови.~
+@289 = ~ Лук Шауханы~
+@290 = ~ Лук Шауханы
 
-Shauhana becomes silent whenever the question of her relation to magic arts is addressed. She is the only female part-orc you have ever heard of to have any magic abilities. The origin of her bow is mysterious as well - it is clearly not orcish.
-The bow requires no arrows but spits out salves of magical arrows when used by Shauhana, making her a kind of one-woman army against large groups of foes.~
-@673 = ~ Shauhana's roots are a mystery on its own. The beautiful young woman shows no visible signs of her orcish heritage at first. Both her parents were only half-orcs themselves, but Shauhana grew up in the orc clan environment of the Stormhorn Mountains. More of her past was not revealed by the escaped slave-girl, but you are sure you will find it out over time when you and Sandrah built up a closer relationship with your new companion.~
-@291 = ~ Clan Orc~
-@292 = ~ Clan Hound~
-@293 = ~ Should we not help her?~
-@294 = ~ It seems she is quite capable on her own.~
-@295 = ~ Swamp Caves~
-@296 = ~ Mage Book~
-@297 = ~ Shauhana's Book~
-@298 = ~ Shauhana's Book - Part One
+Шаухана молчит всякий раз, когда ей задают вопрос о её отношении к магическому искусству. Она единственная женщина-полуорк, о которой ты когда-либо слышал, которая обладает какими-то магическими способностями. Загадочно также происхождение её лука - он явно не ороков.
+Для лука не нужны стрелы, но при использовании Шауханой он посылает тучи магических стрел, что делает её своего рода армией из одной женщины против больших групп врагов.~ ~ Лук Шауханы
 
-A strange book to be found on an orc. Shauhana received it from her involuntary teacher Brage, who was caught by her Clan and put to the arena pits where she was enslaved. The mentally deceased fighter taught the half-orc girl the human language and reading. At least for one part of the book. The first part of it is written in an unknown script while the second part is an unfinished translation to the human language. The book contains very ancient mage lore and the second unknown part may contain even stranger secrets. ~
-@299 = ~ Shauhana's Book - Part Two
+Шаухана молчит всякий раз, когда ей задают вопрос о её отношении к магическому искусству. Она единственная женщина-полуорк, о которой ты когда-либо слышала, которая обладает какими-то магическими способностями. Загадочно также происхождение её лука - он явно не ороков.
+Для лука не нужны стрелы, но при использовании Шауханой он посылает тучи магических стрел, что делает её своего рода армией из одной женщины против больших групп врагов.~
+@673 = ~Происхождение Шауханы само по себе является загадкой. С виду у красивой молодой женщины не заметно никаких признаков орочьего происхождения. Оба её родителя сами были полуорками, но Шаухана выросла среди клана орков в Горах Штормовых Пиков. Ничего больше из её прошлого беглая рабыня не раскрывает, но ты уверен, что узнаешь больше со временем, когда ты и Сандра построите более близкие отношения со своей новой спутницей.~ ~Происхождение Шауханы само по себе является загадкой. С виду у красивой молодой женщины не заметно никаких признаков орочьего происхождения. Оба её родителя сами были полуорками, но Шаухана выросла среди клана орков в Горах Штормовых Пиков. Ничего больше из её прошлого беглая рабыня не раскрывает, но ты уверена, что узнаешь больше со временем, когда ты и Сандра построите более близкие отношения со своей новой спутницей.~
+@291 = ~ Орк Клана~
+@292 = ~ Гончая Клана~
+@293 = ~ Мы не должны ей помочь?~
+@294 = ~ Кажется, она вполне способна сама.~
+@295 = ~ Болотные пещеры~
+@296 = ~ Книга мага~
+@297 = ~ Книга Шауханы~
+@298 = ~ Книга Шауханы - Часть первая
 
-Sandrah has identified the script of the original book as being of an old extinguished elven accent, that is even unknown to the elves and half-elves of today. One of the topics mentioned as far as Sandrah is able to decipher it by comparing it to some known inscriptions found on the Sword Coast that are recorded in her own encyclopaedic tome, is the legendary Sharkta Fai.
-Sharkta Fai - according to both elvish and orcish belief - is a fountain that is said to restore the bodies of those who have fallen in battle before they go hale to the next world after life. Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enormous power but also will gain endless life.~
+Странно, что эта книга оказалась у орка. Шаухана получила её от своей невольной учительницы Брэйдж, которая была схвачена её кланом и брошена на арену, как рабыня. Психически сломленный боец научила девушку-полуорка человеческому языку и чтению. По крайней мере, одной части книги. Первая часть написана на неизвестном языке, а вторая часть - незаконченный перевод на человеческий язык. Книга содержит очень древние знания магов, а другая неизвестная часть может содержать ещё более странные секреты. ~
+@299 = ~ Книга Шауханы - Часть вторая
 
-@300 = ~ Orc Shaman's Staff~
-@301 = ~ Orc Shaman's Staff
+Сандра определила, что подлинник оригинальной книги написан на старинном эльфийском диалекте, который не известен даже нынешним эльфам и полуэльфам. Одна из упомянутых тем, насколько Сандра смогла расшифровать, сравнивая её с некоторыми известными надписями, найденными на Побережье Меча, которые записаны в её собственном энциклопедическом фолианте, - это легендарный Шаркта Фай.
+Шаркта Фай - согласно верованиям как эльфов, так и орков - это источник, который, как говорят, восстанавливает тела тех, кто пал в бою, прежде чем они отправятся в загробный мир. Однако некоторые некроманты считают, что если живое существо искупается в источнике, оно не только восстановится, но и получит вечную жизнь.~
 
-The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length.  Masterwork quarterstaffs are made of stout oak and are shod with metal at both ends.  This one is particularly special as it has been imbued with magical properties.~
-@302 = ~ Hornswamp Cave Staff
+@300 = ~ Посох Орка Шамана~
+@301 = ~ Посох Орка Шамана
 
-Besides being a magical weapon, this orc staff also will remove the orc rune that blocks the passage out of the caves from the Clan's land in the Stormhorns.~
-@303 = ~ Clan Orc's Ghost~
-@304 = ~ Orc Rune
-The sacred orc rune needs to be dispelled, before you can pass the cave exit.~
-@305 = ~ Caves~
-@306 = ~ Orc Village~
-@307 = ~ Sharkta Fai~
-@308 = ~ The sign shows elvish and orcish runes
-         West to Village
-         East to Hornswamp
-         North (old elven runes)~
-@309 = ~ Clan Arch Shaman~
-@310 = ~ Vennegrat~
-@311 = ~ You will not escape, godchild!~ 
-@312 = ~ Pool of Sharkta Fai
-Shauhana should step inside to be restored.~
-@313 = ~ Sharkta Fai Jewel~
-@314 = ~ Sharkta Fai Jewel
+Самый простой и скромный посох представляет собой палку длиной от шести до девяти футов. Посохи работы мастеров сделаны из прочного дуба и окованы металлом с обоих концов. Этот очень особенный, так как наделён магическими свойствами.~
+@302 = ~ Посох пещеры Болотного Рога
 
-When put on the altar of the Sharkta Fai temple, this jewel will emerge a beam of light indicating the entrance to the Sharkta Fai Pool~
-@315 = ~ Clan Jailor~
-@316 = ~ Clan Shaman's Body ~
-@317 = ~ Body of Shauhana's Shaman Mentor
+Помимо того, что это магическое оружие, этот орочий посох также удаляет руну орков, которая блокирует выход из пещер на землях Клана в Штормовых Рогах.~
+@303 = ~ Призрак Орка Клана~
+@304 = ~ Руна Орков
+Священную руну орков нужно развеять, прежде чем ты сможешь выйти из пещеры.~
+@305 = ~ Пещеры~
+@306 = ~ Деревня Орков~
+@307 = ~ Шаркта Фай~
+@308 = ~ На указателе изображены эльфийские и орочьи руны.
+         На запад - в деревню
+         На восток - к Болотному Рогу
+         На север - (старинная эльфийская руна)~
+@309 = ~ Шаман Клана Арки~
+@310 = ~ Веннеграт~
+@311 = ~ Ты не спасёшься, дитя бога!~ 
+@312 = ~ Бассейн Шаркта Фай
+Шаухана должна войти в него, чтобы восстановиться.~
+@313 = ~ Драгоценный камень Шаркта Фай~
+@314 = ~ Драгоценный камень Шаркта Фай
 
-The Clan has tortured and killed Shauhana's old mentor for helping the slave girl to escape. Shauhana insists on taking his body to Sharkta Fai, so he can enter the Other World as a fallen warrior. She claims that he had died defending her life in a selfless way unknown to orcs in general.~
-@318 = ~ The road to Sharkta Fai is now open in the north.~
-@319 = ~ Sharkta Fai Guardian~
-@320 = ~ You need a fallen warrior's body to enter Sharkta Fai.~
-@321 = ~ Nashkel Refugee~
-@322 = ~Summon Noble Dragon~
-@323 = ~Ajantis' Letter to Sandrah~
-@324 = ~Ajantis' Letter to Sandrah
+Если этот камень поместить на алтарь храма Шаркта Фай, из него появится луч света, указывающий на вход в бассейн Шаркта Фай.~
+@315 = ~ Тюремщик Клана~
+@316 = ~ Тело Шамана Клана ~
+@317 = ~ Тело Шамана - наставника Шауханы
 
-Ajantis has left this letter for Sandrah, explaining his reasons to leave the group. It is a thick package and it is sealed. Only Sandrah needs to know about the paladins deepest thoughts and his feelings for her.~
-@325 = ~ Pirate Zombie~
-@326 = ~ Pirate Commander Zombie~
-@327 = ~ Pirate Treasure~
-@328 = ~ Pirate Treasure
+Клан замучил и убил старого наставника Шауханы за то, что тот помог девушке-рабыне сбежать. Шаухана настаивает на том, чтобы отнести его тело в Шаркта Фай, чтобы он смог войти в Другой Мир, как павший воин. Она утверждает, что он погиб, защищая её жизнь самоотверженным образом, вообще неизвестным оркам.~
+@318 = ~ Дорога к Шаркта Фай теперь открыта на севере.~
+@319 = ~ Страж Шаркта Фай~
+@320 = ~ Тебе нужно тело павшего воина, чтобы войти в Шаркта Фай.~
+@321 = ~ Нашкельский беженец~
+@322 = ~Вызов благородного дракона~
+@323 = ~Письмо Аджантиса к Сандре~
+@324 = ~Письмо Аджантиса к Сандре
 
-This sack contains gold and jewels robbed and hoarded by the infamous pirate Monteelah. The contents is worth about 15000GP - it is bloody money nonetheless. But maybe you find a way to use it for a positive purpose.~
-@329 = ~ Stack of Documents~
-@330 = ~ The Sharkta Fai Papers
+Аджантис оставил это письмо для Сандры, объясняя причины своего ухода из группы. Этт толстая упаковка запечатана. Только Сандре иожет узнать о самых сокровенных мыслях паладина и его чувствах к ней.~
+@325 = ~ Зомби Пират~
+@326 = ~ Зомби Капитан пиратов~
+@327 = ~ Пиратское сокровище~
+@328 = ~ Пиратское сокровище
 
-These papers found with Monteelah's pirate treasure seem to be the real reason for the pirate to slaughter his whole crew to maintain the knowledge for himself alone.
-Sharkta Fai, the legendary pool in the legends of Toril's older races, such as the elves and the orcs, is associated with the possibility of eternal life. The papers are something that Sandrah may study carefully.~
-@331 = ~ Sandrah's Ring of Wisdom~
-@332 = ~ Captain Holghorn~
-@333 = ~ Zombie Pirate Leader~
-@334 = ~ Navigational Practise~
-@335 = ~ Navigational Practise
+Этот мешок содержит золото и драгоценности, украденные и припрятанные печально известным пиратом Монтилой. Содержимое стоит примерно 15000 золотых - тем не менее, это кровавые деньги. Но, возможно, ты найдёшь способ использовать его в положительных целях.~
+@329 = ~ Стопка документов~
+@330 = ~ Документы о Шаркта Фай
 
-This book contains a large number of instructions and tips for the handling of a ship. It could be quite useful for someone who is acquainted with the nautical language such as starboard and leeward. ~
-@336 = ~ Shipbuilding ~
-@337 = ~ Shipbuilding 
+Эти документы, найденные вместе с пиратским сокровищем Монтилы, по-видимому, являются настоящей причиной того, что пират убил всю свою команду, чтобы сохранить знания только себе.
+Шаркта Фай, легендарный бассейн в легендах древних рас Торила, таких как эльфы и орки, ассоциируется с возможностью вечной жизни. Документы - это то, что Сандра может внимательно изучить.~
+@331 = ~Кольцо мудрости Сандры~
+@332 = ~ Капитан Холгорн~
+@333 = ~ Зомби Лидер пиратов~
+@334 = ~ Навигационная практика~
+@335 = ~ Навигационная практика
 
-A short title for a breathtaking encyclopaedia. This tome explains how to manufacture each part of a ship in detail, accompanied by hundreds of illustrations of the parts of a ship.~
-@338 = ~ Leaving Glorhan
+Эта книга содержит большое количество инструкций и советов по управлению кораблем. Она может быть очень полезна для тех, кто знаком с морской терминологией, например "форштевень" и "брамсель". ~
+@336 = ~ Судостроение ~
+@337 = ~ Судостроение 
 
-The ship creaks and the wind fills the sails. Slowly the ship comes into motion and leaves the shore. You soon get a feeling for the reaction of the rudder on your motions of the steering wheel. Sandrah finds more and more relations between the two books and figures out the right actions. Since the weather remains as good as it was proposed, the crew gets more and more cheerful.
+Краткое название захватывающей энциклопедии. Этот фолиант подробно объясняет, как изготовить каждую часть корабля, и сопровождается сотнями иллюстраций.~
+@338 = ~ Отплытие из Глорхана
 
-Sailing goes smooth and on the morning of the third day the coastline gets into sight. And you discover a slight problem, as the rocky beach of the Sword Coast comes nearer and nearer...
+Корабль скрипит, ветер наполняет паруса. Постепенно корабль приходит в движение и покидает берег. Ты скоро начинаешь чувствовать реакцию руля на движение штурвала. Сандра находит все больше и больше связей между двумя книгами и придумывает правильные действия. Поскольку погода остается такой, как и предполагалось, экипаж становится всё веселее.
 
-The sailing was not a problem so far - but how do you stop the ship now?
+Плавание идет гладко, и на утро третьего дня становится видна береговая линия. И тут ты обнаруживаешь небольшую проблему, поскольку каменистый пляж Побережья Меча всё ближе и ближе...
 
-The answer comes quickly as you hear the increasing noise of sand, rocks and splintering planks rise up from the ship below you...~
-@339 = ~ When you come to your senses you realise that there is a tangle of ropes on the deck all around you. One of your actions must have been incorrect.~
-@340 = ~ Sandrah's Ring of Wisdom
+До сих пор плавание не было проблемой, но как теперь остановить корабль?
 
-This ring was given to Sandrah on her sixteenth birthday by her father in Waterdeep.~
-@341 = ~ Emblem of Myrkul~
-@342 = ~ Emblem of Myrkul
+Ответ быстро приходит, как только ты слышишь нарастающий шум песка, камней и раскалывающихся досок, поднимающийся с днища корабля...~
+@339 = ~ Когда ты приходишь в себя, ты понимаешь, что вокруг тебя на палубе беспорядочное сплетение канатов. Одно из твоих действий, должно быть, было неверным.~
+@340 = ~Кольцо мудрости Сандры
 
-The emblem of the dead god - one of the Dead Three, Bane, Bhaal and Myrkul, who stole the Tablets of Fate from Ao - was found at the pool of Sharkta Fai. Shauhana claims that is has belonged to her grandfather.~
-@343 = ~ Mystra's Army~
-@344 = ~ Mystra's Sendling~
-@345 = ~ Old Shield~
-@346 = ~ Old Enchanted Shield
+Это кольцо было подарено Сандре её отцом в Вотердипе на её 16-летие.~
+@341 = ~ Эмблема Миркула~
+@342 = ~ Эмблема Миркула
 
-This enchanted medium shield has probably belonged to a long deceased former owner of the castle.~
-@347 = ~ Sandrah has lost her animal friend who had accompanied her since their common childhood through most of her adventuring days.~
-@348 = ~ Ghatlenk~
-@60349 = ~ The Stormhorns
+Эмблема мёртвого бога - одного из Трёх Мёртвых: Бэйна, Баала и Миркула, укравших Скрижали Судьбы у Ао - была найдена в бассейне Шаркта Фай. Шаухана утверждает, что она принадлежал её деду.~
+@343 = ~ Армия Мистры~
+@344 = ~ Сендлинг Мистры~
+@345 = ~ Старый щит~
+@346 = ~ Старый зачарованный щит
 
-A blind orc shaman in the Athkatla slum district has identified me as a *godchild*. He told me that someone I was searching for would be in the Stormhorn Mountains far to the north. I am sure however that he was not speaking of Imoen.~
-@60350 = ~ Becoming Father 
+Этот зачарованный средний щит, вероятно, принадлежал давно умершему бывшему владельцу замка.~
+@347 = ~ Сандра потеряла своего питомца, которая сопровождала её с детства на протяжении большей части её приключений.~
+@348 = ~ Гатленк~
+@60349 = ~ Штормовые Рога
 
-What a surprise! Examining Shar-Teel today, Sandrah has found my wildcat lover to be pregnant. We will become parents in seven moons time!
-After the initial shock had settled, I found to my surprise that Shar-Teel has happily accepted her coming role as a mother. In a way she sees this as a challenge to prove how a strong and independent woman like herself can raise a child with the love and care that she herself has never known.
-And me? It will be quite some change but not the worst one. With the time still remaining we will defeat our enemy and find a nice, quiet place to raise the baby. And others, who knows?
-Meanwhile we will still have Sandrah's home at Waterdeep as a resort should our quest unexpectedly require more time to be solved.~
-@351 = ~ Mystra's Rage~
-@352 = ~ Nib's Travel Scroll~
-@353 = ~ Nib's Travel Scroll
+Слепой орк-шаман из трущоб Аткатлы признал во мне *дитя бога*. Он сказал, что тот, кого я ищу, будет в горах Штормовых Рогов далеко на севере. Однако, я уверен, что он имел в виду не Имоен.~ ~ Штормовые Рога
 
-Nib Jansen's scroll will guide you to his sky ship that allows you to travel to far off parts of Faerun through the air. The handicaps are, that you can take only four other party members with you (cats, dogs and cows are free) and that a safe landing is not always assured. Talk to the scroll if you want to use the skyship under these conditions.~
-@354 = ~ White Mythril Shield~
-@355 = ~ Midnight's Shelter~
-@356 = ~ Midnight's Shelter
+Слепой орк-шаман из трущоб Аткатлы признал во мне *дитя бога*. Он сказал, что тот, кого я ищу, будет в горах Штормовых Рогов далеко на севере. Однако, я уверена, что он имел в виду не Имоен.~
+@60350 = ~ Я стал отцом
 
-The famous heroine Midnight was one of the adventurers chosen by Ao to retrieve the stolen Tablets of Fate. For her heroic deeds, the Overgod raised her to godhood herself, replacing the slain goddess Mystra whose name she adopted.
-While still a human woman, Midnight gave birth to a son, the famous mage Elminster, whose daughter - thus Midnight's granddaughter - is your companion Sandrah. The white mythril shield is one of the artefacts from Midnight's human adventuring days.~
-@357 = ~ Tempus Blesses Sandrah~
-@60358 = ~Sandrah's Heritage - The second child
+Какой сюрприз! Сегодня, осматривая Шар-Тил, Сандра обнаружила, что моя любовница-дикая кошка беременна. Через семь лун мы станем родителями!
+После того, как первоначальный шок улёгся, я, к своему удивлению, обнаружил, что Шар-Тил с радостью приняла своё будущее материнство. В каком-то смысле она видит в этом вызов, чтобы доказать, что такая сильная и независимая женщина, как она, может воспитать ребёнка в любви и заботе, которых она сама никогда не знала.
+А что я? Это будет нечто новое, но не самое худшее. За это время мы победим нашего врага и найдём красивое тихое место, чтобы вырастить рёбенка. А может и других, кто знает?
+А пока у нас по-прежнему будет дом Сандры в Вотердипе в качестве курорта, если наша задача неожиданно потребует больше времени для выполнения.~
+@351 = ~ Ярость Мистры~
+@352 = ~ Свиток путешествия Ниба~
+@353 = ~ Свиток путешествия Ниба
 
-Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
+Свиток Ниба Янсена проведёт тебя к его небесному кораблю, который позволит тебе путешествовать по воздуху в далекие части Фаэруна. Недостатком является то, что ты сможешь взять с собой только четырех других компаньонов (кошки, собаки и коровы не считаются) и что безопасная посадка не всегда гарантирована. Нужно поговорить со свитком, если ты хочешь использовать небесный корабль на этих условиях.~
+@354 = ~ Белый мифриловый щит~
+@355 = ~ Приют Полночи~
+@356 = ~ Приют Полночи
 
-It must be me!
+Знаменитая героиня Полночь была одной из искательниц приключений, избранных Ао, чтобы вернуть украденные Скрижали Судьбы. За её героические поступки Сверхбог сам возвысил её до богини, заменив убитую богиню Мистру, имя которой она приняла.
+Ещё будучи человеком, Полночь родила сына, знаменитого мага Элминстера, чья дочь, то есть внучка Полночи, и является твоей компаньонкой Сандрой. Белый мифриловый щит - один из артефактов тех времён, когда Полночь была человеком.~
+@357 = ~ Темпус благословляет Сандру~
+@60358 = ~Наследие Сандры - Второй ребенок
 
-To save my life from all kinds of pursuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep. 
+Сегодня мы, вероятно, узнали правду о порождении Баала, которым была оплодотворена бедная мать Сандры, что и привело к её смерти.
 
-Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast. 
+Это, видимо, я!
 
-I am not alone in my task. With Sandrah by my side, and with my *sister* Imoen, we will
-succeed in stopping Sarevok from becoming the next God of Murder.~
-@60359 = ~Sandrah's Heritage - The second child
+Чтобы спасти мою жизнь от всевозможных преследователей, Элминстер, Винтроп и Горайон все эти годы прятали меня и ещё одно порождение Баала - маленькую девочку, за стенами Кендлкипа.
 
-Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
-It must be me!
-To save my life from all kinds of pursuers, Elminster, Winthrop and Gorion have hidden me and another Bhaalspawn, a little girl, for all these years behind the walls of Candlekeep.
-Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast.
-I am not alone in my task. With Sandrah by my side, and with my *sister* Imoen, we will
-succeed in stopping Sarevok from becoming the next God of Murder.~
-@360 = ~ You have lost charisma as a leader within the group. ~
-@361 = ~ Moonblade Sendling~
-@362 = ~ Summon a creature once slain with a moonblade by the elf Xan~
-@363 = ~ Githyanki Captain~
-@364 = ~ Shevarash's Avenger~
-@365 = ~ Kivan has begged the god Shevarash to grant a spell to his beloved Sandrah to aid her in the fiercest battles.~
-@366 = ~ Assistant of Tempus~
-@367 = ~ Branwen has received this spell from her god for her lover Sandrah to guard her and <CHARNAME> in her time of absence.~
-@368 = ~ Lighthouse Observations~
-@369 = ~ Lighthouse Observations
+Теперь же, восстание другого порождения Баала - Саревока, и его попытка взойти на трон своего "отца" привела к смерти Горайона и бедствиям на Побережье Меча.
 
-This paper contains dates, ship names, and notes about possible cargo and other details. The lighthouse seems to be used to observe the ship traffic on the Sea of Swords. But for what purpose? The current inhabitants are no officials and their claim is trade. Why do they need such notes? What puzzles you most is a column for each ship saying *armed - unarmed*.~
-@370 = ~ Wallrick~
-@371 = ~ The Dark One~
-@372 = ~ Hathran Protector~
-@373 = ~ Knowing her fate, your and Sandrah's beloved companion Dynaheir has wielded this forceful spell from the Weave as a gift for both of you.~
-@374 = ~ What is going on here, Sandrah?~
-@375 = ~ Wildcat's Growl~
-@376 = ~ As Shar-Teel had to retire from travelling with the group for the birth of her and <CHARNAME>'s baby, she has left the care and protection of their lover to Sandrah and given her this spell.~
-@377 = ~ Coran's Gift~
-@378 = ~ The elvish thief Coran has blessed Sandrah with this ability after the joy of their on and off love affair.~
-@60379 = ~ Sandrah heartily attacks the wood in the fireplace with her hammer and splinters start to fly around.~
-@380 = ~ Dark Ranger's Help~
-@381 = ~ Sandrah has learned this ability from her former combat teacher Drizzt Do'Urden,~
-@382 = ~ Dark Ranger's Helper~
-@383 = ~ Aroooouuuuuuu~
-@384 = ~ Howling of Terror~
-@385 = ~ Howling of the Grave~
-@386 = ~ Howling of Dispelling~
-@387 = ~ Howling of Malison~
-@388 = ~ Space Hamster~
-@389 = ~ Hamster Spawn~
-@390 = ~ For her care and friendship with Minsc, Sandrah has been rewarded with this spell by the goddess Mystra.~
-@391 = ~Fireflower~
-@392 = ~ This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
+Я не одинок в своей задаче. Вместе с Сандрой и моей "сестрой" Имоен нам непременно удастся помешать Саревоку стать следующим Богом Убийств.~ ~Наследие Сандры - Второй ребенок
 
-Statistics:
-Fireflower's true power lies in its ability to do greater damage to creatures susceptible to fire, such as regenerating monsters, cold-based creatures, and undead. It is of +1 enchantment against normal foes.~
-@393 = ~ Ironkiss~
-@394 = ~This is Yasraena's enchanted short sword which she calls Ironkiss. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
+Сегодня мы, вероятно, узнали правду о порождении Баала, которым была оплодотворена бедная мать Сандры, что и привело к её смерти.
 
-Statistics:
-The bite of Ironkiss is deep and continues to bleed long after the initial wound is received. It is of +2 enchantment.~
-@395 = ~Yasraena's Necklace~
-@396 = ~This necklace is of delicately carved gold, set with the largest, most perfect ruby you have ever seen.  Yasraena never removes it, and, despite its lack of magical qualities, she seems as attached to it as she is to her swords.~
-@397 = ~Ironkiss +5~
-@398 = ~This is Yasraena's enchanted short sword which she calls Ironkiss. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them. While Yasraena was in Suldanessellar, Divalir upgraded Ironkiss to better equip her for the challenges ahead.
+Это, видимо, я!
 
-Statistics:
-Ironkiss has become much more deadly while simultaneously defending her life more effectively. Divalir's strong enchantments continually renew Yasraena's life as long as she wields this blade.~
-@399 = ~Fireflower +5~
-@400 = ~This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them. While Yasraena was in Suldanessellar, Divalir upgraded Fireflower to better equip her for the challenges ahead.
+Чтобы спасти мою жизнь от всевозможных преследователей, Элминстер, Винтроп и Горайон все эти годы прятали меня и ещё одно порождение Баала - маленькую девочку, за стенами Кендлкипа.
 
-Statistics:
-Fireflower continues to seek the destruction of undead, but it has also been enchanted to deal harshly with demons.  Like Ironkiss, Fireflower guards Yasraena's life.~
-@401 = ~ Knock~
-@402 = ~ Sandrah has gained the ability to knock open locks during her intermezzo with a thief.~
-@403 = ~ Captain Resach~
-@404 = ~ Isra's patron Sune has graced Sandrah for her enduring support of her disciple.~
+Теперь же, восстание другого порождения Баала - Саревока, и его попытка взойти на трон своего "отца" привела к смерти Горайона и бедствиям на Побережье Меча.
+
+Я не одинока в своей задаче. Вместе с Сандрой и моей "сестрой" Имоен нам непременно удастся помешать Саревоку стать следующим Богом Убийств.~
+@60359 = ~Наследие Сандры - Второй ребенок
+
+Сегодня мы, вероятно, узнали правду о порождении Баала, которым была оплодотворена бедная мать Сандры, что и привело к её смерти.
+Это, видимо, я!
+Чтобы спасти мою жизнь от всевозможных преследователей, Элминстер, Винтроп и Горайон все эти годы прятали меня и ещё одно порождение Баала - маленькую девочку, за стенами Кендлкипа.
+Теперь же, восстание другого порождения Баала - Саревока, и его попытка взойти на трон своего "отца" привела к смерти Горайона и бедствиям на Побережье Меча.
+Я не одинок в своей задаче. Вместе с Сандрой и моей "сестрой" Имоен нам непременно удастся помешать Саревоку стать следующим Богом Убийств.~ ~Наследие Сандры - Второй ребенок
+
+Сегодня мы, вероятно, узнали правду о порождении Баала, которым была оплодотворена бедная мать Сандры, что и привело к её смерти.
+Это, видимо, я!
+Чтобы спасти мою жизнь от всевозможных преследователей, Элминстер, Винтроп и Горайон все эти годы прятали меня и ещё одно порождение Баала - маленькую девочку, за стенами Кендлкипа.
+Теперь же, восстание другого порождения Баала - Саревока, и его попытка взойти на трон своего "отца" привела к смерти Горайона и бедствиям на Побережье Меча.
+Я не одинока в своей задаче. Вместе с Сандрой и моей "сестрой" Имоен нам непременно удастся помешать Саревоку стать следующим Богом Убийств.~
+@360 = ~Ты потерял харизму, как лидер в группы.~ ~Ты потеряла харизму, как лидер в группы.~
+@361 = ~ Лунный клинок Сендлинг~
+@362 = ~ Призвать существо, однажды убитое лунным клинком эльфом Ксаном~
+@363 = ~ Капитан гитиянки~
+@364 = ~ Мститель Шевараша~
+@365 = ~ Киван умолил бога Шевараша даровать его любимой Сандре заклинание, которое поможет ей в самых жестоких битвах.~
+@366 = ~ Помощник Темпуса~
+@367 = ~ Бранвен получила это заклинание от своего бога, чтобы её подруга Сандра и <CHARNAME> были лучше защищены во время её отсутствия.~
+@368 = ~ Наблюдения с маяка~
+@369 = ~ Наблюдения с маяка
+
+Этот документ содержит даты, названия судов, а также примечания о возможном грузе и другие детали. Маяк, похоже, используется для наблюдения за движением кораблей в Море Мечей. Но с какой целью? Нынешние жители не являются чиновниками и заявляют, что они торговцы. Зачем им такие заметки? Что тебя больше всего озадачивает, так это колонка для каждого корабля с надписью *вооружён - не вооружен*.~
+@370 = ~ Уоллрик~
+@371 = ~ Тёмный~
+@372 = ~ Защитник Хатран~
+@373 = ~ Зная её судьбу, твоя и Сандры любимая подруга Динахейр получила это мощное заклинание Плетения, чтобы подарить его вам обоим.~
+@374 = ~ Что здесь происходит, Сандра?~
+@375 = ~ Рычание дикой кошки~
+@376 = ~ Поскольку Шар-Тил пришлось отказаться от путешествий с группой из-за рождения её ребенка, она оставила заботу и защиту своего возлюбленного на Сандру и дала ей это заклинание.~
+@377 = ~ Подарок Корана~
+@378 = ~ Вор эльф Коран одарил Сандру этой способностью в благодарность за их периодические любовные романы.~
+@60379 = ~Сандра усердно атакует дрова в очаге своим молотом, и щепки начинают лететь во все стороны.~
+@380 = ~ Помощь тёмного следопыта~
+@381 = ~ Сандра научилась этой способности у своего бывшего учителя техники боя Дриззта До'Урдена.~
+@382 = ~ Помощник тёмного следопыта~
+@383 = ~ Арооооууууууу~
+@384 = ~ Вой ужаса~
+@385 = ~ Вой могилы~
+@386 = ~ Вой рассеивания~
+@387 = ~ Вой проклятия~
+@388 = ~ Космический хомяк~
+@389 = ~ Плодовитость хомяка~
+@390 = ~ За заботу и дружбу с Минском, Сандра была награждена этим заклинанием от богини Мистры.~
+@391 = ~Огненный Цветок~
+@392 = ~Это зачарованный короткий меч Ясраэны, который она называет Огненным Цветком. Готовя Ясраэну к побегу из Андердарка, Дивалир вооружил ее подходящими короткими мечами. Это один из них. 
+
+Статистика: 
+Истинная сила Огненного Цветка - в его способности наносить сильный урон созданиям, чувствительным к огню, таким, как регенерирующие монстры, существа, чья жизнь основана на холоде и нежить. Это оружие +1 против обычных врагов.~
+@393 = ~Железный Поцелуй~
+@394 = ~Это зачарованный короткий меч Ясраэны, который она называет Железным Поцелуем. Готовя Ясраэну к побегу из Андердарка, Дивалир вооружил ее подходящими короткими мечами. Это один из них.
+
+Статистика: 
+Раны, нанесенные Железным Поцелуем, глубоки и продолжают кровоточить еще некоторое время после удара. Это оружие +2~
+@395 = ~Ожерелье Ясраэны~
+@396 = ~Это золотое ожерелье изящной работы, украшенное самым совершенным рубином, какой ты когда-либо видел. Ясраэна никогда его не снимает, и кроме того, что оно обладает волшебными свойствами, она привязана к нему так же, как к своим мечам.~ ~Это золотое ожерелье изящной работы, украшенное самым совершенным рубином, какой ты когда-либо видела. Ясраэна никогда его не снимает, и кроме того, что оно обладает волшебными свойствами, она привязана к нему так же, как к своим мечам.~
+@397 = ~Железный Поцелуй +5~
+@398 = ~Это зачарованный меч Ясраэны, который она называет Железным Поцелуем. Готовя Ясраэну к побегу из Андердарка, Дивалир вооружил ее подходящими короткими мечами. Это один из них. Когда Ясраэна была в Сулданесселларе, Дивалир усовершенствовал Железный Поцелуй, чтобы она была лучше снаряжена в предстоящих путешествиях. 
+
+Статистика: 
+Железный Поцелуй стал намного смертоноснее и эффективнее защищает ее жизнь. Мощное колдовство Дивалира придает жизненных сил Ясраэне, когда она носит этот клинок.~
+@399 = ~Огненный Цветок +5~
+@400 = ~Это зачарованный меч Ясраэны, который она называет Огненным Цветком. Готовя Ясраэну к побегу из Андердарка, Дивалир вооружил ее подходящими короткими мечами. Это один из них.Когда Ясраэна была в Сулданесселларе, Дивалир усовершенствовал Огненный Цветок, чтобы она была лучше снаряжена в предстоящих путешествиях. 
+
+Статистика: 
+Огненный Цветок, как и прежде, разрушает нежить, но теперь он заколдован так, чтобы жестко разбираться с демонами. Как и Железный Поцелуй, Огненный Цветок защищает жизнь Ясраэны.~
+@401 = ~ Стук~
+@402 = ~ Сандра получила способность открывать замки во время её интермеццо с вором.~
+@403 = ~ Капитан Ресач~
+@404 = ~ Покровительница Исры Суни наградила Сандру неизменной поддержкой своего ученика.~
 @405 = ~ The Drizzt Saga Mod is required - please install first!~
 @406 = ~ Sandrah NPC Core not installed!~
-@407 = ~ Go To Waterdeep~
-@408 = ~ Return from Waterdeep~
-@409 = ~ Dragon Force~
-@410 = ~ Sandrah has assimilated this ability from the dragon she has slain.~
-@411 = ~ Sandrah has assimilated a new ability from the dragon she has slain.~
-@412 = ~ Hobgoblin Wizard~
-@413 = ~ Dragon Buffs~
-@414 = ~ Mass Charm~
-@415 = ~ Heal Group~
-@416 = ~ 
-On a timeless journey you seem to leave Faerun and even the material plane. Colours and lights swirl around you, coming and going, some even passing through your transparent body. You have the impression to travel, even though a *space* in the way you know it, does not seem to exist in the kind of reality that surrounds you now.
+@407 = ~ Идти в Вотердип~
+@408 = ~ Вернуться из Вотердипа~
+@409 = ~ Сила Дракона~
+@410 = ~ Сандра переняла эту способность от дракона, которого она убила.~
+@411 = ~ Сандра переняла новую способность от дракона, которого она убила.~
+@412 = ~Хобгоблин Маг~
+@413 = ~ Кожа Дракона~
+@414 = ~Массовое очарование~
+@415 = ~Групповое исцеление~
+@416 = ~Во вневременном путешествии ты, кажется, покидаешь Фаэрун и даже материальный план. Цвета и свет кружатся вокруг тебя, приходят и уходят, а некоторые даже проходят сквозь твоё прозрачное тело. У тебя создаётся впечатление перемещения, даже если *пространство* в том виде, в каком ты его знаешь, кажется, не существует в той реальности, которая тебя сейчас окружает.
 
-From an unknown source you feel something slowly building up inside of you. You have no name for it, only you feel that it gives you some strength you have not known before. You feel like you are for one single moment part of something immense and powerful.
+Неизвестно откуда ты чувствуешь, как что-то медленно накапливается внутри тебя. У тебя нет для этого названия, но ты чувствуешь, что это даёт тебе силу, о которой ты раньше не знал. Ты чувствуешь на какое-то мгновение, что являешься частью чего-то огромного и могущественного.
 
-Whatever it was that has touched you, a tiny bit of it stays inside of you as you slowly seem to return to *reality*.~
-@417 = ~ Portrait of a beautiful lady. Could it really be Sandrah?~
-@418 = ~Rhanthona~
-@419 = ~Priest of Mystra~
-@420 = ~Temple of Mystra~
-@421 = ~Indira's Ogre ~
-@422 = ~Indira's Memento~
-@423 = ~ A gift to Sandrah from her loving companion, the half-elf girl Indira.~
-@424 = ~Mystra's Temple Dagger~
-@425 = ~Mystra's Temple Dagger
+Что бы тебя ни коснулось, крошечная частичка этого остаётся внутри тебя, когда ты медленно возвращаешься в *реальность*.~ ~Во вневременном путешествии ты, кажется, покидаешь Фаэрун и даже материальный план. Цвета и свет кружатся вокруг тебя, приходят и уходят, а некоторые даже проходят сквозь твоё прозрачное тело. У тебя создаётся впечатление перемещения, даже если *пространство* в том виде, в каком ты его знаешь, кажется, не существует в той реальности, которая тебя сейчас окружает.
 
-Damage: 1D4 +4
-Cold Resistance bonus
-(Returns after throwing)
-Weight: 1
-Initiative: 1
-Min strength: 3 ~
-@426 = ~ Mystra's Ritual Dagger~
-@427 = ~ Ringhontal~
-@428 = ~ Little Girl's Body~
-@429 = ~ Body of the little Leyala. The sick girl is unconscious and desperately needs a skilled healer to save her life.~
-@430 = ~ Tome~
+Неизвестно откуда ты чувствуешь, как что-то медленно накапливается внутри тебя. У тебя нет для этого названия, но ты чувствуешь, что это даёт тебе силу, о которой ты раньше не знала. Ты чувствуешь на какое-то мгновение, что являешься частью чего-то огромного и могущественного.
+
+Что бы тебя ни коснулось, крошечная частичка этого остаётся внутри тебя, когда ты медленно возвращаешься в *реальность*.~
+@417 = ~Портрет красивой леди. Неужели это Сандра?~
+@418 = ~Рантона~
+@419 = ~Священник Мистры~
+@420 = ~Храм Мистры~
+@421 = ~Огр Индиры ~
+@422 = ~Сувенир Индиры~
+@423 = ~Подарок Сандре от её спутницы, полуэльфийки Индиры.~
+@424 = ~Храмовый кинжал Мистры~
+@425 = ~Храмовый кинжал Мистры
+
+Урон: 1d4+4
+Увеличивает сопротивление к холоду
+(Возвращается в руку после броска)
+Вес: 1
+Инициатива: +1
+Требования: 3 сила ~
+@426 = ~ Ритуальный кинжал Мистры~
+@427 = ~ Рингонтал~
+@428 = ~ Тело маленькой девочки~
+@429 = ~ Тело маленькой Лейалы. Больная девочка без сознания и отчаянно нуждается в квалифицированном целителе, чтобы спасти её жизнь.~
+@430 = ~ Том~
 @431 = ~ Tome of Leadership~
 @432 = ~ 
 One of the most popular recent tomes of leadership and influence is the cynically entitled book "How to Win Friends and Influence People." Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede...
@@ -1164,7 +1228,7 @@ With Sandrah's ascension to the Goddess of All Magic and your own role as the ne
 Your success has been a drawback for the evil forces surrounding you still on Mount Celestial as well as their mortal followers. It does not take too long for them to stir again...
 Events brew together that once again require your intervention and that of the companion at your side. Toril becomes again the playground for the conspiracy of the old evil players against the new gods and there is only one place where you two can deal with the problem - the plane of your former success. You and Sandrah must transform to your mortal avatars and disguise as the adventurers you were before and return to Faerun.~
 @592= ~Celestial Exit~
-@593= ~Melissan~
+@593= ~Мелиссан~
 @594= ~Other than you, Sandrah has accepted the responsibility to become the Goddess of All Magic sending her grandmother Midnight back to the primary plane to continue a mortal life.
 Midnight returned with Elminster to his home in Waterdeep. In the long years granted to her by her former godhood she renewed her relationship with Drizzt Do'Urden. After several years of courtship the couple finally married and continued to live happily spending their time between Waterdeep and Icewind Dale. Wherever possible they acted on behalf of the new Goddess Mystra.
 
@@ -1177,45 +1241,45 @@ In the long term more of such slight changes became apparent, leading to a peace
 @596=~Wait! What does that mean...Drizzt needs our help?~
 @597=~Pelligram has changed to her natural appearance.~
 @598=~The complete Sandrah mod must be installed before the extension can be installed.~
-@599=~Nigati~
-@600=~Oh, <CHARNAME>!~
-@601=~No fear, <CHARNAME>!~
-@602=~Life can be so wonderful!~
-@603=~We have done better than that before.~
-@604=~I sincerely hope Bhaal will not get the upper hand in you.~
-@605=~Bhaal's heritage seems to be more than you can manage.~
-@606=~I have no intention to rival you, <CHARNAME>!~ [San606]
-@607=~I dream to be in my bedroll - with you!~ [San607]
-@608=~Better to burn out than to bore out.~
-@609=~Do you think I am a little girl?~ [San609]
-@610=~The glow of my hammer is the last thing you will see in this life.~ [San610]
-@611=~I cannot let you get away with this!~
-@612=~Your days of evil are coming to an end!~ [San612]
-@613=~The Weave will heal it.~ [San613]
-@614=~See that lovely deer, <CHARNAME>!~ [San614]
-@615=~Shopping time again!~
-@616=~No need to be scared as long as we are together.~ [San616]
-@617=~I simply love our wonderful Toril!~ [San617]
-@618=~In the stars I often see my mother's face looking down on me.~
-@619=~We can do!~ [San619]
-@620=~I am with you, <CHARNAME>!~ [San620]
-@621=~I am ready for it.~
-@622=~Here I am, <CHARNAME>!~ [San622]
-@623=~My love?~
-@624=~With Mystra's aid!~
-@625=~Consider it done.~ [San625]
-@626=~No problem.~ [San626]
-@627=~This way?~
-@628=~I saw it myself.~
-@629=~Together we cannot fail.~
-@630=~I will give it all I can.~
-@631=~Not a big effort.~ [San631]
-@632=~This hammer can do more than you could ever imagine.~
-@633=~I am smashing hot air, it seems.~ [San633]
-@634=~We need a different tactic here.~
-@635=~Time to get rid of some old stuff we carry around for no reason.~ [San635]
-@636=~Aescalus herb~
-@637=~The healing ability of this herb makes it valuable for alchemists and healers. With the help of her magic parcel your companion Sandrah can enhance simple healing potions to greater ones for your party.~
+@599=~Нигати~
+@600=~А, <CHARNAME>!~
+@601=~Не бойся, <CHARNAME>!~
+@602=~Жизнь может быть так прекрасна!~
+@603=~Раньше мы поступали получше.~
+@604=~Я искренне надеюсь, что Баал тебя не одолеет.~
+@605=~Кажется, наследие Баала - это то, с чем ты не можешь справиться.~
+@606=~У меня нет намерения соперничать с тобой, <CHARNAME>!~ [San606]
+@607=~Я мечтаю завернуться в одеяло - с тобой!~ [San607]
+@608=~Лучше сгореть, чем умереть от скуки.~
+@609=~Ты думаешь, я маленькая девочка?~ [San609]
+@610=~Отблеск моего молота - это последнее, что ты увидишь в своей жизни.~ [San610]
+@611=~Это тебе с рук не сойдёт!~
+@612=~Твоему злу пришёл конец!~ [San612]
+@613=~Меня исцелит магия.~ [San613]
+@614=~Посмотри на эту прекрасную лань, <CHARNAME>!~ [San614]
+@615=~Время пойти за покупками!~
+@616=~Не бойся, пока мы вместе.~ [San616]
+@617=~Я так люблю наш прекрасный Торил!~ [San617]
+@618=~Среди звёзд я часто вижу лицо моей матери, которая сверху смотрит на меня.~
+@619=~Мы сможем!~ [San619]
+@620=~Я с тобой, <CHARNAME>!~ [San620]
+@621=~Я к этому готова.~
+@622=~Я здесь, <CHARNAME>!~ [San622]
+@623=~Любовь моя?~
+@624=~С помощью Мистры!~
+@625=~Считай, что сделано.~ [San625]
+@626=~Без проблем.~ [San626]
+@627=~Сюда?~
+@628=~Сама вижу.~
+@629=~Вместе нас не победить.~
+@630=~Я сделаю всё, что смогу.~
+@631=~Легко.~ [San631]
+@632=~Этот молот может больше, чем ты думаешь.~
+@633=~Кажется, я бью воздух.~ [San633]
+@634=~Нам нужна другая тактика.~
+@635=~Пора избавиться от каких-то ненужных вещей, которые мы таскаем.~ [San635]
+@636=~Цветы конского каштана~
+@637=~Целебные свойства этих лепестков делают их полезными для алхимиков и целителей. С помощью них и своего волшебства ваша спутница Сандра может усилить действие простого зелья исцеления для вашей группы.~
 @638=~You get a glimpse of an underground area from which the undead creatures seem to emerge. However you can not enter from this side - you need to find another entry.~
 @639=~Undead Orc~
 @640 = ~Shauhana's Mysterious Heritage Unveiled
@@ -1228,7 +1292,7 @@ Before Shauhana can assume reign over the Clan Orcs and rule over a peaceful nor
 @641 = ~The badly wounded body of Samuel. You must urgently bring him to the Temple of Wisdom at the Friendly Arm as even your healer is just capable to provide limited help while you are on the road. ~
 @642 = ~This entrance leads to a palace area that is obviously long deserted and not orcish. Currently the portals are impenetrable.~
 @643 = ~A strange smelling vapour rises from the pool, inhaling bit of it, you start to feel dizzy and hear low whispers in an unknown language.~
-@644 = ~Shadow Druid~
+@644 = ~Теневой Друид~
 @645 = ~Shauhana needs Minsc to return to Clan's land.~
 @646 = ~Time has not yet come to return to Clan's land.~
 @647 = ~Undead Orc Warrior~
@@ -1368,28 +1432,28 @@ We successfully cleared out Cerendor Hold and have hopefully dealt a heavy blow 
 @753 = ~Farsight~
 @754 = ~Tiefling Power~
 @755 = ~Girlish Sandrah~
-@756 = ~It is time to play a little comedy for Cyric!~
+@756 = ~Время разыграть небольшую комедию для Цирика!~
 @757 = ~Little Girl Sandrah~
 @758 = ~Drizzt Do'Urden~
-@759 = ~It's time now to destroy the crystal!~
+@759 = ~Сейчас самое время уничтожить кристалл!~
 @760 = ~What have I done?? OH NO!!~
 @761 = ~What is this? Jarlaxle has failed...~
 @762 = ~I must try it.~
 @763 = ~Drizzt!! Let's get our things together and leave quickly!~
-@764 = ~Large Minotaurus~
-@765 = ~Priestess Of Mystra~
-@766 = ~SANDRAH, PRIESTESS OF MYSTRA
-Sandrah has taken a long time to finally decide on her dedication to the Goddess of All Magic. During that decision period she has undergone training in melee combat with one of the greatest fighters in the Realms (but that is another story).
-When she finally started her studies at the Temple of Waterdeep, she soon specialized in the healing powers provided by the Weave. As a healer, she will first try to restore her friends before plunging into combat again. However, when she picks up her blessed hammer her training soon becomes apparent.
-Her special personal relationship to Mystra (again another story) provides her access to all the magic that falls into her goddess' domain. She thus has the ability to assimilate certain spells that are not available to priests of other deities.~
-@767 = ~Mystra's Anger~
-@768 = ~Assassin~
-@769 = ~Bandit Archer~
-@770 = ~Renegade Priest~
+@764 = ~Большой Минотавр~
+@765 = ~Священница Мистры~
+@766 = ~САНДРА, СВЯЩЕННИЦА МИСТРЫ
+Сандре потребовалось много времени, чтобы окончательно определиться с её служением Богине Всей Магии. Пока она принимала решение, она прошла обучение боевым искусствам у одного из величайших бойцов в Королевствах (но это уже другая история).
+Когда она наконец начала своё обучение в Храме Вотердипа, она вскоре специализировалась на целительных силах, обеспечиваемых Плетением. Как целительница, она сначала пытается вылечить своих друзей, прежде чем снова ринуться в бой. Однако, когда она поднимает свой благословенный молот, её владение оружием тут же становится очевидным.
+Её особые отношения с Мистрой (опять другая история) обеспечивают ей доступ ко всей магии, которая подвластна её богине. Таким образом, она обладает способностью выучить определённые заклинания, которые недоступны священникам других божеств.~
+@767 = ~Гнев Мистры~
+@768 = ~Убийца~
+@769 = ~Бандит лучник~
+@770 = ~Жрец-вероотступник~
 @771 = ~Loalass~
 @772 = ~Sandrah casts Mystra's Greater Cleansing over the area~
-@773 = ~Mystra's Vapour~
-@774 = ~The key to the lower levels must be here somewhere.~
+@773 = ~Пар Мистры~
+@774 = ~Ключ к нижним уровням должен быть где-то здесь.~
 @775 = ~I will not lose mine daughters and the hope of the Realms to Bhaal!!~
 @776 = ~Commander Shar-Teel has opened the passage to her tactical command centre concealed behind a bookshelf.~
 @777 = ~Copernio~
@@ -1412,50 +1476,50 @@ According to Sandrah's calculation as healer, she has advised me today that acco
 @793 = ~South Gate~
 @794 = ~Load sheets and crew lists are piled on the staircase~
 @795 = ~The largest mirror you have ever seen in Faerun...you are in the City of Splendour, no doubt~
-@796 = ~Dwarven Commoner~
-@797 = ~Dwarven Pub~
-@798 = ~To Temple~
-@799 = ~Commander's Garden~
+@796 = ~Дварф простолюдин~
+@797 = ~Дварфский трактир~
+@798 = ~К Храму~
+@799 = ~Командирский сад~
 @800 = ~Everything that was not bolted down has been stolen from Waukeen's temple.~
 @801 = ~Key from Sharess' festhall in Waterdeep~
 @802 = ~Sharess' Festhall~
 @803 = ~The half naked girl performs a seductive dance interplay with the pole~
 @804 = ~Festhall Matron~
-@805 = ~Lady Ilvastarr~
-@806 = ~Commander's Headquarters~
-@807 = ~Zombie Lord~
-@808 = ~Mind Flayer~
-@809 = ~You are the ones who stole the dark princess from us - you pay for it.~
-@810 = ~Abducted by Mind Flayers
-Our rescue of Phaere from the drow's enemies has not been without consequences. The creatures have waylaid and imprisoned us in their city. We must find a way out...~
-@811 = ~Enamoured Girl~
-@812 = ~Elder Beholder~
-@813 = ~Binamor DeVir~
-@814 = ~Drow Katana~
-@815 = ~This rare example of a drowish assassin weapon has the initials BDV engraved. It was found on Viconia's dead sister Binamor.~
-@816 = ~Jen'lig's Silver Sword~
-@817 = ~Jen'lig's Silver Sword
-This Vorpal Silver Sword radiates a dark aura when you examine it, and the blade is so finely sharpened it could likely sever a head in a single blow.
+@805 = ~Леди Илвастарр~
+@806 = ~Штаб-квартира командования~
+@807 = ~Лорд Зомби~
+@808 = ~Пожиратель разума~
+@809 = ~Ты тот, кто украл у нас тёмную принцессу - ты за это заплатишь.~ ~Ты та, кто украла у нас тёмную принцессу - ты за это заплатишь.~
+@810 = ~Похищены Пожирателями разума
+Наше спасение Фаэри от врагов дроу не прошло без последствий. Существа подстерегли и заточили нас в своем городе. Мы должны найти выход...~
+@811 = ~Влюблённая девушка~
+@812 = ~Старший бехолдер~
+@813 = ~Бинамор ДеВир~
+@814 = ~Катана дроу~
+@815 = ~На этом редком экземпляре оружия убийц-дроу выгравированы инициалы БДВ. Её нашли на мёртвом теле сестры Виконии - Бинамор.~
+@816 = ~Серебряный меч Джен'лиг~
+@817 = ~Серебряный меч Джен'лиг
+Этот Ворпалский Серебряный меч излучает тёмную ауру, когда ты смотришь на него, а лезвие настолько остро заточено, что, кажется, можно отрубить голову одним ударом.
 
-Usable only by githyanki ~
-@818 =~Invisibility~
-@819 =~Blur~
-@820 =~A githyanki spell~
-@821 =~Gith Domination~
-@822 =~Gith Stun~
-@823 =~Gith Door~
-@824 =~Gith Greater Stun~
-@825 =~When you ask Jen'lig about her family and upbringing her yellow eyes glow with disbelief. Such concepts are unknown to the Githyanki. Like all of her kin she was raised by the Varsh, the caretakers and wet-nurses of the githyanki, in one of their hatcheries located on the Prime. With the first days of adulthood, all githyanki are expected to train to defend the race against their two great feuds - the illithid and the Githzerai - with even those not part of its armies expected to have at least some training.
-Jen'lig was selected for duties outside the normal command structure of the githyanki and assigned to an elite squad trusted to handle one of the most important tasks for the race, the protection of the silver weapons. Those magical artefacts are sought for by magic users of all races and must be traced and retrieved should they fall into the hands of a non-githyanki.
-Jen'lig is an exception of the hr'a'cknir of her race. Instead of divination and force she uses the strategies of those who steal a silver sword, namely the skills of a thief.~
-@826 =~Not for use by unclean. Jen'lig only clean to use.~
-@827 =~A sword sheath~
-@828 =~This sheath is richly decorated with ornaments in a style like you have only seen once before - on the brooch, earrings and rings that Jen'lig wears in abundance. The item is probably of Githyanki origin. The sword for which the sheath was made must be a valuable weapon.~
-@829 =~Silver Amulet~
-@830 =~Anti Mind Flayer Amulet~
-@831 =~Shadow Thief~
-@832 =~Psst!! I have an offer to make to you!!~
-@833 =~Psst!! Give me a minute, it's worth it for you!~
+Могут использовать только гитиянки~
+@818 =~Невидимость~
+@819 =~Размытие~
+@820 =~Заклинание гитиянки~
+@821 =~Гит Доминирование~
+@822 =~Гит Оглушение~
+@823 =~Гит Дверь~
+@824 =~Гит Великое Оглушение~
+@825 =~Если спрашивать Джен'лиг о её семье и воспитании, её жёлтые глаза светятся от недоверия. Такие понятия неизвестны гитиянки. Как и всех её родственников, её вырастили в Варше смотрители и кормильцы гитиянки в одном из инкубаторов, расположенных в Прайме. С первых дней взрослой жизни все гитиянки тренируются, чтобы защищать расу от своих двух давних врагов - иллитидов и гитзераев, причём даже те, кто не является частью армии, должны пройти хотя бы минимальную подготовку.
+Джен'лиг была выбрана для исполнения обязанностей вне обычной структуры командования гитиянки и назначена в элитный отряд, которому было поручено выполнять одну из самых ответственных задач расы - защиту серебряного оружия. Эти магические артефакты ищут маги многих рас, и такие артефакты должны быть обнаружены и возвращены, если попадут в руки не-гитиянки.
+Джен'лиг - из хр'а'книр её расы. Вместо прорицаний и силы она использует стратегию тех, кто выкрал Серебряный Меч, а именно - навыки вора.~
+@826 =~Не для использования нечистыми. Только Джен'лиг чиста для использования.~
+@827 =~Ножны меча~
+@828 =~Эти ножны богато украшены орнаментом в стиле, подобном тому, который ты видел всего только раз - на брошках, серьгах и кольцах, которые Джен'лиг носит в изобилии. Предмет, вероятно, происхождения гитиянки. Меч, для которого были изготовлены эти ножны, должен быть ценным оружием.~ ~Эти ножны богато украшены орнаментом в стиле, подобном тому, который ты видела всего только раз - на брошках, серьгах и кольцах, которые Джен'лиг носит в изобилии. Предмет, вероятно, происхождения гитиянки. Меч, для которого были изготовлены эти ножны, должен быть ценным оружием.~
+@829 =~Серебряный амулет~
+@830 =~Амулет против Пожирателей разума~
+@831 =~Теневой вор~
+@832 =~Тссс!! У меня к тебе есть предложение!!~
+@833 =~Тссс!! Дай мне минуту, ты не пожалеешь!~
 @834 =~This night seems to take you from your own plane to that exotic place your nightly companion came from...
 
 The experience with Jen'lig is different from everything you have known before - and probably everything you will experience in the future. The body beneath those yellow scales seems to be on fire and her passion matches this heat.
@@ -1499,35 +1563,37 @@ Sunin ~
 The result of her mission to assimilate the power of Vlaakith and thus end the tyranny over her kin is lost in the permanent fog that covers the Astral Plane.
 
 Only decades later you heard incidentally of a rumour that mentioned the Githyanki and their ruler who was referred to as Queen Jen'lig-Gith. ~
-@859= ~Find Traps~
-@860= ~Sandrah learned this ability from her friendship with a thief.~
-@861= ~Dwarf Mercenary~
-@862= ~Red Ants~
-@863= ~Red Ant~
-@864= ~Bookworm~
-@865= ~Bookworms~
+@859= ~Найти ловушки~
+@860= ~Этой способности Сандра научилась благодаря дружбе с вором.~
+@861= ~Наёмник дварф~
+@862= ~Красные муравьи~
+@863= ~Красный муравей~
+@864= ~Любитель книг~
+@865= ~Любители книг~
 @866= ~Summon Guenhwyvar~
 @867= ~Deadly Babbling~
 @868= ~Cerebrilith~
 @869= ~Soubar Parade Uniform~
-@870= ~Netheril Crown~
-@871= ~A gift for Sandrah from <CHARNAME>~
-@872= ~Banshee Wail~
-@873= ~Derro Berserker~
-@874= ~Matron Mother Maelither~
-@875= ~Gab'Riella Maelither~
-@876= ~Drow Venom Flail +4~
-@877= ~STATISTICS:
+@870= ~Корона Нетерила~
+@871= ~Этот подарок Сандре преподнёс <CHARNAME>.~ ~Этот подарок Сандре преподнесла <CHARNAME>.~
+@872= ~Вой Банши~
+@873= ~Берсерк Дирро~
+@874= ~Матрона-мать Милифер~
+@875= ~Габ'Риэлла Милифер~
+@876= ~Ядовитый цеп дроу +4~
+@877= ~ПАРАМЕТРЫ:
 
-+5 Poison Damage
-THAC0: +4 bonus
-Damage: 1D6 +4 
-Damage type: crushing
-Weight: 15
-Speed Factor: 4
-Proficiency Type: Flail/Morningstar
-Type: 1-handed
-Requires: 13 Strength~
++5 урона от яда
+THAC0: +4
+Урон: 1D6+4 
+Тип урона: дробящий
+Фактор скорости: 4
+Оружейный навык: цеп/моргенштерн
+Тип: одноручный
+Требования:
+ Сила 13
+
+Вес: 15~
 @878= ~Bracers of Disintegration~
 @879= ~The simple appearance of these leather gloves belies its power. Once per day the spell Disintegrate can be cast by the wearer.
 
@@ -1582,17 +1648,21 @@ Choose one
       BGQE
       Extended Mage Stronghold
 You can install and play Sandrah but you will lose significant contents. Best install missing mod before continuing Sandrah installation.~
-@899= ~Old Man~
-@900= ~Gorion's Dagger~
-@901= ~You found the dagger on the corpse of your murdered foster father. It is not only a useful weapon, but also one of the few belongings of him that you may call your heritage. You feel the urge to keep this item, be it of sentiment or because it may be a link to your unknown past. Strangely enough the dagger has the initial *A* engraved in its hilt.~
-@902= ~You found the dagger on the corpse of your murdered foster father. It is not only a useful weapon, but also one of the few belongings of him that you may call your heritage. You feel the urge to keep this item, be it of sentiment or because it may be a link to your unknown past. Strangely enough the dagger has the initial *A* engraved in its hilt.
-The mage Elminster has enchanted the item with further abilities - you have the feeling that it may become even more valuable in the future.~
-@903= ~You found the dagger initially on the corpse of your murdered foster father. It is not only a useful weapon but also one of the few belongings of him that you may call your heritage. You feel the urge to keep this item, be it of sentiment or because it may be a link to your unknown past. Strangely enough the dagger has the initial *A* engraved in its hilt.
-Later Elminster and your visit to hell have enhanced the dagger's abilities.~
-@60904= ~Gorion's Dagger
+@899= ~Старик~
+@900= ~Кинжал Горайона~
+@901= ~Ты нашёл этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.~ ~Ты нашла этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.~
+@902= ~Ты нашёл этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.
+Позже маг Элминстер зачаровал его, добавив новых способностей - и у тебя есть ощущение, что этот предет может стать ещё более ценным в будущем.~ ~Ты нашла этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.
+Позже маг Элминстер зачаровал его, добавив новых способностей - и у тебя есть ощущение, что этот предет может стать ещё более ценным в будущем.~
+@903= ~Первоначально ты нашёл этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.
+Позже Элминстер и твоё посещение ада расширили возможности кинжала.~ ~Первоначально ты нашла этот кинжал на трупе твоего приёмного отца. Это не только полезное оружие, но и одна из немногих его вещей, которую ты можешь считать своим наследством. Ты чувствуешь желание сохранить этот предмет, то ли из сентиментальных чувств, то ли потому, что он может стать ниточкой к твоему неизвестному прошлому. Как ни странно, на рукояти кинжала выгравирована буква *A*.
+Позже Элминстер и твоё посещение ада расширили возможности кинжала.~
+@60904= ~Кинжал Горайона
 
-At the site of Gorion's murder you have found three things you decide to keep during your forthcoming adventures - a young cleric of Mystra named Sandrah who set out to help you, a letter from someone named *E* who had tried to warn Gorion of the danger waiting for both of you...and your foster father's dagger, which is about the only item you may call his heritage, aside from the lectures and love you have received from him during the days of your now ended youth. ~
-@905= ~You picked up Gorion's dagger, the sole heritage of your foster father.~
+На месте убийства Горайона ты нашёл три вещи, которые решил оставить на время своих будущих приключений - молодую священницу Мистры по имени Сандра, которая намеревалась помочь тебе, письмо от кого-то за подписью *Э*, который пытался предупредить Горайона об опасности, которая ждёт вас обоих... и кинжал твоего приёмного отца, являющийся единственным предметом, который ты можешь назвать свои наследством, помимо обучения и любви, которые ты получал от него в дни твоей юности.~ ~Кинжал Горайона
+
+На месте убийства Горайона ты нашла три вещи, которые решила оставить на время своих будущих приключений - молодую священницу Мистры по имени Сандра, которая намеревалась помочь тебе, письмо от кого-то за подписью *Э*, который пытался предупредить Горайона об опасности, которая ждёт вас обоих... и кинжал твоего приёмного отца, являющийся единственным предметом, который ты можешь назвать свои наследством, помимо обучения и любви, которые ты получала от него в дни твоей юности.~
+@905= ~Ты подобрал кинжал Горайона, единственное наследство твоего приёмного отца.~ ~Ты подобрала кинжал Горайона, единственное наследство твоего приёмного отца.~
 @60906= ~Gorion's Dagger
 
 You found some disturbing information about the dagger that is your sole heritage from your foster father Gorion - the item seems to be a cult dagger used in the bloody sacrifices performed by the followers of the God of Murder - Bhaal. This specific dagger had belonged most likely to a woman with the initial *A*. How the dagger came into Gorion's possession remains a mystery at this time, still you have the remote feeling that it may be a trace to Gorion's past and thus to your own origins. Sandrah seems to share this opinion, even though even with her knowledge and lore she currently has no clue about those past connections.
@@ -1634,81 +1704,84 @@ STATISTICS:
 Special:
       +20 Lore
 Weight: 2~
-@916=~Mystra's Bust~
-@917=~Broken Armour~
-@918=~Cure Wounds~
-@919=~Siamorphe Temple~
-@920=~To North-West Ward~
-@921=~Festhall~
-@922=~Jen'lig's Hunt
+@916=~Бюст Мистры~
+@917=~Разбитые доспехи~
+@918=~Лечение ран~
+@919=~Храм Сиаморф~
+@920=~В Северо-Западный район~
+@921=~Салон~
+@922=~Охота Джен'лиг
 
-I have allowed the githyanki Jen'lig to join my party. This strange creature from the Astral Plane is hunting for a relict of her race that has been stolen by some mortals. One of the thieves was a Flaming Fist sergeant she had pursued to the Friendly Arm Inn. The trail of his accomplices seems to point to Baldur's Gate. ~
-@923=~Jen'lig's Hunt
+Я позволил Гитиянки Джен'лиг присоединиться к моей группе. Это странное существо с Астрального Плана охотится на реликт её расы, который был украден какими-то смертными. Один из воров был сержантом Пламенного Кулака, которого она настигла в гостинице "Дружеская рука". След его сообщников, кажется, указывает на Врата Балдура.~ ~Охота Джен'лиг
 
-Jen'lig has told me today that she searches for a sacred silver sword from the city of Tu'narath that was once wielded by Gith herself, the heroine that freed her race from the slavery of the Illithids. Such an item must be of great importance to her race.~
-@924=~Jen'lig's Hunt
+Я позволила Гитиянки Джен'лиг присоединиться к моей группе. Это странное существо с Астрального Плана охотится на реликт её расы, который был украден какими-то смертными. Один из воров был сержантом Пламенного Кулака, которого она настигла в гостинице "Дружеская рука". След его сообщников, кажется, указывает на Врата Балдура.~
+@923=~Охота Джен'лиг
 
-We have found a first trace of the relict our githyanki companion searches. It is the sheath of a sword stolen from her former commander, Kastya. Six men seem to have been involved in the murdering of Kastya and the theft of the sword. One was the sergeant Horvok she had tracked to the Friendly Arm Inn - five more need to be found.~
-@925=~Jen'lig's Hunt
+Джен'лиг сказала мне сегодня, что она ищет священный серебряный меч из города Ту'нарат, которым когда-то владела сама Гит, героиня, освободившая её расу от рабства иллитидов. Такой предмет должен иметь большое значение для её расы.~
+@924=~Охота Джен'лиг
 
-Another step forward in Jen'lig's quest. The bandit leader Tazok was one of Kastya's murderers. However, he did not reveal much more about the case before his well earned death.
-One thing that bothers me is the fact that Jen'lig's possible success with her mission may as well mean a great danger for her - the god-queen of the githyanki is rumoured to assimilate the power and essence of strong kinsmen to prolong her own lichdom.~
-@926=~Jen'lig's Hunt
+Мы нашли первый след реликта, который ищет наша спутница Гитиянки. Это ножны меча, украденнго у её бывшего командира Кастьи. К убийству Кастьи и краже меча, похоже, были причастны шестеро. Одним из них был сержант Хорвок, которого она настигла в гостинице "Дружеская рука" - нужно найти еще пятерых.~
+@925=~Охота Джен'лиг
 
-When we defeated Kastya's murderer number three, Davaeorn, we found a warning letter indicating the names of two more complices, Jardak and Sunin in Baldur's Gate. It may be a good idea to contact the Shadow Thieves Guild in that town - such a guild is a good source for all kinds of information, provided you grease their palms adequately.~
-@927=~Jen'lig's Hunt
+Ещё один шаг вперёд в поисках Джен'лиг. Главарь бандитов Тазок был одним из убийц Кастьи. Хотя, он не многое рассказал об этом деле до своей заслуженной смерти.
+Одна из вещей, которая меня беспокоит - это то, что возможный успех Джен'лиг в её миссии может также обозначать большую опасность для неё - ходят слухи, что богиня-королева гитиянки поглощает силу и сущность своих сильных подданных, чтобы продлить своё существование.~
+@926=~Охота Джен'лиг
 
-We seem to get nearer to Jen'lig's goal and to mine. The sorcerer responsible for her mentor's death and the theft of the holy sword is Semaj, a close confidant of my arch enemy Sarevok.
-With this common goal her loyalty to my quest seems to be assured until the final showdown. What she will do when we have succeeded, I can only guess...~
+Когда мы победили убийцу Кастьи номер три, Даваеорна, мы нашли предупреждающее письмо с указанием имён ещё двух соучастников, Джардака и Сунина во Вратах Балдура. Может стать хорошей идеей связаться с Гильдией Воров в этом городе - эта гильдия является хорошим источником всех видов информации, при условии, если надлежащим образом им заплатить.~
+@927=~Охота Джен'лиг
+
+Кажется, мы приближаемся к цели Джен'лиг и моей. Колдун, ответственный за смерть её наставника и кражу священного меча - это Семадж, близкое доверенное лицо моего заклятого врага Саревока.
+При общей цели её верность мне, похоже, будет гарантирована до финального поединка. Что она будет делать дальше, когда нам это удастся, я могу только догадываться...~
 @928=~Tentacle Whip~
 @929=~Azuth's Imp~
-@930=~Cure Disease~
-@60931=~Imoen in Love?
+@930=~Лечение болезни~
+@60931=~Имоен влюбилась?
 
-Imoen urges you to hunt for a winter wolf. Henning, the shopkeeper in Nashkel offers a reward for a pelt from that animal. However, Imoen seems to be less interested in said reward than in seeing Henning again as soon as we have hunted down such a wolf.~
-@60932=~Imoen in Love?
+Имоен призывает нас поохотиться на зимнего волка. Хеннинг, владелец магазина в Нашкеле, предлагает награду за шкуру этого животного. Однако Имоен, похоже, меньше всего заинтересована в упомянутой награде, а скорее в том, чтобы снова увидеть Хеннинга, как только мы выследим такого волка.~
+@60932=~Имоен влюбилась?
 
-It really seems that your *little sister* Imoen has some romantic interest in the handsome and charming shopkeeper of Nashkel. If you want to keep a rebellion within your party down, it is advised to visit the little shop in Amn now regularly.~
-@933=~Heal Wounds~
-@934=~Heal Wounds (Healing)
-Level: 2
-Sphere: Healing 
-Range: Touch 
-Duration: Permanent 
-Casting Time: 2
-Area of Effect: Creature touched 
-Saving Throw: None 
+Похоже, моя *младшая сестра* Имоен испытывает романтический интерес к красивому и обаятельному лавочнику из Нашкеля. Если я хочу предотвратить бунт в своей группе, лучше теперь регулярно посещать его магазинчик в Амне.~
+@933=~Лечение ран~
+@934=~Лечение ран (исцеление)
 
-When casting this spell and laying his hand upon a creature, the healer causes 11 points of wound or other injury damage to the creature's body to be healed. This healing cannot affect creatures without corporeal bodies, nor can it cure wounds of creatures not living or of extra-planar origin.
-Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal - or can be cured - just as any normal injury.~
-@935 =~Ghotal's Summer Camp ~
-@936 =~Mornbryn's Shield ~
-@937 =~Bezantur in Thay ~
-@938 =~Pirate~
-@939 =~Bookhunter~
-@940 =~Orc~
-@941 =~Monk~
-@942 =~Citizen~
-@943 =~Nobleman~
-@944 =~Guest~
-@945 =~Shoes~
-@946 =~Boots~
-@947 =~Sandals~
-@948 =~Cloak~
-@949 =~Key~
-@950 =~Letter~
-@951 =~Belt~
-@952 =~Bow~
-@953 =~Eagle~
-@954 =~Snake~
+Уровень 2
+Сфера: лечение
+Дистанция: прикосновение
+Длительность: постоянная
+Время чтения: 2
+Зона действия: одно существо
+Спасбросок: Нет
+
+При произнесении этого заклинания и возложении рук на существо, целитель восстанавливает 11 пунктов здоровья раненому существу. Это заклинание не может воздействовать на бестелесных существ, а также нежити или существ с других Планов.
+Лечение является постоянным до тех пор, пока существо не получит дальнейших повреждений, которые в свою очередь могут быть вылечены, как всякие раны.~
+@935 =~Летний лагерь Готала~
+@936 =~Щит Морнбрина~
+@937 =~Безентар в Тэе~
+@938 =~Пират~
+@939 =~Коллекционер книг~
+@940 =~Орк~
+@941 =~Монах~
+@942 =~Горожанин~
+@943 =~Дворянин~
+@944 =~Гость~
+@945 =~Обувь~
+@946 =~Ботинки~
+@947 =~Сандали~
+@948 =~Плащ~
+@949 =~Ключ~
+@950 =~Письмо~
+@951 =~Пояс~
+@952 =~Лук~
+@953 =~Орёл~
+@954 =~Змея~
 @60955 =~The kidnapping of Henning
 
 A new development. We are following the trail of those orcs who have captured Imoen's boyfriend Henning. It seems that our investigations and the reopening of the Nashkel mines by us have forced a large and mighty organisation to act against us. 
 The trail had at first pointed to the uncharted Cloakwood Forest. But meanwhile we found a witness that told us the orcs with their prisoner are unsure of their route and are currently on their way to the halfling village of Gullykin.~
-@956 =~Frost Giant~
-@957 =~Ice Golem~
-@958 =~githyanki~
-@959 =~Githyanki~
+@956 =~Морозный Великан~
+@957 =~Ледяной голем~
+@958 =~гитиянки~
+@959 =~Гитиянки~
 @960 =~The ground gives way, sending rock and debris down the cliff to your west.~
 @961 =~You suddenly have a sense of imminent danger.  The noise you just made alerted anyone within miles of these mountains.~
 @962 =~This version of the mod is for EET only!!~
@@ -1734,7 +1807,7 @@ High though your price is, I will meet it. You will have earned it, though. <CHA
 If you can bring <PRO_HISHER> head to me, the 10,000 gold are yours. And much more besides, perhaps - as you know, I am destined for great things, and I will remember those who have aided me in mortal life.
 
 S. ~
-@967 = ~priestess of Mystra~
+@967 = ~священница Мистры~
 @968 = ~The Uncommon Cold  
 
 I should look for a blackthorn tree in the forest.  I need to find a blackthorn tree somewhere in the forest near camp. Its bark may help cure this illness.~
@@ -1762,109 +1835,109 @@ A.~
 
 Gaylan's nephew Brus told me the truth about Gaylan Bael's allies. The gold they want to squeeze out of us for their help will finally amount to the ridiculous sum of 150,000 gp. Either we start collecting this sum or we find some alternative. Or do both and see which option finally leads us to our goal.~
 @979 =~Our githyanki will need her sword when we return her to life.~
-@980 =~Chapter 23~
-@981 =~Chapter 24~
-@982 =~Chapter 25~
-@983 =~Chapter 26~
-@984 =~Chapter 27~
-@985 =~Chapter 28~
-@986 =~Chapter 29~
-@987 =~Chapter 30~
-@988 =~Chapter 31~
-@989 =~Chapter 32~
-@990 =~Chapter 33~
-@991 =~Chapter 34~
-@992 =~Chapter 35~
-@993 =~Chapter 36~
+@980 =~Глава 23~
+@981 =~Глава 24~
+@982 =~Глава 25~
+@983 =~Глава 26~
+@984 =~Глава 27~
+@985 =~Глава 28~
+@986 =~Глава 29~
+@987 =~Глава 30~
+@988 =~Глава 31~
+@989 =~Глава 32~
+@990 =~Глава 33~
+@991 =~Глава 34~
+@992 =~Глава 35~
+@993 =~Глава 36~
 @994 =~You suddenly have a sense of imminent danger. Something here is not what it seems.~
 @995 =~Harper Pin~
 @996 =~A Harper pin is a treasured item, signifying that the bearer is an honoured and trusted member of the Harpers. It grants the wearer exceptional protection against many different kinds of attacks. Harper pins are not attuned to any particular person, but you would be hard-pressed to find someone that would lend such an item or even let it out of their sight. It is quite literally a badge of honour.~
 @997 =~The priestess of Mystra cannot use this item.~
 @998 =~Unless Elminster finds a way to rescue Sandrah, she will be lost forever. 
 You will probably never know.~
-@999 =~Since her early training, Sandrah began to feel a presence from time to time. Her skin would tingle coolly and she had a feeling of somehow being followed or observed. After such attentions, she always found that spells, which she had labored over for weeks, would suddenly work without any problem.
-This ability to assimilate spells they observe on other casters or just invent, is granted to few priestesses of Mystra, including Midnight and Sandrah herself.
-Such spells and abilities are often useful, but they may have unexpected side effects which prevents them from being made available for common spellbooks.~
+@999 =~С самого начала своего обучения Сандра начала время от времени ощущать присутствие Мистры. Её кожу начинало покалывать холодом, и ей казалось, что за ней кто-то следит или наблюдает. После этого она всегда обнаруживала, что заклинания, над которыми она трудилась неделями, внезапно срабатывали без каких-либо проблем.
+Эта способность ассимилировать заклинания, которые она наблюдает у других заклинателей или просто изобретает, дарована нескольким священницам Мистры, включая Полночь и саму Сандру.
+Такие заклинания и способности часто бывают полезны, но они могут дать неожиданные побочные эффекты, что не позволяет сделать их доступными для обычных книг заклинаний.~
 @1000 = ~Quarterstaff~
 @1001 = ~Staff of Dark Oaks~
 @1002 = ~Only the highest ranking of the Shadow Druids are said to possess these mythical staves which grant them skin as tough as the dark oaks, resilience against fire, and resistance against the most potent of poisons. ~
-@1003 = ~From Midnight to Mystra~
-@1004 = ~From Midnight to Mystra
+@1003 = ~От Полночи до Мистры~
+@1004 = ~От Полночи до Мистры
 
-She was born Ariel Manx, the second child of Theus Manx, a merchant, and his wife Paiyse. As a teenager she became familiar with the night's populace of bards, thieves, sorcerers, and fighters and was eventually nicknamed "Midnight" by these friends, which she immediately preferred to Ariel.
+Её имя при рождении было Ариэль Манкс, она была вторым ребёнком торговца Тэуса Манкса и его жены Пайиз. В подростковом возрасте она познакомилась с группой ночных воров, бардов, колдунов и бойцов, эти друзья и дали ей прозвище «Полночь», которое она сразу предпочла своему имени Ариэль.
 
-Her first taste of magic began with her tryst with the conjurer Tad, who set her on her path, in magic and in love. She began to lose interest in her hedonistic pursuits - not completely to be honest - and more in the quest for magical knowledge and training, gradually becoming more obsessed with her magical quest.
+Ее первое знакомство с магией началось со встречи с волшебником Тэдом, который её направил на её путь, и в магии, и любви. Постепенно она начала терять интерес к своим гедонистическим занятиям - не совсем, если честно - и всё больше искала магических знаний и обучения, постепенно становясь всё более одержимой магией.
 
-It was during this time that she fell into the worship of Mystra, whose attention she attracted during your time of service in one of Mystra's temples. From her 21st year on, she began to feel a presence from time to time. Her skin would tingle coolly and she had a feeling of somehow being followed or observed. After such attentions, she always found that spells, which she had laboured over for weeks, would suddenly work without any problem. She and her teachers soon suspected that she had been granted special attention by Mystra herself and believed that she were groomed for the position of Magister.
+Именно в это время она стала поклоняться Мистре, внимание которой она привлекла во время своего служения в одном из храмов Мистры. В возрасте 21 года она начала время от времени ощущать её присутствие. Её кожу начинало покалывать холодом, и ей казалось, что за ней кто-то следит или наблюдает. После этого она всегда обнаруживала, что заклинания, над которыми она трудилась неделями, внезапно срабатывали без каких-либо проблем. Вскоре она и её учителя заподозрили, что Мистра оказывает ей особое внимание, и посчитали, что она готова к званию Магистра.
 
-Sunlar, high priest of the Deepingdale temple of Mystra, took her under his supervision. It was during this time that her knowledge of self-defence and magic improved leaps and bounds and she spent a year in the temple at Deepingdale before she left to experience her gifts out in the adventurer's world.
+Санлар, верховный жрец храма Мистры в Дипингдейле, взял её под свое наблюдение. Именно в это время её знания о самообороне и магии улучшались стремительно, и она провела год в храме в Дипингдейле, прежде чем уйти, чтобы испытать свой дар в мире искателей приключений.
 
-During the Time of Troubles, when the gods were cast down by Ao, Midnight joined with Kelemvor Lyonsbane, Cyric, and Adon in the search for the stolen Tablets of Fate. Midnight killed Myrkul, the god of death, in a duel. Cyric killed Bhaal by backstabbing him with the sword Godsbane.
+В Смутное время, когда боги были низвергнуты Ао, Полночь присоединилась к Келемвору Лионсбэйну, Цирику и Адону в поисках украденных Скрижалей судьбы. Полночь убила на дуэли Миркула, бога смерти. Цирик убил Баала, ударив его мечом «Гибель богов».
 
-At the time, also Mystra was killed by Helm for defying Ao's command and trying to climb the Celestial Stairway back to Celestia. Her death caused great damage to the Weave, but eventually Ao selected Midnight to replace the destroyed Mystra.
+В то время Хелм также убил Мистру за то, что она бросила вызов команде Ао и попыталась подняться по Небесной лестнице обратно в Селестию. Её смерть нанесла большой урон Плетению, но в конце концов Ао выбрал Полночь, чтобы заменить ей уничтоженную Мистру.
 ~
-@1005 =~They all do, Mae'Var. For the moment.~
-@1006 =~Nothing here is what they want to make us think it is!~
+@1005 =~Они все сделали, Маэ'Вар. На этот момент.~
+@1006 =~Здесь нет ничего такого, чтобы они хотели заставить нас так думать!~
 @1007 =~The tweaks anthology component to send NPCs to an inn (1075) is required. Consider to install now.~
-@1008 =~Amnish Sergeant~
-@1009 =~Spider Spawn~
-@1010 =~Xvart Shaman~
+@1008 =~Амнский сержант~
+@1009 =~Порождение пауков~
+@1010 =~Ксварт шаман~
 @1011 =~SandrahNPC Check for required Installation~
 @1012 =~Check for required Installation sucessful - Can install SandrahNPC mod~
 @1013 =~Sandrah Worldmap Entries~
-@1014 =~Haiass~
-@1015 =~Pelligram~
-@1016 =~Araxias~
+@1014 =~Хайасс~
+@1015 =~Пеллиграм~
+@1016 =~Араксиас~
 @1017 =~SandrahNPC for EET Core~
 @1018 =~Copying new area graphics - this may take a few minutes...~
 @1019 =~Installed SandrahNPC for EET Core~
 @1020 =~Mods Compatibility~
-@1021 =~Gauth~
-@1022 =~Furlon~
-@1023 =~Setta~
-@1024 =~Black Talon Elite~
-@1025 =~Black Talon General~
-@1026 =~Well now, our paths cross once more. I've heard nothing but tales of thy exploits in the time we have been apart. It would seem that thou art destined to have quite the impact on the Sword Coast. Quite the burden for one so young.~
+@1021 =~Гаут~
+@1022 =~Фалрон~
+@1023 =~Сетта~
+@1024 =~Элита Чёрных Когтей~
+@1025 =~Генерал Чёрных Когтей~
+@1026 =~Что ж, наши пути пересеклись снова. Я не слышал ничего, кроме рассказов о твоих подвигах, за то время, что мы не встречались. Кажется, тебе суждено иметь большое влияние на Побережье Меча. Довольно тяжёлое бремя для такого молодого, как ты.~ ~Что ж, наши пути пересеклись снова. Я не слышал ничего, кроме рассказов о твоих подвигах, за то время, что мы не встречались. Кажется, тебе суждено иметь большое влияние на Побережье Меча. Довольно тяжёлое бремя для такой молодой, как ты.~
 @1027 =~Installed Mods Compatibility~
 @1028 =~Sandrah Kit~
 @1029 =~Craw~
 @1030 =~Installed Sandrah Kit~
 @1031 =~SandrahNPC Creatures and Items~
-@1032 =~Sandrah~
-@1033 =~Illithid~
-@1034 =~Hillath~
-@1035 =~Henk~
-@1036 =~Yantl~
-@1037 =~Whyrtman~
-@1038 =~Neerol~
+@1032 =~Сандра~
+@1033 =~Иллитид~
+@1034 =~Хиллат~
+@1035 =~Хенк~
+@1036 =~Янтл~
+@1037 =~Виртман~
+@1038 =~Нирол~
 @1039 =~Khelben~
-@1040 =~Hobgoblin~
-@1041 =~Dead Dwarf~
+@1040 =~Хобгоблин~
+@1041 =~Мёртвый дварф~
 @1042 =~IWD not detected - skipped ~
 @1043 =~Black Pits access from Waterdeep added~
 @1044 =~Sandrah EET additions~
 @1045 =~Installed Sandrah Return To Faerun Transition~
-@1046 =~Orog~
+@1046 =~Орог~
 @1047 =~Barmaid~
-@1048 =~Dog~
-@1049 =~Kensai~
-@1050 =~Yeti~
+@1048 =~Собака~
+@1049 =~Кенсай~
+@1050 =~Йети~
 @1051 =~Cyclops~
-@1052 =~Peasant~
-@1053 =~Finch~
-@1054 =~Khattark~
-@1055 =~Shar-Teel~
-@1056 =~Henning~
-@1057 =~Jopi~
+@1052 =~Крестьянин~
+@1053 =~Финч~
+@1054 =~Хаттарк~
+@1055 =~Шар-Тил~
+@1056 =~Хеннинг~
+@1057 =~Джопи~
 @1058 =~Rellruk~
 @1059 =~Petana~
-@1060 =~Winthrop~
+@1060 =~Винтроп~
 @1061 =~Knowlod~
-@1062 =~Giran~
+@1062 =~Джиран~
 @1063 =~Wrarkh~
-@1064 =~Mystra~
+@1064 =~Мистра~
 @1065 =~Tiamat~
-@1066 =~Shar~
+@1066 =~Шар~
 @1067 =~Mirtco~
 @1068 =~Roedger~
 @1069 =~Hugnot~
@@ -1877,25 +1950,23 @@ At the time, also Mystra was killed by Helm for defying Ao's command and trying 
 @1076 =~Leyala~
 @1077 =~Finngur~
 @1078 =~Emcyric~
-@1079 =~Talos~
+@1079 =~Талос~
 @1080 =~Reagan~
-@1081 =~Sarevok~
-@1082 =~Bodhi~
-@1083 =~Gorion~
+@1081 =~Саревок~
+@1082 =~Бодхи~
+@1083 =~Горайон~
 @1084 =~Garcon~
 @1085 =~Coq~
 @1086 =~Lorant~
 @1087 =~Dauron~
 @1088 =~Wetler~
-@1089 =~Cedric~
-@1090 =~Renata~
-@1091 =~Angelo~
-@1092 =~Tazok~
-@1093 =~Shauhana~
-@1094 =~Boo~
-@1095 =~Sharlene~
-@1096 =~Churin~
-@1097 =~Orlex~
+@1089 =~Седрик~
+@1090 =~Рената~
+@1091 =~Анджело~
+@1092 =~Тазок~
+@1093 =~Шаухана~
+@1094 =~Бу~
+@1095 =~Шарлин~
 @70010 = ~Sniff... what are you going to do me?~
 @70011 = ~You shall be sacrificed in the name of Cyric!~
 @70012 = ~No! No... sniff... I don't want to die. Please, sniff... let me go!~
