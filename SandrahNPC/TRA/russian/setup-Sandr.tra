@@ -902,37 +902,40 @@
 @428 = ~ Тело маленькой девочки~
 @429 = ~ Тело маленькой Лейалы. Больная девочка без сознания и отчаянно нуждается в квалифицированном целителе, чтобы спасти её жизнь.~
 @430 = ~ Том~
-@431 = ~ Tome of Leadership~
+@431 = ~ Том Лидерства~
 @432 = ~ 
-One of the most popular recent tomes of leadership and influence is the cynically entitled book "How to Win Friends and Influence People." Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede...
+Одним из самых популярных в последнее время сочинений о лидерстве и влиянии является книга с циничным названием «Как завоевать друзей и оказывать влияние на людей». Как и другие книги, ей подобные, она пропагандирует философию личного превосходства и манипуляции окружающими при помощи харизмы. Авторы и защитники таких сочинений утверждают, что, опираясь на новейшие теории социологии и межличностной психологии, можно повысить харизму на один пункт. На самом же деле, такое увеличение харизмы является результатом магических заклинаний, наложенных на книгу. Эти же заклинания заставляют фолиант исчезать после первого использования. Вы должны признать, что это отличная маркетинговая стратегия...
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Charisma:  Raised by 1 point permanently
-Special:  The book is consumed upon use
-Usage:  Place into quick item slot~
-@433 = ~ Tome of Understanding~
+Харизма: Увеличивается на 1 пункт навсегда.
+Особое свойство: Книга исчезает после прочтения.
+Использование: Поместить в слот быстрого доступа.~
+@433 = ~ Том Понимания~
 @434 = ~ 
-A typical tome of understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises, and theories of magic and metaphysics. While rarely interesting to anyone outside of their already well-educated niche market, it is said that some such tomes have even added a single point to the Wisdom of certain half-ogres. Such marvels, however, are the product of a potent magic placed upon the tome as it is being written. Unfortunately, this same magic causes the tome to disappear after a single use.
+Типичный Том Понимания содержит трезвый, хотя и сухой анализ юридических споров, исторических событий, политики правительства, философских трактатов и теории магии и метафизики. Несмотря на то, что такие книги редко кому интересны за пределами их и без того хорошо образованного нишевого рынка, говорят, что некоторые подобные фолианты могут добавить мудрости даже полуогру. Однако такие чудеса являются следствием могущественных заклинаний, наложенных на книгу в процессе её написания. К сожалению, эта же самая магия заставляет книгу исчезать после однократного прочтения.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Wisdom:  Raised by 1 point permanently
-Special:  The book is consumed upon use
-Usage:  Place into quick item slot~
-@435 = ~ ALONE
-Was is Bhaal himself that has guided your decision? 
-And Mystra who has intervened?
-You find yourself alone, deserted by your companions who have stayed loyal to Sandrah and her crusade for a better Toril...~
-@436 = ~ Sandrah moves from one of the group to the next with Mystra's ritual knife and applies a short cut to each one's index finger. The knife responds either with a glow or remains dull, indicating the nature of the tested blood.~
-@437 = ~ The Goddess of All Magic and her human origins~
-@438 = ~ An undecipherable tome~
+Мудрость: Увеличивается на 1 пункт навсегда.
+Особое свойство: Книга исчезает после прочтения.
+Использование: Поместить в слот быстрого доступа.~
+@435 = ~ ОДИНОЧЕСТВО
+Неужели сам Баал руководил твоим решением?
+Или вмешалась Мистра?
+Ты оказался в одиночестве, брошенный своими товарищами, которые остались верными Сандре и её борьбе за лучший Торил...~ ~ ОДИНОЧЕСТВО
+Неужели сам Баал руководил твоим решением?
+Или вмешалась Мистра?
+Ты оказалась в одиночестве, брошенная своими товарищами, которые остались верными Сандре и её борьбе за лучший Торил...~
+@436 = ~Сандра переходит от одной группы к другой с ритуальным кинжалом Мистры и делает всем небольшой надрез на указательном пальце. Кинжал реагирует либо свечением, либо остаётся тусклым, что указывает на природу крови испытуемых.~
+@437 = ~ Богиня Всей Магии и её человеческое происхождение~
+@438 = ~ Не поддающийся расшифровке том~
 @439 = ~ 
-The Goddess of All Magic and her human origins
-or
-What the studies of Narvantial and others reveal
+Богиня Всей Магии и её человеческое происхождение
+или
+Что показали исследования Нарванциала и других
 
-The fate and history of Mystra has always been interwoven with the mortals of the primary plane. Since Mystra informed Azuth at approximately the Year of the Rising Flame (0 DR), more than 1,300 years before the Time of Troubles, that some of her power must be put into the hands of mortals who would then become known as Mystra's Chosen, theory goes on to suggest that her own initial origin was mortal. While all the gods in the pantheon are granted access to the power of the Weave and many pass part of that on to their followers, Ao is assumed to have chosen a human female to be the ultimate guardian of the Weave.
+Судьба и история Мистры всегда была связана со смертными первичного плана. Поскольку Мистра сообщила Азут приблизительно в Год Восходящего Пламени (0 DR), более чем за 1300 лет до Смутного Времени, что часть её силы должна быть передана в руки смертных, которые затем станут известны как Избранные Мистры, теория далее предполагает, что её собственное изначальное происхождение было смертным. Не смотря на то, что всем богам Пантеона предоставлен доступ к силе Плетения, и многие передают её часть своим последователям, предполагается, что Ао выбрал человеческую женщину в качестве главной хранительницы Плетения.
 
 Through the ages, Mystra has gone through many incarnations, and the current is but one of them. The studies of Narvantial of Soubar, finished shortly before the Time of Troubles, revealed that all incarnations of the goddess stem from a single human bloodline through the female line. Before their raising to godhood, all human mages that became Mystra had been mothers and later incarnations of the goddess had always come from their blood. Narvantial pointed out the priestess Midnight as the heiress of that blood during his lifetime - and indeed Mystra's powers passed onto her servant Midnight who took her name and mantle after Helm had defeated the goddess in the Time of Troubles.
 
