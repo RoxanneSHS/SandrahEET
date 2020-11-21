@@ -3770,31 +3770,6 @@ SAY NAME1 @124
 SAY NAME2 @125
 SAY DESC @126
 
-COPY ~SandrahNPC/ITM/fireflow.itm~ ~override/fireflow.itm~
-SAY NAME1 @391
-SAY NAME2 @391
-SAY DESC @392
-
-COPY ~SandrahNPC/ITM/ironkiss.itm~ ~override/ironkiss.itm~
-SAY NAME1 @393
-SAY NAME2 @393
-SAY DESC @394
-
-COPY ~SandrahNPC/ITM/ysamulet.itm~ ~override/ysamulet.itm~
-SAY NAME1 @395
-SAY NAME2 @395
-SAY DESC @396
-
-COPY ~SandrahNPC/ITM/ironkis2.itm~ ~override/ironkis2.itm~
-SAY NAME1 @397
-SAY NAME2 @397
-SAY DESC @398
-
-COPY ~SandrahNPC/ITM/fireflo2.itm~ ~override/fireflo2.itm~
-SAY NAME1 @399
-SAY NAME2 @399
-SAY DESC @400
-
 COPY ~SandrahNPC/ITM/SanEtg.itm~ ~override/SanEtg.itm~
 SAY NAME1 @128
 SAY NAME2 @129
