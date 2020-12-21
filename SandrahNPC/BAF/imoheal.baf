@@ -113,6 +113,7 @@ GlobalLT("GullCave","GLOBAL",2)
 GlobalLT("RevealBandits","GLOBAL",9)
 GlobalGT("SanImoNashInt","GLOBAL",7)
 GlobalLT("SanImoNashInt","GLOBAL",18)
+!Dead("Tazok")
 THEN
 RESPONSE #100
 SetGlobal("RevealBandits","GLOBAL",9)
