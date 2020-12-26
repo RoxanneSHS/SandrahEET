@@ -2,16 +2,16 @@ IF
 Global("SanBGForIWD","Global",1) 
 GlobalLT("Chapter","Global",7)
 AreaCheck("iw1000")
-Global("HowNoSan","iw1100",0)
+Global("HowNoSan","iw1000",0)
 THEN
 RESPONSE #100
-SetGlobal("HowNoSan","iwd1100",1)
+SetGlobal("HowNoSan","iw1000",1)
 HideAreaOnMap("id9100")
 END
 
 IF
 Global("SanIDW1","Global",0)
-AreaCheck("id0106")
+AreaCheck("id1006")
 Delay(12)
 THEN
 RESPONSE #100
