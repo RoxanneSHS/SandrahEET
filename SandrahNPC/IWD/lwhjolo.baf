@@ -1,0 +1,8 @@
+IF
+IsActive(Myself)
+AreaCheck("id2109")
+InParty("CVsandr")
+THEN
+RESPONSE #100
+DestroySelf()
+END
