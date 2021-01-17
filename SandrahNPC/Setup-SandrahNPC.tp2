@@ -8553,6 +8553,12 @@ SAY NAME2 @1041
 COPY_EXISTING ~Belhif.cre~ ~override~
 SAY NAME1 @1097
 SAY NAME2 @1097
+COPY_EXISTING ~kaoroge.cre~ ~override~
+WRITE_ASCII 0x280 ~kaoroge~
+COPY_EXISTING ~drowspe.cre~ ~override~
+WRITE_ASCII 0x280 ~drowspe~
+COPY_EXISTING ~drowvan.cre~ ~override~
+WRITE_ASCII 0x280 ~drowvan~
 PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT @1042

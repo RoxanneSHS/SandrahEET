@@ -66,9 +66,9 @@ SetGlobal("SanIDW1","Global",11)
 END
 
 IF
-Global("#spawn_group_1","ar2100",1)
-See("Ghast") 
-Global("SanIDW1","Global",12)
+AreaCheck("id2100")
+See("kaoroge")
+GlobalLT("SanIDW1","Global",13)
 THEN
 RESPONSE #100
 SetGlobal("SanIDW1","Global",13)
