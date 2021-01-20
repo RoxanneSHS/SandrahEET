@@ -8524,6 +8524,7 @@ ACTION_IF FILE_EXISTS_IN_GAME ~id1000.are~ THEN BEGIN
 COMPILE
 ~SandrahNPC\IWD/SanIWD_Dialogues.d~
 ~SandrahNPC\IWD/SanIWDGuy.d~
+~SandrahNPC\IWD/koveras1.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC\IWD/SanIWDtriggers.baf~
 EXTEND_TOP
@@ -8559,6 +8560,8 @@ COPY_EXISTING ~drowspe.cre~ ~override~
 WRITE_ASCII 0x280 ~drowspe~
 COPY_EXISTING ~drowvan.cre~ ~override~
 WRITE_ASCII 0x280 ~drowvan~
+COPY_EXISTING ~kovera.cre~ ~override~
+WRITE_ASCII 0x248 ~koveras1~
 PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT @1042

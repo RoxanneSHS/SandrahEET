@@ -11,11 +11,9 @@ CreateCreature("Kovera",[857.284],7)
 END
 
 IF
-Global("Koveras","id7003",1)
+Global("Koveras","id7003",2)
 THEN
 RESPONSE #100
-SetGlobal("Koveras","id7003",2)
-ActionOverride("Kovera",MoveToPoint([1098.187]))
 Wait(6)
-ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
+ActionOverride("CVSandr",StartDialogNoSet("CVSandr"))
 END

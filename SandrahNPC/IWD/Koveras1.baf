@@ -1,0 +1,36 @@
+IF
+NumTimesTalkedTo(0)
+AreaCheck("id7003")
+THEN
+RESPONSE #100
+SetNumTimesTalkedTo(1)
+END
+
+IF
+Global("Koveras","id7003",1)
+THEN
+RESPONSE #100
+SetGlobal("Koveras","id7003",2)
+MoveToPoint([1098.187])
+Wait(6)
+ActionOverride("CVSandr",StartDialogueNoSet("CVSandr"))
+END
+
+IF
+See([PC])
+AttackedBy([GOODCUTOFF],DEFAULT)
+Allegiance(Myself,NEUTRAL)
+THEN
+RESPONSE #100
+SmallWait(5)
+Enemy()
+END
+
+IF
+See(Player1)
+!Allegiance(Myself,ENEMY)
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+Dialog(Player1)
+END
