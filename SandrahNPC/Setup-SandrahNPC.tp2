@@ -8567,7 +8567,7 @@ END ELSE BEGIN
   PRINT @1042
 END
 
-INCLUDE ~SandrahNPC/lib/qd_multiclass.tpa~
+/* INCLUDE ~SandrahNPC/lib/qd_multiclass.tpa~
 
 LAF qd_multiclass
 STR_VAR
@@ -8575,7 +8575,7 @@ kit_name = CVMystra
 kit_clab = CVMystra
 base_class = ~P~
 mc_dir = ~SandrahNPC/lib~
-END
+END */
 
 PRINT ~Better Pathfinding~
 
