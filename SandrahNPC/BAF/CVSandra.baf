@@ -878,6 +878,7 @@ END
 IF
 Global("SanFeldeW","LOCALS",1)
 RealGlobalTimerExpired("SanFeldeWTi","LOCALS")
+AreaCheck("BG3351")
 THEN
 RESPONSE #100
 SetGlobal("SanFeldeW","LOCALS",2)
