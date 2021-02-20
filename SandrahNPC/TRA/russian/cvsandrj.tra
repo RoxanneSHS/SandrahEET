@@ -745,9 +745,9 @@ Which means we will stop talking now and fight our way out of here! ~
 @743  = ~Да, я тоже так думаю. Сначала демонический свиток, а теперь этот ребёнок. Всё совпадает, должно быть, мы очень близко.~
 @744  = ~Похоже, на этот раз логово демона скрывается не за водопадом, <CHARNAME>. Но я всё равно думаю, что мы, должно быть, близко. Возможно, та девочка что-то заметила.~
 @745  = ~(Ты следуешь взглядом за её указательным пальцем и видишь маленькую девочку, стоящую над водопадом.) Давай её спросим.~
-@746  = ~Are we really relying on children and their babbling to find a mighty demon? ~
-@747  = ~Someone obviously has killed this cat. And this someone smells pretty much like the hellish stench we encountered at the other lair.~
-@748  = ~I will be damned if you are right again. ~
+@746  = ~Неужели мы будем полагаться на детский лепет, чтобы найти могущественного демона?~
+@747  = ~Кто-то явно убил эту кошку. И этот кто-то пахнет адским зловонием, которое мы ощущали в другом логове.~
+@748  = ~Будь я проклят, если ты снова будешь права.~ ~Будь я проклята, если ты снова будешь права.~
 @749  = ~A fun fair, <CHARNAME>, we have not had much amusement for quite a while.~
 @750  = ~And I do not feel much like having some now. Sandrah, just consider why we are here and don't play the little girl at the amusement park role, he.~
 @751  = ~Counsellor, I agree, our mission is grave and our prospect is dark. As one elf I know may say, we are doomed and may not even see tomorrow. So why not have some fun.~
@@ -1922,30 +1922,32 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 @1918 = ~Thin evidence. She is not hunted like me. Nobody recognises the curse on her.~
 @1919 = ~You are perfectly right, <CHARNAME>. It is this difference I am still thinking about at the moment. I have an idea why that is, but please give me a bit more time. It would be premature to talk about it now already.~
 @1920 = ~I trust you in this. I also think we should not talk to Imoen about it before we are not sure about all the aspects. I care too much for my *sister* to hurt her unnecessarily.~
-@1921 = ~<CHARNAME>, look there, the demon has lost some items on his hasted departure.~
-@1922 = ~Oh, yes, maybe even the shard? ~
-@1923 = ~I do not care for demon garbage. We must get out of this hole, if you have no ideas, then just shut up. ~
-@1924 = ~If we find the shard, there is a chance I can do something with it. I am not my father, but it recognises my blood and responds to me in a limited way. ~
-@1925 = ~Maybe I can get us to the surface with it or at least somehow notify my father through the shard.~
-@1926 = ~A straw to cling on, but better than nothing, thank you, Sandrah.~
-@1927 = ~A straw to cling on, but better than nothing. Hm, sorry, Sandrah, if I was a little bit gruffy with you, but this demon thing has put my nerves on trial. (Give her a kiss on the cheek.)~
-@1928 = ~Let us investigate this hole for anything useful and when ready let me try to activate the shard. ~
-@1929 = ~Sounds like a plan now. I will talk to you again when we are ready to go.~
-@1930 = ~Shall we try the shard now, <CHARNAME>? ~
-@1931 = ~Yes, Sandrah. Let me say we all put our hope in you now.~
-@1932 = ~What else, I don't want to hibernate in this hole.~
-@1933 = ~Thank you for your trust (Smiles). ~
-@1934 = ~As soon as Sandrah touches the shard with both of her hands, it starts to glimmer softly. Obviously it really recognises Elminster's blood in Sandrah.~
-@1935 = ~Shard, I am Sandrah, you have identified me. Take me to my father!~
-@1936 = ~The Shard did not take us all the way, probably my powers are not yet enough for that distance.~
-@1937 = ~At least it got us to the surface again. A little bit of hiking in fresh air may suit us well after this hellish smelling adventure.~
-@1938 = ~Hahaha, defeating arch demons with peanuts and performing transportation spells of stone throw length? What kind of priestess are you? (Smile broadly at her.) ~
-@1939 = ~Better than nothing. ~
-@1940 = ~You have seen my accomplishment with this powerful tool. We have to admit, it still belongs into my father's hand. Let us make haste then to meet him and return the Shard.~
-@1941 = ~A strange discovery, <CHARNAME>. The shadow thieves were supposed to be removed from Waterdeep since sometime.~
-@1942 = ~Maybe this Khattark plays a role in their return.~
-@1943 = ~Maybe they played a hand in the stealing of the shard from your father.~
-@1944 = ~The events around Khattark already have shown that security is no longer as strong as should be in this capitale.~
+
+@1921 = ~<CHARNAME>, посмотри туда, демон потерял некоторые предметы во время своего поспешного ухода.~
+@1922 = ~Да, может быть даже Кристалл?~
+@1923 = ~Меня не волнует мусор демона. Мы должны выбираться из этой дыры, и если ты не заешь как, то просто заткнись.~
+@1924 = ~Если мы найдём Кристалл, то есть шанс, что я смогу что-то с ним сделать. Я - не мой отец, но Кристалл признает мою кровь и отреагирует на меня хоть ограниченно.~
+@1925 = ~Может быть, мне удастся вытащить нас на поверхность или хотя бы как-то уведомить отца через Кристалл.~
+@1926 = ~Утопающий хватается за соломинку, но это лучше, чем ничего, спасибо, Сандра.~
+@1927 = ~Утопающий хватается за соломинку, но это лучше, чем ничего. Хмм, извини, Сандра, если я был немного груб с тобой, но этот демон измотал мне нервы. (поцеловать её в щёку)~ ~Утопающий хватается за соломинку, но это лучше, чем ничего. Хмм, извини, Сандра, если я была немного груба с тобой, но этот демон измотал мне нервы. (поцеловать её в щёку)~
+@1928 = ~Давайте обыщем эту дыру на предмет чего-то полезного, и когда всё будет готово, я попробую активировать Кристалл.~
+@1929 = ~Теперь это похоже на план. Я скажу тебе, когда мы будем готовы.~
+@1930 = ~Попробуем активировать Кристалл, <CHARNAME>?~
+@1931 = ~Да, Сандра. Теперь вся надежда на тебя.~
+@1932 = ~А что ещё остаётся, не зимовать же в этой дыре.~
+@1933 = ~Спасибо за доверие. (улыбается)~
+@1934 = ~(Как только Сандра касается кристалла обеими руками, он начинает слегка мерцать. Очевидно, он действительно распознаёт кровь Элминстера в Сандре.)~
+@1935 = ~Кристалл, я Сандра, ты меня знаёшь. Отправь нас к моему отцу!~
+@1936 = ~Кристалл не перенёс нас до места назначения. Наверное, моих сил ещё недостаточно для такого расстояния.~
+@1937 = ~По крайней мере, мы снова на поверхности. После этого адского приключения нам всем не помешает небольшая прогулка на свежем воздухе.~
+@1938 = ~Ха-ха-ха, побеждаешь демонов арахисом и переносишь нас на расстояние нескольких камней? Что ты за священница? (широко ей улыбнуться)~
+@1939 = ~Лучше, чем ничего.~
+@1940 = ~Ты видел все мои достижения с этим мощным инструментом. Надо признать, им по-прежнему может управлять лишь мой отец. Значит, давай поскорее встретимся с ним и вернём Кристалл.~ ~Ты видела все мои достижения с этим мощным инструментом. Надо признать, им по-прежнему может управлять лишь мой отец. Значит, давай поскорее встретимся с ним и вернём Кристалл.~
+
+@1941 = ~Странное открытие, <CHARNAME>. Считалось, что теневые воры давно изгнаны из Вотердипа.~
+@1942 = ~Может быть, этот Хаттарк сыграл роль в их возвращении.~
+@1943 = ~Возможно, они сыграли свою роль в краже Кристалла у твоего отца.~
+@1944 = ~События с Хаттарком уже показали, что безопасность уже не та, какая должна быть в этой столице.~
 @1945 = ~I heard already rumours about the Commander when I left Waterdeep to come to the Sword Coast. The Open Lord seems to near retirement.~
 @1946 = ~We should keep that in mind...maybe they will have a vacancy for a competent <PRO_RACE> in the future.~
 @1947 = ~What I can say for sure at this moment is that the Shining Lady really is eloquent. An aasimar she called herself - possible and an explanation for her so-called crusade. It does not exclude her from being Bhaalspawn as well.~
@@ -1977,6 +1979,7 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 @1973 = ~Sometimes your emotions get in the way of your counselling, let's drop the topic.~
 @1974 = ~I'm not happy with his attitude myself - on the other hand, he has the responsibility for many lives entrusted to him.~
 @1975 = ~Yes, he is Waterhavian arrogance condensed in a nut sized brain.~
+
 @1976 = ~<CHARNAME>, ты негодник вырос, как я погляжу. Так вот, какая-то молодая священница искала тебя и твоего приёмного отца. Я не расслышал её имени, Санна что-ли, но она оставила мне это, чтобы отдать тебе. Я всё равно я не могу продать его, потому что не знаю, что он делает. Не могу же я навредить покупателю, продав ему что-то опасное.~ ~<CHARNAME>, ты негодница выросла, как я погляжу. Так вот, какая-то молодая священница искала тебя и твоего приёмного отца. Я не расслышал её имени, Санна что-ли, но она оставила мне это, чтобы отдать тебе. Я всё равно я не могу продать его, потому что не знаю, что он делает. Не могу же я навредить покупателю, продав ему что-то опасное.~
 @1977 = ~(Во время разговора Сандра отступает в тень большого придорожного указателя и даже прячет лицо под капюшоном.)~
 @1978 = ~Почему ты прячешься в тени? Разве ты не покажешь своё лицо безобидному старику? Может быть, где-то твой обеспокоенный отец ищет свою дочь, которая ушла без предупреждения?~
@@ -2065,11 +2068,11 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 @2061 = ~Like whom, like you little weekend warrior princess - with your play toy hammer and your designer shop armour. I bet you wet your silk panties when you see a hobgoblin.~
 @2062 = ~Which means any hobgoblin would scare me more than you do. At least my silk panties are currently as dry as the Calimsha Desert.~
 @2063 = ~If I could get along as male, then why not extend your bet to include me. Just to teach me a lesson, maybe? ~
-@2064 = ~(Firebead looks at Sandrah, puzzled for a second.) ~
-@2065 = ~Sandrah, now I recognise you. The world is small, I would never have expected to meet you with <CHARNAME>. Anyway, I have received a very strange scroll carried by a dead duergar slave that was found by farmers in the wilderness nearby recently. It may be of interest to your father. If you chance to meet him these days, just show it to him. I sense something demonic on it, so I put it into a chest upstairs. With your abilities you may carry it with you, I do not dare to do this myself. ~
-@2066 = ~You're welcome, Firebead. We will do as you say. In a chest just upstairs... ~
-@2067 = ~Good day, dear friend. My father sent us to retrieve a mysterious scroll you have recently found.~
-@2068 = ~In deed, the thing was carried by a dead duergar slave that was found by farmers in the wilderness nearby. I sense something demonic on it, so I put it into a chest upstairs. With your abilities you may carry it with you, I did not dare to do this myself. ~
+@2064 = ~(Фаербид секунду озадаченно смотрит на Сандру.) ~
+@2065 = ~Сандра, теперь я тебя узнал. Мир тесен, я бы никогда не подумал, что ты и <CHARNAME> будете путешествовать вместе. В общем, я получил один очень странный свиток, который был на трупе мёртвого раба-дуэргара, недавно найденного фермерами в дикой местности неподалеку. Он может быть интересен твоему отцу. Если ты встретишься с ним, просто покажи ему его. Я чувствую в свитке что-то демоническое, поэтому поэтому храню его в сундуке насверху. С твоими способностями ты сможешь носить его с собой, чего я не решаюсь делать сам.~
+@2066 = ~Конечно, Фаербид. Мы сделаем, как ты скажешь. В сундуке наверху...~
+@2067 = ~Добрый день, дорогой друг. Мой отец послал нас за таинственным свитком, который ты недавно нашёл...~
+@2068 = ~Действительно, недавно я получил один очень странный свиток, который был на трупе мёртвого раба-дуэргара, недавно найденного фермерами в дикой местности неподалеку. Я чувствую в свитке что-то демоническое, поэтому храню его в сундуке наверху. С твоими способностями ты сможешь носить его с собой, чего я не решаюсь делать сам.~
 @2069 = ~(Ты выжидающе смотришь на Сандру. Знает ли этот грубый маг твою компаньонку, как все другие маги, которых вы встречали раньше?)~
 @2070 = ~Клянусь силой Мистры! Пусть Метеор Мелфа сожжёт этот дом, если это не Эл...~
 @2071 = ~Талантир, успокойся, да это я.~
@@ -2258,8 +2261,8 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 @2254 = ~Poor man, have you been here ever since you lost that fated caravan so long ago? ~
 @2255 = ~I hear them cry, the poor babies, where are they now - do not doubt my words fools, I am the greatest fighter on the Sword Coast.~
 @2256 = ~I am afraid we just witnessed one of his last moments of clearness. His mind is incurable gone.~
-@2257 = ~Drienne, do you have any idea who killed your cat, maybe some smelly frightening creatures not from around here. ~
-@2258 = ~Others than those smelly frightening gnolls, yes, maybe the ones in the cave, all glowing eyes and smelling hellish, maybe they killed little Pixie.~
+@2257 = ~Дриенн, ты не знаешь, кто мог убить твою кошку? Может быть, это были какие-то вонючие страшные существа не отсюда.~
+@2258 = ~Кроме этих вонючих страшных гноллов, да, может быть, те, что в пещере, со светящимися глазами и адским запахом, может быть, они убили маленькую Пикси.~
 @2259 = ~Я надеюсь, что вы сможете мне помочь, будьте любезны, взгляните на это. (Сандра подходит к Таэрому и расстегивает платье у воротника.)~
 @2260 = ~Миледи, это очень интересный... эм... амулет, на самом деле...~
 @2261 = ~Единственная проблема в том, что на нём есть маленькое пятно, возможно немного ржавчины.~
@@ -2321,34 +2324,36 @@ Bane went to the City of Tantras where He was slain in battle with Torm, but Tor
 @2317 = ~It is an odd place, to be sure. Teleportations are affected most drastically in effect trapping the occasional passing mage. Those that are there will find their way off in time. Those that are not there any more have found their own way off. I think you will agree that the ones that you met were not inclined to work together and effect their own release. An excellent judge of character in a supposedly natural phenomenon, wouldn't you say? I must be off. Fare ye well. ~
 @2318 = ~Travellers, I recognized again the devilish mage's presence in your companion. But I also sense you have an item of interest for me as well. So now...Whatever you do, do not give a certain book to anyone who asks you for it, you will certainly be betrayed.~
 @2319 = ~Ha, the stupid mortal wench could not hold on to that jar. She has not delivered my name but failed nevertheless.~
-@2320 = ~A homesick demon, can you really believe this? ~
-@2321 = ~Demon hunting is the funnest of funs. Let's get out and do some more. Watch out, demons I will get me a peanut sling...~
-@2322 = ~A male demon, how pathetic. Even down there in hell males are nothing but stupid scum. ~
-@2323 = ~A male, no doubt. But even unusable as a slave. What a waste. ~
-@2324 = ~Just to think that such creatures are considered the threat of Shilmista - one never finishes learning. ~
-@2325 = ~(Scribble, scribble) Oh no, I have no idea how I can put this into words. The heroic deed reads just like a joke, oh my. ~
-@2326 = ~Once again evil has been smashed! Well, *smashed* may not be the right word. But then, even a peanut can smite evil when thrown by the hand of the righteous. ~
-@2327 = ~Well, I am not sure if we want this adventure spread in a bardsong through the realms. But maybe it can be used on stage - for a comedy. ~
-@2328 = ~A foe is defeated. Victory asks not for method to achieve it.~
-@2329 = ~Oh, my lady, if I only once had the courage and energy to act out with such strength for the good, instead of faltering in indecision.~
-@2330 = ~Sandrah, thou arest the strangest kind of paladin one can imagine - but 'tis said that your goddess is different from others as well.~
-@2331 = ~Buzzurk! How many beers did I have last night? Hit me with Clangeddin's Axe, I need to wake up. ~
+
+@2320 = ~Демон, тоскующий по дому, кто бы мог в это поверить?~
+@2321 = ~Охота на демонов - это самое забавное развлечение. Давай выберемся отсюда и ещё поохотимся. Берегитесь, демоны, я несу арахисовую пращу...~
+@2322 = ~Мужчина-демон, какое жалкое зрелище. Даже там, в аду, мужчины - всего лишь тупые подонки.~
+@2323 = ~Без сомнения, мужчина. Но даже в качестве раба непригоден. Какое бесполезное существо.~
+@2324 = ~Подумать только, такие существа считаются угрозой Шилмисты - учится никогда не поздно.~
+@2325 = ~(скрипит пером) О, нет, я понятия не имею, как это выразить словами. Героический поступок выглядит просто как шутка, о боги.~
+@2326 = ~И снова зло было разбито! Ну, *разбито*, может быть, неподходящее слово. Но иногда даже арахис может поразить зло, если его бросит рука праведника.~
+@2327 = ~Ну, я не уверена, что мы захотим, чтобы бардовская песня об этом приключении распространилась по миру. Но, может быть, его удастся использовать на сцене - в комедии.~
+@2328 = ~Враг побеждён. Победа есть победа, как бы она ни была достигнута.~
+@2329 = ~Ох, миледи, если бы я хоть раз набрался смелости и энергии, чтобы действовать с такой силой на благое дело, вместо того, чтобы в нерешительности сомневаться.~
+@2330 = ~Сандра, ты самый странный паладин, которого только можно представить, но говорят, что и твоя богиня отличается от других.~
+@2331 = ~Проклятье! Сколько же пива я выпил прошлой ночью? Ударь меня топором Клангеддина, мне нужно проснуться.~
 @2332 = ~Ты уверена, что в душе ты не дикий маг, Сандра?~
 @2333 = ~Не дикий маг, но женщина, которая временами бывает дикой.~
-@2334 = ~Что? Ни честного боя, ни кровопролития? Клянусь Темпусом, это демоны для младенцев.~
+@2334 = ~Что? Ни честного боя, ни кровопролития? Клянусь Темпусом, это демон для младенцев.~
 @2335 = ~Это славная победа, но всё же это иллюзия. Он вернётся, и все мы будем обречены.~
-@2336 = ~Such intelligence in a woman is both admirable and dangerous (I need to get this pet under my thumb soon.)~
-@2337 = ~This lair is now ours to loot. The whole thing reminds me of a story I once encountered with the daughter of...ah..maybe another time...  ~
-@2338 = ~ Well,
-The mighty mage's courageous daughter,
-Trying to avoid a slaughter,
-Defeated the demon with a yell,
-Telling him to GO TO HELL.~
-@2339 = ~An unconventional way to solve problems, you are full of surprises, Sandrah. ~
-@2340 = ~There has been nothing alike this deed in the happenings from the times of Raumathar and Narfell until present days.~
-@2341 = ~The balance is restored again that was disturbed by this presence on the surface. Let us move, <CHARNAME>. ~
-@2342 = ~(Fiercely) You are fool to think you can fool a demon, woman.~
-@2343 = ~I wonder if he will come back? ~
+@2336 = ~Такой интеллект у женщины одновременно и достойен восхищения, и опасен. (Мне нужно будет взять эту штучку в свои руки.)~
+@2337 = ~Это логово теперь мы можем ограбить. Всё это напоминает мне историю, когда я однажды столкнулся с дочерью... а... может быть, в другой раз...~
+@2338 = ~Что ж,
+Отважная дочь могучего мага,
+Пытаясь избежать резни,
+Победила демона криком,
+Сказав ему ИДТИ В АД.~
+@2339 = ~Нетрадиционный способ решения проблем, ты полна сюрпризов, Сандра.~
+@2340 = ~Ничего подобного этим делам не было в истории со времён Руматара и Нарфелла и до наших дней.~
+@2341 = ~Вновь восстановлен баланс, нарушенный его присутствием на поверхности. Пойдём, <CHARNAME>.~
+@2342 = ~(свирепо) Ты дура, если думаешь, что можешь обмануть демона, женщина.~
+@2343 = ~Интересно, вернётся ли он?~
+
 @2344 = ~Oh, my lovely competent leader, what is your plan? ~
 @2345 = ~Let us go buy some pink balloons and some ribbons for the girls, and then we could...~
 @2346 = ~There sure is some arena around here where we can train on some male scum. Ha, all aboard for funtime! ~

@@ -9,15 +9,18 @@
 @8    = ~I expect traps, and there must be some of those dreaded drow spider trainers who have brought their pets up here and control them. And somebody to lead this whole operation, somebody really to be extremely cautious with.~
 @9    = ~I have not such a deep knowledge about the drow to guess whom you are thinking of.~
 @10   = ~Maybe a Handmaiden of Lolth or other Drow High Priestess, at least somebody with extremely deadly magical skills. Let us move carefully but move we must - before they can secure the book to the Underdark.~
-@11   = ~This is an interesting and useful tome for adventurers, <CHARNAME>. A copy of the famous *Golem Construction Manual*.~
-@12   = ~Are you planning to build such creatures for our use, Sandrah?~
-@13   = ~Useful? We have neither the skills nor the material or time to build such beasts.~
-@14   = ~Why the enthusiasm? Do you know the author by any chance?~
-@15   = ~Golems can be deadly and impressive constructs, <CHARNAME>. I remember well the fearful hours I spend in hiding while my father endlessly was fighting an Adamantit Golem. Knowledge about those things can come handy for us should we once face one.~
-@16   = ~Haha, we can throw the heavy tome at it, or what? ~
-@17   = ~How can we make use of that book?~
-@18   = ~Let me read it one of these days. We surely cannot build one - but to know how they are constructed can save our lives in case we meet one. To know how it is constructed will help us to attack the weak and crucial points in a battle against them.~
-@19   = ~I see. To know how to construct them helps to de-construct them.~
+@11   = ~Это интересная и полезная книга для искателей приключений, <CHARNAME>. Копия знаменитого «Руководства по сборке големов».~
+@12   = ~Ты планируешь построить таких существ для нас, Сандра?~
+@13   = ~Полезная? У нас нет ни навыков, ни материалов, ни времени для создания этих чудовищ.~
+@14   = ~Откуда такой энтузиазм? Ты случайно не знакома с её автором?~
+
+@15   = ~Големы могут быть смертоносными и впечатляющими созданиями, <CHARNAME>. Я хорошо помню ужасные часы, которые провела прячась, пока мой отец бесконечно сражался с адамантитовым големом. Знания о таких вещах могут нам пригодиться, если мы однажды столкнёмся с ними.~
+@16   = ~Ха-ха, мы сможем бросить в них эту тяжёлую книгу, так что ли? ~
+@17   = ~Как мы можем использовать эту книгу?~
+
+@18   = ~Дай мне время прочитать её как-нибудь на днях. Конечно, мы не сможем их построить, но знание того, как они устроены, может спасти нам жизнь в случае, если мы их встретим. Знание их устройства поможет нам атаковать их слабые и важные точки при битве с ними.~
+@19   = ~Я понимаю. Знание того, как их строить, помогает их разрушать.~
+
 @20   = ~(Takes you out of Eldoth's earshot.) Actually I like good music very much, <CHARNAME>, but I doubt that we would get to hear much of such from this shady guy. Are we so desperate as to pick up everyone along our way?~
 @21   = ~Up to now your counselling has been quite useful, Sandrah. But it is me who leads this party, do not forget that!~
 @22   = ~I am not sure about him yet, let's just give it some time. I note your reservation against him but be sure, I keep my eyes open. ~
@@ -691,25 +694,25 @@ You would have killed me yourself before you would allow such a bloodshed to occ
 @686  = ~(Она придвинулась ещё немного ближе к тебе, её голова теперь покоится на твоей подмышке, а свободная рука обвивает вокруг твою грудь.) ~
 @687  = ~(Ты продолжаешь смотреть на звёзды, и её присутствие тебя успокаивает, в то время как твои мысли уходят в ничто...) ~
 @688  = ~(Ты убираешь её руку и отворачиваешься, чтобы погрузиться в давно заслуженный сон...) ~
-@689  = ~(Today at the inn Sandrah has sat down at a table to study her tome of Elminster's knowledge once again. She has neglected her studies a bit - due to you.) ~
-@690  = ~(You decide that sometimes everybody needs some time for their own.)~
-@691  = ~While you watch her from your comfortable armchair and admire her beauty and the grace of her every move, your mind begins to drift....
-...you find yourself in a state between waking and dreaming, where everything is possible.....
+@689  = ~(Сегодня в гостинице Сандра села за стол, чтобы продолжить изучение своей книги познаний Элминстера. Она немного забросила учёбу - из-за тебя.)~
+@690  = ~(Ты решаешь, что иногда каждому нужно личное время.)~
+@691  = ~Пока ты наблюдаешь за ней из своего удобного кресла и восхищаешься красотой и грацией каждого её движения, твою голову начинает клонить в сон...
+...и ты попадаешь в состояние между бодрствованием и сном, где возможно всё.....
 ~
-@692  = ~While you wait for the beer you have ordered, your mind begins to drift....
-...you find yourself in a state between waking and dreaming, where everything is possible.....
+@692  = ~Пока ты ждёшь заказанного пива, твою голову начинает клонить в сон...
+...и ты попадаешь в состояние между сном и бодрствованием, где возможно всё.....
 ~
-@693  = ~<CHARNAME>, are you all right? Have you seen a ghost or was it just a bad dream?~
-@694  = ~Oh, what happened? I must have fallen asleep. I am fine and hungry. Let us order something to eat. ~
-@695  = ~Oh, what happened? I must have fallen asleep. I had a very strange dream, or was it a vision? ~
-@696  = ~I must have fallen asleep. Or maybe not. The strange dream or vision I had was too real. ~
-@697  = ~You look in deed troubled, my dear. Do you want to tell me about it?~
-@698  = ~I am not sure, it may trouble you as well. You were involved - and your father too. And Khalindra.~
-@699  = ~Was your mother's name by any chance *Khalindra*?~
-@700  = ~This must be more than a mere dream then.~
-@701  = ~I am sure I never mentioned my mother's name to you. Strange?~
-@702  = ~And you never told me that she died giving birth to another child not of Elminster.~
-@703  = ~That was revealed to you? A vision indeed. <CHARNAME>, please give me a bit of time - I need to contemplate what you just saw. It is hard to believe but it must be true, nobody could have told you what I do not fully know myself yet.~
+@693  = ~<CHARNAME>, с тобой всё в порядке? Ты увидел привидение, или это просто был дурной сон?~ ~<CHARNAME>, с тобой всё в порядке? Ты увидела привидение, или это просто был дурной сон?~
+@694  = ~Что произошло? Я, должно быть, заснул. Я в порядке, и я голоден. Давай закажем что-нибудь поесть.~ ~Что произошло? Я, должно быть, заснула. Я в порядке, и я голодна. Давай закажем что-нибудь поесть.~
+@695  = ~Что произошло? Я, должно быть, заснул. Мне приснился очень странный сон, или это было видение?~ ~Что произошло? Я, должно быть, заснула. Мне приснился очень странный сон, или это было видение?~
+@696  = ~Я, должно быть, заснул. А может, и нет. Странный сон был слишком реальным.~ ~Я, должно быть, заснула. А может, и нет. Странный сон был слишком реальным.~
+@697  = ~Ты выглядишь обеспокоенным, мой дорогой. Расскажешь мне свой сон?~ ~Ты выглядишь обеспокоенной, моя дорогая. Расскажешь мне свой сон?~
+@698  = ~Я даже не знаю, он может и тебя обеспокоить. Там была ты - и твой отец тоже. И Халиндра.~
+@699  = ~Твою мать звали, случайно, не Халиндра?~
+@700  = ~Tогда это могло быть больше, чем сон.~
+@701  = ~Я точно знаю, что я никогда не говорила тебе имени своей матери. Странно, да?~
+@702  = ~И ещё ты никогда не говорила, что она умерла при родах другого ребенка, не от Элминстера.~
+@703  = ~Это тебе открылось во сне? Действительно, видение. <CHARNAME>, пожалуйста, дай мне немного времени - мне надо подумать о том, что ты только что видел. В это трудно поверить, но это, должно быть, правда. Никто не мог рассказать тебе то, чего я и сама не знаю.~ ~Это тебе открылось во сне? Действительно, видение. <CHARNAME>, пожалуйста, дай мне немного времени - мне надо подумать о том, что ты только что видела. В это трудно поверить, но это, должно быть, правда. Никто не мог рассказать тебе то, чего я и сама не знаю.~
 @704  = ~(Sandrah has vanished to another room a while ago having taken her backpack with her.)~
 @705  = ~(As she now appears in the door of your room, your jaw drops down and your eyes seem to pop out. The tiny see-through nothing she is wearing shows her perfect body in the light of the fireplace behind her. Her lips and aureoles are enhanced by some glossy red make-up and her hair reveals its beauty so often hidden beneath a helmet.) ~
 @706  = ~(You rise immediately to take possession of all that beauty offered to you in this way.) Mystra be praised, she does not require her priestesses to be chaste!~
@@ -950,7 +953,7 @@ You would have killed me yourself before you would allow such a bloodshed to occ
 @941  = ~Она такая мягкая, фантастика. Это сбывшаяся мечта девушки. Поздравляю, Имоен, подруга. Смотри, она греет, когда снаружи холодно, и освежает, когда снаружи жарко. И на ней множество защитных чар. Твой любовник действительно очень о тебе заботится.~
 @942  = ~Да, он замечательный - во всех отношениях. Я больше никогда не стану завидовать своей подруге из большого города - теперь ты можешь завидовать мне. Интересно только, как лавочник может позволить себе сделать такой дорогой подарок своей девушке?~
 @943  = ~Хм, должно быть, она стоит целое состояние. Но, с другой стороны, он не просто лавочник, он владелец магазина, расположенного как раз на пути между Амном и Вратами Балдура, и дела у него идут хорошо.~
-@944  = ~Ты права. Старый Паффгатс нажил кучу денег на своей торговле в Кендлкипе, а ведь это даже не сравнить с Нашкелем. Но... Сандра, вот что пришло мне на ум... ты моя лучшая подруга...~
+@944  = ~Ты права. Старый Толстопуз нажил кучу денег на своей торговле в Кендлкипе, а ведь это даже не сравнить с Нашкелем. Но... Сандра, вот что пришло мне на ум... ты моя лучшая подруга...~
 @945  = ~Что такое, Имоен, тебя, кажется, что-то тревожит?~
 @946  = ~Хм, я имею в виду, что я очень люблю Хеннинга, но... я всегда хотела блестящего рыцаря, высокого паладина... а не лавочника.~
 @947  = ~Эй, ты, должно быть, шутишь. Он самый красивый лавочник на всём Побережье Меча, и я уверена, он возьмётся за крушащий меч, когда дело дойдёт до защиты его девушки.~
@@ -4024,17 +4027,17 @@ Who stands admiring her with a song from his heart...~
 @3986 = ~I have tried many times to see the things with such an open heart and open mind as Sandrah does. And as you yourself seem to be capable to do. But then other voices fill my head. Keldorn, my mentor in the order. My father and my mother. They are important to me just as our quest and companionship are. But they do not fit together.~
 @3987 = ~And the fearless paladin is afraid of what those people may think and say about the love he has found. I pity you for the loss you have to face. I see that Sandrah has seen more in you than you really have the courage to be.~
 @3988 = ~You are right with everything you say and I hope you will be able to remember me as a friend. Please give this to Sandrah. I must go now. I will go to the temple of Helm in Nashkel and write to the order for a replacement here on the Sword Coast. May Helm watch and bless your every step - and Sandrah's.~
-@3989 = ~Эй, спасибо что прочитала на меня свою мумбу-юмбу. Эта травма действительно мне сильно повредила. Ты и правда хорошоа в этом.~
-@3990 = ~Oh, forgetful me! Sandrah you are always so practical and acting. I am a healer myself and see, I forgot to do the apparent thing again. It is all in my head and in my books - I know what and how to do it and then I forget to do it.~
-@3991 = ~Hello, fellow bookworms, how did you fare?~
-@3992 = ~That healing attitude suits a beautiful lady like you much better than all this fighting in heavy gear. Women should use their natural talents like that instead of trying to imitate men.~
-@3993 = ~I am already deeply in your depth for your rescue from my statuesque state. You never cease in your care for your companions, Sandrah.~
-@3994 = ~Aah, my good healer. If only all wounds could be cured in that fashion, melamin.~
-@3995 = ~Another song of praise is due here, sweetest and most competent healer!~
-@3996 = ~These delicate fingers calling the Weave's power for me! They heal and they hurt at the same time.~
-@3997 = ~Well done, sweetling, this is the way we will reach greatness, by supporting each other.~
-@3998 = ~Aah, good, sweet healer!! Should things get even worse in battle your goddess will surely give her priestess the ability to restore me from the dead as well.~
-@3999 = ~(Ты узнаёшь, что это Хайасс, твой волк. Кажется, он следовал за тобой всю дорогу от Кендлкипа. Он с опаской смотрит на тебя из-за твоего резкого поведения в последнее время, подходит к Сандре и трётся мордой об её ногу.) ~
+@3989 = ~Эй, спасибо что прочитала на меня свою мумбу-юмбу. Эта травма действительно мне сильно повредила. Ты и правда хороша в этом.~
+@3990 = ~Ох, забывчивая я! Сандра, ты всегда такая практичная и действующая. Я сама целительница и понимаю, что я снова забыла сделать очевидное. Это всё в моей голове и в моих книгах - я знаю, что и как делать, но потом всегда забываю.~
+@3991 = ~Привет, подруга книжный червь, как твои дела?~
+@3992 = ~Такое отношение к исцелению подходит такой красивой девушке, как ты, намного лучше, чем все эти драки в тяжёлом снаряжении. Женщинам следует так использовать свои природные таланты, а не пытаться подражать мужчинам.~
+@3993 = ~Я глубоко в душе благодарна за спасение из моего состояния в иде статуи. Ты никогда не перестаешь заботиться о своих товарищах, Сандра.~
+@3994 = ~Ах, моя добрая целительница. Если бы только все раны можно было вылечить таким способом.~
+@3995 = ~Здесь должна быть ещё одна песнь хвалы, милейшая и знающая целительница!~
+@3996 = ~Эти нежные пальцы призвали на меня силы Плетения! Они лечат и ранят одновременно.~
+@3997 = ~Молодец, милая, вот так мы достигнем величия, поддерживая друг друга.~
+@3998 = ~Ааа, хорошо, милая целительница!! А если в битве дела пойдут ещё хуже, твоя богиня наверняка даст своей жрице возможность воскресить меня из мёртвых.~
+@3999 = ~(Ты узнаёшь, что это Хайасс, твой волк. Кажется, он следовал за тобой всю дорогу от Кендлкипа. Он с опаской смотрит на тебя из-за твоего резкого поведения в последнее время, подходит к Сандре и трётся мордой об её ногу.)~
 @4000 = ~During our travels we have again come to possess a treasure that has been robbed from innocent victims. We do not know who the original owners might have been, so we want to donate it to the Orphanage.~
 @4001 = ~A wise decision. This way a bloodstained treasure will be repaid to those who have suffered most from the evil proceedings on the Sword Coast.~
 @4002 = ~I will donate this bag of pirate treasure~
