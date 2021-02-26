@@ -26,3 +26,26 @@ RESPONSE #100
 SetGlobal("OrcPrison","GLOBAL",10)
 ActionOverride("Imoen2",DestroyItem("ImoSlHP1"))
 END
+
+IF
+Global("OrcPrison","GLOBAL",14)
+Delay(6)
+THEN
+RESPONSE #100 
+StartCutSceneMode()
+SetGlobal("OrcPrison","GLOBAL",15)
+ActionOverride("CVSandr",DestroyItem("SanHenHu"))
+CreateVisualEffectObject("SPDIMNDR","CVSandr")
+Wait(3)
+FadeToColor([30.0],0) 
+Wait(4) 
+ActionOverride("CVSandr",LeaveParty())
+Wait(6)
+ActionOverride("CVSandr",MoveBetweenAreas("BG1804",[1036.182],0))
+ActionOverride("Pellig",MoveBetweenAreas("BG1804",[984.279],1))
+Wait(2)
+FadeFromColor([30.0],0) 
+Wait(2)
+EndCutSceneMode()
+SetGlobal("SandrahJoined","GLOBAL",15)
+END
