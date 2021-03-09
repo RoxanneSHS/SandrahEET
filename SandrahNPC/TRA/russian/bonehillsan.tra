@@ -1,6 +1,6 @@
-@0    = ~Imoen, I am sorry to disappoint you. Lendore, although far in the south, has not really beaches to lie on. I was disappointed myself, when my father first took me here.~
-@1    = ~Puuh, then let's finish this thing here quick. Never any fun for us. An island without beach, who makes such silly landscapes, ha? We coulda stayed at Candlekeep looking at a cold uninviting sea all day.~
-@2    = ~Sandrah, Sandrah. And now accompanied by such a lively redhead. One will see what that means for the quietude of our island...~
+@0    = ~Имоен, извини, что разочаровываю тебя. В Лендоре, хоть это и далеко на юге, нет пляжей, на которых можно было бы поваляться. Я сама была разочарована, когда отец впервые взял меня сюда.~
+@1    = ~Пууфф, тогда давай быстренько покончим с этим делом. Тут для нас нет никаких удовольствий. Остров без пляжей, кто придумывает такие глупые пейзажи, ха? Мы могли бы с тем же успехом остаться в Кендлкипе и глядеть на холодное неприветливое море весь день.~
+@2    = ~Сандра, Сандра. А теперь ты в сопровождении такой беспокойной рыжей. Посмотрим, что это будет значить для спокойствия нашего острова...~
 @3    = ~Did you have much success then in Ankhapur and Hlondeth, Fabio? At least you returned savely.~
 @4    = ~I have never been to...little Sandrah?..eh...~
 @5    = ~Little angry Sandrah with a mighty angry hammer in her hand. So, you have never made it to Ankhapur, I guess - nor to any other place outside of this tavern!~
@@ -19,9 +19,9 @@
 @18   = ~Hello, Uncle Billy Bob, or is it Sir Billy Bob now. ~
 @19   = ~Oh, talking of Elminster and voila. Welcome, little Sandrah, or is it Lady Sandrah now? ~
 @20   = ~(Gives Billy Bob a kiss on the cheek) I am still Sandrah for you, Uncle Billy Bob?~
-@21   = ~Pelltar? Pelltar of Lendore Island?~
-@22   = ~Sandrah? Sandrah of Waterdeep? What are you doing here on the Sword Coast?~
-@23   = ~I was about to ask you the same. I travel with <CHARNAME> of Candlekeep.~
-@24   = ~What a coincidence! <CHARNAME> was exactly the person that was recommended to me to seek out for the purpose for which I came to the Sword Coast. I seek the help of a competent party such as yours.~
-@25   = ~Great, <CHARNAME>, we are famous even in places like Lendore...where is that, by the way?~
-@26   = ~Sounds like we have gained ourself a name already.~
+@21   = ~Пеллтар? Пеллтар с Лендорских островов?~
+@22   = ~Сандра? Сандра из Вотердипа? Что ты делаешь здесь, на Побережье Меча?~
+@23   = ~Я как раз собирался спросить тебя то же самое. Я и <CHARNAME> из Кендлкипа вместе путешествуем.~
+@24   = ~Какое совпадение! <CHARNAME> именно тот, кого мне посоветовали разыскать для той цели, с которой я прибыл на Побережье Меча. Я ищу помощи такой компетентной группы, как ваша.~ ~Какое совпадение! <CHARNAME> именно та, кого мне посоветовали разыскать для той цели, с которой я прибыл на Побережье Меча. Я ищу помощи такой компетентной группы, как ваша.~
+@25   = ~Вот здорово, <CHARNAME>, о нас знают даже в таких местах, как Лендор... Кстати, где это?~
+@26   = ~Похоже, мы уже заработали себе имя.~
