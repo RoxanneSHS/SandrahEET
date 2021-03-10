@@ -1,9 +1,10 @@
 // Lendore + Bone Hill 1
-INTERJECT_COPY_TRANS BHPELL 11 BHArrival
+INTERJECT BHPELL 11 BHArrival
+==IMOEN2_ IF ~InParty("CVSandr") InParty("Imoen2") AreaCheck("bh0100") ~THEN @27
 == CVSandrJ IF ~InParty("CVSandr") InParty("Imoen2") AreaCheck("bh0100") ~THEN @0DO ~RealSetGlobalTimer("BH1EvenT","GLOBAL",345) ~
 ==IMOEN2_ IF ~InParty("CVSandr") InParty("Imoen2") AreaCheck("bh0100") ~THEN @1
-== BHPELL  @2
-END
+== BHPELL  @2 DO~EscapeArea()~
+EXIT
 
 INTERJECT_COPY_TRANS BHFABIO 0 SanFab1
 == CVSandrJ IF ~InParty("CVSandr") ~THEN @3

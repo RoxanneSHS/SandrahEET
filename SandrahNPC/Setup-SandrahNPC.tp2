@@ -7070,9 +7070,9 @@ END ELSE BEGIN
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~b2#tenyj.dlg~ THEN BEGIN
-OUTER_SET actual_185 = (STATE_WHICH_SAYS 43 IN ~TenyaThermidor/tra/%s/player.tra~ FROM ~B2#TenyJ~)
+/* OUTER_SET actual_185 = (STATE_WHICH_SAYS 43 IN ~TenyaThermidor/tra/%s/player.tra~ FROM ~B2#TenyJ~)
 COPY ~SandrahNPC/mods/TenyaNPC.d~ ~SandrahNPC/mods/TenyaNPC.d~
-REPLACE_TEXTUALLY ~185~ ~%actual_185%~
+REPLACE_TEXTUALLY ~185~ ~%actual_185%~ */
 COMPILE ~SandrahNPC/Mods/TenyaNPC.d~
 EXTEND_TOP ~B2#Tenya.bcs~ ~SandrahNPC/Mods/Tenyaheal.baf~
 PRINT ~ Tenya NPC detected - installed Sandrah interactions~
