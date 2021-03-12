@@ -6572,6 +6572,9 @@ COMPILE ~SandrahNPC/D/BSandrBG2Driz.d~
 ~SandrahNPC/BAF/SanDrSl.baf~
 EXTEND_TOP
 ~Driz21.bcs~ ~SandrahNPC/BAF/drizheal2.baf~
+COPY ~SandrahNPC/Mods/Driz22.CRE~ ~override~
+     SAY NAME1 @758
+     SAY NAME2 @758
 PRINT ~ Sandrah Drizzt relationship added~
 END
 
