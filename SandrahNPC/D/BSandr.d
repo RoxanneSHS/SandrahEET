@@ -2516,7 +2516,7 @@ END
 ++ @1071DO~IncrementGlobal("Sanpoints","GLOBAL",1)~EXIT
 
 CHAIN
-IF ~Global("OrcPrison","GLOBAL",26)~THEN BSANDR  BeregOrph40
+IF ~AreaCheck("BG3402")Global("OrcPrison","GLOBAL",26)~THEN BSANDR  BeregOrph40
 @1072
 DO~SetGlobal("OrcPrison","GLOBAL",27)~
 == KELDDA @1073
