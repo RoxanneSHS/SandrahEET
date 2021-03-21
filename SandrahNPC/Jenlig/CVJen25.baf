@@ -2920,6 +2920,7 @@ IF
 RealGlobalTimerExpired("JenBant","LOCALS")
 Global("JenOneBanter","LOCALS",0)
 CombatCounter(0)
+InParty("CVJenlig")
 !See([ENEMY])
 THEN
 RESPONSE #100
