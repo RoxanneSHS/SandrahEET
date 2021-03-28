@@ -2,24 +2,24 @@ CHAIN
 IF~Global("SanSola","GLOBAL",9)~THEN BSANDR SanSvSol
 @0
 DO~SetGlobal("SanSola","GLOBAL",10) RealSetGlobalTimer("SanSolaT","LOCALS",800)~
-==BSOLA@1
+==Sola@1
 ==BSANDR@2
-==BSOLA@3
+==Sola@3
 ==BSANDR@4
-==BSOLA@5
+==Sola@5
 EXIT
 
 CHAIN
 IF~Global("SanSola","GLOBAL",11)~THEN BSANDR SanSvSol2
 @6
 DO~SetGlobal("SanSola","GLOBAL",12) RealSetGlobalTimer("SanSolaT","LOCALS",800)~
-==BSOLA@7
+==Sola@7
 ==BSANDR@8
-==BSOLA@9
+==Sola@9
 ==BSANDR@10
-==BSOLA@11
+==Sola@11
 ==BSANDR@12
-==BSOLA@13
+==Sola@13
 ==BSANDR@14
 EXIT
 
@@ -27,11 +27,11 @@ CHAIN
 IF~Global("SanSola","GLOBAL",13)~THEN BSANDR SanSvSol2
 @15
 DO~SetGlobal("SanSola","GLOBAL",14) RealSetGlobalTimer("SanSolaT","LOCALS",800)~
-==BSOLA@16
+==Sola@16
 ==BSANDR@17
-==BSOLA@18
+==Sola@18
 ==BSANDR@19
-==BSOLA@20
+==Sola@20
 ==BSANDR@21
 EXIT
 
@@ -40,46 +40,46 @@ IF~Global("SanSola","GLOBAL",15)~THEN BSandr SanSolSing
 @22
 DO~SetGlobal("SanSola","GLOBAL",16)RealSetGlobalTimer("SanSolaT","LOCALS",1000)~
 ==BSandr IF~Global("SolaDiscussWoods","GLOBAL",2)~THEN@23
-==BSOLA@24
+==Sola@24
 ==BSANDR@25
-==BSOLA@26
+==Sola@26
 ==BSANDR@27
-==BSOLA@28
+==Sola@28
 = @29
 ==BSANDR@30
-==BSOLA@31
+==Sola@31
 ==BSANDR@32
-==BSOLA@33
+==Sola@33
 ==BSANDR@34EXIT
 
 CHAIN
 IF~Global("SanSola","GLOBAL",17)~THEN BSandr SanSolGods
 @35
 DO~SetGlobal("SanSola","GLOBAL",18)RealSetGlobalTimer("SanSolaT","LOCALS",3600)~
-==BSOLA@36
+==Sola@36
 ==BSANDR@37
-==BSOLA@38
+==Sola@38
 ==BSANDR@39
-==BSOLA@40
+==Sola@40
 ==BSANDR@41
-==BSOLA@42
+==Sola@42
 ==BSANDR@43
-==BSOLA@44
+==Sola@44
 ==BSANDR@45EXIT
 
 CHAIN
 IF~Global("SanSola","GLOBAL",19)~THEN BSandr SanSolResp
 @46
 DO~SetGlobal("SanSola","GLOBAL",20)RealSetGlobalTimer("SanSolaT","LOCALS",1600)~
-==BSOLA@47
+==Sola@47
 ==BSANDR@48
-==BSOLA@49
+==Sola@49
 ==BSANDR@50
-==BSOLA@51
+==Sola@51
 ==BSANDR@52
-==BSOLA@53
+==Sola@53
 ==BSANDR@54
-==BSOLA@55
+==Sola@55
 ==BSANDR@56EXIT
 
 INTERJECT_COPY_TRANS SOLA 4  SanSolCoat

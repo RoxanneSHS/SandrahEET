@@ -5829,16 +5829,6 @@ ACTION_IF NOT FILE_EXISTS_IN_GAME ~CVSandr.dlg~ THEN BEGIN
   FAIL  @406
 END
 
-ACTION_IF NOT FILE_EXISTS_IN_GAME ~BSola.dlg~ THEN BEGIN
-APPEND ~interdia.2da~
-~Sola BSola BSola ~
-UNLESS ~Sola~
-APPEND ~interdia.2da~
-~Solaufein BSola BSola ~
-UNLESS ~Solaufein~
-COMPILE  ~SandrahNPC/Mods/BSola.d~
-END
-
 COPY ~SandrahNPC/CRE/CVTALOW1.CRE~ ~override/CVTALOW1.CRE~
      SAY NAME1 @696
      SAY NAME2 @696
