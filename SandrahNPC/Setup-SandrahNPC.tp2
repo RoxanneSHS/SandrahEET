@@ -8524,6 +8524,8 @@ EXTEND_TOP
 ~id2107.bcs~ ~SandrahNPC\IWD/id2107larys.baf~
 EXTEND_TOP
 ~bg2300.BCS~ ~SandrahNPC/IWD/bg2300Iwd.baf~
+EXTEND_BOTTOM
+~bg1001.BCS~ ~SandrahNPC/IWD/bg1001.baf~
 EXTEND_TOP
 ~id4004.BCS~ ~SandrahNPC/IWD/id4004brage.baf~
 EXTEND_TOP

@@ -1,0 +1,8 @@
+IF
+Global("FCIWDELM_SPAWN","MYAREA",0)
+Global("SanBGForIWD","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("FCIWDELM_SPAWN","MYAREA",1)
+CreateCreature("FCIWDELM",[332.466],NW) 
+END

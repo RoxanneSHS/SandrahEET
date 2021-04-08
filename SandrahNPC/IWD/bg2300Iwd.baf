@@ -7,3 +7,12 @@ RESPONSE #100
 SetGlobal("Brage","bg2300",1)
 CreateCreature("CViwdguy",[2255.2344],14)
 END
+
+IF
+Global("Brage","bg2300",1)
+GlobalGT("IWDEET_COMPLETE","Global",1)
+THEN
+RESPONSE #100
+SetGlobal("Brage","bg2300",2)
+ActionOverride("cviwdguy",DestroySelf())
+END
