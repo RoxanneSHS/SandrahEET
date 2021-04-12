@@ -219,6 +219,18 @@ END
 //Heart of Winter
 //_____________________________________________________________________
 
+EXTEND_BOTTOM HARBOR 10
+IF~Global("SanHOWScar","Global",2)!NumTimesTalkedTo(0) Global("SanHowTravel","Locals",0) ~THEN REPLY @255 GOTO HowSanHrb1
+IF~Global("SanHOWScar","Global",2)!NumTimesTalkedTo(0) Global("SanHowTravel","Locals",0) ~THEN REPLY @256 EXIT
+END
+
+CHAIN
+IF ~~THEN Harbor HowSanHrb1
+@257
+END
+++ @258 DO~SetGlobal("SanHowTravel","Locals",1)StartCutScene("KuToLW")~EXIT
+++ @259 EXIT
+
 CHAIN
 IF WEIGHT #-3~Global("IwdHWPlot","LOCALS",1)~THEN CVSandrJ IWDassa1
 @90
@@ -506,3 +518,5 @@ I_C_T Dkressel 6 SanKressGhot
 ==DKressel IF~InParty("CVSandr")~THEN@252
 ==CVSandrJ IF~InParty("CVSandr")~THEN@253
 ==DKressel IF~InParty("CVSandr")~THEN@254END
+
+

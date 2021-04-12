@@ -103,7 +103,7 @@
 @102  = ~First, I recognised you at first glance earlier at Wyrm's Crossing, the resemblance to your mother is unmistakeable. I chose not to address it in public, as you will soon understand.~
 @103  = ~Let us settle over here, this table cannot be overheard by those ears you obviously want to avoid.~
 @104  = ~You understand well, just like I had hoped. So, there is a little issue aside from the obvious trouble we have in town in which I require some outside help.~
-@105  = ~Go on, Scar, be assured we will try to help if we can - if we cannot, you have at least out words that nobody will get to know about this conversation.~
+@105  = ~Go on, Scar, be assured we will try to help if we can - if we cannot, you have at least our word that nobody will get to know about this conversation.~
 @106  = ~Good. The iron crisis has forced my superior, Duke Eltan Silvershield to explore all possible alternatives to gain ore for the town - all in good faith to serve the city. One of those possibilities seems to lie in some resources further up north, wild territories around the Spine of the World.~
 @107  = ~Hm, those *wild territories* are not unoccupied. The tribes and folks living up there call it their home.~
 @108  = ~This is a valid concern and one I share with an old friend of mine, a shaman named Hjollder, who lives there. Even worse however is the fact that Eltan trusted the operation into the hand of a merchant organisation which may use methods neither he nor me nor you may tolerate.~
@@ -114,7 +114,7 @@
 @113  = ~I always dreamed of seeing those wild lands. You have me interested.~
 @114  = ~If it goes against the Iron Throne, I am all for it. Count on me, Scar.~
 @115  = ~Not now, I have enough of my own business to care about.~
-@116  = ~I gave you the facts and I will mark Lonelywood on your map. I can offer you no riches but the experience you may gain on that mission. Think about it and make your decision well. This is all I ask of you this time. ~
+@116  = ~I gave you the facts and I will mark Lonelywood on your map. I can offer you no riches but the experience you may gain on that mission. Think about it and make your decision well. This is all I ask of you this time. If you decide to help, go and see the harbour master. ~
 @117  = ~Yes, <CHARNAME>. milady Sandrah?~
 @118  = ~Scar, we have been to Lonelywood and beyond. (Sandrah gives a detailed report about your mission to Icewind Dale - except...she does not mention your discovery of the ore on Burial Island at all.)~
 @119  = ~Another example of those criminal Iron Throne activities. Duke Eltan will not be delighted to hear that. Had there really been iron up there in the region, they would have prevented its digging, even on the price of a bloody local conflict, just to keep up the crisis.~
@@ -255,3 +255,8 @@
 @252  = ~It is strange to hear one of your origin talk about General Ghotal with such words, for you he was the monster, the aggressor, the wraith of Myrkul.~
 @253  = ~History is written by the winners. The truth often is another thing.~
 @254  = ~Ghotal tried to unify and protect his people but he was defeated. Orcs did not trust Orcs and Orcs were Orcs' greatest enemies. His downfall made me see the probability of my own end.~
+@255 = ~Scar asked us to help him with some business at Lonelywood. We need a passage.~
+@256 = ~We will come later.~
+@257 = ~This will be no ordinary passage. We cannot let you be seen on some ship. Prepare for some magic I have to use.~
+@258 = ~Fine, cast your spell, we're ready.~
+@259 = ~Hold on, I need some preparation. We will come a bit later.~
