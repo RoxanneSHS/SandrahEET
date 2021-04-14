@@ -8518,6 +8518,7 @@ COMPILE
 ~SandrahNPC\IWD/SanIWD_Dialogues.d~
 ~SandrahNPC\IWD/SanIWDGuy.d~
 ~SandrahNPC\IWD/koveras1.baf~
+~SandrahNPC\IWD/brunos.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC\IWD/SanIWDtriggers.baf~
 EXTEND_TOP
@@ -8559,6 +8560,8 @@ COPY_EXISTING ~drowvan.cre~ ~override~
 WRITE_ASCII 0x280 ~drowvan~
 COPY_EXISTING ~kovera.cre~ ~override~
 WRITE_ASCII 0x248 ~koveras1~
+COPY_EXISTING ~brunos.cre~ ~override~
+WRITE_ASCII 0x250 ~brunos~
 PRINT ~ IWD detected - Sandrah in IWD + HOW contents added~
 END ELSE BEGIN
   PRINT @1042
