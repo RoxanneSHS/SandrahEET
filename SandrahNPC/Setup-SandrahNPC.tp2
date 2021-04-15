@@ -8546,6 +8546,8 @@ EXTEND_TOP
 ~id9400.BCS~ ~SandrahNPC/IWD/id9400dwarf.baf~
 EXTEND_TOP
 ~id1105.BCS~ ~SandrahNPC/IWD/id1105nohow.baf~
+EXTEND_TOP
+~id9603.BCS~ ~SandrahNPC/IWD/id9603howend.baf~
 COPY_EXISTING ~bedd1.cre~ ~override/CVdedwa.cre~
 SAY NAME1 @1041
 SAY NAME2 @1041
