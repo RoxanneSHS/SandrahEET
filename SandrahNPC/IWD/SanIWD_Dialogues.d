@@ -282,8 +282,8 @@ DO~SetGlobal("SanHOWScar","Global",5) ~
 ==CVSandrJ@118
 ==Scar@119
 END
-++@120+ IWDRetu1
-++@121+ IWDRetu1
+++@120+ IWDRetu2
+++@121+ IWDRetu2
 
 CHAIN
 IF~~THEN Scar IWDRetu2
