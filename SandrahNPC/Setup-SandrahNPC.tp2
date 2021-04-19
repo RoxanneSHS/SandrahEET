@@ -3255,6 +3255,7 @@ SAY NAME2 @1079
 COPY ~SandrahNPC\CRE/Shandals.cre~ ~override\Shandals.cre~
 SAY NAME1 @691
 SAY NAME2 @691
+WRITE_ASCII 0x34 ~shands~
 
 COPY ~SandrahNPC\CRE/CVHaer.cre~ ~override\CVHaer.cre~
 SAY NAME1 @721
