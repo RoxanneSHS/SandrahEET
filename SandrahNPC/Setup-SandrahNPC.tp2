@@ -4584,10 +4584,10 @@ END
 COMPILE ~SandrahNPC/BAF/SHARTEEL.baf~
 COMPILE ~SandrahNPC/BAF/shartd.baf~
 
-COPY ~SandrahNPC/Misc2/1xSkieS.bmp~ ~override/1xSkieS.bmp~
-COPY ~SandrahNPC/Misc2/1xSkieS.bmp~ ~override/SkieS.bmp~
-COPY ~SandrahNPC/Misc2/1xSkieM.bmp~ ~override/1xSkieM.bmp~
-COPY ~SandrahNPC/Misc2/1xSkieM.bmp~ ~override/SkieM.bmp~
+COPY ~SandrahNPC/Misc2/1xSkiel.bmp~ ~override/1xSkieS.bmp~
+COPY ~SandrahNPC/Misc2/1xSkiel.bmp~ ~override/SkieS.bmp~
+COPY ~SandrahNPC/Misc2/1xSkiel.bmp~ ~override/1xSkieM.bmp~
+COPY ~SandrahNPC/Misc2/1xSkiel.bmp~ ~override/SkieM.bmp~
 COPY ~SandrahNPC/Misc2/1xSkieL.bmp~ ~override/1xSkieL.bmp~
 COPY ~SandrahNPC/Misc2/1xSkieL.bmp~ ~override/SkieL.bmp~
 
