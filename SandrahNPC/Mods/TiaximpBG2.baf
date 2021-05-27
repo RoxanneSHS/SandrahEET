@@ -1,0 +1,36 @@
+IF
+GlobalGT("Chapter","Global",15)
+InParty("7XTIAX")
+!AreaCheck("ar1516")
+!AreaCheck("ar1515")
+Global("Sanotiax","LOCALS",0)
+Delay(12)
+THEN
+RESPONSE #100
+SetGlobal("Sanotiax","LOCALS",1)
+END
+
+IF
+Global("Sanotiax","LOCALS",2) 
+RealGlobalTimerExpired("SanotiaxTa","LOCALS")
+InParty("7XTIAX")
+!TimeOfDay(DAY)
+THEN
+RESPONSE #100
+SetGlobal("Sanotiax","LOCALS",3)
+END
+
+IF
+See("7XTIAX")
+!StateCheck("7XTIAX",CD_STATE_NOTVALID)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+CombatCounter(0)
+!See([ENEMY])
+OR(2)
+Global("Sanotiax","LOCALS",1)
+Global("Sanotiax","LOCALS",3)
+THEN
+RESPONSE #100
+MoveToObject("7XTIAX")
+Interact("CVSandr")
+END

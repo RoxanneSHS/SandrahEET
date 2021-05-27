@@ -6301,6 +6301,15 @@ END ELSE BEGIN
   PRINT ~Tiax SoA friendship mod not detected - skipped ~
 END
 
+ACTION_IF FILE_EXISTS_IN_GAME ~7XTIAXB.dlg~ THEN BEGIN
+COMPILE ~SandrahNPC/Mods/TiaximpBG2.d~     USING  ~SandrahNPC/TRA/%LANGUAGE%/tiaxsanbg2.tra~
+EXTEND_TOP
+~CVSandra.bcs~ ~SandrahNPC/Mods/TiaxImpBG2.baf~
+PRINT ~ Tiax Imp detected - Sandrah relationship added~
+END ELSE BEGIN
+  PRINT ~Tiax Imp mod not detected - skipped ~
+END
+
 ACTION_IF FILE_EXISTS_IN_GAME ~LK#Nind.cre~ THEN BEGIN
 COMPILE ~SandrahNPC/Mods/NindeSanBG2.d~
 EXTEND_TOP
