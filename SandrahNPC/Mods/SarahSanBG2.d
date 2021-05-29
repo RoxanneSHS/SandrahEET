@@ -58,8 +58,8 @@ DO~SetGlobal("SanSarahR","GLOBAL",8) RealSetGlobalTimer("SanSarT","LOCALS",1800)
 ==BSandr@40
 ==K#SarahB@41
 ==BSandr@42
-==K#SarahB~(Blushes) If what I am today is interesting for you...~
-~All right, then.~
+==K#SarahB@43
+= @74
 = @44
 = @45
 ==BSandr@46
