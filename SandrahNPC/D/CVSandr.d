@@ -55,9 +55,17 @@ END
 
 IF ~~WhereIsImo
 SAY @23
-IF ~~THEN REPLY @24GOTO SeeBehindMask
-IF ~~THEN REPLY @25GOTO LovelyFool1
-IF ~~THEN REPLY @26GOTO SeeBehindMask
+IF ~!Dead("Imoen2")~THEN REPLY @24GOTO SeeBehindMask
+IF ~!Dead("Imoen2")~THEN REPLY @25GOTO LovelyFool1
+IF ~!Dead("Imoen2")~THEN REPLY @26GOTO SeeBehindMask
+IF ~Dead("Imoen2")~THEN REPLY @40GOTO ImoNeedRess
+END
+
+IF~~ImoNeedRess
+SAY @27
+= @41
+= @32
+IF ~~THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ~EXIT
 END
 
 IF ~~LovelyFool1
@@ -68,7 +76,7 @@ IF ~~THEN REPLY @30DO~IncrementGlobal("Sanpoints","GLOBAL",1)~GOTO LovelyFool2
 IF ~~THEN REPLY @31GOTO LovelyFool2
 END
 
-IF ~~LovelyFool2 
+IF ~~LovelyFool2
 SAY @32
 IF ~~THEN DO ~SetGlobal("SandrahJoined","GLOBAL",1) JoinParty() ~EXIT
 END
