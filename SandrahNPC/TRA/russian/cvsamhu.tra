@@ -1,38 +1,38 @@
-@0    = ~Ahhh! (The turmoil of the battle has brought the wounded man back to consciousness.)~
-@1    = ~(Your healer casts a quick spell on the man to ease his visible pains.)~
-@2    = ~-cough- -cough-  Who... are you.  Where is Lena.  -cough-.  Uhhhhh.?~
-@3    = ~Lena is save, do not worry. We will take you to the temple of Wisdom as fast as we can. All will be well.~
-@4    = ~Nothing will be well as long as corruption rules the Flaming Fist..cough.~
-@5    = ~You must not agitate yourself, your wounds will open again.~
-@6    = ~Can you do not more for him, Sandrah, he suffers badly?~
-@7    = ~Oh, Sandrah, just cast sleep on him. If we are to carry him all that length he needs to keep still else he'll attrack every bandit and fist along the road.~
-@8    = ~Cough...~
-@9    = ~I am doing what is possible here in the field. We must bring him to the temple where he can get the rest and care he needs.~
-@10   = ~Beware of the Flaming Fist...are no longer a force of law and order...Angelo Dosan has sold them to the service of the Iron Throne...~
-@11   = ~Ah, the maggot, the scum bag - that's how the *great hero* ends, a bloody traitor.~
-@12   = ~You must hate him worse than I do for what he did to me.~
-@13   = ~That's nothing compared to what he did to me, the scoundrel who copulated with that whore who called herself my mother.~
-@14   = ~You are his daughter? Poor girl, you suffer indeed worse than me.~
-@15   = ~Our suspicions were correct, damn it. That weasel Dosan, Scar already suspected him. I didn't trust myself in his case, this man just turns my stomach. Good to know that my guts told me the truth.~
-@16   = ~You're Schael Corwin...cough...make sure Scar's warned...~
-@17   = ~You should not lose more strength in talking, friend. Sleep now. (She casts *sleep* on her patient.)~
-@18   = ~Beware of the traitors...*snooze*~
-@19   = ~Flaming Fist deserter.
+@0    = ~Аааа! (Суматоха битвы вернула раненого в сознание)~
+@1    = ~(Ваш целитель накладывает на мужчину быстрое заклинание, чтобы облегчить его видимые боли.)~
+@2    = ~(кашляет) Кто... ты. Где Лена? (кашляет) Ууу...~
+@3    = ~Лена в безопасности, не волнуйтесь. Мы доставим вас в храм Мудрости так быстро, как только сможем. Все будет хорошо.~
+@4    = ~Ничего не будет хорошо, пока коррупция разъедает Пылающий Кулак... (кашляет)~
+@5    = ~Вы не должны волноваться, иначе ваши раны снова откроются.~
+@6    = ~Не могли бы вы сделать для него больше, Сандра, он очень сильно страдает?~
+@7    = ~Ох, Сандра, просто усыпи его. А иначе он привлечет всех бандитов и Кулаков по дороге, пока мы его тащим.~
+@8    = ~(Кашляет...)~
+@9    = ~Я делаю все возможное здесь, на месте. Мы должны принести его в храм, где он сможет отдохнуть и о нем будет кому позаботиться.~
+@10   = ~Остерегайтесь Пылающих Кулаков... больше не являются силой закона и порядка... Анджело Досан продал их Железному Трону...~
+@11   = ~Ах ты, червяк, подонок - вот так конец *великого героя*, кровавый предатель.~
+@12   = ~Вы должно быть ненавидите его сильнее моего, притом что он причинил мне много зла.~
+@13   = ~Нет ничего, что могло бы сравниться с тем, что он сделал со мной! Мерзавец, совокуплявшийся с той шлюхой, что называла себя моей матерью.~
+@14   = ~Вы его дочь? Бедная девочка, вы действительно пострадали сильнее меня.~
+@15   = ~Черт возьми, наши подозрения оправдались. Этот проныра Досан, Шрам уже подозревал его. Я не могла поверить что все хорошо когда изучала его дело, а теперь меня выворачивает от всей этой мерзости. Приятно знать, что я могу доверять своей интуиции.~
+@16   = ~Вы Шаэль Корвин... (кашляет...) убедитесь, что Шрам предупрежден...~
+@17   = ~Не теряйте силы в разговорах, друг. Спите. (Она колдует *сон* на своего пациента.)~
+@18   = ~Остерегайтесь предателей... (засыпает)~
+@19   = ~Дезертир из Пылающего Кулака.
 
-A Flaming Fist soldier told us that there was a reward out for a man who deserted his unit.  The reward is for 50 gold, and the man's name is Samuel.~
-@20   = ~Okay, bye.~
-@21   = ~Okay, we do have Samuel.  Take him and give us our 50 gold.~
-@22   = ~You'll have to take him by force.  Sorry.~
-@23   = ~So we meet again.  Sorry, but I don't... hey, who are you carrying there?~
-@24   = ~It's one of our companions; he was wounded.~
-@25   = ~A hobgoblin we killed.  We think he's a member of the Chill, so we're taking him back to Beregost for identification.~
-@26   = ~He's a merchant we found.  His caravan was attacked by bandits, and he was badly wounded.  He paid us to take him back to Beregost.~
-@27   = ~This is Samuel.  We want to turn him in for the 50 gold.~
-@28   = ~Good job, here's your reward.~
-@29   = ~Flaming Fist deserter.
+Солдат Пылающего Кулака сказал нам, что есть награда для человека, который дезертировал из своего подразделения. Награда составляет 50 золотых, человека зовут Самуэль.~
+@20   = ~Хорошо, прощате.~
+@21   = ~Хорошо, у нас есть Самуэль. Возьми его и отдай нам 50 золотых.~
+@22   = ~Прости, но тебе придется взять его силой.~
+@23   = ~Итак, мы снова встретились. Прости, но я не... эй, кого это ты там несешь?~
+@24   = ~Это один из наших товарищей - он был ранен.~
+@25   = ~Мы убили хобгоблина. Мы думаем, что он член Холода, поэтому мы везем его обратно в Берегост для опознания.~
+@26   = ~Это купец, которого мы нашли. На его караван напали бандиты, и он был тяжело ранен. Он заплатил нам, чтобы мы отвезли его обратно в Берегост.~
+@27   = ~Это Самуэль. Мы хотим сдать его за 50 золотых.~
+@28   = ~Молодец, вот тебе награда.~
+@29   = ~Дезертир из Пылающего Кулака. 
 
-I turned Samuel in to the Flaming Fist soldier, and got a paltry 50 gold for it.  Hell, might buy me a sword...~
-@30   = ~But...hey, who are you carrying there?~
-@31   = ~I'd rather not...you seem to be determined to prove your point by all means.~
-@32   = ~Actually, I just wanted to ask you one question.  Who is it that you have with you?~
-@33   = ~It's one of our companions, he was wounded.~
+Я сдал Сэмуэля солдату Пылающего Кулака и получил за это жалкие 50 золотых. Черт возьми, хватит чтобы купить меч...~
+@30   = ~Но... эй, кого это ты там несешь?~
+@31   = ~Я бы предпочел не... похоже, вы полны решимости доказывать свою точку зрения любыми средствами.~
+@32   = ~На самом деле, я просто хотел задать вам один вопрос. Кто это там с тобой?~
+@33   = ~Это один из наших товарищей - он был ранен.~
