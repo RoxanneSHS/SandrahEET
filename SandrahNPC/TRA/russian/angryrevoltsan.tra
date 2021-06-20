@@ -1,12 +1,14 @@
-@0    = ~Sandrah, my counsellor, you are best suited to take over this situation.~
-@1    = ~Centurion, I understand everybody here has your word of honour that there will be no violence until we have finished the hearing that will start in a moment.~
-@2    = ~MEN, we will not act unless directly attacked by anyone. Lady, you have an officer's word.~
-@3    = ~You have heard it, good man. We will listen to your case as long as no blood is shed. There is no need for the knife on anyone's throat.~
-@4    = ~We trust your and <CHARNAME>'s reputation. Men, listen, we came here to clarify some injustice not to kill. Let us keep peace so they listen to us. (He lets go the cowled wizard.)~
-@5    = ~I demand in the name of the cowled....~
-@6    = ~IN THE NAME OF THE GODDESS OF ALL MAGIC, you will keep the peace as everybody else around here while we hear those people out. Your powers are frozen by Mystra herself.~
-@7    = ~(Twitches his hands uselessly.) What is...my spell...priestess?~
-@8    = ~Now that we have finished the preliminaries, citizen, explain to us in terms that we all can understand while you came here in such a rage.~
-@9    = ~The taxes recently demanded in the name of the cowled..... ~
-@10   = ~.....(A long winding argument between the parties follows, now and then interrupted by suggestions and clarifications from your counsellor. You and your companions are too tired to really follow the details - what is important is that the arguments of the involved get more and more pointed and violence seems to be forgotten.)~
-@11   = ~...this agreement has finally been reached. I will hand the negotiated papers to the council and with this dismiss this gathering. MEN, ASSURE THAT ALL LEAVE THIS PLACE IN PEACE AND IMMEDIATELY!!~
+@0    = ~Сандра, мой советник, ты лучше всего подходишь, чтобы разобраться в этой ситуации.~
+@1    = ~Центурион, как я понимаю, все здесь дали свое слово, что насилия не будет, пока мы не закончим слушание, которое вот-вот начнется.~
+@2    = ~ЛЮДИ, мы не будем атаковать, если никто не нападет на нас. Леди, даю вам слово офицера.~
+@3    = ~Вы слышали это, добрый человек. Слушания будут продолжаться, если ничья кровь не будет пролита. Нет нужды в ноже на чьем-либо горле.~
+@4    = ~Мы доверяем вам и вашей репутации. Люди, послушайте, мы пришли сюда в поисках справедливости, а не для убийства. Давайте же соблюдать перемирие, чтобы нас выслушали. (Она отпускает волшебника в капюшоне.)~
+@5    = ~Я требую во имя волшебников в ряс...~
+@6    = ~ВО ИМЯ БОГИНИ ВСЕЙ МАГИИ вы, как и все остальные здесь, будете соблюдать перемирие, пока мы всех выслушиваем. Ваши силы заморожены самой Мистрой.~
+@7    = ~(Бесполезно дергает руками.) Что такое... мое заклинание... жрица?~
+@8    = ~Теперь, когда мы закончили предварительные мероприятия, объясните нам простыми словами, почему вы пришли сюда в такой ярости.~
+@9    = ~Налоги, недавно потребованные от имени волшебников...~
+@10   = ~... (Далее следует долгий запутанный спор между сторонами, время от времени прерываемый предложениями
+и разъяснениями вашего консультанта. Вы и ваши товарищи слишком устали, чтобы по-настоящему следить за
+деталями - важно, что аргументы участвующих становятся все более четкими, и насилие, кажется, забыто.)~
+@11   = ~... в конце концов соглашение было достигнуто. Я передам бумаги о договоре Совету и собравшиеся могут разойтись. ЛЮДИ, УБЕДИТЕСЬ, ЧТО ВСЕ НЕМЕДЛЕННО И В ЦЕЛОСТИ ПОКИНУЛИ ЭТО МЕСТО!!~

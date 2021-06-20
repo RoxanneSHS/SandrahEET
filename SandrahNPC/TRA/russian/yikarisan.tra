@@ -1,8 +1,8 @@
-@0    = ~We have found and eliminated a terrific force of slave traders in that compound over there. The sword was there and the monk you mentioned is defeated.~
-@1    = ~In some way that is good news, the thief has found his fate and the sword taken from him. ~
-@2    = ~As we are a well equipped troupe I cannot imagine our leader <CHARNAME> to withhold your item. May I ask you for any information you may provide us about that slaver organisation in return.~
-@3    = ~As much as I am grateful for your kind words, mylady priestess, I am utterly sad to disappoint you. I was just following the trail of the thief to this installation. I could not get inside all by myself. I have seen guarded groups come in and out, the traffic of large cargo boxes as well but I have been warded off by the guards every time before I could get close enough to find out what is really going on. Now that you mention slave trade, my observations begin to make sense, but I know no more.~
-@4    = ~I believe you, Yikari, I am sure you would tell us everything if you knew more. (Sigh) It was just my silly hope that we could get more information to deal those slavers of Athkatla another blow.~
-@5    = ~Excuse me, is that sword... Celestial Fury? And you would be <CHARNAME>?~
-@6    = ~Yes. Who are you and what do you want?~
-@7    = ~Maybe... Who are you?~
+@0    = ~Мы нашли и уничтожили огромную армию работорговцев в том районе. Меч был там, а упомянутый вами монах побежден.~
+@1    = ~В каком-то смысле это хорошие новости, вор нашел свою судьбу и меч был отнят у него.~
+@2    = ~Поскольку мы - хорошо оснащенная труппа, я не думаю что наш лидер, <CHARNAME>, станет держаться за этот предмет. Вместо этого, не могли бы вы поделиться любой информацией, о местной работорговле.~
+@3    = ~Я очень благодарен за ваши добрые слова, леди жрица, но я вынужден вас разочаровать. Я просто шел по следу вора к этому месту и не смог бы попасть внутрь самостоятельно. Я видел, как входили и выходили охраняемые группы людей, а также большое количество грузовых ящиков. Однако, я ни разу не смог подойти достаточно близко, чтобы узнать, что там происходит, потому что меня останавливала охрана. Теперь, когда вы упомянули работорговлю, это все начинают обретать смысл, но больше я ничего не знаю.~
+@4    = ~Я верю тебе, Йикари, я уверена, что ты рассказал бы нам больше, если бы знал. (Вздох) Это была просто глупая надежда, что мы сможем получить больше информации, для нанесения работорговцам Аткатлы еще одного удара.~
+@5    = ~Простите, это меч... Небесная ярость? А ты должно быть <CHARNAME>?~
+@6    = ~Да, так и есть. Кто ты и чего ты хочешь?~
+@7    = ~Может быть... А ты кто?~
