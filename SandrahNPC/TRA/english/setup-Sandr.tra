@@ -53,7 +53,7 @@ Sandrah has studied the mysterious scroll a bit and found that it may - among ot
 @60021 = ~A Demonic Scroll
 
 Sandrah has found another bit of information from our mysterious scroll. Someone named Alzaligrundel is the master of this scroll. He has an arch-enemy in some mountains in the south. The enemy's lair seems to be near falling water. So what? All of it is still too vague to divert us from our task. I am waiting for Sandra or her father to find out more.~
-@22 = ~ The demonic scroll in your inventory seems to come alive.
+@22 = ~The demonic scroll in your inventory seems to come alive.
 Maybe it has detected the portal is near. You should converse with the damned thing.~
 @23 = ~Gift of Mystra ~
 @24 = ~Gift of Mystra ~
@@ -127,7 +127,7 @@ We hope to trick the mighty demon Naronguth with this false to regain Elminster'
 Dance through the night! In these comfortable, attractive shoes, you'll never have to worry about blisters or stepping on your partner's feet. So what are you waiting for? Go out and party!
 
 The demon stench of the former owner has completely disappeared and nothing prevents you from using these attractive ballet slippers.~
-@60066 = ~ The weird demon is gone and you are left without Elminster's shard.
+@60066 = ~The weird demon is gone and you are left without Elminster's shard.
 Maybe Sandrah has some advice for you, you may want to talk to her.~
 @60067 = ~Gone To Hell
 
@@ -215,7 +215,7 @@ You have rescued Hillath's baby from the bandit Khattark. You must quickly retur
 @102 = ~Hillath's Dead Baby
 
 Your attempt to rescued Hillath's baby from the bandit Khattark by force has failed. You can only return a dead body to the mother.~
-@103 = ~ No, my husband...
+@103 = ~No, my husband...
          This bandit Khattark, he has the baby!~
 @60104 = ~Khattark - the Bandit
 
@@ -266,7 +266,7 @@ Irritating news from Elminster. Our old friend, the demon Naronguth seems to be 
 @130 = ~Entangled Slippers
 
 From the look this seems to be a pair comfortable, attractive shoes, you'll never have to worry about blisters or stepping on your partner's feet. However these slippers have been modified by the mighty mage Elminster into a demon trap of sorts. How exactly the trap may work is unknown.~
-@131 = ~ When Naronguth put on Elminster's Entangled Slippers and tried to attack you, he stumbled badly and went down in a ball of fire.~
+@131 = ~When Naronguth put on Elminster's Entangled Slippers and tried to attack you, he stumbled badly and went down in a ball of fire.~
 @60132 = ~Old Waterdeep Road
 
 Today we have learned from Sandrah about the Old Waterdeep Road, a mystic trail from the Sword Coast to the City of Splendour used in older times. To find and travel it, one needs a special map. Sandrah suggested that the old couple that runs the Friendly Arm may know more about it.~
@@ -349,12 +349,12 @@ Equipped Abilities: Special, Sandrah can assimilate a magical ability from certa
 ~
 @162 = ~BGT required for installation!~
 @163 = ~Without Sandrah and her knowledge of the old map you cannot continue on to Waterdeep.~
-@164 = ~ North to Waterdeep 1 hour
+@164 = ~North to Waterdeep 1 hour
          South to Friendly Arm 20 hours~
 @165 = ~A Diary ~
 @166 = ~Diary of a Rashemen Scout ~
 @167 = ~You cannot decipher the foreign writing ~
-@168 = ~ ... today the Othlor has sent me to follow a group of travellers from Waterdeep. He thinks they are in possession of two of the creatures the master requires...
+@168 = ~... today the Othlor has sent me to follow a group of travellers from Waterdeep. He thinks they are in possession of two of the creatures the master requires...
 ...
 ...during endless days pursuing the small group. They carry two small ones indeed and are eagerly trying to hide their true destination by meandering across this damned land of the Sword Coast...
 ...
@@ -441,7 +441,7 @@ And it looks that me and my group have a part in that scheme without our knowled
 @208 = ~Waterdeep~
 @209 = ~Rainbow Cloak~
 @210 = ~Snow Leopard Cloak~
-@211 = ~  One of the hundreds of robes and clothes from Sandrah's wardrobe. As any item from her father's house some unknown magical enchantment has been added to the cloth.~
+@211 = ~One of the hundreds of robes and clothes from Sandrah's wardrobe. As any item from her father's house some unknown magical enchantment has been added to the cloth.~
 @60212 = ~A Book for Finch
 
 Clarissa Bloomwhiffler, a relative of Finch in Waterdeep has given us a copy of the very rare Monteelah's essay on the Virtue of Wisdom. Finch is delighted of this special gift for her library and would not part with it under any circumstances.~
@@ -456,12 +456,12 @@ Those are the questions you now ponder.
 
 You can think of only one person to be able to shed some light on these issues
   - Sandrah's father, Elminster himself. ~
-@214 = ~ You are able to reconstruct the mysterious cloth, having found three of the pieces. ~
-@215 = ~ INTRUDERS!!~
-@216 = ~ We must destroy this watcher with ranged weapons to stop him calling reinforcements!~
-@217 = ~ Academy Watcher~
-@218 = ~ The door to the inside is now accessible~
-@219 = ~ A secret exit has been opened~
+@214 = ~You are able to reconstruct the mysterious cloth, having found three of the pieces. ~
+@215 = ~INTRUDERS!!~
+@216 = ~We must destroy this watcher with ranged weapons to stop him calling reinforcements!~
+@217 = ~Academy Watcher~
+@218 = ~The door to the inside is now accessible~
+@219 = ~A secret exit has been opened~
 @220 = ~Exit to Waterdeep~
 @221 = ~Plan, Part1 ~
 @222 = ~Plan, Part2 ~
@@ -503,21 +503,21 @@ I am convinced by now that Sandrah's and my own stories are entwined. There is a
 
 You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You cannot determine the gender of the child.~
 
-@244 = ~ Khalindra's Baby
+@244 = ~Khalindra's Baby
 
 You hold a replica of Khalindra's baby in your arm. It is wrapped in a bed cloth of the design you have seen here in Elminster's house before. The pattern can be found on the door leading up to Sandrah's quarters and her tower. You see that the baby was a little girl.~
-@245 = ~ A keystone is required to pass to the lower level.~
-@246 = ~ Keystone Part ~
-@247 = ~ Left Keystone Part ~
-@248 = ~ Right Keystone Part ~
-@249 = ~ One part of the keystone required to enter the orc prison in Cloakwood. You need both parts to access the prison that may hold Imoen's friend Henning.~
-@250 = ~ Henning's Body~
-@251 = ~ Henning's Body
+@245 = ~A keystone is required to pass to the lower level.~
+@246 = ~Keystone Part ~
+@247 = ~Left Keystone Part ~
+@248 = ~Right Keystone Part ~
+@249 = ~One part of the keystone required to enter the orc prison in Cloakwood. You need both parts to access the prison that may hold Imoen's friend Henning.~
+@250 = ~Henning's Body~
+@251 = ~Henning's Body
 
 Henning has been badly injured by Knawlod. Sandrah suggests, that only her father at Waterdeep will be able to provide the necessary healing.~
-@252 = ~ Purse~
-@253 = ~ Travenhurst's Purse~
-@254 = ~ Travenhurst's Purse
+@252 = ~Purse~
+@253 = ~Travenhurst's Purse~
+@254 = ~Travenhurst's Purse
 
 This bag containing 9500GP was found on the dead kidnapper Knowlod, who had worked for the Beregost nobleman Gerard Travenhurst. The bag has the family emblem and the seal of Travenhurst on it. 
 It will be evidence for the involvement of the council member in the Iron Throne's intrigues on the Sword Coast as well as his role in the kidnapping of Henning. 
@@ -525,14 +525,14 @@ The major of Beregost will have a large interest in this item.
 Or maybe you and Imoen want to confront the *nobleman* yourself?~
 @255 = ~Gerard Travenhurst~
 @256 = ~Houseguard~
-@257 = ~ Journal~
-@258 = ~ Travenhurst's Journal~
-@259 = ~ Travenhurst's Journal
+@257 = ~Journal~
+@258 = ~Travenhurst's Journal~
+@259 = ~Travenhurst's Journal
 
 The journal of the former nobleman contains a lot of information about his involvement with the Iron Throne and a man named Sarevok, sometimes spelled backwards as Koveras. The detailed protocol seemed to be intended for a possible blackmail of those at Baldur's Gate should they intend to act against Travenhurst.~
 @260 = ~Iron Throne Mage~
-@261 = ~ Deed of Ownership~
-@262 = ~ Deed of Ownership
+@261 = ~Deed of Ownership~
+@262 = ~Deed of Ownership
 
 This deed certifies the ownership of the house and grounds at Beregost known as the *Travenhurst Estate* by one half each to Imoen of Candlekeep and Henning of Nashkel. 
   
@@ -576,8 +576,8 @@ A tenday after Korlasz's defeat, you retire to your chamber in the Ducal Palace,
 @282 = ~Yondalla's Blessing~
 @283 = ~L'Urieet Yantyrr~
 @284 = ~Jen'lig~
-@285 = ~ Clan Chainmail~
-@286 = ~ Clan Chainmail
+@285 = ~Clan Chainmail~
+@286 = ~Clan Chainmail
  
  Despite its orcish origin, this chainmail is an excellently crafted piece of equipment. It allows Shauhana to develop her fledgling mage abilities without losing her fighter protection.
  
@@ -588,94 +588,94 @@ Equipped Abilities:
 
 Armor Class: 3
 Usable by creatures with a fraction of orcish blood only.~
-@287 = ~ Shauhana's Sword~
-@288 = ~ Shauhana's Sword
+@287 = ~Shauhana's Sword~
+@288 = ~Shauhana's Sword
 
 Shauhana prefers the use of her bow and only uses her flamesword when unavoidable. The orcish weapon had belonged to her father and was not given voluntarily to a daughter with only a part of orcish blood in her.~
-@289 = ~ Shauhana's Bow~
-@290 = ~ Shauhana's Bow
+@289 = ~Shauhana's Bow~
+@290 = ~Shauhana's Bow
 
 Shauhana becomes silent whenever the question of her relation to magic arts is addressed. She is the only female part-orc you have ever heard of to have any magic abilities. The origin of her bow is mysterious as well - it is clearly not orcish.
 The bow requires no arrows but spits out salves of magical arrows when used by Shauhana, making her a kind of one-woman army against large groups of foes.~
-@673 = ~ Shauhana's roots are a mystery on its own. The beautiful young woman shows no visible signs of her orcish heritage at first. Both her parents were only half-orcs themselves, but Shauhana grew up in the orc clan environment of the Stormhorn Mountains. More of her past was not revealed by the escaped slave-girl, but you are sure you will find it out over time when you and Sandrah built up a closer relationship with your new companion.~
-@291 = ~ Clan Orc~
-@292 = ~ Clan Hound~
-@293 = ~ Should we not help her?~
-@294 = ~ It seems she is quite capable on her own.~
-@295 = ~ Swamp Caves~
-@296 = ~ Mage Book~
-@297 = ~ Shauhana's Book~
-@298 = ~ Shauhana's Book - Part One
+@673 = ~Shauhana's roots are a mystery on its own. The beautiful young woman shows no visible signs of her orcish heritage at first. Both her parents were only half-orcs themselves, but Shauhana grew up in the orc clan environment of the Stormhorn Mountains. More of her past was not revealed by the escaped slave-girl, but you are sure you will find it out over time when you and Sandrah built up a closer relationship with your new companion.~
+@291 = ~Clan Orc~
+@292 = ~Clan Hound~
+@293 = ~Should we not help her?~
+@294 = ~It seems she is quite capable on her own.~
+@295 = ~Swamp Caves~
+@296 = ~Mage Book~
+@297 = ~Shauhana's Book~
+@298 = ~Shauhana's Book - Part One
 
 A strange book to be found on an orc. Shauhana received it from her involuntary teacher Brage, who was caught by her Clan and put to the arena pits where she was enslaved. The mentally deceased fighter taught the half-orc girl the human language and reading. At least for one part of the book. The first part of it is written in an unknown script while the second part is an unfinished translation to the human language. The book contains very ancient mage lore and the second unknown part may contain even stranger secrets. ~
-@299 = ~ Shauhana's Book - Part Two
+@299 = ~Shauhana's Book - Part Two
 
 Sandrah has identified the script of the original book as being of an old extinguished elven accent, that is even unknown to the elves and half-elves of today. One of the topics mentioned as far as Sandrah is able to decipher it by comparing it to some known inscriptions found on the Sword Coast that are recorded in her own encyclopaedic tome, is the legendary Sharkta Fai.
 Sharkta Fai - according to both elvish and orcish belief - is a fountain that is said to restore the bodies of those who have fallen in battle before they go hale to the next world after life. Some necromancers however think, that if a living creature bathes in the fountain, it will not only be restored with enormous power but also will gain endless life.~
 
-@300 = ~ Orc Shaman's Staff~
-@301 = ~ Orc Shaman's Staff
+@300 = ~Orc Shaman's Staff~
+@301 = ~Orc Shaman's Staff
 
 The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length.  Masterwork quarterstaffs are made of stout oak and are shod with metal at both ends.  This one is particularly special as it has been imbued with magical properties.~
-@302 = ~ Hornswamp Cave Staff
+@302 = ~Hornswamp Cave Staff
 
 Besides being a magical weapon, this orc staff also will remove the orc rune that blocks the passage out of the caves from the Clan's land in the Stormhorns.~
-@303 = ~ Clan Orc's Ghost~
-@304 = ~ Orc Rune
+@303 = ~Clan Orc's Ghost~
+@304 = ~Orc Rune
 The sacred orc rune needs to be dispelled, before you can pass the cave exit.~
-@305 = ~ Caves~
-@306 = ~ Orc Village~
-@307 = ~ Sharkta Fai~
-@308 = ~ The sign shows elvish and orcish runes
+@305 = ~Caves~
+@306 = ~Orc Village~
+@307 = ~Sharkta Fai~
+@308 = ~The sign shows elvish and orcish runes
          West to Village
          East to Hornswamp
          North (old elven runes)~
-@309 = ~ Clan Arch Shaman~
-@310 = ~ Vennegrat~
-@311 = ~ You will not escape, godchild!~ 
-@312 = ~ Pool of Sharkta Fai
+@309 = ~Clan Arch Shaman~
+@310 = ~Vennegrat~
+@311 = ~You will not escape, godchild!~ 
+@312 = ~Pool of Sharkta Fai
 Shauhana should step inside to be restored.~
-@313 = ~ Sharkta Fai Jewel~
-@314 = ~ Sharkta Fai Jewel
+@313 = ~Sharkta Fai Jewel~
+@314 = ~Sharkta Fai Jewel
 
 When put on the altar of the Sharkta Fai temple, this jewel will emerge a beam of light indicating the entrance to the Sharkta Fai Pool~
-@315 = ~ Clan Jailor~
-@316 = ~ Clan Shaman's Body ~
-@317 = ~ Body of Shauhana's Shaman Mentor
+@315 = ~Clan Jailor~
+@316 = ~Clan Shaman's Body ~
+@317 = ~Body of Shauhana's Shaman Mentor
 
 The Clan has tortured and killed Shauhana's old mentor for helping the slave girl to escape. Shauhana insists on taking his body to Sharkta Fai, so he can enter the Other World as a fallen warrior. She claims that he had died defending her life in a selfless way unknown to orcs in general.~
-@318 = ~ The road to Sharkta Fai is now open in the north.~
-@319 = ~ Sharkta Fai Guardian~
-@320 = ~ You need a fallen warrior's body to enter Sharkta Fai.~
-@321 = ~ Nashkel Refugee~
+@318 = ~The road to Sharkta Fai is now open in the north.~
+@319 = ~Sharkta Fai Guardian~
+@320 = ~You need a fallen warrior's body to enter Sharkta Fai.~
+@321 = ~Nashkel Refugee~
 @322 = ~Summon Noble Dragon~
 @323 = ~Ajantis' Letter to Sandrah~
 @324 = ~Ajantis' Letter to Sandrah
 
 Ajantis has left this letter for Sandrah, explaining his reasons to leave the group. It is a thick package and it is sealed. Only Sandrah needs to know about the paladins deepest thoughts and his feelings for her.~
-@325 = ~ Pirate Zombie~
-@326 = ~ Pirate Commander Zombie~
-@327 = ~ Pirate Treasure~
-@328 = ~ Pirate Treasure
+@325 = ~Pirate Zombie~
+@326 = ~Pirate Commander Zombie~
+@327 = ~Pirate Treasure~
+@328 = ~Pirate Treasure
 
 This sack contains gold and jewels robbed and hoarded by the infamous pirate Monteelah. The contents is worth about 15000GP - it is bloody money nonetheless. But maybe you find a way to use it for a positive purpose.~
-@329 = ~ Stack of Documents~
-@330 = ~ The Sharkta Fai Papers
+@329 = ~Stack of Documents~
+@330 = ~The Sharkta Fai Papers
 
 These papers found with Monteelah's pirate treasure seem to be the real reason for the pirate to slaughter his whole crew to maintain the knowledge for himself alone.
 Sharkta Fai, the legendary pool in the legends of Toril's older races, such as the elves and the orcs, is associated with the possibility of eternal life. The papers are something that Sandrah may study carefully.~
-@331 = ~ Sandrah's Ring of Wisdom~
-@332 = ~ Captain Holghorn~
-@333 = ~ Zombie Pirate Leader~
-@334 = ~ Navigational Practise~
-@335 = ~ Navigational Practise
+@331 = ~Sandrah's Ring of Wisdom~
+@332 = ~Captain Holghorn~
+@333 = ~Zombie Pirate Leader~
+@334 = ~Navigational Practise~
+@335 = ~Navigational Practise
 
 This book contains a large number of instructions and tips for the handling of a ship. It could be quite useful for someone who is acquainted with the nautical language such as starboard and leeward. ~
-@336 = ~ Shipbuilding ~
-@337 = ~ Shipbuilding 
+@336 = ~Shipbuilding ~
+@337 = ~Shipbuilding 
 
 A short title for a breathtaking encyclopaedia. This tome explains how to manufacture each part of a ship in detail, accompanied by hundreds of illustrations of the parts of a ship.~
-@338 = ~ Leaving Glorhan
+@338 = ~Leaving Glorhan
 
 The ship creaks and the wind fills the sails. Slowly the ship comes into motion and leaves the shore. You soon get a feeling for the reaction of the rudder on your motions of the steering wheel. Sandrah finds more and more relations between the two books and figures out the right actions. Since the weather remains as good as it was proposed, the crew gets more and more cheerful.
 
@@ -684,43 +684,43 @@ Sailing goes smooth and on the morning of the third day the coastline gets into 
 The sailing was not a problem so far - but how do you stop the ship now?
 
 The answer comes quickly as you hear the increasing noise of sand, rocks and splintering planks rise up from the ship below you...~
-@339 = ~ When you come to your senses you realise that there is a tangle of ropes on the deck all around you. One of your actions must have been incorrect.~
-@340 = ~ Sandrah's Ring of Wisdom
+@339 = ~When you come to your senses you realise that there is a tangle of ropes on the deck all around you. One of your actions must have been incorrect.~
+@340 = ~Sandrah's Ring of Wisdom
 
 This ring was given to Sandrah on her sixteenth birthday by her father in Waterdeep.~
-@341 = ~ Emblem of Myrkul~
-@342 = ~ Emblem of Myrkul
+@341 = ~Emblem of Myrkul~
+@342 = ~Emblem of Myrkul
 
 The emblem of the dead god - one of the Dead Three, Bane, Bhaal and Myrkul, who stole the Tablets of Fate from Ao - was found at the pool of Sharkta Fai. Shauhana claims that is has belonged to her grandfather.~
-@343 = ~ Mystra's Army~
-@344 = ~ Mystra's Sendling~
-@345 = ~ Old Shield~
-@346 = ~ Old Enchanted Shield
+@343 = ~Mystra's Army~
+@344 = ~Mystra's Sendling~
+@345 = ~Old Shield~
+@346 = ~Old Enchanted Shield
 
 This enchanted medium shield has probably belonged to a long deceased former owner of the castle.~
-@347 = ~ Sandrah has lost her animal friend who had accompanied her since their common childhood through most of her adventuring days.~
-@348 = ~ Ghatlenk~
-@60349 = ~ The Stormhorns
+@347 = ~Sandrah has lost her animal friend who had accompanied her since their common childhood through most of her adventuring days.~
+@348 = ~Ghatlenk~
+@60349 = ~The Stormhorns
 
 A blind orc shaman in the Athkatla slum district has identified me as a *godchild*. He told me that someone I was searching for would be in the Stormhorn Mountains far to the north. I am sure however that he was not speaking of Imoen.~
-@60350 = ~ Becoming Father 
+@60350 = ~Becoming Father 
 
 What a surprise! Examining Shar-Teel today, Sandrah has found my wildcat lover to be pregnant. We will become parents in seven moons time!
 After the initial shock had settled, I found to my surprise that Shar-Teel has happily accepted her coming role as a mother. In a way she sees this as a challenge to prove how a strong and independent woman like herself can raise a child with the love and care that she herself has never known.
 And me? It will be quite some change but not the worst one. With the time still remaining we will defeat our enemy and find a nice, quiet place to raise the baby. And others, who knows?
 Meanwhile we will still have Sandrah's home at Waterdeep as a resort should our quest unexpectedly require more time to be solved.~
-@351 = ~ Mystra's Rage~
-@352 = ~ Nib's Travel Scroll~
-@353 = ~ Nib's Travel Scroll
+@351 = ~Mystra's Rage~
+@352 = ~Nib's Travel Scroll~
+@353 = ~Nib's Travel Scroll
 
 Nib Jansen's scroll will guide you to his sky ship that allows you to travel to far off parts of Faerun through the air. The handicaps are, that you can take only four other party members with you (cats, dogs and cows are free) and that a safe landing is not always assured. Talk to the scroll if you want to use the skyship under these conditions.~
-@354 = ~ White Mythril Shield~
-@355 = ~ Midnight's Shelter~
-@356 = ~ Midnight's Shelter
+@354 = ~White Mythril Shield~
+@355 = ~Midnight's Shelter~
+@356 = ~Midnight's Shelter
 
 The famous heroine Midnight was one of the adventurers chosen by Ao to retrieve the stolen Tablets of Fate. For her heroic deeds, the Overgod raised her to godhood herself, replacing the slain goddess Mystra whose name she adopted.
 While still a human woman, Midnight gave birth to a son, the famous mage Elminster, whose daughter - thus Midnight's granddaughter - is your companion Sandrah. The white mythril shield is one of the artefacts from Midnight's human adventuring days.~
-@357 = ~ Tempus Blesses Sandrah~
+@357 = ~Tempus Blesses Sandrah~
 @60358 = ~Sandrah's Heritage - The second child
 
 Today we have probably discovered the truth about the Bhaalspawn that was inseminated into Sandrah's poor mother and resulted in her death on its birth. 
@@ -741,45 +741,45 @@ To save my life from all kinds of pursuers, Elminster, Winthrop and Gorion have 
 Now the rising of another Bhaalspawn, Sarevok, and his attempt to rise to the throne of his *father* have led to Gorion's death and the trouble on the Sword Coast.
 I am not alone in my task. With Sandrah by my side, and with my *sister* Imoen, we will
 succeed in stopping Sarevok from becoming the next God of Murder.~
-@360 = ~ You have lost charisma as a leader within the group. ~
-@361 = ~ Moonblade Sendling~
-@362 = ~ Summon a creature once slain with a moonblade by the elf Xan~
-@363 = ~ Githyanki Captain~
-@364 = ~ Shevarash's Avenger~
-@365 = ~ Kivan has begged the god Shevarash to grant a spell to his beloved Sandrah to aid her in the fiercest battles.~
-@366 = ~ Assistant of Tempus~
-@367 = ~ Branwen has received this spell from her god for her lover Sandrah to guard her and <CHARNAME> in her time of absence.~
-@368 = ~ Lighthouse Observations~
-@369 = ~ Lighthouse Observations
+@360 = ~You have lost charisma as a leader within the group. ~
+@361 = ~Moonblade Sendling~
+@362 = ~Summon a creature once slain with a moonblade by the elf Xan~
+@363 = ~Githyanki Captain~
+@364 = ~Shevarash's Avenger~
+@365 = ~Kivan has begged the god Shevarash to grant a spell to his beloved Sandrah to aid her in the fiercest battles.~
+@366 = ~Assistant of Tempus~
+@367 = ~Branwen has received this spell from her god for her lover Sandrah to guard her and <CHARNAME> in her time of absence.~
+@368 = ~Lighthouse Observations~
+@369 = ~Lighthouse Observations
 
 This paper contains dates, ship names, and notes about possible cargo and other details. The lighthouse seems to be used to observe the ship traffic on the Sea of Swords. But for what purpose? The current inhabitants are no officials and their claim is trade. Why do they need such notes? What puzzles you most is a column for each ship saying *armed - unarmed*.~
-@370 = ~ Wallrick~
-@371 = ~ The Dark One~
-@372 = ~ Hathran Protector~
-@373 = ~ Knowing her fate, your and Sandrah's beloved companion Dynaheir has wielded this forceful spell from the Weave as a gift for both of you.~
-@374 = ~ What is going on here, Sandrah?~
-@375 = ~ Wildcat's Growl~
-@376 = ~ As Shar-Teel had to retire from travelling with the group for the birth of her and <CHARNAME>'s baby, she has left the care and protection of their lover to Sandrah and given her this spell.~
-@377 = ~ Coran's Gift~
-@378 = ~ The elvish thief Coran has blessed Sandrah with this ability after the joy of their on and off love affair.~
-@60379 = ~ Sandrah heartily attacks the wood in the fireplace with her hammer and splinters start to fly around.~
-@380 = ~ Dark Ranger's Help~
-@381 = ~ Sandrah has learned this ability from her former combat teacher Drizzt Do'Urden,~
-@382 = ~ Dark Ranger's Helper~
-@383 = ~ Aroooouuuuuuu~
-@384 = ~ Howling of Terror~
-@385 = ~ Howling of the Grave~
-@386 = ~ Howling of Dispelling~
-@387 = ~ Howling of Malison~
-@388 = ~ Space Hamster~
-@389 = ~ Hamster Spawn~
-@390 = ~ For her care and friendship with Minsc, Sandrah has been rewarded with this spell by the goddess Mystra.~
+@370 = ~Wallrick~
+@371 = ~The Dark One~
+@372 = ~Hathran Protector~
+@373 = ~Knowing her fate, your and Sandrah's beloved companion Dynaheir has wielded this forceful spell from the Weave as a gift for both of you.~
+@374 = ~What is going on here, Sandrah?~
+@375 = ~Wildcat's Growl~
+@376 = ~As Shar-Teel had to retire from travelling with the group for the birth of her and <CHARNAME>'s baby, she has left the care and protection of their lover to Sandrah and given her this spell.~
+@377 = ~Coran's Gift~
+@378 = ~The elvish thief Coran has blessed Sandrah with this ability after the joy of their on and off love affair.~
+@60379 = ~Sandrah heartily attacks the wood in the fireplace with her hammer and splinters start to fly around.~
+@380 = ~Dark Ranger's Help~
+@381 = ~Sandrah has learned this ability from her former combat teacher Drizzt Do'Urden,~
+@382 = ~Dark Ranger's Helper~
+@383 = ~Aroooouuuuuuu~
+@384 = ~Howling of Terror~
+@385 = ~Howling of the Grave~
+@386 = ~Howling of Dispelling~
+@387 = ~Howling of Malison~
+@388 = ~Space Hamster~
+@389 = ~Hamster Spawn~
+@390 = ~For her care and friendship with Minsc, Sandrah has been rewarded with this spell by the goddess Mystra.~
 @391 = ~Fireflower~
-@392 = ~ This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
+@392 = ~This is Yasraena's enchanted short sword which she calls Fireflower. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
 
 Statistics:
 Fireflower's true power lies in its ability to do greater damage to creatures susceptible to fire, such as regenerating monsters, cold-based creatures, and undead. It is of +1 enchantment against normal foes.~
-@393 = ~ Ironkiss~
+@393 = ~Ironkiss~
 @394 = ~This is Yasraena's enchanted short sword which she calls Ironkiss. Preparing for Yasraena's escape from the Underdark, Divalir armed her with a matched set of short swords. This is one of them.
 
 Statistics:
@@ -796,34 +796,34 @@ Ironkiss has become much more deadly while simultaneously defending her life mor
 
 Statistics:
 Fireflower continues to seek the destruction of undead, but it has also been enchanted to deal harshly with demons.  Like Ironkiss, Fireflower guards Yasraena's life.~
-@401 = ~ Knock~
-@402 = ~ Sandrah has gained the ability to knock open locks during her intermezzo with a thief.~
-@403 = ~ Captain Resach~
-@404 = ~ Isra's patron Sune has graced Sandrah for her enduring support of her disciple.~
-@405 = ~ The Drizzt Saga Mod is required - please install first!~
-@406 = ~ Sandrah NPC Core not installed!~
-@407 = ~ Go To Waterdeep~
-@408 = ~ Return from Waterdeep~
-@409 = ~ Dragon Force~
-@410 = ~ Sandrah has assimilated this ability from the dragon she has slain.~
-@411 = ~ Sandrah has assimilated a new ability from the dragon she has slain.~
-@412 = ~ Hobgoblin Wizard~
-@413 = ~ Dragon Buffs~
-@414 = ~ Mass Charm~
-@415 = ~ Heal Group~
+@401 = ~Knock~
+@402 = ~Sandrah has gained the ability to knock open locks during her intermezzo with a thief.~
+@403 = ~Captain Resach~
+@404 = ~Isra's patron Sune has graced Sandrah for her enduring support of her disciple.~
+@405 = ~The Drizzt Saga Mod is required - please install first!~
+@406 = ~Sandrah NPC Core not installed!~
+@407 = ~Go To Waterdeep~
+@408 = ~Return from Waterdeep~
+@409 = ~Dragon Force~
+@410 = ~Sandrah has assimilated this ability from the dragon she has slain.~
+@411 = ~Sandrah has assimilated a new ability from the dragon she has slain.~
+@412 = ~Hobgoblin Wizard~
+@413 = ~Dragon Buffs~
+@414 = ~Mass Charm~
+@415 = ~Heal Group~
 @416 = ~ 
 On a timeless journey you seem to leave Faerun and even the material plane. Colours and lights swirl around you, coming and going, some even passing through your transparent body. You have the impression to travel, even though a *space* in the way you know it, does not seem to exist in the kind of reality that surrounds you now.
 
 From an unknown source you feel something slowly building up inside of you. You have no name for it, only you feel that it gives you some strength you have not known before. You feel like you are for one single moment part of something immense and powerful.
 
 Whatever it was that has touched you, a tiny bit of it stays inside of you as you slowly seem to return to *reality*.~
-@417 = ~ Portrait of a beautiful lady. Could it really be Sandrah?~
+@417 = ~Portrait of a beautiful lady. Could it really be Sandrah?~
 @418 = ~Rhanthona~
 @419 = ~Priest of Mystra~
 @420 = ~Temple of Mystra~
 @421 = ~Indira's Ogre ~
 @422 = ~Indira's Memento~
-@423 = ~ A gift to Sandrah from her loving companion, the half-elf girl Indira.~
+@423 = ~A gift to Sandrah from her loving companion, the half-elf girl Indira.~
 @424 = ~Mystra's Temple Dagger~
 @425 = ~Mystra's Temple Dagger
 
@@ -833,12 +833,12 @@ Cold Resistance bonus
 Weight: 1
 Initiative: 1
 Min strength: 3 ~
-@426 = ~ Mystra's Ritual Dagger~
-@427 = ~ Ringhontal~
-@428 = ~ Little Girl's Body~
-@429 = ~ Body of the little Leyala. The sick girl is unconscious and desperately needs a skilled healer to save her life.~
-@430 = ~ Tome~
-@431 = ~ Tome of Leadership~
+@426 = ~Mystra's Ritual Dagger~
+@427 = ~Ringhontal~
+@428 = ~Little Girl's Body~
+@429 = ~Body of the little Leyala. The sick girl is unconscious and desperately needs a skilled healer to save her life.~
+@430 = ~Tome~
+@431 = ~Tome of Leadership~
 @432 = ~ 
 One of the most popular recent tomes of leadership and influence is the cynically entitled book "How to Win Friends and Influence People." Like others of its ilk, it peddles a philosophy of personal ascendancy and manipulation by charisma alone. The authors and advocates of such tomes claim that, by drawing on the most recent theories in sociology and interpersonal psychology, it is possible to raise an individual's charisma by a single point. In truth, such increases in personal charisma are the product of magical spells placed on the text as it is in the writing process. These same spells also cause the tome to disappear after their first use. An excellent marketing strategy, you must concede...
 
@@ -847,7 +847,7 @@ STATISTICS:
 Charisma:  Raised by 1 point permanently
 Special:  The book is consumed upon use
 Usage:  Place into quick item slot~
-@433 = ~ Tome of Understanding~
+@433 = ~Tome of Understanding~
 @434 = ~ 
 A typical tome of understanding contains a sober, if dry analysis of legal battles, historic events, government policies, philosophical treatises, and theories of magic and metaphysics. While rarely interesting to anyone outside of their already well-educated niche market, it is said that some such tomes have even added a single point to the Wisdom of certain half-ogres. Such marvels, however, are the product of a potent magic placed upon the tome as it is being written. Unfortunately, this same magic causes the tome to disappear after a single use.
 
@@ -856,13 +856,13 @@ STATISTICS:
 Wisdom:  Raised by 1 point permanently
 Special:  The book is consumed upon use
 Usage:  Place into quick item slot~
-@435 = ~ ALONE
+@435 = ~ALONE
 Was is Bhaal himself that has guided your decision? 
 And Mystra who has intervened?
 You find yourself alone, deserted by your companions who have stayed loyal to Sandrah and her crusade for a better Toril...~
-@436 = ~ Sandrah moves from one of the group to the next with Mystra's ritual knife and applies a short cut to each one's index finger. The knife responds either with a glow or remains dull, indicating the nature of the tested blood.~
-@437 = ~ The Goddess of All Magic and her human origins~
-@438 = ~ An undecipherable tome~
+@436 = ~Sandrah moves from one of the group to the next with Mystra's ritual knife and applies a short cut to each one's index finger. The knife responds either with a glow or remains dull, indicating the nature of the tested blood.~
+@437 = ~The Goddess of All Magic and her human origins~
+@438 = ~An undecipherable tome~
 @439 = ~ 
 The Goddess of All Magic and her human origins
 or
@@ -873,7 +873,7 @@ The fate and history of Mystra has always been interwoven with the mortals of th
 Through the ages, Mystra has gone through many incarnations, and the current is but one of them. The studies of Narvantial of Soubar, finished shortly before the Time of Troubles, revealed that all incarnations of the goddess stem from a single human bloodline through the female line. Before their raising to godhood, all human mages that became Mystra had been mothers and later incarnations of the goddess had always come from their blood. Narvantial pointed out the priestess Midnight as the heiress of that blood during his lifetime - and indeed Mystra's powers passed onto her servant Midnight who took her name and mantle after Helm had defeated the goddess in the Time of Troubles.
 
 It should be noted that Midnight herself spawned a child while still being in her human form, the famous Elminster, alas a male. How her female bloodline continues that may probably produce a future incarnation of Mystra for a coming generation on Toril has not been found in the papers on Narvantial's studies that are still available today.~
-@440 = ~ The Hathran has provided her beloved friend Sandrah with an ability normally only known to Rashemi battle mages.~ 
+@440 = ~The Hathran has provided her beloved friend Sandrah with an ability normally only known to Rashemi battle mages.~ 
 @441 = ~Lathander's Lightbringer~
 @442 = ~This ability was granted to Sandrah from the god Lathander himself for her love to one of his disciples.~
 @443 = ~Vicky's Nightmare~
@@ -913,7 +913,7 @@ But that is not true for you. As much as you love your family and your little ho
 
 Once again in your life the unexpected has happened! You are now the proud father of a little son. Of all the companions you have met on your travels so far, the mother is the one who appeared farthest from such a possibility when you first met her - the wildcat fighter Shar-Teel.
 You know she will be a wonderful mother avoiding all the misdeeds she had suffered from her own childhood for your little boy. According to your agreement you have named the boy *Gorion*. He may not be a lone child for long. ~
-@467 = ~ The cult symbol vibrates~
+@467 = ~The cult symbol vibrates~
 @468 = ~Shauhana's Mysterious Heritage
 
 We have already found several hints that Shauhana's half-orc heritage is complicated. On several occasions now she has been identified as a *godchild*, just like myself. However neither Bhaal - like in my case - nor Myrkul - the godly father of her own grandfather Ghotal - are responsible here. Who else - and how - has fathered our companion then?~
@@ -926,22 +926,22 @@ Wallrick reminded Shauhana of Minsc and asked her to make sure he would accompan
 
 Shauhana is the daughter of the warrior god, Arvoreen, named also The Defender because he defends all that is right and good and destroys those who are evil. The orcs know this god by the name of Ilneval.
 Arvoreen and Mystra have been tasked by Ao to re-establish the balance between the major racial nations on Toril. The united Clan Orc's in the northern territories would be a power to ward against the humans of the Sword Coast and of Amn and prevent them to spread out further, occupying the realms of the elves and orcs in the process.~
-@471 = ~ Banelich Death~
-@472 = ~ Blademaster's Leather~
-@473 = ~ Shar-Teel had this light armour made by the Waterdeep Temple to use during her pregnancy.~
-@474 = ~ Chaos~
-@475 = ~ Mystra's Blinding~
-@476 = ~ Mystra's Blinding
+@471 = ~Banelich Death~
+@472 = ~Blademaster's Leather~
+@473 = ~Shar-Teel had this light armour made by the Waterdeep Temple to use during her pregnancy.~
+@474 = ~Chaos~
+@475 = ~Mystra's Blinding~
+@476 = ~Mystra's Blinding
 Mystra's variation of the teleport field spell for Sandrah who can cast from this scroll three times per day.~
-@477 = ~ You feel uneasy and your breath seems to stop as Sandrah quickly 
+@477 = ~You feel uneasy and your breath seems to stop as Sandrah quickly 
 approaches the evil looking tomb. The heavy top plate seems to signal to you 
 that this place would be better left undisturbed.~
-@478 = ~ Sandrah pushes the heavy lid of the tomb aside 
+@478 = ~Sandrah pushes the heavy lid of the tomb aside 
 without hesitation. A stinking cloud of decay fills the air. 
 Strangely enough the sarcophagus contains just the gilded torso 
 of a skeleton. A sudden eruption of magic energy lets
 an undead creature appear. ~
-@479 = ~ Sandrah's Blessed Chainmail
+@479 = ~Sandrah's Blessed Chainmail
 
 Can a chainmail be a fashionable item? This one can. 
 It is a powerful armour and at the same time it clings to Sandrah's body emphasising every female aspect of the young cleric's figure. The decoration is immune to any battle demolitions and is a work of art in the timeless style of Waterdeep.
@@ -1068,14 +1068,14 @@ At least Sandrah claims that the last chapter in the book is still to be written
 @522=~Ship Rat~
 @523=~You could get on the row boat back to the harbour.~
 @524=~Plane Vampire~
-@525=~ As soon as you step close enough to that mysterious part of the wall you feel a strong pull on your body. The portal really sucks you and your comrades in. You twirl through a kaleidoscope of colours and high pitched sounds.
+@525=~As soon as you step close enough to that mysterious part of the wall you feel a strong pull on your body. The portal really sucks you and your comrades in. You twirl through a kaleidoscope of colours and high pitched sounds.
 
 It takes you a second to realize the journey has ended and you stand again on your own two feet.~
-@526=~ Eldest Plane Vampire~
-@527=~ There is no sign of an exit or entry in the wall where you thought you had come in.~
-@528=~ The wall here has the same configuration as the portal you came through. This one repels you as you approach instead of sucking you in.~
-@529=~ The symbols in this book are undecipherable for you and resemble nothing you have ever seen on Toril.~
-@530=~ A richly ornamented sarcophagus. The runes and symbols on the surface are different from anything you have seen before.~
+@526=~Eldest Plane Vampire~
+@527=~There is no sign of an exit or entry in the wall where you thought you had come in.~
+@528=~The wall here has the same configuration as the portal you came through. This one repels you as you approach instead of sucking you in.~
+@529=~The symbols in this book are undecipherable for you and resemble nothing you have ever seen on Toril.~
+@530=~A richly ornamented sarcophagus. The runes and symbols on the surface are different from anything you have seen before.~
 @531=~The Vampire Eldest has escaped into the sarcophagus after his defeat. With a wooden stake through his heart you could prevent his return once and for all.~
 @532=~You drive the wooden stake through the vampire elder's black heart. ~
 @533=~There is nothing more for you to do here.~
@@ -1291,7 +1291,7 @@ The rest - as they say - is history. Shauhana and Minsc led the Clan Orcs into a
 Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wish-list of every child of the Realms in no time.
 
 The crisis that almost ended this peaceful episode in Faerun's history will be told later, when Sandrah and <CHARNAME> return from the Throne of Bhaal.~
-@682 = ~ Peace with the Clan Orcs
+@682 = ~Peace with the Clan Orcs
 You have aided the half-orc Shauhana to end the civil war that nearly extinguished the Clan Orcs in the Stormhorns. Ghotal's granddaughter, sired by Arvoreen, became the new leader and Queen of the Clans.
 She and her husband and protector Minsc led the Clan Orcs into a decade of peace and prosperity. The Neutral Zone between the Southern Territories and Clan Orc Lands was respected by both parties, due to the strict punishment Minsc's Berserkers applied to transgressors, regardless of their origin.
 Trade became frequent between north and south through the Hornswamp passage, the orcs providing their excellent battle axes, the delicate Moose meat for the tables of the rich - and the miniature hamsters, that were on the wish-list of every child of the Realms in no time.~
@@ -1361,7 +1361,7 @@ As you finally reach your destination, you are vividly remembering the day when 
 @748 =~...violet between red and yellow, consequently you go here...~
 @749 =~...south of all others...~
 @750 =~...only one place left for you, little jewel.~
-@751 =~The ghost should now be satisfied to open the passage.~
+@751 = ~The ghost should now be satisfied to open the passage.~
 @752 = ~Fishing for Trouble: Cerendor Hold 
  
 We successfully cleared out Cerendor Hold and have hopefully dealt a heavy blow to Homen Odesseiron's ambitions on the Sword Coast. We also captured a Red Wizard who gave us some very interesting information; he confirmed that the caravan is only one day ahead and moving very slowly. We may yet catch it if we hurry.~
@@ -1468,7 +1468,7 @@ One thing however is missing - there is neither a word nor a kiss from your love
 
 When you awake, you are alone in your bedroll. During the day there is no sign from Jen'lig to what has happened between you.
 Only once she briefly remarks - *Was well to choose commander for lust. Jen'lig feels better for things to come. May do again if commander liked as well.* - She does not wait for your response...~
-@835 =~ Davaeorn
+@835 =~Davaeorn
 Our encounter with the stranded githyanki seems to have some unwanted consequences. When we resurrected Tazok he reported the presence of another of those beasts hunting for the sword we took before we killed him. The hunter had already killed the sergeant and Tazok. I sent warning to Jardak and the high sorcerer as well about this.
 Sunin ~
 @836= ~Partiglerios~
