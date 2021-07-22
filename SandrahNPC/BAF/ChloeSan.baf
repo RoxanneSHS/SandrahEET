@@ -82,6 +82,8 @@ RealGlobalTimerExpired("SanCloeInterv","LOCALS")
 AreaType(FOREST)
 InParty("RChloe")
 !See([ENEMY])
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck("RChloe",CD_STATE_NOTVALID)
 Delay(18)
 THEN
 RESPONSE #100

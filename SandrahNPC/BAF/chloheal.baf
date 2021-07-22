@@ -47,6 +47,8 @@ AreaType(OUTDOOR)
 !AreaType(CITY)
 !See([ENEMY])
 CombatCounter(0)
+!StateCheck("CVSandr",CD_STATE_NOTVALID)
+!StateCheck("RChloe",CD_STATE_NOTVALID)
 Delay(12)
 THEN
 RESPONSE #100
