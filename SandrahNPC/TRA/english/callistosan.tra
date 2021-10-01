@@ -5,7 +5,7 @@
 @4    = ~So much hatred, it's unbelievable...not even you foresaw this end.~
 @5    = ~Yes and no, my dear. I was afraid that her blind destructive hatred would be her premature end - but I had no idea that you were in its focus.~
 @6    = ~She mentioned my grandmother?? A priestess of Bhaal?? What does that mean...~
-@7    = ~ She mentioned my grandmother?? A priestess of Bhaal?? What does that mean...~
+@7    = ~She mentioned my grandmother?? A priestess of Bhaal?? What does that mean...~
 @8    = ~She also mentioned an elven city to be located around here. I am not sure what any of the two mean...if one were true the other might be as well.~
 @9    = ~As there is no elven city here her hatred against me and my family probably comes from the same distorted imagination.~
 @10   = ~She also mentioned the elven city to be located around here. As the one were true the other might be as well.~
@@ -55,7 +55,7 @@
 @54   = ~Proof enough for me are <CHARNAME>'s deeds alone. And my love for the wonderful person which has come out of such a dark seed.~
 @55   = ~(She gives Callisto a long silent glance.) Whoever intends to harm <CHARNAME> will have to defeat me first.~
 @56   = ~Good.~
-@57   = ~Good you left him to me - yeah! No one deserved my wraith more than this man.~
+@57   = ~Good you left him to me - yeah! No one deserved my wrath more than this man.~
 @58   = ~Definitely.~
 @59   = ~I was afraid you would strike him down with your deadly hammer before I had a chance to finish him off. What grudge have you held against him?~
 @60   = ~I have never met him before.~
@@ -66,7 +66,7 @@
 @65   = ~Do you want me to revive and restore them for you, Callisto?~
 @66   = ~HaH!! And we can punish them once again...Wait - are you mocking me? ~
 @67   = ~Not at all. They have surely deserved it and even without your story about their deed I have heard with my own ears their pitiless testimony. They do not deserve my pity - but you do.~
-@68   = ~So why would you revive them for my repeated wraith?~
+@68   = ~So why would you revive them for my repeated wrath?~
 @69   = ~I am a healer, I search for a way to cure you before your hatred endangers yourself and the ones I care for.~
 @70   = ~But you have witnessed that those bastard deserved the revenge I brought onto them. You used your own hammer against them without hesitation.~
 @71   = ~I have prevented their further deeds in the same vein as what they have done in the past.~
