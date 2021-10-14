@@ -114,3 +114,13 @@ SetGlobal("NoPaint","CVDre1",1)
 AmbientActivate("Painting",FALSE)
 END
 
+IF
+GlobalGT("Mothdream1","GLOBAL",3)
+PartyHasItem("Sanport")
+InMyArea("CVSandr")
+THEN
+RESPONSE #100
+ActionOverride("CVSandr",TakePartyItem("Sanport"))
+ActionOverride("CVSandr",DestroyItem("Sanport"))
+END
+
