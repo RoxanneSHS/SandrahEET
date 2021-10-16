@@ -111,6 +111,8 @@ COPY ~SandrahNPC/Shauhana/trollhe.cre~ ~override/trollhe.cre~
 APPEND
 ~gtimes.ids~ ~100 TWENTY_MINUTES~
 
+ADD_AREA_TYPE IWDAREA
+
 
 PRINT @1012
   
