@@ -43,6 +43,6 @@ THEN
 RESPONSE #100
 SetGlobal("SanIWDIronSearch","Global",7)
 CreateCreature("travmag",[711.1913],5)
-CreateCreature("uhl8009b",[711.1943],7)
-CreateCreature("uhl8009b",[711.1883],9)
+CreateCreature("uhlk8009",[711.1943],7)
+CreateCreature("uhlk8009",[711.1883],9)
 END

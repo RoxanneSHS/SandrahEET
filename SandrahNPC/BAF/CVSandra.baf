@@ -1512,6 +1512,7 @@ OR(2)
 Global("KnoAjFem","GLOBAL",3)
 Global("KnoAjMale","GLOBAL",3)
 !AreaCheck("bg2300")
+!AreaType(IWDAREA)
 CombatCounter(0)
 Delay(18)
 THEN
@@ -2257,6 +2258,7 @@ IF
 Global("NarQMessApp","GLOBAL",1)
 !AreaType(DUNGEON)
 InParty("CVSandr")
+!AreaType(IWDAREA)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 Global("NarQMessApp","GLOBAL",1)
 Global("NarQMessCre","LOCALS",0)
@@ -2270,6 +2272,7 @@ IF
 Global("NarQMessApp","GLOBAL",2)
 RealGlobalTimerExpired("NarqMesRemTTime","GLOBAL")
 InParty("CVSandr")
+!AreaType(IWDAREA)
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 Global("SanNarQ","GLOBAL",0)
 Global("ElminGaveNarQ","GLOBAL",0)
@@ -2281,6 +2284,7 @@ END
 IF
 Global("NarQMessApp","GLOBAL",4)
 InParty("CVSandr")
+!AreaType(IWDAREA)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("NarQMesReAp","LOCALS",0)
 THEN
@@ -2293,6 +2297,7 @@ IF
 Global("NarQMessApp","GLOBAL",5)
 RealGlobalTimerExpired("NarqMesRemTTime","GLOBAL")
 InParty("CVSandr")
+!AreaType(IWDAREA)
 !StateCheck(Player1,CD_STATE_NOTVALID)
 Global("ElminGaveNarQ","GLOBAL",0)
 THEN
@@ -2914,6 +2919,7 @@ OR(2)
 Global("X#XQFriendlyArmsMoved","GLOBAL",3)
 Global("X#XQXanrewarded","GLOBAL",2)
 AreaType(CITY)
+!AreaType(IWDAREA)
 THEN
 RESPONSE #100
 CreateCreatureObjectOffset("sanboy1",Myself,[75.75]) 
@@ -3469,6 +3475,7 @@ Global("SanImoNashRaid","GLOBAL",0)
 CombatCounter(0)
 !See([ENEMY])
 AreaType(OUTDOOR)
+!AreaType(IWDAREA)
 THEN
 RESPONSE #100
 SetGlobal("SanImoNashRaid","GLOBAL",1)
@@ -3525,7 +3532,8 @@ RealGlobalTimerExpired("SanOrkWitnA","LOCALS")
 Global("SanOrkWitn","LOCALS",1)
 AreaType(OUTDOOR)
 CombatCounter(0)
-!AreaType(CITY)                               
+!AreaType(CITY) 
+!AreaType(IWDAREA)                              
 !See([ENEMY])
 THEN
 RESPONSE #100
@@ -4070,6 +4078,7 @@ PartyHasItem("Misc13L")
 PartyHasItem("Misc13")
 !AreaCheck("BG5500")
 !AreaCheck("bg2300")
+!AreaType(IWDAREA)
 Delay(8)
 THEN
 RESPONSE #100
@@ -5742,6 +5751,7 @@ Global("SanSharInt","GLOBAL",27)
 !See([ENEMY])
 CombatCounter(0)
 !AreaType(DUNGEON)
+!AreaType(IWDAREA)
 !Global("Chapter","Global",17)
 InParty("CVSandr")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
@@ -5938,6 +5948,7 @@ Global("Kivshil","GLOBAL",6)
 RealGlobalTimerExpired("KivshilT","GLOBAL")
 Global("Kivkill","GLOBAL",0)
 AreaType(Forest)
+!AreaType(IWDAREA)
 InParty("Kivan")
 !StateCheck("CVSandr",CD_STATE_NOTVALID)
 !StateCheck("Kivan",CD_STATE_NOTVALID)
@@ -6636,6 +6647,7 @@ AreaType(OUTDOOR)
 !AreaType(CITY)
 !AreaCheck("CVROA1")
 !AreaCheck("CVDre1")
+!AreaType(IWDAREA)
 PartyHasItem("SuSaBo")
 Global("SanSuBH","GLOBAL",0)
 !See([ENEMY])
@@ -6670,6 +6682,7 @@ IF
 Global("SanSuBH","GLOBAL",5)
 RealGlobalTimerExpired("BloomwT","GLOBAL")
 AreaType(OUTDOOR)
+!AreaType(IWDAREA)
 PartyHasItem("SuSaBo")
 THEN
 RESPONSE #100
@@ -6820,6 +6833,7 @@ IF
 GlobalGT("SanSuBH","GLOBAL",18)
 RealGlobalTimerExpired("BloomwT","GLOBAL")
 AreaType(OUTDOOR)
+!AreaType(IWDAREA)
 PartyHasItem("SuSaBo")
 !AreaCheck("BG1000")
 !AreaCheck("BG1008")
@@ -7049,6 +7063,7 @@ END
 
 IF
 Global("SanKahrk","GLOBAL",3)
+!AreaType(IWDAREA)
 Delay(6)
 THEN
 RESPONSE #100
@@ -7083,6 +7098,7 @@ Global("ValiantKN","GLOBAL",3)
 OR(2)
 AreaType(OUTDOOR)
 AreaType(DUNGEON)
+!AreaType(IWDAREA)
 !AreaCheck("CVDre1")
 THEN
 RESPONSE #100
@@ -7092,6 +7108,7 @@ END
 
 IF
 Global("ValiantKN","GLOBAL",5)
+!AreaType(IWDAREA)
 THEN
 RESPONSE #100
 SetGlobal("ValiantKN","GLOBAL",6)
@@ -7151,6 +7168,7 @@ OR(2)
 AreaType(OUTDOOR)
 AreaType(DUNGEON)
 !AreaCheck("CVDre1")
+!AreaType(IWDAREA)
 THEN
 RESPONSE #100
 SetGlobal("ValiantKN","GLOBAL",9)
@@ -8256,6 +8274,7 @@ IF
 RealGlobalTimerExpired("WiItemR","GLOBAL")
 Global("WinskApp1","GLOBAL",0)
 AreaType(OUTDOOR)
+!AreaType(IWDAREA)
 InParty("CVSandr")
 !StateCheck(Myself,CD_STATE_NOTVALID)
 InMyArea(Player1)
@@ -8312,6 +8331,7 @@ Global("SanOrDiId","GLOBAL",4)
 RealGlobalTimerExpired("WiItemR","GLOBAL")
 GlobalGT("Chapter","GLOBAL",4)
 AreaType(OUTDOOR)
+!AreaType(IWDAREA)
 !AreaCheck("BG1800")
 !AreaCheck("BG6001")
 !AreaCheck("BG6000")
