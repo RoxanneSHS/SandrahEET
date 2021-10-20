@@ -1,0 +1,16 @@
+IF
+OR(2)
+PartyHasItem("Helmded")
+PartyHasItem("Beltsto")
+!Global("YXUN_ATTACK","MYAREA",0)
+!Dead("Yxunomei")
+Global("XuNotDead","id4005",0)
+!PartyHasItem("Heartgm")
+THEN
+RESPONSE #100
+SetGlobal("YXUN_ATTACK","MYAREA",0)
+SetGlobal("XuNotDead","id4005",1)
+CreateCreature("yxungirl",[3247.532],SW)
+ActionOverride("yxungirl",SetDialog("dyxun"))
+ActionOverride("yxungirl",ChangeAIScript("D5YXung",GENERAL))
+END

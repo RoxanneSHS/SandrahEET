@@ -8542,6 +8542,8 @@ EXTEND_BOTTOM
 EXTEND_TOP
 ~id4004.BCS~ ~SandrahNPC/IWD/id4004brage.baf~
 EXTEND_TOP
+~id4005.BCS~ ~SandrahNPC/IWD/id4005reset.baf~
+EXTEND_TOP
 ~id7003.BCS~ ~SandrahNPC/IWD/id7003koveras.baf~
 EXTEND_TOP
 ~id9100.BCS~ ~SandrahNPC/IWD/id9100reset.baf~
@@ -8566,6 +8568,8 @@ SAY NAME2 @1041
 COPY_EXISTING ~Belhif.cre~ ~override~
 SAY NAME1 @1097
 SAY NAME2 @1097
+COPY_EXISTING ~yxungirl.cre~ ~override~
+WRITE_ASCII 0x280 ~yxungirl~
 COPY_EXISTING ~kaoroge.cre~ ~override~
 WRITE_ASCII 0x280 ~kaoroge~
 COPY_EXISTING ~drowspe.cre~ ~override~
