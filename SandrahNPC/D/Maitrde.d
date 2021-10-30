@@ -84,7 +84,7 @@ IF ~Global("Maitre1","GLOBAL",2)~THEN  maitrde WDresto5
 ==BNeera_ IF~InParty("Neera")~THEN @55
 == BSandr @56
 END
-++ @57DO ~SetGlobal("Katcut","GLOBAL",6) SetGlobal("Maitre1","GLOBAL",3) StartMovie("DAYNITE")~
+++ @57DO ~SetGlobal("Katcut","GLOBAL",6) SetGlobal("Maitre1","GLOBAL",3) StartMovie("DAYNITE_")~
 EXIT
 
 CHAIN
