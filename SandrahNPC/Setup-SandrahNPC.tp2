@@ -4265,8 +4265,8 @@ COPY_EXISTING ~Raiken.cre~ ~override/Raiken.cre~
               WRITE_ASCII 0x34 ~Tevens~
 COPY_EXISTING ~chalcy01.cre~ ~override~
               WRITE_ASCII 0x34 ~cyrics~
-COPY_EXISTING ~BlackL.cre~ ~override/BlackL.cre~
-              WRITE_ASCII 0x34 ~TSBlackL~
+COPY_EXISTING ~BlackL.cre~ ~override~
+              WRITE_ASCII 0x34 ~BlackL~ #8
               WRITE_ASCII 0x280 ~BlackL~
 COPY_EXISTING ~Teven.cre~ ~override/Teven.cre~
               WRITE_ASCII 0x34 ~Tevens~
@@ -6514,6 +6514,7 @@ END ELSE BEGIN
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~TS5Bad.dlg~ THEN BEGIN
+COPY_EXISTING ~Blackl.bmp~ ~override/tsblackl.bmp~
 COMPILE ~SandrahNPC/Mods/ThiefstrongSan.d~
 EXTEND_TOP
 ~TSSpy2.bcs~ ~SandrahNPC/Mods/TSSpy2extend.baf~
