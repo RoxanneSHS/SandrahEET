@@ -32,6 +32,7 @@ THEN
 RESPONSE #100
 SetGlobal("SanIWDIronSearch","Global",5)
 CreateCreature("Slythe",[630.1841],5)
+ActionOverride("Slythe",SetNumTimesTalkedTo(2))
 CreateCreature("Krysti",[645.1894],5)
 CreateCreature("Brunos",[662.1943],5)
 ActionOverride("Krystin",DestroyItem("mage01"))
