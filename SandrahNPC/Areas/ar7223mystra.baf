@@ -1,28 +1,4 @@
 IF
-Global("SanEndBG1Plot","GLOBAL",2)
-InParty("CVSandr")
-CombatCounter(0)
-THEN
-RESPONSE #100
-CreateCreature("SanMyst",[4586.1026],8)
-CreateCreature("CVDYPROT",[4546.1006],8)
-CreateCreature("solar",[4506.1066],8)
-CreateCreature("CVasstem",[4626.1106],8)
-SetGlobal("SanEndBG1Plot","GLOBAL",3)
-END
-
-IF
-Global("SanEndBG1Plot","GLOBAL",4)
-THEN
-RESPONSE #100
-ActionOverride("SanMyst",ReallyForceSpell(Myself,DRYAD_TELEPORT))
-ActionOverride("CVDYPROT",ReallyForceSpell(Myself,DRYAD_TELEPORT))
-ActionOverride("solar",ReallyForceSpell(Myself,DRYAD_TELEPORT))
-ActionOverride("CVasstem",ReallyForceSpell(Myself,DRYAD_TELEPORT))
-SetGlobal("SanEndBG1Plot","GLOBAL",5)
-END
-
-IF
 Global("SanHaerRel1","GLOBAL",32)
 Global("HaerResc","bg0123",0)
 THEN
@@ -44,9 +20,3 @@ THEN
 RESPONSE #100
 SetGlobal("JenEBHide","bg0123",1)
 END
-
-
-
-
-
-
