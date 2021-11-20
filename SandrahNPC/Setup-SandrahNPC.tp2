@@ -8549,6 +8549,8 @@ EXTEND_TOP
 EXTEND_TOP
 ~id9100.BCS~ ~SandrahNPC/IWD/id9100reset.baf~
 EXTEND_TOP
+~id9712.BCS~ ~SandrahNPC/IWD/id9712book.baf~
+EXTEND_TOP
 ~lwhjolo.BCS~ ~SandrahNPC/IWD/lwhjolo.baf~
 COPY ~SandrahNPC\IWD/CViwdguy.cre~ ~override~
 SAY NAME1 @1096

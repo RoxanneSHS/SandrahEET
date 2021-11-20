@@ -1,0 +1,7 @@
+IF
+GlobalLT("Chapter","Global",6)
+Contains("Book68","Container 4")
+THEN
+RESPONSE #100
+ActionOverride("Container 4",DestroyItem("Book68"))
+END
