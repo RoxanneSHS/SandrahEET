@@ -77,22 +77,22 @@
 @92=~All eligible spellcasters in Throne of Bhaal get HLAs; only selected casters in Shadows of Amn do~
 @93=~All eligible spellcasters in Throne of Bhaal and Shadows of Amn get HLAs (very challenging and not really recommended!)~
 
-@100=~Telekinesis~
-@101=~Paralysation eyestalk destroyed~
-@102=~Fear eyestalk destroyed~
-@103=~Domination eyestalk destroyed~
-@104=~Wounding eyestalk destroyed~
-@105=~Charm eyestalk destroyed~
-@106=~Petrification eyestalk destroyed~
-@107=~Death-ray eyestalk destroyed~
-@108=~Slowing eyestalk destroyed~
-@109=~Telekinesis eyestalk destroyed~
-@110=~Central eye damaged~
-@111=~Lightning eyestalk destroyed~
-@112=~Burning eyestalk destroyed~
-@113=~Freezing eyestalk destroyed~
-@114=~Magic-Missile eyestalk destroyed~
-@115=~Enervation eyestalk destroyed~
+@100=~Телекинез~
+@101=~Парализующий стеблеглаз уничтожен~
+@102=~Устрашающий стеблеглаз уничтожен~
+@103=~Подчиняющий стеблеглаз уничтожен~
+@104=~Ранящий стеблеглаз уничтожен~
+@105=~Очаровывающий стеблеглаз уничтожен~
+@106=~Окаменяющий стеблеглаз уничтожен~
+@107=~Смертельный стеблеглаз уничтожен~
+@108=~Замедляющий стеблеглаз уничтожен~
+@109=~Телекинетический стеблеглаз уничтожен~
+@110=~Центральный глаз поврежден~
+@111=~Молниевый стеблеглаз уничтожен~
+@112=~Обжигающий стеблеглаз уничтожен~
+@113=~Замораживающий стеблеглаз уничтожен~
+@114=~Стреляющий снарядами стеблеглаз уничтожен~
+@115=~Ослабляющий стеблеглаз уничтожен~
 @151=~Smarter githyanki~
 @152=~Improved minor encounters [almost no content yet]~
 @153=~No need to upgrade the beholders' hive, Quest Pack has already done it~
@@ -147,423 +147,398 @@
 
 The spell actually affects a region a few feet across; this allows the caster to target it on invisible creatures. However, since the creature may move before the spell is completed, the caster must take great care not to waste the spell.~
 @202=~Casting Time: ~
-@203=~Iron Skins, ~
-@204=~, and Iron Skins.~
-@205=~reduces the target to 1 hit point~
-@206=~inflicts 150 hit points of damage on the target~
+@203=~«Железная кожа», ~
+@204=~, и «Железную кожу».~
+@205=~уменьшает пункты здоровья цели до 1~
+@206=~наносит цели 150 пунктов урона~
 @207=~
+Это ~
+@208=~ вариант заклинания.~
+@209=~за уровень заклинателя (до максимума в 12d6)~
+@210=~за уровень заклинателя~
+@211=~Это заклинание также разрушает антимагическую оболочку, которую создает свиток защиты от магии.~
+@212=~развеется через 10 ходов.~
+@213=~развеется через 10 ходов. До этого лишь крайне могущественная магия (такая как «Удар по заклинаниям») может разрушить заклинание.~
+@214=~, дарует невидимость~
+@215=~Невидимость~
+@216=~Слово силы, Ослепить
+(Подчинение/призывание)
 
-This is the ~
-@208=~ version of the spell.~
-@209=~per level of the caster (to a maximum of 12d6)~
-@210=~per level of the caster~
-@211=~This spell will also destroy the anti-magic sphere created by a Protection from Magic scroll.~
-@212=~will wear off within 10 turns.~
-@213=~will wear off within 10 turns. Until then, only extremely powerful magics (such as the Spellstrike spell) can destroy it.~
-@214=~, grants Invisibility~
-@215=~Invisibility~
-@216=~Power Word, Blind (conjuration/summoning) 
-Level: 8
-Range: Visual sight of caster 
-Duration: 6 rounds
-Casting Time: 1 
-Area of Effect: 1 creature
-Saving Throw: None
+Уровень: 8
+Дистанция: поле зрения заклинателя
+Длительность: 6 раундов
+Время чтения: 1
+Зона действия: 1 существо
+Спасбросок: нет
 
-When a Power Word, Blind spell is cast, the target creature becomes sightless. This lasts for 6 rounds or until dispelled. All of the effects of blindness apply to the victim, such as a penalty to hit and to AC. The visibility range of the afflicted character is also decreased.~
-@217=~An invisible wall of force has blocked the doorway.~
+После произнесения «Слова силы, Ослепить» жертва перестает видеть. Оно продолжается 6 раундов или до развеивания. Жертвы подвержены всем негативным эффектам слепоты, в том числе штрафам к атаке и классу защиты. Также уменьшается зона видимости поражённого персонажа.~
+@217=~Невидимая стена заблокировала дверной проем.~
 @218=~Give dragons more staying power by increasing their hit points~
 @219=~You can't install this component AFTER "Retrieve dropped items from Hell" - if you want both components installed, you need to uninstall "Retrieve dropped items from Hell", then install this component, then reinstall "retrieve dropped items from Hell"~
 @220=~Prevent Simulacra and Projected Images from using magical items~
 @221=~Grant large, flying, non-solid or similar creatures protection from Web and Entangle~
 
-@300=~Psionic Disjunction~
-@301=~Planar Travel~
-@302=~Split Mind~
-@303=~Mind Blast~
+@300=~Псионическое разделение~
+@301=~Планарное путешествие~
+@302=~Раскол разума~
+@303=~Взрыв разума~
 
-@401 = ~The most common version of the battle axe is a stout pole about four feet in length with a single-edged, trumpet-shaped blade mounted on one end. Battle axes are also called broad axes.
+@401 = ~Самым распространенным вариантом боевого топора является трапециевидное лезвие, заточенное с одной стороны, сидящее на крепком древке около четырех футов длиной. Боевые топоры также называют широкими топорами.
 
-This particular battle axe is unusually finely made, with a perfectly balanced blade sharpened to razor thickness. Though not magical, it will strike more truly and cut more deeply than a lesser axe.
+Этот боевой топор изготовлен необычайно качественно, его идеально сбалансированное лезвие режет, как остро заточенная бритва. Хоть на него не наложены никакие чары, он режет глубже и попадает точнее обычного топора.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Damage:  1D8 + 1
-THAC0: + 1 bonus
-Damage type:  slashing
-Weight: 7
-Speed Factor: 7
-Proficiency Type: Axe
-Type:  1-handed
-Requires: 10 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Thief
- Monk
- Beast Master~
+THAC0: +1 улучшение
+Урон: 1d8 +1
+Тип урона: рубящий
+Фактор скорости: 7
+Оружейный навык: топор
+Тип: одноручное
+Вес: 7
+Требования: сила 10
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Священник
+ Хозяин зверей~
+@402 = ~Отличный боевой топор~
+@403 = ~Моргенштерн представляет собой деревянную рукоять, увенчанную металлическим навершием с шипами. Общая длина оружия примерно четыре фута. Навершие может быть круглым, овальным или цилиндрическим. Вне зависимости от формы навершия, оно, как правило, увенчивается длинным шипом, предназначенным для нанесения колющих ударов.
 
-@402 = ~Excellent Battle Axe~
+В создание этого моргенштерна было вложенно особенно много труда. Он не содержит никаких чар, но и без этого представляет из себя отличное, смертельное оружие.
 
-@403 = ~The morning star is a wooden shaft topped with a metal head made up of a spiked iron sheath. Morning stars have an overall length of about four feet. Some such weapons have a round, oval, or cylindrical shaped head studded with spikes. Extending from most morning star heads, regardless of design, is a long point for thrusting.
+ПАРАМЕТРЫ:
 
-Particular care has gone into the manufacture of this particular morning star. It bears no dweomer, but nevertheless is a fine, deadly weapon.
+THAC0: +1 улучшение
+Урон: 2d4 +1
+Тип урона: дробящий
+Фактор скорости: 7
+Оружейный навык: цеп/моргенштерн
+Тип: одноручное
+Вес: 12
+Требования: сила 11
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Хозяин зверей~
+@404 = ~Отличный моргенштерн~
+@405 = ~Длинный лук похож на короткий лук за исключением того, что его длина примерно равна росту лучника, обычно от шести до шести с половиной футов. Длинные луки обладают большей точностью при стрельбе по сравнению с короткими луками, но имеют более медленный фактор скорости.
 
-STATISTICS:
+В создание этого лука было вложенно особенно много труда, и даже незачарованный он точнее и сильнее обычного длинного лука.
 
-Damage:  2D4+1
-THAC0: + 1 bonus
-Damage type:  crushing
-Weight: 12
-Speed Factor: 7
-Proficiency Type: Flail/Morningstar
-Type:  1-handed
-Requires: 11 Strength
-Not Usable By:
- Druid
- Mage 
- Thief
- Monk
- Beast Master~
+ПАРАМЕТРЫ:
 
-@404 = ~Excellent Morning Star~
+THAC0: +2 улучшение
+Фактор скорости: 7
+Оружейный навык: длинный лук
+Тип: двуручное
+Вес: 3
+Требования: сила 6
+Не могут использовать:
+ Вор
+ Друид
+ Кенсай
+ Маг
+ Монах
+ Рыцарь
+ Священник~
+@406 = ~Отличный длинный лук~
+@407 = ~Короткие луки появились первыми, хотя их раньше так и не называли. В настоящее время это общий термин для тех луков, которые не подходят под определение длинного лука. В среднем длина древка короткого лука около пяти футов. Со временем были предприняты попытки увеличить точность стрельбы луков. Это достигалось либо за счет увеличения длины древка, либо за счет повышения гибкости. Первый путь привел к появлению длинного лука.
 
-@405 = ~The long bow is similar to the short bow, except that the staff is about as high as the archer is, usually 6 to 6.5 feet. It has two advantages over the short bow: better range and hence much more accuracy.
+Этот лук изготовлен из необычного дерева, растущего в южных странах. Этот материал очень ценится изготовителями луков: короткие луки из этого дерева по точности сравнимы с длинными луками и несколько превосходят их в силе.
 
-This particular bow has been made with unusual care, and is even more accurate and powerful than a normal longbow even though it is unenchanted.
+ПАРАМЕТРЫ:
 
-STATISTICS:
+THAC0: +1 улучшение
+Фактор скорости: 6
+Оружейный навык: короткий лук
+Тип: двуручное
+Вес: 2
+Требования: сила 3
+Не могут использовать:
+ Друид
+ Кенсай
+ Маг
+ Монах
+ Рыцарь
+ Священник~
+@408 = ~Отличный короткий лук~
+@409 = ~У типичного кинжала обычно обоюдоострое лезвие с заточенным концом в отличие от ножа, который имеет одностороннюю заточку и несколько короче.
 
-Damage: +1
-THAC0: +2
-Weight: 3
-Speed Factor: 7
-Proficiency Type: Long Bow
-Type:  2-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Thief
- Monk
- Kensai
- Cavalier~
+Этот кинжал выкован мастером-кузнецом. Даже без зачарования это прекрасное и смертельное оружие, благодаря идеальному балансу и острой заточке.
 
-@406 = ~Excellent Long Bow~
+ПАРАМЕТРЫ:
 
-@407 = ~Short bows were the first to be developed, although they were not called such.  This is more of a default term that refers to anything which is not a long bow.  Short bow staves are about 5 feet long on the average.  As the years passed, attempts were made to increase bow ranges.  Bows were either given longer staves or flexibility was increased with no change to the length.  The former resulted in what is now called the long bow.
+THAC0: +1 улучшение
+Урон: 1d4 +1
+Тип урона: колющий
+Фактор скорости: 2
+Оружейный навык: кинжал
+Тип: одноручное
+Вес: 1
+Требования: сила 3
+Не могут использовать:
+ Священник
+ Хозяин зверей~
+@410 = ~Отличный кинжал~
+@411 = ~Один из самых древних и широко распространенных видов древкового оружия, алебарда, состоит из клинка, похожего на зауженное лезвие топора, и древка длиной примерно в шесть футов. Ударная часть сзади уравновешивается шипом и увенчана острой пикой, как правило, четырехугольного сечения. Иногда вместо пики используется крюк, применяемый для стаскивания всадников с лошадей. Можно сказать, что алебарда - это нечто среднее между копьем и топором.
 
-This particular bow is made from an unusual wood from southern lands, much sought by bowyers: despite its small size, it is as accurate as a longbow and slightly more powerful.
+Эта алебарда сделана с необычайным старанием: рукоять покрыта резьбой, а лезвие начищено до зеркального блеска, и вряд ли можно изготовить лучшее оружие, не используя чары.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-THAC0:  +1
-Damage:  +1
-Weight: 2
-Speed Factor: 6
-Proficiency Type: Short Bow
-Type:  2-handed
-Requires: 3 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Monk
- Kensai
- Cavalier~
-
-@408 = ~Excellent Short Bow~
-
-@409 = ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.
-
-This dagger is the work of a master craftsman. Though not enchanted, its perfect balance and razor edge make it a beautiful and deadly weapon.
-
-STATISTICS:
-
-Damage:  1D4+1
-THAC0 : +1 
-Damage type:  piercing
-Weight: 1
-Speed Factor: 2 
-Proficiency Type: Dagger
-Type:  1-handed
-Requires:  3 Strength
-Not Usable By:
- Cleric
- Beast Master~
-
-@410 = ~Excellent Dagger~
-
-@411 = ~By far the oldest and most often used pole-arm, the halberd consists of a cleaver-like axe blade mounted on a staff averaging six feet in length.  The axe blade is balanced at the rear with a fluke, and surmounted by a sharp spike, usually of quadrangular design.  The fluke is sometimes replaced by a hook used to dismount cavalry.  A halberd can be best described as a cross between a spear and an axe.
-
-This halberd was made with special care: from the carving on the pole to the mirror brightness of its axe blade, it is as fine a weapon as you could hope to forge without enchantment.
-
-STATISTICS:
-
-Damage:  1D10+1
+Урон: 1d10 +1
 THAC0: +1
-Damage type:  piercing
-Weight: 15
-Speed Factor: 9
-Proficiency Type: Halberd
-Type:  2-handed
-Requires: 13 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Thief
- Monk
- Beast Master~
+Тип урона: колющий
+Фактор скорости: 9
+Оружейный навык: алебарда
+Тип: двуручное
+Вес: 15
+Требования: сила 13
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Священник
+ Хозяин зверей~
+@412 = ~Отличная алебарда~
+@413 = ~Конным рыцарям, сидя в седле, довольно сложно было управляться с оружием на длинной рукояти, и в результате многие виды оружия были оснащены коротким древком, чтобы его можно было держать одной рукой. Первыми примерами стали цепы и булавы, за ними последовали и молоты. Боевой молот конника, является потомком люцернского молота. Он цельнометаллический и оснащен ронделями, которые защищают руку и укрепляют захват. (Рондели - небольшие металлические диски, зачастую имеющие декоративное оформление.) Длина рукояти составляет восемнадцать дюймов.
 
-@412 = ~Excellent Halberd~
+Этот боевой молот очень качественный. Его навершие сбалансировано так, чтобы вес и сила владельца полностью переносились на цель, поэтому этим молотом можно наносить более точные удары, не жертвуя их силой.
 
-@413 = ~Mounted knights cannot effectively use long pole weapons while on horseback, and as a result, many weapons have been fitted with shorter shafts so they may be wielded with just one hand.  Maces and flails are two previous examples of this - the war hammer is another.  The horseman's war hammer is the descendent of the Lucerne hammer.  It is made entirely of steel, with rondels protecting and strengthening the grip.  Rondels are small disks of metal, often shaped into decorative designs.  The shaft is about 18 inches long.
+ПАРАМЕТРЫ:
 
-This is a particularly fine war hammer. Its head is balanced perfectly so that the wielders weight and strength are concentrated on the target and so that it can be swung accurately without compromising the force of a blow.
+THAC0: +1 улучшение
+Урон: 1d4 +2
+Тип урона: дробящий
+Фактор скорости: 4
+Оружейный навык: боевой молот
+Тип: одноручное
+Вес: 6
+Требования: сила 9
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Хозяин зверей~
+@414 = ~Отличный боевой молот~
+@415 = ~Простейшее и скромнейшее из шестообразного оружия, боевой посох - это деревянная палка длиной от шести до девяти футов. Боевые посохи высокого качества делаются из крепкого дуба и оковываются металлом с обоих концов. Для того чтобы владеть боевым посохом, требуются обе руки.
 
-STATISTICS:
+Этот боевой посох сделан из особенно крепкого дерева, тщательно обработанного и усиленного стальными кольцами. При всей его простоте, это крайне мощное оружие.
 
-Damage:  1D4 + 2
-THAC0: +1
-Damage type:  crushing
-Weight: 6
-Speed Factor: 4
-Proficiency Type: War Hammer
-Type:  1-handed
-Requires: 9 Strength
-Not Usable By:
- Druid
- Mage 
- Thief
- Monk
- Beast Master~
+ПАРАМЕТРЫ:
 
-@414 = ~Excellent War Hammer~
+THAC0: +1 улучшение
+Урон: 1d6 +1
+Тип урона: дробящий
+Фактор скорости: 4
+Оружейный навык: посох
+Тип: двуручное
+Вес: 4
+Требования: сила 5
+Не могут использовать:
+ Монах~
+@416 = ~Отличный боевой посох~
+@417 = ~Известный так же, как меч-бастард, полуторный меч обязан своим названием тому, что представляет собой нечто среднее между двуручным и длинным мечом. У него обоюдоострый клинок и длинная рукоять, позволяющая при необходимости использовать двуручный хват. Общая длина таких мечей колеблется от четырех футов до четырех футов десяти дюймов.
 
-@415 = ~The simplest and humblest of staff weapons, the quarterstaff is a length of wood ranging six to nine feet in length.  High quality quarterstaves are made of stout oak and are shod with metal at both ends.  The quarterstaff must be wielded with both hands.
+Это качественный, отлично сбалансированный полуторный меч; благодаря мастеру-кузнецу, выковавшему этот клинок, он очень эффективен в бою.
 
-This quarter staff is made from an unusually strong wood, carved with great care and reinforced with steel bands. For all its simplicity, it is a fairly powerful weapon.
+ПАРАМЕТРЫ:
 
-STATISTICS:
+THAC0: +1 улучшение
+Урон: 2d4 +1
+Тип урона: рубящий
+Фактор скорости: 8
+Оружейный навык: полуторный меч
+Тип: одноручное
+Вес: 10
+Требования: сила 11
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Священник
+ Хозяин зверей~
+@418 = ~Отличный полуторный меч~
+@419 = ~Такие мечи иногда называют обоюдоострыми, боевыми или солдатскими мечами. Часто лезвие длинных мечей имеет и одностороннюю заточку. Не существует единого стандарта длинного меча, их форма и длина зависит от места, а в большинстве культур и от эпохи изготовления. Одной из наиболее общих характеристик для таких мечей является их длина, она колеблется от тридцати пяти до сорока семи дюймов. В последнем случае лезвие достигает сорока дюймов от общей длины меча. Наиболее широко распространены мечи, имеющие обоюдоострое лезвие, заточенное к концу. Несмотря на это длинные мечи предназначены для рубящих, а не колющих ударов.
 
-Damage:  1D6+1
-THAC0: +1
-Damage type:  crushing
-Weight: 4
-Speed Factor: 4
-Proficiency Type: Staff
-Type:  2-handed
-Requires: 5 Strength
-Not Usable By:
- Monk~
+Этот длинный меч сделан необычайно качественно. Его баланс почти идеален, а лезвие острое как бритва.
 
-@416 = ~Excellent Quarter Staff~
+ПАРАМЕТРЫ:
 
-@417 = ~Also known as the hand-and-a-half sword, the bastard sword derives its name from the fact that it is halfway between the two-handed sword and the long sword. The bastard sword has a double-edged blade and a long grip, which can accommodate both hands if preferred.  The overall length of the bastard sword ranges between four feet and four feet ten inches.
+THAC0: +1 улучшение
+Урон: 1d8 +1
+Тип урона: рубящий
+Фактор скорости: 5
+Оружейный навык: длинный меч
+Тип: одноручное
+Вес: 4
+Требования: сила 6
+Не могут использовать:
+ Друид
+ Маг
+ Священник
+ Хозяин зверей~
+@420 = ~Отличный длинный меч~
+@421 = ~Короткий меч - самый первый из изобретенных мечей. В простейшей терминологии короткий меч рассматривается как кинжал с настолько длинным лезвием, что его больше нельзя называть кинжалом. В официальной классификации мечей этот термин отсутствует. Однако он широко используется для обозначения обоюдоострых клинков длиной около двух футов. Такие мечи имеют заостренный конец, идеально подходящий для нанесения колющих ударов.
 
-This is a particularly fine, well-balanced bastard sword; its blade, forged by a master smith, will cut deep and accurately.
+Этот короткий меч сделан необычайно качественно. Его баланс почти идеален, а лезвие острое как бритва.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Damage:  2D4+1
-THAC0: +1
-Damage type:  slashing
-Weight: 10
-Speed Factor: 8
-Proficiency Type: Bastard Sword
-Type:  1-handed
-Requires: 11 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Thief
- Monk
- Beast Master~
+THAC0: +1 улучшение
+Урон: 1d6 +1
+Тип урона: колющий
+Фактор скорости: 3
+Оружейный навык: короткий меч
+Тип: одноручное
+Вес: 3
+Требования: сила 5
+Не могут использовать:
+ Друид
+ Маг
+ Священник 
+ Хозяин зверей~
+@422 = ~Отличный короткий меч~
+@423 = ~Будучи одним из древнейших видов оружия, известным еще с первобытных времен, первые копья представляли собой обычные деревянные шесты или палки, заостренные с одного конца. Когда разумные существа научились добывать металлы, наконечники копий начали делать из железа и стали. С тех пор оружейники часто экспериментировали с различными формами наконечников, что привело к появлению других разновидностей древкового оружия.
 
-@418 = ~Excellent Bastard Sword~
+В отличие от большинства копий в широкой продаже, это оружие сделано с небывалым старанием. Его наконечник выкован из высококачественной стали и отлично сбалансирован.
 
-@419 = ~These swords are usually referred to as doubled-edged swords, war swords, or military swords.  In many cases, the long sword has a single-edged blade. There is no single version of the long sword; the design and length vary from culture to culture, and may vary within the same culture depending on the era.  Among the most common characteristics of all long swords is their length, which ranges from 35 inches to 47 inches.  In the latter case, the blade is known to take up 40 inches of the total length.  Most long swords have a double-edged blade and a sharp point at the tip.  Despite the tip, the long sword is designed for slashing, not thrusting.
+ПАРАМЕТРЫ:
 
-This particular longsword is unusually finely made. Its balance is near perfect, and its blade runs to an edge of razor sharpness.
+THAC0: +1 улучшение
+Урон: 1d6 +1
+Тип урона: колющий
+Фактор скорости: 6
+Оружейный навык: копье
+Тип: двуручное
+Вес: 5
+Требования: сила 5
+Не могут использовать:
+ Вор
+ Маг
+ Монах
+ Священник
+ Хозяин зверей~
+@424 = ~Отличное копье~
+@425 = ~Булава - прямой потомок обычной дубины и представляет собой ничто иное, как деревянную рукоять с каменным или железным навершием.
 
-STATISTICS:
+Навершие этой булавы выковано очень качественно и имеет пирамидальную форму, делая ее эффективнее других даже без зачарования.
 
-Damage:  1D8+1
-THAC0: +1
-Damage type:  slashing
-Weight: 4
-Speed Factor: 5
-Proficiency Type: Long Sword
-Type:  1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
+ПАРАМЕТРЫ:
 
-@420 = ~Excellent Long Sword~
+THAC0: +1 улучшение
+Урон: 1d6 +2
+Тип урона: дробящий
+Фактор скорости: 7
+Оружейный навык: булава
+Тип: одноручное
+Вес: 8
+Требования: сила 10
+Не могут использовать:
+ Вор
+ Друид
+ Маг
+ Монах
+ Хозяин зверей~
+@426 = ~Отличная булава~
+@427 = ~Двуручный меч произошел от длинного меча. Мастера-оружейники всегда искали способы улучшить оружие. В случае с длинным мечом была сделана попытка удлинить клинок. Чтобы уравновесить конструкцию, рукоять также пришлось сделать длиннее, и в результате такой меч стало возможно держать только двумя руками. Основные функции двуручных мечей - рубить конных рыцарей и ломать строй копейщиков. 
 
-@421 = ~The short sword is the first type of sword to come into existence.  In the simplest of terms, a short sword can be considered a dagger with a blade so long that it can no longer be called a dagger.  The term short sword does not exist in sword classifications.  However, it has come to be used to describe a double-edged blade about two feet in length.  The sword tip is usually pointed, ideal for thrusting.
+Этот меч, изготовленный из лучшей дварфийской стали, особенно хорош в бою.
 
-This particular short sword is unusually finely made. Its balance is near perfect, and its blade runs to an edge of razor sharpness.
+ПАРАМЕТРЫ:
 
+THAC0: +1 улучшение
+Урон: 1d10 +1
+Тип урона: рубящий
+Фактор скорости: 10
+Оружейный навык: двуручный меч
+Тип: двуручное
+Вес: 12
+Требования: сила 14
+Не могут использовать:
+ Вор
+ Друид
+ Маг 
+ Священник~
+@428 = ~Отличный двуручный меч~
+@429 = ~Скимитар или шамшир, как его изначально называли - это изогнутый меч с односторонней заточкой, который оканчивается вытянутым острием. В результате он несколько проигрывает другим схожим видам оружия в скорости, но зато он эффективнее и смертоноснее в бою.
 
-STATISTICS:
+Это очень качественный клинок, хоть и не зачарованный.
 
-Damage:  1D6 +1
-THAC0: +1
-Damage type:  piercing
-Weight: 3
-Speed Factor: 3
-Proficiency Type: Short Sword
-Type:  1-handed
-Requires: 5 Strength
-Not Usable By:
- Druid
- Cleric 
- Mage
- Beast Master~
+ПАРАМЕТРЫ:
 
-@422 = ~Excellent Short Sword~
+THAC0: +1 улучшение
+Урон: 1d8 +1
+Тип урона: рубящий
+Фактор скорости: 5
+Оружейный навык: скимитар/вакизаши/ниндзято
+Тип: одноручное
+Вес: 3
+Требования: сила 10
+Не могут использовать:
+ Вор
+ Маг
+ Священник~
+@430 = ~Отличный скимитар~
+@431 = ~Композитные луки - это длинные или короткие луки, основания которых сделаны из нескольких материалов. Это придает большую гибкость и позволяет стрелам наносить больший урон. Композитные длинные луки были созданы на основе обычных длинных луков.
 
-@423=~One of man's earliest weapons, dating back to the most primitive of times, the first spears were simply wooden poles or sticks sharpened at one end.  When man mastered metals, spearheads were made from iron and steel.  Having reached this end, weaponers began experimenting with different types of spear heads, thus leading to the development of certain polearm types.
+Этот лук не обладает магическими свойствами, но сделан из лучших материалов руками очень способного мастера.
 
-Most spears are crude, mass-produced weapons, but unusual care has been lavished on this one. The head is made of high-quality steel and the balance is very fine.
+ПАРАМЕТРЫ:
 
-STATISTICS:
+THAC0: +2 улучшение
+Урон: +2
+Фактор скорости: 7
+Оружейный навык: длинный лук
+Тип: двуручное
+Вес: 9
+Требования: сила 18
+Не могут использовать:
+ Бард
+ Вор
+ Друид
+ Маг
+ Священник~
+@432 = ~Отличный композитный лук~
+@433 = ~Цеп - это крепкая деревянная рукоять, соединенная с железным прутом, деревянным шипованным бруском или железным шипованным шаром. Части цепа соединены петлями или цепью.
 
-Damage:  1D6+1
-THAC0: +1
-Damage type:  piercing
-Weight: 5
-Speed Factor: 6
-Proficiency Type: Spear 
-Type:  2-handed
-Requires: 5 Strength
-Not Usable By:
- Cleric
- Mage
- Thief
- Monk
- Beast Master~
+Это оружие сделано из высококачественной стали и тисового дерева; оно легкое, сбалансированное и очень эффективное, несмотря на отсутствие зачарования.
 
-@424=~Excellent Spear~
+ПАРАМЕТРЫ:
 
-@425=~The mace is a direct descendant of the basic club, being nothing more than a wooden shaft with an iron head mounted on the end.  In this case, the head is pyramidal and forged with unusual care, making this mace fairly effective in combat for all that it bears no enchantment.
+THAC0: +1 улучшение
+Урон: 1d6 +2
+Тип урона: дробящий
+Фактор скорости: 7
+Оружейный навык: цеп/моргенштерн
+Тип: одноручное
+Вес: 12
+Требования: сила 13
+Не могут использовать:
+ Вор
+ Друид
+ Маг~
+@434 = ~Отличный цеп~
 
-STATISTICS:
+@501=~Волшебник-раб~
+@502=~Боец-раб~
+@503=~Придите, мои слуги... проснитесь и вкусите свежей крови.~
 
-THAC0:  +1
-Damage:  1D6 + 2
-Damage type:  crushing
-Weight: 8
-Speed Factor: 7
-Proficiency Type: Mace
-Type:  1-handed
-Requires: 10 Strength
-Not Usable By:
- Druid
- Mage
- Thief
- Monk
- Beast Master~
-
-@426=~Excellent Mace~
-
-@427=~The two-handed sword is a derivative of the long sword.  Weaponsmiths have always looked for ways to improve existing weapons.  In an effort to improve the long sword, the blade was lengthened.  Eventually, the handle had to be extended and two hands became necessary to properly swing the sword.  The primary function of two-handed swords is cleaving mounted knights and breaking up pike formations.  This one is particularly good at its job, as it has been crafted of the finest dwarven steel.
-
-STATISTICS:
-
-THAC0:  +1 bonus
-Damage:  1D10 +1
-Damage type:  slashing
-Weight: 12
-Speed Factor: 10
-Proficiency Type: Two Handed sword
-Type:  2-handed
-Requires: 14 Strength
-Not Usable By:
- Druid
- Cleric
- Mage 
- Thief~
-
-@428=~Excellent Two-Handed Sword~
-
-@429=~The scimitar, or "shamshir" as it was originally called, has a single-edged blade with a significant curve, and is tapered to an elongated, sharp point.  It is perhaps slower than other weapons of the same type, though it compensates by the amount of damage it is capable of.  This particular weapon is of unusually fine quality despite its lack of enchantment.
-
-STATISTICS:
-
-THAC0:  +1 bonus
-Damage:  1D8 +1
-Damage type:  slashing
-Weight: 3
-Speed Factor: 5
-Proficiency Type: Scimitar
-Type:  1-handed
-Requires: 10 Strength
-Not Usable By:
- Cleric
- Mage
- Thief~
-
-@430=~Excellent Scimitar~
-
-@431=~Composite bows are long bows or short bows whose staves are made from more than one type of material.  This gives greater flexibility, and thus better range.  These were developed after the normal long bow.  This particular bow, though not magical, has been made with great care from the finest of materials. It requires a strength of 18 to wield.
-
-STATISTICS:
-
-THAC0:  +2 bonus
-Damage:  +1 bonus
-Weight: 9
-Speed Factor: 7
-Proficiency Type: Long Bow
-Type:  2-handed
-Requires: 18 Strength
-Not Usable By:
- Druid
- Cleric
- Mage 
- Thief
- Bard~
-
-@432=~Excellent Composite Bow~
-
-@433=~The flail is a sturdy wooden handle attached to an iron rod, a wooden rod with spikes, or a spiked iron ball. Between the handle and its implement is either a hinge or chain link.  The weapon has been made from fine steel and yew; it is light to use, well-balanced, and very effective despite its lack of enchantment.
-
-STATISTICS:
-
-Damage:  1D6 + 2
-THAC0:  +1
-Damage type:  crushing
-Weight: 12
-Speed Factor: 7
-Proficiency Type: Flail
-Type:  1-handed
-Requires: 13 Strength
-Not Usable By:
- Druid
- Mage
- Thief~
-
-@434=~Excellent Flail~
-
-@501=~Thrall Wizard~
-@502=~Thrall Fighter~
-@503=~Come, my servants... wake and taste fresh blood.~
-
-@601=~Pre-cast mode activated; not drinking healing potions~
-@602=~Pre-cast mode deactivated~
-@603=~Pre-cast mode activated; drinking healing potions~
-@604=~Pre-cast mode activated; drinking extra-healing potions~
+@601=~Режим чтения защитных заклинаний вне боя включен; зелья лечения не используются~
+@602=~Режим чтения защитных заклинаний вне боя выключен~
+@603=~Режим чтения защитных заклинаний вне боя включен; используются зелья лечения~
+@604=~Режим чтения защитных заклинаний вне боя включен; используются зелья улучшенного лечения~
 
 
-@605=~SCS Ease-of-Use AI : ~
+@605=~Удобный ИИ SCS: ~
 @606=~The AI has 5 functions:
 
 1) The character will fight, prioritising opponents who are not immobile and helpless, not fighting if they're trying to Turn Undead, and not wasting Melf's Minute Meteors, Energy Blades or 
@@ -579,78 +554,78 @@ Invisibility. You can shift the character between melee (D) and ranged weapons (
 
 6) The character will cast some spells, by hotkey, on the whole party. This casting is highly accelerated, cannot be done in combat, and only casts on characters who are not already protected. Its main function is for later in the game when you can afford to carry enough spells to protect the whole party. The hot-keys are: C for Chaotic Commands; V for Death Ward; B for Protection from Fire, Protection from Lightning, and Protection from Magic Energy; Z for a paladin's Protection from Evil.~
 
-@607=~No-melee mode activated~
-@608=~No-melee mode deactivated~
+@607=~Режим запрета на оружие ближнего боя включен~
+@608=~Режим запрета на оружие ближнего боя выключен~
 
 
-@700=~Drow Katana +3~
+@700=~Катана дроу +3~
 
-@701=~Katana
-The katana is a single-edged, slightly curved sword that ends with a chisel point. The katana is perhaps one of the finest swords ever made, the steps to its creation a long and secret process, that is more art form than anything else.  This blade is an important facet of Kara-Tur culture, and normally made only by their weaponsmiths; how the drow came to forge this one is beyond you. Like most drow equipment, is created using Adamantine, an alloy of adamantite that quickly turns to dust if removed from the Underdark.
+@701 = ~Катана
+Катана – это слегка изогнутый меч с односторонней заточкой и скошенным острием. Возможно, катана является лучшим из когда-либо существовавших мечей; ее создание – долгий, засекреченный процесс, скорее искусство, чем ремесло. Этот клинок – важный аспект культуры Кара-Тура, и обычно они изготавливаются только оружейниками этой страны. Вы не понимаете, как дроу смогли изготовить такое оружие. Этот предмет, как и большинство снаряжения дроу, создан с использованием адамантина – адамантитового сплава, который быстро превращается в пыль, будучи вынесенным из Андердарка.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Damage:  1D10+3
-THAC0: +3
-Damage type:  slashing
-Weight:  6
-Speed Factor: 1
-Proficiency Type: Katana
-Type:  1-handed
-Requires: 6 Strength
-Not Usable By:
- Druid
- Cleric
- Mage
- Beast Master~
+THAC0: +3 улучшение
+Урон: 1d10 +3
+Тип урона: рубящий
+Фактор скорости: 1
+Оружейный навык: катана
+Тип: одноручное
+Вес: 4
+Требования: сила 6
+Не могут использовать:
+ Друид
+ Священник
+ Маг
+ Хозяин зверей~
 
-@1002=~Quaffs potion of fire resistance~
-@1018=~Quaffs potion of absorption~
-@1008=~Quaffs healing potion~
-@1010=~Quaffs potion of invisibility~
-@1052=~Quaffs extra-healing potion~
-@1055=~Quaffs superior healing potion~
-@1034=~Quaffs potion of magic protection~
-@1035=~Quaffs potion of magic shielding~
-@1045=~Quaffs potion of freedom~
-@1014=~Applies oil of speed~
-@1007=~Quaffs potion of storm giant strength~
-@1006=~Quaffs potion of cloud giant strength~
-@1005=~Quaffs potion of fire giant strength~
-@1004=~Quaffs potion of frost giant strength~
-@1012=~Quaffs potion of stone giant strength~
-@1003=~Quaffs potion of hill giant strength~
-@1041=~Quaffs potion of power~
-@1009=~Quaffs potion of heroism~
-@1011=~Quaffs potion of invulnerability~
-@1024=~Quaffs potion of defense~
-@1028=~Quaffs potion of fortitude~
-@1042=~Quaffs potion of regeneration~
-@1017=~Quaffs elixir of health~
-@1020=~Takes antidote~
-@1021=~Quaffs potion of clarity~
+@1002=~Глотает зелье сопротивления огню~
+@1018=~Глотает зелье поглощения~
+@1008=~Глотает зелье лечения~
+@1010=~Глотает зелье невидимости~
+@1052=~Глотает зелье улучшенного лечения~
+@1055=~Глотает Зелье максимального исцеления~
+@1034=~Глотает зелье магической защиты~
+@1035=~Глотает зелье магического заслона~
+@1045=~Глотает зелье свободы~
+@1014=~Натирается маслом скорости~
+@1007=~Глотает зелье силы штормового великана~
+@1006=~Глотает зелье силы облачного великана~
+@1005=~Глотает зелье силы огненного великана~
+@1004=~Глотает зелье силы морозного великана~
+@1012=~Глотает зелье силы каменного великана~
+@1003=~Глотает зелье силы холмового великана~
+@1041=~Глотает зелье могущества~
+@1009=~Глотает зелье героизма~
+@1011=~Глотает зелье неуязвимости~
+@1024=~Глотает зелье защиты~
+@1028=~Глотает зелье стойкости~
+@1042=~Глотает зелье регенерации~
+@1017=~Глотает эликсир здоровья~
+@1020=~Принимает противоядие~
+@1021=~Глотает зелье ясности~
 
-@1101=~Hmmm... what was that?~
-@1102=~Strange... let's see what a little divination will show.~
-@1103=~Show yourself! You cannot hide from a mage!~
-@1104=~Come out, spy... I can sense your presence~
+@1101=~Хм-м-м... что это было?~
+@1102=~Странно... посмотрим, что может показать небольшое прорицание.~
+@1103=~Покажись! Тебе не скрыться от волшебника!~
+@1104=~Выходи, лазутчик... Я чувствую твое присутствие...~
 
-@1105=~Strange... I can sense something...~
-@1106=~I am a servant of the gods. You cannot hide~
-@1107=~By the power vested in me, I command you to show yourself!~
-@1108=~Strange... let us see what a little divination may reveal...~
+@1105=~Странно... Я что-то чувствую...~
+@1106=~Я служу богам. Тебе не скрыться!~
+@1107=~Властью, дарованной мне богами, приказываю тебе – покажись!~
+@1108=~Странно... посмотрим, что покажет небольшое прорицание...~
 
-@1201=~I wish for my enemies' magical defences to be utterly destroyed!~
-@1202=~I wish for myself and my allies to be granted superhuman speed!~
-@1203=~I wish for time itself to become my servant!~
-@1204=~I wish for myself and my allies to become impervious to injury!~
-@1205=~Then I shall sweep them away, my master!~
-@1206=~Then speed you shall have!~
-@1207=~Time is now your ally, my master!~
-@1208=~Then none shall harm you!~
+@1201=~Я хочу, чтобы заклинания, защищающие моих врагов, были развеяны!~
+@1202=~Я хочу, чтобы вся я и моя группа получили сверхъестественную скорость!~
+@1203=~Я хочу, чтобы само время служило мне!~
+@1204=~Я хочу, чтобы меня и членов моей группы нельзя было ранить!~
+@1205=~Будет исполнено! Я уничтожу их!~
+@1206=~Вы получите скорость!~
+@1207=~Будет исполнено! Время теперь - ваш союзник!~
+@1208=~Никто не сможет навредить вам!~
 
 
-@1301=~Your threat is illogical and ultimately pointless. Did you pay 15000 only to turn tail now? I doubt it very much.~
+@1301=~Твои угрозы нелогичны и совершенно бессмысленны. Заплатить 15000 только чтобы сбежать? Очень сильно сомневаюсь.~
 @1302=~[For non-substitutable languages: replace "15000" and "20000" in above string with "30000" and "40000"]~
 @1303=~[For non-substitutable languages: replace "15000" and "20000" in above string with "45000" and "60000"]~
 @1304=~[For non-substitutable languages: replace "15000" and "20000" in above string with "60000" and "80000"]~
@@ -658,7 +633,7 @@ Not Usable By:
 @1306=~[For non-substitutable languages: replace "15000" and "20000" in above string with "90000" and "120000"]~
 @1307=~[Set this string to NOT_TRANSLATED if you are using a non-substitutable language and this mod has not been translated into your language]~
 
-@1311=~Ah, so fifteen thousand gold were given to a shadowy organization, because you felt it did not agree with adventuring. Very interesting.~
+@1311=~Ах, так подозрительная организация получила от тебя пятнадцать тысяч золотых, потому что тебе показалось, что они не готовы пойти на риск. Очень интересно.~
 @1312=~[For non-substitutable languages: replace "15000" and "20000" in above string with "30000" and "40000"]~
 @1313=~[For non-substitutable languages: replace "15000" and "20000" in above string with "45000" and "60000"]~
 @1314=~[For non-substitutable languages: replace "15000" and "20000" in above string with "60000" and "80000"]~
@@ -666,7 +641,7 @@ Not Usable By:
 @1316=~[For non-substitutable languages: replace "15000" and "20000" in above string with "90000" and "120000"]~
 @1317=~[Set this string to NOT_TRANSLATED if you are using a non-substitutable language and this mod has not been translated into your language]~
 
-@1321=~Of course, I paid them fifteen thousand gold only to be privileged to do their dirty work! How very insightful of you!~
+@1321=~Конечно, мне нужно было заплатить им пятнадцать тысяч золотых только за то, чтобы делать за них грязную работу! Какая проницательность!~
 @1322=~[For non-substitutable languages: replace "15000" and "20000" in above string with "30000" and "40000"]~
 @1323=~[For non-substitutable languages: replace "15000" and "20000" in above string with "45000" and "60000"]~
 @1324=~[For non-substitutable languages: replace "15000" and "20000" in above string with "60000" and "80000"]~
@@ -674,7 +649,7 @@ Not Usable By:
 @1326=~[For non-substitutable languages: replace "15000" and "20000" in above string with "90000" and "120000"]~
 @1327=~[Set this string to NOT_TRANSLATED if you are using a non-substitutable language and this mod has not been translated into your language]~
 
-@1331=~Oh, I thought you knew. You see, we went to great lengths to get to Spellhold. <CHARNAME> accepted several rather dangerous missions to get the gold necessary to secure our passage. Fifteen thousand gold, I should add - not a sum to be easily discarded, is it?~
+@1331=~О, а мне казалось, ты знаешь. Понимаешь, мы проделали огромный путь, чтобы попасть в Спеллхолд. Ради золота, купившего нам безопасный проход, нам пришлось выполнить несколько довольно опасных поручений. Пятнадцать тысяч золотых, должен сказать, - это не та сумма, с которой можно запросто расстаться, как считаешь?~
 @1332=~[For non-substitutable languages: replace "15000" and "20000" in above string with "30000" and "40000"]~
 @1333=~[For non-substitutable languages: replace "15000" and "20000" in above string with "45000" and "60000"]~
 @1334=~[For non-substitutable languages: replace "15000" and "20000" in above string with "60000" and "80000"]~
@@ -682,7 +657,7 @@ Not Usable By:
 @1336=~[For non-substitutable languages: replace "15000" and "20000" in above string with "90000" and "120000"]~
 @1337=~[Set this string to NOT_TRANSLATED if you are using a non-substitutable language and this mod has not been translated into your language]~
 
-@1341=~... er, fifteen thousand?~
+@1341=~... эм, пятнадцать тысяч?~
 @1342=~[For non-substitutable languages: replace "15000" and "20000" in above string with "30000" and "40000"]~
 @1343=~[For non-substitutable languages: replace "15000" and "20000" in above string with "45000" and "60000"]~
 @1344=~[For non-substitutable languages: replace "15000" and "20000" in above string with "60000" and "80000"]~
@@ -691,206 +666,214 @@ Not Usable By:
 @1347=~[Set this string to NOT_TRANSLATED if you are using a non-substitutable language and this mod has not been translated into your language]~
 
 
-@1400=~Trap set~
+@1400=~Ловушка установлена~
 
-@1500=~Darkling Aura~
-@1501=~Shadow Mantle~
+@1500=~Аура темноты~
+@1501=~Теневая мантия~
 
-@1601=~Fifteen thousand~
-@1602=~Twenty thousand~
+@1601=~Пятнадцать тысяч~
+@1602=~Двадцать тысяч~
 
 @2000=~This component only works on Windows installs and does not work on BG:EE~
 
-@2100=~Banefire~
-@2101=~Fire Resistance Lowered~
-@2102=~Brimstone~
-@2103=~Starfire~
+@2100=~Пламя погибели~
+@2101=~Сопротивление огню снижено~
+@2102=~Сера~
+@2103=~Звездное пламя~
 
-@2200=~Hsss! You shall not leave this place alive, Bhaalspawn. Abazigal commands it!~
-@2201=~Tyrant Golem~
+@2200=~Хс-с-с! Тебе не покинуть это место живым, отродье Баала. Так приказывает Абазигал!~
+@2201=~Голем-созерцатель~
 
-@2300=~This note appears to have been written in blood.
+@2300=~Кажется, эта записка была написана кровью.
 
-"A gift... for after all, it would not do for the game to be too easy."~
+"подарок... в конце концов, игра не может быть слишком простой."~
 
-@2400=~Cloud of Bats~
-@2401=~Elder Vampire~
-@2402=~Ancient Vampire~
+@2400=~Стая летучих мышей~
+@2401=~Старший вампир~
+@2402=~Древний вампир~
 
-@2502 = ~Abyssal Darkness~
-@2503 = ~Buried Alive~
-@2504 = ~Chill of the Grave~
-@2505 = ~Touch of Death~
-@2506 = ~Sepulchral Sleep~
-@2507 = ~Deathly Shroud~
-@2508 = ~Hazarmaveth~
-@2509 = ~Manasseh~
-@2510 = ~Call of the Mistress~
+@2502 = ~Тьма Бездны~
+@2503 = ~Погребение заживо~
+@2504 = ~Могильный холод~
+@2505 = ~Прикосновение смерти~
+@2506 = ~Могильный сон~
+@2507 = ~Саван смерти~
+@2508 = ~Хазармавет~
+@2509 = ~Манассе~
+@2510 = ~Зов госпожи~
 
-@2600=~What sport! The Flail of the Ages in the hands of a mortal once more! Come, brethren, glorious battle awaits us!~
-@2601=~Fellow hunters, we have not travelled in vain - it is indeed the Flail of the Ages.~
-@2602=~Do you imagine they knew what they were doing when they forged it anew?~
-@2603=~It matters not - I have thoughts only for its glorious retrieval!~
-@2604=~Thieves and defilers! You WILL surrender the blade!~
-@2605=~In the name of the lich queen, you will suffer and die for your sacrilege!~
-@2606=~Change of plan, men. This one's too much for us.~
-@2607=~It's <CHARNAME>!~
-@2608=~Let's get out of here!~
-@2609=~Adventurers!~
-@2610=~Run!!~
+@2600=~Как забавно! Цеп Веков снова оказался в руках смертного! Нас ждет славная битва, братья!~
+@2601=~Парни, наша охота была не напрасной - это действительно Цеп Веков.~
+@2602=~Интересно, он хоть знал, что делает, когда выковывал его заново?~
+@2603=~Не важно - меня волнует лишь его успешное возвращение!~
+@2604=~Вор и святотатец! Ты ОТДАШЬ нам клинок!~
+@2605=~Именем королевы-лича, ты умрешь в страданиях за свое кощунство!~
+@2606=~Меняем план, ребята. Для нас это чересчур.~
+@2607=~Это <CHARNAME>!~
+@2608=~Сматываемся отсюда!~
+@2609=~Искатели приключений!~
+@2610=~Бегите!~
 
-@2700=~Trap the Soul~
-@2701=~Seal Portal~
-@2702=~A vast block of stone has slammed down across the exit.~
-@2703=~A vast block of stone has slammed down across the entrance.~
+@2700=~Ловушка душ~
+@2701=~Портал Печати~
+@2702=~Огромные глыбы камней перекрыли выход.~
+@2703=~Огромные глыбы камней перекрыли вход.~
 
-@2800=~Shalline~
+@2800=~Шелайн~
 
-@2900=~Take me to the Bridge District of Athkatla. I have unfinished business there.~
-@2901=~Bridge District of Athkatla~
+@2900=~Переправь меня в район Моста в Аткатле. У меня остались там незаконченные дела.~
+@2901=~Район Моста в Аткатле~
 
-@3000=~I hid a rope within the hem of my robes, but the fish-men took it from me. They burned it in front of me. *cough* *cough*. That was when I knew I would never escape this horrid place. *cough* But the villagers in Amkethran will surely have some that is suitable. *cough*~
-@3001=~Thanks for the tip, sucker! I'll just leave you here and be on my way!~
-@3002=~Actually, I was wondering if you had a coil of rope that I could buy.~
-@3003=~Rope?!~
-@3004=~I don't know who you are, stranger, but I can tell  that you're an adventurer, and I can tell by the way the soldiers look at you that you're some force to be reckoned with. Your equipment is probably worth more than this village, and what do you want to buy? A coil of rope. Perhaps the gods do have a sense of humour.~
-@3005=~Here is your rope, my good <MANWOMAN>. There is no charge - I'll be dining out on this story for weeks.~
-@3006=~Can I interest you in my wares, my <LADYLORD>?~
-@3007=~I was hoping to buy some rope from you.~
-@3008=~You'd better have some rope, fool, or you're a dead man.~
-@3009=~Ummm... yes, I do happen to have some rope here.~
-@3010=~There would be a charge, but looking at what you did to poor Zakee, I don't think I'll be levying it...~
-@3011=~I discovered one of Balthazar's followers imprisoned here.  Before he died the monk explained how I can find and defeat Abazigal.  I need to find the Scroll of Reversal to break the geas that both enslaves a dragon guardian and seals the entrance to Abazigal's inner enclave.
+@3000=~Я спрятал веревку в своих одеждах, но рыболюды забрали ее у меня. Они сожгли ее у меня на глазах. *кашляет* Именно тогда я понял, что мне уже никогда не удастся сбежать из этого ужасного места. *кашляет.* Уверен, у жителей Амкетрана обязательно найдется что-нибудь подходящее. *кашляет.*~
+@3001=~Спасибо за совет, простак! А теперь я оставлю тебя здесь и вернусь к своим делам!~
+@3002=~Меня интересует, не найдется ли у тебя мотка веревки на продажу.~
+@3003=~Веревки?!~
+@3004=~Не знаю, кто ты, путник, но ты похож на искателя приключений, а солдаты смотрят на тебя так, что мне сразу становится ясно, что ты - сила, с которой следует считаться. Твое снаряжение стоит больше, чем вся эта деревня, и что же ты хочешь купить? Моток веревки. У богов и впрямь есть чувство юмора.~
+@3005=~Вот твоя веревка, <PRO_SIRMAAM>. Бесплатно - этой история накормит меня на недели вперед.~
+@3006=~Тебя зантересовали мои товары, ми<LADYLORD>?~
+@3007=~Я хочу купить у тебя веревку.~
+@3008=~Если сейчас же не найдешь мне какую-нибудь веревку, глупец, то ты покойник.~
+@3009=~Эм-м... да, так получилось, что веревка у меня есть.~
+@3010=~Я бы попросил тебя заплатить за нее, но, учитывая то, что ты сделал с бедным Заки, я не стану взимать с тебя плату...~
+@3011 = ~Я обнаружил одного из последователей Балтазара, заключённого здесь. Перед смертью он рассказал мне, как можно найти и уничтожить Абазигала. Мне необходимо найти свиток обращения, чтобы разрушить чары обета, превратившие в раба стерегущего дракона и запечатывающие вход во внутренние покои анклава.
 
-The caverns here are all connected by underwater tunnels.  Luckily I now have some more of the water breathing potion to allow me to explore the various tunnels.  Like it or not, I guess I'm going spelunking... just as soon as I can get hold of a rope. It seems silly to have to trek back to Amkethran for something so mundane, but I guess I don't have a lot of choice... what else is new, though?~
+Все пещеры здесь связаны внутренними тунелями. К счастью, у меня осталось немного зелья дыхания, которое позволит мне исследовать эти туннели. Нравится или нет, но думаю, придётся мне заняться спелеологией... как только я смогу найти веревку. Глупо возвращаться в Амкетран из-за такой ерунды, но выбора у меня нет... впрочем, мне уже не привыкать.~ ~Я обнаружила одного из последователей Балтазара, заключённого здесь. Перед смертью он рассказал мне, как можно найти и уничтожить Абазигала. Мне необходимо найти свиток обращения, чтобы разрушить чары обета, превратившие в раба стерегущего дракона и запечатывающие вход во внутренние покои анклава.
+
+Все пещеры здесь связаны внутренними тунелями. К счастью, у меня осталось немного зелья дыхания, которое позволит мне исследовать эти туннели. Нравится или нет, но думаю, придется мне заняться спелеологией... как только я смогу найти веревку. Глупо возвращаться в Амкетран из-за такой ерунды, но выбора у меня нет... впрочем, мне уже не привыкать.~
+
+@3012   = ~Знаешь, я никогда бы не подумала, что буду сочувствовать дракону, но этот бедняга выглядит просто ужасно.~
+@3013   = ~Тьфу. У нас есть более важные дела, чем разговоры с угнетенным драконом, <PRO_BROTHERSISTER>!~
+
+@3014=~Чешуйки желтого дракона~
+@3015=~Это чешуйки со шкуры желтого дракона Анадраматиса, они сухие и приятные на ощупь... Легенды гласят, что из них можно изготовить мощный доспех.~
+@3016=~Доспех из чешуи желтого дракона~
+@3017=~Доспех из чешуи желтого дракона
+
+Этот доспех был сделан из сцепленных чешуек желтого дракона Анадраматиса. Желтые драконы известны своим песчаным дыханием и сопротивлением колющему оружию.
+
+ПАРАМЕТРЫ:
+
+Свойства экипировки:
+– Сопротивление колющему урону: +50%
+– Сопротивление метательному урону: +50%
+
+Класс защиты: -1 (-3 против рубящего, -2 против колющего и метательного)
+Вес: 30
+Требования: сила 6
+Не могут использовать:
+ Кенсай
+ Маг
+ Монах
+ Оборотень~
+@3018=~Амулет Анадраматиса~
+@3019=~Амулет Анадраматиса
+
+Этот прекрасный золотой амулет пропитан гневом дракона Анадраматиса на потомка Баала Абазигала, другого дракона. Его владелец защищен, в какой-то степени, от мощи дракона.
+
+ПАРАМЕТРЫ:
+
+Свойства экипировки:
+– Иммунитет к атакам крылом
+
+Вес: 1~
+@3020=~Вы не можете одновременно набирать зелье и сражаться с драконом.~
+@3021=~Олиниссимоус~
+@3022=~Зириманат'рил~
+@3023=~Ити'нассендра~
+@3024=~Карнифекс~
+@3026=~Один из драконов блокирует проход заклинанием.~
+@3027=~Дракон блокирует проход заклинанием.~
 
 
-@3012   = ~Y'know, I never thought I'd feel sorry for a dragon, but the poor thing does look so miserable.~
-@3013   = ~Bah. My <PRO_BROTHERSISTER>, we have far more important business than bandying words with a depressed dragon!~
+@3031 = ~Никто не войдет в святилище великого Абазигала!~
+@3032 = ~Возмездие настигнет убийцу лорда Дракониса!~
+@3033 = ~Два дракона? Бу предлагает отвлечь одного из них, но я не уверен, что это хорошая идея.~
+@3034 = ~Предсказуемо. Даже с высоты в тысячу футов, было очевидно, что эти крокодилы-переростки испортят всё, что можно.~
+@3035 = ~А теперь, <PRO_RACE>, пади ниц пред владыками мироздания!~
+@3036 = ~Но, Карнифекс, мне может понадобиться твоя помощь. Этот незваный гость может быть потомком Баала!~
+@3037 = ~Ты... прав, конечно же. Готовься к смерти, млекопитающее!~
+@3038 = ~Никогда не посылай ящерицу делать драконью работу, Ити'нассендра.~
+@3039 = ~Ты справишься и без моей помощи, Ити'нассендра, я буду наблюдать за твоим триумфом издалека. Ты вечно пачкаешь мои прекрасные чешуйки своим мерзким ядовитым дыханием.~
+@3040 = ~Ити'нассендра, ты дракон или болотная ящерица? Это жалкое млекопитающее, пусть даже и потомок Баала - не сможет справиться даже с одним из нас.~
+@3041 = ~И, даже если это на самом деле потомок Баала, и он сможет тебя победить, не сомневайся, я за тебя отомщу. Веселись!~ ~И, даже если это на самом деле потомок Баала, и она сможет тебя победить, не сомневайся, я за тебя отомщу. Веселись!~
+@3042 = ~Ты действительно потомок Баала. Никто другой не смог бы совершить подобного. Но это не важно. Дитя бога ты или нет, против меня тебе не выстоять.~
+@3043 = ~Эм... похоже, с тобой уже не удастся договориться?~
+@3044 = ~Я не знаю, заметил ли ты, но уже четыре дракона мертвы, включая Дракониса. Почему ты считаешь, что с тобой будет по-другому?~
+@3045 = ~Тогда покончим с этим.~
+@3046 = ~Это уже пройденный этап, <PRO_RACE>. Тебе нечего предложить мне, а для меня нет иных вариантов, кроме боя. Гнева Абазигала я боюсь даже больше чем смерти.~
+@3047 = ~Ты устал и изранен, а я готов к бою... в любом случае этот вопрос не имеет смысла. Гнева Абазигала я боюсь даже больше, чем смерти.~
+@3048 = ~Хватит разговоров. Ты сгоришь в пламени моей ярости!~
+@3049 = ~Еще драконы? Значит быть битве, как в величайших историях Ордена. Молюсь лишь о том, чтобы мы оказались ее достойны.~
+@3050 = ~Это конец? Если нет, то какая из этого получится песня!~
+@3055 = ~Потомок Баала? Большая честь для меня. Как я понимаю, этот несчастный сородич "Господина" Абазигала больше не с нами?~
+@3056 = ~Да, Драконис мертв.~
+@3057 = ~Забудь о Драконисе. Просто скажи мне, где я могу найти зелье дыхания?~
+@3058 = ~Умри, змий!~
+@3059 = ~Меня восхищает твоя прямота, <PRO_RACE>, но не твои манеры. Так тому и быть - я приветствую все, что может отвлечь меня от этого жалкого положения.~
+@3060 = ~Я рад это слышать. Эта шавка позорила драконий род даже больше, чем его отец-полукровка. А теперь, дитя Баала, что привело тебя в мою пещеру?~
+@3061 = ~Ты оказываешь мне честь своими словами, о великий дракон. Я ищу способ дальше исследовать эти пещеры - есть зелье, которое позволило бы мне путешествовать водными путями. Могу ли я надеяться не только на твое великолепное присутствие, но и на небольшую помощь?~
+@3062 = ~Разговоры меня не интересуют. Мне нужно лишь набрать зелье в водоеме позади тебя.~
+@3063 = ~Хватит болтовни, дракон, пришло время умереть!~
+@3064 = ~Ой, похоже я не туда попал. Ты не видел здесь костяных демонов неподалеку, м?~
+@3065 = ~Дитя Баала, даже после того, как меня подчинили и унизили, мой ум не настолько притупился, чтобы меня можно было так просто обмануть. Чего ты хочешь?~
+@3066 = ~Как низко я пал. Меня загнали в эту жалкую, сырую пещеру и заставили защищать какую-то застойную лужу. Теперь я не дракон, а сторожевой пес.~
+@3067 = ~Ты блистателен даже в этой скудной обстановке, о могучий дракон. Лицезреть такое прекрасное существо - честь для меня.~
+@3068 = ~Твое нытье меня не интересует, змий. Отойди с дороги и дай мне набрать зелье.~
+@3069 = ~Ну, змий, ты стоишь между мной и моей целью. Значит, пришло время умереть!~
+@3070 = ~Раньше твоя лесть была бы мне приятна, <PRO_RACE>. Но теперь я - жалкое создание, побежденное полукровкой; он унизил меня, захватил мой дом, украл мои сокровища и растоптал мою гордость. Меня загнали в эту мерзкую, мокрую пещеру и заставили охранять какую-то застойную лужу. Сейчас я не дракон, а сторожевой пес. А псам лесть не нужна.~
+@3071 = ~Я могу вернуть тебе твою гордость, о могучий дракон. Только позволь мне набрать зелья дыхания в водоеме позади тебя, и я убью Абазигала от твоего имени.~
+@3072 = ~Раньше твоя лесть была бы мне приятна, <PRO_RACE>. Но теперь я - жалкое создание, побежденное полукровкой; он оскорблял меня, захватил мой дом, украл мои сокровища и растоптал мою гордость. Псам лесть ни к чему.~
+@3073 = ~Тогда убирайся с моего пути, ты, жалкое подобие дракона.~
+@3074 = ~И у тебя хватило смелости так разговаривать с драконом, <PRO_RACE>? Как бы меня не унижали, мои клыки и когти все еще при мне, и я научу тебя уважать наш вид!~
+@3075 = ~Твои слова учтивы, <PRO_RACE>, и мне хочется в них верить. Но сможешь ли ты победить Абазигала? Уверен, если я отдам тебе зелье, он вскоре узнает об этом. Я... не смогу выстоять перед его гневом.~
+@3076 = ~Что ж, я дам тебе возможность доказать свою силу. Если у тебя есть шанс в бою против полукровки-узурпатора, то и со мной справишься. А если же нет, то битва с захватчиками может отсрочить мои мучения. Защищайся, дитя Баала.~
+@3077 = ~Сдаюсь! Я и в самом деле впечатлен, <PRO_RACE>. Я прожил более тысячи лет и никто из твоей расы на мог тягаться со мной. В конце концов, может ты и справишься с узурпатором. Я исполню свою часть сделки.~
+@3078 = ~Твои слова - честь для меня, великий дракон. Столь могучий противник мне еще не встречался.~
+@3079 = ~Хватит болтать, дракон. Ты проиграл, так что просто отдай мне зелье.~
+@3080 = ~А я так не думаю. Легче тебя просто прикончить - даже если у тебя не осталось сокровищ, твоя шкура мне точно для чего-нибудь сгодится.~
+@3081 = ~Да как ты смеешь так говорить с драконом, <PRO_RACE>? Мне следовало бы порвать тебя на куски... но ты сильнее меня. Будьте вы все прокляты, отродья Баала. Забирай свое дурацкое зелье. Надеюсь, ты им подавишься.~
+@3082 = ~Твоя учтивость не уступает твоей силе, дитя Баала. Возьми зелье и еще вот это, с моим благословлением. А теперь убей этого проклятого полукровку, укравшего мой дом и мою гордость!~
+@3083 = ~Неблагодарное создание! Так умри, отродье Баала, - может мне еще удастся порвать тебя на части.~
+@3084 = ~Полукровка мертв! Сегодня, дитя Баала, ты оказал мне великую услугу. А теперь мне нужно отдохнуть, подумать и, возможно, поспать. Так что покинь это место с моим благословлением.~
+@3085 = ~У нас больше нет никаких дел, <PRO_RACE>.~
+@3086 = ~Прости, что отвлекаю тебя, могучий дракон.~
+@3087 = ~И это все, что ты можешь мне сказать?~
+@3088 = ~У меня осталось одно дело - убить тебя, змий!~
+@3089 = ~Да как ты смеешь так говорить с драконом, <PRO_RACE>? Мне следовало бы порвать тебя на куски... но ты сильнее меня. Будьте вы все прокляты, отродья Баала.~
+@3090 = ~Так иди и не отвлекай меня от сна.~
+@3091 = ~Ха! Чего только не увидишь в твоей компании, мой ворон! Этот дракон что, дуется?~
+@3092 = ~У тебя тут... что? Желтая, синяя и белая? Как много цветов! Я могу сделать доспех из чешуи белого дракона, доспех из чешуи желтого дракона и, э-э, пластинчатый доспех синего дракона. 5000 золотых за каждый, пойдет?~
+@3093 = ~Сделай доспех из чешуи желтого дракона.~
+@3094 = ~Ничего из этого. Еще что-нибудь?~
+@3095 = ~У тебя тут... что? Желтая и белая? Мда, отвратительно. Я могу сделать доспех из чешуи белого дракона, и, э-э, доспех из чешуи желтого дракона. 5000 золотых за каждый, пойдет?~
+@3096 = ~У тебя тут... что? Желтая и синяя? Мда, отвратительно. Я могу сделать доспех из чешуи желтого дракона и, э-э, пластинчатый доспех синего дракона. 5000 золотых за каждый, пойдет?~
+@3097 = ~О, это чешуя белого дракона, да? Могу сделать хорошие доспехи. Защитят тебя от всего колющего. Всего-то 5000 золотых... хочешь?~
 
-@3014=~Yellow Dragon Scales~
-@3015=~These scales are dry and fine to the touch. They were salvaged from the corpse of the yellow dragon Anadramatis... according to legend they could be forged into powerful armor.~
-@3016=~Yellow Dragon Scale Armor~
-@3017=~Yellow Dragon Scale Armor
-
-This suit of armor is formed from interlocking Yellow Dragon scales. Yellow Dragons are known for their fiery sand attacks and resistance to piercing weapons. 
-This particular suit was forged from the scales of the yellow dragon Anadramatis.
-
-STATISTICS:
-
-Bonuses: +50% Resistance to Piercing and Missile Attacks
-Armor Class: -1
-Weight: 30
-Requires: 6 Strength
-Not Usable By:
- Mage~
-@3018=~Anadramatis' Amulet~
-@3019=~Anadramatis' Amulet
-
-This fine golden necklace has been imbued by the dragon Anadramatis with his fury at the dragon Bhaalspawn Abazigal. Its wearer will be shielded in turn - to some extent - from the furious presence of a dragon.
-
-STATISTICS:
-
-Special:  Wearer is immune to wing buffets~
-@3020=~You cannot gather the potion and fight a dragon at the same time.~
-@3021=~Olinissimous~
-@3022=~Zirimanat'ryl~
-@3023=~Ithy'nassendra~
-@3024=~Carnifex~
-@3026=~One of the dragons seems to be blocking the entrance with a spell.~
-@3027=~The dragon seems to be blocking the entrance with a spell.~
-
-
-@3031 = ~None shall enter the sanctum of great Abazigal!~
-@3032 = ~Vengeance will be served on the slayer of Lord Draconis!~
-@3033 = ~Two dragons? Boo is offering to hold one of them off, but I am not sure that is a good idea.~
-@3034 = ~Predictable. Even from a thousand feet up, it was obvious those overgrown crocodiles were making a mess of things.~
-@3035 = ~Now, <PRO_RACE>, cower before the lords of creation!~
-@3036 = ~But, Carnifex, I may need your help. This intruder may be the Bhaalspawn!~
-@3037 = ~You ... are right, of course. Prepare to meet your doom, mammal!~
-@3038 = ~Never send a lizard to do a dragon's job, Ithy.~
-@3039 = ~You show them, Ithy. I'll be watching your triumph from that crag over there. Those nasty poison clouds of yours will tarnish my lovely scales.~
-@3040 = ~Ithy'nassendra, are you a dragon or a swamp lizard? Bhaalspawn or no, this is a paltry mammal. It is no match for even one of us.~
-@3041 = ~And, if it is the Bhaalspawn, and on the off chance it defeats you, I'll be sure to avenge you. Have fun!~
-@3042 = ~You *are* the Bhaalspawn. No other could have done this. But god-child or no, you will not withstand my assault.~
-@3043 = ~Um... I don't suppose you'd care to negotiate?~
-@3044 = ~I don't know if you noticed, but there are four dead dragons here, including Draconis. What makes you think you'll be any different?~
-@3045 = ~Let's get this over with, then.~
-@3046 = ~We are far past that stage, <PRO_RACE>. You have nothing to offer me, and I have no choice but to attack. I fear Abazigal's wrath more than death itself.~
-@3047 = ~But you are tired and wounded, and I am fresh to the fight... and it matters not in any case, for I fear Abazigal's wrath more than death itself.~
-@3048 = ~Enough talk. Burn in the fires of my rage!~
-@3049 = ~More dragons? This battle will be worthy of the greatest stories of the Order. I only pray that we are equal to it.~
-@3050 = ~Is this the end? if not, what a song I will make of this!~
-
-@3055 = ~A Bhaalspawn? Well, I am honoured. I take it that "Lord" Abazigal's wretched brat is no longer with us, then?~
-@3056 = ~Draconis is dead, yes.~
-@3057 = ~Never mind Draconis. Just tell me where I can find the breath potion?~
-@3058 = ~Die, wyrm!~
-@3059 = ~I admire your directness, <PRO_RACE>, if not your manners. So be it, then - in my wretched state, I welcome diversions.~
-@3060 = ~I am delighted to hear it. The cur was a disgrace to dragon-kind greater even than his mongrel father. But now, Bhaalspawn, what is it that brings you to my cave?~
-@3061 = ~Great dragon, you honour me with your words. I seek some way to explore these caves further - there is a potion which will allow me to travel through the waterways. Might you grant us the boon of your aid as well as your magnificent presence?~
-@3062 = ~I'm not interested in bantering. I just want to get at that potion pool behind you.~
-@3063 = ~No more words, dragon, it's time to die!~
-@3064 = ~Um, actually I think I may have taken a wrong turning. You haven't seen a couple of bone fiends anywhere around, have you?~
-@3065 = ~Bhaalspawn, fallen and humiliated I may be, but I am not so addled in wits to be that easily fooled. What is it that you want?~
-@3066 = ~How I have fallen. Banished to this miserable, damp cave, forced to protect a stagnant pool. I am a guard dog, not a dragon.~
-@3067 = ~Truly, mighty dragon, your splendour shines forth even in these poor surroundings. I am honoured to gaze upon your magnificent form.~
-@3068 = ~I'm not interested in your snivelling, wyrm. Get out of my way and let me get at the potion.~
-@3069 = ~Well, wyrm, it sounds as if you're between me and my goal. That means it's time for you to die!~
-@3070 = ~Your flattery would once have been welcome to me, <PRO_RACE>. But I am a wretched creature now - defeated and humiliated by a mongrel halfbreed, my home invaded, my hoard stolen away from me, my pride humbled. Now I am banished to this miserable, damp cave, forced to protect this stagnant pool. I am a guard dog, not a dragon, and dogs have no need for flattery.~
-@3071 = ~Perhaps I can restore your pride, great dragon. If you only allow me passage to the Breath Potion, I would be honoured to slay Abazigal on your behalf.~
-@3072 = ~Your flattery would once have been welcome to me, <PRO_RACE>. But I am a wretched creature now - defeated and humiliated by a mongrel halfbreed, my hoard stolen away from me, my pride humbled. Dogs have no need for flattery.~
-@3073 = ~Then get out of my way, you pathetic excuse for a dragon.~
-@3074 = ~How dare you speak to a dragon that way, <PRO_RACE>? I may be laid low, but I still have my fangs and my claws, and I will teach you to respect our kind!~
-@3075 = ~Your words are courteous, <PRO_RACE>, and I would like to believe them. But can you really defeat Abazigal? If I give you the potion, he will know of it, I am sure.~
-@3076 = ~But I will give you a chance to prove your worth. If you can defeat me in combat, maybe you will have a chance with the mongrel usurper. And if not, then perhaps the diversion of battle will provide some respite to my misery. Defend yourself, Bhaalspawn.~
-@3077 = ~I yield! Truly I am impressed, <PRO_RACE>. I have lived over a thousand years, and not once has one of your kind bested me. Perhaps you can slay the usurper after all. I will honour our bargain.~
-@3078 = ~You honour me with your words, great dragon - I have faced no more worthy opponent.~
-@3079 = ~Enough talking, dragon. You're beaten, now just let me at the potion.~
-@3080 = ~I don't think so. I'd rather just finish you off - even if you don't have a hoard, I'm sure your skin will be good for something.~
-@3081 = ~How dare you speak to a dragon that way, <PRO_RACE>? Would that I could tear you apart... but you are more than my match. Curse all Bhaalspawn. Take your wretched potion, then. May it choke you.~
-@3082 = ~As courteous as you are powerful, Bhaalspawn. Take it, then, with my blessing, and take this as well. And slay the wretched mongrel who has stolen my home and my pride away!~
-@3083 = ~Ingrate! To the death, then, Bhaalspawn - perhaps I yet may tear you apart.~
-@3084 = ~The mongrel usurper is dead! You have done me a great service this day, Bhaalspawn. But now I wish to rest, and think,and perhaps sleep. Leave this place with my blessing.~
-@3085 = ~We have no further business, <PRO_RACE>.~
-@3086 = ~I am sorry to have disturbed you, mighty dragon.~
-@3087 = ~Is that all you've got to say for yourself?~
-@3088 = ~My death is your business, wyrm!~
-@3089 = ~How dare you speak to a dragon that way, <PRO_RACE>? Would that I could tear you apart... but you are more than my match. Curse all Bhaalspawn.~
-@3090 = ~Go, then, and leave me to my sleep.~
-@3091 = ~Ha! What things I have seen in your company, my raven! Is this dragon really sulking?~
-@3092 = ~You gots... what? Yellow, blue and white? Lots of colors! I can makes White Dragon Scale armor, Yellow Dragon armor and, ummm, Blue Dragon Plate Mail.  5,000 gp each, ups to you.~
-@3093 = ~Make the Yellow Dragon scale armor.~
-@3094 = ~None of them.  What else?~
-@3095 = ~You gots... what? Yellow and white? Yick, stinky. I can makes White Dragon Scale armor and, umm, Yellow Dragon armor.  5,000 gp each, ups to you.~
-@3096 = ~You gots... what? Yellow and blue? Yick, stinky. I can makes Yellow Dragon armor and, umm, Blue Dragon Plate armor.  5,000 gp each, ups to you.~
-@3097 = ~Oh, is yellow dragon scales, is it?  I make good scale armor, good against sharp things.  5,000 gp only, you wants?~
-
-@3100=~Valas Jae'llat~
-@3101=~Jae'llat Priestess~
-@3102=~Jae'llat Mage~
-@3103=~Matron Mother Ellaviir~
-@3104=~Matron Mother Finadryl~
-@3105=~Drow Archmage~
-@3106=~You should be able to deal with the rest of this rabble without trouble, then the way to the surface is clear. Good luck to you!~
-@3200=~The beholder has used its telekinesis power to snatch the Shield of Balduran from your arm~
-@3201=~The beholder has used its telekinesis power to snatch the Cloak of Mirroring from your shoulders~
-@3202=~Windstorm~
+@3100=~Валас Джаэ'ллат~
+@3101=~Жрица дома Джаэ'ллат~
+@3102=~Маг дома Джаэ'ллат~
+@3103=~Матрона-мать Эллавиир~
+@3104=~Матрона-мать Финадрил~
+@3105=~Дроу-архимаг~
+@3106=~Тебе не составит проблем разобраться с остальными, после этого путь на поверхность будет чист. Удачи тебе!~
+@3200=~Созерцатель, используя телекинез, вырвал щит Балдурана из ваших рук~
+@3201=~Созерцатель, используя телекинез, сорвал Зеркальный плащ с ваших плеч~
+@3202=~Буря~
 @3203=~Improved Minor Encounters~
 @3204=~Don't upgrade the beholders found in the hive in the Underdark, but do give beholder rays some chance to "burn through" spell protections~
 @3205=~Upgrade the hive (borrowed from Quest Pack) and give beholder rays some chance of burn-through~
 @3206=~No hive upgrade; no chance of of burn-through~
 @3207=~Upgrade the hive; no burn-through~
-@3208=~Acidic Blob~
+@3208=~Кислотный плевок~
 @3209=~Smarter Throne of Bhaal final villain~
-@3210=~Point~
-@3211=~Mordenkainen's Disjunction~
+@3210=~Указание~
+@3211=~Разделение Морденкайнена~
 @3212=~Give Celestials slightly more staying power~
 
-@3300=~Broken Mirror~
-@3301=~This was once a powerful Mirror of Opposition belonging to the mad cleric Nyalee. It was shattered during the battle with her, though, and is now useless.~
-@3302=~Mirror of Opposition~
-@3303=~Purple Dragon Breath~
+@3300=~Разбитое зеркало~
+@3301=~Это могущественное Зеркало Противоположности раньше принадлежало сумасшедшей священнице Найали. Оно было разбито в битве с ней, и теперь бесполезно.~
+@3302=~Зеркало Противоположности~
+@3303=~Дыхание фиолетового дракона~
 @3304=~Give beholder rays some chance to "burn through" spell protections; beholder antimagic blocks all spells, including harmful ones, for a round (simulates D&D rules)~
 @3305=~Don't give beholder rays any chance of burning through spell protections; beholder antimagic blocks all spells, including harmful ones, for a round (simulates D&D rules)~
 @3306=~Smarter Illasera~
@@ -988,8 +971,8 @@ Special:  Wearer is immune to wing buffets~
 @3399=~This component requires "Smarter Beholders" to be installed~
 
 
-@3400=~Divine Mantle~
-@3401=~Divine Shield~
+@3400=~Божественная мантия~
+@3401=~Божественный щит~
 
 @3500=~Excellent.  I have access to an enchanted sword and a Scroll of Wish, both rather impressive items.  And there is the gem, as well.  What would you wish to play for?~ 
 @3501=~I will play for the sword.~
@@ -997,148 +980,174 @@ Special:  Wearer is immune to wing buffets~
 
 @3600=~Some other mod has altered the Rod of Resurrection in a way I don't understand; skipping this component~
 
-@3700=~
+@3700=~:
 
-Note: This spell removes the magical protections of the closest (hostile) creature to the point that the spellcaster designates. For this reason, the spell may be used to remove magical protections even from creatures which could not normally be targetted by spells (for instance, because they are invisible).~
+Примечание: Это заклинание удаляет магические защиты с ближайшего (враждебного) существа от точки применения заклинания. Таким образом, это заклинание можно использовать для снятия магических защит даже с тех существ, которых нельзя выбрать целью (например, из-за невидимости).~
 
 @4000=~Tactical challenges~
 @4001=~Core components (it is strongly recommended that all are installed)~
 
-@4100=~The Holy Avenger: Carsomyr
-Carsomyr is a weapon of legend, perhaps one of the most powerful blades ever forged on Faerun, though its origin and history is thought purposefully forgotten, such that the sword itself never overshadow the importance of the struggles that must be fought today.  It is infused with the very essence of virtue, and requires as much from any paladin that would hope to wield it.  The evils of the Realms must truly stand aside when this weapon is brought to bear, their magic dispelled with a word, steadfastly resisted with ease.  Carsomyr also harbors a special distaste for the forces of evil and chaos, and such creatures must fear additional damage from its touch in battle.  
+@4100 = ~Святая кара: Карсомир
+Карсомир – легендарное оружие, возможно, один из самых могучих клинков, когда-либо выкованных в Фаэруне, хотя его происхождение и история намеренно преданы забвению, чтобы меч не затмевал важности нынешних битв. Он наполнен самой сущностью добродетели и требует того же от любого паладина, который может надеяться получить этот меч. Поистине, все злодеи королевств должны отступить, когда появляется это оружие, ибо его хозяин стойко сопротивляется их магии и может развеять её одним лишь словом. Карсомир также питает особое отвращение к силам зла и хаоса, и такие существа получают от него дополнительный урон в битве.
 
-STATISTICS
+ПАРАМЕТРЫ:
 
-Equipped Abilities: 
-    50% Magic Resistance
-    Dispel magic 3 times per day
-Combat Abilities: 
-    +5 damage to chaotic evil opponents in addition to other bonuses.
-    Dispels magic whenever the sword strikes an opponent (save vs spell to avoid)
-THAC0: +5 bonus
-Damage:  1D12 +5
-Damage type:  slashing
-Weight:  7
-Speed Factor: 5
-Proficiency Type: Two handed sword 
-Type:  2-handed
-Requires: 14 Strength
-Usable By:
- Paladins~
- 
-@4101=~The Holy Avenger: Carsomyr
-Even a Holy Relic as powerful as Carsomyr is made even greater when combined with the Eye of Tyr.
+Свойства экипировки:
+– Сопротивление магии: 50%
 
-STATISTICS
+Боевые возможности:
+– «Развеять магию» 30-го уровня при попадании по противнику (спасбросок против заклинания отменяет)
 
-Equipped Abilities:
-    50% Magic Resistance
-    Dispel magic 3 times per day
-Combat Abilities: 
-    +6 damage to chaotic evil opponents in addition to other bonuses.
-    Dispels magic whenever the sword strikes an opponent (save vs spell at -2 to avoid)
-THAC0: +6 bonus
-Damage:  1D12 +6
-Damage type:  slashing
-Weight:  6
-Speed Factor: 4
-Proficiency Type: Two handed sword 
-Type:  2-handed
-Requires: 14 Strength
-Usable By:
- Paladins~
+Свойства зарядов:
+– «Развеять магию» 15-го уровня 3 раза в день
+  Дистанция: 40 футов
+  Зона действия: радиус 15 футов
 
- @4200=~The journal is thick and filled out with various entries that are, at first, legible elvish...relating the writer's horror at being trapped in the maze, his frustration at the fact that even retracing your steps through a portal you have just traveled through will not lead you back to the area you just came from.  The writer is obviously morose and guilty over abandoning his dead comrades, and his writing suffers over time...slowly degenerating into mad scribbles, paranoid ramblings about demons and wild, repeated references to 'Yakman' written all over the journal.~
+ТНАС0: +5
+Урон: 1d12+5, +5 дополнительного урона хаотично злым существам
+Тип урона: рубящий
+Фактор скорости: 5
+Навык: двуручный меч
+Тип: двуручное
+Вес: 7
+Требования:
+ Сила 14
+Могут использовать:
+ Паладин~
 
-@4300=~Uzrith~
-@4301=~Chlimbia~
-@4302=~Irithlin~
-@4303=~Who calls Uzrith, Prince of Earth?~
-@4304=~Who calls Chlimbia, Prince of Fire?~
-@4305=~Who calls Irithlin, Prince of Air?~
+
+@4101 = ~Святая кара: Карсомир
+Даже такая святая реликвия, как Карсомир, становится ещё сильнее в комбинации с Глазом Тира.
+
+ПАРАМЕТРЫ:
+
+Свойства экипировки:
+– Сопротивление магии: 50%
+
+Боевые возможности:
+– «Развеять магию» уровня 30 при каждом ударе (спасбросок против заклинания с ухудшением -2 отменяет)
+
+Свойства зарядов:
+– «Развеять магию» 15-го уровня 3 раза в день
+  Дистанция: 40 футов
+  Зона действия: радиус 15 футов
+
+ТНАС0: +6
+Урон: 1d12+6, +6 дополнительного урона хаотично злым
+Тип урона: рубящий
+Фактор скорости: 4
+Навык: двуручный меч
+Тип: двуручное
+Вес: 6
+Требования:
+ Сила 14
+Могут использовать:
+ Паладин~
+
+@4200=~Дневник толстый, он заполнен разнообразными записями. Вначале это разборчивый эльфийский... относительно, если учитывать ужас писавшего, пойманного в лабиринте, его отчаяние от того, что даже возвращаясь по собственным следам через портал, из которого недавно вышел, он не может вернуться туда, откуда пришёл. Писавший, очевидно, был опечален и чувствовал себя виноватым в том, что покинул своих погибших товарищей, и он об этом пишет... однако записи медленно превращаются в безумные каракули, параноидальные бессвязные записи о демонах и дикие, повторяющиеся упоминания «Якман», встречающиеся по всему дневнику.~
+
+@4300=~Узрит~
+@4301=~Члимбия~
+@4302=~Иритлин~
+@4303=~Кто вызывает Урзита, Принца Земли?~
+@4304=~Кто вызывает Члимбию, Принца Огня?~
+@4305=~Кто вызывает Иритлина, Принца Воздуха?~
 @4306=~Alyolvoy~
-@4307=~Who calls Alyolvoy, Prince of Water?~
+@4307=~Кто вызывает Альовоя, Принца Воды?~
 
+@5000 = ~Рой насекомых
+(Подчинение/призывание)
 
+Сфера: Животные
+Уровень: 5
+Дистанция: 240 футов
+Длительность: 6 раундов
+Время чтения: 5
+Зона действия: особая
+Спасбросок: особый
 
-@5000=~Insect Plague
-Level: 5
-School: Conjuration
-Sphere: Animal
-Range: Long
-Duration: 6 rounds
-Casting Time: 1 round
-Area of Effect: Target, and enemies within 30'
-Saving Throw: Special
+Когда заклинатель накладывает это заклинание, туча ползающих, прыгающих и летающих насекомых собирается в рой. Рой атакует сначала указанного заклинателем врага, затем перемещается на всех врагов заклинателя в зоне действия. Невидимость не защищает от этого заклинания.
 
-When this spell is cast, a mass of creeping, hopping, and flying insects gather and swarm, first attacking the target, and then moving on to all enemies of the caster within the spell's radius. Invisibility is no protection.
+Во время действия заклинания жертвы роя насекомых получают 1 единицу урона каждую секунду и ухудшение -2 к броскам атаки и классу защиты. Вдобавок, каждый раунд жертвы должны сделать спасбросок против дыхания с ухудшением -2, или она не сможет читать заклинания (100% шанс провала). Существа, защищенные от урона, например, с помощью заклинания «Каменная кожа», невосприимчивы ко вторичным эффектам заклинания, пока их защита не будет развеяна.
 
-For the duration of the spell, those affected fight with a -2 penalty to attack rolls and armor class. In addition, each round, the victims suffer 2d3 points of damage from insect bites, have a 100% chance of spell failure, and must make saving throws vs. death or run away in fear. If a successful save vs. breath at -4 is made, the target manages to avoid most of the swarm, reducing damage from bites by half and completely negating the spell failure penalty.
+Насекомые, призываемые заклинанием, не являются магическими существами, и их нельзя отогнать защитой от магии. Но их укусы считаются немагическими атаками, и они не смогут навредить тем, кого можно ранить только магическим оружием. Насекомые будут избегать нежить и не смогут прорваться через крайне высокие и низкие температуры, создаваемые, например, заклинанием «Огненный щит». «Заклинание смерти» уничтожит всех насекомых в зоне действия.~
 
-This spell is blocked by any form of fire shield.~
+@5001 = ~Ползучая смерть
+(Подчинение/призывание)
 
-@5001=~Creeping Doom
-Level: 7
-School: Conjuration
-Sphere: Animal
-Range: Long
-Duration: 6 rounds
-Casting Time: 1 round
-Area of Effect: Target, and enemies within 30'
-Saving Throw: Special
+Уровень: 7
+Сфера: Животные, Вызов
+Дистанция: 240 футов
+Длительность: 3 раунда
+Время чтения: 5
+Зона действия: особая
+Спасбросок: особый
 
-When the caster utters the spell Creeping Doom, he calls forth a horde of venomous biting and stinging arachnids, insects, and myriapods. This carpet-like mass swarms over a large area, spreading to all creatures within 30 feet of the target. Invisibility is no protection.
+Заклинатель, прочитавший «Ползучую смерть», вызывает массу ядовитых, кусачих и жалящих созданий – паукообразных, насекомых и многоножек. Этот живой ковёр расползается на большую территорию, атакуя всех враждебных существ в радиусе 30 футов от точки, указанной заклинателем. Невидимость не защищает от этого заклинания.
 
-For the duration of the spell, those affected fight with a -2 penalty to attack rolls and armor class. In addition, each round, the victims suffer 2d6 points of damage from insect bites, have a 100% chance of spell failure, and must make saving throws vs. death at -2 or run away in fear. If a successful save vs. breath at -6 is made, the target manages to avoid most of the swarm, reducing damage from bites by half and completely negating the spell failure penalty.
+Осаждённые членистоногими получают 2 единицы колющего урона в секунду и ухудшение -2 к броскам атаки и классу защиты. Каждый раунд жертвы, остающиеся в зоне поражения, должны сделать спасбросок против дыхания с ухудшением -2; если он не удался, они не смогут читать заклинания (100% шанс провала); и спасбросок против заклинания с ухудшением -2; если он не удался, они бегут в панике. Существа, защищенные от урона, например, с помощью заклинания «Каменная кожа», невосприимчивы ко вторичным эффектам заклинания, пока их защита не будет развеяна.
 
-This spell is blocked by any form of fire shield.~
+Создания, призываемые заклинанием, не являются магическими существами, и их нельзя отогнать защитой от магии. Но их укусы считаются немагическими атаками, и они не смогут навредить тем, кого можно ранить только магическим оружием. Создания будут избегать нежить и не смогут прорваться через крайне высокие и низкие температуры, создаваемые, например, заклинанием «Огненный щит». «Заклинание смерти» уничтожит всех насекомых в зоне действия.~
 
+@5019=~Насекомые были уничтожены огнем~
 
+@5100 = ~Скипетр воскрешения
 
-@5019=~Insects destroyed by fire~
+Этот скипетр позволяет кому угодно воскрешать мёртвых и исцелять раненых так, как если бы он был священником достаточно высокого уровня, чтобы читать заклинания воскрешения и исцеления. Отдых не требуется, поскольку энергию для возвращения к жизни дарует скипетр. Каждое использование скипетра тратит один заряд.
 
-@5100=~Rod of Resurrection
-This rod enables anyone to resurrect the dead and heal the injured as if they were of high enough level to cast the raise dead and heal spells and as if they were a priest. No rest is required, as the rod bestows the life giving effects.  Each use of the rod expends one charge.
+ПАРАМЕТРЫ:
 
-STATISTICS
+Свойства зарядов:
+– Воскрешение
+  Особенности: воскрешает объект с одним пунктом здоровья
+  Дистанция: неограничена
+  Зона действия: 1 существо
+– Исцеление
+  Особенности: полностью исцеляет объект
+  Дистанция: прикосновение
+  Зона действия: 1 существо
 
-Special Abilities (one charge):  
-Raise Dead
-Heal~
+Вес: 3~
 
-@5200=~You wake quickly as the sound of heavy boots rings down the corridor. It seems that this place is no longer safe to rest...~
+@5200=~Вы быстро просыпаетесь от грохота тяжелых ботинок, раздающемся по коридорам. Кажется, отдыхать в этом месте больше не безопасно...~
 
-@5201=~No sooner have you fallen asleep when you are disturbed by the snickering of mephits. It seems that your presence in this place has attracted attention...~
+@5201=~Как только вам удалось заснуть, вы были потревожены хихиканьем мефитов. Кажется, ваше присутствие в этом месте привлекло внимание...~
 
-@5300=~Mantle (Abjuration)
-Level: 7
-Range: 0
-Duration: 4 rounds
-Casting Time: 1
-Area of Effect: Caster
-Saving Throw: None 
+@5300=~Мантия
+(Отречение)
 
-When the spell is cast it confers complete invulnerability to all weapons except for those of +4 or better enchantment.  This spell is incredibly powerful yet has a very short duration, and this combined with the very short casting time makes this spell useful only in the thick of intense combat.  It is also important to note that this spell will not work in conjuction with protection from magic weapons.  This effect lasts for the duration of the spell or until dispelled.~
+Уровень: 7
+Дистанция: 0
+Длительность: 4 раунда
+Время чтения: 1
+Зона действия: заклинатель
+Спасбросок: нет
 
-@5301=~Improved Mantle (Abjuration)
-Level: 8
-Range: 0
-Duration: 4 rounds
-Casting Time: 1
-Area of Effect: Caster
-Saving Throw: None 
+Произнесённое заклинание дарует полную неуязвимость по отношению к любому оружию, за исключением зачарованного от +4 и выше. Эти чары невероятно мощные, однако очень непродолжительного действия; учитывая минимальное время чтения, они полезны в том случае, когда маг оказывается в гуще сражения. Необходимо также отметить, что заклинание не действует совместно с защитой от магического оружия. Эффект сохраняется, пока не закончится время действия заклинания или пока кто-нибудь не развеет чары.~
 
-When the spell is cast it confers complete invulnerability to all weapons except for those of +5 or better enchantment.  This spell is incredibly powerful hence the duration is so short.  However, the casting time is also very short making this spell incredibly useful in the thick of combat where buying a few seconds can mean the difference between life or death.  It is important to note that this spell does not work in combination with protection from magic weapons.  This spell lasts for the duration or until dispelled.~
+@5301=~Улучшенная мантия
+(Отречение)
 
-@5302=~Absolute Immunity (Abjuration)
-Level: 9
-Range: 0
-Duration: 4 rounds
-Casting Time: 1
-Area of Effect: Caster
-Saving Throw: None 
+Уровень: 8
+Дистанция: 0
+Длительность: 4 раунда
+Время чтения: 1
+Зона действия: заклинатель
+Спасбросок: нет
 
-When the spell is cast, it confers complete invulnerability to all weapons, no matter what their level of enchantment.  This spell is incredibly powerful, hence the short duration.  However the casting time is also very short making this spell incredibly useful in the thick of combat where buying a few seconds can mean the difference between life or death.  It is important to note that this spell does not work in combination with protection from magic weapons.  This spell lasts for the duration or until dispelled.~
+Произнесённое заклинание дарует полную неуязвимость по отношению к любому оружию, за исключением зачарованного от +5 и выше. Это невероятно мощные чары, поэтому и длительность их столь невелика. Однако их время чтения также крайне мало, что делает их чрезвычайно полезными в разгар сражения, когда выигранные несколько секунд могут означать разницу между жизнью и смертью. Необходимо отметить, что это заклинание не действует совместно с защитой от магического оружия. Эффект сохраняется, пока не закончится время действия заклинания или пока кто-нибудь не развеет чары.~
+
+@5302=~Абсолютная неуязвимость
+(Отречение)
+
+Уровень: 9
+Дистанция: 0
+Длительность: 4 раунда
+Время чтения: 1
+Зона действия: заклинатель
+Спасбросок: нет
+
+Это заклинание дарует полную неуязвимость по отношению к любому оружию без исключения. Это невероятно мощные чары, поэтому и длительность их столь невелика. Однако их время чтения также крайне мало, что делает их чрезвычайно полезными в разгар сражения, когда выигранные несколько секунд могут означать разницу между жизнью и смертью. Необходимо отметить, что это заклинание не действует совместно с защитой от магического оружия. Эффект сохраняется, пока не закончится время действия заклинания или пока кто-нибудь не развеет чары.~
 
 @5400=~Orb of Fear~
 @5401 = ~Dragon of Pride~
@@ -1154,203 +1163,227 @@ When the spell is cast, it confers complete invulnerability to all weapons, no m
 
 
 
-@13120=~Lesser Werewolf Token~
-@13121=~Werewolf Token~
-@13122=~Greater Werewolf Token~
-@13123=~Bear Shapeshift Token~
-@13124=~Wolf Shapeshift Token~
-@13125=~Wyvern Shapeshift Token~
-@13126=~Salamander Shapeshift Token~
-@13127=~Spider Shapeshift Token~
-@13128=~Fire Elemental Token~
-@13129=~Earth Elemental Token~
+@13120=~Cимвол смены формы: Малый вервольф~
+@13121=~Cимвол смены формы: Вервольф~
+@13122=~Cимвол смены формы: Большой вервольф~
+@13123=~Cимвол смены формы: Бурый медведь~
+@13124=~Cимвол смены формы: Волк~
+@13125=~Cимвол смены формы: Виверна~
+@13126=~Cимвол смены формы: Саламандра~
+@13127=~Cимвол смены формы: Паук~
+@13128=~Cимвол смены формы: Элементаль огня~
+@13129=~Cимвол смены формы: Элементаль земли~
 
 
 
-@13140=~This token enables the shapeshifter druid who created it to shapeshift at will into a lesser werewolf. While in that form, the druid is unable to speak or cast spells, but gains the prodigious strength and speed of the werewolf. Unlike a true werewolf, however, the druid is still affected by nonmagical weapons.
+@13140 = ~Используя этот символ, друид-оборотень может принять облик малого вервольфа. Друид не может раговаривать и читать заклинания, пока находится в этой форме, но получает потрясающую силу и скорость вервольфа. Однако, в отличие от настоящих вервольфов, друид может быть ранен немагическим оружием. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 4
-Strength 18/76
-Dexterity 16
-1 attack
-Damage 1d6
-Magic Resistance 10%
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 4
+ Сила: 18/76
+ Ловкость: 16
+ Атак за раунд: 1
+ Урон от атаки: 1d6 (рубящий)
+ Сопротивление магии: 10%
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
 
-@13141=~This token enables the shapeshifter druid who created it to shapeshift at will into a werewolf. While in that form, the druid is unable to speak or cast spells, but gains the prodigious strength and speed of the werewolf. Unlike a true werewolf, however, the druid is still affected by nonmagical weapons.
+Вес: 0~
+@13141 = ~Используя этот символ, друид-оборотень может принять облик вервольфа. Друид не может разговаривать и читать заклинания, пока находится в этой форме, но получает потрясающую силу и скорость вервольфа. Однако, в отличие от настоящих вервольфов, друид может быть ранен немагическим оружием. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 1
-Strength 19
-Dexterity 17
-2 attacks
-Damage 1d8 (attacks count as +1)
-Magic Resistance 20%
-Hasted
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 1
+ Сила: 19
+ Ловкость: 17
+ Атак за раунд: 2
+ Урон от атаки: 1d8 (рубящий), бьет как оружие +1
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Сопротивление магии: 20%
+ Спешка
 
-@13142=~This token enables the shapeshifter druid who created it to shapeshift at will into a greater werewolf. While in that form, the druid is unable to speak or cast spells, but gains the prodigious strength and speed of the werewolf. Unlike a true werewolf, however, the druid is still affected by nonmagical weapons.
+Вес: 0~
+@13142 = ~Используя этот символ, друид-оборотень может принять облик большого вервольфа. Друид не может разговаривать и читать заклинания, пока находится в этой форме, но получает потрясающую силу и скорость вервольфа. Однако, в отличие от настоящих вервольфов, друид может быть ранен немагическим оружием. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC -4
-Strength 21
-Dexterity 20
-2 attacks
-Damage 2d6 (attacks count as +3)
-Magic Resistance 40%
-Fire Resistance 50%
-Electrical Resistance 50%
-Acid Resistance 50%
-Cold Resistance 50%
-Hasted
-Regenerate 6 hp per round
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: -4
+ Сила: 21
+ Ловкость: 20
+ Атак за раунд: 2
+ Урон от атаки: 2d6 (рубящий), бьет как оружие +3
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Регенерирует 6 пунктов здоровья в секунду
+ Спешка
+ Сопротивление магии: 40%
+ Сопротивление огню: 50%
+ Сопротивление электричеству: 50%
+ Сопротивление кислоте: 50%
+ Сопротивление холоду: 50%
 
-@13143=~This token enables the druid who created it to shapeshift at will into a brown bear. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13143 = ~Используя этот символ, друид-оборотень может принять облик бурого медведя. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 7
-Strength 18/00
-Dexterity 12
-2 attacks
-Damage 1d6
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 7
+ Сила: 18/00
+ Ловкость: 12
+ Атак за раунд: 2
+ Урон от атаки: 1d6 (рубящий)
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
 
-@13144=~This token enables the druid who created it to shapeshift at will into a wolf. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13144 = ~Используя этот символ, друид-оборотень может принять облик волка. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 6
-Strength 17
-Dexterity 18
-2 attacks
-Damage 1d8
-Increased movement rate
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 6
+ Сила: 17
+ Ловкость: 18
+ Атак за раунд: 2
+ Урон от атаки: 1d8 (колющий)
+ Увеличенная скорость передвижения
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
 
-@13145=~This token enables the avenger druid who created it to shapeshift at will into a small wyvern. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13145 = ~Используя этот символ, друид-оборотень может принять облик маленькой виверны. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 3
-Strength 18/76
-Dexterity 17
-2 attacks
-Damage 2d4 + 25% chance of 3 points of poison damage
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 3
+ Сила: 18/76
+ Ловкость: 17
+ Атак за раунд: 2
+ Урон от атаки: 2d4 (колющий), бьет как оружие +2, с вероятностью 25% наносит дополнительно 3 единицы урона ядом
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
 
-@13146=~This token enables the avenger druid who created it to shapeshift at will into a fire salamander. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13146 = ~Используя этот символ, друид-оборотень может принять облик огненной саламандры. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 2
-Strength 18/76
-Dexterity 19
-1 attack
-Damage 1d8
-100% fire resistance
-Hasted
-Fire Shield
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 2
+ Сила: 18/76
+ Ловкость: 19
+ Атак за раунд: 1
+ Урон от атаки: 1d8 (колющий), бьет как оружие +2
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Спешка
+ Огненный щит
+ Сопротивление огню: 100%
 
-@13147=~This token enables the avenger druid who created it to shapeshift at will into a giant spider. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13147 = ~Используя этот символ, друид-оборотень может принять облик гигантского паука. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC 2
-Strength 16
-Dexterity 16
-3 attacks
-Damage 1d4+poison (save vs. poison or take 2 hp damage per round for six rounds)
-Hasted
-Immunity to webs
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: 2
+ Сила: 16
+ Ловкость: 16
+ Атак за раунд: 3
+ Урон от атаки: 1d4 (колющий), бьет как оружие +2, отравление (2 единицы урона каждый раунд в течение 5 раундов, спасбросок против яда отменяет)
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Спешка
+ Ое застревает в паутине
 
-@13148=~This token enables the druid who created it to shapeshift at will into a giant fire elemental. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13148 = ~Используя этот символ, друид может принять облик гигантского элементаля огня. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC -5
-Strength 22
-Dexterity 25
-2 attacks
-Damage 1d10 crushing + 1d10 fire
-Movement rate increased
-Immunity to fire
-Fire shield
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: -5
+ Сила: 22
+ Ловкость: 25
+ Атак за раунд: 2
+ Урон от атаки: 1d10 (дробящий), бьет как оружие +4, +1d10 урона огнем
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Увеличенная скорость передвижения
+ Иммунитет к огню
+ Огненный щит
 
-@13149=~This token enables the druid who created it to shapeshift at will into a giant earth elemental. While in that form, the druid is unable to speak or cast spells.
+Вес: 0~
+@13149 = ~Используя этот символ, друид может принять облик гигантского элементаля земли. Друид не может разговаривать и читать заклинания, пока находится в этой форме. Символ смены формы может использовать только его создатель.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-In shapeshifted form:
-Base AC -5
-Strength 25
-Dexterity 10
-2 attacks
-Damage 2d10 crushing
-Movement rate decreased
-50% immunity to physical damage
+Использование: поместить в ячейку оружия
 
-Usable only by its creator (equip as a weapon to use)~
+Характеристики формы:
+ Базовый класс защиты: -5
+ Сила: 25
+ Ловкость: 10
+ Атак за раунд: 2
+ Урон от атаки: 2d10 (дробящий), бьет как оружие +4
+ Иммунитет ко всем эффектам, изменяющим силу или ловкость
+ Увеличенная скорость передвижения
+ Сопротивление рубящему урону: 50%
+ Сопротивление колющему урону: 50%
+ Сопротивление дробящему урону: 50%
+ Сопротивление метательному урону: 50%
 
-@13150=~Fire Elemental Transformation
+Вес: 0~
+@13150 = ~Превращение в элементаля огня
 
-Harnessing the power of fire, this powerful shapechange ability allows the druid to become a 24HD fire elemental of immense strength. The elemental form has an AC of -5, a THAC0 of 2 and does 1D10 normal and 1D10 fire damage with its attacks.  The elemental has a Strength of 22, a Dexterity of 25, is 100% immune to fire, and causes fire damage to any attacker.
-~
+Взывая к силам огня, друид использует эту мощную способность изменения формы, чтобы принять облик элементаля огня огромной силы, имеющего 24-ый уровень здоровья.
 
-@13151=~Earth Elemental Transformation
+Элементальная форма имеет класс защиты -5, THAC0 2 и наносит 1d10 единиц обычного и 1d10 единиц огненного урона каждой атакой. Элементаль имеет силу 22, ловкость 25, 100% иммунитет к огню и наносит огненный урон оппоненту, который атакует элементаля.~
+@13151 = ~Превращение в элементаля земли
 
-Harnessing the power of the earth, this powerful shapechange ability allows the druid to become a 24HD earth elemental of immense strength. The elemental form has an AC of -5, a THAC0 of 2 and does 2D10 crushing damage with its attacks. The elemental has a Strength of 25, a Dexterity of 10, and is 50% immune to all melee and missile attacks.
-~
+Взывая к силам земли, друид использует эту мощную способность изменения формы, чтобы принять облик элементаля земли огромной силы, имеющего 24-ый уровень здоровья.
+
+Элементальная форма имеет класс защиты -5, THAC0 2 и наносит 2d10 дробящего урона каждой атакой. Элементаль имеет силу 25, ловкость 10, и 50% сопротивления рубящему, колющему, дробящему и метательному урону.~
 
 @14000=~The massive dungeon of Watcher's Keep can be accessed once you start Throne of Bhaal.~
 
-@14100=~(Evocation)~
-@14101=~(Invocation/Evocation)~
-@14102=~(Conjuration/Summoning,Invocation/Evocation)~
+@14100=~(Проявление)~
+@14101=~(Воплощение/проявление)~
+@14102=~(Подчинение/призывание, воплощение/проявление)~
 
-@14200=~Spell Shield Dispelled~ 
+@14200=~Щит заклинаний развеян~ 
 
-@14300=~ (cast previously)~
+@14300=~ (прочитано заранее)~
 
-@14400=~ Finally, the spell also protects the caster from magical blindness for 1 turn after it is cast.~
+@14400=~ Это заклинание так же защищает прочитавшего от магической слепоты в течение 1 хода после прочтения.~
 
-@14500=~Drinks Blood~
-@14501=~Giant Rat~
-@14502=~Children of the Night: calls rat swarm~
-@14503=~Children of the Night: calls wolf pack~
-@14504=~Shapeshifts Rat~
-@14505=~Shapeshifts Gaseous Form~
-@14506=~Fades into the mist~
-@14507=~Shapeshifts Bat~
-@14508=~Mesmerism~
+@14500=~Пьет кровь~
+@14501=~Гигантская крыса~
+@14502=~Дети Ночи: призыв стаи крыс~
+@14503=~Дети Ночи: призыв стаи волков~
+@14504=~Смена формы: Крыса~
+@14505=~Смена формы: Газообразная форма~
+@14506=~Растворяется в тумане~
+@14507=~Смена формы: Летучая мышь~
+@14508=~Гипноз~
 
-@14600=~Summon Death Tyrant~
+@14600=~Призыв тирана смерти~
 
 @14700=~You appear to have SCSII's "Item Redistributor" installed. This component is deprecated as of version 16 of SCSII (use Wisp's "item randomizer" instead), but uninstalling it will break your saved games. Do you want to keep it? (Y/N)~
 
@@ -1368,49 +1401,45 @@ Harnessing the power of the earth, this powerful shapechange ability allows the 
 @16007=~Replace +1 arrows with nonmagical "fine" ones~
 @16008=~Potion of Extra Healing~
 @16009=~When wholly consumed, this potion restores 27 hit points to the person.  The effect is instantaneous and the potion is destroyed in the process.~
-@16010=~This arrow is coated in acid so that when it strikes an enemy, it will not only pierce its flesh but also begin to eat away at the wound, enlarging and deepening its severity.
+@16010 = ~Эта стрела покрыта кислотой, так что при попадании она не только пронзает тело врага, но и начинает разъедать края раны, усиливая и углубляя повреждения.
 
+ПАРАМЕТРЫ:
 
-STATISTICS:
+THAC0: +1
+Урон: 1d6 +1, 1d3 кислотой
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: лук~
+@16011=~Огненная стрела – магическая стрела, которая вспыхивает после попадания в цель. Действует примерно так же, как если бы её окунули в масло и подожгли.
 
-Damage:  1D6 + 1
-THACO:  +1
-Damage type:  missile (piercing)
-Special:  1D3 acid damage (no save)
-Weight: 0
-Launcher:  Bow~
-@16011=~The Arrow of Fire is a magical arrow that will burst into flames as it is fired at an enemy.  The effect is similar to an arrow doused in oil and set aflame.
+ПАРАМЕТРЫ:
 
-STATISTICS:
+Урон: 1d6, +1d2 огнем (спасбросок против заклинания отменяет)
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: лук~
+@16012=~Ледяная стрела заколдована таким образом, что после выстрела взрывается крутящимся комом льда и холода. Когда такой ком попадает в жертву, холодный заряд проходит по всему её телу, одновременно обжигая и промораживая его до кости.
 
-Damage:  1D6
-Damage type:  missile (piercing)
-Special:  1D2 fire damage (save vs. spell for none)
-Weight: 0
-Launcher:  Bow~
-@16012=~The arrow of ice is magically enhanced so as to burst into a rolling ball of ice and cold when fired.  When the arrow strikes its victim, a shock of cold will travel through its body, both burning and numbing to the very core.
+ПАРАМЕТРЫ:
 
-STATISTICS:
-
-Damage:  1D6
-Damage type:  missile (piercing)
-Special:  1D2 cold damage (no save)
-Weight: 0
-Launcher:  Bow~
+Урон: 1d6, +1d2 холодом
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: лук~
 
 @16013=~Mages in BG1 cast short-duration spells instantly at start of combat; mages in BG2 only do so if they are created in sight of the PC~
 @16014=~Priests in BG1 cast short-duration spells instantly at start of combat; priests in BG2 only do so if they are created in sight of the PC~
 @16015=~Mages cast short-duration spells instantly at start of combat on difficulty settings of Hard or higher~
 @16016=~Priests cast short-duration spells instantly at start of combat on difficulty settings of Hard or higher~
 
-@16020=~Cursed wound prevents magical healing~
+@16020=~Ослабляющие раны предотвращают магическое исцеление~
 @16021=~Spell Sequencer~
 @16022=~Spell Trigger~
 @16023=~Minor Sequencer~
 @16024=~Initialise AI components (required for all tactical and AI components)~
 @16025=~This component requires the core "initialise AI" component to be installed~
-@16026=~Cursed Wound~
-@16027=~Cursed Wound Healed~
+@16026=~Ослабляющие раны~
+@16027=~Ослабляющие раны вылечены~
 @16028=~Skip the Candlekeep tutorial sections~
 @16029=~Remove the tutorial NPCs from Candlekeep~
 @16030=~Skip Candlekeep altogether (warning: breaks the 4th wall!)~
@@ -1421,23 +1450,23 @@ Launcher:  Bow~
 @16035=~Celestials have normal hit points~
 @16036=~Dragons have a substantial hit point increase~
 @16037=~Dragons have normal hit points~
-@16038=~Enervation~
-@16039=~Burning Ray~
+@16038=~Ослабление~
+@16039=~Обжигающий луч~
 @16040=~Tactical Challenges - BG1~
 @16041=~Tactical Challenges - BG2~
-@16042=~Doppelganger Mage~
-@16043=~Doppelganger Shaman~
-@16044=~Doppelganger Assassin~
+@16042=~Доппельгангер-маг~
+@16043=~Доппельгангер-шаман~
+@16044=~Доппельгангер-ассассин~
 @16045=~This component is obsolete on a ToBEx install~
 @16046=~This component requires "Smarter Mages" to be installed~
 @16047=~This component requires "Smarter Priests" to be installed~
-@16048=~Protection from Undead is ineffective in this place~
+@16048=~В этом месте защита от нежити не помогает~
 @16049=~This component requires "Improved Vampires" to be installed~
-@16050=~Anadramatis~
+@16050=~Анадраматис~
 @16051=~Genies have about 50 percent more hit points than normal~
 @16052=~Genies have normal hit points~
-@16053=~Not Usable By:~ // note to translators: this must be whatever string precedes the list of usability information in (non-EE) items
-@16054=~Usable By:~ // note to translators: this must be whatever string precedes the list of usability information in (non-EE) items
+@16053=~Не могут использовать:~ // note to translators: this must be whatever string precedes the list of usability information in (non-EE) items
+@16054=~Могут использовать:~ // note to translators: this must be whatever string precedes the list of usability information in (non-EE) items
 
 
 
@@ -1540,63 +1569,59 @@ Casting Time: 3
 Area of Effect: Creature touched
 Saving Throw: None
 By means of this spell, the wizard bestows total invulnerability to hurled and projected missiles such as arrows, axes, bolts, javelins, and small stones.  Note, however, that this spell does not convey any protection from such magical attacks as fireballs, lightning bolts, and magic missiles.~
-@20305=~Masterwork Arrow~
-@20306=~The flight arrow, as its name implies, is built for distance.  These are lightweight arrows and are often used for hunting.  Most of these arrows are made of ash or birch and are 30 to 40 inches long. This arrow, however, is of unusually high-quality workmanship.
+@20305=~Отличная стрела~
+@20306 = ~Эта стрела предназначена для стрельбы на дальние расстояния. Она почти ничего не весит и часто используется для охоты. Как правило, большинство таких стрел делают из ясеня или березы, и они имеют длину от тридцати до сорока дюймов. Эта стрела, в отличие от других, сделана необычайно качественно.
 
+ПАРАМЕТРЫ:
 
-STATISTICS:
+THAC0: +1 улучшение
+Урон: 1d6 +1
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: лук
+Не могут использовать:
+ Друид
+ Маг
+ Священник~
+@20307 = ~Отличный болт~
+@20308 = ~Болт или арбалетная стрела, используется для стрельбы из арбалетов любых размеров. Этот болт, в отличие от других, сделан необычайно качественно.
 
-Damage:  1D6 + 1
-THAC0:  +1 bonus
-Damage Type:  missile (piercing)
-Weight: 0
-Launcher:  Bow
-Not Usable By:
-Cleric
-Druid
-Mage~
-@20307=~Masterwork Bolt~
-@20308=~Quarrels or bolts are the ammunition fired by crossbows regardless of the weapon's size.  However, this bolt is of unusually high-quality workmanship.
+ПАРАМЕТРЫ:
 
+THAC0: +1 улучшение
+Урон: 1d8 +1
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: арбалет~
+@20309 = ~Отличный дротик~
 
-STATISTICS:
+@20310 = ~Дротик - это небольшое метательное оружие, которое легко спрятать и можно бросать без применения других приспособлений. Этот дротик сделан необычайно качественно.
 
-Damage:  1D8 +1
-THAC0:  +1
-Damage type:  missile (piercing)
-Weight:  0
-Launcher:  Crossbow~
+ПАРАМЕТРЫ:
 
-@20309=~Masterwork Dart~
+THAC0: +1 улучшение
+Урон: 1d3 +1
+Тип урона: метательный (колющий)
+Фактор скорости: 1
+Оружейный навык: дротик
+Тип: одноручное
+Вес: 0
+Не могут использовать:
+ Священник~
 
-@20310=~The dart is a small, easily concealable missile weapon that is thrown rather than fired from a bow or other launcher. This dart is of unusually high-quality workmanship.
+@20311=~Отличный снаряд~
+@20312=~Снаряд - это просто округлый, хорошо сбалансированный камень. Этот снаряд был обит сталью, что положительно сказалось на точности и уроне.
 
+ПАРАМЕТРЫ:
 
-STATISTICS:
-
-Damage:  1D3 +1
-THAC0:  +1 bonus
-Damage type:  missile (piercing)
-Weight: 0
-Speed Factor: 1
-Proficiency Type: Missile Weapons
-Type:  1-handed
-Not Usable By:
-Cleric~
-
-@20311=~Masterwork Bullet~
-@20312=~The typical bullet is simply a rounded, well-balanced stone. This bullet, however, is steel-shod, improving its accuracy and damage.
-
-STATISTICS:
-
-Damage:  1D4 + 2
-THAC0:  +1
-Damage type:  missile (piercing)
-Weight: 0
-Launcher:  sling~
+THAC0: +1 улучшение
+Урон: 1d4 +2
+Тип урона: метательный (колющий)
+Вес: 0
+Оружие: праща~
 
 @24118=~More realistic wolves and wild dogs~
-@20501=~This character is now level 0. Level them up to choose their initial proficiencies and skills. (Until you do this, their hit points and equipment may be a little odd; don't worry about this. Once you level them up, they may gain more levels (depending on your own experience).~
+@20501=~Сейчас этот персонаж имеет уровень 0. Поднимите уровень, чтобы выбрать ему начальные навыки. Пока вы этого не сделаете, его пункты здоровья и снаряжение могут выглядить странно. Не пугайтесь, как только вы поднимете уровень персонажу, он получит еще несколько уровней (в зависимости от количества опыта, заработанного вашим основным персонажем).~
 
 @20700=~I have need of you, Jaheira, but I would ask you to travel without Khalid, at least for now. The group should not be too large, and we have others who are needed still more.~
 @20701=~Travel w-without me? Jaheira, are you sure this is w-w-wise?~
@@ -1664,11 +1689,11 @@ Launcher:  sling~
 @20841=~I shall do this.~
 @20842=~Okay then.~
 
-@21108=~Uses a wand~
-@21109=~Reads a scroll~
+@21108=~Использует жезл~
+@21109=~Читает свиток~
 
-@21113=~Argh~
-@21114=~Ungh~
+@21113=~Аргх~
+@21114=~Ургх~
 
 @21121=~You may be protected from my wrath... but what of your companions?~
 @21122=~Tell me, hero, are your friends as protected as you?~
@@ -1678,123 +1703,133 @@ Launcher:  sling~
 @21126=~Your protections will fade soon enough. I shall while away the time slaughtering your companions!~
 
 
-@21301 = ~Kobold Chieftain~
-@21302 = ~Kobold Guard~
-@21303 = ~Kobold Shaman~
-@21304 = ~Dagger~
-@21305 = ~"Nome Stikka"~
-@21306= ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.
+@21301 = ~Вождь кобольдов~
+@21302 = ~Кобольд-страж~
+@21303 = ~Кобольд-шаман~
+@21304 = ~Кинжал~
+@21305 = ~"Гномотыка"~
+@21306= ~У типичного кинжала обычно обоюдоострое лезвие с заточенным концом в отличие от ножа, который имеет одностороннюю заточку и несколько короче.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Damage: 1D4
-Damage type: piercing
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type: 1-handed
-Not Usable By:
- Cleric~
-@21307= ~Dagger "Nome Stikka"
-Though kobolds do not normally wield poison daggers, it is evident that they have been given the means to make these.  The crudeness of the construction of this weapon, however, does not lessen its deadliness - in fact, it can be just as deadly to the wielder as it is to the victim!
+Урон: 1d4
+Тип урона: колющий
+Фактор скорости: 2
+Оружейный навык: кинжал
+Тип: одноручное
+Вес: 1
+Не могут использовать:
+ Священник~
+@21307= ~Кинжал: "Гномотыка"
 
-STATISTICS:
+Обычно кобольды не сражаются отравленными кинжалами, очевидно, что технологию изготовления такого оружия они получили от кого-то постороннего. Несмотря на грубую конструкцию, это очень смертоносный кинжал - настолько смертоносный, что владельцу он может причинить ничуть не меньше вреда, чем жертве!
 
-Damage: 1D4 (plus 6 poison; save to avoid)
-Damage type: Piercing
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type:  1-handed
-5% chance of nicking yourself (6 poison)
-Not Usable By:
-   Cleric~
-@21308= ~Poisoned arrows~
-@21309= ~Arrows "Deth Stik"
+ПАРАМЕТРЫ:
 
-These arrows are not of exceptional quality and are, in fact, rather crudely made. However, they have been soaked in a deadly toxin which makes them especially dangerous to wielder and target alike.
+Боевые особенности:
+ - При попадании жертва, провалившая спасбросок против яда, начинает терять по одному пункту здоровья каждую секунду в течение 6 секунд
+ - При каждом ударе существует вероятность, равная 5%, что владелец, проваливший спасбросок против яда, начнет терять по одному пункту здоровья каждую секунду в течение 6 секунд
 
-STATISTICS:
+Урон: 1d4
+Тип урона: колющий
+Фактор скорости: 2
+Оружейный навык: кинжал
+Тип: одноручное
+Вес: 1
+Не могут использовать:
+   Священник~
+@21308= ~Отравленная стрела~
+@21309 = ~Стрела: "Смертопалка"
 
-Damage: 1D6
- (+ 12 hp poison over 6 seconds)
-Weight: 0
-Launcher: Bow
-Special: 5% chance that user
-will poison himself
-Not usable by:
-  Cleric
-  Druid
-  Mage~
+Качество изготовления этих грубых стрел оставляет желать многим лучшего. Однако, они были пропитаны смертоносным токсином, одинаково опасным и для лучника, и для цели.
+
+ПАРАМЕТРЫ:
+
+Боевые особенности:
+ - При попадании жертва, провалившая спасбросок против яда, начинает терять по два пункта здоровья каждую секунду в течение 6 секунд
+ - При каждом выстреле существует вероятность, равная 5%, что владелец, проваливший спасбросок против яда, начнет терять по два пункта здоровья каждую секунду в течение 6 секунд
+
+Урон: 1d6
+Вес: 0
+Оружие: лук
+Не могут использовать:
+ Друид
+ Маг
+ Священник~
 @21310 = ~Kobold Elite~
 
-@21316= ~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter than the dagger.
+@21316= ~У типичного кинжала обычно обоюдоострое лезвие с заточенным концом в отличие от ножа, который имеет одностороннюю заточку и несколько короче.
 
-STATISTICS:
+ПАРАМЕТРЫ:
 
-Damage: 1D4
-Damage type: piercing
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type: 1-handed~
+Урон: 1d4
+Тип урона: колющий
+Вес: 1
+Фактор скорости: 2
+Оружейный навык: кинжал
+Тип: одноручное~
 
-@21317= ~Dagger "Nome Stikka"
-Though kobolds do not normally wield poison daggers, it is evident that they have been given the means to make these.  The crudeness of the construction of this weapon, however, does not lessen its deadliness - in fact, it can be just as deadly to the wielder as it is to the victim!
+@21317= ~Кинжал: "Гномотыка"
 
-STATISTICS:
+Обычно кобольды не сражаются отравленными кинжалами, очевидно, что технологию изготовления такого оружия они получили от кого-то постороннего. Несмотря на грубую конструкцию, это очень смертоносный кинжал - настолько смертоносный, что владельцу он может причинить ничуть не меньше вреда, чем жертве!
 
-Damage: 1D4 (plus 6 poison; save to avoid)
-Damage type: Piercing
-Weight: 1
-Speed Factor: 2
-Proficiency Type: Dagger
-Type:  1-handed
-5% chance of nicking yourself (6 poison)~
+ПАРАМЕТРЫ:
 
-@21319= ~Arrows "Deth Stik"
+Боевые особенности:
+ - При попадании жертва, провалившая спасбросок против яда, начинает терять по одному пункту здоровья каждую секунду в течение 6 секунд
+ - При каждом ударе существует вероятность, равная 5%, что владелец, проваливший спасбросок против яда, начнет терять по одному пункту здоровья каждую секунду в течение 6 секунд
 
-These arrows are not of exceptional quality and are, in fact, rather crudely made. However, they have been soaked in a deadly toxin which makes them especially dangerous to wielder and target alike.
+Урон: 1d4
+Тип урона: колющий
+Фактор скорости: 2
+Оружейный навык: кинжал
+Тип: одноручное
 
-STATISTICS:
+Вес: 1~
 
-Damage: 1D6
- (+ 12 hp poison over 6 seconds)
-Weight: 0
-Launcher: Bow
-Special: 5% chance that user
-will poison himself~
+@21319= ~Стрела: "Смертопалка"
 
-@21401=~Well, look what we got here...~
-@21402=~Tazok said I should keep an eye on ye, see if you was up to no good. I'd say catchin' you sneakin' into his tent sort of proves that one, eh?~
-@21403=~Wait! It's not what you think.~
-@21404=~Here's what I think. I think you're those dogooders from Nashkel, the ones who killed Mulahey and stopped the iron spoilin'. I think you're here to stop the iron shortage, and I think you're fresh from killin' the Throne bigwigs in Tazok's tent.~
-@21405=~Okay, actually it is what you think. But you'll not take <CHARNAME> without a fight!~
-@21406=~<CHARNAME>, eh? To my sides, men! There's a price on this one's head, big enough for all to share!~
-@21407=~Lies, all of it! We're your friends here - come into the tent and we'll explain everything.~
-@21408=~I don't think so. Can't say I believe a word of it, but even if I did, if you've been in the boss's tent you know too much. To my sides, men! We'll serve up these scum to the Chill on a platter!~
-@21409=~So it does. But you'll not take down <CHARNAME> without a fight!~
+Качество изготовления этих грубых стрел оставляет желать многим лучшего. Однако, они были пропитаны смертоносным токсином, одинаково опасным и для лучника, и для цели.
+
+ПАРАМЕТРЫ:
+
+Боевые особенности:
+ - При попадании жертва, провалившая спасбросок против яда, начинает терять по два пункта здоровья каждую секунду в течение 6 секунд
+ - При каждом выстреле существует вероятность, равная 5%, что владелец, проваливший спасбросок против яда, начнет терять по два пункта здоровья каждую секунду в течение 6 секунд
+
+Урон: 1d6
+Вес: 0
+Оружие: лук~
+
+@21401=~Так, посмотрим, что у нас здесь...~
+@21402=~Тазок сказал не спускать с тебя глаз, вдруг ты задумал что-нибудь нехорошее. А он не ошибся, если учесть, что я поймал тебя за копанием в его вещах, а?~
+@21403=~Подожди! Ты все неправильно понял.~
+@21404=~Знаешь, вот как я все понимаю: ты - тот благодетель из Нашкеля, что убил Мулахея и остановил порчу железа. А сюда ты пришел, чтоб остановить железный кризис, и только что перебил важных шишек Трона в палатке Тазока.~
+@21405=~Хорошо, ты прав. Только вот <CHARNAME> не сдастся без боя!~
+@21406=~<CHARNAME>, а? Ко мне, ребята! Награды за эту голову хватит на всех!~
+@21407=~Подлая ложь! Я твой друг - просто зайди в палатку, и я все тебе объясню.~
+@21408=~Ну уж нет. Не верю ни единому слову, а даже если бы я тебе поверил, ты слишком долго был в палатке босса и теперь знаешь слишком много. Ко мне, парни! Отправим эти отбросы в котел к Вызывающим Дрожь!~
+@21409=~Как хочешь. Но <CHARNAME> так просто не сдается!~
 @21410=~Our cover with the bandits is blown. No more time for subterfuge - we must fight or flee.~
 @21411=~NONE KNOW THIS!!  If you know, maybe it was you who did it!!  I take your heads back to see if you're recognized!!~
 @21412=~Heh! You fight pretty good. I not have time for this. But Chill and Talon will make short work of you. Attack!! I want their heads on poles by time I return.~
-@21413=~With the bandits openly hostile and organised against you, it would be suicide to retreat back into Tazok's flammable wooden tent. You must fight or flee.~
-@21414=~Sound the alarm!~
-@21415=~<CHARNAME> - I should have guessed. You've crossed the Iron Throne for the last time.~
-@21416=~Go 'way, human.~
-@21417=~Human scum.~
-@21418=~Get lost, Talon.~
+@21413=~Теперь, когда бандиты организованно выступили против вас, прятаться в деревянной палатке, которую так просто поджечь, было бы самоубийством. Нужно сражаться или бежать.~
+@21414=~Трубите тревогу!~
+@21415=~<CHARNAME>... стоило догадаться. Ты в последний раз встал на пути у Железного Трона.~
+@21416=~Исчезни, человек.~
+@21417=~Человеческое отродье.~
+@21418=~Отстань, Коготь.~
 
+@21501 = ~Махрок,
 
-@21501=~Mahrok,
-High though your price is, I will meet it. You will have earned it, though. <CHARNAME> and <PRO_HISHER> allies have proven remarkably able and have survived much already. But you, I am sure, they will not survive.
+Цена за ваши услуги высока, но я готов выполнить условия сделки. Вам придется заслужить это золото. <CHARNAME> и <PRO_HISHER> союзники уже доказали свои умения. Но без сомнений, вы им не по зубам.
+Принесите мне <PRO_HISHER> голову - и 10000 золотых ваши. Кроме того - как вам известно, меня ждет великое будущее, и я не забуду тех, кто помогал мне в смертной жизни.
 
-If you can bring <PRO_HISHER> head to me, the 10,000 gold are yours. And much more besides, perhaps - as you know, I am destined for great things, and I will remember those who have aided me in mortal life.
+С.~
 
-S.~
+@21502=~Ты умрешь, свинка. Сын Владыки Убийств предложил 10000 золотых за твою голову, <CHARNAME>, и мы их получим.~
 
-@21502=~Little pink ones, you shall all die.  The son of Murder offers 10,000 gold for the head of <CHARNAME>, and we shall have it.~
-
-@21503=~These attacks only get more ferocious. This time it was five ogre magi! And the reward they claimed to be offered - by someone calling himself the "son of Murder", no less! - was enormous. I only hope that in Candlekeep I might find some answers to why all this is happening to me.~
+@21503=~Атаки убийц становятся все яростнее. В этот раз на меня напали пять огров-магов! И награда, предложенная им кем-то, называющим себя самим "Сыном Владыки Убийств" была огромной. Я могу надеяться лишь на то, что в Кендлкипе я найду ответы на все свои вопросы.~
 
 @21601=~This ornate, but poorly balanced, longsword was found within the wreck of Balduran's ship.  Gold weapons are not known to be useful in combat, but legends say that only weapons forged of gold can harm such dread creatures as the Loup Garou.
 
@@ -1830,152 +1865,150 @@ Not Usable By:
 
 @21603=~Ornate Longsword~
 
-@21604=~Why must we fight? Cannot let you leave knowing all this. We could have existed peacefully, but now you have fought and will never accept. Others will come to kill or capture. Adventurers like you always come, do they not? No, I must fight, and you must die! We may still have hope if Selaad returns, but you cannot help anymore.~
-@21605=~Kaishas, we fought only because we were forced to. It was not our doing, but yours, and there is no need for it to go on.~
-@21606=~We were forced to fight, Kaishas, and we fought well - do you really think you can stop us boarding this ship?~
-@21607=~Your village and the tunnels beneath it are now filled with the corpses of your kind. If you really want to fight then so be it, but you're making a mistake.~
-@21608=~Die, then - if you are a monster, I shall treat you as one.~
-@21609=~Such generosity, but if you leave you will exterminate anyway. Others will come, other fools just to fight the "evil" we are. No, we must remain alone here now, and so must you. Die and sleep, and you will not know the loneliness. Perhaps if Selaad returns we will try again. Until then, we stay.~
-@21610=~Kaishas, there is no need for this. This isn't my choice, but we'll kill you if we have to. Do you really think you can stop us where Karoug and Daese couldn't?~
-@21611=~ I... fear that we cannot. But we shall try. No choice remains to us.~
-@21612=~Kaishas, this is insane. You are going to your death, and I don't even want to kill you!~
-@21613=~Perhaps not. But you are wounded and tired, and the pack is close behind you. Even adventurers can fight only so long. Regardless, it must be so. Truly, I am sorry.~
-@21614=~The Mysterious Island
-I have reluctantly fought with Kaishas. She seemed to think there was no other way. She mentioned they might have a second chance if Selaad returned one day. He was their missing chieftain, if I remember correctly.~
-@21615=~Perhaps monsters we are. But we do what we must to survive.~
-@21616=~ You only remind me that this must be. Too much has happened between us. I do not know whether we can stop you or not, but the answer will be known swiftly.~
-@21617=~What choice is there? If truth is known, ruin will come to us!~
-@21618=~Then so be it.~
-@21619=~You can trust us. We'll tell no-one about your people - it will be as if we never came to this place.~
-@21620=~Die well... I am truly sorry that it ends this way.~
-@21621=~How much I would like to believe you! But understand well, the future of my people is at stake here. I cannot take chances.~
-@21622=~We've been risking our lives for your damn people every day since we washed up here! What more do we have to do to persuade you? How many more babies do we have to save from wolfweres? ~
-@21623=~We've been risking our lives for your damn people every day since we washed up here! What more do we have to do to persuade you?~
-@21624=~You can do nothing. Truly, I am sorry.~
-@21625=~You... can do nothing. Maralee will be grateful forever for your deed.... as will I. But brave though it was, you did it without realising our true nature.~
-@21626=~And now I do. Prepare yourself, Kaishas - this ends now.~
-@21627=~This grows ridiculous. Your ingratitude sickens me - I'd hoped that I wouldn't need to see you as a monster, but it looks as if I was wrong.~
-@21628=~Kaishas, do you take me for a fool? I knew you were werewolves before I even spoke to Karoug... frankly I was damn suspicious within five minutes of entering the village! If you're going to try to kill us then go right ahead, but for Ao's sake give us some credit for intelligence!~
-@21629=~I give you much credit, for intelligence and bravery both. Yet a headwoman's duty is all. I cannot risk that you lie.~
-@21630=~Kaishas, please, wait! <CHARNAME> isn't lying! <PRO_HESHE> and I grew close... long after <PRO_HESHE> must have realised the truth about us! Spare <PRO_HIMHER> - <PRO_HESHE> may know our nature, but <PRO_HESHE> will keep our secret.~
-@21631=~ I...~
-@21632=~Kaishas, my Peladan is still alive because of these outsiders. Do I have to let him grow up knowing that we slaughtered Peladan's saviour? That we are monsters in truth as well as form?~
-@21633=~I... I have been a fool. Forgive me, <CHARNAME>, that I brought us to the brink of kinship with the beasts. But we are better than Karoug... thank you for knowing that, even as I forgot it.~
-@21634=~Go, in peace. I do not know what will befall when you confront my husband. Greatly I fear for him, but he brings his fate upon himself. If he will not take back the gift willingly... then you must do what you must do.~
-@21635=~One day, I hope, Peladan will have a <PRO_BROTHERSISTER>. <PRO_HISHER> name will be "<CHARNAME>".~
-@21636=~We will never meet again, <CHARNAME> It.. grieves me. Remember me, even as you forget all else about our people.~
-@21637=~I managed to persuade Kaishas Gan to let us leave in peace... with a bit of help from Delainy. A lovely girl, but some things are not meant to be, I suppose.~
-@21638=~I managed to persuade Kaishas Gan to let us leave in peace... with a bit of help from Durlyle. There was something special between us... but some things are not meant to be, I suppose.~
-@21639=~Indeed it does. Truly, I am sorry.~
-@21640=~You shame me, outsider. Great is our debt to you. Yet a headwoman's duty is all. I cannot risk that you lie.~
-@21641=~You have returned! And you are pack... I smell it on you. But where is Kaishas? Where is my mate?~
-@21642=~Why did you send us? What was meant to happen on that island?~
-@21643=~She remained on the island. Your mate would have killed us when we rejected the curse she laid upon us... but at the last she saw wisdom. Lift the "gift" from us and return to her, "Mendas". There is nothing here for you.~
-@21644=~The log book was nothing! Balduran was nothing! He refused the gift that grandfathers offered him. You were only to give sea charts to Kaishas and kill Karoug so he could not follow. Kaishas would have brought pack here, where I have prepare place for them. Miserable ones! You could not accomplish such simple things? Instead you abandon my family and steal the boat to save your cruel selves?~
-@21645=~It is time to end this banter now, Mendas. It is time that you pay for your lies and your evil. Prepare to die.~
-@21646=~This ends here. Lift the "gift" from us, Mendas, and return to your mate. There is nothing here for you.~
-@21647=~Dogs! You are not fit to die at my hand but die you shall! To me, Baresh! A bloody reckoning is at hand!~
-@21648=~The Mysterious Island
-The mystery of this island has become clear. Mendas/Selaad sent us to the island on the false pretenses of retrieving evidence from what was believed to be Balduran's shipwreck. It was indeed the adventurer's ship, though his personal fate yet remains a mystery. Balduran's crew were infected with lycanthropy sometime during that fateful voyage. The ship was beached and wrecked leaving the two strains of lycanthropes, werewolves and wolfweres, to fight amongst themselves for survival. The more organized werewolves built the village that we recently shipwrecked near on our own fateful voyage. The chaotic wolfweres took residence in the ruins of Balduran's ship and both packs survived in uneasy co-existence since then. Mendas/Selaad eventually took the risk of sailing for the mainland. Somehow he made it and, upon discovering that someone had finally found the island, made up a plausible tale and had us first steal the sea charts, and later travel to the island to put them in his werewolf mate's hands. She had us kill the wolfweres and then infected the party with lycanthropy, intending us to join the pack or die fighting, but we persuaded her to let us leave peacefully. We sailed home to finally discover the truth of Mendas' duplicity. Fate seems to enjoy toying with me.~
-@21649=~I am puzzled, Mendas, or should I say Selaad. Since you are the leader of the werewolves, why did you not sail back to the island yourself?~
-@21650=~I am no sailor. I stay to prepare place for my people. For generations we have been trapped on island. It is time to return home to the land of grandfathers' birth. They needed charts and I needed adventurers who do not ask too much questions. Yet you have failed. I ask again - where is Kaishas?~
-@21651=~"Lift" it? My foolish mate, what have you told them? It is not a curse to be lifted - it is a gift to be savoured! It can only be "cured" by killing the chieftain of the werewolves. I am chieftain and I judge you unworthy to run with my pack. You will die here today. To me Baresh! A bloody reckoning is at hand!~
-@21652=~Selaad Gan is the chief of the true people. He awaits the return of his mate Kaishas. Why have you not returned with her?~
-@21653=~It is not your place to question me. What part do you play in this?~
-@21654=~It seems that we have been deceived. Kaishas is dead and her murderous ilk died with her.~
-@21655=~We were hired to retrieve the logbook of Balduran. Here we have brought it and now we expect payment.~
-@21656=~It seems that we have been deceived. Kaishas remains on the island. We must confront Selaad and have him remove this curse which his mate has foolishly bestowed upon us.~
-@21657=~The master wishes to see his wife, Kaishas Gan. Is she on the vessel still?~
-@21658=~It is not your business. Step aside.~
-@21659=~Who is your master? We work for Mendas of Waterdeep.~
-@21660=~I am Baresh. I am of the true race as you are not. The master wishes to see his wife, Kaishas Gan. Is she on the vessel still?~
-@21661=~The book is nothing! Thy task was to rescue the master's kin. Where is the master's mate, Kaishas?~
-@21662=~Thy task was clear. Travel to the island-home and retrieve master's kin. Failing that, Kaishas was to take the sea charts from thee. Useless manlings! Selaad does not brook failure well.~
-@21663=~Idiot! We were sent on false pretences and somehow it is our fault? Kaishas attacked us and we were forced to defend ourselves. Mendas was betrayed by his own cleverness.~
-@21664=~Mendas deceived us. He is the one that we must confront. You are merely a flunky.~
-@21665=~Idiot! We were sent on false pretences and somehow it is our fault? Now, take us to Selaad!~
-@21666=~Useless wretch! The master will eat thy marrow for this!~
+@21604=~Зачем нам сражаться? Я не могу позволить тебе уйти, ты слишком много знаешь. Мы могли бы жить в мире, но пролилась кровь, и ты уже никогда не согласишься на это. Придут и другие, чтобы убивать или захватывать. Искатели приключений, такие же, как ты, всегда приходят, так ведь? Нет, я должна сражаться, и тебе придется умереть! Если Селаад вернется, у нас появится надежда, но ты нам уже ничем не сможешь помочь.~
+@21605=~Кайшас, меня вынудили начать бой, но продолжать его бессмысленно. Вы сами виноваты, не я.~
+@21606=~Вы сами полезли в драку, Кайшас, хотя и напрасно - я поднимусь на борт этого корабля, и ты думашь, что сможешь меня остановить?~
+@21607=~Твоя деревня и тоннели под ней усеяны трупами тебе подобных. Если так сильно хочешь драться, то будь по-твоему, но ты совершаешь ошибку.~
+@21608=~Тогда умри - раз ты ведешь себя как чудовище, то я и поступлю с тобой как с чудовищем.~
+@21609=~Какое великодушие, однако, уплыв отсюда, ты все равно истребишь нас. Придут другие, другие дураки, которые захотят уничтожить нас, потому что мы "зло". Нет, мы должны оставаться здесь в уединении, и поэтому ты тоже останешься. Умри и усни вечным сном, и тогда не познаешь одиночества. Возможно, если Селаад вернется, мы попытаемся снова. А пока мы будем оставаться здесь.~
+@21610=~Кайшас, это бессмысленно. Я не хочу убивать тебя, но ты не оставляешь мне выбора. Каруг и Даэз ме смогли меня победить, думаешь, ты со мной справишься?~
+@21611=~Я... я не знаю. Но мы попытаемся. Мы не можем иначе.~
+@21612=~Кайшас, это безумие. Ты добиваешься собственной смерти, но я не хочу убивать тебя!~
+@21613=~Возможно и нет. Но ты устал, изранен, а стая уже близко, у тебя за спиной. Даже искатель приключений не может сражаться так долго. Это должно случится. Мне очень жаль.~
+@21614=~Таинственный остров
+Кайшас не оставила мне выбора, кроме как сразиться с ней. Она думала, что у нее нет другого выбора. Теперь мне надо быть начеку относительно некоего Селаада, их пропавшего вождя.~
+@21615=~Может мы и чудовища. Но мы сделаем все, чтобы выжить.~
+@21616=~Это лишь напомнило мне о неизбежном. Теперь между нами слишком много крови. Не знаю, сможем мы остановить тебя, но скоро мы это выясним.~
+@21617=~Разве у нас есть выбор? Если все узнают правду, то нас истребят!~
+@21618=~Пусть будет так.~
+@21619=~Доверься мне. Я никому не расскажу о вас - словно я никогда и не был на этом острове.~
+@21620=~Тогда умри... мне на самом деле жаль, что все закончилось именно так.~
+@21621=~Мне бы хотелось тебе поверить! Но пойми, моей стае грозит гибель. Я не могу рисковать.~
+@21622=~Да я каждый день, с того мгновения, как попал на этот проклятый остров, рисковал жизнью ради твоей стаи! Как еще я могу убедить тебя? Сколько еще детей мне нужно спасти из лап вольфверов?~
+@21623=~Да я каждый день, с того мгновения, как попал на этот проклятый остров, рисковал жизнью ради твоей стаи! Как еще я могу убедить тебя?~
+@21624=~Уже никак. Прости.~
+@21625=~Ты... уже ничего не сможешь сделать. Марали будет вечно благодарна тебе за твой храбрый поступок... как и я. Но тогда ты еще не знал о нашей истинной природе.~
+@21626=~А теперь знаю. Готовься к бою, Кайшас, - покончим с этим.~
+@21627=~Это нелепо. Ты, неблагодарная тварь - я пытался не видеть в тебе чудовище, но зря.~
+@21628=~Ты держишь меня за идиота, Кайшас? Да я понял, что вы вервольфы, задолго до того, как поговорил с Каругом... если честно, у меня возникло огромное недоверие спустя пять минут после входа в вашу деревню! Если ты так рвешься убить меня, давай, но, ради Ао, прекрати считать меня дураком!~
+@21629=~Я отдаю тебе должное - ума и храбрости тебе не занимать. Но я в ответе за стаю. Я не могу рисковать.~
+@21630=~Кайшас, прошу, остановись! <CHARNAME> не лжет! Мы стали друзьями... тогда он уже знал, кто мы. Поверь ему - он знает правду, но никому не расскажет наш секрет.~
+@21631=~Я...~
+@21632=~Кайшас, Пеладан все еще жив лишь благодаря ему. И я должна растить моего мальчика, зная, что мы убили его спасителя? Что мы на самом деле монстры не только внешне, но и внутри?~
+@21633=~Я... поступила глупо. Прости, <CHARNAME>, из-за меня мы почти стали зверьми. Но мы лучше, чем Каруг... ты помнил об этом, а я забыла, спасибо.~
+@21634=~Иди с миром. Не знаю, что случится, когда ты встретишься с моим мужем. Я боюсь за него, но он сам в ответе за свою судьбу. Если он не заберет свой дар добровольно... поступи так, как должно.~
+@21635=~Надеюсь, однажды, у Пеладана появится <PRO_BROTHERSISTER>. И <PRO_HISHER> имя будет "<CHARNAME>".~
+@21636=~Мы больше не встретимся, <CHARNAME>. И это... грустно. Помни меня, даже когда забудешь все остальное о нашем народе.~
+@21637=~Мне удалось убедить Кайшас Ган мирно отпустить меня... с небольшой помощью Делайни. Между нами было нечто особенное... но, видимо, некоторым вещам никогда не бывать.~
+@21638=~Мне удалось убедить Кайшас Ган мирно отпустить меня... с небольшой помощью Дурлила. Между нами было нечто особенное... но, видимо, некоторым вещам никогда не бывать.~
+@21639=~Да, пора. Мне очень жаль.~
+@21640=~Ты пристыдил меня. Мы стольким тебе обязаны. Но я в ответе за стаю. Я не могу рисковать.~
+@21641=~Ты вернулся! И ты в стае... я чувствую это. Но где Кайшас? Где моя жена?~
+@21642=~Зачем ты отправил меня на остров? Что должно было там произойти?~
+@21643=~Она осталась на острове. Твоя жена хотела убить меня, когда я отверг ее проклятие... но она поступила разумно. Убери с меня свой "дар", "Мендас", и возвращайся к жене. Здесь тебе делать нечего.~
+@21644=~Записи бортового журнала - ничто! Балдуран - ничто! Он отказался от дара, предложенного ему нашими предками! Тебе нужно было только отдать морские карты Кайшас и убить Каруга, чтобы он не смог пойти следом. Кайшас привела бы сюда нашу стаю, где я уже приготовил для них место. Ничтожество! Тебе не удалось выполнить такое простое задание? Вместо этого ты бросаешь мою семью на острове и крадешь корабль, лишь бы спасти свою жизнь?~
+@21645=~Пора заканчивать эту беседу, Мендас. Пришло время заплатить за свое зло и за свою ложь. Приготовься к смерти.~
+@21646=~Это закончится здесь и сейчас. Убери с меня свой "дар", "Мендас", и возвращайся к жене. Здесь тебе делать нечего.~
+@21647=~Псина! Ты не стоишь того, чтобы умереть от моей руки, но ты все равно сдохнешь! Кровавая расплата уже близка! Ко мне, Бареш!~
+@21648=~Таинственный остров
+Тайна Мендаса и острова теперь раскрыта. Мендас/Селаад отправил меня на этот остров под предлогом заполучить доказательства того, что считалось обломками корабля Балдурана. Это действительно оказался корабль знаменитого искателя приключений, однако судьба самого Балдурана до сих пор остается загадкой. Во время того злополучного плавания команда Балдурана была заражена какой-то особой формой ликантропии. Корабль выбросило на берег, где вервольфы - оборотни, в которых превратились моряки из команды Балдурана, столкнулись с вольфверами - дикими оборотнями, уже обитавшими на этом острове, после чего они стали бороться друг с другом за выживание. Более организованные вервольфы построили деревню, рядом с которой разбился мой собственный корабль. Дикие же вольфверы поселились среди обломков корабля Балдурана, и с тех пор обе стаи продолжали жить в условиях непростого сосуществования. В конце концов, Мендас/Селаад рискнул доплыть до материка. Каким-то образом ему это удалось, и когда он узнал о том, что кто-то все-таки обнаружил этот остров, выдумал правдоподобную историю и убедил меня сначала украсть карты, а затем отправиться на остров, чтобы эти карты попали в руки его жены, вервольфа-самки. Она заставила меня убить вольфверов, а затем заразила ликантропией, надеясь на то, что я присоединюсь к ее стае или погибну. Мне удалось разойтись с ней миром, забрать карты и приплыть обратно, чтобы, наконец, узнать правду о двуличности Мендаса. Похоже, судьбе нравиться играть со мной.~
+@21649=~Я в замешательстве, Мендас, или вернее сказать Селаад? Раз уж ты предводитель вервольфов, чего же ты сам не уплыл обратно на остров?~
+@21650=~Я не моряк. Я остался здесь, чтобы подготовить место для моего народа. На протяжении многих поколений мы были словно в западне на этом острове. Но пришло время вернуться домой, на землю наших предков. Им нужны были морские карты, а мне нужен был кто-нибудь из искателей приключений, что не задает лишних вопросов. Но тебе не удалось с этим справиться. Я спрошу еще раз - где Кайшас?~
+@21651=~"Убрать" его? Моя глупая жена, что же ты рассказала? Это не проклятие, которое нужно снять - это дар, которым нужно наслаждаться! "Исцелить" эту болезнь можно, лишь убив вождя вервольфов. Вождь я, и у тебя нет ни малейшего шанса. Ты умрешь сегодня здесь. Кровавая расплата уже близка! Ко мне, Бареш!~
+@21652=~Селаад Ган - вождь истинного народа. Он ожидает возвращения своей супруги Кайшас. Почему она не с тобой?~
+@21653=~Ты не вправе расспрашивать меня. Какова твоя роль в этом?~
+@21654=~Похоже, меня обманули. Кайшас мертва, а ее кровожадные родичи умерли вместе с ней.~
+@21655=~Меня наняли, чтобы достать бортовой журнал Балдурана. Он у меня, и теперь я ожидаю оплаты.~
+@21656=~Похоже, меня обманули. Кайшас осталась на острове. Мне нужно найти Селаада и заставить его снять проклятие, которое по глупости наложила его супруга.~
+@21657=~Хозяин желает видеть свою супругу, Кайшас Ган. Она все еще на корабле?~
+@21658=~Это не твое дело. Прочь с дороги.~
+@21659=~Кто твой хозяин? Я работаю на Мендаса из Вотердипа.~
+@21660=~Я Бареш. Я принадлежу к истинной расе, а ты - нет. Хозяин желает видеть свою супругу, Кайшас Ган. Она все еще на корабле?~
+@21661=~Эти записи - ничто! Твоей задачей было спасти родичей хозяина. Где его супруга, Кайшас?~
+@21662=~Твоя задача была проста. Добраться до острова и забрать родичей хозяина. В противном случае тебе нужно было отдать морские карты Кайшас. Никчемная человекоподобная тварь! Селаад не потерпит такого провала.~
+@21663=~Идиот! Меня отправили под ложным предлогом, так это еще и моя вина? Кайшас напала на меня, и мне пришлось защищаться. Мендас сам себя перехитрил.~
+@21664=~Мендас обманул меня. И я собираюсь разобраться именно с ним. Ты всего лишь прислужник.~
+@21665=~Идиот! Меня отправили под ложным предлогом, так это еще и моя вина? Отведи меня к Селаад, сейчас же!~
+@21666=~Кровожадная тварь! Мразь! Хозяин сожрет за это твои мозги!~
 
 
 
-@21701=~These old bones are slow... Long since Icharyd tasted blood...~
-@21702=~But I have not walked Faerun this long without learning much... Not yet am I defeated...~
-@21703=~Myrkul, honour our pact... remember the blood I spilled for thee. Aid me!~
-@21704=~You feel strangely tired after the battle with the undead knight... as if time had moved more swiftly in the world beyond Ulcaster while the battle raged. Looking around, you see dawn's light break over the ruins.~
-@21705=~Wolf of Ulcaster~
-@21706=~aroooouuuuuuu~
-@21707=~Howl of Terror~
-@21708=~Howl of the Grave~
-@21709=~Howl of Disenchantment~
-@21710=~Howl of Ill Fate~
+@21701=~Старые медленные кости... Ихарид так давно не пробовал крови...~
+@21702=~Но я многому научился, пока бродил по Фаэруну... Я еще не побежден...~
+@21703=~Миркул, сдержи свое обещание... вспомни кровь, что я проливал во имя твое. Помоги мне!~
+@21704=~Вы чувствуете странную усталость после битвы с рыцарем-нежитью... словно время шло быстрее в мире за пределами Улкастера. Оглядываясь, вы видите как на горизонте, за руинами, брезжится заря.~
+@21705=~Волк Улкастера~
+@21706=~а-у-у-у-у-у-у-у~
+@21707=~Вой ужаса~
+@21708=~Могильный вой~
+@21709=~Вой отчаяния~
+@21710=~Вой злого рока~
 
-@21801=~You feel the air around you shimmer as the last of the elemental guardians falls. Those amongst you familiar with the arcane arts recognise that a dimensional gateway is forming. Within a few moments you will be transported somewhere else - further into the Tower, no doubt - and an inner voice tells you that it may be as well to prepare yourselves...~
+@21801=~Вы чувствуете, как после смерти последнего стража-элементаля воздух вокруг вас начинает мерцать. Те из ваших спутников, кто знаком с тайными искусствами, подтверждают, что формируется пространственный портал. Через несколько секунд вы будете куда-то телепортированы - на нижние этажи башни, без сомнений - и внутренний голос подсказывает вам, что следует хорошо подготовиться...~
 
-@21901=~Shennara~
-@21902=~Kaalos~
-@21903=~Aye, I guess, but I'll not be long about it. The acolytes I mentioned, they stay with Thaldorn on the fifth floor. Eight of them, there are, and their madness comes in pairs: two priests, two mages, two assassins, two hardened thugs. But there is something wrong about them... if they were here for the simple joys of a pretty coin, I'd have no quarrel with them. But no: they would not deign to be so human. There is something more, some secret agenda and I know not what... Ack, even now I can feel their pestilential eyes upon me. Your lucre can keep me here no longer, I'm afraid.~
-@21904=~Mmn, hello. You must be the city negotiators... Lemme see on the list, here: Emissary... Emissary Tar? Right on time and a pleasure to meet you. My name is Destus Gurn, Assistant Chief Accountant for the Iron Throne's operations on the Sword Coast. Now, just a quick briefing on our negotiating procedures before you head on up the stairs: Thaldorn will be accompanied by a board of eight Iron Throne advisors sent to us from abroad: Zhalimar Cloudwulfe, Gardush, Naaman, Diyab, Shennara, Kaalos, Aasim, and Alai, all of them quite respectable people and eager to meet you. We also have a ninth member on that board, today, a Mr. Lyle Espejo. He is there to ensure that things go smoothly in this time of transition. As for the agenda...~
-@21905=~Those before us were fools, as you are.  Those before us were weak, as you are.  Those before us were not Zhalimar, or Gardush, or Naaman, or Diyab, or Shennara, or Kaalos, or Aasim, or Alai.  Those before us are dead, as you will be.  So it has been decreed; so it shall be done.  So orders Sarevok!~
-@21906=~I am sorry to bring back such painful memories.  I wish to help you, and in doing so, end these dreams that plague me.  Here, take this.  When you do battle against the eight who serve your father's killer, read this scroll and it will protect you from their wrath.  Goodbye now; perhaps we shall meet again.~
-
-
-@22001=~You cannot hide from me, <PRO_BROTHERSISTER>. Your death is inevitable.~
-@22002=~Oh, my foolish <PRO_BROTHERSISTER>... You have no power to harm me. Do you think I chose to confront you in this place through some sense of theater?~
-@22003=~Our dead father's strength suffuses these walls! Here I was to perform the rituals that would make me a god, and here I have already mastered power beyond your puny imaginings. What I began with Zhalimar and the others whom you struck down in Rieltar's mansion, I have now completed.~
-@22004=~These four are my acolytes, the first of my worshippers. While we are within this place, their souls are bound to our father's taint within me. Their power suffuses me, protects me from all harm. It is but a taste of what I shall wield when I ascend, but for now it is more than sufficient to end this little family quarrel.~
-@22005=~Goodbye, <CHARNAME>. I shall not allow your death to be swift.~
-@22006=~A predictable ploy, <PRO_BROTHERSISTER>. And impressive, as well, but ultimately futile. I have three others - and before too long, I will have legions.~
-@22007=~But until then, one must not be wasteful. Come, my acolyte! Your body shall serve me yet!~
-@22008=~Does it end here, then, <PRO_BROTHERSISTER>? You have taken my acolytes, taken my shield from harm. Am I not to become a god?~
-@22009=~No! I deny it! I am Sarevok! I AM LORD OF MURDER!~
-@22010=~Diarmid~
+@21901=~Шеннара~
+@21902=~Каалос~
+@21903=~Да, согласен, но буду краток. Прислужники, о которых я упомянул, находятся вместе с Талдорном на пятом этаже. Их всего восемь: два священника, два мага, два головореза и два ассасина. Но что-то с ними не так - если бы они работали за звонкую монету, у нас не было бы причин для разногласий. Но нет - они не снизошли до обычного человека. Есть нечто большее, некие тайные планы, я не знаю какие... И еще, даже сейчас я чувствую на себе их мерзкие взгляды. Боюсь, никакие деньги не смогут удержать меня здесь.~
+@21904=~М-м-м, здравствуйте. Вы, наверное, участвуете в переговорах со стороны города... Дайте посмотреть в список. Так... Эмиссар... Эмиссар Тар? Как раз вовремя, рад встрече. Меня зовут Дестус Гурн, я заместитель главного бухгалтера Железного Трона по операциям на Побережье Меча. А теперь позвольте провести короткий инструктаж, пока вы не отправились наверх: Талдорна будут сопровождать восемь консультантов Железного Трона, присланных к нам из-за границы: это Залимар Облачный Волк, Гардуш, Нааман, Дийаб, Шеннара, Каалос, Аасим и Алай, очень уважаемые люди, горят желанием с вами встретиться. Также на переговорах будет девятый член группы - мистер Лайл Эспеджо. Он здесь, чтобы гарантировать, что все пройдет гладко в наши сложные времена. Что касается повестки дня...~
+@21905=~Те, кто был до нас, были дураками, как и ты. Те, кто был до нас, были слабы, как и ты. Те, кто был до нас, не были Залимаром, Гардушем и Нааманом, не были Дийабом, Шеннаром и Каалосом, Аазимом и Алайем. Те, кто был до нас, мертвы, как скоро будешь ты. Так решено, так будет сделано. Так приказывает Саревок!~
+@21906=~Прости, что тебе снова пришлось вспомнить об этом. Я хочу помочь тебе и, тем самым, избавиться от кошмаров, что меня мучают. Вот, возьми это. Когда будешь сражаться с теми, кто служит убийце твоего отца, прочитай этот свиток, чтобы защититься от их гнева. А теперь прощай; возможно, мы больше не встретимся.~
 
 
-@22201=~Ho there, <CHARNAME>! Your foster father Gorion tells me that you need to leave the Keep at once. Your very life is in danger and there is no time to lose.~
-@22202=~But before then, it's probably a good idea if you go round the Keep in a leisurely fashion finding lost property and running errands, all for an economically implausible cash reward and an astonishing amount of experience.~
-@22203=~Sounds good, I'm on it.~
-@22204=~Can't I just get the cash and experience right now? The longer I wait, the higher the chance that those first-level assassins in the Keep will finish me off.~
-@22205=~Good luck, <CHARNAME>, and watch out for those rats. See you in Chapter Six.~
-@22206=~I don't see why not. How much are you really going to learn about spell-throwing and swordplay by fetching crossbow bolts, after all?~
-@22207=~Here's the cash and a couple of potions, and some random junk that you can probably sell to someone. Go do your shopping, then I'll take you to Gorion.~
-@22208=~Ready to go, <CHARNAME>?~
-@22209=~Yep, take me to Gorion.~
-@22210=~No, I haven't finished shopping yet.~
-@22211=~Actually, I thought I'd go and do all the quests anyway, and get twice the experience.~
-@22212=~Right this way.~
-@22213=~Very well, <CHARNAME>, but get a move on, I don't have all day.~
-@22214=~In any case, you don't realise just how dangerous it is here for you. Those bounty hunters can do up to one point of damage per blow!~
-@22215=~I understand completely, <CHARNAME>. Greater heroes than you have fallen to temptation at the prospect of getting two Lynx Eye Gems.~
-
-@22401=~<CHARNAME>, I feel a dweomer building... we should prepare ourselves, we will soon be taken from this place. (Not that these simians could tell a dweomer from a doorknob - perhaps I should have used shorter words?)~
-
-@22402=~Dost thou not sense it? Magics swirl around us - we will be gone from this place ere long. And into worse dangers still, I doubt it not.~
-
-@22403=~I feel magics building... I don't think we'll be in this place much longer. Not that it's important, though - it doesn't matter where we die, after all.~
-
-@22404=~<CHARNAME>, I may be new to this magic stuff, but even I can feel a spell this powerful. I think it's some sort of teleportation - maybe we're going to be taken somewhere else? Do you think we ought to get ready, or something - I'd really like to think it's somewhere friendly, but nowhere else in this tower has been!~
-
-@22405=~What's that I feel? Oooh, how exciting?~
-
-@22406=~Is it a teleportation spell? Why yes, it is!~
-
-@22407=~Are we going to be here much longer? Not likely...~
-
-@22408=~Are we going somewhere more dangerous? Who knows?~
-
-@22409=~It's quite obvious to the meanest intelligence - yours, that is - what will happen next. If you weren't as insensitive to magic as a clod of earth, you'd feel the teleportation spell building. Doubtless we're en route to more tedious monsters.~
-
-@22410=~ I suppose there's no point hoping that you'd think of preparing for them without my reminders? No, probably not.~
+@22001=~Тебе не спрятаться от меня, <PRO_BROTHERSISTER>. Твоя смерть неизбежна.~
+@22002=~О, <PRO_BROTHERSISTER>, какая глупость... Ты не в силах навредить мне. Ты же не думаешь, что я выбрал это место ради драматичности?~
+@22003=~Мощь нашего мертвого отца наполняет эти стены! Здесь я собирался провести ритуал, который сделает меня богом, и здесь я уже овладел силой за пределами твоего жалкого воображения. Я завершил то, что начал с Залимаром и остальными, убитыми тобой в особняке Риелтара.~
+@22004=~Эти четверо - мои помощники, первые из моих будущих последователей. Пока мы находимся в этом месте, их души разделяют мою скверну, скверну нашего отца. Их сила наполняет меня, защищает от всякого вреда. Это лишь жалкая толика того, что ждет меня в будущем, но ее более чем достаточно, чтобы закончить эту маленькую семейную ссору.~
+@22005=~Прощай, <CHARNAME>. И не надейся на быструю смерть.~
+@22006=~Предсказуемый ход, <PRO_BROTHERSISTER>. И впечатляющий, хотя и совершенно бесполезный. У меня есть трое других - а когда-нибудь, за мной пойдут легионы.~
+@22007=~Но до тех пор не стоит быть таким расточительным. Сюда, слуга! Твое тело еще мне послужит!~
+@22008=~Тогда покончим с этим, <PRO_BROTHERSISTER>? Тебе удалось избавиться и от моих приспешников, и от моей неуязвимости. Но разве я не стану богом?~
+@22009=~Нет! Я отказываюсь! Я Саревок! Я ВЛАДЫКА УБИЙСТВ!~
+@22010=~Диармид~
 
 
-@22500=~Well, if it ain't the fine hunter who brought me that winter wolf pelt! Can I interest you in anything in my humble shop?~
-@22501=~Yes, what do you have for sale?~
-@22502=~Nothing right now.~
-@22503=~Well, if it isn't another winter wolf pelt! Thing is, I had a buyer lined up for the last one... don't think I can be taking another one off your hands right now. Maybe some trader a bit closer to civilization could help you out. But perhaps I can interest you in something else?~
-@22504=~Perhaps. What do you have for sale?~
-@22505=~Not right now.~
-@22506=~You might have cleared out Firewine Bridge, but there's more than one ogre mage on the Sword Coast who can see why Jenkal is worth keeping around!~
-@22507=~A short way down this low, narrow corridor, it is blocked by a sturdy iron door that has been barred from the other side. You will have to find another way around.~
-@22508=~Winter Wolf Pelts
-The Merchant of Nashkel has promised us gold if we were to bring back a winter wolf pelt.~
+@22201=~Эй, <CHARNAME>! Твой приемный отец Горайон сказал, что тебе нужно немедленно покинуть Кендлкип. Нельзя терять ни минуты - твоя жизнь в опасности.~
+@22202=~Но перед этим ты, наверное, захочешь неспеша обойти крепость, собрать разбросанные вещи, выполнить поручения, и все ради невероятно скромной награды и поразительного количества опыта.~
+@22203=~Отличная мысль. Так я и поступлю.~
+@22204=~А можно просто получить деньги и опыт? Чем дольше я торчу здесь, тем выше шансы, что эти первоуровневые убийцы меня прикончат.~
+@22205=~Удачи, <CHARNAME>, и поосторожнее с крысами. Увидимся в шестой главе.~
+@22206=~Почему бы и нет. Ведь таская арбалетные стрелы можно столько нового узнать о фехтовании и чтении заклинаний, не так ли?~
+@22207=~Вот тебе деньги, парочка зелий и всякое барахло, которое ты наверняка сможешь кому-нибудь продать. А теперь сделай покупки, и я отведу тебя к Горайону.~
+@22208=~Готов идти, <CHARNAME>?~
+@22209=~Ага, отведи меня к Горайону.~
+@22210=~Нет, я еще не закончил делать покупки.~
+@22211=~Знаешь, лучше я все-таки пойду сделаю все задания, получу опыт второй раз.~
+@22212=~Следуй за мной.~
+@22213=~Хорошо, <CHARNAME>, но давай быстрее, я не собираюсь ждать тебя весь день.~
+@22214=~Ты просто не представляешь, как здесь опасно. Эти охотники за головами могут нанести целый пункт урона!~
+@22215=~Я все прекрасно понимаю, <CHARNAME>. Даже более великие герои, чем ты, поддались бы искушению ради парочки дешевых драгоценных камней.~
+
+@22401=~<CHARNAME>, я чувствую появление чар... нам следует подготовиться, скоро мы переместимся в пространстве. (Интересно, эти обезьяны смогут отличить заклинание телепортации от обычного дверного проема - или мне следует использовать слова покороче?)~
+
+@22402=~Чувствуешь? Магия витает вокруг нас - совсем скоро мы покинем это место. Но не сомневаюсь, худшее еще впереди.~
+
+@22403=~Я чувствую, как возникают чары... Не думаю, что мы здесь надолго задержимся. Но это не имеет значения - какая разница, в каком месте мы умрем.~
+
+@22404=~<CHARNAME>, всякие магические штучки мне в новинку, но даже я чувствую это мощное заклинание. Очень похоже на телепортацию, может, сейчас мы куда-то отправимся? Знаешь, нам следует подготовиться - мне бы очень хотелось встретить что-нибудь дружелюбное, но в этой башне такого не бывает!~
+
+@22405=~Что это такое? О-о-о, захватывающе, правда?~
+
+@22406=~Заклинание телепортации? Почему бы и нет!~
+
+@22407=~Мы здесь задержимся? Не похоже...~
+
+@22408=~Навстречу еще большим опасностям? Кто знает?~
+
+@22409=~То, что сейчас произойдет, очевидно даже при таком жалком уме, как твой. Чтобы не почувствовать это заклинание телепортации, нужно быть невосприимчивым к магии, как булыжник. И впереди у нас, без сомнений, еще больше нудных стычек.~
+@22410 = ~Надеяться, что ты решишь подготовиться без моего напоминания, бессмысленно, правда? Ну конечно же.~
+
+@22500=~Вот и он, искусный охотник, раздобывший мне шкуру зимнего волка! Тебя интересуют товары в моем скромном магазине?~
+@22501=~Да, что у тебя есть на продажу?~
+@22502=~Сейчас ничего.~
+@22503=~Привет, надеюсь, ты не насчет шкур зимнего волка! Знаешь, за последней не слишком-то спешит выстраиваться очередь покупателей... нет смысла брать у тебя еще одну. Попробуй продать ее кому-нибудь поближе к цивилизации. Но, возможно, тебя интересуют мои товары?~
+@22504=~Возможно. Что у тебя на продажу?~
+@22505=~Сейчас ничего.~
+@22506=~Может, у тебя и получилось зачистить Мост Фаервайна, но на Побережье Меча найдутся и другие огры-маги, которые оценят полезность Дженкала, не сомневаюсь!~
+@22507=~Короткий путь, лежащий через узкий коридор с низким потолком, заблокирован железной дверью, закрытой с другой стороны. Вам придется идти в обход.~
+@22508=~Шкуры зимних волков
+В Нашкеле мне попался торговец, который готов заплатить мне за шкуру зимнего волка.~
 
