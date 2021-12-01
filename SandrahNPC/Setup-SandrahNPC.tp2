@@ -8410,7 +8410,23 @@ END
 
 COPY_EXISTING ~btelite.cre~ ~override/btelite2.cre~
               WRITE_ASCII 0x280 ~btelite2~
-              
+
+COPY_EXISTING ~angelo.dlg~ ~override~
+  DECOMPILE_AND_PATCH BEGIN
+        REPLACE_TEXTUALLY       ~Kill(Player2)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player3)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player4)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player5)~
+                                ~~
+        REPLACE_TEXTUALLY       ~Kill(Player6)~
+                                ~~
+        REPLACE_TEXTUALLY       ~100,PIERCING~
+                                ~40,PIERCING~
+END
+
 COPY_EXISTING ~stafoak.itm~ ~override~
    SAY NAME1 @1000
    SAY NAME2 @1001
