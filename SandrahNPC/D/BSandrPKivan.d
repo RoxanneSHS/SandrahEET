@@ -223,7 +223,7 @@ DO ~SetGlobal("PSanKevStay","LOCALS",2) SetGlobal("SanKevStay","LOCALS",2)~
 == BP#KIV @156
 =@157
 == BSANDR @158
-= BP#KIV ~Wonderful, steadfast, caring human girls, beautiful as the snow on the Spine of the World and a blooming apple tree in the gardens of Shilmista.~
+== BP#KIV @159
 == BSANDR @160
 EXIT
 
