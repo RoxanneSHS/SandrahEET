@@ -1,4 +1,22 @@
 IF
+Global("Xfighttime","CVAka5",1)
+RealGlobalTimerExpired("XEndure","CVAka5")
+HasItem("wa2robe",Myself)
+THEN
+RESPONSE #100
+DestroyItem("wa2robe")
+END
+
+IF
+Global("Xfighttime","CVAka5",1)
+RealGlobalTimerExpired("XEndure","CVAka5")
+HasItem("staf11",Myself)
+THEN
+RESPONSE #100
+DestroyItem("staf11")
+END
+
+IF
 Global("XSTART","GLOBAL",1)
 GlobalTimerExpired("XeRestT","GLOBAL")
 THEN
@@ -501,6 +519,13 @@ ActionListEmpty()
 THEN
 RESPONSE #100
 MoveToObject(Player1)
+END
+
+IF
+Range(LastSeenBy,10)
+THEN
+RESPONSE #100
+AttackReevaluate(LastSeenBy(Myself),45)
 END
 
 

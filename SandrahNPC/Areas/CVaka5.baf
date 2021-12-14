@@ -9,6 +9,15 @@ ActionOverride("Sanmysx",ReallyForceSpellRES("sppr429",Myself))
 END
 
 IF
+Global("SanXephRet","GLOBAL",12)
+Global("Xfighttime","CVAka5",0)
+THEN
+RESPONSE #100
+SetGlobal("Xfighttime","CVAka5",1)
+RealSetGlobalTimer("XEndure","CVAka5",EIGHT_MINUTES)
+END
+
+IF
 Global("Outclosed","CVAKA5",1)
 Global("SanXephRet","GLOBAL",15)
 PartyHasItem("CVMybust")
