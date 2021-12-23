@@ -2,7 +2,7 @@
 @1    = ~Good night, Shauhana, dream well.~
 @2    = ~You obviously have a lot of questions to your new companion, <CHARNAME>. Maybe now is a good time to ask one of them.~
 @3    = ~Shauhana, you emphasised you orcish heritage, although this is not really obvious. You look like a very pretty human woman to me.~
-@4    = ~It probably will hurt you to stir up unpleasant memories, Sandrah, but your scar is too obvious to be ignored. Do you mind to talk about it?~
+@4    = ~It probably will hurt you to stir up unpleasant memories, Shauhana, but your scar is too obvious to be ignored. Do you mind to talk about it?~
 @5    = ~What is really your relation to this orc clan that is hunting you - and now us as well? You said you are one of them, but also you were their slave and made to fight in the arena pits.~
 @6    = ~My father was an orc chieftain of the Clan that is now hunting me. My mother had human blood in her, although she fought hard all her life to deny it. She was a half-orc but tried to compensate for that by being more *orcish* than any pure-bred.~
 @7    = ~Both of them were fully orcish in their hatred for me and my being so much human.~
@@ -155,7 +155,7 @@
 @154  = ~Have you seen something we have not recognised, Shauhana?~
 @155  = ~Oooh!!~
 @156  = ~What is wrong, Shauhana? Hold on to me, you seem to be trembling.~
-@157  = ~Get yourself together, Shauhana? Pretend you're orc, heh.~
+@157  = ~Get yourself together, Shauhana! Pretend you're orc, heh.~
 @158  = ~(Shauhana shakes her head a few times as if to get something out of her hair. In another moment she has steadied herself again.)~
 @159  = ~Are you fine, my friend? Can you tell us what has happened?~
 @160  = ~Oh, <CHARNAME>, I am sorry - it is - I was...I had not expected it to be like this. I mean Anm, the city. Actually I had no idea what it would be like.~
