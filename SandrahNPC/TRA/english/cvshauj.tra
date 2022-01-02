@@ -30,7 +30,7 @@
 @29   = ~The option to get back the way we came has vanished as well. Shauhana, do you have anything in your knowledge that might help? ~
 @30   = ~There is only one thing that can remove an orc rune of this kind. That is the sacred staff of the head priest of my clan. It goes from one priest to the next with each generation and it must be the one which has sealed these caves. Only the same staff can unseal it again. I am afraid we need to return to Clan's land to get it.~
 @31   = ~The way we came in is blocked and this one as well. There must be another exit into Clan's land. We need to find it.~
-@32   = ~<CHARNAME>, we are on the outskirts of my Clan's village now. Please let me advise you on behalf of our party. We should avoid to get into a real fight against the full Clan's forces, we will loose that.~
+@32   = ~<CHARNAME>, we are on the outskirts of my Clan's village now. Please let me advise you on behalf of our party. We should avoid to get into a real fight against the full Clan's forces, we cannot win that.~
 @33   = ~You are no coward, Shauhana, so if you advise me of being careful, I trust you. But we need that staff. What do you propose? ~
 @34   = ~Even this remote part of the village will be heavily guarded in the daytime. It will be easier to wait until night. Still we will meet heavy opposition. The Shaman's hut we need to reach is in the north.~
 @35   = ~We should stay on this side of the gorge and move north to the last of the bridges. If we move along the hillside then on the other side, we will reach the hut with minimum encounters. It will still be no easy way, but any other is suicide.~
@@ -87,7 +87,7 @@
 @86   = ~(You have observed that Shauhana always keeps on your right side when walking, so the right side of her face has not been visible to you until now. In addition her helmet hides much of her beautiful face anyway.)~
 @87   = ~(As you come across a part of the cave where the ground is covered with a kind of slimy moss, her foot loses its grip for a second and she tumbles against you.)~
 @88   = ~Hoops, sorry, <CHARNAME>, watch out, this stuff is slippery.~
-@89   = ~(While she regains her balance you get a glimpse of the right side of her face. The shock almost makes you loose your balance as well.)~
+@89   = ~(While she regains her balance you get a glimpse of the right side of her face. The shock almost makes you lose your balance as well.)~
 @90   = ~(A long nasty scar runs down from her hairline across her cheek and down to her chin. It is obvious that the wound is old and had been neglected for a long time without a chance for real healing while among the orcs as a slave.)~
 @91   = ~(Whispers) So you have seen it at last. The poor girl must have suffered hard from that injury. And now she suffers even more pain from the stares she receives.~
 @92   = ~I did not intend to stare. It just caught me totally unaware. She is so beautiful otherwise, so non-orcish.~
