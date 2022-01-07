@@ -1,3 +1,9 @@
+VERSION 2.07
+-----------------
+Full Russian translation added
+many cosmetic improvements
+patch 2.6 alignment
+
 VERSION 2.06
 -----------------
 Traified version
@@ -9,18 +15,12 @@ Made Sandrah romance less restrictive
 More dialogue options for friendship path
 Tuned several encounters to take SCS into account
 Added Midnight's book to game
-Removed crossmod White NPC
-Removed crossmod Foundling NPC
-Removed crossmod Varshoon NPC
-Removed crossmod Aeon NPC
-Removed crossmod Fade NPC
 Elfsong ghost added
 Bhaal's daughter plot added
 Sellswords crossmod added
 Item descriptions extended
 LoB flags added
 Black Pits integrated and accessible from Waterdeep
-Added additional compatibility with NTotSC v2.0
 Multiclass handling revised
 
 VERSION 2.04
@@ -35,12 +35,8 @@ Sandrah/Szass in Neera ToB quest added
 New shopkeeper in Nashkel
 Feldepost is a high class inn
 Options to influence Sandrah flirts with other NPCs 
-Gavin Sandrah romance removed
 More spell descriptions added
 Improved Dialogues
-
-Compatibility for Faith and Powers added
-updated fl#add_kit_ee.tpa 
 
 VERSION 2.03b
 -----------------
@@ -85,12 +81,7 @@ Revised dependecies on other mega mods
 Kit implementation refined
 Improved Jen'lig
 
-Removed Ajantis Crossmod
-Removed RE Crossmod
-
 Added Neera, Dorn, Rasaad, Baeloth, Hexxat Crossmod
-Added Sirene NPC Crossmod
-Added Foundling Crossmod
 Added Karlini rescue case
 Neera can get planar sphere if PC not mage
 Hexxat can get thieves guild if PC not thief

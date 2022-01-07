@@ -3,12 +3,12 @@
 BACKUP ~SandrahNPC/backup~
 AUTHOR ~Roxanne - https://baldursextendedworld.com/Sandrah/ or roxanne@baldursextendedworld.com~
 
-VERSION ~v2.06~
+VERSION ~v2.07~
 
 AUTO_TRA ~SandrahNPC/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/english/setup-Sandr.tra~
-LANGUAGE ~Russian~ ~russian~ ~SandrahNPC/TRA/russian/setup-Sandr.tra~
+LANGUAGE ~Russian (by Andrey Balabokhin)~ ~russian~ ~SandrahNPC/TRA/russian/setup-Sandr.tra~
 
 BEGIN
 @1011
