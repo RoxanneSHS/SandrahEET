@@ -8,7 +8,7 @@ VERSION ~v2.07~
 AUTO_TRA ~SandrahNPC/TRA/%s~
 
 LANGUAGE ~English~ ~english~ ~SandrahNPC/TRA/english/setup-Sandr.tra~
-LANGUAGE ~Russian (by Andrey Balabokhin)~ ~russian~ ~SandrahNPC/TRA/russian/setup-Sandr.tra~
+LANGUAGE ~Russian (by arcanecoast.ru team)~ ~russian~ ~SandrahNPC/TRA/russian/setup-Sandr.tra~
 
 BEGIN
 @1011
