@@ -710,6 +710,7 @@ END
 IF
 InParty("Minsc")
 Global("SanMinsParty","LOCALS",2)
+!InParty("CVShau")
 CombatCounter(0)
 Delay(18)
 OR(9)
