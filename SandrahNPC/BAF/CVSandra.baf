@@ -669,6 +669,7 @@ Global("EndofBG1","Global",2)
 GlobalGT("SanBooTlk","GLOBAL",3)
 AreaType(DUNGEON)
 InParty("Minsc")
+!InParty("CVShau")
 Global("SanMinsDung","LOCALS",0)
 THEN
 RESPONSE #100
@@ -690,6 +691,7 @@ IF
 InParty("Minsc")
 GlobalGT("SanBooTlk","GLOBAL",6)
 Global("SanMinsParty","LOCALS",0)
+!InParty("CVShau")
 OR(9)
 InMyArea("Tazok")
 InMyArea("Tazok2")
@@ -708,6 +710,7 @@ END
 IF
 InParty("Minsc")
 Global("SanMinsParty","LOCALS",2)
+!InParty("CVShau")
 CombatCounter(0)
 Delay(18)
 OR(9)
