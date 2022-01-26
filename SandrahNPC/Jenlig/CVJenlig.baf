@@ -122,7 +122,7 @@ END
 
 IF
 Global("JenFouSem","BG0125",3)
-Global("ENDOFBG1","GLOBAL",1)
+Dead("Sarevok")
 PartyHasItem("CVyensw2")
 !InParty(Myself)
 !StateCheck(Player1,CD_STATE_NOTVALID)
