@@ -8602,12 +8602,8 @@ END ELSE BEGIN
   PRINT @1042
 END
 
-/*PRINT ~Better Pathfinding~
-
-ACTION_IF NOT (FILE_CONTAINS ~WeiDU.log~ ~RESTORE_PATHFINDING\.tp2. #[0-9]+ #0 ~) BEGIN
-INCLUDE ~SandrahNPC/lib/pathfinding.tpa~
-END
+PRINT ~Better Pathfinding~
 
 COPY + ~%USER_DIRECTORY%/Baldur.lua~  ~%USER_DIRECTORY%~
 		REPLACE_TEXTUALLY ~'32000'~ ~'400000'~
-EVALUATE_BUFFER*/
+                REPLACE_TEXTUALLY ~'Enhanced Path Search','0'~ ~'Enhanced Path Search','1'~
