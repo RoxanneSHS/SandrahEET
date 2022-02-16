@@ -1,6 +1,7 @@
 IF
 GlobalGT("SanHintFactory","GLOBAL",25)
 AreaCheck("CVSH22")
+!Name("CVorwarl",Myself)
 See([PC])
 THEN
 RESPONSE #100

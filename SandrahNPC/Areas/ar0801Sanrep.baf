@@ -7,7 +7,7 @@ Global("Chavamjump","ar0801",0)
 Delay(12)
 THEN
 RESPONSE #100
-ActionOverride("yschvam",DestroySelf())
+ActionOverride("yscvam",DestroySelf())
 SetGlobal("Chavamjump","ar0801",1)
 END
 
@@ -25,6 +25,6 @@ Global("Chavamjump","ar0801",2)
 GlobalGT("ys_VampChildIsDead","GLOBAL",0)
 THEN
 RESPONSE #100
-ActionOverride("yschvam",DestroySelf())
+ActionOverride("yscvam",DestroySelf())
 SetGlobal("Chavamjump","ar0801",3)
 END
