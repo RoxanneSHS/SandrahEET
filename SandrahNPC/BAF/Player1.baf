@@ -4,7 +4,7 @@ IF
 GlobalLT("Chapter","Global",22)
 Dead("CVSandr")
 InPartyAllowDead("CVSandr")
-Global("ElmRevDau","GLOBAL",0)
+Global("ElmRevDau","GLOBAL",5)
 THEN
 RESPONSE #100
 SetGlobal("ElmRevDau","GLOBAL",1)
