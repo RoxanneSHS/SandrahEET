@@ -710,7 +710,7 @@ IF ~Global("SanRomPath","GLOBAL",1)~THEN REPLY @269GOTO SanAwaitsDr6
 IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY @270GOTO SanAwaitsDr7
 IF~Global("SanRomPath","GLOBAL",1)~THEN REPLY @270GOTO SanAwaitsDr6
 IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY @271GOTO SanAwaitsDr9
-IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY @272EXIT
+IF ~Global("SanRomPath","GLOBAL",2)~THEN REPLY @272 DO ~SetGlobal("SanDrizzt","GLOBAL",2) SetGlobal("SanDrizzt2","GLOBAL",2)~EXIT
 END
 
 IF~~THEN BEGIN  SanAwaitsDr6
@@ -721,7 +721,7 @@ END
 
 IF~~THEN BEGIN SanAwaitsDr6a
 SAY@276
-IF~~THEN EXIT
+IF~~THEN DO ~SetGlobal("SanDrizzt","GLOBAL",2) SetGlobal("SanDrizzt2","GLOBAL",2)~ EXIT
 END
 
 IF~~THEN BEGIN  SanAwaitsDr7
