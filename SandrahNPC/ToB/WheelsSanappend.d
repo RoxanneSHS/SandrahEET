@@ -2,10 +2,10 @@ APPEND Balth
 
 IF WEIGHT #-17 ~Global("DMWWmeldeathdialog","GLOBAL",3)Dead("sendai")Dead("abazigal")!Global("HadBhaal25Dream5","GLOBAL",1)~THEN BEGIN Sanwhatnow1
 SAY @0
-IF ~~THEN REPLY @1GOTO 207
-IF ~Global("DMWWBvMEnd","GLOBAL",2)~THEN REPLY @2DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 207
-IF ~!Global("DMWWBvMEnd","GLOBAL",2)~THEN REPLY @3DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 207
-IF ~~THEN REPLY @4DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 206
+IF~~THEN REPLY @1 GOTO 207 
+IF ~Global("DMWWBvMEnd","GLOBAL",2)~THEN REPLY @2 DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 207
+IF ~!Global("DMWWBvMEnd","GLOBAL",2)~THEN REPLY @3 DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 207
+IF~~THEN REPLY @4 DO~SetGlobal("DMWWmeldeathdialog","GLOBAL",4)~GOTO 206
 END
 END
 
