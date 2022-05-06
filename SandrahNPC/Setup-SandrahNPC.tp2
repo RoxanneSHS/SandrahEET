@@ -7873,7 +7873,7 @@ END ELSE BEGIN
 END
 
 ACTION_IF FILE_EXISTS_IN_GAME ~dw#melis.cre~ THEN BEGIN
-OUTER_SET actual_207 = (STATE_WHICH_SAYS 140 IN ~weidu_external/lang/WHEELS/%s/balthadd.tra~ FROM ~balth~)
+OUTER_SET actual_207 = (STATE_WHICH_SAYS 123 IN ~weidu_external/lang/WHEELS/%s/balthadd.tra~ FROM ~balth~)
 OUTER_SET actual_206 = (STATE_WHICH_SAYS 139 IN ~weidu_external/lang/WHEELS/%s/balthadd.tra~ FROM ~balth~)
 COPY  ~SandrahNPC/ToB/WheelsSanappend.d~ ~SandrahNPC/ToB/WheelsSanappend.d~
 REPLACE_TEXTUALLY ~207~ ~%actual_207%~
