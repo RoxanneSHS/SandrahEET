@@ -26,14 +26,14 @@ The Sandrah Saga consists of three parts<br>
  - Sandrah ToT (Time of Troubles Revisited) is an option to continue the game after RtF while storywise it takes you back into the time before the other events and you become the witness of the events that led to your birth in Baldur's Gate.>>  https://github.com/RoxanneSHS/SandrahToT
 
 Installation<br>
-Sandrah Saga requires a full installation of EET (including SoD) with all the “big mods” installed. Optional contents covers IWD in EET as well.
+Sandrah Saga requires a full installation of EET (including SoD) with all the “big mods” installed. Optional contents covers IWD in EET as well.<br>
 All three parts must be installed before you start a new game in Candlekeep. BP-BGT worldmap must be installed after Sandrah mod to access all new areas.<br>
 <br>
 Additions<br>
 - Alternative Portrait choices https://github.com/RoxanneSHS/SandrahPortrait/archive/master.zip
 - Trilogy walkthrough https://github.com/PaulaMigrate/EETGuide/archive/master.zip
 
-For an EET install including these mods, it is highly recommended to use the install tool for correct install order and completeness.
+For an EET install including these mods, it is highly recommended to use the install tool https://github.com/EE-Mod-Setup/EE-Mod-Setup for correct install order and completeness.
 
 
  <br>
