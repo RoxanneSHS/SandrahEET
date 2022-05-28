@@ -434,7 +434,7 @@ Global("X#SharFallenTalk","GLOBAL",0)
 THEN
 RESPONSE #100
 IncrementGlobal("X#SharGoodCheck","GLOBAL",1)
-RealSetGlobalTimer("X#SharInterestTime","GLOBAL",SHROM_TIMER)
+RealSetGlobalTimer("X#SharInterestTime","GLOBAL",3600)
 SetGlobal("X#SharMatch","GLOBAL",1)
 SetGlobal("X#SharFallenTalk","GLOBAL",1)
 END
