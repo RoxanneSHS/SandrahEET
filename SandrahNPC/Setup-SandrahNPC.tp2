@@ -1,7 +1,7 @@
 // Sandrah Saga for EET, Part One, The Bhaalspawns Story
 
 BACKUP ~SandrahNPC/backup~
-AUTHOR ~Roxanne - https://baldursextendedworld.com/Sandrah/ or roxanne@baldursextendedworld.com~
+AUTHOR ~Roxanne - https://github.com/RoxanneSHS~
 
 VERSION ~v2.07~
 
@@ -5806,8 +5806,11 @@ COPY ~SandrahNPC/Misc2/SharBa2.2DA~ ~override/Sharba2.2DA~
 REPLACE ~ 99992~ @465
 REPLACE ~ 99993~ @465
 
-COPY_EXISTING ~Sahpr4.cre~ ~override/Sahpr4.cre~
+COPY_EXISTING ~udsimyaz.cre~ ~override~
+WRITE_ASCII 0x34 ~udsimyaz~
+COPY_EXISTING ~Sahpr4.cre~ ~override~
               WRITE_ASCII 0x268 ~None~ #8
+              WRITE_ASCII 0x34 ~Sahpr4~
 EXTEND_TOP
 ~Sahpr4.bcs~ ~SandrahNPC/Mods/Sahaugin.baf~    
 COMPILE ~SandrahNPC/Mods/Sallinithyl.d~
