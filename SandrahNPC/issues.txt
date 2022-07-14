@@ -8,3 +8,6 @@ dialog) after Sandrah talked to him.
 4. It can be wrong order of dialogs Elminster can give you a quest with Demons and than meet you in Beregost
 after Nashkel. Elminster will say to Sandrah that she should tell anyone that he is her father. But we already
 know it from him.
+5. If asking Sandrah (via PID) about Waterdeep being in Friendly Arms, she say got to Driendly Arm and ask
+there, but we already in Friendly Arm. Maybe rephrase or add another replicas with location checking.
+
