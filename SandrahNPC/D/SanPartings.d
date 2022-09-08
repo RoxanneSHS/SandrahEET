@@ -19,9 +19,6 @@ IF~~THEN REPLY@5EXIT
 END
 END
 
-ADD_STATE_TRIGGER SafanP 0
-~!InParty("CVSandr")~
-
 ADD_STATE_TRIGGER FaldoP 3
 ~!InParty("CVSandr")~
 
@@ -32,7 +29,7 @@ ADD_STATE_TRIGGER EldotP 0
 ~!InParty("CVSandr")~
 
 CHAIN
-IF WEIGHT #-3~InParty("CVSandr") Global("KickedOut","LOCALS",0)~THEN SafanP Withsan
+IF WEIGHT #-3~InParty("CVSandr") Global("KickedOut","LOCALS",0) GlobalLT("Chapter","Global",8)~THEN SafanP Withsan
 @6
 END
 ++@7+ Withsan1

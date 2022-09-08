@@ -54,6 +54,7 @@ Global("ValJenB","LOCALS",1)
 RealGlobalTimerExpired("SanValriJ","LOCALS")
 !AreaType(DUNGEON)
 InParty("CVJenlig")
+InParty("T2Val")
 See("CVJenlig")
 THEN
 RESPONSE #100

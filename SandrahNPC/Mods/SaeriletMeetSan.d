@@ -211,6 +211,7 @@ APPEND Saerilet
 
 IF WEIGHT #-9~ NumberOfTimesTalkedTo(0)
 Gender(Player1,MALE)
+See(Player1)
 OR(2)
 Alignment(Player1,MASK_GOOD)
 Alignment(Player1,MASK_GENEUTRAL)
