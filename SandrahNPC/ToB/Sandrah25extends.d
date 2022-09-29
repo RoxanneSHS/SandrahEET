@@ -61,7 +61,7 @@ END
 ++@16+ 9
 
 CHAIN
-IF~~THEN Sarvolo VolSan2
+ Sarvolo VolSan2
 @17
 ==BSandr25@18
 ==Sarvolo@19
@@ -72,6 +72,28 @@ END
 ADD_TRANS_ACTION Sarbha03 BEGIN 0 END BEGIN 0 1 2 END ~SetGlobal("SanDoneJahag","ar5007",1)~
 
 ADD_TRANS_ACTION Hgkar01 BEGIN 0 END BEGIN 0 END ~SetGlobal("SanChoices","ar6400",1)~
+
+EXTEND_BOTTOM orphan1 6
+IF~InParty("CVSandr") ~THEN EXTERN BSandr25 OrphanSan1
+END
+
+CHAIN
+IF~~THEN BSandr25 OrphanSan1
+@119
+==orphan1 @120
+DO~
+ClearAllActions()
+StartCutSceneMode()
+FadeToColor([20.0],0)
+Wait(2)
+MoveViewPoint([2402.1482],INSTANT)
+ActionOverride("CVSandr",JumpToPoint([2386.1386]))
+ActionOverride("CVSandr",Face(S))
+FadeFromColor([20.0],0)
+Wait(1)
+ActionOverride("CVSandr",ForceSpellRES("jworphan","orphan2"))
+Wait(5)
+EndCutSceneMode()~EXIT
 
 //Mystra Visits
 
