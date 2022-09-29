@@ -7772,7 +7772,7 @@ SAY NAME1 @553
 SAY NAME2 @553
 SAY UNIDENTIFIED_DESC @553
 SAY DESC @554
-SAY 0x5ae Sandrah
+SAY 0x5ae @1032
 
 COPY ~SandrahNPC/ToB/CVMysClk.bam~ ~override/CVMysClk.bam~
 
