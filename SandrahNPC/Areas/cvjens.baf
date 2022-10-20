@@ -7,6 +7,16 @@ SetGlobal("SanJenship","GLOBAL",2)
 END
 
 IF
+GlobalLT("SanJenship","GLOBAL",5)
+Dead("CvJenhu1")
+Dead("CvJenhu2")
+CombatCounter(0)
+THEN
+RESPONSE #100
+SetGlobal("SanJenship","GLOBAL",5)
+END
+
+IF
 Global("SanJenship","GLOBAL",5)
 Dead("CvJenhu1")
 CombatCounter(0)
