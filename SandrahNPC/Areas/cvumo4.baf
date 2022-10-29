@@ -36,6 +36,15 @@ AddJournalEntry(@576,QUEST_DONE)
 END
 
 IF
+GlobalGT("SanBeginRTF","GLOBAL",1)
+Global("MoveOn","cvumo4",0)
+THEN
+RESPONSE #100
+SetGlobal("MoveOn","cvumo4",1)
+Unlock("AR6005Door1")
+END
+
+IF
 Global("CVUMHostile","GLOBAL",1)
 Global("SandrahJoined","GLOBAL",1)
 THEN
