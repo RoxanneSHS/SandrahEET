@@ -66,7 +66,7 @@
 @65   = ~(He turns to you.) You seem to be the leader of this ragged party and hopefully more reasonable than this blinded good doer of Mystra. What is your answer?~
 @66   = ~<CHARNAME>, this item seems to be of significance to Talos' followers. As such its foreseen use cannot be a good one. Even if we do not know yet, I beg you not to give it to them.~
 @67   = ~Shut up, girl, let your leader speak now.~
-@68   = ~We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. Take it, priest.~
+@68   = ~We must avoid this bloodshed, Sandrah. I will not risk the wrath of the Storm Lord upon our company. Take it, priest.~
 @69   = ~I agree with my counsellor, you have murdered and stolen once before for this item already, your intention now is not to be trusted.~
 @70   = ~We don't have what you ask for, priest. We left the booty on some slain *brothers* of yours not far from here. Pick it up there or just decide you want to join their fate.~
 @71   = ~What you search is with some dead brothers of your faith a bit to the south of here. Just let us pass, we have nothing to do with you.~
@@ -109,7 +109,7 @@
 @108  = ~Ha, a silly baby priestess of Mystra - don't interfere in matters too big for you or your weak goddess. Try to interfere and you will vanish in this wilderness without a trace.~
 @109  = ~You have no right to ask for something when your god has trespassed into our plane with his acts against the Water Queen.~
 @110  = ~<CHARNAME>, the gods have no right to misuse us mortals for their internal quarrels. We HAVE A RIGHT to defend ourselves against such!~
-@111  = ~We must avoid this bloodshed, Sandrah. I will not risk the wraith of the Storm Lord upon our company. ~
+@111  = ~We must avoid this bloodshed, Sandrah. I will not risk the wrath of the Storm Lord upon our company. ~
 @112  = ~I agree with my counsellor, you were the ones to violate the laws of the prime and the gods.~
 @113  = ~We will hear first what this priestess' child up north has to say to this case.~
 @114  = ~Fine, we will help you remember this lesson better. ~
