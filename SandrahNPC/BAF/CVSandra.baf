@@ -1966,6 +1966,7 @@ IF
 !StateCheck("Branwen",CD_STATE_NOTVALID)
 !See([ENEMY])
 CombatCounter(0)
+InParty("Branwen")
 OR(7)
 Global("SanBranDzt","GLOBAL",1)
 Global("SanBranFrT","GLOBAL",3)
