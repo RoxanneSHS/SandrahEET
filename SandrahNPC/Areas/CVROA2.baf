@@ -49,3 +49,11 @@ THEN
 RESPONSE #100
 SetGlobal("SanSharInt","GLOBAL",35)
 END
+
+IF
+Global("barrack","CVRoa2",0)
+THEN
+RESPONSE #100
+SetGlobal("barrack","CVRoa2",1)
+OpenDoor("Door03")
+END
