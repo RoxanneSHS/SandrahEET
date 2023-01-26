@@ -4268,14 +4268,14 @@ COPY_EXISTING ~Vampif01.cre~ ~override/Vampif01.cre~
 COPY_EXISTING ~gromg13.cre~ ~override/gromg13.cre~
               WRITE_ASCII 0x280 ~gromg13~
 COPY_EXISTING ~Raiken.cre~ ~override/Raiken.cre~
-              WRITE_ASCII 0x34 ~Tevens~
+              WRITE_ASCII 0x34 ~teven~
 COPY_EXISTING ~chalcy01.cre~ ~override~
               WRITE_ASCII 0x34 ~cyrics~
 COPY_EXISTING ~BlackL.cre~ ~override~
               WRITE_ASCII 0x34 ~BlackL~ #8
               WRITE_ASCII 0x280 ~BlackL~
 COPY_EXISTING ~Teven.cre~ ~override/Teven.cre~
-              WRITE_ASCII 0x34 ~Tevens~
+              WRITE_ASCII 0x34 ~teven~
 COPY_EXISTING ~F_Wailin.cre~ ~override/F_Wailin.cre~
               WRITE_ASCII 0x280 ~Wailin~
 COPY_EXISTING ~prihel.cre~ ~override~
@@ -6069,7 +6069,7 @@ WRITE_ASCII 0x250 ~Mage8e~
 COPY_EXISTING ~bw05ffge.CRE~ ~override/bw05ffge.CRE~
 WRITE_ASCII 0x248 ~TalkSan1~
 COPY_EXISTING ~bw05teve.cre~ ~override/bw05teve.cre~      
-              WRITE_ASCII 0x34 ~Tevens~
+              WRITE_ASCII 0x34 ~Teven~
 EXTEND_TOP ~CVSandra.bcs~ ~SandrahNPC/Mods/GreyClanEp1.baf~
 PRINT ~ Grey Clan Episode 1 continues - installed sequel~
 
