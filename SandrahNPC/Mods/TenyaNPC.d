@@ -11,8 +11,8 @@ IF~~THEN B2#TenyJ JenTeny1
 @2
 =@3
 END
-++@4EXTERN B2#TenyJ 111
-++@5EXTERN B2#TenyJ 111
+++@4EXTERN B2#TenyJ 185
+++@5EXTERN B2#TenyJ 185
 
 CHAIN
 IF~~THEN B2#TenyJ SanTeny1
@@ -20,8 +20,8 @@ IF~~THEN B2#TenyJ SanTeny1
 =@7
 ==B2#TenyJ IF~InMyArea("Pellig")~THEN@8
 END
-++@9EXTERN B2#TenyJ 111
-++@10EXTERN B2#TenyJ 111
+++@9EXTERN B2#TenyJ 185
+++@10EXTERN B2#TenyJ 185
 
 CHAIN
 IF~Global("Umbowl","GLOBAL",5)~THEN B2#TenyJ Sandid1

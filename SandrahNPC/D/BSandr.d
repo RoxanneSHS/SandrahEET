@@ -7022,7 +7022,7 @@ IF WEIGHT #-3~NumTimesTalkedTo(0)InParty("CVSandr")~THEN F_Regis2 Searchcatti3
 //    Imoens Baby Interpretation
 
 CHAIN
-IF ~Global("Formedcloth","GLOBAL",8) ~THEN BSANDR ImoWinBabe
+IF ~Global("Formedcloth","GLOBAL",8)!AreaCheck("CVSANT")!AreaCheck("CVSANS") ~THEN BSANDR ImoWinBabe
 @3709
 DO ~SetGlobal("Formedcloth","GLOBAL",9)~
 == Bimoen IF  ~InParty("Imoen2")~THEN @3710
