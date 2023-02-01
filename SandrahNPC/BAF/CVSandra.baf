@@ -8125,6 +8125,7 @@ END
 IF
 Global("Formedcloth","GLOBAL",8)
 !AreaCheck("CVSANT")
+!AreaCheck("CVSANS")
 THEN
 RESPONSE #100
 MoveToObject(Player1)
