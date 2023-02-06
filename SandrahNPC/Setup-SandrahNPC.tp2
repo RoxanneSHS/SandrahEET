@@ -2987,6 +2987,8 @@ SAY NAME1 @563
 SAY NAME2 @563
 
 COPY ~SandrahNPC\CRE/WatchMys.cre~ ~override\WatchMys.cre~
+SAY NAME1 @1098
+SAY NAME2 @1098
 
 COPY ~SandrahNPC\CRE/Hilhus.cre~ ~override\Hilhus.cre~
 
@@ -3780,6 +3782,7 @@ SAY DESC @126
 COPY ~SandrahNPC/ITM/SanEtg.itm~ ~override/SanEtg.itm~
 SAY NAME1 @128
 SAY NAME2 @129
+SAY UNIDENTIFIED_DESC @128
 SAY DESC @130
 
 COPY ~SandrahNPC/ITM/SanHamM.itm~ ~override/SanHamM.itm~
