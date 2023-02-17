@@ -8619,3 +8619,4 @@ PRINT ~Better Pathfinding~
 COPY + ~%USER_DIRECTORY%/Baldur.lua~  ~%USER_DIRECTORY%~
 		REPLACE_TEXTUALLY ~'32000'~ ~'400000'~
                 REPLACE_TEXTUALLY ~'Enhanced Path Search','0'~ ~'Enhanced Path Search','1'~
+                REPLACE_TEXTUALLY ~Frame Rate','30')~ ~Frame Rate','30')                          SetPrivateProfileString('Game Options','Enhanced Path Search','1')~
