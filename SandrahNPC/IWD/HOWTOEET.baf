@@ -19,12 +19,9 @@ THEN
 		ActionOverride(Player4,SetSequence(SEQ_SLEEP))
 		ActionOverride(Player5,SetSequence(SEQ_SLEEP))
 		ActionOverride(Player6,SetSequence(SEQ_SLEEP))
-		//MoveGlobal("FC0125","fcsherri",[737.773])
-		//ActionOverride("fcsherri",FaceObject(Player1))
 		Wait(1)
 		FadeFromColor([15.0],0)
 		Wait(1)
-		//MoveContainerContents("BG0125*IdImportContainer","FC0125*IdImportContainer")
 		Wait(2)
 		SetSequence(SEQ_AWAKE)
 		ActionOverride(Player2,SetSequence(SEQ_AWAKE))
@@ -33,10 +30,7 @@ THEN
 		ActionOverride(Player5,SetSequence(SEQ_AWAKE))
 		ActionOverride(Player6,SetSequence(SEQ_AWAKE))
 		Wait(1)
-		//SetGlobal("SHERRY_PLOT","GLOBAL",81)
 		EndCutSceneMode()
-		//SetCutSceneLite(TRUE)
-		//ActionOverride("fcsherri",StartDialogNoSet(Player1))
 END
 
 
