@@ -669,6 +669,7 @@ DisplayStringHead(Myself,@826)
 END
 
 IF
+!Global("PARTY_IN_ICEWIND_DALE","GLOBAL",1)
 !HasItem("CVJensw",Myself)
 !HasItem("CVJensw",Player1)
 !HasItem("CVJensw",Player2)
@@ -687,6 +688,7 @@ ActionOverride(Player6,PickUpItem("CVJensw"))
 END
 
 IF
+HasItem("CVJensw",Myself)
 !HasItemEquiped("CVJensw",Myself)
 !See(NearestEnemyOf(Myself))
 CombatCounter(0)
