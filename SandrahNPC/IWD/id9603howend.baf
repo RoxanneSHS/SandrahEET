@@ -44,5 +44,5 @@ ApplySpellRES("clearcld",Player1)
 Wait(1)
 FadeFromColor([0.0],0)
 ClearAllActions()
-StartCutScene("IDTOEET1")
+StartCutScene("HOWTOEET")
 END

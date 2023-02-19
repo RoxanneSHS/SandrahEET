@@ -1,0 +1,65 @@
+IF
+	True()
+THEN
+	RESPONSE #100
+		CutSceneId(Player1)
+		Wait(1)
+		LeaveAreaLUAPanic("BG0702","",[393.314],14)
+		LeaveAreaLUA("BG0702","",[393.314],14)
+		ActionOverride(Player2,LeaveAreaLUA("BG0702","",[361.353],6))
+		ActionOverride(Player3,LeaveAreaLUA("BG0702","",[440.387],12))
+		ActionOverride(Player4,LeaveAreaLUA("BG0702","",[471.354],4))
+		ActionOverride(Player5,LeaveAreaLUA("BG0702","",[328.305],2))
+		ActionOverride(Player6,LeaveAreaLUA("BG0702","",[488.388],10))
+		SetGlobal("PARTY_IN_ICEWIND_DALE","GLOBAL",0)
+		Wait(1)
+		SetSequence(SEQ_SLEEP)
+		ActionOverride(Player2,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player3,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player4,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player5,SetSequence(SEQ_SLEEP))
+		ActionOverride(Player6,SetSequence(SEQ_SLEEP))
+		//MoveGlobal("FC0125","fcsherri",[737.773])
+		//ActionOverride("fcsherri",FaceObject(Player1))
+		Wait(1)
+		FadeFromColor([15.0],0)
+		Wait(1)
+		//MoveContainerContents("BG0125*IdImportContainer","FC0125*IdImportContainer")
+		Wait(2)
+		SetSequence(SEQ_AWAKE)
+		ActionOverride(Player2,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player3,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player4,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player5,SetSequence(SEQ_AWAKE))
+		ActionOverride(Player6,SetSequence(SEQ_AWAKE))
+		Wait(1)
+		//SetGlobal("SHERRY_PLOT","GLOBAL",81)
+		EndCutSceneMode()
+		//SetCutSceneLite(TRUE)
+		//ActionOverride("fcsherri",StartDialogNoSet(Player1))
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
