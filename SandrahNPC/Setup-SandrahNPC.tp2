@@ -8559,6 +8559,7 @@ COMPILE
 ~SandrahNPC\IWD/koveras1.baf~
 ~SandrahNPC\IWD/HOWTOEET.baf~
 ~SandrahNPC\IWD/brunos.baf~
+~SandrahNPC\IWD/idshsan1.baf~
 EXTEND_TOP
 ~CVSandra.bcs~ ~SandrahNPC\IWD/SanIWDtriggers.baf~
 EXTEND_TOP
