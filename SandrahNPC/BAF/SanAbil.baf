@@ -508,7 +508,7 @@ IF
 Global("SanKillBonus","LOCALS",5)
 OR(2)
 GlobalGT("SanKillBG1","GLOBAL",1550)
-Global("Formedcloth","GLOBAL",24)
+GlobalGT("Formedcloth","GLOBAL",23)
 !See([ENEMY])
 CombatCounter(0)
 THEN
@@ -558,6 +558,8 @@ GlobalLT("SanKillBonus","LOCALS",6)
 THEN
 RESPONSE #100
 SetGlobal("SanKillBonus","LOCALS",6)
+AddSpecialAbility("CVInvis")
+AddSpecialAbility("CVInvis")
 END
 
 IF
