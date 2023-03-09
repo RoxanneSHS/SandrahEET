@@ -406,7 +406,7 @@ END
 IF ~~THEN BEGIN SoulBack9
 SAY@163
 =@164
-IF~~THEN REPLY@165DO ~SetGlobal("SandrahJoined","GLOBAL",0) ActionOverride("CVSandr",MoveBetweenAreas("CVRtf1",[803.624],2)) ~EXIT
+IF~~THEN REPLY@165DO ~SetGlobal("SandrahOutForToB","GLOBAL",1)~EXIT
 END
 
 IF ~~THEN BEGIN SoulBack10

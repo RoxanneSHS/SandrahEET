@@ -31,3 +31,14 @@ RESPONSE #100
 SetGlobal("MoveChapter","ar4000",1)
 SetGlobal("Chapter","GLOBAL",20)
 END
+
+IF
+Global("SandrahOutForToB","GLOBAL",1)
+InParty("CVSandr")
+THEN
+RESPONSE #100
+SetGlobal("SandrahOutForToB","GLOBAL",2)
+SetGlobal("SandrahJoined","GLOBAL",0) 
+ActionOverride("CVSandr",LeaveParty())
+ActionOverride("CVSandr",MoveBetweenAreas("CVRtf1",[803.624],2))
+END
