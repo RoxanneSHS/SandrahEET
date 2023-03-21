@@ -300,10 +300,6 @@ SAY@110
 IF~~THEN DO~SetGlobal("SanRaiseMys","GLOBAL",2) ActionOverride("Finmel01",DestroySelf()) ActionOverride("Balth2",DestroySelf()) ActionOverride("CVqidr2",DestroySelf())ClearAllActions()StartCutSceneMode() StartCutScene("CVcut301")~EXIT
 END
 
-IF WEIGHT #-11~Global("SandrahSummoned","GLOBAL",2)~THEN BEGIN SanMystCalls2
-SAY@112IF~~THEN DO~SetGlobal("SandrahSummoned","GLOBAL",3) ClearAllActions()StartCutSceneMode() StartCutScene("CVcut304")~EXIT
-END
-
 END
 
 

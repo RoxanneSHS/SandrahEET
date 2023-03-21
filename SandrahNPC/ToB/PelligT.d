@@ -7,7 +7,7 @@ END
 
 IF~~THEN BEGIN PellMess2
 SAY@2
-IF~~THEN REPLY@3DO~SetGlobal("SandrahSummoned","GLOBAL",2)~GOTO PellMess3
+IF~~THEN REPLY@3DO~SetGlobal("SandrahSummoned","GLOBAL",3)~GOTO PellMess3
 END
 
 IF~~THEN BEGIN PellMess3

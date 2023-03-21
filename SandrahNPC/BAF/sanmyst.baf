@@ -1,12 +1,11 @@
 IF
 See("CVSandr")
-OR(7)
+OR(6)
 Global("ToTablet1","Global",1)
 Global("SanLive","GLOBAL",2)
 Global("SanEndBG1Plot","GLOBAL",3)
 Global("SanMystApp","arpo31",1)
 Global("SanRaiseMys","GLOBAL",2)
-Global("SandrahSummoned","GLOBAL",3)
 Global("SanHintFactory","GLOBAL",33)
 THEN
 RESPONSE #100

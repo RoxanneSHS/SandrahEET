@@ -33,29 +33,6 @@ CreateCreature("Balth2",[634.774],8)
 END
 
 IF
-Global("SandrahSummoned","GLOBAL",2)
-!InMyArea("CVSandr")
-Global("Sanex","cvrtf1",0)
-THEN
-RESPONSE #100
-CreateCreature("Sandrah",[803.624],2)
-ActionOverride("CVSandr",SetNumTimesTalkedTo(1))
-SetGlobal("Sanex","cvrtf1",1)
-END
-
-IF
-Global("SandrahJoined","GLOBAL",0)
-InMyArea("CVSandr")
-Global("Sanex","cvrtf1",0) 
-!Global("SandrahSummoned","GLOBAL",2)
-THEN
-RESPONSE #100
-ActionOverride("CVSandr",SetNumTimesTalkedTo(1))
-SetGlobal("Sanex","cvrtf1",1)
-SetGlobal("SandrahSummoned","GLOBAL",2)
-END
-
-IF
 Global("StartEndBios","cvrtf1",9)
 THEN
 RESPONSE #100

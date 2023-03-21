@@ -23,7 +23,7 @@ END
 
 IF~~THEN BEGIN PT2513
 SAY@9
-IF~~THEN REPLY@10DO ~SetGlobal("SandrahJoined","GLOBAL",0) ActionOverride("CVSandr",MoveBetweenAreas("CVRtf1",[803.624],2)) SetGlobal("SandrahSummoned","GLOBAL",2)~EXIT
+IF~~THEN REPLY@10DO ~SetGlobal("SandrahJoined","GLOBAL",0) ActionOverride("CVSandr",MoveBetweenAreas("CVRtf1",[803.624],2)) SetGlobal("SandrahSummoned","GLOBAL",3)~EXIT
 END
 
 IF~Global("SandrahJoined","GLOBAL",26)~THEN BEGIN MeetUM3

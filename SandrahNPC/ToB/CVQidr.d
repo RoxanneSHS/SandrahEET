@@ -35,7 +35,7 @@ END
 APPEND CVSan25J
 IF~~THEN BEGIN SanPartSist
 SAY@15
-IF~~THEN DO~ActionOverride("CVSandr",LeaveParty()) ActionOverride("CVSandr",EscapeArea()) ActionOverride("CVQidr",EscapeArea()) SetGlobal("SandrahSummoned","GLOBAL",2) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
+IF~~THEN DO~ActionOverride("CVSandr",LeaveParty()) ActionOverride("CVSandr",EscapeArea()) ActionOverride("CVQidr",EscapeArea()) SetGlobal("SandrahSummoned","GLOBAL",3) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
 FadeToColor([30.0],0)
 CutSceneId(Player1)
 RestorePartyLocations()

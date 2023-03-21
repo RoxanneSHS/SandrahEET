@@ -722,7 +722,7 @@ END
 IF~~THEN BEGIN SanWantsSeeQi4
 SAY@305
 IF~~THEN DO~ActionOverride("CVSandr",LeaveParty()) ActionOverride("CVSandr",EscapeArea())
-SetGlobal("SandrahSummoned","GLOBAL",2) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
+SetGlobal("SandrahSummoned","GLOBAL",3) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
 FadeToColor([30.0],0)
 CutSceneId(Player1)
 RestorePartyLocations()
@@ -745,7 +745,7 @@ END
 IF~~THEN BEGIN SanWantsSeeQi7
 SAY@312
 IF~~THEN DO~ActionOverride("CVSandr",LeaveParty()) ActionOverride("CVSandr",EscapeArea())
-SetGlobal("SandrahSummoned","GLOBAL",2) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
+SetGlobal("SandrahSummoned","GLOBAL",3) SetGlobal("SandrahJoined","GLOBAL",25) ClearAllActions()
 FadeToColor([30.0],0)
 CutSceneId(Player1)
 RestorePartyLocations()
