@@ -17,6 +17,25 @@ DisplayStringHead("Beast",@457)
 END
 
 IF
+Global("FirstVisit","ar0406",0)
+THEN
+RESPONSE #100
+SetGlobal("FirstVisit","ar0406",1)
+END
+
+IF
+Global("FirstVisit","ar0406",1)
+!InParty("Minsc")
+!InMyArea("Minsc")
+THEN
+RESPONSE #100
+SetGlobal("FirstVisit","ar0406",2)
+MoveGlobal("AR0406","Minsc",[1178.1386])
+ActionOverride("Minsc",SetDialog("minscP"))
+ActionOverride("Minsc",SetGlobal("KickedOut","LOCALS",1))
+END
+
+IF
 InMyArea("CVSandr")
 !Dead("Lehtinan")
 Global("SanHendak","GLOBAL",2)
