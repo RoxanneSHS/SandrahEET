@@ -921,6 +921,7 @@ END
 IF
 Global("SanOnBalduIsl","GLOBAL",1)
 AreaCheck("BG1500")
+Global("infected","GLOBAL",0)
 Global("SanPackW","LOCALS",0)
 THEN
 RESPONSE #100
@@ -931,6 +932,7 @@ IF
 Global("SanPackW","LOCALS",2)
 AreaCheck("BG1500")
 Dead("karoug")
+Global("infected","GLOBAL",0)
 THEN
 RESPONSE #100
 SetGlobal("SanPackW","LOCALS",3)

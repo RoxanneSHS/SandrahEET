@@ -43,6 +43,18 @@ IF
 Clicked([ANYONE])
 Range(LastTrigger,12)
 Global("Coffin1","CVELS4",2)
+!PartyHasItem("CVvacry")
+Global("IfNotFirst","CVEls4",0)
+THEN
+RESPONSE #100
+SetGlobal("IfNotFirst","CVEls4",1)
+GiveItemCreate("CVvacry",[PC],0,0,0)
+END
+
+IF
+Clicked([ANYONE])
+Range(LastTrigger,12)
+Global("Coffin1","CVELS4",2)
 THEN
 RESPONSE #100
 DisplayString(Myself,@533)
