@@ -1,20 +1,22 @@
 IF
 Global("CbRopeBridgeMade","AR4330",3)
-InMyArea("Pellig")
+InMyArea("Pellig")   
+Global("CbRopeBridgeP","AR4330",0)
 Delay(10)
 THEN
 RESPONSE #100
 ActionOverride("Pellig",JumpToPoint([249.428]))
-SetGlobal("CbRopeBridgeMade","AR4330",4)
+SetGlobal("CbRopeBridgeP","AR4330",1)
 END
 
 
 IF
-Global("CbRopeBridgeMade","AR4330",4)
+Global("CbRopeBridgeMade","AR4330",3)
+Global("CbRopeBridgeH","AR4330",0)
 InMyArea("Haiass")
 Delay(6)
 THEN
 RESPONSE #100
 ActionOverride("Haiass",JumpToPoint([276.68]))
-SetGlobal("CbRopeBridgeMade","AR4330",5)
+SetGlobal("CbRopeBridgeH","AR4330",1)
 END
