@@ -1,5 +1,14 @@
 IF
 AreaCheck("ar6200")
+GlobalLT("CVJenTOBRet","GLOBAL",14)
+GlobalGT("FinalFight","AR6200",2)
+THEN
+RESPONSE #100
+SetGlobal("CVJenTOBRet","GLOBAL",14)
+END
+
+IF
+AreaCheck("ar6200")
 Global("CVJenTOBRet","GLOBAL",14)
 Global("IllaseraDead","AR6200",1)
 Global("AbazigalDead","AR6200",1)
