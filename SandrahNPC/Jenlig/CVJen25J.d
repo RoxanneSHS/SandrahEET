@@ -134,10 +134,3 @@ INTERJECT_COPY_TRANS Bazdra03 9 CVJenGloUpgr
 ==CVJen25J IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN@69
 ==Bazdra03 IF~InParty("CVJenlig")PartyHasItem("CvJenGlo")~THEN@70DO~TakePartyItem("CvJenGlo") GiveItemCreate("CVJenGl2","CVJenlig",1,0,0)~END
 
-ADD_TRANS_TRIGGER Finmel01 6
-~!InParty("CVJenlig")~
-
-EXTEND_BOTTOM Finmel01 6
-IF ~InParty("CVJenlig")~THEN DO ~SetGlobal("CVJenTOBRet","GLOBAL",14) SetGlobal("ShesInIt","LOCALS",1) ActionOverride("cutspy",DestroySelf()) Enemy()
-~EXIT
-END
