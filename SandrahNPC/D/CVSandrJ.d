@@ -437,7 +437,7 @@ IF ~Global("DuerFAInn","GLOBAL",1)~THEN BEGIN DuerFAInn
 SAY@131
 IF ~GlobalLT("SandrahMorningTalk","GLOBAL",7)~THEN REPLY @132DO ~SetGlobal("DuerFAInn","GLOBAL",2)~EXIT
 IF ~GlobalGT("SandrahMorningTalk","GLOBAL",6)~THEN REPLY @133DO ~SetGlobal("DuerFAInn","GLOBAL",2) ~EXIT
-IF ~~THEN REPLY @134EXIT
+IF ~~THEN REPLY @134DO ~SetGlobal("DuerFAInn","GLOBAL",2) ~EXIT
 END
 
 // Book of Unknowing
