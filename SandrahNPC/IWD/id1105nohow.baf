@@ -1,5 +1,7 @@
 IF
 Global("BELHIFET_DEAD","GLOBAL",1)
+OR(2)
+Global("Hjollder_Quest","GLOBAL",13)
 Global("Hjollder_Quest","GLOBAL",3)
 InParty("CVSandr")
 BitCheck("IWDEET_COMPLETE","GLOBAL",BITS_IWD1)

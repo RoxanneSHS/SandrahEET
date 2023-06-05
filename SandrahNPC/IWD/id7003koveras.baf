@@ -2,6 +2,7 @@ IF
 Global("Get_Key","GLOBAL",4)
 !InMyArea("Gareth")
 InParty("CVSandr")
+GlobalLT("Chapter","GLOBAL",8)
 Global("Koveras","id7003",0)
 Delay(20)
 THEN

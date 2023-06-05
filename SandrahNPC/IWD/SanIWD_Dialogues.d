@@ -42,7 +42,7 @@ IF ~~THEN CVSandrJ IWD1Gem2
 =@17
 END
 ++@18+ IWD1Gem3
-++@19+ IWD1Gem3
+IF~GlobalLT("SanShauOrcStaff","GLOBAL",2)~THEN REPLY @19+ IWD1Gem3
 ++@20+ IWD1Gem3
 
 CHAIN
@@ -403,7 +403,7 @@ I_C_T DHroth 10 SanIWDBrage
 ==DHroth IF~InParty("CVSandr")~THEN@184
 ==CVSandrJ IF~InParty("CVSandr")~THEN@185
 ==DHroth IF~InParty("CVSandr")~THEN@186
-==CVSandrJ IF~InParty("CVSandr")~THEN@187END
+==CVSandrJ IF~InParty("CVSandr")GlobalLT("SanShauOrcStaff","GLOBAL",2)~THEN@187END
 
 INTERJECT DArundel 89  SanIWDOldEnemy
 ==CVSandrJ IF~InParty("CVsandr")~THEN@188

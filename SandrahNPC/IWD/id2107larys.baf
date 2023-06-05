@@ -1,5 +1,6 @@
 IF
 Global("SanIWDBrage","Global",1)
+GlobalLT("SanShauOrcStaff","GLOBAL",2)
 Global("Brage","id2107",0)
 THEN
 RESPONSE #100
