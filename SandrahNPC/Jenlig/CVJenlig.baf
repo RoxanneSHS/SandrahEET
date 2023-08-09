@@ -467,9 +467,10 @@ END
 
 IF
 Global("JenAmul","LOCALS",0)
-OR(3)
+OR(4)
 AreaCheck("BG3800")
 AreaCheck("BG3200")
+AreaCheck("BG4300")
 GlobalGT("Chapter","GLOBAL",1)
 PartyHasItem("Amul09")
 CombatCounter(0)
