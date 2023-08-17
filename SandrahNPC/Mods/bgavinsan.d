@@ -190,12 +190,7 @@ SAY @119
 IF~~THEN EXTERN BSANDR SanHealGavi
 END
 END
-
-
-INTERJECT_COPY_TRANS ~B!GavinJ~2180 SanGavCongrate
-== BSANDR IF ~InParty("CVSandr") ~THEN@120
-END
-
+  
 //Keldath & Red Wizards
 INTERJECT_COPY_TRANS KELDDA 20 SanRedWizHateK
 == CVSandrJ IF ~InParty("CVSandr")~THEN @121
