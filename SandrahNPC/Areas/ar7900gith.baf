@@ -66,6 +66,14 @@ SetGlobal("Umberbowl","GLOBAL",2)
 END
 
 IF
+Global("HelpTenya","GLOBAL",0)
+Global("SanUmberbowl","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("HelpTenya","GLOBAL",1)
+END
+
+IF
 Global("SanVsTalos","GLOBAL",0)
 GlobalGT("Umberbowl","GLOBAL",2)
 THEN
