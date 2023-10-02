@@ -22,7 +22,9 @@ END
 IF~Global("JenFouSem","BG0125",4)~THEN BEGIN FoundSwFinN
 SAY@5
 =@6
-IF~~THEN REPLY@7DO~StartCutSceneMode() SetGlobal("JenFouSem","BG0125",7) AddXPObject(Player1,1700)ActionOverride("CVJenlig",TakePartyItem("CVyensw2")) Wait(2) StartCutScene("JenLePl")~EXIT
+IF~~THEN REPLY@7DO~StartCutSceneMode()
+Wait(2)
+StartCutScene("JenLeP2")~EXIT
 END
 
 IF~!InParty(Myself)AreaCheck("bd0130")GlobalGT("JenGoHome","bd0130",1) ~THEN BEGIN HissL

@@ -317,6 +317,7 @@ IF
 Global("Honor3","GLOBAL",1)
 Global("JenDurl","LOCALS",0)
 InParty("CVSandr")
+InParty("CVJenlig")
 CombatCounter(0)
 See("CVSandr")
 Delay(12)
@@ -328,6 +329,7 @@ END
 IF
 Global("Chapter","GLOBAL",6)
 Global("JenBhaal","LOCALS",0)
+InParty("CVJenlig")
 PartyHasItem("SCRL2J")
 THEN
 RESPONSE #100

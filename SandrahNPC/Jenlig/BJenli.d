@@ -337,7 +337,7 @@ DO~SetGlobal("JenPalad","LOCALS",2)~
 ==BJenli @209EXIT
 
 CHAIN
-IF~Global("JenIsraB","LOCALS",0) InParty("rh#isra") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Israbant
+IF~Global("JenIsraB","LOCALS",0) InParty("CVJenlig") InParty("rh#isra") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Israbant
 @210
 DO~SetGlobal("JenIsraB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==IF_FILE_EXISTS BRH#ISRA@211
@@ -347,7 +347,7 @@ DO~SetGlobal("JenIsraB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==IF_FILE_EXISTS BRH#ISRA@215EXIT
 
 CHAIN
-IF~Global("JenBranB","LOCALS",0) InParty("Branwen") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Branbant
+IF~Global("JenBranB","LOCALS",0) InParty("CVJenlig") InParty("Branwen") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Branbant
 @216
 DO~SetGlobal("JenBranB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==BBRANW@217
@@ -358,7 +358,7 @@ DO~SetGlobal("JenBranB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",300)~
 ==BJenli@222EXIT
 
 CHAIN
-IF~Global("JenKivB","LOCALS",0) InParty("Kivan") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Kivanbant
+IF~Global("JenKivB","LOCALS",0) InParty("CVJenlig") InParty("Kivan") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Kivanbant
 @223
 DO~SetGlobal("JenKivB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BKIVAN@224
@@ -370,7 +370,7 @@ DO~SetGlobal("JenKivB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BKIVAN@230EXIT
 
 CHAIN
-IF~Global("JenVicB","LOCALS",0) InParty("Viconia") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Vicbant
+IF~Global("JenVicB","LOCALS",0) InParty("CVJenlig") InParty("Viconia") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Vicbant
 @231
 DO~SetGlobal("JenVicB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BVICON @232
@@ -379,7 +379,7 @@ DO~SetGlobal("JenVicB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@235EXIT
 
 CHAIN
-IF~Global("JenXanB","LOCALS",0) InParty("Xan")GlobalGT("SanXanA","GLOBAL",4) !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Xanbant
+IF~Global("JenXanB","LOCALS",0) InParty("CVJenlig") InParty("Xan")GlobalGT("SanXanA","GLOBAL",4) !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Xanbant
 @236
 DO~SetGlobal("JenXanB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BXANNN@237
@@ -390,7 +390,7 @@ DO~SetGlobal("JenXanB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli IF~InParty("CVSandr")~THEN@242EXIT
 
 CHAIN
-IF~Global("JenGarrB","LOCALS",0) InParty("Garrick") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Garrbant
+IF~Global("JenGarrB","LOCALS",0) InParty("CVJenlig") InParty("Garrick") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Garrbant
 @243
 DO~SetGlobal("JenGarrB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BGARRI@244
@@ -402,7 +402,7 @@ DO~SetGlobal("JenGarrB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@250EXIT
 
 CHAIN
-IF~Global("JenShartB","LOCALS",0) InParty("Sharteel") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Sharbant
+IF~Global("JenShartB","LOCALS",0) InParty("CVJenlig") InParty("Sharteel") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Sharbant
 @251
 DO~SetGlobal("JenShartB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BShart @252
@@ -416,7 +416,7 @@ DO~SetGlobal("JenShartB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)
 ==BShart @260EXIT
 
 CHAIN
-IF~Global("JenYeslB","LOCALS",0) InParty("Yeslick") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Yeslbant
+IF~Global("JenYeslB","LOCALS",0) InParty("CVJenlig") InParty("Yeslick") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Yeslbant
 @261
 DO~SetGlobal("JenYeslB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BYesli@262
@@ -424,7 +424,7 @@ DO~SetGlobal("JenYeslB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@264EXIT
 
 CHAIN
-IF~Global("JenGavB","LOCALS",0) InParty("B!Gavin") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Gavinbant
+IF~Global("JenGavB","LOCALS",0) InParty("CVJenlig") InParty("B!Gavin") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Gavinbant
 @265
 DO~SetGlobal("JenGavB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS~BB!GAVIN~@266
@@ -437,7 +437,7 @@ DO~SetGlobal("JenGavB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 EXIT
 
 CHAIN
-IF~Global("JenMinsB","LOCALS",0) InParty("Minsc") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Minscbant
+IF~Global("JenMinsB","LOCALS",0) InParty("CVJenlig") InParty("Minsc") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Minscbant
 @273
 DO~SetGlobal("JenMinsB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BMINSC_ @274
@@ -448,7 +448,7 @@ DO~SetGlobal("JenMinsB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@279EXIT
 
 CHAIN
-IF~Global("JenSafaB","LOCALS",0) InParty("Safana") !See([ENEMY])!AreaType(DUNGEON) !AreaCheck("BG3600")~THEN BJenli Safabant
+IF~Global("JenSafaB","LOCALS",0) InParty("CVJenlig") InParty("Safana") !See([ENEMY])!AreaType(DUNGEON) !AreaCheck("BG3600")~THEN BJenli Safabant
 @280
 DO~SetGlobal("JenSafaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BSAFAN@281
@@ -458,7 +458,7 @@ DO~SetGlobal("JenSafaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BSAFAN@285EXIT
 
 CHAIN
-IF~Global("JenFaldoB","LOCALS",0) InParty("Faldorn") !See([ENEMY])!AreaType(DUNGEON) GlobalGT("SanFalB","GLOBAL",2)~THEN BJenli Faldobant
+IF~Global("JenFaldoB","LOCALS",0) InParty("CVJenlig") InParty("Faldorn") !See([ENEMY])!AreaType(DUNGEON) GlobalGT("SanFalB","GLOBAL",2)~THEN BJenli Faldobant
 @286
 DO~SetGlobal("JenFaldoB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BFALDO@287
@@ -468,7 +468,7 @@ DO~SetGlobal("JenFaldoB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)
 == BFALDO@291EXIT
 
 CHAIN
-IF~Global("JenDynaB","LOCALS",0) InParty("Dynaheir") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Dynabant
+IF~Global("JenDynaB","LOCALS",0)InParty("CVJenlig") InParty("Dynaheir") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Dynabant
 @292
 DO~SetGlobal("JenDynaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS  BDYNA @293
@@ -482,7 +482,7 @@ DO~SetGlobal("JenDynaB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@298EXIT
 
 CHAIN
-IF~Global("JenCoranB","LOCALS",0) InParty("Coran") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Coranbant
+IF~Global("JenCoranB","LOCALS",0)InParty("CVJenlig") InParty("Coran") !See([ENEMY])!AreaType(DUNGEON)~THEN BJenli Coranbant
 @299
 DO~SetGlobal("JenCoranB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)~
 == BCoran @300
@@ -498,7 +498,7 @@ DO~SetGlobal("JenCoranB","LOCALS",1) RealSetGlobalTimer("JenligT","LOCALS",1300)
 == BJenli @310EXIT
 
 CHAIN
-IF~Global("JenDrizB","LOCALS",0) InParty("F_Drizzt")GlobalGT("SanDrizzt","GLOBAL",5) !See([ENEMY])~THEN BJenli Drizbant
+IF~Global("JenDrizB","LOCALS",0) InParty("CVJenlig") InParty("F_Drizzt")GlobalGT("SanDrizzt","GLOBAL",5) !See([ENEMY])~THEN BJenli Drizbant
 @311
 DO~SetGlobal("JenDrizB","LOCALS",1) ~
 == F_DRIZTJ@312
@@ -510,7 +510,7 @@ DO~SetGlobal("JenDrizB","LOCALS",1) ~
 == F_DRIZTJ@318EXIT
 
 CHAIN
-IF~Global("JenKagaB","LOCALS",0) InParty("Kagain") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Kagainbant
+IF~Global("JenKagaB","LOCALS",0) InParty("CVJenlig") InParty("Kagain") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Kagainbant
 @319
 DO~SetGlobal("JenKagaB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BKagai@320
@@ -521,7 +521,7 @@ DO~SetGlobal("JenKagaB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJenli@325DO~ReallyForceSpell("Kagain",PSIONIC_PROJECT_FORCE)~EXIT
 
 CHAIN
-IF~Global("JenJaheB","LOCALS",0) InParty("Jaheira") InParty("Khalid") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Jaheirabant
+IF~Global("JenJaheB","LOCALS",0) InParty("CVJenlig") InParty("Jaheira") InParty("Khalid") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Jaheirabant
 @326
 DO~SetGlobal("JenJaheB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BJAHEI@327
@@ -533,7 +533,7 @@ DO~SetGlobal("JenJaheB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BKHALI@333EXIT
 
 CHAIN
-IF~Global("JenFabiB","LOCALS",0) InParty("Fabio") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Fabiobant
+IF~Global("JenFabiB","LOCALS",0) InParty("CVJenlig") InParty("Fabio") AreaType(OUTDOOR) !See([ENEMY])~THEN BJenli Fabiobant
 @334
 DO~SetGlobal("JenFabiB","LOCALS",1)~
 ==IF_FILE_EXISTS BFabio@335
@@ -542,7 +542,7 @@ DO~SetGlobal("JenFabiB","LOCALS",1)~
 ==BJenli@338EXIT
 
 CHAIN
-IF~Global("JenVyndB","LOCALS",0) InParty("GV#Vynd") AreaType(DUNGEON) !See([ENEMY])~THEN BJenli Vyndbant
+IF~Global("JenVyndB","LOCALS",0) InParty("CVJenlig") InParty("GV#Vynd") AreaType(DUNGEON) !See([ENEMY])~THEN BJenli Vyndbant
 @339
 DO~SetGlobal("JenVyndB","LOCALS",1)~
 ==IF_FILE_EXISTS BGV#Vynd@340
@@ -552,7 +552,7 @@ DO~SetGlobal("JenVyndB","LOCALS",1)~
 ==BJenli@344EXIT
 
 CHAIN
-IF~Global("JenWhiteB","LOCALS",0) GlobalGT("WhiteFriendshiTalk","GLOBAL",7)  InParty("V#1whi")~THEN BJenli WhiteB
+IF~Global("JenWhiteB","LOCALS",0) GlobalGT("WhiteFriendshiTalk","GLOBAL",7) InParty("CVJenlig") InParty("V#1whi")~THEN BJenli WhiteB
 @345
 DO~SetGlobal("JenWhiteB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS V#1whib@346
@@ -562,7 +562,7 @@ DO~SetGlobal("JenWhiteB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==IF_FILE_EXISTS V#1whib@350EXIT
 
 CHAIN
-IF~Global("JenBaeloB","LOCALS",0) InParty("Baeloth")~THEN BJenli WhiteB
+IF~Global("JenBaeloB","LOCALS",0) InParty("Baeloth")InParty("CVJenlig")~THEN BJenli WhiteB
 @351
 DO~SetGlobal("JenBaeloB","LOCALS",1)RealSetGlobalTimer("JenligT","LOCALS",1300)~
 ==BaelothJ@352
