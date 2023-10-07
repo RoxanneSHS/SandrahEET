@@ -10,4 +10,5 @@ SetGlobal("SanInJail","bd0104",1)
 MoveGlobal("bd0104","CVSandr",[1141.864])
 Wait(1)
 ActionOverride("CVSandr",JoinParty())
+Continue()
 END
