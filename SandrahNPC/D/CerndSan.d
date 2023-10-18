@@ -12,7 +12,7 @@ DO~SetGlobal("SanCerndLT","GLOBAL",5)~
 ==BCERND@2
 == BSANDR@3
 ==BCERND@4
-DO~AddXPObject("Cernd",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
+DO~AddXPObject("Cernd",5000) AddXPObject("CVSandr",5000) TakePartyItem("CVCatce") Wait(2) DestroyItem("CVCatce") CreateCreatureObjectOffset("CVCatCe","CVSandr",[25.-25]) ~EXIT
 
 CHAIN
 IF~Global("SanCerndLT","GLOBAL",7)~THEN BSandr CernSanPast
