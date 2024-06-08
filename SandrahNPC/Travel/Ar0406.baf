@@ -25,6 +25,7 @@ END
 
 IF
 Global("FirstVisit","ar0406",1)
+GlobalLT("ShauOrcWar","GLOBAL",9)
 !InParty("Minsc")
 !InMyArea("Minsc")
 THEN

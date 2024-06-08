@@ -1,0 +1,15 @@
+IF
+True()
+THEN
+RESPONSE #100
+CutSceneId(Player1)
+AddXPObject(Player1,1700)
+Wait(2)
+CreateVisualEffectObject("SPUNHOLY","CVJenlig")
+ActionOverride("CVJenlig",TakePartyItem("CVyensw2"))
+Wait(4)
+CreateVisualEffectObject("SPUNHOLY","CVJenlig")
+ActionOverride("CVJenlig",ReallyForceSpell(Myself,DRYAD_TELEPORT))
+SetGlobal("JenFouSem","BG0125",8)
+EndCutSceneMode()
+END
