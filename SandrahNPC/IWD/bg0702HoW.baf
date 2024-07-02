@@ -1,0 +1,9 @@
+IF
+!Global("IWD1NOTCOMPLETE","bg0702",1)
+!Global("SanIDW1","Global",27)
+Global("SanHOWScar","Global",3)
+THEN
+RESPONSE #100
+SetGlobal("IWD1NOTCOMPLETE","bg0702",1)
+SetGlobal("IWDEET_COMPLETE","GLOBAL",0)
+END
