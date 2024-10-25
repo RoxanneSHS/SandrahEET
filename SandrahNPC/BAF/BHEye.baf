@@ -1,0 +1,9 @@
+IF
+Dead("Gaal") 
+!PartyHasItem("key02")
+Global("plotitem","Locals",0)
+THEN
+RESPONSE #100
+SetGlobal("plotitem","Locals",1)
+GiveItemCreate("key02",Myself,1,0,0)
+END
