@@ -6,3 +6,10 @@ RESPONSE #100
 DestroySelf()
 DisplayStringWait(Player1,@772)
 END
+
+IF
+PartyHasItem("DDrelic1")
+THEN
+RESPONSE #100
+DestroySelf()
+END
