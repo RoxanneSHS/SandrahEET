@@ -240,7 +240,7 @@ CHAIN
 IF~~THEN SAMYSTP1 Mystpr254
 @96
 END
-IF~Global("QiTest","cvumo4",4)~THEN REPLY@97+ Mystpr255
+IF~GlobalLT("QiTest","cvumo4",5)~THEN REPLY@97+ Mystpr255
 IF~GlobalGT("QiTest","cvumo4",4)~THEN REPLY@97+ Mystpr256
 
 CHAIN
