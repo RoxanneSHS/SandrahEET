@@ -1029,6 +1029,30 @@ END
 
 IF
 Global("StartEndBios","cvrtf1",1)
+InParty("x3vie")
+!HasItem("x3ringv","x3vie")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("x3vie",LeaveParty())
+ActionOverride("x3vie",DestroySelf())
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
+InParty("x3vie")
+HasItem("x3ringv","x3vie")
+THEN
+RESPONSE #100
+SmallWait(1)
+ActionOverride("x3vie",LeaveParty())
+ActionOverride("x3vie",EscapeAreaMove("ar2800",4569,2960,SE))  
+Continue()
+END
+
+IF
+Global("StartEndBios","cvrtf1",1)
 InParty("D#Silver")
 THEN
 RESPONSE #100
