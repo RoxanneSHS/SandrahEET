@@ -4836,6 +4836,8 @@ EXTEND_TOP
 ~Melicamp.bcs~ ~SandrahNPC/BAF/Meliface.baf~
 EXTEND_TOP
 ~Xvart.bcs~ ~SandrahNPC/BAF/xvart.baf~
+EXTEND_TOP
+~BHEye.bcs~ ~SandrahNPC/BAF/BHEye.baf~
 
 EXTEND_TOP ~Player1D.BCS~ ~SandrahNPC/BAF/Player1.baf~
 
