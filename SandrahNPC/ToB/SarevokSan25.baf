@@ -21,6 +21,7 @@ END
 IF
 Global("SanMystApToB","GLOBAL",4)
 GlobalGT("SanSarev","GLOBAL",10)
+GlobalGT("SanKhalBlood","GLOBAL",9)
 Global("SanSarMys","LOCALS",0)
 !AreaCheck("ar4500")
 !AreaCheck("arish9")
