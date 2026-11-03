@@ -4,7 +4,7 @@ OR(2)
 Global("Hjollder_Quest","GLOBAL",13)
 Global("Hjollder_Quest","GLOBAL",3)
 InParty("CVSandr")
-BitCheck("IWDEET_COMPLETE","GLOBAL",BITS_IWD1)
+Global("IWDEET_IWD1_COMPLETE","GLOBAL",1)
 GlobalLT("SanIDW1","Global",27)
 THEN
 RESPONSE #100
